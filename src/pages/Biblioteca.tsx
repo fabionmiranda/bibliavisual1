@@ -148,14 +148,22 @@ function Secao({ titulo, livros, cor }: {
   cor: string;
 }) {
   if (livros.length === 0) return null;
+  const corHex = cor === 'brand-blue' ? '#00d4ff' : '#ff2d55';
   return (
-    <div className="mb-24">
+    <div className="mb-20">
       <div className="flex items-center gap-4 mb-10">
-        <div className="h-px flex-1 bg-white/8" />
-        <h2 className={`text-sm sm:text-base font-black uppercase tracking-[0.2em] text-${cor} whitespace-nowrap`}>
-          {titulo} — {livros.length} livros
-        </h2>
-        <div className="h-px flex-1 bg-white/8" />
+        <div className="flex items-center gap-3">
+          <div className="w-1 h-8 rounded-full" style={{ background: corHex, boxShadow: `0 0 12px ${corHex}80` }} />
+          <h2 className="font-display font-black text-lg sm:text-xl uppercase tracking-widest leading-none"
+            style={{ color: corHex }}>
+            {titulo}
+          </h2>
+          <span className="font-mono text-xs font-bold px-2 py-0.5 rounded-md"
+            style={{ color: corHex, background: corHex + '18', border: `1px solid ${corHex}30` }}>
+            {livros.length}
+          </span>
+        </div>
+        <div className="flex-1 h-px" style={{ background: `linear-gradient(90deg,${corHex}30,transparent)` }} />
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 sm:gap-5 md:gap-6">
         {livros.map((livro, i) => (
@@ -196,20 +204,43 @@ export default function Biblioteca() {
       <section className="pt-28 sm:pt-32 md:pt-36 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
 
-          {/* Cabeçalho */}
+          {/* Clube banner */}
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="mb-10 sm:mb-14 text-center"
+            transition={{ duration: 0.5 }}
+            className="mb-10 sm:mb-12"
           >
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-display font-black uppercase tracking-tighter text-white leading-none mb-4">
-              ANTIGO &{' '}
-              <span className="text-brand-blue">NOVO TESTAMENTO</span>
-            </h1>
-            <p className="text-white/40 max-w-lg mx-auto text-base sm:text-lg">
-              Selecione um livro para acessar os diagramas expositivos.
-            </p>
+            <a
+              href="https://chat.whatsapp.com/HEIIFYAmLij62M0jRwwVhH"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6
+                px-6 sm:px-10 py-5 sm:py-6 rounded-2xl border border-brand-blue/30
+                hover:border-brand-blue/70 transition-all duration-300
+                hover:shadow-[0_0_40px_rgba(0,212,255,0.12)]"
+              style={{ background: 'linear-gradient(135deg,rgba(0,212,255,0.06),rgba(123,47,247,0.04))' }}
+            >
+              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3 sm:gap-5 text-center sm:text-left">
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0"
+                  style={{ background: 'rgba(0,212,255,0.12)', border: '1px solid rgba(0,212,255,0.3)' }}>
+                  <span className="text-2xl">💬</span>
+                </div>
+                <div>
+                  <p className="font-display font-black text-base sm:text-lg uppercase tracking-tight text-white leading-none mb-1">
+                    Clube Biblia Visual
+                  </p>
+                  <p className="text-white/60 text-sm sm:text-base">
+                    Grupo exclusivo para estudo expositivo — junte-se agora
+                  </p>
+                </div>
+              </div>
+              <span className="shrink-0 px-6 py-2.5 rounded-xl font-black text-sm uppercase tracking-wider
+                border border-brand-blue text-brand-blue group-hover:bg-brand-blue group-hover:text-bg-deep
+                transition-all duration-200">
+                Entrar no Clube →
+              </span>
+            </a>
           </motion.div>
 
           {/* Barra de Pesquisa */}
