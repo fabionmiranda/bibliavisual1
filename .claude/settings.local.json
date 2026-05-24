@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\fabiomiranda\\\\Documents\\\\2BIBLIA-MAPEADA-EXPOSITIVA\\\\23-06-26-01\")",
+      "Bash(Select-Object -Property Name, PSIsContainer)",
+      "Bash(npm run *)",
+      "Bash(npm install *)",
+      "Bash(npx tsc *)",
+      "Bash(node -e \"const l = require\\('lucide-react'\\); console.log\\(l.ListTree ? 'ok' : 'NOT FOUND'\\)\")",
+      "PowerShell(netstat *)",
+      "PowerShell(Get-NetTCPConnection *)",
+      "PowerShell(npm run *)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\fabiomiranda\\\\Documents\\\\2BIBLIA-MAPEADA-EXPOSITIVA\\\\23-06-26-01\" -Directory)",
+      "Bash(Select-Object -ExpandProperty Name)",
+      "PowerShell(Get-ChildItem *)",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\fabiomiranda\\\\Documents\\\\2BIBLIA-MAPEADA-EXPOSITIVA\\\\23-06-26-01\" -Recurse -File | Where-Object { -not \\($_.FullName -match \"node_modules\"\\) } | Select-Object -ExpandProperty FullName | Sort-Object)",
+      "Bash(del *)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\fabiomiranda\\\\Documents\\\\2BIBLIA-MAPEADA-EXPOSITIVA\\\\23-06-26-01\" -Recurse -File)",
+      "Bash(Select-Object FullName)",
+      "Bash(python *)",
+      "PowerShell($content = Get-Content \"C:\\\\Users\\\\fabiomiranda\\\\Documents\\\\2BIBLIA-MAPEADA-EXPOSITIVA\\\\23-06-26-01\\\\assets\\\\index-CaNdt_NV.js\" -Raw; $matches = [regex]::Matches\\($content, '.{60}[Aa]cessar.{60}'\\); $matches | ForEach-Object { $_.Value; \"---\" } | Select-Object -First 10)",
+      "PowerShell($content = Get-Content \"C:\\\\Users\\\\fabiomiranda\\\\Documents\\\\2BIBLIA-MAPEADA-EXPOSITIVA\\\\23-06-26-01\\\\assets\\\\index-CaNdt_NV.js\" -Raw; $matches = [regex]::Matches\\($content, '.{200}Acessar Plataforma.{200}'\\); $matches | ForEach-Object { $_.Value })",
+      "PowerShell($content = Get-Content \"C:\\\\Users\\\\fabiomiranda\\\\Documents\\\\2BIBLIA-MAPEADA-EXPOSITIVA\\\\23-06-26-01\\\\assets\\\\index-CaNdt_NV.js\" -Raw; $matches = [regex]::Matches\\($content, '.{400}Acessar Plataforma.{400}'\\); $matches | ForEach-Object { $_.Value })",
+      "PowerShell(Get-Content *)",
+      "Bash(node *)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit *)"
+    ]
+  }
+}
