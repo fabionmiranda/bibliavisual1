@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
+import { apiUrl } from '../lib/apiUrl';
 import { BookOpen, Search, X, ShieldCheck, CheckCircle2, Circle } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import { BIBLE_DATA } from '../data/bibleData';
@@ -18,13 +19,13 @@ type Status = { estrutura: boolean; quiastico: boolean; diagramas: boolean };
 async function checarStatus(testamento: string, livroId: string): Promise<Status> {
   const check = async (tipo: string) => {
     try {
-      const r = await fetch(`/api/admin/check?testamento=${testamento}&livroId=${livroId}&tipo=${tipo}`);
+      const r = await fetch(`${apiUrl.check}?testamento=${testamento}&livroId=${livroId}&tipo=${tipo}`);
       return (await r.json()).exists as boolean;
     } catch { return false; }
   };
   const checkDiagramas = async () => {
     try {
-      const r = await fetch(`/api/admin/diagramas?testamento=${testamento}&livroId=${livroId}`);
+      const r = await fetch(`${apiUrl.diagramas}?testamento=${testamento}&livroId=${livroId}`);
       const j = await r.json();
       return (j.arquivos as string[]).length > 0;
     } catch { return false; }

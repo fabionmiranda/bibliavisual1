@@ -1,6 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
 import { motion } from 'motion/react';
+import { apiUrl } from '../lib/apiUrl';
 import {
   ChevronRight, BookOpen, ArrowLeft, FileText, AlertCircle,
   Lightbulb, Quote
@@ -1086,7 +1087,7 @@ export default function DiagramaLetraPage() {
     async function load() {
       setEstado('loading');
       try {
-        const r1 = await fetch(`/api/admin/diagramas?testamento=${testamento}&livroId=${livroId}`);
+        const r1 = await fetch(`${apiUrl.diagramas}?testamento=${testamento}&livroId=${livroId}`);
         const j1 = await r1.json();
         const arquivos: string[] = j1.arquivos ?? [];
         const arquivo = arquivos.find(f => {

@@ -1,5 +1,6 @@
 import React, { useState, useRef, useCallback, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import { apiUrl } from '../lib/apiUrl';
 import { motion, AnimatePresence } from 'motion/react';
 import {
   Upload, FileText, Loader2, CheckCircle2, XCircle,
@@ -35,7 +36,7 @@ async function uploadArquivo(
   bytes.forEach(b => { binary += String.fromCharCode(b); });
   const content = btoa(binary);
 
-  const res = await fetch('/api/admin/upload', {
+  const res = await fetch(apiUrl.upload, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ testamento, livroId, tipo, content, filename }),
@@ -49,20 +50,20 @@ async function checarExistencia(testamento: string, livroId: string, tipo: strin
   try {
     const params = new URLSearchParams({ testamento, livroId, tipo });
     if (filename) params.set('filename', filename);
-    const r = await fetch(`/api/admin/check?${params}`);
+    const r = await fetch(`${apiUrl.check}?${params}`);
     return (await r.json()).exists as boolean;
   } catch { return false; }
 }
 
 async function listarDiagramas(testamento: string, livroId: string): Promise<string[]> {
   try {
-    const r = await fetch(`/api/admin/diagramas?testamento=${testamento}&livroId=${livroId}`);
+    const r = await fetch(`${apiUrl.diagramas}?testamento=${testamento}&livroId=${livroId}`);
     return (await r.json()).arquivos as string[];
   } catch { return []; }
 }
 
 async function deletarArquivo(testamento: string, livroId: string, filename: string): Promise<void> {
-  const res = await fetch('/api/admin/delete', {
+  const res = await fetch(apiUrl.delete, {
     method: 'DELETE',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ testamento, livroId, filename }),
