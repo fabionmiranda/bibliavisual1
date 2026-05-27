@@ -32,6 +32,7 @@ import {
 } from 'lucide-react';
 import { EstudoCapitulo } from '../types/bible';
 import { cn } from '../lib/utils';
+import ClubeBanner from './ClubeBanner';
 
 interface ChapterStudyProps {
   estudo: EstudoCapitulo;
@@ -1441,41 +1442,9 @@ export default function ChapterStudy({ estudo }: ChapterStudyProps) {
       </div>
 
       {/* CLUBE DA BÍBLIA VISUAL CTA - AFTER CONTENT */}
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mt-16 md:mt-24 pt-16 md:pt-24 border-t border-white/10"
-      >
-        <div className="glass p-8 md:p-12 rounded-[2.5rem] md:rounded-[3.5rem] border-2 border-brand-rose/20 bg-brand-rose/5 relative overflow-hidden group">
-          <div className="absolute top-0 right-0 p-8 md:p-16 opacity-[0.05] group-hover:opacity-[0.1] transition-opacity">
-            <Zap className="w-32 h-32 md:w-64 md:h-64 text-brand-rose" />
-          </div>
-          <div className="relative z-10 flex flex-col md:flex-row items-center gap-8 md:gap-12 text-center md:text-left">
-            <div className="w-20 h-20 md:w-24 md:h-24 bg-brand-rose/10 rounded-2xl md:rounded-3xl flex items-center justify-center shrink-0 border border-brand-rose/30 shadow-2xl">
-              <Zap className="w-10 h-10 md:w-12 md:h-12 text-brand-rose" />
-            </div>
-            <div className="flex-1 space-y-4">
-              <h3 className="text-2xl md:text-4xl font-display font-black text-white uppercase tracking-tighter leading-tight">
-                QUER IR AINDA <span className="text-brand-rose">MAIS PROFUNDO</span>?
-              </h3>
-              <p className="text-white/80 text-base md:text-xl font-medium max-w-2xl">
-                Faça parte gratuitamente do nosso <span className="font-bold text-white">Clube da Bíblia Visual</span> e receba ensinos semanais, materiais exclusivos e cresça na compreensão das Escrituras.
-              </p>
-              <div className="pt-2">
-                <a 
-                  href="https://chat.whatsapp.com/HEIIFYAmLij62M0jRwwVhH"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-4 px-8 md:px-12 py-4 md:py-5 bg-brand-rose text-white text-base md:text-lg font-black rounded-full hover:bg-white hover:text-brand-rose transition-all hover:scale-105 active:scale-95 shadow-[0_0_30px_rgba(255,45,85,0.4)]"
-                >
-                  ENTRAR NO CLUBE GRATUITAMENTE <ArrowRight className="w-5 h-5 md:w-6 h-6" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </motion.div>
+      <div className="mt-16 md:mt-24 pt-16 md:pt-24 border-t border-white/10">
+        <ClubeBanner />
+      </div>
     </div>
   );
 }
