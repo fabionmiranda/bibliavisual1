@@ -11,6 +11,7 @@ import {
 import type { LucideIcon } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import ClubeBanner from '../components/ClubeBanner';
 import { BIBLE_DATA } from '../data/bibleData';
 
 type BookConfig = { icon: LucideIcon; grad: string };
@@ -205,43 +206,9 @@ export default function Biblioteca() {
         <div className="max-w-7xl mx-auto">
 
           {/* Clube banner */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="mb-10 sm:mb-12"
-          >
-            <a
-              href="https://chat.whatsapp.com/HEIIFYAmLij62M0jRwwVhH"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6
-                px-6 sm:px-10 py-5 sm:py-6 rounded-2xl border border-brand-blue/30
-                hover:border-brand-blue/70 transition-all duration-300
-                hover:shadow-[0_0_40px_rgba(0,212,255,0.12)]"
-              style={{ background: 'linear-gradient(135deg,rgba(0,212,255,0.06),rgba(123,47,247,0.04))' }}
-            >
-              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3 sm:gap-5 text-center sm:text-left">
-                <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0"
-                  style={{ background: 'rgba(0,212,255,0.12)', border: '1px solid rgba(0,212,255,0.3)' }}>
-                  <span className="text-2xl">💬</span>
-                </div>
-                <div>
-                  <p className="font-display font-black text-base sm:text-lg uppercase tracking-tight text-white leading-none mb-1">
-                    Clube Biblia Visual
-                  </p>
-                  <p className="text-white/60 text-sm sm:text-base">
-                    Grupo exclusivo para estudo expositivo — junte-se agora
-                  </p>
-                </div>
-              </div>
-              <span className="shrink-0 px-6 py-2.5 rounded-xl font-black text-sm uppercase tracking-wider
-                border border-brand-blue text-brand-blue group-hover:bg-brand-blue group-hover:text-bg-deep
-                transition-all duration-200">
-                Entrar no Clube →
-              </span>
-            </a>
-          </motion.div>
+          <div className="mb-10 sm:mb-12">
+            <ClubeBanner />
+          </div>
 
           {/* Barra de Pesquisa */}
           <motion.div

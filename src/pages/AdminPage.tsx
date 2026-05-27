@@ -13,41 +13,57 @@ function normalizar(s: string) {
   return s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 }
 
-type Status = { estrutura: boolean; quiastico: boolean };
+type Status = { estrutura: boolean; quiastico: boolean; diagramas: boolean };
 
 async function checarStatus(testamento: string, livroId: string): Promise<Status> {
   const check = async (tipo: string) => {
     try {
       const r = await fetch(`/api/admin/check?testamento=${testamento}&livroId=${livroId}&tipo=${tipo}`);
-      const j = await r.json();
-      return j.exists as boolean;
+      return (await r.json()).exists as boolean;
     } catch { return false; }
   };
-  const [estrutura, quiastico] = await Promise.all([check('estrutura'), check('quiastico')]);
-  return { estrutura, quiastico };
+  const checkDiagramas = async () => {
+    try {
+      const r = await fetch(`/api/admin/diagramas?testamento=${testamento}&livroId=${livroId}`);
+      const j = await r.json();
+      return (j.arquivos as string[]).length > 0;
+    } catch { return false; }
+  };
+  const [estrutura, quiastico, diagramas] = await Promise.all([
+    check('estrutura'), check('quiastico'), checkDiagramas(),
+  ]);
+  return { estrutura, quiastico, diagramas };
 }
 
 function CardLivro({ livro, status }: { livro: typeof livrosAT[0]; status: Status | null }) {
   const cfg   = BOOK_CONFIG[livro.id];
   const Icone = cfg?.icon ?? BookOpen;
   const rota  = `/admin/${livro.testamento.toLowerCase()}/${livro.id}`;
-  const ambos = status?.estrutura && status?.quiastico;
-  const algum = status?.estrutura || status?.quiastico;
+  const tudo  = status?.estrutura && status?.quiastico && status?.diagramas;
+  const algum = status?.estrutura || status?.quiastico || status?.diagramas;
+
+  const badge = (letra: string, ativo: boolean | undefined) => (
+    <span className={`inline-flex items-center px-2 py-0.5 rounded-md text-[10px] font-black uppercase tracking-wider border
+      ${ativo
+        ? 'bg-green-500/15 border-green-500/40 text-green-400'
+        : 'bg-white/5 border-white/10 text-white/20'}`}>
+      {letra}
+    </span>
+  );
 
   return (
     <Link
       to={rota}
       className={`group relative flex flex-col items-center justify-between p-4 sm:p-5 rounded-2xl border transition-all duration-300 hover:scale-[1.03] hover:shadow-xl aspect-[3/4] w-full
-        ${ambos
+        ${tudo
           ? 'border-green-500/30 bg-green-950/20 hover:border-green-400/50'
           : algum
             ? 'border-yellow-500/20 bg-yellow-950/10 hover:border-yellow-400/40'
             : 'border-white/5 bg-white/[0.02] hover:border-white/15'
         }`}
     >
-      {/* indicador de status */}
       <div className="absolute top-3 right-3">
-        {ambos
+        {tudo
           ? <CheckCircle2 className="w-4 h-4 text-green-400" />
           : algum
             ? <CheckCircle2 className="w-4 h-4 text-yellow-400" />
@@ -56,11 +72,8 @@ function CardLivro({ livro, status }: { livro: typeof livrosAT[0]; status: Statu
       </div>
 
       <div className="flex-1 flex items-center justify-center">
-        <div className={`p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-white/5 group-hover:bg-white/10 transition-colors`}>
-          <Icone
-            className={`w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-brand-blue group-hover:scale-110 transition-transform`}
-            strokeWidth={1.2}
-          />
+        <div className="p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-white/5 group-hover:bg-white/10 transition-colors">
+          <Icone className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-brand-blue group-hover:scale-110 transition-transform" strokeWidth={1.2} />
         </div>
       </div>
 
@@ -68,19 +81,10 @@ function CardLivro({ livro, status }: { livro: typeof livrosAT[0]; status: Statu
         <p className="text-white font-black text-sm sm:text-base md:text-lg leading-tight tracking-tight">
           {livro.nome}
         </p>
-        <div className="flex items-center justify-center gap-2">
-          <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-black uppercase tracking-wider border
-            ${status?.estrutura
-              ? 'bg-green-500/15 border-green-500/40 text-green-400'
-              : 'bg-white/5 border-white/10 text-white/25'}`}>
-            E
-          </span>
-          <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-black uppercase tracking-wider border
-            ${status?.quiastico
-              ? 'bg-green-500/15 border-green-500/40 text-green-400'
-              : 'bg-white/5 border-white/10 text-white/25'}`}>
-            Q
-          </span>
+        <div className="flex items-center justify-center gap-1.5">
+          {badge('E', status?.estrutura)}
+          {badge('Q', status?.quiastico)}
+          {badge('D', status?.diagramas)}
         </div>
       </div>
     </Link>
@@ -137,8 +141,8 @@ export default function AdminPage() {
   const atFiltrado = filtrar(livrosAT);
   const ntFiltrado = filtrar(livrosNT);
 
-  const total  = BIBLE_DATA.livros.length;
-  const prontos = Object.values(statuses).filter(s => s?.estrutura && s?.quiastico).length;
+  const total   = BIBLE_DATA.livros.length;
+  const prontos = Object.values(statuses).filter(s => s?.estrutura && s?.quiastico && s?.diagramas).length;
 
   return (
     <div className="min-h-screen bg-bg-deep text-white">
@@ -169,18 +173,22 @@ export default function AdminPage() {
           </motion.div>
 
           {/* Legenda */}
-          <div className="flex flex-wrap items-center justify-center gap-4 mb-10">
+          <div className="flex flex-wrap items-center justify-center gap-3 mb-10">
             <div className="flex items-center gap-2 px-4 py-2 rounded-xl bg-white/[0.03] border border-white/8">
               <span className="px-2 py-0.5 rounded-md text-[11px] font-black border bg-green-500/15 border-green-500/40 text-green-400">E</span>
-              <span className="text-sm font-semibold text-white/60">Estrutura Literária</span>
+              <span className="text-sm font-semibold text-white/60">Estrutura Literaria</span>
             </div>
             <div className="flex items-center gap-2 px-4 py-2 rounded-xl bg-white/[0.03] border border-white/8">
               <span className="px-2 py-0.5 rounded-md text-[11px] font-black border bg-green-500/15 border-green-500/40 text-green-400">Q</span>
-              <span className="text-sm font-semibold text-white/60">Divisões Quiásticas</span>
+              <span className="text-sm font-semibold text-white/60">Divisoes Quiasticas</span>
             </div>
             <div className="flex items-center gap-2 px-4 py-2 rounded-xl bg-white/[0.03] border border-white/8">
-              <span className="px-2 py-0.5 rounded-md text-[11px] font-black border bg-white/5 border-white/10 text-white/25">E</span>
-              <span className="text-sm font-semibold text-white/30">Arquivo pendente</span>
+              <span className="px-2 py-0.5 rounded-md text-[11px] font-black border bg-green-500/15 border-green-500/40 text-green-400">D</span>
+              <span className="text-sm font-semibold text-white/60">Diagramas por Divisao</span>
+            </div>
+            <div className="flex items-center gap-2 px-4 py-2 rounded-xl bg-white/[0.03] border border-white/8">
+              <span className="px-2 py-0.5 rounded-md text-[11px] font-black border bg-white/5 border-white/10 text-white/25">·</span>
+              <span className="text-sm font-semibold text-white/30">Pendente</span>
             </div>
           </div>
 

@@ -234,11 +234,12 @@ function renderConteudo(estudo: EstudoCapitulo, id: DiagramaDef['id'], cor: stri
 }
 
 // ─── Componente principal ─────────────────────────────────────────────────────
-interface Props { testamento: 'AT' | 'NT' }
+interface Props { testamento?: 'AT' | 'NT' }
 
-export default function DiagramasPage({ testamento }: Props) {
+export default function DiagramasPage({ testamento: testamentoProp }: Props) {
   const { livro: livroId = '' } = useParams<{ livro: string }>();
   const livroData  = BIBLE_DATA.livros.find(l => l.id === livroId);
+  const testamento = (livroData?.testamento ?? testamentoProp ?? 'AT') as 'AT' | 'NT';
   const cfg        = BOOK_CONFIG[livroId];
   const Icone      = cfg?.icon ?? BookOpen;
   const storageKey = `estudo_${livroId}`;

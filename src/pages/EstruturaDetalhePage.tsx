@@ -3,6 +3,7 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { ChevronRight, BookOpen, Loader2, AlertCircle, ArrowLeft, ArrowRight } from 'lucide-react';
 import Navbar from '../components/Navbar';
+import { sanitizarTxt } from '../lib/sanitizarTxt';
 import Footer from '../components/Footer';
 import { BIBLE_DATA } from '../data/bibleData';
 import { BOOK_CONFIG } from './LivroPage';
@@ -17,6 +18,7 @@ interface BlocoQuiasmo {
   num: number;
   cabecalho: string;
   linhas: string[];
+  resumo: string[];
 }
 
 interface LinhaQuiasmo {
@@ -33,11 +35,20 @@ function parsearItens(texto: string): Item[] {
     .map(l => l.trim())
     .filter(l => l.length > 0)
     .map(l => {
-      const m = l.match(/^\[(\d+)\]\s*-\s*(.+?)\s*-\s*(.+)$/);
-      if (m) return { num: m[1], ref: m[2].trim(), titulo: m[3].trim() };
+      // Formato 1: [01] - ref - titulo
+      const m1 = l.match(/^\[(\d+)\]\s*-\s*(.+?)\s*-\s*(.+)$/);
+      if (m1) return { num: m1[1], ref: m1[2].trim(), titulo: m1[3].trim() };
+      // Formato 2: [01] ref — titulo  (travessão — ou –)
+      const m2 = l.match(/^\[(\d+)\]\s+(.+?)\s+[—–]\s+(.+)$/);
+      if (m2) return { num: m2[1], ref: m2[2].trim(), titulo: m2[3].trim() };
+      // Formato 3: [01] titulo
+      const m3 = l.match(/^\[(\d+)\]\s+(.+)$/);
+      if (m3) return { num: m3[1], ref: '', titulo: m3[2].trim() };
       return { num: '', ref: '', titulo: l };
     });
 }
+
+const RESUMO_RE = /^[A-Z][''‘’]?\s*:/;
 
 function parsearQuiasmos(texto: string): BlocoQuiasmo[] {
   return texto
@@ -50,7 +61,16 @@ function parsearQuiasmos(texto: string): BlocoQuiasmo[] {
       if (ci === -1) return null;
       const cab = linhas[ci].trim();
       const num = parseInt(cab.match(/^\[(\d+)\]/)![1], 10);
-      return { num, cabecalho: cab, linhas: linhas.slice(ci + 1) };
+      const corpo = linhas.slice(ci + 1);
+      // Separa linhas de resumo (ex: "A: Apóstolos.") das linhas do diagrama
+      const estrutura: string[] = [];
+      const resumo: string[] = [];
+      for (const l of corpo) {
+        const t = l.trim();
+        if (RESUMO_RE.test(t)) resumo.push(t);
+        else estrutura.push(l);
+      }
+      return { num, cabecalho: cab, linhas: estrutura, resumo };
     })
     .filter((b): b is BlocoQuiasmo => b !== null && b.num > 0);
 }
@@ -110,7 +130,7 @@ function slugLetra(letra: string): string {
 
 interface ConexaoSVG { cor: string; x: number; y1: number; y2: number }
 
-function DiagramaQuiasmo({ linhas, basePath, key: _ }: { linhas: string[]; basePath: string; key?: number }) {
+function DiagramaQuiasmo({ linhas, resumo, basePath, key: _ }: { linhas: string[]; resumo: string[]; basePath: string; key?: number }) {
   const grupos = agruparLinhas(linhas);
   const navigate = useNavigate();
   const containerRef = useRef<HTMLDivElement>(null);
@@ -239,6 +259,42 @@ function DiagramaQuiasmo({ linhas, basePath, key: _ }: { linhas: string[]; baseP
           );
         })}
       </div>
+
+      {resumo.length > 0 && (
+        <div className="mt-8 pt-6 border-t border-white/[0.08]">
+          <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-white/35 font-black mb-4">
+            Resumo dos Elementos
+          </p>
+          <div className="flex flex-wrap gap-3">
+            {resumo.map((linha, i) => {
+              const col = NIVEL_CORES[i % NIVEL_CORES.length];
+              const match = linha.match(/^([A-Z]['''']?)\s*:\s*(.+)$/);
+              const sigla = match ? match[1] : '';
+              const texto = match ? match[2] : linha;
+              return (
+                <div
+                  key={i}
+                  className="flex items-center gap-2.5 px-4 py-2.5 rounded-xl border"
+                  style={{
+                    borderColor: col + '40',
+                    background: col + '10',
+                  }}
+                >
+                  {sigla && (
+                    <span
+                      className="font-mono font-black text-sm shrink-0 w-8 h-8 rounded-lg flex items-center justify-center border"
+                      style={{ color: col, borderColor: col + '55', background: col + '20', boxShadow: `0 0 8px ${col}30` }}
+                    >
+                      {sigla}
+                    </span>
+                  )}
+                  <span className="text-sm text-white/80 font-medium leading-snug">{texto}</span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
@@ -267,7 +323,9 @@ export default function EstruturaDetalhePage() {
       fetch(urlEstrutura).then(r => r.ok ? r.text() : Promise.reject()),
       fetch(urlQuiasmo).then(r => r.ok ? r.text() : ''),
     ])
-      .then(([txtEst, txtQ]) => {
+      .then(([rawEst, rawQ]) => {
+        const txtEst = sanitizarTxt(rawEst);
+        const txtQ   = rawQ ? sanitizarTxt(rawQ) : '';
         setItens(parsearItens(txtEst));
         if (txtQ) setQuiasmos(parsearQuiasmos(txtQ));
         setEstado('ok');
@@ -360,7 +418,7 @@ export default function EstruturaDetalhePage() {
 
                 <div className="rounded-2xl border border-white/[0.08] p-6 sm:p-10 overflow-x-auto"
                   style={{ background: 'linear-gradient(135deg,rgba(255,255,255,0.03),rgba(255,255,255,0.01))' }}>
-                  <DiagramaQuiasmo key={numSec} linhas={quiasmo.linhas} basePath={`${base}/${idx}`} />
+                  <DiagramaQuiasmo key={numSec} linhas={quiasmo.linhas} resumo={quiasmo.resumo} basePath={`${base}/${idx}`} />
                 </div>
               </motion.div>
             ) : (

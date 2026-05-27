@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { ChevronRight, BookOpen, AlertCircle, Loader2 } from 'lucide-react';
+import { ChevronRight, BookOpen, AlertCircle, Loader2, Download, Search, X } from 'lucide-react';
+import { sanitizarTxt } from '../lib/sanitizarTxt';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { BIBLE_DATA } from '../data/bibleData';
@@ -36,8 +37,18 @@ function parsearItens(texto: string): Item[] {
     .map(l => l.trim())
     .filter(l => l.length > 0)
     .map(l => {
-      const m = l.match(/^\[(\d+)\]\s*-\s*(.+?)\s*-\s*(.+)$/);
-      if (m) return { num: m[1], ref: m[2].trim(), titulo: m[3].trim() };
+      // Formato 1: [01] - ref - titulo
+      const m1 = l.match(/^\[(\d+)\]\s*-\s*(.+?)\s*-\s*(.+)$/);
+      if (m1) return { num: m1[1], ref: m1[2].trim(), titulo: m1[3].trim() };
+
+      // Formato 2: [01] ref — titulo  (travessão —)
+      const m2 = l.match(/^\[(\d+)\]\s+(.+?)\s+[—–]\s+(.+)$/);
+      if (m2) return { num: m2[1], ref: m2[2].trim(), titulo: m2[3].trim() };
+
+      // Formato 3: [01] titulo  (sem ref separada)
+      const m3 = l.match(/^\[(\d+)\]\s+(.+)$/);
+      if (m3) return { num: m3[1], ref: '', titulo: m3[2].trim() };
+
       return { num: '', ref: '', titulo: l };
     });
 }
@@ -61,15 +72,36 @@ export default function EstruturaPage() {
   const url        = `/admin/${testamento}/${livroId}/estrutura.txt`;
   const base       = `/${livroId}/estrutura`;
 
+  // Infográfico: capitaliza primeira letra do id para montar o path
+  const nomeCapit = livroId.charAt(0).toUpperCase() + livroId.slice(1);
+  const [infograficoUrl, setInfograficoUrl] = useState<string | null>(null);
+
+  useEffect(() => {
+    const base = `/infograficos/${testamento}/${nomeCapit}`;
+    const exts = ['.jpg', '.jpeg', '.png', '.webp'];
+    let found = false;
+    (async () => {
+      for (const ext of exts) {
+        try {
+          const r = await fetch(base + ext, { method: 'HEAD' });
+          if (r.ok) { setInfograficoUrl(base + ext); found = true; break; }
+        } catch { /* ignorar */ }
+      }
+      if (!found) setInfograficoUrl(null);
+    })();
+  }, [testamento, nomeCapit]);
+
   type Estado = 'carregando' | 'ok' | 'indisponivel';
-  const [estado, setEstado] = useState<Estado>('carregando');
-  const [itens,  setItens]  = useState<Item[]>([]);
+  const [estado,  setEstado]  = useState<Estado>('carregando');
+  const [itens,   setItens]   = useState<Item[]>([]);
+  const [busca,   setBusca]   = useState('');
 
   useEffect(() => {
     setEstado('carregando');
     fetch(url)
       .then(r => { if (!r.ok) throw new Error(); return r.text(); })
-      .then(txt => {
+      .then(raw => {
+        const txt = sanitizarTxt(raw);
         const lista = parsearItens(txt);
         // Valida: pelo menos um item deve ter o formato [NN] correto
         const valido = lista.some(it => /^\d+$/.test(it.num));
@@ -99,20 +131,82 @@ export default function EstruturaPage() {
         <motion.div
           initial={{ opacity: 0, y: -12 }}
           animate={{ opacity: 1, y: 0 }}
-          className="flex items-center gap-5 mb-14"
+          className="flex items-start gap-5 mb-14 flex-wrap"
         >
           {cfg && (
             <div className={`p-4 rounded-2xl bg-gradient-to-br ${cfg.grad} border border-white/10 shadow-2xl shrink-0`}>
               <Icone className="w-10 h-10 sm:w-12 sm:h-12 text-white/90" strokeWidth={1.2} />
             </div>
           )}
-          <div>
+          <div className="flex-1 min-w-0">
             <p className="font-mono text-[11px] sm:text-xs uppercase tracking-[0.4em] text-brand-blue font-black mb-2">
               Estrutura Literaria
             </p>
-            <h1 className="text-3xl sm:text-5xl font-display font-black uppercase tracking-tighter leading-none">
+
+            {/* Nome do livro */}
+            <h1 className="text-3xl sm:text-5xl font-display font-black uppercase tracking-tighter leading-none mb-3">
               {livroData?.nome ?? livroId}
             </h1>
+
+            {/* Infográfico + busca na mesma linha */}
+            <div className="flex items-center gap-3 flex-wrap">
+              {infograficoUrl && (
+                <motion.a
+                  initial={{ opacity: 0, scale: 0.85 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: 0.25, type: 'spring', bounce: 0.4 }}
+                  href={`https://wa.me/35997567535?text=${encodeURIComponent('Gostaria de receber o infografico')}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-xl
+                    text-xs font-black uppercase tracking-wider shrink-0
+                    active:scale-95 transition-transform duration-150"
+                  style={{
+                    color: '#00d4ff',
+                    border: '1.5px solid rgba(0,212,255,0.55)',
+                    background: 'rgba(0,212,255,0.10)',
+                    boxShadow: '0 0 18px rgba(0,212,255,0.25)',
+                    animation: 'infoPulse 2s ease-in-out infinite',
+                  }}
+                >
+                  <Download className="w-3.5 h-3.5" />
+                  Infográfico
+                </motion.a>
+              )}
+
+              {/* Campo de busca */}
+              <div
+                className="relative flex-1 min-w-[220px] max-w-sm"
+                style={{ filter: busca ? 'drop-shadow(0 0 10px rgba(0,212,255,0.25))' : 'none', transition: 'filter 0.3s' }}
+              >
+                <Search
+                  className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 pointer-events-none transition-colors duration-200"
+                  style={{ color: busca ? '#00d4ff' : 'rgba(255,255,255,0.35)' }}
+                />
+                <input
+                  type="text"
+                  value={busca}
+                  onChange={e => setBusca(e.target.value)}
+                  placeholder="Buscar por número ou referência..."
+                  className="w-full pl-11 pr-9 py-2.5 rounded-2xl text-sm font-mono text-white/90 placeholder-white/35
+                    outline-none transition-all duration-300"
+                  style={{
+                    background: busca ? 'rgba(0,212,255,0.07)' : 'rgba(255,255,255,0.05)',
+                    border: busca ? '1.5px solid rgba(0,212,255,0.55)' : '1.5px solid rgba(255,255,255,0.10)',
+                    boxShadow: busca ? 'inset 0 0 20px rgba(0,212,255,0.06)' : 'none',
+                  }}
+                />
+                {busca && (
+                  <button
+                    onClick={() => setBusca('')}
+                    className="absolute right-3.5 top-1/2 -translate-y-1/2 transition-colors duration-200 hover:scale-110"
+                    style={{ color: 'rgba(0,212,255,0.6)' }}
+                  >
+                    <X className="w-3.5 h-3.5" />
+                  </button>
+                )}
+              </div>
+            </div>
           </div>
         </motion.div>
 
@@ -152,8 +246,9 @@ export default function EstruturaPage() {
         {estado === 'ok' && (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.4 }}>
 
+            {/* Contador de seções */}
             <div className="flex items-center gap-4 mb-10">
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 shrink-0">
                 <span className="font-mono text-2xl sm:text-3xl font-black text-white/90 leading-none"
                   style={{ textShadow: '0 0 20px rgba(0,212,255,0.4)' }}>
                   {itens.length}
@@ -170,21 +265,47 @@ export default function EstruturaPage() {
               <div className="flex-1 h-px" style={{ background: 'linear-gradient(90deg,rgba(0,212,255,0.3),transparent)' }} />
             </div>
 
+            {(() => {
+              const q = busca.trim().toLowerCase();
+              const itensFiltrados = q
+                ? itens.filter(it =>
+                    it.num.toLowerCase().includes(q) ||
+                    it.ref.toLowerCase().includes(q) ||
+                    it.titulo.toLowerCase().includes(q)
+                  )
+                : itens;
+
+              if (q && itensFiltrados.length === 0) {
+                return (
+                  <div className="flex flex-col items-center gap-3 py-20 text-center">
+                    <Search className="w-8 h-8 text-white/15" />
+                    <p className="text-white/40 text-sm font-mono uppercase tracking-widest font-bold">
+                      Nenhuma seção encontrada
+                    </p>
+                    <button onClick={() => setBusca('')} className="text-xs text-brand-blue/70 hover:text-brand-blue transition-colors font-bold">
+                      Limpar busca
+                    </button>
+                  </div>
+                );
+              }
+
+              return (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-              {itens.map((item, i) => {
-                const cor = PALETA[i % PALETA.length];
-                const num = item.num ? item.num.padStart(2, '0') : String(i + 1).padStart(2, '0');
+              {itensFiltrados.map((item, i) => {
+                const originalIndex = itens.indexOf(item);
+                const cor = PALETA[originalIndex % PALETA.length];
+                const num = item.num ? item.num.padStart(2, '0') : String(originalIndex + 1).padStart(2, '0');
                 return (
                   <motion.div
-                    key={i}
+                    key={originalIndex}
                     initial={{ opacity: 0, y: 24 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: Math.min(i * 0.04, 0.7), duration: 0.35 }}
+                    transition={{ delay: Math.min(i * 0.04, 0.5), duration: 0.35 }}
                     whileHover={{ y: -4, scale: 1.02, transition: { duration: 0.18 } }}
                     whileTap={{ scale: 0.97 }}
                   >
                     <button
-                      onClick={() => navigate(`${base}/${i + 1}`)}
+                      onClick={() => navigate(`${base}/${originalIndex + 1}`)}
                       className="w-full group relative overflow-hidden rounded-2xl
                         flex flex-col items-center text-center gap-3 p-6
                         transition-all duration-300
@@ -248,6 +369,8 @@ export default function EstruturaPage() {
                 );
               })}
             </div>
+              );
+            })()}
           </motion.div>
         )}
 
