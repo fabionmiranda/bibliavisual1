@@ -1,9 +1,14 @@
 Options -MultiViews
 RewriteEngine On
+RewriteBase /
 
-# Não redireciona arquivos e pastas que realmente existem
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
+# Serve arquivos e diretórios reais diretamente (assets, php, txt, imagens…)
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
 
-# Tudo o mais vai para o index.html (React Router cuida do resto)
+# Tudo o mais → index.html (React Router resolve a rota internamente)
 RewriteRule ^ /index.html [QSA,L]
+
+# Fallback adicional: qualquer 404 também cai no index.html
+ErrorDocument 404 /index.html
