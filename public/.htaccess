@@ -1,14 +1,17 @@
-Options -MultiViews
-RewriteEngine On
-RewriteBase /
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
 
-# Serve arquivos e diretórios reais diretamente (assets, php, txt, imagens…)
-RewriteCond %{REQUEST_FILENAME} -f [OR]
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^ - [L]
+  # Não intercepta arquivos e pastas reais
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
 
-# Tudo o mais → index.html (React Router resolve a rota internamente)
-RewriteRule ^ /index.html [QSA,L]
+  # Redireciona qualquer rota para index.html
+  RewriteRule ^ index.html [QSA,L]
+</IfModule>
 
-# Fallback adicional: qualquer 404 também cai no index.html
+# Fallback: se mod_rewrite não capturar, 404 cai no index.html
 ErrorDocument 404 /index.html
+
+# Desativa listagem de diretórios
+Options -Indexes
