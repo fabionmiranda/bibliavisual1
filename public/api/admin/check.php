@@ -4,12 +4,12 @@ header('Content-Type: application/json; charset=utf-8');
 
 $testamento = basename($_GET['testamento'] ?? '');
 $livroId    = basename($_GET['livroId']    ?? '');
-$tipo       = $_GET['tipo']       ?? '';
-$filename   = basename($_GET['filename']   ?? '');
+$tipo       = $_GET['tipo']     ?? '';
+$filename   = basename($_GET['filename'] ?? '');
 
 $nomeArquivo = ($tipo === 'diagrama' && $filename) ? $filename : $tipo . '.txt';
 
-$raiz     = dirname(dirname(dirname(__FILE__)));
+$raiz     = rtrim($_SERVER['DOCUMENT_ROOT'], '/');
 $filePath = $raiz . '/admin/' . $testamento . '/' . $livroId . '/' . $nomeArquivo;
 
 echo json_encode(['exists' => file_exists($filePath)]);

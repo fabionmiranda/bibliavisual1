@@ -5,7 +5,7 @@ header('Content-Type: application/json; charset=utf-8');
 $testamento = basename($_GET['testamento'] ?? '');
 $livroId    = basename($_GET['livroId']    ?? '');
 
-$raiz = dirname(dirname(dirname(__FILE__)));
+$raiz = rtrim($_SERVER['DOCUMENT_ROOT'], '/');
 $dir  = $raiz . '/admin/' . $testamento . '/' . $livroId;
 
 $arquivos = [];

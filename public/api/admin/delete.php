@@ -13,9 +13,9 @@ if (!$data) { http_response_code(400); echo json_encode(['ok' => false, 'error' 
 
 $testamento = basename($data['testamento'] ?? '');
 $livroId    = basename($data['livroId']    ?? '');
-$filename   = basename($data['filename']   ?? '');
+$filename   = basename($data['filename']  ?? '');
 
-$raiz     = dirname(dirname(dirname(__FILE__)));
+$raiz     = rtrim($_SERVER['DOCUMENT_ROOT'], '/');
 $filePath = $raiz . '/admin/' . $testamento . '/' . $livroId . '/' . $filename;
 
 if (file_exists($filePath)) {
