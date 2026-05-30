@@ -71,7 +71,7 @@ export function parseStudyTxt(text: string, reference: string): EstudoCapitulo {
     diagramas20: {
       interlinear: { descricao: 'Interlinear BHS', secoes: [], explicacao: '' },
       morfologicoLexical: { descricao: 'Morfologia e Léxico', termos: [], explicacao: '' },
-      quiastico: { descricao: 'Estrutura Quiástica', blocos: [], explicacao: '' },
+      quiastico: { descricao: 'Estrutura Quiastica Espelhada', blocos: [], explicacao: '' },
       sintatico: { descricao: 'Análise Sintática', blocos: [], explicacao: '' },
       semantico: { descricao: 'Análise Semântica', fluxo: [], explicacao: '' },
       progressivo: { descricao: 'Progressão do Texto', etapas: [], explicacao: '' },

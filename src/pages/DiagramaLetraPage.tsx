@@ -624,7 +624,7 @@ function BotaoVoltarNav({ cor: c }: { cor: string }) {
 // ─────────────────────────────────────────────
 // FORMATADOR WHATSAPP
 // ─────────────────────────────────────────────
-interface CtxWA { estudo: string; livro: string; secao: string; letra: string }
+interface CtxWA { estudo: string; livro: string; secao: string; letra: string; referencia: string }
 
 function formatarParaWA(sec: Secao, ctx: CtxWA): string {
   const num  = String(sec.num).padStart(2, '0');
@@ -632,116 +632,102 @@ function formatarParaWA(sec: Secao, ctx: CtxWA): string {
   const url  = typeof window !== 'undefined' ? window.location.href : '';
   const L: string[] = [];
 
-  // ── Cabeçalho ──
-  L.push('🕊️ *BÍBLIA VISUAL EXPOSITIVA*');
-  L.push('━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-  L.push(`📖 *Livro:* ${ctx.livro}`);
-  if (ctx.estudo) L.push(`🗂️ *Estudo:* ${ctx.estudo}`);
-  L.push(`📍 *Seção ${ctx.secao} — Divisão ${ctx.letra}*`);
-  L.push('━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+  L.push('BIBLIA VISUAL EXPOSITIVA');
   L.push('');
-  L.push(`✦ *DIAGRAMA ${num} — ${sec.titulo.toUpperCase()}*`);
+  L.push(ctx.referencia ? `${ctx.livro} ${ctx.referencia}` : `Livro: ${ctx.livro}`);
+  if (ctx.estudo) L.push(`Estudo: ${ctx.estudo}`);
+  L.push(`Secao ${ctx.secao} - Divisao ${ctx.letra}`);
+  L.push('');
+  L.push(`DIAGRAMA ${num} - ${sec.titulo.toUpperCase()}`);
   L.push('');
   if (perg) {
-    L.push('🔎 *Pergunta central:*');
-    L.push(`_${perg}_`);
+    L.push('Pergunta central:');
+    L.push(perg);
     L.push('');
   }
-  L.push('▸▸▸ *CONTEÚDO* ◂◂◂');
+  L.push('CONTEUDO');
   L.push('');
 
-  // ── Conteúdo ──
   for (const linha of sec.linhas) {
     const t = linha.trim();
     if (!t) { L.push(''); continue; }
 
-    // [ref] chave: val | chave: val  (INTERLINEAR / SINTÁTICO com pipes)
     const pipeM = t.match(/^\[(.+?)\]\s+(.+\|.+)$/);
     if (pipeM) {
-      L.push(`📌 *[${pipeM[1]}]*`);
+      L.push(`[${pipeM[1]}]`);
       for (const parte of pipeM[2].split('|').map(s => s.trim()).filter(Boolean)) {
         const ci = parte.indexOf(':');
         if (ci !== -1) {
-          L.push(`  ◆ *${parte.slice(0, ci).trim()}:* ${parte.slice(ci + 1).trim()}`);
+          L.push(`  ${parte.slice(0, ci).trim()}: ${parte.slice(ci + 1).trim()}`);
         } else {
-          L.push(`  ◆ ${parte}`);
+          L.push(`  ${parte}`);
         }
       }
       continue;
     }
 
-    // [ref] conteúdo
     const brackM = t.match(/^\[(.+?)\]\s+(.+)$/);
     if (brackM) {
       const ci = brackM[2].indexOf(':');
       if (ci !== -1 && ci <= 40) {
-        L.push(`📌 *[${brackM[1]}]* — _${brackM[2].slice(0, ci).trim()}:_ ${brackM[2].slice(ci + 1).trim()}`);
+        L.push(`[${brackM[1]}] ${brackM[2].slice(0, ci).trim()}: ${brackM[2].slice(ci + 1).trim()}`);
       } else {
-        L.push(`📌 *[${brackM[1]}]* ${brackM[2]}`);
+        L.push(`[${brackM[1]}] ${brackM[2]}`);
       }
       continue;
     }
 
-    // Etapa N [ref]: texto
     const etM = t.match(/^Etapa (\d+)\s+\[(.+?)\]:\s*(.+)$/);
     if (etM) {
-      L.push(`🔹 *Etapa ${etM[1]}* [${etM[2]}]: ${etM[3]}`);
+      L.push(`Etapa ${etM[1]} [${etM[2]}]: ${etM[3]}`);
       continue;
     }
 
-    // PAI/FILHO/ESPÍRITO →
-    const trM = t.match(/^(PAI|FILHO|ESP[ÍI]RITO)\s+→\s+(.+)$/i);
+    const trM = t.match(/^(PAI|FILHO|ESP[ÍI]RITO)\s+[→>-]+\s+(.+)$/i);
     if (trM) {
-      const emojiT: Record<string,string> = { PAI: '☀️', FILHO: '✝️', ESPIRITO: '🕊️', ESPÍRITO: '🕊️' };
-      const key = trM[1].toUpperCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
-      L.push(`${emojiT[key] ?? '✦'} *${trM[1]} →* ${trM[2]}`);
+      L.push(`${trM[1]}: ${trM[2]}`);
       continue;
     }
 
-    // Numeral romano  I [ref]: texto
     const romM = t.match(/^(I{1,3}V?|VI{0,3}|IV)\s+\[(.+?)\]:\s*(.+)$/);
     if (romM) {
-      L.push(`\n📜 *${romM[1]} [${romM[2]}]:* ${romM[3]}`);
+      L.push('');
+      L.push(`${romM[1]} [${romM[2]}]: ${romM[3]}`);
       continue;
     }
 
-    // Seta →
     if (t.startsWith('→') || t.startsWith('->')) {
-      L.push(`  ➤ ${t.slice(1).trim()}`);
+      L.push(`  - ${t.replace(/^[→>-]+\s*/, '')}`);
       continue;
     }
 
-    // Bullet -
     if (t.startsWith('- ')) {
-      L.push(`  • ${t.slice(2)}`);
+      L.push(`  - ${t.slice(2)}`);
       continue;
     }
 
-    // Indentado
     if (linha.match(/^\s{2,}/)) {
-      L.push(`    ◦ ${t}`);
+      L.push(`  ${t}`);
       continue;
     }
 
-    // Key: value genérico
     const kvM = t.match(/^([A-ZÁÉÍÓÚÃÕÇ][^:]{1,40}):\s+(.+)$/);
     if (kvM && !kvM[1].startsWith('Explicaç') && !kvM[1].startsWith('Explicac')) {
-      L.push(`🔸 *${kvM[1]}:* ${kvM[2]}`);
+      L.push(`${kvM[1]}: ${kvM[2]}`);
       continue;
     }
 
     L.push(t);
   }
 
-  // ── Explicação ──
   if (sec.explicacao) {
     L.push('');
-    L.push('💡 *EXPLICAÇÃO TEOLÓGICA*');
-    L.push('─────────────────────────');
+    L.push('EXPLICACAO TEOLOGICA');
+    L.push('');
     const palavras = sec.explicacao.split(' ');
     let bloco = '';
     for (const p of palavras) {
-      if ((bloco + ' ' + p).length > 280) {
+      if ((bloco + ' ' + p).length > 300) {
         L.push(bloco.trim());
         bloco = p;
       } else {
@@ -751,14 +737,14 @@ function formatarParaWA(sec: Secao, ctx: CtxWA): string {
     if (bloco.trim()) L.push(bloco.trim());
   }
 
-  // ── Rodapé + URL ──
   L.push('');
-  L.push('━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-  L.push('📚 *Acesse o conteúdo completo:*');
-  if (url) L.push(url);
-  L.push('');
-  L.push('_Bíblia Visual Expositiva_');
-  L.push(`_${ctx.livro} · Seção ${ctx.secao} · Divisão ${ctx.letra}_`);
+  if (url) {
+    L.push('Acesse o conteudo completo:');
+    L.push(url);
+    L.push('');
+  }
+  L.push('Biblia Visual Expositiva');
+  L.push(`${ctx.livro} - Secao ${ctx.secao} - Divisao ${ctx.letra}`);
 
   return L.join('\n');
 }
@@ -767,6 +753,113 @@ function compartilharWA(sec: Secao, ctx: CtxWA) {
   const texto = formatarParaWA(sec, ctx);
   const url   = `https://wa.me/?text=${encodeURIComponent(texto)}`;
   window.open(url, '_blank', 'noopener,noreferrer');
+}
+
+// ─────────────────────────────────────────────
+// DEVOCIONAL
+// ─────────────────────────────────────────────
+function formatarData(): string {
+  const dias  = ['Domingo','Segunda-feira','Terça-feira','Quarta-feira','Quinta-feira','Sexta-feira','Sábado'];
+  const meses = ['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];
+  const now   = new Date();
+  return `${dias[now.getDay()]}, ${now.getDate()} de ${meses[now.getMonth()]} de ${now.getFullYear()}`;
+}
+
+// Divide um texto longo em pedacos curtos, garantindo quebra de linha real
+function linhasWA(texto: string): string[] {
+  if (!texto.trim()) return [];
+
+  // 1. Remove caracteres fora do bloco latino (hebraico/grego)
+  const limpo = texto.replace(/[^\x00-\xFF]/g, '').trim();
+  if (!limpo) return [];
+
+  // 2. Normaliza pipes como separadores de linha
+  const comPipes = limpo.replace(/\s*\|\s*/g, '\n');
+
+  // 3. Quebra em cada fim de sentenca (ponto/exclamacao/interrogacao seguido de espaco)
+  const comSentencas = comPipes
+    .replace(/\.\s+/g, '.\n')
+    .replace(/!\s+/g, '!\n')
+    .replace(/\?\s+/g, '?\n')
+    .replace(/;\s+/g, ';\n');
+
+  // 4. Divide nas quebras criadas acima
+  const pedacos = comSentencas.split('\n').map(s => s.trim()).filter(s => s.length > 2);
+
+  // 5. Para cada pedaco ainda longo, quebra por palavras em no maximo 75 chars
+  const resultado: string[] = [];
+  for (const pedaco of pedacos) {
+    if (pedaco.length <= 75) {
+      resultado.push(pedaco);
+    } else {
+      const palavras = pedaco.split(' ');
+      let linha = '';
+      for (const p of palavras) {
+        const candidato = linha ? linha + ' ' + p : p;
+        if (candidato.length > 75 && linha) {
+          resultado.push(linha);
+          linha = p;
+        } else {
+          linha = candidato;
+        }
+      }
+      if (linha) resultado.push(linha);
+    }
+  }
+  return resultado;
+}
+
+function gerarDevocional(sec: Secao, ctx: CtxWA): string {
+  const data = formatarData();
+  const perg = PERGUNTAS[sec.num] ?? '';
+  const num  = String(sec.num).padStart(2, '0');
+
+  // Cada item do array = uma linha no WhatsApp
+  const L: string[] = [];
+
+  // --- CABECALHO ---
+  L.push(`${data} - Biblia Visual Expositiva`);
+  L.push('');
+  L.push(ctx.referencia ? `${ctx.livro} ${ctx.referencia}` : ctx.livro);
+  L.push(`Secao ${ctx.secao} - Divisao ${ctx.letra}`);
+  L.push(`Diagrama ${num} - ${sec.titulo}`);
+
+  // --- PERGUNTA CENTRAL ---
+  if (perg) {
+    L.push('');
+    L.push('Reflexao central:');
+    L.push('');
+    for (const linha of linhasWA(perg)) L.push(linha);
+  }
+
+  // --- REFLEXAO (explicacao) ---
+  if (sec.explicacao) {
+    L.push('');
+    L.push('Reflexao:');
+    L.push('');
+    for (const linha of linhasWA(sec.explicacao)) L.push(linha);
+  }
+
+  // --- RODAPE ---
+  L.push('');
+  L.push('---');
+  L.push('Biblia Visual Expositiva');
+  L.push(ctx.referencia ? `${ctx.livro} ${ctx.referencia} - Divisao ${ctx.letra}` : `${ctx.livro} - Divisao ${ctx.letra}`);
+  L.push('');
+  L.push('Deseja receber os devocionais da Biblia Visual Expositiva?');
+  L.push('Clique no link e faca parte do nosso CLUBE DA BIBLIA VISUAL EXPOSITIVA:');
+  L.push('https://bibliavisual.fabionmiranda.com');
+
+  return L.join('\n');
+}
+
+function abrirInfografico() {
+  window.open('https://wa.me/5535997567535', '_blank', 'noopener,noreferrer');
+}
+
+function enviarDevocional(sec: Secao, ctx: CtxWA) {
+  const texto = gerarDevocional(sec, ctx);
+  window.open(`https://wa.me/?text=${encodeURIComponent(texto)}`, '_blank', 'noopener,noreferrer');
 }
 
 // ── Ícone WhatsApp inline ──
@@ -781,7 +874,7 @@ function IconeWA({ size = 16 }: { size?: number }) {
 // ─────────────────────────────────────────────
 // CARD DE SEÇÃO
 // ─────────────────────────────────────────────
-function SecaoCard({ sec, idx }: { sec: Secao; idx: number }) {
+function SecaoCard({ sec, idx, ctx }: { sec: Secao; idx: number; ctx: CtxWA }) {
   const c = cor(sec.num);
   return (
     <motion.div
@@ -825,6 +918,33 @@ function SecaoCard({ sec, idx }: { sec: Secao; idx: number }) {
           )}
         </>
       )}
+
+      {/* Botões Infográfico e Devocional */}
+      <div className="flex flex-wrap gap-2 px-5 py-4 border-t" style={{ borderColor: c + '20', background: c + '06' }}>
+        <motion.button
+          whileTap={{ scale: 0.93 }}
+          onClick={abrirInfografico}
+          className="flex items-center gap-2 px-3 py-2 rounded-xl font-black text-xs uppercase tracking-wide transition-all duration-150"
+          style={{ color: '#25d366', background: '#25d36614', border: '1.5px solid #25d36640' }}
+          onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = '#25d36628'; }}
+          onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = '#25d36614'; }}
+        >
+          <IconeWA size={13} />
+          Infográfico — {sec.titulo}
+        </motion.button>
+
+        <motion.button
+          whileTap={{ scale: 0.93 }}
+          onClick={() => enviarDevocional(sec, ctx)}
+          className="flex items-center gap-2 px-3 py-2 rounded-xl font-black text-xs uppercase tracking-wide transition-all duration-150"
+          style={{ color: c, background: c + '14', border: `1.5px solid ${c}40` }}
+          onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = c + '28'; }}
+          onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = c + '14'; }}
+        >
+          <IconeWA size={13} />
+          Devocional
+        </motion.button>
+      </div>
     </motion.div>
   );
 }
@@ -1223,13 +1343,13 @@ export default function DiagramaLetraPage() {
             {/* Grid de diagramas */}
             <NavDiagramas
               secoes={doc.secoes}
-              ctx={{ estudo: doc.estudo, livro: livroData?.nome ?? livroId, secao: indice, letra: letraDisplay }}
+              ctx={{ estudo: doc.estudo, livro: livroData?.nome ?? livroId, secao: indice, letra: letraDisplay, referencia: meta ? `${parseInt(meta.cap)}:${parseInt(meta.vi)}-${parseInt(meta.vf)}` : '' }}
             />
 
             {/* Seções */}
             <div className="mt-2 space-y-5">
               {doc.secoes.map((s, i) => (
-                <SecaoCard key={s.num} sec={s} idx={i} />
+                <SecaoCard key={s.num} sec={s} idx={i} ctx={{ estudo: doc.estudo, livro: livroData?.nome ?? livroId, secao: indice, letra: letraDisplay, referencia: meta ? `${parseInt(meta.cap)}:${parseInt(meta.vi)}-${parseInt(meta.vf)}` : '' }} />
               ))}
             </div>
 

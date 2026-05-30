@@ -181,7 +181,7 @@ export default function AdminPage() {
             </div>
             <div className="flex items-center gap-2 px-4 py-2 rounded-xl bg-white/[0.03] border border-white/8">
               <span className="px-2 py-0.5 rounded-md text-[11px] font-black border bg-green-500/15 border-green-500/40 text-green-400">Q</span>
-              <span className="text-sm font-semibold text-white/60">Divisoes Quiasticas</span>
+              <span className="text-sm font-semibold text-white/60">Divisoes Quiasticas Espelhadas</span>
             </div>
             <div className="flex items-center gap-2 px-4 py-2 rounded-xl bg-white/[0.03] border border-white/8">
               <span className="px-2 py-0.5 rounded-md text-[11px] font-black border bg-green-500/15 border-green-500/40 text-green-400">D</span>

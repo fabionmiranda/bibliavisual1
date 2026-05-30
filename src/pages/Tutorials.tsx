@@ -44,12 +44,12 @@ const tutorials: TutorialSection[] = [
   },
   {
     id: 'quiastico',
-    title: 'Quiástico',
+    title: 'Quiastico Espelhado',
     icon: Target,
     color: 'brand-purple',
     question: 'Como o texto está organizado e onde está o seu centro de ênfase?',
     purpose: 'Revelar a arquitetura interna em forma de espelho (paralelismos) e o centro de gravidade teológica.',
-    content: 'O diagrama quiástico revela a estrutura interna do texto em forma de simetria. Diferente da leitura linear, ele mostra que muitos textos bíblicos são organizados em forma de espelho. O ponto central do quiasmo frequentemente contém a ideia principal da passagem.',
+    content: 'O diagrama quiastico espelhado revela a estrutura interna do texto em forma de simetria. Diferente da leitura linear, ele mostra que muitos textos bíblicos são organizados em forma de espelho. O ponto central do quiasma espelhado frequentemente contém a ideia principal da passagem.',
     youtubeUrl: 'https://youtu.be/example3'
   },
   {

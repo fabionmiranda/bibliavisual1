@@ -335,6 +335,70 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── CLUBE DESTAQUE ── */}
+      <section className="relative py-10 sm:py-12 overflow-hidden">
+        {/* Glow de fundo */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute inset-0 bg-gradient-to-r from-brand-blue/10 via-brand-purple/10 to-brand-rose/10" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-32 bg-brand-blue/15 blur-[80px] rounded-full" />
+        </div>
+        <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-brand-blue/40 to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-brand-purple/40 to-transparent" />
+
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.a
+            href="https://bibliavisual.fabionmiranda.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            whileHover={{ scale: 1.015 }}
+            className="relative flex flex-col sm:flex-row items-center justify-between gap-6 px-8 py-6 rounded-2xl cursor-pointer"
+            style={{
+              background: 'linear-gradient(135deg, rgba(0,212,255,0.10), rgba(168,85,247,0.08), rgba(255,45,85,0.06))',
+              border: '1.5px solid rgba(0,212,255,0.35)',
+              boxShadow: '0 0 40px rgba(0,212,255,0.12), inset 0 0 40px rgba(168,85,247,0.04)',
+            }}
+          >
+            {/* Pulsing dot */}
+            <div className="absolute top-4 right-4 flex items-center gap-1.5">
+              <span className="relative flex h-2.5 w-2.5">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-blue opacity-75" />
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-blue" />
+              </span>
+              <span className="font-mono text-[10px] font-black uppercase tracking-widest text-brand-blue/80">Gratuito</span>
+            </div>
+
+            {/* Texto esquerda */}
+            <div className="text-center sm:text-left">
+              <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-brand-blue/70 font-black mb-1">
+                Faca parte
+              </p>
+              <h3 className="font-display font-black text-2xl sm:text-3xl uppercase tracking-tighter text-white leading-tight"
+                style={{ textShadow: '0 0 30px rgba(0,212,255,0.3)' }}>
+                Clube da Biblia Visual Expositiva
+              </h3>
+              <p className="text-white/55 text-sm sm:text-base mt-1.5 max-w-lg leading-relaxed">
+                Receba devocionais, diagramas e ensinos profundos. Clique e acesse agora.
+              </p>
+            </div>
+
+            {/* Botao direita */}
+            <div
+              className="shrink-0 flex items-center gap-2 px-7 py-3.5 rounded-xl font-black text-sm uppercase tracking-wider text-bg-deep"
+              style={{
+                background: 'linear-gradient(135deg, #00d4ff, #a855f7)',
+                boxShadow: '0 0 28px rgba(0,212,255,0.35)',
+              }}
+            >
+              Acessar o Clube
+              <ArrowRight className="w-4 h-4" />
+            </div>
+          </motion.a>
+        </div>
+      </section>
+
       {/* Diagramas de Exegese — logo após o hero */}
       <section className="py-24 relative overflow-hidden">
         {/* fundo sutil */}

@@ -42,7 +42,7 @@ const parts = [
   { id: 'intro', title: 'Introdução', icon: Info, phrase: 'Visão geral e objetivos fundamentais', color: 'border-brand-blue/40 text-brand-blue bg-brand-blue/10 hover:bg-brand-blue/20' },
   { id: 'interlinear', title: 'Interlinear', icon: Languages, phrase: 'O que o texto realmente diz em sua forma original?', color: 'border-brand-purple/40 text-brand-purple bg-brand-purple/10 hover:bg-brand-purple/20' },
   { id: 'morfologico', title: 'Morfológico-Lexical', icon: Zap, phrase: 'Que tipo de palavras e formas revelam a precisão teológica?', color: 'border-brand-rose/40 text-brand-rose bg-brand-rose/10 hover:bg-brand-rose/20' },
-  { id: 'quiastico', title: 'Quiástico', icon: Target, phrase: 'Como o texto está estruturado e seu centro de ênfase?', color: 'border-brand-blue/40 text-brand-blue bg-brand-blue/10 hover:bg-brand-blue/20' },
+  { id: 'quiastico', title: 'Quiastico Espelhado', icon: Target, phrase: 'Como o texto está estruturado e seu centro de ênfase?', color: 'border-brand-blue/40 text-brand-blue bg-brand-blue/10 hover:bg-brand-blue/20' },
   { id: 'sintatico', title: 'Sintático', icon: Layout, phrase: 'Quem faz o quê no texto e como as ações estão organizadas?', color: 'border-brand-purple/40 text-brand-purple bg-brand-purple/10 hover:bg-brand-purple/20' },
   { id: 'semantico', title: 'Semântico', icon: Activity, phrase: 'Qual é o fluxo de significado e a lógica das ideias do texto?', color: 'border-brand-rose/40 text-brand-rose bg-brand-rose/10 hover:bg-brand-rose/20' },
   { id: 'progressivo', title: 'Progressivo', icon: ArrowRightCircle, phrase: 'Como o texto avança passo a passo até seu objetivo final?', color: 'border-brand-blue/40 text-brand-blue bg-brand-blue/10 hover:bg-brand-blue/20' },

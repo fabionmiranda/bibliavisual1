@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { ChevronRight, BookOpen, Loader2, AlertCircle, ArrowLeft, ArrowRight } from 'lucide-react';
+import { ChevronRight, BookOpen, Loader2, AlertCircle, ArrowLeft, ArrowRight, Download } from 'lucide-react';
+import { toJpeg } from 'html-to-image';
 import Navbar from '../components/Navbar';
 import { sanitizarTxt } from '../lib/sanitizarTxt';
 import Footer from '../components/Footer';
@@ -111,6 +112,378 @@ function agruparLinhas(linhas: string[]): LinhaQuiasmo[] {
 }
 
 const NIVEL_CORES = ['#60a5fa', '#a78bfa', '#34d399', '#fbbf24', '#f472b6', '#38bdf8'];
+
+// ─── helpers devocional visual ────────────────────────────────────────────────
+function dataAtual(): string {
+  const dias  = ['Domingo','Segunda-feira','Terca-feira','Quarta-feira','Quinta-feira','Sexta-feira','Sabado'];
+  const meses = ['janeiro','fevereiro','marco','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];
+  const now   = new Date();
+  return `${dias[now.getDay()]}, ${now.getDate()} de ${meses[now.getMonth()]} de ${now.getFullYear()}`;
+}
+
+function linhasTextoWA(texto: string): string[] {
+  if (!texto.trim()) return [];
+  return texto
+    .replace(/\.\s+/g, '.\n').replace(/!\s+/g, '!\n').replace(/\?\s+/g, '?\n')
+    .split('\n').map(s => s.trim()).filter(s => s.length > 2);
+}
+
+function gerarTextoDevocionalQuiasma(quiasmo: BlocoQuiasmo, item: Item, livro: string): string {
+  const data = dataAtual();
+  const refWA = item.ref.toLowerCase().startsWith(livro.toLowerCase()) ? item.ref : `${livro} ${item.ref}`;
+  const L: string[] = [];
+  L.push(`${data} - Biblia Visual Expositiva`);
+  L.push('');
+  L.push(refWA);
+  L.push(item.titulo);
+  L.push('');
+  L.push('Devocional do Quiasma Espelhado:');
+  L.push('');
+  if (quiasmo.resumo.length > 0) {
+    L.push('Estrutura da passagem:');
+    L.push('');
+    for (const r of quiasmo.resumo) L.push(r);
+    L.push('');
+  }
+  L.push('Reflexao pratica:');
+  L.push('');
+  for (const l of linhasTextoWA(
+    `A estrutura quiastica espelhada de ${refWA} revela a sabedoria de Deus ao organizar Sua Palavra. ` +
+    `O centro desta passagem e o ponto de maior enfase teologica. ` +
+    `Medite em cada elemento e permita que a Palavra transforme sua caminhada com Cristo.`
+  )) L.push(l);
+  L.push('');
+  L.push('---');
+  L.push('Biblia Visual Expositiva');
+  L.push('');
+  L.push('Deseja receber os devocionais da Biblia Visual Expositiva?');
+  L.push('Clique no link e faca parte do nosso CLUBE DA BIBLIA VISUAL EXPOSITIVA:');
+  L.push('https://bibliavisual.fabionmiranda.com');
+  return L.join('\n');
+}
+
+// ─── Card exportável off-screen — vertical Instagram 1080px (capturado como JPG)
+function ExportCard({
+  exportRef, quiasmo, item, livro, cor,
+}: {
+  exportRef: React.RefObject<HTMLDivElement>;
+  quiasmo: BlocoQuiasmo;
+  item: Item;
+  livro: string;
+  cor: string;
+}) {
+  const data   = dataAtual();
+  const grupos = agruparLinhas(quiasmo.linhas);
+  const COR2   = '#a855f7';
+  const FF     = 'system-ui,-apple-system,Segoe UI,sans-serif';
+  const FM     = 'ui-monospace,SFMono-Regular,Menlo,monospace';
+  const W      = 1080;
+  const PAD    = 80;
+  // evita duplicar o nome do livro quando item.ref já o contém (ex: "Atos 21:1-5")
+  const refDisplay = item.ref.toLowerCase().startsWith(livro.toLowerCase())
+    ? item.ref
+    : `${livro} ${item.ref}`;
+
+  // SVG connections — igual ao DiagramaQuiasmo mas no ExportCard
+  const diagContainerRef = useRef<HTMLDivElement>(null);
+  const badgeExportRefs  = useRef<(HTMLDivElement | null)[]>([]);
+  badgeExportRefs.current = [];
+  const [conexoesExport, setConexoesExport] = useState<ConexaoSVG[]>([]);
+
+  useEffect(() => {
+    const container = diagContainerRef.current;
+    if (!container) return;
+    const calc = () => {
+      const rect = container.getBoundingClientRect();
+      const mapa: Record<string, number[]> = {};
+      grupos.forEach((g, i) => {
+        const base = baseLetra(g.letra ?? '');
+        if (!base) return;
+        if (!mapa[base]) mapa[base] = [];
+        mapa[base].push(i);
+      });
+      const novas: ConexaoSVG[] = [];
+      Object.values(mapa).forEach(indices => {
+        if (indices.length < 2) return;
+        for (let k = 0; k < Math.floor(indices.length / 2); k++) {
+          const ia = indices[k];
+          const ib = indices[indices.length - 1 - k];
+          const elA = badgeExportRefs.current[ia];
+          const elB = badgeExportRefs.current[ib];
+          if (!elA || !elB) return;
+          const rA = elA.getBoundingClientRect();
+          const rB = elB.getBoundingClientRect();
+          const x  = rA.left - rect.left + rA.width / 2;
+          const y1 = rA.bottom - rect.top + 6;
+          const y2 = rB.top - rect.top - 6;
+          if (y2 <= y1) return;
+          novas.push({ cor: NIVEL_CORES[Math.min(grupos[ia].nivel, 5)], x, y1, y2 });
+        }
+      });
+      setConexoesExport(novas);
+    };
+    const t = setTimeout(calc, 120);
+    return () => clearTimeout(t);
+  }, [grupos]);
+
+  return (
+    /* Borda gradiente via padding trick */
+    <div style={{
+      position: 'fixed', left: '-9999px', top: 0,
+      width: W + 'px', boxSizing: 'border-box' as const,
+      padding: '3px', borderRadius: '36px',
+      background: `linear-gradient(150deg, ${cor} 0%, ${COR2} 50%, ${cor} 100%)`,
+      boxShadow: `0 0 120px ${cor}35, 0 0 60px ${COR2}25, inset 0 0 0 1px ${cor}20`,
+    }}>
+      {/* Card interno */}
+      <div ref={exportRef} style={{
+        width: '100%', boxSizing: 'border-box' as const,
+        minHeight: '1350px',
+        borderRadius: '33px',
+        background: 'linear-gradient(170deg,#06080e 0%,#0a0d1c 40%,#08060f 75%,#060810 100%)',
+        padding: `${PAD}px`,
+        fontFamily: FF, color: '#fff',
+        overflow: 'hidden', position: 'relative' as const,
+        display: 'flex', flexDirection: 'column' as const,
+      }}>
+
+        {/* Glows decorativos */}
+        <div style={{ position: 'absolute', top: '-120px', left: '-120px', width: '500px', height: '500px', borderRadius: '50%', background: `radial-gradient(circle, ${cor}16 0%, transparent 65%)`, pointerEvents: 'none' }} />
+        <div style={{ position: 'absolute', top: '35%', right: '-100px', width: '400px', height: '400px', borderRadius: '50%', background: `radial-gradient(circle, ${COR2}12 0%, transparent 65%)`, pointerEvents: 'none' }} />
+        <div style={{ position: 'absolute', bottom: '-100px', left: '30%', width: '380px', height: '380px', borderRadius: '50%', background: `radial-gradient(circle, ${cor}10 0%, transparent 65%)`, pointerEvents: 'none' }} />
+
+        {/* Linhas decorativas de canto (circuit-like) */}
+        <div style={{ position: 'absolute', top: PAD + 'px', right: PAD + 'px', width: '80px', height: '80px', borderTop: `2px solid ${cor}40`, borderRight: `2px solid ${cor}40`, borderRadius: '0 16px 0 0', pointerEvents: 'none' }} />
+        <div style={{ position: 'absolute', bottom: PAD + 'px', left: PAD + 'px', width: '80px', height: '80px', borderBottom: `2px solid ${COR2}35`, borderLeft: `2px solid ${COR2}35`, borderRadius: '0 0 0 16px', pointerEvents: 'none' }} />
+
+        {/* ── LOGOTIPO ─────────────────────────────────────────────── */}
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '48px' }}>
+
+          <div style={{ display: 'flex', alignItems: 'center', gap: '22px' }}>
+            <div style={{
+              width: '72px', height: '72px', borderRadius: '20px', flexShrink: 0,
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              background: `linear-gradient(135deg, ${cor}30, ${COR2}20)`,
+              border: `2px solid ${cor}60`,
+              boxShadow: `0 0 32px ${cor}40, inset 0 0 16px ${cor}10`,
+            }}>
+              <span style={{ fontSize: '34px', color: cor, fontFamily: FM, fontWeight: 900, lineHeight: 1 }}>◈</span>
+            </div>
+            <div>
+              <div style={{ fontFamily: FM, fontSize: '20px', fontWeight: 900, letterSpacing: '0.26em', textTransform: 'uppercase' as const, color: '#fff', lineHeight: 1 }}>
+                Biblia Visual
+              </div>
+              <div style={{ fontFamily: FM, fontSize: '15px', fontWeight: 700, letterSpacing: '0.22em', textTransform: 'uppercase' as const, color: cor, marginTop: '6px' }}>
+                Expositiva
+              </div>
+            </div>
+          </div>
+
+          {/* Data */}
+          <div style={{ textAlign: 'right' as const }}>
+            <div style={{ fontFamily: FM, fontSize: '13px', color: 'rgba(255,255,255,0.32)', letterSpacing: '0.14em', textTransform: 'uppercase' as const, lineHeight: 1.6 }}>
+              {data}
+            </div>
+            <div style={{
+              display: 'inline-flex', alignItems: 'center', gap: '8px', marginTop: '8px',
+              padding: '7px 18px', borderRadius: '999px',
+              border: `1.5px solid ${cor}40`, background: `${cor}12`,
+              fontFamily: FM, fontSize: '13px', fontWeight: 900,
+              color: cor, letterSpacing: '0.18em', textTransform: 'uppercase' as const,
+            }}>
+              <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: cor, display: 'inline-block', boxShadow: `0 0 8px ${cor}` }} />
+              {livro}
+            </div>
+          </div>
+        </div>
+
+        {/* Linha divisória luminosa */}
+        <div style={{ height: '2px', marginBottom: '52px', background: `linear-gradient(90deg, transparent, ${cor}80, ${COR2}55, transparent)` }} />
+
+        {/* ── REFERÊNCIA + TÍTULO ──────────────────────────────────── */}
+        {item.ref && (
+          <div style={{
+            fontFamily: FM, fontSize: '28px', fontWeight: 900,
+            color: cor, marginBottom: '14px', letterSpacing: '0.1em',
+            textShadow: `0 0 40px ${cor}70`,
+          }}>
+            {refDisplay}
+          </div>
+        )}
+        <div style={{
+          fontSize: '52px', fontWeight: 900, color: '#fff',
+          textTransform: 'uppercase' as const, letterSpacing: '-0.03em',
+          lineHeight: 1.05, marginBottom: '44px',
+        }}>
+          {item.titulo}
+        </div>
+
+        {/* ── BADGE ────────────────────────────────────────────────── */}
+        <div style={{
+          display: 'inline-flex', alignItems: 'center', gap: '14px',
+          padding: '10px 24px', borderRadius: '999px',
+          border: `2px solid ${cor}50`, background: `${cor}14`,
+          fontFamily: FM, fontSize: '13px', fontWeight: 900,
+          color: cor, textTransform: 'uppercase' as const,
+          letterSpacing: '0.3em', marginBottom: '20px',
+          boxShadow: `0 0 24px ${cor}22`,
+          alignSelf: 'flex-start' as const,
+        }}>
+          <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: cor, display: 'inline-block', boxShadow: `0 0 10px ${cor}` }} />
+          Estrutura Quiastica Espelhada
+          <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: cor, display: 'inline-block', boxShadow: `0 0 10px ${cor}` }} />
+        </div>
+
+        <div style={{ fontFamily: FM, fontSize: '15px', color: 'rgba(255,255,255,0.40)', letterSpacing: '0.1em', marginBottom: '32px', fontWeight: 700 }}>
+          {quiasmo.cabecalho}
+        </div>
+
+        {/* ── DIAGRAMA ─────────────────────────────────────────────── */}
+        <div style={{
+          borderRadius: '22px',
+          border: '1.5px solid rgba(255,255,255,0.08)',
+          background: 'linear-gradient(145deg,rgba(255,255,255,0.04),rgba(255,255,255,0.015))',
+          padding: '36px 40px',
+          marginBottom: '36px',
+          flex: 1,
+          position: 'relative',
+        }}>
+          {/* SVG de conexão entre letras espelhadas */}
+          <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 0 }}>
+            {conexoesExport.map((c, i) => (
+              <g key={i}>
+                {/* Linha tracejada */}
+                <line
+                  x1={c.x} y1={c.y1} x2={c.x} y2={c.y2}
+                  stroke={c.cor} strokeWidth={2.5} strokeDasharray="7 5"
+                  strokeOpacity={0.55}
+                  style={{ filter: `drop-shadow(0 0 5px ${c.cor})` }}
+                />
+                {/* Dot superior */}
+                <circle cx={c.x} cy={c.y1} r={4} fill={c.cor} fillOpacity={0.8}
+                  style={{ filter: `drop-shadow(0 0 4px ${c.cor})` }} />
+                {/* Dot inferior */}
+                <circle cx={c.x} cy={c.y2} r={4} fill={c.cor} fillOpacity={0.8}
+                  style={{ filter: `drop-shadow(0 0 4px ${c.cor})` }} />
+              </g>
+            ))}
+          </svg>
+
+          {/* Linhas do diagrama */}
+          <div ref={diagContainerRef} style={{ position: 'relative', zIndex: 1 }}>
+            {grupos.map((g, i) => {
+              const c     = NIVEL_CORES[Math.min(g.nivel, 5)];
+              const ind   = g.nivel * 44;
+              const prime = temPrime(g.letra ?? '');
+              return (
+                <div key={i} style={{ paddingLeft: ind + 'px' }}>
+                  <div style={{
+                    display: 'flex', alignItems: 'flex-start', gap: '22px',
+                    padding: '18px 0',
+                    borderBottom: i < grupos.length - 1 ? '1px solid rgba(255,255,255,0.055)' : 'none',
+                  }}>
+                    {/* Badge letra */}
+                    <div
+                      ref={el => { badgeExportRefs.current[i] = el; }}
+                      style={{
+                        width: '62px', height: '62px', borderRadius: '16px', flexShrink: 0,
+                        display: 'flex', alignItems: 'center', justifyContent: 'center',
+                        fontFamily: FM, fontWeight: 900, fontSize: '24px',
+                        color: c,
+                        border: `2px solid ${c}${prime ? 'AA' : '70'}`,
+                        background: `${c}${prime ? '30' : '1C'}`,
+                        boxShadow: prime ? `0 0 18px ${c}55` : `0 0 8px ${c}20`,
+                      }}>
+                      {g.letra}
+                    </div>
+                    {/* Texto */}
+                    <div style={{ flex: 1, paddingTop: '4px' }}>
+                      {g.ref && (
+                        <div style={{ fontFamily: FM, fontSize: '17px', fontWeight: 900, color: c, marginBottom: '6px', letterSpacing: '0.08em' }}>
+                          {g.ref}
+                        </div>
+                      )}
+                      {g.descricoes.map((d, j) => (
+                        <div key={j} style={{ fontSize: '20px', color: 'rgba(241,245,249,0.90)', lineHeight: 1.55 }}>
+                          {d}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* ── RESUMO ───────────────────────────────────────────────── */}
+        {quiasmo.resumo.length > 0 && (
+          <div style={{ display: 'flex', flexWrap: 'wrap' as const, gap: '12px', marginBottom: '44px' }}>
+            {quiasmo.resumo.map((linha, i) => {
+              const c = NIVEL_CORES[i % NIVEL_CORES.length];
+              const m = linha.match(/^([A-Z]['''']?)\s*:\s*(.+)$/);
+              return (
+                <div key={i} style={{
+                  display: 'flex', alignItems: 'center', gap: '12px',
+                  padding: '10px 20px', borderRadius: '14px',
+                  border: `1.5px solid ${c}45`, background: `${c}12`,
+                }}>
+                  {m && (
+                    <span style={{
+                      fontFamily: FM, fontWeight: 900, fontSize: '15px', color: c,
+                      background: `${c}22`, border: `1.5px solid ${c}55`,
+                      borderRadius: '8px', width: '36px', height: '36px',
+                      display: 'flex', alignItems: 'center', justifyContent: 'center',
+                      boxShadow: `0 0 10px ${c}35`,
+                    }}>{m[1]}</span>
+                  )}
+                  <span style={{ fontSize: '17px', color: 'rgba(255,255,255,0.82)', fontWeight: 500 }}>
+                    {m ? m[2] : linha}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+        )}
+
+        {/* ── RODAPÉ ───────────────────────────────────────────────── */}
+        <div>
+          <div style={{ height: '1.5px', marginBottom: '28px', background: `linear-gradient(90deg, ${cor}70, ${COR2}50, transparent)` }} />
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+
+            <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+              <span style={{ fontSize: '22px', color: cor, fontFamily: FM, fontWeight: 900, textShadow: `0 0 12px ${cor}` }}>◈</span>
+              <div>
+                <div style={{ fontFamily: FM, fontSize: '14px', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase' as const, color: 'rgba(255,255,255,0.60)' }}>
+                  Biblia Visual
+                </div>
+                <div style={{ fontFamily: FM, fontSize: '11px', letterSpacing: '0.2em', textTransform: 'uppercase' as const, color: cor, fontWeight: 700 }}>
+                  Expositiva
+                </div>
+              </div>
+            </div>
+
+            {/* URL pill futurista */}
+            <div style={{
+              display: 'flex', alignItems: 'center', gap: '12px',
+              padding: '12px 24px', borderRadius: '999px',
+              border: `1.5px solid ${cor}45`,
+              background: `linear-gradient(90deg, ${cor}12, ${COR2}0C)`,
+              boxShadow: `0 0 28px ${cor}20`,
+            }}>
+              <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: cor, display: 'inline-block', boxShadow: `0 0 10px ${cor}` }} />
+              <span style={{ fontFamily: FM, fontSize: '16px', fontWeight: 700, color: cor, letterSpacing: '0.04em' }}>
+                bibliavisual.fabionmiranda.com
+              </span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  );
+}
 
 function temPrime(letra: string) {
   return letra.includes("'") || letra.charCodeAt(1) === 0x2019 || letra.charCodeAt(1) === 0x2018;
@@ -312,6 +685,9 @@ export default function EstruturaDetalhePage() {
   const urlQuiasmo   = `/admin/${testamento}/${livroId}/quiastico.txt`;
   const base         = `/${livroId}/estrutura`;
 
+  const exportRef = useRef<HTMLDivElement>(null);
+  const [gerando, setGerando] = useState(false);
+
   type Estado = 'carregando' | 'ok' | 'erro';
   const [estado,   setEstado]   = useState<Estado>('carregando');
   const [itens,    setItens]    = useState<Item[]>([]);
@@ -342,6 +718,23 @@ export default function EstruturaDetalhePage() {
 
   const podePrev  = idx > 1;
   const podeProx  = total > 0 && idx < total;
+
+  async function gerarDevocionaVisual() {
+    if (!exportRef.current || !quiasmo || !item) return;
+    setGerando(true);
+    try {
+      // render twice — first pass warms fonts/SVG, second is the real capture
+      await toJpeg(exportRef.current, { quality: 0.96, pixelRatio: 2 });
+      const dataUrl = await toJpeg(exportRef.current, { quality: 0.96, pixelRatio: 2 });
+      const link = document.createElement('a');
+      link.download = `devocional-${livroId}-secao-${idx}.jpg`;
+      link.href = dataUrl;
+      link.click();
+      const texto = gerarTextoDevocionalQuiasma(quiasmo, item, livroData?.nome ?? livroId);
+      setTimeout(() => window.open(`https://wa.me/?text=${encodeURIComponent(texto)}`, '_blank', 'noopener,noreferrer'), 600);
+    } catch (e) { console.error(e); }
+    finally { setGerando(false); }
+  }
 
   return (
     <div className="min-h-screen flex flex-col bg-bg-deep text-white">
@@ -378,20 +771,47 @@ export default function EstruturaDetalhePage() {
           <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
 
             {/* Cabecalho */}
-            <div className="flex items-center gap-4 mb-10">
-              {cfg && (
-                <div className={`p-3.5 rounded-xl bg-gradient-to-br ${cfg.grad} border border-white/10 shadow-xl shrink-0`}>
-                  <Icone className="w-8 h-8 text-white/90" strokeWidth={1.2} />
+            <div className="flex items-start sm:items-center justify-between gap-4 mb-10 flex-wrap">
+              <div className="flex items-center gap-4">
+                {cfg && (
+                  <div className={`p-3.5 rounded-xl bg-gradient-to-br ${cfg.grad} border border-white/10 shadow-xl shrink-0`}>
+                    <Icone className="w-8 h-8 text-white/90" strokeWidth={1.2} />
+                  </div>
+                )}
+                <div>
+                  <p className="font-mono text-[11px] uppercase tracking-[0.35em] text-brand-blue font-black mb-0.5">
+                    {livroData?.nome ?? livroId}
+                  </p>
+                  <p className="font-mono text-sm font-bold text-white/80">
+                    Secao {String(idx).padStart(2, '0')} de {String(total).padStart(2, '0')}
+                  </p>
                 </div>
-              )}
-              <div>
-                <p className="font-mono text-[11px] uppercase tracking-[0.35em] text-brand-blue font-black mb-0.5">
-                  {livroData?.nome ?? livroId}
-                </p>
-                <p className="font-mono text-sm font-bold text-white/80">
-                  Secao {String(idx).padStart(2, '0')} de {String(total).padStart(2, '0')}
-                </p>
               </div>
+
+              {/* Botao Devocional Visual para Download */}
+              {quiasmo && (
+                <motion.button
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: 0.2 }}
+                  onClick={gerarDevocionaVisual}
+                  disabled={gerando}
+                  className="flex items-center gap-2.5 px-5 py-3 rounded-xl font-black uppercase tracking-wider text-xs sm:text-sm
+                    transition-all duration-200 hover:scale-105 active:scale-95 disabled:opacity-60 disabled:cursor-not-allowed
+                    whitespace-nowrap shrink-0"
+                  style={{
+                    background: `linear-gradient(135deg, ${corHex}20, ${corHex}0C)`,
+                    border: `1.5px solid ${corHex}55`,
+                    color: corHex,
+                    boxShadow: `0 0 22px ${corHex}22`,
+                  }}
+                >
+                  {gerando
+                    ? <Loader2 className="w-4 h-4 sm:w-5 sm:h-5 animate-spin" />
+                    : <Download className="w-4 h-4 sm:w-5 sm:h-5" strokeWidth={2} />}
+                  {gerando ? 'Gerando...' : 'Devocional Visual'}
+                </motion.button>
+              )}
             </div>
 
             {item.ref && (
@@ -409,7 +829,7 @@ export default function EstruturaDetalhePage() {
                   <div className="flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-black uppercase tracking-widest border"
                     style={{ color: corHex, borderColor: corHex + '40', background: corHex + '12' }}>
                     <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: corHex }} />
-                    Estrutura Quiastica
+                    Estrutura Quiastica Espelhada
                   </div>
                   <div className="flex-1 h-px bg-white/[0.06]" />
                 </div>
@@ -423,8 +843,13 @@ export default function EstruturaDetalhePage() {
               </motion.div>
             ) : (
               <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-8 text-center">
-                <p className="text-white/50 text-sm uppercase tracking-widest font-bold font-mono">Quiasmo nao disponivel</p>
+                <p className="text-white/50 text-sm uppercase tracking-widest font-bold font-mono">Quiasma Espelhado nao disponivel</p>
               </div>
+            )}
+
+            {/* ExportCard off-screen */}
+            {quiasmo && item && (
+              <ExportCard exportRef={exportRef} quiasmo={quiasmo} item={item} livro={livroData?.nome ?? livroId} cor={corHex} />
             )}
 
             {/* Navegacao */}

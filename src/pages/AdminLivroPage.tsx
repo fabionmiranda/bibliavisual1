@@ -231,7 +231,7 @@ function validarNomeDiagrama(nome: string): string | null {
   const partes = sem.split('_');
   if (partes.length !== 5) return 'Formato esperado: Livro_Letra_Capitulo_VersiculoInicial_VersiculoFinal.txt';
   const [, letra, cap, vi, vf] = partes;
-  if (!letra || !/^[A-Za-z]/.test(letra)) return 'A letra do quiasmo deve comecar com uma letra (ex: A, B, A-prime)';
+  if (!letra || !/^[A-Za-z]/.test(letra)) return 'A letra do quiasma espelhado deve comecar com uma letra (ex: A, B, A-prime)';
   if (!Number.isInteger(+cap) || !Number.isInteger(+vi) || !Number.isInteger(+vf))
     return 'Capitulo, versiculo inicial e final devem ser numeros';
   return null;
@@ -281,7 +281,7 @@ function ZonaUploadDiagrama({ testamento, livroId }: { testamento: string; livro
             Diagramas por Divisao
           </p>
           <p className="text-white/60 text-sm sm:text-base mt-1">
-            Arquivo .txt por letra do quiasmo. Nome obrigatorio no formato:
+            Arquivo .txt por letra do quiasma espelhado. Nome obrigatorio no formato:
           </p>
           <p className="font-mono text-sm text-brand-rose/80 mt-1.5 font-bold">
             NomeLivro_Letra_Capitulo_VersiculoInicial_VersiculoFinal.txt

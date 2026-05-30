@@ -85,7 +85,7 @@ export default function Navbar() {
                 BIBLIA VISUAL <span className="text-brand-blue">EXPOSITIVA</span>
               </span>
               <span className="text-[8px] text-white/35 font-bold tracking-[0.3em] uppercase mt-0.5 hidden sm:block">
-                Método Expositivo Visual
+                O Futuro da Exposição Bíblica Visual
               </span>
             </div>
           </Link>

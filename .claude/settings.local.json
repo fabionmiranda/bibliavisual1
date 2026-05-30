@@ -25,7 +25,32 @@
       "Bash(node *)",
       "Bash(git init *)",
       "Bash(git add *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(gh repo *)",
+      "PowerShell(gh repo *)",
+      "PowerShell(winget install *)",
+      "PowerShell(winget list *)",
+      "PowerShell(& \"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\" --version)",
+      "PowerShell(gh *)",
+      "PowerShell(gh auth *)",
+      "Bash(/c/Program Files/GitHub CLI/gh.exe auth *)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" repo create fabionmiranda/bibliavisual1 --public --source=. --remote=origin --push)",
+      "Bash(git remote *)",
+      "Bash(git push *)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" auth status)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" repo view fabionmiranda/bibliavisual1 --json url -q .url)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" auth token)",
+      "Bash(git -c credential.helper='!f\\(\\){ echo \"username=x-access-token\"; echo \"password=$\\(cat\\)\"; }; f' push https://github.com/fabionmiranda/bibliavisual1.git main)",
+      "Bash(dir \"C:\\\\Users\\\\fabiomiranda\\\\Documents\\\\2BIBLIA-MAPEADA-EXPOSITIVA\\\\23-06-26-01\\\\public\\\\admin\" /s /b)",
+      "Bash(dir C:\\\\Users\\\\fabiomiranda\\\\Documents\\\\2BIBLIA-MAPEADA-EXPOSITIVA\\\\23-06-26-01\\\\public\\\\admin\\\\AT *)",
+      "Bash(dir C:\\\\Users\\\\fabiomiranda\\\\Documents\\\\2BIBLIA-MAPEADA-EXPOSITIVA\\\\23-06-26-01\\\\public\\\\admin\\\\AT\\\\levitico *)",
+      "Bash(dir \"C:\\\\Users\\\\fabiomiranda\\\\Documents\\\\2BIBLIA-MAPEADA-EXPOSITIVA\\\\23-06-26-01\\\\public\\\\infograficos\" /s /b)",
+      "Bash(dir C:\\\\Users\\\\fabiomiranda\\\\Documents\\\\2BIBLIA-MAPEADA-EXPOSITIVA\\\\23-06-26-01\\\\public *)",
+      "Bash(Select-String -Path \"C:\\\\Users\\\\fabiomiranda\\\\Documents\\\\2BIBLIA-MAPEADA-EXPOSITIVA\\\\23-06-26-01\\\\src\\\\index.css\" -Pattern \"infoPulse|@keyframes\")",
+      "Bash(Select-Object -First 5)",
+      "Bash(grep -n \"estrutura\\\\|livro.id\\\\|to=\\\\`\\\\|href\" \"C:\\\\Users\\\\fabiomiranda\\\\Documents\\\\2BIBLIA-MAPEADA-EXPOSITIVA\\\\23-06-26-01\\\\src\\\\pages\\\\Biblioteca.tsx\")",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\fabiomiranda\\\\Documents\\\\2BIBLIA-MAPEADA-EXPOSITIVA\\\\23-06-26-01\\\\public\\\\admin\" -Recurse -Force | ForEach-Object { $_.FullName })",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\fabiomiranda\\\\Documents\\\\2BIBLIA-MAPEADA-EXPOSITIVA\\\\23-06-26-01\\\\public\\\\admin\" -Recurse -Filter \"quiastico.txt\" | ForEach-Object { $_.FullName })"
     ]
   }
 }
