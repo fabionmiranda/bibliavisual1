@@ -85,8 +85,35 @@ const BOOK_CONFIG: Record<string, BookConfig> = {
   apocalipse:           { icon: Star,           grad: 'from-indigo-950 via-violet-950 to-purple-950' },
 };
 
-const livrosAT = BIBLE_DATA.livros.filter(l => l.testamento === 'AT');
-const livrosNT = BIBLE_DATA.livros.filter(l => l.testamento === 'NT');
+// Agrupa pares de livros num único card; rota = primeiro livro do par
+const PARES_AGRUPADOS: Array<{ remover: string; manter: string; nome: string }> = [
+  { remover: '2-samuel',   manter: '1-samuel',   nome: '1 e 2 Samuel'   },
+  { remover: '2-reis',     manter: '1-reis',     nome: '1 e 2 Reis'     },
+  { remover: '2-cronicas', manter: '1-cronicas', nome: '1 e 2 Cronicas' },
+  { remover: 'neemias',    manter: 'esdras',     nome: 'Esdras e Neemias' },
+];
+
+function agruparLivros(lista: typeof BIBLE_DATA.livros) {
+  const todos = BIBLE_DATA.livros;
+  const remover = new Set(PARES_AGRUPADOS.map(p => p.remover));
+  return lista
+    .filter(l => !remover.has(l.id))
+    .map(l => {
+      const par = PARES_AGRUPADOS.find(p => p.manter === l.id);
+      if (par) {
+        const par2 = todos.find(x => x.id === par.remover);
+        return {
+          ...l,
+          nome: par.nome,
+          capitulos: par2 ? [...l.capitulos, ...par2.capitulos] : l.capitulos,
+        };
+      }
+      return l;
+    });
+}
+
+const livrosAT = agruparLivros(BIBLE_DATA.livros.filter(l => l.testamento === 'AT'));
+const livrosNT = agruparLivros(BIBLE_DATA.livros.filter(l => l.testamento === 'NT'));
 
 function CardLivro({ livro, cor, index }: {
   livro: typeof livrosAT[0];
@@ -137,7 +164,7 @@ function CardLivro({ livro, cor, index }: {
   );
 }
 
-const todosLivros = BIBLE_DATA.livros;
+const todosLivros = agruparLivros(BIBLE_DATA.livros);
 
 function normalizar(s: string) {
   return s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();

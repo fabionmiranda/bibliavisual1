@@ -7,8 +7,26 @@ import Navbar from '../components/Navbar';
 import { BIBLE_DATA } from '../data/bibleData';
 import { BOOK_CONFIG } from './LivroPage';
 
-const livrosAT = BIBLE_DATA.livros.filter(l => l.testamento === 'AT');
-const livrosNT = BIBLE_DATA.livros.filter(l => l.testamento === 'NT');
+const PARES_ADMIN: Array<{ remover: string; manter: string; nome: string }> = [
+  { remover: '2-samuel',   manter: '1-samuel',   nome: '1 e 2 Samuel'    },
+  { remover: '2-reis',     manter: '1-reis',     nome: '1 e 2 Reis'      },
+  { remover: '2-cronicas', manter: '1-cronicas', nome: '1 e 2 Cronicas'  },
+  { remover: 'neemias',    manter: 'esdras',     nome: 'Esdras e Neemias' },
+];
+
+function agruparAdmin(lista: typeof BIBLE_DATA.livros) {
+  const remover = new Set(PARES_ADMIN.map(p => p.remover));
+  return lista
+    .filter(l => !remover.has(l.id))
+    .map(l => {
+      const par = PARES_ADMIN.find(p => p.manter === l.id);
+      if (par) return { ...l, nome: par.nome };
+      return l;
+    });
+}
+
+const livrosAT = agruparAdmin(BIBLE_DATA.livros.filter(l => l.testamento === 'AT'));
+const livrosNT = agruparAdmin(BIBLE_DATA.livros.filter(l => l.testamento === 'NT'));
 
 function normalizar(s: string) {
   return s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
@@ -127,8 +145,9 @@ export default function AdminPage() {
 
   useEffect(() => {
     inputRef.current?.focus();
-    // Carrega status de todos os livros em paralelo
-    BIBLE_DATA.livros.forEach(l => {
+    // Carrega status dos livros exibidos (sem duplicatas de pares agrupados)
+    const remover = new Set(PARES_ADMIN.map(p => p.remover));
+    BIBLE_DATA.livros.filter(l => !remover.has(l.id)).forEach(l => {
       checarStatus(l.testamento, l.id).then(s =>
         setStatuses(prev => ({ ...prev, [l.id]: s }))
       );
@@ -142,7 +161,7 @@ export default function AdminPage() {
   const atFiltrado = filtrar(livrosAT);
   const ntFiltrado = filtrar(livrosNT);
 
-  const total   = BIBLE_DATA.livros.length;
+  const total   = livrosAT.length + livrosNT.length;
   const prontos = Object.values(statuses).filter(s => s?.estrutura && s?.quiastico && s?.diagramas).length;
 
   return (
