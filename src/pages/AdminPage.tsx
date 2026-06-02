@@ -1,11 +1,15 @@
 import { useState, useRef, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { motion } from 'motion/react';
+import { Link, useNavigate } from 'react-router-dom';
+import { motion, AnimatePresence } from 'motion/react';
 import { apiUrl } from '../lib/apiUrl';
-import { BookOpen, Search, X, ShieldCheck, CheckCircle2, Circle } from 'lucide-react';
+import {
+  BookOpen, Search, X, ShieldCheck, CheckCircle2, Circle,
+  LogOut, Users, User, Crown,
+} from 'lucide-react';
 import Navbar from '../components/Navbar';
 import { BIBLE_DATA } from '../data/bibleData';
 import { BOOK_CONFIG } from './LivroPage';
+import { useAuth } from '../contexts/AuthContext';
 
 const PARES_ADMIN: Array<{ remover: string; manter: string; nome: string }> = [
   { remover: '2-samuel',   manter: '1-samuel',   nome: '1 e 2 Samuel'    },
@@ -138,14 +142,133 @@ function Secao({ titulo, livros, statuses }: { titulo: string; livros: typeof li
   );
 }
 
+interface UsuarioItem { id: number; username: string; role: string; created_at: number }
+
+function ModalUsuarios({ token, onClose }: { token: string; onClose: () => void }) {
+  const [usuarios,  setUsuarios]  = useState<UsuarioItem[]>([]);
+  const [carregando, setCarregando] = useState(true);
+  const [erro, setErro] = useState('');
+
+  useEffect(() => {
+    fetch(apiUrl.auth, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
+      body: JSON.stringify({ action: 'users' }),
+    })
+      .then(r => r.json())
+      .then(json => {
+        if (json.ok) setUsuarios(json.users);
+        else setErro(json.error ?? 'Erro ao carregar usuários');
+      })
+      .catch(() => setErro('Erro de rede'))
+      .finally(() => setCarregando(false));
+  }, [token]);
+
+  return (
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center p-4"
+      style={{ background: 'rgba(0,0,0,0.75)', backdropFilter: 'blur(8px)' }}
+      onClick={onClose}
+    >
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0, scale: 0.95 }}
+        onClick={e => e.stopPropagation()}
+        className="w-full max-w-md rounded-3xl p-6 sm:p-8 flex flex-col gap-5"
+        style={{
+          background: '#0c1220',
+          border: '1px solid rgba(0,212,255,0.15)',
+          maxHeight: '80vh',
+        }}
+      >
+        {/* Header */}
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <Users className="w-5 h-5" style={{ color: '#00d4ff' }} />
+            <h2 className="text-lg font-black uppercase tracking-wider text-white">Usuários</h2>
+          </div>
+          <button
+            onClick={onClose}
+            className="p-2 rounded-xl transition-colors"
+            style={{ color: 'rgba(255,255,255,0.4)' }}
+            onMouseEnter={e => { e.currentTarget.style.color = 'white'; }}
+            onMouseLeave={e => { e.currentTarget.style.color = 'rgba(255,255,255,0.4)'; }}
+          >
+            <X className="w-5 h-5" />
+          </button>
+        </div>
+
+        {/* Conteúdo */}
+        <div className="flex flex-col gap-2 overflow-y-auto flex-1">
+          {carregando && (
+            <p className="text-center py-8" style={{ color: 'rgba(255,255,255,0.4)' }}>Carregando…</p>
+          )}
+          {erro && (
+            <p className="text-center py-8" style={{ color: '#ff2d55' }}>{erro}</p>
+          )}
+          {!carregando && !erro && usuarios.map(u => (
+            <div
+              key={u.id}
+              className="flex items-center gap-3 px-4 py-3 rounded-2xl"
+              style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.07)' }}
+            >
+              <div
+                className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0"
+                style={{
+                  background: u.role === 'admin'
+                    ? 'rgba(0,212,255,0.1)'
+                    : 'rgba(168,85,247,0.1)',
+                  border: `1px solid ${u.role === 'admin' ? 'rgba(0,212,255,0.2)' : 'rgba(168,85,247,0.2)'}`,
+                }}
+              >
+                {u.role === 'admin'
+                  ? <Crown className="w-4 h-4" style={{ color: '#00d4ff' }} />
+                  : <User className="w-4 h-4" style={{ color: '#a855f7' }} />
+                }
+              </div>
+              <div className="flex-1 min-w-0">
+                <p className="font-black text-white text-sm truncate">{u.username}</p>
+                <p className="text-xs font-mono" style={{ color: 'rgba(255,255,255,0.35)' }}>
+                  {u.role} · desde {new Date(u.created_at * 1000).toLocaleDateString('pt-BR')}
+                </p>
+              </div>
+              <span
+                className="text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-md shrink-0"
+                style={
+                  u.role === 'admin'
+                    ? { background: 'rgba(0,212,255,0.1)', color: '#00d4ff', border: '1px solid rgba(0,212,255,0.2)' }
+                    : { background: 'rgba(168,85,247,0.1)', color: '#a855f7', border: '1px solid rgba(168,85,247,0.2)' }
+                }
+              >
+                {u.role}
+              </span>
+            </div>
+          ))}
+          {!carregando && !erro && usuarios.length === 0 && (
+            <p className="text-center py-8" style={{ color: 'rgba(255,255,255,0.3)' }}>Nenhum usuário encontrado</p>
+          )}
+        </div>
+
+        <p className="text-xs text-center" style={{ color: 'rgba(255,255,255,0.2)' }}>
+          {usuarios.length} usuário{usuarios.length !== 1 ? 's' : ''} cadastrado{usuarios.length !== 1 ? 's' : ''}
+        </p>
+      </motion.div>
+    </div>
+  );
+}
+
 export default function AdminPage() {
-  const [busca, setBusca]       = useState('');
-  const [statuses, setStatuses] = useState<Record<string, Status | null>>({});
+  const [busca, setBusca]             = useState('');
+  const [statuses, setStatuses]       = useState<Record<string, Status | null>>({});
+  const [modalUsuarios, setModalUsuarios] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
+  const navigate = useNavigate();
+  const { user, token, logout } = useAuth();
+  const isAdmin = user?.role === 'admin';
 
   useEffect(() => {
     inputRef.current?.focus();
-    // Carrega status dos livros exibidos (sem duplicatas de pares agrupados)
     const remover = new Set(PARES_ADMIN.map(p => p.remover));
     BIBLE_DATA.livros.filter(l => !remover.has(l.id)).forEach(l => {
       checarStatus(l.testamento, l.id).then(s =>
@@ -153,6 +276,11 @@ export default function AdminPage() {
       );
     });
   }, []);
+
+  const handleLogout = () => {
+    logout();
+    navigate('/login', { replace: true });
+  };
 
   const termo   = normalizar(busca.trim());
   const filtrar = (lista: typeof livrosAT) =>
@@ -189,6 +317,63 @@ export default function AdminPage() {
               </span>
               <span className="text-white/20">·</span>
               <span className="text-white/40">{total - prontos} pendentes</span>
+            </div>
+
+            {/* Usuário logado + ações */}
+            <div className="mt-6 flex items-center justify-center gap-3 flex-wrap">
+              <div
+                className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm"
+                style={{
+                  background: 'rgba(255,255,255,0.04)',
+                  border: '1px solid rgba(255,255,255,0.08)',
+                }}
+              >
+                {isAdmin
+                  ? <Crown className="w-4 h-4 shrink-0" style={{ color: '#00d4ff' }} />
+                  : <User className="w-4 h-4 shrink-0" style={{ color: '#a855f7' }} />
+                }
+                <span className="font-bold text-white">{user?.username}</span>
+                <span
+                  className="text-[10px] font-black uppercase tracking-wider px-1.5 py-0.5 rounded"
+                  style={
+                    isAdmin
+                      ? { background: 'rgba(0,212,255,0.1)', color: '#00d4ff' }
+                      : { background: 'rgba(168,85,247,0.1)', color: '#a855f7' }
+                  }
+                >
+                  {user?.role}
+                </span>
+              </div>
+
+              {isAdmin && (
+                <button
+                  onClick={() => setModalUsuarios(true)}
+                  className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-bold transition-all"
+                  style={{
+                    background: 'rgba(0,212,255,0.07)',
+                    border: '1px solid rgba(0,212,255,0.2)',
+                    color: '#00d4ff',
+                  }}
+                  onMouseEnter={e => { e.currentTarget.style.background = 'rgba(0,212,255,0.12)'; }}
+                  onMouseLeave={e => { e.currentTarget.style.background = 'rgba(0,212,255,0.07)'; }}
+                >
+                  <Users className="w-4 h-4" /> Usuários
+                </button>
+              )}
+
+              <button
+                onClick={handleLogout}
+                className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-bold transition-all"
+                style={{
+                  background: 'rgba(255,45,85,0.07)',
+                  border: '1px solid rgba(255,45,85,0.2)',
+                  color: '#ff2d55',
+                }}
+                onMouseEnter={e => { e.currentTarget.style.background = 'rgba(255,45,85,0.12)'; }}
+                onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255,45,85,0.07)'; }}
+              >
+                <LogOut className="w-4 h-4" /> Sair
+              </button>
             </div>
           </motion.div>
 
@@ -240,6 +425,13 @@ export default function AdminPage() {
 
         </div>
       </section>
+
+      {/* Modal usuários */}
+      <AnimatePresence>
+        {modalUsuarios && (
+          <ModalUsuarios token={token ?? ''} onClose={() => setModalUsuarios(false)} />
+        )}
+      </AnimatePresence>
     </div>
   );
 }

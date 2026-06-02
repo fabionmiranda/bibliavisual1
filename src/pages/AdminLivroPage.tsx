@@ -9,6 +9,7 @@ import {
 import Navbar from '../components/Navbar';
 import { BIBLE_DATA } from '../data/bibleData';
 import { BOOK_CONFIG } from './LivroPage';
+import { useAuth } from '../contexts/AuthContext';
 
 interface Props { testamento: 'AT' | 'NT' }
 
@@ -28,6 +29,7 @@ async function uploadArquivo(
   livroId: string,
   tipo: string,
   file: File,
+  token: string,
   filename?: string
 ): Promise<string> {
   const texto   = await file.text();
@@ -38,7 +40,10 @@ async function uploadArquivo(
 
   const res = await fetch(apiUrl.upload, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${token}`,
+    },
     body: JSON.stringify({ testamento, livroId, tipo, content, filename }),
   });
   const json = await res.json();
@@ -62,10 +67,13 @@ async function listarDiagramas(testamento: string, livroId: string): Promise<str
   } catch { return []; }
 }
 
-async function deletarArquivo(testamento: string, livroId: string, filename: string): Promise<void> {
+async function deletarArquivo(testamento: string, livroId: string, filename: string, token: string): Promise<void> {
   const res = await fetch(apiUrl.delete, {
     method: 'DELETE',
-    headers: { 'Content-Type': 'application/json' },
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${token}`,
+    },
     body: JSON.stringify({ testamento, livroId, filename }),
   });
   const json = await res.json();
@@ -79,6 +87,8 @@ function ZonaUpload({
   tipo,
   testamento,
   livroId,
+  token,
+  isAdmin,
 }: {
   titulo: string;
   descricao: string;
@@ -86,6 +96,8 @@ function ZonaUpload({
   tipo: 'estrutura' | 'quiastico';
   testamento: string;
   livroId: string;
+  token: string;
+  isAdmin: boolean;
 }) {
   const [estado, setEstado]   = useState<ZonaState>(ZONA_INICIAL);
   const [drag,   setDrag]     = useState(false);
@@ -104,24 +116,24 @@ function ZonaUpload({
     }
     setEstado(s => ({ ...s, estado: 'loading', nomeArquivo: file.name, mensagem: '' }));
     try {
-      await uploadArquivo(testamento, livroId, tipo, file);
+      await uploadArquivo(testamento, livroId, tipo, file, token);
       const caminho = `public/admin/${testamento}/${livroId}/${tipo}.txt`;
       setEstado({ estado: 'success', nomeArquivo: file.name, mensagem: `Salvo em ${caminho}`, jaExiste: true });
     } catch (e: any) {
       setEstado(s => ({ ...s, estado: 'error', mensagem: e.message ?? 'Erro ao salvar.' }));
     }
-  }, [testamento, livroId, tipo]);
+  }, [testamento, livroId, tipo, token]);
 
   const limpar = useCallback(async (e: React.MouseEvent) => {
     e.stopPropagation();
     if (!confirm(`Apagar ${tipo}.txt de ${livroId}? Esta acao nao pode ser desfeita.`)) return;
     try {
-      await deletarArquivo(testamento, livroId, `${tipo}.txt`);
+      await deletarArquivo(testamento, livroId, `${tipo}.txt`, token);
       setEstado(ZONA_INICIAL);
     } catch (err: any) {
       alert(err.message ?? 'Erro ao apagar.');
     }
-  }, [testamento, livroId, tipo]);
+  }, [testamento, livroId, tipo, token]);
 
   const onDrop = (e: React.DragEvent) => {
     e.preventDefault(); setDrag(false);
@@ -187,13 +199,15 @@ function ZonaUpload({
                 >
                   <RefreshCw className="w-4 h-4" /> Substituir
                 </button>
-                <button
-                  onClick={limpar}
-                  className="flex items-center gap-2 px-4 py-2 rounded-xl border border-brand-rose/40
-                    text-sm font-black text-brand-rose hover:bg-brand-rose/10 transition-all"
-                >
-                  <Trash2 className="w-4 h-4" /> Limpar dados
-                </button>
+                {isAdmin && (
+                  <button
+                    onClick={limpar}
+                    className="flex items-center gap-2 px-4 py-2 rounded-xl border border-brand-rose/40
+                      text-sm font-black text-brand-rose hover:bg-brand-rose/10 transition-all"
+                  >
+                    <Trash2 className="w-4 h-4" /> Limpar dados
+                  </button>
+                )}
               </div>
             </motion.div>
           )}
@@ -237,7 +251,17 @@ function validarNomeDiagrama(nome: string): string | null {
   return null;
 }
 
-function ZonaUploadDiagrama({ testamento, livroId }: { testamento: string; livroId: string }) {
+function ZonaUploadDiagrama({
+  testamento,
+  livroId,
+  token,
+  isAdmin,
+}: {
+  testamento: string;
+  livroId: string;
+  token: string;
+  isAdmin: boolean;
+}) {
   const [drag,       setDrag]       = useState(false);
   const [enviando,   setEnviando]   = useState(false);
   const [mensagem,   setMensagem]   = useState('');
@@ -256,7 +280,7 @@ function ZonaUploadDiagrama({ testamento, livroId }: { testamento: string; livro
     if (erro) { setTipoMsg('erro'); setMensagem(erro); return; }
     setEnviando(true); setMensagem(''); setTipoMsg('');
     try {
-      const salvo = await uploadArquivo(testamento, livroId, 'diagrama', file, file.name);
+      const salvo = await uploadArquivo(testamento, livroId, 'diagrama', file, token, file.name);
       setTipoMsg('ok');
       setMensagem(`Salvo: public/admin/${testamento}/${livroId}/${salvo}`);
       recarregar();
@@ -264,7 +288,7 @@ function ZonaUploadDiagrama({ testamento, livroId }: { testamento: string; livro
       setTipoMsg('erro');
       setMensagem(e.message ?? 'Erro ao salvar.');
     } finally { setEnviando(false); }
-  }, [testamento, livroId, recarregar]);
+  }, [testamento, livroId, token, recarregar]);
 
   const onDrop = (e: React.DragEvent) => {
     e.preventDefault(); setDrag(false);
@@ -349,7 +373,7 @@ function ZonaUploadDiagrama({ testamento, livroId }: { testamento: string; livro
             const apagar = async () => {
               if (!confirm(`Apagar ${f}? Esta acao nao pode ser desfeita.`)) return;
               try {
-                await deletarArquivo(testamento, livroId, f);
+                await deletarArquivo(testamento, livroId, f, token);
                 recarregar();
               } catch (err: any) { alert(err.message ?? 'Erro ao apagar.'); }
             };
@@ -361,7 +385,7 @@ function ZonaUploadDiagrama({ testamento, livroId }: { testamento: string; livro
               if (erro) { alert(erro); return; }
               setEnviando(true);
               try {
-                await uploadArquivo(testamento, livroId, 'diagrama', file, file.name);
+                await uploadArquivo(testamento, livroId, 'diagrama', file, token, file.name);
                 recarregar();
               } catch (err: any) { alert(err.message ?? 'Erro ao substituir.'); }
               finally { setEnviando(false); }
@@ -394,13 +418,15 @@ function ZonaUploadDiagrama({ testamento, livroId }: { testamento: string; livro
                   >
                     <RefreshCw className="w-4 h-4" /> Substituir
                   </button>
-                  <button
-                    onClick={apagar}
-                    className="flex items-center gap-2 px-4 py-2 rounded-xl border border-brand-rose/40
-                      text-sm font-black text-brand-rose hover:bg-brand-rose/10 transition-all"
-                  >
-                    <Trash2 className="w-4 h-4" /> Limpar dados
-                  </button>
+                  {isAdmin && (
+                    <button
+                      onClick={apagar}
+                      className="flex items-center gap-2 px-4 py-2 rounded-xl border border-brand-rose/40
+                        text-sm font-black text-brand-rose hover:bg-brand-rose/10 transition-all"
+                    >
+                      <Trash2 className="w-4 h-4" /> Limpar dados
+                    </button>
+                  )}
                   <input ref={substituirRef} type="file" accept=".txt" className="hidden"
                     onChange={e => { const file = e.target.files?.[0]; if (file) substituir(file); e.target.value = ''; }} />
                 </div>
@@ -418,6 +444,8 @@ export default function AdminLivroPage({ testamento }: Props) {
   const livroData = BIBLE_DATA.livros.find(l => l.id === livroId);
   const cfg       = BOOK_CONFIG[livroId];
   const Icone     = cfg?.icon ?? BookOpen;
+  const { user, token } = useAuth();
+  const isAdmin = user?.role === 'admin';
 
   return (
     <div className="min-h-screen flex flex-col bg-bg-deep text-white">
@@ -467,6 +495,8 @@ export default function AdminLivroPage({ testamento }: Props) {
               tipo="estrutura"
               testamento={testamento}
               livroId={livroId}
+              token={token ?? ''}
+              isAdmin={isAdmin}
             />
           </motion.div>
 
@@ -478,13 +508,20 @@ export default function AdminLivroPage({ testamento }: Props) {
               tipo="quiastico"
               testamento={testamento}
               livroId={livroId}
+              token={token ?? ''}
+              isAdmin={isAdmin}
             />
           </motion.div>
         </div>
 
         {/* Zona de upload: diagramas por letra */}
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}>
-          <ZonaUploadDiagrama testamento={testamento} livroId={livroId} />
+          <ZonaUploadDiagrama
+            testamento={testamento}
+            livroId={livroId}
+            token={token ?? ''}
+            isAdmin={isAdmin}
+          />
         </motion.div>
 
         {/* Nota de destino */}

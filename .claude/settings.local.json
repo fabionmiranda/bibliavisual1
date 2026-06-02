@@ -50,7 +50,10 @@
       "Bash(Select-Object -First 5)",
       "Bash(grep -n \"estrutura\\\\|livro.id\\\\|to=\\\\`\\\\|href\" \"C:\\\\Users\\\\fabiomiranda\\\\Documents\\\\2BIBLIA-MAPEADA-EXPOSITIVA\\\\23-06-26-01\\\\src\\\\pages\\\\Biblioteca.tsx\")",
       "PowerShell(Get-ChildItem \"C:\\\\Users\\\\fabiomiranda\\\\Documents\\\\2BIBLIA-MAPEADA-EXPOSITIVA\\\\23-06-26-01\\\\public\\\\admin\" -Recurse -Force | ForEach-Object { $_.FullName })",
-      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\fabiomiranda\\\\Documents\\\\2BIBLIA-MAPEADA-EXPOSITIVA\\\\23-06-26-01\\\\public\\\\admin\" -Recurse -Filter \"quiastico.txt\" | ForEach-Object { $_.FullName })"
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\fabiomiranda\\\\Documents\\\\2BIBLIA-MAPEADA-EXPOSITIVA\\\\23-06-26-01\\\\public\\\\admin\" -Recurse -Filter \"quiastico.txt\" | ForEach-Object { $_.FullName })",
+      "PowerShell(cd \"C:\\\\Users\\\\fabiomiranda\\\\Documents\\\\2BIBLIA-MAPEADA-EXPOSITIVA\\\\23-06-26-01\"; npx tsc --noEmit --project tsconfig.json 2>&1 | Where-Object { $_ -notmatch \"assets\" } | Select-Object -First 30)",
+      "PowerShell(Start-Process powershell -ArgumentList '-NoExit', '-Command', 'cd \"C:\\\\Users\\\\fabiomiranda\\\\Documents\\\\2BIBLIA-MAPEADA-EXPOSITIVA\\\\23-06-26-01\"; npm run dev')",
+      "Bash(findstr -i \"protected\\\\|auth\")"
     ]
   }
 }
