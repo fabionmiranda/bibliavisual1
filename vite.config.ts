@@ -2,6 +2,7 @@ import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
 import fs from 'fs';
+import crypto from 'crypto';
 import {defineConfig, loadEnv} from 'vite';
 
 export default defineConfig(({mode}) => {
@@ -121,7 +122,6 @@ export default defineConfig(({mode}) => {
             req.on('data', (chunk: Buffer) => { body += chunk.toString(); });
             req.on('end', () => {
               try {
-                const crypto = require('crypto');
                 const data   = JSON.parse(body);
                 const action = data.action ?? '';
                 const dbFile = path.join(__dirname, '.dev-auth.json');

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
-import { ShieldCheck, Eye, EyeOff, Loader2, AlertCircle } from 'lucide-react';
+import { ShieldCheck, Eye, EyeOff, Loader2, AlertCircle, ArrowLeft } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 
 export default function LoginPage() {
@@ -72,6 +72,30 @@ export default function LoginPage() {
           background: 'radial-gradient(ellipse 60% 50% at 50% 0%, rgba(0,212,255,0.07) 0%, transparent 70%)',
         }}
       />
+
+      {/* Botão voltar ao site — fixo no canto superior esquerdo */}
+      <Link
+        to="/"
+        className="fixed top-5 left-5 z-20 flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-black uppercase tracking-wider transition-all duration-200 hover:scale-105 active:scale-95"
+        style={{
+          background: 'rgba(255,255,255,0.04)',
+          border: '1px solid rgba(255,255,255,0.10)',
+          color: 'rgba(255,255,255,0.45)',
+        }}
+        onMouseEnter={e => {
+          (e.currentTarget as HTMLElement).style.color = '#00d4ff';
+          (e.currentTarget as HTMLElement).style.borderColor = 'rgba(0,212,255,0.35)';
+          (e.currentTarget as HTMLElement).style.background = 'rgba(0,212,255,0.06)';
+        }}
+        onMouseLeave={e => {
+          (e.currentTarget as HTMLElement).style.color = 'rgba(255,255,255,0.45)';
+          (e.currentTarget as HTMLElement).style.borderColor = 'rgba(255,255,255,0.10)';
+          (e.currentTarget as HTMLElement).style.background = 'rgba(255,255,255,0.04)';
+        }}
+      >
+        <ArrowLeft className="w-4 h-4" />
+        Voltar ao site
+      </Link>
 
       <motion.div
         initial={{ opacity: 0, y: 24 }}
