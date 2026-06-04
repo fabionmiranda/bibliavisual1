@@ -1159,11 +1159,12 @@ function slugToLetra(slug: string) { return slug.replace(/-prime/g, "'").toUpper
 
 // Converte referência bíblica em string de coordenadas (mesmo formato do AdminLivroPage)
 function refParaCoordsStr(ref: string): string {
-  const multi  = ref.match(/(\d+):(\d+)-(\d+):(\d+)/);
+  const r = ref.replace(/[–—]/g, '-');
+  const multi  = r.match(/(\d+):(\d+)-(\d+):(\d+)/);
   if (multi)  return `${multi[1]}_${multi[2]}-${multi[3]}_${multi[4]}`;
-  const single = ref.match(/(\d+):(\d+)-(\d+)/);
+  const single = r.match(/(\d+):(\d+)-(\d+)/);
   if (single) return `${single[1]}_${single[2]}_${single[3]}`;
-  const verse  = ref.match(/(\d+):(\d+)/);
+  const verse  = r.match(/(\d+):(\d+)/);
   if (verse)  return `${verse[1]}_${verse[2]}`;
   return '';
 }
@@ -1251,9 +1252,23 @@ export default function DiagramaLetraPage() {
         const j1 = await r1.json();
         const arquivos: string[] = j1.arquivos ?? [];
 
-        // 3. Busca o arquivo exato: Livro_CoordsStr.txt
+        // 3. Busca o arquivo: novo formato (sem letra) ou antigo (com letra no URL)
         const nomeEsperado = coordsStr ? `${livroNome}_${coordsStr}.txt` : null;
-        const arquivo = nomeEsperado ? arquivos.find(f => f === nomeEsperado) : undefined;
+        let arquivo = nomeEsperado ? arquivos.find(f => f === nomeEsperado) : undefined;
+
+        // Fallback: formato antigo Livro_Letra_Cap_VI[_VF].txt
+        if (!arquivo && letraDisplay) {
+          const prefixoAntigo = `${livroNome}_${letraDisplay}_`;
+          // extrai cap da coordsStr (primeiros dígitos antes de _ ou -)
+          const capMatch = coordsStr.match(/^(\d+)/);
+          const cap = capMatch ? capMatch[1] : null;
+          arquivo = arquivos.find(f => {
+            if (!f.startsWith(prefixoAntigo)) return false;
+            if (!cap) return true;
+            const p = f.replace(/\.txt$/i, '').split('_');
+            return p[2] === cap; // p[0]=Livro, p[1]=Letra, p[2]=Cap
+          });
+        }
 
         if (!arquivo || cancelled) { if (!cancelled) setEstado('empty'); return; }
         setMetaArq(arquivo);
@@ -1272,8 +1287,11 @@ export default function DiagramaLetraPage() {
   const meta = (() => {
     if (!metaArq) return null;
     const p = metaArq.replace(/\.txt$/i, '').split('_');
-    if (p.length < 3) return null;
-    return { cap: p[1], vi: p[2], vf: p[3] ?? '' };
+    // Novo: Livro_Cap_VI[_VF]  →  p[1]=cap, p[2]=vi, p[3]=vf
+    // Antigo: Livro_Letra_Cap_VI[_VF]  →  p[1]=letra, p[2]=cap, p[3]=vi, p[4]=vf
+    const offset = p.length >= 5 || (p.length >= 4 && isNaN(Number(p[1]))) ? 1 : 0;
+    if (p.length < 3 + offset) return null;
+    return { cap: p[1 + offset], vi: p[2 + offset], vf: p[3 + offset] ?? '' };
   })();
 
   return (

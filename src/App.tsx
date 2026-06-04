@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import React from 'react';
 import Home from './pages/Home';
 import Method from './pages/Method';
 import Tutorials from './pages/Tutorials';
@@ -15,10 +16,41 @@ import LoginPage from './pages/LoginPage';
 import ProtectedRoute from './components/ProtectedRoute';
 import { AuthProvider } from './contexts/AuthContext';
 
+class ErrorBoundary extends React.Component<
+  { children: React.ReactNode },
+  { hasError: boolean; msg: string }
+> {
+  constructor(props: any) {
+    super(props);
+    this.state = { hasError: false, msg: '' };
+  }
+  static getDerivedStateFromError(e: any) {
+    return { hasError: true, msg: e?.message ?? String(e) };
+  }
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div className="min-h-screen bg-bg-deep flex flex-col items-center justify-center gap-4 p-8 text-center">
+          <p className="text-white/50 font-mono text-sm uppercase tracking-widest">Erro ao carregar página</p>
+          <p className="text-white/30 font-mono text-xs max-w-md">{this.state.msg}</p>
+          <button
+            onClick={() => { this.setState({ hasError: false, msg: '' }); window.history.back(); }}
+            className="px-5 py-2.5 rounded-xl border border-brand-blue/40 text-brand-blue text-sm font-bold hover:bg-brand-blue/10 transition-all"
+          >
+            Voltar
+          </button>
+        </div>
+      );
+    }
+    return this.props.children;
+  }
+}
+
 export default function App() {
   return (
     <AuthProvider>
       <Router>
+        <ErrorBoundary>
         <Watermark />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -48,6 +80,7 @@ export default function App() {
 
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
+        </ErrorBoundary>
       </Router>
     </AuthProvider>
   );

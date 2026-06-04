@@ -747,7 +747,12 @@ export default function EstruturaDetalhePage() {
         const arquivos: string[] = j.arquivos ?? [];
         const secaoTemDiagrama = arquivos.some(f => {
           const p = f.replace(/\.txt$/i, '').split('_');
-          return p.length >= 3 && p[1] === coords.cap && p[2] === coords.vi;
+          // Novo: Livro_Cap_VI[_VF]  →  p[1]=cap, p[2]=vi
+          // Antigo: Livro_Letra_Cap_VI[_VF]  →  p[2]=cap, p[3]=vi
+          const offset = p.length >= 4 && isNaN(Number(p[1])) ? 1 : 0;
+          return p.length >= 3 + offset
+            && p[1 + offset] === coords.cap
+            && p[2 + offset] === coords.vi;
         });
         if (secaoTemDiagrama && quiasmo) {
           // Marca todas as letras desta seção com o indicador verde

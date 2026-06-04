@@ -95,14 +95,16 @@ function parsearItensEst(texto: string): ItemEst[] {
 //   "At 6:8-7:60" → "6_8-7_60"
 //   "At 1:1"      → "1_1"
 function refParaCoordsStr(ref: string): string {
+  // Normaliza en-dash / em-dash para hífen comum
+  const r = ref.replace(/[–—]/g, '-');
   // Multi-capítulo: "6:8-7:60"
-  const multi = ref.match(/(\d+):(\d+)-(\d+):(\d+)/);
+  const multi = r.match(/(\d+):(\d+)-(\d+):(\d+)/);
   if (multi) return `${multi[1]}_${multi[2]}-${multi[3]}_${multi[4]}`;
   // Mesmo capítulo com intervalo: "1:1-8"
-  const single = ref.match(/(\d+):(\d+)-(\d+)/);
+  const single = r.match(/(\d+):(\d+)-(\d+)/);
   if (single) return `${single[1]}_${single[2]}_${single[3]}`;
   // Versículo único: "1:1"
-  const verse = ref.match(/(\d+):(\d+)/);
+  const verse = r.match(/(\d+):(\d+)/);
   if (verse) return `${verse[1]}_${verse[2]}`;
   return '';
 }
@@ -261,9 +263,6 @@ function CardDiagramaExiste({
   onSubstituir: (file: File) => void; onApagar: () => void; enviando: boolean;
 }) {
   const fileRef = useRef<HTMLInputElement>(null);
-  const p = nomeArquivo.replace(/\.txt$/i, '').split('_');
-  const [, letra, cap, vi, vf] = p;
-  const versiculos = vf ? `${vi}–${vf}` : vi;
 
   return (
     <motion.div
@@ -277,9 +276,6 @@ function CardDiagramaExiste({
       <div>
         <p className="text-green-400 font-black text-base sm:text-lg">Arquivo ja existe</p>
         <p className="text-white/60 text-sm mt-1 font-mono">{nomeArquivo}</p>
-        {cap && <p className="text-white/35 text-xs mt-0.5 font-mono">
-          Letra <span className="font-black text-white/60">{letra}</span> · cap {cap} · {versiculos}
-        </p>}
       </div>
       <div className="flex items-center gap-3">
         <button
@@ -631,7 +627,8 @@ export default function AdminLivroPage({ testamento }: Props) {
             Os arquivos serao salvos em:<br />
             <span className="text-brand-blue/70">public/admin/{testamento}/{livroId}/estrutura.txt</span><br />
             <span className="text-brand-purple/70">public/admin/{testamento}/{livroId}/quiastico.txt</span><br />
-            <span className="text-brand-rose/70">public/admin/{testamento}/{livroId}/Livro_Letra_Cap_VI_VF.txt</span>
+            <span className="text-brand-rose/70">public/admin/{testamento}/{livroId}/Livro_Cap_VI_VF.txt</span><br />
+            <span className="text-brand-rose/50 text-xs">Ex: Atos_1_1_8.txt · multi-cap: Atos_6_8-7_60.txt</span>
           </p>
         </motion.div>
 

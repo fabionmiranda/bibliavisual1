@@ -215,7 +215,9 @@ export default defineConfig(({mode}) => {
                 ? fs.readdirSync(dir).filter(f => {
                     if (!f.endsWith('.txt')) return false;
                     if (f === 'estrutura.txt' || f === 'quiastico.txt') return false;
-                    return /^.+_.+_\d+_\d+_\d+\.txt$/.test(f);
+                    // Novo: Livro_Cap_VI[_VF].txt / multi-cap: Livro_CapI_VI-CapF_VF.txt
+                    // Antigo: Livro_Letra_Cap_VI[_VF].txt
+                    return /^.+_[A-Z']?_?\d+_\d+[-_\d]*\.txt$/.test(f);
                   })
                 : [];
               res.end(JSON.stringify({ ok: true, arquivos }));
