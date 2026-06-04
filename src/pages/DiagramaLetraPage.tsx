@@ -4,7 +4,7 @@ import { motion } from 'motion/react';
 import { apiUrl } from '../lib/apiUrl';
 import {
   ChevronRight, BookOpen, ArrowLeft, FileText, AlertCircle,
-  Lightbulb, Quote
+  Lightbulb, Quote, ShieldCheck,
 } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -1157,6 +1157,30 @@ function NavDiagramas({ secoes, ctx }: { secoes: Secao[]; ctx: CtxWA }) {
 // ─────────────────────────────────────────────
 function slugToLetra(slug: string) { return slug.replace(/-prime/g, "'").toUpperCase(); }
 
+// Extrai cap e vi de uma referência bíblica, ex: "At 1:1-8" → { cap:'1', vi:'1' }
+function parsearRefBiblica(ref: string): { cap: string; vi: string } | null {
+  const m = ref.match(/(\d+):(\d+)/);
+  if (!m) return null;
+  return { cap: m[1], vi: m[2] };
+}
+
+// Parseia estrutura.txt (mesmo formato de EstruturaDetalhePage)
+function parsearItensEstrutura(texto: string): Array<{ num: string; ref: string; titulo: string }> {
+  return texto
+    .split('\n')
+    .map(l => l.trim())
+    .filter(l => l.length > 0)
+    .map(l => {
+      const m1 = l.match(/^\[(\d+)\]\s*-\s*(.+?)\s*-\s*(.+)$/);
+      if (m1) return { num: m1[1], ref: m1[2].trim(), titulo: m1[3].trim() };
+      const m2 = l.match(/^\[(\d+)\]\s+(.+?)\s+[—–]\s+(.+)$/);
+      if (m2) return { num: m2[1], ref: m2[2].trim(), titulo: m2[3].trim() };
+      const m3 = l.match(/^\[(\d+)\]\s+(.+)$/);
+      if (m3) return { num: m3[1], ref: '', titulo: m3[2].trim() };
+      return { num: '', ref: '', titulo: l };
+    });
+}
+
 // ─────────────────────────────────────────────
 // PAGE
 // ─────────────────────────────────────────────
@@ -1207,13 +1231,35 @@ export default function DiagramaLetraPage() {
     async function load() {
       setEstado('loading');
       try {
+        // 1. Busca estrutura.txt para descobrir cap/vi da seção `indice`
+        const rEst = await fetch(`/admin/${testamento}/${livroId}/estrutura.txt`);
+        let refCap: string | null = null;
+        let refVi: string | null = null;
+        if (rEst.ok) {
+          const textoEst = await rEst.text();
+          const itens = parsearItensEstrutura(textoEst);
+          const item = itens.find(it => it.num === String(parseInt(indice)).padStart(2, '0'))
+            ?? itens[parseInt(indice) - 1];
+          if (item?.ref) {
+            const coords = parsearRefBiblica(item.ref);
+            if (coords) { refCap = coords.cap; refVi = coords.vi; }
+          }
+        }
+
+        // 2. Lista arquivos de diagrama do livro
         const r1 = await fetch(`${apiUrl.diagramas}?testamento=${testamento}&livroId=${livroId}`);
         const j1 = await r1.json();
         const arquivos: string[] = j1.arquivos ?? [];
+
+        // 3. Filtra por letra + (cap e vi quando disponíveis)
         const arquivo = arquivos.find(f => {
           const p = f.replace(/\.txt$/i, '').split('_');
-          return p.length >= 5 && p[1] === letraDisplay;
+          if (p.length < 4) return false;
+          if (p[1] !== letraDisplay) return false;
+          if (refCap && refVi) return p[2] === refCap && p[3] === refVi;
+          return true; // fallback: apenas por letra
         });
+
         if (!arquivo || cancelled) { if (!cancelled) setEstado('empty'); return; }
         setMetaArq(arquivo);
         const r2 = await fetch(`/admin/${testamento}/${livroId}/${arquivo}`);
@@ -1226,12 +1272,13 @@ export default function DiagramaLetraPage() {
     }
     load();
     return () => { cancelled = true; };
-  }, [livroId, testamento, letraDisplay]);
+  }, [livroId, testamento, indice, letraDisplay]);
 
   const meta = (() => {
     if (!metaArq) return null;
     const p = metaArq.replace(/\.txt$/i, '').split('_');
-    return p.length >= 5 ? { cap: p[2], vi: p[3], vf: p[4] } : null;
+    if (p.length < 4) return null;
+    return { cap: p[2], vi: p[3], vf: p[4] ?? '' };
   })();
 
   return (
@@ -1313,27 +1360,50 @@ export default function DiagramaLetraPage() {
           </div>
         )}
 
-        {(estado === 'empty' || estado === 'error') && (
+        {estado === 'error' && (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}
             className="rounded-2xl border border-white/[0.06] p-12 text-center"
             style={{ background: 'linear-gradient(135deg,rgba(255,255,255,0.025),transparent)' }}>
             <div className="flex flex-col items-center gap-5">
               <div className="w-16 h-16 rounded-2xl flex items-center justify-center"
                 style={{ background: `${corHex}15`, border: `1px solid ${corHex}30` }}>
-                {estado === 'error' ? <AlertCircle className="w-7 h-7" style={{ color: corHex }} />
-                  : <FileText className="w-7 h-7" style={{ color: corHex }} />}
+                <AlertCircle className="w-7 h-7" style={{ color: corHex }} />
               </div>
-              <div>
-                <p className="font-display font-black text-xl uppercase tracking-tight text-white/70 mb-2">
-                  {estado === 'error' ? 'Erro ao carregar' : 'Conteúdo não disponível'}
-                </p>
-                <p className="text-white/35 text-sm max-w-sm leading-relaxed">
-                  {estado === 'error'
-                    ? 'Não foi possível carregar o diagrama.'
-                    : `Nenhum arquivo encontrado para a divisão ${letraDisplay}.`}
-                </p>
-              </div>
+              <p className="font-display font-black text-xl uppercase tracking-tight text-white/70">
+                Erro ao carregar
+              </p>
+              <p className="text-white/35 text-sm">Não foi possível carregar o diagrama.</p>
             </div>
+          </motion.div>
+        )}
+
+        {estado === 'empty' && (
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}
+            className="rounded-2xl border-2 border-dashed border-white/10 p-12 text-center flex flex-col items-center gap-6">
+            <div className="w-16 h-16 rounded-2xl flex items-center justify-center"
+              style={{ background: `${corHex}15`, border: `1px solid ${corHex}30` }}>
+              <FileText className="w-7 h-7" style={{ color: corHex }} />
+            </div>
+            <div className="flex flex-col gap-2">
+              <p className="font-display font-black text-xl uppercase tracking-tight text-white/70">
+                Diagrama não disponível
+              </p>
+              <p className="text-white/40 text-sm max-w-xs leading-relaxed mx-auto">
+                Nenhum arquivo foi encontrado para a divisão{' '}
+                <span className="font-black" style={{ color: corHex }}>{letraDisplay}</span>.
+              </p>
+              <p className="text-white/30 text-sm max-w-xs leading-relaxed mx-auto">
+                Para disponibilizar este conteúdo, faça o upload do arquivo na área administrativa.
+              </p>
+            </div>
+            <Link
+              to={`/admin/${testamento.toLowerCase()}/${livroId}`}
+              className="flex items-center gap-2 px-5 py-2.5 rounded-xl border text-sm font-bold transition-all"
+              style={{ borderColor: `${corHex}40`, color: corHex, background: `${corHex}10` }}
+            >
+              <ShieldCheck className="w-4 h-4" />
+              Ir para área Admin — Upload
+            </Link>
           </motion.div>
         )}
 
@@ -1343,13 +1413,13 @@ export default function DiagramaLetraPage() {
             {/* Grid de diagramas */}
             <NavDiagramas
               secoes={doc.secoes}
-              ctx={{ estudo: doc.estudo, livro: livroData?.nome ?? livroId, secao: indice, letra: letraDisplay, referencia: meta ? `${parseInt(meta.cap)}:${parseInt(meta.vi)}-${parseInt(meta.vf)}` : '' }}
+              ctx={{ estudo: doc.estudo, livro: livroData?.nome ?? livroId, secao: indice, letra: letraDisplay, referencia: meta ? (meta.vf ? `${parseInt(meta.cap)}:${parseInt(meta.vi)}-${parseInt(meta.vf)}` : `${parseInt(meta.cap)}:${parseInt(meta.vi)}`) : '' }}
             />
 
             {/* Seções */}
             <div className="mt-2 space-y-5">
               {doc.secoes.map((s, i) => (
-                <SecaoCard key={s.num} sec={s} idx={i} ctx={{ estudo: doc.estudo, livro: livroData?.nome ?? livroId, secao: indice, letra: letraDisplay, referencia: meta ? `${parseInt(meta.cap)}:${parseInt(meta.vi)}-${parseInt(meta.vf)}` : '' }} />
+                <SecaoCard key={s.num} sec={s} idx={i} ctx={{ estudo: doc.estudo, livro: livroData?.nome ?? livroId, secao: indice, letra: letraDisplay, referencia: meta ? (meta.vf ? `${parseInt(meta.cap)}:${parseInt(meta.vi)}-${parseInt(meta.vf)}` : `${parseInt(meta.cap)}:${parseInt(meta.vi)}`) : '' }} />
               ))}
             </div>
 

@@ -8,6 +8,7 @@ import { sanitizarTxt } from '../lib/sanitizarTxt';
 import Footer from '../components/Footer';
 import { BIBLE_DATA } from '../data/bibleData';
 import { BOOK_CONFIG } from './LivroPage';
+import { apiUrl } from '../lib/apiUrl';
 
 interface Item {
   num: string;
@@ -501,9 +502,22 @@ function slugLetra(letra: string): string {
     .replace(/[^a-z0-9-]/g, '');
 }
 
+// Extrai cap e vi de referência bíblica: "At 1:1-8" → { cap:'1', vi:'1' }
+function parsearRefCap(ref: string): { cap: string; vi: string } | null {
+  const m = ref.match(/(\d+):(\d+)/);
+  if (!m) return null;
+  return { cap: m[1], vi: m[2] };
+}
+
 interface ConexaoSVG { cor: string; x: number; y1: number; y2: number }
 
-function DiagramaQuiasmo({ linhas, resumo, basePath, key: _ }: { linhas: string[]; resumo: string[]; basePath: string; key?: number }) {
+function DiagramaQuiasmo({ linhas, resumo, basePath, letrasComDiagrama, key: _ }: {
+  linhas: string[];
+  resumo: string[];
+  basePath: string;
+  letrasComDiagrama: Set<string>;
+  key?: number;
+}) {
   const grupos = agruparLinhas(linhas);
   const navigate = useNavigate();
   const containerRef = useRef<HTMLDivElement>(null);
@@ -575,6 +589,7 @@ function DiagramaQuiasmo({ linhas, resumo, basePath, key: _ }: { linhas: string[
           const indent = g.nivel * 40;
           const espelho = temPrime(g.letra ?? '');
           const href = `${basePath}/${slugLetra(g.letra ?? String(i))}`;
+          const temDiagrama = letrasComDiagrama.has(g.letra ?? '');
           return (
             <div
               key={i}
@@ -584,19 +599,28 @@ function DiagramaQuiasmo({ linhas, resumo, basePath, key: _ }: { linhas: string[
                 hover:bg-white/[0.03] hover:border-white/10 -mx-3 px-3"
               style={{ paddingLeft: indent + 12 }}
             >
-              <div
-                ref={el => { badgeRefs.current[i] = el; }}
-                className="shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center
-                  font-mono font-black text-base sm:text-lg border transition-all duration-200
-                  group-hover:scale-110"
-                style={{
-                  color: cor,
-                  borderColor: cor + (espelho ? '90' : '60'),
-                  background: cor + (espelho ? '28' : '15'),
-                  boxShadow: espelho ? `0 0 12px ${cor}44` : 'none',
-                }}
-              >
-                {g.letra}
+              <div className="relative shrink-0">
+                <div
+                  ref={el => { badgeRefs.current[i] = el; }}
+                  className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center
+                    font-mono font-black text-base sm:text-lg border transition-all duration-200
+                    group-hover:scale-110"
+                  style={{
+                    color: cor,
+                    borderColor: cor + (espelho ? '90' : '60'),
+                    background: cor + (espelho ? '28' : '15'),
+                    boxShadow: espelho ? `0 0 12px ${cor}44` : 'none',
+                  }}
+                >
+                  {g.letra}
+                </div>
+                {temDiagrama && (
+                  <span
+                    className="absolute -top-1 -right-1 w-3.5 h-3.5 rounded-full border-2 border-bg-deep"
+                    style={{ background: '#22c55e', boxShadow: '0 0 6px #22c55e99' }}
+                    title="Diagrama disponível"
+                  />
+                )}
               </div>
               <div className="flex-1 flex flex-col sm:flex-row sm:items-baseline gap-1.5 sm:gap-6 min-w-0 py-1">
                 {g.ref && (
@@ -692,6 +716,7 @@ export default function EstruturaDetalhePage() {
   const [estado,   setEstado]   = useState<Estado>('carregando');
   const [itens,    setItens]    = useState<Item[]>([]);
   const [quiasmos, setQuiasmos] = useState<BlocoQuiasmo[]>([]);
+  const [letrasComDiagrama, setLetrasComDiagrama] = useState<Set<string>>(new Set());
 
   useEffect(() => {
     setEstado('carregando');
@@ -708,6 +733,32 @@ export default function EstruturaDetalhePage() {
       })
       .catch(() => setEstado('erro'));
   }, [urlEstrutura, urlQuiasmo]);
+
+  // Busca diagramas disponíveis e marca letras com diagrama para a seção atual
+  useEffect(() => {
+    if (estado !== 'ok') return;
+    const item = itens[idx - 1];
+    if (!item) return;
+    const coords = parsearRefCap(item.ref);
+    fetch(`${apiUrl.diagramas}?testamento=${testamento}&livroId=${livroId}`)
+      .then(r => r.json())
+      .then(j => {
+        const arquivos: string[] = j.arquivos ?? [];
+        const letras = new Set<string>();
+        arquivos.forEach(f => {
+          const p = f.replace(/\.txt$/i, '').split('_');
+          if (p.length < 4) return;
+          const letraArq = p[1];
+          if (coords) {
+            if (p[2] === coords.cap && p[3] === coords.vi) letras.add(letraArq);
+          } else {
+            letras.add(letraArq);
+          }
+        });
+        setLetrasComDiagrama(letras);
+      })
+      .catch(() => {});
+  }, [estado, idx, itens, testamento, livroId]);
 
   useEffect(() => { window.scrollTo(0, 0); }, [idx]);
 
@@ -838,7 +889,7 @@ export default function EstruturaDetalhePage() {
 
                 <div className="rounded-2xl border border-white/[0.08] p-6 sm:p-10 overflow-x-auto"
                   style={{ background: 'linear-gradient(135deg,rgba(255,255,255,0.03),rgba(255,255,255,0.01))' }}>
-                  <DiagramaQuiasmo key={numSec} linhas={quiasmo.linhas} resumo={quiasmo.resumo} basePath={`${base}/${idx}`} />
+                  <DiagramaQuiasmo key={numSec} linhas={quiasmo.linhas} resumo={quiasmo.resumo} basePath={`${base}/${idx}`} letrasComDiagrama={letrasComDiagrama} />
                 </div>
               </motion.div>
             ) : (
