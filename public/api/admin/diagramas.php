@@ -13,7 +13,7 @@ if (is_dir($dir)) {
     foreach (scandir($dir) as $f) {
         if (!str_ends_with($f, '.txt')) continue;
         if ($f === 'estrutura.txt' || $f === 'quiastico.txt') continue;
-        if (preg_match('/^.+_.+_\d+_\d+_\d+\.txt$/', $f)) {
+        if (preg_match('/^.+_\d+_\d+(_\d+)?\.txt$/', $f)) {
             $arquivos[] = $f;
         }
     }

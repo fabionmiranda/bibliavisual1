@@ -1157,11 +1157,15 @@ function NavDiagramas({ secoes, ctx }: { secoes: Secao[]; ctx: CtxWA }) {
 // ─────────────────────────────────────────────
 function slugToLetra(slug: string) { return slug.replace(/-prime/g, "'").toUpperCase(); }
 
-// Extrai cap e vi de uma referência bíblica, ex: "At 1:1-8" → { cap:'1', vi:'1' }
-function parsearRefBiblica(ref: string): { cap: string; vi: string } | null {
-  const m = ref.match(/(\d+):(\d+)/);
-  if (!m) return null;
-  return { cap: m[1], vi: m[2] };
+// Converte referência bíblica em string de coordenadas (mesmo formato do AdminLivroPage)
+function refParaCoordsStr(ref: string): string {
+  const multi  = ref.match(/(\d+):(\d+)-(\d+):(\d+)/);
+  if (multi)  return `${multi[1]}_${multi[2]}-${multi[3]}_${multi[4]}`;
+  const single = ref.match(/(\d+):(\d+)-(\d+)/);
+  if (single) return `${single[1]}_${single[2]}_${single[3]}`;
+  const verse  = ref.match(/(\d+):(\d+)/);
+  if (verse)  return `${verse[1]}_${verse[2]}`;
+  return '';
 }
 
 // Parseia estrutura.txt (mesmo formato de EstruturaDetalhePage)
@@ -1231,19 +1235,15 @@ export default function DiagramaLetraPage() {
     async function load() {
       setEstado('loading');
       try {
-        // 1. Busca estrutura.txt para descobrir cap/vi da seção `indice`
+        // 1. Busca estrutura.txt para obter a referência da seção `indice`
         const rEst = await fetch(`/admin/${testamento}/${livroId}/estrutura.txt`);
-        let refCap: string | null = null;
-        let refVi: string | null = null;
+        let coordsStr = '';
+        let livroNome = livroId.charAt(0).toUpperCase() + livroId.slice(1);
         if (rEst.ok) {
-          const textoEst = await rEst.text();
-          const itens = parsearItensEstrutura(textoEst);
-          const item = itens.find(it => it.num === String(parseInt(indice)).padStart(2, '0'))
+          const itens = parsearItensEstrutura(await rEst.text());
+          const item  = itens.find(it => it.num === String(parseInt(indice)).padStart(2, '0'))
             ?? itens[parseInt(indice) - 1];
-          if (item?.ref) {
-            const coords = parsearRefBiblica(item.ref);
-            if (coords) { refCap = coords.cap; refVi = coords.vi; }
-          }
+          if (item?.ref) coordsStr = refParaCoordsStr(item.ref);
         }
 
         // 2. Lista arquivos de diagrama do livro
@@ -1251,14 +1251,9 @@ export default function DiagramaLetraPage() {
         const j1 = await r1.json();
         const arquivos: string[] = j1.arquivos ?? [];
 
-        // 3. Filtra por letra + (cap e vi quando disponíveis)
-        const arquivo = arquivos.find(f => {
-          const p = f.replace(/\.txt$/i, '').split('_');
-          if (p.length < 4) return false;
-          if (p[1] !== letraDisplay) return false;
-          if (refCap && refVi) return p[2] === refCap && p[3] === refVi;
-          return true; // fallback: apenas por letra
-        });
+        // 3. Busca o arquivo exato: Livro_CoordsStr.txt
+        const nomeEsperado = coordsStr ? `${livroNome}_${coordsStr}.txt` : null;
+        const arquivo = nomeEsperado ? arquivos.find(f => f === nomeEsperado) : undefined;
 
         if (!arquivo || cancelled) { if (!cancelled) setEstado('empty'); return; }
         setMetaArq(arquivo);
@@ -1277,8 +1272,8 @@ export default function DiagramaLetraPage() {
   const meta = (() => {
     if (!metaArq) return null;
     const p = metaArq.replace(/\.txt$/i, '').split('_');
-    if (p.length < 4) return null;
-    return { cap: p[2], vi: p[3], vf: p[4] ?? '' };
+    if (p.length < 3) return null;
+    return { cap: p[1], vi: p[2], vf: p[3] ?? '' };
   })();
 
   return (

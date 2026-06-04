@@ -734,31 +734,33 @@ export default function EstruturaDetalhePage() {
       .catch(() => setEstado('erro'));
   }, [urlEstrutura, urlQuiasmo]);
 
-  // Busca diagramas disponíveis e marca letras com diagrama para a seção atual
+  // Busca diagramas disponíveis — um arquivo por seção, marcamos todas as letras se a seção tem diagrama
   useEffect(() => {
     if (estado !== 'ok') return;
     const item = itens[idx - 1];
     if (!item) return;
     const coords = parsearRefCap(item.ref);
+    if (!coords) return;
     fetch(`${apiUrl.diagramas}?testamento=${testamento}&livroId=${livroId}`)
       .then(r => r.json())
       .then(j => {
         const arquivos: string[] = j.arquivos ?? [];
-        const letras = new Set<string>();
-        arquivos.forEach(f => {
+        const secaoTemDiagrama = arquivos.some(f => {
           const p = f.replace(/\.txt$/i, '').split('_');
-          if (p.length < 4) return;
-          const letraArq = p[1];
-          if (coords) {
-            if (p[2] === coords.cap && p[3] === coords.vi) letras.add(letraArq);
-          } else {
-            letras.add(letraArq);
-          }
+          return p.length >= 3 && p[1] === coords.cap && p[2] === coords.vi;
         });
-        setLetrasComDiagrama(letras);
+        if (secaoTemDiagrama && quiasmo) {
+          // Marca todas as letras desta seção com o indicador verde
+          const todasLetras = new Set(
+            agruparLinhas(quiasmo.linhas).map(g => g.letra).filter((l): l is string => !!l)
+          );
+          setLetrasComDiagrama(todasLetras);
+        } else {
+          setLetrasComDiagrama(new Set());
+        }
       })
       .catch(() => {});
-  }, [estado, idx, itens, testamento, livroId]);
+  }, [estado, idx, itens, testamento, livroId, quiasmo]);
 
   useEffect(() => { window.scrollTo(0, 0); }, [idx]);
 
