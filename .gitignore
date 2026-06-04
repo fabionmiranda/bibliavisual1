@@ -6,3 +6,5 @@ coverage/
 *.log
 .env*
 !.env.example
+.dev-auth.json
+.claude/
