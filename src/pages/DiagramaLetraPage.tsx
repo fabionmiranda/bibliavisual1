@@ -1182,8 +1182,9 @@ function parsearItensEstrutura(texto: string): Array<{ num: string; ref: string;
       if (m2) return { num: m2[1], ref: m2[2].trim(), titulo: m2[3].trim() };
       const m3 = l.match(/^\[(\d+)\]\s+(.+)$/);
       if (m3) return { num: m3[1], ref: '', titulo: m3[2].trim() };
-      return { num: '', ref: '', titulo: l };
-    });
+      return null;
+    })
+    .filter((item): item is { num: string; ref: string; titulo: string } => item !== null && item.num !== '');
 }
 
 // ─────────────────────────────────────────────

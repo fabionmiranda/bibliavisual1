@@ -49,8 +49,9 @@ function parsearItens(texto: string): Item[] {
       const m3 = l.match(/^\[(\d+)\]\s+(.+)$/);
       if (m3) return { num: m3[1], ref: '', titulo: m3[2].trim() };
 
-      return { num: '', ref: '', titulo: l };
-    });
+      return null;
+    })
+    .filter((item): item is Item => item !== null && item.num !== '');
 }
 
 const PALETA = [
