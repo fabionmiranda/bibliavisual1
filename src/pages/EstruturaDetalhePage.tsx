@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { ChevronRight, BookOpen, Loader2, AlertCircle, ArrowLeft, ArrowRight, Download } from 'lucide-react';
+import { ChevronRight, BookOpen, Loader2, AlertCircle, ArrowLeft, ArrowRight, Download, ShieldCheck } from 'lucide-react';
 import { toJpeg } from 'html-to-image';
 import Navbar from '../components/Navbar';
 import { sanitizarTxt } from '../lib/sanitizarTxt';
@@ -712,26 +712,31 @@ export default function EstruturaDetalhePage() {
   const exportRef = useRef<HTMLDivElement>(null);
   const [gerando, setGerando] = useState(false);
 
-  type Estado = 'carregando' | 'ok' | 'erro';
-  const [estado,   setEstado]   = useState<Estado>('carregando');
-  const [itens,    setItens]    = useState<Item[]>([]);
-  const [quiasmos, setQuiasmos] = useState<BlocoQuiasmo[]>([]);
+  type Estado = 'carregando' | 'ok' | 'semEstrutura';
+  const [estado,           setEstado]           = useState<Estado>('carregando');
+  const [itens,            setItens]            = useState<Item[]>([]);
+  const [quiasmos,         setQuiasmos]         = useState<BlocoQuiasmo[]>([]);
+  const [temQuiastico,     setTemQuiastico]     = useState(false);
   const [letrasComDiagrama, setLetrasComDiagrama] = useState<Set<string>>(new Set());
 
   useEffect(() => {
     setEstado('carregando');
+    setItens([]);
+    setQuiasmos([]);
+    setTemQuiastico(false);
     Promise.all([
-      fetch(urlEstrutura).then(r => r.ok ? r.text() : Promise.reject()),
+      fetch(urlEstrutura).then(r => r.ok ? r.text() : ''),
       fetch(urlQuiasmo).then(r => r.ok ? r.text() : ''),
     ])
       .then(([rawEst, rawQ]) => {
+        if (!rawEst) { setEstado('semEstrutura'); return; }
         const txtEst = sanitizarTxt(rawEst);
         const txtQ   = rawQ ? sanitizarTxt(rawQ) : '';
         setItens(parsearItens(txtEst));
-        if (txtQ) setQuiasmos(parsearQuiasmos(txtQ));
+        if (txtQ) { setQuiasmos(parsearQuiasmos(txtQ)); setTemQuiastico(true); }
         setEstado('ok');
       })
-      .catch(() => setEstado('erro'));
+      .catch(() => setEstado('semEstrutura'));
   }, [urlEstrutura, urlQuiasmo]);
 
   // Busca diagramas disponíveis — um arquivo por seção, marcamos todas as letras se a seção tem diagrama
@@ -817,11 +822,29 @@ export default function EstruturaDetalhePage() {
           </div>
         )}
 
-        {estado === 'erro' && (
-          <div className="flex flex-col items-center gap-4 py-40 text-center">
-            <AlertCircle className="w-10 h-10 text-white/40" />
-            <p className="text-white/70 font-bold font-mono">Nao foi possivel carregar o conteudo.</p>
-            <Link to={base} className="text-sm text-brand-blue hover:text-white transition-colors font-bold">Voltar</Link>
+        {estado === 'semEstrutura' && (
+          <div className="flex flex-col items-center gap-6 py-40 text-center">
+            <div className="w-16 h-16 rounded-2xl flex items-center justify-center"
+              style={{ background: `${corHex}15`, border: `1px solid ${corHex}30` }}>
+              <AlertCircle className="w-7 h-7" style={{ color: corHex }} />
+            </div>
+            <div>
+              <p className="font-display font-black text-xl uppercase tracking-tight text-white/70 mb-2">
+                Estrutura não disponível
+              </p>
+              <p className="text-white/40 text-sm max-w-xs mx-auto leading-relaxed">
+                O arquivo <span className="font-mono font-black text-white/60">estrutura.txt</span> ainda não foi inserido para este livro.
+              </p>
+            </div>
+            <Link
+              to={`/admin/${testamento.toLowerCase()}/${livroId}`}
+              className="flex items-center gap-2 px-5 py-2.5 rounded-xl border text-sm font-bold transition-all"
+              style={{ borderColor: `${corHex}40`, color: corHex, background: `${corHex}10` }}
+            >
+              <ShieldCheck className="w-4 h-4" />
+              Inserir via Área Admin
+            </Link>
+            <Link to={base} className="text-sm text-white/30 hover:text-white/60 transition-colors font-bold">Voltar</Link>
           </div>
         )}
 
@@ -900,9 +923,34 @@ export default function EstruturaDetalhePage() {
                 </div>
               </motion.div>
             ) : (
-              <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-8 text-center">
-                <p className="text-white/50 text-sm uppercase tracking-widest font-bold font-mono">Quiasma Espelhado nao disponivel</p>
-              </div>
+              <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.15 }}
+                className="rounded-2xl border-2 border-dashed border-white/10 p-12 text-center flex flex-col items-center gap-6">
+                <div className="w-16 h-16 rounded-2xl flex items-center justify-center"
+                  style={{ background: `${corHex}15`, border: `1px solid ${corHex}30` }}>
+                  <AlertCircle className="w-7 h-7" style={{ color: corHex }} />
+                </div>
+                <div>
+                  <p className="font-display font-black text-xl uppercase tracking-tight text-white/70 mb-2">
+                    Estrutura Quiástica não disponível
+                  </p>
+                  <p className="text-white/40 text-sm max-w-sm mx-auto leading-relaxed">
+                    {temQuiastico
+                      ? 'Nenhuma estrutura quiástica encontrada para esta seção no arquivo carregado.'
+                      : <>O arquivo <span className="font-mono font-black text-white/60">quiastico.txt</span> ainda não foi inserido para este livro.</>
+                    }
+                  </p>
+                </div>
+                {!temQuiastico && (
+                  <Link
+                    to={`/admin/${testamento.toLowerCase()}/${livroId}`}
+                    className="flex items-center gap-2 px-5 py-2.5 rounded-xl border text-sm font-bold transition-all"
+                    style={{ borderColor: `${corHex}40`, color: corHex, background: `${corHex}10` }}
+                  >
+                    <ShieldCheck className="w-4 h-4" />
+                    Inserir via Área Admin
+                  </Link>
+                )}
+              </motion.div>
             )}
 
             {/* ExportCard off-screen */}
