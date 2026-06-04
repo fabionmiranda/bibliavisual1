@@ -127,13 +127,10 @@ interface ConexaoSVG { cor: string; x: number; y1: number; y2: number }
 function DiagramaQuiasmo({
   linhas,
   resumo,
-  basePath,
 }: {
   linhas: LinhaQuiasmo[];
   resumo: string[];
-  basePath: string;
 }) {
-  const navigate  = useNavigate();
   const containerRef = useRef<HTMLDivElement>(null);
   const badgeRefs    = useRef<(HTMLDivElement | null)[]>([]);
   const [conexoes, setConexoes] = useState<ConexaoSVG[]>([]);
@@ -197,25 +194,20 @@ function DiagramaQuiasmo({
         {linhas.map((g, i) => {
           const cor    = NIVEL_CORES[Math.min(g.nivel, 5)];
           const indent = g.nivel * 40;
-          const href   = `${basePath}/${slugLetra(g.letra || String(i))}`;
           return (
             <motion.div
               key={i}
               initial={{ opacity: 0, x: -8 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: i * 0.03, duration: 0.25 }}
-              onClick={() => navigate(href)}
-              className="group flex items-start gap-4 sm:gap-5 py-4 border-b border-white/[0.06]
-                last:border-0 cursor-pointer rounded-xl transition-all duration-200
-                hover:bg-white/[0.03] -mx-3 px-3"
+              className="flex items-start gap-4 sm:gap-5 py-4 border-b border-white/[0.06] last:border-0"
               style={{ paddingLeft: indent + 12 }}
             >
               {/* Badge letra */}
               <div
                 ref={el => { badgeRefs.current[i] = el; }}
                 className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center
-                  font-mono font-black text-base sm:text-lg border shrink-0
-                  transition-all duration-200 group-hover:scale-110"
+                  font-mono font-black text-base sm:text-lg border shrink-0"
                 style={{
                   color: cor,
                   borderColor: cor + (g.espelho ? '90' : '60'),
@@ -227,26 +219,18 @@ function DiagramaQuiasmo({
               </div>
 
               {/* Conteúdo */}
-              <div className="flex-1 flex flex-col sm:flex-row sm:items-baseline gap-1.5 sm:gap-5 min-w-0 py-1">
+              <div className="flex-1 flex flex-col gap-0.5 min-w-0 py-1">
                 {g.ref && (
-                  <span className="shrink-0 font-mono text-sm font-black whitespace-nowrap" style={{ color: cor }}>
+                  <span className="font-mono text-sm font-black" style={{ color: cor }}>
                     {g.ref}
                   </span>
                 )}
-                <div className="flex flex-col gap-0.5 flex-1">
-                  {g.descricoes.map((d, j) => (
-                    <span key={j} className={`text-base sm:text-lg leading-snug ${d.startsWith('"') ? 'italic' : ''}`}
-                      style={{ color: '#f1f5f9ee' }}>
-                      {d}
-                    </span>
-                  ))}
-                </div>
-                <span className="shrink-0 self-center text-[10px] font-black uppercase tracking-wider font-mono
-                  whitespace-nowrap px-3 py-1.5 rounded-lg border opacity-0 group-hover:opacity-100
-                  transition-all duration-200"
-                  style={{ color: cor, borderColor: cor + '50', background: cor + '12' }}>
-                  Ver →
-                </span>
+                {g.descricoes.map((d, j) => (
+                  <span key={j} className={`text-base sm:text-lg leading-snug ${d.startsWith('"') ? 'italic' : ''}`}
+                    style={{ color: '#f1f5f9ee' }}>
+                    {d}
+                  </span>
+                ))}
               </div>
             </motion.div>
           );
@@ -488,9 +472,68 @@ export default function EstruturaDetalhePage() {
                     <DiagramaQuiasmo
                       linhas={quiasmo.linhas}
                       resumo={quiasmo.resumo}
-                      basePath={`${base}/${idx}`}
                     />
                   </div>
+
+                  {/* Botão Ver Diagramas da Seção */}
+                  <motion.div
+                    initial={{ opacity: 0, y: 8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.35 }}
+                    className="mt-8"
+                  >
+                    <Link
+                      to={`${base}/${idx}/${slugLetra(quiasmo.linhas[0]?.letra || 'a')}`}
+                      className="group relative flex items-center justify-between gap-4 w-full
+                        px-7 py-5 rounded-2xl border-2 transition-all duration-300
+                        hover:scale-[1.02] active:scale-[0.98]"
+                      style={{
+                        borderColor: corHex + '50',
+                        background: `linear-gradient(135deg, ${corHex}15, ${corHex}05)`,
+                        boxShadow: `0 0 32px ${corHex}18`,
+                      }}
+                      onMouseEnter={e => {
+                        (e.currentTarget as HTMLElement).style.boxShadow = `0 0 48px ${corHex}35`;
+                        (e.currentTarget as HTMLElement).style.borderColor = corHex + '80';
+                      }}
+                      onMouseLeave={e => {
+                        (e.currentTarget as HTMLElement).style.boxShadow = `0 0 32px ${corHex}18`;
+                        (e.currentTarget as HTMLElement).style.borderColor = corHex + '50';
+                      }}
+                    >
+                      {/* Ícone + texto */}
+                      <div className="flex items-center gap-4">
+                        <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0"
+                          style={{ background: corHex + '20', border: `1.5px solid ${corHex}50` }}>
+                          <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            style={{ color: corHex }} strokeWidth={2}>
+                            <path strokeLinecap="round" strokeLinejoin="round"
+                              d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7" />
+                          </svg>
+                        </div>
+                        <div>
+                          <p className="font-mono font-black text-xs uppercase tracking-[0.3em] mb-0.5"
+                            style={{ color: corHex }}>
+                            Explorar Diagramas
+                          </p>
+                          <p className="text-white/60 text-sm font-medium">
+                            Ver todos os diagramas desta seção
+                          </p>
+                        </div>
+                      </div>
+
+                      {/* Seta */}
+                      <div className="shrink-0 w-10 h-10 rounded-xl flex items-center justify-center
+                        transition-all duration-300 group-hover:translate-x-1"
+                        style={{ background: corHex + '20', border: `1.5px solid ${corHex}40` }}>
+                        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                          style={{ color: corHex }} strokeWidth={2.5}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                      </div>
+                    </Link>
+                  </motion.div>
+
                 </motion.div>
               ) : (
                 /* Quiasma não disponível */
