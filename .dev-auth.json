@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "passwordHash": "PLAIN:Meu1amor1!",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "username": "bibliavisual",
+      "passwordHash": "PLAIN:123456",
+      "role": "user"
+    }
+  ],
+  "tokens": [
+    {
+      "userId": 1,
+      "token": "1f0aaf99c013c203dcfa010d7fcac67fff2a3ca98554e3a83abcf6eb8fa5a020",
+      "expiresAt": 1780677028852
+    },
+    {
+      "userId": 1,
+      "token": "2dfcc0fe5b8a48d9a55a80c0ae80160e10c94116ed1c3ddcb8c5fdbff85da33a",
+      "expiresAt": 1780692493334
+    }
+  ],
+  "nextId": 3
+}
