@@ -26,6 +26,7 @@ export default function Navbar() {
   // Admin removido daqui — aparece após Contatos via item especial abaixo
   const navLinks = [
     { name: 'Home',      path: '/' },
+    { name: 'Livraria',  path: '/livraria' },
     { name: 'Diagramas', path: '/metodo' },
     { name: 'Tutoriais', path: '/tutoriais' },
   ];

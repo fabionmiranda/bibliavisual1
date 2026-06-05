@@ -11,6 +11,10 @@ import AdminLivroPage from './pages/AdminLivroPage';
 import EstruturaPage from './pages/EstruturaPage';
 import EstruturaDetalhePage from './pages/EstruturaDetalhePage';
 import DiagramaLetraPage from './pages/DiagramaLetraPage';
+import LivrosPage from './pages/LivrosPage';
+import LibrariaPage from './pages/LibrariaPage';
+import MateusSecoesPage from './pages/MateusSecoesPage';
+import EbookMateusPage from './pages/EbookMateusPage';
 import Watermark from './components/Watermark';
 import LoginPage from './pages/LoginPage';
 import ProtectedRoute from './components/ProtectedRoute';
@@ -57,6 +61,15 @@ export default function App() {
           <Route path="/metodo" element={<Method />} />
           <Route path="/tutoriais" element={<Tutorials />} />
           <Route path="/biblioteca" element={<Biblioteca />} />
+          <Route path="/livraria" element={<LibrariaPage />} />
+          <Route path="/livros" element={<LivrosPage />} />
+          <Route path="/livros/mateus" element={<MateusSecoesPage />} />
+          <Route path="/ebook/mateus" element={<EbookMateusPage />} />
+
+          {/* Aliases sob /livraria/ */}
+          <Route path="/livraria/livros" element={<LivrosPage />} />
+          <Route path="/livraria/livros/mateus" element={<MateusSecoesPage />} />
+          <Route path="/livraria/ebook/mateus" element={<EbookMateusPage />} />
 
           {/* Login */}
           <Route path="/login" element={<LoginPage />} />
