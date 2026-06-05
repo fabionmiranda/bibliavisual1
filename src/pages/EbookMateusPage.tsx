@@ -43,7 +43,7 @@ function SectionDivider({ label }: { label: string }) {
   return (
     <div style={{ display:'flex', alignItems:'center', gap:16, margin:'3.5rem 0 2rem' }}>
       <div style={{ flex:1, height:1, background:`linear-gradient(to right, transparent, ${C.borderB})` }} />
-      <span style={{ fontFamily:F.display, fontSize:13, letterSpacing:'0.35em', color:C.blue, textTransform:'uppercase', textShadow:`0 0 12px ${C.blue}` }}>{label}</span>
+      <span style={{ fontFamily:F.display, fontSize:'clamp(11px,1.7vw,13px)', letterSpacing:'0.35em', color:C.blue, textTransform:'uppercase', textShadow:`0 0 12px ${C.blue}` }}>{label}</span>
       <div style={{ flex:1, height:1, background:`linear-gradient(to left, transparent, ${C.borderB})` }} />
     </div>
   );
@@ -58,15 +58,24 @@ function ExplanationBox({ children }: { children: React.ReactNode }) {
       background:C.bgBox,
       padding:'1.25rem 1.5rem',
     }}>
-      <p style={{ fontFamily:F.display, fontSize:13, letterSpacing:'0.35em', color:`${C.blue}ee`, textTransform:'uppercase', marginBottom:10 }}>
+      <p style={{ fontFamily:F.display, fontSize:'clamp(11px,1.7vw,13px)', letterSpacing:'0.35em', color:`${C.blue}ee`, textTransform:'uppercase', marginBottom:10 }}>
         Explicação
       </p>
-      <p style={{ fontFamily:F.sans, fontSize:17, color:C.w65, lineHeight:1.85 }}>{children}</p>
+      <p style={{ fontFamily:F.sans, fontSize:'clamp(15px,2.2vw,17px)', color:C.w65, lineHeight:1.85, textAlign:'justify' }}>{children}</p>
     </div>
   );
 }
 
-function DiagramCard({ num, title, children }: { num:string; title:string; children:React.ReactNode }) {
+function DiagramIntro({ children }: { children: React.ReactNode }) {
+  return (
+    <div style={{ margin:'0 0 1.25rem', padding:'0.9rem 1.25rem', borderRadius:10, background:'rgba(255,255,255,0.025)', borderLeft:`3px solid ${C.blue}`, borderTop:`1px solid rgba(255,255,255,0.06)`, borderRight:`1px solid rgba(255,255,255,0.06)`, borderBottom:`1px solid rgba(255,255,255,0.06)` }}>
+      <p style={{ fontFamily:F.display, fontSize:'clamp(9px,1.3vw,10px)', letterSpacing:'0.35em', color:C.blue, textTransform:'uppercase', marginBottom:7, textShadow:`0 0 8px ${C.blue}` }}>O que é este diagrama</p>
+      <p style={{ fontFamily:F.sans, fontSize:'clamp(14px,1.9vw,16px)', color:C.w45, lineHeight:1.8, textAlign:'justify' }}>{children}</p>
+    </div>
+  );
+}
+
+function DiagramCard({ num, title, intro, children }: { num:string; title:string; intro:string; children:React.ReactNode }) {
   return (
     <motion.div
       initial={{ opacity:0, y:18 }}
@@ -77,11 +86,14 @@ function DiagramCard({ num, title, children }: { num:string; title:string; child
     >
       {/* Header */}
       <div style={{ display:'flex', alignItems:'center', gap:12, padding:'0.9rem clamp(1rem,3vw,1.5rem)', background:C.bgCardHd, borderBottom:`1px solid ${C.border}` }}>
-        <span style={{ fontFamily:F.display, color:C.blue, fontSize:22, fontWeight:900, minWidth:40, textShadow:`0 0 16px ${C.blue}` }}>{num}</span>
+        <span style={{ fontFamily:F.display, color:C.blue, fontSize:'clamp(18px,3vw,22px)', fontWeight:900, minWidth:40, textShadow:`0 0 16px ${C.blue}` }}>{num}</span>
         <div style={{ width:1, height:22, background:C.border }} />
-        <span style={{ fontFamily:F.display, fontSize:14, letterSpacing:'0.28em', color:C.white, textTransform:'uppercase' }}>{title}</span>
+        <span style={{ fontFamily:F.display, fontSize:'clamp(12px,1.8vw,14px)', letterSpacing:'0.28em', color:C.white, textTransform:'uppercase' }}>{title}</span>
       </div>
-      <div style={{ padding:'clamp(1rem,3vw,1.5rem)' }}>{children}</div>
+      <div style={{ padding:'clamp(1rem,3vw,1.5rem)' }}>
+        <DiagramIntro>{intro}</DiagramIntro>
+        {children}
+      </div>
     </motion.div>
   );
 }
@@ -94,7 +106,7 @@ function Row({ label, content, sub, greek=false }: { label?:string; content:Reac
           {sub ?? label}
         </div>
       )}
-      <div style={{ fontFamily: greek ? F.greek : F.sans, fontSize: greek ? 19 : 17, color:C.w65, lineHeight:1.8 }}>{content}</div>
+      <div style={{ fontFamily: greek ? F.greek : F.sans, fontSize: greek ? 19 : 17, color:C.w65, lineHeight:1.8, textAlign:'justify' }}>{content}</div>
     </div>
   );
 }
@@ -110,9 +122,9 @@ function ChiasmLine({ letra, versiculo, conteudo, indent=0, isCenter=false }: {
       background: isCenter ? `${C.blue}0d` : 'rgba(255,255,255,0.015)',
       border:`1px solid ${isCenter ? C.blue+'30' : 'rgba(255,255,255,0.04)'}`,
     }}>
-      <span style={{ fontFamily:F.display, fontSize:16, fontWeight:900, color: isCenter ? C.blue : `${C.blue}bb`, minWidth:42, paddingTop:2, textShadow: isCenter ? `0 0 14px ${C.blue}` : undefined }}>{letra}</span>
-      <span style={{ fontFamily:F.mono, fontSize:14, color:C.w30, minWidth:82, paddingTop:4, whiteSpace:'nowrap' }}>{versiculo}</span>
-      <span style={{ fontFamily:F.sans, fontSize:17, color:C.w65, lineHeight:1.7 }}>{conteudo}</span>
+      <span style={{ fontFamily:F.display, fontSize:'clamp(14px,2vw,16px)', fontWeight:900, color: isCenter ? C.blue : `${C.blue}bb`, minWidth:42, paddingTop:2, textShadow: isCenter ? `0 0 14px ${C.blue}` : undefined }}>{letra}</span>
+      <span style={{ fontFamily:F.mono, fontSize:'clamp(12px,1.8vw,14px)', color:C.w30, minWidth:82, paddingTop:4, whiteSpace:'nowrap' }}>{versiculo}</span>
+      <span style={{ fontFamily:F.sans, fontSize:'clamp(15px,2.2vw,17px)', color:C.w65, lineHeight:1.7, textAlign:'justify' }}>{conteudo}</span>
     </div>
   );
 }
@@ -121,7 +133,9 @@ function ChiasmLine({ letra, versiculo, conteudo, indent=0, isCenter=false }: {
    CONTEÚDO DOS 23 DIAGRAMAS
 ═══════════════════════════════════════════════════ */
 const DIAGRAMAS = [
-  { num:'01', title:'Interlinear', body: () => (
+  { num:'01', title:'Interlinear',
+    intro: 'O Diagrama Interlinear coloca o texto grego original lado a lado com sua tradução palavra por palavra. Cada termo é traduzido literalmente, preservando a ordem e a morfologia do original, o que revela nuances de sentido que as traduções modernas frequentemente condensam ou reorganizam.',
+    body: () => (
     <>
       <Row label="Mt 1:1 — Grego" greek content="Βίβλος γενέσεως Ἰησοῦ Χριστοῦ υἱοῦ Δαυὶδ υἱοῦ Ἀβραάμ" />
       <Row label="Transliteração" content="Biblos geneseōs Iēsou Christou huiou David huiou Abraam" />
@@ -131,7 +145,9 @@ const DIAGRAMAS = [
       <ExplanationBox>A voz passiva ἐγεννήθη (v.16) contrasta com os 39 ἐγέννησεν anteriores. Onde todos os antepassados "geraram", aqui Jesus simplesmente "foi gerado" — agente indefinido, apontando para a ação do Espírito (Mt 1:18).</ExplanationBox>
     </>
   )},
-  { num:'02', title:'Morfológico-Lexical', body: () => (
+  { num:'02', title:'Morfológico-Lexical',
+    intro: 'O Diagrama Morfológico-Lexical analisa cada palavra-chave do texto quanto à sua forma gramatical (morfologia) e seu significado de dicionário (léxico). Identifica caso, número, gênero, tempo verbal e raiz semântica — as ferramentas que o próprio autor usou para construir o argumento.',
+    body: () => (
     <>
       <Row sub="βίβλος" content="substantivo feminino · nominativo singular · livro, registro escrito" />
       <Row sub="γενέσεως" content="substantivo feminino · genitivo singular · de γένεσις — origem, geração, genealogia" />
@@ -142,12 +158,14 @@ const DIAGRAMAS = [
       <ExplanationBox>A análise morfológica revela que toda a genealogia gira em torno de dois verbos cognatos: a forma ativa ἐγέννησεν (39×) e a passiva ἐγεννήθη (1×). O contraste morfológico único no versículo 16 é o argumento central do texto.</ExplanationBox>
     </>
   )},
-  { num:'03', title:'Quiástico', body: () => (
+  { num:'03', title:'Quiástico',
+    intro: 'O Diagrama Quiástico mapeia a estrutura espelhada do texto, na qual os elementos se correspondem em ordem inversa (A–B–C–B′–A′). O quiasma era um recurso literário amplamente usado na escrita hebraica e grega para destacar o centro da composição, onde o clímax teológico geralmente se encontra.',
+    body: () => (
     <>
       <div style={{ background:'rgba(255,255,255,0.02)', border:`1px solid rgba(0,232,255,0.14)`, borderRadius:14, padding:'1.5rem', marginBottom:20 }}>
         <div style={{ textAlign:'center', marginBottom:22 }}>
-          <p style={{ fontFamily:F.display, fontSize:13, letterSpacing:'0.4em', color:C.blue, textTransform:'uppercase', marginBottom:6, textShadow:`0 0 12px ${C.blue}` }}>Estrutura Quiástica · Mt 1:1–17</p>
-          <p style={{ fontFamily:F.sans, fontStyle:'italic', fontSize:16, color:C.w30 }}>A – B¹ – B² – B³ – A′</p>
+          <p style={{ fontFamily:F.display, fontSize:'clamp(11px,1.7vw,13px)', letterSpacing:'0.4em', color:C.blue, textTransform:'uppercase', marginBottom:6, textShadow:`0 0 12px ${C.blue}` }}>Estrutura Quiástica · Mt 1:1–17</p>
+          <p style={{ fontFamily:F.sans, fontStyle:'italic', fontSize:'clamp(14px,2vw,16px)', color:C.w30 }}>A – B¹ – B² – B³ – A′</p>
         </div>
         <div style={{ position:'relative', paddingLeft:18 }}>
           <div style={{ position:'absolute', left:5, top:26, bottom:26, width:1, background:`linear-gradient(to bottom, ${C.blue}aa, ${C.blue}15, ${C.blue}aa)` }} />
@@ -160,21 +178,23 @@ const DIAGRAMAS = [
         <div style={{ display:'flex', flexWrap:'wrap', gap:14, marginTop:20, paddingTop:16, borderTop:`1px solid rgba(0,232,255,0.1)` }}>
           <div style={{ display:'flex', alignItems:'center', gap:6 }}>
             <div style={{ width:12, height:12, borderRadius:2, background:`${C.blue}15`, border:`1px solid ${C.borderB}` }} />
-            <span style={{ fontFamily:F.display, fontSize:12, letterSpacing:'0.2em', color:C.w30, textTransform:'uppercase' }}>Centro do quiasma</span>
+            <span style={{ fontFamily:F.display, fontSize:'clamp(10px,1.6vw,12px)', letterSpacing:'0.2em', color:C.w30, textTransform:'uppercase' }}>Centro do quiasma</span>
           </div>
           <div style={{ display:'flex', alignItems:'center', gap:6 }}>
             <div style={{ width:14, height:1, background:`${C.blue}aa` }} />
-            <span style={{ fontFamily:F.display, fontSize:12, letterSpacing:'0.2em', color:C.w30, textTransform:'uppercase' }}>Linha de inclusão</span>
+            <span style={{ fontFamily:F.display, fontSize:'clamp(10px,1.6vw,12px)', letterSpacing:'0.2em', color:C.w30, textTransform:'uppercase' }}>Linha de inclusão</span>
           </div>
           <div style={{ marginLeft:'auto' }}>
-            <span style={{ fontFamily:F.display, fontSize:12, letterSpacing:'0.15em', color:C.blue, textTransform:'uppercase' }}>A/A′ delimita e interpreta toda a estrutura</span>
+            <span style={{ fontFamily:F.display, fontSize:'clamp(10px,1.6vw,12px)', letterSpacing:'0.15em', color:C.blue, textTransform:'uppercase' }}>A/A′ delimita e interpreta toda a estrutura</span>
           </div>
         </div>
       </div>
       <ExplanationBox>A estrutura quiástica situa o centro da perícope em B³, exatamente onde a ruptura passiva de v.16 ocorre. O clímax narrativo e teológico coincidem com o centro estrutural — marca de composição deliberada.</ExplanationBox>
     </>
   )},
-  { num:'04', title:'Sintático', body: () => (
+  { num:'04', title:'Sintático',
+    intro: 'O Diagrama Sintático desmonta as orações do texto, identificando sujeito, verbo, objeto direto, predicados e cláusulas subordinadas. Visualizar a estrutura sintática revela como o autor organizou suas ideias e qual elemento recebe ênfase gramatical dentro de cada período.',
+    body: () => (
     <>
       <Row label="Oração nominal · v.1" content="Βίβλος γενέσεως [Ἰησοῦ Χριστοῦ] — sujeito implícito; cadeia de genitivos de especificação" />
       <Row label="Cláusulas ativas · vv.2–15" content="Padrão repetitivo: N₁ ἐγέννησεν N₂ — sujeito + verbo + objeto direto (39×)" />
@@ -184,7 +204,9 @@ const DIAGRAMAS = [
       <ExplanationBox>Sintaticamente, a genealogia é uma máquina de repetição com duas interrupções programadas: as quatro mulheres (ἐκ + fem.) e a passiva de v.16. Ambas as interrupções são sintáticas antes de serem teológicas.</ExplanationBox>
     </>
   )},
-  { num:'05', title:'Semântico', body: () => (
+  { num:'05', title:'Semântico',
+    intro: 'O Diagrama Semântico agrupa as palavras do texto em campos de significado relacionados — promessa, crise, identidade, cumprimento — e mostra como esses campos interagem. A análise semântica revela o universo conceitual do autor e as ideias que ele repete, contrasta ou desenvolve ao longo da perícope.',
+    body: () => (
     <>
       <Row label="Campo central" content="Identidade messiânica: Cristo, filho de Davi, filho de Abraão — três designações que se sobrepõem" />
       <Row label="Campo da promessa" content="Abraão (Gn 12:3; 22:18) + Davi (2Sm 7:12–16) — dois vetores de expectativa" />
@@ -194,7 +216,9 @@ const DIAGRAMAS = [
       <ExplanationBox>O campo semântico de Mt 1:1–17 move-se da promessa (v.1) através da fidelidade histórica (vv.2–16) até a declaração de cumprimento (v.17). A inclusão das quatro mulheres cria uma subcorrente: o Messias vem através da margem, do estrangeiro, do escândalo.</ExplanationBox>
     </>
   )},
-  { num:'06', title:'Progressivo', body: () => (
+  { num:'06', title:'Progressivo',
+    intro: 'O Diagrama Progressivo traça o desenvolvimento do texto etapa por etapa, mostrando como o argumento avança do início ao fim da perícope. Cada estágio prepara o seguinte, e o diagrama torna visível a lógica narrativa ou argumentativa que o autor construiu em sequência.',
+    body: () => (
     <>
       {[
         ['Etapa 1 · Mt 1:1','Título: declaração de identidade — Jesus Cristo é quem é antes de qualquer narrativa'],
@@ -207,7 +231,9 @@ const DIAGRAMAS = [
       <ExplanationBox>A progressão é da promessa à consumação. O exílio babilônico — que poderia parecer o fim — é apenas o marcador do segundo terço. A providência de Deus não é interrompida pela tragédia histórica; ela é conduzida através dela.</ExplanationBox>
     </>
   )},
-  { num:'07', title:'Intensificação', body: () => (
+  { num:'07', title:'Intensificação',
+    intro: 'O Diagrama de Intensificação mapeia a curva emocional e dramática do texto — onde a tensão cresce, onde atinge o clímax e onde se resolve. Identificar esses movimentos ajuda o pregador e o leitor a perceber o ritmo que o próprio autor imprimiu à narrativa ou ao discurso.',
+    body: () => (
     <>
       {[
         ['Mt 1:1','Intensidade máxima inicial: em um versículo, toda a teologia messiânica do AT comprimida'],
@@ -219,7 +245,9 @@ const DIAGRAMAS = [
       <ExplanationBox>A intensificação segue curva que começa no alto (v.1), desce pela monotonia genealógica (vv.2–15), alcança o clímax na ruptura sintática de 1:16 e se resolve na declaração providencial de 1:17.</ExplanationBox>
     </>
   )},
-  { num:'08', title:'Espacial', body: () => (
+  { num:'08', title:'Espacial',
+    intro: 'O Diagrama Espacial localiza geograficamente os eventos e personagens da perícope, mostrando como o espaço físico e simbólico funciona no texto. Onde o autor situa cada elemento — e o que deixa sem localização — revela intenções teológicas e narrativas que a leitura linear facilmente ignora.',
+    body: () => (
     <>
       {[
         ['Mt 1:1','Esfera da identidade revelada: sem espaço geográfico — declaração que paira sobre toda a narrativa'],
@@ -231,7 +259,9 @@ const DIAGRAMAS = [
       <ExplanationBox>O movimento espacial é paradoxal: começa em toda parte (v.1), percorre terras concretas (vv.2–16) e retorna à análise estrutural (v.17). A inclusão de mulheres de Moabe e Canaã sinaliza que a genealogia do Messias já traversa fronteiras antes que o mandato missionário final (Mt 28:19) as declare abertas.</ExplanationBox>
     </>
   )},
-  { num:'09', title:'Acesso', body: () => (
+  { num:'09', title:'Acesso',
+    intro: 'O Diagrama de Acesso pergunta: para quem este texto fala e quem ele inclui ou exclui? Analisa quais grupos, identidades e histórias o autor coloca no texto e como isso define o alcance da mensagem. É uma lente missiológica e inclusiva que revela a amplitude intencional do Evangelho.',
+    body: () => (
     <>
       <Row label="Acesso para Israel" content="Mt 1:1 'filho de Davi' — resposta à expectativa messiânica judaica; todo israelita que conhecia 2Sm 7 reconhecia o código" />
       <Row label="Acesso para as nações" content="Mt 1:1 'filho de Abraão' — 'em ti serão benditas todas as famílias da terra' (Gn 12:3)" />
@@ -240,7 +270,9 @@ const DIAGRAMAS = [
       <ExplanationBox>Mt 1:1–17 constrói uma teologia do acesso radicalmente inclusiva. E em 1:16 declara: nenhum desses acessos produz o Messias — ele nasce por outro caminho.</ExplanationBox>
     </>
   )},
-  { num:'10', title:'Relacional', body: () => (
+  { num:'10', title:'Relacional',
+    intro: 'O Diagrama Relacional mapeia as conexões entre os personagens do texto — quem se relaciona com quem, em que tipo de vínculo e com que implicações. Aplicado a Jesus, revela a rede de relações que o Evangelho constrói entre o Messias, Deus, Israel, as nações e os indivíduos na perícope.',
+    body: () => (
     <>
       <Row label="Jesus e Deus" content="Jesus é o Cristo, o Ungido do SENHOR — relação de eleição divina declarada antes de qualquer outra" />
       <Row label="Jesus e Abraão" content="Pertencimento e cumprimento da promessa — a aliança abraâmica encontra seu herdeiro definitivo" />
@@ -250,7 +282,9 @@ const DIAGRAMAS = [
       <ExplanationBox>A teia relacional é extraordinariamente rica. Jesus está em relação com Deus (Ungido), com Abraão (cumprimento), com Davi (herança do trono), com estrangeiras e irregulares (solidariedade) e com toda a história humana (ponto de chegada de 42 gerações).</ExplanationBox>
     </>
   )},
-  { num:'11', title:'Cristológico', body: () => (
+  { num:'11', title:'Cristológico',
+    intro: 'O Diagrama Cristológico concentra o olhar em Jesus: quem ele é, o que os títulos dizem sobre sua natureza e missão, e como a perícope contribui para a teologia do Messias. É o diagrama que responde à pergunta central de todo o Evangelho: "Quem é este homem?"',
+    body: () => (
     <>
       {[
         ["Mt 1:1 — 'Jesus Cristo'","Χριστός = Mashiach; a tríplice unção do AT (reis, sacerdotes, profetas) converge; Jesus é o ungido por excelência"],
@@ -262,7 +296,9 @@ const DIAGRAMAS = [
       <ExplanationBox>Mt 1:1–17 é uma cristologia condensada em genealogia. Cada elemento — título, linhagem, mulheres incluídas, ruptura passiva, simetria aritmética — aponta para a identidade única de Jesus: plenamente humano, plenamente messiânico, e categoricamente diferente de todos os seus antepassados.</ExplanationBox>
     </>
   )},
-  { num:'12', title:'Sistemático', body: () => (
+  { num:'12', title:'Sistemático',
+    intro: 'O Diagrama Sistemático conecta o texto às grandes categorias da teologia cristã: revelação, cristologia, soteriologia, escatologia, providência, graça. Mostra como um único trecho das Escrituras toca múltiplos temas doutrinários ao mesmo tempo, enriquecendo o estudo com perspectiva teológica ampla.',
+    body: () => (
     <>
       {[
         ['Revelação','Mt 1:1 — Mateus abre com título que invoca a autoridade da Escritura; ressonância com Gênesis = nova criação'],
@@ -275,7 +311,9 @@ const DIAGRAMAS = [
       <ExplanationBox>Em 17 versículos, Mt 1:1–17 toca seis categorias da teologia sistemática. A genealogia demonstra simultaneamente a humanidade de Jesus, a fidelidade de Deus, a universalidade da salvação e a soberania providencial sobre a história.</ExplanationBox>
     </>
   )},
-  { num:'13', title:'Tensão Narrativa', body: () => (
+  { num:'13', title:'Tensão Narrativa',
+    intro: 'O Diagrama de Tensão Narrativa identifica os conflitos, perguntas e problemas que o texto instala intencionalmente — e como os resolve (ou deixa em aberto). Todo texto bem escrito cria tensão para conduzir o leitor; reconhecê-la é o primeiro passo para pregar ou ensinar com o mesmo poder dramático do original.',
+    body: () => (
     <>
       {[
         ['Mt 1:1','Tensão inaugural: "Jesus Cristo" cria tensão imediata para o leitor judeu — este homem é o Messias?'],
@@ -287,7 +325,9 @@ const DIAGRAMAS = [
       <ExplanationBox>Mt 1:1–17 instala pelo menos cinco tensões: identidade, moral, histórica, silêncio e concepção. Mateus deixa tensões propositalmente abertas para o restante do Evangelho.</ExplanationBox>
     </>
   )},
-  { num:'14', title:'Repetição', body: () => (
+  { num:'14', title:'Repetição',
+    intro: 'O Diagrama de Repetição identifica palavras, expressões e estruturas que se repetem no texto e analisa por quê. A repetição no mundo bíblico não é acidente nem limitação do autor — é o principal recurso retórico para marcar ênfase, criar ritmo e conduzir o leitor ao núcleo da mensagem.',
+    body: () => (
     <>
       <Row sub="ἐγέννησεν × 39" content="Mt 1:2–15: verbo 'gerou' repetido 39 vezes — cria ritmo e expectativa que torna a ruptura de 1:16 tanto mais impactante" />
       <Row sub="Abraão·Davi·Cristo × 2" content="Mt 1:1 e 1:17: os três nomes-chave repetem-se formando a inclusão quiástica A/A′ que delimita e interpreta toda a genealogia" />
@@ -296,7 +336,9 @@ const DIAGRAMAS = [
       <ExplanationBox>A repetição opera em múltiplos níveis: o ἐγέννησεν rítmico cria a expectativa que a ruptura de 1:16 satisfaz; a inclusão A/A′ ensina a chave interpretativa; e a tripla repetição de "quatorze" em 1:17 substitui qualquer argumento verbal — a simetria fala por si mesma.</ExplanationBox>
     </>
   )},
-  { num:'15', title:'Causa e Efeito', body: () => (
+  { num:'15', title:'Causa e Efeito',
+    intro: 'O Diagrama de Causa e Efeito rastreia as relações de consequência no texto: o que produz o quê, o que leva a quê. Em textos bíblicos, essa análise revela como Deus age na história através de eventos humanos, promessas cumpridas e crises redimidas — a lógica providencial por trás da narrativa.',
+    body: () => (
     <>
       <Row label="Promessa abraâmica" content="Deus promete bênção para todas as nações (Gn 12:3) → dois milênios depois, o herdeiro chega como Jesus Cristo, filho de Abraão" />
       <Row label="Aliança davídica" content="Deus promete descendência com trono eterno (2Sm 7:12–16) → mil anos depois, o herdeiro do trono é identificado como Jesus, filho de Davi" />
@@ -305,7 +347,9 @@ const DIAGRAMAS = [
       <ExplanationBox>Mt 1:1–17 demonstra que Deus conduz a história através de causas e efeitos que os agentes humanos não compreendem enquanto os vivem. O adultério de Davi, o exílio babilônico, o anonimato das gerações pós-exílicas — todos são elos de uma cadeia causal que Deus usa para cumprir o que prometeu.</ExplanationBox>
     </>
   )},
-  { num:'16', title:'Apologético', body: () => (
+  { num:'16', title:'Apologético',
+    intro: 'O Diagrama Apologético identifica as afirmações do texto que respondem a erros teológicos, objeções doutrinárias ou heresias históricas. Todo texto bíblico afirma algo — e ao afirmar, implicitamente nega o contrário. Esse diagrama torna explícito o que o texto defende e o que ele refuta.',
+    body: () => (
     <>
       {[
         { tag:'Docetismo',       tema:'Contra a negação da humanidade de Jesus',      texto:'Jesus tem genealogia, ancestrais, história — a encarnação é real; qualquer teologia que nega sua carne plena é refutada pelo próprio início do Evangelho.' },
@@ -315,16 +359,18 @@ const DIAGRAMAS = [
         { tag:'Materialismo',    tema:'Contra o acaso histórico',                     texto:'A simetria de 3 × 14 gerações demonstra que a história tem ordem, direção e propósito.' },
       ].map(({ tag, tema, texto }) => (
         <div key={tag} style={{ borderRadius:8, border:`1px solid rgba(255,255,255,0.05)`, background:'rgba(255,255,255,0.015)', padding:'0.9rem 1.1rem', marginBottom:8, display:'flex', gap:12, alignItems:'flex-start' }}>
-          <span style={{ fontFamily:F.display, fontSize:12, letterSpacing:'0.25em', color:C.rose, background:'rgba(255,45,85,0.1)', border:'1px solid rgba(255,45,85,0.25)', borderRadius:50, padding:'2px 8px', whiteSpace:'nowrap', marginTop:2 }}>{tag}</span>
+          <span style={{ fontFamily:F.display, fontSize:'clamp(10px,1.6vw,12px)', letterSpacing:'0.25em', color:C.rose, background:'rgba(255,45,85,0.1)', border:'1px solid rgba(255,45,85,0.25)', borderRadius:50, padding:'2px 8px', whiteSpace:'nowrap', marginTop:2 }}>{tag}</span>
           <div>
-            <p style={{ fontFamily:F.sans, color:C.w65, fontSize:15, fontWeight:600, marginBottom:4 }}>{tema}</p>
-            <p style={{ fontFamily:F.sans, color:C.w45, fontSize:16, lineHeight:1.75 }}>{texto}</p>
+            <p style={{ fontFamily:F.sans, color:C.w65, fontSize:'clamp(13px,1.9vw,15px)', fontWeight:600, marginBottom:4 }}>{tema}</p>
+            <p style={{ fontFamily:F.sans, color:C.w45, fontSize:'clamp(14px,2vw,16px)', lineHeight:1.75, textAlign:'justify' }}>{texto}</p>
           </div>
         </div>
       ))}
     </>
   )},
-  { num:'17', title:'Perguntas ao Texto', body: () => (
+  { num:'17', title:'Perguntas ao Texto',
+    intro: 'O Diagrama de Perguntas ao Texto lista as questões que um bom leitor deve fazer antes, durante e depois de ler a perícope. Fazer as perguntas certas é metade da interpretação: elas abrem o texto em vez de o fechar, mantêm o leitor em diálogo com o autor e revelam onde a exegese ainda tem trabalho a fazer.',
+    body: () => (
     <>
       {[
         { grupo:'A abertura — Mt 1:1', perguntas:['Por que Mateus começa com "Livro da genealogia" em vez de uma narrativa direta?','O que a ressonância com Gênesis (γένεσις) sugere sobre a intenção do evangelista?','Por que "filho de Davi" vem antes de "filho de Abraão", se Abraão é historicamente anterior?'] },
@@ -333,10 +379,10 @@ const DIAGRAMAS = [
         { grupo:'A ruptura de 1:16', perguntas:['Por que o versículo 16 rompe o padrão estabelecido por 39 repetições de "gerou"?','O que a voz passiva ἐγεννήθη e o pronome feminino ἐξ ἧς comunicam sobre a concepção de Jesus?','Como José participa da genealogia davídica de Jesus sem ser seu pai biológico?'] },
       ].map(({ grupo, perguntas }) => (
         <div key={grupo} style={{ borderRadius:8, border:`1px solid rgba(255,255,255,0.05)`, background:'rgba(255,255,255,0.015)', padding:'1rem 1.1rem', marginBottom:8 }}>
-          <p style={{ fontFamily:F.display, fontSize:13, letterSpacing:'0.3em', color:`${C.blue}dd`, textTransform:'uppercase', marginBottom:8 }}>{grupo}</p>
+          <p style={{ fontFamily:F.display, fontSize:'clamp(11px,1.7vw,13px)', letterSpacing:'0.3em', color:`${C.blue}dd`, textTransform:'uppercase', marginBottom:8 }}>{grupo}</p>
           <ul style={{ margin:0, padding:0, listStyle:'none' }}>
             {perguntas.map((p,i) => (
-              <li key={i} style={{ display:'flex', gap:10, marginBottom:7, fontFamily:F.sans, fontSize:16, color:C.w65, lineHeight:1.75 }}>
+              <li key={i} style={{ display:'flex', gap:10, marginBottom:7, fontFamily:F.sans, fontSize:'clamp(14px,2vw,16px)', color:C.w65, lineHeight:1.75, textAlign:'justify' }}>
                 <span style={{ color:`${C.blue}aa`, marginTop:3, flexShrink:0 }}>›</span>
                 <span>{p}</span>
               </li>
@@ -346,7 +392,9 @@ const DIAGRAMAS = [
       ))}
     </>
   )},
-  { num:'18', title:'Autoral — Scholarship', body: () => (
+  { num:'18', title:'Autoral — Scholarship',
+    intro: 'O Diagrama Autoral coloca o texto em diálogo com os grandes comentaristas bíblicos — Davies & Allison, R.T. France, Donald Hagner, John Nolland e outros. Não para substituir a leitura direta, mas para mostrar como estudiosos rigorosos interpretaram os mesmos versículos, confirmando ou enriquecendo as observações exegéticas.',
+    body: () => (
     <>
       {[
         { ref:'Davies & Allison · ICC', autor:'sobre Mt 1:1', citacao:'"A expressão βίβλος γενέσεως ressoa com a fraseologia da LXX em Gênesis 2:4 e 5:1. Mateus apresenta Jesus como o início de uma nova criação — não uma reparação do antigo, mas um novo começo."' },
@@ -355,23 +403,25 @@ const DIAGRAMAS = [
         { ref:'John Nolland · NIGTC', autor:'sobre Mt 1:17', citacao:'"O esquema de 3 × 14 gerações pode evocar o valor numérico do nome David em hebraico (ד=4, ו=6, ד=4; total=14), reforçando a identidade davídica de Jesus. Mais importante, a simetria revela que a história é ordenada por Deus em direção ao Messias."' },
       ].map(({ ref, autor, citacao }) => (
         <div key={ref} style={{ borderRadius:8, border:`1px solid rgba(255,255,255,0.05)`, background:'rgba(255,255,255,0.015)', padding:'1rem 1.1rem', marginBottom:8 }}>
-          <p style={{ fontFamily:F.display, fontSize:13, letterSpacing:'0.25em', color:C.w30, textTransform:'uppercase', marginBottom:4 }}>{ref}</p>
-          <p style={{ fontFamily:F.display, fontSize:13, color:C.w45, marginBottom:8 }}>{autor}</p>
-          <p style={{ fontFamily:F.sans, color:C.w65, fontSize:17, lineHeight:1.85, fontStyle:'italic' }}>{citacao}</p>
+          <p style={{ fontFamily:F.display, fontSize:'clamp(11px,1.7vw,13px)', letterSpacing:'0.25em', color:C.w30, textTransform:'uppercase', marginBottom:4 }}>{ref}</p>
+          <p style={{ fontFamily:F.display, fontSize:'clamp(11px,1.7vw,13px)', color:C.w45, marginBottom:8 }}>{autor}</p>
+          <p style={{ fontFamily:F.sans, color:C.w65, fontSize:'clamp(15px,2.2vw,17px)', lineHeight:1.85, fontStyle:'italic', textAlign:'justify' }}>{citacao}</p>
         </div>
       ))}
       <ExplanationBox>O diálogo com Davies-Allison, France, Hagner e Nolland confirma que as interpretações propostas têm sólido fundamento na scholarship. O consenso é claro: Mt 1:1–17 é texto teológico de alta densidade, e cada elemento é deliberado e significativo.</ExplanationBox>
     </>
   )},
-  { num:'19', title:'Homilético', body: () => (
+  { num:'19', title:'Homilético',
+    intro: 'O Diagrama Homilético transforma a exegese em pregação: define o tema central da perícope, propõe um título, divide o texto em movimentos lógicos e sugere pontos de aplicação. É a ponte entre o que o texto diz e o que o pregador ou professor comunicará à congregação ou à sala de aula.',
+    body: () => (
     <>
       <div style={{ borderRadius:8, border:`1px solid rgba(0,212,255,0.18)`, background:'rgba(0,212,255,0.04)', padding:'1.1rem', marginBottom:12 }}>
-        <p style={{ fontFamily:F.display, fontSize:13, letterSpacing:'0.3em', color:`${C.blue}dd`, textTransform:'uppercase', marginBottom:8 }}>Tema Central</p>
-        <p style={{ fontFamily:F.sans, color:C.w65, lineHeight:1.85, fontSize:17 }}>Como Deus conduz a história através de promessas, crises, silêncios e irregularidades humanas até o único ponto para o qual ela sempre caminhava?</p>
+        <p style={{ fontFamily:F.display, fontSize:'clamp(11px,1.7vw,13px)', letterSpacing:'0.3em', color:`${C.blue}dd`, textTransform:'uppercase', marginBottom:8 }}>Tema Central</p>
+        <p style={{ fontFamily:F.sans, color:C.w65, lineHeight:1.85, fontSize:'clamp(15px,2.2vw,17px)', textAlign:'justify' }}>Como Deus conduz a história através de promessas, crises, silêncios e irregularidades humanas até o único ponto para o qual ela sempre caminhava?</p>
       </div>
       <div style={{ borderRadius:8, border:`1px solid rgba(0,212,255,0.15)`, background:'rgba(0,212,255,0.03)', padding:'0.85rem 1.1rem', marginBottom:16 }}>
-        <span style={{ fontFamily:F.display, fontSize:13, letterSpacing:'0.25em', color:C.blue, textTransform:'uppercase', marginRight:8 }}>Título</span>
-        <span style={{ fontFamily:F.sans, color:C.w65, fontSize:17 }}>Quarenta e duas gerações até o Messias: a genealogia que conta a história que você precisava ouvir</span>
+        <span style={{ fontFamily:F.display, fontSize:'clamp(11px,1.7vw,13px)', letterSpacing:'0.25em', color:C.blue, textTransform:'uppercase', marginRight:8 }}>Título</span>
+        <span style={{ fontFamily:F.sans, color:C.w65, fontSize:'clamp(15px,2.2vw,17px)' }}>Quarenta e duas gerações até o Messias: a genealogia que conta a história que você precisava ouvir</span>
       </div>
       {[
         { romano:'I · Mt 1:1',      titulo:'O fim está no começo',              ponto:'Toda a perícope existe para justificar este versículo; o Messias já está identificado antes que qualquer geração seja listada',                    app:'A fé não começa com nossa busca — começa com uma identidade já declarada por Deus' },
@@ -380,15 +430,17 @@ const DIAGRAMAS = [
         { romano:'IV · Mt 1:12–16', titulo:'A promessa atravessa o anonimato',  ponto:'As gerações obscuras mantiveram a linhagem viva; a fidelidade cotidiana das pessoas que ninguém conhece faz parte do plano',                    app:'A fidelidade silenciosa da sua vida tem peso na genealogia espiritual que você transmite' },
       ].map(({ romano, titulo, ponto, app }) => (
         <div key={romano} style={{ borderRadius:8, border:`1px solid rgba(255,255,255,0.05)`, background:'rgba(255,255,255,0.015)', padding:'1rem 1.1rem', marginBottom:8 }}>
-          <p style={{ fontFamily:F.display, fontSize:13, letterSpacing:'0.3em', color:`${C.blue}cc`, textTransform:'uppercase', marginBottom:4 }}>{romano}</p>
-          <p style={{ fontFamily:F.sans, color:C.white, fontSize:16, fontWeight:700, marginBottom:4 }}>{titulo}</p>
-          <p style={{ fontFamily:F.sans, color:C.w65, fontSize:16, lineHeight:1.75, marginBottom:4 }}>{ponto}</p>
-          <p style={{ fontFamily:F.sans, color:C.blue, fontSize:15, fontStyle:'italic', borderLeft:`2px solid rgba(0,212,255,0.25)`, paddingLeft:12 }}>{app}</p>
+          <p style={{ fontFamily:F.display, fontSize:'clamp(11px,1.7vw,13px)', letterSpacing:'0.3em', color:`${C.blue}cc`, textTransform:'uppercase', marginBottom:4 }}>{romano}</p>
+          <p style={{ fontFamily:F.sans, color:C.white, fontSize:'clamp(14px,2vw,16px)', fontWeight:700, marginBottom:4 }}>{titulo}</p>
+          <p style={{ fontFamily:F.sans, color:C.w65, fontSize:'clamp(14px,2vw,16px)', lineHeight:1.75, marginBottom:4, textAlign:'justify' }}>{ponto}</p>
+          <p style={{ fontFamily:F.sans, color:C.blue, fontSize:'clamp(13px,1.9vw,15px)', fontStyle:'italic', borderLeft:`2px solid rgba(0,212,255,0.25)`, paddingLeft:12 }}>{app}</p>
         </div>
       ))}
     </>
   )},
-  { num:'20', title:'Pastoral Prático', body: () => (
+  { num:'20', title:'Pastoral Prático',
+    intro: 'O Diagrama Pastoral Prático aplica o texto a contextos concretos de cuidado e formação: adultos, jovens, famílias em crise, pessoas que se sentem excluídas. Enquanto o diagrama homilético foca na mensagem pública, este foca no acompanhamento pessoal — o que o pastor ou líder diz ao lado do indivíduo.',
+    body: () => (
     <>
       {[
         { ref:'Mt 1:1 — Identidade declarada', heading:'A identidade antes da história',           aud:[{tag:'Adultos',texto:'Em uma cultura que exige que cada pessoa construa sua identidade, o texto afirma que a identidade de Jesus foi declarada por Deus antes de qualquer feito'},{tag:'Jovens',texto:'Combate a crença de que você precisa se provar para ser aceito'}] },
@@ -396,12 +448,12 @@ const DIAGRAMAS = [
         { ref:'Mt 1:12–16 — Gerações obscuras', heading:'A fidelidade nas gerações sem nome',     aud:[{tag:'Adultos',texto:'A fidelidade cotidiana das gerações do pós-exílio manteve a linhagem viva; sua fidelidade obscura importa'},{tag:'Jovens',texto:'Não é necessário ser famoso para importar no plano de Deus'}] },
       ].map(({ ref, heading, aud }) => (
         <div key={ref} style={{ borderRadius:8, border:`1px solid rgba(255,255,255,0.05)`, background:'rgba(255,255,255,0.015)', padding:'1rem 1.1rem', marginBottom:8 }}>
-          <p style={{ fontFamily:F.display, fontSize:13, letterSpacing:'0.3em', color:`${C.blue}cc`, textTransform:'uppercase', marginBottom:4 }}>{ref}</p>
-          <p style={{ fontFamily:F.sans, color:C.white, fontSize:16, fontWeight:700, marginBottom:8 }}>{heading}</p>
+          <p style={{ fontFamily:F.display, fontSize:'clamp(11px,1.7vw,13px)', letterSpacing:'0.3em', color:`${C.blue}cc`, textTransform:'uppercase', marginBottom:4 }}>{ref}</p>
+          <p style={{ fontFamily:F.sans, color:C.white, fontSize:'clamp(14px,2vw,16px)', fontWeight:700, marginBottom:8 }}>{heading}</p>
           {aud.map(({ tag, texto }) => (
             <div key={tag} style={{ display:'flex', gap:10, marginBottom:7, alignItems:'flex-start' }}>
-              <span style={{ fontFamily:F.display, fontSize:12, letterSpacing:'0.2em', color:C.w30, background:'rgba(255,255,255,0.04)', border:`1px solid rgba(255,255,255,0.07)`, borderRadius:50, padding:'2px 7px', whiteSpace:'nowrap', marginTop:2 }}>{tag}</span>
-              <p style={{ fontFamily:F.sans, color:C.w65, fontSize:16, lineHeight:1.75 }}>{texto}</p>
+              <span style={{ fontFamily:F.display, fontSize:'clamp(10px,1.6vw,12px)', letterSpacing:'0.2em', color:C.w30, background:'rgba(255,255,255,0.04)', border:`1px solid rgba(255,255,255,0.07)`, borderRadius:50, padding:'2px 7px', whiteSpace:'nowrap', marginTop:2 }}>{tag}</span>
+              <p style={{ fontFamily:F.sans, color:C.w65, fontSize:'clamp(14px,2vw,16px)', lineHeight:1.75, textAlign:'justify' }}>{texto}</p>
             </div>
           ))}
         </div>
@@ -409,7 +461,9 @@ const DIAGRAMAS = [
       <ExplanationBox>Mt 1:1–17 é texto pastoral de alta densidade. Ele fala a quem se sente excluído pela história, a quem sente que a crise destruiu tudo, a quem serve sem visibilidade e a quem precisa de sentido numa história caótica.</ExplanationBox>
     </>
   )},
-  { num:'21', title:'Antropológico', body: () => (
+  { num:'21', title:'Antropológico',
+    intro: 'O Diagrama Antropológico pergunta o que o texto revela sobre o ser humano: sua identidade, sua dignidade, sua capacidade de queda e de redenção. Cruza dimensões filosófica, psicológica e sociológica com a teologia do texto, mostrando como a Bíblia oferece uma visão de humanidade mais rica do que qualquer disciplina isolada.',
+    body: () => (
     <>
       {[
         { secao:'Mt 1:1 — Identidade', rows:[{dim:'Filosófico',texto:'Quem define a identidade humana — o indivíduo, a cultura ou Deus?'},{dim:'Psicológico',texto:'Jesus tem nome e título declarados por Deus antes de qualquer feito; identidade revelada, não conquistada'},{dim:'Teológico',texto:'Christos: o ungido; toda a função sacerdotal, profética e régia converge neste título'}] },
@@ -417,18 +471,20 @@ const DIAGRAMAS = [
         { secao:'Mt 1:16–17 — Ruptura e Estrutura', rows:[{dim:'Filosófico',texto:'A história pode produzir seu próprio redentor, ou precisa de um agente externo?'},{dim:'Teológico',texto:'A passiva ἐγεννήθη declara que Jesus não é produto da genealogia — ele é a intervenção de Deus na história'}] },
       ].map(({ secao, rows }) => (
         <div key={secao} style={{ borderRadius:8, border:`1px solid rgba(255,255,255,0.05)`, background:'rgba(255,255,255,0.015)', padding:'1rem 1.1rem', marginBottom:8 }}>
-          <p style={{ fontFamily:F.display, fontSize:13, letterSpacing:'0.3em', color:`${C.blue}cc`, textTransform:'uppercase', marginBottom:8 }}>{secao}</p>
+          <p style={{ fontFamily:F.display, fontSize:'clamp(11px,1.7vw,13px)', letterSpacing:'0.3em', color:`${C.blue}cc`, textTransform:'uppercase', marginBottom:8 }}>{secao}</p>
           {rows.map(({ dim, texto }) => (
             <div key={dim} style={{ display:'flex', gap:12, marginBottom:7 }}>
-              <span style={{ fontFamily:F.sans, color:C.w30, fontSize:13, fontWeight:700, minWidth:90, paddingTop:1 }}>{dim}</span>
-              <span style={{ fontFamily:F.sans, color:C.w65, fontSize:16, lineHeight:1.75 }}>{texto}</span>
+              <span style={{ fontFamily:F.sans, color:C.w30, fontSize:'clamp(11px,1.7vw,13px)', fontWeight:700, minWidth:90, paddingTop:1 }}>{dim}</span>
+              <span style={{ fontFamily:F.sans, color:C.w65, fontSize:'clamp(14px,2vw,16px)', lineHeight:1.75, textAlign:'justify' }}>{texto}</span>
             </div>
           ))}
         </div>
       ))}
     </>
   )},
-  { num:'22', title:'Familiar', body: () => (
+  { num:'22', title:'Familiar',
+    intro: 'O Diagrama Familiar aplica o texto ao contexto de casamento, família, paternidade e transmissão de fé entre gerações. A Bíblia foi escrita para ser lida em comunidade e em lar; este diagrama recupera essa dimensão, mostrando como cada perícope fala à vida concreta das famílias.',
+    body: () => (
     <>
       {[
         { ref:'Mt 1:3.5.6', heading:'Tamar, Raabe, Rute, Bate-Seba', pontos:['As quatro mulheres têm histórias que nenhuma família escolheria destacar — adultério, prostituição, viuvez estrangeira. Mateus as inclui deliberadamente.','O texto ensina às famílias que a graça de Deus não exige histórias limpas — ela opera através das histórias reais, inclusive as dolorosas e complicadas.'] },
@@ -436,14 +492,16 @@ const DIAGRAMAS = [
         { ref:'Mt 1:16', heading:'Paternidade por aliança', pontos:['José não é pai biológico de Jesus, mas assume a paternidade davídica por decisão e aliança — modelo de paternidade como cobertura e responsabilidade.','Famílias que incluem filhos por adoção encontram aqui um modelo: José, o pai por aliança do Filho de Deus.'] },
       ].map(({ ref, heading, pontos }) => (
         <div key={ref} style={{ borderRadius:8, border:`1px solid rgba(255,255,255,0.05)`, background:'rgba(255,255,255,0.015)', padding:'1rem 1.1rem', marginBottom:8 }}>
-          <p style={{ fontFamily:F.display, fontSize:13, letterSpacing:'0.3em', color:`${C.blue}cc`, textTransform:'uppercase', marginBottom:4 }}>{ref}</p>
-          <p style={{ fontFamily:F.sans, color:C.white, fontSize:16, fontWeight:700, marginBottom:8 }}>{heading}</p>
-          {pontos.map((p,i) => <p key={i} style={{ fontFamily:F.sans, color:C.w65, fontSize:16, lineHeight:1.8, marginBottom:5 }}>{p}</p>)}
+          <p style={{ fontFamily:F.display, fontSize:'clamp(11px,1.7vw,13px)', letterSpacing:'0.3em', color:`${C.blue}cc`, textTransform:'uppercase', marginBottom:4 }}>{ref}</p>
+          <p style={{ fontFamily:F.sans, color:C.white, fontSize:'clamp(14px,2vw,16px)', fontWeight:700, marginBottom:8 }}>{heading}</p>
+          {pontos.map((p,i) => <p key={i} style={{ fontFamily:F.sans, color:C.w65, fontSize:'clamp(14px,2vw,16px)', lineHeight:1.8, marginBottom:5, textAlign:'justify' }}>{p}</p>)}
         </div>
       ))}
     </>
   )},
-  { num:'23', title:'Trinitário', body: () => (
+  { num:'23', title:'Trinitário',
+    intro: 'O Diagrama Trinitário pergunta como Pai, Filho e Espírito Santo aparecem — explícita ou implicitamente — na perícope. Mesmo em textos onde apenas uma pessoa da Trindade é mencionada, o diagrama revela as conexões implícitas com as outras duas, enriquecendo a leitura com a profundidade da teologia cristã clássica.',
+    body: () => (
     <>
       <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit, minmax(min(180px,100%), 1fr))', gap:10, marginBottom:14 }}>
         {[
@@ -452,10 +510,10 @@ const DIAGRAMAS = [
           { label:'Espírito',ref:'Mt 1:16',    color:C.purple, border:`${C.purple}30`,  bg:`${C.purple}06`,  texto:'O Agente da ruptura — a passiva ἐγεννήθη aponta para a concepção pelo Espírito Santo; o mesmo Espírito da criação (Gn 1:2) age para inaugurar a nova criação em Jesus' },
         ].map(({ label, ref, color, border, bg, texto }) => (
           <div key={label} style={{ border:`1px solid ${border}`, borderRadius:10, background:bg, padding:'1.1rem', textAlign:'center' }}>
-            <span style={{ color, fontSize:18 }}>✦</span>
+            <span style={{ color, fontSize:'clamp(15px,2.4vw,18px)' }}>✦</span>
             <p style={{ fontFamily:F.display, fontSize:10, letterSpacing:'0.3em', color, textTransform:'uppercase', margin:'7px 0 3px' }}>{label}</p>
-            <p style={{ fontFamily:F.mono, fontSize:13, color:C.w30, marginBottom:10 }}>{ref}</p>
-            <p style={{ fontFamily:F.sans, color:C.w65, fontSize:14, lineHeight:1.75 }}>{texto}</p>
+            <p style={{ fontFamily:F.mono, fontSize:'clamp(11px,1.7vw,13px)', color:C.w30, marginBottom:10 }}>{ref}</p>
+            <p style={{ fontFamily:F.sans, color:C.w65, fontSize:'clamp(12px,1.8vw,14px)', lineHeight:1.75, textAlign:'justify' }}>{texto}</p>
           </div>
         ))}
       </div>
@@ -473,7 +531,7 @@ export default function EbookMateusPage() {
 
       {/* ── Botão voltar flutuante ── */}
       <Link
-        to="/livros/mateus"
+        to="/livraria"
         style={{
           position:'fixed', top:18, left:18, zIndex:100,
           display:'flex', alignItems:'center', gap:6,
@@ -482,7 +540,7 @@ export default function EbookMateusPage() {
           border:`1px solid rgba(0,212,255,0.25)`,
           borderRadius:50,
           color:'rgba(255,255,255,0.55)',
-          fontSize:11,
+          fontSize:'clamp(10px,1.5vw,11px)',
           fontFamily:F.display,
           letterSpacing:'0.2em',
           textDecoration:'none',
@@ -516,14 +574,14 @@ export default function EbookMateusPage() {
         ))}
 
         <motion.div initial={{ opacity:0, y:32 }} animate={{ opacity:1, y:0 }} transition={{ duration:0.9, ease:'easeOut' }} style={{ maxWidth:640 }}>
-          <p style={{ fontFamily:F.display, fontSize:13, letterSpacing:'0.45em', color:`${C.blue}dd`, textTransform:'uppercase', marginBottom:28 }}>
+          <p style={{ fontFamily:F.display, fontSize:'clamp(11px,1.7vw,13px)', letterSpacing:'0.45em', color:`${C.blue}dd`, textTransform:'uppercase', marginBottom:28 }}>
             Bíblia Visual Expositiva · Novo Testamento
           </p>
 
           {/* Ornamento */}
           <div style={{ display:'flex', alignItems:'center', justifyContent:'center', gap:12, marginBottom:8 }}>
             <div style={{ height:1, width:60, background:`linear-gradient(to right, transparent, ${C.blue}40)` }} />
-            <span style={{ color:C.blue, fontSize:16, filter:`drop-shadow(0 0 8px ${C.blue})` }}>✦</span>
+            <span style={{ color:C.blue, fontSize:'clamp(14px,2vw,16px)', filter:`drop-shadow(0 0 8px ${C.blue})` }}>✦</span>
             <div style={{ height:1, width:60, background:`linear-gradient(to left, transparent, ${C.blue}40)` }} />
           </div>
 
@@ -540,15 +598,15 @@ export default function EbookMateusPage() {
           {/* Divisa */}
           <div style={{ display:'flex', alignItems:'center', justifyContent:'center', gap:12, margin:'10px 0 26px' }}>
             <div style={{ height:1, flex:1, maxWidth:100, background:`linear-gradient(to right, transparent, ${C.borderB})` }} />
-            <span style={{ fontFamily:F.display, fontSize:13, letterSpacing:'0.35em', color:`${C.blue}cc`, textTransform:'uppercase' }}>Evangelho</span>
+            <span style={{ fontFamily:F.display, fontSize:'clamp(11px,1.7vw,13px)', letterSpacing:'0.35em', color:`${C.blue}cc`, textTransform:'uppercase' }}>Evangelho</span>
             <div style={{ height:1, flex:1, maxWidth:100, background:`linear-gradient(to left, transparent, ${C.borderB})` }} />
           </div>
 
           {/* Badge perícope */}
           <div style={{ display:'inline-flex', flexDirection:'column', alignItems:'center', gap:5, border:`1px solid ${C.borderB}`, background:`rgba(0,212,255,0.04)`, borderRadius:10, padding:'16px 32px', marginBottom:40 }}>
-            <span style={{ fontFamily:F.display, fontSize:13, letterSpacing:'0.4em', color:`${C.blue}dd`, textTransform:'uppercase' }}>Perícope Atual</span>
-            <span style={{ fontFamily:F.sans, fontSize:22, fontWeight:700, color:C.white }}>Mateus 1:1–17</span>
-            <span style={{ fontFamily:F.display, fontSize:13, letterSpacing:'0.25em', color:C.w30, textTransform:'uppercase' }}>A Genealogia de Jesus Cristo</span>
+            <span style={{ fontFamily:F.display, fontSize:'clamp(11px,1.7vw,13px)', letterSpacing:'0.4em', color:`${C.blue}dd`, textTransform:'uppercase' }}>Perícope Atual</span>
+            <span style={{ fontFamily:F.sans, fontSize:'clamp(18px,3vw,22px)', fontWeight:700, color:C.white }}>Mateus 1:1–17</span>
+            <span style={{ fontFamily:F.display, fontSize:'clamp(11px,1.7vw,13px)', letterSpacing:'0.25em', color:C.w30, textTransform:'uppercase' }}>A Genealogia de Jesus Cristo</span>
           </div>
 
           {/* Badges info */}
@@ -556,13 +614,13 @@ export default function EbookMateusPage() {
             {[['28','Capítulos'],['25','Seções'],['Diagramas','por perícope']].map(([n,l]) => (
               <div key={l} style={{ textAlign:'center' }}>
                 <p style={{ fontFamily:F.display, fontSize: n==='Diagramas' ? 14 : 26, fontWeight:900, color:C.blue, lineHeight:1, filter:`drop-shadow(0 0 12px ${C.blue}aa)` }}>{n}</p>
-                <p style={{ fontFamily:F.display, fontSize:12, letterSpacing:'0.25em', color:C.w30, textTransform:'uppercase', marginTop:5 }}>{l}</p>
+                <p style={{ fontFamily:F.display, fontSize:'clamp(10px,1.6vw,12px)', letterSpacing:'0.25em', color:C.w30, textTransform:'uppercase', marginTop:5 }}>{l}</p>
               </div>
             ))}
           </div>
 
           {/* Autor */}
-          <p style={{ fontFamily:'"Cinzel", serif', fontSize:11, letterSpacing:'0.15em', color:`${C.blue}dd`, marginTop:24 }}>
+          <p style={{ fontFamily:'"Cinzel", serif', fontSize:'clamp(10px,1.5vw,11px)', letterSpacing:'0.15em', color:`${C.blue}dd`, marginTop:24 }}>
             {AUTOR_EBOOK}
           </p>
         </motion.div>
@@ -574,12 +632,12 @@ export default function EbookMateusPage() {
       <section style={{ padding:'clamp(44px,8vw,80px) 0', borderTop:`1px solid rgba(0,212,255,0.08)` }}>
         <div style={col}>
           <motion.div initial={{ opacity:0, y:20 }} whileInView={{ opacity:1, y:0 }} viewport={{ once:true }} transition={{ duration:0.6 }}>
-            <p style={{ fontFamily:F.display, fontSize:13, letterSpacing:'0.45em', color:`${C.blue}dd`, textTransform:'uppercase', textAlign:'center', marginBottom:8 }}>Sumário</p>
+            <p style={{ fontFamily:F.display, fontSize:'clamp(11px,1.7vw,13px)', letterSpacing:'0.45em', color:`${C.blue}dd`, textTransform:'uppercase', textAlign:'center', marginBottom:8 }}>Sumário</p>
             <h2 style={{ fontFamily:F.display, fontSize:'clamp(22px,4vw,36px)', fontWeight:900, color:C.white, textAlign:'center', textTransform:'uppercase', marginBottom:36 }}>25 Perícopes</h2>
 
             <div style={{ display:'flex', alignItems:'center', gap:16, marginBottom:24 }}>
               <div style={{ flex:1, height:1, background:`linear-gradient(to right, transparent, ${C.borderB})` }} />
-              <span style={{ fontFamily:F.mono, fontSize:10, color:C.w15 }}>Evangelho de Mateus</span>
+              <span style={{ fontFamily:F.mono, fontSize:'clamp(9px,1.4vw,10px)', color:C.w15 }}>Evangelho de Mateus</span>
               <div style={{ flex:1, height:1, background:`linear-gradient(to left, transparent, ${C.borderB})` }} />
             </div>
 
@@ -617,10 +675,10 @@ export default function EbookMateusPage() {
                 border:`1px solid ${ativo ? C.borderB : 'transparent'}`,
                 opacity: ativo ? 1 : 0.32,
               }}>
-                <span style={{ fontFamily:F.display, fontSize:11, color: ativo ? C.blue : C.w30, minWidth:24, fontWeight: ativo ? 900 : 400, flexShrink:0 }}>{num}</span>
+                <span style={{ fontFamily:F.display, fontSize:'clamp(10px,1.5vw,11px)', color: ativo ? C.blue : C.w30, minWidth:24, fontWeight: ativo ? 900 : 400, flexShrink:0 }}>{num}</span>
                 <span style={{ fontFamily:F.sans, fontSize:'clamp(13px,3vw,16px)', color: ativo ? C.w80 : C.w45, flex:1, minWidth:120 }}>{titulo as string}</span>
-                <span style={{ fontFamily:F.mono, fontSize:10, color: ativo ? `${C.blue}dd` : C.w15, whiteSpace:'nowrap', flexShrink:0 }}>{ref as string}</span>
-                {ativo && <span style={{ fontFamily:F.display, fontSize:12, letterSpacing:'0.2em', color:C.blue, background:`${C.blue}18`, border:`1px solid ${C.borderB}`, borderRadius:50, padding:'1px 8px', whiteSpace:'nowrap' }}>lendo</span>}
+                <span style={{ fontFamily:F.mono, fontSize:'clamp(9px,1.4vw,10px)', color: ativo ? `${C.blue}dd` : C.w15, whiteSpace:'nowrap', flexShrink:0 }}>{ref as string}</span>
+                {ativo && <span style={{ fontFamily:F.display, fontSize:'clamp(10px,1.6vw,12px)', letterSpacing:'0.2em', color:C.blue, background:`${C.blue}18`, border:`1px solid ${C.borderB}`, borderRadius:50, padding:'1px 8px', whiteSpace:'nowrap' }}>liberado</span>}
               </div>
             ))}
           </motion.div>
@@ -633,18 +691,18 @@ export default function EbookMateusPage() {
       <section style={{ padding:'clamp(44px,8vw,80px) 0', borderTop:`1px solid rgba(255,255,255,0.04)`, background:'rgba(255,255,255,0.012)' }}>
         <div style={col}>
           <motion.div initial={{ opacity:0, y:20 }} whileInView={{ opacity:1, y:0 }} viewport={{ once:true }} transition={{ duration:0.6 }}>
-            <p style={{ fontFamily:F.display, fontSize:13, letterSpacing:'0.45em', color:`${C.blue}dd`, textTransform:'uppercase', textAlign:'center', marginBottom:8 }}>Introdução</p>
+            <p style={{ fontFamily:F.display, fontSize:'clamp(11px,1.7vw,13px)', letterSpacing:'0.45em', color:`${C.blue}dd`, textTransform:'uppercase', textAlign:'center', marginBottom:8 }}>Introdução</p>
             <h2 style={{ fontFamily:F.display, fontSize:'clamp(20px,3.5vw,32px)', fontWeight:900, color:C.white, textAlign:'center', textTransform:'uppercase', marginBottom:36 }}>A Bíblia Visual Expositiva</h2>
 
-            <p style={{ fontFamily:'"Cinzel", serif', fontSize:12, letterSpacing:'0.15em', color:`${C.blue}dd`, marginBottom:18 }}>{AUTOR_EBOOK}</p>
-            <p style={{ fontFamily:F.sans, fontSize:18, color:C.w65, lineHeight:1.9, marginBottom:20 }}>
+            <p style={{ fontFamily:'"Cinzel", serif', fontSize:'clamp(10px,1.6vw,12px)', letterSpacing:'0.15em', color:`${C.blue}dd`, marginBottom:18 }}>{AUTOR_EBOOK}</p>
+            <p style={{ fontFamily:F.sans, fontSize:'clamp(15px,2.4vw,18px)', color:C.w65, lineHeight:1.9, marginBottom:20, textAlign:'justify' }}>
               A Bíblia Visual Expositiva aplica a cada perícope das Escrituras um conjunto sistemático diagramas exegéticos. Cada diagrama opera como uma lente interpretativa distinta, revelando dimensões do texto que a leitura linear sozinha não alcança.
             </p>
-            <p style={{ fontFamily:F.sans, fontSize:18, color:C.w65, lineHeight:1.9, marginBottom:40 }}>
+            <p style={{ fontFamily:F.sans, fontSize:'clamp(15px,2.4vw,18px)', color:C.w65, lineHeight:1.9, marginBottom:40, textAlign:'justify' }}>
               O objetivo não é substituir a meditação pessoal da Escritura, mas aprofundá-la: oferecer ao leitor as ferramentas que os melhores comentários e as melhores universidades de teologia disponibilizam — organizadas de forma visual, acessível e progressiva.
             </p>
 
-            <p style={{ fontFamily:F.display, fontSize:13, letterSpacing:'0.4em', color:`${C.blue}dd`, textTransform:'uppercase', marginBottom:16 }}>O que os diagramas didáticos respondem? </p>
+            <p style={{ fontFamily:F.display, fontSize:'clamp(11px,1.7vw,13px)', letterSpacing:'0.4em', color:`${C.blue}dd`, textTransform:'uppercase', marginBottom:16 }}>O que os diagramas didáticos respondem? </p>
             <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill, minmax(min(260px, 100%), 1fr))', gap:8 }}>
               {[
                 ['01','Interlinear',        'O que diz o texto no grego original, palavra por palavra?'],
@@ -673,71 +731,12 @@ export default function EbookMateusPage() {
               ].map(([num,nome,pergunta]) => (
                 <div key={num} style={{ padding:'10px 13px', borderRadius:8, border:`1px solid rgba(0,212,255,0.12)`, background:'rgba(0,212,255,0.03)' }}>
                   <div style={{ display:'flex', alignItems:'center', gap:8, marginBottom:5 }}>
-                    <span style={{ fontFamily:F.display, fontSize:11, color:C.blue, fontWeight:900, minWidth:22 }}>{num}</span>
+                    <span style={{ fontFamily:F.display, fontSize:'clamp(10px,1.5vw,11px)', color:C.blue, fontWeight:900, minWidth:22 }}>{num}</span>
                     <span style={{ fontFamily:F.display, fontSize:10, letterSpacing:'0.15em', color:C.white, textTransform:'uppercase' }}>{nome}</span>
                   </div>
-                  <p style={{ fontFamily:F.sans, fontSize:13, color:C.w45, lineHeight:1.6, marginLeft:30 }}>{pergunta}</p>
+                  <p style={{ fontFamily:F.sans, fontSize:'clamp(11px,1.7vw,13px)', color:C.w45, lineHeight:1.6, marginLeft:30, textAlign:'justify' }}>{pergunta}</p>
                 </div>
               ))}
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* ══════════════════════════
-          ESTRUTURA DO LIVRO
-      ══════════════════════════ */}
-      <section style={{ padding:'clamp(44px,8vw,80px) 0', borderTop:`1px solid rgba(255,255,255,0.04)` }}>
-        <div style={col}>
-          <motion.div initial={{ opacity:0, y:20 }} whileInView={{ opacity:1, y:0 }} viewport={{ once:true }} transition={{ duration:0.6 }}>
-            <p style={{ fontFamily:F.display, fontSize:13, letterSpacing:'0.45em', color:`${C.blue}dd`, textTransform:'uppercase', textAlign:'center', marginBottom:8 }}>Estrutura do Livro</p>
-            <h2 style={{ fontFamily:F.display, fontSize:'clamp(18px,3vw,28px)', fontWeight:900, color:C.white, textAlign:'center', textTransform:'uppercase', marginBottom:32 }}>Evangelho de Mateus</h2>
-            <div style={{ overflowX:'auto' }}>
-              <table style={{ width:'100%', borderCollapse:'collapse', fontSize:15 }}>
-                <thead>
-                  <tr style={{ borderBottom:`1px solid ${C.borderB}` }}>
-                    {['Nº','Referência','Título','Forma Literária'].map(h => (
-                      <th key={h} style={{ fontFamily:F.display, fontSize:13, letterSpacing:'0.3em', color:C.blue, textTransform:'uppercase', padding:'8px 12px', textAlign:'left', fontWeight:400 }}>{h}</th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody>
-                  {[
-                    ['01','Mt 1:1–17','A Genealogia de Jesus Cristo','Genealogia · Quiasmo'],
-                    ['02','Mt 1:18–25','O Nascimento de Jesus Cristo','Narrativa · Anúncio angélico'],
-                    ['03','Mt 2:1–12','A Visita dos Magos','Narrativa · Epifania'],
-                    ['04','Mt 2:13–23','A Fuga para o Egito e o Retorno','Narrativa · Tipologia'],
-                    ['05','Mt 3:1–12','João Batista no Deserto','Narrativa profética'],
-                    ['06','Mt 3:13–17','O Batismo de Jesus','Narrativa teofânica'],
-                    ['07','Mt 4:1–11','A Tentação no Deserto','Narrativa de conflito'],
-                    ['08','Mt 4:12–25','O Início do Ministério na Galileia','Narrativa de abertura'],
-                    ['09','Mt 5:1–12','As Bem-Aventuranças','Discurso · Macarismos'],
-                    ['10','Mt 5:13–48','Sal, Luz e a Lei Cumprida','Discurso · Antíteses'],
-                    ['11','Mt 6:1–34','A Justiça Secreta e o Pai Nosso','Discurso · Oração'],
-                    ['12','Mt 7:1–29','O Julgamento, o Caminho e a Rocha','Discurso · Conclusão'],
-                    ['13','Mt 8:1–17','Milagres de Cura — Primeira Série','Narrativa de milagres'],
-                    ['14','Mt 8:18–9:8','Disciplina, Tempestade e Paralítico','Narrativa de autoridade'],
-                    ['15','Mt 9:9–34','Mateus Chamado e Controvérsias','Narrativa de chamado'],
-                    ['16','Mt 9:35–10:42','O Envio dos Doze','Discurso missionário'],
-                    ['17','Mt 11:1–30','João, as Cidades e o Descanso','Narrativa e discurso'],
-                    ['18','Mt 12:1–50','Conflitos com os Fariseus','Narrativa de controvérsia'],
-                    ['19','Mt 13:1–52','As Parábolas do Reino','Discurso parabólico'],
-                    ['20','Mt 14:1–16:20','Multiplicações e Confissão','Narrativa progressiva'],
-                    ['21','Mt 16:21–20:34','O Caminho para Jerusalém','Narrativa e discurso'],
-                    ['22','Mt 21:1–23:39','A Entrada em Jerusalém','Narrativa de conflito'],
-                    ['23','Mt 24:1–25:46','O Discurso Escatológico','Discurso apocalíptico'],
-                    ['24','Mt 26:1–27:66','A Paixão de Jesus Cristo','Narrativa de paixão'],
-                    ['25','Mt 28:1–20','A Ressurreição e a Grande Comissão','Narrativa culminante'],
-                  ].map(([num,ref,titulo,forma], idx) => (
-                    <tr key={num} style={{ borderBottom:`1px solid rgba(0,212,255,0.05)`, background: num==='01' ? 'rgba(0,212,255,0.06)' : idx%2===0 ? 'transparent' : 'rgba(255,255,255,0.014)' }}>
-                      <td style={{ padding:'8px 12px', fontFamily:F.display, fontSize:12, color: num==='01' ? C.blue : `${C.blue}aa`, fontWeight: num==='01' ? 900 : 400 }}>{num}</td>
-                      <td style={{ padding:'8px 12px', fontFamily:F.mono, fontSize:11, color: num==='01' ? `${C.blue}ee` : C.w30, whiteSpace:'nowrap' }}>{ref}</td>
-                      <td style={{ padding:'8px 12px', fontFamily:F.sans, color: num==='01' ? C.w80 : C.w45, fontSize:15 }}>{titulo}</td>
-                      <td style={{ padding:'8px 12px', fontFamily:F.mono, fontSize:10, color:C.w30 }}>{forma}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
             </div>
           </motion.div>
         </div>
@@ -754,7 +753,7 @@ export default function EbookMateusPage() {
         borderTop:`1px solid ${C.borderB}`, borderBottom:`1px solid ${C.borderB}`,
       }}>
         <motion.div initial={{ opacity:0, scale:0.97 }} whileInView={{ opacity:1, scale:1 }} viewport={{ once:true }} transition={{ duration:0.7 }}>
-          <p style={{ fontFamily:F.display, fontSize:13, letterSpacing:'0.5em', color:`${C.blue}cc`, textTransform:'uppercase', marginBottom:18 }}>Capítulo 1 · Perícope 01</p>
+          <p style={{ fontFamily:F.display, fontSize:'clamp(11px,1.7vw,13px)', letterSpacing:'0.5em', color:`${C.blue}cc`, textTransform:'uppercase', marginBottom:18 }}>Capítulo 1 · Perícope 01</p>
           <div style={{ display:'flex', alignItems:'center', justifyContent:'center', gap:12, marginBottom:10 }}>
             <div style={{ height:1, width:80, background:`linear-gradient(to right, transparent, ${C.borderB})` }} />
             <span style={{ color:C.blue, fontSize:20, filter:`drop-shadow(0 0 10px ${C.blue})` }}>✦</span>
@@ -768,18 +767,18 @@ export default function EbookMateusPage() {
           </p>
           <div style={{ display:'flex', alignItems:'center', justifyContent:'center', gap:12, marginBottom:28 }}>
             <div style={{ height:1, width:80, background:`linear-gradient(to right, transparent, ${C.borderB})` }} />
-            <span style={{ color:C.blue, fontSize:12 }}>✦</span>
+            <span style={{ color:C.blue, fontSize:'clamp(10px,1.5vw,12px)' }}>✦</span>
             <div style={{ height:1, width:80, background:`linear-gradient(to left, transparent, ${C.borderB})` }} />
           </div>
-          <p style={{ fontFamily:F.sans, fontStyle:'italic', fontSize:19, color:C.w45, maxWidth:520, margin:'0 auto 32px' }}>
+          <p style={{ fontFamily:F.sans, fontStyle:'italic', fontSize:'clamp(16px,2.5vw,19px)', color:C.w45, maxWidth:520, margin:'0 auto 32px' }}>
             "Livro da genealogia de Jesus Cristo, filho de Davi, filho de Abraão."
           </p>
           <p style={{ fontFamily:F.mono, fontSize:10, letterSpacing:'0.3em', color:`${C.blue}aa`, textTransform:'uppercase', marginBottom:32 }}>Mateus 1:1</p>
           <div style={{ display:'flex', justifyContent:'center', gap:20, flexWrap:'wrap' }}>
             {[['Forma literária','Genealogia · Narrativa'],['Estrutura','Quiasmo A·B¹·B²·B³·A′'],['Diagramas','Análise completa']].map(([l,v]) => (
               <div key={l} style={{ textAlign:'center', padding:'12px 20px', border:`1px solid ${C.borderB}`, borderRadius:8, background:'rgba(0,212,255,0.04)' }}>
-                <p style={{ fontFamily:F.display, fontSize:12, letterSpacing:'0.35em', color:C.blue, textTransform:'uppercase', marginBottom:4 }}>{l}</p>
-                <p style={{ fontFamily:F.sans, fontSize:15, color:C.w65 }}>{v}</p>
+                <p style={{ fontFamily:F.display, fontSize:'clamp(10px,1.6vw,12px)', letterSpacing:'0.35em', color:C.blue, textTransform:'uppercase', marginBottom:4 }}>{l}</p>
+                <p style={{ fontFamily:F.sans, fontSize:'clamp(13px,1.9vw,15px)', color:C.w65 }}>{v}</p>
               </div>
             ))}
           </div>
@@ -792,12 +791,12 @@ export default function EbookMateusPage() {
       <section style={{ padding:'20px 0 80px' }}>
         <div style={col}>
           <SectionDivider label="Diagramas Expositivos" />
-          <p style={{ fontFamily:F.sans, fontStyle:'italic', fontSize:18, color:C.w30, textAlign:'center', marginBottom:40, lineHeight:1.8 }}>
+          <p style={{ fontFamily:F.sans, fontStyle:'italic', fontSize:'clamp(15px,2.4vw,18px)', color:C.w30, textAlign:'center', marginBottom:40, lineHeight:1.8 }}>
             Cada diagrama aplica uma lente hermenêutica distinta à perícope de Mateus 1:1–17,<br/>
             revelando dimensões do texto que a leitura linear sozinha não alcança.
           </p>
           {DIAGRAMAS.map(d => (
-            <DiagramCard key={d.num} num={d.num} title={d.title}>
+            <DiagramCard key={d.num} num={d.num} title={d.title} intro={d.intro}>
               {d.body()}
             </DiagramCard>
           ))}
@@ -810,13 +809,13 @@ export default function EbookMateusPage() {
       <footer style={{ borderTop:`1px solid rgba(0,212,255,0.12)`, padding:'60px 2rem', textAlign:'center', background:'rgba(255,255,255,0.01)' }}>
         <div style={{ display:'flex', alignItems:'center', justifyContent:'center', gap:12, marginBottom:12 }}>
           <div style={{ height:1, width:80, background:`linear-gradient(to right, transparent, ${C.borderB})` }} />
-          <span style={{ color:C.blue, fontSize:16, filter:`drop-shadow(0 0 8px ${C.blue})` }}>✦</span>
+          <span style={{ color:C.blue, fontSize:'clamp(14px,2vw,16px)', filter:`drop-shadow(0 0 8px ${C.blue})` }}>✦</span>
           <div style={{ height:1, width:80, background:`linear-gradient(to left, transparent, ${C.borderB})` }} />
         </div>
-        <p style={{ fontFamily:F.display, fontSize:11, letterSpacing:'0.4em', color:`${C.blue}dd`, textTransform:'uppercase', marginBottom:5 }}>Bíblia Visual Expositiva</p>
-        <p style={{ fontFamily:F.display, fontSize:13, letterSpacing:'0.3em', color:C.w15, textTransform:'uppercase', marginBottom:6 }}>Evangelho de Mateus · Seção 01 de 25</p>
-        <p style={{ fontFamily:'"Cinzel", serif', fontStyle:'italic', fontSize:15, color:C.w30, marginBottom:16 }}>Κατὰ Μαθθαῖον</p>
-        <p style={{ fontFamily:'"Cinzel", serif', fontSize:12, letterSpacing:'0.15em', color:`${C.blue}dd`, marginBottom:24 }}>
+        <p style={{ fontFamily:F.display, fontSize:'clamp(10px,1.5vw,11px)', letterSpacing:'0.4em', color:`${C.blue}dd`, textTransform:'uppercase', marginBottom:5 }}>Bíblia Visual Expositiva</p>
+        <p style={{ fontFamily:F.display, fontSize:'clamp(11px,1.7vw,13px)', letterSpacing:'0.3em', color:C.w15, textTransform:'uppercase', marginBottom:6 }}>Evangelho de Mateus · Seção 01 de 25</p>
+        <p style={{ fontFamily:'"Cinzel", serif', fontStyle:'italic', fontSize:'clamp(13px,1.9vw,15px)', color:C.w30, marginBottom:16 }}>Κατὰ Μαθθαῖον</p>
+        <p style={{ fontFamily:'"Cinzel", serif', fontSize:'clamp(10px,1.6vw,12px)', letterSpacing:'0.15em', color:`${C.blue}dd`, marginBottom:24 }}>
           {AUTOR_EBOOK}
         </p>
         <div style={{ display:'flex', alignItems:'center', justifyContent:'center', gap:12, marginBottom:24 }}>
@@ -824,8 +823,8 @@ export default function EbookMateusPage() {
           <div style={{ height:1, flex:1, maxWidth:160, background:`linear-gradient(to left, transparent, ${C.borderB})` }} />
         </div>
         <Link
-          to="/livros/mateus"
-          style={{ fontFamily:F.display, fontSize:13, letterSpacing:'0.35em', color:`${C.blue}cc`, textDecoration:'none', textTransform:'uppercase', border:`1px solid ${C.borderB}`, padding:'9px 22px', borderRadius:50, display:'inline-block' }}
+          to="/livraria"
+          style={{ fontFamily:F.display, fontSize:'clamp(11px,1.7vw,13px)', letterSpacing:'0.35em', color:`${C.blue}cc`, textDecoration:'none', textTransform:'uppercase', border:`1px solid ${C.borderB}`, padding:'9px 22px', borderRadius:50, display:'inline-block' }}
         >
           ← Voltar às Seções
         </Link>

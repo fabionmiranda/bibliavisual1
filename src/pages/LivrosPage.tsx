@@ -19,7 +19,7 @@ const NT = [
 ];
 
 const ENABLED: Record<string, string> = {
-  Mateus: '/livros/mateus',
+  Mateus: '/ebook/mateus',
 };
 
 function BookButton({ name }: { name: string }) {
