@@ -1149,38 +1149,194 @@ function gerarReflexao(d: DiaDevocional): string {
     return `A simetria do encerramento de Deuteronômio espelha Moisés subindo ao Pisga — o Senhor lhe mostra toda a terra ↔ "nunca mais houve em Israel profeta como Moisés." No centro: "Moisés tinha cento e vinte anos quando morreu — seus olhos não se escureceram." O pivô é a integridade até o fim: os olhos que viram a glória de Deus na fenda da rocha chegaram intactos ao cume do Pisga. Na vida da igreja: fidelidade não gasta o que é de Deus — preserva. A vida vivida na intimidade com Deus chega ao fim sem escurecer os olhos que O viram. O legado de Moisés não é seu sepulcro — é Josué cheio do Espírito que ele passou adiante.`;
 
   // Josué
-  if (/comissao.*josue|deus.*josue/i.test(p))
-    return `Deus comissiona Josué após a morte de Moisés: "Sê forte e corajoso; não te atemorizes nem te espantes, porque o Senhor teu Deus é contigo por onde quer que andares." A missão não esperou que Josué se sentisse pronto. Na vida real: coragem bíblica não é ausência de medo — é obedecer mesmo com medo, confiando em Quem envia.`;
-  if (/espioes.*jerico|espiao.*rahabe|rahab/i.test(p))
-    return `Dois espias entram em Jericó e são protegidos por Raabe, uma prostituta que reconhece o Deus de Israel. O cordão escarlate na janela a salva junto com sua família. Na vida real: a graça de Deus alcança quem parece mais improvável. Ninguém está além do alcance da misericórdia divina — e muitas vezes são os "de fora" que enxergam com mais clareza quem Deus é.`;
-  if (/israel atravessa.*jordao|jordao.*ark.*arca/i.test(p))
-    return `O Jordão estava transbordando. A arca entrou na água primeiro — e as águas pararam. Israel atravessou em terra seca. Na vida real: a fé frequentemente é testada antes de o caminho se abrir. Deus não divide o mar e depois convida a entrar — Ele pede que os pés molhem antes da divisão acontecer.`;
-  if (/doze pedras.*gilgal|memorial.*jordao/i.test(p))
-    return `Doze pedras são tiradas do leito seco do Jordão e erguidas em Gilgal — uma para cada tribo. "Quando vossos filhos perguntarem o que significam essas pedras, contai-lhes." Na vida real: marcos de memória importam. Recordar o que Deus fez sustenta a fé quando os próximos desafios chegam.`;
-  if (/jerico.*destruiu|muros.*jerico|tomada.*jerico/i.test(p))
-    return `Jericó foi tomada sem batalha convencional — apenas marchas, trombetas e fé obediente. Os muros caíram. Na vida real: há resistências em nossa vida que não cedem à força humana, mas cedem quando nos rendemos ao plano de Deus, mesmo que pareça ilógico para quem está de fora.`;
-  if (/peca.*aca|pecado.*aca|aca.*punicao/i.test(p))
-    return `Acã escondeu o que pertencia a Deus. Israel perdeu uma batalha por causa do pecado de um homem. O texto é severo: o pecado escondido prejudica a comunidade inteira. Na vida real: o que não confessamos e tratamos diante de Deus não desaparece — continua agindo por baixo e afetando a todos ao redor.`;
-  if (/josue.*renova.*alianca|tribos.*renovam.*alianca|siquem.*alianca/i.test(p))
-    return `Em Siquém, Josué reúne Israel e coloca diante do povo a escolha: "Escolhei hoje a quem servireis." E declara: "Quanto a mim e à minha casa, serviremos ao Senhor." Na vida real: a fé não é hereditária — cada geração, cada família, cada pessoa precisa fazer a sua escolha. E essa escolha se expressa no cotidiano, não apenas nos momentos solenes.`;
-  if (/morte.*josue|josue.*morre/i.test(p))
-    return `Josué morre com 110 anos, tendo cumprido a missão que lhe foi dada. O texto encerra uma era com dignidade. Na vida real: uma vida bem vivida é aquela que, ao final, pode dizer com honestidade: "Servi a Deus com o que me foi confiado." Não perfeição, mas fidelidade.`;
+  // [254]
+  if (/de deus comissao a josue/i.test(p))
+    return `A simetria da comissão a Josué espelha "sê forte e corajoso" (A) ↔ "sê forte e corajoso" (A') — eco que envolve toda a perícope. No centro: Josué interpela as tribos do Jordão Oriental sobre o cumprimento do seu encargo. O pivô é que a coragem não é autogerada — é convocada por Quem envia; o eco do versículo 9 confirma o versículo 6 porque o mesmo Deus fala os dois. Na vida da igreja: a coragem ministerial precisa de repetição não por dúvida de Deus, mas pela fraqueza de quem serve. Lideres que retornam ao versículo da comissão não estão em crise — estão se abastecendo. A simetria ensina que a missão começa e termina na voz de Deus, não na disposição do servo.`;
+  // [255]
+  if (/espioes enviado a jerico/i.test(p))
+    return `A simetria dos espiões em Jericó espelha Josué enviando os dois (A) ↔ os espiões retornam com relatório de fé (A'). No centro: Raabe confessa "o Senhor vos deu esta terra" — a mulher de fora enuncia o que Israel ainda não viveu. O pivô é o fio escarlate: sinal de aliança dado a uma gentil antes que Jericó caia, mostrando que a graça de Deus precede a conquista. Na vida da igreja: os "de fora" frequentemente enxergam o que o povo de Deus demora a ver. Raabe não aguardou confirmação — ela confessou com base no relato. A fé que age antes do cumprimento é a fé que a Bíblia celebra.`;
+  // [256]
+  if (/israel atravessa jordao/i.test(p))
+    return `A simetria da travessia do Jordão espelha as instruções do acampamento (A) ↔ os sacerdotes permanecem até o povo completar (A'). No centro: a arca entra nas águas e as águas param — o sinal precede a travessia. O pivô é a prioridade da arca: não a coragem do povo, não a estratégia de Josué, mas a presença do Senhor abrindo caminho. Na vida da igreja: quando a presença de Deus vai à frente, o impossível recua. A travessia em terra seca não é mérito — é testemunho. Cada batismo recorda que passamos pelo que era intransponível por causa de Quem vai à frente.`;
+  // [257]
+  if (/doze pedras coloca em gilgal/i.test(p))
+    return `A simetria das doze pedras em Gilgal espelha a ordem do memorial (A) ↔ as pedras erguidas como sinal permanente (A'). No centro: Josué é exaltado como Moisés foi — a continuidade do chamado é confirmada. O pivô é a pergunta futura: "quando vossos filhos perguntarem, contai-lhes." O memorial não é para os que viram — é para os que ainda nascerão. Na vida da igreja: os rituais litúrgicos — a Ceia, o batismo, as festas — são pedras de Gilgal: respostas preparadas para perguntas de gerações que ainda não existem. Liturgia é memória corporativa que carrega quem ainda não se lembra.`;
+  // [258]
+  if (/novo geracao circuncidado/i.test(p))
+    return `A simetria da circuncisão da nova geração espelha a ordem divina (A) ↔ comer do produto da terra prometida (A'). No centro: "hoje removi de vós a vergonha do Egito" — Gilgal como lugar de restauração da identidade. O pivô é a geração do deserto: eles morreram sem o sinal da aliança. A nova geração entra na terra com o sinal antes do fruto. Na vida da igreja: há marcas de identidade que a geração anterior não recebeu — e cabe à nova geração não omitir o que foi negligenciado. Pertencer ao povo de Deus não é automático; é marcado, confirmado, celebrado.`;
+  // [259]
+  if (d.livroAbrev === 'Js' && /a pascoa/i.test(p))
+    return `A simetria da Páscoa em Gilgal espelha a celebração (A) ↔ a transição da provisão do deserto (A'). No centro: o maná cessa — o fim de uma era é o começo de outra. O pivô é que Deus provisiona de formas diferentes em estações diferentes: o maná foi para o deserto; o produto da terra é para quem já entrou. Na vida da igreja: há provisões de Deus específicas para cada estação. Quando uma forma de provisão cessa, não é abandono — é troca de registro. Discernir em que estação se está é essencial para receber o que Deus está dando agora.`;
+  // [260]
+  if (/de josue visao/i.test(p))
+    return `A simetria da visão de Josué espelha o homem com espada desembainhada (A) ↔ "tira o calçado — este lugar é sagrado" (A'). No centro: "como comandante do exército do Senhor vim" — nem aliado, nem inimigo; a pergunta estava errada. O pivô é a recusa de lados: Deus não está "a favor de Josué" no sentido tribal — Josué precisa posicionar-se sob o comando de Deus. Na vida da igreja: a questão não é se Deus está do nosso lado — é se estamos do lado de Deus. Todo projeto que começa com "Deus nos apoia" precisa primeiro perguntar: estamos sob o Seu comando?`;
+  // [261]
+  if (/jerico levado e destruiu/i.test(p))
+    return `A simetria de Jericó destruída espelha Jericó fechada (A) ↔ Raabe poupada, o resto destruído (A'). No centro: a marcha de sete dias com a arca — obediência prolongada sem resultado visível. O pivô é que o plano de Deus não pede compreensão — pede fidelidade até o último dia. Raabe, poupada dentro da destruição geral, é a exceção da graça no meio do julgamento. Na vida da igreja: a obediência que não vê resultado no sexto dia precisa chegar ao sétimo. E há sempre uma Raabe: alguém que o julgamento poupar por causa da aliança — mesmo dentro do que parecia condenado.`;
+  // [262]
+  if (/maldicao de josue/i.test(p))
+    return `A simetria da maldição de Josué espelha a pronúncia da maldição (A) ↔ "o Senhor estava com Josué" (A'). No centro: "com o primogênito lançará os fundamentos" — a maldição é específica e profética. O pivô é que a maldição não é raiva — é salvaguarda: Jericó não pode ser reconstruída porque carrega o sinal do anátema. Na vida da igreja: há lugares que a Escritura declara interditados não por crueldade, mas por proteção. Ignorar advertências proféticas não as anula — as cumpre. A maldição que Hiel desprezou séculos depois (1Rs 16.34) confirmou o que Josué pronunciou.`;
+  // [263]
+  if (/o pecado de aca e punicao/i.test(p))
+    return `A simetria do pecado de Acã espelha o anátema violado (A) ↔ Acã apedrejado no vale de Acor (A'). No centro: Josué e os anciãos prostram-se diante da arca — liderança que recorre à presença antes de buscar culpados. O pivô é o "anátema": o que pertence a Deus não pode ser privatizado sem consequências comunitárias. Acã não apenas pecou — contaminou o acampamento. Na vida da igreja: o pecado escondido de um membro não é assunto privado quando a comunidade avança junta. A transparência diante de Deus não é opção de piedade pessoal — é responsabilidade comunitária. Acor se tornará "porta de esperança" (Os 2.15) — o lugar da punição é o lugar da restauração futura.`;
+  // [264]
+  if (/ai capturou por um estratagema e destruiu/i.test(p))
+    return `A simetria de Ai destruída espelha "não temas" (A) ↔ Ai completamente destruída (A'). No centro: Josué estende o dardo — o sinal da vitória que sustenta a batalha enquanto a emboscada se executa. O pivô é o dardo estendido: Josué não abaixa o braço antes de a vitória estar completa — evocação de Moisés com as mãos erguidas no Refidim. Na vida da igreja: há lutas que requerem postura sustentada de intercessão até o último inimigo ser derrotado. O sinal não é performático — é parte da batalha. Quem sustenta a postura de fé até o fim, não por efeito estético, mas por confiança real, participa da vitória.`;
+  // [265]
+  if (/josue renova a alianca/i.test(p))
+    return `A simetria da aliança no Ebal espelha o altar erguido (A) ↔ Josué lendo toda a lei — bênçãos e maldições (A'). No centro: a lei gravada nas pedras — publicidade permanente da palavra de Deus. O pivô é que a lei não é privada: gravada em pedra, lida em voz alta para todo Israel, incluindo crianças e estrangeiros. Na vida da igreja: a Palavra de Deus proclamada publicamente, em toda a sua extensão — incluindo as maldições — é ato de amor, não de intimidação. Omitir o que desconforta não é misericórdia — é privação.`;
+  // [266]
+  if (/gibeonitas salvar eles mesmos por ardil/i.test(p))
+    return `A simetria dos gibeonitas espelha os reis de Canaã se unindo contra Israel (A) ↔ gibeonitas tornados servos perpétuos mas poupados (A'). No centro: Israel firma aliança sem consultar o Senhor — o erro que nenhuma estratégia pode reparar depois. O pivô é a consulta omitida: o texto não critica a compaixão de Israel, mas a precipitação. Decisões irreversíveis exigem consulta ao Senhor antes, não depois. Na vida da igreja: a pressa nas alianças — ministeriais, matrimoniais, institucionais — produz vínculos que depois não podem ser desfeitos sem dano. O que Josué aprendeu com os gibeonitas é que a aparência de fraqueza pode ser estratégia de sobrevivência.`;
+  // [267]
+  if (/cinco reis derrotou/i.test(p))
+    return `A simetria dos cinco reis derrotados espelha os reis atacando Gibeom (A) ↔ a campanha completa ao sul (A'). No centro: o sol para — o dia mais longo da história, registrado como resposta à oração de Josué. O pivô é que o cosmos obedece ao Deus que ordena a batalha: sol e lua suspendem o ritmo para que a justiça se complete. Na vida da igreja: quando Deus convoca uma missão, Ele providencia o tempo necessário para executá-la. A oração audaciosa de Josué — pedir ao sol que pare — nasce de quem já viu o Jordão se partir. Fé audaciosa não é ingenuidade; é memória de milagres anteriores.`;
+  // [268]
+  if (/unido reis de do norte canaa derrotou/i.test(p))
+    return `A simetria dos reis do norte derrotados espelha a mobilização de Jabim (A) ↔ toda a região conquistada (A'). No centro: Josué ataca de surpresa — a estratégia de Deus é revelar o plano antes da batalha: "amanhã eu os entregarei." O pivô é o "amanhã": Deus dá os inimigos antes que a batalha aconteça. A vitória é declarada no dia anterior — o ataque de Josué é execução de uma promessa já dada. Na vida da igreja: há batalhas que precisam ser vencidas primeiro no espírito da promessa antes de serem travadas no campo. Quem age antes do "amanhã" do Senhor tropeça; quem aguarda o timing divino e age quando ele chegou — triunfa.`;
+  // [269]
+  if (/resumo de de josue conquistas/i.test(p))
+    return `A simetria do resumo das conquistas espelha todo o território conquistado (A) ↔ "a terra descansou — repartida por herança" (A'). No centro: os anaquins exterminados de toda a terra — os gigantes que paralisaram a geração do deserto agora foram removidos. O pivô é o descanso: o objetivo da conquista não é guerra permanente, mas herança habitada em paz. Na vida da igreja: o propósito da luta espiritual não é o conflito perpétuo — é a posse pacífica do que Deus prometeu. Quando os anaquins — os medos que paralisaram gerações — são removidos, a terra descansa. O descanso é herança, não ausência de desafio.`;
+  // [270]
+  if (/os reis conquistou por moises e josue/i.test(p))
+    return `A simetria da lista dos reis conquistados espelha os reis do Jordão Oriental — por Moisés (A) ↔ os 31 reis por Josué (A'). No centro: o rei de Jericó e de Ai — os primeiros da lista ocidental, fundação de toda a campanha. O pivô é a continuidade entre Moisés e Josué: a lista abarca os dois líderes porque a missão é uma só. Na vida da igreja: a obra de Deus não recomeça do zero com cada geração de líderes — ela continua. Josué não apaga Moisés; os dois formam um único registro. Quem lidera agora está escrevendo um capítulo que começou antes de si e continuará depois.`;
+  // [271]
+  if (/as partes de canaa ainda nao conquistadas/i.test(p))
+    return `A simetria das terras não conquistadas espelha "Josué é velho, resta muito" (A) ↔ "a terra será repartida como herança" (A'). No centro: Deus promete expulsar os habitantes — a promessa não depende da longevidade de Josué. O pivô é que a missão incompleta não é falha — é herança deixada para as próximas gerações receberem. Na vida da igreja: líderes que envelhecem sem ter completado tudo o que começaram não são fracassos — são fiéis ao que Deus lhes confiou para sua estação. O restante é promessa para a geração seguinte, não vergonha para a geração atual.`;
+  // [272]
+  if (/o territorio a leste do jordao/i.test(p))
+    return `A simetria do território leste espelha as tribos recebendo herança de Moisés (A) ↔ "o Senhor é a herança dos levitas" (A'). No centro: Moisés destruiu os reis e expulsou — o passado é fundamento do presente. O pivô é o contraste levítico: enquanto as tribos recebem terra, os levitas recebem o próprio Senhor. Na vida da igreja: nem toda herança é territorial. Quem foi chamado ao ministério da Palavra recebe algo mais precioso do que posses: a presença de Deus como herança. A vida levítica é chamada a demonstrar que o Senhor é suficiente.`;
+  // [273]
+  if (/o territorio de ruben, gade e manasses/i.test(p))
+    return `A simetria da herança de Rúben, Gade e Manassés espelha a herança de Rúben (A) ↔ "o Senhor é a herança deles" — os levitas (A'). No centro: a meia tribo de Manassés recebe a herança central entre os do leste. O pivô é a repetição do princípio levítico: no encerramento de cada lista tribal, o texto recorda que os levitas não têm terra. Na vida da igreja: a distinção entre herança material e herança espiritual não é desvantagem para os levitas — é clareza vocacional. Quem serve ao Senhor sem acumulação de terra demonstra que há herança que não pode ser confiscada.`;
+  // [274]
+  if (/a distribuicao de territorio oeste de jordao/i.test(p))
+    return `A simetria da distribuição oeste espelha as heranças por sorte conforme Moisés (A) ↔ "Israel repartiu conforme o Senhor ordenou" (A'). No centro: os filhos de José formam duas tribos — o número doze é preservado mesmo excluindo os levitas. O pivô é a obediência estrutural: a divisão não é resultado de negociação humana, mas de sorte diante do Senhor — forma de consulta divina. Na vida da igreja: quando decisões sobre "quem recebe o quê" são submetidas ao Senhor, o ciúme é reduzido. A sorte de Josué não era acaso — era Deus distribuindo o que era Seu.`;
+  // [275]
+  if (/o territorio de juda/i.test(p))
+    return `A simetria do território de Judá espelha Calebe reivindicando Hebrom — "sou tão forte como antes" (A) ↔ cidades de Judá — Jerusalém não expulsa (A'). No centro: os limites precisos do território de Judá — herança demarcada. O pivô é Calebe: oitenta e cinco anos, a mesma força que o Senhor lhe deu no deserto. Na vida da igreja: os que mantiveram fé durante quarenta anos de deserto chegam à terra com força não gastada. A fé sustentada não envelhece — ela matura. Calebe pediu a montanha dos anaquins, não o vale fácil.`;
+  // [276]
+  if (/o territorio de efraim e manasses/i.test(p))
+    return `A simetria do território de Efraim e Manassés espelha os limites de Efraim (A) ↔ as tribos de José pedindo mais terra — Josué as desafia ao bosque (A'). No centro: a petição das filhas de Zelofeade — herança das mulheres dentro do sistema patriarcal. O pivô é o desafio de Josué: se a herança parece pequena, derruba o bosque e toma mais. Deus deu a terra; o trabalho de tomar é da tribo. Na vida da igreja: há promessas que estão disponíveis mas requerem desbravamento. Reclamar da porção pequena quando há bosque não desmatado é desperdício da graça recebida.`;
+  // [277]
+  if (/os territorios das tribos restantes/i.test(p))
+    return `A simetria dos territórios das tribos restantes espelha a tenda do encontro armada em Siló (A) ↔ Josué recebendo sua porção pessoal (A'). No centro: Benjamim recebe herança por sorte em Siló — a distribuição acontece diante da presença de Deus. O pivô é Siló: o lugar onde a tenda é estabelecida define o centro geográfico e teológico da distribuição. Na vida da igreja: quando as decisões de distribuição acontecem diante da presença de Deus, o resultado carrega peso diferente. Siló não é burocracia — é altar. A partilha justa nasce da adoração, não apenas da equidade.`;
+  // [278]
+  if (d.livroAbrev === 'Js' && /as cidades de refugio/i.test(p))
+    return `A simetria das cidades de refúgio espelha a ordem divina (A) ↔ "para que não morra antes do julgamento" (A'). No centro: seis cidades designadas — três a cada lado do Jordão, igualmente acessíveis para todo Israel. O pivô é a acessibilidade: o refúgio precisa estar ao alcance de quem foge — não pode ser tão distante que o vingador alcance antes. Na vida da igreja: a graça de Deus não é refúgio teórico — é geograficamente real, próximo o suficiente para quem corre. A comunidade cristã é cidade de refúgio quando está próxima o suficiente dos que fogem de seus próprios erros.`;
+  // [279]
+  if (/cidades distribuido a levitas/i.test(p))
+    return `A simetria das cidades para levitas espelha o pedido conforme a promessa de Moisés (A) ↔ "nada falhou de todas as boas promessas do Senhor" (A'). No centro: quarenta e oito cidades distribuídas a todas as famílias levíticas — presença ministerial espalhada por todo o território. O pivô é a presença distribuída: os levitas não vivem concentrados — estão em todas as tribos. A instrução e o sacerdócio são descentralizados por design. Na vida da igreja: o ministério da Palavra não pode ser monopólio de um centro — precisa alcançar toda a herança. "Nada falhou" é o testemunho de Deus sobre Suas próprias promessas.`;
+  // [280]
+  if (/as tribos do leste retornam a seu territorio/i.test(p))
+    return `A simetria do retorno das tribos do leste espelha Josué convocando — "cumpristes vosso encargo" (A) ↔ as tribos retornando com grandes riquezas (A'). No centro: "amai ao Senhor — andai em todos os seus caminhos" — o encargo deixado para a vida após o cumprimento da missão. O pivô é que o mandato continua além da missão pontual: cumprida a guerra, o chamado ao amor e obediência permanece. Na vida da igreja: há uma tendência de dispensar o discipulado depois que a "missão" foi cumprida. Josué recorda que a missão cotidiana de amar a Deus não tem fase de término.`;
+  // [281]
+  if (/o altar das tribos do leste/i.test(p))
+    return `A simetria do altar do testemunho espelha as tribos construindo o altar (A) ↔ o altar chamado "Testemunho" (A'). No centro: a explicação — "não para holocaustos, mas como testemunho para vossas gerações." O pivô é a intenção declarada: o que parecia apostasia era memorial. O mal-entendido quase resultou em guerra. Na vida da igreja: ações que parecem desvio nem sempre são — e confrontar antes de perguntar produz guerra desnecessária. O modelo das tribos do leste é a declaração pública da intenção antes que a acusação solidifique. Transparência evita conflito.`;
+  // [282]
+  if (/josue exorta o povo/i.test(p))
+    return `A simetria da exortação de Josué espelha a convocação de Israel (A) ↔ "toda a boa palavra foi cumprida — a maldição também virá" (A'). No centro: "um homem perseguirá mil — o Senhor luta por vós." O pivô é a assimetria da guerra com Deus: não é questão de número, mas de aliança. A lógica de "um contra mil" não é entusiasmo humano — é aritmética da fidelidade divina. Na vida da igreja: minorias que avançam em fidelidade não estão em desvantagem numérica — estão sob promessa. E a advertência do verso final é igualmente simétrica: a mesma Palavra que cumpriu a bênção cumprirá a maldição se a aliança for abandonada.`;
+  // [283]
+  if (d.livroAbrev === 'Js' && /as tribos renova a alianca/i.test(p))
+    return `A simetria da renovação da aliança em Siquém espelha a convocação diante de Deus (A) ↔ a aliança renovada com pedra de testemunho (A'). No centro: "escolhei hoje a quem servireis" — a escolha é colocada antes que a resposta seja dada. O pivô é que Josué coloca a escolha sem pressionar a resposta: o povo poderia dizer não. A pedra de testemunho é outra Gilgal — memorial de uma decisão, não de um milagre. Na vida da igreja: cada geração precisa escolher por si mesma, em Siquém própria, a quem serve. E a declaração de Josué — "quanto a mim e à minha casa" — é modelo de liderança que influencia sem coagir.`;
+  // [284]
+  if (/morte de josue e eleazar/i.test(p))
+    return `A simetria da morte de Josué e Eleazar espelha a morte de Josué com 110 anos (A) ↔ Eleazar enterrado em Gibeá de Finéias (A'). No centro: os ossos de José enterrados em Siquém — a promessa feita no Egito cumprida séculos depois. O pivô é José: no encerramento do livro de Josué, o cumprimento de uma promessa do Gênesis. A herança da terra inclui os ossos dos que esperaram. Na vida da igreja: Deus cumpre promessas que atravessam gerações — e o cumprimento é registrado onde ninguém esperava. A morte de líderes fiéis não é o fim da história: é a conclusão de um capítulo e a confirmação de que Deus nunca esqueceu o que prometeu.`;
 
   // Juízes
-  if (/israel.*infidelidade|ciclo.*apostasia|jz.*abandono/i.test(p))
-    return `Juízes descreve um ciclo repetido: Israel abandona Deus, sofre opressão, clama, é libertado pelo juiz, e logo volta à apostasia. O padrão é perturbador por ser tão familiar. Na vida real: crescimento espiritual não é linear — há ciclos de queda e restauração. O que importa não é nunca cair, mas reconhecer o padrão e não se resignar a ele.`;
-  if (/otoniel|eude|sangar|juiz menor/i.test(p))
-    return `Os juízes menores aparecem como flashes breves na narrativa — pouco texto, muito silêncio. Mas cada um foi instrumento de Deus em seu tempo. Na vida real: nem todo ministério tem grande visibilidade. Ser fiel no que Deus confiou, no tempo dado, já é suficiente.`;
-  if (/debora.*baraque|cantaro.*debora/i.test(p))
-    return `Débora, profetisa e juíza, lidera Israel numa época em que os homens hesitam. Baraque recusa ir sem ela. A vitória é real, mas a honra da batalha fica com uma mulher — Jaele. Na vida real: Deus levanta líderes onde e quando quer, independente das expectativas de gênero ou cultura. A questão é quem confia e quem age.`;
-  if (/gideao.*chamado|chamado de gideao/i.test(p))
-    return `Gideão está debulhando trigo escondido quando o anjo o chama de "homem valente". Ele objeta: "Minha família é a mais pobre e sou o menor." Deus ignora as objeções e repete o chamado. Na vida real: Deus não chama os que se julgam suficientes; Ele chama os que reconhecem sua insuficiência — porque aí a glória da vitória pertence claramente a Ele.`;
-  if (/velo.*gideao|sinal.*velo|gideao.*ovelha/i.test(p))
-    return `Gideão pede dois sinais do velo de lã antes de obedecer. Deus atende às duas pedidos — mas depois reduz o exército de 32 mil para 300. Na vida real: Deus é paciente com nossas dúvidas, mas não nos deixa confundir confirmação com conforto. O exército pequeno deixa claro: quando a vitória vier, todo mundo saberá de quem ela é.`;
-  if (/sansao.*dalila|cabelo.*sansao|dalila/i.test(p))
-    return `Sansão é traído pela mulher que amou, seus olhos são arrancados e ele é acorrentado. Mas o texto registra: "o cabelo da sua cabeça começou a crescer de novo." O juiz mais problemático de Juízes tem sua maior vitória no fim, cego e em correntes. Na vida real: Deus pode usar até os momentos de maior fracasso para seu propósito — mas isso não é licença para o pecado, é testemunho da graça.`;
-  if (/crime de gibea|levita.*concubina|guerra.*benjamin/i.test(p))
-    return `O livro termina com o pior dos crimes — violência brutal, guerra civil, quase extinção de Benjamim. O refrão final: "Naqueles dias não havia rei em Israel; cada um fazia o que parecia reto aos seus próprios olhos." Na vida real: quando a autoridade de Deus é rejeitada, não há liberdade — há caos. A autonomia sem Deus não é liberdade; é ausência de norte.`;
+  // [285]
+  if (/de israel fracasso a completo conquista de canaa/i.test(p))
+    return `A simetria do fracasso de Israel espelha Judá e Simeão com vitórias iniciais (A) ↔ Dã recuado para a montanha (A'). No centro: Bete-El tomado por traição interna — não pela força, mas pela informação de um desertor. O pivô é a descida progressiva: a narrativa começa com vitórias parciais e termina com regressão. Cada tribo falha um pouco mais do que a anterior. Na vida da igreja: o compromisso parcial com a santidade não estabiliza — regride. Cada concessão ao que deveria ser expulso cria raízes que a próxima geração pagará. O mapa do fracasso de Israel é lição de anatomia espiritual: a obediência incompleta não é virtude moderada, é início de apostasia.`;
+  // [286]
+  if (/de israel infidelidade/i.test(p))
+    return `A simetria da infidelidade de Israel espelha o anjo em Boquim (A) ↔ Israel vivendo entre cananeus e servindo seus deuses (A'). No centro: o ciclo dos juízes — o padrão recorrente: pecado, opressão, clamor, libertação, recaída. O pivô é que o ciclo é descrito não como história passada, mas como lição metodológica: cada juiz executará o mesmo padrão. Na vida da igreja: reconhecer o padrão é a metade da libertação. O ciclo não é inevitável — é interrompido quando o clamor é acompanhado de arrependimento genuíno, não apenas de desconforto. Boquim — "o lugar do choro" — é onde o ciclo pode ser quebrado.`;
+  // [287]
+  if (/otoniel/i.test(p))
+    return `A simetria de Otoniel espelha Israel fazendo o mal (A) ↔ a terra descansando quarenta anos (A'). No centro: Otoniel levantado — o Espírito veio sobre ele. O pivô é a brevidade: o primeiro juiz recebe a narrativa mais condensada. O Espírito vem, a vitória acontece, a terra descansa. Sem drama, sem vacilação, sem desvios. Na vida da igreja: a fidelidade silenciosa de Otoniel é modelo que o texto preserva precisamente por não ter história complicada. Não é a narrativa mais dramática — é a mais limpa. Há ministérios que Deus usa sem que a história deles caiba num romance.`;
+  // [288]
+  if (/eude/i.test(p))
+    return `A simetria de Eúde espelha dezoito anos de opressão de Moabe (A) ↔ Moabe subjugado, terra descansando oitenta anos (A'). No centro: Eúde mata Eglom no aposento privado — a cena mais íntima e mais brutal de Juízes. O pivô é a espada de dois gumes escondida na coxa direita: Eúde usa a surpresa e a ineficiência dos servos de Eglom. Na vida da igreja: Deus usa estratégias que não constam nos manuais de guerra. Eúde não tinha exército — tinha coragem e clareza de missão. O maior período de descanso em Juízes (oitenta anos) nasce da ação mais solitária registrada no livro.`;
+  // [289]
+  if (/sangar/i.test(p))
+    return `A simetria de Sangar espelha o seu nome e origem (A) ↔ "e também livrou Israel" (A'). No centro: feriu seiscentos filisteus com uma aguilhada de bois. O pivô é o instrumento: não uma espada, não um exército — uma ferramenta agrícola. Na vida da igreja: Sangar não tinha armamento militar — tinha o que estava em sua mão. A libertação de Israel veio de um agricultor com o instrumento do seu trabalho diário. O que está na mão de cada pessoa, quando consagrado ao Senhor, pode liberar uma nação. Deus não pede ferramentas extraordinárias — pede coragem de usar o ordinário.`;
+  // [290]
+  if (/debora e baraque/i.test(p))
+    return `A simetria de Débora e Baraque espelha Jabim oprimindo por vinte anos (A) ↔ Jabim destruído (A'). No centro: "o Senhor entregará Sísera nas mãos de uma mulher" — a profecia muda a narrativa antes da batalha. O pivô é a recusa de Baraque: ele vai apenas se Débora for. A consequência é que a honra da vitória passa para Jaele. Na vida da igreja: a hesitação diante do chamado não cancela a missão de Deus — transfere a glória. Débora não repreende Baraque com amargura — declara as consequências com clareza. O Senhor cumpre Seu propósito com ou sem a coragem dos que hesitam.`;
+  // [291]
+  if (d.livroAbrev === 'Jz' && /o cantico de debora/i.test(p))
+    return `A simetria do Cântico de Débora espelha "bendizei ao Senhor — líderes que se ofereceram" (A) ↔ "mãe de Sísera esperando em vão" (A'). No centro: os astros lutaram contra Sísera — o cosmos se mobiliza para a batalha do Senhor. O pivô é o contraste final: enquanto Débora e Baraque cantam vitória, a mãe de Sísera aguarda à janela o que nunca chegará. Na vida da igreja: o mesmo evento é vitória para uns e devastação para outros. O cântico não é cruel — é honesto sobre o que o julgamento de Deus significa para os dois lados. A janela vazia de Sísera é lembrete de que o lado errado da batalha de Deus tem consequências reais.`;
+  // [292]
+  if (/o chamado de gideao/i.test(p))
+    return `A simetria do chamado de Gideão espelha sete anos de opressão de Midiã (A) ↔ o altar "O Senhor é paz" (A'). No centro: o anjo chama Gideão debaixo do carvalho — "homem valente" dito a quem está escondido. O pivô é o nome antes da realidade: Deus chama Gideão pelo que ele se tornará, não pelo que está fazendo no momento. Na vida da igreja: Deus frequentemente fala ao chamado com a linguagem do destino, não da circunstância presente. "Homem valente" pronunciado sobre quem debulha trigo escondido não é ironia — é profecia. O chamado de Deus cria o que nomeia.`;
+  // [293]
+  if (/gideao destroi o altar de baal/i.test(p))
+    return `A simetria da destruição do altar espelha a ordem divina de derrubar o altar do pai (A) ↔ "que Baal se defenda" — o nome Jerubaal (A'). No centro: os homens da cidade exigem a morte de Gideão. O pivô é o pai de Gideão defendendo o filho: "se Baal é deus, defenda-se por si mesmo." A lógica irônica do pai vira teologia. Na vida da igreja: ídolos que precisam ser defendidos por seus adoradores não são deuses. O verdadeiro Deus defende a si mesmo. O nome Jerubaal — "que Baal contenda" — se tornará testemunho da impotência do ídolo toda vez que Gideão for chamado.`;
+  // [294]
+  if (/o sinal do velo/i.test(p))
+    return `A simetria do sinal do velo espelha os midianitas reunidos e o Espírito revestindo Gideão (A) ↔ o sinal inverso confirmando o chamado (A'). No centro: o velo cheio de orvalho — o sinal pedido é dado. O pivô é a paciência de Deus com a dúvida: dois sinais contraditórios atendidos sem repreensão. Na vida da igreja: Deus é mais paciente com nossas dúvidas do que imaginamos — mas a mesma paciência que atende ao pedido do velo reduz o exército de 32 mil para 300. A confirmação não cancela o custo da obediência. O sinal dado é prévia da batalha; a batalha pequena é prévia da glória de Deus.`;
+  // [295]
+  if (/gideao surpreende e derrota os midianitas/i.test(p))
+    return `A simetria da derrota dos midianitas espelha o exército reduzido de 32.000 para 300 (A) ↔ Efraim capturando e matando os príncipes (A'). No centro: "cada espada para o Senhor e para Gideão" — os cântaros quebrados e as tochas reveladas. O pivô é a redução: Deus não quer 32.000 nem 10.000 — quer 300. Na vida da igreja: a estratégia de Deus frequentemente ofende o senso militar comum. Quando a vitória vier com trezentos homens e cântaros quebrados, a glória não terá endereço humano. A redução do exército não é fraqueza — é clareza teológica antecipada.`;
+  // [296]
+  if (/gideao e efraim/i.test(p))
+    return `A simetria de Gideão e Efraim espelha a contenda de Efraim (A) ↔ a ira acalmando (A'). No centro: a resposta suave de Gideão — "o rebusco de Efraim é melhor que a vindima de Abiezer." O pivô é a sabedoria da resposta: Gideão poderia ter reivindicado autoridade e criado guerra civil. Em vez disso, honrou o que Efraim fez. Na vida da igreja: conflitos ministeriais que poderiam dividir comunidades são desarmados por quem escolhe honrar em vez de reivindicar. A resposta suave que quebra o osso (Pv 25.15) não é fraqueza — é a mais sofisticada forma de liderança.`;
+  // [297]
+  if (/de gideao vinganca/i.test(p))
+    return `A simetria da vingança de Gideão espelha Sucote recusando provisão (A) ↔ Gideão matando os dois reis (A'). No centro: os anciãos de Sucote punidos com espinhos — a recusa de hospitalidade cobrada com rigor. O pivô é a memória: Gideão prometeu voltar. A ameaça feita a Sucote e Penuel não foi esquecida. Na vida da igreja: há um lado da justiça de Deus que recorda o que foi prometido — e cumpre. Sucote apostou que Gideão não voltaria. A punição com espinhos não é crueldade arbitrária — é o preço exato da recusa de solidariedade com o povo de Deus em luta.`;
+  // [298]
+  if (/de gideao idolatria/i.test(p))
+    return `A simetria da idolatria de Gideão espelha Israel pedindo a Gideão que reine (A) ↔ a terra tendo paz nos dias de Gideão (A'). No centro: Gideão faz éfode em Ofra — Israel se prostitui diante dele. O pivô é a contradição: Gideão recusa o reino mas fabrica um objeto de adoração. Ele nega o título mas aceita o papel. Na vida da igreja: é possível recusar o poder formal enquanto se exerce o controle informal por meio de objetos, símbolos ou estruturas que centralizam a devoção de outros. O éfode de Gideão não foi construído com má intenção — mas tornou-se armadilha. Intenção boa não protege contra consequências idolátricas.`;
+  // [299]
+  if (/morte de gideao/i.test(p))
+    return `A simetria da morte de Gideão espelha a família numerosa e a vida doméstica (A) ↔ Israel se prostituindo a Baalins — não lembrando a misericórdia (A'). No centro: Gideão morre em boa velhice — o melhor fim possível para um juiz. O pivô é a brevidade da memória: Gideão não terminou de ser enterrado quando Israel voltou à prostituição espiritual. Na vida da igreja: a gratidão espiritual tem vida curta quando não é cultivada ativamente. A geração que viveu sob Gideão e esqueceu o Senhor não era necessariamente mais má — era simplesmente humana sem disciplina de memória. Rituais de memória não são opcional — são vacinas contra a ingratidão.`;
+  // [300]
+  if (/a queda de abimeleque/i.test(p))
+    return `A simetria da queda de Abimeleque espelha os setenta meios-irmãos mortos sobre uma pedra (A) ↔ uma mulher jogando pedra de moinho sobre a cabeça de Abimeleque (A'). No centro: Deus enviou espírito maligno entre Abimeleque e Siquém — o retribuidor da violência usa a própria aliança que produziu o poder. O pivô é a simetria do julgamento: quem subiu pelo derramamento de sangue sobre pedra morre por pedra, pela mão de uma mulher. Na vida da igreja: o julgamento de Deus frequentemente usa a mesma estrutura do pecado para execução da punição. A parábola de Jotão — a espinheira reinando sobre as árvores — é lida como absurda, mas é exatamente o que ocorre quando a liderança é buscada pelo assassinato.`;
+  // [301]
+  if (d.livroAbrev === 'Jz' && /tola/i.test(p))
+    return `A simetria de Tolá espelha o seu levantamento para salvar Israel (A) ↔ vinte e três anos de julgamento e morte em Samir (A'). No centro: habitou em Samir na montanha de Efraim — a localização como dado teológico. O pivô é a contenção da narrativa: Tolá não tem história de batalha, não tem crise, não tem falha registrada. Simplesmente foi levantado, habitou no lugar dado, julgou, morreu. Na vida da igreja: nem todo chamado tem epopeia. A fidelidade silenciosa que ocupa o lugar designado por anos sem drama é tão honrada quanto a batalha de Gideão — simplesmente não ocupa o mesmo espaço na narrativa humana.`;
+  // [302]
+  if (d.livroAbrev === 'Jz' && /jair/i.test(p))
+    return `A simetria de Jair espelha os vinte e dois anos de julgamento (A) ↔ a morte em Camom (A'). No centro: trinta filhos em trinta jumentos com trinta cidades — a simetria da abundância. O pivô é o número trinta: filhos, jumentos, cidades — a prosperidade de Jair é representada em tríades. Na vida da igreja: a bênção material de um juiz não é condenação nem celebração — é dado. O texto não critica nem elogia a prosperidade de Jair. O que Deus julga é a fidelidade, não a condição econômica. Jair exerceu seu chamado e foi enterrado. Isso é suficiente para o registro.`;
+  // [303]
+  if (/opressao por amonitas/i.test(p))
+    return `A simetria da opressão por amonitas espelha Israel servindo a oito deuses (A) ↔ "sua alma ficou angustiada por causa da miséria de Israel" (A'). No centro: Israel clama — Deus responde "ide clamar aos deuses que escolhestes." O pivô é a recusa divina: pela primeira vez no ciclo dos juízes, Deus não responde imediatamente com misericórdia — Ele recusa com ironia. Na vida da igreja: há momentos em que Deus permite que a consequência de nossas escolhas seja o único professor disponível. A recusa de Deus não é abandono — é pedagogia severa. O retorno genuíno de Israel — removendo os deuses — é o que finalmente move a angústia de Deus.`;
+  // [304]
+  if (/jefte/i.test(p))
+    return `A simetria de Jefté espelha o ilegítimo expulso pelos meios-irmãos (A) ↔ vitória sobre amonitas e seis anos de julgamento (A'). No centro: o voto de Jefté — "o que sair primeiro" — a promessa que nenhum triunfo pode desfazer. O pivô é a filha: saiu ela primeiro. O voto foi cumprido. Na vida da igreja: as promessas feitas a Deus têm peso que o sucesso não anula. Jefté venceu a batalha e perdeu a filha. O texto não resolve a tensão — apenas a apresenta. O ilegítimo que se tornou líder descobriu que a vitória militar não é o capítulo final de sua história. O que prometemos importa mais do que o que conquistamos.`;
+  // [305]
+  if (/ibsa/i.test(p))
+    return `A simetria de Ibsã espelha Ibsã de Belém julgando Israel (A) ↔ sete anos de julgamento (A'). No centro: trinta filhos e trinta filhas — alianças externas para todos. O pivô é a estratégia matrimonial: Ibsã teceu trinta alianças externas para filhos e filhas, garantindo presença de Israel nas famílias vizinhas. Na vida da igreja: há sabedoria que se expressa não em batalhas mas em alianças bem tecidas. O juiz que forma vínculos com o mundo ao redor não é comprometedor da pureza — pode estar exercendo missão. O critério é quem está influenciando quem na aliança.`;
+  // [306]
+  if (/elom/i.test(p))
+    return `A simetria de Elom espelha os dez anos de julgamento (A) ↔ "julgou Israel" (A'). No centro: morreu em Aijalom — o lugar registrado é o único dado além do tempo e tribo. O pivô é o mínimo: tribo, tempo, lugar de sepultura. Nada mais. Na vida da igreja: Elom é o juiz mais anônimo de todos. O texto não tem sequer uma narrativa de conflito. Simplesmente foi, julgou, morreu. Há uma dignidade no serviço que não deixa rastros espetaculares — apenas décadas de fidelidade e um lugar de sepultura que alguém achou digno de registrar.`;
+  // [307]
+  if (/abdao/i.test(p))
+    return `A simetria de Abdão espelha o julgamento de Israel (A) ↔ oito anos de julgamento (A'). No centro: quarenta filhos e trinta netos em setenta jumentos — a prosperidade mais numerosa dos juízes menores. O pivô é o crescimento: Abdão tem mais herdeiros montados do que qualquer outro juiz menor. Na vida da igreja: a prosperidade de Abdão não é garantia de fidelidade das gerações seguintes — o livro de Juízes já demonstrou isso repetidamente. Mas o texto não condena. Setenta jumentos com setenta herdeiros é imagem de abundância que o juiz não pediu esconder. A bênção visível pode ser testemunho da provisão de Deus.`;
+  // [308]
+  if (/a profecia de de sansao nascimento/i.test(p))
+    return `A simetria do nascimento de Sansão espelha Israel entregue por quarenta anos (A) ↔ Sansão nascendo com o Espírito começando a movê-lo (A'). No centro: o anjo reaparece com o nome maravilhoso — "meu nome é maravilhoso." O pivô é o nome não revelado: o mensageiro que faz a coisa maravilhosa não se nomeia para que a atenção fique em Quem envia. Na vida da igreja: os melhores intercessores são frequentemente os que não revelam seus nomes. O serviço que recusa a celebração pessoal aponta para o Senhor. O Espírito que começa a mover Sansão já na infância é o mesmo que se moverá nele nos momentos mais imprevisíveis da narrativa.`;
+  // [309]
+  if (/de sansao casamento/i.test(p))
+    return `A simetria do casamento de Sansão espelha o desejo pela filha filisteia (A) ↔ Sansão matando trinta filisteus e a noiva sendo dada a outro (A'). No centro: a charada do mel no leão — "do que come saiu comida, do que é forte saiu doçura." O pivô é que a charada só existe porque Sansão tocou o cadáver impuro — violação do voto nazireno que gerou a "sabedoria" da charada. Na vida da igreja: às vezes o que parece astúcia intelectual nasce de uma concessão espiritual anterior. A fonte da charada era uma transgressão. O mel era real, mas tinha uma origem que Sansão preferia não mencionar à família.`;
+  // [310]
+  if (/sansao e tres cem raposas/i.test(p))
+    return `A simetria de Sansão e as trezentas raposas espelha o retorno de Sansão à esposa dada a outro (A) ↔ "já que fizestes assim — só me deterei depois da vingança" (A'). No centro: trezentas raposas com tochas destroem as searas, vinhas e olivais dos filisteus. O pivô é a proporção: a ofensa pessoal de Sansão produziu destruição econômica coletiva. Na vida da igreja: o pecado raramente é contido em quem o pratica. A reação de Sansão — legítima na sua percepção — incendiou o sustento de uma população inteira. A espiral de vingança nunca para onde iniciou: Sansão e os filisteus escalarão até o fim do livro.`;
+  // [311]
+  if (/sansao derrota filisteus/i.test(p))
+    return `A simetria da derrota dos filisteus por Sansão espelha os filisteus subindo a Judá para prendê-lo (A) ↔ Sansão julgando Israel vinte anos (A'). No centro: o Espírito vem — Sansão mata mil com a queixada de jumento. O pivô é a sede depois da vitória: o herói que matou mil tem sede e quase morre. Deus abre a rocha. Na vida da igreja: mesmo os que o Espírito usa extraordinariamente têm necessidades ordinárias. A sede de Sansão após a queixada não é fraqueza vergonhosa — é humana. E Deus não critica a sede — Ele abre a rocha. O mesmo Deus que usa o extraordinário cuida do ordinário.`;
+  // [312]
+  if (/sansao e dalila/i.test(p))
+    return `A simetria de Sansão e Dalila espelha Sansão em Gaza — carregando as portas (A) ↔ "Sansão não sabe que o Senhor o abandonou" (A'). No centro: "minha força está no cabelo — sou nazireno desde o ventre de minha mãe." O pivô é a confissão: Sansão cedeu após três resistências porque Dalila o pressionou "todos os dias" até sua alma não aguentar mais. Na vida da igreja: a erosão da fidelidade raramente acontece num momento único — é pressão diária acumulada. Sansão não capitulou de uma vez; capitulou exausto. E o texto mais ominoso do livro: "não sabia que o Senhor o havia deixado." A ausência de Deus nem sempre é imediatamente perceptível.`;
+  // [313]
+  if (/de sansao morte/i.test(p))
+    return `A simetria da morte de Sansão espelha os filisteus festejando — "Dagom entregou nosso inimigo" (A) ↔ Sansão matando mais na morte do que em vida (A'). No centro: "lembra-te de mim, Senhor — fortifica-me uma última vez." O pivô é a oração final: cego, acorrentado, humilhado, Sansão ora. É a oração mais honesta do juiz mais problemático — sem promessa de reforma, sem voto de mudança, apenas "lembra-te de mim." Na vida da igreja: não há momento tarde demais para se virar ao Senhor. A maior vitória de Sansão acontece quando ele nada mais tem — sem visão, sem força própria, sem futuro visível. O Senhor que se lembra de Sansão é o mesmo que se lembra de nós.`;
+  // [314]
+  if (/a migracao de da/i.test(p))
+    return `A simetria da migração de Dã espelha Mica fazendo ídolo de prata — culto doméstico (A) ↔ Dã conquistando Laís e instalando o ídolo (A'). No centro: os danitas tomam o ídolo e o levita de Mica — religião portátil para a nova conquista. O pivô é o levita: contratado por Mica, recrutado pelos danitas, o sacerdócio sem fidelidade segue o poder mais forte. Na vida da igreja: um ministério que serve quem paga melhor é símbolo de uma religião que valida poder em vez de desafiá-lo. O ídolo de Mica não nasceu com intenção maliciosa — mas a religião doméstica sem fundamento na revelação é a primeira etapa de uma idolatria que migra junto com os seus donos.`;
+  // [315]
+  if (/o crime de gibea/i.test(p))
+    return `A simetria do crime de Gibeá espelha o levita e a concubina — violência em Gibeá (A) ↔ provisão de esposas para Benjamim — "cada um fazia o que parecia certo" (A'). No centro: derrota de Israel nos dois primeiros dias — clamor e consulta. O pivô é a consulta: Israel consultou o Senhor após a primeira derrota, após a segunda, e somente na terceira o resultado mudou. Na vida da igreja: o crime de Gibeá é o espelho final de Juízes — o que começa com "não havia rei" termina em violência que espelha Sodoma. A frase conclusiva do livro não é sentença sobre falta de monarquia — é diagnóstico de ausência de Senhor. O rei que Israel precisava não era Saul; era o Deus que eles continuaram a ignorar.`;
 
   // Rute
   if (/familia.*elimeleque|moabe.*naomi|naomi.*rute/i.test(p))
@@ -2236,6 +2392,196 @@ function gerarOracao(d: DiaDevocional): string {
   // [253]
   if (/israel lamenta a morte de moises/i.test(p))
     return `Espírito Santo que unes os chamados, quando Moisés partiu Josué estava pronto — ungido com o mesmo Espírito. A obra de Deus não para com a morte de um servo. Que eu contribua para formar os Josués da próxima geração com a mesma fidelidade com que Moisés treinou o seu. Amém.`;
+
+  // ── JOSUÉ ────────────────────────────────────────────────────────────
+  // [254]
+  if (/de deus comissao a josue/i.test(p))
+    return `Senhor, tu és o mesmo Deus que comissionaste Josué — e o "sê forte e corajoso" que ecoa no início e no fim da perícope é dirigido também a mim hoje. Que eu não espere me sentir corajoso para obedecer — que eu aja a partir de Quem me envia, não de como me sinto. Amém.`;
+  // [255]
+  if (/espioes enviado a jerico/i.test(p))
+    return `Pai, tu usaste Raabe — de fora, de passado complicado — para confirmar a tua promessa a Israel. Guarda-me de subestimar de onde pode vir a palavra de fé que preciso ouvir. Que eu reconheça a tua voz mesmo quando ela chega por vozes inesperadas. Amém.`;
+  // [256]
+  if (/israel atravessa jordao/i.test(p))
+    return `Deus que divides as águas, a arca entrou antes do povo — a presença foi à frente. Que eu não avance em nenhuma direção onde a tua presença não foi primeiro. E quando as águas recuarem diante da arca, que eu atravesse sem olhar para trás. Amém.`;
+  // [257]
+  if (/doze pedras coloca em gilgal/i.test(p))
+    return `Senhor que ordenas memoriais, ajuda-me a erguer pedras de Gilgal na minha vida — marcos concretos que recordam o que tu fizeste, para que eu possa contar às gerações que vêm depois de mim. Que a minha memória espiritual seja fértil o suficiente para sustentar a fé dos que ainda não nasceram. Amém.`;
+  // [258]
+  if (/novo geracao circuncidado/i.test(p))
+    return `Senhor, há marcas de identidade que a minha geração precisa receber ou renovar. Que eu não chegue à herança prometida carregando a vergonha de uma geração anterior não resolvida. "Hoje removi de vós a vergonha do Egito" — que essa palavra seja verdadeira também em mim. Amém.`;
+  // [259]
+  if (d.livroAbrev === 'Js' && /a pascoa/i.test(p))
+    return `Pai, o maná cessou em Gilgal porque a terra estava pronta para prover. Ensina-me a reconhecer quando uma forma de tua provisão foi substituída por outra — e a receber a nova sem saudade paralisante da antiga. Cada estação tem o seu maná e o seu produto da terra. Amém.`;
+  // [260]
+  if (/de josue visao/i.test(p))
+    return `Senhor dos exércitos, como Josué tirou o calçado diante do Comandante, que eu me aproxime das minhas batalhas com adoração antes de estratégia. A questão não é se estás do meu lado — é se estou sob o teu comando. Que eu faça a pergunta certa antes de cada desafio. Amém.`;
+  // [261]
+  if (/jerico levado e destruiu/i.test(p))
+    return `Deus que derrubas muros sem catapultas, há resistências na minha vida que não cedem à força humana. Dá-me fidelidade para o sétimo dia — quando ainda não vejo resultado mas a obediência ainda é requerida. E que a graça que poupou Raabe dentro do julgamento seja lembrada quando eu olhar para quem parece condenado. Amém.`;
+  // [262]
+  if (/maldicao de josue/i.test(p))
+    return `Senhor que guardas as tuas advertências, as maldições proféticas não se dissipam com o tempo — Hiel descobriu isso. Que eu trate com reverência as interdições da tua Palavra, mesmo quando parecem arcaicas ou exageradas para quem não viu a Jericó que caiu. Amém.`;
+  // [263]
+  if (/o pecado de aca e punicao/i.test(p))
+    return `Pai que vês o que está escondido, o anátema de Acã não era apenas seu — afetou o acampamento inteiro. Que eu não prive a minha comunidade de vitória por guardar para mim o que pertence a ti. Busco a transparência diante de ti e diante dos meus irmãos, antes que o vale de Acor se torne necessário. Amém.`;
+  // [264]
+  if (/ai capturou por um estratagema e destruiu/i.test(p))
+    return `Senhor, Josué estendeu o dardo e não abaixou antes de a vitória estar completa — como Moisés com as mãos erguidas no Refidim. Sustenta a minha postura de fé quando eu quero baixar os braços antes do tempo. Que a obediência sustentada até o fim seja a minha parte na batalha que tu já declaraste ganha. Amém.`;
+  // [265]
+  if (/josue renova a alianca/i.test(p))
+    return `Deus que gravaste a lei em pedra para todos verem, que a tua Palavra seja proclamada entre nós com a mesma publicidade — sem omitir as bênçãos nem as maldições. Que a nossa comunidade ouça a lei inteira, inclua crianças e estrangeiros, e responda com o amém que custa algo. Amém.`;
+  // [266]
+  if (/gibeonitas salvar eles mesmos por ardil/i.test(p))
+    return `Senhor, Israel firmou aliança sem te consultar — e o vínculo foi irreversível. Guarda-me de decisões rápidas em áreas de consequências longas. Que eu aprenda a desacelerar diante de alianças, parcerias e comprometimentos — especialmente quando a urgência parece óbvia. Amém.`;
+  // [267]
+  if (/cinco reis derrotou/i.test(p))
+    return `Deus que suspendes o sol quando a batalha exige, tu providencias o tempo necessário para completar o que iniciaste. Que a minha oração seja audaciosa como a de Josué — não por presumir, mas porque tenho memória de milagres anteriores que me autorizam a pedir com ousadia. Amém.`;
+  // [268]
+  if (/unido reis de do norte canaa derrotou/i.test(p))
+    return `Senhor que declaras a vitória na véspera da batalha, que eu aprenda a receber a tua promessa antes de entrar no campo. "Amanhã eu os entregarei" — que essa lógica de fé forme o meu avanço: primeiro a promessa, depois a ação, não o contrário. Amém.`;
+  // [269]
+  if (/resumo de de josue conquistas/i.test(p))
+    return `Pai, a terra descansou depois da conquista — e o descanso era o objetivo, não a guerra. Que eu não trate o conflito espiritual como estado permanente, mas como o caminho para a herança habitada em paz. Os anaquins que paralisaram gerações foram removidos — que eu entre no descanso que tu preparaste. Amém.`;
+  // [270]
+  if (/os reis conquistou por moises e josue/i.test(p))
+    return `Senhor que registras as duas metades da mesma missão, lembra-me que o que estou fazendo agora foi começado antes de mim e será completado depois. Que eu sirva ao meu capítulo com fidelidade, sem precisar que toda a história caiba no meu mandato. Amém.`;
+  // [271]
+  if (/as partes de canaa ainda nao conquistadas/i.test(p))
+    return `Deus que completas o que nenhum líder humano termina, Josué foi velho e ainda havia terra por conquistar — e isso não foi falha. Que eu não carregue a angústia do que não concluí, sabendo que tu continuas a obra depois que minha estação termina. A promessa não expira com o servo. Amém.`;
+  // [272]
+  if (/o territorio a leste do jordao/i.test(p))
+    return `Senhor que és herança dos levitas, que eu nunca trate a tua presença como consolação de quem não recebeu terra. Tu és a melhor parte. Que o chamado que me privou de algumas acumulações seja vivido com a certeza de que "o Senhor é a minha herança" é a declaração mais rica que existe. Amém.`;
+  // [273]
+  if (/o territorio de ruben, gade e manasses/i.test(p))
+    return `Pai, as tribos recebem terra e os levitas recebem a ti — e o texto repete isso duas vezes no mesmo capítulo como se fosse o versículo mais importante. Que eu nunca inveje as heranças materiais dos outros quando a minha herança é a tua presença. Amém.`;
+  // [274]
+  if (/a distribuicao de territorio oeste de jordao/i.test(p))
+    return `Senhor que distribuís por sorte diante de ti, que as decisões sobre herança e partilha na minha comunidade sejam feitas diante de ti — não pela pressão dos mais fortes ou pela estratégia dos mais espertos. Que a sorte de Siló seja o nosso modelo: presença de Deus antes de divisão de porções. Amém.`;
+  // [275]
+  if (/o territorio de juda/i.test(p))
+    return `Deus de Calebe, ele tinha oitenta e cinco anos e pediu a montanha dos anaquins. Guarda-me de pedir o vale fácil quando há montanha prometida esperando por quem tem fé para pedi-la. Que a força que tu deste não seja guardada para uma batalha que nunca chego a travar. Amém.`;
+  // [276]
+  if (/o territorio de efraim e manasses/i.test(p))
+    return `Senhor que desafias ao bosque, que eu não reclame da porção pequena quando há território por desbravar que ainda não abri. Antes de pedir mais, que eu tome o que já foi dado. E que a petição das filhas de Zelofeade me lembre que a herança não é apenas para quem tem voz mais alta. Amém.`;
+  // [277]
+  if (/os territorios das tribos restantes/i.test(p))
+    return `Pai que distribuís em Siló — diante da tenda do encontro —, que as decisões de partilha da nossa comunidade aconteçam na presença de Deus antes de acontecerem no papel. A liturgia antes da logística. A adoração antes da administração. Amém.`;
+  // [278]
+  if (d.livroAbrev === 'Js' && /as cidades de refugio/i.test(p))
+    return `Senhor das cidades de refúgio, tu as distribuíste igualmente dos dois lados do Jordão para que o refugiado chegasse antes do vingador. Que a nossa comunidade seja acessível assim — próxima o suficiente para quem foge de seus próprios erros, sem exigir que se mereça a entrada antes de entrar. Amém.`;
+  // [279]
+  if (/cidades distribuido a levitas/i.test(p))
+    return `Deus que espalhaste os levitas por quarenta e oito cidades em todas as tribos, que o ministério da tua Palavra nunca fique concentrado num único centro. Que eu contribua para uma presença ministerial distribuída — instrução e intercessão em cada bairro, em cada tribo, em cada margem. E "nada falhou de todas as tuas boas promessas" — que eu viva da certeza disso. Amém.`;
+  // [280]
+  if (/as tribos do leste retornam a seu territorio/i.test(p))
+    return `Senhor, a missão pontual das tribos do leste terminou — mas o mandato de amar a ti e andar nos teus caminhos não termina depois que o encargo é cumprido. Guarda-me de tratar o discipulado como fase temporária que encerra quando o projeto termina. Amém.`;
+  // [281]
+  if (/o altar das tribos do leste/i.test(p))
+    return `Pai, o altar que quase causou guerra era na verdade um memorial. Antes de acusar, ajuda-me a perguntar. Antes de mobilizar confronto, ajuda-me a buscar a intenção. Que eu seja rápido para ouvir e lento para declarar apostasia no que ainda não entendi. Amém.`;
+  // [282]
+  if (/josue exorta o povo/i.test(p))
+    return `Senhor que combates por nós, a lógica de "um perseguirá mil" não é entusiasmo — é aritmética da aliança. Que eu nunca me intimide pela desproporção numérica quando estou sob a tua cobertura. E que a mesma seriedade com que recebo as bênçãos me faça levar a sério a advertência: a Palavra que cumpriu o bem cumprirá o mal se eu abandonar a aliança. Amém.`;
+  // [283]
+  if (d.livroAbrev === 'Js' && /as tribos renova a alianca/i.test(p))
+    return `Deus de Siquém, "escolhei hoje a quem servireis" — tu colocas a escolha sem garantir a resposta. Eu escolho a ti hoje, não por herança familiar nem por costume religioso, mas porque tu és o Deus que tirou Terá de Ur, que atravessou o Jordão e que nunca falhou com uma palavra. Quanto a mim, servirei ao Senhor. Amém.`;
+  // [284]
+  if (/morte de josue e eleazar/i.test(p))
+    return `Pai que lembras de promessas através das gerações, os ossos de José foram enterrados em Siquém — promessa do Gênesis cumprida no encerramento de Josué. Que eu viva com a certeza de que as promessas que recebi e não verei cumpridas em vida serão enterradas no lugar certo, no tempo certo, pelo Deus que nunca esquece. Amém.`;
+
+  // ── JUÍZES ───────────────────────────────────────────────────────────
+  // [285]
+  if (/de israel fracasso a completo conquista de canaa/i.test(p))
+    return `Senhor, o mapa do fracasso de Israel começa com vitórias parciais e termina em recuo. Guarda-me do compromisso incompleto que parece tolerável mas prepara a apostasia da geração seguinte. Que eu não deixe cananeus que deveriam ser expulsos porque a conquista parcial já parece suficiente. Amém.`;
+  // [286]
+  if (/de israel infidelidade/i.test(p))
+    return `Deus de Boquim, o ciclo que Juízes descreve é tão familiar que me assusta. Que eu reconheça o padrão na minha própria vida — não para me condenar, mas para interrompê-lo antes que a opressão seja necessária para me fazer clamar. Que o choro de Boquim aconteça antes da servidão, não por causa dela. Amém.`;
+  // [287]
+  if (/otoniel/i.test(p))
+    return `Senhor, a narrativa de Otoniel não tem drama — apenas obediência limpa, Espírito recebido, vitória e descanso. Que eu não desprezar a estação de fidelidade silenciosa. Nem todo chamado tem a história de Gideão. Que o meu seja fiel ao formato que tu determinaste para mim, sem inveja do formato mais dramático dos outros. Amém.`;
+  // [288]
+  if (/eude/i.test(p))
+    return `Pai, Eúde tinha uma espada de dois gumes e coragem para uma missão solitária. O maior período de descanso em Juízes nasceu da ação mais silenciosa. Usa o que está na minha mão — por mais improvável que pareça — para a libertação que só tu podes planejar. Amém.`;
+  // [289]
+  if (/sangar/i.test(p))
+    return `Senhor, Sangar tinha uma aguilhada de bois e libertou Israel. Que eu não aguarde ferramentas extraordinárias para exercer o chamado que tens para mim. O que está na minha mão hoje, consagrado a ti, pode ser suficiente para o que precisas fazer através de mim. Amém.`;
+  // [290]
+  if (/debora e baraque/i.test(p))
+    return `Deus que levantaste Débora quando os homens hesitavam, tu não esperas pelo líder ideal — levantas quem está disponível. Guarda-me da hesitação de Baraque, que transferiu a glória por medo. E quando for chamado a avançar, que eu avance sem exigir que alguém mais corajoso vá na frente. Amém.`;
+  // [291]
+  if (d.livroAbrev === 'Jz' && /o cantico de debora/i.test(p))
+    return `Senhor dos exércitos, os astros lutaram contra Sísera — o cosmos obedece quando tu entras na batalha. Que eu cante a vitória com honestidade: ela é gloriosa para quem está do teu lado e devastadora para o outro. Não posso suavizar o que o teu julgamento implica. Que o meu louvor seja tão honesto quanto o de Débora. Amém.`;
+  // [292]
+  if (/o chamado de gideao/i.test(p))
+    return `Pai, tu chamaste Gideão de "homem valente" quando ele estava escondido. Esse é o teu jeito: tu nomeias o que vamos ser antes de ser. Que eu receba hoje o nome que tu me dás — não o que a minha circunstância sugere — e que esse nome me mova a levantar do lagar onde me escondi. Amém.`;
+  // [293]
+  if (/gideao destroi o altar de baal/i.test(p))
+    return `Senhor, o pai de Gideão disse "que Baal se defenda por si mesmo" — e o ídolo não se defendeu. Que eu nunca gaste energia defendendo o que deveria defender a si mesmo. O verdadeiro Deus não precisa de minha proteção — precisa da minha obediência. E os ídolos que precisam de defensores já se denunciaram. Amém.`;
+  // [294]
+  if (/o sinal do velo/i.test(p))
+    return `Pai paciente, tu atendeste ao velo molhado e ao velo seco sem repreender Gideão. Obrigado pela tua paciência com as minhas dúvidas. E ajuda-me a entender que a confirmação que recebi não elimina o custo da obediência — o exército de 300 vinha logo depois dos sinais. Que eu receba a confirmação com gratidão e siga até a batalha reduzida. Amém.`;
+  // [295]
+  if (/gideao surpreende e derrota os midianitas/i.test(p))
+    return `Deus que reduziste 32.000 para 300 para que a vitória não tivesse endereço humano, que eu nunca confie nos números quando tu me chamaste para algo que só pode ser explicado por ti. Que os cântaros quebrados e as tochas reveladas sejam o meu testemunho: o que brilha veio de dentro de um vaso fraco. Amém.`;
+  // [296]
+  if (/gideao e efraim/i.test(p))
+    return `Senhor da resposta suave, Gideão desarmou Efraim com honra em vez de autoridade. Que eu aprenda a honrar antes de reivindicar. Em conflitos ministeriais, a palavra que afirma a contribuição do outro é mais poderosa do que a defesa dos próprios direitos. Que eu seja mais Gideão do que Efraim nos desentendimentos que encontrar. Amém.`;
+  // [297]
+  if (/de gideao vinganca/i.test(p))
+    return `Pai da justiça, Sucote apostou que Gideão não voltaria — e errou. Que eu não aposte na impunidade do que foi prometido pelo teu Espírito. E que eu seja a pessoa que cumpre o que disse, no tempo que prometeu, sem esquecer nem o incentivo nem a advertência que pronunciou. Amém.`;
+  // [298]
+  if (/de gideao idolatria/i.test(p))
+    return `Senhor, Gideão recusou o reino mas fez um éfode — e Israel se prostituiu diante dele. Guarda-me dos objetos, símbolos e estruturas que centralizam a devoção dos outros em mim sem que eu os tenha pedido explicitamente. A boa intenção não protege contra o resultado idolátrico. Que eu seja instrumento que aponta para ti, não para onde se pára. Amém.`;
+  // [299]
+  if (/morte de gideao/i.test(p))
+    return `Pai, Israel esqueceu o Senhor antes de Gideão ser enterrado. Que eu não dependa de um líder humano para manter a minha fidelidade — porque líderes morrem. Que a minha gratidão espiritual seja cultivada ativamente, não apenas reativa à presença dos que me inspiram. A memória de Deus é responsabilidade minha, não de quem está ao meu lado. Amém.`;
+  // [300]
+  if (/a queda de abimeleque/i.test(p))
+    return `Deus que julgas com simetria, Abimeleque matou sobre uma pedra e morreu por uma pedra — lançada por uma mulher. Que eu nunca esqueça que o mesmo instrumento do meu pecado pode tornar-se instrumento do meu julgamento. E que a parábola de Jotão me faça desconfiar de qualquer liderança que sobe pelo derramamento do sangue dos irmãos. Amém.`;
+  // [301]
+  if (d.livroAbrev === 'Jz' && /tola/i.test(p))
+    return `Senhor que honras a fidelidade silenciosa, Tolá habitou em Samir, julgou vinte e três anos e morreu. Sem batalha registrada, sem crise narrada. Que eu não desprezar a estação em que minha vocação é simplesmente ocupar o lugar designado com constância. O registro silencioso também é honrado por ti. Amém.`;
+  // [302]
+  if (d.livroAbrev === 'Jz' && /jair/i.test(p))
+    return `Pai, Jair teve trinta filhos, trinta jumentos e trinta cidades — e o texto não condena nem celebra. Tu julgaste a sua fidelidade, não a sua conta bancária. Que eu não use a prosperidade nem a pobreza como termômetro de aprovação divina. O que tu perguntas é se ocupei o meu chamado. Amém.`;
+  // [303]
+  if (/opressao por amonitas/i.test(p))
+    return `Senhor que respondes "ide clamar aos deuses que escolhestes", às vezes a tua pedagogia é deixar que a consequência das minhas escolhas seja o professor. Que quando o desconforto do distanciamento de ti me mover ao clamor, eu não apenas clame — mas remova os deuses estrangeiros que instalei. A angústia de Deus pela miséria do seu povo é o versículo mais comovente desta perícope. Amém.`;
+  // [304]
+  if (/jefte/i.test(p))
+    return `Pai, Jefté venceu a batalha e perdeu a filha. O voto feito a ti não pode ser desfeito pelo sucesso subsequente. Que eu seja cuidadoso com o que prometo diante de ti — especialmente nos momentos de pressão, quando as promessas saem de uma ânsia que não pensa nas consequências. O que prometo importa mais do que o que conquisto. Amém.`;
+  // [305]
+  if (/ibsa/i.test(p))
+    return `Senhor, Ibsã teceu alianças com famílias de fora para todos os seus filhos e filhas. Que a nossa comunidade também teça vínculos com o mundo ao redor — não para ser conformada, mas para estar presente. A missão às vezes tem a forma de um casamento, não de uma batalha. Amém.`;
+  // [306]
+  if (/elom/i.test(p))
+    return `Pai, Elom tem tribo, tempo e sepultura — e nada mais. Há uma santidade na vida que não deixa rastros espetaculares. Que eu não meça o valor do meu serviço pela quantidade da narrativa que gera. Fui chamado para ser fiel, não para ser memorável. Amém.`;
+  // [307]
+  if (/abdao/i.test(p))
+    return `Senhor, Abdão tinha setenta herdeiros montados em jumentos — abundância visível. Que a bênção que recebi seja testemunho da tua provisão e não tropeço para a vaidade. E que os que vêm depois de mim não precisem de crise para lembrar de onde veio o que têm. Amém.`;
+  // [308]
+  if (/a profecia de de sansao nascimento/i.test(p))
+    return `Deus cujo nome é maravilhoso, o anjo que anunciou Sansão não revelou seu nome para que a atenção ficasse em ti. Que o meu serviço seja assim — sem precisar que meu nome seja lembrado, desde que o teu seja glorificado no resultado. Que o Espírito que começa a mover seja reconhecido antes que a história se complique. Amém.`;
+  // [309]
+  if (/de sansao casamento/i.test(p))
+    return `Pai, a charada de Sansão sobre o mel no leão tinha uma origem que ele preferia não mencionar — uma concessão escondida no início da história. Guarda-me de construir sabedoria sobre transgressões que fingi não existirem. O que não confesso continua presente na estrutura do que construo. Amém.`;
+  // [310]
+  if (/sansao e tres cem raposas/i.test(p))
+    return `Senhor, a ofensa de Sansão incendiou o sustento de uma população inteira. Que eu reconheça que os meus pecados nunca ficam contidos em mim — eles queimam o que está ao redor. A espiral de vingança não termina onde começa. Antes de acender a tocha, que eu considere o que vai queimar além do meu alvo imediato. Amém.`;
+  // [311]
+  if (/sansao derrota filisteus/i.test(p))
+    return `Deus que abres rochas para os que têm sede, Sansão matou mil com a queixada e quase morreu de sede logo depois. Tu não criticas a sede — abres a rocha. Que eu não me envergonhe das necessidades ordinárias que seguem os momentos extraordinários. O mesmo Deus que usa o excepcional cuida do cotidiano. Amém.`;
+  // [312]
+  if (/sansao e dalila/i.test(p))
+    return `Pai, "não sabia que o Senhor o havia deixado" é o versículo mais assustador de Juízes. Guarda-me de afastamentos tão graduais que eu deixe de perceber a tua ausência. Que a pressão diária acumulada não me eroda — e que eu reconheça quando estou cedendo por exaustão o que prometei guardar por convicção. Amém.`;
+  // [313]
+  if (/de sansao morte/i.test(p))
+    return `Senhor que te lembras, "lembra-te de mim" — cego, acorrentado, sem passado apresentável. E tu te lembraste. Não há momento tarde demais para me virar a ti. Não há condição tão degradada que te impeça de responder. Que a oração de Sansão me ensine que o que importa não é o que tenho para oferecer, mas a quem me dirijo. Amém.`;
+  // [314]
+  if (/a migracao de da/i.test(p))
+    return `Senhor, o levita de Mica seguiu o poder mais forte e chamou isso de ministério. Guarda-me de um sacerdócio que serve quem paga melhor. Que o meu ministério tenha raízes na tua revelação — não na estrutura que mais me convém no momento. E que os ídolos que carrego comigo ao migrar sejam identificados antes de serem instalados no novo lugar. Amém.`;
+  // [315]
+  if (/o crime de gibea/i.test(p))
+    return `Pai, Juízes termina com o que começa em Gênesis 19 — violência que espelha Sodoma. O diagnóstico não é falta de monarquia — é ausência de Senhor. Que eu nunca busque estruturas externas para fazer o que só a tua presença interna pode fazer. O rei que Israel precisava eras tu. O rei que eu preciso também és tu. Amém.`;
 
   return (
     `Senhor, obrigado por falar através de "${d.pericope}". Que o que aprendi hoje em ${d.livroAbrev} ${d.capitulos} permaneça em mim como semente ao longo do dia. Em nome de Jesus, amém.`
