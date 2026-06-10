@@ -1534,31 +1534,442 @@ function gerarReflexao(d: DiaDevocional): string {
   if (/malaquias|mensageiro.*senhor.*malaquias|dizimo.*malaquias/i.test(p))
     return `Malaquias fecha o AT com acusações de Deus a um povo que oferece o pior ao Senhor — animais doentes, adoração de fachada, divórcio casual. E promete o enviado que preparará o caminho. Na vida real: a qualidade do que ofertamos a Deus reflete a qualidade do que cremos sobre Ele. Dar a Deus o que sobra revela que Ele não é de fato a prioridade.`;
 
-  // Evangelhos
-  if (/genealogia.*jesus|nascimento.*messias|jesus.*messias/i.test(p))
-    return `Mateus abre com a genealogia de Jesus — Abraham, Davi, exílio, Cristo. Mulheres inesperadas aparecem: Tamar, Raabe, Rute, Bate-Seba. Na árvore genealógica do Messias estão os mais improváveis. Na vida real: a encarnação de Jesus significa que Deus entrou na linhagem humana com toda a sua complexidade — não numa família perfeita, mas numa história real.`;
-  if (/batismo.*jesus|voz.*ceu.*amado/i.test(p))
-    return `Jesus é batizado por João. O céu se abre, o Espírito desce como pomba e o Pai fala: "Este é o meu Filho amado." Jesus ainda não realizou milagre algum. Na vida real: a identidade como filho/filha amado precede qualquer realização. Somos amados por quem somos, não pelo que fazemos — e isso é o fundamento de tudo que Deus nos pede que façamos.`;
-  if (/tentacao.*jesus.*diabo|quarenta.*dias.*deserto.*jesus/i.test(p))
-    return `Jesus é tentado no deserto depois do batismo e do jejum de 40 dias. O diabo usa a Escritura fora de contexto. Jesus responde com a Escritura no contexto. Na vida real: o conhecimento da Palavra de Deus não é proteção automática contra manipulação espiritual — é o uso correto da Palavra que protege, não apenas a posse dela.`;
-  if (/bem.*aventurancas|sermao.*monte|luz.*mundo.*sal/i.test(p))
-    return `O Sermão do Monte inverte os valores do mundo: pobres de espírito, mansos, misericordiosos — esses são os benditos. É a constituição do Reino. Na vida real: o reino de Deus opera com uma lógica contrária à acumulação e ao poder — e Jesus não chama para admirar esse padrão de longe, mas para vivê-lo concretamente.`;
-  if (/pai.*nosso|ensina.*orar|oracao.*senhor/i.test(p))
-    return `Jesus ensina a orar: "Pai nosso". A oração começa com relação (Pai), adoração (santificado seja o teu nome), alinhamento (venha o teu reino) e depois pedido (pão, perdão, livramento). Na vida real: a ordem do Pai Nosso diz algo sobre a estrutura da vida com Deus — relacionamento primeiro, missão depois, necessidades no caminho.`;
-  if (/parabola.*semeador|semeador.*semente/i.test(p))
-    return `Jesus explica o Pai Nosso como parábola fundacional: a semente é a Palavra, o solo é o coração. Quatro solos, quatro respostas. Só um produz fruto. Na vida real: a questão não é se a Palavra foi ouvida — é o estado do solo interior quando ela chegou. O que impede o fruto não é a semente, mas o que o coração prioriza.`;
-  if (/transfigurac|transfiguracao|monte.*gloria.*jesus/i.test(p))
-    return `Jesus é transfigurado diante de Pedro, Tiago e João: vestes brancas, Moisés e Elias presentes, voz do Pai. Pedro quer erguer tendas — ficar ali. Mas descem e encontram um menino endemoninhado. Na vida real: os momentos de glória não são para habitação permanente — são para fortalecer o que será necessário quando descermos de volta à realidade das necessidades ao redor.`;
-  if (/entrada.*triunfal|jerusalem.*jesus.*asno/i.test(p))
-    return `Jesus entra em jerusalem sobre um jumento — cumprindo Zacarias 9.9 — e o povo grita Hosana. Os mesmos que gritam Hosana na entrada gritarão Crucifica na semana seguinte. Na vida real: a aclamação humana é volátil. Jesus não construiu seu ministério sobre aprovação popular — veio para fazer a vontade do Pai, não para ser popular.`;
-  if (/ultima.*ceia|instituicao.*ceia.*senhor/i.test(p))
-    return `Jesus parte o pão: "Isto é o meu corpo, que é dado por vós." Toma o cálice: "Este cálice é a nova aliança no meu sangue." A Ceia do Senhor é anúncio de morte, memorial de amor e promessa de retorno. Na vida real: cada vez que a mesa é partilhada, a comunidade de fé anuncia a cruz, proclama a ressurreição e aguarda a vinda — é teologia encarnada em pão e vinho.`;
-  if (/getsemani|jesus.*ora.*calice|seja.*feita.*vontade/i.test(p))
-    return `No Getsêmani, Jesus ora com suor de sangue: "Se possível, passe de mim este cálice — todavia, não como eu quero, mas como tu queres." É o modelo máximo de oração: honestidade total sobre o que sentimos, e entrega total ao que Deus determina. Na vida real: a fé madura não suprime os desejos humanos diante de Deus — os apresenta honestamente e depois os subordina à vontade Dele.`;
-  if (/crucificacao|crucificac|morte.*jesus|calvario/i.test(p))
-    return `Jesus é crucificado entre dois ladrões — o Filho de Deus morre como criminoso. O véu do templo rasga-se de cima a baixo. O centurião declara: "Verdadeiramente este homem era o Filho de Deus." Na vida real: a cruz é o lugar onde a justiça e a misericórdia de Deus se encontram. Não é derrota disfarçada de vitória — é vitória por meio da derrota mais absoluta.`;
-  if (/ressurreicao.*jesus|jesus.*ressuscitou|tumulo.*vazio/i.test(p))
-    return `O túmulo está vazio. Os anjos dizem: "Não está aqui; ressuscitou." Maria Madalena o encontra no jardim e o confunde com o jardineiro — até ele dizer seu nome. Na vida real: a ressurreição de Jesus não é uma metáfora — é o fundamento de tudo. Se Cristo não ressuscitou, a fé é vã (1 Co 15.17). Se ressuscitou, tudo muda.`;
+  // Mateus [1]–[145]
+  // [1]
+  if (d.livroAbrev === 'Mt' && /genealogia de jesus/i.test(p))
+    return `A simetria de A genealogia de Jesus Messias espelha A: filho de Abraão e Davi ↔ A': de Abraão a Davi são catorze gerações. No centro: três genealogias em paralelo (B1–B3). O pivô teológico é que o Messias tem história — nomes, falhas, exílios. Na vida da igreja: nenhuma linhagem é perfeita, mas Deus age dentro delas. A encarnação começa antes do presépio, nas genealogias imperfeitas. Que a nossa história, com todas as suas fraturas, também possa ser palco da graça.`;
+  // [2]
+  if (d.livroAbrev === 'Mt' && /nascimento de jesus/i.test(p))
+    return `A simetria de O nascimento de Jesus Messias espelha A: José resolve repudiar Maria ↔ A': José recebeu Maria conforme o anjo ordenara. No centro: o cumprimento da palavra do Senhor pelo profeta (C). O pivô teológico é a obediência de José que transforma a crise em cumprimento. Na vida da igreja: a obediência silenciosa pode ser o gesto que permite que a promessa se cumpra. Deus age por meio de pessoas dispostas a mudar de plano quando o anjo fala.`;
+  // [3]
+  if (d.livroAbrev === 'Mt' && /visita.*magos|magos/i.test(p))
+    return `A simetria de A visita de magos espelha A: magos chegam a Jerusalém ↔ A': partiram por outro caminho. No centro: a profecia de Miquéias (D). O pivô teológico é que pagãos do Oriente reconhecem o rei que Herodes quer eliminar. Na vida da igreja: Deus frequentemente é reconhecido primeiro pelos de fora. A adoração dos magos denuncia a indiferença ou hostilidade dos que tinham as Escrituras mas não foram ao presépio.`;
+  // [4]
+  if (d.livroAbrev === 'Mt' && /fuga.*egito|fuga a egito/i.test(p))
+    return `A simetria de A fuga a Egito espelha A: palavras do anjo ↔ A': palavras do profeta. No centro: a obediência de José que levantou de noite (B). O pivô teológico é a correspondência entre o anjo e a Escritura — ambos dizem a mesma coisa. Na vida da igreja: a proteção divina age através de obediência imediata. José não esperou o amanhecer — levantou-se de noite. A fé que protege raramente tem a opção de esperar.`;
+  // [5]
+  if (d.livroAbrev === 'Mt' && /massacre.*bebes|massacre dos bebes/i.test(p))
+    return `A simetria de O massacre dos bebês espelha A: genocídio das crianças ↔ A': Raquel chorando seus filhos. No centro: o cumprimento da profecia de Jeremias (B). O pivô teológico é que o lamento de Raquel é profecia — o sofrimento real encontra eco na Escritura. Na vida da igreja: a teologia cristã não minimiza o sofrimento inocente. O Evangelho começa com choro. Deus não anestesia a dor — a inscreve na história da redenção.`;
+  // [6]
+  if (d.livroAbrev === 'Mt' && /retorno.*egito|retorno de egito/i.test(p))
+    return `A simetria de O retorno de Egito espelha A: mensagem de sonho ↔ A': mensagem de sonho. No centro: as viagens de José com a família (B–B'). O pivô teológico é a dupla orientação por sonho — Deus guia passo a passo, não com um plano completo revelado de uma vez. Na vida da igreja: a obediência ao que Deus diz hoje não exige ver todo o caminho. José foi para Israel, depois para Nazaré — guiado por etapas.`;
+  // [7]
+  if (d.livroAbrev === 'Mt' && /proclamacao.*joao.*batista|proclamacao de joao/i.test(p))
+    return `A simetria de A proclamação de João Batista espelha A: arrependei-vos ↔ A': produzi frutos dignos de arrependimento. No centro: João como profeta (C). O pivô teológico é que o arrependimento não é sentimento — é fruto. Na vida da igreja: preparar o caminho do Senhor começa com honestidade sobre o que precisa mudar. João não anunciava um Deus tolerante com a hipocrisia — anunciava um que está chegando e já tem o machado na raiz.`;
+  // [8]
+  if (d.livroAbrev === 'Mt' && /batismo de jesus/i.test(p))
+    return `A simetria de O batismo de Jesus espelha A: Jesus vai ser batizado ↔ A': depois de ser batizado. No centro: a correspondência entre cumprir toda justiça e ser o Filho amado (B–B'). O pivô teológico é que identidade e missão chegam juntas no batismo. Na vida da igreja: antes de qualquer ministério, há a voz do Pai sobre a identidade. "Este é o meu Filho amado" não é aprovação por desempenho — é declaração que precede toda ação.`;
+  // [9]
+  if (d.livroAbrev === 'Mt' && /tentacao de jesus/i.test(p))
+    return `A simetria de A tentação de Jesus espelha A: o Espírito leva Jesus ↔ A': os anjos ministram a Jesus. No centro: não tentarás o Senhor teu Deus (C). O pivô teológico é que a fé não força a mão de Deus — confia nele sem exigir prova. Na vida da igreja: toda tentação tem uma lógica aparente. O diabo não pede o óbvio — pede o razoável. A resistência de Jesus vem da Palavra bem aplicada, não apenas memorizada.`;
+  // [10]
+  if (d.livroAbrev === 'Mt' && /jesus.*ministerio.*galile|jesus inicia.*ministerio/i.test(p))
+    return `A simetria de Jesus começa seu ministério em Galiléia espelha A: João preso ↔ A': Jesus começa a pregar. No centro: o cumprimento de Isaías sobre a Galileia (C). O pivô teológico é que a prisão de João não interrompe o reino — é o sinal de que o próximo capítulo começou. Na vida da igreja: o silenciamento de um mensageiro não cala a mensagem. Deus levanta o próximo donde o último parou.`;
+  // [11]
+  if (d.livroAbrev === 'Mt' && /chama.*primeiros.*discipulos|jesus chama/i.test(p))
+    return `A simetria de Jesus chama primeiro discípulos espelha A: Jesus vê Simão e André ↔ A': Jesus vê Tiago e João. No centro: os irmãos deixam tudo e seguem (C–C'). O pivô teológico é a imediatidade — "deixando imediatamente". Na vida da igreja: o chamado de Jesus não espera conveniência. Os primeiros discípulos não negociaram nem adiaram. A velocidade da resposta revela o peso que a palavra de Jesus tinha sobre eles.`;
+  // [12]
+  if (d.livroAbrev === 'Mt' && /jesus ministra.*multidoes/i.test(p))
+    return `A simetria de Jesus ministra às multidões espelha A: por toda a Galileia ↔ A': da Galileia, Decápolis, Jerusalém e Judeia. No centro: a fama que se espalha pela Síria (C). O pivô teológico é a compaixão que precede toda estratégia — Jesus cura porque tem compaixão, não porque quer fama. Na vida da igreja: o ministério que nasce da compaixão não precisa de marketing. A necessidade real das pessoas atrai quem realmente ama.`;
+  // [13]
+  if (d.livroAbrev === 'Mt' && /bem.*aventurancas/i.test(p))
+    return `A simetria de As bem-aventuranças espelha A: o reino dos céus ↔ A': o reino dos céus. No centro: ser saciado e a regra de ouro (D–D'). O pivô teológico é que o reino é dado aos que não o merecem segundo critérios humanos — pobres de espírito, mansos, que choram. Na vida da igreja: a constituição do reino inverte toda pirâmide. Quem o mundo marginaliza, Deus exalta. Isso não é consolo — é realidade do reino que já chegou.`;
+  // [14]
+  if (d.livroAbrev === 'Mt' && /sal e luz/i.test(p))
+    return `A simetria de Sal e luz espelha A: vós sois o sal ↔ A': vós sois a luz. No centro: a reação das outras pessoas (C–C'). O pivô teológico é que identidade e missão são inseparáveis — não "fazei boas obras" mas "vós sois". Na vida da igreja: antes de perguntar o que devo fazer, a pergunta é o que sou. Sal que perdeu o sabor e luz escondida não são problemas de programa — são problemas de identidade esquecida.`;
+  // [15]
+  if (d.livroAbrev === 'Mt' && /lei e.*profetas|lei e os profetas/i.test(p))
+    return `A simetria de A lei e os profetas espelha A: não vim abolir a lei ↔ A': quem violar um mínimo mandamento. No centro: o céu e a terra passarão antes da lei falhar (B–B'). O pivô teológico é a permanência da lei que Jesus veio cumprir, não destruir. Na vida da igreja: Jesus não aboliu a lei — radicalizou-a. A justiça que ele pede excede a dos fariseus porque vai ao coração, não apenas ao comportamento externo.`;
+  // [16]
+  if (d.livroAbrev === 'Mt' && /sobre.*ira|sobre a ira/i.test(p))
+    return `A simetria de Sobre ira espelha A: quem matar será réu de julgamento ↔ A': teu adversário te entregará ao juiz. No centro: vai primeiro reconciliar-te com teu irmão (B). O pivô teológico é que a oferta a Deus é inseparável da reconciliação com o irmão. Na vida da igreja: não se pode adorar com integridade enquanto se sustenta uma ruptura não resolvida. Jesus coloca a reconciliação horizontal antes do ato vertical de adoração.`;
+  // [17]
+  if (d.livroAbrev === 'Mt' && /adulterio e divorcio|sobre.*adulterio/i.test(p))
+    return `A simetria de Sobre adultério e divórcio espelha A: olhar com cobiça já é adultério ↔ A': repudiar a mulher a torna adúltera. No centro: o olho direito e a mão direita que escandalizem (B–B'). O pivô teológico é que o pecado começa no olhar, não na ação. Na vida da igreja: a pureza sexual não é apenas comportamental — é formação do olhar. O que alimentamos nos olhos forma o que o coração deseja.`;
+  // [18]
+  if (d.livroAbrev === 'Mt' && /sobre.*juramentos|sobre os juramentos/i.test(p))
+    return `A simetria de Sobre juramentos espelha A: não jurarás em falso ↔ A': seja vosso falar sim, sim; não, não. No centro: a lista de objetos pelos quais não se deve jurar (B1–B4). O pivô teológico é a integridade da palavra — quem precisa jurar ainda não alcançou a credibilidade que o discípulo deve ter. Na vida da igreja: a palavra do cristão deve valer sem reforços. Quando temos de jurar para ser acreditados, é sinal de que nossa reputação precisa de restauração.`;
+  // [19]
+  if (d.livroAbrev === 'Mt' && /sobre.*retaliacao/i.test(p))
+    return `A simetria de Sobre retaliação espelha A: não resistais ao mal ↔ A': dá a quem te pedir. No centro: a face direita, a túnica, a milha extra (B1–B3). O pivô teológico é a não-reciprocidade como estilo de vida do discípulo. Na vida da igreja: o mundo opera na lógica do equivalente — dou o que recebi. Jesus inverte: dá mais do que o exigido. Isso não é fraqueza — é o poder do reino que desarma o ciclo da retaliação.`;
+  // [20]
+  if (d.livroAbrev === 'Mt' && /amor.*inimigos|amor para inimigos/i.test(p))
+    return `A simetria de Amor para inimigos espelha A: amai os inimigos ↔ A': se amardes apenas quem vos ama. No centro: serdes filhos do Pai celestial (B–B'). O pivô teológico é que amar inimigos não é estratégia — é participação no caráter de Deus que faz chover sobre justos e injustos. Na vida da igreja: o critério para amar não pode ser a reciprocidade. Onde paramos de amar por falta de retorno, revelamos que ainda não captamos a lógica do Pai.`;
+  // [21]
+  if (d.livroAbrev === 'Mt' && /sobre.*esmola/i.test(p))
+    return `A simetria de Sobre esmola espelha A: não tereis recompensa do Pai celestial ↔ A': teu Pai que vê em segredo te recompensará. No centro: os hipócritas que já receberam sua recompensa (C). O pivô teológico é que a esmola pública troca a recompensa de Deus pela aprovação humana. Na vida da igreja: o anonimato da generosidade não é modéstia — é teologia. Dar sem audiência é uma declaração de que o único Pai de quem buscamos aprovação está no céu.`;
+  // [22]
+  if (d.livroAbrev === 'Mt' && /sobre.*oracao.*mt.*6\.5|sobre a oracao/i.test(p))
+    return `A simetria de Sobre oração espelha A: quando orardes em público ↔ A': quando orares em secreto. No centro: as recompensas públicas versus a recompensa do Pai (B–B'). O pivô teológico é que a oração tem um destinatário — Deus, não a plateia. Na vida da igreja: oração que precisa de audiência revelou quem de fato está sendo adorado. A oração no quarto fechado é o calibrador da autenticidade de toda oração pública.`;
+  // [23]
+  if (d.livroAbrev === 'Mt' && /oracao do senhor|pai nosso|nao senhor oracao/i.test(p))
+    return `A simetria de A oração do Senhor espelha A: vosso Pai sabe antes que peçais ↔ A': vosso Pai não perdoará se não perdoardes. No centro: o pão de cada dia (E). O pivô teológico é que oração alinhada começa com Deus (nome, reino, vontade) antes de chegar às necessidades. Na vida da igreja: a ordem do Pai Nosso é pedagógica — nos forma na prioridade. Quem começa pela necessidade ainda não aprendeu onde está o centro.`;
+  // [24]
+  if (d.livroAbrev === 'Mt' && /sobre.*jejum/i.test(p))
+    return `A simetria de Sobre jejum espelha A: não mostreis semblante triste ↔ A': lava o rosto. No centro: os hipócritas já receberam sua recompensa (C–C'). O pivô teológico é que o jejum autêntico é invisível ao redor e visível apenas a Deus. Na vida da igreja: o jejum que precisa ser percebido já virou performance. Lavar o rosto antes de jejuar é um ato teológico — une humildade exterior com intensidade interior.`;
+  // [25]
+  if (d.livroAbrev === 'Mt' && /sobre.*tesouros/i.test(p))
+    return `A simetria de Sobre tesouros espelha A: não acumuleis tesouros na terra ↔ A': acumulai tesouros no céu. No centro: onde está o tesouro, aí estará o coração (P). O pivô teológico é que acumular revela prioridade. Na vida da igreja: a questão não é quanto se tem, mas onde se confia. Tesouros terrenos não são errados em si — o problema é quando se tornam o lugar de segurança que só o céu pode oferecer.`;
+  // [26]
+  if (d.livroAbrev === 'Mt' && /olho sao|sao olho/i.test(p))
+    return `A simetria de São olho espelha A: a candeia do corpo é o olho ↔ A': se a luz que há em ti são trevas. No centro: corpo iluminado versus corpo em trevas (B–B'). O pivô teológico é que o olho são não é apenas visão — é atenção, intenção, o que se escolhe ver. Na vida da igreja: a saúde espiritual começa no que alimentamos com o olhar. Corpo cheio de luz ou trevas não é resultado de circunstâncias — é resultado de escolhas do que recebemos como foco.`;
+  // [27]
+  if (d.livroAbrev === 'Mt' && /nao.*ansioso|nao fique ansioso/i.test(p))
+    return `A simetria de Não Fique Ansioso espelha A: não podeis servir a Deus e a Mamom ↔ A': buscai em primeiro lugar o reino. No centro: nem as aves nem os lírios se preocupam (C–C'). O pivô teológico é que a ansiedade é falsa lealdade — diz que Mamom pode prover onde Deus não pode. Na vida da igreja: buscar primeiro o reino não é passividade — é reordenação de prioridades. A ansiedade diminui quando o rei, não a provisão, ocupa o centro.`;
+  // [28]
+  if (d.livroAbrev === 'Mt' && /judging others|julgamento.*outros/i.test(p))
+    return `A simetria de Judging others espelha A: não julgueis ↔ A': não deis o que é santo aos cães. No centro: tira primeiro a trave do teu olho (B–B'). O pivô teológico é que quem julga sem se examinar perde o credencial para discernir. Na vida da igreja: a proibição de julgar não é relativismo — é sequência. Primeiro a própria trave. Depois, com o olho limpo, o discernimento é possível e necessário.`;
+  // [29]
+  if (d.livroAbrev === 'Mt' && /ask.*busca.*bate|pedi.*buscai.*batei/i.test(p))
+    return `A simetria de Ask, busca, bate espelha A: pedi e dar-se-vos-á ↔ A': o Pai celestial dará boas coisas. No centro: o pai humano não dá pedra ao filho que pede pão (B). O pivô teológico é o argumento do menor para o maior — se pais falhos dão boas coisas, quanto mais o Pai perfeito. Na vida da igreja: a persistência na oração não convence Deus — ela forma o coração do que ora. Pedir, buscar e bater são postura de dependência, não técnica de negociação.`;
+  // [30]
+  if (d.livroAbrev === 'Mt' && /estreito.*porta|porta estreita/i.test(p))
+    return `A simetria de Estreito porta espelha A: larga é a porta ↔ A': como é estreita a porta. No centro: entrai pela porta estreita (P). O pivô teológico é o contraste numérico — muitos entram pela larga, poucos pela estreita. Na vida da igreja: a popularidade de um caminho não é validação. Jesus não chama para o caminho de menor resistência — chama para o que conduz à vida, mesmo sendo estreito e difícil. A maioria não é critério de verdade.`;
+  // [31] Mt 7
+  if (d.livroAbrev === 'Mt' && /arvore.*fruto|um arvore e fruto/i.test(p) && d.capitulos.startsWith('7'))
+    return `A simetria de Um árvore e fruto (Mt 7) espelha A: pelos frutos os conhecereis ↔ A': pelos frutos os conhecereis. No centro: boa árvore produz bons frutos (B–B'). O pivô teológico é a correspondência inevitável entre a natureza e o produto. Na vida da igreja: o ensinamento de Jesus sobre falsos profetas não depende de revelação especial — depende de observação paciente. Frutos revelam raízes. O que uma vida produz ao longo do tempo é mais confiável que as palavras que afirma.`;
+  // [32]
+  if (d.livroAbrev === 'Mt' && /auto.*engano|engano de si mesmo/i.test(p))
+    return `A simetria de Sobre engano de si mesmo espelha A: Senhor, Senhor ↔ A': Senhor, Senhor. No centro: fazer a vontade do Pai versus praticar iniquidade (B–B'). O pivô teológico é a possibilidade de confessar Jesus sem conhecê-lo. Na vida da igreja: profecia, exorcismo e milagres em nome de Jesus não garantem relação com ele. O critério final é fazer a vontade do Pai — não o volume do ministério, mas a obediência cotidiana.`;
+  // [33]
+  if (d.livroAbrev === 'Mt' && /ouvintes.*praticantes|que ouvem.*praticam/i.test(p))
+    return `A simetria de Ouvintes e praticantes espelha A: os que praticam ↔ A': os que não praticam. No centro: a casa que não cai versus a casa que cai (B–B'). O pivô teológico é que ouvir sem praticar não é neutro — é construir sobre areia. Na vida da igreja: o Sermão do Monte termina com uma pergunta implícita: sobre qual fundamento está minha vida? A resposta não é doutrinária — é verificável pela resistência que minha vida demonstra nas tempestades.`;
+  // [34]
+  if (d.livroAbrev === 'Mt' && /jesus purifica um leproso/i.test(p))
+    return `A simetria de Jesus purifica um leproso espelha A: Senhor, se quiseres, podes purificar-me ↔ A': a sua lepra ficou purificada. No centro: as palavras de Jesus (B–B'). O pivô teológico é a condição do leproso: "se quiseres" — fé sem presumir. Na vida da igreja: orar com humildade não é falta de fé — é reconhecer que Deus age na soberania, não à nossa ordem. "Se quiseres" é a oração mais honesta e mais fiel ao mesmo tempo.`;
+  // [35]
+  if (d.livroAbrev === 'Mt' && /centuriao|cura.*servo.*centuriao/i.test(p))
+    return `A simetria de Jesus cura um de centurião servo espelha A: meu servo está paralítico ↔ A': o servo ficou curado. No centro: muitos virão do Oriente e Ocidente ao banquete (C'). O pivô teológico é a fé do centurião que supera a de Israel — gentio entende autoridade delegada melhor que os religiosos. Na vida da igreja: fé não é produto de ambiente religioso. O centurião não cresceu nos salmos — cresceu na cadeia de comando. E reconheceu a autoridade de Jesus onde os entendidos tropeçaram.`;
+  // [36]
+  if (d.livroAbrev === 'Mt' && /casa de pedro|cura.*casa de pedro/i.test(p))
+    return `A simetria de Jesus cura muitos na casa de Pedro espelha A: Jesus entra na casa de Pedro ↔ A': trouxeram-lhe muitos endemoninhados. No centro: o cumprimento da profecia de Isaías (P). O pivô teológico é que a cura individual (sogra de Pedro) e a cura coletiva são ambas cumprimento da missão do Servo sofredor. Na vida da igreja: o ministério de Jesus não distingue o íntimo do público — o mesmo cuidado que cura uma febre curou multidões.`;
+  // [37]
+  if (d.livroAbrev === 'Mt' && /would.*be.*seguidores|seguidores de jesus/i.test(p))
+    return `A simetria de Would-be seguidores de Jesus espelha A: palavras do escriba ↔ A': palavras do discípulo. No centro: a resposta de Jesus (B–B'). O pivô teológico é que Jesus não recruta com promessas fáceis — o Filho do Homem não tem onde reclinar a cabeça. Na vida da igreja: o chamado de Jesus é honesto sobre o custo. Quem é atraído pelo conforto do seguimento vai ser surpreendido pela realidade. O compromisso com os mortos não pode atrasar o compromisso com o reino vivo.`;
+  // [38]
+  if (d.livroAbrev === 'Mt' && /acalma.*tempestade|jesus acalma/i.test(p))
+    return `A simetria de Jesus acalma A tempestade espelha A: grande tempestade ↔ A': grande bonança. No centro: a reação das pessoas diante de Jesus (B–B'). O pivô teológico é o contraste entre o pânico dos discípulos e o sono de Jesus — quem dorme não é o que não vê o perigo, mas o que não precisa do perigo para dormir. Na vida da igreja: a paz que Jesus dá não é ausência de tempestade — é a presença de quem tem autoridade sobre ela.`;
+  // [39]
+  if (d.livroAbrev === 'Mt' && /gadarenos|endemoninhados.*gadara/i.test(p))
+    return `A simetria de Jesus cura Gadarenos endemoninhados espelha A: dois endemoninhados saem ao encontro ↔ A': toda a cidade saiu ao encontro de Jesus. No centro: as palavras de Jesus (E). O pivô teológico é que a cidade, após a libertação, pediu que Jesus fosse embora — a cura custou os porcos. Na vida da igreja: a presença de Jesus sempre tem custo. Quando o preço da cura parece alto demais, a comunidade pode preferir o familiar à liberdade que ele oferece.`;
+  // [40]
+  if (d.livroAbrev === 'Mt' && /jesus cura um paralitico/i.test(p))
+    return `A simetria de Jesus cura um paralítico espelha A: teus pecados estão perdoados ↔ A': levanta-te, toma o leito. No centro: blasfêmia versus glorificação a Deus (B–B'). O pivô teológico é que Jesus cura o que os críticos não veem — primeiro o pecado, depois o corpo. Na vida da igreja: a cura mais importante não é sempre a mais visível. Jesus poderia ter curado o paralítico sem mencionar o pecado — mas a raiz mais profunda precisava ser tratada primeiro.`;
+  // [41]
+  if (d.livroAbrev === 'Mt' && /chamado de mateus/i.test(p))
+    return `A simetria de O chamado de Mateus espelha A: segue-me ↔ A': não vim chamar justos, mas pecadores. No centro: Jesus à mesa com publicanos e pecadores (B–B'). O pivô teológico é que a mesa de Jesus é escândalo — quem come junto define comunidade. Na vida da igreja: o evangelismo começa com presença, não com palco. Jesus não enviou Mateus para um seminário — sentou com ele e seus amigos. A mesa aberta é estratégia missionária antes de ser tradição litúrgica.`;
+  // [42]
+  if (d.livroAbrev === 'Mt' && /questao.*jejum|pergunta.*jejum/i.test(p))
+    return `A simetria de A pergunta sobre jejum espelha A1: discípulos e o esposo ↔ A3: vinho novo e odres velhos. No centro: o novo não cabe no velho (B2–B3). O pivô teológico é que Jesus não é uma emenda na religião — é algo radicalmente novo. Na vida da igreja: não se pode conter o evangelho em estruturas feitas para outro vinho. A resistência ao novo nem sempre é fidelidade — às vezes é simplesmente odre velho que não se dobrou.`;
+  // [43]
+  if (d.livroAbrev === 'Mt' && /filha de jairo|menina.*mulher.*curou/i.test(p))
+    return `A simetria de Um menina restaurado a vida e uma mulher curou espelha A: minha filha acaba de morrer ↔ A': a menina se levantou. No centro: desde aquela hora a mulher ficou curada (C). O pivô teológico é que Jesus atende no caminho — a mulher é curada enquanto ele vai para a menina. Na vida da igreja: a interrupção no caminho da missão pode ser a própria missão. Jesus não se irritou com a demora — curou a mulher e depois ressuscitou a menina.`;
+  // [44] Mt 9
+  if (d.livroAbrev === 'Mt' && /jesus cura dois.*cego/i.test(p) && d.capitulos.startsWith('9'))
+    return `A simetria de Jesus cura dois cego homens (Mt 9) espelha A: dois cegos clamam ↔ A': a fama se espalhou. No centro: a confissão de fé (C). O pivô teológico é a pergunta de Jesus: "Credes que posso fazer isso?" — fé é pré-condição, não consequência. Na vida da igreja: Jesus não cura para produzir fé — responde à fé que já existe, mesmo incipiente. A confissão simples "sim, Senhor" é suficiente para mover a mão de Jesus.`;
+  // [45]
+  if (d.livroAbrev === 'Mt' && /jesus cura um.*mudo|cura.*mudo/i.test(p))
+    return `A simetria de Jesus cura um que foi mudo espelha A: o demônio foi expulso ↔ A': expulsa pelo príncipe dos demônios. No centro: nunca se viu coisa semelhante em Israel (B). O pivô teológico é o contraste entre admiração popular e acusação farisaica — o mesmo milagre divide as audiências. Na vida da igreja: a obra de Deus não produz consenso. O que uns reconhecem como graça, outros atribuem ao diabo. A divisão que Jesus provoca não é acidente — é revelação do coração.`;
+  // [46]
+  if (d.livroAbrev === 'Mt' && /messe.*grande.*operarios|colheita.*grande/i.test(p))
+    return `A simetria de A colheita é grande, Os trabalhadores poucos espelha A: Jesus percorria todas as cidades ↔ A': a messe é grande, os operários são poucos. No centro: encheu-se de compaixão (B). O pivô teológico é que a missão nasce da compaixão de Jesus, não da urgência estratégica. Na vida da igreja: a resposta à escassez de obreiros não é recrutamento — é oração. "Rogai ao Senhor da messe" é o primeiro passo, não o último recurso.`;
+  // [47]
+  if (d.livroAbrev === 'Mt' && /doze apostolos/i.test(p))
+    return `A lista dos doze apóstolos é o registro de quem Jesus escolheu — pescadores, publicano, zelote. A diversidade é intencional: o reino não é monolítico. O pivô teológico é que Judas Iscariotes está na lista — Jesus não ignora quem vai trair. Na vida da igreja: a comunidade cristã inclui pessoas com histórias, temperamentos e lealdades diferentes. A unidade não vem de uniformidade — vem de um único Senhor que chama pessoas díspares ao mesmo seguimento.`;
+  // [48]
+  if (d.livroAbrev === 'Mt' && /missao.*doze/i.test(p))
+    return `A simetria de A missão de doze espelha A: não tomeis o caminho dos gentios ↔ A': mais tolerável para Sodoma. No centro: o operário é digno do seu sustento (E). O pivô teológico é a dependência intencional — ir sem bolsa, sem sandálias extras, confiando na hospitalidade. Na vida da igreja: a missão com dependência estrutural não é ingenuidade — é teologia. O missionário que chega sem recursos precisa de anfitriões, e os anfitriões precisam de bênção. A missão conecta comunidades.`;
+  // [49]
+  if (d.livroAbrev === 'Mt' && /vinda.*perseguicoes|perseguicoes futuras/i.test(p))
+    return `A simetria de Vinda perseguições espelha A: vos entregarão aos tribunais ↔ A': sereis odiados por todos. No centro: o mestre e o discípulo (C'). O pivô teológico é que a perseguição não é sinal de que algo errou — é sinal de fidelidade à missão. Na vida da igreja: Jesus prepara os discípulos para a oposição antes de enviá-los. Comunidades que nunca enfrentam resistência deveriam perguntar se o evangelho que pregam ainda ofende alguma coisa.`;
+  // [50]
+  if (d.livroAbrev === 'Mt' && /quem.*temer|a quem.*fear/i.test(p))
+    return `A simetria de A quem a fear espelha A: falai à luz do dia ↔ A': todo aquele que me confessar. No centro: nem um pardal cai sem o Pai (C–C'). O pivô teológico é que o medo de Deus liberta do medo humano. Na vida da igreja: o discípulo que teme a Deus não teme os homens com o mesmo peso. A coragem na confissão pública não é heroísmo — é consequência de saber que os cabelos estão contados e que o Pai cuida.`;
+  // [51]
+  if (d.livroAbrev === 'Mt' && /nao.*paz.*espada/i.test(p))
+    return `A simetria de Não paz, mas um espada espelha A: paz e espada ↔ A': encontrar e perder a vida. No centro: separar filho do pai, filha da mãe (B–B'). O pivô teológico é que o evangelho divide antes de unir. Na vida da igreja: a lealdade a Jesus pode criar tensão com lealdades familiares. Isso não é incentivo à ruptura — é aviso honesto de que o chamado é supremo. Quem ama pai ou mãe mais que a Jesus ainda não encontrou a ordem certa das lealdades.`;
+  // [52]
+  if (d.livroAbrev === 'Mt' && /as recompensas|recompensas/i.test(p))
+    return `A simetria de As Recompensas espelha A: quem vos recebe ↔ A': por ser discípulo. No centro: a recompensa de profeta e de justo (B–B'). O pivô teológico é que receber o discípulo é receber Jesus. Na vida da igreja: a hospitalidade para com os enviados do reino tem valor eterno. Um copo de água fria dado a um discípulo não perde recompensa — o menor gesto de acolhimento do mensageiro conta como acolhimento do Mestre.`;
+  // [53]
+  if (d.livroAbrev === 'Mt' && /mensageiros.*joao.*batista|enviados.*joao/i.test(p))
+    return `A simetria de Mensageiros de João Batista espelha A: és tu aquele que há de vir? ↔ A': veio o Filho do Homem. No centro: o menor no reino dos céus é maior que João (D). O pivô teológico é a transição de eras — João pertence ao AT, mas quem está no reino está num lugar maior. Na vida da igreja: a pergunta de João na prisão não é fraqueza de fé — é teologia honesta. Jesus responde com obras, não com rótulos. O critério do Messias é o que acontece: cegos veem, coxos andam, pobres ouvem as boas novas.`;
+  // [54]
+  if (d.livroAbrev === 'Mt' && /lamentos.*cidades|cidades impenitentes/i.test(p))
+    return `A simetria de Lamentos a Impenitente cidades espelha A: Corazim e Betsaida ↔ A': Cafarnaum. No centro: o dia do juízo (B–B'). O pivô teológico é que privilégio aumenta responsabilidade. Na vida da igreja: Corazim e Betsaida não eram más em excesso — simplesmente não se arrependeram apesar dos milagres. Ter crescido na Bíblia, ter ouvido o evangelho desde criança, não é garantia — pode ser agravante no juízo se não houver resposta real.`;
+  // [55]
+  if (d.livroAbrev === 'Mt' && /jesus agradece.*pai|agradece ao pai/i.test(p))
+    return `A simetria de Jesus Agradece a seu Pai espelha A: os simples (νηπίος) ↔ A': os cansados e sobrecarregados. No centro: aprender de mim (B'). O pivô teológico é que a revelação está escondida dos sábios e entregue aos simples. Na vida da igreja: o convite "vinde a mim" é para os que chegaram ao limite do esforço. O jugo de Jesus é leve não porque a vida cristã é fácil, mas porque ele carrega junto. A aprendizagem se dá no jugo, não na distância.`;
+  // [56]
+  if (d.livroAbrev === 'Mt' && /colhendo.*espigas.*sabado|questao.*sabado/i.test(p))
+    return `A simetria de Colhendo Espigas no Sábado espelha A: Jesus no sábado ↔ A': o Filho do Homem é Senhor do sábado. No centro: sacerdotes violam o sábado e são inocentes (C–C'). O pivô teológico é que Jesus não viola o sábado — ele o cumpre. Na vida da igreja: o legalismo tende a proteger a regra mais do que a pessoa. Jesus sempre prioriza a pessoa. O sábado foi feito para o ser humano, não o inverso. Misericórdia pesa mais do que sacrifício ritual.`;
+  // [57]
+  if (d.livroAbrev === 'Mt' && /homem.*mao.*ressequida|mao.*seca/i.test(p))
+    return `A simetria de O homem com um seco mão espelha A: partindo dali ↔ A': os fariseus saíram. No centro: salvar a ovelha no sábado (D). O pivô teológico é a pergunta de Jesus: é lícito fazer o bem no sábado? Na vida da igreja: quando a religião proíbe o bem, algo está errado. Os fariseus saíram para complotar contra Jesus logo após ele curar. A rigidez religiosa pode produzir mais dureza do coração do que aqueles que não têm religião alguma.`;
+  // [58]
+  if (d.livroAbrev === 'Mt' && /servo.*escolhido.*deus|servo de deus/i.test(p))
+    return `A simetria de De Deus escolhido servo espelha A: ordenou que não o tornassem manifesto ↔ A': não contenderá nem gritará. No centro: o cumprimento da profecia de Isaías (B). O pivô teológico é o servo silencioso que não briga nem grita nas praças — padrão oposto ao messianismo político esperado. Na vida da igreja: o impacto do reino frequentemente acontece sem anúncio. Deus age em quietude onde o espetáculo esperava ser o palco.`;
+  // [59]
+  if (d.livroAbrev === 'Mt' && /jesus e belzebu|beelzebul/i.test(p))
+    return `A simetria de Jesus e Beelzebul espelha A: o Filho de Davi ↔ A': o Filho do Homem. No centro: expulsar demônios pelo Espírito versus pelo poder de Belzebu (D–D'). O pivô teológico é que o reino de Deus chegou se Jesus expulsa demônios pelo Espírito. Na vida da igreja: a blasfêmia contra o Espírito é atribuir a Satanás o que é claramente obra de Deus. O endurecimento que leva a isso não acontece de repente — é resultado de escolhas repetidas de recusa à luz.`;
+  // [60] Mt 12
+  if (d.livroAbrev === 'Mt' && /arvore.*fruto|um arvore e fruto/i.test(p) && d.capitulos.startsWith('12'))
+    return `A simetria de Um árvore e fruto (Mt 12) espelha A: boa árvore e árvore má ↔ A': homem bom e homem mau. No centro: da abundância do coração fala a boca (B). O pivô teológico é que palavras revelam coração. Na vida da igreja: o teste das palavras é mais confiável do que o das ações planejadas. Ações podem ser administradas para a plateia — palavras espontâneas revelam o que está no coração. O que sai quando ninguém está preparando o discurso é o verdadeiro fruto.`;
+  // [61]
+  if (d.livroAbrev === 'Mt' && /exigencia.*sinal.*mt.*12|sinal.*mt.*12/i.test(p))
+    return `A simetria de Sobre um Exigência para um Sinal espelha A: esta geração má e adúltera ↔ A': esta geração perversa. No centro: os homens de Nínive e a rainha do Sul se levantarão no juízo (B–B'). O pivô teológico é que pagãos responderam a menos que esta geração recebeu — e isso os condena. Na vida da igreja: exposição ao evangelho aumenta a responsabilidade. Não basta ter ouvido — a resposta é o que conta. Nínive se arrependeu com um sermão; Israel pediu mais sinais e ainda assim não creu.`;
+  // [62]
+  if (d.livroAbrev === 'Mt' && /verdadeira.*familia.*jesus|parentes.*jesus/i.test(p))
+    return `A simetria de Verdadeiro parentes de Jesus espelha A: mãe e irmãos estavam lá fora ↔ A': eis aqui minha mãe e meus irmãos. No centro: quem é minha mãe? (B). O pivô teológico é a redefinição radical de família — não laço de sangue, mas obediência ao Pai. Na vida da igreja: a família de Deus é mais ampla e mais profunda que a biológica. Isso não deprecia a família natural — mas estabelece uma lealdade que a ultrapassa quando entra em conflito com a vontade do Pai.`;
+  // [63]
+  if (d.livroAbrev === 'Mt' && /parabola do semeador.*mt|semeador.*mt.*13\.1/i.test(p))
+    return `A simetria de A parábola do semeador espelha A: falou-lhes por parábolas ↔ A': quem tem ouvidos, ouça. No centro: os quatro lugares onde a semente cai (B1–B4). O pivô teológico é que a semente é a mesma — o solo é o que varia. Na vida da igreja: a questão não é a qualidade do pregador ou da mensagem — é a condição do coração. Caminho, pedra, espinhos e boa terra podem estar na mesma congregação ao mesmo tempo.`;
+  // [64]
+  if (d.livroAbrev === 'Mt' && /semeador.*explicou|semeador.*explicada/i.test(p))
+    return `A simetria de A parábola do semeador explicou espelha A: o conhecimento dos mistérios do reino ↔ A': explicação da parábola. No centro: bem-aventurados os olhos que veem (C). O pivô teológico é que entender a parábola é privilégio — os de fora não entendem porque não querem entender. Na vida da igreja: a clareza espiritual não é produto apenas de inteligência — é dom dado aos que querem. Quem busca entende; quem prefere a superfície permanece na parábola sem entrar no mistério.`;
+  // [65]
+  if (d.livroAbrev === 'Mt' && /parabola.*reino.*ceu.*1|parabola.*reino.*ceu.*mt.*13\.24/i.test(p))
+    return `A simetria de A parábola do reino de céu 1 espelha as parábolas do joio, mostarda e fermento em paralelo (A1–A3). O pivô teológico é que o reino começa imperceptível e cresce sem ser detido. Na vida da igreja: o joio e o trigo coexistem até a colheita — a tentação de purificar a igreja prematuramente pode arrancar o trigo junto. O crescimento do reino não depende de nossa policia — depende do Senhor da messe.`;
+  // [66]
+  if (d.livroAbrev === 'Mt' && /parabola.*reino.*ceu.*2|parabola.*reino.*ceu.*mt.*13\.36/i.test(p))
+    return `A simetria de A parábola do reino de céu 2 espelha A: lançados na fornalha de fogo ↔ A': lançados na fornalha de fogo. No centro: vender tudo e comprar (B–B'). O pivô teológico é que o reino vale mais do que tudo — o tesouro escondido e a pérola preciosa justificam a venda total. Na vida da igreja: o problema não é o custo do reino — é não ter visto seu valor. Quem entendeu vende com alegria, não com relutância.`;
+  // [67]
+  if (d.livroAbrev === 'Mt' && /tesouros novos.*velhos|tesouros novos e velhos/i.test(p))
+    return `A simetria de Tesouros Novos e Antigos espelha A: palavras de Jesus ↔ A': palavras de Jesus. No centro: as palavras dos discípulos (B). O pivô teológico é o escriba instruído que tira do tesouro coisas novas e antigas — o Antigo Testamento lido à luz de Cristo. Na vida da igreja: fidelidade à tradição e abertura ao novo não são opostos — são complementos. O discípulo maduro sabe quando uma verdade antiga fala em linguagem nova.`;
+  // [68]
+  if (d.livroAbrev === 'Mt' && /rejeicao.*jesus.*nazare|rejection.*nazare/i.test(p))
+    return `A simetria de Rejection de Jesus em Nazaré espelha A: foi para a sua pátria ↔ A': profeta não é desprezado senão na sua pátria. No centro: a incompreensão do povo (C). O pivô teológico é que o conhecimento de origem impede o reconhecimento de identidade. Na vida da igreja: a familiaridade pode ser o maior obstáculo à fé. Os que cresceram ouvindo sobre Jesus às vezes são os mais resistentes — a proximidade cultural não é o mesmo que encontro pessoal.`;
+  // [69]
+  if (d.livroAbrev === 'Mt' && /morte de joao.*batista/i.test(p))
+    return `A simetria de A morte de João Batista espelha A: ressuscitou dos mortos ↔ A': tomaram o cadáver e enterraram. No centro: o juramento de Herodes (D). O pivô teológico é que Herodes mata por vergonha de voltar atrás num juramento feito em público. Na vida da igreja: a pressão social pode levar à violência moral e física. O medo do que os convidados pensariam custou a vida de João. A coragem de mudar de ideia em público é uma virtude que Herodes não tinha.`;
+  // [70]
+  if (d.livroAbrev === 'Mt' && /feeding cinco mil|multiplicacao.*cinco.*paes/i.test(p))
+    return `A simetria de Feeding cinco mil espelha A: encheu-se de compaixão ↔ A': todos comeram e se fartaram. No centro: cinco pães e dois peixes (D). O pivô teológico é a sequência: compaixão → instrução aos discípulos → ação de graças → multiplicação. Na vida da igreja: o milagre começa no que há disponível. Jesus não esperou os recursos certos — abençoou o que estava ali. A escassez consagrada se torna abundância distribuída.`;
+  // [71]
+  if (d.livroAbrev === 'Mt' && /jesus caminha.*agua|caminha sobre.*agua/i.test(p))
+    return `A simetria de Jesus caminha sobre A água espelha A: é um fantasma! ↔ A': verdadeiramente és o Filho de Deus. No centro: as palavras de Pedro (C–C'). O pivô teológico é que Pedro afunda não por falta de fé, mas por desviar o olhar. Na vida da igreja: fé não é ausência de medo — é manter o olhar em Jesus mesmo com medo. Pedro foi o único que andou sobre as águas. Que ele tenha afundado não cancela que andou — e Jesus alcançou a mão mesmo assim.`;
+  // [72]
+  if (d.livroAbrev === 'Mt' && /enfermos.*genesare|cura.*genesare/i.test(p))
+    return `A simetria de Jesus Cura os Enfermos em Genesaré espelha A: chegaram ↔ A': levaram-lhe todos os enfermos. No centro: a proclamação pela região (B). O pivô teológico é a borda do manto — tão famosa a cura que bastava tocar a beira da veste. Na vida da igreja: fama de compaixão abre portas que nenhuma estratégia abre. Genesaré não foi alcançada por programa — foi alcançada porque a notícia de que Jesus curava se espalhou pelo testemunho dos que foram curados.`;
+  // [73]
+  if (d.livroAbrev === 'Mt' && /tradicao dos anciaos/i.test(p))
+    return `A simetria de A tradição dos anciãos espelha A: não lavam as mãos ↔ A': comer sem lavar as mãos não contamina. No centro: o que sai da boca contamina (C). O pivô teológico é a inversão: pureza não é ritual exterior — é interior. Na vida da igreja: tradições religiosas podem se tornar muros entre as pessoas e Deus. Jesus não condena a tradição — condena quando ela substitui o mandamento de Deus. Honrar pai e mãe pesa mais que o Corban.`;
+  // [74]
+  if (d.livroAbrev === 'Mt' && /cananeia|fe.*mulher.*cananeia/i.test(p))
+    return `A simetria de Cananeia de mulher fé espelha A: minha filha é atormentada ↔ A': sua filha ficou curada. No centro: o desejo da mãe (D). O pivô teológico é a persistência que vence a recusa — Jesus recusou duas vezes; ela não desistiu. Na vida da igreja: a fé da cananeia é o padrão de persistência em oração. Ela não tinha título religioso, raça certa ou status. Tinha necessidade e confiança que Jesus podia ajudar. Isso foi suficiente.`;
+  // [75]
+  if (d.livroAbrev === 'Mt' && /jesus cura muitas pessoas|cura muitos enfermos/i.test(p))
+    return `A simetria de Jesus Cura Muitas Pessoas espelha A: Jesus sentou-se na montanha ↔ A': curou-os. No centro: correspondência entre as doenças e as curas (B–B'). O pivô teológico é a completude da cura — mudos a falar, aleijados sãos, coxos a andar, cegos a ver. Na vida da igreja: o ministério de cura de Jesus é abrangente. Não há categoria de necessidade humana que esteja fora do seu alcance. A multidão glorificou a Deus de Israel ao ver o que aconteceu.`;
+  // [76]
+  if (d.livroAbrev === 'Mt' && /feeding quatro mil|multiplicacao.*sete.*paes/i.test(p))
+    return `A simetria de Feeding quatro mil espelha A: não têm o que comer ↔ A': todos comeram e se fartaram. No centro: sete pães e alguns peixes (D). O pivô teológico é a compaixão que não espera iniciativa humana — Jesus é quem vê a necessidade antes dos discípulos. Na vida da igreja: o segundo milagre de alimentação não é repetição — é confirmação. Deus não se cansa de suprir. A abundância que sobrou (sete cestos) é o sinal de que a graça excede a necessidade.`;
+  // [77]
+  if (d.livroAbrev === 'Mt' && /exigencia.*sinal.*mt.*16|sinal.*mt.*16/i.test(p))
+    return `A simetria de A exigência para um sinal espelha A: pediram um sinal do céu ↔ A': esta geração pede um sinal. No centro: discernir o céu mas não os sinais dos tempos (B–B'). O pivô teológico é a ironia — sabem prever o clima mas não reconhecem o Messias diante deles. Na vida da igreja: pedir sinais pode ser expressão de fé ou de resistência. Quando o sinal é condição para crer, o problema não é falta de evidência — é disposição do coração.`;
+  // [78]
+  if (d.livroAbrev === 'Mt' && /fermento.*fariseus.*saduceus/i.test(p))
+    return `A simetria de Cuidado do fermento de Fariseus e Saduceus espelha A: esqueceram o pão ↔ A': então entenderam. No centro: não acreditais por causa do pão esquecido? (C–C'). O pivô teológico é a cegueira espiritual mesmo após dois milagres de multiplicação. Na vida da igreja: os discípulos viram pão ser multiplicado duas vezes e ainda pensaram em falta de pão. A experiência de graça não garante memória de graça. É preciso cultivar intencionalmente a lembrança do que Deus fez.`;
+  // [79]
+  if (d.livroAbrev === 'Mt' && /confissao.*pedro/i.test(p))
+    return `A simetria de De Pedro declaração espelha A: quem dizem que sou? ↔ A': quem dizeis que sou? No centro: palavras de Jesus a Pedro (P). O pivô teológico é a revelação do Pai — Pedro não chegou a isso por raciocínio, mas por revelação. Na vida da igreja: a confissão "tu és o Cristo, o Filho de Deus vivo" não é conclusão teológica — é revelação. Sobre essa pedra Jesus edifica a igreja. A confissão genuína de quem é Jesus é o fundamento de tudo.`;
+  // [80]
+  if (d.livroAbrev === 'Mt' && /jesus prediz.*morte.*ressurreicao.*mt.*16|morte.*ressurreicao.*predita/i.test(p))
+    return `A simetria de Jesus prediz seu morte e ressurreição espelha A: era o Cristo ↔ A': vai, Satanás. No centro: a profecia da paixão (B). O pivô teológico é o contraste entre a confissão de Pedro (tu és o Cristo) e a repreensão de Jesus (vai, Satanás) — o mesmo Pedro em dois versículos. Na vida da igreja: é possível confessar Cristo corretamente e logo depois agir como adversário da vontade de Deus. Fé e obediência ao caminho da cruz são coisas distintas que precisam andar juntas.`;
+  // [81]
+  if (d.livroAbrev === 'Mt' && /cruz.*negacao.*si mesmo|abnegacao/i.test(p))
+    return `A simetria de A cruz e negação de si mesmo espelha A: vir após mim ↔ A': o Filho do Homem vindo. No centro: que lucro terá o homem que ganhar o mundo e perder a alma (C–C'). O pivô teológico é o paradoxo do seguimento: perder a vida por Jesus é encontrá-la. Na vida da igreja: a abnegação não é masoquismo — é reorientação. O eu que morre é o eu autônomo que não precisa de Deus. O eu que vive é o que encontrou em Jesus o único centro estável.`;
+  // [82]
+  if (d.livroAbrev === 'Mt' && /transfiguracao/i.test(p))
+    return `A simetria de A transfiguração espelha A: Moisés e Elias aparecem ↔ A': não viram ninguém senão Jesus sozinho. No centro: este é o meu Filho amado, ouvi-o (C). O pivô teológico é a absorção de Moisés e Elias em Jesus — a Lei e os Profetas culminam nele. Na vida da igreja: o clímax da revelação não é um sistema teológico — é uma Pessoa. Todos os fios da Escritura convergem para Jesus. Ao descer do monte, havia só Jesus.`;
+  // [83]
+  if (d.livroAbrev === 'Mt' && /elias.*ja.*come|elias ja veio/i.test(p))
+    return `A simetria de Elias tem já come espelha A: palavras de Jesus sobre o Filho do Homem ↔ A': palavras de Jesus sobre o Filho do Homem. No centro: os discípulos entendem que falou de João Batista (B'). O pivô teológico é que a profecia de Elias se cumpriu em João — e foi rejeitado. Na vida da igreja: Deus cumpre promessas de formas que exigem olhos abertos para reconhecer. Quem esperava Elias literalmente perdeu João. Quem esperava o Messias triunfante perdeu Jesus crucificado.`;
+  // [84]
+  if (d.livroAbrev === 'Mt' && /menino.*demonio|cura.*menino.*endemoninhado/i.test(p))
+    return `A simetria de Jesus Cura um Menino com um Demônio espelha A: os discípulos não puderam ↔ A': por que não pudemos? No centro: pouca fé (B'). O pivô teológico é a resposta de Jesus: por causa da vossa pouca fé. Na vida da igreja: há batalhas que os discípulos não conseguem vencer por ausência de fé — não ausência de técnica. A criança ficou em convulsão enquanto os discípulos faziam o que sabiam. Às vezes o problema não é método — é a fé que move montanhas.`;
+  // [85]
+  if (d.livroAbrev === 'Mt' && /jesus.*prediz.*novamente|prediz.*segunda.*vez.*morte/i.test(p))
+    return `A segunda predição da paixão em Mateus 17 é breve — mas pesada. Jesus anuncia que será entregue nas mãos dos homens, morto e ressuscitado no terceiro dia. Os discípulos ficaram muito tristes. O pivô teológico é que a tristeza deles mostra que ainda não tinham integrado a ressurreição na promessa. Na vida da igreja: é possível ouvir a promessa da ressurreição e fixar apenas na morte. A fé madura aprende a segurar as duas partes — morte real, ressurreição real.`;
+  // [86]
+  if (d.livroAbrev === 'Mt' && /imposto.*templo/i.test(p))
+    return `A simetria de Jesus e O templo imposto espelha A: o mestre paga o didracma? ↔ A': dá-lhes por mim e por ti. No centro: os reis da terra e seus filhos (C). O pivô teológico é que os filhos são livres — mas Jesus paga para não ofender. Na vida da igreja: liberdade e consideração pelo próximo não são opostos. Paulo ensina o mesmo em 1 Coríntios — tenho direito, mas abro mão por amor. A moeda no peixe é o sinal de que a liberdade do filho pode ser exercida com generosidade.`;
+  // [87]
+  if (d.livroAbrev === 'Mt' && /quem.*maior|sobre quem sera/i.test(p))
+    return `A simetria de Sobre Quem Será o Maior espelha A: quem é o maior no reino? ↔ A': o maior no reino dos céus. No centro: tornar-se como crianças e acolher crianças (B–B'). O pivô teológico é que a criança como modelo não é sobre inocência — é sobre dependência radical. Na vida da igreja: a pergunta sobre quem é maior revela que os discípulos ainda operam com lógica de poder. Jesus não responde diretamente — mostra uma criança. O maior no reino é o que aprende a depender.`;
+  // [88]
+  if (d.livroAbrev === 'Mt' && /vida eterna.*mt.*18|eterno vida/i.test(p))
+    return `A simetria de O eterno vida espelha A: melhor atar uma pedra ao pescoço ↔ A': melhor entrar manco na vida. No centro: os escândalos são inevitáveis (C). O pivô teológico é a gravidade do escândalo — causar tropeço ao pequeno é mais grave do que perder um membro. Na vida da igreja: o "ai" de Jesus sobre os escândalos não é retórica. Há um peso de responsabilidade sobre quem tem influência sobre os pequenos. O que ensinamos, modelamos e permitimos forma ou deforma os que nos seguem.`;
+  // [89]
+  if (d.livroAbrev === 'Mt' && /ovelha.*perdida|parabola.*ovelha/i.test(p))
+    return `A simetria de A parábola de perdeu ovelha espelha A: não desprezeis os pequeninos ↔ A': que nenhum pequenino se perca. No centro: as noventa e nove e a ovelha extraviada (B–B'). O pivô teológico é que o Pai não está satisfeito com noventa e nove por cento. Na vida da igreja: o cuidado pelo que está fora não pode ser sacrificado pelo conforto do rebanho presente. A ovelha que se perdeu não perdeu valor por se perder. Deus não atualiza o cadastro — vai buscá-la.`;
+  // [90]
+  if (d.livroAbrev === 'Mt' && /corrigir.*irmao|repreendendo.*peca/i.test(p))
+    return `A simetria de Repreendendo outro que pecados espelha A: reprova-o a sós entre ti e ele ↔ A': onde dois ou três estão reunidos em meu nome. No centro: na terra e no céu (B–B'). O pivô teológico é o processo graduado da correção fraterna — a sós, depois com testemunhas, depois a comunidade. Na vida da igreja: a repreensão começa em privado. O objetivo é ganhar o irmão, não expô-lo. A escala aumenta apenas quando o privado falhou — não como punição, mas como ampliação do cuidado.`;
+  // [91]
+  if (d.livroAbrev === 'Mt' && /servo.*impiedoso|parabola.*servo.*impiedoso/i.test(p))
+    return `A simetria de A parábola de impiedoso servo espelha A: quantas vezes perdoarei? ↔ A': se não perdoardes de coração. No centro: o servo não perdoa (D). O pivô teológico é a proporção — uma dívida imperdoável foi perdoada, e o servo não perdoou uma ínfima. Na vida da igreja: o problema do servo não é não ter sido perdoado — é não ter deixado o perdão recebido transformar o coração. Receber graça sem ser formado por ela produz o monstro da parábola.`;
+  // [92]
+  if (d.livroAbrev === 'Mt' && /ensino.*divorcio|sobre.*divorcio/i.test(p))
+    return `A simetria de Ensino sobre divórcio espelha A: é lícito repudiar a mulher ↔ A': carta de divórcio. No centro: o que Deus uniu o homem não separe (C). O pivô teológico é o retorno ao início — a criação define o padrão, não a concessão mosaica. Na vida da igreja: a dureza do coração humano gerou permissões que não eram o ideal de Deus. Jesus não endurece a lei — restaura a intenção original. Toda comunidade que lida com casamentos sabe o peso dessa passagem e a necessidade de graça real.`;
+  // [93]
+  if (d.livroAbrev === 'Mt' && /jesus.*bencoa.*criancas|abencoa.*criancas/i.test(p))
+    return `A simetria de Jesus abençoa pequeno crianças espelha A: imposição de mãos e oração ↔ A': impôs-lhes as mãos. No centro: não os impeçais (B). O pivô teológico é a acessibilidade de Jesus — os discípulos bloquearam, Jesus abriu. Na vida da igreja: toda estrutura que afasta as crianças do centro do ministério de Jesus vai contra o espírito desta passagem. O reino dos céus pertence a elas — não como metáfora, mas como declaração de quem está mais próximo do padrão do reino.`;
+  // [94]
+  if (d.livroAbrev === 'Mt' && /jovem rico|rico.*jovem/i.test(p))
+    return `A simetria de O rico jovem homem espelha A: alguém se aproximou ↔ A': o jovem foi embora triste. No centro: as condições de Jesus (B–B'). O pivô teológico é a inversão — o jovem que tinha tudo foi embora com o coração vazio; os discípulos que largaram tudo herdaram a vida eterna. Na vida da igreja: a questão do jovem rico não é sobre riqueza material — é sobre o que ocupa o lugar de Deus no coração. Cada geração tem seu equivalente da resposta correta às perguntas e da tristeza do que é pedido depois.`;
+  // [95]
+  if (d.livroAbrev === 'Mt' && /perigo.*riquezas|sobre.*riquezas/i.test(p))
+    return `A simetria de Sobre O Perigo de Riquezas espelha A: difícil ao rico entrar no reino ↔ A': sentar em doze tronos. No centro: para Deus tudo é possível (C). O pivô teológico é que a salvação do rico é impossível para homens e possível para Deus. Na vida da igreja: o ensinamento sobre riqueza e reino não é convite à pobreza compulsória — é alerta sobre o que a riqueza faz ao coração. O camelo e a agulha não é hipérbole cômica — é aviso sobre a gravidade do apego.`;
+  // [96]
+  if (d.livroAbrev === 'Mt' && /trabalhadores.*vinha|trabalhadores no vinhedo/i.test(p))
+    return `A simetria de Trabalhadores no Vinhedo espelha A: o reino é semelhante ↔ A': os últimos serão os primeiros. No centro: começando pelos últimos (E). O pivô teológico é a generosidade soberana que escandaliza quem calcula merecimento. Na vida da igreja: reclamar da generosidade de Deus com os que chegaram por último revela que ainda operamos em lógica de mercado. A graça não é justa — é generosa. Isso é escândalo para o religioso e libertação para o que chegou na última hora.`;
+  // [97]
+  if (d.livroAbrev === 'Mt' && /terceira.*vez.*prediz|terceiro.*morte.*ressurreicao/i.test(p))
+    return `A terceira predição da paixão em Mateus 20 é a mais detalhada — Jesus menciona gentios, escárnio, flagelação e crucificação. O pivô teológico é a especificidade crescente: Jesus sabia para onde estava indo. Na vida da igreja: a coragem do caminho para Jerusalém não é heroísmo inconsciente — é obediência informada. Jesus subiu sabendo o que aconteceria. O discipulado inclui às vezes seguir em direção ao que sabemos que vai custar.`;
+  // [98]
+  if (d.livroAbrev === 'Mt' && /pedido.*mae.*tiago.*joao|mae de tiago e joao/i.test(p))
+    return `A simetria de O pedido da Mãe de Tiago e João espelha A: desejando pedir um favor ↔ A': não sabeis o que pedis. No centro: sentar à direita e à esquerda (B–B'). O pivô teológico é que os lugares de honra ao lado de Jesus já estão reservados — mas para a cruz, não para o trono. Na vida da igreja: ambição de posição no reino ignora que a lógica do reino é o cálice e o batismo de sofrimento. Os que querem o trono precisam primeiro entender a cruz.`;
+  // [99]
+  if (d.livroAbrev === 'Mt' && /ser.*servo|ser um servo/i.test(p))
+    return `A simetria de Ser um servo espelha A: os governantes dominam ↔ A': dar a vida em resgate por muitos. No centro: servir (B–B'). O pivô teológico é o Filho do Homem como modelo de serviço radical — não veio para ser servido, mas para servir e dar a vida. Na vida da igreja: liderança cristã é serviço estrutural, não gestão do poder. O contraste com os governantes pagãos é explícito — eles dominam, vós não sereis assim. A autoridade que Cristo dá é exercida de baixo para cima.`;
+  // [100] Mt 20
+  if (d.livroAbrev === 'Mt' && /jesus cura dois.*cego/i.test(p) && d.capitulos.startsWith('20'))
+    return `A simetria de Jesus cura dois cego homens (Mt 20) espelha A: o seguiam ↔ A': o seguiram. No centro: que quereis que eu vos faça? (D). O pivô teológico é a pergunta de Jesus aos cegos — ele quer ouvir o pedido expresso, não apenas o óbvio. Na vida da igreja: Deus convida à articulação do desejo. "Que quereis?" não é ignorância — é respeito pela voz humana. Os cegos disseram "que os nossos olhos se abram" — e foram curados e seguiram. Ver para seguir.`;
+  // [101]
+  if (d.livroAbrev === 'Mt' && /entrada.*triunfal.*jerusalem/i.test(p))
+    return `A simetria de De Jesus entrada triunfal em Jerusalém espelha A: aproximaram-se de Jerusalém ↔ A': entrou em Jerusalém. No centro: o comportamento dos discípulos e da multidão (C–C'). O pivô teológico é a vinda do rei manso, montado em jumento — cumprimento de Zacarias 9.9. Na vida da igreja: o reino de Jesus não chegou com exércitos — chegou com humildade. A aclamação popular que o recebe não durou uma semana. Servir a um rei manso exige mais do que gritar hosana.`;
+  // [102]
+  if (d.livroAbrev === 'Mt' && /jesus purifica.*templo/i.test(p))
+    return `A simetria de Jesus purifica O templo espelha A: expulsou todos que vendiam e compravam ↔ A': saiu da cidade. No centro: cegos e coxos no templo, crianças gritando (C–C'). O pivô teológico é que Jesus expulsa o comércio e acolhe os marginais — o templo é casa de oração, não mercado. Na vida da igreja: o que ocupa espaço na casa de Deus define o que a comunidade valoriza. Quando o acesso ao lugar de oração é mediado por dinheiro, algo precisa ser purificado.`;
+  // [103]
+  if (d.livroAbrev === 'Mt' && /amaldicoa.*figueira|figueira.*seca/i.test(p))
+    return `A simetria de Jesus amaldiçoa A figueira espelha A: palavras de Jesus ↔ A': palavras de Jesus. No centro: a figueira secou imediatamente (B–B'). O pivô teológico é a figueira com folhas mas sem frutos — aparência de vida, ausência de produto. Na vida da igreja: a figueira é Israel religioso que tem a forma da piedade mas não o fruto. O aviso se estende a toda comunidade que cultiva aparência sem substância. A fé que move montanhas não é magia — é confiança ativa na palavra de Deus.`;
+  // [104]
+  if (d.livroAbrev === 'Mt' && /autoridade.*jesus.*questionada|autoridade.*jesus.*contestada/i.test(p))
+    return `A simetria de A autoridade de Jesus questionado espelha A: com que autoridade? ↔ A': com que autoridade faço estas coisas. No centro: do céu ou dos homens? (B–B'). O pivô teológico é a questão devolvida — Jesus não esquiva, desafia o presuposto. Na vida da igreja: a autoridade de Jesus não é validada pelos que detêm o poder religioso — é confirmada pelas obras e pelas Escrituras. Quando os que têm autoridade institucional recusam responder a perguntas honestas, revelam que a questão os desconforta.`;
+  // [105]
+  if (d.livroAbrev === 'Mt' && /parabola.*dois.*filhos/i.test(p))
+    return `A simetria de A parábola de dois filhos espelha A: arrependeu-se e foi ↔ A': não vos arrependestes depois. No centro: a vontade do pai (B). O pivô teológico é que fazer a vontade do pai importa mais do que dizer que vai fazer. Na vida da igreja: publicanos e prostitutas entrarão primeiro no reino porque obedeceram ao João que os religiosos recusaram. O filho que disse não e foi é mais fiel que o que disse sim e não foi. Ação conta mais do que declaração.`;
+  // [106]
+  if (d.livroAbrev === 'Mt' && /lavradores.*maus|arrendatarios.*impios/i.test(p))
+    return `A simetria de A parábola de ímpio arrendatários espelha A: parábola ↔ A': ouviram as suas parábolas. No centro: a pedra angular (C). O pivô teológico é a pedra que os construtores rejeitaram — tornou-se a principal. Na vida da igreja: Jesus não é apenas o herdeiro rejeitado — é a pedra angular sobre a qual tudo é construído ou destruída. O reino será tirado de quem não produz frutos e dado a um povo que produza. A vinha tem dono e ele cobra prestação de contas.`;
+  // [107]
+  if (d.livroAbrev === 'Mt' && /banquete.*casamento|parabola.*casamento/i.test(p))
+    return `A simetria de A parábola do casamento banquete espelha A: mandou os servos chamar ↔ A': os que foram convidados não eram dignos. No centro: destruiu os assassinos e incendiou a cidade (C). O pivô teológico é que o convite rejeitado não cancela o banquete — estranhos são convidados. Na vida da igreja: a parábola anuncia a abertura do evangelho para os gentios após a rejeição de Israel. E termina com o homem sem traje — entrar no banquete exige responder ao convite com adequação, não apenas presença.`;
+  // [108]
+  if (d.livroAbrev === 'Mt' && /tributo.*cesar|paying.*impostos|questao.*cesar/i.test(p))
+    return `A simetria de A pergunta sobre paying impostos espelha A: os fariseus foram ↔ A': retiraram-se. No centro: de quem é esta imagem? (C–C'). O pivô teológico é a distinção entre o que pertence a César e o que pertence a Deus. Na vida da igreja: a moeda traz a imagem de César — devolva-se a César. O ser humano foi feito à imagem de Deus — devolva-se a Deus. A pergunta sobre impostos se torna teologia da imago Dei. O que porte a imagem de Deus pertence a Deus.`;
+  // [109]
+  if (d.livroAbrev === 'Mt' && /questao.*ressurreicao|pergunta.*ressurreicao/i.test(p))
+    return `A simetria de A pergunta sobre A ressurreição espelha A: foram ter com ele ↔ A': ficaram admirados. No centro: não conheceis as Escrituras nem o poder de Deus (D). O pivô teológico é a dupla ignorância — Escritura e poder. Na vida da igreja: argumentar com Deus a partir de premissas erradas sobre a ressurreição produz questões sem sentido. Jesus não valida a pergunta — corrige o pressuposto. Na ressurreição, a realidade é tão diferente que as categorias atuais simplesmente não se aplicam.`;
+  // [110]
+  if (d.livroAbrev === 'Mt' && /maior.*mandamento/i.test(p))
+    return `A simetria de O Maior Mandamento espelha A: qual é o maior mandamento da lei? ↔ A': destes dois dependem toda a lei e os profetas. No centro: o primeiro e o segundo mandamento (C–C'). O pivô teológico é a síntese — amor a Deus e amor ao próximo como estrutura de toda obrigação moral. Na vida da igreja: o maior mandamento não elimina os outros — os fundamenta. Toda regra ética cristã é aplicação de amor. Quando a aplicação perde a origem no amor, vira legalismo.`;
+  // [111]
+  if (d.livroAbrev === 'Mt' && /filho de davi|questao.*filho.*davi/i.test(p))
+    return `A simetria de A pergunta sobre de Davi filho espelha A: Jesus os interrogou ↔ A': ninguém ousou interrogá-lo. No centro: Davi chama o Messias de Senhor (C–C'). O pivô teológico é a paradoxo — como o filho pode ser o Senhor do pai? Na vida da igreja: Jesus não é apenas descendente de Davi — é Senhor de Davi. A cristologia não cabe nos moldes humanos de sucessão. A pergunta que Jesus faz silencia os adversários porque eles precisariam reconhecer sua divindade para respondê-la.`;
+  // [112]
+  if (d.livroAbrev === 'Mt' && /denuncia.*escribas.*fariseus|ais.*hipócritas/i.test(p))
+    return `A simetria de Jesus denuncia Escribas e Fariseus espelha A: não querem mover nem o dedo ↔ A': não quisestes. No centro: o que é santo — ouro ou templo (C). O pivô teológico é o "ai" sêxtuplo — sete lamentos sobre hipócrisia religiosa. Na vida da igreja: a hipócrisia que Jesus denuncia não é fingimento consciente — é dissociação entre aparência e realidade que se torna tão habitual que o religioso não a vê mais. Lavar por fora o que está sujo por dentro é trabalho que começa pelo interior.`;
+  // [113]
+  if (d.livroAbrev === 'Mt' && /destruicao.*templo.*predita|destruicao do templo/i.test(p))
+    return `A destruição do templo predita é breve em Mateus 24 — dois versículos — mas brutal: pedra sobre pedra não ficará. O pivô teológico é que a instituição religiosa mais sagrada de Israel não é permanente. Na vida da igreja: nenhuma estrutura religiosa é eterna. O que Deus usa numa geração pode precisar ser demolido para que o novo surja. Apego a estruturas sagradas pode se tornar obstáculo ao que Deus está fazendo a seguir.`;
+  // [114]
+  if (d.livroAbrev === 'Mt' && /sinais.*fim.*era|sinais.*end/i.test(p))
+    return `A simetria de Sinais de end da era espelha A: qual o sinal da tua vinda e do fim? ↔ A': então virá o fim. No centro: vos matarão (D). O pivô teológico é que entre o presente e o fim haverá guerra, fome, perseguição e falsos profetas. Na vida da igreja: Jesus não promete que o caminho ao fim será tranquilo — mas promete que quem perseverar será salvo. Escatologia cristã saudável não é evasão do presente — é resistência informada pela certeza do fim.`;
+  // [115]
+  if (d.livroAbrev === 'Mt' && /abominacao.*desolacao|desolacao.*sacrilega/i.test(p))
+    return `A simetria de A desolação sacrilégia espelha A: a abominação da desolação ↔ A': será a vinda do Filho do Homem. No centro: para enganar os eleitos (C). O pivô teológico é o contraste entre a desolação que vem e a vinda gloriosa que responde a ela. Na vida da igreja: os falsos cristos aparecem justamente no momento de maior desespero. Jesus avisa antes — não para criar ansiedade, mas para que, quando vier, reconheçamos e não sejamos enganados.`;
+  // [116]
+  if (d.livroAbrev === 'Mt' && /vinda.*filho.*homem.*ceu|filho do homem.*nuvens/i.test(p))
+    return `A simetria de A vinda do filho de homem espelha A: poderes dos céus serão abalados ↔ A': de uma a outra extremidade dos céus. No centro: o Filho do Homem vindo com poder e glória (B–B'). O pivô teológico é a visibilidade universal — toda nação lamentará e verá. Na vida da igreja: a segunda vinda não é assunto para especulação de datas — é horizonte que orienta o presente. Saber que ele virá transforma como vivemos agora, não depois.`;
+  // [117]
+  if (d.livroAbrev === 'Mt' && /licao.*figueira|parabola.*figueira/i.test(p))
+    return `A simetria de Lição da Figueira espelha A: aprendei esta parábola ↔ A': as minhas palavras não passarão. No centro: todas estas coisas se cumpram (B–B'). O pivô teológico é a certeza da palavra de Jesus — céu e terra passarão, mas o que ele disse permanece. Na vida da igreja: a figueira que brota é sinal de que o verão está próximo. A vigilância escatológica não é paranoia — é atenção aos sinais do que Jesus disse que viria. A Palavra que não passa é fundamento para viver sem ansiedade.`;
+  // [118]
+  if (d.livroAbrev === 'Mt' && /necessidade.*vigilancia|vigilancia/i.test(p))
+    return `A simetria de Necessidade de Vigilância espelha A: será a vinda do Filho do Homem ↔ A': o Filho do Homem virá. No centro: um tomado, outro deixado (C–C'). O pivô teológico é a imprevisibilidade — ninguém sabe, nem o Filho, mas o Pai. Na vida da igreja: a vigilância que Jesus pede não é ansiedade sobre datas — é prontidão constante. Não saber quando é condição permanente de preparação. O discípulo pronto é o que está pronto agora, não o que calcula quando.`;
+  // [119]
+  if (d.livroAbrev === 'Mt' && /servo.*fiel.*infiel|fiel.*infiel.*escravo/i.test(p))
+    return `A simetria de Fiel ou infiel escravo espelha A: o servo fiel e prudente ↔ A': o servo mau. No centro: as recompensas e os castigos (C–C'). O pivô teológico é que fidelidade na ausência do senhor é o teste de caráter do discípulo. Na vida da igreja: o que fazemos quando ninguém supervisiona define quem somos. O servo mau começa a maltratar quando o senhor demora — a pressão revela o coração. O servo fiel age da mesma forma sabendo que o senhor pode chegar a qualquer momento.`;
+  // [120]
+  if (d.livroAbrev === 'Mt' && /dez.*madrinhas|dez virgens/i.test(p))
+    return `A simetria de A parábola de dez madrinhas espelha A: saíram ao encontro do esposo ↔ A': saí ao seu encontro. No centro: o contraste entre dormir e despertar (C–C'). O pivô teológico é o azeite que não pode ser emprestado — a preparação interior é intransferível. Na vida da igreja: cinco eram insensatas não por má vontade — simplesmente não se prepararam. A preparação para o reino não pode ser delegada nem comprada na última hora. O que está dentro não pode ser transferido.`;
+  // [121]
+  if (d.livroAbrev === 'Mt' && /parabola.*talentos/i.test(p))
+    return `A simetria de A parábola dos talentos espelha A: chamou os servos e entregou os bens ↔ A': voltou e ajustou contas. No centro: o que enterrou o talento (D). O pivô teológico é que enterrar por medo é recusa de usar o que foi dado. Na vida da igreja: o servo de um talento não desperdiçou — guardou. Mas guardar é o mesmo que desperdiçar quando o esperado é multiplicar. O dom não usado atrofia. A prestação de contas do reino inclui o que fizemos com o que recebemos.`;
+  // [122]
+  if (d.livroAbrev === 'Mt' && /julgamento.*nacoes|juizo.*nacoes/i.test(p))
+    return `A simetria de Julgamento das Nações espelha A: bênção do Rei ↔ A': maldição do Rei. No centro: o que fizestes a um destes irmãos mais pequeninos, a mim fizestes (C). O pivô teológico é a identificação de Jesus com os vulneráveis. Na vida da igreja: o critério do julgamento final não é declaração doutrinária — é cuidado com os famintos, estrangeiros, nus, doentes, presos. O que surpresa os justos é que servir os necessitados era servir a Jesus. A missão social não é alternativa ao evangelho — é o evangelho em ação.`;
+  // [123]
+  if (d.livroAbrev === 'Mt' && /complô.*matar.*jesus|plano.*matar.*jesus/i.test(p))
+    return `A simetria de O complô a matar Jesus espelha A: daqui a dois dias será a Páscoa ↔ A': não durante a festa. No centro: a conspiração dos sumos sacerdotes (C). O pivô teológico é a ironia pascal — Jesus, o Cordeiro, é condenado exatamente na festa da libertação. Na vida da igreja: o plano humano de matar Jesus no momento "errado" foi sobreposto pelo plano divino que o colocou exatamente na hora certa. Os que planejavam eliminar Jesus foram os instrumentos do cumprimento profético.`;
+  // [124]
+  if (d.livroAbrev === 'Mt' && /uncao.*betania/i.test(p))
+    return `A simetria de A unção em Betânia espelha A: derramou o perfume ↔ A': ao derramar este perfume. No centro: ela fez uma boa obra para comigo (C). O pivô teológico é o memorial — onde quer que o evangelho for pregado, isso que ela fez será contado. Na vida da igreja: o gesto extravagante que os discípulos condenaram como desperdício, Jesus consagrou como preparação para a sepultura. A devoção que parece irracional para o calculista pode ser exatamente o que o momento exige.`;
+  // [125]
+  if (d.livroAbrev === 'Mt' && /judas.*trair.*jesus|judas.*concorda/i.test(p))
+    return `A simetria de Judas concorda a trair Jesus espelha A: que quereis dar-me para entregar? ↔ A': para o entregar. No centro: trinta moedas de prata (B). O pivô teológico é a precificação do Messias — trinta moedas, o preço de um escravo (Êx 21.32). Na vida da igreja: o que Judas fez por trinta moedas é o que fazemos cada vez que trocamos fidelidade a Jesus por qualquer vantagem. Não é necessário trair explicitamente — basta silenciar na hora que custaria.`;
+  // [126]
+  if (d.livroAbrev === 'Mt' && /pascoa.*discipulos|ultima.*ceia.*pascoa/i.test(p))
+    return `A simetria de A páscoa com Os discípulos espelha A: onde prepararmos a ceia? ↔ A': porventura sou eu, Mestre? No centro: um de vós me há de trair (D). O pivô teológico é que Jesus sabe quem o trairá — e serve a todos na mesma mesa. Na vida da igreja: a mesa do Senhor inclui os que vão falhar. Jesus não esperou que os discípulos fossem perfeitos para sentar com eles. A Ceia não é para os que já chegaram — é para os que ainda estão no caminho.`;
+  // [127]
+  if (d.livroAbrev === 'Mt' && /institution.*senhor.*ceia|instituicao.*eucaristia/i.test(p))
+    return `A simetria de Institution de não Senhor ceia espelha A: tomou o pão e abençoou ↔ A': tomou o cálice e deu graças. No centro: isto é o meu corpo / este é o meu sangue (B–B'). O pivô teológico é a correspondência entre a oração e o dom — ação de graças precede a partilha. Na vida da igreja: a Ceia do Senhor é ação de graças (eucaristia) antes de ser memorial. O pão e o cálice dizem: o corpo foi dado, o sangue foi derramado. Cada vez que compartilhamos, proclamamos a morte do Senhor.`;
+  // [128]
+  if (d.livroAbrev === 'Mt' && /negacao.*pedro.*predita|predicao.*negacao.*pedro/i.test(p))
+    return `A simetria de De Pedro negação predito espelha A: todos vos escandalizareis ↔ A': tu me negarás três vezes. No centro: a negação pelos discípulos (B–B'). O pivô teológico é a confiança excessiva de Pedro — "nunca te negarei" — logo antes da queda. Na vida da igreja: a autoconfiança espiritual é frequentemente o antecedente da falha. A hora de mais vulnerabilidade pode ser a que segue a declaração mais corajosa. Jesus predisse para que Pedro, ao cair, soubesse que a restauração já estava prevista.`;
+  // [129]
+  if (d.livroAbrev === 'Mt' && /getsemani|jesus ora.*getsemani/i.test(p))
+    return `A simetria de Jesus ora em Getsêmani espelha A: assentai-vos aqui ↔ A': levantai-vos. No centro: vigiai e orai (D). O pivô teológico é "não como eu quero, mas como tu queres" — a oração mais difícil e mais fiel ao mesmo tempo. Na vida da igreja: Getsêmani é o modelo de oração sob pressão máxima — honestidade sobre o que sentimos combinada com entrega ao que Deus determina. Os discípulos dormiram; Jesus orou. A distância entre os dois é o abismo entre fé exercida e fé declarada.`;
+  // [130]
+  if (d.livroAbrev === 'Mt' && /traicao.*prisao.*jesus/i.test(p))
+    return `A simetria de A traição e prisão de Jesus espelha A: espadas e porretes ↔ A': com espadas e porretes. No centro: quem pega na espada à espada morrerá (C–C'). O pivô teológico é o cumprimento das Escrituras como razão da não-resistência de Jesus. Na vida da igreja: Jesus poderia ter pedido doze legiões de anjos — escolheu não pedir. A renúncia ao poder para cumprir a Escritura é o modelo de quem serve por amor e não por estratégia.`;
+  // [131]
+  if (d.livroAbrev === 'Mt' && /jesus.*sumo.*sacerdote|jesus.*high.*sacerdote/i.test(p))
+    return `A simetria de Jesus antes de high sacerdote espelha A: levaram Jesus a Caifás ↔ A': cuspiam-lhe no rosto. No centro: Jesus fica em silêncio (F). O pivô teológico é o silêncio de Jesus diante das falsas acusações — cumprimento do Servo Sofredor de Isaías. Na vida da igreja: há momentos em que o silêncio é a resposta mais poderosa. Jesus não precisava se defender — a verdade não precisava de defesa naquele momento. A dignidade de não responder às acusações falsas pode ser mais eloquente do que qualquer réplica.`;
+  // [132]
+  if (d.livroAbrev === 'Mt' && /negacao.*pedro.*jesus|pedro.*nega.*jesus/i.test(p))
+    return `A simetria de De Pedro negação de Jesus espelha A: Pedro estava lá fora no pátio ↔ A': saiu para fora e chorou amargamente. No centro: as três negações (B1–B3). O pivô teológico é o pranto amargo — Pedro não endurece, chora. Na vida da igreja: a queda de Pedro não o elimina — é o início da restauração (Jo 21). O choro amargo após a falha é mais próximo de Deus do que o endurecimento. Pedro que chora tem mais esperança do que Judas que devolve as moedas mas não busca o perdão.`;
+  // [133]
+  if (d.livroAbrev === 'Mt' && /jesus.*pilatos|jesus.*levado.*pilatos/i.test(p))
+    return `Jesus é levado diante de Pilatos — o poder político encontra o Filho de Deus. A transferência de Jesus do tribunal religioso para o romano é o momento em que a condenação religiosa busca cumprimento legal. O pivô teológico é que nenhuma autoridade — religiosa ou política — age fora do permissivo de Deus. Na vida da igreja: Jesus não resistiu à entrega porque entendeu que esse era o caminho. O poder que condena o justo não triunfa — torna-se instrumento do que não consegue controlar.`;
+  // [134]
+  if (d.livroAbrev === 'Mt' && /suicidio.*judas/i.test(p))
+    return `A simetria de O suicídio de Judas espelha A: devolveu as trinta moedas ↔ A': tomaram as trinta moedas. No centro: o campo do oleiro (B–B'). O pivô teológico é o contraste com Pedro — ambos falharam; um chorou e buscou restauração, o outro devolveu o dinheiro e foi destruído. Na vida da igreja: o remorso que devolve o dinheiro mas não busca o perdão é diferente da arrependimento que corre para a cruz. Judas reconheceu o erro — mas não sabia que o Senhor que traiu poderia perdoar.`;
+  // [135]
+  if (d.livroAbrev === 'Mt' && /pilatos.*interroga.*jesus|pilatos.*questiona/i.test(p))
+    return `A simetria de Pilatos questiona Jesus espelha A: pergunta de Pilatos ↔ A': pergunta de Pilatos. No centro: Jesus não responde (B–B'). O pivô teológico é o silêncio de Jesus que maravilhou Pilatos — um governador acostumado a respostas, enfrenta o único que não se defende. Na vida da igreja: a majestade do silêncio de Jesus diante do poder é desconcertante. Não havia nada que Jesus precisasse provar a Pilatos. A inocência não precisa se justificar — apenas ser.`;
+  // [136]
+  if (d.livroAbrev === 'Mt' && /barrabas.*jesus/i.test(p))
+    return `A simetria de Barrabás ou Jesus? espelha A: qual quereis que solte? ↔ A': soltou-lhes Barrabás. No centro: seja crucificado! (C). O pivô teológico é a substituição — o culpado solto, o inocente crucificado. Na vida da igreja: Barrabás é a imagem de cada ser humano. O culpado é libertado porque o inocente toma o lugar. A exigência "crucifica-o" que a multidão gritou é o que a justiça divina satisfez — só que em favor de nós, não contra nós.`;
+  // [137]
+  if (d.livroAbrev === 'Mt' && /soldados.*zombam.*jesus/i.test(p))
+    return `A simetria de Os soldados zombar Jesus espelha A: salve, rei dos judeus ↔ A': este é Jesus, o rei dos judeus. No centro: a cruz (B–B'). O pivô teológico é a ironia — proclamaram a verdade sem saber. O "rei dos judeus" que zombaram na clámide escarlate era realmente o Rei. Na vida da igreja: as insígnias do escárnio viraram insígnias de glória. A coroa de espinhos, o cetro de cana, o título acima da cruz — tudo que foi zombaria tornou-se confissão de quem ele é.`;
+  // [138]
+  if (d.livroAbrev === 'Mt' && /crucificacao.*jesus/i.test(p))
+    return `A simetria de A crucificação de Jesus espelha A: dois salteadores crucificados com ele ↔ A': os salteadores que estavam com ele. No centro: a salvação de Deus — desça se é Filho de Deus (B–B'). O pivô teológico é que Jesus não desceu da cruz porque sua missão era permanecer nela. Na vida da igreja: os que desafiavam "salva-te a ti mesmo" não entendiam que a salvação deles exigia que ele não se salvasse. O poder da cruz está exatamente na recusa de descer.`;
+  // [139]
+  if (d.livroAbrev === 'Mt' && /morte de jesus/i.test(p))
+    return `A simetria de A morte de Jesus espelha A: Jesus exclamou em alta voz ↔ A': Jesus exclamou de novo em alta voz. No centro: a esponja com vinagre (C). O pivô teológico é o grito de abandono — "Deus meu, Deus meu, por que me abandonaste?" — que é o início do Salmo 22, que termina em louvor. Na vida da igreja: Jesus não morreu em silêncio stoico — morreu gritando a realidade do abandono. A morte de Jesus inclui a dimensão do desamparo que nós nunca precisaremos viver, porque ele a viveu.`;
+  // [140]
+  if (d.livroAbrev === 'Mt' && /testemunhas.*crucificacao/i.test(p))
+    return `A simetria de Testemunhas da crucificação espelha A: terra estremeceu, rochas fenderam ↔ A': o terremoto e o que sucedera. No centro: a ressurreição (B–B'). O pivô teológico é o centurião que viu e confessou — gentio, soldado de Roma, o primeiro a confessar Jesus como Filho de Deus diante da morte. Na vida da igreja: às vezes a confissão mais clara vem de quem estava do lado errado. O centurião não tinha teologia — tinha olhos. E o que viu foi suficiente para confessar.`;
+  // [141]
+  if (d.livroAbrev === 'Mt' && /sepultamento.*jesus/i.test(p))
+    return `A simetria de O sepultamento de Jesus espelha A: Maria Madalena e Maria ↔ A': Maria Madalena e a outra Maria. No centro: Pilatos autoriza a entrega do corpo (D). O pivô teológico é o cuidado com o corpo morto — José pede, Pilatos autoriza, as mulheres observam. Na vida da igreja: o sepultamento importa teologicamente — Jesus realmente morreu, foi realmente sepultado. A ressurreição não é despertar de desmaio — é vitória sobre morte real. As mulheres que ficaram são as primeiras testemunhas do túmulo vazio.`;
+  // [142]
+  if (d.livroAbrev === 'Mt' && /guarda.*tumulo|guarda no sepulcro/i.test(p))
+    return `A simetria de Guarda no túmulo espelha A: sacerdotes e fariseus diante de Pilatos ↔ A': Pilatos lhes disse. No centro: os guardas do sepulcro (C). O pivô teológico é a ironia — ao tentar prevenir a ressurreição, os inimigos de Jesus tornaram-se as melhores testemunhas de que o túmulo estava vazio. Na vida da igreja: o esforço humano para manter Jesus morto produziu as condições para o testemunho mais irrefutável. Os próprios guardas relataram o que viram — e foram pagos para mudar a história.`;
+  // [143]
+  if (d.livroAbrev === 'Mt' && /ressurreicao.*jesus/i.test(p))
+    return `A simetria de A ressurreição de Jesus espelha A: foram ver o sepulcro ↔ A': partiram apressadamente do sepulcro. No centro: ide à Galileia (C–C'). O pivô teológico é a transformação do luto em missão — as mulheres que foram chorar são enviadas a anunciar. Na vida da igreja: a ressurreição não apenas confirma a divindade de Jesus — redefine o que fazer com a notícia. Foram ao sepulcro com especiarias; saíram com o evangelho. O encontro com o ressurreto sempre transforma a direção do caminho.`;
+  // [144]
+  if (d.livroAbrev === 'Mt' && /relatorio.*guarda|guarda.*relatorio/i.test(p))
+    return `A simetria de Guarda relatório de guarda espelha A: contaram tudo aos sacerdotes ↔ A': esta versão se divulgou. No centro: o falso testemunho (C). O pivô teológico é que a história fabricada ("os discípulos roubaram o corpo") confirma que o túmulo estava vazio — ninguém discutiu isso. Na vida da igreja: a resposta mais antiga à ressurreição não foi refutação do fato — foi fabricação de uma explicação alternativa. O túmulo vazio não é questionado; o que aconteceu com o corpo é o que divide as narrativas.`;
+  // [145]
+  if (d.livroAbrev === 'Mt' && /missao.*discipulos|grande.*comissao/i.test(p))
+    return `A simetria de Missão dos Discípulos espelha A: quando o viram ↔ A': eu estou convosco todos os dias. No centro: fazei discípulos de todas as nações (C). O pivô teológico é a autoridade universal como fundamento da missão universal — "todo poder me foi dado, portanto ide". Na vida da igreja: a Grande Comissão não termina com o batismo — inclui ensinar a guardar tudo o que Jesus ordenou. Discipulado é formação, não apenas conversão. E a presença de Jesus não é condição futura — é realidade presente que sustenta o ir.`;
 
   // Atos dos Apóstolos
   if (/pentecostes|espirito.*santo.*fogo|linguas.*fogo/i.test(p))
@@ -2582,6 +2993,298 @@ function gerarOracao(d: DiaDevocional): string {
   // [315]
   if (/o crime de gibea/i.test(p))
     return `Pai, Juízes termina com o que começa em Gênesis 19 — violência que espelha Sodoma. O diagnóstico não é falta de monarquia — é ausência de Senhor. Que eu nunca busque estruturas externas para fazer o que só a tua presença interna pode fazer. O rei que Israel precisava eras tu. O rei que eu preciso também és tu. Amém.`;
+
+  // Mateus orações [1]–[145]
+  if (d.livroAbrev === 'Mt' && /genealogia de jesus/i.test(p))
+    return `Pai, tu entraste na história humana com todas as suas irregularidades. Nomes improváveis estão na linhagem do Messias — e isso me inclui. Que eu nunca ache minha história demasiado quebrada para ser parte do teu plano. Amém.`;
+  if (d.livroAbrev === 'Mt' && /nascimento de jesus/i.test(p))
+    return `Senhor, José obedeceu sem entender tudo. Dá-me coragem para agir quando és claro, mesmo quando não vejo o quadro completo. Que minha obediência silenciosa abra espaço para o teu cumprimento. Amém.`;
+  if (d.livroAbrev === 'Mt' && /visita.*magos|magos/i.test(p))
+    return `Deus, os magos vieram de longe para adorar. Afasta em mim tudo que é Herodes — o medo do teu reino, a hostilidade disfarçada de interesse. Que minha adoração seja genuína como a deles, sem calcular o custo. Amém.`;
+  if (d.livroAbrev === 'Mt' && /fuga.*egito|fuga a egito/i.test(p))
+    return `Pai, José levantou de noite porque confiou na tua voz. Ensina-me a obedecer prontamente, sem esperar confirmação de todo mundo. Que a proteção da minha família comece na minha disponibilidade de mover quando tu falas. Amém.`;
+  if (d.livroAbrev === 'Mt' && /massacre.*bebes/i.test(p))
+    return `Senhor, este texto não deixa escapar o peso do sofrimento inocente. Ajuda-me a não minimizar a dor real com respostas fáceis. Que eu fique com quem chora, como tu ficaste com Raquel. Amém.`;
+  if (d.livroAbrev === 'Mt' && /retorno.*egito|retorno de egito/i.test(p))
+    return `Deus, tu guiaste José passo a passo — um sonho de cada vez. Guarda-me da ansiedade de precisar saber todo o plano de uma vez. Que eu confie no próximo passo que tu mostras, sem exigir o mapa completo. Amém.`;
+  if (d.livroAbrev === 'Mt' && /proclamacao.*joao.*batista|proclamacao de joao/i.test(p))
+    return `Pai, João preparou o caminho com arrependimento e frutos. Mostra-me o que em minha vida ainda não corresponde ao que declaro crer. Que meu arrependimento produza frutos visíveis, não apenas sentimentos passageiros. Amém.`;
+  if (d.livroAbrev === 'Mt' && /batismo de jesus/i.test(p))
+    return `Senhor, antes de qualquer obra tu declaraste Jesus como teu Filho amado. Que eu viva do meu batismo — da identidade que tu me dás — antes de tentar provar algo pelo desempenho. Que tua voz sobre mim seja mais alta do que a avaliação dos outros. Amém.`;
+  if (d.livroAbrev === 'Mt' && /tentacao de jesus/i.test(p))
+    return `Pai, Jesus resistiu com a Palavra. Forma em mim não apenas o conhecimento da Escritura, mas o discernimento para usá-la corretamente. Que eu reconheça as tentações que chegam com aparência de razoável e responda com a tua verdade. Amém.`;
+  if (d.livroAbrev === 'Mt' && /jesus.*ministerio.*galile|jesus inicia.*ministerio/i.test(p))
+    return `Senhor, a prisão de João não interrompeu o teu plano — foi o sinal do próximo capítulo. Quando o que me parecia central for silenciado, que eu confie que tu já preparaste o que vem a seguir. Amém.`;
+  if (d.livroAbrev === 'Mt' && /chama.*primeiros.*discipulos|jesus chama/i.test(p))
+    return `Jesus, tu chamaste e eles deixaram imediatamente. Perdoa minha lentidão de resposta, minha negociação com o chamado. Que quando tu falares, eu deixe o que precisa ser deixado sem prolongar a conversa com o que fica. Amém.`;
+  if (d.livroAbrev === 'Mt' && /jesus ministra.*multidoes/i.test(p))
+    return `Pai, Jesus ministrou movido por compaixão, não por estratégia. Desperta em mim a compaixão pelas pessoas ao meu redor antes que eu pense em programa ou método. Que o amor real preceda qualquer plano de alcance. Amém.`;
+  if (d.livroAbrev === 'Mt' && /bem.*aventurancas/i.test(p))
+    return `Senhor, tu declaraste benditos os que o mundo marginaliza. Desafia minha escala de valores onde ainda reproduzo a lógica do mundo. Que o reino dos céus seja o critério da minha admiração e da minha aspiração. Amém.`;
+  if (d.livroAbrev === 'Mt' && /sal e luz/i.test(p))
+    return `Pai, tu disseste que eu sou — não que posso ser — sal e luz. Ajuda-me a viver da identidade que tu me dás em vez de tentar construí-la. Que minha vida dê sabor e clareza onde há insipidez e escuridão, para que vejam tuas boas obras. Amém.`;
+  if (d.livroAbrev === 'Mt' && /lei e.*profetas|lei e os profetas/i.test(p))
+    return `Senhor Jesus, tu vieste cumprir a lei, não abolir. Guarda-me do antinomismo que despreza teus mandamentos e do legalismo que os cumpre sem amor. Que a tua lei escrita em meu coração produza justiça que exceda a dos fariseus. Amém.`;
+  if (d.livroAbrev === 'Mt' && /sobre.*ira|sobre a ira/i.test(p))
+    return `Pai, há reconciliações que preciso buscar antes de continuar adorando. Dá-me humildade para ir primeiro ao irmão, mesmo quando a ofensa não foi minha. Que nenhuma oferta chegue ao teu altar enquanto carrego uma ruptura que posso resolver. Amém.`;
+  if (d.livroAbrev === 'Mt' && /adulterio e divorcio|sobre.*adulterio/i.test(p))
+    return `Senhor, a pureza começa no olhar. Guarda meus olhos do que alimenta o que não devo desejar. Forma em mim um coração que honra o compromisso no silêncio, não apenas nas declarações públicas. Amém.`;
+  if (d.livroAbrev === 'Mt' && /sobre.*juramentos/i.test(p))
+    return `Pai, que meu sim seja sim e meu não seja não. Onde minha palavra perdeu credibilidade, restaura minha integridade através de ação consistente ao longo do tempo. Que eu não precise de juramentos para ser acreditado. Amém.`;
+  if (d.livroAbrev === 'Mt' && /sobre.*retaliacao/i.test(p))
+    return `Jesus, tu ensinaste a dar a outra face, caminhar a milha extra, dar a túnica. Isso é impossível por força própria. Encheme do teu amor para que eu possa responder ao mal com o bem, quebrando o ciclo que o mal quer perpetuar. Amém.`;
+  if (d.livroAbrev === 'Mt' && /amor.*inimigos|amor para inimigos/i.test(p))
+    return `Pai, tu fazes chover sobre justos e injustos. Onde eu amo apenas quem me ama, ainda não alcancei teu padrão. Dá-me graça para orar pelos que me perseguem, não como exercício, mas como participação no teu coração. Amém.`;
+  if (d.livroAbrev === 'Mt' && /sobre.*esmola/i.test(p))
+    return `Senhor, libera-me do desejo de ser visto sendo generoso. Que eu dê sem audiência, confie que teus olhos veem no secreto, e que a única aprovação que busco é a tua. Amém.`;
+  if (d.livroAbrev === 'Mt' && /sobre.*oracao.*mt.*6\.5|sobre a oracao/i.test(p))
+    return `Pai, que minha oração em público seja o reflexo da minha oração no quarto fechado. Onde ore para ser visto, perdoa e renova meu motivo. Que tu sejas meu único destinatário quando falo contigo. Amém.`;
+  if (d.livroAbrev === 'Mt' && /oracao do senhor|pai nosso|nao senhor oracao/i.test(p))
+    return `Pai nosso, ensina-me a orar na ordem que Jesus ensinou: teu nome, teu reino, tua vontade — depois minhas necessidades. Forma em mim um coração que prioritiza o que tu priorizas antes de chegar ao que eu preciso. Amém.`;
+  if (d.livroAbrev === 'Mt' && /sobre.*jejum/i.test(p))
+    return `Senhor, quando jejuar, que seja entre mim e tu. Libera-me da performance religiosa que precisa de plateia. Que o jejum me abra para a tua voz e não para a admiração alheia. Amém.`;
+  if (d.livroAbrev === 'Mt' && /sobre.*tesouros/i.test(p))
+    return `Pai, onde está meu tesouro, está meu coração. Mostra-me o que de fato ocupa o lugar de segurança na minha vida. Que eu invista no que não a traça nem a ferrugem corrói, e que meu coração siga. Amém.`;
+  if (d.livroAbrev === 'Mt' && /olho sao|sao olho/i.test(p))
+    return `Senhor, guarda meus olhos do que enche meu corpo de trevas. Que o que eu escolho ver, ler, assistir e meditar forme em mim luz, não escuridão. Que meu olho seja são para que todo meu ser seja iluminado. Amém.`;
+  if (d.livroAbrev === 'Mt' && /nao.*ansioso|nao fique ansioso/i.test(p))
+    return `Pai dos lírios e das aves, afasta de mim a ansiedade que divide minha lealdade entre ti e Mamom. Que eu busque primeiro o teu reino hoje, confiando que as coisas necessárias serão acrescentadas. Amém.`;
+  if (d.livroAbrev === 'Mt' && /judging others|julgamento.*outros/i.test(p))
+    return `Senhor, antes de ver a farpela no olho do irmão, mostra-me a trave no meu. Dá-me humildade para o autoexame honesto antes do julgamento do outro. Que meu discernimento venha de olho limpo, não de olho crítico. Amém.`;
+  if (d.livroAbrev === 'Mt' && /ask.*busca.*bate|pedi.*buscai.*batei/i.test(p))
+    return `Pai, tu és melhor do que qualquer pai humano em dar boas coisas aos que pedem. Libera-me da hesitação em pedir, da timidez em buscar, da desistência antes de bater. Que eu persista em oração confiando no teu caráter, não no meu mérito. Amém.`;
+  if (d.livroAbrev === 'Mt' && /estreito.*porta|porta estreita/i.test(p))
+    return `Jesus, tu es a porta estreita. Guarda-me de preferir o caminho de menor resistência porque é mais popular. Que eu entre pelo que conduz à vida, mesmo que poucos escolham esse caminho. Amém.`;
+  if (d.livroAbrev === 'Mt' && /arvore.*fruto|um arvore e fruto/i.test(p) && d.capitulos.startsWith('7'))
+    return `Pai, os frutos revelam as raízes. Examina minha vida e mostra-me o que os frutos dizem sobre o estado do coração. Onde há frutos ruins, não me deixa apenas podar — vai à raiz. Amém.`;
+  if (d.livroAbrev === 'Mt' && /auto.*engano|engano de si mesmo/i.test(p))
+    return `Senhor, guarda-me de um "Senhor, Senhor" sem obediência real. Não quero um ministério que te envergonha no final. Que eu te conheça e seja conhecido por ti — não apenas que realize coisas em teu nome. Amém.`;
+  if (d.livroAbrev === 'Mt' && /ouvintes.*praticantes|que ouvem.*praticam/i.test(p))
+    return `Pai, o Sermão do Monte pergunta sobre meu fundamento. Ajuda-me a não apenas ouvir e aplaudir — mas praticar. Que minha vida seja construída sobre a rocha da obediência, visível na resistência às tempestades. Amém.`;
+  if (d.livroAbrev === 'Mt' && /jesus purifica um leproso/i.test(p))
+    return `Senhor, como o leproso, eu te digo: se quiseres, podes. Não presumo — confio. Que minha oração carregue tanto a fé de que podes quanto a humildade de reconhecer que tu decides. Amém.`;
+  if (d.livroAbrev === 'Mt' && /centuriao|cura.*servo.*centuriao/i.test(p))
+    return `Jesus, o centurião entendeu autoridade delegada melhor do que os religiosos. Aumenta minha fé na tua palavra — que eu confie que quando tu dizes, é feito. Que minha fé não precise da tua presença física para agir. Amém.`;
+  if (d.livroAbrev === 'Mt' && /casa de pedro|cura.*casa de pedro/i.test(p))
+    return `Senhor, tu curaste no íntimo da casa de Pedro e em seguida as multidões. Que o teu cuidado comigo no privado me encha de compaixão pelo público ao meu redor. Que o milagre pessoal me torne disponível para o coletivo. Amém.`;
+  if (d.livroAbrev === 'Mt' && /would.*be.*seguidores|seguidores de jesus/i.test(p))
+    return `Jesus, tu foste honesto sobre o custo do seguimento. Guarda-me de um compromisso superficial baseado no conforto esperado. Que eu entenda o que significa seguir-te antes de declarar que te sigo. Amém.`;
+  if (d.livroAbrev === 'Mt' && /acalma.*tempestade|jesus acalma/i.test(p))
+    return `Senhor da tempestade e da bonança, quando o barco balance e eu entre em pânico, ajuda-me a acordar tu — não para exigir que a tempestade pare, mas para lembrar que tu estás no barco. A tua presença é maior do que a tormenta. Amém.`;
+  if (d.livroAbrev === 'Mt' && /gadarenos|endemoninhados.*gadara/i.test(p))
+    return `Pai, a cidade pediu que Jesus fosse embora após a libertação porque o custo parecia alto. Guarda-me de preferir a estabilidade do familiar à liberdade que tu ofereces. Que eu não peça que te retires quando tua presença começa a custar algo. Amém.`;
+  if (d.livroAbrev === 'Mt' && /jesus cura um paralitico/i.test(p))
+    return `Senhor, tu viste o que meus amigos não viram — o que estava dentro antes do que estava fora. Cura primeiro o que está escondido. Onde carrego culpa não confessada, perdoa. Onde carrego vergonha, liberta. Depois, o que for preciso no corpo, tu sabes. Amém.`;
+  if (d.livroAbrev === 'Mt' && /chamado de mateus/i.test(p))
+    return `Jesus, tu sentaste com Mateus e seus amigos sem precisar de uma abertura formal. Dá-me coragem de sentar onde as pessoas estão, sem esperar que venham à minha estrutura. Que minha presença seja convite, como a tua foi para Mateus. Amém.`;
+  if (d.livroAbrev === 'Mt' && /questao.*jejum|pergunta.*jejum/i.test(p))
+    return `Senhor, onde ainda tento colocar o evangelho em estruturas antigas, liberta-me. Que eu não resista ao novo que tu fazes por apego ao que era confortável. Que o vinho novo encontre odres que se dobraram à tua renovação. Amém.`;
+  if (d.livroAbrev === 'Mt' && /filha de jairo|menina.*mulher.*curou/i.test(p))
+    return `Pai, tu atendeste no caminho — a mulher foi curada enquanto Jesus ia para a menina. Ajuda-me a reconhecer que a interrupção no meu caminho pode ser a tua missão para mim naquele momento. Que eu não trate como distração o que tu tratas como destino. Amém.`;
+  if (d.livroAbrev === 'Mt' && /jesus cura dois.*cego/i.test(p) && d.capitulos.startsWith('9'))
+    return `Senhor, tu perguntaste: credes que posso? A minha resposta é sim. Onde minha fé está fraca, fortalece-a. Onde está presunçosa, humilha-a. Que meu "sim, Senhor" seja genuíno e não automático. Amém.`;
+  if (d.livroAbrev === 'Mt' && /jesus cura um.*mudo|cura.*mudo/i.test(p))
+    return `Pai, o mesmo milagre dividiu a multidão e os fariseus. Guarda-me de atribuir ao diabo o que vejo teu Espírito fazer porque não cabe na minha categoria. Que eu tenha olhos abertos para reconhecer tua obra. Amém.`;
+  if (d.livroAbrev === 'Mt' && /messe.*grande.*operarios|colheita.*grande/i.test(p))
+    return `Senhor da messe, a colheita é grande e os obreiros são poucos. Antes de reclamar da escassez, faz de mim um obreiro disponível. Que minha primeira resposta ao ver a messe seja oração, não estratégia. Amém.`;
+  if (d.livroAbrev === 'Mt' && /doze apostolos/i.test(p))
+    return `Pai, tu escolheste pescadores, um publicano, um zelote. Não buscaste os mais qualificados — buscaste os disponíveis. Que eu pare de esperar me tornar mais qualificado para servir e simplesmente me apresente disponível. Amém.`;
+  if (d.livroAbrev === 'Mt' && /missao.*doze/i.test(p))
+    return `Jesus, tu enviaste sem bolsa extra, dependendo de hospitalidade. Onde eu controlo demais minha segurança material, liberta-me. Que eu confie que onde tu me envias, tu já preparaste o que é necessário. Amém.`;
+  if (d.livroAbrev === 'Mt' && /vinda.*perseguicoes|perseguicoes futuras/i.test(p))
+    return `Senhor, tu avisaste que perseguição viria. Onde eu sofro rejeição por fidelidade a ti, ajuda-me a não interpretar isso como fracasso. Que a oposição não me faça recuar do que tu me chamaste a dizer e ser. Amém.`;
+  if (d.livroAbrev === 'Mt' && /quem.*temer|a quem.*fear/i.test(p))
+    return `Pai, o medo dos homens tem me silenciado onde deveria falar. Enche-me do temor de Deus que liberta do temor humano. Que o conhecimento de que meus cabelos estão contados me dê coragem para confessar teu nome. Amém.`;
+  if (d.livroAbrev === 'Mt' && /nao.*paz.*espada/i.test(p))
+    return `Jesus, tu avisaste que teu chamado pode criar tensão com as lealdades mais próximas. Dá-me graça para amar família e ainda assim ter clareza sobre qual lealdade é suprema. Que eu te ame mais do que os que mais amo. Amém.`;
+  if (d.livroAbrev === 'Mt' && /as recompensas|recompensas/i.test(p))
+    return `Senhor, quem recebe o teu mensageiro te recebe. Que eu receba bem os que tu envias, mesmo os sem títulos impressionantes. E que minha hospitalidade com os pequenos seja reconhecida por ti como hospitalidade ao Mestre. Amém.`;
+  if (d.livroAbrev === 'Mt' && /mensageiros.*joao.*batista|enviados.*joao/i.test(p))
+    return `Pai, João perguntou da prisão: és tu? E tu respondeste com obras. Quando minha fé vacilar, direciona meu olhar para o que estás fazendo — cegos que veem, coxos que andam, pobres que ouvem as boas novas. Que as obras respondam às minhas dúvidas. Amém.`;
+  if (d.livroAbrev === 'Mt' && /lamentos.*cidades|cidades impenitentes/i.test(p))
+    return `Senhor, Corazim viu milagres e não se arrependeu. Guarda-me de acumular experiências religiosas sem transformação real. Que o privilégio de conhecer o teu evangelho produza em mim resposta, não apenas familiaridade. Amém.`;
+  if (d.livroAbrev === 'Mt' && /jesus agradece.*pai|agradece ao pai/i.test(p))
+    return `Jesus, tu convidaste os cansados e sobrecarregados a vir. Eu venho. Carrego o que não consigo mais. Ensina-me a colocar teu jugo — que é leve porque tu carregas comigo. Que eu aprenda de ti, que és manso e humilde de coração. Amém.`;
+  if (d.livroAbrev === 'Mt' && /colhendo.*espigas.*sabado|questao.*sabado/i.test(p))
+    return `Senhor do sábado, guarda-me do legalismo que protege a regra às custas da pessoa. Ensina-me a reconhecer quando misericórdia pesa mais do que sacrifício ritual. Que eu seja como tu — que o ser humano importa mais do que a observância. Amém.`;
+  if (d.livroAbrev === 'Mt' && /homem.*mao.*ressequida|mao.*seca/i.test(p))
+    return `Pai, os fariseus saíram para complotar após uma cura. Guarda-me do endurecimento religioso que vê a obra de Deus e responde com hostilidade. Que minha religiosidade produza abertura ao teu agir, não fechamento. Amém.`;
+  if (d.livroAbrev === 'Mt' && /servo.*escolhido.*deus|servo de deus/i.test(p))
+    return `Senhor, o teu servo escolhido não contendeu nem gritou nas praças. Onde busco visibilidade para o que faço, humilha-me. Que eu sirva em quietude, confiando que os teus olhos veem o que a plateia não precisa ver. Amém.`;
+  if (d.livroAbrev === 'Mt' && /jesus e belzebu|beelzebul/i.test(p))
+    return `Pai, guarda-me de atribuir ao mal o que é claramente tua obra. Mantém meu coração aberto ao teu Espírito para que não chegue perto da blasfêmia que endurece a percepção do bem. Que eu sempre reconheça tua mão quando ela age. Amém.`;
+  if (d.livroAbrev === 'Mt' && /arvore.*fruto|um arvore e fruto/i.test(p) && d.capitulos.startsWith('12'))
+    return `Senhor, as palavras revelam o coração. Quando saem palavras de mim que me envergonham, não me deixa apenas controlar o discurso — vai ao coração e transforma a fonte. Que a abundância do que há dentro seja boa. Amém.`;
+  if (d.livroAbrev === 'Mt' && /exigencia.*sinal.*mt.*12|sinal.*mt.*12/i.test(p))
+    return `Pai, Nínive se arrependeu com um sermão. Eu tenho o evangelho completo. Que a abundância da tua revelação em minha vida produza arrependimento genuíno e não apenas familiaridade confortável. Amém.`;
+  if (d.livroAbrev === 'Mt' && /verdadeira.*familia.*jesus|parentes.*jesus/i.test(p))
+    return `Jesus, tu redefiniste família como aqueles que fazem a vontade do teu Pai. Que eu faça parte desta família não por nascimento ou cultura religiosa, mas pela obediência real. Que a lealdade ao Pai seja o centro da minha identidade. Amém.`;
+  if (d.livroAbrev === 'Mt' && /parabola do semeador.*mt|semeador.*mt.*13\.1/i.test(p))
+    return `Senhor, examina o solo do meu coração hoje. Onde está endurecido como caminho, amolece. Onde está pedregoso sem profundidade, aprofunda. Onde os espinhos me preocupam e sufocam, limpa. Que eu seja boa terra que produz fruto abundante. Amém.`;
+  if (d.livroAbrev === 'Mt' && /semeador.*explicou|semeador.*explicada/i.test(p))
+    return `Pai, os discípulos receberam a explicação da parábola porque perguntaram. Ensina-me a não ficar satisfeito com a superfície — a perguntar, a buscar entender, a não partir até que a palavra faça sentido no coração. Amém.`;
+  if (d.livroAbrev === 'Mt' && /parabola.*reino.*ceu.*1|parabola.*reino.*ceu.*mt.*13\.24/i.test(p))
+    return `Senhor, o reino começa como semente de mostarda. Guarda-me de desprezar os começos pequenos ou de tentar apressar o crescimento com meus métodos. Que eu plante, regue e confie que tu dás o crescimento. Amém.`;
+  if (d.livroAbrev === 'Mt' && /parabola.*reino.*ceu.*2|parabola.*reino.*ceu.*mt.*13\.36/i.test(p))
+    return `Pai, o tesouro e a pérola justificam a venda de tudo. Onde ainda seguro algo que não entrego ao teu reino, mostra-me o valor do que estou perdendo por segurar o que tenho. Que eu venda com alegria o que precisa ser vendido. Amém.`;
+  if (d.livroAbrev === 'Mt' && /tesouros novos.*velhos|tesouros novos e velhos/i.test(p))
+    return `Senhor, faz de mim um escriba instruído para o teu reino — capaz de tirar do tesouro coisas novas e antigas. Que a tradição me alimente e a tua renovação me atualize, sem perder nenhum dos dois. Amém.`;
+  if (d.livroAbrev === 'Mt' && /rejeicao.*jesus.*nazare|rejection.*nazare/i.test(p))
+    return `Pai, a familiaridade com o evangelho pode ser o maior obstáculo à fé. Guarda-me de uma relação com as Escrituras que é cultural mas não transformadora. Que eu me surpreenda com Jesus como se fosse a primeira vez. Amém.`;
+  if (d.livroAbrev === 'Mt' && /morte de joao.*batista/i.test(p))
+    return `Senhor, Herodes matou João para não perder a cara diante dos convidados. Guarda-me do medo da opinião alheia que me leva a decisões que sei que são erradas. Que a lealdade à verdade pese mais do que a aprovação da plateia. Amém.`;
+  if (d.livroAbrev === 'Mt' && /feeding cinco mil|multiplicacao.*cinco.*paes/i.test(p))
+    return `Jesus, tu abençoaste o que havia disponível e foi suficiente para todos. Onde me recuso a oferecer o que tenho porque parece pouco, liberta-me. Que eu coloque nas tuas mãos o que tenho e confie que tu multiplicas. Amém.`;
+  if (d.livroAbrev === 'Mt' && /jesus caminha.*agua|caminha sobre.*agua/i.test(p))
+    return `Senhor, Pedro afundou quando desviou o olhar. Onde a tempestade ao redor rouba meu foco de ti, chama-me de volta. Que eu mantenha os olhos em ti mesmo quando as ondas estão visíveis e o vento é forte. Amém.`;
+  if (d.livroAbrev === 'Mt' && /enfermos.*genesare|cura.*genesare/i.test(p))
+    return `Pai, Genesaré foi alcançada pelo testemunho dos que foram curados. Que minha história com Jesus se torne convite para outros. Que a borda do teu manto ainda seja acessível a quem se aproxima com fé. Amém.`;
+  if (d.livroAbrev === 'Mt' && /tradicao dos anciaos/i.test(p))
+    return `Senhor, guarda-me de tradições religiosas que substituem teus mandamentos. Onde honro forma sem substância, purifica. Que o que sai do meu coração e da minha boca corresponda ao que declaro acreditar. Amém.`;
+  if (d.livroAbrev === 'Mt' && /cananeia|fe.*mulher.*cananeia/i.test(p))
+    return `Pai, a cananeia não desistiu após duas recusas. Ensina-me persistência que não desiste quando a resposta demora. Que minha necessidade e minha confiança de que podes ajudar sejam suficientes para me manter orando. Amém.`;
+  if (d.livroAbrev === 'Mt' && /jesus cura muitas pessoas|cura muitos enfermos/i.test(p))
+    return `Senhor, os mudos falaram, coxos andaram, cegos viram. Tu ainda és o mesmo. Onde há em mim ou ao meu redor necessidade que ainda não foi trazida a ti, que eu a traga hoje com a mesma confiança da multidão de Genesaré. Amém.`;
+  if (d.livroAbrev === 'Mt' && /feeding quatro mil|multiplicacao.*sete.*paes/i.test(p))
+    return `Pai, tu viste a fome antes que os discípulos percebessem. Ensina-me a ver as necessidades ao meu redor com os teus olhos antes de esperar que outros apontem. Que a compaixão preceda a estratégia na minha vida. Amém.`;
+  if (d.livroAbrev === 'Mt' && /exigencia.*sinal.*mt.*16|sinal.*mt.*16/i.test(p))
+    return `Senhor, guarda-me de pedir sinais como condição para crer. Onde já recebi evidência suficiente e ainda hesito, é questão de coração, não de prova. Suaviza o que resiste em mim e aumenta minha fé. Amém.`;
+  if (d.livroAbrev === 'Mt' && /fermento.*fariseus.*saduceus/i.test(p))
+    return `Pai, os discípulos esqueceram os dois milagres de multiplicação e ainda pensaram em falta de pão. Guarda-me do esquecimento espiritual. Que eu cultive memória da tua fidelidade para que as preocupações presentes não apaguem o passado que testemunhei. Amém.`;
+  if (d.livroAbrev === 'Mt' && /confissao.*pedro/i.test(p))
+    return `Senhor Jesus, tu és o Cristo, o Filho de Deus vivo. Essa confissão não é produto meu — é revelação do teu Pai. Que eu a viva, não apenas a declare. Que a pedra sobre a qual a Igreja é construída seja também o fundamento da minha vida diária. Amém.`;
+  if (d.livroAbrev === 'Mt' && /jesus prediz.*morte.*ressurreicao.*mt.*16|morte.*ressurreicao.*predita/i.test(p))
+    return `Pai, Pedro confessou Jesus e logo depois o repreendeu. Guarda-me de reconhecer quem é Jesus e ao mesmo tempo resistir ao caminho que ele escolheu. Que minha fé inclua aceitar o caminho da cruz, não apenas a glória da confissão. Amém.`;
+  if (d.livroAbrev === 'Mt' && /cruz.*negacao.*si mesmo|abnegacao/i.test(p))
+    return `Jesus, perder a vida por ti é encontrá-la. Onde ainda me seguro com medo de perder o que tenho, liberta-me. Que o eu que precisa morrer morra, para que o eu que vive em ti viva de verdade. Amém.`;
+  if (d.livroAbrev === 'Mt' && /transfiguracao/i.test(p))
+    return `Pai, no monte da transfiguração só restou Jesus. Que em minha vida tudo que não é ele — tradições, sistemas, seguranças — seja relativizado. Que Jesus seja o centro que permanece quando tudo mais passa. Amém.`;
+  if (d.livroAbrev === 'Mt' && /elias.*ja.*come|elias ja veio/i.test(p))
+    return `Senhor, tu cumpres as promessas de formas que exigem olhos abertos para reconhecer. Onde espero o literal e perco o real, abre meus olhos. Que eu reconheça teu cumprimento mesmo quando não tem o formato que esperava. Amém.`;
+  if (d.livroAbrev === 'Mt' && /menino.*demonio|cura.*menino.*endemoninhado/i.test(p))
+    return `Pai, os discípulos fizeram o que sabiam e não conseguiram. Às vezes o problema não é método — é fé. Aumenta minha fé onde ela é pequena demais para a montanha que está diante de mim. Amém.`;
+  if (d.livroAbrev === 'Mt' && /jesus.*prediz.*novamente|prediz.*segunda.*vez.*morte/i.test(p))
+    return `Senhor, os discípulos ficaram muito tristes ao ouvir da morte — e perderam a promessa da ressurreição. Ajuda-me a segurar as duas partes da tua palavra: a morte é real, a ressurreição é certa. Que a certeza do terceiro dia fortaleça meu coração para o que vem antes. Amém.`;
+  if (d.livroAbrev === 'Mt' && /imposto.*templo/i.test(p))
+    return `Pai, Jesus era livre mas pagou para não ofender. Ensina-me a exercer minha liberdade com consideração pelo próximo. Que eu não use a graça como desculpa para desconsiderar os que ainda estão crescendo. Amém.`;
+  if (d.livroAbrev === 'Mt' && /quem.*maior|sobre quem sera/i.test(p))
+    return `Jesus, tu mostraste uma criança como modelo de grandeza no reino. Onde meu coração busca reconhecimento e posição, humilha-me. Que eu aprenda a depender de ti como criança antes de tentar ser grande para os outros. Amém.`;
+  if (d.livroAbrev === 'Mt' && /vida eterna.*mt.*18|eterno vida/i.test(p))
+    return `Senhor, o peso de causar tropeço nos pequenos é real. Que eu leve a sério minha influência sobre quem ainda está crescendo na fé. Que o que ensino, modelo e permito edifique, não derrube. Amém.`;
+  if (d.livroAbrev === 'Mt' && /ovelha.*perdida|parabola.*ovelha/i.test(p))
+    return `Pai, tu deixas as noventa e nove para buscar a uma. Onde me sinto distante e perdido, vem buscar-me. E onde há alguém ao meu redor que se afastou, move em mim a mesma busca que moves em ti mesmo. Amém.`;
+  if (d.livroAbrev === 'Mt' && /corrigir.*irmao|repreendendo.*peca/i.test(p))
+    return `Senhor, dá-me coragem para ir ao irmão a sós antes de qualquer outro passo. Que meu objetivo seja ganhar o irmão, não ter razão. E onde fui eu o errado, dá-me humildade para receber a repreensão fraterna como presente. Amém.`;
+  if (d.livroAbrev === 'Mt' && /servo.*impiedoso|parabola.*servo.*impiedoso/i.test(p))
+    return `Pai, recebi perdão que não merecia. Que esse perdão transforme meu coração e não apenas meu status. Onde ainda seguro rancor de alguém, lembra-me do que me foi perdoado — e liberta-me para perdoar de coração. Amém.`;
+  if (d.livroAbrev === 'Mt' && /ensino.*divorcio|sobre.*divorcio/i.test(p))
+    return `Senhor, o que Deus uniu, o homem não separe. Onde há casamentos em risco ao meu redor, que a comunidade de fé seja presença de graça e verdade. E onde há fracasso real, que haja cura e não apenas julgamento. Amém.`;
+  if (d.livroAbrev === 'Mt' && /jesus.*bencoa.*criancas|abencoa.*criancas/i.test(p))
+    return `Jesus, tu disseste: não os impeçais, pois deles é o reino. Guarda nossa comunidade de criar obstáculos à fé das crianças. Que as recebamos com o mesmo entusiasmo que tu demonstraste. Amém.`;
+  if (d.livroAbrev === 'Mt' && /jovem rico|rico.*jovem/i.test(p))
+    return `Pai, o jovem foi embora triste porque tinha muitas posses. Mostra-me o que no meu coração ocupa o lugar que deveria ser teu. Que eu tenha coragem de largar o que me impede de seguir completamente. Amém.`;
+  if (d.livroAbrev === 'Mt' && /perigo.*riquezas|sobre.*riquezas/i.test(p))
+    return `Senhor, para Deus tudo é possível — inclusive salvar o rico. Guarda meu coração do apego às riquezas que torna o caminho estreito ainda mais estreito. Que eu use o que tenho como instrumento do reino, não como fundamento da segurança. Amém.`;
+  if (d.livroAbrev === 'Mt' && /trabalhadores.*vinha|trabalhadores no vinhedo/i.test(p))
+    return `Pai generoso, tu pagas os da última hora o mesmo que os da primeira. Guarda-me do ressentimento com a tua graça para outros. Que eu me alegre com a generosidade que recebi, sem calcular o que outros merecem. Amém.`;
+  if (d.livroAbrev === 'Mt' && /terceira.*vez.*prediz|terceiro.*morte.*ressurreicao/i.test(p))
+    return `Senhor, tu subiste para Jerusalém sabendo o que te esperava. Dá-me coragem para caminhar na direção do que é certo mesmo quando sei que vai custar. Que a obediência informada seja minha resposta ao teu chamado. Amém.`;
+  if (d.livroAbrev === 'Mt' && /pedido.*mae.*tiago.*joao|mae de tiago e joao/i.test(p))
+    return `Jesus, a ambição de posição veio até de quem estava mais perto de ti. Examina em mim a motivação do que peço em oração — busco serviço ou status? Que minha ambição no reino seja de servir, não de ser visto servindo. Amém.`;
+  if (d.livroAbrev === 'Mt' && /ser.*servo|ser um servo/i.test(p))
+    return `Senhor, tu não vieste para ser servido, mas para servir. Onde ainda exijo reconhecimento pelo que faço, humilha-me. Que minha liderança seja serviço real, modelado no teu exemplo e não na lógica dos governantes pagãos. Amém.`;
+  if (d.livroAbrev === 'Mt' && /jesus cura dois.*cego/i.test(p) && d.capitulos.startsWith('20'))
+    return `Pai, tu perguntaste: que quereis que eu vos faça? Hoje eu te digo o que preciso — não escondo atrás de generalidades. Tu que viste os cegos, vê-me. E onde eu receber a cura, que eu siga como eles seguiram. Amém.`;
+  if (d.livroAbrev === 'Mt' && /entrada.*triunfal.*jerusalem/i.test(p))
+    return `Jesus, tu entraste em Jerusalém sobre um jumento, não num cavalo de guerra. Guarda-me de um seguimento baseado em hosanas — que eu siga o rei manso, não o triunfante que o povo queria. Amém.`;
+  if (d.livroAbrev === 'Mt' && /jesus purifica.*templo/i.test(p))
+    return `Pai, Jesus expulsou o que impedia a oração. Purifica minha vida dos comércios interiores que ocupam espaço que deveria ser de encontro contigo. Que minha vida seja casa de oração, não mercado de interesses religiosos. Amém.`;
+  if (d.livroAbrev === 'Mt' && /amaldicoa.*figueira|figueira.*seca/i.test(p))
+    return `Senhor, a figueira com folhas mas sem frutos foi amaldiçoada. Examina minha vida: onde há aparência sem substância, corrige. Que o que professo corresponda ao que produzo, visível a ti mesmo quando ninguém mais vê. Amém.`;
+  if (d.livroAbrev === 'Mt' && /autoridade.*jesus.*questionada|autoridade.*jesus.*contestada/i.test(p))
+    return `Jesus, a tua autoridade não precisa da aprovação dos que detêm o poder religioso. Guarda-me de buscar validação institucional para o que tu me chamaste a fazer. Que minha obediência a ti não espere o aval dos que preferem não responder. Amém.`;
+  if (d.livroAbrev === 'Mt' && /parabola.*dois.*filhos/i.test(p))
+    return `Pai, prefiro ser o filho que disse não e foi a ser o que disse sim e não foi. Onde há lacuna entre minha declaração e minha ação, fecha essa distância. Que o que faço corresponda ao que digo. Amém.`;
+  if (d.livroAbrev === 'Mt' && /lavradores.*maus|arrendatarios.*impios/i.test(p))
+    return `Senhor, a vinha tem dono e ele vem cobrar frutos. Que eu não aja como se os dons que recebi fossem propriedade minha. Que eu produza frutos para o dono da vinha, fiel administrador do que me foi confiado. Amém.`;
+  if (d.livroAbrev === 'Mt' && /banquete.*casamento|parabola.*casamento/i.test(p))
+    return `Pai, tu convidaste estranhos quando os primeiros convidados recusaram. Obrigado por me incluir quando não estava na lista original. Que eu corresponda ao convite chegando com o traje certo — não pela presença casual, mas pela resposta comprometida. Amém.`;
+  if (d.livroAbrev === 'Mt' && /tributo.*cesar|paying.*impostos|questao.*cesar/i.test(p))
+    return `Senhor, o que porta tua imagem pertence a ti. Eu fui feito à tua imagem — devolvo-me a ti. Que cada área da minha vida que ainda não está sob teu senhorio seja entregue, porque sou teu, não meu. Amém.`;
+  if (d.livroAbrev === 'Mt' && /questao.*ressurreicao|pergunta.*ressurreicao/i.test(p))
+    return `Pai, tu és Deus dos vivos, não dos mortos. A ressurreição não é ajuste do presente — é realidade nova que minhas categorias atuais não conseguem conter. Que minha esperança na ressurreição seja real e não apenas teórica. Amém.`;
+  if (d.livroAbrev === 'Mt' && /maior.*mandamento/i.test(p))
+    return `Senhor, toda a lei e os profetas dependem de amar a ti e ao próximo. Onde cumpro regras sem amor, ainda não cheguei ao núcleo. Que minha obediência brote do amor e não substitua o amor. Amém.`;
+  if (d.livroAbrev === 'Mt' && /filho de davi|questao.*filho.*davi/i.test(p))
+    return `Jesus, tu és filho de Davi e Senhor de Davi. A lógica humana não te contém. Que minha cristologia seja grande o suficiente para a tua realidade — não apenas o que cresci ouvindo, mas o que a Escritura e o Espírito revelam. Amém.`;
+  if (d.livroAbrev === 'Mt' && /denuncia.*escribas.*fariseus|ais.*hipócritas/i.test(p))
+    return `Pai, os "ais" de Jesus foram dirigidos aos religiosos, não aos pecadores. Examina em mim onde há dissociação entre aparência e realidade. Que o interior corresponda ao exterior, para que tua denúncia nunca precise ser dirigida a mim. Amém.`;
+  if (d.livroAbrev === 'Mt' && /destruicao.*templo.*predita|destruicao do templo/i.test(p))
+    return `Senhor, nenhuma estrutura religiosa é eterna. Guarda-me do apego a formas que passarão. Que minha fé esteja fundada em ti, não nas pedras das instituições que uso para me aproximar de ti. Amém.`;
+  if (d.livroAbrev === 'Mt' && /sinais.*fim.*era|sinais.*end/i.test(p))
+    return `Pai, tu disseste que haverá guerras e rumores, mas que o fim ainda não é. Guarda-me do alarmismo e da indiferença ao mesmo tempo. Que eu viva com vigilância sóbria, fiel no presente, esperando o futuro que tu prometeste. Amém.`;
+  if (d.livroAbrev === 'Mt' && /abominacao.*desolacao|desolacao.*sacrilega/i.test(p))
+    return `Senhor, tu avisaste sobre o engano que viria nos tempos difíceis. Guarda-me dos falsos cristos que aparecem justamente quando o desespero é maior. Que eu conheça tua voz claramente o suficiente para não ser enganado pela imitação. Amém.`;
+  if (d.livroAbrev === 'Mt' && /vinda.*filho.*homem.*ceu|filho do homem.*nuvens/i.test(p))
+    return `Pai, o Filho do Homem virá com poder e grande glória. Que essa esperança transforme como vivo hoje — não com evasão do presente, mas com investimento no eterno dentro do temporal. Maranata. Vem, Senhor Jesus. Amém.`;
+  if (d.livroAbrev === 'Mt' && /licao.*figueira|parabola.*figueira/i.test(p))
+    return `Senhor, o céu e a terra passarão, mas tuas palavras não. Que minha vida seja edificada sobre o que não passa. Onde ainda confio no que é temporário como se fosse eterno, reorienta meu coração. Amém.`;
+  if (d.livroAbrev === 'Mt' && /necessidade.*vigilancia|vigilancia/i.test(p))
+    return `Pai, não sei o dia nem a hora. Por isso, ajuda-me a viver pronto hoje. Que minha vigilância não seja ansiedade — seja fidelidade cotidiana, sabendo que tu podes vir a qualquer momento. Amém.`;
+  if (d.livroAbrev === 'Mt' && /servo.*fiel.*infiel|fiel.*infiel.*escravo/i.test(p))
+    return `Senhor, o servo fiel age da mesma forma sabendo que o dono pode chegar a qualquer hora. Que minha vida seja a mesma quando visto e quando não visto, quando elogiado e quando ignorado. Que a tua aprovação seja suficiente para minha consistência. Amém.`;
+  if (d.livroAbrev === 'Mt' && /dez.*madrinhas|dez virgens/i.test(p))
+    return `Pai, o azeite não podia ser emprestado. A preparação interior é minha responsabilidade — não posso depender da fé de outro na hora decisiva. Que eu cuide da minha vida interior com a mesma atenção que dou ao visível. Amém.`;
+  if (d.livroAbrev === 'Mt' && /parabola.*talentos/i.test(p))
+    return `Senhor, o que enterrei por medo de errar está te desonrando. Liberta-me do medo que paralisa o dom. Que eu use o que me deste com ousadia, confiando que tu honras o esforço fiel mesmo quando o resultado é imperfeito. Amém.`;
+  if (d.livroAbrev === 'Mt' && /julgamento.*nacoes|juizo.*nacoes/i.test(p))
+    return `Jesus, tu te identificas com os famintos, estrangeiros, nus, doentes e presos. Onde passo por eles sem ver teu rosto, abre meus olhos. Que o serviço aos pequenos não seja projeto — seja encontro com tu mesmo. Amém.`;
+  if (d.livroAbrev === 'Mt' && /complô.*matar.*jesus|plano.*matar.*jesus/i.test(p))
+    return `Pai, o plano humano foi sobreposto pelo teu plano. Onde o que os outros planejam contra mim me preocupa, lembra-me que tu tens autoridade sobre tudo que acontece comigo. Nada está fora do teu permissivo. Amém.`;
+  if (d.livroAbrev === 'Mt' && /uncao.*betania/i.test(p))
+    return `Senhor, a mulher fez o que tinha e Jesus disse que seria lembrado para sempre. Que meu gesto de devoção extravagante, mesmo que incompreendido pelos que calculam, seja recebido por ti como boa obra. Amém.`;
+  if (d.livroAbrev === 'Mt' && /judas.*trair.*jesus|judas.*concorda/i.test(p))
+    return `Pai, guarda-me de negociar minha fidelidade a Jesus por qualquer vantagem. Onde já troquei silêncio ou distância por conforto ou conveniência, perdoa-me e restaura minha lealdade. Amém.`;
+  if (d.livroAbrev === 'Mt' && /pascoa.*discipulos|ultima.*ceia.*pascoa/i.test(p))
+    return `Jesus, tu sentaste à mesa sabendo que Judas te entregaria e Pedro te negaria — e serviste a ambos. Que a mesa que partilhamos seja espaço de graça real, não de perfeição fingida. Obrigado por incluir os que ainda estão no caminho. Amém.`;
+  if (d.livroAbrev === 'Mt' && /institution.*senhor.*ceia|instituicao.*eucaristia/i.test(p))
+    return `Senhor, cada vez que partimos o pão proclamamos a tua morte. Que essa proclamação nunca vire rotina. Que o corpo partido e o sangue derramado sejam sempre reais para mim — não símbolo vazio, mas memória viva. Amém.`;
+  if (d.livroAbrev === 'Mt' && /negacao.*pedro.*predita|predicao.*negacao.*pedro/i.test(p))
+    return `Pai, Pedro estava confiante demais logo antes de cair. Guarda-me da autoconfiança espiritual que desconsidera minha vulnerabilidade. E onde eu já caí, lembra-me que a restauração estava prevista antes da queda. Amém.`;
+  if (d.livroAbrev === 'Mt' && /getsemani|jesus ora.*getsemani/i.test(p))
+    return `Pai, Jesus orou: não como eu quero, mas como tu queres. Ensina-me essa oração — honesta sobre o que sinto, rendida ao que decidiste. Que minha oração no momento difícil seja Getsêmani, não fuga. Amém.`;
+  if (d.livroAbrev === 'Mt' && /traicao.*prisao.*jesus/i.test(p))
+    return `Senhor, Jesus poderia ter chamado doze legiões de anjos e não chamou. Que eu aprenda a renunciar ao poder de autodefesa quando tu escolheste o caminho da entrega. Que minha confiança em ti seja maior que minha necessidade de controle. Amém.`;
+  if (d.livroAbrev === 'Mt' && /jesus.*sumo.*sacerdote|jesus.*high.*sacerdote/i.test(p))
+    return `Pai, Jesus ficou em silêncio diante das acusações falsas. Onde sou acusado injustamente, dá-me a mesma dignidade — não de fraqueza, mas de quem sabe que não precisa se defender diante de todo tribunal. Amém.`;
+  if (d.livroAbrev === 'Mt' && /negacao.*pedro.*jesus|pedro.*nega.*jesus/i.test(p))
+    return `Senhor, Pedro chorou amargamente após negar — e tu o restauraste. Onde eu te neguei por medo ou conveniência, recebo o teu olhar de restauração, não de condenação. Que o pranto honesto seja o início do retorno. Amém.`;
+  if (d.livroAbrev === 'Mt' && /jesus.*pilatos|jesus.*levado.*pilatos/i.test(p))
+    return `Pai, nenhuma autoridade age fora do teu permissivo. Quando o injusto parece triunfar, lembra-me que até Pilatos estava dentro do teu plano. Que minha confiança em ti não dependa do que o poder humano decide. Amém.`;
+  if (d.livroAbrev === 'Mt' && /suicidio.*judas/i.test(p))
+    return `Senhor, Judas reconheceu o erro mas não buscou o perdão. Guarda-me do remorso que devolve o dinheiro sem ir ao Pai. Que meu arrependimento sempre encontre o caminho até ti — não apenas a dor pelo que fiz, mas a certeza de que tu perdoas. Amém.`;
+  if (d.livroAbrev === 'Mt' && /pilatos.*interroga.*jesus|pilatos.*questiona/i.test(p))
+    return `Pai, Jesus não precisava provar sua inocência a Pilatos. Onde sinto a compulsão de me justificar diante de quem não tem ouvidos para ouvir, dá-me o silêncio de Jesus — não por covardia, mas por confiança em ti. Amém.`;
+  if (d.livroAbrev === 'Mt' && /barrabas.*jesus/i.test(p))
+    return `Senhor, eu sou Barrabás. O culpado foi solto porque o inocente tomou meu lugar. Que essa troca nunca vire doutrina abstrata — que seja sempre pessoal, concreta, o fundamento da minha gratidão. Amém.`;
+  if (d.livroAbrev === 'Mt' && /soldados.*zombam.*jesus/i.test(p))
+    return `Pai, os soldados proclamaram a verdade sem saber. A coroa de espinhos e a clámide escarlate viraram insígnias de glória. Que eu nunca me envergonhe do Rei que foi zombado — porque o escárnio foi o caminho para o trono eterno. Amém.`;
+  if (d.livroAbrev === 'Mt' && /crucificacao.*jesus/i.test(p))
+    return `Jesus, tu não desceste da cruz porque descendo não poderias me salvar. A potência da salvação está na tua permanência nela. Que eu nunca minimize o que custou — e que a cruz nunca se torne familiar demais para me mover. Amém.`;
+  if (d.livroAbrev === 'Mt' && /morte de jesus/i.test(p))
+    return `Pai, Jesus gritou o abandono para que eu nunca precisasse gritar o mesmo. Tu o desamparaste a ele para que nunca me desamparasses a mim. Que essa troca seja real para mim hoje e em todo dia difícil que vier. Amém.`;
+  if (d.livroAbrev === 'Mt' && /testemunhas.*crucificacao/i.test(p))
+    return `Senhor, o centurião viu e confessou. Às vezes a confissão mais clara vem de onde menos se espera. Que o que vejo — a morte do teu Filho — seja suficiente para me arrancar a confissão: verdadeiramente és o Filho de Deus. Amém.`;
+  if (d.livroAbrev === 'Mt' && /sepultamento.*jesus/i.test(p))
+    return `Pai, Jesus realmente morreu e foi realmente sepultado. A ressurreição que vem não é despertar de desmaio — é vitória sobre morte real. Que a solidez desse fundamento sustente minha fé nos dias em que a esperança parece distante. Amém.`;
+  if (d.livroAbrev === 'Mt' && /guarda.*tumulo|guarda no sepulcro/i.test(p))
+    return `Senhor, ao tentar selar o sepulcro, os inimigos de Jesus tornaram-se as melhores testemunhas do túmulo vazio. Tu usas até a resistência humana para confirmar a tua verdade. Que eu confie que nada que os homens fazem pode impedir o que tu decretaste. Amém.`;
+  if (d.livroAbrev === 'Mt' && /ressurreicao.*jesus/i.test(p))
+    return `Pai, as mulheres foram ao sepulcro com especiarias e saíram com o evangelho. O encontro com o ressurreto sempre muda a direção do caminho. Que meu encontro com Jesus ressurreto transforme meu luto em missão, meu fim em começo. Amém.`;
+  if (d.livroAbrev === 'Mt' && /relatorio.*guarda|guarda.*relatorio/i.test(p))
+    return `Senhor, a história fabricada confirma o que nunca foi negado: o túmulo estava vazio. Que a ressurreição seja para mim não objeto de defesa intelectual, mas fundamento de vida. Tu ressuscitaste — e isso muda tudo. Amém.`;
+  if (d.livroAbrev === 'Mt' && /missao.*discipulos|grande.*comissao/i.test(p))
+    return `Jesus ressurreto, todo poder te foi dado no céu e na terra. Por isso me envias. Que eu vá não pela minha força mas pela tua autoridade, e que a tua presença — "estou convosco todos os dias" — seja o que me sustenta em cada passo da missão. Amém.`;
 
   return (
     `Senhor, obrigado por falar através de "${d.pericope}". Que o que aprendi hoje em ${d.livroAbrev} ${d.capitulos} permaneça em mim como semente ao longo do dia. Em nome de Jesus, amém.`
