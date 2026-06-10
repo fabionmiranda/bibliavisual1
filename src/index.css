@@ -2,6 +2,8 @@
 @import "tailwindcss";
 
 @theme {
+  --breakpoint-xs: 480px;
+
   --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Orbitron", sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
@@ -27,8 +29,19 @@
 }
 
 @layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  html {
+    overflow-x: hidden;
+  }
   body {
     @apply bg-bg-deep text-white antialiased selection:bg-brand-blue/30;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+  }
+  img, video, canvas, svg {
+    max-width: 100%;
   }
 }
 

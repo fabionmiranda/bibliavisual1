@@ -14,6 +14,7 @@ import DiagramaLetraPage from './pages/DiagramaLetraPage';
 import LivrosPage from './pages/LivrosPage';
 import LibrariaPage from './pages/LibrariaPage';
 import EbookMateusPage from './pages/EbookMateusPage';
+import DevocionalPage from './pages/DevocionalPage';
 import Watermark from './components/Watermark';
 import LoginPage from './pages/LoginPage';
 import ProtectedRoute from './components/ProtectedRoute';
@@ -69,6 +70,9 @@ export default function App() {
           <Route path="/livraria/livros" element={<LivrosPage />} />
           <Route path="/livraria/livros/mateus" element={<Navigate to="/ebook/mateus" replace />} />
           <Route path="/livraria/ebook/mateus" element={<EbookMateusPage />} />
+
+          {/* Devocional */}
+          <Route path="/devocional" element={<DevocionalPage />} />
 
           {/* Login */}
           <Route path="/login" element={<LoginPage />} />

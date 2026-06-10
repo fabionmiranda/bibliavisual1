@@ -1,548 +1,449 @@
-LEVITICO_QUIASMOS
+﻿[1] OFERTAS — Levítico 1.1–3.17
 
-[1] OFERTAS — Levítico 1:1–3:17
+A (1.1–2)
+    Deus chama Moisés e fala da tenda
 
-A (1:1–2)
-    “Fala aos filhos de Israel”
+    B (1.3–17)
+        Holocaustos: boi, ovelha, ave
 
-    B1 (1:3–9)
-        Holocausto de novilho
+        C (2.1–16)
+            CENTRO: Ofertas de manjares — sal da aliança
 
-    B2 (1:10–13)
-        Holocausto de ovelha ou cabra
+        B' (3.1–16)
+        Ofertas de paz: boi, ovelha, cabra
 
-    B3 (1:14–17)
-        Holocausto de aves
-
-        C (2:1–3)
-            O restante da oferta pertence a Arão e seus filhos
-
-            D (2:4–6)
-                Oferta sem fermento
-
-        C’ (2:7–10)
-            O restante da oferta pertence a Arão e seus filhos
-
-            D’ (2:11–16)
-                Não usar fermento
-
-    B’1 (3:1–5)
-        Oferta pacífica de novilho
-
-    B’2 (3:6–11)
-        Oferta pacífica de ovelha ou cabra
-
-    B’3 (3:12–16)
-        Oferta pacífica de cabra
-
-A’ (3:17)
-    Estatuto perpétuo
-
+    A' (3.17)
+    Lei perpétua: não comer gordura nem sangue
 
 ==================================================
+[2] OFERTAS PELO PECADO — Levítico 4.1–5.13
 
-[2] OFERTAS PELO PECADO — Levítico 4:1–5:13
+A (4.1–2)
+    Pecado por inadvertência — introdução
 
-P (4:1–2)
-    Pecado involuntário
+    B (4.3–12)
+        Oferta do sacerdote ungido
 
-    A1 (4:3–12)
-        Pecado do sacerdote
+        C (4.13–21)
+            CENTRO: Oferta de toda a congregação
 
-    A2 (4:13–21)
-        Pecado da comunidade
+        B' (4.22–35)
+        Oferta do líder e do israelita comum
 
-    A3 (4:22–26)
-        Pecado do líder
-
-    A4 (4:27–35)
-        Pecado do indivíduo
-
-    A5 (5:1–10)
-        Pecado por omissão
-
-    A6 (5:11–12)
-        Oferta de farinha
-
-P’ (5:13)
-    Expiação do pecado
-
+    A' (5.1–13)
+    Casos especiais de culpa involuntária
 
 ==================================================
+[3] OFERTAS COM RESTITUIÇÃO — Levítico 5.14–26
 
-[3] OFERTAS COM RESTITUIÇÃO — Levítico 5:14–26
+A (5.14–16)
+    Restituição por coisas sagradas violadas
 
-A (5:14–16)
-    Pecado contra as coisas sagradas
-    + restituição de 1/5
+    B (5.17–19)
+        Culpa mesmo sem saber
 
-    B (5:17–19)
-        Pecados contra os mandamentos
+        C (5.20–22)
+            CENTRO: Fraude contra o próximo — quebra de aliança
 
-A’ (5:20–26)
-    Pecado de desonestidade
-    + restituição de 1/5
+        B' (5.23–24)
+        Devolução e acréscimo de um quinto
 
-
-==================================================
-
-[4] INSTRUÇÕES SOBRE OS SACRIFÍCIOS — Levítico 6:1–7:10
-
-A (6:1–6)
-    O fogo contínuo do altar
-
-    B (6:7–11)
-        Comer em lugar santo
-
-A’ (6:12–16)
-    Oferta contínua de cereal
-
-    B’ (6:17–7:10)
-        Comer em lugar santo
-
+    A' (5.25–26)
+    Oferta pelo delito — expiação diante do Senhor
 
 ==================================================
+[4] INSTRUÇÕES SOBRE OS SACRIFÍCIOS — Levítico 6.1–7.10
 
-[5] INSTRUÇÕES COMPLEMENTARES — Levítico 7:11–38
+A (6.1–6)
+    Lei do holocausto — fogo perpétuo
 
-A (7:11–21)
-    Oferta pacífica
+    B (6.7–11)
+        Lei da oferta de manjares
 
-    B (7:22–27)
-        Proibição de gordura e sangue
+        C (6.12–16)
+            CENTRO: Oferta diária do sacerdote ungido
 
-A’ (7:28–36)
-    Oferta pacífica
+        B' (6.17–23)
+        Lei da oferta pelo pecado
 
-P (7:37–38)
-    Conclusão
-
-
-==================================================
-
-[6] CONSAGRAÇÃO DOS SACERDOTES — Levítico 8:1–36
-
-A (8:1–5)
-    Entrada da tenda
-
-    B (8:6–13)
-        Consagração
-
-        C1 (8:14–17)
-            Oferta pelo pecado
-
-        C2 (8:18–21)
-            Holocausto
-
-        C3 (8:22–29)
-            Oferta da unção
-
-    B’ (8:30)
-        Consagração
-
-A’ (8:31–36)
-    Entrada da tenda
-
+    A' (7.1–10)
+    Lei da oferta pelo delito — porções dos sacerdotes
 
 ==================================================
+[5] INSTRUÇÕES COMPLEMENTARES — Levítico 7.11–38
 
-[7] INAUGURAÇÃO DO SACERDÓCIO DE ARÃO — Levítico 9:1–24
+A (7.11–15)
+    Oferta de paz por ação de graças
 
-A (9:1–4)
-    Presença do Senhor
+    B (7.16–21)
+        Votos e ofertas voluntárias
 
-    B (9:5–6)
-        Glória do Senhor
+        C (7.22–27)
+            CENTRO: Proibição de comer gordura e sangue
 
-        C (9:7)
-            Sacrifícios
+        B' (7.28–36)
+        A porção do sacerdote nas ofertas de paz
 
-            D (9:8–11)
-                Gordura / rins / fígado
-
-                E (9:12–14)
-                    Holocausto
-
-                    F (9:15)
-                        Oferta pelo pecado do povo
-
-                E’ (9:16–17)
-                    Holocausto
-
-            D’ (9:18–21)
-                Gordura / rins / fígado
-
-        C’ (9:22–23a)
-            Sacrifícios
-
-    B’ (9:23b)
-        Glória do Senhor
-
-A’ (9:24)
-    Fogo vindo da presença do Senhor
-
+    A' (7.37–38)
+    Sumário de todas as leis dos sacrifícios no Sinai
 
 ==================================================
+[6] RITOS DE ORDENAÇÃO — Levítico 8.1–36
 
-[8] NADABE E ABIÚ — Levítico 10:1–20
+A (8.1–5)
+    Deus ordena a Moisés reunir a congregação
 
-A (10:1–5)
-    Pecado de Nadabe e Abiú
+    B (8.6–9)
+        Moisés veste Arão com as vestes sagradas
 
-    B (10:6–7)
-        Ordem de Moisés
+        C (8.10–13)
+            CENTRO: Ungimento do tabernáculo e de Arão
 
-        C (10:8–11)
-            Ordem do Senhor a Arão
+        B' (8.14–30)
+        Sacrifícios de ordenação — sangue e óleo sobre Arão
 
-    B’ (10:12–15)
-        Ordem de Moisés
-
-A’ (10:16–20)
-    Violação relacionada ao comer das ofertas
-
+    A' (8.31–36)
+    Arão e seus filhos permanecem sete dias na entrada da tenda
 
 ==================================================
+[7] INAUGURAÇÃO DO SACERDÓCIO DE ARÃO — Levítico 9.1–24
 
-[9] ANIMAIS PUROS E IMPUROS — Levítico 11:1–47
+A (9.1–4)
+    Moisés instrui Arão no oitavo dia
 
-A (11:1–23)
-    Animais impróprios para comer
+    B (9.5–14)
+        Arão oferece pelo seu próprio pecado
 
-    B (11:24–28)
-        Corpos mortos
+        C (9.15–17)
+            CENTRO: Arão oferece pelo povo
 
-        C (11:29–31)
-            Animais impróprios para tocar
+        B' (9.18–21)
+        Oferta de paz — comunhão com Deus
 
-    B’ (11:32–40)
-        Corpos mortos
-
-A’ (11:41–47)
-    Animais impróprios para comer
-
+    A' (9.22–24)
+    A glória do Senhor aparece e fogo desce do céu
 
 ==================================================
+[8] NADABE E ABIÚ — Levítico 10.1–20
 
-[10] PURIFICAÇÃO APÓS O PARTO — Levítico 12:1–8
+A (10.1–3)
+    Fogo estranho — morte de Nadabe e Abiú
 
-A (12:1–4)
-    Impureza após nascimento de menino
+    B (10.4–7)
+        Moisés manda remover os corpos
 
-    B (12:5)
-        Impureza após nascimento de menina
+        C (10.8–11)
+            CENTRO: O sacerdote não deve beber vinho ao ministrar
 
-A’ (12:6–7)
-    Purificação normal
+        B' (10.12–15)
+        Instrução sobre as porções sacerdotais
 
-    B’ (12:8)
-        Purificação excepcional
-
-
-==================================================
-
-[11] LEPRA / DOENÇAS — Levítico 13:1–14:57
-
-A (13:1–46)
-    Doença na pele
-
-    B (13:47–59)
-        Doença nas roupas
-
-A’ (14:1–32)
-    Purificação da pele
-
-    B’ (14:33–57)
-        Purificação da casa
-
+    A' (10.16–20)
+    Moisés questiona o rito — Arão responde
 
 ==================================================
+[9] ANIMAIS PUROS E IMPUROS — Levítico 11.1–47
 
-[12] FLUXOS CORPORAIS — Levítico 15:1–33
+A (11.1–8)
+    Animais terrestres: divisão do casco e ruminação
 
-A (15:1–12)
-    Impureza por fluxo
+    B (11.9–12)
+        Animais aquáticos: nadadeiras e escamas
 
-    B (15:13–15)
-        Purificação
+        C (11.13–23)
+            CENTRO: Aves e insetos — distinção entre puro e impuro
 
-A’ (15:16–27)
-    Impureza por emissão
+        B' (11.24–40)
+        Contaminação por carcaças
 
-    B’ (15:28–33)
-        Purificação
-
-
-==================================================
-
-[13] DIA DA EXPIAÇÃO — Levítico 16:1–34
-
-A (16:1–2)
-    Proibição de entrar no santuário
-
-    B (16:3–4)
-        Entrada no santuário
-
-        C (16:5–11)
-            Bode para Azazel
-
-            D (16:12–14)
-                Purificação do altar
-
-                E (16:15–17a)
-                    Expiação pelo santuário
-
-            D’ (16:17b–19)
-                Purificação do altar
-
-        C’ (16:20–22)
-            Bode levando os pecados
-
-    B’ (16:23–28)
-        Saída do santuário
-
-A’ (16:29–34)
-    Estatuto perpétuo
-
+    A' (11.41–47)
+    Sumário: sede santos porque eu sou santo
 
 ==================================================
+[10] PURIFICAÇÃO APÓS O PARTO — Levítico 12.1–8
 
-[14] ABATE DOS ANIMAIS — Levítico 17:1–16
+A (12.1–2)
+    Impureza da mãe após o nascimento
 
-A (17:1–4)
-    Regulamentação da carne
+    B (12.3)
+        Circuncisão no oitavo dia
 
-    B (17:5–7)
-        Não comer sangue
+        C (12.4)
+            CENTRO: Período de separação — sangue de purificação
 
-        C (17:8–9)
-            Regulamentação das ofertas
+        B' (12.5)
+        Período dobrado para filha
 
-        C’ (17:10–11)
-            Regulamentação das ofertas
-
-    B’ (17:12–14)
-        Não comer sangue
-
-A’ (17:15–16)
-    Regulamentação da carne
-
+    A' (12.6–8)
+    Holocausto e oferta pelo pecado ao completar os dias
 
 ==================================================
+[11] LEPRA — Levítico 13.1–14.57
 
-[15] SANTIDADE RITUAL E MORAL — Levítico 18:1–20:27
+A (13.1–8)
+    Diagnóstico da lepra pelo sacerdote
 
-A (18:1–5)
-    Egito e Canaã
+    B (13.9–46)
+        Casos variados de lepra na pele
 
-    B (18:6–23)
-        Pecados sexuais
+        C (13.47–59)
+            CENTRO: Lepra nas roupas — contaminação material
 
-        C (18:24–30)
-            A terra vomitará
+        B' (14.1–32)
+        Rito de purificação do leproso
 
-A’ (19:1–36)
-    Deus tirou Israel do Egito
-
-    B’ (20:1–21)
-        Pecados sexuais
-
-        C’ (20:22–27)
-            A terra vomitará
-
+    A' (14.33–57)
+    Lepra nas casas — diagnóstico e purificação
 
 ==================================================
+[12] FLUXOS CORPORAIS — Levítico 15.1–33
 
-[16] SANTIDADE DOS SACERDOTES — Levítico 21:1–15
+A (15.1–12)
+    Fluxo do homem — impureza e transmissão
 
-A (21:1–6)
-    Pureza sacerdotal
+    B (15.13–15)
+        Purificação do homem após cura
 
-    B (21:7–9)
-        Regulamentações sobre casamento
+        C (15.16–18)
+            CENTRO: Emissão de sêmen — impureza compartilhada
 
-A’ (21:10–12)
-    Pureza sacerdotal
+        B' (15.19–30)
+        Fluxo da mulher — impureza e purificação
 
-    B’ (21:13–15)
-        Regulamentações sobre casamento
-
-
-==================================================
-
-[17] SACERDOTES COM DEFICIÊNCIAS — Levítico 21:16–24
-
-A (21:16–21)
-    Restrição ministerial
-
-    B (21:22)
-        Pode comer das ofertas
-
-A’ (21:23–24)
-    Restrição de acesso ao altar
-
+    A' (15.31–33)
+    Sumário: guardar os filhos de Israel das impurezas
 
 ==================================================
+[13] DIA DA EXPIAÇÃO — Levítico 16.1–34
 
-[18] USO DAS OFERTAS SANTAS — Levítico 22:1–16
+A (16.1–2)
+    Advertência após a morte dos filhos de Arão
 
-A (22:1–2)
-    Não profanar o santo nome
+    B (16.3–10)
+        Preparativos: vestes, animais, dois bodes
 
-    B (22:3–7)
-        Comer ofertas sagradas
+        C (16.11–19)
+            CENTRO: Arão entra no Santo dos Santos com sangue
 
-        C (22:8–9)
-            Animal morto naturalmente
+        B' (16.20–28)
+        O bode expiatório carrega os pecados para o deserto
 
-    B’ (22:10–14)
-        Comer ofertas sagradas
-
-A’ (22:15–16)
-    Não profanar as ofertas
-
+    A' (16.29–34)
+    Lei perpétua: jejum e expiação uma vez por ano
 
 ==================================================
+[14] ABATE DOS ANIMAIS — Levítico 17.1–16
 
-[19] OFERTAS ACEITÁVEIS — Levítico 22:17–33
+A (17.1–7)
+    Todo animal deve ser trazido à entrada da tenda
 
-A (22:17–20)
-    Novilho, ovelha ou cabra
+    B (17.8–9)
+        Estrangeiros também devem oferecer ao Senhor
 
-    B (22:21–23)
-        Oferta pacífica
+        C (17.10–12)
+            CENTRO: Proibição absoluta de comer sangue — a vida está no sangue
 
-        C (22:24–25)
-            A terra
+        B' (17.13–14)
+        A caça: cobrir o sangue com terra
 
-A’ (22:26–28)
-    Novilho, ovelha ou cabra
-
-    B’ (22:29–30)
-        Oferta de ações de graças
-
-        C’ (22:31–33)
-            Saída do Egito
-
+    A' (17.15–16)
+    Purificação de quem comer animal morto
 
 ==================================================
+[15] SANTIDADE RITUAL E MORAL — Levítico 18.1–20.27
 
-[20] FESTAS SOLENES — Levítico 23:1–44
+A (18.1–5)
+    Sede santos: não façais como Egito nem como Canaã
 
-A (23:1–4)
-    Convocação santa
+    B (18.6–23)
+        Proibições sexuais — relações ilícitas
 
-    B (23:5–8)
-        Festa dos pães asmos
+        C (18.24–19.37)
+            CENTRO: Sede santos porque eu sou o Senhor vosso Deus
 
-        C (23:9–22)
-            Oferta pelo pecado
+        B' (20.1–21)
+        Penas de morte por violações sexuais e idolatria
 
-            D (23:23–25)
-                Convocação santa
-
-        C’ (23:26–32)
-            Dia da Expiação
-
-    B’ (23:33–36)
-        Festa dos tabernáculos
-
-A’ (23:37–44)
-    Convocação santa
-
+    A' (20.22–27)
+    Guardai os meus estatutos — separados das nações
 
 ==================================================
+[16] SANTIDADE DOS SACERDOTES — Levítico 21.1–15
 
-[21] CANDELABRO E PÃES — Levítico 24:1–9
+A (21.1–4)
+    Contato com mortos proibido ao sacerdote comum
 
-A (24:1–3a)
-    Instruções para Israel
+    B (21.5–6)
+        Proibição de mutilação — santidade do nome de Deus
 
-    B (24:3b–4)
-        Instruções para Arão
+        C (21.7–9)
+            CENTRO: A mulher do sacerdote deve ser pura
 
-A’ (24:5–7)
-    Instruções para Israel
+        B' (21.10–12)
+        O sumo sacerdote não pode tocar nem um morto
 
-    B’ (24:8–9)
-        Instruções para Arão
-
-
-==================================================
-
-[22] BLASFÊMIA — Levítico 24:10–23
-
-A (24:10–12)
-    Blasfêmia contra o nome do Senhor
-
-    B (24:13–16)
-        Pena contra blasfêmia
-
-    B’ (24:17–22)
-        Pena contra homicídio
-
-A’ (24:23)
-    O blasfemo é apedrejado
-
+    A' (21.13–15)
+    O sumo sacerdote só pode casar com virgem de seu povo
 
 ==================================================
+[17] SACERDOTES COM DEFICIÊNCIAS — Levítico 21.16–24
 
-[23] ANO SABÁTICO E JUBILEU — Levítico 25:1–55
+A (21.16–17)
+    Nenhum homem com defeito pode oferecer o pão de Deus
 
-A (25:1–12)
-    Libertação
+    B (21.18–20)
+        Lista de defeitos físicos disqualificantes
 
-    B (25:13–17)
-        Venda e compra de terras
+        C (21.21)
+            CENTRO: Não pode aproximar-se do altar
 
-        C (25:18–22)
-            Guardar os mandamentos
+        B' (21.22–23)
+        Pode comer o pão sagrado mas não entrar além do véu
 
-    B’ (25:23–34)
-        Venda e compra de terras
-
-A’ (25:35–55)
-    Libertação dos escravos
-
+    A' (21.24)
+    Moisés transmite estas leis a Arão e seus filhos
 
 ==================================================
+[18] USO DAS OFERTAS SANTAS — Levítico 22.1–16
 
-[24] OBEDIÊNCIA E DESOBEDIÊNCIA — Levítico 26:1–46
+A (22.1–3)
+    Sacerdote impuro não pode tocar as coisas sagradas
 
-A (26:1–2)
-    Não fazer ídolos
+    B (22.4–8)
+        Causas de impureza que impedem o acesso
 
-    B (26:3–13)
-        Bênçãos
+        C (22.9)
+            CENTRO: Guardar o encargo do Senhor para não morrer
 
-    B’ (26:14–39)
-        Maldições
+        B' (22.10–13)
+        Quem pode comer as ofertas santas: família do sacerdote
 
-A’ (26:40–46)
-    Confissão e restauração
-
+    A' (22.14–16)
+    Estranho que comer por engano deve restituir
 
 ==================================================
+[19] OFERTAS ACEITÁVEIS — Levítico 22.17–33
 
-[25] VOTOS E CONSAGRAÇÕES — Levítico 27:1–34
+A (22.17–20)
+    Ofertas voluntárias devem ser sem defeito
 
-A (27:1–8)
-    Consagração de pessoas
+    B (22.21–25)
+        Animais com defeito não são aceitos
 
-    B (27:9–13)
-        Consagração de animais
+        C (22.26–28)
+            CENTRO: O recém-nascido fica com a mãe sete dias
 
-        C (27:14–15)
-            Consagração de casa
+        B' (22.29–30)
+        Oferta de ação de graças deve ser consumida no mesmo dia
 
-            D (27:16–21)
-                Campo herdado
+    A' (22.31–33)
+    Guardai os mandamentos — eu sou o Senhor que vos santifica
 
-        C’ (27:22–25)
-            Campo comprado
+==================================================
+[20] FESTAS SOLENES — Levítico 23.1–44
 
-    B’ (27:26–27)
-        Primogênitos dos animais
+A (23.1–3)
+    O sábado semanal — descanso sagrado
 
-A’ (27:28–34)
-    Pessoas irrevogavelmente consagradas
+    B (23.4–22)
+        Páscoa, Pães Asmos e Primícias — primavera
+
+        C (23.23–25)
+            CENTRO: Festa das Trombetas — convocação sagrada
+
+        B' (23.26–38)
+        Dia da Expiação e Festa dos Tabernáculos — outono
+
+    A' (23.39–44)
+    Festa dos Tabernáculos: habitai em tendas sete dias
+
+==================================================
+[21] CANDELABRO E PÃES — Levítico 24.1–9
+
+A (24.1–4)
+    Azeite puro para o candelabro arder continuamente
+
+    B (24.5–6)
+        Doze pães em duas fileiras sobre a mesa pura
+
+        C (24.7)
+            CENTRO: Incenso puro como memorial
+
+        B' (24.8)
+        Os pães são renovados todo sábado — aliança eterna
+
+    A' (24.9)
+    Os pães são de Arão e seus filhos — santíssimos
+
+==================================================
+[22] BLASFÊMIA E SUA PUNIÇÃO — Levítico 24.10–23
+
+A (24.10–12)
+    O filho da israelita blasfema o nome de Deus
+
+    B (24.13–14)
+        Deus ordena a apedrejamento do blasfemador
+
+        C (24.15–16)
+            CENTRO: Quem blasfemar o nome será morto — lei para todos
+
+        B' (24.17–22)
+        Princípio de igualdade: vida por vida, olho por olho
+
+    A' (24.23)
+    Israel executa o julgamento conforme Deus ordenou
+
+==================================================
+[23] ANO SABÁTICO E JUBILEU — Levítico 25.1–55
+
+A (25.1–7)
+    Sétimo ano — a terra descansa
+
+    B (25.8–22)
+        O jubileu no quinquagésimo ano
+
+        C (25.23–28)
+            CENTRO: A terra pertence ao Senhor — redenção da propriedade
+
+        B' (25.29–55)
+        Redenção de casas, levitas, pobres e escravos
+
+    A' (25.55)
+    Os filhos de Israel são meus servos — eu sou o Senhor
+
+==================================================
+[24] OBEDIÊNCIA E DESOBEDIÊNCIA — Levítico 26.1–46
+
+A (26.1–2)
+    Guardar os mandamentos — não fazer ídolos
+
+    B (26.3–13)
+        Bênçãos pela obediência
+
+        C (26.14–17)
+            CENTRO: A virada — desobediência traz castigo
+
+        B' (26.18–39)
+        Punições crescentes pela rebeldia
+
+    A' (26.40–46)
+    Confissão e restauração — a aliança de Jacó lembrada
+
+==================================================
+[25] VOTOS E CONSAGRAÇÕES — Levítico 27.1–34
+
+A (27.1–8)
+    Votos de pessoas — estimativa pelo sacerdote
+
+    B (27.9–13)
+        Animais prometidos ao Senhor
+
+        C (27.14–15)
+            CENTRO: Consagração de casas — resgate com acréscimo
+
+        B' (27.16–25)
+        Consagração de campos e jubileu
+
+    A' (27.26–34)
+    Primogênitos, coisas consagradas e dízimos — não se resgatam
+

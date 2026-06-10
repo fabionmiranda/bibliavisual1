@@ -34,7 +34,7 @@ const F = {
 };
 
 /* ══ Wrappers de layout ══ */
-const col: React.CSSProperties = { maxWidth: 860, margin: '0 auto', padding: '0 clamp(1rem, 4vw, 2rem)' };
+const col: React.CSSProperties = { maxWidth: 1100, margin: '0 auto', padding: '0 clamp(0.875rem, 5vw, 3rem)' };
 
 /* ─────────────────────────────────────
    PRIMITIVOS VISUAIS
@@ -52,43 +52,61 @@ function SectionDivider({ label }: { label: string }) {
 function ExplanationBox({ children }: { children: React.ReactNode }) {
   return (
     <div style={{
-      marginTop:'1.5rem',
-      borderRadius:10,
-      border:`1px solid ${C.borderB}`,
-      background:C.bgBox,
-      padding:'1.25rem 1.5rem',
+      marginTop:'1.5rem', borderRadius:12,
+      border:`1px solid rgba(52,211,153,0.3)`,
+      background:'rgba(52,211,153,0.06)',
+      padding:'1.1rem 1.4rem',
+      borderLeft:`4px solid rgba(52,211,153,0.7)`,
     }}>
-      <p style={{ fontFamily:F.display, fontSize:'clamp(11px,1.7vw,13px)', letterSpacing:'0.35em', color:`${C.blue}ee`, textTransform:'uppercase', marginBottom:10 }}>
-        Explicação
-      </p>
-      <p style={{ fontFamily:F.sans, fontSize:'clamp(15px,2.2vw,17px)', color:C.w65, lineHeight:1.85, textAlign:'justify' }}>{children}</p>
+      <div style={{ display:'flex', alignItems:'center', gap:8, marginBottom:8 }}>
+        <span style={{ fontSize:14 }}>💡</span>
+        <p style={{ fontFamily:F.display, fontSize:'clamp(9px,1.3vw,11px)', letterSpacing:'0.35em', color:'#34d399', textTransform:'uppercase', textShadow:'0 0 8px rgba(52,211,153,0.5)' }}>Síntese Exegética</p>
+      </div>
+      <p style={{ fontFamily:F.sans, fontSize:'clamp(14px,2vw,16px)', color:C.w65, lineHeight:1.85, textAlign:'justify' }}>{children}</p>
     </div>
   );
 }
 
 function DiagramIntro({ children }: { children: React.ReactNode }) {
   return (
-    <div style={{ margin:'0 0 1.25rem', padding:'0.9rem 1.25rem', borderRadius:10, background:'rgba(255,255,255,0.025)', borderLeft:`3px solid ${C.blue}`, borderTop:`1px solid rgba(255,255,255,0.06)`, borderRight:`1px solid rgba(255,255,255,0.06)`, borderBottom:`1px solid rgba(255,255,255,0.06)` }}>
-      <p style={{ fontFamily:F.display, fontSize:'clamp(9px,1.3vw,10px)', letterSpacing:'0.35em', color:C.blue, textTransform:'uppercase', marginBottom:7, textShadow:`0 0 8px ${C.blue}` }}>O que é este diagrama</p>
-      <p style={{ fontFamily:F.sans, fontSize:'clamp(14px,1.9vw,16px)', color:C.w45, lineHeight:1.8, textAlign:'justify' }}>{children}</p>
+    <div style={{ margin:'0 0 1.4rem', borderRadius:10, overflow:'hidden', border:`1px solid rgba(0,232,255,0.2)` }}>
+      <div style={{ background:'rgba(0,232,255,0.1)', borderBottom:`1px solid rgba(0,232,255,0.15)`, padding:'0.5rem 1rem', display:'flex', alignItems:'center', gap:8 }}>
+        <span style={{ fontSize:13 }}>📖</span>
+        <p style={{ fontFamily:F.display, fontSize:'clamp(9px,1.3vw,10px)', letterSpacing:'0.35em', color:C.blue, textTransform:'uppercase', textShadow:`0 0 8px ${C.blue}` }}>O que é este diagrama</p>
+      </div>
+      <div style={{ padding:'0.85rem 1rem', background:'rgba(0,232,255,0.03)' }}>
+        <p style={{ fontFamily:F.sans, fontSize:'clamp(14px,1.9vw,15px)', color:C.w45, lineHeight:1.8, textAlign:'justify', margin:0 }}>{children}</p>
+      </div>
     </div>
   );
 }
 
+/* Paleta de cores por diagrama (cíclica) */
+const DIAGRAM_COLORS = [
+  { bg:'rgba(0,212,255,0.07)',  border:'rgba(0,212,255,0.35)',  num:'rgba(0,212,255,1)',   hd:'rgba(0,212,255,0.1)'  },
+  { bg:'rgba(155,79,255,0.07)', border:'rgba(155,79,255,0.35)', num:'rgba(155,79,255,1)',  hd:'rgba(155,79,255,0.1)' },
+  { bg:'rgba(245,158,11,0.07)', border:'rgba(245,158,11,0.35)', num:'rgba(245,158,11,1)',  hd:'rgba(245,158,11,0.1)' },
+  { bg:'rgba(52,211,153,0.07)', border:'rgba(52,211,153,0.35)', num:'rgba(52,211,153,1)',  hd:'rgba(52,211,153,0.1)' },
+  { bg:'rgba(248,113,113,0.07)',border:'rgba(248,113,113,0.35)',num:'rgba(248,113,113,1)', hd:'rgba(248,113,113,0.1)'},
+];
+
 function DiagramCard({ num, title, intro, children }: { num:string; title:string; intro:string; children:React.ReactNode }) {
+  const idx = (parseInt(num, 10) - 1) % DIAGRAM_COLORS.length;
+  const pal = DIAGRAM_COLORS[idx];
   return (
     <motion.div
       initial={{ opacity:0, y:18 }}
       whileInView={{ opacity:1, y:0 }}
       viewport={{ once:true, margin:'-50px' }}
       transition={{ duration:0.5 }}
-      style={{ borderRadius:14, border:`1px solid ${C.border}`, background:C.bgCard, overflow:'hidden', marginBottom:'1.75rem' }}
+      style={{ borderRadius:16, border:`1px solid ${pal.border}`, background:pal.bg, overflow:'hidden', marginBottom:'2rem' }}
     >
       {/* Header */}
-      <div style={{ display:'flex', alignItems:'center', gap:12, padding:'0.9rem clamp(1rem,3vw,1.5rem)', background:C.bgCardHd, borderBottom:`1px solid ${C.border}` }}>
-        <span style={{ fontFamily:F.display, color:C.blue, fontSize:'clamp(18px,3vw,22px)', fontWeight:900, minWidth:40, textShadow:`0 0 16px ${C.blue}` }}>{num}</span>
-        <div style={{ width:1, height:22, background:C.border }} />
+      <div style={{ display:'flex', alignItems:'center', gap:14, padding:'0.85rem clamp(1rem,3vw,1.5rem)', background:pal.hd, borderBottom:`1px solid ${pal.border}` }}>
+        <span style={{ fontFamily:F.display, color:pal.num, fontSize:'clamp(20px,3.5vw,26px)', fontWeight:900, minWidth:44, lineHeight:1, textShadow:`0 0 20px ${pal.num}` }}>{num}</span>
+        <div style={{ width:1, height:24, background:`${pal.border}` }} />
         <span style={{ fontFamily:F.display, fontSize:'clamp(12px,1.8vw,14px)', letterSpacing:'0.28em', color:C.white, textTransform:'uppercase' }}>{title}</span>
+        <div style={{ marginLeft:'auto', width:8, height:8, borderRadius:'50%', background:pal.num, boxShadow:`0 0 8px ${pal.num}` }} />
       </div>
       <div style={{ padding:'clamp(1rem,3vw,1.5rem)' }}>
         <DiagramIntro>{intro}</DiagramIntro>
@@ -98,15 +116,52 @@ function DiagramCard({ num, title, intro, children }: { num:string; title:string
   );
 }
 
-function Row({ label, content, sub, greek=false }: { label?:string; content:React.ReactNode; sub?:string; greek?:boolean }) {
+function Row({ label, content, sub, greek=false, accent }: { label?:string; content:React.ReactNode; sub?:string; greek?:boolean; accent?: string }) {
+  const accentColor = accent ?? C.blue;
   return (
-    <div style={{ marginBottom:'1rem' }}>
+    <div style={{ marginBottom:'0.9rem', borderRadius:8, background:'rgba(255,255,255,0.018)', border:`1px solid rgba(255,255,255,0.055)`, borderLeft:`3px solid ${accentColor}55`, padding:'0.65rem 1rem' }}>
       {(label || sub) && (
-        <div style={{ fontFamily:sub ? F.mono : F.display, fontSize: sub ? 14 : 13, letterSpacing: sub ? '0.05em' : '0.3em', color: sub ? `${C.blue}ee` : `${C.blue}dd`, textTransform:'uppercase', marginBottom:5 }}>
+        <div style={{ fontFamily:sub ? F.mono : F.display, fontSize: sub ? 'clamp(12px,1.8vw,14px)' : 'clamp(10px,1.5vw,12px)', letterSpacing: sub ? '0.06em' : '0.28em', color: accentColor, textTransform:'uppercase', marginBottom:5, textShadow:`0 0 8px ${accentColor}55` }}>
           {sub ?? label}
         </div>
       )}
-      <div style={{ fontFamily: greek ? F.greek : F.sans, fontSize: greek ? 19 : 17, color:C.w65, lineHeight:1.8, textAlign:'justify' }}>{content}</div>
+      <div style={{ fontFamily: greek ? F.greek : F.sans, fontSize: greek ? 'clamp(16px,2.5vw,20px)' : 'clamp(14px,2vw,17px)', color:C.w65, lineHeight:1.8, textAlign:'justify' }}>{content}</div>
+    </div>
+  );
+}
+
+/* Bloco interlinear com 4 linhas visuais */
+function ILBlock({ versiculo, grego, translit, interlinear, nota, cor }: {
+  versiculo: string; grego: string; translit: string; interlinear: string; nota?: string; cor?: string;
+}) {
+  const c = cor ?? C.blue;
+  return (
+    <div style={{ borderRadius:12, overflow:'hidden', marginBottom:'1rem', border:`1px solid ${c}30` }}>
+      {/* Header versículo */}
+      <div style={{ background:`${c}18`, borderBottom:`1px solid ${c}22`, padding:'0.45rem 1rem', display:'flex', alignItems:'center', gap:8 }}>
+        <span style={{ fontFamily:F.display, fontSize:'clamp(9px,1.4vw,11px)', letterSpacing:'0.35em', color:c, textTransform:'uppercase', textShadow:`0 0 8px ${c}` }}>{versiculo}</span>
+      </div>
+      {/* Grego */}
+      <div style={{ padding:'0.7rem 1rem 0.3rem', background:'rgba(255,255,255,0.015)' }}>
+        <span style={{ fontFamily:F.display, fontSize:'clamp(8px,1.2vw,9px)', letterSpacing:'0.3em', color:'rgba(255,255,255,0.3)', textTransform:'uppercase', display:'block', marginBottom:3 }}>Grego Original</span>
+        <span style={{ fontFamily:F.greek, fontSize:'clamp(16px,2.5vw,20px)', color:'#ffffff', lineHeight:1.7 }}>{grego}</span>
+      </div>
+      {/* Transliteração */}
+      <div style={{ padding:'0.3rem 1rem', background:'rgba(255,255,255,0.01)', borderTop:`1px solid rgba(255,255,255,0.04)` }}>
+        <span style={{ fontFamily:F.display, fontSize:'clamp(8px,1.2vw,9px)', letterSpacing:'0.3em', color:'rgba(255,255,255,0.3)', textTransform:'uppercase', display:'block', marginBottom:3 }}>Transliteração</span>
+        <span style={{ fontFamily:F.mono, fontSize:'clamp(12px,1.8vw,14px)', color:C.w45, lineHeight:1.7, fontStyle:'italic' }}>{translit}</span>
+      </div>
+      {/* Interlinear */}
+      <div style={{ padding:'0.3rem 1rem 0.7rem', background:`${c}08`, borderTop:`1px solid ${c}18` }}>
+        <span style={{ fontFamily:F.display, fontSize:'clamp(8px,1.2vw,9px)', letterSpacing:'0.3em', color:c, textTransform:'uppercase', display:'block', marginBottom:4, textShadow:`0 0 6px ${c}` }}>Palavra por Palavra</span>
+        <span style={{ fontFamily:F.sans, fontSize:'clamp(13px,1.9vw,15px)', color:C.w80, lineHeight:1.75 }}>{interlinear}</span>
+      </div>
+      {/* Nota opcional */}
+      {nota && (
+        <div style={{ padding:'0.5rem 1rem', background:`${c}06`, borderTop:`1px solid ${c}15` }}>
+          <span style={{ fontFamily:F.sans, fontSize:'clamp(12px,1.8vw,14px)', color:C.w45, lineHeight:1.7, fontStyle:'italic' }}>💡 {nota}</span>
+        </div>
+      )}
     </div>
   );
 }
@@ -137,12 +192,94 @@ const DIAGRAMAS = [
     intro: 'O Diagrama Interlinear coloca o texto grego original lado a lado com sua tradução palavra por palavra. Cada termo é traduzido literalmente, preservando a ordem e a morfologia do original, o que revela nuances de sentido que as traduções modernas frequentemente condensam ou reorganizam.',
     body: () => (
     <>
-      <Row label="Mt 1:1 — Grego" greek content="Βίβλος γενέσεως Ἰησοῦ Χριστοῦ υἱοῦ Δαυὶδ υἱοῦ Ἀβραάμ" />
-      <Row label="Transliteração" content="Biblos geneseōs Iēsou Christou huiou David huiou Abraam" />
-      <Row label="Interlinear" content="Livro · de-genealogia · de-Jesus · Cristo · filho · de-Davi · filho · de-Abraão" />
-      <Row label="Mt 1:16 — Grego" greek content="ἐγεννήθη Ἰησοῦς ὁ λεγόμενος Χριστός" />
-      <Row label="Interlinear v.16" content="foi-gerado · Jesus · o · chamado · Cristo" />
-      <ExplanationBox>A voz passiva ἐγεννήθη (v.16) contrasta com os 39 ἐγέννησεν anteriores. Onde todos os antepassados "geraram", aqui Jesus simplesmente "foi gerado" — agente indefinido, apontando para a ação do Espírito (Mt 1:18).</ExplanationBox>
+      {/* Bloco A — Mt 1:1 · Título */}
+      <div style={{ fontFamily:F.display, fontSize:'clamp(9px,1.4vw,11px)', letterSpacing:'0.4em', color:C.blue, textTransform:'uppercase', margin:'0 0 8px', textShadow:`0 0 8px ${C.blue}` }}>Bloco A · Mt 1:1 — Título Messiânico</div>
+      <ILBlock
+        versiculo="Mt 1:1"
+        cor={C.blue}
+        grego="Βίβλος γενέσεως Ἰησοῦ Χριστοῦ υἱοῦ Δαυὶδ υἱοῦ Ἀβραάμ"
+        translit="Biblos geneseōs Iēsou Christou huiou Dauid huiou Abraam"
+        interlinear="Livro · de-genealogia · de-Jesus · Cristo · filho · de-Davi · filho · de-Abraão"
+        nota="βίβλος γενέσεως ressoa com Gn 2:4 e 5:1 na LXX — Mateus abre com linguagem de 'nova criação'. Os dois títulos (filho de Davi / filho de Abraão) comprimem toda a teologia messiânica do AT em uma linha."
+      />
+
+      {/* Bloco B¹ — Mt 1:2–6a · Da promessa à monarquia */}
+      <div style={{ fontFamily:F.display, fontSize:'clamp(9px,1.4vw,11px)', letterSpacing:'0.4em', color:'#a78bfa', textTransform:'uppercase', margin:'1.5rem 0 8px', textShadow:'0 0 8px #a78bfa55' }}>Bloco B¹ · Mt 1:2–6a — Da Promessa à Monarquia</div>
+      <ILBlock
+        versiculo="Mt 1:2 · padrão recorrente"
+        cor="#a78bfa"
+        grego="Ἀβραὰμ ἐγέννησεν τὸν Ἰσαάκ"
+        translit="Abraam egennēsen ton Isaak"
+        interlinear="Abraão · gerou · o · Isaque"
+        nota="ἐγέννησεν (aoristo ativo) — 'gerou' — repete-se 39× nos vv.2–15. O sujeito age, o verbo é ativo, o objeto é o filho gerado. Padrão: N₁ ἐγέννησεν N₂."
+      />
+      <ILBlock
+        versiculo="Mt 1:3 · interpolação feminina"
+        cor="#a78bfa"
+        grego="Ἰούδας δὲ ἐγέννησεν τὸν Φαρὲς καὶ τὸν Ζάρα ἐκ τῆς Θαμάρ"
+        translit="Ioudas de egennēsen ton Phares kai ton Zara ek tēs Thamar"
+        interlinear="Judá · porém · gerou · o · Farés · e · o · Zará · de · a · Tamar"
+        nota="ἐκ + genitivo feminino (ἐκ τῆς Θαμάρ) — preposição que marca a mãe, quebrando o padrão masculino. Tamar aparece por sua iniciativa corajosa (Gn 38), prefigurando a irregularidade que acompanha a linha messiânica."
+      />
+      <ILBlock
+        versiculo="Mt 1:5–6a · Raabe, Rute e Davi"
+        cor="#a78bfa"
+        grego="Σαλμὼν δὲ ἐγέννησεν τὸν Βοὸς ἐκ τῆς Ῥαχάβ · Βοὸς δὲ ἐγέννησεν τὸν Ἰωβὴδ ἐκ τῆς Ῥούθ"
+        translit="Salmōn de egennēsen ton Boos ek tēs Rhachab · Boos de egennēsen ton Iōbēd ek tēs Rhouth"
+        interlinear="Salmom · gerou · o · Boaz · de · a · Raabe · Boaz · gerou · o · Obede · de · a · Rute"
+        nota="Raabe (cananeia de Jericó) e Rute (moabita) — duas estrangeiras na linhagem direta de Davi. A universalidade do Messias começa aqui, antes de Mt 28:19."
+      />
+
+      {/* Bloco B² — Mt 1:6b–11 · Da monarquia ao exílio */}
+      <div style={{ fontFamily:F.display, fontSize:'clamp(9px,1.4vw,11px)', letterSpacing:'0.4em', color:'#f59e0b', textTransform:'uppercase', margin:'1.5rem 0 8px', textShadow:'0 0 8px rgba(245,158,11,0.5)' }}>Bloco B² · Mt 1:6b–11 — Da Monarquia ao Exílio</div>
+      <ILBlock
+        versiculo="Mt 1:6b · mulher de Urias"
+        cor="#f59e0b"
+        grego="Δαυὶδ δὲ ἐγέννησεν τὸν Σολομῶνα ἐκ τῆς τοῦ Οὐρίου"
+        translit="Dauid de egennēsen ton Solomōna ek tēs tou Ouriou"
+        interlinear="Davi · porém · gerou · o · Salomão · de · a · do · Urias"
+        nota="τῆς τοῦ Οὐρίου — 'a do Urias' (sem nome próprio). O silêncio do nome de Bate-Seba ressoa como acusação: Mateus não apaga a origem adúltera — a inclui deliberadamente na linhagem do Messias."
+      />
+      <ILBlock
+        versiculo="Mt 1:11 · o exílio como marco"
+        cor="#f59e0b"
+        grego="Ἰωσίας δὲ ἐγέννησεν τὸν Ἰεχονίαν καὶ τοὺς ἀδελφοὺς αὐτοῦ ἐπὶ τῆς μετοικεσίας Βαβυλῶνος"
+        translit="Iōsias de egennēsen ton Iechonian kai tous adelphous autou epi tēs metoikesias Babylōnos"
+        interlinear="Josias · gerou · o · Jeconias · e · os · irmãos · dele · no-tempo-da · deportação · de-Babilônia"
+        nota="μετοικεσία Βαβυλῶνος — 'deportação da Babilônia' — aparece 3× na perícope (vv.11,12,17). É o nadir histórico, o ponto de máxima crise: o trono perdido, o templo destruído. A promessa parece extinta."
+      />
+
+      {/* Bloco B³ — Mt 1:12–16 · Do exílio ao cumprimento */}
+      <div style={{ fontFamily:F.display, fontSize:'clamp(9px,1.4vw,11px)', letterSpacing:'0.4em', color:'#34d399', textTransform:'uppercase', margin:'1.5rem 0 8px', textShadow:'0 0 8px rgba(52,211,153,0.5)' }}>Bloco B³ · Mt 1:12–16 — Do Exílio ao Cumprimento</div>
+      <ILBlock
+        versiculo="Mt 1:12 · gerações do silêncio"
+        cor="#34d399"
+        grego="Μετὰ δὲ τὴν μετοικεσίαν Βαβυλῶνος Ἰεχονίας ἐγέννησεν τὸν Σαλαθιήλ"
+        translit="Meta de tēn metoikesian Babylōnos Iechonias egennēsen ton Salathiēl"
+        interlinear="Depois · porém · a · deportação · de-Babilônia · Jeconias · gerou · o · Salatiel"
+        nota="Μετά (depois) marca a transição histórica. As gerações pós-exílicas (Salatiel, Zorobabel… José) são nomes obscuros — sem narrativa, sem rei, sem profecia. A linhagem sobrevive em silêncio."
+      />
+      <ILBlock
+        versiculo="Mt 1:16 · A RUPTURA CENTRAL"
+        cor="#34d399"
+        grego="Ἰακὼβ δὲ ἐγέννησεν τὸν Ἰωσὴφ τὸν ἄνδρα Μαρίας, ἐξ ἧς ἐγεννήθη Ἰησοῦς ὁ λεγόμενος Χριστός"
+        translit="Iakōb de egennēsen ton Iōsēph ton andra Marias, ex hēs egennēthē Iēsous ho legomenos Christos"
+        interlinear="Jacó · gerou · o · José · o · marido · de-Maria · de · quem · foi-gerado · Jesus · o · chamado · Cristo"
+        nota="RUPTURA: ἐγεννήθη (passivo, v.16) vs. ἐγέννησεν (ativo, vv.2–15). Após 39 sujeitos que 'geraram', o padrão quebra: Jesus 'foi gerado' — agente suprimido. ἐξ ἧς (feminino) exclui José da geração e aponta para Maria e o Espírito (Mt 1:18)."
+      />
+
+      {/* Bloco A′ — Mt 1:17 · Síntese */}
+      <div style={{ fontFamily:F.display, fontSize:'clamp(9px,1.4vw,11px)', letterSpacing:'0.4em', color:C.blue, textTransform:'uppercase', margin:'1.5rem 0 8px', textShadow:`0 0 8px ${C.blue}` }}>Bloco A′ · Mt 1:17 — Declaração Providencial</div>
+      <ILBlock
+        versiculo="Mt 1:17"
+        cor={C.blue}
+        grego="Πᾶσαι οὖν αἱ γενεαὶ ἀπὸ Ἀβραὰμ ἕως Δαυὶδ γενεαὶ δεκατέσσαρες, καὶ ἀπὸ Δαυὶδ ἕως τῆς μετοικεσίας Βαβυλῶνος γενεαὶ δεκατέσσαρες, καὶ ἀπὸ τῆς μετοικεσίας Βαβυλῶνος ἕως τοῦ Χριστοῦ γενεαὶ δεκατέσσαρες"
+        translit="Pasai oun hai geneai apo Abraam heōs Dauid geneai dekatessares, kai apo Dauid heōs tēs metoikesias Babylōnos geneai dekatessares, kai apo tēs metoikesias Babylōnos heōs tou Christou geneai dekatessares"
+        interlinear="Todas · portanto · as · gerações · de · Abraão · até · Davi · gerações · catorze · e · de · Davi · até · a · deportação · de-Babilônia · gerações · catorze · e · de · a · deportação · de-Babilônia · até · o · Cristo · gerações · catorze"
+        nota="δεκατέσσαρες (catorze) × 3: três eras, mesma contagem. Provável gematria de דָּוִד (Davi = 4+6+4 = 14). A simetria não é coincidência matemática — é declaração de providência."
+      />
+
+      <ExplanationBox>A análise interlinear dos cinco blocos revela a arquitetura deliberada de Mateus: um título messiânico (v.1), três blocos históricos com padrão ativo (vv.2–15), uma ruptura passiva única (v.16), e uma declaração aritmética de providência (v.17). Cada desvio do padrão — as quatro mulheres, a deportação tripla, a passiva de v.16 — é teológico antes de ser gramatical.</ExplanationBox>
     </>
   )},
   { num:'02', title:'Morfológico-Lexical',
@@ -526,6 +663,11 @@ const DIAGRAMAS = [
    PÁGINA PRINCIPAL
 ═══════════════════════════════════════════════════ */
 export default function EbookMateusPage() {
+  function scrollTo(id: string) {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
   return (
     <div style={{ background:C.bg, minHeight:'100vh', color:C.white }}>
 
@@ -573,7 +715,7 @@ export default function EbookMateusPage() {
           }} />
         ))}
 
-        <motion.div initial={{ opacity:0, y:32 }} animate={{ opacity:1, y:0 }} transition={{ duration:0.9, ease:'easeOut' }} style={{ maxWidth:640 }}>
+        <motion.div initial={{ opacity:0, y:32 }} animate={{ opacity:1, y:0 }} transition={{ duration:0.9, ease:'easeOut' }} style={{ maxWidth:'min(860px, 92vw)', width:'100%' }}>
           <p style={{ fontFamily:F.display, fontSize:'clamp(11px,1.7vw,13px)', letterSpacing:'0.45em', color:`${C.blue}dd`, textTransform:'uppercase', marginBottom:28 }}>
             Bíblia Visual Expositiva · Novo Testamento
           </p>
@@ -667,20 +809,44 @@ export default function EbookMateusPage() {
               ['23','Mt 24:1–25:46','O Discurso Escatológico'],
               ['24','Mt 26:1–27:66','A Paixão de Jesus Cristo'],
               ['25','Mt 28:1–20',   'A Ressurreição e a Grande Comissão'],
-            ].map(([num,ref,titulo,ativo]) => (
-              <div key={num as string} style={{
-                display:'flex', alignItems:'center', gap:8, flexWrap:'wrap',
-                padding:'8px 12px', borderRadius:7, marginBottom:3,
-                background: ativo ? 'rgba(0,212,255,0.05)' : 'transparent',
-                border:`1px solid ${ativo ? C.borderB : 'transparent'}`,
-                opacity: ativo ? 1 : 0.32,
-              }}>
-                <span style={{ fontFamily:F.display, fontSize:'clamp(10px,1.5vw,11px)', color: ativo ? C.blue : C.w30, minWidth:24, fontWeight: ativo ? 900 : 400, flexShrink:0 }}>{num}</span>
-                <span style={{ fontFamily:F.sans, fontSize:'clamp(13px,3vw,16px)', color: ativo ? C.w80 : C.w45, flex:1, minWidth:120 }}>{titulo as string}</span>
-                <span style={{ fontFamily:F.mono, fontSize:'clamp(9px,1.4vw,10px)', color: ativo ? `${C.blue}dd` : C.w15, whiteSpace:'nowrap', flexShrink:0 }}>{ref as string}</span>
-                {ativo && <span style={{ fontFamily:F.display, fontSize:'clamp(10px,1.6vw,12px)', letterSpacing:'0.2em', color:C.blue, background:`${C.blue}18`, border:`1px solid ${C.borderB}`, borderRadius:50, padding:'1px 8px', whiteSpace:'nowrap' }}>liberado</span>}
-              </div>
-            ))}
+            ].map(([num, ref, titulo, ativo]) => {
+              const isAtivo = Boolean(ativo);
+              return (
+                <motion.div
+                  key={num as string}
+                  whileHover={isAtivo ? { x: 4, backgroundColor: 'rgba(0,212,255,0.09)' } : {}}
+                  whileTap={isAtivo ? { scale: 0.98 } : {}}
+                  onClick={() => isAtivo ? scrollTo('cap-01') : undefined}
+                  style={{
+                    display:'flex', alignItems:'center', gap:10, flexWrap:'wrap',
+                    padding:'10px 14px', borderRadius:10, marginBottom:4,
+                    background: isAtivo ? 'rgba(0,212,255,0.05)' : 'transparent',
+                    border:`1px solid ${isAtivo ? C.borderB : 'rgba(255,255,255,0.04)'}`,
+                    opacity: isAtivo ? 1 : 0.3,
+                    cursor: isAtivo ? 'pointer' : 'default',
+                    transition: 'background 0.2s',
+                  }}
+                >
+                  {/* Número */}
+                  <span style={{ fontFamily:F.display, fontSize:'clamp(11px,1.6vw,13px)', color: isAtivo ? C.blue : C.w30, minWidth:28, fontWeight:900, flexShrink:0, textShadow: isAtivo ? `0 0 8px ${C.blue}` : undefined }}>{num}</span>
+
+                  {/* Separador */}
+                  <div style={{ width:1, height:18, background: isAtivo ? `${C.blue}40` : 'rgba(255,255,255,0.08)', flexShrink:0 }} />
+
+                  {/* Título */}
+                  <span style={{ fontFamily:F.sans, fontSize:'clamp(14px,2vw,17px)', fontWeight: isAtivo ? 600 : 400, color: isAtivo ? C.w80 : C.w45, flex:1, minWidth:120 }}>{titulo as string}</span>
+
+                  {/* Ref */}
+                  <span style={{ fontFamily:F.mono, fontSize:'clamp(9px,1.4vw,11px)', color: isAtivo ? `${C.blue}cc` : C.w15, whiteSpace:'nowrap', flexShrink:0 }}>{ref as string}</span>
+
+                  {/* Badge */}
+                  {isAtivo
+                    ? <span style={{ fontFamily:F.display, fontSize:'clamp(9px,1.4vw,10px)', letterSpacing:'0.2em', color:C.blue, background:`${C.blue}18`, border:`1px solid ${C.borderB}`, borderRadius:50, padding:'2px 10px', whiteSpace:'nowrap' }}>liberado</span>
+                    : <span style={{ fontFamily:F.display, fontSize:'clamp(9px,1.4vw,10px)', letterSpacing:'0.15em', color:'rgba(255,255,255,0.2)', whiteSpace:'nowrap' }}>em breve</span>
+                  }
+                </motion.div>
+              );
+            })}
           </motion.div>
         </div>
       </section>
@@ -745,24 +911,36 @@ export default function EbookMateusPage() {
       {/* ══════════════════════════
           DIVISOR CAP. 1
       ══════════════════════════ */}
-      <section style={{
-        minHeight:'40vh',
+      <section id="cap-01" style={{
+        minHeight:'48vh',
         display:'flex', alignItems:'center', justifyContent:'center',
-        textAlign:'center', padding:'clamp(44px,8vw,80px) clamp(1rem,4vw,2rem)',
-        background:`linear-gradient(180deg, ${C.bg} 0%, rgba(0,212,255,0.04) 50%, ${C.bg} 100%)`,
+        textAlign:'center', padding:'clamp(56px,10vw,96px) clamp(1rem,4vw,2rem)',
+        background:`linear-gradient(180deg, ${C.bg} 0%, rgba(0,212,255,0.06) 50%, ${C.bg} 100%)`,
         borderTop:`1px solid ${C.borderB}`, borderBottom:`1px solid ${C.borderB}`,
+        scrollMarginTop: 20,
       }}>
-        <motion.div initial={{ opacity:0, scale:0.97 }} whileInView={{ opacity:1, scale:1 }} viewport={{ once:true }} transition={{ duration:0.7 }}>
-          <p style={{ fontFamily:F.display, fontSize:'clamp(11px,1.7vw,13px)', letterSpacing:'0.5em', color:`${C.blue}cc`, textTransform:'uppercase', marginBottom:18 }}>Capítulo 1 · Perícope 01</p>
-          <div style={{ display:'flex', alignItems:'center', justifyContent:'center', gap:12, marginBottom:10 }}>
-            <div style={{ height:1, width:80, background:`linear-gradient(to right, transparent, ${C.borderB})` }} />
-            <span style={{ color:C.blue, fontSize:20, filter:`drop-shadow(0 0 10px ${C.blue})` }}>✦</span>
-            <div style={{ height:1, width:80, background:`linear-gradient(to left, transparent, ${C.borderB})` }} />
+        <motion.div initial={{ opacity:0, scale:0.97 }} whileInView={{ opacity:1, scale:1 }} viewport={{ once:true }} transition={{ duration:0.7 }} style={{ width:'100%', maxWidth:720 }}>
+
+          {/* Etiqueta de capítulo — GRANDE e visível */}
+          <div style={{ display:'inline-flex', alignItems:'center', gap:10, marginBottom:20, padding:'8px 22px', borderRadius:50, background:'rgba(0,212,255,0.1)', border:`1px solid rgba(0,212,255,0.35)` }}>
+            <span style={{ fontFamily:F.display, fontSize:'clamp(12px,2vw,15px)', fontWeight:900, letterSpacing:'0.4em', color:C.blue, textTransform:'uppercase', textShadow:`0 0 12px ${C.blue}` }}>Capítulo 1</span>
+            <div style={{ width:1, height:14, background:`${C.blue}50` }} />
+            <span style={{ fontFamily:F.display, fontSize:'clamp(11px,1.8vw,13px)', letterSpacing:'0.3em', color:`${C.blue}bb`, textTransform:'uppercase' }}>Perícope 01 de 25</span>
           </div>
-          <h2 style={{ fontFamily:F.display, fontSize:'clamp(22px,5vw,44px)', fontWeight:900, color:C.white, textTransform:'uppercase', letterSpacing:'0.06em', marginBottom:6 }}>
+
+          <div style={{ display:'flex', alignItems:'center', justifyContent:'center', gap:12, marginBottom:14 }}>
+            <div style={{ height:1, flex:1, maxWidth:120, background:`linear-gradient(to right, transparent, ${C.borderB})` }} />
+            <span style={{ color:C.blue, fontSize:22, filter:`drop-shadow(0 0 12px ${C.blue})` }}>✦</span>
+            <div style={{ height:1, flex:1, maxWidth:120, background:`linear-gradient(to left, transparent, ${C.borderB})` }} />
+          </div>
+
+          {/* Referência bíblica — principal, bem grande */}
+          <h2 style={{ fontFamily:F.display, fontSize:'clamp(32px,7vw,64px)', fontWeight:900, color:C.white, textTransform:'uppercase', letterSpacing:'0.05em', lineHeight:1, marginBottom:10, textShadow:`0 0 40px rgba(0,212,255,0.2)` }}>
             Mateus 1:1–17
           </h2>
-          <p style={{ fontFamily:F.display, fontSize:'clamp(10px,2vw,14px)', letterSpacing:'0.3em', color:`${C.blue}ee`, textTransform:'uppercase', marginBottom:22 }}>
+
+          {/* Título da perícope — destaque com cor */}
+          <p style={{ fontFamily:'"Cinzel Decorative", serif', fontSize:'clamp(14px,2.5vw,22px)', letterSpacing:'0.08em', color:C.blue, marginBottom:20, textShadow:`0 0 20px ${C.blue}55`, fontWeight:700 }}>
             A Genealogia de Jesus Cristo
           </p>
           <div style={{ display:'flex', alignItems:'center', justifyContent:'center', gap:12, marginBottom:28 }}>
@@ -770,7 +948,7 @@ export default function EbookMateusPage() {
             <span style={{ color:C.blue, fontSize:'clamp(10px,1.5vw,12px)' }}>✦</span>
             <div style={{ height:1, width:80, background:`linear-gradient(to left, transparent, ${C.borderB})` }} />
           </div>
-          <p style={{ fontFamily:F.sans, fontStyle:'italic', fontSize:'clamp(16px,2.5vw,19px)', color:C.w45, maxWidth:520, margin:'0 auto 32px' }}>
+          <p style={{ fontFamily:F.sans, fontStyle:'italic', fontSize:'clamp(16px,2.5vw,19px)', color:C.w45, maxWidth:'min(700px,90vw)', margin:'0 auto 32px' }}>
             "Livro da genealogia de Jesus Cristo, filho de Davi, filho de Abraão."
           </p>
           <p style={{ fontFamily:F.mono, fontSize:10, letterSpacing:'0.3em', color:`${C.blue}aa`, textTransform:'uppercase', marginBottom:32 }}>Mateus 1:1</p>
