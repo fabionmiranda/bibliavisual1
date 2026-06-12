@@ -337,8 +337,8 @@ function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: num
           if (entry.kind === 'title') {
             return (
               <div key={idx} style={{
-                fontSize: 'clamp(11px,3vw,13px)', fontWeight: 800, color: cor,
-                lineHeight: 1.4, marginBottom: 12, marginTop: 4,
+                fontSize: 'clamp(13px,3vw,15px)', fontWeight: 800, color: cor,
+                lineHeight: 1.4, marginBottom: 14, marginTop: 4,
               }}>
                 {entry.text}
               </div>
@@ -375,17 +375,17 @@ function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: num
               {/* Badge — never shrinks */}
               <div style={{
                 flexShrink: 0,
-                minWidth: 'clamp(24px,5vw,34px)',
+                minWidth: 'clamp(28px,5vw,38px)',
                 textAlign: 'center',
                 background: isCenter ? pal.bg : pal.bg.replace(/[\d.]+\)$/, '0.10)'),
                 border: `1px solid ${isCenter ? pal.border : pal.border.replace(/[\d.]+\)$/, '0.35)')}`,
                 borderRadius: 7,
-                padding: 'clamp(3px,0.8vw,5px) clamp(4px,1vw,8px)',
-                fontSize: 'clamp(10px,2.5vw,13px)',
+                padding: 'clamp(4px,0.8vw,6px) clamp(5px,1vw,9px)',
+                fontSize: 'clamp(12px,2.8vw,15px)',
                 fontWeight: 900,
                 color: pal.label,
                 lineHeight: 1.3,
-                boxShadow: isCenter ? `0 0 12px ${pal.bg}` : undefined,
+                boxShadow: isCenter ? `0 0 14px ${pal.bg}` : undefined,
                 letterSpacing: '0.04em',
                 alignSelf: 'flex-start',
               }}>
@@ -396,7 +396,7 @@ function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: num
               <div style={{
                 flex: 1,
                 minWidth: 0,
-                fontSize: 'clamp(11px,2.6vw,13px)',
+                fontSize: 'clamp(13px,2.8vw,15px)',
                 lineHeight: 1.6,
                 overflowWrap: 'break-word',
                 wordBreak: 'break-word',
@@ -414,13 +414,27 @@ function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: num
                   </span>
                 )}
                 <span style={{
-                  color: isCenter ? pal.label : 'rgba(255,255,255,0.80)',
+                  color: isCenter ? pal.label : 'rgba(255,255,255,0.88)',
                   fontWeight: isCenter ? 700 : 400,
                 }}>
                   {/* Split on [...] so Hebrew/Greek inside brackets never line-breaks */}
                   {desc.split(/(\[[^\]]+\])/).map((part, pi) =>
                     part.startsWith('[') && part.endsWith(']')
-                      ? <span key={pi} style={{ whiteSpace: 'nowrap', unicodeBidi: 'isolate', direction: 'ltr' }}>{' '}{part}</span>
+                      ? (
+                        <span key={pi} style={{
+                          whiteSpace: 'nowrap',
+                          unicodeBidi: 'isolate',
+                          direction: 'ltr',
+                          fontFamily: '"SBL Hebrew","Ezra SIL","Noto Serif Hebrew","Noto Sans Hebrew","Times New Roman",serif',
+                          fontSize: 'clamp(15px,3.2vw,18px)',
+                          fontWeight: 600,
+                          color: pal.label,
+                          letterSpacing: '0.04em',
+                          marginLeft: 4,
+                        }}>
+                          {part}
+                        </span>
+                      )
                       : part
                   )}
                 </span>
@@ -4825,15 +4839,15 @@ function DiaModal({ d, onClose, innerRef }: { d: DiaDevocional; onClose: () => v
 
           <h2 style={{
             fontFamily: '"Cinzel Decorative", serif',
-            fontSize: 'clamp(17px,4.5vw,28px)',
+            fontSize: 'clamp(20px,5vw,32px)',
             color: C.white, marginBottom: 6, lineHeight: 1.2,
           }}>
             {d.livro}
           </h2>
-          <div style={{ fontSize: 'clamp(14px,3.5vw,17px)', color: cor, fontWeight: 800, marginBottom: 4 }}>
+          <div style={{ fontSize: 'clamp(16px,4vw,20px)', color: cor, fontWeight: 800, marginBottom: 4 }}>
             {d.livroAbrev} {d.capitulos}
           </div>
-          <div style={{ fontSize: 'clamp(12px,3vw,15px)', color: 'rgba(255,255,255,0.80)', lineHeight: 1.5 }}>
+          <div style={{ fontSize: 'clamp(14px,3.5vw,17px)', color: 'rgba(255,255,255,0.85)', lineHeight: 1.5 }}>
             {d.pericope}
           </div>
         </div>
@@ -4860,8 +4874,8 @@ function DiaModal({ d, onClose, innerRef }: { d: DiaDevocional; onClose: () => v
             }}>
               <div style={{ color: cor, marginTop: 2, flexShrink: 0 }}>{icon}</div>
               <div>
-                <div style={{ fontSize: 'clamp(9px,2.5vw,10px)', color: cor, fontWeight: 900, letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 4 }}>{label}</div>
-                <div style={{ fontSize: 'clamp(12px,3vw,13px)', color: 'rgba(255,255,255,0.88)', lineHeight: 1.75 }}>{text}</div>
+                <div style={{ fontSize: 'clamp(10px,2.5vw,11px)', color: cor, fontWeight: 900, letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 6 }}>{label}</div>
+                <div style={{ fontSize: 'clamp(14px,3.2vw,16px)', color: 'rgba(255,255,255,0.92)', lineHeight: 1.8 }}>{text}</div>
               </div>
             </div>
           ))}
