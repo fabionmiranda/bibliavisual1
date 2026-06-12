@@ -227,8 +227,26 @@ function DiagramaQuiasmo({
                 )}
                 {g.descricoes.map((d, j) => (
                   <span key={j} className={`text-base sm:text-lg leading-snug ${d.startsWith('"') ? 'italic' : ''}`}
-                    style={{ color: '#f1f5f9ee' }}>
-                    {d}
+                    style={{ color: '#f1f5f9ee', overflowWrap: 'break-word', wordBreak: 'break-word' }}>
+                    {d.split(/(\[[^\]]+\])/).map((part, pi) =>
+                      part.startsWith('[') && part.endsWith(']')
+                        ? (
+                          <span key={pi} style={{
+                            whiteSpace: 'nowrap',
+                            unicodeBidi: 'isolate',
+                            direction: 'ltr',
+                            fontFamily: '"SBL Hebrew","Ezra SIL","Noto Serif Hebrew","Noto Sans Hebrew","Times New Roman",serif',
+                            fontSize: 'clamp(15px,3vw,18px)',
+                            fontWeight: 600,
+                            color: cor,
+                            letterSpacing: '0.04em',
+                            marginLeft: 4,
+                          }}>
+                            {part}
+                          </span>
+                        )
+                        : part
+                    )}
                   </span>
                 ))}
               </div>
