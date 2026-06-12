@@ -212,31 +212,81 @@ const QUIASMA_PALETA = [
   { label: 'rgba(80,220,220,1)',  bg: 'rgba(80,220,220,0.10)',  border: 'rgba(80,220,220,0.40)'  },
 ];
 
+type QuiasmaStatus = 'loading' | 'ok' | 'sem-arquivo' | 'sem-pericope';
+
 function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: number }) {
   const [quiasma, setQuiasma] = useState<string>('');
-  const [carregando, setCarregando] = useState(true);
+  const [status, setStatus] = useState<QuiasmaStatus>('loading');
   const isAT = d.testamento === 'AT';
   const cor = isAT ? C.atColor : C.ntColor;
   const corB = isAT ? C.goldB : C.blueB;
 
   useEffect(() => {
     const path = livroPath(d.livro, d.testamento);
-    setCarregando(true);
+    setStatus('loading');
     fetch(`${path}/quiastico.txt`)
-      .then(r => r.ok ? r.text() : null)
-      .then(text => {
-        if (text) {
-          const bloco = extractQuiasmaBloco(text, pericopeIdx);
-          setQuiasma(bloco);
-        } else {
-          setQuiasma('');
-        }
-        setCarregando(false);
+      .then(r => {
+        if (!r.ok) { setStatus('sem-arquivo'); return null; }
+        return r.text();
       })
-      .catch(() => { setQuiasma(''); setCarregando(false); });
+      .then(text => {
+        if (!text) return;
+        const bloco = extractQuiasmaBloco(text, pericopeIdx);
+        if (!bloco) { setStatus('sem-pericope'); return; }
+        setQuiasma(bloco);
+        setStatus('ok');
+      })
+      .catch(() => setStatus('sem-arquivo'));
   }, [d, pericopeIdx]);
 
-  if (carregando) return null;
+  if (status === 'loading') return null;
+
+  // ── Mensagem quando arquivo ou perícope não existe no admin ──────────
+  if (status === 'sem-arquivo' || status === 'sem-pericope') {
+    const adminPath = `/admin/${d.testamento.toLowerCase()}/${slugDeLivro(d.livro)}`;
+    return (
+      <div style={{
+        marginTop: 28, borderRadius: 16,
+        border: `1px solid ${corB}`,
+        background: 'rgba(5,7,26,0.70)',
+        padding: 'clamp(14px,4vw,22px)',
+        display: 'flex', alignItems: 'flex-start', gap: 14,
+      }}>
+        <div style={{
+          width: 36, height: 36, borderRadius: 10, flexShrink: 0,
+          background: isAT ? 'rgba(255,200,80,0.12)' : 'rgba(80,200,255,0.12)',
+          border: `1px solid ${corB}`,
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+        }}>
+          <BookOpen size={16} color={cor} />
+        </div>
+        <div>
+          <div style={{ fontSize: 11, fontWeight: 900, color: cor, letterSpacing: '0.18em', textTransform: 'uppercase', marginBottom: 6 }}>
+            Estrutura Quiástica
+          </div>
+          <div style={{ fontSize: 'clamp(12px,3vw,14px)', color: 'rgba(255,255,255,0.55)', lineHeight: 1.6, marginBottom: 10 }}>
+            {status === 'sem-arquivo'
+              ? <>O arquivo <span style={{ fontFamily: 'monospace', color: 'rgba(255,255,255,0.75)' }}>quiastico.txt</span> ainda não foi inserido no admin para <strong style={{ color: 'rgba(255,255,255,0.85)' }}>{d.livro}</strong>.</>
+              : <>A perícope <strong style={{ color: 'rgba(255,255,255,0.85)' }}>{d.pericope}</strong> ainda não possui quiasma cadastrado no admin para <strong style={{ color: 'rgba(255,255,255,0.85)' }}>{d.livro}</strong>.</>
+            }
+          </div>
+          <a
+            href={adminPath}
+            style={{
+              display: 'inline-flex', alignItems: 'center', gap: 6,
+              fontSize: 12, fontWeight: 800, color: cor,
+              border: `1px solid ${corB}`, borderRadius: 8,
+              padding: '5px 12px', textDecoration: 'none',
+              background: isAT ? 'rgba(255,200,80,0.08)' : 'rgba(80,200,255,0.08)',
+            }}
+          >
+            Inserir no Admin →
+          </a>
+        </div>
+      </div>
+    );
+  }
+
   if (!quiasma) return null;
 
   // ── Parse into structured entries ──────────────────────────────────
