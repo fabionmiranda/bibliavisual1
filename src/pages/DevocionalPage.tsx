@@ -79,27 +79,30 @@ function livroPath(livro: string, testamento: 'AT' | 'NT') {
 }
 
 function extractQuiasmaBloco(text: string, idx: number): string {
-  const marker = `[${idx}]`;
-  const start = text.indexOf('\n' + marker);
-  if (start === -1) {
-    const startAlt = text.startsWith(marker) ? 0 : -1;
-    if (startAlt === -1) return '';
-    const nextMarker = text.indexOf('\n[', 1);
-    const sep = text.indexOf('\n==', 1);
-    const end = Math.min(
-      nextMarker > 0 ? nextMarker : Infinity,
-      sep > 0 ? sep : Infinity,
-    );
-    return end === Infinity ? text : text.slice(0, end).trim();
+  // Matches [N] or [0N] or [00N] — handles zero-padded section numbers
+  const markerRe = new RegExp(`^\\[0*${idx}\\]`);
+  const anyMarkerRe = /^\[\d/;
+  const sepRe = /^={5,}/;
+
+  const lines = text.split(/\r?\n/);
+  let blockStart = -1;
+
+  for (let i = 0; i < lines.length; i++) {
+    const t = lines[i].trim();
+    if (markerRe.test(t)) { blockStart = i; break; }
   }
-  const blockStart = start + 1;
-  const nextMarkerIdx = text.indexOf('\n[', blockStart + 1);
-  const sepIdx = text.indexOf('\n==', blockStart);
-  const end = Math.min(
-    nextMarkerIdx > 0 ? nextMarkerIdx : Infinity,
-    sepIdx > 0 ? sepIdx : Infinity,
-  );
-  return end === Infinity ? text.slice(blockStart).trim() : text.slice(blockStart, end).trim();
+  if (blockStart === -1) return '';
+
+  let blockEnd = lines.length;
+  for (let i = blockStart + 1; i < lines.length; i++) {
+    const t = lines[i].trim();
+    if ((anyMarkerRe.test(t) && !markerRe.test(t)) || sepRe.test(t)) {
+      blockEnd = i;
+      break;
+    }
+  }
+
+  return lines.slice(blockStart, blockEnd).join('\n').trim();
 }
 
 // ─── Sub-components ───────────────────────────────────────────────
