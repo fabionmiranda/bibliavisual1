@@ -266,7 +266,7 @@ function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: num
 
     if (!trimmed) { entries.push({ kind: 'spacer' }); i++; continue; }
 
-    if (/^\[/.test(trimmed)) { entries.push({ kind: 'title', text: trimmed }); i++; continue; }
+    if (/^\[\d/.test(trimmed)) { entries.push({ kind: 'title', text: trimmed }); i++; continue; }
 
     const labelMatch = trimmed.match(/^([A-Z])'?\d*\s*[\(\-]/);
     if (labelMatch) {
@@ -278,8 +278,8 @@ function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: num
       let j = i + 1;
       while (j < linhas.length) {
         const next = linhas[j].trim();
-        if (!next) { j++; break; }           // blank line ends description
-        if (/^\[/.test(next)) break;          // next title
+        if (!next) { j++; break; }            // blank line ends description
+        if (/^\[\d/.test(next)) break;        // next section title [N]
         if (/^([A-Z])'?\d*\s*[\(\-]/.test(next)) break; // next label
         descLines.push(next);
         j++;
