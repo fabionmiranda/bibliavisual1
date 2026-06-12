@@ -330,7 +330,7 @@ function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: num
       </div>
 
       {/* Corpo */}
-      <div style={{ background: 'rgba(5,7,26,0.85)', padding: 'clamp(12px,3vw,20px) clamp(8px,2.5vw,18px)' }}>
+      <div dir="ltr" style={{ background: 'rgba(5,7,26,0.85)', padding: 'clamp(12px,3vw,20px) clamp(8px,2.5vw,18px)' }}>
         {entries.map((entry, idx) => {
           if (entry.kind === 'spacer') return <div key={idx} style={{ height: 4 }} />;
 
@@ -354,63 +354,72 @@ function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: num
           const refPart = label.slice(badgeLetter.length).trim();
 
           return (
-            <div key={idx} style={{
-              display: 'flex',
-              alignItems: 'flex-start',
-              gap: 'clamp(6px,1.5vw,10px)',
-              marginTop: isCenter ? 14 : (level === 0 ? 12 : 6),
-              marginBottom: isCenter ? 14 : 4,
-              paddingLeft: `clamp(${level * 6}px, ${level * 1.5}vw, ${level * STEP}px)`,
-            }}>
+            <div
+              key={idx}
+              dir="ltr"
+              style={{
+                display: 'flex',
+                alignItems: 'flex-start',
+                gap: 'clamp(5px,1.2vw,9px)',
+                marginTop: isCenter ? 14 : (level === 0 ? 12 : 6),
+                marginBottom: isCenter ? 14 : 4,
+                paddingLeft: `clamp(${level * 4}px, ${level * 1.2}vw, ${level * STEP}px)`,
+              }}
+            >
               {/* Accent bar */}
               <div style={{
-                width: 3, minHeight: 36, borderRadius: 4,
-                background: pal.label, flexShrink: 0, marginTop: 2,
+                width: 3, minHeight: 34, borderRadius: 4,
+                background: pal.label, flexShrink: 0, marginTop: 3,
               }} />
 
-              {/* Badge */}
+              {/* Badge — never shrinks */}
               <div style={{
                 flexShrink: 0,
-                minWidth: 'clamp(26px,6vw,36px)',
+                minWidth: 'clamp(24px,5vw,34px)',
                 textAlign: 'center',
                 background: isCenter ? pal.bg : pal.bg.replace(/[\d.]+\)$/, '0.10)'),
                 border: `1px solid ${isCenter ? pal.border : pal.border.replace(/[\d.]+\)$/, '0.35)')}`,
                 borderRadius: 7,
-                padding: 'clamp(3px,1vw,5px) clamp(4px,1.2vw,8px)',
-                fontSize: 'clamp(11px,2.8vw,13px)',
+                padding: 'clamp(3px,0.8vw,5px) clamp(4px,1vw,8px)',
+                fontSize: 'clamp(10px,2.5vw,13px)',
                 fontWeight: 900,
                 color: pal.label,
                 lineHeight: 1.3,
                 boxShadow: isCenter ? `0 0 12px ${pal.bg}` : undefined,
                 letterSpacing: '0.04em',
+                alignSelf: 'flex-start',
               }}>
                 {badgeLetter}
               </div>
 
-              {/* Reference + Description */}
-              <div style={{ flex: 1, minWidth: 0 }}>
+              {/* Reference + Description — single inline text block, no internal breaks */}
+              <div style={{
+                flex: 1,
+                minWidth: 0,
+                fontSize: 'clamp(11px,2.6vw,13px)',
+                lineHeight: 1.6,
+                overflowWrap: 'break-word',
+                wordBreak: 'break-word',
+                unicodeBidi: 'plaintext',
+              }}>
                 {refPart && (
                   <span style={{
-                    fontSize: 'clamp(9px,2.2vw,11px)',
                     color: pal.label,
-                    opacity: 0.7,
+                    opacity: 0.75,
                     fontWeight: 600,
-                    marginRight: 6,
-                    whiteSpace: 'nowrap',
+                    fontSize: 'clamp(9px,2vw,11px)',
+                    marginRight: 5,
                   }}>
                     {refPart}
                   </span>
                 )}
-                {desc && (
-                  <span style={{
-                    fontSize: 'clamp(11px,2.8vw,13px)',
-                    color: isCenter ? pal.label : 'rgba(255,255,255,0.75)',
-                    fontWeight: isCenter ? 700 : 400,
-                    lineHeight: 1.55,
-                  }}>
-                    {desc}
-                  </span>
-                )}
+                <span style={{
+                  color: isCenter ? pal.label : 'rgba(255,255,255,0.80)',
+                  fontWeight: isCenter ? 700 : 400,
+                  unicodeBidi: 'plaintext',
+                }}>
+                  {desc}
+                </span>
               </div>
             </div>
           );
