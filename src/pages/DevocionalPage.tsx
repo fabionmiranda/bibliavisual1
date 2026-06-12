@@ -400,7 +400,6 @@ function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: num
                 lineHeight: 1.6,
                 overflowWrap: 'break-word',
                 wordBreak: 'break-word',
-                unicodeBidi: 'plaintext',
               }}>
                 {refPart && (
                   <span style={{
@@ -409,6 +408,7 @@ function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: num
                     fontWeight: 600,
                     fontSize: 'clamp(9px,2vw,11px)',
                     marginRight: 5,
+                    whiteSpace: 'nowrap',
                   }}>
                     {refPart}
                   </span>
@@ -416,9 +416,13 @@ function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: num
                 <span style={{
                   color: isCenter ? pal.label : 'rgba(255,255,255,0.80)',
                   fontWeight: isCenter ? 700 : 400,
-                  unicodeBidi: 'plaintext',
                 }}>
-                  {desc}
+                  {/* Split on [...] so Hebrew/Greek inside brackets never line-breaks */}
+                  {desc.split(/(\[[^\]]+\])/).map((part, pi) =>
+                    part.startsWith('[') && part.endsWith(']')
+                      ? <span key={pi} style={{ whiteSpace: 'nowrap', unicodeBidi: 'isolate', direction: 'ltr' }}>{' '}{part}</span>
+                      : part
+                  )}
                 </span>
               </div>
             </div>
