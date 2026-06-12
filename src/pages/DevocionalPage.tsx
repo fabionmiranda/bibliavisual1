@@ -141,16 +141,27 @@ function DiaCard({ d, isHoje, onClick, onShare }: {
       onHoverStart={() => setHov(true)}
       onHoverEnd={() => setHov(false)}
       initial={{ opacity: 0, y: 8 }}
-      animate={{ opacity: 1, y: 0 }}
+      animate={isHoje
+        ? { opacity: 1, y: 0, boxShadow: [
+            `0 0 0 1px ${C.blueB}, 0 4px 24px rgba(0,212,255,0.12)`,
+            `0 0 0 2px ${C.blueB}, 0 4px 36px rgba(0,212,255,0.35)`,
+            `0 0 0 1px ${C.blueB}, 0 4px 24px rgba(0,212,255,0.12)`,
+          ]}
+        : { opacity: 1, y: 0 }
+      }
+      transition={isHoje
+        ? { opacity: { duration: 0.3 }, y: { duration: 0.3 },
+            boxShadow: { duration: 2.2, repeat: Infinity, ease: 'easeInOut' } }
+        : { duration: 0.3 }
+      }
       style={{
         cursor: 'pointer', display: 'block', width: '100%',
         background: isHoje
-          ? 'linear-gradient(135deg,rgba(0,212,255,0.18) 0%,rgba(80,200,255,0.08) 100%)'
+          ? 'linear-gradient(135deg,rgba(0,212,255,0.20) 0%,rgba(80,200,255,0.09) 100%)'
           : hov ? C.bgCardH : C.bgCard,
         border: `1px solid ${isHoje ? C.blueB : hov ? C.borderH : C.border}`,
         borderRadius: 14, padding: '14px 16px', textAlign: 'left',
         transition: 'background 0.2s, border-color 0.2s',
-        boxShadow: isHoje ? `0 0 0 1px ${C.blueB}, 0 4px 24px rgba(0,212,255,0.12)` : undefined,
         position: 'relative', overflow: 'hidden', boxSizing: 'border-box',
       }}
       onClick={onClick}
@@ -184,9 +195,9 @@ function DiaCard({ d, isHoje, onClick, onShare }: {
         <WhatsAppIcon size={13} />
       </button>
 
-      <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 9 }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 10 }}>
         <span style={{
-          fontSize: 20, fontWeight: 900, color: C.white,
+          fontSize: 24, fontWeight: 900, color: C.white,
           fontVariantNumeric: 'tabular-nums', lineHeight: 1,
           letterSpacing: '-0.02em',
         }}>
@@ -194,10 +205,10 @@ function DiaCard({ d, isHoje, onClick, onShare }: {
         </span>
         <BadgeTestamento t={d.testamento} />
       </div>
-      <div style={{ fontWeight: 800, fontSize: 12, color: C.white, marginBottom: 5, lineHeight: 1.3 }}>
+      <div style={{ fontWeight: 800, fontSize: 14, color: C.white, marginBottom: 6, lineHeight: 1.3 }}>
         {d.livroAbrev} {d.capitulos}
       </div>
-      <div style={{ fontSize: 11, color: cor, lineHeight: 1.4, fontWeight: 600 }}>
+      <div style={{ fontSize: 13, color: cor, lineHeight: 1.45, fontWeight: 600 }}>
         {d.pericope}
       </div>
     </motion.div>
@@ -390,7 +401,7 @@ function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: num
           if (entry.kind === 'title') {
             return (
               <div key={idx} style={{
-                fontSize: 'clamp(13px,3vw,15px)', fontWeight: 800, color: cor,
+                fontSize: 'clamp(15px,3vw,17px)', fontWeight: 800, color: cor,
                 lineHeight: 1.4, marginBottom: 14, marginTop: 4,
               }}>
                 {entry.text}
@@ -434,7 +445,7 @@ function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: num
                 border: `1px solid ${isCenter ? pal.border : pal.border.replace(/[\d.]+\)$/, '0.35)')}`,
                 borderRadius: 7,
                 padding: 'clamp(4px,0.8vw,6px) clamp(5px,1vw,9px)',
-                fontSize: 'clamp(12px,2.8vw,15px)',
+                fontSize: 'clamp(14px,3vw,17px)',
                 fontWeight: 900,
                 color: pal.label,
                 lineHeight: 1.3,
@@ -449,8 +460,8 @@ function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: num
               <div style={{
                 flex: 1,
                 minWidth: 0,
-                fontSize: 'clamp(13px,2.8vw,15px)',
-                lineHeight: 1.6,
+                fontSize: 'clamp(15px,3vw,17px)',
+                lineHeight: 1.65,
                 overflowWrap: 'break-word',
                 wordBreak: 'break-word',
               }}>
@@ -459,8 +470,8 @@ function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: num
                     color: pal.label,
                     opacity: 0.75,
                     fontWeight: 600,
-                    fontSize: 'clamp(9px,2vw,11px)',
-                    marginRight: 5,
+                    fontSize: 'clamp(11px,2.2vw,13px)',
+                    marginRight: 6,
                     whiteSpace: 'nowrap',
                   }}>
                     {refPart}
@@ -479,7 +490,7 @@ function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: num
                           unicodeBidi: 'isolate',
                           direction: 'ltr',
                           fontFamily: '"SBL Hebrew","Ezra SIL","Noto Serif Hebrew","Noto Sans Hebrew","Times New Roman",serif',
-                          fontSize: 'clamp(15px,3.2vw,18px)',
+                          fontSize: 'clamp(17px,3.5vw,21px)',
                           fontWeight: 600,
                           color: pal.label,
                           letterSpacing: '0.04em',
