@@ -239,21 +239,62 @@ function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: num
   if (carregando) return null;
   if (!quiasma) return null;
 
+  // ── Parse into structured entries ──────────────────────────────────
+  type QEntry =
+    | { kind: 'title'; text: string }
+    | { kind: 'row'; label: string; desc: string; level: number; isCenter: boolean }
+    | { kind: 'spacer' };
+
+  const entries: QEntry[] = [];
   const linhas = quiasma.split('\n');
 
-  // First pass: collect unique base letters in order of first appearance.
-  // This builds a stable level map: A→0, B→1, C→2, etc.
-  // A' and B' share the SAME level as A and B, guaranteeing matching colors.
+  // First pass: collect unique base letters for level mapping
   const baseLetters: string[] = [];
-  for (const linha of linhas) {
-    const m = linha.trim().match(/^([A-Z])'?\d*\s*[\(\-]/);
+  for (const l of linhas) {
+    const m = l.trim().match(/^([A-Z])'?\d*\s*[\(\-]/);
     if (m) {
       const base = m[1].toUpperCase();
       if (!baseLetters.includes(base)) baseLetters.push(base);
     }
   }
-  const maxLevel = baseLetters.length - 1; // index of center letter
-  const STEP = 22; // px per indent level
+  const maxLevel = baseLetters.length - 1;
+
+  // Second pass: group each label with all its following description lines
+  let i = 0;
+  while (i < linhas.length) {
+    const trimmed = linhas[i].trim();
+
+    if (!trimmed) { entries.push({ kind: 'spacer' }); i++; continue; }
+
+    if (/^\[/.test(trimmed)) { entries.push({ kind: 'title', text: trimmed }); i++; continue; }
+
+    const labelMatch = trimmed.match(/^([A-Z])'?\d*\s*[\(\-]/);
+    if (labelMatch) {
+      const base = labelMatch[1].toUpperCase();
+      const level = Math.max(0, baseLetters.indexOf(base));
+      const isCenter = level === maxLevel;
+      // Collect description lines that follow (non-label, non-empty, non-title)
+      const descLines: string[] = [];
+      let j = i + 1;
+      while (j < linhas.length) {
+        const next = linhas[j].trim();
+        if (!next) { j++; break; }           // blank line ends description
+        if (/^\[/.test(next)) break;          // next title
+        if (/^([A-Z])'?\d*\s*[\(\-]/.test(next)) break; // next label
+        descLines.push(next);
+        j++;
+      }
+      entries.push({ kind: 'row', label: trimmed, desc: descLines.join(' '), level, isCenter });
+      i = j;
+      continue;
+    }
+
+    i++;
+  }
+
+  // ── Render ────────────────────────────────────────────────────────
+  // Indent step: smaller so deep nesting still fits on narrow screens
+  const STEP = 16; // px per level on desktop; clamped for mobile
 
   return (
     <div style={{
@@ -263,7 +304,7 @@ function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: num
       border: `1px solid ${corB}`,
       boxShadow: '0 8px 40px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.06)',
     }}>
-      {/* Cabecalho */}
+      {/* Cabeçalho */}
       <div style={{
         background: 'linear-gradient(135deg, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0.02) 100%)',
         borderBottom: `1px solid ${corB}`,
@@ -280,96 +321,100 @@ function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: num
         </div>
         <div>
           <div style={{ fontSize: 11, fontWeight: 900, color: cor, letterSpacing: '0.18em', textTransform: 'uppercase' }}>
-            Estrutura Quiastica Espelhada
+            Estrutura Quiástica Espelhada
           </div>
           <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.4)', marginTop: 1 }}>
-            {d.livro} — Pericope {pericopeIdx}
+            {d.livro} — Perícope {pericopeIdx}
           </div>
         </div>
       </div>
 
       {/* Corpo */}
-      <div style={{ background: 'rgba(5,7,26,0.85)', padding: 'clamp(14px,4vw,22px) clamp(10px,3vw,16px)' }}>
-        {(() => {
-          // curLevel tracks the level of the last seen label so description
-          // lines can inherit the correct indentation and color of their parent.
-          let curLevel = 0;
+      <div style={{ background: 'rgba(5,7,26,0.85)', padding: 'clamp(12px,3vw,20px) clamp(8px,2.5vw,18px)' }}>
+        {entries.map((entry, idx) => {
+          if (entry.kind === 'spacer') return <div key={idx} style={{ height: 4 }} />;
 
-          return linhas.map((linha, i) => {
-            const trimmed = linha.trim();
-            if (!trimmed) return <div key={i} style={{ height: 5 }} />;
-
-            // Section header: [N] TITLE
-            if (/^\[/.test(trimmed)) {
-              return (
-                <div key={i} style={{
-                  fontSize: 'clamp(12px,3.5vw,14px)', fontWeight: 800, color: cor,
-                  lineHeight: 1.4, marginBottom: 14, marginTop: 4,
-                }}>
-                  {trimmed}
-                </div>
-              );
-            }
-
-            // Chiasm label: A (...), B' (...), C (...), etc.
-            const labelMatch = trimmed.match(/^([A-Z])'?\d*\s*[\(\-]/);
-            if (labelMatch) {
-              const base = labelMatch[1].toUpperCase();
-              const level = baseLetters.indexOf(base);
-              curLevel = level >= 0 ? level : 0;
-              const isCenter = curLevel === maxLevel;
-              const p = QUIASMA_PALETA[curLevel % QUIASMA_PALETA.length];
-              return (
-                <div key={i} style={{
-                  marginLeft: `clamp(${curLevel * 7}px, ${curLevel * 2}vw, ${curLevel * STEP}px)`,
-                  marginBottom: 4,
-                  marginTop: curLevel === 0 ? 16 : 8,
-                  display: 'flex', alignItems: 'flex-start', gap: 8,
-                }}>
-                  <div style={{
-                    width: 3, minHeight: 22, borderRadius: 4,
-                    background: p.label, flexShrink: 0, marginTop: 3,
-                  }} />
-                  <div style={{
-                    background: isCenter
-                      ? p.bg
-                      : p.bg.replace(/[\d.]+\)$/, '0.06)'),
-                    border: `1px solid ${isCenter ? p.border : p.border.replace(/[\d.]+\)$/, '0.25)')}`,
-                    borderRadius: 8,
-                    padding: isCenter
-                      ? 'clamp(5px,1.5vw,8px) clamp(10px,2.5vw,16px)'
-                      : 'clamp(3px,1vw,5px) clamp(8px,2vw,12px)',
-                    fontSize: 'clamp(11px,3vw,13px)', fontWeight: 800, color: p.label,
-                    lineHeight: 1.4, flex: 1,
-                    boxShadow: isCenter ? `0 0 16px ${p.bg}` : undefined,
-                  }}>
-                    {trimmed}
-                  </div>
-                </div>
-              );
-            }
-
-            // Description / body line — indented one step past the parent label
-            const isCentro = /^CENTRO:/i.test(trimmed);
-            const p = QUIASMA_PALETA[curLevel % QUIASMA_PALETA.length];
-            const descLevel = curLevel + 1;
-
+          if (entry.kind === 'title') {
             return (
-              <div key={i} style={{
-                marginLeft: `clamp(${descLevel * 7}px, ${descLevel * 2}vw, ${descLevel * STEP - 4}px)`,
-                paddingLeft: 10,
-                borderLeft: `1px solid ${isCentro ? p.border : 'rgba(255,255,255,0.07)'}`,
-                fontSize: 'clamp(11px,3vw,13px)',
-                color: isCentro ? p.label : 'rgba(255,255,255,0.55)',
-                fontWeight: isCentro ? 700 : 400,
-                lineHeight: 1.65,
-                marginBottom: 2,
+              <div key={idx} style={{
+                fontSize: 'clamp(11px,3vw,13px)', fontWeight: 800, color: cor,
+                lineHeight: 1.4, marginBottom: 12, marginTop: 4,
               }}>
-                {trimmed}
+                {entry.text}
               </div>
             );
-          });
-        })()}
+          }
+
+          // Row: label badge + description side by side
+          const { label, desc, level, isCenter } = entry;
+          const pal = QUIASMA_PALETA[level % QUIASMA_PALETA.length];
+          // Extract just the letter portion (e.g. "A", "B'", "C") for the badge
+          const badgeLetter = label.match(/^([A-Z]'?\d*)/)?.[1] ?? label[0];
+          // The reference part: "(1.1–2)" or "— something"
+          const refPart = label.slice(badgeLetter.length).trim();
+
+          return (
+            <div key={idx} style={{
+              display: 'flex',
+              alignItems: 'flex-start',
+              gap: 'clamp(6px,1.5vw,10px)',
+              marginTop: isCenter ? 14 : (level === 0 ? 12 : 6),
+              marginBottom: isCenter ? 14 : 4,
+              paddingLeft: `clamp(${level * 6}px, ${level * 1.5}vw, ${level * STEP}px)`,
+            }}>
+              {/* Accent bar */}
+              <div style={{
+                width: 3, minHeight: 36, borderRadius: 4,
+                background: pal.label, flexShrink: 0, marginTop: 2,
+              }} />
+
+              {/* Badge */}
+              <div style={{
+                flexShrink: 0,
+                minWidth: 'clamp(26px,6vw,36px)',
+                textAlign: 'center',
+                background: isCenter ? pal.bg : pal.bg.replace(/[\d.]+\)$/, '0.10)'),
+                border: `1px solid ${isCenter ? pal.border : pal.border.replace(/[\d.]+\)$/, '0.35)')}`,
+                borderRadius: 7,
+                padding: 'clamp(3px,1vw,5px) clamp(4px,1.2vw,8px)',
+                fontSize: 'clamp(11px,2.8vw,13px)',
+                fontWeight: 900,
+                color: pal.label,
+                lineHeight: 1.3,
+                boxShadow: isCenter ? `0 0 12px ${pal.bg}` : undefined,
+                letterSpacing: '0.04em',
+              }}>
+                {badgeLetter}
+              </div>
+
+              {/* Reference + Description */}
+              <div style={{ flex: 1, minWidth: 0 }}>
+                {refPart && (
+                  <span style={{
+                    fontSize: 'clamp(9px,2.2vw,11px)',
+                    color: pal.label,
+                    opacity: 0.7,
+                    fontWeight: 600,
+                    marginRight: 6,
+                    whiteSpace: 'nowrap',
+                  }}>
+                    {refPart}
+                  </span>
+                )}
+                {desc && (
+                  <span style={{
+                    fontSize: 'clamp(11px,2.8vw,13px)',
+                    color: isCenter ? pal.label : 'rgba(255,255,255,0.75)',
+                    fontWeight: isCenter ? 700 : 400,
+                    lineHeight: 1.55,
+                  }}>
+                    {desc}
+                  </span>
+                )}
+              </div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
@@ -4724,7 +4769,7 @@ function DiaModal({ d, onClose, innerRef }: { d: DiaDevocional; onClose: () => v
           border: `1px solid ${corB}`,
           borderRadius: 'clamp(16px,4vw,28px)',
           width: '100%',
-          maxWidth: 'min(860px, 100%)',
+          maxWidth: 'min(1080px, 96vw)',
           padding: 'clamp(1.2rem,5vw,2.5rem)',
           boxShadow: `0 0 80px rgba(0,0,0,0.7), 0 0 0 1px ${corB}, inset 0 1px 0 rgba(255,255,255,0.06)`,
           position: 'relative',
