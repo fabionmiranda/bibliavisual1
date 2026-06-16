@@ -1,2009 +1,1308 @@
 GENESIS_QUIASMOS
 
-[1] OS SEIS DIAS DA CRIAÇÃO E O SÁBADO — Gênesis 1.1–2.4a
+[01] SEIS DIAS DA CRIAÇÃO E O SÁBADO — Gênesis 1:1–2:4a
 
-A (1.1–2)
-    Caos e trevas: "a terra era sem forma e vazia"
+P (1:1–2)
+    A Criação [שׁמיםארץ]
 
-    B (1.3–5)
-        Dia 1 — Luz criada; separação luz/trevas
+A (1:3–5)
+    "Primeiro dia: luz e trevas, dia e noite" [אור]
 
-        C (1.6–8)
-            Dia 2 — Firmamento; separação das águas
+    B (1:6–8)
+        "Segundo dia: águas e céu" [מים]
 
-            D (1.9–13)
-                Dia 3 — Terra seca; vegetação
+        C (1:9–13)
+            "Terceiro dia: terra e plantas" [עשׂב]
 
-            D' (1.14–19)
-                Dia 4 — Luminares para governar dia e noite
+A' (1:14–19)
+    "Quarto dia: luz e trevas, dia e noite" [מאור]
 
-        C' (1.20–23)
-            Dia 5 — Aves e peixes enchem céu e mar
+    B' (1:20–23)
+        "Quinto dia: águas e céu" [מים]
 
-    B' (1.24–31)
-        Dia 6 — Animais e ser humano criados (imagem de Deus)
+        C' (1:24–31)
+            "Sexto dia: terra e plantas" [עשׂב]
 
-A' (2.1–3)
-    Ordem e descanso: "Deus abençoou o sétimo dia"
+P' (2:1–4a)
+    A Criação [שׁמיםארץ]
 
-P (2.4a)
-    Fecho: "Esta é a origem dos céus e da terra"
+Subestrutura de Gn 1:24–31:
+A (1:24–25) — "Palavras de Deus 1, bom" [טוב]
+B (1:26) — "Palavras de Deus 2, domínio" [וירדו]
+C (1:27) — CENTRO: Deus criou o homem
+B' (1:28) — "Palavras de Deus 3, domínio" [ורדו]
+A' (1:29–31) — "Palavras de Deus 4, bom" [טוב]
 
+A: Luz e trevas. B: Águas e céu. C: Terra e plantas.
 
 ==================================================
 
-[2] O JARDIM DO ÉDEN — Gênesis 2.4b–17
+[02] O JARDIM DO ÉDEN — Gênesis 2:4b–17
 
-A (2.4b–6)
-    O SENHOR Deus forma a terra; ainda não havia chuva nem homem
+A (2:4b–6)
+    Um ribeiro irriga a terra [והשׁקה]
 
-    B (2.7)
-        Deus forma o homem do pó da terra e sopra vida em suas narinas
+    B (2:7–8)
+        Deus colocou o homem no Éden [גןבעדן]
 
-        C (2.8–9)
-            O jardim plantado no Éden; toda árvore desejável à vista
+        C (2:9)
+            CENTRO: A árvore do conhecimento do bem e do mal [עץהדעת]
 
-            D (2.10–14)
-                O rio do Éden e suas quatro cabeceiras
+A' (2:10–14)
+    Um rio irriga o jardim [להשׁקות]
 
-        C' (2.15)
-            O homem posto no jardim para cultivar e guardar
+    B' (2:15)
+        Deus estabeleceu o homem no Éden [בגןעדן]
 
-    B' (2.16)
-        Deus dá ao homem a ordem: "Podes comer de toda árvore"
+        C' (2:16–17)
+            A árvore do conhecimento do bem e do mal [ומעץהדעת]
 
-A' (2.17)
-    A única proibição: "Da árvore do conhecimento não comerás"
-    — "No dia em que dela comeres, certamente morrerás"
+A: Água. B: Deus colocou o homem no Éden. C: A árvore do conhecimento do bem e do mal.
 
-
-==================================================
-
-[3] A CRIAÇÃO DA MULHER — Gênesis 2.18–25
-
-A (2.18)
-    "Não é bom que o homem esteja só"
-    — Deus decide fazer uma auxiliadora
-
-    B (2.19–20)
-        Adão nomeia todos os animais
-        — Nenhum animal era auxiliadora idônea
-
-        C (2.21)
-            Deus faz cair sono profundo sobre Adão
-
-        C' (2.22)
-            Deus constrói a mulher da costela de Adão
-
-    B' (2.23)
-        Adão proclama: "Esta é osso dos meus ossos!"
-        — Nomeia a mulher (ishshah do ish)
-
-A' (2.24–25)
-    "Por isso o homem deixará pai e mãe e se unirá à sua mulher"
-    — Os dois nus, sem vergonha
-
-
-==================================================
-
-[4] O PRIMEIRO PECADO E SUA PUNIÇÃO — Gênesis 3.1–24
-
-A (3.1–5)
-    A serpente seduz a mulher com a palavra
-
-    B (3.6–7)
-        A mulher e o homem comem o fruto proibido
-
-        C (3.8–13)
-            Deus interroga: "Onde estás?"
-            — Adão culpa a mulher; a mulher culpa a serpente
-
-        C' (3.14–15)
-            Deus sentencia a serpente
-            — Inimizade eterna entre a semente da mulher e da serpente
-
-    B' (3.16)
-        Punição da mulher: dor no parto; sujeição ao marido
-
-A' (3.17–19)
-    Punição do homem: maldição do solo
-    — "Ao pó retornarás"
-
-P (3.20–24)
-    Deus veste Adão e Eva; expulsão do Éden e guarda do caminho
-
-
-==================================================
-
-[5] CAIM MATA ABEL — Gênesis 4.1–26
-
-A (4.1–2)
-    Nascimento de Caim e Abel; suas vocações (lavrador e pastor)
-
-    B (4.3–5)
-        As ofertas: Deus aceita Abel, rejeita Caim
-        — Caim fica irado
-
-        C (4.6–7)
-            CENTRO: Deus adverte Caim — "o pecado está à porta"
-            — "Mas tu podes dominá-lo"
-
-        C' (4.8)
-            Caim convida Abel ao campo e o mata
-
-    B' (4.9–12)
-        Deus interroga Caim; a maldição sobre o homicida
-
-A' (4.13–24)
-    Caim parte; seus descendentes; linhagem de violência (Lameque)
-
-P (4.25–26)
-    Sete: nascimento de Sete; os homens começam a invocar o nome do SENHOR
-
-
-==================================================
-
-[6] OS DESCENDENTES DE ADÃO ATÉ NOÉ — Gênesis 5.1–32
-
-A (5.1–2)
-    Prólogo: "No dia em que Deus criou o homem, à sua semelhança o fez"
-
-    B (5.3–8)
-        Sete → Set: vida, filhos, morte (912 anos)
-
-        C (5.9–20)
-            Enos → Jerede: cada geração: "viveu… gerou… e morreu"
-
-            D (5.21–24)
-                CENTRO — Enoque: "andou com Deus e não foi achado"
-                (o único que não morreu)
-
-        C' (5.25–27)
-            Metusalém: 969 anos — o mais velho
-
-    B' (5.28–31)
-        Lameque → Noé: "este nos consolará do nosso trabalho"
-
-A' (5.32)
-    Epílogo: Noé tem três filhos — Sem, Cam e Jafé
-
-
-==================================================
-
-[7] O GRANDE DILÚVIO — Gênesis 6.1–8.22
-
-A (6.1–4)
-    Corrupção dos filhos de Deus; introdução ao juízo
-
-    B (6.5–8)
-        Deus vê a maldade: "arrependeu-se de ter feito o homem"
-
-        C (6.9–10)
-            Noé: justo e íntegro; andou com Deus
-
-            D (6.11–13)
-                Deus vê que a terra estava corrompida; decide destruir
-
-                E (6.14–22)
-                    Instruções para construir a arca
-
-                    F (7.1–5)
-                        Ordem de entrar na arca com os animais
-
-                        G (7.6–10)
-                            As criaturas entram na arca
-
-                            H (7.11–16)
-                                As fontes do abismo abrem-se; as águas sobem
-
-                                X (7.17–24)
-                                    CLÍMAX: as águas prevalecem 150 dias
-
-                            H' (8.1–5)
-                                Deus lembra de Noé; as águas diminuem
-
-                        G' (8.6–12)
-                            O corvo e a pomba; sinais do recuo das águas
-
-                    F' (8.13–14)
-                        A terra está seca; ordem para sair da arca
-
-                E' (8.15–19)
-                    Noé sai da arca com todas as criaturas
-
-            D' (8.20–21a)
-                Noé oferece holocaustos; Deus cheira o aroma agradável
-
-        C' (8.21b)
-            Deus decide: "não mais amaldiçoarei a terra por causa do homem"
-
-    B' (8.22)
-        Promessa cósmica: semeadura e colheita não cessarão
-
-
-==================================================
-
-[8] A ALIANÇA COM NOÉ — Gênesis 9.1–17
-
-A (9.1–3)
-    Bênção: "Sede fecundos"; domínio sobre os animais dado ao homem
-
-    B (9.4–6)
-        Proibição do sangue: "não comereis carne com sua vida"
-        — "Quem derramar sangue humano, pelo homem seu sangue será derramado"
-
-    A' (9.7)
-        Bênção repetida: "sede fecundos e multiplicai-vos na terra"
-
-P (9.8–17)
-    Aliança formal com Noé e toda criação
-    — O arco-íris: sinal eterno da aliança
-
-
 ==================================================
-
-[9] NOÉ E SEUS FILHOS — Gênesis 9.18–29
 
-A (9.18–19)
-    Os três filhos de Noé; deles se populou toda a terra
+[03] A CRIAÇÃO DA MULHER — Gênesis 2:18–25
 
-    B (9.20–21)
-        Noé planta vinha; bebe e fica nu em sua tenda
+A (2:18)
+    Fazer uma parceira adequada para o homem
 
-        C (9.22)
-            Cam vê a nudez do pai e conta aos irmãos
+    B (2:19–20)
+        Criação e nomeação dos animais e aves [יקרא]
 
-        C' (9.23)
-            Sem e Jafé cobrem o pai sem olhar
+        C (2:21)
+            CENTRO: A costela
 
-    B' (9.24–27)
-        Noé acorda; maldiz Canaã; abençoa Sem e Jafé
+    B' (2:22–23)
+        Criação e nomeação da mulher [יקרא]
 
-A' (9.28–29)
-    Os últimos dias e a morte de Noé (950 anos)
+A' (2:24–25)
+    O homem e sua esposa
 
+A: Parceira adequada. B: Criação e nomeação. C: A costela.
 
 ==================================================
 
-[10] AS NAÇÕES DESCENDENTES DE NOÉ — Gênesis 10.1–32
+[04] O PRIMEIRO PECADO E SEU CASTIGO — Gênesis 3:1–24
 
-A (10.1)
-    Prólogo: "Esta é a descendência dos filhos de Noé"
+A (3:1–6)
+    "Sereis como deuses, que conhecem o bem e o mal" (3:5) [ידעיטובורע]
 
-    B (10.2–5)
-        Filhos de Jafé: nações do norte e das ilhas
+    B (3:7–8)
+        Folhas de figueira
 
-        C (10.6–20)
-            Filhos de Cam: Canaã, Egito, Etiópia e outros
+        C (3:9–13)
+            Desculpa do homem e da mulher
 
-            D (10.8–12)
-                CENTRO — Ninrode: o primeiro herói; fundador de reinos
+            D (3:14–15)
+                CENTRO: Maldição contra a serpente
 
-        C' (10.21–30)
-            Filhos de Sem: linhagem do Oriente Próximo
+        C' (3:16–20)
+            Punição contra o homem e a mulher
 
-    B' (10.31–32)
-        Epílogo: "Estas são as famílias dos filhos de Noé"
+    B' (3:21)
+        Vestes de pele
 
+A' (3:22–24)
+    "O homem tornou-se como um de nós, conhecendo o bem e o mal" (3:22) [לדעתטובורע]
 
-==================================================
-
-[11] A TORRE DE BABEL — Gênesis 11.1–9
-
-A (11.1–2)
-    Toda a terra: uma só língua; migraram para o Oriente
-
-    B (11.3–4)
-        O povo decide construir: "façamos tijolos"
-        Motivo: "para que não sejamos espalhados"
-
-        C (11.5)
-            DEUS DESCEU para ver a cidade e a torre que os homens edificavam
-
-    B' (11.6–7)
-        Deus decide agir: "confundamos a linguagem deles"
-        Resultado: a construção é abandonada
-
-A' (11.8–9)
-    Toda a terra: línguas confundidas; espalhados por toda a terra
+A: Conhecer o bem e o mal. B: Uma veste. C: Pecado e punição do homem e da mulher. D: Maldição contra a serpente.
 
-
 ==================================================
 
-[12] OS DESCENDENTES DE SEM — Gênesis 11.10–26
+[05] CAIM MATA ABEL — Gênesis 4:1–26
 
-A (11.10–11)
-    Sem tem 100 anos e gera Arfaxade dois anos após o dilúvio
+A (4:1–2)
+    Nascimento de Caim e Abel
 
-    B (11.12–19)
-        Arfaxade → Sela → Héber → Pelegue → Reu
-        Cada geração: viveu… gerou… e teve outros filhos
+    B (4:3–16)
+        "Caim será vingado sete vezes" (4:15) [שׁבעתים]
 
-        C (11.20–22)
-            CENTRO — Seru e Naor: geração em declínio de longevidade
+        C (4:17–22)
+            CENTRO: Descendentes de Caim
 
-    B' (11.23–24)
-        Naor → Tera
+    B' (4:23–24)
+        "Se Caim é vingado sete vezes, Lameque, setenta e sete" (4:24) [שׁבעתים]
 
-A' (11.25–26)
-    Tera tem 70 anos e gera Abrão, Naor e Harã
+A' (4:25–26)
+    Nascimento de Sete
 
+A: Nascimento dos filhos de Adão. B: Vingança sétupla. C: Descendentes de Caim.
 
 ==================================================
-
-[13] OS DESCENDENTES DE TERA — Gênesis 11.27–32
-
-A (11.27)
-    "Esta é a descendência de Tera"
-
-    B (11.28)
-        Harã morre antes de Tera, em Ur dos caldeus
 
-        C (11.29–30)
-            Abrão casa com Sarai, que era estéril
-            — Naor casa com Milcá
+[06] DESCENDENTES DE ADÃO ATÉ NOÉ E SEUS FILHOS — Gênesis 5:1–32
 
-        C' (11.31)
-            Tera sai de Ur com Abrão, Ló e Sarai rumo a Canaã
-            — Chegam em Harã e ficam
+Genealogia de Adão
 
-    B' (11.32)
-        Tera morre em Harã com 205 anos
-
-A' [implícito: início da jornada de Abrão em 12.1]
-
-
 ==================================================
-
-[14] O CHAMADO DE ABRÃO — Gênesis 12.1–9
 
-A (12.1–3)
-    Ordem de sair: "Vai… para a terra que te mostrarei"
-    — Promessas: nação, nome, bênção para todos os povos
+[07] O GRANDE DILÚVIO — Gênesis 6:1–8:22
 
-    B (12.4–5)
-        Abrão obedece: parte com Ló, Sarai e toda a família
+A (6:1–8)
+    "Maldade; Deus determinou trazer o dilúvio" [רע]
 
-        C (12.6–7)
-            Chegada em Canaã — Siquém, carvalho de Moré
-            — "A teus descendentes darei esta terra"
-            — Primeiro altar ao SENHOR
+    B (6:9–7:4)
+        Palavras de Deus a Noé; cumprimento por Noé
 
-    B' (12.8a)
-        Abrão se move para o monte entre Betel e Ai
+        C (7:5–9)
+            Noé tinha seiscentos anos quando as águas do dilúvio vieram sobre a terra (7:6) [שׁשׁ]
 
-A' (12.8b–9)
-    Segundo altar; Abrão continua em direção ao sul
+            D (7:10–11)
+                "Passados os sete dias, as águas do dilúvio vieram sobre a terra" (7:10) [לשׁבעת]
 
+                E (7:12–16)
+                    "Quarenta dias; a arca foi fechada" [ארבעים]
 
-==================================================
+                    F (7:17–20)
+                        "Todas as montanhas mais altas foram submersas" (7:19) [ההרים]
 
-[15] ABRÃO E SARAI NO EGITO — Gênesis 12.10–20
+                        G (7:21–24)
+                            CENTRO: Todas as criaturas pereceram, exceto os que estavam na arca
 
-A (12.10)
-    Há fome em Canaã; Abrão desce ao Egito
+                    F' (8:1–5)
+                        "Os cumes das montanhas apareceram" (8:5) [הרי]
 
-    B (12.11–13)
-        Abrão pede a Sarai que diga ser sua irmã
-        — "Para que me tratem bem por tua causa"
+                E' (8:6–9)
+                    "Quarenta dias; a escotilha da arca foi aberta" [ארבעים]
 
-        C (12.14–15)
-            Os egípcios veem a beleza de Sarai; ela é levada para o faraó
+            D' (8:10–12)
+                "Esperou mais sete dias e soltou a pomba novamente; desta vez ela não voltou" (8:12) [שׁבעת]
 
-            D (12.16)
-                CENTRO: Abrão recebe gado e servos por causa de Sarai
+        C' (8:13–14)
+            "No seiscentésimo e primeiro ano de vida de Noé, no primeiro mês, no primeiro dia do mês, as águas começaram a secar" (8:13) [ושׁשׁ]
 
-        C' (12.17)
-            O SENHOR aflige o faraó com grandes pragas por causa de Sarai
+    B' (8:15–20)
+        Palavras de Deus a Noé; consagração de Noé
 
-    B' (12.18–19)
-        O faraó confronta Abrão: "Por que disseste que era tua irmã?"
+A' (8:21–22)
+    "Maldade; Deus determinou não trazer mais o dilúvio" [רע]
 
-A' (12.20)
-    O faraó expulsa Abrão do Egito
+A: Maldade. B: A palavra de Deus. C: Seiscentos anos. D: Sete dias. E: Quarenta dias. F: As montanhas. G: Todas as criaturas pereceram, exceto os da arca — o tema do remanescente.
 
-
 ==================================================
-
-[16] A SEPARAÇÃO DE ABRÃO E LÓ — Gênesis 13.1–18
 
-A (13.1–4)
-    Abrão sobe do Egito ao Neguebe; volta ao altar entre Betel e Ai
+[08] A ALIANÇA COM NOÉ — Gênesis 9:1–17
 
-    B (13.5–7)
-        Conflito: os rebanhos de Abrão e Ló não cabem juntos
+A (9:1–7)
+    "Somente a carne com seu sangue vital não comereis" (9:4) [בשׂר]
 
-        C (13.8–9)
-            Abrão propõe a separação: "Se fores à esquerda, irei à direita"
+    B (9:8–11)
+        "Nunca mais todas as criaturas serão destruídas pelas águas do dilúvio" (9:11) [המבול]
 
-            D (13.10–11)
-                CENTRO: Ló escolhe o vale do Jordão — "como o jardim do SENHOR"
+        C (9:12)
+            Sinal da aliança [אותהברית]
 
-        C' (13.12–13)
-            Separação consumada; Ló vai para Sodoma (homens perversos)
+        C' (9:13)
+            Sinal da aliança [לאותברית]
 
-    B' (13.14–17)
-        Deus renova a promessa a Abrão: toda a terra que vê; filhos como o pó
+    B' (9:14–16)
+        "As águas nunca mais se tornarão dilúvio para destruir toda criatura mortal" (9:15) [למבול]
 
-A' (13.18)
-    Abrão vai a Hebrom; constrói um altar ao SENHOR
+A' (9:17)
+    "Este é o sinal da aliança que estabeleci entre mim e todas as criaturas mortais que estão na terra" (9:17) [בשׂר]
 
+A: Carne. B: Todas as criaturas nunca mais destruídas pelo dilúvio. C: Sinal da aliança.
 
 ==================================================
-
-[17] O CATIVEIRO DE LÓ — Gênesis 14.1–12
-
-A (14.1–2)
-    Lista dos quatro reis do Oriente e os cinco reis de Sodoma e arredores
-
-    B (14.3–4)
-        Doze anos de servidão; no décimo terceiro ano, rebelião
-
-        C (14.5–7)
-            Os quatro reis vencem os rafaítas e outros povos
 
-        C' (14.8–10)
-            Os cinco reis são derrotados nos poços de asfalto
+[09] NOÉ E SEUS FILHOS — Gênesis 9:18–29
 
-    B' (14.11–12)
-        Os vencedores saqueiam Sodoma e levam Ló cativo
+P (9:18–19)
+    Descendentes de Noé
 
-A' [seguido em 14.13: um fugitivo conta a Abrão]
+A (9:20–21)
+    Embriaguez de Noé [היין]
 
+    B (9:22)
+        "Pecado de Cão, pai de Canaã" [כנען]
 
-==================================================
-
-[18] ABRÃO E MELQUISEDEQUE — Gênesis 14.13–24
+        C (9:23)
+            Comportamento de Sem e Jafé [שׁםויפת]
 
-A (14.13–16)
-    Abrão ouve sobre o cativeiro de Ló; reúne seus homens e o resgata
+A' (9:24)
+    Despertar de Noé [מיינו]
 
-    B (14.17)
-        O rei de Sodoma sai ao encontro de Abrão após a vitória
+    B' (9:25)
+        Maldição contra Canaã [כנען]
 
-        C (14.18–20)
-            CENTRO: Melquisedeque abençoa Abrão
-            — "Bendito seja Abrão pelo Deus Altíssimo"
-            — Abrão dá o dízimo de tudo
+        C' (9:26–27)
+            Bênção para Sem e Jafé [שׁםויהי]
 
-    B' (14.21)
-        O rei de Sodoma pede as pessoas; oferece o saque a Abrão
+P' (9:28–29)
+    Morte de Noé
 
-A' (14.22–24)
-    Abrão recusa o saque: "Para que não digas que me tornaste rico"
-    — Exceto o que os servos comeram
+A: Noé. B: Canaã. C: Sem e Jafé.
 
-
 ==================================================
 
-[19] A ALIANÇA DE DEUS COM ABRÃO — Gênesis 15.1–21
+[10] NAÇÕES DESCENDENTES DE NOÉ — Gênesis 10:1–32
 
-A (15.1–3)
-    Visão: "Não temas, Abrão, sou o teu escudo"
-    Problema: Abrão não tem filhos; herdeiro é Damasceno Eliézer
+A (10:1)
+    "Estas são as gerações dos filhos de Noé: Sem, Cão e Jafé" (10:1) [תולדת]
 
-    B (15.4–5)
-        Promessa: um filho natural; descendentes como as estrelas
+    B1 (10:2–5)
+        Descendentes de Jafé
 
-        C (15.6)
-            CENTRO: "Abrão creu no SENHOR, e isso lhe foi imputado como justiça"
+    B2 (10:6–20)
+        Descendentes de Cão
 
-    B' (15.7–11)
-        Promessa: a terra de Canaã
-        — Ritual de aliança: animais cortados ao meio
+    B3 (10:21–31)
+        Descendentes de Sem
 
-A' (15.12–21)
-    Visão de trevas e terror; o SENHOR passa entre os pedaços
-    — Aliança formal: a terra dos dez povos prometida aos descendentes
+A' (10:32)
+    "Estas são as famílias dos filhos de Noé, segundo suas gerações, em suas nações" (10:32) [לתולדתם]
 
+A: Genealogia. B: Descendentes de Sem, Cão e Jafé.
 
 ==================================================
-
-[20] O NASCIMENTO DE ISMAEL — Gênesis 16.1–16
 
-A (16.1–2)
-    Sarai é estéril; oferece Hagar a Abrão como concubina
+[11] A TORRE DE BABEL — Gênesis 11:1–9
 
-    B (16.3–4)
-        Abrão toma Hagar; ela concebe e despreza Sarai
+A (11:1)
+    "Toda a terra tinha a mesma língua" (11:1) [שׂפה]
 
-        C (16.5–6)
-            Sarai trata Hagar com dureza; Hagar foge
+    B (11:2–4)
+        "Senão seremos dispersos por toda a terra" (11:4) [נפוץ]
 
-            D (16.7–10)
-                CENTRO: O Anjo do SENHOR encontra Hagar no deserto
-                — "Voltarei a multiplicar muito a tua descendência"
+        C (11:5–7)
+            CENTRO: As palavras do SENHOR
 
-        C' (16.11–12)
-            A profecia: "Chamarás seu nome Ismael"
-            — Ele será "como jumento selvagem entre os homens"
+    B' (11:8)
+        "O SENHOR os dispersou dali por toda a terra" (11:8) [ויפץ]
 
-    B' (16.13)
-        Hagar chama o SENHOR: "Tu és o Deus que me vê"
+A' (11:9)
+    "O SENHOR confundiu a língua de toda a terra" (11:9) [שׂפת]
 
-A' (16.14–16)
-    O poço de Beer-Laai-Rói; Ismael nasce quando Abrão tem 86 anos
+A: Língua. B: Dispersão. C: As palavras do SENHOR.
 
-
 ==================================================
-
-[21] O SINAL DA ALIANÇA — Gênesis 17.1–27
-
-A (17.1–3a)
-    O SENHOR aparece: "Eu sou o Deus Todo-Poderoso — anda na minha presença"
-    Abrão prostra-se diante de Deus
-
-    B (17.3b–8)
-        Mudança de nome: Abrão → Abraão
-        — "Pai de multidão de nações"
-        — Promessa: terra de Canaã; Deus deles para sempre
 
-        C (17.9–14)
-            CENTRO: A circuncisão como sinal da aliança
-            — "Todo o masculino dentre vós será circuncidado"
-            — "O incircunciso será eliminado do povo"
+[12] DESCENDENTES DE SEM ATÉ ABRÃO — Gênesis 11:10–32
 
-    B' (17.15–22)
-        Mudança de nome: Sarai → Sara
-        — Promessa: um filho de Sara; seu nome será Isaque
-        — Ismael também receberá bênção (12 príncipes)
+Genealogia de Sem
 
-A' (17.23–27)
-    Abraão circuncida toda a sua casa no mesmo dia
-
-
 ==================================================
-
-[22] UM FILHO PROMETIDO A ABRAÃO E SARA — Gênesis 18.1–15
 
-A (18.1–2)
-    O SENHOR aparece a Abraão nos carvalhos de Mamre
-    Três homens chegam; Abraão corre ao encontro deles
+[13] A CHAMADA DE ABRÃO — Gênesis 12:1–9
 
-    B (18.3–5)
-        Abraão oferece hospitalidade: "descansai sob a árvore"
+A (12:1–3)
+    Bênção de Deus a Abrão [ברך]
 
-        C (18.6–8)
-            Sara prepara pão; Abraão prepara o bezerro; eles comem
+    B (12:4–6)
+        Abrão partiu conforme o SENHOR ordenou [ויצא]
 
-            D (18.9)
-                CENTRO: "Onde está Sara, tua mulher?"
+        C (12:7)
+            CENTRO: O SENHOR apareceu a Abrão; a promessa da terra [וירא]
 
-        C' (18.10)
-            Promessa: "Sara terá um filho" — Sara ouve da entrada da tenda
+    B' (12:8)
+        Abrão ergueu um altar e invocou o nome do SENHOR [ויבן]
 
-    B' (18.11–12)
-        Sara ri em seu coração: "Depois que envelheceu…?"
+A' (12:9)
+    Abrão continuou avançando em direção ao Neguebe [ויסע]
 
-A' (18.13–15)
-    O SENHOR pergunta: "Por que Sara riu?"
-    — "Há coisa demasiado difícil para o SENHOR?"
-    — Sara nega; o SENHOR insiste
+A: Bênção. B: Partida. C: Aparição do SENHOR e promessa da terra.
 
-
 ==================================================
-
-[23] O JULGAMENTO SOBRE SODOMA — Gênesis 18.16–33
 
-A (18.16–17)
-    Os homens se levantam; o SENHOR revela a Abraão o que fará
+[14] ABRÃO NO EGITO — Gênesis 12:10–20
 
-    B (18.18–19)
-        O propósito de Deus com Abraão: bênção e justiça
+A (12:10)
+    Abrão desceu ao Egito por causa da fome [רעב]
 
-        C (18.20–21)
-            O clamor de Sodoma chegou ao SENHOR; ele desce para ver
+    B (12:11–13)
+        Abrão pediu a Sarai que dissesse ser sua irmã [אחתי]
 
-            D (18.22–23)
-                CENTRO: Abraão intercede — "Destruirás o justo com o ímpio?"
+        C (12:14–15)
+            CENTRO: Sarai foi levada para o palácio do Faraó
 
-        C' (18.24–26)
-            Primeira barganha: 50 justos; SENHOR perdoa
+    B' (12:16–19)
+        O Faraó devolveu Sarai a Abrão [אשׁתך]
 
-    B' (18.27–31)
-        A negociação desce: 45, 40, 30, 20 justos
+A' (12:20)
+    Abrão saiu do Egito [ויעל]
 
-A' (18.32–33)
-    Dez justos; o SENHOR se vai
+A: O Egito. B: Sarai como irmã. C: Sarai no palácio do Faraó.
 
-
 ==================================================
-
-[24] A DEPRAVAÇÃO DE SODOMA — Gênesis 19.1–11
 
-A (19.1–3)
-    Os dois anjos chegam a Sodoma; Ló os convida para sua casa
+[15] ABRÃO E LÓ SE SEPARAM — Gênesis 13:1–18
 
-    B (19.4–5)
-        Todos os homens de Sodoma cercam a casa: "Traz os homens para os conhecermos"
+A (13:1–4)
+    Abrão voltou ao Neguebe e ao altar que havia construído [המזבח]
 
-        C (19.6–8)
-            Ló sai e oferece suas filhas em lugar dos hóspedes
+    B (13:5–7)
+        Conflito entre os pastores de Abrão e Ló [ריב]
 
-            D (19.9)
-                CENTRO: A multidão ameaça tratar Ló pior do que os hóspedes
+        C (13:8–9)
+            CENTRO: Abrão propôs a separação [נפרד]
 
-        C' (19.10)
-            Os anjos puxam Ló para dentro e fecham a porta
+    B' (13:10–13)
+        Ló escolheu o vale do Jordão [ויבחר]
 
-    B' (19.11)
-        Os anjos ferem com cegueira os homens que procuravam a porta
+A' (13:14–18)
+    O SENHOR renovou a promessa a Abrão; ele construiu um altar [המזבח]
 
-A' [os anjos revelam o juízo iminente em 19.12–13]
+A: O altar. B: Conflito. C: A separação.
 
-
 ==================================================
-
-[25] A DESTRUIÇÃO DE SODOMA — Gênesis 19.12–29
 
-A (19.12–13)
-    Os anjos urgem Ló a sair com sua família
+[16] ABRÃO RESGATA LÓ — Gênesis 14:1–24
 
-    B (19.14)
-        Ló avisa os genros; eles pensam que é gracejo
+A (14:1–12)
+    Os reis da Mesopotâmia derrotaram os reis de Sodoma e capturaram Ló [לוט]
 
-        C (19.15–17)
-            Os anjos conduzem Ló, a esposa e as duas filhas para fora
-            — "Não olhes para trás; não pares na planície"
+    B (14:13–16)
+        Abrão resgatou Ló e os cativos [וישׁב]
 
-            D (19.18–22)
-                CENTRO: Ló pede para escapar para a pequena cidade de Zoar
+        C (14:17)
+            CENTRO: O encontro com o rei de Sodoma [מלך]
 
-        C' (19.23–25)
-            O sol nasce; o SENHOR faz chover enxofre e fogo sobre Sodoma
+    B' (14:18–20)
+        Melquisedeque abençoou Abrão [ויברכהו]
 
-    B' (19.26)
-        A mulher de Ló olha para trás e se torna estátua de sal
+A' (14:21–24)
+    Abrão recusou os despojos do rei de Sodoma [מלך]
 
-A' (19.27–29)
-    Abraão vê a fumaça da destruição
-    — Deus se lembrou de Abraão ao livrar Ló
+A: Ló capturado e libertado. B: Resgate. C: O encontro com os reis.
 
-
 ==================================================
-
-[26] A ORIGEM DE MOABE E AMOM — Gênesis 19.30–38
 
-A (19.30)
-    Ló sobe de Zoar e habita numa caverna com suas duas filhas
+[17] A ALIANÇA COM ABRÃO — Gênesis 15:1–21
 
-    B (19.31–32)
-        A filha mais velha propõe: "Não há homem na terra"
-        — "Vamos embriagar nosso pai e dormir com ele"
+A (15:1–6)
+    Abrão creu no SENHOR; foi-lhe imputado como justiça [האמן]
 
-        C (19.33)
-            A noite: a mais velha dorme com o pai; ele não sabe
+    B (15:7–11)
+        O SENHOR ordenou o sacrifício da aliança [ברית]
 
-        C' (19.34–35)
-            A noite seguinte: a mais nova dorme com o pai; ele não sabe
+        C (15:12–16)
+            CENTRO: Profecia sobre o Egito e o Êxodo [מצרים]
 
-    B' (19.36)
-        As duas filhas de Ló concebem do próprio pai
+    B' (15:17–18a)
+        O SENHOR selou a aliança com fogo [ברית]
 
-A' (19.37–38)
-    A mais velha gera Moabe (pai dos moabitas)
-    A mais nova gera Ben-Ami (pai dos amonitas)
+A' (15:18b–21)
+    A promessa da terra aos descendentes de Abrão [זרעך]
 
+A: Fé e justiça. B: A aliança. C: Profecia do Egito.
 
 ==================================================
 
-[27] ABRAÃO E SARA EM GERAR — Gênesis 20.1–18
+[18] AGAR E ISMAEL — Gênesis 16:1–16
 
-A (20.1–2)
-    Abraão diz de Sara: "É minha irmã"; Abimeleque manda buscá-la
+A (16:1–3)
+    Sarai deu Agar a Abrão como concubina [שׁפחתה]
 
-    B (20.3–7)
-        Deus aparece a Abimeleque em sonho: "Vais morrer por causa da mulher"
-        — Abimeleque protesta sua inocência; Deus o instrui a devolver Sara
+    B (16:4–6)
+        Agar desprezou Sarai; Sarai a oprimiu e ela fugiu [ותברח]
 
-        C (20.8–10)
-            Abimeleque confronta Abraão: "Que fizeste conosco?"
+        C (16:7–10)
+            CENTRO: O anjo do SENHOR encontrou Agar junto à fonte [מלאך]
 
-            D (20.11–13)
-                CENTRO: Abraão explica: "Não há temor de Deus neste lugar"
-                — "Ela realmente é minha irmã"
+    B' (16:11–12)
+        O anjo prometeu multiplicar os descendentes de Agar [ורבה]
 
-        C' (20.14–15)
-            Abimeleque devolve Sara e presenteia Abraão
+A' (16:13–16)
+    Agar chamou o SENHOR de "El Roí" — o Deus que me vê [ראי]
 
-    B' (20.16)
-        Abimeleque dá mil moedas a Abraão — "véu dos olhos" para Sara
+A: Agar. B: Fuga. C: O anjo do SENHOR.
 
-A' (20.17–18)
-    Abraão ora; Deus sara Abimeleque e sua casa
-    — O SENHOR havia fechado todos os ventres por causa de Sara
-
-
 ==================================================
 
-[28] O NASCIMENTO DE ISAQUE — Gênesis 21.1–8
+[19] A ALIANÇA DA CIRCUNCISÃO — Gênesis 17:1–27
 
-A (21.1–2)
-    O SENHOR visita Sara conforme prometeu
-    Sara concebe e dá à luz um filho a Abraão na velhice
+A (17:1–8)
+    O SENHOR estabeleceu a aliança com Abrão; mudança de nome para Abraão [ברית]
 
-    B (21.3)
-        Abraão nomeia o filho Isaque
+    B (17:9–14)
+        A circuncisão como sinal da aliança [מול]
 
-        C (21.4)
-            CENTRO: Abraão circuncida Isaque no oitavo dia conforme Deus ordenou
+        C (17:15–16)
+            CENTRO: Mudança do nome de Sarai para Sara; promessa de Isaque [שׂרה]
 
-    B' (21.5)
-        Abraão tinha 100 anos quando Isaque nasceu
+    B' (17:17–22)
+        Abraão e a promessa de Isaque [יצחק]
 
-A' (21.6–8)
-    Sara diz: "Deus me fez rir — quem dissesse que Sara amamentaria filhos?"
-    Isaque cresce; é desmamado; grande banquete
+A' (17:23–27)
+    Abraão circuncidou toda a sua casa no mesmo dia [מול]
 
+A: A aliança. B: Circuncisão. C: Sara e Isaque.
 
 ==================================================
-
-[29] HAGAR E ISMAEL SÃO ENVIADOS — Gênesis 21.9–21
-
-A (21.9–10)
-    Sara vê Ismael zombando; pede a Abraão que expulse Hagar e seu filho
 
-    B (21.11–13)
-        Abraão fica perturbado por causa de Ismael
-        — Deus consola: "de Ismael farei uma nação"
+[20] ABRAÃO INTERCEDE POR SODOMA — Gênesis 18:1–33
 
-        C (21.14)
-            Abraão envia Hagar com pão e água; ela vagueia no deserto de Beer-Seba
+A (18:1–8)
+    O SENHOR apareceu a Abraão junto aos carvalhos de Manre [וירא]
 
-            D (21.15–16)
-                CENTRO: A água acaba; Hagar coloca o menino sob um arbusto
-                — "Não posso ver a morte do menino"
+    B (18:9–15)
+        A promessa do nascimento de Isaque; Sara riu [תצחק]
 
-        C' (21.17–18)
-            Deus ouve a voz do menino; o Anjo chama Hagar do céu
-            — "Não temas; levanta o menino"
+        C (18:16–22)
+            CENTRO: O SENHOR revelou a Abraão o juízo sobre Sodoma [אסתיר]
 
-    B' (21.19)
-        Deus abre os olhos de Hagar; ela vê um poço e dá água ao menino
+    B' (18:23–32)
+        Abraão intercedeu pelos justos de Sodoma [הצדיק]
 
-A' (21.20–21)
-    Deus está com o menino; ele cresce no deserto; Hagar toma esposa do Egito
+A' (18:33)
+    O SENHOR foi embora; Abraão voltou para o seu lugar [וילך]
 
+A: A aparição do SENHOR. B: Isaque e o riso. C: O juízo sobre Sodoma.
 
 ==================================================
 
-[30] A ALIANÇA ENTRE ABRAÃO E ABIMELEQUE — Gênesis 21.22–34
+[21] A DESTRUIÇÃO DE SODOMA — Gênesis 19:1–38
 
-A (21.22–24)
-    Abimeleque e Picol fazem aliança com Abraão: "Deus está contigo em tudo"
+A (19:1–11)
+    Os anjos chegaram a Sodoma; os homens de Sodoma sitiaram a casa de Ló [אנשׁי]
 
-    B (21.25–26)
-        Abraão repreende Abimeleque pelo poço tomado pelos servos
-        — Abimeleque nega saber
+    B (19:12–14)
+        Os anjos ordenaram a Ló que saísse com sua família [צא]
 
-        C (21.27)
-            CENTRO: Abraão dá ovelhas e bois a Abimeleque; fazem aliança
+        C (19:15–22)
+            CENTRO: Ló saiu às pressas; a misericórdia do SENHOR sobre Ló [חמל]
 
-    B' (21.28–30)
-        Abraão separa sete cordeiras para testemunhar que escavou aquele poço
+    B' (19:23–26)
+        O SENHOR destruiu Sodoma; a mulher de Ló virou estátua de sal [ותבט]
 
-A' (21.31–34)
-    O lugar se chama Beer-Seba ("poço do juramento")
-    Abraão planta um tamargueiro e invoca o nome do SENHOR eterno
+A' (19:27–38)
+    Abraão viu a fumaça de Sodoma; Ló e suas filhas em Zoar [לוט]
 
+A: Sodoma. B: A saída. C: A misericórdia do SENHOR.
 
 ==================================================
 
-[31] O COMANDO PARA SACRIFICAR ISAQUE — Gênesis 22.1–19
+[22] ABRAÃO E ABIMELEQUE — Gênesis 20:1–18
 
-A (22.1–2)
-    Deus prova Abraão: "Toma teu filho, teu único filho, a quem amas"
-    — "Oferece-o em holocausto no monte Moriá"
+A (20:1–2)
+    Abraão disse que Sara era sua irmã; Abimeleque a tomou [אחתי]
 
-    B (22.3–5)
-        Abraão parte cedo; os três dias de jornada
-        — "Eu e o rapaz iremos… e voltaremos"
+    B (20:3–7)
+        Deus advertiu Abimeleque em sonho [בחלום]
 
-        C (22.6–8)
-            Isaque pergunta: "Onde está o cordeiro para o holocausto?"
-            — "Deus proverá o cordeiro, meu filho"
+        C (20:8–10)
+            CENTRO: Abimeleque confrontou Abraão [מה]
 
-            D (22.9–10)
-                CENTRO: Abraão amarraa Isaque; estende a mão com a faca
+    B' (20:11–13)
+        Abraão explicou o motivo do seu temor [יראתי]
 
-        C' (22.11–12)
-            O Anjo do SENHOR chama: "Não estendas tua mão contra o rapaz!"
-            — "Agora sei que temes a Deus"
+A' (20:14–18)
+    Abimeleque devolveu Sara a Abraão e o abençoou [וישׁב]
 
-    B' (22.13–14)
-        Abraão vê um carneiro preso pelos chifres; oferece em lugar de Isaque
-        — O monte: "O SENHOR proverá"
+A: Sara como irmã. B: O sonho. C: O confronto.
 
-A' (22.15–19)
-    O Anjo chama segunda vez: jura pela honra divina
-    — Bênção renovada: "em tua semente serão abençoadas todas as nações"
-
-
-==================================================
-
-[32] OS FILHOS DE NAOR — Gênesis 22.20–24
-
-A (22.20)
-    "Depois dessas coisas, foi anunciado a Abraão…"
-
-    B (22.21–23)
-        Oito filhos de Milcá com Naor (incluindo Betuel, pai de Rebeca)
-
-    A' (22.24)
-        Quatro filhos da concubina Reumá
-
-
 ==================================================
-
-[33] A MORTE DE SARA — Gênesis 23.1–20
 
-A (23.1–2)
-    Sara morre com 127 anos em Quiriate-Arba (Hebrom)
-    — Abraão chora por ela
+[23] O NASCIMENTO DE ISAQUE E A EXPULSÃO DE ISMAEL — Gênesis 21:1–21
 
-    B (23.3–6)
-        Abraão pede ao povo da terra um lugar para sepultar Sara
-        — "Sois príncipe de Deus entre nós"
+A (21:1–7)
+    Nascimento de Isaque; Sara riu [יצחק]
 
-        C (23.7–9)
-            Abraão se inclina e pede a caverna de Macpela de Efrom
+    B (21:8–13)
+        Sara pediu a expulsão de Agar e Ismael [גרשׁ]
 
-            D (23.10–13)
-                CENTRO: Efrom propõe dar o campo gratuitamente
-                — Abraão insiste em pagar
+        C (21:14)
+            CENTRO: Abraão expulsou Agar e Ismael [וישׁלח]
 
-        C' (23.14–15)
-            Efrom nomeia o preço: 400 siclos de prata
+    B' (21:15–16)
+        Agar e Ismael no deserto; ela não quis ver o filho morrer [תרא]
 
-    B' (23.16–18)
-        Abraão pesa os 400 siclos; o campo passa a ser legalmente de Abraão
+A' (21:17–21)
+    Deus ouviu a voz de Ismael; o anjo apareceu a Agar [וישׁמע]
 
-A' (23.19–20)
-    Abraão sepulta Sara na caverna de Macpela em Hebrom
-    — O campo confirmado como propriedade de Abraão
+A: Isaque e Ismael. B: A expulsão. C: O deserto.
 
-
 ==================================================
-
-[34] O CASAMENTO DE ISAQUE E REBECA — Gênesis 24.1–67
-
-A (24.1–9)
-    Abraão envia seu servo mais velho para buscar esposa para Isaque
-    — Juramento: não buscar esposa entre as cananéias
-
-    B (24.10–14)
-        O servo parte para a Mesopotâmia; sua oração no poço
-        — "A donzela que me der de beber será a escolhida"
 
-        C (24.15–27)
-            Rebeca aparece e serve o servo generosamente
-            — O servo adora o SENHOR: "foi guiado ao caminho certo"
+[24] A ALIANÇA COM ABIMELEQUE — Gênesis 21:22–34
 
-            D (24.28–33)
-                CENTRO: O servo na casa de Labão; recusa comer antes de falar
+A (21:22–24)
+    Abimeleque pediu uma aliança a Abraão [ברית]
 
-        C' (24.34–49)
-            O servo conta toda a história; pede Rebeca para Isaque
+    B (21:25–26)
+        Abraão queixou-se do poço que foi tomado [בְּאֵר]
 
-    B' (24.50–60)
-        Labão e Betuel concordam: "A coisa saiu do SENHOR"
-        — Rebeca é consultada e consente em partir
+        C (21:27–30)
+            CENTRO: As sete ovelhas como testemunho do poço [שׁבע]
 
-A' (24.61–67)
-    Rebeca vai ao encontro de Isaque; ele a toma por esposa
-    — "Amou-a e se consolou depois da morte de sua mãe"
+    B' (21:31–32)
+        O lugar foi chamado de Berseba [בְּאֵר שָׁבַע]
 
+A' (21:33–34)
+    Abraão invocou o nome do SENHOR, o Deus eterno [עולם]
 
-==================================================
-
-[35] ABRAÃO E QUETURA — Gênesis 25.1–6
-
-A (25.1–2)
-    Abraão toma outra mulher: Quetura; ela lhe gera seis filhos
+A: A aliança. B: O poço. C: As sete ovelhas.
 
-    B (25.3–4)
-        Os filhos e netos desses seis: povos árabes
-
-    A' (25.5–6)
-        Abraão dá tudo que tem a Isaque
-        — Aos filhos das concubinas, dá presentes e os manda para o Oriente
-
-
 ==================================================
-
-[36] A MORTE DE ABRAÃO — Gênesis 25.7–11
 
-A (25.7–8)
-    Abraão morre com 175 anos; "morreu em boa velhice, velho e farto de dias"
+[25] O SACRIFÍCIO DE ISAQUE — Gênesis 22:1–19
 
-    B (25.9–10)
-        Seus filhos Isaque e Ismael o sepultam na caverna de Macpela
-        — O campo que Abraão comprou de Efrom
+A (22:1–2)
+    Deus testou Abraão [נסה]
 
-    A' (25.11)
-        Deus abençoa Isaque após a morte de Abraão
-        — Isaque habita no poço de Beer-Laai-Rói
+    B (22:3–6)
+        Abraão e Isaque subiram juntos ao monte [יחדו]
 
+        C (22:7–8)
+            CENTRO: "Onde está o cordeiro?" — "Deus proverá" [יראה]
 
-==================================================
-
-[37] OS DESCENDENTES DE ISMAEL — Gênesis 25.12–18
-
-A (25.12)
-    "Esta é a descendência de Ismael, filho de Abraão"
-
-    B (25.13–15)
-        Doze filhos de Ismael — doze príncipes de suas nações
+    B' (22:9–13)
+        O anjo deteve Abraão; o carneiro substituiu Isaque [יחדו]
 
-    A' (25.16–18)
-        "Estas são as aldeias e acampamentos de Ismael"
-        — Doze príncipes conforme prometido; Ismael morre com 137 anos
+A' (22:14–19)
+    Abraão chamou o lugar "O SENHOR proverá"; bênção renovada [יראה]
 
+A: O teste. B: A subida juntos. C: "Deus proverá".
 
 ==================================================
-
-[38] ESAÚ E JACÓ — NASCIMENTO E JUVENTUDE — Gênesis 25.19–28
-
-A (25.19–20)
-    "Esta é a descendência de Isaque" — ele tinha 40 anos ao casar com Rebeca
-
-    B (25.21)
-        Isaque intercede pelo SENHOR por Rebeca; ela concebe
-
-        C (25.22–23)
-            CENTRO: Os dois filhos lutam no ventre; Rebeca consulta o SENHOR
-            — "Dois povos se separarão de ti; o maior servirá ao menor"
 
-    B' (25.24–26)
-        Os gêmeos nascem: Esaú (ruivo) e Jacó (segurando o calcanhar)
-        — Isaque tinha 60 anos
+[26] A FAMÍLIA DE NAOR — Gênesis 22:20–24
 
-A' (25.27–28)
-    Esaú: caçador, homem do campo; Jacó: tranquilo, habitando tendas
-    — Isaque amava Esaú; Rebeca amava Jacó
+Lista genealógica da família de Naor, irmão de Abraão
 
-
 ==================================================
 
-[39] ESAÚ VENDE SEU DIREITO DE PRIMOGENITURA — Gênesis 25.29–34
+[27] A MORTE E O SEPULTAMENTO DE SARA — Gênesis 23:1–20
 
-A (25.29–30)
-    Jacó cozinha ensopado; Esaú chega da caça, esgotado
-    — "Deixa-me comer desse vermelho"
+A (23:1–4)
+    Sara morreu; Abraão a chorou e pediu uma sepultura [קבר]
 
-    B (25.31)
-        Jacó exige: "Vende-me primeiro o teu direito de primogenitura"
+    B (23:5–9)
+        Os filhos de Hete ofereceram seus sepulcros a Abraão [קבר]
 
-        C (25.32)
-            CENTRO: Esaú diz — "Estou prestes a morrer; de que me serve o direito?"
+        C (23:10–13)
+            CENTRO: Efrão ofereceu o campo e a caverna de Macpela [שׂדה]
 
-    B' (25.33)
-        Jacó exige o juramento; Esaú jura e vende o direito
+    B' (23:14–16)
+        Abraão pesou a prata ao preço acordado [כסף]
 
-A' (25.34)
-    Jacó dá pão e lentilhas a Esaú; ele come, bebe e parte
-    — "Assim Esaú desprezou o seu direito de primogenitura"
+A' (23:17–20)
+    Abraão sepultou Sara na caverna de Macpela [קבר]
 
+A: O sepultamento de Sara. B: Os filhos de Hete. C: O campo de Macpela.
 
 ==================================================
-
-[40] ISAQUE E ABIMELEQUE — Gênesis 26.1–14
-
-A (26.1–2)
-    Fome na terra; Isaque vai a Gerar; o SENHOR lhe aparece
-    — "Não desças ao Egito; habita na terra que te indicar"
 
-    B (26.3–5)
-        Promessa renovada: terra, descendência como estrelas, bênção
-        — "Por causa de Abraão, que obedeceu à minha voz"
+[28] A ESPOSA PARA ISAQUE — Gênesis 24:1–67
 
-        C (26.6–7)
-            Isaque mente: "É minha irmã" (repete o erro de seu pai)
+A (24:1–9)
+    Abraão jurou ao servo que buscaria esposa para Isaque em sua terra natal [שׁבע]
 
-            D (26.8–9)
-                CENTRO: Abimeleque vê Isaque caríciando Rebeca
-                — "Ela claramente é tua esposa!"
+    B (24:10–27)
+        O servo chegou à cidade de Naor; Rebeca deu água aos camelos [שׁתה]
 
-        C' (26.10–11)
-            Abimeleque repreende Isaque; ordena que ninguém toque nele
+        C (24:28–49)
+            CENTRO: O servo narrou sua missão à família de Rebeca [ויספר]
 
-    B' (26.12–13)
-        Isaque semeia e colhe cem vezes mais; o SENHOR o abençoa
+    B' (24:50–60)
+        A família de Rebeca concordou; ela foi abençoada [ותלך]
 
-A' (26.14)
-    Isaque tem rebanhos, gado e muitos servos; os filisteus o invejam
+A' (24:61–67)
+    Rebeca foi ao encontro de Isaque; eles se casaram [ויקחה]
 
+A: O juramento. B: A chegada. C: A narração da missão.
 
 ==================================================
-
-[41] CONTENDAS PELOS POÇOS — Gênesis 26.15–25
-
-A (26.15–16)
-    Os filisteus entopem os poços; Abimeleque pede que Isaque parta
-
-    B (26.17–18)
-        Isaque vai ao vale de Gerar; reescava os poços de Abraão
-
-        C (26.19–21)
-            Dois poços disputados: Esek ("contenda") e Sitna ("hostilidade")
 
-            D (26.22)
-                CENTRO: O terceiro poço: "Reobote" — "o SENHOR nos deu espaço"
+[29] OS FILHOS DE ABRAÃO POR QUETURA — Gênesis 25:1–6
 
-        C' (26.23)
-            Isaque sobe de lá para Beer-Seba
+Lista genealógica dos filhos de Abraão por Quetura
 
-    B' (26.24)
-        O SENHOR aparece naquela noite: "Não temas; sou o Deus de teu pai Abraão"
-        — "Multiplicarei tua descendência por causa de Abraão meu servo"
-
-A' (26.25)
-    Isaque constrói um altar, invoca o nome do SENHOR e planta sua tenda
-
-
 ==================================================
-
-[42] A ALIANÇA COM ABIMELEQUE — Gênesis 26.26–33
 
-A (26.26–27)
-    Abimeleque vem com Picol a Isaque; Isaque pergunta: "Por que viestes?"
+[30] A MORTE DE ABRAÃO — Gênesis 25:7–11
 
-    B (26.28–29)
-        Proposta de aliança: "Vimos que o SENHOR está contigo"
-        — "Que não haja mal entre nós"
+A (25:7–8)
+    Abraão morreu com cento e setenta e cinco anos [גוע]
 
-        C (26.30)
-            CENTRO: Isaque prepara banquete; comem e bebem juntos
+    B (25:9–10)
+        Isaque e Ismael sepultaram Abraão na caverna de Macpela [קבר]
 
-    B' (26.31)
-        De madrugada fazem aliança; partem em paz
+A' (25:11)
+    Deus abençoou Isaque após a morte de Abraão [ויברך]
 
-A' (26.32–33)
-    Os servos de Isaque relatam o poço encontrado
-    — O lugar chamado Seba (Beer-Seba)
+A: A morte de Abraão. B: O sepultamento.
 
-
 ==================================================
-
-[43] AS ESPOSAS HITITAS DE ESAÚ — Gênesis 26.34–35
 
-A (26.34)
-    Esaú tem 40 anos e toma duas esposas hititas: Judite e Basemate
+[31] OS DESCENDENTES DE ISMAEL — Gênesis 25:12–18
 
-B (26.35)
-    Elas foram amargura de espírito para Isaque e Rebeca
+Lista genealógica dos filhos de Ismael
 
-
 ==================================================
-
-[44] JACÓ ROUBA A BÊNÇÃO — Gênesis 27.1–40
 
-A (27.1–4)
-    Isaque, com a vista enfraquecida, chama Esaú:
-    — "Caça e prepara comida para que eu te abençoe antes de morrer"
+[32] O NASCIMENTO DE ESAÚ E JACÓ — Gênesis 25:19–34
 
-    B (27.5–13)
-        Rebeca ouve e traça o plano com Jacó
-        — "Sobre mim recaia a maldição, meu filho"
+A (25:19–23)
+    Rebeca consultou o SENHOR sobre os gêmeos; a profecia dos dois povos [רב]
 
-        C (27.14–17)
-            Rebeca prepara a comida e veste Jacó com as roupas de Esaú
+    B (25:24–26)
+        Nascimento de Esaú e Jacó [עשׂו]
 
-            D (27.18–29)
-                CLÍMAX: Isaque é enganado; Jacó recebe a bênção do primogênito
-                — "Sejam-te sujeitos os povos; curva-se a ti teu próprio irmão"
+        C (25:27–28)
+            CENTRO: O caráter oposto dos irmãos [שׂדה]
 
-        C' (27.30–33)
-            Esaú chega; Isaque treme com grande tremor
+    B' (25:29–33)
+        Jacó comprou o direito de primogenitura de Esaú [בכרה]
 
-    B' (27.34–38)
-        Esaú chora amargamente e pede uma bênção
+A' (25:34)
+    Esaú desprezou o direito de primogenitura [בכרה]
 
-A' (27.39–40)
-    Isaque abençoa Esaú com uma bênção menor
-    — "Viverás pela espada; um dia sacudirás o jugo de teu irmão"
+A: Os dois povos. B: O nascimento. C: Os caracteres opostos.
 
-
 ==================================================
 
-[45] FUGA DE JACÓ — Gênesis 27.41–45
+[33] ISAQUE E ABIMELEQUE — Gênesis 26:1–35
 
-A (27.41)
-    Esaú odeia Jacó e planeja matá-lo após a morte de Isaque
+A (26:1–5)
+    O SENHOR apareceu a Isaque; confirmou a aliança de Abraão [ברית]
 
-    B (27.42)
-        Rebeca é informada dos planos de Esaú
+    B (26:6–11)
+        Isaque disse que Rebeca era sua irmã [אחתי]
 
-        C (27.43–44)
-            CENTRO: Rebeca instrui Jacó a fugir para Harã até que "a ira de teu irmão se aplaque"
+        C (26:12–16)
+            CENTRO: Isaque prosperou; os filisteus o invejaram [ויגדל]
 
-    B' (27.45a)
-        "Quando a ira de teu irmão se desviar de ti"
+    B' (26:17–25)
+        Conflito pelos poços; Isaque cavou novos poços [בְּאֵר]
 
-A' (27.45b)
-    "Por que ficaria privada dos dois num só dia?" — Rebeca envia Jacó
+A' (26:26–35)
+    Aliança entre Isaque e Abimeleque em Berseba [ברית]
 
+A: A aliança. B: A irmã. C: A prosperidade.
 
 ==================================================
 
-[46] JACÓ FOGE PARA HARÃ — Gênesis 27.46–28.9
+[34] JACÓ OBTÉM A BÊNÇÃO — Gênesis 27:1–45
 
-A (27.46)
-    Rebeca se queixa a Isaque das mulheres hititas de Esaú
+A (27:1–4)
+    Isaque pediu a Esaú que caçasse e lhe trouxesse comida para receber a bênção [ברכה]
 
-    B (28.1–2)
-        Isaque chama Jacó e o instrui: "Não tomes esposa das filhas de Canaã"
-        — "Vai a Padã-Arã; toma esposa das filhas de Labão"
+    B (27:5–17)
+        Rebeca planejou enganar Isaque em favor de Jacó [רמה]
 
-        C (28.3–4)
-            CENTRO: Isaque abençoa Jacó com a bênção de Abraão
-            — "Deus abençoe e te multiplique; herde a terra do teu peregrinar"
+        C (27:18–29)
+            CENTRO: Jacó enganou Isaque e recebeu a bênção [ויברכהו]
 
-    B' (28.5)
-        Isaque envia Jacó; ele vai para Padã-Arã
+    B' (27:30–40)
+        Esaú chegou; Isaque tremeu; Esaú chorou [ויבך]
 
-A' (28.6–9)
-    Esaú vê que as cananéias desagradam a Isaque
-    — Toma uma filha de Ismael como esposa adicional
+A' (27:41–45)
+    Esaú planejou matar Jacó; Rebeca enviou Jacó para Harã [לבן]
 
+A: A bênção. B: O engano. C: A bênção concedida a Jacó.
 
 ==================================================
-
-[47] O SONHO DE JACÓ EM BETEL — Gênesis 28.10–22
-
-A (28.10–11)
-    Jacó parte de Beer-Seba para Harã; para para dormir numa certa localidade
 
-    B (28.12)
-        Sonho: uma escada entre a terra e o céu; anjos subindo e descendo
+[35] JACÓ PARTE PARA HARÃ — Gênesis 27:46–28:9
 
-        C (28.13–15)
-            CENTRO: O SENHOR está acima da escada
-            — Promessa tripla: terra, descendência como o pó, presença divina
-            — "Não te deixarei enquanto não tiver cumprido o que te disse"
+A (27:46–28:2)
+    Isaque enviou Jacó a Padã-Arã para tomar uma esposa da família de Labão [לבן]
 
-    B' (28.16–17)
-        Jacó desperta: "O SENHOR está neste lugar e eu não sabia!"
-        — "Esta é a casa de Deus e a porta do céu"
+    B (28:3–4)
+        Isaque abençoou Jacó com a bênção de Abraão [ברכת]
 
-A' (28.18–22)
-    Jacó levanta a pedra como coluna; chama o lugar Betel
-    — Voto: "Se Deus estiver comigo… o SENHOR será meu Deus"
+A' (28:5–9)
+    Jacó partiu; Esaú tomou uma filha de Ismael como esposa [ישׁמעאל]
 
+A: A partida de Jacó. B: A bênção de Abraão.
 
 ==================================================
 
-[48] JACÓ ENCONTRA RAQUEL — Gênesis 29.1–14b
+[36] O SONHO DE JACÓ EM BETEL — Gênesis 28:10–22
 
-A (29.1–3)
-    Jacó chega à terra oriental; encontra pastores e um poço com pedra grande
+A (28:10–12)
+    Jacó viu a escada entre o céu e a terra; anjos subiam e desciam [מלאכים]
 
-    B (29.4–6)
-        Jacó pergunta sobre Labão; os pastores respondem: "está bem"
-        — "E Raquel, sua filha, vem com o rebanho"
+    B (28:13–15)
+        O SENHOR renovou a Jacó a promessa feita a Abraão e Isaque [ברכה]
 
-        C (29.7–8)
-            CENTRO: Jacó quer que os pastores deem água e dispersem o rebanho
-            — "Não podemos enquanto os rebanhos não se reunirem todos"
+        C (28:16–17)
+            CENTRO: Jacó despertou — "Este é a casa de Deus e a porta do céu" [בֵּית אֱלֹהִים]
 
-    B' (29.9–12)
-        Raquel chega; Jacó remove a pedra e beija Raquel; chora
+    B' (28:18–19)
+        Jacó erigiu uma pedra e chamou o lugar de Betel [בֵּית אֵל]
 
-A' (29.13–14b)
-    Labão corre ao encontro de Jacó; abraça, beija e o traz para casa
-    — "Certamente és osso dos meus ossos"
+A' (28:20–22)
+    Jacó fez um voto ao SENHOR [ידר]
 
+A: A escada. B: A promessa. C: A casa de Deus.
 
 ==================================================
 
-[49] JACÓ CASA COM AS FILHAS DE LABÃO — Gênesis 29.14c–30
+[37] JACÓ CHEGA À FAMÍLIA DE LABÃO — Gênesis 29:1–14
 
-A (29.14c–15)
-    Labão diz: "Só porque és meu parente não deves trabalhar de graça"
-    — "Qual é o teu salário?"
+A (29:1–3)
+    Jacó chegou ao poço onde os rebanhos eram aguados [בְּאֵר]
 
-    B (29.16–18)
-        Labão tem duas filhas: Leia (olhos tenros) e Raquel (formosa)
-        — Jacó ama Raquel; propõe sete anos de trabalho
+    B (29:4–8)
+        Jacó perguntou aos pastores sobre Labão [לבן]
 
-        C (29.19–20)
-            CENTRO: "É melhor que eu a dê a ti do que a outro homem"
-            — Jacó serve sete anos; pareceram-lhe como poucos dias
+        C (29:9–12)
+            CENTRO: Jacó encontrou Raquel e rolou a pedra do poço [ויגל]
 
-            D (29.21–23)
-                A traição: na escuridão da noite, Labão dá Leia a Jacó
+    B' (29:13)
+        Labão correu ao encontro de Jacó [וירץ]
 
-        C' (29.24–25)
-            De manhã, Jacó descobre a traição: "Por que me enganaste?"
+A' (29:14)
+    "Certamente és meu osso e minha carne" [עצמי]
 
-    B' (29.26–27)
-        Labão explica o costume da terra; propõe mais sete anos por Raquel
+A: O poço. B: Labão. C: O encontro com Raquel.
 
-A' (29.28–30)
-    Jacó cumpre a semana de Leia; recebe Raquel; ama-a mais que a Leia
-    — Trabalha mais sete anos por ela
-
-
 ==================================================
-
-[50] OS FILHOS DE JACÓ — Gênesis 29.31–30.24
-
-A (29.31–35)
-    O SENHOR vê que Leia é preterida; ela concebe:
-    — Rúben, Simeão, Levi, Judá (cada filho: esperança de ser amada)
 
-    B (30.1–8)
-        Raquel está estéril; dá Bila a Jacó: Dã e Naftali
+[38] JACÓ, LEA E RAQUEL — Gênesis 29:15–30
 
-        C (30.9–13)
-            Leia dá Zilpa a Jacó: Gade e Aser
+A (29:15–20)
+    Jacó serviu sete anos por Raquel [שׁבע]
 
-            D (30.14–17)
-                CENTRO: Rúben encontra mandrágoras; Raquel negocia com Leia
-                — Leia compra uma noite com Jacó; concebe Issacar
+    B (29:21–24)
+        Labão enganou Jacó dando-lhe Lea [וירמא]
 
-        C' (30.18–21)
-            Leia gera Zebulom e Diná
+        C (29:25–26)
+            CENTRO: Jacó confrontou Labão pelo engano [רמה]
 
-    B' (30.22)
-        Deus se lembra de Raquel; ela concebe
+    B' (29:27–28)
+        Labão deu Raquel a Jacó em troca de mais sete anos [שׁבע]
 
-A' (30.23–24)
-    Raquel gera José: "O SENHOR tirou minha vergonha"
-    — "Que o SENHOR me acrescente outro filho"
+A' (29:29–30)
+    Jacó amou Raquel mais do que Lea [ויאהב]
 
+A: Os sete anos. B: O engano. C: O confronto.
 
 ==================================================
 
-[51] JACÓ PROSPERA ÀS CUSTAS DE LABÃO — Gênesis 30.25–43
+[39] OS FILHOS DE JACÓ — Gênesis 29:31–30:24
 
-A (30.25–26)
-    Jacó pede a Labão que o deixe partir com as esposas e filhos
+A (29:31–35)
+    Filhos de Lea: Rúben, Simeão, Levi e Judá [ילדה]
 
-    B (30.27–30)
-        Labão reconhece que o SENHOR o abençoou por causa de Jacó
-        — Jacó reclama que trabalhou muito; Labão pede que fique
+    B (30:1–8)
+        Filhos de Bila, serva de Raquel: Dã e Naftali [בלהה]
 
-        C (30.31–33)
-            CENTRO: Jacó propõe o trato das ovelhas listradas, salpicadas e manchadas
+        C (30:9–13)
+            Filhos de Zilpa, serva de Lea: Gade e Aser [זלפה]
 
-            D (30.34–36)
-                Labão aceita; separa os animais marcados; os entrega aos filhos
+    B' (30:14–21)
+        Filhos de Lea: Issacar, Zebulom e Diná [ילדה]
 
-        C' (30.37–39)
-            Jacó usa varas descascadas para manipular a reprodução dos rebanhos
+A' (30:22–24)
+    Filho de Raquel: José [יוסף]
 
-    B' (30.40–42)
-        Os animais mais fortes se reproduzem diante das varas; os fracos não
+A: Filhos de Lea. B: Filhos das servas. C: Mais filhos de Lea.
 
-A' (30.43)
-    Jacó enriquece muito: rebanhos, servos, camelos e jumentos
-
-
 ==================================================
-
-[52] JACÓ FOGE COM A FAMÍLIA — Gênesis 31.1–21
-
-A (31.1–2)
-    Os filhos de Labão falam mal de Jacó; Labão muda de atitude
 
-    B (31.3)
-        O SENHOR diz a Jacó: "Volta à terra de teus pais"
-        — "Estarei contigo"
+[40] JACÓ E LABÃO NEGOCIAM O REBANHO — Gênesis 30:25–43
 
-        C (31.4–13)
-            Jacó explica às esposas: Labão me enganou dez vezes
-            — O Anjo de Deus me revelou o trato das ovelhas
+A (30:25–30)
+    Jacó pediu permissão para partir com sua família [שׁלח]
 
-            D (31.14–16)
-                CENTRO: Leia e Raquel concordam: "Vai, faz tudo que Deus disse"
+    B (30:31–34)
+        Labão perguntou o que devia dar a Jacó [אתן]
 
-        C' (31.17–19)
-            Jacó parte com família e rebanhos; Raquel furta os ídolos (terafins)
+        C (30:35–36)
+            CENTRO: Labão separou os animais malhados do rebanho [ויסר]
 
-    B' (31.20–21)
-        Jacó engana Labão arameu sem lhe contar da partida
+    B' (30:37–42)
+        Jacó usou varas para fazer o rebanho parir animais malhados [מקלות]
 
-A' [Labão persegue em 31.22–25]
+A' (30:43)
+    Jacó prosperou muito e adquiriu muitos rebanhos [ויפרץ]
 
+A: A partida. B: O pagamento. C: A separação do rebanho.
 
 ==================================================
 
-[53] LABÃO ALCANÇA JACÓ — Gênesis 31.22–42
+[41] JACÓ FOGE DE LABÃO — Gênesis 31:1–55
 
-A (31.22–24)
-    Labão é informado três dias depois; persegue sete dias
-    — Deus aparece em sonho: "Guarda-te de dizer algo bom ou mau a Jacó"
+A (31:1–16)
+    O SENHOR ordenou a Jacó que voltasse à sua terra [שׁוב]
 
-    B (31.25–30)
-        Labão confronta Jacó: "Por que fugiste?"
-        — "Por que furtaste meus deuses?"
+    B (31:17–21)
+        Jacó fugiu com sua família; Raquel roubou os ídolos de Labão [וינס]
 
-        C (31.31)
-            CENTRO: Jacó explica — temia que Labão retivesse as filhas
+        C (31:22–35)
+            CENTRO: Labão perseguiu Jacó e não encontrou os ídolos [תרפים]
 
-            D (31.32)
-                Jacó propõe a busca dos ídolos; Raquel os esconde sob si
+    B' (31:36–42)
+        Jacó confrontou Labão com indignação [ויחר]
 
-    B' (31.33–35)
-        Labão busca os terafins; não os encontra (Raquel finge estar menstruada)
+A' (31:43–55)
+    Labão e Jacó fizeram uma aliança em Galeede [ברית]
 
-A' (31.36–42)
-    Jacó se irrita e enumera 20 anos de fiel serviço
-    — "Se não fosse o Deus de Abraão… tu me enviarias vazio"
+A: A ordem de partir. B: A fuga e os ídolos. C: A busca pelos ídolos.
 
-
 ==================================================
 
-[54] A ALIANÇA ENTRE LABÃO E JACÓ — Gênesis 31.43–54
+[42] JACÓ SE PREPARA PARA ENCONTRAR ESAÚ — Gênesis 32:1–21
 
-A (31.43–44)
-    Labão reivindica tudo; propõe fazer aliança
+A (32:1–2)
+    Os anjos de Deus encontraram Jacó [מחנה]
 
-    B (31.45–48)
-        Jacó levanta pedra como coluna; monte de testemunho (Galeede)
+    B (32:3–8)
+        Jacó enviou mensageiros a Esaú; temeu o encontro [ויירא]
 
-        C (31.49)
-            CENTRO: "O SENHOR vigie entre mim e ti quando estivermos ausentes"
-            (Mispá — "sentinela")
+        C (32:9–12)
+            CENTRO: Oração de Jacó ao SENHOR [תפלה]
 
-    B' (31.50–52)
-        Aliança formalizada: nenhum cruzará o monte para o mal
+    B' (32:13–21)
+        Jacó enviou presentes a Esaú para aplacar sua ira [מנחה]
 
-A' (31.53–54)
-    Juramento pelo Deus de Abraão e Naor
-    — Jacó oferece sacrifício; comem e passam a noite
+A' (32:22)
+    Jacó passou a noite naquele lugar [ויקם]
 
+A: Os anjos. B: O temor. C: A oração.
 
 ==================================================
-
-[55] MAANAIM — Gênesis 32.1–13
 
-A (32.1–2)
-    Os anjos de Deus encontram Jacó no caminho
-    — Jacó chama o lugar Maanaim ("dois exércitos")
+[43] JACÓ LUTA COM DEUS — Gênesis 32:22–32
 
-    B (32.3–5)
-        Jacó envia mensageiros a Esaú: "encontrei graça aos teus olhos"
+A (32:22–24)
+    Jacó ficou sozinho; um homem lutou com ele até o amanhecer [לבדו]
 
-        C (32.6–8)
-            Os mensageiros voltam: Esaú vem com 400 homens
-            — Jacó fica com muito medo; divide o povo em dois grupos
+    B (32:25–26)
+        O homem tocou o quadril de Jacó; Jacó não o soltou [יאבק]
 
-            D (32.9–12)
-                CENTRO: A oração de Jacó — "Sou menor que todas as tuas misericórdias"
-                — "Livra-me da mão de Esaú… tu disseste: farei bem a ti"
+        C (32:27)
+            CENTRO: "Qual é o teu nome?" [מה]
 
-    B' (32.13a)
-        Jacó pernoita naquele lugar
+    B' (32:28–29)
+        O homem mudou o nome de Jacó para Israel [ישׂראל]
 
-A' (32.13b)
-    [Transição para o envio de presentes: v.14–22]
+A' (32:30–32)
+    Jacó chamou o lugar de Peniel — "vi a Deus face a face" [פני]
 
+A: A luta. B: O quadril. C: O nome.
 
 ==================================================
 
-[56] JACÓ ENVIA PRESENTES A ESAÚ — Gênesis 32.14–22
+[44] JACÓ E ESAÚ SE RECONCILIAM — Gênesis 33:1–20
 
-A (32.14–16)
-    Jacó seleciona presentes generosos: cabras, ovelhas, camelos, vacas, jumentos
+A (33:1–3)
+    Jacó organizou sua família diante de Esaú e se prostrou sete vezes [וישׁתחו]
 
-    B (32.17–20)
-        Instrução aos servos: "Dize que é presente de Jacó"
-        — "Talvez ele me aceite bem"
+    B (33:4–7)
+        Esaú correu ao encontro de Jacó e o abraçou [ויחבקהו]
 
-        C (32.21)
-            CENTRO: "Assim aplacarei Esaú com o presente que vai à minha frente"
-            — "Depois verei seu rosto; talvez me aceite"
+        C (33:8–11)
+            CENTRO: Jacó insistiu que Esaú aceitasse o presente [מנחה]
 
-    B' (32.22)
-        Naquela noite Jacó levanta e atravessa o vado de Jaboque
+    B' (33:12–15)
+        Esaú ofereceu escolta a Jacó; Jacó recusou [מצא]
 
-A' [Luta em Peniel em 32.23–33]
+A' (33:16–20)
+    Jacó chegou a Siquém e ergueu um altar [מזבח]
 
+A: O encontro. B: O abraço. C: O presente.
 
 ==================================================
-
-[57] JACÓ LUTA EM PENIEL — Gênesis 32.23–33
-
-A (32.23–24a)
-    Jacó fica sozinho durante a noite no vado de Jaboque
 
-    B (32.24b)
-        Um homem luta com ele até o amanhecer
+[45] DINÁ E OS SIQUEMITAS — Gênesis 34:1–31
 
-        C (32.25)
-            O homem toca o tendão da coxa de Jacó; ela se desloca
+A (34:1–4)
+    Diná saiu; Siquém a desonrou e desejou tê-la como esposa [שׁכם]
 
-            D (32.26)
-                CENTRO: "Não te deixarei ir enquanto não me abençoares"
+    B (34:5–12)
+        Jacó e seus filhos ouviram; Siquém pediu Diná em casamento [בת]
 
-        C' (32.27–29a)
-            Mudança de nome: Jacó → Israel
-            — "Lutaste com Deus e com os homens e prevaleceste"
+        C (34:13–17)
+            CENTRO: Os filhos de Jacó propuseram a circuncisão como condição [מול]
 
-    B' (32.29b–30)
-        Jacó pede o nome; Deus o abençoa
-        — Jacó chama o lugar Peniel: "vi a Deus face a face"
+    B' (34:18–24)
+        Siquém e Hamor aceitaram a condição e foram circuncidados [מול]
 
-A' (32.31–32)
-    Jacó parte ao nascer do sol; manqueja por causa do tendão
+A' (34:25–31)
+    Simeão e Levi mataram os siquemitas; Jacó repreendeu os filhos [שׁמעון ולוי]
 
+A: Diná e Siquém. B: O pedido de casamento. C: A circuncisão como condição.
 
 ==================================================
 
-[58] O ENCONTRO DE JACÓ E ESAÚ — Gênesis 33.1–20
+[46] JACÓ VOLTA A BETEL — Gênesis 35:1–15
 
-A (33.1–3)
-    Jacó vê Esaú vindo com 400 homens; divide os filhos pelas mães
-    — Jacó se prostra sete vezes ao ir ao encontro do irmão
+A (35:1–4)
+    Deus ordenou a Jacó que voltasse a Betel; Jacó removeu os ídolos [אלהי]
 
-    B (33.4–7)
-        Esaú corre, abraça e beija Jacó; ambos choram
-        — As mulheres e filhos se apresentam
+    B (35:5–8)
+        Jacó chegou a Betel; Débora, ama de Rebeca, morreu e foi sepultada [ותמת]
 
-        C (33.8–11)
-            CENTRO: Troca de palavras sobre o presente
-            — Jacó insiste: "Aceita minha bênção, pois Deus me foi gracioso"
+        C (35:9–12)
+            CENTRO: Deus apareceu a Jacó e confirmou seu nome como Israel [ישׂראל]
 
-    B' (33.12–14)
-        Esaú propõe acompanhar; Jacó recusa educadamente
-        — "Marcharei ao passo do gado e das crianças"
+    B' (35:13–14)
+        Deus subiu do lugar onde havia falado com Jacó [ויעל]
 
-A' (33.15–20)
-    Jacó chega a Sucote e depois a Siquém
-    — Compra um campo; levanta altar: "El-Eloé-Israel"
+A' (35:15)
+    Jacó chamou o lugar de Betel [בֵּית אֵל]
 
+A: Betel. B: A morte de Débora. C: A confirmação do nome Israel.
 
 ==================================================
 
-[59] O ESTUPRO DE DINÁ — Gênesis 34.1–31
+[47] A MORTE DE RAQUEL E DE ISAQUE — Gênesis 35:16–29
 
-A (34.1–4)
-    Diná sai para ver as filhas da terra; Siquém a viola; pede-a em casamento
+A (35:16–20)
+    Raquel morreu ao dar à luz Benjamim; foi sepultada no caminho de Efrata [ותמת]
 
-    B (34.5–12)
-        Jacó ouve e fica quieto; os filhos chegam; Hamor propõe aliança matrimonial
-        — Siquém: "pedi o que quiserdes de preço"
+    B (35:21–22)
+        Rúben dormiu com Bila, concubina de seu pai [ישׂראל]
 
-        C (34.13–17)
-            CENTRO: Os filhos de Jacó enganam — aceitarão se todos os homens se circuncidarem
+A' (35:23–29)
+    Lista dos doze filhos de Jacó; morte de Isaque [ויגוע]
 
-            D (34.18–24)
-                Hamor e Siquém convencem os homens da cidade; todos se circuncidam
+A: As mortes de Raquel e Isaque. B: O pecado de Rúben.
 
-        C' (34.25)
-            No terceiro dia, Simeão e Levi matam todos os homens
-
-    B' (34.26–29)
-        Os demais filhos saqueiam a cidade; levam mulheres e crianças
-
-A' (34.30–31)
-    Jacó repreende os filhos: "Trouxestes-me odor"
-    — Eles respondem: "Como tratariam nossa irmã como prostituta?"
-
-
 ==================================================
-
-[60] JACÓ RETORNA A BETEL — Gênesis 35.1–8
-
-A (35.1)
-    Deus diz a Jacó: "Levanta-te, vai a Betel — faz altar ao Deus que apareceu"
-
-    B (35.2–4)
-        Jacó manda a casa tirar os deuses estranhos; purificam-se
-        — Enterram os ídolos e aretes debaixo do carvalho
 
-        C (35.5)
-            CENTRO: O terror de Deus cai sobre as cidades vizinhas; não perseguem Jacó
+[48] OS DESCENDENTES DE ESAÚ — Gênesis 36:1–43
 
-    B' (35.6–7)
-        Jacó chega a Luz (Betel) com toda a família
-        — Constrói altar: "El-Betel" (porque Deus apareceu ao fugir de Esaú)
+Lista genealógica dos descendentes de Esaú e dos reis de Edom
 
-A' (35.8)
-    Débora, ama de Rebeca, morre e é sepultada sob o carvalho de Betel
-
-
 ==================================================
 
-[61] A RENOVAÇÃO DA ALIANÇA — Gênesis 35.9–15
+[49] JOSÉ E SEUS IRMÃOS — Gênesis 37:1–11
 
-A (35.9)
-    Deus aparece outra vez a Jacó quando vem de Padã-Arã e o abençoa
+A (37:1–4)
+    Jacó amou José mais do que todos os filhos; os irmãos o odiaram [שׂנאו]
 
-    B (35.10)
-        Mudança de nome confirmada: "não mais Jacó, mas Israel"
+    B (37:5–8)
+        O primeiro sonho de José: os feixes dos irmãos se prostraram [וישׁתחוו]
 
-        C (35.11–12)
-            CENTRO: "Eu sou o Deus Todo-Poderoso — sê fecundo e multiplica-te"
-            — A terra prometida a Abraão e Isaque: dada a ti e a tua descendência
+        C (37:9)
+            CENTRO: O segundo sonho: o sol, a lua e onze estrelas [חלום]
 
-    B' (35.13)
-        Deus sobe do lugar onde falava com Jacó
+    B' (37:10–11)
+        Jacó repreendeu José; os irmãos o invejaram [ויקנאו]
 
-A' (35.14–15)
-    Jacó levanta coluna de pedra no lugar onde Deus falou com ele
-    — Chama o lugar Betel
+A' (37:11)
+    Jacó guardou o assunto em seu coração [שׁמר]
 
+A: O amor de Jacó por José. B: Os sonhos. C: O sol, a lua e as estrelas.
 
 ==================================================
 
-[62] MORTES E NASCIMENTO — Gênesis 35.16–29
+[50] JOSÉ É VENDIDO PELOS IRMÃOS — Gênesis 37:12–36
 
-A (35.16–18)
-    Raquel morre ao dar à luz Benjamim
-    — Chamou-o Ben-Oni; Jacó o chamou Benjamim
+A (37:12–17)
+    José foi ao encontro dos irmãos em Dotã [ילך]
 
-    B (35.19–21)
-        Raquel é sepultada em Belém
-        — Jacó levanta coluna sobre o túmulo; acampa além de Migdal-Eder
+    B (37:18–24)
+        Os irmãos planejaram matar José; Rúben o livrou e o jogaram na cisterna [הבור]
 
-        C (35.22)
-            CENTRO: Rúben deita com Bila, concubina de seu pai
+        C (37:25–28)
+            CENTRO: José foi vendido aos ismaelitas por vinte moedas de prata
 
-    B' (35.22b–26)
-        Lista dos doze filhos de Jacó
+    B' (37:29–30)
+        Rúben voltou e rasgou suas vestes [ויקרע]
 
-A' (35.27–29)
-    Jacó chega a Isaque em Hebrom; Isaque morre com 180 anos
-    — Seus filhos Esaú e Jacó o sepultam
+A' (37:31–36)
+    José foi levado ao Egito; Jacó chorou [מצרים]
 
+A: José foi ao encontro dos irmãos. B: Rúben. C: A cisterna.
 
 ==================================================
-
-[63] OS DESCENDENTES DE ESAÚ — Gênesis 36.1–43
-
-A (36.1)
-    "Esta é a descendência de Esaú (que é Edom)"
 
-    B (36.2–5)
-        As três esposas e os cinco filhos de Esaú em Canaã
+[51] JUDÁ E TAMAR — Gênesis 38:1–30
 
-        C (36.6–8)
-            Esaú leva tudo e vai para Seir (Edom); muito gado para habitar juntos
+A (38:1–11)
+    Tamar ficou viúva; Er, Onã e Sela [ער]
 
-            D (36.9–19)
-                CENTRO: Os filhos e chefes de Esaú em Edom
+    B (38:12–14)
+        Tamar se disfarçou de prostituta [ותכסה]
 
-        C' (36.20–30)
-            Os filhos de Seir o horeu: os habitantes originais da terra
+        C (38:15–19)
+            CENTRO: Judá se uniu a Tamar; ela recebeu o penhor [ערבון]
 
-    B' (36.31–39)
-        Os reis que reinaram em Edom antes de Israel ter rei
+    B' (38:20–23)
+        Judá enviou o cabrito; o penhor não foi encontrado [ערבון]
 
-A' (36.40–43)
-    Os chefes de Esaú por seus clãs e regiões — "este é Esaú, pai de Edom"
+A' (38:24–30)
+    Tamar foi trazida; Judá reconheceu o penhor; nascimento dos gêmeos [תאומים]
 
+A: Tamar e os filhos de Judá. B: O disfarce. C: Judá e Tamar.
 
 ==================================================
 
-[64] JOSÉ SONHA COM A GRANDEZA — Gênesis 37.1–11
+[52] JOSÉ E A MULHER DE POTIFAR — Gênesis 39:1–23
 
-A (37.1–4)
-    Jacó ama José mais que todos; a túnica especial
-    — Os irmãos odeiam José e não podem falar pacificamente
+A (39:1–6)
+    O SENHOR estava com José; Potifar lhe confiou tudo [יהוה עם]
 
-    B (37.5–8)
-        Primeiro sonho: os feixes dos irmãos se prostram diante do seu
-        — Os irmãos rejeitam: "Reinarás mesmo sobre nós?"
+    B (39:7–10)
+        A mulher de Potifar tentou José [ותתפשׂהו]
 
-        C (37.9)
-            CENTRO: Segundo sonho — sol, lua e onze estrelas prostram-se a ele
+        C (39:11–15)
+            CENTRO: José fugiu; a roupa ficou em sua mão [בגד]
 
-    B' (37.10)
-        Isaque repreende: "Vindo, nos prostraremos diante de ti?"
+    B' (39:16–18)
+        A mulher acusou José com a roupa como prova [בגד]
 
-A' (37.11)
-    Os irmãos o invejam; o pai guarda a palavra no coração
+A' (39:19–23)
+    José foi para a prisão; o SENHOR estava com José [יהוה עם]
 
+A: O SENHOR estava com José. B: Tentação. C: A fuga e a roupa.
 
 ==================================================
 
-[65] JOSÉ É VENDIDO PELOS IRMÃOS — Gênesis 37.12–36
+[53] JOSÉ INTERPRETA SONHOS — Gênesis 40:1–41:45
 
-A (37.12–14)
-    Jacó envia José para ver os irmãos em Siquém
+A (40:1–4)
+    O copeiro e o padeiro foram presos [חלום]
 
-    B (37.15–17)
-        Um homem encontra José vagando; indica que os irmãos foram a Dotã
+    B (40:5–19)
+        Sonhos na prisão; José os interpretou [חלום]
 
-        C (37.18–20)
-            Os irmãos planejam matar José: "o sonhador aí vem"
+        C (40:20–23)
+            O copeiro foi restituído mas se esqueceu de José [שׁכח]
 
-            D (37.21–22)
-                CENTRO: Rúben intervém — "Não derrameis sangue; lançai-o na cisterna"
-                — (Planeja resgatar José)
+            D (41:1–7)
+                CENTRO: Os dois sonhos do Faraó [חלום]
 
-        C' (37.23–24)
-            Os irmãos despem José de sua túnica e o lançam na cisterna
+        C' (41:8–13)
+            O copeiro se lembrou de José [זכר]
 
-    B' (37.25–28)
-        Ismaelitas chegam; Judá propõe vendê-lo; José é vendido por 20 siclos
+    B' (41:14–36)
+        José foi chamado e interpretou os sonhos do Faraó [חלום]
 
-A' (37.29–36)
-    Rúben volta; rasga as vestes; os irmãos enganam Jacó com sangue de cabra
-    — José é vendido no Egito a Potifar
+A' (41:37–45)
+    José foi nomeado governador do Egito [משׁנה]
 
+A: Os presos. B: Interpretação dos sonhos. C: O copeiro. D: Os sonhos do Faraó.
 
 ==================================================
-
-[66] JUDÁ E TAMAR — Gênesis 38.1–30
-
-A (38.1–5)
-    Judá desce de seus irmãos; toma esposa cananéia; três filhos
-
-    B (38.6–11)
-        Er morre (mal diante do SENHOR); Onã morre; Judá retém Sela de Tamar
-
-        C (38.12–14)
-            Tamar se disfarça de prostituta no caminho de Timna
 
-            D (38.15–19)
-                CENTRO: Judá tem relações com Tamar sem reconhecê-la
-                — Deixa penhor: anel, cordão e cajado
+[54] OS FILHOS DE JOSÉ — Gênesis 41:46–57
 
-        C' (38.20–23)
-            Judá tenta resgatar o penhor; a "prostituta" desapareceu
+A (41:46–49)
+    José administrou o Egito durante os sete anos de fartura [שׁבע]
 
-    B' (38.24–26)
-        Tamar acusada de prostituição; mostra o penhor
-        — "Ela é mais justa do que eu"
+    B (41:50–52)
+        Nascimento de Manassés e Efraim [מנשׁה ואפרים]
 
-A' (38.27–30)
-    Tamar dá à luz gêmeos: Perez e Zerá (mão escarlate)
+A' (41:53–57)
+    Os sete anos de fome; José abriu os celeiros [שׁבע]
 
+A: Fartura e fome. B: Os filhos de José.
 
 ==================================================
 
-[67] JOSÉ E A MULHER DE POTIFAR — Gênesis 39.1–23
+[55] PRIMEIRA VIAGEM DOS IRMÃOS DE JOSÉ AO EGITO — Gênesis 42:1–38
 
-A (39.1–6a)
-    O SENHOR está com José; Potifar lhe confia tudo
-    — "José era belo de forma e de rosto"
+A (42:1–5)
+    Jacó enviou os filhos ao Egito comprar trigo [שׁבר]
 
-    B (39.6b–7)
-        A mulher de Potifar solicita José repetidamente: "Deita comigo"
+    B (42:6–17)
+        Os irmãos diante de José; José os acusou de espias [וישׁתחוו]
 
-        C (39.8–10)
-            CENTRO: José recusa — "Como praticaria este mal e pecaria contra Deus?"
+        C (42:18–24)
+            CENTRO: Os irmãos reconheceram sua culpa em relação a José [אשׁמים]
 
-        C' (39.11–12)
-            Ela agarra sua veste; ele foge deixando-a nas mãos dela
+    B' (42:25–28)
+        As sacas foram cheias; dinheiro devolvido nos sacos [כסף]
 
-    B' (39.13–18)
-        Ela acusa José falsamente ao marido: "ele entrou para deitar comigo"
+A' (42:29–38)
+    Os irmãos voltaram e relataram a Jacó [ויספרו]
 
-A' (39.19–23)
-    Potifar prende José; o SENHOR está com José na prisão
-    — O carcereiro lhe confia tudo
+A: A viagem ao Egito. B: Os irmãos diante de José. C: O reconhecimento da culpa.
 
-
 ==================================================
 
-[68] JOSÉ INTERPRETA OS SONHOS — Gênesis 40.1–41.45
+[56] SEGUNDA VIAGEM DOS IRMÃOS DE JOSÉ AO EGITO — Gênesis 43:1–45:28
 
-A (40.1–4)
-    O copeiro e o padeiro do faraó são presos; José cuida deles
+A (43:1–15)
+    Jacó enviou os irmãos de volta com Benjamim [בנימן]
 
-    B (40.5–8)
-        Os dois sonham na mesma noite; José se oferece para interpretar
-        — "As interpretações não pertencem a Deus?"
+    B (43:16–34)
+        Os irmãos foram recebidos por José; o banquete [ויאכלו]
 
-        C (40.9–19)
-            Interpretação dos sonhos:
-            — Copeiro: será restaurado em 3 dias (favorável)
-            — Padeiro: será enforcado em 3 dias (desfavorável)
+        C (44:1–13)
+            A taça de prata foi encontrada no saco de Benjamim [גביע]
 
-            D (40.20–23)
-                TRANSIÇÃO: No aniversário do faraó; copeiro restaurado; padeiro enforcado
-                — O copeiro se esquece de José
+            D (44:14–34)
+                CENTRO: Judá intercedeu por Benjamim [יהודה]
 
-    A' (41.1–7)
-        O faraó sonha duas vezes: sete vacas gordas/magras; sete espigas/mirradas
+        C' (45:1–15)
+            José se revelou aos irmãos [אני יוסף]
 
-    B' (41.8–13)
-        Ninguém interpreta; o copeiro lembra-se de José e o recomenda
+    B' (45:16–24)
+        O Faraó reagiu com alegria; presentes foram enviados [ויתן]
 
-    C' (41.14–36)
-        José interpreta: 7 anos de fartura + 7 de fome
-        — Conselho: escolher um administrador prudente; guardar um quinto
+A' (45:25–28)
+    Os irmãos voltaram e anunciaram a Jacó que José vivia [ויחי]
 
-A' (41.37–45)
-    José é exaltado: segundo do faraó sobre todo o Egito
-    — Nome: Zafenate-Paneia; esposa: Asenate
+A: A segunda viagem. B: O banquete. C: A taça. D: Judá intercedeu.
 
-
 ==================================================
 
-[69] OS ANOS DE FARTURA — Gênesis 41.46–57
+[57] JACÓ LEVA TODA A SUA FAMÍLIA AO EGITO — Gênesis 46:1–7
 
-A (41.46–49)
-    José viaja por todo o Egito; recolhe grãos como a areia do mar
+A (46:1)
+    Israel partiu com tudo que tinha [ויסע]
 
-    B (41.50–52)
-        José tem dois filhos: Manassés e Efraim
-        — "Deus me fez esquecer todo o meu trabalho"
-        — "Deus me fez fecundo na terra da minha aflição"
+    B (46:2–4)
+        Visão noturna de Deus: "Não temas descer ao Egito" [אל תירא]
 
-    A' (41.53–57)
-        Os 7 anos de fartura terminam; a fome começa em toda a terra
-        — José abre os celeiros; o mundo inteiro vem comprar ao Egito
+A' (46:5–7)
+    Jacó e toda a sua família desceram ao Egito [וירדו]
 
+A: A descida ao Egito. B: Visão de Deus.
 
 ==================================================
-
-[70] A PRIMEIRA VIAGEM DOS IRMÃOS — Gênesis 42.1–38
-
-A (42.1–4)
-    Jacó ouve que há grãos no Egito; envia dez irmãos; retém Benjamim
-
-    B (42.5–9a)
-        Os irmãos chegam; prostram-se; José os reconhece mas eles não o reconhecem
-
-        C (42.9b–17)
-            José os acusa de espias; os prende por três dias
-
-            D (42.18–20)
-                CENTRO: José propõe — um fica preso; os outros levam grãos e voltam com Benjamim
 
-        C' (42.21–24)
-            Os irmãos reconhecem sua culpa por José; José chora e prende Simeão
+[58] LISTA DA FAMÍLIA DE JACÓ — Gênesis 46:8–27
 
-    B' (42.25–28)
-        José restitui o dinheiro nos sacos; no caminho descobrem-no com temor
+Lista genealógica dos membros da família de Jacó que desceram ao Egito
 
-A' (42.29–38)
-    Os irmãos contam tudo a Jacó; ele recusa enviar Benjamim
-    — "Vós me privastes dos filhos; não irei"
-
-
 ==================================================
-
-[71] A SEGUNDA VIAGEM DOS IRMÃOS — Gênesis 43.1–45.28
-
-A (43.1–14)
-    A fome aumenta; Jacó cede e deixa Benjamim ir com Judá como fiador
-
-    B (43.15–34)
-        Os irmãos chegam; José os recebe em banquete
-        — José vê Benjamim e chora em particular
-
-        C (44.1–13)
-            A taça no saco de Benjamim; eles são levados de volta
-
-            D (44.14–17)
-                CENTRO: José propõe escravidão apenas para Benjamim
-
-        C' (44.18–34)
-            Judá faz o grande discurso intercedendo por Benjamim
-            — "Como voltarei ao pai sem o rapaz?" (eco do sofrimento)
 
-    B' (45.1–15)
-        José se revela: "Eu sou José, vosso irmão!"
-        — "Deus me enviou à vossa frente para preservar vidas"
+[59] JACÓ E O FARAÓ — Gênesis 46:28–47:12
 
-A' (45.16–28)
-    Faraó manda chamar Jacó; os irmãos voltam e contam a Jacó
-    — "José ainda vive e governa todo o Egito" — o espírito de Jacó revive
+A (46:28–30)
+    José veio ao encontro de Jacó em Gósen [גשׁן]
 
+    B (46:31–34)
+        José instruiu a família sobre o que dizer ao Faraó [יאמרו]
 
-==================================================
-
-[72] JACÓ VAI AO EGITO — Gênesis 46.1–7
-
-A (46.1)
-    Israel parte com tudo que tem; chega a Beer-Seba
+        C (47:1–6)
+            CENTRO: A família de Jacó diante do Faraó; Gósen concedida [גשׁן]
 
-    B (46.2–4)
-        Deus fala a Israel em visão noturna: "Não temas descer ao Egito"
-        — "Eu farei de ti uma grande nação; e também te farei subir"
+    B' (47:7–10)
+        Jacó abençoou o Faraó [ויברך]
 
-    A' (46.5–7)
-        Jacó e toda a sua descendência partem de Beer-Seba para o Egito
+A' (47:11–12)
+    José instalou a família em Ramessés [רעמסס]
 
+A: O encontro com Jacó. B: Instruções. C: Diante do Faraó.
 
 ==================================================
 
-[73] A LISTA DA FAMÍLIA DE JACÓ — Gênesis 46.8–27
+[60] A FOME NO EGITO — Gênesis 47:13–26
 
-A (46.8)
-    "Estes são os nomes dos filhos de Israel que entraram no Egito"
+A (47:13–14)
+    A fome se agravou; José recolheu todo o dinheiro [כסף]
 
-    B (46.9–14)
-        Os filhos de Leia e seus filhos (33 no total)
+    B (47:15–17)
+        O povo entregou seus rebanhos por comida [מקנה]
 
-        C (46.15–22)
-            Os filhos de Zilpa, Bila e Raquel
+        C (47:18–20)
+            CENTRO: O povo entregou suas terras e a si mesmo [אדמה]
 
-            D (46.23–25)
-                CENTRO: Filhos de Dã e Naftali (filhos de Bila)
+    B' (47:21–22)
+        José reduziu o povo à servidão; apenas as terras dos sacerdotes ficaram [כהנים]
 
-        C' (46.26)
-            Total dos filhos de Jacó que foram ao Egito: 66
+A' (47:23–26)
+    Regulamentação do quinto para o Faraó [חמישׁית]
 
-    B' (46.27)
-        Com os dois filhos de José nascidos no Egito: 70 ao todo
+A: Dinheiro. B: Rebanhos. C: As terras e o povo.
 
-A' [transição para a chegada ao Egito em 46.28]
-
-
 ==================================================
-
-[74] JACÓ E O FARAÓ — Gênesis 46.28–47.12
-
-A (46.28–30)
-    Jacó envia Judá à frente; José vai ao encontro de seu pai
-    — "Agora posso morrer, pois vi o teu rosto"
 
-    B (46.31–34)
-        José instrui os irmãos a dizerem que são pastores
-        — Os pastores são abominação aos egípcios (para habitar em Gósen)
+[61] OS ÚLTIMOS DIAS DE JACÓ — Gênesis 47:27–31
 
-        C (47.1–4)
-            CENTRO: Os irmãos são apresentados ao faraó; pedem habitar em Gósen
+A (47:27–28)
+    Israel viveu no Egito dezessete anos; Jacó chegou aos 147 anos [שׁבע עשׂרה]
 
-    B' (47.5–6)
-        O faraó concede Gósen; se houver homens capazes, que cuidem dos animais do faraó
+    B (47:29–31)
+        CENTRO: Jacó pediu a José que o sepultasse em Canaã [קבר]
 
-A' (47.7–12)
-    Jacó é apresentado ao faraó; o abençoa duas vezes
-    — José sustenta pai e irmãos durante a fome
+A: Os anos de Jacó no Egito. B: O pedido de sepultamento em Canaã.
 
-
 ==================================================
-
-[75] A FOME NO EGITO — Gênesis 47.13–26
-
-A (47.13–14)
-    A fome é gravíssima; José recolhe todo o dinheiro do Egito e Canaã
-
-    B (47.15–17)
-        O dinheiro acabou; José toma o gado em troca de pão
-
-        C (47.18–19)
-            CENTRO: "Compra-nos e a nossa terra; seremos servos do faraó"
-
-        C' (47.20–22)
-            José compra toda a terra; os sacerdotes ficam com suas terras
-
-    B' (47.23–25)
-        José distribui semente; o povo promete: "tu nos salvaste; seremos servos do faraó"
-
-A' (47.26)
-    Jacó estabelece lei sobre as terras do Egito: um quinto ao faraó
-    — Exceto as terras dos sacerdotes
 
+[62] JACÓ ABENÇOA OS FILHOS DE JOSÉ — Gênesis 48:1–22
 
-==================================================
+A (48:1–7)
+    Jacó evocou as promessas de Deus e adotou Efraim e Manassés [אפרים ומנשׁה]
 
-[76] OS ÚLTIMOS DIAS DE JACÓ — Gênesis 47.27–31
+    B (48:8–12)
+        José apresentou os filhos a Jacó [ויגשׁ]
 
-A (47.27–28)
-    Israel habita no Egito na terra de Gósen; cresce e se multiplica (17 anos)
+        C (48:13–14)
+            CENTRO: Jacó cruzou as mãos, colocando a direita sobre Efraim [ידיו]
 
-    B (47.29–30)
-        Jacó pede a José juramento de sepultá-lo na terra de seus pais
+    B' (48:15–16)
+        Jacó abençoou José e os filhos [ויברך]
 
-    A' (47.31)
-        José jura; Jacó se inclina sobre a cabeça da cama em adoração
+A' (48:17–22)
+    José protestou; Jacó explicou a inversão da bênção [ידיו]
 
+A: A adoção dos filhos de José. B: Apresentação. C: As mãos cruzadas.
 
 ==================================================
-
-[77] JACÓ ABENÇOA OS FILHOS DE JOSÉ — Gênesis 48.1–22
-
-A (48.1–2)
-    José é informado que seu pai está doente; vai com Manassés e Efraim
 
-    B (48.3–7)
-        Jacó reconta a promessa de Deus em Luz; adota Efraim e Manassés como filhos
+[63] AS ÚLTIMAS PALAVRAS DE JACÓ AOS SEUS FILHOS — Gênesis 49:1–28
 
-        C (48.8–12)
-            CENTRO: Jacó não enxerga bem; beija e abraça os filhos de José
+A (49:1–2)
+    "Reuní-vos e ouvi, filhos de Jacó" [האספו]
 
-            D (48.13–14)
-                Jacó cruza as mãos: a direita sobre Efraim (mais novo)
+    B1 (49:3–4) — Rúben [ראובן]
+    B2 (49:5–7) — Simeão e Levi [שׁמעון ולוי]
+    B3 (49:8–12) — Judá [יהודה]
+    B4 (49:13) — Zebulom [זבולן]
+    B5 (49:14–15) — Issacar [יששׂכר]
+    B6 (49:16–18) — Dã [דן]
+    B7 (49:19) — Gade [גד]
+    B8 (49:20) — Aser [אשׁר]
+    B9 (49:21) — Naftali [נפתלי]
+    B10 (49:22–26) — José [יוסף]
+    B11 (49:27) — Benjamim [בנימן]
 
-        C' (48.15–16)
-            Jacó abençoa: "o Anjo que me livrou de todo mal abençoe estes meninos"
+A' (49:28)
+    "Estas são as doze tribos de Israel" [שׁנים עשׂר]
 
-    B' (48.17–19)
-        José tenta corrigir as mãos; Jacó recusa — "o mais novo será maior"
+A: Convocação e conclusão dos doze filhos. B: Bênção individual de cada tribo.
 
-A' (48.20–22)
-    Bênção final a Efraim e Manassés
-    — "Israel abençoa com teu nome"
-    — Jacó dá a José um monte acima dos irmãos
-
-
 ==================================================
-
-[78] AS ÚLTIMAS PALAVRAS DE JACÓ — Gênesis 49.1–28
-
-A (49.1–2)
-    Jacó convoca todos os filhos: "Ajuntai-vos para que eu vos anuncia o que há de acontecer"
 
-    B (49.3–7)
-        Rúben, Simeão e Levi: os três primeiros recebem palavras de repreensão
-        — Incesto de Rúben; violência dos dois irmãos
+[64] MORTE E SEPULTAMENTO DE JACÓ — Gênesis 49:29–50:14
 
-        C (49.8–12)
-            Judá: o cetro não se apartará — "a ele obedecerão os povos"
+A (49:29–33)
+    Jacó ordenou que o sepultassem em Maquipela [קבר]
 
-            D (49.13–21)
-                CENTRO: Zebulom, Issacar, Dã, Gade, Aser, Naftali
-                (as tribos do meio)
+    B (50:1–3)
+        Luto de José; embalsamamento de Jacó [ויבך]
 
-        C' (49.22–26)
-            José: "galho frutífero junto à fonte" — bênções abundantes
-            — "O eleito entre seus irmãos"
+        C (50:4–6)
+            CENTRO: José pediu permissão ao Faraó para sepultar Jacó [פרעה]
 
-    B' (49.27)
-        Benjamim: "lobo que despedaça"
+    B' (50:7–11)
+        Procissão fúnebre até Canaã [כנען]
 
-A' (49.28)
-    "Estas são as doze tribos de Israel" — cada um segundo sua bênção
+A' (50:12–14)
+    Os filhos sepultaram Jacó conforme sua ordem [קבר]
 
+A: Ordem de sepultamento. B: Luto e preparação. C: Permissão do Faraó.
 
 ==================================================
 
-[79] A MORTE E O SEPULTAMENTO DE JACÓ — Gênesis 49.29–50.14
+[65] JOSÉ PERDOA SEUS IRMÃOS — Gênesis 50:15–21
 
-A (49.29–33)
-    Jacó ordena: "Sepultai-me com meus pais na caverna de Macpela"
-    — Menciona Abraão, Sara, Isaque, Rebeca e Leia; morre
+A (50:15–18)
+    Os irmãos temeram a vingança de José após a morte de Jacó [ויפלו]
 
-    B (50.1–3)
-        José chora sobre o pai; o embalsamamento dura 40 dias
-        — O Egito chora 70 dias
+    B (50:19)
+        CENTRO: "Estou eu no lugar de Deus?" [תחת אלהים]
 
-        C (50.4–6)
-            CENTRO: José pede ao faraó permissão para sepultar o pai em Canaã
+A' (50:20–21)
+    "Vós intentastes o mal contra mim; Deus o converteu em bem" [טובה]
 
-    B' (50.7–9)
-        Grande cortejo: servos do faraó, anciãos do Egito, cavaleiros
+A: O temor dos irmãos. B: Somente Deus julga.
 
-A' (50.10–14)
-    Sepultamento em Macpela; luto de sete dias em Abe-Mizraim
-    — José retorna ao Egito com todos os que subiram com ele
-
-
 ==================================================
-
-[80] JOSÉ PERDOA SEUS IRMÃOS — Gênesis 50.15–21
-
-A (50.15–16)
-    Após a morte de Jacó, os irmãos temem a vingança de José
 
-    B (50.17)
-        Os irmãos enviam mensagem: "Nosso pai ordenou antes de morrer:
-        perdoa a transgressão de teus irmãos"
+[66] OS ÚLTIMOS DIAS E A MORTE DE JOSÉ — Gênesis 50:22–26
 
-        C (50.17b)
-            CENTRO: José chora ao ouvir as palavras dos irmãos
+A (50:22–23)
+    José viveu cento e dez anos; viu os filhos de Efraim até a terceira geração [מאה ועשׂר]
 
-    B' (50.18)
-        Os irmãos se prostram diante de José: "somos teus servos"
+    B (50:24–25)
+        CENTRO: "Deus certamente virá visitar-vos e vos fará subir desta terra" [פקד יפקד]
 
-A' (50.19–21)
-    José consola: "Não temais; sou eu acaso Deus?"
-    — "Vós intentastes o mal contra mim, mas Deus o tornou em bem"
-    — "Para conservar muitos povos em vida"
+A' (50:26)
+    José morreu com cento e dez anos; foi embalsamado [ויחנטו]
 
+A: Vida e morte de José. B: A promessa da terra.
 
 ==================================================
-
-[81] OS ÚLTIMOS DIAS E A MORTE DE JOSÉ — Gênesis 50.22–26
-
-A (50.22–23)
-    José vive 110 anos; vê os filhos de Efraim até a terceira geração
-
-    B (50.24)
-        José diz aos irmãos: "Deus certamente vos visitará
-        e vos fará subir desta terra para a terra que prometeu a Abraão, Isaque e Jacó"
-
-    A' (50.25–26)
-        José faz os filhos de Israel jurarem levá-lo ao sepultar na terra prometida
-        — José morre e é embalsamado no Egito
 

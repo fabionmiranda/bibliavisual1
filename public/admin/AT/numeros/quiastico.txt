@@ -1,881 +1,1219 @@
-﻿[1] PRIMEIRO RECENSEAMENTO DE ISRAEL — Números 1.1–47
+NUMEROS_QUIASMOS
 
-A (1.1–4)
-    Deus ordena o censo no deserto do Sinai
+[1] O PRIMEIRO RECENSEAMENTO DE ISRAEL — Números 1:1–47
 
-    B (1.5–16)
-        Os doze líderes tribais nomeados
+A (1:1–3)
+    Primeiro dia do segundo mês; ordem para registrar cada homem
 
-        C (1.17–19)
-            CENTRO: Registro por genealogia — cada homem de vinte anos
+    B (1:4–15)
+        Lista dos chefes das tribos
 
-        B' (1.20–43)
-        Contagem de cada tribo, uma a uma
+        C (1:16)
+            "Príncipes de suas tribos ancestrais" (1:16)
 
-    A' (1.44–47)
-    Total: 603.550 — os levitas não foram contados
+A' (1:17–19)
+    Primeiro dia do segundo mês; registro de cada homem
 
-==================================================
-[2] OS DEVERES DOS LEVITAS — Números 1.48–54
+    B' (1:20–43)
+        Lista dos recenseados por tribo
 
-A (1.48–49)
-    Os levitas não serão recenseados com Israel
+        C' (1:44–47)
+            "Os doze príncipes de Israel" (1:44)
 
-    B (1.50)
-        Os levitas cuidarão do tabernáculo e seus utensílios
-
-        C (1.51)
-            CENTRO: O estranho que se aproximar morrerá
-
-        B' (1.52–53)
-        Israel acampa por suas bandeiras — levitas guardam o tabernáculo
-
-    A' (1.54)
-    Israel faz tudo conforme o Senhor ordenou a Moisés
+Síntese estrutural de Nm 1:1–47:
+A: Ordem e início do recenseamento. B: As listas. C: Resultados.
 
 ==================================================
-[3] ORDEM DO ACAMPAMENTO E DA MARCHA — Números 2.1–34
 
-A (2.1–2)
-    Cada tribo acampa junto à sua bandeira
+[2] OS DEVERES DOS LEVITAS — Números 1:48–54
 
-    B (2.3–16)
-        Acampamento a leste e ao sul
+A (1:48)
+    O SENHOR havia falado a Moisés (1:48)
 
-        C (2.17)
-            CENTRO: A tenda da congregação no meio das divisões
+    B (1:49–50)
+        Distinção entre os levitas e os demais israelitas
+        [ישׂראל]
 
-        B' (2.18–31)
-        Acampamento a oeste e ao norte
+        C (1:51)
+            "Todo leigo que se aproximar será morto" (1:51)
 
-    A' (2.32–34)
-    Total do censo — os levitas no meio de Israel
+    B' (1:52–53)
+        Distinção entre os levitas e os demais israelitas
+        [ישׂראל]
 
-==================================================
-[4] DEVERES E RECENSEAMENTO DOS LEVITAS 1 — Números 3.1–51
+A' (1:54)
+    "Todos os filhos de Israel fizeram conforme o SENHOR havia ordenado a Moisés" (1:54)
 
-A (3.1–4)
-    Introdução — os filhos de Arão
-
-    B (3.5–13)
-        Os levitas dados a Arão em lugar dos primogênitos
-
-        C (3.14–20)
-            CENTRO: Censo dos levitas por clãs
-
-        B' (3.21–39)
-        Posição e deveres de cada clã levítico
-
-    A' (3.40–51)
-    Resgate dos primogênitos de Israel além dos levitas
+Síntese estrutural de Nm 1:48–54:
+A: Ordem e seu cumprimento. B: Distinção entre levitas e demais israelitas. C: Pena de morte.
 
 ==================================================
-[5] DEVERES E RECENSEAMENTO DOS LEVITAS 2 — Números 4.1–49
 
-A (4.1–4)
-    Censo dos coatitas: homens de 30 a 50 anos
+[3] A ORDEM DO ACAMPAMENTO E DA MARCHA — Números 2:1–34
 
-    B (4.5–20)
-        Deveres dos coatitas com os objetos sagrados
+A (2:1–2)
+    "Os filhos de Israel acamparão cada um em seu esquadrão" (2:2)
 
-        C (4.21–28)
-            CENTRO: Clã de Gérson — transportar as telas e coberturas
+    B1 (2:3–9)
+        O acampamento do lado leste
 
-        B' (4.29–33)
-        Clã de Merari — transportar as tábuas e colunas
+    B2 (2:10–16)
+        O acampamento do lado sul
 
-    A' (4.34–49)
-    Total recenseado: 8.580 levitas em serviço
+        C (2:17)
+            Os levitas e a tenda do encontro
 
-==================================================
-[6] REGULAMENTOS RITUAIS E VOTO — Números 5.1–6.27
+    B3 (2:18–24)
+        O acampamento do lado oeste
 
-A (5.1–4)
-    Expulsão dos impuros do acampamento
+    B4 (2:25–31)
+        O acampamento do lado norte
 
-    B (5.5–10)
-        Restituição por pecados contra o próximo
+A' (2:32–34)
+    "Eles acamparam por esquadrões" (2:34)
 
-        C (5.11–31)
-            CENTRO: Lei do ciúme — a mulher suspeita perante o Senhor
-
-        B' (6.1–21)
-        O voto do nazireu — consagração total a Deus
-
-    A' (6.22–27)
-    A bênção sacerdotal — o Senhor abençoe e guarde
+Síntese estrutural de Nm 2:1–34:
+A: Todo o Israel. B: Os quatro acampamentos. C: A tenda do encontro.
 
 ==================================================
-[7] OFERTAS DOS LÍDERES — Números 7.1–88
 
-A (7.1–3)
-    Os líderes trazem carros e bois para o tabernáculo
+[4] OS DEVERES E O RECENSEAMENTO DOS LEVITAS 1 — Números 3:1–51
 
-    B (7.4–9)
-        Distribuição aos levitas por seus serviços
+A (3:1–10)
+    Sacerdócio de Arão e seus descendentes
 
-        C (7.10–11)
-            CENTRO: Cada líder oferece na dedicação do altar
+    B (3:11–13)
+        "Os levitas como substitutos de todos os primogênitos" (3:12)
+        [תחת]
 
-        B' (7.12–83)
-        Ofertas de cada tribo — doze dias, doze líderes
+        C (3:14–20)
+            Ordem para recensear os levitas
 
-    A' (7.84–88)
-    Total das ofertas de dedicação do altar
+            D1 (3:21–26)
+                Gérson
 
-==================================================
-[8] CONSAGRAÇÃO E SERVIÇO DOS LEVITAS — Números 7.89–8.26
+            D2 (3:27–31)
+                Coate
 
-A (7.89)
-    Moisés ouve a voz do Senhor do propiciatório
+                E (3:32)
+                    CENTRO: "Eleazar, filho do sacerdote Arão, era o chefe sobre os líderes dos levitas" (3:32)
 
-    B (8.1–4)
-        O candelabro — sete lâmpadas voltadas para a frente
+            D3 (3:33–37)
+                Merari
 
-        C (8.5–13)
-            CENTRO: Purificação e dedicação dos levitas
+            D4 (3:38)
+                Moisés, Arão e os filhos de Arão
 
-        B' (8.14–22)
-        Os levitas separados de Israel para servir
+        C' (3:39)
+            Número total dos levitas do sexo masculino
 
-    A' (8.23–26)
-    Idade de serviço dos levitas: de 25 a 50 anos
+    B' (3:40–43)
+        "Os levitas como substitutos de todos os primogênitos" (3:41)
+        [תחת]
 
-==================================================
-[9] A PÁSCOA EM SINAI — Números 9.1–14
+A' (3:44–51)
+    O dinheiro do resgate foi entregue a Arão e seus descendentes
 
-A (9.1–3)
-    Deus ordena a Páscoa no segundo ano, no primeiro mês
-
-    B (9.4–5)
-        Israel celebra a Páscoa conforme ordenado
-
-        C (9.6–8)
-            CENTRO: Os impuros consultam Moisés — caso especial
-
-        B' (9.9–13)
-        Segunda Páscoa: lei para os que estavam impuros
-
-    A' (9.14)
-    A mesma lei para o estrangeiro que quiser celebrar
+Síntese estrutural de Nm 3:1–51:
+A: Sacerdócio de Arão e seus descendentes. B: Os levitas como substitutos dos primogênitos. C: Recensear os levitas. D: Os quatro lados do tabernáculo. E: Eleazar, chefe sobre os líderes dos levitas.
 
 ==================================================
-[10] A NUVEM E O FOGO — Números 9.15–23
 
-A (9.15–16)
-    A nuvem cobre o tabernáculo — fogo à noite
+[5] OS DEVERES E O RECENSEAMENTO DOS LEVITAS 2 — Números 4:1–49
 
-    B (9.17)
-        Quando a nuvem se movia, Israel marchava
+A (4:1–20)
+    Trabalhos de Coate
+    [הקהתי]
 
-        C (9.18)
-            CENTRO: Conforme a boca do Senhor, Israel acampava ou marchava
+    B (4:21–28)
+        Trabalhos de Gérson
+        [גרשׁון]
 
-        B' (9.19–22)
-        Longos ou curtos períodos — Israel obedecia
+        C (4:29–33)
+            Trabalhos de Merari
+            [מררי]
 
-    A' (9.23)
-    Guardaram o encargo do Senhor — pela boca de Moisés
+A' (4:34–37)
+    Recenseamento de Coate
+    [הקהתי]
 
-==================================================
-[11] AS TROMBETAS DE PRATA — Números 10.1–10
+    B' (4:38–41)
+        Recenseamento de Gérson
+        [גרשׁון]
 
-A (10.1–2)
-    Deus ordena fazer duas trombetas de prata
+        C' (4:42–45)
+            Recenseamento de Merari
+            [מררי]
 
-    B (10.3–4)
-        Sinais para convocar a congregação
+P (4:46–49)
+    Número total dos recenseados
 
-        C (10.5–6)
-            CENTRO: Alarmes de marcha para os acampamentos
-
-        B' (10.7–9)
-        Trombetas na guerra — o Senhor vos livrará
-
-    A' (10.10)
-    Trombetas nas festas e ofertas — memorial diante do Senhor
+Síntese estrutural de Nm 4:1–49:
+A: Coate. B: Gérson. C: Merari.
 
 ==================================================
-[12] PARTIDA DE SINAI — Números 10.11–28
 
-A (10.11–13)
-    A nuvem se levanta — Israel parte do Sinai
+[6] REGULAMENTOS SOBRE RITUAIS E VOTOS — Números 5:1–6:27
 
-    B (10.14–17)
-        Divisões de Judá e Rúben na vanguarda
+A (5:1–4)
+    "Os filhos de Israel o fizeram, expulsando-os para fora do acampamento; como o SENHOR havia falado a Moisés" (5:4)
 
-        C (10.18–21)
-            CENTRO: Os levitas carregam o tabernáculo no meio da marcha
+    B (5:5–10)
+        Regulamentos sobre reparação (infidelidade contra o SENHOR)
 
-        B' (10.22–27)
-        Divisões de Efraim e Dã na retaguarda
+        C (5:11–31)
+            Julgamento de impureza
 
-    A' (10.28)
-    Esta é a ordem das marchas dos filhos de Israel
+    B' (6:1–21)
+        Regulamentos sobre reparação (o voto de nazireado)
 
-==================================================
-[13] MOISÉS E HOBABE — Números 10.29–32
+A' (6:22–27)
+    "Assim porão o meu nome sobre os filhos de Israel, e eu os abençoarei" (6:27)
 
-A (10.29)
-    Moisés convida Hobabe a marchar com Israel
-
-    B (10.30)
-        Hobabe recusa — quer voltar à sua terra
-
-        C (10.31)
-            CENTRO: Moisés insiste — tu serás os nossos olhos
-
-        B' (10.32)
-        Se vieres, compartilharemos os bens que o Senhor nos der
-
-    A' (implícito)
-    A necessidade de guia humano no deserto
+Síntese estrutural de Nm 5:1–6:27:
+A: Cumprimento das palavras do SENHOR. B: Regulamentos sobre reparação. C: Julgamento de impureza.
 
 ==================================================
-[14] A ARCA DA ALIANÇA — Números 10.33–36
 
-A (10.33)
-    A arca parte na frente por três dias
+[7] OFERTAS DOS LÍDERES — Números 7:1–88
 
-    B (10.34)
-        A nuvem do Senhor sobre eles de dia
+A (7:1–3)
+    Ofertas de seis carros cobertos e doze bois
+    [נשׂיאי]
 
-        C (10.35)
-            CENTRO: Quando a arca se movia — levanta-te, Senhor!
+    B (7:4–9)
+        Entregar as ofertas aos levitas
 
-        B' (10.36)
-        Quando parava — volta, Senhor, aos milhares de Israel!
+A' (7:10–88)
+    Ofertas das doze tribos
+    [הנשׂאים]
 
-    A' (implícito)
-    A arca como presença divina que guia e protege
-
-==================================================
-[15] RECLAMAÇÕES NO DESERTO — Números 11.1–35
-
-A (11.1–3)
-    O povo murmura e o fogo do Senhor os consome em Taberá
-
-    B (11.4–9)
-        O povo chora pelo maná — saudade das comidas do Egito
-
-        C (11.10–23)
-            CENTRO: Moisés se queixa ao Senhor — o peso do povo
-
-        B' (11.24–30)
-        Setenta anciãos recebem o Espírito — Eldade e Modade profetizam
-
-    A' (11.31–35)
-    Codornizes em abundância — mas a ira do Senhor queima em Quibrote
+Síntese estrutural de Nm 7:1–88:
+A: Ofertas das doze tribos. B: Entregar as ofertas aos levitas.
 
 ==================================================
-[16] ARÃO E MIRIÃ COM CIÚMES DE MOISÉS — Números 12.1–16
 
-A (12.1–2)
-    Miriã e Arão falam contra Moisés por causa de sua esposa
+[8] CONSAGRAÇÃO E SERVIÇO DOS LEVITAS — Números 7:89–8:26
 
-    B (12.3)
-        Moisés era muito manso — mais do que todos os homens
+P (7:89)
+    "Ele lhe falou" (7:89)
 
-        C (12.4–8)
-            CENTRO: Deus distingue Moisés — falo com ele face a face
+A (8:1–4)
+    Regulamentação sobre as lâmpadas
 
-        B' (12.9–10)
-        A ira do Senhor — Miriã fica leprosa como a neve
+    B (8:5–12)
+        Regulamentação sobre a purificação dos levitas
+        [וטהרת]
 
-    A' (12.11–16)
-    Arão intercede — Moisés clama — Miriã curada após sete dias
+        C (8:13–15)
+            "Os levitas podem entrar para realizar o serviço na tenda do encontro" (8:15)
+            [לעבד]
 
-==================================================
-[17] ESPIAS ENVIADOS A CANAÃ — Números 13.1–24
+            D (8:16)
+                "Em lugar de todos os primogênitos de Israel, os que abrem o ventre" (8:16)
+                [בכור]
 
-A (13.1–3)
-    Deus manda Moisés enviar um homem de cada tribo
+                E (8:17)
+                    CENTRO: "Feri todos os primogênitos na terra do Egito" (8:17)
 
-    B (13.4–16)
-        Os doze espias nomeados — incluindo Josué e Calebe
+            D' (8:18)
+                "Os levitas em lugar de todos os primogênitos entre os filhos de Israel" (8:18)
+                [בכור]
 
-        C (13.17–20)
-            CENTRO: Instruções de Moisés — observai a terra
+        C' (8:19)
+            "Os levitas realizam o serviço pelos filhos de Israel na tenda do encontro" (8:19)
+            [לעבד]
 
-        B' (13.21–23)
-        Os espias percorrem a terra até Hebrom
+    B' (8:20–22)
+        Purificação dos levitas
+        [לטהרם]
 
-    A' (13.24)
-    O vale de Escol — o cacho de uvas carregado por dois
+A' (8:23–26)
+    Regulamentação sobre os trabalhos na tenda do encontro
 
-==================================================
-[18] O RELATÓRIO DOS ESPIAS — Números 13.25–33
-
-A (13.25–26)
-    Os espias retornam após quarenta dias
-
-    B (13.27–28)
-        A terra flui leite e mel — mas os povos são fortes
-
-        C (13.29)
-            CENTRO: Os inimigos enumerados — a terra inacessível
-
-        B' (13.30)
-        Calebe acalma o povo — podemos tomar a terra
-
-    A' (13.31–33)
-    Os outros espias contradizem — somos como gafanhotos
+Síntese estrutural de Nm 7:89–8:26:
+A: Regulamentações sobre os trabalhos dos levitas. B: Purificação dos levitas. C: Realizar o serviço na tenda do encontro. D: Os levitas em lugar de todos os primogênitos. E: Feri todos os primogênitos na terra do Egito.
 
 ==================================================
-[19] O POVO SE REBELA — Números 14.1–10
 
-A (14.1–2)
-    O povo chora a noite toda e murmura contra Moisés
+[9] A PÁSCOA NO SINAI — Números 9:1–14
 
-    B (14.3–4)
-        Desejam voltar ao Egito e escolher outro líder
+A (9:1–3)
+    Regulamento sobre a Páscoa
+    [ככלחקתיו]
 
-        C (14.5)
-            CENTRO: Moisés e Arão prostraram-se diante da congregação
+    B (9:4–5)
+        Celebração da Páscoa
 
-        B' (14.6–9)
-        Josué e Calebe rasgam suas vestes — não temais o povo da terra
+    B' (9:6–8)
+        Pessoa que não pode celebrar a Páscoa
 
-    A' (14.10)
-    A congregação quer apedrejar Josué e Calebe — a glória aparece
+A' (9:9–14)
+    Regulamento sobre a exceção da Páscoa
+    [ככלחקת]
 
-==================================================
-[20] O PECADO DA REBELIÃO — Números 14.11–35
-
-A (14.11–12)
-    O Senhor quer destruir Israel e fazer de Moisés uma grande nação
-
-    B (14.13–19)
-        Moisés intercede — apela ao nome e à misericórdia de Deus
-
-        C (14.20–23)
-            CENTRO: O perdão e o juízo — nenhum deles verá a terra
-
-        B' (14.24–25)
-        Calebe entrará na terra por ter outro espírito
-
-    A' (14.26–35)
-    Quarenta anos no deserto — um ano por cada dia de espionagem
+Síntese estrutural de Nm 9:1–14:
+A: Regulamento sobre a Páscoa. B: Celebrar / não celebrar a Páscoa.
 
 ==================================================
-[21] UMA TENTATIVA DE INVASÃO É REPELIDA — Números 14.36–45
 
-A (14.36–38)
-    Os espias maus morrem de praga — Josué e Calebe vivem
+[10] A NUVEM E O FOGO — Números 9:15–23
 
-    B (14.39–40)
-        O povo lamenta e se apressa para subir
+P (9:15–16)
+    "A nuvem cobria o tabernáculo, a tenda do testemunho" (9:15)
 
-        C (14.41–42)
-            CENTRO: Moisés avisa: o Senhor não está no meio de vós
+A1 (9:17)
+    "Sempre que a nuvem se erguia sobre a tenda, os filhos de Israel partiam" (9:17)
 
-        B' (14.43)
-        Os amalequitas e cananeus vos esperarão de frente
+    B1 (9:18)
+        "Pela ordem do SENHOR os filhos de Israel partiam, e pela ordem do SENHOR acampavam" (9:18)
+        [עלפייהוה]
 
-    A' (14.44–45)
-    Israel avança de modo presunçoso e é derrotado em Hormá
+A2 (9:19)
+    "Quando a nuvem permanecia sobre o tabernáculo por muitos dias, os filhos de Israel não partiam" (9:19)
 
-==================================================
-[22] OFERTAS PELO PECADO — Números 15.1–31
+    B2 (9:20)
+        "Segundo a ordem do SENHOR ficavam acampados; e segundo a ordem do SENHOR partiam" (9:20)
+        [עלפייהוה]
 
-A (15.1–16)
-    Ofertas para quando habitardes na terra — lei igual para todos
+A3 (9:21–22)
+    "Quando a nuvem se erguia de manhã, eles partiam" (9:21)
 
-    B (15.17–21)
-        Primícias da massa — oferta ao Senhor
+    B3 (9:23)
+        "Pela ordem do SENHOR acampavam, e pela ordem do SENHOR partiam" (9:23)
+        [עלפייהוה]
 
-        C (15.22–26)
-            CENTRO: Pecado involuntário da congregação — expiação coletiva
-
-        B' (15.27–29)
-        Pecado involuntário individual — oferta pela alma
-
-    A' (15.30–31)
-    O pecado com mão levantada — blasfêmia sem perdão
+Síntese estrutural de Nm 9:15–23:
+A: Os israelitas agiam conforme a nuvem. B: Obediência à ordem do SENHOR.
 
 ==================================================
-[23] PENALIDADE POR VIOLAR O SÁBADO — Números 15.32–36
 
-A (15.32)
-    Um homem encontrado colhendo lenha no sábado
+[11] AS TROMBETAS DE PRATA — Números 10:1–10
 
-    B (15.33)
-        Trazido diante de Moisés, Arão e da congregação
+A (10:1–4)
+    Trombetas para convocar a congregação
 
-        C (15.34)
-            CENTRO: Posto em custódia — a sentença ainda não era conhecida
+    B (10:5–7)
+        Trombetas na partida
+        [תריעו]
 
-        B' (15.35)
-        O Senhor diz a Moisés: o homem deve morrer
+        C (10:8)
+            "Os filhos de Arão, os sacerdotes, tocarão as trombetas" (10:8)
 
-    A' (15.36)
-    A congregação o apedreja fora do acampamento
+    B' (10:9)
+        Trombetas na guerra
+        [והרעתם]
 
-==================================================
-[24] FRANJAS SOBRE AS VESTES — Números 15.37–41
+A' (10:10)
+    Trombetas para as ofertas
 
-A (15.37–38)
-    Deus manda fazer franjas nas bordas das vestes
-
-    B (15.39a)
-        As franjas serão para vós um lembrete
-
-        C (15.39b)
-            CENTRO: Para que não sigais vossos corações e olhos
-
-        B' (15.40)
-        Para que vos lembreis de todos os mandamentos
-
-    A' (15.41)
-    Eu sou o Senhor que vos tirei do Egito para ser vosso Deus
+Síntese estrutural de Nm 10:1–10:
+A: Trombetas comuns. B: Trombetas na guerra. C: Os filhos de Arão, os sacerdotes, tocarão as trombetas.
 
 ==================================================
-[25] REVOLTA DE CORÉ, DATÃ E ABIRÃO — Números 16.1–17.5
 
-A (16.1–3)
-    Coré, Datã, Abirão e 250 líderes se rebelam contra Moisés
+[12] PARTIDA DO SINAI — Números 10:11–28
 
-    B (16.4–19)
-        Moisés propõe o teste dos incensários
+A (10:11–13)
+    "Os filhos de Israel partiram por etapas do deserto do Sinai" (10:12)
 
-        C (16.20–35)
-            CENTRO: A terra abre — Datã e Abirão engolidos; fogo consome os 250
+    B1 (10:14–17)
+        Judá; Issacar; Zebulom
+        [ויסעדגל]
 
-        B' (16.36–50)
-        Os incensários transformados em revestimento para o altar
+    B2 (10:18–21)
+        Rúben; Simeão; Gade
+        [ונסעדגל]
 
-    A' (17.1–5)
-    A vara de cada tribo diante do Senhor — sinal contra os rebeldes
+    B3 (10:22–24)
+        Efraim; Manassés; Benjamim
+        [ונסעדגל]
 
-==================================================
-[26] ARÃO SALVA O POVO — Números 17.6–15
+    B4 (10:25–27)
+        Dã; Aser; Naftali
+        [ונסעדגל]
 
-A (17.6–7)
-    O povo murmura: vós matastes o povo do Senhor
+A' (10:28)
+    "Os filhos de Israel partiram por companhias" (10:28)
 
-    B (17.8–10)
-        A praga começa — o furor do Senhor saiu
-
-        C (17.11–12)
-            CENTRO: Moisés manda Arão correr com o incensário
-
-        B' (17.13)
-        Arão se coloca entre os mortos e os vivos — a praga cessa
-
-    A' (17.14–15)
-    14.700 mortos além dos de Coré
+Síntese estrutural de Nm 10:11–28:
+A: Os israelitas partem. B: Cada grupo de três tribos.
 
 ==================================================
-[27] A VARA DE ARÃO — Números 17.16–28
 
-A (17.16–19)
-    Deus manda trazer uma vara de cada tribo ao tabernáculo
+[13] MOISÉS E HOBABE — Números 10:29–32
 
-    B (17.20)
-        A vara do homem que escolherei florescerá
+A (10:29)
+    Moisés desejou que Hobabe os acompanhasse
+    [והטבנו]
 
-        C (17.21–23)
-            CENTRO: A vara de Arão floresce, brota e produz amêndoas
+    B (10:30)
+        Hobabe recusou
 
-        B' (17.24–26)
-        A vara guardada diante do testemunho como sinal
+A' (10:31–32)
+    Moisés desejou que Hobabe os acompanhasse
+    [ייטיב]
 
-    A' (17.27–28)
-    O povo clama — pereceremos! quem se aproximar morrerá!
-
-==================================================
-[28] REGULAMENTOS SOBRE SACERDOTES E LEVITAS — Números 18.1–32
-
-A (18.1–7)
-    Arão e seus filhos responsáveis pelo santuário
-
-    B (18.8–20)
-        Porções dos sacerdotes nas ofertas — sua herança
-
-        C (18.21–24)
-            CENTRO: O dízimo dado aos levitas por seu serviço na tenda
-
-        B' (18.25–29)
-        Os levitas oferecem um dízimo do dízimo ao Senhor
-
-    A' (18.30–32)
-    O dízimo do melhor — não profanareis as coisas santas
+Síntese estrutural de Nm 10:29–32:
+A: Moisés desejou que Hobabe os acompanhasse. B: Hobabe recusou.
 
 ==================================================
-[29] CERIMÔNIA DA BEZERRA VERMELHA — Números 19.1–22
 
-A (19.1–4)
-    Bezerra vermelha sem defeito — sacrificada fora do acampamento
+[14] A ARCA DA ALIANÇA — Números 10:33–36
 
-    B (19.5–8)
-        Suas cinzas guardadas fora do acampamento
+P (10:33–34)
+    "A arca da aliança precedia-os para lhes buscar lugar de descanso" (10:33)
 
-        C (19.9–10)
-            CENTRO: As cinzas servem como água de purificação para Israel
+A (10:35)
+    A arca parte
 
-        B' (19.11–16)
-        Quem tocar um morto fica impuro por sete dias
+A' (10:36)
+    A arca da aliança repousa
 
-    A' (19.17–22)
-    Rito de purificação com as cinzas e água viva
+Síntese estrutural de Nm 10:33–36:
+A: A arca parte / repousa.
 
 ==================================================
-[30] AS ÁGUAS DE MERIBÁ — Números 20.1–13
 
-A (20.1)
-    Israel chega ao deserto de Zim — Miriã morre em Cades
+[15] RECLAMAÇÕES NO DESERTO — Números 11:1–35
 
-    B (20.2–5)
-        O povo contende com Moisés — sem água
+A (11:1–3)
+    "Por isso aquele lugar foi chamado Taberá" (11:3)
+    [אפו]
 
-        C (20.6–8)
-            CENTRO: A glória aparece — o Senhor diz: fala à rocha
+    B (11:4–9)
+        O maná foi dado
 
-        B' (20.9–11)
-        Moisés fere a rocha duas vezes — a água brota
+        C (11:10–15)
+            "Não posso sozinho suportar todo este povo" (11:14)
 
-    A' (20.12–13)
-    O Senhor condena Moisés e Arão — não santificastes o meu nome
+            D (11:16–20)
+                "Tomarei do espírito que está sobre ti" (11:17)
+                [שׁבעים]
 
-==================================================
-[31] PASSAGEM POR EDOM RECUSADA — Números 20.14–21
+                E (11:21–22)
+                    "Se todos os rebanhos e manadas fossem abatidos, seria suficiente para eles?" (11:22)
 
-A (20.14–16)
-    Moisés envia mensageiros ao rei de Edom
+                E' (11:23)
+                    CENTRO: "Acaso o braço do SENHOR é curto?" (11:23)
 
-    B (20.17)
-        Pedido de passagem pelo caminho real
+            D' (11:24–25)
+                "Tomou do espírito que estava sobre ele e o colocou sobre os setenta anciãos" (11:25)
+                [שׁבעים]
 
-        C (20.18)
-            CENTRO: Edom recusa — caso contrário, sairemos contra vós
+        C' (11:26–30)
+            "Quem dera que todo o povo do SENHOR fosse profeta!" (11:29)
 
-        B' (20.19–20)
-        Israel promete não tomar nada — Edom insiste e avança com exército
+    B' (11:31–32)
+        "Trouxe codornizes do mar e as fez cair junto ao acampamento" (11:31)
 
-    A' (20.21)
-    Israel desvia e não passa pelo território de Edom
+A' (11:33–35)
+    "Por isso aquele lugar foi chamado Quibrote-Hataava" (11:34)
+    [ואף]
 
-==================================================
-[32] A MORTE DE ARÃO — Números 20.22–29
-
-A (20.22–24)
-    Deus anuncia: Arão será reunido ao seu povo — não entrará na terra
-
-    B (20.25)
-        Moisés, Arão e Eleazar sobem ao monte Hor
-
-        C (20.26)
-            CENTRO: As vestes sacerdotais passam de Arão para Eleazar
-
-        B' (20.27–28)
-        Arão morre no cume do monte Hor
-
-    A' (20.29)
-    Toda a congregação chora Arão por trinta dias
+Síntese estrutural de Nm 11:1–35:
+A: Catástrofes e nomes dos lugares. B: Prover alimento. C: Desejos de Moisés. D: Dar o espírito. E: Onipotência do SENHOR.
 
 ==================================================
-[33] O REI ARADE DERROTADO — Números 21.1–3
 
-A (21.1)
-    O rei cananeu de Arade ataca Israel e faz cativos
+[16] ARÃO E MIRIÃ COM CIÚMES DE MOISÉS — Números 12:1–16
 
-    B (21.2)
-        Israel faz voto ao Senhor: consagraremos suas cidades
+A (12:1–3)
+    Miriã e Arão falaram contra Moisés
 
-        C (21.2b)
-            CENTRO: Se me deres esta vitória, destruirei suas cidades
+    B (12:4–5)
+        O SENHOR os chamou
 
-        B' (21.3a)
-        O Senhor ouve e entrega os cananeus
+        C (12:6–8)
+            As palavras do SENHOR
 
-    A' (21.3b)
-    Israel os consagra à destruição — o lugar chamado Hormá
+A' (12:9–10)
+    Doença de Miriã
 
-==================================================
-[34] A SERPENTE DE BRONZE — Números 21.4–9
+    B' (12:11–13)
+        Eles chamaram o SENHOR
 
-A (21.4–5)
-    Israel murmura contra Deus e contra Moisés no caminho
+        C' (12:14–16)
+            As palavras do SENHOR
 
-    B (21.6)
-        Serpentes ardentes picam o povo — muitos morrem
-
-        C (21.7)
-            CENTRO: O povo confessa o pecado — Moisés intercede
-
-        B' (21.8)
-        Deus manda fazer uma serpente de bronze e erguê-la
-
-    A' (21.9)
-    Todo picado que olhava para ela vivia
+Síntese estrutural de Nm 12:1–16:
+A: Miriã. B: O SENHOR convoca. C: As palavras do SENHOR.
 
 ==================================================
-[35] A JORNADA A MOABE — Números 21.10–20
 
-A (21.10–13)
-    Israel marcha de estação em estação pelo deserto
+[17] ESPIAS ENVIADOS A CANAÃ — Números 13:1–24
 
-    B (21.14–15)
-        Livro das Guerras do Senhor — memória das vitórias
+A (13:1–2)
+    Ordem do SENHOR para escolher espias
 
-        C (21.16–17)
-            CENTRO: Beer — o poço onde o Senhor disse: darei água ao povo
+    B (13:3–15)
+        Moisés escolheu os espias
 
-        B' (21.18)
-        O poço que os líderes cavaram com seus cetros — cântico
+        C (13:16)
+            Nomeação de Josué
+            [ויקרא]
 
-    A' (21.19–20)
-    Chegada ao Pisga com vista para o deserto
+A' (13:17–20)
+    Ordem de Moisés para trazer frutos
 
-==================================================
-[36] OS REIS SEOM E OGUE DERROTADOS — Números 21.21–35
+    B' (13:21–23)
+        Os espias trouxeram frutos
 
-A (21.21–22)
-    Israel pede passagem a Seom, rei dos amorreus
+        C' (13:24)
+            Nomeação de Escol
+            [קרא]
 
-    B (21.23–24)
-        Seom recusa e ataca — Israel o derrota
-
-        C (21.25–26)
-            CENTRO: Israel toma todas as cidades dos amorreus
-
-        B' (21.27–32)
-        Cântico de vitória e conquista de Jazer
-
-    A' (21.33–35)
-    Ogue, rei de Basã, desce ao encontro de Israel e é destruído
+Síntese estrutural de Nm 13:1–24:
+A: Ordens. B: Cumprimento. C: Nomeação.
 
 ==================================================
-[37] BALAQUE E BALAÃO — Números 22.1–40
 
-A (22.1–6)
-    Balaque, rei de Moabe, teme Israel e manda chamar Balaão
+[18] O RELATÓRIO DOS ESPIAS — Números 13:25–33
 
-    B (22.7–21)
-        Balaão consulta Deus — autorizado a ir mas só falar o que Deus disser
+A (13:25–29)
+    Relatório sobre a terra
 
-        C (22.22–35)
-            CENTRO: O anjo bloqueia o caminho — a jumenta fala
+    B (13:30)
+        "Subamos imediatamente e a ocupemos" (13:30)
+        [עלה]
 
-        B' (22.36–38)
-        Balaque encontra Balaão — Balaão: só falarei o que Deus me der
+    B' (13:31)
+        "Não podemos subir contra aquele povo" (13:31)
+        [עלו]
 
-    A' (22.39–40)
-    Balaão e Balaque chegam a Quiriate-Huzote
+A' (13:32–33)
+    Os espias divulgaram um mau relatório sobre a terra
 
-==================================================
-[38] OS ORÁCULOS DE BALAÃO — Números 22.41–24.25
-
-A (22.41–23.12)
-    Primeiro oráculo: não posso amaldiçoar quem Deus não amaldiçoou
-
-    B (23.13–26)
-        Segundo oráculo: Deus não é homem para mentir — Israel será abençoado
-
-        C (23.27–24.9)
-            CENTRO: Terceiro oráculo: como são belas as tuas tendas, ó Jacó!
-
-        B' (24.10–19)
-        Quarto oráculo: uma estrela sairá de Jacó — um cetro de Israel
-
-    A' (24.20–25)
-    Oráculos contra Amaleque, Queneus e Assur — Balaão parte
+Síntese estrutural de Nm 13:25–33:
+A: Relatórios sobre a terra. B: Subir ou não subir.
 
 ==================================================
-[39] A ADORAÇÃO DE BAAL DE PEOR — Números 25.1–19
 
-A (25.1–3)
-    Israel se une às filhas de Moabe e adora Baal-Peor
+[19] O POVO SE REBELA — Números 14:1–10
 
-    B (25.4–5)
-        O Senhor ordena enforcar os líderes — Moisés ordena a morte
+A (14:1)
+    Toda a comunidade levantou um grande clamor (14:1)
 
-        C (25.6–9)
-            CENTRO: Um israelita traz uma midianita — Fineias os transpassa
+    B (14:2–4)
+        Queixas do povo
 
-        B' (25.10–13)
-        Fineias recebe o pacto de paz eterno do sacerdócio
+        C (14:5)
+            Moisés e Arão prostraram-se diante de toda a assembleia (14:5)
 
-    A' (25.14–19)
-    Os nomes dos culpados e o mandato de hostilidade contra Midiã
+    B' (14:6–9)
+        Persuasão de Josué
 
-==================================================
-[40] RECENSEAMENTO DA NOVA GERAÇÃO — Números 26.1–65
+A' (14:10)
+    Toda a comunidade ameaçou apedrejá-los (14:10)
 
-A (26.1–4)
-    Após a praga — Deus ordena novo censo
-
-    B (26.5–51)
-        Contagem de cada tribo — 601.730 homens
-
-        C (26.52–56)
-            CENTRO: A terra distribuída por sorte e proporção
-
-        B' (26.57–62)
-        Censo dos levitas separado — 23.000
-
-    A' (26.63–65)
-    Nenhum do primeiro censo sobreviveu exceto Josué e Calebe
+Síntese estrutural de Nm 14:1–10:
+A: Respostas de toda a comunidade. B: Opiniões do povo. C: Moisés e Arão se prostraram.
 
 ==================================================
-[41] AS FILHAS DE ZELOFEADE — Números 27.1–11
 
-A (27.1–4)
-    As filhas de Zelofeade pedem herança — seu pai morreu sem filhos
+[20] O PECADO DA REBELIÃO — Números 14:11–35
 
-    B (27.5)
-        Moisés leva o caso diante do Senhor
+A (14:11–12)
+    "Ferirei com pestilência e os destruirei" (14:12)
 
-        C (27.6–7)
-            CENTRO: O Senhor declara: a petição delas é justa — dai-lhes herança
+    B (14:13–19)
+        "Perdoa a iniquidade deste povo conforme a grandeza da tua misericórdia, como os perdoaste desde o Egito até agora" (14:19)
+        [סלח]
 
-        B' (27.8–11)
-        Lei geral de herança: filhos, filhas, irmãos, tios
+    B' (14:20–25)
+        "Perdoei conforme a tua palavra" (14:20)
+        [סלחתי]
 
-    A' (27.11b)
-    Esta será estatuto de direito para Israel
+A' (14:26–35)
+    "Os vossos cadáveres cairão neste deserto" (14:32)
 
-==================================================
-[42] JOSUÉ NOMEADO SUCESSOR DE MOISÉS — Números 27.12–23
-
-A (27.12–14)
-    Deus diz a Moisés: sobe ao Abarim — verás a terra e morrerás
-
-    B (27.15–17)
-        Moisés intercede: que o Senhor ponha um líder sobre a congregação
-
-        C (27.18–19)
-            CENTRO: Josué, homem em quem há Espírito — impõe as mãos sobre ele
-
-        B' (27.20–21)
-        Josué receberá autoridade — consultará pelo Urim diante de Eleazar
-
-    A' (27.22–23)
-    Moisés impõe as mãos sobre Josué conforme o Senhor ordenou
+Síntese estrutural de Nm 14:11–35:
+A: Morte. B: Perdão.
 
 ==================================================
-[43] REGULAMENTOS SOBRE OFERTAS E VOTOS — Números 28.1–30.17
 
-A (28.1–8)
-    Oferta diária — dois cordeiros, manhã e tarde
+[21] UMA TENTATIVA DE INVASÃO É REPELIDA — Números 14:36–45
 
-    B (28.9–29.39)
-        Ofertas dos sábados, meses, Páscoa, Semanas, Trombetas, Expiação e Tabernáculos
+A (14:36–38)
+    "Os homens que trouxeram o mau relatório sobre a terra morreram de praga" (14:37)
 
-        C (30.1–2)
-            CENTRO: O homem que fizer voto ao Senhor não violará sua palavra
+    B (14:39)
+        "Moisés contou estas palavras a todos os filhos de Israel" (14:39)
 
-        B' (30.3–15)
-        Votos das mulheres — autoridade do pai e do marido
+        C (14:40)
+            "Subiremos ao lugar que o SENHOR prometeu" (14:40)
 
-    A' (30.16–17)
-    Estatutos entre marido e mulher, pai e filha na casa paterna
+    B' (14:41–43)
+        Persuasão de Moisés
 
-==================================================
-[44] GUERRA CONTRA MIDIÃ — Números 31.1–54
+A' (14:44–45)
+    "Os amalequitas e os cananeus desceram e os derrotaram" (14:45)
 
-A (31.1–6)
-    Deus ordena vingar Israel de Midiã — mil guerreiros de cada tribo
-
-    B (31.7–12)
-        Israel vence Midiã — cinco reis mortos, Balaão morto
-
-        C (31.13–24)
-            CENTRO: Moisés se ira pelos cativos femininos — purificação do exército
-
-        B' (31.25–47)
-        Divisão do espólio entre combatentes, congregação e levitas
-
-    A' (31.48–54)
-    Os líderes oferecem ouro ao Senhor como expiação
+Síntese estrutural de Nm 14:36–45:
+A: Morte. B: Palavras de Moisés. C: Subiremos ao lugar que o SENHOR prometeu.
 
 ==================================================
-[45] CONQUISTA E DIVISÃO DA TRANSJORDÂNIA — Números 32.1–42
 
-A (32.1–5)
-    Rúben e Gade pedem as terras de Jazer e Gileade para seus rebanhos
+[22] OFERTAS PELO PECADO — Números 15:1–31
 
-    B (32.6–15)
-        Moisés os repreende: desanimareis o coração de vossos irmãos?
+A (15:1–2)
+    Quando entrardes na terra
+    [ארץ]
 
-        C (32.16–27)
-            CENTRO: A proposta: construiremos currais e cidades — mas iremos à guerra
+    B (15:3–12)
+        Regulamentos sobre as ofertas
 
-        B' (32.28–32)
-        Moisés aceita a condição diante de Eleazar e Josué
+        C (15:13–16)
+            O estrangeiro fará segundo a mesma lei
+            [תורה]
 
-    A' (32.33–42)
-    Distribuição das cidades da Transjordânia para as tribos
+A' (15:17–18)
+    Depois que entrardes na terra
+    [הארץ]
 
-==================================================
-[46] AS ETAPAS DA JORNADA DE ISRAEL — Números 33.1–49
+    B' (15:19–28)
+        Regulamentos sobre as ofertas
 
-A (33.1–4)
-    Moisés registra as saídas por ordem do Senhor
+        C' (15:29–31)
+            O estrangeiro fará segundo a mesma lei
+            [תורה]
 
-    B (33.5–36)
-        Das etapas do Egito até o deserto de Zim
-
-        C (33.37–39)
-            CENTRO: Monte Hor — morte de Arão no quadragésimo ano
-
-        B' (33.40–48)
-        Das etapas após a morte de Arão até as planícies de Moabe
-
-    A' (33.49)
-    Acampados junto ao Jordão — de Bete-Jesimote até Abel-Sitim
+Síntese estrutural de Nm 15:1–31:
+A: Entrada na terra. B: Regulamentos sobre as ofertas. C: O estrangeiro fará segundo a mesma lei.
 
 ==================================================
-[47] ORDENAÇÕES SOBRE A HERANÇA — Números 33.50–34.29
 
-A (33.50–56)
-    Deus ordena expulsar os habitantes e destruir seus ídolos
+[23] PUNIÇÃO POR VIOLAR O SÁBADO — Números 15:32–36
 
-    B (34.1–12)
-        Os limites da terra de Canaã definidos
+A (15:32–34)
+    O homem foi mantido sob custódia
 
-        C (34.13–15)
-            CENTRO: Nove tribos e meia receberão herança — as outras já a têm
+    B (15:35)
+        As palavras do SENHOR
 
-        B' (34.16–29)
-        Os líderes que distribuirão a terra nomeados por tribo
+A' (15:36)
+    O homem foi morto
 
-    A' (implícito)
-    A terra como herança por sorte — conforme o Senhor ordenou
+Síntese estrutural de Nm 15:32–36:
+A: Respostas do povo. B: As palavras do SENHOR.
 
 ==================================================
-[48] CIDADES PARA LEVITAS E DE REFÚGIO — Números 35.1–34
 
-A (35.1–8)
-    Quarenta e oito cidades dadas aos levitas com seus campos
+[24] FRANJAS NAS VESTES — Números 15:37–41
 
-    B (35.9–15)
-        Seis cidades de refúgio para homicidas involuntários
+A (15:37–38)
+    Ordem para fazer franjas nos cantos das vestes
 
-        C (35.16–21)
-            CENTRO: Distinção entre homicídio e homicídio involuntário
+    B (15:39)
+        Isso se tornou a franja de Israel
 
-        B' (35.22–29)
-        O homicida involuntário fica seguro até a morte do sumo sacerdote
+A' (15:40)
+    Ordem para tornar-se santo
 
-    A' (35.30–34)
-    Não profanareis a terra — o sangue a profana
+    B' (15:41)
+        O SENHOR tornou-se Deus de Israel
+
+Síntese estrutural de Nm 15:37–41:
+A: Ordens. B: Tornar-se.
 
 ==================================================
-[49] CASAMENTOS DAS HERDEIRAS — Números 36.1–13
 
-A (36.1–4)
-    Os líderes de Manassés temem: se as filhas de Zelofeade casarem fora da tribo, a herança passará
+[25] REVOLTA DE CORÁ, DATÃ E ABIRÃO — Números 16:1–17:5
 
-    B (36.5–7)
-        Deus ordena: casem-se com quem quiserem, mas dentro da tribo do pai
+A (16:1–3)
+    Rebelião de Corá
 
-        C (36.8–9)
-            CENTRO: Nenhuma herança passará de uma tribo a outra — cada tribo guardará sua herança
+    B (16:4–11)
+        "Aquele que o SENHOR escolher é o santo" (16:7)
+        [הקדושׁ]
 
-        B' (36.10–12)
-        As filhas de Zelofeade obedecem e casam com filhos de seus tios
+        C (16:12–14)
+            "Para nos fazer perecer no deserto" (16:13)
 
-    A' (36.13)
-    Estes são os mandamentos que o Senhor ordenou por Moisés nas planícies de Moabe
+            D (16:15)
+                Palavras de Moisés
 
+                E (16:16–19)
+                    "Corá havia reunido toda a sua banda contra eles à entrada da tenda do encontro" (16:19)
+                    [פתח]
+
+                    F (16:20–21)
+                        As palavras do SENHOR
+
+                        G (16:22)
+                            CENTRO: Intercessão de Moisés
+
+                    F' (16:23–24)
+                        As palavras do SENHOR
+
+                E' (16:25–27)
+                    "Datã e Abirão saíram e se postaram à entrada das suas tendas com suas mulheres, filhos e crianças" (16:27)
+                    [ותפתח]
+
+            D' (16:28–30)
+                Palavras de Moisés
+
+        C' (16:31–35)
+            "Pereceram do meio da congregação" (16:33)
+
+    B' (17:1–3)
+        "Pois, sendo apresentados diante do SENHOR, foram santificados" (17:3)
+        [ויקדשׁו]
+
+A' (17:4–5)
+    "Para que não aconteça a ele o que aconteceu a Corá e à sua banda" (17:5)
+
+Síntese estrutural de Nm 16:1–17:5:
+A: Rebelião de Corá. B: Santo. C: Morte. D: Palavras de Moisés. E: Confronto contra o rebelde. F: As palavras do SENHOR. G: Intercessão de Moisés.
+
+==================================================
+
+[26] ARÃO SALVA O POVO — Números 17:6–15
+
+A (17:6)
+    "Vós matastes o povo do SENHOR" (17:6)
+    [המתם]
+
+    B (17:7)
+        Reunião da comunidade
+        [בהקהל]
+
+        C (17:8)
+            Atos de Moisés
+
+            D (17:9–10)
+                As palavras do SENHOR
+
+        C' (17:11)
+            Atos de Moisés
+
+    B' (17:12–13)
+        Reunião da comunidade
+        [הקהל]
+
+A' (17:14–15)
+    "Quatorze mil e setecentos morreram da praga" (17:14)
+    [המתים]
+
+Síntese estrutural de Nm 17:6–15:
+A: Morte. B: Reunião da comunidade. C: Atos de Moisés. D: As palavras do SENHOR.
+
+==================================================
+
+[27] A VARA DE ARÃO — Números 17:16–28
+
+A (17:16–20)
+    As palavras do SENHOR
+
+    B (17:21–22)
+        Moisés obedeceu às palavras do SENHOR
+
+        C (17:23–24)
+            Respostas do povo
+
+A' (17:25)
+    As palavras do SENHOR
+
+    B' (17:26)
+        Moisés obedeceu às palavras do SENHOR
+
+        C' (17:27–28)
+            Respostas do povo
+
+Síntese estrutural de Nm 17:16–28:
+A: As palavras do SENHOR. B: Moisés obedeceu às palavras do SENHOR. C: Respostas do povo.
+
+==================================================
+
+[28] REGULAMENTOS SOBRE SACERDOTES E LEVITAS — Números 18:1–32
+
+A (18:1–7)
+    A família de Arão será responsável pelo santuário
+    [עון]
+
+    B (18:8–19)
+        A família de Arão recebeu uma porção das ofertas sagradas
+
+A' (18:20–24)
+    Os levitas serão responsáveis pela tenda do encontro
+    [עונם]
+
+    B' (18:25–32)
+        Os levitas receberam recompensas pelos trabalhos na tenda do encontro
+
+Síntese estrutural de Nm 18:1–32:
+A: Deveres dos sacerdotes e levitas. B: Recompensas dos sacerdotes e levitas.
+
+==================================================
+
+[29] A CERIMÔNIA DA NOVILHA VERMELHA — Números 19:1–22
+
+A (19:1–10a)
+    Preparação da água lustral
+
+    B (19:10b)
+        Estatuto perpétuo
+        [לחקתעולם]
+
+        C (19:11–13)
+            "Ele se purificará com a água no terceiro e no sétimo dia" (19:12)
+            [השׁלישׁי]
+
+            D (19:14–16)
+                Impureza por sete dias
+
+        C' (19:17–20)
+            "O homem puro aspergirá o impuro no terceiro e no sétimo dia" (19:19)
+            [השׁלישׁי]
+
+    B' (19:21a)
+        Estatuto perpétuo
+        [לחקתעולם]
+
+A' (19:21b–22)
+    Regulamentos sobre a água lustral
+
+Síntese estrutural de Nm 19:1–22:
+A: Água lustral. B: Estatuto perpétuo. C: No terceiro e no sétimo dia. D: Impureza por sete dias.
+
+==================================================
+
+[30] AS ÁGUAS DE MERIBÁ — Números 20:1–13
+
+A (20:1–5)
+    Queixas do povo
+    [וירב]
+
+    B (20:6–8)
+        As palavras do SENHOR
+
+        C (20:9–11)
+            CENTRO: "Moisés feriu a rocha duas vezes com o seu cajado, e saiu água em abundância" (20:11)
+
+    B' (20:12)
+        As palavras do SENHOR
+
+A' (20:13)
+    "Os filhos de Israel contenderam com o SENHOR" (20:13)
+    [רבו]
+
+Síntese estrutural de Nm 20:1–13:
+A: Os israelitas contenderam com o SENHOR. B: As palavras do SENHOR. C: Moisés feriu a rocha duas vezes.
+
+==================================================
+
+[31] PASSAGEM RECUSADA POR EDOM — Números 20:14–21
+
+A (20:14–17)
+    Pedido para passar pelo território
+
+    B (20:18)
+        "Não passarás por aqui" (20:18)
+        [לקראתך]
+
+A' (20:19)
+    Pedido para passar pelo território
+
+    B' (20:20–21)
+        "Não passarás" (20:20)
+        [לקראתו]
+
+Síntese estrutural de Nm 20:14–21:
+A: Pedido para passar. B: Recusa.
+
+==================================================
+
+[32] A MORTE DE ARÃO — Números 20:22–29
+
+A (20:22)
+    Chegada ao monte Hor
+
+    B (20:23–26)
+        Profecia sobre a morte de Arão
+        [ומת]
+
+A' (20:27)
+    Subida ao monte Hor
+
+    B' (20:28–29)
+        Morte de Arão
+        [וימת]
+
+Síntese estrutural de Nm 20:22–29:
+A: Monte Hor. B: Morte de Arão.
+
+==================================================
+
+[33] O REI DE ARAADE É DERROTADO — Números 21:1–3
+
+A (21:1)
+    Israel foi derrotado
+
+    B (21:2)
+        Um voto ao SENHOR
+
+A' (21:3)
+    Vitória de Israel
+
+Síntese estrutural de Nm 21:1–3:
+A: Guerras de Israel. B: Um voto ao SENHOR.
+
+==================================================
+
+[34] A SERPENTE DE BRONZE — Números 21:4–9
+
+A (21:4–5)
+    Queixas do povo
+
+    B (21:6)
+        "O SENHOR enviou entre o povo serpentes ardentes" (21:6)
+        [השׂרפים]
+
+A' (21:7)
+    Arrependimento do povo
+
+    B' (21:8–9)
+        "Faze uma serpente ardente e coloca-a sobre um poste" (21:8)
+        [שׂרף]
+
+Síntese estrutural de Nm 21:4–9:
+A: Atos do povo. B: Serpentes ardentes.
+
+==================================================
+
+[35] A JORNADA ATÉ MOABE — Números 21:10–20
+
+A (21:10–13)
+    Itinerário
+
+    B (21:14–15)
+        Citação do Livro das Guerras do SENHOR
+
+        C (21:16)
+            CENTRO: As palavras do SENHOR
+
+    B' (21:17–18a)
+        Citação do cântico do poço
+
+A' (21:18b–20)
+    Itinerário
+
+Síntese estrutural de Nm 21:10–20:
+A: Itinerário. B: Citações. C: As palavras do SENHOR.
+
+==================================================
+
+[36] OS REIS SEOM E OGUE SÃO DERROTADOS — Números 21:21–35
+
+A (21:21–24)
+    Guerra contra o rei Seom
+
+    B (21:25–26)
+        "Israel se estabeleceu nessas cidades dos amorreus" (21:25)
+
+        C (21:27–30)
+            CENTRO: O cântico de Hesbom
+
+    B' (21:31–32)
+        "Israel se estabeleceu na terra dos amorreus" (21:31)
+
+A' (21:33–35)
+    Guerra contra o rei Ogue
+
+Síntese estrutural de Nm 21:21–35:
+A: Guerras. B: Israel se estabeleceu na terra dos amorreus. C: O cântico de Hesbom.
+
+==================================================
+
+[37] BALAQUE E BALAÃO — Números 22:1–40
+
+A (22:1–7)
+    Balaque desejou convidar Balaão
+
+    B (22:8–14)
+        O primeiro mensageiro de Balaque
+
+    B' (22:15–35)
+        O segundo mensageiro de Balaque
+
+A' (22:36–40)
+    Balaão acompanhou Balaque
+
+Síntese estrutural de Nm 22:1–40:
+A: Balaque convidou Balaão. B: O mensageiro de Balaque.
+
+==================================================
+
+[38] O ORÁCULO DE BALAÃO — Números 22:41–24:25
+
+A1 (22:41–23:12)
+    Primeiro oráculo: bênção para Israel
+
+A2 (23:13–26)
+    Segundo oráculo: bênção para Israel
+
+A3 (23:27–24:14)
+    Terceiro oráculo: bênção para Israel
+
+    B (24:15–19)
+        CENTRO: Quarto oráculo: "Uma estrela procederá de Jacó" (24:17)
+
+A4 (24:20)
+    Quinto oráculo: Amaleque perecerá
+
+A5 (24:21–22)
+    Sexto oráculo: Os quenitas perecerão
+
+A6 (24:23–25)
+    Sétimo oráculo: Os povos que vieram de Quitim perecerão
+
+Síntese estrutural de Nm 22:41–24:25:
+A: Oráculos de bênção e destruição. B: Uma estrela procederá de Jacó.
+
+==================================================
+
+[39] CULTO A BAAL DE PEOR — Números 25:1–19
+
+A (25:1–3)
+    A traição
+
+    B (25:4–5)
+        Ordem do SENHOR para matar os líderes
+
+        C (25:6–9)
+            Finéias matou duas pessoas
+
+            D (25:10–13)
+                CENTRO: Finéias recebeu a garantia de um sacerdócio eterno
+
+        C' (25:14–15)
+            As duas pessoas mortas por Finéias
+
+    B' (25:16–17)
+        Ordem do SENHOR para matar os midianitas
+
+A' (25:18–19)
+    O desastre
+
+Síntese estrutural de Nm 25:1–19:
+A: A traição e o desastre. B: Ordem do SENHOR para matar. C: Finéias matou duas pessoas. D: A garantia de um sacerdócio eterno.
+
+==================================================
+
+[40] O RECENSEAMENTO DA NOVA GERAÇÃO — Números 26:1–65
+
+A (26:1–4a)
+    As planícies de Moabe ao longo do Jordão de Jericó
+    [בערבתמואבעלירדןירחו]
+
+    B (26:4b–51)
+        Recenseamento das doze tribos
+
+        C (26:52–56)
+            CENTRO: Ordem para distribuir a terra
+
+    B' (26:57–62)
+        Recenseamento dos levitas
+
+A' (26:63–65)
+    As planícies de Moabe ao longo do Jordão de Jericó
+    [בערבתמואבעלירדןירחו]
+
+Síntese estrutural de Nm 26:1–65:
+A: As planícies de Moabe ao longo do Jordão de Jericó. B: Recenseamento das tribos. C: Ordem para distribuir a terra.
+
+==================================================
+
+[41] AS FILHAS DE ZELOFADE — Números 27:1–11
+
+A (27:1–2)
+    De pé diante de toda a comunidade
+    [לפני]
+
+    B (27:3–4)
+        Pedido da herança das filhas
+        [אחזה]
+
+A' (27:5)
+    De pé diante do SENHOR
+    [לפני]
+
+    B' (27:6–11)
+        Aceitação da herança das filhas
+        [אחזת]
+
+Síntese estrutural de Nm 27:1–11:
+A: Diante de. B: A herança das filhas.
+
+==================================================
+
+[42] JOSUÉ É DESIGNADO SUCESSOR DE MOISÉS — Números 27:12–23
+
+A (27:12–14)
+    Ordem do SENHOR: contemplar a terra
+
+    B (27:15–17)
+        Palavras de Moisés
+
+A' (27:18–21)
+    Ordem do SENHOR: escolher Josué
+
+    B' (27:22–23)
+        Atos de Moisés
+
+Síntese estrutural de Nm 27:12–23:
+A: Ordem do SENHOR. B: Atos de Moisés.
+
+==================================================
+
+[43] REGULAMENTOS SOBRE OFERTAS E VOTOS — Números 28:1–30:17
+
+A (28:1–2a)
+    Dá esta ordem aos filhos de Israel (28:2)
+
+    B (28:2b–29:38)
+        Regulamentos sobre as ofertas
+
+        C (29:39–30:1)
+            Conclusões dos regulamentos
+
+A' (30:2)
+    Moisés transmitiu estas instruções aos filhos de Israel (30:1)
+
+    B' (30:3–16)
+        Regulamentos sobre os votos
+
+        C' (30:17)
+            Conclusões dos regulamentos
+
+Síntese estrutural de Nm 28:1–30:17:
+A: Ordens do SENHOR. B: Regulamentos. C: Conclusões dos regulamentos.
+
+==================================================
+
+[44] GUERRA CONTRA MIDIÃ — Números 31:1–54
+
+A (31:1–5)
+    "Doze mil homens armados para a guerra" (31:5)
+
+    B (31:6–12)
+        Tomada do espólio
+
+        C (31:13–20)
+            Ordem sobre o espólio
+
+            D (31:21–24)
+                CENTRO: Ordem sobre a purificação
+
+        C' (31:25–30)
+            Ordem sobre o espólio
+
+    B' (31:31–47)
+        Distribuição do espólio
+
+A' (31:48–54)
+    "Nem um homem falta" (31:49)
+
+Síntese estrutural de Nm 31:1–54:
+A: Os soldados. B: Tomada do espólio. C: Ordem sobre o espólio. D: Ordem sobre a purificação.
+
+==================================================
+
+[45] CONQUISTA E DIVISÃO DA TRANSJORDÂNIA — Números 32:1–42
+
+A (32:1–4)
+    A terra de Jazer e Gileade
+
+    B (32:5)
+        "Que esta terra seja dada aos teus servos como propriedade" (32:5)
+        [לאחזה]
+
+        C (32:6–15)
+            Palavras de Moisés
+
+            D (32:16–19)
+                "Queremos apenas construir aqui currais para os nossos rebanhos e cidades para os nossos filhos" (32:16)
+                [לטפנו]
+
+                E (32:20–24)
+                    CENTRO: Palavras de Moisés
+
+            D' (32:25–27)
+                "Enquanto nossas esposas, nossos filhos, nossos rebanhos e todo o nosso gado ficam nas cidades de Gileade" (32:26)
+                [טפנו]
+
+        C' (32:28–30)
+            Palavras de Moisés
+
+    B' (32:31–32)
+        "Manteremos nossa herança hereditária deste lado do Jordão" (32:32)
+        [אחזת]
+
+A' (32:33–42)
+    As terras foram dadas aos rubenitas e gaditas
+
+Síntese estrutural de Nm 32:1–42:
+A: Lista de nomes de lugares. B: Desejos dos gaditas e rubenitas. C: Palavras de Moisés. D: Promessa dos gaditas e rubenitas. E: Palavras de Moisés.
+
+==================================================
+
+[46] AS ETAPAS DA JORNADA DE ISRAEL DESDE O EGITO — Números 33:1–49
+
+Itinerário desde o Egito
+
+==================================================
+
+[47] ORDENS SOBRE A HERANÇA — Números 33:50–34:29
+
+A (33:50–56)
+    "Distribuireis a terra por sorteio entre os vossos clãs" (33:54)
+    [בגורל]
+
+    B (34:1–12)
+        Lista das terras
+
+A' (34:13–15)
+    "Vossas heranças serão distribuídas por sorteio" (34:13)
+    [בגורל]
+
+    B' (34:16–29)
+        Lista dos líderes
+
+Síntese estrutural de Nm 33:50–34:29:
+A: Os sorteios. B: Listas.
+
+==================================================
+
+[48] CIDADES PARA OS LEVITAS E DE REFÚGIO — Números 35:1–34
+
+A (35:1–8)
+    "As cidades que dareis aos levitas incluirão as seis cidades de refúgio" (35:6)
+    [המקלט]
+
+A' (35:9–34)
+    "Designareis como cidades de refúgio" (35:11)
+    [מקלט]
+
+Síntese estrutural de Nm 35:1–34:
+A: As cidades de refúgio.
+
+==================================================
+
+[49] CASAMENTOS DAS HERDEIRAS — Números 36:1–13
+
+A (36:1–4)
+    Preocupação com que as terras das filhas de Zelofade passem à herança de outra tribo
+
+    B (36:5–9)
+        Regulamento sobre as heranças das mulheres
+
+A' (36:10–12)
+    As terras das filhas de Zelofade permaneceram como herança da tribo
+
+P (36:13)
+    "Estes são os mandamentos e as decisões que o SENHOR prescreveu aos filhos de Israel por meio de Moisés" (36:13)
+
+Síntese estrutural de Nm 36:1–13:
+A: Atos das filhas de Zelofade. B: Regulamento sobre as heranças das mulheres.
+
+==================================================
