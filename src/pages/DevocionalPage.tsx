@@ -5,6 +5,22 @@ import { toPng } from 'html-to-image';
 import Navbar from '../components/Navbar';
 import { PLANO_COMPLETO, TOTAL_DIAS, getDayOfYear, type DiaDevocional } from '../data/calendarioDevocional';
 
+// Calendário: dia 1 = 1 jan 2026 (Gênesis) → Apocalipse no ano 5
+const DIAS_SEMANA = ['Domingo','Segunda-feira','Terça-feira','Quarta-feira','Quinta-feira','Sexta-feira','Sábado'];
+const MESES_PT = ['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];
+const PLANO_START = new Date(2026, 0, 1);
+
+function diaParaData(dia: number): Date {
+  const d = new Date(PLANO_START);
+  d.setDate(d.getDate() + dia - 1);
+  return d;
+}
+
+function formatarDataDia(dia: number): string {
+  const d = diaParaData(dia);
+  return `${DIAS_SEMANA[d.getDay()]}, ${d.getDate()} de ${MESES_PT[d.getMonth()]} de ${d.getFullYear()}`;
+}
+
 // Design tokens
 const C = {
   bg:      '#05071a',
@@ -210,6 +226,9 @@ function DiaCard({ d, isHoje, onClick, onShare }: {
       </div>
       <div style={{ fontSize: 13, color: cor, lineHeight: 1.45, fontWeight: 600 }}>
         {d.pericope}
+      </div>
+      <div style={{ fontSize: 10, color: 'rgba(255,255,255,0.35)', marginTop: 8, fontWeight: 500, letterSpacing: '0.01em' }}>
+        {formatarDataDia(d.dia)}
       </div>
     </motion.div>
   );
@@ -4801,14 +4820,21 @@ function formatarDataCompartilhamento(): string {
   return `${dias[now.getDay()]}, ${now.getDate()} de ${meses[now.getMonth()]} de ${now.getFullYear()}`;
 }
 
-const DEVOCIONAL_URL = 'https://bibliavisual.fabionmiranda.com';
+const DEVOCIONAL_URL = 'https://biblivisual.fabionmiranda.com/devocional';
+
+function gerarTitulo(d: DiaDevocional): string {
+  const p = d.pericope.charAt(0).toUpperCase() + d.pericope.slice(1);
+  return `${p} — ${d.livro} ${d.capitulos}`;
+}
 
 function gerarTextoWhatsApp(d: DiaDevocional): string {
   const data = formatarDataCompartilhamento();
+  const titulo = gerarTitulo(d);
   const reflexao = gerarReflexao(d);
   const oracao = gerarOracao(d);
   return (
-    `📖 *Devocional do Dia — ${data}*\n\n` +
+    `✨ *${titulo}*\n` +
+    `📖 _Devocional do Dia — ${data}_\n\n` +
     `*${d.livro}* — ${d.livroAbrev} ${d.capitulos}\n` +
     `_${d.pericope}_\n\n` +
     `*✦ Reflexão*\n${reflexao}\n\n` +
