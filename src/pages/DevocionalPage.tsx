@@ -211,9 +211,9 @@ function DiaCard({ d, isHoje, onClick, onShare }: {
         <WhatsAppIcon size={13} />
       </button>
 
-      <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 10 }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: isHoje ? 6 : 10 }}>
         <span style={{
-          fontSize: 24, fontWeight: 900, color: C.white,
+          fontSize: isHoje ? 30 : 24, fontWeight: 900, color: isHoje ? C.blue : C.white,
           fontVariantNumeric: 'tabular-nums', lineHeight: 1,
           letterSpacing: '-0.02em',
         }}>
@@ -221,15 +221,22 @@ function DiaCard({ d, isHoje, onClick, onShare }: {
         </span>
         <BadgeTestamento t={d.testamento} />
       </div>
-      <div style={{ fontWeight: 800, fontSize: 14, color: C.white, marginBottom: 6, lineHeight: 1.3 }}>
+      {isHoje && (
+        <div style={{ fontSize: 10, color: C.blue, fontWeight: 700, fontStyle: 'italic', marginBottom: 8, opacity: 0.85 }}>
+          {formatarDataDia(d.dia)}
+        </div>
+      )}
+      <div style={{ fontWeight: 800, fontSize: isHoje ? 16 : 14, color: C.white, marginBottom: 6, lineHeight: 1.3 }}>
         {d.livroAbrev} {d.capitulos}
       </div>
-      <div style={{ fontSize: 13, color: cor, lineHeight: 1.45, fontWeight: 600 }}>
+      <div style={{ fontSize: isHoje ? 14 : 13, color: cor, lineHeight: 1.45, fontWeight: 600 }}>
         {d.pericope}
       </div>
-      <div style={{ fontSize: 10, color: 'rgba(255,255,255,0.35)', marginTop: 8, fontWeight: 500, letterSpacing: '0.01em' }}>
-        {formatarDataDia(d.dia)}
-      </div>
+      {!isHoje && (
+        <div style={{ fontSize: 10, color: 'rgba(255,255,255,0.30)', marginTop: 8, fontWeight: 500, letterSpacing: '0.01em' }}>
+          {formatarDataDia(d.dia)}
+        </div>
+      )}
     </motion.div>
   );
 }
@@ -4923,6 +4930,9 @@ function DiaModal({ d, onClose, innerRef }: { d: DiaDevocional; onClose: () => v
               <div style={{ fontSize: 'clamp(10px,2.5vw,12px)', color: C.muted, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: 4 }}>
                 Dia {d.dia} de {TOTAL_DIAS}
               </div>
+              <div style={{ fontSize: 'clamp(10px,2.2vw,12px)', color: cor, fontWeight: 600, marginBottom: 6, opacity: 0.9 }}>
+                {formatarDataDia(d.dia)}
+              </div>
               <BadgeTestamento t={d.testamento} />
             </div>
           </div>
@@ -5164,27 +5174,59 @@ export default function DevocionalPage() {
                   onClick={() => setDiaSel(diaHoje)}
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
+                  animate={{ boxShadow: [
+                    '0 0 24px rgba(0,212,255,0.18), 0 0 0 1px rgba(0,212,255,0.35)',
+                    '0 0 48px rgba(0,212,255,0.42), 0 0 0 2px rgba(0,212,255,0.65)',
+                    '0 0 24px rgba(0,212,255,0.18), 0 0 0 1px rgba(0,212,255,0.35)',
+                  ]}}
+                  transition={{ boxShadow: { duration: 2.4, repeat: Infinity, ease: 'easeInOut' } }}
                   style={{
                     all: 'unset', cursor: 'pointer',
-                    background: 'linear-gradient(135deg,rgba(0,212,255,0.18),rgba(0,212,255,0.06))',
-                    border: `1px solid ${C.blueB}`,
-                    borderRadius: 18, padding: 'clamp(12px,3vw,16px) clamp(14px,4vw,22px)',
-                    width: '100%', maxWidth: 360,
-                    boxShadow: '0 0 32px rgba(0,212,255,0.15)',
+                    background: 'linear-gradient(135deg,rgba(0,212,255,0.22) 0%,rgba(0,100,180,0.12) 100%)',
+                    border: `1.5px solid ${C.blueB}`,
+                    borderRadius: 20, padding: 'clamp(14px,3.5vw,20px) clamp(16px,4vw,26px)',
+                    width: '100%', maxWidth: 380,
                     boxSizing: 'border-box' as const,
+                    display: 'block',
                   }}
                 >
-                  <div style={{ fontSize: 9, color: C.blue, fontWeight: 900, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 8 }}>
-                    Leitura de Hoje
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10 }}>
+                    <div style={{ fontSize: 9, color: C.blue, fontWeight: 900, letterSpacing: '0.2em', textTransform: 'uppercase' }}>
+                      Leitura de Hoje
+                    </div>
+                    <div style={{ fontSize: 9, color: C.blue, fontWeight: 700, opacity: 0.8 }}>
+                      Dia {diaHoje.dia} de {TOTAL_DIAS}
+                    </div>
                   </div>
-                  <div style={{ fontWeight: 800, fontSize: 15, color: C.white, marginBottom: 4 }}>
+                  <div style={{ fontSize: 11, color: 'rgba(0,212,255,0.75)', fontWeight: 600, marginBottom: 8, fontStyle: 'italic' }}>
+                    {formatarDataDia(diaHoje.dia)}
+                  </div>
+                  <div style={{ fontWeight: 900, fontSize: 'clamp(16px,4vw,20px)', color: C.white, marginBottom: 4, lineHeight: 1.2 }}>
                     {diaHoje.livroAbrev} {diaHoje.capitulos}
                   </div>
-                  <div style={{ fontSize: 11, color: C.muted, marginBottom: 4 }}>
+                  <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.7)', marginBottom: 12, lineHeight: 1.4 }}>
                     {diaHoje.pericope}
                   </div>
-                  <div style={{ fontSize: 10, color: C.blue }}>
-                    Dia {diaHoje.dia} de {TOTAL_DIAS} →
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: 0 }}>
+                    <div style={{ fontSize: 11, color: C.blue, fontWeight: 700, letterSpacing: '0.05em' }}>
+                      Abrir devocional →
+                    </div>
+                    <button
+                      onClick={e => { e.stopPropagation(); handleShare(diaHoje); }}
+                      title="Compartilhar no WhatsApp"
+                      style={{
+                        all: 'unset', cursor: 'pointer',
+                        width: 28, height: 28, borderRadius: 9,
+                        display: 'flex', alignItems: 'center', justifyContent: 'center',
+                        background: 'rgba(37,211,102,0.15)',
+                        border: '1px solid rgba(37,211,102,0.40)',
+                        color: '#25d366',
+                      }}
+                      onMouseEnter={e => { (e.currentTarget as HTMLButtonElement).style.background = 'rgba(37,211,102,0.30)'; }}
+                      onMouseLeave={e => { (e.currentTarget as HTMLButtonElement).style.background = 'rgba(37,211,102,0.15)'; }}
+                    >
+                      <WhatsAppIcon size={14} />
+                    </button>
                   </div>
                 </motion.button>
               )}
