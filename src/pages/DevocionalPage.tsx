@@ -1,6 +1,6 @@
 ﻿import { useState, useMemo, useRef, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { BookOpen, Calendar, Search, X, Moon } from 'lucide-react';
+import { BookOpen, Calendar, Search, X, Moon, Heart } from 'lucide-react';
 import { toPng } from 'html-to-image';
 import Navbar from '../components/Navbar';
 import { PLANO_COMPLETO, TOTAL_DIAS, getDayOfYear, type DiaDevocional } from '../data/calendarioDevocional';
@@ -4818,6 +4818,119 @@ function gerarOracao(d: DiaDevocional): string {
 }
 
 
+// ─── Família ────────────────────────────────────────────────────────
+
+function gerarFamilia(d: DiaDevocional): string {
+  const p = d.pericope.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+
+  // GÊNESIS
+  if (/seis dias de criacao/i.test(p))
+    return `👫 *Casais:* Reservem um dia da semana para descansar juntos — sem telas, sem agenda. O sábado não é inimigo da produtividade; é o ritmo que Deus embutiu na criação. Conversem sobre o que cada um precisa para descansar de verdade.\n👧 *Filhos:* Pergunte ao seu filho: "O que Deus fez nos seis dias?" Montem juntos um painel com os dias da criação. Ensine que trabalhar e descansar fazem parte do plano de Deus desde o começo.\n👴 *Avós:* Compartilhe com os netos uma memória de como o domingo era diferente na sua infância. O descanso como prática de família transmite fé de geração em geração.`;
+  if (/jardim no eden/i.test(p))
+    return `👫 *Casais:* O jardim foi lugar de comunhão entre Deus e o homem antes de ser lugar de trabalho. Criem juntos um "jardim" na vida do casal — um espaço de conversa sem pressa, onde ambos se encontram com Deus e entre si.\n👧 *Filhos:* Explique que Deus plantou um jardim lindo para o ser humano cuidar. Peça que seu filho cuide de uma plantinha como exercício de responsabilidade e gratidão pelo que Deus criou.\n👴 *Avós:* Converse com os netos sobre cultivar e guardar. O que você aprendeu ao longo da vida sobre cuidar do que Deus deu — família, saúde, fé? Transmita essa sabedoria em uma conversa simples.`;
+  if (/criacao de mulher/i.test(p))
+    return `👫 *Casais:* "Não é bom que o homem esteja só" é a primeira necessidade declarada por Deus. Celebrem hoje a complementaridade do casal — não o que falta no outro, mas o que cada um traz. Escrevam três coisas que um aprecia no outro.\n👧 *Filhos:* Ensine que o casamento foi ideia de Deus desde o jardim. Fale com seus filhos sobre respeito, diferença e cuidado nas amizades e relacionamentos.\n👴 *Avós:* Conte para os netos a história de como você e seu cônjuge se conheceram. O testemunho de um amor duradouro é um dos maiores presentes que avós podem dar.`;
+  if (/primeiro pecado/i.test(p))
+    return `👫 *Casais:* O padrão de culpar o outro começou no jardim: "A mulher que me deste..." Practiquem esta semana pedir desculpas sem justificativas. A responsabilidade pessoal fortalece o casamento.\n👧 *Filhos:* Converse sobre consequências de escolhas erradas de forma gentil. Pergunte: "O que aconteceu quando Adão e Eva desobedeceram?" Conecte ao dia a dia: toda escolha tem consequência.\n👴 *Avós:* Compartilhe um momento da sua vida em que errou e pediu perdão. O testemunho de humildade é poderoso para a formação de caráter dos netos.`;
+  if (/caim assassina abel/i.test(p))
+    return `👫 *Casais:* Ciúme não confrontado vira ressentimento. O que está "à porta" no relacionamento de vocês que precisa ser nomeado antes de crescer? Pratiquem conversas difíceis com respeito e antecipação.\n👧 *Filhos:* Fale sobre ciúmes entre irmãos e como lidar com sentimentos de injustiça. Pergunte: "Quando você sente que alguém teve mais do que você, o que faz?" Ensine a falar em vez de guardar.\n👴 *Avós:* Avalie se há ciúmes entre os netos que precisam de atenção. Um avô que nota e age com sabedoria pode prevenir rivalidades que duram anos.`;
+  if (/grande diluvio/i.test(p))
+    return `👫 *Casais:* "Deus se lembrou de Noé" — nos momentos em que a família parece coberta por pressão e dificuldade, Deus não esquece. Orem juntos hoje pelas situações que parecem inundadas sem saída.\n👧 *Filhos:* A arca foi construída em obediência antes da chuva. Ensine que preparação e obediência nos tempos calmos protegem nos tempos difíceis. Que "arca" vocês podem construir juntos como família?\n👴 *Avós:* Noé construiu com a família. Identifiquem algo que os avós e netos podem fazer juntos como projeto de obediência e cuidado com o que Deus confiou.`;
+  if (/alianca com noe/i.test(p))
+    return `👫 *Casais:* O arco-íris é sinal de aliança. Reafirmem os votos do casamento — não apenas nos aniversários, mas nas crises. Toda promessa renovada fortalece a memória do compromisso original.\n👧 *Filhos:* Mostre um arco-íris (foto ou desenho) e explique: Deus colocou um sinal no céu para lembrar da sua promessa. Pergunte: "Que promessas Deus faz para nós?" Faça uma lista juntos.\n👴 *Avós:* Compartilhe promessas que você fez a Deus ou à família e cumpriu. Mostre que as alianças — com Deus e com as pessoas — são levadas a sério por pessoas de fé.`;
+  if (/chamado de abrao/i.test(p))
+    return `👫 *Casais:* Abrão saiu sem saber para onde ia — mas foi com Sarai. Há um chamado que Deus fez ao casal de vocês que exige deixar algo para trás? Decidam juntos o que a obediência custa e o que ela promete.\n👧 *Filhos:* Deus chamou Abrão para um lugar novo. Pergunte ao seu filho: "Se Deus pedisse para você ir a um lugar diferente, o que você levaria?" Conecte ao tema de confiar em Deus mesmo sem ver tudo.\n👴 *Avós:* Conte sobre uma mudança grande que viveram por obediência a Deus. Como foi deixar algo familiar pelo que Deus mostrou? Esse testemunho ajuda os netos a confiar em Deus nas transições.`;
+  if (/nascimento de isaque/i.test(p))
+    return `👫 *Casais:* A promessa de Isaque chegou quando Abraão e Sara já não tinham forças humanas para ser pais. Onde vocês estão esperando um milagre que parece impossível? Orem juntos por essa promessa hoje.\n👧 *Filhos:* Sara riu de incredulidade e depois riu de alegria. Explique que às vezes não acreditamos que algo bom vai acontecer — mas Deus pode surpreender. Alguma coisa boa te surpreendeu recentemente?\n👴 *Avós:* Isaque era o filho da promessa na velhice. Compartilhe algo que Deus fez pela família depois de muito esperar. A experiência dos avós com a fidelidade de Deus é um patrimônio espiritual.`;
+
+  // ÊXODO
+  if (/nascimento e chamado de moises/i.test(p) || /moises e a sarça ardente/i.test(p))
+    return `👫 *Casais:* A mãe de Moisés o colocou no rio e a irmã ficou de longe, observando. Proteção e vigilância são formas de amor. Conversem sobre como cada um de vocês cuida e protege — e onde podem fazer mais juntos.\n👧 *Filhos:* A irmã de Moisés agiu com coragem para proteger o irmão. Fale com seus filhos sobre cuidar dos irmãos e das pessoas próximas. Que atitude corajosa você pode ter por alguém da família esta semana?\n👴 *Avós:* Moisés foi salvo pelas mulheres da família. Que papel os avós têm em guardar e proteger os netos — especialmente nos momentos em que os pais não conseguem? Seja essa presença de segurança.`;
+  if (/dez pragas/i.test(p) || /pascoa.*egito/i.test(p))
+    return `👫 *Casais:* O sangue no portal protegia toda a família. A fé de um casal colocada sobre a casa cobre os filhos. Orem juntos sobre a "porta" da família de vocês — o que os protege como lar?\n👧 *Filhos:* A Páscoa era celebrada em família, com perguntas e respostas entre pais e filhos. Que perguntas seus filhos têm sobre Deus que você pode responder esta semana? Abra espaço para a curiosidade espiritual.\n👴 *Avós:* A Páscoa foi instituída para ser transmitida: "Contareis a vossos filhos." Que história de libertação de Deus na sua família você pode contar aos netos hoje?`;
+  if (/mana no deserto/i.test(p))
+    return `👫 *Casais:* O maná era diário — não se acumulava. Conversem sobre a ansiedade de "acumular para o futuro" que às vezes rouba a paz do presente. O que vocês podem soltar para confiar na provisão de Deus dia a dia?\n👧 *Filhos:* Deus deu comida todos os dias — exatamente o suficiente. Ensine gratidão pelas necessidades do dia: pela refeição, pela casa, pelo dia de hoje. Façam juntos uma oração de agradecimento simples.\n👴 *Avós:* Compartilhe sobre como viveu períodos de escassez com confiança. O que você aprendeu sobre a provisão de Deus que os netos precisam ouvir antes de enfrentar as dificuldades da vida?`;
+  if (/dez mandamentos/i.test(p))
+    return `👫 *Casais:* "Honra teu pai e tua mãe" é o único mandamento com promessa. Revisitem juntos a relação de vocês com seus próprios pais — há algo a curar, honrar ou agradecer? Também falem sobre como ensinam as crianças a honrar vocês.\n👧 *Filhos:* Leia os Dez Mandamentos com a família e pergunte: "Por que Deus deu essas regras?" Explique que as regras de Deus nos protegem e são para o nosso bem.\n👴 *Avós:* Os mandamentos foram dados para serem ensinados de geração em geração. Qual dos mandamentos você mais quer ver vivo nos seus netos? Converse sobre ele de forma prática e afetuosa.`;
+
+  // NÚMEROS / DEUTERONÔMIO
+  if (/espias em canaa/i.test(p) || /espias.*terra/i.test(p))
+    return `👫 *Casais:* Calebe e Josué tinham outro espírito — viram o mesmo que os outros e concluíram diferente. Cultivem no lar uma cultura de fé e não de medo diante dos desafios. Que "gigantes" vocês estão encarando com perspectiva diferente?\n👧 *Filhos:* Dez espias disseram "não dá"; dois disseram "Deus vai nos dar". Fale com seus filhos sobre ter esperança mesmo quando a situação parece difícil. Qual gigante você está enfrentando com fé?\n👴 *Avós:* Calebe ainda tinha "outro espírito" na velhice. Transmita aos netos que a fé não envelhece — e que a geração mais velha pode ser a mais corajosa na família.`;
+  if (/shema.*israel|ama.*senhor.*teu.*deus/i.test(p))
+    return `👫 *Casais:* "Falarás destas palavras... quando estiveres em casa." O Shemá é instrução para o lar. Criem um ritual familiar — na mesa, antes de dormir — onde a Palavra de Deus é mencionada naturalmente.\n👧 *Filhos:* "Amarás ao Senhor teu Deus com todo o coração." Pergunte: "Como você mostra que ama a Deus?" Faça disso uma conversa, não uma lição. O amor a Deus se aprende vendo os pais viverem.\n👴 *Avós:* O Shemá é para ser repetido em casa, no caminho, deitado e levantado. Crie uma frase ou oração simples que você repete com os netos sempre que os vê — uma âncora espiritual que eles levam para a vida.`;
+
+  // JOSUÉ / JUÍZES
+  if (/travessia do jordao/i.test(p) || /pedras.*jordao/i.test(p))
+    return `👫 *Casais:* As pedras do Jordão eram para que os filhos perguntassem "o que significam estas pedras?" Que marcos de fé vocês têm como casal que podem contar quando os filhos perguntarem? Construam memórias que falem de Deus.\n👧 *Filhos:* As pedras eram lembrete das coisas que Deus fez. Façam juntos um "mural de gratidão" em casa — fotos, desenhos ou palavras que lembram quando Deus agiu pela família.\n👴 *Avós:* Qual é a "pedra do Jordão" da sua família — o marco que todos deveriam conhecer? Conte essa história para os netos como se fosse a mais importante que você já viveu. Porque provavelmente é.`;
+
+  // SALMOS
+  if (/salmo 1/i.test(p) || /arvore.*plantada.*aguas/i.test(p))
+    return `👫 *Casais:* "Meditará na sua lei dia e noite." A vida fértil começa na meditação conjunta. Escolham um versículo por semana para meditar juntos — lendo de manhã, lembrando à noite.\n👧 *Filhos:* A árvore plantada à beira d'água não seca porque tem raiz firme. Pergunte ao seu filho: "Onde você bebe água para crescer forte por dentro?" Apresente a Bíblia como essa fonte.\n👴 *Avós:* Leia o Salmo 1 com os netos e pergunte: "Que tipo de árvore você quer ser?" O conselho dos avós é a "água" que muitos netos precisam para não murchar nas pressões da vida.`;
+  if (/salmo 23/i.test(p) || /senhor.*meu.*pastor/i.test(p))
+    return `👫 *Casais:* "Ainda que eu ande pelo vale da sombra da morte, não temerei mal algum." Conversem sobre um vale que vocês atravessaram juntos. Como Deus foi o Pastor nesse momento? Testemunhar para o cônjuge renova a fé.\n👧 *Filhos:* Leia o Salmo 23 como se fosse uma história. Deus é o Pastor que cuida, guia e alimenta. Pergunte: "Quando você se sentiu cuidado por Deus como uma ovelhinha?" Deixe o filho responder com a própria experiência.\n👴 *Avós:* "A tua vara e o teu cajado me consolam." Conte aos netos um momento em que você sentiu o consolo de Deus no caminho mais difícil. Esse tipo de testemunho enraíza a fé das próximas gerações.`;
+  if (/salmo 119/i.test(p) || /palavra.*lampada.*pes/i.test(p))
+    return `👫 *Casais:* A Palavra ilumina o caminho — um versículo por dia lido em voz alta para o outro é suficiente para mudar o tom de um casamento ao longo do tempo. Comecem hoje.\n👧 *Filhos:* "A tua palavra é lâmpada para os meus pés." Desenhe uma lanterna com seu filho e dentro escreva um versículo que ele vai decorar. A Palavra memorizada na infância fica para a vida toda.\n👴 *Avós:* Qual versículo iluminou o seu caminho na hora mais escura? Compartilhe com os netos e ensine a memorizar. O legado mais duradouro que um avô deixa é a Palavra de Deus plantada no coração dos filhos dos filhos.`;
+
+  // PROVÉRBIOS
+  if (/sabedoria.*comeco|temor.*senhor.*sabedoria/i.test(p))
+    return `👫 *Casais:* A sabedoria começa no temor ao Senhor — não no conhecimento técnico. Conversem sobre uma decisão que precisam tomar: antes da análise, orou? O temor a Deus calibra a sabedoria humana.\n👧 *Filhos:* Provérbios foi escrito de pai para filho. Leia um provérbio por dia com seus filhos e pergunte o que significa para a vida deles hoje. Sabedoria transmitida em conversa cotidiana é mais poderosa que aula.\n👴 *Avós:* O avô sábio é o provérbio vivo da família. Qual é o conselho mais importante que você daria ao neto nesta fase da vida? Diga em palavras simples, olho no olho.`;
+
+  // ISAÍAS / PROFETAS
+  if (/servo sofredor|servo.*senhor.*isaias/i.test(p))
+    return `👫 *Casais:* O servo sofredor carregou o que não era seu para servir a quem não merecia. Em um casamento, haverá momentos em que um carrega mais pelo outro. Conversem sobre como têm se sustentado nos momentos de carga desigual.\n👧 *Filhos:* Explique que Jesus cumpriu a profecia do servo que sofreu por nós. Pergunte: "Alguém já fez algo difícil por você sem que você merecesse?" Conecte ao amor de Jesus.\n👴 *Avós:* Avós frequentemente carregam o que a geração seguinte não consegue. Compartilhe como o serviço silencioso à família foi uma forma de adoração a Deus.`;
+
+  // EVANGELHOS
+  if (/nascimento de jesus/i.test(p) || /anuncio.*anjos.*pastores/i.test(p))
+    return `👫 *Casais:* José cuidou de Maria e do menino sem ser o pai biológico — modelo de amor de aliança que supera circunstância. Conversem sobre como vocês têm cuidado um do outro nas situações que não planejaram.\n👧 *Filhos:* Relembre o nascimento de Jesus com detalhes: a manjedoura, os pastores, os anjos. Pergunte: "Por que Deus escolheu nascer em um lugar tão simples?" Ensine que Deus se importa com pessoas simples.\n👴 *Avós:* Simão e Ana esperaram anos para ver o Messias. Compartilhe com os netos algo que você esperou em oração por anos e finalmente viu acontecer. Essa é a fé que eles precisam ver.`;
+  if (/batismo de jesus/i.test(p))
+    return `👫 *Casais:* "Este é o meu Filho amado, em quem me comprazo." O Pai declara amor publicamente antes de qualquer obra. Pratiquem afirmação verbal um ao outro — e aos filhos. Palavras de aprovação formam identidade.\n👧 *Filhos:* Deus disse do céu que amava o Filho. Diga hoje para seu filho com todas as letras: "Eu te amo e me alegro em ter você." Crianças que ouvem isso crescem seguras.\n👴 *Avós:* Quando foi a última vez que você disse ao seu neto que se orgulha dele? Uma palavra de um avô ecoa pela vida toda. Não espere uma ocasião especial.`;
+  if (/sermao do monte/i.test(p) || /bem aventurancas/i.test(p))
+    return `👫 *Casais:* "Bem-aventurados os pacificadores." O lar é o primeiro lugar onde a paz se pratica. Identifiquem um conflito pequeno que ficou sem resolução esta semana e tomem a iniciativa de pacificar.\n👧 *Filhos:* Leia as bem-aventuranças em linguagem simples. Pergunte: "Jesus disse que são felizes os que fazem o quê?" Faça uma lista com seus filhos e escolham uma para praticar na semana.\n👴 *Avós:* "Bem-aventurados os misericordiosos." Compartilhe uma história de misericórdia — quando você perdoou alguém difícil. O exemplo de avós misericordiosos molda famílias inteiras.`;
+  if (/pai nosso|orai assim/i.test(p))
+    return `👫 *Casais:* O Pai Nosso começa com "Pai nosso" — oração em comunidade, não individual. Orem juntos esta semana usando o Pai Nosso como estrutura. A oração a dois fortalece o lar como nenhuma outra prática.\n👧 *Filhos:* Ensine o Pai Nosso frase por frase, explicando o significado de cada parte. Crianças que aprendem a orar com os pais crescem com um recurso para a vida inteira.\n👴 *Avós:* Ore o Pai Nosso com os netos de mão dada. O ritual simples de orar juntos cria memórias afetivas que vinculam a fé às pessoas amadas.`;
+  if (/filho prodigo/i.test(p) || /filho.*perdido.*retorna/i.test(p))
+    return `👫 *Casais:* O pai viu o filho de longe e correu. Em um relacionamento, quem dá o primeiro passo no reencontro depois de uma briga? Pratiquem ser quem corre primeiro — não porque o outro merece, mas porque o amor não espera.\n👧 *Filhos:* O filho mais novo errou, voltou e foi recebido com festa. O filho mais velho ficou de fora com raiva. Pergunte: "Qual dos dois é mais difícil de ser?" Ensine que perdoar é mais libertador do que guardar rancor.\n👴 *Avós:* Há algum neto ou filho que está "longe" — emocionalmente, espiritualmente? Ore pelo retorno e mantenha a porta aberta. O coração de avô que não desiste é imagem do amor do Pai.`;
+  if (/bom samaritano/i.test(p))
+    return `👫 *Casais:* O samaritano gastou tempo, dinheiro e atenção com um estranho. Conversem sobre alguém fora da família que precisa do cuidado de vocês esta semana. Amor de casal que transborda para o próximo é sinal de saúde espiritual.\n👧 *Filhos:* "Quem foi o próximo?" — a pergunta de Jesus. Ajude seu filho a identificar quem é o "próximo" na escola, no bairro. Planeje um gesto simples de cuidado esta semana.\n👴 *Avós:* Mostre pelo exemplo: realize um gesto concreto de cuidado com alguém próximo — e convide o neto a participar. Serviço ensinado em ação forma caráter para sempre.`;
+
+  // ATOS / CARTAS
+  if (/pentecostes|derramamento.*espirito/i.test(p))
+    return `👫 *Casais:* O Espírito foi derramado sobre todos — homens e mulheres, jovens e velhos. Conversem sobre como cada um de vocês vive a presença do Espírito de forma diferente. A diversidade de dons no casal é riqueza, não conflito.\n👧 *Filhos:* "Os vossos filhos profetizarão" — Deus prometeu agir nas gerações mais jovens. Pergunte ao seu filho o que ele sente que Deus quer fazer através dele. Escute com atenção.\n👴 *Avós:* "Os vossos velhos sonharão sonhos." Que sonho você ainda tem para a família? Compartilhe com os netos — os sonhos dos mais velhos inspiram e orientam os mais jovens.`;
+  if (/amor.*paciente.*benigno|corinto.*13/i.test(p))
+    return `👫 *Casais:* Leia 1 Coríntios 13 substituindo "amor" pelo seu nome. Onde sente resistência? Conversem honestamente sobre qual característica do amor cada um precisa crescer mais na relação.\n👧 *Filhos:* Explique amor com exemplos práticos: paciente = esperar sem reclamar, benigno = ajudar sem precisar ganhar nada. Que exemplo de amor você viu esta semana em alguém da família?\n👴 *Avós:* "O amor nunca falha." Conte uma história de amor que resistiu ao tempo na sua família. O testemunho de amor duradouro dos avós é o maior antídoto contra o desânimo dos mais novos.`;
+  if (/efesios.*casamento|maridos.*amai.*esposas|mulheres.*maridos/i.test(p))
+    return `👫 *Casais:* "Amai vossas mulheres, como Cristo amou a igreja." O amor aqui é escolha e sacrifício, não sentimento. Cada um identifique um ato concreto de amor sacrificial que pode fazer pelo outro esta semana — sem esperar reciprocidade.\n👧 *Filhos:* Mostre o modelo de família de Efésios 5–6: pais que amam, filhos que honram, todos servindo uns aos outros. Essa ordem não é hierarquia de poder, mas de cuidado. Como cada um serve na família de vocês?\n👴 *Avós:* O amor de aliança dos avós é escola viva para os netos. Demonstre publicamente afeto e respeito pelo cônjuge — isso ensina mais sobre casamento do que qualquer palestra.`;
+  if (/instrui a crianca/i.test(p) || /crianca.*no.*caminho/i.test(p))
+    return `👫 *Casais:* Educar em conjunto exige alinhamento. Conversem sobre os valores que mais querem transmitir aos filhos este ano — e como cada um está reforçando esses valores no cotidiano.\n👧 *Filhos:* "Instrui a criança no caminho em que deve andar." Pergunte ao seu filho qual valor mais quer ter quando crescer. Ajude-o a dar um pequeno passo nessa direção esta semana.\n👴 *Avós:* Avós que ensinam são presença imprescindível. Que habilidade, hábito ou valor você pode ensinar pessoalmente ao neto neste mês — algo prático e concreto?`;
+
+  // APOCALIPSE
+  if (/visao do trono/i.test(p) || /adoracao.*celestial/i.test(p))
+    return `👫 *Casais:* "Santo, Santo, Santo" — a adoração é o centro da eternidade. Como é a vida de adoração de vocês como casal? Não apenas a ida ao culto, mas a postura de colocar Deus no centro das decisões da casa.\n👧 *Filhos:* No céu, todos adoram a Deus juntos. Incentive momentos de adoração familiar em casa — uma música, uma oração, um momento de gratidão. O hábito de adorar em família antecipa o que será eterno.\n👴 *Avós:* Compartilhe com os netos por que você adora a Deus — não por obrigação, mas por gratidão genuína. A adoração espontânea dos avós é uma das imagens mais marcantes que os netos levam para a vida.`;
+  if (/novas jerusalem|tudo novo|deus.*habitara/i.test(p))
+    return `👫 *Casais:* "Não haverá mais morte, nem pranto, nem clamor." Todas as dores do casamento — as perdas, as mágoas — são temporárias. Essa esperança muda como vivemos hoje. Conversem sobre o que a esperança da nova criação muda no cotidiano de vocês.\n👧 *Filhos:* Explique que Deus vai fazer tudo novo e lindo no final. Pergunte: "O que você acha que vai ter na nova criação?" Deixe a imaginação voar — e aproveite para falar sobre a esperança cristã.\n👴 *Avós:* "Enxugará toda lágrima dos seus olhos." Compartilhe com os netos a esperança que sustenta você diante das perdas da vida. Avós que morrem com esperança ensinam a gerar que virá a viver com ela.`;
+
+  // FALLBACK por livro/contexto
+  const livro = d.livro.toLowerCase();
+  const isAT = d.testamento === 'AT';
+
+  if (/genesis/i.test(livro))
+    return `👫 *Casais:* Gênesis é o livro das origens — da criação, da família, da aliança. Revisitem juntos o propósito original do casamento: comunhão, complementaridade e missão. O que Deus colocou como propósito no início ainda define o hoje.\n👧 *Filhos:* Gênesis mostra famílias reais, com erros e acertos. Converse com seu filho sobre como Deus age mesmo quando as pessoas erram. A família perfeita não existe — mas Deus é fiel em todas elas.\n👴 *Avós:* As genealogias de Gênesis mostram que as histórias são passadas de geração em geração. Que história de fé da sua família os netos precisam ouvir de você?`;
+  if (/salmo/i.test(livro))
+    return `👫 *Casais:* Os Salmos expressam toda emoção humana diante de Deus — alegria, dor, dúvida, gratidão. Leiam juntos este salmo em voz alta. Qual verso toca mais cada um de vocês hoje? Compartilhem.\n👧 *Filhos:* Os Salmos são orações cantadas. Escolham uma frase do salmo de hoje e transformem em uma cantoria simples com os filhos. Orar com ritmo e melodia é natural para crianças.\n👴 *Avós:* Qual salmo acompanhou você nas fases mais difíceis da vida? Compartilhe com os netos o versículo que foi âncora — e explique por quê.`;
+  if (/proverbios/i.test(livro))
+    return `👫 *Casais:* Provérbios fala de sabedoria para a vida prática. Identifiquem uma área da vida do casal — finanças, comunicação, tempo — onde precisam de mais sabedoria. Orem juntos pedindo a Deus essa sabedoria específica.\n👧 *Filhos:* Leia o provérbio do dia com a família na refeição. Pergunte: "O que isso significa para a escola, para os amigos, para em casa?" Sabedoria começa em conversa simples.\n👴 *Avós:* Você é um livro de provérbios vivo para a família. Escreva ou diga um conselho prático para cada neto neste mês — algo que você aprendeu na vida que eles ainda vão precisar muito.`;
+  if (/mateus|marcos|lucas|joao/i.test(livro))
+    return `👫 *Casais:* Jesus viveu em família — em Nazaré, com José e Maria, em comunidade. O lar de vocês pode ser o primeiro lugar onde o reino de Deus é visível. Que característica do ensino de Jesus mais precisa aparecer na vida doméstica de vocês?\n👧 *Filhos:* Jesus amava as crianças e as chamava para perto. Leia para seu filho um trecho onde Jesus interage com pessoas simples. Pergunte: "Como Jesus trata as pessoas?" Deixe que isso forme o caráter.\n👴 *Avós:* Simão e Ana esperaram décadas para ver o Messias — e reconheceram. Que discernimento espiritual você desenvolveu ao longo dos anos que pode ajudar os netos a enxergar o que Deus está fazendo?`;
+  if (/atos/i.test(livro))
+    return `👫 *Casais:* A primeira Igreja se reunia "de casa em casa." O lar de vocês pode ser lugar de comunidade e hospitalidade. Convidem alguém para jantar este mês — e orem juntos antes que a pessoa chegue.\n👧 *Filhos:* A Igreja nasceu com pessoas de idades diferentes, famílias diferentes, culturas diferentes. Ajude seu filho a entender que a comunidade cristã é uma família escolhida — e que ele tem irmãos em todo o mundo.\n👴 *Avós:* Atos mostra fé que passa de pessoa para pessoa. Que gesto de fé concreto você pode fazer para que seus netos vejam que o Deus de Atos ainda age hoje?`;
+
+  // Fallback genérico AT/NT
+  if (isAT)
+    return `👫 *Casais:* A passagem de hoje vem do Antigo Testamento — onde Deus age na história de famílias imperfeitas. Leiam juntos ${d.livroAbrev} ${d.capitulos} e identifiquem como Deus conduz, protege e usa as pessoas que confiam nele. O que isso fala para a família de vocês?\n👧 *Filhos:* Converse com seus filhos sobre a história de hoje: quem são os personagens, o que Deus fez, o que podemos aprender. A Bíblia não é só para adultos — é a história da família de Deus da qual fazemos parte.\n👴 *Avós:* Compartilhe com os netos o que a passagem de hoje ensina sobre fidelidade, coragem ou obediência. Um avô que lê e aplica a Bíblia mostra que ela é relevante em qualquer idade.`;
+
+  return `👫 *Casais:* Leiam juntos ${d.livroAbrev} ${d.capitulos} e identifiquem o que Deus está dizendo para o lar de vocês. Há uma promessa, um aviso ou um convite? Orem um pelo outro com base no que encontrarem.\n👧 *Filhos:* Conte a perícope de hoje como uma história para seus filhos. Pergunte: "O que Deus faz nessa história? O que podemos fazer igual na nossa família?" Torne a Palavra parte do diálogo cotidiano.\n👴 *Avós:* A fé transmitida de avós para netos é o legado mais duradouro. Compartilhe como a passagem de hoje já foi real na sua vida — e como pode ser real na vida dos seus netos.`;
+}
+
 // ─── WhatsApp Share helpers ────────────────────────────────────────
 
 function formatarDataCompartilhamento(): string {
@@ -4952,30 +5065,38 @@ function DiaModal({ d, onClose, innerRef }: { d: DiaDevocional; onClose: () => v
           </div>
         </div>
 
-        {/* Reflexao e Oracao */}
+        {/* Reflexao, Familia e Oracao */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginBottom: 4 }}>
           {[
             {
               icon: <BookOpen size={14} />,
               label: 'Reflexao',
               text: gerarReflexao(d),
+              accentColor: cor,
+            },
+            {
+              icon: <Heart size={14} />,
+              label: 'Familia',
+              text: gerarFamilia(d),
+              accentColor: 'rgba(255,120,180,1)',
             },
             {
               icon: <Moon size={14} />,
               label: 'Oracao',
               text: gerarOracao(d),
+              accentColor: cor,
             },
-          ].map(({ icon, label, text }) => (
+          ].map(({ icon, label, text, accentColor }) => (
             <div key={label} style={{
               display: 'flex', gap: 12,
-              background: 'rgba(255,255,255,0.05)',
-              border: `1px solid rgba(255,255,255,0.14)`,
+              background: label === 'Familia' ? 'rgba(255,120,180,0.06)' : 'rgba(255,255,255,0.05)',
+              border: `1px solid ${label === 'Familia' ? 'rgba(255,120,180,0.22)' : 'rgba(255,255,255,0.14)'}`,
               borderRadius: 14, padding: 'clamp(12px,3vw,18px) clamp(14px,3.5vw,20px)',
             }}>
-              <div style={{ color: cor, marginTop: 2, flexShrink: 0 }}>{icon}</div>
+              <div style={{ color: accentColor, marginTop: 2, flexShrink: 0 }}>{icon}</div>
               <div>
-                <div style={{ fontSize: 'clamp(10px,2.5vw,11px)', color: cor, fontWeight: 900, letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 6 }}>{label}</div>
-                <div style={{ fontSize: 'clamp(14px,3.2vw,16px)', color: 'rgba(255,255,255,0.92)', lineHeight: 1.8 }}>{text}</div>
+                <div style={{ fontSize: 'clamp(10px,2.5vw,11px)', color: accentColor, fontWeight: 900, letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 6 }}>{label}</div>
+                <div style={{ fontSize: 'clamp(14px,3.2vw,16px)', color: 'rgba(255,255,255,0.92)', lineHeight: 1.8, whiteSpace: 'pre-line' }}>{text}</div>
               </div>
             </div>
           ))}
