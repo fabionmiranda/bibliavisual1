@@ -5828,6 +5828,274 @@ function gerarFamilia(d: DiaDevocional): string {
   if (/israel lamenta.*morte de moises/i.test(p))
     return `👫 *Casais:* "Israel chorou a Moisés por trinta dias." O luto pela morte de um líder é honra — não fraqueza. Como casal, permitem e honram o luto — por perdas, por pessoas, por sonhos que não se cumpriram? Um lar que sabe chorar junto é um lar emocionalmente saudável.\n👧 *Filhos:* "Nunca mais houve em Israel profeta como Moisés — a quem o SENHOR conhecia face a face." Moisés foi insubstituível — e mesmo assim Josué prosseguiu. Ensine seus filhos que certas perdas não têm substituto — e ainda assim a vida e a missão continuam. Como você lida com perdas que não podem ser "repostas"?\n👴 *Avós:* "Moisés era de 120 anos quando morreu — seus olhos não haviam escurecido e sua força não havia se esvaído." Uma vida até o fim com clareza e vigor. Compartilhe com os netos o que você faz para manter clareza espiritual e propósito até o fim — não apenas saúde física, mas visão e força interior. O fim bem vivido é o testemunho mais poderoso que existe.`;
 
+  // 254. Comissão de Josué
+  if (/comissao.*josue|deus comissao.*josue/i.test(p))
+    return `👫 *Casais:* Deus disse a Josué três vezes: "Sê forte e corajoso." A liderança em casa exige coragem renovada — Deus não promete ausência de medo, promete companhia. Que medo um de vocês carrega hoje? Orem citando Js 1.9 um para o outro.\n👧 *Filhos:* A receita da coragem em Josué 1 foi "medita neste livro de dia e de noite". Crianças corajosas crescem onde a Palavra é familiar. Leiam Josué 1.9 antes do filho dormir esta semana.\n👴 *Avós:* Josué assumiu liderança depois de Moisés — herdou peso e missão. Que liderança espiritual você ainda exerce na família mesmo após "se aposentar"? Avós nunca se aposentam da fé.`;
+
+  // 255. Espiões em Jericó - Raabe
+  if (/espioes.*jerico|raabe/i.test(p))
+    return `👫 *Casais:* Raabe escondeu os espiões — uma mulher de fora da aliança protegeu o povo de Deus. Em um casamento, sempre há "Raabe" do lado: pessoas inesperadas que Deus usa para abençoar vocês. Quem foi a "Raabe" do casamento de vocês? Agradeçam por essa pessoa.\n👧 *Filhos:* Raabe foi salva pelo cordão escarlate na janela — uma cor que aponta para o sangue de Cristo. Ensine seus filhos que a fé sempre tem um "sinal exterior" — algo que se vê. Como a fé de vocês aparece na rotina da casa?\n👴 *Avós:* Raabe entrou na genealogia de Jesus. Uma decisão de fé pode redirecionar gerações inteiras. Compartilhe com os netos uma decisão sua que mudou o rumo da família.`;
+
+  // 256. Travessia do Jordão
+  if (/israel atravessa jordao|travessia.*jordao/i.test(p))
+    return `👫 *Casais:* Os sacerdotes pisaram primeiro nas águas — antes do milagre veio o passo de fé. No casamento, há decisões que exigem "pisar antes de ver". Qual passo de fé vocês precisam dar como casal antes da resposta aparecer?\n👧 *Filhos:* O Jordão se abriu na hora da cheia — Deus age quando as circunstâncias estão piores. Pergunte ao seu filho: "Você está enfrentando uma cheia agora?" Ore com ele pedindo a abertura de Deus.\n👴 *Avós:* Israel atravessou em terra seca porque Deus segurou as águas. Compartilhe com os netos uma travessia da sua vida em que Deus segurou as "águas" para você passar seco.`;
+
+  // 257. Doze pedras em Gilgal
+  if (/doze pedras|pedras.*gilgal/i.test(p))
+    return `👫 *Casais:* As doze pedras eram para os filhos perguntarem "o que significam estas pedras?" Que "pedras de memorial" vocês têm em casa — fotos, objetos, datas — que contam o que Deus fez? Construam um lugar de memória na casa.\n👧 *Filhos:* As pedras foram tiradas do meio do Jordão — do lugar do milagre. Crianças aprendem com objetos concretos. Junte com seu filho um objeto que represente algo que Deus fez pela família e guarde como "pedra de Gilgal".\n👴 *Avós:* Avós são os guardiões das histórias. Conte ao neto a história das "pedras" da sua vida — os marcos onde Deus interveio. Sem você contar, a próxima geração esquece.`;
+
+  // 261. Jericó destruída
+  if (/jerico levado e destruiu|jerico.*destruida|queda.*jerico/i.test(p))
+    return `👫 *Casais:* Jericó caiu pela obediência, não pela força. Sete dias de marcha silenciosa antes do grito final. Identifiquem uma "muralha" no relacionamento de vocês que pede persistência silenciosa em oração, não estratégia humana.\n👧 *Filhos:* Todo o povo marchou junto — crianças incluídas. A vitória foi coletiva. Que "Jericó" a família está cercando juntos em oração? Envolva os filhos na batalha espiritual da casa.\n👴 *Avós:* Raabe foi salva com toda a família por causa do fio escarlate. A fé de uma pessoa cobre uma casa inteira. Sua fé é o "fio escarlate" pendurado para os filhos dos filhos.`;
+
+  // 263. Pecado de Acã
+  if (/pecado de aca|aca.*punicao/i.test(p))
+    return `👫 *Casais:* O pecado oculto de Acã trouxe derrota a toda Israel. Em um casamento, segredos guardados afetam a casa toda. Há algo escondido entre vocês que precisa vir à luz para a vitória voltar?\n👧 *Filhos:* Acã enterrou ouro debaixo da tenda — e a família toda pagou. Ensine seus filhos que pecado escondido cresce e contamina. A confissão protege quem amamos.\n👴 *Avós:* A casa de Acã foi consumida porque o pecado não foi tratado a tempo. Compartilhe com os netos como confissão e arrependimento livraram sua família em algum momento.`;
+
+  // 268. Reis do norte derrotados
+  if (/unido reis.*norte.*derrotou|reis.*norte.*canaa/i.test(p))
+    return `👫 *Casais:* Mesmo após Jericó e Ai, ainda havia coalizões inimigas. No casamento, vitórias não eliminam batalhas futuras. Reconheçam vitórias passadas para enfrentar as próximas com fé.\n👧 *Filhos:* Josué não parou após sucessos iniciais. Ensine seus filhos que perseverança é virtude — vitórias parciais não são o fim da missão.\n👴 *Avós:* A guerra durou anos. Compartilhe com os netos uma luta que durou muito tempo e como Deus sustentou você até o fim.`;
+
+  // 285. Conquista incompleta
+  if (/fracasso.*completo conquista|conquista incompleta/i.test(p))
+    return `👫 *Casais:* Israel não expulsou todos os habitantes — e isso virou armadilha futura. No casamento, "tolerâncias" pequenas com pecados se tornam laços grandes. Que "obediência parcial" precisa virar obediência plena?\n👧 *Filhos:* O que não é tratado na infância vira problema na adolescência. Ensine que disciplina amorosa hoje evita dores amanhã.\n👴 *Avós:* A geração seguinte sofreu pelas concessões da anterior. Que padrão de família você quer interromper para que seus netos não herdem?`;
+
+  // 290. Débora e Baraque
+  if (/debora.*baraque|debora/i.test(p))
+    return `👫 *Casais:* Débora liderou enquanto Baraque hesitou. Em um casamento, há momentos em que um precisa avançar quando o outro tem medo. Honrem a coragem do outro sem ferir a dignidade.\n👧 *Filhos:* Débora era juíza, mãe em Israel. Ensine seus filhos que liderança feminina é dom de Deus — e que tanto homens quanto mulheres podem ouvir e seguir Deus.\n👴 *Avós:* Débora era "mãe em Israel" — função espiritual de cuidar de toda uma nação. Avós são "mães e pais" de várias famílias por extensão. Quem precisa do seu cuidado espiritual hoje?`;
+
+  // 292. Chamado de Gideão
+  if (/chamado.*gideao|gideao.*chamado/i.test(p))
+    return `👫 *Casais:* Deus chamou Gideão de "varão valente" enquanto ele se escondia no lagar. Deus vê quem somos pela fé, não pela aparência atual. Como cônjuges, têm chamado o outro pelo que Deus diz dele ou pelo que veem hoje?\n👧 *Filhos:* Gideão era o menor da menor família. Deus escolhe os menores para mostrar Sua glória. Ensine seu filho que tamanho não define chamado.\n👴 *Avós:* Gideão precisou de confirmações. Avós sábios não desprezam dúvidas — orientam com paciência. Quem precisa da sua paciência espiritual hoje?`;
+
+  // 295. Trezentos de Gideão
+  if (/trezentos|gideao.*surpreende.*derrota/i.test(p))
+    return `👫 *Casais:* Deus reduziu o exército de 32 mil para 300 — para que ninguém creditasse a vitória a si. No casamento, há vitórias que Deus dá quando vocês estão "reduzidos". A pequenez é palco da glória de Deus.\n👧 *Filhos:* Trezentos com tochas, cântaros e trombetas venceram um exército. Ensine seu filho que ferramentas pequenas nas mãos certas mudam batalhas.\n👴 *Avós:* Compartilhe com os netos uma vitória da sua vida que veio quando os recursos eram mínimos. Deus se especializa em fazer muito com pouco.`;
+
+  // 308. Nascimento de Sansão
+  if (/nascimento.*sansao|sansao.*nascimento|profecia.*sansao/i.test(p))
+    return `👫 *Casais:* O anjo apareceu primeiro à esposa de Manoá — e ela contou ao marido. Deus às vezes fala primeiro a um cônjuge sobre algo que envolve os dois. Honrem quando o outro recebe direção espiritual.\n👧 *Filhos:* Sansão foi nazireu desde o ventre. Pais consagram filhos antes do nascimento. Você já dedicou seu filho ao Senhor formalmente? Não é tarde.\n👴 *Avós:* Manoá perguntou: "Como criaremos o menino?" Avós perguntam: "Como ajudo a criar este neto?" Pergunte aos pais que tipo de apoio precisam.`;
+
+  // 312. Sansão e Dalila
+  if (/sansao e dalila|sansao.*dalila/i.test(p))
+    return `👫 *Casais:* Sansão revelou o segredo a quem três vezes provou ser traidora. No casamento, há padrões que se repetem porque escolhemos não ver. Que padrão repetitivo vocês precisam confrontar?\n👧 *Filhos:* Sansão era forte por fora e fraco por dentro. Ensine seus filhos que caráter vale mais que talento — e que cair no mesmo erro várias vezes exige nova decisão.\n👴 *Avós:* Sansão perdeu olhos, força e dignidade — mas Deus o restaurou no fim. Nenhum erro precisa ser o ponto final. Compartilhe um retorno de Deus na sua vida.`;
+
+  // 316. Família de Elimeleque vai a Moabe
+  if (/familia.*elimeleque|elimeleque.*moabe/i.test(p))
+    return `👫 *Casais:* Elimeleque saiu de Belém ("casa de pão") por causa da fome. Crises econômicas testam decisões espirituais. Têm tomado decisões financeiras a partir da fé ou apenas do medo?\n👧 *Filhos:* A família saiu, mas a história não terminou em Moabe. Ensine seus filhos que decisões erradas dos pais não condenam a próxima geração — Deus restaura.\n👴 *Avós:* Elimeleque morreu fora da terra. Avós, há decisões suas que precisam ser refeitas em oração com a família? Nunca é tarde para "voltar a Belém".`;
+
+  // 317. Noemi e nora moabita
+  if (/noemi.*nora|teu povo.*meu povo/i.test(p))
+    return `👫 *Casais:* "O teu povo é meu povo e o teu Deus é meu Deus." A aliança de Rute com Noemi modela compromisso. Como casal, têm renovado verbalmente o "o teu povo é meu povo" quando as famílias de origem causam tensão?\n👧 *Filhos:* Rute escolheu Deus por causa de Noemi. Ensine seus filhos que o testemunho de uma vida atrai mais do que palavras. Como a fé da família tem atraído outros?\n👴 *Avós:* Noemi voltou amargurada — mas Deus a usou para gerar Davi. Compartilhe com os netos um período de amargura seu em que Deus surpreendeu com restauração.`;
+
+  // 318. Rute encontra Boaz
+  if (/rute encontra boaz|rute.*boaz/i.test(p))
+    return `👫 *Casais:* Rute trabalhava nos campos e Boaz ordenou favor especial para ela. Trabalho fiel atrai providência. Como vocês têm honrado o trabalho um do outro?\n👧 *Filhos:* Boaz cumprimentou os trabalhadores com "O Senhor seja convosco." Ensine seus filhos a saudar com bênção — palavras que abençoam moldam ambientes.\n👴 *Avós:* Boaz era homem mais velho que viu valor em uma jovem viúva estrangeira. Avós veem dignidade onde a sociedade ignora. Quem precisa do seu olhar de honra esta semana?`;
+
+  // 320. Negociação na porta
+  if (/negociacao|boaz compra|porta.*boaz/i.test(p))
+    return `👫 *Casais:* Boaz fez tudo publicamente, com testemunhas. Decisões importantes precisam de testemunhas. Que decisão de vocês precisa ser feita publicamente em vez de oculta?\n👧 *Filhos:* O remidor mais próximo recusou porque "perderia sua herança". Ensine seus filhos que medo de perder bens nos faz perder bênçãos eternas.\n👴 *Avós:* Boaz não economizou em resgatar. Compartilhe com os netos uma vez em que você pagou caro para fazer o certo.`;
+
+  // 324. Nascimento de Samuel
+  if (/nascimento de samuel|samuel.*nascimento/i.test(p))
+    return `👫 *Casais:* Ana orou em silêncio com os lábios se movendo — Eli pensou que estava bêbada. Oração profunda nem sempre é entendida pelos religiosos. Têm orado juntos com profundidade, mesmo que pareça estranho aos outros?\n👧 *Filhos:* Ana devolveu Samuel ao Senhor após o desmame. Filhos são empréstimos, não posses. Como vocês têm ensinado os filhos a pertencerem primeiro a Deus?\n👴 *Avós:* Ana visitava Samuel todos os anos com uma túnica nova. Compartilhe com os netos como você acompanha alguém à distância com gestos consistentes de amor.`;
+
+  // 325. Oração de Ana
+  if (/oracao.*ana|cantico.*ana/i.test(p))
+    return `👫 *Casais:* "O Senhor empobrece e enriquece, abate e exalta." A teologia de Ana abraça os altos e baixos. Têm uma teologia robusta o suficiente para sustentar o casamento nos vales?\n👧 *Filhos:* Ana cantou depois de entregar o filho — sua alegria não dependia de tê-lo perto. Ensine seus filhos que alegria mais profunda vem de dar, não de reter.\n👴 *Avós:* O cântico de Ana antecipou o cântico de Maria. Mães e avós piedosas moldam Igrejas. Que oração sua marcou a família para gerações?`;
+
+  // 328. Vocação de Samuel
+  if (/vocacao de samuel|fala senhor|samuel.*chamado/i.test(p))
+    return `👫 *Casais:* "Fala, Senhor, porque teu servo ouve." Samuel aprendeu com Eli a responder a Deus. Como casal, têm criado espaço para ouvir Deus em silêncio?\n👧 *Filhos:* Deus chamou Samuel sendo criança. Não subestime o que Deus pode falar pelo seu filho. Pergunte: "Você sentiu Deus falar com você esta semana?"\n👴 *Avós:* Eli, mesmo decadente, ensinou Samuel a discernir a voz de Deus. Mesmo nos fracassos, avós podem ensinar coisas essenciais. Que sabedoria você ainda precisa transmitir?`;
+
+  // 342. Davi ungido como rei
+  if (/davi ungido.*rei|davi.*unido/i.test(p))
+    return `👫 *Casais:* "O homem vê a aparência, mas o Senhor vê o coração." No casamento, têm visto o coração um do outro ou apenas as aparências do dia?\n👧 *Filhos:* Davi era o mais novo, esquecido no campo. Filhos "menos visíveis" também são chamados. Pergunte ao filho mais quieto: "Qual sonho Deus colocou em você?"\n👴 *Avós:* Jessé não chamou Davi para a unção — quase ficou de fora. Avós, quem da família vocês podem "chamar do campo" para receber bênção que estaria sendo esquecida?`;
+
+  // 344. Davi e Golias
+  if (/davi e golias|davi.*golias/i.test(p))
+    return `👫 *Casais:* Davi confrontou Golias com cinco pedras e uma funda — recursos pequenos com fé grande. Que "gigante" o casal de vocês enfrenta? Vão com os recursos que têm, não com os que faltam.\n👧 *Filhos:* "A batalha é do Senhor." Ensine seus filhos a nomear seus "gigantes" e entregá-los a Deus em oração concreta. Liste com seu filho 3 gigantes desta semana.\n👴 *Avós:* Davi rejeitou a armadura de Saul. Compartilhe com os netos como você aprendeu a ser fiel ao chamado de Deus para sua vida em vez de imitar outros.`;
+
+  // 347. Davi e Jônatas
+  if (/davi e jonatas|amizade.*davi.*jonatas/i.test(p))
+    return `👫 *Casais:* Jônatas amou Davi como à própria alma — abrindo mão do trono. No casamento, há momentos em que um abre mão para o outro brilhar. Que renúncia recente um fez pelo outro?\n👧 *Filhos:* Jônatas e Davi fizeram aliança formal. Ensine seus filhos a cultivar amizades sérias e leais, não relacionamentos superficiais.\n👴 *Avós:* A amizade entre Jônatas e Davi marcou famílias por gerações (Mefibosete!). Compartilhe uma amizade sua que beneficiou seus filhos e netos.`;
+
+  // 351. Davi poupa Saul
+  if (/davi poupa.*saul.*vida|capa.*saul/i.test(p))
+    return `👫 *Casais:* Davi cortou a capa de Saul, mas se arrependeu. Pequenas vinganças no casamento podem ferir a alma do agressor. Que "capa" um cortou no outro nesta semana?\n👧 *Filhos:* Davi não retaliou apesar da injustiça. Ensine seus filhos que não retaliar é coragem maior do que revidar. Deus defende quem honra a Sua ordem.\n👴 *Avós:* Davi disse: "Não estenderei minha mão contra o ungido do Senhor." Compartilhe uma vez em que você se conteve de agir mesmo tendo razão.`;
+
+  // 352. Abigail e Nabal
+  if (/abigail|morte de samuel.*davi.*esposa de nabal/i.test(p))
+    return `👫 *Casais:* Abigail evitou um massacre com sabedoria e ação rápida. Mulheres sábias salvam casas. Têm valorizado a sabedoria um do outro nas crises?\n👧 *Filhos:* Nabal era tolo de nome e de fato. Ensine seus filhos que o caráter dos pais e cônjuges é mais importante que riqueza.\n👴 *Avós:* Abigail trouxe pão, vinho e palavras certas no momento certo. Avós, quem na família precisa de uma "Abigail" hoje — alguém com palavra certa?`;
+
+  // 370. Davi traz a arca
+  if (/davi traz.*arca|arca.*jerusalem/i.test(p))
+    return `👫 *Casais:* Davi dançou diante do Senhor com todas as forças, sem se importar com o que parecia. Adorem juntos sem vergonha — em casa, na igreja. A alegria espiritual une o casal.\n👧 *Filhos:* A Arca representava a presença de Deus. Crianças sentem quando Deus é central na casa. Como vocês trazem "a Arca" para o lar — adoração, Palavra, oração?\n👴 *Avós:* A primeira tentativa de trazer a Arca falhou porque ignoraram a forma de Deus. Compartilhe com os netos uma vez em que boas intenções precisaram ser corrigidas pela Palavra.`;
+
+  // 372. Aliança davídica
+  if (/alianca.*davi|deus.*alianca.*davi/i.test(p))
+    return `👫 *Casais:* Davi queria construir casa para Deus — Deus construiu casa para Davi. Quando servimos a Deus, Ele faz mais por nós do que nós por Ele. Têm visto isso no casamento?\n👧 *Filhos:* A promessa do trono eterno apontava para Jesus. Ensine seus filhos que Deus cumpre promessas em séculos, não dias. A paciência é fé em ação.\n👴 *Avós:* Davi se assentou diante do Senhor e orou. Compartilhe com os netos o que você ora quando entra na presença de Deus em silêncio.`;
+
+  // 376. Bondade de Davi a Mefibosete
+  if (/bondade.*mefibosete|mefibosete/i.test(p))
+    return `👫 *Casais:* Davi honrou o filho do amigo morto. Lembrem-se de pessoas das fases anteriores do casamento que ajudaram vocês. Como honrar essas pessoas hoje?\n👧 *Filhos:* Mefibosete era coxo dos dois pés — não tinha como retribuir. Ensine seus filhos a fazer o bem a quem não pode retribuir.\n👴 *Avós:* Davi cumpriu uma aliança feita anos antes. Avós lembram de promessas feitas há décadas. Há alguma promessa que precisa ser cumprida agora?`;
+
+  // 378. Davi e Bate-Seba
+  if (/davi.*adulterio.*bate-seba|davi comete adulterio/i.test(p))
+    return `👫 *Casais:* Davi viu, desejou, buscou, encobriu — cadeia clássica do pecado. No casamento, vigiem o que entra pelos olhos. Que filtros vocês têm para proteger a aliança?\n👧 *Filhos:* O pecado de Davi começou por estar onde não devia estar — em casa quando deveria estar na guerra. Ensine seus filhos a estar onde Deus mandou. Lugar errado abre porta para tentação.\n👴 *Avós:* O pecado de Davi marcou gerações da família — Amnom, Absalão. Compartilhe com os netos a importância de tratar pecados antes que se multipliquem.`;
+
+  // 379. Natã confronta Davi
+  if (/nata condena|nata.*confronta|tu es o homem/i.test(p))
+    return `👫 *Casais:* Natã usou parábola — confrontar com sabedoria abre o coração. Como casal, têm aprendido a confrontar um ao outro com graça e verdade?\n👧 *Filhos:* Davi respondeu: "Pequei contra o Senhor." Ensine seus filhos a admitir erros rápido. Confissão liberta; defesa aprisiona.\n👴 *Avós:* Natã arriscou a vida para falar a verdade ao rei. Avós, falar verdade aos filhos adultos é arriscado — mas necessário. Tenham a coragem de Natã.`;
+
+  // 385. Davi foge de Jerusalém
+  if (/davi foge.*jerusalem/i.test(p))
+    return `👫 *Casais:* Davi subiu o Monte das Oliveiras chorando, descalço, coberto. No casamento, há momentos de lágrimas e humilhação que devem ser atravessados juntos.\n👧 *Filhos:* Davi disse: "Se eu achar graça aos olhos do Senhor, ele me fará voltar." Ensine seus filhos a confiar em Deus quando perdem tudo.\n👴 *Avós:* Em meio à fuga, Davi adorou. Compartilhe com os netos um momento de fuga ou perda em que você ainda conseguiu adorar.`;
+
+  // 390. Defeat e morte de Absalão
+  if (/defeat.*morte de absalao|morte de absalao/i.test(p))
+    return `👫 *Casais:* "Meu filho Absalão! Quem me dera ter morrido em teu lugar!" O amor de pai persiste mesmo na rebelião. Vocês têm amor que sobrevive às decepções com filhos?\n👧 *Filhos:* Absalão se prendeu pelo cabelo do seu orgulho. Ensine seus filhos que aquilo que mais valorizamos pode se tornar nossa armadilha. Que vaidade precisa ser cortada?\n👴 *Avós:* Davi chorou por dias pelo filho perdido. Compartilhe com os netos como você lidou com a dor de ver alguém amado se autodestruir.`;
+
+  // 408. Sabedoria de Salomão (Gibeão)
+  if (/de salomao sabedoria|salomao.*sabedoria/i.test(p))
+    return `👫 *Casais:* Salomão pediu sabedoria, não riquezas. O que vocês mais pediriam se Deus oferecesse um único pedido? Conversem honestamente sobre prioridades.\n👧 *Filhos:* Salomão era jovem quando assumiu a coroa — pediu ajuda. Ensine seus filhos a reconhecer limites e pedir sabedoria a Deus, não fingir que sabem tudo.\n👴 *Avós:* Compartilhe com os netos uma decisão da sua vida em que sabedoria valeu mais do que recursos materiais.`;
+
+  // 414. Dedicação do templo
+  if (/dedicacao do templo|salomao.*dedica.*templo/i.test(p))
+    return `👫 *Casais:* Salomão orou pelos estrangeiros que viriam ao templo. A casa de oração tem coração missional. A casa de vocês acolhe quem é "estrangeiro" à fé?\n👧 *Filhos:* A nuvem da glória encheu o templo. Crianças precisam ver "glória" em casa — momentos em que Deus é perceptível. Marquem esses momentos.\n👴 *Avós:* Salomão dedicou o templo com sacrifício extravagante. Avós, qual foi sua "dedicação" — o momento em que vocês entregaram tudo a Deus formalmente?`;
+
+  // 420. Erros de Salomão
+  if (/salomao erros|salomao.*esposas/i.test(p))
+    return `👫 *Casais:* As mulheres estrangeiras desviaram o coração de Salomão — coração desviado vira casa desviada. Vigiem o que entra no coração através das relações.\n👧 *Filhos:* Salomão começou bem e terminou mal — sabedoria sem fidelidade decai. Ensine seus filhos que começar bem não basta — é preciso terminar bem.\n👴 *Avós:* Compartilhe com os netos a importância de vigiar o coração até o fim da vida. Salomão não vigiou — não cometam o mesmo erro.`;
+
+  // 433. Elias e a seca
+  if (/elias prediz.*seca|elias.*seca/i.test(p))
+    return `👫 *Casais:* Elias orou para parar a chuva e depois para voltar. Cônjuges que oram juntos movem o céu. Têm orado por situações específicas como casal?\n👧 *Filhos:* Os corvos alimentaram Elias no riacho de Querite. Ensine seus filhos que Deus tem provisão criativa para os fiéis.\n👴 *Avós:* A viúva de Sarepta foi sustentada milagrosamente. Compartilhe com os netos uma vez em que Deus os sustentou de forma inesperada.`;
+
+  // 435. Elias no Carmelo
+  if (/elias.*triunfo.*sacerdotes de baal|elias.*baal|monte carmelo/i.test(p))
+    return `👫 *Casais:* "Até quando coxeareis entre dois pensamentos?" No casamento, decisões espirituais não admitem meio termo. Em que área vocês ainda "coxeam"?\n👧 *Filhos:* Elias estava sozinho contra 450. Ensine seus filhos que minoria com Deus é maioria. Não precisa medo de ser diferente na escola.\n👴 *Avós:* O fogo caiu depois da oração simples. Compartilhe com os netos uma oração simples sua que Deus respondeu com poder visível.`;
+
+  // 437. Elias foge de Jezabel
+  if (/elias foge de jezabel|elias.*horebe/i.test(p))
+    return `👫 *Casais:* Após a vitória maior, Elias quis morrer. Esgotamento espiritual atinge mesmo após o sucesso. Como casal, têm reconhecido o cansaço um do outro?\n👧 *Filhos:* Deus cuidou de Elias com comida, sono e perguntas — não com repreensão. Ensine que cuidar bem do corpo é cuidar do espírito.\n👴 *Avós:* Deus falou em cicio suave. Compartilhe com os netos como você aprendeu a ouvir Deus no silêncio em meio aos ruídos da vida.`;
+
+  // 439. Vinha de Nabote
+  if (/vinhedo de nabote|nabote/i.test(p))
+    return `👫 *Casais:* Acabe cobiçou a herança de Nabote — e Jezabel "resolveu" com injustiça. No casamento, cônjuges podem facilitar pecados um do outro. Vigiem o papel que exercem mutuamente.\n👧 *Filhos:* Nabote disse: "Longe esteja de mim dar a ti a herança de meus pais." Ensine seus filhos a guardar o que é sagrado mesmo sob pressão.\n👴 *Avós:* Compartilhe com os netos como você protegeu uma herança espiritual ou material da família contra pressões externas.`;
+
+  // 444. Eliseu sucede Elias
+  if (/eliseu sucede.*elias|carro de fogo|eliseu.*manto/i.test(p))
+    return `👫 *Casais:* Eliseu pediu porção dobrada do espírito. Há heranças espirituais que se pedem. Têm pedido a Deus para multiplicar o que viram nos pais e avós?\n👧 *Filhos:* Eliseu viu o carro de fogo — viu o que outros não viam. Ensine seus filhos que há uma realidade espiritual maior que a visível. Orem para ver.\n👴 *Avós:* Elias passou o manto a Eliseu. Avós, que "manto" — chamado, dom, ministério — vocês passariam para um neto? Identifiquem.`;
+
+  // 471. Reforma de Ezequias
+  if (/ezequias.*reinado|ezequias.*reforma/i.test(p))
+    return `👫 *Casais:* Ezequias quebrou até a serpente de bronze de Moisés — uma coisa boa que virou ídolo. Que "coisas boas" no casamento de vocês podem ter virado ídolos?\n👧 *Filhos:* Ezequias removeu os altos. Ensine seus filhos que adoração centralizada importa — Deus é adorado como Ele pediu, não como queremos.\n👴 *Avós:* Ezequias começou reforma como jovem rei. Avós, vocês podem inspirar netos a iniciarem reformas espirituais agora, sem esperar a velhice.`;
+
+  // 476. Josias encontra a Lei
+  if (/josias reina|josias.*judá/i.test(p))
+    return `👫 *Casais:* Josias rasgou as vestes ao ouvir a Lei. Quando foi a última vez que vocês foram fundamente tocados por um texto bíblico? Procurem essa experiência juntos.\n👧 *Filhos:* Josias começou a reforma aos 16 anos. Ensine seus filhos que idade não impede chamado. Adolescentes podem mover famílias.\n👴 *Avós:* A Lei estava perdida no próprio templo. Avós, há "Bíblia perdida" na sua casa — versículos que sustentaram você que precisam ser redescobertos por netos?`;
+
+  // 578. Neemias ora
+  if (/neemias ora|neemias.*oracao/i.test(p))
+    return `👫 *Casais:* Neemias jejuou e orou por dias antes de agir. No casamento, oração precede decisão. Têm tomado decisões grandes com preparação espiritual ou sob impulso?\n👧 *Filhos:* Neemias chorou pelos muros de Jerusalém. Ensine seus filhos a se importar com coisas maiores que conforto pessoal. O que faz seu filho chorar?\n👴 *Avós:* Neemias era copeiro do rei — posição segura. Compartilhe com os netos uma vez em que você arriscou conforto por uma causa maior.`;
+
+  // 580. Conspirações frustradas
+  if (/conspiracoes hostis|sambala.*tobias|espada.*muro/i.test(p))
+    return `👫 *Casais:* "Construíamos com uma mão e empunhávamos a arma com a outra." No casamento, vocês precisam tanto construir quanto defender. Onde precisam mais "espada"? Onde precisam mais "colher"?\n👧 *Filhos:* Os trabalhadores foram divididos em famílias, cada uma em seu trecho. Ensine seus filhos que cada um tem um "trecho" para construir na vida.\n👴 *Avós:* Os inimigos zombaram. Compartilhe com os netos como você lidou com zombaria quando começou algo importante para Deus.`;
+
+  // 595. Se perecer perecerei
+  if (/ester concorda|se perecer|ester.*help/i.test(p))
+    return `👫 *Casais:* "Se perecer, pereci." Mardoqueu disse: "Quem sabe se para tal tempo chegaste ao reino?" Vocês têm pensado por que estão na posição de vida atual? Há um propósito divino.\n👧 *Filhos:* Ester arriscou tudo pelos seus. Ensine seus filhos que privilégio é responsabilidade, não posse. Para que Deus lhes deu o que têm?\n👴 *Avós:* Mardoqueu criou Ester como pai — e o investimento moldou uma rainha. Avós, o investimento na geração seguinte gera frutos que vocês nem imaginam.`;
+
+  // 604. Vicissitudes de Jó
+  if (/vicissitudes.*jo|jo.*sofrimentos|jo.*ja sabes/i.test(p))
+    return `👫 *Casais:* "O Senhor o deu, o Senhor o tomou. Bendito seja o nome do Senhor." Esta é a teologia mais alta possível. Vocês podem dizer isso juntos quando vier perda?\n👧 *Filhos:* Jó adorou em meio à perda total. Ensine seus filhos que adoração não depende de circunstância — é decisão.\n👴 *Avós:* Jó perdeu tudo num dia. Compartilhe com os netos como você viveu uma perda devastadora e como Deus sustentou você.`;
+
+  // 622. SENHOR responde Jó
+  if (/senhor responde jo|onde estavas/i.test(p))
+    return `👫 *Casais:* Deus respondeu Jó com perguntas, não respostas. Às vezes Deus responde nossos "por quês" mostrando quem Ele é. Têm encontrado conforto em Deus mesmo sem respostas?\n👧 *Filhos:* Deus perguntou sobre estrelas, oceanos e animais. Ensine seus filhos a se maravilhar com a criação — isso constrói teologia robusta.\n👴 *Avós:* A resposta de Deus mudou Jó. Compartilhe com os netos quando uma revelação de quem Deus é trouxe paz onde antes havia apenas perguntas.`;
+
+  // 628. Restauração de Jó
+  if (/vicissitudes de jo.*restauracao|jo.*restauracao/i.test(p))
+    return `👫 *Casais:* Jó orou pelos amigos antes de ser restaurado. Perdoar quem nos machucou abre porta para restauração. Quem vocês precisam perdoar como casal?\n👧 *Filhos:* Jó teve filhos novamente. Ensine seus filhos que Deus dá futuro mesmo após perdas que parecem irreparáveis.\n👴 *Avós:* Os últimos dias de Jó foram melhores que os primeiros. Compartilhe com os netos como Deus reservou bênçãos para sua segunda metade da vida.`;
+
+  // 750. Prólogo de Provérbios
+  if (/prologo|temor.*senhor.*principio/i.test(p))
+    return `👫 *Casais:* "O temor do Senhor é o princípio do conhecimento." Sabedoria começa por reverência. Vocês têm cultivado reverência a Deus juntos — ou só atividade?\n👧 *Filhos:* Provérbios foi escrito de pai para filho. Pais — qual sabedoria vocês mais querem transmitir esta semana?\n👴 *Avós:* Avós são bibliotecas de provérbios vividos. Quais 3 provérbios pessoais — frases curtas — vocês querem deixar registrados para os netos?`;
+
+  // 763. Mulher adúltera
+  if (/mulher.*adulterio|advertencia.*adulterio/i.test(p))
+    return `👫 *Casais:* Provérbios alerta repetidamente sobre adultério — mostra que a tentação é constante. Não fiquem na ilusão de imunidade. Que cercas vocês têm construído?\n👧 *Filhos:* O autor descreve o jovem indo na direção da casa da estranha. Ensine seus filhos a reconhecer caminhos que levam à tentação — e a evitá-los.\n👴 *Avós:* Avós, compartilhem com prudência sobre como aliança matrimonial se sustenta — não com força de vontade, mas com escolhas diárias e cercas claras.`;
+
+  // 780. Mulher virtuosa
+  if (/ode.*capaz mulher|mulher virtuosa|capaz mulher/i.test(p))
+    return `👫 *Casais:* "Quem a achará?" A mulher virtuosa é elogiada pelas obras, não pela beleza. Como vocês têm elogiado um ao outro — pelo que é durável ou pelo que é passageiro?\n👧 *Filhos:* Os filhos da mulher virtuosa "se levantam e a chamam bem-aventurada". Filhos elogiam mães cujo trabalho viram. Como você está sendo visto pelos seus filhos?\n👴 *Avós:* Avós-mães, vocês são as mulheres de Provérbios 31 de muitas gerações. Compartilhem com as netas que virtude é construída em décadas, não em dias.`;
+
+  // 795. Lembra-te do criador na mocidade
+  if (/lembra.*criador.*mocidade|mocidade/i.test(p))
+    return `👫 *Casais:* "Lembra-te do teu Criador nos dias da tua mocidade." Vocês têm marcado os filhos com Deus enquanto são jovens? Não esperem a crise.\n👧 *Filhos:* Eclesiastes descreve a velhice em metáforas — guardas tremendo, moinho parando. Ensine seus filhos que vida é curta — escolham o que importa.\n👴 *Avós:* Avós, vocês são prova viva de Eclesiastes. Que vaidade — coisa fútil — vocês perseguiram que hoje fariam diferente? Conte aos netos.`;
+
+  // 818. Santo Santo Santo
+  if (/santo.*santo.*santo|isaias.*visao|trono.*isaias/i.test(p))
+    return `👫 *Casais:* Isaías viu o Senhor — e se viu pequeno. Visão de Deus produz humildade no casamento. Quando foi a última vez que vocês se sentiram pequenos diante de Deus?\n👧 *Filhos:* O serafim tocou os lábios de Isaías com brasa. Ensine seus filhos que palavras precisam ser purificadas. Que palavra precisa ser limpa em casa?\n👴 *Avós:* Isaías disse: "Eis-me aqui, envia-me." Avós, vocês ainda dizem isso ao Senhor? Aposentar do trabalho não é aposentar da missão.`;
+
+  // 875. Servo sofredor
+  if (/servo sofredor|isaias 53|cordeiro.*matadouro/i.test(p))
+    return `👫 *Casais:* "Foi ferido pelas nossas transgressões." A cruz é o centro do casamento cristão — onde aprendemos a perdoar como fomos perdoados.\n👧 *Filhos:* Ensine seus filhos com Isaías 53: Jesus carregou nossas culpas. Não precisamos carregar o que Ele já carregou.\n👴 *Avós:* Avós, compartilhem como Isaías 53 sustentou vocês nos momentos de maior dor. O cordeiro sacrificado é base da paz duradoura.`;
+
+  // 896. Antes de te formar
+  if (/antes de.*formar|jeremias.*chamado|antes te formar/i.test(p))
+    return `👫 *Casais:* "Antes que eu te formasse no ventre, eu te conheci." Filhos são conhecidos por Deus antes de nascerem. Têm tratado seus filhos como pessoas já conhecidas e amadas por Deus?\n👧 *Filhos:* Jeremias resistiu: "Não sei falar." Ensine seus filhos que Deus equipa quem chama. Inexperiência não desqualifica.\n👴 *Avós:* Jeremias foi profeta jovem. Avós, encorajem netos hesitantes — Deus chama em todas as idades, inclusive a deles agora.`;
+
+  // 979. Eu sou o homem que viu a aflição
+  if (/eu sou o homem.*aflicao|misericordias.*senhor/i.test(p))
+    return `👫 *Casais:* "As misericórdias do Senhor são novas cada manhã." Mesmo em ruínas, há misericórdia diária. Têm começado o dia reconhecendo as misericórdias novas?\n👧 *Filhos:* Jeremias viu Jerusalém em ruínas e ainda confiou. Ensine seus filhos que fé não nega a dor — confia em Deus em meio a ela.\n👴 *Avós:* Avós, compartilhem como vocês descobriram que as misericórdias eram novas cada manhã — mesmo nos dias mais escuros.`;
+
+  // 1014. Vale dos ossos secos
+  if (/vale dos ossos|ossos secos/i.test(p))
+    return `👫 *Casais:* "Podem viver estes ossos?" No casamento, há áreas que parecem mortas. Confessem juntos: "Senhor, podem viver?" Espírito sopra vida em casamentos secos.\n👧 *Filhos:* Os ossos se uniram osso a osso. Ensine seus filhos que restauração é processo — não evento único.\n👴 *Avós:* Avós, compartilhem um "vale de ossos secos" da sua vida que Deus restaurou. Sirva de esperança para netos em vales atuais.`;
+
+  // 1032. Quatro jovens em Babilônia
+  if (/quatro jovens|daniel.*amigos|babilonia.*jovens/i.test(p))
+    return `👫 *Casais:* Daniel "propôs no seu coração" não se contaminar. Decisões prévias protegem em tempos de pressão. Que decisões prévias vocês tomaram para o casamento?\n👧 *Filhos:* Daniel e amigos foram fiéis em terra estranha. Ensine seus filhos que fidelidade é possível mesmo na escola onde "todos fazem diferente".\n👴 *Avós:* Os quatro permaneceram juntos. Amigos certos preservam fé. Avós, ajudem netos a escolher amigos que fortaleçam, não que enfraqueçam.`;
+
+  // 1034. Fornalha ardente
+  if (/fornalha ardente|fornalha.*fogo/i.test(p))
+    return `👫 *Casais:* "E se não, ó rei, saibas que não serviremos teus deuses." A fé é incondicional — não depende de Deus livrar. Têm essa fé como casal?\n👧 *Filhos:* Os três foram lançados na fornalha, mas saíram sem cheiro de fogo. Ensine seus filhos que Deus não promete tirar do fogo — promete estar no fogo conosco.\n👴 *Avós:* "Um quarto semelhante ao Filho dos deuses." Avós, compartilhem uma fornalha em que vocês viram a presença de Deus de forma quase visível.`;
+
+  // 1037. Daniel na cova dos leões
+  if (/daniel na cova|cova dos leoes/i.test(p))
+    return `👫 *Casais:* Daniel orou três vezes ao dia "como costumava fazer". Hábitos espirituais consistentes formam fidelidade resistente. Que hábito vocês têm como casal?\n👧 *Filhos:* Daniel não escondeu a oração mesmo com o decreto. Ensine seus filhos que fé pública custa, mas é a única que conta.\n👴 *Avós:* Daniel era idoso quando foi lançado aos leões — décadas de fidelidade. Avós, fidelidade prolongada é o testemunho mais raro hoje. Não desistam.`;
+
+  // 1048. Casa com mulher de prostituição
+  if (/casa.*mulher.*prostituicao|oseias.*gomer|oseias.*casa-te/i.test(p))
+    return `👫 *Casais:* Oséias amou Gomer apesar das traições — figura do amor de Deus. No casamento, há amor que precede merecimento. Têm amado um ao outro mesmo nos momentos não merecedores?\n👧 *Filhos:* Os nomes dos filhos de Oséias eram mensagens proféticas. Ensine seus filhos que a vida deles tem propósito — não apenas existência, mas testemunho.\n👴 *Avós:* Oséias comprou Gomer de volta — resgatou. Avós, compartilhem com netos sobre um "resgate" que vocês fizeram ou receberam.`;
+
+  // 1086. Vai a Nínive
+  if (/levanta-te.*vai a ninive|jonas.*fuge|levanta-te, vai/i.test(p))
+    return `👫 *Casais:* Jonas fugiu na direção oposta — e a tempestade caiu sobre todos. No casamento, a fuga de um afeta o outro. Vocês têm fugido de algum chamado juntos?\n👧 *Filhos:* O barco quase afundou por causa do passageiro errado. Ensine seus filhos que desobediência tem consequências sobre quem está perto.\n👴 *Avós:* Avós, compartilhem com netos uma vez em que vocês "fugiram de Nínive" — e como Deus os redirecionou.`;
+
+  // 1090. Não terei compaixão?
+  if (/nao hei de eu ter compaixao|jonas.*aboboreira/i.test(p))
+    return `👫 *Casais:* Jonas se importou mais com uma aboboreira que com 120 mil pessoas. No casamento, vigiem quando coisas pequenas importam mais que pessoas.\n👧 *Filhos:* Deus pergunta a Jonas, não condena. Ensine seus filhos que Deus é paciente com nossos rancores — mas nos chama a expandir o coração.\n👴 *Avós:* Avós, compartilhem um preconceito ou rancor que Deus quebrou em vocês ao longo dos anos.`;
+
+  // 1095. O que o SENHOR pede
+  if (/que o senhor pede|miqueias 6/i.test(p))
+    return `👫 *Casais:* "Praticar a justiça, amar a misericórdia, andar humildemente." Resume tudo. Qual desses três é o mais difícil para vocês como casal?\n👧 *Filhos:* Ensine seus filhos esses três verbos como filtro de decisões. Antes de cada escolha: justo? misericordioso? humilde?\n👴 *Avós:* Avós, qual desses três Deus mais trabalhou em vocês ao longo da vida? Compartilhem o processo, não só o destino.`;
+
+  // 1112. Ainda que a figueira não floresça
+  if (/ainda que.*figueira|habacuque.*alegro/i.test(p))
+    return `👫 *Casais:* "Eu me alegrarei no Senhor." Alegria não depende de circunstâncias. Têm alegria mesmo quando "a figueira não floresce" — finanças, saúde, planos?\n👧 *Filhos:* Habacuque listou perdas possíveis — e ainda escolheu adorar. Ensine seus filhos que adoração é decisão, não emoção.\n👴 *Avós:* Avós, compartilhem com netos como cantar quando nada do esperado se materializou. Esse tipo de canto marca a alma.`;
+
+  // 1150. Roubareis a Deus em dízimos
+  if (/roubareis vos a deus|dizimos e ofertas/i.test(p))
+    return `👫 *Casais:* Deus desafiou: "Provai-me nisto." Têm provado Deus na área financeira — não como troca, mas como confiança?\n👧 *Filhos:* Ensine seus filhos a separar primeiro para Deus. Hábito formado na infância dura a vida toda.\n👴 *Avós:* Avós, compartilhem como Deus os sustentou ao longo da vida quando vocês honraram a Ele com bens. Não é prosperidade — é fidelidade.`;
+
+  // 1152. Elias voltará
+  if (/antes que venha.*senhor.*elias|malaquias.*elias/i.test(p))
+    return `👫 *Casais:* A última palavra do AT é sobre restauração de família — "converterá o coração dos pais aos filhos". Há corações a serem convertidos um ao outro hoje?\n👧 *Filhos:* A promessa do AT termina apontando para João Batista que prepararia o caminho de Jesus. Ensine seus filhos que o AT inteiro aponta para Cristo.\n👴 *Avós:* Avós, vocês são "Elias" para a família — voltando corações de filhos aos pais e de pais aos filhos. Esse é o ministério da terceira idade.`;
+
   // JOSUÉ / JUÍZES
   if (/travessia do jordao/i.test(p) || /pedras.*jordao/i.test(p))
     return `👫 *Casais:* As pedras do Jordão eram para que os filhos perguntassem "o que significam estas pedras?" Que marcos de fé vocês têm como casal que podem contar quando os filhos perguntarem? Construam memórias que falem de Deus.\n👧 *Filhos:* As pedras eram lembrete das coisas que Deus fez. Façam juntos um "mural de gratidão" em casa — fotos, desenhos ou palavras que lembram quando Deus agiu pela família.\n👴 *Avós:* Qual é a "pedra do Jordão" da sua família — o marco que todos deveriam conhecer? Conte essa história para os netos como se fosse a mais importante que você já viveu. Porque provavelmente é.`;
@@ -6170,6 +6438,905 @@ const TITULOS_CARD: Record<number, string> = {
   251: 'A Morte Anunciada: Moisés Vai ao Monte',
   252: 'A Bênção das Tribos: O Pastor que se Despede',
   253: 'O Monte Nebo: Fim de uma Era, Início de Outra',
+  254: 'A Comissão de Josué: Sê Forte e Corajoso',
+  255: 'Espiões em Jericó: A Fé de Raabe',
+  256: 'A Travessia do Jordão: Águas que Param',
+  257: 'Doze Pedras em Gilgal: Memorial para os Filhos',
+  258: 'A Nova Geração Circuncidada: Marca da Aliança',
+  259: 'A Páscoa em Gilgal: Comendo do Fruto da Terra',
+  260: 'O Príncipe do Exército do Senhor: Tira as Sandálias',
+  261: 'A Queda de Jericó: Vitória pela Obediência',
+  262: 'A Maldição sobre Jericó: Fundamento e Portas',
+  263: 'O Pecado de Acã: Um Acende, Todos Queimam',
+  264: 'A Emboscada de Ai: Vitória Pela Estratégia de Deus',
+  265: 'A Aliança Renovada em Ebal: A Lei Lida ao Povo',
+  266: 'Os Gibeonitas: O Engano por Falta de Consulta',
+  267: 'Cinco Reis Derrotados: O Sol que Parou',
+  268: 'Os Reis do Norte Caem: O Senhor Lutou',
+  269: 'A Conquista Resumida: A Terra Repousa',
+  270: 'A Lista dos Reis Vencidos: O Saldo da Fé',
+  271: 'A Terra que Resta: Ainda Há Conquistas',
+  272: 'O Território a Leste do Jordão: A Herança Anterior',
+  273: 'Rúben, Gade e Manassés: A Posse Confirmada',
+  274: 'A Distribuição da Terra: Por Sorte Diante do Senhor',
+  275: 'Calebe e Judá: Dá-me Este Monte',
+  276: 'Efraim e Manassés: Herança e Murmuração',
+  277: 'As Tribos Restantes: Cada Uma na Sua Porção',
+  278: 'As Cidades de Refúgio: Misericórdia na Terra',
+  279: 'As Cidades dos Levitas: Espalhados para Ensinar',
+  280: 'As Tribos do Leste Voltam: Cumprida a Promessa',
+  281: 'O Altar de Testemunho: Mal-entendido Esclarecido',
+  282: 'Josué Exorta o Povo: Apegai-vos ao Senhor',
+  283: 'A Aliança em Siquém: Eu e Minha Casa Serviremos',
+  284: 'A Morte de Josué e Eleazar: Os Ossos de José Sepultados',
+  285: 'Conquista Incompleta: A Semente da Apostasia',
+  286: 'A Infidelidade de Israel: O Ciclo dos Juízes',
+  287: 'Otniel: O Primeiro Libertador',
+  288: 'Eúde: O Punhal Escondido',
+  289: 'Sangar: A Aguilhada de Boi',
+  290: 'Débora e Baraque: A Mulher que Liderou',
+  291: 'O Cântico de Débora: Vitória em Canção',
+  292: 'O Chamado de Gideão: Varão Valente',
+  293: 'O Altar de Baal Destruído: Que Baal se Defenda',
+  294: 'O Velo de Gideão: A Fé que Pede Confirmação',
+  295: 'Trezentos de Gideão: Vitória pela Pequenez',
+  296: 'Gideão e Efraim: Resposta Branda Acalma Ira',
+  297: 'A Vingança de Gideão: Sucote e Penuel',
+  298: 'O Éfode de Gideão: Quando o Herói Tropeça',
+  299: 'A Morte de Gideão: Logo Voltam aos Baalins',
+  300: 'Abimeleque: Coroado Sobre Sangue',
+  301: 'Tola: O Juiz que Salvou',
+  302: 'Jair: Trinta Filhos sobre Jumentos',
+  303: 'A Opressão Amonita: Clamor Tardio',
+  304: 'Jefté: O Filho da Prostituta que Liderou',
+  305: 'Ibsã: Trinta Filhos e Trinta Filhas',
+  306: 'Elom: Dez Anos de Juízo',
+  307: 'Abdom: Setenta Sobre Jumentinhos',
+  308: 'O Nascimento de Sansão: Filho da Promessa',
+  309: 'O Casamento de Sansão: Enigma e Traição',
+  310: 'As Trezentas Raposas: Fogo nos Campos Filisteus',
+  311: 'A Queixada de Jumento: Mil Mortos pela Mão de Um',
+  312: 'Sansão e Dalila: O Segredo Entregue',
+  313: 'A Morte de Sansão: Mais na Morte que em Vida',
+  314: 'A Migração de Dã: Idolatria Domiciliar',
+  315: 'O Crime de Gibeá: Israel sem Rei',
+  316: 'Elimeleque em Moabe: Quando a Fome Move a Família',
+  317: 'Noemi Volta Amargurada: O Teu Povo é o Meu Povo',
+  318: 'Rute Encontra Boaz: O Resgate Começa nos Campos',
+  319: 'O Noivado na Eira: Estende a Tua Capa',
+  320: 'A Negociação na Porta: Boaz Compra a Herança',
+  321: 'Casamento de Rute e Boaz: Restauradora da Vida',
+  322: 'Genealogia de Davi: De Moabe ao Trono',
+  323: 'A Família de Elcana: Lágrimas em Siló',
+  324: 'O Nascimento de Samuel: Pedido a Deus',
+  325: 'A Oração de Ana: O Cântico que Maria Ecoaria',
+  326: 'O Menino Samuel: Crescendo Diante do Senhor',
+  327: 'Profecia contra Eli: Filhos sem Freio',
+  328: 'O Chamado de Samuel: Fala Senhor, Eu Ouço',
+  329: 'A Arca Capturada: A Glória se Foi',
+  330: 'A Arca entre os Filisteus: Dagom Caído',
+  331: 'A Arca Retorna: A Vaca que Mugia para Casa',
+  332: 'Samuel Juiz: Ebenézer, Até Aqui o Senhor',
+  333: 'Israel Exige um Rei: Rejeitaram a Mim',
+  334: 'A Unção Secreta de Saul: O Príncipe Encontrado',
+  335: 'Saul Aclamado Rei: Escondido entre a Bagagem',
+  336: 'Saul Derrota Amom: Confirmação no Reino',
+  337: 'Despedida de Samuel: Servi ao Senhor de Coração',
+  338: 'O Sacrifício Ilegal: Saul Perde a Dinastia',
+  339: 'Jônatas em Micmás: O Senhor Não Está Limitado',
+  340: 'As Guerras de Saul: Vitórias e Desgastes',
+  341: 'Saul e Amaleque: A Obediência Vale Mais que Sacrifício',
+  342: 'A Unção de Davi: O Senhor Olha o Coração',
+  343: 'Davi Toca a Harpa: Música que Acalma Reis',
+  344: 'Davi e Golias: A Batalha é do Senhor',
+  345: 'Saul Inveja Davi: Os Dez Mil Mataram a Paz',
+  346: 'Davi Foge: Mical o Salva pela Janela',
+  347: 'Davi e Jônatas: A Amizade que Custou Coroas',
+  348: 'Davi em Nobe: O Pão da Proposição',
+  349: 'Davi em Queila: Livrando uma Cidade',
+  350: 'Davi em Zife: Traído pelos Próprios',
+  351: 'A Capa Cortada na Caverna: Davi Poupa Saul',
+  352: 'Abigail e o Tolo Nabal: Sabedoria que Detém o Sangue',
+  353: 'A Lança e a Bilha de Água: Davi Poupa Saul de Novo',
+  354: 'Davi entre os Filisteus: Servindo a Aquis',
+  355: 'A Médium de Endor: Saul Consulta os Mortos',
+  356: 'Davi Dispensado: Providência entre os Inimigos',
+  357: 'Ziclague Resgatada: Davi se Anima no Senhor',
+  358: 'A Morte de Saul: O Rei Cai em Gilboa',
+  359: 'Davi Lamenta Saul e Jônatas: O Arco de Honra',
+  360: 'Ungido Rei em Hebrom: Sete Anos sobre Judá',
+  361: 'A Batalha de Gibeão: Tribos contra Tribos',
+  362: 'Os Filhos de Hebrom: A Casa Cresce',
+  363: 'Abner Deserta: Política da Reconciliação',
+  364: 'A Morte de Abner: Joabe Vinga o Irmão',
+  365: 'A Morte de Isbosete: A Coroa Sem Defensor',
+  366: 'Davi Ungido sobre Todo Israel: Um Coração, Um Rei',
+  367: 'Jerusalém Conquistada: A Cidade de Davi',
+  368: 'Filhos em Jerusalém: A Casa Real Se Multiplica',
+  369: 'Filisteus Repelidos: Davi Consulta o Senhor',
+  370: 'A Arca Trazida com Júbilo: Davi Dança Diante do Senhor',
+  371: 'Mical Despreza: O Coração Frio com a Adoração',
+  372: 'A Aliança Davídica: Um Trono para Sempre',
+  373: 'A Oração de Davi: Quem Sou Eu, Senhor?',
+  374: 'As Guerras de Davi: Vitórias Sucessivas',
+  375: 'Oficiais de Davi: Uma Administração Justa',
+  376: 'Mefibosete à Mesa: Bondade por Amor a Jônatas',
+  377: 'Amonitas e Arameus: Humilhação de Embaixadores',
+  378: 'Davi e Bate-Seba: O Olhar que Trouxe Trevas',
+  379: 'Natã Confronta Davi: Tu És o Homem',
+  380: 'A Morte do Menino e Salomão: Misericórdia depois do Juízo',
+  381: 'Rabá Capturada: A Coroa Pesada de Vencer',
+  382: 'Amnom e Tamar: O Pecado que o Pai Não Puniu',
+  383: 'A Vingança de Absalão: Dois Anos de Ódio Calculado',
+  384: 'Absalão Usurpa: Roubando os Corações de Israel',
+  385: 'Davi Foge de Jerusalém: O Rei Sobe o Monte das Oliveiras Chorando',
+  386: 'Husai Espião: Frustrando o Conselho de Aitofel',
+  387: 'Simei Amaldiçoa: Talvez o Senhor o Tenha Mandado',
+  388: 'O Conselho de Aitofel: Sabedoria Desviada',
+  389: 'Preparação para a Guerra: Davi Reorganiza o Exército',
+  390: 'A Morte de Absalão: Pendurado pelo Cabelo',
+  391: 'O Pranto do Rei: Meu Filho Absalão!',
+  392: 'Davi Volta a Jerusalém: O Retorno do Rei',
+  393: 'Simei Perdoado: A Misericórdia do Vitorioso',
+  394: 'Barzilai: A Recompensa do Idoso Fiel',
+  395: 'Israel e Judá em Disputa: A Casa Dividida',
+  396: 'A Rebelião de Seba: Sabedoria de uma Mulher',
+  397: 'Oficiais do Rei: O Reino Reorganizado',
+  398: 'Os Gibeonitas Vingados: Sangue de Saul Pago',
+  399: 'Feitos dos Valentes: Quatro Gigantes Caem',
+  400: 'O Cântico de Davi: Salmo de Livramento',
+  401: 'Últimas Palavras de Davi: Aquele que Governa com Justiça',
+  402: 'Os Trinta Valentes: Heróis Anônimos',
+  403: 'O Censo e a Praga: O Altar na Eira de Araúna',
+  404: 'A Sucessão Disputada: Adonias se Levanta',
+  405: 'Salomão Ungido: Em Giom o Jovem Rei',
+  406: 'O Medo de Adonias: Pega-se aos Chifres do Altar',
+  407: 'A Morte de Davi: Sê Forte, Sê Homem',
+  408: 'O Sonho de Gibeão: Pede o que Quiseres',
+  409: 'A Sabedoria de Salomão: Cortai o Menino ao Meio',
+  410: 'Preparativos para o Templo: Hirão Envia Cedros',
+  411: 'A Construção do Templo: Sete Anos para a Glória',
+  412: 'O Palácio de Salomão: Treze Anos para a Casa do Rei',
+  413: 'As Obras de Hirão: Bronze para o Santuário',
+  414: 'A Dedicação do Templo: A Glória Encheu a Casa',
+  415: 'Salomão Abençoa: Que o Senhor Esteja Conosco',
+  416: 'Segunda Aparição: Se Te Desviares...',
+  417: 'Outras Obras: Cidades, Frotas, Tributos',
+  418: 'A Rainha de Sabá: Não Me Disseram a Metade',
+  419: 'A Riqueza de Salomão: Prata como Pedras',
+  420: 'As Esposas Estrangeiras: O Coração Desviado',
+  421: 'O Reino Dividido: O Conselho dos Jovens',
+  422: 'Jeroboão e os Bezerros: Eis os Teus Deuses, Israel',
+  423: 'Juízo sobre Jeroboão: A Casa Cortada',
+  424: 'Reinado de Roboão: Judá Reduzido',
+  425: 'Abias de Judá: Coração Dividido',
+  426: 'Asa de Judá: Reforma Parcial',
+  427: 'Nadabe: Curto Reinado',
+  428: 'Baasa: Profecia de Jeú',
+  429: 'Elá: Embriagado no Trono',
+  430: 'Zinri: Sete Dias de Rei',
+  431: 'Omri: A Cidade de Samaria',
+  432: 'Acabe: O Pior dos Reis',
+  433: 'Elias Anuncia a Seca: Pelo Riacho de Querite',
+  434: 'Elias e Obadias: Servos Escondidos',
+  435: 'O Monte Carmelo: O Deus que Responde por Fogo',
+  436: 'Fim da Seca: A Pequena Nuvem',
+  437: 'Elias em Horebe: O Cicio Suave e Tranquilo',
+  438: 'As Guerras com a Síria: Ben-Hadade Derrotado',
+  439: 'A Vinha de Nabote: Quando o Rei Cobiça',
+  440: 'A Morte de Acabe: Flecha ao Acaso',
+  441: 'Josafá de Judá: Aliança Imprudente',
+  442: 'Acazias de Israel: Caiu pela Janela',
+  443: 'Elias Denuncia Acazias: Não Há Deus em Israel?',
+  444: 'Eliseu Sucede Elias: O Manto e o Carro de Fogo',
+  445: 'A Guerra contra Moabe: Cavemos Cisternas',
+  446: 'Milagres de Eliseu: Azeite, Vida, Pão e Lepra',
+  447: 'O Cerco de Samaria: A Notícia que Mudou Tudo',
+  448: 'Outros Milagres: A Sunamita Restaurada',
+  449: 'Jeorão de Judá: Caminhou nos Caminhos de Acabe',
+  450: 'Acazias de Judá: Aliado por Casamento',
+  451: 'Jeú Ungido: A Espada de Deus',
+  452: 'Os Adoradores de Baal Massacrados: Templo em Latrina',
+  453: 'Atalia e Joiada: Coroa Escondida na Casa de Deus',
+  454: 'Joás Restaura o Templo: Mas Cai no Fim',
+  455: 'Jeoacaz de Israel: Síria Reduzia o Reino',
+  456: 'Joás de Israel: Vitórias Limitadas',
+  457: 'A Morte de Eliseu: Os Ossos que Davam Vida',
+  458: 'Cidades Recuperadas: Cumprimento de Profecia',
+  459: 'Amazias de Judá: Provocação e Derrota',
+  460: 'Jeroboão II: Expansão Sem Reforma',
+  461: 'Azarias de Judá: Lepra do Orgulho',
+  462: 'Zacarias: Seis Meses no Trono',
+  463: 'Salum: Um Mês de Reinado',
+  464: 'Menaém: Pul Recebe Tributo',
+  465: 'Pecaías: Pouco Tempo no Trono',
+  466: 'Peca: Cativeiro Começa',
+  467: 'Jotão de Judá: Boa Memória, Povo Corrupto',
+  468: 'Acaz: O Altar Pagão em Jerusalém',
+  469: 'Oseias: Último Rei do Norte',
+  470: 'Israel Cativo: O Norte Levado para Sempre',
+  471: 'Ezequias Reforma: As Bichas de Cobre Quebradas',
+  472: 'Senaqueribe Invade: O Anjo no Acampamento',
+  473: 'A Doença de Ezequias: O Sol Volta Dez Graus',
+  474: 'Manassés: O Pior Rei de Judá',
+  475: 'Amom: Servo dos Ídolos',
+  476: 'Josias Encontra a Lei: O Livro Esquecido',
+  477: 'A Reforma de Josias: Limpando a Terra',
+  478: 'Jeoacaz: Três Meses e Levado',
+  479: 'Jeoiaquim: Vassalo de Babilônia',
+  480: 'Joaquim Cativo: Levado aos Dezoito Anos',
+  481: 'Zedequias: O Último Rei Cego',
+  482: 'Queda de Jerusalém: Templo Queimado',
+  483: 'Gedalias Governador: Esperança Curta',
+  484: 'Joaquim Libertado: Misericórdia no Cativeiro',
+  485: 'De Adão a Abraão: A Linha da Promessa',
+  486: 'Genealogia de Abraão: Sementes Espalhadas',
+  487: 'Reis de Edom: Antes do Trono em Israel',
+  488: 'Os Filhos de Israel: Doze Tribos Catalogadas',
+  489: 'Após o Exílio: Os que Voltaram',
+  490: 'A Morte de Saul Recontada: O Rei Infiel',
+  491: 'Ungido por Todos: Da Caverna ao Trono',
+  492: 'A Conquista de Jerusalém: A Cidade de Davi',
+  493: 'Os Valentes de Davi: Heróis com Nomes',
+  494: 'Seguidores no Deserto: Lealdade Antes da Coroa',
+  495: 'O Exército em Hebrom: Coroação do Norte',
+  496: 'A Arca de Quiriate-Jearim: Boa Intenção, Modo Errado',
+  497: 'Hirão Envia Material: Reconhecimento Internacional',
+  498: 'Filhos em Jerusalém: Casa Real Se Estabelece',
+  499: 'Derrota dos Filisteus: Consulta a Deus em Cada Batalha',
+  500: 'A Arca em Jerusalém: Conforme a Lei',
+  501: 'A Tenda em Sião: Adoração Centralizada',
+  502: 'O Salmo de Gratidão: Cantai ao Senhor',
+  503: 'Adoração Regular: Asafe, Hemã, Jedutum',
+  504: 'A Aliança de Davi: Casa para Sempre',
+  505: 'A Oração de Davi: Confirma a Tua Palavra',
+  506: 'Guerras Estrangeiras: O Reino Se Expande',
+  507: 'A Administração de Davi: Ordem no Reino',
+  508: 'Amonitas Derrotados: A Resposta à Humilhação',
+  509: 'O Cerco de Rabá: A Coroa do Rei Capturada',
+  510: 'Os Refains Caem: Gigantes que Encontraram a Morte',
+  511: 'O Censo e o Anjo: A Eira de Ornã',
+  512: 'Davi Prepara o Templo: Material Acumulado',
+  513: 'As Famílias dos Levitas: Cada Um em Sua Função',
+  514: 'Salomão Instruído: Coragem para a Obra',
+  515: 'Ofertas Voluntárias: Tudo Vem de Ti',
+  516: 'Salomão Ungido pela Segunda Vez: Confirmação Pública',
+  517: 'Davi Encerra: De Pastor a Patriarca',
+  518: 'Salomão em Gibeão: Sabedoria Pedida',
+  519: 'Preparação para o Templo: Mão de Obra Designada',
+  520: 'Construção do Templo: A Casa do Senhor',
+  521: 'A Arca no Templo: A Glória Volta a Habitar',
+  522: 'Dedicação Pública: Diante de Toda a Congregação',
+  523: 'A Oração de Salomão: Se Te Buscarem...',
+  524: 'Fogo do Céu: Resposta Visível ao Sacrifício',
+  525: 'Promessas Condicionais: Se o Meu Povo Se Humilhar',
+  526: 'Salomão Construtor: Cidades e Frotas',
+  527: 'A Rainha de Sabá: Sabedoria que Atrai Nações',
+  528: 'Riqueza Inigualável: Ouro Como Pedras',
+  529: 'A Divisão do Reino: O Cisma do Norte',
+  530: 'Roboão Fortifica Judá: Cidades de Defesa',
+  531: 'Os Casamentos de Roboão: Família Multiplicada',
+  532: 'Sisaque Invade: Castigo pela Apostasia',
+  533: 'O Reinado de Roboão: Coração Não Reto',
+  534: 'Abias Vence Jeroboão: Confiança no Senhor',
+  535: 'Asa Começa Bem: Removendo os Altos',
+  536: 'A Invasão Etíope: O Senhor Não Vê Diferença',
+  537: 'Reforma de Asa: A Aliança Renovada',
+  538: 'Invasão de Israel: Aliança Errada com a Síria',
+  539: 'Josafá Fortalecido: Instrução pela Lei',
+  540: 'Miqueias contra os Profetas Mentirosos: A Voz Solitária da Verdade',
+  541: 'Reforma de Josafá: Juízes Pelas Cidades',
+  542: 'Invasão do Leste: A Batalha é de Deus',
+  543: 'Final de Josafá: A Aliança Marítima Frustrada',
+  544: 'Jeorão Mata os Irmãos: Sangue na Casa Real',
+  545: 'Doença de Jeorão: Carta de Elias',
+  546: 'Acazias: O Sobrinho de Acabe',
+  547: 'Atalia: O Genocídio Real',
+  548: 'Joiada Restaura o Trono: O Menino Coroado',
+  549: 'Joás Restaura o Templo: A Arca de Joiada',
+  550: 'Apostasia de Joás: O Sangue de Zacarias',
+  551: 'Amazias: Vitória e Loucura',
+  552: 'Uzias: Forte e Soberbo',
+  553: 'Jotão: Discreto e Justo',
+  554: 'Acaz: O Pior de Judá',
+  555: 'Ezequias Restaura: A Páscoa Atrasada',
+  556: 'Senaqueribe Cerca Jerusalém: Em Quem Confias?',
+  557: 'Manassés Convertido: Cativeiro que Trouxe Volta',
+  558: 'Amom: Mais Culpado que o Pai',
+  559: 'Josias Reforma: O Livro Encontrado',
+  560: 'Neco Mata Josias: A Batalha Não Sua',
+  561: 'Jeoacaz Levado: Reinado de Três Meses',
+  562: 'Jeoiaquim: Encadeado para Babilônia',
+  563: 'Joaquim: Coisas Más à Vista do Senhor',
+  564: 'Zedequias: A Última Cegueira',
+  565: 'O Decreto de Ciro: A Esperança Volta',
+  566: 'Fim do Cativeiro: O Edito de Ciro',
+  567: 'Lista dos que Voltaram: Os Restantes Fieis',
+  568: 'Adoração Restaurada: Altar Antes do Templo',
+  569: 'Resistência à Reconstrução: Adversários Mascarados',
+  570: 'Retomada da Obra: Profetas Encorajam',
+  571: 'Conclusão do Templo: Alegria com Lágrimas',
+  572: 'A Páscoa Pós-Exílio: Pureza Recuperada',
+  573: 'Chefes de Famílias com Esdras: Outra Caravana',
+  574: 'A Viagem de Esdras: Jejum em Aava',
+  575: 'Esdras Confronta os Casamentos Mistos: Pranto Diante da Casa',
+  576: 'Separação Necessária: O Povo Concorda',
+  577: 'Lista dos Culpados: Honestidade Confessional',
+  578: 'Neemias Ora: Lágrimas em Susã',
+  579: 'Organização do Muro: Cada Família no Seu Trecho',
+  580: 'Conspirações Frustradas: Espada em Uma Mão, Colher na Outra',
+  581: 'A Opressão Interna: Confrontando os Nobres',
+  582: 'Intrigas Externas: Não Posso Descer',
+  583: 'Lista dos que Voltaram: Memória Preservada',
+  584: 'Esdras Lê a Lei: O Povo Chora ao Ouvir',
+  585: 'Confissão Nacional: Toda a História Revisitada',
+  586: 'Assinando a Aliança: Nomes que se Comprometem',
+  587: 'Os Compromissos: Sábado, Dízimo, Casamento',
+  588: 'Habitando Jerusalém: Sorteio para Ocupar a Cidade',
+  589: 'Dedicação do Muro: Duas Procissões Cantando',
+  590: 'A Reforma Final: Neemias Volta e Corrige',
+  591: 'O Banquete do Rei: Vasti Recusa',
+  592: 'Ester Rainha: Escondida para o Tempo Certo',
+  593: 'Mordecai Salva o Rei: Boa Ação Esquecida',
+  594: 'Hamã Decreta a Morte: Os Judeus Marcados',
+  595: 'Se Perecer, Pereci: Ester se Decide',
+  596: 'O Banquete de Ester: Estratégia Espiritual',
+  597: 'A Noite Sem Sono do Rei: A Honra para Mordecai',
+  598: 'A Queda de Hamã: A Forca do Próprio',
+  599: 'Ester Salva os Judeus: Novo Decreto',
+  600: 'A Alegria dos Judeus: Da Morte para a Festa',
+  601: 'Destruição dos Inimigos: Vitória Total',
+  602: 'A Festa de Purim: Memória para Sempre',
+  603: 'A Honra de Mordecai: Segundo Após o Rei',
+  604: 'O Justo Provado: Adorou o Senhor Mesmo Assim',
+  605: 'Os Amigos Chegam: Sete Dias de Silêncio',
+  606: 'Jó Amaldiçoa o Dia: O Lamento que Não É Pecado',
+  607: 'Elifaz Acusa: A Lógica da Retribuição',
+  608: 'Bildade Acusa: A Tradição Sem Compaixão',
+  609: 'Zofar Acusa: Dureza com Verniz Espiritual',
+  610: 'Elifaz Insiste: A Mesma Acusação Mais Forte',
+  611: 'Bildade Insiste: Sem Espaço para Lágrimas',
+  612: 'Zofar Insiste: A Brevidade do Ímpio',
+  613: 'Elifaz Terceira Vez: Confessa um Pecado',
+  614: 'Bildade Encerra: Como Pode o Homem Ser Justo?',
+  615: 'Jó Mantém a Integridade: Até Morrer Não Mentirei',
+  616: 'Onde Está a Sabedoria? O Temor do Senhor',
+  617: 'Lamento Final de Jó: Os Dias de Antes',
+  618: 'Elifu Repreende: A Voz dos Jovens',
+  619: 'Elifu Defende a Justiça de Deus: Longe Disso de Deus',
+  620: 'Elifu Condena a Autojustiça: Ele Olha o Coração',
+  621: 'Elifu Exalta a Majestade: Ouve o Som da Sua Voz',
+  622: 'O Senhor Fala: Onde Estavas?',
+  623: 'Jó Calado: Ponho a Mão na Boca',
+  624: 'A Resposta Breve de Jó: Já Falei Demais',
+  625: 'O Leviatã: O Domínio Total de Deus',
+  626: 'Arrependimento de Jó: Meus Ouvidos Te Ouviram, Agora Meus Olhos Te Veem',
+  627: 'Os Amigos Humilhados: Jó Ora por Eles',
+  628: 'A Restauração de Jó: O Fim Maior que o Princípio',
+  629: 'O Bem-Aventurado Versus o Ímpio | O Filho Ungido: Beijai o Filho',
+  630: 'Tu És o Meu Escudo | Em Paz Me Deito e Durmo',
+  631: 'O Senhor Ouve Pela Manhã | Misericórdia em Meio à Lágrima',
+  632: 'Deus, o Juiz Justo | O Que é o Homem? Tu Te Lembras Dele',
+  633: 'Cantando as Maravilhas do Senhor | Por Que Estás Longe, Senhor?',
+  634: 'No Senhor Confio: Como Dizeis Foge? | Tuas Palavras São Puras',
+  635: 'Até Quando, Senhor? | Disse o Néscio em Seu Coração',
+  636: 'Quem Habitará no Teu Santo Monte? | Tu És o Meu Senhor',
+  637: 'Guarda-me Como à Menina dos Olhos | Eu te Amo, Senhor, Minha Força',
+  638: 'Os Céus Proclamam a Glória | Uns Confiam em Carros, Outros em Cavalos',
+  639: 'O Rei se Alegra na Tua Força | Deus Meu, Por Que Me Desamparaste?',
+  640: 'O Senhor é Meu Pastor | Levantai-vos, Ó Portas Eternas',
+  641: 'Faze-me Conhecer os Teus Caminhos | Sonda-me, Ó Senhor',
+  642: 'O Senhor é Minha Luz e Salvação | A Ti Clamo, Senhor, Minha Rocha',
+  643: 'Tributai ao Senhor a Glória | Pranto Pode Durar Uma Noite',
+  644: 'Em Tuas Mãos Entrego o Meu Espírito | Bem-Aventurado o Perdoado',
+  645: 'Cantai ao Senhor um Novo Cântico | Provai e Vede que o Senhor é Bom',
+  646: 'Pleiteia, Senhor, com os que Pleiteiam | Tua Misericórdia Chega aos Céus',
+  647: 'Não Te Irrites com os Maus | Sob Teu Castigo, Mas Não Sem Esperança',
+  648: 'Faze-me Saber, Senhor, o Meu Fim | Esperei com Paciência pelo Senhor',
+  649: 'Bem-Aventurado o que Atende ao Pobre | Como o Cervo Brama pelas Águas',
+  650: 'Por Que Estás Abatida, Minha Alma? | A Vitória Não Vem do Arco',
+  651: 'O Cântico do Rei e da Rainha | Deus é Nosso Refúgio e Fortaleza',
+  652: 'Aplaudi, Todos os Povos | A Cidade do Grande Rei',
+  653: 'Ninguém Pode Resgatar a Si Mesmo | O Senhor Não Quer Sangue de Bodes',
+  654: 'Cria em Mim, Ó Deus, Um Coração Puro | Por que te Glorias na Maldade?',
+  655: 'Os Tolos Dizem: Não Há Deus | Salva-me, Ó Deus, Pelo Teu Nome',
+  656: 'Lança Tua Ansiedade sobre o Senhor | Quando Tenho Medo Confio em Ti',
+  657: 'Compassivo, Compassivo, Ó Deus | Há Deus que Julga na Terra',
+  658: 'Tu És Minha Fortaleza, Meu Deus',
+  659: 'Ó Deus, Tu Nos Rejeitaste',
+  660: 'Da Extremidade da Terra Clamo a Ti',
+  661: 'Só em Deus Espera Minha Alma',
+  662: 'Ó Deus, Tu És o Meu Deus',
+  663: 'Esconde-me da Conspiração dos Maus',
+  664: 'A Ti Pertence o Silêncio do Louvor',
+  665: 'Bendito Seja Deus que Ouviu Minha Voz',
+  666: 'Deus Tenha Piedade de Nós',
+  667: 'Levanta-se Deus e os Inimigos se Dispersam',
+  668: 'As Águas Chegaram-me Até a Alma',
+  669: 'Apressa-te, Ó Deus, em Livrar-me',
+  670: 'Em Ti, Senhor, Me Refugio',
+  671: 'O Rei e o Pobre: A Justiça do Messias',
+  672: 'Como É Bom Deus para Israel',
+  673: 'Lembra-te do Teu Rebanho',
+  674: 'Deus é o Juiz; A Um Abate',
+  675: 'Conhecido é Deus em Judá',
+  676: 'No Dia da Angústia Busco o Senhor',
+  677: 'Não Esqueçais as Obras de Deus',
+  678: 'Lembra-te das Iniquidades Passadas',
+  679: 'Pastor de Israel, Dá Ouvidos',
+  680: 'Abri Bem Vossa Boca e Eu a Encherei',
+  681: 'Defendei o Fraco e o Órfão',
+  682: 'Não Te Cales, Ó Deus',
+  683: 'Quão Amáveis São os Teus Tabernáculos',
+  684: 'A Misericórdia e a Verdade Se Encontraram',
+  685: 'Ensina-me, Senhor, o Teu Caminho',
+  686: 'O Senhor Ama as Portas de Sião',
+  687: 'O Salmo da Escuridão Total',
+  688: 'Cantarei Para Sempre as Misericórdias do Senhor',
+  689: 'Mil Anos São Como o Dia de Ontem',
+  690: 'O Que Habita no Esconderijo do Altíssimo',
+  691: 'Bom é Render Graças ao Senhor',
+  692: 'O Senhor Reina, Está Vestido de Majestade',
+  693: 'Ó Senhor, Deus da Vingança',
+  694: 'Vinde, Adoremos e Prostremo-nos',
+  695: 'Cantai ao Senhor um Cântico Novo',
+  696: 'O Senhor Reina: Alegre-se a Terra',
+  697: 'A Sua Mão Direita Lhe Fez Vitória',
+  698: 'O Senhor Reina: Tremem as Nações',
+  699: 'Servi ao Senhor com Alegria',
+  700: 'Misericórdia e Juízo Cantarei',
+  701: 'Tu, Porém, És o Mesmo',
+  702: 'Bendize, Ó Minha Alma, ao Senhor',
+  703: 'Bendize ao Senhor, Tu Que És Tão Grande',
+  704: 'Dai Graças ao Senhor, Invocai o Seu Nome',
+  705: 'Demos Graças ao Senhor Porque É Bom',
+  706: 'Os Resgatados Digam Isso',
+  707: 'O Meu Coração Está Firme, Ó Deus',
+  708: 'Estabeleça-se o Ímpio Sobre Ele',
+  709: 'Disse o Senhor ao Meu Senhor',
+  710: 'Aleluia: Louvarei o Senhor de Todo Coração',
+  711: 'Bem-Aventurado o Homem que Teme o Senhor',
+  712: 'Louvai o Senhor, Servos do Senhor',
+  713: 'Quando Israel Saiu do Egito',
+  714: 'Não a Nós, Senhor, mas ao Teu Nome Glória',
+  715: 'Amo o Senhor Porque Ele Ouviu',
+  716: 'Louvai o Senhor, Todas as Nações',
+  717: 'Esta É a Pedra que os Edificadores Rejeitaram',
+  718: 'Lâmpada para os Meus Pés (parte 1)',
+  719: 'Lâmpada para os Meus Pés (parte 2)',
+  720: 'Aos Montes Levanto os Meus Olhos',
+  721: 'Alegrei-me Quando Me Disseram',
+  722: 'A Ti Levanto os Meus Olhos',
+  723: 'Se Não Fora o Senhor que Esteve do Nosso Lado',
+  724: 'Como o Monte Sião',
+  725: 'Os que Semeiam em Lágrimas',
+  726: 'Se o Senhor Não Edificar a Casa',
+  727: 'Bem-Aventurado Aquele que Teme o Senhor',
+  728: 'Muitas Vezes Me Combateram',
+  729: 'Das Profundezas Clamo a Ti',
+  730: 'Como Criança Desmamada',
+  731: 'Lembra-te, Senhor, de Davi',
+  732: 'Como É Bom os Irmãos Habitarem Juntos',
+  733: 'Bendizei ao Senhor de Noite',
+  734: 'Louvai o Nome do Senhor',
+  735: 'Porque Sua Misericórdia Dura Para Sempre',
+  736: 'Junto aos Rios de Babilônia',
+  737: 'Eu Te Louvarei de Todo o Coração',
+  738: 'Senhor, Tu Me Sondaste e Me Conheces',
+  739: 'Livra-me, Senhor, do Homem Mau',
+  740: 'Suba a Minha Oração como Incenso',
+  741: 'Com a Minha Voz Clamo ao Senhor',
+  742: 'Não Entres em Juízo com o Teu Servo',
+  743: 'Bendito Seja o Senhor, Minha Rocha',
+  744: 'O Senhor é Bom Para Todos',
+  745: 'Não Confieis em Príncipes',
+  746: 'Conta o Número das Estrelas',
+  747: 'Louvai o Senhor desde os Céus',
+  748: 'Cantai ao Senhor Novo Cântico (149)',
+  749: 'Tudo o que Tem Fôlego Louve ao Senhor',
+  750: 'O Prólogo: O Temor do Senhor é o Princípio',
+  751: 'O Convite da Sabedoria nas Praças',
+  752: 'Buscai-a como a Prata Escondida',
+  753: 'Confia no Senhor de Todo o Teu Coração',
+  754: 'Felizes os que Encontram a Sabedoria',
+  755: 'Não Te Detenhas em Praticar o Bem',
+  756: 'Adquire a Sabedoria, Adquire a Inteligência',
+  757: 'A Vereda dos Justos é como a Luz da Aurora',
+  758: 'Sobre Tudo o que Se Deve Guardar, Guarda o Coração',
+  759: 'A Boca da Estranha É Cova Profunda',
+  760: 'Bebe Água da Tua Própria Cisterna',
+  761: 'Vai-te à Formiga, ó Preguiçoso',
+  762: 'A Lâmpada é o Mandamento',
+  763: 'A Mulher Adúltera que Engana',
+  764: 'Os Que Caem no Laço da Adúltera',
+  765: 'O Amor pela Sabedoria Eterna',
+  766: 'Ouve-me, Pois, Filho Meu',
+  767: 'A Mesa da Sabedoria contra a Mesa da Loucura',
+  768: 'Os Provérbios de Salomão: Sabedoria em Sentenças',
+  769: 'Trinta Ditos dos Sábios: Inclina o Ouvido',
+  770: 'Lábios Honestos: Tesouro Diante de Reis',
+  771: 'Não Esteja Entre os Bebedores de Vinho',
+  772: 'Honra Teu Pai e Tua Mãe',
+  773: 'Não Invejes o Caminho dos Maus',
+  774: 'O Justo Cai Sete Vezes e Se Levanta',
+  775: 'Teme o Senhor e Também o Rei',
+  776: 'Outras Palavras dos Sábios',
+  777: 'Provérbios Compilados por Ezequias',
+  778: 'Os Ditos de Agur: Quem Subiu aos Céus?',
+  779: 'O Ensino de Lemuel: Abre Tua Boca pelo Mudo',
+  780: 'A Mulher Virtuosa: Quem a Achará?',
+  781: 'Vaidade de Vaidades: Tudo é Vaidade',
+  782: 'A Busca pelo Prazer: Tudo é Vento',
+  783: 'Tempo para Tudo: O Eterno no Coração',
+  784: 'A Opressão Sob o Sol: Lágrimas sem Consolador',
+  785: 'Melhores São Dois do que Um: A Tríplice Corda',
+  786: 'Como Te Achegares à Casa de Deus',
+  787: 'A Riqueza que Não Sacia',
+  788: 'O Dia da Morte Melhor que o Dia do Nascer',
+  789: 'O Coração dos Sábios na Casa do Luto',
+  790: 'Em Tudo Há Tempo: Mistério de Deus',
+  791: 'Lança o Teu Pão sobre as Águas',
+  792: 'Lembra-te do Teu Criador na Mocidade',
+  793: 'O Som do Moinho Enfraquece: A Velhice',
+  794: 'O Pó Volta à Terra e o Espírito a Deus',
+  795: 'O Pregador Procurou Palavras Agradáveis',
+  796: 'O Resumo de Tudo: Teme a Deus',
+  797: 'O Juízo Vem Sobre Toda Obra Secreta',
+  798: 'Beije-me com os Beijos da Sua Boca',
+  799: 'Eu Sou a Rosa de Sarom',
+  800: 'A Voz do Meu Amado: Eis Que Vem',
+  801: 'De Noite Busquei Aquele a Quem Ama Minha Alma',
+  802: 'Quem é Esta que Sobe do Deserto?',
+  803: 'Tu És Toda Formosa, Minha Amiga',
+  804: 'Vem do Líbano, Esposa, Vem',
+  805: 'Jardim Fechado, Fonte Selada',
+  806: 'Eu Estava Dormindo, mas o Meu Coração Velava',
+  807: 'Por que Buscais Aquele que se Foi?',
+  808: 'O Meu Amado é Branco e Rosado',
+  809: 'Eu Sou do Meu Amado, e o Meu Amado é Meu',
+  810: 'Quão Formosos São os Teus Pés',
+  811: 'Tornemos Cedo às Vinhas',
+  812: 'Ah, Se Tu Fosses Como Meu Irmão',
+  813: 'O Amor é Forte Como a Morte',
+  814: 'O Selo Sobre o Coração: Muitas Águas Não Apagam',
+  815: 'O Boi Conhece o Seu Possuidor',
+  816: 'O Monte da Casa do Senhor Será Exaltado',
+  817: 'O Vinhal Inútil: Pesar de Deus',
+  818: 'Santo, Santo, Santo: Eis-me, Envia-me',
+  819: 'O Sinal de Emanuel: A Virgem Conceberá',
+  820: 'O Menino que Nos Nasceu: Pai da Eternidade',
+  821: 'A Mão Estendida Ainda',
+  822: 'A Vara de Jessé: O Lobo com o Cordeiro',
+  823: 'Sentença contra Babilônia',
+  824: 'O Que Caíste do Céu: Lúcifer',
+  825: 'Sentença contra Moabe',
+  826: 'Sentença contra Damasco',
+  827: 'Sentença contra o Egito',
+  828: 'Sentença sobre o Deserto do Mar',
+  829: 'Sentença sobre Edom',
+  830: 'Eliaquim Substitui Sebna',
+  831: 'Sentença contra Tiro',
+  832: 'O Senhor Vai Esvaziar a Terra',
+  833: 'O Banquete do Monte Santo',
+  834: 'O Justo de Coração Firme em Paz',
+  835: 'O Leviatã Punido',
+  836: 'O Embriagado Sem Vinho: Efraim Caído',
+  837: 'Ai de Ariel: Cidade Cercada',
+  838: 'Ai dos Filhos Rebeldes: Aliança com Egito',
+  839: 'O Egito é Homem, Não Deus',
+  840: 'Eis que um Rei Reinará em Justiça',
+  841: 'O Espírito Será Derramado',
+  842: 'O Dia da Vingança do Senhor',
+  843: 'O Deserto Florirá como o Lírio',
+  844: 'Senaqueribe Cerca Jerusalém',
+  845: 'A Oração de Ezequias',
+  846: 'Ezequias Adoece e Sara',
+  847: 'Os Embaixadores de Babilônia',
+  848: 'Consolai, Consolai o Meu Povo',
+  849: 'Eis o Meu Servo, Quem Sustenho',
+  850: 'Vós Sois Minhas Testemunhas',
+  851: 'Eu Sou o Primeiro e o Último',
+  852: 'Assim Diz o Senhor a Ciro, seu Ungido',
+  853: 'Os Ídolos Pesam Sobre os Que os Carregam',
+  854: 'A Queda de Babilônia',
+  855: 'A Servidão de Israel Acabou',
+  856: 'O Servo Como Espada Aguda',
+  857: 'Despertai, Despertai, Sião',
+  858: 'Como São Belos os Pés do Que Anuncia',
+  859: 'O Servo Sofredor: Foi Ferido por Nossas Transgressões',
+  860: 'Estende as Cordas da Tua Tenda',
+  861: 'Buscai o Senhor Enquanto Se Pode Achar',
+  862: 'Estrangeiros Aderindo ao Senhor',
+  863: 'O Que é Verdadeiro Jejum',
+  864: 'A Mão do Senhor Não Está Encolhida',
+  865: 'Levanta-te, Resplandece, Tua Luz Chegou',
+  866: 'O Espírito do Senhor Está Sobre Mim',
+  867: 'Por Amor de Sião Não Me Calarei',
+  868: 'Quem é Este que Vem de Edom?',
+  869: 'A Oração de Lamentação',
+  870: 'Novos Céus e Nova Terra',
+  871: 'Tinha Eu Pronto a Quem Não Perguntava',
+  872: 'Profecias Diversas (Is 49)',
+  873: 'Profecias Diversas (Is 50)',
+  874: 'Profecias Diversas (Is 51)',
+  875: 'Profecias Diversas (Is 52)',
+  876: 'Profecias Diversas (Is 53)',
+  877: 'Profecias Diversas (Is 54)',
+  878: 'Profecias Diversas (Is 55)',
+  879: 'Profecias Diversas (Is 56)',
+  880: 'Profecias Diversas (Is 57)',
+  881: 'Profecias Diversas (Is 58)',
+  882: 'Profecias Diversas (Is 59)',
+  883: 'Profecias Diversas (Is 60)',
+  884: 'Profecias Diversas (Is 61)',
+  885: 'Profecias Diversas (Is 62)',
+  886: 'Profecias Diversas (Is 63)',
+  887: 'Profecias Diversas (Is 64)',
+  888: 'Profecias Diversas (Is 65)',
+  889: 'Profecias Diversas (Is 66)',
+  890: 'Recapitulação dos Cânticos do Servo',
+  891: 'O Trono Alto e Sublime',
+  892: 'O Ramo do Justo',
+  893: 'O Senhor Está Comigo como um Guerreiro',
+  894: 'A Justiça Será Como Pão para os Pobres',
+  895: 'O Anjo do Senhor Acampa-Se',
+  896: 'Antes de Te Formar no Ventre Te Conheci',
+  897: 'Dois Males: Fonte Abandonada, Cisternas Rotas',
+  898: 'Volta, Pérfida Israel',
+  899: 'A Morte Subiu Pelas Janelas',
+  900: 'Andai pelas Praças, Buscai um Justo',
+  901: 'Sentinelas Atalaiando: Não Quiseram Ouvir',
+  902: 'Templo, Templo, Templo: Falsa Confiança',
+  903: 'Não Há Bálsamo em Gileade?',
+  904: 'Não Há Quem Se Glorie em Sua Sabedoria',
+  905: 'A Vasilha do Oleiro',
+  906: 'O Jarro Quebrado em Tofete',
+  907: 'Persuadiste-me, Senhor, e Eu Me Deixei',
+  908: 'O Cesto de Figos Bons e Maus',
+  909: 'Pelo Pescoço com Jugos',
+  910: 'O Profeta Hananias e a Vara Quebrada',
+  911: 'Carta aos Cativos: Buscai a Paz da Cidade',
+  912: 'O Vinho Recusado pelos Recabitas',
+  913: 'A Aliança Quebrada Sobre Escravos',
+  914: 'O Rolo Queimado por Jeoiaquim',
+  915: 'Jeremias na Cisterna',
+  916: 'A Promessa da Nova Aliança',
+  917: 'O Compra do Campo de Anatote',
+  918: 'A Cidade Toma da por Nabucodonosor',
+  919: 'Gedalias Assassinado',
+  920: 'Fuja Para o Egito? Não Iremos',
+  921: 'Profecias contra o Egito',
+  922: 'Profecias contra os Filisteus',
+  923: 'Profecias contra Moabe',
+  924: 'Profecias contra Amom',
+  925: 'Profecias contra Edom',
+  926: 'Profecias contra Damasco',
+  927: 'Profecias contra Quedar',
+  928: 'Profecias contra Elão',
+  929: 'Profecias contra Babilônia (parte 1)',
+  930: 'Profecias contra Babilônia (parte 2)',
+  931: 'A Queda de Jerusalém Narrada',
+  932: 'Profecias Diversas (Jr 4)',
+  933: 'Profecias Diversas (Jr 5)',
+  934: 'Profecias Diversas (Jr 6)',
+  935: 'Profecias Diversas (Jr 9)',
+  936: 'Profecias Diversas (Jr 10)',
+  937: 'Profecias Diversas (Jr 11)',
+  938: 'Profecias Diversas (Jr 12)',
+  939: 'Profecias Diversas (Jr 13)',
+  940: 'Profecias Diversas (Jr 14)',
+  941: 'Profecias Diversas (Jr 15)',
+  942: 'Profecias Diversas (Jr 16)',
+  943: 'Profecias Diversas (Jr 17)',
+  944: 'Profecias Diversas (Jr 21)',
+  945: 'Profecias Diversas (Jr 22)',
+  946: 'Profecias Diversas (Jr 23)',
+  947: 'Profecias Diversas (Jr 25)',
+  948: 'Profecias Diversas (Jr 26)',
+  949: 'Profecias Diversas (Jr 30)',
+  950: 'Profecias Diversas (Jr 31)',
+  951: 'Profecias Diversas (Jr 33)',
+  952: 'Profecias Diversas (Jr 34)',
+  953: 'Profecias Diversas (Jr 37)',
+  954: 'Profecias Diversas (Jr 39)',
+  955: 'Profecias Diversas (Jr 40)',
+  956: 'Profecias Diversas (Jr 41)',
+  957: 'Profecias Diversas (Jr 42)',
+  958: 'Profecias Diversas (Jr 43)',
+  959: 'Profecias Diversas (Jr 44)',
+  960: 'Profecias Diversas (Jr 45)',
+  961: 'A Ira Como Vinho Forte',
+  962: 'A Restauração Prometida',
+  963: 'A Renovação Espiritual Anunciada',
+  964: 'O Justo Renovo de Davi',
+  965: 'A Profecia dos Setenta Anos',
+  966: 'O Bom Pastor Versus Maus Pastores',
+  967: 'O Rei que Tudo Verá',
+  968: 'Maldito Quem Confia no Homem',
+  969: 'Coração Enganoso Mais que Tudo',
+  970: 'Águas Vivas, o Senhor',
+  971: 'A Esperança Final Restaurada',
+  972: 'O Despertar das Nações',
+  973: 'A Praga sobre os Ídolos',
+  974: 'O Vinho da Ira',
+  975: 'Os Ímpios Beberão o Cálice',
+  976: 'A Espada do Senhor sobre as Nações',
+  977: 'Como Está Sentada Solitária a Cidade',
+  978: 'O Senhor Tornou-Se como Inimigo',
+  979: 'Eu Sou o Homem que Viu a Aflição',
+  980: 'Como se Escureceu o Ouro',
+  981: 'Lembra-te, Senhor, do que Nos Tem Sucedido',
+  982: 'A Visão do Carro: Quatro Seres Viventes',
+  983: 'Filho do Homem, Eu Te Envio',
+  984: 'Atalaia da Casa de Israel',
+  985: 'O Tijolo: Sítio de Jerusalém',
+  986: 'A Espada sobre os Montes',
+  987: 'O Fim Vem sobre os Quatro Cantos',
+  988: 'As Abominações no Templo',
+  989: 'O Homem Vestido de Linho',
+  990: 'A Glória Sai do Templo',
+  991: 'O Cinto de Linho',
+  992: 'A Brasa Acesa',
+  993: 'A Alma que Pecar Esta Morrerá',
+  994: 'Lamentação pelos Príncipes',
+  995: 'A Cidade Abandonada na Infância',
+  996: 'A Águia e o Cedro',
+  997: 'O Filho do Pai Justo',
+  998: 'A Casa Rebelde Não Quer Ouvir',
+  999: 'A Espada Brunida',
+  1000: 'Oolá e Oolibá: As Duas Irmãs',
+  1001: 'A Panela com Ferrugem',
+  1002: 'A Mulher do Profeta Morre',
+  1003: 'Profecias contra Amom, Moabe, Edom, Filisteus',
+  1004: 'Profecia contra Tiro',
+  1005: 'Lamento sobre Tiro',
+  1006: 'O Príncipe de Tiro',
+  1007: 'Profecia contra o Egito',
+  1008: 'O Cedro Egípcio Derrubado',
+  1009: 'Lamentação pelo Faraó',
+  1010: 'O Atalaia Responsável',
+  1011: 'Os Pastores Egoístas de Israel',
+  1012: 'O Monte Seir: Edom',
+  1013: 'Os Montes de Israel Restaurados',
+  1014: 'O Vale dos Ossos Secos',
+  1015: 'Ufala-Israel Reunidos',
+  1016: 'A Profecia contra Gogue',
+  1017: 'A Derrota de Gogue',
+  1018: 'O Novo Templo: Medições',
+  1019: 'A Porta Oriental Fechada',
+  1020: 'O Príncipe e as Ofertas',
+  1021: 'O Rio que Sai do Templo',
+  1022: 'A Divisão da Terra',
+  1023: 'A Cidade: O Senhor Está Ali',
+  1024: 'Profecias Diversas (Ez 9)',
+  1025: 'Profecias Diversas (Ez 11)',
+  1026: 'Profecias Diversas (Ez 13)',
+  1027: 'Profecias Diversas (Ez 14)',
+  1028: 'Profecias Diversas (Ez 19)',
+  1029: 'Profecias Diversas (Ez 20)',
+  1030: 'Profecias Diversas (Ez 22)',
+  1031: 'Profecias Diversas (Ez 33b)',
+  1032: 'Os Quatro Jovens em Babilônia',
+  1033: 'A Estátua do Sonho',
+  1034: 'A Fornalha Ardente',
+  1035: 'A Loucura de Nabucodonosor',
+  1036: 'A Escrita na Parede: Mene, Mene',
+  1037: 'Daniel na Cova dos Leões',
+  1038: 'As Quatro Feras',
+  1039: 'O Carneiro e o Bode',
+  1040: 'A Profecia das Setenta Semanas',
+  1041: 'O Homem Vestido de Linho',
+  1042: 'Os Reis do Norte e do Sul',
+  1043: 'O Tempo do Fim',
+  1044: 'O Príncipe Miguel Se Levanta',
+  1045: 'Os Sábios Brilharão como o Resplendor',
+  1046: 'Vai-te, Daniel, até o Fim',
+  1047: 'A Esperança da Ressurreição',
+  1048: 'Casa-te com uma Mulher de Prostituição',
+  1049: 'Lo-Ami: Não Meu Povo',
+  1050: 'Compra-a de Novo: Amor Restaurador',
+  1051: 'Não Há Conhecimento de Deus na Terra',
+  1052: 'Vinde, Tornemos para o Senhor',
+  1053: 'Misericórdia Quero, e Não Sacrifício',
+  1054: 'Semeai Para Vós em Justiça',
+  1055: 'O Bezerro de Samaria Será Quebrado',
+  1056: 'Israel é uma Vide Vazia',
+  1057: 'Quando Israel Era Menino, Eu o Amei',
+  1058: 'A Volta para o Senhor',
+  1059: 'Eu Te Resgatarei do Inferno',
+  1060: 'Tornai-vos ao Senhor Vosso Deus',
+  1061: 'A Praga dos Gafanhotos',
+  1062: 'O Dia do Senhor É Grande',
+  1063: 'Rasgai Vossos Corações',
+  1064: 'Derramarei o Meu Espírito sobre Toda Carne',
+  1065: 'No Vale de Josafá',
+  1066: 'A Restauração de Sião',
+  1067: 'O Senhor Habitará em Sião',
+  1068: 'Por Três Transgressões e Por Quatro: Damasco',
+  1069: 'Sentenças sobre as Nações Vizinhas',
+  1070: 'Por Três Transgressões e Por Quatro: Israel',
+  1071: 'Ouvi Esta Palavra, Vacas de Basã',
+  1072: 'Vinde a Betel e Transgredi',
+  1073: 'Buscai-me e Vivereis',
+  1074: 'Ai dos Que Desejam o Dia do Senhor',
+  1075: 'Ai dos que Vivem Sossegados em Sião',
+  1076: 'O Cesto de Frutos do Verão',
+  1077: 'Vi o Senhor em Pé Junto ao Altar',
+  1078: 'O Tabernáculo Caído de Davi Será Levantado',
+  1079: 'Não Sou Profeta nem Filho de Profeta',
+  1080: 'A Restauração Final de Israel',
+  1081: 'A Soberba de Edom Te Enganou',
+  1082: 'Como te Cortaste, Edom',
+  1083: 'No Dia em que Ficaste de Longe',
+  1084: 'O Dia do Senhor Está Perto sobre Todas as Nações',
+  1085: 'O Reino Será do Senhor',
+  1086: 'Levanta-te, Vai a Nínive',
+  1087: 'Do Ventre do Peixe Clamei',
+  1088: 'A Pregação em Nínive: Quarenta Dias',
+  1089: 'O Pranto do Profeta sob a Aboboreira',
+  1090: 'Não Hei de Eu Ter Compaixão de Nínive?',
+  1091: 'O Senhor Sai do Seu Lugar',
+  1092: 'Ai dos que Maquinam no Leito',
+  1093: 'Os Falsos Profetas e os Verdadeiros',
+  1094: 'Nos Últimos Dias: Espadas em Arados',
+  1095: 'Tu, Belém Efrata, Pequena Entre Mil',
+  1096: 'O que o Senhor Pede de Ti',
+  1097: 'A Cidade Suja Será Lavada',
+  1098: 'Não Sobrou Nenhum Reto',
+  1099: 'O Pastor Apascentará o Rebanho',
+  1100: 'Quem é Deus como Tu?',
+  1101: 'A Confiança no Senhor em Meio à Treva',
+  1102: 'A Misericórdia Vencerá',
+  1103: 'Deus Zeloso e Vingador',
+  1104: 'Bons São os Pés do Mensageiro de Paz',
+  1105: 'Nínive Será Devastada',
+  1106: 'Os Carros Estrondarão pelas Ruas',
+  1107: 'Ai da Cidade Sangrenta',
+  1108: 'Tua Ferida é Incurável',
+  1109: 'Bater Palmas Sobre Ti, Nínive',
+  1110: 'Até Quando, Senhor, Clamarei?',
+  1111: 'O Justo Pela Sua Fé Viverá',
+  1112: 'Ainda que a Figueira Não Floresça',
+  1113: 'Destruirei Tudo de Cima da Face da Terra',
+  1114: 'Buscai o Senhor, Vós Todos os Mansos',
+  1115: 'Ai da Cidade Imunda',
+  1116: 'Esperai-me, Diz o Senhor',
+  1117: 'O Senhor Está no Meio de Ti: Cantará Sobre Ti',
+  1118: 'É Tempo de Habitar Casas Forradas?',
+  1119: 'Considerai os Vossos Caminhos',
+  1120: 'A Glória Desta Última Casa Será Maior',
+  1121: 'Desde Hoje Vos Abençoarei',
+  1122: 'Te Porei Como Anel de Selar',
+  1123: 'Tornai-vos a Mim, Diz o Senhor',
+  1124: 'O Homem Entre as Murtas',
+  1125: 'Os Quatro Chifres e os Quatro Ferreiros',
+  1126: 'O Homem com a Corda de Medir',
+  1127: 'O Sumo Sacerdote Vestido de Roupas Sujas',
+  1128: 'O Candeeiro de Ouro e as Duas Oliveiras',
+  1129: 'O Livro Voante',
+  1130: 'A Mulher na Efa',
+  1131: 'Os Quatro Carros',
+  1132: 'Coroas Sobre a Cabeça de Josué',
+  1133: 'Choraste Pelo Templo ou Por Vós?',
+  1134: 'A Verdade e a Justiça Falai',
+  1135: 'Ainda Habitarão Velhos e Velhas em Jerusalém',
+  1136: 'O Teu Rei Vem Sobre um Jumentinho',
+  1137: 'O Bom Pastor Rejeitado',
+  1138: 'O Pastor Insensato',
+  1139: 'Olharão para Aquele que Traspassaram',
+  1140: 'Os Dois Terços Cortados, o Terço Provado',
+  1141: 'O Dia do Senhor Vem',
+  1142: 'Naquele Dia Não Haverá Frio nem Neve',
+  1143: 'Não Há Mais Cananeu na Casa do Senhor',
+  1144: 'Profecia Continuada do Pastor',
+  1145: 'A Restauração Final de Israel',
+  1146: 'O Senhor Será Rei sobre Toda a Terra',
+  1147: 'Santidade Até nas Sinetas dos Cavalos',
+  1148: 'Em Que Nos Tens Amado?',
+  1149: 'Os Sacerdotes que Desprezam Meu Nome',
+  1150: 'Roubareis Vós a Deus? Em Dízimos e Ofertas',
+  1151: 'Os que Temem ao Senhor: Livro de Memórias',
+  1152: 'Antes que Venha o Dia do Senhor: Elias Voltará',
 };
 
 function gerarTituloCard(d: DiaDevocional): string | null {
