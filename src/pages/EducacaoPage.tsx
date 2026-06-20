@@ -14,8 +14,8 @@ const C = {
   green: '#00e5a0',
   gold:  '#f5c842',
   deep:  '#050714',
-  card:  'rgba(255,255,255,0.04)',
-  border:'rgba(255,255,255,0.08)',
+  card:  'rgba(255,255,255,0.06)',
+  border:'rgba(255,255,255,0.12)',
 };
 
 interface AudienceCard {
@@ -188,11 +188,10 @@ export default function EducacaoPage() {
 
       {/* Hero */}
       <section className="pt-32 pb-20 px-4 relative overflow-hidden">
-        {/* Background glow */}
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-0 left-1/4 w-[500px] h-[500px] rounded-full opacity-10"
+          <div className="absolute top-0 left-1/4 w-[600px] h-[600px] rounded-full opacity-12"
             style={{ background: `radial-gradient(circle, ${C.blue}, transparent 70%)`, filter: 'blur(80px)' }} />
-          <div className="absolute top-1/3 right-1/4 w-[400px] h-[400px] rounded-full opacity-8"
+          <div className="absolute top-1/3 right-1/4 w-[500px] h-[500px] rounded-full opacity-10"
             style={{ background: `radial-gradient(circle, ${C.rose}, transparent 70%)`, filter: 'blur(100px)' }} />
         </div>
 
@@ -202,23 +201,22 @@ export default function EducacaoPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border mb-6"
-              style={{ borderColor: `${C.blue}40`, background: `${C.blue}0A` }}>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border mb-7"
+              style={{ borderColor: `${C.blue}55`, background: `${C.blue}12` }}>
               <GraduationCap className="w-4 h-4" style={{ color: C.blue }} />
-              <span className="text-xs font-black uppercase tracking-widest" style={{ color: C.blue }}>
+              <span className="text-sm font-black uppercase tracking-widest" style={{ color: C.blue }}>
                 Educação & Formação
               </span>
             </div>
 
-            <h1 className="font-black uppercase leading-none mb-6"
-              style={{ fontSize: 'clamp(2rem, 6vw, 3.5rem)', letterSpacing: '-0.02em' }}>
+            <h1 className="font-black uppercase leading-none mb-7"
+              style={{ fontSize: 'clamp(2.2rem, 6vw, 3.8rem)', letterSpacing: '-0.02em' }}>
               Bíblia Visual Expositiva<br />
               <span style={{ color: C.blue }}>no Ensino</span>{' '}
               <span style={{ color: C.rose }}>& na Igreja</span>
             </h1>
 
-            <p className="text-white/55 max-w-2xl mx-auto leading-relaxed"
-              style={{ fontSize: 'clamp(0.9rem, 2vw, 1.05rem)' }}>
+            <p style={{ fontSize: 'clamp(1rem, 2.2vw, 1.2rem)', color: 'rgba(255,255,255,0.82)', maxWidth: 680, margin: '0 auto', lineHeight: 1.7 }}>
               Recursos, orientações e estratégias para docentes, pastores, líderes,
               seminários e instituições usarem os diagramas e materiais da plataforma
               com excelência no ensino e discipulado bíblico.
@@ -235,17 +233,17 @@ export default function EducacaoPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="mb-10 text-center"
+            className="mb-12 text-center"
           >
-            <p className="text-xs font-black uppercase tracking-widest mb-3" style={{ color: C.blue }}>
+            <p className="text-sm font-black uppercase tracking-widest mb-3" style={{ color: C.blue }}>
               Fundamentos
             </p>
-            <h2 className="font-black uppercase text-2xl md:text-3xl">
+            <h2 className="font-black uppercase" style={{ fontSize: 'clamp(1.6rem, 3.5vw, 2.4rem)' }}>
               Por que usar a Bíblia Visual Expositiva?
             </h2>
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {PRINCIPIOS.map((p, i) => (
               <motion.div
                 key={p.titulo}
@@ -253,16 +251,16 @@ export default function EducacaoPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.07, duration: 0.4 }}
-                className="rounded-2xl p-5 border flex flex-col gap-3"
+                className="rounded-2xl p-6 border flex flex-col gap-4"
                 style={{ background: C.card, borderColor: C.border }}
               >
-                <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0"
-                  style={{ background: `${p.cor}18`, color: p.cor, border: `1px solid ${p.cor}30` }}>
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0"
+                  style={{ background: `${p.cor}22`, color: p.cor, border: `1px solid ${p.cor}40` }}>
                   {p.icon}
                 </div>
                 <div>
-                  <p className="font-bold text-sm text-white mb-1">{p.titulo}</p>
-                  <p className="text-white/50 text-xs leading-relaxed">{p.desc}</p>
+                  <p className="font-bold text-base text-white mb-2">{p.titulo}</p>
+                  <p className="leading-relaxed" style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.75)' }}>{p.desc}</p>
                 </div>
               </motion.div>
             ))}
@@ -270,7 +268,7 @@ export default function EducacaoPage() {
         </div>
       </section>
 
-      {/* Como usar — passo a passo */}
+      {/* Como usar */}
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <motion.div
@@ -278,17 +276,17 @@ export default function EducacaoPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="mb-10 text-center"
+            className="mb-12 text-center"
           >
-            <p className="text-xs font-black uppercase tracking-widest mb-3" style={{ color: C.green }}>
+            <p className="text-sm font-black uppercase tracking-widest mb-3" style={{ color: C.green }}>
               Começando
             </p>
-            <h2 className="font-black uppercase text-2xl md:text-3xl">
+            <h2 className="font-black uppercase" style={{ fontSize: 'clamp(1.6rem, 3.5vw, 2.4rem)' }}>
               Como utilizar os recursos
             </h2>
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {COMO_USAR.map((item, i) => (
               <motion.div
                 key={item.titulo}
@@ -296,26 +294,28 @@ export default function EducacaoPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1, duration: 0.45 }}
-                className="rounded-2xl p-5 border flex flex-col gap-4 group"
+                className="rounded-2xl p-6 border flex flex-col gap-4 group"
                 style={{ background: C.card, borderColor: C.border }}
               >
                 <div className="flex items-center gap-3">
-                  <span className="font-black text-3xl leading-none" style={{ color: `${item.cor}40` }}>
+                  <span className="font-black leading-none" style={{ fontSize: '2.2rem', color: `${item.cor}55` }}>
                     {item.num}
                   </span>
-                  <div className="w-px h-8" style={{ background: `${item.cor}30` }} />
+                  <div className="w-px h-8" style={{ background: `${item.cor}40` }} />
                   <p className="font-black text-sm uppercase tracking-wide" style={{ color: item.cor }}>
                     {item.titulo}
                   </p>
                 </div>
-                <p className="text-white/50 text-xs leading-relaxed flex-1">{item.desc}</p>
+                <p className="leading-relaxed flex-1" style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.78)' }}>
+                  {item.desc}
+                </p>
                 <Link
                   to={item.link}
-                  className="flex items-center gap-1.5 text-xs font-black uppercase tracking-widest transition-all group-hover:gap-2.5"
-                  style={{ color: item.cor }}
+                  className="flex items-center gap-1.5 font-black uppercase tracking-widest transition-all group-hover:gap-2.5"
+                  style={{ fontSize: '0.75rem', color: item.cor }}
                 >
                   {item.label}
-                  <ChevronRight className="w-3.5 h-3.5" />
+                  <ChevronRight className="w-4 h-4" />
                 </Link>
               </motion.div>
             ))}
@@ -331,15 +331,15 @@ export default function EducacaoPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="mb-10 text-center"
+            className="mb-12 text-center"
           >
-            <p className="text-xs font-black uppercase tracking-widest mb-3" style={{ color: C.rose }}>
+            <p className="text-sm font-black uppercase tracking-widest mb-3" style={{ color: C.rose }}>
               Orientações por Perfil
             </p>
-            <h2 className="font-black uppercase text-2xl md:text-3xl">
+            <h2 className="font-black uppercase mb-4" style={{ fontSize: 'clamp(1.6rem, 3.5vw, 2.4rem)' }}>
               Para quem é este material?
             </h2>
-            <p className="text-white/45 text-sm mt-3 max-w-xl mx-auto leading-relaxed">
+            <p style={{ fontSize: '1rem', color: 'rgba(255,255,255,0.72)', maxWidth: 520, margin: '0 auto', lineHeight: 1.65 }}>
               Orientações específicas para cada tipo de educador, líder e contexto de uso.
             </p>
           </motion.div>
@@ -356,24 +356,24 @@ export default function EducacaoPage() {
                 style={{ background: C.card, borderColor: C.border }}
               >
                 {/* Header */}
-                <div className="px-5 py-4 border-b flex items-start gap-3"
-                  style={{ borderColor: C.border, background: `${a.color}08` }}>
-                  <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0"
-                    style={{ background: `${a.color}18`, color: a.color, border: `1px solid ${a.color}30` }}>
+                <div className="px-6 py-5 border-b flex items-start gap-3"
+                  style={{ borderColor: C.border, background: `${a.color}10` }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0"
+                    style={{ background: `${a.color}22`, color: a.color, border: `1px solid ${a.color}40` }}>
                     {a.icon}
                   </div>
                   <div>
-                    <p className="font-black text-sm text-white leading-tight">{a.titulo}</p>
-                    <p className="text-white/40 text-xs mt-0.5">{a.subtitulo}</p>
+                    <p className="font-black text-base text-white leading-tight">{a.titulo}</p>
+                    <p className="text-sm mt-1" style={{ color: 'rgba(255,255,255,0.62)' }}>{a.subtitulo}</p>
                   </div>
                 </div>
 
                 {/* Tópicos */}
-                <ul className="px-5 py-4 flex flex-col gap-2.5 flex-1">
+                <ul className="px-6 py-5 flex flex-col gap-3 flex-1">
                   {a.topicos.map((t, j) => (
-                    <li key={j} className="flex items-start gap-2.5">
-                      <span className="mt-1 w-1.5 h-1.5 rounded-full shrink-0" style={{ background: a.color }} />
-                      <span className="text-white/60 text-xs leading-relaxed">{t}</span>
+                    <li key={j} className="flex items-start gap-3">
+                      <span className="mt-2 w-1.5 h-1.5 rounded-full shrink-0" style={{ background: a.color }} />
+                      <span className="leading-relaxed" style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.80)' }}>{t}</span>
                     </li>
                   ))}
                 </ul>
@@ -383,7 +383,7 @@ export default function EducacaoPage() {
         </div>
       </section>
 
-      {/* Dicas práticas — bloco destaque */}
+      {/* Boas Práticas */}
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <motion.div
@@ -392,20 +392,20 @@ export default function EducacaoPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
             className="rounded-3xl border p-8 md:p-12"
-            style={{ background: `linear-gradient(135deg, ${C.blue}0C 0%, ${C.rose}0C 100%)`, borderColor: `${C.blue}25` }}
+            style={{ background: `linear-gradient(135deg, ${C.blue}0F 0%, ${C.rose}0F 100%)`, borderColor: `${C.blue}30` }}
           >
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded-xl flex items-center justify-center"
-                style={{ background: `${C.blue}18`, color: C.blue, border: `1px solid ${C.blue}30` }}>
+            <div className="flex items-center gap-4 mb-8">
+              <div className="w-11 h-11 rounded-xl flex items-center justify-center"
+                style={{ background: `${C.blue}22`, color: C.blue, border: `1px solid ${C.blue}40` }}>
                 <Download className="w-5 h-5" />
               </div>
               <div>
-                <p className="font-black text-white text-base uppercase tracking-wide">Boas Práticas no Uso</p>
-                <p className="text-white/40 text-xs">Para maximizar o impacto do ensino visual</p>
+                <p className="font-black text-white text-lg uppercase tracking-wide">Boas Práticas no Uso</p>
+                <p className="text-sm mt-0.5" style={{ color: 'rgba(255,255,255,0.62)' }}>Para maximizar o impacto do ensino visual</p>
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {[
                 {
                   titulo: 'Antes do Ensino',
@@ -445,14 +445,15 @@ export default function EducacaoPage() {
                 },
               ].map((bloco, i) => (
                 <div key={i}>
-                  <p className="font-black text-xs uppercase tracking-widest mb-3" style={{ color: i % 2 === 0 ? C.blue : C.green }}>
+                  <p className="font-black text-sm uppercase tracking-widest mb-4"
+                    style={{ color: i % 2 === 0 ? C.blue : C.green }}>
                     {bloco.titulo}
                   </p>
-                  <ul className="flex flex-col gap-2">
+                  <ul className="flex flex-col gap-3">
                     {bloco.items.map((item, j) => (
-                      <li key={j} className="flex items-start gap-2">
-                        <ChevronRight className="w-3.5 h-3.5 mt-0.5 shrink-0" style={{ color: i % 2 === 0 ? C.blue : C.green }} />
-                        <span className="text-white/55 text-xs leading-relaxed">{item}</span>
+                      <li key={j} className="flex items-start gap-2.5">
+                        <ChevronRight className="w-4 h-4 mt-0.5 shrink-0" style={{ color: i % 2 === 0 ? C.blue : C.green }} />
+                        <span className="leading-relaxed" style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.82)' }}>{item}</span>
                       </li>
                     ))}
                   </ul>
@@ -472,28 +473,29 @@ export default function EducacaoPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <p className="text-xs font-black uppercase tracking-widest mb-4" style={{ color: C.gold }}>
+            <p className="text-sm font-black uppercase tracking-widest mb-4" style={{ color: C.gold }}>
               Pronto para começar?
             </p>
-            <h2 className="font-black uppercase text-2xl md:text-3xl mb-4">
+            <h2 className="font-black uppercase mb-5" style={{ fontSize: 'clamp(1.6rem, 3.5vw, 2.4rem)' }}>
               Explore os Recursos da Plataforma
             </h2>
-            <p className="text-white/45 text-sm mb-8 leading-relaxed max-w-xl mx-auto">
+            <p className="mb-10 leading-relaxed max-w-xl mx-auto"
+              style={{ fontSize: '1rem', color: 'rgba(255,255,255,0.75)' }}>
               Acesse a biblioteca completa com os 66 livros da Bíblia, os diagramas quiásticos,
               o devocional diário e os tutoriais de uso. Tudo disponível gratuitamente.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
               <Link
                 to="/biblioteca"
-                className="w-full sm:w-auto px-8 py-3.5 rounded-2xl font-black text-xs uppercase tracking-widest transition-all hover:scale-105 active:scale-95"
+                className="w-full sm:w-auto px-8 py-4 rounded-2xl font-black text-sm uppercase tracking-widest transition-all hover:scale-105 active:scale-95"
                 style={{ background: C.blue, color: C.deep }}
               >
                 Acessar Biblioteca
               </Link>
               <Link
                 to="/devocional"
-                className="w-full sm:w-auto px-8 py-3.5 rounded-2xl font-black text-xs uppercase tracking-widest border transition-all hover:scale-105 active:scale-95"
-                style={{ borderColor: `${C.blue}40`, color: C.blue }}
+                className="w-full sm:w-auto px-8 py-4 rounded-2xl font-black text-sm uppercase tracking-widest border transition-all hover:scale-105 active:scale-95"
+                style={{ borderColor: `${C.blue}55`, color: C.blue }}
               >
                 Ver Devocional
               </Link>
@@ -501,8 +503,8 @@ export default function EducacaoPage() {
                 href="https://chat.whatsapp.com/HEIIFYAmLij62M0jRwwVhH"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto px-8 py-3.5 rounded-2xl font-black text-xs uppercase tracking-widest border transition-all hover:scale-105 active:scale-95"
-                style={{ borderColor: `${C.green}40`, color: C.green }}
+                className="w-full sm:w-auto px-8 py-4 rounded-2xl font-black text-sm uppercase tracking-widest border transition-all hover:scale-105 active:scale-95"
+                style={{ borderColor: `${C.green}55`, color: C.green }}
               >
                 Entrar no Clube
               </a>
