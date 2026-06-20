@@ -6556,10 +6556,20 @@ export default function DevocionalPage() {
                   <div style={{ fontSize: 11, color: 'rgba(0,212,255,0.75)', fontWeight: 600, marginBottom: 8, fontStyle: 'italic' }}>
                     {formatarDataDia(diaHoje.dia)}
                   </div>
-                  <div style={{ fontWeight: 900, fontSize: 'clamp(16px,4vw,20px)', color: C.white, marginBottom: 4, lineHeight: 1.2 }}>
+                  <div style={{ fontSize: 10, color: 'rgba(0,212,255,0.6)', fontWeight: 700, marginBottom: 4, letterSpacing: '0.06em', textTransform: 'uppercase' }}>
                     {diaHoje.livroAbrev} {diaHoje.capitulos}
                   </div>
-                  <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.7)', marginBottom: 12, lineHeight: 1.4 }}>
+                  {gerarTituloCard(diaHoje) && (
+                    <div style={{ fontWeight: 900, fontSize: 'clamp(15px,4vw,19px)', color: C.white, marginBottom: 4, lineHeight: 1.25 }}>
+                      {gerarTituloCard(diaHoje)}
+                    </div>
+                  )}
+                  {!gerarTituloCard(diaHoje) && (
+                    <div style={{ fontWeight: 900, fontSize: 'clamp(16px,4vw,20px)', color: C.white, marginBottom: 4, lineHeight: 1.2 }}>
+                      {diaHoje.pericope}
+                    </div>
+                  )}
+                  <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.55)', marginBottom: 12, lineHeight: 1.4 }}>
                     {diaHoje.pericope}
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: 0 }}>
