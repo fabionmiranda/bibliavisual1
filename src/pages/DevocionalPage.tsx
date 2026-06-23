@@ -3878,1020 +3878,1826 @@ function reflexaoContextualizada(d: DiaDevocional, ref: string): string {
 
 function gerarParaPregar(d: DiaDevocional): string | null {
   // ── GÊNESIS ──────────────────────────────────────────────────────────────
-  if (d.dia === 1) return `✦ BIG IDEA
-A Palavra soberana de Deus transforma o caos em cosmos ordenado.
+  if (d.dia === 1) return `PARA PREGAR · Gênesis 1:1–2:4a
 
-📖 MOVIMENTOS DO TEXTO
-P — Caos primordial precede o ato criador
-A — Luz e trevas: o primeiro ordenamento temporal
-B — Águas e céu: separação do espaço superior
-C — Terra e plantas: o fundamento da vida
-◉ A' — Luminares que governam tempos e festas de Israel
-B' — Criaturas das águas e do céu: abundância ordenada
-C' — Criatura terrestre e o humano: domínio delegado
-P' — Repouso divino: a criação recebe seu telos
+BIG IDEA
+"A Palavra soberana transforma o caos em cosmos consagrado."
 
-✝ EIXO CRISTOLÓGICO
-Jo 1:3: "Tudo foi feito por intermédio dele" — o Verbo criador é o mesmo que recria em Cristo.`;
+MOVIMENTOS DO TEXTO
+[P]   · A criação começa onde o humano não consegue iniciar
+      → Sem o Criador não há ponto de partida para a existência
 
-  if (d.dia === 2) return `✦ BIG IDEA
-A árvore do conhecimento define a fronteira da confiança em Deus.
+[A]   · A Palavra distingue onde havia indistinção
+      → Cada separação é ato de governo, não de acaso
 
-📖 MOVIMENTOS DO TEXTO
-A — Solo seco aguarda o sopro divino
-B — O homem é formado do pó e da vida
-◉ C — A árvore do conhecimento do bem e do mal posta no centro
-A' — Os rios irrigam a terra de Havilá e Cuxe
-B' — O homem é colocado para cultivar e guardar
-C' — A proibição firma o limite da criatura
+[B]   · Deus organiza o espaço antes de preenchê-lo
+      → A ordem precede o conteúdo — assim também na vida de fé
 
-✝ EIXO CRISTOLÓGICO
-Rm 5:19: "pela obediência de um só, muitos serão feitos justos" — onde Adão escolheu a árvore, Cristo escolheu a cruz.`;
+[C]   · A terra produz por mandato, não por acaso
+      → O que a criação produz obedece à voz que a criou
 
-  if (d.dia === 3) return `✦ BIG IDEA
-A costela é o sinal da unidade na origem do casamento.
+◉ [A']  · Os luminares governam tempos e festas de Israel
+      → O tempo sagrado nasce da mesma Palavra que criou o tempo
 
-📖 MOVIMENTOS DO TEXTO
-A — Não é bom que o homem esteja só
-B — Os animais desfilam sem achar par
-◉ C — Deus tira a costela e forma a mulher
-B' — Adão reconhece: osso dos meus ossos
-A' — Por isso o homem deixa pai e mãe
+[B']  · As criaturas das águas e do céu recebem bênção e multiplicação
+      → A abundância é mandato bento, não fruto da luta
 
-✝ EIXO CRISTOLÓGICO
+[C']  · O humano recebe domínio delegado, não soberania absoluta
+      → Ser imagem de Deus é governar como Deus governa — com cuidado
+
+[P']  · Deus descansa: a criação recebe seu propósito no repouso divino
+      → O sábado não encerra a criação; ele a consagra
+
+EIXO CRISTOLÓGICO
+Jo 1:3: "Tudo foi feito por intermédio dele" — o Verbo criador é Cristo, o mesmo que recria.`;
+
+  if (d.dia === 2) return `PARA PREGAR · Gênesis 2:4b–17
+
+BIG IDEA
+"O limite imposto por Deus é o terreno onde a confiança floresce."
+
+MOVIMENTOS DO TEXTO
+[A]   · O ribeiro irriga a terra árida pela providência divina
+      → Onde Deus opera, a vida brota do que parecia seco
+
+[B]   · Deus forma o homem e o coloca no jardim para servir
+      → Vocação humana nasce de mãos divinas e propósito definido
+
+◉ [X]   · A ÁRVORE DO CONHECIMENTO É POSTA NO CENTRO DA LIBERDADE
+      → A presença do limite é a forma do amor que confia ao outro a escolha
+
+[B']  · Deus estabelece o homem no Éden como guardião do espaço sagrado
+      → Habitar com Deus exige cultivar e proteger o dom recebido
+
+[A']  · O mandamento marca o limite que define a criatura
+      → Onde há limite obedecido, há vida; onde se ignora, há morte
+
+EIXO CRISTOLÓGICO
+Rm 5:19: "pela obediência de um só, muitos serão feitos justos" — onde Adão falhou no limite, Cristo o cumpriu na cruz.`;
+
+  if (d.dia === 3) return `PARA PREGAR · Gênesis 2:18–25
+
+BIG IDEA
+"Deus cria a parceria humana retirando-a do próprio coração do homem."
+
+MOVIMENTOS DO TEXTO
+[A]   · "Não é bom que o homem esteja só" — a solidão não é o telos humano
+      → A vida em comunhão é projeto de Deus, não acréscimo posterior
+
+[B]   · Os animais desfilam e nenhum se mostra parceiro adequado
+      → Há vazios que somente o semelhante criado por Deus pode preencher
+
+◉ [X]   · A COSTELA RETIRADA NO SONO: DEUS OPERA O QUE O HOMEM NÃO VÊ
+      → O que mais nos completa é forjado por Deus enquanto descansamos nele
+
+[B']  · A mulher é formada da costela e reconhecida pelo homem
+      → A identidade do outro nasce do mesmo Deus que nos formou
+
+[A']  · Os dois tornam-se uma só carne na aliança matrimonial
+      → A união conjugal é restauração da unidade originária querida por Deus
+
+EIXO CRISTOLÓGICO
 Ef 5:32: "grande é este mistério, refiro-me a Cristo e à igreja" — o casamento aponta para a união do Noivo com a noiva.`;
 
-  if (d.dia === 4) return `✦ BIG IDEA
-A maldição sobre a serpente é o primeiro anúncio da redenção.
+  if (d.dia === 4) return `PARA PREGAR · Gênesis 3:1–24
 
-📖 MOVIMENTOS DO TEXTO
-A — Serpente seduz com a promessa de autonomia divina
-B — Cobertura de folhas revela vergonha nascida do pecado
-C — Acusações mútuas: responsabilidade fragmentada
-◉ D — Maldição sobre a serpente: a semente da mulher esmagará sua cabeça
-C' — Punição do homem e da mulher: labor e dor no mundo
-B' — Vestes de pele: Deus mesmo cobre a vergonha humana
-A' — Expulsão: o homem que quis ser como Deus é excluído da presença
+BIG IDEA
+"No próprio juízo da queda Deus anuncia o evangelho da redenção."
 
-✝ EIXO CRISTOLÓGICO
-Gl 4:4: "nascido de mulher" — Jesus é a semente prometida que esmaga a serpente.`;
+MOVIMENTOS DO TEXTO
+[A]   · A serpente seduz com a promessa de autonomia divina
+      → Toda tentação promete divinizar e termina escravizando
 
-  if (d.dia === 5) return `✦ BIG IDEA
-A linhagem de Caim mostra como o pecado constrói civilização sem Deus.
+[B]   · Folhas de figueira: o pecador cobre a vergonha por si mesmo
+      → A religião humana fabrica disfarces incapazes de cobrir a culpa
 
-📖 MOVIMENTOS DO TEXTO
-A — Caim e Abel apresentam ofertas distintas
-B — Caim mata Abel; o sangue clama da terra
-◉ C — Descendentes de Caim: cidade, artes e violência crescente
-B' — Lameque amplia a vingança em sétuplo
-A' — Sete nasce; começam a invocar o nome do Senhor
+[C]   · Acusações mútuas fragmentam a responsabilidade
+      → Onde o pecado entra, a comunhão se desfaz em transferência de culpa
 
-✝ EIXO CRISTOLÓGICO
+◉ [X]   · MALDIÇÃO À SERPENTE: A SEMENTE DA MULHER ESMAGARÁ SUA CABEÇA
+      → No próprio veredito divino se ouve a primeira promessa do evangelho
+
+[C']  · Punição ao homem e à mulher: dor e suor no mundo decaído
+      → O juízo é real, mas dentro de um plano maior de restauração
+
+[B']  · Vestes de pele: Deus mesmo cobre a vergonha humana
+      → Só o sacrifício provido por Deus pode cobrir o pecado humano
+
+[A']  · Expulsão do jardim: quem quis ser como Deus é afastado da presença
+      → A graça que expulsa também guarda o caminho da árvore da vida
+
+EIXO CRISTOLÓGICO
+Gl 4:4: "nascido de mulher" — Jesus é a semente prometida que esmaga a serpente na cruz.`;
+
+  if (d.dia === 5) return `PARA PREGAR · Gênesis 4:1–26
+
+BIG IDEA
+"A linhagem humana se bifurca entre violência sem Deus e adoração pela graça."
+
+MOVIMENTOS DO TEXTO
+[A]   · Caim e Abel nascem; suas ofertas revelam corações distintos
+      → O culto sincero brota da fé, não da forma
+
+[B]   · Caim mata Abel; o sangue clama da terra por justiça
+      → O pecado não dominado conduz à destruição do irmão
+
+◉ [X]   · OS DESCENDENTES DE CAIM CONSTROEM CIVILIZAÇÃO LONGE DA PRESENÇA DIVINA
+      → Progresso humano sem Deus produz cultura brilhante e coração endurecido
+
+[B']  · Lameque amplia a vingança em setenta e sete vezes
+      → O coração sem Deus transforma justiça em vingança ilimitada
+
+[A']  · Sete nasce; começa-se a invocar o nome do SENHOR
+      → A graça preserva uma linhagem que adora em meio à corrupção
+
+EIXO CRISTOLÓGICO
 Hb 12:24: "o sangue da aspersão fala melhor que o de Abel" — Cristo fala perdão onde Abel clamava por justiça.`;
 
-  if (d.dia === 6) return `✦ BIG IDEA
-Entre nascimentos e mortes, Enoque ensina o que é andar com Deus.
+  if (d.dia === 6) return `PARA PREGAR · Gênesis 5:1–32
 
-📖 MOVIMENTOS DO TEXTO
-A — Adão é gerado à imagem de Deus
-B — A genealogia avança em ciclos de nascer e morrer
-◉ — Enoque andou com Deus e foi tomado
-B' — A genealogia retoma sua marcha mortal
-A' — Noé surge como o repouso prometido à terra
+BIG IDEA
+"No meio da genealogia da morte, Enoque mostra que andar com Deus rompe o ciclo."
 
-✝ EIXO CRISTOLÓGICO
+MOVIMENTOS DO TEXTO
+[A]   · Adão é gerado à imagem de Deus — dignidade preservada apesar da queda
+      → A imagem manchada ainda dignifica e responsabiliza o homem
+
+[B]   · A genealogia avança em ciclos de "viveu... e morreu"
+      → A morte é o eco da queda em cada geração — sem exceção aparente
+
+◉ [X]   · ENOQUE ANDOU COM DEUS E NÃO FOI ACHADO, PORQUE DEUS O TOMOU
+      → Andar com Deus pela fé é caminho que escapa do domínio da morte
+
+[B']  · A genealogia retoma sua marcha mortal após Enoque
+      → A exceção aponta uma esperança que a regra ainda não realizou
+
+[A']  · Noé surge como o repouso prometido à terra amaldiçoada
+      → Deus prepara um remanescente para iniciar nova história
+
+EIXO CRISTOLÓGICO
 Hb 11:5: "pela fé Enoque foi trasladado" — andar com Deus pela fé escapa ao domínio da morte.`;
 
-  if (d.dia === 7) return `✦ BIG IDEA
-No juízo universal, Deus preserva um remanescente e recria o mundo.
-
-📖 MOVIMENTOS DO TEXTO
-A — Maldade humana provoca a determinação do dilúvio
-B — A Palavra de Deus a Noé: instrução e fidelidade
-C — Noé entra na arca aos seiscentos anos
-D — Sete dias de espera antes das águas
-E — Quarenta dias: as águas cobrem a terra
-F — Todas as montanhas submersas
-◉ G — Todas as criaturas pereceram; o remanescente na arca sobrevive
-F' — Os cumes das montanhas reaparecem
-E' — Quarenta dias: a escotilha é aberta
-D' — Sete dias: a pomba não retorna
-C' — Seiscentésimo e primeiro ano: as águas secaram
-B' — A Palavra de Deus a Noé: saída e consagração
-A' — Maldade permanece; Deus determina não trazer mais o dilúvio
-
-✝ EIXO CRISTOLÓGICO
-1Pe 3:20–21: "a arca, na qual poucos foram salvos pela água" — o batismo como antitype do dilúvio.`;
-
-  if (d.dia === 8) return `✦ BIG IDEA
-O arco no céu é o sinal de que Deus se vincula à criação.
-
-📖 MOVIMENTOS DO TEXTO
-A — Bênção e mandato: frutificai e enchei a terra
-B — Sangue é sacralizado; vida pertence a Deus
-◉ C — O sinal da aliança: o arco entre Deus e a terra
-B' — O arco lembra a promessa em meio às nuvens
-A' — Aliança eterna com todo ser vivente
-
-✝ EIXO CRISTOLÓGICO
-2Co 1:20: "todas as promessas de Deus têm nele o sim" — Cristo é o arco definitivo da aliança.`;
-
-  if (d.dia === 9) return `✦ BIG IDEA
-O modo como tratamos a fraqueza do irmão define a bênção que herdamos.
-
-📖 MOVIMENTOS DO TEXTO
-P — Noé planta a vinha após o dilúvio
-A — Noé se embriaga e fica descoberto
-B — Cam vê e expõe a nudez do pai
-◉ C — Sem e Jafé cobrem o pai sem olhar
-B' — Noé desperta e profere bênção e maldição
-A' — Cam é amaldiçoado em Canaã
-C' — Sem é abençoado; Jafé habitará em suas tendas
-P' — Noé vive trezentos e cinquenta anos após o dilúvio
-
-✝ EIXO CRISTOLÓGICO
-1Pe 4:8: "o amor cobre multidão de pecados" — cobrir o irmão sem expô-lo é gesto evangélico.`;
-
-  if (d.dia === 10) return `✦ BIG IDEA
-Deus organiza as nações antes mesmo de chamar Israel.
-
-📖 MOVIMENTOS DO TEXTO
-A — Os filhos de Jafé povoam as ilhas
-B1 — Os filhos de Cam: Cuxe, Egito, Pute e Canaã
-B2 — Ninrode ergue reinos em Sinear
-B3 — Os filhos de Sem: dos quais virá Abraão
-A' — Estas são as famílias das nações
-
-✝ EIXO CRISTOLÓGICO
-At 17:26: "de um só fez toda raça humana" — Deus traça os limites das nações para que o busquem.`;
-
-  if (d.dia === 11) return `✦ BIG IDEA
-Quando o homem sobe para fazer nome, o Senhor desce para vê-lo.
-
-📖 MOVIMENTOS DO TEXTO
-A — Toda a terra tinha uma só língua
-B — Os homens propõem construir cidade e torre
-◉ C — O Senhor desceu para ver a torre dos filhos dos homens
-B' — Deus confunde a língua e dispersa o projeto
-A' — Por isso se chamou Babel: confusão
-
-✝ EIXO CRISTOLÓGICO
-At 2:6: "cada um os ouvia falar na sua própria língua" — Pentecostes reverte Babel em Cristo.`;
-
-  if (d.dia === 12) return `✦ BIG IDEA
-A genealogia de Sem afunila a história até Abraão.
-
-📖 MOVIMENTOS DO TEXTO
-A — Sem inaugura a linha pós-dilúvio
-B — Geração após geração avança em direção à promessa
-A' — A linhagem desemboca em Naor, avô de Abraão
-
-✝ EIXO CRISTOLÓGICO
-Lc 3:36: "Sem, filho de Noé" — a genealogia de Cristo passa por Sem até Abraão.`;
-
-  if (d.dia === 13) return `✦ BIG IDEA
-A família de Terá se posiciona na encruzilhada do chamado divino.
-
-📖 MOVIMENTOS DO TEXTO
-A — Terá gera Abrão, Naor e Harã
-B — Harã morre antes do pai em Ur dos caldeus
-A' — Terá sai com Abrão rumo a Canaã, mas para em Harã
-
-✝ EIXO CRISTOLÓGICO
-Hb 11:8: "pela fé Abraão obedeceu" — o chamado precisa ser concluído onde a geração anterior parou.`;
-
-  if (d.dia === 14) return `✦ BIG IDEA
-O altar é a resposta de Abraão à aparição do Senhor na terra prometida.
-
-📖 MOVIMENTOS DO TEXTO
-A — Sai da tua terra para a terra que te mostrarei
-B — Abrão atravessa Canaã até Siquém
-◉ C — O Senhor aparece a Abrão: à tua descendência darei esta terra
-B' — Abrão ergue altar entre Betel e Ai
-A' — Continua caminhando rumo ao Neguebe
-
-✝ EIXO CRISTOLÓGICO
-Gl 3:16: "a tua descendência, que é Cristo" — a promessa da terra culmina no herdeiro do mundo.`;
-
-  if (d.dia === 15) return `✦ BIG IDEA
-O medo no Egito leva Abrão a entregar a promessa que devia guardar.
-
-📖 MOVIMENTOS DO TEXTO
-A — A fome empurra Abrão para o Egito
-B — Abrão combina com Sarai: dize que és minha irmã
-◉ C — Sarai é levada para o palácio do Faraó
-B' — O Senhor fere o Faraó com grandes pragas
-A' — Abrão é expulso do Egito com seus bens
-
-✝ EIXO CRISTOLÓGICO
-2Tm 2:13: "se somos infiéis, ele permanece fiel" — Deus guarda a promessa apesar do medo do servo.`;
-
-  if (d.dia === 16) return `✦ BIG IDEA
-Quem cede o direito de escolha confia que Deus escolhe por ele.
-
-📖 MOVIMENTOS DO TEXTO
-A — Abrão sobe do Egito rico em gado, prata e ouro
-B — Contendas surgem entre os pastores
-◉ C — Abrão propõe a separação: escolhe tu primeiro
-B' — Ló escolhe a planície do Jordão como o Éden
-A' — O Senhor confirma a Abrão toda a terra à vista
-
-✝ EIXO CRISTOLÓGICO
-Fp 2:6–7: "não considerou como usurpação ser igual a Deus" — ceder é o caminho da herança.`;
-
-  if (d.dia === 17) return `✦ BIG IDEA
-A escolha de morar perto de Sodoma cobra seu preço no cativeiro.
-
-📖 MOVIMENTOS DO TEXTO
-A — Reis do oriente se levantam contra o vale
-B — Sodoma e Gomorra são saqueadas
-A' — Ló é levado cativo com seus bens
-
-✝ EIXO CRISTOLÓGICO
-2Pe 2:7–8: "livrou o justo Ló" — Deus resgata o seu mesmo de escolhas equivocadas.`;
-
-  if (d.dia === 18) return `✦ BIG IDEA
-Quem passa pelo altar antes do mercado dá dízimo de tudo.
-
-📖 MOVIMENTOS DO TEXTO
-A — Abrão resgata Ló com trezentos e dezoito homens
-B — Volta vitorioso ao vale de Savé
-◉ C — O rei de Sodoma vem ao seu encontro
-B' — Melquisedeque traz pão e vinho e bendiz Abrão
-A' — Abrão dá o dízimo e recusa as vestes de Sodoma
-
-✝ EIXO CRISTOLÓGICO
-Hb 7:17: "tu és sacerdote para sempre, segundo a ordem de Melquisedeque" — Cristo é o sacerdote-rei eterno.`;
-
-  if (d.dia === 19) return `✦ BIG IDEA
-Abrão crê na promessa e isso lhe é imputado como justiça.
-
-📖 MOVIMENTOS DO TEXTO
-A — Não temas, Abrão, eu sou o teu escudo
-B — Olha para o céu e conta as estrelas, se podes
-◉ C — Profecia: tua descendência será peregrina, mas voltará
-B' — Animais partidos selam a aliança
-A' — Deus passa entre os pedaços como tocha de fogo
-
-✝ EIXO CRISTOLÓGICO
-Rm 4:3: "creu Abraão a Deus, e isto lhe foi imputado como justiça" — a fé recebe a justiça que Cristo cumpre.`;
-
-  if (d.dia === 20) return `✦ BIG IDEA
-O Deus que vê encontra a serva no deserto antes de qualquer um.
-
-📖 MOVIMENTOS DO TEXTO
-A — Sarai dá Hagar a Abrão por estratégia
-B — Hagar concebe e despreza Sarai
-◉ C — O anjo do Senhor encontra Hagar junto à fonte
-B' — Promessa: Ismael será multiplicado
-A' — Hagar volta e dá à luz Ismael
-
-✝ EIXO CRISTOLÓGICO
-Lc 1:48: "atentou na humildade da sua serva" — Deus visita os invisíveis com promessas concretas.`;
-
-  if (d.dia === 21) return `✦ BIG IDEA
-Deus muda o nome antes de cumprir a promessa para que a fé tenha forma.
-
-📖 MOVIMENTOS DO TEXTO
-A — Anda na minha presença e sê perfeito
-B — Mudança do nome de Abrão para Abraão
-◉ C — Mudança do nome de Sarai para Sara; promessa de Isaque
-B' — Toda macho será circuncidado como sinal da aliança
-A' — Abraão circuncida sua casa naquele mesmo dia
-
-✝ EIXO CRISTOLÓGICO
-Cl 2:11: "circuncisão de Cristo, no despojamento do corpo da carne" — o sinal aponta ao coração.`;
-
-  if (d.dia === 22) return `✦ BIG IDEA
-Sara rirá com o filho da promessa: nada é difícil demais para o Senhor.
-
-📖 MOVIMENTOS DO TEXTO
-A — Três visitantes chegam no calor do dia
-B — Abraão prepara o banquete sob a árvore
-◉ C — Daqui a um ano Sara terá um filho
-B' — Sara ri por dentro da tenda
-A' — Acaso para o Senhor há coisa demasiado difícil?
-
-✝ EIXO CRISTOLÓGICO
-Lc 1:37: "para Deus nada será impossível" — a promessa a Sara antecipa a promessa a Maria.`;
-
-  if (d.dia === 23) return `✦ BIG IDEA
-O justo intercede e dobra os joelhos de Deus pela cidade pecadora.
-
-📖 MOVIMENTOS DO TEXTO
-A — Os visitantes voltam o olhar para Sodoma
-B — Abraão acompanha o Senhor pelo caminho
-◉ C — O Senhor revela a Abraão o juízo sobre Sodoma
-B' — Abraão intercede regateando de cinquenta a dez justos
-A' — O Senhor segue e Abraão volta ao seu lugar
-
-✝ EIXO CRISTOLÓGICO
-Hb 7:25: "vive sempre para interceder por eles" — Cristo é o intercessor que dobra a justiça em misericórdia.`;
-
-  if (d.dia === 24) return `✦ BIG IDEA
-A depravação de Sodoma demonstra por que o juízo é justo.
-
-📖 MOVIMENTOS DO TEXTO
-A — Dois anjos chegam à porta de Sodoma
-B — Ló insiste em hospedá-los em sua casa
-A' — Os homens da cidade cercam a casa com violência
-
-✝ EIXO CRISTOLÓGICO
-Jd 7: "Sodoma e Gomorra... servem de exemplo" — a graça do evangelho é maior que qualquer Sodoma.`;
-
-  if (d.dia === 25) return `✦ BIG IDEA
-A misericórdia do Senhor arranca os seus do meio do juízo.
-
-📖 MOVIMENTOS DO TEXTO
-A — Os anjos avisam Ló e sua família
-B — Ló hesita ao amanhecer
-◉ C — Ló sai às pressas pela misericórdia do Senhor
-B' — A esposa de Ló olha para trás e se torna estátua
-A' — Sodoma e Gomorra são destruídas pelo fogo
-
-✝ EIXO CRISTOLÓGICO
-Lc 17:32: "lembrai-vos da mulher de Ló" — perseverar exige não voltar o coração ao que se deixa.`;
-
-  if (d.dia === 26) return `✦ BIG IDEA
-O pecado refugiado nas cavernas continua gerando inimigos do povo de Deus.
-
-📖 MOVIMENTOS DO TEXTO
-A — Ló se esconde na caverna com as filhas
-B — As filhas embriagam o pai para preservar a linhagem
-A' — Nascem Moabe e Amom, futuros adversários de Israel
-
-✝ EIXO CRISTOLÓGICO
-Mt 1:5: "Booz gerou de Rute o pai de Obede" — em Cristo, até Moabe é enxertada na linhagem real.`;
-
-  if (d.dia === 27) return `✦ BIG IDEA
-Abraão repete o medo, mas o Senhor protege a promessa.
-
-📖 MOVIMENTOS DO TEXTO
-A — Abraão peregrina em Gerar e diz que Sara é sua irmã
-B — Abimeleque toma Sara para si
-◉ C — Abimeleque confronta Abraão pela meia verdade
-B' — Abraão intercede e Deus cura a casa de Abimeleque
-A' — Abraão recebe presentes e permanece na terra
-
-✝ EIXO CRISTOLÓGICO
-2Tm 2:13: "ele permanece fiel" — a promessa não depende da coerência do servo.`;
-
-  if (d.dia === 28) return `✦ BIG IDEA
-Isaque chega no tempo aprazado: a promessa cumprida tem hora marcada.
-
-📖 MOVIMENTOS DO TEXTO
-A — O Senhor visitou Sara como dissera
-B — Isaque nasce no tempo determinado
-A' — Abraão circuncida Isaque ao oitavo dia
-
-✝ EIXO CRISTOLÓGICO
-Gl 4:4: "vindo a plenitude do tempo" — todo Isaque aponta ao Filho que chega na hora certa.`;
-
-  if (d.dia === 29) return `✦ BIG IDEA
-A expulsão de Hagar revela que Deus cuida do que parece descartado.
-
-📖 MOVIMENTOS DO TEXTO
-A — Ismael zomba na festa do desmame
-B — Sara exige a expulsão; Abraão se entristece
-◉ C — Abraão expulsa Hagar e Ismael com pão e água
-B' — Hagar chora no deserto à beira da morte
-A' — Deus abre os olhos de Hagar e mostra o poço
-
-✝ EIXO CRISTOLÓGICO
-Gl 4:28: "vós, irmãos, sois filhos da promessa, como Isaque" — Cristo gera filhos pela promessa, não pela carne.`;
-
-  if (d.dia === 30) return `✦ BIG IDEA
-Sete ovelhas selam o testemunho do poço como sinal de paz.
-
-📖 MOVIMENTOS DO TEXTO
-A — Abimeleque procura Abraão para fazer aliança
-B — Contenda sobre o poço cavado por Abraão
-◉ C — As sete ovelhas dadas como testemunho do poço
-B' — O lugar é chamado Berseba: poço do juramento
-A' — Abraão planta tamargueira e invoca o nome do Senhor
-
-✝ EIXO CRISTOLÓGICO
-Jo 4:14: "a água que eu lhe der" — o poço de Berseba antecipa a fonte que jorra para a vida eterna.`;
-
-  if (d.dia === 31) return `✦ BIG IDEA
-Onde o pai diz "Deus proverá", o Cordeiro substituto aparece.
-
-📖 MOVIMENTOS DO TEXTO
-A — Deus prova Abraão: toma teu filho, teu único
-B — Abraão sela o jumento e parte com Isaque
-◉ C — Onde está o cordeiro? — Deus proverá, meu filho
-B' — Abraão estende a mão sobre o filho amarrado
-A' — O carneiro preso no espinheiro substitui Isaque
-
-✝ EIXO CRISTOLÓGICO
-Jo 1:29: "eis o Cordeiro de Deus" — o que Abraão prefigurou, o Pai cumpriu no Calvário.`;
-
-  if (d.dia === 32) return `✦ BIG IDEA
-A genealogia de Naor prepara o palco para a esposa de Isaque.
-
-📖 MOVIMENTOS DO TEXTO
-A — Notícia chega a Abraão sobre o irmão Naor
-B — Listam-se doze filhos de Naor
-A' — Rebeca é apresentada como filha de Betuel
-
-✝ EIXO CRISTOLÓGICO
-Rm 9:11: "para que o propósito de Deus segundo a eleição" — Deus prepara cônjuges antes do encontro.`;
-
-  if (d.dia === 33) return `✦ BIG IDEA
-O sepultamento de Sara é o primeiro penhor da terra prometida.
-
-📖 MOVIMENTOS DO TEXTO
-A — Sara morre em Quiriate-Arba aos cento e vinte e sete anos
-B — Abraão pede sepultura entre os heteus
-◉ C — Efrom oferece o campo e a caverna de Macpela
-B' — Abraão pesa quatrocentos siclos de prata
-A' — Sara é sepultada na terra que será de seus descendentes
-
-✝ EIXO CRISTOLÓGICO
-Hb 11:13: "viram de longe e creram" — peregrinos sepultam na terra prometida como sinal da herança.`;
-
-  if (d.dia === 34) return `✦ BIG IDEA
-Quando o servo ora, o Senhor já caminha à frente do pedido.
-
-📖 MOVIMENTOS DO TEXTO
-A — Abraão envia o servo com juramento solene
-B — Oração junto ao poço por um sinal
-◉ C — O servo narra a missão à família de Rebeca
-B' — Rebeca aceita partir imediatamente
-A' — Isaque encontra Rebeca no campo ao entardecer
-
-✝ EIXO CRISTOLÓGICO
-Ef 5:25: "Cristo amou a igreja" — o Pai envia o Servo buscar a noiva para o Filho.`;
-
-  if (d.dia === 35) return `✦ BIG IDEA
-A bênção transmitida não cabe entre os filhos da concubina.
-
-📖 MOVIMENTOS DO TEXTO
-A — Abraão toma Quetura por esposa
-B — Os filhos de Quetura recebem dádivas e são enviados ao oriente
-A' — Isaque recebe tudo o que Abraão tem
-
-✝ EIXO CRISTOLÓGICO
-Gl 3:29: "se sois de Cristo, sois descendência de Abraão" — a herança plena é só do filho legítimo.`;
-
-  if (d.dia === 36) return `✦ BIG IDEA
-Abraão morre em boa velhice e é reunido ao seu povo na esperança.
-
-📖 MOVIMENTOS DO TEXTO
-A — Abraão vive cento e setenta e cinco anos
-B — Morre em boa velhice e é reunido ao seu povo
-A' — Isaque e Ismael o sepultam em Macpela
-
-✝ EIXO CRISTOLÓGICO
-Mt 22:32: "Deus de Abraão, de Isaque e de Jacó" — Abraão vive porque Deus é Deus dos vivos.`;
-
-  if (d.dia === 37) return `✦ BIG IDEA
-Ismael cumpre a promessa colateral: doze príncipes nascem dele.
-
-📖 MOVIMENTOS DO TEXTO
-A — Estes são os descendentes de Ismael
-B — Doze príncipes segundo as suas nações
-A' — Ismael vive cento e trinta e sete anos e morre
-
-✝ EIXO CRISTOLÓGICO
-Gn 21:13: "do filho da escrava farei uma nação" — Deus cumpre até as promessas marginais.`;
-
-  if (d.dia === 38) return `✦ BIG IDEA
-Antes do berço, Deus já distingue o caráter dos irmãos.
-
-📖 MOVIMENTOS DO TEXTO
-A — Isaque ora pela esposa estéril
-B — Rebeca recebe palavra: o mais velho servirá o mais novo
-◉ C — Caráter oposto dos irmãos: Esaú do campo, Jacó das tendas
-B' — Cresceram, e o pai amava Esaú e a mãe amava Jacó
-A' — A vida adulta começa pelas escolhas que farão
-
-✝ EIXO CRISTOLÓGICO
-Rm 9:13: "amei a Jacó e aborreci a Esaú" — a eleição precede o mérito.`;
-
-  if (d.dia === 39) return `✦ BIG IDEA
-Quem despreza a primogenitura escolhe o presente contra a herança.
-
-📖 MOVIMENTOS DO TEXTO
-A — Esaú chega cansado do campo
-B — Jacó pede o direito de primogenitura pelo guisado
-A' — Esaú come, bebe e despreza o que era seu
-
-✝ EIXO CRISTOLÓGICO
-Hb 12:16: "para que não haja profano como Esaú" — desprezar a herança é o pecado mais sutil.`;
-
-  if (d.dia === 40) return `✦ BIG IDEA
-Deus prospera Isaque na terra onde os reis o cercam de inveja.
-
-📖 MOVIMENTOS DO TEXTO
-A — Isaque vai a Gerar por causa da fome
-B — Repete a meia verdade de seu pai sobre a esposa
-◉ C — Isaque semeia, colhe cem por um e enriquece
-B' — Os filisteus o invejam e entopem seus poços
-A' — Abimeleque pede que ele se afaste
-
-✝ EIXO CRISTOLÓGICO
-Mt 5:11: "bem-aventurados sois quando vos injuriarem" — a bênção do Senhor desperta a inveja do mundo.`;
-
-  if (d.dia === 41) return `✦ BIG IDEA
-Quem perde poços e abre outros confia que o Senhor amplia o lugar.
-
-📖 MOVIMENTOS DO TEXTO
-A — Isaque desentope os poços do pai
-B — Cava Eseque e Sitna, mas os pastores disputam
-A' — Cava Reobote: agora o Senhor nos deu largueza
-
-✝ EIXO CRISTOLÓGICO
-Jo 7:38: "rios de água viva" — quem abre poços de bênção em paz herda a largueza prometida.`;
-
-  if (d.dia === 42) return `✦ BIG IDEA
-O temor do Senhor sobre o servo transforma inimigos em aliados.
-
-📖 MOVIMENTOS DO TEXTO
-A — Abimeleque procura Isaque em Berseba
-B — Vimos que o Senhor é contigo
-A' — Comem, bebem e juram aliança ao amanhecer
-
-✝ EIXO CRISTOLÓGICO
-Pv 16:7: "fará que até os seus inimigos tenham paz com ele" — a paz é fruto da presença divina.`;
-
-  if (d.dia === 43) return `✦ BIG IDEA
-Casamentos fora da aliança trazem amargura à casa do escolhido.
-
-📖 MOVIMENTOS DO TEXTO
-A — Esaú toma esposas heteias aos quarenta anos
-B — Elas se tornam amargura para Isaque e Rebeca
-
-✝ EIXO CRISTOLÓGICO
-2Co 6:14: "não vos ponhais em jugo desigual" — a herança espiritual exige discernimento conjugal.`;
-
-  if (d.dia === 44) return `✦ BIG IDEA
-A bênção arrancada por engano ainda assim segue o propósito divino.
-
-📖 MOVIMENTOS DO TEXTO
-A — Isaque envelhece e quer abençoar Esaú
-B — Rebeca prepara Jacó para o engano
-◉ C — Jacó engana Isaque e recebe a bênção
-B' — Esaú chega e clama por uma bênção também
-A' — Isaque concede a Esaú palavra menor e tremenda
-
-✝ EIXO CRISTOLÓGICO
-Rm 9:11–12: "antes de terem feito bem ou mal" — Deus realiza seu propósito mesmo por meios torcidos.`;
-
-  if (d.dia === 45) return `✦ BIG IDEA
-A casa dividida pela bênção precisa de fuga para não derramar sangue.
-
-📖 MOVIMENTOS DO TEXTO
-A — Esaú resolve matar Jacó após o luto do pai
-B — Rebeca planeja a fuga para Harã
-A' — Foge alguns dias até a ira de teu irmão passar
-
-✝ EIXO CRISTOLÓGICO
-Mt 5:9: "bem-aventurados os pacificadores" — onde a ira fervia, a paz só vem pela distância e pelo tempo.`;
-
-  if (d.dia === 46) return `✦ BIG IDEA
-Jacó parte com a bênção de Abraão sobre os ombros.
-
-📖 MOVIMENTOS DO TEXTO
-A — Rebeca pede a Isaque que envie Jacó a Padã-Arã
-◉ B — Isaque abençoa Jacó com a bênção de Abraão
-A' — Jacó parte e Esaú se casa com filha de Ismael
-
-✝ EIXO CRISTOLÓGICO
-Gl 3:14: "para que a bênção de Abraão chegasse aos gentios" — a bênção em Cristo segue o exilado.`;
-
-  if (d.dia === 47) return `✦ BIG IDEA
-No lugar onde se foge encontra-se a porta do céu.
-
-📖 MOVIMENTOS DO TEXTO
-A — Jacó deita-se com uma pedra por travesseiro
-B — Sonha com a escada que sobe ao céu
-◉ C — Jacó desperta: este é a casa de Deus e a porta do céu
-B' — Faz da pedra um pilar e derrama azeite sobre ela
-A' — Faz voto: o Senhor será o meu Deus
-
-✝ EIXO CRISTOLÓGICO
-Jo 1:51: "vereis o céu aberto e os anjos de Deus subindo e descendo sobre o Filho do Homem" — Jesus é a escada.`;
-
-  if (d.dia === 48) return `✦ BIG IDEA
-O encontro junto ao poço é o início da família que gerará Israel.
-
-📖 MOVIMENTOS DO TEXTO
-A — Jacó chega à terra dos filhos do oriente
-B — Pastores reunidos esperam a pedra ser rolada
-◉ C — Jacó encontra Raquel e rola a pedra do poço
-B' — Beija Raquel e levanta a voz e chora
-A' — Labão corre ao encontro do sobrinho
-
-✝ EIXO CRISTOLÓGICO
-Jo 4:6–7: "Jesus, cansado da viagem, sentou-se junto ao poço" — o Noivo encontra a noiva junto à água.`;
-
-  if (d.dia === 49) return `✦ BIG IDEA
-O enganador descobre, no engano sofrido, o peso da própria ofensa.
-
-📖 MOVIMENTOS DO TEXTO
-A — Jacó serve sete anos por Raquel
-B — Labão troca Raquel por Lia na noite das núpcias
-◉ C — Jacó confronta Labão pelo engano
-B' — Labão alega o costume do lugar
-A' — Jacó serve outros sete anos por Raquel
-
-✝ EIXO CRISTOLÓGICO
-Gl 6:7: "tudo o que o homem semear, isso também ceifará" — Deus pedagogiza pelo espelho do nosso engano.`;
-
-  if (d.dia === 50) return `✦ BIG IDEA
-Deus constrói Israel pelas margens, abrindo o ventre da preterida.
-
-📖 MOVIMENTOS DO TEXTO
-A — Lia gera os primeiros quatro filhos
-B — Bila e Zilpa geram pelos joelhos das esposas
-◉ C — Lia e Raquel disputam mandrágoras e bênção
-B' — Lia gera mais filhos; Raquel ainda estéril
-A' — Deus se lembrou de Raquel; nasce José
-
-✝ EIXO CRISTOLÓGICO
-1Co 1:27: "Deus escolheu o que para o mundo é fraco" — as tribos de Israel nascem das margens amadas.`;
-
-  if (d.dia === 51) return `✦ BIG IDEA
-Quando Deus prospera, nem o engano do patrão impede a bênção.
-
-📖 MOVIMENTOS DO TEXTO
-A — Jacó pede licença para voltar à sua terra
-B — Negocia salário entre os malhados do rebanho
-◉ C — Labão separa os animais malhados do rebanho
-B' — Jacó usa varas descascadas junto aos bebedouros
-A' — Jacó prospera grandemente em rebanhos e servos
-
-✝ EIXO CRISTOLÓGICO
-Fp 4:19: "o meu Deus suprirá em glória" — a providência cuida do servo mesmo sob patrões desleais.`;
-
-  if (d.dia === 52) return `✦ BIG IDEA
-A ordem divina de voltar à terra prevalece sobre qualquer Labão.
-
-📖 MOVIMENTOS DO TEXTO
-A — O semblante de Labão muda contra Jacó
-B — O Senhor diz: volta para a terra de teus pais
-A' — Jacó parte às escondidas com tudo o que tem
-
-✝ EIXO CRISTOLÓGICO
-At 7:3: "sai da tua terra" — o Deus que chama é o mesmo que manda voltar à terra da promessa.`;
-
-  if (d.dia === 53) return `✦ BIG IDEA
-Deus interpõe-se em sonho para que o perseguidor não toque no servo.
-
-📖 MOVIMENTOS DO TEXTO
-A — Labão persegue Jacó por sete dias
-B — Deus o adverte em sonho: não fales nem bem nem mal
-◉ C — Labão persegue Jacó e não encontra os ídolos
-B' — Jacó recapitula vinte anos de serviço fiel
-A' — Labão se cala diante da defesa do sobrinho
-
-✝ EIXO CRISTOLÓGICO
-Sl 105:14–15: "não tocai nos meus ungidos" — o Pai guarda os seus mesmo das perseguições do passado.`;
-
-  if (d.dia === 54) return `✦ BIG IDEA
-O monte de pedras é fronteira: cada um vai ao seu lugar em paz.
-
-📖 MOVIMENTOS DO TEXTO
-A — Labão propõe aliança a Jacó
-B — Erguem um monte de pedras como testemunho
-A' — Cada um volta a seu caminho, abençoado
-
-✝ EIXO CRISTOLÓGICO
-Rm 12:18: "tende paz com todos os homens" — onde possível, a paz se sela com sinais visíveis.`;
-
-  if (d.dia === 55) return `✦ BIG IDEA
-Os anjos de Deus encontram Jacó: o exército do céu o acompanha.
-
-📖 MOVIMENTOS DO TEXTO
-A — Jacó segue caminho rumo à terra
-B — Anjos de Deus o encontram em Maanaim
-A' — Este é o acampamento de Deus, declara Jacó
-
-✝ EIXO CRISTOLÓGICO
-Hb 1:14: "espíritos ministradores enviados para servir" — quem retorna à promessa caminha cercado pelo céu.`;
-
-  if (d.dia === 56) return `✦ BIG IDEA
-A oração precede o presente; o Deus de Abraão é o escudo do passo.
-
-📖 MOVIMENTOS DO TEXTO
-A — Jacó envia mensageiros a Esaú
-B — Os mensageiros voltam: Esaú vem com quatrocentos
-◉ C — Oração de Jacó ao Senhor: sou indigno das tuas misericórdias
-B' — Divide o povo em dois bandos
-A' — Envia presentes ondulares à frente para apaziguar Esaú
-
-✝ EIXO CRISTOLÓGICO
-Fp 4:6: "em tudo, pela oração... fazei conhecidas as vossas petições" — a oração precede toda providência.`;
-
-  if (d.dia === 57) return `✦ BIG IDEA
-Quem confessa o próprio nome ganha um nome novo do Senhor.
-
-📖 MOVIMENTOS DO TEXTO
-A — Jacó passa o vau de Jaboque sozinho
-B — Um homem luta com ele até a aurora
-◉ C — Qual é o teu nome?
-B' — Jacó é renomeado Israel: lutou com Deus
-A' — Manca da coxa pelo resto da vida
-
-✝ EIXO CRISTOLÓGICO
-Ap 2:17: "te darei um nome novo" — quem se rende ao Senhor recebe identidade nova e marca permanente.`;
-
-  if (d.dia === 58) return `✦ BIG IDEA
-A insistência do reconciliado torna o presente em palavra de favor.
-
-📖 MOVIMENTOS DO TEXTO
-A — Jacó divide a família em ordem diante de Esaú
-B — Esaú corre, abraça e beija o irmão
-◉ C — Jacó insiste que Esaú aceite o presente
-B' — Tenho visto o teu rosto como o de Deus
-A' — Cada irmão segue seu rumo em paz
-
-✝ EIXO CRISTOLÓGICO
-2Co 5:18: "o ministério da reconciliação" — em Cristo, a reconciliação custa, mas restaura o rosto.`;
-
-  if (d.dia === 59) return `✦ BIG IDEA
-A vingança disfarçada de aliança trai a vocação do povo da promessa.
-
-📖 MOVIMENTOS DO TEXTO
-A — Diná é violentada por Siquém
-B — Siquém pede Diná em casamento
-◉ C — Os filhos de Jacó propõem a circuncisão como condição
-B' — Simeão e Levi matam os homens da cidade
-A' — Jacó repreende: trouxestes-me odor entre os povos
-
-✝ EIXO CRISTOLÓGICO
-Rm 12:19: "minha é a vingança, eu retribuirei" — a justiça humana fora do Senhor desfigura a aliança.`;
-
-  if (d.dia === 60) return `✦ BIG IDEA
-Voltar a Betel exige sepultar todos os deuses estranhos.
-
-📖 MOVIMENTOS DO TEXTO
-A — Deus manda Jacó subir a Betel
-B — Jacó ordena que sepultem os ídolos estranhos
-A' — Sobem a Betel sob o terror divino sobre as cidades
-
-✝ EIXO CRISTOLÓGICO
-1Jo 5:21: "guardai-vos dos ídolos" — a renovação espiritual sempre passa por enterrar deuses estranhos.`;
-
-  if (d.dia === 61) return `✦ BIG IDEA
-Em Betel, o nome Israel é confirmado e a promessa renovada.
-
-📖 MOVIMENTOS DO TEXTO
-A — Deus aparece a Jacó em Betel
-B — Confirma o nome Israel
-◉ C — Eu sou o Deus Todo-Poderoso: frutifica e multiplica
-B' — A terra prometida a Abraão e Isaque será tua
-A' — Jacó ergue coluna e derrama libação
-
-✝ EIXO CRISTOLÓGICO
-Hb 6:17: "interpôs juramento" — Deus reafirma promessas em momentos decisivos para nossa fé vacilante.`;
-
-  if (d.dia === 62) return `✦ BIG IDEA
-Entre mortes e nascimentos, a aliança continua atravessando gerações.
-
-📖 MOVIMENTOS DO TEXTO
-A — Raquel morre dando à luz Benjamim
-B — Os filhos de Jacó são listados em ordem
-A' — Isaque morre velho e farto de dias
-
-✝ EIXO CRISTOLÓGICO
-2Co 4:16: "o nosso homem exterior se corrompe, mas o interior se renova" — a aliança persiste sobre toda morte.`;
-
-  if (d.dia === 63) return `✦ BIG IDEA
-Edom se constitui em paralelo a Israel: dois povos, duas vocações.
-
-📖 MOVIMENTOS DO TEXTO
-A — Esaú é Edom, e estes são seus descendentes
-B — Listam-se chefes, reis e clãs de Edom
-A' — Edom toma forma de nação antes mesmo de Israel
-
-✝ EIXO CRISTOLÓGICO
-Rm 9:13: "amei a Jacó e aborreci a Esaú" — a história das nações se desenrola sob a soberania de Deus.`;
-
-  if (d.dia === 64) return `✦ BIG IDEA
-O segundo sonho revela: as nações se inclinarão diante do escolhido.
-
-📖 MOVIMENTOS DO TEXTO
-A — José traz má fama dos irmãos ao pai
-B — A túnica de várias cores acende o ódio
-◉ C — Segundo sonho: o sol, a lua e onze estrelas se inclinam
-B' — Os irmãos o odeiam ainda mais
-A' — O pai guarda a coisa em sua memória
-
-✝ EIXO CRISTOLÓGICO
-Fp 2:10: "ao nome de Jesus se dobre todo joelho" — todo José aponta ao Filho diante do qual tudo se prostra.`;
-
-  if (d.dia === 65) return `✦ BIG IDEA
-O justo é vendido pelos irmãos e levado ao Egito por providência.
-
-📖 MOVIMENTOS DO TEXTO
-A — Jacó envia José a buscar os irmãos
-B — Os irmãos conspiram em Dotã para matá-lo
-◉ C — José é vendido aos ismaelitas por vinte moedas de prata
-B' — Banham a túnica no sangue do bode
-A' — Jacó chora: uma fera devorou José
-
-✝ EIXO CRISTOLÓGICO
-Mt 26:15: "trinta moedas de prata" — o justo vendido por preço de servo cumpre o padrão da redenção.`;
-
-  if (d.dia === 66) return `✦ BIG IDEA
-A justiça nasce dos lugares mais inesperados na linhagem da promessa.
-
-📖 MOVIMENTOS DO TEXTO
-A — Judá se afasta dos irmãos e se casa com cananeia
-B — Tamar fica viúva sem descendência
-◉ C — Judá se une a Tamar; ela recebe o penhor
-B' — Judá ordena queimá-la por adultério
-A' — Tamar mostra o penhor: ela é mais justa do que eu
-
-✝ EIXO CRISTOLÓGICO
-Mt 1:3: "Judá gerou de Tamar a Perez" — Cristo descende dos lugares mais inesperados da história.`;
-
-  if (d.dia === 67) return `✦ BIG IDEA
-A integridade do servo brilha mais que o sucesso oferecido pela sedução.
-
-📖 MOVIMENTOS DO TEXTO
-A — José prospera na casa de Potifar; o Senhor é com ele
-B — A mulher de Potifar o assedia dia após dia
-◉ C — José foge; a roupa fica em sua mão
-B' — Ela acusa José de violação
-A' — José é lançado no cárcere; o Senhor é com ele
-
-✝ EIXO CRISTOLÓGICO
-Hb 4:15: "tentado em todas as coisas... porém sem pecado" — Cristo é o servo que jamais cedeu à sedução.`;
-
-  if (d.dia === 68) return `✦ BIG IDEA
-Os dois sonhos do Faraó são uma só palavra de Deus.
-
-📖 MOVIMENTOS DO TEXTO
-A — Copeiro e padeiro têm sonhos no cárcere
-B — José interpreta: vida para um, morte para outro
-C — O copeiro esquece de José
-◉ D — Os dois sonhos do Faraó: vacas e espigas
-C' — O Faraó manda chamar José
-B' — José interpreta: sete anos de fartura, sete de fome
-A' — Faraó eleva José à segunda autoridade do Egito
-
-✝ EIXO CRISTOLÓGICO
-At 7:10: "lhe deu graça e sabedoria diante de Faraó" — o humilhado é exaltado para preservar muitos.`;
-
-  if (d.dia === 69) return `✦ BIG IDEA
-No país do sofrimento, Deus faz frutificar nomes que recordam sua graça.
-
-📖 MOVIMENTOS DO TEXTO
-A — José governa o Egito desde os trinta anos
-◉ B — Nascem Manassés (esquecimento) e Efraim (fecundidade)
-A' — Começa a fome em toda a terra
-
-✝ EIXO CRISTOLÓGICO
-Rm 8:28: "Deus age em todas as coisas para o bem" — frutificamos na terra da aflição quando Deus está conosco.`;
-
-  if (d.dia === 70) return `✦ BIG IDEA
-A culpa antiga ressurge quando os irmãos enfrentam o desconhecido.
-
-📖 MOVIMENTOS DO TEXTO
-A — Jacó envia dez filhos ao Egito por mantimento
-B — Os irmãos se prostram diante de José
-◉ C — Os irmãos reconhecem sua culpa em relação a José
-B' — José os prende e exige Benjamim
-A' — Voltam a Jacó com o dinheiro nos sacos
-
-✝ EIXO CRISTOLÓGICO
-Hb 4:13: "tudo está nu e patente" — Deus traz à luz pecados antigos para curar pela face de Cristo.`;
-
-  if (d.dia === 71) return `✦ BIG IDEA
-A intercessão de Judá pelo irmão prefigura o substituto definitivo.
-
-📖 MOVIMENTOS DO TEXTO
-A — Os irmãos voltam ao Egito com Benjamim
-B — José os recebe em banquete
-C — A taça é escondida no saco de Benjamim
-◉ D — Judá intercede por Benjamim: que eu fique em seu lugar
-C' — José se descobre: eu sou José, vosso irmão
-B' — Ordena trazer Jacó e toda a casa
-A' — Jacó é informado: José vive e governa o Egito
-
-✝ EIXO CRISTOLÓGICO
-Jo 15:13: "dar a vida pelos seus amigos" — Judá oferece-se como substituto; o Leão de Judá o cumpre.`;
-
-  if (d.dia === 72) return `✦ BIG IDEA
-Deus reafirma na visão noturna: não temas descer ao Egito.
-
-📖 MOVIMENTOS DO TEXTO
-A — Jacó parte de Berseba com toda a sua casa
-◉ B — Visão noturna: não temas descer ao Egito; ali farei de ti grande nação
-A' — Jacó desce ao Egito sob a promessa renovada
-
-✝ EIXO CRISTOLÓGICO
-Mt 2:15: "do Egito chamei o meu Filho" — toda descida ao Egito é caminho de retorno em Cristo.`;
-
-  if (d.dia === 73) return `✦ BIG IDEA
-Setenta almas descem ao Egito: a semente do grande povo.
-
-📖 MOVIMENTOS DO TEXTO
-A — Listam-se os filhos de Lia e Zilpa
-B — Listam-se os filhos de Raquel e Bila
-A' — Setenta almas da casa de Jacó entram no Egito
-
-✝ EIXO CRISTOLÓGICO
-Lc 10:1: "designou outros setenta" — o número simbólico das nações reaparece no envio missionário.`;
-
-  if (d.dia === 74) return `✦ BIG IDEA
-A família de Jacó diante do Faraó recebe Gósen e a paz da peregrinação.
-
-📖 MOVIMENTOS DO TEXTO
-A — Judá é enviado adiante para preparar Gósen
-B — Jacó encontra José em meio a lágrimas
-◉ C — A família de Jacó diante do Faraó; Gósen concedida
-B' — Jacó abençoa o Faraó
-A' — José sustenta a casa de seu pai com pão
-
-✝ EIXO CRISTOLÓGICO
-1Pe 2:11: "estrangeiros e peregrinos" — o povo de Deus habita no mundo, mas não tira sua identidade dele.`;
-
-  if (d.dia === 75) return `✦ BIG IDEA
-O povo entrega tudo por pão; o pão da vida vai além do Egito.
-
-📖 MOVIMENTOS DO TEXTO
-A — A fome se agrava; o dinheiro acaba
-B — Entregam os gados ao Faraó por pão
-◉ C — O povo entrega suas terras e a si mesmo
-B' — José estabelece a quinta parte para o Faraó
-A' — Os sacerdotes preservam suas terras
-
-✝ EIXO CRISTOLÓGICO
-Jo 6:35: "eu sou o pão da vida" — quem busca somente pão acaba escravo; quem busca o Pão é livre.`;
-
-  if (d.dia === 76) return `✦ BIG IDEA
-O patriarca pede sepultura na terra prometida como confissão de fé.
-
-📖 MOVIMENTOS DO TEXTO
-A — Jacó vive dezessete anos no Egito
-◉ B — Jacó pede a José que o sepulte em Canaã, na terra dos pais
-
-✝ EIXO CRISTOLÓGICO
-Hb 11:21: "pela fé, Jacó adorou encostado sobre a extremidade do seu bordão" — sepultar em Canaã é confessar a herança.`;
-
-  if (d.dia === 77) return `✦ BIG IDEA
-A bênção segue por mãos cruzadas: Deus escolhe o menor para preceder.
-
-📖 MOVIMENTOS DO TEXTO
-A — José leva os dois filhos ao pai enfermo
-B — Jacó adota Efraim e Manassés como seus
-◉ C — Jacó cruza as mãos, colocando a direita sobre Efraim
-B' — José tenta corrigir; o pai sabe o que faz
-A' — Bênção: o menor será maior que o seu irmão
-
-✝ EIXO CRISTOLÓGICO
-1Co 1:27: "Deus escolheu o que para o mundo é fraco" — as mãos cruzadas da bênção apontam à inversão divina.`;
-
-  if (d.dia === 78) return `✦ BIG IDEA
-As últimas palavras de Jacó anunciam o cetro que não se afastará de Judá.
-
-📖 MOVIMENTOS DO TEXTO
-A — Jacó reúne os filhos para anunciar o futuro
-B1...B11 — Cada tribo recebe sua palavra particular
-◉ Bjudá — O cetro não se arredará de Judá até que venha Siló
-A' — Estas são as doze tribos de Israel, e estas as suas palavras
-
-✝ EIXO CRISTOLÓGICO
-Ap 5:5: "o Leão da tribo de Judá venceu" — a profecia de Jacó culmina no Cordeiro-Rei.`;
-
-  if (d.dia === 79) return `✦ BIG IDEA
-O sepultamento de Jacó em Canaã é a primeira procissão da fé patriarcal.
-
-📖 MOVIMENTOS DO TEXTO
-A — Jacó morre após dar suas últimas ordens
-B — José manda embalsamar o corpo
-◉ C — José pede permissão ao Faraó para sepultar Jacó
-B' — Sobem em grande cortejo até Macpela
-A' — Voltam ao Egito após sepultar o pai
-
-✝ EIXO CRISTOLÓGICO
-Hb 11:22: "deu ordens acerca dos seus ossos" — sepultar na terra prometida é confessar a ressurreição.`;
-
-  if (d.dia === 80) return `✦ BIG IDEA
-O perdão de José declara que Deus transforma o mal em salvação.
-
-📖 MOVIMENTOS DO TEXTO
-A — Os irmãos temem a vingança após a morte do pai
-◉ B — Estou eu no lugar de Deus?
-A' — José os consola e fala ao coração deles
-
-✝ EIXO CRISTOLÓGICO
-Rm 8:28: "todas as coisas cooperam para o bem" — em Cristo, todo mal é reescrito em propósito redentor.`;
-
-  if (d.dia === 81) return `✦ BIG IDEA
-O caixão no Egito é promessa de um Êxodo que ainda virá.
-
-📖 MOVIMENTOS DO TEXTO
-A — José vive cento e dez anos no Egito
-B — Faz jurar que levarão seus ossos
-A' — É embalsamado e posto em caixão no Egito
-
-✝ EIXO CRISTOLÓGICO
-Hb 11:22: "pela fé José... deu ordens acerca dos seus ossos" — a esperança em Cristo atravessa até a tumba.`;
+  if (d.dia === 7) return `PARA PREGAR · Gênesis 6:1–8:22
+
+BIG IDEA
+"No juízo universal Deus preserva um remanescente e recria o mundo pela aliança."
+
+MOVIMENTOS DO TEXTO
+[A]   · A maldade humana provoca a determinação do dilúvio
+      → Há um limite ao mal que a santidade de Deus não pode ignorar
+
+[B]   · A Palavra divina instrui Noé que obedece em fé
+      → A salvação se apropria pela obediência da fé
+
+[C]   · Noé entra na arca aos seiscentos anos com sua casa
+      → A graça acolhe famílias inteiras pelo chefe que obedece
+
+[D]   · Sete dias de espera silenciam o mundo antes do juízo
+      → Há tempos de paciência que precedem decisões irrevogáveis
+
+[E]   · Quarenta dias: as águas sobem cobrindo a terra
+      → O juízo se cumpre integral e ordenadamente conforme dito
+
+[F]   · As montanhas mais altas são submersas pelo juízo divino
+      → Nada que o homem considere alto resiste à mão de Deus
+
+◉ [X]   · TODA CARNE PERECE; O REMANESCENTE NA ARCA SOBREVIVE
+      → No coração do juízo há um lugar de refúgio provido por Deus mesmo
+
+[F']  · Os cumes das montanhas reaparecem após o juízo
+      → Quando Deus julga, ele também restaura o que foi coberto
+
+[E']  · Quarenta dias depois a escotilha é aberta para a luz
+      → Toda noite de juízo tem uma manhã preparada pela providência
+
+[D']  · Sete dias: a pomba retorna trazendo o sinal da paz
+      → Deus comunica sua paz por sinais que confirmam sua palavra
+
+[C']  · No ano seiscentos e um as águas estão secas
+      → Cumprido o juízo, abre-se nova era na história da redenção
+
+[B']  · A Palavra divina manda Noé sair e consagrar a vida
+      → Após o juízo, a vida obediente continua em adoração
+
+[A']  · A maldade permanece; Deus jura nunca mais destruir assim
+      → A paciência divina sustenta o mundo aguardando a redenção final
+
+EIXO CRISTOLÓGICO
+1Pe 3:20–21: "a arca, em que poucos foram salvos... figura do batismo" — Cristo é a arca em quem somos salvos do juízo.`;
+
+  if (d.dia === 8) return `PARA PREGAR · Gênesis 9:1–17
+
+BIG IDEA
+"O arco no céu é a marca da fidelidade de Deus à criação que ele jurou preservar."
+
+MOVIMENTOS DO TEXTO
+[A]   · Deus ordena: não comer sangue; do sangue do homem se prestará contas
+      → A vida é sagrada porque o homem é imagem de Deus
+
+[B]   · "Nunca mais dilúvio destruirá toda a carne" — promessa cravada
+      → A história tem futuro porque Deus jurou sustentá-la
+
+◉ [X]   · O ARCO NAS NUVENS É O SINAL DA ALIANÇA ENTRE DEUS E A TERRA
+      → Deus ata sua fidelidade a um sinal visível para que jamais duvidemos
+
+[B']  · "Nunca mais as águas serão dilúvio" — promessa reafirmada
+      → A repetição na boca de Deus é firmeza para o coração humano
+
+[A']  · "Este é o sinal da aliança com toda a carne" — conclusão solene
+      → A aliança não é privilégio de poucos; abraça toda a criação
+
+EIXO CRISTOLÓGICO
+Lc 22:20: "este cálice é a nova aliança no meu sangue" — o sangue de Cristo é o arco eterno entre Deus e o pecador.`;
+
+  if (d.dia === 9) return `PARA PREGAR · Gênesis 9:18–29
+
+BIG IDEA
+"Mesmo o justo do dilúvio cai, e a casa se divide entre quem cobre e quem expõe."
+
+MOVIMENTOS DO TEXTO
+[P]   · Os descendentes de Noé reabrem a história humana
+      → A nova humanidade ainda carrega a velha fragilidade
+
+[A]   · A embriaguez de Noé revela que o justo continua frágil
+      → Nenhum santo do passado dispensa a graça do presente
+
+[B]   · Cão vê a nudez do pai e a divulga em vez de cobrir
+      → Expor a falha do irmão revela o coração que não ama
+
+◉ [X]   · SEM E JAFÉ ANDAM DE COSTAS E COBREM O PAI SEM VER
+      → Amar é cobrir a vergonha alheia quando se pode expô-la
+
+[A']  · Noé desperta e profetiza sobre as gerações futuras
+      → A palavra dos pais ecoa nas escolhas dos filhos
+
+[B']  · Maldição sobre Canaã pela conduta de Cão
+      → O pecado oculto produz consequências geracionais visíveis
+
+[P']  · Bênção sobre Sem e Jafé; Noé morre aos novecentos e cinquenta
+      → A bênção segue quem aprende a cobrir, não quem expõe
+
+EIXO CRISTOLÓGICO
+1Pe 4:8: "o amor cobre multidão de pecados" — Cristo cobre a vergonha do pecador com sua própria justiça.`;
+
+  if (d.dia === 10) return `PARA PREGAR · Gênesis 10:1–32
+
+BIG IDEA
+"O mapa das nações revela que toda família humana está debaixo do olhar de Deus."
+
+MOVIMENTOS DO TEXTO
+[A]   · Introdução: as gerações dos filhos de Noé após o dilúvio
+      → Toda história humana começa sob a soberania do Criador
+
+[B]   · Descendentes de Jafé povoam as ilhas e o norte
+      → Nenhum povo está fora do mapa que Deus mesmo desenhou
+
+◉ [X]   · DESCENDENTES DE CÃO INCLUEM AS NAÇÕES OPOSITORAS — BABEL, ASSUR, CANAÃ
+      → Mesmo as nações que se erguerão contra Israel estão na lista de Deus
+
+[B']  · Descendentes de Sem formam a linhagem da promessa
+      → A salvação se canaliza por um povo escolhido entre as nações
+
+[A']  · Conclusão: "estas são as famílias dos filhos de Noé"
+      → A diversidade dos povos é dom da providência, não acidente
+
+EIXO CRISTOLÓGICO
+Ap 7:9: "uma grande multidão de todas as nações" — em Cristo, o mapa das nações se torna mapa da igreja.`;
+
+  if (d.dia === 11) return `PARA PREGAR · Gênesis 11:1–9
+
+BIG IDEA
+"Quando o homem tenta subir ao céu por si, é Deus quem desce para julgar."
+
+MOVIMENTOS DO TEXTO
+[A]   · Toda a terra falava a mesma língua e as mesmas palavras
+      → Unidade sem Deus não vale mais que dispersão com ele
+
+[B]   · "Senão seremos dispersos" — o medo motiva a construção
+      → A idolatria nasce do temor que tenta substituir a confiança
+
+◉ [X]   · O SENHOR DESCEU PARA VER A CIDADE — "DESÇAMOS E CONFUNDAMOS"
+      → Toda altura humana exige a descida divina para ser corrigida
+
+[B']  · O SENHOR os dispersou por toda a terra
+      → Aquilo que o homem temia, Deus determinou para seu bem
+
+[A']  · O SENHOR confundiu a língua de toda a terra
+      → Quando a Palavra que une é trocada por orgulho, vem a confusão
+
+EIXO CRISTOLÓGICO
+At 2:6: "cada um os ouvia falar na sua própria língua" — em Pentecostes Cristo desfaz Babel pela Palavra do Espírito.`;
+
+  if (d.dia === 12) return `PARA PREGAR · Gênesis 11:10–26
+
+BIG IDEA
+"Por dez gerações silenciosas Deus conduz a história até o pai da promessa."
+
+MOVIMENTOS DO TEXTO
+[A]   · A linhagem de Sem é registrada com precisão divina
+      → A providência opera nos nomes que ninguém mais lembraria
+
+◉ [X]   · DA CONFUSÃO DE BABEL DEUS RECOLHE UMA LINHAGEM ESCOLHIDA
+      → Mesmo quando a história parece dispersa, Deus a recolhe num fio
+
+[A']  · A genealogia desemboca em Tera, pai de Abrão
+      → Cada genealogia silenciosa prepara um chamado que mudará a história
+
+EIXO CRISTOLÓGICO
+Mt 1:1: "livro da genealogia de Jesus Cristo" — toda lista bíblica de nomes converge no Filho de Davi.`;
+
+  if (d.dia === 13) return `PARA PREGAR · Gênesis 11:27–32
+
+BIG IDEA
+"A casa de Tera parte rumo a Canaã mas para no meio do caminho — Deus precisa chamar de novo."
+
+MOVIMENTOS DO TEXTO
+[A]   · A família de Tera é apresentada com Abrão, Naor e Harã
+      → Toda promessa começa em uma casa concreta e limitada
+
+◉ [X]   · SARAI ERA ESTÉRIL: NÃO TINHA FILHOS — IMPOSSIBILIDADE NO CENTRO
+      → Deus começa sua história onde o homem reconhece sua incapacidade
+
+[A']  · Tera parte para Canaã mas se estabelece em Harã e morre
+      → Há jornadas iniciadas que precisam ser retomadas pela próxima geração
+
+EIXO CRISTOLÓGICO
+Hb 11:8: "pela fé Abraão... saiu sem saber para onde ia" — onde Tera parou, a fé chamada por Deus continuará.`;
+
+  if (d.dia === 14) return `PARA PREGAR · Gênesis 12:1–9
+
+BIG IDEA
+"O chamado de Deus arranca Abrão da segurança para fazer dele bênção das nações."
+
+MOVIMENTOS DO TEXTO
+[A]   · "Sai da tua terra" — o chamado quebra os laços antigos
+      → Toda vocação começa por uma saída concreta da zona conhecida
+
+[B]   · Abrão partiu como o SENHOR lhe ordenara
+      → A fé não discute o mapa; obedece à voz de quem chama
+
+◉ [X]   · O SENHOR APARECEU A ABRÃO E DEU A PROMESSA DA TERRA
+      → No meio da peregrinação Deus se revela e firma a promessa
+
+[B']  · Abrão erigiu altar e invocou o nome do SENHOR
+      → A resposta da fé é adoração no lugar onde Deus se mostra
+
+[A']  · Abrão prossegue avançando rumo ao Neguebe
+      → A obediência caminha em etapas; cada passo confia o próximo a Deus
+
+EIXO CRISTOLÓGICO
+Gl 3:8: "em ti serão benditas todas as nações" — o evangelho foi pregado de antemão a Abraão.`;
+
+  if (d.dia === 15) return `PARA PREGAR · Gênesis 12:10–20
+
+BIG IDEA
+"A fé do chamado falha no Egito, mas Deus preserva a promessa contra o próprio chamado."
+
+MOVIMENTOS DO TEXTO
+[A]   · Abrão desce ao Egito por causa da fome em Canaã
+      → A pressão das circunstâncias testa a fidelidade da fé
+
+[B]   · Abrão pede a Sarai que diga ser sua irmã
+      → Quando o medo conduz, a mentira parece prudência
+
+◉ [X]   · SARAI É LEVADA AO PALÁCIO DO FARAÓ — A PROMESSA EM RISCO
+      → No coração da falha humana Deus guarda o que jurou cumprir
+
+[B']  · O Faraó devolve Sarai após pragas do SENHOR
+      → Deus intervém para corrigir o erro do próprio escolhido
+
+[A']  · Abrão sai do Egito enriquecido apesar da falha
+      → A graça preserva e enriquece quem ainda está aprendendo a confiar
+
+EIXO CRISTOLÓGICO
+Rm 4:21: "plenamente convicto de que ele era poderoso para cumprir" — a promessa não depende da força do crente, mas da fidelidade de Deus.`;
+
+  if (d.dia === 16) return `PARA PREGAR · Gênesis 13:1–18
+
+BIG IDEA
+"Quem renuncia ao melhor pela paz recebe das mãos de Deus mais que a vista alcança."
+
+MOVIMENTOS DO TEXTO
+[A]   · Abrão volta ao altar entre Betel e Ai
+      → O retorno à adoração é o primeiro passo após o desvio
+
+[B]   · Conflito entre pastores de Abrão e de Ló
+      → A prosperidade muitas vezes traz tensões inesperadas
+
+◉ [X]   · ABRÃO PROPÕE A SEPARAÇÃO — "ESCOLHE PRIMEIRO"
+      → A fé renuncia ao próprio direito para preservar a comunhão
+
+[B']  · Ló escolhe o vale do Jordão, a região de Sodoma
+      → Escolher pelos olhos sem temer a Deus expõe a alma ao risco
+
+[A']  · O SENHOR renova a promessa: "olha do lugar onde estás"
+      → Quem confia em Deus recebe pela palavra mais que pela vista
+
+EIXO CRISTOLÓGICO
+Fp 2:5–7: Cristo "não considerou como usurpação ser igual a Deus" — quem se abaixa recebe das mãos do Pai.`;
+
+  if (d.dia === 17) return `PARA PREGAR · Gênesis 14:1–12
+
+BIG IDEA
+"A escolha pelos olhos arrasta Ló para o cativeiro das nações."
+
+MOVIMENTOS DO TEXTO
+[A]   · Reis do oriente sobem em guerra contra cinco reis do vale
+      → A história mundial gira em torno de promessas que ela ignora
+
+◉ [X]   · A DERROTA DE SODOMA — LÓ É LEVADO CATIVO COM SEUS BENS
+      → Onde se planta a tenda longe de Deus, ali se colhe o cativeiro
+
+[A']  · Os reis vencedores partem levando reféns e bens
+      → O mundo dispõe livremente das vidas que escolheram seu vale
+
+EIXO CRISTOLÓGICO
+Lc 4:18: "enviou-me a proclamar libertação aos cativos" — Cristo é quem resgata os Ló de toda escolha errada.`;
+
+  if (d.dia === 18) return `PARA PREGAR · Gênesis 14:13–24
+
+BIG IDEA
+"O vencedor da guerra se ajoelha diante do sacerdote que abençoa em nome de Deus Altíssimo."
+
+MOVIMENTOS DO TEXTO
+[A]   · Abrão é avisado e resgata Ló com seus 318 servos
+      → A fé age concretamente para socorrer o irmão em desgraça
+
+[B]   · Abrão volta vitorioso da matança dos reis
+      → A vitória que vem de Deus precisa de palavras que a interpretem
+
+◉ [X]   · MELQUISEDEQUE, REI DE SALÉM E SACERDOTE DO DEUS ALTÍSSIMO, O ABENÇOA
+      → Há um sacerdócio anterior e superior que ressignifica toda vitória
+
+[B']  · Abrão dá o dízimo de tudo a Melquisedeque
+      → A vitória se entrega ao sacerdote para que retorne como bênção
+
+[A']  · Abrão recusa os despojos do rei de Sodoma
+      → Quem foi abençoado pelo Altíssimo não precisa enriquecer-se com o mundo
+
+EIXO CRISTOLÓGICO
+Hb 7:24–25: Cristo "tem sacerdócio perpétuo" — Melquisedeque é sombra do Sumo Sacerdote eterno.`;
+
+  if (d.dia === 19) return `PARA PREGAR · Gênesis 15:1–21
+
+BIG IDEA
+"A aliança de Deus se firma por sua própria fidelidade enquanto Abrão dorme."
+
+MOVIMENTOS DO TEXTO
+[A]   · "Não temas, Abrão; eu sou o teu escudo, o teu galardão"
+      → Onde Deus se dá como recompensa, não há razão para temer
+
+[B]   · Abrão crê e isso lhe é imputado como justiça
+      → A justiça que conta diante de Deus é a recebida pela fé
+
+◉ [X]   · PROFECIA DOS 400 ANOS NO EGITO — A HISTÓRIA ANTECIPADA POR DEUS
+      → Deus traça os séculos para o seu povo antes que o povo exista
+
+[B']  · O SENHOR passa entre os animais partidos como labareda
+      → Deus assume sozinho o ônus da aliança que poderia condenar o homem
+
+[A']  · A promessa da terra é selada com fronteiras concretas
+      → A palavra de Deus desce ao detalhe geográfico para confirmar a fé
+
+EIXO CRISTOLÓGICO
+Rm 4:3: "creu Abraão a Deus, e isso lhe foi imputado como justiça" — a fé em Cristo recebe a mesma imputação.`;
+
+  if (d.dia === 20) return `PARA PREGAR · Gênesis 16:1–16
+
+BIG IDEA
+"Onde a fé tenta apressar a promessa, Deus revela ser aquele que vê os esquecidos."
+
+MOVIMENTOS DO TEXTO
+[A]   · Sarai entrega Hagar a Abrão como concubina
+      → Tentar realizar a promessa por meios humanos gera conflitos humanos
+
+[B]   · Hagar despreza Sarai; Sarai oprime; Hagar foge
+      → Atalhos da carne sempre revelam relações feridas
+
+◉ [X]   · O ANJO DO SENHOR ENCONTRA HAGAR JUNTO À FONTE NO DESERTO
+      → Deus busca a serva esquecida antes que ela busque por ele
+
+[B']  · O anjo promete multiplicar os descendentes de Hagar
+      → A graça alcança também aqueles que estão fora da linha eleita
+
+[A']  · Hagar chama o SENHOR de "El Roí" — o Deus que me vê
+      → Conhecer a Deus como o que nos vê transforma o deserto em encontro
+
+EIXO CRISTOLÓGICO
+Jo 1:48: "antes que Filipe te chamasse, eu te vi" — em Cristo, o Deus que vê se faz o Deus que chama.`;
+
+  if (d.dia === 21) return `PARA PREGAR · Gênesis 17:1–27
+
+BIG IDEA
+"O sinal da circuncisão grava a aliança na carne para gerações que ainda virão."
+
+MOVIMENTOS DO TEXTO
+[A]   · "Eu sou o Deus Todo-Poderoso" — Abrão se torna Abraão
+      → A aliança redefine identidade pela palavra do Senhor
+
+[B]   · A circuncisão é estabelecida como sinal da aliança
+      → A aliança requer marcas concretas no corpo do povo
+
+◉ [X]   · SARAI SE TORNA SARA — A PROMESSA DE ISAQUE É REAFIRMADA
+      → A aliança se cumpre na esposa estéril, prova de graça soberana
+
+[B']  · Abraão recebe a promessa do filho com riso e fé
+      → Diante do impossível, a fé ri e ainda assim obedece
+
+[A']  · Abraão circuncida toda a sua casa no mesmo dia
+      → A obediência da fé é integral, imediata e familiar
+
+EIXO CRISTOLÓGICO
+Cl 2:11: "fostes circuncidados... no despojar do corpo da carne, na circuncisão de Cristo" — o sinal aponta para a obra interior do Espírito.`;
+
+  if (d.dia === 22) return `PARA PREGAR · Gênesis 18:1–15
+
+BIG IDEA
+"Diante do impossível, o riso da incredulidade encontra o riso da promessa cumprida."
+
+MOVIMENTOS DO TEXTO
+[A]   · O SENHOR aparece a Abraão sob os carvalhos de Manre
+      → Deus visita as tendas comuns para anunciar coisas extraordinárias
+
+[B]   · Abraão hospeda os visitantes com generosidade
+      → A hospitalidade é solo onde se ouvem promessas divinas
+
+◉ [X]   · "HAVERÁ COISA DEMASIADO DIFÍCIL PARA O SENHOR?"
+      → A pergunta central da fé é se Deus pode o que prometeu
+
+[B']  · Sara ri por dentro diante da promessa do filho
+      → A descrença muitas vezes ri silenciosamente onde os ouvidos divinos escutam
+
+[A']  · O SENHOR insiste: "no tempo determinado tornarei a ti"
+      → A promessa não recua diante do riso; ela vence pelo tempo divino
+
+EIXO CRISTOLÓGICO
+Lc 1:37: "para Deus nada é impossível" — a mesma palavra que abriu o ventre de Sara concebeu Cristo em Maria.`;
+
+  if (d.dia === 23) return `PARA PREGAR · Gênesis 18:16–33
+
+BIG IDEA
+"Onde Deus julga, ele primeiro abre o coração do justo para interceder."
+
+MOVIMENTOS DO TEXTO
+[A]   · O SENHOR revela a Abraão o juízo sobre Sodoma
+      → A amizade com Deus inclui partilha de seus propósitos
+
+[B]   · Abraão se aproxima e clama por justiça aos justos
+      → A intercessão nasce do encontro com o Deus justo
+
+◉ [X]   · "NÃO FARÁ JUSTIÇA O JUIZ DE TODA A TERRA?"
+      → No coração da súplica está a confiança na justiça do próprio Juiz
+
+[B']  · A negociação desce de cinquenta a dez justos
+      → A intercessão persiste enquanto a misericórdia ainda dá espaço
+
+[A']  · O SENHOR vai embora; Abraão volta ao seu lugar
+      → O intercessor entrega a causa nas mãos do Juiz e descansa
+
+EIXO CRISTOLÓGICO
+1Tm 2:5: "há um só mediador entre Deus e os homens, Cristo Jesus" — toda intercessão se cumpre no Filho que intercede sempre.`;
+
+  if (d.dia === 24) return `PARA PREGAR · Gênesis 19:1–11
+
+BIG IDEA
+"A cidade que devora hóspedes prova que merece o juízo que recebe."
+
+MOVIMENTOS DO TEXTO
+[A]   · Dois anjos chegam a Sodoma; Ló insiste em hospedá-los
+      → Ainda há vestígios de bondade onde há contato com a promessa
+
+◉ [X]   · A CIDADE INTEIRA CERCA A CASA EXIGINDO VIOLAR OS HÓSPEDES
+      → Onde a corrupção é universal, o juízo se torna justiça evidente
+
+[A']  · Os anjos ferem de cegueira os que cercavam a porta
+      → A cegueira física antecipa a cegueira moral que precipita o juízo
+
+EIXO CRISTOLÓGICO
+2Pe 2:6–7: Sodoma "fica como exemplo aos que vivem impiamente" — Cristo livra o justo da hora da provação.`;
+
+  if (d.dia === 25) return `PARA PREGAR · Gênesis 19:12–29
+
+BIG IDEA
+"Quando o juízo cai, a misericórdia é quem leva o salvo pela mão para fora."
+
+MOVIMENTOS DO TEXTO
+[A]   · Os anjos ordenam a Ló que saia com sua família
+      → A salvação chega pela palavra urgente de quem foi enviado
+
+◉ [X]   · OS ANJOS PEGAM LÓ PELA MÃO — A MISERICÓRDIA DO SENHOR SOBRE ELE
+      → A salvação é obra de mãos divinas sobre quem hesitaria sozinho
+
+[A']  · Sodoma é destruída; a mulher de Ló vira estátua de sal
+      → Olhar para trás é renunciar à graça que ainda conduz adiante
+
+EIXO CRISTOLÓGICO
+Lc 17:32–33: "lembrai-vos da mulher de Ló" — quem busca preservar a vida velha perde a salvação oferecida em Cristo.`;
+
+  if (d.dia === 26) return `PARA PREGAR · Gênesis 19:30–38
+
+BIG IDEA
+"O salvo do juízo cai numa caverna escondida — provando que sem o Senhor ninguém se sustenta."
+
+MOVIMENTOS DO TEXTO
+[A]   · Ló e suas filhas se escondem numa caverna
+      → A salvação física não substitui a obra interior necessária
+
+◉ [X]   · AS FILHAS EMBRIAGAM O PAI — ORIGEM VERGONHOSA DE MOABE E AMOM
+      → O pecado oculto gera nações que se voltarão contra o povo da promessa
+
+[A']  · Os filhos nascidos darão nome a duas nações inimigas
+      → A herança que escolhemos plantar volta a nós nas gerações futuras
+
+EIXO CRISTOLÓGICO
+Rt 4:13–17: de Moabe vem Rute, mãe de Davi — em Cristo, até as origens vergonhosas são redimidas pela graça.`;
+
+  if (d.dia === 27) return `PARA PREGAR · Gênesis 20:1–18
+
+BIG IDEA
+"Mesmo a falha repetida do pai da fé não anula a fidelidade do Deus da aliança."
+
+MOVIMENTOS DO TEXTO
+[A]   · Abraão diz que Sara é sua irmã; Abimeleque a toma
+      → Pecados antigos rebrotam quando o coração se descuida
+
+[B]   · Deus adverte Abimeleque em sonho com firmeza
+      → A graça protetora age antes que o erro humano se consume
+
+◉ [X]   · ABIMELEQUE CONFRONTA ABRAÃO PELA MENTIRA
+      → Às vezes o de fora repreende o de dentro para preservar a aliança
+
+[B']  · Abraão explica o motivo do seu temor
+      → Onde o temor de Deus enfraquece, o temor humano se infiltra
+
+[A']  · Abimeleque devolve Sara e abençoa Abraão
+      → Deus restitui o necessário para que a promessa siga adiante
+
+EIXO CRISTOLÓGICO
+Rm 8:31: "se Deus é por nós, quem será contra nós?" — a fidelidade divina alcança até os escolhidos que falham.`;
+
+  if (d.dia === 28) return `PARA PREGAR · Gênesis 21:1–8
+
+BIG IDEA
+"No tempo determinado, o riso da fé se torna o riso da promessa cumprida."
+
+MOVIMENTOS DO TEXTO
+[A]   · O SENHOR visita Sara como havia dito
+      → A promessa de Deus cumpre-se conforme sua própria palavra
+
+◉ [X]   · ISAQUE NASCE — "DEUS ME FEZ RIR; TODO O QUE OUVIR HÁ DE RIR COMIGO"
+      → O Deus que parecia impossível agora produz riso comunitário
+
+[A']  · Abraão circuncida Isaque ao oitavo dia e faz grande festa
+      → A obediência e a celebração nascem juntas onde a promessa se cumpre
+
+EIXO CRISTOLÓGICO
+Gl 4:28: "vós, irmãos, sois filhos da promessa, como Isaque" — em Cristo nascemos pelo poder da palavra divina.`;
+
+  if (d.dia === 29) return `PARA PREGAR · Gênesis 21:9–21
+
+BIG IDEA
+"O Deus que escolhe Isaque também ouve Ismael no deserto."
+
+MOVIMENTOS DO TEXTO
+[A]   · Sara pede a expulsão de Hagar e Ismael
+      → Há separações dolorosas que distinguem a linha da promessa
+
+◉ [X]   · NO DESERTO, DEUS OUVE A VOZ DO MENINO E ABRE OS OLHOS DE HAGAR
+      → A graça soberana atende mesmo aqueles que não estão na linha eleita
+
+[A']  · Ismael cresce no deserto e se torna flecheiro
+      → Deus cumpre sua palavra também sobre os que ficaram à margem
+
+EIXO CRISTOLÓGICO
+Lc 1:54: "lembrou-se da sua misericórdia" — em Cristo, a misericórdia ouve cada criança chorando no deserto.`;
+
+  if (d.dia === 30) return `PARA PREGAR · Gênesis 21:22–34
+
+BIG IDEA
+"Quem é abençoado por Deus se torna parceiro confiável até para reis pagãos."
+
+MOVIMENTOS DO TEXTO
+[A]   · Abimeleque pede uma aliança a Abraão
+      → A bênção de Deus torna o crente atraente até para os de fora
+
+[B]   · Abraão se queixa do poço tomado pelos servos
+      → Conflitos concretos exigem soluções concretas, não silêncio piedoso
+
+◉ [X]   · AS SETE OVELHAS COMO TESTEMUNHO DO POÇO DE ABRAÃO
+      → O sinal visível protege o direito quando a palavra pode ser esquecida
+
+[B']  · O lugar é chamado Berseba — poço do juramento
+      → Lugares de aliança ganham nomes que pregam por gerações
+
+[A']  · Abraão invoca o SENHOR, o Deus Eterno
+      → Toda aliança humana se firma debaixo do nome do Deus eterno
+
+EIXO CRISTOLÓGICO
+Hb 6:13–18: "havendo Deus prometido... jurou por si mesmo" — em Cristo, Deus mesmo é o juramento da aliança.`;
+
+  if (d.dia === 31) return `PARA PREGAR · Gênesis 22:1–19
+
+BIG IDEA
+"Onde a fé entrega o filho, Deus mesmo provê o cordeiro."
+
+MOVIMENTOS DO TEXTO
+[A]   · "Toma teu filho, o teu único... e oferece-o em holocausto"
+      → Deus testa a fé pedindo o que parece anular a própria promessa
+
+[B]   · Abraão e Isaque sobem juntos ao monte de Moriá
+      → A obediência da fé caminha em silêncio rumo ao impossível
+
+◉ [X]   · "DEUS PROVERÁ PARA SI O CORDEIRO" — A PALAVRA ANTES DO CARNEIRO
+      → A fé fala o que ainda não vê e antecipa a provisão divina
+
+[B']  · O anjo detém Abraão; o carneiro substitui Isaque
+      → A substituição mostra que Deus jamais pediu sangue humano final
+
+[A']  · Abraão chama o lugar "O SENHOR proverá"; promessa renovada
+      → Onde a fé entrega, ali a bênção se multiplica nas nações
+
+EIXO CRISTOLÓGICO
+Jo 1:29: "Eis o Cordeiro de Deus, que tira o pecado do mundo" — em Moriá Deus prefigurou Calvário.`;
+
+  if (d.dia === 32) return `PARA PREGAR · Gênesis 22:20–24
+
+BIG IDEA
+"A pequena lista da família de Naor prepara o caminho para Rebeca, a esposa de Isaque."
+
+MOVIMENTOS DO TEXTO
+[A]   · Notícias da família de Naor chegam a Abraão
+      → A providência move famílias distantes para preparar o próximo passo
+
+◉ [X]   · RECEBA NASCE — A FUTURA ESPOSA DE ISAQUE É ANUNCIADA
+      → Deus já está formando a resposta antes que a oração seja feita
+
+[A']  · A lista termina nomeando todos os filhos de Naor
+      → Cada nome aparentemente banal pode ser ponte de uma promessa
+
+EIXO CRISTOLÓGICO
+Ef 1:4: "nos escolheu nele antes da fundação do mundo" — a providência antecipa a aliança em silêncio.`;
+
+  if (d.dia === 33) return `PARA PREGAR · Gênesis 23:1–20
+
+BIG IDEA
+"O peregrino compra uma sepultura: a primeira posse concreta da terra prometida."
+
+MOVIMENTOS DO TEXTO
+[A]   · Sara morre em Hebrom; Abraão a chora
+      → A fé não anestesia a dor da perda; chora com esperança
+
+[B]   · Os filhos de Hete oferecem livremente seus sepulcros
+      → A graça torna o estrangeiro respeitado entre as nações
+
+◉ [X]   · EFROM OFERECE O CAMPO E A CAVERNA DE MACPELA
+      → A primeira posse da promessa é um túmulo — herança da esperança
+
+[B']  · Abraão pesa a prata ao preço acordado
+      → A fé negocia honestamente, sem se aproveitar da gentileza
+
+[A']  · Abraão sepulta Sara na caverna de Macpela
+      → A morte do crente é semente plantada na terra da promessa
+
+EIXO CRISTOLÓGICO
+1Co 15:55: "onde está, ó morte, o teu aguilhão?" — em Cristo, todo túmulo torna-se posse da promessa.`;
+
+  if (d.dia === 34) return `PARA PREGAR · Gênesis 24:1–67
+
+BIG IDEA
+"A providência conduz silenciosamente o servo, a fonte e a noiva ao encontro escolhido."
+
+MOVIMENTOS DO TEXTO
+[A]   · Abraão faz o servo jurar buscar esposa na terra natal
+      → A continuidade da promessa exige escolhas santas para a família
+
+[B]   · O servo chega à fonte; Rebeca dá água aos camelos
+      → A providência se manifesta em ações comuns e generosas
+
+◉ [X]   · O SERVO NARRA SUA MISSÃO À FAMÍLIA — TUDO VEM DA MÃO DO SENHOR
+      → A história contada à luz de Deus interpreta corretamente os fatos
+
+[B']  · A família concorda; Rebeca é abençoada com palavras de aliança
+      → A decisão de fé recebe a bênção da casa que reconhece a obra divina
+
+[A']  · Rebeca vai ao encontro de Isaque; tornam-se casal
+      → A obediência de cada parte permite o encontro preparado por Deus
+
+EIXO CRISTOLÓGICO
+Jo 4:14: "a água que eu lhe der... fonte para a vida eterna" — em Cristo, junto à fonte, o Servo busca a noiva.`;
+
+  if (d.dia === 35) return `PARA PREGAR · Gênesis 25:1–6
+
+BIG IDEA
+"Mesmo na velhice fértil, Abraão preserva a unicidade da promessa em Isaque."
+
+MOVIMENTOS DO TEXTO
+[A]   · Abraão toma Quetura; nascem outros filhos
+      → A vida continua produzindo mesmo após o cumprimento da promessa
+
+◉ [X]   · ABRAÃO DÁ TUDO A ISAQUE — A LINHA DA PROMESSA É PRESERVADA
+      → O zelo pela promessa exige distinguir o herdeiro entre muitos filhos
+
+[A']  · Aos demais filhos dá presentes e os envia para longe
+      → A graça paterna provê para todos, mas guarda a aliança no escolhido
+
+EIXO CRISTOLÓGICO
+Hb 11:18: "em Isaque será chamada a tua descendência" — em Cristo, herdeiro único, a promessa se cumpre.`;
+
+  if (d.dia === 36) return `PARA PREGAR · Gênesis 25:7–11
+
+BIG IDEA
+"O peregrino que não viu a posse plena descansa, e Deus continua abençoando seu filho."
+
+MOVIMENTOS DO TEXTO
+[A]   · Abraão morre em boa velhice, satisfeito de dias
+      → A vida de fé termina em paz, ainda que não veja tudo cumprido
+
+◉ [X]   · ISAQUE E ISMAEL SEPULTAM O PAI JUNTOS EM MACPELA
+      → A morte do justo reconcilia o que a vida havia separado
+
+[A']  · Deus abençoa Isaque após a morte de Abraão
+      → A bênção não se interrompe; ela passa adiante pela aliança
+
+EIXO CRISTOLÓGICO
+Hb 11:13: "morreram todos na fé, sem terem recebido as promessas" — em Cristo a posse plena chega aos peregrinos.`;
+
+  if (d.dia === 37) return `PARA PREGAR · Gênesis 25:12–18
+
+BIG IDEA
+"Mesmo a linhagem que ficou de fora da aliança recebe o cumprimento da palavra divina."
+
+MOVIMENTOS DO TEXTO
+[A]   · A genealogia de Ismael é registrada por Deus
+      → Nenhum povo escapa da memória atenta do Criador
+
+◉ [X]   · DOZE PRÍNCIPES NASCEM DE ISMAEL — A PROMESSA SE CUMPRE TAMBÉM AQUI
+      → A palavra de Deus se cumpre tanto na linha eleita quanto na excluída
+
+[A']  · Ismael habita defronte de seus irmãos
+      → A coexistência das nações segue o desenho do Senhor da história
+
+EIXO CRISTOLÓGICO
+Rm 11:32: "Deus encerrou a todos sob a desobediência, para usar de misericórdia para com todos" — em Cristo, a misericórdia abrange todos os ramos.`;
+
+  if (d.dia === 38) return `PARA PREGAR · Gênesis 25:19–28
+
+BIG IDEA
+"O irmão menor é escolhido antes que tenha feito qualquer coisa — a graça precede a obra."
+
+MOVIMENTOS DO TEXTO
+[A]   · Rebeca é estéril; Isaque ora ao SENHOR
+      → A oração persistente abre o ventre fechado pelo Senhor
+
+[B]   · Rebeca consulta o SENHOR; profecia dos dois povos
+      → A história dos filhos é interpretada pela palavra de Deus desde o ventre
+
+◉ [X]   · "O MAIS VELHO SERVIRÁ AO MAIS MOÇO" — A ELEIÇÃO INVERTE A ORDEM HUMANA
+      → A graça de Deus subverte a expectativa da natureza e do costume
+
+[B']  · Esaú e Jacó nascem com sinais opostos
+      → A escolha divina já se imprime nos próprios nascimentos
+
+[A']  · Os pais amam por preferência: Isaque a Esaú, Rebeca a Jacó
+      → O favoritismo familiar prepara conflitos que Deus ainda dominará
+
+EIXO CRISTOLÓGICO
+Rm 9:11–13: "não tendo eles ainda feito bem ou mal... Jacó amei" — em Cristo a eleição se cumpre por pura graça.`;
+
+  if (d.dia === 39) return `PARA PREGAR · Gênesis 25:29–34
+
+BIG IDEA
+"Quem despreza a herança eterna pela urgência presente revela o coração que tem."
+
+MOVIMENTOS DO TEXTO
+[A]   · Esaú volta do campo faminto e exausto
+      → A fome física revela prioridades espirituais ocultas
+
+◉ [X]   · ESAÚ VENDE A PRIMOGENITURA POR UM PRATO DE LENTILHAS
+      → Trocar herança eterna por satisfação imediata é a essência do profano
+
+[A']  · Esaú come, bebe, levanta-se e sai — "desprezou a primogenitura"
+      → O coração profano nem percebe o tamanho do que perdeu
+
+EIXO CRISTOLÓGICO
+Hb 12:16: "não haja algum profano como Esaú, que por uma comida vendeu o seu direito" — em Cristo aprendemos a preferir a herança eterna.`;
+
+  if (d.dia === 40) return `PARA PREGAR · Gênesis 26:1–14
+
+BIG IDEA
+"A aliança feita com o pai sustenta o filho até em meio à mesma falha repetida."
+
+MOVIMENTOS DO TEXTO
+[A]   · Nova fome; o SENHOR aparece a Isaque e renova a aliança
+      → A providência reaparece em cada geração com a mesma fidelidade
+
+[B]   · Isaque mente sobre Rebeca em Gerar
+      → Os pecados dos pais costumam reaparecer nos filhos
+
+◉ [X]   · ABIMELEQUE DESCOBRE A VERDADE E ORDENA: "NÃO TOQUE ESSE HOMEM"
+      → Deus protege o pacto mesmo quando os escolhidos falham
+
+[B']  · Isaque semeia e colhe cêntuplo no mesmo ano
+      → A bênção da aliança alcança até a falha humana arrependida
+
+[A']  · Isaque enriquece sobremaneira em Gerar
+      → A fidelidade de Deus se cumpre na prosperidade do peregrino
+
+EIXO CRISTOLÓGICO
+Rm 11:29: "irrevogáveis os dons e a vocação de Deus" — em Cristo, a aliança alcança gerações além da nossa falha.`;
+
+  if (d.dia === 41) return `PARA PREGAR · Gênesis 26:15–25
+
+BIG IDEA
+"A paciência do justo cava novos poços onde os outros tampam os antigos."
+
+MOVIMENTOS DO TEXTO
+[A]   · Os filisteus tapam os poços que Abraão cavara
+      → A inveja procura apagar a memória da bênção alheia
+
+[B]   · Isaque cava Eseque e Sitna; conflitos sucessivos
+      → O caminho da fidelidade muitas vezes passa por brigas evitadas
+
+◉ [X]   · EM REOBOTE — "O SENHOR NOS DEU LUGAR LARGO"
+      → A paciência que recua por amor recebe o espaço amplo de Deus
+
+[B']  · Isaque sobe a Berseba; o SENHOR aparece novamente
+      → A obediência paciente é recompensada com nova revelação
+
+[A']  · Isaque edifica altar e invoca o nome do SENHOR
+      → O peregrino marca o lugar pela adoração antes pela posse
+
+EIXO CRISTOLÓGICO
+Mt 5:9: "bem-aventurados os pacificadores" — em Cristo, o reino se firma pela paciência que cava poços novos.`;
+
+  if (d.dia === 42) return `PARA PREGAR · Gênesis 26:26–33
+
+BIG IDEA
+"A bênção visível sobre o crente faz o mundo procurar aliança com ele."
+
+MOVIMENTOS DO TEXTO
+[A]   · Abimeleque vem com séquito buscar aliança
+      → A bênção do Senhor torna o filho buscado pelos que o evitavam
+
+◉ [X]   · "VEMOS CLARAMENTE QUE O SENHOR É CONTIGO"
+      → O testemunho mais forte é a presença reconhecida do Senhor na vida
+
+[A']  · Fazem aliança e juram; o poço é chamado Seba
+      → A paz selada com juramento eterniza o testemunho no nome do lugar
+
+EIXO CRISTOLÓGICO
+Jo 17:21: "para que o mundo creia que tu me enviaste" — em Cristo a aliança visível na igreja convence o mundo.`;
+
+  if (d.dia === 43) return `PARA PREGAR · Gênesis 26:34–35
+
+BIG IDEA
+"Casamentos fora da aliança trazem amargura à casa que parecia próspera."
+
+MOVIMENTOS DO TEXTO
+[A]   · Esaú toma duas mulheres heteias aos quarenta anos
+      → Decisões aparentemente pessoais marcam a vida de toda a família
+
+◉ [X]   · ELAS FORAM AMARGURA DE ESPÍRITO PARA ISAQUE E REBECA
+      → Misturar a vocação com o que ela rejeitou produz dor duradoura
+
+EIXO CRISTOLÓGICO
+2Co 6:14: "não vos prendais a um jugo desigual com os incrédulos" — em Cristo aprendemos que o jugo se escolhe pelo Senhor.`;
+
+  if (d.dia === 44) return `PARA PREGAR · Gênesis 27:1–40
+
+BIG IDEA
+"Mesmo no engano humano, Deus cumpre a palavra que dissera desde o ventre."
+
+MOVIMENTOS DO TEXTO
+[A]   · Isaque envelhecido pede a Esaú que prepare caça
+      → O coração velho insiste em preferências contra a palavra divina
+
+[B]   · Rebeca arquiteta o engano em favor de Jacó
+      → A fé sem confiança recorre à fraude quando deveria orar
+
+◉ [X]   · JACÓ ENGANA ISAQUE E RECEBE A BÊNÇÃO DO PRIMOGÊNITO
+      → O propósito divino segue mesmo pelos caminhos tortuosos dos homens
+
+[B']  · Esaú chega; Isaque treme e Esaú clama em pranto
+      → O coração profano descobre tarde demais o que desprezou cedo
+
+[A']  · Esaú recebe uma bênção secundária, longe do orvalho do céu
+      → O que se vende não se recompra com lágrimas tardias
+
+EIXO CRISTOLÓGICO
+Rm 8:28: "todas as coisas cooperam para o bem" — em Cristo, mesmo intrigas humanas servem aos propósitos eternos.`;
+
+  if (d.dia === 45) return `PARA PREGAR · Gênesis 27:41–45
+
+BIG IDEA
+"O ódio fraterno coloca em fuga o herdeiro da promessa — a graça começa a peregrinar."
+
+MOVIMENTOS DO TEXTO
+[A]   · Esaú se enche de ódio e planeja matar Jacó
+      → O pecado não confessado fermenta em violência interior
+
+◉ [X]   · REBECA ENVIA JACÓ PARA HARÃ — A FUGA QUE SE TORNARÁ PROMESSA
+      → Deus usa a fuga humana como início do caminho da aliança
+
+[A']  · "Por que perderia eu os dois num só dia?"
+      → O pecado fragmenta a casa que Deus quer reunir em bênção
+
+EIXO CRISTOLÓGICO
+Mt 5:44: "amai os vossos inimigos" — em Cristo a inimizade entre irmãos cede à reconciliação evangélica.`;
+
+  if (d.dia === 46) return `PARA PREGAR · Gênesis 27:46–28:9
+
+BIG IDEA
+"O envio de Jacó torna explícita a vocação que ele havia tomado por engano."
+
+MOVIMENTOS DO TEXTO
+[A]   · Rebeca expressa cansaço das mulheres heteias
+      → A dor da família sem aliança força decisões longas adiadas
+
+◉ [X]   · ISAQUE ABENÇOA JACÓ COM A BÊNÇÃO DE ABRAÃO E O ENVIA
+      → A bênção tomada por engano é agora dada conscientemente — Deus reordena tudo
+
+[A']  · Esaú toma também uma filha de Ismael, tentando agradar
+      → O coração profano corrige por fora o que continua igual por dentro
+
+EIXO CRISTOLÓGICO
+Ef 1:3: "nos abençoou com toda sorte de bênção espiritual" — em Cristo recebemos a bênção de Abraão integralmente.`;
+
+  if (d.dia === 47) return `PARA PREGAR · Gênesis 28:10–22
+
+BIG IDEA
+"No deserto da fuga, Deus desce a escada e promete estar com o fugitivo."
+
+MOVIMENTOS DO TEXTO
+[A]   · Jacó dorme em Luz; pedra como travesseiro
+      → Quem foge para Deus encontra Deus mesmo no caminho da fuga
+
+[B]   · Sonha com a escada que liga céu e terra
+      → O céu se inclina para o homem onde o homem nem o procurava
+
+◉ [X]   · "ESTE É A CASA DE DEUS E A PORTA DO CÉU"
+      → Onde Deus se revela, o lugar comum se torna santuário
+
+[B']  · Jacó ergue a pedra como coluna e chama Betel
+      → A revelação se materializa em sinal duradouro para a memória
+
+[A']  · Jacó faz voto: "o SENHOR será o meu Deus"
+      → A peregrinação se transforma quando se firma como aliança pessoal
+
+EIXO CRISTOLÓGICO
+Jo 1:51: "vereis o céu aberto e os anjos subindo e descendo sobre o Filho do Homem" — Cristo é a escada de Betel.`;
+
+  if (d.dia === 48) return `PARA PREGAR · Gênesis 29:1–14b
+
+BIG IDEA
+"A providência guia o fugitivo até a fonte onde Deus já preparara o encontro."
+
+MOVIMENTOS DO TEXTO
+[A]   · Jacó chega ao poço onde se aguam os rebanhos
+      → A providência prepara fontes para os que peregrinam pela fé
+
+◉ [X]   · JACÓ ENCONTRA RAQUEL E ROLA A PEDRA DO POÇO
+      → Quem confia em Deus encontra a força para o passo decisivo no tempo certo
+
+[A']  · Labão corre ao encontro do parente: "és meu osso e minha carne"
+      → A providência prepara casa para acolher o peregrino em fuga
+
+EIXO CRISTOLÓGICO
+Jo 4:7: "veio uma mulher de Samaria tirar água; disse-lhe Jesus: dá-me de beber" — em Cristo, junto à fonte, a noiva é encontrada.`;
+
+  if (d.dia === 49) return `PARA PREGAR · Gênesis 29:14c–30
+
+BIG IDEA
+"O enganador é enganado — Deus disciplina pela própria conduta o filho amado."
+
+MOVIMENTOS DO TEXTO
+[A]   · Jacó serve sete anos por Raquel
+      → O amor verdadeiro paga o preço sem reclamar do tempo
+
+[B]   · Labão engana Jacó na noite de núpcias
+      → Quem semeou engano colhe engano em silêncio doloroso
+
+◉ [X]   · "POR QUE ME ENGANASTE?" — A PERGUNTA QUE JACÓ HAVIA NEGADO
+      → A justiça de Deus devolve ao enganador a própria pergunta que ele evitara
+
+[B']  · Labão impõe mais sete anos por Raquel
+      → A disciplina divina prolonga o tempo até que o caráter mude
+
+[A']  · Jacó ama Raquel mais que Lia
+      → O coração humano permanece desordenado mesmo sob a disciplina
+
+EIXO CRISTOLÓGICO
+Gl 6:7: "tudo o que o homem semear, isso também ceifará" — em Cristo, a colheita do engano é interrompida pela cruz.`;
+
+  if (d.dia === 50) return `PARA PREGAR · Gênesis 29:31–35; 30:1–24
+
+BIG IDEA
+"Na rivalidade de duas esposas, Deus forma as doze tribos do seu povo escolhido."
+
+MOVIMENTOS DO TEXTO
+[A]   · Lia, desprezada, recebe filhos do Senhor
+      → Deus se inclina particularmente para a esposa esquecida
+
+[B]   · Raquel inveja Lia e entrega Bila como concubina
+      → A inveja produz arranjos humanos que multiplicam dor
+
+◉ [X]   · AS TRIBOS NASCEM NO MEIO DA RIVALIDADE — DEUS FORMA SEU POVO
+      → A história santa progride mesmo entre dramas familiares feios
+
+[B']  · Lia entrega Zilpa; a competição se intensifica
+      → A carne ferida tenta vencer pela mesma arma da rival
+
+[A']  · Deus se lembra de Raquel; nasce José
+      → Deus ouve no tempo dele as orações longamente sustentadas
+
+EIXO CRISTOLÓGICO
+Ap 7:4–8: "selados, de todas as tribos de Israel" — em Cristo, as doze tribos formadas na dor servem ao Cordeiro.`;
+
+  if (d.dia === 51) return `PARA PREGAR · Gênesis 30:25–43
+
+BIG IDEA
+"A bênção de Deus prospera o seu servo mesmo dentro do jogo desonesto do mundo."
+
+MOVIMENTOS DO TEXTO
+[A]   · Jacó pede para voltar à sua terra
+      → A saudade da promessa pressiona o coração do peregrino
+
+[B]   · Labão tenta novamente reter Jacó por interesse
+      → Quem usa o servo de Deus por interesse perde quando ele parte
+
+◉ [X]   · JACÓ ENGENDRA TÁTICAS COM AS VARAS — MAS DEUS É QUEM ABENÇOA
+      → A bênção não vem do esquema humano; vem da fidelidade divina
+
+[B']  · Os rebanhos malhados se multiplicam para Jacó
+      → A providência prospera o trabalho mesmo em ambiente hostil
+
+[A']  · Jacó enriquece grandemente em servos e gados
+      → A bênção visível confirma a aliança feita na fuga
+
+EIXO CRISTOLÓGICO
+Mt 6:33: "buscai primeiro o reino... e todas estas coisas vos serão acrescentadas" — em Cristo, a prosperidade segue a obediência.`;
+
+  if (d.dia === 52) return `PARA PREGAR · Gênesis 31:1–21
+
+BIG IDEA
+"A voz de Deus chama o peregrino de volta, e a obediência sobrepuja vinte anos de pressão."
+
+MOVIMENTOS DO TEXTO
+[A]   · A inveja dos filhos de Labão muda o ambiente
+      → Quando Deus quer mover, ele esfria o lugar antigo
+
+[B]   · O SENHOR ordena: "volta à terra dos teus pais"
+      → A palavra de Deus é o gatilho final de toda mudança verdadeira
+
+◉ [X]   · JACÓ CONVENCE LIA E RAQUEL — "O DEUS DE MEU PAI ESTEVE COMIGO"
+      → A história da fidelidade divina convence a casa a partir junta
+
+[B']  · Raquel rouba os ídolos do pai sem que Jacó saiba
+      → Velhas idolatrias se escondem na bagagem das melhores partidas
+
+[A']  · Jacó parte sem avisar Labão, atravessa o Eufrates
+      → A obediência da fé toma decisões claras e arrisca o conflito
+
+EIXO CRISTOLÓGICO
+Hb 11:21: "Jacó, prestes a morrer, abençoou cada um dos filhos de José" — em Cristo a peregrinação obediente chega à bênção final.`;
+
+  if (d.dia === 53) return `PARA PREGAR · Gênesis 31:22–42
+
+BIG IDEA
+"O Deus da aliança intervém entre opressor e oprimido protegendo o seu servo."
+
+MOVIMENTOS DO TEXTO
+[A]   · Labão persegue Jacó por sete dias
+      → O passado não cede facilmente quando se decide partir
+
+[B]   · Deus avisa Labão em sonho: "guarda-te de falar mal"
+      → A providência fecha bocas que poderiam ferir o filho amado
+
+◉ [X]   · OS ÍDOLOS NÃO SÃO ENCONTRADOS — A PROVIDÊNCIA OCULTA O QUE DEVE SER OCULTADO
+      → O Deus vivo cobre o que ele mesmo decidiu ocultar
+
+[B']  · Jacó confronta Labão com indignação justa
+      → A paciência longa termina em palavra firme quando chega a hora
+
+[A']  · "O Deus de meu pai me tem repreendido na noite passada"
+      → A peregrinação reconhece publicamente quem foi o verdadeiro protetor
+
+EIXO CRISTOLÓGICO
+Sl 121:7: "o SENHOR te guardará de todo mal" — em Cristo, o pastor guarda suas ovelhas dos perseguidores antigos.`;
+
+  if (d.dia === 54) return `PARA PREGAR · Gênesis 31:43–54
+
+BIG IDEA
+"Onde a inimizade se firmava, a aliança coloca uma pedra que fala em nome de Deus."
+
+MOVIMENTOS DO TEXTO
+[A]   · Labão e Jacó concordam em fazer aliança
+      → O Deus que separou agora abre espaço para nova paz
+
+◉ [X]   · A PEDRA E O MONTÃO COMO TESTEMUNHA — MIZPÁ: "O SENHOR VIGIE ENTRE NÓS"
+      → A aliança humana se firma somente sob o olhar do Deus vivo
+
+[A']  · Jacó oferece sacrifício, come com os irmãos e Labão parte
+      → A paz selada na adoração libera cada um para seu caminho
+
+EIXO CRISTOLÓGICO
+Cl 1:20: "fazendo a paz pelo sangue da sua cruz" — em Cristo a aliança definitiva pacifica os inimigos antigos.`;
+
+  if (d.dia === 55) return `PARA PREGAR · Gênesis 32:1–13
+
+BIG IDEA
+"Antes de encontrar o irmão, o peregrino encontra exércitos angelicais e a si mesmo em oração."
+
+MOVIMENTOS DO TEXTO
+[A]   · Os anjos de Deus encontram Jacó no caminho
+      → A presença angelical antecipa que Deus assume o conflito
+
+[B]   · Jacó envia mensageiros a Esaú e os ouve voltar com más notícias
+      → O passado mal resolvido reaparece com ameaças concretas
+
+◉ [X]   · "NÃO SOU DIGNO DE TODAS AS TUAS MISERICÓRDIAS" — A ORAÇÃO HUMILDE
+      → O encontro com o irmão começa com encontro humilde com Deus
+
+[B']  · Jacó divide o acampamento em dois por prudência
+      → A fé não despreza prudência; combina oração com sabedoria
+
+[A']  · "Livra-me da mão de meu irmão Esaú" — clamor final
+      → A oração concreta nomeia o medo diante de quem pode resolvê-lo
+
+EIXO CRISTOLÓGICO
+Hb 13:6: "o Senhor é o meu auxiliador, não temerei" — em Cristo, a oração transforma medo em confiança.`;
+
+  if (d.dia === 56) return `PARA PREGAR · Gênesis 32:14–22
+
+BIG IDEA
+"O coração ferido se prepara com generosidade enquanto a oração trabalha lá no íntimo."
+
+MOVIMENTOS DO TEXTO
+[A]   · Jacó separa presentes em três grupos para Esaú
+      → A reconciliação custa caro; a fé paga o preço
+
+◉ [X]   · "APAZIGUAREI SUA FACE COM O PRESENTE QUE VAI ADIANTE"
+      → O coração ferido pelo passado planeja restauração no presente
+
+[A']  · Jacó passa a noite no acampamento sozinho
+      → A fé encontra a solidão necessária para o encontro decisivo
+
+EIXO CRISTOLÓGICO
+Rm 12:18: "se for possível... tende paz com todos" — em Cristo a paz se busca com humildade e generosidade.`;
+
+  if (d.dia === 57) return `PARA PREGAR · Gênesis 32:23–33
+
+BIG IDEA
+"Quem luta com Deus até o amanhecer sai mancando — mas com novo nome."
+
+MOVIMENTOS DO TEXTO
+[A]   · Jacó fica sozinho; um homem luta com ele até o amanhecer
+      → A fé madura nasce no embate solitário com o Deus que parece adversário
+
+[B]   · O homem toca o quadril; Jacó não o solta
+      → Persistir em meio ao golpe é segredo da bênção verdadeira
+
+◉ [X]   · "QUAL É O TEU NOME?" — A IDENTIDADE É CONFRONTADA E TRANSFORMADA
+      → Deus exige verdade sobre quem somos antes de nos dar novo nome
+
+[B']  · "Já não te chamarás Jacó, mas Israel"
+      → A nova identidade é dom de Deus, não conquista da carne
+
+[A']  · Jacó chama o lugar Peniel — "vi a Deus face a face"
+      → Quem encontra Deus de verdade sai marcado pelo encontro para sempre
+
+EIXO CRISTOLÓGICO
+2Co 5:17: "nova criatura; as coisas velhas já passaram" — em Cristo recebemos o nome novo na luta da fé.`;
+
+  if (d.dia === 58) return `PARA PREGAR · Gênesis 33:1–20
+
+BIG IDEA
+"O irmão temido se torna abraço inesperado — Deus reconcilia antes do encontro."
+
+MOVIMENTOS DO TEXTO
+[A]   · Jacó organiza a família e se prostra sete vezes
+      → A humildade verdadeira se mostra em gestos concretos diante do ofendido
+
+[B]   · Esaú corre ao encontro e abraça Jacó chorando
+      → Deus trabalha o coração do ofendido enquanto o ofensor ora
+
+◉ [X]   · "VI O TEU ROSTO COMO QUEM VÊ O ROSTO DE DEUS"
+      → O encontro reconciliado reflete a face do Deus que reconciliou primeiro
+
+[B']  · Esaú oferece escolta; Jacó recusa por sabedoria
+      → A reconciliação não significa retomar a antiga proximidade
+
+[A']  · Jacó chega a Siquém e ergue altar a El-Elohé-Israel
+      → A reconciliação termina em adoração ao Deus que a fez possível
+
+EIXO CRISTOLÓGICO
+2Co 5:18: "tudo provém de Deus, que nos reconciliou consigo mesmo por Cristo" — em Cristo o irmão temido se torna abraço.`;
+
+  if (d.dia === 59) return `PARA PREGAR · Gênesis 34:1–31
+
+BIG IDEA
+"A vingança disfarçada de zelo religioso revela um coração ainda longe de Deus."
+
+MOVIMENTOS DO TEXTO
+[A]   · Siquém desonra Diná e pede casamento
+      → O pecado tenta legitimar-se com aparência de respeitabilidade
+
+[B]   · Hamor propõe aliança com os filhos de Jacó
+      → O mundo oferece misturas que esvaziariam a vocação do povo
+
+◉ [X]   · OS FILHOS PROPÕEM A CIRCUNCISÃO COMO ARMADILHA SAGRADA
+      → Usar o sinal santo como instrumento de vingança profana a aliança
+
+[B']  · Simeão e Levi massacram a cidade no terceiro dia
+      → A vingança disfarçada de justiça produz crueldade sem freio
+
+[A']  · Jacó repreende: "fizestes-me odioso entre os habitantes da terra"
+      → O pecado dos filhos compromete o testemunho de toda a casa
+
+EIXO CRISTOLÓGICO
+Rm 12:19: "minha é a vingança, eu retribuirei, diz o Senhor" — em Cristo aprendemos a deixar a justiça nas mãos de Deus.`;
+
+  if (d.dia === 60) return `PARA PREGAR · Gênesis 35:1–8
+
+BIG IDEA
+"Voltar a Betel exige limpar a casa dos ídolos que se carregavam em silêncio."
+
+MOVIMENTOS DO TEXTO
+[A]   · Deus ordena a Jacó: "levanta-te, sobe a Betel"
+      → A vida cristã tem momentos de retorno à primeira revelação
+
+◉ [X]   · "DAI DE VÓS OS DEUSES ESTRANHOS QUE TENDES" — A CASA SE PURIFICA
+      → Não há retorno a Betel sem renúncia concreta dos ídolos da estrada
+
+[A']  · Jacó constrói altar em Betel — El-Betel
+      → A obediência leva a casa toda ao lugar onde Deus se revelou primeiro
+
+EIXO CRISTOLÓGICO
+Ap 2:5: "lembra-te... de onde caíste, e arrepende-te" — em Cristo somos chamados de volta ao primeiro amor.`;
+
+  if (d.dia === 61) return `PARA PREGAR · Gênesis 35:9–15
+
+BIG IDEA
+"Em Betel o nome Israel é confirmado e a promessa é repetida solenemente."
+
+MOVIMENTOS DO TEXTO
+[A]   · Deus aparece novamente a Jacó vindo de Padã-Arã
+      → A revelação se aprofunda quando o crente retorna em obediência
+
+◉ [X]   · "NÃO TE CHAMARÁS MAIS JACÓ; ISRAEL SERÁ O TEU NOME"
+      → A nova identidade dada em luta agora é confirmada em adoração
+
+[A']  · Jacó ergue coluna, derrama libação e chama Betel
+      → A identidade transformada se firma em adoração pública duradoura
+
+EIXO CRISTOLÓGICO
+Ap 3:12: "escreverei sobre ele o meu novo nome" — em Cristo a identidade renovada se firma na presença eterna.`;
+
+  if (d.dia === 62) return `PARA PREGAR · Gênesis 35:16–29
+
+BIG IDEA
+"No mesmo caminho da promessa nascem filhos, morrem mães e se sepultam patriarcas."
+
+MOVIMENTOS DO TEXTO
+[A]   · Raquel dá à luz Benjamim e morre no caminho
+      → A vida de aliança avança entre alegria e luto entrelaçados
+
+[B]   · Rúben profana a tenda de seu pai
+      → Pecados de família ferem a herança em silêncio doloroso
+
+◉ [X]   · OS DOZE FILHOS DE JACÓ — O POVO TEM SUA LISTA COMPLETA
+      → A história santa registra a casa toda mesmo com suas fraturas
+
+[B']  · Jacó chega a Hebrom, à casa de Isaque
+      → O peregrino retorna à casa do pai depois de longa ausência
+
+[A']  · Isaque morre e é sepultado por Esaú e Jacó
+      → A reconciliação entre os irmãos se confirma diante do túmulo do pai
+
+EIXO CRISTOLÓGICO
+Hb 11:13: "morreram todos na fé, sem terem recebido as promessas" — em Cristo a peregrinação familiar chega à pátria final.`;
+
+  if (d.dia === 63) return `PARA PREGAR · Gênesis 36:1–43
+
+BIG IDEA
+"A linhagem que se afastou da aliança constrói reis enquanto Israel ainda é peregrino."
+
+MOVIMENTOS DO TEXTO
+[A]   · Esaú toma esposas cananeias e parte para Seir
+      → Os caminhos divergentes se separam quando as escolhas se solidificam
+
+◉ [X]   · OS REIS DE EDOM APARECEM ANTES DE QUE HOUVESSE REI EM ISRAEL
+      → O mundo costuma erguer tronos enquanto o povo de Deus ainda peregrina
+
+[A']  · A genealogia de Esaú se completa em Seir
+      → Cada povo tem seu lugar no mapa do Senhor da história
+
+EIXO CRISTOLÓGICO
+Hb 11:16: "aspiravam a uma pátria melhor, isto é, celestial" — em Cristo o povo peregrino recebe reino que não passa.`;
+
+  if (d.dia === 64) return `PARA PREGAR · Gênesis 37:1–11
+
+BIG IDEA
+"Os sonhos do amado provocam ódio em casa — Deus já planta o que ainda parece ofensa."
+
+MOVIMENTOS DO TEXTO
+[A]   · Jacó ama José mais que aos outros filhos
+      → A preferência paterna fere antes mesmo do conflito explodir
+
+[B]   · Primeiro sonho: os feixes dos irmãos se inclinam ao de José
+      → A revelação divina muitas vezes chega em forma que ofende a carne
+
+◉ [X]   · SEGUNDO SONHO: SOL, LUA E ONZE ESTRELAS SE PROSTRAM A JOSÉ
+      → A glória futura do escolhido aparece antes da humilhação que a precede
+
+[B']  · O pai repreende, mas guarda no coração
+      → Os pais sábios discernem o que Deus pode estar dizendo nas palavras dos filhos
+
+[A']  · Os irmãos invejam José
+      → A inveja é o solo onde a história santa avança por dores
+
+EIXO CRISTOLÓGICO
+Fp 2:9–11: "para que ao nome de Jesus se dobre todo joelho" — em Cristo o Sonhado verdadeiro é exaltado após sofrer.`;
+
+  if (d.dia === 65) return `PARA PREGAR · Gênesis 37:12–36
+
+BIG IDEA
+"O irmão amado é vendido por vinte moedas — a história santa segue pelo caminho da rejeição."
+
+MOVIMENTOS DO TEXTO
+[A]   · José é enviado pelo pai aos irmãos em Dotã
+      → A vocação do enviado começa com obediência ao envio do pai
+
+[B]   · Os irmãos planejam matá-lo; Rúben tenta salvá-lo
+      → No próprio interior do povo de Deus há resistência e graça
+
+◉ [X]   · JOSÉ É VENDIDO POR VINTE MOEDAS DE PRATA AOS ISMAELITAS
+      → O irmão rejeitado é entregue por preço — sombra do Cordeiro vendido
+
+[B']  · Rúben volta e rasga as vestes ao não achá-lo
+      → O remorso tardio não desfaz o que a inveja decidiu
+
+[A']  · Jacó chora inconsolável crendo que José morreu
+      → A dor do pai prepara a alegria futura da revelação
+
+EIXO CRISTOLÓGICO
+Mt 26:15: "deram-lhe trinta moedas de prata" — em Cristo o irmão vendido se faz salvador do povo que o rejeitou.`;
+
+  if (d.dia === 66) return `PARA PREGAR · Gênesis 38:1–30
+
+BIG IDEA
+"No meio do drama de José, Tamar prova ser mais justa que Judá — e a linha do Messias se preserva."
+
+MOVIMENTOS DO TEXTO
+[A]   · Judá se separa dos irmãos e se casa com cananeia
+      → O afastamento da aliança expõe a vocação a misturas perigosas
+
+[B]   · Tamar viúva é deixada sem Sela apesar da promessa
+      → A injustiça doméstica clama por Deus em silêncio
+
+◉ [X]   · JUDÁ SE UNE A TAMAR DISFARÇADA — O PENHOR QUE CONDENARÁ
+      → O pecado oculto se prepara para denunciar a si mesmo no tempo certo
+
+[B']  · Tamar mostra o penhor: "de quem é isto?"
+      → A verdade emerge em juízo concreto sobre os opressores
+
+[A']  · "Mais justa é ela do que eu" — nascem Perez e Zerá
+      → O reconhecimento da própria injustiça abre a linhagem do Messias
+
+EIXO CRISTOLÓGICO
+Mt 1:3: "Judá gerou de Tamar a Perez e a Zera" — em Cristo, até as histórias mais desordenadas se integram à linhagem santa.`;
+
+  if (d.dia === 67) return `PARA PREGAR · Gênesis 39:1–23
+
+BIG IDEA
+"A fidelidade no oculto custa caro — mas o SENHOR está com José na bonança e no calabouço."
+
+MOVIMENTOS DO TEXTO
+[A]   · O SENHOR estava com José; Potifar lhe confia tudo
+      → A presença divina prospera quem serve com integridade
+
+[B]   · A mulher de Potifar tenta José repetidamente
+      → A tentação persistente exige decisão diária renovada
+
+◉ [X]   · JOSÉ FOGE; A ROUPA FICA NA MÃO DELA — "COMO FARIA EU TAMANHO MAL E PECARIA CONTRA DEUS?"
+      → A fidelidade verdadeira corre da tentação ainda que pague o preço
+
+[B']  · Ela acusa José com a roupa como prova falsa
+      → A integridade injustiçada é parte do caminho do justo
+
+[A']  · José vai à prisão; o SENHOR estava com José
+      → A mesma presença divina permanece no calabouço e no palácio
+
+EIXO CRISTOLÓGICO
+1Pe 2:23: "quando ultrajado, não revidava... entregava-se àquele que julga retamente" — em Cristo o justo sofre confiando no Pai.`;
+
+  if (d.dia === 68) return `PARA PREGAR · Gênesis 40:1–41:45
+
+BIG IDEA
+"Quem serve sem alarde na prisão é elevado no tempo de Deus ao governo do Egito."
+
+MOVIMENTOS DO TEXTO
+[A]   · Copeiro e padeiro são presos; sonham na prisão
+      → A providência aproxima os sonhos do Faraó pela porta da prisão
+
+[B]   · José interpreta os sonhos com humildade
+      → O dom interpreta sonhos quando atribui a Deus toda a luz
+
+[C]   · O copeiro é restituído mas esquece José
+      → A espera é parte do treinamento divino do servo
+
+◉ [X]   · OS DOIS SONHOS DO FARAÓ DECLARAM O QUE DEUS HÁ DE FAZER
+      → Deus avisa o mundo antes de agir, e prepara o intérprete antes da hora
+
+[C']  · O copeiro lembra-se de José
+      → O esquecimento humano dura só até o tempo determinado de Deus
+
+[B']  · José interpreta e propõe administração sábia
+      → O dom espiritual se completa com sabedoria prática
+
+[A']  · José é exaltado: segundo no Egito
+      → A humilhação fiel se transforma em exaltação que beneficia muitos
+
+EIXO CRISTOLÓGICO
+Fp 2:8–9: "humilhou-se a si mesmo... por isso Deus o exaltou" — em Cristo o servo fiel é elevado para salvar muitos.`;
+
+  if (d.dia === 69) return `PARA PREGAR · Gênesis 41:46–57
+
+BIG IDEA
+"Na fartura José prepara o povo para a fome — e os filhos da promessa nascem no exílio."
+
+MOVIMENTOS DO TEXTO
+[A]   · José administra o Egito durante sete anos de fartura
+      → A sabedoria divina prepara hoje a sobrevivência de amanhã
+
+◉ [X]   · NASCEM MANASSÉS E EFRAIM — "DEUS ME FEZ ESQUECER... DEUS ME FEZ FRUTIFICAR"
+      → No meio do exílio Deus cura memórias e produz fruto inesperado
+
+[A']  · Começam os sete anos de fome; José abre os celeiros
+      → A providência de longo prazo se revela quando chega a crise prevista
+
+EIXO CRISTOLÓGICO
+Lc 12:42: "quem é, pois, o mordomo fiel e prudente?" — em Cristo o mordomo fiel distribui pão no tempo certo.`;
+
+  if (d.dia === 70) return `PARA PREGAR · Gênesis 42:1–38
+
+BIG IDEA
+"A fome empurra os irmãos rumo ao irmão rejeitado — Deus começa a curar a história."
+
+MOVIMENTOS DO TEXTO
+[A]   · Jacó envia os filhos ao Egito comprar trigo
+      → A necessidade move os pés para onde Deus quer encontrá-los
+
+[B]   · Os irmãos diante de José; ele os acusa de espias
+      → O passado não resolvido reaparece pela mão de Deus
+
+◉ [X]   · "NA VERDADE, SOMOS CULPADOS QUANTO A NOSSO IRMÃO"
+      → O reconhecimento da culpa antiga inicia o caminho da reconciliação
+
+[B']  · As sacas voltam cheias com o dinheiro escondido
+      → A graça do irmão rejeitado se manifesta antes da revelação
+
+[A']  · Os irmãos voltam; Jacó se recusa a entregar Benjamim
+      → O medo de perder o último amado paralisa a obediência
+
+EIXO CRISTOLÓGICO
+At 3:19: "arrependei-vos... para serem cancelados os vossos pecados" — em Cristo o reconhecimento da culpa inicia a restauração.`;
+
+  if (d.dia === 71) return `PARA PREGAR · Gênesis 43:1–45:28
+
+BIG IDEA
+"O irmão vendido se revela como salvador — e converte a culpa em alegria pela providência divina."
+
+MOVIMENTOS DO TEXTO
+[A]   · Jacó cede e envia Benjamim com os irmãos
+      → A fé entrega o último amado quando a fome força a confiança
+
+[B]   · Os irmãos são recebidos com banquete e silêncio
+      → A graça prepara o coração antes de revelar sua identidade
+
+[C]   · A taça é encontrada no saco de Benjamim
+      → O teste final expõe a transformação do coração antigo
+
+◉ [X]   · JUDÁ INTERCEDE: "EU FICAREI NO LUGAR DO MENINO"
+      → O irmão que vendeu agora oferece-se em substituição — sombra do Salvador
+
+[C']  · José se revela: "eu sou José; vive ainda meu pai?"
+      → A revelação do irmão rejeitado transforma a culpa em alegria
+
+[B']  · "NÃO FOSTES VÓS QUE ME ENVIASTES; FOI DEUS"
+      → A providência reinterpreta o mal passado dentro do plano divino
+
+[A']  · Os irmãos voltam: "José ainda vive e governa o Egito"
+      → A boa notícia da salvação atravessa o deserto até a casa do pai
+
+EIXO CRISTOLÓGICO
+Lc 24:39: "vede as minhas mãos e os meus pés; sou eu mesmo" — em Cristo o irmão rejeitado se revela como salvador dos irmãos.`;
+
+  if (d.dia === 72) return `PARA PREGAR · Gênesis 46:1–7
+
+BIG IDEA
+"Antes de descer ao Egito, Israel ouve a voz que jurara descer com ele."
+
+MOVIMENTOS DO TEXTO
+[A]   · Israel parte com tudo o que tem rumo ao Egito
+      → A obediência não dispensa o reasseguramento divino
+
+◉ [X]   · "NÃO TEMAS DESCER AO EGITO; EU DESCEREI CONTIGO E TE FAREI VOLTAR"
+      → Deus desce com seu povo aos exílios prometendo o retorno
+
+[A']  · Toda a família de Jacó desce ao Egito
+      → A casa toda segue confiante quando o pai ouviu a palavra divina
+
+EIXO CRISTOLÓGICO
+Mt 28:20: "eu estou convosco todos os dias até a consumação do século" — em Cristo a promessa do Egito se cumpre eternamente.`;
+
+  if (d.dia === 73) return `PARA PREGAR · Gênesis 46:8–27
+
+BIG IDEA
+"Os setenta que descem ao Egito carregam nos nomes a promessa que voltará multiplicada."
+
+MOVIMENTOS DO TEXTO
+[A]   · Lista dos filhos e netos que descem com Jacó
+      → Cada nome registrado é semente de uma tribo futura
+
+◉ [X]   · SETENTA ALMAS DESCEM AO EGITO — A PROMESSA SE CONCENTRA PARA SE MULTIPLICAR
+      → Deus aperta o povo num punhado para multiplicá-lo em multidão
+
+[A']  · Encerramento solene da contagem da família
+      → A precisão divina conta o que parecerá insignificante ao mundo
+
+EIXO CRISTOLÓGICO
+At 7:14: "setenta e cinco almas" — em Cristo, o pequeno remanescente se multiplica em grande igreja.`;
+
+  if (d.dia === 74) return `PARA PREGAR · Gênesis 46:28–47:12
+
+BIG IDEA
+"O patriarca peregrino abençoa o Faraó — o reino menor recebe palavra do reino maior."
+
+MOVIMENTOS DO TEXTO
+[A]   · José vai ao encontro de Jacó em Gósen
+      → A reconciliação familiar se realiza no abraço esperado por anos
+
+[B]   · José instrui os irmãos sobre como falar ao Faraó
+      → A sabedoria prepara cada encontro estratégico
+
+◉ [X]   · OS IRMÃOS DIANTE DO FARAÓ — GÓSEN É CONCEDIDA
+      → A providência abre território para o povo crescer protegido
+
+[B']  · Jacó abençoa o Faraó
+      → O peregrino tem mais a dar que o trono que o recebeu
+
+[A']  · José sustenta a família em Ramessés
+      → A providência prove pão para a casa até o tempo da redenção
+
+EIXO CRISTOLÓGICO
+Hb 7:7: "sem contradição alguma, o inferior é abençoado pelo superior" — em Cristo, o peregrino abençoa o mundo poderoso.`;
+
+  if (d.dia === 75) return `PARA PREGAR · Gênesis 47:13–26
+
+BIG IDEA
+"A sabedoria do servo de Deus salva o Egito enquanto Israel cresce protegido."
+
+MOVIMENTOS DO TEXTO
+[A]   · A fome agrava-se; José recolhe todo o dinheiro
+      → A administração sábia organiza o que a crise tornou caótico
+
+[B]   · O povo entrega rebanhos por comida
+      → Quem não se planeja entrega aos poucos tudo o que tinha
+
+◉ [X]   · O POVO ENTREGA TERRAS E A SI MESMO — "COMPRA-NOS PELO PÃO"
+      → A salvação corporal tem preço; nem sempre é gratuita socialmente
+
+[B']  · José institui o quinto para o Faraó
+      → A sabedoria preserva proporção justa entre Estado e povo
+
+[A']  · Apenas as terras dos sacerdotes ficam livres
+      → A administração distingue o que pertence à religião do que pertence ao trono
+
+EIXO CRISTOLÓGICO
+Mt 25:21: "bom servo, fiel e prudente" — em Cristo o servo fiel administra com sabedoria para o bem dos muitos.`;
+
+  if (d.dia === 76) return `PARA PREGAR · Gênesis 47:27–31
+
+BIG IDEA
+"O peregrino se prepara para morrer pedindo apenas para ser sepultado na terra prometida."
+
+MOVIMENTOS DO TEXTO
+[A]   · Israel habita no Egito e cresce muito
+      → A promessa se multiplica mesmo em terra estrangeira
+
+◉ [X]   · JACÓ FAZ JOSÉ JURAR SEPULTÁ-LO EM CANAÃ
+      → A esperança verdadeira aponta para a herança que não viu plenamente
+
+EIXO CRISTOLÓGICO
+Hb 11:22: "deu ordens acerca dos seus ossos" — em Cristo a esperança da ressurreição molda até o pedido de sepultura.`;
+
+  if (d.dia === 77) return `PARA PREGAR · Gênesis 48:1–22
+
+BIG IDEA
+"O patriarca cruza as mãos e a graça inverte a ordem — o menor é colocado adiante do maior."
+
+MOVIMENTOS DO TEXTO
+[A]   · Jacó evoca a aparição de Luz e adota Efraim e Manassés
+      → A memória da aliança guia as bênçãos no fim da vida
+
+[B]   · José apresenta os filhos: Manassés à direita, Efraim à esquerda
+      → O pai sábio organiza, mas a graça final pertence a Deus
+
+◉ [X]   · JACÓ CRUZA AS MÃOS, A DIREITA SOBRE EFRAIM, O MAIS NOVO
+      → A graça soberana continua invertendo a ordem natural na história santa
+
+[B']  · Jacó abençoa em nome do Anjo que o livrou de todo mal
+      → A bênção autêntica nasce da história vivida com Deus
+
+[A']  · Jacó dá a Efraim e Manassés porção a mais que aos irmãos
+      → Deus completa a história de cada filho com generosidade própria
+
+EIXO CRISTOLÓGICO
+Rm 9:8: "os filhos da promessa é que são contados como descendência" — em Cristo a graça segue invertendo as expectativas do mundo.`;
+
+  if (d.dia === 78) return `PARA PREGAR · Gênesis 49:1–28
+
+BIG IDEA
+"O patriarca abençoa as tribos e profetiza que de Judá não se apartará o cetro até Siló."
+
+MOVIMENTOS DO TEXTO
+[A]   · "Reuni-vos e ouvi, filhos de Jacó"
+      → O fim da vida do justo é hora de palavras proféticas
+
+[B]   · Bênçãos sobre Rúben, Simeão, Levi — disciplina pelas culpas
+      → A bênção honesta diz a verdade sobre o passado de cada um
+
+◉ [X]   · "O CETRO NÃO SE ARREDARÁ DE JUDÁ ATÉ QUE VENHA SILÓ"
+      → O patriarca profetiza o Messias que reinará para sempre desde Judá
+
+[B']  · Bênçãos sobre Zebulom, Issacar, Dã, Gade — cada um conforme seu chamado
+      → Cada vocação tribal recebe palavra ajustada a si
+
+[A']  · "Estas são as doze tribos de Israel" — a casa toda é abençoada
+      → A história santa abraça a casa inteira em diversidade ordenada
+
+EIXO CRISTOLÓGICO
+Ap 5:5: "o Leão da tribo de Judá... venceu" — em Cristo Siló veio e o cetro permanece eterno.`;
+
+  if (d.dia === 79) return `PARA PREGAR · Gênesis 49:29–50:14
+
+BIG IDEA
+"A grande procissão sobe ao Egito para enterrar Jacó na terra da promessa."
+
+MOVIMENTOS DO TEXTO
+[A]   · Jacó ordena que o sepultem na cova de Macpela
+      → A última palavra do justo aponta para a herança esperada
+
+[B]   · Jacó expira e é recolhido ao seu povo
+      → A morte do justo é descanso sereno após longa peregrinação
+
+◉ [X]   · JOSÉ PEDE PERMISSÃO AO FARAÓ — O EGITO SE INCLINA AO LUTO DO PATRIARCA
+      → A glória do servo de Deus se manifesta até no tributo das nações
+
+[B']  · Procissão fúnebre majestosa atravessa o deserto
+      → A casa de Israel honra publicamente seu pai diante das nações
+
+[A']  · Os filhos sepultam Jacó em Macpela conforme sua ordem
+      → A obediência ao desejo do pai termina onde a aliança começou
+
+EIXO CRISTOLÓGICO
+Hb 11:13: "morreram todos na fé... e confessaram que eram estrangeiros" — em Cristo a peregrinação termina na pátria celeste.`;
+
+  if (d.dia === 80) return `PARA PREGAR · Gênesis 50:15–21
+
+BIG IDEA
+"A providência redefine o mal sofrido: o que os irmãos quiseram para mal, Deus quis para bem."
+
+MOVIMENTOS DO TEXTO
+[A]   · Os irmãos temem a vingança de José após a morte do pai
+      → A culpa antiga renasce quando a proteção paterna se vai
+
+◉ [X]   · "ESTOU EU NO LUGAR DE DEUS?" — A SOBERANIA DIVINA SOBRE O MAL
+      → Quem entende a soberania de Deus não toma para si o juízo do irmão
+
+[A']  · "Vós intentastes o mal; Deus o converteu em bem"
+      → A teologia da providência reescreve a história sofrida como salvação
+
+EIXO CRISTOLÓGICO
+Rm 8:28: "todas as coisas cooperam para o bem dos que amam a Deus" — em Cristo todo mal sofrido é convertido em propósito redentor.`;
+
+  if (d.dia === 81) return `PARA PREGAR · Gênesis 50:22–26
+
+BIG IDEA
+"O caixão no Egito é promessa de um Êxodo que ainda virá."
+
+MOVIMENTOS DO TEXTO
+[A]   · José vive cento e dez anos e vê filhos até a terceira geração
+      → A bênção da longa vida cumpre-se na permanência da aliança
+
+◉ [X]   · "DEUS CERTAMENTE VOS VISITARÁ; LEVAI MEUS OSSOS DAQUI"
+      → A fé do moribundo aponta para a redenção que ele não viu
+
+[A']  · José é embalsamado e posto em caixão no Egito
+      → O caixão guardado é semente de um Êxodo prometido
+
+EIXO CRISTOLÓGICO
+Hb 11:22: "pela fé José, no fim da vida... deu ordens acerca dos seus ossos" — em Cristo, a esperança da redenção atravessa até a tumba.`;
 
   return null;
 }
