@@ -10323,20 +10323,59 @@ function DiaModal({ d, onClose, innerRef }: { d: DiaDevocional; onClose: () => v
         {/* PARA PREGAR — aparece após a estrutura quiástica */}
         {gerarParaPregar(d) !== null && (
           <div style={{
-            display: 'flex', gap: 12,
-            background: 'rgba(255,215,0,0.06)',
-            border: '1px solid rgba(255,215,0,0.22)',
-            borderRadius: 14,
-            padding: 'clamp(12px,3vw,18px) clamp(14px,3.5vw,20px)',
-            marginTop: 10,
+            position: 'relative',
+            marginTop: 14,
+            borderRadius: 18,
+            overflow: 'hidden',
+            background: 'linear-gradient(135deg, rgba(20,12,40,0.95) 0%, rgba(10,18,48,0.95) 60%, rgba(20,12,40,0.95) 100%)',
+            border: '1px solid rgba(168,120,255,0.28)',
+            boxShadow: '0 0 0 1px rgba(96,165,250,0.08), 0 8px 32px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.06)',
+            padding: 'clamp(14px,3.5vw,22px) clamp(16px,4vw,24px)',
           }}>
-            <div style={{ color: 'rgba(255,215,0,0.9)', marginTop: 2, flexShrink: 0 }}>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+            {/* Glow de fundo */}
+            <div style={{
+              position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, pointerEvents: 'none',
+              background: 'radial-gradient(ellipse 70% 50% at 15% 50%, rgba(139,92,246,0.10) 0%, transparent 70%), radial-gradient(ellipse 50% 60% at 85% 30%, rgba(96,165,250,0.08) 0%, transparent 70%)',
+            }} />
+
+            {/* Cabeçalho */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 14, position: 'relative' }}>
+              {/* Ícone púlpito */}
+              <div style={{
+                width: 28, height: 28, borderRadius: 8, flexShrink: 0,
+                background: 'linear-gradient(135deg, rgba(139,92,246,0.35), rgba(96,165,250,0.25))',
+                border: '1px solid rgba(168,120,255,0.40)',
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                boxShadow: '0 0 12px rgba(139,92,246,0.25)',
+              }}>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="rgba(196,160,255,1)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/>
+                </svg>
+              </div>
+              <div>
+                <div style={{
+                  fontSize: 'clamp(9px,2.2vw,10px)', fontWeight: 900, letterSpacing: '0.22em',
+                  textTransform: 'uppercase',
+                  background: 'linear-gradient(90deg, rgba(196,160,255,1) 0%, rgba(147,197,253,1) 100%)',
+                  WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
+                }}>Para Pregar</div>
+              </div>
+              {/* Linha decorativa */}
+              <div style={{
+                flex: 1, height: '1px', marginLeft: 4,
+                background: 'linear-gradient(90deg, rgba(139,92,246,0.40) 0%, rgba(96,165,250,0.15) 60%, transparent 100%)',
+              }} />
             </div>
-            <div>
-              <div style={{ fontSize: 'clamp(10px,2.5vw,11px)', color: 'rgba(255,215,0,0.9)', fontWeight: 900, letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 6 }}>Para Pregar</div>
-              <div style={{ fontSize: 'clamp(14px,3.2vw,16px)', color: 'rgba(255,255,255,0.92)', lineHeight: 1.8, whiteSpace: 'pre-line' }}>{gerarParaPregar(d)}</div>
-            </div>
+
+            {/* Conteúdo */}
+            <div style={{
+              position: 'relative',
+              fontSize: 'clamp(13px,3vw,15px)',
+              color: 'rgba(226,220,255,0.90)',
+              lineHeight: 1.85,
+              whiteSpace: 'pre-line',
+              fontFeatureSettings: '"kern" 1',
+            }}>{gerarParaPregar(d)}</div>
           </div>
         )}
 
