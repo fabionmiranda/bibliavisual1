@@ -5825,6 +5825,1327 @@ MOVIMENTOS DO TEXTO
 EIXO CRISTOLÓGICO
 Hb 11:22: "pela fé José, no fim da vida... deu ordens acerca dos seus ossos" — em Cristo, a esperança da redenção atravessa até a tumba.`;
 
+  // ── DEUTERONÔMIO ─────────────────────────────────────────────────────────
+  if (d.dia === 205) return `PARA PREGAR · Deuteronômio 1:1–8
+
+BIG IDEA
+"Tomar posse da terra é abraçar a palavra dada pelo SENHOR."
+
+MOVIMENTOS DO TEXTO
+[A]  · Além do Jordão, no limiar entre promessa e cumprimento
+      → A vida cristã se vive no limiar onde a fé é convocada à decisão
+
+[B]  · Moisés fala tudo conforme o SENHOR ordenou
+      → A autoridade do mensageiro está em transmitir, não inventar a palavra
+
+◉ [C]  · A DERROTA DOS REIS PROVA QUE O SENHOR JÁ COMEÇOU A CUMPRIR
+      → As vitórias passadas são garantia das ordens presentes
+
+[B'] · A lei é explicada para que o povo entenda antes de obedecer
+      → A obediência madura nasce do entendimento da palavra ouvida
+
+[A'] · "Entrai e tomai posse da terra" — promessa converte-se em ordem
+      → Receber as promessas de Deus é responder com avanço, não passividade
+
+EIXO CRISTOLÓGICO
+Hb 4:1: "Tenhamos cuidado em não suceder que... pareça ter falhado em alcançá-la" — em Cristo a terra prometida é repouso de fé que ainda nos é oferecido.`;
+
+  if (d.dia === 206) return `PARA PREGAR · Deuteronômio 1:9–18
+
+BIG IDEA
+"A liderança que pesa o povo é a que julga sem acepção diante de Deus."
+
+MOVIMENTOS DO TEXTO
+[A]  · Moisés ordena escolher líderes sábios e experimentados
+      → O peso do povo só é suportado quando partilhado por sabedoria temente
+
+◉ [B]  · OS LÍDERES SÃO ESCOLHIDOS E POSTOS À FRENTE DO POVO
+      → Deus institui mediações humanas como dom à comunidade que pastoreia
+
+[A'] · Moisés ordena que julguem com retidão, sem temer face de homem
+      → Julgar em nome do SENHOR é renunciar à parcialidade que corrompe
+
+EIXO CRISTOLÓGICO
+Rm 2:11: "Porque para com Deus não há acepção de pessoas" — em Cristo o juízo perfeito é exercido sem favoritismo, padrão dos seus servos.`;
+
+  if (d.dia === 207) return `PARA PREGAR · Deuteronômio 1:19–33
+
+BIG IDEA
+"A incredulidade transforma a marcha rumo à promessa em retirada para o deserto."
+
+MOVIMENTOS DO TEXTO
+[A]  · A jornada pelo deserto é guiada pelo SENHOR
+      → Toda peregrinação do povo é conduzida, nunca improvisada
+
+[B]  · Moisés exorta: "não temais" diante da terra dada
+      → A palavra de Deus combate o medo antes mesmo da batalha
+
+[C]  · O povo pede espias para reconhecer a terra
+      → A precaução humana pode mascarar um coração que duvida
+
+◉ [D]  · OS ESPIAS TRAZEM O FRUTO E O RELATÓRIO DA TERRA BOA
+      → A bondade da promessa é evidência tangível à porta da decisão
+
+[C'] · O povo murmura: "para onde subimos?" — coração derrete
+      → Diante da evidência da promessa, a incredulidade fabrica desculpas
+
+[B'] · Moisés repete: "não tenhais medo" — Deus carregou-vos no deserto
+      → A memória das misericórdias é o antídoto contra o pavor recorrente
+
+[A'] · O SENHOR foi adiante: nuvem de dia, fogo de noite
+      → Quem vai adiante de nós é o mesmo que prometeu a terra à nossa frente
+
+EIXO CRISTOLÓGICO
+Hb 3:19: "vemos que não puderam entrar por causa da incredulidade" — em Cristo entramos no repouso pela fé que vence o medo.`;
+
+  if (d.dia === 208) return `PARA PREGAR · Deuteronômio 1:34–45
+
+BIG IDEA
+"Quando o SENHOR não vai conosco, subir o monte é descer à derrota."
+
+MOVIMENTOS DO TEXTO
+[A]  · "O SENHOR ouviu as vossas palavras" e jurou: não vereis a terra
+      → Deus escuta as palavras da incredulidade e as julga com seriedade
+
+[B]  · O povo, arrependido tarde, sobe ao monte para combater
+      → Há arrependimentos que são apenas pesar pela consequência
+
+◉ [C]  · "NÃO ESTAREI NO MEIO DE VÓS" — A PRESENÇA RETIRADA É O JUÍZO
+      → A pior derrota não é a do inimigo, mas a da ausência do SENHOR
+
+[B'] · O povo sobe o monte presunçosamente e é abatido pelos amorreus
+      → A iniciativa sem a presença divina termina sempre em derrota
+
+[A'] · "Ele não deu ouvidos ao vosso clamor" — chorou em vão
+      → As lágrimas tardias não revertem o juízo quando o coração não muda
+
+EIXO CRISTOLÓGICO
+2Co 7:10: "a tristeza segundo Deus opera arrependimento para a salvação" — em Cristo o arrependimento verdadeiro é dom que precede a obra.`;
+
+  if (d.dia === 209) return `PARA PREGAR · Deuteronômio 1:46–2:25
+
+BIG IDEA
+"O SENHOR governa as fronteiras dos povos e abre caminho ao seu próprio."
+
+MOVIMENTOS DO TEXTO
+[A]  · Cades: o ponto onde Israel ficou demorado
+      → Os lugares de espera são também escolas do tempo de Deus
+
+[B]  · "Já dei a Esaú a posse de Seir" — fronteira respeitada
+      → A soberania divina distribui terras também aos que não são o povo
+
+[C]  · Descrição dos descendentes que habitam em paz
+      → O governo de Deus alcança nações fora da aliança
+
+◉ [D]  · "OS DESCENDENTES DE ESAÚ DESTRUÍRAM E TOMARAM O LUGAR"
+      → A história mostra que conquistar terra é dom soberano, não mérito
+
+[A'] · Cades-Barneia: o tempo de espera enfim termina
+      → O Deus que demora é o mesmo que move quando chega a hora
+
+[B'] · "Eu a dei como herança aos descendentes de Ló"
+      → As bênçãos colaterais revelam um Deus que cumpre suas promessas antigas
+
+[C'] · Descrição dos povos que o SENHOR já estabeleceu
+      → A providência divina antecede toda a história humana visível
+
+[D'] · "Começai a ocupar" — chegou a hora do avanço
+      → Quando o SENHOR ordena ocupar, a espera vira marcha decisiva
+
+EIXO CRISTOLÓGICO
+At 17:26: "de um só fez toda raça humana... determinando os limites" — em Cristo o Senhor das nações nos chama do tempo de espera ao tempo de avanço.`;
+
+  if (d.dia === 210) return `PARA PREGAR · Deuteronômio 2:26–37
+
+BIG IDEA
+"A palavra do SENHOR endurece o rebelde para entregá-lo nas mãos do seu povo."
+
+MOVIMENTOS DO TEXTO
+[A]  · Israel pede passagem pacífica pela terra de Seom
+      → A paz é primeira oferta, mesmo quando a vitória é prometida
+
+[B]  · Seom resiste e fecha o caminho
+      → Há corações que se opõem ao plano de Deus mesmo diante da paz
+
+◉ [C]  · "EIS QUE COMECEI A ENTREGAR" — A PALAVRA DO SENHOR ASSEGURA
+      → A vitória do povo é decreto divino antes de ser combate humano
+
+[B'] · Seom sai ao combate como o SENHOR endurecera
+      → O endurecimento do ímpio entra no plano soberano de juízo
+
+[A'] · Israel ocupa todas as cidades por ordem do SENHOR
+      → A obediência ao mandado divino converte resistência em herança
+
+EIXO CRISTOLÓGICO
+Rm 9:18: "tem misericórdia de quem quer e endurece a quem quer" — em Cristo o Soberano dispõe os corações para o cumprimento de seu propósito redentor.`;
+
+  if (d.dia === 211) return `PARA PREGAR · Deuteronômio 3:1–22
+
+BIG IDEA
+"A terra recebida é distribuída para que todos os irmãos descansem nela."
+
+MOVIMENTOS DO TEXTO
+[A]  · Ordem para ocupar a terra do rei Ogue
+      → Avançar é obedecer à ordem de quem entrega a vitória
+
+[B]  · Conquista do território além do Jordão
+      → A vitória já se consumou pela palavra antes do combate
+
+◉ [C]  · DISTRIBUIÇÃO DAS TERRAS ENTRE AS TRIBOS
+      → O dom da terra só está completo quando partilhado com os irmãos
+
+[B'] · "O SENHOR vos deu esta terra como herança"
+      → A herança é dom recebido, não conquista a ser gloriada
+
+[A'] · Ordem renovada para ocupar — não temais
+      → A coragem do povo de Deus se renova na lembrança do que ele já fez
+
+EIXO CRISTOLÓGICO
+Ef 1:11: "nele fomos também feitos herança" — em Cristo a herança da terra é distribuída a todos os irmãos no único corpo.`;
+
+  if (d.dia === 212) return `PARA PREGAR · Deuteronômio 3:23–29
+
+BIG IDEA
+"Deus diz não ao servo amado para que a obra prossiga em outro."
+
+MOVIMENTOS DO TEXTO
+[A]  · Moisés roga: "deixa-me passar e ver a boa terra"
+      → Os maiores servos também têm desejos que Deus não concede
+
+[B]  · A ira do SENHOR contra Moisés por causa do povo
+      → O líder carrega consequências do pecado partilhado com o rebanho
+
+◉ [B'] · A RECUSA DO SENHOR: NÃO MAIS FALES COMIGO NISTO
+      → Há orações que Deus encerra para abrir um caminho maior
+
+[A'] · No vale, diante de Bete-Peor
+      → Mesmo o "não" de Deus tem um lugar onde sua misericórdia ainda repousa
+
+EIXO CRISTOLÓGICO
+Hb 11:39: "todos estes... não obtiveram a promessa" — em Cristo Moisés viu o que esperava no monte da transfiguração.`;
+
+  if (d.dia === 213) return `PARA PREGAR · Deuteronômio 4:1–14
+
+BIG IDEA
+"Que grande nação tem deus tão próximo quanto o SENHOR está de nós?"
+
+MOVIMENTOS DO TEXTO
+[A]  · Ouvi os estatutos e as normas que vos ensino
+      → A vida do povo nasce do ouvir submisso à palavra ensinada
+
+[B]  · Nada acrescentareis nem suprimireis ao que ordeno
+      → A palavra de Deus é regra suficiente, não material para edição
+
+[C]  · "Vós mesmos vistes" o juízo em Baal-Peor
+      → A história vivida ensina o preço da idolatria
+
+[D]  · "Vós que permanecestes unidos ao SENHOR estais vivos"
+      → A aderência à aliança é o segredo da vida do povo
+
+[E]  · Vede: ensinar os estatutos diante das nações
+      → A obediência da igreja é apologia visível diante do mundo
+
+◉ [F]  · "QUE GRANDE NAÇÃO" — DEUS PERTO E LEI JUSTA
+      → A proximidade de Deus e a justiça de sua lei definem o povo
+
+[F'] · "Que grande nação" — a singularidade de Israel
+      → Não há outra comunidade no mundo com tal Deus e tal palavra
+
+[E'] · Não esqueçais o que os vossos olhos viram
+      → A memória da revelação alimenta a obediência das gerações
+
+[D'] · Para que me temam enquanto viverem
+      → O temor reverente é fonte de vida prolongada
+
+[C'] · "Não vistes forma alguma" do meio do fogo
+      → Deus se faz ouvir antes de querer ser representado
+
+[B'] · A aliança que vos ordenou guardar
+      → A aliança é palavra ordenada que pede observância contínua
+
+[A'] · Ensinou-me os estatutos e as normas que deveis observar
+      → A cadeia do ensino preserva a fé das gerações por vir
+
+EIXO CRISTOLÓGICO
+Tg 4:8: "Chegai-vos a Deus, e ele se chegará a vós" — em Cristo a proximidade do SENHOR atinge sua plenitude: o Verbo habitou entre nós.`;
+
+  if (d.dia === 214) return `PARA PREGAR · Deuteronômio 4:15–31
+
+BIG IDEA
+"A idolatria troca o Deus que liberta pelos deuses que escravizam."
+
+MOVIMENTOS DO TEXTO
+[A]  · "No dia em que o SENHOR vos falou em Horebe"
+      → A revelação ouvida é critério para toda futura adoração
+
+[B]  · "Não vos prostreis diante de imagens"
+      → A imagem que substitui a palavra é traição à aliança
+
+[C]  · "Ele vos tirou do Egito" — o povo da posse divina
+      → A redenção é o argumento da fidelidade exclusiva
+
+[D]  · "Morrerei sem cruzar o Jordão"
+      → O líder também é submisso ao juízo da palavra
+
+◉ [E]  · PROIBIÇÃO DA IDOLATRIA — DEUS É FOGO CONSUMIDOR
+      → A santidade de Deus exclui todo rival da adoração
+
+[D'] · "Perecereis da terra que ides cruzar o Jordão"
+      → A idolatria desfaz a herança que a redenção concedeu
+
+[C'] · "O SENHOR vos dispersará entre as nações"
+      → A dispersão é juízo proporcional à infidelidade
+
+[B'] · "Servireis outros deuses feitos por mãos humanas"
+      → Quem rejeita o Deus vivo termina servindo o que fabricou
+
+[A'] · "Quando todas estas coisas vos acontecerem... voltareis"
+      → No fim, a misericórdia abre porta de retorno aos arrependidos
+
+EIXO CRISTOLÓGICO
+1Jo 5:21: "Filhinhos, guardai-vos dos ídolos" — em Cristo a adoração é restaurada ao único Deus que se fez conhecer encarnado.`;
+
+  if (d.dia === 215) return `PARA PREGAR · Deuteronômio 4:32–40
+
+BIG IDEA
+"O SENHOR é Deus: nos céus em cima e na terra embaixo, e nenhum outro."
+
+MOVIMENTOS DO TEXTO
+[A]  · Ouvistes a voz de Deus do meio do fogo
+      → A revelação no fogo é singularidade que nenhum povo possuiu
+
+[B]  · Sinais e prodígios no Egito
+      → A redenção histórica é prova pública do Deus único
+
+◉ [C]  · "O SENHOR É O ÚNICO DEUS; NÃO HÁ OUTRO FORA DELE"
+      → A fé monoteísta nasce da história, não da especulação
+
+[A'] · Do céu vos fez ouvir a sua voz
+      → A voz que cria é a mesma que ensina e instrui
+
+[B'] · "Ele vos fez sair do Egito com seu grande poder"
+      → O Êxodo é credencial perpétua do SENHOR diante do mundo
+
+[C'] · "O SENHOR é o único Deus; não há outro"
+      → O credo de Israel é fechamento do argumento histórico
+
+EIXO CRISTOLÓGICO
+1Co 8:6: "para nós há um só Deus, o Pai... e um só Senhor, Jesus Cristo" — em Cristo o monoteísmo bíblico encontra sua revelação plena.`;
+
+  if (d.dia === 216) return `PARA PREGAR · Deuteronômio 4:41–43
+
+BIG IDEA
+"A justiça do SENHOR provê refúgio antes que o sangue seja derramado."
+
+MOVIMENTOS DO TEXTO
+[A]  · Moisés separa três cidades além do Jordão
+      → A misericórdia institucionalizada antecede o conflito humano
+
+◉ [B]  · CIDADES PARA QUE O HOMICIDA INVOLUNTÁRIO FUJA
+      → Deus distingue intenção e ato — eis o coração do juízo justo
+
+[A'] · Beser; Ramote; Golã — refúgios distribuídos
+      → A graça é geográfica: alcance suficiente onde a culpa pesa
+
+EIXO CRISTOLÓGICO
+Hb 6:18: "fugindo, nos apeguemos à esperança proposta" — em Cristo encontramos refúgio último diante do juízo merecido.`;
+
+  if (d.dia === 217) return `PARA PREGAR · Deuteronômio 4:44–49
+
+BIG IDEA
+"O ensino da lei se enraíza na história das vitórias do SENHOR."
+
+MOVIMENTOS DO TEXTO
+[A]  · Israel saiu do Egito — saída fundadora
+      → A identidade do povo nasce da libertação operada por Deus
+
+[B]  · A terra do rei Seom — primeira vitória
+      → As vitórias passadas são púlpito de onde a lei é proclamada
+
+[A'] · Israel saiu do Egito — repetição enfática
+      → A memória do Êxodo se inscreve em cada nova geração
+
+◉ [B'] · A TERRA DO REI OGUE DE BASÃ — VITÓRIA CONFIRMADORA
+      → Cada nova vitória reafirma a fidelidade do mesmo SENHOR
+
+EIXO CRISTOLÓGICO
+Rm 15:4: "as coisas que dantes foram escritas para nosso ensino o foram" — em Cristo a história das vitórias do SENHOR torna-se nossa instrução.`;
+
+  if (d.dia === 218) return `PARA PREGAR · Deuteronômio 5:1–22
+
+BIG IDEA
+"O Deus que fala do meio do fogo nos liberta para amá-lo e amar o próximo."
+
+MOVIMENTOS DO TEXTO
+[A]  · O SENHOR falou face a face no monte, do meio do fogo
+      → A lei é dom da presença, não imposição distante
+
+[B]  · "Não tereis outros deuses diante de mim"
+      → A exclusividade da adoração é coração da aliança
+
+[C]  · "Não tomareis em vão o nome do SENHOR"
+      → O nome carrega a santidade da pessoa divina
+
+[D]  · O sábado: descanso para todos, inclusive escravos
+      → O culto do tempo dignifica todo trabalhador
+
+[E]  · Honra a pai e mãe
+      → Os vínculos primários sustentam a vida do povo
+
+◉ [F]  · NÃO MATARÁS — A VIDA DO PRÓXIMO É SAGRADA
+      → No centro da lei o respeito à vida do outro como dom de Deus
+
+[E'] · Não adulterarás
+      → A fidelidade matrimonial protege a aliança humana espelho da divina
+
+[D'] · Não furtarás
+      → O bem do próximo é limite do meu desejo
+
+[C'] · Não dirás falso testemunho
+      → A palavra honesta sustenta a justiça do povo
+
+[B'] · Não cobiçarás
+      → A obediência começa antes do ato, no coração
+
+[A'] · O SENHOR falou no monte, do meio do fogo, com voz forte
+      → A palavra que faz aliança ressoa para que nunca seja esquecida
+
+EIXO CRISTOLÓGICO
+Mt 22:37-39: "amarás o Senhor teu Deus... e ao próximo como a ti mesmo" — em Cristo os dez mandamentos sintetizam-se em amor.`;
+
+  if (d.dia === 219) return `PARA PREGAR · Deuteronômio 5:23–33
+
+BIG IDEA
+"O coração disposto a ouvir e fazer é o caminho para a vida prometida."
+
+MOVIMENTOS DO TEXTO
+[A]  · "Ouvistes a voz do meio das trevas"
+      → A revelação é sempre recepção antes de obra
+
+[B]  · "Pode o homem viver depois que Deus lhe falou?"
+      → O encontro com Deus é temível e vivificador
+
+◉ [C]  · "OUVIREMOS E OBEDECEREMOS" — A PROMESSA DO POVO
+      → A resposta plena à palavra é audição que se faz prática
+
+[A'] · "O SENHOR ouviu as vossas palavras"
+      → Quem ouve a Deus também é ouvido por Ele
+
+[B'] · "Para me temerem todos os dias"
+      → O temor reverente é estilo de vida prolongado
+
+[C'] · "Para que os observem na terra que lhes darei"
+      → A obediência é o caminho que conduz à plena posse da herança
+
+EIXO CRISTOLÓGICO
+Tg 1:22: "sede praticantes da palavra e não somente ouvintes" — em Cristo o "ouviremos e obedeceremos" cumpre-se pelo Espírito.`;
+
+  if (d.dia === 220) return `PARA PREGAR · Deuteronômio 6:1–9
+
+BIG IDEA
+"Amar a Deus com tudo é gravar sua palavra em casa, em filhos e em gestos."
+
+MOVIMENTOS DO TEXTO
+[A]  · "Para que vós e vossos filhos temais o SENHOR"
+      → A fé não se transmite por inércia, mas por ensino temente
+
+[B]  · "Ouve, pois, Israel" — exortação à atenção
+      → O ouvir é o primeiro ato da fé bíblica
+
+◉ [B'] · "OUVE, ISRAEL! O SENHOR É O ÚNICO. AMARÁS COM TUDO"
+      → No centro o Shemá: monoteísmo prático que pede amor integral
+
+[A'] · "Inculcai-as a vossos filhos: em casa e fora, ao deitar e ao levantar"
+      → O ensino contínuo molda o lar como santuário da palavra
+
+EIXO CRISTOLÓGICO
+Mc 12:30: "amarás o Senhor teu Deus de todo o teu coração" — em Cristo o Shemá se cumpre integralmente como mandamento maior.`;
+
+  if (d.dia === 221) return `PARA PREGAR · Deuteronômio 6:10–25
+
+BIG IDEA
+"A memória do Egito guarda a fé de quem entra na terra do leite e do mel."
+
+MOVIMENTOS DO TEXTO
+[A]  · "Cuidai de não esquecer o SENHOR que vos tirou do Egito"
+      → A prosperidade ameaça a memória; é preciso vigiar para lembrar
+
+[B]  · "Não seguireis outros deuses"
+      → A fidelidade exclusiva é prova da memória que permanece
+
+◉ [B'] · "NÃO POREIS À PROVA O SENHOR, VOSSO DEUS"
+      → Provar a Deus é desconfiar do Deus que já se provou no Êxodo
+
+[A'] · "Éramos escravos do Faraó... o SENHOR nos tirou com mão forte"
+      → A história contada aos filhos perpetua a identidade resgatada
+
+EIXO CRISTOLÓGICO
+1Co 10:11: "estas coisas... estão escritas para aviso nosso" — em Cristo a memória da redenção é guardada pelo pão e pelo cálice.`;
+
+  if (d.dia === 222) return `PARA PREGAR · Deuteronômio 7:1–5
+
+BIG IDEA
+"A santidade do povo exige cortar todo vínculo que dilui sua aliança."
+
+MOVIMENTOS DO TEXTO
+[A]  · "Destruí-los-eis totalmente" — separação radical
+      → A santidade tem custo de separação, não convivência com o pecado
+
+◉ [B]  · PROIBIÇÃO DE MATRIMÔNIO COM OS PAGÃOS
+      → O vínculo conjugal molda a fé das gerações para bem ou para mal
+
+[A'] · "Derrubai altares, quebrai colunas, queimai imagens"
+      → A idolatria deve ser desfeita em seu próprio lugar de adoração
+
+EIXO CRISTOLÓGICO
+2Co 6:14: "não vos prendais a um jugo desigual com os incrédulos" — em Cristo a santidade é separação para a missão, não isolamento.`;
+
+  if (d.dia === 223) return `PARA PREGAR · Deuteronômio 7:6–15
+
+BIG IDEA
+"Não é por nosso mérito, mas por seu juramento, que somos o povo do SENHOR."
+
+MOVIMENTOS DO TEXTO
+[A]  · "Vós sois um povo consagrado ao SENHOR"
+      → A santidade do povo é dom recebido, não conquista alcançada
+
+[B]  · "Por causa do juramento que fez a vossos pais"
+      → A eleição se funda na palavra jurada, não em qualidades nossas
+
+◉ [A'] · "O SENHOR É O DEUS FIEL QUE GUARDA A ALIANÇA"
+      → A fidelidade divina é a base da segurança e da obediência do povo
+
+[B'] · "O que prometeu sob juramento a vossos pais"
+      → O Deus que jura cumpre — sua palavra é firme através das gerações
+
+EIXO CRISTOLÓGICO
+Rm 9:11-12: "para que o propósito de Deus segundo a eleição prevalecesse" — em Cristo a eleição graciosa se cumpre no chamamento eterno.`;
+
+  if (d.dia === 224) return `PARA PREGAR · Deuteronômio 7:16–26
+
+BIG IDEA
+"Lembrai o que o SENHOR fez ao Faraó: assim fará a todos os vossos temores."
+
+MOVIMENTOS DO TEXTO
+[A]  · Devorai todos os povos que o SENHOR vos entrega
+      → A obediência é integral; meias medidas perpetuam o problema
+
+[B]  · "Não temais; lembrai o que o SENHOR fez ao Faraó"
+      → A memória do passado vence o medo do presente
+
+◉ [C]  · "ELE EXPULSARÁ ESSAS NAÇÕES POUCO A POUCO"
+      → O ritmo de Deus é pedagogia: vitória gradual molda o vencedor
+
+[B'] · O SENHOR pelejará por vós e os destruirá
+      → A guerra do povo é luta na qual o SENHOR vai à frente
+
+[A'] · "Não tragais coisa abominável a vossa casa"
+      → A vitória só permanece quando os despojos idolátricos são destruídos
+
+EIXO CRISTOLÓGICO
+Rm 16:20: "o Deus da paz, em breve, esmagará Satanás debaixo dos vossos pés" — em Cristo a vitória final é certa e gradualmente experimentada.`;
+
+  if (d.dia === 225) return `PARA PREGAR · Deuteronômio 8:1–20
+
+BIG IDEA
+"Não só de pão vive o homem, mas de toda palavra que procede do SENHOR."
+
+MOVIMENTOS DO TEXTO
+[A]  · A terra prometida por juramento aos pais
+      → A promessa enraíza-se em palavra jurada, não em circunstância
+
+[B]  · Quarenta anos no deserto: humilhado e provado
+      → O deserto é escola onde Deus revela o que há no coração
+
+[C]  · Reconhecer que o SENHOR vos disciplina como pai
+      → A disciplina é gesto paterno, não rejeição
+
+◉ [D]  · "GUARDAI OS MANDAMENTOS, CAMINHANDO NOS SEUS CAMINHOS"
+      → A obediência prática é o miolo da vida em aliança
+
+[C'] · Bendizer o SENHOR pela terra boa
+      → O reconhecimento da graça precede a posse responsável
+
+[B'] · "Lembra-te de que o SENHOR te tirou da casa da servidão"
+      → A prosperidade testa a memória do povo libertado
+
+[A'] · A aliança jurada aos pais permanece o solo da herança
+      → A promessa antiga é fundamento sob a herança presente
+
+EIXO CRISTOLÓGICO
+Mt 4:4: "nem só de pão viverá o homem, mas de toda palavra que procede da boca de Deus" — em Cristo a palavra do Pai é alimento que sustenta na tentação.`;
+
+  if (d.dia === 226) return `PARA PREGAR · Deuteronômio 9:1–6
+
+BIG IDEA
+"A herança não é prêmio do justo, mas obra do SENHOR contra o ímpio."
+
+MOVIMENTOS DO TEXTO
+[A]  · O SENHOR vai à vossa frente para expulsar nações maiores
+      → A vitória prometida supera a desproporção do poder humano
+
+[B]  · "Não é por causa dos vossos méritos"
+      → A graça desfaz toda pretensão de mérito no povo
+
+[A'] · É pela impiedade das nações que o SENHOR as expulsa
+      → A entrega da terra é juízo divino, não troféu humano
+
+◉ [B'] · "POVO DE DURA CERVIZ — NÃO É POR VOSSA JUSTIÇA"
+      → A confissão da própria dureza é porta para a graça
+
+EIXO CRISTOLÓGICO
+Tt 3:5: "não por obras de justiça que houvéssemos feito, mas segundo sua misericórdia" — em Cristo a herança é toda dom, não retribuição.`;
+
+  if (d.dia === 227) return `PARA PREGAR · Deuteronômio 9:7–29
+
+BIG IDEA
+"Quarenta dias prostrado: a intercessão segura a aliança quando o povo a quebra."
+
+MOVIMENTOS DO TEXTO
+[A]  · Quarenta dias no monte sem comer nem beber
+      → A intimidade com Deus exige o esvaziamento do mediador
+
+[B]  · As palavras do SENHOR contra um povo rebelde
+      → A santidade divina não tolera a infidelidade
+
+[C]  · Moisés destrói as tábuas diante do bezerro
+      → O sinal visível do quebrantamento da aliança
+
+◉ [D]  · QUARENTA DIAS E QUARENTA NOITES INTERCEDENDO
+      → A intercessão prolongada é o coração da mediação
+
+[C'] · Destruição do bezerro de ouro
+      → A idolatria deve ser reduzida a pó até desaparecer
+
+[B'] · As palavras do SENHOR sobre o povo rebelde
+      → A advertência se repete porque a memória curta exige redundância
+
+[A'] · "Quarenta dias prostrado diante do SENHOR"
+      → A oração que segura a aliança aponta para o Mediador eterno
+
+EIXO CRISTOLÓGICO
+Hb 7:25: "vivendo sempre para interceder por eles" — em Cristo a intercessão de Moisés é eclipsada pela do Mediador eterno.`;
+
+  if (d.dia === 228) return `PARA PREGAR · Deuteronômio 10:1–11
+
+BIG IDEA
+"Depois da quebra, a graça reescreve a aliança nas mesmas palavras."
+
+MOVIMENTOS DO TEXTO
+[A]  · As palavras do SENHOR: faze novas tábuas
+      → A graça oferece nova oportunidade após a falência
+
+[B]  · "Coloquei as tábuas na arca"
+      → A palavra escrita é guardada no centro do santuário
+
+◉ [C]  · MORTE DE ARÃO E SUCESSÃO DE ELEAZAR
+      → A continuidade do sacerdócio segue a fidelidade que transcende a morte
+
+[B'] · "Carregar a arca da aliança do SENHOR"
+      → O serviço à palavra estrutura a vida do povo em marcha
+
+[A'] · "Levanta-te e vai diante deste povo"
+      → A palavra restaurada é palavra que envia em missão
+
+EIXO CRISTOLÓGICO
+Hb 7:24: "porque permanece eternamente, tem sacerdócio imutável" — em Cristo a sucessão é superada pelo Sacerdote que não morre.`;
+
+  if (d.dia === 229) return `PARA PREGAR · Deuteronômio 10:12–22
+
+BIG IDEA
+"Circuncidai o coração: temer ao SENHOR é amar o estrangeiro."
+
+MOVIMENTOS DO TEXTO
+[A]  · "Os céus e a terra pertencem ao SENHOR"
+      → O Deus universal escolhe particularmente seu povo
+
+[B]  · "O SENHOR vos escolheu dentre todos os povos"
+      → A eleição é privilégio que pede consagração
+
+[C]  · "Circuncidai o prepúcio do vosso coração"
+      → A obediência exterior só vale quando enraizada no íntimo
+
+◉ [D]  · "DEUS GRANDE QUE NÃO FAZ ACEPÇÃO E AMA O ESTRANGEIRO"
+      → No centro o coração de Deus pelos pequenos define o povo
+
+[C'] · "Amareis também o estrangeiro"
+      → O amor a Deus se prova no amor ao excluído
+
+[B'] · "Ele é a vossa glória, ele, o vosso Deus"
+      → A identidade do povo está em quem o escolheu, não em si mesmo
+
+[A'] · "Tão numerosos quanto as estrelas do céu"
+      → O Deus do universo cumpre a promessa universal em seu povo
+
+EIXO CRISTOLÓGICO
+Rm 2:29: "judeu é o que o é no interior, e circuncisão a do coração" — em Cristo a circuncisão do coração é obra do Espírito.`;
+
+  if (d.dia === 230) return `PARA PREGAR · Deuteronômio 11:1–9
+
+BIG IDEA
+"A geração que viu deve ensinar a que não viu — para que a fidelidade dure."
+
+MOVIMENTOS DO TEXTO
+[A]  · Guardareis sempre os preceitos do SENHOR
+      → A obediência é compromisso perpétuo, não esforço sazonal
+
+[B]  · "Não são os vossos filhos, mas vós que vistes"
+      → A responsabilidade da memória recai sobre quem testemunhou
+
+[C]  · O milagre no mar Vermelho
+      → A redenção fundadora pauta a fé das gerações
+
+◉ [D]  · "O QUE O SENHOR FEZ POR VÓS NO DESERTO"
+      → A pedagogia do deserto é dado fundante da identidade
+
+[C'] · O milagre do juízo sobre Datã e Abirão
+      → O juízo divino dentro do povo ensina o temor
+
+[B'] · "Foram os vossos olhos que viram"
+      → O testemunho ocular cria responsabilidade pedagógica
+
+[A'] · Guardai todos estes mandamentos
+      → A obediência se renova diante de cada nova vitória
+
+EIXO CRISTOLÓGICO
+2Tm 2:2: "transmite-as a homens fiéis e idôneos para instruir também a outros" — em Cristo a transmissão fiel da palavra atravessa gerações.`;
+
+  if (d.dia === 231) return `PARA PREGAR · Deuteronômio 11:10–32
+
+BIG IDEA
+"Hoje proponho-vos bênção e maldição: escolher é amar o SENHOR."
+
+MOVIMENTOS DO TEXTO
+[A]  · A terra que ides ocupar — terra que bebe a chuva do céu
+      → A nova terra depende do céu, não da técnica do Egito
+
+[B]  · Bênção e maldição sobre grão, vinho e azeite
+      → A vida diária está sob o decreto da obediência
+
+[C]  · "Atai-as no pulso e entre os olhos"
+      → A palavra incorporada molda mãos e olhos
+
+◉ [C'] · "AMANDO O SENHOR E SEGUINDO SEUS CAMINHOS"
+      → No centro o amor que se traduz em caminho percorrido
+
+[B'] · "Eu vos proponho hoje bênção e maldição"
+      → A vida diante da palavra é decisão diária
+
+[A'] · "Para entrar e ocupar a terra que o SENHOR vos dá"
+      → A herança é dom recebido pela obediência amorosa
+
+EIXO CRISTOLÓGICO
+Jo 14:15: "se me amais, guardareis os meus mandamentos" — em Cristo amar e obedecer convergem como evidência da fé viva.`;
+
+  if (d.dia === 232) return `PARA PREGAR · Deuteronômio 12:1–12
+
+BIG IDEA
+"Onde Deus põe seu nome, ali se reúne a alegria do povo redimido."
+
+MOVIMENTOS DO TEXTO
+[A]  · A terra que o SENHOR vos deu para ocupar
+      → A herança recebida exige adoração ordenada
+
+[B]  · Holocaustos e ofertas no lugar escolhido
+      → A adoração não é livre escolha, mas resposta ao chamado
+
+◉ [A'] · "O LUGAR DE REPOUSO, A HERANÇA QUE O SENHOR VOS DARÁ"
+      → O repouso da terra culmina no culto centralizado
+
+[B'] · Holocaustos e ofertas com filhos, servos e levitas
+      → A adoração é festa partilhada por toda a comunidade
+
+EIXO CRISTOLÓGICO
+Jo 4:23: "verdadeiros adoradores adorarão o Pai em espírito e em verdade" — em Cristo o lugar do culto é a pessoa do Filho.`;
+
+  if (d.dia === 233) return `PARA PREGAR · Deuteronômio 12:13–28
+
+BIG IDEA
+"O sangue pertence ao SENHOR — a vida é dele e a adoração também."
+
+MOVIMENTOS DO TEXTO
+[A]  · O impuro e o puro comerão como a gazela
+      → A vida cotidiana é redimida sob a ordem divina
+
+[B]  · "Não comereis o sangue"
+      → O sangue marca os limites do dono da vida
+
+◉ [C]  · "COMER DIANTE DO SENHOR NO LUGAR QUE ELE ESCOLHER"
+      → A refeição cultual reorganiza a vida em torno do santuário
+
+[A'] · Comê-lo como a gazela ou o cervo, igualmente
+      → A graça regula a vida ordinária com a mesma seriedade
+
+[B'] · "Guardai-vos bem de não comer o sangue"
+      → A repetição enfatiza o que é central: respeitar o sangue
+
+[C'] · "O lugar que o SENHOR escolher"
+      → O culto centralizado mantém a unidade do povo na adoração
+
+EIXO CRISTOLÓGICO
+Hb 9:22: "sem derramamento de sangue não há remissão" — em Cristo o sangue derramado uma vez completa o que os tipos prefiguravam.`;
+
+  if (d.dia === 234) return `PARA PREGAR · Deuteronômio 12:29–13:19
+
+BIG IDEA
+"A tentação pagã é constante; a contramedida é a fidelidade ao SENHOR."
+
+MOVIMENTOS DO TEXTO
+[A1] · Tentação: aprender o culto das nações expulsas
+      → A vitória não imuniza contra a sedução do vencido
+
+[B1] · Contramedida: não acrescentar nem suprimir à palavra
+      → A palavra é o critério firme diante de toda novidade
+
+[A2] · Tentação: o profeta que faz sinais e leva à idolatria
+      → O carisma sem fidelidade é instrumento de prova
+
+[B2] · Contramedida: pena de morte ao falso profeta
+      → A santidade do povo exige firmeza ante a sedução
+
+[A3] · Tentação: o ente querido que sussurra a apostasia
+      → As tentações mais perigosas vêm dos vínculos íntimos
+
+[B3] · Contramedida: não consentir, não ouvir
+      → A fidelidade exige rompimento mesmo com o que se ama
+
+◉ [A4] · TENTAÇÃO: A CIDADE INTEIRA QUE SE DESVIA
+      → Quando a apostasia se institucionaliza, a coragem é coletiva
+
+[B4] · Contramedida: destruição total da cidade
+      → A santidade comunitária protege o povo todo
+
+EIXO CRISTOLÓGICO
+Mt 10:37: "quem ama pai ou mãe mais do que a mim, não é digno de mim" — em Cristo a lealdade primária ao Senhor permanece o eixo da fé.`;
+
+  if (d.dia === 235) return `PARA PREGAR · Deuteronômio 14–25 (Regulamentos)
+
+BIG IDEA
+"A justiça do SENHOR organiza povo, terra, mesa e mercado segundo seu temor."
+
+MOVIMENTOS DO TEXTO
+[A]  · Povo santo: escolhido dentre todos os povos
+      → A santidade é vocação que abrange todas as áreas da vida
+
+[B]  · Os necessitados: lembrai-vos do Egito
+      → A memória da escravidão é mãe da misericórdia social
+
+[C]  · Os primogênitos pertencem ao SENHOR
+      → O primeiro fruto é confissão de quem é dono de tudo
+
+[D]  · Festas: alegria com o estrangeiro, órfão e viúva
+      → O culto inclui os marginalizados como participantes plenos
+
+[E]  · Heresia e julgamento: pena de morte
+      → A santidade do povo exige juízo público da idolatria
+
+[F]  · Os reis: não se julgará superior aos irmãos
+      → O poder no povo de Deus é submisso à palavra
+
+[G]  · Os levitas: o SENHOR é sua herança
+      → O serviço sagrado é sustentado pela comunidade
+
+[H]  · Os profetas: nem adivinhação nem feitiçaria
+      → A revelação é mediada pela palavra, não pela magia
+
+[I]  · Cidades de refúgio e sangue inocente
+      → A justiça distingue intenção e ato para proteger o inocente
+
+◉ [J]  · AS GUERRAS — O CENTRO DA JUSTIÇA DO POVO EM MARCHA
+      → No coração da lei a guerra é regulada para preservar a misericórdia
+
+[I'] · O cadáver não identificado e a culpa do sangue
+      → Mesmo o que não se vê pesa sobre a consciência do povo
+
+[H'] · A família: cativos, primogênito, filho rebelde
+      → A vida íntima também é palco da santidade
+
+[G'] · O homem enforcado: não profanareis a terra
+      → A morte do maldito não pode contaminar a herança
+
+[F'] · Animais e beneficência ao irmão
+      → A santidade alcança o cuidado com bens do próximo
+
+[E'] · Divórcio e julgamento: pena de morte
+      → A santidade do matrimônio sustenta a santidade do povo
+
+[D'] · A assembleia do SENHOR: regulamentos de admissão
+      → A comunidade cultual é regulada pela palavra
+
+[C'] · Impureza do povo: regulamentos de pureza
+      → O cuidado com o corpo é ato espiritual
+
+[B'] · Os necessitados: lembrai-vos do Egito
+      → A memória da escravidão volta a ensinar misericórdia
+
+[A'] · Os ímpios: abominação para o SENHOR
+      → A santidade exclui a desonestidade que destrói a comunidade
+
+EIXO CRISTOLÓGICO
+Tg 1:27: "religião pura... é visitar os órfãos e as viúvas em suas tribulações" — em Cristo a justiça da lei se faz vida na igreja missional.`;
+
+  if (d.dia === 236) return `PARA PREGAR · Deuteronômio 25:17–19
+
+BIG IDEA
+"Lembrar Amaleque é apagar sua memória — a fé que combate o esquecimento."
+
+MOVIMENTOS DO TEXTO
+[A]  · "Lembrai-vos do que Amaleque vos fez"
+      → A memória do mal é dever para que se faça justiça
+
+[B]  · Ele atacou os fracos da retaguarda no caminho
+      → O mal histórico é descrito para que não se repita
+
+◉ [B'] · "O SENHOR VOS DARÁ REPOUSO DE TODOS OS INIMIGOS"
+      → A vitória completa é prerrogativa do SENHOR
+
+[A'] · "Apagareis a memória de Amaleque — não esqueçais!"
+      → A lembrança santa serve para que o mal não permaneça
+
+EIXO CRISTOLÓGICO
+Hb 4:9: "resta, portanto, um repouso para o povo de Deus" — em Cristo o repouso final eliminará todo inimigo.`;
+
+  if (d.dia === 237) return `PARA PREGAR · Deuteronômio 26:1–15
+
+BIG IDEA
+"As primícias contam a história: éramos peregrinos, e o SENHOR nos trouxe."
+
+MOVIMENTOS DO TEXTO
+[A]  · A terra jurada aos pais
+      → A herança recebida é fruto de promessa antiga
+
+[B]  · O sacerdote coloca o cesto diante do altar
+      → A oferta é entrega ritual à autoridade divina
+
+◉ [C]  · PROFISSÃO DE FÉ: "MEU PAI ERA UM ARAMEU ERRANTE..."
+      → A liturgia conta a história da redenção como confissão
+
+[B'] · Colocar a oferta diante do SENHOR
+      → A repetição confirma: tudo provém dele e a ele retorna
+
+[A'] · A terra de leite e mel, jurada aos pais
+      → A promessa antiga sustenta a oferta presente
+
+EIXO CRISTOLÓGICO
+1Co 15:3: "vos transmiti... o que também recebi" — em Cristo a profissão da fé conta a história redentora cumprida na cruz e ressurreição.`;
+
+  if (d.dia === 238) return `PARA PREGAR · Deuteronômio 26:16–19
+
+BIG IDEA
+"Hoje: a aliança não é memória antiga, mas decisão presente."
+
+MOVIMENTOS DO TEXTO
+[A1] · "Hoje o SENHOR vos ordena cumprir"
+      → A palavra antiga torna-se ordem para o agora
+
+[A2] · "Hoje fizestes este acordo com o SENHOR"
+      → A resposta humana faz da palavra um pacto vivo
+
+◉ [A3] · "HOJE O SENHOR VOS DECLAROU POVO DE SUA PROPRIEDADE"
+      → A identidade do povo é firmada no presente da aliança
+
+EIXO CRISTOLÓGICO
+Hb 3:7-8: "hoje, se ouvirdes a sua voz, não endureçais o vosso coração" — em Cristo o "hoje" da aliança permanece como urgência da fé.`;
+
+  if (d.dia === 239) return `PARA PREGAR · Deuteronômio 27:1–10
+
+BIG IDEA
+"As palavras da lei gravadas em pedras: a aliança fica visível à terra inteira."
+
+MOVIMENTOS DO TEXTO
+[A]  · "Guardai todos estes mandamentos que vos ordeno hoje"
+      → A obediência começa pelo compromisso atual
+
+[B]  · "Escrevereis nelas todas as palavras desta lei"
+      → A palavra escrita é monumento público da aliança
+
+[B'] · "Nas pedras escrevereis todas as palavras desta lei"
+      → A reiteração sublinha a visibilidade da aliança na terra
+
+◉ [A'] · "GUARDAI OS MANDAMENTOS E ESTATUTOS QUE VOS ORDENO HOJE"
+      → A obediência presente sela a aliança gravada nas pedras
+
+EIXO CRISTOLÓGICO
+2Co 3:3: "carta de Cristo... escrita não em tábuas de pedra, mas em tábuas de carne" — em Cristo a lei é gravada no coração pelo Espírito.`;
+
+  if (d.dia === 240) return `PARA PREGAR · Deuteronômio 27:11–26
+
+BIG IDEA
+"Maldito é todo aquele que não permanece em tudo quanto está escrito na lei."
+
+MOVIMENTOS DO TEXTO
+[A]  · As doze tribos divididas entre dois montes
+      → A aliança envolve toda a comunidade do povo
+
+◉ [B]  · OS LEVITAS PROCLAMAM EM ALTA VOZ A TODOS
+      → A palavra que maldiz é dita publicamente para que todos ouçam
+
+[A'] · As doze maldições proferidas e o povo responde "Amém"
+      → A aliança exige resposta consciente do povo todo
+
+EIXO CRISTOLÓGICO
+Gl 3:13: "Cristo nos resgatou da maldição da lei, fazendo-se ele próprio maldição por nós" — em Cristo as maldições recaem sobre o Servo na cruz.`;
+
+  if (d.dia === 241) return `PARA PREGAR · Deuteronômio 28:1–46
+
+BIG IDEA
+"Ouvir a voz do SENHOR é o caminho da bênção; recusá-la é a porta da maldição."
+
+MOVIMENTOS DO TEXTO
+[A]  · "Se obedecerdes fielmente à voz do SENHOR"
+      → A bênção depende da audição submissa
+
+[B]  · Seis bênçãos: cidade, campo, ventre, cesto
+      → A bênção alcança todas as áreas da vida ordinária
+
+[C]  · Bênçãos sobre inimigos, chuva e nações
+      → A obediência projeta o povo como bênção entre as nações
+
+◉ [D]  · "SEM VOS DESVIARDES PARA A DIREITA NEM PARA A ESQUERDA"
+      → A fidelidade integral é critério da bênção contínua
+
+[A'] · "Se não obedecerdes à voz do SENHOR"
+      → A maldição depende da recusa da palavra
+
+[B'] · Seis maldições: cidade, campo, ventre, cesto
+      → A maldição alcança simetricamente as mesmas áreas
+
+[C'] · Maldições sobre cativeiro, doença, derrota
+      → A desobediência produz desolação proporcional
+
+[D'] · "Não obedecestes à voz do SENHOR"
+      → A causa é declarada: a recusa do ouvir
+
+EIXO CRISTOLÓGICO
+Rm 10:17: "a fé vem pela pregação, e a pregação pela palavra de Cristo" — em Cristo o ouvir é restaurado pela proclamação do evangelho.`;
+
+  if (d.dia === 242) return `PARA PREGAR · Deuteronômio 28:47–68
+
+BIG IDEA
+"A desobediência conduz o povo redimido de volta à casa da servidão."
+
+MOVIMENTOS DO TEXTO
+[A]  · Jugo de ferro até a destruição
+      → A escravidão volta quando a aliança é abandonada
+
+[B]  · Nação distante, ágil como águia, sem piedade
+      → O juízo histórico vem por instrumentos externos
+
+[C]  · Pragas graves e constantes contra os descendentes
+      → A descendência sofre os efeitos da infidelidade
+
+[D]  · Todas as doenças do Egito
+      → O Egito do qual saíram retorna como castigo
+
+◉ [D'] · QUALQUER TIPO DE ENFERMIDADE OU CALAMIDADE
+      → No centro a profundidade do juízo cobre tudo
+
+[C'] · Restarão poucos onde eram como as estrelas
+      → A multiplicação prometida é revertida pela infidelidade
+
+[B'] · O SENHOR vos dispersará entre todas as nações
+      → A dispersão desfaz a herança da terra
+
+[A'] · "Oferecereis a vós mesmos à venda como escravos"
+      → O Êxodo é revertido quando a aliança é desfeita
+
+EIXO CRISTOLÓGICO
+Gl 4:7: "já não és escravo, porém filho" — em Cristo a escravidão da queda é desfeita pela adoção filial.`;
+
+  if (d.dia === 243) return `PARA PREGAR · Deuteronômio 28:69–29:28
+
+BIG IDEA
+"A aliança não é só com os presentes, mas com as gerações que ainda virão."
+
+MOVIMENTOS DO TEXTO
+[A]  · As palavras da aliança em Moabe
+      → A renovação da aliança é palavra reordenada para nova etapa
+
+[B]  · "O que o SENHOR fez na terra do Egito"
+      → A memória do Êxodo funda a aliança presente
+
+[C]  · "Guardai as cláusulas desta aliança"
+      → A obediência é a forma da aliança vivida
+
+[D]  · Todos os homens de Israel — chefes, anciãos, oficiais
+      → A aliança é abraçada por todas as instâncias do povo
+
+◉ [E]  · ÍDOLOS ABOMINÁVEIS DE MADEIRA, PEDRA, OURO E PRATA
+      → No centro a idolatria como ameaça permanente da aliança
+
+[D'] · "Nenhum homem ou mulher, clã ou tribo"
+      → A santidade alcança cada pessoa e estrutura social
+
+[C'] · "Conforme todas as maldições da aliança"
+      → A quebra ativa as consequências escritas
+
+[B'] · "O Deus que os tirou da terra do Egito"
+      → A memória do Êxodo julga a infidelidade presente
+
+[A'] · "Para cumprir todas as palavras desta lei"
+      → A aliança permanece palavra a ser cumprida geração após geração
+
+EIXO CRISTOLÓGICO
+Hb 8:6: "ministro de superior aliança, estabelecida sobre superiores promessas" — em Cristo a nova aliança garante o que a antiga prefigurava.`;
+
+  if (d.dia === 244) return `PARA PREGAR · Deuteronômio 30:1–14
+
+BIG IDEA
+"A palavra está perto: na boca e no coração, para que se faça."
+
+MOVIMENTOS DO TEXTO
+[A]  · "Que vos ordeno hoje" — após o juízo, restauração
+      → A graça abre novo dia após o exílio
+
+[B]  · "Com todo o coração e toda a alma" — circuncisão divina
+      → Deus mesmo opera a conversão completa do povo
+
+[C]  · As maldições recaem sobre os inimigos
+      → A reversão da história mostra a vitória final do SENHOR
+
+◉ [D]  · "OUVIR A VOZ DO SENHOR E PRATICAR OS MANDAMENTOS"
+      → No centro a obediência renovada é coração da restauração
+
+[C'] · "O SENHOR se comprazará na vossa prosperidade"
+      → A alegria divina volta sobre o povo restaurado
+
+[B'] · "Com todo o coração e toda a alma" — repetição enfática
+      → A integralidade da conversão é sublinhada novamente
+
+[A'] · "Que vos ordeno hoje — a palavra está perto"
+      → A palavra acessível é o sinal da graça que aproxima
+
+EIXO CRISTOLÓGICO
+Rm 10:8: "A palavra está perto de ti, na tua boca e no teu coração" — em Cristo a palavra próxima é o evangelho da justiça pela fé.`;
+
+  if (d.dia === 245) return `PARA PREGAR · Deuteronômio 30:15–20
+
+BIG IDEA
+"Escolhe a vida — porque o SENHOR é a tua vida e o teu prolongamento de dias."
+
+MOVIMENTOS DO TEXTO
+[A]  · "Eis que hoje ponho diante de vós a vida e a morte"
+      → O dom da escolha vem como decisão diante da palavra
+
+[B]  · "Vivereis e crescereis em número"
+      → A obediência prolonga e multiplica a vida do povo
+
+◉ [A'] · "PONHO DIANTE DE VÓS A BÊNÇÃO E A MALDIÇÃO"
+      → No centro o convite divino: escolhe a vida
+
+[B'] · "Para que vivais vós e vossos descendentes"
+      → A escolha de hoje molda gerações futuras
+
+EIXO CRISTOLÓGICO
+Jo 14:6: "Eu sou o caminho, e a verdade, e a vida" — em Cristo escolher a vida é escolher a Pessoa do Filho.`;
+
+  if (d.dia === 246) return `PARA PREGAR · Deuteronômio 31:1–8
+
+BIG IDEA
+"O SENHOR passa adiante de vós: por isso, sede fortes e corajosos."
+
+MOVIMENTOS DO TEXTO
+[A]  · "É o SENHOR, vosso Deus, que passa à vossa frente"
+      → A presença divina é razão primária da coragem
+
+◉ [A'] · "É O SENHOR QUEM MARCHA À VOSSA FRENTE; ELE NÃO VOS DESAMPARARÁ"
+      → A fidelidade divina sustenta a sucessão e a missão
+
+EIXO CRISTOLÓGICO
+Hb 13:5: "de maneira alguma te deixarei, nunca jamais te abandonarei" — em Cristo a presença prometida vem como Espírito Santo permanente.`;
+
+  if (d.dia === 247) return `PARA PREGAR · Deuteronômio 31:9–13
+
+BIG IDEA
+"A lei lida a cada sete anos forma o povo no temor reverente do SENHOR."
+
+MOVIMENTOS DO TEXTO
+[P]  · Moisés confia a lei aos sacerdotes e anciãos
+      → A palavra é depositada em mediadores fiéis
+
+[A]  · "Temei o SENHOR, vosso Deus" — homens, mulheres, crianças
+      → A leitura pública alcança toda a comunidade
+
+◉ [A'] · "TEMEI O SENHOR, VOSSO DEUS" — A GERAÇÃO POR VIR
+      → No centro a formação contínua das gerações na palavra
+
+EIXO CRISTOLÓGICO
+2Tm 3:15: "desde a infância sabes as sagradas letras" — em Cristo a Escritura forma cada nova geração para a salvação.`;
+
+  if (d.dia === 248) return `PARA PREGAR · Deuteronômio 31:14–23
+
+BIG IDEA
+"O cântico de Deus permanece como testemunho que nenhuma apostasia silencia."
+
+MOVIMENTOS DO TEXTO
+[A]  · As palavras do SENHOR convocam Moisés
+      → A palavra divina inicia toda nova etapa
+
+[B]  · Atos de Moisés diante da tenda
+      → O obediente cumpre o que ouve sem demora
+
+[C]  · "Abandonarão e violarão a aliança"
+      → A previsão divina não isenta da responsabilidade humana
+
+◉ [D]  · "ESTE CÂNTICO SERVIRÁ DE TESTEMUNHO CONTRA ELES"
+      → No centro o cântico que permanece quando a memória falha
+
+[C'] · "Desprezando-me e violando a minha aliança"
+      → O futuro do povo carrega a marca da fragilidade
+
+[B'] · Atos de Moisés — ele escreve o cântico
+      → A obediência transforma profecia em depósito da palavra
+
+[A'] · As palavras do SENHOR a Josué: sê forte
+      → A continuidade da liderança é palavra renovada
+
+EIXO CRISTOLÓGICO
+Ap 15:3: "cantam o cântico de Moisés... e o cântico do Cordeiro" — em Cristo o testemunho do cântico se cumpre na adoração eterna.`;
+
+  if (d.dia === 249) return `PARA PREGAR · Deuteronômio 31:24–29
+
+BIG IDEA
+"Ao lado da arca, o livro da lei testemunha contra a corrupção que virá."
+
+MOVIMENTOS DO TEXTO
+[P]  · Ordem de Moisés aos levitas
+      → A palavra escrita é confiada ao serviço sagrado
+
+[A]  · "Ali estará como testemunho contra vós"
+      → O livro permanece quando o líder se ausenta
+
+◉ [B]  · "ENQUANTO AINDA VIVO ENTRE VÓS, FOSTES REBELDES"
+      → A profecia da queda nasce da observação realista do presente
+
+[A'] · "Chame o céu e a terra como testemunhas"
+      → As testemunhas cósmicas validam a aliança eterna
+
+[B'] · "Após minha morte vos corrompereis"
+      → A morte do mediador expõe a vulnerabilidade do povo
+
+EIXO CRISTOLÓGICO
+Jo 5:39: "examinais as Escrituras... são elas que testificam de mim" — em Cristo a Escritura testemunha e o Espírito guarda o coração.`;
+
+  if (d.dia === 250) return `PARA PREGAR · Deuteronômio 31:30–32:44
+
+BIG IDEA
+"Há um só Deus que fere e cura: a ele se há de voltar e nele descansar."
+
+MOVIMENTOS DO TEXTO
+[A]  · As palavras deste cântico ouvidas pela assembleia
+      → A liturgia poética imprime a verdade na memória
+
+[B]  · "Um Deus fiel, sem engano"
+      → O atributo central define a identidade do SENHOR
+
+[C]  · "Esquecestes o Deus que vos gerou"
+      → A infidelidade é amnésia espiritual
+
+◉ [D]  · A IRA DE DEUS CONTRA O POVO INFIEL
+      → No centro o juízo divino contra o que era seu
+
+[C'] · "Os inimigos poderiam equivocadamente gloriar-se"
+      → A glória de Deus impede que o instrumento se exalte
+
+[B'] · "Não há outro Deus além de mim"
+      → O monoteísmo é selado no juízo e na restauração
+
+[A'] · As palavras deste cântico repetidas pelo povo
+      → A palavra cantada se torna confissão da assembleia
+
+EIXO CRISTOLÓGICO
+Ap 15:3: "Grandes e admiráveis são as tuas obras... ó Senhor Deus Todo-Poderoso" — em Cristo o cântico de Moisés culmina na adoração do Cordeiro.`;
+
+  if (d.dia === 251) return `PARA PREGAR · Deuteronômio 32:45–52
+
+BIG IDEA
+"Estas palavras não são vãs: nelas está a vida e o prolongamento de dias."
+
+MOVIMENTOS DO TEXTO
+[A]  · "Quando Moisés terminou de falar todas estas palavras"
+      → A obra do mediador se completa na palavra entregue
+
+[B]  · "Tereis longa vida na terra... esta palavra é a vossa vida"
+      → A palavra é vida prolongada para o povo
+
+[A'] · "Naquele mesmo dia o SENHOR disse a Moisés"
+      → A palavra divina abre a transição para a sucessão
+
+◉ [B'] · "VEREIS A TERRA AO LONGE, MAS NÃO ENTRAREIS"
+      → No centro a tensão entre a fidelidade do servo e a justiça do SENHOR
+
+EIXO CRISTOLÓGICO
+Hb 12:22: "vos tendes chegado ao monte Sião e à cidade do Deus vivo" — em Cristo a terra prometida é vista e habitada como pátria celestial.`;
+
+  if (d.dia === 252) return `PARA PREGAR · Deuteronômio 33:1–29
+
+BIG IDEA
+"Bem-aventurado o povo cujo Deus é o SENHOR, escudo e espada do socorro."
+
+MOVIMENTOS DO TEXTO
+[A]  · "Um rei em Jesurum" — o SENHOR entronizado sobre o povo
+      → A bênção começa pela soberania reconhecida
+
+[B1] · Bênção sobre Rúben — que ele viva
+      → A graça alcança cada tribo nominalmente
+
+[B2] · Bênção sobre Judá — leva-o ao seu povo
+      → A bênção real prepara o cetro futuro
+
+[B3] · Bênção sobre Levi — Tumim e Urim
+      → O sacerdócio é abençoado para mediar
+
+[B4] · Bênção sobre Benjamim — amado do SENHOR
+      → A proximidade divina é dom singular
+
+[B5] · Bênção sobre José — bênçãos dos céus e da terra
+      → A plenitude da bênção pousa sobre o filho amado
+
+[B6] · Bênção sobre Zebulom e Issacar — alegrai-vos
+      → A bênção do mar e da tenda é dom partilhado
+
+[B7] · Bênção sobre Gade — descansa como leoa
+      → A força é dom para o serviço
+
+[B8] · Bênção sobre Dã — leãozinho que salta
+      → A bênção da agilidade na missão
+
+[B9] · Bênção sobre Naftali — farto da bênção
+      → A satisfação é dom da fidelidade
+
+[B10] · Bênção sobre Aser — mais bendito que os filhos
+      → A bênção sobre o azeite e o ferro
+
+◉ [A'] · "NÃO HÁ NINGUÉM COMO DEUS, Ó JESURUM"
+      → No centro do refrão final: nenhum outro como o SENHOR
+
+EIXO CRISTOLÓGICO
+Ef 1:3: "que nos abençoou com toda sorte de bênção espiritual nas regiões celestiais em Cristo" — em Cristo as bênçãos tribais culminam na bênção universal.`;
+
+  if (d.dia === 253) return `PARA PREGAR · Deuteronômio 34:1–12
+
+BIG IDEA
+"Moisés morre fora da terra, mas o profeta como ele virá: e nele entraremos."
+
+MOVIMENTOS DO TEXTO
+[A]  · A terra prometida vista desde o Nebo
+      → A promessa contemplada de longe pelo servo fiel
+
+[B]  · As palavras do SENHOR: a terra dos pais
+      → O juramento aos pais permanece a moldura da história
+
+◉ [C]  · MORTE DE MOISÉS — SEPULTADO PELO SENHOR
+      → No centro o sepultamento divino do servo: dignidade insuperável
+
+[B'] · Cumprindo a ordem do SENHOR dada a Moisés
+      → Josué prossegue na palavra que o mediador deixou
+
+[A'] · O Egito — Moisés não teve igual em sinais
+      → A história do servo permanece como referência, mas aguarda outro
+
+EIXO CRISTOLÓGICO
+Hb 3:5-6: "Moisés... como servo... mas Cristo, como Filho" — em Cristo o Profeta semelhante a Moisés conduz o povo ao verdadeiro repouso.`;
+
   return null;
 }
 
