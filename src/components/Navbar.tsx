@@ -44,6 +44,7 @@ export default function Navbar() {
     { name: 'Diagramas', path: '/metodo' },
     { name: 'Tutoriais', path: '/tutoriais' },
     { name: 'Devocional',path: '/devocional' },
+    { name: 'Pregação',  path: '/pregacao' },
     { name: 'Educação',  path: '/educacao' },
     { name: 'Livraria',  path: '/livraria', activeOverride: isLibrariaActive },
   ];
