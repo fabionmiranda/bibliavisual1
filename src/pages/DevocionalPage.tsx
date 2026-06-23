@@ -5825,6 +5825,1289 @@ MOVIMENTOS DO TEXTO
 EIXO CRISTOLÓGICO
 Hb 11:22: "pela fé José, no fim da vida... deu ordens acerca dos seus ossos" — em Cristo, a esperança da redenção atravessa até a tumba.`;
 
+  // ── ÊXODO ────────────────────────────────────────────────────────────────
+
+  if (d.dia === 82) return `PARA PREGAR · Êxodo 1:1–7
+
+BIG IDEA
+"A promessa feita aos pais não morre com eles — multiplica-se nos filhos."
+
+MOVIMENTOS DO TEXTO
+[A]   · A lista dos que desceram ao Egito enraíza a história na aliança
+      → A providência trabalha através de famílias com nome
+
+[B]   · José e a geração inteira morreram
+      → A morte do mediador humano não cancela o propósito divino
+
+[A']  · Os filhos de Israel frutificaram e encheram a terra
+      → A promessa de Gênesis 1 e Abraão cumpre-se mesmo no exílio
+
+EIXO CRISTOLÓGICO
+At 7:17: "aproximando-se o tempo da promessa que Deus jurara a Abraão, o povo crescia" — em Cristo, a promessa frutifica até em terra estrangeira.`;
+
+  if (d.dia === 83) return `PARA PREGAR · Êxodo 1:8–14
+
+BIG IDEA
+"Quanto mais o opressor aperta, mais o povo de Deus se multiplica."
+
+MOVIMENTOS DO TEXTO
+[A]   · Faraó teme o crescimento de Israel e arquiteta a opressão
+      → O poder humano se assusta com a bênção que não controla
+
+[B]   · Israel é forçado ao trabalho em Pitom e Ramessés
+      → O sistema converte a vocação humana em escravidão produtiva
+
+[A']  · Quanto mais oprimiam, mais cresciam, e os egípcios abominavam
+      → A bênção divina é incompressível pelas estruturas do mal
+
+[B']  · A vida torna-se amarga sob a servidão dura
+      → O gemido do oprimido prepara o palco da intervenção divina
+
+EIXO CRISTOLÓGICO
+At 7:34: "tenho visto a aflição do meu povo no Egito e ouvi seu gemido" — em Cristo, Deus desce onde o povo geme.`;
+
+  if (d.dia === 84) return `PARA PREGAR · Êxodo 1:15–22
+
+BIG IDEA
+"Temer a Deus é a única coragem que liberta de todos os outros temores."
+
+MOVIMENTOS DO TEXTO
+[A]   · Faraó ordena matar os meninos hebreus
+      → O poder absoluto sempre alcança o ventre
+
+[B]   · As parteiras temeram a Deus e não obedeceram
+      → O temor reverente cria desobediência santa
+
+◉ [X]   · DIÁLOGO ENTRE FARAÓ E AS PARTEIRAS — A MENTIRA SUBVERSIVA DA FÉ
+      → A fé encontra meios criativos para preservar a vida
+
+[B']  · Deus fez bem às parteiras e edificou-lhes casa
+      → Quem teme a Deus recebe o que o tirano queria roubar
+
+[A']  · Faraó ordena lançar todo menino no rio
+      → A escalada do mal antecipa o juízo iminente
+
+EIXO CRISTOLÓGICO
+At 5:29: "importa antes obedecer a Deus do que aos homens" — em Cristo, a desobediência civil em nome de Deus é fidelidade.`;
+
+  if (d.dia === 85) return `PARA PREGAR · Êxodo 2:1–10
+
+BIG IDEA
+"Deus salva o libertador na própria casa do tirano que o quer morto."
+
+MOVIMENTOS DO TEXTO
+[A]   · A mãe esconde e depois solta o menino nas águas
+      → A fé entrega o que não pode mais proteger
+
+[B]   · A irmã vigia ao longe o destino do irmão
+      → A vigilância silenciosa é forma ativa de fé
+
+◉ [X]   · A FILHA DO FARAÓ RECOLHE O MENINO — DEUS USA A CASA DO INIMIGO
+      → A providência transforma o palácio em berço do libertador
+
+[B']  · A irmã negocia uma ama hebreia para a princesa
+      → A sabedoria infantil é instrumento da redenção
+
+[A']  · A mãe recebe o filho de volta, agora pago para criá-lo
+      → Deus devolve o filho entregue com salário do opressor
+
+EIXO CRISTOLÓGICO
+Hb 11:23: "pela fé, Moisés... foi escondido três meses por seus pais" — em Cristo, a fé dos pequenos prepara a salvação dos muitos.`;
+
+  if (d.dia === 86) return `PARA PREGAR · Êxodo 2:11–15
+
+BIG IDEA
+"Zelo sem chamado divino transforma o libertador em fugitivo."
+
+MOVIMENTOS DO TEXTO
+[A]   · Moisés mata o egípcio e esconde o corpo na areia
+      → A justiça por mão própria nasce de impulso, não de envio
+
+[B]   · O homicídio é revelado por outro hebreu
+      → O pecado oculto vem à luz pela boca de quem ele tentou ajudar
+
+[A']  · Moisés foge do Faraó que procura matá-lo
+      → O caçador vira caça quando age fora do tempo de Deus
+
+EIXO CRISTOLÓGICO
+At 7:25: "ele cuidava que seus irmãos entenderiam... mas eles não entenderam" — em Cristo, o Libertador verdadeiro é também inicialmente rejeitado pelos seus.`;
+
+  if (d.dia === 87) return `PARA PREGAR · Êxodo 2:16–22
+
+BIG IDEA
+"O exílio é a escola onde Deus prepara o libertador pela hospitalidade alheia."
+
+MOVIMENTOS DO TEXTO
+[A]   · Moisés defende as filhas de Jetro e abevera o rebanho
+      → A justiça espontânea revela o caráter no anonimato
+
+[B]   · O pai pergunta às filhas por que tardam
+      → A bênção começa com pergunta de quem acolhe
+
+◉ [X]   · "UM EGÍPCIO NOS LIVROU DOS PASTORES" — A IDENTIDADE OCULTA DO LIBERTADOR
+      → Deus prepara o salvador na identidade incógnita
+
+[B']  · O pai ordena chamar e dar pão ao homem
+      → A hospitalidade abre porta para a aliança
+
+[A']  · Moisés casa com Séfora e gera Gérson — "peregrino em terra estranha"
+      → O nome do filho confessa a identidade do exilado
+
+EIXO CRISTOLÓGICO
+Hb 11:13: "estrangeiros e peregrinos na terra" — em Cristo, o povo aprende o exílio antes de receber a herança.`;
+
+  if (d.dia === 88) return `PARA PREGAR · Êxodo 2:23–25
+
+BIG IDEA
+"O gemido do oprimido sobe a Deus e move a aliança feita aos pais."
+
+MOVIMENTOS DO TEXTO
+[A]   · Os israelitas gemem na escravidão e o clamor sobe a Deus
+      → A dor articulada em oração já é o início da libertação
+
+[B]   · Deus se lembrou da aliança com Abraão, Isaque e Jacó
+      → A redenção brota da memória pactual, não do mérito do povo
+
+[A']  · Deus viu os israelitas e os conheceu
+      → Ver, ouvir e conhecer são verbos da aliança em ação
+
+EIXO CRISTOLÓGICO
+Lc 1:54: "auxiliou a Israel, seu servo, lembrando-se da sua misericórdia" — em Cristo, Deus se lembra para libertar.`;
+
+  if (d.dia === 89) return `PARA PREGAR · Êxodo 3:1–4:17
+
+BIG IDEA
+"O nome EU SOU é o fundamento de toda missão e a resposta a toda dúvida."
+
+MOVIMENTOS DO TEXTO
+[A]   · O Anjo do Senhor aparece na sarça que arde sem se consumir
+      → A presença divina é fogo que ilumina sem destruir
+
+[B]   · Deus chama Moisés pelo nome e ordena tirar as sandálias
+      → O chamado começa com reverência diante do santo
+
+◉ [X]   · "EU SEREI O QUE SEREI" — O NOME DE DEUS COMO FUNDAMENTO DA MISSÃO
+      → A identidade do Enviador resolve a inadequação do enviado
+
+[B']  · Moisés alega "Eu não sou eloquente"
+      → A consciência da limitação é convertida em dependência
+
+[A']  · Arão é dado como porta-voz de Moisés
+      → Deus completa o vaso fraco com o irmão necessário
+
+EIXO CRISTOLÓGICO
+Jo 8:58: "antes que Abraão existisse, EU SOU" — em Cristo, o nome da sarça caminha entre nós.`;
+
+  if (d.dia === 90) return `PARA PREGAR · Êxodo 4:18–31
+
+BIG IDEA
+"O enviado de Deus precisa ser circuncidado antes de circuncidar o povo."
+
+MOVIMENTOS DO TEXTO
+[A]   · Moisés despede-se de Jetro com palavras de partida
+      → A missão começa com despedidas honestas
+
+[B]   · O Senhor ordena o retorno ao Egito
+      → A obediência ao envio precede a estratégia
+
+◉ [X]   · "DEIXA IR MEU FILHO PRIMOGÊNITO" / "O SENHOR ENCONTROU-O E QUIS MATÁ-LO"
+      → A santidade exige que o mediador esteja primeiro em ordem com Deus
+
+[B']  · Arão recebe ordem e encontra Moisés no monte
+      → Deus articula os agentes do plano
+
+[A']  · Moisés e Arão falam ao povo, que crê e adora
+      → A obediência conjunta gera adoração do povo
+
+EIXO CRISTOLÓGICO
+Cl 2:11: "circuncidados com a circuncisão de Cristo" — em Cristo, o mediador foi marcado antes de mediar.`;
+
+  if (d.dia === 91) return `PARA PREGAR · Êxodo 5:1–23
+
+BIG IDEA
+"A obediência ao chamado de Deus muitas vezes piora as coisas antes de libertar."
+
+MOVIMENTOS DO TEXTO
+[A]   · Moisés e Arão vão ao Faraó: "Deixa ir meu povo"
+      → A primeira palavra profética encontra o coração endurecido
+
+[B]   · "Caso contrário ele nos castigará com espada"
+      → O temor santo da consequência move o pedido
+
+[C]   · "Vão para o trabalho!" — a recusa do tirano
+      → O poder sempre responde com mais trabalho
+
+◉ [X]   · "NÃO FORNECEREIS MAIS PALHA AO POVO" — A OPRESSÃO INTENSIFICADA
+      → A libertação anunciada provoca recrudescimento do mal
+
+[C']  · "Ao trabalho!" — a ordem reiterada
+      → O sistema repete sua única palavra
+
+[B']  · "Pusestes uma espada em suas mãos para nos matar"
+      → O povo culpa o libertador pela piora
+
+[A']  · "Desde que falei em teu nome, ele maltratou este povo"
+      → O profeta clama honestamente diante do silêncio
+
+EIXO CRISTOLÓGICO
+Rm 8:22: "toda a criação geme até agora nas dores do parto" — em Cristo, a libertação atravessa o agravamento antes da redenção.`;
+
+  if (d.dia === 92) return `PARA PREGAR · Êxodo 6:1–12
+
+BIG IDEA
+"Quando o povo não ouve e o líder duvida, Deus dobra a promessa, não a reduz."
+
+MOVIMENTOS DO TEXTO
+[A]   · "Ele os expulsará de sua terra"
+      → A iniciativa da libertação é totalmente divina
+
+[B]   · "Eu sou o SENHOR"
+      → A autorrevelação é o fundamento de toda promessa
+
+[C]   · A aliança com Abraão, Isaque e Jacó é relembrada
+      → A história pactual ancora o futuro
+
+◉ [X]   · SETE VERBOS DE REDENÇÃO: TIRAREI, LIVRAREI, RESGATAREI, TOMAREI, SEREI, LEVAREI, DAREI
+      → A iniciativa salvífica é completa, sucessiva e centrada em Deus
+
+[C']  · "A terra que prometi a Abraão, Isaque e Jacó"
+      → A herança da terra cumpre a aliança ancestral
+
+[B']  · "Eu, o SENHOR"
+      → A repetição do nome sela a palavra
+
+[A']  · "Vai, diz ao Faraó que deixe sair os israelitas"
+      → O profeta é reenviado mesmo após o fracasso aparente
+
+EIXO CRISTOLÓGICO
+2Co 1:20: "todas as promessas de Deus são nele Sim e Amém" — em Cristo, os sete verbos do Êxodo encontram seu cumprimento definitivo.`;
+
+  if (d.dia === 93) return `PARA PREGAR · Êxodo 6:13–27
+
+BIG IDEA
+"Deus chama por nome dentro de uma linhagem real para realizar a libertação."
+
+MOVIMENTOS DO TEXTO
+[A]   · "Para fazer os israelitas saírem do Egito"
+      → A missão emoldura toda a genealogia
+
+[B]   · A genealogia de Levi ancora Moisés e Arão na história
+      → O libertador tem família, tribo e nome
+
+[A']  · "Conduzis os israelitas para fora da terra do Egito"
+      → A mesma missão fecha o quadro genealógico
+
+EIXO CRISTOLÓGICO
+Mt 1:1: "livro da genealogia de Jesus Cristo" — em Cristo, o Libertador definitivo também vem com linhagem registrada.`;
+
+  if (d.dia === 94) return `PARA PREGAR · Êxodo 6:28–7:7
+
+BIG IDEA
+"Deus equipa o porta-voz reticente e endurece o coração do tirano."
+
+MOVIMENTOS DO TEXTO
+[A]   · "Repete ao Faraó tudo o que te digo"
+      → A palavra do profeta é a palavra do Enviador
+
+[B]   · "Como poderá o Faraó ouvir-me?"
+      → A inadequação confessa é solo do equipamento divino
+
+◉ [X]   · "ARÃO, TEU IRMÃO, SERÁ TEU PROFETA"
+      → Deus articula dom e fraqueza no corpo do chamado
+
+[B']  · "Ele não vos ouvirá"
+      → A resposta divina ao "como ouvirá?" é "ele não ouvirá"
+
+[A']  · Falaram ao Faraó conforme a ordem
+      → A obediência prevalece sobre o resultado aparente
+
+EIXO CRISTOLÓGICO
+Rm 9:17: "para isto mesmo te levantei, para mostrar em ti meu poder" — em Cristo, até a rejeição serve à exibição da glória.`;
+
+  if (d.dia === 95) return `PARA PREGAR · Êxodo 7:8–10:29
+
+BIG IDEA
+"Cada praga é juízo contra um deus do Egito — o SENHOR é o único Senhor."
+
+MOVIMENTOS DO TEXTO
+[A]   · Cajado / sinal: "Se o Faraó pedir um sinal"
+      → O confronto cósmico começa com gesto profético
+
+[B]   · Rio em sangue: "Assim sabereis que eu sou o SENHOR"
+      → A natureza torna-se palavra de juízo
+
+[C]   · Rãs: Faraó promete e recua
+      → A promessa do tirano não vale o que diz
+
+[D]   · Mosquitos: os magos confessam "é o dedo de Deus"
+      → O poder rival se rende intelectualmente
+
+◉ [X]   · MOSCAS E PESTILÊNCIA — "FAREI DISTINÇÃO ENTRE MEU POVO E TEU POVO"
+      → A eleição soberana de Deus separa quem é seu no meio do juízo
+
+[D']  · Úlceras: os magos não podem estar diante de Moisés
+      → O poder rival se rende fisicamente
+
+[C']  · Granizo: Faraó promete e recua
+      → O coração endurecido repete o ciclo
+
+[B']  · Gafanhotos: "Para que saibais que eu sou o SENHOR"
+      → A finalidade pedagógica é repetida
+
+[A']  · Trevas: "Não apareças mais diante de mim!"
+      → O confronto culmina em ruptura
+
+EIXO CRISTOLÓGICO
+Cl 2:15: "despojou os principados e potestades, triunfando deles" — em Cristo, todo poder rival é exposto na cruz.`;
+
+  if (d.dia === 96) return `PARA PREGAR · Êxodo 11:1–10
+
+BIG IDEA
+"O último aviso da graça precede o juízo derradeiro do amor traído."
+
+MOVIMENTOS DO TEXTO
+[A]   · "Ainda uma praga trarei sobre o Faraó"
+      → A advertência divina é misericórdia antes do golpe
+
+[B]   · Profecia sobre a morte dos primogênitos
+      → A palavra do profeta antecipa o juízo
+
+[A']  · "Para que meus prodígios se multipliquem no Egito"
+      → A finalidade do juízo é a manifestação do nome
+
+EIXO CRISTOLÓGICO
+2Pe 3:9: "o Senhor não retarda a sua promessa... é longânimo, não querendo que alguns se percam" — em Cristo, todo aviso é misericórdia ainda não convertida em juízo.`;
+
+  if (d.dia === 97) return `PARA PREGAR · Êxodo 12:1–28
+
+BIG IDEA
+"O sangue do cordeiro distingue o povo de Deus no meio do juízo universal."
+
+MOVIMENTOS DO TEXTO
+[A]   · Instrução sobre o cordeiro: sem defeito, macho, de um ano
+      → A vítima da redenção tem qualidade divina
+
+[B]   · "Quando vir o sangue, passarei adiante de vós"
+      → A proteção vem do sinal exterior aplicado
+
+[C]   · Regulamentos sobre o ritual: pães ázimos por sete dias
+      → A liturgia transmite a doutrina
+
+[A']  · Instrução repetida sobre o cordeiro
+      → A repetição enraíza a prática
+
+[B']  · "O SENHOR passará para ferir os egípcios"
+      → O mesmo Deus julga e poupa pelo sangue
+
+[C']  · "Ensino aos filhos: o que significa este rito?"
+      → A liturgia se torna catequese intergeracional
+
+EIXO CRISTOLÓGICO
+1Co 5:7: "Cristo, nosso Cordeiro pascal, foi sacrificado" — em Cristo, a Páscoa encontra seu sentido pleno.`;
+
+  if (d.dia === 98) return `PARA PREGAR · Êxodo 12:29–32
+
+BIG IDEA
+"À meia-noite o Egito desmorona e o Faraó pede a bênção que rejeitou."
+
+MOVIMENTOS DO TEXTO
+[A]   · "O SENHOR feriu todo primogênito"
+      → O juízo cumpre exatamente a palavra anunciada
+
+[B]   · "O Faraó levantou-se de noite, ele e todos os servos"
+      → O tirano é arrancado do sono pela voz do juízo
+
+[A']  · "Não havia casa sem seu morto"
+      → A extensão do juízo iguala a extensão da rebelião
+
+[B']  · "Durante a noite o Faraó chamou Moisés e Arão"
+      → O opressor inverte sua posição diante do mediador
+
+EIXO CRISTOLÓGICO
+Fp 2:10: "ao nome de Jesus se dobre todo joelho" — em Cristo, todo orgulho um dia se curvará.`;
+
+  if (d.dia === 99) return `PARA PREGAR · Êxodo 12:33–41
+
+BIG IDEA
+"O Êxodo cumpre exatamente o calendário que Deus prometeu a Abraão."
+
+MOVIMENTOS DO TEXTO
+[A]   · "Tomaram a massa antes de ser fermentada"
+      → A urgência da libertação marca a memória do povo
+
+[B]   · Os israelitas partiram de Ramessés
+      → A saída concreta inaugura a nova história
+
+[A']  · "A massa que trouxeram do Egito não estava fermentada"
+      → A liturgia futura preserva a memória da pressa
+
+[B']  · "Todo o exército do SENHOR saiu da terra do Egito"
+      → O povo escravo torna-se exército do Senhor
+
+EIXO CRISTOLÓGICO
+Gl 4:4: "vindo a plenitude do tempo, Deus enviou seu Filho" — em Cristo, o relógio da redenção cumpre o prazo prometido.`;
+
+  if (d.dia === 100) return `PARA PREGAR · Êxodo 12:42–51
+
+BIG IDEA
+"A mesa da Páscoa tem porta — e quem entra pela circuncisão pertence ao povo."
+
+MOVIMENTOS DO TEXTO
+[A]   · "Deus os fez sair da terra do Egito"
+      → A obra de Deus emoldura todo regulamento
+
+[B]   · Quem pode participar: nenhum estrangeiro incircunciso
+      → A mesa exige sinal da aliança
+
+[C]   · Regulamento sobre a ceia: em uma só casa
+      → A unidade do povo é unidade do banquete
+
+[B']  · O estrangeiro circuncidado torna-se como natural da terra
+      → A inclusão pela aliança é radical
+
+[A']  · "O SENHOR fez os israelitas saírem do Egito"
+      → A obra de Deus fecha o quadro
+
+EIXO CRISTOLÓGICO
+Ef 2:13: "vós, que antes estáveis longe... chegastes perto pelo sangue de Cristo" — em Cristo, o estrangeiro é trazido para a mesa pela aliança definitiva.`;
+
+  if (d.dia === 101) return `PARA PREGAR · Êxodo 13:1–2
+
+BIG IDEA
+"Todo primogênito pertence a Deus porque toda vida foi resgatada pelo sangue."
+
+MOVIMENTOS DO TEXTO
+[A]   · "Consagra-me todo primogênito"
+      → Deus reclama o que sua mão poupou
+
+[B]   · "De homens e de animais"
+      → A consagração abrange toda a criação
+
+EIXO CRISTOLÓGICO
+Cl 1:18: "ele é o princípio, o primogênito dentre os mortos" — em Cristo, o Primogênito consagra-se para resgatar todos os primogênitos.`;
+
+  if (d.dia === 102) return `PARA PREGAR · Êxodo 13:3–10
+
+BIG IDEA
+"A festa dos ázimos transforma a libertação em identidade gravada no calendário."
+
+MOVIMENTOS DO TEXTO
+[A]   · "Foi com mão forte que o SENHOR vos fez sair"
+      → A memória da libertação é o fundamento do culto
+
+[B]   · "É neste mês que deveis celebrar este rito"
+      → A liturgia é dada por Deus, não inventada
+
+[C]   · "Por sete dias comereis pães ázimos"
+      → A regra ritual molda o tempo do povo
+
+[C']  · "Somente pães ázimos serão comidos durante os sete dias"
+      → A repetição enraíza o hábito de santidade
+
+[B']  · "Naquele dia explicareis ao vosso filho"
+      → A liturgia é catequese transgeracional
+
+[A']  · "Com mão forte o SENHOR vos fez sair do Egito"
+      → A memória fecha o ciclo do culto
+
+EIXO CRISTOLÓGICO
+1Co 5:8: "celebremos a festa... com asmos de sinceridade e de verdade" — em Cristo, a festa dos ázimos torna-se vida purificada do fermento da velha vida.`;
+
+  if (d.dia === 103) return `PARA PREGAR · Êxodo 13:11–16
+
+BIG IDEA
+"O primogênito resgatado pelo cordeiro é sinal entre os olhos de cada geração."
+
+MOVIMENTOS DO TEXTO
+[A]   · "Os primogênitos machos dos vossos animais"
+      → O sinal recai sobre o primeiro de cada ventre
+
+[B]   · "Todo primogênito entre os filhos devereis resgatar"
+      → O resgate é mandamento sobre a vida humana
+
+[C]   · "Com mão forte o SENHOR nos fez sair do Egito"
+      → A memória do Êxodo justifica o resgate
+
+[A']  · "Primogênitos de homens e animais"
+      → A inclusão da criação no resgate
+
+[B']  · "Resgate todo primogênito dos meus filhos"
+      → O mandamento é reiterado para fixar o costume
+
+[C']  · "Com mão forte o SENHOR nos fez sair do Egito"
+      → A memória se torna refrão litúrgico
+
+EIXO CRISTOLÓGICO
+1Pe 1:18-19: "fostes resgatados... pelo precioso sangue de Cristo, como de cordeiro" — em Cristo, o resgate do primogênito encontra a sua plenitude.`;
+
+  if (d.dia === 104) return `PARA PREGAR · Êxodo 13:17–22
+
+BIG IDEA
+"Deus guia pelo caminho longo para preservar a fé ainda imatura."
+
+MOVIMENTOS DO TEXTO
+[A]   · "Deus não os guiou pelo caminho da terra dos filisteus"
+      → A pedagogia divina escolhe o caminho do amadurecimento
+
+[B]   · "Deus os desviou pelo deserto"
+      → O deserto é escola, não desvio
+
+[C]   · Os ossos de José são levados — a promessa cumprida
+      → A memória dos pais caminha com o povo
+
+[B']  · "Acamparam em Etã, à beira do deserto"
+      → A jornada concreta espelha o desígnio
+
+[A']  · "O SENHOR ia adiante de dia em coluna de nuvem"
+      → Deus mesmo é o caminho
+
+EIXO CRISTOLÓGICO
+Jo 8:12: "eu sou a luz do mundo" — em Cristo, a coluna de fogo torna-se pessoa que caminha à nossa frente.`;
+
+  if (d.dia === 105) return `PARA PREGAR · Êxodo 14:1–18
+
+BIG IDEA
+"Deus endurece o coração do tirano para receber glória maior na libertação do povo."
+
+MOVIMENTOS DO TEXTO
+[A]   · "Tornarei o Faraó obstinado para que receba glória"
+      → O propósito divino governa até o coração do inimigo
+
+[B]   · O arrependimento do Faraó: "Que fizemos?"
+      → O opressor se reanima na ilusão de controle
+
+[C]   · Os egípcios alcançam Israel acampado
+      → O cerco aparente é o palco da glória
+
+[B']  · O arrependimento de Israel: "Não te dissemos...?"
+      → O povo se desespera em meio à crise
+
+[A']  · "Tornarei os egípcios obstinados para que receba glória"
+      → A finalidade divina enquadra todo o evento
+
+EIXO CRISTOLÓGICO
+Rm 9:17-18: "para isto mesmo te levantei... endurece a quem quer" — em Cristo, a soberania que endureceu o Faraó é a mesma que abranda o nosso coração.`;
+
+  if (d.dia === 106) return `PARA PREGAR · Êxodo 14:19–31
+
+BIG IDEA
+"O mar que liberta o povo é o mesmo que sepulta o inimigo."
+
+MOVIMENTOS DO TEXTO
+[A]   · As águas se dividem ao gesto do profeta
+      → A criação obedece quando Deus comanda
+
+[B]   · "Os israelitas marcharam em terra seca com águas como muro"
+      → A travessia é caminho impossível tornado seguro
+
+[C]   · "Todos os cavalos e carros do Faraó entraram no mar"
+      → O inimigo persegue até o limiar do julgamento
+
+[D]   · "O SENHOR combatia por eles"
+      → A guerra é do Senhor
+
+◉ [X]   · A PALAVRA DO SENHOR ORDENA O FIM DO MILAGRE
+      → A mesma palavra que abriu o mar o fecha sobre o inimigo
+
+[D']  · "O SENHOR os lançou no meio das águas"
+      → A batalha termina pela mão divina
+
+[C']  · "Cobriu os carros e cavaleiros de todo o exército do Faraó"
+      → O juízo é total e irrevogável
+
+[B']  · "Os israelitas marcharam em terra seca pelo meio do mar"
+      → A travessia é repetida como memorial
+
+[A']  · "Viram o grande poder que o SENHOR exerceu — e creram"
+      → A fé do povo nasce diante do ato salvífico
+
+EIXO CRISTOLÓGICO
+1Co 10:1-2: "todos foram batizados em Moisés, na nuvem e no mar" — em Cristo, o Mar Vermelho prefigura o batismo que mata o velho homem e levanta o novo.`;
+
+  if (d.dia === 107) return `PARA PREGAR · Êxodo 15:1–19
+
+BIG IDEA
+"A salvação experimentada gera teologia cantada que ensina o povo a interpretar."
+
+MOVIMENTOS DO TEXTO
+[A]   · "O cavalo e o seu cavaleiro ele os lançou ao mar"
+      → O cântico abre celebrando o ato concreto
+
+[B]   · Louvor: "O SENHOR é minha força e meu cântico"
+      → A teologia da pessoa de Deus é declarada
+
+[C]   · "Desceram às profundezas como uma pedra"
+      → O destino do inimigo é fixado em imagem
+
+[D]   · "Tua mão direita, ó SENHOR, é gloriosa em poder"
+      → O atributo divino é exaltado
+
+◉ [X]   · "QUEM É COMO TU ENTRE OS DEUSES, Ó SENHOR?"
+      → A incomparabilidade do Senhor é o centro do louvor
+
+[D']  · "Tua mão direita engole os inimigos"
+      → O atributo é repetido em ação
+
+[C']  · "Ficaram imóveis como uma pedra"
+      → O destino do inimigo é selado
+
+[B']  · Louvor: "Tu os levarás e os plantarás no monte"
+      → A teologia do futuro é declarada
+
+[A']  · "Os cavalos do Faraó entraram no mar"
+      → O cântico fecha rememorando o ato concreto
+
+EIXO CRISTOLÓGICO
+Ap 15:3: "cantavam o cântico de Moisés... e o cântico do Cordeiro" — em Cristo, o cântico do Mar é amplificado no cântico do Cordeiro.`;
+
+  if (d.dia === 108) return `PARA PREGAR · Êxodo 15:20–21
+
+BIG IDEA
+"A profetiza Miriã interpreta o ato de Deus em coreografia comunitária."
+
+MOVIMENTOS DO TEXTO
+[A]   · Miriã, profetiza, toma o tamborim e conduz as mulheres
+      → A liturgia comunitária da salvação é liderada por dom profético
+
+[B]   · "Cantai ao SENHOR, pois triunfou gloriosamente"
+      → A teologia se torna refrão coletivo
+
+EIXO CRISTOLÓGICO
+Lc 1:46-47: "minha alma engrandece o Senhor... porque o Poderoso me fez grandes coisas" — em Cristo, a profetiza encontra eco em Maria.`;
+
+  if (d.dia === 109) return `PARA PREGAR · Êxodo 15:22–27
+
+BIG IDEA
+"O Deus que liberta também ensina seu povo a confiar quando a água está amarga."
+
+MOVIMENTOS DO TEXTO
+[A]   · O deserto de Sur sem água por três dias
+      → A jornada da fé inclui escassez
+
+[B]   · O Senhor deu estatutos e normas
+      → A prova é ocasião para a lei
+
+[B']  · "Se obedecerdes suas ordens... nenhuma dessas pragas trarei"
+      → A obediência abre caminho para a bênção
+
+[A']  · Doze fontes e setenta palmeiras em Elim
+      → Após a prova, a abundância sinal da aliança
+
+EIXO CRISTOLÓGICO
+Jo 7:37-38: "se alguém tem sede, venha a mim e beba" — em Cristo, a água amarga é definitivamente transformada.`;
+
+  if (d.dia === 110) return `PARA PREGAR · Êxodo 16:1–36
+
+BIG IDEA
+"O maná diário ensina dependência cotidiana do Deus que sustenta seu povo."
+
+MOVIMENTOS DO TEXTO
+[A]   · Israel murmura: "Antes tivéssemos morrido no Egito"
+      → A escassez expõe o que mora no coração
+
+[B]   · "No sexto dia será o dobro"
+      → A provisão antecipa o sábado
+
+[C]   · "À tarde sabereis... de manhã vereis a glória"
+      → A revelação é pedagogia do tempo
+
+[D]   · "Carne à tarde e pão de manhã"
+      → A provisão é detalhada
+
+◉ [X]   · "A GLÓRIA DO SENHOR APARECEU NA NUVEM"
+      → No centro do sustento está a manifestação da glória
+
+[D']  · "Ao entardecer carne, de manhã pão"
+      → A promessa é cumprida
+
+[C']  · "Codornizes à tarde, orvalho de manhã"
+      → A pedagogia do tempo se realiza
+
+[B']  · "No sexto dia recolheram o dobro"
+      → A provisão antecipada chega ao sábado
+
+[A']  · "Os israelitas comeram o maná quarenta anos"
+      → A murmuração inicial é coroada de fidelidade divina
+
+EIXO CRISTOLÓGICO
+Jo 6:51: "eu sou o pão vivo que desceu do céu" — em Cristo, o maná é cumprido em pão que dá vida eterna.`;
+
+  if (d.dia === 111) return `PARA PREGAR · Êxodo 17:1–7
+
+BIG IDEA
+"O povo prova a Deus enquanto o Deus que liberta dá água da rocha."
+
+MOVIMENTOS DO TEXTO
+[A]   · Altercação e prova em Refidim
+      → A sede revela o coração que duvida
+
+[B]   · "Por que nos fizeste subir do Egito para morrer de sede?"
+      → A queixa é dirigida ao mediador
+
+◉ [X]   · "QUE FAREI A ESTE POVO? POUCO FALTA PARA QUE ME APEDREJEM"
+      → O clamor do mediador encontra a resposta divina
+
+[B']  · "A água fluirá da rocha para o povo beber"
+      → A provisão divina responde à queixa
+
+[A']  · Massá e Meribá — nomes do conflito
+      → O lugar guarda a memória da disputa
+
+EIXO CRISTOLÓGICO
+1Co 10:4: "bebiam de uma pedra espiritual... e a pedra era Cristo" — em Cristo, a rocha ferida jorra água viva.`;
+
+  if (d.dia === 112) return `PARA PREGAR · Êxodo 17:8–16
+
+BIG IDEA
+"A vitória do povo de Deus se sustenta nas mãos erguidas que outros amparam."
+
+MOVIMENTOS DO TEXTO
+[A]   · "Amaleque veio e travou guerra contra Israel"
+      → O inimigo ataca o povo recém-libertado
+
+[B]   · Josué combate Amaleque no vale
+      → A obediência militar é parte do plano
+
+[C]   · "Moisés subiu ao cume com Arão e Hur"
+      → A intercessão tem lugar elevado
+
+◉ [X]   · "ENQUANTO MOISÉS MANTINHA AS MÃOS ERGUIDAS, ISRAEL VENCIA"
+      → A vitória depende da intercessão sustentada
+
+[C']  · "Arão e Hur sustentaram as mãos de Moisés"
+      → A intercessão precisa de comunidade
+
+[B']  · Josué abate Amaleque ao fio da espada
+      → A obediência militar colhe o fruto da oração
+
+[A']  · "O SENHOR guerreará contra Amaleque"
+      → A vitória é do Senhor, não dos homens
+
+EIXO CRISTOLÓGICO
+Hb 7:25: "vive sempre para interceder por eles" — em Cristo, as mãos do intercessor nunca caem.`;
+
+  if (d.dia === 113) return `PARA PREGAR · Êxodo 18:1–27
+
+BIG IDEA
+"A sabedoria do gentio piedoso reorganiza o povo de Deus para o ministério sustentável."
+
+MOVIMENTOS DO TEXTO
+[A]   · Jetro vem visitar Moisés
+      → O gentio piedoso busca o povo de Deus
+
+[B]   · Nomeação dos filhos: Gérson e Eliézer
+      → A história familiar carrega teologia
+
+[C]   · Jetro traz esposa e filhos a Moisés
+      → A família reunida prepara o conselho
+
+[D]   · Moisés conta a salvação de Deus a Jetro
+      → O testemunho precede a sabedoria
+
+[E]   · "Bendito o SENHOR que vos livrou"
+      → O gentio confessa o Deus de Israel
+
+[F]   · Refeição diante de Deus com os anciãos
+      → A mesa sela a comunhão
+
+[E']  · Jetro pergunta: "Por que fazes isso sozinho?"
+      → A pergunta abre o caminho da reforma
+
+[D']  · Moisés explica seu encargo
+      → A vulnerabilidade do líder é confessada
+
+[C']  · Conselho de Jetro: nomear chefes
+      → A sabedoria estrutural é dada
+
+[B']  · Moisés executa o plano
+      → A obediência ao conselho honra a sabedoria
+
+[A']  · Jetro parte para sua terra
+      → O gentio retorna após abençoar
+
+EIXO CRISTOLÓGICO
+Ef 4:11-12: "deu uns para apóstolos... a fim de aperfeiçoar os santos para a obra do ministério" — em Cristo, o ministério é distribuído entre dons múltiplos.`;
+
+  if (d.dia === 114) return `PARA PREGAR · Êxodo 19:1–9
+
+BIG IDEA
+"Deus traz o povo a si para fazer dele tesouro peculiar e nação santa."
+
+MOVIMENTOS DO TEXTO
+[P]   · No terceiro mês, Israel chega ao deserto do Sinai
+      → O tempo cumprido encontra o lugar do encontro
+
+[A]   · "Vós mesmos vistes como tratei os egípcios"
+      → A história salvífica é o fundamento da aliança
+
+[B]   · "Se obedecerdes à minha voz... sereis tesouro peculiar"
+      → A obediência consequencia, não condiciona, a eleição
+
+[A']  · "Tudo o que o SENHOR disse, faremos"
+      → A resposta do povo confirma a aliança
+
+[B']  · "Para que o povo me ouça falar contigo e creia sempre"
+      → A mediação visível sustenta a fé
+
+EIXO CRISTOLÓGICO
+1Pe 2:9: "vós sois geração eleita, sacerdócio real, nação santa" — em Cristo, o tesouro peculiar é a Igreja entre as nações.`;
+
+  if (d.dia === 115) return `PARA PREGAR · Êxodo 19:10–19
+
+BIG IDEA
+"O Deus santo desce com fogo e exige preparação para o encontro."
+
+MOVIMENTOS DO TEXTO
+[A]   · "O SENHOR descerá sobre o monte Sinai"
+      → A revelação tem lugar e tempo marcados
+
+[B]   · "Somente quando soar a trombeta poderão subir"
+      → A santidade impõe limites
+
+[C]   · "Preparai-vos para o terceiro dia"
+      → A santidade requer consagração
+
+[B']  · "Um toque de trombeta muito forte"
+      → A trombeta sinaliza o encontro
+
+[A']  · "O SENHOR desceu sobre ele em fogo"
+      → A presença divina é fogo manifesto
+
+EIXO CRISTOLÓGICO
+Hb 12:18-24: "não chegastes ao monte palpável... mas ao monte Sião" — em Cristo, o monte do fogo dá lugar ao monte da graça.`;
+
+  if (d.dia === 116) return `PARA PREGAR · Êxodo 19:20–25
+
+BIG IDEA
+"A presença divina exige mediação e limites para que o povo não pereça."
+
+MOVIMENTOS DO TEXTO
+[A]   · Moisés sobe ao cume
+      → O mediador atravessa a fronteira
+
+[B]   · "Para que muitos não sejam feridos"
+      → A santidade exige distância protetora
+
+◉ [X]   · "O POVO NÃO PODE SUBIR AO MONTE SINAI"
+      → O acesso a Deus é regulado pelo próprio Deus
+
+[B']  · "Para que não derrame sua ira sobre eles"
+      → A misericórdia se manifesta no limite
+
+[A']  · Moisés desce
+      → O mediador retorna para falar ao povo
+
+EIXO CRISTOLÓGICO
+1Tm 2:5: "há um só Deus e um só Mediador entre Deus e os homens, Cristo Jesus" — em Cristo, a fronteira do Sinai é atravessada de uma vez por todas.`;
+
+  if (d.dia === 117) return `PARA PREGAR · Êxodo 20:1–21
+
+BIG IDEA
+"A lei de Deus revela o caráter daquele que libertou o povo da escravidão."
+
+MOVIMENTOS DO TEXTO
+[A]   · Os Dez Mandamentos
+      → A lei descreve a vida do povo libertado
+
+[B]   · "Fala-nos tu, e não nos fale Deus, para que não morramos"
+      → O temor do povo busca mediador
+
+[A']  · "Deus veio para vos pôr à prova... a fim de não pecardes"
+      → A finalidade da lei é santidade vivida
+
+[B']  · "O povo permaneceu à distância, Moisés aproximou-se"
+      → A mediação é assumida pelo profeta
+
+EIXO CRISTOLÓGICO
+Rm 13:10: "o amor é, pois, o pleno cumprimento da lei" — em Cristo, a lei do Sinai é cumprida no amor encarnado.`;
+
+  if (d.dia === 118) return `PARA PREGAR · Êxodo 20:22–23:33
+
+BIG IDEA
+"A aliança regula desde o altar até a proteção dos mais fracos da terra."
+
+MOVIMENTOS DO TEXTO
+[A]   · Proibição de idolatria — altar de terra
+      → A adoração começa na exclusividade
+
+[B]   · Libertação no sétimo ano — escravos hebreus
+      → A justiça econômica reflete o Êxodo
+
+[C]   · Lei penal: homicídio, lesões, furto
+      → A justiça civil protege a vida e o bem
+
+[D]   · Leis sobre consagração
+      → A vida diária é santificada
+
+◉ [X]   · PROTEÇÃO DOS MAIS FRACOS: ESTRANGEIRO, VIÚVA, ÓRFÃO
+      → A justiça do Deus libertador alcança o invisível
+
+[D']  · Leis sobre consagração
+      → A consagração se repete em ritmo cotidiano
+
+[C']  · Lei penal: falso testemunho
+      → A justiça civil exige verdade
+
+[B']  · Libertação no sétimo ano — a terra
+      → A justiça ecológica reflete o Êxodo
+
+[A']  · Proibição de idolatria — pacto com povos
+      → A adoração exclusiva guarda a fronteira
+
+EIXO CRISTOLÓGICO
+Tg 1:27: "religião pura é visitar órfãos e viúvas" — em Cristo, o coração da lei se revela no cuidado dos vulneráveis.`;
+
+  if (d.dia === 119) return `PARA PREGAR · Êxodo 24:1–18
+
+BIG IDEA
+"O sangue da aliança sela a relação entre o Deus santo e o povo escolhido."
+
+MOVIMENTOS DO TEXTO
+[A]   · "Tu e Arão, Nadabe, Abiú e setenta dos anciãos"
+      → A representação do povo sobe ao monte
+
+[B]   · "Tomou o livro da aliança e o leu em voz alta"
+      → A palavra precede o sangue
+
+[A']  · "Moisés subiu com Arão, Nadabe, Abiú e setenta anciãos"
+      → A representação se renova no banquete
+
+[B']  · "As tábuas de pedra nas quais escrevi os mandamentos"
+      → A palavra é selada em pedra
+
+EIXO CRISTOLÓGICO
+Mt 26:28: "este é o meu sangue, o sangue da nova aliança" — em Cristo, o sangue do Sinai encontra seu cumprimento na cruz.`;
+
+  if (d.dia === 120) return `PARA PREGAR · Êxodo 25:1–31:11
+
+BIG IDEA
+"Deus prescreve onde quer habitar para que o povo o tenha no centro."
+
+MOVIMENTOS DO TEXTO
+[A]   · "Eles me construirão um santuário e habitarei no meio deles"
+      → A iniciativa da habitação é divina
+
+[B]   · Construção do Tabernáculo e seus pertences
+      → A obra detalhada honra o que Deus mostrou
+
+[C]   · "Será estatuto perpétuo em suas gerações"
+      → O culto se transmite no tempo
+
+[D]   · "Para que não incorram em culpa e morram"
+      → A santidade do sacerdócio protege a vida
+
+[E]   · Purificação do altar pela expiação
+      → O sangue purifica o lugar do encontro
+
+◉ [X]   · "HABITAREI NO MEIO DOS ISRAELITAS E SEREI O SEU DEUS"
+      → No centro de toda construção está a comunhão divina
+
+[E']  · Arão faz o rito anual de expiação
+      → O sangue é repetido para selar a habitação
+
+[D']  · "Para que não haja praga ao recensear"
+      → A santidade protege o povo
+
+[C']  · "Será estatuto perpétuo em suas gerações"
+      → O culto se transmite no tempo
+
+[B']  · Consagração do Tabernáculo e seus pertences
+      → A obra é dedicada ao Senhor
+
+[A']  · "Tudo isso eles construirão como te ordenei"
+      → A iniciativa divina enquadra a obra humana
+
+EIXO CRISTOLÓGICO
+Jo 1:14: "o Verbo se fez carne e habitou entre nós" — em Cristo, o tabernáculo se torna pessoa que habita conosco.`;
+
+  if (d.dia === 121) return `PARA PREGAR · Êxodo 31:12–18
+
+BIG IDEA
+"O sábado é o sinal eterno entre Deus e seu povo no meio das obras."
+
+MOVIMENTOS DO TEXTO
+[A]   · "Esse será o sinal entre vós e eu em todas as gerações"
+      → O sábado é marca pactual
+
+[B]   · "Será extirpado do seu povo quem o profanar"
+      → A santidade do sinal exige obediência
+
+◉ [X]   · "O SÉTIMO DIA É SÁBADO DE DESCANSO COMPLETO, CONSAGRADO AO SENHOR"
+      → No centro está o descanso como adoração
+
+[B']  · "Todo aquele que fizer trabalho no sábado será morto"
+      → A santidade do sinal é reforçada
+
+[A']  · "Entre mim e os israelitas será para sempre um sinal"
+      → O sábado é selado como aliança permanente
+
+EIXO CRISTOLÓGICO
+Hb 4:9-10: "resta ainda um repouso para o povo de Deus" — em Cristo, o sábado encontra cumprimento no descanso da obra acabada.`;
+
+  if (d.dia === 122) return `PARA PREGAR · Êxodo 32:1–33:6
+
+BIG IDEA
+"A idolatria do povo é encontrada pela intercessão do mediador."
+
+MOVIMENTOS DO TEXTO
+[A]   · "Tirai os brincos de ouro" — o bezerro fabricado
+      → O ouro do povo se torna ídolo
+
+[B]   · "Moisés suplicou ao SENHOR" pela vida do povo
+      → O mediador intercede contra a ira
+
+[C]   · "Parece um barulho de batalha no acampamento"
+      → A descida do mediador encontra o pecado
+
+◉ [X]   · DESTRUIÇÃO DO BEZERRO DE OURO — O ÍDOLO REDUZIDO A PÓ
+      → A santidade exige eliminação do ídolo
+
+[C']  · "Caíram três mil pessoas naquele dia"
+      → O juízo atravessa o acampamento
+
+[B']  · Moisés deseja fazer expiação pelo pecado
+      → O mediador oferece a si mesmo
+
+[A']  · "Tirai os vossos enfeites" — luto da aliança quebrada
+      → O ouro do povo agora é despojado
+
+EIXO CRISTOLÓGICO
+Rm 5:8: "Cristo morreu por nós, sendo nós ainda pecadores" — em Cristo, a intercessão de Moisés encontra seu cumprimento sacrificial.`;
+
+  if (d.dia === 123) return `PARA PREGAR · Êxodo 33:7–11
+
+BIG IDEA
+"O mediador entra na nuvem onde o Senhor fala face a face."
+
+MOVIMENTOS DO TEXTO
+[A]   · "A tenda do encontro fora do acampamento"
+      → A santidade exige distância simbólica
+
+[B]   · "Todo o povo se levantava à entrada das tendas"
+      → A reverência do povo acompanha a entrada do mediador
+
+◉ [X]   · "O SENHOR FALAVA COM MOISÉS"
+      → No centro está a comunhão entre Deus e o mediador
+
+[B']  · "Todo o povo se prostrava à entrada das tendas"
+      → A reverência se converte em adoração
+
+[A']  · "Moisés voltava ao acampamento"
+      → O mediador retorna para servir o povo
+
+EIXO CRISTOLÓGICO
+Jo 1:18: "o Filho unigênito que está no seio do Pai, esse o deu a conhecer" — em Cristo, a face a face de Moisés torna-se revelação do Pai.`;
+
+  if (d.dia === 124) return `PARA PREGAR · Êxodo 33:12–17
+
+BIG IDEA
+"O que distingue o povo de Deus é a presença de Deus indo com ele."
+
+MOVIMENTOS DO TEXTO
+[A]   · Desejo de Moisés: "Mostra-me o teu caminho"
+      → A intimidade busca conhecimento
+
+[B]   · "Minha presença irá contigo e te darei descanso"
+      → A aceitação divina sela a comunhão
+
+[A']  · "Se a tua presença não for, não nos faças subir"
+      → O mediador prefere a presença à promessa
+
+[B']  · "Farei também isto que disseste"
+      → A aceitação divina se renova
+
+EIXO CRISTOLÓGICO
+Mt 28:20: "eu estou convosco todos os dias" — em Cristo, a presença que ia com Israel agora vai com a Igreja.`;
+
+  if (d.dia === 125) return `PARA PREGAR · Êxodo 33:18–23
+
+BIG IDEA
+"Deus mostra a glória cobrindo o profeta na fenda da rocha."
+
+MOVIMENTOS DO TEXTO
+[A]   · "Rogo-te que me mostres a tua glória"
+      → A petição extrema busca a face
+
+[B]   · "Meu rosto não podes ver, porque nenhum homem verá e viverá"
+      → A santidade protege da morte
+
+[A']  · "A glória passou — eu te porei na fenda da rocha"
+      → A glória passa pelo profeta abrigado
+
+[B']  · "Verás minhas costas; mas meu rosto não será visto"
+      → A revelação é parcial e graciosa
+
+EIXO CRISTOLÓGICO
+2Co 4:6: "Deus... resplandeceu... para iluminação do conhecimento da glória de Deus, na face de Cristo" — em Cristo, a face oculta a Moisés é revelada.`;
+
+  if (d.dia === 126) return `PARA PREGAR · Êxodo 34:1–28
+
+BIG IDEA
+"A aliança quebrada é renovada pela misericórdia daquele que se nomeia."
+
+MOVIMENTOS DO TEXTO
+[P]   · "Escreverei nas tábuas as palavras das primeiras que quebraste"
+      → A renovação começa com palavra reescrita
+
+[A]   · "Não adorareis nenhum outro deus"
+      → A exclusividade é o pilar da renovação
+
+[B]   · "Guardarás a festa dos Pães Ázimos"
+      → A liturgia recorda o Êxodo
+
+[C]   · "Comerás pães ázimos"
+      → A repetição enraíza a memória
+
+[D]   · "O primogênito entre teus filhos resgatarás"
+      → A consagração do primogênito permanece
+
+◉ [X]   · "NINGUÉM SE APRESENTARÁ DIANTE DE MIM DE MÃOS VAZIAS"
+      → No centro da aliança renovada está a oferta sincera
+
+[A']  · "No sétimo dia descansarás"
+      → O sábado retoma o ritmo
+
+[B']  · "Guardarás a festa das Semanas"
+      → A liturgia se amplia em festas
+
+[C']  · "A festa da colheita dos frutos no fim do ano"
+      → A repetição se estende ao calendário inteiro
+
+[D']  · "Três vezes por ano todos os homens comparecerão"
+      → A consagração se torna peregrinação
+
+[P']  · "Escreveu nas tábuas as palavras da aliança, os dez mandamentos"
+      → A renovação se sela em pedra
+
+EIXO CRISTOLÓGICO
+2Co 3:6: "ministros de uma nova aliança... do espírito" — em Cristo, a aliança renovada por Moisés é definitivamente cumprida.`;
+
+  if (d.dia === 127) return `PARA PREGAR · Êxodo 34:29–35
+
+BIG IDEA
+"Quem está com Deus carrega no rosto o reflexo da glória vista."
+
+MOVIMENTOS DO TEXTO
+[A]   · "A pele do seu rosto estava resplandecente"
+      → A comunhão com Deus marca o exterior
+
+[B]   · "Transmitiu tudo o que o SENHOR lhe disse"
+      → A revelação é entregue ao povo
+
+[A']  · "A pele do rosto de Moisés estava resplandecente"
+      → O sinal exterior persiste como testemunho
+
+EIXO CRISTOLÓGICO
+2Co 3:18: "transformados de glória em glória" — em Cristo, o resplendor de Moisés é prometido a todo crente.`;
+
+  if (d.dia === 128) return `PARA PREGAR · Êxodo 35:1–39:43
+
+BIG IDEA
+"O povo inteiro contribui com dons e habilidades para fazer habitação a Deus."
+
+MOVIMENTOS DO TEXTO
+[A]   · "Em seis dias se poderá trabalhar"
+      → O ritmo da obra honra o sábado
+
+[B]   · Preparativos para a construção do Tabernáculo
+      → A obediência começa com ordem
+
+[C]   · Ofertas voluntárias de todo o Israel
+      → A generosidade é resposta da aliança
+
+[D]   · Bezalel e Oholiabe — habilitados pelo Espírito
+      → Os dons artísticos são da parte de Deus
+
+[E]   · Confecção das cortinas do Tabernáculo
+      → A beleza enquadra o sagrado
+
+[F]   · A arca com quatro argolas de ouro
+      → O trono de Deus é construído
+
+[G]   · A mesa coberta de ouro puro
+      → A presença na mesa é instituída
+
+◉ [H]   · CONFECÇÃO DO CANDELABRO — A LUZ NO LUGAR SANTO
+      → No centro está a luz que ilumina o lugar de Deus
+
+[G']  · O altar do incenso coberto de ouro puro
+      → A oração sobe como incenso
+
+[F']  · O altar de bronze com quatro argolas
+      → O sacrifício é construído
+
+[E']  · Confecção das cortinas do átrio
+      → A beleza se estende ao acesso
+
+[D']  · Bezalel e Oholiabe registrados nas contas
+      → A administração honra os habilitados
+
+[C']  · Pedras memoriais dos filhos de Israel
+      → O povo é levado ao memorial
+
+[B']  · A obra é concluída
+      → A obediência colhe seu fim
+
+[A']  · "Os israelitas executaram tudo como o SENHOR ordenara"
+      → A obra fiel encerra o ciclo
+
+EIXO CRISTOLÓGICO
+1Pe 4:10: "cada um administre aos outros o dom como recebeu" — em Cristo, os dons do Espírito constroem a casa viva de Deus.`;
+
+  if (d.dia === 129) return `PARA PREGAR · Êxodo 40:1–33
+
+BIG IDEA
+"Quando o povo obedece a tudo, Deus está pronto para vir habitar."
+
+MOVIMENTOS DO TEXTO
+[A]   · "Levantarás a Morada da tenda do encontro"
+      → A ordem inicial enquadra o ato
+
+[B]   · A arca, o altar e os demais pertences
+      → Os elementos são posicionados
+
+[C]   · Consagração dos elementos
+      → A santidade prepara o uso
+
+[D]   · "Moisés fez exatamente como o SENHOR ordenara"
+      → A obediência é perfeita
+
+[A']  · "A Morada foi erguida"
+      → A ordem inicial se cumpre
+
+[B']  · A arca, o altar e os demais pertences
+      → Os elementos são posicionados
+
+[C']  · Consagração dos elementos
+      → A santidade prepara o uso
+
+[D']  · "Moisés concluiu toda a obra"
+      → A obediência é completa
+
+EIXO CRISTOLÓGICO
+Hb 8:5: "que servem de figura e sombra das coisas celestiais" — em Cristo, a obra concluída por Moisés aponta para o santuário verdadeiro.`;
+
+  if (d.dia === 130) return `PARA PREGAR · Êxodo 40:34–38
+
+BIG IDEA
+"A glória que enche o tabernáculo guia o povo em cada etapa da jornada."
+
+MOVIMENTOS DO TEXTO
+[A]   · "A nuvem cobriu a tenda do encontro e a glória encheu a Morada"
+      → A obediência é coroada pela presença
+
+[B]   · "Os israelitas partiam quando a nuvem se levantava"
+      → A jornada é dirigida pela presença
+
+[A']  · "Se a nuvem não se erguia, não partiam"
+      → A presença determina o repouso
+
+[B']  · "A nuvem... em todas as etapas de sua jornada"
+      → A presença acompanha todo o caminho
+
+EIXO CRISTOLÓGICO
+Ap 21:3: "eis o tabernáculo de Deus com os homens... habitará com eles" — em Cristo, a glória que encheu o Sinai será a habitação eterna do povo.`;
+
   return null;
 }
 
