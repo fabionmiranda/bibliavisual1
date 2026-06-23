@@ -9511,7 +9511,10 @@ function DiaModal({ d, onClose, innerRef }: { d: DiaDevocional; onClose: () => v
           ))}
         </div>
 
-        {/* PARA PREGAR — novo bloco condicional */}
+        {/* Quiasma */}
+        <QuiasmaSection d={d} pericopeIdx={pericopeIdx} />
+
+        {/* PARA PREGAR — aparece após a estrutura quiástica */}
         {gerarParaPregar(d) !== null && (
           <div style={{
             display: 'flex', gap: 12,
@@ -9519,7 +9522,7 @@ function DiaModal({ d, onClose, innerRef }: { d: DiaDevocional; onClose: () => v
             border: '1px solid rgba(255,215,0,0.22)',
             borderRadius: 14,
             padding: 'clamp(12px,3vw,18px) clamp(14px,3.5vw,20px)',
-            marginBottom: 4,
+            marginTop: 10,
           }}>
             <div style={{ color: 'rgba(255,215,0,0.9)', marginTop: 2, flexShrink: 0 }}>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
@@ -9530,9 +9533,6 @@ function DiaModal({ d, onClose, innerRef }: { d: DiaDevocional; onClose: () => v
             </div>
           </div>
         )}
-
-        {/* Quiasma */}
-        <QuiasmaSection d={d} pericopeIdx={pericopeIdx} />
 
         {/* Progresso */}
         <div style={{ marginTop: 24 }}>
