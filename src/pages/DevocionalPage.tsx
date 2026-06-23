@@ -7108,6 +7108,607 @@ MOVIMENTOS DO TEXTO
 EIXO CRISTOLÓGICO
 Ap 21:3: "eis o tabernáculo de Deus com os homens... habitará com eles" — em Cristo, a glória que encheu o Sinai será a habitação eterna do povo.`;
 
+  // ── LEVÍTICO ─────────────────────────────────────────────────────────────
+  if (d.dia === 131) return `PARA PREGAR · Levítico 1:1–3:17
+
+BIG IDEA
+"O sal da aliança tempera toda oferta que sobe a Deus."
+
+MOVIMENTOS DO TEXTO
+[A]   · Deus chama Moisés da tenda — o culto nasce da voz divina
+      → Só adora verdadeiramente quem foi primeiro convocado por Deus
+
+[B]   · Holocaustos: boi, ovelha e ave consumidos por inteiro
+      → Adoração integral exige entrega que não retém porção para si
+
+◉ [X]   · A OFERTA DE MANJARES É SELADA COM O SAL DA ALIANÇA
+      → Toda dádiva nossa só é aceita porque traz o sabor da aliança de Deus
+
+[B']  · Ofertas de paz: comunhão entre Deus, sacerdote e povo
+      → A entrega total prepara a mesa onde Deus partilha a vida conosco
+
+[A']  · Lei perpétua: não comer gordura nem sangue — limites permanentes
+      → A adoração que começa pela voz de Deus termina nos limites de Deus
+
+EIXO CRISTOLÓGICO
+Hb 10:10: "fomos santificados mediante a oferta do corpo de Jesus Cristo" — Cristo é o holocausto perfeito que cumpre todas as ofertas.`;
+
+  if (d.dia === 132) return `PARA PREGAR · Levítico 4:1–5:13
+
+BIG IDEA
+"Mesmo a comunidade inteira encontra expiação no sangue providenciado."
+
+MOVIMENTOS DO TEXTO
+[A]   · Pecado por inadvertência também precisa de expiação
+      → A ignorância não cancela a culpa, mas a graça providencia remédio
+
+[B]   · Sacerdote ungido peca e contamina o povo
+      → Quem lidera responde primeiro diante do altar santo
+
+◉ [X]   · TODA A CONGREGAÇÃO PECA — E TODA ELA É EXPIADA POR SANGUE
+      → Não há pecado coletivo tão grande que o sangue da aliança não cubra
+
+[B']  · Líder e israelita comum recebem oferta proporcional
+      → A graça desce até o pobre com a mesma eficácia da grande oferta
+
+[A']  · Casos especiais — palavra omitida, voto esquecido — também expiados
+      → Nenhuma sombra de culpa fica fora do alcance do altar
+
+EIXO CRISTOLÓGICO
+1Jo 2:2: "ele é a propiciação pelos nossos pecados" — Cristo é a expiação que cobre o sacerdote, o líder e o povo inteiro.`;
+
+  if (d.dia === 133) return `PARA PREGAR · Levítico 5:14–26
+
+BIG IDEA
+"O pecado contra o próximo é primeiro quebra de aliança com Deus."
+
+MOVIMENTOS DO TEXTO
+[A]   · Restituir o que foi violado das coisas sagradas
+      → A santidade ferida exige reparação concreta, não apenas remorso
+
+[B]   · Há culpa mesmo quando não se sabia da transgressão
+      → A consciência não é a medida final do pecado — a lei de Deus é
+
+◉ [X]   · FRAUDAR O PRÓXIMO É QUEBRAR A ALIANÇA COM O SENHOR
+      → Toda injustiça horizontal sobe primeiro como ofensa vertical
+
+[B']  · Devolver o que foi tomado e acrescentar um quinto
+      → Arrependimento verdadeiro restitui com generosidade, não com cálculo
+
+[A']  · A oferta pelo delito sela a expiação diante do Senhor
+      → A reconciliação com o irmão se completa no altar do Deus santo
+
+EIXO CRISTOLÓGICO
+Mt 5:23–24: "deixa ali diante do altar a tua oferta... vai reconciliar-te" — Cristo une o altar e o próximo num só caminho de paz.`;
+
+  if (d.dia === 134) return `PARA PREGAR · Levítico 6:1–7:10
+
+BIG IDEA
+"O sacerdote oferece a si mesmo todos os dias, em silêncio."
+
+MOVIMENTOS DO TEXTO
+[A]   · O fogo do altar nunca se apaga — adoração contínua
+      → A fé não é evento isolado, é chama mantida pela vigilância sacerdotal
+
+[B]   · Lei da oferta de manjares — porção do sacerdote
+      → O ministro come do altar porque vive do que dedica a Deus
+
+◉ [X]   · O SACERDOTE UNGIDO OFERECE DIARIAMENTE POR SI MESMO
+      → Quem ministra a Deus deve primeiro entregar-se inteiro a Deus
+
+[B']  · Lei da oferta pelo pecado — santidade contagiosa
+      → O que toca o santo torna-se santo: a graça transforma o que alcança
+
+[A']  · Lei da oferta pelo delito e porções dos sacerdotes
+      → A ordem perpétua sustenta tanto o altar quanto quem nele serve
+
+EIXO CRISTOLÓGICO
+Hb 7:27: "ele o fez uma vez por todas, quando a si mesmo se ofereceu" — Cristo é o Sumo Sacerdote que ofereceu-se de uma vez por todas.`;
+
+  if (d.dia === 135) return `PARA PREGAR · Levítico 7:11–38
+
+BIG IDEA
+"A vida pertence a Deus — por isso o sangue é intocável."
+
+MOVIMENTOS DO TEXTO
+[A]   · Oferta de paz por ação de graças — comunhão alegre
+      → A gratidão é forma de culto que aproxima o adorador do altar
+
+[B]   · Votos e ofertas voluntárias têm prazo e ordem
+      → A liberdade da oferta espontânea convive com a disciplina da lei
+
+◉ [X]   · NÃO COMERÁS GORDURA NEM SANGUE — A VIDA É DO SENHOR
+      → A reverência diante da vida começa quando reconhecemos seu Dono
+
+[B']  · A porção do sacerdote nas ofertas de paz — peito e coxa
+      → Quem serve ao altar partilha a mesa do altar com o povo
+
+[A']  · Sumário: todas as leis dos sacrifícios dadas no Sinai
+      → A adoração organizada é a memória viva da revelação no monte
+
+EIXO CRISTOLÓGICO
+Hb 13:15: "ofereçamos a Deus, por meio dele, sacrifício de louvor" — em Cristo a oferta de paz se eterniza como louvor contínuo.`;
+
+  if (d.dia === 136) return `PARA PREGAR · Levítico 8:1–36
+
+BIG IDEA
+"A unção precede a oferta — Deus consagra antes de comissionar."
+
+MOVIMENTOS DO TEXTO
+[A]   · Deus ordena a Moisés reunir a congregação para a consagração
+      → O ministério legítimo começa por convocação divina pública
+
+[B]   · Moisés veste Arão com as vestes sagradas
+      → Servir a Deus exige vestir-se daquilo que Ele mesmo providencia
+
+◉ [X]   · O TABERNÁCULO E ARÃO SÃO UNGIDOS — DEUS SEPARA PARA SI
+      → Antes de ofertar, é preciso ser separado pelo óleo da escolha divina
+
+[B']  · Sacrifícios de ordenação — sangue e óleo aplicados sobre Arão
+      → Sangue derramado e óleo derramado preparam o sacerdote para servir
+
+[A']  · Arão e seus filhos permanecem sete dias na entrada da tenda
+      → A consagração se completa na espera obediente à porta da presença
+
+EIXO CRISTOLÓGICO
+Hb 5:4–5: "ninguém toma para si esta honra... assim também Cristo" — Cristo é o Ungido por excelência, sacerdote consagrado pelo Pai.`;
+
+  if (d.dia === 137) return `PARA PREGAR · Levítico 9:1–24
+
+BIG IDEA
+"O sacerdote ofereceu pelo povo — e o céu respondeu com fogo."
+
+MOVIMENTOS DO TEXTO
+[A]   · Moisés instrui Arão no oitavo dia — começa o ministério
+      → Toda longa vocação começa por um primeiro dia de obediência
+
+[B]   · Arão oferece primeiro pelo seu próprio pecado
+      → Quem media para outros precisa estar reconciliado consigo mesmo
+
+◉ [X]   · ARÃO OFERECE PELO POVO — O SACERDÓCIO CUMPRE SUA MISSÃO
+      → A razão de existir do sacerdote é levar o povo ao Deus santo
+
+[B']  · Oferta de paz — comunhão restaurada entre Deus e a congregação
+      → Onde houve expiação, há banquete; onde há perdão, há comunhão
+
+[A']  · A glória do Senhor aparece e fogo desce do céu
+      → Quando o altar é fiel, o céu responde com sua aprovação ardente
+
+EIXO CRISTOLÓGICO
+Hb 9:24: "Cristo... entrou no próprio céu, para agora comparecer por nós" — Cristo é o Sumo Sacerdote cuja oferta atrai o fogo do Espírito.`;
+
+  if (d.dia === 138) return `PARA PREGAR · Levítico 10:1–20
+
+BIG IDEA
+"Servir o Deus santo exige mente sóbria, não fervor improvisado."
+
+MOVIMENTOS DO TEXTO
+[A]   · Fogo estranho — Nadabe e Abiú morrem diante do Senhor
+      → A presunção no santuário converte o altar em sentença
+
+[B]   · Moisés manda remover os corpos sem interromper o culto
+      → A santidade de Deus não é suspensa pelas tragédias humanas
+
+◉ [X]   · O SACERDOTE NÃO BEBE VINHO PARA DISCERNIR O SANTO DO COMUM
+      → Servir a Deus exige lucidez para distinguir o sagrado do profano
+
+[B']  · Instrução sobre as porções sacerdotais — ordem permanece
+      → Mesmo no luto, a ordem da casa de Deus segue inalterada
+
+[A']  · Moisés questiona o rito — Arão responde com integridade
+      → A obediência não é mecânica; pondera diante da dor sem violar o santo
+
+EIXO CRISTOLÓGICO
+1Ts 5:6: "não durmamos como os demais; pelo contrário, vigiemos e sejamos sóbrios" — em Cristo somos sacerdotes chamados à sobriedade santa.`;
+
+  if (d.dia === 139) return `PARA PREGAR · Levítico 11:1–47
+
+BIG IDEA
+"O Deus santo molda até o paladar de seu povo separado."
+
+MOVIMENTOS DO TEXTO
+[A]   · Animais terrestres: critérios de casco e ruminação
+      → Deus santifica o cotidiano definindo até o alimento da mesa
+
+[B]   · Animais aquáticos: nadadeiras e escamas
+      → A santidade alcança cada esfera da criação onde o povo vive
+
+◉ [X]   · DEUS DISTINGUE O PURO DO IMPURO — A SANTIDADE É DISCERNIMENTO
+      → Ser santo é aprender a discernir o que separa de Deus do que une
+
+[B']  · Contaminação por carcaças — cuidado com a morte
+      → Quem é do Deus vivo guarda distância daquilo que cheira a morte
+
+[A']  · Sumário: sede santos porque Eu sou santo
+      → Toda a lei alimentar aponta para o caráter do Deus que chama
+
+EIXO CRISTOLÓGICO
+1Pe 1:15–16: "tornai-vos santos... porque escrito está: Sereis santos, porque eu sou santo" — Cristo cumpre a santidade ao tornar puro o coração.`;
+
+  if (d.dia === 140) return `PARA PREGAR · Levítico 12:1–8
+
+BIG IDEA
+"Mesmo a vida que nasce precisa do sangue que purifica."
+
+MOVIMENTOS DO TEXTO
+[A]   · A mãe é declarada impura após o nascimento
+      → A vida humana entra no mundo já necessitando de graça
+
+[B]   · Circuncisão no oitavo dia — sinal da aliança
+      → A criança é marcada pela aliança antes de poder escolher
+
+◉ [X]   · PERÍODO DE SEPARAÇÃO — SANGUE DE PURIFICAÇÃO
+      → Toda santificação humana passa pelo sangue providenciado por Deus
+
+[B']  · Período dobrado para o nascimento de filha
+      → A lei distingue sem desvalorizar — cada vida tem seu tempo diante de Deus
+
+[A']  · Holocausto e oferta pelo pecado completam a purificação
+      → Mesmo a alegria do nascimento culmina no altar do Senhor
+
+EIXO CRISTOLÓGICO
+Lc 2:22–24: "cumpridos os dias da purificação... apresentá-lo ao Senhor" — Maria cumpre Levítico 12 trazendo o próprio purificador ao templo.`;
+
+  if (d.dia === 141) return `PARA PREGAR · Levítico 13:1–14:57
+
+BIG IDEA
+"A impureza alcança até o tecido — e a graça alcança até as paredes."
+
+MOVIMENTOS DO TEXTO
+[A]   · Diagnóstico da lepra na pele pelo sacerdote
+      → A doença espiritual exige olhar treinado para ser nomeada
+
+[B]   · Casos variados de lepra examinados com paciência
+      → Deus não trata todos os males com pressa — discerne cada caso
+
+◉ [X]   · A LEPRA ENTRA NAS ROUPAS — A CONTAMINAÇÃO ATRAVESSA O MATERIAL
+      → O pecado contamina tudo o que vestimos, fazemos e habitamos
+
+[B']  · Rito de purificação do leproso — sangue, água e óleo
+      → A restauração do impuro envolve sacrifício e símbolo do Espírito
+
+[A']  · Lepra nas casas — diagnóstico e purificação dos lares
+      → A graça desce até as paredes, restaurando até onde moramos
+
+EIXO CRISTOLÓGICO
+Mt 8:3: "estendendo Jesus a mão, tocou-o, dizendo: Quero, fica limpo" — Cristo toca o leproso e cumpre o rito sem se contaminar.`;
+
+  if (d.dia === 142) return `PARA PREGAR · Levítico 15:1–33
+
+BIG IDEA
+"A intimidade humana é território onde a santidade também governa."
+
+MOVIMENTOS DO TEXTO
+[A]   · Fluxo do homem — impureza que se transmite
+      → O corpo conta uma história espiritual que a lei reconhece
+
+[B]   · Purificação do homem após a cura — sacrifícios devidos
+      → A restauração da saúde precisa do reconhecimento diante de Deus
+
+◉ [X]   · A INTIMIDADE CONJUGAL TAMBÉM PASSA PELA LEI DA PUREZA
+      → Nada no humano fica fora do alcance da santidade que Deus reivindica
+
+[B']  · Fluxo da mulher — impureza e purificação
+      → A lei trata homem e mulher com idêntica dignidade diante do santo
+
+[A']  · Sumário: guardar Israel das impurezas para não morrer
+      → A santidade do santuário depende da santidade do cotidiano
+
+EIXO CRISTOLÓGICO
+Mc 5:29: "imediatamente, se lhe estancou a hemorragia" — Cristo cura a mulher do fluxo e transfere a santidade ao toque da fé.`;
+
+  if (d.dia === 143) return `PARA PREGAR · Levítico 16:1–34
+
+BIG IDEA
+"Uma vez por ano o sangue entrou — uma vez por todas Cristo entrou."
+
+MOVIMENTOS DO TEXTO
+[A]   · Advertência após a morte dos filhos de Arão
+      → A santidade de Deus se aproxima sob condições estritas
+
+[B]   · Preparativos: vestes especiais e dois bodes escolhidos
+      → A expiação requer ordem cuidadosa — não há improviso no santo
+
+◉ [X]   · ARÃO ENTRA NO SANTO DOS SANTOS COM SANGUE PELO POVO
+      → A entrada no lugar santíssimo só se faz pelo sangue da expiação
+
+[B']  · O bode expiatório carrega os pecados para o deserto
+      → O pecado precisa ser confessado, transferido e enviado para longe
+
+[A']  · Lei perpétua: jejum e expiação uma vez por ano
+      → A memória anual da graça molda a identidade do povo de Deus
+
+EIXO CRISTOLÓGICO
+Hb 9:12: "não por meio de sangue de bodes... mas pelo seu próprio sangue, entrou no Santo dos Santos, uma vez por todas" — Cristo cumpre o Yom Kippur.`;
+
+  if (d.dia === 144) return `PARA PREGAR · Levítico 17:1–16
+
+BIG IDEA
+"A vida está no sangue — por isso só o altar pode recebê-lo."
+
+MOVIMENTOS DO TEXTO
+[A]   · Todo animal deve ser trazido à entrada da tenda
+      → O culto centralizado protege o povo da idolatria dispersa
+
+[B]   · Estrangeiros também devem oferecer ao Senhor
+      → A santidade do altar alcança quem se aproxima de fora
+
+◉ [X]   · NÃO COMERÁS SANGUE — A VIDA NELE FAZ EXPIAÇÃO
+      → O sangue é dom de Deus para a expiação, não consumo comum
+
+[B']  · A caça abatida: cobrir o sangue com terra
+      → A reverência diante do sangue molda até o gesto do caçador
+
+[A']  · Purificação de quem comer animal morto
+      → Mesmo o descuido inadvertido com a vida exige restauração
+
+EIXO CRISTOLÓGICO
+Hb 9:22: "sem derramamento de sangue, não há remissão" — Cristo derrama o sangue verdadeiro que faz expiação eterna.`;
+
+  if (d.dia === 145) return `PARA PREGAR · Levítico 18:1–20:27
+
+BIG IDEA
+"Sede santos porque Eu sou santo — o caráter de Deus molda a ética do povo."
+
+MOVIMENTOS DO TEXTO
+[A]   · Sede santos — não façais como Egito nem como Canaã
+      → A santidade nasce do contraste com as culturas que oprimem
+
+[B]   · Proibições sexuais — relações ilícitas reveladas
+      → A santidade alcança o corpo e o que com ele se faz
+
+◉ [X]   · SEDE SANTOS PORQUE EU SOU O SENHOR VOSSO DEUS
+      → A ética do povo de Deus reflete diretamente o caráter de Deus
+
+[B']  · Penas de morte por violações sexuais e idolatria
+      → A santidade real cobra um preço real quando é desprezada
+
+[A']  · Guardai os meus estatutos — separados das nações
+      → O povo separado é o que reflete a santidade do Deus que o chamou
+
+EIXO CRISTOLÓGICO
+1Pe 1:15–16: "como é santo aquele que vos chamou, tornai-vos santos também vós" — em Cristo a santidade interior cumpre a lei externa.`;
+
+  if (d.dia === 146) return `PARA PREGAR · Levítico 21:1–15
+
+BIG IDEA
+"Quem ministra ao Santo carrega a santidade até em sua casa."
+
+MOVIMENTOS DO TEXTO
+[A]   · Contato com mortos proibido ao sacerdote comum
+      → Quem serve ao Deus vivo guarda distância dos lugares de morte
+
+[B]   · Proibição de mutilação — santidade do nome de Deus
+      → O corpo do sacerdote testemunha o nome a quem ele serve
+
+◉ [X]   · A FAMÍLIA DO SACERDOTE TAMBÉM REFLETE A SANTIDADE DO ALTAR
+      → O ministério santo se estende ao lar de quem ministra
+
+[B']  · O sumo sacerdote não pode tocar nem um morto
+      → Quanto maior o ofício, mais rigorosa a separação do que profana
+
+[A']  · O sumo sacerdote só pode casar com virgem do seu povo
+      → A vocação suprema regula até as alianças mais íntimas
+
+EIXO CRISTOLÓGICO
+Hb 7:26: "santo, inculpável, sem mácula, separado dos pecadores" — Cristo é o Sumo Sacerdote que cumpre toda santidade exigida.`;
+
+  if (d.dia === 147) return `PARA PREGAR · Levítico 21:16–24
+
+BIG IDEA
+"O altar exige um sacerdote inteiro — e Cristo é o único Inteiro."
+
+MOVIMENTOS DO TEXTO
+[A]   · Nenhum homem com defeito pode oferecer o pão de Deus
+      → A oferenda ao altar exige uma imagem que reflete a perfeição divina
+
+[B]   · Lista de defeitos físicos que desqualificam
+      → A lei é precisa para anunciar a impossibilidade humana
+
+◉ [X]   · NÃO PODE APROXIMAR-SE DO ALTAR PARA OFERECER
+      → A barreira sacerdotal antecipa nossa incapacidade diante do santo
+
+[B']  · Pode comer o pão sagrado, mas não passar além do véu
+      → A graça acolhe na mesa o que a lei impede no santuário
+
+[A']  · Moisés transmite estas leis a Arão e seus filhos
+      → A ordem sacerdotal é guardada por revelação, não por escolha humana
+
+EIXO CRISTOLÓGICO
+Hb 7:26–27: "tal era o sumo sacerdote que nos convinha... santo, inculpável" — Cristo é o sacerdote íntegro que pode aproximar-se do altar.`;
+
+  if (d.dia === 148) return `PARA PREGAR · Levítico 22:1–16
+
+BIG IDEA
+"Guardar o santo é guardar a própria vida diante de Deus."
+
+MOVIMENTOS DO TEXTO
+[A]   · Sacerdote impuro não pode tocar as coisas sagradas
+      → O ministério não dispensa o ministro da purificação pessoal
+
+[B]   · Causas de impureza que impedem o acesso ao santo
+      → Há barreiras reais entre o pecador e o que pertence a Deus
+
+◉ [X]   · GUARDAR O ENCARGO DO SENHOR PARA NÃO MORRER
+      → Servir a Deus é tarefa onde a negligência custa a própria vida
+
+[B']  · Quem pode comer as ofertas santas: família do sacerdote
+      → A graça partilhada é regulada — não cabe a qualquer um
+
+[A']  · Estranho que comer por engano deve restituir com acréscimo
+      → Mesmo o erro inocente diante do santo exige reparação
+
+EIXO CRISTOLÓGICO
+Hb 12:28–29: "sirvamos a Deus de modo agradável, com reverência e santo temor" — Cristo abre acesso ao santo, mas não dispensa a reverência.`;
+
+  if (d.dia === 149) return `PARA PREGAR · Levítico 22:17–33
+
+BIG IDEA
+"O Deus que aceita oferta sem defeito é o mesmo que ofereceu o sem defeito."
+
+MOVIMENTOS DO TEXTO
+[A]   · Ofertas voluntárias devem ser sem defeito
+      → O que oferecemos a Deus revela como o avaliamos
+
+[B]   · Animais com defeito não são aceitos no altar
+      → A graça de Deus não justifica a mediocridade do oferecedor
+
+◉ [X]   · O RECÉM-NASCIDO FICA COM A MÃE SETE DIAS — A VIDA RESPEITADA
+      → Mesmo no sacrifício, a vida é tratada com tempo e dignidade
+
+[B']  · Oferta de ação de graças consumida no mesmo dia
+      → A gratidão tem prazo: o que se posterga perde o sentido do louvor
+
+[A']  · Guardai os mandamentos — Eu sou o Senhor que vos santifica
+      → A santificação vem de Deus e exige resposta no oferecer
+
+EIXO CRISTOLÓGICO
+1Pe 1:19: "como de cordeiro sem defeito e sem mácula, o sangue de Cristo" — Cristo é a oferta perfeita que cumpre o critério da aliança.`;
+
+  if (d.dia === 150) return `PARA PREGAR · Levítico 23:1–44
+
+BIG IDEA
+"O tempo do povo é todo escandido pelas trombetas da convocação divina."
+
+MOVIMENTOS DO TEXTO
+[A]   · O sábado semanal — descanso sagrado para o povo
+      → A vida ritmada pelo descanso confessa quem é o Senhor do tempo
+
+[B]   · Páscoa, Pães Asmos e Primícias — festas da primavera
+      → A redenção começa onde a fome do mundo termina
+
+◉ [X]   · FESTA DAS TROMBETAS — DEUS CONVOCA O POVO À ATENÇÃO SANTA
+      → No centro do calendário, Deus chama o povo a despertar
+
+[B']  · Dia da Expiação e Festa dos Tabernáculos — festas do outono
+      → A redenção culmina na habitação de Deus com seu povo
+
+[A']  · Festa dos Tabernáculos: habitai em tendas sete dias
+      → O calendário inteiro caminha rumo à comunhão habitada
+
+EIXO CRISTOLÓGICO
+Cl 2:16–17: "isto tudo é sombra das coisas que haviam de vir; porém o corpo é de Cristo" — em Cristo todas as festas encontram seu cumprimento.`;
+
+  if (d.dia === 151) return `PARA PREGAR · Levítico 24:1–9
+
+BIG IDEA
+"O incenso silencioso é o memorial que sustenta o pão da aliança."
+
+MOVIMENTOS DO TEXTO
+[A]   · Azeite puro para o candelabro arder continuamente
+      → A luz no santuário depende do azeite oferecido pelo povo
+
+[B]   · Doze pães em duas fileiras sobre a mesa pura
+      → As doze tribos estão continuamente diante do rosto de Deus
+
+◉ [X]   · INCENSO PURO COMO MEMORIAL DIANTE DO SENHOR
+      → A oração que sobe como incenso é o memorial que sustenta o povo
+
+[B']  · Os pães renovados todo sábado — aliança eterna
+      → A comunhão com Deus se renova no ritmo do descanso semanal
+
+[A']  · Os pães são de Arão e seus filhos — porção santíssima
+      → O que está diante de Deus alimenta quem serve a Deus
+
+EIXO CRISTOLÓGICO
+Jo 6:35: "eu sou o pão da vida" — Cristo é o pão da proposição diante do Pai que se torna alimento dos seus.`;
+
+  if (d.dia === 152) return `PARA PREGAR · Levítico 24:10–23
+
+BIG IDEA
+"O nome de Deus não é território de palavra leviana — é altar."
+
+MOVIMENTOS DO TEXTO
+[A]   · O filho da israelita blasfema o nome de Deus
+      → A reverência ao nome distingue o povo da aliança das nações
+
+[B]   · Deus ordena a apedrejamento do blasfemador
+      → A santidade do nome exige resposta comunitária
+
+◉ [X]   · QUEM BLASFEMAR O NOME SERÁ MORTO — LEI PARA TODOS
+      → Diante do Deus santo não há nativo nem estrangeiro: há reverência
+
+[B']  · Princípio da igualdade: vida por vida, olho por olho
+      → A justiça que protege o nome também protege o próximo
+
+[A']  · Israel executa o julgamento conforme Deus ordenou
+      → A obediência da comunidade ratifica a santidade do nome
+
+EIXO CRISTOLÓGICO
+Fp 2:9–10: "Deus o exaltou sobreman..., para que ao nome de Jesus se dobre todo joelho" — Cristo é o Nome diante do qual toda blasfêmia se cala.`;
+
+  if (d.dia === 153) return `PARA PREGAR · Levítico 25:1–55
+
+BIG IDEA
+"A terra não é nossa — somos peregrinos no chão do Senhor."
+
+MOVIMENTOS DO TEXTO
+[A]   · Sétimo ano — a terra descansa diante do Senhor
+      → O descanso da terra confessa que ela não pertence ao lavrador
+
+[B]   · O jubileu no quinquagésimo ano — libertação anunciada
+      → A graça organiza a economia com prazos de libertação
+
+◉ [X]   · A TERRA PERTENCE AO SENHOR — TODA REDENÇÃO VEM DELE
+      → A propriedade humana é mordomia provisória, não posse absoluta
+
+[B']  · Redenção de casas, levitas, pobres e escravos
+      → A graça do jubileu desce até o mais oprimido do povo
+
+[A']  · Os filhos de Israel são meus servos — Eu sou o Senhor
+      → A liberdade do povo se enraíza na servidão exclusiva ao Senhor
+
+EIXO CRISTOLÓGICO
+Lc 4:18–19: "apregoar libertação aos cativos... proclamar o ano aceitável do Senhor" — Cristo proclama o jubileu definitivo na sua missão.`;
+
+  if (d.dia === 154) return `PARA PREGAR · Levítico 26:1–46
+
+BIG IDEA
+"A desobediência traz juízo — mas a confissão reabre a aliança."
+
+MOVIMENTOS DO TEXTO
+[A]   · Guardar os mandamentos — não fazer ídolos
+      → A aliança começa pela exclusividade do culto ao Senhor
+
+[B]   · Bênçãos pela obediência — paz, frutos e presença
+      → A obediência abre canais para a fartura prometida
+
+◉ [X]   · A VIRADA — A DESOBEDIÊNCIA TRAZ CASTIGO CRESCENTE
+      → No centro da aliança está a advertência amorosa: pecado tem preço
+
+[B']  · Punições crescentes pela rebeldia obstinada
+      → Deus disciplina por amor, intensificando até que o povo retorne
+
+[A']  · Confissão e restauração — a aliança de Jacó é lembrada
+      → O arrependimento reabre a memória da aliança e da promessa
+
+EIXO CRISTOLÓGICO
+Hb 12:6: "o Senhor corrige a quem ama" — em Cristo a disciplina não é condenação, mas convite à confissão e à restauração.`;
+
+  if (d.dia === 155) return `PARA PREGAR · Levítico 27:1–34
+
+BIG IDEA
+"Toda consagração se mede pela seriedade do que prometemos a Deus."
+
+MOVIMENTOS DO TEXTO
+[A]   · Votos de pessoas — estimativa feita pelo sacerdote
+      → A entrega a Deus é objetiva, não nuvem de sentimentos
+
+[B]   · Animais prometidos ao Senhor — não se trocam
+      → O que se promete a Deus não admite renegociação leviana
+
+◉ [X]   · CONSAGRAÇÃO DE CASAS — RESGATE COM ACRÉSCIMO DE UM QUINTO
+      → Recuperar o que se dedicou a Deus custa mais do que dedicar
+
+[B']  · Consagração de campos regulada pelo jubileu
+      → O tempo de Deus governa também o tempo das promessas humanas
+
+[A']  · Primogênitos, coisas consagradas e dízimos — não se resgatam
+      → O que já é de Deus pela aliança não está em pauta de barganha
+
+EIXO CRISTOLÓGICO
+Rm 12:1: "apresenteis o vosso corpo por sacrifício vivo, santo e agradável a Deus" — em Cristo a consagração se torna culto racional e inteiro.`;
+
   return null;
 }
 
