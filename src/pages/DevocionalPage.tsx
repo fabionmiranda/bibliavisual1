@@ -5825,6 +5825,1228 @@ MOVIMENTOS DO TEXTO
 EIXO CRISTOLÓGICO
 Hb 11:22: "pela fé José, no fim da vida... deu ordens acerca dos seus ossos" — em Cristo, a esperança da redenção atravessa até a tumba.`;
 
+  // ── NÚMEROS ──────────────────────────────────────────────────────────────
+  if (d.dia === 156) return `PARA PREGAR · Números 1:1–47
+
+BIG IDEA
+"Deus conta os seus para enviá-los em ordem ao combate."
+
+MOVIMENTOS DO TEXTO
+[A]   · A ordem do recenseamento parte da tenda do encontro
+      → A missão do povo começa onde Deus fala, não onde o povo decide
+
+[B]   · Os chefes das tribos são nomeados para liderar o registro
+      → Liderança é responsabilidade pública diante do povo de Deus
+
+◉ [C]   · "PRÍNCIPES DE SUAS TRIBOS ANCESTRAIS"
+      → Cada nome conta porque cada vida pertence à história da aliança
+
+[B']  · Os recenseados são apresentados por tribo, ordenadamente
+      → Deus não improvisa: ele ordena seu povo para a peregrinação
+
+[A']  · Os doze príncipes representam Israel diante do SENHOR
+      → Quem é contado por Deus marcha sob sua bandeira para a herança
+
+EIXO CRISTOLÓGICO
+Hb 12:23: "à assembleia dos primogênitos arrolados nos céus" — em Cristo somos nomeados no livro da vida.`;
+
+  if (d.dia === 157) return `PARA PREGAR · Números 1:48–54
+
+BIG IDEA
+"A santidade do tabernáculo exige uma guarda separada por Deus."
+
+MOVIMENTOS DO TEXTO
+[A]   · O SENHOR fala a Moisés ordenando distinção entre os levitas
+      → A palavra de Deus é o fundamento de toda separação santa
+
+[B]   · Os levitas são distinguidos dos demais israelitas para o serviço
+      → Deus chama alguns para guardar o que pertence a todos
+
+◉ [C]   · "TODO LEIGO QUE SE APROXIMAR SERÁ MORTO"
+      → A presença santa não tolera familiaridade casual com o sagrado
+
+[B']  · Os levitas acampam ao redor do tabernáculo como muro vivo
+      → Quem Deus separa torna-se proteção para o povo de Deus
+
+[A']  · Todos os filhos de Israel fazem como o SENHOR ordenou
+      → Obediência ao Deus santo é a única resposta digna da santidade
+
+EIXO CRISTOLÓGICO
+Hb 10:19–22: "temos pleno direito de entrar no Santo dos Santos pelo sangue de Jesus" — em Cristo, o leigo se torna sacerdote.`;
+
+  if (d.dia === 158) return `PARA PREGAR · Números 2:1–34
+
+BIG IDEA
+"Deus posiciona o seu povo ao redor da sua presença manifesta."
+
+MOVIMENTOS DO TEXTO
+[A]   · Cada israelita acampa sob a sua bandeira, em esquadrão
+      → Identidade do crente nasce da posição que recebe de Deus
+
+[B]   · As tribos de Judá, Rúben, Efraim e Dã cercam os quatro lados
+      → Toda a vida do povo se ordena ao redor da glória central
+
+◉ [X]   · OS LEVITAS E A TENDA DO ENCONTRO NO CENTRO DO ACAMPAMENTO
+      → Onde Deus habita é o eixo: o resto do povo orbita sua presença
+
+[B']  · A ordem geográfica antecipa a ordem da marcha
+      → A vida cristã ordenada hoje é treino para a missão de amanhã
+
+[A']  · Eles acampam por esquadrões como o SENHOR ordenou
+      → Obediência transforma um amontoado em exército de Deus
+
+EIXO CRISTOLÓGICO
+Ap 21:3: "o tabernáculo de Deus está com os homens" — em Cristo, a presença central define o lugar de cada um.`;
+
+  if (d.dia === 159) return `PARA PREGAR · Números 3:1–51
+
+BIG IDEA
+"Deus toma os levitas como resgate para que os primogênitos vivam."
+
+MOVIMENTOS DO TEXTO
+[A]   · O sacerdócio de Arão e seus filhos é confirmado por Deus
+      → Sem sacerdote constituído por Deus não há acesso a Deus
+
+[B]   · Os levitas são tomados em lugar dos primogênitos de Israel
+      → A substituição é o método pelo qual Deus salva e consagra
+
+[C]   · A ordem para recensear os levitas por casas paternas
+      → O serviço santo se organiza, não se improvisa
+
+◉ [E]   · ELEAZAR, CHEFE SOBRE OS LÍDERES DOS LEVITAS
+      → A liderança suprema do serviço santo aponta a um Sacerdote maior
+
+[C']  · O número total dos levitas é apresentado diante de Deus
+      → Cada servo conta no plano do Deus que tudo enumera
+
+[B']  · O dinheiro do resgate é entregue a Arão e seus descendentes
+      → Onde a substituição não basta, o preço do resgate completa
+
+[A']  · O sacerdócio recebe o resgate em nome do SENHOR
+      → A mediação sacerdotal aplica o resgate ao povo
+
+EIXO CRISTOLÓGICO
+1Pe 1:18–19: "fostes resgatados... pelo precioso sangue de Cristo" — o cordeiro substituto cumpre o que os levitas prefiguraram.`;
+
+  if (d.dia === 160) return `PARA PREGAR · Números 4:1–49
+
+BIG IDEA
+"Cada família levita tem um serviço próprio no transporte da glória."
+
+MOVIMENTOS DO TEXTO
+[A]   · Os coatitas carregam os objetos mais santos com cuidado
+      → Quanto mais santa a tarefa, mais reverente a obediência
+
+[B]   · Os gersonitas transportam as coberturas e cortinas
+      → No reino de Deus, nenhum serviço é dispensável
+
+◉ [C]   · OS MERARITAS CARREGAM AS ESTRUTURAS DO TABERNÁCULO
+      → A estrutura invisível sustenta a beleza visível do culto
+
+[A']  · Coate é recenseado para o serviço da carga santa
+      → Quem Deus chama, Deus conta e capacita
+
+[B']  · Gérson é recenseado para o serviço das tendas
+      → A pluralidade do serviço unifica-se em um só propósito
+
+[C']  · Merari é recenseado para o serviço da armação
+      → O serviço fiel é medido por Deus, não pela visibilidade
+
+EIXO CRISTOLÓGICO
+1Co 12:18: "Deus colocou os membros no corpo, a cada um deles como lhe aprouve" — em Cristo cada serviço encontra dignidade.`;
+
+  if (d.dia === 161) return `PARA PREGAR · Números 5:1–6:27
+
+BIG IDEA
+"A pureza do acampamento prepara a bênção da face de Deus."
+
+MOVIMENTOS DO TEXTO
+[A]   · Os impuros são expulsos do acampamento como Deus ordenou
+      → A santidade exige que o pecado seja tratado, não tolerado
+
+[B]   · Regulamentos de reparação por infidelidade contra o SENHOR
+      → Toda ofensa ao próximo é também ofensa contra Deus
+
+◉ [C]   · O JULGAMENTO DA IMPUREZA OCULTA DIANTE DO SENHOR
+      → Onde o olhar humano não vê, Deus discerne e julga com justiça
+
+[B']  · O voto de nazireado: consagração voluntária ao SENHOR
+      → A santidade convida o coração à entrega total
+
+[A']  · "Assim porão o meu nome sobre os filhos de Israel, e eu os abençoarei"
+      → Onde o povo se purifica, a bênção sacerdotal repousa
+
+EIXO CRISTOLÓGICO
+2Co 4:6: "Deus... resplandeceu... a glória de Deus na face de Cristo" — a bênção arônica encontra plenitude na face do Filho.`;
+
+  if (d.dia === 162) return `PARA PREGAR · Números 7:1–88
+
+BIG IDEA
+"O culto é sustentado pelas ofertas voluntárias das tribos."
+
+MOVIMENTOS DO TEXTO
+[A]   · Os líderes apresentam seis carros cobertos e doze bois
+      → Liderança verdadeira investe no que Deus está construindo
+
+[B]   · As ofertas são entregues aos levitas conforme o serviço
+      → A generosidade do povo capacita o serviço dos chamados
+
+[A']  · As doze tribos oferecem em sucessão diante do altar
+      → O culto coletivo nasce de muitas contribuições particulares
+
+EIXO CRISTOLÓGICO
+2Co 9:7: "Deus ama o que dá com alegria" — em Cristo as ofertas se tornam culto racional ao Pai.`;
+
+  if (d.dia === 163) return `PARA PREGAR · Números 7:89–8:26
+
+BIG IDEA
+"Deus substitui o juízo pela consagração para que os seus sirvam."
+
+MOVIMENTOS DO TEXTO
+[P]   · "Ele lhe falou" — Deus fala do propiciatório a Moisés
+      → A palavra de Deus se ouve onde o sangue cobre o pecado
+
+[A]   · Regulamentação sobre as lâmpadas que iluminam o lugar santo
+      → A luz do culto vem da ordem que Deus prescreve
+
+[B]   · Purificação dos levitas com água, navalha e oferta
+      → Não há serviço santo sem purificação prévia
+
+[C]   · Os levitas entram para realizar o serviço na tenda
+      → Quem é purificado é também enviado
+
+[D]   · Os levitas em lugar de todos os primogênitos de Israel
+      → A substituição é a lógica da graça que serve
+
+◉ [E]   · "FERI TODOS OS PRIMOGÊNITOS NA TERRA DO EGITO"
+      → A memória do juízo passado funda a consagração presente
+
+[D']  · Os levitas em lugar dos primogênitos no resgate
+      → Quem foi poupado é separado para servir
+
+[C']  · Os levitas realizam o serviço pelos filhos de Israel
+      → Servir aos santos é servir a Deus
+
+[B']  · Purificação dos levitas como sinal público
+      → A santidade pessoal afeta a comunidade
+
+[A']  · Regulamentação sobre os trabalhos na tenda do encontro
+      → O serviço santo tem começo, meio e fim ordenados por Deus
+
+EIXO CRISTOLÓGICO
+Hb 9:14: "o sangue de Cristo... purificará a nossa consciência" — Cristo cumpre o que a Páscoa e os levitas prefiguravam.`;
+
+  if (d.dia === 164) return `PARA PREGAR · Números 9:1–14
+
+BIG IDEA
+"A Páscoa pertence a todos os redimidos, sem exceção."
+
+MOVIMENTOS DO TEXTO
+[A]   · O SENHOR ordena que Israel celebre a Páscoa no Sinai
+      → A memória da redenção é mandato, não opção
+
+[B]   · O povo celebra a Páscoa no tempo determinado
+      → Obediência tempestiva é o ritmo do povo redimido
+
+[B']  · Os impuros pedem para celebrar fora do tempo
+      → A graça abre brechas para quem busca a Deus
+
+[A']  · O SENHOR estabelece a Páscoa do segundo mês para os impedidos
+      → O Deus da Páscoa não exclui o coração faminto
+
+EIXO CRISTOLÓGICO
+1Co 5:7: "Cristo, nosso Cordeiro pascal, foi imolado" — em Cristo todos os impuros são chamados à mesa.`;
+
+  if (d.dia === 165) return `PARA PREGAR · Números 9:15–23
+
+BIG IDEA
+"A obediência do povo é responder ao ritmo da presença de Deus."
+
+MOVIMENTOS DO TEXTO
+[P]   · A nuvem cobre o tabernáculo, a tenda do testemunho
+      → A presença visível de Deus guia o povo invisível
+
+[A1]  · Quando a nuvem se ergue, o povo parte
+      → Mover-se com Deus é dom, não iniciativa humana
+
+[B1]  · Pela ordem do SENHOR partiam e acampavam
+      → Discernir a vontade de Deus é seguir suas ordens
+
+[A2]  · Quando a nuvem permanece, o povo permanece
+      → Esperar em Deus é forma de obediência
+
+[B2]  · Segundo a ordem do SENHOR ficavam e partiam
+      → A vida cristã alterna marcha e descanso ao comando divino
+
+[A3]  · Quando a nuvem se ergue de manhã, partem
+      → Sensibilidade à presença é treino diário
+
+[B3]  · Pela ordem do SENHOR acampavam e partiam
+      → A obediência é o testemunho público do povo guiado
+
+EIXO CRISTOLÓGICO
+Jo 14:26: "o Espírito Santo... vos ensinará todas as coisas" — a nuvem do AT antecipa a presença do Espírito.`;
+
+  if (d.dia === 166) return `PARA PREGAR · Números 10:1–10
+
+BIG IDEA
+"Deus dá ao povo um chamado audível para cada tempo."
+
+MOVIMENTOS DO TEXTO
+[A]   · As trombetas convocam a congregação para a assembleia
+      → Deus reúne o seu povo pelo som da sua palavra
+
+[B]   · As trombetas marcam a partida das tribos
+      → A marcha do povo de Deus tem sinal e ritmo
+
+◉ [C]   · "OS FILHOS DE ARÃO, OS SACERDOTES, TOCARÃO AS TROMBETAS"
+      → A voz que convoca o povo é mediada pelo sacerdócio
+
+[B']  · As trombetas dão alarme na guerra contra o inimigo
+      → Em batalha, o povo é lembrado diante de Deus
+
+[A']  · As trombetas anunciam as festas e ofertas
+      → A adoração tem chamada pública, não apenas privada
+
+EIXO CRISTOLÓGICO
+1Ts 4:16: "ao soar da trombeta de Deus, descerá dos céus" — Cristo Sumo Sacerdote convocará o seu povo final.`;
+
+  if (d.dia === 167) return `PARA PREGAR · Números 10:11–28
+
+BIG IDEA
+"O povo redimido marcha em ordem rumo à promessa."
+
+MOVIMENTOS DO TEXTO
+[A]   · Os filhos de Israel partem por etapas do deserto do Sinai
+      → A peregrinação cristã tem etapas marcadas por Deus
+
+[B1]  · Judá, Issacar e Zebulom partem primeiro
+      → Quem caminha à frente abre caminho aos demais
+
+[B2]  · Rúben, Simeão e Gade seguem na segunda companhia
+      → Cada qual no seu posto, ninguém é descartável
+
+[B3]  · Efraim, Manassés e Benjamim avançam em ordem
+      → A ordem não asfixia, ela protege e fortalece
+
+[B4]  · Dã, Aser e Naftali fecham a retaguarda
+      → A retaguarda do povo é tão sagrada quanto a vanguarda
+
+[A']  · Os filhos de Israel partem por companhias
+      → Ordem coletiva é testemunho do Deus que ordena
+
+EIXO CRISTOLÓGICO
+Hb 13:14: "buscamos a que está por vir" — em Cristo somos peregrinos com destino certo.`;
+
+  if (d.dia === 168) return `PARA PREGAR · Números 10:29–32
+
+BIG IDEA
+"O bem prometido por Deus é convite a se juntar à jornada."
+
+MOVIMENTOS DO TEXTO
+[A]   · Moisés convida Hobabe a acompanhá-los à terra prometida
+      → A boa nova compartilhada é convite à comunhão da promessa
+
+[B]   · Hobabe inicialmente recusa, querendo voltar à sua terra
+      → O coração ainda apegado ao velho resiste ao novo de Deus
+
+[A']  · Moisés insiste: o bem que Deus fará será partilhado
+      → A graça partilhada vence a resistência da familiaridade
+
+EIXO CRISTOLÓGICO
+Lc 14:23: "constrange-os a entrar" — Cristo convida o estrangeiro à mesa da promessa.`;
+
+  if (d.dia === 169) return `PARA PREGAR · Números 10:33–36
+
+BIG IDEA
+"A arca da aliança guia o povo no caminho e o protege no descanso."
+
+MOVIMENTOS DO TEXTO
+[P]   · A arca da aliança precede o povo para buscar lugar de descanso
+      → A presença de Deus é a vanguarda do peregrino
+
+[A]   · A arca parte: "Levanta-te, SENHOR, e dispersa os teus inimigos"
+      → Mover-se com Deus é mover-se rumo à vitória
+
+[A']  · A arca repousa: "Volta, SENHOR, para os milhares de Israel"
+      → Onde a presença descansa, o povo também descansa
+
+EIXO CRISTOLÓGICO
+Mt 28:20: "eu estou convosco todos os dias" — Cristo é a presença que vai à frente e que permanece.`;
+
+  if (d.dia === 170) return `PARA PREGAR · Números 11:1–35
+
+BIG IDEA
+"O braço do SENHOR não é curto para o povo que reclama."
+
+MOVIMENTOS DO TEXTO
+[A]   · O fogo do SENHOR consome em Taberá por causa do queixume
+      → A murmuração não tratada incendeia o acampamento
+
+[B]   · O povo despreza o maná e suspira pelas iguarias do Egito
+      → Saudades do Egito é doença do coração resgatado
+
+[C]   · Moisés clama: "Não posso sozinho suportar todo este povo"
+      → Liderança honesta confessa o limite da carne
+
+[D]   · Deus toma do espírito de Moisés e o põe sobre setenta anciãos
+      → Deus reparte para que ninguém pereça sozinho na missão
+
+[E]   · "Se todos os rebanhos e manadas fossem abatidos, seria suficiente?"
+      → A dúvida humana mede Deus pelos próprios estoques
+
+◉ [E']  · "ACASO O BRAÇO DO SENHOR É CURTO?"
+      → A onipotência do SENHOR desmente toda dúvida do peregrino
+
+[D']  · O espírito é repartido sobre os setenta e eles profetizam
+      → Quando Deus reparte, capacita também
+
+[C']  · Moisés deseja: "Quem dera todo o povo do SENHOR fosse profeta!"
+      → Liderança madura deseja Deus se manifestando em todos
+
+[B']  · Codornizes em abundância vêm do mar até o acampamento
+      → Deus responde, mas o desejo desordenado traz juízo
+
+[A']  · O lugar é chamado Quibrote-Hataava — sepulturas da cobiça
+      → Onde a cobiça reina, a graça se torna juízo
+
+EIXO CRISTOLÓGICO
+Jo 6:51: "eu sou o pão vivo que desceu do céu" — o verdadeiro maná satisfaz para a vida eterna.`;
+
+  if (d.dia === 171) return `PARA PREGAR · Números 12:1–16
+
+BIG IDEA
+"Falar contra o servo de Deus é desafiar o próprio Deus que o enviou."
+
+MOVIMENTOS DO TEXTO
+[A]   · Miriã e Arão falam contra Moisés por causa da cuxita
+      → Ciúme espiritual disfarça-se de zelo religioso
+
+[B]   · O SENHOR convoca os três à tenda do encontro
+      → Deus não ignora a calúnia contra os seus servos
+
+[C]   · O SENHOR declara que fala com Moisés boca a boca
+      → A intimidade do servo com Deus é dádiva, não conquista
+
+[A']  · Miriã é ferida de lepra como sinal do juízo divino
+      → O orgulho que se levanta é exposto à luz da santidade
+
+[B']  · Eles clamam ao SENHOR pedindo cura por Moisés
+      → A intercessão do servo verdadeiro abre porta para a misericórdia
+
+[C']  · O SENHOR responde estabelecendo o tempo da cura
+      → A graça restaura, mas também ensina pela disciplina
+
+EIXO CRISTOLÓGICO
+Hb 3:3: "Jesus foi considerado digno de tanto maior glória do que Moisés" — falar contra Cristo é o pecado supremo.`;
+
+  if (d.dia === 172) return `PARA PREGAR · Números 13:1–24
+
+BIG IDEA
+"Deus envia o seu povo a ver a terra que ele já prometeu."
+
+MOVIMENTOS DO TEXTO
+[A]   · O SENHOR ordena que Moisés escolha doze espias
+      → A missão começa com a palavra que comissiona
+
+[B]   · Moisés escolhe um homem de cada tribo, líderes do povo
+      → Liderança fiel obedece à direção recebida
+
+[C]   · Moisés nomeia Oseias como Josué — "o SENHOR salva"
+      → O novo nome aponta o instrumento da salvação prometida
+
+[A']  · Moisés ordena que tragam frutos da terra para avaliar
+      → A obediência se prova nos passos concretos
+
+[B']  · Os espias percorrem a terra e trazem amostras do fruto
+      → A promessa não é teórica: ela tem cor, sabor e peso
+
+[C']  · O cacho de uvas dá nome ao vale de Escol
+      → A bondade da terra deixa marcas visíveis na história
+
+EIXO CRISTOLÓGICO
+Jo 1:14: "vimos a sua glória" — Cristo é a terra prometida que veio até nós.`;
+
+  if (d.dia === 173) return `PARA PREGAR · Números 13:25–33
+
+BIG IDEA
+"Onde os olhos veem só gigantes, a fé vê o Deus maior que tudo."
+
+MOVIMENTOS DO TEXTO
+[A]   · O relatório descreve a terra como boa, mas cheia de gigantes
+      → Verdade parcial sem fé torna-se desânimo coletivo
+
+[B]   · Calebe insiste: "Subamos imediatamente e a ocupemos"
+      → Fé que pesa a promessa supera o medo do obstáculo
+
+[B']  · Os outros respondem: "Não podemos subir contra aquele povo"
+      → Incredulidade reduz a missão à medida da própria força
+
+[A']  · O mau relatório se espalha e contamina a congregação
+      → Palavras de incredulidade adoecem o corpo do povo de Deus
+
+EIXO CRISTOLÓGICO
+Rm 8:31: "se Deus é por nós, quem será contra nós?" — em Cristo a fé enxerga além dos gigantes.`;
+
+  if (d.dia === 174) return `PARA PREGAR · Números 14:1–10
+
+BIG IDEA
+"O povo escolhe a sepultura quando rejeita a promessa de Deus."
+
+MOVIMENTOS DO TEXTO
+[A]   · Toda a comunidade levanta um grande clamor de lamento
+      → O choro sem fé acusa a Deus em vez de buscá-lo
+
+[B]   · O povo queixa-se e fala em escolher novo chefe para voltar ao Egito
+      → A nostalgia da escravidão é traição à liberdade dada
+
+◉ [C]   · MOISÉS E ARÃO SE PROSTRAM DIANTE DE TODA A ASSEMBLEIA
+      → A intercessão é a postura do líder diante da rebelião
+
+[B']  · Josué e Calebe persuadem: a terra é boa e o SENHOR está conosco
+      → A fé de poucos sustenta a esperança quando a multidão vacila
+
+[A']  · A comunidade ameaça apedrejá-los como resposta à fé
+      → O coração endurecido revolta-se contra a voz da fé
+
+EIXO CRISTOLÓGICO
+Hb 3:19: "não puderam entrar por causa da incredulidade" — em Cristo somos chamados a perseverar até o fim.`;
+
+  if (d.dia === 175) return `PARA PREGAR · Números 14:11–35
+
+BIG IDEA
+"O perdão divino convive com as consequências do pecado humano."
+
+MOVIMENTOS DO TEXTO
+[A]   · O SENHOR ameaça: "Ferirei com pestilência e os destruirei"
+      → A santidade de Deus não é indiferente ao pecado do povo
+
+[B]   · Moisés intercede pela grandeza da misericórdia do SENHOR
+      → O mediador apela à própria glória de Deus
+
+[B']  · O SENHOR responde: "Perdoei conforme a tua palavra"
+      → A intercessão fundada na palavra de Deus é ouvida
+
+[A']  · "Os vossos cadáveres cairão neste deserto" — a geração não entra
+      → Há perdão que não revoga toda consequência terrena
+
+EIXO CRISTOLÓGICO
+1Tm 2:5: "há um só mediador entre Deus e os homens, Cristo Jesus" — em Cristo o perdão e a herança se reúnem.`;
+
+  if (d.dia === 176) return `PARA PREGAR · Números 14:36–45
+
+BIG IDEA
+"Subir sem o SENHOR é descer derrotado diante dos inimigos."
+
+MOVIMENTOS DO TEXTO
+[A]   · Os espias do mau relatório morrem de praga diante do SENHOR
+      → O juízo começa por quem espalhou a incredulidade
+
+[B]   · Moisés transmite ao povo as palavras do SENHOR
+      → A palavra de Deus chega mesmo aos rebeldes
+
+◉ [C]   · "SUBIREMOS AO LUGAR QUE O SENHOR PROMETEU"
+      → Obediência tardia sem fé é presunção, não arrependimento
+
+[B']  · Moisés alerta: "Não subis, pois o SENHOR não está convosco"
+      → Mover-se sem Deus é decretar a própria derrota
+
+[A']  · Os amalequitas e cananeus descem e os derrotam até Horma
+      → Quem despreza a graça colhe a vergonha da derrota
+
+EIXO CRISTOLÓGICO
+Jo 15:5: "sem mim nada podeis fazer" — em Cristo está toda a vitória do povo.`;
+
+  if (d.dia === 177) return `PARA PREGAR · Números 15:1–31
+
+BIG IDEA
+"A entrada na terra é certeza tão firme que já se prescrevem ofertas."
+
+MOVIMENTOS DO TEXTO
+[A]   · "Quando entrardes na terra..." Deus já regula o futuro culto
+      → A promessa de Deus é tão certa que governa o agora
+
+[B]   · Regulamentos sobre ofertas voluntárias e sacrifícios
+      → A vida nova exige adoração nova ordenada por Deus
+
+[C]   · Estrangeiro e nativo têm a mesma lei diante do SENHOR
+      → A graça constitui um só povo diante de um só Deus
+
+[A']  · "Depois que entrardes na terra..." prescreve-se a oferta da farinha
+      → A herança vem com responsabilidade litúrgica diária
+
+[B']  · Ofertas pelo pecado por inadvertência são reguladas
+      → A graça cobre o ignorante, mas exige reconhecimento
+
+[C']  · A mesma lei vale para o nativo e para o peregrino
+      → Onde a graça reina, não há cidadania de segunda classe
+
+EIXO CRISTOLÓGICO
+Hb 10:14: "com uma só oferta aperfeiçoou para sempre" — Cristo cumpre toda oferta exigida pela lei.`;
+
+  if (d.dia === 178) return `PARA PREGAR · Números 15:32–36
+
+BIG IDEA
+"O sábado pertence ao Senhor e não à conveniência do homem."
+
+MOVIMENTOS DO TEXTO
+[A]   · O homem que apanha lenha no sábado é detido sob custódia
+      → A santidade do tempo não é detalhe menor diante de Deus
+
+[B]   · Moisés e Arão buscam diretamente as palavras do SENHOR
+      → Em casos novos, a palavra de Deus é o critério final
+
+[A']  · O homem é apedrejado conforme a ordem do SENHOR
+      → Onde o sábado é desprezado, a aliança é violada
+
+EIXO CRISTOLÓGICO
+Mt 12:8: "o Filho do Homem é Senhor do sábado" — Cristo cumpre o sábado e oferece o seu descanso ao crente.`;
+
+  if (d.dia === 179) return `PARA PREGAR · Números 15:37–41
+
+BIG IDEA
+"O sinal nas vestes lembra que o santo Deus santifica os seus."
+
+MOVIMENTOS DO TEXTO
+[A]   · Ordem para fazer franjas nos cantos das vestes com fio azul
+      → Sinais visíveis ancoram a memória da aliança no cotidiano
+
+[B]   · Isso se torna a franja distintiva de Israel
+      → A identidade do povo é pública e perceptível
+
+[A']  · Ordem para tornar-se santo, lembrando os mandamentos
+      → Cada olhar à franja é convocação à obediência
+
+[B']  · O SENHOR se torna o Deus de Israel — confessado e adorado
+      → A santidade é resposta ao Deus que se entregou ao povo
+
+EIXO CRISTOLÓGICO
+Mt 9:20: "tocou na orla da sua veste... e ficou curada" — em Cristo a santidade flui da sua pessoa para os crentes.`;
+
+  if (d.dia === 180) return `PARA PREGAR · Números 16:1–17:5
+
+BIG IDEA
+"Quem se levanta contra o ungido do SENHOR é tragado pelo juízo."
+
+MOVIMENTOS DO TEXTO
+[A]   · Corá lidera rebelião contra Moisés e Arão
+      → A inveja do ministério alheio é semente de revolta
+
+[B]   · "Aquele que o SENHOR escolher é o santo"
+      → A santidade é escolha soberana de Deus, não conquista humana
+
+[C]   · Datã e Abirão acusam: "para nos fazer perecer no deserto"
+      → A rebelião acusa o servo de Deus de seus próprios pecados
+
+[D]   · Moisés apela diante do SENHOR contra os caluniadores
+      → O servo agredido encontra refúgio na presença divina
+
+[E]   · Corá reúne toda a banda contra eles à entrada da tenda
+      → A revolta busca legitimidade pública, mas perde-a no santuário
+
+[F]   · O SENHOR ordena: "Afastai-vos desta comunidade"
+      → A graça abre porta de escape até no momento do juízo
+
+◉ [G]   · A INTERCESSÃO DE MOISÉS PELO ESPÍRITO DE TODA A CARNE
+      → No centro da rebelião está a misericórdia mediada por um servo
+
+[F']  · O SENHOR fala novamente para preservar os inocentes
+      → O juízo de Deus discrimina, não destrói indiscriminadamente
+
+[E']  · Datã e Abirão postam-se à entrada das suas tendas
+      → O coração endurecido escolhe permanecer no caminho do juízo
+
+[D']  · Moisés declara o sinal: a terra abrirá a sua boca
+      → A palavra do servo é selo do juízo divino
+
+[C']  · "Pereceram do meio da congregação" — tragados vivos
+      → O fim da rebelião é o silêncio do sepulcro
+
+[B']  · "Sendo apresentados diante do SENHOR, foram santificados"
+      → O que era profanado é restaurado pela soberania de Deus
+
+[A']  · Lembrança perpétua: não aconteça o que aconteceu a Corá
+      → A memória do juízo é dom para preservar gerações futuras
+
+EIXO CRISTOLÓGICO
+Hb 7:25: "vive sempre para interceder por eles" — Cristo, maior Mediador, intercede onde Moisés apenas prefigurou.`;
+
+  if (d.dia === 181) return `PARA PREGAR · Números 17:6–15
+
+BIG IDEA
+"O sacerdócio mediador interpõe-se entre a praga e o povo."
+
+MOVIMENTOS DO TEXTO
+[A]   · O povo acusa Moisés e Arão: "Matastes o povo do SENHOR"
+      → A culpa não tratada acusa o salvador na sequência
+
+[B]   · A comunidade se reúne contra Moisés e Arão
+      → A multidão furiosa procura culpados, não soluções
+
+[C]   · Moisés ordena a Arão correr ao meio do povo
+      → A obediência sob pressão revela o coração do servo
+
+◉ [D]   · AS PALAVRAS DO SENHOR ORDENANDO O INCENSÁRIO
+      → Onde a palavra de Deus chega, a praga encontra limite
+
+[C']  · Arão põe incenso entre os mortos e os vivos
+      → O sacerdote mediador estanca o juízo com a sua intercessão
+
+[B']  · A reunião da comunidade se desfaz com a praga cessada
+      → A intercessão eficaz dispersa o juízo iminente
+
+[A']  · Quatorze mil e setecentos morreram da praga
+      → O preço da rebelião é alto, mas a intercessão limita-o
+
+EIXO CRISTOLÓGICO
+Hb 7:24–25: "tem um sacerdócio permanente" — Cristo é o Sacerdote entre a morte e a vida.`;
+
+  if (d.dia === 182) return `PARA PREGAR · Números 17:16–28
+
+BIG IDEA
+"Deus confirma o seu eleito fazendo brotar vida onde só havia madeira."
+
+MOVIMENTOS DO TEXTO
+[A]   · O SENHOR ordena trazer uma vara por tribo à tenda
+      → A escolha do servo é decisão de Deus, não disputa humana
+
+[B]   · Moisés obedece e coloca as varas diante do SENHOR
+      → A obediência prepara o palco da revelação divina
+
+[C]   · O povo aguarda em respeito a manifestação do escolhido
+      → A reverência é a resposta do coração que espera em Deus
+
+[A']  · O SENHOR ordena guardar a vara de Arão como sinal
+      → A escolha confirmada deve ser preservada como memória
+
+[B']  · Moisés obedece colocando a vara como testemunho
+      → A obediência do servo selará a vitória da graça
+
+[C']  · O povo responde: "Eis que perecemos!"
+      → O temor santo nasce diante da santidade demonstrada
+
+EIXO CRISTOLÓGICO
+Rm 1:4: "foi designado Filho de Deus com poder, pela ressurreição dos mortos" — Cristo é o Eleito confirmado pela vida.`;
+
+  if (d.dia === 183) return `PARA PREGAR · Números 18:1–32
+
+BIG IDEA
+"Deus é a herança dos que dele cuidam diante do povo."
+
+MOVIMENTOS DO TEXTO
+[A]   · A família de Arão é responsável pelo santuário
+      → Quem serve a Deus carrega o peso e a dignidade do altar
+
+[B]   · A família de Arão recebe porção das ofertas sagradas
+      → Deus sustenta os que se entregam ao serviço santo
+
+[A']  · Os levitas são responsáveis pela tenda do encontro
+      → A separação para o serviço é também ônus diante de Deus
+
+[B']  · Os levitas recebem o dízimo como recompensa do trabalho
+      → A generosidade do povo é instrumento da provisão de Deus
+
+EIXO CRISTOLÓGICO
+1Co 9:14: "os que pregam o evangelho vivam do evangelho" — em Cristo a economia da igreja honra os servos.`;
+
+  if (d.dia === 184) return `PARA PREGAR · Números 19:1–22
+
+BIG IDEA
+"A purificação do contaminado depende do sacrifício previamente provido."
+
+MOVIMENTOS DO TEXTO
+[A]   · Preparação da água lustral com a novilha vermelha
+      → O remédio do impuro nasce do sacrifício preparado por Deus
+
+[B]   · Estatuto perpétuo: a provisão é permanente
+      → O cuidado de Deus com o impuro é eterno
+
+[C]   · O impuro se purifica com a água no terceiro e sétimo dia
+      → A purificação tem tempo, processo e fidelidade
+
+[D]   · Impureza por sete dias para quem toca em morto
+      → O contato com a morte exige tratamento da graça
+
+[C']  · O homem puro aspergirá o impuro no terceiro e sétimo dia
+      → A mediação humana aplica a graça preparada por Deus
+
+[B']  · Estatuto perpétuo: o sacrifício suficiente permanece
+      → A obra de Deus uma vez feita é suficiente para sempre
+
+[A']  · Regulamentos sobre a aplicação da água lustral
+      → A graça aplicada é a graça eficaz
+
+EIXO CRISTOLÓGICO
+Hb 9:13–14: "se o sangue de bodes e touros... quanto mais o sangue de Cristo" — Cristo é a novilha definitiva.`;
+
+  if (d.dia === 185) return `PARA PREGAR · Números 20:1–13
+
+BIG IDEA
+"Mesmo o servo eleito paga o preço de não santificar a Deus."
+
+MOVIMENTOS DO TEXTO
+[A]   · Queixas do povo por causa da sede em Meribá
+      → A escassez expõe o coração desconfiado do povo
+
+[B]   · As palavras do SENHOR: "Falai à rocha"
+      → A ordem divina é clara e exige obediência literal
+
+◉ [C]   · MOISÉS FERE A ROCHA DUAS VEZES, E SAI ÁGUA EM ABUNDÂNCIA
+      → A graça flui apesar da desobediência, mas o servo é responsabilizado
+
+[B']  · As palavras do SENHOR: "Não me santificastes diante deles"
+      → Não santificar a Deus em público tem preço alto
+
+[A']  · Os filhos de Israel contenderam com o SENHOR em Meribá
+      → Onde o povo contende, o nome do lugar permanece como memória
+
+EIXO CRISTOLÓGICO
+1Co 10:4: "a Rocha que os seguia, e a Rocha era Cristo" — em Cristo, a água da vida flui pelo seu sofrimento.`;
+
+  if (d.dia === 186) return `PARA PREGAR · Números 20:14–21
+
+BIG IDEA
+"O coração endurecido fecha a porta a quem caminha com Deus."
+
+MOVIMENTOS DO TEXTO
+[A]   · Israel pede passagem amistosa pela terra de Edom
+      → O peregrino busca caminhos pacíficos rumo à promessa
+
+[B]   · Edom recusa: "Não passarás por aqui"
+      → O parentesco terreno não garante hospitalidade espiritual
+
+[A']  · Israel insiste, oferecendo pagar pela água
+      → A insistência humilde prova o coração do peregrino
+
+[B']  · Edom responde com força armada: "Não passarás"
+      → Onde Deus é desprezado, o irmão também é rejeitado
+
+EIXO CRISTOLÓGICO
+Jo 1:11: "veio para o que era seu, e os seus não o receberam" — Cristo conhece a recusa do parente.`;
+
+  if (d.dia === 187) return `PARA PREGAR · Números 20:22–29
+
+BIG IDEA
+"A morte do sacerdote aponta para um sacerdócio que não cessa."
+
+MOVIMENTOS DO TEXTO
+[A]   · Israel chega ao monte Hor sob a direção do SENHOR
+      → A peregrinação tem etapas marcadas pela providência
+
+[B]   · O SENHOR profetiza a morte de Arão no monte
+      → A vida do servo está nas mãos do Senhor da história
+
+[A']  · Eleazar e Arão sobem ao monte como ordenado
+      → A obediência mesmo na morte é última palavra do servo fiel
+
+[B']  · Arão morre e o povo o pranteia trinta dias
+      → A perda do mediador é dor coletiva, mas há sucessão
+
+EIXO CRISTOLÓGICO
+Hb 7:23–24: "Jesus... tem um sacerdócio permanente" — Cristo é o Sacerdote que não morre.`;
+
+  if (d.dia === 188) return `PARA PREGAR · Números 21:1–3
+
+BIG IDEA
+"O voto sincero ao SENHOR transforma derrota em vitória."
+
+MOVIMENTOS DO TEXTO
+[A]   · Israel é inicialmente derrotado pelo rei de Arade
+      → Derrotas iniciais não definem o destino do povo de Deus
+
+[B]   · Israel faz um voto ao SENHOR de consagrar as cidades
+      → Voto sincero é entrega antecipada da vitória a Deus
+
+[A']  · O SENHOR entrega os cananeus e Israel cumpre o voto
+      → A vitória que se segue à entrega é vitória que glorifica a Deus
+
+EIXO CRISTOLÓGICO
+1Co 15:57: "graças a Deus, que nos dá a vitória por nosso Senhor Jesus" — em Cristo a derrota é convertida em triunfo.`;
+
+  if (d.dia === 189) return `PARA PREGAR · Números 21:4–9
+
+BIG IDEA
+"O que mata é levantado em juízo para que o que olha viva pela fé."
+
+MOVIMENTOS DO TEXTO
+[A]   · O povo se queixa contra Deus e contra Moisés no caminho
+      → A impaciência crônica é raiz de queixas reiteradas
+
+[B]   · O SENHOR envia serpentes ardentes que mordem o povo
+      → O juízo divino revela a serpente que já vivia no coração
+
+[A']  · O povo se arrepende e clama a Moisés por intercessão
+      → O sofrimento conduz o coração à confissão
+
+[B']  · A serpente de bronze é levantada e quem olha vive
+      → O símbolo do juízo torna-se instrumento de salvação
+
+EIXO CRISTOLÓGICO
+Jo 3:14–15: "como Moisés levantou a serpente... assim... o Filho do Homem" — em Cristo o juízo torna-se redenção para quem crê.`;
+
+  if (d.dia === 190) return `PARA PREGAR · Números 21:10–20
+
+BIG IDEA
+"O caminho do peregrino é cantado quando o SENHOR provê."
+
+MOVIMENTOS DO TEXTO
+[A]   · O itinerário documenta cada etapa da jornada do povo
+      → A história do peregrino é registrada por Deus
+
+[B]   · Citação do Livro das Guerras do SENHOR ressoa na marcha
+      → A vitória passada inspira a fé presente
+
+◉ [C]   · AS PALAVRAS DO SENHOR PROMETEM ÁGUA EM BEER
+      → A provisão divina é o eixo entre a luta e o cântico
+
+[B']  · O cântico do poço celebra a água dada pelo SENHOR
+      → A boca do peregrino canta o que a mão do Senhor provê
+
+[A']  · O itinerário continua rumo à terra de Moabe
+      → A marcha continua porque o destino ainda não foi alcançado
+
+EIXO CRISTOLÓGICO
+Jo 4:14: "a água que eu lhe der... fonte... para a vida eterna" — em Cristo o cântico do poço se torna eterno.`;
+
+  if (d.dia === 191) return `PARA PREGAR · Números 21:21–35
+
+BIG IDEA
+"O SENHOR entrega os reis hostis nas mãos do seu povo peregrino."
+
+MOVIMENTOS DO TEXTO
+[A]   · Guerra contra o rei Seom, que recusa a passagem amigável
+      → Quem nega o caminho do povo de Deus encontra a sua queda
+
+[B]   · Israel se estabelece nas cidades dos amorreus
+      → A vitória abre lugar de moradia para o peregrino
+
+◉ [C]   · O CÂNTICO DE HESBOM ATESTA A QUEDA DO REINO REBELDE
+      → A celebração da vitória é parte da memória do povo de Deus
+
+[B']  · Israel se estabelece na terra dos amorreus em segurança
+      → A herança avança onde a fé persevera
+
+[A']  · Guerra contra o rei Ogue, derrotado conforme a palavra
+      → O Deus que vence Seom também vence Ogue
+
+EIXO CRISTOLÓGICO
+Cl 2:15: "despojou os principados... triunfando deles na cruz" — em Cristo todo rei adverso é vencido.`;
+
+  if (d.dia === 192) return `PARA PREGAR · Números 22:1–40
+
+BIG IDEA
+"Quem é amaldiçoado por Deus jamais será abençoado por homens."
+
+MOVIMENTOS DO TEXTO
+[A]   · Balaque, temendo Israel, convida Balaão para amaldiçoar
+      → O medo do reino de Deus busca alianças contra Deus
+
+[B]   · O primeiro mensageiro de Balaque é rejeitado por Balaão
+      → A palavra de Deus inicialmente trava planos malignos
+
+[B']  · O segundo mensageiro tem permissão condicional para ir
+      → A permissão divina serve à soberana ironia do plano de Deus
+
+[A']  · Balaão acompanha Balaque até o lugar dos sacrifícios
+      → A ambição do profeta caminha lado a lado com o medo do rei
+
+EIXO CRISTOLÓGICO
+Rm 8:31: "se Deus é por nós, quem será contra nós?" — em Cristo nenhuma maldição prevalece.`;
+
+  if (d.dia === 193) return `PARA PREGAR · Números 22:41–24:25
+
+BIG IDEA
+"De Jacó procederá uma estrela que abençoa e fere os povos."
+
+MOVIMENTOS DO TEXTO
+[A1]  · Primeiro oráculo: bênção declarada sobre Israel
+      → A boca contratada para amaldiçoar pronuncia bênção
+
+[A2]  · Segundo oráculo: bênção que não pode ser revogada
+      → Onde Deus bendiz, nenhuma palavra contrária prevalece
+
+[A3]  · Terceiro oráculo: bênção que descreve a glória de Israel
+      → O povo abençoado é descrito por Deus mesmo
+
+◉ [B]   · QUARTO ORÁCULO: "UMA ESTRELA PROCEDERÁ DE JACÓ"
+      → A promessa messiânica brilha mesmo na boca do profeta mercenário
+
+[A4]  · Quinto oráculo: Amaleque perecerá diante do SENHOR
+      → A estrela vencedora derrota os inimigos do reino
+
+[A5]  · Sexto oráculo: os quenitas serão destruídos no tempo
+      → A história é governada pelo Rei que virá
+
+[A6]  · Sétimo oráculo: os povos de Quitim perecerão
+      → Todo reino que se opõe ao Messias terá fim
+
+EIXO CRISTOLÓGICO
+Ap 22:16: "eu sou... a brilhante Estrela da manhã" — Cristo é a Estrela prometida por Balaão.`;
+
+  if (d.dia === 194) return `PARA PREGAR · Números 25:1–19
+
+BIG IDEA
+"O zelo santo recebe a aliança eterna do sacerdócio."
+
+MOVIMENTOS DO TEXTO
+[A]   · A traição: Israel se prostitui com as filhas de Moabe
+      → O coração que se descuida é seduzido por novos ídolos
+
+[B]   · Ordem do SENHOR para matar os líderes idólatras
+      → Onde a infidelidade contamina, o juízo deve ser público
+
+[C]   · Finéias mata o israelita e a midianita em flagrante
+      → O zelo pelo nome do SENHOR custa coragem decidida
+
+◉ [D]   · FINÉIAS RECEBE A GARANTIA DE UM SACERDÓCIO ETERNO
+      → O zelo aprovado por Deus garante o serviço de gerações
+
+[C']  · As duas pessoas mortas são identificadas pelo nome
+      → A justiça tem nomes, e a infidelidade tem rosto
+
+[B']  · Ordem do SENHOR para combater os midianitas
+      → A consequência alcança os que seduziram o povo
+
+[A']  · O desastre: vinte e quatro mil morrem na praga
+      → A traição traz desastre, mas a graça delimita o juízo
+
+EIXO CRISTOLÓGICO
+Hb 7:24: "tem um sacerdócio permanente" — em Cristo o zelo de Finéias encontra seu antítipo eterno.`;
+
+  if (d.dia === 195) return `PARA PREGAR · Números 26:1–65
+
+BIG IDEA
+"A nova geração é contada porque Deus cumpre a promessa da terra."
+
+MOVIMENTOS DO TEXTO
+[A]   · Recenseamento nas planícies de Moabe junto ao Jordão
+      → O lugar do recenseamento aponta a porta da promessa
+
+[B]   · As doze tribos são recontadas, uma nova geração de pé
+      → Deus levanta nova geração para herdar o que velha não viu
+
+◉ [C]   · ORDEM PARA DISTRIBUIR A TERRA POR SORTEIO
+      → A herança não é conquistada pelo mérito, mas distribuída pela graça
+
+[B']  · Os levitas são recontados separadamente para o serviço
+      → A nova geração de servos preserva o culto
+
+[A']  · O recenseamento se faz junto ao Jordão, à porta da terra
+      → A continuidade da fidelidade de Deus pontua a geografia
+
+EIXO CRISTOLÓGICO
+1Pe 1:4: "para uma herança incorruptível... reservada nos céus" — em Cristo a herança final é assegurada.`;
+
+  if (d.dia === 196) return `PARA PREGAR · Números 27:1–11
+
+BIG IDEA
+"O Deus justo escuta as vozes que a sociedade tende a calar."
+
+MOVIMENTOS DO TEXTO
+[A]   · As filhas de Zelofade se apresentam diante de toda a comunidade
+      → A coragem da fé busca justiça onde costumes silenciam
+
+[B]   · Elas pedem a herança do pai, que morreu sem filhos
+      → O pedido fundamentado encontra ouvidos na presença de Deus
+
+[A']  · Moisés leva o caso à presença do SENHOR
+      → Liderança fiel não decide sem consultar a Deus
+
+[B']  · O SENHOR aceita o pedido e estabelece estatuto
+      → Onde Deus aceita, novo padrão de justiça nasce
+
+EIXO CRISTOLÓGICO
+Gl 3:28–29: "todos sois um em Cristo Jesus... herdeiros" — em Cristo o silenciado recebe voz e herança.`;
+
+  if (d.dia === 197) return `PARA PREGAR · Números 27:12–23
+
+BIG IDEA
+"O Deus que tira o pastor providencia outro para o seu povo."
+
+MOVIMENTOS DO TEXTO
+[A]   · Ordem do SENHOR para Moisés contemplar a terra do alto
+      → A graça concede ver o que não se entrará por causa do pecado
+
+[B]   · Moisés intercede por um pastor para a congregação
+      → O pastor verdadeiro se preocupa com a continuidade do rebanho
+
+[A']  · Ordem do SENHOR para que Josué seja escolhido sucessor
+      → Deus já tem o pastor preparado para a próxima etapa
+
+[B']  · Moisés impõe as mãos sobre Josué publicamente
+      → A sucessão se faz em assembleia, com sinal visível
+
+EIXO CRISTOLÓGICO
+Jo 10:11: "eu sou o bom pastor" — em Cristo culmina a sucessão pastoral.`;
+
+  if (d.dia === 198) return `PARA PREGAR · Números 28:1–30:17
+
+BIG IDEA
+"A vida do povo de Deus é ritmada por ofertas e votos fiéis."
+
+MOVIMENTOS DO TEXTO
+[A]   · "Dá esta ordem aos filhos de Israel" — fundamento da liturgia
+      → O culto não nasce do gosto humano, mas do mandato divino
+
+[B]   · Regulamentos sobre as ofertas diárias, sabáticas e festivas
+      → A adoração ordenada cobre todo o tempo da vida
+
+[C]   · Conclusões dos regulamentos sobre ofertas
+      → A fidelidade litúrgica tem começo e fim discerníveis
+
+[A']  · Moisés transmite as instruções aos filhos de Israel
+      → A mediação entre Deus e o povo é tarefa permanente
+
+[B']  · Regulamentos sobre votos pessoais e familiares
+      → A devoção pessoal é regulada para honrar a Deus
+
+[C']  · Conclusões dos regulamentos sobre votos
+      → A palavra dada a Deus tem peso e precisa ser ordenada
+
+EIXO CRISTOLÓGICO
+Hb 10:10: "santificados, mediante a oferta do corpo de Jesus" — em Cristo culto e voto encontram cumprimento.`;
+
+  if (d.dia === 199) return `PARA PREGAR · Números 31:1–54
+
+BIG IDEA
+"A vitória do povo de Deus é sempre acompanhada de purificação."
+
+MOVIMENTOS DO TEXTO
+[A]   · Doze mil homens armados para a guerra contra Midiã
+      → A batalha do povo de Deus tem propósito e tamanho dado
+
+[B]   · Tomada do espólio na guerra contra os midianitas
+      → A vitória é também provisão para o povo peregrino
+
+[C]   · Ordem sobre o espólio: separação do que pertence ao SENHOR
+      → Nem todo despojo é para o vencedor: parte é do SENHOR
+
+◉ [D]   · ORDEM SOBRE A PURIFICAÇÃO DOS SOLDADOS E DO ESPÓLIO
+      → Vitória sem purificação não pertence ao povo santo
+
+[C']  · Ordem sobre a divisão entre os combatentes e a congregação
+      → A vitória se reparte entre os que lutam e os que oram
+
+[B']  · Distribuição do espólio segundo a ordem do SENHOR
+      → Toda divisão honesta é submissa à palavra divina
+
+[A']  · "Nem um homem falta" — milagre da preservação
+      → A guerra do SENHOR poupa os seus para missão maior
+
+EIXO CRISTOLÓGICO
+Cl 2:15: "triunfando deles na cruz" — em Cristo a vitória total não exige nova batalha.`;
+
+  if (d.dia === 200) return `PARA PREGAR · Números 32:1–42
+
+BIG IDEA
+"A herança recebida não dispensa o compromisso com os irmãos."
+
+MOVIMENTOS DO TEXTO
+[A]   · A terra de Jazer e Gileade agrada aos rubenitas e gaditas
+      → O dom da terra deve ser recebido sem egoísmo
+
+[B]   · Pedido: "Que esta terra seja dada aos teus servos"
+      → Pedidos legítimos requerem corações solidários
+
+[C]   · Moisés adverte: não desanimeis os irmãos como em Cades
+      → A liberdade do crente nunca prejudica o irmão peregrino
+
+[D]   · Os pedintes propõem construir currais e cidades, depois lutar
+      → Liderança fiel responde com plano que honra o todo
+
+◉ [E]   · MOISÉS ESTABELECE PROMESSA SOLENE DIANTE DO SENHOR
+      → No centro está o juramento que liga a herança ao serviço
+
+[D']  · Eles confirmam: deixar famílias e lutar pelos irmãos
+      → A herança pessoal só é honrosa com sacrifício pelos outros
+
+[C']  · Moisés instrui Eleazar e Josué sobre a promessa
+      → A sucessão fiel guarda os compromissos passados
+
+[B']  · Confirmação: manteremos a herança deste lado do Jordão
+      → A palavra empenhada é ponte entre gerações
+
+[A']  · As terras são dadas aos rubenitas e gaditas
+      → A herança se cumpre dentro do compromisso fraterno
+
+EIXO CRISTOLÓGICO
+Rm 15:1: "os fortes devem suportar as fraquezas dos fracos" — em Cristo a herança serve à comunhão.`;
+
+  if (d.dia === 201) return `PARA PREGAR · Números 33:1–49
+
+BIG IDEA
+"Cada etapa registrada testemunha a fidelidade de Deus na jornada."
+
+MOVIMENTOS DO TEXTO
+[A]   · O itinerário começa em Ramessés, no Egito
+      → A história do povo de Deus tem começo definido pela libertação
+
+[B]   · Cada acampamento é registrado pela mão de Moisés
+      → A memória escrita é dom para gerações que não viram
+
+[A']  · O itinerário termina nas planícies de Moabe junto ao Jordão
+      → A história caminha rumo ao cumprimento da promessa
+
+EIXO CRISTOLÓGICO
+Hb 11:13: "morreram... reconhecendo que eram estrangeiros e peregrinos" — em Cristo a peregrinação tem destino certo.`;
+
+  if (d.dia === 202) return `PARA PREGAR · Números 33:50–34:29
+
+BIG IDEA
+"A herança é distribuída por sorteio para que ninguém se glorie."
+
+MOVIMENTOS DO TEXTO
+[A]   · "Distribuireis a terra por sorteio entre os vossos clãs"
+      → A herança não é prêmio do esforço, mas dom administrado
+
+[B]   · Lista das fronteiras da terra prometida
+      → A promessa tem contornos concretos definidos por Deus
+
+[A']  · "Vossas heranças serão distribuídas por sorteio"
+      → A reiteração confirma: a graça é o método de Deus
+
+[B']  · Lista dos líderes que supervisionam a divisão
+      → A graça opera por meios humanos ordenados
+
+EIXO CRISTOLÓGICO
+Ef 1:11: "fomos feitos herança" — em Cristo a herança é segura porque ele é o herdeiro principal.`;
+
+  if (d.dia === 203) return `PARA PREGAR · Números 35:1–34
+
+BIG IDEA
+"A cidade de refúgio é o gesto público da justiça misericordiosa."
+
+MOVIMENTOS DO TEXTO
+[A]   · As cidades dadas aos levitas incluem seis cidades de refúgio
+      → O cuidado dos santos abrange também os necessitados de proteção
+
+[A']  · "Designareis como cidades de refúgio para o homicida"
+      → A justiça que protege o inocente é coração do governo de Deus
+
+EIXO CRISTOLÓGICO
+Hb 6:18: "buscamos refúgio para reter a esperança" — em Cristo somos abrigados do juízo eterno.`;
+
+  if (d.dia === 204) return `PARA PREGAR · Números 36:1–13
+
+BIG IDEA
+"Deus preserva a herança dentro do clã enquanto honra os fiéis."
+
+MOVIMENTOS DO TEXTO
+[A]   · Preocupação: a herança das filhas pode passar a outra tribo
+      → O cuidado com a herança coletiva é prudência espiritual
+
+[B]   · Regulamento sobre o casamento das herdeiras
+      → A justiça concreta protege gerações futuras
+
+[A']  · As filhas de Zelofade cumprem o regulamento dentro do clã
+      → A obediência ordenada preserva a promessa para os descendentes
+
+[P]   · "Estes são os mandamentos... por meio de Moisés"
+      → O livro se encerra apontando à autoridade da palavra mediada
+
+EIXO CRISTOLÓGICO
+Ef 1:14: "o penhor da nossa herança" — em Cristo a herança não escapa nem se dilui.`;
+
   return null;
 }
 
