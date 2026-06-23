@@ -266,6 +266,132 @@ const QUIASMA_PALETA = [
 
 type QuiasmaStatus = 'loading' | 'ok' | 'sem-arquivo' | 'sem-pericope';
 
+// ── Para Pregar — componente estruturado ──────────────────────────────────
+function ParaPregarSection({ d, pericopeIdx, conteudo }: {
+  d: DiaDevocional; pericopeIdx: number; conteudo: string;
+}) {
+  const [verseMap, setVerseMap] = useState<Record<string, string>>({});
+
+  useEffect(() => {
+    const path = livroPath(d.livro, d.testamento);
+    fetch(`${path}/quiastico.txt`)
+      .then(r => r.ok ? r.text() : null)
+      .then(text => {
+        if (!text) return;
+        const bloco = extractQuiasmaBloco(text, pericopeIdx);
+        if (!bloco) return;
+        const map: Record<string, string> = {};
+        for (const line of bloco.split('\n')) {
+          const m = line.trim().match(/^([A-Z]'?\d*)\s*\(([^)]+)\)/);
+          if (m) map[m[1]] = m[2];
+        }
+        setVerseMap(map);
+      })
+      .catch(() => {});
+  }, [d, pericopeIdx]);
+
+  // ── Parse conteudo ────────────────────────────────────────────────────
+  interface Movement { label: string; isCenter: boolean; title: string; gancho: string; }
+  const movements: Movement[] = [];
+  let bigIdea = '';
+  let eixo = '';
+  let section: 'none' | 'big' | 'movimentos' | 'eixo' = 'none';
+  let pending: Partial<Movement> | null = null;
+
+  for (const rawLine of conteudo.split('\n')) {
+    const line = rawLine.trim();
+    if (!line) continue;
+    if (line === 'BIG IDEA') { section = 'big'; continue; }
+    if (line === 'MOVIMENTOS DO TEXTO') { section = 'movimentos'; continue; }
+    if (line === 'EIXO CRISTOLÓGICO') { section = 'eixo'; continue; }
+    if (line.startsWith('PARA PREGAR')) continue;
+    if (section === 'big' && !bigIdea) { bigIdea = line.replace(/^"|"$/g, ''); continue; }
+    if (section === 'eixo') { eixo += (eixo ? ' ' : '') + line; continue; }
+    if (section === 'movimentos') {
+      const mvMatch = line.match(/^(◉\s*)?\[([A-Z]'?\d*)\]\s*·?\s*(.+)/);
+      if (mvMatch) {
+        if (pending?.label) movements.push(pending as Movement);
+        pending = { isCenter: !!mvMatch[1], label: mvMatch[2], title: mvMatch[3].trim(), gancho: '' };
+        continue;
+      }
+      const gMatch = line.match(/^→\s*(.+)/);
+      if (gMatch && pending) { pending.gancho = gMatch[1]; continue; }
+    }
+  }
+  if (pending?.label) movements.push(pending as Movement);
+
+  // ── Nível de paleta por letra base ───────────────────────────────────
+  const uniqueBases: string[] = [];
+  for (const mv of movements) {
+    const base = mv.label.replace(/['\d]/g, '');
+    if (!uniqueBases.includes(base)) uniqueBases.push(base);
+  }
+  const levelOf = (label: string) => Math.max(0, uniqueBases.indexOf(label.replace(/['\d]/g, '')));
+  const maxLevel = uniqueBases.length - 1;
+
+  return (
+    <div style={{
+      position: 'relative', marginTop: 14, borderRadius: 18, overflow: 'hidden',
+      background: 'linear-gradient(135deg, rgba(20,12,40,0.95) 0%, rgba(10,18,48,0.95) 60%, rgba(20,12,40,0.95) 100%)',
+      border: '1px solid rgba(168,120,255,0.28)',
+      boxShadow: '0 0 0 1px rgba(96,165,250,0.08), 0 8px 32px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.06)',
+    }}>
+      <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', background: 'radial-gradient(ellipse 70% 50% at 15% 50%, rgba(139,92,246,0.10) 0%, transparent 70%), radial-gradient(ellipse 50% 60% at 85% 30%, rgba(96,165,250,0.08) 0%, transparent 70%)' }} />
+
+      <div style={{ position: 'relative', padding: 'clamp(14px,3.5vw,20px) clamp(16px,4vw,22px)' }}>
+        {/* Cabeçalho */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 14 }}>
+          <div style={{ width: 28, height: 28, borderRadius: 8, flexShrink: 0, background: 'linear-gradient(135deg, rgba(139,92,246,0.35), rgba(96,165,250,0.25))', border: '1px solid rgba(168,120,255,0.40)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 0 12px rgba(139,92,246,0.25)' }}>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="rgba(196,160,255,1)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <div style={{ fontSize: 'clamp(9px,2.2vw,10px)', fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', background: 'linear-gradient(90deg, rgba(196,160,255,1) 0%, rgba(147,197,253,1) 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Para Pregar</div>
+          <div style={{ flex: 1, height: 1, marginLeft: 4, background: 'linear-gradient(90deg, rgba(139,92,246,0.40) 0%, rgba(96,165,250,0.15) 60%, transparent 100%)' }} />
+        </div>
+
+        {/* Big Idea */}
+        {bigIdea && (
+          <div style={{ marginBottom: 14, padding: '10px 14px', borderRadius: 10, background: 'rgba(139,92,246,0.08)', border: '1px solid rgba(139,92,246,0.20)' }}>
+            <div style={{ fontSize: 'clamp(8px,1.8vw,9px)', fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase', color: 'rgba(196,160,255,0.65)', marginBottom: 5 }}>Big Idea</div>
+            <div style={{ fontSize: 'clamp(13px,3vw,15px)', color: 'rgba(226,220,255,0.96)', fontWeight: 700, lineHeight: 1.5, fontStyle: 'italic' }}>"{bigIdea}"</div>
+          </div>
+        )}
+
+        {/* Movimentos */}
+        {movements.length > 0 && (
+          <div style={{ marginBottom: 14 }}>
+            <div style={{ fontSize: 'clamp(8px,1.8vw,9px)', fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase', color: 'rgba(147,197,253,0.60)', marginBottom: 10 }}>Movimentos do Texto</div>
+            {movements.map((mv, idx) => {
+              const level = levelOf(mv.label);
+              const isCenter = mv.isCenter || level === maxLevel;
+              const pal = QUIASMA_PALETA[level % QUIASMA_PALETA.length];
+              const verseRef = verseMap[mv.label] ?? verseMap[mv.label.replace("'", "'")] ?? '';
+              return (
+                <div key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: 8, marginTop: isCenter ? 12 : 6, marginBottom: isCenter ? 12 : 0, paddingLeft: level * 10 }}>
+                  <div style={{ width: 3, minHeight: 30, borderRadius: 4, background: pal.label, flexShrink: 0, marginTop: 3 }} />
+                  <div style={{ flexShrink: 0, minWidth: 'clamp(26px,4.5vw,34px)', textAlign: 'center', background: isCenter ? pal.bg : pal.bg.replace(/[\d.]+\)$/, '0.08)'), border: `1px solid ${isCenter ? pal.border : pal.border.replace(/[\d.]+\)$/, '0.28)')}`, borderRadius: 6, padding: '3px 6px', fontSize: 'clamp(11px,2.3vw,13px)', fontWeight: 900, color: pal.label, boxShadow: isCenter ? `0 0 10px ${pal.bg}` : undefined, alignSelf: 'flex-start' }}>{mv.label}</div>
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    {verseRef && <span style={{ fontSize: 'clamp(10px,2vw,11px)', color: pal.label, opacity: 0.78, fontWeight: 700, marginRight: 6, whiteSpace: 'nowrap' }}>{verseRef}</span>}
+                    <div style={{ fontSize: 'clamp(12px,2.6vw,14px)', color: isCenter ? pal.label : 'rgba(220,215,255,0.88)', fontWeight: isCenter ? 700 : 400, lineHeight: 1.5, display: 'inline' }}>{mv.title}</div>
+                    {mv.gancho && <div style={{ fontSize: 'clamp(11px,2.3vw,12px)', color: 'rgba(190,190,220,0.55)', fontStyle: 'italic', marginTop: 2, lineHeight: 1.4 }}>→ {mv.gancho}</div>}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        )}
+
+        {/* Eixo Cristológico */}
+        {eixo && (
+          <div style={{ padding: '10px 14px', borderRadius: 10, background: 'rgba(96,165,250,0.06)', border: '1px solid rgba(96,165,250,0.18)' }}>
+            <div style={{ fontSize: 'clamp(8px,1.8vw,9px)', fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase', color: 'rgba(147,197,253,0.65)', marginBottom: 4 }}>Eixo Cristológico</div>
+            <div style={{ fontSize: 'clamp(12px,2.5vw,13px)', color: 'rgba(200,220,255,0.85)', lineHeight: 1.65 }}>{eixo}</div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
 function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: number }) {
   const [quiasma, setQuiasma] = useState<string>('');
   const [status, setStatus] = useState<QuiasmaStatus>('loading');
@@ -10320,64 +10446,8 @@ function DiaModal({ d, onClose, innerRef }: { d: DiaDevocional; onClose: () => v
         {/* Quiasma */}
         <QuiasmaSection d={d} pericopeIdx={pericopeIdx} />
 
-        {/* PARA PREGAR — aparece após a estrutura quiástica */}
-        {gerarParaPregar(d) !== null && (
-          <div style={{
-            position: 'relative',
-            marginTop: 14,
-            borderRadius: 18,
-            overflow: 'hidden',
-            background: 'linear-gradient(135deg, rgba(20,12,40,0.95) 0%, rgba(10,18,48,0.95) 60%, rgba(20,12,40,0.95) 100%)',
-            border: '1px solid rgba(168,120,255,0.28)',
-            boxShadow: '0 0 0 1px rgba(96,165,250,0.08), 0 8px 32px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.06)',
-            padding: 'clamp(14px,3.5vw,22px) clamp(16px,4vw,24px)',
-          }}>
-            {/* Glow de fundo */}
-            <div style={{
-              position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, pointerEvents: 'none',
-              background: 'radial-gradient(ellipse 70% 50% at 15% 50%, rgba(139,92,246,0.10) 0%, transparent 70%), radial-gradient(ellipse 50% 60% at 85% 30%, rgba(96,165,250,0.08) 0%, transparent 70%)',
-            }} />
-
-            {/* Cabeçalho */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 14, position: 'relative' }}>
-              {/* Ícone púlpito */}
-              <div style={{
-                width: 28, height: 28, borderRadius: 8, flexShrink: 0,
-                background: 'linear-gradient(135deg, rgba(139,92,246,0.35), rgba(96,165,250,0.25))',
-                border: '1px solid rgba(168,120,255,0.40)',
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                boxShadow: '0 0 12px rgba(139,92,246,0.25)',
-              }}>
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="rgba(196,160,255,1)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/>
-                </svg>
-              </div>
-              <div>
-                <div style={{
-                  fontSize: 'clamp(9px,2.2vw,10px)', fontWeight: 900, letterSpacing: '0.22em',
-                  textTransform: 'uppercase',
-                  background: 'linear-gradient(90deg, rgba(196,160,255,1) 0%, rgba(147,197,253,1) 100%)',
-                  WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
-                }}>Para Pregar</div>
-              </div>
-              {/* Linha decorativa */}
-              <div style={{
-                flex: 1, height: '1px', marginLeft: 4,
-                background: 'linear-gradient(90deg, rgba(139,92,246,0.40) 0%, rgba(96,165,250,0.15) 60%, transparent 100%)',
-              }} />
-            </div>
-
-            {/* Conteúdo */}
-            <div style={{
-              position: 'relative',
-              fontSize: 'clamp(13px,3vw,15px)',
-              color: 'rgba(226,220,255,0.90)',
-              lineHeight: 1.85,
-              whiteSpace: 'pre-line',
-              fontFeatureSettings: '"kern" 1',
-            }}>{gerarParaPregar(d)}</div>
-          </div>
-        )}
+        {/* PARA PREGAR — componente estruturado com cores do quiasma */}
+        {(() => { const pp = gerarParaPregar(d); return pp ? <ParaPregarSection d={d} pericopeIdx={pericopeIdx} conteudo={pp} /> : null; })()}
 
         {/* Progresso */}
         <div style={{ marginTop: 24 }}>
