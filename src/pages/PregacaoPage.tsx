@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar';
 import { PLANO_COMPLETO, type DiaDevocional } from '../data/calendarioDevocional';
 import { gerarParaPregar } from '../data/paraPregar';
 import { SERMON_TITLES } from '../data/sermonTitles';
+import { SERMON_QUESTIONS } from '../data/sermonQuestions';
 
 // ─── Design tokens ──────────────────────────────────────────────────
 const C = {
@@ -267,7 +268,7 @@ function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: num
 }
 
 // ─── Para Pregar renderer ────────────────────────────────────────────
-function ParaPregarSection({ d, pericopeIdx, conteudo, sermonTitulo }: { d: DiaDevocional; pericopeIdx: number; conteudo: string; sermonTitulo?: string }) {
+function ParaPregarSection({ d, pericopeIdx, conteudo, sermonTitulo, sermonPergunta }: { d: DiaDevocional; pericopeIdx: number; conteudo: string; sermonTitulo?: string; sermonPergunta?: string }) {
   const [quiasmaArms, setQuiasmaArms] = useState<{ badgeLetter: string; refPart: string; desc: string; level: number; isCenter: boolean }[]>([]);
   const book = BIBLE_BOOKS.find(b => b.abrev === d.livroAbrev);
 
@@ -368,9 +369,27 @@ function ParaPregarSection({ d, pericopeIdx, conteudo, sermonTitulo }: { d: DiaD
         )}
 
         {bigIdea && (
-          <div style={{ marginBottom: 16, padding: '10px 14px', borderRadius: 10, background: 'rgba(139,92,246,0.08)', border: '1px solid rgba(139,92,246,0.20)' }}>
+          <div style={{ marginBottom: sermonPergunta ? 12 : 16, padding: '10px 14px', borderRadius: 10, background: 'rgba(139,92,246,0.08)', border: '1px solid rgba(139,92,246,0.20)' }}>
             <div style={{ fontSize: 'clamp(10px,1.8vw,12px)', fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase', color: 'rgba(196,160,255,0.65)', marginBottom: 6 }}>Big Idea</div>
             <div style={{ fontSize: 'clamp(16px,3vw,19px)', color: 'rgba(226,220,255,0.96)', fontWeight: 700, lineHeight: 1.5, fontStyle: 'italic' }}>"{bigIdea}"</div>
+          </div>
+        )}
+
+        {/* Pergunta Geradora — nasce da Big Idea, guia todos os pontos */}
+        {sermonPergunta && (
+          <div style={{ marginBottom: 16, padding: '14px 16px', borderRadius: 12, background: 'linear-gradient(135deg, rgba(96,165,250,0.08) 0%, rgba(139,92,246,0.06) 100%)', border: '1px solid rgba(96,165,250,0.28)', position: 'relative', overflow: 'hidden' }}>
+            <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 4, background: 'linear-gradient(180deg, rgba(96,165,250,1) 0%, rgba(139,92,246,1) 100%)', borderRadius: '12px 0 0 12px' }} />
+            <div style={{ paddingLeft: 8 }}>
+              <div style={{ fontSize: 'clamp(9px,1.6vw,11px)', fontWeight: 900, letterSpacing: '0.26em', textTransform: 'uppercase', color: 'rgba(147,197,253,0.70)', marginBottom: 8 }}>
+                Pergunta Geradora do Sermão
+              </div>
+              <div style={{ fontSize: 'clamp(15px,2.8vw,18px)', color: 'rgba(210,230,255,0.97)', fontWeight: 700, lineHeight: 1.55, fontStyle: 'italic' }}>
+                {sermonPergunta}
+              </div>
+              <div style={{ marginTop: 8, fontSize: 'clamp(9px,1.5vw,10px)', color: 'rgba(147,197,253,0.45)', fontWeight: 600, letterSpacing: '0.10em' }}>
+                Esta pergunta guia todos os pontos do sermão
+              </div>
+            </div>
           </div>
         )}
         {quiasmaArms.length > 0 && titlesGanchos.length > 0 && (
@@ -811,7 +830,7 @@ export default function PregacaoPage() {
                     ) : (
                       <motion.div key="homilestica" initial={{ opacity: 0, x: 10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -10 }} transition={{ duration: 0.18 }}>
                         {paraPregarConteudo ? (
-                          <ParaPregarSection d={selectedDia} pericopeIdx={selectedPericope.idx} conteudo={paraPregarConteudo} sermonTitulo={SERMON_TITLES[selectedDia.dia]} />
+                          <ParaPregarSection d={selectedDia} pericopeIdx={selectedPericope.idx} conteudo={paraPregarConteudo} sermonTitulo={SERMON_TITLES[selectedDia.dia]} sermonPergunta={SERMON_QUESTIONS[selectedDia.dia]} />
                         ) : (
                           <div style={{ padding: 32, borderRadius: 16, border: '1px solid rgba(168,120,255,0.20)', background: 'rgba(20,12,40,0.6)', color: C.muted, fontSize: 13, textAlign: 'center' }}>
                             Esboço homilético ainda não disponível para esta perícope.
