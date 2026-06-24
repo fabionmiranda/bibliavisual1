@@ -504,50 +504,79 @@ export default function PregacaoPage() {
             <motion.div key={selectedBook.slug} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -6 }} transition={{ duration: 0.2 }}>
 
               {/* Cabeçalho do livro */}
-              <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 14 }}>
-                <ChevronRight size={14} color={selectedBook.testamento === 'AT' ? C.atColor : C.ntColor} />
-                <span style={{ fontSize: 13, fontWeight: 800, color: selectedBook.testamento === 'AT' ? C.atColor : C.ntColor }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 18 }}>
+                <ChevronRight size={15} color={selectedBook.testamento === 'AT' ? C.atColor : C.ntColor} />
+                <span style={{ fontSize: 15, fontWeight: 800, color: selectedBook.testamento === 'AT' ? C.atColor : C.ntColor }}>
                   {selectedBook.nome}
                 </span>
-                {loadingPericopes && <span style={{ fontSize: 11, color: C.muted }}>Carregando perícopes...</span>}
+                {loadingPericopes && <span style={{ fontSize: 12, color: C.muted }}>Carregando perícopes...</span>}
                 {!loadingPericopes && pericopes.length > 0 && (
-                  <span style={{ fontSize: 11, color: C.muted }}>{pericopes.length} perícopes</span>
+                  <span style={{ fontSize: 12, color: C.muted, fontWeight: 600 }}>{pericopes.length} perícopes</span>
                 )}
                 {!loadingPericopes && pericopes.length === 0 && (
-                  <span style={{ fontSize: 11, color: C.muted }}>Perícopes não cadastradas ainda</span>
+                  <span style={{ fontSize: 12, color: C.muted }}>Perícopes não cadastradas ainda</span>
                 )}
               </div>
 
-              {/* Abas de perícopes — scroll horizontal */}
+              {/* Grid de perícopes */}
               {pericopes.length > 0 && (
-                <div style={{ overflowX: 'auto', marginBottom: 20, paddingBottom: 4 }}>
-                  <div style={{ display: 'flex', gap: 6, minWidth: 'max-content' }}>
+                <div style={{ marginBottom: 28 }}>
+                  <div style={{
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))',
+                    gap: 8,
+                  }}>
                     {pericopes.map(p => {
                       const active = p.idx === selectedPericopeIdx;
                       const cor = selectedBook.testamento === 'AT' ? C.atColor : C.ntColor;
-                      const corL = selectedBook.testamento === 'AT' ? 'rgba(255,200,80,0.12)' : 'rgba(80,200,255,0.10)';
+                      const corL = selectedBook.testamento === 'AT' ? 'rgba(255,200,80,0.10)' : 'rgba(80,200,255,0.09)';
                       const corB2 = selectedBook.testamento === 'AT' ? C.goldB : C.blueB;
                       return (
                         <button
                           key={p.idx}
-                          onClick={() => { setSelectedPericopeIdx(p.idx); setContentTab('quiasma'); }}
+                          onClick={() => { setSelectedPericopeIdx(p.idx); setContentTab('homilestica'); }}
                           style={{
                             all: 'unset', cursor: 'pointer',
-                            padding: '8px 14px', borderRadius: 10,
-                            background: active ? corL : 'rgba(255,255,255,0.04)',
-                            border: `1px solid ${active ? corB2 : 'rgba(255,255,255,0.08)'}`,
-                            color: active ? cor : 'rgba(255,255,255,0.60)',
+                            display: 'flex', alignItems: 'flex-start', gap: 10,
+                            padding: '12px 14px', borderRadius: 12,
+                            background: active
+                              ? corL
+                              : 'rgba(255,255,255,0.03)',
+                            border: `1px solid ${active ? corB2 : 'rgba(255,255,255,0.07)'}`,
+                            boxShadow: active ? `0 0 16px ${cor}18` : 'none',
                             transition: 'all 0.15s',
-                            whiteSpace: 'nowrap',
                           }}
+                          onMouseEnter={e => { if (!active) (e.currentTarget as HTMLButtonElement).style.background = 'rgba(255,255,255,0.06)'; }}
+                          onMouseLeave={e => { if (!active) (e.currentTarget as HTMLButtonElement).style.background = 'rgba(255,255,255,0.03)'; }}
                         >
-                          <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.14em', color: active ? cor : C.muted, marginBottom: 3 }}>
-                            [{String(p.idx).padStart(2, '0')}]
+                          {/* Número badge */}
+                          <div style={{
+                            flexShrink: 0,
+                            width: 30, height: 30, borderRadius: 8,
+                            background: active ? (selectedBook.testamento === 'AT' ? 'rgba(255,200,80,0.20)' : 'rgba(80,200,255,0.18)') : 'rgba(255,255,255,0.06)',
+                            border: `1px solid ${active ? corB2 : 'rgba(255,255,255,0.10)'}`,
+                            display: 'flex', alignItems: 'center', justifyContent: 'center',
+                            fontSize: 11, fontWeight: 900, color: active ? cor : C.muted,
+                            letterSpacing: '0.04em',
+                          }}>
+                            {String(p.idx).padStart(2, '0')}
                           </div>
-                          <div style={{ fontSize: 14, fontWeight: 700, lineHeight: 1.3, maxWidth: 200, overflow: 'hidden', textOverflow: 'ellipsis' }}>
-                            {p.titulo}
+                          {/* Texto */}
+                          <div style={{ flex: 1, minWidth: 0 }}>
+                            <div style={{
+                              fontSize: 13, fontWeight: 700, lineHeight: 1.35,
+                              color: active ? C.white : 'rgba(255,255,255,0.75)',
+                              overflow: 'hidden', display: '-webkit-box',
+                              WebkitLineClamp: 2, WebkitBoxOrient: 'vertical',
+                            }}>
+                              {p.titulo}
+                            </div>
+                            {p.ref && (
+                              <div style={{ fontSize: 11, color: active ? cor : C.muted, marginTop: 3, fontWeight: 600 }}>
+                                {p.ref}
+                              </div>
+                            )}
                           </div>
-                          {p.ref && <div style={{ fontSize: 12, color: active ? cor : C.muted, opacity: 0.75, marginTop: 3 }}>{p.ref}</div>}
                         </button>
                       );
                     })}
