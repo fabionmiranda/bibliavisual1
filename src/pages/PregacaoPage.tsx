@@ -436,6 +436,15 @@ export default function PregacaoPage() {
   const cor = selectedBook.testamento === 'AT' ? C.atColor : C.ntColor;
   const corB = selectedBook.testamento === 'AT' ? C.goldB : C.blueB;
 
+  function selectBook(book: BibleBook) {
+    setSelectedBook(book);
+    setContentTab('homilestica');
+    setTimeout(() => {
+      const el = document.getElementById('pregacao-pericopes');
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 80);
+  }
+
   function selectPericope(idx: number) {
     setSelectedPericopeIdx(idx);
     setContentTab('homilestica');
@@ -474,7 +483,7 @@ export default function PregacaoPage() {
                 return (
                   <button
                     key={book.slug}
-                    onClick={() => { setSelectedBook(book); setContentTab('homilestica'); }}
+                    onClick={() => selectBook(book)}
                     title={book.nome}
                     style={{
                       all: 'unset', cursor: 'pointer',
@@ -560,7 +569,7 @@ export default function PregacaoPage() {
           <motion.div key={selectedBook.slug} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -6 }} transition={{ duration: 0.18 }}>
 
             {/* Nome do livro + contagem */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 16 }}>
+            <div id="pregacao-pericopes" style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 16 }}>
               <span style={{ fontSize: 17, fontWeight: 800, color: cor }}>{selectedBook.nome}</span>
               {loadingPericopes && <span style={{ fontSize: 12, color: C.muted }}>Carregando...</span>}
               {!loadingPericopes && pericopes.length > 0 && (
