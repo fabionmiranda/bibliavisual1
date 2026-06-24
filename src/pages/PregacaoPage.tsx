@@ -4,6 +4,7 @@ import { BookOpen, ChevronRight } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import { PLANO_COMPLETO, type DiaDevocional } from '../data/calendarioDevocional';
 import { gerarParaPregar } from '../data/paraPregar';
+import { SERMON_TITLES } from '../data/sermonTitles';
 
 // ─── Design tokens ──────────────────────────────────────────────────
 const C = {
@@ -266,7 +267,7 @@ function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: num
 }
 
 // ─── Para Pregar renderer ────────────────────────────────────────────
-function ParaPregarSection({ d, pericopeIdx, conteudo }: { d: DiaDevocional; pericopeIdx: number; conteudo: string }) {
+function ParaPregarSection({ d, pericopeIdx, conteudo, sermonTitulo }: { d: DiaDevocional; pericopeIdx: number; conteudo: string; sermonTitulo?: string }) {
   const [quiasmaArms, setQuiasmaArms] = useState<{ label: string; badgeLetter: string; refPart: string; level: number; isCenter: boolean }[]>([]);
   const book = BIBLE_BOOKS.find(b => b.abrev === d.livroAbrev);
 
@@ -336,6 +337,24 @@ function ParaPregarSection({ d, pericopeIdx, conteudo }: { d: DiaDevocional; per
           <div style={{ fontSize: 'clamp(11px,2.2vw,13px)', fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', background: 'linear-gradient(90deg, rgba(196,160,255,1) 0%, rgba(147,197,253,1) 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Para Pregar</div>
           <div style={{ flex: 1, height: 1, marginLeft: 4, background: 'linear-gradient(90deg, rgba(139,92,246,0.40) 0%, rgba(96,165,250,0.15) 60%, transparent 100%)' }} />
         </div>
+        {/* Título do Sermão */}
+        {sermonTitulo && (
+          <div style={{ marginBottom: 18 }}>
+            <div style={{ fontSize: 'clamp(10px,1.8vw,11px)', fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(196,160,255,0.50)', marginBottom: 6 }}>
+              Título do Sermão
+            </div>
+            <div style={{
+              fontSize: 'clamp(20px,3.5vw,26px)', fontWeight: 800, lineHeight: 1.25,
+              background: 'linear-gradient(135deg, rgba(226,210,255,1) 0%, rgba(167,210,255,1) 100%)',
+              WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
+              letterSpacing: '-0.01em',
+            }}>
+              {sermonTitulo}
+            </div>
+            <div style={{ height: 1, background: 'linear-gradient(90deg, rgba(139,92,246,0.35) 0%, rgba(96,165,250,0.15) 50%, transparent 100%)', marginTop: 14 }} />
+          </div>
+        )}
+
         {bigIdea && (
           <div style={{ marginBottom: 16, padding: '10px 14px', borderRadius: 10, background: 'rgba(139,92,246,0.08)', border: '1px solid rgba(139,92,246,0.20)' }}>
             <div style={{ fontSize: 'clamp(10px,1.8vw,12px)', fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase', color: 'rgba(196,160,255,0.65)', marginBottom: 6 }}>Big Idea</div>
@@ -637,7 +656,7 @@ export default function PregacaoPage() {
                     ) : (
                       <motion.div key="homilestica" initial={{ opacity: 0, x: 10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -10 }} transition={{ duration: 0.18 }}>
                         {paraPregarConteudo ? (
-                          <ParaPregarSection d={selectedDia} pericopeIdx={selectedPericope.idx} conteudo={paraPregarConteudo} />
+                          <ParaPregarSection d={selectedDia} pericopeIdx={selectedPericope.idx} conteudo={paraPregarConteudo} sermonTitulo={SERMON_TITLES[selectedDia.dia]} />
                         ) : (
                           <div style={{ padding: 32, borderRadius: 16, border: '1px solid rgba(168,120,255,0.20)', background: 'rgba(20,12,40,0.6)', color: C.muted, fontSize: 13, textAlign: 'center' }}>
                             Esboço homilético ainda não disponível para esta perícope.
