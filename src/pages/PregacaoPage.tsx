@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { BookOpen, ChevronRight } from 'lucide-react';
+import { BookOpen, ChevronRight, ChevronDown } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import { PLANO_COMPLETO, type DiaDevocional } from '../data/calendarioDevocional';
 import { gerarParaPregar } from '../data/paraPregar';
@@ -486,110 +486,123 @@ export default function PregacaoPage() {
     }, 80);
   }
 
-  const AT_GRUPOS_MAP = [
-    { label: 'Pentateuco', slugs: ['genesis','exodo','levitico','numeros','deuteronomio'] },
-    { label: 'Históricos', slugs: ['josue','juizes','rute','1samuel','2samuel','1reis','2reis','1cronicas','2cronicas','esdras','neemias','ester'] },
-    { label: 'Poéticos',   slugs: ['jo','salmos','proverbios','eclesiastes','canticos'] },
-    { label: 'Proféticos', slugs: ['isaias','jeremias','lamentacoes','ezequiel','daniel','oseias','joel','amos','obadias','jonas','miqueias','naum','habacuque','sofonias','ageu','zacarias','malaquias'] },
-  ];
-  const NT_GRUPOS_MAP = [
-    { label: 'Evangelhos', slugs: ['mateus','marcos','lucas','joao'] },
-    { label: 'Atos & Epístolas', slugs: ['atos','romanos','1corintios','2corintios','galatas','efesios','filipenses','colossenses','1tessalonicenses','2tessalonicenses','1timoteo','2timoteo','tito','filemom','hebreus','tiago','1pedro','2pedro','1joao','2joao','3joao','judas'] },
-    { label: 'Profecia',  slugs: ['apocalipse'] },
-  ];
+  const [bookDropOpen, setBookDropOpen] = useState(false);
 
-  const renderBookChips = (grupos: typeof AT_GRUPOS_MAP, testamento: 'AT' | 'NT') => (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
-      {grupos.map(g => {
-        const books = g.slugs.map(s => BIBLE_BOOKS.find(b => b.slug === s)).filter(Boolean) as BibleBook[];
-        return (
-          <div key={g.label}>
-            <div style={{ fontSize: 9, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: testamento === 'AT' ? C.atColor : C.ntColor, opacity: 0.45, marginBottom: 7 }}>
-              {g.label}
-            </div>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5 }}>
-              {books.map(book => {
-                const active = selectedBook.slug === book.slug;
-                const bookCor = testamento === 'AT' ? C.atColor : C.ntColor;
-                const bookCorB = testamento === 'AT' ? C.goldB : C.blueB;
-                return (
-                  <button
-                    key={book.slug}
-                    onClick={() => selectBook(book)}
-                    title={book.nome}
-                    style={{
-                      all: 'unset', cursor: 'pointer',
-                      padding: active ? '5px 12px' : '5px 11px',
-                      borderRadius: 20,
-                      fontSize: 12, fontWeight: active ? 800 : 500,
-                      background: active
-                        ? (testamento === 'AT' ? 'rgba(255,200,80,0.14)' : 'rgba(80,200,255,0.12)')
-                        : 'rgba(255,255,255,0.04)',
-                      border: `1px solid ${active ? bookCorB : 'rgba(255,255,255,0.08)'}`,
-                      color: active ? bookCor : 'rgba(255,255,255,0.50)',
-                      boxShadow: active ? `0 0 12px ${bookCor}20` : 'none',
-                      transition: 'all 0.15s',
-                      whiteSpace: 'nowrap',
-                      letterSpacing: active ? '0.01em' : '0',
-                    }}
-                    onMouseEnter={e => { if (!active) { const el = e.currentTarget as HTMLButtonElement; el.style.background = 'rgba(255,255,255,0.08)'; el.style.color = 'rgba(255,255,255,0.80)'; } }}
-                    onMouseLeave={e => { if (!active) { const el = e.currentTarget as HTMLButtonElement; el.style.background = 'rgba(255,255,255,0.04)'; el.style.color = 'rgba(255,255,255,0.50)'; } }}
-                  >
-                    {book.nome}
-                  </button>
-                );
-              })}
-            </div>
-          </div>
-        );
-      })}
-    </div>
-  );
+  const GRUPOS_ABBR = [
+    { label: 'Pentateuco',  t: 'AT', slugs: ['genesis','exodo','levitico','numeros','deuteronomio'] },
+    { label: 'Históricos',  t: 'AT', slugs: ['josue','juizes','rute','1samuel','2samuel','1reis','2reis','1cronicas','2cronicas','esdras','neemias','ester'] },
+    { label: 'Poéticos',    t: 'AT', slugs: ['jo','salmos','proverbios','eclesiastes','canticos'] },
+    { label: 'Proféticos',  t: 'AT', slugs: ['isaias','jeremias','lamentacoes','ezequiel','daniel','oseias','joel','amos','obadias','jonas','miqueias','naum','habacuque','sofonias','ageu','zacarias','malaquias'] },
+    { label: 'Evangelhos',  t: 'NT', slugs: ['mateus','marcos','lucas','joao'] },
+    { label: 'Epístolas',   t: 'NT', slugs: ['atos','romanos','1corintios','2corintios','galatas','efesios','filipenses','colossenses','1tessalonicenses','2tessalonicenses','1timoteo','2timoteo','tito','filemom','hebreus','tiago','1pedro','2pedro','1joao','2joao','3joao','judas','apocalipse'] },
+  ] as const;
 
   return (
-    <div style={{ minHeight: '100vh', background: C.bg, color: C.white }}>
+    <div style={{ minHeight: '100vh', background: C.bg, color: C.white }} onClick={() => setBookDropOpen(false)}>
       <Navbar />
 
-      <div style={{ maxWidth: 1200, margin: '0 auto', padding: 'clamp(80px,10vw,100px) clamp(16px,4vw,32px) 60px' }}>
+      <div style={{ maxWidth: 1100, margin: '0 auto', padding: 'clamp(80px,10vw,100px) clamp(16px,4vw,32px) 60px' }}>
 
-        {/* Header */}
-        <div style={{ marginBottom: 32 }}>
-          <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.26em', textTransform: 'uppercase', background: 'linear-gradient(90deg, rgba(196,160,255,1) 0%, rgba(147,197,253,1) 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', marginBottom: 6 }}>
-            Pregação
-          </div>
-          <div style={{ fontSize: 'clamp(20px,3.5vw,28px)', fontWeight: 800, color: C.white, letterSpacing: '-0.02em', lineHeight: 1.2 }}>
-            Estrutura quiástica & esboço homilético
-          </div>
-        </div>
-
-        {/* ── Seletor de livros elegante: duas colunas AT | NT ── */}
-        <div style={{
-          borderRadius: 20,
-          border: `1px solid rgba(255,255,255,0.07)`,
-          background: 'rgba(255,255,255,0.02)',
-          padding: 'clamp(16px,3vw,24px)',
-          marginBottom: 32,
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr',
-          gap: 'clamp(16px,3vw,32px)',
-        }} className="pregacao-books-grid">
-          {/* AT */}
+        {/* Header + seletor inline */}
+        <div style={{ marginBottom: 32, display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 16, flexWrap: 'wrap' }}>
           <div>
-            <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase', color: C.atColor, marginBottom: 14, display: 'flex', alignItems: 'center', gap: 8 }}>
-              <span>Antigo Testamento</span>
-              <div style={{ flex: 1, height: 1, background: 'linear-gradient(90deg, rgba(255,180,50,0.25) 0%, transparent 100%)' }} />
+            <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.26em', textTransform: 'uppercase', background: 'linear-gradient(90deg, rgba(196,160,255,1) 0%, rgba(147,197,253,1) 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', marginBottom: 6 }}>
+              Pregação
             </div>
-            {renderBookChips(AT_GRUPOS_MAP, 'AT')}
+            <div style={{ fontSize: 'clamp(20px,3.5vw,28px)', fontWeight: 800, color: C.white, letterSpacing: '-0.02em', lineHeight: 1.2 }}>
+              Estrutura quiástica & esboço homilético
+            </div>
           </div>
 
-          {/* Divisor vertical */}
-          <div style={{ position: 'relative' }}>
-            <div style={{ position: 'absolute', left: -16, top: 0, bottom: 0, width: 1, background: 'rgba(255,255,255,0.06)' }} />
-            <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase', color: C.ntColor, marginBottom: 14, display: 'flex', alignItems: 'center', gap: 8 }}>
-              <span>Novo Testamento</span>
-              <div style={{ flex: 1, height: 1, background: 'linear-gradient(90deg, rgba(80,200,255,0.25) 0%, transparent 100%)' }} />
-            </div>
-            {renderBookChips(NT_GRUPOS_MAP, 'NT')}
+          {/* ── Seletor compacto de livro ── */}
+          <div style={{ position: 'relative', flexShrink: 0, marginTop: 4 }} onClick={e => e.stopPropagation()}>
+            <button
+              onClick={() => setBookDropOpen(v => !v)}
+              style={{
+                all: 'unset', cursor: 'pointer',
+                display: 'flex', alignItems: 'center', gap: 10,
+                padding: '10px 16px', borderRadius: 12,
+                background: bookDropOpen ? 'rgba(255,255,255,0.07)' : 'rgba(255,255,255,0.04)',
+                border: `1px solid ${bookDropOpen ? corB : 'rgba(255,255,255,0.10)'}`,
+                boxShadow: bookDropOpen ? `0 0 20px ${cor}18` : 'none',
+                transition: 'all 0.2s',
+                minWidth: 180,
+              }}
+            >
+              <div style={{ width: 8, height: 8, borderRadius: '50%', background: cor, flexShrink: 0, boxShadow: `0 0 6px ${cor}` }} />
+              <span style={{ fontSize: 14, fontWeight: 700, color: cor, flex: 1 }}>{selectedBook.nome}</span>
+              <span style={{ fontSize: 10, fontWeight: 600, color: C.muted, marginRight: 2 }}>{selectedBook.testamento}</span>
+              <ChevronDown size={14} color={C.muted} style={{ transition: 'transform 0.2s', transform: bookDropOpen ? 'rotate(180deg)' : 'none' }} />
+            </button>
+
+            {/* Dropdown */}
+            <AnimatePresence>
+              {bookDropOpen && (
+                <motion.div
+                  initial={{ opacity: 0, y: -6, scale: 0.97 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  exit={{ opacity: 0, y: -6, scale: 0.97 }}
+                  transition={{ duration: 0.15 }}
+                  style={{
+                    position: 'absolute', top: 'calc(100% + 8px)', right: 0,
+                    zIndex: 100, width: 'clamp(320px, 60vw, 520px)',
+                    borderRadius: 16,
+                    background: 'rgba(8,10,28,0.97)',
+                    border: '1px solid rgba(255,255,255,0.10)',
+                    boxShadow: '0 20px 60px rgba(0,0,0,0.7), 0 0 0 1px rgba(255,255,255,0.04)',
+                    backdropFilter: 'blur(24px)',
+                    padding: '14px 16px 16px',
+                    maxHeight: '70vh', overflowY: 'auto',
+                  }}
+                >
+                  {GRUPOS_ABBR.map((g, gi) => {
+                    const books = g.slugs.map(s => BIBLE_BOOKS.find(b => b.slug === s)).filter(Boolean) as BibleBook[];
+                    const isNT = g.t === 'NT';
+                    const groupCor = isNT ? C.ntColor : C.atColor;
+                    const groupCorB = isNT ? C.blueB : C.goldB;
+                    return (
+                      <div key={g.label} style={{ marginBottom: gi < GRUPOS_ABBR.length - 1 ? 12 : 0 }}>
+                        {/* Divisor AT→NT */}
+                        {gi === 4 && (
+                          <div style={{ height: 1, background: 'rgba(255,255,255,0.07)', margin: '4px 0 12px' }} />
+                        )}
+                        <div style={{ fontSize: 9, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: groupCor, opacity: 0.5, marginBottom: 6 }}>
+                          {g.label}
+                        </div>
+                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 4 }}>
+                          {books.map(book => {
+                            const active = selectedBook.slug === book.slug;
+                            return (
+                              <button
+                                key={book.slug}
+                                onClick={() => { selectBook(book); setBookDropOpen(false); }}
+                                style={{
+                                  all: 'unset', cursor: 'pointer',
+                                  padding: '4px 10px', borderRadius: 8,
+                                  fontSize: 12, fontWeight: active ? 800 : 400,
+                                  background: active
+                                    ? (isNT ? 'rgba(80,200,255,0.14)' : 'rgba(255,200,80,0.14)')
+                                    : 'rgba(255,255,255,0.04)',
+                                  border: `1px solid ${active ? groupCorB : 'rgba(255,255,255,0.07)'}`,
+                                  color: active ? groupCor : 'rgba(255,255,255,0.60)',
+                                  boxShadow: active ? `0 0 8px ${groupCor}22` : 'none',
+                                  transition: 'all 0.12s',
+                                  whiteSpace: 'nowrap',
+                                }}
+                                onMouseEnter={e => { if (!active) { const el = e.currentTarget as HTMLButtonElement; el.style.background = 'rgba(255,255,255,0.08)'; el.style.color = 'rgba(255,255,255,0.90)'; } }}
+                                onMouseLeave={e => { if (!active) { const el = e.currentTarget as HTMLButtonElement; el.style.background = 'rgba(255,255,255,0.04)'; el.style.color = 'rgba(255,255,255,0.60)'; } }}
+                              >
+                                {book.nome}
+                              </button>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    );
+                  })}
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
         </div>
 
@@ -746,11 +759,7 @@ export default function PregacaoPage() {
         </AnimatePresence>
       </div>
 
-      <style>{`
-        @media (max-width: 640px) {
-          .pregacao-books-grid { grid-template-columns: 1fr !important; }
-        }
-      `}</style>
+
     </div>
   );
 }
