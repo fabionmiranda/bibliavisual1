@@ -284,10 +284,13 @@ function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: num
 }
 
 // ─── Para Pregar renderer ──────────────────────────────────────────
+// Os labels/cores/refs/nível vêm do quiasma real; títulos e ganchos vêm do conteudo.
 function ParaPregarSection({ d, pericopeIdx, conteudo }: {
   d: DiaDevocional; pericopeIdx: number; conteudo: string;
 }) {
-  const [verseMap, setVerseMap] = useState<Record<string, string>>({});
+  const [quiasmaArms, setQuiasmaArms] = useState<{
+    label: string; badgeLetter: string; refPart: string; level: number; isCenter: boolean;
+  }[]>([]);
 
   useEffect(() => {
     const path = livroPath(d.livro, d.testamento);
@@ -297,22 +300,45 @@ function ParaPregarSection({ d, pericopeIdx, conteudo }: {
         if (!text) return;
         const bloco = extractQuiasmaBloco(text, pericopeIdx);
         if (!bloco) return;
-        const map: Record<string, string> = {};
-        for (const line of bloco.split('\n')) {
-          const m = line.trim().match(/^([A-Z]'?\d*)\s*\(([^)]+)\)/);
-          if (m) map[m[1]] = m[2];
+
+        // Replicar a mesma lógica do QuiasmaSection para extrair braços
+        const linhas = bloco.split('\n');
+        const baseLetters: string[] = [];
+        for (const l of linhas) {
+          const m = l.trim().match(/^([A-Z])'?\d*\s*[\(\-]/);
+          if (m) {
+            const base = m[1].toUpperCase();
+            if (!baseLetters.includes(base)) baseLetters.push(base);
+          }
         }
-        setVerseMap(map);
+        const maxLvl = baseLetters.length - 1;
+
+        const arms: typeof quiasmaArms = [];
+        let i = 0;
+        while (i < linhas.length) {
+          const trimmed = linhas[i].trim();
+          const labelMatch = trimmed.match(/^([A-Z])'?\d*\s*[\(\-]/);
+          if (labelMatch) {
+            const base = labelMatch[1].toUpperCase();
+            const level = Math.max(0, baseLetters.indexOf(base));
+            const badgeLetter = trimmed.match(/^([A-Z]'?\d*)/)?.[1] ?? trimmed[0];
+            const refPart = trimmed.slice(badgeLetter.length).trim();
+            arms.push({ label: trimmed, badgeLetter, refPart, level, isCenter: level === maxLvl });
+          }
+          i++;
+        }
+        setQuiasmaArms(arms);
       })
       .catch(() => {});
   }, [d, pericopeIdx]);
 
-  interface Movement { label: string; isCenter: boolean; title: string; gancho: string; }
-  const movements: Movement[] = [];
+  // Parsear apenas bigIdea, títulos+ganchos (em ordem) e eixo do conteudo
+  interface TitleGancho { title: string; gancho: string; }
   let bigIdea = '';
   let eixo = '';
+  const titlesGanchos: TitleGancho[] = [];
   let section: 'none' | 'big' | 'movimentos' | 'eixo' = 'none';
-  let pending: Partial<Movement> | null = null;
+  let pending: Partial<TitleGancho> | null = null;
 
   for (const rawLine of conteudo.split('\n')) {
     const line = rawLine.trim();
@@ -324,25 +350,18 @@ function ParaPregarSection({ d, pericopeIdx, conteudo }: {
     if (section === 'big' && !bigIdea) { bigIdea = line.replace(/^"|"$/g, ''); continue; }
     if (section === 'eixo') { eixo += (eixo ? ' ' : '') + line; continue; }
     if (section === 'movimentos') {
-      const mvMatch = line.match(/^(◉\s*)?\[([A-Z]'?\d*)\]\s*·?\s*(.+)/);
+      // Detectar linha de movimento (com ou sem label hardcoded)
+      const mvMatch = line.match(/^(?:◉\s*)?\[[A-Z]'?\d*\]\s*·?\s*(.+)/);
       if (mvMatch) {
-        if (pending?.label) movements.push(pending as Movement);
-        pending = { isCenter: !!mvMatch[1], label: mvMatch[2], title: mvMatch[3].trim(), gancho: '' };
+        if (pending !== null) titlesGanchos.push({ title: pending.title ?? '', gancho: pending.gancho ?? '' });
+        pending = { title: mvMatch[1].trim(), gancho: '' };
         continue;
       }
       const gMatch = line.match(/^→\s*(.+)/);
       if (gMatch && pending) { pending.gancho = gMatch[1]; continue; }
     }
   }
-  if (pending?.label) movements.push(pending as Movement);
-
-  const uniqueBases: string[] = [];
-  for (const mv of movements) {
-    const base = mv.label.replace(/['\d]/g, '');
-    if (!uniqueBases.includes(base)) uniqueBases.push(base);
-  }
-  const levelOf = (label: string) => Math.max(0, uniqueBases.indexOf(label.replace(/['\d]/g, '')));
-  const maxLevel = uniqueBases.length - 1;
+  if (pending !== null) titlesGanchos.push({ title: pending.title ?? '', gancho: pending.gancho ?? '' });
 
   return (
     <div style={{
@@ -353,6 +372,8 @@ function ParaPregarSection({ d, pericopeIdx, conteudo }: {
     }}>
       <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', background: 'radial-gradient(ellipse 70% 50% at 15% 50%, rgba(139,92,246,0.10) 0%, transparent 70%), radial-gradient(ellipse 50% 60% at 85% 30%, rgba(96,165,250,0.08) 0%, transparent 70%)' }} />
       <div style={{ position: 'relative', padding: 'clamp(14px,3.5vw,20px) clamp(16px,4vw,22px)' }}>
+
+        {/* Cabeçalho */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 14 }}>
           <div style={{ width: 28, height: 28, borderRadius: 8, flexShrink: 0, background: 'linear-gradient(135deg, rgba(139,92,246,0.35), rgba(96,165,250,0.25))', border: '1px solid rgba(168,120,255,0.40)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 0 12px rgba(139,92,246,0.25)' }}>
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="rgba(196,160,255,1)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
@@ -361,6 +382,7 @@ function ParaPregarSection({ d, pericopeIdx, conteudo }: {
           <div style={{ flex: 1, height: 1, marginLeft: 4, background: 'linear-gradient(90deg, rgba(139,92,246,0.40) 0%, rgba(96,165,250,0.15) 60%, transparent 100%)' }} />
         </div>
 
+        {/* Big Idea */}
         {bigIdea && (
           <div style={{ marginBottom: 14, padding: '10px 14px', borderRadius: 10, background: 'rgba(139,92,246,0.08)', border: '1px solid rgba(139,92,246,0.20)' }}>
             <div style={{ fontSize: 'clamp(8px,1.8vw,9px)', fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase', color: 'rgba(196,160,255,0.65)', marginBottom: 5 }}>Big Idea</div>
@@ -368,22 +390,47 @@ function ParaPregarSection({ d, pericopeIdx, conteudo }: {
           </div>
         )}
 
-        {movements.length > 0 && (
+        {/* Movimentos — alinhados com os braços reais do quiasma */}
+        {quiasmaArms.length > 0 && titlesGanchos.length > 0 && (
           <div style={{ marginBottom: 14 }}>
             <div style={{ fontSize: 'clamp(8px,1.8vw,9px)', fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase', color: 'rgba(147,197,253,0.60)', marginBottom: 10 }}>Movimentos do Texto</div>
-            {movements.map((mv, idx) => {
-              const level = levelOf(mv.label);
-              const isCenter = mv.isCenter || level === maxLevel;
+            {quiasmaArms.map((arm, idx) => {
+              const tg = titlesGanchos[idx];
+              if (!tg) return null;
+              const { badgeLetter, refPart, level, isCenter } = arm;
               const pal = QUIASMA_PALETA[level % QUIASMA_PALETA.length];
-              const verseRef = verseMap[mv.label] ?? verseMap[mv.label.replace("'", "'")] ?? '';
               return (
-                <div key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: 8, marginTop: isCenter ? 12 : 6, marginBottom: isCenter ? 12 : 0, paddingLeft: level * 10 }}>
+                <div key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: 8, marginTop: isCenter ? 14 : 6, marginBottom: isCenter ? 14 : 0, paddingLeft: level * 12 }}>
+                  {/* Barra lateral */}
                   <div style={{ width: 3, minHeight: 30, borderRadius: 4, background: pal.label, flexShrink: 0, marginTop: 3 }} />
-                  <div style={{ flexShrink: 0, minWidth: 'clamp(26px,4.5vw,34px)', textAlign: 'center', background: isCenter ? pal.bg : pal.bg.replace(/[\d.]+\)$/, '0.08)'), border: `1px solid ${isCenter ? pal.border : pal.border.replace(/[\d.]+\)$/, '0.28)')}`, borderRadius: 6, padding: '3px 6px', fontSize: 'clamp(11px,2.3vw,13px)', fontWeight: 900, color: pal.label, boxShadow: isCenter ? `0 0 10px ${pal.bg}` : undefined, alignSelf: 'flex-start' }}>{mv.label}</div>
+                  {/* Badge — exatamente igual ao quiasma */}
+                  <div style={{
+                    flexShrink: 0, minWidth: 'clamp(26px,4.5vw,34px)', textAlign: 'center',
+                    background: isCenter ? pal.bg : pal.bg.replace(/[\d.]+\)$/, '0.08)'),
+                    border: `1px solid ${isCenter ? pal.border : pal.border.replace(/[\d.]+\)$/, '0.28)')}`,
+                    borderRadius: 6, padding: '3px 6px',
+                    fontSize: 'clamp(11px,2.3vw,14px)', fontWeight: 900, color: pal.label,
+                    boxShadow: isCenter ? `0 0 12px ${pal.bg}` : undefined,
+                    alignSelf: 'flex-start',
+                  }}>{badgeLetter}</div>
+                  {/* Conteúdo */}
                   <div style={{ flex: 1, minWidth: 0 }}>
-                    {verseRef && <span style={{ fontSize: 'clamp(10px,2vw,11px)', color: pal.label, opacity: 0.78, fontWeight: 700, marginRight: 6, whiteSpace: 'nowrap' }}>{verseRef}</span>}
-                    <div style={{ fontSize: 'clamp(12px,2.6vw,14px)', color: isCenter ? pal.label : 'rgba(220,215,255,0.88)', fontWeight: isCenter ? 700 : 400, lineHeight: 1.5, display: 'inline' }}>{mv.title}</div>
-                    {mv.gancho && <div style={{ fontSize: 'clamp(11px,2.3vw,12px)', color: 'rgba(190,190,220,0.55)', fontStyle: 'italic', marginTop: 2, lineHeight: 1.4 }}>→ {mv.gancho}</div>}
+                    {/* Referência do versículo — igual ao quiasma */}
+                    {refPart && (
+                      <span style={{ fontSize: 'clamp(10px,2vw,11px)', color: pal.label, opacity: 0.78, fontWeight: 700, marginRight: 6, whiteSpace: 'nowrap' }}>
+                        {refPart}
+                      </span>
+                    )}
+                    {/* Título proposicional */}
+                    <span style={{ fontSize: 'clamp(12px,2.6vw,14px)', color: isCenter ? pal.label : 'rgba(220,215,255,0.88)', fontWeight: isCenter ? 700 : 400, lineHeight: 1.5 }}>
+                      {tg.title}
+                    </span>
+                    {/* Gancho */}
+                    {tg.gancho && (
+                      <div style={{ fontSize: 'clamp(11px,2.3vw,12px)', color: 'rgba(190,190,220,0.55)', fontStyle: 'italic', marginTop: 3, lineHeight: 1.4 }}>
+                        → {tg.gancho}
+                      </div>
+                    )}
                   </div>
                 </div>
               );
@@ -391,6 +438,7 @@ function ParaPregarSection({ d, pericopeIdx, conteudo }: {
           </div>
         )}
 
+        {/* Eixo Cristológico */}
         {eixo && (
           <div style={{ padding: '10px 14px', borderRadius: 10, background: 'rgba(96,165,250,0.06)', border: '1px solid rgba(96,165,250,0.18)' }}>
             <div style={{ fontSize: 'clamp(8px,1.8vw,9px)', fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase', color: 'rgba(147,197,253,0.65)', marginBottom: 4 }}>Eixo Cristológico</div>
