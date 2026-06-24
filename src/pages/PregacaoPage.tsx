@@ -652,10 +652,12 @@ export default function PregacaoPage() {
                         { glow: 'rgba(80,220,220,',  stripe: 'rgba(80,220,220,'  },
                       ];
                       const accent = CARD_ACCENTS[cardIdx % CARD_ACCENTS.length];
-                      const accentFull  = `${accent.glow}1)`;
-                      const accentMid   = `${accent.glow}0.18)`;
-                      const accentFaint = `${accent.glow}0.07)`;
-                      const accentBorder= `${accent.stripe}0.35)`;
+                      const accentFull   = `${accent.glow}1)`;
+                      const accentStrong = `${accent.glow}0.85)`;
+                      const accentMid    = `${accent.glow}0.20)`;
+                      const accentLight  = `${accent.glow}0.10)`;
+                      const accentBorder = `${accent.stripe}0.45)`;
+                      const accentBorderL= `${accent.stripe}0.22)`;
 
                       return (
                         <button
@@ -666,12 +668,12 @@ export default function PregacaoPage() {
                             display: 'flex', flexDirection: 'column',
                             padding: '0', borderRadius: 16,
                             background: active
-                              ? `linear-gradient(145deg, ${accentFaint} 0%, rgba(5,7,26,0.95) 100%)`
-                              : 'rgba(255,255,255,0.02)',
-                            border: `1px solid ${active ? accentBorder : 'rgba(255,255,255,0.07)'}`,
+                              ? `linear-gradient(145deg, ${accentMid} 0%, rgba(5,7,26,0.98) 100%)`
+                              : `linear-gradient(145deg, ${accentLight} 0%, rgba(5,7,26,0.92) 100%)`,
+                            border: `1px solid ${active ? accentBorder : accentBorderL}`,
                             boxShadow: active
-                              ? `0 0 28px ${accent.glow}0.22), 0 4px 20px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.07)`
-                              : '0 2px 12px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.03)',
+                              ? `0 0 32px ${accent.glow}0.28), 0 6px 24px rgba(0,0,0,0.55), inset 0 1px 0 ${accent.glow}0.15)`
+                              : `0 2px 14px rgba(0,0,0,0.35), inset 0 1px 0 ${accent.glow}0.08)`,
                             transition: 'all 0.2s',
                             textAlign: 'left',
                             overflow: 'hidden',
@@ -680,24 +682,24 @@ export default function PregacaoPage() {
                           onMouseEnter={e => {
                             if (!active) {
                               const el = e.currentTarget as HTMLButtonElement;
-                              el.style.background = `linear-gradient(145deg, ${accentFaint} 0%, rgba(255,255,255,0.03) 100%)`;
+                              el.style.background = `linear-gradient(145deg, ${accentMid} 0%, rgba(5,7,26,0.96) 100%)`;
                               el.style.borderColor = accentBorder;
-                              el.style.boxShadow = `0 0 18px ${accent.glow}0.15), 0 4px 16px rgba(0,0,0,0.4)`;
+                              el.style.boxShadow = `0 0 22px ${accent.glow}0.20), 0 5px 18px rgba(0,0,0,0.45), inset 0 1px 0 ${accent.glow}0.12)`;
                             }
                           }}
                           onMouseLeave={e => {
                             if (!active) {
                               const el = e.currentTarget as HTMLButtonElement;
-                              el.style.background = 'rgba(255,255,255,0.02)';
-                              el.style.borderColor = 'rgba(255,255,255,0.07)';
-                              el.style.boxShadow = '0 2px 12px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.03)';
+                              el.style.background = `linear-gradient(145deg, ${accentLight} 0%, rgba(5,7,26,0.92) 100%)`;
+                              el.style.borderColor = accentBorderL;
+                              el.style.boxShadow = `0 2px 14px rgba(0,0,0,0.35), inset 0 1px 0 ${accent.glow}0.08)`;
                             }
                           }}
                         >
-                          {/* Listra colorida no topo */}
+                          {/* Listra colorida no topo — mais espessa e viva */}
                           <div style={{
-                            height: 3, width: '100%',
-                            background: `linear-gradient(90deg, ${accentFull} 0%, ${accent.glow}0.3) 60%, transparent 100%)`,
+                            height: 4, width: '100%',
+                            background: `linear-gradient(90deg, ${accentFull} 0%, ${accent.glow}0.5) 70%, transparent 100%)`,
                             borderRadius: '16px 16px 0 0',
                           }} />
 
@@ -715,12 +717,12 @@ export default function PregacaoPage() {
                                 {String(p.idx).padStart(2, '0')}
                               </div>
                               {p.ref && (
-                                <span style={{ fontSize: 12, color: active ? accentFull : 'rgba(255,255,255,0.60)', fontWeight: 700 }}>
+                                <span style={{ fontSize: 12, color: accentStrong, fontWeight: 700 }}>
                                   {p.ref}
                                 </span>
                               )}
                               {active && (
-                                <div style={{ marginLeft: 'auto', width: 7, height: 7, borderRadius: '50%', background: accentFull, boxShadow: `0 0 8px ${accentFull}` }} />
+                                <div style={{ marginLeft: 'auto', width: 7, height: 7, borderRadius: '50%', background: accentFull, boxShadow: `0 0 10px ${accentFull}` }} />
                               )}
                             </div>
 
@@ -728,7 +730,7 @@ export default function PregacaoPage() {
                             {sermonTitle && (
                               <div style={{
                                 fontSize: 14, fontWeight: 800, lineHeight: 1.38,
-                                color: 'rgba(255,255,255,0.95)',
+                                color: accentFull,
                                 marginBottom: 8,
                                 overflow: 'hidden', display: '-webkit-box',
                                 WebkitLineClamp: 3, WebkitBoxOrient: 'vertical',
@@ -737,14 +739,14 @@ export default function PregacaoPage() {
                               </div>
                             )}
 
-                            {/* Título da perícope — secundário */}
+                            {/* Título da perícope — secundário com cor viva */}
                             <div style={{
-                              fontSize: 11, fontWeight: 500, lineHeight: 1.4,
-                              color: active ? accentFull : 'rgba(255,255,255,0.42)',
+                              fontSize: 11, fontWeight: 600, lineHeight: 1.4,
+                              color: accentStrong,
                               overflow: 'hidden', display: '-webkit-box',
                               WebkitLineClamp: 2, WebkitBoxOrient: 'vertical',
                               paddingTop: sermonTitle ? 7 : 0,
-                              borderTop: sermonTitle ? `1px solid rgba(255,255,255,0.07)` : 'none',
+                              borderTop: sermonTitle ? `1px solid ${accentBorderL}` : 'none',
                             }}>
                               {p.titulo}
                             </div>
