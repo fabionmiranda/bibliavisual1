@@ -630,60 +630,85 @@ export default function PregacaoPage() {
                 <div style={{ marginBottom: 28 }}>
                   <div style={{
                     display: 'grid',
-                    gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))',
-                    gap: 8,
+                    gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+                    gap: 10,
                   }}>
                     {pericopes.map(p => {
                       const active = p.idx === selectedPericopeIdx;
-                      const cor = selectedBook.testamento === 'AT' ? C.atColor : C.ntColor;
-                      const corL = selectedBook.testamento === 'AT' ? 'rgba(255,200,80,0.10)' : 'rgba(80,200,255,0.09)';
-                      const corB2 = selectedBook.testamento === 'AT' ? C.goldB : C.blueB;
+                      const pCor  = selectedBook.testamento === 'AT' ? C.atColor : C.ntColor;
+                      const pCorL = selectedBook.testamento === 'AT' ? 'rgba(255,200,80,0.08)' : 'rgba(80,200,255,0.07)';
+                      const pCorB = selectedBook.testamento === 'AT' ? C.goldB : C.blueB;
+                      const dia   = bookDays[p.idx - 1];
+                      const sermonTitle = dia ? SERMON_TITLES[dia.dia] : undefined;
                       return (
                         <button
                           key={p.idx}
                           onClick={() => selectPericope(p.idx)}
                           style={{
                             all: 'unset', cursor: 'pointer',
-                            display: 'flex', alignItems: 'flex-start', gap: 10,
-                            padding: '12px 14px', borderRadius: 12,
+                            display: 'flex', flexDirection: 'column',
+                            padding: '14px 16px 16px', borderRadius: 14,
                             background: active
-                              ? corL
-                              : 'rgba(255,255,255,0.03)',
-                            border: `1px solid ${active ? corB2 : 'rgba(255,255,255,0.07)'}`,
-                            boxShadow: active ? `0 0 16px ${cor}18` : 'none',
-                            transition: 'all 0.15s',
+                              ? `linear-gradient(135deg, ${pCorL} 0%, rgba(255,255,255,0.02) 100%)`
+                              : 'rgba(255,255,255,0.025)',
+                            border: `1px solid ${active ? pCorB : 'rgba(255,255,255,0.07)'}`,
+                            boxShadow: active ? `0 0 24px ${pCor}20, inset 0 1px 0 rgba(255,255,255,0.06)` : 'inset 0 1px 0 rgba(255,255,255,0.03)',
+                            transition: 'all 0.18s',
+                            textAlign: 'left',
                           }}
-                          onMouseEnter={e => { if (!active) (e.currentTarget as HTMLButtonElement).style.background = 'rgba(255,255,255,0.06)'; }}
-                          onMouseLeave={e => { if (!active) (e.currentTarget as HTMLButtonElement).style.background = 'rgba(255,255,255,0.03)'; }}
+                          onMouseEnter={e => { if (!active) { const el = e.currentTarget as HTMLButtonElement; el.style.background = 'rgba(255,255,255,0.05)'; el.style.borderColor = 'rgba(255,255,255,0.12)'; } }}
+                          onMouseLeave={e => { if (!active) { const el = e.currentTarget as HTMLButtonElement; el.style.background = 'rgba(255,255,255,0.025)'; el.style.borderColor = 'rgba(255,255,255,0.07)'; } }}
                         >
-                          {/* Número badge */}
-                          <div style={{
-                            flexShrink: 0,
-                            width: 30, height: 30, borderRadius: 8,
-                            background: active ? (selectedBook.testamento === 'AT' ? 'rgba(255,200,80,0.20)' : 'rgba(80,200,255,0.18)') : 'rgba(255,255,255,0.06)',
-                            border: `1px solid ${active ? corB2 : 'rgba(255,255,255,0.10)'}`,
-                            display: 'flex', alignItems: 'center', justifyContent: 'center',
-                            fontSize: 11, fontWeight: 900, color: active ? cor : C.muted,
-                            letterSpacing: '0.04em',
-                          }}>
-                            {String(p.idx).padStart(2, '0')}
-                          </div>
-                          {/* Texto */}
-                          <div style={{ flex: 1, minWidth: 0 }}>
+                          {/* Topo: número + referência */}
+                          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
                             <div style={{
-                              fontSize: 13, fontWeight: 700, lineHeight: 1.35,
-                              color: active ? C.white : 'rgba(255,255,255,0.75)',
-                              overflow: 'hidden', display: '-webkit-box',
-                              WebkitLineClamp: 2, WebkitBoxOrient: 'vertical',
+                              flexShrink: 0,
+                              padding: '3px 8px', borderRadius: 6,
+                              background: active ? (selectedBook.testamento === 'AT' ? 'rgba(255,200,80,0.18)' : 'rgba(80,200,255,0.15)') : 'rgba(255,255,255,0.06)',
+                              border: `1px solid ${active ? pCorB : 'rgba(255,255,255,0.09)'}`,
+                              fontSize: 10, fontWeight: 900, color: active ? pCor : C.muted,
+                              letterSpacing: '0.08em',
                             }}>
-                              {p.titulo}
+                              {String(p.idx).padStart(2, '0')}
                             </div>
                             {p.ref && (
-                              <div style={{ fontSize: 11, color: active ? cor : C.muted, marginTop: 3, fontWeight: 600 }}>
+                              <span style={{ fontSize: 11, color: active ? pCor : 'rgba(255,255,255,0.35)', fontWeight: 700 }}>
                                 {p.ref}
-                              </div>
+                              </span>
+                            )}
+                            {active && (
+                              <div style={{ marginLeft: 'auto', width: 6, height: 6, borderRadius: '50%', background: pCor, boxShadow: `0 0 6px ${pCor}` }} />
                             )}
                           </div>
+
+                          {/* Título da perícope */}
+                          <div style={{
+                            fontSize: 13, fontWeight: 700, lineHeight: 1.4,
+                            color: active ? C.white : 'rgba(255,255,255,0.70)',
+                            marginBottom: sermonTitle ? 8 : 0,
+                            overflow: 'hidden', display: '-webkit-box',
+                            WebkitLineClamp: 2, WebkitBoxOrient: 'vertical',
+                          }}>
+                            {p.titulo}
+                          </div>
+
+                          {/* Título do sermão — destaque gradient */}
+                          {sermonTitle && (
+                            <div style={{
+                              fontSize: 12, fontWeight: 600, lineHeight: 1.45,
+                              fontStyle: 'italic',
+                              background: active
+                                ? `linear-gradient(90deg, ${pCor} 0%, rgba(196,160,255,1) 100%)`
+                                : 'linear-gradient(90deg, rgba(196,160,255,0.70) 0%, rgba(147,197,253,0.70) 100%)',
+                              WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
+                              overflow: 'hidden', display: '-webkit-box',
+                              WebkitLineClamp: 2, WebkitBoxOrient: 'vertical',
+                              paddingTop: 6,
+                              borderTop: `1px solid ${active ? pCorB : 'rgba(255,255,255,0.06)'}`,
+                            }}>
+                              {sermonTitle}
+                            </div>
+                          )}
                         </button>
                       );
                     })}
