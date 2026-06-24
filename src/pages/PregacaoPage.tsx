@@ -396,7 +396,7 @@ function ParaPregarSection({ d, pericopeIdx, conteudo, sermonTitulo }: { d: DiaD
 
 // ─── Main Page ───────────────────────────────────────────────────────
 export default function PregacaoPage() {
-  const [selectedBook, setSelectedBook] = useState<BibleBook | null>(null);
+  const [selectedBook, setSelectedBook] = useState<BibleBook>(BIBLE_BOOKS[0]); // Gênesis por padrão
   const [pericopes, setPericopes] = useState<Pericope[]>([]);
   const [loadingPericopes, setLoadingPericopes] = useState(false);
   const [selectedPericopeIdx, setSelectedPericopeIdx] = useState<number | null>(null);
@@ -404,7 +404,6 @@ export default function PregacaoPage() {
 
   // Busca perícopes quando muda o livro
   useEffect(() => {
-    if (!selectedBook) return;
     setLoadingPericopes(true);
     setPericopes([]);
     setSelectedPericopeIdx(null);
@@ -424,10 +423,7 @@ export default function PregacaoPage() {
       .catch(() => setLoadingPericopes(false));
   }, [selectedBook]);
 
-  const bookDays = useMemo(() => {
-    if (!selectedBook) return [];
-    return PLANO_COMPLETO.filter(d => d.livroAbrev === selectedBook.abrev);
-  }, [selectedBook]);
+  const bookDays = useMemo(() => PLANO_COMPLETO.filter(d => d.livroAbrev === selectedBook.abrev), [selectedBook]);
 
   const selectedDia: DiaDevocional | null = useMemo(() => {
     if (!selectedPericopeIdx || bookDays.length === 0) return null;
@@ -437,105 +433,117 @@ export default function PregacaoPage() {
   const selectedPericope = pericopes.find(p => p.idx === selectedPericopeIdx) ?? null;
   const paraPregarConteudo = selectedDia ? gerarParaPregar(selectedDia) : null;
 
-  const atGroups = AT_GRUPOS.map(g => ({ grupo: g, books: BIBLE_BOOKS.filter(b => b.testamento === 'AT' && b.grupo === g) }));
-  const ntGroups = NT_GRUPOS.map(g => ({ grupo: g, books: BIBLE_BOOKS.filter(b => b.testamento === 'NT' && b.grupo === g) }));
-
-  const renderBookGroup = (grupo: string, books: BibleBook[], cor: string) => (
-    <div key={grupo} style={{ marginBottom: 20 }}>
-      <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: cor, opacity: 0.6, marginBottom: 8, paddingLeft: 2 }}>
-        {grupo}
-      </div>
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
-        {books.map(book => {
-          const active = selectedBook?.slug === book.slug;
-          return (
-            <button
-              key={book.slug}
-              onClick={() => { setSelectedBook(book); setContentTab('quiasma'); }}
-              style={{
-                all: 'unset', cursor: 'pointer',
-                padding: '8px 14px', borderRadius: 8,
-                fontSize: 14, fontWeight: 700,
-                background: active ? (book.testamento === 'AT' ? 'rgba(255,200,80,0.15)' : 'rgba(80,200,255,0.12)') : 'rgba(255,255,255,0.04)',
-                border: `1px solid ${active ? cor : 'rgba(255,255,255,0.08)'}`,
-                color: active ? cor : 'rgba(255,255,255,0.65)',
-                transition: 'all 0.15s',
-                boxShadow: active ? `0 0 10px ${cor}22` : 'none',
-                whiteSpace: 'nowrap',
-              }}
-              onMouseEnter={e => { if (!active) { (e.currentTarget as HTMLButtonElement).style.background = 'rgba(255,255,255,0.07)'; (e.currentTarget as HTMLButtonElement).style.color = 'rgba(255,255,255,0.9)'; } }}
-              onMouseLeave={e => { if (!active) { (e.currentTarget as HTMLButtonElement).style.background = 'rgba(255,255,255,0.04)'; (e.currentTarget as HTMLButtonElement).style.color = 'rgba(255,255,255,0.65)'; } }}
-            >
-              {book.nome}
-            </button>
-          );
-        })}
-      </div>
-    </div>
-  );
+  const cor = selectedBook.testamento === 'AT' ? C.atColor : C.ntColor;
+  const corB = selectedBook.testamento === 'AT' ? C.goldB : C.blueB;
+  const corL = selectedBook.testamento === 'AT' ? 'rgba(255,200,80,0.10)' : 'rgba(80,200,255,0.09)';
 
   return (
     <div style={{ minHeight: '100vh', background: C.bg, color: C.white }}>
       <Navbar />
 
-      <div style={{ maxWidth: 1100, margin: '0 auto', padding: 'clamp(80px,10vw,100px) clamp(16px,4vw,32px) 60px' }}>
+      <div style={{ maxWidth: 1200, margin: '0 auto', padding: 'clamp(80px,10vw,100px) clamp(16px,4vw,32px) 60px' }}>
 
         {/* Header */}
-        <div style={{ marginBottom: 36 }}>
-          <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.26em', textTransform: 'uppercase', background: 'linear-gradient(90deg, rgba(196,160,255,1) 0%, rgba(147,197,253,1) 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', marginBottom: 8 }}>
+        <div style={{ marginBottom: 28 }}>
+          <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.26em', textTransform: 'uppercase', background: 'linear-gradient(90deg, rgba(196,160,255,1) 0%, rgba(147,197,253,1) 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', marginBottom: 6 }}>
             Pregação
           </div>
-          <div style={{ fontSize: 'clamp(22px,4vw,32px)', fontWeight: 800, color: C.white, letterSpacing: '-0.02em', lineHeight: 1.2 }}>
+          <div style={{ fontSize: 'clamp(20px,3.5vw,28px)', fontWeight: 800, color: C.white, letterSpacing: '-0.02em', lineHeight: 1.2 }}>
             Estrutura quiástica & esboço homilético
-          </div>
-          <div style={{ fontSize: 13, color: C.muted, marginTop: 6, lineHeight: 1.6 }}>
-            Selecione um livro da Bíblia para explorar as perícopes, a estrutura quiástica e o esboço para pregar.
           </div>
         </div>
 
-        {/* ── Grade de livros ── */}
-        <div style={{ borderRadius: 20, border: `1px solid ${C.border}`, background: 'rgba(255,255,255,0.025)', padding: 'clamp(16px,3vw,24px)', marginBottom: 28 }}>
+        {/* ── Abas de livros ── */}
+        <div style={{ marginBottom: 28 }}>
           {/* AT */}
-          <div style={{ marginBottom: 20 }}>
-            <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase', color: C.atColor, marginBottom: 14, display: 'flex', alignItems: 'center', gap: 10 }}>
-              <span>Antigo Testamento</span>
-              <div style={{ flex: 1, height: 1, background: 'linear-gradient(90deg, rgba(255,180,50,0.30) 0%, transparent 100%)' }} />
+          <div style={{ marginBottom: 10 }}>
+            <div style={{ fontSize: 9, fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase', color: C.atColor, opacity: 0.55, marginBottom: 8 }}>
+              Antigo Testamento
             </div>
-            {atGroups.map(({ grupo, books }) => renderBookGroup(grupo, books, C.atColor))}
+            <div style={{ overflowX: 'auto', paddingBottom: 2 }}>
+              <div style={{ display: 'flex', gap: 4, minWidth: 'max-content' }}>
+                {BIBLE_BOOKS.filter(b => b.testamento === 'AT').map(book => {
+                  const active = selectedBook.slug === book.slug;
+                  return (
+                    <button
+                      key={book.slug}
+                      onClick={() => { setSelectedBook(book); setContentTab('homilestica'); }}
+                      style={{
+                        all: 'unset', cursor: 'pointer',
+                        padding: '7px 13px', borderRadius: 8,
+                        fontSize: 13, fontWeight: active ? 800 : 600,
+                        background: active ? 'rgba(255,200,80,0.12)' : 'rgba(255,255,255,0.035)',
+                        border: `1px solid ${active ? C.goldB : 'rgba(255,255,255,0.07)'}`,
+                        color: active ? C.atColor : 'rgba(255,255,255,0.55)',
+                        boxShadow: active ? `0 0 14px rgba(255,200,80,0.18)` : 'none',
+                        transition: 'all 0.15s',
+                        whiteSpace: 'nowrap',
+                      }}
+                      onMouseEnter={e => { if (!active) { const el = e.currentTarget as HTMLButtonElement; el.style.background = 'rgba(255,255,255,0.065)'; el.style.color = 'rgba(255,255,255,0.85)'; } }}
+                      onMouseLeave={e => { if (!active) { const el = e.currentTarget as HTMLButtonElement; el.style.background = 'rgba(255,255,255,0.035)'; el.style.color = 'rgba(255,255,255,0.55)'; } }}
+                    >
+                      {book.nome}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
           </div>
-
-          {/* Divisor */}
-          <div style={{ height: 1, background: C.border, margin: '4px 0 20px' }} />
 
           {/* NT */}
           <div>
-            <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase', color: C.ntColor, marginBottom: 14, display: 'flex', alignItems: 'center', gap: 10 }}>
-              <span>Novo Testamento</span>
-              <div style={{ flex: 1, height: 1, background: 'linear-gradient(90deg, rgba(80,200,255,0.30) 0%, transparent 100%)' }} />
+            <div style={{ fontSize: 9, fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase', color: C.ntColor, opacity: 0.55, marginBottom: 8 }}>
+              Novo Testamento
             </div>
-            {ntGroups.map(({ grupo, books }) => renderBookGroup(grupo, books, C.ntColor))}
+            <div style={{ overflowX: 'auto', paddingBottom: 2 }}>
+              <div style={{ display: 'flex', gap: 4, minWidth: 'max-content' }}>
+                {BIBLE_BOOKS.filter(b => b.testamento === 'NT').map(book => {
+                  const active = selectedBook.slug === book.slug;
+                  return (
+                    <button
+                      key={book.slug}
+                      onClick={() => { setSelectedBook(book); setContentTab('homilestica'); }}
+                      style={{
+                        all: 'unset', cursor: 'pointer',
+                        padding: '7px 13px', borderRadius: 8,
+                        fontSize: 13, fontWeight: active ? 800 : 600,
+                        background: active ? 'rgba(80,200,255,0.12)' : 'rgba(255,255,255,0.035)',
+                        border: `1px solid ${active ? C.blueB : 'rgba(255,255,255,0.07)'}`,
+                        color: active ? C.ntColor : 'rgba(255,255,255,0.55)',
+                        boxShadow: active ? `0 0 14px rgba(80,200,255,0.18)` : 'none',
+                        transition: 'all 0.15s',
+                        whiteSpace: 'nowrap',
+                      }}
+                      onMouseEnter={e => { if (!active) { const el = e.currentTarget as HTMLButtonElement; el.style.background = 'rgba(255,255,255,0.065)'; el.style.color = 'rgba(255,255,255,0.85)'; } }}
+                      onMouseLeave={e => { if (!active) { const el = e.currentTarget as HTMLButtonElement; el.style.background = 'rgba(255,255,255,0.035)'; el.style.color = 'rgba(255,255,255,0.55)'; } }}
+                    >
+                      {book.nome}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
           </div>
         </div>
 
-        {/* ── Perícopes (abas horizontais) ── */}
-        <AnimatePresence mode="wait">
-          {selectedBook && (
-            <motion.div key={selectedBook.slug} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -6 }} transition={{ duration: 0.2 }}>
+        {/* Divisor */}
+        <div style={{ height: 1, background: `linear-gradient(90deg, ${corB} 0%, transparent 80%)`, marginBottom: 24 }} />
 
-              {/* Cabeçalho do livro */}
-              <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 18 }}>
-                <ChevronRight size={15} color={selectedBook.testamento === 'AT' ? C.atColor : C.ntColor} />
-                <span style={{ fontSize: 15, fontWeight: 800, color: selectedBook.testamento === 'AT' ? C.atColor : C.ntColor }}>
-                  {selectedBook.nome}
-                </span>
-                {loadingPericopes && <span style={{ fontSize: 12, color: C.muted }}>Carregando perícopes...</span>}
-                {!loadingPericopes && pericopes.length > 0 && (
-                  <span style={{ fontSize: 12, color: C.muted, fontWeight: 600 }}>{pericopes.length} perícopes</span>
-                )}
-                {!loadingPericopes && pericopes.length === 0 && (
-                  <span style={{ fontSize: 12, color: C.muted }}>Perícopes não cadastradas ainda</span>
-                )}
-              </div>
+        {/* ── Perícopes ── */}
+        <AnimatePresence mode="wait">
+          <motion.div key={selectedBook.slug} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -6 }} transition={{ duration: 0.18 }}>
+
+            {/* Status do livro */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 16 }}>
+              <span style={{ fontSize: 16, fontWeight: 800, color: cor }}>{selectedBook.nome}</span>
+              {loadingPericopes && <span style={{ fontSize: 12, color: C.muted }}>Carregando...</span>}
+              {!loadingPericopes && pericopes.length > 0 && (
+                <span style={{ fontSize: 12, color: C.muted, fontWeight: 600 }}>{pericopes.length} perícopes</span>
+              )}
+              {!loadingPericopes && pericopes.length === 0 && (
+                <span style={{ fontSize: 12, color: C.muted }}>Perícopes ainda não cadastradas</span>
+              )}
+            </div>
 
               {/* Grid de perícopes */}
               {pericopes.length > 0 && (
@@ -667,16 +675,8 @@ export default function PregacaoPage() {
                   </AnimatePresence>
                 </motion.div>
               )}
-            </motion.div>
-          )}
+          </motion.div>
         </AnimatePresence>
-
-        {/* Estado inicial (nenhum livro selecionado) */}
-        {!selectedBook && (
-          <div style={{ textAlign: 'center', padding: '40px 0', color: C.muted, fontSize: 13 }}>
-            Selecione um livro acima para começar.
-          </div>
-        )}
       </div>
     </div>
   );
