@@ -6,6 +6,7 @@ import { PLANO_COMPLETO, type DiaDevocional } from '../data/calendarioDevocional
 import { gerarParaPregar } from '../data/paraPregar';
 import { SERMON_TITLES } from '../data/sermonTitles';
 import { SERMON_QUESTIONS } from '../data/sermonQuestions';
+import { SERMON_GANCHOS } from '../data/sermonGanchos';
 
 // ─── Design tokens ──────────────────────────────────────────────────
 const C = {
@@ -399,6 +400,8 @@ function ParaPregarSection({ d, pericopeIdx, conteudo, sermonTitulo, sermonPergu
               const tg = titlesGanchos[idx];
               if (!tg) return null;
               const { badgeLetter, refPart, desc, level, isCenter } = arm;
+              const overrideGanchos = SERMON_GANCHOS[d.dia];
+              const gancho = (overrideGanchos && overrideGanchos[idx]) ? overrideGanchos[idx] : tg.gancho;
               const pal = QUIASMA_PALETA[level % QUIASMA_PALETA.length];
               return (
                 <div key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: 10, marginTop: isCenter ? 16 : 8, marginBottom: isCenter ? 16 : 2, paddingLeft: level * 14 }}>
@@ -413,9 +416,9 @@ function ParaPregarSection({ d, pericopeIdx, conteudo, sermonTitulo, sermonPergu
                       <span style={{ fontSize: 'clamp(11px,2vw,13px)', color: pal.label, opacity: 0.8, fontWeight: 700, marginRight: 6, whiteSpace: 'nowrap' }}>{refPart}</span>
                     )}
                     {/* Gancho — itálico, em destaque, vem primeiro */}
-                    {tg.gancho && (
+                    {gancho && (
                       <div style={{ fontSize: 'clamp(14px,2.5vw,16px)', color: isCenter ? pal.label : 'rgba(220,215,255,0.95)', fontStyle: 'italic', fontWeight: isCenter ? 700 : 500, lineHeight: 1.5, marginTop: refPart ? 4 : 0 }}>
-                        {tg.gancho}
+                        {gancho}
                       </div>
                     )}
                     {/* Texto padrão do quiasma — abaixo, menor e mais suave */}
