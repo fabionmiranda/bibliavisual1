@@ -225,8 +225,8 @@ function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: num
           <BookOpen size={15} color={cor} />
         </div>
         <div>
-          <div style={{ fontSize: 10, fontWeight: 900, color: cor, letterSpacing: '0.20em', textTransform: 'uppercase' }}>Estrutura Quiástica</div>
-          <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.4)', marginTop: 1 }}>{d.livro} — Perícope {pericopeIdx}</div>
+          <div style={{ fontSize: 13, fontWeight: 900, color: cor, letterSpacing: '0.20em', textTransform: 'uppercase' }}>Estrutura Quiástica</div>
+          <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.4)', marginTop: 2 }}>{d.livro} — Perícope {pericopeIdx}</div>
         </div>
       </div>
       <div style={{ background: 'rgba(5,7,26,0.85)', padding: '16px 14px' }}>
@@ -333,18 +333,18 @@ function ParaPregarSection({ d, pericopeIdx, conteudo }: { d: DiaDevocional; per
           <div style={{ width: 28, height: 28, borderRadius: 8, flexShrink: 0, background: 'linear-gradient(135deg, rgba(139,92,246,0.35), rgba(96,165,250,0.25))', border: '1px solid rgba(168,120,255,0.40)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 0 12px rgba(139,92,246,0.25)' }}>
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="rgba(196,160,255,1)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
           </div>
-          <div style={{ fontSize: 'clamp(9px,2.2vw,10px)', fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', background: 'linear-gradient(90deg, rgba(196,160,255,1) 0%, rgba(147,197,253,1) 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Para Pregar</div>
+          <div style={{ fontSize: 'clamp(11px,2.2vw,13px)', fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', background: 'linear-gradient(90deg, rgba(196,160,255,1) 0%, rgba(147,197,253,1) 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Para Pregar</div>
           <div style={{ flex: 1, height: 1, marginLeft: 4, background: 'linear-gradient(90deg, rgba(139,92,246,0.40) 0%, rgba(96,165,250,0.15) 60%, transparent 100%)' }} />
         </div>
         {bigIdea && (
           <div style={{ marginBottom: 16, padding: '10px 14px', borderRadius: 10, background: 'rgba(139,92,246,0.08)', border: '1px solid rgba(139,92,246,0.20)' }}>
-            <div style={{ fontSize: 'clamp(8px,1.8vw,9px)', fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase', color: 'rgba(196,160,255,0.65)', marginBottom: 5 }}>Big Idea</div>
-            <div style={{ fontSize: 'clamp(13px,3vw,15px)', color: 'rgba(226,220,255,0.96)', fontWeight: 700, lineHeight: 1.5, fontStyle: 'italic' }}>"{bigIdea}"</div>
+            <div style={{ fontSize: 'clamp(10px,1.8vw,12px)', fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase', color: 'rgba(196,160,255,0.65)', marginBottom: 6 }}>Big Idea</div>
+            <div style={{ fontSize: 'clamp(16px,3vw,19px)', color: 'rgba(226,220,255,0.96)', fontWeight: 700, lineHeight: 1.5, fontStyle: 'italic' }}>"{bigIdea}"</div>
           </div>
         )}
         {quiasmaArms.length > 0 && titlesGanchos.length > 0 && (
           <div style={{ marginBottom: 16 }}>
-            <div style={{ fontSize: 'clamp(8px,1.8vw,9px)', fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase', color: 'rgba(147,197,253,0.60)', marginBottom: 10 }}>Movimentos do Texto</div>
+            <div style={{ fontSize: 'clamp(10px,1.8vw,12px)', fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase', color: 'rgba(147,197,253,0.60)', marginBottom: 12 }}>Movimentos do Texto</div>
             {quiasmaArms.map((arm, idx) => {
               const tg = titlesGanchos[idx];
               if (!tg) return null;
@@ -353,11 +353,11 @@ function ParaPregarSection({ d, pericopeIdx, conteudo }: { d: DiaDevocional; per
               return (
                 <div key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: 8, marginTop: isCenter ? 14 : 6, marginBottom: isCenter ? 14 : 0, paddingLeft: level * 12 }}>
                   <div style={{ width: 3, minHeight: 30, borderRadius: 4, background: pal.label, flexShrink: 0, marginTop: 3 }} />
-                  <div style={{ flexShrink: 0, minWidth: 'clamp(26px,4.5vw,34px)', textAlign: 'center', background: isCenter ? pal.bg : pal.bg.replace(/[\d.]+\)$/, '0.08)'), border: `1px solid ${isCenter ? pal.border : pal.border.replace(/[\d.]+\)$/, '0.28)')}`, borderRadius: 6, padding: '3px 6px', fontSize: 'clamp(11px,2.3vw,14px)', fontWeight: 900, color: pal.label, boxShadow: isCenter ? `0 0 12px ${pal.bg}` : undefined, alignSelf: 'flex-start' }}>{badgeLetter}</div>
+                  <div style={{ flexShrink: 0, minWidth: 'clamp(30px,4.5vw,38px)', textAlign: 'center', background: isCenter ? pal.bg : pal.bg.replace(/[\d.]+\)$/, '0.08)'), border: `1px solid ${isCenter ? pal.border : pal.border.replace(/[\d.]+\)$/, '0.28)')}`, borderRadius: 6, padding: '4px 7px', fontSize: 'clamp(13px,2.3vw,17px)', fontWeight: 900, color: pal.label, boxShadow: isCenter ? `0 0 12px ${pal.bg}` : undefined, alignSelf: 'flex-start' }}>{badgeLetter}</div>
                   <div style={{ flex: 1, minWidth: 0 }}>
-                    {refPart && <span style={{ fontSize: 'clamp(10px,2vw,11px)', color: pal.label, opacity: 0.78, fontWeight: 700, marginRight: 6, whiteSpace: 'nowrap' }}>{refPart}</span>}
-                    <span style={{ fontSize: 'clamp(12px,2.6vw,14px)', color: isCenter ? pal.label : 'rgba(220,215,255,0.88)', fontWeight: isCenter ? 700 : 400, lineHeight: 1.5 }}>{tg.title}</span>
-                    {tg.gancho && <div style={{ fontSize: 'clamp(11px,2.3vw,12px)', color: 'rgba(190,190,220,0.55)', fontStyle: 'italic', marginTop: 3, lineHeight: 1.4 }}>→ {tg.gancho}</div>}
+                    {refPart && <span style={{ fontSize: 'clamp(11px,2vw,13px)', color: pal.label, opacity: 0.78, fontWeight: 700, marginRight: 6, whiteSpace: 'nowrap' }}>{refPart}</span>}
+                    <span style={{ fontSize: 'clamp(14px,2.6vw,17px)', color: isCenter ? pal.label : 'rgba(220,215,255,0.88)', fontWeight: isCenter ? 700 : 400, lineHeight: 1.5 }}>{tg.title}</span>
+                    {tg.gancho && <div style={{ fontSize: 'clamp(12px,2.3vw,14px)', color: 'rgba(190,190,220,0.55)', fontStyle: 'italic', marginTop: 4, lineHeight: 1.4 }}>→ {tg.gancho}</div>}
                   </div>
                 </div>
               );
@@ -366,8 +366,8 @@ function ParaPregarSection({ d, pericopeIdx, conteudo }: { d: DiaDevocional; per
         )}
         {eixo && (
           <div style={{ padding: '10px 14px', borderRadius: 10, background: 'rgba(96,165,250,0.06)', border: '1px solid rgba(96,165,250,0.18)' }}>
-            <div style={{ fontSize: 'clamp(8px,1.8vw,9px)', fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase', color: 'rgba(147,197,253,0.65)', marginBottom: 4 }}>Eixo Cristológico</div>
-            <div style={{ fontSize: 'clamp(12px,2.5vw,13px)', color: 'rgba(200,220,255,0.85)', lineHeight: 1.65 }}>{eixo}</div>
+            <div style={{ fontSize: 'clamp(10px,1.8vw,12px)', fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase', color: 'rgba(147,197,253,0.65)', marginBottom: 6 }}>Eixo Cristológico</div>
+            <div style={{ fontSize: 'clamp(14px,2.5vw,16px)', color: 'rgba(200,220,255,0.85)', lineHeight: 1.7 }}>{eixo}</div>
           </div>
         )}
       </div>
@@ -381,7 +381,7 @@ export default function PregacaoPage() {
   const [pericopes, setPericopes] = useState<Pericope[]>([]);
   const [loadingPericopes, setLoadingPericopes] = useState(false);
   const [selectedPericopeIdx, setSelectedPericopeIdx] = useState<number | null>(null);
-  const [contentTab, setContentTab] = useState<'quiasma' | 'homilestica'>('quiasma');
+  const [contentTab, setContentTab] = useState<'quiasma' | 'homilestica'>('homilestica');
 
   // Busca perícopes quando muda o livro
   useEffect(() => {
@@ -423,7 +423,7 @@ export default function PregacaoPage() {
 
   const renderBookGroup = (grupo: string, books: BibleBook[], cor: string) => (
     <div key={grupo} style={{ marginBottom: 20 }}>
-      <div style={{ fontSize: 9, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: cor, opacity: 0.6, marginBottom: 8, paddingLeft: 2 }}>
+      <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: cor, opacity: 0.6, marginBottom: 8, paddingLeft: 2 }}>
         {grupo}
       </div>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
@@ -435,8 +435,8 @@ export default function PregacaoPage() {
               onClick={() => { setSelectedBook(book); setContentTab('quiasma'); }}
               style={{
                 all: 'unset', cursor: 'pointer',
-                padding: '6px 10px', borderRadius: 8,
-                fontSize: 11, fontWeight: 700,
+                padding: '8px 14px', borderRadius: 8,
+                fontSize: 14, fontWeight: 700,
                 background: active ? (book.testamento === 'AT' ? 'rgba(255,200,80,0.15)' : 'rgba(80,200,255,0.12)') : 'rgba(255,255,255,0.04)',
                 border: `1px solid ${active ? cor : 'rgba(255,255,255,0.08)'}`,
                 color: active ? cor : 'rgba(255,255,255,0.65)',
@@ -541,13 +541,13 @@ export default function PregacaoPage() {
                             whiteSpace: 'nowrap',
                           }}
                         >
-                          <div style={{ fontSize: 9, fontWeight: 900, letterSpacing: '0.14em', color: active ? cor : C.muted, marginBottom: 2 }}>
+                          <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.14em', color: active ? cor : C.muted, marginBottom: 3 }}>
                             [{String(p.idx).padStart(2, '0')}]
                           </div>
-                          <div style={{ fontSize: 12, fontWeight: 700, lineHeight: 1.3, maxWidth: 160, overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                          <div style={{ fontSize: 14, fontWeight: 700, lineHeight: 1.3, maxWidth: 200, overflow: 'hidden', textOverflow: 'ellipsis' }}>
                             {p.titulo}
                           </div>
-                          {p.ref && <div style={{ fontSize: 10, color: active ? cor : C.muted, opacity: 0.75, marginTop: 2 }}>{p.ref}</div>}
+                          {p.ref && <div style={{ fontSize: 12, color: active ? cor : C.muted, opacity: 0.75, marginTop: 3 }}>{p.ref}</div>}
                         </button>
                       );
                     })}
@@ -561,8 +561,8 @@ export default function PregacaoPage() {
                   {/* Tab bar */}
                   <div style={{ display: 'flex', gap: 4, marginBottom: 20, borderBottom: `1px solid ${C.border}`, paddingBottom: 0 }}>
                     {([
-                      { key: 'quiasma',     label: 'Estrutura Quiástica' },
                       { key: 'homilestica', label: 'Homilética Para Pregar' },
+                      { key: 'quiasma',     label: 'Estrutura Quiástica' },
                     ] as { key: 'quiasma' | 'homilestica'; label: string }[]).map(tab => {
                       const active = contentTab === tab.key;
                       return (
@@ -571,8 +571,8 @@ export default function PregacaoPage() {
                           onClick={() => setContentTab(tab.key)}
                           style={{
                             all: 'unset', cursor: 'pointer',
-                            padding: '10px 18px',
-                            fontSize: 12, fontWeight: 800,
+                            padding: '12px 22px',
+                            fontSize: 15, fontWeight: 800,
                             color: active ? C.white : C.muted,
                             borderBottom: active ? '2px solid rgba(196,160,255,1)' : '2px solid transparent',
                             marginBottom: -1,
@@ -588,14 +588,14 @@ export default function PregacaoPage() {
 
                   {/* Pericope title */}
                   <div style={{ marginBottom: 20 }}>
-                    <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.18em', color: selectedBook.testamento === 'AT' ? C.atColor : C.ntColor, textTransform: 'uppercase', marginBottom: 4 }}>
+                    <div style={{ fontSize: 12, fontWeight: 900, letterSpacing: '0.18em', color: selectedBook.testamento === 'AT' ? C.atColor : C.ntColor, textTransform: 'uppercase', marginBottom: 6 }}>
                       Perícope {String(selectedPericope.idx).padStart(2, '0')}
                     </div>
-                    <div style={{ fontSize: 'clamp(18px,3vw,24px)', fontWeight: 800, color: C.white, lineHeight: 1.3 }}>
+                    <div style={{ fontSize: 'clamp(22px,3.5vw,30px)', fontWeight: 800, color: C.white, lineHeight: 1.3 }}>
                       {selectedPericope.titulo}
                     </div>
                     {selectedPericope.ref && (
-                      <div style={{ fontSize: 13, color: C.muted, marginTop: 4 }}>{selectedPericope.ref}</div>
+                      <div style={{ fontSize: 16, color: C.muted, marginTop: 6 }}>{selectedPericope.ref}</div>
                     )}
                   </div>
 
