@@ -1,25 +1,25 @@
 import { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { BookOpen, ChevronDown } from 'lucide-react';
+import { BookOpen, ChevronRight } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import { PLANO_COMPLETO, type DiaDevocional } from '../data/calendarioDevocional';
 import { gerarParaPregar } from '../data/paraPregar';
 
-// ─── Design tokens ─────────────────────────────────────────────────
+// ─── Design tokens ──────────────────────────────────────────────────
 const C = {
   bg:      '#05071a',
   bgCard:  'rgba(255,255,255,0.03)',
-  bgCardH: 'rgba(255,255,255,0.06)',
+  bgCardH: 'rgba(255,255,255,0.055)',
   blue:    'rgba(0,212,255,1)',
   blueL:   'rgba(0,212,255,0.12)',
   blueB:   'rgba(0,212,255,0.30)',
   gold:    'rgba(255,200,80,1)',
-  goldL:   'rgba(255,200,80,0.15)',
-  goldB:   'rgba(255,200,80,0.40)',
+  goldL:   'rgba(255,200,80,0.12)',
+  goldB:   'rgba(255,200,80,0.35)',
   white:   'rgba(255,255,255,0.92)',
-  muted:   'rgba(255,255,255,0.45)',
+  muted:   'rgba(255,255,255,0.40)',
   border:  'rgba(255,255,255,0.07)',
-  borderH: 'rgba(255,255,255,0.14)',
+  borderH: 'rgba(255,255,255,0.13)',
   atColor: 'rgba(255,180,50,1)',
   ntColor: 'rgba(80,200,255,1)',
 };
@@ -34,45 +34,94 @@ const QUIASMA_PALETA = [
   { label: 'rgba(80,220,220,1)',  bg: 'rgba(80,220,220,0.10)',  border: 'rgba(80,220,220,0.40)'  },
 ];
 
-const LIVRO_SLUG: Record<string, string> = {
-  'Genesis': 'genesis', 'Exodo': 'exodo', 'Levitico': 'levitico',
-  'Numeros': 'numeros', 'Deuteronomio': 'deuteronomio',
-};
-
-function slugDeLivro(livro: string): string {
-  const normalizado = livro
-    .normalize('NFD')
-    .replace(/[̀-ͯ]/g, '')
-    .replace(/ã/g, 'a')
-    .replace(/õ/g, 'o');
-  return LIVRO_SLUG[normalizado] ?? normalizado.toLowerCase().replace(/\s+/g, '-');
+// ─── Todos os livros da Bíblia ──────────────────────────────────────
+interface BibleBook {
+  nome: string;
+  abrev: string;
+  testamento: 'AT' | 'NT';
+  slug: string;
+  grupo: string;
 }
 
-function livroPath(livro: string, testamento: 'AT' | 'NT') {
-  return `/admin/${testamento}/${slugDeLivro(livro)}`;
-}
+const BIBLE_BOOKS: BibleBook[] = [
+  // Pentateuco
+  { nome: 'Gênesis',       abrev: 'Gn',  testamento: 'AT', slug: 'genesis',      grupo: 'Pentateuco' },
+  { nome: 'Êxodo',         abrev: 'Ex',  testamento: 'AT', slug: 'exodo',        grupo: 'Pentateuco' },
+  { nome: 'Levítico',      abrev: 'Lv',  testamento: 'AT', slug: 'levitico',     grupo: 'Pentateuco' },
+  { nome: 'Números',       abrev: 'Nm',  testamento: 'AT', slug: 'numeros',      grupo: 'Pentateuco' },
+  { nome: 'Deuteronômio',  abrev: 'Dt',  testamento: 'AT', slug: 'deuteronomio', grupo: 'Pentateuco' },
+  // Históricos
+  { nome: 'Josué',         abrev: 'Js',  testamento: 'AT', slug: 'josue',        grupo: 'Históricos' },
+  { nome: 'Juízes',        abrev: 'Jz',  testamento: 'AT', slug: 'juizes',       grupo: 'Históricos' },
+  { nome: 'Rute',          abrev: 'Rt',  testamento: 'AT', slug: 'rute',         grupo: 'Históricos' },
+  { nome: '1 Samuel',      abrev: '1Sm', testamento: 'AT', slug: '1samuel',      grupo: 'Históricos' },
+  { nome: '2 Samuel',      abrev: '2Sm', testamento: 'AT', slug: '2samuel',      grupo: 'Históricos' },
+  { nome: '1 Reis',        abrev: '1Rs', testamento: 'AT', slug: '1reis',        grupo: 'Históricos' },
+  { nome: '2 Reis',        abrev: '2Rs', testamento: 'AT', slug: '2reis',        grupo: 'Históricos' },
+  { nome: '1 Crônicas',    abrev: '1Cr', testamento: 'AT', slug: '1cronicas',    grupo: 'Históricos' },
+  { nome: '2 Crônicas',    abrev: '2Cr', testamento: 'AT', slug: '2cronicas',    grupo: 'Históricos' },
+  { nome: 'Esdras',        abrev: 'Ed',  testamento: 'AT', slug: 'esdras',       grupo: 'Históricos' },
+  { nome: 'Neemias',       abrev: 'Ne',  testamento: 'AT', slug: 'neemias',      grupo: 'Históricos' },
+  { nome: 'Ester',         abrev: 'Et',  testamento: 'AT', slug: 'ester',        grupo: 'Históricos' },
+  // Poéticos
+  { nome: 'Jó',            abrev: 'Jó',  testamento: 'AT', slug: 'jo',           grupo: 'Poéticos' },
+  { nome: 'Salmos',        abrev: 'Sl',  testamento: 'AT', slug: 'salmos',       grupo: 'Poéticos' },
+  { nome: 'Provérbios',    abrev: 'Pv',  testamento: 'AT', slug: 'proverbios',   grupo: 'Poéticos' },
+  { nome: 'Eclesiastes',   abrev: 'Ec',  testamento: 'AT', slug: 'eclesiastes',  grupo: 'Poéticos' },
+  { nome: 'Cânticos',      abrev: 'Ct',  testamento: 'AT', slug: 'canticos',     grupo: 'Poéticos' },
+  // Proféticos Maiores
+  { nome: 'Isaías',        abrev: 'Is',  testamento: 'AT', slug: 'isaias',       grupo: 'Proféticos' },
+  { nome: 'Jeremias',      abrev: 'Jr',  testamento: 'AT', slug: 'jeremias',     grupo: 'Proféticos' },
+  { nome: 'Lamentações',   abrev: 'Lm',  testamento: 'AT', slug: 'lamentacoes',  grupo: 'Proféticos' },
+  { nome: 'Ezequiel',      abrev: 'Ez',  testamento: 'AT', slug: 'ezequiel',     grupo: 'Proféticos' },
+  { nome: 'Daniel',        abrev: 'Dn',  testamento: 'AT', slug: 'daniel',       grupo: 'Proféticos' },
+  // Proféticos Menores
+  { nome: 'Oseias',        abrev: 'Os',  testamento: 'AT', slug: 'oseias',       grupo: 'Proféticos' },
+  { nome: 'Joel',          abrev: 'Jl',  testamento: 'AT', slug: 'joel',         grupo: 'Proféticos' },
+  { nome: 'Amós',          abrev: 'Am',  testamento: 'AT', slug: 'amos',         grupo: 'Proféticos' },
+  { nome: 'Obadias',       abrev: 'Ob',  testamento: 'AT', slug: 'obadias',      grupo: 'Proféticos' },
+  { nome: 'Jonas',         abrev: 'Jn',  testamento: 'AT', slug: 'jonas',        grupo: 'Proféticos' },
+  { nome: 'Miquéias',      abrev: 'Mq',  testamento: 'AT', slug: 'miqueias',     grupo: 'Proféticos' },
+  { nome: 'Naum',          abrev: 'Na',  testamento: 'AT', slug: 'naum',         grupo: 'Proféticos' },
+  { nome: 'Habacuque',     abrev: 'Hc',  testamento: 'AT', slug: 'habacuque',    grupo: 'Proféticos' },
+  { nome: 'Sofonias',      abrev: 'Sf',  testamento: 'AT', slug: 'sofonias',     grupo: 'Proféticos' },
+  { nome: 'Ageu',          abrev: 'Ag',  testamento: 'AT', slug: 'ageu',         grupo: 'Proféticos' },
+  { nome: 'Zacarias',      abrev: 'Zc',  testamento: 'AT', slug: 'zacarias',     grupo: 'Proféticos' },
+  { nome: 'Malaquias',     abrev: 'Ml',  testamento: 'AT', slug: 'malaquias',    grupo: 'Proféticos' },
+  // Evangelhos
+  { nome: 'Mateus',        abrev: 'Mt',  testamento: 'NT', slug: 'mateus',       grupo: 'Evangelhos' },
+  { nome: 'Marcos',        abrev: 'Mc',  testamento: 'NT', slug: 'marcos',       grupo: 'Evangelhos' },
+  { nome: 'Lucas',         abrev: 'Lc',  testamento: 'NT', slug: 'lucas',        grupo: 'Evangelhos' },
+  { nome: 'João',          abrev: 'Jo',  testamento: 'NT', slug: 'joao',         grupo: 'Evangelhos' },
+  // Atos
+  { nome: 'Atos',          abrev: 'At',  testamento: 'NT', slug: 'atos',         grupo: 'Atos' },
+  // Epístolas Paulinas
+  { nome: 'Romanos',       abrev: 'Rm',  testamento: 'NT', slug: 'romanos',      grupo: 'Epístolas' },
+  { nome: '1 Coríntios',   abrev: '1Co', testamento: 'NT', slug: '1corintios',   grupo: 'Epístolas' },
+  { nome: '2 Coríntios',   abrev: '2Co', testamento: 'NT', slug: '2corintios',   grupo: 'Epístolas' },
+  { nome: 'Gálatas',       abrev: 'Gl',  testamento: 'NT', slug: 'galatas',      grupo: 'Epístolas' },
+  { nome: 'Efésios',       abrev: 'Ef',  testamento: 'NT', slug: 'efesios',      grupo: 'Epístolas' },
+  { nome: 'Filipenses',    abrev: 'Fp',  testamento: 'NT', slug: 'filipenses',   grupo: 'Epístolas' },
+  { nome: 'Colossenses',   abrev: 'Cl',  testamento: 'NT', slug: 'colossenses',  grupo: 'Epístolas' },
+  { nome: '1 Tessalonicenses', abrev: '1Ts', testamento: 'NT', slug: '1tessalonicenses', grupo: 'Epístolas' },
+  { nome: '2 Tessalonicenses', abrev: '2Ts', testamento: 'NT', slug: '2tessalonicenses', grupo: 'Epístolas' },
+  { nome: '1 Timóteo',     abrev: '1Tm', testamento: 'NT', slug: '1timoteo',     grupo: 'Epístolas' },
+  { nome: '2 Timóteo',     abrev: '2Tm', testamento: 'NT', slug: '2timoteo',     grupo: 'Epístolas' },
+  { nome: 'Tito',          abrev: 'Tt',  testamento: 'NT', slug: 'tito',         grupo: 'Epístolas' },
+  { nome: 'Filemom',       abrev: 'Fm',  testamento: 'NT', slug: 'filemom',      grupo: 'Epístolas' },
+  { nome: 'Hebreus',       abrev: 'Hb',  testamento: 'NT', slug: 'hebreus',      grupo: 'Epístolas' },
+  { nome: 'Tiago',         abrev: 'Tg',  testamento: 'NT', slug: 'tiago',        grupo: 'Epístolas' },
+  { nome: '1 Pedro',       abrev: '1Pe', testamento: 'NT', slug: '1pedro',       grupo: 'Epístolas' },
+  { nome: '2 Pedro',       abrev: '2Pe', testamento: 'NT', slug: '2pedro',       grupo: 'Epístolas' },
+  { nome: '1 João',        abrev: '1Jo', testamento: 'NT', slug: '1joao',        grupo: 'Epístolas' },
+  { nome: '2 João',        abrev: '2Jo', testamento: 'NT', slug: '2joao',        grupo: 'Epístolas' },
+  { nome: '3 João',        abrev: '3Jo', testamento: 'NT', slug: '3joao',        grupo: 'Epístolas' },
+  { nome: 'Judas',         abrev: 'Jd',  testamento: 'NT', slug: 'judas',        grupo: 'Epístolas' },
+  { nome: 'Apocalipse',    abrev: 'Ap',  testamento: 'NT', slug: 'apocalipse',   grupo: 'Apocalipse' },
+];
 
-function extractQuiasmaBloco(text: string, idx: number): string {
-  const markerRe = new RegExp(`^\\[0*${idx}\\]`);
-  const anyMarkerRe = /^\[\d/;
-  const sepRe = /^={5,}/;
-
-  const lines = text.split(/\r?\n/);
-  let blockStart = -1;
-  for (let i = 0; i < lines.length; i++) {
-    if (markerRe.test(lines[i].trim())) { blockStart = i; break; }
-  }
-  if (blockStart === -1) return '';
-
-  let blockEnd = lines.length;
-  for (let i = blockStart + 1; i < lines.length; i++) {
-    const t = lines[i].trim();
-    if ((anyMarkerRe.test(t) && !markerRe.test(t)) || sepRe.test(t)) {
-      blockEnd = i; break;
-    }
-  }
-  return lines.slice(blockStart, blockEnd).join('\n').trim();
-}
+const AT_GRUPOS = ['Pentateuco', 'Históricos', 'Poéticos', 'Proféticos'];
+const NT_GRUPOS = ['Evangelhos', 'Atos', 'Epístolas', 'Apocalipse'];
 
 interface Pericope {
   idx: number;
@@ -80,60 +129,70 @@ interface Pericope {
   ref: string;
 }
 
-// ─── Quiasma renderer ──────────────────────────────────────────────
+function livroPath(slug: string, testamento: 'AT' | 'NT') {
+  return `/admin/${testamento}/${slug}`;
+}
+
+function extractQuiasmaBloco(text: string, idx: number): string {
+  const markerRe = new RegExp(`^\\[0*${idx}\\]`);
+  const anyMarkerRe = /^\[\d/;
+  const sepRe = /^={5,}/;
+  const lines = text.split(/\r?\n/);
+  let blockStart = -1;
+  for (let i = 0; i < lines.length; i++) {
+    if (markerRe.test(lines[i].trim())) { blockStart = i; break; }
+  }
+  if (blockStart === -1) return '';
+  let blockEnd = lines.length;
+  for (let i = blockStart + 1; i < lines.length; i++) {
+    const t = lines[i].trim();
+    if ((anyMarkerRe.test(t) && !markerRe.test(t)) || sepRe.test(t)) { blockEnd = i; break; }
+  }
+  return lines.slice(blockStart, blockEnd).join('\n').trim();
+}
+
+// ─── Quiasma renderer ───────────────────────────────────────────────
 function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: number }) {
-  const [quiasma, setQuiasma] = useState<string>('');
-  const [status, setStatus] = useState<'loading' | 'ok' | 'sem-arquivo' | 'sem-pericope'>('loading');
+  const [quiasma, setQuiasma] = useState('');
+  const [status, setStatus] = useState<'loading' | 'ok' | 'none'>('loading');
+  const book = BIBLE_BOOKS.find(b => b.abrev === d.livroAbrev);
   const isAT = d.testamento === 'AT';
   const cor = isAT ? C.atColor : C.ntColor;
   const corB = isAT ? C.goldB : C.blueB;
 
   useEffect(() => {
-    const path = livroPath(d.livro, d.testamento);
+    if (!book) { setStatus('none'); return; }
     setStatus('loading');
-    fetch(`${path}/quiastico.txt`)
+    fetch(`${livroPath(book.slug, book.testamento)}/quiastico.txt`)
       .then(r => r.ok ? r.text() : null)
       .then(text => {
-        if (!text) { setStatus('sem-arquivo'); return; }
+        if (!text) { setStatus('none'); return; }
         const bloco = extractQuiasmaBloco(text, pericopeIdx);
-        if (!bloco) { setStatus('sem-pericope'); return; }
+        if (!bloco) { setStatus('none'); return; }
         setQuiasma(bloco);
         setStatus('ok');
       })
-      .catch(() => setStatus('sem-arquivo'));
-  }, [d, pericopeIdx]);
+      .catch(() => setStatus('none'));
+  }, [d, pericopeIdx, book]);
 
   if (status === 'loading') return (
-    <div style={{ padding: 32, textAlign: 'center', color: C.muted, fontSize: 12 }}>
-      Carregando estrutura...
-    </div>
+    <div style={{ padding: 40, textAlign: 'center', color: C.muted, fontSize: 12 }}>Carregando estrutura...</div>
   );
 
-  if (status !== 'ok' || !quiasma) return (
-    <div style={{
-      marginTop: 12, borderRadius: 14, border: `1px solid ${corB}`,
-      background: 'rgba(5,7,26,0.7)', padding: 18, color: C.muted, fontSize: 13,
-    }}>
+  if (status !== 'ok') return (
+    <div style={{ padding: 32, textAlign: 'center', color: C.muted, fontSize: 13 }}>
       Esta perícope ainda não possui estrutura quiástica cadastrada.
     </div>
   );
 
-  type QEntry =
-    | { kind: 'title'; text: string }
-    | { kind: 'row'; label: string; desc: string; level: number; isCenter: boolean }
-    | { kind: 'spacer' };
-
+  type QEntry = { kind: 'title'; text: string } | { kind: 'row'; label: string; desc: string; level: number; isCenter: boolean } | { kind: 'spacer' };
   const linhas = quiasma.split('\n');
   const baseLetters: string[] = [];
   for (const l of linhas) {
     const m = l.trim().match(/^([A-Z])'?\d*\s*[\(\-]/);
-    if (m) {
-      const base = m[1].toUpperCase();
-      if (!baseLetters.includes(base)) baseLetters.push(base);
-    }
+    if (m) { const base = m[1].toUpperCase(); if (!baseLetters.includes(base)) baseLetters.push(base); }
   }
   const maxLevel = baseLetters.length - 1;
-
   const entries: QEntry[] = [];
   let i = 0;
   while (i < linhas.length) {
@@ -150,127 +209,50 @@ function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: num
       while (j < linhas.length) {
         const next = linhas[j].trim();
         if (!next) { j++; break; }
-        if (/^\[\d/.test(next)) break;
-        if (/^([A-Z])'?\d*\s*[\(\-]/.test(next)) break;
-        descLines.push(next);
-        j++;
+        if (/^\[\d/.test(next) || /^([A-Z])'?\d*\s*[\(\-]/.test(next)) break;
+        descLines.push(next); j++;
       }
       entries.push({ kind: 'row', label: trimmed, desc: descLines.join(' '), level, isCenter });
-      i = j;
-      continue;
+      i = j; continue;
     }
     i++;
   }
 
   return (
-    <div style={{
-      marginTop: 0, borderRadius: 18, overflow: 'hidden',
-      border: `1px solid ${corB}`,
-      boxShadow: '0 8px 32px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.05)',
-    }}>
-      <div style={{
-        background: 'linear-gradient(135deg, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0.02) 100%)',
-        borderBottom: `1px solid ${corB}`,
-        padding: '12px 20px',
-        display: 'flex', alignItems: 'center', gap: 12,
-      }}>
-        <div style={{
-          width: 32, height: 32, borderRadius: 9, flexShrink: 0,
-          background: isAT ? 'rgba(255,200,80,0.18)' : 'rgba(80,200,255,0.18)',
-          border: `1px solid ${corB}`,
-          display: 'flex', alignItems: 'center', justifyContent: 'center',
-        }}>
+    <div style={{ borderRadius: 18, overflow: 'hidden', border: `1px solid ${corB}`, boxShadow: '0 8px 32px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.05)' }}>
+      <div style={{ background: 'linear-gradient(135deg, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0.02) 100%)', borderBottom: `1px solid ${corB}`, padding: '12px 20px', display: 'flex', alignItems: 'center', gap: 12 }}>
+        <div style={{ width: 32, height: 32, borderRadius: 9, flexShrink: 0, background: isAT ? 'rgba(255,200,80,0.18)' : 'rgba(80,200,255,0.18)', border: `1px solid ${corB}`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           <BookOpen size={15} color={cor} />
         </div>
         <div>
-          <div style={{ fontSize: 10, fontWeight: 900, color: cor, letterSpacing: '0.20em', textTransform: 'uppercase' }}>
-            Estrutura Quiástica
-          </div>
-          <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.4)', marginTop: 1 }}>
-            {d.livro} — Perícope {pericopeIdx}
-          </div>
+          <div style={{ fontSize: 10, fontWeight: 900, color: cor, letterSpacing: '0.20em', textTransform: 'uppercase' }}>Estrutura Quiástica</div>
+          <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.4)', marginTop: 1 }}>{d.livro} — Perícope {pericopeIdx}</div>
         </div>
       </div>
-
       <div style={{ background: 'rgba(5,7,26,0.85)', padding: '16px 14px' }}>
         {entries.map((entry, idx) => {
           if (entry.kind === 'spacer') return <div key={idx} style={{ height: 4 }} />;
-          if (entry.kind === 'title') {
-            return (
-              <div key={idx} style={{
-                fontSize: 'clamp(14px,2.5vw,16px)', fontWeight: 800, color: cor,
-                lineHeight: 1.4, marginBottom: 12, marginTop: 4,
-              }}>
-                {entry.text}
-              </div>
-            );
-          }
+          if (entry.kind === 'title') return (
+            <div key={idx} style={{ fontSize: 'clamp(14px,2.5vw,16px)', fontWeight: 800, color: cor, lineHeight: 1.4, marginBottom: 12, marginTop: 4 }}>
+              {entry.text}
+            </div>
+          );
           const { label, desc, level, isCenter } = entry;
           const pal = QUIASMA_PALETA[level % QUIASMA_PALETA.length];
           const badgeLetter = label.match(/^([A-Z]'?\d*)/)?.[1] ?? label[0];
           const refPart = label.slice(badgeLetter.length).trim();
           return (
-            <div key={idx} style={{
-              display: 'flex', alignItems: 'flex-start',
-              gap: 'clamp(5px,1.2vw,8px)',
-              marginTop: isCenter ? 12 : (level === 0 ? 10 : 5),
-              marginBottom: isCenter ? 12 : 4,
-              paddingLeft: `clamp(${level * 4}px, ${level * 1.2}vw, ${level * 14}px)`,
-            }}>
-              <div style={{
-                width: 3, minHeight: 30, borderRadius: 4,
-                background: pal.label, flexShrink: 0, marginTop: 3,
-              }} />
-              <div style={{
-                flexShrink: 0,
-                minWidth: 'clamp(26px,4.5vw,34px)',
-                textAlign: 'center',
-                background: isCenter ? pal.bg : pal.bg.replace(/[\d.]+\)$/, '0.10)'),
-                border: `1px solid ${isCenter ? pal.border : pal.border.replace(/[\d.]+\)$/, '0.35)')}`,
-                borderRadius: 7,
-                padding: 'clamp(4px,0.8vw,6px) clamp(5px,1vw,8px)',
-                fontSize: 'clamp(13px,2.6vw,16px)',
-                fontWeight: 900,
-                color: pal.label,
-                lineHeight: 1.3,
-                boxShadow: isCenter ? `0 0 12px ${pal.bg}` : undefined,
-                letterSpacing: '0.04em',
-                alignSelf: 'flex-start',
-              }}>
+            <div key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: 'clamp(5px,1.2vw,8px)', marginTop: isCenter ? 12 : (level === 0 ? 10 : 5), marginBottom: isCenter ? 12 : 4, paddingLeft: `clamp(${level * 4}px, ${level * 1.2}vw, ${level * 14}px)` }}>
+              <div style={{ width: 3, minHeight: 30, borderRadius: 4, background: pal.label, flexShrink: 0, marginTop: 3 }} />
+              <div style={{ flexShrink: 0, minWidth: 'clamp(26px,4.5vw,34px)', textAlign: 'center', background: isCenter ? pal.bg : pal.bg.replace(/[\d.]+\)$/, '0.10)'), border: `1px solid ${isCenter ? pal.border : pal.border.replace(/[\d.]+\)$/, '0.35)')}`, borderRadius: 7, padding: 'clamp(4px,0.8vw,6px) clamp(5px,1vw,8px)', fontSize: 'clamp(13px,2.6vw,16px)', fontWeight: 900, color: pal.label, lineHeight: 1.3, boxShadow: isCenter ? `0 0 12px ${pal.bg}` : undefined, letterSpacing: '0.04em', alignSelf: 'flex-start' }}>
                 {badgeLetter}
               </div>
-              <div style={{
-                flex: 1, minWidth: 0,
-                fontSize: 'clamp(13px,2.6vw,15px)', lineHeight: 1.6,
-                overflowWrap: 'break-word', wordBreak: 'break-word',
-              }}>
-                {refPart && (
-                  <span style={{
-                    color: pal.label, opacity: 0.75, fontWeight: 600,
-                    fontSize: 'clamp(10px,2vw,12px)', marginRight: 6, whiteSpace: 'nowrap',
-                  }}>
-                    {refPart}
-                  </span>
-                )}
-                <span style={{
-                  color: isCenter ? pal.label : 'rgba(255,255,255,0.88)',
-                  fontWeight: isCenter ? 700 : 400,
-                }}>
+              <div style={{ flex: 1, minWidth: 0, fontSize: 'clamp(13px,2.6vw,15px)', lineHeight: 1.6, overflowWrap: 'break-word', wordBreak: 'break-word' }}>
+                {refPart && <span style={{ color: pal.label, opacity: 0.75, fontWeight: 600, fontSize: 'clamp(10px,2vw,12px)', marginRight: 6, whiteSpace: 'nowrap' }}>{refPart}</span>}
+                <span style={{ color: isCenter ? pal.label : 'rgba(255,255,255,0.88)', fontWeight: isCenter ? 700 : 400 }}>
                   {desc.split(/(\[[^\]]+\])/).map((part, pi) =>
                     part.startsWith('[') && part.endsWith(']')
-                      ? (
-                        <span key={pi} style={{
-                          whiteSpace: 'nowrap',
-                          unicodeBidi: 'isolate',
-                          direction: 'ltr',
-                          fontFamily: '"SBL Hebrew","Ezra SIL","Noto Serif Hebrew","Noto Sans Hebrew","Times New Roman",serif',
-                          fontSize: 'clamp(16px,3vw,19px)',
-                          fontWeight: 600,
-                          color: pal.label,
-                          letterSpacing: '0.04em',
-                          marginLeft: 4,
-                        }}>{part}</span>
-                      )
+                      ? <span key={pi} style={{ whiteSpace: 'nowrap', unicodeBidi: 'isolate', direction: 'ltr', fontFamily: '"SBL Hebrew","Ezra SIL","Noto Serif Hebrew","Noto Sans Hebrew","Times New Roman",serif', fontSize: 'clamp(16px,3vw,19px)', fontWeight: 600, color: pal.label, letterSpacing: '0.04em', marginLeft: 4 }}>{part}</span>
                       : part
                   )}
                 </span>
@@ -283,63 +265,48 @@ function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: num
   );
 }
 
-// ─── Para Pregar renderer ──────────────────────────────────────────
-// Os labels/cores/refs/nível vêm do quiasma real; títulos e ganchos vêm do conteudo.
-function ParaPregarSection({ d, pericopeIdx, conteudo }: {
-  d: DiaDevocional; pericopeIdx: number; conteudo: string;
-}) {
-  const [quiasmaArms, setQuiasmaArms] = useState<{
-    label: string; badgeLetter: string; refPart: string; level: number; isCenter: boolean;
-  }[]>([]);
+// ─── Para Pregar renderer ────────────────────────────────────────────
+function ParaPregarSection({ d, pericopeIdx, conteudo }: { d: DiaDevocional; pericopeIdx: number; conteudo: string }) {
+  const [quiasmaArms, setQuiasmaArms] = useState<{ label: string; badgeLetter: string; refPart: string; level: number; isCenter: boolean }[]>([]);
+  const book = BIBLE_BOOKS.find(b => b.abrev === d.livroAbrev);
 
   useEffect(() => {
-    const path = livroPath(d.livro, d.testamento);
-    fetch(`${path}/quiastico.txt`)
+    if (!book) return;
+    fetch(`${livroPath(book.slug, book.testamento)}/quiastico.txt`)
       .then(r => r.ok ? r.text() : null)
       .then(text => {
         if (!text) return;
         const bloco = extractQuiasmaBloco(text, pericopeIdx);
         if (!bloco) return;
-
-        // Replicar a mesma lógica do QuiasmaSection para extrair braços
         const linhas = bloco.split('\n');
         const baseLetters: string[] = [];
         for (const l of linhas) {
           const m = l.trim().match(/^([A-Z])'?\d*\s*[\(\-]/);
-          if (m) {
-            const base = m[1].toUpperCase();
-            if (!baseLetters.includes(base)) baseLetters.push(base);
-          }
+          if (m) { const base = m[1].toUpperCase(); if (!baseLetters.includes(base)) baseLetters.push(base); }
         }
         const maxLvl = baseLetters.length - 1;
-
         const arms: typeof quiasmaArms = [];
-        let i = 0;
-        while (i < linhas.length) {
-          const trimmed = linhas[i].trim();
-          const labelMatch = trimmed.match(/^([A-Z])'?\d*\s*[\(\-]/);
-          if (labelMatch) {
-            const base = labelMatch[1].toUpperCase();
+        for (const line of linhas) {
+          const trimmed = line.trim();
+          const lm = trimmed.match(/^([A-Z])'?\d*\s*[\(\-]/);
+          if (lm) {
+            const base = lm[1].toUpperCase();
             const level = Math.max(0, baseLetters.indexOf(base));
             const badgeLetter = trimmed.match(/^([A-Z]'?\d*)/)?.[1] ?? trimmed[0];
             const refPart = trimmed.slice(badgeLetter.length).trim();
             arms.push({ label: trimmed, badgeLetter, refPart, level, isCenter: level === maxLvl });
           }
-          i++;
         }
         setQuiasmaArms(arms);
       })
       .catch(() => {});
-  }, [d, pericopeIdx]);
+  }, [d, pericopeIdx, book]);
 
-  // Parsear apenas bigIdea, títulos+ganchos (em ordem) e eixo do conteudo
-  interface TitleGancho { title: string; gancho: string; }
-  let bigIdea = '';
-  let eixo = '';
-  const titlesGanchos: TitleGancho[] = [];
+  interface TG { title: string; gancho: string; }
+  let bigIdea = '', eixo = '';
+  const titlesGanchos: TG[] = [];
   let section: 'none' | 'big' | 'movimentos' | 'eixo' = 'none';
-  let pending: Partial<TitleGancho> | null = null;
-
+  let pending: Partial<TG> | null = null;
   for (const rawLine of conteudo.split('\n')) {
     const line = rawLine.trim();
     if (!line) continue;
@@ -350,49 +317,33 @@ function ParaPregarSection({ d, pericopeIdx, conteudo }: {
     if (section === 'big' && !bigIdea) { bigIdea = line.replace(/^"|"$/g, ''); continue; }
     if (section === 'eixo') { eixo += (eixo ? ' ' : '') + line; continue; }
     if (section === 'movimentos') {
-      // Detectar linha de movimento (com ou sem label hardcoded)
       const mvMatch = line.match(/^(?:◉\s*)?\[[A-Z]'?\d*\]\s*·?\s*(.+)/);
-      if (mvMatch) {
-        if (pending !== null) titlesGanchos.push({ title: pending.title ?? '', gancho: pending.gancho ?? '' });
-        pending = { title: mvMatch[1].trim(), gancho: '' };
-        continue;
-      }
+      if (mvMatch) { if (pending) titlesGanchos.push({ title: pending.title ?? '', gancho: pending.gancho ?? '' }); pending = { title: mvMatch[1].trim(), gancho: '' }; continue; }
       const gMatch = line.match(/^→\s*(.+)/);
       if (gMatch && pending) { pending.gancho = gMatch[1]; continue; }
     }
   }
-  if (pending !== null) titlesGanchos.push({ title: pending.title ?? '', gancho: pending.gancho ?? '' });
+  if (pending) titlesGanchos.push({ title: pending.title ?? '', gancho: pending.gancho ?? '' });
 
   return (
-    <div style={{
-      position: 'relative', marginTop: 14, borderRadius: 18, overflow: 'hidden',
-      background: 'linear-gradient(135deg, rgba(20,12,40,0.95) 0%, rgba(10,18,48,0.95) 60%, rgba(20,12,40,0.95) 100%)',
-      border: '1px solid rgba(168,120,255,0.28)',
-      boxShadow: '0 0 0 1px rgba(96,165,250,0.08), 0 8px 32px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.06)',
-    }}>
+    <div style={{ position: 'relative', borderRadius: 18, overflow: 'hidden', background: 'linear-gradient(135deg, rgba(20,12,40,0.95) 0%, rgba(10,18,48,0.95) 60%, rgba(20,12,40,0.95) 100%)', border: '1px solid rgba(168,120,255,0.28)', boxShadow: '0 0 0 1px rgba(96,165,250,0.08), 0 8px 32px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.06)' }}>
       <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', background: 'radial-gradient(ellipse 70% 50% at 15% 50%, rgba(139,92,246,0.10) 0%, transparent 70%), radial-gradient(ellipse 50% 60% at 85% 30%, rgba(96,165,250,0.08) 0%, transparent 70%)' }} />
       <div style={{ position: 'relative', padding: 'clamp(14px,3.5vw,20px) clamp(16px,4vw,22px)' }}>
-
-        {/* Cabeçalho */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 14 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 16 }}>
           <div style={{ width: 28, height: 28, borderRadius: 8, flexShrink: 0, background: 'linear-gradient(135deg, rgba(139,92,246,0.35), rgba(96,165,250,0.25))', border: '1px solid rgba(168,120,255,0.40)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 0 12px rgba(139,92,246,0.25)' }}>
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="rgba(196,160,255,1)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
           </div>
           <div style={{ fontSize: 'clamp(9px,2.2vw,10px)', fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', background: 'linear-gradient(90deg, rgba(196,160,255,1) 0%, rgba(147,197,253,1) 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Para Pregar</div>
           <div style={{ flex: 1, height: 1, marginLeft: 4, background: 'linear-gradient(90deg, rgba(139,92,246,0.40) 0%, rgba(96,165,250,0.15) 60%, transparent 100%)' }} />
         </div>
-
-        {/* Big Idea */}
         {bigIdea && (
-          <div style={{ marginBottom: 14, padding: '10px 14px', borderRadius: 10, background: 'rgba(139,92,246,0.08)', border: '1px solid rgba(139,92,246,0.20)' }}>
+          <div style={{ marginBottom: 16, padding: '10px 14px', borderRadius: 10, background: 'rgba(139,92,246,0.08)', border: '1px solid rgba(139,92,246,0.20)' }}>
             <div style={{ fontSize: 'clamp(8px,1.8vw,9px)', fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase', color: 'rgba(196,160,255,0.65)', marginBottom: 5 }}>Big Idea</div>
             <div style={{ fontSize: 'clamp(13px,3vw,15px)', color: 'rgba(226,220,255,0.96)', fontWeight: 700, lineHeight: 1.5, fontStyle: 'italic' }}>"{bigIdea}"</div>
           </div>
         )}
-
-        {/* Movimentos — alinhados com os braços reais do quiasma */}
         {quiasmaArms.length > 0 && titlesGanchos.length > 0 && (
-          <div style={{ marginBottom: 14 }}>
+          <div style={{ marginBottom: 16 }}>
             <div style={{ fontSize: 'clamp(8px,1.8vw,9px)', fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase', color: 'rgba(147,197,253,0.60)', marginBottom: 10 }}>Movimentos do Texto</div>
             {quiasmaArms.map((arm, idx) => {
               const tg = titlesGanchos[idx];
@@ -401,44 +352,18 @@ function ParaPregarSection({ d, pericopeIdx, conteudo }: {
               const pal = QUIASMA_PALETA[level % QUIASMA_PALETA.length];
               return (
                 <div key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: 8, marginTop: isCenter ? 14 : 6, marginBottom: isCenter ? 14 : 0, paddingLeft: level * 12 }}>
-                  {/* Barra lateral */}
                   <div style={{ width: 3, minHeight: 30, borderRadius: 4, background: pal.label, flexShrink: 0, marginTop: 3 }} />
-                  {/* Badge — exatamente igual ao quiasma */}
-                  <div style={{
-                    flexShrink: 0, minWidth: 'clamp(26px,4.5vw,34px)', textAlign: 'center',
-                    background: isCenter ? pal.bg : pal.bg.replace(/[\d.]+\)$/, '0.08)'),
-                    border: `1px solid ${isCenter ? pal.border : pal.border.replace(/[\d.]+\)$/, '0.28)')}`,
-                    borderRadius: 6, padding: '3px 6px',
-                    fontSize: 'clamp(11px,2.3vw,14px)', fontWeight: 900, color: pal.label,
-                    boxShadow: isCenter ? `0 0 12px ${pal.bg}` : undefined,
-                    alignSelf: 'flex-start',
-                  }}>{badgeLetter}</div>
-                  {/* Conteúdo */}
+                  <div style={{ flexShrink: 0, minWidth: 'clamp(26px,4.5vw,34px)', textAlign: 'center', background: isCenter ? pal.bg : pal.bg.replace(/[\d.]+\)$/, '0.08)'), border: `1px solid ${isCenter ? pal.border : pal.border.replace(/[\d.]+\)$/, '0.28)')}`, borderRadius: 6, padding: '3px 6px', fontSize: 'clamp(11px,2.3vw,14px)', fontWeight: 900, color: pal.label, boxShadow: isCenter ? `0 0 12px ${pal.bg}` : undefined, alignSelf: 'flex-start' }}>{badgeLetter}</div>
                   <div style={{ flex: 1, minWidth: 0 }}>
-                    {/* Referência do versículo — igual ao quiasma */}
-                    {refPart && (
-                      <span style={{ fontSize: 'clamp(10px,2vw,11px)', color: pal.label, opacity: 0.78, fontWeight: 700, marginRight: 6, whiteSpace: 'nowrap' }}>
-                        {refPart}
-                      </span>
-                    )}
-                    {/* Título proposicional */}
-                    <span style={{ fontSize: 'clamp(12px,2.6vw,14px)', color: isCenter ? pal.label : 'rgba(220,215,255,0.88)', fontWeight: isCenter ? 700 : 400, lineHeight: 1.5 }}>
-                      {tg.title}
-                    </span>
-                    {/* Gancho */}
-                    {tg.gancho && (
-                      <div style={{ fontSize: 'clamp(11px,2.3vw,12px)', color: 'rgba(190,190,220,0.55)', fontStyle: 'italic', marginTop: 3, lineHeight: 1.4 }}>
-                        → {tg.gancho}
-                      </div>
-                    )}
+                    {refPart && <span style={{ fontSize: 'clamp(10px,2vw,11px)', color: pal.label, opacity: 0.78, fontWeight: 700, marginRight: 6, whiteSpace: 'nowrap' }}>{refPart}</span>}
+                    <span style={{ fontSize: 'clamp(12px,2.6vw,14px)', color: isCenter ? pal.label : 'rgba(220,215,255,0.88)', fontWeight: isCenter ? 700 : 400, lineHeight: 1.5 }}>{tg.title}</span>
+                    {tg.gancho && <div style={{ fontSize: 'clamp(11px,2.3vw,12px)', color: 'rgba(190,190,220,0.55)', fontStyle: 'italic', marginTop: 3, lineHeight: 1.4 }}>→ {tg.gancho}</div>}
                   </div>
                 </div>
               );
             })}
           </div>
         )}
-
-        {/* Eixo Cristológico */}
         {eixo && (
           <div style={{ padding: '10px 14px', borderRadius: 10, background: 'rgba(96,165,250,0.06)', border: '1px solid rgba(96,165,250,0.18)' }}>
             <div style={{ fontSize: 'clamp(8px,1.8vw,9px)', fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase', color: 'rgba(147,197,253,0.65)', marginBottom: 4 }}>Eixo Cristológico</div>
@@ -450,222 +375,261 @@ function ParaPregarSection({ d, pericopeIdx, conteudo }: {
   );
 }
 
-// ─── Main Page ─────────────────────────────────────────────────────
+// ─── Main Page ───────────────────────────────────────────────────────
 export default function PregacaoPage() {
+  const [selectedBook, setSelectedBook] = useState<BibleBook | null>(null);
   const [pericopes, setPericopes] = useState<Pericope[]>([]);
-  const [selectedIdx, setSelectedIdx] = useState<number | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [mobileListOpen, setMobileListOpen] = useState(false);
+  const [loadingPericopes, setLoadingPericopes] = useState(false);
+  const [selectedPericopeIdx, setSelectedPericopeIdx] = useState<number | null>(null);
+  const [contentTab, setContentTab] = useState<'quiasma' | 'homilestica'>('quiasma');
 
-  // Filter PLANO_COMPLETO for Gênesis days
-  const genesisDays = useMemo(
-    () => PLANO_COMPLETO.filter(d => d.livroAbrev === 'Gn'),
-    []
-  );
-
+  // Busca perícopes quando muda o livro
   useEffect(() => {
-    fetch('/admin/AT/genesis/quiastico.txt')
+    if (!selectedBook) return;
+    setLoadingPericopes(true);
+    setPericopes([]);
+    setSelectedPericopeIdx(null);
+    fetch(`${livroPath(selectedBook.slug, selectedBook.testamento)}/quiastico.txt`)
       .then(r => r.ok ? r.text() : '')
       .then(text => {
         const list: Pericope[] = [];
         for (const raw of text.split(/\r?\n/)) {
           const line = raw.trim();
           const m = line.match(/^\[(\d+)\]\s+(.+?)(?:\s+[—–-]\s+(.+))?$/);
-          if (m) {
-            list.push({
-              idx: parseInt(m[1], 10),
-              titulo: m[2].trim(),
-              ref: (m[3] ?? '').trim(),
-            });
-          }
+          if (m) list.push({ idx: parseInt(m[1], 10), titulo: m[2].trim(), ref: (m[3] ?? '').trim() });
         }
         setPericopes(list);
-        if (list.length > 0) setSelectedIdx(list[0].idx);
-        setLoading(false);
+        if (list.length > 0) setSelectedPericopeIdx(list[0].idx);
+        setLoadingPericopes(false);
       })
-      .catch(() => setLoading(false));
-  }, []);
+      .catch(() => setLoadingPericopes(false));
+  }, [selectedBook]);
 
-  const selectedDia = selectedIdx != null ? genesisDays[selectedIdx - 1] : null;
+  const bookDays = useMemo(() => {
+    if (!selectedBook) return [];
+    return PLANO_COMPLETO.filter(d => d.livroAbrev === selectedBook.abrev);
+  }, [selectedBook]);
+
+  const selectedDia: DiaDevocional | null = useMemo(() => {
+    if (!selectedPericopeIdx || bookDays.length === 0) return null;
+    return bookDays[selectedPericopeIdx - 1] ?? null;
+  }, [bookDays, selectedPericopeIdx]);
+
+  const selectedPericope = pericopes.find(p => p.idx === selectedPericopeIdx) ?? null;
   const paraPregarConteudo = selectedDia ? gerarParaPregar(selectedDia) : null;
-  const selectedPericope = pericopes.find(p => p.idx === selectedIdx) ?? null;
+
+  const atGroups = AT_GRUPOS.map(g => ({ grupo: g, books: BIBLE_BOOKS.filter(b => b.testamento === 'AT' && b.grupo === g) }));
+  const ntGroups = NT_GRUPOS.map(g => ({ grupo: g, books: BIBLE_BOOKS.filter(b => b.testamento === 'NT' && b.grupo === g) }));
+
+  const renderBookGroup = (grupo: string, books: BibleBook[], cor: string) => (
+    <div key={grupo} style={{ marginBottom: 20 }}>
+      <div style={{ fontSize: 9, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: cor, opacity: 0.6, marginBottom: 8, paddingLeft: 2 }}>
+        {grupo}
+      </div>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+        {books.map(book => {
+          const active = selectedBook?.slug === book.slug;
+          return (
+            <button
+              key={book.slug}
+              onClick={() => { setSelectedBook(book); setContentTab('quiasma'); }}
+              style={{
+                all: 'unset', cursor: 'pointer',
+                padding: '6px 10px', borderRadius: 8,
+                fontSize: 11, fontWeight: 700,
+                background: active ? (book.testamento === 'AT' ? 'rgba(255,200,80,0.15)' : 'rgba(80,200,255,0.12)') : 'rgba(255,255,255,0.04)',
+                border: `1px solid ${active ? cor : 'rgba(255,255,255,0.08)'}`,
+                color: active ? cor : 'rgba(255,255,255,0.65)',
+                transition: 'all 0.15s',
+                boxShadow: active ? `0 0 10px ${cor}22` : 'none',
+                whiteSpace: 'nowrap',
+              }}
+              onMouseEnter={e => { if (!active) { (e.currentTarget as HTMLButtonElement).style.background = 'rgba(255,255,255,0.07)'; (e.currentTarget as HTMLButtonElement).style.color = 'rgba(255,255,255,0.9)'; } }}
+              onMouseLeave={e => { if (!active) { (e.currentTarget as HTMLButtonElement).style.background = 'rgba(255,255,255,0.04)'; (e.currentTarget as HTMLButtonElement).style.color = 'rgba(255,255,255,0.65)'; } }}
+            >
+              {book.nome}
+            </button>
+          );
+        })}
+      </div>
+    </div>
+  );
 
   return (
     <div style={{ minHeight: '100vh', background: C.bg, color: C.white }}>
       <Navbar />
 
-      <div style={{ maxWidth: 1400, margin: '0 auto', padding: 'clamp(16px,3vw,28px) clamp(12px,3vw,24px)' }}>
+      <div style={{ maxWidth: 1100, margin: '0 auto', padding: 'clamp(80px,10vw,100px) clamp(16px,4vw,32px) 60px' }}>
+
         {/* Header */}
-        <div style={{ marginBottom: 24 }}>
-          <div style={{
-            fontSize: 'clamp(11px,2vw,12px)', fontWeight: 900, letterSpacing: '0.24em',
-            textTransform: 'uppercase',
-            background: 'linear-gradient(90deg, rgba(196,160,255,1) 0%, rgba(147,197,253,1) 100%)',
-            WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
-            marginBottom: 6,
-          }}>
+        <div style={{ marginBottom: 36 }}>
+          <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.26em', textTransform: 'uppercase', background: 'linear-gradient(90deg, rgba(196,160,255,1) 0%, rgba(147,197,253,1) 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', marginBottom: 8 }}>
             Pregação
           </div>
-          <div style={{ fontSize: 'clamp(20px,4vw,28px)', fontWeight: 800, color: C.white, letterSpacing: '-0.01em' }}>
-            Estrutura quiástica e esboço por perícope
+          <div style={{ fontSize: 'clamp(22px,4vw,32px)', fontWeight: 800, color: C.white, letterSpacing: '-0.02em', lineHeight: 1.2 }}>
+            Estrutura quiástica & esboço homilético
           </div>
-          <div style={{ fontSize: 'clamp(12px,2.4vw,14px)', color: C.muted, marginTop: 4 }}>
-            Selecione uma perícope de Gênesis para visualizar o quiasma e o esboço Para Pregar.
+          <div style={{ fontSize: 13, color: C.muted, marginTop: 6, lineHeight: 1.6 }}>
+            Selecione um livro da Bíblia para explorar as perícopes, a estrutura quiástica e o esboço para pregar.
           </div>
         </div>
 
-        {/* Mobile dropdown */}
-        <div style={{ display: 'none' }} className="pregacao-mobile-only">
-          <button
-            onClick={() => setMobileListOpen(o => !o)}
-            style={{
-              all: 'unset', cursor: 'pointer', width: '100%', boxSizing: 'border-box',
-              padding: '12px 14px', borderRadius: 12,
-              background: C.bgCard, border: `1px solid ${C.border}`,
-              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-              marginBottom: 12,
-            }}
-          >
-            <span style={{ fontSize: 13, fontWeight: 700, color: C.white }}>
-              {selectedPericope ? `[${String(selectedPericope.idx).padStart(2,'0')}] ${selectedPericope.titulo}` : 'Selecionar perícope'}
-            </span>
-            <ChevronDown size={16} color={C.muted} style={{ transform: mobileListOpen ? 'rotate(180deg)' : 'none', transition: 'transform 0.2s' }} />
-          </button>
-        </div>
-
-        <div style={{ display: 'flex', gap: 20, alignItems: 'flex-start' }} className="pregacao-grid">
-          {/* Lista de perícopes */}
-          <aside
-            className="pregacao-list"
-            style={{
-              flex: '0 0 320px',
-              maxHeight: 'calc(100vh - 200px)',
-              overflowY: 'auto',
-              padding: 14,
-              borderRadius: 16,
-              background: 'rgba(255,255,255,0.03)',
-              border: `1px solid ${C.border}`,
-              borderRight: `1px solid ${C.border}`,
-            }}
-          >
-            <div style={{
-              fontSize: 10, fontWeight: 900, letterSpacing: '0.20em',
-              textTransform: 'uppercase', color: C.gold,
-              padding: '4px 8px 12px 8px', borderBottom: `1px solid ${C.border}`,
-              marginBottom: 8,
-            }}>
-              Gênesis — {pericopes.length} perícopes
+        {/* ── Grade de livros ── */}
+        <div style={{ borderRadius: 20, border: `1px solid ${C.border}`, background: 'rgba(255,255,255,0.025)', padding: 'clamp(16px,3vw,24px)', marginBottom: 28 }}>
+          {/* AT */}
+          <div style={{ marginBottom: 20 }}>
+            <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase', color: C.atColor, marginBottom: 14, display: 'flex', alignItems: 'center', gap: 10 }}>
+              <span>Antigo Testamento</span>
+              <div style={{ flex: 1, height: 1, background: 'linear-gradient(90deg, rgba(255,180,50,0.30) 0%, transparent 100%)' }} />
             </div>
-            {loading && <div style={{ padding: 16, color: C.muted, fontSize: 12 }}>Carregando...</div>}
-            {!loading && pericopes.length === 0 && (
-              <div style={{ padding: 16, color: C.muted, fontSize: 12 }}>Nenhuma perícope encontrada.</div>
-            )}
-            {pericopes.map(p => {
-              const active = p.idx === selectedIdx;
-              return (
-                <button
-                  key={p.idx}
-                  onClick={() => { setSelectedIdx(p.idx); setMobileListOpen(false); }}
-                  style={{
-                    all: 'unset', cursor: 'pointer', display: 'block', width: '100%',
-                    boxSizing: 'border-box',
-                    padding: '10px 12px', borderRadius: 10,
-                    marginBottom: 4,
-                    background: active ? 'rgba(255,200,80,0.10)' : 'transparent',
-                    border: `1px solid ${active ? C.goldB : 'transparent'}`,
-                    transition: 'background 0.15s, border-color 0.15s',
-                  }}
-                  onMouseEnter={e => { if (!active) (e.currentTarget as HTMLButtonElement).style.background = C.bgCardH; }}
-                  onMouseLeave={e => { if (!active) (e.currentTarget as HTMLButtonElement).style.background = 'transparent'; }}
-                >
-                  <div style={{
-                    fontSize: 10, fontWeight: 900, color: active ? C.gold : C.muted,
-                    letterSpacing: '0.10em', marginBottom: 3,
-                  }}>
-                    [{String(p.idx).padStart(2, '0')}]
-                  </div>
-                  <div style={{
-                    fontSize: 12, fontWeight: 700,
-                    color: active ? C.gold : 'rgba(255,255,255,0.85)',
-                    lineHeight: 1.35,
-                    marginBottom: p.ref ? 3 : 0,
-                  }}>
-                    {p.titulo}
-                  </div>
-                  {p.ref && (
-                    <div style={{ fontSize: 10, color: 'rgba(255,255,255,0.40)', fontWeight: 500 }}>
-                      {p.ref}
-                    </div>
-                  )}
-                </button>
-              );
-            })}
-          </aside>
+            {atGroups.map(({ grupo, books }) => renderBookGroup(grupo, books, C.atColor))}
+          </div>
 
-          {/* Conteúdo */}
-          <main style={{ flex: 1, minWidth: 0 }}>
-            <AnimatePresence mode="wait">
-              {selectedDia && selectedPericope ? (
-                <motion.div
-                  key={selectedDia.dia}
-                  initial={{ opacity: 0, y: 8 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -6 }}
-                  transition={{ duration: 0.25 }}
-                >
-                  <div style={{ marginBottom: 16 }}>
-                    <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.20em', color: C.gold, textTransform: 'uppercase', marginBottom: 4 }}>
+          {/* Divisor */}
+          <div style={{ height: 1, background: C.border, margin: '4px 0 20px' }} />
+
+          {/* NT */}
+          <div>
+            <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase', color: C.ntColor, marginBottom: 14, display: 'flex', alignItems: 'center', gap: 10 }}>
+              <span>Novo Testamento</span>
+              <div style={{ flex: 1, height: 1, background: 'linear-gradient(90deg, rgba(80,200,255,0.30) 0%, transparent 100%)' }} />
+            </div>
+            {ntGroups.map(({ grupo, books }) => renderBookGroup(grupo, books, C.ntColor))}
+          </div>
+        </div>
+
+        {/* ── Perícopes (abas horizontais) ── */}
+        <AnimatePresence mode="wait">
+          {selectedBook && (
+            <motion.div key={selectedBook.slug} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -6 }} transition={{ duration: 0.2 }}>
+
+              {/* Cabeçalho do livro */}
+              <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 14 }}>
+                <ChevronRight size={14} color={selectedBook.testamento === 'AT' ? C.atColor : C.ntColor} />
+                <span style={{ fontSize: 13, fontWeight: 800, color: selectedBook.testamento === 'AT' ? C.atColor : C.ntColor }}>
+                  {selectedBook.nome}
+                </span>
+                {loadingPericopes && <span style={{ fontSize: 11, color: C.muted }}>Carregando perícopes...</span>}
+                {!loadingPericopes && pericopes.length > 0 && (
+                  <span style={{ fontSize: 11, color: C.muted }}>{pericopes.length} perícopes</span>
+                )}
+                {!loadingPericopes && pericopes.length === 0 && (
+                  <span style={{ fontSize: 11, color: C.muted }}>Perícopes não cadastradas ainda</span>
+                )}
+              </div>
+
+              {/* Abas de perícopes — scroll horizontal */}
+              {pericopes.length > 0 && (
+                <div style={{ overflowX: 'auto', marginBottom: 20, paddingBottom: 4 }}>
+                  <div style={{ display: 'flex', gap: 6, minWidth: 'max-content' }}>
+                    {pericopes.map(p => {
+                      const active = p.idx === selectedPericopeIdx;
+                      const cor = selectedBook.testamento === 'AT' ? C.atColor : C.ntColor;
+                      const corL = selectedBook.testamento === 'AT' ? 'rgba(255,200,80,0.12)' : 'rgba(80,200,255,0.10)';
+                      const corB2 = selectedBook.testamento === 'AT' ? C.goldB : C.blueB;
+                      return (
+                        <button
+                          key={p.idx}
+                          onClick={() => { setSelectedPericopeIdx(p.idx); setContentTab('quiasma'); }}
+                          style={{
+                            all: 'unset', cursor: 'pointer',
+                            padding: '8px 14px', borderRadius: 10,
+                            background: active ? corL : 'rgba(255,255,255,0.04)',
+                            border: `1px solid ${active ? corB2 : 'rgba(255,255,255,0.08)'}`,
+                            color: active ? cor : 'rgba(255,255,255,0.60)',
+                            transition: 'all 0.15s',
+                            whiteSpace: 'nowrap',
+                          }}
+                        >
+                          <div style={{ fontSize: 9, fontWeight: 900, letterSpacing: '0.14em', color: active ? cor : C.muted, marginBottom: 2 }}>
+                            [{String(p.idx).padStart(2, '0')}]
+                          </div>
+                          <div style={{ fontSize: 12, fontWeight: 700, lineHeight: 1.3, maxWidth: 160, overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                            {p.titulo}
+                          </div>
+                          {p.ref && <div style={{ fontSize: 10, color: active ? cor : C.muted, opacity: 0.75, marginTop: 2 }}>{p.ref}</div>}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+
+              {/* Abas de conteúdo: Estrutura Quiástica | Homilética */}
+              {selectedPericope && selectedDia && (
+                <motion.div key={selectedPericopeIdx} initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.2 }}>
+                  {/* Tab bar */}
+                  <div style={{ display: 'flex', gap: 4, marginBottom: 20, borderBottom: `1px solid ${C.border}`, paddingBottom: 0 }}>
+                    {([
+                      { key: 'quiasma',     label: 'Estrutura Quiástica' },
+                      { key: 'homilestica', label: 'Homilética Para Pregar' },
+                    ] as { key: 'quiasma' | 'homilestica'; label: string }[]).map(tab => {
+                      const active = contentTab === tab.key;
+                      return (
+                        <button
+                          key={tab.key}
+                          onClick={() => setContentTab(tab.key)}
+                          style={{
+                            all: 'unset', cursor: 'pointer',
+                            padding: '10px 18px',
+                            fontSize: 12, fontWeight: 800,
+                            color: active ? C.white : C.muted,
+                            borderBottom: active ? '2px solid rgba(196,160,255,1)' : '2px solid transparent',
+                            marginBottom: -1,
+                            transition: 'all 0.15s',
+                            letterSpacing: '0.03em',
+                          }}
+                        >
+                          {tab.label}
+                        </button>
+                      );
+                    })}
+                  </div>
+
+                  {/* Pericope title */}
+                  <div style={{ marginBottom: 20 }}>
+                    <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.18em', color: selectedBook.testamento === 'AT' ? C.atColor : C.ntColor, textTransform: 'uppercase', marginBottom: 4 }}>
                       Perícope {String(selectedPericope.idx).padStart(2, '0')}
                     </div>
-                    <div style={{ fontSize: 'clamp(18px,3vw,22px)', fontWeight: 800, color: C.white, lineHeight: 1.3 }}>
+                    <div style={{ fontSize: 'clamp(18px,3vw,24px)', fontWeight: 800, color: C.white, lineHeight: 1.3 }}>
                       {selectedPericope.titulo}
                     </div>
                     {selectedPericope.ref && (
-                      <div style={{ fontSize: 13, color: C.muted, marginTop: 4, fontWeight: 500 }}>
-                        {selectedPericope.ref}
-                      </div>
+                      <div style={{ fontSize: 13, color: C.muted, marginTop: 4 }}>{selectedPericope.ref}</div>
                     )}
                   </div>
 
-                  <QuiasmaSection d={selectedDia} pericopeIdx={selectedPericope.idx} />
-
-                  {paraPregarConteudo ? (
-                    <ParaPregarSection d={selectedDia} pericopeIdx={selectedPericope.idx} conteudo={paraPregarConteudo} />
-                  ) : (
-                    <div style={{
-                      marginTop: 14, borderRadius: 14, padding: 18,
-                      border: '1px solid rgba(168,120,255,0.28)',
-                      background: 'rgba(20,12,40,0.7)',
-                      color: C.muted, fontSize: 13, lineHeight: 1.6,
-                    }}>
-                      Esboço "Para Pregar" ainda não disponível para esta perícope.
-                    </div>
-                  )}
+                  {/* Tab content */}
+                  <AnimatePresence mode="wait">
+                    {contentTab === 'quiasma' ? (
+                      <motion.div key="quiasma" initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 10 }} transition={{ duration: 0.18 }}>
+                        <QuiasmaSection d={selectedDia} pericopeIdx={selectedPericope.idx} />
+                      </motion.div>
+                    ) : (
+                      <motion.div key="homilestica" initial={{ opacity: 0, x: 10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -10 }} transition={{ duration: 0.18 }}>
+                        {paraPregarConteudo ? (
+                          <ParaPregarSection d={selectedDia} pericopeIdx={selectedPericope.idx} conteudo={paraPregarConteudo} />
+                        ) : (
+                          <div style={{ padding: 32, borderRadius: 16, border: '1px solid rgba(168,120,255,0.20)', background: 'rgba(20,12,40,0.6)', color: C.muted, fontSize: 13, textAlign: 'center' }}>
+                            Esboço homilético ainda não disponível para esta perícope.
+                          </div>
+                        )}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </motion.div>
-              ) : (
-                <div style={{ padding: 32, textAlign: 'center', color: C.muted, fontSize: 13 }}>
-                  Selecione uma perícope na lista ao lado.
-                </div>
               )}
-            </AnimatePresence>
-          </main>
-        </div>
-      </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
 
-      <style>{`
-        @media (max-width: 768px) {
-          .pregacao-mobile-only { display: block !important; }
-          .pregacao-grid { flex-direction: column !important; }
-          .pregacao-list {
-            flex: 1 1 auto !important;
-            max-height: ${mobileListOpen ? '50vh' : '0px'} !important;
-            padding: ${mobileListOpen ? '14px' : '0 14px'} !important;
-            border-width: ${mobileListOpen ? '1px' : '0'} !important;
-            overflow: hidden;
-            transition: max-height 0.25s, padding 0.25s;
-          }
-        }
-      `}</style>
+        {/* Estado inicial (nenhum livro selecionado) */}
+        {!selectedBook && (
+          <div style={{ textAlign: 'center', padding: '40px 0', color: C.muted, fontSize: 13 }}>
+            Selecione um livro acima para começar.
+          </div>
+        )}
+      </div>
     </div>
   );
 }
