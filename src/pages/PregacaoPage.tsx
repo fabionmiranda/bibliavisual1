@@ -633,13 +633,30 @@ export default function PregacaoPage() {
                     gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
                     gap: 10,
                   }}>
-                    {pericopes.map(p => {
+                    {pericopes.map((p, cardIdx) => {
                       const active = p.idx === selectedPericopeIdx;
-                      const pCor  = selectedBook.testamento === 'AT' ? C.atColor : C.ntColor;
-                      const pCorL = selectedBook.testamento === 'AT' ? 'rgba(255,200,80,0.08)' : 'rgba(80,200,255,0.07)';
-                      const pCorB = selectedBook.testamento === 'AT' ? C.goldB : C.blueB;
-                      const dia   = bookDays[p.idx - 1];
+                      const isAT   = selectedBook.testamento === 'AT';
+                      const pCor   = isAT ? C.atColor : C.ntColor;
+                      const pCorB  = isAT ? C.goldB : C.blueB;
+                      const dia    = bookDays[p.idx - 1];
                       const sermonTitle = dia ? SERMON_TITLES[dia.dia] : undefined;
+
+                      // Paleta rotativa sutil para dar personalidade a cada card
+                      const CARD_ACCENTS = [
+                        { glow: 'rgba(255,200,80,',  stripe: 'rgba(255,200,80,'  },
+                        { glow: 'rgba(80,200,255,',  stripe: 'rgba(80,200,255,'  },
+                        { glow: 'rgba(180,120,255,', stripe: 'rgba(180,120,255,' },
+                        { glow: 'rgba(100,220,160,', stripe: 'rgba(100,220,160,' },
+                        { glow: 'rgba(255,140,80,',  stripe: 'rgba(255,140,80,'  },
+                        { glow: 'rgba(255,100,160,', stripe: 'rgba(255,100,160,' },
+                        { glow: 'rgba(80,220,220,',  stripe: 'rgba(80,220,220,'  },
+                      ];
+                      const accent = CARD_ACCENTS[cardIdx % CARD_ACCENTS.length];
+                      const accentFull  = `${accent.glow}1)`;
+                      const accentMid   = `${accent.glow}0.18)`;
+                      const accentFaint = `${accent.glow}0.07)`;
+                      const accentBorder= `${accent.stripe}0.35)`;
+
                       return (
                         <button
                           key={p.idx}
@@ -647,63 +664,90 @@ export default function PregacaoPage() {
                           style={{
                             all: 'unset', cursor: 'pointer',
                             display: 'flex', flexDirection: 'column',
-                            padding: '14px 16px 16px', borderRadius: 14,
+                            padding: '0', borderRadius: 16,
                             background: active
-                              ? `linear-gradient(135deg, ${pCorL} 0%, rgba(255,255,255,0.02) 100%)`
-                              : 'rgba(255,255,255,0.025)',
-                            border: `1px solid ${active ? pCorB : 'rgba(255,255,255,0.07)'}`,
-                            boxShadow: active ? `0 0 24px ${pCor}20, inset 0 1px 0 rgba(255,255,255,0.06)` : 'inset 0 1px 0 rgba(255,255,255,0.03)',
-                            transition: 'all 0.18s',
+                              ? `linear-gradient(145deg, ${accentFaint} 0%, rgba(5,7,26,0.95) 100%)`
+                              : 'rgba(255,255,255,0.02)',
+                            border: `1px solid ${active ? accentBorder : 'rgba(255,255,255,0.07)'}`,
+                            boxShadow: active
+                              ? `0 0 28px ${accent.glow}0.22), 0 4px 20px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.07)`
+                              : '0 2px 12px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.03)',
+                            transition: 'all 0.2s',
                             textAlign: 'left',
+                            overflow: 'hidden',
+                            position: 'relative',
                           }}
-                          onMouseEnter={e => { if (!active) { const el = e.currentTarget as HTMLButtonElement; el.style.background = 'rgba(255,255,255,0.05)'; el.style.borderColor = 'rgba(255,255,255,0.12)'; } }}
-                          onMouseLeave={e => { if (!active) { const el = e.currentTarget as HTMLButtonElement; el.style.background = 'rgba(255,255,255,0.025)'; el.style.borderColor = 'rgba(255,255,255,0.07)'; } }}
+                          onMouseEnter={e => {
+                            if (!active) {
+                              const el = e.currentTarget as HTMLButtonElement;
+                              el.style.background = `linear-gradient(145deg, ${accentFaint} 0%, rgba(255,255,255,0.03) 100%)`;
+                              el.style.borderColor = accentBorder;
+                              el.style.boxShadow = `0 0 18px ${accent.glow}0.15), 0 4px 16px rgba(0,0,0,0.4)`;
+                            }
+                          }}
+                          onMouseLeave={e => {
+                            if (!active) {
+                              const el = e.currentTarget as HTMLButtonElement;
+                              el.style.background = 'rgba(255,255,255,0.02)';
+                              el.style.borderColor = 'rgba(255,255,255,0.07)';
+                              el.style.boxShadow = '0 2px 12px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.03)';
+                            }
+                          }}
                         >
-                          {/* Topo: número + referência */}
-                          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 12 }}>
-                            <div style={{
-                              flexShrink: 0,
-                              padding: '3px 9px', borderRadius: 6,
-                              background: active ? (selectedBook.testamento === 'AT' ? 'rgba(255,200,80,0.22)' : 'rgba(80,200,255,0.18)') : 'rgba(255,255,255,0.09)',
-                              border: `1px solid ${active ? pCorB : 'rgba(255,255,255,0.14)'}`,
-                              fontSize: 10, fontWeight: 900, color: active ? pCor : 'rgba(255,255,255,0.65)',
-                              letterSpacing: '0.08em',
-                            }}>
-                              {String(p.idx).padStart(2, '0')}
-                            </div>
-                            {p.ref && (
-                              <span style={{ fontSize: 12, color: active ? pCor : 'rgba(255,255,255,0.55)', fontWeight: 700 }}>
-                                {p.ref}
-                              </span>
-                            )}
-                            {active && (
-                              <div style={{ marginLeft: 'auto', width: 6, height: 6, borderRadius: '50%', background: pCor, boxShadow: `0 0 6px ${pCor}` }} />
-                            )}
-                          </div>
-
-                          {/* Título do sermão — DESTAQUE principal */}
-                          {sermonTitle && (
-                            <div style={{
-                              fontSize: 15, fontWeight: 800, lineHeight: 1.35,
-                              color: active ? C.white : 'rgba(255,255,255,0.92)',
-                              marginBottom: 8,
-                              overflow: 'hidden', display: '-webkit-box',
-                              WebkitLineClamp: 3, WebkitBoxOrient: 'vertical',
-                            }}>
-                              {sermonTitle}
-                            </div>
-                          )}
-
-                          {/* Título da perícope — secundário, abaixo */}
+                          {/* Listra colorida no topo */}
                           <div style={{
-                            fontSize: 11, fontWeight: 500, lineHeight: 1.4,
-                            color: active ? pCor : 'rgba(255,255,255,0.45)',
-                            overflow: 'hidden', display: '-webkit-box',
-                            WebkitLineClamp: 2, WebkitBoxOrient: 'vertical',
-                            paddingTop: sermonTitle ? 7 : 0,
-                            borderTop: sermonTitle ? `1px solid ${active ? pCorB : 'rgba(255,255,255,0.07)'}` : 'none',
-                          }}>
-                            {p.titulo}
+                            height: 3, width: '100%',
+                            background: `linear-gradient(90deg, ${accentFull} 0%, ${accent.glow}0.3) 60%, transparent 100%)`,
+                            borderRadius: '16px 16px 0 0',
+                          }} />
+
+                          <div style={{ padding: '12px 15px 15px' }}>
+                            {/* Número + ref */}
+                            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+                              <div style={{
+                                flexShrink: 0,
+                                padding: '2px 8px', borderRadius: 5,
+                                background: accentMid,
+                                border: `1px solid ${accentBorder}`,
+                                fontSize: 10, fontWeight: 900, color: accentFull,
+                                letterSpacing: '0.08em',
+                              }}>
+                                {String(p.idx).padStart(2, '0')}
+                              </div>
+                              {p.ref && (
+                                <span style={{ fontSize: 12, color: active ? accentFull : 'rgba(255,255,255,0.60)', fontWeight: 700 }}>
+                                  {p.ref}
+                                </span>
+                              )}
+                              {active && (
+                                <div style={{ marginLeft: 'auto', width: 7, height: 7, borderRadius: '50%', background: accentFull, boxShadow: `0 0 8px ${accentFull}` }} />
+                              )}
+                            </div>
+
+                            {/* Título do sermão — destaque principal */}
+                            {sermonTitle && (
+                              <div style={{
+                                fontSize: 14, fontWeight: 800, lineHeight: 1.38,
+                                color: 'rgba(255,255,255,0.95)',
+                                marginBottom: 8,
+                                overflow: 'hidden', display: '-webkit-box',
+                                WebkitLineClamp: 3, WebkitBoxOrient: 'vertical',
+                              }}>
+                                {sermonTitle}
+                              </div>
+                            )}
+
+                            {/* Título da perícope — secundário */}
+                            <div style={{
+                              fontSize: 11, fontWeight: 500, lineHeight: 1.4,
+                              color: active ? accentFull : 'rgba(255,255,255,0.42)',
+                              overflow: 'hidden', display: '-webkit-box',
+                              WebkitLineClamp: 2, WebkitBoxOrient: 'vertical',
+                              paddingTop: sermonTitle ? 7 : 0,
+                              borderTop: sermonTitle ? `1px solid rgba(255,255,255,0.07)` : 'none',
+                            }}>
+                              {p.titulo}
+                            </div>
                           </div>
                         </button>
                       );
