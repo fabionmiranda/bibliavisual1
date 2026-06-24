@@ -660,19 +660,19 @@ export default function PregacaoPage() {
                           onMouseLeave={e => { if (!active) { const el = e.currentTarget as HTMLButtonElement; el.style.background = 'rgba(255,255,255,0.025)'; el.style.borderColor = 'rgba(255,255,255,0.07)'; } }}
                         >
                           {/* Topo: número + referência */}
-                          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 12 }}>
                             <div style={{
                               flexShrink: 0,
-                              padding: '3px 8px', borderRadius: 6,
-                              background: active ? (selectedBook.testamento === 'AT' ? 'rgba(255,200,80,0.18)' : 'rgba(80,200,255,0.15)') : 'rgba(255,255,255,0.06)',
-                              border: `1px solid ${active ? pCorB : 'rgba(255,255,255,0.09)'}`,
-                              fontSize: 10, fontWeight: 900, color: active ? pCor : C.muted,
+                              padding: '3px 9px', borderRadius: 6,
+                              background: active ? (selectedBook.testamento === 'AT' ? 'rgba(255,200,80,0.22)' : 'rgba(80,200,255,0.18)') : 'rgba(255,255,255,0.09)',
+                              border: `1px solid ${active ? pCorB : 'rgba(255,255,255,0.14)'}`,
+                              fontSize: 10, fontWeight: 900, color: active ? pCor : 'rgba(255,255,255,0.65)',
                               letterSpacing: '0.08em',
                             }}>
                               {String(p.idx).padStart(2, '0')}
                             </div>
                             {p.ref && (
-                              <span style={{ fontSize: 11, color: active ? pCor : 'rgba(255,255,255,0.35)', fontWeight: 700 }}>
+                              <span style={{ fontSize: 12, color: active ? pCor : 'rgba(255,255,255,0.55)', fontWeight: 700 }}>
                                 {p.ref}
                               </span>
                             )}
@@ -681,34 +681,30 @@ export default function PregacaoPage() {
                             )}
                           </div>
 
-                          {/* Título da perícope */}
-                          <div style={{
-                            fontSize: 13, fontWeight: 700, lineHeight: 1.4,
-                            color: active ? C.white : 'rgba(255,255,255,0.70)',
-                            marginBottom: sermonTitle ? 8 : 0,
-                            overflow: 'hidden', display: '-webkit-box',
-                            WebkitLineClamp: 2, WebkitBoxOrient: 'vertical',
-                          }}>
-                            {p.titulo}
-                          </div>
-
-                          {/* Título do sermão — destaque gradient */}
+                          {/* Título do sermão — DESTAQUE principal */}
                           {sermonTitle && (
                             <div style={{
-                              fontSize: 12, fontWeight: 600, lineHeight: 1.45,
-                              fontStyle: 'italic',
-                              background: active
-                                ? `linear-gradient(90deg, ${pCor} 0%, rgba(196,160,255,1) 100%)`
-                                : 'linear-gradient(90deg, rgba(196,160,255,0.70) 0%, rgba(147,197,253,0.70) 100%)',
-                              WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
+                              fontSize: 15, fontWeight: 800, lineHeight: 1.35,
+                              color: active ? C.white : 'rgba(255,255,255,0.92)',
+                              marginBottom: 8,
                               overflow: 'hidden', display: '-webkit-box',
-                              WebkitLineClamp: 2, WebkitBoxOrient: 'vertical',
-                              paddingTop: 6,
-                              borderTop: `1px solid ${active ? pCorB : 'rgba(255,255,255,0.06)'}`,
+                              WebkitLineClamp: 3, WebkitBoxOrient: 'vertical',
                             }}>
                               {sermonTitle}
                             </div>
                           )}
+
+                          {/* Título da perícope — secundário, abaixo */}
+                          <div style={{
+                            fontSize: 11, fontWeight: 500, lineHeight: 1.4,
+                            color: active ? pCor : 'rgba(255,255,255,0.45)',
+                            overflow: 'hidden', display: '-webkit-box',
+                            WebkitLineClamp: 2, WebkitBoxOrient: 'vertical',
+                            paddingTop: sermonTitle ? 7 : 0,
+                            borderTop: sermonTitle ? `1px solid ${active ? pCorB : 'rgba(255,255,255,0.07)'}` : 'none',
+                          }}>
+                            {p.titulo}
+                          </div>
                         </button>
                       );
                     })}
