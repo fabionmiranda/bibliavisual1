@@ -4,7 +4,6 @@ import { BookOpen, Calendar, Search, X, Moon, Heart } from 'lucide-react';
 import { toPng } from 'html-to-image';
 import Navbar from '../components/Navbar';
 import { PLANO_COMPLETO, TOTAL_DIAS, getDayOfYear, type DiaDevocional } from '../data/calendarioDevocional';
-import { gerarParaPregar } from '../data/paraPregar';
 
 // Calendário: dia 1 = 1 jan 2026 (Gênesis) → Apocalipse no ano 5
 const DIAS_SEMANA = ['Domingo','Segunda-feira','Terça-feira','Quarta-feira','Quinta-feira','Sexta-feira','Sábado'];
@@ -267,7 +266,6 @@ const QUIASMA_PALETA = [
 
 type QuiasmaStatus = 'loading' | 'ok' | 'sem-arquivo' | 'sem-pericope';
 
-// ── Para Pregar — componente estruturado ──────────────────────────────────
 function ParaPregarSection({ d, pericopeIdx, conteudo }: {
   d: DiaDevocional; pericopeIdx: number; conteudo: string;
 }) {
@@ -8621,9 +8619,6 @@ function DiaModal({ d, onClose, innerRef }: { d: DiaDevocional; onClose: () => v
 
         {/* Quiasma */}
         <QuiasmaSection d={d} pericopeIdx={pericopeIdx} />
-
-        {/* PARA PREGAR — componente estruturado com cores do quiasma */}
-        {(() => { const pp = gerarParaPregar(d); return pp ? <ParaPregarSection d={d} pericopeIdx={pericopeIdx} conteudo={pp} /> : null; })()}
 
         {/* Progresso */}
         <div style={{ marginTop: 24 }}>
