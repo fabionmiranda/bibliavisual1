@@ -268,7 +268,7 @@ function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: num
 
 // ─── Para Pregar renderer ────────────────────────────────────────────
 function ParaPregarSection({ d, pericopeIdx, conteudo, sermonTitulo }: { d: DiaDevocional; pericopeIdx: number; conteudo: string; sermonTitulo?: string }) {
-  const [quiasmaArms, setQuiasmaArms] = useState<{ label: string; badgeLetter: string; refPart: string; level: number; isCenter: boolean }[]>([]);
+  const [quiasmaArms, setQuiasmaArms] = useState<{ badgeLetter: string; refPart: string; desc: string; level: number; isCenter: boolean }[]>([]);
   const book = BIBLE_BOOKS.find(b => b.abrev === d.livroAbrev);
 
   useEffect(() => {
@@ -287,16 +287,28 @@ function ParaPregarSection({ d, pericopeIdx, conteudo, sermonTitulo }: { d: DiaD
         }
         const maxLvl = baseLetters.length - 1;
         const arms: typeof quiasmaArms = [];
-        for (const line of linhas) {
-          const trimmed = line.trim();
+        let i = 0;
+        while (i < linhas.length) {
+          const trimmed = linhas[i].trim();
           const lm = trimmed.match(/^([A-Z])'?\d*\s*[\(\-]/);
           if (lm) {
             const base = lm[1].toUpperCase();
             const level = Math.max(0, baseLetters.indexOf(base));
             const badgeLetter = trimmed.match(/^([A-Z]'?\d*)/)?.[1] ?? trimmed[0];
             const refPart = trimmed.slice(badgeLetter.length).trim();
-            arms.push({ label: trimmed, badgeLetter, refPart, level, isCenter: level === maxLvl });
-          }
+            // captura linhas de descrição seguintes
+            const descLines: string[] = [];
+            let j = i + 1;
+            while (j < linhas.length) {
+              const next = linhas[j].trim();
+              if (!next) { j++; break; }
+              if (/^\[\d/.test(next) || /^([A-Z])'?\d*\s*[\(\-]/.test(next)) break;
+              descLines.push(next);
+              j++;
+            }
+            arms.push({ badgeLetter, refPart, desc: descLines.join(' '), level, isCenter: level === maxLvl });
+            i = j;
+          } else { i++; }
         }
         setQuiasmaArms(arms);
       })
@@ -367,16 +379,36 @@ function ParaPregarSection({ d, pericopeIdx, conteudo, sermonTitulo }: { d: DiaD
             {quiasmaArms.map((arm, idx) => {
               const tg = titlesGanchos[idx];
               if (!tg) return null;
-              const { badgeLetter, refPart, level, isCenter } = arm;
+              const { badgeLetter, refPart, desc, level, isCenter } = arm;
               const pal = QUIASMA_PALETA[level % QUIASMA_PALETA.length];
               return (
-                <div key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: 8, marginTop: isCenter ? 14 : 6, marginBottom: isCenter ? 14 : 0, paddingLeft: level * 12 }}>
-                  <div style={{ width: 3, minHeight: 30, borderRadius: 4, background: pal.label, flexShrink: 0, marginTop: 3 }} />
-                  <div style={{ flexShrink: 0, minWidth: 'clamp(30px,4.5vw,38px)', textAlign: 'center', background: isCenter ? pal.bg : pal.bg.replace(/[\d.]+\)$/, '0.08)'), border: `1px solid ${isCenter ? pal.border : pal.border.replace(/[\d.]+\)$/, '0.28)')}`, borderRadius: 6, padding: '4px 7px', fontSize: 'clamp(13px,2.3vw,17px)', fontWeight: 900, color: pal.label, boxShadow: isCenter ? `0 0 12px ${pal.bg}` : undefined, alignSelf: 'flex-start' }}>{badgeLetter}</div>
+                <div key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: 10, marginTop: isCenter ? 16 : 8, marginBottom: isCenter ? 16 : 2, paddingLeft: level * 14 }}>
+                  {/* Barra lateral */}
+                  <div style={{ width: 3, minHeight: 38, borderRadius: 4, background: pal.label, flexShrink: 0, marginTop: 4 }} />
+                  {/* Badge */}
+                  <div style={{ flexShrink: 0, minWidth: 'clamp(30px,4.5vw,40px)', textAlign: 'center', background: isCenter ? pal.bg : pal.bg.replace(/[\d.]+\)$/, '0.08)'), border: `1px solid ${isCenter ? pal.border : pal.border.replace(/[\d.]+\)$/, '0.28)')}`, borderRadius: 7, padding: '5px 8px', fontSize: 'clamp(14px,2.3vw,18px)', fontWeight: 900, color: pal.label, boxShadow: isCenter ? `0 0 14px ${pal.bg}` : undefined, alignSelf: 'flex-start', lineHeight: 1.2 }}>{badgeLetter}</div>
+                  {/* Conteúdo */}
                   <div style={{ flex: 1, minWidth: 0 }}>
-                    {refPart && <span style={{ fontSize: 'clamp(11px,2vw,13px)', color: pal.label, opacity: 0.78, fontWeight: 700, marginRight: 6, whiteSpace: 'nowrap' }}>{refPart}</span>}
-                    <span style={{ fontSize: 'clamp(14px,2.6vw,17px)', color: isCenter ? pal.label : 'rgba(220,215,255,0.88)', fontWeight: isCenter ? 700 : 400, lineHeight: 1.5 }}>{tg.title}</span>
-                    {tg.gancho && <div style={{ fontSize: 'clamp(12px,2.3vw,14px)', color: 'rgba(190,190,220,0.55)', fontStyle: 'italic', marginTop: 4, lineHeight: 1.4 }}>→ {tg.gancho}</div>}
+                    {/* Ref versículo */}
+                    {refPart && (
+                      <span style={{ fontSize: 'clamp(11px,2vw,13px)', color: pal.label, opacity: 0.8, fontWeight: 700, marginRight: 6, whiteSpace: 'nowrap' }}>{refPart}</span>
+                    )}
+                    {/* Gancho — itálico, em destaque, vem primeiro */}
+                    {tg.gancho && (
+                      <div style={{ fontSize: 'clamp(14px,2.5vw,16px)', color: isCenter ? pal.label : 'rgba(220,215,255,0.95)', fontStyle: 'italic', fontWeight: isCenter ? 700 : 500, lineHeight: 1.5, marginTop: refPart ? 4 : 0 }}>
+                        {tg.gancho}
+                      </div>
+                    )}
+                    {/* Texto padrão do quiasma — abaixo, menor e mais suave */}
+                    {desc && (
+                      <div style={{ fontSize: 'clamp(11px,2vw,13px)', color: 'rgba(180,175,220,0.55)', marginTop: 5, lineHeight: 1.55, fontWeight: 400 }}>
+                        {desc.split(/(\[[^\]]+\])/).map((part, pi) =>
+                          part.startsWith('[') && part.endsWith(']')
+                            ? <span key={pi} style={{ fontFamily: '"SBL Hebrew","Noto Serif Hebrew","Times New Roman",serif', fontSize: 'clamp(13px,2.5vw,16px)', color: pal.label, opacity: 0.6, marginLeft: 3 }}>{part}</span>
+                            : part
+                        )}
+                      </div>
+                    )}
                   </div>
                 </div>
               );
