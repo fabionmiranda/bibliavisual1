@@ -317,28 +317,176 @@ function ParaPregarSection({ d, pericopeIdx, conteudo, sermonTitulo, sermonPergu
       .catch(() => {});
   }, [d, pericopeIdx, book]);
 
+  // ── Detectar formato novo (rico) ──
+  const isNovoFormato = conteudo.includes('MOVIMENTOS DO SERMÃO');
+
+  // ── Parser formato NOVO ──
+  interface Movimento { titulo: string; indicacao: string; exegese: string; teologia: string; aplicacao: string; isCenter: boolean; }
+  let nTitulo = '', nBigIdeia = '', nPergunta = '', nPalavraChave = '', nEixoRedentor = '', nDoutrina = '', nConclusao = '';
+  const nMovimentos: Movimento[] = [];
+  const nAplicacoes: { label: string; texto: string }[] = [];
+
+  if (isNovoFormato) {
+    type SecaoNova = 'none'|'titulo'|'bigideia'|'pergunta'|'palavrachave'|'movimentos'|'eixoredentor'|'doutrina'|'aplicacoes'|'conclusao';
+    let secao: SecaoNova = 'none';
+    let movAtual: Partial<Movimento> | null = null;
+    let movField: 'indicacao'|'exegese'|'teologia'|'aplicacao'|null = null;
+    for (const rawLine of conteudo.split('\n')) {
+      const line = rawLine.trim();
+      if (!line || line.startsWith('PARA PREGAR')) continue;
+      if (line === 'TÍTULO DO SERMÃO') { secao = 'titulo'; continue; }
+      if (line === 'BIG IDEA') { secao = 'bigideia'; continue; }
+      if (line === 'PERGUNTA DE TRANSIÇÃO') { secao = 'pergunta'; continue; }
+      if (line === 'PALAVRA-CHAVE DE TRANSIÇÃO') { secao = 'palavrachave'; continue; }
+      if (line === 'MOVIMENTOS DO SERMÃO') { secao = 'movimentos'; continue; }
+      if (line === 'EIXO REDENTOR' || line.startsWith('EIXO REDENTOR')) { if (movAtual) { nMovimentos.push(movAtual as Movimento); movAtual = null; } secao = 'eixoredentor'; continue; }
+      if (line === 'DOUTRINA CENTRAL') { secao = 'doutrina'; continue; }
+      if (line === 'APLICAÇÕES PASTORAIS') { secao = 'aplicacoes'; continue; }
+      if (line === 'CONCLUSÃO') { secao = 'conclusao'; continue; }
+      if (line === 'EIXO CRISTOLÓGICO') { continue; } // ignorar no novo formato
+
+      if (secao === 'titulo' && !nTitulo) { nTitulo = line; continue; }
+      if (secao === 'bigideia' && !nBigIdeia) { nBigIdeia = line.replace(/^"|"$/g, ''); continue; }
+      if (secao === 'pergunta' && !nPergunta) { nPergunta = line; continue; }
+      if (secao === 'palavrachave') { nPalavraChave += (nPalavraChave ? ' ' : '') + line; continue; }
+      if (secao === 'eixoredentor') { nEixoRedentor += (nEixoRedentor ? ' ' : '') + line; continue; }
+      if (secao === 'doutrina') { nDoutrina += (nDoutrina ? ' ' : '') + line; continue; }
+      if (secao === 'conclusao') { nConclusao += (nConclusao ? '\n' : '') + line; continue; }
+      if (secao === 'aplicacoes') {
+        const m = line.match(/^▸\s*(Para [^:]+):\s*(.*)/);
+        if (m) nAplicacoes.push({ label: m[1], texto: m[2] });
+        else if (nAplicacoes.length) nAplicacoes[nAplicacoes.length-1].texto += ' ' + line;
+        continue;
+      }
+      if (secao === 'movimentos') {
+        const mvMatch = line.match(/^(I{1,3}V?|VI?I?I?|IX|X)[\.\s]/);
+        if (mvMatch) {
+          if (movAtual) nMovimentos.push(movAtual as Movimento);
+          const isCenter = line.includes('◉') || line.includes('CENTRO');
+          movAtual = { titulo: line, indicacao: '', exegese: '', teologia: '', aplicacao: '', isCenter };
+          movField = null; continue;
+        }
+        if (line.startsWith('§ Indicação') || line.startsWith('§ Indicacao')) { movField = 'indicacao'; if (movAtual) movAtual.indicacao = line.replace(/^§\s*Indicação Textual:\s*/i,'').replace(/^§\s*Indicacao Textual:\s*/i,''); continue; }
+        if (line.startsWith('§ Exegese')) { movField = 'exegese'; if (movAtual) movAtual.exegese = line.replace(/^§\s*Exegese:\s*/i,''); continue; }
+        if (line.startsWith('§ Teologia')) { movField = 'teologia'; if (movAtual) movAtual.teologia = line.replace(/^§\s*Teologia Reformada:\s*/i,''); continue; }
+        if (line.startsWith('§ Aplicação') || line.startsWith('§ Aplicacao')) { movField = 'aplicacao'; if (movAtual) movAtual.aplicacao = line.replace(/^§\s*Aplicação:\s*/i,'').replace(/^§\s*Aplicacao:\s*/i,''); continue; }
+        if (movAtual && movField) { (movAtual as any)[movField] += ' ' + line; }
+      }
+    }
+    if (movAtual) nMovimentos.push(movAtual as Movimento);
+  }
+
+  // ── Parser formato ANTIGO ──
   interface TG { title: string; gancho: string; }
   let bigIdea = '', eixo = '';
   const titlesGanchos: TG[] = [];
   let section: 'none' | 'big' | 'movimentos' | 'eixo' = 'none';
   let pending: Partial<TG> | null = null;
-  for (const rawLine of conteudo.split('\n')) {
-    const line = rawLine.trim();
-    if (!line) continue;
-    if (line === 'BIG IDEA') { section = 'big'; continue; }
-    if (line === 'MOVIMENTOS DO TEXTO') { section = 'movimentos'; continue; }
-    if (line === 'EIXO CRISTOLÓGICO') { section = 'eixo'; continue; }
-    if (line.startsWith('PARA PREGAR')) continue;
-    if (section === 'big' && !bigIdea) { bigIdea = line.replace(/^"|"$/g, ''); continue; }
-    if (section === 'eixo') { eixo += (eixo ? ' ' : '') + line; continue; }
-    if (section === 'movimentos') {
-      const mvMatch = line.match(/^(?:◉\s*)?\[[A-Z]'?\d*\]\s*·?\s*(.+)/);
-      if (mvMatch) { if (pending) titlesGanchos.push({ title: pending.title ?? '', gancho: pending.gancho ?? '' }); pending = { title: mvMatch[1].trim(), gancho: '' }; continue; }
-      const gMatch = line.match(/^→\s*(.+)/);
-      if (gMatch && pending) { pending.gancho = gMatch[1]; continue; }
+  if (!isNovoFormato) {
+    for (const rawLine of conteudo.split('\n')) {
+      const line = rawLine.trim();
+      if (!line) continue;
+      if (line === 'BIG IDEA') { section = 'big'; continue; }
+      if (line === 'MOVIMENTOS DO TEXTO') { section = 'movimentos'; continue; }
+      if (line === 'EIXO CRISTOLÓGICO') { section = 'eixo'; continue; }
+      if (line.startsWith('PARA PREGAR')) continue;
+      if (section === 'big' && !bigIdea) { bigIdea = line.replace(/^"|"$/g, ''); continue; }
+      if (section === 'eixo') { eixo += (eixo ? ' ' : '') + line; continue; }
+      if (section === 'movimentos') {
+        const mvMatch = line.match(/^(?:◉\s*)?\[[A-Z]'?\d*\]\s*·?\s*(.+)/);
+        if (mvMatch) { if (pending) titlesGanchos.push({ title: pending.title ?? '', gancho: pending.gancho ?? '' }); pending = { title: mvMatch[1].trim(), gancho: '' }; continue; }
+        const gMatch = line.match(/^→\s*(.+)/);
+        if (gMatch && pending) { pending.gancho = gMatch[1]; continue; }
+      }
     }
+    if (pending) titlesGanchos.push({ title: pending.title ?? '', gancho: pending.gancho ?? '' });
   }
-  if (pending) titlesGanchos.push({ title: pending.title ?? '', gancho: pending.gancho ?? '' });
+
+  // ── Render NOVO FORMATO ──────────────────────────────────────────────
+  if (isNovoFormato) {
+    const pv = 'clamp(14px,3.5vw,20px)';
+    const ph = 'clamp(16px,4vw,24px)';
+    const tagStyle = (cor: string): React.CSSProperties => ({ fontSize: 9, fontWeight: 900, letterSpacing: '0.26em', textTransform: 'uppercase' as const, color: cor, marginBottom: 6 });
+    const MOV_CORES = ['rgba(255,200,80,1)','rgba(80,200,255,1)','rgba(180,120,255,1)','rgba(100,220,160,1)','rgba(255,140,80,1)','rgba(255,100,160,1)'];
+    return (
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
+        {/* Cabeçalho */}
+        <div style={{ borderRadius: 16, padding: `${pv} ${ph}`, background: 'linear-gradient(135deg, rgba(20,12,40,0.97) 0%, rgba(10,18,48,0.97) 100%)', border: '1px solid rgba(168,120,255,0.30)', boxShadow: '0 8px 32px rgba(0,0,0,0.45)' }}>
+          <div style={tagStyle('rgba(196,160,255,0.55)')}>Para Pregar · Homilética Expositiva Reformada</div>
+          {nTitulo && <div style={{ fontSize: 'clamp(18px,3.5vw,24px)', fontWeight: 900, lineHeight: 1.25, background: 'linear-gradient(135deg, rgba(226,210,255,1) 0%, rgba(147,210,255,1) 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', marginBottom: 14 }}>{nTitulo}</div>}
+          {nBigIdeia && <div style={{ padding: '10px 14px', borderRadius: 10, background: 'rgba(139,92,246,0.10)', border: '1px solid rgba(139,92,246,0.25)', marginBottom: 10 }}>
+            <div style={tagStyle('rgba(196,160,255,0.60)')}>Big Idea</div>
+            <div style={{ fontSize: 'clamp(15px,2.8vw,18px)', color: 'rgba(226,220,255,0.97)', fontWeight: 700, fontStyle: 'italic', lineHeight: 1.5 }}>"{nBigIdeia}"</div>
+          </div>}
+          {nPergunta && <div style={{ padding: '10px 14px', borderRadius: 10, background: 'linear-gradient(135deg, rgba(96,165,250,0.08) 0%, rgba(139,92,246,0.06) 100%)', border: '1px solid rgba(96,165,250,0.25)', borderLeft: '4px solid rgba(96,165,250,1)', marginBottom: 10 }}>
+            <div style={tagStyle('rgba(147,197,253,0.65)')}>Pergunta de Transição</div>
+            <div style={{ fontSize: 'clamp(13px,2.4vw,15px)', color: 'rgba(210,230,255,0.95)', fontWeight: 600, fontStyle: 'italic', lineHeight: 1.55 }}>{nPergunta}</div>
+          </div>}
+          {nPalavraChave && <div style={{ fontSize: 'clamp(12px,2.2vw,14px)', color: 'rgba(180,175,220,0.75)', lineHeight: 1.55, fontStyle: 'italic' }}>{nPalavraChave}</div>}
+        </div>
+
+        {/* Movimentos */}
+        {nMovimentos.length > 0 && <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+          <div style={tagStyle('rgba(147,197,253,0.60)')}>Movimentos do Sermão</div>
+          {nMovimentos.map((mv, i) => {
+            const cor = MOV_CORES[i % MOV_CORES.length];
+            const corB = cor.replace('1)', '0.25)');
+            const corBg = cor.replace('1)', '0.07)');
+            return (
+              <div key={i} style={{ borderRadius: 14, overflow: 'hidden', border: `1px solid ${corB}`, background: `linear-gradient(135deg, ${corBg} 0%, rgba(5,7,26,0.95) 100%)` }}>
+                <div style={{ height: 3, background: `linear-gradient(90deg, ${cor} 0%, ${cor.replace('1)','0.3)')} 70%, transparent 100%)` }} />
+                <div style={{ padding: '12px 16px' }}>
+                  <div style={{ fontSize: 'clamp(13px,2.4vw,15px)', fontWeight: 800, color: cor, lineHeight: 1.35, marginBottom: 12 }}>{mv.titulo}</div>
+                  {[
+                    { label: 'Indicação Textual', text: mv.indicacao, cor: 'rgba(255,220,120,0.70)' },
+                    { label: 'Exegese', text: mv.exegese, cor: 'rgba(180,230,255,0.70)' },
+                    { label: 'Teologia Reformada', text: mv.teologia, cor: 'rgba(200,170,255,0.70)' },
+                    { label: 'Aplicação', text: mv.aplicacao, cor: 'rgba(120,220,160,0.80)' },
+                  ].filter(f => f.text).map((f, fi) => (
+                    <div key={fi} style={{ marginBottom: fi < 3 ? 8 : 0 }}>
+                      <div style={{ fontSize: 9, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: f.cor, marginBottom: 3 }}>{f.label}</div>
+                      <div style={{ fontSize: 'clamp(12px,2.2vw,14px)', color: fi === 3 ? 'rgba(160,230,190,0.90)' : 'rgba(210,220,240,0.85)', lineHeight: 1.6, fontStyle: fi === 3 ? 'italic' : 'normal' }}>{f.text}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            );
+          })}
+        </div>}
+
+        {/* Eixo Redentor */}
+        {nEixoRedentor && <div style={{ borderRadius: 12, padding: '12px 16px', background: 'rgba(255,140,80,0.07)', border: '1px solid rgba(255,140,80,0.25)', borderLeft: '4px solid rgba(255,140,80,0.80)' }}>
+          <div style={tagStyle('rgba(255,180,100,0.70)')}>Eixo Redentor · Perspectiva Histórico-Redentiva</div>
+          <div style={{ fontSize: 'clamp(13px,2.2vw,15px)', color: 'rgba(255,220,180,0.90)', lineHeight: 1.65 }}>{nEixoRedentor}</div>
+        </div>}
+
+        {/* Doutrina Central */}
+        {nDoutrina && <div style={{ borderRadius: 12, padding: '10px 16px', background: 'rgba(80,200,255,0.06)', border: '1px solid rgba(80,200,255,0.22)' }}>
+          <div style={tagStyle('rgba(147,197,253,0.65)')}>Doutrina Central</div>
+          <div style={{ fontSize: 'clamp(13px,2.2vw,15px)', color: 'rgba(200,230,255,0.90)', fontWeight: 600, lineHeight: 1.55 }}>{nDoutrina}</div>
+        </div>}
+
+        {/* Aplicações Pastorais */}
+        {nAplicacoes.length > 0 && <div style={{ borderRadius: 12, padding: '12px 16px', background: 'rgba(100,220,160,0.06)', border: '1px solid rgba(100,220,160,0.22)' }}>
+          <div style={tagStyle('rgba(120,220,160,0.65)')}>Aplicações Pastorais</div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+            {nAplicacoes.map((ap, i) => (
+              <div key={i} style={{ display: 'flex', gap: 10, alignItems: 'flex-start' }}>
+                <div style={{ flexShrink: 0, fontSize: 10, fontWeight: 900, color: 'rgba(120,220,160,0.75)', paddingTop: 2, minWidth: 90 }}>{ap.label}</div>
+                <div style={{ fontSize: 'clamp(12px,2.1vw,14px)', color: 'rgba(190,230,210,0.88)', lineHeight: 1.6 }}>{ap.texto}</div>
+              </div>
+            ))}
+          </div>
+        </div>}
+
+        {/* Conclusão */}
+        {nConclusao && <div style={{ borderRadius: 12, padding: '12px 16px', background: 'linear-gradient(135deg, rgba(139,92,246,0.08) 0%, rgba(96,165,250,0.06) 100%)', border: '1px solid rgba(139,92,246,0.22)' }}>
+          <div style={tagStyle('rgba(196,160,255,0.65)')}>Conclusão</div>
+          <div style={{ fontSize: 'clamp(13px,2.2vw,14px)', color: 'rgba(220,215,255,0.88)', lineHeight: 1.75 }}>{nConclusao}</div>
+        </div>}
+      </div>
+    );
+  }
 
   return (
     <div style={{ position: 'relative', borderRadius: 18, overflow: 'hidden', background: 'linear-gradient(135deg, rgba(20,12,40,0.95) 0%, rgba(10,18,48,0.95) 60%, rgba(20,12,40,0.95) 100%)', border: '1px solid rgba(168,120,255,0.28)', boxShadow: '0 0 0 1px rgba(96,165,250,0.08), 0 8px 32px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.06)' }}>
