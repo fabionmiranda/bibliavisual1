@@ -406,27 +406,27 @@ function ParaPregarSection({ d, pericopeIdx, conteudo, sermonTitulo, sermonPergu
   if (isNovoFormato) {
     const pv = 'clamp(14px,3.5vw,20px)';
     const ph = 'clamp(16px,4vw,24px)';
-    const tagStyle = (cor: string): React.CSSProperties => ({ fontSize: 9, fontWeight: 900, letterSpacing: '0.26em', textTransform: 'uppercase' as const, color: cor, marginBottom: 6 });
+    const tagStyle = (cor: string): React.CSSProperties => ({ fontSize: 11, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase' as const, color: cor, marginBottom: 8 });
     const MOV_CORES = ['rgba(255,200,80,1)','rgba(80,200,255,1)','rgba(180,120,255,1)','rgba(100,220,160,1)','rgba(255,140,80,1)','rgba(255,100,160,1)'];
     return (
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
         {/* Cabeçalho */}
         <div style={{ borderRadius: 16, padding: `${pv} ${ph}`, background: 'linear-gradient(135deg, rgba(20,12,40,0.97) 0%, rgba(10,18,48,0.97) 100%)', border: '1px solid rgba(168,120,255,0.30)', boxShadow: '0 8px 32px rgba(0,0,0,0.45)' }}>
           <div style={tagStyle('rgba(196,160,255,0.55)')}>Para Pregar · Homilética Expositiva Reformada</div>
-          {nTitulo && <div style={{ fontSize: 'clamp(18px,3.5vw,24px)', fontWeight: 900, lineHeight: 1.25, background: 'linear-gradient(135deg, rgba(226,210,255,1) 0%, rgba(147,210,255,1) 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', marginBottom: 14 }}>{nTitulo}</div>}
-          {nBigIdeia && <div style={{ padding: '10px 14px', borderRadius: 10, background: 'rgba(139,92,246,0.10)', border: '1px solid rgba(139,92,246,0.25)', marginBottom: 10 }}>
+          {nTitulo && <div style={{ fontSize: 'clamp(20px,3.8vw,28px)', fontWeight: 900, lineHeight: 1.25, background: 'linear-gradient(135deg, rgba(226,210,255,1) 0%, rgba(147,210,255,1) 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', marginBottom: 16 }}>{nTitulo}</div>}
+          {nBigIdeia && <div style={{ padding: '12px 16px', borderRadius: 10, background: 'rgba(139,92,246,0.10)', border: '1px solid rgba(139,92,246,0.25)', marginBottom: 12 }}>
             <div style={tagStyle('rgba(196,160,255,0.60)')}>Big Idea</div>
-            <div style={{ fontSize: 'clamp(15px,2.8vw,18px)', color: 'rgba(226,220,255,0.97)', fontWeight: 700, fontStyle: 'italic', lineHeight: 1.5 }}>"{nBigIdeia}"</div>
+            <div style={{ fontSize: 'clamp(17px,3vw,21px)', color: 'rgba(226,220,255,0.97)', fontWeight: 700, fontStyle: 'italic', lineHeight: 1.5 }}>"{nBigIdeia}"</div>
           </div>}
-          {nPergunta && <div style={{ padding: '10px 14px', borderRadius: 10, background: 'linear-gradient(135deg, rgba(96,165,250,0.08) 0%, rgba(139,92,246,0.06) 100%)', border: '1px solid rgba(96,165,250,0.25)', borderLeft: '4px solid rgba(96,165,250,1)', marginBottom: 10 }}>
+          {nPergunta && <div style={{ padding: '12px 16px', borderRadius: 10, background: 'linear-gradient(135deg, rgba(96,165,250,0.08) 0%, rgba(139,92,246,0.06) 100%)', border: '1px solid rgba(96,165,250,0.25)', borderLeft: '4px solid rgba(96,165,250,1)', marginBottom: 12 }}>
             <div style={tagStyle('rgba(147,197,253,0.65)')}>Pergunta de Transição</div>
-            <div style={{ fontSize: 'clamp(13px,2.4vw,15px)', color: 'rgba(210,230,255,0.95)', fontWeight: 600, fontStyle: 'italic', lineHeight: 1.55 }}>{nPergunta}</div>
+            <div style={{ fontSize: 'clamp(15px,2.6vw,18px)', color: 'rgba(210,230,255,0.95)', fontWeight: 600, fontStyle: 'italic', lineHeight: 1.6 }}>{nPergunta}</div>
           </div>}
-          {nPalavraChave && <div style={{ fontSize: 'clamp(12px,2.2vw,14px)', color: 'rgba(180,175,220,0.75)', lineHeight: 1.55, fontStyle: 'italic' }}>{nPalavraChave}</div>}
+          {nPalavraChave && <div style={{ fontSize: 'clamp(14px,2.4vw,16px)', color: 'rgba(180,175,220,0.78)', lineHeight: 1.65, fontStyle: 'italic' }}>{nPalavraChave}</div>}
         </div>
 
         {/* Movimentos */}
-        {nMovimentos.length > 0 && <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+        {nMovimentos.length > 0 && <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
           <div style={tagStyle('rgba(147,197,253,0.60)')}>Movimentos do Sermão</div>
           {nMovimentos.map((mv, i) => {
             const cor = MOV_CORES[i % MOV_CORES.length];
@@ -434,27 +434,27 @@ function ParaPregarSection({ d, pericopeIdx, conteudo, sermonTitulo, sermonPergu
             const corBg = cor.replace('1)', '0.07)');
             return (
               <div key={i} style={{ borderRadius: 14, overflow: 'hidden', border: `1px solid ${corB}`, background: `linear-gradient(135deg, ${corBg} 0%, rgba(5,7,26,0.95) 100%)` }}>
-                <div style={{ height: 3, background: `linear-gradient(90deg, ${cor} 0%, ${cor.replace('1)','0.3)')} 70%, transparent 100%)` }} />
-                <div style={{ padding: '12px 16px' }}>
-                  <div style={{ fontSize: 'clamp(13px,2.4vw,15px)', fontWeight: 800, color: cor, lineHeight: 1.35, marginBottom: 6 }}>{mv.titulo}</div>
+                <div style={{ height: 4, background: `linear-gradient(90deg, ${cor} 0%, ${cor.replace('1)','0.3)')} 70%, transparent 100%)` }} />
+                <div style={{ padding: '16px 20px' }}>
+                  <div style={{ fontSize: 'clamp(15px,2.6vw,17px)', fontWeight: 800, color: cor, lineHeight: 1.4, marginBottom: 8 }}>{mv.titulo}</div>
                   {mv.indicacao && (() => {
                     const verseRef = mv.indicacao.split('(')[0].trim();
                     return verseRef ? (
-                      <div style={{ display: 'inline-flex', alignItems: 'center', gap: 5, marginBottom: 10, padding: '3px 10px', borderRadius: 20, background: cor.replace('1)', '0.10)'), border: `1px solid ${cor.replace('1)', '0.35)')}` }}>
-                        <span style={{ fontSize: 10, fontWeight: 900, color: cor }}>§</span>
-                        <span style={{ fontSize: 11, fontWeight: 800, color: cor, letterSpacing: '0.06em' }}>{verseRef}</span>
+                      <div style={{ display: 'inline-flex', alignItems: 'center', gap: 5, marginBottom: 12, padding: '4px 12px', borderRadius: 20, background: cor.replace('1)', '0.10)'), border: `1px solid ${cor.replace('1)', '0.35)')}` }}>
+                        <span style={{ fontSize: 11, fontWeight: 900, color: cor }}>§</span>
+                        <span style={{ fontSize: 13, fontWeight: 800, color: cor, letterSpacing: '0.06em' }}>{verseRef}</span>
                       </div>
                     ) : null;
                   })()}
                   {[
-                    { label: 'Indicação Textual', text: mv.indicacao, cor: 'rgba(255,220,120,0.70)' },
-                    { label: 'Exegese', text: mv.exegese, cor: 'rgba(180,230,255,0.70)' },
-                    { label: 'Teologia Reformada', text: mv.teologia, cor: 'rgba(200,170,255,0.70)' },
-                    { label: 'Aplicação', text: mv.aplicacao, cor: 'rgba(120,220,160,0.80)' },
+                    { label: 'Indicação Textual', text: mv.indicacao, cor: 'rgba(255,220,120,0.80)' },
+                    { label: 'Exegese', text: mv.exegese, cor: 'rgba(180,230,255,0.80)' },
+                    { label: 'Teologia Reformada', text: mv.teologia, cor: 'rgba(200,170,255,0.80)' },
+                    { label: 'Aplicação', text: mv.aplicacao, cor: 'rgba(120,220,160,0.90)' },
                   ].filter(f => f.text).map((f, fi) => (
-                    <div key={fi} style={{ marginBottom: fi < 3 ? 8 : 0 }}>
-                      <div style={{ fontSize: 9, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: f.cor, marginBottom: 3 }}>{f.label}</div>
-                      <div style={{ fontSize: 'clamp(12px,2.2vw,14px)', color: fi === 3 ? 'rgba(160,230,190,0.90)' : 'rgba(210,220,240,0.85)', lineHeight: 1.6, fontStyle: fi === 3 ? 'italic' : 'normal' }}>{f.text}</div>
+                    <div key={fi} style={{ marginBottom: fi < 3 ? 12 : 0 }}>
+                      <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase', color: f.cor, marginBottom: 4 }}>{f.label}</div>
+                      <div style={{ fontSize: 'clamp(14px,2.4vw,16px)', color: fi === 3 ? 'rgba(160,230,190,0.95)' : 'rgba(215,225,245,0.90)', lineHeight: 1.7, fontStyle: fi === 3 ? 'italic' : 'normal' }}>{f.text}</div>
                     </div>
                   ))}
                 </div>
@@ -464,34 +464,34 @@ function ParaPregarSection({ d, pericopeIdx, conteudo, sermonTitulo, sermonPergu
         </div>}
 
         {/* Eixo Redentor */}
-        {nEixoRedentor && <div style={{ borderRadius: 12, padding: '12px 16px', background: 'rgba(255,140,80,0.07)', border: '1px solid rgba(255,140,80,0.25)', borderLeft: '4px solid rgba(255,140,80,0.80)' }}>
-          <div style={tagStyle('rgba(255,180,100,0.70)')}>Eixo Redentor · Perspectiva Histórico-Redentiva</div>
-          <div style={{ fontSize: 'clamp(13px,2.2vw,15px)', color: 'rgba(255,220,180,0.90)', lineHeight: 1.65 }}>{nEixoRedentor}</div>
+        {nEixoRedentor && <div style={{ borderRadius: 12, padding: '16px 20px', background: 'rgba(255,140,80,0.07)', border: '1px solid rgba(255,140,80,0.25)', borderLeft: '4px solid rgba(255,140,80,0.80)' }}>
+          <div style={tagStyle('rgba(255,180,100,0.80)')}>Eixo Redentor · Perspectiva Histórico-Redentiva</div>
+          <div style={{ fontSize: 'clamp(14px,2.4vw,16px)', color: 'rgba(255,225,185,0.93)', lineHeight: 1.75 }}>{nEixoRedentor}</div>
         </div>}
 
         {/* Doutrina Central */}
-        {nDoutrina && <div style={{ borderRadius: 12, padding: '10px 16px', background: 'rgba(80,200,255,0.06)', border: '1px solid rgba(80,200,255,0.22)' }}>
-          <div style={tagStyle('rgba(147,197,253,0.65)')}>Doutrina Central</div>
-          <div style={{ fontSize: 'clamp(13px,2.2vw,15px)', color: 'rgba(200,230,255,0.90)', fontWeight: 600, lineHeight: 1.55 }}>{nDoutrina}</div>
+        {nDoutrina && <div style={{ borderRadius: 12, padding: '14px 20px', background: 'rgba(80,200,255,0.06)', border: '1px solid rgba(80,200,255,0.22)' }}>
+          <div style={tagStyle('rgba(147,197,253,0.75)')}>Doutrina Central</div>
+          <div style={{ fontSize: 'clamp(15px,2.5vw,17px)', color: 'rgba(205,232,255,0.93)', fontWeight: 600, lineHeight: 1.65 }}>{nDoutrina}</div>
         </div>}
 
         {/* Aplicações Pastorais */}
-        {nAplicacoes.length > 0 && <div style={{ borderRadius: 12, padding: '12px 16px', background: 'rgba(100,220,160,0.06)', border: '1px solid rgba(100,220,160,0.22)' }}>
-          <div style={tagStyle('rgba(120,220,160,0.65)')}>Aplicações Pastorais</div>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+        {nAplicacoes.length > 0 && <div style={{ borderRadius: 12, padding: '14px 20px', background: 'rgba(100,220,160,0.06)', border: '1px solid rgba(100,220,160,0.22)' }}>
+          <div style={tagStyle('rgba(120,220,160,0.75)')}>Aplicações Pastorais</div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
             {nAplicacoes.map((ap, i) => (
-              <div key={i} style={{ display: 'flex', gap: 10, alignItems: 'flex-start' }}>
-                <div style={{ flexShrink: 0, fontSize: 10, fontWeight: 900, color: 'rgba(120,220,160,0.75)', paddingTop: 2, minWidth: 90 }}>{ap.label}</div>
-                <div style={{ fontSize: 'clamp(12px,2.1vw,14px)', color: 'rgba(190,230,210,0.88)', lineHeight: 1.6 }}>{ap.texto}</div>
+              <div key={i} style={{ display: 'flex', gap: 12, alignItems: 'flex-start' }}>
+                <div style={{ flexShrink: 0, fontSize: 11, fontWeight: 900, color: 'rgba(120,220,160,0.80)', paddingTop: 2, minWidth: 100 }}>{ap.label}</div>
+                <div style={{ fontSize: 'clamp(14px,2.4vw,16px)', color: 'rgba(195,232,215,0.92)', lineHeight: 1.7 }}>{ap.texto}</div>
               </div>
             ))}
           </div>
         </div>}
 
         {/* Conclusão */}
-        {nConclusao && <div style={{ borderRadius: 12, padding: '12px 16px', background: 'linear-gradient(135deg, rgba(139,92,246,0.08) 0%, rgba(96,165,250,0.06) 100%)', border: '1px solid rgba(139,92,246,0.22)' }}>
-          <div style={tagStyle('rgba(196,160,255,0.65)')}>Conclusão</div>
-          <div style={{ fontSize: 'clamp(13px,2.2vw,14px)', color: 'rgba(220,215,255,0.88)', lineHeight: 1.75 }}>{nConclusao}</div>
+        {nConclusao && <div style={{ borderRadius: 12, padding: '16px 20px', background: 'linear-gradient(135deg, rgba(139,92,246,0.08) 0%, rgba(96,165,250,0.06) 100%)', border: '1px solid rgba(139,92,246,0.22)' }}>
+          <div style={tagStyle('rgba(196,160,255,0.75)')}>Conclusão</div>
+          <div style={{ fontSize: 'clamp(14px,2.4vw,16px)', color: 'rgba(222,218,255,0.92)', lineHeight: 1.85 }}>{nConclusao}</div>
         </div>}
       </div>
     );
@@ -511,11 +511,11 @@ function ParaPregarSection({ d, pericopeIdx, conteudo, sermonTitulo, sermonPergu
         {/* Título do Sermão */}
         {sermonTitulo && (
           <div style={{ marginBottom: 18 }}>
-            <div style={{ fontSize: 'clamp(10px,1.8vw,11px)', fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(196,160,255,0.50)', marginBottom: 6 }}>
+            <div style={{ fontSize: 12, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(196,160,255,0.60)', marginBottom: 8 }}>
               Título do Sermão
             </div>
             <div style={{
-              fontSize: 'clamp(20px,3.5vw,26px)', fontWeight: 800, lineHeight: 1.25,
+              fontSize: 'clamp(20px,3.5vw,28px)', fontWeight: 800, lineHeight: 1.25,
               background: 'linear-gradient(135deg, rgba(226,210,255,1) 0%, rgba(167,210,255,1) 100%)',
               WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
               letterSpacing: '-0.01em',
@@ -528,8 +528,8 @@ function ParaPregarSection({ d, pericopeIdx, conteudo, sermonTitulo, sermonPergu
 
         {bigIdea && (
           <div style={{ marginBottom: sermonPergunta ? 12 : 16, padding: '10px 14px', borderRadius: 10, background: 'rgba(139,92,246,0.08)', border: '1px solid rgba(139,92,246,0.20)' }}>
-            <div style={{ fontSize: 'clamp(10px,1.8vw,12px)', fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase', color: 'rgba(196,160,255,0.65)', marginBottom: 6 }}>Big Idea</div>
-            <div style={{ fontSize: 'clamp(16px,3vw,19px)', color: 'rgba(226,220,255,0.96)', fontWeight: 700, lineHeight: 1.5, fontStyle: 'italic' }}>"{bigIdea}"</div>
+            <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase', color: 'rgba(196,160,255,0.70)', marginBottom: 8 }}>Big Idea</div>
+            <div style={{ fontSize: 'clamp(17px,3vw,21px)', color: 'rgba(226,220,255,0.97)', fontWeight: 700, lineHeight: 1.55, fontStyle: 'italic' }}>"{bigIdea}"</div>
           </div>
         )}
 
@@ -538,13 +538,13 @@ function ParaPregarSection({ d, pericopeIdx, conteudo, sermonTitulo, sermonPergu
           <div style={{ marginBottom: 16, padding: '14px 16px', borderRadius: 12, background: 'linear-gradient(135deg, rgba(96,165,250,0.08) 0%, rgba(139,92,246,0.06) 100%)', border: '1px solid rgba(96,165,250,0.28)', position: 'relative', overflow: 'hidden' }}>
             <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 4, background: 'linear-gradient(180deg, rgba(96,165,250,1) 0%, rgba(139,92,246,1) 100%)', borderRadius: '12px 0 0 12px' }} />
             <div style={{ paddingLeft: 8 }}>
-              <div style={{ fontSize: 'clamp(9px,1.6vw,11px)', fontWeight: 900, letterSpacing: '0.26em', textTransform: 'uppercase', color: 'rgba(147,197,253,0.70)', marginBottom: 8 }}>
+              <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(147,197,253,0.75)', marginBottom: 10 }}>
                 Pergunta Geradora do Sermão
               </div>
-              <div style={{ fontSize: 'clamp(15px,2.8vw,18px)', color: 'rgba(210,230,255,0.97)', fontWeight: 700, lineHeight: 1.55, fontStyle: 'italic' }}>
+              <div style={{ fontSize: 'clamp(16px,2.8vw,19px)', color: 'rgba(210,230,255,0.97)', fontWeight: 700, lineHeight: 1.65, fontStyle: 'italic' }}>
                 {sermonPergunta}
               </div>
-              <div style={{ marginTop: 8, fontSize: 'clamp(9px,1.5vw,10px)', color: 'rgba(147,197,253,0.45)', fontWeight: 600, letterSpacing: '0.10em' }}>
+              <div style={{ marginTop: 10, fontSize: 11, color: 'rgba(147,197,253,0.50)', fontWeight: 600, letterSpacing: '0.08em' }}>
                 Esta pergunta guia todos os pontos do sermão
               </div>
             </div>
@@ -552,7 +552,7 @@ function ParaPregarSection({ d, pericopeIdx, conteudo, sermonTitulo, sermonPergu
         )}
         {quiasmaArms.length > 0 && titlesGanchos.length > 0 && (
           <div style={{ marginBottom: 16 }}>
-            <div style={{ fontSize: 'clamp(10px,1.8vw,12px)', fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase', color: 'rgba(147,197,253,0.60)', marginBottom: 12 }}>Movimentos do Texto</div>
+            <div style={{ fontSize: 12, fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase', color: 'rgba(147,197,253,0.65)', marginBottom: 14 }}>Movimentos do Texto</div>
             {quiasmaArms.map((arm, idx) => {
               const tg = titlesGanchos[idx];
               if (!tg) return null;
@@ -573,21 +573,21 @@ function ParaPregarSection({ d, pericopeIdx, conteudo, sermonTitulo, sermonPergu
                       const cleanRef = refPart.match(/^\(([^)]+)\)/)?.[1] ?? refPart.split(/[\s—]/)[0].replace(/[()]/g,'');
                       const fullRef = `(${d.livroAbrev} ${cleanRef})`;
                       return (
-                        <div style={{ display: 'inline-flex', alignItems: 'center', gap: 4, marginBottom: 5, padding: '2px 9px', borderRadius: 20, background: pal.bg, border: `1px solid ${pal.border.replace(/[\d.]+\)$/, '0.45)')}` }}>
-                          <span style={{ fontSize: 10, fontWeight: 900, color: pal.label, opacity: 0.7 }}>§</span>
-                          <span style={{ fontSize: 11, fontWeight: 800, color: pal.label, letterSpacing: '0.05em' }}>{fullRef}</span>
+                        <div style={{ display: 'inline-flex', alignItems: 'center', gap: 4, marginBottom: 7, padding: '3px 11px', borderRadius: 20, background: pal.bg, border: `1px solid ${pal.border.replace(/[\d.]+\)$/, '0.45)')}` }}>
+                          <span style={{ fontSize: 11, fontWeight: 900, color: pal.label, opacity: 0.7 }}>§</span>
+                          <span style={{ fontSize: 13, fontWeight: 800, color: pal.label, letterSpacing: '0.05em' }}>{fullRef}</span>
                         </div>
                       );
                     })()}
                     {/* Gancho — itálico, em destaque */}
                     {gancho && (
-                      <div style={{ fontSize: 'clamp(14px,2.5vw,16px)', color: isCenter ? pal.label : 'rgba(220,215,255,0.95)', fontStyle: 'italic', fontWeight: isCenter ? 700 : 500, lineHeight: 1.5, marginTop: refPart ? 4 : 0 }}>
+                      <div style={{ fontSize: 'clamp(15px,2.6vw,17px)', color: isCenter ? pal.label : 'rgba(222,218,255,0.96)', fontStyle: 'italic', fontWeight: isCenter ? 700 : 500, lineHeight: 1.65, marginTop: refPart ? 4 : 0 }}>
                         {gancho}
                       </div>
                     )}
                     {/* Texto padrão do quiasma — abaixo, menor e mais suave */}
                     {desc && (
-                      <div style={{ fontSize: 'clamp(11px,2vw,13px)', color: 'rgba(180,175,220,0.55)', marginTop: 5, lineHeight: 1.55, fontWeight: 400 }}>
+                      <div style={{ fontSize: 'clamp(12px,2.1vw,14px)', color: 'rgba(180,175,220,0.60)', marginTop: 6, lineHeight: 1.65, fontWeight: 400 }}>
                         {desc.split(/(\[[^\]]+\])/).map((part, pi) =>
                           part.startsWith('[') && part.endsWith(']')
                             ? <span key={pi} style={{ fontFamily: '"SBL Hebrew","Noto Serif Hebrew","Times New Roman",serif', fontSize: 'clamp(13px,2.5vw,16px)', color: pal.label, opacity: 0.6, marginLeft: 3 }}>{part}</span>
