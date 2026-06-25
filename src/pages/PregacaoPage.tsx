@@ -436,7 +436,16 @@ function ParaPregarSection({ d, pericopeIdx, conteudo, sermonTitulo, sermonPergu
               <div key={i} style={{ borderRadius: 14, overflow: 'hidden', border: `1px solid ${corB}`, background: `linear-gradient(135deg, ${corBg} 0%, rgba(5,7,26,0.95) 100%)` }}>
                 <div style={{ height: 3, background: `linear-gradient(90deg, ${cor} 0%, ${cor.replace('1)','0.3)')} 70%, transparent 100%)` }} />
                 <div style={{ padding: '12px 16px' }}>
-                  <div style={{ fontSize: 'clamp(13px,2.4vw,15px)', fontWeight: 800, color: cor, lineHeight: 1.35, marginBottom: 12 }}>{mv.titulo}</div>
+                  <div style={{ fontSize: 'clamp(13px,2.4vw,15px)', fontWeight: 800, color: cor, lineHeight: 1.35, marginBottom: 6 }}>{mv.titulo}</div>
+                  {mv.indicacao && (() => {
+                    const verseRef = mv.indicacao.split('(')[0].trim();
+                    return verseRef ? (
+                      <div style={{ display: 'inline-flex', alignItems: 'center', gap: 5, marginBottom: 10, padding: '3px 10px', borderRadius: 20, background: cor.replace('1)', '0.10)'), border: `1px solid ${cor.replace('1)', '0.35)')}` }}>
+                        <span style={{ fontSize: 10, fontWeight: 900, color: cor }}>§</span>
+                        <span style={{ fontSize: 11, fontWeight: 800, color: cor, letterSpacing: '0.06em' }}>{verseRef}</span>
+                      </div>
+                    ) : null;
+                  })()}
                   {[
                     { label: 'Indicação Textual', text: mv.indicacao, cor: 'rgba(255,220,120,0.70)' },
                     { label: 'Exegese', text: mv.exegese, cor: 'rgba(180,230,255,0.70)' },
@@ -559,11 +568,18 @@ function ParaPregarSection({ d, pericopeIdx, conteudo, sermonTitulo, sermonPergu
                   <div style={{ flexShrink: 0, minWidth: 'clamp(30px,4.5vw,40px)', textAlign: 'center', background: isCenter ? pal.bg : pal.bg.replace(/[\d.]+\)$/, '0.08)'), border: `1px solid ${isCenter ? pal.border : pal.border.replace(/[\d.]+\)$/, '0.28)')}`, borderRadius: 7, padding: '5px 8px', fontSize: 'clamp(14px,2.3vw,18px)', fontWeight: 900, color: pal.label, boxShadow: isCenter ? `0 0 14px ${pal.bg}` : undefined, alignSelf: 'flex-start', lineHeight: 1.2 }}>{badgeLetter}</div>
                   {/* Conteúdo */}
                   <div style={{ flex: 1, minWidth: 0 }}>
-                    {/* Ref versículo */}
-                    {refPart && (
-                      <span style={{ fontSize: 'clamp(11px,2vw,13px)', color: pal.label, opacity: 0.8, fontWeight: 700, marginRight: 6, whiteSpace: 'nowrap' }}>{refPart}</span>
-                    )}
-                    {/* Gancho — itálico, em destaque, vem primeiro */}
+                    {/* Ref versículo — com abreviação do livro, em destaque didático */}
+                    {refPart && (() => {
+                      const cleanRef = refPart.match(/^\(([^)]+)\)/)?.[1] ?? refPart.split(/[\s—]/)[0].replace(/[()]/g,'');
+                      const fullRef = `(${d.livroAbrev} ${cleanRef})`;
+                      return (
+                        <div style={{ display: 'inline-flex', alignItems: 'center', gap: 4, marginBottom: 5, padding: '2px 9px', borderRadius: 20, background: pal.bg, border: `1px solid ${pal.border.replace(/[\d.]+\)$/, '0.45)')}` }}>
+                          <span style={{ fontSize: 10, fontWeight: 900, color: pal.label, opacity: 0.7 }}>§</span>
+                          <span style={{ fontSize: 11, fontWeight: 800, color: pal.label, letterSpacing: '0.05em' }}>{fullRef}</span>
+                        </div>
+                      );
+                    })()}
+                    {/* Gancho — itálico, em destaque */}
                     {gancho && (
                       <div style={{ fontSize: 'clamp(14px,2.5vw,16px)', color: isCenter ? pal.label : 'rgba(220,215,255,0.95)', fontStyle: 'italic', fontWeight: isCenter ? 700 : 500, lineHeight: 1.5, marginTop: refPart ? 4 : 0 }}>
                         {gancho}
