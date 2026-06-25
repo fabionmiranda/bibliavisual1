@@ -1,6 +1,6 @@
 // Títulos de sermão gerados para cada perícope (dia → título)
 export const SERMON_TITLES: Record<number, string> = {
-  1: "A Palavra que Ordena o Caos",
+  1: "Os Luminares do Pacto: quando o Soberano marca o tempo da Sua aliança",
   2: "O Limite onde Floresce a Confiança",
   3: "Tirada do Lado: A Comunhão que Deus Forma",
   4: "Queda e Promessa: O Primeiro Evangelho",
