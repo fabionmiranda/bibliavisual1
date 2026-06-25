@@ -61,2001 +61,4126 @@ Jo 1:3: "Tudo foi feito por intermédio dele" — o Verbo criador é Cristo, o m
 
   if (d.dia === 2) return `PARA PREGAR · Gênesis 2:4b–17
 
----
-
-TÍTULO DO SERMÃO
-"O Jardim do Limite: por que onde Deus circunscreve, a confiança floresce"
-
 BIG IDEA
-O limite imposto pelo Criador não oprime a criatura — é o solo onde a confiança madura floresce.
+"O limite imposto por Deus é o terreno onde a confiança floresce."
 
-PERGUNTA DE TRANSIÇÃO
-Por que o limite imposto por Deus, longe de oprimir, é justamente o terreno onde a confiança madura floresce em nós?
+MOVIMENTOS DO TEXTO
+[A]   · O ribeiro irriga a terra árida pela providência divina
+      → Onde Deus opera, a vida brota do que parecia seco
 
-PALAVRA-CHAVE DE TRANSIÇÃO
-Vejamos as RAZÕES pelas quais o limite divino, longe de escravizar, é o solo sagrado onde a confiança da criatura floresce diante do Criador.
+[B]   · Deus forma o homem e o coloca no jardim para servir
+      → Vocação humana nasce de mãos divinas e propósito definido
 
----
+◉ [X]   · A ÁRVORE DO CONHECIMENTO É POSTA NO CENTRO DA LIBERDADE
+      → A presença do limite é a forma do amor que confia ao outro a escolha
 
-MOVIMENTOS DO SERMÃO
+[B']  · Deus estabelece o homem no Éden como guardião do espaço sagrado
+      → Habitar com Deus exige cultivar e proteger o dom recebido
 
-I. PORQUE o Deus que irriga também circunscreve: providência e autoridade andam juntas (A ↔ A')
-§ Indicação Textual: Gn 2.4b-6 (ribeiro irriga a terra árida) ecoa em 2.10-14 (o rio parte do Éden e se ramifica em quatro). A mesma água que sustenta a vida provém do mesmo Éden que o mandamento delimita.
-§ Exegese: O "ed" (ribeiro, 2.6) indica provisão gratuita antes de qualquer ação humana. O paralelo A' (2.10-14) amplifica: não um ribeiro, mas quatro rios que cobrem o mundo conhecido — a providência do Criador não tem fronteiras geográficas, mas sua autoridade sobre a criatura sim.
-§ Teologia Reformada: A Aliança da Criação (CFW VII.1) mostra que a lei não é oposta à graça: Deus provê vida (A) antes de impor o mandamento (C'). A Providência que sustenta o cosmos é a mesma que impõe o limite que o ordena (CFW V).
-§ Aplicação: Você tende a ver os limites de Deus como restrições cruéis? Perceba que a mesma mão que irriga a terra de sua vida é a que traça o limite que a guarda.
+[A']  · O mandamento marca o limite que define a criatura
+      → Onde há limite obedecido, há vida; onde se ignora, há morte
 
-II. PORQUE vocação e presença divina precedem o mandamento: graça sempre vem antes da lei (B ↔ B')
-§ Indicação Textual: Gn 2.7-8 (Deus forma o homem e o coloca no Éden) reflete em 2.15 (Deus estabelece o homem no Éden para cultivar e guardar). O homem já está no jardim, amado e posicionado, antes de receber qualquer proibição.
-§ Exegese: O verbo "yanah" (repousar, colocar, 2.8) denota cuidado deliberado: Deus não apenas cria, mas instala. O paralelo em 2.15 reforça: a função de "abad" (cultivar) e "shamar" (guardar) é dom, não punição. Vocação precede mandamento.
-§ Teologia Reformada: A ordem reformada é sempre: eleição, chamado, santificação (Rm 8.29-30). Deus nunca impõe lei sem antes estabelecer relação. O mandamento de 2.17 não é de tirano: é interpelação ao ser amado (CFW XIX.1).
-§ Aplicação: Antes de sentir o peso do mandamento de Deus, lembre-se: você já foi formado por Suas mãos e colocado em Seu jardim. O limite fala a quem já pertence ao Criador.
-
-III. PORQUE o limite posto no centro é convite à confiança filial, não à servidão (C ↔ C') — CENTRO X
-§ Indicação Textual: Gn 2.9 (a árvore do conhecimento posta em evidência no jardim) encontra resolução em 2.16-17 (o mandamento que delimita seu uso). O centro do quiasma é a árvore; o centro da existência humana é a pergunta: "Você confia no Deus que delimita?"
-§ Exegese: "Tob vara" (bem e mal, 2.9) é merismo: o conhecimento total da realidade. O mandamento "lo tokel" (não comerás, 2.17) não é inveja divina — é a demarcação que diz "a onisciência e a soberania pertencem ao Criador". A penalidade "mot tamut" (morrerás certamente) é realista, não cruel.
-§ Teologia Reformada: O Catecismo de Heidelberg (P.1) afirma que pertencer a Cristo é saber que Ele nos guarda. Na criação, pertencer a Deus significava respeitar o único limite que salvaguardava a criatitude. Fé é confiar na sabedoria do Criador até onde a razão não alcança.
-§ Aplicação: Há um limite de Deus que você tem cruzado porque parece injusto? O centro do jardim ainda pergunta: "Você confia que o Criador sabe mais que você sobre o que é bom e mau para sua vida?"
-
----
-
-EIXO REDENTOR (HISTÓRICO-REDENTIVO)
-O centro do quiasma — a árvore do limite — aponta para outra árvore: a cruz. Onde Adão violou o limite e trouxe morte, Cristo, o segundo Adão (Rm 5.19), obedeceu o limite supremo do Pai ("não minha vontade, mas a tua", Lc 22.42) e trouxe vida. No Éden, o limite foi recusado; no Calvário, foi abarcado. Em 2Co 5.21, Cristo que não conheceu o pecado tornou-se pecado por nós — cumprindo pelo substituído o que Adão devia ter guardado.
-
-DOUTRINA CENTRAL
-A soberania amorosa de Deus se expressa em limites que não oprimem a criatura, mas a convidam à confiança filial que é o fundamento da vida com o Criador.
-
-APLICAÇÕES PASTORAIS
-▸ Para a Igreja: Pregar os mandamentos de Deus não como fardo, mas como evidência de que o Criador ainda se dirige a nós como criaturas amadas que Ele quer guardar.
-▸ Para as Famílias: Estabeleça limites com seus filhos não como controle, mas como imitação do Pai que delimitou o Éden por amor: "porque te amo, sei o que te destruiria".
-▸ Para o Discípulo: Onde você sente que Deus é restritivo, pergunte: Será que Ele está vendo o que eu não enxergo? Confiança madura não exige entender cada limite — exige conhecer Aquele que os traça.
-
-CONCLUSÃO
-Voltemos ao jardim: Deus plantou uma árvore no meio. Não para tentação, mas para pergunta. A pergunta que ainda ecoa em cada mandamento, em cada limite: "Você confia?" O Criador que formou o homem do pó, que o colocou no jardim com amor, que fez jorrar quatro rios de um único nascedouro — esse Deus traçou um limite. E naquele limite estava a oportunidade de amar de volta. Adão falhou. Mas o segundo Adão, na agonia do Getsêmani, respondeu com toda a humanidade nas costas: "não seja feita a minha vontade, mas a tua" (Lc 22.42). Irmão, o jardim que você habita tem limites. Não os ignore, não os maldiga. Neles, Deus ainda pergunta: "Você confia?" E em Cristo, temos a resposta perfeita — que nos é imputada por graça. Amém.`;
+EIXO CRISTOLÓGICO
+Rm 5:19: "pela obediência de um só, muitos serão feitos justos" — onde Adão falhou no limite, Cristo o cumpriu na cruz.`;
 
   if (d.dia === 3) return `PARA PREGAR · Gênesis 2:18–25
 
----
-
-TÍTULO DO SERMÃO
-"Tirada do Lado: de que forma Deus forma a comunhão que o coração jamais alcançaria sozinho"
-
 BIG IDEA
-Deus cria a parceria humana retirando-a do próprio coração do homem enquanto ele descansa confiante nele.
+"Deus cria a parceria humana retirando-a do próprio coração do homem."
 
-PERGUNTA DE TRANSIÇÃO
-De que forma Deus cria a parceria humana retirando-a do nosso próprio coração enquanto descansamos confiantes nele?
+MOVIMENTOS DO TEXTO
+[A]   · "Não é bom que o homem esteja só" — a solidão não é o telos humano
+      → A vida em comunhão é projeto de Deus, não acréscimo posterior
 
-PALAVRA-CHAVE DE TRANSIÇÃO
-Vejamos as FORMAS pelas quais Deus constrói a comunhão humana a partir de dentro, enquanto o homem descansa, e não a partir de fora, enquanto o homem busca.
+[B]   · Os animais desfilam e nenhum se mostra parceiro adequado
+      → Há vazios que somente o semelhante criado por Deus pode preencher
 
----
+◉ [X]   · A COSTELA RETIRADA NO SONO: DEUS OPERA O QUE O HOMEM NÃO VÊ
+      → O que mais nos completa é forjado por Deus enquanto descansamos nele
 
-MOVIMENTOS DO SERMÃO
+[B']  · A mulher é formada da costela e reconhecida pelo homem
+      → A identidade do outro nasce do mesmo Deus que nos formou
 
-I. DE QUE FORMA a solidão diagnosticada por Deus prepara o coração para receber o dom da comunhão (A ↔ A')
-§ Indicação Textual: Gn 2.18 ("não é bom que o homem esteja só") ecoa em 2.24-25 (os dois tornam-se uma só carne sem vergonha). O diagnóstico divino da solidão abre espaço para a solução que somente Deus pode dar.
-§ Exegese: "Lo tov" (não é bom, 2.18) é a primeira coisa declarada "não boa" na criação — e o Criador mesmo o constata. O paralelo A' (2.24-25) resolve com "echad basar" (uma só carne) e "lo yitboshashu" (sem vergonha) — plenitude e transparência como telos da comunhão.
-§ Teologia Reformada: A Aliança da Criação estabelece que o homem foi criado para comunhão trinitária refletida na comunhão matrimonial (CFW IV.2). A necessidade não é fraqueza — é projeto do Criador que se glorifica ao supri-la.
-§ Aplicação: Onde você tem tentado resolver a solidão com substitutos que Deus não sancionou? O diagnóstico divino "não é bom" é convite a confiar que somente ele pode prover o que realmente preenche.
+[A']  · Os dois tornam-se uma só carne na aliança matrimonial
+      → A união conjugal é restauração da unidade originária querida por Deus
 
-II. DE QUE FORMA a incompletude exposta nos animais aguça o desejo pelo semelhante que só Deus pode prover (B ↔ B')
-§ Indicação Textual: Gn 2.19-20 (nenhum animal se mostra "ezer kenegdo", parceiro adequado) reflete em 2.22-23 (a mulher formada e reconhecida com exclamação: "esta sim!"). A deficiência percorrida prepara o reconhecimento explosivo.
-§ Exegese: "Ezer kenegdo" (auxiliar diante dele, 2.18.20) combina força com correspondência. Os animais recebem nome — ato de domínio — mas não são reconhecidos como iguais. A exclamação de 2.23 ("osso dos meus ossos") revela que o reconhecimento do semelhante é dádiva que não se produz: se recebe.
-§ Teologia Reformada: O reconhecimento do semelhante é forma de graça comum que aponta para a graça especial: assim o eleito reconhece Cristo como o único que corresponde à sua necessidade mais profunda (Jo 1.29; CFW X).
-§ Aplicação: Você tem reconhecido nos outros o que Deus quer que você receba com gratidão? O percurso dos animais ensina que o dom só é celebrado por quem sente a ausência antes de recebê-lo.
-
-III. DE QUE FORMA a costela retirada no sono — o descanso confiante — revela que Deus opera o que a atividade humana nunca alcançaria (C) — CENTRO X
-§ Indicação Textual: Gn 2.21: "Deus fez cair sobre o homem um sono profundo" e retirou a costela. O centro do quiasma é o sono — o momento em que o homem não faz nada e Deus faz tudo.
-§ Exegese: "Tardema" (sono profundo, 2.21) é o mesmo sono em que Deus sela a aliança com Abraão (Gn 15.12). É sono de confiança radical: o homem nada planeja, nada produz, nada controla — e recebe o maior dom. "Tsela" (costela/lado) indica que Eva não é criada do chão (inferioridade) nem da cabeça (superioridade), mas do lado: igualdade e proximidade.
-§ Teologia Reformada: A fé reformada é sempre receptiva antes de ser ativa (CFW XI). O sono de Adão tipifica a passividade da graça: o que Cristo realiza na cruz, nós recebemos dormindo na fé, não acordados na obra (Ef 2.8-9).
-§ Aplicação: O que você mais precisa, hoje, Deus está fazendo enquanto você descansa nele? Pare de tentar "acordar e forçar" aquilo que somente o Criador pode retirar do centro de você mesmo.
-
----
-
-EIXO REDENTOR (HISTÓRICO-REDENTIVO)
-O sono de Adão e a costela retirada prefiguram Cristo: do lado aberto na cruz (Jo 19.34) jorrou sangue e água — e desse lado aberto nasceu a Igreja, a noiva do Cordeiro (Ef 5.25-32). Como Adão dormiu e acordou com Eva, Cristo morreu e ressuscitou com sua noiva. Paulo declara: "grande é este mistério — refiro-me a Cristo e à Igreja" (Ef 5.32). A comunhão matrimonial existe para pregar o evangelho da união entre Cristo e o seu povo.
-
-DOUTRINA CENTRAL
-Deus cria a comunhão humana a partir de dentro, pelo descanso confiante, revelando que os dons mais profundos são recebidos, não conquistados.
-
-APLICAÇÕES PASTORAIS
-▸ Para a Igreja: Celebre o matrimônio como sacramento do evangelho: visibiliza a entrega de Cristo pela noiva e a resposta da Igreja em adoração e fidelidade.
-▸ Para as Famílias: O casamento começa no descanso, não na conquista. Casais que insistem em controlar o cônjuge ainda não dormiram o sono de Adão — ainda não confiaram.
-▸ Para o Discípulo: O que você mais deseja que Deus te dê, ele opera enquanto você descansa nele. Fé ativa é, primeiro, fé que cessa de se autogerir.
-
-CONCLUSÃO
-Deus olhou para Adão e disse: "não é bom". Não porque Adão fosse imperfeito, mas porque a comunhão é parte do design. Então Deus operou no sono o que nenhuma vigília produziria. Retirou do lado do homem a sua mais profunda correspondência. E quando Adão acordou, não encontrou o produto do seu esforço — encontrou a obra das mãos de Deus. Irmão, o que mais você precisa, Deus está formando no silêncio do descanso confiante. Pare de buscar nos animais o que somente o parceiro provido por Deus pode dar. Cristo, o segundo Adão, entregou o seu lado na cruz — e da ferida aberta nascemos nós. Descanse. Confie. E acorde para reconhecer o dom que Deus já formou. Amém.`;
+EIXO CRISTOLÓGICO
+Ef 5:32: "grande é este mistério, refiro-me a Cristo e à igreja" — o casamento aponta para a união do Noivo com a noiva.`;
 
   if (d.dia === 4) return `PARA PREGAR · Gênesis 3:1–24
 
----
-
-TÍTULO DO SERMÃO
-"Queda e Promessa: como enxergar no veredito divino contra a queda o primeiro evangelho da redenção"
-
 BIG IDEA
-No próprio veredito de Deus contra a queda está escondida a primeira e mais radical promessa do evangelho.
+"No próprio juízo da queda Deus anuncia o evangelho da redenção."
 
-PERGUNTA DE TRANSIÇÃO
-Como podemos enxergar, no próprio veredito divino contra a queda, a primeira promessa do evangelho da redenção?
+MOVIMENTOS DO TEXTO
+[A]   · A serpente seduz com a promessa de autonomia divina
+      → Toda tentação promete divinizar e termina escravizando
 
-PALAVRA-CHAVE DE TRANSIÇÃO
-Vejamos COMO o texto de Gênesis 3, camada por camada, vai revelando que por trás do juízo que condena, há uma promessa que restaura — e ela está no centro.
+[B]   · Folhas de figueira: o pecador cobre a vergonha por si mesmo
+      → A religião humana fabrica disfarces incapazes de cobrir a culpa
 
----
+[C]   · Acusações mútuas fragmentam a responsabilidade
+      → Onde o pecado entra, a comunhão se desfaz em transferência de culpa
 
-MOVIMENTOS DO SERMÃO
+◉ [X]   · MALDIÇÃO À SERPENTE: A SEMENTE DA MULHER ESMAGARÁ SUA CABEÇA
+      → No próprio veredito divino se ouve a primeira promessa do evangelho
 
-I. COMO a tentação promete divinização e entrega escravidão, e como a graça reverte o que a autonomia corrompeu (A ↔ A')
-§ Indicação Textual: Gn 3.1-6 ("sereis como deuses") ecoa inversamente em 3.22-24 ("o homem tornou-se como um de nós" — e é expulso). A promessa da serpente se realiza de forma trágica: o homem obtém o conhecimento, mas perde a presença.
-§ Exegese: "Erum" (astuta, 3.1) ressoa com "arumim" (nus, 2.25) — a narrativa conecta a astúcia da serpente à nudez do pecado. O merismo "tov vara" (bem e mal) não prometia sabedoria: prometia autonomia soberana que pertence apenas a Deus. A expulsão de 3.22-24 é julgamento misericordioso — o homem é impedido de comer da árvore da vida e eternizar sua condição decaída.
-§ Teologia Reformada: A depravação total (CFW VI) não é que o homem seja tão mau quanto possível, mas que a queda afeta todas as faculdades — razão, vontade, afeto. A tentação sempre apela à faculdade mais nobre para seduzir para o mal mais profundo.
-§ Aplicação: Como a serpente hoje ainda usa a linguagem da liberdade para vender escravidão? Onde você tem trocado a presença de Deus pela promessa de autonomia que termina em vergonha?
+[C']  · Punição ao homem e à mulher: dor e suor no mundo decaído
+      → O juízo é real, mas dentro de um plano maior de restauração
 
-II. COMO a cobertura humana de folhas fracassa e a cobertura divina de pele revela que só o sacrifício de Deus cobre o pecado (B ↔ B')
-§ Indicação Textual: Gn 3.7-8 (folhas de figueira — cobertura humana insuficiente) reflete em 3.21 (vestes de pele — cobertura divina que pressupõe morte de animal). Duas coberturas: uma que o homem faz e falha; uma que Deus faz e permanece.
-§ Exegese: "Aleh teena" (folhas de figueira, 3.7) são cobertura cosmética: não abordam a culpa, apenas a vergonha visível. As "kotnot or" (vestes de pele, 3.21) exigem morte: um animal foi sacrificado para cobrir o pecador — primeiro sacrifício substitutivo da Escritura.
-§ Teologia Reformada: A justificação é sempre imputação, nunca autogerada (CFW XI). As folhas são a religião humana que adorna sem salvar. As vestes de pele são o evangelho: cobertura que custou sangue alheio, aplicada gratuitamente ao culpado (Rm 4.6-8).
-§ Aplicação: Quais "folhas de figueira" você ainda usa para se apresentar diante de Deus — conquistas, religiosidade, comparação com outros? Somente as vestes de pele providas por Deus cobrem o que a vergonha realmente precisa.
+[B']  · Vestes de pele: Deus mesmo cobre a vergonha humana
+      → Só o sacrifício provido por Deus pode cobrir o pecado humano
 
-III. COMO o interrogatório divino desfaz a transferência de culpa e a maldição à serpente esconde o primeiro evangelho (C / D / C')
-§ Indicação Textual: Gn 3.9-13 (Deus pergunta; homem e mulher se acusam mutuamente) e 3.16-20 (punições ao homem e à mulher) enquadram o CENTRO 3.14-15 (maldição à serpente com a protoevangelium). O juízo circunda a promessa.
-§ Exegese: "Ayeka" (onde estás?, 3.9) não é ignorância divina — é convocação pastoral. O Criador busca o fugitivo. No centro (3.15), "zera" (semente) é termo técnico da aliança: a semente da mulher "shuf" (esmagar) a cabeça da serpente. A serpente ferirá o calcanhar — vitória custosa, mas vitória. É o primeiro anúncio do evangelho antes de qualquer lei.
-§ Teologia Reformada: A graça sempre precede a lei na história redentora (CFW VII.5). A promessa de Gn 3.15 é o eixo de toda a Escritura: lei, profetas e evangelhos são seu desdobramento. Cristo é a semente prometida (Gl 3.16) que esmaga a serpente na cruz (Cl 2.15).
-§ Aplicação: Você tem lido Gênesis 3 como texto de condenação ou como texto de esperança? O veredito mais severo da Bíblia esconde sua promessa mais antiga. O Deus que julga é o mesmo que já planejou o resgate.
+[A']  · Expulsão do jardim: quem quis ser como Deus é afastado da presença
+      → A graça que expulsa também guarda o caminho da árvore da vida
 
-IV. COMO o veredito do centro — a maldição que vira promessa — revela que Deus opera a redenção de dentro do próprio juízo (D) — CENTRO X
-§ Indicação Textual: Gn 3.14-15 é o ponto focal de toda a estrutura quiástica. Tudo converge aqui: a maldição à serpente que contém a promessa da semente. "Esmagar a cabeça" e "ferir o calcanhar" — imagem de guerra, mas também de vitória final.
-§ Exegese: A gramática hebraica de 3.15 é deliberadamente ambígua entre semente coletiva (humanidade) e semente individual (o Messias). Toda a tradição judaico-cristã viu aqui o protoevangelium. A inimizade entre a semente da mulher e a semente da serpente estrutura a história bíblica até Apocalipse 12.
-§ Teologia Reformada: A eleição eterna se manifesta historicamente na promessa: antes de qualquer fé do homem, Deus declara que haverá um vencedor (CFW III.5). A graça soberana age não apesar do juízo, mas através dele — o Calvário é a maldição que se torna bênção (Gl 3.13).
-§ Aplicação: Quando você está no meio do juízo — das consequências do pecado, da dor que o mundo decaído traz — o centro de Gênesis 3 diz: Deus já inseriu a promessa dentro do veredito. Olhe com fé para o centro e veja o evangelho escondido no pior dos dias.
-
----
-
-EIXO REDENTOR (HISTÓRICO-REDENTIVO)
-A semente da mulher de Gn 3.15 é Cristo: "nascido de mulher, nascido sob a lei, para resgatar os que estavam sob a lei" (Gl 4.4). Na cruz, a serpente feriu o calcanhar de Cristo (morte) — mas Cristo esmagou a cabeça da serpente (vitória definitiva, Cl 2.15). As vestes de pele de 3.21 se cumprem nas vestes de justiça imputadas pelo sangue do Cordeiro (Ap 7.14). O jardim fechado (3.24) é reaberto no paraíso restaurado (Ap 22.2-3): a árvore da vida voltará a ser acessível ao redimido.
-
-DOUTRINA CENTRAL
-O Deus que julga a queda é o mesmo que, no centro do juízo, esconde a primeira promessa do evangelho — revelando que a redenção não é resposta de emergência, mas plano eterno.
-
-APLICAÇÕES PASTORAIS
-▸ Para a Igreja: Pregar Gênesis 3 é pregar o evangelho. A queda não é apenas um texto de antropologia — é o primeiro laboratório onde a graça soberana de Deus se revela mais funda que o pecado humano.
-▸ Para as Famílias: A transferência de culpa de Adão e Eva é o padrão que destrói casamentos. O interrogatório divino convida cada um a responder por si mesmo — sem acusar, sem fugir.
-▸ Para o Discípulo: Você está vivendo nas consequências de uma queda — sua ou de outros. Olhe para o centro: Deus inseriu a promessa no mesmo lugar onde pronunciou o juízo. Há esperança onde parece haver apenas condenação.
-
-CONCLUSÃO
-Gênesis 3 começa com uma serpente e termina com um querubim. Entre os dois, há uma queda, uma vergonha, um juízo — e uma promessa. A promessa que ninguém esperava. No momento mais escuro da história humana, quando Adão e Eva ouviram a sentença, Deus voltou sua face para a serpente e disse: haverá uma semente. Ela virá. Ela vencerá. Dois mil anos depois, numa colina chamada Gólgota, a serpente feriu o calcanhar — e pensou ter vencido. Mas o terceiro dia desfez a ilusão. Cristo esmagou a cabeça. A promessa de Gênesis 3.15 chegou ao seu cumprimento. Irmão, você está caído. Mas você caiu para dentro de uma promessa. A semente da mulher já veio. E em Cristo, a queda virou ressurreição, a maldição virou bênção, e o jardim fechado será reaberto para sempre. Amém.`;
+EIXO CRISTOLÓGICO
+Gl 4:4: "nascido de mulher" — Jesus é a semente prometida que esmaga a serpente na cruz.`;
 
   if (d.dia === 5) return `PARA PREGAR · Gênesis 4:1–26
 
----
-
-TÍTULO DO SERMÃO
-"Por que a História se Bifurca: Caim, Abel e o Deus que ainda chama pelo nome"
-
 BIG IDEA
-A história humana se bifurca entre a violência que cresce sem Deus e a adoração que nasce pela graça soberana.
+"A linhagem humana se bifurca entre violência sem Deus e adoração pela graça."
 
-PERGUNTA DE TRANSIÇÃO
-Por que a história humana se bifurca entre a violência sem Deus e a adoração nascida pela graça soberana?
+MOVIMENTOS DO TEXTO
+[A]   · Caim e Abel nascem; suas ofertas revelam corações distintos
+      → O culto sincero brota da fé, não da forma
 
-PALAVRA-CHAVE DE TRANSIÇÃO
-Vejamos as RAZÕES pelas quais dois caminhos emergem de um mesmo casal, e por que somente a graça explica que ainda há uma linhagem que clama o Nome.
+[B]   · Caim mata Abel; o sangue clama da terra por justiça
+      → O pecado não dominado conduz à destruição do irmão
 
----
+◉ [X]   · OS DESCENDENTES DE CAIM CONSTROEM CIVILIZAÇÃO LONGE DA PRESENÇA DIVINA
+      → Progresso humano sem Deus produz cultura brilhante e coração endurecido
 
-MOVIMENTOS DO SERMÃO
+[B']  · Lameque amplia a vingança em setenta e sete vezes
+      → O coração sem Deus transforma justiça em vingança ilimitada
 
-I. PORQUE o culto divide os caminhos desde o princípio: fé e forma geram ofertas irreconciliáveis (A ↔ A')
-§ Indicação Textual: Gn 4.1-2 (nascimento de Caim e Abel) ecoa em 4.25-26 (nascimento de Sete, substituindo Abel; começa-se a invocar o Nome). Os dois extremos do quiasma são nascimentos — dois começos que o texto contrasta para mostrar que a graça preserva linhagem mesmo após o assassinato.
-§ Exegese: "Mibekorah tsonoh" (dos primogênitos do rebanho, 4.4) indica que Abel ofertou o melhor em resposta à graça — ato de fé (Hb 11.4). Caim ofertou "do fruto da terra" sem qualificação. Deus "atentou" (sha'ah) para Abel: não é favoritismo arbitrário, mas discernimento do coração por trás da oferta.
-§ Teologia Reformada: O culto aceitável é sempre por fé, não por forma — a Confissão de Westminster (XXI.3) ordena adoração segundo a Palavra, não segundo a invenção humana. A recusa da oferta de Caim não é rejeição da agricultura, mas da religiosidade que não nasce de fé humilhada.
-§ Aplicação: Por que você adora? Por hábito, pressão social, forma religiosa — ou por fé no Deus que primeiro se deu a você? A bifurcação começa no coração, antes de chegar à conduta.
+[A']  · Sete nasce; começa-se a invocar o nome do SENHOR
+      → A graça preserva uma linhagem que adora em meio à corrupção
 
-II. PORQUE o pecado não dominado assassina o irmão, e a civilização sem Deus amplifica a vingança sete vezes setenta e sete (B ↔ B')
-§ Indicação Textual: Gn 4.3-16 (Caim mata Abel; sangue clama; Deus marca Caim) reflete em 4.23-24 (Lameque mata e reivindica vingança de setenta e sete vezes). A violência passa de um assassinato a uma filosofia cultural.
-§ Exegese: "Shav'atayim" (sete vezes, 4.15 — marca protetora de Caim) é pervertida por Lameque em "shiv'im veshiv'ah" (setenta e sete, 4.24) — a graça que protegia é deformada em instrumento de terror ilimitado. O sangue de Abel clama ("tso'eqim", 4.10) — antecipando a justiça divina que ouvirá o clamor do oprimido.
-§ Teologia Reformada: A depravação operante sem freio (graça comum retirada) produz civilizações que inovam tecnologicamente e retrocedem moralmente (4.17-22). Lameque sintetiza: arte, metalurgia, música — e assassinato glorificado. Progresso sem redenção.
-§ Aplicação: A pergunta não é se a violência cresce, mas se você tem dominado o "pecado que está à porta" (4.7) antes de ele dominar você. O coração humano sem graça não estagna — degenera.
-
-III. PORQUE a linhagem de Caim constrói sem Deus e a graça soberana preserva uma linhagem que ainda clama o Nome (C) — CENTRO X
-§ Indicação Textual: Gn 4.17-22 é o centro do quiasma: descendentes de Caim — Enoque, Lameque, Jabal, Jubal, Tubalcaim. Civilização brilhante, nomes memoráveis, inovação cultural — mas sem referência ao SENHOR.
-§ Exegese: O centro do quiasma de Caim é a sua civilização — não Deus. Compare com o final do capítulo (4.26): "então começou-se a invocar o nome do SENHOR" — uma linha de graça que sobrevive ao massacre e inicia o culto. Enoque de Caim funda cidades (4.17); Enoque de Sete anda com Deus (5.24). Dois Enoques, dois destinos.
-§ Teologia Reformada: A eleição soberana (CFW III) não se explica pela qualidade moral da linhagem de Sete — Sete nasce para substituir Abel morto. A graça chama do luto. A preservação de uma linhagem adoradora é ato de soberania divina, não de mérito humano.
-§ Aplicação: Você pertence à civilização de Caim ou à linhagem de Sete — não por berço, mas por graça? Em meio a uma cultura que constrói sem invocar o Nome, há uma comunidade que ainda clama. Essa comunidade não é mais capaz que as outras — é mais amada.
-
----
-
-EIXO REDENTOR (HISTÓRICO-REDENTIVO)
-O sangue de Abel que clama da terra (4.10) é superado pelo sangue de Cristo que "fala coisas melhores que o de Abel" (Hb 12.24). Abel clamava por justiça; Cristo clama por misericórdia. A linhagem de Sete que começa a invocar o Nome (4.26) culmina em Cristo, o nome acima de todo nome (Fp 2.9-11), pelo qual toda linhagem humana pode ser enxertada na família de Deus. A bifurcação de Gênesis 4 não é irreversível: em Cristo, filhos de Caim são adotados na família de Sete.
-
-DOUTRINA CENTRAL
-A história humana se bifurca não pelo determinismo cultural, mas pela graça soberana que preserva uma linhagem adoradora em meio à civilização que cresce sem Deus.
-
-APLICAÇÕES PASTORAIS
-▸ Para a Igreja: A Igreja é a linhagem de Sete no mundo de Caim — não porque seja culturalmente superior, mas porque foi graciosamente chamada a invocar o Nome onde outros não invocam.
-▸ Para as Famílias: O "pecado que está à porta" (4.7) precisa ser dominado no lar. Pais que não ensinam os filhos a invocar o Nome estão, sem querer, iniciando-os na civilização de Caim.
-▸ Para o Discípulo: Há uma pergunta que Deus ainda faz: "onde está o teu irmão?" (4.9). O discípulo de Cristo não pode responder com indiferença — a vida do próximo importa porque seu sangue também clama.
-
-CONCLUSÃO
-Caim perguntou: "sou eu o guarda do meu irmão?" E a pergunta ecoou como confissão de culpa. A história humana desde então se pergunta: alguém ainda se importa? A civilização de Caim responde: construímos cidades, compomos música, forjamos metal — mas não guardamos o irmão. A linhagem de Sete responde diferente: começamos a invocar o Nome. Porque quem clama o Nome aprende que o sangue que foi derramado não fica sem resposta. O sangue de Abel clamou. O sangue de Cristo respondeu — e fala palavras melhores. Em Cristo, o filho de Caim pode tornar-se filho de Sete. A bifurcação não é inevitável para você. Chame o Nome. Amém.`;
+EIXO CRISTOLÓGICO
+Hb 12:24: "o sangue da aspersão fala melhor que o de Abel" — Cristo fala perdão onde Abel clamava por justiça.`;
 
   if (d.dia === 6) return `PARA PREGAR · Gênesis 5:1–32
 
----
-
-TÍTULO DO SERMÃO
-"Como Enoque Rompe o Ciclo: andar com Deus em meio à genealogia da morte"
-
 BIG IDEA
-Em meio à genealogia da morte, Enoque mostra que andar com Deus pela fé rompe o ciclo que parecia inevitável.
+"No meio da genealogia da morte, Enoque mostra que andar com Deus rompe o ciclo."
 
-PERGUNTA DE TRANSIÇÃO
-Como andar com Deus em meio a uma genealogia marcada pela morte pode romper o ciclo e abrir caminho para a vida?
+MOVIMENTOS DO TEXTO
+[A]   · Adão é gerado à imagem de Deus — dignidade preservada apesar da queda
+      → A imagem manchada ainda dignifica e responsabiliza o homem
 
-PALAVRA-CHAVE DE TRANSIÇÃO
-Vejamos COMO Gênesis 5 apresenta três movimentos: a dignidade que a queda não destruiu, o ciclo que a morte impõe, e a exceção que a fé produz — revelando o caminho que escapa da inevitabilidade da morte.
+[B]   · A genealogia avança em ciclos de "viveu... e morreu"
+      → A morte é o eco da queda em cada geração — sem exceção aparente
 
----
+◉ [X]   · ENOQUE ANDOU COM DEUS E NÃO FOI ACHADO, PORQUE DEUS O TOMOU
+      → Andar com Deus pela fé é caminho que escapa do domínio da morte
 
-MOVIMENTOS DO SERMÃO
+[B']  · A genealogia retoma sua marcha mortal após Enoque
+      → A exceção aponta uma esperança que a regra ainda não realizou
 
-I. COMO a imagem de Deus preservada em Adão garante dignidade à linhagem humana mesmo na queda
-§ Indicação Textual: Gn 5.1-3 retoma deliberadamente Gn 1.26-27: "à semelhança de Deus o fez... à sua semelhança, à sua imagem". A genealogia começa reafirmando que a imagem não foi destruída — apenas manchada.
-§ Exegese: "Betselem Elohim" (à imagem de Deus, 5.1) repete a fórmula de 1.27 após a queda — ato teológico deliberado: a queda degradou mas não obliterou a imago Dei. Adão transmite a imagem para Sete (5.3) — dignidade geracional que funda a sacralidade da vida humana (cf. 9.6).
-§ Teologia Reformada: A depravação total (CFW VI.2) não significa que o homem perdeu a imagem — significa que todas as faculdades estão corrompidas. A dignidade permanece como fundamento da ética, da responsabilidade e da esperança da regeneração.
-§ Aplicação: Como você trata aqueles ao seu redor que carregam — mesmo que manchada — a imagem de Deus? A genealogia do capítulo 5 começa lembrando que até os que morrem carregam a marca do Criador.
+[A']  · Noé surge como o repouso prometido à terra amaldiçoada
+      → Deus prepara um remanescente para iniciar nova história
 
-II. COMO o ciclo "viveu... e morreu" revela que a morte é o eco inevitável da queda em cada geração
-§ Indicação Textual: De Adão a Lameque, a fórmula se repete com variação apenas no número de anos: "viveu... gerou... e morreu". Nove vezes a morte aparece como conclusão de cada vida — até Enoque (5.24) e Noé (9.29).
-§ Exegese: A estrutura rítmica da genealogia é retórica deliberada: a repetição de "vayamat" (e morreu) martela a realidade do juízo de 2.17 ("morrerás certamente"). Cada vida é um intervalo entre nascimento e morte — a queda cumpre sua sentença com regularidade implacável.
-§ Teologia Reformada: A morte não é natural — é consequência do pecado (Rm 5.12). A genealogia de Gênesis 5 é o catálogo do custo da queda: nenhuma longevidade (mesmo 969 anos de Matusalém) escapa da sentença. Somente a aliança pode romper o ciclo.
-§ Aplicação: Você tem vivido como se a morte fosse apenas biologia, não consequência moral? A genealogia pede que você leia "e morreu" como eco do jardim — e que pergunte: há algo que rompa esse eco?
-
-III. COMO Enoque anda com Deus e não morre — revelando que a fé é o único caminho que escapa do ciclo e aponta para a ressurreição (CENTRO)
-§ Indicação Textual: Gn 5.21-24 interrompe o ritmo da genealogia: onde todos os outros "morreram", Enoque "não foi achado, porque Deus o tomou". O centro do texto é essa exceção — e ela é deliberada.
-§ Exegese: "Vayithallekh et-haelohim" (andou com Deus, 5.22.24) é expressão da mais íntima comunhão. "Einenu" (não estava mais, 5.24) evita a palavra "morte" — ruptura intencional. "Laqach oto Elohim" (Deus o tomou) usa o mesmo verbo de arrebatamento de Elias (2Rs 2.10). Fé não apenas prolonga a vida — a transforma.
-§ Teologia Reformada: A traslação de Enoque é antecipação da ressurreição (Hb 11.5). A fé que caminha com Deus antecipa o destino final do crente: não dissolução na morte, mas recepção em Deus. CFW XXXII.1: os corpos dos justos repousarão na sepultura até a ressurreição — mas Enoque mostra que Deus não está limitado ao padrão comum.
-§ Aplicação: Você está andando com Deus ou apenas sobrevivendo à genealogia? Enoque não viveu mais — viveu diferente. A questão não é quantos anos você viverá, mas se a sua vida tem a qualidade de quem caminha ao lado do Criador.
-
----
-
-EIXO REDENTOR (HISTÓRICO-REDENTIVO)
-Enoque prefigura Cristo em dois sentidos: no andar com Deus sem interrupção da morte (Cristo não viu a corrupção, At 2.27) e na traslação que aponta para a ressurreição e ascensão (At 1.9-11). Noé ao final da genealogia é apresentado como o "repouso" prometido (5.29) — prefigurando Cristo como nosso descanso (Mt 11.28-30). A genealogia que termina com morte em cada geração prepara o texto para o Dilúvio — e para a arca que é sinal da salvação em Cristo (1Pe 3.20-21).
-
-DOUTRINA CENTRAL
-Em meio à genealogia universal da morte, Enoque revela que andar com Deus pela fé rompe o ciclo e antecipa o destino final do crente: não a morte como última palavra, mas Deus que toma para si.
-
-APLICAÇÕES PASTORAIS
-▸ Para a Igreja: A Igreja é uma comunidade que lê obituários de forma diferente. "E morreu" não é a última linha do crente — é a penúltima. A última é escrita por Deus.
-▸ Para as Famílias: Como está o ritmo espiritual da sua casa? A genealogia de Gênesis 5 pergunta: você está apenas "vivendo e morrendo", ou está andando com Deus de forma que a família perceba?
-▸ Para o Discípulo: Andar com Deus não é programa de desenvolvimento pessoal — é relação de comunhão íntima que transforma a qualidade da existência. Enoque não andou com Deus para escapar da morte; escapou da morte porque andou com Deus.
-
-CONCLUSÃO
-A genealogia de Gênesis 5 é o texto mais repetitivo da Bíblia. E justamente por isso é um dos mais poderosos. Cada "e morreu" é um martelo na consciência: a queda tem consequências reais, inevitáveis, duradouras. Mas no meio da cadeia, o ritmo é interrompido. Um nome diferente — Enoque. Uma frase diferente — "andou com Deus". Um desfecho diferente — "Deus o tomou". A genealogia da morte tem uma exceção. E essa exceção chama o seu nome. Não porque você seja melhor que os outros, mas porque o Deus que tomou Enoque é o mesmo que ressuscitou Cristo — e que, em Cristo, promete que "e morreu" não será a última palavra sobre você. Ande com ele. Amém.`;
+EIXO CRISTOLÓGICO
+Hb 11:5: "pela fé Enoque foi trasladado" — andar com Deus pela fé escapa ao domínio da morte.`;
 
   if (d.dia === 7) return `PARA PREGAR · Gênesis 6:1–8:22
 
----
-
-TÍTULO DO SERMÃO
-"De que Forma o Juízo Preserva: como Deus recria o mundo no centro da devastação"
-
 BIG IDEA
-No juízo universal Deus preserva um remanescente pela arca e recria o mundo pela aliança de sua misericórdia.
+"No juízo universal Deus preserva um remanescente e recria o mundo pela aliança."
 
-PERGUNTA DE TRANSIÇÃO
-De que forma Deus, no juízo universal, preserva um remanescente e recria o mundo pela aliança da sua misericórdia?
+MOVIMENTOS DO TEXTO
+[A]   · A maldade humana provoca a determinação do dilúvio
+      → Há um limite ao mal que a santidade de Deus não pode ignorar
 
-PALAVRA-CHAVE DE TRANSIÇÃO
-Vejamos as FORMAS pelas quais o dilúvio revela não apenas a santidade que julga, mas a misericórdia que preserva, a paciência que espera e a aliança que recria — tudo orquestrado em torno de uma arca.
+[B]   · A Palavra divina instrui Noé que obedece em fé
+      → A salvação se apropria pela obediência da fé
 
----
+[C]   · Noé entra na arca aos seiscentos anos com sua casa
+      → A graça acolhe famílias inteiras pelo chefe que obedece
 
-MOVIMENTOS DO SERMÃO
+[D]   · Sete dias de espera silenciam o mundo antes do juízo
+      → Há tempos de paciência que precedem decisões irrevogáveis
 
-I. DE QUE FORMA a maldade humana provoca o juízo e a obediência da fé abre a salvação (A ↔ A' / B ↔ B')
-§ Indicação Textual: Gn 6.1-8 (maldade que determina o dilúvio) ecoa em 8.20-22 (Noé oferece holocausto; Deus jura nunca mais destruir assim). A mesma terra que gerou maldade recebe o juramento da graça. Gn 6.9-7.4 (Palavra instrui Noé; Noé obedece) reflete em 8.15-19 (Palavra manda sair; Noé sai).
-§ Exegese: "Kol yetser mahshevot libo rak ra kol hayom" (todo propósito dos pensamentos do coração era continuamente mau, 6.5) é a mais abrangente diagnose bíblica da depravação. "Noé achou graça" (6.8) — "chen" (graça) aparece pela primeira vez na Bíblia. Salvação por graça antes da lei. O paralelo A' (8.20-22) mostra que a maldade permanece após o dilúvio — o juízo não regenerou o coração; a misericórdia é que sustenta o mundo.
-§ Teologia Reformada: A eleição de Noé não é recompensa pela justiça — é soberania divina (CFW III). A frase "Noé era justo... andou com Deus" (6.9) descreve o resultado da eleição, não sua causa. A obediência da fé (6.22: "fez tudo o que Deus lhe ordenou") é resposta à graça, não mérito para ela.
-§ Aplicação: De que forma você tem respondido à Palavra de Deus quando ela convoca a uma tarefa que parece absurda? Noé construiu uma arca no deserto. A fé obedece antes de entender.
+[E]   · Quarenta dias: as águas sobem cobrindo a terra
+      → O juízo se cumpre integral e ordenadamente conforme dito
 
-II. DE QUE FORMA o juízo se cumpre completo e ordenado, e nada que parecia alto resiste à mão de Deus (C / D / E / F — descida)
-§ Indicação Textual: Gn 7.5-20 — progressão do juízo: Noé entra (7.5-9), sete dias de espera (7.10-11), quarenta dias de chuva (7.12-16), as águas sobem quinze côvados acima das montanhas (7.17-20). O juízo é metódico, total e irreversível.
-§ Exegese: A estrutura numerológica é teológica: sete dias (completude da espera), quarenta dias (completude do juízo — mesmo número do deserto de Israel e do jejum de Cristo). "Kol harim hagevohim" (todas as montanhas mais altas, 7.19) — nada que o homem considera elevado escapa. O número 600 anos de Noé (7.6) evoca plenitude de geração.
-§ Teologia Reformada: O juízo de Deus é sempre proporcional, completo e justo (CFW V). A teodiceia do dilúvio é que o Criador tem direito soberano sobre a criação que corrompeu o propósito para o qual foi criada. A paciência de Deus (1Pe 3.20: "a longa paciência de Deus nos dias de Noé") precedeu o juízo — o dilúvio não foi impulso, mas decisão após misericordia esgotada.
-§ Aplicação: De que forma a certeza do juízo deveria moldar o seu modo de viver hoje? A montanha da sua segurança — prestígio, riqueza, reputação — resiste à mão de Deus?
+[F]   · As montanhas mais altas são submersas pelo juízo divino
+      → Nada que o homem considere alto resiste à mão de Deus
 
-III. DE QUE FORMA o remanescente na arca é o ponto de virada onde o juízo se converte em misericórdia e a nova criação começa (G) — CENTRO X
-§ Indicação Textual: Gn 7.21-24 — CENTRO: "toda carne que se movia sobre a terra pereceu... somente ficou Noé, e os que estavam com ele na arca" (7.23). No coração do juízo há uma arca. No coração da devastação há um remanescente.
-§ Exegese: "Vayishaver" (e foram destruídos, 7.23) — o mesmo verbo de criação aparece aqui em desconstrução. O dilúvio é descriação deliberada: as águas acima do firmamento voltam (cf. 1.6-8). Mas "vayizkor Elohim et-Noah" (e Deus se lembrou de Noé, 8.1) — o "lembrar" divino é ato de aliança, não de memória recuperada. Deus age pelo que prometeu.
-§ Teologia Reformada: A preservação da arca tipifica a eleição: Deus não salva porque viu qualidade nos salvos — salva porque se lembrou de sua própria promessa (CFW XVII). O remanescente é sempre obra de graça monergística. A arca é imagem da preservação dos eleitos: ninguém entra por mérito, mas por convocação divina.
-§ Aplicação: De que forma o "Deus se lembrou" de você se manifesta nos momentos em que as águas sobem? O crente não está acima do dilúvio — está dentro da arca. E a arca é sustentada não pelo desempenho do ocupante, mas pela memória fiel de Deus.
+◉ [X]   · TODA CARNE PERECE; O REMANESCENTE NA ARCA SOBREVIVE
+      → No coração do juízo há um lugar de refúgio provido por Deus mesmo
 
----
+[F']  · Os cumes das montanhas reaparecem após o juízo
+      → Quando Deus julga, ele também restaura o que foi coberto
 
-EIXO REDENTOR (HISTÓRICO-REDENTIVO)
-A arca é figura do batismo (1Pe 3.20-21) e de Cristo: assim como a arca sustentou o remanescente através do juízo, Cristo sustenta o seu povo através do juízo que ele mesmo sofreu na cruz. "Deus se lembrou de Noé" (8.1) antecipa o "Pai, nas tuas mãos entrego o meu espírito" (Lc 23.46) — a memória fiel de Deus é o fundamento da confiança no juízo. O holocausto de Noé (8.20) e o "odor suave" prefiguram o sacrifício de Cristo, "oferta e sacrifício a Deus em aroma suave" (Ef 5.2). Após o dilúvio, a criação é renovada — antecipando a nova criação em Cristo (2Co 5.17; Ap 21.1-5).
+[E']  · Quarenta dias depois a escotilha é aberta para a luz
+      → Toda noite de juízo tem uma manhã preparada pela providência
 
-DOUTRINA CENTRAL
-No juízo universal, Deus preserva um remanescente pela arca, revelando que sua misericórdia opera no centro — não apesar — do juízo, e que a memória fiel de Deus é a âncora do povo eleito.
+[D']  · Sete dias: a pomba retorna trazendo o sinal da paz
+      → Deus comunica sua paz por sinais que confirmam sua palavra
 
-APLICAÇÕES PASTORAIS
-▸ Para a Igreja: A Igreja é a arca no mundo que julga e será julgado. Não somos superiores ao dilúvio — somos remanescente preservado dentro dele. Isso é razão de humildade, não de orgulho.
-▸ Para as Famílias: Noé entrou na arca com sua casa (7.1). O chefe de família que obedece à Palavra de Deus abre a porta da graça para os que vivem sob seu teto. Sua obediência tem consequências geracionais.
-▸ Para o Discípulo: Quando as águas sobem na sua vida — quando tudo parece submergir — "Deus se lembrou de Noé" é sua promessa. Você está na arca. A arca não afunda. Aguarde os quarenta dias. A pomba voltará com o ramo.
+[C']  · No ano seiscentos e um as águas estão secas
+      → Cumprido o juízo, abre-se nova era na história da redenção
 
-CONCLUSÃO
-O dilúvio é o texto mais assustador da Bíblia — e um dos mais esperançosos. Porque no meio do texto em que tudo morre, há uma frase que muda tudo: "Deus se lembrou de Noé". Não porque Noé fosse impecável. Não porque a arca fosse sua conquista. Mas porque Deus prometeu — e Deus não esquece o que prometeu. As águas subiram quinze côvados acima das montanhas mais altas. Mas não subiram acima da arca. O juízo foi total. A graça foi maior. Irmão, você talvez esteja no dia quarenta, olhando pela escotilha e vendo apenas água. Mas Deus se lembrou de você. A pomba vai voltar com o ramo de oliveira. A terra vai secar. E haverá um altar para queimar o holocausto ao Deus que preservou. Aguente na arca. O dilúvio tem fim. A aliança é eterna. Amém.`;
+[B']  · A Palavra divina manda Noé sair e consagrar a vida
+      → Após o juízo, a vida obediente continua em adoração
+
+[A']  · A maldade permanece; Deus jura nunca mais destruir assim
+      → A paciência divina sustenta o mundo aguardando a redenção final
+
+EIXO CRISTOLÓGICO
+1Pe 3:20–21: "a arca, em que poucos foram salvos... figura do batismo" — Cristo é a arca em quem somos salvos do juízo.`;
 
   if (d.dia === 8) return `PARA PREGAR · Gênesis 9:1–17
 
----
-
-TÍTULO DO SERMÃO
-"Como o Arco Revela a Fidelidade: de que forma Deus ata sua promessa a um sinal visível para que jamais duvidemos"
-
 BIG IDEA
-O arco que Deus pôs no céu é a marca visível de uma fidelidade que nenhuma nuvem pode cancelar.
+"O arco no céu é a marca da fidelidade de Deus à criação que ele jurou preservar."
 
-PERGUNTA DE TRANSIÇÃO
-Como o arco que Deus pôs no céu se torna a marca visível da sua fidelidade à criação que jurou preservar para sempre?
+MOVIMENTOS DO TEXTO
+[A]   · Deus ordena: não comer sangue; do sangue do homem se prestará contas
+      → A vida é sagrada porque o homem é imagem de Deus
 
-PALAVRA-CHAVE DE TRANSIÇÃO
-Vejamos COMO Deus, após o dilúvio, não apenas recomeça a história — ele a assina. E assina com um sinal visível, permanente e universal: o arco nas nuvens.
+[B]   · "Nunca mais dilúvio destruirá toda a carne" — promessa cravada
+      → A história tem futuro porque Deus jurou sustentá-la
 
----
+◉ [X]   · O ARCO NAS NUVENS É O SINAL DA ALIANÇA ENTRE DEUS E A TERRA
+      → Deus ata sua fidelidade a um sinal visível para que jamais duvidemos
 
-MOVIMENTOS DO SERMÃO
+[B']  · "Nunca mais as águas serão dilúvio" — promessa reafirmada
+      → A repetição na boca de Deus é firmeza para o coração humano
 
-I. COMO a sacralidade da vida no sangue fundamenta a aliança — porque o Criador que sustenta a vida também a exige respeito (A ↔ A')
-§ Indicação Textual: Gn 9.1-7 ("somente a carne com seu sangue vital não comereis; do sangue de cada um prestará contas") ecoa em 9.17 ("este é o sinal da aliança que estabeleci entre mim e toda carne"). O sangue inicia e a aliança conclui — a vida humana como imago Dei enquadra toda a seção.
-§ Exegese: "Nefesh" (vida/alma, 9.4) habita no sangue — consumir sangue seria consumir a vida que pertence ao Criador. "Shofekh dam haAdam baAdam damo yishafekh" (quem derramar sangue humano, seu sangue será derramado, 9.6) — fundamentado na imago Dei: vida humana tem valor infinito porque reflete o Criador infinito. O paralelo A' (9.17) conclui que toda essa sacralidade está selada pela aliança.
-§ Teologia Reformada: A Aliança Noáica é graça comum (CFW VII.7): abrange toda criatura mortal, não apenas os eleitos. Deus sustenta a criação — inclusive os não-eleitos — para que a história avance até o cumprimento do plano redentor. A proibição do sangue prefigura a centralidade do sangue de Cristo na nova aliança.
-§ Aplicação: Como você trata a vida humana ao seu redor — dos vulneráveis, dos diferentes, dos adversários? O fundamento não é cultura ou lei civil: é que todo ser humano carrega o sangue que reflete a imagem de Deus.
+[A']  · "Este é o sinal da aliança com toda a carne" — conclusão solene
+      → A aliança não é privilégio de poucos; abraça toda a criação
 
-II. COMO a promessa "nunca mais dilúvio" é cravada duas vezes — porque o coração humano precisa ouvir duas vezes o que Deus garante uma vez (B ↔ B')
-§ Indicação Textual: Gn 9.8-11 ("nunca mais todas as criaturas serão destruídas pelas águas do dilúvio") reflete em 9.14-16 ("as águas nunca mais se tornarão dilúvio para destruir toda criatura mortal"). A mesma promessa, duas vezes, com variação mínima — repetição retórica de confirmação.
-§ Exegese: "Lo yikaret kol basar od" (não mais toda carne será cortada, 9.11) e "lo yihyeh od hamayim lemabul" (não mais haverá dilúvio, 9.15) — dupla negação reforçada. Em direito hebreu, dois testemunhos confirmam o fato. Deus se torna testemunha dupla da própria promessa. "Vezikarti et-beriti" (e lembrarei minha aliança, 9.15) — o "lembrar" divino não é mnemônico: é comprometimento ativo.
-§ Teologia Reformada: A imutabilidade dos decretos divinos (CFW II.2) não é limitação — é garantia. Deus repete não porque a primeira vez foi insuficiente, mas porque o coração humano precisa ser reassegurado. A pastoral reformada cuida das promessas: as proclama, as repete, as aplica. O crente vive de promessas memorizadas, não de experiências imediatas.
-§ Aplicação: Há uma promessa de Deus que você ouviu mas não acredita porque as nuvens voltaram? O texto diz: ele lembrou. A aliança foi afirmada duas vezes. Sua dúvida não cancela o decreto divino.
-
-III. COMO o arco nas nuvens — sinal visível escolhido por Deus — revela que a fidelidade divina não depende do tempo que faz, mas de quem fez o arco (C ↔ C') — CENTRO X
-§ Indicação Textual: Gn 9.12-13 (Deus coloca o arco como sinal) e 9.13 (o arco "estará nas nuvens e servirá de sinal da aliança entre mim e a terra"). O arco aparece na mesma nuvem que traria medo — e é reinterpretado como memória da aliança.
-§ Exegese: "Qesheth" (arco) é a palavra para arco de guerra — a arma que o guerreiro deposita como sinal de paz. Deus "aposenta" seu arco de combate nas nuvens: declaração de cessar-fogo com a criação. "Beini uven" (entre mim e...) repete seis vezes no texto — a aliança é relacional, bilateral em termos de benifício, mas unilateral em termos de iniciativa: somente Deus faz o juramento.
-§ Teologia Reformada: Os sacramentos reformados (CFW XXVII) são sinais e selos de uma promessa que existe antes deles. O arco não cria a aliança — confirma o que Deus já disse. Assim o batismo e a Ceia não salvam — confirmam a salvação prometida na Palavra. O sinal não substitui a promessa: aponta para ela.
-§ Aplicação: Como o arco muda a forma como você olha para as nuvens de tribulação? O sinal foi posto justamente nas nuvens — não no céu limpo. A fidelidade de Deus é mais visível na tempestade do que na calmaria.
-
----
-
-EIXO REDENTOR (HISTÓRICO-REDENTIVO)
-O arco de Gênesis 9 é o primeiro dos grandes sinais alianciços da Escritura: arco (Noé), circuncisão (Abraão), Páscoa (Moisés), sábado (Israel), batismo/Ceia (nova aliança). Em cada caso, Deus escolhe um sinal visível para um povo com coração que esquece. O cumprimento do arco é o sangue de Cristo: "este cálice é a nova aliança no meu sangue" (Lc 22.20). O arco nas nuvens cobre toda criatura; o sangue de Cristo cobre todo pecado do eleito. E em Apocalipse 4.3, o arco cerca o trono de Deus — sinal eterno de que a aliança de misericórdia é o fundamento do governo divino.
-
-DOUTRINA CENTRAL
-O arco que Deus colocou nas nuvens revela que sua fidelidade é ativa, visível e perpétua — e que ele escolheu amarrar sua promessa a um sinal para que o coração humano nunca precise duvidar quando as nuvens voltarem.
-
-APLICAÇÕES PASTORAIS
-▸ Para a Igreja: Pregar os sacramentos como sinais alianciços que confirmam promessas — não como rituais que produzem graça por si mesmos, mas como arcos visíveis que lembram ao povo o que Deus jurou.
-▸ Para as Famílias: Ensine seus filhos a ver o arco e perguntar "o que Deus prometeu?" antes de perguntar "como é que funciona fisicamente?" O sinal foi dado para educar a fé, não satisfazer a curiosidade.
-▸ Para o Discípulo: Quando as nuvens voltarem — e voltarão — olhe para o arco. Não porque o sinal desapareça o problema, mas porque o sinal lembra que Aquele que fez a promessa está olhando para ela ao mesmo tempo que você.
-
-CONCLUSÃO
-Havia água para onde Noé olhasse. Água por cima, água por baixo, água até onde a vista alcançava. E então a terra secou. E Noé saiu. E a primeira coisa que Deus fez foi colocar um arco no céu. Não para explicar a física da refração da luz. Mas para dizer: eu me lembro. Eu lembro da aliança. Eu lembro da promessa. A nuvem que poderia trazer medo passa a carregar o sinal da misericórdia. Irmão, a mesma nuvem que assustou você pode ser o lugar onde Deus pendurou o seu arco. Não porque o problema sumiu, mas porque o juramento permanece. A fidelidade de Deus não depende do tempo que faz. Depende de quem fez o arco. E ele disse: nunca mais. E ele não esquece. Amém.`;
+EIXO CRISTOLÓGICO
+Lc 22:20: "este cálice é a nova aliança no meu sangue" — o sangue de Cristo é o arco eterno entre Deus e o pecador.`;
 
   if (d.dia === 9) return `PARA PREGAR · Gênesis 9:18–29
 
+BIG IDEA
+"Mesmo o justo do dilúvio cai, e a casa se divide entre quem cobre e quem expõe."
+
+MOVIMENTOS DO TEXTO
+[P]   · Os descendentes de Noé reabrem a história humana
+      → A nova humanidade ainda carrega a velha fragilidade
+
+[A]   · A embriaguez de Noé revela que o justo continua frágil
+      → Nenhum santo do passado dispensa a graça do presente
+
+[B]   · Cão vê a nudez do pai e a divulga em vez de cobrir
+      → Expor a falha do irmão revela o coração que não ama
+
+◉ [X]   · SEM E JAFÉ ANDAM DE COSTAS E COBREM O PAI SEM VER
+      → Amar é cobrir a vergonha alheia quando se pode expô-la
+
+[A']  · Noé desperta e profetiza sobre as gerações futuras
+      → A palavra dos pais ecoa nas escolhas dos filhos
+
+[B']  · Maldição sobre Canaã pela conduta de Cão
+      → O pecado oculto produz consequências geracionais visíveis
+
+[P']  · Bênção sobre Sem e Jafé; Noé morre aos novecentos e cinquenta
+      → A bênção segue quem aprende a cobrir, não quem expõe
+
+EIXO CRISTOLÓGICO
+1Pe 4:8: "o amor cobre multidão de pecados" — Cristo cobre a vergonha do pecador com sua própria justiça.`;
+
+  if (d.dia === 10) return `PARA PREGAR · Gênesis 10:1–32
+
 ---
 
 TÍTULO DO SERMÃO
-"Por que o Justo Cai e a Casa se Divide: a vergonha que separa quem cobre de quem expõe"
+"Todas as Nações sob o Olhar de Deus: o mapa das gerações que permanece debaixo da soberania do Criador"
 
 BIG IDEA
-Mesmo o justo preservado no dilúvio cai, e a casa se divide entre o coração que cobre e o coração que expõe.
+O mapa das nações revela que toda família humana permanece debaixo do olhar atento e soberano de Deus.
 
 PERGUNTA DE TRANSIÇÃO
-Por que mesmo o justo do dilúvio cai na embriaguez, expondo a casa que se divide entre cobrir e expor o irmão?
+De que forma o mapa das nações revela que toda família humana permanece debaixo do olhar atento e soberano de Deus?
 
 PALAVRA-CHAVE DE TRANSIÇÃO
-Vejamos as RAZÕES pelas quais Gênesis 9 não termina com o herói intacto, mas com o herói caído — e por que essa queda expõe o coração de cada filho de forma irrevogável.
+Vejamos as FORMAS pelas quais a Tábua das Nações declara que nenhum povo escapa da providência soberana do Deus que ordena a história das famílias humanas.
 
 ---
 
 MOVIMENTOS DO SERMÃO
 
-I. PORQUE mesmo o justo preservado no dilúvio permanece sujeito à fraqueza da carne que a arca não regenerou (A ↔ A')
-§ Indicação Textual: Gn 9.20-21 (Noé planta vinha, embriaga-se e fica nu na tenda) ecoa em 9.24 (Noé desperta do vinho e sabe o que seu filho menor fez). A embriaguez e o despertar enquadram o episódio central — o herói que caiu e recobrou a consciência.
-§ Exegese: "Vayishkat" (e embriagou-se, 9.21) e "vayitgal" (e se descobriu, ficou nu) — a nudez de Noé evoca a nudez pré-queda (2.25) mas agora em contexto de vergonha. A arca salvou o corpo; a queda corrompe o coração. "Vayiqets Noach miyyeno" (Noé despertou do vinho, 9.24) — o despertar é o momento de julgamento moral: o justo caído ainda tem discernimento e responsabilidade.
-§ Teologia Reformada: A perseverança dos santos (CFW XVII) garante que o eleito não perecerá — mas não garante impecabilidade enquanto estiver na carne. Noé é santo e tropeça: ambos os fatos são verdadeiros simultaneamente. A arca (graça) não é substituto da santificação contínua (CFW XIII).
-§ Aplicação: Por que você se surpreende quando um líder espiritual cai? Noé sobreviveu ao dilúvio e não sobreviveu à vinha. A diferença entre o crente e o incrédulo não é a ausência de queda — é a presença de Deus que restaura após a queda.
+I. REVELANDO QUE TODA HISTÓRIA HUMANA SE INSCREVE NA ALIANÇA DAS GERAÇÕES (A ↔ A')
+§ Indicação Textual: Gn 10.1 ("estas são as gerações dos filhos de Noé") encontra eco em 10.32 ("estas são as famílias dos filhos de Noé, segundo suas gerações, em suas nações"), formando inclusio com o termo toledot.
+§ Exegese: A fórmula hebraica "toledot" (gerações) é o fio condutor de Gênesis e marca o ponto em que a história pós-diluviana é reordenada. A repetição abre e fecha o capítulo enquadrando todas as nações dentro da estrutura da aliança noética.
+§ Teologia Reformada: A doutrina da providência geral (CFW V) afirma que Deus governa não apenas a Igreja, mas todas as nações, tempos e gerações. Nenhuma família humana existe fora do decreto soberano que a chamou à existência.
+§ Aplicação: Você reconhece sua família como inscrita na história providencial de Deus, ou a trata como acidente cultural? Submeta sua linhagem à soberania que ordena as gerações.
 
-II. PORQUE o coração que expõe a vergonha do irmão quando poderia cobri-la revela que o pecado de Cão é maior que o de Noé (B ↔ B')
-§ Indicação Textual: Gn 9.22 ("Cão, pai de Canaã, viu a nudez do pai e o contou a seus dois irmãos do lado de fora") reflete em 9.25 (maldição sobre Canaã). A ação de Cão gera consequências que alcançam não apenas ele, mas sua descendência.
-§ Exegese: "Vayagid" (e contou, divulgou, 9.22) — o verbo implica anúncio público, não relato privado. Cão não apenas viu: proclamou. A nudez do pai se torna espetáculo. A maldição recai sobre "Canaã" — filho de Cão — gerando debate exegético; provavelmente indica que Cão agiu com a cumplicidade ou em função de Canaã, ou que o julgamento alcança a linhagem que perpetuará essa conduta.
-§ Teologia Reformada: O pecado da língua (exposição pública da falha alheia) é julgado com seriedade nos textos sapienciais e proféticos. A lei do amor (Lv 19.18; Rm 13.10) exige cobertura antes de exposição. A fofoca, a denúncia pública, o escândalo dos fracos — são pecados com consequências geracionais.
-§ Aplicação: Quando você soube da queda de alguém, o que fez primeiro — contou ou cobriu? O coração de Cão é o coração que usa a fraqueza alheia para se elevar. O coração de Cristo é o coração que "cobre multidão de pecados" (1Pe 4.8).
+II. REVELANDO QUE TODAS AS RAMIFICAÇÕES DOS POVOS ESTÃO MAPEADAS PELO SENHOR (B1, B2, B3)
+§ Indicação Textual: Gn 10.2-5 (Jafé e as ilhas), 10.6-20 (Cão e suas nações, incluindo Babel, Assur e Canaã) e 10.21-31 (Sem e a linha da promessa) traçam o mapa étnico-geográfico do mundo conhecido.
+§ Exegese: O termo "goyim" (nações) aparece pela primeira vez de modo estruturado. Cada povo recebe "sua língua, sua família, sua terra" — fórmula que aponta para a diversidade ordenada por Deus, e não para acaso histórico.
+§ Teologia Reformada: A CFW IV ensina que Deus criou o homem para a sua glória e estabeleceu as fronteiras dos povos. At 17.26 confirma que de um só sangue Deus fez todas as nações, determinando os tempos e os limites de sua habitação.
+§ Aplicação: Como você enxerga povos hostis ao evangelho? Mesmo os opositores (Babel, Canaã, Assur) estão na lista divina, alvos potenciais da redenção que virá em Cristo.
 
-III. PORQUE Sem e Jafé andam de costas e cobrem o pai sem ver — e essa escolha de amor sem exposição define a bênção das gerações (C ↔ C') — CENTRO X
-§ Indicação Textual: Gn 9.23 (Sem e Jafé pegam um manto, andam de costas, cobrem o pai sem ver sua nudez) ecoa em 9.26-27 (bênção sobre Sem e Jafé). A forma como cobriram — de costas, recusando ver — determina a bênção que recebem.
-§ Exegese: "Vayishbu peneyhem ahoranit" (e viraram seus rostos para trás, 9.23) — detalhe narrativo precioso: eles podiam ver, e escolheram não ver. Cobertura dupla: do manto e do olhar. "Yaft Elohim leYefet" (que Deus alargue a Jafé, 9.27) — "yaft" ressoa com "yefet" (Jafé) e com "yafeh" (belo): a bênção espelha o nome. A tenda de Sem será a habitação do SENHOR — linhagem messiânica.
-§ Teologia Reformada: O amor reformado é ativo na cobertura — "o amor cobre multidão de pecados" (1Pe 4.8 citando Pv 10.12) não é cumplicidade com o mal, mas recusa de expor o fraco quando se poderia fazê-lo. Deve-se confrontar o irmão em privado (Mt 18.15) antes de qualquer exposição pública.
-§ Aplicação: Você tem andado de costas — recusando ver e expor — quando encontra a fraqueza do irmão? O amor de Cristo é o único que pode produzir em você o instinto de cobrir antes de expor. Sem e Jafé não fizeram isso por disciplina: fizeram porque amavam.
+III. REVELANDO QUE A LINHA DA PROMESSA SE PRESERVA NO MEIO DAS NAÇÕES — CENTRO REDENTIVO
+§ Indicação Textual: Gn 10.21 ("também a Sem nasceram filhos... pai de todos os filhos de Héber") prepara o caminho para a chamada de Abrão no capítulo 12, ligando a Tábua à promessa redentora.
+§ Exegese: A menção de Héber (de onde vem "hebreu") é estratégica: no meio do mosaico das nações, Deus já vai distinguindo o canal por onde virá a bênção universal prometida desde Gn 3.15.
+§ Teologia Reformada: A eleção particular dentro da providência universal (CFW III) mostra que Deus, ao governar todos os povos, separa um povo para si. A graça particular não nega a soberania geral; antes, a serve.
+§ Aplicação: Você confia que Deus está conduzindo a história mesmo onde só se vê dispersão? A linha da promessa caminha silenciosa no meio das nações até desembocar em Cristo.
 
 ---
 
 EIXO REDENTOR (HISTÓRICO-REDENTIVO)
-A nudez de Noé que divide a casa prefigura a nudez de Cristo na cruz — o Justo caído sob o peso do pecado alheio. Mas na cruz, a exposição não foi acidente: foi necessidade redentora. Cristo foi exposto para que nós sejamos cobertos. As vestes que os soldados sortearam (Jo 19.23-24) ecoam as vestes de pele de Gênesis 3: o Filho de Deus despojado para que o pecador seja revestido. "O amor cobre multidão de pecados" (1Pe 4.8) — e nenhum amor cobre como o de Cristo, que viu toda a nossa vergonha e andou em direção a ela, não de costas.
+A Tábua das Nações é o pano de fundo do plano redentor: Deus mapeia todos os povos para que, em Cristo, sejam alcançados pela bênção prometida a Abraão (Gn 12.3). O que em Gn 10 aparece como dispersão geográfica, em Ap 7.9 aparece como multidão reunida diante do trono — toda tribo, língua, povo e nação. O Cristo ressurreto, com toda autoridade no céu e na terra, envia seus discípulos a fazer discípulos de todas as nações (Mt 28.18-20), cumprindo o que Gn 10 prefigurava em mapa.
 
 DOUTRINA CENTRAL
-Mesmo o mais justo dos homens cai — e a queda revela os corações: quem expõe e quem cobre. O evangelho é que Cristo, o único verdadeiramente justo, foi exposto para que os que expõem sejam cobertos pela sua misericórdia.
+Deus governa soberanamente todas as famílias humanas e dirige a história das nações para a glória de seu Filho.
 
 APLICAÇÕES PASTORAIS
-▸ Para a Igreja: A comunidade de fé é o espaço onde se pratica andar de costas — recusando publicar a vergonha do irmão fraco. O testemunho da Igreja é destruído mais pela exposição interna do que pela oposição externa.
-▸ Para as Famílias: Como sua família lida com a queda de um membro? Cobre ou expõe? O padrão de Sem e Jafé se aprende em casa — ou no Evangelho que a casa proclama.
-▸ Para o Discípulo: Você tem alguém cuja vergonha você poderia expor agora — e está resistindo? Isso é a graça operando: o instinto do amor que cobre, aprendido de Cristo que cobriu o que você nunca poderia esconder.
+▸ Para a Igreja: A missão transcultural não é estratégia humana, mas resposta ao mapa que Deus mesmo desenhou desde Gênesis 10.
+▸ Para as Famílias: Sua casa é parte de uma linhagem que Deus conhece pelo nome; ensine os filhos a se verem na história da redenção.
+▸ Para o Discípulo: Onde você vê caos étnico ou social, há uma providência ordenadora que ainda escreve a história.
 
 CONCLUSÃO
-Noé sobreviveu ao pior dilúvio da história. E foi derrubado por um cálice de vinho. Porque o dilúvio não regenera o coração. A graça sim. E quando o herói caiu, três filhos revelaram seus corações sem disfarce. Um publicou. Dois cobriram. E os dois que cobriram — andando de costas, sem ver — herdaram a bênção. Irmão, em algum momento você verá a nudez de alguém que você respeita. A pergunta que Gênesis 9 faz não é "o que você viu?", mas "o que você fez com o que viu?" Cristo viu toda a sua vergonha. E não publicou. Foi de costas para a cruz — e cobriu. Aprenda com ele. Cubra. Amém.`;
-
-  if (d.dia === 10) return `PARA PREGAR · Gênesis 10:1–32
-
-BIG IDEA
-"O mapa das nações revela que toda família humana está debaixo do olhar de Deus."
-
-MOVIMENTOS DO TEXTO
-[A]   · Introdução: as gerações dos filhos de Noé após o dilúvio
-      → Toda história humana começa sob a soberania do Criador
-
-[B]   · Descendentes de Jafé povoam as ilhas e o norte
-      → Nenhum povo está fora do mapa que Deus mesmo desenhou
-
-◉ [X]   · DESCENDENTES DE CÃO INCLUEM AS NAÇÕES OPOSITORAS — BABEL, ASSUR, CANAÃ
-      → Mesmo as nações que se erguerão contra Israel estão na lista de Deus
-
-[B']  · Descendentes de Sem formam a linhagem da promessa
-      → A salvação se canaliza por um povo escolhido entre as nações
-
-[A']  · Conclusão: "estas são as famílias dos filhos de Noé"
-      → A diversidade dos povos é dom da providência, não acidente
-
-EIXO CRISTOLÓGICO
-Ap 7:9: "uma grande multidão de todas as nações" — em Cristo, o mapa das nações se torna mapa da igreja.`;
+Voltemos ao mapa: Deus conhece cada nação pelo nome. O que parece dispersão na superfície da história é, na verdade, organização sob a mão do Soberano. Em Cristo, o segundo Adão, todas as famílias da terra são alcançadas pela bênção prometida. A Tábua das Nações que abre Gênesis 10 só termina quando a multidão de Apocalipse 7 se reúne diante do Cordeiro. Portanto, não desanime ao ver o mundo fragmentado em conflitos étnicos e linguísticos: o Senhor que separou os povos é o mesmo que, pelo Espírito, em Pentecostes, fez um só povo de muitas línguas. Vá, então, fazer discípulos de todas as nações — porque o mapa de Deus já passou por aqui. Amém.`;
 
   if (d.dia === 11) return `PARA PREGAR · Gênesis 11:1–9
 
+---
+
+TÍTULO DO SERMÃO
+"Babel: porque quando o homem tenta subir ao céu por si mesmo, é Deus quem desce em juízo para confundir e dispersar"
+
 BIG IDEA
-"Quando o homem tenta subir ao céu por si, é Deus quem desce para julgar."
+A altivez humana que tenta construir o próprio céu provoca a descida soberana de Deus para confundir e dispersar.
 
-MOVIMENTOS DO TEXTO
-[A]   · Toda a terra falava a mesma língua e as mesmas palavras
-      → Unidade sem Deus não vale mais que dispersão com ele
+PERGUNTA DE TRANSIÇÃO
+Por que, quando o homem tenta subir ao céu por si mesmo, é Deus quem desce em juízo para confundir e dispersar?
 
-[B]   · "Senão seremos dispersos" — o medo motiva a construção
-      → A idolatria nasce do temor que tenta substituir a confiança
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as RAZÕES pelas quais a tentativa humana de escalar o céu sempre termina na descida judicial do Senhor que confunde a linguagem da soberba.
 
-◉ [X]   · O SENHOR DESCEU PARA VER A CIDADE — "DESÇAMOS E CONFUNDAMOS"
-      → Toda altura humana exige a descida divina para ser corrigida
+---
 
-[B']  · O SENHOR os dispersou por toda a terra
-      → Aquilo que o homem temia, Deus determinou para seu bem
+MOVIMENTOS DO SERMÃO
 
-[A']  · O SENHOR confundiu a língua de toda a terra
-      → Quando a Palavra que une é trocada por orgulho, vem a confusão
+I. PORQUE A UNIDADE SEM DEUS É SOLO FÉRTIL PARA A SOBERBA QUE PROVOCA O JUÍZO (A ↔ A')
+§ Indicação Textual: Gn 11.1 ("toda a terra tinha a mesma língua") e 11.9 ("o SENHOR confundiu a língua de toda a terra") formam inclusio pelo termo safah (lábio/língua).
+§ Exegese: O hebraico "safah ehat" (uma só língua) sugere unidade cultural plena. Mas a unidade torna-se ferramenta de rebelião contra o mandato de "encher a terra" (Gn 1.28; 9.1). A palavra "balal" (confundir) ecoa "Babel".
+§ Teologia Reformada: A CFW VI ensina que toda obra humana sem Deus, mesmo aparentemente boa, é corrompida pelo pecado original. A unidade humana sem submissão à Palavra é Babel, não Pentecostes.
+§ Aplicação: Você busca unidade na sua família, igreja ou nação à custa da fidelidade à Palavra? Toda unidade construída contra Deus prepara a própria dispersão.
 
-EIXO CRISTOLÓGICO
-At 2:6: "cada um os ouvia falar na sua própria língua" — em Pentecostes Cristo desfaz Babel pela Palavra do Espírito.`;
+II. PORQUE O MEDO QUE TENTA SUBSTITUIR A CONFIANÇA EM DEUS GERA IDOLATRIA ARQUITETÔNICA (B ↔ B')
+§ Indicação Textual: Gn 11.2-4 ("senão seremos espalhados") encontra resposta em 11.8 ("o SENHOR os espalhou dali"), conectados por "puts" (dispersar).
+§ Exegese: A motivação confessada — "façamos para nós um nome" (shem) — opõe-se ao "nome" (shem) que Deus dará a Abrão (Gn 12.2). O homem busca por si o que só Deus pode conceder pela aliança.
+§ Teologia Reformada: O Catecismo Maior de Westminster ensina que o primeiro mandamento proíbe colocar qualquer coisa no lugar de Deus. A torre de Babel é o protótipo de toda religião humana que tenta alcançar o céu por obras.
+§ Aplicação: Que "torres" você está construindo para conquistar segurança e renome? O medo só se cura pela confiança no Deus que faz nome eterno aos seus.
+
+III. PORQUE A DESCIDA DO SENHOR É TANTO JUÍZO QUANTO MISERICÓRDIA — CENTRO X
+§ Indicação Textual: Gn 11.5-7 — "desceu o SENHOR para ver a cidade... desçamos e confundamos ali a sua língua" — é o centro do quiasma, o ponto de inversão.
+§ Exegese: O verbo "yarad" (descer) é solenemente repetido. O plural "desçamos" ecoa Gn 1.26 ("façamos o homem"), insinuando o conselho trinitário. A descida judicial é também graciosa: impede que o pecado humano se consume em rebelião plena.
+§ Teologia Reformada: A CFW V (Providência) ensina que Deus, em sua sabedoria, limita o pecado humano, frustrando os conselhos dos ímpios para preservar sua obra. O juízo de Babel é também misericórdia preventiva.
+§ Aplicação: Reconheça que cada interrupção de seus planos de soberba pode ser a misericordiosa descida de Deus para te poupar da consumação do orgulho.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A torre de Babel é desfeita em Pentecostes (At 2.1-11): onde os homens tentaram subir pela soberba, Deus desceu em pessoa pelo Espírito, e onde as línguas foram confundidas, agora são compreendidas no evangelho. Cristo, o verdadeiro Filho que não considerou usurpação ser igual a Deus, desceu (Fp 2.6-8) para que pudéssemos subir. A torre derrubada se torna, na cruz, o caminho aberto até o céu. A multidão dispersa em Gênesis é reunida em Apocalipse 7 diante do Cordeiro.
+
+DOUTRINA CENTRAL
+A soberba humana sempre provoca a descida judicial de Deus, mas em Cristo a descida divina se torna salvação para os que se humilham.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: A igreja não é torre de Babel mas casa de Pentecostes — unidade pelo Espírito, não pela ambição.
+▸ Para as Famílias: Não construa o nome da sua casa contra Deus; busque o nome que ele mesmo concede pela aliança.
+▸ Para o Discípulo: Renuncie diariamente às pequenas Babéis do coração — currículos, conquistas, autoexaltação.
+
+CONCLUSÃO
+Babel cai sempre. Cada torre que erguemos para conquistar o céu por nós mesmos termina em confusão e dispersão. Mas há um monte onde Deus mesmo subiu — o Calvário — para descer até o pó da nossa miséria e nos elevar pela graça. Em Cristo, a descida judicial se transformou em descida redentora. O Espírito que confundiu as línguas em Sinear é o mesmo que as une no evangelho. Portanto, irmão, abandone a soberba das suas torres pessoais. Confie no Deus que dá nome eterno aos seus filhos. Não suba sozinho: deixe-se elevar por aquele que desceu para te buscar. Amém.`;
 
   if (d.dia === 12) return `PARA PREGAR · Gênesis 11:10–26
 
+---
+
+TÍTULO DO SERMÃO
+"A Providência Eloquente nas Genealogias Silenciosas: como Deus conduz dez gerações até o pai da promessa"
+
 BIG IDEA
-"Por dez gerações silenciosas Deus conduz a história até o pai da promessa."
+Deus conduz silenciosamente a história humana por gerações esquecidas até desembocar no pai da promessa eleita.
 
-MOVIMENTOS DO TEXTO
-[A]   · A linhagem de Sem é registrada com precisão divina
-      → A providência opera nos nomes que ninguém mais lembraria
+PERGUNTA DE TRANSIÇÃO
+Como Deus conduz silenciosamente, por dez gerações esquecidas, a história humana até chegar ao pai da promessa?
 
-◉ [X]   · DA CONFUSÃO DE BABEL DEUS RECOLHE UMA LINHAGEM ESCOLHIDA
-      → Mesmo quando a história parece dispersa, Deus a recolhe num fio
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais a providência do Senhor opera nos nomes anônimos e nos anos contados para preparar o pai daqueles que creem.
 
-[A']  · A genealogia desemboca em Tera, pai de Abrão
-      → Cada genealogia silenciosa prepara um chamado que mudará a história
+---
 
-EIXO CRISTOLÓGICO
-Mt 1:1: "livro da genealogia de Jesus Cristo" — toda lista bíblica de nomes converge no Filho de Davi.`;
+MOVIMENTOS DO SERMÃO
+
+I. CONDUZINDO A HISTÓRIA POR LINHAS GENEALÓGICAS PRECISAS (A)
+§ Indicação Textual: Gn 11.10-26 — "estas são as gerações de Sem" — apresenta dez nomes precisamente datados: Sem, Arfaxade, Salá, Héber, Pelegue, Reú, Serugue, Naor, Tera, Abrão.
+§ Exegese: A fórmula "viveu X anos e gerou Y" ecoa Gn 5, mas com expectativa redentora. O termo "toledot" estrutura a genealogia, conectando o pós-dilúvio à promessa abraâmica. Os anos vão diminuindo, sinal sutil da fragilidade humana.
+§ Teologia Reformada: A doutrina dos decretos eternos (CFW III) afirma que Deus ordenou desde a eternidade tudo o que sucede. Cada nascimento na história é momento providencial inscrito no plano salvífico.
+§ Aplicação: Você desprezaria a obra silenciosa de Deus em sua linhagem? Cada filho, cada geração, é elo na história providencial maior do que enxergamos.
+
+II. CONDUZINDO A PROMESSA NO CENTRO DA HUMANIDADE DISPERSA — CENTRO REDENTIVO
+§ Indicação Textual: A genealogia é colocada estrategicamente entre Babel (11.1-9) e o chamado de Abrão (12.1-3), ligando juízo e graça.
+§ Exegese: O nome "Pelegue" (11.16-17) significa "divisão" — ecoando a dispersão de Babel. No meio da divisão, Deus continua tecendo a linhagem da redenção. A graça opera no silêncio enquanto a história visível é caos.
+§ Teologia Reformada: A eleição soberana (CFW III.5) não se baseia em previsão de fé ou obras, mas no beneplácito de Deus. Abrão é escolhido antes de existir, pela vontade pura do Senhor.
+§ Aplicação: Você confia que Deus está trabalhando mesmo quando o céu parece em silêncio? A genealogia silenciosa é o relógio paciente da providência redentora.
+
+III. CONDUZINDO TUDO AO PAI DA PROMESSA (A')
+§ Indicação Textual: Gn 11.26 — "Tera... gerou Abrão, Naor e Harã" — é o ponto de convergência. A dez gerações depois de Sem, Abrão aparece.
+§ Exegese: A estrutura simétrica (dez gerações de Adão a Noé em Gn 5; dez de Noé a Abrão em Gn 11) sugere desenho intencional. Abrão é apresentado como o novo Adão, o cabeça de uma humanidade redimida.
+§ Teologia Reformada: Cristo, descendente de Abraão (Mt 1.1), cumpre tipologicamente o que a genealogia anunciava. A CFW VII fala da aliança da graça, administrada desde Abraão até Cristo.
+§ Aplicação: Sua vida pode parecer um nome esquecido na lista de Deus, mas cada nome importa na história que culmina em Cristo. Viva com a dignidade da providência.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A genealogia de Sem desemboca em Abrão, que aponta para Davi, que aponta para Cristo (Mt 1; Lc 3). O Filho de Deus se fez carne descendendo dessas listas que parecem áridas. Cada nome obscuro foi necessário para que o Verbo se encarnasse na plenitude do tempo (Gl 4.4). A providência que conta os cabelos da nossa cabeça já contava os anos de Pelegue e Reú. Cristo, o cumprimento de toda genealogia, transforma cada nome esquecido em testemunha do plano redentor.
+
+DOUTRINA CENTRAL
+A providência divina opera nos silêncios da história, preparando, em gerações esquecidas, o caminho do Redentor prometido.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Não despreze os tempos aparentemente improdutivos; Deus trabalha em gerações que ninguém recordará, exceto ele.
+▸ Para as Famílias: Sua casa é capítulo da história providencial; eduque os filhos sabendo que sua linhagem importa ao Senhor.
+▸ Para o Discípulo: Sua vida obscura pode ser o elo decisivo no plano de Deus para gerações futuras. Seja fiel no silêncio.
+
+CONCLUSÃO
+Há genealogias que ninguém lê, mas que Deus tece com cuidado eterno. Entre Babel e Abrão, dez nomes anônimos sustentam a história da redenção. Em Cristo, todas essas listas convergem no Filho do Homem — descendente de Pelegue, Héber, Sem, Noé, Adão. Você que se sente esquecido no rolar das gerações, levante a cabeça: o Deus que contou cada ano de Reú conta também os seus dias. Sua vida não é nota de rodapé; é capítulo na história escrita pelo dedo do Senhor. Viva fielmente, ainda que ninguém saiba seu nome, porque o Pai da promessa sabe — e em Cristo te chama pelo nome. Amém.`;
 
   if (d.dia === 13) return `PARA PREGAR · Gênesis 11:27–32
 
+---
+
+TÍTULO DO SERMÃO
+"A Jornada Interrompida da Casa de Tera: por que a vocação inacabada exige novo chamado da graça"
+
 BIG IDEA
-"A casa de Tera parte rumo a Canaã mas para no meio do caminho — Deus precisa chamar de novo."
+A vocação humana, sem o chamado renovado de Deus, sempre para a meio caminho da promessa.
 
-MOVIMENTOS DO TEXTO
-[A]   · A família de Tera é apresentada com Abrão, Naor e Harã
-      → Toda promessa começa em uma casa concreta e limitada
+PERGUNTA DE TRANSIÇÃO
+Por que a casa de Tera parte rumo a Canaã e para no caminho, e o que isso revela sobre vocações inacabadas?
 
-◉ [X]   · SARAI ERA ESTÉRIL: NÃO TINHA FILHOS — IMPOSSIBILIDADE NO CENTRO
-      → Deus começa sua história onde o homem reconhece sua incapacidade
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as RAZÕES pelas quais cada jornada humana iniciada sem o sustento da palavra divina termina parada antes da terra prometida.
 
-[A']  · Tera parte para Canaã mas se estabelece em Harã e morre
-      → Há jornadas iniciadas que precisam ser retomadas pela próxima geração
+---
 
-EIXO CRISTOLÓGICO
-Hb 11:8: "pela fé Abraão... saiu sem saber para onde ia" — onde Tera parou, a fé chamada por Deus continuará.`;
+MOVIMENTOS DO SERMÃO
+
+I. PORQUE TODA PROMESSA SE INICIA NUMA CASA CONCRETA E LIMITADA (A)
+§ Indicação Textual: Gn 11.27-30 — "estas são as gerações de Tera: Tera gerou Abrão, Naor e Harã" — apresenta a família com nomes, esposas e tragédias.
+§ Exegese: O "toledot" volta a estruturar a narrativa. Harã morre antes do pai (11.28), invertendo a ordem natural. Sarai é declarada estéril ("akarah") — palavra carregada na tradição patriarcal.
+§ Teologia Reformada: A doutrina da depravação total (CFW VI) mostra que toda casa humana traz em si a marca da queda — luto, esterilidade, mortes prematuras. A história começa onde o homem reconhece sua limitação.
+§ Aplicação: Sua família tem feridas que parecem impedir qualquer promessa? É exatamente nessa casa concreta que Deus inicia sua obra.
+
+II. PORQUE A IMPOSSIBILIDADE HUMANA É O TERRENO DA GRAÇA SOBERANA — CENTRO REDENTIVO
+§ Indicação Textual: Gn 11.30 — "Sarai era estéril e não tinha filhos" — é declaração teologicamente densa no centro da perícope.
+§ Exegese: O termo hebraico "ein lah valad" (não havia para ela criança) é enfático. A história da redenção começa exatamente onde a biologia humana fracassa. Deus prefere esterilidade vencida pela graça à fertilidade natural.
+§ Teologia Reformada: A graça eficaz (CFW X) opera onde o homem nada pode produzir. Sarai estéril prefigura o coração espiritualmente morto que só Deus pode tornar fecundo (Ez 36.26).
+§ Aplicação: Onde sua vida parece estéril, ali Deus pode estar plantando a maior promessa. Não rejeite a impossibilidade — entregue-a ao Senhor.
+
+III. PORQUE A VOCAÇÃO HUMANA SEM RENOVAÇÃO DIVINA SEMPRE PARA NO MEIO DO CAMINHO (A')
+§ Indicação Textual: Gn 11.31-32 — "saíram para ir à terra de Canaã; vieram até Harã e ali habitaram... morreu Tera em Harã."
+§ Exegese: A meta era Canaã; o ponto de chegada foi Harã. O verbo "yashav" (habitar) sugere acomodação. A morte de Tera em Harã é metáfora silenciosa de toda vocação interrompida pela falta de chamado renovado.
+§ Teologia Reformada: A perseverança dos santos (CFW XVII) depende não da força humana, mas da graça que sustenta. Sem o chamado eficaz da palavra, todo crente para a meio caminho da herança.
+§ Aplicação: Você começou bem na fé mas está acomodado num "Harã" intermediário? Peça que o Senhor renove o chamado e te leve até Canaã.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+Tera parte mas não chega; Abrão será chamado pela palavra eficaz no capítulo seguinte. Cristo é o verdadeiro Filho que partiu da glória, atravessou Harã do sofrimento e chegou à Canaã da ressurreição (Hb 12.2). Ele é o único que jamais parou no meio do caminho. Em Cristo, nossa vocação inacabada se completa, porque ele é o Cabeça que conduz a Igreja inteira à herança prometida. Onde Tera morre em Harã, Cristo vive eternamente para nos levar à pátria celestial (Hb 11.16).
+
+DOUTRINA CENTRAL
+Toda vocação humana só chega ao seu destino quando renovada pelo chamado eficaz da graça soberana.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Cuide para que a igreja não pare em Harã — comece e termine a jornada pela palavra que chama.
+▸ Para as Famílias: Não deixe sua casa morrer no caminho; busque diariamente o chamado renovado nas Escrituras.
+▸ Para o Discípulo: Examine onde você se acomodou. O Senhor ainda diz: "Sai... vai para a terra que eu te mostrarei."
+
+CONCLUSÃO
+Há jornadas que começam bem e param antes do destino. Tera saiu de Ur com a meta de Canaã, mas morreu em Harã. Quantas vidas cristãs começam ardentes na fé e se acomodam em paradas intermediárias — confortáveis, mas não prometidas. A boa notícia é que o Deus que chamou Abrão ainda chama: "Sai da tua terra." Em Cristo, o Filho que nunca parou no meio do caminho, recebemos forças para retomar a marcha. Não morra em Harã, irmão. O Senhor preparou Canaã para você. Levante-se, escute o chamado renovado, e siga. A herança eterna te espera. Amém.`;
 
   if (d.dia === 14) return `PARA PREGAR · Gênesis 12:1–9
 
+---
+
+TÍTULO DO SERMÃO
+"Sai e Sê Bênção: como o chamado de Deus arranca o crente da segurança para fazer dele bênção entre as nações"
+
 BIG IDEA
-"O chamado de Deus arranca Abrão da segurança para fazer dele bênção das nações."
+O chamado eficaz de Deus retira o crente da segurança conhecida para constituí-lo bênção entre todas as nações da terra.
 
-MOVIMENTOS DO TEXTO
-[A]   · "Sai da tua terra" — o chamado quebra os laços antigos
-      → Toda vocação começa por uma saída concreta da zona conhecida
+PERGUNTA DE TRANSIÇÃO
+De que forma o chamado de Deus nos arranca da segurança conhecida para fazer de nós bênção entre todas as nações?
 
-[B]   · Abrão partiu como o SENHOR lhe ordenara
-      → A fé não discute o mapa; obedece à voz de quem chama
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais o chamado divino opera no peregrino para arrancá-lo do conhecido e torná-lo canal de bênção universal.
 
-◉ [X]   · O SENHOR APARECEU A ABRÃO E DEU A PROMESSA DA TERRA
-      → No meio da peregrinação Deus se revela e firma a promessa
+---
 
-[B']  · Abrão erigiu altar e invocou o nome do SENHOR
-      → A resposta da fé é adoração no lugar onde Deus se mostra
+MOVIMENTOS DO SERMÃO
 
-[A']  · Abrão prossegue avançando rumo ao Neguebe
-      → A obediência caminha em etapas; cada passo confia o próximo a Deus
+I. ARRANCANDO O CRENTE DA SEGURANÇA PELA PALAVRA DA PROMESSA (A ↔ A')
+§ Indicação Textual: Gn 12.1-3 ("sai da tua terra... e te abençoarei") encontra eco em 12.9 (Abrão "continuou avançando em direção ao Neguebe"), conectando o chamado inicial à peregrinação contínua.
+§ Exegese: O imperativo "lek lekha" (vai por ti) tem força idiomática enfática — "vai, de fato, para teu próprio bem". A bênção (barak) é mencionada cinco vezes em três versículos, formando um crescendo redentor.
+§ Teologia Reformada: O chamado eficaz (CFW X) opera pela palavra e pelo Espírito, retirando o pecador da segurança natural e conduzindo-o à fé. A vocatio é o início efetivo da aplicação da redenção.
+§ Aplicação: De que "Ur" o Senhor está te chamando a sair hoje? A obediência à palavra é a primeira marca da vocação eficaz.
 
-EIXO CRISTOLÓGICO
-Gl 3:8: "em ti serão benditas todas as nações" — o evangelho foi pregado de antemão a Abraão.`;
+II. CONDUZINDO O CRENTE PELA OBEDIÊNCIA DA FÉ (B ↔ B')
+§ Indicação Textual: Gn 12.4-6 (Abrão partiu conforme o SENHOR lhe ordenara) e 12.8 (Abrão ergueu altar e invocou o nome do SENHOR) marcam a resposta de fé do peregrino.
+§ Exegese: O verbo "halak" (ir/andar) descreve não só o deslocamento físico, mas a vida de fé. "Wayyiqra beshem YHWH" (invocou o nome do SENHOR) é fórmula litúrgica que se torna padrão da adoração patriarcal.
+§ Teologia Reformada: A fé verdadeira é viva e operante (CFW XI; Tg 2.17). A obediência não é fundamento da justificação, mas evidência inseparável da fé que justifica.
+§ Aplicação: Sua fé tem produzido movimento concreto e altar erguido? Onde Deus aparece, o crente responde com peregrinação e adoração.
+
+III. REVELANDO-SE NO CENTRO DA JORNADA E FIRMANDO A PROMESSA — CENTRO X
+§ Indicação Textual: Gn 12.7 — "Apareceu o SENHOR a Abrão e disse: à tua descendência darei esta terra" — é o coração teológico do texto.
+§ Exegese: A teofania ("wayyera") inaugura uma nova era. A promessa da terra (eretz) e da semente (zera) é o duplo eixo da aliança abraâmica. Tudo o que segue na história redentora se desdobra dessas duas palavras.
+§ Teologia Reformada: A CFW VII (aliança da graça) afirma que Deus se compromete livremente a salvar pela promessa. A semente é singular e final em Cristo (Gl 3.16).
+§ Aplicação: Você descansa nas promessas que Deus mesmo selou? A jornada do crente é sustentada pela revelação no meio do caminho.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A promessa "em ti serão benditas todas as famílias da terra" (Gn 12.3) é, segundo Paulo (Gl 3.8), o próprio evangelho pregado de antemão a Abraão. Cristo é a semente prometida (Gl 3.16) em quem toda nação recebe bênção. A peregrinação de Abrão de Ur a Canaã prefigura a peregrinação da Igreja, que sai do mundo rumo à pátria celestial (Hb 11.8-10). E o Filho de Abraão (Mt 1.1) é também o Filho de Deus, que saiu do céu para nos buscar e nos tornar herdeiros da promessa.
+
+DOUTRINA CENTRAL
+Pelo chamado eficaz da palavra, Deus arranca o pecador da segurança terrena para fazê-lo herdeiro e canal da bênção redentora em Cristo.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: A igreja é povo peregrino; não se acomode a confortos terrenos, lembre-se de que é bênção para as nações.
+▸ Para as Famílias: Eduque os filhos para responder ao chamado de Deus mesmo quando exige deixar conforto e segurança.
+▸ Para o Discípulo: Erga altares onde Deus aparecer; a adoração é a resposta natural da fé que obedece.
+
+CONCLUSÃO
+"Sai da tua terra". Essas palavras ainda ressoam. Deus continua chamando peregrinos para fora das suas Ur seguras. Não obedeça por temor, mas pela bênção que vem adiante. Em Cristo, o verdadeiro herdeiro de Abraão, recebemos a bênção prometida e nos tornamos canal dela para todas as nações. Sua vida não é sua: é peregrinação rumo à terra da promessa, e enquanto caminha, você é bênção. Levante o altar, invoque o nome do Senhor, e siga avançando. Onde quer que pise pela fé, ali a graça brota. Amém.`;
 
   if (d.dia === 15) return `PARA PREGAR · Gênesis 12:10–20
 
+---
+
+TÍTULO DO SERMÃO
+"A Promessa Maior que a Falha: como Deus preserva sua palavra apesar do medo do chamado"
+
 BIG IDEA
-"A fé do chamado falha no Egito, mas Deus preserva a promessa contra o próprio chamado."
+A promessa de Deus é maior que a falha do chamado, e a fidelidade divina sustenta o que a fé humana titubeia em guardar.
 
-MOVIMENTOS DO TEXTO
-[A]   · Abrão desce ao Egito por causa da fome em Canaã
-      → A pressão das circunstâncias testa a fidelidade da fé
+PERGUNTA DE TRANSIÇÃO
+Como a fé do chamado pode falhar diante do medo, e por que Deus preserva sua promessa apesar da queda do chamado?
 
-[B]   · Abrão pede a Sarai que diga ser sua irmã
-      → Quando o medo conduz, a mentira parece prudência
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais a fidelidade de Deus sustenta a promessa mesmo quando o pai da fé tropeça no Egito.
 
-◉ [X]   · SARAI É LEVADA AO PALÁCIO DO FARAÓ — A PROMESSA EM RISCO
-      → No coração da falha humana Deus guarda o que jurou cumprir
+---
 
-[B']  · O Faraó devolve Sarai após pragas do SENHOR
-      → Deus intervém para corrigir o erro do próprio escolhido
+MOVIMENTOS DO SERMÃO
 
-[A']  · Abrão sai do Egito enriquecido apesar da falha
-      → A graça preserva e enriquece quem ainda está aprendendo a confiar
+I. EXPONDO QUE A PRESSÃO DAS CIRCUNSTÂNCIAS TESTA A FÉ DO PEREGRINO (A ↔ A')
+§ Indicação Textual: Gn 12.10 (Abrão "desceu" ao Egito por causa da fome) encontra eco em 12.20 (Abrão "subiu" do Egito), pelo contraste yarad/alah.
+§ Exegese: O verbo "yarad" (descer) é teologicamente carregado: descer ao Egito é movimento contrário à promessa da terra. A fome (ra'av) é o primeiro teste real da fé de Abrão.
+§ Teologia Reformada: A providência de Deus permite provações (CFW V.5) para refinar a fé dos escolhidos. A fome não é acidente, mas pedagogia.
+§ Aplicação: Que "fomes" estão testando sua fé? A descida ao Egito raramente é boa escolha — busque a face de Deus antes de descer.
 
-EIXO CRISTOLÓGICO
-Rm 4:21: "plenamente convicto de que ele era poderoso para cumprir" — a promessa não depende da força do crente, mas da fidelidade de Deus.`;
+II. REVELANDO QUE O MEDO LEVA O CHAMADO A INVENTAR A MEIA-VERDADE (B ↔ B')
+§ Indicação Textual: Gn 12.11-13 (Abrão pede que Sarai diga ser sua irmã) e 12.16-19 (Faraó devolve Sarai e repreende Abrão).
+§ Exegese: A meia-verdade ("ela é minha irmã") era tecnicamente correta (Gn 20.12), mas funcionalmente mentira. O termo "achoti" (minha irmã) versus "ishti" (minha esposa) revela coração temeroso.
+§ Teologia Reformada: O nono mandamento condena toda falsidade, ainda que parcial (CFW XIX, Catecismo Maior). O temor humano que substitui o temor de Deus produz pecados de prudência.
+§ Aplicação: Você tem manobrado com meia-verdades para preservar segurança? O medo nunca produz fruto de justiça.
+
+III. PRESERVANDO A PROMESSA NO CENTRO DO RISCO — CENTRO X
+§ Indicação Textual: Gn 12.14-15 — "Sarai foi levada para o palácio do Faraó" — é o ponto crítico onde a promessa parece em perigo absoluto.
+§ Exegese: A semente prometida estava em risco antes mesmo de ser concebida. Deus intervém com "pragas grandes" (negaim gedolim) — antecipação do êxodo futuro.
+§ Teologia Reformada: A doutrina da fidelidade divina à aliança (CFW VII.6) garante que Deus cumpre o que prometeu, mesmo contra a falha do mediador humano. A graça preserva a promessa.
+§ Aplicação: Onde sua falha pôs a promessa em risco, confie: Deus mesmo intervém para guardar o que jurou cumprir.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+O episódio prefigura o êxodo: Sarai cativa, pragas sobre o opressor, saída enriquecida. Cristo, o verdadeiro filho de Abraão, desceu ao Egito (Mt 2.13-15) sem falhar, e dele saiu como verdadeiro Israel. A fidelidade divina que preservou a promessa apesar da falha de Abrão é a mesma que preserva nossa salvação apesar de nossas quedas (2Tm 2.13). Cristo guardou perfeitamente o que Abrão não conseguiu — e nos atribui sua perfeita obediência.
+
+DOUTRINA CENTRAL
+A fidelidade de Deus à sua promessa é maior que a falha dos seus escolhidos, porque ele mesmo se compromete a cumpri-la em Cristo.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: A igreja é sustentada não pela perfeição dos seus líderes, mas pela fidelidade de seu Senhor.
+▸ Para as Famílias: Quando você falhar como cabeça do lar, não desespere; a graça de Deus restaura.
+▸ Para o Discípulo: Não esconda suas falhas — leve-as ao Pai que preserva a promessa.
+
+CONCLUSÃO
+Abrão falhou cedo na jornada. Mas a promessa não falhou. O Deus que chamou é também o Deus que sustenta. Em Cristo, recebemos a garantia de que a aliança não depende da nossa força, mas da fidelidade daquele que jurou. Quando você cair — e cairá — não fuja para o Egito do desespero. Volte ao altar entre Betel e Ai. O Senhor que cumpriu a promessa em Cristo cumpre também em você. A graça é maior que a queda. Amém.`;
 
   if (d.dia === 16) return `PARA PREGAR · Gênesis 13:1–18
 
+---
+
+TÍTULO DO SERMÃO
+"Renunciar pela Paz, Receber pela Palavra: porque quem cede o melhor recebe das mãos de Deus além do que a vista alcança"
+
 BIG IDEA
-"Quem renuncia ao melhor pela paz recebe das mãos de Deus mais que a vista alcança."
+Quem renuncia ao próprio direito pela paz recebe das mãos do Senhor muito mais do que a vista poderia alcançar.
 
-MOVIMENTOS DO TEXTO
-[A]   · Abrão volta ao altar entre Betel e Ai
-      → O retorno à adoração é o primeiro passo após o desvio
+PERGUNTA DE TRANSIÇÃO
+Por que quem renuncia ao melhor pela paz acaba recebendo das mãos de Deus muito mais do que a vista alcançaria?
 
-[B]   · Conflito entre pastores de Abrão e de Ló
-      → A prosperidade muitas vezes traz tensões inesperadas
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as RAZÕES pelas quais a fé que cede recebe pela palavra divina o que o olho cobiçoso jamais conquistaria.
 
-◉ [X]   · ABRÃO PROPÕE A SEPARAÇÃO — "ESCOLHE PRIMEIRO"
-      → A fé renuncia ao próprio direito para preservar a comunhão
+---
 
-[B']  · Ló escolhe o vale do Jordão, a região de Sodoma
-      → Escolher pelos olhos sem temer a Deus expõe a alma ao risco
+MOVIMENTOS DO SERMÃO
 
-[A']  · O SENHOR renova a promessa: "olha do lugar onde estás"
-      → Quem confia em Deus recebe pela palavra mais que pela vista
+I. PORQUE O RETORNO À ADORAÇÃO ANTECEDE TODA RESTAURAÇÃO (A ↔ A')
+§ Indicação Textual: Gn 13.1-4 (Abrão volta ao altar entre Betel e Ai) e 13.14-18 (Deus renova a promessa; Abrão edifica novo altar em Manre) emolduram a perícope pelo termo "mizbeach" (altar).
+§ Exegese: O verbo "wayyiqra beshem YHWH" (invocou o nome do SENHOR) marca a restauração espiritual após o desvio egípcio. A adoração precede a nova revelação.
+§ Teologia Reformada: A doutrina dos meios de graça (CFW XIV) afirma que pela palavra, sacramentos e oração Deus restaura o crente caído. O altar é o lugar da reconciliação.
+§ Aplicação: Você voltou ao altar após sua queda? A vida cristã se mede pela frequência do retorno arrependido à adoração.
 
-EIXO CRISTOLÓGICO
-Fp 2:5–7: Cristo "não considerou como usurpação ser igual a Deus" — quem se abaixa recebe das mãos do Pai.`;
+II. PORQUE A FÉ RENUNCIA AO DIREITO PARA PRESERVAR A COMUNHÃO — CENTRO X
+§ Indicação Textual: Gn 13.8-9 — "não haja contenda entre mim e ti... se fores para a esquerda, irei para a direita" — é o centro pastoral do texto.
+§ Exegese: O substantivo "merivah" (contenda) é evitado pela proposta de Abrão. A renúncia do direito como cabeça da família é radical: o tio cede ao sobrinho a primeira escolha.
+§ Teologia Reformada: O segundo grande mandamento (Mt 22.39) e a piedade prática (CFW XVI) exigem que o crente prefira a paz à própria vantagem. A graça forma corações pacificadores.
+§ Aplicação: Há contendas em sua casa, igreja ou trabalho que você poderia resolver renunciando ao próprio direito? Imite o pai da fé.
+
+III. PORQUE A ESCOLHA PELOS OLHOS EXPÕE A ALMA AO RISCO (B ↔ B')
+§ Indicação Textual: Gn 13.5-7 (conflito entre os pastores) e 13.10-13 (Ló escolhe o vale do Jordão, "como o jardim do SENHOR") culminam na nota teológica: "os homens de Sodoma eram maus".
+§ Exegese: A escolha de Ló é descrita pelo verbo "wayyissa eynav" (levantou os olhos) — eco da queda em Gn 3.6. O paralelo é deliberado: olhar pelos olhos da carne sempre conduz à perdição.
+§ Teologia Reformada: A doutrina do pecado (CFW VI) mostra que a concupiscência dos olhos (1Jo 2.16) é raiz da apostasia. O olhar cobiçoso é o primeiro passo do descaminho.
+§ Aplicação: Você tem feito escolhas pela aparência sem consultar a palavra? O vale verdejante de hoje pode ser a Sodoma de amanhã.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+Abrão prefigura Cristo, que "não considerou usurpação ser igual a Deus, mas a si mesmo se esvaziou" (Fp 2.6-7). A renúncia voluntária é a marca do reino. Onde Abrão cede a melhor terra e recebe das mãos do Pai a herança eterna, Cristo cede sua glória e recebe o nome sobre todo nome. Em Cristo, somos chamados a renunciar pela paz, sabendo que a herança que recebemos não é vista nem alcançada por olhos cobiçosos, mas selada pela palavra do Pai.
+
+DOUTRINA CENTRAL
+A fé que renuncia ao direito pela paz recebe das mãos do Senhor uma herança maior do que a cobiça jamais alcançaria.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: A unidade do corpo de Cristo se constrói pela renúncia mútua, não pela imposição do próprio direito.
+▸ Para as Famílias: Pais que cedem por amor ensinam aos filhos o evangelho mais alto que toda pregação.
+▸ Para o Discípulo: Antes de levantar os olhos para escolher, levante o coração ao altar.
+
+CONCLUSÃO
+"Levanta os olhos do lugar onde estás" — eis a palavra do Pai a quem renuncia pela paz. O Senhor recompensa o coração manso. Em Cristo, aprendemos que o reino se herda pela renúncia, não pela conquista. Não invejes o vale de Sodoma; descansa na palavra do Pai. A terra prometida vale infinitamente mais que a melhor escolha humana. Renuncia pela paz, e recebe pela palavra: essa é a economia do reino. Amém.`;
 
   if (d.dia === 17) return `PARA PREGAR · Gênesis 14:1–12
 
+---
+
+TÍTULO DO SERMÃO
+"O Cativeiro do Vale Escolhido: porque a escolha guiada apenas pelos olhos arrasta o crente ao cativeiro das nações"
+
 BIG IDEA
-"A escolha pelos olhos arrasta Ló para o cativeiro das nações."
+A escolha conduzida apenas pelos olhos da carne sempre arrasta o crente ao cativeiro das nações que ele primeiro admirou.
 
-MOVIMENTOS DO TEXTO
-[A]   · Reis do oriente sobem em guerra contra cinco reis do vale
-      → A história mundial gira em torno de promessas que ela ignora
+PERGUNTA DE TRANSIÇÃO
+De que forma a escolha guiada apenas pelos olhos arrasta o crente para o cativeiro das nações que ele admirou?
 
-◉ [X]   · A DERROTA DE SODOMA — LÓ É LEVADO CATIVO COM SEUS BENS
-      → Onde se planta a tenda longe de Deus, ali se colhe o cativeiro
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais o olhar cobiçoso de Ló o conduz, passo a passo, ao cativeiro das mesmas nações cujo vale escolheu.
 
-[A']  · Os reis vencedores partem levando reféns e bens
-      → O mundo dispõe livremente das vidas que escolheram seu vale
+---
 
-EIXO CRISTOLÓGICO
-Lc 4:18: "enviou-me a proclamar libertação aos cativos" — Cristo é quem resgata os Ló de toda escolha errada.`;
+MOVIMENTOS DO SERMÃO
+
+I. EXPONDO QUE A HISTÓRIA MUNDIAL GIRA EM TORNO DE PROMESSAS QUE ELA IGNORA (A)
+§ Indicação Textual: Gn 14.1-9 — quatro reis do oriente contra cinco reis do vale do Jordão — apresenta a primeira guerra registrada na Bíblia.
+§ Exegese: Os nomes (Quedorlaomer, Anrafel, Tidal) refletem a alta política do antigo Oriente Próximo. Mas o texto bíblico apresenta essa guerra apenas como pano de fundo para o cativeiro de Ló.
+§ Teologia Reformada: A providência geral (CFW V.7) ordena os impérios para os propósitos redentores. As nações marcham, mas Deus governa a história rumo à promessa abraâmica.
+§ Aplicação: Você lê a geopolítica como tela onde Deus continua tecendo sua história redentora? Nada escapa à providência soberana.
+
+II. REVELANDO QUE QUEM PLANTA A TENDA EM SODOMA COLHE O CATIVEIRO — CENTRO X
+§ Indicação Textual: Gn 14.10-12 — "tomaram também a Ló, sobrinho de Abrão, que habitava em Sodoma, e os seus bens" — culminância dramática.
+§ Exegese: O texto repete deliberadamente "que habitava em Sodoma" (yashav biSdom). Lembremos: em 13.12 Ló armou tendas até Sodoma; aqui já habita lá. A progressão do pecado é gradual mas inexorável.
+§ Teologia Reformada: A doutrina das consequências do pecado (CFW VI.6) ensina que cada passo na direção do mundo aprisiona mais o crente. Sem temor de Deus, a escolha pelos olhos sempre termina em cativeiro.
+§ Aplicação: Onde você "armou tendas até Sodoma"? Examine sua trajetória: pequenas decisões cumulativas formam o cativeiro de hoje.
+
+III. EXPONDO QUE O MUNDO DISPÕE DAS VIDAS QUE LHE PERTENCERAM (A')
+§ Indicação Textual: Gn 14.11-12 — "tomaram todos os bens... e seguiram seu caminho" — encerra a perícope com a perda total de Ló.
+§ Exegese: O verbo "laqach" (tomar) aparece duas vezes: tomaram os bens, tomaram a Ló. Quem se entrega ao vale do mundo passa a ser propriedade do mundo. A liberdade aparente vira escravidão real.
+§ Teologia Reformada: O Catecismo Menor (P.14-19) descreve o pecado como rebelião que aprisiona. Sem a graça libertadora, todo homem é cativo de seus próprios apetites.
+§ Aplicação: Você notou que aquilo que parecia liberdade se tornou cativeiro? Reconheça o cativeiro, e clame ao Libertador.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+Ló é levado cativo, mas será resgatado por Abrão (Gn 14.13ss) — prefiguração de Cristo, que veio "proclamar libertação aos cativos" (Lc 4.18). O verdadeiro filho de Abraão é o Senhor Jesus, que invade o reino das trevas e resgata os escolhidos do cativeiro do pecado. Cristo é o resgatador maior que Abrão; sua espada é o evangelho, sua tropa são os anjos do céu, e sua vitória já foi consumada na cruz, onde despojou principados e potestades (Cl 2.15).
+
+DOUTRINA CENTRAL
+Toda escolha guiada apenas pelos olhos da carne aprisiona o crente até que Cristo, o Libertador maior que Abrão, intervenha.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: A igreja deve advertir contra a sutil deriva mundana que começa em pequenas decisões.
+▸ Para as Famílias: Pais, examinem onde armaram tendas perto de Sodoma; protejam os filhos de cativeiros antecipados.
+▸ Para o Discípulo: Confessar o cativeiro é o primeiro passo do resgate. Cristo liberta os que clamam.
+
+CONCLUSÃO
+O vale escolhido virou cativeiro. A liberdade ilusória custou a vida. Mas a história não termina aqui: há um Resgatador. Abrão correrá em socorro de Ló, e Cristo correu em socorro de nós. Onde quer que o pecado te tenha levado cativo, o Libertador está pronto. Sai do vale enquanto há tempo. E se já foste levado, ergue os olhos para o Resgatador maior. Em Cristo, todo cativeiro tem fim. Amém.`;
 
   if (d.dia === 18) return `PARA PREGAR · Gênesis 14:13–24
 
+---
+
+TÍTULO DO SERMÃO
+"Melquisedeque: como o vencedor se ajoelha diante do sacerdote e toda vitória é ressignificada pelo Altíssimo"
+
 BIG IDEA
-"O vencedor da guerra se ajoelha diante do sacerdote que abençoa em nome de Deus Altíssimo."
+Toda vitória do crente é ressignificada quando colocada diante do Sacerdote do Deus Altíssimo.
 
-MOVIMENTOS DO TEXTO
-[A]   · Abrão é avisado e resgata Ló com seus 318 servos
-      → A fé age concretamente para socorrer o irmão em desgraça
+PERGUNTA DE TRANSIÇÃO
+Como o vencedor da batalha pode se ajoelhar diante do sacerdote, e o que isso revela sobre toda vitória ressignificada?
 
-[B]   · Abrão volta vitorioso da matança dos reis
-      → A vitória que vem de Deus precisa de palavras que a interpretem
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais o sacerdócio de Melquisedeque ressignifica a vitória de Abrão e aponta para o Sumo Sacerdote eterno.
 
-◉ [X]   · MELQUISEDEQUE, REI DE SALÉM E SACERDOTE DO DEUS ALTÍSSIMO, O ABENÇOA
-      → Há um sacerdócio anterior e superior que ressignifica toda vitória
+---
 
-[B']  · Abrão dá o dízimo de tudo a Melquisedeque
-      → A vitória se entrega ao sacerdote para que retorne como bênção
+MOVIMENTOS DO SERMÃO
 
-[A']  · Abrão recusa os despojos do rei de Sodoma
-      → Quem foi abençoado pelo Altíssimo não precisa enriquecer-se com o mundo
+I. AGINDO CONCRETAMENTE PARA SOCORRER O IRMÃO CAÍDO (A ↔ A')
+§ Indicação Textual: Gn 14.13-16 (Abrão arma seus 318 servos e resgata Ló) encontra eco em 14.21-24 (Abrão recusa os despojos do rei de Sodoma).
+§ Exegese: O termo "chanikim" (servos treinados) ocorre apenas aqui no AT — Abrão tinha discípulos militares. O número 318 é numericamente preciso, sinal de obediência cuidadosa.
+§ Teologia Reformada: A caridade fraternal (CFW XXVI) impele o crente a socorrer o irmão em necessidade, mesmo quando ele esteja fora do dever pela má escolha.
+§ Aplicação: Você corre em socorro dos irmãos que caíram em seus próprios cativeiros? A fé age concretamente.
 
-EIXO CRISTOLÓGICO
-Hb 7:24–25: Cristo "tem sacerdócio perpétuo" — Melquisedeque é sombra do Sumo Sacerdote eterno.`;
+II. RECEBENDO PALAVRAS QUE INTERPRETAM A VITÓRIA (B ↔ B')
+§ Indicação Textual: Gn 14.17 (encontro com os reis no vale de Savé) e 14.20 (Abrão dá o dízimo de tudo).
+§ Exegese: O "vale do Rei" é onde duas teologias se encontram: o rei de Sodoma vem oferecer o mundo; Melquisedeque vem oferecer pão, vinho e bênção do Altíssimo. A vitória precisa de interpretação.
+§ Teologia Reformada: Toda vitória cristã deve ser oferecida ao Senhor em adoração, sob pena de virar soberba. O dízimo é confissão de que tudo procede de Deus (CFW XXI).
+§ Aplicação: Suas vitórias têm sido devolvidas a Deus em adoração? A vitória não consagrada vira armadilha.
+
+III. RECEBENDO BÊNÇÃO DO SACERDOTE DO DEUS ALTÍSSIMO — CENTRO X
+§ Indicação Textual: Gn 14.18-20 — Melquisedeque, rei de Salém e sacerdote do El Elyon, traz pão e vinho e abençoa Abrão.
+§ Exegese: "Malki-Tsedeq" significa "rei de justiça"; "Salém" antecipa "Shalom" (paz). Ele aparece sem genealogia, prefigurando o sacerdócio eterno (Hb 7.3). O pão e o vinho antecipam a Eucaristia.
+§ Teologia Reformada: A CFW VIII.1 ensina que Cristo é Mediador único, profeta, sacerdote e rei. Melquisedeque é tipo do Sacerdote eterno cuja ordem supera Levi.
+§ Aplicação: Você se ajoelha diante do Sumo Sacerdote? Toda vitória da vida cristã pertence ao altar de Cristo.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+Melquisedeque é o ponto-chave da cristologia do Antigo Testamento. Hebreus 7 desenvolve longamente como Cristo é Sacerdote "segundo a ordem de Melquisedeque" — eterno, sem sucessão, rei de justiça e paz. O pão e o vinho que Melquisedeque oferece prefiguram a Ceia do Senhor. Toda vitória da igreja é ressignificada quando trazida diante do verdadeiro Melquisedeque, Jesus Cristo, que intercede continuamente por nós (Hb 7.25). A ele entregamos tudo, e dele recebemos a bênção do Altíssimo.
+
+DOUTRINA CENTRAL
+Cristo é o Sacerdote eterno segundo a ordem de Melquisedeque, e toda vitória do crente é ressignificada quando colocada sob sua bênção.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Cada culto é o vale de Savé: trazemos nossas vitórias e recebemos o pão e o vinho do Sumo Sacerdote.
+▸ Para as Famílias: Ensine os filhos a devolver toda vitória a Deus, pois nada veio das próprias mãos.
+▸ Para o Discípulo: Recuse os despojos do mundo; o Altíssimo é a única recompensa que basta.
+
+CONCLUSÃO
+O vencedor se ajoelha. Essa é a teologia da vitória cristã. Abrão venceu, mas só sua vitória teve sentido quando colocada diante do sacerdote do Altíssimo. Em Cristo, o verdadeiro Melquisedeque, recebemos pão e vinho — a Ceia que ressignifica todas as nossas batalhas. Não te enriqueças com os despojos do mundo; o Altíssimo te basta. Toda vitória que escapar ao altar se tornará a próxima derrota. Mas toda vitória entregue ao Sumo Sacerdote vira bênção eterna. Amém.`;
 
   if (d.dia === 19) return `PARA PREGAR · Gênesis 15:1–21
 
+---
+
+TÍTULO DO SERMÃO
+"A Aliança Selada pelo Deus que Passa Sozinho: porque a promessa se firma pela fidelidade divina enquanto o crente dorme"
+
 BIG IDEA
-"A aliança de Deus se firma por sua própria fidelidade enquanto Abrão dorme."
+A aliança da graça se firma pela fidelidade unilateral de Deus que passa sozinho entre os animais partidos enquanto Abrão dorme.
 
-MOVIMENTOS DO TEXTO
-[A]   · "Não temas, Abrão; eu sou o teu escudo, o teu galardão"
-      → Onde Deus se dá como recompensa, não há razão para temer
+PERGUNTA DE TRANSIÇÃO
+Por que a aliança de Deus se firma pela sua própria fidelidade enquanto Abrão dorme, sem nada acrescentar à promessa?
 
-[B]   · Abrão crê e isso lhe é imputado como justiça
-      → A justiça que conta diante de Deus é a recebida pela fé
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as RAZÕES pelas quais a aliança da graça depende inteiramente da fidelidade do Deus que assume sozinho a sanção do pacto.
 
-◉ [X]   · PROFECIA DOS 400 ANOS NO EGITO — A HISTÓRIA ANTECIPADA POR DEUS
-      → Deus traça os séculos para o seu povo antes que o povo exista
+---
 
-[B']  · O SENHOR passa entre os animais partidos como labareda
-      → Deus assume sozinho o ônus da aliança que poderia condenar o homem
+MOVIMENTOS DO SERMÃO
 
-[A']  · A promessa da terra é selada com fronteiras concretas
-      → A palavra de Deus desce ao detalhe geográfico para confirmar a fé
+I. PORQUE DEUS SE DÁ COMO ESCUDO E GALARDÃO DO CRENTE (A ↔ A')
+§ Indicação Textual: Gn 15.1-6 ("não temas... eu sou o teu escudo... Abrão creu") e 15.18b-21 (promessa da terra com fronteiras concretas) emolduram o texto.
+§ Exegese: O termo "magen" (escudo) e "sakhar" (galardão) são raros nesta combinação. Deus se oferece a si mesmo como recompensa antes da terra. O verbo "he'emin" (creu) é a primeira menção de "fé" em Gênesis.
+§ Teologia Reformada: A justificação pela fé (CFW XI) tem aqui sua raiz veterotestamentária. Paulo cita Gn 15.6 como prova de que a justiça vem pela fé (Rm 4.3).
+§ Aplicação: Você descansa em Deus como seu próprio galardão, ou ainda busca recompensas alheias a ele? O Senhor é a herança.
 
-EIXO CRISTOLÓGICO
-Rm 4:3: "creu Abraão a Deus, e isso lhe foi imputado como justiça" — a fé em Cristo recebe a mesma imputação.`;
+II. PORQUE DEUS ASSUME SOZINHO O ÔNUS DA ALIANÇA (B ↔ B')
+§ Indicação Textual: Gn 15.7-11 (sacrifício dos animais partidos) e 15.17-18a (Deus passa como labareda entre as metades).
+§ Exegese: O rito antigo da aliança (berit) exigia que ambas as partes passassem entre os animais, invocando sobre si maldição similar caso quebrassem o pacto. Mas aqui só Deus passa — auto-maldição unilateral.
+§ Teologia Reformada: A aliança da graça (CFW VII.3) é monergista em seu fundamento: Deus se compromete a cumprir ambos os lados. Cristo carregou a maldição que cabia a nós (Gl 3.13).
+§ Aplicação: Você ainda tenta merecer o que só Deus pode dar? A aliança é selada pela fidelidade dele, não pela sua.
+
+III. ANTECIPANDO TODA A HISTÓRIA NO CENTRO DA REVELAÇÃO — CENTRO X
+§ Indicação Textual: Gn 15.12-16 — sono profundo, escuridão, profecia dos 400 anos no Egito e do êxodo.
+§ Exegese: "Tardemah" (sono profundo) é o mesmo termo de Gn 2.21 (Adão). Deus age enquanto o homem dorme. A profecia detalha séculos: cativeiro, libertação, posse da terra, justiça plena ("a iniquidade dos amorreus não está ainda completa").
+§ Teologia Reformada: A presciência e decretos (CFW III) abrangem todos os tempos. Deus não apenas prevê: ele ordena e executa a história redentora.
+§ Aplicação: Você confia que Deus já escreveu o capítulo final da sua vida? Repouse no sono do justo: ele opera enquanto dormimos.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A aliança unilateral de Gênesis 15 é cumprida em Cristo no Calvário. Onde Deus passou sozinho entre os animais partidos, prometendo carregar a maldição se a aliança fosse quebrada — em Cristo essa maldição foi de fato carregada. O Filho assumiu sobre si o juízo que era nosso (Gl 3.13). E a justificação de Abrão pela fé prefigura nossa justificação pela fé em Cristo (Rm 4.22-25). Tudo o que Deus prometeu, Deus mesmo cumpriu em seu Filho.
+
+DOUTRINA CENTRAL
+A aliança da graça é selada pela fidelidade unilateral de Deus que, em Cristo, assume e cumpre tudo o que prometeu aos seus.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: A segurança da igreja não está na sua fidelidade, mas na fidelidade do Senhor da aliança.
+▸ Para as Famílias: Ensine que a salvação dos seus filhos depende da graça soberana, não do esforço humano.
+▸ Para o Discípulo: Não tente passar entre as metades; somente Cristo passou — descanse nele.
+
+CONCLUSÃO
+Abrão dorme. E enquanto ele dorme, Deus passa. Eis o evangelho em uma cena: a salvação é obra unilateral de Deus enquanto o homem está incapaz. Em Cristo, a labareda do juízo passou sobre o Filho, e a aliança foi selada com o sangue eterno. Não tente contribuir com a sua fidelidade para o pacto que Deus mesmo selou. Apenas creia — e te seja imputado como justiça. Descanse, porque o Senhor não dorme. Em Cristo, a promessa é sim e amém. Amém.`;
 
   if (d.dia === 20) return `PARA PREGAR · Gênesis 16:1–16
 
+---
+
+TÍTULO DO SERMÃO
+"El Roí: como Deus se revela como aquele que vê os esquecidos quando a fé tenta apressar a promessa"
+
 BIG IDEA
-"Onde a fé tenta apressar a promessa, Deus revela ser aquele que vê os esquecidos."
+Quando a fé tenta apressar a promessa por meios humanos, Deus se revela como aquele que vê e socorre os esquecidos.
 
-MOVIMENTOS DO TEXTO
-[A]   · Sarai entrega Hagar a Abrão como concubina
-      → Tentar realizar a promessa por meios humanos gera conflitos humanos
+PERGUNTA DE TRANSIÇÃO
+Como Deus se revela como aquele que vê os esquecidos exatamente quando a fé tenta apressar a promessa por meios humanos?
 
-[B]   · Hagar despreza Sarai; Sarai oprime; Hagar foge
-      → Atalhos da carne sempre revelam relações feridas
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais o Deus que vê (El Roí) encontra Hagar no deserto e revela sua graça também aos marginalizados pela impaciência humana.
 
-◉ [X]   · O ANJO DO SENHOR ENCONTRA HAGAR JUNTO À FONTE NO DESERTO
-      → Deus busca a serva esquecida antes que ela busque por ele
+---
 
-[B']  · O anjo promete multiplicar os descendentes de Hagar
-      → A graça alcança também aqueles que estão fora da linha eleita
+MOVIMENTOS DO SERMÃO
 
-[A']  · Hagar chama o SENHOR de "El Roí" — o Deus que me vê
-      → Conhecer a Deus como o que nos vê transforma o deserto em encontro
+I. TENTANDO REALIZAR A PROMESSA PELOS MEIOS DA CARNE (A ↔ A')
+§ Indicação Textual: Gn 16.1-3 (Sarai entrega Hagar a Abrão) e 16.13-16 (Hagar dá nome a Deus; Ismael nasce) emolduram o texto pela presença da serva.
+§ Exegese: O verbo "shama" (ouviu) em "Abrão deu ouvidos à voz de Sarai" ecoa Gn 3.17 ("deste ouvidos à voz de tua mulher"). A repetição é deliberada: o pecado de Adão se repete em Abrão.
+§ Teologia Reformada: A doutrina do pecado de presunção (CFW XV) mostra que tentar realizar promessas divinas por meios humanos é forma sutil de descrença.
+§ Aplicação: Você tem usado meios da carne para garantir o que só Deus pode dar? Esses atalhos geram Ismaéis duradouros.
 
-EIXO CRISTOLÓGICO
-Jo 1:48: "antes que Filipe te chamasse, eu te vi" — em Cristo, o Deus que vê se faz o Deus que chama.`;
+II. PRODUZINDO RELAÇÕES FERIDAS PELA IMPACIÊNCIA (B ↔ B')
+§ Indicação Textual: Gn 16.4-6 (Hagar despreza, Sarai oprime, Hagar foge) e 16.11-12 (promessa sobre Ismael).
+§ Exegese: O verbo "qalal" (desprezar) e "anah" (oprimir) revelam a fratura. A fuga ao deserto é sintoma do colapso doméstico que sempre acompanha o pecado coletivo.
+§ Teologia Reformada: As consequências do pecado se estendem socialmente (CFW VI.6). O lar fora da ordem divina sempre produz feridas.
+§ Aplicação: Suas relações estão sofrendo por escolhas precipitadas? A graça pode restaurar, mas as cicatrizes ensinam.
+
+III. ENCONTRANDO O ESQUECIDO NO DESERTO — CENTRO X
+§ Indicação Textual: Gn 16.7-10 — "achou-a o anjo do SENHOR junto a uma fonte... volta para a tua senhora".
+§ Exegese: O "Mal'akh YHWH" (anjo do SENHOR) é a primeira aparição teofânica desta figura — frequentemente identificada como o Cristo pré-encarnado. Hagar é a primeira pessoa nas Escrituras a dar nome a Deus: "El Roí" (Deus que me vê).
+§ Teologia Reformada: A graça comum e o cuidado providencial (CFW V.7) alcançam até os que estão fora da linha eleita. Deus vê os esquecidos e responde.
+§ Aplicação: Você se sente esquecido no seu deserto? El Roí te vê. Volte para o lugar de obediência, sabendo que ele te acompanha.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+O anjo do SENHOR que encontra Hagar prefigura Cristo, que veio buscar e salvar o que se havia perdido (Lc 19.10). Como Hagar foi vista no deserto, em Cristo somos vistos em nossa miséria espiritual. Jesus disse a Natanael: "antes que Filipe te chamasse, eu te vi" (Jo 1.48). El Roí encarnado é o Cristo que conhece cada um pelo nome, busca cada ovelha perdida, e transforma o deserto da rejeição em fonte de revelação. A história de Hagar lembra que a graça alcança até os filhos do esforço humano.
+
+DOUTRINA CENTRAL
+Deus se revela como El Roí, o Deus que vê os esquecidos, alcançando com sua graça até os que ficaram à margem das estratégias humanas.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: A igreja deve enxergar os Hagares do nosso tempo — os marginalizados, os esquecidos.
+▸ Para as Famílias: Não produza Ismaéis pela impaciência; espere o tempo de Deus.
+▸ Para o Discípulo: Volte ao lugar de obediência sabendo que o Deus que vê está com você.
+
+CONCLUSÃO
+"Tu és o Deus que me vê". Eis o nome dado por uma escrava no deserto. Em Cristo, todo esquecido é encontrado. Toda margem é alcançada. Toda lágrima é vista. Você que carrega o peso de escolhas precipitadas, ouça: El Roí ainda fala. Volte ao lugar de obediência, e descanse no Deus que conhece sua dor. A graça que alcançou Hagar alcança você. Em Cristo, ninguém é invisível. Amém.`;
 
   if (d.dia === 21) return `PARA PREGAR · Gênesis 17:1–27
 
+---
+
+TÍTULO DO SERMÃO
+"A Aliança Gravada na Carne: como a circuncisão sela a promessa para gerações que ainda virão receber a herança"
+
 BIG IDEA
-"O sinal da circuncisão grava a aliança na carne para gerações que ainda virão."
+A aliança da graça é selada na carne com sinal visível para gravar a herança nas gerações que ainda virão.
 
-MOVIMENTOS DO TEXTO
-[A]   · "Eu sou o Deus Todo-Poderoso" — Abrão se torna Abraão
-      → A aliança redefine identidade pela palavra do Senhor
+PERGUNTA DE TRANSIÇÃO
+De que forma o sinal da circuncisão grava a aliança na carne para gerações que ainda virão receber a herança?
 
-[B]   · A circuncisão é estabelecida como sinal da aliança
-      → A aliança requer marcas concretas no corpo do povo
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais o sinal da circuncisão grava na carne a aliança que se estende às gerações futuras.
 
-◉ [X]   · SARAI SE TORNA SARA — A PROMESSA DE ISAQUE É REAFIRMADA
-      → A aliança se cumpre na esposa estéril, prova de graça soberana
+---
 
-[B']  · Abraão recebe a promessa do filho com riso e fé
-      → Diante do impossível, a fé ri e ainda assim obedece
+MOVIMENTOS DO SERMÃO
 
-[A']  · Abraão circuncida toda a sua casa no mesmo dia
-      → A obediência da fé é integral, imediata e familiar
+I. REDEFININDO A IDENTIDADE PELA PALAVRA SOBERANA (A ↔ A')
+§ Indicação Textual: Gn 17.1-8 (mudança de Abrão para Abraão; promessa de pai de muitas nações) e 17.23-27 (Abraão circuncida toda a sua casa).
+§ Exegese: "El Shaddai" (Deus Todo-Poderoso) aparece como nome de aliança. A mudança de "Avram" (pai exaltado) para "Avraham" (pai de multidão) reescreve a identidade pela promessa.
+§ Teologia Reformada: A aliança da graça (CFW VII) inclui mudança de identidade: o pecador chamado se torna novo homem pela graça. O nome novo prefigura a regeneração.
+§ Aplicação: Você ainda vive pelo seu nome velho, ou pela identidade que Deus te conferiu em Cristo?
 
-EIXO CRISTOLÓGICO
-Cl 2:11: "fostes circuncidados... no despojar do corpo da carne, na circuncisão de Cristo" — o sinal aponta para a obra interior do Espírito.`;
+II. GRAVANDO O SINAL DA ALIANÇA NA CARNE (B ↔ B')
+§ Indicação Textual: Gn 17.9-14 (estabelecimento da circuncisão; "todo macho de oito dias") e 17.17-22 (promessa de Isaque com nome dado por Deus).
+§ Exegese: O termo "mul" (circuncidar) literalmente significa cortar; é sinal radical da pertença ao povo de Deus. A aplicação a recém-nascidos mostra que a aliança alcança gerações antes da fé pessoal.
+§ Teologia Reformada: A CFW XXVIII trata do batismo como sinal e selo da nova aliança, sucessor da circuncisão (Cl 2.11-12). O batismo infantil tem aqui sua raiz vétero-testamentária.
+§ Aplicação: Você reconhece o batismo de seus filhos como sinal da aliança? Eduque-os à luz da promessa selada na carne.
+
+III. CONFIRMANDO A PROMESSA NA ESPOSA ESTÉRIL — CENTRO X
+§ Indicação Textual: Gn 17.15-16 — Sarai se torna Sara; "abençoá-la-ei... reis de povos sairão dela".
+§ Exegese: A mudança "Sarai" para "Sarah" (ambos significam "princesa") parece sutil, mas sinaliza nova vocação. A bênção dupla — multiplicação e realeza — antecipa Davi e Cristo.
+§ Teologia Reformada: A eleição soberana inclui a esposa estéril como instrumento da promessa. A graça opera onde a natureza falha (CFW III, X).
+§ Aplicação: Onde tua esterilidade encontra a promessa? Confie que a graça reescreve identidades e gera vida onde havia morte.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A circuncisão da carne aponta para a "circuncisão de Cristo, no despojar do corpo da carne" (Cl 2.11) — sua morte na cruz, em que o velho homem foi cortado. O batismo cristão é o novo sinal da aliança, sucessor da circuncisão. Em Cristo, a aliança é selada não em pele, mas em sangue derramado para muitas gerações. Sara prefigura a Igreja, estéril por natureza, fecunda pela promessa. Cristo é o Isaque maior, o filho da promessa nascido pelo poder de Deus.
+
+DOUTRINA CENTRAL
+Deus sela sua aliança com sinais concretos que gravam na carne e na história a promessa que alcança gerações.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Honre os sinais da aliança — batismo e Ceia — como meios de graça que gravam a promessa.
+▸ Para as Famílias: Apresente seus filhos diante do Senhor; a aliança alcança o lar inteiro.
+▸ Para o Discípulo: Sua identidade está em Cristo, não no nome velho.
+
+CONCLUSÃO
+A aliança não é só palavra: é sinal na carne. Em Abraão, foi a circuncisão; em Cristo, é o batismo. Em ambos, a graça grava a promessa nas gerações. Você é parte de uma aliança que atravessa séculos. Sua casa não está sozinha. A herança alcança seus filhos e os filhos deles. Em Cristo, o sinal eterno foi gravado no próprio Filho, e em nós pelo Espírito. Viva sob o sinal. Educa os teus à luz da promessa. Amém.`;
 
   if (d.dia === 22) return `PARA PREGAR · Gênesis 18:1–15
 
+---
+
+TÍTULO DO SERMÃO
+"Há Algo Difícil Demais para o Senhor: porque o riso da incredulidade cede ao riso da promessa cumprida no tempo de Deus"
+
 BIG IDEA
-"Diante do impossível, o riso da incredulidade encontra o riso da promessa cumprida."
+Diante do impossível, o riso da incredulidade dá lugar ao riso da promessa cumprida no tempo determinado por Deus.
 
-MOVIMENTOS DO TEXTO
-[A]   · O SENHOR aparece a Abraão sob os carvalhos de Manre
-      → Deus visita as tendas comuns para anunciar coisas extraordinárias
+PERGUNTA DE TRANSIÇÃO
+Por que, diante do impossível, o riso da incredulidade acaba dando lugar ao riso da promessa cumprida no tempo de Deus?
 
-[B]   · Abraão hospeda os visitantes com generosidade
-      → A hospitalidade é solo onde se ouvem promessas divinas
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as RAZÕES pelas quais a pergunta divina "há algo difícil demais para o SENHOR?" transforma o riso descrente em riso da fé.
 
-◉ [X]   · "HAVERÁ COISA DEMASIADO DIFÍCIL PARA O SENHOR?"
-      → A pergunta central da fé é se Deus pode o que prometeu
+---
 
-[B']  · Sara ri por dentro diante da promessa do filho
-      → A descrença muitas vezes ri silenciosamente onde os ouvidos divinos escutam
+MOVIMENTOS DO SERMÃO
 
-[A']  · O SENHOR insiste: "no tempo determinado tornarei a ti"
-      → A promessa não recua diante do riso; ela vence pelo tempo divino
+I. PORQUE DEUS VISITA AS TENDAS COMUNS COM PROMESSAS EXTRAORDINÁRIAS (A ↔ A')
+§ Indicação Textual: Gn 18.1-8 (teofania sob os carvalhos de Manre) e 18.13-15 (o SENHOR confronta Sara sobre o riso) emolduram a perícope.
+§ Exegese: "Wayyera" (apareceu) abre a perícope com o mesmo verbo de 12.7 — Deus continua aparecendo ao patriarca. A hospitalidade beduína de Abraão é exemplar (corre, prepara, serve).
+§ Teologia Reformada: A doutrina dos meios ordinários (CFW XIV) mostra que Deus opera por situações comuns. A vida cristã é tenda hospitaleira onde Deus se revela.
+§ Aplicação: Sua casa é solo de hospitalidade onde Deus pode aparecer? A graça visita tendas abertas.
 
-EIXO CRISTOLÓGICO
-Lc 1:37: "para Deus nada é impossível" — a mesma palavra que abriu o ventre de Sara concebeu Cristo em Maria.`;
+II. PORQUE A HOSPITALIDADE GENEROSA É SOLO DA REVELAÇÃO (B ↔ B')
+§ Indicação Textual: Gn 18.6-8 (preparativos generosos) e 18.9-12 (Sara ri por dentro).
+§ Exegese: Abraão usa três medidas de farinha — quantidade extravagante. Sara escuta da tenda; seu riso "beqirbah" (no íntimo) revela que Deus ouve até o sussurro do coração descrente.
+§ Teologia Reformada: A onisciência divina (CFW II.1) alcança o íntimo do coração. Nenhum riso silencioso escapa ao Senhor.
+§ Aplicação: Seu riso silencioso de descrença é ouvido por Deus. Confesse-o e creia.
+
+III. CONFRONTANDO TODA IMPOSSIBILIDADE COM A PERGUNTA CENTRAL — CENTRO X
+§ Indicação Textual: Gn 18.14 — "há, por acaso, alguma cousa demasiada difícil ao SENHOR?" — é a pergunta-síntese.
+§ Exegese: "Hayipale meYHWH davar?" — a palavra "pala" (maravilhoso, extraordinário) ressoa em Lc 1.37 ("para Deus nada é impossível", à Maria). A mesma promessa, o mesmo Deus.
+§ Teologia Reformada: A onipotência divina (CFW II.1) garante que a promessa não pode falhar. O impossível humano é o terreno comum da graça soberana.
+§ Aplicação: Que impossibilidade tem feito você rir descrente? Reapresente-a à pergunta divina: há algo difícil demais para o SENHOR?
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A mesma palavra que abriu o ventre de Sara concebeu Cristo em Maria. O anjo Gabriel quase cita Gênesis 18 ao dizer a Maria: "para Deus nada é impossível" (Lc 1.37). Isaque, filho da promessa nascido pelo poder de Deus, é tipo de Cristo, o Filho da promessa nascido de virgem pelo Espírito. O riso descrente de Sara antecipa o riso de alegria diante do túmulo vazio: o impossível humano é o terreno comum do Deus que ressuscita os mortos.
+
+DOUTRINA CENTRAL
+Não há impossibilidade que detenha a promessa divina, porque o Senhor mesmo é o cumpridor do que prometeu.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Cultive hospitalidade; é solo onde Deus revela coisas grandiosas.
+▸ Para as Famílias: Não despreze o que parece impossível para sua casa; o Deus de Abraão ainda visita.
+▸ Para o Discípulo: Apresente seu impossível à pergunta: "Há algo difícil demais para o SENHOR?"
+
+CONCLUSÃO
+Sara riu — descrente. Depois riu — alegre. Entre os dois risos está a pergunta que muda tudo: "há algo difícil demais para o SENHOR?" Em Cristo, recebemos a resposta definitiva: não há. O Deus que ressuscitou Jesus dos mortos é o mesmo que abre ventres estéreis, restaura casamentos, transforma corações. Apresenta tua impossibilidade. O tempo determinado virá. E o teu riso descrente se converterá em riso de alegria. Amém.`;
 
   if (d.dia === 23) return `PARA PREGAR · Gênesis 18:16–33
 
+---
+
+TÍTULO DO SERMÃO
+"O Juiz de Toda a Terra Fará Justiça: como Deus abre o coração do justo para interceder antes do juízo"
+
 BIG IDEA
-"Onde Deus julga, ele primeiro abre o coração do justo para interceder."
+Antes de julgar, Deus abre o coração do justo para interceder e participar de seus propósitos redentores.
 
-MOVIMENTOS DO TEXTO
-[A]   · O SENHOR revela a Abraão o juízo sobre Sodoma
-      → A amizade com Deus inclui partilha de seus propósitos
+PERGUNTA DE TRANSIÇÃO
+Como Deus, antes de julgar, abre o coração do justo para interceder e participar dos seus próprios propósitos?
 
-[B]   · Abraão se aproxima e clama por justiça aos justos
-      → A intercessão nasce do encontro com o Deus justo
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais o Senhor envolve o seu amigo na intercessão antes de executar o juízo sobre Sodoma.
 
-◉ [X]   · "NÃO FARÁ JUSTIÇA O JUIZ DE TODA A TERRA?"
-      → No coração da súplica está a confiança na justiça do próprio Juiz
+---
 
-[B']  · A negociação desce de cinquenta a dez justos
-      → A intercessão persiste enquanto a misericórdia ainda dá espaço
+MOVIMENTOS DO SERMÃO
 
-[A']  · O SENHOR vai embora; Abraão volta ao seu lugar
-      → O intercessor entrega a causa nas mãos do Juiz e descansa
+I. PARTILHANDO COM O JUSTO OS SEUS PROPÓSITOS (A ↔ A')
+§ Indicação Textual: Gn 18.16-22 (o SENHOR revela a Abraão seu plano sobre Sodoma) e 18.33 (o SENHOR partiu, Abraão voltou para o seu lugar).
+§ Exegese: "Encobrirei eu a Abraão o que estou para fazer?" (v.17) é declaração teológica densa. O verbo "kissah" (encobrir) é negado: Deus se autocomunica ao amigo (cf. Tg 2.23).
+§ Teologia Reformada: A doutrina da amizade com Deus (CFW XVI; Jo 15.15) ensina que o crente é admitido aos propósitos divinos pela palavra revelada.
+§ Aplicação: Você se aprofunda na Palavra para conhecer os propósitos de Deus, ou se contenta com pedidos pessoais? A amizade busca conhecer.
 
-EIXO CRISTOLÓGICO
-1Tm 2:5: "há um só mediador entre Deus e os homens, Cristo Jesus" — toda intercessão se cumpre no Filho que intercede sempre.`;
+II. APROXIMANDO-SE PARA INTERCEDER COM REVERÊNCIA (B ↔ B')
+§ Indicação Textual: Gn 18.23-24 (Abraão se aproxima e clama) e 18.27-32 (a intercessão desce de cinquenta a dez justos).
+§ Exegese: "Wayyiggash" (aproximou-se) é termo cultual — usado para o sacerdote que se aproxima do altar. A persistência humilde ("pó e cinza", v.27) é o tom da verdadeira intercessão.
+§ Teologia Reformada: A oração eficaz (CFW XXI.1) requer reverência, persistência e fé. O Catecismo Maior ensina a perseverar até receber resposta segundo a vontade divina.
+§ Aplicação: Sua intercessão tem reverência e persistência? Aproxime-se como Abraão, sabendo de quem é súdito.
+
+III. CONFIANDO NA JUSTIÇA DO PRÓPRIO JUIZ — CENTRO X
+§ Indicação Textual: Gn 18.25 — "longe de ti fazer tal cousa... não fará justiça o Juiz de toda a terra?" — é o eixo teológico do texto.
+§ Exegese: "Hashofet kol-ha'arets" (o Juiz de toda a terra) é título soberano. A intercessão repousa não em barganha, mas na confiança no caráter justo do próprio Deus.
+§ Teologia Reformada: A justiça divina (CFW II.1) é atributo essencial. Deus não pode ser injusto; sua justiça e sua misericórdia se encontram em Cristo (Rm 3.26).
+§ Aplicação: Confie no caráter justo do Juiz. A intercessão começa pela certeza de que Deus é fiel à sua própria natureza.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+Abraão prefigura Cristo, o único Mediador (1Tm 2.5), que intercede por seu povo diante do Pai (Hb 7.25). A pergunta "não fará justiça o Juiz de toda a terra?" é respondida na cruz: ali, justiça e misericórdia se encontram. O justo Juiz envia o Justo a morrer pelos injustos (1Pe 3.18). Onde Abraão intercedeu por dez, Cristo intercede pelos que ele mesmo redimiu. Sua intercessão é sempre eficaz, sempre baseada no seu próprio sangue derramado.
+
+DOUTRINA CENTRAL
+O Deus que é Juiz justo abre o coração dos seus amigos para interceder, prefigurando a intercessão eterna de Cristo.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: A igreja é comunidade intercessora; ore pelas cidades onde Deus a colocou.
+▸ Para as Famílias: Pais, intercedam por seus filhos e por suas cidades; a oração move o Juiz misericordioso.
+▸ Para o Discípulo: Aproxime-se de Deus com reverência e persistência, confiando no caráter justo do Juiz.
+
+CONCLUSÃO
+"Não fará justiça o Juiz de toda a terra?" Sim — fará. E o fará em Cristo. Onde o juízo era nosso, ele o recebeu em nosso lugar. Onde a misericórdia parecia impossível, ele a derramou pela cruz. Você, amigo de Deus, foi admitido aos propósitos eternos. Intercede pelas Sodomas do nosso tempo. Aproxime-se com reverência. O Juiz é justo, e o Mediador é fiel. Em Cristo, toda intercessão se cumpre. Amém.`;
 
   if (d.dia === 24) return `PARA PREGAR · Gênesis 19:1–11
 
+---
+
+TÍTULO DO SERMÃO
+"Sodoma: porque a cidade que devora seus hóspedes prova em sua própria conduta que merece o juízo"
+
 BIG IDEA
-"A cidade que devora hóspedes prova que merece o juízo que recebe."
+A cidade que devora seus hóspedes prova em sua própria conduta que o juízo de Deus é evidente e justo.
 
-MOVIMENTOS DO TEXTO
-[A]   · Dois anjos chegam a Sodoma; Ló insiste em hospedá-los
-      → Ainda há vestígios de bondade onde há contato com a promessa
+PERGUNTA DE TRANSIÇÃO
+Por que a cidade que devora seus hóspedes prova, em sua própria conduta, que merece o juízo que enfim recebe?
 
-◉ [X]   · A CIDADE INTEIRA CERCA A CASA EXIGINDO VIOLAR OS HÓSPEDES
-      → Onde a corrupção é universal, o juízo se torna justiça evidente
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as RAZÕES pelas quais a conduta de Sodoma se constitui em testemunho irrefutável da justiça do juízo divino.
 
-[A']  · Os anjos ferem de cegueira os que cercavam a porta
-      → A cegueira física antecipa a cegueira moral que precipita o juízo
+---
 
-EIXO CRISTOLÓGICO
-2Pe 2:6–7: Sodoma "fica como exemplo aos que vivem impiamente" — Cristo livra o justo da hora da provação.`;
+MOVIMENTOS DO SERMÃO
+
+I. PORQUE AINDA HÁ VESTÍGIOS DE BONDADE ONDE HÁ CONTATO COM A PROMESSA (A)
+§ Indicação Textual: Gn 19.1-3 — Ló se inclina, insiste em hospedar os anjos, prepara banquete e pães asmos.
+§ Exegese: A hospitalidade de Ló ecoa a de Abraão (Gn 18). Mesmo em Sodoma, Ló preserva traços do antigo treinamento patriarcal. O verbo "patsar" (insistir) revela urgência protetora.
+§ Teologia Reformada: A graça preservadora (CFW V.7) opera mesmo sobre os crentes deslocados de seu lugar de fé. Há sinais residuais da aliança em vidas comprometidas.
+§ Aplicação: Mesmo em ambientes hostis, preserve os sinais da fé. A graça opera onde há contato com a promessa.
+
+II. PORQUE A CORRUPÇÃO UNIVERSAL JUSTIFICA O JUÍZO IMINENTE — CENTRO X
+§ Indicação Textual: Gn 19.4-9 — "todo o povo, sem exceção... cercaram a casa... homens, jovens e velhos" — exigem violar os hóspedes.
+§ Exegese: A expressão "miqatseh" (de cada extremidade) e "kol ha'am" (todo o povo) é enfática: nenhuma exceção. O verbo "yada" (conhecer) tem aqui conotação sexual violenta. A perversão é coletiva, geracional e completa.
+§ Teologia Reformada: A doutrina da depravação total (CFW VI) e do juízo justo (CFW XXXIII) ensina que Deus julga quando o pecado se completa. A iniquidade de Sodoma alcançou seu termo.
+§ Aplicação: Onde sua cultura caminha para essa universalidade de corrupção? Ore por arrependimento antes que o juízo se torne inevitável.
+
+III. PORQUE A CEGUEIRA FÍSICA ANTECIPA A CEGUEIRA MORAL FINAL (A')
+§ Indicação Textual: Gn 19.10-11 — os anjos puxam Ló para dentro e ferem os sodomitas de cegueira ("sanverim").
+§ Exegese: "Sanverim" é cegueira sobrenatural (cf. 2Rs 6.18). O detalhe perturbador: mesmo cegos, continuam tentando achar a porta para o pecado. A cegueira física revela a cegueira moral irreversível.
+§ Teologia Reformada: O endurecimento judicial (CFW V.6) é juízo de Deus sobre quem persiste no pecado. A cegueira é sinal escatológico do juízo final.
+§ Aplicação: A persistência no pecado mesmo após sinais claros é prova de endurecimento. Não despreze os avisos da graça.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+Sodoma é, no Novo Testamento, exemplo paradigmático do juízo divino sobre a impiedade (2Pe 2.6; Jd 7). Cristo veio "buscar e salvar o que se havia perdido" (Lc 19.10), mas também é o Juiz justo (At 17.31). Onde Sodoma rejeitou os mensageiros do juízo, Israel rejeitou o próprio Filho. Mas para os que creem, Cristo é o Justo que livra "da hora da provação" (Ap 3.10). A advertência de Sodoma permanece: a graça oferecida pode ser desprezada, e o juízo se torna inevitável.
+
+DOUTRINA CENTRAL
+A justiça do juízo divino é evidente sempre que o pecado se completa e a graça é desprezada.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Anuncie tanto a graça quanto o juízo; ambos pertencem ao evangelho.
+▸ Para as Famílias: Proteja sua casa da cultura sodomítica do nosso tempo; eduque os filhos a discernir.
+▸ Para o Discípulo: Não despreze pequenos sinais de endurecimento; arrependa-se enquanto há tempo.
+
+CONCLUSÃO
+Sodoma cai porque Sodoma merece cair. A cidade que devora seus hóspedes testemunha contra si mesma. Mas há uma cidade que recebeu o seu Hóspede e o crucificou — e ali, paradoxalmente, foi derramada a misericórdia. Em Cristo, o juízo justo encontrou a graça redentora. Não despreze a porta da salvação. Os anjos ainda chamam Ló para sair antes que o fogo desça. Não fique olhando para trás. Em Cristo, há refúgio do juízo vindouro. Amém.`;
 
   if (d.dia === 25) return `PARA PREGAR · Gênesis 19:12–29
 
+---
+
+TÍTULO DO SERMÃO
+"A Misericórdia que Toma pela Mão: como a salvação leva o crente hesitante para fora do juízo iminente"
+
 BIG IDEA
-"Quando o juízo cai, a misericórdia é quem leva o salvo pela mão para fora."
+Quando o juízo cai, a misericórdia divina é quem literalmente leva o salvo pela mão para fora do perigo.
 
-MOVIMENTOS DO TEXTO
-[A]   · Os anjos ordenam a Ló que saia com sua família
-      → A salvação chega pela palavra urgente de quem foi enviado
+PERGUNTA DE TRANSIÇÃO
+De que forma, quando o juízo cai, a misericórdia divina é quem literalmente leva pela mão o salvo para fora do perigo?
 
-◉ [X]   · OS ANJOS PEGAM LÓ PELA MÃO — A MISERICÓRDIA DO SENHOR SOBRE ELE
-      → A salvação é obra de mãos divinas sobre quem hesitaria sozinho
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais a misericórdia do Senhor pega o hesitante pela mão e o conduz para fora do juízo iminente.
 
-[A']  · Sodoma é destruída; a mulher de Ló vira estátua de sal
-      → Olhar para trás é renunciar à graça que ainda conduz adiante
+---
 
-EIXO CRISTOLÓGICO
-Lc 17:32–33: "lembrai-vos da mulher de Ló" — quem busca preservar a vida velha perde a salvação oferecida em Cristo.`;
+MOVIMENTOS DO SERMÃO
+
+I. ENVIANDO A PALAVRA URGENTE QUE CHAMA À SAÍDA (A)
+§ Indicação Textual: Gn 19.12-14 — os anjos ordenam: "sai deste lugar, porque o SENHOR vai destruir a cidade".
+§ Exegese: "Tse mehamaqom" (sai deste lugar) ecoa o "lek lekha" de Abraão (12.1). A salvação sempre começa com um chamado à saída. Os genros de Ló riem — paralelo doloroso ao riso descrente de Sara.
+§ Teologia Reformada: O chamado eficaz (CFW X.1) opera pela palavra com poder do Espírito. O chamado externo é insuficiente; é preciso o trabalho interno.
+§ Aplicação: Você tem ouvido com seriedade a palavra que te chama a sair do mundo? Não a despreze como os genros de Ló.
+
+II. TOMANDO O HESITANTE PELA MÃO COM MISERICÓRDIA — CENTRO X
+§ Indicação Textual: Gn 19.15-22 — "demorando-se ele, pegaram-no pela mão... pela misericórdia que o SENHOR lhe tinha".
+§ Exegese: O verbo "yithmahmah" (demorar-se, hesitar) revela a fraqueza de Ló. Mas o termo decisivo é "behemlat YHWH" — "pela compaixão do SENHOR". A salvação não depende da força do salvo, mas da mão que o agarra.
+§ Teologia Reformada: A graça irresistível (CFW X.1-2) opera não pela força, mas pela vontade soberana de Deus que vence até a hesitação humana. Cristo segura quem ele resgata.
+§ Aplicação: Se você hesita, lembre: Deus pega pela mão. A graça é mais forte que sua fraqueza.
+
+III. EXECUTANDO O JUÍZO E SEPARANDO O QUE OLHA PARA TRÁS (A')
+§ Indicação Textual: Gn 19.23-29 — destruição de Sodoma, transformação da mulher de Ló em estátua de sal, salvação por causa de Abraão.
+§ Exegese: O verbo "natav" (olhar para trás) é deliberadamente posto em paralelo com a fuga. "Wayyizkor Elohim et-Avraham" (Deus se lembrou de Abraão) revela que a salvação de Ló está atada à intercessão patriarcal.
+§ Teologia Reformada: A perseverança dos santos (CFW XVII) exige caminhar para frente. Olhar para trás é negar a graça que conduz adiante (cf. Hb 10.39).
+§ Aplicação: Não olhe para trás. A vida velha não compensa a perda da graça que adiante.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+Cristo é o anjo do SENHOR que toma os seus pela mão e os conduz para fora do juízo (1Ts 1.10). A salvação não é mérito do salvo, mas misericórdia do Salvador. Jesus disse: "lembrai-vos da mulher de Ló" (Lc 17.32) — advertência permanente sobre o perigo de buscar preservar a vida velha. Em Cristo, somos chamados para fora do mundo, agarrados pela mão da graça, conduzidos à pátria celestial. Aquele que começou a boa obra é o mesmo que a completará (Fp 1.6).
+
+DOUTRINA CENTRAL
+A salvação do crente é obra da misericórdia divina que toma o hesitante pela mão e o conduz para fora do juízo.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: A igreja é comunidade de resgatados; estenda a mão aos que ainda hesitam.
+▸ Para as Famílias: Não deixe que sua casa seja arrastada pela vida velha; siga em frente.
+▸ Para o Discípulo: Reconheça sua hesitação e descanse na mão que agarra.
+
+CONCLUSÃO
+"Pegaram-no pela mão". Eis a salvação em uma cena. Não é Ló quem corre rápido o suficiente; é a graça que o agarra. Em Cristo, somos pegos pela mão da misericórdia. Você que hesita, levanta os olhos: a mão divina já te alcançou. Não olhes para trás. A vida velha não vale o preço da graça perdida. Em Cristo, o juízo passou, e a mão que te segura é eterna. Amém.`;
 
   if (d.dia === 26) return `PARA PREGAR · Gênesis 19:30–38
 
+---
+
+TÍTULO DO SERMÃO
+"A Caverna do Salvo sem o Senhor: por que mesmo o livre do juízo cai quando se afasta da presença divina"
+
 BIG IDEA
-"O salvo do juízo cai numa caverna escondida — provando que sem o Senhor ninguém se sustenta."
+Mesmo o salvo do juízo cai numa caverna de vergonha quando se ausenta da presença sustentadora do Senhor.
 
-MOVIMENTOS DO TEXTO
-[A]   · Ló e suas filhas se escondem numa caverna
-      → A salvação física não substitui a obra interior necessária
+PERGUNTA DE TRANSIÇÃO
+Por que mesmo o salvo do juízo cai numa caverna escondida, mostrando que sem o Senhor ninguém se sustenta em pé?
 
-◉ [X]   · AS FILHAS EMBRIAGAM O PAI — ORIGEM VERGONHOSA DE MOABE E AMOM
-      → O pecado oculto gera nações que se voltarão contra o povo da promessa
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as RAZÕES pelas quais a salvação física sem comunhão espiritual conduz o crente à caverna da própria vergonha.
 
-[A']  · Os filhos nascidos darão nome a duas nações inimigas
-      → A herança que escolhemos plantar volta a nós nas gerações futuras
+---
 
-EIXO CRISTOLÓGICO
-Rt 4:13–17: de Moabe vem Rute, mãe de Davi — em Cristo, até as origens vergonhosas são redimidas pela graça.`;
+MOVIMENTOS DO SERMÃO
+
+I. PORQUE A SALVAÇÃO FÍSICA NÃO BASTA SEM A COMUNHÃO COM DEUS (A)
+§ Indicação Textual: Gn 19.30 — "subiu Ló de Zoar e habitou no monte... porque temia ficar em Zoar; e habitou numa caverna".
+§ Exegese: "Wayyeshev" (habitou) e "memarah" (caverna) marcam o contraste com a tenda do peregrino. Ló saiu de Sodoma fisicamente, mas Sodoma não saiu dele. A caverna é símbolo do isolamento da presença divina.
+§ Teologia Reformada: A perseverança requer meios de graça (CFW XVII; XXI). Isolado da palavra, dos sacramentos e da comunhão, o crente cai.
+§ Aplicação: Você está vivendo em "caverna" espiritual — isolado da igreja e da Palavra? A salvação alcançada sem comunhão é frágil.
+
+II. PORQUE O PECADO OCULTO GERA HERANÇAS HOSTIS À PROMESSA — CENTRO X
+§ Indicação Textual: Gn 19.31-36 — as filhas embriagam o pai e concebem dele; nascem Moabe e Amom.
+§ Exegese: O verbo "shakhav" (deitar-se com) ecoa Gn 19.5 (a violência de Sodoma). A semente da cidade destruída ainda opera dentro da família resgatada. A vergonha gerou nações inimigas.
+§ Teologia Reformada: O pecado contagia gerações (CFW VI.6). Moabe e Amom serão por séculos opositores de Israel — herança visível de uma noite escondida.
+§ Aplicação: Pecados privados produzem consequências públicas e geracionais. Não subestime a semente que planta.
+
+III. PORQUE A HERANÇA PLANTADA VOLTA EM GERAÇÕES FUTURAS (A')
+§ Indicação Textual: Gn 19.37-38 — "este é o pai dos moabitas... pai dos filhos de Amom até o dia de hoje".
+§ Exegese: A frase "até o dia de hoje" mostra a perenidade do erro. Mas, paradoxalmente, de Moabe virá Rute (Rt 1.4), bisavó de Davi e ancestral de Cristo.
+§ Teologia Reformada: A graça soberana (CFW III) pode redimir as origens mais vergonhosas. Onde abundou o pecado, superabundou a graça (Rm 5.20).
+§ Aplicação: Mesmo as feridas geracionais podem ser tocadas pela graça. Em Cristo, a vergonha não tem última palavra.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A genealogia de Jesus (Mt 1) inclui Rute, a moabita — descendente desta caverna vergonhosa. Em Cristo, as origens mais escandalosas são redimidas. O Filho do Homem nasceu numa linhagem que inclui Tamar, Raabe, Rute, Bate-Seba. Onde Ló caiu, Cristo se levantou. Onde a caverna escondeu o pecado, o túmulo aberto proclamou a redenção. Em Cristo, ninguém é definido por sua origem, mas pela sua nova vida. A graça vai mais fundo que qualquer caverna.
+
+DOUTRINA CENTRAL
+Sem comunhão com Deus, mesmo o salvo do juízo cai; mas a graça soberana pode redimir até as heranças mais vergonhosas em Cristo.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Cuide para que os salvos do mundo permaneçam em comunhão; isolamento é a antessala da queda.
+▸ Para as Famílias: Examine as heranças vergonhosas; em Cristo elas podem ser redimidas.
+▸ Para o Discípulo: Não habite cavernas; viva em luz, em comunhão, sob a palavra.
+
+CONCLUSÃO
+Ló saiu de Sodoma, mas Sodoma o seguiu até a caverna. A salvação física não substituiu a fragilidade espiritual. Mas a história não termina ali. De Moabe veio Rute. De Rute veio Davi. De Davi veio Cristo. Em Cristo, a graça desceu até a caverna e resgatou a linhagem da vergonha. Sai da caverna, irmão. Volta para a luz. Viva em comunhão. E descansa: em Cristo, até a tua história mais escondida pode tornar-se via da graça redentora. Amém.`;
 
   if (d.dia === 27) return `PARA PREGAR · Gênesis 20:1–18
 
+---
+
+TÍTULO DO SERMÃO
+"A Fidelidade que Sobrevive à Falha Repetida: como a aliança permanece firme apesar da queda do pai da fé"
+
 BIG IDEA
-"Mesmo a falha repetida do pai da fé não anula a fidelidade do Deus da aliança."
+A fidelidade do Deus da aliança sustenta a promessa mesmo quando o pai da fé repete a mesma falha de antes.
 
-MOVIMENTOS DO TEXTO
-[A]   · Abraão diz que Sara é sua irmã; Abimeleque a toma
-      → Pecados antigos rebrotam quando o coração se descuida
+PERGUNTA DE TRANSIÇÃO
+Como a falha repetida do pai da fé não consegue anular a fidelidade do Deus que firmou a aliança da promessa?
 
-[B]   · Deus adverte Abimeleque em sonho com firmeza
-      → A graça protetora age antes que o erro humano se consume
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais a fidelidade soberana de Deus preserva a aliança apesar da queda recorrente de Abraão.
 
-◉ [X]   · ABIMELEQUE CONFRONTA ABRAÃO PELA MENTIRA
-      → Às vezes o de fora repreende o de dentro para preservar a aliança
+---
 
-[B']  · Abraão explica o motivo do seu temor
-      → Onde o temor de Deus enfraquece, o temor humano se infiltra
+MOVIMENTOS DO SERMÃO
 
-[A']  · Abimeleque devolve Sara e abençoa Abraão
-      → Deus restitui o necessário para que a promessa siga adiante
+I. EXPONDO QUE PECADOS ANTIGOS REBROTAM QUANDO O CORAÇÃO SE DESCUIDA (A ↔ A')
+§ Indicação Textual: Gn 20.1-2 (Abraão diz que Sara é sua irmã em Gerar) e 20.14-18 (Abimeleque devolve Sara, abençoa Abraão).
+§ Exegese: A repetição da fraude (Gn 12.10-20) revela que pecados antigos permanecem latentes. O termo "achoti hi" (ela é minha irmã) é o mesmo. Abraão não aprendeu.
+§ Teologia Reformada: A santificação progressiva (CFW XIII) é gradual e marcada por recaídas. Mesmo grandes santos repetem pecados antigos.
+§ Aplicação: Que pecado antigo está voltando à sua vida? Examine o coração e busque mortificação contínua.
 
-EIXO CRISTOLÓGICO
-Rm 8:31: "se Deus é por nós, quem será contra nós?" — a fidelidade divina alcança até os escolhidos que falham.`;
+II. PROTEGENDO O PROMETIDO PELA ADVERTÊNCIA SOBRENATURAL (B ↔ B')
+§ Indicação Textual: Gn 20.3-7 (Deus adverte Abimeleque em sonho) e 20.11-13 (Abraão explica o motivo do seu temor).
+§ Exegese: "Halom" (sonho) é meio comum de revelação aos gentios no AT. Deus age antes que o pecado se consume. A confissão de Abraão revela o temor humano substituindo o temor divino.
+§ Teologia Reformada: A graça protetora (CFW V.5-6) opera mesmo sobre os incrédulos para preservar os propósitos divinos. Deus controla todos os elementos da história.
+§ Aplicação: Reconheça as intervenções providenciais que te livraram de consequências maiores. Agradeça pelos "sonhos" enviados aos Abimeleques da sua vida.
+
+III. RECEBENDO REPREENSÃO ATÉ DOS DE FORA — CENTRO X
+§ Indicação Textual: Gn 20.8-10 — "que nos fizeste? em que pequei contra ti, para trazeres sobre mim e o meu reino tamanho pecado?"
+§ Exegese: O pagão repreende o profeta. A pergunta "meh asita lanu" (que nos fizeste?) é juízo embaraçoso. O escolhido recebe ensinamento de quem deveria ensinar.
+§ Teologia Reformada: A humildade da fé verdadeira (CFW XV) inclui receber correção de quem quer que Deus envie. A repreensão alheia é meio de graça.
+§ Aplicação: Você está aberto a receber repreensão até de incrédulos? Deus pode usar qualquer voz para te corrigir.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A fidelidade de Deus à aliança apesar da falha de Abraão antecipa a fidelidade do Pai à nova aliança apesar das nossas falhas. Cristo, o verdadeiro filho de Abraão, jamais caiu em fraude ou medo. Sua perfeita obediência é imputada aos que creem. Onde Abraão expôs sua esposa por temor, Cristo entregou-se pela noiva por amor (Ef 5.25). A aliança da graça permanece firme porque ela está fundada não na fidelidade do crente, mas na do Cristo Mediador.
+
+DOUTRINA CENTRAL
+A aliança da graça permanece firme porque está fundada na fidelidade do Deus que prometeu, não na constância dos seus escolhidos.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: A santidade da igreja não é perfeição moral, mas dependência contínua da graça que perdoa.
+▸ Para as Famílias: Não esconda suas falhas dos seus; ensine os filhos pelo exemplo do arrependimento.
+▸ Para o Discípulo: Quando cair pela enésima vez, levante-se: a graça é maior.
+
+CONCLUSÃO
+Abraão caiu de novo. E Deus permaneceu fiel de novo. Eis a economia da graça: ela não depende de nossa constância, mas da fidelidade do Senhor. Em Cristo, a aliança jamais será rompida — porque ele a guardou perfeitamente em nosso lugar. Você que repetiu a falha antiga, ouça: a aliança está firme. Volte. Confessa. Recebe o perdão. E sai com a esperança restaurada. O Deus de Abraão é também o teu — fiel quando és infiel. Amém.`;
 
   if (d.dia === 28) return `PARA PREGAR · Gênesis 21:1–8
 
+---
+
+TÍTULO DO SERMÃO
+"O Riso da Promessa Cumprida: por que no tempo determinado o riso descrente se transforma em riso comunitário"
+
 BIG IDEA
-"No tempo determinado, o riso da fé se torna o riso da promessa cumprida."
+No tempo determinado por Deus, o riso da incredulidade se transforma no riso comunitário da promessa cumprida.
 
-MOVIMENTOS DO TEXTO
-[A]   · O SENHOR visita Sara como havia dito
-      → A promessa de Deus cumpre-se conforme sua própria palavra
+PERGUNTA DE TRANSIÇÃO
+Por que, no tempo determinado por Deus, o riso da fé se transforma no riso comunitário da promessa cumprida?
 
-◉ [X]   · ISAQUE NASCE — "DEUS ME FEZ RIR; TODO O QUE OUVIR HÁ DE RIR COMIGO"
-      → O Deus que parecia impossível agora produz riso comunitário
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as RAZÕES pelas quais o riso do ventre estéril se torna o riso da casa que celebra a promessa.
 
-[A']  · Abraão circuncida Isaque ao oitavo dia e faz grande festa
-      → A obediência e a celebração nascem juntas onde a promessa se cumpre
+---
 
-EIXO CRISTOLÓGICO
-Gl 4:28: "vós, irmãos, sois filhos da promessa, como Isaque" — em Cristo nascemos pelo poder da palavra divina.`;
+MOVIMENTOS DO SERMÃO
+
+I. PORQUE O SENHOR VISITA SEGUNDO SUA PRÓPRIA PALAVRA (A)
+§ Indicação Textual: Gn 21.1-2 — "visitou o SENHOR a Sara, como havia dito... no tempo determinado".
+§ Exegese: "Paqad" (visitar) é o verbo da intervenção redentora — usado depois para o êxodo (Êx 4.31). "Lammoed" (no tempo determinado) é fórmula da fidelidade temporal divina. A palavra prometida em Gn 18.14 cumpre-se literalmente.
+§ Teologia Reformada: A imutabilidade dos decretos (CFW II, III) garante o cumprimento das promessas. Deus não falha em palavra nem em tempo.
+§ Aplicação: Você confia que o tempo determinado de Deus virá? A fidelidade divina opera em calendário próprio.
+
+II. PRODUZINDO RISO COMUNITÁRIO ATRAVÉS DO NASCIMENTO DO PROMETIDO — CENTRO X
+§ Indicação Textual: Gn 21.3-7 — "Deus me fez rir; e todo aquele que o ouvir se rirá comigo".
+§ Exegese: O nome "Yitzhaq" (ele ri) é apropriado por Sara: "tsehoq asah li Elohim" (riso me fez Deus). O riso individual da incredulidade (18.12) se transforma em riso comunitário da fé.
+§ Teologia Reformada: A graça pública (CFW XVI) chama à celebração comunitária. As promessas cumpridas em um santo são alegria para toda a igreja.
+§ Aplicação: Compartilhe os cumprimentos das promessas em sua vida; a alegria multiplica-se na comunhão.
+
+III. CELEBRANDO COM OBEDIÊNCIA E FESTA (A')
+§ Indicação Textual: Gn 21.4-8 — Abraão circuncida Isaque ao oitavo dia; "fez grande banquete no dia em que Isaque foi desmamado".
+§ Exegese: A circuncisão ao oitavo dia (21.4) cumpre estritamente Gn 17.12. O banquete do desmame (21.8) é festa comunitária. Obediência e alegria caminham juntas.
+§ Teologia Reformada: A obediência da fé (CFW XVI) e a celebração eucarística (CFW XXIX) são marcas do povo de Deus. A vida cristã é doxológica.
+§ Aplicação: Sua casa celebra os cumprimentos da promessa com obediência aos ritos sagrados? Sem festa, a fé desaparece.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+Isaque é o filho da promessa, tipo de Cristo, o verdadeiro filho da promessa nascido pelo poder do Espírito (Lc 1.35). Paulo identifica os crentes em Cristo como "filhos da promessa, como Isaque" (Gl 4.28). O riso comunitário diante do nascimento de Isaque antecipa a alegria pascal da igreja diante do túmulo vazio. Em Cristo, o riso da promessa cumprida ecoa pelos séculos e culmina nas bodas do Cordeiro (Ap 19.7).
+
+DOUTRINA CENTRAL
+A fidelidade temporal divina cumpre a promessa no tempo determinado e transforma o riso descrente em riso celebrativo da comunidade redimida.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Celebre os cumprimentos das promessas; sua alegria é alimento da fé fraterna.
+▸ Para as Famílias: Educa os filhos com festa e obediência aos sinais da aliança.
+▸ Para o Discípulo: Espere com paciência; o tempo determinado virá.
+
+CONCLUSÃO
+"Deus me fez rir; e todo aquele que o ouvir se rirá comigo." Eis a alegria que culmina na promessa cumprida. Em Cristo, somos filhos da mesma promessa, e nosso riso ecoa diante do túmulo vazio. Espere com paciência. O tempo determinado virá. E quando vier, festeje. A obediência se casa com a alegria. Em Cristo, toda promessa tem o seu "sim" — e toda casa redimida tem motivo para banquete. Amém.`;
 
   if (d.dia === 29) return `PARA PREGAR · Gênesis 21:9–21
 
+---
+
+TÍTULO DO SERMÃO
+"O Deus que Ouve no Deserto: como o Senhor escolhe Isaque e ainda assim alcança Ismael à margem da promessa"
+
 BIG IDEA
-"O Deus que escolhe Isaque também ouve Ismael no deserto."
+O Deus que elege Isaque também ouve o clamor de Ismael no deserto, alcançando os que ficaram à margem.
 
-MOVIMENTOS DO TEXTO
-[A]   · Sara pede a expulsão de Hagar e Ismael
-      → Há separações dolorosas que distinguem a linha da promessa
+PERGUNTA DE TRANSIÇÃO
+Como o Deus que escolhe Isaque também ouve o clamor de Ismael no deserto, alcançando até os que ficaram à margem?
 
-◉ [X]   · NO DESERTO, DEUS OUVE A VOZ DO MENINO E ABRE OS OLHOS DE HAGAR
-      → A graça soberana atende mesmo aqueles que não estão na linha eleita
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais a graça soberana opera ao mesmo tempo na linha eleita e na linha marginalizada da história.
 
-[A']  · Ismael cresce no deserto e se torna flecheiro
-      → Deus cumpre sua palavra também sobre os que ficaram à margem
+---
 
-EIXO CRISTOLÓGICO
-Lc 1:54: "lembrou-se da sua misericórdia" — em Cristo, a misericórdia ouve cada criança chorando no deserto.`;
+MOVIMENTOS DO SERMÃO
+
+I. DISTINGUINDO A LINHA DA PROMESSA POR SEPARAÇÃO DOLOROSA (A)
+§ Indicação Textual: Gn 21.9-13 — Sara pede a expulsão; Abraão se aflige; Deus confirma: "ouve a Sara... em Isaque será chamada a tua descendência".
+§ Exegese: O verbo "metsahheq" (zombar, gracejar) revela tensão entre os irmãos. O termo é deliberadamente próximo de "Yitzhaq" (Isaque/riso). Paulo verá nisso tipologia (Gl 4.29).
+§ Teologia Reformada: A eleição distintiva (CFW III.5) separa entre os filhos. A graça particular não é injustiça, mas mistério da soberania divina.
+§ Aplicação: Você aceita que Deus separa por sua vontade soberana? A eleição não é cruel; é a única razão pela qual há salvos.
+
+II. OUVINDO O DESVALIDO NO MEIO DO DESERTO — CENTRO X
+§ Indicação Textual: Gn 21.14-19 — "ouviu Deus a voz do menino; e o anjo de Deus, da banda do céu, chamou a Hagar".
+§ Exegese: "Wayyishma Elohim" (ouviu Deus) é fórmula chave; o nome "Yishma'el" (Deus ouvirá) cumpre-se. Deus abre os olhos de Hagar para ver o poço — provisão que já estava ali.
+§ Teologia Reformada: A graça comum (CFW V.7) alcança todos os homens em providência geral. O Deus que elege também ouve.
+§ Aplicação: Há "ismaéis" ao seu redor — pessoas marginalizadas que clamam. Lembre-se: Deus os ouve, e nós devemos ouvir.
+
+III. CUMPRINDO A PALAVRA SOBRE A LINHA MARGINAL (A')
+§ Indicação Textual: Gn 21.20-21 — "Deus estava com o menino; ele cresceu... habitou no deserto de Parã, e sua mãe tomou-lhe uma mulher do Egito".
+§ Exegese: "Wayehi Elohim et-hanaar" (Deus estava com o menino) é fórmula de bênção. Ismael cresce sob a providência divina, mesmo fora da linha eleita.
+§ Teologia Reformada: A providência geral (CFW V) cobre a humanidade inteira. Deus cumpre sua palavra também sobre os de fora.
+§ Aplicação: Confie que Deus cuida das vidas que parecem fora da promessa. Sua providência alcança o deserto.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+Em Cristo, a separação dolorosa entre Isaque e Ismael é interpretada por Paulo (Gl 4) como tipologia da diferença entre a aliança da lei e a aliança da graça. Mas em Cristo, a graça soberana abrange tanto judeus quanto gentios. O Deus que ouviu Ismael ouviu também o ladrão na cruz. Cristo é o Senhor que vai aos marginalizados, que ouve o clamor dos desvalidos, que abre os olhos dos cegos para verem o poço da água viva. Em Cristo, a providência geral encontra a graça particular.
+
+DOUTRINA CENTRAL
+O Deus soberano que distingue a linha da promessa também ouve o clamor dos marginalizados e cumpre sua palavra em providência abrangente.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Sirva tanto à linha eleita (igreja) quanto aos ismaéis do mundo; o Deus que elege ama todos.
+▸ Para as Famílias: Ensine os filhos a ver e ouvir os marginalizados; é assim que age o Pai.
+▸ Para o Discípulo: Lembre-se: você foi marginal um dia, e Deus te ouviu.
+
+CONCLUSÃO
+Ismael grita. Deus ouve. Hagar chora. Deus vê. O Senhor da eleição soberana é o mesmo Senhor da providência abrangente. Em Cristo, todos os ismaéis podem se tornar isaques pela fé. Você que se sentiu marginalizado, ouça: o Senhor te ouve no deserto. Há um poço perto de você — abra os olhos. A graça soberana já te alcançou. Em Cristo, ninguém é esquecido pelo Pai. Amém.`;
 
   if (d.dia === 30) return `PARA PREGAR · Gênesis 21:22–34
 
+---
+
+TÍTULO DO SERMÃO
+"Berseba: como quem é abençoado por Deus se torna parceiro confiável até aos olhos de reis pagãos"
+
 BIG IDEA
-"Quem é abençoado por Deus se torna parceiro confiável até para reis pagãos."
+A bênção visível de Deus sobre o crente o torna parceiro digno de confiança até para os reis das nações.
 
-MOVIMENTOS DO TEXTO
-[A]   · Abimeleque pede uma aliança a Abraão
-      → A bênção de Deus torna o crente atraente até para os de fora
+PERGUNTA DE TRANSIÇÃO
+De que forma quem é abençoado por Deus se torna parceiro confiável mesmo aos olhos de reis pagãos do seu tempo?
 
-[B]   · Abraão se queixa do poço tomado pelos servos
-      → Conflitos concretos exigem soluções concretas, não silêncio piedoso
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais a bênção visível sobre Abraão o constitui em parceiro buscado por Abimeleque e juramento selado em Berseba.
 
-◉ [X]   · AS SETE OVELHAS COMO TESTEMUNHO DO POÇO DE ABRAÃO
-      → O sinal visível protege o direito quando a palavra pode ser esquecida
+---
 
-[B']  · O lugar é chamado Berseba — poço do juramento
-      → Lugares de aliança ganham nomes que pregam por gerações
+MOVIMENTOS DO SERMÃO
 
-[A']  · Abraão invoca o SENHOR, o Deus Eterno
-      → Toda aliança humana se firma debaixo do nome do Deus eterno
+I. TORNANDO O CRENTE ATRAENTE AOS DE FORA (A ↔ A')
+§ Indicação Textual: Gn 21.22-24 (Abimeleque pede aliança) e 21.33-34 (Abraão planta tamargueira e invoca o nome do SENHOR, Deus Eterno).
+§ Exegese: A frase "Elohim immekha bekhol asher attah oseh" (Deus é contigo em tudo o que fazes) é confissão de um rei pagão. O nome "El Olam" (Deus Eterno) é nova revelação para Abraão.
+§ Teologia Reformada: O testemunho visível dos crentes (CFW XVI.7) glorifica a Deus e atrai os de fora. A bênção tem efeito missionário.
+§ Aplicação: Sua vida tem testemunho que atraia os Abimeleques contemporâneos? A bênção é missionária.
 
-EIXO CRISTOLÓGICO
-Hb 6:13–18: "havendo Deus prometido... jurou por si mesmo" — em Cristo, Deus mesmo é o juramento da aliança.`;
+II. RESOLVENDO CONFLITOS CONCRETOS COM HONESTIDADE (B ↔ B')
+§ Indicação Textual: Gn 21.25-26 (queixa sobre o poço) e 21.31-32 (alianças seladas em Berseba).
+§ Exegese: O termo "be'er" (poço) é central. O conflito sobre água é típico no semiárido. Abraão não silencia; expõe o problema com honestidade.
+§ Teologia Reformada: A piedade prática (CFW XVI) inclui resolver conflitos concretos com mansidão mas firmeza. Silêncio piedoso muitas vezes é covardia.
+§ Aplicação: Há injustiças concretas que você precisa expor? A fé não silencia diante do mal; busca a paz pela verdade.
+
+III. ESTABELECENDO TESTEMUNHO VISÍVEL PARA AS GERAÇÕES — CENTRO X
+§ Indicação Textual: Gn 21.27-30 — "as sete cordeiras, que pus à parte, serão por testemunho de que cavei este poço".
+§ Exegese: "Sheva kevasot" (sete cordeiras) e "be'er sheva" (poço dos sete/juramento) jogam com a sonoridade. O número sete é sinal de completude do juramento. O sinal físico preserva o direito.
+§ Teologia Reformada: Sacramentos e sinais visíveis (CFW XXVII) são meios pelos quais Deus sela direitos e promessas. A memória da aliança precisa de marcos.
+§ Aplicação: Estabeleça marcos visíveis dos seus compromissos com Deus e com os irmãos; o tempo apaga o que não é selado.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+"Deus é contigo em tudo o que fazes" — confissão de Abimeleque que ecoa Emanuel ("Deus conosco", Mt 1.23). Em Cristo, a bênção da aliança alcança plenitude: ele é o Deus eterno (El Olam) manifesto em carne. Berseba antecipa Belém — onde a aliança eterna foi selada não em poços, mas no sangue. Cristo é o juramento de Deus consigo mesmo (Hb 6.13-18); ele é o sim de todas as promessas (2Co 1.20).
+
+DOUTRINA CENTRAL
+A bênção visível de Deus sobre seus servos os constitui em testemunho que atrai até os pagãos a invocar o nome do Senhor Eterno.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: A igreja é testemunho público; viva de tal modo que o mundo veja Deus contigo.
+▸ Para as Famílias: Estabeleça sinais visíveis de aliança dentro de casa — culto familiar, marcos de gratidão.
+▸ Para o Discípulo: Sua vida é poço cavado; deixe testemunhos para as gerações.
+
+CONCLUSÃO
+"Deus é contigo." Eis a confissão que basta. Quando o mundo reconhece a bênção de Deus sobre nós, a missão começa. Em Cristo, Emanuel, essa confissão se cumpre plenamente. Cava poços de testemunho. Sela alianças com integridade. Invoca o nome do Deus Eterno. Berseba virou nome de cidade; tua vida pode virar nome de bênção. Em Cristo, o juramento divino é eterno, e o testemunho dos seus permanece. Amém.`;
 
   if (d.dia === 31) return `PARA PREGAR · Gênesis 22:1–19
 
+---
+
+TÍTULO DO SERMÃO
+"Moriá: como onde a fé entrega o filho amado, Deus mesmo provê o cordeiro substituto que aponta para o Calvário"
+
 BIG IDEA
-"Onde a fé entrega o filho, Deus mesmo provê o cordeiro."
+Onde a fé entrega o filho amado, Deus mesmo provê o cordeiro substituto que prefigura o sacrifício de Cristo no Calvário.
 
-MOVIMENTOS DO TEXTO
-[A]   · "Toma teu filho, o teu único... e oferece-o em holocausto"
-      → Deus testa a fé pedindo o que parece anular a própria promessa
+PERGUNTA DE TRANSIÇÃO
+Como, onde a fé entrega o filho amado, Deus mesmo provê o cordeiro substituto que aponta para o Calvário?
 
-[B]   · Abraão e Isaque sobem juntos ao monte de Moriá
-      → A obediência da fé caminha em silêncio rumo ao impossível
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais o monte Moriá se converte em palco onde a fé entrega e a graça provê o cordeiro substituto.
 
-◉ [X]   · "DEUS PROVERÁ PARA SI O CORDEIRO" — A PALAVRA ANTES DO CARNEIRO
-      → A fé fala o que ainda não vê e antecipa a provisão divina
+---
 
-[B']  · O anjo detém Abraão; o carneiro substitui Isaque
-      → A substituição mostra que Deus jamais pediu sangue humano final
+MOVIMENTOS DO SERMÃO
 
-[A']  · Abraão chama o lugar "O SENHOR proverá"; promessa renovada
-      → Onde a fé entrega, ali a bênção se multiplica nas nações
+I. PROVANDO A FÉ PELO PEDIDO QUE PARECE ANULAR A PROMESSA (A ↔ A')
+§ Indicação Textual: Gn 22.1-2 ("toma teu filho, o teu único, a quem amas") e 22.14-19 (renovação da promessa: "porque obedeceste à minha voz").
+§ Exegese: "Yehideka asher ahavta" (teu único, a quem amas) é fórmula carregada — repetida três vezes. "Nissah" (testar) é provação santificadora, não tentação ao mal.
+§ Teologia Reformada: A provação dos santos (CFW V.5) é meio pelo qual Deus refina a fé. Não é tentação, mas pedagogia divina.
+§ Aplicação: Que Isaque Deus tem te pedido para entregar? A fé verdadeira está disposta a soltar até o mais amado.
 
-EIXO CRISTOLÓGICO
-Jo 1:29: "Eis o Cordeiro de Deus, que tira o pecado do mundo" — em Moriá Deus prefigurou Calvário.`;
+II. CAMINHANDO EM SILÊNCIO E OBEDIÊNCIA RUMO AO IMPOSSÍVEL (B ↔ B')
+§ Indicação Textual: Gn 22.3-6 (Abraão e Isaque sobem juntos) e 22.9-13 (o anjo detém Abraão; carneiro substitui).
+§ Exegese: "Yahdav" (juntos) aparece duas vezes — antes e depois do sacrifício prefigurado. Pai e filho subem juntos, voltam juntos. A obediência é silenciosa, deliberada, plena.
+§ Teologia Reformada: A obediência da fé (CFW XVI) é resposta ativa à palavra divina. Não é resignação, mas confiança ativa.
+§ Aplicação: Você obedece em silêncio quando Deus pede o difícil? A fé não argumenta; caminha.
+
+III. PROVENDO O CORDEIRO PELA PALAVRA PROFÉTICA — CENTRO X
+§ Indicação Textual: Gn 22.7-8 — "Deus proverá para si o cordeiro para o holocausto, meu filho".
+§ Exegese: "Elohim yireh-lo haseh" (Deus se proverá o cordeiro) é palavra profética. O nome do lugar (Gn 22.14) é "YHWH yireh" (o SENHOR proverá). O verbo "ra'ah" (ver/prover) é central.
+§ Teologia Reformada: A providência redentora (CFW V; VIII) culmina em Cristo, o Cordeiro de Deus provido antes da fundação do mundo (1Pe 1.19-20).
+§ Aplicação: Confie que onde Deus pede entrega, ele mesmo provê substituição. A fé fala o que ainda não vê.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+Moriá é, segundo a tradição, o monte onde Salomão construirá o templo (2Cr 3.1) — e perto onde Cristo será crucificado. O paralelo é exato: pai e filho amado sobem o monte; o filho carrega a madeira; é amarrado sobre o altar. Mas em Cristo, o anjo não detém o golpe — o Pai entrega seu próprio Filho, sem cordeiro substituto, porque Cristo É o Cordeiro (Jo 1.29). "Deus proverá" cumpre-se literalmente: Deus proveu a si mesmo o sacrifício. Em Cristo, Moriá vira Calvário, e o carneiro vira Cordeiro.
+
+DOUTRINA CENTRAL
+Deus mesmo provê o sacrifício substituto na pessoa de Cristo, o Cordeiro provido antes da fundação do mundo.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: A Ceia é Moriá visualizada; o Cordeiro provido alimenta a fé.
+▸ Para as Famílias: Educa os filhos a entregar tudo a Deus; o Pai provê sempre.
+▸ Para o Discípulo: Onde Deus pede entrega, ele provê substituição. Confie no Provedor.
+
+CONCLUSÃO
+"Deus proverá." Eis a fé que sobe ao monte. Em Cristo, essa palavra atinge cumprimento absoluto: o Pai proveu o próprio Filho como Cordeiro substituto, e o sacrifício de Moriá se completou no Calvário. Você que carrega um Isaque sobre o coração, ouça: confie. Suba o monte. Levanta o cutelo se for preciso. Mas saiba: o Senhor provê. Em Cristo, todo sacrifício teu encontra substituto eterno. Amém.`;
 
   if (d.dia === 32) return `PARA PREGAR · Gênesis 22:20–24
 
+---
+
+TÍTULO DO SERMÃO
+"Genealogia Silenciosa, Esposa Preparada: por que listas familiares banais preparam o caminho da próxima promessa"
+
 BIG IDEA
-"A pequena lista da família de Naor prepara o caminho para Rebeca, a esposa de Isaque."
+A providência divina prepara silenciosamente, em listas familiares, os elos da próxima promessa redentora.
 
-MOVIMENTOS DO TEXTO
-[A]   · Notícias da família de Naor chegam a Abraão
-      → A providência move famílias distantes para preparar o próximo passo
+PERGUNTA DE TRANSIÇÃO
+Por que pequenas listas familiares aparentemente banais preparam silenciosamente o caminho da próxima promessa de Deus?
 
-◉ [X]   · RECEBA NASCE — A FUTURA ESPOSA DE ISAQUE É ANUNCIADA
-      → Deus já está formando a resposta antes que a oração seja feita
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as RAZÕES pelas quais a notícia da família de Naor, aparentemente banal, é vetor providencial da próxima aliança.
 
-[A']  · A lista termina nomeando todos os filhos de Naor
-      → Cada nome aparentemente banal pode ser ponte de uma promessa
+---
 
-EIXO CRISTOLÓGICO
-Ef 1:4: "nos escolheu nele antes da fundação do mundo" — a providência antecipa a aliança em silêncio.`;
+MOVIMENTOS DO SERMÃO
+
+I. PORQUE A PROVIDÊNCIA MOVE FAMÍLIAS DISTANTES PARA O PRÓXIMO PASSO (A)
+§ Indicação Textual: Gn 22.20 — "depois destas cousas, anunciaram a Abraão: também Milca tem dado à luz filhos a Naor, teu irmão".
+§ Exegese: A frase "achare hadevarim ha'elleh" (depois destas coisas) liga literariamente o sacrifício de Isaque às notícias familiares. A providência opera nos dois eventos.
+§ Teologia Reformada: A providência abrangente (CFW V.1) coordena eventos aparentemente desconectados para os propósitos da aliança.
+§ Aplicação: Você lê os "eventos pequenos" da sua vida como parte do plano de Deus? A providência não despreza detalhes.
+
+II. PORQUE A FUTURA ESPOSA DE ISAQUE É SILENCIOSAMENTE ANUNCIADA — CENTRO X
+§ Indicação Textual: Gn 22.23 — "Betuel gerou a Rebeca; estes oito Milca teve de Naor".
+§ Exegese: Rebeca é mencionada como filha de Betuel, neta de Naor. No próximo capítulo principal (Gn 24), ela será buscada como esposa de Isaque. O texto antecipa silenciosamente o próximo elo.
+§ Teologia Reformada: A eleição soberana (CFW III) opera nos detalhes. Antes da oração do servo de Abraão (Gn 24.12), Deus já preparara a resposta.
+§ Aplicação: Confie que Deus já preparou as respostas antes mesmo das suas perguntas. A providência antecipa.
+
+III. PORQUE CADA NOME APARENTEMENTE BANAL PODE SER PONTE DA PROMESSA (A')
+§ Indicação Textual: Gn 22.21-24 — lista de oito filhos de Milca e mais quatro de Reumá, concubina.
+§ Exegese: Os nomes (Uz, Buz, Quemuel, Quésede etc.) parecem banais, mas alguns reaparecerão: Uz pode ser ancestral de Jó (Jó 1.1); Buz reaparece em Jr 25.23. Cada nome tem destino.
+§ Teologia Reformada: O cuidado providencial (CFW V.1) abrange cada vida. Nenhum nome listado nas Escrituras é supérfluo.
+§ Aplicação: Você desdenha do "anônimo" do seu lar ou círculo? Cada nome importa ao Senhor.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+Rebeca, anunciada nesta lista, será a esposa de Isaque e mãe de Jacó/Israel. A linhagem redentora se desdobra através dessa providência silenciosa. Em Cristo, vemos como cada nome obscuro foi necessário para que o Verbo se encarnasse (Mt 1; Lc 3). A providência que preparou Rebeca antes da oração é a mesma que nos escolheu em Cristo "antes da fundação do mundo" (Ef 1.4). Nenhum detalhe da história é trivial diante da soberania que conduz tudo à glória do Filho.
+
+DOUTRINA CENTRAL
+A providência divina prepara silenciosamente, em listas familiares e detalhes banais, os elos da próxima aliança redentora que culmina em Cristo.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: A igreja é tecida pela providência; cada membro é elo importante na história redentora.
+▸ Para as Famílias: Veja sua casa como capítulo na história providencial; pequenos eventos têm peso eterno.
+▸ Para o Discípulo: Seja fiel no aparentemente banal; Deus opera nos detalhes.
+
+CONCLUSÃO
+Uma lista familiar curta. Um nome no meio: Rebeca. E a próxima geração da promessa está garantida. Deus opera no silêncio das genealogias. Em Cristo, somos parte de uma providência maior. Não despreze os pequenos eventos da sua vida. O Pai está tecendo a história. Cada nome importa. Cada notícia tem propósito. Em Cristo, até a lista mais banal é via da graça eterna. Amém.`;
 
   if (d.dia === 33) return `PARA PREGAR · Gênesis 23:1–20
 
+---
+
+TÍTULO DO SERMÃO
+"Macpela: como o peregrino recebe na sepultura a primeira posse concreta da terra prometida"
+
 BIG IDEA
-"O peregrino compra uma sepultura: a primeira posse concreta da terra prometida."
+O peregrino que compra a sepultura recebe nela a primeira posse concreta da terra que Deus lhe prometeu.
 
-MOVIMENTOS DO TEXTO
-[A]   · Sara morre em Hebrom; Abraão a chora
-      → A fé não anestesia a dor da perda; chora com esperança
+PERGUNTA DE TRANSIÇÃO
+Como o peregrino, ao comprar apenas uma sepultura, recebe a primeira posse concreta da terra que Deus lhe prometeu?
 
-[B]   · Os filhos de Hete oferecem livremente seus sepulcros
-      → A graça torna o estrangeiro respeitado entre as nações
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais a compra da caverna de Macpela converte uma sepultura em sinal concreto da promessa.
 
-◉ [X]   · EFROM OFERECE O CAMPO E A CAVERNA DE MACPELA
-      → A primeira posse da promessa é um túmulo — herança da esperança
+---
 
-[B']  · Abraão pesa a prata ao preço acordado
-      → A fé negocia honestamente, sem se aproveitar da gentileza
+MOVIMENTOS DO SERMÃO
 
-[A']  · Abraão sepulta Sara na caverna de Macpela
-      → A morte do crente é semente plantada na terra da promessa
+I. CHORANDO COM ESPERANÇA A MORTE DA AMADA (A ↔ A')
+§ Indicação Textual: Gn 23.1-4 (Sara morre; Abraão a chora e pede sepultura) e 23.17-20 (Abraão sepulta Sara em Macpela).
+§ Exegese: "Wayyavo Avraham lispod le-Sarah velivkotah" (entrou Abraão para chorar por Sara e prantear). O termo "ger ve-toshav" (peregrino e estrangeiro) define identidade do patriarca.
+§ Teologia Reformada: A piedade verdadeira (CFW XV) inclui chorar com esperança (1Ts 4.13). A fé não anestesia a dor, mas a interpreta sob a promessa.
+§ Aplicação: Você chora com esperança suas perdas? A fé não nega a dor; a contém na promessa.
 
-EIXO CRISTOLÓGICO
-1Co 15:55: "onde está, ó morte, o teu aguilhão?" — em Cristo, todo túmulo torna-se posse da promessa.`;
+II. NEGOCIANDO HONESTAMENTE COM AS NAÇÕES (B ↔ B')
+§ Indicação Textual: Gn 23.5-9 (filhos de Hete oferecem sepulcros) e 23.14-16 (Abraão pesa a prata ao preço acordado).
+§ Exegese: A cortesia oriental é tecida no diálogo. Mas Abraão insiste em pagar o preço cheio — quatrocentos siclos de prata. A fé não se aproveita da gentileza alheia.
+§ Teologia Reformada: A integridade no comércio (CFW XVI; Catecismo Maior, P.140-142) é marca da piedade prática. O nono mandamento se estende ao mercado.
+§ Aplicação: Você negocia com integridade até quando podia tirar vantagem? A fé prefere pagar a aproveitar-se.
+
+III. RECEBENDO NA SEPULTURA A PRIMEIRA POSSE DA PROMESSA — CENTRO X
+§ Indicação Textual: Gn 23.10-13 — Efrom oferece o campo e a caverna de Macpela; Abraão recebe.
+§ Exegese: O termo "sadeh" (campo) é solenemente repetido — propriedade plena. Macpela ("dupla", referente à caverna dupla) torna-se a primeira posse jurídica da terra prometida. Sepultura como hipoteca da promessa.
+§ Teologia Reformada: A esperança escatológica (CFW XXXII) considera a sepultura como descanso temporário aguardando ressurreição. A morte do crente é semente plantada na terra prometida.
+§ Aplicação: Veja a morte cristã não como derrota, mas como posse antecipada da terra eterna prometida.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+Macpela será o sepulcro dos patriarcas (Abraão, Isaque, Jacó). Cada túmulo se torna sinal concreto da promessa: a terra pertence a eles, embora ainda não a habitem plenamente. Cristo, sepultado no túmulo emprestado de José de Arimateia, transformou todo sepulcro em posse antecipada da herança eterna (1Co 15.55). O peregrino que morre em Cristo descansa em terreno próprio: a terra do Senhor. A ressurreição garante que Macpela cederá lugar à nova Jerusalém.
+
+DOUTRINA CENTRAL
+Em Cristo, a morte do crente é a primeira posse concreta da herança eterna prometida pelo Senhor.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: A igreja honra seus mortos; cada sepultura cristã aguarda ressurreição gloriosa.
+▸ Para as Famílias: Ensine os filhos sobre a morte cristã; chorar com esperança é evangelho concreto.
+▸ Para o Discípulo: Negocie sempre com integridade; viva e morra como peregrino fiel.
+
+CONCLUSÃO
+Sara morreu. Abraão chorou. Mas a sepultura virou promessa. Eis o paradoxo do peregrino: a primeira posse da terra prometida é um túmulo. Em Cristo, todo sepulcro cristão é hipoteca da ressurreição. Você que chora um amado, ouça: a sepultura é semente. Negocie a vida com integridade. Caminhe como peregrino. E quando vier a hora, descanse com esperança. Em Cristo, Macpela é antessala da Nova Jerusalém. Amém.`;
 
   if (d.dia === 34) return `PARA PREGAR · Gênesis 24:1–67
 
+---
+
+TÍTULO DO SERMÃO
+"A Providência Junto à Fonte: como o servo, a noiva e o encontro são conduzidos silenciosamente por Deus"
+
 BIG IDEA
-"A providência conduz silenciosamente o servo, a fonte e a noiva ao encontro escolhido."
+A providência divina conduz silenciosamente o servo, a fonte e a noiva ao encontro previamente preparado por Deus.
 
-MOVIMENTOS DO TEXTO
-[A]   · Abraão faz o servo jurar buscar esposa na terra natal
-      → A continuidade da promessa exige escolhas santas para a família
+PERGUNTA DE TRANSIÇÃO
+De que forma a providência conduz silenciosamente o servo, a fonte e a noiva até o encontro previamente escolhido por Deus?
 
-[B]   · O servo chega à fonte; Rebeca dá água aos camelos
-      → A providência se manifesta em ações comuns e generosas
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais a providência conduz cada peça da história até desembocar no encontro preparado desde a eternidade.
 
-◉ [X]   · O SERVO NARRA SUA MISSÃO À FAMÍLIA — TUDO VEM DA MÃO DO SENHOR
-      → A história contada à luz de Deus interpreta corretamente os fatos
+---
 
-[B']  · A família concorda; Rebeca é abençoada com palavras de aliança
-      → A decisão de fé recebe a bênção da casa que reconhece a obra divina
+MOVIMENTOS DO SERMÃO
 
-[A']  · Rebeca vai ao encontro de Isaque; tornam-se casal
-      → A obediência de cada parte permite o encontro preparado por Deus
+I. JURANDO BUSCAR ESPOSA NA TERRA DA ALIANÇA (A ↔ A')
+§ Indicação Textual: Gn 24.1-9 (Abraão faz o servo jurar) e 24.61-67 (Rebeca encontra Isaque; tornam-se casal).
+§ Exegese: O juramento sob a coxa ("yarekh") é forma solene de pacto. A preocupação central é "não tomarás mulher das cananeias" — fidelidade à aliança redentora.
+§ Teologia Reformada: A santificação dos vínculos familiares (CFW XXIV) requer fidelidade à aliança. Casamentos têm peso teológico, não só pessoal.
+§ Aplicação: Você considera as escolhas matrimoniais (suas e dos seus) à luz da aliança? Casamento é assunto teológico.
 
-EIXO CRISTOLÓGICO
-Jo 4:14: "a água que eu lhe der... fonte para a vida eterna" — em Cristo, junto à fonte, o Servo busca a noiva.`;
+II. ENCONTRANDO A PROVIDÊNCIA EM AÇÕES COMUNS E GENEROSAS (B ↔ B')
+§ Indicação Textual: Gn 24.10-27 (servo na fonte, Rebeca dá água aos camelos) e 24.50-60 (família concorda; Rebeca abençoada).
+§ Exegese: A oração do servo (v.12-14) é modelo: pede sinal específico — a moça que oferecer água também aos camelos. Dez camelos sedentos exigem trabalho árduo. A generosidade revela o coração.
+§ Teologia Reformada: A oração orientada pela providência (CFW XXI) busca sinais segundo a vontade revelada. O servo não tenta a Deus; submete o pedido à direção divina.
+§ Aplicação: Suas orações reconhecem que Deus opera em ações comuns? Não despreze a providência cotidiana.
+
+III. NARRANDO A MISSÃO À LUZ DA OBRA DIVINA — CENTRO X
+§ Indicação Textual: Gn 24.28-49 — o servo narra detalhadamente à família a missão, atribuindo tudo ao SENHOR.
+§ Exegese: A narração ocupa 22 versículos — recapitulação inteira. O verbo "wayedabber" (falou) e a repetição enfatizam o testemunho. A história é interpretada teologicamente.
+§ Teologia Reformada: A narração da obra de Deus (testemunho, CFW XVI.7) é meio pelo qual a fé se transmite e a vontade divina se discerne.
+§ Aplicação: Você narra sua vida atribuindo a obra a Deus? Testemunho fiel interpreta a história corretamente.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A história de Gn 24 é tipologia rica: o Pai (Abraão) envia o Servo (Espírito Santo) para buscar a Noiva (a Igreja) para o Filho (Isaque/Cristo). O encontro junto à fonte ecoa Jo 4 — Cristo e a samaritana junto ao poço. A noiva é trazida ao Filho de longe, atravessa o deserto, e o encontra no campo. Em Cristo, o Pai prepara a esposa para o Filho desde a eternidade (Ef 5.25-27), e o Espírito a conduz silenciosamente ao encontro nupcial.
+
+DOUTRINA CENTRAL
+A providência soberana de Deus conduz silenciosamente todos os elementos da história até o encontro nupcial que prefigura Cristo e sua Igreja.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: A igreja é a noiva conduzida ao Filho pelo Servo divino; viva como esposa esperada.
+▸ Para as Famílias: Ore especificamente por casamentos dos seus filhos; busque sinais e direção.
+▸ Para o Discípulo: Narre sua história atribuindo tudo ao Senhor; sua vida é evangelho.
+
+CONCLUSÃO
+Junto à fonte, a providência se encontra com a oração. O servo orou, Rebeca veio. Em Cristo, o Pai enviou o Espírito; a noiva responde. Você que busca direção, ouça: Deus opera em ações comuns, mas espera oração específica. Conte sua história à luz da obra divina. Reconheça os sinais. E ande na obediência. Em Cristo, a fonte virou nascente de água viva, e o encontro nupcial é eterno. Amém.`;
 
   if (d.dia === 35) return `PARA PREGAR · Gênesis 25:1–6
 
+---
+
+TÍTULO DO SERMÃO
+"Preservar a Promessa no Herdeiro Único: porque mesmo na velhice fértil Abraão guarda a unicidade da aliança em Isaque"
+
 BIG IDEA
-"Mesmo na velhice fértil, Abraão preserva a unicidade da promessa em Isaque."
+A fidelidade do crente preserva cuidadosamente a unicidade da promessa concentrada no herdeiro escolhido por Deus.
 
-MOVIMENTOS DO TEXTO
-[A]   · Abraão toma Quetura; nascem outros filhos
-      → A vida continua produzindo mesmo após o cumprimento da promessa
+PERGUNTA DE TRANSIÇÃO
+Por que, mesmo na velhice fértil, Abraão preserva cuidadosamente a unicidade da promessa concentrada em Isaque?
 
-◉ [X]   · ABRAÃO DÁ TUDO A ISAQUE — A LINHA DA PROMESSA É PRESERVADA
-      → O zelo pela promessa exige distinguir o herdeiro entre muitos filhos
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as RAZÕES pelas quais Abraão, mesmo gerando outros filhos, mantém a aliança intransferivelmente em Isaque.
 
-[A']  · Aos demais filhos dá presentes e os envia para longe
-      → A graça paterna provê para todos, mas guarda a aliança no escolhido
+---
 
-EIXO CRISTOLÓGICO
-Hb 11:18: "em Isaque será chamada a tua descendência" — em Cristo, herdeiro único, a promessa se cumpre.`;
+MOVIMENTOS DO SERMÃO
+
+I. PORQUE A VIDA CONTINUA PRODUZINDO APÓS O CUMPRIMENTO DA PROMESSA (A)
+§ Indicação Textual: Gn 25.1-4 — Abraão toma Quetura; nascem Zinrã, Jocsã, Medã, Midiã, Isbaque e Suá; seus descendentes.
+§ Exegese: O verbo "yasaf" (continuar/acrescentar) abre o capítulo. A fertilidade tardia de Abraão é resultado da bênção que rejuvenesce. Esses filhos darão origem a povos midianitas e árabes.
+§ Teologia Reformada: A bênção de Deus é abundante (CFW V.7), mas distinta entre graça geral e graça particular.
+§ Aplicação: Reconheça que Deus continua produzindo na sua vida; mas distinga entre fertilidade geral e vocação específica.
+
+II. PORQUE A LINHA DA PROMESSA EXIGE DISTINÇÃO CONSCIENTE — CENTRO X
+§ Indicação Textual: Gn 25.5 — "Abraão deu tudo o que tinha a Isaque".
+§ Exegese: "Wayyitten Avraham et-kol-asher-lo le-Yitzhaq" (deu Abraão tudo o que tinha a Isaque) é declaração teologicamente carregada. A unicidade do herdeiro corresponde à unicidade da promessa.
+§ Teologia Reformada: A eleição particular (CFW III) opera mesmo dentro da família abraâmica. Isaque é o herdeiro único da aliança; os demais recebem bênção geral.
+§ Aplicação: Você zela pela unicidade do que Deus te confiou? Nem tudo que produzimos é da mesma natureza.
+
+III. PORQUE A GRAÇA PROVÊ PARA TODOS, MAS GUARDA A ALIANÇA NO ESCOLHIDO (A')
+§ Indicação Textual: Gn 25.6 — "porém aos filhos das concubinas Abraão fez doações; e, ainda em vida, os separou de seu filho Isaque, enviando-os para a terra do oriente".
+§ Exegese: A frase "veshillehem mei-al Yitzhaq beno" (separou-os de Isaque) indica preservação consciente. Os filhos receberam dons, mas não a herança da aliança.
+§ Teologia Reformada: A providência (CFW V) sustenta todos; a graça redentora (CFW VIII) concentra-se nos eleitos.
+§ Aplicação: Sirva a todos com generosidade; mas guarde a aliança no que Deus designou para herança.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A preservação da promessa em Isaque prefigura a concentração absoluta da redenção em Cristo. "Em Isaque será chamada a tua descendência" (Hb 11.18) — e Paulo declara que essa semente é Cristo (Gl 3.16). Em Cristo, herdeiro único de todas as promessas, somos feitos co-herdeiros (Rm 8.17). A graça preserva a unicidade da aliança no Filho. Todos os "filhos de Quetura" — bênçãos espalhadas pelo mundo — apontam para o Único em quem se concentra toda herança espiritual.
+
+DOUTRINA CENTRAL
+Deus concentra toda a herança da aliança em um único Herdeiro, Cristo, em quem somos feitos co-herdeiros pela graça.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: A igreja vive em Cristo, o herdeiro único; nenhuma autoridade alheia compete com seu senhorio.
+▸ Para as Famílias: Eduque os filhos sabendo que a herança espiritual se concentra em Cristo, não em vantagens terrenas.
+▸ Para o Discípulo: Não disperse seu zelo entre o essencial e o periférico; concentre-se no Herdeiro único.
+
+CONCLUSÃO
+Abraão deu tudo a Isaque. Em Cristo, o Pai dá tudo ao Filho. E em Cristo, recebemos tudo. A vida pode produzir muitos frutos; mas a herança da aliança se concentra no único Herdeiro. Distinga em sua vida o que é graça geral e o que é graça redentora. Sirva a todos. Ama todos. Mas guarda o tesouro do evangelho ciumentamente. Em Cristo, herdeiro único, somos herdeiros plenos. Amém.`;
 
   if (d.dia === 36) return `PARA PREGAR · Gênesis 25:7–11
 
+---
+
+TÍTULO DO SERMÃO
+"Morrer Satisfeito na Peregrinação: como o que não viu a posse plena descansa em paz enquanto Deus continua abençoando"
+
 BIG IDEA
-"O peregrino que não viu a posse plena descansa, e Deus continua abençoando seu filho."
+O peregrino que não vê a posse plena descansa em paz, enquanto Deus continua abençoando seu herdeiro.
 
-MOVIMENTOS DO TEXTO
-[A]   · Abraão morre em boa velhice, satisfeito de dias
-      → A vida de fé termina em paz, ainda que não veja tudo cumprido
+PERGUNTA DE TRANSIÇÃO
+Como o peregrino que não viu a posse plena descansa em paz, enquanto Deus continua abençoando seu filho herdeiro?
 
-◉ [X]   · ISAQUE E ISMAEL SEPULTAM O PAI JUNTOS EM MACPELA
-      → A morte do justo reconcilia o que a vida havia separado
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais a morte serena de Abraão revela a paz da fé que confia na continuidade da promessa.
 
-[A']  · Deus abençoa Isaque após a morte de Abraão
-      → A bênção não se interrompe; ela passa adiante pela aliança
+---
 
-EIXO CRISTOLÓGICO
-Hb 11:13: "morreram todos na fé, sem terem recebido as promessas" — em Cristo a posse plena chega aos peregrinos.`;
+MOVIMENTOS DO SERMÃO
+
+I. MORRENDO SATISFEITO DE DIAS APÓS A VIDA DE FÉ (A)
+§ Indicação Textual: Gn 25.7-8 — "Abraão expirou e morreu em ditosa velhice, velho e cheio de anos; e foi reunido ao seu povo".
+§ Exegese: "Save" (satisfeito) descreve plenitude. "Yiggava... wayyiasef el-ammav" (expirou... foi reunido ao seu povo) é fórmula de morte do justo. Sugere consciência continuada após a morte.
+§ Teologia Reformada: A morte do justo é entrada no descanso (CFW XXXII). A alma vai para Deus, o corpo aguarda ressurreição.
+§ Aplicação: Você está se preparando para morrer satisfeito de dias? A fé conduz à morte serena.
+
+II. RECONCILIANDO OS IRMÃOS NA MORTE DO JUSTO — CENTRO X
+§ Indicação Textual: Gn 25.9-10 — "Isaque e Ismael, seus filhos, o sepultaram na caverna de Macpela".
+§ Exegese: O detalhe é notável: Ismael, separado em 21.14, está de volta para sepultar o pai. A morte do patriarca reconcilia o que a vida havia separado. Macpela torna-se ponto de encontro fraternal.
+§ Teologia Reformada: A graça comum (CFW V) opera laços naturais que a aliança não anula. O sangue fraternal permanece, mesmo onde a eleição distinguiu.
+§ Aplicação: Há fraturas familiares que aguardam reconciliação? Não deixe a morte ser o único reconciliador.
+
+III. CONTINUANDO A BÊNÇÃO NO HERDEIRO ESCOLHIDO (A')
+§ Indicação Textual: Gn 25.11 — "Depois da morte de Abraão, abençoou Deus a Isaque, seu filho".
+§ Exegese: "Wayehi acharei mot Avraham wayevarekh Elohim et-Yitzhaq beno" (após a morte de Abraão, abençoou Deus a Isaque). A aliança não se interrompe pela morte do patriarca; passa adiante.
+§ Teologia Reformada: A continuidade da aliança (CFW VII) atravessa as gerações. A bênção concedida a um patriarca alcança seus filhos pela fé.
+§ Aplicação: Confie que a bênção do Senhor sobre sua vida transita para os herdeiros que ele te deu. A aliança continua.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+Abraão "morreu na fé, sem ter obtido as promessas" (Hb 11.13). Mas em Cristo, a posse plena chegou. Cristo é o herdeiro maior, em quem todas as bênçãos prometidas a Abraão se cumprem (Gl 3.14). A morte do crente, em Cristo, não é fim, mas entrada no descanso. E a bênção continua na Igreja que segue. Em Cristo, a peregrinação termina na pátria, e a fé recebe a posse eterna.
+
+DOUTRINA CENTRAL
+O peregrino fiel morre em paz porque a aliança continua nos herdeiros e culmina em Cristo, o Herdeiro eterno.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: A igreja é geracional; ensine que a bênção de Deus passa adiante pela fidelidade fiel.
+▸ Para as Famílias: Prepare seus filhos para receberem e continuarem a aliança.
+▸ Para o Discípulo: Viva preparando-se para morrer satisfeito; a fé não tem pressa porque tem destino.
+
+CONCLUSÃO
+Abraão morreu cheio de dias. Isaque e Ismael sepultaram juntos. Deus continuou abençoando. Eis a paz da fé: o peregrino fiel morre sereno porque a obra de Deus não termina com ele. Em Cristo, recebemos certeza de que a aliança continua. Você viverá fielmente, e morrerá em paz. E a bênção alcançará seus filhos. Em Cristo, a morte é apenas porta para a herança plena. Amém.`;
 
   if (d.dia === 37) return `PARA PREGAR · Gênesis 25:12–18
 
+---
+
+TÍTULO DO SERMÃO
+"A Palavra que Alcança o Excluído: porque a linhagem fora da aliança ainda recebe o cumprimento da palavra divina"
+
 BIG IDEA
-"Mesmo a linhagem que ficou de fora da aliança recebe o cumprimento da palavra divina."
+A palavra de Deus se cumpre também sobre as linhagens que ficaram fora da aliança redentora.
 
-MOVIMENTOS DO TEXTO
-[A]   · A genealogia de Ismael é registrada por Deus
-      → Nenhum povo escapa da memória atenta do Criador
+PERGUNTA DE TRANSIÇÃO
+Por que mesmo a linhagem que ficou de fora da aliança ainda recebe o cumprimento concreto da palavra divina?
 
-◉ [X]   · DOZE PRÍNCIPES NASCEM DE ISMAEL — A PROMESSA SE CUMPRE TAMBÉM AQUI
-      → A palavra de Deus se cumpre tanto na linha eleita quanto na excluída
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as RAZÕES pelas quais a genealogia de Ismael testemunha que nenhum povo escapa do cumprimento da palavra do Senhor.
 
-[A']  · Ismael habita defronte de seus irmãos
-      → A coexistência das nações segue o desenho do Senhor da história
+---
 
-EIXO CRISTOLÓGICO
-Rm 11:32: "Deus encerrou a todos sob a desobediência, para usar de misericórdia para com todos" — em Cristo, a misericórdia abrange todos os ramos.`;
+MOVIMENTOS DO SERMÃO
+
+I. PORQUE NENHUM POVO ESCAPA DA MEMÓRIA DO CRIADOR (A)
+§ Indicação Textual: Gn 25.12-15 — "estas são as gerações de Ismael, filho de Abraão" — lista de doze nomes principais.
+§ Exegese: O "toledot" de Ismael recebe registro tal como Sem (Gn 11). Deus não esquece nenhum filho de Abraão. Os doze nomes ecoam os doze tribos de Israel — paralelismo deliberado.
+§ Teologia Reformada: A providência abrangente (CFW V.1) inclui todos os povos. Nenhuma linhagem está fora do registro divino.
+§ Aplicação: Você considera que Deus se interessa por povos fora da igreja visível? A graça providencial alcança todos.
+
+II. PORQUE A PROMESSA SE CUMPRE LITERALMENTE NOS DOZE PRÍNCIPES — CENTRO X
+§ Indicação Textual: Gn 25.16 — "estes são os filhos de Ismael... doze príncipes, segundo as suas tribos".
+§ Exegese: "Sheneim asar nesiim" (doze príncipes) cumpre literalmente Gn 17.20 ("doze príncipes gerará"). A palavra de Deus se cumpre sem omissão.
+§ Teologia Reformada: A fidelidade verbal (CFW I.4-6) garante que cada palavra divina se cumpre. Nem a salvação nem a providência geral falham em palavra.
+§ Aplicação: Confie que cada promessa de Deus se cumprirá, mesmo sobre os que parecem fora da linha eleita.
+
+III. PORQUE A COEXISTÊNCIA DAS NAÇÕES SEGUE O DESENHO DIVINO (A')
+§ Indicação Textual: Gn 25.17-18 — Ismael morre aos cento e trinta e sete; "ele habitou defronte de todos os seus irmãos".
+§ Exegese: "Al-penei kol-ehav" (defronte de todos os seus irmãos) cumpre Gn 16.12. A coexistência tensa mas providencial é parte do desenho histórico.
+§ Teologia Reformada: A geografia dos povos é providencialmente ordenada (At 17.26). A história das nações segue propósitos redentores.
+§ Aplicação: Veja a geopolítica como tela providencial; nada acontece sem desígnio.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A linhagem de Ismael, embora fora da aliança redentora, recebe cumprimento providencial. Em Cristo, a misericórdia abrange "todos os ramos" (Rm 11.32). A separação entre a linha eleita e a linha não eleita não anula a graça comum, e em Cristo até as nações antes excluídas podem ser enxertadas (Rm 11.17-24). O Filho de Davi é também Filho do Homem — e o evangelho alcança ismaelitas, midianitas e todas as linhagens. Em Cristo, a separação genealógica cede à unidade no Espírito.
+
+DOUTRINA CENTRAL
+A palavra de Deus se cumpre fielmente sobre todas as linhagens, abrindo caminho para que, em Cristo, todos os povos sejam alcançados pela misericórdia.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: A missão alcança os ismaelitas; nenhum povo está fora do alcance do evangelho.
+▸ Para as Famílias: Eduque os filhos a verem todos os povos com a compaixão de Deus.
+▸ Para o Discípulo: Confie no cumprimento literal das promessas; Deus não falha em palavra.
+
+CONCLUSÃO
+Doze príncipes nascem de Ismael. A palavra de Deus se cumpre. Em Cristo, vemos que a misericórdia alcança até os ramos que pareciam separados. Não despreze os povos fora da aliança visível: o Senhor cumpre sua palavra também sobre eles. E pelo evangelho, em Cristo, ismaelitas se tornam irmãos. A palavra de Deus jamais falha. Confie. Anuncie. Em Cristo, todos os povos podem ser alcançados. Amém.`;
 
   if (d.dia === 38) return `PARA PREGAR · Gênesis 25:19–28
 
+---
+
+TÍTULO DO SERMÃO
+"A Graça Antes da Obra: como o irmão menor é escolhido antes de qualquer mérito, revelando que a graça precede sempre"
+
 BIG IDEA
-"O irmão menor é escolhido antes que tenha feito qualquer coisa — a graça precede a obra."
+A graça soberana escolhe o irmão menor antes de qualquer obra, revelando que toda eleição precede o nosso mérito.
 
-MOVIMENTOS DO TEXTO
-[A]   · Rebeca é estéril; Isaque ora ao SENHOR
-      → A oração persistente abre o ventre fechado pelo Senhor
+PERGUNTA DE TRANSIÇÃO
+Como o irmão menor é escolhido antes mesmo de qualquer obra, revelando que a graça sempre precede o nosso mérito?
 
-[B]   · Rebeca consulta o SENHOR; profecia dos dois povos
-      → A história dos filhos é interpretada pela palavra de Deus desde o ventre
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais a profecia divina no ventre revela que a graça soberana opera antes de qualquer ação humana.
 
-◉ [X]   · "O MAIS VELHO SERVIRÁ AO MAIS MOÇO" — A ELEIÇÃO INVERTE A ORDEM HUMANA
-      → A graça de Deus subverte a expectativa da natureza e do costume
+---
 
-[B']  · Esaú e Jacó nascem com sinais opostos
-      → A escolha divina já se imprime nos próprios nascimentos
+MOVIMENTOS DO SERMÃO
 
-[A']  · Os pais amam por preferência: Isaque a Esaú, Rebeca a Jacó
-      → O favoritismo familiar prepara conflitos que Deus ainda dominará
+I. ABRINDO O VENTRE FECHADO PELA ORAÇÃO PERSISTENTE (A ↔ A')
+§ Indicação Textual: Gn 25.19-21 (Rebeca estéril; Isaque ora) e 25.27-28 (os pais amam por preferência).
+§ Exegese: "Wayyetar Yitzhaq" (Isaque suplicou) tem forma intensiva — oração ardente. Vinte anos de oração ("ben arba'im shanah"... 25.20, 25.26) antes da resposta. O favoritismo paterno preludia conflito.
+§ Teologia Reformada: A oração eficaz (CFW XXI) é perseverante. Deus responde no tempo determinado, não na pressa humana.
+§ Aplicação: Você persevera em oração mesmo após anos sem resposta? Isaque orou vinte anos.
 
-EIXO CRISTOLÓGICO
-Rm 9:11–13: "não tendo eles ainda feito bem ou mal... Jacó amei" — em Cristo a eleição se cumpre por pura graça.`;
+II. RECEBENDO A INTERPRETAÇÃO PROFÉTICA DO QUE OCORRE NO VENTRE (B ↔ B')
+§ Indicação Textual: Gn 25.22-23 (Rebeca consulta o SENHOR) e 25.24-26 (nascem com sinais opostos).
+§ Exegese: "Lidrosh et-YHWH" (consultar o SENHOR) é busca oracular legítima. A profecia "shenei goyim be-vitnekh" (duas nações em teu ventre) interpreta toda a história subsequente.
+§ Teologia Reformada: A revelação dos propósitos divinos (CFW I.1) é dada para guiar a fé. A história tem sentido revelado.
+§ Aplicação: Busque interpretar sua vida pela palavra revelada; não pela mera observação.
+
+III. INVERTENDO A ORDEM NATURAL PELA ELEIÇÃO SOBERANA — CENTRO X
+§ Indicação Textual: Gn 25.23 — "o mais velho servirá ao mais moço".
+§ Exegese: "Verav ya'avod tsa'ir" (e maior servirá ao menor) inverte toda lei sucessória. A graça subverte a natureza. Paulo cita exatamente aqui para argumentar a eleição (Rm 9.10-13).
+§ Teologia Reformada: A eleição incondicional (CFW III.5) é o coração reformado. Antes de bem ou mal feito, antes da fé prevista, o decreto soberano escolhe.
+§ Aplicação: Reconheça que sua salvação é pura graça, anterior a qualquer mérito. Não há razão em você; só misericórdia em Deus.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+"Não tendo eles ainda feito bem ou mal... Jacó amei" (Rm 9.11-13). Paulo usa Esaú e Jacó como caso paradigmático da eleição pela pura graça. Em Cristo, somos escolhidos "antes da fundação do mundo" (Ef 1.4), sem mérito nenhum. Jacó, o menor escolhido, prefigura Cristo, que escolheu os fracos e desprezados (1Co 1.27). E em Cristo, somos como Jacó: amados sem mérito, escolhidos antes da obra. A graça inverte a ordem natural sempre que age.
+
+DOUTRINA CENTRAL
+A eleição soberana de Deus precede toda obra humana, fundamentando a salvação na graça e não no mérito.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: A igreja é comunidade de eleitos pela graça; não há lugar para soberba espiritual.
+▸ Para as Famílias: Cuidado com favoritismos; mas reconheça que Deus mesmo escolhe livremente.
+▸ Para o Discípulo: Sua salvação não é mérito; é graça. Adore com humildade.
+
+CONCLUSÃO
+"O mais velho servirá ao mais moço." Eis a economia da graça. Antes do mérito, a escolha. Antes da obra, a salvação. Em Cristo, somos amados como Jacó: sem causa em nós, somente por misericórdia. Você que se acha indigno, ouça: indigno é exatamente quem ele escolhe. A graça precede tudo. Adora com humildade. Sirva com gratidão. Em Cristo, a eleição se cumpre pura graça. Amém.`;
 
   if (d.dia === 39) return `PARA PREGAR · Gênesis 25:29–34
 
+---
+
+TÍTULO DO SERMÃO
+"Profano: porque quem vende a eternidade pelo instante revela o coração que de fato possui"
+
 BIG IDEA
-"Quem despreza a herança eterna pela urgência presente revela o coração que tem."
+Quem despreza a herança eterna pela urgência imediata revela o coração profano que de fato possui.
 
-MOVIMENTOS DO TEXTO
-[A]   · Esaú volta do campo faminto e exausto
-      → A fome física revela prioridades espirituais ocultas
+PERGUNTA DE TRANSIÇÃO
+Por que quem despreza a herança eterna pela urgência imediata acaba revelando o coração profano que de fato possui?
 
-◉ [X]   · ESAÚ VENDE A PRIMOGENITURA POR UM PRATO DE LENTILHAS
-      → Trocar herança eterna por satisfação imediata é a essência do profano
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as RAZÕES pelas quais a troca de Esaú expõe o coração profano que prefere o instante à eternidade.
 
-[A']  · Esaú come, bebe, levanta-se e sai — "desprezou a primogenitura"
-      → O coração profano nem percebe o tamanho do que perdeu
+---
 
-EIXO CRISTOLÓGICO
-Hb 12:16: "não haja algum profano como Esaú, que por uma comida vendeu o seu direito" — em Cristo aprendemos a preferir a herança eterna.`;
+MOVIMENTOS DO SERMÃO
+
+I. PORQUE A FOME FÍSICA REVELA PRIORIDADES ESPIRITUAIS (A)
+§ Indicação Textual: Gn 25.29-30 — Esaú volta do campo, cansado, e pede com urgência: "deixa-me, peço-te, comer desse guisado vermelho".
+§ Exegese: "Ayef" (cansado) e a repetição "ha'adom ha'adom" (do vermelho, do vermelho) revelam impulsividade animal. O nome "Edom" (vermelho) virá disso. A fome é teste, não desculpa.
+§ Teologia Reformada: A natureza do pecado (CFW VI) revela-se em pequenas escolhas. O caráter se forma e se manifesta em decisões cotidianas.
+§ Aplicação: Que urgências da carne têm te dominado? A fome física revela a fome espiritual ausente.
+
+II. PORQUE TROCAR ETERNIDADE POR INSTANTE É A ESSÊNCIA DO PROFANO — CENTRO X
+§ Indicação Textual: Gn 25.31-33 — "vende-me primeiro o teu direito de primogenitura... e Esaú jurou e vendeu a Jacó o seu direito de primogenitura".
+§ Exegese: "Bekorah" (primogenitura) incluía herança dupla, liderança familiar e participação na promessa abraâmica. Trocada por um prato de lentilhas! O verbo "wayyimkor" (vendeu) é solene; e juramento o sela.
+§ Teologia Reformada: O pecado de profanidade (CFW XV; Hb 12.16) é a desvalorização do santo em favor do mundano. Esaú é exemplo paradigmático.
+§ Aplicação: O que de eterno você está vendendo por pratos de lentilhas? Trabalho excessivo? Prazeres passageiros? Aprovação humana?
+
+III. PORQUE O CORAÇÃO PROFANO NEM PERCEBE O TAMANHO DO QUE PERDEU (A')
+§ Indicação Textual: Gn 25.34 — "comeu e bebeu, levantou-se e saiu. Assim, desprezou Esaú o seu direito de primogenitura".
+§ Exegese: Os verbos rápidos ("akhal, shatah, yaqom, yelek, yivez") em sequência revelam superficialidade. "Wayyivez" (desprezou) é o juízo divino sobre a transação.
+§ Teologia Reformada: O endurecimento progressivo (CFW V.6) começa em pequenas escolhas e cresce em apostasia. O profano não chora porque já não percebe.
+§ Aplicação: Examine se você ainda chora pelo que está perdendo, ou se já se acomodou em insensibilidade espiritual.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+Hebreus 12.16 usa Esaú como advertência permanente: "não haja algum profano, como Esaú, que por uma comida vendeu o seu direito de primogenitura". Em contraste, Cristo é o verdadeiro Primogênito (Cl 1.15) que jamais trocou a herança eterna por satisfação imediata. Tentado no deserto, recusou pão por palavra (Mt 4.4). Em Cristo, aprendemos a valorizar a herança imperecível (1Pe 1.4). E em Cristo, recebemos a primogenitura espiritual que Esaú desprezou.
+
+DOUTRINA CENTRAL
+O coração profano se revela ao trocar a herança eterna por satisfação imediata, mas em Cristo a primogenitura é restaurada aos que creem.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Advirta a igreja contra a profanidade sutil — pequenas trocas que diminuem o eterno.
+▸ Para as Famílias: Ensine os filhos a valorizar a herança da fé acima de qualquer prato de lentilhas.
+▸ Para o Discípulo: Examine suas decisões cotidianas; o eterno se ganha ou perde nelas.
+
+CONCLUSÃO
+Um prato de lentilhas. Era esse o preço de uma eternidade trocada. Esaú comeu e saiu — sem chorar. Eis o coração profano: nem sente o que perdeu. Em Cristo, recebemos olhos para enxergar o eterno. Não vendas a primogenitura por satisfações imediatas. O instante passa; a herança permanece. Em Cristo, somos primogênitos espirituais, e nenhuma fome passageira deve nos roubar o que ele comprou com seu próprio sangue. Amém.`;
 
   if (d.dia === 40) return `PARA PREGAR · Gênesis 26:1–14
 
+---
+
+TÍTULO DO SERMÃO
+"A Aliança que Sustenta o Filho que Falha: como a fidelidade ao pai alcança a geração que repete a mesma queda"
+
 BIG IDEA
-"A aliança feita com o pai sustenta o filho até em meio à mesma falha repetida."
+A aliança feita com o pai sustenta o filho mesmo quando ele repete a mesma falha herdada.
 
-MOVIMENTOS DO TEXTO
-[A]   · Nova fome; o SENHOR aparece a Isaque e renova a aliança
-      → A providência reaparece em cada geração com a mesma fidelidade
+PERGUNTA DE TRANSIÇÃO
+Como a aliança feita com o pai sustenta o filho até em meio à repetição da mesma falha herdada da geração anterior?
 
-[B]   · Isaque mente sobre Rebeca em Gerar
-      → Os pecados dos pais costumam reaparecer nos filhos
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais a fidelidade divina à aliança patriarcal sustenta Isaque apesar da repetição da fraude.
 
-◉ [X]   · ABIMELEQUE DESCOBRE A VERDADE E ORDENA: "NÃO TOQUE ESSE HOMEM"
-      → Deus protege o pacto mesmo quando os escolhidos falham
+---
 
-[B']  · Isaque semeia e colhe cêntuplo no mesmo ano
-      → A bênção da aliança alcança até a falha humana arrependida
+MOVIMENTOS DO SERMÃO
 
-[A']  · Isaque enriquece sobremaneira em Gerar
-      → A fidelidade de Deus se cumpre na prosperidade do peregrino
+I. RENOVANDO A ALIANÇA EM CADA GERAÇÃO (A ↔ A')
+§ Indicação Textual: Gn 26.1-5 (o SENHOR aparece a Isaque e renova a aliança) e 26.12-14 (Isaque enriquece sobremaneira em Gerar).
+§ Exegese: A teofania reaproveita as palavras de Gn 12.1-3 e 22.16-18. O motivo da bênção é claro: "porque Abraão me obedeceu" (v.5). A aliança alcança gerações.
+§ Teologia Reformada: A aliança da graça (CFW VII.6) é uma só, administrada em distintas gerações. A bênção transcende a vida do patriarca.
+§ Aplicação: Você reconhece que vive sob a fidelidade da aliança que Deus fez com os pais? Receba a bênção que vem de longe.
 
-EIXO CRISTOLÓGICO
-Rm 11:29: "irrevogáveis os dons e a vocação de Deus" — em Cristo, a aliança alcança gerações além da nossa falha.`;
+II. REPETINDO O PECADO HERDADO PELO MEDO (B ↔ B')
+§ Indicação Textual: Gn 26.6-11 (Isaque mente sobre Rebeca) e 26.12-14 (semeia e colhe cêntuplo).
+§ Exegese: A mentira "ela é minha irmã" é tragicamente idêntica à de Abraão (Gn 12, 20). Os pecados se herdam. Mas o cêntuplo na colheita ("meah she'arim") mostra graça em meio à falha.
+§ Teologia Reformada: A herança do pecado (CFW VI.3) afeta gerações. Mas a graça (CFW XIII) também transita generacionalmente. Onde abundou o pecado, superabundou a graça.
+§ Aplicação: Examine quais pecados você herdou e está repetindo. Confesse, e receba a graça que sustenta.
+
+III. PROTEGENDO O PACTO MESMO DIANTE DA FALHA HUMANA — CENTRO X
+§ Indicação Textual: Gn 26.10-11 — Abimeleque descobre a verdade e ordena: "Qualquer que tocar neste homem ou na sua mulher, certamente morrerá".
+§ Exegese: O temor de Abimeleque opera como graça providencial. Deus usa um rei pagão para proteger a aliança. A proteção transcende a fragilidade do mediador.
+§ Teologia Reformada: A providência protetora (CFW V) preserva os propósitos divinos independentemente da força dos seus instrumentos.
+§ Aplicação: Confie que mesmo quando você falhar, Deus preservará seu chamado. A proteção é dele, não sua.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A aliança feita com Abraão sustenta Isaque, apesar de sua falha. Em Cristo, a aliança feita com o Pai sustenta a Igreja apesar dos seus pecados. "Irrevogáveis são os dons e a vocação de Deus" (Rm 11.29). Cristo é o verdadeiro Isaque, o herdeiro fiel; mas ele cumpriu perfeitamente o que nós, herdeiros falhos, não conseguimos. Em Cristo, vivemos da aliança paterna, somos protegidos pela providência, e somos abençoados cêntuplo pela graça.
+
+DOUTRINA CENTRAL
+A fidelidade de Deus à aliança patriarcal sustenta as gerações seguintes, alcançando seu cumprimento pleno em Cristo, o Herdeiro fiel.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Honre as bênçãos herdadas das gerações fiéis; viva à altura da aliança recebida.
+▸ Para as Famílias: Reconheça e quebra ciclos pecaminosos herdados; busque a graça que santifica.
+▸ Para o Discípulo: Quando você cair na mesma armadilha de sempre, levante-se na graça da aliança.
+
+CONCLUSÃO
+Isaque mentiu como o pai. E Deus o abençoou cêntuplo. Eis a economia da graça: a aliança não depende da nossa constância. Em Cristo, somos sustentados pela fidelidade do Pai, mesmo quando repetimos pecados antigos. Reconheça suas heranças. Quebra os ciclos. Mas saiba que a aliança é maior. Em Cristo, herdeiro fiel, recebemos perdão e renovação. A bênção do pai alcança o filho que tropeça. Amém.`;
 
   if (d.dia === 41) return `PARA PREGAR · Gênesis 26:15–25
 
+---
+
+TÍTULO DO SERMÃO
+"Reobote: porque a paciência do justo escolhe cavar novos poços onde outros tampam os antigos"
+
 BIG IDEA
-"A paciência do justo cava novos poços onde os outros tampam os antigos."
+A paciência do justo prefere cavar novos poços do que disputar os antigos, e recebe das mãos de Deus lugar largo.
 
-MOVIMENTOS DO TEXTO
-[A]   · Os filisteus tapam os poços que Abraão cavara
-      → A inveja procura apagar a memória da bênção alheia
+PERGUNTA DE TRANSIÇÃO
+Por que a paciência do justo escolhe cavar novos poços onde outros insistem em tampar os antigos com inveja?
 
-[B]   · Isaque cava Eseque e Sitna; conflitos sucessivos
-      → O caminho da fidelidade muitas vezes passa por brigas evitadas
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as RAZÕES pelas quais Isaque, recusando contendas, é levado por Deus ao lugar largo de Reobote.
 
-◉ [X]   · EM REOBOTE — "O SENHOR NOS DEU LUGAR LARGO"
-      → A paciência que recua por amor recebe o espaço amplo de Deus
+---
 
-[B']  · Isaque sobe a Berseba; o SENHOR aparece novamente
-      → A obediência paciente é recompensada com nova revelação
+MOVIMENTOS DO SERMÃO
 
-[A']  · Isaque edifica altar e invoca o nome do SENHOR
-      → O peregrino marca o lugar pela adoração antes pela posse
+I. PORQUE A INVEJA APAGA A MEMÓRIA DA BÊNÇÃO ALHEIA (A)
+§ Indicação Textual: Gn 26.15-17 — "os filisteus taparam todos os poços que os servos de seu pai, Abraão, tinham cavado".
+§ Exegese: O verbo "satam" (tapar) é violento. A inveja procura apagar até os sinais físicos da bênção patriarcal. Isaque é forçado a mudar-se para o vale de Gerar.
+§ Teologia Reformada: A perseguição dos justos (CFW XX) é parte da existência cristã. O mundo sempre se opõe à bênção de Deus.
+§ Aplicação: Você tem encontrado tapadores de poços ao seu redor? Não desanime; a bênção encontra novas vias.
 
-EIXO CRISTOLÓGICO
-Mt 5:9: "bem-aventurados os pacificadores" — em Cristo, o reino se firma pela paciência que cava poços novos.`;
+II. PORQUE A FIDELIDADE PASSA POR CONTENDAS EVITADAS (B ↔ B')
+§ Indicação Textual: Gn 26.18-22 — Isaque cava Eseque ("contenda"), Sitna ("inimizade") e finalmente Reobote ("lugares largos").
+§ Exegese: Os nomes dos poços são teologicamente carregados. "Eseq" (contenda) e "Sitnah" (acusação) revelam o conflito; mas Isaque não disputa: muda-se. "Wayyariv" (contenderam) é evitado pelo patriarca.
+§ Teologia Reformada: A piedade prática (CFW XVI; Rm 12.18) chama o crente a buscar a paz quanto possível. A renúncia não é fraqueza, mas virtude evangélica.
+§ Aplicação: Você prefere disputar ou cavar novos poços? A paciência santa não pelega; recua sabiamente.
+
+III. RECEBENDO O LUGAR LARGO DAS MÃOS DO SENHOR — CENTRO X
+§ Indicação Textual: Gn 26.22 — "Reobote, dizendo: Pois agora nos deu o SENHOR largueza, e prosperaremos na terra".
+§ Exegese: "Rehovot" (lugares largos) é o nome da paz divina. "Hirhiv" (alargou) é verbo de bênção. O Senhor recompensa a paciência com espaço amplo, não com vingança.
+§ Teologia Reformada: A bênção da paz (CFW XV; Mt 5.9) é fruto do espírito manso. O pacificador é abençoado.
+§ Aplicação: Confie que a paciência que recua por amor recebe lugar amplo das mãos do Senhor.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+Isaque prefigura Cristo, o manso por excelência (Mt 11.29), que não disputou seu direito mas o entregou. Cristo é o verdadeiro Reobote — em quem encontramos lugar amplo (Sl 31.8). Ele cavou o poço da água viva (Jo 4.14) onde todos podem beber. E em Cristo, somos chamados a ser pacificadores (Mt 5.9), cavando poços novos onde outros tampam, e confiando que o Pai providenciará o lugar largo.
+
+DOUTRINA CENTRAL
+A paciência do justo, que prefere cavar poços novos a disputar antigos, é recompensada pelo Senhor com o lugar largo da paz.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: A igreja deve ser comunidade de Reobote — lugar largo onde almas cansadas encontram paz.
+▸ Para as Famílias: Eduque os filhos para cavar poços novos em vez de disputar; isso forma corações pacíficos.
+▸ Para o Discípulo: Examine onde você tem disputado em vez de ceder. A paciência produz lugares largos.
+
+CONCLUSÃO
+Tampam os poços; Isaque cava outros. Eis a sabedoria do justo. Em Cristo, o verdadeiro Manso, aprendemos que a paciência que recua por amor recebe lugar largo das mãos do Pai. Não desperdice forças disputando o antigo; cave o novo. Onde a inveja fecha portas, a graça abre Reobotes. Em Cristo, encontramos o lugar amplo onde podemos prosperar. Cava poços. Encontra paz. Recebe largueza. Amém.`;
 
   if (d.dia === 42) return `PARA PREGAR · Gênesis 26:26–33
 
+---
+
+TÍTULO DO SERMÃO
+"Vemos que o Senhor é Contigo: como a bênção visível faz o mundo procurar aliança com o crente"
+
 BIG IDEA
-"A bênção visível sobre o crente faz o mundo procurar aliança com ele."
+A bênção visível sobre o crente faz o próprio mundo vir buscar aliança com aquele que antes evitava.
 
-MOVIMENTOS DO TEXTO
-[A]   · Abimeleque vem com séquito buscar aliança
-      → A bênção do Senhor torna o filho buscado pelos que o evitavam
+PERGUNTA DE TRANSIÇÃO
+Como a bênção visível sobre o crente faz com que o próprio mundo procure aliança com aquele que antes evitava?
 
-◉ [X]   · "VEMOS CLARAMENTE QUE O SENHOR É CONTIGO"
-      → O testemunho mais forte é a presença reconhecida do Senhor na vida
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais a presença do Senhor sobre Isaque atrai Abimeleque a buscar aliança onde antes havia hostilidade.
 
-[A']  · Fazem aliança e juram; o poço é chamado Seba
-      → A paz selada com juramento eterniza o testemunho no nome do lugar
+---
 
-EIXO CRISTOLÓGICO
-Jo 17:21: "para que o mundo creia que tu me enviaste" — em Cristo a aliança visível na igreja convence o mundo.`;
+MOVIMENTOS DO SERMÃO
+
+I. ATRAINDO OS DE FORA PELA BÊNÇÃO RECONHECIDA (A ↔ A')
+§ Indicação Textual: Gn 26.26-27 (Abimeleque vem com séquito) e 26.32-33 (cavam poço; chamam o lugar Berseba).
+§ Exegese: Abimeleque, Auzate (conselheiro) e Ficol (capitão) representam autoridade política e militar. Vêm a quem expulsaram (v.27). O que era hostil tornou-se necessário.
+§ Teologia Reformada: O testemunho visível da bênção (CFW XVI.7) tem efeito missionário. A vida cristã coerente atrai os de fora.
+§ Aplicação: Sua vida tem testemunho visível da bênção de Deus? Mais persuasivo que argumentos é a presença reconhecida.
+
+II. CONFESSANDO QUE O SENHOR ESTÁ COM O CRENTE — CENTRO X
+§ Indicação Textual: Gn 26.28 — "vimos claramente que o SENHOR é contigo... haja agora um juramento entre nós".
+§ Exegese: "Ra'o ra'inu" (vimos claramente) é forma intensiva — testemunho enfático. "YHWH immakh" (o SENHOR contigo) é confissão pública. A presença de Deus é reconhecida até pelos pagãos.
+§ Teologia Reformada: A glória de Deus na vida do crente (CFW II) é evidência apologética poderosa. Vidas testemunham mais que palavras.
+§ Aplicação: Você vive de modo que outros possam dizer: "o Senhor está contigo"? Esse é o discipulado mais alto.
+
+III. SELANDO A ALIANÇA COM JURAMENTO ETERNO (A')
+§ Indicação Textual: Gn 26.29-31 — "tu agora és bendito do SENHOR. Levantando-se de manhã, juraram-se de parte a parte".
+§ Exegese: "Beruk YHWH attah" (bendito do SENHOR és tu) é benção pagã. O juramento ("shava") sela compromisso solene. O banquete (v.30) é sinal de hospitalidade restaurada.
+§ Teologia Reformada: Os juramentos legítimos (CFW XXII) são meios pelos quais alianças se firmam. A paz com os incrédulos, quanto possível, é virtude (Rm 12.18).
+§ Aplicação: Busque selar compromissos com palavra firme. A integridade da palavra é meio de paz.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+"O SENHOR é contigo" — confissão que ecoa Emanuel (Mt 1.23). Cristo é o cumprimento de toda presença divina. Em Cristo, a igreja é tabernáculo de Deus entre os homens (Ap 21.3), e sua bênção visível atrai as nações. Jesus orou para que "o mundo creia que tu me enviaste" (Jo 17.21) — pela visibilidade da unidade e bênção sobre os seus. A aliança em Berseba prefigura a nova aliança em Cristo, onde até os de fora podem ser feitos aliados pela graça.
+
+DOUTRINA CENTRAL
+A bênção visível do Senhor sobre seus servos tem efeito missionário, atraindo até os de fora a reconhecerem sua presença e buscarem aliança.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: A unidade visível da igreja é apologética poderosa; viva a bênção publicamente.
+▸ Para as Famílias: Que vejam que o Senhor é com sua casa; a bênção é testemunho.
+▸ Para o Discípulo: Seja coerente; viva de tal modo que outros confessem a presença de Deus em você.
+
+CONCLUSÃO
+"Vimos claramente que o Senhor é contigo". Eis a missão silenciosa do justo. Em Cristo, Emanuel, somos sinal vivo da presença divina. Você vive de tal modo que outros possam testemunhar? A bênção é missionária. Quando o mundo te procurar, lembre: não é por seus méritos, mas pela presença do Senhor. Sela a paz. Honra a Palavra. Em Cristo, somos aliança visível para as nações. Amém.`;
 
   if (d.dia === 43) return `PARA PREGAR · Gênesis 26:34–35
 
+---
+
+TÍTULO DO SERMÃO
+"Jugo Desigual: porque casamentos contraídos fora da aliança trazem amargura silenciosa à casa próspera"
+
 BIG IDEA
-"Casamentos fora da aliança trazem amargura à casa que parecia próspera."
+Casamentos contraídos fora da aliança redentora trazem amargura silenciosa à casa que aparentava prosperar tranquila.
 
-MOVIMENTOS DO TEXTO
-[A]   · Esaú toma duas mulheres heteias aos quarenta anos
-      → Decisões aparentemente pessoais marcam a vida de toda a família
+PERGUNTA DE TRANSIÇÃO
+Por que casamentos contraídos fora da aliança trazem amargura silenciosa à casa que aparentava prosperar tranquila?
 
-◉ [X]   · ELAS FORAM AMARGURA DE ESPÍRITO PARA ISAQUE E REBECA
-      → Misturar a vocação com o que ela rejeitou produz dor duradoura
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as RAZÕES pelas quais as escolhas matrimoniais de Esaú trazem amargura ao lar dos patriarcas aparentemente prósperos.
 
-EIXO CRISTOLÓGICO
-2Co 6:14: "não vos prendais a um jugo desigual com os incrédulos" — em Cristo aprendemos que o jugo se escolhe pelo Senhor.`;
+---
+
+MOVIMENTOS DO SERMÃO
+
+I. ESCOLHENDO PELA APARÊNCIA E NÃO PELA ALIANÇA (A)
+§ Indicação Textual: Gn 26.34 — "tendo Esaú quarenta anos, tomou por mulher a Judite, filha de Beeri, heteu, e a Basemate, filha de Elom, heteu".
+§ Exegese: Os "Hitti" (heteus) são cananeus — povos com os quais a aliança proibira casamentos (cf. Gn 24.3). Esaú tem a mesma idade que Isaque ao casar (Gn 25.20), mas escolheu opostamente.
+§ Teologia Reformada: A vocação santa do matrimônio (CFW XXIV) requer fidelidade à aliança. Casamentos com incrédulos quebram o discipulado.
+§ Aplicação: Como você (ou seus filhos) tem escolhido cônjuges? Aparência exterior ou aliança redentora?
+
+II. PRODUZINDO AMARGURA SILENCIOSA NA CASA — CENTRO X
+§ Indicação Textual: Gn 26.35 — "as quais se tornaram em amargura de espírito para Isaque e Rebeca".
+§ Exegese: "Morat ruach" (amargura de espírito) é expressão dolorida. A casa próspera por fora padece amargura por dentro. O verbo "wattihyena" (e foram-se tornando) indica processo, não evento.
+§ Teologia Reformada: As consequências do pecado familiar (CFW VI.6) afetam gerações. O jugo desigual (2Co 6.14) traz dor silenciosa.
+§ Aplicação: Examine os jugos desiguais em sua vida ou casa. A amargura é processual e silenciosa.
+
+III. (Como esta perícope tem apenas A↔A' sem braço central explícito no quiastico.txt, este é o eixo redentor)
+§ Indicação Textual: Gn 26.34-35 inteira como contraste à fidelidade da aliança patriarcal.
+§ Exegese: A breve nota literária é como ferida exposta. Esaú continua revelando seu coração profano agora também nas escolhas matrimoniais.
+§ Teologia Reformada: A doutrina da aliança no lar (CFW XXIV; Catecismo Maior P.137-139) regula o casamento como instituição santa.
+§ Aplicação: Não despreze as decisões matrimoniais; elas selam o discipulado da casa por gerações.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+O jugo desigual produz amargura; mas em Cristo, todo casamento pode ser redimido. Cristo é o Esposo perfeito que ama a noiva e a santifica (Ef 5.25-27). O casamento cristão é tipo do evangelho — aliança que reflete a aliança eterna. Mesmo onde houve jugo desigual, em Cristo há restauração possível: o cônjuge crente santifica o lar (1Co 7.14). E em Cristo, somos a noiva eternamente unida ao Cordeiro, sem amargura, sem traição, em paz consumada.
+
+DOUTRINA CENTRAL
+Casamentos contraídos fora da aliança trazem amargura à casa, mas em Cristo até essas feridas podem ser redimidas pela graça do Esposo perfeito.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Pastoreie corações jovens para escolherem cônjuges na fé; é mandamento, não sugestão.
+▸ Para as Famílias: Pais, orem fervorosamente pelos cônjuges dos seus filhos.
+▸ Para o Discípulo: Examine seus jugos atuais; busque a graça que santifica os lares.
+
+CONCLUSÃO
+A casa parecia próspera. Mas a amargura corroia silenciosamente. Eis o preço do jugo desigual. Em Cristo, aprendemos que o casamento é aliança e não conveniência. Escolha pela fé, não pela aparência. E onde houver feridas antigas, leve a Cristo: o Esposo perfeito pode restaurar até casas amargas. Em Cristo, somos noiva amada, e nossas casas podem refletir essa aliança eterna. Amém.`;
 
   if (d.dia === 44) return `PARA PREGAR · Gênesis 27:1–40
 
+---
+
+TÍTULO DO SERMÃO
+"Deus Cumpre sua Palavra pelos Caminhos Tortos: como, no engano humano mais retorcido, a palavra do ventre se cumpre"
+
 BIG IDEA
-"Mesmo no engano humano, Deus cumpre a palavra que dissera desde o ventre."
+Mesmo no engano humano mais retorcido, Deus cumpre fielmente a palavra que dissera desde o ventre materno.
 
-MOVIMENTOS DO TEXTO
-[A]   · Isaque envelhecido pede a Esaú que prepare caça
-      → O coração velho insiste em preferências contra a palavra divina
+PERGUNTA DE TRANSIÇÃO
+Como, mesmo no engano humano mais retorcido, Deus cumpre fielmente a palavra que dissera desde o ventre materno?
 
-[B]   · Rebeca arquiteta o engano em favor de Jacó
-      → A fé sem confiança recorre à fraude quando deveria orar
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais o propósito soberano de Deus se cumpre apesar da fraude doméstica e do favoritismo paterno.
 
-◉ [X]   · JACÓ ENGANA ISAQUE E RECEBE A BÊNÇÃO DO PRIMOGÊNITO
-      → O propósito divino segue mesmo pelos caminhos tortuosos dos homens
+---
 
-[B']  · Esaú chega; Isaque treme e Esaú clama em pranto
-      → O coração profano descobre tarde demais o que desprezou cedo
+MOVIMENTOS DO SERMÃO
 
-[A']  · Esaú recebe uma bênção secundária, longe do orvalho do céu
-      → O que se vende não se recompra com lágrimas tardias
+I. RESISTINDO À PALAVRA DIVINA POR PREFERÊNCIA CARNAL (A ↔ A')
+§ Indicação Textual: Gn 27.1-4 (Isaque pede caça a Esaú) e 27.39-40 (Esaú recebe bênção secundária).
+§ Exegese: "Wattikheina einav" (seus olhos enfraqueceram) é símbolo: Isaque está espiritualmente cego. Persiste em abençoar Esaú contrariando a profecia de Gn 25.23.
+§ Teologia Reformada: A resistência humana à vontade revelada (CFW V.4) opera mesmo em santos. Mas Deus não falha em cumprir seu decreto.
+§ Aplicação: Examine onde você resiste à palavra revelada por preferências de carne. A cegueira espiritual é grave.
 
-EIXO CRISTOLÓGICO
-Rm 8:28: "todas as coisas cooperam para o bem" — em Cristo, mesmo intrigas humanas servem aos propósitos eternos.`;
+II. RECORRENDO À FRAUDE QUANDO DEVERIA ORAR (B ↔ B')
+§ Indicação Textual: Gn 27.5-17 (Rebeca arquiteta engano) e 27.30-38 (Esaú chega; Isaque treme; Esaú clama).
+§ Exegese: Rebeca, que recebera a profecia (Gn 25.23), tenta executá-la por fraude em vez de oração. O preço será separação eterna do filho amado. Os verbos "ramah" (enganar) marcam o pecado.
+§ Teologia Reformada: A piedade prática (CFW XVI) rejeita meios pecaminosos para alcançar fins santos. A fé verdadeira ora e espera.
+§ Aplicação: Você tem usado meios questionáveis para alcançar promessas divinas? A fé não justifica fraude.
+
+III. CUMPRINDO A PROFECIA NO MEIO DO ENGANO HUMANO — CENTRO X
+§ Indicação Textual: Gn 27.18-29 — Jacó engana Isaque; recebe a bênção do primogênito ("povos te sirvam, e nações se encurvem a ti").
+§ Exegese: A bênção pronunciada cumpre literalmente a profecia de Gn 25.23. Mesmo na fraude, Deus cumpre sua palavra. Mas o instrumento humano paga preço caro: vinte anos de exílio.
+§ Teologia Reformada: A soberania divina sobre os meios secundários (CFW V.2-3) permite que Deus realize seus propósitos mesmo através de ações pecaminosas humanas, sem ser ele autor do pecado.
+§ Aplicação: Reconheça que Deus cumpre sua palavra apesar de nós, não graças a nós. Não justifique sua fraude.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A bênção tomada por engano será dada novamente, conscientemente, em Gn 28. E a linhagem prossegue até Cristo, o verdadeiro Filho amado, que recebeu a bênção do Pai não por fraude, mas por obediência perfeita (Fp 2.8-9). Onde Jacó enganou para receber, Cristo entregou-se para abençoar. "Todas as coisas cooperam para o bem" (Rm 8.28), até as intrigas humanas. Em Cristo, o coração tortuoso é endireitado, e a bênção do Pai é recebida pela fé, não pela fraude.
+
+DOUTRINA CENTRAL
+A soberania de Deus cumpre sua palavra mesmo através das ações pecaminosas dos homens, sem ser autor do pecado, e tudo culmina em Cristo.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Anuncie a soberania de Deus que não depende da nossa virtude, mas também não justifica nossa traição.
+▸ Para as Famílias: Confie em Deus para cumprir promessas; não recorra à fraude doméstica.
+▸ Para o Discípulo: Confesse os meios pecaminosos que tem usado; ore e espere.
+
+CONCLUSÃO
+Jacó enganou. Esaú chorou. Isaque tremeu. E Deus cumpriu sua palavra. Eis o paradoxo da soberania: ela opera apesar de nós. Mas isso não nos isenta. Jacó pagará vinte anos de exílio pela fraude. Em Cristo, herdeiro fiel, recebemos a bênção do Pai pela obediência dele, não pela fraude nossa. Confessa os caminhos tortos. Espera a palavra divina. Em Cristo, a bênção é segura — sem fraude, sem lágrimas tardias. Amém.`;
 
   if (d.dia === 45) return `PARA PREGAR · Gênesis 27:41–45
 
+---
+
+TÍTULO DO SERMÃO
+"O Ódio que Coloca a Graça em Peregrinação: porque a inimizade fraterna se torna caminho providencial da promessa"
+
 BIG IDEA
-"O ódio fraterno coloca em fuga o herdeiro da promessa — a graça começa a peregrinar."
+O ódio fraterno coloca em fuga o herdeiro da promessa, mas Deus transforma essa fuga em caminho providencial da graça.
 
-MOVIMENTOS DO TEXTO
-[A]   · Esaú se enche de ódio e planeja matar Jacó
-      → O pecado não confessado fermenta em violência interior
+PERGUNTA DE TRANSIÇÃO
+Por que o ódio fraterno coloca em fuga o herdeiro da promessa, e como Deus transforma essa fuga em caminho da graça?
 
-◉ [X]   · REBECA ENVIA JACÓ PARA HARÃ — A FUGA QUE SE TORNARÁ PROMESSA
-      → Deus usa a fuga humana como início do caminho da aliança
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as RAZÕES pelas quais o ódio de Esaú força a peregrinação de Jacó e abre caminho providencial para a aliança.
 
-[A']  · "Por que perderia eu os dois num só dia?"
-      → O pecado fragmenta a casa que Deus quer reunir em bênção
+---
 
-EIXO CRISTOLÓGICO
-Mt 5:44: "amai os vossos inimigos" — em Cristo a inimizade entre irmãos cede à reconciliação evangélica.`;
+MOVIMENTOS DO SERMÃO
+
+I. PORQUE O PECADO NÃO CONFESSADO FERMENTA EM VIOLÊNCIA (A)
+§ Indicação Textual: Gn 27.41 — "aborreceu Esaú a Jacó... e disse Esaú no seu coração: chegam-se os dias de luto de meu pai; então matarei a meu irmão Jacó".
+§ Exegese: "Wayyistom" (odiou intensamente) e o cálculo frio (esperar a morte do pai) revelam ódio profundo. O paralelo com Caim (Gn 4) é deliberado: o irmão mais velho planeja matar o menor.
+§ Teologia Reformada: O sexto mandamento (CFW XIX) condena o ódio como assassinato no coração (Mt 5.21-22; 1Jo 3.15).
+§ Aplicação: Examine o ódio em seu coração; ele já é homicídio. Confesse e arrependa-se.
+
+II. PORQUE A FUGA HUMANA SE TORNA CAMINHO DA ALIANÇA — CENTRO X
+§ Indicação Textual: Gn 27.42-45 — Rebeca envia Jacó a Harã: "ergue-te e foge para Labão, meu irmão, em Harã".
+§ Exegese: O verbo "berah" (fugir) será chave na história de Jacó. O que parece exílio será, providencialmente, a sala de aula onde Deus moldará Jacó até virar Israel. A fuga é vocação disfarçada.
+§ Teologia Reformada: A providência redentora (CFW V; Rm 8.28) transforma os reveses em meios de graça. Deus usa até a violência alheia para conduzir os seus.
+§ Aplicação: O que parece fuga forçada na sua vida pode ser caminho da graça. Confie no Deus que conduz.
+
+III. PORQUE O PECADO FRAGMENTA O QUE DEUS QUER REUNIR (A')
+§ Indicação Textual: Gn 27.45 — "por que seria eu desfilhada de ambos num só dia?"
+§ Exegese: "Lammah eshkal gam-sheneikhem yom ehad" (por que eu perderia ambos num só dia?) — palavras de Rebeca cumpridas tragicamente: ela morrerá antes do retorno de Jacó. Não verá mais o filho amado.
+§ Teologia Reformada: As consequências do pecado (CFW VI.6) podem ser duradouras mesmo quando perdoadas. O perdão não anula sempre as cicatrizes.
+§ Aplicação: Não trate o pecado com leveza; ele fragmenta o que Deus quer reunir.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+Jacó é forçado ao exílio, mas será no caminho que terá a visão da escada de Betel (Gn 28). O que era fuga torna-se peregrinação santa. Em Cristo, vemos plenamente como o ódio fraterno se torna via redentora: o ódio dos irmãos crucificou o verdadeiro Filho amado, e foi precisamente na cruz que a salvação se consumou. "Amai os vossos inimigos" (Mt 5.44) — Cristo nos ensina a transformar a inimizade em reconciliação. Em Cristo, até a fuga é vocação.
+
+DOUTRINA CENTRAL
+Deus transforma o ódio fraterno e a fuga forçada em caminho providencial pelo qual conduz seus eleitos à maturidade da aliança.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Anuncie reconciliação fraternal; o ódio cristão é contradição.
+▸ Para as Famílias: Trabalhe a paz entre irmãos; a fragmentação custa cara.
+▸ Para o Discípulo: Confie que as fugas forçadas da sua vida são caminhos providenciais.
+
+CONCLUSÃO
+Esaú odeia. Jacó foge. Rebeca não verá mais o filho. E Deus continua tecendo a história da redenção. Em Cristo, a intensidade do ódio fraterno se transforma em via redentora — a cruz onde os irmãos crucificaram o Justo virou o lugar da reconciliação universal. Você que foge ou é fugido, ouça: o caminho de Harã pode ser caminho de Betel. Em Cristo, a graça peregrina conosco, e a fuga vira vocação. Amém.`;
 
   if (d.dia === 46) return `PARA PREGAR · Gênesis 27:46–28:9
 
+---
+
+TÍTULO DO SERMÃO
+"O Envio Consciente de Jacó: como a graça torna explícita a vocação que antes fora tomada pelo engano"
+
 BIG IDEA
-"O envio de Jacó torna explícita a vocação que ele havia tomado por engano."
+O envio consciente de Jacó torna explícita a vocação que ele havia inicialmente tomado por meio de engano.
 
-MOVIMENTOS DO TEXTO
-[A]   · Rebeca expressa cansaço das mulheres heteias
-      → A dor da família sem aliança força decisões longas adiadas
+PERGUNTA DE TRANSIÇÃO
+De que forma o envio consciente de Jacó torna explícita a vocação que ele inicialmente havia tomado por meio de engano?
 
-◉ [X]   · ISAQUE ABENÇOA JACÓ COM A BÊNÇÃO DE ABRAÃO E O ENVIA
-      → A bênção tomada por engano é agora dada conscientemente — Deus reordena tudo
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais o envio solene de Jacó por Isaque transforma em vocação pública a bênção que antes fora apropriada às escondidas.
 
-[A']  · Esaú toma também uma filha de Ismael, tentando agradar
-      → O coração profano corrige por fora o que continua igual por dentro
+---
 
-EIXO CRISTOLÓGICO
-Ef 1:3: "nos abençoou com toda sorte de bênção espiritual" — em Cristo recebemos a bênção de Abraão integralmente.`;
+MOVIMENTOS DO SERMÃO
+
+I. REVELANDO QUE A DOR DA CASA SEM ALIANÇA PRESSIONA A VOCAÇÃO ESQUECIDA (A ↔ A')
+§ Indicação Textual: Gn 27.46 (Rebeca cansada das mulheres heteias) ecoa em 28.6-9 (Esaú procurando esposa entre os ismaelitas), formando inclusio sobre o tema dos casamentos pagãos que ameaçam a linhagem da promessa.
+§ Exegese: O termo hebraico "qatsti bechayyay" (estou enfastiada da minha vida) revela o peso espiritual da mistura com Hete. O verbo "laqach" (tomar esposa) estrutura toda a perícope, opondo a escolha segundo a aliança à imitação carnal de Esaú.
+§ Teologia Reformada: A CFW XXIV ensina que o matrimônio cristão deve ser somente no Senhor, pois a aliança nupcial reflete a aliança da graça. Casamentos fora da fé colocam em risco a fidelidade ao Deus da promessa.
+§ Aplicação: Que misturas você tolera em silêncio na sua casa por não querer enfrentar o conflito? A fidelidade à aliança às vezes exige decisões dolorosas que se adiavam há tempo.
+
+II. REVELANDO QUE O ENVIO SOLENE TRANSFORMA O ROUBO ANTERIOR EM VOCAÇÃO PÚBLICA (B) — CENTRO REDENTIVO
+§ Indicação Textual: Gn 28.3-4 — "O Deus Todo-Poderoso te abençoe... e te dê a bênção de Abraão" — é o coração do texto: a bênção patriarcal agora é proferida consciente, pública, sem disfarce.
+§ Exegese: A expressão "El Shaddai" aparece pela primeira vez ligada à transmissão da bênção a Jacó. O verbo "natan" (dar) substitui o "laqach" (tomar) do capítulo 27: agora a bênção é doada, não arrancada. A fórmula "bênção de Abraão" liga explicitamente Jacó à aliança patriarcal.
+§ Teologia Reformada: A CFW VII ensina que a aliança da graça é monergisticamente conduzida por Deus, que confirma seus propósitos mesmo através de instrumentos falhos. O que parecia roubo torna-se vocação porque o decreto eterno já havia escolhido Jacó (Rm 9.11-13).
+§ Aplicação: Você reconhece publicamente diante da sua casa a vocação que Deus lhe deu, ou a vive aos pedaços e às escondidas? A bênção precisa ser pronunciada para frutificar.
+
+III. REVELANDO QUE O CORAÇÃO PROFANO TENTA CORRIGIR POR FORA O QUE PERMANECE IGUAL POR DENTRO (A')
+§ Indicação Textual: Gn 28.6-9 — Esaú, vendo que Isaque enviou Jacó a Padã-Arã, casa-se com Maalate, filha de Ismael, na tentativa de agradar ao pai.
+§ Exegese: O verbo "wayyar Esaw" (e Esaú viu) sugere imitação superficial. Esaú casa-se com uma filha de Ismael — o ramo já rejeitado da aliança. A correção é apenas exterior; o coração profano (Hb 12.16) continua o mesmo.
+§ Teologia Reformada: O Catecismo Maior de Westminster (q. 76) distingue arrependimento evangélico (mudança de coração) de remorso natural (ajuste de comportamento). Esaú representa o segundo: o profano que busca agradar sem se converter.
+§ Aplicação: Você está corrigindo só a fachada da sua vida, ou está deixando Deus reformar o coração? A religião exterior nunca substitui a regeneração interior.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A bênção de Abraão consignada solenemente a Jacó atravessa a história até desembocar em Cristo, o verdadeiro descendente em quem todas as famílias da terra são abençoadas (Gl 3.14, 16). O que Isaque pronunciou sobre Jacó — "que te dê a bênção de Abraão" — Paulo proclama cumprido pela fé em Jesus: "para que a bênção de Abraão chegasse aos gentios em Cristo Jesus". Onde Esaú tentou agradar pela carne, Cristo, o segundo Adão, agrada o Pai pela perfeita obediência e nos transmite, pelo Espírito, a herança eterna.
+
+DOUTRINA CENTRAL
+A vocação eterna de Deus, dada por pura graça, transforma o pecador escolhido em vaso público da promessa abraâmica cumprida em Cristo.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Pronuncie publicamente sobre seus filhos e novos convertidos a bênção da aliança; o que se confessa em voz alta frutifica em vocação visível.
+▸ Para as Famílias: Não tolere em silêncio uniões e amizades que solapem a fidelidade ao Senhor; a saúde espiritual da casa pede decisões claras.
+▸ Para o Discípulo: Examine se está corrigindo apenas a fachada da vida ou se permite que Deus reorganize o coração.
+
+CONCLUSÃO
+A bênção que Jacó tomou por engano é agora dada por envio consciente. O que Deus decretou na eternidade ele cumpre na história — mesmo através de instrumentos falhos como nós. Cristo é o verdadeiro herdeiro da bênção de Abraão, e em sua cruz a bênção tomada à força foi devolvida ao Pai e redistribuída a todos os que creem. Não imite Esaú, ajustando o exterior para agradar; deixe que o Espírito reescreva o seu interior. Receba hoje, pela fé, a bênção que não termina: a comunhão eterna com o Deus de Abraão, Isaque e Jacó, agora revelado em Jesus Cristo. Amém.`;
 
   if (d.dia === 47) return `PARA PREGAR · Gênesis 28:10–22
 
+---
+
+TÍTULO DO SERMÃO
+"Betel, a Escada da Graça: como Deus desce até o fugitivo prometendo acompanhá-lo até o último passo"
+
 BIG IDEA
-"No deserto da fuga, Deus desce a escada e promete estar com o fugitivo."
+No deserto mesmo da fuga, Deus desce a escada para prometer estar com o fugitivo até o último passo do caminho.
 
-MOVIMENTOS DO TEXTO
-[A]   · Jacó dorme em Luz; pedra como travesseiro
-      → Quem foge para Deus encontra Deus mesmo no caminho da fuga
+PERGUNTA DE TRANSIÇÃO
+Como, no deserto mesmo da fuga, Deus desce a escada para prometer estar com o fugitivo até o último passo do caminho?
 
-[B]   · Sonha com a escada que liga céu e terra
-      → O céu se inclina para o homem onde o homem nem o procurava
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais Deus se revela ao fugitivo solitário e transforma o pó do deserto em casa de Deus e porta do céu.
 
-◉ [X]   · "ESTE É A CASA DE DEUS E A PORTA DO CÉU"
-      → Onde Deus se revela, o lugar comum se torna santuário
+---
 
-[B']  · Jacó ergue a pedra como coluna e chama Betel
-      → A revelação se materializa em sinal duradouro para a memória
+MOVIMENTOS DO SERMÃO
 
-[A']  · Jacó faz voto: "o SENHOR será o meu Deus"
-      → A peregrinação se transforma quando se firma como aliança pessoal
+I. REVELANDO QUE DEUS DESCE A ESCADA ATÉ O FUGITIVO SOLITÁRIO (A ↔ A')
+§ Indicação Textual: Gn 28.10-12 (a escada com anjos subindo e descendo) ecoa em 28.20-22 (o voto solene de Jacó), formando inclusio sobre a iniciativa divina que produz resposta humana de aliança.
+§ Exegese: O hebraico "sullam" (escada/rampa) é hapax legomenon ligado a estruturas que conectam terra e céu, como os zigurates. Os anjos "subindo e descendo" iniciam o movimento a partir da terra, sublinhando que o ponto de encontro é onde Jacó está: no chão, na solidão.
+§ Teologia Reformada: A CFW VII ensina que toda comunhão entre Deus e o pecador é mediada por aliança graciosa. Deus se inclina ao homem caído porque a iniciativa é monergisticamente sua. Não é Jacó quem sobe — é Deus quem desce.
+§ Aplicação: Onde você espera encontrar Deus apenas em templos e momentos sagrados, ele já desceu a escada até o seu deserto. Reconheça que ele esteve aqui sem que você soubesse.
 
-EIXO CRISTOLÓGICO
-Jo 1:51: "vereis o céu aberto e os anjos subindo e descendo sobre o Filho do Homem" — Cristo é a escada de Betel.`;
+II. REVELANDO QUE A PROMESSA DE DEUS ABRAÇA O FUGITIVO ATÉ O ÚLTIMO PASSO (B ↔ B')
+§ Indicação Textual: Gn 28.13-15 (a promessa: "eis que estou contigo") encontra eco em 28.18-19 (Jacó erige a pedra como coluna e chama o lugar de Betel), unindo palavra divina e sinal humano.
+§ Exegese: A promessa contém sete cláusulas — número da plenitude — culminando em "não te deixarei até que tenha feito o que te hei dito". O verbo "shamar" (guardar) garante presença custodiante. A pedra-coluna ("matsevah") torna-se memorial visível da palavra invisível.
+§ Teologia Reformada: A CFW XVII (Perseverança dos Santos) ensina que aqueles que Deus efetivamente chamou jamais cairão completamente nem definitivamente, pois Deus mesmo os guarda pelo seu poder. A promessa a Jacó é tipo da perseverança garantida em Cristo.
+§ Aplicação: Quando você teme que Deus o abandone no caminho da fuga, lembre-se: ele jurou ficar até o cumprimento total. Sua perseverança não depende de você, mas dele.
+
+III. REVELANDO QUE BETEL É A PORTA DO CÉU ABERTA SOBRE O DESERTO (C) — CENTRO X
+§ Indicação Textual: Gn 28.16-17 — "Realmente o SENHOR está neste lugar; e eu não o sabia... esta é a casa de Deus e a porta do céu" — é o coração do quiasma, o ponto de inversão entre revelação e resposta.
+§ Exegese: O nome "Bet-El" significa "casa de Deus", e "shaar hashamayim" (porta do céu) prefigura o santuário e, finalmente, Cristo (Jo 1.51). A confissão "eu não o sabia" mostra a graça preveniente: Deus está antes de qualquer consciência.
+§ Teologia Reformada: A CFW V (Providência) ensina que Deus, por sua sabedoria infinita, governa cada lugar e momento, mesmo quando o crente nada percebe. O lugar comum se torna santuário pela presença, não pela arquitetura.
+§ Aplicação: Você já parou para reconhecer "Deus estava aqui e eu não sabia"? Aprenda a discernir a presença nos lugares mais áridos da sua vida.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A escada de Betel encontra seu cumprimento em João 1.51, quando Jesus diz a Natanael: "vereis o céu aberto e os anjos de Deus subindo e descendo sobre o Filho do Homem". Cristo é a verdadeira escada — o único mediador entre Deus e os homens (1Tm 2.5). Em sua encarnação, Deus desceu definitivamente; em sua ressurreição e ascensão, o caminho até o céu foi pavimentado para os fugitivos arrependidos. Onde Jacó viu pedras, vemos o Cordeiro; onde Jacó fez voto, fomos selados pelo Espírito.
+
+DOUTRINA CENTRAL
+Deus desce graciosamente até o pecador peregrino e firma com ele aliança custodiante cumprida em Cristo, a verdadeira escada do céu.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Celebre que a casa de Deus não está no templo de pedra, mas onde Cristo é proclamado entre os peregrinos.
+▸ Para as Famílias: Erga "pedras de memorial" para que os filhos saibam onde Deus encontrou a sua casa no deserto.
+▸ Para o Discípulo: Não despreze o lugar comum onde você acorda hoje; pode ser que Deus já tenha estado aí toda a noite.
+
+CONCLUSÃO
+A escada de Betel ainda está erguida — agora em Cristo crucificado e ressurreto. Você não precisa subir até Deus; ele desceu até você. No deserto da sua fuga, o céu está aberto. Acorde da inconsciência e diga: "Realmente o SENHOR está neste lugar". Erga a pedra do seu coração, derrame sobre ela o óleo da consagração, e faça voto: "o SENHOR será o meu Deus". A promessa não fala em condição; fala em graça. Ele jurou estar contigo até o último passo — e em Cristo já cumpriu o juramento. Caminhe, pois, sem temor: o Deus de Betel é o seu Deus para sempre. Amém.`;
 
   if (d.dia === 48) return `PARA PREGAR · Gênesis 29:1–14b
 
+---
+
+TÍTULO DO SERMÃO
+"Junto à Fonte da Providência: como Deus guia o fugitivo ao encontro previamente preparado pela sua mão"
+
 BIG IDEA
-"A providência guia o fugitivo até a fonte onde Deus já preparara o encontro."
+A providência divina guia o fugitivo até a fonte onde Deus já havia preparado antecipadamente o encontro decisivo.
 
-MOVIMENTOS DO TEXTO
-[A]   · Jacó chega ao poço onde se aguam os rebanhos
-      → A providência prepara fontes para os que peregrinam pela fé
+PERGUNTA DE TRANSIÇÃO
+Por que a providência guia o fugitivo até a fonte onde Deus já havia preparado antecipadamente o encontro decisivo?
 
-◉ [X]   · JACÓ ENCONTRA RAQUEL E ROLA A PEDRA DO POÇO
-      → Quem confia em Deus encontra a força para o passo decisivo no tempo certo
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as RAZÕES pelas quais o Senhor conduz silenciosamente o peregrino ao poço onde a história da promessa já estava previamente arranjada.
 
-[A']  · Labão corre ao encontro do parente: "és meu osso e minha carne"
-      → A providência prepara casa para acolher o peregrino em fuga
+---
 
-EIXO CRISTOLÓGICO
-Jo 4:7: "veio uma mulher de Samaria tirar água; disse-lhe Jesus: dá-me de beber" — em Cristo, junto à fonte, a noiva é encontrada.`;
+MOVIMENTOS DO SERMÃO
+
+I. PORQUE A PROVIDÊNCIA PREPARA FONTES PARA OS QUE PEREGRINAM PELA FÉ (A ↔ A')
+§ Indicação Textual: Gn 29.1-3 (o poço com a grande pedra) ecoa em 29.13-14 (Labão correndo ao encontro de Jacó e o reconhecendo como "osso e carne"), formando inclusio de hospitalidade providencial preparada de antemão.
+§ Exegese: O hebraico "beer" (poço) é local recorrente de encontros provid­enciais em Gênesis (Agar, Rebeca, Jacó). A "grande pedra" sobre a boca do poço prefigura o obstáculo que a fé é chamada a remover no tempo certo. O verbo "ruts" (correr) marca a iniciativa graciosa do anfitrião.
+§ Teologia Reformada: A CFW V.2 ensina que a providência ordinária se serve de meios. Deus não interrompe a marcha do fugitivo com milagres espetaculares; ele já dispôs poço, pastores e parentes no caminho.
+§ Aplicação: Você reconhece o quanto Deus já dispôs antes de você chegar? Aprenda a ler a providência discreta nos detalhes do seu cotidiano.
+
+II. PORQUE A FÉ RECONHECE O TEMPO DE AGIR DECISIVAMENTE (C) — CENTRO X
+§ Indicação Textual: Gn 29.9-12 — Jacó vê Raquel, rola sozinho a pedra do poço, dá de beber às ovelhas e beija a prima chorando alto — é o ápice do quiasma.
+§ Exegese: O verbo "galal" (rolar) é tradicionalmente coletivo (três pastores juntos); Jacó o realiza sozinho. A força incomum prefigura o "Espírito do Deus de Jacó". O choro alto ("yissa qolo wayyevek") é catarse do exilado que encontra família.
+§ Teologia Reformada: A CFW XVI ensina que a fé verdadeira produz boas obras como fruto inevitável. Quando Deus chama, a fé age — não num impulso autossuficiente, mas na convicção de que o passo decisivo é dele primeiro.
+§ Aplicação: Há uma pedra que Deus está pedindo que você role hoje? Não espere que outros venham; aja na força que a providência lhe deu.
+
+III. PORQUE O DEUS DA ALIANÇA PROVIDENCIA CASA AO PEREGRINO (A')
+§ Indicação Textual: Gn 29.13-14b — Labão corre, abraça, beija e leva Jacó para casa, declarando: "verdadeiramente és meu osso e minha carne".
+§ Exegese: A fórmula "atsmi uvesari" (osso meu e carne minha) é linguagem de aliança (cf. Gn 2.23). O reconhecimento sanguíneo prefigura a hospitalidade da aliança que recebe o estrangeiro como família.
+§ Teologia Reformada: A CFW XXVI (Comunhão dos Santos) ensina que os crentes, unidos a Cristo, são unidos uns aos outros em vínculo familiar mais profundo que o sangue. A casa de Labão é tipo provisório da casa de Deus.
+§ Aplicação: Sua casa é refúgio para os fugitivos da fé? A igreja recebe os exilados como osso e carne, ou os mantém a distância respeitosa?
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+Jesus, junto a outro poço (Jo 4), encontra a samaritana sedenta — repetindo o padrão de Gênesis em escala redentora: o noivo divino encontra a noiva-Igreja junto à fonte. Onde Jacó rolou a pedra para dar de beber ao rebanho, Cristo rola a pedra do sepulcro para dar água viva ao seu povo. O peregrino solitário do AT prefigura o Filho enviado que, sentado cansado à fonte, busca os seus exilados. A providência junto ao poço aponta para a graça que sempre nos encontra antes de a buscarmos.
+
+DOUTRINA CENTRAL
+Deus dispõe encontros e meios na providência ordinária para conduzir o peregrino até o lugar previamente preparado em sua eternidade.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Reconheça a providência nos contatos "casuais" que Deus arranja; eles podem ser fontes redentoras.
+▸ Para as Famílias: Ensine os filhos a esperar do Senhor as portas que ele abrirá no momento exato.
+▸ Para o Discípulo: Quando se sentir só no caminho, lembre-se: alguém já está correndo ao seu encontro, porque Deus organizou o trajeto.
+
+CONCLUSÃO
+A providência é cuidadosa. Antes que Jacó chegasse, Deus já havia movido Raquel ao poço. Antes que o fugitivo abrisse a boca, o tio já estava se preparando para correr ao encontro. Nada na vida do filho de Deus é acidente: é arranjo do Pai. Em Cristo, o nosso anfitrião eterno corre ao nosso encontro como o pai do pródigo. Você é osso de seus ossos e carne de sua carne. Confie nas pedras que ele lhe pede para rolar hoje; ele lhe dará força. E descanse: a casa que receberá o seu cansaço já está pronta. Amém.`;
 
   if (d.dia === 49) return `PARA PREGAR · Gênesis 29:14c–30
 
+---
+
+TÍTULO DO SERMÃO
+"O Enganador Enganado: como Deus disciplina o filho amado pela própria conduta para amadurecê-lo na graça"
+
 BIG IDEA
-"O enganador é enganado — Deus disciplina pela própria conduta o filho amado."
+Deus usa a disciplina do enganador enganado para amadurecer o filho amado que ainda precisa ser quebrantado.
 
-MOVIMENTOS DO TEXTO
-[A]   · Jacó serve sete anos por Raquel
-      → O amor verdadeiro paga o preço sem reclamar do tempo
+PERGUNTA DE TRANSIÇÃO
+Como Deus usa a disciplina do enganador enganado para amadurecer o filho amado que ainda precisa ser quebrantado?
 
-[B]   · Labão engana Jacó na noite de núpcias
-      → Quem semeou engano colhe engano em silêncio doloroso
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais o Senhor educa Jacó devolvendo-lhe no espelho de Labão o engano que ele próprio semeou em casa.
 
-◉ [X]   · "POR QUE ME ENGANASTE?" — A PERGUNTA QUE JACÓ HAVIA NEGADO
-      → A justiça de Deus devolve ao enganador a própria pergunta que ele evitara
+---
 
-[B']  · Labão impõe mais sete anos por Raquel
-      → A disciplina divina prolonga o tempo até que o caráter mude
+MOVIMENTOS DO SERMÃO
 
-[A']  · Jacó ama Raquel mais que Lia
-      → O coração humano permanece desordenado mesmo sob a disciplina
+I. REVELANDO QUE O AMOR VERDADEIRO PAGA O PREÇO SEM CALCULAR (A ↔ A')
+§ Indicação Textual: Gn 29.15-20 (Jacó serve sete anos por Raquel "como poucos dias") encontra eco em 29.29-30 (Jacó ama Raquel mais que Lia e serve outros sete anos), formando inclusio sobre o serviço por amor.
+§ Exegese: O hebraico "wayyihyu be'enaw keyamim achadim" (foram aos seus olhos como poucos dias) descreve o amor que transcende a fadiga. O verbo "avad" (servir) repete-se sete vezes na perícope, sublinhando o caráter sacrificial da espera.
+§ Teologia Reformada: A CFW XVI ensina que a obediência do crente é "servidão racional" oferecida por gratidão. O amor verdadeiro não calcula o preço; ele paga o que for preciso pelo objeto amado.
+§ Aplicação: Você paga preço silencioso pelo que ama, ou desiste à primeira fadiga? O amor cristão se prova no tempo longo.
 
-EIXO CRISTOLÓGICO
-Gl 6:7: "tudo o que o homem semear, isso também ceifará" — em Cristo, a colheita do engano é interrompida pela cruz.`;
+II. REVELANDO QUE QUEM SEMEIA ENGANO COLHE ENGANO (B ↔ B')
+§ Indicação Textual: Gn 29.21-24 (Labão substitui Raquel por Lia na noite de núpcias) ecoa em 29.27-28 (Labão impõe outros sete anos), unidos pelo verbo "ramah" (enganar).
+§ Exegese: A ironia é cortante: Jacó (que se passou por Esaú diante de Isaque cego) é enganado por Labão diante do véu nupcial. O verbo "ramah" usado por Jacó em 29.25 é o mesmo que Isaque usou em 27.35. O passado se devolve na carne.
+§ Teologia Reformada: A CFW V.5 ensina que Deus permite por algum tempo que seus filhos sejam disciplinados pelas próprias quedas, "para humilhá-los, descobrir-lhes a oculta força da corrupção... e moldá-los a uma dependência mais íntima". A justiça poética é instrumento pedagógico.
+§ Aplicação: O que você está colhendo hoje que talvez tenha semeado ontem? Reconheça a mão pedagógica do Pai nas suas dores presentes.
+
+III. REVELANDO QUE A PERGUNTA SILENCIADA É DEVOLVIDA AO ENGANADOR (C) — CENTRO X
+§ Indicação Textual: Gn 29.25-26 — "Por que me enganaste?" — é o coração do quiasma: a pergunta que Isaque cego não pôde fazer com clareza agora ressoa na boca de Jacó.
+§ Exegese: A resposta de Labão é teológica: "não se faz assim na nossa terra, dar a mais nova antes da primogênita". A inversão da ordem dos nascimentos — tema que Jacó violou — é agora invocada contra ele. Deus fala pelo opressor.
+§ Teologia Reformada: O Catecismo Maior de Westminster (q. 28) ensina que Deus, em sua justiça, usa as próprias culpas dos pecadores para os instruir. A consciência de Jacó é confrontada não por um sermão, mas por um espelho vivo.
+§ Aplicação: Que espelho Deus está colocando diante de você hoje? Aceite o reflexo doloroso como graça que rasga para curar.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+Onde Jacó é disciplinado por suas próprias armas, Cristo, o verdadeiro Israel, é entregue pelas armas dos pecadores e absorve em si toda a colheita do engano humano. Em Cristo, a lei de "tudo o que o homem semear, isso ceifará" (Gl 6.7) é interrompida pela cruz: o inocente colhe o que não plantou para que o culpado colha o que não merece. A disciplina pedagógica do Pai sobre Jacó aponta para a disciplina filial maior — a que recai sobre o Filho amado para que nós, filhos rebeldes, sejamos transformados na graça.
+
+DOUTRINA CENTRAL
+Deus disciplina seus eleitos amorosamente, permitindo que colham o que semearam, para conformá-los à imagem de Cristo.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Não confunda disciplina pastoral com rejeição; é sinal de amor (Hb 12.6).
+▸ Para as Famílias: Mostre aos filhos como Deus usa consequências naturais para formar caráter; não esconda o resultado dos erros.
+▸ Para o Discípulo: Acolha o reflexo doloroso da sua própria conduta nos outros como pedagogia do Pai.
+
+CONCLUSÃO
+A providência tem memória longa. Os sete anos de Jacó por Raquel são também os anos em que Deus o lapida para se tornar Israel. O Pai dos filhos amados não desperdiça nenhuma dor. Em Cristo, o enganador eterno foi desmascarado para sempre, e nós, enganadores arrependidos, encontramos no Filho a colheita que ele plantou em nosso lugar. Receba hoje a disciplina como graça. Veja no espelho duro do presente o convite à humildade. E confie: o Deus que disciplina Jacó é o mesmo que lhe dá Raquel — não tomada à força, mas recebida da mão paterna. Amém.`;
 
   if (d.dia === 50) return `PARA PREGAR · Gênesis 29:31–35; 30:1–24
 
+---
+
+TÍTULO DO SERMÃO
+"Tribos Nascidas na Rivalidade: como Deus forma o seu povo escolhido em meio ao drama familiar"
+
 BIG IDEA
-"Na rivalidade de duas esposas, Deus forma as doze tribos do seu povo escolhido."
+No meio da rivalidade dolorosa entre duas esposas, Deus mesmo forma as doze tribos do seu povo escolhido.
 
-MOVIMENTOS DO TEXTO
-[A]   · Lia, desprezada, recebe filhos do Senhor
-      → Deus se inclina particularmente para a esposa esquecida
+PERGUNTA DE TRANSIÇÃO
+Como, no meio da rivalidade dolorosa de duas esposas, Deus mesmo forma as doze tribos do seu povo escolhido?
 
-[B]   · Raquel inveja Lia e entrega Bila como concubina
-      → A inveja produz arranjos humanos que multiplicam dor
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais a soberania divina edifica a casa de Israel passando por cima da inveja, da concorrência e da dor doméstica.
 
-◉ [X]   · AS TRIBOS NASCEM NO MEIO DA RIVALIDADE — DEUS FORMA SEU POVO
-      → A história santa progride mesmo entre dramas familiares feios
+---
 
-[B']  · Lia entrega Zilpa; a competição se intensifica
-      → A carne ferida tenta vencer pela mesma arma da rival
+MOVIMENTOS DO SERMÃO
 
-[A']  · Deus se lembra de Raquel; nasce José
-      → Deus ouve no tempo dele as orações longamente sustentadas
+I. REVELANDO QUE DEUS SE INCLINA PARA A ESPOSA DESPREZADA (A ↔ A')
+§ Indicação Textual: Gn 29.31-35 (Deus viu que Lia era desprezada e abriu sua madre) ecoa em 30.22-24 (Deus se lembrou de Raquel e abriu sua madre), formando inclusio sobre a memória ativa do Senhor.
+§ Exegese: Os verbos "wayyar" (viu) e "wayyizkor" (lembrou) são performativos: o ver e o lembrar de Deus produzem ação. A repetição do verbo "patach" (abrir) aplicada a ambas mostra que o Senhor não está parcialmente engajado: cada filho é dom direto da sua mão.
+§ Teologia Reformada: A CFW V.7 ensina que Deus opera a salvação por meios que muitas vezes inverte as expectativas humanas — escolhendo o desprezado para confundir o forte. Lia, a preterida, é a mãe de Judá, a tribo da promessa.
+§ Aplicação: Você se sente preterido na sua casa, no seu ministério, no seu trabalho? O Deus que vê os desprezados não esqueceu de você.
 
-EIXO CRISTOLÓGICO
-Ap 7:4–8: "selados, de todas as tribos de Israel" — em Cristo, as doze tribos formadas na dor servem ao Cordeiro.`;
+II. REVELANDO QUE A INVEJA PRODUZ ARRANJOS HUMANOS QUE MULTIPLICAM DOR (B ↔ B')
+§ Indicação Textual: Gn 30.1-8 (Raquel entrega Bila; nascem Dã e Naftali) ecoa em 30.9-13 (Lia entrega Zilpa; nascem Gade e Aser), formando paralelo da competição reprodutiva entre as servas.
+§ Exegese: Os nomes dos filhos contam a história: Naftali significa "minhas lutas" (niftulim) — "lutei lutas de Deus com minha irmã". A linguagem espiritualiza a rivalidade humana. As mandrágoras (30.14-16) revelam que a fé das matriarcas ainda mistura confiança com superstição.
+§ Teologia Reformada: A CFW VI ensina que mesmo a fé verdadeira coexiste com corrupções remanescentes. Deus prossegue sua obra através de instrumentos imperfeitos — não porque endosse o pecado, mas porque sua graça transcende nossa fraqueza.
+§ Aplicação: Suas estratégias para vencer a rival doméstica ou ministerial talvez estejam multiplicando a dor que você queria eliminar. Entregue ao Senhor o que parece "não dar fruto".
+
+III. REVELANDO QUE DEUS FORMA O SEU POVO EM MEIO AO CAOS FAMILIAR (C) — CENTRO X
+§ Indicação Textual: Gn 30.14-21 — os filhos de Lia (Issacar, Zebulom, Diná) — é o coração da perícope: a casa do povo eleito se completa em meio ao escândalo doméstico.
+§ Exegese: O verbo "zavad" (presentear) aplicado a Zebulom mostra que Lia ainda interpreta os filhos como mecanismo para conquistar afeto. Mas a soberania divina usa o que é humano para construir o que é eterno: as doze tribos.
+§ Teologia Reformada: A CFW III (Decretos eternos) ensina que Deus, em sua sabedoria, ordenou os meios e os fins na história da salvação. As doze tribos não nascem por casualidade familiar; nascem por decreto.
+§ Aplicação: Olhe para a sua família com olhos de soberania. O que parece caótico é parte de um propósito maior que você ainda não consegue ler.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+As doze tribos formadas no meio da rivalidade tornam-se as doze tribos seladas em Apocalipse 7.4-8, servindo ao Cordeiro. Cristo, nascido da tribo de Judá — filho de Lia, a desprezada — é o ponto de chegada de toda essa história desordenada. A genealogia em Mateus 1 inclui Tamar, Raabe, Rute e Bate-Seba, lembrando que a graça atravessa rivalidades e escândalos. Em Cristo, Lia desprezada é honrada eternamente; Raquel lembrada vê seu filho José prefigurar o Salvador. Onde havia disputa, a cruz une.
+
+DOUTRINA CENTRAL
+Deus, por sua soberania graciosa, constrói o seu povo através das histórias familiares mais quebradas, gerando em Cristo uma família reconciliada.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: A igreja é família formada na dor de muitos lares; receba as histórias quebradas como matéria-prima da graça.
+▸ Para as Famílias: Não desespere com as fraturas conjugais e fraternais; o Senhor pode fazer das suas dores material das suas obras.
+▸ Para o Discípulo: Veja-se inserido numa história maior do que o seu drama presente; Deus está formando algo eterno em você.
+
+CONCLUSÃO
+As doze tribos não nascem em paz idílica. Nascem em rivalidade, em concorrência, em mandrágoras compradas e ventres abertos por Deus. E exatamente por isso o evangelho é evangelho: Deus pode escrever história santa com tinta tão suja. Em Cristo, Lia é amada para sempre; Raquel é lembrada eternamente; e os filhos da rivalidade tornam-se irmãos do Cordeiro. Não desanime das fraturas da sua casa. O Senhor que viu Lia ainda vê você. O Pai que se lembrou de Raquel ainda se lembra de você. E nas suas mãos, sua história mais doída pode ser tijolo da Nova Jerusalém. Amém.`;
 
   if (d.dia === 51) return `PARA PREGAR · Gênesis 30:25–43
 
+---
+
+TÍTULO DO SERMÃO
+"Bênção que Atravessa o Jogo Sujo: como Deus prospera o seu servo dentro da engrenagem desonesta do mundo"
+
 BIG IDEA
-"A bênção de Deus prospera o seu servo mesmo dentro do jogo desonesto do mundo."
+A bênção de Deus prospera o seu servo mesmo dentro do jogo desonesto e manipulador montado pelo mundo.
 
-MOVIMENTOS DO TEXTO
-[A]   · Jacó pede para voltar à sua terra
-      → A saudade da promessa pressiona o coração do peregrino
+PERGUNTA DE TRANSIÇÃO
+Por que a bênção de Deus prospera o seu servo mesmo dentro do jogo desonesto e manipulador montado pelo mundo?
 
-[B]   · Labão tenta novamente reter Jacó por interesse
-      → Quem usa o servo de Deus por interesse perde quando ele parte
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as RAZÕES pelas quais o Senhor abençoa Jacó no meio das tramas de Labão, mostrando que a prosperidade do justo nasce da fidelidade divina e não da astúcia humana.
 
-◉ [X]   · JACÓ ENGENDRA TÁTICAS COM AS VARAS — MAS DEUS É QUEM ABENÇOA
-      → A bênção não vem do esquema humano; vem da fidelidade divina
+---
 
-[B']  · Os rebanhos malhados se multiplicam para Jacó
-      → A providência prospera o trabalho mesmo em ambiente hostil
+MOVIMENTOS DO SERMÃO
 
-[A']  · Jacó enriquece grandemente em servos e gados
-      → A bênção visível confirma a aliança feita na fuga
+I. PORQUE O CORAÇÃO PEREGRINO ANSEIA POR VOLTAR À PROMESSA (A ↔ A')
+§ Indicação Textual: Gn 30.25-30 (Jacó pede para voltar à sua terra) ecoa em 30.43 (a prosperidade abundante que sela a partida), unindo o desejo da promessa ao seu cumprimento providencial.
+§ Exegese: O verbo "shalach" (envia-me) é o mesmo que o povo usará no Êxodo. Já se prefigura aqui o padrão do "deixa ir o meu povo". A bênção sobre Labão é confessada — "yevarech YHWH otkha biglali" (o SENHOR te abençoou por minha causa) — vinculando Jacó ao mandato abraâmico.
+§ Teologia Reformada: A CFW VII ensina que a aliança da graça produz no eleito o desejo da pátria celestial. O peregrino não se acomoda na terra do estrangeiro; a vocação o pressiona para frente.
+§ Aplicação: Você ainda sente a saudade da promessa, ou se acomodou no Padã-Arã da sua vida? A bênção verdadeira inquieta o coração rumo a Canaã.
 
-EIXO CRISTOLÓGICO
-Mt 6:33: "buscai primeiro o reino... e todas estas coisas vos serão acrescentadas" — em Cristo, a prosperidade segue a obediência.`;
+II. PORQUE O MUNDO MANIPULA O SERVO DE DEUS POR INTERESSE PRÓPRIO (B ↔ B')
+§ Indicação Textual: Gn 30.31-34 (Labão aceita o acordo) ecoa em 30.37-42 (as varas e o esquema de criação), mostrando o jogo astucioso de ambos os lados.
+§ Exegese: A separação dos animais malhados ("aqod", "naqod") aparece sete vezes. O esquema das varas ("maqlot") com cascas descascadas reflete a crença antiga na influência visual sobre a procriação. Mas o texto deixa claro em 31.9 que foi Deus quem operou.
+§ Teologia Reformada: A CFW V.3 ensina que Deus se serve dos meios em sua providência, mas não está limitado por eles. Mesmo as superstições parciais de Jacó são transcendidas pela ação soberana do Senhor.
+§ Aplicação: Você atribui sua prosperidade aos seus esquemas ou à graça? Aprenda a ler a mão de Deus além das suas próprias estratégias.
+
+III. PORQUE A BÊNÇÃO DIVINA TRANSCENDE OS ESQUEMAS HUMANOS (C) — CENTRO X
+§ Indicação Textual: Gn 30.35-36 — Labão separa os animais malhados e os põe a três dias de jornada — é o ponto de inversão: a tentativa de fraudar Jacó torna-se instrumento da bênção divina.
+§ Exegese: A distância de três dias é simbólica: o que Labão tenta esconder, Deus revela e multiplica. O verbo "sur" (afastar) aparece intencionalmente: o ardil humano serve à providência divina.
+§ Teologia Reformada: A CFW V.7 ensina que Deus ordena até os pecados dos homens para o bem dos seus eleitos. A trama de Labão torna-se trampolim para a prosperidade de Jacó.
+§ Aplicação: O que o seu "Labão" tenta esconder de você hoje pode ser o que Deus está preparando para sua maior bênção amanhã.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A prosperidade de Jacó em meio ao jogo sujo de Labão prefigura a história de José no Egito, a de Daniel na Babilônia e, sobretudo, a de Cristo na própria Terra: o Filho amado é entregue às tramas dos homens, e Deus, em sua providência, faz dessas mesmas tramas o instrumento da salvação universal (At 2.23). Em Cristo, o servo verdadeiramente fiel não usa esquemas humanos; ele se entrega na confiança plena ao Pai, e o Pai o ressuscita, dando-lhe nome acima de todo nome. A bênção sobre Jacó aponta para a herança em Cristo, que prospera o seu povo no meio das engrenagens do mundo.
+
+DOUTRINA CENTRAL
+Deus abençoa providencialmente os seus servos no meio do jogo sujo do mundo, transcendendo tanto as tramas hostis quanto os esquemas próprios para cumprir seus propósitos.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Não se deixe seduzir pela lógica do "esperto leva vantagem"; a bênção verdadeira nasce da fidelidade discreta ao Senhor.
+▸ Para as Famílias: Ensine aos filhos que prosperar honestamente sob a mão de Deus vale mais que enriquecer manipulando o sistema.
+▸ Para o Discípulo: Quando estiver no meio do jogo desonesto do mundo, lembre-se: o que prospera você não são suas varas, é a graça.
+
+CONCLUSÃO
+Labão calcula. Jacó esquema. Mas só o Senhor abençoa. A história nos mostra que, debaixo de tantas varas humanas, é a vara da providência divina que escreve a prosperidade do justo. Em Cristo, paramos de confiar em técnicas e descansamos na fidelidade do Pai. Cessa de armar, cessa de manipular, cessa de fraudar. Sirva com integridade e espere do Senhor. O Deus de Jacó, que multiplicou rebanhos em terra estrangeira, é o mesmo que enche o seu cálice em Padã-Arã. A bênção atravessa o jogo sujo. Confie. Amém.`;
 
   if (d.dia === 52) return `PARA PREGAR · Gênesis 31:1–21
 
+---
+
+TÍTULO DO SERMÃO
+"A Voz que Chama de Volta: como a obediência ao Senhor sobrepuja vinte anos de pressão acumulada no exílio"
+
 BIG IDEA
-"A voz de Deus chama o peregrino de volta, e a obediência sobrepuja vinte anos de pressão."
+A obediência à voz que chama o peregrino de volta sobrepuja vinte anos de pressão acumulada no exílio.
 
-MOVIMENTOS DO TEXTO
-[A]   · A inveja dos filhos de Labão muda o ambiente
-      → Quando Deus quer mover, ele esfria o lugar antigo
+PERGUNTA DE TRANSIÇÃO
+Por que a obediência à voz que chama o peregrino de volta sobrepuja vinte anos de pressão acumulada no exílio?
 
-[B]   · O SENHOR ordena: "volta à terra dos teus pais"
-      → A palavra de Deus é o gatilho final de toda mudança verdadeira
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as RAZÕES pelas quais a palavra divina de retorno é mais forte que duas décadas de pressão hostil em terra estrangeira.
 
-◉ [X]   · JACÓ CONVENCE LIA E RAQUEL — "O DEUS DE MEU PAI ESTEVE COMIGO"
-      → A história da fidelidade divina convence a casa a partir junta
+---
 
-[B']  · Raquel rouba os ídolos do pai sem que Jacó saiba
-      → Velhas idolatrias se escondem na bagagem das melhores partidas
+MOVIMENTOS DO SERMÃO
 
-[A']  · Jacó parte sem avisar Labão, atravessa o Eufrates
-      → A obediência da fé toma decisões claras e arrisca o conflito
+I. PORQUE DEUS ESFRIA O LUGAR ANTIGO QUANDO PREPARA O CRENTE PARA MOVER (A ↔ A')
+§ Indicação Textual: Gn 31.1-3 (a inveja dos filhos de Labão e a ordem divina: "volta à terra dos teus pais") encontra eco em 31.17-21 (Jacó parte sem avisar e atravessa o Eufrates), formando inclusio sobre a partida providencial.
+§ Exegese: O verbo "shuv" (volta) ressoa três vezes no oráculo divino. A mudança da "face" de Labão ("eyno") prepara o coração de Jacó para sair. O verbo "ganav" (roubar/enganar) aparece sete vezes na perícope, evocando o tema do engano.
+§ Teologia Reformada: A CFW V.7 ensina que Deus governa as circunstâncias dos seus eleitos, esfriando lugares antigos para conduzi-los a destinos novos. A inveja de outros pode ser, na providência, sinal de partida.
+§ Aplicação: Você está resistindo a partir de um lugar que Deus já esfriou? Reconheça os sinais providenciais como voz divina.
 
-EIXO CRISTOLÓGICO
-Hb 11:21: "Jacó, prestes a morrer, abençoou cada um dos filhos de José" — em Cristo a peregrinação obediente chega à bênção final.`;
+II. PORQUE A FAMÍLIA TESTEMUNHA DA HISTÓRIA DA FIDELIDADE DIVINA (C) — CENTRO X
+§ Indicação Textual: Gn 31.4-16 — Jacó chama Lia e Raquel ao campo e narra a fidelidade do Deus de Betel — é o ponto central: a história compartilhada da graça convence a casa a partir junta.
+§ Exegese: O termo "El Bet-El" (31.13) liga o presente ao passado: o Deus que apareceu em Betel está agora chamando de volta. As esposas respondem com fé: "todas as riquezas que Deus tirou de nosso pai, são nossas e de nossos filhos".
+§ Teologia Reformada: A CFW XXV ensina que a igreja visível é uma família que confessa juntamente a história da fidelidade divina. A unidade conjugal e familiar nasce do testemunho compartilhado das obras de Deus.
+§ Aplicação: Você narra à sua casa as obras concretas que o Senhor fez na sua vida? O testemunho doméstico convence quando se ancora em fatos.
+
+III. PORQUE VELHAS IDOLATRIAS SE ESCONDEM NA BAGAGEM DAS MELHORES PARTIDAS (B')
+§ Indicação Textual: Gn 31.19 — Raquel rouba os terafins (ídolos domésticos) do pai sem que Jacó saiba.
+§ Exegese: O termo "teraphim" designa imagens domésticas associadas à herança e à proteção familiar. A ironia é cortante: enquanto Jacó deixa Padã-Arã, sua esposa carrega na bagagem os deuses de Padã-Arã.
+§ Teologia Reformada: A CFW XXI (Adoração) ensina que o coração humano é fábrica de ídolos. Mesmo a fé verdadeira convive, no peregrino, com resíduos idolátricos que precisam ser purificados.
+§ Aplicação: Que ídolos secretos você carrega na bagagem mesmo quando obedece à voz de Deus? Submeta-os ao escrutínio da palavra antes que produzam fruto amargo.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+O retorno de Jacó a Canaã prefigura o êxodo do Egito (o povo deixando casa de servidão com as riquezas dos opressores) e finalmente a vocação cristã de "sair do mundo" (2Co 6.17). Cristo, o verdadeiro Israel, ouviu a voz do Pai em todos os momentos cruciais e obedeceu, mesmo quando custou a vida. Em Cristo, escutamos o chamado para sair das nossas Padã-Arãs e voltar à pátria celestial — não pelas nossas forças, mas pela voz do Bom Pastor que conhece suas ovelhas pelo nome.
+
+DOUTRINA CENTRAL
+A voz de Deus na vida do crente é mais forte que qualquer pressão acumulada, e a obediência da fé produz partida verdadeira da casa do estrangeiro.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Discipule os crentes a ouvirem a voz do Senhor acima da pressão familiar, social ou profissional.
+▸ Para as Famílias: Narre as obras de Deus na história da sua casa para que partidas obedientes sejam decisões compartilhadas.
+▸ Para o Discípulo: Examine sua bagagem espiritual ao mudar de fase; o que você está levando junto que devia ter ficado para trás?
+
+CONCLUSÃO
+Vinte anos. Vinte anos em terra estrangeira, no jogo desonesto de Labão. Mas uma palavra do Senhor basta: "volta". A obediência da fé não calcula o custo da partida; ela apenas sai. Em Cristo, ouvimos a voz que nos chama de volta ao Pai — e atravessamos o Eufrates da carne em direção à Canaã do Espírito. Largue os terafins escondidos. Esfrie sua afeição pelo lugar que Deus já está esfriando. Levante a sua casa e parta. A providência cuidará do conflito que virá. Amém.`;
 
   if (d.dia === 53) return `PARA PREGAR · Gênesis 31:22–42
 
+---
+
+TÍTULO DO SERMÃO
+"O Deus que Repreende na Noite: como a aliança intervém entre opressor e oprimido para proteger o servo perseguido"
+
 BIG IDEA
-"O Deus da aliança intervém entre opressor e oprimido protegendo o seu servo."
+O Deus da aliança intervém ativamente entre opressor e oprimido para proteger o seu servo perseguido.
 
-MOVIMENTOS DO TEXTO
-[A]   · Labão persegue Jacó por sete dias
-      → O passado não cede facilmente quando se decide partir
+PERGUNTA DE TRANSIÇÃO
+De que forma o Deus da aliança intervém entre opressor e oprimido para proteger ativamente o seu servo perseguido?
 
-[B]   · Deus avisa Labão em sonho: "guarda-te de falar mal"
-      → A providência fecha bocas que poderiam ferir o filho amado
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais o Senhor se interpõe entre Labão e Jacó, calando o opressor e justificando o oprimido pela palavra noturna da aliança.
 
-◉ [X]   · OS ÍDOLOS NÃO SÃO ENCONTRADOS — A PROVIDÊNCIA OCULTA O QUE DEVE SER OCULTADO
-      → O Deus vivo cobre o que ele mesmo decidiu ocultar
+---
 
-[B']  · Jacó confronta Labão com indignação justa
-      → A paciência longa termina em palavra firme quando chega a hora
+MOVIMENTOS DO SERMÃO
 
-[A']  · "O Deus de meu pai me tem repreendido na noite passada"
-      → A peregrinação reconhece publicamente quem foi o verdadeiro protetor
+I. REVELANDO QUE A PERSEGUIÇÃO DO PASSADO NÃO CEDE FACILMENTE (A ↔ A')
+§ Indicação Textual: Gn 31.22-25 (Labão persegue Jacó por sete dias) ecoa em 31.36-42 (a confrontação de Jacó com Labão), formando inclusio sobre a justiça que clama nos lábios do oprimido.
+§ Exegese: O verbo "radaph" (perseguir) é o mesmo que descreverá o Faraó atrás de Israel no Mar Vermelho. A distância "sete dias" (mesma duração da semana criativa) sugere intensidade providencialmente limitada. A confrontação final usa "ana" (afligir) — palavra que ressoa no Êxodo.
+§ Teologia Reformada: A CFW V.5 ensina que Deus prova seus filhos por perseguições, mas limita-as conforme sua sabedoria e cuidado paternal. O passado opressor não tem liberdade absoluta; tem coleira divina.
+§ Aplicação: Que perseguição do seu passado ainda o assedia? Lembre-se: o Senhor já marcou os limites do que ela pode fazer com você.
 
-EIXO CRISTOLÓGICO
-Sl 121:7: "o SENHOR te guardará de todo mal" — em Cristo, o pastor guarda suas ovelhas dos perseguidores antigos.`;
+II. REVELANDO QUE A PROVIDÊNCIA CALA AS BOCAS QUE PODERIAM FERIR (B ↔ B')
+§ Indicação Textual: Gn 31.24 (Deus avisa Labão em sonho: "guarda-te de falar com Jacó, nem bem nem mal") ecoa em 31.29 (Labão reconhece: "o Deus de teu pai me falou na noite passada"), formando paralelo sobre a intervenção noturna divina.
+§ Exegese: A expressão "mittov ad ra" (do bem ao mal) é merismo que abrange toda a fala. Deus literalmente sela a boca do perseguidor. O verbo "shamar" (guardar-te) ressoa o tema da custódia divina sobre o oprimido.
+§ Teologia Reformada: A CFW V.7 ensina que Deus governa as línguas dos homens, frustrando os conselhos dos ímpios em favor de seus eleitos. A oração do justo é eficaz porque o Senhor mesmo intervém nos sonhos do opressor.
+§ Aplicação: Você já agradeceu pelas palavras hostis que nunca foram ditas porque Deus as freou na noite anterior? A providência protege em silêncios.
+
+III. REVELANDO QUE O DEUS VIVO OCULTA O QUE DEVE SER OCULTADO (C) — CENTRO X
+§ Indicação Textual: Gn 31.32-35 — Labão revista as tendas e não encontra os terafins escondidos por Raquel — é o coração da perícope: a busca infrutífera do opressor pelos ídolos.
+§ Exegese: A astúcia de Raquel (alegar impureza menstrual) revela a complexidade da fé peregrina. Mas o foco teológico não está em justificá-la: está em mostrar que Deus mesmo oculta o que decidiu ocultar até que seja purificado em Betel (cap. 35).
+§ Teologia Reformada: A CFW V.3 ensina que Deus, em sua sabedoria, dispõe os meios e os tempos. O encobrimento providencial não endossa o pecado oculto; concede-lhe tempo para a purificação posterior.
+§ Aplicação: Reconheça que a paciência de Deus com os seus ídolos secretos não é endosso; é convite ao arrependimento antes que a busca chegue à sua tenda.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A intervenção noturna de Deus em favor de Jacó prefigura todas as ações providenciais do Senhor em prol dos seus servos perseguidos: José na prisão, Davi nas cavernas, Daniel diante do rei, Paulo nos cárceres. Em Cristo, o servo verdadeiramente perseguido é ouvido pelo Pai (Hb 5.7), e mesmo quando a morte parece vencer, o terceiro dia revela quem é o juiz justo. O Senhor que falou a Labão na noite passada é o mesmo que sela com aliança eterna a sua igreja perseguida.
+
+DOUTRINA CENTRAL
+Deus se interpõe ativamente entre os seus servos e os perseguidores deles, calando bocas, dirigindo sonhos e protegendo até nas tendas escondidas.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Sustente os perseguidos em oração, sabendo que Deus age mesmo nos sonhos dos opressores.
+▸ Para as Famílias: Ensine os filhos que o silêncio dos inimigos pode ser obra invisível do Pai.
+▸ Para o Discípulo: Não tente vingar-se; o Deus que falou na noite passada continua falando.
+
+CONCLUSÃO
+A noite tem voz. E essa voz é do Deus que guarda o seu servo até o último amanhecer. Labão não pôde pronunciar palavra contra Jacó porque o Senhor selou seus lábios em sonho. Em Cristo, temos o Mediador eterno cujo sangue intercede mais alto que qualquer acusação. Quando a perseguição parecer prevalecer, lembre-se: Deus já interveio na noite anterior. Confie no Pastor que guarda das ovelhas. E renuncie aos terafins secretos antes que a próxima revista da graça os encontre na sua tenda. Amém.`;
 
   if (d.dia === 54) return `PARA PREGAR · Gênesis 31:43–54
 
+---
+
+TÍTULO DO SERMÃO
+"Mizpá, a Pedra que Fala: como a aliança coloca uma testemunha viva onde antes se firmava a inimizade"
+
 BIG IDEA
-"Onde a inimizade se firmava, a aliança coloca uma pedra que fala em nome de Deus."
+Onde antes se firmava a inimizade, a aliança coloca uma pedra que passa a falar em nome do Deus vivo.
 
-MOVIMENTOS DO TEXTO
-[A]   · Labão e Jacó concordam em fazer aliança
-      → O Deus que separou agora abre espaço para nova paz
+PERGUNTA DE TRANSIÇÃO
+Como, onde antes se firmava a inimizade, a aliança coloca uma pedra que passa a falar em nome do Deus vivo?
 
-◉ [X]   · A PEDRA E O MONTÃO COMO TESTEMUNHA — MIZPÁ: "O SENHOR VIGIE ENTRE NÓS"
-      → A aliança humana se firma somente sob o olhar do Deus vivo
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais o Senhor transforma o limite hostil entre Jacó e Labão em testemunha sagrada da fidelidade da aliança.
 
-[A']  · Jacó oferece sacrifício, come com os irmãos e Labão parte
-      → A paz selada na adoração libera cada um para seu caminho
+---
 
-EIXO CRISTOLÓGICO
-Cl 1:20: "fazendo a paz pelo sangue da sua cruz" — em Cristo a aliança definitiva pacifica os inimigos antigos.`;
+MOVIMENTOS DO SERMÃO
+
+I. REVELANDO QUE A INIMIZADE LONGA ABRE ESPAÇO À ALIANÇA QUANDO DEUS INTERVÉM (A ↔ A')
+§ Indicação Textual: Gn 31.43-45 (Labão propõe aliança; Jacó ergue uma pedra) ecoa em 31.54 (Jacó oferece sacrifício e come com os irmãos; Labão parte), formando inclusio sobre a paz selada em adoração.
+§ Exegese: O termo "berit" (aliança) aparece três vezes na perícope. O verbo "akhal" (comer juntos) é elemento clássico de pactos antigos. A oferta sacrificial ("zevach") culmina o ritual: a comunhão à mesa pressupõe sangue derramado.
+§ Teologia Reformada: A CFW VII ensina que toda aliança verdadeira é selada com sangue. A paz entre adversários humanos prefigura a paz cósmica selada na cruz, onde o sangue de Cristo reconcilia inimigos antigos.
+§ Aplicação: Há inimizades antigas na sua vida que precisam ser seladas com aliança? Não busque vingança; busque a paz à mesa do Senhor.
+
+II. REVELANDO QUE A PEDRA SE TORNA TESTEMUNHA VIVA SOB O OLHAR DE DEUS (C) — CENTRO X
+§ Indicação Textual: Gn 31.45-53 — a pedra e o montão como testemunhas; Mizpá: "vigie o SENHOR entre mim e ti" — é o coração da perícope.
+§ Exegese: O nome aramaico "Yegar-Sahaduta" (montão do testemunho) e o hebraico "Galeed" (montão-testemunha) revelam a bilingualidade da fronteira. "Mizpah" (atalaia) deriva de "tsaphah" (vigiar). A pedra que era apenas matéria torna-se voz da aliança sob o olhar divino.
+§ Teologia Reformada: A CFW XXII (Juramentos e votos) ensina que invocar a Deus como testemunha confere ao ato humano gravidade absoluta. A aliança humana só tem peso quando ancorada no Deus vivo.
+§ Aplicação: Que pedras de testemunho você ergue na sua vida? Os votos feitos diante de Deus pesam mais que os contratos diante dos homens.
+
+III. REVELANDO QUE A PAZ ADORADA LIBERA CADA UM PARA O SEU CAMINHO (A')
+§ Indicação Textual: Gn 31.54-55 — Jacó oferece sacrifício no monte, come com os irmãos a noite toda, e Labão parte de manhã abençoando filhos e netos.
+§ Exegese: A frase "vayyikra le'echaw" (chamou seus irmãos) é nova: já não há "Labão e Jacó", mas "irmãos" comendo juntos. A paz refeição-mediada antecipa a Ceia. A bênção final de Labão substitui sua ameaça inicial.
+§ Teologia Reformada: A CFW XXI ensina que a adoração comum é o terreno onde inimigos se descobrem irmãos. A mesa do Senhor unifica o que a história separou.
+§ Aplicação: A sua reconciliação produz adoração comum? Sem mesa partilhada, a paz é só trégua.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A pedra de Mizpá prefigura a Pedra de esquina, Cristo, que se torna testemunha eterna da aliança entre Deus e os pecadores reconciliados (Ef 2.14-17). Onde antes havia inimizade — judeu e gentio, opressor e oprimido, devedor e credor — a cruz ergue um memorial vivo: o próprio Cordeiro, sangue da nova aliança. Jacó come com seus inimigos transformados em irmãos; o povo de Deus come com Cristo na Ceia, e os inimigos de outrora se tornam coerdeiros. A pedra que fala em Galeed encontra plenitude na Pedra angular que fala "está consumado".
+
+DOUTRINA CENTRAL
+Deus sela alianças que transformam inimigos em irmãos por meio de sinais visíveis ancorados no seu santo nome.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Trabalhe ativamente reconciliações que culminem na mesa do Senhor; sem isso, a paz é parcial.
+▸ Para as Famílias: Estabeleça "pedras de Mizpá" para que conflitos resolvidos não voltem a ferir o que foi curado.
+▸ Para o Discípulo: Não ria de votos solenes; eles são pedras vivas da sua história espiritual.
+
+CONCLUSÃO
+A pedra de Galeed ainda fala. Onde havia ameaças, agora há vigilância divina. Onde havia inimizade, agora há sacrifício partilhado. Mas há uma pedra maior — a Pedra angular que falou na cruz "Pai, perdoa-lhes". Em Cristo, a aliança final é selada e os inimigos antigos se sentam à mesma mesa. Erga hoje a sua pedra de testemunho: confesse, perdoe, parta a refeição com aquele a quem antes guardava rancor. O Senhor vigie entre vós. Amém.`;
 
   if (d.dia === 55) return `PARA PREGAR · Gênesis 32:1–13
 
+---
+
+TÍTULO DO SERMÃO
+"Antes do Irmão, Encontrar Deus: como anjos, temor e oração preparam o peregrino para o encontro decisivo"
+
 BIG IDEA
-"Antes de encontrar o irmão, o peregrino encontra exércitos angelicais e a si mesmo em oração."
+Antes de encontrar o irmão temido, o peregrino encontra primeiro exércitos angelicais e a si mesmo prostrado em oração.
 
-MOVIMENTOS DO TEXTO
-[A]   · Os anjos de Deus encontram Jacó no caminho
-      → A presença angelical antecipa que Deus assume o conflito
+PERGUNTA DE TRANSIÇÃO
+Por que, antes de encontrar o irmão temido, o peregrino encontra primeiro exércitos angelicais e a si mesmo em oração?
 
-[B]   · Jacó envia mensageiros a Esaú e os ouve voltar com más notícias
-      → O passado mal resolvido reaparece com ameaças concretas
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as RAZÕES pelas quais o Senhor prepara Jacó com a visão dos anjos e com a oração antes da reconciliação concreta com Esaú.
 
-◉ [X]   · "NÃO SOU DIGNO DE TODAS AS TUAS MISERICÓRDIAS" — A ORAÇÃO HUMILDE
-      → O encontro com o irmão começa com encontro humilde com Deus
+---
 
-[B']  · Jacó divide o acampamento em dois por prudência
-      → A fé não despreza prudência; combina oração com sabedoria
+MOVIMENTOS DO SERMÃO
 
-[A']  · "Livra-me da mão de meu irmão Esaú" — clamor final
-      → A oração concreta nomeia o medo diante de quem pode resolvê-lo
+I. PORQUE A PRESENÇA ANGELICAL ANTECIPA QUE DEUS ASSUME O CONFLITO (A ↔ A')
+§ Indicação Textual: Gn 32.1-2 (anjos de Deus encontram Jacó; ele chama o lugar "Maanaim") encontra eco em 32.13 (Jacó passa a noite naquele lugar), formando inclusio sobre o acampamento angelical que protege o peregrino.
+§ Exegese: O termo "machanayim" (dois acampamentos) indica que o exército angelical une-se ao acampamento humano de Jacó. Os "anjos" são os mesmos do sonho da escada em Betel (28.12) — Deus cumpre a promessa de companhia.
+§ Teologia Reformada: A CFW V.1 ensina que a providência divina se serve dos anjos para proteger seus eleitos. Hb 1.14 confirma: os anjos são "espíritos ministradores enviados para servir os que hão de herdar a salvação".
+§ Aplicação: Você crê que está cercado por hostes invisíveis quando enfrenta seus conflitos? A fé enxerga o exército que a carne não vê.
 
-EIXO CRISTOLÓGICO
-Hb 13:6: "o Senhor é o meu auxiliador, não temerei" — em Cristo, a oração transforma medo em confiança.`;
+II. PORQUE O PASSADO MAL RESOLVIDO REAPARECE COM AMEAÇAS CONCRETAS (B ↔ B')
+§ Indicação Textual: Gn 32.3-8 (Jacó envia mensageiros a Esaú; volta a notícia de que vem com quatrocentos homens) ecoa em 32.7-8 (Jacó divide o acampamento em dois por prudência).
+§ Exegese: O número "arba meot ish" (quatrocentos homens) evoca um exército. O verbo "yare" (temer) aparece junto a "yetser" (angustiar-se). A divisão prudencial revela fé que combina confiança e sabedoria estratégica.
+§ Teologia Reformada: A CFW V.5 ensina que Deus deixa que seus filhos enfrentem temores reais para ensiná-los a depender. A prudência humana não nega a oração; complementa-a.
+§ Aplicação: Você combina oração com prudência, ou opõe uma à outra? A fé madura faz as duas coisas com mãos diferentes.
+
+III. PORQUE A ORAÇÃO HUMILDE ABRE A PORTA DO ENCONTRO RECONCILIADOR (C) — CENTRO X
+§ Indicação Textual: Gn 32.9-12 — a oração de Jacó: "Sou indigno de todas as tuas misericórdias... livra-me da mão de meu irmão Esaú" — é o centro estrutural e teológico.
+§ Exegese: A oração tem estrutura clássica: invocação ("Deus de Abraão e Isaque"), confissão de indignidade ("qatonti"), petição concreta ("hatsileni"), e apelo às promessas ("tu disseste"). É a primeira oração formal de Jacó em todo o Gênesis.
+§ Teologia Reformada: O Catecismo Menor de Westminster (q. 98) ensina que a oração é "oferecer a Deus os nossos desejos, por coisas convenientes à sua vontade". A oração de Jacó modela a posição da criatura diante do Criador: indignidade e confiança simultâneas.
+§ Aplicação: Suas orações concretas nomeiam medos específicos? A oração genérica desperdiça a clareza que Deus exige da fé.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A oração de Jacó em Maanaim prefigura a oração de Cristo no Getsêmani: ambos enfrentam o encontro decisivo precedido pela ministração angelical (Lc 22.43). Mas onde Jacó pede livramento da mão do irmão, Cristo entrega-se à mão dos irmãos pecadores para que sejam reconciliados. Em Cristo, somos cercados não apenas por anjos, mas pela nuvem de testemunhas (Hb 12.1), e nossa oração é levada ao Pai pelo Mediador que conhece todas as nossas angústias.
+
+DOUTRINA CENTRAL
+Deus prepara o crente para encontros decisivos por meio da revelação da sua presença angelical e da oração concreta que ele mesmo desperta no coração.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Ensine os crentes a orarem com palavras concretas, nomeando os temores específicos.
+▸ Para as Famílias: Antes de conversas difíceis, reúna a casa em oração; o encontro humano começa no encontro divino.
+▸ Para o Discípulo: Antes de enfrentar o seu Esaú, prostre-se diante do seu Deus.
+
+CONCLUSÃO
+Antes do irmão, o encontro com Deus. Antes do conflito, o cerco dos anjos. Antes da palavra ao adversário, a palavra ao Pai. Jacó nos ensina o caminho: o joelho dobrado prepara o passo firme. Em Cristo, o nosso Mediador eterno, temos acesso ao trono da graça com confiança (Hb 4.16). Nomeie os seus medos diante do Pai. Confesse a sua indignidade. Apele às promessas. E levante-se para o encontro sabendo que os anjos do Deus de Jacó marcham com você. Amém.`;
 
   if (d.dia === 56) return `PARA PREGAR · Gênesis 32:14–22
 
+---
+
+TÍTULO DO SERMÃO
+"Generosidade Concreta na Espera: como o coração ferido se prepara enquanto a oração trabalha em silêncio"
+
 BIG IDEA
-"O coração ferido se prepara com generosidade enquanto a oração trabalha lá no íntimo."
+O coração ferido se prepara com generosidade concreta enquanto a oração trabalha silenciosamente no íntimo.
 
-MOVIMENTOS DO TEXTO
-[A]   · Jacó separa presentes em três grupos para Esaú
-      → A reconciliação custa caro; a fé paga o preço
+PERGUNTA DE TRANSIÇÃO
+Como o coração ferido se prepara com generosidade concreta enquanto a oração trabalha silenciosamente no íntimo?
 
-◉ [X]   · "APAZIGUAREI SUA FACE COM O PRESENTE QUE VAI ADIANTE"
-      → O coração ferido pelo passado planeja restauração no presente
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais Jacó, depois de orar, traduz sua oração em presentes generosos que precedem o seu próprio rosto.
 
-[A']  · Jacó passa a noite no acampamento sozinho
-      → A fé encontra a solidão necessária para o encontro decisivo
+---
 
-EIXO CRISTOLÓGICO
-Rm 12:18: "se for possível... tende paz com todos" — em Cristo a paz se busca com humildade e generosidade.`;
+MOVIMENTOS DO SERMÃO
+
+I. REVELANDO QUE A RECONCILIAÇÃO CUSTA CARO E A FÉ PAGA O PREÇO (A ↔ A')
+§ Indicação Textual: Gn 32.14-21 (Jacó separa 550 cabeças de gado em cinco grupos) ecoa em 32.22 (Jacó passa a noite no acampamento), formando inclusio sobre a preparação custosa e solitária.
+§ Exegese: A lista detalhada — 200 cabras, 20 bodes, 200 ovelhas, 20 carneiros, 30 camelas com filhotes, 40 vacas, 10 novilhos, 20 jumentas, 10 jumentinhos — totaliza 550 animais. A generosidade é precisa, não impulsiva. O verbo "kafar" (cobrir/apaziguar) aparece: "apaziguarei a face dele com o presente que vai adiante de mim".
+§ Teologia Reformada: A CFW XVI ensina que as boas obras autênticas se manifestam em ações concretas, não em sentimentos abstratos. O arrependimento verdadeiro produz restituição mensurável.
+§ Aplicação: Sua reconciliação tem rosto, mãos, animais? A paz que não custa nada não vale o que pretende reconciliar.
+
+II. REVELANDO QUE O CORAÇÃO FERIDO PLANEJA RESTAURAÇÃO ESCALONADA (B) — CENTRO X
+§ Indicação Textual: Gn 32.16-20 — Jacó instrui cada servo a dizer: "é presente de teu servo Jacó enviado ao meu senhor Esaú" — é o centro da estratégia de generosidade.
+§ Exegese: A repetição "lifney" (diante de mim) ocorre quatro vezes em três versículos. A "face" (panim) aparece cinco vezes, prefigurando "Peniel" (face de Deus) no próximo capítulo. Jacó cobre sua face com a face do presente.
+§ Teologia Reformada: A CFW XV (Arrependimento) ensina que a confissão verdadeira inclui frutos dignos de arrependimento. A repetição do título "senhor" sobre Esaú é submissão pública que desfaz a usurpação anterior.
+§ Aplicação: Você está disposto a renunciar publicamente ao orgulho que motivou a ofensa? A generosidade escalonada prepara o terreno onde a palavra de paz pode pousar.
+
+III. REVELANDO QUE A SOLIDÃO PREPARA O ENCONTRO DECISIVO (A')
+§ Indicação Textual: Gn 32.22 — Jacó passa a noite sozinho no acampamento — antecipa a luta com o homem no próximo capítulo.
+§ Exegese: O verbo "luna" (passar a noite) sugere vigília. A solidão é deliberada: ele envia todos adiante e fica para trás. A escuridão prepara a aurora; a solidão prepara o encontro com Deus.
+§ Teologia Reformada: A CFW XXI ensina que a oração privada é meio ordinário de comunhão com Deus. A piedade pública e familiar se nutre da solidão diante do Senhor.
+§ Aplicação: Você cultiva a solidão diante de Deus antes dos grandes momentos? Sem a noite só com Ele, o dia se enche de medo.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A generosidade escalonada de Jacó prefigura o ato supremo de generosidade redentora: Cristo, indo adiante do seu povo, envia-se a si mesmo como presente para apaziguar a face do Pai (Rm 5.10). Mas onde Jacó manda animais para cobrir seu rosto, o Pai envia o próprio Filho como propiciação (1Jo 2.2) que cobre o rosto do pecador. A solidão de Jacó na noite antecipa o Getsêmani solitário do Filho. E onde Jacó pagou caro pela reconciliação com o irmão, Cristo paga infinitamente caro pela reconciliação dos irmãos com o Pai.
+
+DOUTRINA CENTRAL
+A reconciliação verdadeira combina oração interior e generosidade exterior, ambas frutos da graça que prepara o coração ferido para o encontro restaurador.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Promova a cultura da restituição concreta, não apenas do "perdão" verbal.
+▸ Para as Famílias: Ensine os filhos a preparar gestos tangíveis quando precisam reparar ofensas.
+▸ Para o Discípulo: Antes do encontro difícil, ore na solidão e prepare a generosidade concreta que precederá o seu rosto.
+
+CONCLUSÃO
+A reconciliação caminha em duas pernas: oração que sobe ao céu e generosidade que vai adiante do rosto. Jacó orou e enviou 550 animais. Cristo, infinitamente mais generoso, enviou a si mesmo para nos reconciliar. Não pague mal com mal; pague ofensa com presente. Vá adiante com gestos concretos de paz. E retire-se a noite com Deus para que o amanhecer encontre a sua alma curada. A face que você teme pode tornar-se a face que abraça quando você prepara o caminho com generosidade escalonada e oração silenciosa. Amém.`;
 
   if (d.dia === 57) return `PARA PREGAR · Gênesis 32:23–33
 
+---
+
+TÍTULO DO SERMÃO
+"Peniel, a Luta que Redefine: porque quem luta com Deus até o amanhecer sai mancando mas com nome novo"
+
 BIG IDEA
-"Quem luta com Deus até o amanhecer sai mancando — mas com novo nome."
+Quem luta com Deus até o amanhecer sai mancando, mas recebe um nome novo que redefine para sempre a sua identidade.
 
-MOVIMENTOS DO TEXTO
-[A]   · Jacó fica sozinho; um homem luta com ele até o amanhecer
-      → A fé madura nasce no embate solitário com o Deus que parece adversário
+PERGUNTA DE TRANSIÇÃO
+Por que quem luta com Deus até o amanhecer sai mancando, mas recebe um nome novo que redefine sua identidade?
 
-[B]   · O homem toca o quadril; Jacó não o solta
-      → Persistir em meio ao golpe é segredo da bênção verdadeira
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as RAZÕES pelas quais o embate noturno em Peniel quebranta a velha identidade de Jacó para dar à luz a nova identidade de Israel.
 
-◉ [X]   · "QUAL É O TEU NOME?" — A IDENTIDADE É CONFRONTADA E TRANSFORMADA
-      → Deus exige verdade sobre quem somos antes de nos dar novo nome
+---
 
-[B']  · "Já não te chamarás Jacó, mas Israel"
-      → A nova identidade é dom de Deus, não conquista da carne
+MOVIMENTOS DO SERMÃO
 
-[A']  · Jacó chama o lugar Peniel — "vi a Deus face a face"
-      → Quem encontra Deus de verdade sai marcado pelo encontro para sempre
+I. PORQUE A FÉ MADURA NASCE NO EMBATE SOLITÁRIO COM DEUS (A ↔ A')
+§ Indicação Textual: Gn 32.23-25 (Jacó fica sozinho; um homem luta com ele até o amanhecer) ecoa em 32.31-33 (Jacó chama o lugar de Peniel — "vi a Deus face a face"), formando inclusio sobre o encontro corporal com o divino.
+§ Exegese: O verbo "ye'aveq" (lutar) aparece três vezes — faz jogo de palavras com "Yabboq" (Jaboque) e "Ya'aqob" (Jacó). A trindade verbal sugere que a luta é constitutiva da identidade. "Penuel/Peniel" significa "face de Deus".
+§ Teologia Reformada: A CFW XIV (Fé salvadora) ensina que a fé verdadeira é, ao mesmo tempo, dom de Deus e ato do homem, recebimento e luta. Jacó representa o crente que se apega à promessa mesmo quando ela parece adversária.
+§ Aplicação: Você foge da luta noturna, ou se prostra para ser quebrantado? A fé madura aceita o golpe que machuca para receber a bênção que transforma.
 
-EIXO CRISTOLÓGICO
-2Co 5:17: "nova criatura; as coisas velhas já passaram" — em Cristo recebemos o nome novo na luta da fé.`;
+II. PORQUE PERSISTIR APÓS O GOLPE É SEGREDO DA BÊNÇÃO (B ↔ B')
+§ Indicação Textual: Gn 32.26 (o homem toca o quadril de Jacó; "não te deixarei se não me abençoares") ecoa em 32.29 ("já não te chamarás Jacó, mas Israel"), formando paralelo entre súplica e dom.
+§ Exegese: O verbo "naga" (tocar) sobre o "kaf hayyareq" (encaixe do quadril) é toque mínimo com efeito permanente. A persistência expressa-se em "lo ashalchacha" (não te deixarei). A bênção é dada precisamente quando a força carnal é quebrada.
+§ Teologia Reformada: A CFW XVI ensina que a perseverança dos santos não é tenacidade humana, mas obra do Espírito que produz a vontade de não soltar. Jacó persiste porque Deus o segura primeiro.
+§ Aplicação: Não solte o Senhor mesmo quando ele parecer ferir. A bênção mais profunda vem após o quadril deslocado.
+
+III. PORQUE DEUS EXIGE VERDADE SOBRE QUEM SOMOS ANTES DE DAR NOVO NOME (C) — CENTRO X
+§ Indicação Textual: Gn 32.27 — "qual é o teu nome?" — é o coração da perícope: a pergunta que confronta a identidade antiga.
+§ Exegese: A confissão "Jacó" significa "suplantador, enganador" — todo o passado condensado num nome. Só quando o pecador confessa quem é, Deus pronuncia quem ele será: "Israel" (lutador com Deus / Deus contende).
+§ Teologia Reformada: O Catecismo Maior de Westminster (q. 76) ensina que o arrependimento envolve apropriação consciente do próprio pecado. Sem nomear quem somos, não recebemos quem Deus nos faz.
+§ Aplicação: Confesse seu nome antigo: "Eu sou enganador. Eu sou ambicioso. Eu sou orgulhoso". Só aí Deus pronuncia o nome novo que ele preparou para você.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A luta de Peniel prefigura a luta de Cristo no Getsêmani e na cruz: o Filho verdadeiro luta com o Pai até o amanhecer da ressurreição e recebe o "Nome acima de todo nome" (Fp 2.9). Mas onde Jacó saiu mancando, Cristo saiu glorificado, sem osso quebrado (Jo 19.36). E em Cristo, o crente recebe nome novo (Ap 2.17, 3.12) — não pela sua luta, mas pela vitória do Cordeiro. Quem está em Cristo é redefinido: não mais "Jacó-enganador", mas "Israel" — povo de Deus, vencedor pelo sangue.
+
+DOUTRINA CENTRAL
+Deus quebra a velha identidade do pecador e lhe dá nome novo pela luta da fé que culmina em Cristo, o vencedor definitivo.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Acolha os mancos como sinal da graça que toca; a perfeição aparente esconde a falta de luta.
+▸ Para as Famílias: Não esconda dos filhos as marcas das suas lutas com Deus; elas evangelizam mais que palavras.
+▸ Para o Discípulo: Aceite o quadril deslocado como troféu da bênção, não como vergonha a esconder.
+
+CONCLUSÃO
+A noite em Peniel ainda acontece. Deus encontra os seus servos em embates solitários para reescrever-lhes a identidade. Você sairá mancando — mas com nome novo. Em Cristo, o verdadeiro Israel, fomos identificados eternamente como vencedores pelo sangue do Cordeiro. Confesse o seu nome antigo. Não solte o Senhor. Persista até o amanhecer. E saia da luta com a face iluminada por aquele que disse "vi a Deus face a face e a minha vida foi salva". O sol nasce sobre quem luta. Amém.`;
 
   if (d.dia === 58) return `PARA PREGAR · Gênesis 33:1–20
 
+---
+
+TÍTULO DO SERMÃO
+"O Rosto do Irmão como Rosto de Deus: como a graça reconcilia o coração antes mesmo do encontro temido"
+
 BIG IDEA
-"O irmão temido se torna abraço inesperado — Deus reconcilia antes do encontro."
+O irmão antes temido se torna abraço inesperado, mostrando que Deus reconcilia os corações antes mesmo do encontro físico.
 
-MOVIMENTOS DO TEXTO
-[A]   · Jacó organiza a família e se prostra sete vezes
-      → A humildade verdadeira se mostra em gestos concretos diante do ofendido
+PERGUNTA DE TRANSIÇÃO
+De que forma o irmão antes temido se torna abraço inesperado, mostrando que Deus reconcilia antes mesmo do encontro?
 
-[B]   · Esaú corre ao encontro e abraça Jacó chorando
-      → Deus trabalha o coração do ofendido enquanto o ofensor ora
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais o Senhor opera silenciosamente no coração de Esaú enquanto Jacó luta em Peniel, preparando o abraço antes mesmo do encontro.
 
-◉ [X]   · "VI O TEU ROSTO COMO QUEM VÊ O ROSTO DE DEUS"
-      → O encontro reconciliado reflete a face do Deus que reconciliou primeiro
+---
 
-[B']  · Esaú oferece escolta; Jacó recusa por sabedoria
-      → A reconciliação não significa retomar a antiga proximidade
+MOVIMENTOS DO SERMÃO
 
-[A']  · Jacó chega a Siquém e ergue altar a El-Elohé-Israel
-      → A reconciliação termina em adoração ao Deus que a fez possível
+I. REVELANDO QUE A HUMILDADE VERDADEIRA SE MOSTRA EM GESTOS CONCRETOS (A ↔ A')
+§ Indicação Textual: Gn 33.1-3 (Jacó organiza a família e se prostra sete vezes diante de Esaú) ecoa em 33.18-20 (Jacó chega a Siquém e ergue altar a El-Elohé-Israel), formando inclusio entre humildade diante do irmão e adoração diante de Deus.
+§ Exegese: O verbo "shachah" (prostrar-se) repete-se sete vezes — número da plenitude. A prostração reservada a deuses e reis é oferecida ao irmão. A "El-Elohé-Israel" ("Deus, o Deus de Israel") confessa que o nome novo agora se ancora em adoração.
+§ Teologia Reformada: A CFW XV (Arrependimento) ensina que o arrependimento autêntico produz frutos visíveis. A prostração de Jacó incorpora o que sua oração no Maanaim havia confessado: "indignidade".
+§ Aplicação: Sua humildade tem corpo, ou só palavras? Os gestos de reverência diante do ofendido provam o coração quebrantado.
 
-EIXO CRISTOLÓGICO
-2Co 5:18: "tudo provém de Deus, que nos reconciliou consigo mesmo por Cristo" — em Cristo o irmão temido se torna abraço.`;
+II. REVELANDO QUE DEUS TRABALHA O CORAÇÃO DO OFENDIDO ENQUANTO O OFENSOR ORA (B ↔ B')
+§ Indicação Textual: Gn 33.4-7 (Esaú corre, abraça e chora; Jacó apresenta as esposas e filhos) ecoa em 33.12-17 (Esaú oferece escolta; Jacó recusa por sabedoria pastoral).
+§ Exegese: A descrição de Esaú em 33.4 — "ruts" (correu), "chavaq" (abraçou), "naphal" (caiu), "nashaq" (beijou), "bakhah" (chorou) — empilha cinco verbos de afeição em sequência. O texto enfatiza: o coração do ofendido foi trabalhado por Deus.
+§ Teologia Reformada: A CFW V.7 ensina que Deus governa os corações dos homens, inclinando-os conforme sua vontade soberana. A reconciliação é dom divino antes de ser obra humana.
+§ Aplicação: Enquanto você ora em Peniel, Deus pode estar mudando o coração daquele que você teme. Confie no trabalho oculto da providência.
+
+III. REVELANDO QUE O ROSTO RECONCILIADO REFLETE A FACE DE DEUS (C) — CENTRO X
+§ Indicação Textual: Gn 33.10 — "vi o teu rosto como quem vê o rosto de Deus" — é o coração teológico da perícope: a face do irmão reconciliado reflete a face de Peniel.
+§ Exegese: O termo "panim" (rosto) liga explicitamente este encontro a Peniel ("face de Deus"). Jacó vê em Esaú a graça que viu na luta noturna. A reconciliação humana se torna ícone da reconciliação divina.
+§ Teologia Reformada: A CFW XXVI (Comunhão dos Santos) ensina que a comunhão entre os crentes reflete a comunhão com Deus. Onde há graça vertical, brota graça horizontal.
+§ Aplicação: Quando você se reconcilia com seu irmão, está testemunhando algo da face de Deus. Não despreze esse momento sagrado.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+O abraço de Esaú prefigura o abraço do pai do filho pródigo (Lc 15.20), que é, no fim, o abraço do Pai celestial. Cristo é a face de Deus revelada (Jo 14.9): em sua reconciliação cósmica com o Pai, todos os irmãos antigamente afastados são abraçados. Onde Esaú correu, abraçou, beijou e chorou, o Pai eterno corre ao pecador arrependido. O altar em Siquém — "El-Elohé-Israel" — antecipa o altar definitivo da cruz, onde Deus se identifica com seu povo reconciliado para sempre.
+
+DOUTRINA CENTRAL
+Deus opera providencial e graciosamente nos corações de ambos os lados de uma inimizade, preparando o abraço da reconciliação como ícone da sua face misericordiosa.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Encare as reconciliações fraternais como teofanias; a face de Deus se manifesta no abraço dos irmãos.
+▸ Para as Famílias: Não dê por perdida a relação com o "irmão Esaú"; o Senhor está trabalhando.
+▸ Para o Discípulo: Vá ao encontro com humildade gestual; o resultado pode surpreender o seu medo.
+
+CONCLUSÃO
+O que você temeu não aconteceu. O que esperava espada, recebeu abraço. O que se preparou para ouvir como acusação, ouviu como choro de alegria. Assim age o Deus que reconcilia. Em Cristo, vemos a face do Pai correndo ao nosso encontro. Não desista do "Esaú" da sua vida; o Senhor está trabalhando no coração dele enquanto trabalha no seu. Erga depois o seu altar a El-Elohé-Israel: o Deus que é o seu Deus, o Deus que reconcilia, o Deus cuja face brilha no rosto do irmão restaurado. Amém.`;
 
   if (d.dia === 59) return `PARA PREGAR · Gênesis 34:1–31
 
+---
+
+TÍTULO DO SERMÃO
+"Vingança Disfarçada de Zelo Santo: como o coração ainda longe de Deus se traveste de religião"
+
 BIG IDEA
-"A vingança disfarçada de zelo religioso revela um coração ainda longe de Deus."
+A vingança disfarçada de zelo religioso pode revelar um coração que ainda permanece muito longe de Deus.
 
-MOVIMENTOS DO TEXTO
-[A]   · Siquém desonra Diná e pede casamento
-      → O pecado tenta legitimar-se com aparência de respeitabilidade
+PERGUNTA DE TRANSIÇÃO
+Como a vingança disfarçada de zelo religioso pode revelar um coração que ainda permanece muito longe de Deus?
 
-[B]   · Hamor propõe aliança com os filhos de Jacó
-      → O mundo oferece misturas que esvaziariam a vocação do povo
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais o massacre de Siquém desmascara um falso zelo que usa o sinal da aliança como instrumento de crueldade.
 
-◉ [X]   · OS FILHOS PROPÕEM A CIRCUNCISÃO COMO ARMADILHA SAGRADA
-      → Usar o sinal santo como instrumento de vingança profana a aliança
+---
 
-[B']  · Simeão e Levi massacram a cidade no terceiro dia
-      → A vingança disfarçada de justiça produz crueldade sem freio
+MOVIMENTOS DO SERMÃO
 
-[A']  · Jacó repreende: "fizestes-me odioso entre os habitantes da terra"
-      → O pecado dos filhos compromete o testemunho de toda a casa
+I. REVELANDO QUE O PECADO TENTA LEGITIMAR-SE COM APARÊNCIA DE RESPEITABILIDADE (A ↔ A')
+§ Indicação Textual: Gn 34.1-4 (Siquém desonra Diná e pede casamento) ecoa em 34.30-31 (Jacó repreende e os filhos justificam: "trataria ele nossa irmã como prostituta?"), formando inclusio sobre justificações para violências.
+§ Exegese: O verbo "anah" (humilhar/violentar) descreve o ato de Siquém. Mas a sequência "viu, tomou, deitou-se, humilhou" (vv. 2) repete a estrutura de Gn 3.6 (Eva) e Gn 6.2 (filhos de Deus): pecados crescentes começam pelo olhar desordenado.
+§ Teologia Reformada: A CFW VI ensina que o pecado original corrompe todas as faculdades — entendimento, vontade e afetos. Tanto Siquém quanto os filhos de Jacó manifestam essa corrupção embora em formas opostas.
+§ Aplicação: Que pecados você embrulha em justificativas plausíveis? O coração corrupto sempre encontra razões para o que quer fazer.
 
-EIXO CRISTOLÓGICO
-Rm 12:19: "minha é a vingança, eu retribuirei, diz o Senhor" — em Cristo aprendemos a deixar a justiça nas mãos de Deus.`;
+II. REVELANDO QUE O MUNDO OFERECE MISTURAS QUE ESVAZIARIAM A VOCAÇÃO (B ↔ B')
+§ Indicação Textual: Gn 34.5-12 (Hamor propõe aliança matrimonial geral) ecoa em 34.20-24 (Hamor convence a cidade vendo benefícios econômicos).
+§ Exegese: A proposta de "chathunah" (parentesco por casamento) inclui posse compartilhada da terra. A motivação confessada ao povo de Siquém — "seu gado e suas posses serão nossos" — desmascara o interesse mercantil por trás do "casamento misto".
+§ Teologia Reformada: A CFW XXIV ensina que o casamento misto ameaça a fidelidade à aliança. O mundo oferece integração que dilui a vocação peculiar do povo de Deus.
+§ Aplicação: Cuidado com propostas atraentes que diluem sua vocação. O sinal de prosperidade pode ocultar perda de identidade.
+
+III. REVELANDO QUE USAR O SINAL SANTO COMO ARMADILHA PROFANA A ALIANÇA (C) — CENTRO X
+§ Indicação Textual: Gn 34.13-17 — os filhos de Jacó propõem a circuncisão como condição de aliança — é o coração da perícope: a sagrada exigência transformada em estratagema.
+§ Exegese: A expressão "bemirmah" (com engano) qualifica a fala dos filhos — exatamente o termo usado contra Jacó em Gn 27.35. O ciclo do engano continua na próxima geração. O sinal da aliança (circuncisão) é instrumentalizado para crueldade.
+§ Teologia Reformada: A CFW XXVII (Sacramentos) ensina que os sinais sacramentais não são amuletos nem instrumentos manipuláveis. Profanar o sinal é profanar o Senhor que o instituiu.
+§ Aplicação: Você usa elementos sagrados (batismo, ceia, voto, lei) para fins instrumentais? A religião manipulada produz crueldade pior que o paganismo.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A profanação do sinal da circuncisão por Simeão e Levi é o pano de fundo da bênção profética de Jacó em Gn 49.5-7 — "instrumentos de violência são suas espadas... amaldiçoada seja a sua ira". Mas Cristo, o Filho que cumpre a verdadeira circuncisão (Cl 2.11), absorve em si a maldição da violência humana e ressuscita oferecendo perdão até aos que o crucificaram. Onde o sinal foi usado para crueldade, o Cordeiro derrama o seu sangue para a reconciliação. A vingança fraterna em Siquém aponta, por contraste, para a misericórdia fraterna do Filho que pede perdão dos seus algozes.
+
+DOUTRINA CENTRAL
+A vingança humana, mesmo travestida de zelo religioso, profana o sinal da aliança e revela coração ainda não regenerado pela graça que somente Cristo concede.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Vigie contra o uso de palavras e sacramentos como armas; a religião manipulada produz frutos amargos.
+▸ Para as Famílias: Ensine os filhos a discernir entre zelo santo e vingança disfarçada.
+▸ Para o Discípulo: Examine seus motivos quando se sentir "zeloso pela honra de Deus"; pode ser o orgulho ferido buscando vingança.
+
+CONCLUSÃO
+O massacre de Siquém é um espelho terrível. A religião sem coração regenerado se torna mais cruel que o paganismo. Simeão e Levi pensaram defender a honra da irmã, mas mancharam o nome da casa de Jacó entre as nações. Em Cristo, aprendemos outra coisa: a verdadeira honra da Igreja se preserva no sangue do Cordeiro, não no sangue dos inimigos. Não use o sinal santo como armadilha. Não disfarce vingança de zelo. Entregue a justiça àquele que julga retamente. Aprenda com o Filho que perdoou da cruz. Amém.`;
 
   if (d.dia === 60) return `PARA PREGAR · Gênesis 35:1–8
 
+---
+
+TÍTULO DO SERMÃO
+"Sobe a Betel: por que voltar a Deus exige limpar a casa dos ídolos secretos da estrada"
+
 BIG IDEA
-"Voltar a Betel exige limpar a casa dos ídolos que se carregavam em silêncio."
+Voltar a Betel exige que limpemos a casa dos ídolos secretos que continuamos carregando em silêncio na bagagem.
 
-MOVIMENTOS DO TEXTO
-[A]   · Deus ordena a Jacó: "levanta-te, sobe a Betel"
-      → A vida cristã tem momentos de retorno à primeira revelação
+PERGUNTA DE TRANSIÇÃO
+Por que voltar a Betel exige que limpemos a casa dos ídolos secretos que continuamos carregando em silêncio na bagagem?
 
-◉ [X]   · "DAI DE VÓS OS DEUSES ESTRANHOS QUE TENDES" — A CASA SE PURIFICA
-      → Não há retorno a Betel sem renúncia concreta dos ídolos da estrada
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as RAZÕES pelas quais o regresso à casa de Deus pressupõe a renúncia concreta aos deuses estranhos que viajaram conosco no caminho.
 
-[A']  · Jacó constrói altar em Betel — El-Betel
-      → A obediência leva a casa toda ao lugar onde Deus se revelou primeiro
+---
 
-EIXO CRISTOLÓGICO
-Ap 2:5: "lembra-te... de onde caíste, e arrepende-te" — em Cristo somos chamados de volta ao primeiro amor.`;
+MOVIMENTOS DO SERMÃO
+
+I. PORQUE A VIDA CRISTÃ TEM MOMENTOS DE RETORNO À PRIMEIRA REVELAÇÃO (A ↔ A')
+§ Indicação Textual: Gn 35.1-3 (Deus ordena: "levanta-te, sobe a Betel") ecoa em 35.6-7 (Jacó chega a Luz e edifica altar chamado El-Betel), formando inclusio sobre o retorno obediente ao lugar fundante.
+§ Exegese: O verbo "qum" (levantar-se) e "alah" (subir) são imperativos de movimento ascendente. "El-Betel" significa "o Deus de Betel" — Jacó não apenas volta ao lugar, mas ao próprio Deus que ali se revelou. A repetição "anah" (responder/responder com cuidado) destaca a fidelidade divina em tempos de aflição.
+§ Teologia Reformada: A CFW XVII (Perseverança) ensina que os crentes podem cair em pecados sérios e por algum tempo se afastar, mas Deus os restaura ao arrependimento. A vida cristã tem momentos de "subir a Betel" — voltar aos primeiros amores.
+§ Aplicação: Você reconhece o chamado a voltar à primeira revelação? Identifique o "Betel" original da sua história com Deus.
+
+II. PORQUE NÃO HÁ RETORNO A BETEL SEM RENÚNCIA CONCRETA AOS ÍDOLOS (B) — CENTRO X
+§ Indicação Textual: Gn 35.2-4 — "dai de vós os deuses estranhos que tendes, purificai-vos e mudai os vossos vestidos" — é o coração da perícope: a purificação prática que precede a adoração restaurada.
+§ Exegese: Os "elohei hannekar" (deuses estranhos) incluem os terafins roubados por Raquel e provavelmente outros amuletos. Jacó os enterra debaixo do carvalho em Siquém. Os verbos "sur" (afastar), "taher" (purificar) e "chaliph" (trocar vestes) compõem ritual completo de purificação.
+§ Teologia Reformada: A CFW XV (Arrependimento) ensina que o arrependimento autêntico produz "concreta renúncia aos pecados particulares". A purificação não é só interior; ela enterra os ídolos sob o carvalho da memória.
+§ Aplicação: Que ídolos secretos você ainda carrega na bagagem? Identifique-os, nomeie-os, enterre-os sob o carvalho da palavra. Não há ascensão a Betel sem essa morte concreta.
+
+III. PORQUE A OBEDIÊNCIA LEVA A CASA TODA AO LUGAR DA REVELAÇÃO (A')
+§ Indicação Textual: Gn 35.5-8 — o terror de Deus cai sobre as cidades vizinhas; Jacó e toda a sua casa chegam a Betel; Débora morre e é sepultada.
+§ Exegese: O "chittath Elohim" (terror de Deus) protege a casa em movimento. A morte de Débora (ama de Rebeca) sob o "Alon-Bachut" (carvalho do choro) marca o luto da geração anterior. O carvalho dos ídolos enterrados e o carvalho do choro fazem dois marcos sucessivos.
+§ Teologia Reformada: A CFW XXI ensina que a adoração familiar é dever do chefe da casa. A obediência espiritual de Jacó arrasta toda a sua casa para Betel.
+§ Aplicação: A obediência do pai/marido arrasta a casa; sua subida a Betel é convite à família toda.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A subida a Betel prefigura a subida cristã à Jerusalém celestial (Hb 12.22-24). Mas o caminho até lá passa pela enterro dos ídolos no carvalho — sombra da crucificação dos desejos da carne junto a Cristo na cruz (Gl 5.24). Cristo é o nosso novo Betel: nele o céu desce e a terra sobe. Em Cristo, voltamos a casa do Pai com vestes mudadas (Ap 7.14), purificados pelo seu sangue, livres dos deuses estranhos que carregávamos. O Pai espera no monte; o carvalho de Siquém recebe os ídolos enterrados.
+
+DOUTRINA CENTRAL
+O retorno à comunhão íntima com Deus exige renúncia concreta aos ídolos secretos e arrasta a casa inteira ao lugar da revelação restaurada.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Promova momentos de retorno comunitário a Betel — confissões públicas, renúncias concretas, ceia restauradora.
+▸ Para as Famílias: O chefe de casa convoque os seus a enterrar ídolos juntos sob o carvalho da Palavra.
+▸ Para o Discípulo: Faça uma lista dos seus ídolos secretos e marque um dia para enterrá-los.
+
+CONCLUSÃO
+A casa de Jacó subiu a Betel mais leve — sem terafins, sem amuletos, com vestes novas. Subir a Betel é exatamente isso: ascender carregando menos. Em Cristo, recebemos a casa eterna e o vestido lavado no sangue do Cordeiro. Não suba ao monte com a bagagem velha. Renuncie. Enterre. Purifique. Mude de roupa. E leve consigo a sua casa, porque o chamado a Betel é convite familiar. O Deus que respondeu na angústia ainda responde hoje. Levante-se e suba. Amém.`;
 
   if (d.dia === 61) return `PARA PREGAR · Gênesis 35:9–15
 
+---
+
+TÍTULO DO SERMÃO
+"O Novo Nome Confirmado em Adoração: como Deus sela em Betel a identidade Israel que redefine o crente"
+
 BIG IDEA
-"Em Betel o nome Israel é confirmado e a promessa é repetida solenemente."
+A promessa precisa ser solenemente repetida ao crente, confirmando em Betel o nome Israel que redefine sua identidade.
 
-MOVIMENTOS DO TEXTO
-[A]   · Deus aparece novamente a Jacó vindo de Padã-Arã
-      → A revelação se aprofunda quando o crente retorna em obediência
+PERGUNTA DE TRANSIÇÃO
+Por que a promessa precisa ser solenemente repetida ao crente, confirmando em Betel o nome Israel que redefine sua identidade?
 
-◉ [X]   · "NÃO TE CHAMARÁS MAIS JACÓ; ISRAEL SERÁ O TEU NOME"
-      → A nova identidade dada em luta agora é confirmada em adoração
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as RAZÕES pelas quais o Senhor reaparece e reconfirma em Betel tudo o que já havia anunciado em Peniel.
 
-[A']  · Jacó ergue coluna, derrama libação e chama Betel
-      → A identidade transformada se firma em adoração pública duradoura
+---
 
-EIXO CRISTOLÓGICO
-Ap 3:12: "escreverei sobre ele o meu novo nome" — em Cristo a identidade renovada se firma na presença eterna.`;
+MOVIMENTOS DO SERMÃO
+
+I. PORQUE A REVELAÇÃO SE APROFUNDA QUANDO O CRENTE RETORNA EM OBEDIÊNCIA (A ↔ A')
+§ Indicação Textual: Gn 35.9 (Deus aparece novamente a Jacó vindo de Padã-Arã) ecoa em 35.14-15 (Jacó ergue coluna, derrama libação e chama o lugar de Betel), formando inclusio sobre revelação e adoração.
+§ Exegese: O verbo "yera" (apareceu) no nifal indica teofania. A expressão "vindo de Padã-Arã" sublinha que esta é uma nova etapa: o exílio terminou. A libação ("nesek") é elemento ritual novo, ausente em Gn 28 — a adoração amadureceu junto com a fé.
+§ Teologia Reformada: A CFW I (Escritura) ensina que Deus se revela progressivamente: cada novo encontro acrescenta luz ao anterior. A obediência abre passagem a revelações mais profundas.
+§ Aplicação: Você espera nova manifestação de Deus quando volta dos seus exílios? A obediência é o caminho da revelação aprofundada.
+
+II. PORQUE A IDENTIDADE DADA NA LUTA É CONFIRMADA NA ADORAÇÃO (B) — CENTRO X
+§ Indicação Textual: Gn 35.10 — "o teu nome é Jacó; não te chamarás mais Jacó, porém Israel será o teu nome" — é o coração da perícope: confirmação solene em ambiente litúrgico.
+§ Exegese: A reconfirmação do nome ecoa Peniel (32.28), mas agora ocorre em Betel — não na luta, mas na liturgia. Deus se revela como "El Shaddai" (35.11), o mesmo nome com que Isaque abençoara Jacó em 28.3. Toda a história é circularmente selada.
+§ Teologia Reformada: A CFW XXVII ensina que os sacramentos confirmam aquilo que a Palavra anuncia. Aqui, o altar, a coluna, o azeite e a libação são sinais visíveis da palavra divina sobre Jacó-Israel.
+§ Aplicação: Você confirma em adoração comunitária os encontros íntimos que tem com Deus? Sem liturgia, a identidade se dissipa.
+
+III. PORQUE A IDENTIDADE TRANSFORMADA SE FIRMA EM ADORAÇÃO PÚBLICA DURADOURA (A')
+§ Indicação Textual: Gn 35.11-13 — "sê fecundo e multiplica-te; nação, e multidão de nações sairão de ti; reis procederão de teus lombos" — e Jacó ergue coluna, derrama libação e óleo.
+§ Exegese: A promessa abraâmica recebe acréscimo: "reis procederão de teus lombos". O futuro davídico/messiânico já está aqui implícito. Os três elementos rituais — coluna, libação, óleo — antecipam o tabernáculo e o ungido.
+§ Teologia Reformada: A CFW XXV (Igreja) ensina que a promessa do reino atravessa todas as gerações. A reis e ao Rei Messias o texto aponta desde a libação em Betel.
+§ Aplicação: Suas adorações públicas afirmam que o Deus de Betel é Rei e que dele virá o Rei? A liturgia anuncia o futuro reino.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A promessa de "reis procederão de teus lombos" se cumpre em Davi e culmina em Cristo, o Rei dos reis (Ap 19.16). O nome Israel firmado em Betel prefigura o Nome acima de todo nome dado ao Filho ressurreto (Fp 2.9). Em Cristo, recebemos identidade nova (2Co 5.17) e nome novo (Ap 2.17), confirmados não em uma coluna de pedra mas em sua cruz e ressurreição. A libação derramada por Jacó aponta para o sangue derramado pelo Filho: ambos selam aliança eterna em Betel — agora a verdadeira casa de Deus, a Igreja.
+
+DOUTRINA CENTRAL
+Deus reconfirma solenemente em adoração pública as identidades novas que concedeu em encontros íntimos, antecipando o Reino do Messias.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Celebre publicamente as conversões, batismos e marcos espirituais; sem liturgia, a identidade individual se dispersa.
+▸ Para as Famílias: Ergam "colunas" — datas, lugares, símbolos — que confirmem as obras de Deus na história familiar.
+▸ Para o Discípulo: Não despreze a confirmação litúrgica do que Deus já fez em segredo; ela ancora a memória.
+
+CONCLUSÃO
+Em Peniel, Deus deu o nome. Em Betel, Deus o confirmou. Em Cristo, ele o sela para a eternidade. A identidade cristã não vive de relâmpagos místicos; ela se firma em adoração comunitária e em sacramentos celebrados. Erga sua coluna. Derrame sua libação. Anuncie diante dos seus que o Deus de Betel reescreveu a sua história. E lembre-se: a promessa "reis procederão de teus lombos" já se cumpriu — o Rei Jesus reina para sempre, e nele todos os filhos de Israel reinarão com ele. Amém.`;
 
   if (d.dia === 62) return `PARA PREGAR · Gênesis 35:16–29
 
+---
+
+TÍTULO DO SERMÃO
+"Entre Nascimentos e Sepulturas: por que a promessa avança entrelaçando alegria e luto pela graça"
+
 BIG IDEA
-"No mesmo caminho da promessa nascem filhos, morrem mães e se sepultam patriarcas."
+No mesmo caminho da promessa, nascem filhos, morrem mães e se sepultam patriarcas entrelaçados pela graça.
 
-MOVIMENTOS DO TEXTO
-[A]   · Raquel dá à luz Benjamim e morre no caminho
-      → A vida de aliança avança entre alegria e luto entrelaçados
+PERGUNTA DE TRANSIÇÃO
+Por que, no mesmo caminho da promessa, nascem filhos, morrem mães e se sepultam patriarcas entrelaçados pela graça?
 
-[B]   · Rúben profana a tenda de seu pai
-      → Pecados de família ferem a herança em silêncio doloroso
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as RAZÕES pelas quais a história santa não dissocia alegria de luto, mas as une no avanço providencial da aliança.
 
-◉ [X]   · OS DOZE FILHOS DE JACÓ — O POVO TEM SUA LISTA COMPLETA
-      → A história santa registra a casa toda mesmo com suas fraturas
+---
 
-[B']  · Jacó chega a Hebrom, à casa de Isaque
-      → O peregrino retorna à casa do pai depois de longa ausência
+MOVIMENTOS DO SERMÃO
 
-[A']  · Isaque morre e é sepultado por Esaú e Jacó
-      → A reconciliação entre os irmãos se confirma diante do túmulo do pai
+I. PORQUE A VIDA DE ALIANÇA AVANÇA ENTRE ALEGRIA E LUTO ENTRELAÇADOS (A ↔ A')
+§ Indicação Textual: Gn 35.16-20 (Raquel dá à luz Benjamim e morre no caminho) ecoa em 35.27-29 (Isaque morre e é sepultado por Esaú e Jacó), formando inclusio sobre nascimento-morte na trajetória da promessa.
+§ Exegese: O nome dado pela mãe moribunda — "Ben-Oni" (filho da minha dor) — é substituído pelo pai por "Benjamim" (filho da direita). A reinterpretação paterna mostra como a fé reescreve a dor em destino. Isaque, com 180 anos, é sepultado pelos dois irmãos reconciliados.
+§ Teologia Reformada: A CFW V.5 ensina que Deus combina misericórdia e provação na vida dos seus filhos. O caminho da promessa nunca é livre de luto, mas o luto nunca interrompe a promessa.
+§ Aplicação: Você espera vida de aliança sem luto? A graça avança no chão entrelaçado de alegria e dor.
 
-EIXO CRISTOLÓGICO
-Hb 11:13: "morreram todos na fé, sem terem recebido as promessas" — em Cristo a peregrinação familiar chega à pátria final.`;
+II. PORQUE PECADOS DE FAMÍLIA FEREM A HERANÇA EM SILÊNCIO DOLOROSO (B ↔ B')
+§ Indicação Textual: Gn 35.21-22 (Rúben dorme com Bila, concubina do pai) ecoa em 35.23-26 (lista completa dos doze filhos), formando paralelo entre fratura e registro fiel.
+§ Exegese: A frase "wayyishma Yisrael" (e Israel ouviu) é interrompida pela maquetá no texto hebraico — silêncio dramático. O pecado de Rúben antecipa a perda da primogenitura (49.4). A lista dos doze filhos vem logo após, como se a história santa não pudesse parar mesmo diante da ofensa.
+§ Teologia Reformada: A CFW VI ensina que a corrupção do pecado original se manifesta mesmo nos filhos da aliança. A história santa não esconde as quedas; registra-as como pano de fundo da graça.
+§ Aplicação: A sua casa carrega ofensas em silêncio doloroso? Confesse-as, mesmo sem alarde, ao Senhor que as registra.
+
+III. PORQUE A HISTÓRIA SANTA REGISTRA A CASA TODA MESMO COM SUAS FRATURAS (C) — CENTRO X
+§ Indicação Textual: Gn 35.23-26 — a lista dos doze filhos de Jacó — é o centro da perícope: o povo da aliança aparece completo em listagem solene.
+§ Exegese: A enumeração segue as mães: Lia, Raquel, Bila, Zilpa. O número doze fecha-se com Benjamim, último a nascer em Canaã. A ordem materna é narrativa de toda a história complicada, mas a lista é completa.
+§ Teologia Reformada: A CFW III ensina que Deus, em sua eleição soberana, escolheu por nome aqueles que pertencem ao seu povo. A lista dos doze é prefiguração do livro da vida do Cordeiro.
+§ Aplicação: Reconheça que mesmo as fraturas da sua história não excluem o seu nome da lista divina; pelo contrário, ela é dada por graça soberana.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+Os doze filhos de Jacó tornam-se as doze tribos de Israel, e Benjamim — o "filho da dor" reinterpretado como "filho da direita" — antecipa Cristo, o Filho de Davi-Benjamim, o Varão de Dores que é constituído à direita do Pai (Sl 110.1). Em Cristo, todas as nossas dores são reinterpretadas: o Ben-Oni se torna Benjamim. As fraturas da casa de Jacó não anulam a aliança porque Cristo, a Pedra angular, sustenta uma casa eterna construída sobre os apóstolos e profetas (Ef 2.20). A lista das doze tribos seladas em Apocalipse 7 é a versão final desta lista em Gênesis 35.
+
+DOUTRINA CENTRAL
+Deus tece a história da promessa entrelaçando nascimentos, mortes, fraturas e reconciliações, registrando fielmente o seu povo até a redenção em Cristo.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Acolha histórias familiares fraturadas como matéria-prima da aliança; ninguém é excluído por bagagem.
+▸ Para as Famílias: Não tente esconder os Rúbens da sua casa; entregue-os ao Senhor que registra a todos.
+▸ Para o Discípulo: Reinterprete suas dores na chave de Benjamim, não na chave de Ben-Oni: o filho da direita do Pai.
+
+CONCLUSÃO
+O caminho da promessa é estrada com cruzes e berços. Raquel morre dando à luz. Isaque é sepultado pelos filhos reconciliados. Rúben falha, e a casa continua avançando. Em Cristo, todas as fraturas são reinterpretadas: o filho da dor torna-se filho da direita. Sua história entrelaçada de alegria e luto é registrada pelo Pai. Sua casa, mesmo com falhas, tem nome na lista do Cordeiro. Confie no Senhor que escreve história santa entre lápides e cordões umbilicais. A promessa não para. Amém.`;
 
   if (d.dia === 63) return `PARA PREGAR · Gênesis 36:1–43
 
+---
+
+TÍTULO DO SERMÃO
+"Tronos do Mundo, Peregrinação do Povo: como a linhagem fora da aliança constrói reis enquanto a igreja ainda peregrina"
+
 BIG IDEA
-"A linhagem que se afastou da aliança constrói reis enquanto Israel ainda é peregrino."
+A linhagem que se afastou da aliança constrói reis enquanto o povo de Deus ainda peregrina sem trono visível.
 
-MOVIMENTOS DO TEXTO
-[A]   · Esaú toma esposas cananeias e parte para Seir
-      → Os caminhos divergentes se separam quando as escolhas se solidificam
+PERGUNTA DE TRANSIÇÃO
+Como a linhagem que se afastou da aliança constrói reis enquanto o povo de Deus ainda peregrina sem trono visível?
 
-◉ [X]   · OS REIS DE EDOM APARECEM ANTES DE QUE HOUVESSE REI EM ISRAEL
-      → O mundo costuma erguer tronos enquanto o povo de Deus ainda peregrina
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais o capítulo de Esaú expõe o contraste entre tronos prematuros do mundo e a peregrinação paciente do povo da promessa.
 
-[A']  · A genealogia de Esaú se completa em Seir
-      → Cada povo tem seu lugar no mapa do Senhor da história
+---
 
-EIXO CRISTOLÓGICO
-Hb 11:16: "aspiravam a uma pátria melhor, isto é, celestial" — em Cristo o povo peregrino recebe reino que não passa.`;
+MOVIMENTOS DO SERMÃO
+
+I. REVELANDO QUE OS CAMINHOS DIVERGENTES SE SEPARAM QUANDO AS ESCOLHAS SE SOLIDIFICAM (A ↔ A')
+§ Indicação Textual: Gn 36.1-8 (Esaú toma esposas cananeias e parte para Seir) ecoa em 36.40-43 (a genealogia completa em Seir), formando inclusio sobre a separação geográfica e espiritual.
+§ Exegese: O verbo "halak" (ir/partir) marca a divergência: "Esaú habitou no monte Seir" porque "a terra das suas peregrinações não os podia sustentar juntos". A linguagem ecoa Gn 13 (Abrão e Ló). A separação é apresentada como inevitabilidade providencial.
+§ Teologia Reformada: A CFW III (Decreto eterno) ensina que Deus, em sua soberania, separou os caminhos de Esaú e Jacó desde o ventre (Rm 9.11-13). A providência confirma na geografia o que o decreto determinou na eternidade.
+§ Aplicação: Não force a permanência junta de caminhos que Deus quer separar. A divergência providencial preserva a vocação do povo da promessa.
+
+II. REVELANDO QUE O MUNDO COSTUMA ERGUER TRONOS PREMATURAMENTE (C) — CENTRO X
+§ Indicação Textual: Gn 36.31 — "estes são os reis que reinaram na terra de Edom, antes que reinasse rei algum sobre os filhos de Israel" — é o coração do capítulo.
+§ Exegese: A lista enumera oito reis em Edom enquanto Israel ainda é peregrino. A frase "antes que reinasse rei algum sobre Israel" é deliberadamente comparativa. O mundo se organiza politicamente antes do povo de Deus — mas seus reinos são transitórios.
+§ Teologia Reformada: A CFW VIII (Cristo o Mediador) ensina que o reino de Cristo, prometido a Davi e cumprido em Jesus, é eterno, ao contrário dos reinos terrenos. Edom levanta tronos cedo, mas Cristo levantará o trono eterno.
+§ Aplicação: Não inveje os tronos prematuros do mundo. O povo de Deus espera Reino que não passa.
+
+III. REVELANDO QUE CADA POVO TEM LUGAR NO MAPA DO SENHOR DA HISTÓRIA (A')
+§ Indicação Textual: Gn 36.40-43 — chefes de Esaú, suas habitações e nações.
+§ Exegese: A precisão genealógica mostra que Deus conhece e registra cada nação, mesmo as que ficaram fora da aliança redentora. Edom será, séculos depois, alvo de juízo profético (Abdias) mas também recebe vestígios de misericórdia.
+§ Teologia Reformada: A CFW V (Providência) ensina que Deus governa universalmente todas as nações. Mesmo os que se separam da aliança permanecem sob a sua mão.
+§ Aplicação: Reconheça que Deus se importa com o destino de todos os povos, inclusive os que parecem opositores; isso governa nossa missão.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A oposição entre Edom (tronos prematuros) e Israel (peregrinação paciente) culmina em Herodes — descendente edomita — sentado em trono de Israel quando Cristo nasce. O Rei verdadeiro, descendente de Jacó, é perseguido pelo rei de descendência de Esaú. Mas o Reino de Cristo prevalece: enquanto Edom desaparece da história, a Igreja, povo peregrino, herda toda a terra (Mt 5.5; Hb 12.28). O cetro que prevalecerá é o de Judá (Gn 49.10), não o de Esaú.
+
+DOUTRINA CENTRAL
+Deus governa providencialmente os tronos das nações, mas reserva para Cristo, descendente de Jacó, o Reino eterno que jamais passará.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Não busque legitimação política prematura; sua vocação é peregrina até o retorno do Rei.
+▸ Para as Famílias: Ensine os filhos a discernirem entre êxito visível e fidelidade invisível à aliança.
+▸ Para o Discípulo: Quando ver Edom prosperando enquanto você peregrina, lembre-se: a peregrinação é caminho do Reino eterno.
+
+CONCLUSÃO
+Edom monta seus oito reis enquanto Israel ainda dorme em tendas. Mas a peregrinação é o caminho do trono verdadeiro. Em Cristo, o povo de Deus já reina espiritualmente e reinará visivelmente quando o Rei dos reis voltar. Não confunda tronos prematuros do mundo com a glória eterna. Não inveje Edom. Habite na sua tenda, fiel ao Deus de Jacó. O trono que conta é o de Cristo. E nele, em breve, todo joelho se dobrará. Amém.`;
 
   if (d.dia === 64) return `PARA PREGAR · Gênesis 37:1–11
 
+---
+
+TÍTULO DO SERMÃO
+"Sonhos do Amado, Inveja dos Irmãos: como Deus planta no escândalo familiar a semente do seu propósito"
+
 BIG IDEA
-"Os sonhos do amado provocam ódio em casa — Deus já planta o que ainda parece ofensa."
+Deus planta na ofensa dos sonhos do filho amado a semente do propósito que ainda parece apenas escândalo familiar.
 
-MOVIMENTOS DO TEXTO
-[A]   · Jacó ama José mais que aos outros filhos
-      → A preferência paterna fere antes mesmo do conflito explodir
+PERGUNTA DE TRANSIÇÃO
+Como Deus planta na ofensa dos sonhos do filho amado a semente do propósito que ainda parece apenas escândalo familiar?
 
-[B]   · Primeiro sonho: os feixes dos irmãos se inclinam ao de José
-      → A revelação divina muitas vezes chega em forma que ofende a carne
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais a soberania divina semeia, nos sonhos provocadores de José, o futuro da salvação que se cumprirá pelo caminho da inveja.
 
-◉ [X]   · SEGUNDO SONHO: SOL, LUA E ONZE ESTRELAS SE PROSTRAM A JOSÉ
-      → A glória futura do escolhido aparece antes da humilhação que a precede
+---
 
-[B']  · O pai repreende, mas guarda no coração
-      → Os pais sábios discernem o que Deus pode estar dizendo nas palavras dos filhos
+MOVIMENTOS DO SERMÃO
 
-[A']  · Os irmãos invejam José
-      → A inveja é o solo onde a história santa avança por dores
+I. REVELANDO QUE A PREFERÊNCIA PATERNA FERE ANTES DO CONFLITO EXPLODIR (A ↔ A')
+§ Indicação Textual: Gn 37.1-4 (Jacó ama José mais que aos outros filhos; a túnica de várias cores) ecoa em 37.11 (os irmãos invejam José; o pai guarda no coração), formando inclusio sobre amor e inveja na casa do patriarca.
+§ Exegese: O verbo "ahab" (amar) descreve o amor desproporcional. A "ketonet passim" (túnica de muitas cores ou de mangas longas) é sinal de status real, herança e ofício sacerdotal. O verbo "sane" (odiar) aparece três vezes em quatro versículos: ódio explícito antes mesmo dos sonhos.
+§ Teologia Reformada: A CFW V.6 ensina que Deus permite, em sua providência, que falhas humanas (como o favoritismo de Jacó) sejam contexto para a manifestação de propósitos maiores. Não endossa o pecado; serve-se dele.
+§ Aplicação: Você reconhece como o favoritismo fere relações que parecem boas? Vigie sobre essa raiz silenciosa em sua casa.
 
-EIXO CRISTOLÓGICO
-Fp 2:9–11: "para que ao nome de Jesus se dobre todo joelho" — em Cristo o Sonhado verdadeiro é exaltado após sofrer.`;
+II. REVELANDO QUE A REVELAÇÃO DIVINA CHEGA EM FORMA QUE OFENDE A CARNE (B ↔ B')
+§ Indicação Textual: Gn 37.5-8 (primeiro sonho: os feixes dos irmãos se prostram diante do feixe de José) ecoa em 37.10-11 (Jacó repreende mas guarda no coração).
+§ Exegese: Os verbos "shachah" (prostrar-se) aparece três vezes nos relatos dos dois sonhos. A inveja "qanah" e o ódio "sane" se intensificam. O paralelo com Maria — "guardava todas estas coisas em seu coração" (Lc 2.19) — é teologicamente impressionante: Jacó discerne algo divino.
+§ Teologia Reformada: A CFW I (Escritura) ensina que a revelação divina nem sempre confirma expectativas humanas. Os sonhos de José são palavra profética em embrião, que ofende a carne antes de se cumprir.
+§ Aplicação: A palavra de Deus na sua vida talvez ofenda alguns ao redor. Não a esconda; mas também não a brandisse com orgulho.
+
+III. REVELANDO QUE A GLÓRIA FUTURA DO ESCOLHIDO PRECEDE A HUMILHAÇÃO (C) — CENTRO X
+§ Indicação Textual: Gn 37.9 — "o sol, a lua e onze estrelas se prostram diante de mim" — é o coração da perícope: a profecia cósmica que será cumprida décadas depois.
+§ Exegese: O segundo sonho amplia o primeiro: do plano agrícola ao cósmico. Os elementos (sol, lua, estrelas) evocam Gn 1.14-19. José, sem saber, está profetizando a sua exaltação como salvador do mundo. A linguagem prefigura Ap 12.1 (a mulher coroada com doze estrelas).
+§ Teologia Reformada: A CFW VIII ensina que o ofício messiânico é tipificado em múltiplas figuras do AT. José é uma das mais ricas: amado do pai, odiado dos irmãos, exaltado para salvar muitos.
+§ Aplicação: A glória que Deus aponta para a sua vida pode parecer hoje arrogância aos olhos da carne. Discerne entre vaidade pessoal e propósito divino.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+José é tipo claríssimo de Cristo. Amado do Pai, odiado pelos irmãos, vendido por moedas, exaltado para salvar muitos. Os sonhos de Gn 37 antecipam a humilhação-exaltação delineada em Fp 2.6-11. Onde os irmãos rejeitaram o sonhador, Deus o usou para preservar o povo. Em Cristo, a rejeição dos irmãos judeus tornou-se reconciliação para todas as nações (Rm 11). O sonho de José é, no fim, o sonho do Pai: o Filho amado exaltado, com todo joelho dobrando-se diante dele.
+
+DOUTRINA CENTRAL
+Deus revela seus propósitos messiânicos em formas que provocam a carne mas plantam a semente da salvação que se cumprirá pelo caminho da humilhação.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Não despreze os "Josés" novos cujos sonhos provocam a inveja dos veteranos; podem ser instrumentos de Deus.
+▸ Para as Famílias: Examine se o favoritismo está semeando inveja silenciosa entre os filhos.
+▸ Para o Discípulo: Discernir o sonho de Deus na sua vida não é orgulho; é vocação.
+
+CONCLUSÃO
+Os sonhos chegam cedo. Os irmãos invejam logo. A casa fica dividida antes que José saia. Mas Deus está plantando. A glória cósmica do sol, lua e estrelas inclinando-se prefigura o Filho amado diante do qual todo joelho se dobrará. Não despreze os sonhos que Deus lhe deu. Não os brandisse com vaidade. Guarde-os no coração como Jacó. Espere o tempo do Senhor. E lembre-se: o caminho até o trono passa pelo poço, pela prisão, pela cruz. Mas chega à exaltação eterna. Amém.`;
 
   if (d.dia === 65) return `PARA PREGAR · Gênesis 37:12–36
 
+---
+
+TÍTULO DO SERMÃO
+"O Irmão Vendido por Vinte Moedas: como a história santa avança justamente pelo caminho da rejeição"
+
 BIG IDEA
-"O irmão amado é vendido por vinte moedas — a história santa segue pelo caminho da rejeição."
+A história santa segue avançando justamente pelo caminho da rejeição, quando o irmão amado é vendido por vinte moedas.
 
-MOVIMENTOS DO TEXTO
-[A]   · José é enviado pelo pai aos irmãos em Dotã
-      → A vocação do enviado começa com obediência ao envio do pai
+PERGUNTA DE TRANSIÇÃO
+Como a história santa segue avançando justamente pelo caminho da rejeição, quando o irmão amado é vendido por vinte moedas?
 
-[B]   · Os irmãos planejam matá-lo; Rúben tenta salvá-lo
-      → No próprio interior do povo de Deus há resistência e graça
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais a soberania divina escreve a salvação por meio da venda de José, prefigurando a redenção pelo Filho rejeitado.
 
-◉ [X]   · JOSÉ É VENDIDO POR VINTE MOEDAS DE PRATA AOS ISMAELITAS
-      → O irmão rejeitado é entregue por preço — sombra do Cordeiro vendido
+---
 
-[B']  · Rúben volta e rasga as vestes ao não achá-lo
-      → O remorso tardio não desfaz o que a inveja decidiu
+MOVIMENTOS DO SERMÃO
 
-[A']  · Jacó chora inconsolável crendo que José morreu
-      → A dor do pai prepara a alegria futura da revelação
+I. REVELANDO QUE A VOCAÇÃO COMEÇA COM OBEDIÊNCIA AO ENVIO DO PAI (A ↔ A')
+§ Indicação Textual: Gn 37.12-17 (José é enviado pelo pai aos irmãos em Dotã) ecoa em 37.31-36 (Jacó chora a perda inconsolável), formando inclusio sobre o envio paterno e a dor paterna.
+§ Exegese: O verbo "shalach" (enviar) é o termo profético do envio. A resposta "hinneni" (eis-me aqui) ecoa Abraão (22.1) e antecipa Isaías (6.8). O homem do campo que orienta José funciona como anjo providencial: a obediência conduz ao destino divino.
+§ Teologia Reformada: A CFW VIII ensina que o ofício do Mediador inclui o envio pelo Pai. José envia-se voluntariamente; tipifica o Filho que diz "eis-me aqui" para fazer a vontade do Pai (Hb 10.7).
+§ Aplicação: Você responde "eis-me aqui" quando o Pai o envia a lugares difíceis? A obediência é o passo inicial da vocação redentora.
 
-EIXO CRISTOLÓGICO
-Mt 26:15: "deram-lhe trinta moedas de prata" — em Cristo o irmão vendido se faz salvador do povo que o rejeitou.`;
+II. REVELANDO QUE NO POVO DE DEUS HÁ RESISTÊNCIA E GRAÇA SIMULTANEAMENTE (B ↔ B')
+§ Indicação Textual: Gn 37.18-24 (os irmãos planejam matá-lo; Rúben tenta salvá-lo lançando-o na cisterna) ecoa em 37.29-30 (Rúben volta e rasga as vestes ao não encontrá-lo).
+§ Exegese: A cisterna ("bor") vazia, "sem água", prefigura a cova-sepultura. O verbo "hashlikhu" (lançaram-no) é violento. Rúben tenta evitar o pior, mas sua hesitação não consegue salvar.
+§ Teologia Reformada: A CFW VI ensina que mesmo entre os filhos da aliança subsistem corrupções remanescentes. Resistência ao mal coexiste com graça insuficiente quando o coração não foi plenamente regenerado.
+§ Aplicação: Você é um "Rúben" hesitante diante do mal? Boas intenções sem ação corajosa não preservam o irmão.
+
+III. REVELANDO QUE O IRMÃO REJEITADO É ENTREGUE POR PREÇO COMO SOMBRA DO CORDEIRO (C) — CENTRO X
+§ Indicação Textual: Gn 37.25-28 — "venderam José por vinte siclos de prata aos ismaelitas" — é o coração da perícope.
+§ Exegese: Os "esrim kesef" (vinte siclos de prata) correspondem ao preço de um escravo entre 5 e 20 anos (Lv 27.5). José tem 17 (37.2). O número aponta para Judas Iscariotes, que vende Cristo por trinta siclos — o preço de escravo adulto. O Filho é mais valioso, mas o preço é igualmente humilhante.
+§ Teologia Reformada: A CFW VIII (Cristo o Mediador) ensina que a humilhação de Cristo incluiu ser "vendido" pelos irmãos. José tipifica essa humilhação: o amado entregue por preço para que muitos sejam salvos.
+§ Aplicação: Reconheça que cada moeda pela qual o mundo "vende" valores eternos vai parar no balcão da rejeição do Cordeiro. Renuncie ao preço fácil.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A venda de José por vinte moedas é prefiguração nítida da entrega de Cristo por trinta (Mt 26.15). O Filho amado, enviado pelo Pai aos irmãos, é rejeitado e entregue à morte — mas em sua aparente derrota, Deus prepara a salvação do mundo. José descerá ao Egito (figura do sepulcro), será exaltado (figura da ressurreição) e proverá pão aos irmãos famintos (figura da Ceia). Em Cristo, a história santa avança justamente pelo caminho da rejeição, e o Cordeiro vendido se torna Senhor de seus vendedores arrependidos.
+
+DOUTRINA CENTRAL
+Deus realiza a salvação do mundo justamente pelo caminho da rejeição do Filho amado, transformando a venda dos irmãos em redenção universal.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Não desanime quando o evangelho parece "ser vendido" pelo mundo; Deus está escrevendo redenção.
+▸ Para as Famílias: Ensine que a rejeição sofrida pela fidelidade pode ser pão futuro para muitos.
+▸ Para o Discípulo: Quando for "vendido" pelos irmãos, lembre-se: o Cordeiro foi vendido primeiro, e ressuscitou.
+
+CONCLUSÃO
+Vinte moedas. É o preço da rejeição. Mas é também o ponto de partida da salvação do mundo. José desce ao Egito como escravo; voltará como salvador. Cristo desce à cruz como vendido; voltará como Senhor de todos. Quando a sua vocação for desprezada e seu valor for negociado por preço vil, não desespere. Deus está escrevendo, na sua aparente derrota, uma vitória que alimentará muitos. Caminhe pelas estradas de Dotã com confiança: o Pai que envia também ressuscita. Amém.`;
 
   if (d.dia === 66) return `PARA PREGAR · Gênesis 38:1–30
 
+---
+
+TÍTULO DO SERMÃO
+"Tamar, a Mais Justa: como Deus preserva a linha messiânica pela mulher esquecida no meio do drama"
+
 BIG IDEA
-"No meio do drama de José, Tamar prova ser mais justa que Judá — e a linha do Messias se preserva."
+No meio do drama de José, Tamar prova ser mais justa que Judá, preservando assim a linha messiânica da promessa.
 
-MOVIMENTOS DO TEXTO
-[A]   · Judá se separa dos irmãos e se casa com cananeia
-      → O afastamento da aliança expõe a vocação a misturas perigosas
+PERGUNTA DE TRANSIÇÃO
+Como, no meio do drama de José, Tamar prova ser mais justa que Judá, preservando assim a linha messiânica da promessa?
 
-[B]   · Tamar viúva é deixada sem Sela apesar da promessa
-      → A injustiça doméstica clama por Deus em silêncio
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais a soberania divina preserva a linhagem do Messias através da fidelidade arriscada de Tamar e da confissão de Judá.
 
-◉ [X]   · JUDÁ SE UNE A TAMAR DISFARÇADA — O PENHOR QUE CONDENARÁ
-      → O pecado oculto se prepara para denunciar a si mesmo no tempo certo
+---
 
-[B']  · Tamar mostra o penhor: "de quem é isto?"
-      → A verdade emerge em juízo concreto sobre os opressores
+MOVIMENTOS DO SERMÃO
 
-[A']  · "Mais justa é ela do que eu" — nascem Perez e Zerá
-      → O reconhecimento da própria injustiça abre a linhagem do Messias
+I. REVELANDO QUE O AFASTAMENTO DA ALIANÇA EXPÕE A VOCAÇÃO A MISTURAS (A ↔ A')
+§ Indicação Textual: Gn 38.1-11 (Judá desce dos irmãos e se casa com cananeia; Er, Onã, Sela) ecoa em 38.24-30 (nascimento de Perez e Zerá), formando inclusio sobre a continuidade da linhagem apesar da desordem.
+§ Exegese: O verbo "yarad" (descer) marca o afastamento geográfico e espiritual de Judá. Os nomes "Er" (mau) e "Onã" (que recusa) anunciam o juízo divino. O "levirato" — dever do irmão de gerar descendência ao falecido — é violado por Onã e adiado por Judá.
+§ Teologia Reformada: A CFW XXIV ensina que casamentos com cananeus ameaçam a fidelidade da aliança. A história de Judá em Adulão expõe os riscos do afastamento da família patriarcal.
+§ Aplicação: O afastamento da comunidade da aliança expõe você a misturas perigosas. Não "desça" sozinho aos seus Adulãos.
 
-EIXO CRISTOLÓGICO
-Mt 1:3: "Judá gerou de Tamar a Perez e a Zera" — em Cristo, até as histórias mais desordenadas se integram à linhagem santa.`;
+II. REVELANDO QUE A INJUSTIÇA DOMÉSTICA CLAMA EM SILÊNCIO POR DEUS (B ↔ B')
+§ Indicação Textual: Gn 38.11-14 (Tamar é mandada de volta como viúva, sem Sela apesar da promessa) ecoa em 38.20-23 (Judá envia o cabrito; o penhor não é encontrado).
+§ Exegese: O verbo "yashav" (permanecer) na casa do pai descreve a viúva desprezada. A linguagem "disfarçar-se" ("kasah") e "sentar-se à entrada de Enaim" ("petach enayim" — porta dos dois olhos) cria deliberada ambiguidade: Tamar age para abrir os olhos de Judá.
+§ Teologia Reformada: A CFW XX (Liberdade cristã) ensina que Deus não endossa todo método humano, mas pode usar mesmo atos moralmente complexos para preservar seus propósitos.
+§ Aplicação: Reconheça que injustiças domésticas silenciadas clamam diante de Deus. Não despreze as vozes que parecem sem voz.
+
+III. REVELANDO QUE O PECADO OCULTO PREPARA SUA PRÓPRIA DENÚNCIA (C) — CENTRO X
+§ Indicação Textual: Gn 38.15-19 — Judá se une a Tamar disfarçada e lhe entrega o penhor (sinete, cordão, cajado) — é o centro estrutural.
+§ Exegese: O "eravon" (penhor) inclui itens de identidade pessoal: o sinete (chotham), o cordão (patil) e o cajado (matteh). Judá entrega justamente o que mais o identifica. O pecado oculto guarda sempre sua própria denúncia.
+§ Teologia Reformada: A CFW V.7 ensina que Deus permite os pecados secretos serem denunciados pela sua própria materialidade, para confundir os ímpios e instruir os eleitos.
+§ Aplicação: Que penhores secretos você está deixando hoje que amanhã o denunciarão? Confesse antes que apareçam.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A confissão de Judá — "ela é mais justa do que eu" (38.26) — é primeiro passo da sua transformação como líder dos irmãos. De Perez nasce Hezrom, depois Davi, depois Cristo (Mt 1.3). A linhagem do Messias atravessa, deliberadamente, mulheres marginalizadas: Tamar, Raabe, Rute, Bate-Seba e Maria. Em Cristo, a justiça da mulher esquecida e a confissão do líder envergonhado tornam-se canais da redenção universal. O penhor que condena Judá prefigura a cruz que condena e salva: ali Cristo carregou o sinete da nossa identidade pecadora e nos entregou a sua.
+
+DOUTRINA CENTRAL
+Deus preserva a linhagem do Messias através de histórias desordenadas, escolhendo os esquecidos e desmascarando os poderosos para realizar a sua salvação.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Acolha as Tamares da igreja — mulheres marginalizadas cuja fé Deus usa para preservar a missão.
+▸ Para as Famílias: Não silencie a voz dos vulneráveis em nome da reputação; Deus os ouve.
+▸ Para o Discípulo: Confesse seus penhores secretos antes que apareçam publicamente; o arrependimento antecipa a graça.
+
+CONCLUSÃO
+Tamar é registrada na genealogia do Messias. Judá confessa: "ela é mais justa do que eu". A linha do Cristo atravessa uma história escandalosa porque a graça atravessa todas as histórias. Em Cristo, o sinete da identidade pecadora foi tomado de nós e cravado na cruz. A genealogia do Salvador inclui esquecidas e desmascarados, porque a redenção é para todos. Confesse seus pecados ocultos. Honre as Tamares esquecidas. E lembre-se: Deus escreve a história santa com tinta que parece imprópria, mas tudo se cumpre em Cristo. Amém.`;
 
   if (d.dia === 67) return `PARA PREGAR · Gênesis 39:1–23
 
+---
+
+TÍTULO DO SERMÃO
+"O SENHOR Estava com José: por que a fidelidade no oculto custa caro mas é eternamente honrada"
+
 BIG IDEA
-"A fidelidade no oculto custa caro — mas o SENHOR está com José na bonança e no calabouço."
+O Senhor permanece com José tanto na bonança quanto no calabouço, mostrando que a fidelidade no oculto custa caro mas é honrada.
 
-MOVIMENTOS DO TEXTO
-[A]   · O SENHOR estava com José; Potifar lhe confia tudo
-      → A presença divina prospera quem serve com integridade
+PERGUNTA DE TRANSIÇÃO
+Como o Senhor permanece com José tanto na bonança quanto no calabouço, mostrando que a fidelidade no oculto custa caro mas é honrada?
 
-[B]   · A mulher de Potifar tenta José repetidamente
-      → A tentação persistente exige decisão diária renovada
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais a presença divina acompanha José da casa de Potifar à masmorra, provando que a fidelidade integral é sempre honrada por Deus.
 
-◉ [X]   · JOSÉ FOGE; A ROUPA FICA NA MÃO DELA — "COMO FARIA EU TAMANHO MAL E PECARIA CONTRA DEUS?"
-      → A fidelidade verdadeira corre da tentação ainda que pague o preço
+---
 
-[B']  · Ela acusa José com a roupa como prova falsa
-      → A integridade injustiçada é parte do caminho do justo
+MOVIMENTOS DO SERMÃO
 
-[A']  · José vai à prisão; o SENHOR estava com José
-      → A mesma presença divina permanece no calabouço e no palácio
+I. REVELANDO QUE A PRESENÇA DIVINA PROSPERA QUEM SERVE COM INTEGRIDADE (A ↔ A')
+§ Indicação Textual: Gn 39.1-6 ("o SENHOR era com José; Potifar lhe confiou tudo") encontra eco em 39.20-23 ("o SENHOR era com José... mostrou-lhe misericórdia"), formando inclusio explícita pela fórmula "YHWH eth-Yosef".
+§ Exegese: A expressão "wayehi YHWH eth-Yosef" (e era o SENHOR com José) aparece quatro vezes no capítulo — duas no palácio, duas na prisão. A repetição mostra que a presença divina não depende do contexto, mas da pessoa do servo fiel.
+§ Teologia Reformada: A CFW V (Providência) ensina que Deus governa de modo particular a vida dos seus eleitos, fazendo concorrer todas as coisas para o seu bem. A presença divina é a constante.
+§ Aplicação: Você crê que o Senhor está com você tanto na promoção quanto no calabouço? A fé não mede a presença divina pelas circunstâncias.
 
-EIXO CRISTOLÓGICO
-1Pe 2:23: "quando ultrajado, não revidava... entregava-se àquele que julga retamente" — em Cristo o justo sofre confiando no Pai.`;
+II. REVELANDO QUE A TENTAÇÃO PERSISTENTE EXIGE DECISÃO DIÁRIA RENOVADA (B ↔ B')
+§ Indicação Textual: Gn 39.7-10 (a mulher de Potifar tenta José "dia após dia") ecoa em 39.16-18 (ela acusa José com a roupa como prova falsa).
+§ Exegese: A expressão "yom yom" (dia após dia) descreve a persistência. José resiste com argumento triplo: ofensa ao senhor terreno, ofensa à confiança recebida, e o ápice — "como faria tal mal e pecaria contra Deus?" A resistência é teológica, não meramente moral.
+§ Teologia Reformada: O Catecismo Menor de Westminster (q. 105) ensina que devemos pedir para sermos guardados da tentação. Mas a guarda divina opera pela vigilância humana cotidiana.
+§ Aplicação: Tentações persistentes pedem decisões renovadas todos os dias. Não baixe a guarda quando a primeira recusa não interrompeu a investida.
+
+III. REVELANDO QUE A FIDELIDADE VERDADEIRA CORRE DA TENTAÇÃO MESMO PAGANDO O PREÇO (C) — CENTRO X
+§ Indicação Textual: Gn 39.11-15 — José foge; a roupa fica na mão dela — é o coração do quiasma.
+§ Exegese: O verbo "nus" (fugir) é o mesmo que descreve Lot saindo de Sodoma. A roupa ("beged") simboliza identidade: José prefere perder a vestimenta a perder a integridade. A ironia: foi a túnica do pai que o trouxe ao Egito; agora é a roupa do servo que o leva à prisão.
+§ Teologia Reformada: A CFW XV (Arrependimento) ensina que devemos fugir do pecado deixando trás de nós tudo o que ele exige, mesmo bens preciosos. A integridade tem custo material visível.
+§ Aplicação: Você fugiria deixando para trás vestes valiosas? A fidelidade às vezes paga preço alto e injusto, mas Deus honra.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+José prefigura Cristo: o justo tentado, acusado falsamente, condenado injustamente, com vestes tiradas. Mas onde José foge, Cristo permanece — pois ele é o nosso substituto. As vestes tomadas de Cristo na cruz (Jo 19.23-24) sucedem as vestes tomadas de José por Potifar. E onde José foi para a prisão, Cristo desceu ao sepulcro. Em ambos, Deus estava com o seu Justo, e ambos foram exaltados depois. O SENHOR que estava com José é o mesmo Espírito que esteve com Cristo na ressurreição e está com a Igreja em toda tentação.
+
+DOUTRINA CENTRAL
+Deus permanece soberanamente presente com seus servos fiéis, transformando a fidelidade custosa no oculto em vindicação eterna em Cristo.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Honre os "Josés" que pagaram preço alto por integridade silenciosa; suas histórias edificam o corpo.
+▸ Para as Famílias: Ensine os filhos que perder vestes para preservar caráter é vitória, não derrota.
+▸ Para o Discípulo: Quando ser fiel custar a sua reputação, lembre-se: o SENHOR está com você no calabouço.
+
+CONCLUSÃO
+A masmorra não é abandono. É só outra forma da presença divina. O SENHOR estava com José no palácio e estava com José na prisão. Em ambos os lugares, José prosperou — porque a presença é tudo. Em Cristo, o calabouço foi até o sepulcro. E o sepulcro está vazio. Sua fidelidade no oculto custa caro hoje, mas é honrada eternamente. Fuja da tentação. Deixe para trás as vestes do mundo. Confie no SENHOR que está com você. E lembre-se: o José da prisão se torna o José do trono. Amém.`;
 
   if (d.dia === 68) return `PARA PREGAR · Gênesis 40:1–41:45
 
+---
+
+TÍTULO DO SERMÃO
+"Da Prisão ao Trono: como Deus eleva no tempo certo o servo fiel que serviu sem alarde no oculto"
+
 BIG IDEA
-"Quem serve sem alarde na prisão é elevado no tempo de Deus ao governo do Egito."
+Quem serve sem alarde mesmo na prisão é elevado, no tempo determinado por Deus, ao próprio governo do Egito.
 
-MOVIMENTOS DO TEXTO
-[A]   · Copeiro e padeiro são presos; sonham na prisão
-      → A providência aproxima os sonhos do Faraó pela porta da prisão
+PERGUNTA DE TRANSIÇÃO
+Como quem serve sem alarde mesmo na prisão é elevado, no tempo determinado por Deus, ao próprio governo do Egito?
 
-[B]   · José interpreta os sonhos com humildade
-      → O dom interpreta sonhos quando atribui a Deus toda a luz
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais a providência divina conduz José da masmorra ao palácio através da interpretação dos sonhos e da sabedoria administrativa.
 
-[C]   · O copeiro é restituído mas esquece José
-      → A espera é parte do treinamento divino do servo
+---
 
-◉ [X]   · OS DOIS SONHOS DO FARAÓ DECLARAM O QUE DEUS HÁ DE FAZER
-      → Deus avisa o mundo antes de agir, e prepara o intérprete antes da hora
+MOVIMENTOS DO SERMÃO
 
-[C']  · O copeiro lembra-se de José
-      → O esquecimento humano dura só até o tempo determinado de Deus
+I. REVELANDO QUE A PROVIDÊNCIA APROXIMA OS SONHOS DO FARAÓ PELA PORTA DA PRISÃO (A ↔ A')
+§ Indicação Textual: Gn 40.1-4 (copeiro e padeiro são presos) ecoa em 41.37-45 (José é exaltado: segundo no Egito), formando inclusio sobre o caminho da prisão ao trono.
+§ Exegese: O verbo "qatsaph" (irritar-se) faz Faraó prender os dois oficiais. A providência os coloca exatamente onde José pode servi-los — preparando a porta do palácio. O termo "saris" (oficial/eunuco) sublinha a importância palaciana.
+§ Teologia Reformada: A CFW V.7 ensina que Deus dispõe meios e ocasiões para realizar seus propósitos eternos. Cada detalhe — até a irritação do Faraó — serve à exaltação do servo escolhido.
+§ Aplicação: Você reconhece que pessoas "irritadas" podem estar sendo movidas providencialmente para sua vida? Sirva-as bem; podem ser pontes para o futuro de Deus.
 
-[B']  · José interpreta e propõe administração sábia
-      → O dom espiritual se completa com sabedoria prática
+II. REVELANDO QUE O DOM INTERPRETA SONHOS QUANDO ATRIBUI A DEUS TODA A LUZ (B ↔ B')
+§ Indicação Textual: Gn 40.5-19 (José interpreta os sonhos do copeiro e padeiro) ecoa em 41.14-36 (José interpreta os dois sonhos do Faraó), formando paralelo de humildade interpretativa.
+§ Exegese: A pergunta de José — "as interpretações não pertencem a Deus?" (40.8) — é tese teológica. Em 41.16, ele a repete diante do Faraó: "não está em mim; Deus dará resposta favorável a Faraó". O dom recebido glorifica o doador.
+§ Teologia Reformada: A CFW I (Escritura) ensina que toda revelação verdadeira vem de Deus. O servo fiel atribui ao Senhor o que recebe, não a si mesmo.
+§ Aplicação: Quando você for ouvido pelos poderosos, atribua a luz a Deus. A humildade que reconhece o doador honra mais que o próprio dom.
 
-[A']  · José é exaltado: segundo no Egito
-      → A humilhação fiel se transforma em exaltação que beneficia muitos
+III. REVELANDO QUE A ESPERA É PARTE DO TREINAMENTO DIVINO DO SERVO (C ↔ C')
+§ Indicação Textual: Gn 40.20-23 (o copeiro é restituído mas se esquece de José) ecoa em 41.8-13 (o copeiro se lembra finalmente de José), formando paralelo de tempo divino e esquecimento humano.
+§ Exegese: A frase "shene shanatayim" (dois anos cheios) em 41.1 marca o intervalo do esquecimento. O verbo "shakhah" (esquecer) em 40.23 contrasta com "zakhar" (lembrar) em 41.9. Deus governa até as memórias.
+§ Teologia Reformada: A CFW V.5 ensina que Deus pode prolongar tempos de obscuridade para amadurecer os seus eleitos. A espera é pedagogia, não negligência.
+§ Aplicação: Você está em "dois anos" de esquecimento? Não desanime; o Senhor governa o calendário do reconhecimento.
 
-EIXO CRISTOLÓGICO
-Fp 2:8–9: "humilhou-se a si mesmo... por isso Deus o exaltou" — em Cristo o servo fiel é elevado para salvar muitos.`;
+IV. REVELANDO QUE OS DOIS SONHOS DO FARAÓ DECLARAM O QUE DEUS HÁ DE FAZER (D) — CENTRO X
+§ Indicação Textual: Gn 41.1-7 — os dois sonhos do Faraó: vacas e espigas — é o coração do quiasma.
+§ Exegese: O sonho duplicado indica certeza divina ("a coisa é determinada por Deus, e ele se apressa em fazê-la", 41.32). Sete anos de fartura e sete de fome estruturam a economia salvífica. O número sete pontua a totalidade providencial.
+§ Teologia Reformada: A CFW III ensina que Deus, do seu eterno decreto, ordena todas as coisas que acontecem. Os sonhos do Faraó revelam a história antes que ela aconteça.
+§ Aplicação: Reconheça que Deus avisa antes de agir. Os "sonhos do Faraó" da sua época pedem servos preparados para administrar a salvação.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A exaltação de José ao governo do Egito prefigura nítidamente a exaltação de Cristo após sua humilhação (Fp 2.6-11). Como José recebeu nome novo ("Zafnate-Panéia" — "salvador do mundo" segundo Vulgata) e anel de poder, Cristo recebe o Nome acima de todo nome e todo poder no céu e na terra (Mt 28.18). José provê pão para muitos; Cristo é o pão da vida que sustenta a Igreja na grande fome espiritual. A prisão de José prefigura o sepulcro; o terceiro dia em que o copeiro é restituído antecipa o terceiro dia da ressurreição.
+
+DOUTRINA CENTRAL
+Deus eleva, no tempo determinado, o servo humilde para que ele administre a salvação de muitos, prefigurando a exaltação de Cristo após a sua humilhação.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Prepare líderes na obscuridade da fidelidade cotidiana; serão exaltados no tempo de Deus.
+▸ Para as Famílias: Ensine os filhos que os anos "esquecidos" estão sendo registrados pelo Pai.
+▸ Para o Discípulo: Sirva bem onde está; a interpretação dos sonhos do Faraó pode ser sua amanhã.
+
+CONCLUSÃO
+Treze anos. Tantos foram os de prisão e esquecimento de José. Mas em um único dia, ele saiu da masmorra para o trono. O Deus que governa o calendário do reconhecimento é o mesmo que ressuscitou Cristo no terceiro dia. Sirva sem alarde. Atribua a luz a Deus. Espere o tempo. Quando o Faraó da história te chamar, esteja pronto para administrar a salvação. Em Cristo, o Servo Justíssimo, todo servo fiel é exaltado para o bem de muitos. Amém.`;
 
   if (d.dia === 69) return `PARA PREGAR · Gênesis 41:46–57
 
+---
+
+TÍTULO DO SERMÃO
+"Esquecer e Frutificar no Exílio: como Deus cura memórias e gera filhos da promessa em terra estrangeira"
+
 BIG IDEA
-"Na fartura José prepara o povo para a fome — e os filhos da promessa nascem no exílio."
+Na fartura, José prepara o povo para a fome, fazendo nascer os filhos da promessa em meio ao próprio exílio.
 
-MOVIMENTOS DO TEXTO
-[A]   · José administra o Egito durante sete anos de fartura
-      → A sabedoria divina prepara hoje a sobrevivência de amanhã
+PERGUNTA DE TRANSIÇÃO
+De que forma, na fartura, José prepara o povo para a fome, fazendo nascer os filhos da promessa em meio ao exílio?
 
-◉ [X]   · NASCEM MANASSÉS E EFRAIM — "DEUS ME FEZ ESQUECER... DEUS ME FEZ FRUTIFICAR"
-      → No meio do exílio Deus cura memórias e produz fruto inesperado
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais a providência transforma o exílio em casa de fartura e os anos da fome em ocasião de salvação universal.
 
-[A']  · Começam os sete anos de fome; José abre os celeiros
-      → A providência de longo prazo se revela quando chega a crise prevista
+---
 
-EIXO CRISTOLÓGICO
-Lc 12:42: "quem é, pois, o mordomo fiel e prudente?" — em Cristo o mordomo fiel distribui pão no tempo certo.`;
+MOVIMENTOS DO SERMÃO
+
+I. REVELANDO QUE A SABEDORIA DIVINA PREPARA HOJE A SOBREVIVÊNCIA DE AMANHÃ (A ↔ A')
+§ Indicação Textual: Gn 41.46-49 (José, com 30 anos, administra o Egito; ajunta trigo "como areia do mar") ecoa em 41.53-57 (começam os sete anos de fome; José abre os celeiros), formando inclusio sobre administração previdente.
+§ Exegese: A idade "trinta anos" ecoa Davi (2Sm 5.4) e antecipa Cristo (Lc 3.23) — idade messiânica do início do ministério público. A comparação "como areia do mar" usa a linguagem da promessa abraâmica para descrever o pão guardado.
+§ Teologia Reformada: A CFW V (Providência) ensina que Deus governa a história por meios — incluindo sabedoria humana iluminada. José não suspende a prudência; ele a santifica.
+§ Aplicação: Você usa hoje a sabedoria que Deus lhe deu para preparar amanhã? A providência não dispensa o esforço prudente.
+
+II. REVELANDO QUE DEUS CURA MEMÓRIAS E PRODUZ FRUTO INESPERADO NO EXÍLIO (B) — CENTRO X
+§ Indicação Textual: Gn 41.50-52 — nascem Manassés ("Deus me fez esquecer") e Efraim ("Deus me fez frutificar") — é o coração da perícope.
+§ Exegese: "Menasheh" deriva de "nashah" (esquecer); "Ephraim" deriva de "parah" (frutificar). Os nomes são confissões teológicas: Deus cura ressentimento ("toda a casa de meu pai") e gera fecundidade ("na terra da minha aflição"). O exílio se torna casa.
+§ Teologia Reformada: A CFW XV (Arrependimento) ensina que a graça transforma feridas em portas de testemunho. O esquecimento dos males não é negação; é cura ativa do Espírito.
+§ Aplicação: O Senhor pode curar memórias dolorosas que você ainda carrega? Peça-lhe Manassés. E em seguida peça-lhe Efraim: fecundidade no chão da sua aflição.
+
+III. REVELANDO QUE A PROVIDÊNCIA DE LONGO PRAZO SE REVELA NA CRISE PREVISTA (A')
+§ Indicação Textual: Gn 41.53-57 — começam os sete anos de fome; José abre os celeiros; "toda a terra vinha ao Egito para comprar trigo".
+§ Exegese: A fome é "em todas as terras" — universal. "Toda a terra vinha ao Egito" antecipa as nações que virão a Cristo. O verbo "patach" (abrir) tem peso litúrgico: José abre o que estava fechado, antecipando o Salvador.
+§ Teologia Reformada: A CFW V.2 ensina que Deus usa instrumentos secundários para o cumprimento da sua vontade. José é instrumento providencial preparado anos antes da crise.
+§ Aplicação: Você é "celeiro fechado" que precisa ser aberto na crise alheia? A fidelidade dos anos de fartura te equipa para servir nos anos de fome.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+José prefigura Cristo como o Mordomo fiel (Lc 12.42) que abre os celeiros do reino. Manassés e Efraim — os "filhos do esquecimento" e da "frutificação" — antecipam o povo dos gentios curado da memória da idolatria e gerado no exílio do mundo (Os 1.10; Rm 9.25-26). A "toda a terra" que vem ao Egito comprar trigo prefigura "toda nação, tribo, povo e língua" que vem a Cristo para comprar pão sem dinheiro (Is 55.1; Ap 7.9). A fome universal aponta para a fome da palavra (Am 8.11) e a salvação universal preparada antes da fome em Cristo, o verdadeiro pão.
+
+DOUTRINA CENTRAL
+Deus opera em providência de longo prazo, preparando salvação para muitos através do servo que administra sabedoria na fartura e abre celeiros na fome.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Acumule recursos espirituais nos tempos de fartura para servir nos tempos de fome do mundo.
+▸ Para as Famílias: Ensine aos filhos a viver com previdência sabendo que os celeiros guardados servem muitos.
+▸ Para o Discípulo: Peça a Deus por Manassés (cura) e Efraim (fecundidade) no chão da sua aflição.
+
+CONCLUSÃO
+A fartura prepara a fome. O exílio se torna casa. A memória ferida é curada em Manassés. A aflição produz fruto em Efraim. E os celeiros fechados se abrem para alimentar o mundo. Em Cristo, o verdadeiro Mordomo, há pão para todos os famintos das nações. Seja providente nos seus anos de fartura. Espere a cura do esquecimento ativo. Tenha fé na frutificação inesperada. E saiba: quando o mundo vier procurar pão, José estará pronto. Em Cristo, o pão vivo já desceu do céu. Amém.`;
 
   if (d.dia === 70) return `PARA PREGAR · Gênesis 42:1–38
 
+---
+
+TÍTULO DO SERMÃO
+"A Fome que Empurra à Reconciliação: como Deus começa a curar a história trazendo os irmãos ao irmão rejeitado"
+
 BIG IDEA
-"A fome empurra os irmãos rumo ao irmão rejeitado — Deus começa a curar a história."
+A fome empurra os irmãos rumo justamente ao irmão antes rejeitado, mostrando que Deus começa a curar a história.
 
-MOVIMENTOS DO TEXTO
-[A]   · Jacó envia os filhos ao Egito comprar trigo
-      → A necessidade move os pés para onde Deus quer encontrá-los
+PERGUNTA DE TRANSIÇÃO
+Por que a fome empurra os irmãos rumo justamente ao irmão rejeitado, mostrando que Deus começa a curar a história?
 
-[B]   · Os irmãos diante de José; ele os acusa de espias
-      → O passado não resolvido reaparece pela mão de Deus
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as RAZÕES pelas quais a crise leva os irmãos de Jacó ao ponto exato em que Deus prepara a restauração da história fraterna.
 
-◉ [X]   · "NA VERDADE, SOMOS CULPADOS QUANTO A NOSSO IRMÃO"
-      → O reconhecimento da culpa antiga inicia o caminho da reconciliação
+---
 
-[B']  · As sacas voltam cheias com o dinheiro escondido
-      → A graça do irmão rejeitado se manifesta antes da revelação
+MOVIMENTOS DO SERMÃO
 
-[A']  · Os irmãos voltam; Jacó se recusa a entregar Benjamim
-      → O medo de perder o último amado paralisa a obediência
+I. PORQUE A NECESSIDADE MOVE OS PÉS AO LUGAR DO ENCONTRO PROVIDENCIAL (A ↔ A')
+§ Indicação Textual: Gn 42.1-5 (Jacó envia os filhos ao Egito) ecoa em 42.29-38 (Jacó se recusa a entregar Benjamim), formando inclusio sobre a dor paterna que precede a reconciliação.
+§ Exegese: O verbo "yarad" (descer) ao Egito repete-se sete vezes na perícope. A descida geográfica é tipo da descida moral: para serem curados, eles precisam descer ao lugar do irmão que rejeitaram. A retenção de Benjamim ecoa o medo de perder José.
+§ Teologia Reformada: A CFW V.7 ensina que Deus usa crises na vida dos eleitos para conduzi-los a arrependimentos necessários. A fome é instrumento providencial.
+§ Aplicação: Que fome o Senhor está usando hoje para mover você ao encontro de alguém que você rejeitou? Não resista; desça.
 
-EIXO CRISTOLÓGICO
-At 3:19: "arrependei-vos... para serem cancelados os vossos pecados" — em Cristo o reconhecimento da culpa inicia a restauração.`;
+II. PORQUE O PASSADO NÃO RESOLVIDO REAPARECE PELA MÃO DE DEUS (B ↔ B')
+§ Indicação Textual: Gn 42.6-17 (os irmãos prostram-se diante de José; ele os acusa de espias) ecoa em 42.25-28 (as sacas voltam cheias com dinheiro escondido).
+§ Exegese: A prostração ("shachah") cumpre literalmente o sonho de 37.7-9. Mas eles não reconhecem o irmão. José os trata como espias para criar o tempo do arrependimento. O dinheiro devolvido testa se os irmãos respondem com integridade.
+§ Teologia Reformada: A CFW XV ensina que o arrependimento requer reconhecimento específico do pecado. José cria contexto pedagógico para que esse reconhecimento aconteça.
+§ Aplicação: Quando o passado reaparece, não fuja; é Deus criando contexto para você se ver com clareza.
+
+III. PORQUE O RECONHECIMENTO DA CULPA ANTIGA INICIA O CAMINHO DA RECONCILIAÇÃO (C) — CENTRO X
+§ Indicação Textual: Gn 42.21 — "na verdade somos culpados quanto a nosso irmão" — é o coração da perícope.
+§ Exegese: A confissão "anachnu ashemim" (somos culpados) é decisiva. Os irmãos ligam a aflição presente à culpa passada. A frase "vimos a angústia da sua alma quando nos rogava, e não o ouvimos" lembra detalhes que o texto de 37 nem registrou — mostra que a culpa estava viva no íntimo.
+§ Teologia Reformada: O Catecismo Maior de Westminster (q. 76) ensina que o arrependimento envolve "verdadeiro senso de seus pecados". A confissão dos irmãos diante de José é exemplar.
+§ Aplicação: Você ainda carrega culpa antiga que precisa ser confessada? Diga: "na verdade, somos culpados". A reconciliação começa aí.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A fome que empurra os irmãos ao irmão rejeitado prefigura a graça que empurra os pecadores a Cristo, o Irmão rejeitado que se tornou Salvador. O reconhecimento "somos culpados" é o pranto evangélico que produz vida (2Co 7.10). Em Cristo, o irmão antes vendido se torna pão para os irmãos famintos; e onde José se manteve oculto até que houvesse arrependimento, Cristo permanece "oculto" até que o coração do pecador se renda. A história dos irmãos de José prefigura a história de Israel ao encontrar Cristo no fim dos tempos (Zc 12.10).
+
+DOUTRINA CENTRAL
+Deus usa fome e crise para empurrar os pecadores ao encontro do Irmão rejeitado, iniciando assim a cura da história pela confissão da culpa.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Não despreze as crises que trazem pecadores afastados; podem ser fome providencial.
+▸ Para as Famílias: Crie ambiente onde a confissão "somos culpados" possa ser pronunciada sem medo.
+▸ Para o Discípulo: Acolha a fome atual como convite à descida que leva à reconciliação.
+
+CONCLUSÃO
+A fome tem voz teológica. Ela diz: "vai. Desce. Encontra o irmão que rejeitaste". Os filhos de Jacó descem ao Egito sem saber que estão indo ao encontro do irmão vendido. E, ali, a culpa antiga finalmente é confessada. Em Cristo, o irmão eternamente rejeitado pelos seus se torna o irmão que reconcilia. A sua fome de hoje pode ser convite ao encontro. Desça. Confesse. E descubra que aquele a quem rejeitaste agora te alimenta. Amém.`;
 
   if (d.dia === 71) return `PARA PREGAR · Gênesis 43:1–45:28
 
+---
+
+TÍTULO DO SERMÃO
+"Não Fostes Vós, Foi Deus: como o irmão vendido se revela salvador e converte a culpa em alegria"
+
 BIG IDEA
-"O irmão vendido se revela como salvador — e converte a culpa em alegria pela providência divina."
+O irmão antes vendido se revela como salvador, convertendo a culpa antiga em alegria pela providência divina.
 
-MOVIMENTOS DO TEXTO
-[A]   · Jacó cede e envia Benjamim com os irmãos
-      → A fé entrega o último amado quando a fome força a confiança
+PERGUNTA DE TRANSIÇÃO
+Como o irmão antes vendido se revela como salvador, convertendo a culpa antiga em alegria pela providência divina?
 
-[B]   · Os irmãos são recebidos com banquete e silêncio
-      → A graça prepara o coração antes de revelar sua identidade
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais a revelação de José aos irmãos transforma o luto antigo em festa e a culpa em testemunho da providência redentora.
 
-[C]   · A taça é encontrada no saco de Benjamim
-      → O teste final expõe a transformação do coração antigo
+---
 
-◉ [X]   · JUDÁ INTERCEDE: "EU FICAREI NO LUGAR DO MENINO"
-      → O irmão que vendeu agora oferece-se em substituição — sombra do Salvador
+MOVIMENTOS DO SERMÃO
 
-[C']  · José se revela: "eu sou José; vive ainda meu pai?"
-      → A revelação do irmão rejeitado transforma a culpa em alegria
+I. REVELANDO QUE A FÉ ENTREGA O ÚLTIMO AMADO QUANDO A FOME FORÇA A CONFIANÇA (A ↔ A')
+§ Indicação Textual: Gn 43.1-15 (Jacó cede e envia Benjamim) ecoa em 45.25-28 (os irmãos voltam: "José ainda vive"), formando inclusio sobre a fé que arrisca e a boa notícia que retorna.
+§ Exegese: A cessão de Benjamim — "se eu tiver de ser desfilhado, desfilhado fico" (43.14) — é a entrega total de Jacó. O retorno com a notícia "od Yoseph chai" (José ainda vive) ressuscita o espírito do patriarca. A linguagem antecipa o anúncio pascal.
+§ Teologia Reformada: A CFW XIV (Fé) ensina que a fé verdadeira confia em Deus para o impossível e arrisca o amado precioso. Jacó é tipo de Abraão entregando Isaque.
+§ Aplicação: O que você não consegue entregar ao Senhor por medo? A fé que arrisca abre a porta para a notícia que ressuscita.
 
-[B']  · "NÃO FOSTES VÓS QUE ME ENVIASTES; FOI DEUS"
-      → A providência reinterpreta o mal passado dentro do plano divino
+II. REVELANDO QUE A GRAÇA PREPARA O CORAÇÃO COM BANQUETE E DEVOLUÇÃO MISTERIOSA (B ↔ B')
+§ Indicação Textual: Gn 43.16-34 (os irmãos são recebidos com banquete) ecoa em 45.16-24 (o Faraó reage com alegria; presentes enviados a Jacó).
+§ Exegese: A frase "vendo Benjamim com eles" provoca em José emoção física: ele se retira para chorar. A porção dada a Benjamim ("cinco vezes mais") testa se os irmãos ainda invejam. O banquete antecipa a mesa da reconciliação universal.
+§ Teologia Reformada: A CFW XXIX (Ceia) ensina que a mesa do Senhor é lugar de comunhão restaurada. José prepara a mesa antes de revelar a identidade — modelo de como a graça precede o reconhecimento.
+§ Aplicação: Você reconhece o "banquete" que Deus preparou antes mesmo de você compreender quem o oferece?
 
-[A']  · Os irmãos voltam: "José ainda vive e governa o Egito"
-      → A boa notícia da salvação atravessa o deserto até a casa do pai
+III. REVELANDO QUE A TAÇA ENCONTRADA EXPÕE A TRANSFORMAÇÃO DO CORAÇÃO (C ↔ C')
+§ Indicação Textual: Gn 44.1-13 (a taça é encontrada no saco de Benjamim) ecoa em 45.1-15 (José se revela: "eu sou José").
+§ Exegese: A "gevi'a" (taça) de prata simboliza autoridade divinatória. O teste é teológico: serão os irmãos capazes de defender Benjamim agora como falharam com José? A revelação "ani Yosef" (eu sou José) faz "calar todos os que estavam com ele" — momento sagrado.
+§ Teologia Reformada: A CFW XV ensina que o arrependimento autêntico produz mudança comprovada. Os irmãos provam a transformação rasgando vestes em solidariedade a Benjamim — exatamente o contrário do que fizeram com José.
+§ Aplicação: Sua transformação seria visível diante de um teste paralelo ao seu pecado antigo? Permita que Deus a comprove.
 
-EIXO CRISTOLÓGICO
-Lc 24:39: "vede as minhas mãos e os meus pés; sou eu mesmo" — em Cristo o irmão rejeitado se revela como salvador dos irmãos.`;
+IV. REVELANDO QUE JUDÁ SE OFERECE EM SUBSTITUIÇÃO COMO SOMBRA DO SALVADOR (D) — CENTRO X
+§ Indicação Textual: Gn 44.14-34 — a intercessão de Judá: "fique eu, teu servo, em lugar do menino, por escravo do meu senhor" — é o coração de toda a perícope.
+§ Exegese: Esta é a oração mais longa de Gênesis. Judá narra toda a história paterna e oferece-se como substituto pelo irmão. O verbo "yashav" (ficar) repete-se enfaticamente. Judá, que vendera José, agora se vende por Benjamim.
+§ Teologia Reformada: A CFW VIII (Cristo o Mediador) ensina que a essência da redenção é a substituição vicária. Judá é tipo extraordinário de Cristo: o pecador transformado em substituto.
+§ Aplicação: A graça pode transformar o vendedor em substituto. Em Cristo, o nosso Judá-Salvador, esta é a essência do evangelho.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+Toda esta perícope explode em revelação cristológica. Judá oferece-se em substituição — antecipando Cristo, filho de Judá, que se ofereceu pelos irmãos. José revela-se como salvador e proclama: "não fostes vós que me enviastes para cá, senão Deus" (45.8) — antecipando At 2.23 sobre a crucificação como decreto divino. A casa de Israel se reúne ao redor do irmão antes rejeitado, agora exaltado para preservar a vida — antecipando a Igreja reunida ao redor de Cristo, irmão rejeitado e exaltado para salvar muitos. O "ani Yosef" antecipa o "ego eimi" do quarto evangelho.
+
+DOUTRINA CENTRAL
+Deus, em sua providência redentora, transforma a venda dos irmãos em meio de salvação universal e revela o irmão rejeitado como salvador que reconcilia a família dispersa.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Anuncie sem cessar: "não fostes vós, foi Deus". A providência redentora absorve até nossos piores pecados.
+▸ Para as Famílias: Quando reconciliações acontecerem, celebre a mesa do banquete; Deus reúne os dispersos.
+▸ Para o Discípulo: Acolha a interpretação providencial do seu passado; o que parecia ruína pode ter sido preparação.
+
+CONCLUSÃO
+"Eu sou José". Estas três palavras mudam a história. A culpa antiga se dissolve. O choro substitui a recusa. O banquete substitui o medo. E a confissão atravessa o deserto: "José ainda vive". Em Cristo, ainda hoje o Irmão rejeitado se revela aos seus e proclama: "não fostes vós que me enviastes à cruz; foi Deus, para salvar muitos". Acolha a revelação. Aceite o banquete. Confie no Irmão. E volte à casa do Pai trazendo a boa notícia: o nosso José vive, e ele reina para sempre. Amém.`;
 
   if (d.dia === 72) return `PARA PREGAR · Gênesis 46:1–7
 
+---
+
+TÍTULO DO SERMÃO
+"Não Temas Descer: por que Israel precisa ouvir a Voz que jurou descer e fazê-lo voltar"
+
 BIG IDEA
-"Antes de descer ao Egito, Israel ouve a voz que jurara descer com ele."
+Antes de descer ao Egito, Israel precisa ouvir a voz daquele que jurou descer com ele e trazê-lo de volta.
 
-MOVIMENTOS DO TEXTO
-[A]   · Israel parte com tudo o que tem rumo ao Egito
-      → A obediência não dispensa o reasseguramento divino
+PERGUNTA DE TRANSIÇÃO
+Por que, antes de descer ao Egito, Israel precisa ouvir a voz daquele que jurou descer com ele e fazê-lo voltar?
 
-◉ [X]   · "NÃO TEMAS DESCER AO EGITO; EU DESCEREI CONTIGO E TE FAREI VOLTAR"
-      → Deus desce com seu povo aos exílios prometendo o retorno
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as RAZÕES pelas quais o Senhor reasegura o patriarca em Beerseba antes de levá-lo à terra do exílio que se tornará berço de nação.
 
-[A']  · Toda a família de Jacó desce ao Egito
-      → A casa toda segue confiante quando o pai ouviu a palavra divina
+---
 
-EIXO CRISTOLÓGICO
-Mt 28:20: "eu estou convosco todos os dias até a consumação do século" — em Cristo a promessa do Egito se cumpre eternamente.`;
+MOVIMENTOS DO SERMÃO
+
+I. PORQUE A OBEDIÊNCIA NÃO DISPENSA O REASSEGURAMENTO DIVINO (A ↔ A')
+§ Indicação Textual: Gn 46.1 (Israel parte com tudo o que tem e oferece sacrifícios em Beerseba) ecoa em 46.5-7 (toda a família desce ao Egito), formando inclusio sobre a partida confirmada pela palavra divina.
+§ Exegese: Beerseba é o lugar dos juramentos de Abraão e Isaque. Israel oferece sacrifícios ali precisamente para buscar palavra. O verbo "yarad" (descer) repete-se sublinhando a gravidade: descer ao Egito é movimento contrário à promessa da terra.
+§ Teologia Reformada: A CFW XXI ensina que a oração e os sacrifícios fazem parte da adoração ordinária pela qual buscamos discernir a vontade divina. Israel modela esse buscar.
+§ Aplicação: Você busca palavra divina antes de grandes mudanças, ou age só com base em circunstâncias? Beerseba precisa anteceder o Egito.
+
+II. PORQUE DEUS DESCE COM O POVO AOS EXÍLIOS PROMETENDO O RETORNO (B) — CENTRO X
+§ Indicação Textual: Gn 46.2-4 — "não temas descer ao Egito... eu descerei contigo... e te farei tornar a subir" — é o coração da perícope.
+§ Exegese: A teofania noturna usa "anokhi El elohei avikha" (eu sou Deus, o Deus de teu pai) — fórmula da aliança patriarcal. O verbo "anokhi ered immekha" (eu mesmo descerei contigo) é declaração inédita: Deus identifica seu próprio movimento com o do povo. A promessa "te farei tornar a subir" antecipa o Êxodo.
+§ Teologia Reformada: A CFW VII ensina que a aliança da graça inclui presença divina em todas as fases da história do povo. Deus não é Deus apenas da terra prometida; é Deus do exílio também.
+§ Aplicação: Você crê que Deus desce com você ao seu Egito particular? A promessa de retorno é parte da promessa de descida.
+
+III. PORQUE A CASA TODA SEGUE CONFIANTE QUANDO O PAI OUVIU A PALAVRA (A')
+§ Indicação Textual: Gn 46.5-7 — Jacó, seus filhos, netos, filhas, todo o seu rebanho e bens descem ao Egito.
+§ Exegese: O termo "kol zar'o" (toda a sua descendência) sublinha a integralidade: o povo da promessa em embrião desce protegido. A descida é coletiva, mas a palavra foi pessoal — ao patriarca. A liderança espiritual da casa começa pela escuta solitária.
+§ Teologia Reformada: A CFW XXIV ensina que os chefes de casa são responsáveis pelo discernimento espiritual da família. A obediência do pai arrasta a confiança da casa.
+§ Aplicação: Sua família segue você com confiança porque você ouviu Deus, ou com hesitação porque você ouviu só você mesmo?
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A promessa "eu descerei contigo" cumpre-se plenamente em Cristo, o Emanuel — "Deus conosco" (Mt 1.23). Deus desce com Israel ao Egito; Deus desce em Cristo até o sepulcro; Deus desce no Espírito até os confins da terra. E em cada descida há promessa de subida: o Êxodo, a Ressurreição, a Glorificação final. Em Cristo, "estou convosco todos os dias até a consumação dos séculos" (Mt 28.20) cumpre o "anokhi ered immekha". O Egito do crente é santificado pela presença que desce e pela promessa que ressuscita.
+
+DOUTRINA CENTRAL
+Deus desce com o seu povo aos exílios da história e jura trazê-lo de volta, prefigurando em Cristo a presença redentora que santifica toda peregrinação.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Pregue que Deus desce com seu povo aos exílios contemporâneos; não os deixa órfãos.
+▸ Para as Famílias: Antes de mudanças graves, busque palavra em "Beerseba" e ofereça sacrifício.
+▸ Para o Discípulo: Não desça ao seu Egito sem ouvir antes a Voz que jura ir e voltar com você.
+
+CONCLUSÃO
+Beerseba antes do Egito. Palavra antes da viagem. Sacrifício antes da decisão. Israel modela a vida sob a aliança: ouvir antes de andar. Em Cristo, ouvimos a Voz definitiva — "estou convosco". Em qualquer descida, ele desce conosco. Em qualquer exílio, ele jura trazer-nos de volta. Sua próxima descida pede sua próxima escuta. Pare em Beerseba. Ofereça sacrifício. Ouça. E desça com confiança: o Deus de teus pais desce contigo. Amém.`;
 
   if (d.dia === 73) return `PARA PREGAR · Gênesis 46:8–27
 
+---
+
+TÍTULO DO SERMÃO
+"Setenta Almas Descem: como a promessa concentrada se prepara para se multiplicar em multidão"
+
 BIG IDEA
-"Os setenta que descem ao Egito carregam nos nomes a promessa que voltará multiplicada."
+Os setenta que descem ao Egito carregam, nos próprios nomes, a promessa que um dia voltará multiplicada em multidão.
 
-MOVIMENTOS DO TEXTO
-[A]   · Lista dos filhos e netos que descem com Jacó
-      → Cada nome registrado é semente de uma tribo futura
+PERGUNTA DE TRANSIÇÃO
+Como os setenta que descem ao Egito carregam, nos próprios nomes, a promessa que um dia voltará multiplicada em multidão?
 
-◉ [X]   · SETENTA ALMAS DESCEM AO EGITO — A PROMESSA SE CONCENTRA PARA SE MULTIPLICAR
-      → Deus aperta o povo num punhado para multiplicá-lo em multidão
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais a contagem precisa dos setenta antecipa a multiplicação providencial do povo em multidão incalculável.
 
-[A']  · Encerramento solene da contagem da família
-      → A precisão divina conta o que parecerá insignificante ao mundo
+---
 
-EIXO CRISTOLÓGICO
-At 7:14: "setenta e cinco almas" — em Cristo, o pequeno remanescente se multiplica em grande igreja.`;
+MOVIMENTOS DO SERMÃO
+
+I. REVELANDO QUE CADA NOME REGISTRADO É SEMENTE DE TRIBO FUTURA (A ↔ A')
+§ Indicação Textual: Gn 46.8-15 (filhos de Lia) e 46.16-27 (filhos de Zilpa, Raquel e Bila) ecoam-se mutuamente, encerrando-se com a contagem total "setenta almas".
+§ Exegese: A fórmula "e estes são os nomes" ("we'eleh shemot") abre a perícope — exatamente como abrirá Êxodo (Êx 1.1), assinalando a continuidade. Cada nome é registrado nominalmente, sublinhando que Deus não trata o povo como massa, mas como pessoas.
+§ Teologia Reformada: A CFW III ensina que Deus elege seus filhos "nominalmente" — cada um conhecido pelo nome desde a eternidade. A genealogia em Gn 46 prefigura o livro da vida do Cordeiro.
+§ Aplicação: Você acredita que seu nome é conhecido pelo Senhor pessoalmente? Não há "massa" diante de Deus; há nomes registrados.
+§ Aplicação adicional: Olhe para sua linhagem como sementes de promessa que Deus está cuidando.
+
+II. REVELANDO QUE A PROMESSA SE CONCENTRA NUM PUNHADO PARA MULTIPLICAR-SE EM MULTIDÃO (B) — CENTRO X
+§ Indicação Textual: Gn 46.27 — "todas as almas da casa de Jacó que vieram ao Egito foram setenta" — é o coração da perícope.
+§ Exegese: O número "shiv'im" (setenta) é simbólico: 7 (plenitude) × 10 (totalidade) = plenitude da totalidade. Em Êx 1.5 será repetido. At 7.14 menciona "setenta e cinco" seguindo a LXX, que inclui descendentes de José. A concentração antecede a multiplicação.
+§ Teologia Reformada: A CFW VII ensina que a aliança da graça opera segundo o princípio "diminuir para multiplicar": Deus reduz o povo a um remanescente fiel para depois expandi-lo.
+§ Aplicação: Quando o seu rebanho parecer pequeno, lembre-se: assim Deus prepara multiplicação. Setenta tornaram-se milhões.
+
+III. REVELANDO QUE A PRECISÃO DIVINA CONTA O QUE O MUNDO IGNORA (A')
+§ Indicação Textual: Gn 46.27b — Jacó e toda a sua casa, contados em listas separadas por matriarca, encerrando-se com solene totalização.
+§ Exegese: A precisão genealógica revela a fidelidade meticulosa de Deus à promessa abraâmica de "fazer-te grande nação". O texto não despreza nem mistura: distingue as descendências de Lia (33 almas), Zilpa (16), Raquel (14), Bila (7).
+§ Teologia Reformada: A CFW V ensina que a providência divina opera nos detalhes: "nem um pardal cai sem o conhecimento do Pai" (Mt 10.29). Cada alma da casa de Jacó está contada.
+§ Aplicação: A sua história e os seus aparentemente insignificantes detalhes estão contados por Deus. Confie na contabilidade celestial.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+Os setenta que descem ao Egito anteciparão os setenta enviados por Cristo (Lc 10.1), prefigurando a missão universal da Igreja. A concentração ao remanescente antes da multiplicação cumpre-se em Cristo: ele mesmo é o remanescente único (Is 53), e dele brota a multidão das nações redimidas (Ap 7.9). Em Cristo, cada nome é registrado no livro da vida (Lc 10.20; Ap 21.27), e o povo da promessa cresce de setenta almas a inumerável multidão de toda língua e povo.
+
+DOUTRINA CENTRAL
+Deus concentra graciosamente seu povo num remanescente nominal e fiel para multiplicá-lo em multidão redimida pela obra de Cristo, o Remanescente perfeito.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Cuide nominalmente das pessoas; cada membro é semente da missão futura.
+▸ Para as Famílias: Conheça e registre os nomes da sua casa como Deus os conhece.
+▸ Para o Discípulo: Quando se sentir parte de uma minoria pequena, lembre-se: setenta tornaram-se nação.
+
+CONCLUSÃO
+Setenta almas. Foi com isso que Deus começou a construir a nação que herdaria a terra. E foi com isso que ele começou a escrever a história que culminaria em Cristo. Não despreze o pequeno. Não confie no grande. Cada nome registrado por Deus é tijolo da casa eterna. Em Cristo, o setenta volta multiplicado em multidão. Você é registrado nominalmente no livro da vida do Cordeiro. Cuide dos seus por nome. Sirva no remanescente. E descanse: Deus conta cada alma — e leva o seu povo de setenta a multidão. Amém.`;
 
   if (d.dia === 74) return `PARA PREGAR · Gênesis 46:28–47:12
 
+---
+
+TÍTULO DO SERMÃO
+"O Peregrino Abençoa o Faraó: como o reino menor recebe palavra do reino maior em Cristo"
+
 BIG IDEA
-"O patriarca peregrino abençoa o Faraó — o reino menor recebe palavra do reino maior."
+O patriarca peregrino consegue abençoar o próprio Faraó, mostrando que o reino menor recebe palavra do reino maior.
 
-MOVIMENTOS DO TEXTO
-[A]   · José vai ao encontro de Jacó em Gósen
-      → A reconciliação familiar se realiza no abraço esperado por anos
+PERGUNTA DE TRANSIÇÃO
+De que forma o patriarca peregrino consegue abençoar o próprio Faraó, mostrando que o reino menor recebe palavra do reino maior?
 
-[B]   · José instrui os irmãos sobre como falar ao Faraó
-      → A sabedoria prepara cada encontro estratégico
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais o velho Jacó, vivendo em terra estrangeira, abençoa o trono mais poderoso da época em virtude da aliança que possui.
 
-◉ [X]   · OS IRMÃOS DIANTE DO FARAÓ — GÓSEN É CONCEDIDA
-      → A providência abre território para o povo crescer protegido
+---
 
-[B']  · Jacó abençoa o Faraó
-      → O peregrino tem mais a dar que o trono que o recebeu
+MOVIMENTOS DO SERMÃO
 
-[A']  · José sustenta a família em Ramessés
-      → A providência prove pão para a casa até o tempo da redenção
+I. REVELANDO QUE A RECONCILIAÇÃO FAMILIAR SE REALIZA NO ABRAÇO ESPERADO (A ↔ A')
+§ Indicação Textual: Gn 46.28-30 (José encontra Jacó em Gósen; choram juntos) ecoa em 47.11-12 (José instala a família em Ramessés e a sustenta), formando inclusio sobre cuidado familiar.
+§ Exegese: Jacó declara: "agora posso morrer, pois vi a tua face e ainda vives" (46.30). A palavra "panim" (face) ecoa Peniel e Esaú. A face do filho rejeitado se torna face de bênção. Ramessés será depois lugar do trabalho escravo (Êx 1.11): a história já se anuncia.
+§ Teologia Reformada: A CFW XXVI ensina que a comunhão dos santos inclui cuidado material concreto. José cuida nominalmente da casa de Jacó.
+§ Aplicação: Seu cuidado material das famílias da igreja é tangível como o de José?
 
-EIXO CRISTOLÓGICO
-Hb 7:7: "sem contradição alguma, o inferior é abençoado pelo superior" — em Cristo, o peregrino abençoa o mundo poderoso.`;
+II. REVELANDO QUE A SABEDORIA PREPARA CADA ENCONTRO ESTRATÉGICO (B ↔ B')
+§ Indicação Textual: Gn 46.31-34 (José instrui os irmãos sobre como falar ao Faraó) ecoa em 47.7-10 (Jacó abençoa o Faraó).
+§ Exegese: José orienta os irmãos a se declararem "pastores", para que o Faraó os afaste em Gósen — providência protetora. A frase "toda profissão de pastor é abominação para os egípcios" funciona como cinto de segurança espiritual: separação do paganismo da corte.
+§ Teologia Reformada: A CFW XX ensina que a liberdade cristã inclui o uso da sabedoria prática para preservar a comunhão da Igreja em ambientes hostis.
+§ Aplicação: Você prepara estrategicamente os encontros que poderiam comprometer ou preservar sua fidelidade?
+
+III. REVELANDO QUE A PROVIDÊNCIA ABRE TERRITÓRIO PARA O POVO CRESCER PROTEGIDO (C) — CENTRO X
+§ Indicação Textual: Gn 47.1-6 — a família de Jacó diante do Faraó; Gósen é concedida — é o centro do quiasma.
+§ Exegese: Gósen é descrita como "a melhor parte da terra". O Faraó até pede que homens capazes administrem o seu próprio gado. O povo de Deus prospera economicamente sem se misturar culturalmente.
+§ Teologia Reformada: A CFW V.7 ensina que Deus governa as autoridades civis para favorecer (em tempos de graça) a expansão de seu povo. Gósen é dom providencial.
+§ Aplicação: Reconheça as "Gósens" que Deus tem aberto para o crescimento da igreja em ambientes paradoxalmente hostis.
+
+IV. REVELANDO QUE O PEREGRINO TEM MAIS A DAR DO QUE O TRONO QUE O RECEBEU (B') — RAMIFICAÇÃO CRISTOLÓGICA
+§ Indicação Textual: Gn 47.7, 10 — Jacó abençoa o Faraó duas vezes: ao entrar e ao sair de sua presença.
+§ Exegese: O verbo "barakh" (abençoar) é usado pelo inferior em direção ao superior, invertendo a hierarquia mundana. Jacó declara seus dias como "poucos e maus", peregrinação (megurim), mas tem bênção a oferecer. Hb 7.7 cita esta passagem.
+§ Teologia Reformada: A CFW XXV (Igreja) ensina que a verdadeira autoridade espiritual repousa na aliança da promessa, não no poder político. A Igreja peregrina abençoa as nações que a hospedam.
+§ Aplicação: Como peregrino na terra, você abençoa as autoridades civis com palavra de Deus, ou só pede favor?
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+Jacó abençoando o Faraó prefigura a Igreja que, mesmo peregrina, abençoa as nações em virtude de Cristo. Cristo, o Filho de Davi, é o Patriarca eterno que abençoa Reis e Faraós através do seu evangelho. Hb 7.7 — "sem contradição alguma, o inferior é abençoado pelo superior" — usa esta lógica para mostrar que Melquisedeque (e Cristo) excedem Levi. Em Cristo, o povo peregrino possui bênção que o mundo não imagina, e a oferece livremente até aos seus opressores aparentes.
+
+DOUTRINA CENTRAL
+O povo da aliança, mesmo peregrino, possui bênção superior aos tronos do mundo e a oferece em nome de Cristo, o verdadeiro Rei abençoador.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Abençoe as autoridades civis em vez de só criticá-las; possuímos bênção que elas não têm.
+▸ Para as Famílias: Ensine os filhos a verem-se como peregrinos que abençoam, não como vítimas que reclamam.
+▸ Para o Discípulo: Em qualquer Faraó da sua vida, ofereça bênção em nome de Cristo, não só pedido de favor.
+
+CONCLUSÃO
+Um velho peregrino abençoa o homem mais poderoso da terra. Eis a lógica do reino: o trono do mundo recebe bênção do peregrino da aliança. Em Cristo, a Igreja peregrina é eternamente superior aos impérios. Não se acanhe; abençoe. Não veja a si mesmo como inferior; você possui bênção em Cristo que excede qualquer trono terreno. Caminhe em Gósen com dignidade. Sirva os faraós com palavra. E saiba: a face do irmão restaurado é mais valiosa que toda a glória do Egito. Amém.`;
 
   if (d.dia === 75) return `PARA PREGAR · Gênesis 47:13–26
 
+---
+
+TÍTULO DO SERMÃO
+"Sabedoria que Salva o Egito e Guarda Israel: como o servo de Deus administra a fome para o bem de muitos"
+
 BIG IDEA
-"A sabedoria do servo de Deus salva o Egito enquanto Israel cresce protegido."
+A sabedoria administrativa do servo de Deus salva o Egito inteiro enquanto Israel cresce protegido em Gósen.
 
-MOVIMENTOS DO TEXTO
-[A]   · A fome agrava-se; José recolhe todo o dinheiro
-      → A administração sábia organiza o que a crise tornou caótico
+PERGUNTA DE TRANSIÇÃO
+Como a sabedoria administrativa do servo de Deus salva o Egito inteiro enquanto Israel cresce protegido em Gósen?
 
-[B]   · O povo entrega rebanhos por comida
-      → Quem não se planeja entrega aos poucos tudo o que tinha
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais José articula sabedoria providencial e cuidado fraterno, salvando o mundo conhecido e protegendo o povo da promessa.
 
-◉ [X]   · O POVO ENTREGA TERRAS E A SI MESMO — "COMPRA-NOS PELO PÃO"
-      → A salvação corporal tem preço; nem sempre é gratuita socialmente
+---
 
-[B']  · José institui o quinto para o Faraó
-      → A sabedoria preserva proporção justa entre Estado e povo
+MOVIMENTOS DO SERMÃO
 
-[A']  · Apenas as terras dos sacerdotes ficam livres
-      → A administração distingue o que pertence à religião do que pertence ao trono
+I. REVELANDO QUE A ADMINISTRAÇÃO SÁBIA ORGANIZA O QUE A CRISE TORNOU CAÓTICO (A ↔ A')
+§ Indicação Textual: Gn 47.13-14 (a fome agrava-se; José recolhe todo o dinheiro) ecoa em 47.23-26 (regulamentação do quinto e exceção dos sacerdotes), formando inclusio sobre estrutura administrativa.
+§ Exegese: O verbo "kavod" (pesar) descreve a fome — peso opressivo. José age em fases: dinheiro, gado, terras, pessoas. Cada fase preserva a vida enquanto reordena a estrutura econômica.
+§ Teologia Reformada: A CFW XX (Liberdade cristã) ensina que estruturas econômicas são instrumentos da providência divina. A boa administração honra a Deus e preserva vidas.
+§ Aplicação: Você reconhece a administração como ministério espiritual? Estruturar bem é um ato de fé.
 
-EIXO CRISTOLÓGICO
-Mt 25:21: "bom servo, fiel e prudente" — em Cristo o servo fiel administra com sabedoria para o bem dos muitos.`;
+II. REVELANDO QUE QUEM NÃO SE PLANEJA ENTREGA AOS POUCOS O QUE TEM (B ↔ B')
+§ Indicação Textual: Gn 47.15-17 (o povo entrega rebanhos por comida) ecoa em 47.21-22 (José reduz o povo à servidão, exceto os sacerdotes).
+§ Exegese: O verbo "boa" (vir) repete-se sublinhando o desespero progressivo do povo. A entrega escalonada — dinheiro, gado, terras, pessoas — é diagnóstico social: a falta de previdência tem custo escalonado.
+§ Teologia Reformada: A CFW V.5 ensina que a providência divina nos chama à prudência. A falta de preparação não é "fé"; é negligência espiritual.
+§ Aplicação: Reflita sobre como administrar para que crises não devorem tudo o que você tem.
+
+III. REVELANDO QUE A SALVAÇÃO CORPORAL TEM PREÇO E ABRE A SERVIDÃO PROVIDENCIAL (C) — CENTRO X
+§ Indicação Textual: Gn 47.18-20 — "compra-nos a nós e à nossa terra pelo pão; seremos servos de Faraó" — é o coração da perícope.
+§ Exegese: A expressão "qenehu otanu... avadim" (compra-nos como escravos) é literal. O Faraó torna-se proprietário absoluto. Paradoxalmente, este pacto preserva a vida em meio à fome. A escravidão pode ser, num contexto crítico, instrumento de sobrevivência.
+§ Teologia Reformada: A CFW XX (Liberdade cristã) ensina que a liberdade verdadeira é serviço a Deus. O preço da salvação no Egito antecipa o preço da salvação eterna: somos comprados (1Co 6.20) para sermos servos de Cristo.
+§ Aplicação: Você reconhece que ser comprado por Cristo é a salvação verdadeira que prefigura a salvação corporal de José?
+
+IV. REVELANDO QUE A ADMINISTRAÇÃO DISTINGUE RELIGIÃO E ESTADO (A')
+§ Indicação Textual: Gn 47.22, 26 — apenas as terras dos sacerdotes ficam livres; o quinto é instituído para o Faraó.
+§ Exegese: A exceção sacerdotal é fato histórico do Egito antigo: os sacerdotes mantinham terras inalienáveis. A regulamentação do "chamesh" (quinto) — 20% — torna-se norma duradoura. A distinção entre culto e Estado se mantém.
+§ Teologia Reformada: A CFW XXIII (Magistrado civil) ensina a distinção entre as esferas do magistrado e do ministro. Mesmo num governo pagão, o culto preserva autonomia.
+§ Aplicação: Defenda a distinção entre o que pertence ao Estado e o que pertence ao culto, no espírito da prudência providencial.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+José prefigura Cristo como o Mordomo fiel que salva muitos pela sua administração sábia da graça (1Co 4.1-2). A fome universal aponta para a fome espiritual da humanidade; o pão de José antecipa o Pão da Vida; a "compra" do povo prefigura a redenção pelo sangue (1Co 6.20). Em Cristo, somos comprados — não para escravidão opressora, mas para o serviço glorioso. E os "sacerdotes" cujas terras Deus preserva apontam para o povo sacerdotal de Cristo (1Pe 2.9), cuja herança é o próprio Senhor.
+
+DOUTRINA CENTRAL
+Deus eleva servos sábios para administrar tempos de fome, salvando o mundo e preservando seu povo até a redenção em Cristo, o Servo perfeito.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Forme administradores sábios; eles servem o reino mesmo nos detalhes "seculares".
+▸ Para as Famílias: Ensine planejamento financeiro como espiritualidade prática.
+▸ Para o Discípulo: Use a sabedoria administrativa a serviço da salvação dos muitos.
+
+CONCLUSÃO
+A fome devorou o Egito, mas a sabedoria de José o salvou. O mundo inteiro foi alimentado por causa de um servo do Deus de Israel. Em Cristo, o nosso Mordomo eterno, o mundo é alimentado pelo Pão da Vida. Seja sábio no seu Egito particular. Administre com previdência. Ame com cuidado fraternal. E sirva sabendo: a melhor administração serve a salvação dos muitos. Em Cristo, fomos comprados por preço infinito para serviço glorioso. Bendito o servo fiel e prudente. Amém.`;
 
   if (d.dia === 76) return `PARA PREGAR · Gênesis 47:27–31
 
+---
+
+TÍTULO DO SERMÃO
+"Sepultem-me em Canaã: como o peregrino se prepara para morrer ancorado na promessa que ainda não possuía"
+
 BIG IDEA
-"O peregrino se prepara para morrer pedindo apenas para ser sepultado na terra prometida."
+O peregrino se prepara para morrer pedindo apenas ser sepultado na terra prometida que ainda não possuía plenamente.
 
-MOVIMENTOS DO TEXTO
-[A]   · Israel habita no Egito e cresce muito
-      → A promessa se multiplica mesmo em terra estrangeira
+PERGUNTA DE TRANSIÇÃO
+Por que o peregrino se prepara para morrer pedindo apenas ser sepultado na terra prometida que ainda não possuía?
 
-◉ [X]   · JACÓ FAZ JOSÉ JURAR SEPULTÁ-LO EM CANAÃ
-      → A esperança verdadeira aponta para a herança que não viu plenamente
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as RAZÕES pelas quais o último pedido de Jacó torna sua morte uma confissão profética da fidelidade da promessa.
 
-EIXO CRISTOLÓGICO
-Hb 11:22: "deu ordens acerca dos seus ossos" — em Cristo a esperança da ressurreição molda até o pedido de sepultura.`;
+---
+
+MOVIMENTOS DO SERMÃO
+
+I. PORQUE A PROMESSA SE MULTIPLICA MESMO EM TERRA ESTRANGEIRA (A)
+§ Indicação Textual: Gn 47.27-28 — Israel habita no Egito por dezessete anos; "tornaram-se possessores e multiplicaram-se grandemente" (forma inclusio com o juramento de sepultamento).
+§ Exegese: A frase "wayyochezu vah" (tomaram posse dela) é provocadora: Israel toma posse no Egito, e não em Canaã. Os 17 anos no Egito ecoam os 17 anos de José antes da venda (37.2): simetria providencial. O verbo "parah-rabah" (frutificar-multiplicar) ecoa a bênção criacional.
+§ Teologia Reformada: A CFW VII ensina que a promessa de Deus opera mesmo em terras alheias. A multiplicação no Egito antecipa a multiplicação da Igreja entre os gentios.
+§ Aplicação: Reconheça que a sua estabilidade temporária no "Egito" não é seu destino último; a promessa ainda chama.
+
+II. PORQUE A ESPERANÇA VERDADEIRA APONTA PARA A HERANÇA QUE NÃO VIU (B) — CENTRO X
+§ Indicação Textual: Gn 47.29-31 — Jacó faz José jurar sepultá-lo em Canaã, na sepultura dos pais; José jura, e Jacó se inclina sobre a cabeceira do leito — é o coração da perícope.
+§ Exegese: O juramento envolve a mão sob a coxa — gesto ligado à aliança patriarcal. A inclinação "al rosh hammittah" (sobre a cabeceira do leito) é interpretada pela LXX e Hb 11.21 como adoração ("sobre o cajado"). A confissão é dupla: pedido concreto + adoração final.
+§ Teologia Reformada: A CFW XXXII (Estado dos mortos) ensina que a esperança cristã inclui o cuidado pelo corpo, na expectativa da ressurreição. O sepultamento em Canaã é confissão de fé na promessa.
+§ Aplicação: Como você se prepara para a sua morte? O cristão morre confessando a promessa que ainda espera.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+O pedido de Jacó para ser sepultado em Canaã é confissão profética: ele não verá a posse plena, mas crê na promessa. Hb 11.13-16 cita esse padrão: "morreram todos na fé, sem terem recebido as promessas, mas vendo-as e saudando-as de longe". Em Cristo, a esperança da ressurreição transforma cada túmulo cristão em semente da herança final. O sepultamento em Canaã antecipa o sepultamento de Cristo na terra prometida, e o seu túmulo vazio inaugura a herança eterna para todos os seus.
+
+DOUTRINA CENTRAL
+Deus produz nos seus filhos uma fé que abraça a promessa até a morte, prefigurando em Cristo a ressurreição que garante a herança eterna.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Ensine os crentes a morrerem confessando a promessa; a morte cristã prega.
+▸ Para as Famílias: Conversem sobre testamentos espirituais; deixe legado de fé além de bens.
+▸ Para o Discípulo: Prepare-se para morrer confiante em Cristo, abraçando promessas ainda não vistas plenamente.
+
+CONCLUSÃO
+"Sepultem-me em Canaã". Em um mundo onde Jacó possuía riqueza, gado, terra e influência, seu último pedido foi pequeno: um lugar no túmulo da promessa. Eis a fé madura. Eis o coração peregrino. Em Cristo, o nosso Patriarca eterno, a morte do crente é confissão de promessa cumprida — porque a ressurreição já abriu a herança. Você se prepara para morrer abraçando promessas, ou apenas acumulando posses? Inclina-se sobre o cajado da tua fé. E descansa: o Senhor que cumpriu a Canaã para Jacó cumprirá a Nova Jerusalém para todos os seus. Amém.`;
 
   if (d.dia === 77) return `PARA PREGAR · Gênesis 48:1–22
 
+---
+
+TÍTULO DO SERMÃO
+"As Mãos Cruzadas da Graça: como o patriarca permite que a ordem natural seja invertida pela escolha soberana"
+
 BIG IDEA
-"O patriarca cruza as mãos e a graça inverte a ordem — o menor é colocado adiante do maior."
+O patriarca cruza as mãos e permite que a graça inverta a ordem, colocando o menor sempre adiante do maior.
 
-MOVIMENTOS DO TEXTO
-[A]   · Jacó evoca a aparição de Luz e adota Efraim e Manassés
-      → A memória da aliança guia as bênçãos no fim da vida
+PERGUNTA DE TRANSIÇÃO
+Como o patriarca cruza as mãos e permite que a graça inverta a ordem, colocando o menor sempre adiante do maior?
 
-[B]   · José apresenta os filhos: Manassés à direita, Efraim à esquerda
-      → O pai sábio organiza, mas a graça final pertence a Deus
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais Jacó, em fim de vida, confirma a lógica reformada da eleição: a graça precede e inverte o mérito natural.
 
-◉ [X]   · JACÓ CRUZA AS MÃOS, A DIREITA SOBRE EFRAIM, O MAIS NOVO
-      → A graça soberana continua invertendo a ordem natural na história santa
+---
 
-[B']  · Jacó abençoa em nome do Anjo que o livrou de todo mal
-      → A bênção autêntica nasce da história vivida com Deus
+MOVIMENTOS DO SERMÃO
 
-[A']  · Jacó dá a Efraim e Manassés porção a mais que aos irmãos
-      → Deus completa a história de cada filho com generosidade própria
+I. REVELANDO QUE A MEMÓRIA DA ALIANÇA GUIA AS BÊNÇÃOS DO FIM DA VIDA (A ↔ A')
+§ Indicação Textual: Gn 48.1-7 (Jacó evoca a aparição de Luz/Betel e adota Efraim e Manassés) ecoa em 48.17-22 (Jacó dá a Efraim e Manassés porção a mais), formando inclusio sobre adoção e herança.
+§ Exegese: O verbo "yalad" (gerar) é estendido pela adoção: "Efraim e Manassés serão meus como Rúben e Simeão" (48.5). A memória da bênção em Luz/Betel ancora a transmissão. A "porção a mais" ("shekem achad") faz trocadilho com o nome Siquém.
+§ Teologia Reformada: A CFW XII (Adoção) ensina que somos feitos filhos de Deus pela adoção em Cristo. Jacó adotando os netos é figura da adoção divina.
+§ Aplicação: Você ancora suas bênçãos finais na memória da aliança? O legado espiritual deve nascer da história com Deus.
 
-EIXO CRISTOLÓGICO
-Rm 9:8: "os filhos da promessa é que são contados como descendência" — em Cristo a graça segue invertendo as expectativas do mundo.`;
+II. REVELANDO QUE O PAI SÁBIO ORGANIZA MAS A GRAÇA FINAL PERTENCE A DEUS (B ↔ B')
+§ Indicação Textual: Gn 48.8-12 (José apresenta os filhos: Manassés à direita, Efraim à esquerda) ecoa em 48.15-16 (Jacó abençoa em nome do Anjo que o livrou de todo mal).
+§ Exegese: A invocação "haElohim asher hithallekhu... haMalakh hagoel oti" (o Deus diante do qual andaram... o Anjo que me resgatou) é uma das primeiras menções ao "goel" (redentor) aplicadas a Deus. A bênção articula três níveis: Deus dos pais, Deus pastor, Anjo redentor.
+§ Teologia Reformada: A CFW VIII ensina que Cristo é o Mediador eterno e o Redentor pré-encarnado. O "Anjo que me resgatou" é teologia cristológica avançada.
+§ Aplicação: Que histórias de Deus você invoca ao abençoar os seus? A bênção sem teologia se reduz a desejo.
+
+III. REVELANDO QUE A GRAÇA SOBERANA INVERTE A ORDEM NATURAL (C) — CENTRO X
+§ Indicação Textual: Gn 48.13-14 — Jacó cruza as mãos, a direita sobre Efraim, o mais novo — é o centro estrutural e teológico.
+§ Exegese: O verbo "sikkel" (cruzar/entrelaçar) descreve o ato deliberado. A mão direita representa primazia. Jacó já sabe a história: o filho mais novo (Isaque, Jacó, José) carrega a promessa. A teologia da eleição se escreve com gestos.
+§ Teologia Reformada: A CFW III (Decretos) ensina que a eleição é por puro arbítrio da graça, sem consideração de obras ou ordem natural. A cena das mãos cruzadas é tableau perfeito.
+§ Aplicação: Você se rende à soberania de Deus quando ela inverte suas expectativas? A graça raramente confirma a ordem do mundo.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A inversão de Efraim e Manassés segue o padrão pelo qual Deus escolhe o segundo Adão sobre o primeiro, Jacó sobre Esaú, Davi sobre seus irmãos mais velhos, e finalmente Cristo, o Filho rejeitado pelos primogênitos da Lei, exaltado sobre toda a criação (Cl 1.18). Em Cristo, "os filhos da promessa é que são contados como descendência" (Rm 9.8). As mãos cruzadas de Jacó prefiguram a cruz de Cristo: os braços abertos onde Deus inverte a maldição natural em bênção eterna. Os menores do mundo são os primeiros do Reino (Mt 19.30).
+
+DOUTRINA CENTRAL
+Deus, por sua soberania graciosa, inverte a ordem natural escolhendo os menores e os improváveis para canalizar a bênção da aliança que culmina em Cristo.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Não privilegie só os "primogênitos" do mundo; reconheça os Efraims que Deus está escolhendo.
+▸ Para as Famílias: Abençoe os filhos com teologia, não só com sentimentos.
+▸ Para o Discípulo: Renda-se à inversão soberana; nem sempre a graça segue suas expectativas.
+
+CONCLUSÃO
+Jacó cruza as mãos. José tenta corrigir. Jacó insiste. A graça precede a ordem natural. Eis o evangelho prefigurado em gesto: o que era último torna-se primeiro. Em Cristo, as nossas expectativas de mérito e ordem caem, e a soberania do Pai escolhe livremente. Abençoe sua casa com teologia da graça. Acolha quando Deus colocar a mão direita sobre quem você esperava menos. As mãos cruzadas do patriarca anunciam os braços abertos do Filho na cruz. Amém.`;
 
   if (d.dia === 78) return `PARA PREGAR · Gênesis 49:1–28
 
+---
+
+TÍTULO DO SERMÃO
+"O Cetro de Judá até Siló: como o patriarca profetiza o Messias eterno em meio às bênçãos das doze tribos"
+
 BIG IDEA
-"O patriarca abençoa as tribos e profetiza que de Judá não se apartará o cetro até Siló."
+O patriarca abençoa as tribos profetizando que de Judá não se apartará o cetro até que enfim venha Siló, o Messias.
 
-MOVIMENTOS DO TEXTO
-[A]   · "Reuni-vos e ouvi, filhos de Jacó"
-      → O fim da vida do justo é hora de palavras proféticas
+PERGUNTA DE TRANSIÇÃO
+Por que o patriarca abençoa as tribos profetizando que de Judá não se apartará o cetro até que enfim venha Siló?
 
-[B]   · Bênçãos sobre Rúben, Simeão, Levi — disciplina pelas culpas
-      → A bênção honesta diz a verdade sobre o passado de cada um
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as RAZÕES pelas quais as últimas palavras de Jacó tornam-se janela profética para o reino eterno do Messias da tribo de Judá.
 
-◉ [X]   · "O CETRO NÃO SE ARREDARÁ DE JUDÁ ATÉ QUE VENHA SILÓ"
-      → O patriarca profetiza o Messias que reinará para sempre desde Judá
+---
 
-[B']  · Bênçãos sobre Zebulom, Issacar, Dã, Gade — cada um conforme seu chamado
-      → Cada vocação tribal recebe palavra ajustada a si
+MOVIMENTOS DO SERMÃO
 
-[A']  · "Estas são as doze tribos de Israel" — a casa toda é abençoada
-      → A história santa abraça a casa inteira em diversidade ordenada
+I. PORQUE O FIM DA VIDA DO JUSTO É HORA DE PALAVRAS PROFÉTICAS (A ↔ A')
+§ Indicação Textual: Gn 49.1-2 ("ajuntai-vos, e vos anunciarei o que vos há de acontecer nos últimos dias") ecoa em 49.28 ("estas são as doze tribos de Israel"), formando inclusio sobre revelação do destino tribal.
+§ Exegese: A expressão "be'acharit hayyamim" (nos últimos dias) é tecnicamente escatológica. Jacó não está apenas dando últimos desejos; está pronunciando oráculos sobre o futuro de Israel. O verbo "asaph" (reunir) prepara liturgia familiar.
+§ Teologia Reformada: A CFW I (Escritura) ensina que a revelação progressiva incluiu profecias dadas por patriarcas. As palavras de Jacó são canônicas.
+§ Aplicação: O legado profético do justo molda gerações. O que você está dizendo aos seus que ficarão depois de você?
 
-EIXO CRISTOLÓGICO
-Ap 5:5: "o Leão da tribo de Judá... venceu" — em Cristo Siló veio e o cetro permanece eterno.`;
+II. PORQUE A BÊNÇÃO HONESTA DIZ A VERDADE SOBRE O PASSADO (B ↔ B')
+§ Indicação Textual: Gn 49.3-7 (Rúben perde primazia por instabilidade; Simeão e Levi são dispersos por violência) ecoa em 49.13-21 (bênçãos sobre Zebulom, Issacar, Dã, Gade, Aser, Naftali).
+§ Exegese: A bênção sobre Rúben não esconde: "ferveste como a água, não terás preeminência" — referência a Gn 35.22. A maldição sobre Simeão e Levi remete a Gn 34. A bênção sobre Levi se transformará posteriormente em vocação sacerdotal (Êx 32.26-29), mostrando misericórdia.
+§ Teologia Reformada: A CFW V.5 ensina que mesmo a disciplina divina serve à formação do povo. As "bênçãos honestas" de Jacó são lições teológicas a cada tribo.
+§ Aplicação: Você pode abençoar com verdade, mesmo nomeando falhas, quando o objetivo é o bem do outro?
+
+III. PORQUE JUDÁ RECEBE A PROMESSA MESSIÂNICA DEFINITIVA (C) — CENTRO X
+§ Indicação Textual: Gn 49.8-12 — "o cetro não se arredará de Judá... até que venha Siló" — é o coração da perícope.
+§ Exegese: O nome "Judá" (Yehudah) deriva de "louvar" (yadah). A figura do "leão" prefigura a realeza davídica e messiânica. O termo "Shiloh" tem várias interpretações: "aquele a quem pertence", "tranquilidade", "Messias". A linguagem "jumentinho" e "vinho" antecipa a entrada triunfal e a Última Ceia.
+§ Teologia Reformada: A CFW VIII (Cristo o Mediador) ensina que Cristo é o cumprimento das profecias messiânicas. Gn 49.10 é citado historicamente como prova cristológica fundamental.
+§ Aplicação: Você reconhece Cristo como o Siló de Gn 49? Adore-o como Leão e Cordeiro, Rei eterno.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A profecia "o cetro não se arredará de Judá" cumpre-se em Davi (1Sm 7) e plenamente em Cristo, o Filho de Davi, da tribo de Judá (Mt 1.1-3; Hb 7.14). O Leão da tribo de Judá em Ap 5.5 ressoa Gn 49.9: "Judá é leãozinho... encurva-se e deita-se como leão". O "jumentinho a quem ele atará a vinha" prefigura Jesus entrando em Jerusalém (Zc 9.9; Mt 21.5). O "vinho" e "vestes lavadas" prefiguram a Ceia e o sangue redentor (Ap 7.14). Toda a perícope é janela profética para o Messias.
+
+DOUTRINA CENTRAL
+Deus profetiza, através do patriarca Jacó, o reino messiânico eterno de Cristo, garantindo que o cetro de Judá não cessará até a vinda do verdadeiro Siló.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Anuncie Cristo como Siló cumprido; sua autoridade é eterna sobre o povo de Deus.
+▸ Para as Famílias: Reúna a casa em momentos solenes para palavras proféticas que orientem o futuro.
+▸ Para o Discípulo: Submeta-se ao cetro de Judá; nenhum outro reino dura.
+
+CONCLUSÃO
+Jacó morre profetizando. As tribos ouvem oráculos que se cumpriram na história de Israel e culminaram em Cristo. O cetro de Judá ainda reina — agora nas mãos do Cordeiro que venceu. Quando vier o seu fim, deixe palavras que ancorem os seus na promessa messiânica. Aclame Siló. Ele veio. Ele venceu. Ele reina. E a Ele todo joelho se dobrará. Amém.`;
 
   if (d.dia === 79) return `PARA PREGAR · Gênesis 49:29–50:14
 
+---
+
+TÍTULO DO SERMÃO
+"A Procissão à Herança Prometida: como Israel sobe do Egito para sepultar Jacó na terra concreta da promessa"
+
 BIG IDEA
-"A grande procissão sobe ao Egito para enterrar Jacó na terra da promessa."
+A grande procissão fúnebre sobe do Egito para enterrar Jacó justamente na terra concreta da promessa esperada.
 
-MOVIMENTOS DO TEXTO
-[A]   · Jacó ordena que o sepultem na cova de Macpela
-      → A última palavra do justo aponta para a herança esperada
+PERGUNTA DE TRANSIÇÃO
+Como a grande procissão fúnebre sobe do Egito para enterrar Jacó justamente na terra concreta da promessa esperada?
 
-[B]   · Jacó expira e é recolhido ao seu povo
-      → A morte do justo é descanso sereno após longa peregrinação
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais o sepultamento de Jacó em Macpela transforma um cortejo fúnebre em confissão pública da fidelidade da promessa.
 
-◉ [X]   · JOSÉ PEDE PERMISSÃO AO FARAÓ — O EGITO SE INCLINA AO LUTO DO PATRIARCA
-      → A glória do servo de Deus se manifesta até no tributo das nações
+---
 
-[B']  · Procissão fúnebre majestosa atravessa o deserto
-      → A casa de Israel honra publicamente seu pai diante das nações
+MOVIMENTOS DO SERMÃO
 
-[A']  · Os filhos sepultam Jacó em Macpela conforme sua ordem
-      → A obediência ao desejo do pai termina onde a aliança começou
+I. REVELANDO QUE A ÚLTIMA PALAVRA DO JUSTO APONTA PARA A HERANÇA ESPERADA (A ↔ A')
+§ Indicação Textual: Gn 49.29-33 (Jacó ordena que o sepultem na cova de Macpela) ecoa em 50.12-14 (os filhos cumprem a ordem), formando inclusio sobre obediência à palavra do patriarca.
+§ Exegese: A cova de Macpela está ligada a Abraão (compra em Gn 23), Sara, Isaque, Rebeca e Lia. Jacó pede para "ser sepultado com meus pais". O sepulcro torna-se sacramento da promessa: posse concreta da terra como sinal antecipativo.
+§ Teologia Reformada: A CFW XXVII (Sacramentos) ensina sobre sinais visíveis que confirmam promessas invisíveis. Macpela é "sacramento" da terra herdada.
+§ Aplicação: Suas últimas palavras apontam para a herança eterna? Não desperdice a oportunidade profética da morte cristã.
 
-EIXO CRISTOLÓGICO
-Hb 11:13: "morreram todos na fé... e confessaram que eram estrangeiros" — em Cristo a peregrinação termina na pátria celeste.`;
+II. REVELANDO QUE A MORTE DO JUSTO É DESCANSO APÓS LONGA PEREGRINAÇÃO (B ↔ B')
+§ Indicação Textual: Gn 49.33-50.3 (Jacó expira e é recolhido ao seu povo; José chora e ordena o embalsamamento) ecoa em 50.7-11 (procissão fúnebre majestosa atravessa o deserto).
+§ Exegese: A expressão "wayye'asef el ammaw" (recolhido ao seu povo) é eufemismo escatológico: a morte é reunião com os pais na esperança. O embalsamamento ("chanat") segue costume egípcio mas a esperança é hebraica. Quarenta dias de luto egípcio, setenta de luto de todo o Egito.
+§ Teologia Reformada: A CFW XXXII (Estado dos mortos) ensina que as almas dos justos passam imediatamente à presença de Deus. "Recolhidos ao povo" é confissão de esperança escatológica.
+§ Aplicação: Você prepara sua morte com esperança ativa de reunião com o povo de Deus em Cristo?
+
+III. REVELANDO QUE O EGITO SE INCLINA AO LUTO DO PATRIARCA (C) — CENTRO X
+§ Indicação Textual: Gn 50.4-6 — José pede permissão ao Faraó para sepultar Jacó em Canaã, e o Faraó concede — é o centro estrutural.
+§ Exegese: A diplomacia respeitosa de José com o Faraó cumpre a promessa de Gn 12.3: "abençoarei os que te abençoarem". O Egito, em vez de impedir, escolta o cortejo com carros e cavaleiros. As nações honram a morte do patriarca da promessa.
+§ Teologia Reformada: A CFW V.7 ensina que Deus governa as nações para que cooperem (até sem saberem) com o seu povo. O Faraó honra o povo de Israel com sua permissão.
+§ Aplicação: Reconheça quando autoridades civis honram o povo de Deus; é providência divina.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A procissão de Jacó do Egito a Canaã prefigura o Êxodo de Israel: o povo de Deus saindo da terra do exílio para entrar na terra da promessa. E prefigura ainda mais a procissão pascal de Cristo: do sepulcro à glória, abrindo caminho para todo o seu povo. Em Cristo, todo crente é incorporado a essa procissão final do Egito-mundo para a Canaã-celestial. O sepulcro de Macpela aponta para o sepulcro vazio do Cordeiro, e a terra concreta da promessa para a nova Jerusalém descida do céu (Ap 21).
+
+DOUTRINA CENTRAL
+Deus garante a posse concreta da promessa fazendo com que até o sepultamento dos patriarcas confesse fé na herança que culmina em Cristo, o cumprimento de toda terra prometida.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Honre o sepultamento dos santos como confissão pública de fé na ressurreição.
+▸ Para as Famílias: Use funerais como momentos de testemunho diante das "Faraós" do mundo.
+▸ Para o Discípulo: Veja sua morte como procissão à herança eterna, não como derrota.
+
+CONCLUSÃO
+A grande procissão sobe ao norte. Egito chora; Canaã recebe. Macpela acolhe o patriarca em meio aos pais. Em Cristo, a procissão final já começou: dele todo crente sobe do Egito do mundo à Canaã da glória. Sua morte não é interrupção; é continuação. Sua sepultura aponta a uma promessa. E a promessa, em Cristo, já se cumpriu de modo definitivo: o sepulcro está vazio, a herança está aberta. Suba em paz quando chegar a hora. O Pai espera no monte. Amém.`;
 
   if (d.dia === 80) return `PARA PREGAR · Gênesis 50:15–21
 
+---
+
+TÍTULO DO SERMÃO
+"Intentastes Mal, Deus Tornou Bem: como a providência redefine o mal sofrido em propósito redentor"
+
 BIG IDEA
-"A providência redefine o mal sofrido: o que os irmãos quiseram para mal, Deus quis para bem."
+A providência divina redefine o mal sofrido, mostrando que o que os irmãos quiseram para mal Deus quis para bem.
 
-MOVIMENTOS DO TEXTO
-[A]   · Os irmãos temem a vingança de José após a morte do pai
-      → A culpa antiga renasce quando a proteção paterna se vai
+PERGUNTA DE TRANSIÇÃO
+De que forma a providência redefine o mal sofrido, mostrando que o que os irmãos quiseram para mal Deus quis para bem?
 
-◉ [X]   · "ESTOU EU NO LUGAR DE DEUS?" — A SOBERANIA DIVINA SOBRE O MAL
-      → Quem entende a soberania de Deus não toma para si o juízo do irmão
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as FORMAS pelas quais José confessa a soberania providencial de Deus sobre o mal, transformando culpa em consolação.
 
-[A']  · "Vós intentastes o mal; Deus o converteu em bem"
-      → A teologia da providência reescreve a história sofrida como salvação
+---
 
-EIXO CRISTOLÓGICO
-Rm 8:28: "todas as coisas cooperam para o bem dos que amam a Deus" — em Cristo todo mal sofrido é convertido em propósito redentor.`;
+MOVIMENTOS DO SERMÃO
+
+I. REVELANDO QUE A CULPA ANTIGA RENASCE QUANDO A PROTEÇÃO PATERNA SE VAI (A ↔ A')
+§ Indicação Textual: Gn 50.15-18 (os irmãos temem a vingança de José após a morte do pai) ecoa em 50.20-21 (José os tranquiliza e os sustenta), formando inclusio sobre medo e provisão.
+§ Exegese: O verbo "lu yistmenu" (que tal se nos aborrecer) revela a culpa ainda viva 17 anos depois da reconciliação. A "mensagem" atribuída a Jacó pode ser estratagema dos irmãos. Eles "caem" diante de José confessando "somos teus servos" — cumprimento final dos sonhos.
+§ Teologia Reformada: A CFW XV (Arrependimento) ensina que a culpa não completamente confessada renasce em momentos de insegurança. O perdão precisa ser apropriado, não só recebido.
+§ Aplicação: Que culpas antigas voltam quando você perde proteções terrenas? Vá ao trono da graça.
+
+II. REVELANDO QUE A SOBERANIA DIVINA REDEFINE O MAL SOFRIDO (B) — CENTRO X
+§ Indicação Textual: Gn 50.19-20 — "estou eu no lugar de Deus? vós intentastes o mal contra mim; porém Deus o tornou em bem" — é o coração teológico do livro inteiro.
+§ Exegese: A pergunta "ki hatachat Elohim ani?" (estou eu no lugar de Deus?) renuncia ao papel de juiz vingador. A fórmula "atem chashavtem... Elohim chashavah" (vós intentastes... Deus pensou) usa o mesmo verbo, sublinhando coexistência de duas intencionalidades: humana má, divina boa.
+§ Teologia Reformada: A CFW V.4 ensina sobre a concursus divino: Deus governa providencialmente até os atos pecaminosos dos homens, ordenando-os ao seu próprio fim glorioso e bom, sem ser o autor do pecado.
+§ Aplicação: Você consegue ver os males sofridos como providências reinterpretadas por Deus para o bem? Esta é a teologia que sustenta o crente em qualquer sofrimento.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A confissão de José — "intentastes mal, Deus tornou bem" — é a fórmula teológica que estrutura toda a história da salvação. Atos 2.23 e 4.27-28 aplicam o mesmo princípio à cruz de Cristo: "vós o crucificastes... segundo o determinado conselho e presciência de Deus". O mal supremo da humanidade — matar o Filho amado — foi transformado por Deus no bem supremo: a salvação do mundo. Em Cristo, toda história de injustiça sofrida pode ser lida na chave de "intentastes mal, Deus tornou bem". José antecipa Cristo no perdão e na confissão providencial.
+
+DOUTRINA CENTRAL
+Deus, em sua soberania providencial, governa o mal humano transformando-o em instrumento de bem para os seus eleitos, sem ser autor do pecado, conforme o cumprimento perfeito em Cristo.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Ensine a doutrina da providência como consolação para os que sofreram injustiças.
+▸ Para as Famílias: Não tome para si a vingança; deixe Deus governar a história.
+▸ Para o Discípulo: Reinterprete seus sofrimentos na chave da providência redentora.
+
+CONCLUSÃO
+Os irmãos venderam José. Deus enviou José. Os mesmos atos, duas interpretações. Os homens crucificaram Cristo. Deus entregou Cristo. As mesmas mãos, dois propósitos. Esta é a teologia que liberta. Quando você sofrer injustiça, lembre-se: "intentastes mal, Deus tornou bem". Não tome para si o juízo. Sustente os que o feriram. Em Cristo, fomos sustentados por aquele que poderia ter nos julgado para sempre. Faça o mesmo. E descanse na providência que tudo redefine. Amém.`;
 
   if (d.dia === 81) return `PARA PREGAR · Gênesis 50:22–26
 
+---
+
+TÍTULO DO SERMÃO
+"O Caixão que Anuncia o Êxodo: como a fé do moribundo torna o sepulcro promessa concreta de redenção"
+
 BIG IDEA
-"O caixão no Egito é promessa de um Êxodo que ainda virá."
+O caixão de José deixado no Egito se torna, em si mesmo, promessa concreta de um Êxodo que ainda virá.
 
-MOVIMENTOS DO TEXTO
-[A]   · José vive cento e dez anos e vê filhos até a terceira geração
-      → A bênção da longa vida cumpre-se na permanência da aliança
+PERGUNTA DE TRANSIÇÃO
+Por que o caixão de José deixado no Egito se torna, em si mesmo, promessa concreta de um Êxodo que ainda virá?
 
-◉ [X]   · "DEUS CERTAMENTE VOS VISITARÁ; LEVAI MEUS OSSOS DAQUI"
-      → A fé do moribundo aponta para a redenção que ele não viu
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as RAZÕES pelas quais a última palavra de José transforma sua morte num oráculo profético que abre o livro do Êxodo.
 
-[A']  · José é embalsamado e posto em caixão no Egito
-      → O caixão guardado é semente de um Êxodo prometido
+---
 
-EIXO CRISTOLÓGICO
-Hb 11:22: "pela fé José, no fim da vida... deu ordens acerca dos seus ossos" — em Cristo, a esperança da redenção atravessa até a tumba.`;
+MOVIMENTOS DO SERMÃO
+
+I. PORQUE A BÊNÇÃO DA LONGA VIDA CUMPRE-SE NA PERMANÊNCIA DA ALIANÇA (A ↔ A')
+§ Indicação Textual: Gn 50.22-23 (José vive 110 anos e vê filhos até a terceira geração) ecoa em 50.26 (José morre, é embalsamado e posto em caixão no Egito), formando inclusio sobre vida e morte na terra estrangeira.
+§ Exegese: A idade "110 anos" é considerada idade ideal no Egito antigo (vivendo plenamente sob bênção divina). "Filhos até a terceira geração" — Maquir e seus filhos — confessa a multiplicação prometida. O caixão ("aron") será o mesmo termo da arca da aliança.
+§ Teologia Reformada: A CFW V (Providência) ensina que as bênçãos temporais são sinais (não garantias) da fidelidade divina. José vive sob bênção mesmo no exílio.
+§ Aplicação: Você reconhece a longevidade abençoada e a multiplicação da família como sinais providenciais? Receba-as com gratidão.
+
+II. PORQUE A FÉ DO MORIBUNDO APONTA PARA A REDENÇÃO QUE NÃO VIU (B) — CENTRO X
+§ Indicação Textual: Gn 50.24-25 — "Deus certamente vos visitará... fareis transportar daqui os meus ossos" — é o coração da perícope.
+§ Exegese: A fórmula "pakod yifkod Elohim ethkhem" (Deus certamente vos visitará) usa o infinitivo absoluto para enfatizar certeza. Será citada novamente em Êx 3.16 e 13.19. O juramento sobre os ossos torna o caixão um relógio do Êxodo: enquanto estiver no Egito, falta-lhe cumprir-se a promessa.
+§ Teologia Reformada: A CFW XXXII (Estado dos mortos) ensina que a fé na ressurreição molda até o cuidado com os ossos. Hb 11.22 cita esta passagem como ato exemplar de fé.
+§ Aplicação: Sua fé prevê a redenção mesmo do seu corpo? O cristão morre confiando na visitação final de Deus.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+O caixão de José no Egito é promessa concreta do Êxodo (Êx 13.19; Js 24.32) e prefiguração da ressurreição. Em Cristo, o caixão fechado torna-se sepulcro vazio: Deus "visitou" (Lc 1.68) seu povo no Filho que rompeu a morte. A profecia "Deus certamente vos visitará" cumpre-se plenamente na Encarnação ("Emanuel — Deus conosco") e na Ressurreição (a visitação última). O caixão de José aponta ao Cordeiro que desce ao sepulcro e dele sai vencedor, garantindo a ressurreição de todos os seus.
+
+DOUTRINA CENTRAL
+Deus garante a redenção do seu povo, transformando cada sepultura de fé em promessa concreta da visitação final em Cristo, o Êxodo definitivo.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Pregue que cada cemitério cristão é prelúdio da ressurreição; não há fim, há promessa.
+▸ Para as Famílias: Ensine os filhos a falarem sobre a morte com fé, não com tabu; o caixão é semente.
+▸ Para o Discípulo: Viva já antecipando a visitação final de Deus em Cristo.
+
+CONCLUSÃO
+O livro do Gênesis se fecha com um caixão. Mas é um caixão profético. Lá dentro, ossos esperando. Lá fora, uma promessa: "Deus certamente vos visitará". Quatrocentos anos depois, o Êxodo cumpriu a profecia. Dois mil anos depois, Cristo cumpriu definitivamente: o sepulcro está vazio, a visitação aconteceu. Quando você for sepultado, seu caixão também será profecia: ele anuncia a ressurreição em Cristo. Não tema a morte. O Êxodo final está garantido. E todos os que dormem em Cristo serão levados para a herança. Amém.`;
 
   // ── ÊXODO ────────────────────────────────────────────────────────────────
 
