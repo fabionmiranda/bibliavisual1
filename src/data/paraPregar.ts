@@ -61,27 +61,57 @@ Jo 1:3: "Tudo foi feito por intermédio dele" — o Verbo criador é Cristo, o m
 
   if (d.dia === 2) return `PARA PREGAR · Gênesis 2:4b–17
 
+---
+
+TÍTULO DO SERMÃO
+"O Jardim do Limite: por que onde Deus circunscreve, a confiança floresce"
+
 BIG IDEA
-"O limite imposto por Deus é o terreno onde a confiança floresce."
+O limite imposto pelo Criador não oprime a criatura — é o solo onde a confiança madura floresce.
 
-MOVIMENTOS DO TEXTO
-[A]   · O ribeiro irriga a terra árida pela providência divina
-      → Onde Deus opera, a vida brota do que parecia seco
+PERGUNTA DE TRANSIÇÃO
+Por que o limite imposto por Deus, longe de oprimir, é justamente o terreno onde a confiança madura floresce em nós?
 
-[B]   · Deus forma o homem e o coloca no jardim para servir
-      → Vocação humana nasce de mãos divinas e propósito definido
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as RAZÕES pelas quais o limite divino, longe de escravizar, é o solo sagrado onde a confiança da criatura floresce diante do Criador.
 
-◉ [X]   · A ÁRVORE DO CONHECIMENTO É POSTA NO CENTRO DA LIBERDADE
-      → A presença do limite é a forma do amor que confia ao outro a escolha
+---
 
-[B']  · Deus estabelece o homem no Éden como guardião do espaço sagrado
-      → Habitar com Deus exige cultivar e proteger o dom recebido
+MOVIMENTOS DO SERMÃO
 
-[A']  · O mandamento marca o limite que define a criatura
-      → Onde há limite obedecido, há vida; onde se ignora, há morte
+I. PORQUE o Deus que irriga também circunscreve: providência e autoridade andam juntas (A ↔ A')
+§ Indicação Textual: Gn 2.4b-6 (ribeiro irriga a terra árida) ecoa em 2.10-14 (o rio parte do Éden e se ramifica em quatro). A mesma água que sustenta a vida provém do mesmo Éden que o mandamento delimita.
+§ Exegese: O "ed" (ribeiro, 2.6) indica provisão gratuita antes de qualquer ação humana. O paralelo A' (2.10-14) amplifica: não um ribeiro, mas quatro rios que cobrem o mundo conhecido — a providência do Criador não tem fronteiras geográficas, mas sua autoridade sobre a criatura sim.
+§ Teologia Reformada: A Aliança da Criação (CFW VII.1) mostra que a lei não é oposta à graça: Deus provê vida (A) antes de impor o mandamento (C'). A Providência que sustenta o cosmos é a mesma que impõe o limite que o ordena (CFW V).
+§ Aplicação: Você tende a ver os limites de Deus como restrições cruéis? Perceba que a mesma mão que irriga a terra de sua vida é a que traça o limite que a guarda.
 
-EIXO CRISTOLÓGICO
-Rm 5:19: "pela obediência de um só, muitos serão feitos justos" — onde Adão falhou no limite, Cristo o cumpriu na cruz.`;
+II. PORQUE vocação e presença divina precedem o mandamento: graça sempre vem antes da lei (B ↔ B')
+§ Indicação Textual: Gn 2.7-8 (Deus forma o homem e o coloca no Éden) reflete em 2.15 (Deus estabelece o homem no Éden para cultivar e guardar). O homem já está no jardim, amado e posicionado, antes de receber qualquer proibição.
+§ Exegese: O verbo "yanah" (repousar, colocar, 2.8) denota cuidado deliberado: Deus não apenas cria, mas instala. O paralelo em 2.15 reforça: a função de "abad" (cultivar) e "shamar" (guardar) é dom, não punição. Vocação precede mandamento.
+§ Teologia Reformada: A ordem reformada é sempre: eleição, chamado, santificação (Rm 8.29-30). Deus nunca impõe lei sem antes estabelecer relação. O mandamento de 2.17 não é de tirano: é interpelação ao ser amado (CFW XIX.1).
+§ Aplicação: Antes de sentir o peso do mandamento de Deus, lembre-se: você já foi formado por Suas mãos e colocado em Seu jardim. O limite fala a quem já pertence ao Criador.
+
+III. PORQUE o limite posto no centro é convite à confiança filial, não à servidão (C ↔ C') — CENTRO X
+§ Indicação Textual: Gn 2.9 (a árvore do conhecimento posta em evidência no jardim) encontra resolução em 2.16-17 (o mandamento que delimita seu uso). O centro do quiasma é a árvore; o centro da existência humana é a pergunta: "Você confia no Deus que delimita?"
+§ Exegese: "Tob vara" (bem e mal, 2.9) é merismo: o conhecimento total da realidade. O mandamento "lo tokel" (não comerás, 2.17) não é inveja divina — é a demarcação que diz "a onisciência e a soberania pertencem ao Criador". A penalidade "mot tamut" (morrerás certamente) é realista, não cruel.
+§ Teologia Reformada: O Catecismo de Heidelberg (P.1) afirma que pertencer a Cristo é saber que Ele nos guarda. Na criação, pertencer a Deus significava respeitar o único limite que salvaguardava a criatitude. Fé é confiar na sabedoria do Criador até onde a razão não alcança.
+§ Aplicação: Há um limite de Deus que você tem cruzado porque parece injusto? O centro do jardim ainda pergunta: "Você confia que o Criador sabe mais que você sobre o que é bom e mau para sua vida?"
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+O centro do quiasma — a árvore do limite — aponta para outra árvore: a cruz. Onde Adão violou o limite e trouxe morte, Cristo, o segundo Adão (Rm 5.19), obedeceu o limite supremo do Pai ("não minha vontade, mas a tua", Lc 22.42) e trouxe vida. No Éden, o limite foi recusado; no Calvário, foi abarcado. Em 2Co 5.21, Cristo que não conheceu o pecado tornou-se pecado por nós — cumprindo pelo substituído o que Adão devia ter guardado.
+
+DOUTRINA CENTRAL
+A soberania amorosa de Deus se expressa em limites que não oprimem a criatura, mas a convidam à confiança filial que é o fundamento da vida com o Criador.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Pregar os mandamentos de Deus não como fardo, mas como evidência de que o Criador ainda se dirige a nós como criaturas amadas que Ele quer guardar.
+▸ Para as Famílias: Estabeleça limites com seus filhos não como controle, mas como imitação do Pai que delimitou o Éden por amor: "porque te amo, sei o que te destruiria".
+▸ Para o Discípulo: Onde você sente que Deus é restritivo, pergunte: Será que Ele está vendo o que eu não enxergo? Confiança madura não exige entender cada limite — exige conhecer Aquele que os traça.
+
+CONCLUSÃO
+Voltemos ao jardim: Deus plantou uma árvore no meio. Não para tentação, mas para pergunta. A pergunta que ainda ecoa em cada mandamento, em cada limite: "Você confia?" O Criador que formou o homem do pó, que o colocou no jardim com amor, que fez jorrar quatro rios de um único nascedouro — esse Deus traçou um limite. E naquele limite estava a oportunidade de amar de volta. Adão falhou. Mas o segundo Adão, na agonia do Getsêmani, respondeu com toda a humanidade nas costas: "não seja feita a minha vontade, mas a tua" (Lc 22.42). Irmão, o jardim que você habita tem limites. Não os ignore, não os maldiga. Neles, Deus ainda pergunta: "Você confia?" E em Cristo, temos a resposta perfeita — que nos é imputada por graça. Amém.`;
 
   if (d.dia === 3) return `PARA PREGAR · Gênesis 2:18–25
 
