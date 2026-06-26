@@ -915,7 +915,7 @@ export default function PregacaoPage() {
                             {/* Título do sermão — destaque principal */}
                             {sermonTitle && (
                               <div style={{
-                                fontSize: 14, fontWeight: 800, lineHeight: 1.38,
+                                fontSize: 13, fontWeight: 800, lineHeight: 1.42,
                                 color: accentFull,
                                 marginBottom: 8,
                                 overflow: 'hidden', display: '-webkit-box',
@@ -925,13 +925,14 @@ export default function PregacaoPage() {
                               </div>
                             )}
 
-                            {/* Título da perícope — secundário com cor viva */}
+                            {/* Título da perícope — referência secundária */}
                             <div style={{
-                              fontSize: 11, fontWeight: 600, lineHeight: 1.4,
+                              fontSize: 10, fontWeight: 600, lineHeight: 1.4,
                               color: accentStrong,
+                              opacity: 0.75,
                               overflow: 'hidden', display: '-webkit-box',
                               WebkitLineClamp: 2, WebkitBoxOrient: 'vertical',
-                              paddingTop: sermonTitle ? 7 : 0,
+                              paddingTop: sermonTitle ? 6 : 0,
                               borderTop: sermonTitle ? `1px solid ${accentBorderL}` : 'none',
                             }}>
                               {p.titulo}

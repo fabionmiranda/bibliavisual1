@@ -4,288 +4,531 @@ export function gerarParaPregar(d: DiaDevocional): string | null {
   // ── GÊNESIS ──────────────────────────────────────────────────────────────
   if (d.dia === 1) return `PARA PREGAR · Gênesis 1:1–2:4a
 
+---
+
 TÍTULO DO SERMÃO
-Os Luminares do Pacto: quando o Soberano marca o tempo da Sua aliança
+"Os Luminares do Pacto: quando o Soberano marca o tempo da Sua aliança"
 
 BIG IDEA
-A Palavra soberana ordena o tempo para consagrar Seu povo.
+A Palavra soberana que separou a luz das trevas ordena o tempo para que a criação alcance seu telos no culto consagrado.
 
 PERGUNTA DE TRANSIÇÃO
-Quais são as marcas dessa Palavra que governa o tempo e transforma o caos em culto?
+Quais são as marcas dessa Palavra que governa o tempo e transforma o caos em cosmos consagrado?
 
 PALAVRA-CHAVE DE TRANSIÇÃO
-Vejamos as MARCAS da Palavra soberana que converte o caos em cosmos consagrado, governando desde a primeira luz até o sábado eterno.
+Vejamos as MARCAS da Palavra soberana que converte o caos em cosmos consagrado, governando desde a primeira luz até o descanso eterno da aliança.
+
+---
 
 MOVIMENTOS DO SERMÃO
 
-I. A MARCA da Palavra que distingue (A ↔ A')
-§ Indicação Textual: Gn 1.3-5 ("haja luz", separa luz/trevas) ecoa em 1.14-19 (luminares "para separar" dia e noite, sinais e festas).
-§ Exegese: O verbo hebraico badal (separar) une A e A'. A luz criada no dia 1 (ʾor) é institucionalizada no dia 4 pelos meʾorot que governam (mashal) tempos sagrados (moʿadim), revelando ordem litúrgica desde o princípio.
-§ Teologia Reformada: A soberania de Deus se manifesta no decreto que distingue trevas e luz, eleitos e não eleitos, tempo comum e tempo santo. A Providência rege os astros como servos da aliança (Sl 104.19).
-§ Aplicação: Onde você tem permitido que o caos confunda o que Deus separou? Submeta calendário, afetos e prioridades à Palavra que ainda hoje diz "haja luz" sobre as trevas do coração.
+I. A PALAVRA QUE SEPARA: LUZ, ESPAÇO E TEMPO COMO DOMÍNIO DO SOBERANO (A ↔ A')
+§ Indicação Textual: Gn 1.3-5 ("haja luz... e Deus separou a luz das trevas") ecoa estruturalmente em 1.14-19 (luminares criados "para separar" — lehavdil — o dia da noite e para governar os moʿadim, as festas sagradas).
+§ Exegese: O verbo hebraico badal (separar, distinguir) aparece em 1.4, 1.6, 1.7, 1.14 e 1.18, tecendo A e A' em torno da distinção soberana. A luz do dia 1 (ʾor) antecede os luminares do dia 4 (meʾorot), revelando que a ordem é teológica antes de ser astronômica: o Criador governa o calendário litúrgico (moʿadim) desde a criação. Que Deus estabeleça sinais e tempos sagrados na própria estrutura cósmica declara que o culto não é invenção humana — é decreto de criação.
+§ Teologia Reformada: A Confissão de Fé de Westminster IV.1 afirma que Deus criou todas as coisas "para a manifestação da glória de seu poder, sabedoria e bondade". O Catecismo Maior P.7 declara que o quarto mandamento obriga ao descanso do dia inteiro — não como lei arbitrária, mas como eco da ordem inscrita na criação. A providência rege os astros como servos da aliança (Sl 104.19).
+§ Aplicação: Onde você tem permitido que o caos confunda o que Deus separou? Submeta calendário, afetos e prioridades à Palavra que ainda hoje diz "haja luz" sobre as trevas do coração. O Dia do Senhor não é sugestão: é a marca do Soberano no seu tempo.
 
-II. A MARCA da Palavra que ordena espaços e enche de vida (B ↔ B')
-§ Indicação Textual: Gn 1.6-10 (firmamento, mares, terra seca) corresponde a 1.20-23 (peixes nas águas, aves no céu) — espaços e seus habitantes.
-§ Exegese: A estrutura de "forma e vazio" (tohu vavohu, 1.2) é vencida em dois tempos: dias 2-3 formam, dias 5-6 enchem. A bênção (barak) de 1.22 — "frutificai e multiplicai-vos" — antecipa a bênção que recairá sobre o homem.
-§ Teologia Reformada: A Aliança da Criação mostra que Deus prepara o lugar antes de chamar o habitante. Assim opera a graça: prepara o coração (ordem) antes de enchê-lo de fé e frutos do Espírito (vida).
-§ Aplicação: Não há fecundidade sem ordem. Antes de buscar "fruto" em sua casa ou ministério, deixe Deus organizar o espaço interior. A bênção segue a estrutura que Ele estabelece.
+II. A PALAVRA QUE FORMA E ENCHE: ESPAÇOS ORDENADOS, VIDA MULTIPLICADA (B ↔ B')
+§ Indicação Textual: Gn 1.6-10 (firmamento separando as águas; terra seca emergindo) corresponde a 1.20-23 (aves no firmamento, peixes nas águas, bênção de multiplicação) — espaços formados nos dias 2-3 são habitados nos dias 5-6.
+§ Exegese: A estrutura tohu vavohu (caos e vazio, 1.2) é resolvida em dois movimentos paralelos: os dias 1-3 estabelecem domínios (luz, firmamento, terra/mar) e os dias 4-6 os preenchem com governantes e habitantes. O verbo barak (abençoar, 1.22) é lançado pela primeira vez sobre os seres vivos — a bênção não é sentimento, mas potência de fecundidade inscrita na criatura pela Palavra. Esta estrutura revela que a ordem precede a vida e a vida responde à ordem.
+§ Teologia Reformada: CFW V.1 ensina que Deus, pelo mesmo decreto que criou todas as coisas, as sustenta e governa segundo o conselho de sua vontade. A Aliança da Criação (às vezes chamada Aliança das Obras) pressupõe que o mundo preparado aguarda o habitante obediente. Assim opera a graça: prepara o espaço antes de mandar a vida.
+§ Aplicação: Você busca fruto em sua casa ou ministério sem deixar Deus ordenar os espaços interiores? A bênção segue a estrutura que Ele estabelece, não a urgência que nós impomos. Deixe o Criador formar antes de exigir que Ele encha.
 
-III. A MARCA da Palavra que governa por mandato delegado (C ↔ C')
-§ Indicação Textual: Gn 1.11-13 (a terra "produza" por mandato) reflete em 1.24-31 (animais e, no clímax, o homem como imago Dei com domínio).
-§ Exegese: O verbo tadshe (produza, 1.11) e tots'e (faça sair, 1.24) mostram uma criação respondente. No ápice, tselem e demut (imagem e semelhança) conferem ao homem radah (dominar) — governo vicário, não autônomo.
-§ Teologia Reformada: O homem é vice-regente sob a Aliança das Obras. Toda autoridade humana — pai, pastor, magistrado — é delegada e responsável diante do Soberano (Rm 13.1).
-§ Aplicação: Você governa seu lar, trabalho e corpo como senhor absoluto ou como mordomo? Imagem de Deus se vê em quem cuida como Deus cuida: com Palavra, ordem e bênção.
+III. A PALAVRA QUE DELEGA: O HOMEM COMO IMAGEM GOVERNANTE (C ↔ C')
+§ Indicação Textual: Gn 1.11-13 (a terra "produza" vegetação por mandato divino) prefigura 1.24-31 (animais e, no clímax, o homem criado como tselem e demut — imagem e semelhança — com mandato de radah, dominar, e kabash, encher e subjugar).
+§ Exegese: O verbo tadshe (faça brotar, 1.11) e tots'e nefesh hayah (faça sair alma vivente, 1.24) mostram uma criação respondente à Palavra. O ápice do sexto dia é duplo: tselem (imagem — relação representativa) e demut (semelhança — relação funcional) habilitam o homem a exercer radah (domínio vicário) sobre a criação. Este domínio não é exploração autônoma; é governo delegado — o vice-regente governa em nome do Rei. Por isso, Deus inspeciona a obra e a declara "muito boa" (tov meod, 1.31): o governo humano corresponde ao padrão divino enquanto permanece obediente.
+§ Teologia Reformada: O Catecismo Menor P.10 e o Maior P.17 definem o homem criado à imagem de Deus com conhecimento, justiça e santidade, tendo a lei de Deus inscrita no coração. A Aliança das Obras (CFW VII.2) chama o homem a perfeita obediência sob pena de morte — o domínio só é bênção dentro dos limites do Soberano. Toda autoridade humana — pai, pastor, magistrado — é mandatária e prestará contas (Rm 13.1).
+§ Aplicação: Você governa seu lar, trabalho e corpo como senhor absoluto ou como mordomo responsável? Imagem de Deus se vê em quem cuida como Deus cuida — com Palavra, ordem e bênção — não em quem explora como quem não deve satisfação a ninguém.
 
-IV. A MARCA da Palavra que consagra no descanso — CENTRO ◉
-§ Indicação Textual: Gn 1.1 ("no princípio criou Deus") encontra clímax em 2.1-3: Deus "abençoou" e "santificou" (qadash) o sétimo dia.
-§ Exegese: A inclusio bereshit bara Elohim (1.1) e asher bara Elohim laasot (2.3) emoldura o quiasma. O descanso (shabat) não é cessação por fadiga, mas consagração: a obra recebe seu telos no culto.
-§ Teologia Reformada: O sábado é sinal da Aliança e tipo do descanso eterno (Hb 4.9-10). A criação existe para a glória de Deus desfrutada eternamente — fim chefe do homem (Catecismo Maior, P.1).
-§ Aplicação: Sua semana corre para o trabalho ou para o culto? Recupere o sábado cristão como ápice consagrado, onde o caos do trabalho recebe sentido diante do Deus que descansou primeiro.
+IV. A PALAVRA QUE CONSAGRA: O DESCANSO COMO TELOS DA CRIAÇÃO — CENTRO ◉
+§ Indicação Textual: Gn 2.1-3 ("assim foram acabados os céus e a terra... Deus abençoou o sétimo dia e o santificou") é o centro estrutural do quiasma, emoldurado pela inclusio bereshit bara Elohim (1.1) e asher bara Elohim laasot (2.3).
+§ Exegese: O shabat não é pausa por fadiga divina — Deus não se cansa (Is 40.28). É consagração: qadash (santificar, apartar para uso sagrado) é lançado pela primeira vez sobre o tempo, não sobre espaço ou objeto. A semana hexameral inteira existe para chegar ao sétimo dia como ápice litúrgico. O descanso não encerra a criação — a consagra. Aqui, criação e culto convergem: a obra recebe seu telos quando é oferecida de volta ao Criador em adoração. A fórmula final "estas são as origens dos céus e da terra" (2.4a) fecha a perícope como toledot da criação — a criação tem história porque tem Criador.
+§ Teologia Reformada: O sábado é sinal da Aliança desde a criação (Ex 31.13-17) e tipo do descanso eterno em Cristo (Hb 4.9-10). CFW XXI.7-8 preserva o Dia do Senhor como sábado cristão — o primeiro dia da semana, dia da ressurreição — onde a Igreja descansa em Cristo e celebra a nova criação. O "fim chefe do homem" é glorificar a Deus e desfrutá-lo para sempre (Catecismo Menor P.1), e o sábado é o ensaio semanal desse fim eterno.
+§ Aplicação: Sua semana corre para o trabalho como finalidade ou para o culto como ápice? Recupere o Dia do Senhor como a mais alta marca de identidade: você é o povo que descansa porque o Criador descansou primeiro e Cristo consumou a obra. O caos de segunda a sábado encontra sentido no domingo.
 
-EIXO REDENTOR
-O centro do quiasma — o descanso consagrado — aponta para Cristo, o Senhor do sábado (Mc 2.28), que na cruz disse "está consumado" (Jo 19.30) e entrou no descanso eterno (Hb 4). Em 2Co 1.20, "todas as promessas têm nele o sim", inclusive a promessa primeva de um cosmos consagrado pelo descanso de Deus.
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+O centro do quiasma — o descanso consagrado — aponta para Cristo, o Senhor do sábado (Mc 2.28), que na cruz disse "está consumado" (tetelestai, Jo 19.30) e entrou no descanso eterno como o segundo Adão que cumpriu o que o primeiro falhou em preservar (Hb 4.9-10). O Verbo pelo qual tudo foi feito (Jo 1.3) é o mesmo que recria pela Palavra da graça (2Co 4.6). Em 2Co 1.20, "todas as promessas têm nele o sim", inclusive a promessa inscrita na própria ordem da semana: a criação marcha para o descanso que é Cristo. Apocalipse 21-22 descreve a nova criação como o sábado sem fim — nenhum templo, porque o Cordeiro é o templo; nenhuma noite, porque a Luz que foi criada no dia 1 brilha eternamente no Cordeiro.
 
 DOUTRINA CENTRAL
-A soberania criadora de Deus, exercida pela Palavra, ordena o tempo para a consagração de Seu povo.
+A soberania criadora de Deus, exercida pela Palavra, ordena o tempo para a consagração do Seu povo no descanso eterno que é Cristo.
 
 APLICAÇÕES PASTORAIS
-▸ Para a Igreja: Recupere o culto do Dia do Senhor como ápice da semana, não apêndice. A Igreja é o povo que vive no ritmo do Criador.
-▸ Para as Famílias: Estabeleça ordem antes de exigir fruto. Culto doméstico, horários e limites são "firmamentos" onde a vida em Cristo floresce.
-▸ Para o Discípulo: Submeta seu tempo, palavras e domínio à Palavra que separa luz de trevas. Você é imagem que governa servindo, descansa adorando.
+▸ Para a Igreja: Recupere o culto do Dia do Senhor como ápice da semana, não apêndice opcional. A Igreja é o povo que vive no ritmo do Criador e ensaia o descanso eterno todo domingo.
+▸ Para as Famílias: Estabeleça ordem antes de exigir fruto. Culto doméstico, horários e limites são "firmamentos" nos quais a vida em Cristo floresce; o caos familiar produz filhos que não sabem a diferença entre o sagrado e o comum.
+▸ Para o Discípulo: Submeta tempo, palavras e domínio à Palavra que separa luz de trevas. Você é imagem que governa servindo, descansa adorando — e nenhum sucesso profissional justifica abandonar o sábado que o Criador santificou.
 
 CONCLUSÃO
-Voltemos ao princípio: a Palavra soberana ordena o tempo para consagrar Seu povo. O Deus que disse "haja luz" sobre o abismo é o mesmo que, em Cristo, disse "haja luz" em nossos corações (2Co 4.6). O caos que ainda nos cerca — no mundo, na família, na alma — não é a última palavra. A última palavra é o sábado eterno, comprado pelo sangue do Cordeiro e antecipado em cada Dia do Senhor. Cristo, o segundo Adão, governou como imagem perfeita, cumpriu o mandato, venceu o tohu vavohu da morte e ressuscitou na manhã do primeiro dia da nova criação. Portanto, irmão, não viva como quem tateia no escuro: viva como quem foi chamado das trevas para a Sua maravilhosa luz. Trabalhe seis dias, mas corra para o sábado. Ordene seu mundo, mas descanse em Cristo.
-
-EIXO CRISTOLÓGICO
-Jo 1:3: "Tudo foi feito por intermédio dele" — o Verbo criador é Cristo, o mesmo que recria.`;
+Voltemos ao princípio: a Palavra que disse "haja luz" não parou de falar. Ela ainda separa, forma, delega e consagra. O mesmo Deus que organizou o caos em seis dias e descansou no sétimo é o Deus que, em Cristo, pronunciou "está consumado" sobre o caos do pecado e ressuscitou na manhã do primeiro dia da nova criação. Você foi chamado das trevas para a Sua maravilhosa luz (1Pe 2.9) — não para viver no tohu vavohu da desordem espiritual, mas para habitar um cosmos ordenado pela Palavra, governado como imagem fiel, e consagrado no descanso que só Cristo oferece. Trabalhe como mordomo, não como dono. Governe como imagem, não como ídolo. E a cada Dia do Senhor, pare — não porque você terminou, mas porque Ele terminou por você. Amém.`;
 
   if (d.dia === 2) return `PARA PREGAR · Gênesis 2:4b–17
 
+---
+
+TÍTULO DO SERMÃO
+"O Jardim do Limite: por que onde Deus circunscreve, a confiança floresce"
+
 BIG IDEA
-"O limite imposto por Deus é o terreno onde a confiança floresce."
+O Deus que forma o homem do pó e o planta no jardim provê abundância e impõe limite, porque a obediência dentro do limite é o terreno onde a confiança e a vida florescem.
 
-MOVIMENTOS DO TEXTO
-[A]   · O ribeiro irriga a terra árida pela providência divina
-      → Onde Deus opera, a vida brota do que parecia seco
+PERGUNTA DE TRANSIÇÃO
+Por que onde Deus circunscreve com um limite, a confiança — e não a restrição — é o que floresce?
 
-[B]   · Deus forma o homem e o coloca no jardim para servir
-      → Vocação humana nasce de mãos divinas e propósito definido
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as RAZÕES pelas quais o limite divino no jardim não é prisão mas promessa, revelando que a vida da criatura só prospera dentro dos limites do Criador.
 
-◉ [X]   · A ÁRVORE DO CONHECIMENTO É POSTA NO CENTRO DA LIBERDADE
-      → A presença do limite é a forma do amor que confia ao outro a escolha
+---
 
-[B']  · Deus estabelece o homem no Éden como guardião do espaço sagrado
-      → Habitar com Deus exige cultivar e proteger o dom recebido
+MOVIMENTOS DO SERMÃO
 
-[A']  · O mandamento marca o limite que define a criatura
-      → Onde há limite obedecido, há vida; onde se ignora, há morte
+I. A PROVIDÊNCIA QUE PRECEDE: O RIBEIRO QUE REGA O QUE AINDA NÃO FOI PLANTADO (A ↔ A')
+§ Indicação Textual: Gn 2.5-6 (a terra árida antes de chuva e homem; o ribeiro que subia e irrigava toda a face da terra) ecoa em 2.16-17 (o mandamento que circunscreve: "de toda árvore comerás livremente, mas da árvore do conhecimento do bem e do mal não comerás") — providência e proibição formam um par estrutural.
+§ Exegese: O hebraico ʾed (ribeiro ou neblina, 2.6) sobe para irrigar antes de haver homem para lavrar — a providência precede a criatura. O mesmo padrão se repete no mandamento: Deus provê todas as árvores (kol ets, 2.16) livremente antes de nomear a única proibida. A proibição não é escassez: é definição. O verbo tsavah (ordenar, 2.16) introduz o primeiro mandamento da história — a Aliança das Obras tem forma de palavra antes de ter forma de lei escrita.
+§ Teologia Reformada: CFW VII.1-2 estabelece a Aliança das Obras: Deus prometeu vida ao homem sob condição de obediência perfeita. O limite da árvore não é caprichoso; é o ponto de prova onde a criatura declara: "Tu és Soberano e eu sou criatura grata." A Providência (CFW V.1) sustenta e governa tudo, incluindo o jardim que Adão não plantou e a água que não fez fluir.
+§ Aplicação: Você reconhece que o que tem — casa, saúde, relacionamentos — é jardim que Deus regou antes de você existir? A ingratidão que ignora a providência prepara o coração para ignorar também o limite. Cultivar gratidão é a primeira defesa contra a tentação.
 
-EIXO CRISTOLÓGICO
-Rm 5:19: "pela obediência de um só, muitos serão feitos justos" — onde Adão falhou no limite, Cristo o cumpriu na cruz.`;
+II. O HOMEM FORMADO E COLOCADO: VOCAÇÃO ANTES DE LIBERDADE (B ↔ B')
+§ Indicação Textual: Gn 2.7 (Deus forma o homem do pó — yatsar, como oleiro — e sopra nele nishmat chayim) corresponde a 2.15 (Deus "toma" e "coloca" o homem no jardim para avad e shamar — servir e guardar).
+§ Exegese: O verbo yatsar (formar, 2.7) é vocabulário do oleiro: o homem é obra de mãos divinas, não produto da matéria bruta. Nishmat chayim (sopro de vida) distingue o homem dos animais — há algo inalienável na vida humana. Mas a vocação vem antes da liberdade: avad (servir/lavrar) e shamar (guardar/vigiar) definem o que o homem é antes de definirem o que pode fazer. O jardim não é parque de lazer: é santuário de serviço.
+§ Teologia Reformada: O Catecismo Maior P.17 descreve o homem criado com lei inscrita no coração, capacidade de cumpri-la e domínio sobre as criaturas — mas tudo isso a serviço de Deus, não de si mesmo. CFW IV.2 afirma que Deus criou o homem "à sua imagem... com a lei de Deus escrita no coração, com poder para cumpri-la". Vocação precede autonomia; serviço precede domínio.
+§ Aplicação: Você trata seu trabalho, seu lar, seus dons como propriedades ou como jardim confiado para avad e shamar? O homem que governa sem servir e domina sem guardar já cedeu à mentira da serpente antes de ouvi-la. Sua vocação é culto em forma de trabalho.
+
+III. O CENTRO PROIBIDO: A ÁRVORE QUE DEFINE O LIMITE DA CRIATURA — CENTRO ◉
+§ Indicação Textual: Gn 2.9 (a árvore do conhecimento do bem e do mal plantada no meio do jardim, betok hagan) e 2.16-17 (o mandamento explícito: "não comerás... pois no dia em que dela comeres, certamente morrerás").
+§ Exegese: A localização betok hagan (no meio do jardim) é teologicamente central: o limite fica onde não pode ser ignorado, mas também onde pode ser escolhido livremente a cada passagem. O "conhecimento do bem e do mal" (daʿat tov varaʿ) não é simples informação; é a prerrogativa de definir moral de forma autônoma — o que pertence exclusivamente ao Criador. Comer seria assumir a cadeira do Juiz. O verbo mot tamut (certamente morrerás) é ênfase absoluta: não há graus na desobediência aqui. A presença do limite no centro é a forma mais elevada de respeito ao ser humano: Deus trata a criatura como agente moral, não como robô.
+§ Teologia Reformada: CFW VII.2 especifica que a condição da Aliança das Obras era "obediência perfeita e pessoal". O Catecismo Maior P.92 define lei de Deus como "a declaração de sua vontade para as criaturas que lhes indica o dever para com ele e com os outros". O limite da árvore é a Palavra de Deus antes de ser letra de lei — é relação antes de ser código. Onde Adão deverá dizer "não" ao fruto, estará dizendo "sim" ao Pai.
+§ Aplicação: Em que área da sua vida você trata o limite de Deus como privação, não como proteção? O mandamento que você acha mais restritivo é provavelmente o que mais está guardando sua vida. Confie que o Criador que regou o jardim antes de você chegar também soube onde plantar o limite que você precisa. A obediência dentro do limite não é servidão — é a liberdade que só os filhos conhecem. Amém.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+O jardim do Éden com sua árvore proibida no centro aponta diretamente a outro jardim — Getsêmani — onde o segundo Adão disse "não a minha vontade, mas a tua" (Lc 22.42), e depois ao Gólgota, onde a madeira da maldição se tornou a árvore da vida para os remidos. Cristo, ao contrário do primeiro Adão, permaneceu dentro do limite da obediência filial perfeita ao Pai, cumprindo a Aliança das Obras que Adão quebrou (Rm 5.19; Gl 4.4-5). A árvore da vida, bloqueada em Gn 3.24, reaparece em Ap 22.2 como fruto para as nações — e o acesso é pela obediência de Cristo, não de Adão.
+
+DOUTRINA CENTRAL
+O Deus que provê abundantemente impõe um único limite porque a criatura só floresce na confiança obediente ao Criador.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Pregar os mandamentos não é legalismo, é cuidado pastoral. A lei de Deus é limite no jardim: protege a vida que o Espírito está cultivando em cada crente.
+▸ Para as Famílias: Os pais que não impõem limites claros não estão sendo generosos — estão deixando o jardim sem cerca. Limite amoroso é forma de avad e shamar para com os filhos.
+▸ Para o Discípulo: Identifique a "árvore central" do seu jardim — aquela proibição que parece arbitrária. É ali que sua confiança em Deus é testada. Dizer "não" ao fruto proibido é dizer "sim" ao Pai.
+
+CONCLUSÃO
+O Éden não era prisão — era jardim irrigado pela providência, plantado pela mão divina, servido por vice-regentes honrados, e guardado por um único limite que definia tudo. A tentação sempre começa no mesmo lugar: "será que Deus disse...?" — a dúvida que transforma limite em privação e providência em esganação. Mas o jardim que Adão abandonou por autonomia, Cristo recuperou pela obediência. E agora, todo aquele que está em Cristo descobre que os mandamentos de Deus não são pesados (1Jo 5.3), porque o próprio Espírito que habitava sobre as águas do caos habita agora dentro do crente, capacitando-o a avad e shamar — a servir e guardar o que lhe foi confiado. Plante-se no jardim que Deus irrigou. Confie no limite que Ele traçou. E viva. Amém.`;
 
   if (d.dia === 3) return `PARA PREGAR · Gênesis 2:18–25
 
+---
+
+TÍTULO DO SERMÃO
+"Tirada do Lado: de que forma Deus forma a comunhão que o coração jamais alcançaria sozinho"
+
 BIG IDEA
-"Deus cria a parceria humana retirando-a do próprio coração do homem."
+O Deus que declara "não é bom que o homem esteja só" cria a comunhão conjugal pela sua própria iniciativa soberana, formando da costela do homem a parceira que nenhuma criatura poderia ser.
 
-MOVIMENTOS DO TEXTO
-[A]   · "Não é bom que o homem esteja só" — a solidão não é o telos humano
-      → A vida em comunhão é projeto de Deus, não acréscimo posterior
+PERGUNTA DE TRANSIÇÃO
+De que forma Deus forma a comunhão que o coração humano jamais alcançaria sozinho?
 
-[B]   · Os animais desfilam e nenhum se mostra parceiro adequado
-      → Há vazios que somente o semelhante criado por Deus pode preencher
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as ETAPAS pelas quais Deus constrói a comunhão que só Ele pode criar: da solidão declarada até a aliança que prefigura o maior mistério da história da redenção.
 
-◉ [X]   · A COSTELA RETIRADA NO SONO: DEUS OPERA O QUE O HOMEM NÃO VÊ
-      → O que mais nos completa é forjado por Deus enquanto descansamos nele
+---
 
-[B']  · A mulher é formada da costela e reconhecida pelo homem
-      → A identidade do outro nasce do mesmo Deus que nos formou
+MOVIMENTOS DO SERMÃO
 
-[A']  · Os dois tornam-se uma só carne na aliança matrimonial
-      → A união conjugal é restauração da unidade originária querida por Deus
+I. A SOLIDÃO DECLARADA: "NÃO É BOM" COMO DIAGNÓSTICO DIVINO (A ↔ A')
+§ Indicação Textual: Gn 2.18 ("não é bom — lo tov — que o homem esteja só; far-lhe-ei uma auxiliadora que lhe seja idônea") ecoa em 2.24-25 ("portanto deixará o homem seu pai e sua mãe e se unirá à sua mulher, e serão uma só carne") — a solidão declarada em A encontra resolução plena em A'.
+§ Exegese: O diagnóstico lo tov (não é bom) é surpreendente: antes de qualquer pecado, há uma incompletude inscrita na natureza humana que clama por comunhão. ʿEzer kenegdo (auxiliadora idônea) é composto de ʿezer (socorro, a mesma palavra usada para Deus em Sl 121.2) e kenegdo (diante dele, correspondente a ele) — não subordinação hierárquica, mas correspondência ontológica. A aliança de 2.24 usa o verbo dabaq (unir-se, aderir com vigor) — a união conjugal é mais íntima que o laço pais-filhos.
+§ Teologia Reformada: A Confissão de Fé de Westminster XXIV.1 define o matrimônio como "ordenança de Deus" para "mútua ajuda" dos cônjuges. O Catecismo Maior P.139 afirma que o sétimo mandamento protege a pureza de "corpos, mentes, afetos, palavras e condutas". A solidão não é fraqueza — é projeto: Deus cria a criatura que precisa de comunhão para que aprenda que a comunhão mais profunda é com Ele mesmo.
+§ Aplicação: Você foge da solidão ou a apresenta a Deus? A solidão lo tov que Deus diagnóstica não é para ser anestesiada com entretenimento ou relacionamentos superficiais — é para ser levada ao Criador que a conhece desde o princípio e já tem a resposta preparada enquanto você ainda dorme.
 
-EIXO CRISTOLÓGICO
-Ef 5:32: "grande é este mistério, refiro-me a Cristo e à igreja" — o casamento aponta para a união do Noivo com a noiva.`;
+II. OS ANIMAIS DESFILAM: O MÉTODO DE DEUS PARA REVELAR A NECESSIDADE (B ↔ B')
+§ Indicação Textual: Gn 2.19-20 (Adão nomeia todos os animais e "não se achou para o homem uma auxiliadora que lhe fosse idônea") ecoa em 2.22-23 (Deus forma a mulher da costela e a apresenta ao homem que a reconhece exultante: "esta é osso dos meus ossos...").
+§ Exegese: O ato de nomear (qara shem) os animais não é apenas taxonomia zoológica: é exercício de domínio e, simultaneamente, experiência de insatisfação pedagógica. Deus não apresenta a mulher antes que Adão percorra todo o reino animal sem encontrar parceira — a busca infrutífera prepara o reconhecimento exultante. O grito de Adão ao ver Eva (2.23) é o primeiro poema da Bíblia: "esta, desta vez (hapaʿam), é osso dos meus ossos e carne da minha carne" — hapaʿam ("desta vez!") é interjeição de surpresa alegre, de encontro após busca longa.
+§ Teologia Reformada: CFW IV.2 afirma que Deus criou o homem "macho e fêmea, com almas razoáveis e imortais, dotados de conhecimento, justiça e santidade". A complementaridade de gênero não é construção cultural — é estrutura criacional. O Catecismo Maior P.66 sobre o sexto mandamento inclui preservar a "vida do próximo" e a "pureza de sua própria alma" — o design original protege o que o pecado distorce.
+§ Aplicação: Deus às vezes nos faz percorrer o que não é certo antes de nos mostrar o que é. A busca frustrada não é abandono divino: é pedagogia. Confie que o Deus que conduziu Adão pelo desfile dos animais também conduz você pela história que parece não ter resposta — até que Ele a apresente no momento certo.
+
+III. A COSTELA NO SONO: DEUS CONSTRÓI O QUE O HOMEM NÃO ALCANÇA — CENTRO ◉
+§ Indicação Textual: Gn 2.21-22 ("o SENHOR Deus fez cair um sono profundo sobre o homem... tomou uma das suas costelas... e desta formou uma mulher e a trouxe ao homem").
+§ Exegese: Tardema (sono profundo, 2.21) é o mesmo sono que cai sobre Abraão na aliança de Gn 15.12 — sono de total passividade diante da iniciativa divina. Deus não pede participação de Adão: opera unilateralmente. O tsela (costela/lado) é retirado e bana (constrói/edifica) a mulher — bana é vocabulário de construção arquitetônica, não de olaria simples, sugerindo design complexo. Deus "traz" (vayaveʾ) a mulher ao homem como pai que apresenta a noiva — a iniciativa, o processo e a entrega são todos divinos. O que mais nos completa é forjado por Deus enquanto descansamos totalmente nEle.
+§ Teologia Reformada: CFW V.2 afirma que "embora, em relação à presciência e ao decreto de Deus, a causa primeira, todas as coisas acontecem imutável e infalível... pela mesma providência Ele ordena que aconteçam de acordo com a natureza das causas secundárias". A formação da mulher é ato de providência especial — não reprodução por partenogênese, mas criação a partir do próprio tecido do homem, estabelecendo unidade ontológica antes da aliança. Ef 5.31-32 eleva este ato ao nível de "grande mistério" que fala de Cristo e a Igreja.
+§ Aplicação: Você tenta construir por conta própria o que só Deus pode edificar? Os relacionamentos que você forçou sem esperar a iniciativa divina tendem a ter a durabilidade de junção humana — não a solidez do que Deus construiu. Durma em Deus: não por inércia, mas pela confiança ativa de quem sabe que o Arquiteto opera melhor quando paramos de interferi. Amém.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+Paulo, em Ef 5.31-32, cita explicitamente Gn 2.24 e declara: "grande é este mistério — refiro-me a Cristo e à Igreja." O sono de Adão do qual Deus retira a costela para formar a esposa tipifica a morte de Cristo da qual, do seu lado aberto na cruz (Jo 19.34), nasce a Igreja — a noiva do Cordeiro. Assim como Eva foi "tirada do lado" de Adão adormecido e apresentada a ele, a Igreja foi tirada do lado de Cristo crucificado e será apresentada a Ele gloriosa, "sem mácula nem ruga" (Ef 5.27). O casamento humano em Gn 2 não é apenas instituição social — é sacramento tipológico apontando para a união mais profunda da história: o Noivo que deu a própria vida para ter sua Noiva.
+
+DOUTRINA CENTRAL
+A comunhão conjugal, criada por iniciativa soberana de Deus a partir do próprio tecido do homem, é mistério tipológico da união entre Cristo e a Igreja.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: O casamento cristão é testemunho evangelístico: onde marido e esposa vivem Ef 5, pregam o evangelho sem palavras ao mundo que não entende o que vê.
+▸ Para as Famílias: Filhos criados em lares onde o pai ama como Cristo e a mãe responde como a Igreja crescem com imagem saudável não apenas de família, mas de Deus.
+▸ Para o Discípulo: Se você é solteiro, sua solidão não é fracasso — é espaço onde Deus opera enquanto você repousa Nele. Se é casado, trate o cônjuge como quem foi dado por Deus, não como produto de sua escolha autônoma.
+
+CONCLUSÃO
+"Esta, desta vez!" — a exclamação de Adão ao ver Eva é a grito de todo coração que finalmente encontra o que Deus preparou. Mas a comunhão mais profunda que o casamento aponta, sem nunca alcançar completamente, é a comunhão com Cristo: o Noivo que desceu do céu, adormeceu na morte e ressuscitou para apresentar à si mesmo uma noiva que Ele mesmo formou do seu próprio lado. Se você está nEle, não há solidão definitiva — há apenas o espaço entre o hoje e o "desta vez" eterno quando o Noivo aparecer e a Noiva estiver pronta. Até lá, forme comunhão como Deus forma: com iniciativa, com cuidado, com presença — e durma em Deus nos processos que são Dele. Amém.`;
 
   if (d.dia === 4) return `PARA PREGAR · Gênesis 3:1–24
 
+---
+
+TÍTULO DO SERMÃO
+"Queda e Promessa: como enxergar no veredito divino contra a queda o primeiro evangelho da redenção"
+
 BIG IDEA
-"No próprio juízo da queda Deus anuncia o evangelho da redenção."
+No coração do maior desastre da história — a queda do homem — Deus pronuncia o primeiro evangelho: a semente da mulher esmagará a cabeça da serpente.
 
-MOVIMENTOS DO TEXTO
-[A]   · A serpente seduz com a promessa de autonomia divina
-      → Toda tentação promete divinizar e termina escravizando
+PERGUNTA DE TRANSIÇÃO
+Como enxergar no veredito divino contra a queda o primeiro evangelho da redenção?
 
-[B]   · Folhas de figueira: o pecador cobre a vergonha por si mesmo
-      → A religião humana fabrica disfarces incapazes de cobrir a culpa
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as MARCAS do evangelho escondido no veredito da queda: da sedução à expulsão, Deus está tecendo redenção no tecido do próprio juízo.
 
-[C]   · Acusações mútuas fragmentam a responsabilidade
-      → Onde o pecado entra, a comunhão se desfaz em transferência de culpa
+---
 
-◉ [X]   · MALDIÇÃO À SERPENTE: A SEMENTE DA MULHER ESMAGARÁ SUA CABEÇA
-      → No próprio veredito divino se ouve a primeira promessa do evangelho
+MOVIMENTOS DO SERMÃO
 
-[C']  · Punição ao homem e à mulher: dor e suor no mundo decaído
-      → O juízo é real, mas dentro de um plano maior de restauração
+I. A SEDUÇÃO E A EXPULSÃO: A PROMESSA DE SER COMO DEUS QUE AFASTA DE DEUS (A ↔ A')
+§ Indicação Textual: Gn 3.1-5 (a serpente questiona e subverte o mandamento: "sereis como Deus, conhecendo o bem e o mal") ecoa inversamente em 3.22-24 (Deus expulsa: "o homem tornou-se como um de nós... que não estenda a mão e tome também da árvore da vida") — o que foi prometido como ganho tornou-se causa de perda.
+§ Exegese: A serpente (nachash) é harum mikol chayat hassadeh (a mais astuta de todos os animais do campo). O verbo que inicia o diálogo recontextualiza o mandamento: de "de toda árvore comerás livremente" para "não comereis de nenhuma árvore" — a inversão total é o método da tentação. A ironia estrutural é que o homem que quis ser "como Deus" (ke-Elohim) pela desobediência é expulso exatamente para que não alcance imortalidade no estado de pecado; a expulsão é ato contraditório de misericórdia.
+§ Teologia Reformada: CFW VI.1 afirma que o pecado original resultou em "morte no pecado e corrupção em todas as faculdades, alma e corpo". Toda tentação usa a mesma gramática da serpente: recontextualiza o mandamento, questiona a bondade de Deus, promete autonomia. A tentação encontra câmara de ressonância dentro do próprio ser humano (Tg 1.14-15).
+§ Aplicação: Onde você está sendo persuadido de que o limite de Deus é privação? Identifique o "sereis como Deus" que está sendo vendido — e lembre que o preço sempre é expulsão do jardim. Toda promessa de autonomia absoluta termina em isolamento absoluto.
 
-[B']  · Vestes de pele: Deus mesmo cobre a vergonha humana
-      → Só o sacrifício provido por Deus pode cobrir o pecado humano
+II. A COBERTURA HUMANA E A COBERTURA DIVINA: FOLHAS VERSUS PELE (B ↔ B')
+§ Indicação Textual: Gn 3.7 (o pecador cose folhas de figueira — ʾaleh teenah — para cobrir a nudez) ecoa em 3.21 (Deus faz vestes de pele — kotnot ʾor — e os veste): dois esforços de cobertura, dois materiais radicalmente diferentes.
+§ Exegese: As folhas de figueira (ʾaleh teenah) são frágeis, murcham e não cobrem a vergonha interior — metáfora de toda religião humana que fabrica justificação própria. As vestes de pele (kotnot ʾor) pressupõem morte: um animal morreu para que o pecador fosse coberto. É o primeiro sacrifício vicário da história, e Deus é o sacerdote. O verbo lavash (vestir) com Deus como sujeito e o homem como objeto — Deus reveste o pecador — é antecipação estrutural da justificação: não o homem se vestindo de bondade, mas Deus vestindo o homem com o que custou uma vida.
+§ Teologia Reformada: CFW XI.1-2 define justificação como Deus "perdoando todos os seus pecados e aceitando suas pessoas como justas... imputando-lhes a justiça de Cristo". As folhas de figueira são o melhor que a religião de obras produz; as vestes de pele são o que a graça provê. O Catecismo Menor P.33: "ato gratuito de Deus pelo qual perdoa todos os nossos pecados e nos aceita como justos à sua vista, somente pela justiça de Cristo imputada a nós."
+§ Aplicação: Com que folhas você está tentando cobrir sua vergonha? Ocupação compulsiva, reputação religiosa, obras voluntaristas — tudo é ʾaleh teenah que murcha. Apenas a cobertura que custou sangue cobre permanentemente. Venha a Cristo nu e deixe-O vestir-lhe com o que Ele mesmo proveu.
 
-[A']  · Expulsão do jardim: quem quis ser como Deus é afastado da presença
-      → A graça que expulsa também guarda o caminho da árvore da vida
+III. AS ACUSAÇÕES MÚTUAS E AS PUNIÇÕES REAIS: O PECADO DESFAZ A COMUNHÃO (C ↔ C')
+§ Indicação Textual: Gn 3.11-13 (Deus pergunta; o homem culpa a mulher "que tu me deste"; a mulher culpa a serpente — cadeia de transferência de culpa) ecoa em 3.16-19 (punições específicas a cada um: dor, trabalho árduo e morte — consequências reais e não transferíveis).
+§ Exegese: A pergunta divina hayakelta min-haets (comeste da árvore?) não é pedido de informação — é convocação para confissão. Mas o homem responde culpando a esposa e implicitamente o Criador que a deu. As punições são individuadas: itsavon (dor/trabalho árduo) sobre ambos em suas esferas vocacionais; a morte como ʿafar taʿshuv (ao pó retornarás). O pecado privatiza a culpa mas distribui as consequências.
+§ Teologia Reformada: CFW XV.3 sobre o arrependimento inclui "a vista do pecador de sua natureza e prática de culpa". A transferência de culpa é o oposto do arrependimento. David, em contraste (Sl 51), diz "pequei" — e experimenta restauração. A confissão limpa (1Jo 1.9) é o único caminho para fora do ciclo de acusação mútua.
+§ Aplicação: Quando você é confrontado com pecado, qual é sua primeira resposta — confissão ou transferência? "A situação", "minha criação", "o cônjuge que Deus me deu" — são formulações modernas do mesmo "a mulher que tu me deste". A saída não é melhor explicação: é confissão limpa diante de Deus.
 
-EIXO CRISTOLÓGICO
-Gl 4:4: "nascido de mulher" — Jesus é a semente prometida que esmaga a serpente na cruz.`;
+IV. A PROMESSA NO VEREDITO: A SEMENTE QUE ESMAGA — CENTRO ◉
+§ Indicação Textual: Gn 3.14-15 (maldição à serpente e protoevangelium: "porei inimizade entre ti e a mulher, entre a tua semente e a semente dela; esta te ferirá a cabeça e tu lhe ferirás o calcanhar").
+§ Exegese: Gn 3.15 é o protoevangelium — a primeira proclamação do evangelho na história da redenção. ʾEyvah (inimizade) é declarada por Deus como decreto soberano, não como resultado natural de circunstâncias. Zeraʿ (semente) é singular coletivo, mas Paulo em Gl 3.16 identifica o referente último como Cristo. O verbo shuph (esmagar/ferir) aparece duas vezes: a semente da mulher shuph rosh (esmaga a cabeça) da serpente, e a serpente shuph aqev (fere o calcanhar) — a ferida no calcanhar é a morte na cruz, real e dolorosa mas não fatal; o esmagamento da cabeça é a destruição da autoridade da serpente, definitivo e irreversível. No centro do caos da queda, antes de qualquer punição sobre o casal, Deus planta uma promessa.
+§ Teologia Reformada: CFW VIII.1 descreve Cristo como "escolhido por Deus, antes da fundação do mundo, para ser o mediador". O protoevangelium de Gn 3.15 é a forma mais arcaica desta verdade eterna: antes que o homem pecador saísse do jardim, a redenção já estava proclamada. O Catecismo Maior P.36 sobre o decreto de Deus confirma que nada, nem mesmo a queda, escapa do conselho soberano do Eleitor.
+§ Aplicação: Você lê Gênesis 3 como catástrofe ou como prefácio do evangelho? Ambas as leituras são verdadeiras, mas somente quem vê a promessa no meio da maldição tem fundamento para não desesperar quando a queda se repete na própria vida. Cristo já esmagou a cabeça — o calcanhar dolorido é temporário; o triunfo é eterno. Amém.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A semente prometida em Gn 3.15 percorre toda a Escritura: de Sete a Abraão (Gn 5; 12), de Abraão a Davi (Mt 1), de Davi a Cristo (Lc 1.31-33). Gl 4.4-5: "enviou Deus seu Filho, nascido de mulher, nascido sob a lei, para resgatar os que estavam debaixo da lei" — o "nascido de mulher" é eco exato de Gn 3.15. Na cruz, o calcanhar de Cristo é ferido (Jo 19.30-34) mas a cabeça da serpente é esmagada (Cl 2.15; Hb 2.14). Ap 12.9 e 20.10 mostram o desenlace: a serpente "que engana o mundo inteiro" é lançada no lago de fogo — a promessa de Gn 3.15 cumprida na sua totalidade escatológica.
+
+DOUTRINA CENTRAL
+No coração do juízo divino sobre a queda, Deus proclama o protoevangelium: a semente da mulher esmagará a serpente, revelando que a graça não é resposta improvisada ao pecado, mas plano eterno antecipado antes da fundação do mundo.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Toda boa pregação de Gênesis 3 termina em Cristo. Não deixe o sermão sobre a queda sem a promessa — o protoevangelium é a razão de existir do texto.
+▸ Para as Famílias: Quando a queda se repete dentro de casa — pecado, vergonha, transferência de culpa — o caminho é o mesmo de Gn 3: confissão, cobertura divina, esperança na Semente.
+▸ Para o Discípulo: O calcanhar ferido de Cristo é sua garantia de que o sofrimento atual não é a última palavra. Você está do lado da Semente, não da serpente.
+
+CONCLUSÃO
+A mais longa noite da história começa com uma serpente e uma fruta, e termina com Deus confeccionando vestes de pele para vestir o pecador nu. Entre esses dois extremos, no centro exato do desastre, Deus fala: "porei inimizade." Esta é a primeira e mais surpreendente declaração do evangelho — pronunciada antes de qualquer lei, antes de qualquer sacrifício, antes de qualquer templo. O mesmo Deus que perguntou "onde estás?" a Adão nu e fugitivo é o Deus que, dois mil anos depois, enviou o Filho que foi feito nu na cruz para que nós pudéssemos ser vestidos de justiça. O jardim foi fechado. Mas a porta do evangelho foi aberta no mesmo instante — e permanece aberta em Cristo. Entre, venha como está, e deixe-O vestir-lhe. Amém.`;
 
   if (d.dia === 5) return `PARA PREGAR · Gênesis 4:1–26
 
+---
+
+TÍTULO DO SERMÃO
+"Por que a História se Bifurca: Caim, Abel e o Deus que ainda chama pelo nome"
+
 BIG IDEA
-"A linhagem humana se bifurca entre violência sem Deus e adoração pela graça."
+Após a queda, a história humana se bifurca entre a linhagem da violência sem Deus e a linhagem da adoração pela graça — e Deus, mesmo no juízo, ainda chama pelo nome.
 
-MOVIMENTOS DO TEXTO
-[A]   · Caim e Abel nascem; suas ofertas revelam corações distintos
-      → O culto sincero brota da fé, não da forma
+PERGUNTA DE TRANSIÇÃO
+Por que a história se bifurca em Gênesis 4, e o que revela sobre o Deus que ainda chama quem está no caminho da destruição?
 
-[B]   · Caim mata Abel; o sangue clama da terra por justiça
-      → O pecado não dominado conduz à destruição do irmão
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as RAZÕES pelas quais a bifurcação da história humana depois do Éden revela tanto a corrupção do coração sem Deus quanto a graça que persiste em chamar pelo nome.
 
-◉ [X]   · OS DESCENDENTES DE CAIM CONSTROEM CIVILIZAÇÃO LONGE DA PRESENÇA DIVINA
-      → Progresso humano sem Deus produz cultura brilhante e coração endurecido
+---
 
-[B']  · Lameque amplia a vingança em setenta e sete vezes
-      → O coração sem Deus transforma justiça em vingança ilimitada
+MOVIMENTOS DO SERMÃO
 
-[A']  · Sete nasce; começa-se a invocar o nome do SENHOR
-      → A graça preserva uma linhagem que adora em meio à corrupção
+I. A OFERTA COMO ESPELHO DO CORAÇÃO: FÉ VERSUS FORMA (A ↔ A')
+§ Indicação Textual: Gn 4.1-5 (as ofertas de Caim e Abel — Caim traz frutos da terra; Abel traz primogênitos das ovelhas e gorduras; Deus atende Abel e não atende Caim) ecoa em 4.25-26 (Sete nasce em lugar de Abel; começa-se a invocar o nome do SENHOR — liqro beshem YHWH) — o culto rejeitado em A é restaurado em A' pela graça.
+§ Exegese: O texto não explica por que a oferta de Caim foi rejeitada em termos rituais — a diferença está na disposição do ofertante, não no conteúdo do sacrifício. Hb 11.4 esclarece: "pela fé Abel ofereceu a Deus melhor sacrifício do que Caim". O hebraico shaʿah (atender, olhar com favor, 4.4) é verbo de aprovação divina que recai sobre Abel e sua oferta — uma unidade de pessoa e culto. Caim oferece minchah (oferta de grãos) sem fé, como transação religiosa. A liqro beshem YHWH (invocar o nome do SENHOR, 4.26) da linhagem de Sete é contraste fundamental: enquanto Caim constrói cidades sem Deus, Sete invoca o Deus que salva.
+§ Teologia Reformada: O Catecismo Maior P.109 sobre o segundo mandamento inclui a condenação de "qualquer culto não instituído por Deus". Mas mais fundamental é a conexão entre fé e aceitação: CFW XIV.1 define fé salvadora como "a obra do Espírito de Cristo em seu coração". O culto sem fé é o pecado de Caim repetido em cada geração que cumpre formas externas sem coração transformado.
+§ Aplicação: Sua prática devocional, sua presença no culto, sua oferta — são Abel ou Caim? A pergunta não é sobre frequência ou valor monetário, mas sobre o coração que as acompanha. A fé que Deus aprecia não é o que você oferece, mas de onde você oferece — da confiança no Deus que recebe ou da expectativa de que Ele aceite por obrigação?
 
-EIXO CRISTOLÓGICO
-Hb 12:24: "o sangue da aspersão fala melhor que o de Abel" — Cristo fala perdão onde Abel clamava por justiça.`;
+II. CAIM MATA ABEL E DEUS AINDA PERGUNTA: O PECADO E A GRAÇA QUE NÃO DESISTE (B ↔ B')
+§ Indicação Textual: Gn 4.8-12 (Caim mata Abel no campo; Deus pergunta: "onde está Abel, teu irmão?"; o sangue de Abel clama da terra) ecoa em 4.23-24 (Lameque, descendente de Caim, amplia a violência: "matei um homem... setenta e sete vezes se vingará Lameque") — o homicídio de Caim em B é amplificado exponencialmente em B'.
+§ Exegese: A pergunta divina ʾey hevel achicha (onde está Abel, teu irmão, 4.9) espelha "onde estás?" de Gn 3.9 — Deus não pergunta por informação, mas para convocar à confissão. A resposta de Caim haShaomer achi anoki (sou eu guardador do meu irmão?) é a recusa de responsabilidade mais eloquente da Bíblia. O sangue (dam) de Abel clama (tsoʿaq) da terra — vocabulário de opressão que clama por intervenção divina (Ex 2.23). Lameque, na B', transforma a proteção setéfupla de Caim (4.15) em motor de vingança ilimitada: "setenta e sete vezes" — o oposto da graça ilimitada que Cristo proclamará em Mt 18.22.
+§ Teologia Reformada: CFW VI.4 afirma que "do pecado original procedem todos os pecados reais". Caim não cai do paraíso para o homicídio em um passo — mas a narrativa comprime: rejeição, ira, advertência divina, recusa, assassinato. CFW VI.6 afirma que "cada pecado traz culpa sobre o pecador e o torna sujeito à ira de Deus". A graça de Deus que ainda pergunta a Caim "onde está teu irmão?" é evidência de paciência imerecida.
+§ Aplicação: Você é "guardador do seu irmão"? A comunidade cristã é antídoto ao caim-ismo — a tendência de isolar, inveja e destruir o irmão cujas ofertas parecem mais aceitas que as nossas. Quando a comparação acende a ira, leve-a a Deus antes que ela se torne homicídio — de reputação, de relacionamento, de futuro.
+
+III. A CIVILIZAÇÃO SEM DEUS: PROGRESSO BRILHANTE, CORAÇÃO ENDURECIDO — CENTRO ◉
+§ Indicação Textual: Gn 4.17-22 (os descendentes de Caim: Enoque, Ired, Javal — pai dos criadores de gado; Jubal — pai dos músicos; Tubal-Caim — forjador de instrumentos de bronze e ferro) — o florescimento cultural da linhagem de Caim longe da presença de Deus.
+§ Exegese: A linhagem de Caim produz civilização impressionante: urbanismo (Enoque, a cidade, 4.17), pecuária nômade, artes musicais e metalurgia. O hebraico choshev kol melachah (artesão de toda habilidade, 4.22) descreve Tubal-Caim como protótipo do homo faber. Mas toda esta criatividade floresce mipney YHWH (longe da presença do SENHOR, 4.16) — a geografia espiritual define o projeto cultural. A civilização sem pacto pode criar beleza e matéria, mas não pode criar shalom. O nome "Caim" (qayin) significa "adquirido" — o homem que tudo constrói para si mesmo sem reconhecer o Doador.
+§ Teologia Reformada: CFW XVI.7 sobre as boas obras afirma que os não-regenerados "não podem fazer obras que sejam boas à vista de Deus". Calvino na Instituição II.2.15 reconhece graça comum que capacita o incrédulo a obras civicamente boas — mas estas obras não têm valor diante do trono. A beleza da civilização caínica não salva seus construtores. O Catecismo Maior P.60 sobre a eleição afirma que "não há nada de bom previsto neles" que determine a eleição — a graça opera independentemente do progresso humano.
+§ Aplicação: Você constrói sua identidade no que produz, cria ou conquista? A linhagem de Caim é advertência: é possível ser culto, criativo, bem-sucedido e estar longe da presença de Deus ao mesmo tempo. A questão não é o que você construiu, mas para quem construiu — e se há algum altar no centro do que você ergueu. Amém.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+Hb 12.24 declara que "o sangue da aspersão fala melhor do que o de Abel." O sangue de Abel clamava por justiça — e recebeu resposta divina. O sangue de Cristo clama por misericórdia — e intercede permanentemente pelos pecadores (Rm 8.34). A bifurcação de Gênesis 4 prefigura a bifurcação escatológica: a linhagem que invoca o nome do SENHOR (4.26) será salva (Rm 10.13), pois Cristo, o Filho de Abel que foi morto injustamente, ressuscitou e proclama: "Pai, perdoa-lhes." O Deus que ainda perguntou a Caim "onde está teu irmão?" é o Deus que, em Cristo, desceu a buscar o irmão perdido e morreu para que ele vivesse.
+
+DOUTRINA CENTRAL
+A história humana pós-queda bifurca-se entre a linhagem que constrói longe de Deus e a linhagem que invoca seu nome, mas Deus, mesmo no juízo sobre Caim, demonstra paciência e graça imerecida.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: O culto genuíno não é negociação com Deus — é resposta de fé ao Deus que primeiro amou. Forme congregações de "Abeis", não de "Caim" religioso.
+▸ Para as Famílias: Lares sem culto ao SENHOR produzem geração de Caim: talentosa, produtiva e espiritualmente órfã. Invoque o nome do SENHOR no centro da casa.
+▸ Para o Discípulo: Antes que a ira se instale e o pecado seja "deitado à porta" (4.7), leve-a a Deus. O pecado não dominado hoje é o homicídio de amanhã — de sonhos, de relacionamentos, de vocação.
+
+CONCLUSÃO
+A história de Caim e Abel é a história de toda família depois do Éden: há sempre um cujo culto é recusado e um cujo sangue clama. Mas a boa nova é que Deus ainda pergunta — a Caim, a você, a mim. Ainda convoca à confissão antes que o pecado seja consumado. Ainda oferece domínio sobre o pecado que está à porta (4.7). E quando a linhagem do assassino parecia ser a única que restava, Deus levantou Sete — e por ele, a linhagem que invoca o nome do SENHOR. Em Cristo, essa linhagem chegou ao seu ápice: o Abel perfeito que morreu inocente e cujo sangue fala não vingança mas perdão. Você está nessa linhagem? Então invoque o nome do SENHOR — porque todo que o invocar será salvo. Amém.`;
 
   if (d.dia === 6) return `PARA PREGAR · Gênesis 5:1–32
 
+---
+
+TÍTULO DO SERMÃO
+"Como Enoque Rompe o Ciclo: andar com Deus em meio à genealogia da morte"
+
 BIG IDEA
-"No meio da genealogia da morte, Enoque mostra que andar com Deus rompe o ciclo."
+No coração de uma genealogia marcada pelo refrão "e morreu", Enoque rompe o ciclo porque andar com Deus pela fé é o único caminho que escapa ao domínio da morte.
 
-MOVIMENTOS DO TEXTO
-[A]   · Adão é gerado à imagem de Deus — dignidade preservada apesar da queda
-      → A imagem manchada ainda dignifica e responsabiliza o homem
+PERGUNTA DE TRANSIÇÃO
+Como Enoque rompe o ciclo da morte que domina toda genealogia humana desde a queda?
 
-[B]   · A genealogia avança em ciclos de "viveu... e morreu"
-      → A morte é o eco da queda em cada geração — sem exceção aparente
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as ETAPAS pelas quais Gênesis 5 revela que a morte é refrão da história humana, mas andar com Deus é a exceção que aponta para onde toda a história vai terminar.
 
-◉ [X]   · ENOQUE ANDOU COM DEUS E NÃO FOI ACHADO, PORQUE DEUS O TOMOU
-      → Andar com Deus pela fé é caminho que escapa do domínio da morte
+---
 
-[B']  · A genealogia retoma sua marcha mortal após Enoque
-      → A exceção aponta uma esperança que a regra ainda não realizou
+MOVIMENTOS DO SERMÃO
 
-[A']  · Noé surge como o repouso prometido à terra amaldiçoada
-      → Deus prepara um remanescente para iniciar nova história
+I. A IMAGEM PRESERVADA E O REMANESCENTE PROMETIDO: A DIGNIDADE E A ESPERANÇA QUE SOBREVIVEM À QUEDA (A ↔ A')
+§ Indicação Textual: Gn 5.1-3 ("Deus criou o homem à sua semelhança... Adão gerou um filho à sua semelhança, conforme a sua imagem") ecoa em 5.28-32 (Lameque nomeia Noé dizendo "este nos consolará — yenahamenú — do nosso trabalho e da dor de nossas mãos, por causa da terra que o SENHOR amaldiçoou") — a imagem preservada em A produz o portador de esperança em A'.
+§ Exegese: A retomada da fórmula tselem Elohim (imagem de Deus, 5.1) após Gênesis 3 é teologicamente deliberada: a queda manchou, mas não destruiu a imagem. Adão ainda gera "à sua semelhança e imagem" (5.3) — transmissão de imago Dei mesmo na queda. O nome Noé (nach) é jogo de palavras com yenahamenú (nos consolará): Lameque antecipa, pela fé, que seu filho será instrumento de alívio divino. A profecia de 5.29 evoca Gn 3.17 — a maldição da terra — e aponta para reversão futura.
+§ Teologia Reformada: CFW IV.2 afirma que a imagem de Deus, embora "muito corrompida" pela queda (CFW VI.2), permanece como fundamento da dignidade humana (Gn 9.6; Tg 3.9). CFW V.7 descreve a providência que usa "meios" — incluindo linhagens e nomes — para cumprir os propósitos divinos. O Catecismo Maior P.17 descreve o estado original do homem; P.25-26 descrevem os efeitos da queda — mas a imagem permanece como base da esperança de restauração.
+§ Aplicação: Você vê a dignidade da imagem de Deus nas pessoas ao redor — mesmo nas mais corrompidas pelo pecado? A genealogia de Gênesis 5 não deixa espaço para desprezo por nenhum ser humano: cada "gerou filhos e filhas" é portador de imago Dei, destinado à responsabilidade eterna. E cada vida humana que você toca pode ser o próximo "Noé" que Deus está formando para consolar sua geração.
 
-EIXO CRISTOLÓGICO
-Hb 11:5: "pela fé Enoque foi trasladado" — andar com Deus pela fé escapa ao domínio da morte.`;
+II. O REFRÃO "E MORREU": A MORTE COMO SALÁRIO INSCRITO NA GENEALOGIA (B ↔ B')
+§ Indicação Textual: A fórmula repetida em Gn 5.5, 8, 11, 14, 17, 20, 27, 31: "viveu X anos... gerou filhos e filhas... e morreu" — o refrão do capítulo que transforma a genealogia em ata de óbito coletiva.
+§ Exegese: Gênesis 5 é o capítulo mais sombrio da Bíblia em termos literários: a repetição hipnótica de "e morreu" (vayyamot) ecoa o julgamento de Gn 2.17 ("certamente morrerás") cumprindo-se em cada geração. Os números crescentes de anos de vida (Matusalém chegou a 969) não são sinais de bênção apenas — são medida da paciência de Deus diante da morte universal. A morte é democrática: não importa quantos filhos você gerou, quanto você construiu, quão longa foi sua vida — vayyamot encerra tudo. A única exceção tem outro verbo.
+§ Teologia Reformada: CFW VI.6 afirma que "todo pecado traz culpa sobre o pecador, tornando-o sujeito à ira de Deus, à maldição da lei... e à morte eterna". Rm 5.12: "pelo pecado entrou a morte no mundo, e assim a morte passou a todos os homens". A genealogia de Gênesis 5 é a prova empírica desta doutrina: não um teórico, mas um catálogo histórico de vayyamot.
+§ Aplicação: Você vive como se a morte fosse exceção ou como se fosse a regra? A genealogia de Gênesis 5 obriga o pregador e a congregação à confrontação com a mortalidade. Mas o evangelho não é negação da morte — é sua derrota. Viver com consciência do vayyamot não é morbidez; é sobriedade que orienta para Cristo, o único que quebrou o ciclo de forma definitiva.
+
+III. ENOQUE ANDA COM DEUS E NÃO É ACHADO — CENTRO ◉
+§ Indicação Textual: Gn 5.21-24 ("Enoque andou com Deus — hithalech et-haElohim — trezentos anos depois que gerou Metusalém e gerou filhos e filhas; e todos os dias de Enoque foram trezentos e sessenta e cinco anos; andou Enoque com Deus; e não era mais, porque Deus o tomou").
+§ Exegese: O verbo hithalech (andar, forma hitpaél reflexiva de halach) descreve caminhada contínua, habitual, bidirecional — não um ato isolado de obediência, mas um estilo de vida de comunhão constante com Deus. Este mesmo verbo é usado de Noé (6.9) e Abraão (17.1) — é o vocabulário da aliança vivida. A ausência de vayyamot na entrada de Enoque é estruturalmente chocante: enquanto todo o capítulo pulsa com "e morreu", Enoque simplesmente "não era mais, porque Deus o tomou" (laqach — o mesmo verbo do Salmo 73.24: "depois da glória me receberás"). É a exceção no centro do capítulo que justifica toda a estrutura: o refrão da morte existe para que a ausência dele seja impossível de ignorar.
+§ Teologia Reformada: Hb 11.5: "pela fé Enoque foi trasladado para não ver a morte; e não foi achado, porque Deus o trasladou; porquanto antes da trasladação teve testemunho de que agradara a Deus." A fé não é conclusão racional da observação — é confiança no Deus invisível que opera além do visível. CFW XIII.1: a santificação é descrita como "andar com Deus" — Enoque é o paradigma prático. O Catecismo Maior P.86 sobre a santificação afirma que ela envolve "morrer cada vez mais para o pecado e vivificar-se cada vez mais para a justiça" — é o hithalech de Enoque traduzido em linguagem doutrinária.
+§ Aplicação: Você está andando com Deus de forma habitual e contínua — ou apenas em episódios de crise? O hithalech de Enoque não foi aventura espiritual de curto prazo: foram trezentos anos de caminhada depois que a paternidade e a genealogia teriam justificado o estabelecimento confortável. A caminhada com Deus no meio do mundano — família, filhos, gerações — é o que prepara para ser "tomado" por Ele. Amém.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+Enoque é tipologia da ressurreição: o homem que andou com Deus e não viu a morte aponta para Cristo, que andou perfeitamente com o Pai, desceu à morte mas não foi retido por ela (At 2.24), e ressuscitou como "primícias dos que dormem" (1Co 15.20). Todo aquele que está em Cristo participará da mesma trasladação definitiva: "não todos morreremos, mas todos seremos transformados" (1Co 15.51). A genealogia da morte em Gênesis 5 termina em Noé, que traz alívio — mas a genealogia da ressurreição (Mt 1) termina em Cristo, que derrota a morte de forma absoluta. Enoque é o sinal no centro do capítulo da morte de que a morte não tem a última palavra.
+
+DOUTRINA CENTRAL
+No coração da genealogia da morte, Enoque declara que andar com Deus pela fé é o único caminho que a morte não pode conter.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Pregar Gênesis 5 é pregar mortalidade e ressurreição. Use o refrão "e morreu" para confrontar a ilusão de permanência, e use Enoque para proclamar Cristo como o que venceu o vayyamot.
+▸ Para as Famílias: Famílias que cultivam hithalech — caminhada diária com Deus — produzem gerações que interrompem ciclos de destruição. Enoque foi pai antes de ser trasladado; a espiritualidade dos pais forma o DNA espiritual dos filhos.
+▸ Para o Discípulo: O que caracteriza sua caminhada espiritual — surtos episódicos ou hithalech constante? Construa a disciplina de andar com Deus não pelos picos de experiência, mas pelo ritmo diário de Palavra, oração e comunhão.
+
+CONCLUSÃO
+Leia Gênesis 5 em voz alta uma vez: "viveu... gerou... e morreu. Viveu... gerou... e morreu." O capítulo mais entediante da Bíblia é também o mais honesto. A morte chega para todos: para os que viveram muito e para os que viveram pouco, para os que geraram muitos e para os que deixaram poucos. Mas então vem Enoque — e o refrão quebra. Não "e morreu" — mas "Deus o tomou." Esta é a boa nova escondida no capítulo mais sombrio: há um caminho que passa pela genealogia da morte sem terminar nela. É o caminho do hithalech — andar com Deus pela fé. É o caminho que Enoque percorreu, que Cristo pavimentou com Seu próprio sangue e ressurreição, e que você pode percorrer hoje. Ande com Deus. E talvez você se surpreenda quando Ele simplesmente o tome. Amém.`;
 
   if (d.dia === 7) return `PARA PREGAR · Gênesis 6:1–8:22
 
+---
+
+TÍTULO DO SERMÃO
+"De que Forma o Juízo Preserva: como Deus recria o mundo no centro da devastação"
+
 BIG IDEA
-"No juízo universal Deus preserva um remanescente e recria o mundo pela aliança."
+O Deus que decreta o dilúvio é o mesmo que preserva o remanescente na arca, demonstrando que o juízo divino nunca é fim em si mesmo — é instrumento de recriação do mundo para a glória do Soberano.
 
-MOVIMENTOS DO TEXTO
-[A]   · A maldade humana provoca a determinação do dilúvio
-      → Há um limite ao mal que a santidade de Deus não pode ignorar
+PERGUNTA DE TRANSIÇÃO
+De que forma o juízo divino do dilúvio, em vez de destruir o plano redentor, serve como instrumento de preservação e recriação do mundo?
 
-[B]   · A Palavra divina instrui Noé que obedece em fé
-      → A salvação se apropria pela obediência da fé
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as ETAPAS pelas quais o dilúvio revela que o juízo divino preserva, purifica e recria: da corrupção que provoca até a aliança que conclui, Deus está construindo o mundo que quer habitar.
 
-[C]   · Noé entra na arca aos seiscentos anos com sua casa
-      → A graça acolhe famílias inteiras pelo chefe que obedece
+---
 
-[D]   · Sete dias de espera silenciam o mundo antes do juízo
-      → Há tempos de paciência que precedem decisões irrevogáveis
+MOVIMENTOS DO SERMÃO
 
-[E]   · Quarenta dias: as águas sobem cobrindo a terra
-      → O juízo se cumpre integral e ordenadamente conforme dito
+I. A CORRUPÇÃO QUE PROVOCA E A PACIÊNCIA QUE CONCLUI: O JUÍZO NÃO É SURPRESA (A ↔ A')
+§ Indicação Textual: Gn 6.5-8 ("viu o SENHOR que era grande a maldade do homem... e o SENHOR arrependeu-se de ter feito o homem... mas Noé achou graça aos olhos do SENHOR") ecoa em 8.20-22 (Noé constrói altar, Deus cheira o perfume suave e jura: "nunca mais amaldiçoarei a terra por causa do homem, porque a imaginação do coração do homem é má desde a sua meninice") — a mesma maldade que justificou o dilúvio é reconhecida após o dilúvio, mas agora fundamenta a paciência, não o juízo.
+§ Exegese: O hebraico vayyinnahem (arrependeu-se/lamentou, 6.6) não implica mudança de propósito eterno — é linguagem antropomórfica de profunda tristeza divina diante do pecado. Noé "achou chen (graça) aos olhos do SENHOR" (6.8): a graça é encontrada, não produzida. O altar de 8.20 é o primeiro altar voluntário da Bíblia — Noé adora antes de receber a promessa, não depois. O perfume (rêah hannihoah, 8.21) é fórmula usada dos sacrifícios leviticos — o altar prefigura o sistema sacrificial que culminará em Cristo.
+§ Teologia Reformada: CFW V.4 afirma que "a onipotência, onisciência, onipresença e bondade de Deus se estendem a todas as criaturas". O "arrependimento" divino de 6.6 é tratado pela teologia reformada como revelação de caráter divino, não mudança de decreto (Nm 23.19). A graça soberana que separou Noé (genahu ve-venehem) do resto não se baseou em mérito de Noé — a eleição particular precede a aprovação moral (CFW III.5).
+§ Aplicação: Você experimenta o juízo divino em sua vida — seja em consequências de pecado, seja em circunstâncias difíceis — como destruição ou como instrumento de recriação? O Deus que mandou o dilúvio não estava destruindo Seu plano: estava purificando o espaço para o prosseguimento. Confie no Soberano que sabe o que está fazendo mesmo quando as águas sobem.
 
-[F]   · As montanhas mais altas são submersas pelo juízo divino
-      → Nada que o homem considere alto resiste à mão de Deus
+II. A PALAVRA QUE CONSTRÓI E A PALAVRA QUE LIBERTA: A FÉ COMO OBEDIÊNCIA CONSTRUTIVA (B ↔ B')
+§ Indicação Textual: Gn 6.13-22 (Deus instrui Noé sobre a construção da arca; "fez Noé conforme tudo o que Deus lhe ordenara, assim o fez" — vayyaʿas ken, 6.22) ecoa em 8.15-19 (Deus ordena Noé a sair da arca com toda a sua família; Noé sai e leva todos conforme ordenado) — obediência construtiva seguida de obediência libertadora.
+§ Exegese: A arca (tevah, 6.14) é palavra usada apenas aqui e em Êxodo 2.3-5 para o cesto de Moisés — a mesma palavra conecta os dois grandes "salvamentos aquáticos" da Bíblia. As dimensões da arca (6.15) são engenheiramente viáveis — a instrução divina é específica e praticável. Vayyaʿas ken (assim o fez, 6.22) é declaração de obediência integral: Noé não negociou o projeto. Em 8.15, Deus "ordena" (tsav) a saída — Noé não saiu sem ser mandado. A salvação não é autoexecução: é obediência às ordens do Salvador.
+§ Teologia Reformada: Hb 11.7: "pela fé, Noé, divinamente instruído a respeito das coisas ainda não vistas, cheio de santo temor, construiu uma arca para salvação de sua família". A fé que salva é fé que age conforme a Palavra — não por mérito, mas por confiança. CFW XIV.2: a fé salvadora é "aceitar, receber e repousar em Cristo sozinho para justificação, santificação e vida eterna".
+§ Aplicação: A obediência da fé às vezes parece absurda para quem observa de fora: construir uma arca quando não há chuva, como fazer. Onde Deus lhe pede obediência construtiva que parece desnecessária para seus contemporâneos? Construa a arca que Ele mandou — mesmo que não haja chuva ainda visível no horizonte.
 
-◉ [X]   · TODA CARNE PERECE; O REMANESCENTE NA ARCA SOBREVIVE
-      → No coração do juízo há um lugar de refúgio provido por Deus mesmo
+III. A ENTRADA FAMILIAR E A SAÍDA RESTAURADA: A GRAÇA QUE ABRAÇA CASAS INTEIRAS (C ↔ C')
+§ Indicação Textual: Gn 7.1-7 (Noé entra na arca com "sua casa" — beytecha — por ser o único justo em sua geração) ecoa em 8.15-19 (saída ordenada: Noé, sua mulher, filhos e suas mulheres — a mesma unidade familiar sai que entrou) — a casa que entrou no juízo sai do juízo intacta.
+§ Exegese: O convite de 7.1 é pessoal e familiar: "entra na arca, tu e toda a tua casa" — a salvação de Noé abrange sua família como unidade pactual. A teologia da casa (bayit) atravessa as Escrituras: a fé do chefe cria espaço de bênção para os dependentes (At 16.31; 1Co 7.14). A entrada organizada (7.7-9: espécies por espécies, conforme mandado) é microcosmo do cosmos reordenado — dentro da arca há nova criação em gestação.
+§ Teologia Reformada: CFW XXVIII.1 sobre o batismo como sinal do pacto inclui a perspectiva de que "as promessas da aliança... pertencem a todos os que são chamados pelo evangelho". A teologia pactual reformada vê famílias — não apenas indivíduos — como unidades naturais da aliança. Col 3.18-21 e Ef 5-6 descrevem a ordem doméstica como expressão da nova criação inaugurada por Cristo.
+§ Aplicação: Você lidera sua família como chefe pactual — alguém cuja fé e obediência cria espaço de bênção para os que dependem de você — ou como indivíduo que mantém vida espiritual privada? A arca é para casas inteiras. O que você está construindo que possa acolher quem está com você?
 
-[F']  · Os cumes das montanhas reaparecem após o juízo
-      → Quando Deus julga, ele também restaura o que foi coberto
+IV. A ESPERA DUPLA E O SINAL DUPLO: O TEMPO DO JUÍZO ESTRUTURADO PELA PACIÊNCIA (D ↔ D')
+§ Indicação Textual: Gn 7.4,10 (sete dias de espera antes das chuvas) ecoa em 8.10-12 (sete dias; a pomba retorna com ramo de oliveira; sete dias; a pomba não retorna — o sinal confirma a paz) — a espera dupla enquadra o dilúvio com paciência divina.
+§ Exegese: Os sete dias de 7.4/10 são silêncio antes do juízo — Deus espera sete dias depois de fechar a arca antes de enviar a chuva (7.10). A espera não é hesitação: é medida de misericórdia (2Pe 3.9). Os sete dias da pomba (8.10,12) espelham a espera inicial: agora o silêncio é de restauração, não de iminência. O ramo de oliveira (8.11) é o primeiro sinal natural de paz na Bíblia — a árvore que produz óleo para unção e luz voltou a brotar. A pomba que não volta (8.12) é sinal definitivo: há terra seca, a paz é real.
+§ Teologia Reformada: CFW V.7: "Deus em sua providência ordinária faz uso de meios, mas é livre para agir sem, acima ou contra eles, conforme lhe apraz". Os sinais naturais da pomba e do ramo não são superstição — são meios pelos quais Deus comunica Seu propósito. 2Pe 3.9: "o Senhor não retarda a Sua promessa... mas é longânimo para convosco, não querendo que nenhum pereça" — a paciência de Deus antes do dilúvio e durante o dilúvio é o padrão da Sua paciência antes do juízo final.
+§ Aplicação: Você interpreta o silêncio de Deus como ausência ou como paciência que opera? Os sete dias de espera — antes do juízo e antes da restauração — ensinam que o tempo de Deus não é indiferença. Nos momentos em que o céu parece silencioso, procure o sinal da pomba: Deus opera mesmo quando você não ouve nada.
 
-[E']  · Quarenta dias depois a escotilha é aberta para a luz
-      → Toda noite de juízo tem uma manhã preparada pela providência
+V. AS ÁGUAS QUE SOBEM E AS ÁGUAS QUE RECUAM: O JUÍZO COMO CRIAÇÃO REVERSA E NOVA (E ↔ E')
+§ Indicação Textual: Gn 7.17-24 (quarenta dias e quarenta noites; as águas crescem e cobrem tudo; toda carne perece) ecoa em 8.6-14 (quarenta dias depois Noé abre a janela; as águas secaram da terra; o chão estava seco) — a inversão perfeita da cobertura e do descobrimento.
+§ Exegese: Os "quarenta dias" (arbaʿim yom) são número tipológico de prova: Moisés quarenta dias no Sinai, Israel quarenta anos no deserto, Elias quarenta dias até Horebe, Jesus quarenta dias no deserto. O dilúvio "desfaz" a criação de Gn 1: as "fontes do grande abismo" (7.11) invertem a separação das águas do dia 2, e as "janelas dos céus" abrem o firmamento que foi separado. O recuo das águas (8.3: vayyashovu hamayim) é nova criação em câmera lenta — a terra emerge como na criação original.
+§ Teologia Reformada: A tipologia do dilúvio como recriação é amplamente reconhecida na teologia reformada. Calvino no Comentário de Gênesis 8 escreve que Noé saiu da arca como "um novo Adão". 1Pe 3.20-21 usa o dilúvio como tipo do batismo — a água que julgou o mundo velho é a água que salva e purifica o novo. 2Co 5.17: "se alguém está em Cristo, é nova criação" — o que o dilúvio tipifica na história, Cristo realiza escatologicamente.
+§ Aplicação: Você vê os períodos de "quarenta dias" da sua vida — as provações longas e totalizantes — como destruição ou como nova criação em processo? A água que cobre não é sempre juízo: às vezes é o batismo que precede a ressurreição. Espere o recuo das águas.
 
-[D']  · Sete dias: a pomba retorna trazendo o sinal da paz
-      → Deus comunica sua paz por sinais que confirmam sua palavra
+VI. OS CIMOS COBERTOS E OS CIMOS DESCOBERTOS: NADA QUE O HOMEM ERGUE RESISTE AO SENHOR (F ↔ F')
+§ Indicação Textual: Gn 7.19-20 ("as águas prevaleceram tanto sobre a terra que foram cobertas todas as altas montanhas que havia debaixo de todos os céus") ecoa em 8.4-5 (a arca repousou sobre os montes de Ararate; os cumes das montanhas apareceram no sétimo mês) — a cobertura total é revertida no ponto mais alto.
+§ Exegese: A cobertura de todas as montanhas (kol heharim hagevohim, 7.19) é declaração de juízo universal — não há ponto de fuga pela altitude humana. Mas a arca repousa precisamente sobre os montes de Ararate (8.4): o ponto mais alto torna-se primeiro sinal de terra firme. O que o juízo submergiu, a graça revela em primeiro lugar. A progressão "cumes apareceram" (8.5) é o cosmos emergindo da água como nos dias 1-3 da criação.
+§ Teologia Reformada: Sl 46.2-3 descreve o cosmos abalado mas Deus como refúgio — as montanhas que tremem no salmo são as mesmas que o dilúvio submerge. Is 40.4: "todo vale será exaltado e todo monte e outeiro será abaixado" — a soberania divina nivela o que o orgulho humano ergue. O "monte do SENHOR" (Is 2.2) é o único que persiste.
+§ Aplicação: Nas suas "montanhas" — nas coisas que você considera altas demais para serem tocadas, seguras demais para serem ameaçadas — você está colocando confiança que só cabe no SENHOR? O dilúvio ensina que não há altitude segura fora da arca. Mas também ensina que a graça encontra o cume primeiro.
 
-[C']  · No ano seiscentos e um as águas estão secas
-      → Cumprido o juízo, abre-se nova era na história da redenção
+VII. O REMANESCENTE PRESERVADO NO CENTRO DO DILÚVIO — CENTRO ◉
+§ Indicação Textual: Gn 7.23-24 e 8.1: "e ficou somente Noé e os que com ele estavam na arca... e lembrou-se Deus de Noé e de todos os animais e de todo o gado que com ele estava na arca; e Deus fez passar um vento sobre a terra, e as águas abrandaram" — o centro estrutural do dilúvio é o ato de memória divina que reverte o juízo.
+§ Exegese: Vayyizkor Elohim et-Noach (lembrou-se Deus de Noé, 8.1) é o verbo mais importante do quiasma do dilúvio. Zakar (lembrar) no hebraico bíblico não é cognição passiva — é ação comprometida: "lembrar-se" é "agir em favor de". Deus se "lembra" de Noé como intervém ativamente. O vento (ruach, 8.1) que faz as águas recuarem ecoa o ruach de 1.2 — o Espírito que pairava sobre as águas do caos agora recria ordem sobre as águas do juízo. No centro do dilúvio, quando toda carne pereceu, Deus age em favor do remanescente.
+§ Teologia Reformada: CFW V.1: "Deus, o grande Criador de todas as coisas, sustenta, dirige, dispõe e governa todas as criaturas, ações e coisas... segundo a sua infalível presciência e o livre e imutável conselho de sua própria vontade". O ato de memória divina sobre Noé é a providência em sua forma mais pessoal: Deus não se esqueceu. CFW XVII.1: Deus nunca abandonará seus eleitos — a salvação de Noé é tipo da preservação dos eleitos através do juízo.
+§ Aplicação: Você se sente esquecido por Deus no meio das suas águas? O centro do dilúvio — o pior momento possível — é onde Deus se "lembra". O vayyizkor não é recuperação de memória esquecida: é declaração de fidelidade pactual que nunca cessou. Nos seus quarenta dias mais longos, o Deus que não dorme nem dormita (Sl 121.4) se lembra de você — e age. Amém.
 
-[B']  · A Palavra divina manda Noé sair e consagrar a vida
-      → Após o juízo, a vida obediente continua em adoração
+---
 
-[A']  · A maldade permanece; Deus jura nunca mais destruir assim
-      → A paciência divina sustenta o mundo aguardando a redenção final
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+1Pe 3.20-21 é o texto-chave: "a arca, em que poucos foram salvos através da água. A esta água corresponde o batismo que agora vos salva (não a remoção da imundícia do corpo, mas o apelo de uma boa consciência para com Deus) por meio da ressurreição de Jesus Cristo." A arca é tipo de Cristo: fora dela não há salvação do juízo; dentro dela há preservação total. O dilúvio é tipo do juízo final (Mt 24.37-39), e a memória divina de Noé é tipo da intercepção de Cristo pelos seus (Jo 10.28-29; Rm 8.34). O ruach (vento/Espírito) que recria após o dilúvio é o mesmo Espírito que recria na regeneração (Jo 3.5-8) e que ressuscitará os corpos na nova criação (Rm 8.11; Ez 37).
 
-EIXO CRISTOLÓGICO
-1Pe 3:20–21: "a arca, em que poucos foram salvos... figura do batismo" — Cristo é a arca em quem somos salvos do juízo.`;
+DOUTRINA CENTRAL
+O juízo do dilúvio demonstra que Deus nunca destrói sem preservar um remanescente e que Sua memória pactual opera no centro da devastação para recriar o que o pecado corrompeu.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Pregar o dilúvio é pregar sobre juízo final, salvação pela fé e nova criação. Não reduza o texto a lição de moral — é tipologia crística completa. Cristo é a arca; o batismo é o tipo; a nova criação é o destino.
+▸ Para as Famílias: A arca acolheu uma família inteira pela fé do chefe. Lidere sua família com a mesma "obediência integral" de Noé — vayyaʿas ken — e confie que a graça pactual abraça os que dependem de você.
+▸ Para o Discípulo: Quando as águas sobem na sua vida, pergunte: estou dentro da arca ou tentando nadar sozinho? A salvação não é habilidade de sobrevivência — é posição no lugar certo, na arca certa, provida por Deus.
+
+CONCLUSÃO
+O dilúvio não é o fim de nada — é o começo de tudo. A narrativa que começa com "a maldade do homem era grande" termina com Noé construindo um altar e Deus jurando preservar a criação. Entre esses dois extremos, no centro exato das águas que cobriram tudo, Deus se lembrou. Vayyizkor Elohim. O Deus que se lembrou de Noé é o mesmo que, na plenitude dos tempos, enviou o Filho para ser a arca que acolhe todo pecador que entra pela fé. Dentro de Cristo não há condenação — há preservação, nova criação, promessa e altar. Você está dentro da arca? Então as águas podem subir — vayyizkor Elohim. Deus se lembrou de você. Amém.`;
 
   if (d.dia === 8) return `PARA PREGAR · Gênesis 9:1–17
 
+---
+
+TÍTULO DO SERMÃO
+"Como o Arco Revela a Fidelidade: de que forma Deus ata sua promessa a um sinal visível"
+
 BIG IDEA
-"O arco no céu é a marca da fidelidade de Deus à criação que ele jurou preservar."
+O Deus que proibiu o sangue e jurou nunca mais destruir o mundo ata sua fidelidade a um sinal visível nas nuvens, porque a promessa de Deus precisa de confirmação não para Ele, mas para o coração humano frágil que tende a duvidar.
 
-MOVIMENTOS DO TEXTO
-[A]   · Deus ordena: não comer sangue; do sangue do homem se prestará contas
-      → A vida é sagrada porque o homem é imagem de Deus
+PERGUNTA DE TRANSIÇÃO
+De que forma o arco nas nuvens revela que Deus ata sua promessa a um sinal visível — e por que esse gesto é de graça, não de obrigação?
 
-[B]   · "Nunca mais dilúvio destruirá toda a carne" — promessa cravada
-      → A história tem futuro porque Deus jurou sustentá-la
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as MARCAS da fidelidade divina inscritas na aliança noética: da proteção da vida até o sinal do arco, Deus está declarando que Sua promessa é mais firme que qualquer tempestade.
 
-◉ [X]   · O ARCO NAS NUVENS É O SINAL DA ALIANÇA ENTRE DEUS E A TERRA
-      → Deus ata sua fidelidade a um sinal visível para que jamais duvidemos
+---
 
-[B']  · "Nunca mais as águas serão dilúvio" — promessa reafirmada
-      → A repetição na boca de Deus é firmeza para o coração humano
+MOVIMENTOS DO SERMÃO
 
-[A']  · "Este é o sinal da aliança com toda a carne" — conclusão solene
-      → A aliança não é privilégio de poucos; abraça toda a criação
+I. A VIDA É SAGRADA: O SANGUE QUE DEFINE O LIMITE DA CRIATURA (A ↔ A')
+§ Indicação Textual: Gn 9.4-6 ("a carne com sua vida, que é o seu sangue, não comereis... porque Deus fez o homem à sua imagem") ecoa em 9.16-17 ("o arco estará nas nuvens... este é o sinal da aliança que estabeleci entre mim e toda a carne que está sobre a terra") — o mandamento que protege a vida humana (A) encontra conclusão no sinal que protege toda carne (A').
+§ Exegese: A proibição de comer sangue (dam, 9.4) fundamenta-se na identificação de sangue com nefesh (vida/alma): "a vida da carne está no sangue" (Lv 17.11). O mandamento de 9.6 ("quem derramar o sangue do homem, pelo homem terá seu sangue derramado, pois à imagem de Deus fez o homem") é a fundação bíblica da ética da vida humana: a imago Dei é razão teológica para a proteção da vida. Este mandamento é dado a Noé — à humanidade inteira — antes de qualquer lei mosaica, demonstrando sua abrangência universal.
+§ Teologia Reformada: CFW IV.2 afirma que o homem foi criado "à imagem de Deus" e que esta imagem, mesmo após a queda, fundamenta a dignidade e a responsabilidade humana. O Catecismo Maior P.135-136 sobre o sexto mandamento inclui proteção de toda vida humana: "preservar a vida do próximo e a nossa própria". A lei natural inscrita na consciência de toda criatura humana (Rm 2.15) inclui este reconhecimento básico: a vida humana tem valor inalienável.
+§ Aplicação: Em que medida você trata a vida humana — de todo ser humano, independentemente de sua utilidade ou condição — como sagrada porque é imago Dei? A cultura que descarta vida humana nos extremos (não-nascida, idosa, deficiente) está violando o mandamento mais fundamental de Gênesis 9, dado não a Israel mas à humanidade inteira.
 
-EIXO CRISTOLÓGICO
-Lc 22:20: "este cálice é a nova aliança no meu sangue" — o sangue de Cristo é o arco eterno entre Deus e o pecador.`;
+II. A PROMESSA DUPLA: "NUNCA MAIS" COMO DECLARAÇÃO E REAFIRMAÇÃO (B ↔ B')
+§ Indicação Textual: Gn 9.11 ("estabelecerei a minha aliança convosco: nunca mais toda a carne será destruída pelas águas do dilúvio; nunca mais haverá dilúvio para destruir a terra") ecoa em 9.15 ("lembrarei a minha aliança que está entre mim e vós... e as águas nunca mais se tornarão dilúvio para destruir toda a carne") — a promessa é afirmada e depois reafirmada com o sinal como evidência.
+§ Exegese: Lo-yihyeh-ʿod (nunca mais haverá) em 9.11 é linguagem de declaração solene e irrevogável. A repetição em 9.15 não é redundância — é confirmação retórica típica da aliança bíblica: a promessa declarada duas vezes está selada. O verbo zakar (lembrar, 9.15) é o mesmo de 8.1 — Deus "lembrará" a aliança ao ver o arco. Aqui, o sinal não informa Deus: é para que Deus "lembre" ativamente, ou seja, aja em fidelidade. O sinal é para o coração humano frágil, não para a memória divina onisciente.
+§ Teologia Reformada: CFW VII.1: "a distância entre Deus e a criatura é tão grande que, embora criaturas racionais lhe devam obediência como Criador, elas não poderiam jamais ter alcançado beatitude e recompensa como recompensa sem que Deus se dignasse voluntariamente a condescender com elas." A aliança noética é iniciativa unilateral de Deus: Noé não propõe, não negocia, não merece. CFW XIX.1 sobre a lei moral inclui a lei de Deus como "a perfeita regra de justiça... que obriga toda a humanidade". A promessa de nunca mais dilúvio é graça que sustenta o mundo para que a redenção tenha palco.
+§ Aplicação: Você confia nas promessas de Deus quando as circunstâncias apontam em direção contrária? A fidelidade divina não depende da tua percepção das nuvens — depende da Palavra que disse "nunca mais". Nos seus momentos de medo de inundação — relacional, financeira, de saúde — lembre-se que a promessa foi dita duas vezes porque o coração humano esquece facilmente o que o céu já declarou permanentemente.
+
+III. O ARCO NAS NUVENS: O SINAL VISÍVEL QUE ATA A FIDELIDADE DIVINA — CENTRO ◉
+§ Indicação Textual: Gn 9.12-14 ("este é o sinal da aliança que ponho entre mim e vós... pus o meu arco nas nuvens e será o sinal da aliança entre mim e a terra. E acontecerá que, quando eu trouxer nuvens sobre a terra, o arco aparecerá nas nuvens").
+§ Exegese: O qeshet (arco, 9.12) é a mesma palavra hebraica usada para arco de guerra — o Guerreiro Divino "depõe o arco" nas nuvens como gesto de paz. O arco de guerra torna-se arco de aliança: instrumento de juízo transformado em sinal de misericórdia. O arco "nas nuvens" (beʿanan, 9.13) é precisamente onde as tempestades se formam — Deus coloca o sinal da paz exatamente no lugar que mais evoca o medo do dilúvio. A aliança (berit) de 9.12-17 aparece sete vezes em seis versículos: a insistência revela que Deus está acentuando o comprometimento. Este é o primeiro uso explícito de berit (aliança) no Antigo Testamento, embora o conceito já operasse desde o Éden.
+§ Teologia Reformada: CFW VII.2: "O homem, por sua queda, fez-se a si mesmo totalmente incapaz de, pelo pacto das obras, obter vida. Por isso o Senhor foi condescender em fazer um segundo pacto..." A aliança noética não é aliança de redenção, mas aliança de providência — Deus sustenta o cosmos para que a aliança da graça tenha espaço de se cumprir. CFW V.2: "Embora em relação à presciência e ao decreto de Deus, a causa primeira, todas as coisas acontecem imutável e infalível..." — o arco é sinal de que o decreto de sustentação é irrevogável.
+§ Aplicação: Da próxima vez que ver um arco-íris, não olhe para ele como fenômeno meteorológico belo — olhe como o teólogo que Gênesis 9 quer que você seja: veja o Guerreiro Divino que depôs as armas da ira e as transformou em sinal de pacto. O arco nas nuvens diz: "ainda que a tempestade venha, o dilúvio não voltará. Eu juro." Que isto mude a forma como você atravessa suas tempestades. Amém.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+Lc 22.20: "este cálice é a nova aliança no meu sangue." O arco de Noé é a aliança que sustenta o mundo para que chegue a nova aliança. O sangue proibido de comer em Gn 9.4 aponta para o sangue do Cordeiro que é bebido em comunhão — o paradoxo da Ceia do Senhor, onde o sangue que é vida eterna é consumido pela fé. Ap 4.3 descreve o trono divino cercado por um arco (íris) semelhante à esmeralda — o sinal de Noé alcança o salão do trono eterno. O arco de Deus não era promessa temporária: era abertura do arco eterno da misericórdia que culmina no Cordeiro imolado desde a fundação do mundo (Ap 13.8).
+
+DOUTRINA CENTRAL
+O Deus que ata sua fidelidade a um sinal visível no céu declara que Sua promessa é mais firme que qualquer tempestade — e que a vida humana, por ser imagem de Deus, tem valor que nenhuma circunstância pode cancelar.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: Os sacramentos são "arcos" visíveis — sinais e selos das promessas divinas. Administre-os com o mesmo cuidado com que Deus colocou o arco nas nuvens: como sinal que confirma o que a Palavra já declarou.
+▸ Para as Famílias: Proteja a vida em todos os seus estágios. A proibição de Gn 9.6 é mais antiga que Israel, mais abrangente que a lei mosaica — é mandamento à humanidade inteira fundamentado na imago Dei.
+▸ Para o Discípulo: Aprenda a ver "arcos" nas suas tempestades — os sinais de fidelidade divina que Deus coloca precisamente nos lugares mais ameaçadores. Ele não remove a nuvem antes de colocar o arco nela.
+
+CONCLUSÃO
+O arco foi colocado nas nuvens — não no céu limpo. Deus poderia ter prometido que nunca mais haveria nuvens. Em vez disso, prometeu que nas nuvens haveria um sinal. Esta é a pedagogia divina da fidelidade: não ausência de tempestade, mas presença de promessa dentro da tempestade. Cada chuva que cessa e revela o arco é Deus cumprindo o que jurou a Noé. E se Deus honra este juramento menor — a sustentação do cosmos físico — quanto mais honrará o juramento maior: "nunca te deixarei nem te abandonarei" (Hb 13.5). O Deus do arco é o Deus da cruz. E na cruz, Ele depôs o arco da ira definitivamente, substituindo-o pelo arco da graça que cobre o céu eterno. Confie Nele nas suas nuvens. Amém.`;
 
   if (d.dia === 9) return `PARA PREGAR · Gênesis 9:18–29
 
+---
+
+TÍTULO DO SERMÃO
+"Por que o Justo Cai e a Casa se Divide: a vergonha que separa quem cobre de quem expõe"
+
 BIG IDEA
-"Mesmo o justo do dilúvio cai, e a casa se divide entre quem cobre e quem expõe."
+A queda de Noé após o dilúvio revela que nenhum santo é imune ao pecado, e a resposta dos filhos à vergonha do pai divide a casa — porque cobrir a vergonha alheia é o maior ato de amor, e expô-la é o maior ato de desamor.
 
-MOVIMENTOS DO TEXTO
-[P]   · Os descendentes de Noé reabrem a história humana
-      → A nova humanidade ainda carrega a velha fragilidade
+PERGUNTA DE TRANSIÇÃO
+Por que o justo que sobreviveu ao dilúvio cai, e o que a divisão da casa revela sobre a natureza do amor que cobre e do orgulho que expõe?
 
-[A]   · A embriaguez de Noé revela que o justo continua frágil
-      → Nenhum santo do passado dispensa a graça do presente
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as ETAPAS pelas quais a queda de Noé e a resposta de seus filhos revelam que a graça que cobre distingue filhos do reino de filhos de condenação.
 
-[B]   · Cão vê a nudez do pai e a divulga em vez de cobrir
-      → Expor a falha do irmão revela o coração que não ama
+---
 
-◉ [X]   · SEM E JAFÉ ANDAM DE COSTAS E COBREM O PAI SEM VER
-      → Amar é cobrir a vergonha alheia quando se pode expô-la
+MOVIMENTOS DO SERMÃO
 
-[A']  · Noé desperta e profetiza sobre as gerações futuras
-      → A palavra dos pais ecoa nas escolhas dos filhos
+I. A NOVA HUMANIDADE E A VELHA FRAGILIDADE: OS FILHOS DE NOÉ REABREM A HISTÓRIA (P ↔ P')
+§ Indicação Textual: Gn 9.18-19 ("os filhos de Noé que saíram da arca eram Sem, Cão e Jafé... e destes se povoou toda a terra") ecoa em 9.28-29 ("Noé viveu, depois do dilúvio, trezentos e cinquenta anos... e morreu") — a nova humanidade começa com três filhos e termina com um vayyamot: o dilúvio não eliminou a mortalidade nem a fragilidade.
+§ Exegese: A lista dos três filhos (Sem, Cão, Jafé) em 9.18 prepara o que virá: "Cão é pai de Canaã" é informação inserida antes de qualquer ação de Cão — o narrador sinaliza a importância deste detalhe para o que se seguirá. A morte de Noé em 9.29 retoma o vayyamot de Gênesis 5: o mais justo da geração ainda morre. A nova humanidade carrega a velha fragilidade da carne — o dilúvio purificou o mundo, não o coração (Gn 8.21: "a imaginação do coração do homem é má desde a sua meninice").
+§ Teologia Reformada: CFW VI.4: "desta corrupção original, pela qual somos totalmente avessos, incapazes e contrários a todo bem e totalmente inclinados para todo mal, procedem todas as transgressões reais." Noé, o justo, não é exceção à corrupção original — é exemplo de que a eleição e a justificação não eliminam a luta com a carne nesta vida. CFW XIII.2: "esta santificação é em toda a pessoa, mas ainda imperfeita nesta vida... permanecendo ainda em cada parte alguma corrupção."
+§ Aplicação: Você superidealiza os santos da história? A queda de Noé — o mais justo de sua geração — é advertência contra toda hagiografia que elimina a humanidade dos santos. Os heróis da fé caem. Isso não invalida a graça que os escolheu — confirma que a graça opera com material frágil. E você, como Noé, precisará de graça para seus "depois do dilúvio".
 
-[B']  · Maldição sobre Canaã pela conduta de Cão
-      → O pecado oculto produz consequências geracionais visíveis
+II. A EMBRIAGUEZ DO JUSTO: O PERIGO QUE VEM DEPOIS DA VITÓRIA (A ↔ A')
+§ Indicação Textual: Gn 9.20-21 (Noé, homem da terra, plantou uma vinha, bebeu do vinho, embriagou-se e ficou desnudo dentro da sua tenda) ecoa em 9.24-25 (Noé acorda do vinho, sabe o que lhe fez seu filho menor, e profetiza maldição sobre Canaã e bênção sobre Sem e Jafé) — a queda privada em A tem consequências proféticas públicas em A'.
+§ Exegese: Noé é identificado como ish haʾadamah (homem da terra/lavrador, 9.20) — ele retoma o trabalho de Adão (Gn 2.15: avad et-haʾadamah). A vinha não é pecado — é criação. Mas o vayyisht min-hayayin vayyishkar (bebeu do vinho e embriagou-se) é onde a liberdade se torna excesso. Vayyitgal (ficou desnudo, 9.21) ecoa vayyerʾu et-ʿervat avichem (viu a nudez de seu pai, 9.22) — a nudez que a queda no Éden introduziu (3.7) ainda está presente, ainda é vergonha, ainda precisa de cobertura. O homem justo que sobreviveu ao dilúvio não sobreviveu ao vinho: a vitória contra o grande não imuniza contra o pequeno.
+§ Teologia Reformada: CFW XVII.3: "o Espírito de Deus pode ser contristado por eles [os eleitos], e eles privados em parte de suas graças e consolações, terem seus corações endurecidos, suas consciências feridas, magoarem e escandalizarem a outros e trazerem castigos temporais sobre si mesmos." A embriaguez de Noé é exemplo paradigmático: o eleito que contrista o Espírito paga o preço pastoral, não o preço eterno. O Catecismo Maior P.136 sobre o oitavo mandamento inclui sobriedade como fruto do temor a Deus.
+§ Aplicação: Qual é a sua "vinha"? O pecado que te derruba raramente é o gigante que você já aprendeu a temer — é a coisa boa que se tornou excesso. Guarda-te depois das vitórias, não apenas durante as batalhas. Noé sobreviveu ao dilúvio mas caiu no vinho. A maior ameaça espiritual muitas vezes não é a tempestade que você navegou, mas o jardim que você cultivou depois.
 
-[P']  · Bênção sobre Sem e Jafé; Noé morre aos novecentos e cinquenta
-      → A bênção segue quem aprende a cobrir, não quem expõe
+III. CÃO EXPÕE E OS IRMÃOS COBREM: A RESPOSTA DIANTE DA VERGONHA DO OUTRO (B ↔ B')
+§ Indicação Textual: Gn 9.22 (Cão vê a nudez do pai e conta aos dois irmãos de fora — vayyaggedh lishtey echav bachutz) ecoa em 9.26-27 (bênção sobre Sem e Jafé que "cobriram a nudez do pai" — kasu et-ʿervat avichem) — a exposição de B recebe seu julgamento na bênção invertida de B'.
+§ Exegese: O ato de Cão (vayyar... vayyaggedh — viu e contou) é duplo: não apenas ver involuntariamente, mas anunciar. O "contar de fora" (bachutz) é comunicação pública do que deveria ser privado — Cão não simplesmente se deparou com a nudez do pai; ela tornou-se assunto de conversa. Sem e Jafé respondem com ato preciso: tomaram a veste (hassimlah), puseram no ombro de ambos (ʿal-shekem sheneyhem), caminharam de costas (vayyelechu achoranit) e cobriram (vayekassu) — quatro verbos de cuidado deliberado. "Seus rostos estavam para trás e não viram a nudez do pai" — não por falta de curiosidade, mas por decisão moral. O amor que cobre não precisa ver para agir.
+§ Teologia Reformada: 1Pe 4.8: "acima de tudo, tende fervoroso amor uns para com os outros, porque o amor cobre multidão de pecados." Pv 10.12: "o ódio desperta contendas, mas o amor cobre todas as transgressões." O ato de Sem e Jafé não é negação do pecado do pai — é recusa de publicizá-lo, de fazer da vergonha alheia espetáculo. CFW XXVI.1 sobre a comunhão dos santos inclui "edificação mútua, tanto interior como externamente". Cobrir a vergonha do irmão é ato de comunhão, não de conivência.
+§ Aplicação: Quando você descobre a queda de um irmão ou irmã, sua resposta é de Cão ou de Sem? A tentação de "contar de fora" — seja para oração, seja para aconselhamento, seja para processamento emocional — pode ser a mesma dinâmica de vayyaggedh bachutz. O amor que cobre pergunta: "isso que estou prestes a compartilhar serve à restauração do irmão ou à minha necessidade de ser ouvido?"
 
-EIXO CRISTOLÓGICO
-1Pe 4:8: "o amor cobre multidão de pecados" — Cristo cobre a vergonha do pecador com sua própria justiça.`;
+IV. SEM E JAFÉ COBREM DE COSTAS: AMAR SEM VER — CENTRO ◉
+§ Indicação Textual: Gn 9.23 ("tomaram Sem e Jafé a veste e puseram-na sobre os ombros de ambos e, andando de costas, cobriram a nudez do pai; e seus rostos estavam para trás e não viram a nudez do pai").
+§ Exegese: O versículo 23 é o coração estrutural do texto e um dos mais belos da Bíblia em termos de imagem moral. O andar de costas (achoranit) não é acidente — é deliberação: os irmãos entraram no espaço da vergonha sem olhar para ela. Cobriram sem ver: o amor não precisa de exposição para agir em proteção. A estrutura do ato — dois irmãos, um ombro de cada, um só manto — fala de comunhão que serve juntos. O texto não diz "cobriram sem que o pai soubesse" — o pai acordará e saberá (9.24). Mas Sem e Jafé não precisavam da recompensa da conscientização para agir. Amaram sem audiência.
+§ Teologia Reformada: Mt 6.3-4: "quando deres esmola, não saiba a tua mão esquerda o que faz a direita, para que a tua esmola seja em secreto." Sem e Jafé ilustram o princípio antes de Cristo o ensinar: o amor genuíno não calcula retorno, não exige testemunha, não explora a vulnerabilidade alheia para ganho próprio. CFW XVI.1: as boas obras que Deus aceita são aquelas que "procedem de verdadeira fé" e são feitas "da maneira que Ele ordenou em sua Santa Palavra" — não para aprovação humana. 1Co 13.5: o amor "não busca os seus próprios interesses" e "não se regozija com a injustiça".
+§ Aplicação: Há alguém em sua vida cuja vergonha você conhece? Ande de costas. Cubra sem ver. Aja sem audiência. O maior ato de amor não é a postagem de apoio, a conversa que expõe o problema para "oração", o conselho que involuntariamente publiciza a queda: é o manto discreto lançado sobre os ombros de quem caiu, sem que ninguém além do Pai eterno precise saber. Este é o amor que cobre multidão de pecados. Este é o amor que prefigura Cristo. Amém.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+1Pe 4.8: "o amor cobre multidão de pecados." Cristo, na cruz, realizou o ato definitivo de Sem e Jafé: caminhou de costas para o trono celeste, desceu ao espaço da maior vergonha humana — o pecado, a morte, a maldição — e cobriu com o manto da Sua própria justiça os pecadores que, como Noé, jaziam nus no chão da sua queda. O sangue de Cristo "fala melhor que o de Abel" (Hb 12.24) — não por vingança, mas por cobertura. A maldição sobre Canaã em Gn 9.25 e a bênção sobre Sem em 9.26 ("bendito seja o SENHOR, Deus de Sem") antecipam a estrutura da eleição: da linhagem de Sem virá Abraão, de Abraão virá Davi, de Davi virá Cristo — o que cobre definitivamente todos os que se refugiam nEle.
+
+DOUTRINA CENTRAL
+A queda de Noé revela que nenhum santo é imune ao pecado, mas a resposta de Sem e Jafé declara que o amor genuíno não expõe a vergonha alheia — cobre, discretamente, de costas, sem audiência.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: A disciplina eclesiástica (Mt 18.15-17) começa com cobertura privada, não exposição pública. A cultura de "accountability" saudável é a de Sem e Jafé — restauração, não espetáculo.
+▸ Para as Famílias: A honra pai-e-mãe do quinto mandamento inclui não publicizar as quedas dos pais. Filhos que aprenderam a cobrir a vergonha familiar em vez de expô-la constroem casas de graça, não de vergonha.
+▸ Para o Discípulo: Examine sua resposta automática ao pecado alheio. O primeiro impulso de Cão é o impulso natural do coração não-renovado: "contar de fora". O impulso de Sem e Jafé é fruto do Espírito: cobrir com amor.
+
+CONCLUSÃO
+Dois filhos andaram de costas com um manto nos ombros — e mudaram o curso da profecia da casa de Noé. Não precisaram de audiência, de aprovação, de reconhecimento. Apenas cobriram. E quando Noé acordou do vinho e soube, a profecia que saiu de sua boca não foi genérica: distinguiu com precisão quem cobriu de quem expôs, e declarou que a bênção segue os que cobrem. Cristo é o Sem definitivo — o filho que desceu ao espaço da maior nudez humana (a morte e o sepulcro) e cobriu os pecadores com o único manto que remove a vergonha para sempre: Sua própria justiça. Você está coberto por Ele? Então cubra os outros da mesma forma. Caminhe de costas. Lance o manto. E não olhe. Amém.`;
 
   if (d.dia === 10) return `PARA PREGAR · Gênesis 10:1–32
 
