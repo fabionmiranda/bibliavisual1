@@ -4429,21 +4429,57 @@ O livro do Gênesis se fecha com um caixão. Mas é um caixão profético. Lá d
 
   if (d.dia === 82) return `PARA PREGAR · Êxodo 1:1–7
 
+---
+
+TÍTULO DO SERMÃO
+"A Promessa que Frutifica no Exílio: por que a morte dos patriarcas não encerra o propósito de Deus"
+
 BIG IDEA
-"A promessa feita aos pais não morre com eles — multiplica-se nos filhos."
+A fidelidade de Deus à aliança faz a promessa frutificar mesmo quando os mediadores humanos morrem e o povo vive em terra estranha.
 
-MOVIMENTOS DO TEXTO
-[A]   · A lista dos que desceram ao Egito enraíza a história na aliança
-      → A providência trabalha através de famílias com nome
+PERGUNTA DE TRANSIÇÃO
+De que forma a lista genealógica de Êxodo 1 revela que a promessa de Deus frutifica mesmo quando os mediadores humanos morrem e o povo vive em terra estranha?
 
-[B]   · José e a geração inteira morreram
-      → A morte do mediador humano não cancela o propósito divino
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as MARCAS da fidelidade aliancista de Deus que sustenta a promessa através da morte, do exílio e da multiplicação inesperada.
 
-[A']  · Os filhos de Israel frutificaram e encheram a terra
-      → A promessa de Gênesis 1 e Abraão cumpre-se mesmo no exílio
+---
 
-EIXO CRISTOLÓGICO
-At 7:17: "aproximando-se o tempo da promessa que Deus jurara a Abraão, o povo crescia" — em Cristo, a promessa frutifica até em terra estrangeira.`;
+MOVIMENTOS DO SERMÃO
+
+I. A LISTA QUE ENRAÍZA: A PROVIDÊNCIA TRABALHA ATRAVÉS DE FAMÍLIAS COM NOME (A)
+§ Indicação Textual: Êx 1.1-4 nomeia individualmente os doze filhos de Jacó que desceram ao Egito, retomando Gn 46.8 com a fórmula "estas são as gerações" (eleh shemot — "estes são os nomes").
+§ Exegese: O hebraico shemot (nomes) abre o livro — em Êxodo, Deus não trabalha com massas anônimas, mas com pessoas com nome inscrito na aliança. A fórmula "veio com Jacó" (ba im Yaakov, 1.1) ancora a história em movimento deliberado: a descida ao Egito não foi acidente geopolítico, mas jornada providencial. Setenta almas (1.5) retoma Gn 46.27 — número simbólico de plenitude que carrega toda a promessa de Abraão comprimida numa família.
+§ Teologia Reformada: CFW V.2 ensina que a providência divina se estende a todos os seres, incluindo as mais miúdas circunstâncias. Nomear os filhos de Jacó é o sinal de que Deus não governa a história em abstrato — governa por meio de linhagens específicas, eleitas e chamadas pelo nome (Is 43.1). A eleição particular (CFW III.4) garante que o propósito de Deus não depende da continuidade política, mas da fidelidade da aliança.
+§ Aplicação: Você se sente anônimo na sua geração — um número numa sociedade que não o conhece pelo nome? Saiba que o Deus de Êxodo conhece seus filhos pelo nome no meio do Egito. Sua família importa à história da redenção.
+
+II. A MORTE QUE NÃO ENCERRA: A GERAÇÃO PASSA, A ALIANÇA PERMANECE (B)
+§ Indicação Textual: Êx 1.6 — "José e todos os seus irmãos e toda aquela geração morreram" — é a dobradiça narrativa que liga Gênesis a Êxodo. A morte de José encerra o ciclo dos patriarcas sem encerrar o propósito de Deus.
+§ Exegese: O verbo wayyamot (e morreu) repetido para toda a geração soa como toque fúnebre sobre os que carregaram a promessa. Mas a construção da frase em 1.7 imediatamente reverte o tom: cinco verbos de vida e crescimento explodem após a morte — "frutificaram" (parou), "multiplicaram-se" (vayirshevu), "cresceram" (vayirvou), "tornaram-se muito poderosos" (vayaatsemu), "encheram a terra" (vayyimale). O texto literalmente enterra uma geração e imediatamente planta outra. Nenhum mediador humano é insubstituível no plano de Deus.
+§ Teologia Reformada: O Catecismo Maior P.19 ensina que Deus nunca abandona o propósito da aliança da graça, mesmo quando os instrumentos humanos cessam. A doutrina da perseverança dos santos (CFW XVII) tem raiz nesta verdade histórica: a eleição de Deus sustenta o povo quando o povo não consegue sustentar a si mesmo.
+§ Aplicação: Você enfrenta a morte de um líder, o fim de uma era, o encerramento de um ministério que parecia insubstituível? A história de Êxodo 1.6-7 diz: Deus enterra seus servos e continua sua obra. A aliança não está depositada em nenhum homem — está depositada no Deus que jurou.
+
+III. A MULTIPLICAÇÃO QUE ESPANTA: A BÊNÇÃO DE CRIAÇÃO CUMPRE-SE NO EXÍLIO — CENTRO ◉
+§ Indicação Textual: Êx 1.7 — "os filhos de Israel frutificaram e pullularam, e multiplicaram-se e tornaram-se muito poderosos, e a terra se encheu deles" — cinco verbos que retomam deliberadamente Gn 1.28 ("frutificai e multiplicai-vos") e Gn 12.2 ("farei de ti uma grande nação").
+§ Exegese: Os cinco verbos hebraicos (parou, sharatsou, vayirvou, vayaatsemu, vayyimale ha'arets) formam uma cascata de bênção que ecoa o mandato da criação. O verbo sharats (pulular, fervilhar) é o mesmo usado em Gn 1.20 para os seres vivos que enchem as águas — o narrador está dizendo: em terra do Egito, a bênção primordial da criação ainda opera. Que a promessa frutifique exatamente no lugar de opressão e estranheza é o paradoxo da aliança: Deus não espera condições favoráveis para cumprir sua palavra.
+§ Teologia Reformada: A Aliança Abraâmica (CFW VII.3; Gn 12.1-3; 17.1-8) prometeu que Abraão seria pai de multidão de nações. Êxodo 1.7 é a primeira evidência histórica de que Deus cumpre essa promessa a despeito das circunstâncias. A doutrina da providência (CFW V.1) ensina que Deus governa todas as coisas segundo o prazer de sua vontade para a glória de si mesmo — incluindo a frutificação de seu povo no exílio.
+§ Aplicação: Você sente que as condições da sua vida inviabilizam o que Deus prometeu? A promessa de Deus não depende do solo onde você está plantado — ela depende do Deus que planta. Israel frutificou no Egito. Deus pode frutificar você onde ninguém espera.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+Êxodo 1.7 é o primeiro ato de uma narrativa que culmina na saída do Egito — tipo maior da redenção em Cristo. Estêvão, em seu discurso (At 7.17), cita exatamente este momento: "aproximando-se o tempo da promessa que Deus jurara a Abraão, o povo crescia e se multiplicava no Egito." O que em Êxodo é multiplicação biológica torna-se, em Cristo, multiplicação espiritual: a promessa a Abraão de que "em ti serão benditas todas as nações" (Gn 12.3) encontra seu cumprimento pleno no evangelho que frutifica em toda a criação (Cl 1.6). Cristo, o verdadeiro Israel, saiu do Egito (Mt 2.15, citando Os 11.1) para que todos os que estão nele herdem a bênção abraâmica (Gl 3.14). A Igreja é a multidão que nenhum faraó pode contar — frutificando no exílio desta era, até que a terra se encha do conhecimento da glória do Senhor (Hc 2.14).
+
+DOUTRINA CENTRAL
+A fidelidade de Deus à aliança garante que sua promessa frutifica mesmo através da morte, do exílio e de circunstâncias adversas.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: A Igreja não depende da continuidade de nenhum líder humano — depende da fidelidade do Deus que planta e rega. Celebre cada geração que passa como evidência de que a aliança continua.
+▸ Para as Famílias: Ensine seus filhos que pertencem a uma linhagem com nome diante de Deus. O propósito de Deus para sua família é maior do que a vida de qualquer membro.
+▸ Para o Discípulo: Confie que onde Deus colocou você — mesmo que pareça "Egito" — é o lugar onde a promessa pode frutificar. A bênção de Deus não espera circunstâncias ideais.
+
+CONCLUSÃO
+O livro de Êxodo começa com uma lista de nomes e um cemitério. José morreu. Seus irmãos morreram. Toda aquela geração morreu. E então o texto vira a página e a promessa explode em cinco verbos de vida. Assim Deus opera: ele enterra seus instrumentos e não enterra seus propósitos. Ele deixa o inverno chegar e planta a primavera no mesmo solo. Você pode estar vivendo seu "Êgito" agora — um lugar de estranheza, de servidão, de sentir que a promessa ficou enterrada com os que se foram. Mas o Deus que disse "estes são os nomes" conhece o seu nome. E o Deus que fez Israel frutificar no exílio é o mesmo que, em Cristo, faz nascer a vida onde só havia morte. A promessa não morreu com José. Ela germinou. E ainda germina. Amém.`;
 
   if (d.dia === 83) return `PARA PREGAR · Êxodo 1:8–14
 
