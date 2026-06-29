@@ -137,10 +137,12 @@ function livroPath(slug: string, testamento: 'AT' | 'NT') {
 }
 
 function extractQuiasmaBloco(text: string, idx: number): string {
+  // Normaliza aspas tipográficas para ASCII (A' → A') para que os regex de parsing funcionem
+  const normalized = text.replace(/‘|’|ʼ/g, "'");
   const markerRe = new RegExp(`^\\[0*${idx}\\]`);
   const anyMarkerRe = /^\[\d/;
   const sepRe = /^={5,}/;
-  const lines = text.split(/\r?\n/);
+  const lines = normalized.split(/\r?\n/);
   let blockStart = -1;
   for (let i = 0; i < lines.length; i++) {
     if (markerRe.test(lines[i].trim())) { blockStart = i; break; }
@@ -228,15 +230,15 @@ function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: num
           <BookOpen size={15} color={cor} />
         </div>
         <div>
-          <div style={{ fontSize: 13, fontWeight: 900, color: cor, letterSpacing: '0.20em', textTransform: 'uppercase' }}>Estrutura Quiástica</div>
-          <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.4)', marginTop: 2 }}>{d.livro} — Perícope {pericopeIdx}</div>
+          <div style={{ fontSize: 15, fontWeight: 900, color: cor, letterSpacing: '0.20em', textTransform: 'uppercase' }}>Estrutura Quiástica</div>
+          <div style={{ fontSize: 14, color: 'rgba(255,255,255,0.4)', marginTop: 2 }}>{d.livro} — Perícope {pericopeIdx}</div>
         </div>
       </div>
       <div style={{ background: 'rgba(5,7,26,0.85)', padding: '16px 14px' }}>
         {entries.map((entry, idx) => {
           if (entry.kind === 'spacer') return <div key={idx} style={{ height: 4 }} />;
           if (entry.kind === 'title') return (
-            <div key={idx} style={{ fontSize: 'clamp(14px,2.5vw,16px)', fontWeight: 800, color: cor, lineHeight: 1.4, marginBottom: 12, marginTop: 4 }}>
+            <div key={idx} style={{ fontSize: 'clamp(16px,2.8vw,20px)', fontWeight: 800, color: cor, lineHeight: 1.4, marginBottom: 12, marginTop: 4 }}>
               {entry.text}
             </div>
           );
@@ -247,15 +249,15 @@ function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: num
           return (
             <div key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: 'clamp(5px,1.2vw,8px)', marginTop: isCenter ? 12 : (level === 0 ? 10 : 5), marginBottom: isCenter ? 12 : 4, paddingLeft: `clamp(${level * 4}px, ${level * 1.2}vw, ${level * 14}px)` }}>
               <div style={{ width: 3, minHeight: 30, borderRadius: 4, background: pal.label, flexShrink: 0, marginTop: 3 }} />
-              <div style={{ flexShrink: 0, minWidth: 'clamp(26px,4.5vw,34px)', textAlign: 'center', background: isCenter ? pal.bg : pal.bg.replace(/[\d.]+\)$/, '0.10)'), border: `1px solid ${isCenter ? pal.border : pal.border.replace(/[\d.]+\)$/, '0.35)')}`, borderRadius: 7, padding: 'clamp(4px,0.8vw,6px) clamp(5px,1vw,8px)', fontSize: 'clamp(13px,2.6vw,16px)', fontWeight: 900, color: pal.label, lineHeight: 1.3, boxShadow: isCenter ? `0 0 12px ${pal.bg}` : undefined, letterSpacing: '0.04em', alignSelf: 'flex-start' }}>
+              <div style={{ flexShrink: 0, minWidth: 'clamp(30px,4.5vw,38px)', textAlign: 'center', background: isCenter ? pal.bg : pal.bg.replace(/[\d.]+\)$/, '0.10)'), border: `1px solid ${isCenter ? pal.border : pal.border.replace(/[\d.]+\)$/, '0.35)')}`, borderRadius: 7, padding: 'clamp(5px,0.8vw,7px) clamp(6px,1vw,10px)', fontSize: 'clamp(15px,2.6vw,18px)', fontWeight: 900, color: pal.label, lineHeight: 1.3, boxShadow: isCenter ? `0 0 12px ${pal.bg}` : undefined, letterSpacing: '0.04em', alignSelf: 'flex-start' }}>
                 {badgeLetter}
               </div>
-              <div style={{ flex: 1, minWidth: 0, fontSize: 'clamp(13px,2.6vw,15px)', lineHeight: 1.6, overflowWrap: 'break-word', wordBreak: 'break-word' }}>
-                {refPart && <span style={{ color: pal.label, opacity: 0.75, fontWeight: 600, fontSize: 'clamp(10px,2vw,12px)', marginRight: 6, whiteSpace: 'nowrap' }}>{refPart}</span>}
+              <div style={{ flex: 1, minWidth: 0, fontSize: 'clamp(15px,2.6vw,17px)', lineHeight: 1.65, overflowWrap: 'break-word', wordBreak: 'break-word' }}>
+                {refPart && <span style={{ color: pal.label, opacity: 0.75, fontWeight: 600, fontSize: 'clamp(13px,2vw,14px)', marginRight: 6, whiteSpace: 'nowrap' }}>{refPart}</span>}
                 <span style={{ color: isCenter ? pal.label : 'rgba(255,255,255,0.88)', fontWeight: isCenter ? 700 : 400 }}>
                   {desc.split(/(\[[^\]]+\])/).map((part, pi) =>
                     part.startsWith('[') && part.endsWith(']')
-                      ? <span key={pi} style={{ whiteSpace: 'nowrap', unicodeBidi: 'isolate', direction: 'ltr', fontFamily: '"SBL Hebrew","Ezra SIL","Noto Serif Hebrew","Noto Sans Hebrew","Times New Roman",serif', fontSize: 'clamp(16px,3vw,19px)', fontWeight: 600, color: pal.label, letterSpacing: '0.04em', marginLeft: 4 }}>{part}</span>
+                      ? <span key={pi} style={{ whiteSpace: 'nowrap', unicodeBidi: 'isolate', direction: 'ltr', fontFamily: '"SBL Hebrew","Ezra SIL","Noto Serif Hebrew","Noto Sans Hebrew","Times New Roman",serif', fontSize: 'clamp(18px,3vw,22px)', fontWeight: 600, color: pal.label, letterSpacing: '0.04em', marginLeft: 4 }}>{part}</span>
                       : part
                   )}
                 </span>
@@ -690,18 +692,18 @@ export default function PregacaoPage() {
       <div style={{ maxWidth: 1100, margin: '0 auto', padding: 'clamp(80px,10vw,100px) clamp(16px,4vw,32px) 60px' }}>
 
         {/* Header + seletor inline */}
-        <div style={{ marginBottom: 32, display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 16, flexWrap: 'wrap' }}>
-          <div>
+        <div style={{ marginBottom: 32, display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 16, flexWrap: 'nowrap' }}>
+          <div style={{ minWidth: 0, flex: 1 }}>
             <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.26em', textTransform: 'uppercase', background: 'linear-gradient(90deg, rgba(196,160,255,1) 0%, rgba(147,197,253,1) 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', marginBottom: 6 }}>
               Pregação
             </div>
-            <div style={{ fontSize: 'clamp(20px,3.5vw,28px)', fontWeight: 800, color: C.white, letterSpacing: '-0.02em', lineHeight: 1.2 }}>
-              Estrutura quiástica & esboço homilético
+            <div style={{ fontSize: 'clamp(14px,2.4vw,24px)', fontWeight: 800, color: C.white, letterSpacing: '-0.02em', lineHeight: 1.25 }}>
+              <span style={{ fontWeight: 800, color: cor }}>{bookDays.length}</span> esboços homiléticos e estruturas espelhadas para pregação
             </div>
           </div>
 
           {/* ── Seletor compacto de livro ── */}
-          <div style={{ position: 'relative', flexShrink: 0, marginTop: 4 }} onClick={e => e.stopPropagation()}>
+          <div style={{ position: 'relative', flexShrink: 0 }} onClick={e => e.stopPropagation()}>
             <button
               onClick={() => setBookDropOpen(v => !v)}
               style={{
