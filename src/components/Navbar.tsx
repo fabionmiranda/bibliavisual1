@@ -40,11 +40,11 @@ export default function Navbar() {
 
   // Nav links ordered and grouped
   const mainLinks = [
-    { name: 'Home',       path: '/' },
     { name: 'Diagramas', path: '/metodo' },
     { name: 'Tutoriais', path: '/tutoriais' },
     { name: 'Devocional',path: '/devocional' },
     { name: 'Pregação',  path: '/pregacao' },
+    { name: 'Família',   path: '/familia' },
     { name: 'Educação',  path: '/educacao' },
     { name: 'Livraria',  path: '/livraria', activeOverride: isLibrariaActive },
   ];

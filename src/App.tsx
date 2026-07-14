@@ -16,6 +16,7 @@ import LibrariaPage from './pages/LibrariaPage';
 import EbookMateusPage from './pages/EbookMateusPage';
 import DevocionalPage from './pages/DevocionalPage';
 import PregacaoPage from './pages/PregacaoPage';
+import FamiliaPage from './pages/FamiliaPage';
 import EducacaoPage from './pages/EducacaoPage';
 import Watermark from './components/Watermark';
 import LoginPage from './pages/LoginPage';
@@ -78,6 +79,9 @@ export default function App() {
 
           {/* Pregação */}
           <Route path="/pregacao" element={<PregacaoPage />} />
+
+          {/* Família */}
+          <Route path="/familia" element={<FamiliaPage />} />
 
           {/* Educação */}
           <Route path="/educacao" element={<EducacaoPage />} />
