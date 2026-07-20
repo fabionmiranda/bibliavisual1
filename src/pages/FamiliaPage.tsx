@@ -622,8 +622,156 @@ function PericopeCard({
   );
 }
 
+// ─── Hub landing ─────────────────────────────────────────────────────
+const HUB_ITEMS = [
+  {
+    id: 'esbocos',
+    icon: '📖',
+    title: 'Esboços Bíblicos\nExpositivos',
+    desc: 'Esboços homiléticos expositivos por livro e perícope — CFW, CFB, autores reformados e aplicações para cada etapa familiar.',
+    color: 'rgba(52,211,153,1)',
+    colorB: 'rgba(52,211,153,0.18)',
+    colorBorder: 'rgba(52,211,153,0.45)',
+    available: true,
+  },
+  {
+    id: 'noivos',
+    icon: '💍',
+    title: 'Preparatório\npara Noivos',
+    desc: 'Conteúdo expositivo e reformado para noivos — fundamentos bíblicos do casamento, aliança, complementaridade e vocação conjugal.',
+    color: 'rgba(255,200,80,1)',
+    colorB: 'rgba(255,200,80,0.14)',
+    colorBorder: 'rgba(255,200,80,0.42)',
+    available: false,
+  },
+  {
+    id: 'casados',
+    icon: '🏡',
+    title: 'Para Casados',
+    desc: 'Recursos homiléticos e devocionais para fortalecer o casamento — liderança, submissão, resolução de conflitos e legado geracional.',
+    color: 'rgba(80,200,255,1)',
+    colorB: 'rgba(80,200,255,0.13)',
+    colorBorder: 'rgba(80,200,255,0.40)',
+    available: false,
+  },
+  {
+    id: 'catecismo',
+    icon: '✝️',
+    title: 'Catecismo\nFamiliar',
+    desc: 'Perguntas e respostas do Catecismo de Westminster e do Catecismo Menor — para ensinar a fé às crianças.',
+    color: 'rgba(180,120,255,1)',
+    colorB: 'rgba(180,120,255,0.13)',
+    colorBorder: 'rgba(180,120,255,0.38)',
+    available: false,
+  },
+  {
+    id: 'devocional',
+    icon: '🕯️',
+    title: 'Devocional\nFamiliar',
+    desc: 'Leituras devocionais diárias organizadas por semana — para momentos de culto familiar.',
+    color: 'rgba(255,140,80,1)',
+    colorB: 'rgba(255,140,80,0.13)',
+    colorBorder: 'rgba(255,140,80,0.38)',
+    available: false,
+  },
+  {
+    id: 'liturgia',
+    icon: '🎵',
+    title: 'Liturgia\ndo Culto Familiar',
+    desc: 'Roteiros de culto familiar — oração, cântico, leitura bíblica e aplicação para cada dia da semana.',
+    color: 'rgba(255,100,130,1)',
+    colorB: 'rgba(255,100,130,0.12)',
+    colorBorder: 'rgba(255,100,130,0.36)',
+    available: false,
+  },
+];
+
+function FamiliaHub({ onSelect }: { onSelect: (id: string) => void }) {
+  return (
+    <div style={{ minHeight: '100vh', background: C.bg, color: C.white }}>
+      <Navbar />
+      <div style={{ maxWidth: 960, margin: '0 auto', padding: 'clamp(90px,11vw,110px) clamp(16px,4vw,32px) 80px' }}>
+
+        {/* Hero */}
+        <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.55 }} style={{ marginBottom: 52, textAlign: 'center' }}>
+          <div style={{
+            display: 'inline-block',
+            fontSize: 'clamp(10px,1.4vw,12px)', fontWeight: 900, letterSpacing: '0.32em',
+            textTransform: 'uppercase', marginBottom: 16,
+            background: 'linear-gradient(90deg,rgba(52,211,153,1),rgba(110,231,183,1))',
+            WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
+          }}>
+            Recursos para a Família Cristã
+          </div>
+          <h1 style={{
+            fontSize: 'clamp(30px,5.5vw,52px)', fontWeight: 900, lineHeight: 1.1, margin: '0 0 18px',
+            background: 'linear-gradient(135deg,rgba(255,255,255,0.95) 0%,rgba(52,211,153,0.88) 55%,rgba(110,231,183,0.72) 100%)',
+            WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
+          }}>
+            Família
+          </h1>
+          <p style={{ fontSize: 'clamp(14px,2vw,17px)', color: 'rgba(255,255,255,0.52)', maxWidth: 560, margin: '0 auto', lineHeight: 1.7 }}>
+            Escolha o recurso que deseja acessar. Novos módulos serão disponibilizados em breve.
+          </p>
+        </motion.div>
+
+        {/* Cards grid */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))', gap: 20 }}>
+          {HUB_ITEMS.map((item, i) => (
+            <motion.div
+              key={item.id}
+              initial={{ opacity: 0, y: 28 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.45, delay: 0.1 + i * 0.09 }}
+              onClick={() => item.available && onSelect(item.id)}
+              style={{
+                position: 'relative',
+                borderRadius: 18,
+                background: item.available ? item.colorB : 'rgba(255,255,255,0.03)',
+                border: `1.5px solid ${item.available ? item.colorBorder : 'rgba(255,255,255,0.08)'}`,
+                padding: '28px 24px 26px',
+                cursor: item.available ? 'pointer' : 'default',
+                transition: 'transform 0.18s, box-shadow 0.18s',
+                opacity: item.available ? 1 : 0.52,
+                overflow: 'hidden',
+              }}
+              whileHover={item.available ? { scale: 1.025, boxShadow: `0 8px 40px ${item.colorBorder}` } : {}}
+              whileTap={item.available ? { scale: 0.97 } : {}}
+            >
+              {/* top accent bar */}
+              <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 3, background: `linear-gradient(90deg,${item.color} 0%,transparent 100%)`, borderRadius: '18px 18px 0 0', opacity: item.available ? 1 : 0.3 }} />
+
+              {/* Badge "Em breve" */}
+              {!item.available && (
+                <div style={{ position: 'absolute', top: 14, right: 14, fontSize: 9, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.30)', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.10)', borderRadius: 6, padding: '3px 8px' }}>
+                  Em breve
+                </div>
+              )}
+
+              <div style={{ fontSize: 34, marginBottom: 14, lineHeight: 1 }}>{item.icon}</div>
+              <div style={{ fontSize: 'clamp(16px,2.2vw,19px)', fontWeight: 800, color: item.available ? item.color : 'rgba(255,255,255,0.45)', lineHeight: 1.25, marginBottom: 12, whiteSpace: 'pre-line' }}>
+                {item.title}
+              </div>
+              <p style={{ fontSize: 'clamp(12px,1.6vw,13.5px)', color: 'rgba(255,255,255,0.48)', lineHeight: 1.65, margin: 0 }}>
+                {item.desc}
+              </p>
+
+              {item.available && (
+                <div style={{ marginTop: 20, display: 'inline-flex', alignItems: 'center', gap: 6, fontSize: 11, fontWeight: 900, letterSpacing: '0.14em', textTransform: 'uppercase', color: item.color }}>
+                  Acessar →
+                </div>
+              )}
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 // ─── Main Page ───────────────────────────────────────────────────────
 export default function FamiliaPage() {
+  const [view, setView] = useState<'hub' | 'esbocos'>('hub');
   const [selectedBook, setSelectedBook] = useState<BibleBook>(BIBLE_BOOKS[0]);
   const [pericopes, setPericopes] = useState<Pericope[]>([]);
   const [loadingPericopes, setLoadingPericopes] = useState(false);
@@ -691,11 +839,23 @@ export default function FamiliaPage() {
     { label: 'Epístolas',   t: 'NT', slugs: ['atos','romanos','1corintios','2corintios','galatas','efesios','filipenses','colossenses','1tessalonicenses','2tessalonicenses','1timoteo','2timoteo','tito','filemom','hebreus','tiago','1pedro','2pedro','1joao','2joao','3joao','judas','apocalipse'] },
   ] as const;
 
+  if (view === 'hub') return <FamiliaHub onSelect={(id) => { if (id === 'esbocos') setView('esbocos'); }} />;
+
   return (
     <div style={{ minHeight: '100vh', background: C.bg, color: C.white }} onClick={() => setBookDropOpen(false)}>
       <Navbar />
 
       <div style={{ maxWidth: 1100, margin: '0 auto', padding: 'clamp(80px,10vw,100px) clamp(16px,4vw,32px) 60px' }}>
+
+        {/* ── Voltar ao hub ── */}
+        <div style={{ marginBottom: 28 }}>
+          <button
+            onClick={() => setView('hub')}
+            style={{ display: 'inline-flex', alignItems: 'center', gap: 7, fontSize: 12, fontWeight: 900, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(52,211,153,0.75)', background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
+          >
+            ← Voltar
+          </button>
+        </div>
 
         {/* ── Hero section ── */}
         <div style={{ marginBottom: 44 }}>
