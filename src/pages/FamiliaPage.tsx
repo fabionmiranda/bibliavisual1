@@ -654,36 +654,6 @@ const HUB_ITEMS = [
     colorBorder: 'rgba(80,200,255,0.40)',
     available: false,
   },
-  {
-    id: 'catecismo',
-    icon: '✝️',
-    title: 'Catecismo\nFamiliar',
-    desc: 'Perguntas e respostas do Catecismo de Westminster e do Catecismo Menor — para ensinar a fé às crianças.',
-    color: 'rgba(180,120,255,1)',
-    colorB: 'rgba(180,120,255,0.13)',
-    colorBorder: 'rgba(180,120,255,0.38)',
-    available: false,
-  },
-  {
-    id: 'devocional',
-    icon: '🕯️',
-    title: 'Devocional\nFamiliar',
-    desc: 'Leituras devocionais diárias organizadas por semana — para momentos de culto familiar.',
-    color: 'rgba(255,140,80,1)',
-    colorB: 'rgba(255,140,80,0.13)',
-    colorBorder: 'rgba(255,140,80,0.38)',
-    available: false,
-  },
-  {
-    id: 'liturgia',
-    icon: '🎵',
-    title: 'Liturgia\ndo Culto Familiar',
-    desc: 'Roteiros de culto familiar — oração, cântico, leitura bíblica e aplicação para cada dia da semana.',
-    color: 'rgba(255,100,130,1)',
-    colorB: 'rgba(255,100,130,0.12)',
-    colorBorder: 'rgba(255,100,130,0.36)',
-    available: false,
-  },
 ];
 
 function FamiliaHub({ onSelect }: { onSelect: (id: string) => void }) {
