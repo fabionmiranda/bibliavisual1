@@ -901,6 +901,263 @@ const MANDATOS_DEF = [
   },
 ];
 
+// ─── Diagrama Reino · Pacto · Mediadores — didático ──────────────────
+const RPM_DEFS = [
+  {
+    id: 'reino',
+    cor: GOLD,
+    icone: '👑',
+    titulo: 'Reino',
+    subtitulo: 'O Governo Soberano de Deus',
+    keywords: 'Soberania · Governo · Senhorio · Criação · Escatologia',
+    versos: [
+      { ref: 'Salmo 103.19', texto: '"O Senhor estabeleceu nos céus o seu trono, e o seu reino domina sobre tudo."' },
+      { ref: 'Mateus 6.33', texto: '"Buscai primeiro o reino de Deus e a sua justiça."' },
+      { ref: 'Apocalipse 11.15', texto: '"O reino do mundo se tornou o reino do nosso Senhor e do seu Cristo."' },
+    ],
+    definicao: 'Reino (hebraico malkût; grego basileia) é o conceito que descreve o governo soberano de Deus sobre toda a realidade — criação, história e redenção. Não é um território geográfico, mas o exercício ativo do senhorio divino sobre tudo o que existe. O Reino de Deus não começou na encarnação de Cristo: ele é eterno (Sl 103.19), mas foi inaugurado de forma decisiva em Jesus (Mc 1.15) e será consumado na nova criação (Ap 21.1-5).\n\nPara o casal cristão, o Reino significa que o casamento nunca é um projeto privado. Ele existe sob o governo de Deus, para os propósitos de Deus, dentro da história da redenção que Deus dirige. Cada decisão conjugal — finanças, vocação, filhos, moradia — é um ato dentro do Reino, não fora dele.',
+    vanGroningen: 'Van Groningen demonstra que o conceito de Reino é o fio condutor de toda a revelação messiânica no Antigo Testamento. Deus governa (Reino) por meio de alianças (Pacto) e por intermédio de agentes representativos (Mediadores). O casamento cristão ocupa o lugar dos "agentes do Reino": um casal fiel não apenas vive para si — ele participa, em escala doméstica, da missão universal do Rei.\n\nIsso significa que o fracasso conjugal é sempre também um fracasso de testemunho do Reino. E que a graça que restaura casamentos é sempre também uma demonstração pública do poder redentor do Rei.',
+    referencias: [
+      'VAN GRONINGEN, Gerard. Messianic Revelation in the Old Testament. Grand Rapids: Baker Book House, 1990. p. 55-89.',
+      'LADD, George Eldon. Teologia do Novo Testamento. São Paulo: Hagnos, 2001. p. 57-104.',
+      'HORTON, Michael. Introducing Covenant Theology. Grand Rapids: Baker Books, 2006. p. 13-38.',
+    ],
+  },
+  {
+    id: 'pacto',
+    cor: SPIRIT,
+    icone: '📜',
+    titulo: 'Pacto (Aliança)',
+    subtitulo: 'O Compromisso Solene de Deus com Seu Povo',
+    keywords: 'Promessa · Fidelidade · Testemunho · Juramento · Graça',
+    versos: [
+      { ref: 'Gênesis 9.9', texto: '"Eis que eu estabeleço a minha aliança convosco e com a vossa descendência depois de vós."' },
+      { ref: 'Malaquias 2.14', texto: '"Ela é tua companheira e a mulher da tua aliança."' },
+      { ref: 'Hebreus 8.6', texto: '"Ele é o mediador de uma melhor aliança, a qual foi estabelecida sobre melhores promessas."' },
+    ],
+    definicao: 'Pacto (hebraico berit; grego diatheke) é o compromisso solene pelo qual Deus se vincula ao Seu povo com promessas e responsabilidades — mas sempre com Ele mesmo como fiador e garantidor. Diferentemente de um contrato (que pode ser rompido quando uma das partes falha), o pacto bíblico é unilateral na iniciativa (Deus toma a iniciativa), bilateral na resposta (o povo é chamado a obedecer), e eterno na durabilidade (Deus é fiel mesmo quando o povo falha).\n\nAs grandes alianças bíblicas formam uma estrutura progressiva: com Noé (toda a criação), com Abraão (a semente prometida), com Moisés/Israel (a lei e a terra), com Davi (o rei eterno) e, supremamente, a Nova Aliança em Cristo (Jr 31.31-34; Lc 22.20) — que cumpre e supera todas as anteriores.\n\nO casamento é explicitamente chamado de aliança em Malaquias 2.14. Isso significa que os votos matrimoniais não são promessas entre duas pessoas — são um pacto feito diante de Deus, testemunhado por Ele, e sustentado pela graça da Nova Aliança.',
+    vanGroningen: 'Para Van Groningen, as alianças não são episódios isolados na história bíblica, mas uma estrutura orgânica e progressiva — cada aliança revelando mais do propósito redentor de Deus. O casamento cristão não é apenas uma instituição social inspirada na Bíblia: é uma manifestação concreta da aliança de Deus com a humanidade.\n\nIsso tem uma implicação pastoral profunda: quando um casal está em crise, a pergunta certa não é "meus sentimentos ainda estão lá?" mas "o Deus que fez esta aliança ainda é fiel?" A resposta é sempre sim — e é isso que sustenta o casamento na escuridão.',
+    referencias: [
+      'VAN GRONINGEN, Gerard. Messianic Revelation in the Old Testament. Grand Rapids: Baker Book House, 1990. p. 100-145.',
+      'ROBERTSON, O. Palmer. O Cristo das Alianças. São Paulo: Cultura Cristã, 2010. p. 3-54.',
+      'BERKHOF, Louis. Teologia Sistemática. São Paulo: Cultura Cristã, 2014. p. 285-330.',
+    ],
+  },
+  {
+    id: 'mediadores',
+    cor: CULT,
+    icone: '🤝',
+    titulo: 'Mediadores (Agentes)',
+    subtitulo: 'Representantes Humanos do Governo de Deus',
+    keywords: 'Imagem · Representação · Vocação · Casal · Missão · Cristo',
+    versos: [
+      { ref: 'Gênesis 1.26-27', texto: '"Façamos o homem à nossa imagem... e domine sobre os peixes do mar, as aves do céu..."' },
+      { ref: '1 Timóteo 2.5', texto: '"Há um só Deus e um só mediador entre Deus e os homens, Jesus Cristo homem."' },
+      { ref: 'Efésios 5.25', texto: '"Maridos, amai vossas mulheres, assim como Cristo amou a Igreja e a si mesmo se entregou por ela."' },
+    ],
+    definicao: 'Mediadores (ou agentes) são aqueles que, na estrutura pactual, representam Deus diante do mundo e o mundo diante de Deus. Na revelação progressiva, Deus governa Seu Reino por meio de agentes humanos representativos: Adão (como vice-rei da criação), Noé (preservando a semente humana), Abraão (pai da fé), Moisés (mediador da Lei), Davi (tipo do Rei eterno) — todos apontando para Cristo, o único Mediador definitivo e perfeito (1 Tm 2.5).\n\nO casal cristão ocupa o lugar de agentes do Reino — não mediadores de salvação (função exclusiva de Cristo), mas representantes do governo de Deus na criação: na família, no trabalho, na cultura, na missão. A analogia de Efésios 5 (marido-esposa refletindo Cristo-Igreja) mostra que o casamento é, em si mesmo, um ato de mediação: ele torna visível ao mundo o amor de Cristo pela Igreja.\n\nIsso exige humildade: os agentes não governam por mérito próprio, mas por delegação. E exige fidelidade: a missão do casal é revelar o caráter do Rei, não o seu próprio.',
+    vanGroningen: 'Van Groningen dedica uma grande parte de sua obra ao conceito de "revelação messiânica" — a ideia de que cada mediador humano no Antigo Testamento é um elo na cadeia que conduz ao Messias. O casal cristão, então, não é apenas beneficiário da aliança: é instrumento dela. A família que vive o evangelho em casa está cumprindo, em micro-escala, a função que Israel deveria ter cumprido entre as nações.\n\nIsso tem consequências práticas: o modo como o marido ama a esposa, o modo como a esposa honra o marido, o modo como os filhos são educados — tudo isso é uma declaração pública sobre quem é Deus. O lar cristão é apologética viva.',
+    referencias: [
+      'VAN GRONINGEN, Gerard. Messianic Revelation in the Old Testament. Grand Rapids: Baker Book House, 1990. p. 201-268.',
+      'VOS, Geerhardus. Teologia Bíblica: Antigo e Novo Testamento. São Paulo: Cultura Cristã, 2010. p. 143-180.',
+      'CALVINO, João. As Institutas da Religião Cristã. São Paulo: Cultura Cristã, 2006. v. 1, p. 227-258.',
+    ],
+  },
+];
+
+function DiagramaRPM() {
+  const W = 900, H = 500;
+  const cx = W / 2, cy = H / 2 + 10;
+
+  // Três nós em linha horizontal com arcos de conexão
+  const nos = [
+    { id: 'reino',      x: 160,    y: cy,      cor: GOLD,   icone: '👑', label: 'REINO' },
+    { id: 'pacto',      x: cx,     y: cy - 60, cor: SPIRIT, icone: '📜', label: 'PACTO' },
+    { id: 'mediadores', x: W - 160, y: cy,     cor: CULT,   icone: '🤝', label: 'MEDIADORES' },
+  ];
+
+  const arrows = [['arwRg',GOLD],['arwSp',SPIRIT],['arwCl',CULT],['arwW','rgba(255,255,255,0.45)']] as [string,string][];
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 24 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, delay: 0.12 }}
+      style={{ marginBottom: 40, borderRadius: 22, background: 'rgba(255,255,255,0.022)', border: '1px solid rgba(255,255,255,0.08)', padding: '32px 20px 28px' }}
+    >
+      {/* Cabeçalho */}
+      <div style={{ textAlign: 'center', marginBottom: 4 }}>
+        <span style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.26em', textTransform: 'uppercase', color: GOLD }}>
+          Diagrama Didático · Van Groningen
+        </span>
+      </div>
+      <div style={{ textAlign: 'center', marginBottom: 6 }}>
+        <span style={{ fontSize: 'clamp(17px,2.6vw,22px)', fontWeight: 900, color: 'rgba(255,255,255,0.90)' }}>
+          Reino · Pacto · Mediadores
+        </span>
+      </div>
+      <div style={{ textAlign: 'center', marginBottom: 24 }}>
+        <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.38)', fontStyle: 'italic' }}>
+          A estrutura pela qual Deus governa a história da redenção
+        </span>
+      </div>
+
+      {/* SVG */}
+      <div style={{ width: '100%', maxWidth: 900, margin: '0 auto' }}>
+        <svg viewBox={`0 0 ${W} ${H}`} style={{ width: '100%', height: 'auto', display: 'block' }}>
+          <defs>
+            <radialGradient id="rBg" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stopColor="rgba(255,200,80,0.05)" />
+              <stop offset="100%" stopColor="rgba(5,7,26,0)" />
+            </radialGradient>
+            <filter id="rGlow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="8" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+            <filter id="rSoft" x="-80%" y="-80%" width="260%" height="260%">
+              <feGaussianBlur stdDeviation="18" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+            {arrows.map(([id,col]) => (
+              <marker key={id} id={id} markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto">
+                <path d="M0,0 L0,7 L9,3.5 z" fill={col} opacity="0.9"/>
+              </marker>
+            ))}
+          </defs>
+
+          <ellipse cx={cx} cy={cy} rx="430" ry="230" fill="url(#rBg)" />
+
+          {/* ── Moldura HISTÓRIA DA REDENÇÃO ── */}
+          <rect x="14" y="14" width={W-28} height={H-28} rx="24" fill="none" stroke={GOLD} strokeWidth="1.2" strokeDasharray="6 5" opacity="0.20"/>
+          <text x={cx} y="11" textAnchor="middle" fill={GOLD} fontSize="11" fontWeight="900" letterSpacing="3.5" opacity="0.55">HISTÓRIA DA REDENÇÃO</text>
+          <text x={cx} y={H-6} textAnchor="middle" fill="rgba(255,255,255,0.25)" fontSize="9.5" letterSpacing="1.5" fontStyle="italic">Gênesis → Éxodo → Profetas → Cristo → Nova Criação</text>
+
+          {/* ── Curva de cima: Reino governa Pacto ── */}
+          <path d={`M ${nos[0].x} ${nos[0].y - 52} Q ${cx} ${cy - 180} ${nos[1].x} ${nos[1].y - 52}`}
+            fill="none" stroke={GOLD} strokeWidth="2" strokeDasharray="7 4" opacity="0.45"
+            markerEnd="url(#arwRg)" />
+          <text x={cx} y={cy - 166} textAnchor="middle" fill={GOLD} fontSize="10.5" fontWeight="700" opacity="0.70" letterSpacing="1">governa por meio de</text>
+
+          {/* ── Curva esq: Pacto estabelece Mediadores ── */}
+          <path d={`M ${nos[1].x + 52} ${nos[1].y} Q ${cx + 140} ${cy - 20} ${nos[2].x} ${nos[2].y - 56}`}
+            fill="none" stroke={SPIRIT} strokeWidth="2" strokeDasharray="7 4" opacity="0.45"
+            markerEnd="url(#arwSp)" />
+          <text x={cx + 100} y={cy - 55} textAnchor="middle" fill={SPIRIT} fontSize="10.5" fontWeight="700" opacity="0.70" letterSpacing="1">estabelece</text>
+
+          {/* ── Curva dir: Mediadores refletem o Reino ── */}
+          <path d={`M ${nos[2].x} ${nos[2].y + 56} Q ${cx} ${cy + 160} ${nos[0].x} ${nos[0].y + 56}`}
+            fill="none" stroke={CULT} strokeWidth="2" strokeDasharray="7 4" opacity="0.45"
+            markerEnd="url(#arwCl)" />
+          <text x={cx} y={cy + 152} textAnchor="middle" fill={CULT} fontSize="10.5" fontWeight="700" opacity="0.70" letterSpacing="1">refletem e servem ao</text>
+
+          {/* ── Cristo — elemento central ── */}
+          <ellipse cx={cx} cy={cy + 18} rx="92" ry="46" fill="rgba(255,200,80,0.10)" stroke={GOLD} strokeWidth="1.8" filter="url(#rGlow)" />
+          <text x={cx} y={cy + 6} textAnchor="middle" fontSize="22">✝</text>
+          <text x={cx} y={cy + 24} textAnchor="middle" fill={GOLD} fontSize="12.5" fontWeight="900" letterSpacing="1">CRISTO</text>
+          <text x={cx} y={cy + 40} textAnchor="middle" fill="rgba(255,200,80,0.55)" fontSize="9.5" fontStyle="italic">único Mediador · 1 Tm 2.5</text>
+
+          {/* ── Linhas retas de Cristo para cada nó ── */}
+          {nos.map((n, i) => {
+            const dx = n.x - cx, dy = (n.y + (i===1?-18:18)) - (cy+18);
+            const len = Math.sqrt(dx*dx+dy*dy);
+            const off = i === 1 ? 56 : 64;
+            return (
+              <line key={n.id}
+                x1={cx + dx/len*94} y1={cy+18 + dy/len*48}
+                x2={n.x - dx/len*off} y2={(n.y+(i===1?-18:18)) - dy/len*off}
+                stroke={n.cor} strokeWidth="1.5" opacity="0.35" strokeDasharray="4 4" />
+            );
+          })}
+
+          {/* ── Nós ── */}
+          {nos.map((n) => (
+            <g key={n.id}>
+              <circle cx={n.x} cy={n.y} r="70" fill={n.cor} opacity="0.05" filter="url(#rSoft)"/>
+              <circle cx={n.x} cy={n.y} r="56" fill={`${n.cor}14`} stroke={n.cor} strokeWidth="2" filter="url(#rGlow)"/>
+              <circle cx={n.x} cy={n.y} r="40" fill={`${n.cor}08`} stroke={n.cor} strokeWidth="0.8" opacity="0.5"/>
+              <text x={n.x} y={n.y - 14} textAnchor="middle" fontSize="24">{n.icone}</text>
+              <text x={n.x} y={n.y + 8} textAnchor="middle" fill={n.cor} fontSize="13" fontWeight="900" letterSpacing="0.5">{n.label}</text>
+              {/* Linhas de referência abaixo de cada círculo */}
+              <text x={n.x} y={n.y + 74} textAnchor="middle" fill="rgba(255,255,255,0.40)" fontSize="9.5" fontStyle="italic">
+                {n.id === 'reino' ? 'Sl 103.19' : n.id === 'pacto' ? 'Ml 2.14' : 'Gn 1.26-27'}
+              </text>
+            </g>
+          ))}
+
+          {/* Rótulo da linha inferior: "Casamento — agentes do Reino" */}
+          <rect x={cx-120} y={cy + 162} width="240" height="22" rx="6" fill="rgba(5,7,26,0.8)" />
+          <text x={cx} y={cy + 177} textAnchor="middle" fill={CULT} fontSize="10" fontWeight="700" letterSpacing="1" opacity="0.80">CASAMENTO — agentes do Reino no mundo</text>
+
+          {/* Ref Van Groningen */}
+          <text x={W-18} y={H-16} textAnchor="end" fill="rgba(255,255,255,0.20)" fontSize="9" fontStyle="italic">
+            Van Groningen (1990)
+          </text>
+        </svg>
+      </div>
+
+      {/* ── Cards de definição ── */}
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 20, marginTop: 28 }}>
+        {RPM_DEFS.map((d, i) => (
+          <motion.div
+            key={d.id}
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.42, delay: 0.28 + i * 0.11 }}
+            style={{ borderRadius: 16, background: `${d.cor}0c`, border: `1.5px solid ${d.cor}30`, borderLeft: `4px solid ${d.cor}`, padding: '22px 24px' }}
+          >
+            {/* Header */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 14, flexWrap: 'wrap' }}>
+              <span style={{ fontSize: 28 }}>{d.icone}</span>
+              <div>
+                <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: d.cor, marginBottom: 2 }}>{d.titulo}</div>
+                <div style={{ fontSize: 'clamp(13px,1.8vw,15px)', fontWeight: 700, color: 'rgba(255,255,255,0.75)', marginBottom: 2 }}>{d.subtitulo}</div>
+                <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.38)', fontStyle: 'italic' }}>{d.keywords}</div>
+              </div>
+            </div>
+
+            {/* Versos */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 8, marginBottom: 16 }}>
+              {d.versos.map((v, vi) => (
+                <div key={vi} style={{ padding: '10px 14px', borderRadius: 9, background: `${d.cor}0e`, border: `1px solid ${d.cor}25` }}>
+                  <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.16em', textTransform: 'uppercase', color: d.cor, marginBottom: 4 }}>{v.ref}</div>
+                  <div style={{ fontSize: 'clamp(14px,1.9vw,16px)', color: 'rgba(255,255,255,0.82)', lineHeight: 1.72, fontStyle: 'italic' }}>{v.texto}</div>
+                </div>
+              ))}
+            </div>
+
+            {/* Definição */}
+            <div style={{ fontSize: 'clamp(14px,1.9vw,16px)', color: 'rgba(255,255,255,0.82)', lineHeight: 1.90, marginBottom: 16, whiteSpace: 'pre-line' }}>
+              {d.definicao}
+            </div>
+
+            {/* Van Groningen */}
+            <div style={{ padding: '14px 16px', borderRadius: 10, background: 'rgba(255,255,255,0.035)', border: '1px solid rgba(255,255,255,0.09)', marginBottom: 14 }}>
+              <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.38)', marginBottom: 7 }}>
+                Van Groningen — Contribuição Teológica
+              </div>
+              <div style={{ fontSize: 'clamp(13px,1.8vw,15px)', color: 'rgba(255,255,255,0.68)', lineHeight: 1.88, fontStyle: 'italic', whiteSpace: 'pre-line' }}>
+                {d.vanGroningen}
+              </div>
+            </div>
+
+            {/* Referências ABNT */}
+            <div>
+              <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: d.cor, opacity: 0.70, marginBottom: 7 }}>
+                Referências (ABNT)
+              </div>
+              {d.referencias.map((ref, ri) => (
+                <div key={ri} style={{ fontSize: 'clamp(11px,1.5vw,12.5px)', color: 'rgba(255,255,255,0.38)', lineHeight: 1.72, padding: '5px 0', borderBottom: ri < d.referencias.length - 1 ? '1px solid rgba(255,255,255,0.05)' : 'none' }}>
+                  {ref}
+                </div>
+              ))}
+            </div>
+          </motion.div>
+        ))}
+      </div>
+    </motion.div>
+  );
+}
+
 function DiagramaMandatos() {
   const W = 900, H = 680;
   const cx = W / 2, cy = H / 2 + 20;
@@ -1140,8 +1397,11 @@ export function AulaInaugural() {
           </p>
         </motion.div>
 
-        {/* ── Diagrama Van Groningen ── */}
+        {/* ── Diagrama Van Groningen — Os 3 Mandatos ── */}
         <DiagramaMandatos />
+
+        {/* ── Diagrama Didático — Reino · Pacto · Mediadores ── */}
+        <DiagramaRPM />
 
         {/* Boas-vindas */}
         <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.08 }} style={{ marginBottom: 32, padding: '18px 22px', borderRadius: 14, background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.09)' }}>
