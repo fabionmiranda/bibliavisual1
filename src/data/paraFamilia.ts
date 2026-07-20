@@ -55,7 +55,9 @@ Deus é o Criador soberano que delegou à família humana a mordomia do mundo e 
 APLICAÇÕES PARA A FAMÍLIA
 ▸ Para os Pais: Esta semana, use um momento à mesa para perguntar: "O que na natureza nos mostra que Deus é grande?" Deixe cada filho responder e ore de ação de graças pelo que eles citarem.
 ▸ Para os Filhos: Escolha uma coisa da criação que te parece incrível — um inseto, uma montanha, uma tempestade — e pesquise como ela funciona. Depois agradeça a Deus por ter feito isso.
+▸ Para Noivos: Antes de casar, conversem sobre como guardarão o Dia do Senhor juntos — é no ritmo da adoração semanal que o casal reflete a ordem que Deus colocou na criação.
 ▸ Para o Casal: Conversem sobre como vocês vão guardar o próximo Dia do Senhor. Planejem juntos o culto, o descanso e uma refeição em família — sem telas, sem trabalho.
+▸ Para os Avós: Vocês são guardiões da memória sagrada da família. Esta semana, compartilhem com netos ou filhos adultos como o ritmo do Dia do Senhor moldou suas vidas ao longo das gerações.
 
 DINÂMICA FAMILIAR
 1. Leiam juntos Gênesis 1:1 e 2:1-3. Peça a cada membro da família que leia um versículo em voz alta.
@@ -124,7 +126,9 @@ O Deus que provê abundantemente impõe limites amorosos porque a criatura so fl
 APLICAÇÕES PARA A FAMÍLIA
 ▸ Para os Pais: Esta semana, ao dar uma regra, expliquem o porquê por trás dela. Não "porque eu disse", mas "porque eu te amo e quero te proteger de..."
 ▸ Para os Filhos: Escolha uma regra da sua casa que você acha difícil de obedecer. Pergunte a um de seus pais: "Por que está regra existe?" Ouça com atenção.
-▸ Para o Casal: Revisem juntos as regras do lar. Alguma precisa ser ajustada? Alguma esta faltando? Decidam juntos — e apliquem juntos.
+▸ Para Noivos: Antes do casamento, definam juntos os "limites amorosos" do lar que estão prestes a construir — finanças, amizades, telas, tempo com Deus. Limites são atos de amor, não de desconfiança.
+▸ Para o Casal: Revisem juntos as regras do lar. Alguma precisa ser ajustada? Alguma está faltando? Decidam juntos — e apliquem juntos.
+▸ Para os Avós: A experiência de vida de vocês é um tesouro. Compartilhem com filhos e netos quais limites que estabeleceram no lar os protegeram e quais, por falta deles, trouxeram dor.
 
 DINÂMICA FAMILIAR
 1. Leiam juntos Gênesis 2:15-17. Deixem as crianças apontar no texto onde está a provisão e onde está o limite.
@@ -193,7 +197,9 @@ Deus institui o casamento como aliança de complementaridade e unidade permanent
 APLICAÇÕES PARA A FAMÍLIA
 ▸ Para os Pais: Esta semana, demonstrem afeto um pelo outro diante dos filhos — um abraço, um elogio público, uma demonstração de respeito. Deixem os filhos ver o casamento que vocês têm.
 ▸ Para os Filhos: Agradeca a Deus pelo casamento dos seus pais. Ore pedindo que Deus os ajude a se amar como Cristo amou a Igreja.
-▸ Para o Casal: Tivem uma "noite de aliança" — relembrem seus votos matrimoniais, orem juntos e renovem o compromisso. Se tiverem filhos, faca isso na frente deles.
+▸ Para Noivos: Gn 2:24 é o texto de vocês. Meditem juntos sobre o que significa "deixar, unir e ser uma só carne" — especialmente o "deixar": quais dependências emocionais, financeiras ou familiares precisam ser conscientemente entregues antes do altar?
+▸ Para o Casal: Tenham uma "noite de aliança" — relembrem seus votos matrimoniais, orem juntos e renovem o compromisso. Se tiverem filhos, façam isso na frente deles.
+▸ Para os Avós: O casamento de vocês é um testemunho vivo de aliança para toda a família. Esta semana, narrem aos netos a história de como se conheceram e por que escolheram ficar juntos — a memória da fidelidade edifica as gerações.
 
 DINÂMICA FAMILIAR
 1. Leiam juntos Gênesis 2:18-24. Peca as crianças que identifiquem o que Deus disse que "não era bom" e o que Ele fez a respeito.
@@ -262,7 +268,9 @@ A queda tornou toda família pecadora e envergonhada, mas o Deus que buscou Adã
 APLICAÇÕES PARA A FAMÍLIA
 ▸ Para os Pais: Crie uma cultura de confissao em casa. Não puna a honestidade — recompense-a. Quando seu filho confessa algo errado, a resposta deve ser graça antes de disciplina.
 ▸ Para os Filhos: Esta semana, se você errar algo, não se esconda. Vá até um dos seus pais e diga: "Errei. Preciso de ajuda." Você vai ver o que acontece.
-▸ Para o Casal: Pratiquem confissao mútua regularmente — não apenas erros grandes, mas as atitudes pequenas que magoam. Usem as palavras: "Eu errei. Me perdoa?"
+▸ Para Noivos: A queda revelou que toda família carregará feridas. Antes de casar, conversem honestamente sobre padrões de pecado, traumas e mecanismos de defesa que cada um traz — e comprometam-se a buscar graça juntos, não a se esconder um do outro.
+▸ Para o Casal: Pratiquem confissão mútua regularmente — não apenas erros grandes, mas as atitudes pequenas que magoam. Usem as palavras: "Eu errei. Me perdoa?"
+▸ Para os Avós: Famílias carregam cicatrizes de gerações. Se há reconciliações pendentes em sua família, vocês têm autoridade e sabedoria para iniciar o processo. Uma palavra de perdão de um avô pode libertar filhos e netos.
 
 DINÂMICA FAMILIAR
 1. Leiam juntos Gênesis 3:1-10 e 3:15 e 3:21. Pause nos três momentos-chave: a tentação, o esconderijo e a busca de Deus.
@@ -331,7 +339,9 @@ O pecado que "jaz a porta" de cada família pode ser dominado — não por forç
 APLICAÇÕES PARA A FAMÍLIA
 ▸ Para os Pais: Esta semana, quando seus filhos brigarem, transforme o momento em lição de evangelho: "O que Jesus faz quando nos machucamos Ele? O que você vai fazer agora?"
 ▸ Para os Filhos: Peça desculpas a um irmão ou amigo com quem você brigou. Diga: "Eu errei. Me perdoa?" Não espere que eles peçam primeiro.
-▸ Para o Casal: Ha algo entre vocês que ainda não foi perdoado completamente? Esta semana, um dos dois da o primeiro passo — não porque o outro merece, mas porque Cristo perdoou você primeiro.
+▸ Para Noivos: O conflito entre Caim e Abel revela que o pecado "está à espreita" em todo relacionamento íntimo. Antes de casar, combinem como vão lidar com conflitos: com palavras, não silêncio; com perdão, não acúmulo.
+▸ Para o Casal: Há algo entre vocês que ainda não foi perdoado completamente? Esta semana, um dos dois dá o primeiro passo — não porque o outro merece, mas porque Cristo perdoou você primeiro.
+▸ Para os Avós: Vocês já viram conflitos familiares destruírem relacionamentos por gerações. Partilhem com os mais jovens o que aprenderam sobre pedir e conceder perdão — e se há rivalidades antigas na família, sejam os primeiros a estender a mão.
 
 DINÂMICA FAMILIAR
 1. Leiam juntos Gênesis 4:3-10. Peça que cada um identifique: qual foi o erro de Caim ANTES de matar Abel?
@@ -400,7 +410,9 @@ A vida é breve e a morte é certa — mas o pai que anda com Deus como Enoque d
 APLICAÇÕES PARA A FAMÍLIA
 ▸ Para os Pais: Esta semana, sentem-se com seus filhos e contem-lhes a história de fe de seus próprios pais e avos. Não deixe que a história pactual da sua família morra com você.
 ▸ Para os Filhos: Pergunte a um avo ou adulto cristão: "Como Deus entrou na sua vida? Quando você começou a 'andar com Deus'?"
-▸ Para o Casal: Escrevam juntos uma "carta de legado" — o que vocês querem que seus filhos saibam sobre Deus é sobre a fe de vocês quando vocês não estiverem mais aqui.
+▸ Para Noivos: O legado começa antes dos filhos. Ainda noivos, conversem sobre que tipo de lar espiritual querem construir — que hábitos de oração, leitura bíblica e adoração serão a espinha dorsal da família que formarão.
+▸ Para o Casal: Escrevam juntos uma "carta de legado" — o que vocês querem que seus filhos saibam sobre Deus e sobre a fé de vocês quando vocês não estiverem mais aqui.
+▸ Para os Avós: Vocês são o elo vivo entre gerações. Como Enoque, a herança mais preciosa que podem deixar é "andar com Deus" diante dos netos. Esta semana, convide um neto para um momento de oração — deixe-o ver como você fala com Deus.
 
 DINÂMICA FAMILIAR
 1. Leiam juntos Gênesis 5:1-5 e 5:21-24 e 5:28-29. Peça que cada um conte o "refrão" que aparece — "e morreu."
@@ -469,7 +481,9 @@ Deus salvou Noé e sua família por graça soberana — e a arca aponta para Cri
 APLICAÇÕES PARA A FAMÍLIA
 ▸ Para os Pais: Esta semana, conversem com seus filhos sobre o que significa "estar em Cristo" — que é a arca real. Não basta conhecer a história do diluvio; precisa estar dentro da Arca.
 ▸ Para os Filhos: A arca so tinha UMA porta — assim como Jesus disse "Eu sou o caminho." Você entrou por essa porta?
+▸ Para Noivos: Noé construiu a arca por fé, antes que a chuva caísse. Noivos, invistam agora — antes da tempestade — em fundamentos espirituais sólidos: comunidade de fé, aconselhamento pré-matrimonial, disciplinas espirituais compartilhadas.
 ▸ Para o Casal: Como líderes da família (como Noé), como vocês estão conduzindo todos os membros para dentro da arca de Cristo?
+▸ Para os Avós: A graça de Deus a Noé foi coletiva — "Noé e sua casa." Orem especificamente e com perseverança por cada neto pelo nome, pedindo que Deus os preserve dentro da arca que é Cristo. Nunca subestimem o poder da intercessão dos avós.
 
 DINÂMICA FAMILIAR
 1. Leiam juntos Gênesis 6:5, 6:8, 6:22, e 8:1. Identifiquem o contraste: maldade do mundo X graça para Noé X obediência de Noé X lembranca de Deus.
@@ -538,7 +552,9 @@ Deus faz alianças com famílias — não apenas indivíduos — e o arco-iris n
 APLICAÇÕES PARA A FAMÍLIA
 ▸ Para os Pais: Aprendam e ensinem as promessas aliancias de Deus para a família. Memorize juntos textos como Is 44:3, At 2:39, Dt 6:4-7.
 ▸ Para os Filhos: Esta semana, quando ver um arco-iris, tire uma foto e envie para um membro da família com a mensagem: "Deus é fiel — para sempre!"
-▸ Para o Casal: Renovem juntos os votos da aliança conjugal — reafirmem que o casamento de vocês têm Deus como testemunha e guardião.
+▸ Para Noivos: O arco-íris é o sinal de uma promessa que Deus mantém mesmo quando o ser humano falha. Que o casamento de vocês seja construído sobre as promessas de Deus — não sobre sentimentos que oscilam, mas sobre fidelidade que persevera porque Ele é fiel.
+▸ Para o Casal: Renovem juntos os votos da aliança conjugal — reafirmem que o casamento de vocês tem Deus como testemunha e guardião.
+▸ Para os Avós: As promessas alianciosas de Deus são "para vocês e para os seus filhos" (At 2:39). Esta semana, leiam com um neto a história do arco-íris e testemunhem: "Deus tem sido fiel para a nossa família. Eu vi isso."
 
 DINÂMICA FAMILIAR
 1. Leiam juntos Gênesis 9:8-17. Identifiquem: (a) com quem Deus faz a aliança? (b) qual é o sinal? (c) quem vai "se lembrar"?
@@ -607,7 +623,9 @@ A presunção de Babel revela o pecado de toda família que vive para o próprio
 APLICAÇÕES PARA A FAMÍLIA
 ▸ Para os Pais: Esta semana, converse com seus filhos sobre onde vocês moram como missão: "Deus nos colocou aqui porque tem alguém neste bairro que precisa do evangelho. Quem e essa pessoa?"
 ▸ Para os Filhos: Escolha um colega da escola que é de cultura ou origem diferente e convide-o para fazer algo juntos. A missão começa na amizade.
+▸ Para Noivos: Babel revela o perigo de construir um legado centrado no próprio nome. Antes de casar, decidam: o propósito da família que vão formar será glorificar o Nome de Deus ou celebrar o nome de vocês? Essa escolha moldará tudo.
 ▸ Para o Casal: Discutam juntos: "Qual 'Babel' nossa família está tentando construir — e como podemos redirecionar essa energia para o Nome de Deus?"
+▸ Para os Avós: Vocês chegaram à etapa da vida em que o "nome" da família já tem história. Usem essa influência para missão, não para orgulho. Esta semana, contem aos netos como Deus usou sua família para o reino — e desafiem-nos a continuar esse legado.
 
 DINÂMICA FAMILIAR
 1. Leiam juntos Gênesis 11:1-9. Peça que cada um identifique: (a) o que as pessoas queriam? (b) o que Deus fez? (c) por que?
