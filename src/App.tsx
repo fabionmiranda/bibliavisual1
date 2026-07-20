@@ -16,7 +16,7 @@ import LibrariaPage from './pages/LibrariaPage';
 import EbookMateusPage from './pages/EbookMateusPage';
 import DevocionalPage from './pages/DevocionalPage';
 import PregacaoPage from './pages/PregacaoPage';
-import FamiliaPage from './pages/FamiliaPage';
+import FamiliaPage, { EsbocosPage, NoivosHub, AulaInaugural, CasadosPage } from './pages/FamiliaPage';
 import EducacaoPage from './pages/EducacaoPage';
 import Watermark from './components/Watermark';
 import LoginPage from './pages/LoginPage';
@@ -82,6 +82,10 @@ export default function App() {
 
           {/* Família */}
           <Route path="/familia" element={<FamiliaPage />} />
+          <Route path="/familia/esbocos" element={<EsbocosPage />} />
+          <Route path="/familia/noivos" element={<NoivosHub />} />
+          <Route path="/familia/noivos/aula-inaugural" element={<AulaInaugural />} />
+          <Route path="/familia/casados" element={<CasadosPage />} />
 
           {/* Educação */}
           <Route path="/educacao" element={<EducacaoPage />} />

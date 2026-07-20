@@ -1,5 +1,6 @@
 import { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
+import { useNavigate } from 'react-router-dom';
 import { BookOpen, ChevronDown } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import { PLANO_COMPLETO, type DiaDevocional } from '../data/calendarioDevocional';
@@ -749,7 +750,10 @@ function AulaCard({ aula, cor, onOpen }: { aula: typeof AULAS_NOIVOS[0]; cor: st
   );
 }
 
-function NoivosHub({ onBack, onAula }: { onBack: () => void; onAula: (num: number) => void }) {
+export function NoivosHub() {
+  const navigate = useNavigate();
+  const onBack = () => navigate('/familia');
+  const onAula = (num: number) => { if (num === 1) navigate('/familia/noivos/aula-inaugural'); };
   return (
     <div style={{ minHeight: '100vh', background: C.bg, color: C.white }}>
       <Navbar />
@@ -813,35 +817,37 @@ function Bloco({ titulo, children, delay = 0 }: { titulo: string; children: Reac
       transition={{ duration: 0.38, delay }}
       style={{ borderRadius: 14, background: 'rgba(255,200,80,0.055)', border: '1px solid rgba(255,200,80,0.17)', borderLeft: `3px solid ${GOLD}`, padding: '20px 22px' }}
     >
-      <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: GOLD, marginBottom: 12 }}>{titulo}</div>
+      <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase', color: GOLD, marginBottom: 14 }}>{titulo}</div>
       {children}
     </motion.div>
   );
 }
 
 function Txt({ children }: { children: React.ReactNode }) {
-  return <div style={{ fontSize: 'clamp(13px,1.75vw,15px)', color: 'rgba(255,255,255,0.82)', lineHeight: 1.82, whiteSpace: 'pre-line' }}>{children}</div>;
+  return <div style={{ fontSize: 'clamp(15px,2.2vw,18px)', color: 'rgba(255,255,255,0.88)', lineHeight: 1.90, whiteSpace: 'pre-line' }}>{children}</div>;
 }
 
 function Verso({ ref: r, texto }: { ref: string; texto: string }) {
   return (
-    <div style={{ margin: '10px 0', padding: '10px 14px', borderRadius: 8, background: 'rgba(255,200,80,0.08)', border: '1px solid rgba(255,200,80,0.22)' }}>
-      <span style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.16em', color: GOLD, display: 'block', marginBottom: 4 }}>{r}</span>
-      <span style={{ fontSize: 'clamp(13px,1.7vw,14.5px)', color: 'rgba(255,255,255,0.78)', lineHeight: 1.7, fontStyle: 'italic' }}>{texto}</span>
+    <div style={{ margin: '12px 0', padding: '14px 18px', borderRadius: 10, background: 'rgba(255,200,80,0.10)', border: '1px solid rgba(255,200,80,0.28)' }}>
+      <span style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.18em', color: GOLD, display: 'block', marginBottom: 6, textTransform: 'uppercase' }}>{r}</span>
+      <span style={{ fontSize: 'clamp(15px,2.1vw,17px)', color: 'rgba(255,255,255,0.85)', lineHeight: 1.78, fontStyle: 'italic' }}>{texto}</span>
     </div>
   );
 }
 
 function Pergunta({ n, texto }: { n: number; texto: string }) {
   return (
-    <div style={{ display: 'flex', gap: 12, marginBottom: 16 }}>
-      <span style={{ fontSize: 13, fontWeight: 900, color: GOLD, minWidth: 22, lineHeight: 1.7 }}>{n}.</span>
-      <div style={{ fontSize: 'clamp(13px,1.75vw,15px)', color: 'rgba(255,255,255,0.80)', lineHeight: 1.78 }}>{texto}</div>
+    <div style={{ display: 'flex', gap: 14, marginBottom: 20, padding: '14px 16px', borderRadius: 10, background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)' }}>
+      <span style={{ fontSize: 17, fontWeight: 900, color: GOLD, minWidth: 26, lineHeight: 1.7 }}>{n}.</span>
+      <div style={{ fontSize: 'clamp(15px,2.1vw,17px)', color: 'rgba(255,255,255,0.84)', lineHeight: 1.82 }}>{texto}</div>
     </div>
   );
 }
 
-function AulaInaugural({ onBack }: { onBack: () => void }) {
+export function AulaInaugural() {
+  const navigate = useNavigate();
+  const onBack = () => navigate('/familia/noivos');
   return (
     <div style={{ minHeight: '100vh', background: C.bg, color: C.white }}>
       <Navbar />
@@ -1065,7 +1071,9 @@ const HUB_ITEMS = [
   },
 ];
 
-function FamiliaHub({ onSelect }: { onSelect: (id: string) => void }) {
+export function FamiliaHub() {
+  const navigate = useNavigate();
+  const onSelect = (id: string) => navigate(`/familia/${id}`);
   return (
     <div style={{ minHeight: '100vh', background: C.bg, color: C.white }}>
       <Navbar />
@@ -1148,9 +1156,33 @@ function FamiliaHub({ onSelect }: { onSelect: (id: string) => void }) {
   );
 }
 
-// ─── Main Page ───────────────────────────────────────────────────────
-export default function FamiliaPage() {
-  const [view, setView] = useState<'hub' | 'esbocos' | 'noivos' | 'aula-inaugural'>('hub');
+// ─── Para Casados (placeholder) ──────────────────────────────────────
+export function CasadosPage() {
+  const navigate = useNavigate();
+  return (
+    <div style={{ minHeight: '100vh', background: C.bg, color: C.white }}>
+      <Navbar />
+      <div style={{ maxWidth: 860, margin: '0 auto', padding: 'clamp(90px,11vw,110px) clamp(16px,4vw,32px) 80px' }}>
+        <div style={{ marginBottom: 32 }}>
+          <button onClick={() => navigate('/familia')} style={{ display: 'inline-flex', alignItems: 'center', gap: 7, fontSize: 12, fontWeight: 900, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(80,200,255,0.70)', background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}>
+            ← Voltar
+          </button>
+        </div>
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} style={{ textAlign: 'center', paddingTop: 60 }}>
+          <div style={{ fontSize: 48, marginBottom: 20 }}>🏡</div>
+          <h1 style={{ fontSize: 'clamp(28px,5vw,44px)', fontWeight: 900, color: 'rgba(80,200,255,1)', marginBottom: 16 }}>Para Casados</h1>
+          <p style={{ fontSize: 'clamp(14px,2vw,17px)', color: 'rgba(255,255,255,0.45)', maxWidth: 480, margin: '0 auto', lineHeight: 1.75 }}>
+            Recursos homiléticos e devocionais para casais. Módulo em desenvolvimento — disponível em breve.
+          </p>
+        </motion.div>
+      </div>
+    </div>
+  );
+}
+
+// ─── Esboços Page ────────────────────────────────────────────────────
+export function EsbocosPage() {
+  const navigate = useNavigate();
   const [selectedBook, setSelectedBook] = useState<BibleBook>(BIBLE_BOOKS[0]);
   const [pericopes, setPericopes] = useState<Pericope[]>([]);
   const [loadingPericopes, setLoadingPericopes] = useState(false);
@@ -1218,13 +1250,6 @@ export default function FamiliaPage() {
     { label: 'Epístolas',   t: 'NT', slugs: ['atos','romanos','1corintios','2corintios','galatas','efesios','filipenses','colossenses','1tessalonicenses','2tessalonicenses','1timoteo','2timoteo','tito','filemom','hebreus','tiago','1pedro','2pedro','1joao','2joao','3joao','judas','apocalipse'] },
   ] as const;
 
-  if (view === 'hub') return <FamiliaHub onSelect={(id) => {
-    if (id === 'esbocos') setView('esbocos');
-    if (id === 'noivos') setView('noivos');
-  }} />;
-  if (view === 'noivos') return <NoivosHub onBack={() => setView('hub')} onAula={(num) => { if (num === 1) setView('aula-inaugural'); }} />;
-  if (view === 'aula-inaugural') return <AulaInaugural onBack={() => setView('noivos')} />;
-
   return (
     <div style={{ minHeight: '100vh', background: C.bg, color: C.white }} onClick={() => setBookDropOpen(false)}>
       <Navbar />
@@ -1234,7 +1259,7 @@ export default function FamiliaPage() {
         {/* ── Voltar ao hub ── */}
         <div style={{ marginBottom: 28 }}>
           <button
-            onClick={() => setView('hub')}
+            onClick={() => navigate('/familia')}
             style={{ display: 'inline-flex', alignItems: 'center', gap: 7, fontSize: 12, fontWeight: 900, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(52,211,153,0.75)', background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
           >
             ← Voltar
@@ -1488,3 +1513,5 @@ export default function FamiliaPage() {
     </div>
   );
 }
+
+export default FamiliaHub;
