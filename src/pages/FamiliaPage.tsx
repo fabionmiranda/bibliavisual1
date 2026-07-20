@@ -846,169 +846,263 @@ function Pergunta({ n, texto }: { n: number; texto: string }) {
 }
 
 // ─── Diagrama Van Groningen — Reino · Pacto · Mediadores ─────────────
+const SPIRIT = 'rgba(52,211,153,1)';
+const SOCIAL  = 'rgba(80,200,255,1)';
+const CULT    = 'rgba(180,120,255,1)';
+
+const MANDATOS_DEF = [
+  {
+    id: 'espiritual',
+    color: SPIRIT,
+    icon: '✝',
+    titulo: 'Mandato Espiritual',
+    keywords: 'Comunhão · Aliança · Adoração · Oração',
+    verso: 'Gênesis 1.26',
+    textoVerso: '"Façamos o homem à nossa imagem, conforme a nossa semelhança."',
+    definicao: 'A humanidade foi criada à imagem da Trindade (imago Dei) para viver em comunhão com Deus. O Mandato Espiritual é a vocação de adorar, obedecer e refletir o caráter de Deus em toda a existência. Para o casal, significa que a relação conjugal nasce da comunhão trinitária e deve ser sustentada por ela: oração conjunta, leitura da Palavra, culto familiar e submissão ao senhorio de Cristo são expressões concretas deste mandato.',
+    vanGroningen: 'Van Groningen ensina que o Reino de Deus (mlkût YHWH) é o horizonte dentro do qual todos os mandatos operam. O mandato espiritual é o fundamento: sem adoração verdadeira, os mandatos social e cultural tornam-se projetos autônomos — Babel revisitada. É o Espírito Santo quem capacita o casal a viver este mandato (Ez 36.26-27; Rm 5.5).',
+    referencias: [
+      'VAN GRONINGEN, Gerard. Messianic Revelation in the Old Testament. Grand Rapids: Baker Book House, 1990. p. 55-89.',
+      'VOS, Geerhardus. Teologia Bíblica: Antigo e Novo Testamento. São Paulo: Cultura Cristã, 2010. p. 27-43.',
+      'BAVINCK, Herman. Reformed Dogmatics. Grand Rapids: Baker Academic, 2004. v. 2, p. 530-561.',
+    ],
+  },
+  {
+    id: 'social',
+    color: SOCIAL,
+    icon: '🏠',
+    titulo: 'Mandato Social',
+    keywords: 'Família · Filhos · Casa · Semente Santa · Geração',
+    verso: 'Gênesis 1.28a',
+    textoVerso: '"Sede fecundos, multiplicai-vos e enchei a terra."',
+    definicao: 'O Mandato Social é a vocação de construir relações ordenadas por Deus: o casamento (Gn 2.24), a família, a geração de filhos e a formação de comunidades humanas que reflitam a ordem criacional. Para o casal, este mandato inclui a responsabilidade de gerar uma "semente santa" (Ml 2.15) — filhos criados no temor do Senhor — e de edificar um lar que seja uma "pequena igreja" (ecclesiola), espaço de adoração, catequese e hospitalidade.',
+    vanGroningen: 'Para Van Groningen, o mandato social flui diretamente da estrutura pactual: Deus não apenas governa indivíduos, mas famílias e nações. A aliança abraâmica (Gn 17.7) é feita "com vocês e com a vossa descendência" — a família é a unidade fundamental do pacto. O casamento cristão é, por isso, um ato político-redentor: ao formar um lar pactual, o casal estende o governo de Deus à próxima geração.',
+    referencias: [
+      'VAN GRONINGEN, Gerard. Messianic Revelation in the Old Testament. Grand Rapids: Baker Book House, 1990. p. 117-145.',
+      'KLINE, Meredith G. Kingdom Prologue: Genesis Foundations for a Covenantal Worldview. Eugene: Wipf & Stock, 2006. p. 62-78.',
+      'BERKHOF, Louis. Teologia Sistemática. São Paulo: Cultura Cristã, 2014. p. 297-315.',
+    ],
+  },
+  {
+    id: 'cultural',
+    color: CULT,
+    icon: '🌍',
+    titulo: 'Mandato Cultural',
+    keywords: 'Trabalho · Arte · Cidade · Ciência · Missão · Domínio',
+    verso: 'Gênesis 1.28b',
+    textoVerso: '"Sujeitai a terra e dominai sobre... todo ser vivente."',
+    definicao: 'O Mandato Cultural (também chamado mandato criacional ou mandato de domínio) é a vocação de desenvolver o potencial implantado por Deus na criação: trabalho, ciência, arte, tecnologia, política e missão. Para o casal, este mandato significa que a vida conjugal e familiar não é um fim em si mesma, mas plataforma para influência no mundo — no bairro, na cidade, na cultura. O casamento cristão existe para o reino, não apenas para a felicidade dos dois.',
+    vanGroningen: 'Van Groningen conecta o mandato cultural à missão do Messias: o que Adão falhou em fazer — dominar redentoramente a criação — Cristo realiza como o segundo Adão (1Co 15.45-49). O casal cristão participa dessa missão restauradora: cada obra humana feita à glória de Deus é antecipação da nova criação (Ap 21.24-26). A Grande Comissão (Mt 28.18-20) é a forma escatológica do mandato cultural: "fazei discípulos de todas as nações."',
+    referencias: [
+      'VAN GRONINGEN, Gerard. Messianic Revelation in the Old Testament. Grand Rapids: Baker Book House, 1990. p. 201-238.',
+      'KUYPER, Abraham. Calvinismo: Palestras Proferidas na Universidade de Princeton. São Paulo: Cultura Cristã, 2005. p. 89-128.',
+      'WOLTERS, Albert M. Creation Regained: Biblical Basics for a Reformational Worldview. Grand Rapids: Eerdmans, 2005. p. 41-68.',
+    ],
+  },
+];
+
 function DiagramaMandatos() {
-  const W = 700, H = 540;
-  const cx = W / 2, cy = H / 2 + 10;
+  const W = 900, H = 680;
+  const cx = W / 2, cy = H / 2 + 20;
+  const R = 218;
 
-  // Cores
-  const spirit = 'rgba(52,211,153,1)';
-  const social  = 'rgba(80,200,255,1)';
-  const cult    = 'rgba(180,120,255,1)';
-  const gold    = GOLD;
-  const dim     = 'rgba(255,255,255,0.18)';
-
-  // Posições dos nós dos 3 mandatos (triângulo invertido a partir do centro)
-  const R = 168; // raio do triângulo
-  const nodes = {
-    espiritual: { x: cx,        y: cy - R,        color: spirit, icon: '✝', label: 'Mandato\nEspiritual', sub: 'Comunhão com Deus\nAliança · Adoração · Oração' },
-    social:     { x: cx - R*0.9, y: cy + R*0.55,  color: social,  icon: '🏠', label: 'Mandato\nSocial',     sub: 'Família · Filhos\nCasa · Geração' },
-    cultural:   { x: cx + R*0.9, y: cy + R*0.55,  color: cult,    icon: '🌍', label: 'Mandato\nCultural',   sub: 'Trabalho · Arte\nCidade · Missão' },
+  const nPos = {
+    espiritual: { x: cx,          y: cy - R        },
+    social:     { x: cx - R*0.90, y: cy + R*0.52   },
+    cultural:   { x: cx + R*0.90, y: cy + R*0.52   },
   };
+  const mc = { x: cx, y: cy };
 
-  // Nó central — Mediadores (Casal)
-  const mc = { x: cx, y: cy - 4 };
+  const arrowIds = [['arwG', GOLD], ['arwSp', SPIRIT], ['arwSoc', SOCIAL], ['arwCult', CULT]] as [string,string][];
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 24 }}
+      initial={{ opacity: 0, y: 28 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: 0.1 }}
-      style={{ marginBottom: 36, borderRadius: 20, background: 'rgba(255,255,255,0.025)', border: '1px solid rgba(255,255,255,0.09)', padding: '28px 16px 20px', overflow: 'hidden' }}
+      transition={{ duration: 0.65, delay: 0.1 }}
+      style={{ marginBottom: 40, borderRadius: 22, background: 'rgba(255,255,255,0.022)', border: '1px solid rgba(255,255,255,0.08)', padding: '32px 20px 28px', overflow: 'hidden' }}
     >
-      {/* Título */}
-      <div style={{ textAlign: 'center', marginBottom: 6 }}>
-        <span style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: gold }}>
-          Diagrama · Van Groningen · Reino – Pacto – Mediadores
+      {/* Cabeçalho */}
+      <div style={{ textAlign: 'center', marginBottom: 4 }}>
+        <span style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.26em', textTransform: 'uppercase', color: GOLD }}>
+          Diagrama · Van Groningen
         </span>
       </div>
-      <div style={{ textAlign: 'center', marginBottom: 18 }}>
-        <span style={{ fontSize: 12, color: 'rgba(255,255,255,0.35)', fontStyle: 'italic' }}>
+      <div style={{ textAlign: 'center', marginBottom: 6 }}>
+        <span style={{ fontSize: 'clamp(17px,2.6vw,22px)', fontWeight: 900, color: 'rgba(255,255,255,0.90)', letterSpacing: '0.04em' }}>
+          Reino · Pacto · Mediadores
+        </span>
+      </div>
+      <div style={{ textAlign: 'center', marginBottom: 24 }}>
+        <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.38)', fontStyle: 'italic' }}>
           Os três mandatos que estruturam o casamento e a família cristã
         </span>
       </div>
 
-      {/* SVG responsivo */}
-      <div style={{ width: '100%', maxWidth: 700, margin: '0 auto' }}>
+      {/* SVG */}
+      <div style={{ width: '100%', maxWidth: 900, margin: '0 auto' }}>
         <svg viewBox={`0 0 ${W} ${H}`} style={{ width: '100%', height: 'auto', display: 'block' }}>
           <defs>
-            {/* Gradiente de fundo */}
-            <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stopColor="rgba(255,200,80,0.06)" />
+            <radialGradient id="dBg" cx="50%" cy="52%" r="48%">
+              <stop offset="0%" stopColor="rgba(255,200,80,0.07)" />
               <stop offset="100%" stopColor="rgba(5,7,26,0)" />
             </radialGradient>
-            {/* Glow dos nós */}
-            <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
-              <feGaussianBlur stdDeviation="6" result="blur" />
-              <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+            <filter id="dGlow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="7" result="b" />
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
             </filter>
-            <filter id="glowSoft" x="-60%" y="-60%" width="220%" height="220%">
-              <feGaussianBlur stdDeviation="12" result="blur" />
-              <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+            <filter id="dSoft" x="-80%" y="-80%" width="260%" height="260%">
+              <feGaussianBlur stdDeviation="16" result="b" />
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
             </filter>
-            {/* Setas */}
-            {([['arrowGold', gold], ['arrowSp', spirit], ['arrowSoc', social], ['arrowCult', cult]] as [string,string][]).map(([id, col]) => (
-              <marker key={id} id={id} markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
-                <path d="M0,0 L0,6 L8,3 z" fill={col} opacity="0.85" />
+            {arrowIds.map(([id, col]) => (
+              <marker key={id} id={id} markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto">
+                <path d="M0,0 L0,7 L9,3.5 z" fill={col} opacity="0.9" />
               </marker>
             ))}
           </defs>
 
-          {/* ── REINO — moldura externa ── */}
-          <rect x="22" y="18" width={W-44} height={H-36} rx="22" fill="none" stroke={gold} strokeWidth="1.2" strokeDasharray="6 5" opacity="0.28" />
-          {/* Rótulo REINO — topo */}
-          <text x={cx} y="14" textAnchor="middle" fill={gold} fontSize="11" fontWeight="900" letterSpacing="3" opacity="0.70">REINO  —  GOVERNO DE DEUS</text>
-          {/* Rótulo REINO — base */}
-          <text x={cx} y={H-6} textAnchor="middle" fill={gold} fontSize="9" fontWeight="700" letterSpacing="2" opacity="0.40">Salmo 103.19  ·  Marcos 1.15  ·  Romanos 14.17</text>
+          {/* Fundo radial */}
+          <ellipse cx={cx} cy={cy} rx="420" ry="320" fill="url(#dBg)" />
 
-          {/* ── Fundo radial ── */}
-          <circle cx={cx} cy={cy} r="260" fill="url(#bgGrad)" />
+          {/* ── REINO — moldura dupla ── */}
+          <rect x="16" y="16" width={W-32} height={H-32} rx="26" fill="none" stroke={GOLD} strokeWidth="1.5" strokeDasharray="7 5" opacity="0.22" />
+          <rect x="26" y="26" width={W-52} height={H-52} rx="20" fill="none" stroke={GOLD} strokeWidth="0.7" strokeDasharray="3 6" opacity="0.13" />
+          <text x={cx} y="13" textAnchor="middle" fill={GOLD} fontSize="12" fontWeight="900" letterSpacing="4" opacity="0.65">REINO — GOVERNO SOBERANO DE DEUS</text>
+          <text x={cx} y={H-8} textAnchor="middle" fill={GOLD} fontSize="10" letterSpacing="1.5" opacity="0.35">Sl 103.19 · Mc 1.15 · Rm 14.17 · Ap 11.15</text>
 
-          {/* ── TRINDADE — topo interno ── */}
-          <g>
-            <rect x={cx - 116} y="34" width="232" height="46" rx="12" fill="rgba(255,200,80,0.10)" stroke={gold} strokeWidth="1.2" opacity="0.85" />
-            <text x={cx} y="53" textAnchor="middle" fill={gold} fontSize="11" fontWeight="900" letterSpacing="2.5">PAI  ·  FILHO  ·  ESPÍRITO SANTO</text>
-            <text x={cx} y="70" textAnchor="middle" fill="rgba(255,255,255,0.40)" fontSize="9.5" fontStyle="italic">comunhão eterna — fonte de todo amor</text>
-          </g>
+          {/* ── TRINDADE ── */}
+          <rect x={cx-145} y="36" width="290" height="56" rx="14" fill="rgba(255,200,80,0.11)" stroke={GOLD} strokeWidth="1.5" opacity="0.9" />
+          <text x={cx} y="56" textAnchor="middle" fill={GOLD} fontSize="13" fontWeight="900" letterSpacing="3">PAI  ·  FILHO  ·  ESPÍRITO SANTO</text>
+          <text x={cx} y="75" textAnchor="middle" fill="rgba(255,255,255,0.42)" fontSize="10.5" fontStyle="italic">comunhão eterna — fonte de todo amor e missão</text>
 
-          {/* ── Linhas de ALIANÇA entre os mandatos (triângulo) ── */}
-          {/* Espiritual → Social */}
-          <line x1={nodes.espiritual.x} y1={nodes.espiritual.y} x2={nodes.social.x} y2={nodes.social.y}
-            stroke="rgba(255,255,255,0.10)" strokeWidth="1.5" strokeDasharray="4 4" />
-          {/* Espiritual → Cultural */}
-          <line x1={nodes.espiritual.x} y1={nodes.espiritual.y} x2={nodes.cultural.x} y2={nodes.cultural.y}
-            stroke="rgba(255,255,255,0.10)" strokeWidth="1.5" strokeDasharray="4 4" />
-          {/* Social → Cultural */}
-          <line x1={nodes.social.x} y1={nodes.social.y} x2={nodes.cultural.x} y2={nodes.cultural.y}
-            stroke="rgba(255,255,255,0.10)" strokeWidth="1.5" strokeDasharray="4 4" />
+          {/* ── Linha Trindade → Centro (ALIANÇA) ── */}
+          <line x1={cx} y1="92" x2={mc.x} y2={mc.y - 58}
+            stroke={GOLD} strokeWidth="2.5" opacity="0.60" markerEnd="url(#arwG)" />
+          <rect x={cx+6} y="126" width="66" height="18" rx="5" fill="rgba(5,7,26,0.7)" />
+          <text x={cx+39} y="139" textAnchor="middle" fill={GOLD} fontSize="11" fontWeight="900" letterSpacing="1.5" opacity="0.85">ALIANÇA</text>
 
-          {/* ── Linhas do centro (Mediadores) para cada mandato ── */}
-          {Object.values(nodes).map((n, i) => (
-            <line key={i} x1={mc.x} y1={mc.y} x2={n.x} y2={n.y}
-              stroke={n.color} strokeWidth="2" opacity="0.50"
-              strokeDasharray="5 3"
-              markerEnd={`url(#${i===0?'arrowSp':i===1?'arrowSoc':'arrowCult'})`} />
-          ))}
+          {/* ── Triângulo entre mandatos (linhas de PACTO) ── */}
+          {[
+            [nPos.espiritual, nPos.social,   'rgba(52,211,153,0.18)',  'rgba(80,200,255,0.18)'],
+            [nPos.espiritual, nPos.cultural,  'rgba(52,211,153,0.18)',  'rgba(180,120,255,0.18)'],
+            [nPos.social,     nPos.cultural,  'rgba(80,200,255,0.18)',  'rgba(180,120,255,0.18)'],
+          ].map(([a, b, c1, c2], i) => {
+            const na = a as {x:number,y:number}, nb = b as {x:number,y:number};
+            const mid = { x: (na.x+nb.x)/2, y: (na.y+nb.y)/2 };
+            return (
+              <g key={i}>
+                <line x1={na.x} y1={na.y} x2={nb.x} y2={nb.y}
+                  stroke="rgba(255,255,255,0.12)" strokeWidth="1.8" strokeDasharray="6 5" />
+                <rect x={mid.x-22} y={mid.y-10} width="44" height="18" rx="5" fill="rgba(5,7,26,0.75)" />
+                <text x={mid.x} y={mid.y+4} textAnchor="middle" fill="rgba(255,255,255,0.35)" fontSize="9.5" fontWeight="700" letterSpacing="2">PACTO</text>
+              </g>
+            );
+          })}
 
-          {/* ── Linha da Trindade → Centro ── */}
-          <line x1={cx} y1="80" x2={mc.x} y2={mc.y - 44}
-            stroke={gold} strokeWidth="2" opacity="0.55"
-            markerEnd="url(#arrowGold)" />
-          <text x={cx + 12} y={(80 + mc.y - 44) / 2 + 2} fill={gold} fontSize="10" fontWeight="700" opacity="0.75" letterSpacing="1">ALIANÇA</text>
+          {/* ── Raios do centro para cada mandato ── */}
+          {([
+            [mc, nPos.espiritual, SPIRIT, 'arwSp'],
+            [mc, nPos.social,     SOCIAL,  'arwSoc'],
+            [mc, nPos.cultural,   CULT,    'arwCult'],
+          ] as [typeof mc, typeof mc, string, string][]).map(([a, b, col, marker], i) => {
+            const dx = b.x - a.x, dy = b.y - a.y;
+            const len = Math.sqrt(dx*dx+dy*dy);
+            const off = 62;
+            const x2 = b.x - dx/len*off, y2 = b.y - dy/len*off;
+            const x1 = a.x + dx/len*62, y1 = a.y + dy/len*62;
+            return (
+              <line key={i} x1={x1} y1={y1} x2={x2} y2={y2}
+                stroke={col} strokeWidth="2.5" opacity="0.55"
+                strokeDasharray="6 4" markerEnd={`url(#${marker})`} />
+            );
+          })}
 
-          {/* ── Nós dos 3 Mandatos ── */}
-          {Object.entries(nodes).map(([key, n]) => (
-            <g key={key}>
-              {/* Halo */}
-              <circle cx={n.x} cy={n.y} r="64" fill={n.color} opacity="0.06" filter="url(#glowSoft)" />
-              {/* Círculo principal */}
-              <circle cx={n.x} cy={n.y} r="50" fill={`${n.color}18`} stroke={n.color} strokeWidth="1.8" filter="url(#glow)" />
-              {/* Ícone */}
-              <text x={n.x} y={n.y - 8} textAnchor="middle" fontSize="22" opacity="0.90">{n.icon}</text>
-              {/* Label — 2 linhas */}
-              {n.label.split('\n').map((line, li) => (
-                <text key={li} x={n.x} y={n.y + 14 + li * 15} textAnchor="middle"
-                  fill={n.color} fontSize="11.5" fontWeight="900" letterSpacing="0.5">{line}</text>
-              ))}
-              {/* Sub — 2 linhas abaixo do círculo */}
-              {n.sub.split('\n').map((line, li) => (
-                <text key={li} x={n.x} y={n.y + 64 + li * 14} textAnchor="middle"
-                  fill="rgba(255,255,255,0.48)" fontSize="10" fontStyle="italic">{line}</text>
-              ))}
-            </g>
-          ))}
+          {/* ── Nós dos 3 mandatos ── */}
+          {MANDATOS_DEF.map((m) => {
+            const pos = nPos[m.id as keyof typeof nPos];
+            return (
+              <g key={m.id}>
+                <circle cx={pos.x} cy={pos.y} r="78" fill={m.color} opacity="0.05" filter="url(#dSoft)" />
+                <circle cx={pos.x} cy={pos.y} r="60" fill={`${m.color}15`} stroke={m.color} strokeWidth="2" filter="url(#dGlow)" />
+                <circle cx={pos.x} cy={pos.y} r="44" fill={`${m.color}08`} stroke={m.color} strokeWidth="0.8" opacity="0.5" />
+                <text x={pos.x} y={pos.y - 16} textAnchor="middle" fontSize="26">{m.icon}</text>
+                <text x={pos.x} y={pos.y + 6} textAnchor="middle" fill={m.color} fontSize="12.5" fontWeight="900" letterSpacing="0.5">MANDATO</text>
+                <text x={pos.x} y={pos.y + 22} textAnchor="middle" fill={m.color} fontSize="13.5" fontWeight="900" letterSpacing="0.5">{m.titulo.replace('Mandato ','')}</text>
+                {m.keywords.split(' · ').slice(0,2).map((kw, ki) => (
+                  <text key={ki} x={pos.x} y={pos.y + 44 + ki*14} textAnchor="middle" fill="rgba(255,255,255,0.42)" fontSize="10" fontStyle="italic">{kw}</text>
+                ))}
+                <text x={pos.x} y={pos.y + 82} textAnchor="middle" fill={m.color} fontSize="9.5" opacity="0.65" letterSpacing="0.5">{m.verso}</text>
+              </g>
+            );
+          })}
 
-          {/* ── Nó Central — MEDIADORES (Casal) ── */}
-          <g>
-            <circle cx={mc.x} cy={mc.y} r="52" fill="rgba(255,200,80,0.14)" stroke={gold} strokeWidth="2.2" filter="url(#glow)" />
-            <circle cx={mc.x} cy={mc.y} r="38" fill="rgba(255,200,80,0.08)" stroke={gold} strokeWidth="1" opacity="0.5" />
-            <text x={mc.x} y={mc.y - 10} textAnchor="middle" fontSize="20">💍</text>
-            <text x={mc.x} y={mc.y + 8} textAnchor="middle" fill={gold} fontSize="11" fontWeight="900" letterSpacing="0.8">MEDIADORES</text>
-            <text x={mc.x} y={mc.y + 22} textAnchor="middle" fill="rgba(255,200,80,0.65)" fontSize="9.5" fontStyle="italic">(agentes · casal)</text>
-          </g>
-
-          {/* ── Rótulos de PACTO nos lados ── */}
-          <text x={cx - 130} y={cy + 60} fill="rgba(255,255,255,0.28)" fontSize="9" fontWeight="700" letterSpacing="2" transform={`rotate(-55,${cx-130},${cy+60})`}>PACTO</text>
-          <text x={cx + 110} y={cy + 60} fill="rgba(255,255,255,0.28)" fontSize="9" fontWeight="700" letterSpacing="2" transform={`rotate(55,${cx+110},${cy+60})`}>PACTO</text>
-          <text x={cx} y={cy + R*0.55 + 10} fill="rgba(255,255,255,0.28)" fontSize="9" fontWeight="700" letterSpacing="2">PACTO</text>
-
-          {/* ── Referência Van Groningen ── */}
-          <text x={W - 28} y={H - 22} textAnchor="end" fill="rgba(255,255,255,0.22)" fontSize="9" fontStyle="italic">
-            Van Groningen, Messianic Revelation in the Old Testament (1990)
-          </text>
+          {/* ── Nó Central — Mediadores ── */}
+          <circle cx={mc.x} cy={mc.y} r="68" fill="rgba(255,200,80,0.10)" stroke={GOLD} strokeWidth="0.8" opacity="0.4" />
+          <circle cx={mc.x} cy={mc.y} r="56" fill="rgba(255,200,80,0.14)" stroke={GOLD} strokeWidth="2.2" filter="url(#dGlow)" />
+          <text x={mc.x} y={mc.y - 14} textAnchor="middle" fontSize="26">💍</text>
+          <text x={mc.x} y={mc.y + 8} textAnchor="middle" fill={GOLD} fontSize="13" fontWeight="900" letterSpacing="1">MEDIADORES</text>
+          <text x={mc.x} y={mc.y + 24} textAnchor="middle" fill="rgba(255,200,80,0.60)" fontSize="10.5" fontStyle="italic">agentes · casal</text>
+          <text x={mc.x} y={mc.y + 40} textAnchor="middle" fill="rgba(255,255,255,0.28)" fontSize="9.5">1 Tm 2.5</text>
         </svg>
       </div>
 
-      {/* Legenda — cards responsivos */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(180px,1fr))', gap: 10, marginTop: 20, padding: '0 4px' }}>
-        {[
-          { color: spirit, label: 'Mandato Espiritual', desc: 'Comunhão com Deus — adoração, aliança, oração. Fundamento de tudo.' },
-          { color: social,  label: 'Mandato Social',    desc: 'Família, filhos, casa — a geração da semente santa na terra.' },
-          { color: cult,    label: 'Mandato Cultural',  desc: 'Trabalho, arte, cidade, missão — domínio redentor sobre a criação.' },
-        ].map(l => (
-          <div key={l.label} style={{ padding: '12px 14px', borderRadius: 10, background: `${l.color}0d`, border: `1px solid ${l.color}30` }}>
-            <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.14em', color: l.color, marginBottom: 5, textTransform: 'uppercase' }}>{l.label}</div>
-            <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.52)', lineHeight: 1.65 }}>{l.desc}</div>
-          </div>
+      {/* ── Definições dos 3 mandatos — cards completos ── */}
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 20, marginTop: 28 }}>
+        {MANDATOS_DEF.map((m, i) => (
+          <motion.div
+            key={m.id}
+            initial={{ opacity: 0, x: i % 2 === 0 ? -18 : 18 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.45, delay: 0.3 + i * 0.12 }}
+            style={{ borderRadius: 16, background: `${m.color}0c`, border: `1.5px solid ${m.color}30`, borderLeft: `4px solid ${m.color}`, padding: '22px 24px' }}
+          >
+            {/* Header do card */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 14, flexWrap: 'wrap' }}>
+              <span style={{ fontSize: 26 }}>{m.icon}</span>
+              <div>
+                <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: m.color, marginBottom: 2 }}>
+                  {m.titulo}
+                </div>
+                <div style={{ fontSize: 'clamp(12px,1.7vw,13.5px)', color: 'rgba(255,255,255,0.40)', fontStyle: 'italic' }}>
+                  {m.keywords}
+                </div>
+              </div>
+            </div>
+
+            {/* Verso */}
+            <div style={{ margin: '0 0 14px', padding: '12px 16px', borderRadius: 10, background: `${m.color}10`, border: `1px solid ${m.color}28` }}>
+              <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: m.color, marginBottom: 5 }}>{m.verso}</div>
+              <div style={{ fontSize: 'clamp(14px,2vw,16px)', color: 'rgba(255,255,255,0.82)', lineHeight: 1.72, fontStyle: 'italic' }}>{m.textoVerso}</div>
+            </div>
+
+            {/* Definição */}
+            <div style={{ fontSize: 'clamp(14px,1.9vw,16px)', color: 'rgba(255,255,255,0.80)', lineHeight: 1.88, marginBottom: 14 }}>
+              {m.definicao}
+            </div>
+
+            {/* Van Groningen */}
+            <div style={{ padding: '12px 16px', borderRadius: 10, background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.09)', marginBottom: 14 }}>
+              <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.40)', marginBottom: 7 }}>
+                Van Groningen — Contribuição Teológica
+              </div>
+              <div style={{ fontSize: 'clamp(13px,1.8vw,15px)', color: 'rgba(255,255,255,0.68)', lineHeight: 1.85, fontStyle: 'italic' }}>
+                {m.vanGroningen}
+              </div>
+            </div>
+
+            {/* Referências ABNT */}
+            <div>
+              <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: m.color, opacity: 0.70, marginBottom: 7 }}>
+                Referências (ABNT)
+              </div>
+              {m.referencias.map((ref, ri) => (
+                <div key={ri} style={{ fontSize: 'clamp(11px,1.5vw,12.5px)', color: 'rgba(255,255,255,0.38)', lineHeight: 1.70, paddingBottom: ri < m.referencias.length - 1 ? 5 : 0, borderBottom: ri < m.referencias.length - 1 ? '1px solid rgba(255,255,255,0.05)' : 'none', marginBottom: ri < m.referencias.length - 1 ? 5 : 0 }}>
+                  {ref}
+                </div>
+              ))}
+            </div>
+          </motion.div>
         ))}
       </div>
     </motion.div>
