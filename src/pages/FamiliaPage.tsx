@@ -787,59 +787,65 @@ function NoivosHub({ onBack, onAula }: { onBack: () => void; onAula: (num: numbe
 }
 
 // ─── Aula Inaugural — conteúdo ───────────────────────────────────────
-function AulaInaugural({ onBack }: { onBack: () => void }) {
-  const sections = [
-    {
-      label: 'Texto Base',
-      content: 'Gênesis 2:18–25 · Efésios 5:22–33 · Confissão de Fé de Westminster, Cap. XXIV',
-      color: GOLD,
-    },
-    {
-      label: 'Big Idea',
-      content: 'O casamento não é invenção humana nem contrato social — é instituição divina, aliança sagrada e parábola viva da relação de Cristo com a Igreja.',
-      color: GOLD,
-    },
-    {
-      label: 'I. O Problema da Solidão e o Diagnóstico de Deus (Gn 2:18)',
-      content: 'Deus declara: "Não é bom que o homem esteja só." Esta é a única coisa na criação que Deus qualifica de "não boa" antes da queda — não um defeito do homem, mas um desígnio do Criador. A solidão relacional é a condição que prepara a revelação do casamento. Deus não diz "resolva sua solidão" — Ele diz "Eu proverei." Lição para noivos: o casamento não nasce da nossa necessidade, mas da provisão soberana de Deus.',
-      color: GOLD,
-    },
-    {
-      label: 'II. O Design da Complementaridade (Gn 2:19–23)',
-      content: 'Adão nomeia os animais e nenhum é "semelhante a ele" — a busca revela a especificidade do que falta. Eva não é idêntica a Adão nem inferior: é "carne da sua carne" — mesma essência, forma distinta. A complementaridade bíblica não é hierarquia de valor, mas diferença de função a serviço da unidade. Herman Bavinck: "O homem e a mulher são iguais em dignidade, distintos em vocação — e essa distinção é glória, não limitação."',
-      color: GOLD,
-    },
-    {
-      label: 'III. A Estrutura da Aliança: Deixar, Unir, Uma Só Carne — CENTRO ◉ (Gn 2:24)',
-      content: '"Por isso, o homem deixará pai e mãe, se unirá à sua mulher, e serão uma só carne." Três verbos — três realidades aliançosas:\n\n▸ DEIXAR — ruptura de dependências anteriores. Não abandono, mas reordenação de lealdades. O lar de origem cede lugar ao novo lar.\n▸ UNIR — adesão voluntária, permanente e exclusiva. O hebraico dabaq ("colar-se") sugere intimidade inquebrável.\n▸ UMA SÓ CARNE — integração total: física, emocional, espiritual, social. O casamento é o único relacionamento humano que aspira à completude da união.\n\nCFW XXIV.1: "O casamento é uma instituição ordenada por Deus, para a glória d\'Ele e o bem mútuo dos cônjuges."',
-      color: GOLD,
-    },
-    {
-      label: 'IV. O Casamento como Parábola Redentor (Ef 5:22–33)',
-      content: 'Paulo revela o mistério: o casamento não é apenas instituição social — é ícone da relação de Cristo com a Igreja. O marido ama como Cristo amou: sacrificialmente, purificando, sem exigir. A esposa responde como a Igreja responde a Cristo: com confiança, não com medo. Joel Beeke (Reformed Preaching): "O casamento cristão é evangelismo silencioso — o mundo que não ouve sermões pode ver Cristo e a Igreja no casal que vive o Evangelho em casa."',
-      color: GOLD,
-    },
-    {
-      label: 'Teologia Reformada',
-      content: '▸ CFW XXIV.2: "O casamento foi ordenado para a ajuda mútua de marido e mulher, para a multiplicação da raça humana com uma prole legítima e para a Igreja com uma semente santa, e para prevenir a impureza."\n▸ Herman Bavinck (A Ética Reformada): "O casamento é a mais íntima das comunidades humanas — imagem da comunhão trinitária de amor."\n▸ John Calvin (Inst. II.8.41): "O casamento é santo e honroso porque foi ordenado por Deus — não como concessão à fraqueza, mas como vocação à santidade."\n▸ J.C. Ryle (Santidade): "Não há santificação maior do que a que acontece no lar. É lá que o caráter real é revelado e moldado."\n▸ Voddie Baucham (O Que Ele Deve Ser): "O casamento cristão é a unidade fundamental da civilização e da missão — quando o lar perece, a Igreja e a sociedade perecem."',
-      color: GOLD,
-    },
-    {
-      label: 'Aplicações para os Noivos',
-      content: '▸ Examinem juntos: o que vocês ainda precisam "deixar" — dependências emocionais, financeiras ou de lealdade — antes do altar?\n▸ Conversem sobre o que "unir-se" significa concretamente na rotina: decisões, finanças, amizades, família de origem.\n▸ Como a parábola de Cristo e a Igreja moldará os papéis de cada um dentro do casamento de vocês?\n▸ Orem juntos agora: "Senhor, que nosso casamento seja um testemunho do Teu amor pelo Teu povo."',
-      color: GOLD,
-    },
-    {
-      label: 'Para Reflexão e Discussão',
-      content: '1. Qual é a diferença entre um contrato e uma aliança? Como isso muda a forma de encarar os momentos difíceis do casamento?\n2. O que Gênesis 2:24 implica sobre a relação com as famílias de origem após o casamento?\n3. Como o modelo de Cristo em Efésios 5 desafia o modelo cultural dominante de casamento?\n4. Que expectativas vocês trazem para o casamento que podem precisar ser revisadas à luz das Escrituras?\n5. Quais disciplinas espirituais vocês comprometem cultivar juntos desde o primeiro dia?',
-      color: GOLD,
-    },
-  ];
+const ENCONTROS_TABLE = [
+  { num: 1, quando: 'Ago (presencial)',     tema: 'A Aliança como Fundamento',                          pergunta: 'De onde vem o casamento — e por que é mais que um sentimento?',                     mandato: 'Espiritual' },
+  { num: 2, quando: 'Ago/Set (híbrido)',    tema: 'Os Mediadores: Identidade, Comunicação e Expectativas', pergunta: 'Quem somos como casal, e como vamos falar e ouvir um ao outro?',              mandato: 'Espiritual' },
+  { num: 3, quando: 'Set (híbrido)',        tema: 'Vida Espiritual e Resolução de Conflitos',           pergunta: 'Como vamos buscar a Deus juntos e lidar com nossas diferenças?',                   mandato: 'Espiritual' },
+  { num: 4, quando: 'Out (presencial)',     tema: 'Sexualidade e Intimidade Conjugal',                  pergunta: 'O que Deus ensina sobre a intimidade no casamento?',                               mandato: 'Espiritual' },
+  { num: 5, quando: 'Out/Nov (híbrido)',    tema: 'Família de Origem e Sogros',                         pergunta: 'Como formar nosso lar sem romper a honra aos pais?',                               mandato: 'Social' },
+  { num: 6, quando: 'Nov (híbrido)',        tema: 'Filhos e a Casa que Vamos Construir',                pergunta: 'Que tipo de lar e de descendência queremos gerar?',                                mandato: 'Social' },
+  { num: 7, quando: 'Nov/Dez (híbrido)',    tema: 'Vocação, Trabalho e Finanças',                       pergunta: 'Como vamos administrar dinheiro e influenciar o mundo lá fora?',                   mandato: 'Cultural' },
+  { num: 8, quando: 'Dez (presencial)',     tema: 'Consolidação e Celebração',                          pergunta: 'O que aprendemos, e a que estamos nos comprometendo?',                             mandato: 'Síntese' },
+];
 
+const MANDATO_COR: Record<string, string> = {
+  Espiritual: 'rgba(52,211,153,1)',
+  Social:     'rgba(80,200,255,1)',
+  Cultural:   'rgba(180,120,255,1)',
+  Síntese:    GOLD,
+};
+
+function Bloco({ titulo, children, delay = 0 }: { titulo: string; children: React.ReactNode; delay?: number }) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 14 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.38, delay }}
+      style={{ borderRadius: 14, background: 'rgba(255,200,80,0.055)', border: '1px solid rgba(255,200,80,0.17)', borderLeft: `3px solid ${GOLD}`, padding: '20px 22px' }}
+    >
+      <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: GOLD, marginBottom: 12 }}>{titulo}</div>
+      {children}
+    </motion.div>
+  );
+}
+
+function Txt({ children }: { children: React.ReactNode }) {
+  return <div style={{ fontSize: 'clamp(13px,1.75vw,15px)', color: 'rgba(255,255,255,0.82)', lineHeight: 1.82, whiteSpace: 'pre-line' }}>{children}</div>;
+}
+
+function Verso({ ref: r, texto }: { ref: string; texto: string }) {
+  return (
+    <div style={{ margin: '10px 0', padding: '10px 14px', borderRadius: 8, background: 'rgba(255,200,80,0.08)', border: '1px solid rgba(255,200,80,0.22)' }}>
+      <span style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.16em', color: GOLD, display: 'block', marginBottom: 4 }}>{r}</span>
+      <span style={{ fontSize: 'clamp(13px,1.7vw,14.5px)', color: 'rgba(255,255,255,0.78)', lineHeight: 1.7, fontStyle: 'italic' }}>{texto}</span>
+    </div>
+  );
+}
+
+function Pergunta({ n, texto }: { n: number; texto: string }) {
+  return (
+    <div style={{ display: 'flex', gap: 12, marginBottom: 16 }}>
+      <span style={{ fontSize: 13, fontWeight: 900, color: GOLD, minWidth: 22, lineHeight: 1.7 }}>{n}.</span>
+      <div style={{ fontSize: 'clamp(13px,1.75vw,15px)', color: 'rgba(255,255,255,0.80)', lineHeight: 1.78 }}>{texto}</div>
+    </div>
+  );
+}
+
+function AulaInaugural({ onBack }: { onBack: () => void }) {
   return (
     <div style={{ minHeight: '100vh', background: C.bg, color: C.white }}>
       <Navbar />
-      <div style={{ maxWidth: 860, margin: '0 auto', padding: 'clamp(90px,11vw,110px) clamp(16px,4vw,32px) 80px' }}>
+      <div style={{ maxWidth: 860, margin: '0 auto', padding: 'clamp(90px,11vw,110px) clamp(16px,4vw,32px) 100px' }}>
 
         {/* Voltar */}
         <div style={{ marginBottom: 32 }}>
@@ -848,38 +854,177 @@ function AulaInaugural({ onBack }: { onBack: () => void }) {
           </button>
         </div>
 
-        {/* Header */}
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} style={{ marginBottom: 44 }}>
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 10, marginBottom: 16, padding: '5px 14px', borderRadius: 8, background: GOLD_B, border: `1px solid ${GOLD_BD}` }}>
-            <span style={{ fontSize: 22, fontWeight: 900, color: GOLD, fontVariantNumeric: 'tabular-nums' }}>01</span>
-            <span style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'rgba(255,200,80,0.70)' }}>Aula Inaugural</span>
+        {/* Cabeçalho */}
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} style={{ marginBottom: 48 }}>
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, marginBottom: 10, padding: '4px 12px', borderRadius: 7, background: GOLD_B, border: `1px solid ${GOLD_BD}` }}>
+            <span style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,200,80,0.75)' }}>Curso de Noivos · Material do Aluno</span>
           </div>
-          <h1 style={{ fontSize: 'clamp(24px,4.5vw,42px)', fontWeight: 900, lineHeight: 1.15, margin: '0 0 16px', background: `linear-gradient(135deg,rgba(255,255,255,0.95) 0%,${GOLD} 60%,rgba(255,230,140,0.75) 100%)`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-            O que é o Casamento?<br />A Perspectiva Bíblica e Reformada
+          <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.32)', marginBottom: 14 }}>
+            Aula Inaugural · Encontro 1
+          </div>
+          <h1 style={{ fontSize: 'clamp(26px,4.8vw,46px)', fontWeight: 900, lineHeight: 1.12, margin: '0 0 10px', background: `linear-gradient(135deg,rgba(255,255,255,0.95) 0%,${GOLD} 58%,rgba(255,230,140,0.72) 100%)`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+            A Aliança como Fundamento
           </h1>
-          <p style={{ fontSize: 'clamp(13px,1.8vw,15px)', color: 'rgba(255,255,255,0.48)', lineHeight: 1.75 }}>
-            Curso Preparatório para Noivos · Perspectiva Cristã Reformada
+          <p style={{ fontSize: 'clamp(13px,1.8vw,15px)', color: 'rgba(255,255,255,0.42)', lineHeight: 1.70, fontStyle: 'italic', margin: '0 0 20px' }}>
+            O casamento de vocês começa antes de vocês
           </p>
+          {/* Diagrama badge */}
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '7px 16px', borderRadius: 10, background: 'rgba(255,200,80,0.10)', border: `1px solid ${GOLD_BD}`, fontSize: 13, fontWeight: 800, color: GOLD }}>
+            Diagrama: Reino · Pacto · Mediador
+          </div>
         </motion.div>
 
-        {/* Seções */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
-          {sections.map((s, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.38, delay: 0.08 + i * 0.06 }}
-              style={{ borderRadius: 14, background: 'rgba(255,200,80,0.06)', border: `1px solid rgba(255,200,80,0.18)`, padding: '20px 22px', borderLeft: `3px solid ${GOLD}` }}
-            >
-              <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase', color: GOLD, marginBottom: 10 }}>
-                {s.label}
+        {/* Boas-vindas */}
+        <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.08 }} style={{ marginBottom: 32, padding: '18px 22px', borderRadius: 14, background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.09)' }}>
+          <Txt>Sejam bem-vindos! Este material acompanha o primeiro encontro do curso de noivos. Use-o durante a aula para acompanhar o ensino e anotar suas respostas, e leve-o para casa — vocês vão voltar a ele mais de uma vez ao longo do noivado.</Txt>
+        </motion.div>
+
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
+
+          {/* Duas palavras */}
+          <Bloco titulo="Duas Palavras para Guardar: Mandato e Aliança" delay={0.10}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))', gap: 14, marginBottom: 14 }}>
+              <div style={{ padding: '14px 16px', borderRadius: 10, background: 'rgba(52,211,153,0.08)', border: '1px solid rgba(52,211,153,0.22)' }}>
+                <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase', color: 'rgba(52,211,153,1)', marginBottom: 8 }}>Aliança (Pacto)</div>
+                <Verso ref="Gênesis 9.9" texto="Eis que eu estabeleço a minha aliança convosco e com a vossa descendência depois de vós." />
+                <Txt>Aliança é o compromisso solene pelo qual Deus se liga ao Seu povo — com promessas e responsabilidades dos dois lados, mas sempre testemunhado e sustentado pelo próprio Deus. Não é um trato entre iguais: é Deus quem toma a iniciativa e garante o cumprimento. Foi assim com Noé, com Abraão, com Israel no Sinai, com Davi, e culmina na nova aliança selada por Jesus (Lucas 22.20).</Txt>
               </div>
-              <div style={{ fontSize: 'clamp(13px,1.8vw,15px)', color: 'rgba(255,255,255,0.80)', lineHeight: 1.80, whiteSpace: 'pre-line' }}>
-                {s.content}
+              <div style={{ padding: '14px 16px', borderRadius: 10, background: 'rgba(180,120,255,0.08)', border: '1px solid rgba(180,120,255,0.22)' }}>
+                <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase', color: 'rgba(180,120,255,1)', marginBottom: 8 }}>Mandato</div>
+                <Verso ref="Gênesis 1.26-28" texto="Façamos o homem à nossa imagem... e domine... sede fecundos, multiplicai-vos, enchei a terra e sujeitai-a." />
+                <Txt>Mandato é a missão que Deus dá ao ser humano, como imagem dEle, para cuidar e cultivar a criação. Segundo o teólogo Gerard Van Groningen, esse mandato se desdobra em três dimensões: Mandato Espiritual (a comunhão com Deus), Mandato Social (a família) e Mandato Cultural (o trabalho, a arte, a cidade).</Txt>
               </div>
-            </motion.div>
-          ))}
+            </div>
+            <Txt>Segundo Van Groningen: Reino, Pacto e Mediadores formam uma só estrutura: Deus governa (Reino) por meio de alianças (Pacto), sempre através de agentes humanos representativos — de Adão a Abraão, Moisés e Davi — numa linha que a Bíblia conduz até Cristo, o único Mediador definitivo (1 Timóteo 2.5). Vocês, como casal, ocupam esse mesmo lugar de agentes — nunca de salvadores.</Txt>
+          </Bloco>
+
+          {/* Percurso */}
+          <Bloco titulo="Nosso Percurso — 8 Encontros (Agosto a Dezembro)" delay={0.14}>
+            <Txt style={{ marginBottom: 16 }}>Este é apenas o primeiro passo de uma caminhada de alguns meses. Os encontros presenciais marcam a abertura, um tema mais delicado e o encerramento do curso; os demais podem acontecer de forma híbrida. A coluna "Mandato" mostra onde cada tema se encaixa no diagrama — Espiritual, Social ou Cultural.</Txt>
+            <div style={{ overflowX: 'auto', marginTop: 10 }}>
+              <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 'clamp(11px,1.5vw,13px)' }}>
+                <thead>
+                  <tr style={{ borderBottom: '1px solid rgba(255,200,80,0.25)' }}>
+                    {['Nº','Quando','Tema','Pergunta que guia','Mandato'].map(h => (
+                      <th key={h} style={{ padding: '8px 10px', textAlign: 'left', fontSize: 10, fontWeight: 900, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'rgba(255,200,80,0.65)' }}>{h}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {ENCONTROS_TABLE.map((e, i) => (
+                    <tr key={e.num} style={{ borderBottom: '1px solid rgba(255,255,255,0.05)', background: e.num === 1 ? 'rgba(255,200,80,0.07)' : 'transparent' }}>
+                      <td style={{ padding: '9px 10px', fontWeight: 900, color: e.num === 1 ? GOLD : 'rgba(255,255,255,0.45)', whiteSpace: 'nowrap' }}>{String(e.num).padStart(2,'0')}</td>
+                      <td style={{ padding: '9px 10px', color: 'rgba(255,255,255,0.50)', whiteSpace: 'nowrap' }}>{e.quando}</td>
+                      <td style={{ padding: '9px 10px', color: e.num === 1 ? 'rgba(255,255,255,0.88)' : 'rgba(255,255,255,0.60)', fontWeight: e.num === 1 ? 700 : 400 }}>{e.tema}</td>
+                      <td style={{ padding: '9px 10px', color: 'rgba(255,255,255,0.45)', fontStyle: 'italic' }}>{e.pergunta}</td>
+                      <td style={{ padding: '9px 10px', whiteSpace: 'nowrap' }}>
+                        <span style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.12em', color: MANDATO_COR[e.mandato] ?? GOLD, background: `${MANDATO_COR[e.mandato] ?? GOLD}18`, border: `1px solid ${MANDATO_COR[e.mandato] ?? GOLD}40`, borderRadius: 5, padding: '2px 7px' }}>{e.mandato}</span>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <div style={{ marginTop: 14, fontSize: 'clamp(12px,1.6vw,13.5px)', color: 'rgba(255,255,255,0.42)', fontStyle: 'italic' }}>
+              O curso inteiro é o próprio diagrama sendo desdobrado, encontro após encontro.
+            </div>
+          </Bloco>
+
+          {/* O que vamos aprender hoje */}
+          <Bloco titulo="O que Vamos Aprender Hoje" delay={0.17}>
+            <Txt>O diagrama que vocês viram na capa vai guiar todo o nosso curso. Hoje vamos entender quatro ideias simples, mas que mudam a forma de olhar para o casamento.</Txt>
+          </Bloco>
+
+          {/* I */}
+          <Bloco titulo="Mandato Espiritual (I) — O Casamento Começa em Deus, Não em Vocês" delay={0.20}>
+            <Verso ref="Gênesis 1.26" texto='Deus disse: "Façamos o homem à nossa imagem, conforme a nossa semelhança."' />
+            <Txt>{`No topo do diagrama estão o Pai, o Filho e o Espírito. Antes de existir qualquer casal, já existia comunhão perfeita dentro do próprio Deus. Isso muda a forma de olhar para o casamento: ele não é um projeto que vocês vão inventar do zero — é um convite para refletir, em carne humana, uma comunhão que já existe eternamente. Vocês não precisam criar a intimidade e a fidelidade a partir de si mesmos; podem recebê-las de Deus e aprender a vivê-las, dia após dia.\n\nIsso aponta para Cristo e o Espírito: o Pai enviou o Filho para restaurar a comunhão que o pecado quebrou (João 1.14; Colossenses 1.19-20), e hoje o Espírito Santo habita no casal cristão, derramando o próprio amor de Deus em nossos corações (Romanos 5.5). A comunhão que vocês buscam no casamento só é plenamente possível porque Cristo já reconciliou o que estava separado.`}</Txt>
+          </Bloco>
+
+          {/* II */}
+          <Bloco titulo="Mandato Espiritual (II) — O Casamento Está sob o Governo de Deus" delay={0.23}>
+            <Verso ref="Salmo 103.19" texto="O Senhor estabeleceu nos céus o seu trono, e o seu reino domina sobre tudo." />
+            <Txt>{`As linhas diagonais do diagrama, marcadas "Reino", envolvem toda a figura. Nada no casamento de vocês vai ficar fora do governo de Deus — nem as finanças, nem a intimidade, nem as brigas, nem a rotina do dia a dia. Isso não é uma ameaça; é uma proteção. Significa que vocês não vão precisar resolver tudo sozinhos, pelo próprio critério — há um Rei que já estabeleceu o padrão certo e que caminha com vocês em cada decisão.\n\nIsso aponta para Cristo e o Espírito: o Reino que envolve o casamento de vocês foi inaugurado por Jesus (Marcos 1.15) e é vivido, no dia a dia, pelo poder do Espírito Santo — "o Reino de Deus... é justiça, paz e alegria no Espírito Santo" (Romanos 14.17). Render-se ao governo de Deus é, na prática, render-se ao senhorio de Cristo, sustentado pelo Espírito.`}</Txt>
+          </Bloco>
+
+          {/* III */}
+          <Bloco titulo="Mandato Espiritual (III) — O Casamento É Pacto, Não Contrato" delay={0.26}>
+            <Verso ref="Malaquias 2.14" texto="Ela é tua companheira e a mulher da tua aliança." />
+            <Verso ref="Gênesis 2.24" texto="Por isso deixará o homem pai e mãe e se unirá à sua mulher, e serão uma só carne." />
+            <Txt>{`Um contrato pode ser desfeito quando uma das partes não cumpre sua parte. Um pacto bíblico é diferente: é uma promessa feita diante de Deus, que Ele mesmo testemunha e sustenta. Malaquias chama a esposa de "mulher da aliança" — não "parceira contratual". É isso que vocês estão prestes a viver: não um acordo que pode ser cancelado quando as coisas ficarem difíceis, mas um pacto diante de Deus, que Ele mesmo vai ajudar vocês a cumprir.\n\nIsso aponta para Cristo e o Espírito: nenhum casal cumpre perfeitamente sua parte no pacto — por isso Deus enviou Jesus como o Mediador de uma aliança melhor, que garante o que nós não conseguimos garantir sozinhos (Hebreus 8.6; 9.15). E é o Espírito Santo quem cumpre em nós a promessa antiga: "Porei dentro de vós o meu Espírito" (Ezequiel 36.26-27) — Ele nos capacita a viver fiéis à aliança que vocês vão fazer.`}</Txt>
+          </Bloco>
+
+          {/* IV */}
+          <Bloco titulo="Mandato Social e Mandato Cultural — Chamados para uma Missão" delay={0.29}>
+            <Verso ref="Gênesis 1.28" texto="Deus os abençoou e disse: sede fecundos, multiplicai-vos, enchei a terra e sujeitai-a." />
+            <Txt>{`No centro do diagrama estão os "Mediadores (agentes)" — o próprio casal, e não Cristo, que é o único Mediador entre Deus e os homens (1 Timóteo 2.5). Da união de vocês nascem coisas: uma casa organizada (Mandato Social) e uma influência que chega ao trabalho, à cidade, à arte, à igreja (Mandato Cultural). O casamento cristão não existe só para fazer os dois felizes — embora a alegria seja parte real do plano de Deus. Ele existe para que, unidos, vocês representem a aliança de Deus no mundo: em casa, no trabalho, na vizinhança, na igreja.\n\nIsso aponta para Cristo e o Espírito: a missão de gerar fruto para o mundo — que começou em Gênesis como mandato cultural — é retomada e ampliada por Jesus na Grande Comissão: "fazei discípulos de todas as nações" (Mateus 28.18-20). E é o Espírito Santo quem dá poder para essa missão (Atos 1.8). O casamento de vocês participa, em pequena escala, da grande obra de Deus na história da redenção — do jardim do Éden até a nova criação.`}</Txt>
+          </Bloco>
+
+          {/* Para conversar */}
+          <Bloco titulo="Para Conversar em Casal" delay={0.32}>
+            <div style={{ marginBottom: 12, fontSize: 'clamp(12px,1.6vw,13.5px)', color: 'rgba(255,255,255,0.45)', fontStyle: 'italic' }}>
+              Reservem alguns minutos, só vocês dois, para conversar e escrever as respostas abaixo. Não existe resposta certa — o objetivo é começar a colocar em palavras o que vocês pensam e sentem sobre o casamento.
+            </div>
+            <Pergunta n={1} texto={'Até hoje, o que vocês vinham considerando como a “base” do nosso relacionamento? Como isso se compara com a ideia de que o casamento nasce da comunhão de Deus?'} />
+            <Pergunta n={2} texto={'Existe alguma área da nossa vida que já tratamos como “assunto nosso”, fora do que a Palavra de Deus ensina? Qual?'} />
+            <Pergunta n={3} texto="Se o nosso casamento vai ser uma aliança testemunhada por Deus, e não um contrato entre nós, o que isso muda na forma como vamos encarar os momentos difíceis?" />
+            <Pergunta n={4} texto={'Que “fruto para fora” — família, trabalho, igreja, cidade — nós sonhamos em gerar juntos, além da nossa própria felicidade?'} />
+            <Pergunta n={5} texto="Em qual dos quatro pontos de hoje mais precisamos lembrar que é Jesus quem cumpre por nós, e o Espírito Santo quem nos capacita — e não o nosso próprio esforço?" />
+          </Bloco>
+
+          {/* Nosso combinado */}
+          <Bloco titulo="Nosso Combinado" delay={0.35}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
+              <div>
+                <div style={{ fontSize: 'clamp(13px,1.7vw,14.5px)', color: 'rgba(255,255,255,0.70)', marginBottom: 6 }}>Vamos priorizar os encontros deste curso porque...</div>
+                <div style={{ height: 36, borderBottom: '1px solid rgba(255,200,80,0.20)', borderRadius: 0 }} />
+              </div>
+              <div>
+                <div style={{ fontSize: 'clamp(13px,1.7vw,14.5px)', color: 'rgba(255,255,255,0.70)', marginBottom: 6 }}>Uma pergunta que queremos levar para o próximo encontro é...</div>
+                <div style={{ height: 36, borderBottom: '1px solid rgba(255,200,80,0.20)' }} />
+              </div>
+            </div>
+          </Bloco>
+
+          {/* Para guardar */}
+          <motion.div initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.38 }}
+            style={{ borderRadius: 14, background: 'rgba(255,200,80,0.10)', border: `1.5px solid ${GOLD_BD}`, padding: '22px 24px', textAlign: 'center' }}>
+            <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: GOLD, marginBottom: 12 }}>Para Guardar no Coração</div>
+            <div style={{ fontSize: 'clamp(15px,2.2vw,18px)', fontWeight: 800, color: 'rgba(255,255,255,0.88)', lineHeight: 1.5, marginBottom: 10, fontStyle: 'italic' }}>
+              "E o cordão de três dobras não se quebra tão depressa."
+            </div>
+            <div style={{ fontSize: 11, color: GOLD, fontWeight: 700, letterSpacing: '0.12em', marginBottom: 14 }}>Eclesiastes 4.12</div>
+            <div style={{ fontSize: 'clamp(13px,1.7vw,14.5px)', color: 'rgba(255,255,255,0.55)', lineHeight: 1.80 }}>
+              Que o casamento de vocês seja, desde já, um cordão de três dobras: você, seu noivo ou noiva, e Deus no centro, segurando tudo junto. Essa história não começa em vocês, nem termina em vocês. Ela começou no jardim do Éden, foi restaurada por Jesus na cruz, é sustentada hoje pelo Espírito Santo, e aponta para as bodas do Cordeiro (Apocalipse 19.7-9) — o casamento final entre Cristo e a Sua Igreja. O casamento de vocês é um pequeno reflexo dessa grande história.
+            </div>
+          </motion.div>
+
+          {/* Referências */}
+          <Bloco titulo="Referências" delay={0.41}>
+            {[
+              'BAVINCK, Herman. Reformed Dogmatics. Grand Rapids: Baker Academic, 2003-2008. 4 v.',
+              'BERKHOF, Louis. Teologia Sistemática. São Paulo: Cultura Cristã, 2014.',
+              'CALVINO, João. As Institutas da Religião Cristã. São Paulo: Cultura Cristã, 2006.',
+              'CONFISSÃO DE FÉ BATISTA DE 1689. São Paulo: Editora Fiel, 2004.',
+              'CONFISSÃO DE FÉ DE WESTMINSTER. São Paulo: Cultura Cristã, 1999.',
+              'DEVER, Mark. As Nove Marcas de uma Igreja Saudável. São Paulo: Editora Fiel, 2011.',
+              'GRUDEM, Wayne. Teologia Sistemática. São Paulo: Vida Nova, 1999.',
+              'HORTON, Michael. Introducing Covenant Theology. Grand Rapids: Baker Books, 2006.',
+              'KLINE, Meredith G. Kingdom Prologue. Eugene: Wipf & Stock, 2006.',
+              'KUYPER, Abraham. Calvinismo. São Paulo: Cultura Cristã, 2005.',
+              'OWEN, John. A Comunhão com Deus. São Paulo: Editora Fiel, 2004.',
+              'ROBERTSON, O. Palmer. O Cristo das Alianças. São Paulo: Cultura Cristã, 2010.',
+              'SPROUL, R. C. Verdades que Sabemos. São Paulo: Cultura Cristã, 2015.',
+              'SPURGEON, Charles Haddon. Teologia Sistemática de Spurgeon. Rio de Janeiro: CPAD, 2013.',
+              'VAN GRONINGEN, Gerard. Messianic Revelation in the Old Testament. Grand Rapids: Baker Book House, 1990.',
+              'VOS, Geerhardus. Teologia Bíblica: Antigo e Novo Testamento. São Paulo: Cultura Cristã, 2010.',
+            ].map((ref, i) => (
+              <div key={i} style={{ fontSize: 'clamp(11px,1.5vw,12.5px)', color: 'rgba(255,255,255,0.45)', lineHeight: 1.75, borderBottom: i < 15 ? '1px solid rgba(255,255,255,0.05)' : 'none', padding: '6px 0' }}>
+                {ref}
+              </div>
+            ))}
+          </Bloco>
+
         </div>
       </div>
     </div>
