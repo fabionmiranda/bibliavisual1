@@ -622,6 +622,270 @@ function PericopeCard({
   );
 }
 
+// ─── Noivos — aulas ──────────────────────────────────────────────────
+const GOLD = 'rgba(255,200,80,1)';
+const GOLD_B = 'rgba(255,200,80,0.15)';
+const GOLD_BD = 'rgba(255,200,80,0.44)';
+
+const AULAS_NOIVOS = [
+  {
+    num: 1,
+    titulo: 'Aula Inaugural',
+    subtitulo: 'O que é o Casamento? A Perspectiva Bíblica e Reformada',
+    desc: 'Fundamentos: definição bíblica do casamento, sua origem em Deus, seu caráter de aliança e seu propósito redentor — à luz de Gênesis 2, Efésios 5 e da Confissão de Fé de Westminster.',
+    refs: 'Gn 2:18–25 · Ef 5:22–33 · CFW XXIV',
+    available: true,
+  },
+  {
+    num: 2,
+    titulo: 'Aula 2',
+    subtitulo: 'Aliança Conjugal: Deixar, Unir e Ser Uma Só Carne',
+    desc: 'O que significa "deixar pai e mãe"? A ruptura necessária, a nova unidade e a integralidade do vínculo conjugal — corpo, alma e espírito.',
+    refs: 'Gn 2:24 · Mc 10:6–9 · Ml 2:14',
+    available: false,
+  },
+  {
+    num: 3,
+    titulo: 'Aula 3',
+    subtitulo: 'Liderança e Submissão: Complementaridade sem Hierarquia Opressiva',
+    desc: 'O modelo bíblico de liderança servant-leadership e a submissão voluntária como reflexo da relação Cristo-Igreja — contra o igualitarismo e o patriarcalismo abusivo.',
+    refs: 'Ef 5:22–33 · 1Pe 3:1–7 · Cl 3:18–19',
+    available: false,
+  },
+  {
+    num: 4,
+    titulo: 'Aula 4',
+    subtitulo: 'Comunicação, Conflito e Reconciliação',
+    desc: 'Padrões de comunicação destrutivos e construtivos. Como o evangelho transforma o conflito conjugal em oportunidade de graça e crescimento mútuo.',
+    refs: 'Ef 4:26–32 · Tg 1:19–20 · Mt 18:15–17',
+    available: false,
+  },
+  {
+    num: 5,
+    titulo: 'Aula 5',
+    subtitulo: 'Sexualidade no Casamento: Dom, Santidade e Propósito',
+    desc: 'A sexualidade como criação boa de Deus, seu lugar exclusivo no casamento, a teologia do corpo e a santificação da intimidade conjugal.',
+    refs: 'Gn 1:27–28 · Ct 1–8 · 1Co 7:1–5 · CFW XXIV.2',
+    available: false,
+  },
+  {
+    num: 6,
+    titulo: 'Aula 6',
+    subtitulo: 'Finanças, Mordomia e Vocação',
+    desc: 'O dinheiro como ferramenta de missão, não de identidade. Princípios bíblicos de mordomia, orçamento conjugal e vocação como serviço ao reino.',
+    refs: 'Pv 31:10–31 · Lc 16:10–13 · 2Co 9:6–8',
+    available: false,
+  },
+  {
+    num: 7,
+    titulo: 'Aula 7',
+    subtitulo: 'A Família como Igreja Doméstica',
+    desc: 'O lar como espaço de adoração, catequese e missão. O culto familiar, a educação dos filhos na fé e o testemunho da família no bairro e na comunidade.',
+    refs: 'Dt 6:4–9 · Ef 6:1–4 · At 2:46 · CFW XXV',
+    available: false,
+  },
+  {
+    num: 8,
+    titulo: 'Aula 8',
+    subtitulo: 'Casamento, Sofrimento e Perseverança',
+    desc: 'Como o evangelho sustenta o casamento nas estações de dor — perda, doença, infertilidade, crise — e o que significa perseverar com graça e esperança escatológica.',
+    refs: 'Rm 8:18–28 · 2Co 4:16–18 · Jó 2:9–10',
+    available: false,
+  },
+];
+
+function AulaCard({ aula, cor, onOpen }: { aula: typeof AULAS_NOIVOS[0]; cor: string; onOpen: () => void }) {
+  const available = aula.available;
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 22 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.4, delay: aula.num * 0.06 }}
+      onClick={() => available && onOpen()}
+      style={{
+        position: 'relative',
+        borderRadius: 16,
+        background: available ? GOLD_B : 'rgba(255,255,255,0.03)',
+        border: `1.5px solid ${available ? GOLD_BD : 'rgba(255,255,255,0.08)'}`,
+        padding: '22px 22px 20px',
+        cursor: available ? 'pointer' : 'default',
+        opacity: available ? 1 : 0.48,
+        overflow: 'hidden',
+      }}
+      whileHover={available ? { scale: 1.02, boxShadow: `0 6px 32px ${GOLD_BD}` } : {}}
+      whileTap={available ? { scale: 0.97 } : {}}
+    >
+      <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 3, background: `linear-gradient(90deg,${GOLD} 0%,transparent 100%)`, borderRadius: '16px 16px 0 0', opacity: available ? 1 : 0.25 }} />
+
+      {!available && (
+        <div style={{ position: 'absolute', top: 12, right: 12, fontSize: 9, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.28)', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.09)', borderRadius: 5, padding: '3px 7px' }}>
+          Em breve
+        </div>
+      )}
+
+      {/* Número */}
+      <div style={{ fontSize: 28, fontWeight: 900, color: available ? GOLD : 'rgba(255,255,255,0.20)', letterSpacing: '0.04em', lineHeight: 1, marginBottom: 12, fontVariantNumeric: 'tabular-nums' }}>
+        {String(aula.num).padStart(2, '0')}
+      </div>
+
+      <div style={{ fontSize: 'clamp(13px,1.8vw,15px)', fontWeight: 800, color: available ? 'rgba(255,255,255,0.90)' : 'rgba(255,255,255,0.35)', lineHeight: 1.3, marginBottom: 6 }}>
+        {aula.subtitulo}
+      </div>
+
+      <p style={{ fontSize: 'clamp(11px,1.5vw,12.5px)', color: 'rgba(255,255,255,0.42)', lineHeight: 1.65, margin: '0 0 12px' }}>
+        {aula.desc}
+      </p>
+
+      <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.10em', color: available ? 'rgba(255,200,80,0.65)' : 'rgba(255,255,255,0.20)', fontStyle: 'italic' }}>
+        {aula.refs}
+      </div>
+
+      {available && (
+        <div style={{ marginTop: 16, fontSize: 11, fontWeight: 900, letterSpacing: '0.14em', textTransform: 'uppercase', color: GOLD }}>
+          Abrir aula →
+        </div>
+      )}
+    </motion.div>
+  );
+}
+
+function NoivosHub({ onBack, onAula }: { onBack: () => void; onAula: (num: number) => void }) {
+  return (
+    <div style={{ minHeight: '100vh', background: C.bg, color: C.white }}>
+      <Navbar />
+      <div style={{ maxWidth: 1060, margin: '0 auto', padding: 'clamp(90px,11vw,110px) clamp(16px,4vw,32px) 80px' }}>
+
+        {/* Voltar */}
+        <div style={{ marginBottom: 32 }}>
+          <button onClick={onBack} style={{ display: 'inline-flex', alignItems: 'center', gap: 7, fontSize: 12, fontWeight: 900, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(255,200,80,0.70)', background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}>
+            ← Voltar
+          </button>
+        </div>
+
+        {/* Hero */}
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} style={{ marginBottom: 44 }}>
+          <div style={{ fontSize: 'clamp(10px,1.4vw,12px)', fontWeight: 900, letterSpacing: '0.32em', textTransform: 'uppercase', marginBottom: 12, background: `linear-gradient(90deg,${GOLD},rgba(255,230,140,1))`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+            Curso Pré-Matrimonial Reformado
+          </div>
+          <h1 style={{ fontSize: 'clamp(28px,5vw,48px)', fontWeight: 900, lineHeight: 1.1, margin: '0 0 16px', background: `linear-gradient(135deg,rgba(255,255,255,0.95) 0%,${GOLD} 60%,rgba(255,230,140,0.75) 100%)`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+            Preparatório para Noivos
+          </h1>
+          <p style={{ fontSize: 'clamp(13px,1.8vw,16px)', color: 'rgba(255,255,255,0.50)', maxWidth: 620, lineHeight: 1.75 }}>
+            Oito aulas expositivas com fundamento nas Escrituras, na Confissão de Fé de Westminster e nos autores reformados — para construir o casamento sobre a Rocha.
+          </p>
+        </motion.div>
+
+        {/* Grid de aulas */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(280px,1fr))', gap: 18 }}>
+          {AULAS_NOIVOS.map(aula => (
+            <AulaCard key={aula.num} aula={aula} cor={GOLD} onOpen={() => onAula(aula.num)} />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ─── Aula Inaugural — conteúdo ───────────────────────────────────────
+function AulaInaugural({ onBack }: { onBack: () => void }) {
+  const sections = [
+    {
+      label: 'Texto Base',
+      content: 'Gênesis 2:18–25 · Efésios 5:22–33 · Confissão de Fé de Westminster, Cap. XXIV',
+      color: GOLD,
+    },
+    {
+      label: 'Big Idea',
+      content: 'O casamento não é invenção humana nem contrato social — é instituição divina, aliança sagrada e parábola viva da relação de Cristo com a Igreja.',
+      color: GOLD,
+    },
+    {
+      label: 'I. O Problema da Solidão e o Diagnóstico de Deus (Gn 2:18)',
+      content: 'Deus declara: "Não é bom que o homem esteja só." Esta é a única coisa na criação que Deus qualifica de "não boa" antes da queda — não um defeito do homem, mas um desígnio do Criador. A solidão relacional é a condição que prepara a revelação do casamento. Deus não diz "resolva sua solidão" — Ele diz "Eu proverei." Lição para noivos: o casamento não nasce da nossa necessidade, mas da provisão soberana de Deus.',
+      color: GOLD,
+    },
+    {
+      label: 'II. O Design da Complementaridade (Gn 2:19–23)',
+      content: 'Adão nomeia os animais e nenhum é "semelhante a ele" — a busca revela a especificidade do que falta. Eva não é idêntica a Adão nem inferior: é "carne da sua carne" — mesma essência, forma distinta. A complementaridade bíblica não é hierarquia de valor, mas diferença de função a serviço da unidade. Herman Bavinck: "O homem e a mulher são iguais em dignidade, distintos em vocação — e essa distinção é glória, não limitação."',
+      color: GOLD,
+    },
+    {
+      label: 'III. A Estrutura da Aliança: Deixar, Unir, Uma Só Carne — CENTRO ◉ (Gn 2:24)',
+      content: '"Por isso, o homem deixará pai e mãe, se unirá à sua mulher, e serão uma só carne." Três verbos — três realidades aliançosas:\n\n▸ DEIXAR — ruptura de dependências anteriores. Não abandono, mas reordenação de lealdades. O lar de origem cede lugar ao novo lar.\n▸ UNIR — adesão voluntária, permanente e exclusiva. O hebraico dabaq ("colar-se") sugere intimidade inquebrável.\n▸ UMA SÓ CARNE — integração total: física, emocional, espiritual, social. O casamento é o único relacionamento humano que aspira à completude da união.\n\nCFW XXIV.1: "O casamento é uma instituição ordenada por Deus, para a glória d\'Ele e o bem mútuo dos cônjuges."',
+      color: GOLD,
+    },
+    {
+      label: 'IV. O Casamento como Parábola Redentor (Ef 5:22–33)',
+      content: 'Paulo revela o mistério: o casamento não é apenas instituição social — é ícone da relação de Cristo com a Igreja. O marido ama como Cristo amou: sacrificialmente, purificando, sem exigir. A esposa responde como a Igreja responde a Cristo: com confiança, não com medo. Joel Beeke (Reformed Preaching): "O casamento cristão é evangelismo silencioso — o mundo que não ouve sermões pode ver Cristo e a Igreja no casal que vive o Evangelho em casa."',
+      color: GOLD,
+    },
+    {
+      label: 'Teologia Reformada',
+      content: '▸ CFW XXIV.2: "O casamento foi ordenado para a ajuda mútua de marido e mulher, para a multiplicação da raça humana com uma prole legítima e para a Igreja com uma semente santa, e para prevenir a impureza."\n▸ Herman Bavinck (A Ética Reformada): "O casamento é a mais íntima das comunidades humanas — imagem da comunhão trinitária de amor."\n▸ John Calvin (Inst. II.8.41): "O casamento é santo e honroso porque foi ordenado por Deus — não como concessão à fraqueza, mas como vocação à santidade."\n▸ J.C. Ryle (Santidade): "Não há santificação maior do que a que acontece no lar. É lá que o caráter real é revelado e moldado."\n▸ Voddie Baucham (O Que Ele Deve Ser): "O casamento cristão é a unidade fundamental da civilização e da missão — quando o lar perece, a Igreja e a sociedade perecem."',
+      color: GOLD,
+    },
+    {
+      label: 'Aplicações para os Noivos',
+      content: '▸ Examinem juntos: o que vocês ainda precisam "deixar" — dependências emocionais, financeiras ou de lealdade — antes do altar?\n▸ Conversem sobre o que "unir-se" significa concretamente na rotina: decisões, finanças, amizades, família de origem.\n▸ Como a parábola de Cristo e a Igreja moldará os papéis de cada um dentro do casamento de vocês?\n▸ Orem juntos agora: "Senhor, que nosso casamento seja um testemunho do Teu amor pelo Teu povo."',
+      color: GOLD,
+    },
+    {
+      label: 'Para Reflexão e Discussão',
+      content: '1. Qual é a diferença entre um contrato e uma aliança? Como isso muda a forma de encarar os momentos difíceis do casamento?\n2. O que Gênesis 2:24 implica sobre a relação com as famílias de origem após o casamento?\n3. Como o modelo de Cristo em Efésios 5 desafia o modelo cultural dominante de casamento?\n4. Que expectativas vocês trazem para o casamento que podem precisar ser revisadas à luz das Escrituras?\n5. Quais disciplinas espirituais vocês comprometem cultivar juntos desde o primeiro dia?',
+      color: GOLD,
+    },
+  ];
+
+  return (
+    <div style={{ minHeight: '100vh', background: C.bg, color: C.white }}>
+      <Navbar />
+      <div style={{ maxWidth: 860, margin: '0 auto', padding: 'clamp(90px,11vw,110px) clamp(16px,4vw,32px) 80px' }}>
+
+        {/* Voltar */}
+        <div style={{ marginBottom: 32 }}>
+          <button onClick={onBack} style={{ display: 'inline-flex', alignItems: 'center', gap: 7, fontSize: 12, fontWeight: 900, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(255,200,80,0.70)', background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}>
+            ← Aulas
+          </button>
+        </div>
+
+        {/* Header */}
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} style={{ marginBottom: 44 }}>
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 10, marginBottom: 16, padding: '5px 14px', borderRadius: 8, background: GOLD_B, border: `1px solid ${GOLD_BD}` }}>
+            <span style={{ fontSize: 22, fontWeight: 900, color: GOLD, fontVariantNumeric: 'tabular-nums' }}>01</span>
+            <span style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'rgba(255,200,80,0.70)' }}>Aula Inaugural</span>
+          </div>
+          <h1 style={{ fontSize: 'clamp(24px,4.5vw,42px)', fontWeight: 900, lineHeight: 1.15, margin: '0 0 16px', background: `linear-gradient(135deg,rgba(255,255,255,0.95) 0%,${GOLD} 60%,rgba(255,230,140,0.75) 100%)`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+            O que é o Casamento?<br />A Perspectiva Bíblica e Reformada
+          </h1>
+          <p style={{ fontSize: 'clamp(13px,1.8vw,15px)', color: 'rgba(255,255,255,0.48)', lineHeight: 1.75 }}>
+            Curso Preparatório para Noivos · Perspectiva Cristã Reformada
+          </p>
+        </motion.div>
+
+        {/* Seções */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
+          {sections.map((s, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.38, delay: 0.08 + i * 0.06 }}
+              style={{ borderRadius: 14, background: 'rgba(255,200,80,0.06)', border: `1px solid rgba(255,200,80,0.18)`, padding: '20px 22px', borderLeft: `3px solid ${GOLD}` }}
+            >
+              <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase', color: GOLD, marginBottom: 10 }}>
+                {s.label}
+              </div>
+              <div style={{ fontSize: 'clamp(13px,1.8vw,15px)', color: 'rgba(255,255,255,0.80)', lineHeight: 1.80, whiteSpace: 'pre-line' }}>
+                {s.content}
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 // ─── Hub landing ─────────────────────────────────────────────────────
 const HUB_ITEMS = [
   {
@@ -642,7 +906,7 @@ const HUB_ITEMS = [
     color: 'rgba(255,200,80,1)',
     colorB: 'rgba(255,200,80,0.14)',
     colorBorder: 'rgba(255,200,80,0.42)',
-    available: false,
+    available: true,
   },
   {
     id: 'casados',
@@ -741,7 +1005,7 @@ function FamiliaHub({ onSelect }: { onSelect: (id: string) => void }) {
 
 // ─── Main Page ───────────────────────────────────────────────────────
 export default function FamiliaPage() {
-  const [view, setView] = useState<'hub' | 'esbocos'>('hub');
+  const [view, setView] = useState<'hub' | 'esbocos' | 'noivos' | 'aula-inaugural'>('hub');
   const [selectedBook, setSelectedBook] = useState<BibleBook>(BIBLE_BOOKS[0]);
   const [pericopes, setPericopes] = useState<Pericope[]>([]);
   const [loadingPericopes, setLoadingPericopes] = useState(false);
@@ -809,7 +1073,12 @@ export default function FamiliaPage() {
     { label: 'Epístolas',   t: 'NT', slugs: ['atos','romanos','1corintios','2corintios','galatas','efesios','filipenses','colossenses','1tessalonicenses','2tessalonicenses','1timoteo','2timoteo','tito','filemom','hebreus','tiago','1pedro','2pedro','1joao','2joao','3joao','judas','apocalipse'] },
   ] as const;
 
-  if (view === 'hub') return <FamiliaHub onSelect={(id) => { if (id === 'esbocos') setView('esbocos'); }} />;
+  if (view === 'hub') return <FamiliaHub onSelect={(id) => {
+    if (id === 'esbocos') setView('esbocos');
+    if (id === 'noivos') setView('noivos');
+  }} />;
+  if (view === 'noivos') return <NoivosHub onBack={() => setView('hub')} onAula={(num) => { if (num === 1) setView('aula-inaugural'); }} />;
+  if (view === 'aula-inaugural') return <AulaInaugural onBack={() => setView('noivos')} />;
 
   return (
     <div style={{ minHeight: '100vh', background: C.bg, color: C.white }} onClick={() => setBookDropOpen(false)}>
