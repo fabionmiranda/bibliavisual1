@@ -966,17 +966,39 @@ const RPM_DEFS = [
 ];
 
 function DiagramaRPM() {
-  const W = 900, H = 500;
-  const cx = W / 2, cy = H / 2 + 10;
+  // SVG dimensions
+  const W = 1000, H = 760;
+  const cx = W / 2;
 
-  // Três nós em linha horizontal com arcos de conexão
-  const nos = [
-    { id: 'reino',      x: 160,    y: cy,      cor: GOLD,   icone: '👑', label: 'REINO' },
-    { id: 'pacto',      x: cx,     y: cy - 60, cor: SPIRIT, icone: '📜', label: 'PACTO' },
-    { id: 'mediadores', x: W - 160, y: cy,     cor: CULT,   icone: '🤝', label: 'MEDIADORES' },
+  // Key layout coordinates
+  const deusBox = { x: cx - 130, y: 60, w: 260, h: 90 };
+  const deusCx = cx, deusCy = deusBox.y + deusBox.h / 2;
+
+  // Ellipse center and radii
+  const elCx = cx, elCy = 450, elRx = 340, elRy = 210;
+
+  // Triangle inside ellipse (HOMEM|MULHER apex, DESCENDÊNCIA base center)
+  const triTop = { x: cx, y: elCy - 80 };       // HOMEM | MULHER
+  const triLeft = { x: cx - 90, y: elCy + 80 }; // left base
+  const triRight = { x: cx + 90, y: elCy + 80 }; // right base
+  const triBaseMid = { x: cx, y: elCy + 80 };    // DESCENDÊNCIA
+
+  // Radial targets (left side)
+  const leftTargets = [
+    { label: 'POLÍTICA',  x: elCx - elRx + 60,  y: elCy - 130 },
+    { label: 'TRABALHO',  x: elCx - elRx + 40,  y: elCy - 10  },
+    { label: 'COMÉRCIO',  x: elCx - elRx + 55,  y: elCy + 110 },
+    { label: 'ARTES',     x: elCx - 120,         y: elCy + 165 },
+  ];
+  // Radial targets (right side)
+  const rightTargets = [
+    { label: 'INDÚSTRIA',   x: elCx + elRx - 60,  y: elCy - 130 },
+    { label: 'TECNOLOGIA',  x: elCx + elRx - 40,  y: elCy - 10  },
+    { label: 'RECREAÇÃO',   x: elCx + elRx - 55,  y: elCy + 110 },
   ];
 
-  const arrows = [['arwRg',GOLD],['arwSp',SPIRIT],['arwCl',CULT],['arwW','rgba(255,255,255,0.45)']] as [string,string][];
+  // Radial center (midpoint of triangle)
+  const radCx = cx, radCy = elCy - 10;
 
   return (
     <motion.div
@@ -997,99 +1019,208 @@ function DiagramaRPM() {
         </span>
       </div>
       <div style={{ textAlign: 'center', marginBottom: 24 }}>
-        <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.38)', fontStyle: 'italic' }}>
-          A estrutura pela qual Deus governa a história da redenção
+        <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.38)', fontStyle: 'italic', letterSpacing: '0.08em', textTransform: 'uppercase' as const }}>
+          Relacionamentos
         </span>
       </div>
 
       {/* SVG */}
-      <div style={{ width: '100%', maxWidth: 900, margin: '0 auto' }}>
+      <div style={{ width: '100%', maxWidth: 1000, margin: '0 auto' }}>
         <svg viewBox={`0 0 ${W} ${H}`} style={{ width: '100%', height: 'auto', display: 'block' }}>
           <defs>
-            <radialGradient id="rBg" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stopColor="rgba(255,200,80,0.05)" />
-              <stop offset="100%" stopColor="rgba(5,7,26,0)" />
-            </radialGradient>
-            <filter id="rGlow" x="-50%" y="-50%" width="200%" height="200%">
-              <feGaussianBlur stdDeviation="8" result="b"/>
+            {/* Arrow markers */}
+            <marker id="arwGold" markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto">
+              <path d="M0,0 L0,7 L9,3.5 z" fill={GOLD} opacity="0.85"/>
+            </marker>
+            <marker id="arwDown" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+              <path d="M0,0 L8,4 L0,8 z" fill={GOLD} opacity="0.80"/>
+            </marker>
+            <filter id="rpmGlow" x="-40%" y="-40%" width="180%" height="180%">
+              <feGaussianBlur stdDeviation="6" result="b"/>
               <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
             </filter>
-            <filter id="rSoft" x="-80%" y="-80%" width="260%" height="260%">
-              <feGaussianBlur stdDeviation="18" result="b"/>
-              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-            </filter>
-            {arrows.map(([id,col]) => (
-              <marker key={id} id={id} markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto">
-                <path d="M0,0 L0,7 L9,3.5 z" fill={col} opacity="0.9"/>
-              </marker>
-            ))}
           </defs>
 
-          <ellipse cx={cx} cy={cy} rx="430" ry="230" fill="url(#rBg)" />
+          {/* Background rounded rect */}
+          <rect x="0" y="0" width={W} height={H} rx="20" fill="rgba(10,14,40,0.6)" />
 
-          {/* ── Moldura HISTÓRIA DA REDENÇÃO ── */}
-          <rect x="14" y="14" width={W-28} height={H-28} rx="24" fill="none" stroke={GOLD} strokeWidth="1.2" strokeDasharray="6 5" opacity="0.20"/>
-          <text x={cx} y="11" textAnchor="middle" fill={GOLD} fontSize="11" fontWeight="900" letterSpacing="3.5" opacity="0.55">HISTÓRIA DA REDENÇÃO</text>
-          <text x={cx} y={H-6} textAnchor="middle" fill="rgba(255,255,255,0.25)" fontSize="9.5" letterSpacing="1.5" fontStyle="italic">Gênesis → Éxodo → Profetas → Cristo → Nova Criação</text>
+          {/* Title line: REINO — PACTO — MEDIADOR */}
+          <text x={cx} y={36} textAnchor="middle" fill="rgba(255,255,255,0.85)" fontSize="15" fontWeight="900" letterSpacing="4">
+            REINO — PACTO — MEDIADOR
+          </text>
 
-          {/* ── Curva de cima: Reino governa Pacto ── */}
-          <path d={`M ${nos[0].x} ${nos[0].y - 52} Q ${cx} ${cy - 180} ${nos[1].x} ${nos[1].y - 52}`}
-            fill="none" stroke={GOLD} strokeWidth="2" strokeDasharray="7 4" opacity="0.45"
-            markerEnd="url(#arwRg)" />
-          <text x={cx} y={cy - 166} textAnchor="middle" fill={GOLD} fontSize="10.5" fontWeight="700" opacity="0.70" letterSpacing="1">governa por meio de</text>
+          {/* ── DEUS box ── */}
+          <rect
+            x={deusBox.x} y={deusBox.y}
+            width={deusBox.w} height={deusBox.h}
+            rx="10"
+            fill="rgba(255,200,80,0.15)"
+            stroke={GOLD}
+            strokeWidth="1.8"
+          />
+          <text x={cx} y={deusBox.y + 26} textAnchor="middle" fill="rgba(255,255,255,0.92)" fontSize="13" fontWeight="700">DEUS (PAI)</text>
+          <text x={cx} y={deusBox.y + 47} textAnchor="middle" fill="rgba(255,255,255,0.80)" fontSize="12.5">A PALAVRA (FILHO)</text>
+          <text x={cx} y={deusBox.y + 67} textAnchor="middle" fill={SPIRIT} fontSize="12.5">ESPÍRITO</text>
 
-          {/* ── Curva esq: Pacto estabelece Mediadores ── */}
-          <path d={`M ${nos[1].x + 52} ${nos[1].y} Q ${cx + 140} ${cy - 20} ${nos[2].x} ${nos[2].y - 56}`}
-            fill="none" stroke={SPIRIT} strokeWidth="2" strokeDasharray="7 4" opacity="0.45"
-            markerEnd="url(#arwSp)" />
-          <text x={cx + 100} y={cy - 55} textAnchor="middle" fill={SPIRIT} fontSize="10.5" fontWeight="700" opacity="0.70" letterSpacing="1">estabelece</text>
+          {/* 3 downward arrows from Deus box */}
+          {[-20, 0, 20].map((dx, i) => (
+            <line key={i}
+              x1={cx + dx} y1={deusBox.y + deusBox.h}
+              x2={cx + dx} y2={deusBox.y + deusBox.h + 34}
+              stroke={GOLD} strokeWidth="1.6" opacity="0.70"
+              markerEnd="url(#arwDown)"
+            />
+          ))}
 
-          {/* ── Curva dir: Mediadores refletem o Reino ── */}
-          <path d={`M ${nos[2].x} ${nos[2].y + 56} Q ${cx} ${cy + 160} ${nos[0].x} ${nos[0].y + 56}`}
-            fill="none" stroke={CULT} strokeWidth="2" strokeDasharray="7 4" opacity="0.45"
-            markerEnd="url(#arwCl)" />
-          <text x={cx} y={cy + 152} textAnchor="middle" fill={CULT} fontSize="10.5" fontWeight="700" opacity="0.70" letterSpacing="1">refletem e servem ao</text>
+          {/* LAÇO PACTUAL label */}
+          <text x={cx} y={deusBox.y + deusBox.h + 58} textAnchor="middle" fill={GOLD} fontSize="11" fontWeight="900" letterSpacing="3" opacity="0.85">
+            LAÇO PACTUAL
+          </text>
 
-          {/* ── Cristo — elemento central ── */}
-          <ellipse cx={cx} cy={cy + 18} rx="92" ry="46" fill="rgba(255,200,80,0.10)" stroke={GOLD} strokeWidth="1.8" filter="url(#rGlow)" />
-          <text x={cx} y={cy + 6} textAnchor="middle" fontSize="22">✝</text>
-          <text x={cx} y={cy + 24} textAnchor="middle" fill={GOLD} fontSize="12.5" fontWeight="900" letterSpacing="1">CRISTO</text>
-          <text x={cx} y={cy + 40} textAnchor="middle" fill="rgba(255,200,80,0.55)" fontSize="9.5" fontStyle="italic">único Mediador · 1 Tm 2.5</text>
+          {/* Diagonal dashed REINO lines from Deus box corners to ellipse sides */}
+          {/* Left diagonal: bottom-left corner of Deus box -> left side of ellipse */}
+          <line
+            x1={deusBox.x} y1={deusBox.y + deusBox.h}
+            x2={elCx - elRx + 20} y2={elCy - 160}
+            stroke={GOLD} strokeWidth="1.4" strokeDasharray="7 5" opacity="0.45"
+          />
+          {/* Right diagonal */}
+          <line
+            x1={deusBox.x + deusBox.w} y1={deusBox.y + deusBox.h}
+            x2={elCx + elRx - 20} y2={elCy - 160}
+            stroke={GOLD} strokeWidth="1.4" strokeDasharray="7 5" opacity="0.45"
+          />
 
-          {/* ── Linhas retas de Cristo para cada nó ── */}
-          {nos.map((n, i) => {
-            const dx = n.x - cx, dy = (n.y + (i===1?-18:18)) - (cy+18);
-            const len = Math.sqrt(dx*dx+dy*dy);
-            const off = i === 1 ? 56 : 64;
+          {/* REINO text along diagonals */}
+          <text
+            x={deusBox.x - 38} y={deusBox.y + deusBox.h + 70}
+            fill={GOLD} fontSize="10" fontWeight="800" letterSpacing="3" opacity="0.60"
+            transform={`rotate(-40, ${deusBox.x - 38}, ${deusBox.y + deusBox.h + 70})`}
+          >
+            REINO
+          </text>
+          <text
+            x={deusBox.x + deusBox.w + 38} y={deusBox.y + deusBox.h + 70}
+            fill={GOLD} fontSize="10" fontWeight="800" letterSpacing="3" opacity="0.60"
+            transform={`rotate(40, ${deusBox.x + deusBox.w + 38}, ${deusBox.y + deusBox.h + 70})`}
+          >
+            REINO
+          </text>
+
+          {/* ── Large ellipse (mediadores space) ── */}
+          <ellipse
+            cx={elCx} cy={elCy}
+            rx={elRx} ry={elRy}
+            fill="rgba(52,211,153,0.07)"
+            stroke="rgba(52,211,153,0.35)"
+            strokeWidth="1.8"
+          />
+
+          {/* MEDIADORES label inside ellipse top */}
+          <text x={cx} y={elCy - elRy + 36} textAnchor="middle" fill={SPIRIT} fontSize="13" fontWeight="900" letterSpacing="3">
+            MEDIADORES
+          </text>
+          <text x={cx} y={elCy - elRy + 54} textAnchor="middle" fill="rgba(52,211,153,0.60)" fontSize="10" fontStyle="italic">
+            agentes da aliança — não Cristo
+          </text>
+
+          {/* Triangle: HOMEM | MULHER / DESCENDÊNCIA */}
+          <polygon
+            points={`${triTop.x},${triTop.y} ${triLeft.x},${triLeft.y} ${triRight.x},${triRight.y}`}
+            fill="rgba(255,200,80,0.06)"
+            stroke={GOLD}
+            strokeWidth="1.4"
+            opacity="0.70"
+          />
+          <text x={cx} y={triTop.y - 10} textAnchor="middle" fill="rgba(255,255,255,0.88)" fontSize="11.5" fontWeight="700">
+            HOMEM | MULHER
+          </text>
+          <text x={cx} y={triBaseMid.y + 18} textAnchor="middle" fill="rgba(255,255,255,0.70)" fontSize="10.5" fontStyle="italic">
+            DESCENDÊNCIA
+          </text>
+
+          {/* Radial arrows + labels — left side */}
+          {leftTargets.map((t, i) => {
+            const dx = t.x - radCx, dy = t.y - radCy;
+            const len = Math.sqrt(dx * dx + dy * dy);
+            const endX = t.x - (dx / len) * 12;
+            const endY = t.y - (dy / len) * 12;
             return (
-              <line key={n.id}
-                x1={cx + dx/len*94} y1={cy+18 + dy/len*48}
-                x2={n.x - dx/len*off} y2={(n.y+(i===1?-18:18)) - dy/len*off}
-                stroke={n.cor} strokeWidth="1.5" opacity="0.35" strokeDasharray="4 4" />
+              <g key={`lt${i}`}>
+                <line
+                  x1={radCx} y1={radCy}
+                  x2={endX} y2={endY}
+                  stroke={GOLD} strokeWidth="1.3" opacity="0.60"
+                  markerEnd="url(#arwGold)"
+                />
+                <text x={t.x - 6} y={t.y + 4} textAnchor="end" fill={GOLD} fontSize="10.5" fontWeight="700" opacity="0.85">
+                  {t.label}
+                </text>
+              </g>
             );
           })}
 
-          {/* ── Nós ── */}
-          {nos.map((n) => (
-            <g key={n.id}>
-              <circle cx={n.x} cy={n.y} r="70" fill={n.cor} opacity="0.05" filter="url(#rSoft)"/>
-              <circle cx={n.x} cy={n.y} r="56" fill={`${n.cor}14`} stroke={n.cor} strokeWidth="2" filter="url(#rGlow)"/>
-              <circle cx={n.x} cy={n.y} r="40" fill={`${n.cor}08`} stroke={n.cor} strokeWidth="0.8" opacity="0.5"/>
-              <text x={n.x} y={n.y - 14} textAnchor="middle" fontSize="24">{n.icone}</text>
-              <text x={n.x} y={n.y + 8} textAnchor="middle" fill={n.cor} fontSize="13" fontWeight="900" letterSpacing="0.5">{n.label}</text>
-              {/* Linhas de referência abaixo de cada círculo */}
-              <text x={n.x} y={n.y + 74} textAnchor="middle" fill="rgba(255,255,255,0.40)" fontSize="9.5" fontStyle="italic">
-                {n.id === 'reino' ? 'Sl 103.19' : n.id === 'pacto' ? 'Ml 2.14' : 'Gn 1.26-27'}
-              </text>
-            </g>
-          ))}
+          {/* Radial arrows + labels — right side */}
+          {rightTargets.map((t, i) => {
+            const dx = t.x - radCx, dy = t.y - radCy;
+            const len = Math.sqrt(dx * dx + dy * dy);
+            const endX = t.x - (dx / len) * 12;
+            const endY = t.y - (dy / len) * 12;
+            return (
+              <g key={`rt${i}`}>
+                <line
+                  x1={radCx} y1={radCy}
+                  x2={endX} y2={endY}
+                  stroke={GOLD} strokeWidth="1.3" opacity="0.60"
+                  markerEnd="url(#arwGold)"
+                />
+                <text x={t.x + 6} y={t.y + 4} textAnchor="start" fill={GOLD} fontSize="10.5" fontWeight="700" opacity="0.85">
+                  {t.label}
+                </text>
+              </g>
+            );
+          })}
 
-          {/* Rótulo da linha inferior: "Casamento — agentes do Reino" */}
-          <rect x={cx-120} y={cy + 162} width="240" height="22" rx="6" fill="rgba(5,7,26,0.8)" />
-          <text x={cx} y={cy + 177} textAnchor="middle" fill={CULT} fontSize="10" fontWeight="700" letterSpacing="1" opacity="0.80">CASAMENTO — agentes do Reino no mundo</text>
+          {/* MANDATO CULTURAL below ellipse */}
+          <text x={cx} y={elCy + elRy + 28} textAnchor="middle" fill={CULT} fontSize="12" fontWeight="900" letterSpacing="3">
+            MANDATO CULTURAL
+          </text>
+          <text x={cx} y={elCy + elRy + 46} textAnchor="middle" fill="rgba(255,255,255,0.45)" fontSize="10.5" letterSpacing="1">
+            Escola · Trabalho · Lar
+          </text>
+
+          {/* COSMOS bottom right */}
+          <text x={W - 28} y={elCy + elRy + 46} textAnchor="end" fill="rgba(255,255,255,0.28)" fontSize="10" fontStyle="italic" letterSpacing="1">
+            COSMOS →
+          </text>
+
+          {/* MANDATO ESPIRITUAL — outside ellipse right top */}
+          <circle cx={elCx + elRx + 22} cy={elCy - 100} r="5" fill="#1e3a5f" stroke={SPIRIT} strokeWidth="1.2"/>
+          <text x={elCx + elRx + 34} y={elCy - 96} fill="rgba(255,255,255,0.72)" fontSize="10.5" fontWeight="700">MANDATO ESPIRITUAL</text>
+          <text x={elCx + elRx + 34} y={elCy - 80} fill="rgba(255,255,255,0.38)" fontSize="9.5" fontStyle="italic">Laço Pactual · Sábado</text>
+
+          {/* MANDATO SOCIAL — outside ellipse right middle */}
+          <circle cx={elCx + elRx + 22} cy={elCy + 20} r="5" fill="rgba(245,158,11,0.25)" stroke="#f59e0b" strokeWidth="1.2"/>
+          <text x={elCx + elRx + 34} y={elCy + 24} fill="rgba(255,255,255,0.72)" fontSize="10.5" fontWeight="700">MANDATO SOCIAL</text>
+          <text x={elCx + elRx + 34} y={elCy + 40} fill="rgba(255,255,255,0.38)" fontSize="9.5" fontStyle="italic">Família</text>
+
+          {/* Legend box bottom left */}
+          <rect x="24" y={H - 150} width="290" height="128" rx="10" fill="rgba(5,7,26,0.75)" stroke="rgba(255,255,255,0.10)" strokeWidth="1"/>
+          {/* Navy dot */}
+          <circle cx="44" cy={H - 124} r="5" fill="#1e3a5f" stroke={SPIRIT} strokeWidth="1"/>
+          <text x="56" y={H - 120} fill="rgba(255,255,255,0.60)" fontSize="9.5">Mandato Espiritual — Trindade, Pacto e Reino</text>
+          {/* Teal dot */}
+          <circle cx="44" cy={H - 104} r="5" fill="rgba(52,211,153,0.25)" stroke={SPIRIT} strokeWidth="1"/>
+          <text x="56" y={H - 100} fill="rgba(255,255,255,0.60)" fontSize="9.5">Mediadores — Homem e Mulher (não Cristo)</text>
+          {/* Gold dot */}
+          <circle cx="44" cy={H - 84} r="5" fill={GOLD} opacity="0.70"/>
+          <text x="56" y={H - 80} fill="rgba(255,255,255,0.60)" fontSize="9.5">Mandato Cultural — política, trabalho, artes, lar</text>
+          {/* Amber dot */}
+          <circle cx="44" cy={H - 64} r="5" fill="#f59e0b" opacity="0.70"/>
+          <text x="56" y={H - 60} fill="rgba(255,255,255,0.60)" fontSize="9.5">Mandato Social — expansão institucional da família</text>
 
           {/* Ref Van Groningen */}
-          <text x={W-18} y={H-16} textAnchor="end" fill="rgba(255,255,255,0.20)" fontSize="9" fontStyle="italic">
+          <text x={W - 18} y={H - 14} textAnchor="end" fill="rgba(255,255,255,0.20)" fontSize="9" fontStyle="italic">
             Van Groningen (1990)
           </text>
         </svg>
@@ -1397,35 +1528,40 @@ export function AulaInaugural() {
           </p>
         </motion.div>
 
-        {/* ── Diagrama Van Groningen — Os 3 Mandatos ── */}
-        <DiagramaMandatos />
-
-        {/* ── Diagrama Didático — Reino · Pacto · Mediadores ── */}
-        <DiagramaRPM />
-
         {/* Boas-vindas */}
-        <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.08 }} style={{ marginBottom: 32, padding: '18px 22px', borderRadius: 14, background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.09)' }}>
+        <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.05 }} style={{ marginBottom: 36, padding: '18px 22px', borderRadius: 14, background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.09)' }}>
           <Txt>Sejam bem-vindos! Este material acompanha o primeiro encontro do curso de noivos. Use-o durante a aula para acompanhar o ensino e anotar suas respostas, e leve-o para casa — vocês vão voltar a ele mais de uma vez ao longo do noivado.</Txt>
         </motion.div>
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
+        {/* ── BLOCO 1: Diagrama e definições de Reino · Pacto · Mediadores ── */}
+        <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.08 }} style={{ marginBottom: 8 }}>
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '4px 14px', borderRadius: 7, background: 'rgba(255,200,80,0.10)', border: `1px solid ${GOLD_BD}`, marginBottom: 16 }}>
+            <span style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: GOLD }}>Parte 1 de 2 · Estrutura Teológica</span>
+          </div>
+          <div style={{ fontSize: 'clamp(18px,3vw,26px)', fontWeight: 900, color: 'rgba(255,255,255,0.90)', marginBottom: 6 }}>
+            Reino · Pacto · Mediadores
+          </div>
+          <div style={{ fontSize: 'clamp(13px,1.8vw,15px)', color: 'rgba(255,255,255,0.45)', lineHeight: 1.7, marginBottom: 24 }}>
+            A estrutura pela qual Deus governa a história da redenção — e dentro da qual o casamento de vocês existe.
+          </div>
+        </motion.div>
+        <DiagramaRPM />
 
-          {/* Duas palavras */}
-          <Bloco titulo="Duas Palavras para Guardar: Mandato e Aliança" delay={0.10}>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))', gap: 14, marginBottom: 14 }}>
-              <div style={{ padding: '14px 16px', borderRadius: 10, background: 'rgba(52,211,153,0.08)', border: '1px solid rgba(52,211,153,0.22)' }}>
-                <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase', color: 'rgba(52,211,153,1)', marginBottom: 8 }}>Aliança (Pacto)</div>
-                <Verso ref="Gênesis 9.9" texto="Eis que eu estabeleço a minha aliança convosco e com a vossa descendência depois de vós." />
-                <Txt>Aliança é o compromisso solene pelo qual Deus se liga ao Seu povo — com promessas e responsabilidades dos dois lados, mas sempre testemunhado e sustentado pelo próprio Deus. Não é um trato entre iguais: é Deus quem toma a iniciativa e garante o cumprimento. Foi assim com Noé, com Abraão, com Israel no Sinai, com Davi, e culmina na nova aliança selada por Jesus (Lucas 22.20).</Txt>
-              </div>
-              <div style={{ padding: '14px 16px', borderRadius: 10, background: 'rgba(180,120,255,0.08)', border: '1px solid rgba(180,120,255,0.22)' }}>
-                <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase', color: 'rgba(180,120,255,1)', marginBottom: 8 }}>Mandato</div>
-                <Verso ref="Gênesis 1.26-28" texto="Façamos o homem à nossa imagem... e domine... sede fecundos, multiplicai-vos, enchei a terra e sujeitai-a." />
-                <Txt>Mandato é a missão que Deus dá ao ser humano, como imagem dEle, para cuidar e cultivar a criação. Segundo o teólogo Gerard Van Groningen, esse mandato se desdobra em três dimensões: Mandato Espiritual (a comunhão com Deus), Mandato Social (a família) e Mandato Cultural (o trabalho, a arte, a cidade).</Txt>
-              </div>
-            </div>
-            <Txt>Segundo Van Groningen: Reino, Pacto e Mediadores formam uma só estrutura: Deus governa (Reino) por meio de alianças (Pacto), sempre através de agentes humanos representativos — de Adão a Abraão, Moisés e Davi — numa linha que a Bíblia conduz até Cristo, o único Mediador definitivo (1 Timóteo 2.5). Vocês, como casal, ocupam esse mesmo lugar de agentes — nunca de salvadores.</Txt>
-          </Bloco>
+        {/* ── BLOCO 2: Diagrama e definições dos 3 Mandatos ── */}
+        <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.10 }} style={{ marginBottom: 8, marginTop: 16 }}>
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '4px 14px', borderRadius: 7, background: 'rgba(52,211,153,0.10)', border: '1px solid rgba(52,211,153,0.35)', marginBottom: 16 }}>
+            <span style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: SPIRIT }}>Parte 2 de 2 · Os Três Mandatos</span>
+          </div>
+          <div style={{ fontSize: 'clamp(18px,3vw,26px)', fontWeight: 900, color: 'rgba(255,255,255,0.90)', marginBottom: 6 }}>
+            Mandato Espiritual · Social · Cultural
+          </div>
+          <div style={{ fontSize: 'clamp(13px,1.8vw,15px)', color: 'rgba(255,255,255,0.45)', lineHeight: 1.7, marginBottom: 24 }}>
+            As três dimensões da missão que Deus confiou ao casal como imagem dEle na criação — baseado em Van Groningen.
+          </div>
+        </motion.div>
+        <DiagramaMandatos />
+
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 18, marginTop: 16 }}>
 
           {/* Percurso */}
           <Bloco titulo="Nosso Percurso — 8 Encontros (Agosto a Dezembro)" delay={0.14}>
@@ -1457,11 +1593,6 @@ export function AulaInaugural() {
             <div style={{ marginTop: 14, fontSize: 'clamp(12px,1.6vw,13.5px)', color: 'rgba(255,255,255,0.42)', fontStyle: 'italic' }}>
               O curso inteiro é o próprio diagrama sendo desdobrado, encontro após encontro.
             </div>
-          </Bloco>
-
-          {/* O que vamos aprender hoje */}
-          <Bloco titulo="O que Vamos Aprender Hoje" delay={0.17}>
-            <Txt>O diagrama que vocês viram na capa vai guiar todo o nosso curso. Hoje vamos entender quatro ideias simples, mas que mudam a forma de olhar para o casamento.</Txt>
           </Bloco>
 
           {/* I */}
