@@ -133,6 +133,12 @@ function extractTema(content: string | null): string {
   return m ? m[1].trim() : '';
 }
 
+function extractBibleRef(content: string | null): string {
+  if (!content) return '';
+  const m = content.match(/^PARA A FAMÍLIA\s*·\s*(.+)$/m);
+  return m ? m[1].trim() : '';
+}
+
 function extractQuiasmaBloco(text: string, idx: number): string {
   const normalized = text.replace(/'|'|ʼ/g, "'");
   const markerRe = new RegExp(`^\\[0*${idx}\\]`);
@@ -498,6 +504,7 @@ function PericopeCard({
   const accentAlpha = (a: number) => accentColor.replace('1)', `${a})`);
   const tema = extractTema(conteudo);
   const hasTema = tema.length > 0;
+  const bibleRef = extractBibleRef(conteudo);
 
   return (
     <motion.div
@@ -588,15 +595,22 @@ function PericopeCard({
           {p.titulo}
         </div>
 
-        {/* Reference */}
-        {p.ref && (
+        {/* Bible reference — from paraFamilia content */}
+        {bibleRef && (
           <div style={{
-            fontSize: 11,
-            color: C.muted,
-            fontWeight: 500,
-            letterSpacing: '0.04em',
+            display: 'inline-flex',
+            alignItems: 'center',
+            marginTop: 8,
+            padding: '4px 10px',
+            borderRadius: 8,
+            background: accentAlpha(0.12),
+            border: `1px solid ${accentAlpha(0.40)}`,
+            fontSize: 12,
+            fontWeight: 800,
+            color: accentColor,
+            letterSpacing: '0.05em',
           }}>
-            {p.ref}
+            {bibleRef}
           </div>
         )}
 
