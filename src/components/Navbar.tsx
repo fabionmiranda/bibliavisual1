@@ -45,7 +45,7 @@ export default function Navbar() {
     { name: 'Devocional',path: '/devocional' },
     { name: 'Pregação',  path: '/pregacao' },
     { name: 'Família',   path: '/familia' },
-    { name: 'Educação',  path: '/educacao' },
+    { name: 'Teologia',  path: '/teologia' },
     { name: 'Livraria',  path: '/livraria', activeOverride: isLibrariaActive },
   ];
 

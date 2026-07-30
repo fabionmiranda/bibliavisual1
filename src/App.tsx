@@ -18,6 +18,8 @@ import DevocionalPage from './pages/DevocionalPage';
 import PregacaoPage from './pages/PregacaoPage';
 import FamiliaPage, { EsbocosPage, NoivosHub, AulaInaugural, CasadosPage } from './pages/FamiliaPage';
 import EducacaoPage from './pages/EducacaoPage';
+import TeologiaPage from './pages/TeologiaPage';
+import TeologiaArtigoPage from './pages/TeologiaArtigoPage';
 import Watermark from './components/Watermark';
 import LoginPage from './pages/LoginPage';
 import ProtectedRoute from './components/ProtectedRoute';
@@ -87,8 +89,12 @@ export default function App() {
           <Route path="/familia/noivos/aula-inaugural" element={<AulaInaugural />} />
           <Route path="/familia/casados" element={<CasadosPage />} />
 
-          {/* Educação */}
+          {/* Educação (legado) */}
           <Route path="/educacao" element={<EducacaoPage />} />
+
+          {/* Teologia */}
+          <Route path="/teologia" element={<TeologiaPage />} />
+          <Route path="/teologia/:slug" element={<TeologiaArtigoPage />} />
 
           {/* Login */}
           <Route path="/login" element={<LoginPage />} />
