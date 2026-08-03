@@ -13,14 +13,16 @@ export default function TeologiaAulasPage() {
   const navigate = useNavigate();
   const [categoriaAtiva, setCategoriaAtiva] = useState<string | null>(null);
 
+  const apenasAulas = useMemo(() => ARTIGOS_TEOLOGIA.filter(a => a.status === 'rascunho'), []);
+
   const artigosFiltrados = useMemo(() => {
-    if (!categoriaAtiva) return ARTIGOS_TEOLOGIA;
-    return ARTIGOS_TEOLOGIA.filter(a => a.categoria === categoriaAtiva);
-  }, [categoriaAtiva]);
+    if (!categoriaAtiva) return apenasAulas;
+    return apenasAulas.filter(a => a.categoria === categoriaAtiva);
+  }, [categoriaAtiva, apenasAulas]);
 
   const categoriasVisiveis = categoriaAtiva
     ? [categoriaAtiva]
-    : [...CATEGORIAS_TEOLOGIA];
+    : [...CATEGORIAS_TEOLOGIA].filter(cat => apenasAulas.some(a => a.categoria === cat));
 
   return (
     <div style={{ minHeight: '100vh', background: BG, color: 'rgba(255,255,255,0.92)' }}>
@@ -67,9 +69,8 @@ export default function TeologiaAulasPage() {
           {/* Stats */}
           <div style={{ display: 'flex', gap: 28, marginTop: 28, flexWrap: 'wrap' }}>
             {[
-              { n: ARTIGOS_TEOLOGIA.length, label: 'módulos' },
+              { n: apenasAulas.length, label: 'módulos' },
               { n: CATEGORIAS_TEOLOGIA.length, label: 'categorias' },
-              { n: ARTIGOS_TEOLOGIA.filter(a => a.status === 'publicado').length, label: 'publicados' },
             ].map(s => (
               <div key={s.label}>
                 <span style={{ fontSize: 'clamp(22px,3.5vw,30px)', fontWeight: 900, color: CYAN }}>{s.n}</span>
