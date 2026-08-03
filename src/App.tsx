@@ -19,6 +19,8 @@ import PregacaoPage from './pages/PregacaoPage';
 import FamiliaPage, { EsbocosPage, NoivosHub, AulaInaugural, CasadosPage } from './pages/FamiliaPage';
 import EducacaoPage from './pages/EducacaoPage';
 import TeologiaPage from './pages/TeologiaPage';
+import TeologiaAulasPage from './pages/TeologiaAulasPage';
+import TeologiaArtigosPage from './pages/TeologiaArtigosPage';
 import TeologiaArtigoPage from './pages/TeologiaArtigoPage';
 import Watermark from './components/Watermark';
 import LoginPage from './pages/LoginPage';
@@ -94,6 +96,8 @@ export default function App() {
 
           {/* Teologia */}
           <Route path="/teologia" element={<TeologiaPage />} />
+          <Route path="/teologia/aulas" element={<TeologiaAulasPage />} />
+          <Route path="/teologia/artigos" element={<TeologiaArtigosPage />} />
           <Route path="/teologia/:slug" element={<TeologiaArtigoPage />} />
 
           {/* Login */}
