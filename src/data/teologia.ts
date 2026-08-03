@@ -154,6 +154,25 @@ export const ARTIGOS_TEOLOGIA: ArtigoTeologia[] = [
   <div style="font-size:clamp(14px,2vw,17px);color:rgba(200,220,255,0.70);font-style:italic;">Kevin J. Vanhoozer · <em>The Drama of Doctrine</em> (2005)</div>
 </div>
 
+<!-- CAPA DO LIVRO -->
+<div style="display:flex;flex-direction:column;align-items:center;margin:0 0 52px;">
+  <div style="position:relative;display:inline-block;">
+    <!-- Glow atrás da capa -->
+    <div style="position:absolute;inset:-16px;border-radius:24px;background:radial-gradient(ellipse at center,rgba(0,212,255,0.22) 0%,rgba(100,60,255,0.14) 50%,transparent 80%);filter:blur(18px);z-index:0;pointer-events:none;"></div>
+    <img
+      src="https://covers.openlibrary.org/b/isbn/0664223273-L.jpg"
+      alt="Capa do livro The Drama of Doctrine — Kevin J. Vanhoozer"
+      onerror="this.onerror=null;this.src='https://www.wjkbooks.com/wp-content/uploads/productimages/0664223273.jpg';"
+      style="position:relative;z-index:1;display:block;width:clamp(180px,30vw,260px);border-radius:10px;box-shadow:0 24px 64px rgba(0,0,0,0.70),0 4px 16px rgba(0,212,255,0.20);border:1px solid rgba(255,255,255,0.10);"
+    />
+  </div>
+  <div style="margin-top:20px;text-align:center;">
+    <div style="font-size:clamp(14px,1.9vw,16px);font-weight:800;color:#ffffff;margin-bottom:4px;">The Drama of Doctrine</div>
+    <div style="font-size:clamp(13px,1.7vw,15px);color:rgba(200,220,255,0.65);margin-bottom:2px;">Kevin J. Vanhoozer</div>
+    <div style="font-size:clamp(11px,1.5vw,13px);color:rgba(0,212,255,0.60);font-style:italic;letter-spacing:0.04em;">Westminster John Knox Press · 2005</div>
+  </div>
+</div>
+
 <!-- SEÇÃO 1 -->
 <h2>Abertura: O Problema da Leitura Errada</h2>
 
