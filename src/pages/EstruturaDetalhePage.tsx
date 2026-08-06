@@ -84,28 +84,24 @@ function parsearBlocoLinhas(linhasBruto: string[]): LinhaQuiasmo[] {
 }
 
 function parsearQuiasmos(texto: string): BlocoQuiasmo[] {
-  return texto
-    .split(/={10,}/)
-    .map(b => b.trim())
-    .filter(b => b.length > 0)
-    .flatMap(b => {
-      const linhas = b.split('\n').map(l => l.trimEnd());
-      const ci = linhas.findIndex(l => /^\[(\d+)\]/.test(l.trim()));
-      if (ci === -1) return [];
-      const cab = linhas[ci].trim();
-      const m = cab.match(/^\[(\d+)\]/);
-      if (!m) return [];
-      const num = parseInt(m[1], 10);
-      const corpo = linhas.slice(ci + 1);
-      const estrutura: string[] = [];
-      const resumo: string[] = [];
-      for (const l of corpo) {
-        const t = l.trim();
-        if (RESUMO_RE.test(t)) resumo.push(t);
-        else estrutura.push(l);
-      }
-      return [{ num, cabecalho: cab, linhas: parsearBlocoLinhas(estrutura), resumo }];
-    });
+  // Split on lines that start a new [N] block (keep the delimiter with each block)
+  const blocos = texto.split(/(?=^\[\d+\])/m).map(b => b.trim()).filter(b => /^\[\d+\]/.test(b));
+  return blocos.flatMap(b => {
+    const linhas = b.split('\n').map(l => l.trimEnd());
+    const cab = linhas[0].trim();
+    const m = cab.match(/^\[(\d+)\]/);
+    if (!m) return [];
+    const num = parseInt(m[1], 10);
+    const corpo = linhas.slice(1);
+    const estrutura: string[] = [];
+    const resumo: string[] = [];
+    for (const l of corpo) {
+      const t = l.trim();
+      if (RESUMO_RE.test(t)) resumo.push(t);
+      else estrutura.push(l);
+    }
+    return [{ num, cabecalho: cab, linhas: parsearBlocoLinhas(estrutura), resumo }];
+  });
 }
 
 // ─── Constantes visuais ───────────────────────────────────────────────────────
