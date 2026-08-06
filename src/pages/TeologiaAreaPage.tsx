@@ -154,8 +154,8 @@ const AREAS_INFO: Record<string, AreaInfo> = {
       { nome: 'Apologética na Educação', desc: 'Defender e articular a fé cristã no diálogo com o pensamento secular contemporâneo', icon: '🛡️' },
     ],
   },
-  tecnologia: {
-    titulo: 'Teologia na Tecnologia',
+  digital: {
+    titulo: 'Teologia Digital',
     descricao: 'Como a fé cristã interpreta e responde ao mundo digital — inteligência artificial, ética tecnológica, humanidade, imagem de Deus e cultura digital. A pergunta não é apenas "o que a tecnologia pode fazer?" mas "o que ela faz com o ser humano?"',
     icon: '💻',
     cor: '#67e8f9',

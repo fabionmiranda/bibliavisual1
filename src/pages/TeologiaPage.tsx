@@ -102,8 +102,8 @@ const AREAS: AreaCard[] = [
     tags: ['Cosmovisão Cristã', 'Educação Clássica', 'Família e Escola', 'Formação Integral', 'Paideia', 'Cultura'],
   },
   {
-    slug: 'tecnologia',
-    titulo: 'Teologia na Tecnologia',
+    slug: 'digital',
+    titulo: 'Teologia Digital',
     descricao: 'Como a fé cristã interpreta e responde ao mundo digital — inteligência artificial, ética tecnológica, humanidade, imagem de Deus e cultura digital.',
     icon: '💻',
     cor: '#67e8f9',
@@ -276,8 +276,8 @@ function AreaCardItem({ area }: { area: AreaCard }) {
 // ── Página hub ───────────────────────────────────────────────────────────────
 
 export default function TeologiaPage() {
-  const areasAcademic = AREAS.slice(0, 10);
-  const areasFixed    = AREAS.slice(10);
+  const areasAcademic = AREAS.slice(0, 11);
+  const areasFixed    = AREAS.slice(11);
 
   return (
     <div style={{ minHeight: '100vh', background: BG, color: 'rgba(255,255,255,0.92)' }}>
