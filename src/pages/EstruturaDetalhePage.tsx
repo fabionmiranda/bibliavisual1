@@ -122,10 +122,8 @@ interface ConexaoSVG { cor: string; x: number; y1: number; y2: number }
 
 function DiagramaQuiasmo({
   linhas,
-  resumo,
 }: {
   linhas: LinhaQuiasmo[];
-  resumo: string[];
 }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const badgeRefs    = useRef<(HTMLDivElement | null)[]>([]);
@@ -251,34 +249,6 @@ function DiagramaQuiasmo({
         })}
       </div>
 
-      {/* Resumo dos elementos */}
-      {resumo.length > 0 && (
-        <div className="mt-8 pt-6 border-t border-white/[0.08]">
-          <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-white/35 font-black mb-4">
-            Resumo dos Elementos
-          </p>
-          <div className="flex flex-wrap gap-3">
-            {resumo.map((linha, i) => {
-              const col   = NIVEL_CORES[i % NIVEL_CORES.length];
-              const match = linha.match(/^([A-Z][''''’‘]?)\s*:\s*(.+)$/);
-              return (
-                <div key={i} className="flex items-center gap-2.5 px-4 py-2.5 rounded-xl border"
-                  style={{ borderColor: col + '40', background: col + '10' }}>
-                  {match && (
-                    <span className="font-mono font-black text-sm shrink-0 w-8 h-8 rounded-lg flex items-center justify-center border"
-                      style={{ color: col, borderColor: col + '55', background: col + '20', boxShadow: `0 0 8px ${col}30` }}>
-                      {match[1]}
-                    </span>
-                  )}
-                  <span className="text-sm text-white/80 font-medium leading-snug">
-                    {match ? match[2] : linha}
-                  </span>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      )}
     </div>
   );
 }
@@ -483,11 +453,56 @@ export default function EstruturaDetalhePage() {
                   {/* Diagrama */}
                   <div className="rounded-2xl border border-white/[0.08] p-5 sm:p-8 overflow-x-auto"
                     style={{ background: 'linear-gradient(135deg,rgba(255,255,255,0.03),rgba(255,255,255,0.01))' }}>
-                    <DiagramaQuiasmo
-                      linhas={quiasmo.linhas}
-                      resumo={quiasmo.resumo}
-                    />
+                    <DiagramaQuiasmo linhas={quiasmo.linhas} />
                   </div>
+
+                  {/* Card Legenda */}
+                  {quiasmo.resumo.length > 0 && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 8 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 0.25 }}
+                      className="mt-6 rounded-2xl border overflow-hidden"
+                      style={{ borderColor: corHex + '35', background: `linear-gradient(135deg,${corHex}08,${corHex}03)` }}
+                    >
+                      {/* Cabeçalho do card */}
+                      <div className="flex items-center gap-3 px-5 py-3 border-b" style={{ borderColor: corHex + '25', background: corHex + '0F' }}>
+                        <div className="w-6 h-6 rounded-md flex items-center justify-center shrink-0"
+                          style={{ background: corHex + '25', border: `1px solid ${corHex}50` }}>
+                          <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            style={{ color: corHex }} strokeWidth={2.5}>
+                            <path strokeLinecap="round" strokeLinejoin="round"
+                              d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                          </svg>
+                        </div>
+                        <span className="font-mono font-black text-[10px] uppercase tracking-[0.30em]"
+                          style={{ color: corHex }}>
+                          Legenda
+                        </span>
+                      </div>
+                      {/* Itens da legenda */}
+                      <div className="flex flex-wrap gap-3 p-5">
+                        {quiasmo.resumo.map((linha, i) => {
+                          const col   = NIVEL_CORES[i % NIVEL_CORES.length];
+                          const match = linha.match(/^([A-Z]['''''']?)\s*:\s*(.+)$/);
+                          return (
+                            <div key={i} className="flex items-center gap-2.5 px-4 py-2.5 rounded-xl border"
+                              style={{ borderColor: col + '45', background: col + '10' }}>
+                              {match && (
+                                <span className="font-mono font-black text-sm shrink-0 w-8 h-8 rounded-lg flex items-center justify-center border"
+                                  style={{ color: col, borderColor: col + '55', background: col + '20', boxShadow: `0 0 8px ${col}30` }}>
+                                  {match[1]}
+                                </span>
+                              )}
+                              <span className="text-sm font-semibold leading-snug" style={{ color: 'rgba(230,238,255,0.90)' }}>
+                                {match ? match[2] : linha}
+                              </span>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </motion.div>
+                  )}
 
                   {/* Botão Ver Diagramas da Seção */}
                   <motion.div
