@@ -32,18 +32,10 @@ const AREAS: AreaCard[] = [
   {
     slug: 'sistematica',
     titulo: 'Teologia Sistemática',
-    descricao: 'O estudo ordenado das doutrinas cristãs — de Deus, da criação, do homem, de Cristo, da salvação, da Igreja e das últimas coisas.',
+    descricao: 'O estudo ordenado das doutrinas cristãs — de Deus, da criação, do homem, de Cristo, da salvação, da Igreja e das últimas coisas. Inclui Credos e Confissões.',
     icon: '📐',
     cor: '#a78bfa',
-    tags: ['Teologia Própria', 'Cristologia', 'Soteriologia', 'Eclesiologia', 'Escatologia', 'Pneumatologia'],
-  },
-  {
-    slug: 'credos',
-    titulo: 'Credos e Confissões',
-    descricao: 'Os grandes documentos normativos da fé cristã: Credo Apostólico, Niceno, Calcedônia, Confissão de Westminster, Heidelberg e demais confissões reformadas.',
-    icon: '📜',
-    cor: '#fbbf24',
-    tags: ['Credo Apostólico', 'Credo Niceno', 'Westminster', 'Heidelberg', 'Belgica', 'Dordrecht'],
+    tags: ['Teologia Própria', 'Cristologia', 'Soteriologia', 'Eclesiologia', 'Credos', 'Confissões'],
   },
   {
     slug: 'biblica',

@@ -39,20 +39,7 @@ const AREAS_INFO: Record<string, AreaInfo> = {
       { nome: 'Soteriologia', desc: 'A doutrina da salvação — eleição, chamada, regeneração, justificação, santificação e glorificação', icon: '⚓' },
       { nome: 'Eclesiologia', desc: 'A natureza, governo, sacramentos e missão da Igreja', icon: '🏛️' },
       { nome: 'Escatologia', desc: 'As últimas coisas — morte, ressurreição, julgamento e nova criação', icon: '🌅' },
-    ],
-  },
-  credos: {
-    titulo: 'Credos e Confissões',
-    descricao: 'Os grandes documentos normativos da fé cristã — do Credo Apostólico às Confissões Reformadas do século XVII.',
-    icon: '📜',
-    cor: '#fbbf24',
-    materias: [
-      { nome: 'Credo Apostólico', desc: 'O símbolo mais antigo da fé cristã universal — estrutura e conteúdo', icon: '✋' },
-      { nome: 'Credo Niceno', desc: 'O Concílio de Niceia (325 d.C.) e a definição da divindade de Cristo', icon: '⛩️' },
-      { nome: 'Definição de Calcedônia', desc: 'As duas naturezas de Cristo — a grande decisão cristológica de 451 d.C.', icon: '⚖️' },
-      { nome: 'Confissão de Westminster', desc: 'O padrão confessional da tradição presbiteriana (1646)', icon: '📖' },
-      { nome: 'Catecismo de Heidelberg', desc: 'O catecismo reformado da tradição alemã-holandesa (1563)', icon: '📗' },
-      { nome: 'Cânones de Dort', desc: 'A resposta reformada ao arminianismo — os cinco pontos (1618–19)', icon: '🛡️' },
+      { nome: 'Credos e Confissões', desc: 'Credo Apostólico, Niceno, Calcedônia, Westminster, Heidelberg e Cânones de Dort como padrões doutrinários da fé cristã', icon: '📜' },
     ],
   },
   biblica: {
