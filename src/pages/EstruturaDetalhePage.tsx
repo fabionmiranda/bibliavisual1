@@ -97,8 +97,20 @@ function parsearQuiasmos(texto: string): BlocoQuiasmo[] {
     const resumo: string[] = [];
     for (const l of corpo) {
       const t = l.trim();
-      if (RESUMO_RE.test(t)) resumo.push(t);
-      else estrutura.push(l);
+      if (/^[Ll]egenda\s*:/i.test(t)) {
+        // "Legenda: A: texto. B: texto." → extrai cada item separadamente
+        const corpo_leg = t.replace(/^[Ll]egenda\s*:\s*/i, '');
+        // divide antes de cada letra maiúscula seguida de ':'
+        const itens = corpo_leg.split(/(?=[A-Z]['''''']?\s*:)/);
+        for (const item of itens) {
+          const limpo = item.replace(/\.\s*$/, '').trim();
+          if (limpo) resumo.push(limpo);
+        }
+      } else if (RESUMO_RE.test(t)) {
+        resumo.push(t);
+      } else {
+        estrutura.push(l);
+      }
     }
     return [{ num, cabecalho: cab, linhas: parsearBlocoLinhas(estrutura), resumo }];
   });
