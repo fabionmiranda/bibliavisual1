@@ -9,7 +9,7 @@ interface AreaInfo {
   descricao: string;
   icon: string;
   cor: string;
-  materias: { nome: string; desc: string; icon: string }[];
+  materias: { nome: string; desc: string; icon: string; link?: string }[];
 }
 
 const AREAS_INFO: Record<string, AreaInfo> = {
@@ -39,7 +39,7 @@ const AREAS_INFO: Record<string, AreaInfo> = {
       { nome: 'Soteriologia', desc: 'A doutrina da salvação — eleição, chamada, regeneração, justificação, santificação e glorificação', icon: '⚓' },
       { nome: 'Eclesiologia', desc: 'A natureza, governo, sacramentos e missão da Igreja', icon: '🏛️' },
       { nome: 'Escatologia', desc: 'As últimas coisas — morte, ressurreição, julgamento e nova criação', icon: '🌅' },
-      { nome: 'Credos e Confissões', desc: 'Credo Apostólico, Niceno, Calcedônia, Westminster, Heidelberg e Cânones de Dort como padrões doutrinários da fé cristã', icon: '📜' },
+      { nome: 'Credos e Confissões', desc: 'Credo Apostólico, Niceno, Calcedônia, Westminster, Heidelberg e Cânones de Dort como padrões doutrinários da fé cristã', icon: '📜', link: '/teologia/credos' },
     ],
   },
   biblica: {
@@ -217,42 +217,73 @@ export default function TeologiaAreaPage() {
           gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 300px), 1fr))',
           gap: 'clamp(14px,2vw,20px)',
         }}>
-          {area.materias.map((m, i) => (
-            <div key={i} style={{
+          {area.materias.map((m, i) => {
+            const isLink = !!m.link;
+            const cardStyle: React.CSSProperties = {
               padding: 'clamp(20px,3vw,26px)', borderRadius: 16,
-              background: `${area.cor}08`, border: `1px solid ${area.cor}25`,
+              background: `${area.cor}08`,
+              border: `1px solid ${isLink ? area.cor + '45' : area.cor + '25'}`,
               display: 'flex', flexDirection: 'column', gap: 10,
-            }}>
-              {/* Topo */}
-              <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+              cursor: isLink ? 'pointer' : 'default',
+              transition: 'all 0.20s',
+              textAlign: 'left',
+              boxSizing: 'border-box',
+            };
+            const inner = (
+              <>
+                {/* Topo */}
+                <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                  <div style={{
+                    width: 40, height: 40, borderRadius: 12, flexShrink: 0,
+                    background: `${area.cor}18`, border: `1px solid ${area.cor}38`,
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    fontSize: 18,
+                  }}>
+                    {m.icon}
+                  </div>
+                  <div style={{ fontSize: 'clamp(14px,1.8vw,16px)', fontWeight: 900, color: '#ffffff', lineHeight: 1.25 }}>
+                    {m.nome}
+                  </div>
+                </div>
+                {/* Descrição */}
+                <p style={{ margin: 0, fontSize: 'clamp(13px,1.6vw,14px)', color: 'rgba(200,218,255,0.65)', lineHeight: 1.65 }}>
+                  {m.desc}
+                </p>
+                {/* Badge */}
                 <div style={{
-                  width: 40, height: 40, borderRadius: 12, flexShrink: 0,
-                  background: `${area.cor}18`, border: `1px solid ${area.cor}38`,
-                  display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  fontSize: 18,
+                  marginTop: 4, alignSelf: 'flex-start',
+                  fontSize: 10, fontWeight: 900, letterSpacing: '0.16em',
+                  textTransform: 'uppercase',
+                  color: isLink ? area.cor : `${area.cor}80`,
+                  background: `${area.cor}0F`, border: `1px solid ${area.cor}28`,
+                  borderRadius: 6, padding: '3px 9px',
                 }}>
-                  {m.icon}
+                  {isLink ? 'Acessar →' : 'Em breve'}
                 </div>
-                <div style={{ fontSize: 'clamp(14px,1.8vw,16px)', fontWeight: 900, color: '#ffffff', lineHeight: 1.25 }}>
-                  {m.nome}
-                </div>
-              </div>
-              {/* Descrição */}
-              <p style={{ margin: 0, fontSize: 'clamp(13px,1.6vw,14px)', color: 'rgba(200,218,255,0.65)', lineHeight: 1.65 }}>
-                {m.desc}
-              </p>
-              {/* Em breve */}
-              <div style={{
-                marginTop: 4, alignSelf: 'flex-start',
-                fontSize: 10, fontWeight: 900, letterSpacing: '0.16em',
-                textTransform: 'uppercase', color: `${area.cor}80`,
-                background: `${area.cor}0F`, border: `1px solid ${area.cor}25`,
-                borderRadius: 6, padding: '3px 9px',
-              }}>
-                Em breve
-              </div>
-            </div>
-          ))}
+              </>
+            );
+            return isLink ? (
+              <button
+                key={i}
+                style={{ all: 'unset', ...cardStyle }}
+                onClick={() => navigate(m.link!)}
+                onMouseEnter={e => {
+                  (e.currentTarget as HTMLElement).style.background = `${area.cor}14`;
+                  (e.currentTarget as HTMLElement).style.transform = 'translateY(-2px)';
+                  (e.currentTarget as HTMLElement).style.boxShadow = `0 8px 28px ${area.cor}18`;
+                }}
+                onMouseLeave={e => {
+                  (e.currentTarget as HTMLElement).style.background = `${area.cor}08`;
+                  (e.currentTarget as HTMLElement).style.transform = 'translateY(0)';
+                  (e.currentTarget as HTMLElement).style.boxShadow = 'none';
+                }}
+              >
+                {inner}
+              </button>
+            ) : (
+              <div key={i} style={cardStyle}>{inner}</div>
+            );
+          })}
         </div>
 
         {/* Aviso */}
