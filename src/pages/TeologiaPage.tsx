@@ -94,6 +94,22 @@ const AREAS: AreaCard[] = [
     tags: ['Missio Dei', 'Encarnação', 'Plantio de Igrejas', 'Religiões', 'Contextualização', 'Evangelização'],
   },
   {
+    slug: 'educacional',
+    titulo: 'Teologia Educacional',
+    descricao: 'A fé cristã como fundamento de toda educação — cosmovisão bíblica, formação integral da pessoa, família, escola e cultura.',
+    icon: '🏫',
+    cor: '#f9a8d4',
+    tags: ['Cosmovisão Cristã', 'Educação Clássica', 'Família e Escola', 'Formação Integral', 'Paideia', 'Cultura'],
+  },
+  {
+    slug: 'tecnologia',
+    titulo: 'Teologia na Tecnologia',
+    descricao: 'Como a fé cristã interpreta e responde ao mundo digital — inteligência artificial, ética tecnológica, humanidade, imagem de Deus e cultura digital.',
+    icon: '💻',
+    cor: '#67e8f9',
+    tags: ['Inteligência Artificial', 'Ética Digital', 'Imago Dei', 'Transhumanismo', 'Redes Sociais', 'Cultura Digital'],
+  },
+  {
     slug: 'aulas-avancadas',
     titulo: 'Aulas Avançadas',
     descricao: 'Formação teológica progressiva em módulos avançados — organizados por categorias, da epistemologia à história da razão teológica.',

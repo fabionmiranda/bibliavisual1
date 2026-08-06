@@ -140,6 +140,34 @@ const AREAS_INFO: Record<string, AreaInfo> = {
       { nome: 'Contextualização', desc: 'Como comunicar o evangelho sem comprometer sua essência', icon: '🔄' },
     ],
   },
+  educacional: {
+    titulo: 'Teologia Educacional',
+    descricao: 'A fé cristã como fundamento de toda educação — cosmovisão bíblica, formação integral da pessoa, família, escola e cultura. Toda educação é teológica: a questão não é se Deus será o centro do ensino, mas qual deus ocupará esse lugar.',
+    icon: '🏫',
+    cor: '#f9a8d4',
+    materias: [
+      { nome: 'Cosmovisão Cristã', desc: 'A visão de mundo bíblica como fundamento de toda reflexão educacional — criação, queda, redenção e restauração', icon: '🌍' },
+      { nome: 'Paideia Cristã', desc: 'A tradição clássica cristã de formação integral — mente, coração e virtude à luz das Escrituras', icon: '📚' },
+      { nome: 'Família como Escola Primária', desc: 'O papel insubstituível dos pais como primeiros educadores na fé reformada', icon: '🏠' },
+      { nome: 'Educação Clássica e Trivium', desc: 'Gramática, Lógica e Retórica como método de formação do pensamento cristão', icon: '🎓' },
+      { nome: 'Teologia e Cultura', desc: 'Como a fé transforma a arte, a ciência, a filosofia e todas as esferas da vida humana', icon: '🎨' },
+      { nome: 'Apologética na Educação', desc: 'Defender e articular a fé cristã no diálogo com o pensamento secular contemporâneo', icon: '🛡️' },
+    ],
+  },
+  tecnologia: {
+    titulo: 'Teologia na Tecnologia',
+    descricao: 'Como a fé cristã interpreta e responde ao mundo digital — inteligência artificial, ética tecnológica, humanidade, imagem de Deus e cultura digital. A pergunta não é apenas "o que a tecnologia pode fazer?" mas "o que ela faz com o ser humano?"',
+    icon: '💻',
+    cor: '#67e8f9',
+    materias: [
+      { nome: 'Imago Dei e Inteligência Artificial', desc: 'O que significa ser humano feito à imagem de Deus diante de máquinas que simulam inteligência e criatividade', icon: '🤖' },
+      { nome: 'Ética Digital e Redes Sociais', desc: 'Verdade, identidade, comunidade e virtude no ambiente das plataformas digitais', icon: '📱' },
+      { nome: 'Transhumanismo', desc: 'A ideologia do aprimoramento humano ilimitado e a resposta da antropologia cristã', icon: '🧬' },
+      { nome: 'Privacidade e Vigilância', desc: 'Dignidade humana, poder e controle na era dos dados — uma reflexão à luz da criação e da queda', icon: '🔐' },
+      { nome: 'Tecnologia e Adoração', desc: 'Como o uso das tecnologias no culto afeta a espiritualidade, a comunidade e a experiência de Deus', icon: '⛪' },
+      { nome: 'Ministério e Mundo Digital', desc: 'Evangelismo, discipulado e presença da Igreja no ambiente online — possibilidades e limites', icon: '🌐' },
+    ],
+  },
 };
 
 export default function TeologiaAreaPage() {
