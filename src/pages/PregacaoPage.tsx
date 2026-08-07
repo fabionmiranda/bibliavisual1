@@ -442,6 +442,161 @@ function EstruturaHomileticaSection() {
   );
 }
 
+// ─── Transliteração hebraica (Gênesis) ──────────────────────────────
+const HEBREW_TRANSLIT: Record<string, string> = {
+  // Perícope 01
+  'שׁמיםארץ': 'shamayim-arets', 'אור': 'or', 'מים': 'mayim', 'עשׂב': 'esev',
+  'מאור': 'maor', 'טוב': 'tov', 'וירדו': 'veyirdu', 'ורדו': 'urdu',
+  // Perícope 02
+  'והשׁקה': 'vehashkah', 'גןבעדן': 'gan-beEden', 'עץהדעת': 'ets-hadaat',
+  'להשׁקות': 'lehashkot', 'בגןעדן': 'began-Eden', 'ומעץהדעת': 'umeets-hadaat',
+  // Perícope 03
+  'יקרא': 'yiqra',
+  // Perícope 04
+  'ידעיטובורע': 'yodei-tov-vara', 'לדעתטובורע': 'ladaat-tov-vara',
+  // Perícope 05
+  'שׁבעתים': "shiv'atayim",
+  // Perícope 07
+  'רע': 'ra', 'שׁשׁ': 'shesh', 'לשׁבעת': "leshiv'at", 'ארבעים': "arba'im",
+  'ההרים': 'heharim', 'הרי': 'harei', 'שׁבעת': "shiv'at", 'ושׁשׁ': 'veshesh',
+  // Perícope 08
+  'בשׂר': 'basar', 'המבול': 'hamabul', 'אותהברית': 'ot-habrit',
+  'לאותברית': "le'ot-brit", 'למבול': 'lemabul',
+  // Perícope 09
+  'היין': 'hayayin', 'כנען': "Kena'an", 'שׁםויפת': 'Shem-veYafet',
+  'מיינו': 'miyeyno', 'שׁםויהי': 'Shem-veyehi',
+  // Perícope 10
+  'תולדת': 'toledot', 'לתולדתם': 'letoledotam',
+  // Perícope 11
+  'שׂפה': 'safah', 'נפוץ': 'nafuts', 'ויפץ': 'vayafets', 'שׂפת': 'sfat',
+  // Perícope 13
+  'עקרה': 'akarah', 'ויצאו': "vayetse'u",
+  // Perícope 14
+  'ברך': 'barakh', 'ויצא': 'vayetse', 'וירא': 'vayera', 'ויבן': 'vayiven', 'ויסע': 'vayisa',
+  // Perícope 15
+  'רעב': 'raav', 'אחתי': 'akhoti', 'אשׁתך': 'ishtekha', 'ויעל': "vaya'al",
+  // Perícope 16
+  'המזבח': "hamizbe'akh", 'ריב': 'riv', 'נפרד': 'nifrad', 'ויבחר': 'vayivkhar',
+  // Perícope 17
+  'מלכים': 'melakhim', 'ויכו': 'vayaku', 'וילכדו': 'vayilkedu',
+  // Perícope 18
+  'וישׁב': 'vayashev', 'מלך': 'melekh', 'ויברכהו': 'vayevarkhehu',
+  // Perícope 19
+  'האמן': "ha'amin", 'ברית': 'brit', 'מצרים': 'Mitsrayim', 'זרעך': "zar'akha",
+  // Perícope 20
+  'שׁפחתה': 'shifkhata', 'ותברח': 'vatibrakah', 'מלאך': "mal'akh",
+  'ורבה': 'veravah', 'ראי': "ro'i",
+  // Perícope 21
+  'מול': 'mul', 'שׂרה': 'Sarah', 'יצחק': 'Yitschak',
+  // Perícope 22
+  'איה': 'ayeh', 'ותצחק': 'vatitschak', 'יפלא': 'yipale', 'כי צחקת': 'ki-tsakhakt',
+  // Perícope 23
+  'הכסה': 'hakhase', 'צדקה': 'tsedakah', 'אסתיר': 'astir',
+  'הצדיק': 'hatsadik', 'וילך': 'vayelekh',
+  // Perícope 24
+  'ויבאו': "vayavo'u", 'אנשׁי': 'anshei', 'בנתי': 'benoti',
+  'ויפצרו': 'vayiftseru', 'ויסמו': 'vayasmu',
+  // Perícope 25
+  'צא': 'tse', 'חמל': 'khamal', 'גפרית': 'gafrit', 'ותבט': 'vatabet', 'ויזכר': 'vayizkor',
+  // Perícope 26
+  'מערה': "me'arah", 'יין': 'yayin', 'ידע': 'yada', 'מואב': 'Moav', 'בן עמי': 'ben-ami',
+  // Perícope 27
+  'בחלום': 'bakhalom', 'מה': 'mah', 'יראתי': "yire'ati",
+  // Perícope 28
+  'פקד': 'pakad', 'צחק': 'tsakhak',
+  // Perícope 29
+  'גרשׁ': 'garesh', 'וישׁלח': 'vayeshallakh', 'וישׁמע': 'vayishma',
+  // Perícope 30
+  'בְּאֵר': "be'er", 'שׁבע': 'sheva', 'בְּאֵר שָׁבַע': "Be'er-Sheva", 'עולם': 'olam',
+  // Perícope 31
+  'נסה': 'nasah', 'יחדו': 'yakhdav', 'יראה': "yir'eh",
+  // Perícope 34
+  'שׁתה': 'shtah', 'ויספר': 'vayesapper', 'ותלך': 'vateleikh', 'ויקחה': 'vayikakhah',
+  // Perícope 38
+  'רב': 'rav', 'עשׂו': 'Esav', 'שׂדה': 'sadeh',
+  // Perícope 39
+  'עיף': 'ayef', 'בכרה': 'bekhorah',
+  // Perícope 40
+  'ויגדל': 'vayigdal',
+  // Perícope 41
+  'ויסתמו': 'vayistamu', 'מזבח': "mizbe'akh",
+  // Perícope 42
+  'ויבא': 'vayavo', 'שׁבעה': "shiv'ah",
+  // Perícope 44
+  'ברכה': 'berakhah', 'רמה': 'ramah', 'ויבך': 'vayevkhe', 'יימי': 'yimei',
+  // Perícope 45
+  'ויאמר': "vayo'mer", 'ברח': 'barakh', 'שׁוב': 'shuv',
+  // Perícope 46
+  'לבן': 'Lavan', 'ברכת': 'birkat', 'ישׁמעאל': "Yishma'el",
+  // Perícope 47
+  'מלאכים': "mal'akhim", 'בֵּית אֱלֹהִים': 'Beit-Elohim', 'בֵּית אֵל': 'Beit-El', 'ידר': 'yidar',
+  // Perícope 48
+  'ויגל': 'vayagel', 'וירץ': 'vayaruts', 'עצמי': 'atsmii',
+  // Perícope 49
+  'וירמא': 'vayerma', 'ויאהב': "vaye'ehav",
+  // Perícope 50
+  'ילדה': 'yaldah', 'בלהה': 'Bilhah', 'זלפה': 'Zilpah', 'יוסף': 'Yosef',
+  // Perícope 51
+  'שׁלח': 'shalakh', 'אתן': 'eten', 'ויסר': 'vayasar', 'מקלות': 'maklot', 'ויפרץ': 'vayifrets',
+  // Perícope 52
+  'ויקם': 'vayakom', 'וינס': 'vayanas',
+  // Perícope 53
+  'חלום': 'khalom', 'תרפים': 'terafim', 'ויחר': 'vayikhar', 'ויוכח': 'vayokakh',
+  // Perícope 54
+  'גלעד': "Gal'ed",
+  // Perícope 55
+  'מחנה': 'makhaneh', 'ויירא': 'vayira', 'תפלה': 'tefillah',
+  // Perícope 56
+  'מנחה': 'minkhah', 'לפניו': 'lefanav',
+  // Perícope 57
+  'לבדו': 'levado', 'יאבק': "ye'avek", 'ישׂראל': 'Yisrael', 'פני': 'panai',
+  // Perícope 58
+  'וישׁתחו': 'vayishtakhu', 'ויחבקהו': 'vayekhabkhu', 'מצא': 'matsa',
+  // Perícope 59
+  'שׁכם': 'Shekhem', 'בת': 'bat', 'שׁמעון ולוי': "Shim'on-veLevi",
+  // Perícope 60
+  'אלהי': 'elohei', 'ותמת': 'vatamot',
+  // Perícope 62
+  'ויגוע': 'vayigva',
+  // Perícope 64
+  'שׂנאו': "sane'u", 'וישׁתחוו': 'vayishtakhavu', 'ויקנאו': "vayekane'u", 'שׁמר': 'shamar',
+  // Perícope 65
+  'ילך': 'yelekh', 'הבור': 'habor', 'ויקרע': "vayikra'",
+  // Perícope 66
+  'ער': 'Er', 'ותכסה': 'vatekhaseh', 'ערבון': 'eravon', 'תאומים': "te'omim",
+  // Perícope 67
+  'יהוה עם': 'YHWH-im', 'ותתפשׂהו': 'vatetafshu', 'בגד': 'beged',
+  // Perícope 68
+  'שׁכח': 'shakhakh', 'זכר': 'zakhar', 'משׁנה': 'mishneh',
+  // Perícope 69
+  'מנשׁה ואפרים': 'Menashe-veEfrayim',
+  // Perícope 70
+  'שׁבר': 'shavar', 'אשׁמים': 'ashamim', 'כסף': 'kesef', 'ויספרו': 'vayesapru',
+  // Perícope 71
+  'בנימן': 'Binyamin', 'ויאכלו': "vayo'khelu", 'גביע': 'gavia',
+  'יהודה': 'Yehudah', 'אני יוסף': 'ani-Yosef', 'ויתן': 'vayiten', 'ויחי': 'vayekhi',
+  // Perícope 72
+  'אל תירא': 'al-tira', 'וירדו': 'vayerdu',
+  // Perícope 74
+  'גשׁן': 'Goshen', 'יאמרו': 'yomru', 'ויברך': 'veyevarekh', 'רעמסס': "Ra'amses",
+  // Perícope 75
+  'מקנה': 'mikneh', 'אדמה': 'adamah', 'כהנים': 'kohanim', 'חמישׁית': 'khamishit',
+  // Perícope 76
+  'שׁבע עשׂרה': 'sheva-esreh', 'קבר': 'kavar',
+  // Perícope 77
+  'אפרים ומנשׁה': 'Efrayim-uMenashe', 'ויגשׁ': 'vayigash', 'ידיו': 'yadav',
+  // Perícope 78
+  'האספו': "hease'fu", 'ראובן': "Re'uven", 'זבולן': 'Zevulun',
+  'יששׂכר': 'Issaskhar', 'דן': 'Dan', 'גד': 'Gad', 'אשׁר': 'Asher',
+  'נפתלי': 'Naftali', 'שׁנים עשׂר': 'shnem-asar',
+  // Perícope 79
+  'פרעה': 'Faroh',
+  // Perícope 80
+  'ויפלו': 'vayiplu', 'תחת אלהים': 'takhat-Elohim', 'טובה': 'tovah',
+  // Perícope 81
+  'מאה ועשׂר': "me'ah-vaEser", 'פקד יפקד': 'pakod-yifkod', 'ויחנטו': 'vayakhantu',
+};
+
 // ─── Quiasma renderer ───────────────────────────────────────────────
 function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: number }) {
   const [quiasma, setQuiasma] = useState('');
@@ -541,11 +696,21 @@ function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: num
               <div style={{ flex: 1, minWidth: 0, fontSize: 'clamp(15px,2.6vw,17px)', lineHeight: 1.65, overflowWrap: 'break-word', wordBreak: 'break-word' }}>
                 {refPart && <span style={{ color: pal.label, opacity: 0.75, fontWeight: 600, fontSize: 'clamp(13px,2vw,14px)', marginRight: 6, whiteSpace: 'nowrap' }}>{refPart}</span>}
                 <span style={{ color: isCenter ? pal.label : 'rgba(255,255,255,0.88)', fontWeight: isCenter ? 700 : 400 }}>
-                  {desc.split(/(\[[^\]]+\])/).map((part, pi) =>
-                    part.startsWith('[') && part.endsWith(']')
-                      ? <span key={pi} style={{ whiteSpace: 'nowrap', unicodeBidi: 'isolate', direction: 'ltr', fontFamily: '"SBL Hebrew","Ezra SIL","Noto Serif Hebrew","Noto Sans Hebrew","Times New Roman",serif', fontSize: 'clamp(18px,3vw,22px)', fontWeight: 600, color: pal.label, letterSpacing: '0.04em', marginLeft: 4 }}>{part}</span>
-                      : part
-                  )}
+                  {desc.split(/(\[[^\]]+\])/).map((part, pi) => {
+                    if (part.startsWith('[') && part.endsWith(']')) {
+                      const inner = part.slice(1, -1);
+                      const translit = HEBREW_TRANSLIT[inner];
+                      return (
+                        <span key={pi} style={{ whiteSpace: 'nowrap', display: 'inline-flex', alignItems: 'baseline', gap: 4, marginLeft: 4 }}>
+                          <span style={{ unicodeBidi: 'isolate', direction: 'rtl', fontFamily: '"SBL Hebrew","Ezra SIL","Noto Serif Hebrew","Noto Sans Hebrew","Times New Roman",serif', fontSize: 'clamp(18px,3vw,22px)', fontWeight: 600, color: pal.label, letterSpacing: '0.04em' }}>{part}</span>
+                          {translit && (
+                            <span style={{ fontSize: 'clamp(11px,2vw,13px)', color: pal.label, opacity: 0.70, fontStyle: 'italic', fontFamily: 'sans-serif', letterSpacing: '0.01em' }}>[{translit}]</span>
+                          )}
+                        </span>
+                      );
+                    }
+                    return part;
+                  })}
                 </span>
               </div>
             </div>
