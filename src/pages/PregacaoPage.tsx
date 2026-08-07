@@ -295,6 +295,72 @@ function EstruturaHomileticaSection() {
         <p style={{ marginTop: 12, fontSize: 14, color: 'rgba(255,255,255,0.60)' }}>
           Cf. Dorsey, D. A. <em>The Literary Structure of the Old Testament</em>. Grand Rapids: Baker Academic, 1999. pp. 48–52.⁵ | Wenham, G. J. <em>Genesis 1–15</em>. WBC 1. Waco: Word Books, 1987. pp. 6–10.⁶
         </p>
+
+        {/* Movimentos expositivos derivados */}
+        <div style={{ marginTop: 20, borderTop: '1px solid rgba(255,200,80,0.18)', paddingTop: 20 }}>
+          <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.18em', color: accent, textTransform: 'uppercase', marginBottom: 16 }}>Divisões Expositivas do Sermão</div>
+
+          {[
+            {
+              num: 'I', par: 'A ↔ A\'', ref: 'Gn 1:3–5 / 1:14–19',
+              title: 'A Palavra que Separa: Luz, Espaço e Tempo como Domínio do Soberano',
+              cor: 'rgba(80,200,255,1)', corL: 'rgba(80,200,255,0.10)', corB: 'rgba(80,200,255,0.30)',
+              indicacao: 'Gn 1.3-5 ("haja luz... e Deus separou a luz das trevas") ecoa estruturalmente em 1.14-19 — luminares criados "para separar" (lehavdil) o dia da noite e para governar os moʿadim, as festas sagradas.',
+              exegese: 'O verbo hebraico badal (separar) aparece em 1.4, 1.6, 1.7, 1.14 e 1.18, tecendo A e A\' em torno da distinção soberana. A luz do dia 1 (ʾor) antecede os luminares do dia 4 (meʾorot): a ordem é teológica antes de ser astronômica — o Criador governa o calendário litúrgico (moʿadim) desde a criação.',
+              teologia: 'CFW IV.1: Deus criou todas as coisas "para a manifestação da glória de seu poder, sabedoria e bondade". O Catecismo Maior P.7 declara que o quarto mandamento obriga ao descanso — não como lei arbitrária, mas como eco da ordem inscrita na criação.',
+              aplicacao: 'Onde você tem permitido que o caos confunda o que Deus separou? Submeta calendário, afetos e prioridades à Palavra que ainda hoje diz "haja luz" sobre as trevas do coração.',
+            },
+            {
+              num: 'II', par: 'B ↔ B\'', ref: 'Gn 1:6–10 / 1:20–23',
+              title: 'A Palavra que Forma e Enche: Espaços Ordenados, Vida Multiplicada',
+              cor: 'rgba(180,120,255,1)', corL: 'rgba(180,120,255,0.10)', corB: 'rgba(180,120,255,0.30)',
+              indicacao: 'Gn 1.6-10 (firmamento separando as águas; terra seca emergindo) corresponde a 1.20-23 (aves no firmamento, peixes nas águas, bênção de multiplicação) — espaços formados nos dias 2-3 são habitados nos dias 5-6.',
+              exegese: 'A estrutura tohu vavohu (caos e vazio, 1.2) é resolvida em dois movimentos paralelos: os dias 1-3 estabelecem domínios e os dias 4-6 os preenchem com governantes e habitantes. O verbo barak (abençoar, 1.22) é lançado pela primeira vez sobre os seres vivos — a bênção não é sentimento, mas potência de fecundidade inscrita pela Palavra.',
+              teologia: 'CFW V.1: Deus, pelo mesmo decreto que criou todas as coisas, as sustenta e governa segundo o conselho de sua vontade. A Aliança da Criação pressupõe que o mundo preparado aguarda o habitante obediente — a graça prepara o espaço antes de mandar a vida.',
+              aplicacao: 'Você busca fruto em sua casa ou ministério sem deixar Deus ordenar os espaços interiores? A bênção segue a estrutura que Ele estabelece, não a urgência que nós impomos.',
+            },
+            {
+              num: 'III', par: 'C ↔ C\'', ref: 'Gn 1:11–13 / 1:24–31',
+              title: 'A Palavra que Delega: o Homem como Imagem Governante',
+              cor: 'rgba(100,220,160,1)', corL: 'rgba(100,220,160,0.10)', corB: 'rgba(100,220,160,0.30)',
+              indicacao: 'Gn 1.11-13 (a terra "produza" vegetação por mandato divino) prefigura 1.24-31 — animais e, no clímax, o homem criado como tselem e demut com mandato de radah (dominar) e kabash (encher e subjugar).',
+              exegese: 'O ápice do sexto dia é duplo: tselem (imagem — relação representativa) e demut (semelhança — relação funcional) habilitam o homem a exercer radah (domínio vicário). Este domínio não é exploração autônoma; é governo delegado — o vice-regente governa em nome do Rei. Deus inspeciona e declara "muito boa" (tov meod, 1.31).',
+              teologia: 'Catecismo Menor P.10 e Maior P.17: homem criado à imagem de Deus com conhecimento, justiça e santidade. CFW VII.2: a Aliança das Obras chama o homem a perfeita obediência — o domínio só é bênção dentro dos limites do Soberano.',
+              aplicacao: 'Você governa seu lar, trabalho e corpo como senhor absoluto ou como mordomo responsável? Imagem de Deus se vê em quem cuida como Deus cuida — com Palavra, ordem e bênção.',
+            },
+            {
+              num: 'IV', par: 'CENTRO ◉', ref: 'Gn 2:1–4a',
+              title: 'A Palavra que Consagra: o Descanso como Telos da Criação',
+              cor: 'rgba(255,200,80,1)', corL: 'rgba(255,200,80,0.12)', corB: 'rgba(255,200,80,0.35)',
+              indicacao: 'Gn 2.1-3 ("assim foram acabados os céus e a terra... Deus abençoou o sétimo dia e o santificou") é o centro estrutural do quiasma, emoldurado pela inclusio bereshit bara Elohim (1.1) e asher bara Elohim laasot (2.3).',
+              exegese: 'O shabat não é pausa por fadiga — Deus não se cansa (Is 40.28). É consagração: qadash (santificar) é lançado pela primeira vez sobre o tempo, não sobre espaço ou objeto. A semana hexameral inteira existe para chegar ao sétimo dia como ápice litúrgico — criação e culto convergem aqui.',
+              teologia: 'CFW XXI.7-8: Dia do Senhor como sábado cristão — o primeiro dia da semana, dia da ressurreição. O "fim chefe do homem é glorificar a Deus e desfrutá-lo para sempre" (Cat. Menor P.1) — o sábado é o ensaio semanal desse fim eterno.',
+              aplicacao: 'Sua semana corre para o trabalho como finalidade ou para o culto como ápice? Recupere o Dia do Senhor como a mais alta marca de identidade: você é o povo que descansa porque o Criador descansou primeiro e Cristo consumou a obra.',
+            },
+          ].map((mv, i) => (
+            <div key={i} style={{ borderRadius: 14, border: `1px solid ${mv.corB}`, background: mv.corL, padding: '18px 22px', marginBottom: 14 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 12, flexWrap: 'wrap' }}>
+                <div style={{ fontFamily: 'monospace', fontWeight: 900, fontSize: 18, color: mv.cor, minWidth: 28 }}>{mv.num}</div>
+                <span style={{ fontSize: 11, fontWeight: 700, padding: '2px 10px', borderRadius: 20, background: mv.corB, color: mv.cor }}>{mv.par}</span>
+                <span style={{ fontSize: 12, color: C.muted }}>{mv.ref}</span>
+              </div>
+              <div style={{ fontSize: 16, fontWeight: 800, color: C.white, marginBottom: 14, lineHeight: 1.4 }}>{mv.title}</div>
+              <div style={{ display: 'grid', gap: 10 }}>
+                {[
+                  { label: '§ Indicação Textual', text: mv.indicacao },
+                  { label: '§ Exegese', text: mv.exegese },
+                  { label: '§ Teologia Reformada', text: mv.teologia },
+                  { label: '§ Aplicação', text: mv.aplicacao },
+                ].map((item, j) => (
+                  <div key={j} style={{ padding: '10px 14px', borderRadius: 10, background: 'rgba(0,0,0,0.30)', borderLeft: `3px solid ${mv.cor}` }}>
+                    <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.12em', color: mv.cor, textTransform: 'uppercase', marginBottom: 4 }}>{item.label}</div>
+                    <div style={{ fontSize: 14, color: 'rgba(255,255,255,0.80)', lineHeight: 1.7 }}>{item.text}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
       </SectionCard>
 
       {/* Seção 8 — Eixo Cristológico */}
