@@ -253,6 +253,91 @@ function DiaCard({ d, isHoje, onClick, onShare }: {
   );
 }
 
+// ─── Transliteração hebraica (Gênesis) ──────────────────────────────
+const HEBREW_TRANSLIT: Record<string, string> = {
+  'שׁמיםארץ': 'shamayim-arets', 'אור': 'or', 'מים': 'mayim', 'עשׂב': 'esev',
+  'מאור': 'maor', 'טוב': 'tov', 'וירדו': 'veyirdu', 'ורדו': 'urdu',
+  'והשׁקה': 'vehashkah', 'גןבעדן': 'gan-beEden', 'עץהדעת': 'ets-hadaat',
+  'להשׁקות': 'lehashkot', 'בגןעדן': 'began-Eden', 'ומעץהדעת': 'umeets-hadaat',
+  'יקרא': 'yiqra',
+  'ידעיטובורע': 'yodei-tov-vara', 'לדעתטובורע': 'ladaat-tov-vara',
+  'שׁבעתים': "shiv'atayim",
+  'רע': 'ra', 'שׁשׁ': 'shesh', 'לשׁבעת': "leshiv'at", 'ארבעים': "arba'im",
+  'ההרים': 'heharim', 'הרי': 'harei', 'שׁבעת': "shiv'at", 'ושׁשׁ': 'veshesh',
+  'בשׂר': 'basar', 'המבול': 'hamabul', 'אותהברית': 'ot-habrit',
+  'לאותברית': "le'ot-brit", 'למבול': 'lemabul',
+  'היין': 'hayayin', 'כנען': "Kena'an", 'שׁםויפת': 'Shem-veYafet',
+  'מיינו': 'miyeyno', 'שׁםויהי': 'Shem-veyehi',
+  'תולדת': 'toledot', 'לתולדתם': 'letoledotam',
+  'שׂפה': 'safah', 'נפוץ': 'nafuts', 'ויפץ': 'vayafets', 'שׂפת': 'sfat',
+  'עקרה': 'akarah', 'ויצאו': "vayetse'u",
+  'ברך': 'barakh', 'ויצא': 'vayetse', 'וירא': 'vayera', 'ויבן': 'vayiven', 'ויסע': 'vayisa',
+  'רעב': 'raav', 'אחתי': 'akhoti', 'אשׁתך': 'ishtekha', 'ויעל': "vaya'al",
+  'המזבח': "hamizbe'akh", 'ריב': 'riv', 'נפרד': 'nifrad', 'ויבחר': 'vayivkhar',
+  'מלכים': 'melakhim', 'ויכו': 'vayaku', 'וילכדו': 'vayilkedu',
+  'וישׁב': 'vayashev', 'מלך': 'melekh', 'ויברכהו': 'vayevarkhehu',
+  'האמן': "ha'amin", 'ברית': 'brit', 'מצרים': 'Mitsrayim', 'זרעך': "zar'akha",
+  'שׁפחתה': 'shifkhata', 'ותברח': 'vatibrakah', 'מלאך': "mal'akh",
+  'ורבה': 'veravah', 'ראי': "ro'i",
+  'מול': 'mul', 'שׂרה': 'Sarah', 'יצחק': 'Yitschak',
+  'איה': 'ayeh', 'ותצחק': 'vatitschak', 'יפלא': 'yipale', 'כי צחקת': 'ki-tsakhakt',
+  'הכסה': 'hakhase', 'צדקה': 'tsedakah', 'אסתיר': 'astir',
+  'הצדיק': 'hatsadik', 'וילך': 'vayelekh',
+  'ויבאו': "vayavo'u", 'אנשׁי': 'anshei', 'בנתי': 'benoti',
+  'ויפצרו': 'vayiftseru', 'ויסמו': 'vayasmu',
+  'צא': 'tse', 'חמל': 'khamal', 'גפרית': 'gafrit', 'ותבט': 'vatabet', 'ויזכר': 'vayizkor',
+  'מערה': "me'arah", 'יין': 'yayin', 'ידע': 'yada', 'מואב': 'Moav', 'בן עמי': 'ben-ami',
+  'בחלום': 'bakhalom', 'מה': 'mah', 'יראתי': "yire'ati",
+  'פקד': 'pakad', 'צחק': 'tsakhak',
+  'גרשׁ': 'garesh', 'וישׁלח': 'vayeshallakh', 'וישׁמע': 'vayishma',
+  'בְּאֵר': "be'er", 'שׁבע': 'sheva', 'בְּאֵר שָׁבַע': "Be'er-Sheva", 'עולם': 'olam',
+  'נסה': 'nasah', 'יחדו': 'yakhdav', 'יראה': "yir'eh",
+  'שׁתה': 'shtah', 'ויספר': 'vayesapper', 'ותלך': 'vateleikh', 'ויקחה': 'vayikakhah',
+  'רב': 'rav', 'עשׂו': 'Esav', 'שׂדה': 'sadeh',
+  'עיף': 'ayef', 'בכרה': 'bekhorah',
+  'ויגדל': 'vayigdal',
+  'ויסתמו': 'vayistamu', 'מזבח': "mizbe'akh",
+  'ויבא': 'vayavo', 'שׁבעה': "shiv'ah",
+  'ברכה': 'berakhah', 'רמה': 'ramah', 'ויבך': 'vayevkhe', 'יימי': 'yimei',
+  'ויאמר': "vayo'mer", 'ברח': 'barakh', 'שׁוב': 'shuv',
+  'לבן': 'Lavan', 'ברכת': 'birkat', 'ישׁמעאל': "Yishma'el",
+  'מלאכים': "mal'akhim", 'בֵּית אֱלֹהִים': 'Beit-Elohim', 'בֵּית אֵל': 'Beit-El', 'ידר': 'yidar',
+  'ויגל': 'vayagel', 'וירץ': 'vayaruts', 'עצמי': 'atsmii',
+  'וירמא': 'vayerma', 'ויאהב': "vaye'ehav",
+  'ילדה': 'yaldah', 'בלהה': 'Bilhah', 'זלפה': 'Zilpah', 'יוסף': 'Yosef',
+  'שׁלח': 'shalakh', 'אתן': 'eten', 'ויסר': 'vayasar', 'מקלות': 'maklot', 'ויפרץ': 'vayifrets',
+  'ויקם': 'vayakom', 'וינס': 'vayanas',
+  'חלום': 'khalom', 'תרפים': 'terafim', 'ויחר': 'vayikhar', 'ויוכח': 'vayokakh',
+  'גלעד': "Gal'ed",
+  'מחנה': 'makhaneh', 'ויירא': 'vayira', 'תפלה': 'tefillah',
+  'מנחה': 'minkhah', 'לפניו': 'lefanav',
+  'לבדו': 'levado', 'יאבק': "ye'avek", 'ישׂראל': 'Yisrael', 'פני': 'panai',
+  'וישׁתחו': 'vayishtakhu', 'ויחבקהו': 'vayekhabkhu', 'מצא': 'matsa',
+  'שׁכם': 'Shekhem', 'בת': 'bat', 'שׁמעון ולוי': "Shim'on-veLevi",
+  'אלהי': 'elohei', 'ותמת': 'vatamot',
+  'ויגוע': 'vayigva',
+  'שׂנאו': "sane'u", 'וישׁתחוו': 'vayishtakhavu', 'ויקנאו': "vayekane'u", 'שׁמר': 'shamar',
+  'ילך': 'yelekh', 'הבור': 'habor', 'ויקרע': "vayikra'",
+  'ער': 'Er', 'ותכסה': 'vatekhaseh', 'ערבון': 'eravon', 'תאומים': "te'omim",
+  'יהוה עם': 'YHWH-im', 'ותתפשׂהו': 'vatetafshu', 'בגד': 'beged',
+  'שׁכח': 'shakhakh', 'זכר': 'zakhar', 'משׁנה': 'mishneh',
+  'מנשׁה ואפרים': 'Menashe-veEfrayim',
+  'שׁבר': 'shavar', 'אשׁמים': 'ashamim', 'כסף': 'kesef', 'ויספרו': 'vayesapru',
+  'בנימן': 'Binyamin', 'ויאכלו': "vayo'khelu", 'גביע': 'gavia',
+  'יהודה': 'Yehudah', 'אני יוסף': 'ani-Yosef', 'ויתן': 'vayiten', 'ויחי': 'vayekhi',
+  'אל תירא': 'al-tira', 'וירדו': 'vayerdu',
+  'גשׁן': 'Goshen', 'יאמרו': 'yomru', 'ויברך': 'veyevarekh', 'רעמסס': "Ra'amses",
+  'מקנה': 'mikneh', 'אדמה': 'adamah', 'כהנים': 'kohanim', 'חמישׁית': 'khamishit',
+  'שׁבע עשׂרה': 'sheva-esreh', 'קבר': 'kavar',
+  'אפרים ומנשׁה': 'Efrayim-uMenashe', 'ויגשׁ': 'vayigash', 'ידיו': 'yadav',
+  'האספו': "hease'fu", 'ראובן': "Re'uven", 'זבולן': 'Zevulun',
+  'יששׂכר': 'Issaskhar', 'דן': 'Dan', 'גד': 'Gad', 'אשׁר': 'Asher',
+  'נפתלי': 'Naftali', 'שׁנים עשׂר': 'shnem-asar',
+  'פרעה': 'Faroh',
+  'ויפלו': 'vayiplu', 'תחת אלהים': 'takhat-Elohim', 'טובה': 'tovah',
+  'מאה ועשׂר': "me'ah-vaEser", 'פקד יפקד': 'pakod-yifkod', 'ויחנטו': 'vayakhantu',
+};
+
 // Paleta de cores para niveis do quiasma
 const QUIASMA_PALETA = [
   { label: 'rgba(255,200,80,1)',  bg: 'rgba(255,200,80,0.12)',  border: 'rgba(255,200,80,0.45)'  },
@@ -645,25 +730,21 @@ function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: num
                   fontWeight: isCenter ? 700 : 400,
                 }}>
                   {/* Split on [...] so Hebrew/Greek inside brackets never line-breaks */}
-                  {desc.split(/(\[[^\]]+\])/).map((part, pi) =>
-                    part.startsWith('[') && part.endsWith(']')
-                      ? (
-                        <span key={pi} style={{
-                          whiteSpace: 'nowrap',
-                          unicodeBidi: 'isolate',
-                          direction: 'ltr',
-                          fontFamily: '"SBL Hebrew","Ezra SIL","Noto Serif Hebrew","Noto Sans Hebrew","Times New Roman",serif',
-                          fontSize: 'clamp(17px,3.5vw,21px)',
-                          fontWeight: 600,
-                          color: pal.label,
-                          letterSpacing: '0.04em',
-                          marginLeft: 4,
-                        }}>
-                          {part}
+                  {desc.split(/(\[[^\]]+\])/).map((part, pi) => {
+                    if (part.startsWith('[') && part.endsWith(']')) {
+                      const inner = part.slice(1, -1);
+                      const translit = HEBREW_TRANSLIT[inner];
+                      return (
+                        <span key={pi} style={{ whiteSpace: 'nowrap', display: 'inline-flex', alignItems: 'baseline', gap: 4, marginLeft: 4 }}>
+                          <span style={{ unicodeBidi: 'isolate', direction: 'rtl', fontFamily: '"SBL Hebrew","Ezra SIL","Noto Serif Hebrew","Noto Sans Hebrew","Times New Roman",serif', fontSize: 'clamp(17px,3.5vw,21px)', fontWeight: 600, color: pal.label, letterSpacing: '0.04em' }}>{part}</span>
+                          {translit && (
+                            <span style={{ fontSize: 'clamp(11px,2vw,13px)', color: pal.label, opacity: 0.70, fontStyle: 'italic', fontFamily: 'sans-serif', letterSpacing: '0.01em' }}>[{translit}]</span>
+                          )}
                         </span>
-                      )
-                      : part
-                  )}
+                      );
+                    }
+                    return part;
+                  })}
                 </span>
               </div>
             </div>
