@@ -156,6 +156,226 @@ function extractQuiasmaBloco(text: string, idx: number): string {
   return lines.slice(blockStart, blockEnd).join('\n').trim();
 }
 
+// ─── Estrutura Homilética (Gênesis Perícope 1) ──────────────────────
+function EstruturaHomileticaSection() {
+  const accent = 'rgba(255,200,80,1)';
+  const accentL = 'rgba(255,200,80,0.10)';
+  const accentB = 'rgba(255,200,80,0.30)';
+
+  const SectionCard = ({ num, icon, title, children }: { num: string; icon: string; title: string; children: React.ReactNode }) => (
+    <div style={{ borderRadius: 16, border: `1px solid ${accentB}`, background: 'rgba(20,14,40,0.7)', padding: '24px 28px', marginBottom: 18 }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 14 }}>
+        <div style={{ width: 36, height: 36, borderRadius: 10, background: accentL, border: `1px solid ${accentB}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 18, flexShrink: 0 }}>{icon}</div>
+        <div>
+          <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.18em', color: accent, textTransform: 'uppercase', marginBottom: 2 }}>Seção {num}</div>
+          <div style={{ fontSize: 17, fontWeight: 800, color: C.white }}>{title}</div>
+        </div>
+      </div>
+      <div style={{ fontSize: 15, color: 'rgba(255,255,255,0.78)', lineHeight: 1.75 }}>{children}</div>
+    </div>
+  );
+
+  const Footnote = ({ num, text }: { num: number; text: string }) => (
+    <div style={{ fontSize: 12, color: C.muted, lineHeight: 1.6, marginBottom: 4, paddingLeft: 16, position: 'relative' }}>
+      <span style={{ position: 'absolute', left: 0, color: accent, fontWeight: 700 }}>{num}</span>
+      {text}
+    </div>
+  );
+
+  const Tag = ({ label, color = accentB }: { label: string; color?: string }) => (
+    <span style={{ display: 'inline-block', padding: '2px 10px', borderRadius: 20, background: color, color: C.white, fontSize: 11, fontWeight: 700, marginRight: 6, marginBottom: 4 }}>{label}</span>
+  );
+
+  return (
+    <div style={{ paddingBottom: 40 }}>
+      {/* Header */}
+      <div style={{ borderRadius: 16, border: `1px solid ${accentB}`, background: accentL, padding: '20px 24px', marginBottom: 24 }}>
+        <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.2em', color: accent, textTransform: 'uppercase', marginBottom: 8 }}>Gênesis 1:1–2:4a · Perícope 1 · Dia 1</div>
+        <div style={{ fontSize: 'clamp(18px,2.8vw,24px)', fontWeight: 900, color: C.white, lineHeight: 1.3, marginBottom: 8 }}>
+          Os Luminares do Pacto: quando o Soberano marca o tempo da Sua aliança
+        </div>
+        <div style={{ fontSize: 15, color: 'rgba(255,255,255,0.65)', fontStyle: 'italic' }}>
+          "Como a Palavra soberana de Deus pode transformar o caos da nossa vida em cosmos consagrado?"
+        </div>
+      </div>
+
+      {/* Seção 1 — Título */}
+      <SectionCard num="I" icon="📌" title="Título">
+        <p><strong style={{ color: accent }}>Título Principal:</strong> Os Luminares do Pacto — quando o Soberano marca o tempo da Sua aliança</p>
+        <p style={{ marginTop: 8 }}><strong style={{ color: accent }}>Subtítulo:</strong> A criação como prólogo do drama redentor de Deus</p>
+        <div style={{ marginTop: 12, padding: '10px 16px', borderRadius: 10, background: 'rgba(0,0,0,0.3)', fontFamily: 'monospace', fontSize: 13, color: 'rgba(255,255,255,0.60)', lineHeight: 1.7 }}>
+          Gn 1:1 — בְּרֵאשִׁית בָּרָא אֱלֹהִים אֵת הַשָּׁמַיִם וְאֵת הָאָרֶץ<br />
+          <span style={{ color: C.muted, fontFamily: 'sans-serif', fontSize: 12 }}>"No princípio criou Deus os céus e a terra."</span>
+        </div>
+      </SectionCard>
+
+      {/* Seção 2 — Texto */}
+      <SectionCard num="II" icon="📖" title="Texto Base">
+        <p><strong style={{ color: accent }}>Perícope:</strong> Gênesis 1:1–2:4a (ARA / NVI)</p>
+        <p style={{ marginTop: 8 }}><strong style={{ color: accent }}>Ponto focal:</strong> Gênesis 1:14–19 — os luminares como marcadores do tempo sagrado de Deus</p>
+        <div style={{ marginTop: 10, display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+          <Tag label="Pentateuco" />
+          <Tag label="Narrativa Fundacional" />
+          <Tag label="Teologia da Criação" />
+          <Tag label="Protocrítico AT" />
+        </div>
+      </SectionCard>
+
+      {/* Seção 3 — Tema */}
+      <SectionCard num="III" icon="🎯" title="Tema (Big Idea)">
+        <p>O Deus soberano, pela Sua Palavra criadora e organizadora, transforma o caos (<span style={{ fontFamily: 'monospace', color: accent }}>תֹהוּ וָבֹהוּ</span>) em cosmos sagrado — revelando que a criação é o palco preparado para o drama da redenção.</p>
+        <p style={{ marginTop: 10, padding: '8px 14px', borderRadius: 8, background: 'rgba(255,200,80,0.08)', borderLeft: `3px solid ${accent}`, fontSize: 14, color: 'rgba(255,255,255,0.70)', fontStyle: 'italic' }}>
+          "Deus não cria para Si um mundo, mas para o Seu povo — um cosmos onde a aliança possa habitar."<br />
+          <span style={{ fontSize: 12 }}>— Parafraseado de Vos, G. <em>Biblical Theology</em>. Grand Rapids: Eerdmans, 1948. p. 27.¹</span>
+        </p>
+      </SectionCard>
+
+      {/* Seção 4 — Exórdio */}
+      <SectionCard num="IV" icon="🔥" title="Exórdio (Gancho / Introdução)">
+        <p>Vivemos em mundo onde a desordem parece ter a última palavra. Crises, relacionamentos fragmentados, propósitos perdidos — o <span style={{ fontFamily: 'monospace', color: accent }}>תֹהוּ</span> do Gênesis ressoa na nossa experiência mais íntima.</p>
+        <p style={{ marginTop: 10 }}>Mas antes de qualquer caos humano existir, houve uma Voz. E essa Voz disse: <em>"Haja luz"</em> — e o cosmos emergiu da desordem. A pergunta não é <em>se</em> Deus pode transformar o caos, mas <em>quando</em> Ele já o fez — e o que isso significa para nós.</p>
+        <p style={{ marginTop: 10, fontSize: 14, color: 'rgba(255,255,255,0.60)', fontStyle: 'italic' }}>
+          Cf. Keller, T. <em>Preaching: Communicating Faith in an Age of Skepticism</em>. New York: Viking, 2015. pp. 157–162.²
+        </p>
+      </SectionCard>
+
+      {/* Seção 5 — Proposição */}
+      <SectionCard num="V" icon="⚡" title="Proposição">
+        <div style={{ padding: '14px 18px', borderRadius: 12, background: 'rgba(255,200,80,0.12)', border: `1px solid ${accentB}` }}>
+          <p style={{ fontWeight: 800, fontSize: 17, color: C.white, margin: 0 }}>
+            A Palavra soberana de Deus transforma todo caos em cosmos consagrado — e isso é o fundamento da nossa esperança redentor-criacional.
+          </p>
+        </div>
+        <p style={{ marginTop: 12, fontSize: 14, color: 'rgba(255,255,255,0.65)' }}>
+          Cf. Clowney, E. P. <em>Preaching Christ in All of Scripture</em>. Wheaton: Crossway, 2003. pp. 41–48.³
+        </p>
+      </SectionCard>
+
+      {/* Seção 6 — Interrogação e Transição */}
+      <SectionCard num="VI" icon="❓" title="Interrogação e Transição">
+        <p><strong style={{ color: accent }}>Interrogação central:</strong> Como a Palavra soberana de Deus pode transformar o caos da nossa vida em cosmos consagrado?</p>
+        <p style={{ marginTop: 10 }}><strong style={{ color: accent }}>Transição:</strong> Para responder, precisamos acompanhar a ação divina nos seis dias — observando o padrão quiástico que revela a lógica teológica da criação.</p>
+        <p style={{ marginTop: 10, fontSize: 14, color: 'rgba(255,255,255,0.60)' }}>
+          Cf. Chapell, B. <em>Christ-Centered Preaching</em>. 3. ed. Grand Rapids: Baker Academic, 2018. pp. 121–135.⁴
+        </p>
+      </SectionCard>
+
+      {/* Seção 7 — Divisões */}
+      <SectionCard num="VII" icon="📐" title="Divisões / Movimentos">
+        <p style={{ marginBottom: 14, fontSize: 14, color: C.muted }}>Estrutura quiástica em 8 movimentos (P–A–B–C–C'–B'–A'–P'):</p>
+        {[
+          { sym: 'P',  ref: 'Gn 1:1–2',    label: 'Prólogo: O Soberano e o Caos Primordial',      cor: 'rgba(255,200,80,1)' },
+          { sym: 'A',  ref: 'Gn 1:3–5',    label: 'Luz separada das trevas (Dia 1)',               cor: 'rgba(80,200,255,1)' },
+          { sym: 'B',  ref: 'Gn 1:6–8',    label: 'Expansão separa as águas (Dia 2)',              cor: 'rgba(180,120,255,1)' },
+          { sym: 'C',  ref: 'Gn 1:9–13',   label: 'Terra e vegetação emergem (Dia 3)',             cor: 'rgba(100,220,160,1)' },
+          { sym: "A'", ref: 'Gn 1:14–19',  label: 'Luminares governam a luz (Dia 4) ← FOCO',      cor: 'rgba(80,200,255,1)' },
+          { sym: "B'", ref: 'Gn 1:20–23',  label: 'Criaturas preenchem as águas/ar (Dia 5)',       cor: 'rgba(180,120,255,1)' },
+          { sym: "C'", ref: 'Gn 1:24–31',  label: 'Criaturas terrestres e o homem (Dia 6)',        cor: 'rgba(100,220,160,1)' },
+          { sym: "P'", ref: 'Gn 2:1–4a',   label: 'Epílogo: O Soberano repousa e consagra',       cor: 'rgba(255,200,80,1)' },
+        ].map((m, i) => (
+          <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 12, padding: '10px 14px', borderRadius: 10, background: 'rgba(0,0,0,0.25)', marginBottom: 8, borderLeft: `3px solid ${m.cor}` }}>
+            <div style={{ fontFamily: 'monospace', fontWeight: 900, color: m.cor, fontSize: 16, minWidth: 28 }}>{m.sym}</div>
+            <div>
+              <div style={{ fontSize: 12, color: m.cor, fontWeight: 700, marginBottom: 2 }}>{m.ref}</div>
+              <div style={{ fontSize: 14, color: C.white }}>{m.label}</div>
+            </div>
+          </div>
+        ))}
+        {/* ASCII chiasma */}
+        <div style={{ marginTop: 16, padding: '14px 20px', borderRadius: 12, background: 'rgba(0,0,0,0.4)', fontFamily: 'monospace', fontSize: 12, color: 'rgba(255,255,255,0.55)', lineHeight: 2, overflowX: 'auto' }}>
+          <div style={{ color: 'rgba(255,200,80,0.9)', fontWeight: 700 }}>P  — 1:1–2  — Prólogo: Soberano e Caos</div>
+          <div style={{ paddingLeft: 16, color: 'rgba(80,200,255,0.9)', fontWeight: 700 }}>A  — 1:3–5  — Luz / trevas</div>
+          <div style={{ paddingLeft: 32, color: 'rgba(180,120,255,0.9)', fontWeight: 700 }}>B  — 1:6–8  — Águas separadas</div>
+          <div style={{ paddingLeft: 48, color: 'rgba(100,220,160,0.9)', fontWeight: 700 }}>C  — 1:9–13  — Terra / vegetação</div>
+          <div style={{ paddingLeft: 32, color: 'rgba(80,200,255,0.9)', fontWeight: 700 }}>A' — 1:14–19 — Luminares ← <span style={{ color: accent }}>EIXO</span></div>
+          <div style={{ paddingLeft: 20, color: 'rgba(180,120,255,0.9)', fontWeight: 700 }}>B' — 1:20–23 — Criaturas aquáticas/aéreas</div>
+          <div style={{ paddingLeft: 8, color: 'rgba(100,220,160,0.9)', fontWeight: 700 }}>C' — 1:24–31 — Terra / homem</div>
+          <div style={{ color: 'rgba(255,200,80,0.9)', fontWeight: 700 }}>P' — 2:1–4a — Epílogo: Descanso e Consagração</div>
+        </div>
+        <p style={{ marginTop: 12, fontSize: 14, color: 'rgba(255,255,255,0.60)' }}>
+          Cf. Dorsey, D. A. <em>The Literary Structure of the Old Testament</em>. Grand Rapids: Baker Academic, 1999. pp. 48–52.⁵ | Wenham, G. J. <em>Genesis 1–15</em>. WBC 1. Waco: Word Books, 1987. pp. 6–10.⁶
+        </p>
+      </SectionCard>
+
+      {/* Seção 8 — Eixo Cristológico */}
+      <SectionCard num="VIII" icon="✝️" title="Eixo Cristológico">
+        <p>A criação não é um fim em si mesma — é o <em>anfiteatro da redenção</em> (Calvino). O Logos que "estava no princípio com Deus" (Jo 1:1–3) é o mesmo que sustenta o cosmos criado (Cl 1:16–17). O Gênesis 1 aponta para o Novo Gênesis em Cristo:</p>
+        <div style={{ marginTop: 12, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 10 }}>
+          {[
+            { at: 'Trevas → Luz (Gn 1:3)', nt: 'Cristo, a Luz do mundo (Jo 8:12)', cor: 'rgba(80,200,255,0.15)' },
+            { at: 'Imagem de Deus (Gn 1:26)', nt: 'Cristo, imagem perfeita (Cl 1:15)', cor: 'rgba(180,120,255,0.15)' },
+            { at: 'Repouso sabático (Gn 2:2)', nt: 'Repouso em Cristo (Hb 4:9–10)', cor: 'rgba(100,220,160,0.15)' },
+          ].map((p, i) => (
+            <div key={i} style={{ padding: '10px 14px', borderRadius: 10, background: p.cor, border: '1px solid rgba(255,255,255,0.08)' }}>
+              <div style={{ fontSize: 12, color: C.muted, marginBottom: 4 }}>AT: {p.at}</div>
+              <div style={{ fontSize: 13, color: C.white, fontWeight: 700 }}>NT: {p.nt}</div>
+            </div>
+          ))}
+        </div>
+        <p style={{ marginTop: 12, fontSize: 14, color: 'rgba(255,255,255,0.60)' }}>
+          Cf. Clowney, E. P. <em>op. cit.</em>³ pp. 60–72. | Goldsworthy, G. <em>According to Plan</em>. Downers Grove: IVP, 1991. pp. 85–94.⁷
+        </p>
+      </SectionCard>
+
+      {/* Seção 9 — Ilustração */}
+      <SectionCard num="IX" icon="💡" title="Ilustração">
+        <p>Imagine um arquiteto que recebe um terreno em ruínas — entulho, lama, sem forma. Ele não abandona o local: <em>ele fala</em>. Cada palavra de comando transforma o caos em estrutura habitável. Assim age o Deus de Gênesis 1: Sua Palavra não descreve a realidade — <strong style={{ color: accent }}>ela a produz</strong>.</p>
+        <p style={{ marginTop: 10 }}>Na pregação reformada, a Palavra de Deus tem poder análogo: ela não apenas informa — ela <em>reforma</em>. Assim como os luminares foram criados para <em>governar</em> o tempo (Gn 1:14–18), o pregador é convocado a proclamar a Palavra que reorienta o tempo de sua congregação.</p>
+        <p style={{ marginTop: 10, fontSize: 14, color: 'rgba(255,255,255,0.60)' }}>
+          Cf. Keller, T. <em>op. cit.</em>² pp. 47–55. | Robinson, H. W. <em>Biblical Preaching</em>. 3. ed. Grand Rapids: Baker Academic, 2014. p. 21.⁸
+        </p>
+      </SectionCard>
+
+      {/* Seção 10 — Aplicação */}
+      <SectionCard num="X" icon="🛠️" title="Aplicação">
+        {[
+          { pub: 'Universal', app: 'Todo ser humano experimenta o caos — Deus é o único que transforma desordem em propósito (Gn 1:2).', ref: 'Rm 8:28' },
+          { pub: 'Crentes', app: 'A Palavra de Deus tem poder de re-criar a vida desordenada do crente. Permita que ela fale ao seu caos.', ref: '2Co 4:6' },
+          { pub: 'Pastores/Pregadores', app: 'Pregar é participar da ação criadora de Deus — cada sermão é um ato de ordenação pelo Espírito.', ref: 'Is 55:10–11' },
+        ].map((a, i) => (
+          <div key={i} style={{ padding: '12px 16px', borderRadius: 10, background: 'rgba(0,0,0,0.25)', marginBottom: 10, borderLeft: `3px solid ${accent}` }}>
+            <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.12em', color: accent, textTransform: 'uppercase', marginBottom: 4 }}>{a.pub} · {a.ref}</div>
+            <div style={{ fontSize: 14, color: C.white }}>{a.app}</div>
+          </div>
+        ))}
+        <p style={{ marginTop: 10, fontSize: 14, color: 'rgba(255,255,255,0.60)' }}>
+          Cf. Chapell, B. <em>op. cit.</em>⁴ pp. 47–60. | Sproul, R. C. <em>Knowing Scripture</em>. Downers Grove: IVP, 1977. pp. 42–50.⁹
+        </p>
+      </SectionCard>
+
+      {/* Seção 11 — Conclusão */}
+      <SectionCard num="XI" icon="🏁" title="Conclusão e Apelo">
+        <p>No princípio, havia caos. Deus falou — e houve cosmos. No princípio da sua vida, havia desordem. Cristo falou — e há nova criação (2Co 5:17). O mesmo Deus que disse <em>"haja luz"</em> na criação diz <em>"haja luz"</em> no seu coração.</p>
+        <p style={{ marginTop: 10 }}>O descanso do sétimo dia (Gn 2:1–3) não é inatividade — é <strong style={{ color: accent }}>consagração</strong>. É o Soberano declarando que o cosmos está completo, pronto para ser habitado pela aliança. E esse mesmo repouso está disponível para você em Cristo (Hb 4:9–11).</p>
+        <div style={{ marginTop: 14, padding: '14px 18px', borderRadius: 12, background: 'rgba(255,200,80,0.12)', border: `1px solid ${accentB}` }}>
+          <p style={{ fontWeight: 800, color: C.white, margin: 0, fontSize: 16 }}>
+            Apelo: Entregue o seu caos à Palavra soberana de Deus. Permita que o mesmo Logos que criou o cosmos recrie a sua vida.
+          </p>
+        </div>
+        <p style={{ marginTop: 12, fontSize: 14, color: 'rgba(255,255,255,0.60)' }}>
+          Cf. Lloyd-Jones, D. M. <em>Preaching and Preachers</em>. Grand Rapids: Zondervan, 1971. pp. 96–100.¹⁰ | Piper, J. <em>The Supremacy of God in Preaching</em>. Grand Rapids: Baker Books, 1990. pp. 33–40.¹¹
+        </p>
+      </SectionCard>
+
+      {/* Notas de rodapé ABNT */}
+      <div style={{ borderRadius: 14, border: '1px solid rgba(255,255,255,0.07)', background: 'rgba(0,0,0,0.30)', padding: '20px 24px', marginTop: 8 }}>
+        <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.18em', color: accent, textTransform: 'uppercase', marginBottom: 14 }}>Referências (ABNT NBR 6023)</div>
+        <Footnote num={1} text="VOS, Geerhardus. Biblical Theology: Old and New Testaments. Grand Rapids: Eerdmans, 1948. p. 27." />
+        <Footnote num={2} text="KELLER, Timothy. Preaching: Communicating Faith in an Age of Skepticism. New York: Viking, 2015. pp. 157–162." />
+        <Footnote num={3} text="CLOWNEY, Edmund P. Preaching Christ in All of Scripture. Wheaton: Crossway, 2003. pp. 41–48." />
+        <Footnote num={4} text="CHAPELL, Bryan. Christ-Centered Preaching: Redeeming the Expository Sermon. 3. ed. Grand Rapids: Baker Academic, 2018. pp. 121–135." />
+        <Footnote num={5} text="DORSEY, David A. The Literary Structure of the Old Testament: A Commentary on Genesis–Malachi. Grand Rapids: Baker Academic, 1999. pp. 48–52." />
+        <Footnote num={6} text="WENHAM, Gordon J. Genesis 1–15. Word Biblical Commentary, v. 1. Waco: Word Books, 1987. pp. 6–10." />
+        <Footnote num={7} text="GOLDSWORTHY, Graeme. According to Plan: The Unfolding Revelation of God in the Bible. Downers Grove: InterVarsity Press, 1991. pp. 85–94." />
+        <Footnote num={8} text="ROBINSON, Haddon W. Biblical Preaching: The Development and Delivery of Expository Messages. 3. ed. Grand Rapids: Baker Academic, 2014. p. 21." />
+        <Footnote num={9} text="SPROUL, R. C. Knowing Scripture. Downers Grove: InterVarsity Press, 1977. pp. 42–50." />
+        <Footnote num={10} text="LLOYD-JONES, D. Martyn. Preaching and Preachers. Grand Rapids: Zondervan, 1971. pp. 96–100." />
+        <Footnote num={11} text="PIPER, John. The Supremacy of God in Preaching. Grand Rapids: Baker Books, 1990. pp. 33–40." />
+      </div>
+    </div>
+  );
+}
+
 // ─── Quiasma renderer ───────────────────────────────────────────────
 function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: number }) {
   const [quiasma, setQuiasma] = useState('');
@@ -620,7 +840,7 @@ export default function PregacaoPage() {
   const [pericopes, setPericopes] = useState<Pericope[]>([]);
   const [loadingPericopes, setLoadingPericopes] = useState(false);
   const [selectedPericopeIdx, setSelectedPericopeIdx] = useState<number | null>(null);
-  const [contentTab, setContentTab] = useState<'quiasma' | 'homilestica'>('homilestica');
+  const [contentTab, setContentTab] = useState<'estrutura' | 'homilestica' | 'quiasma'>('estrutura');
 
   // Busca perícopes quando muda o livro
   useEffect(() => {
@@ -951,11 +1171,12 @@ export default function PregacaoPage() {
               {selectedPericope && selectedDia && (
                 <motion.div id="pregacao-content" key={selectedPericopeIdx} initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.2 }}>
                   {/* Tab bar */}
-                  <div style={{ display: 'flex', gap: 4, marginBottom: 20, borderBottom: `1px solid ${C.border}`, paddingBottom: 0 }}>
+                  <div style={{ display: 'flex', gap: 4, marginBottom: 20, borderBottom: `1px solid ${C.border}`, paddingBottom: 0, flexWrap: 'wrap' }}>
                     {([
-                      { key: 'homilestica', label: 'Homilética Para Pregar' },
-                      { key: 'quiasma',     label: 'Estrutura Quiástica' },
-                    ] as { key: 'quiasma' | 'homilestica'; label: string }[]).map(tab => {
+                      { key: 'estrutura',  label: 'Estrutura Homilética' },
+                      { key: 'homilestica', label: 'Homilética para Pregar' },
+                      { key: 'quiasma',    label: 'Estrutura Quiástica Espelhada' },
+                    ] as { key: 'estrutura' | 'homilestica' | 'quiasma'; label: string }[]).map(tab => {
                       const active = contentTab === tab.key;
                       return (
                         <button
@@ -963,8 +1184,8 @@ export default function PregacaoPage() {
                           onClick={() => setContentTab(tab.key)}
                           style={{
                             all: 'unset', cursor: 'pointer',
-                            padding: '12px 22px',
-                            fontSize: 15, fontWeight: 800,
+                            padding: '12px 18px',
+                            fontSize: 14, fontWeight: 800,
                             color: active ? C.white : C.muted,
                             borderBottom: active ? '2px solid rgba(196,160,255,1)' : '2px solid transparent',
                             marginBottom: -1,
@@ -993,7 +1214,17 @@ export default function PregacaoPage() {
 
                   {/* Tab content */}
                   <AnimatePresence mode="wait">
-                    {contentTab === 'quiasma' ? (
+                    {contentTab === 'estrutura' ? (
+                      <motion.div key="estrutura" initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 10 }} transition={{ duration: 0.18 }}>
+                        {selectedDia.dia === 1 ? (
+                          <EstruturaHomileticaSection />
+                        ) : (
+                          <div style={{ padding: 32, borderRadius: 16, border: '1px solid rgba(168,120,255,0.20)', background: 'rgba(20,12,40,0.6)', color: C.muted, fontSize: 13, textAlign: 'center' }}>
+                            Estrutura homilética ainda não disponível para esta perícope.
+                          </div>
+                        )}
+                      </motion.div>
+                    ) : contentTab === 'quiasma' ? (
                       <motion.div key="quiasma" initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 10 }} transition={{ duration: 0.18 }}>
                         <QuiasmaSection d={selectedDia} pericopeIdx={selectedPericope.idx} />
                       </motion.div>
