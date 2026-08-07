@@ -887,11 +887,11 @@ export default function PregacaoPage() {
 
   function selectPericope(idx: number) {
     setSelectedPericopeIdx(idx);
-    setContentTab('homilestica');
+    setContentTab('estrutura');
     setTimeout(() => {
       const el = document.getElementById('pregacao-content');
       if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }, 80);
+    }, 150);
   }
 
   const [bookDropOpen, setBookDropOpen] = useState(false);
@@ -1169,7 +1169,7 @@ export default function PregacaoPage() {
 
               {/* Abas de conteúdo: Estrutura Quiástica | Homilética */}
               {selectedPericope && selectedDia && (
-                <motion.div id="pregacao-content" key={selectedPericopeIdx} initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.2 }}>
+                <motion.div id="pregacao-content" key={selectedPericopeIdx} initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.2 }} style={{ scrollMarginTop: 80 }}>
                   {/* Tab bar */}
                   <div style={{ display: 'flex', gap: 4, marginBottom: 20, borderBottom: `1px solid ${C.border}`, paddingBottom: 0, flexWrap: 'wrap' }}>
                     {([
