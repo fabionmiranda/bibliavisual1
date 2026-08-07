@@ -8575,13 +8575,41 @@ function DiaModal({ d, onClose, innerRef }: { d: DiaDevocional; onClose: () => v
           <div style={{ fontSize: 'clamp(16px,4vw,20px)', color: cor, fontWeight: 800, marginBottom: 4 }}>
             {d.livroAbrev} {d.capitulos}
           </div>
-          <div style={{ fontSize: 'clamp(14px,3.5vw,17px)', color: 'rgba(255,255,255,0.85)', lineHeight: 1.5 }}>
+          <div style={{ fontSize: 'clamp(14px,3.5vw,17px)', color: 'rgba(255,255,255,0.85)', lineHeight: 1.5, marginBottom: gerarTituloCard(d) ? 14 : 0 }}>
             {d.pericope}
           </div>
+
+          {/* Título impactante */}
+          {gerarTituloCard(d) && (
+            <div style={{
+              marginTop: 8,
+              padding: 'clamp(12px,3vw,18px) clamp(14px,3.5vw,22px)',
+              borderRadius: 14,
+              background: `linear-gradient(135deg, ${isAT ? 'rgba(255,200,80,0.13)' : 'rgba(80,200,255,0.11)'} 0%, rgba(0,0,0,0) 100%)`,
+              border: `1px solid ${corB}`,
+              boxShadow: `0 0 24px ${isAT ? 'rgba(255,200,80,0.08)' : 'rgba(80,200,255,0.08)'}`,
+            }}>
+              <div style={{ fontSize: 'clamp(9px,2vw,10px)', fontWeight: 900, letterSpacing: '0.22em', color: cor, textTransform: 'uppercase', marginBottom: 6, opacity: 0.8 }}>
+                Tema do Dia
+              </div>
+              <div style={{
+                fontSize: 'clamp(18px,4.5vw,26px)',
+                fontWeight: 900,
+                color: C.white,
+                lineHeight: 1.25,
+                letterSpacing: '-0.01em',
+              }}>
+                {gerarTituloCard(d)}
+              </div>
+            </div>
+          )}
         </div>
 
+        {/* Quiasma */}
+        <QuiasmaSection d={d} pericopeIdx={pericopeIdx} />
+
         {/* Reflexao, Familia e Oracao */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginBottom: 4 }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginTop: 14, marginBottom: 4 }}>
           {[
             {
               icon: <BookOpen size={14} />,
@@ -8616,9 +8644,6 @@ function DiaModal({ d, onClose, innerRef }: { d: DiaDevocional; onClose: () => v
             </div>
           ))}
         </div>
-
-        {/* Quiasma */}
-        <QuiasmaSection d={d} pericopeIdx={pericopeIdx} />
 
         {/* Progresso */}
         <div style={{ marginTop: 24 }}>
