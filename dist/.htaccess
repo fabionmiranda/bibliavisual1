@@ -1,0 +1,17 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Não intercepta arquivos e pastas reais
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+
+  # Redireciona qualquer rota para index.html
+  RewriteRule ^ index.html [QSA,L]
+</IfModule>
+
+# Fallback: se mod_rewrite não capturar, 404 cai no index.html
+ErrorDocument 404 /index.html
+
+# Desativa listagem de diretórios
+Options -Indexes

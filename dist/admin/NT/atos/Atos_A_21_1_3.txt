@@ -1,0 +1,513 @@
+--- INTRODUÇÃO ---
+VISÃO: O método dos diagramas revela a arquitetura interna da viagem missionária de Paulo em Atos 21.1–3.
+OBJETIVO: Demonstrar como a narrativa da viagem funciona como expressão de obediência, providência e avanço missionário.
+
+1. INTERLINEAR (GREGO DO NOVO TESTAMENTO)
+
+[At 21:1a (A)] Grego: Ὡς δὲ ἐγένετο ἀναχθῆναι ἡμᾶς ἀποσπασθέντας ἀπ’ αὐτῶν
+Transliteração: Hōs de egeneto anachthēnai hēmas apospasthentas ap’ autōn
+Tradução: “E aconteceu que, tendo-nos separado deles, fizemo-nos ao mar”
+
+[At 21:1b (B)] Grego: εὐθυδρομήσαντες ἤλθομεν εἰς τὴν Κῶν
+Transliteração: Euthydromēsantes ēlthomen eis tēn Kōn
+Tradução: “Navegando diretamente, chegamos a Cós”
+
+[At 21:1c (C)] Grego: τῇ δὲ ἑξῆς εἰς τὴν Ῥόδον
+Transliteração: Tē de hexēs eis tēn Rhodon
+Tradução: “No dia seguinte, a Rodes”
+
+[At 21:1d (D)] Grego: κἀκεῖθεν εἰς Πάταρα
+Transliteração: Kakeithen eis Patara
+Tradução: “E dali, a Pátara”
+
+[At 21:2 (E)] Grego: καὶ εὑρόντες πλοῖον διαπερῶν εἰς Φοινίκην ἐπιβάντες ἀνήχθημεν
+Transliteração: Kai heurontes ploion diaperōn eis Phoinikēn epibantes anēchthēmen
+Tradução: “E, encontrando um navio que atravessava para a Fenícia, embarcamos e partimos”
+
+[At 21:3a (D’)] Grego: ἀναφανέντες δὲ τὴν Κύπρον
+Transliteração: Anaphanentes de tēn Kypron
+Tradução: “E, tendo avistado Chipre”
+
+[At 21:3b (C’)] Grego: καὶ καταλιπόντες αὐτὴν εὐώνυμον
+Transliteração: Kai katalipontes autēn euōnymon
+Tradução: “Deixando-a à esquerda”
+
+[At 21:3c (B’)] Grego: ἐπλέομεν εἰς Συρίαν
+Transliteração: Epleomen eis Syrian
+Tradução: “Navegávamos para a Síria”
+
+[At 21:3d (A’)] Grego: καὶ κατήχθημεν εἰς Τύρον
+Transliteração: Kai katēchthēmen eis Tyron
+Tradução: “E chegamos a Tiro”
+
+Explicação:
+A perícope apresenta a progressão geográfica da missão apostólica. O texto enfatiza deslocamento, direção e providência divina no avanço da jornada de Paulo rumo a Jerusalém.
+
+2. MORFOLÓGICO-LEXICAL
+
+ἀναχθῆναι (anachthēnai):
+“Fazer-se ao mar”, “partir por via marítima”.
+
+ἀποσπασθέντας (apospasthentas):
+“Tendo sido separados”; separação dolorosa e necessária.
+
+εὐθυδρομήσαντες (euthydromēsantes):
+“Navegando diretamente”; movimento sem desvios.
+
+πλοῖον (ploion):
+“Navio”; instrumento da missão.
+
+διαπερῶν (diaperōn):
+“Atravessando”; continuidade da travessia missionária.
+
+κατήχθημεν (katēchthēmen):
+“Chegamos”, “aportamos”.
+
+Explicação:
+O vocabulário náutico domina a perícope e reforça a dimensão histórica e concreta da missão cristã.
+
+3. QUIÁSTICO
+
+[A] At 21:1a
+    Separação e início da viagem
+
+    [B] At 21:1b
+        Navegação até Cós
+
+        [C] At 21:1c
+            Chegada a Rodes
+
+            [D] At 21:1d
+                Chegada a Pátara
+
+                [E] At 21:2
+                    CENTRO:
+                    Encontro do navio para a Fenícia
+
+            [D’] At 21:3a
+                Avistamento de Chipre
+
+        [C’] At 21:3b
+            Chipre deixada à esquerda
+
+    [B’] At 21:3c
+        Navegação para a Síria
+
+[A’] At 21:3d
+    Chegada a Tiro
+
+Explicação:
+A estrutura quiástica organiza a viagem em movimentos espelhados de partida e chegada. O centro estrutural é o encontro do navio que possibilita a continuidade da missão.
+
+4. SINTÁTICO
+
+[At 21:1–3]
+Sujeito:
+    Paulo e seus companheiros
+
+Verbos principais:
+    separar-se
+    navegar
+    chegar
+    encontrar
+    embarcar
+    avistar
+    aportar
+
+Objetivo:
+    Prosseguir rumo à Síria e Jerusalém.
+
+Explicação:
+A sintaxe utiliza sequência contínua de verbos de movimento, criando sensação de avanço progressivo.
+
+5. SEMÂNTICO
+
+[At 21:1a]
+Ideia central:
+    Separação necessária para a missão.
+
+[At 21:1b–d]
+Ideia central:
+    Avanço contínuo da viagem.
+
+[At 21:2]
+Ideia central:
+    Providência divina nos meios ordinários.
+
+[At 21:3]
+Ideia central:
+    Aproximação do destino missionário.
+
+Explicação:
+O texto trabalha semanticamente os temas de direção, deslocamento e providência.
+
+6. PROGRESSIVO
+
+Etapa 1:
+    Separação dos irmãos.
+
+Etapa 2:
+    Navegação até Cós.
+
+Etapa 3:
+    Viagem para Rodes.
+
+Etapa 4:
+    Chegada a Pátara.
+
+Etapa 5:
+    Embarque no navio fenício.
+
+Etapa 6:
+    Avistamento de Chipre.
+
+Etapa 7:
+    Navegação até a Síria.
+
+Etapa 8:
+    Chegada a Tiro.
+
+Explicação:
+A narrativa mostra avanço contínuo e inevitável rumo ao propósito de Deus.
+
+7. INTENSIFICAÇÃO
+
+[At 21:1a]
+Foco:
+    A separação dos irmãos intensifica o custo emocional da missão.
+
+[At 21:1b–d]
+Foco:
+    A sucessão rápida de cidades intensifica a percepção de avanço inevitável.
+
+[At 21:2]
+Foco:
+    O encontro providencial do navio intensifica a direção soberana de Deus.
+
+[At 21:3]
+Foco:
+    A chegada a Tiro intensifica a aproximação de Jerusalém.
+
+Explicação:
+A intensidade da perícope cresce pela acumulação de deslocamentos, demonstrando avanço contínuo e irreversível da missão apostólica.
+
+
+8. ESPACIAL
+
+[At 21:1a]
+Espaço:
+    Separação da comunidade anterior.
+
+[At 21:1b]
+Espaço:
+    Cós.
+
+[At 21:1c]
+Espaço:
+    Rodes.
+
+[At 21:1d]
+Espaço:
+    Pátara.
+
+[At 21:2]
+Espaço:
+    Navio para a Fenícia.
+
+[At 21:3a]
+Espaço:
+    Chipre.
+
+[At 21:3c]
+Espaço:
+    Síria.
+
+[At 21:3d]
+Espaço:
+    Tiro.
+
+Explicação:
+A geografia da perícope funciona como teologia narrativa. Cada local reforça o avanço histórico da missão cristã.
+
+
+9. ACESSO
+
+[At 21:1–2]
+Permissão:
+    A viagem continua por meio de rotas marítimas disponíveis.
+
+[At 21:2]
+Permissão:
+    O navio encontrado possibilita o avanço missionário.
+
+[At 21:3]
+Restrição implícita:
+    Paulo depende das condições ordinárias da viagem marítima.
+
+Explicação:
+O acesso missionário ocorre por meios comuns, revelando que a providência divina utiliza estruturas históricas e humanas.
+
+
+10. RELACIONAL
+
+[At 21:1a]
+Relação:
+    Separação dos irmãos.
+
+[At 21:1–3]
+Relação:
+    Unidade entre os companheiros de viagem.
+
+[At 21:3d]
+Relação:
+    Aproximação de nova comunidade em Tiro.
+
+Explicação:
+A missão envolve tanto despedidas quanto novos encontros no caminho do Reino.
+
+
+11. CRISTOLÓGICO
+
+[At 21:1–3]
+Conexão:
+    Paulo segue rumo a Jerusalém assim como Cristo caminhou voluntariamente para o sofrimento.
+
+[At 21:2]
+Conexão:
+    A providência divina conduz o servo fiel no cumprimento de sua missão.
+
+[At 21:3]
+Conexão:
+    A chegada a Tiro prepara os eventos que antecedem o sofrimento apostólico.
+
+Explicação:
+O percurso de Paulo ecoa o padrão do discipulado cristológico: obediência perseverante diante do sofrimento.
+
+
+12. SISTEMÁTICO
+
+[At 21:1]
+Doutrina:
+    Comunhão cristã.
+
+[At 21:1–3]
+Doutrina:
+    Providência divina.
+
+[At 21:2]
+Doutrina:
+    Missão.
+
+[At 21:3]
+Doutrina:
+    Vocação e perseverança.
+
+Explicação:
+A perícope integra missiologia, providência e perseverança vocacional.
+
+
+13. TENSÃO
+
+[At 21:1a]
+Estado:
+    Tensão emocional da despedida.
+
+[At 21:1–3]
+Estado:
+    Tensão narrativa do avanço inevitável.
+
+[At 21:3]
+Estado:
+    Expectativa acerca do que aguardará Paulo em Jerusalém.
+
+Explicação:
+A narrativa constrói tensão progressiva sem ainda revelar o conflito final.
+
+
+14. REPETIÇÃO
+
+[At 21:1–3]
+Padrão:
+    Repetição de verbos de movimento:
+        navegar
+        chegar
+        partir
+        embarcar
+        avistar
+
+[At 21:1–3]
+Padrão:
+    Repetição de referências geográficas.
+
+Explicação:
+A repetição produz ritmo narrativo e reforça o caráter histórico da viagem.
+
+
+15. CAUSA E EFEITO
+
+[At 21:1a]
+Ação:
+    Separação dos irmãos.
+Consequência:
+    Início da viagem.
+
+[At 21:2]
+Ação:
+    Encontraram um navio.
+Consequência:
+    Continuidade da missão.
+
+[At 21:3]
+Ação:
+    Navegaram para a Síria.
+Consequência:
+    Chegada a Tiro.
+
+Explicação:
+Cada decisão narrativa conduz naturalmente à etapa seguinte da missão.
+
+
+16. APOLOGÉTICO
+
+[At 21:1–3]
+Tema:
+    Historicidade da narrativa cristã.
+
+Combate:
+    Espiritualização excessiva da missão cristã.
+
+[At 21:2]
+Tema:
+    Providência nos meios ordinários.
+
+Combate:
+    Ideia de que Deus atua apenas por milagres extraordinários.
+
+Explicação:
+A missão apostólica acontece dentro da história concreta, usando meios comuns dirigidos por Deus.
+
+
+17. PERGUNTAS AO TEXTO
+
+[At 21:1a]
+    Por que Lucas enfatiza a separação dos irmãos?
+
+[At 21:1–3]
+    Qual o propósito da longa sequência geográfica?
+
+[At 21:2]
+    Por que o encontro do navio ocupa o centro da estrutura?
+
+[At 21:3]
+    O que Tiro representará na continuação da narrativa?
+
+Explicação:
+As perguntas ajudam o leitor a perceber o valor teológico da viagem.
+
+
+18. AUTORAL
+
+[F. F. Bruce]
+    Destaca a precisão histórica e geográfica da narrativa lucana.
+
+[I. Howard Marshall]
+    Observa o avanço deliberado de Paulo rumo ao sofrimento em Jerusalém.
+
+[John Stott]
+    Ressalta a providência divina agindo através de meios ordinários.
+
+Explicação:
+A tradição exegética reconhece Atos 21:1–3 como narrativa de transição estratégica.
+
+
+19. HOMILÉTICO
+
+Tema:
+    A missão avança mesmo através das despedidas.
+
+I.
+    A obediência exige separação.
+
+II.
+    Deus conduz a missão passo a passo.
+
+III.
+    A providência atua nos meios comuns.
+
+IV.
+    O caminho conduz ao propósito divino.
+
+Conclusão:
+    O servo de Deus continua avançando mesmo quando o caminho aponta para sofrimento futuro.
+
+Explicação:
+O esboço acompanha a progressão natural da perícope.
+
+
+20. PASTORAL PRÁTICO
+
+[At 21:1a]
+Aplicação:
+    Algumas despedidas fazem parte da obediência cristã.
+
+[At 21:1–2]
+Aplicação:
+    Deus usa meios simples para conduzir seus servos.
+
+[At 21:3]
+Aplicação:
+    Nem toda parada é atraso; algumas fazem parte da providência.
+
+Explicação:
+A espiritualidade bíblica aparece também nos caminhos ordinários da vida.
+
+
+21. ANTROPOLÓGICO
+
+[At 21:1a]
+Psicológico:
+    A separação produz dor e maturidade.
+
+[At 21:1–3]
+Sociológico:
+    A missão depende de redes humanas e estruturas históricas.
+
+[At 21:2]
+Teológico:
+    O homem depende da providência divina para prosseguir.
+
+Explicação:
+A perícope revela o ser humano em deslocamento vocacional.
+
+
+22. FAMILIAR
+
+[At 21:1a]
+Família:
+    O amor verdadeiro também sabe enviar.
+
+[At 21:1–2]
+Família:
+    Deus conduz processos por etapas.
+
+[At 21:3]
+Família:
+    As transições podem fazer parte do amadurecimento espiritual.
+
+Explicação:
+O texto ensina famílias a compreenderem despedidas e processos sob a ótica da providência.
+
+
+23. TRINITÁRIO
+
+PAI →
+    Governa soberanamente o caminho da missão.
+
+FILHO →
+    Modelo supremo de obediência rumo ao sofrimento.
+
+ESPÍRITO →
+    Sustenta e conduz o avanço missionário.
+
+Explicação:
+A missão apostólica acontece sob a direção plena da Trindade.

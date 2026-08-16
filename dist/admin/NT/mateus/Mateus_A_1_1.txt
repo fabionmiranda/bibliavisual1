@@ -1,0 +1,549 @@
+==========================================
+
+1. INTERLINEAR (NA28)
+
+[Mt 1:1a (A)] Grego: Βίβλος γενέσεως Ἰησοῦ Χριστοῦ | Transliteração: Biblos geneseōs Iēsou Christou |
+Tradução: "Livro da origem [ou: geração/genealogia] de Jesus Cristo"
+
+[Mt 1:1b (A)] Grego: υἱοῦ Δαυὶδ | Transliteração: huiou David | Tradução: "filho de Davi"
+
+[Mt 1:1c (A)] Grego: υἱοῦ Ἀβραάμ | Transliteração: huiou Abraam | Tradução: "filho de Abraão"
+
+Explicação: O interlinear de Mt 1:1 surpreende pela sua densidade. Em uma única linha, Mateus
+encadeia três títulos que resumem toda a história da salvação: Jesus é o Cristo (o ungido esperado),
+o filho de Davi (herdeiro do trono messiânico) e o filho de Abraão (cumprimento da promessa
+da aliança às nações). A ordem inversa — Cristo, depois Davi, depois Abraão — é deliberada: o texto
+começa pelo fim da promessa (o Messias) e recua até sua origem mais remota, revelando que o que
+se cumpre em Jesus não é acidente histórico, mas consumação de um plano eterno.
+
+==========================================
+
+2. MORFOLÓGICO-LEXICAL
+
+Βίβλος (biblos): Livro, documento oficial; o mesmo termo pode designar escritura sagrada; aqui
+  indica que o que segue tem caráter de registro solene e autoritativo [Mt 1:1a]
+
+γένεσις (genesis): Origem, geração, genealogia; ressoa deliberadamente com Gn 2:4 (LXX), onde a
+  mesma palavra abre o relato da criação — Mateus apresenta Jesus como início de uma nova criação [Mt 1:1a]
+
+Ἰησοῦς (Iēsous): Forma grega do hebraico יֵשׁוּעַ (Yeshua), "O SENHOR salva"; o nome carrega a missão [Mt 1:1a]
+
+Χριστός (Christos): Ungido; tradução grega do hebraico מָשִׁיַח (Mashiach); não é sobrenome, mas
+  título régio e profético que identifica Jesus como o ungido esperado por toda a Escritura [Mt 1:1a]
+
+υἱός (huios): Filho; no contexto messiânico veterotestamentário, indica herdeiro e portador da promessa,
+  não apenas descendência biológica [Mt 1:1b–1c]
+
+Δαυίδ (David): Davi, o rei-pastor cuja aliança (2Sm 7:12–16) incluía a promessa de um trono eterno para
+  sua descendência; o título "filho de Davi" é o título messiânico mais recorrente nos Evangelhos [Mt 1:1b]
+
+Ἀβραάμ (Abraam): Abraão, receptor da promessa original de que "em ti serão benditas todas as famílias
+  da terra" (Gn 12:3); o título "filho de Abraão" situa Jesus como cumprimento da promessa universal [Mt 1:1c]
+
+Explicação: Os sete termos de Mt 1:1 formam uma teologia comprimida. Cada palavra carrega o peso
+de séculos de promessa: biblos confere autoridade de Escritura; genesis aponta para nova criação;
+Iēsous anuncia a missão salvífica; Christos revela a identidade régio-profética; huios indica herança
+da aliança; David evoca o trono eterno; Abraam fundamenta a promessa universal. Nenhuma palavra é
+decorativa — cada uma é uma âncora teológica.
+
+==========================================
+
+3. QUIÁSTICO
+
+[A] Mt 1:1: "filho de Davi, filho de Abraão" — os três nomes: Abraão, Davi e Cristo
+[B1] Mt 1:2–6: Genealogia desde Abraão (ἐγέννησεν — "gerou")
+[B2] Mt 1:7–11: Genealogia desde Davi (ἐγέννησεν — "gerou")
+[B3] Mt 1:12–16: Genealogia após o cativeiro (ἐγέννησεν — "gerou")
+[A'] Mt 1:17: "desde Abraão até Davi... quatorze gerações" — os três nomes: Abraão, Davi e Cristo
+
+Explicação: O versículo Mt 1:1 funciona como arco de abertura de uma estrutura quiástica em que A
+e A' são definidos pelos mesmos três nomes — Abraão, Davi e Cristo. Os três elementos B são genealogias
+paralelas, cada uma marcada pela repetição de ἐγέννησεν ("gerou"). O centro estrutural implícito é
+a sequência genealógica em si: três eras de quatorze gerações cada, correspondendo às três épocas
+da história de Israel (dos patriarcas à monarquia, da monarquia ao exílio, do exílio ao Messias). A
+estrutura revela que a história não é aleatória — ela é ordenada por Deus em direção a um ponto
+de chegada: Jesus Cristo.
+
+==========================================
+
+4. SINTÁTICO
+
+[Mt 1:1a] Núcleo nominal: Βίβλος γενέσεως — predicação de abertura sem verbo explícito (nominal);
+  a ausência de verbo confere solenidade de título ou inscrição oficial
+[Mt 1:1a] Genitivo objetivo: γενέσεως Ἰησοῦ Χριστοῦ — "de Jesus Cristo" como genitivo de especificação
+[Mt 1:1b] Genitivo de relação: υἱοῦ Δαυίδ — "filho de Davi", aposição explicativa a "Jesus Cristo"
+[Mt 1:1c] Genitivo de relação: υἱοῦ Ἀβραάμ — "filho de Abraão", segunda aposição explicativa
+
+Explicação: A sintaxe de Mt 1:1 é a de uma inscrição, não de uma narrativa. A ausência de verbo
+principal transforma o versículo em um título oficial — semelhante às inscrições de entrada em
+documentos judaicos e greco-romanos. As duas aposições em genitivo ("filho de Davi, filho de Abraão")
+não são adornos retóricos; são predicados que qualificam juridicamente quem é Jesus. A sequência
+sintática move-se do presente ao passado: do Cristo (identidade atual) ao filho de Davi (promessa
+davídica) ao filho de Abraão (promessa abraâmica) — uma regressão temporal que é também uma
+progressão revelacional.
+
+==========================================
+
+5. SEMÂNTICO
+
+[Mt 1:1a] Ideia central: Jesus é o Messias — o campo semântico de Χριστός evoca unção, realeza e função
+[Mt 1:1b] Ideia central: Jesus é o Herdeiro do trono — "filho de Davi" situa-o na linhagem real messiânica
+[Mt 1:1c] Ideia central: Jesus é o Cumprimento da promessa universal — "filho de Abraão" abre o horizonte
+  para além de Israel, incluindo todas as nações
+
+Explicação: O campo semântico de Mt 1:1 opera em três camadas simultâneas: a camada profético-régia
+("filho de Davi"), a camada pactual-universal ("filho de Abraão") e a camada messiânico-cristológica
+("Jesus Cristo"). Os três campos semânticos convergem em um único ponto: a pessoa de Jesus. O texto
+recusa toda leitura que separe o Jesus histórico do Cristo teológico — desde o primeiro versículo,
+Mateus apresenta o homem Jesus e o Messias prometido como uma só e mesma realidade.
+
+==========================================
+
+6. PROGRESSIVO
+
+Etapa 1 [Mt 1:1a — "Biblos geneseōs"]: declaração solene de abertura — este é um documento de origem,
+  um registro de começo; eco de Gênesis (nova criação começa)
+Etapa 2 [Mt 1:1a — "Iēsou Christou"]: identificação do sujeito — quem é este? Jesus, o Cristo;
+  a identidade messiânica é declarada antes de qualquer narrativa
+Etapa 3 [Mt 1:1b — "huiou David"]: primeira qualificação histórica — este Messias é herdeiro do trono
+  davídico; a promessa de 2Sm 7 encontra seu cumprimento
+Etapa 4 [Mt 1:1c — "huiou Abraam"]: segunda qualificação histórica e universal — este herdeiro do trono
+  é também herdeiro da promessa feita a Abraão; o horizonte se abre para todas as nações
+
+Explicação: A progressão de Mt 1:1 move-se do geral ao específico e do específico ao universal.
+Começa com a declaração de registro ("Livro da genealogia"), identifica o protagonista ("Jesus Cristo"),
+o qualifica na história de Israel ("filho de Davi") e o projeta para além de Israel ("filho de Abraão").
+Em quatro movimentos, o versículo percorre toda a teologia da aliança.
+
+==========================================
+
+7. INTENSIFICAÇÃO
+
+[Mt 1:1a — "Biblos geneseōs"] Foco: solenidade inaugural — a palavra biblos impõe autoridade e peso
+  ao que está prestes a ser revelado
+[Mt 1:1a — "Iēsou Christou"] Foco: título duplo — não apenas um nome, mas nome e título juntos;
+  a tensão entre o humano (Jesus) e o ofício (Cristo) já está instalada
+[Mt 1:1b — "huiou David"] Foco: primeira camada de profundidade histórica — a promessa davídica
+  carrega o peso de séculos de expectativa messiânica em Israel
+[Mt 1:1c — "huiou Abraam"] Foco: segunda camada, mais profunda ainda — a promessa abraâmica antecede
+  a monarquia e antecede a própria lei; ela é a origem de tudo
+
+Explicação: A intensificação de Mt 1:1 é regressiva no tempo, mas progressiva na profundidade teológica.
+Cada camada recua mais na história e revela uma promessa mais fundamental: Cristo (cumprimento) →
+Filho de Davi (promessa régia, ~1000 a.C.) → Filho de Abraão (promessa original, ~2000 a.C.). O
+leitor é conduzido do presente histórico às raízes mais profundas do plano de redenção.
+
+==========================================
+
+8. ESPACIAL
+
+[Mt 1:1a — "Biblos geneseōs"] Esfera: esfera da Escritura e da revelação — este é um documento sagrado
+[Mt 1:1a — "Iēsou Christou"] Esfera: esfera da identidade messiânica — o lugar de Jesus na história
+  da redenção
+[Mt 1:1b — "huiou David"] Esfera: esfera de Israel e Jerusalém — a linhagem real, o trono, a cidade
+  santa; o horizonte é nacional e davídico
+[Mt 1:1c — "huiou Abraam"] Esfera: esfera universal e das nações — Abraão é pai de muitas nações
+  (Gn 17:5); o horizonte se expande para além de Israel
+
+Explicação: O movimento espacial de Mt 1:1 é centrífugo: começa no interior da Escritura (biblos),
+identifica o Messias (esfera pessoal e histórica), qualifica-o em relação a Israel (esfera nacional
+davídica) e expande o horizonte para todas as nações (esfera universal abraâmica). Em um versículo,
+Mateus percorre do ponto mais interno ao mais externo da história da redenção.
+
+==========================================
+
+9. ACESSO
+
+[Mt 1:1b — "huiou David"] Acesso: o título "filho de Davi" é um acesso ao Messias especificamente
+  para Israel — é a chave que abre as portas do AT para reconhecer Jesus como cumprimento das
+  promessas nacionais
+[Mt 1:1c — "huiou Abraam"] Acesso: o título "filho de Abraão" amplia o acesso a todas as nações —
+  "em ti serão benditas todas as famílias da terra" (Gn 12:3); os gentios têm acesso ao Messias
+  pelo caminho abraâmico
+
+Restrição implícita: o acesso ao Messias não é construído; ele é encontrado — Jesus já é o Cristo,
+  já é o filho de Davi, já é o filho de Abraão; o leitor não define quem ele é, apenas reconhece
+
+Explicação: Mt 1:1 apresenta dois caminhos de acesso ao Messias: o caminho nacional (filho de Davi,
+para Israel) e o caminho universal (filho de Abraão, para todas as nações). Ambos os caminhos estão
+abertos desde o primeiro versículo. Mateus, escrevendo para uma comunidade de origem judaica mas
+com crescente presença gentílica, coloca estrategicamente os dois títulos lado a lado: ninguém está
+excluído do alcance desta genealogia.
+
+==========================================
+
+10. RELACIONAL
+
+[Mt 1:1 — Cristo e Deus] Status: Jesus é apresentado como o Ungido do SENHOR — a relação entre
+  o Pai que unge e o Filho ungido está implícita no título Χριστός; relação de eleição e missão
+[Mt 1:1 — Jesus e Israel] Status: "filho de Davi" estabelece relação de pertencimento e cumprimento;
+  Jesus é de Israel e cumpre as promessas de Israel
+[Mt 1:1 — Jesus e as nações] Status: "filho de Abraão" estabelece relação de inclusão universal;
+  pela promessa abraâmica, as nações têm parte no que Jesus traz
+[Mt 1:1 — Jesus e a história] Status: a estrutura quiástica com A' em 1:17 revela que Jesus é o
+  ponto de chegada de 42 gerações — ele está em relação com toda a história humana que o precedeu
+
+Explicação: Em Mt 1:1, quatro relações são estabelecidas simultaneamente: com Deus (Ungido), com
+Israel (filho de Davi), com as nações (filho de Abraão) e com a história inteira (ponto de chegada
+de três eras). Jesus não entra na história como alguém externo a ela — ele é o produto de suas
+promessas e o cumprimento de suas esperanças.
+
+==========================================
+
+11. CRISTOLÓGICO
+
+[Mt 1:1a — "Jesus Cristo"] Conexão: Χριστός traduz o hebraico Mashiach; todo o sistema profético
+  do AT converge neste título — Jesus é o profeta, o sacerdote e o rei ungido esperado (At 10:38;
+  Lc 4:18; Hb 1:9)
+[Mt 1:1b — "filho de Davi"] Conexão: a aliança davídica (2Sm 7:12–16) prometia um descendente cujo
+  trono seria eterno; Jesus cumpre esta promessa não apenas por descendência, mas por ressurreição
+  e exaltação (Rm 1:3–4; At 2:29–36)
+[Mt 1:1c — "filho de Abraão"] Conexão: a bênção prometida a Abraão ("em ti serão benditas todas as
+  nações") é interpretada por Paulo como referindo-se especificamente a Cristo (Gl 3:16 — "não diz
+  'às descendências', mas 'à tua descendência', que é Cristo")
+[Mt 1:1 — "Biblos geneseōs"] Conexão: a expressão ecoa Gn 2:4 e Gn 5:1 (LXX); Mateus apresenta
+  Jesus como o início de uma nova criação — o que Adão não pôde ser, Jesus é (1Co 15:45–49)
+
+Explicação: Mt 1:1 é uma confissão cristológica completa em uma única frase. "Jesus Cristo" declara
+a identidade divino-humana; "filho de Davi" localiza-o no coração da expectativa messiânica de Israel;
+"filho de Abraão" projeta-o sobre toda a humanidade. E a ressonância com Gênesis revela que em Jesus
+não apenas a história de Israel se cumpre, mas a história da criação inteira encontra seu novo Adão.
+
+==========================================
+
+12. SISTEMÁTICO
+
+[Mt 1:1a — "Biblos geneseōs"] Doutrina: Revelação — Mateus inaugura seu Evangelho com um título que
+  invoca a autoridade da Escritura; o que segue não é biografia, mas Palavra de Deus
+[Mt 1:1a — "Iēsou Christou"] Doutrina: Cristologia — a identidade de Jesus é declarada no primeiro
+  versículo como simultaneamente humana (nome próprio: Jesus) e ofício divino (título: Cristo)
+[Mt 1:1b — "huiou David"] Doutrina: Eclesiologia e cumprimento profético — Jesus como herdeiro
+  do trono davídico fundamenta a teologia do reino de Deus
+[Mt 1:1c — "huiou Abraam"] Doutrina: Soteriologia e missão — a filiação abraâmica funda a universalidade
+  da salvação e a missão às nações (Mt 28:19)
+[Mt 1:1 — estrutura quiástica com 1:17] Doutrina: Providência — a história não é caos; ela é ordenada
+  por Deus em três eras de quatorze gerações com destino no Messias
+
+Explicação: Em apenas 15 palavras gregas, Mt 1:1 toca cinco categorias da teologia sistemática. Notavelmente,
+o versículo não narra nada — ele declara. É uma inscrição teológica antes de ser narrativa histórica. Toda
+a teologia do Evangelho de Mateus está, em semente, neste primeiro versículo.
+
+==========================================
+
+13. TENSÃO
+
+[Mt 1:1a — tensão instalada] Estado: "Jesus Cristo" cria uma tensão imediata para o leitor judeu —
+  este homem, com nome humano comum (Jesus/Yeshua), é o Messias? A identidade reivindica mais do
+  que a aparência confirma
+[Mt 1:1b — tensão narrativa] Estado: "filho de Davi" remete ao trono; mas Jesus nasce em Belém, cresce
+  em Nazaré e morre crucificado — onde está o trono? A tensão entre a promessa e a aparência permeia
+  todo o Evangelho
+[Mt 1:1c — tensão universal] Estado: "filho de Abraão" abre para as nações; mas a missão de Jesus é
+  primeiramente para "as ovelhas perdidas da casa de Israel" (Mt 15:24) — a tensão entre eleição
+  e universalidade atravessa Mateus até o mandato missionário final (Mt 28:19)
+
+Resolução antecipada: a estrutura quiástica com A' (Mt 1:17) indica que a tensão será resolvida não
+  no versículo 1, mas ao final da genealogia — e, por extensão, ao final do Evangelho inteiro
+
+Explicação: Mt 1:1 instala três tensões que o Evangelho inteiro desenvolverá: a tensão da identidade
+(humano/divino), a tensão da promessa (trono/cruz) e a tensão do alcance (Israel/nações). Mateus é
+mestre em instalar tensão desde o primeiro versículo e conduzir o leitor a resolvê-la apenas na
+ressurreição e no mandato missionário final.
+
+==========================================
+
+14. REPETIÇÃO
+
+[Mt 1:1 e Mt 1:17 — estrutura quiástica A/A'] Padrão: os três termos Ἀβραάμ, Δαυίδ e Χριστός
+  aparecem nos dois versículos-quadro da perícope (1:1 e 1:17), formando uma inclusão deliberada
+  que delimita e interpreta toda a genealogia intermediária
+[Mt 1:1 e Mt 1:18 — "Jesus Cristo"] Padrão: a expressão "Jesus Cristo" reaparece em 1:18, conectando
+  a genealogia à narrativa do nascimento; a repetição cria continuidade temática
+[Mt 1:2–16 — "ἐγέννησεν"] Padrão: o verbo "gerou" repete-se ao longo de toda a genealogia, mas em
+  Mt 1:1 está ausente — o versículo-título está acima da cadeia dos que "geraram"; Jesus não é apenas
+  mais um elo, ele é o ponto de chegada
+
+Explicação: A repetição em Mt 1:1 é estrutural e teológica. A inclusão com 1:17 ensina que os três
+nomes (Abraão, Davi, Cristo) são a chave interpretativa de toda a genealogia. A ausência do verbo
+"gerou" em 1:1 destaca Jesus como categoriamente diferente de todos os seus antepassados: ele não
+é produzido pela genealogia — ele é o seu sentido.
+
+==========================================
+
+15. CAUSA E EFEITO
+
+[Promessa a Abraão → "filho de Abraão"] Ação: Deus faz uma promessa a Abraão (Gn 12:1–3; 22:18)
+  → Consequência: dois milênios depois, o herdeiro desta promessa é identificado como Jesus
+[Aliança davídica → "filho de Davi"] Ação: Deus faz uma aliança com Davi (2Sm 7:12–16)
+  → Consequência: mil anos depois, o herdeiro do trono eterno é identificado como Jesus
+[Soberania histórica → "três eras de quatorze gerações"] Ação: Deus conduz a história através de
+  patriarcas, reis, exílio e restauração → Consequência: a genealogia não é acidente, é providência
+[Mt 1:1 → Mt 28:19] Ação: "filho de Abraão" desde o versículo 1 implica bênção para todas as nações
+  → Consequência: o mandato final de ir a todas as nações é a conclusão lógica do que foi anunciado
+  no princípio
+
+Explicação: Mt 1:1 é um versículo de efeitos diferidos. Cada título é o resultado de ações divinas que
+precedem Jesus em séculos: a promessa a Abraão produz o "filho de Abraão"; a aliança com Davi produz
+o "filho de Davi"; a soberania de Deus sobre a história produz o Messias no momento certo (Gl 4:4 —
+"na plenitude do tempo"). O versículo é a superfície visível de uma cadeia causal que Deus conduziu
+por dois milênios.
+
+==========================================
+
+16. APOLOGÉTICO
+
+[Mt 1:1a — "Biblos geneseōs"] Tema: Contra o docetismo e o gnosticismo | Combate: Toda teologia que
+  nega a humanidade real de Jesus é refutada por este versículo — Jesus tem genealogia, tem história,
+  tem ancestrais; ele é plenamente humano
+
+[Mt 1:1a — "Iēsou Christou"] Tema: Contra o adocionismo | Combate: Jesus não se torna o Cristo no
+  batismo ou na ressurreição — desde o primeiro versículo do Evangelho ele já é apresentado como
+  "Jesus Cristo"; a identidade messiânica não é adquirida, é constitutiva
+
+[Mt 1:1b — "huiou David"] Tema: Contra leituras que dissociam Jesus do judaísmo | Combate: Jesus é
+  profundamente enraizado na história de Israel; ele não vem apagar a Escritura judaica, mas cumprí-la
+  (Mt 5:17); sem Davi, o título messiânico perde seu conteúdo
+
+[Mt 1:1c — "huiou Abraam"] Tema: Contra o exclusivismo étnico e o antissemitismo teológico | Combate:
+  A filiação abraâmica de Jesus é simultaneamente afirmação de suas raízes judaicas e abertura para
+  todas as nações; nem o particularismo judaico excludente nem o antissemitismo cristão têm apoio neste texto
+
+[Mt 1:1 — estrutura quiástica] Tema: Contra o acaso histórico | Combate: A estrutura de três eras e
+  a inclusão A/A' demonstram que a história tem ordem e direção — o materialismo histórico que nega
+  providência é incompatível com a lógica estrutural do texto
+
+Explicação: Mt 1:1 refuta cinco distorções: o docetismo (Jesus tem carne e história), o adocionismo
+(Jesus já é Cristo desde o início), o supersessionismo excludente (Jesus é de Israel), o antissemitismo
+teológico (a herança abraâmica é afirmada, não negada) e o acaso histórico (a genealogia estruturada
+revela providência).
+
+==========================================
+
+17. PERGUNTAS AO TEXTO
+
+A natureza do título [Mt 1:1a]:
+ - Por que Mateus abre com "Biblos geneseōs" em vez de simplesmente contar a história?
+ - O que a ressonância com Gênesis (Gn 2:4; 5:1 LXX) sugere sobre a intenção de Mateus?
+ - Por que "Jesus Cristo" e não apenas "Jesus" ou apenas "o Cristo"?
+
+A ordem dos títulos [Mt 1:1b–1c]:
+ - Por que "filho de Davi" vem antes de "filho de Abraão", se Abraão é historicamente anterior?
+ - O que a inversão cronológica revela sobre a prioridade teológica de Mateus?
+ - Por que dois títulos e não apenas um?
+
+A estrutura quiástica com Mt 1:17 [A/A']:
+ - O que significa o fato de os três nomes (Abraão, Davi, Cristo) aparecerem tanto em 1:1 quanto em 1:17?
+ - Como a inclusão A/A' muda a forma de ler a genealogia intermediária (B1, B2, B3)?
+ - Por que a genealogia precisa de um versículo-título e de um versículo-conclusão?
+
+O horizonte universal [Mt 1:1c]:
+ - Como o título "filho de Abraão" em 1:1 prepara o mandato missionário de Mt 28:19?
+ - Gálatas 3:16 interpreta "descendência de Abraão" como referindo-se a Cristo; como isso ilumina Mt 1:1?
+
+Explicação: As perguntas conduzem o leitor a perceber que Mt 1:1 não é uma introdução passiva —
+ele é uma declaração programática que define o horizonte teológico de todo o Evangelho. A última
+pergunta conecta o primeiro e o último versículos de Mateus, revelando a coerência estrutural
+de todo o livro.
+
+==========================================
+
+18. AUTORAL
+
+A Função de "Biblos Geneseōs" como Eco de Gênesis [DAVIES & ALLISON - Mt 1:1a]:
+  W.D. Davies e Dale C. Allison Jr. (The Gospel According to Saint Matthew, ICC): "A expressão βίβλος
+  γενέσεως ressoa inegavelmente com a fraseologia da LXX em Gênesis 2:4 e 5:1. Mateus apresenta
+  Jesus como o início de uma nova criação — não uma reparação do antigo, mas um novo começo."
+
+A Dupla Filiação como Estrutura Cristológica [FRANCE - Mt 1:1b–1c]:
+  R.T. France (The Gospel of Matthew, NICNT): "A combinação 'filho de Davi, filho de Abraão' não é
+  acidental. Ela concentra em duas expressões toda a expectativa messiânica do Antigo Testamento: a
+  promessa régia (davídica) e a promessa universal (abraâmica). Mateus coloca seu programa teológico
+  inteiro no primeiro versículo."
+
+A Ordem Inversa como Ênfase [HAGNER - Mt 1:1b]:
+  Donald A. Hagner (Matthew 1–13, WBC): "A menção de Davi antes de Abraão, apesar da ordem histórica
+  inversa, indica que para Mateus a identidade messiânico-davídica é o título mais imediatamente
+  relevante para seus leitores de origem judaica."
+
+Mt 1:1 como Título Programático de Todo o Evangelho [NOLLAND - Mt 1:1]:
+  John Nolland (The Gospel of Matthew, NIGTC): "'Livro da genealogia' funciona como título não apenas
+  para a genealogia que se segue, mas possivelmente para todo o Evangelho. Jesus Cristo, filho de Davi,
+  filho de Abraão é a identidade que o Evangelho inteiro revelará progressivamente."
+
+Explicação: O diálogo com exegetas canônicos demonstra que a densidade teológica de Mt 1:1 é amplamente
+reconhecida na scholarship. A convergência entre Davies-Allison, France, Hagner e Nolland aponta para
+um consenso: este versículo não é pórtico decorativo, mas síntese programática de todo o Evangelho.
+
+==========================================
+
+19. HOMILÉTICO
+
+Tema Central: Como Mateus revela, em uma única frase, quem é Jesus e por que ele importa para toda
+a humanidade?
+
+Título sugerido: "O nome que carrega tudo: quem é Jesus Cristo, filho de Davi, filho de Abraão"
+
+I [Mt 1:1a — "Biblos geneseōs"]: Este não é apenas um livro de genealogia — é o registro de um novo começo
+   Ponto: a ressonância com Gênesis revela que em Jesus a criação recomeça
+   Aplicação: O que você carrega do passado é real — mas em Jesus há um começo que precede qualquer
+   genealogia pessoal
+
+II [Mt 1:1a — "Iēsou Christou"]: O nome revela a missão e o título revela a identidade
+   Ponto: Jesus (o SENHOR salva) + Cristo (o Ungido) = salvação por eleição divina, não por mérito humano
+   Aplicação: Você não encontrou Jesus por acidente — o Ungido foi enviado para salvar
+
+III [Mt 1:1b — "huiou David"]: O herdeiro do trono chega — mas não como os que esperavam
+   Ponto: "filho de Davi" evoca rei, trono e reino; mas o rei virá pela cruz antes da coroa
+   Aplicação: O reino de Deus não se parece com o que o mundo chama de poder
+
+IV [Mt 1:1c — "huiou Abraam"]: Nenhuma nação está excluída desta genealogia
+   Ponto: a promessa a Abraão era para "todas as famílias da terra" — e ela chegou em Jesus
+   Aplicação: Sua história, sua origem, sua nação não são obstáculo para o Messias — ele veio
+   como filho de Abraão para alcançar exatamente onde você está
+
+Conclusão: Em 15 palavras gregas, Mateus diz tudo. Jesus não é uma ideia — ele tem nome, história,
+genealogia. Ele não é apenas um homem — ele é o Cristo, o Ungido. Ele não é apenas para Israel —
+ele é filho de Abraão, e Abraão é pai de muitas nações. Toda a Escritura caminhava para este versículo.
+E este versículo caminha para você.
+
+Explicação: Esboço para pregação expositiva em quatro pontos, seguindo rigorosamente a progressão
+do único versículo. Cada ponto tem potencial de desenvolvimento independente, mas a unidade é o
+nome completo: Jesus Cristo, filho de Davi, filho de Abraão.
+
+==========================================
+
+20. PASTORAL PRÁTICO
+
+A identidade como fundamento [Mt 1:1a — "Jesus Cristo"]:
+  Adultos: em uma cultura de identidades fluidas e autorreferentes, o texto afirma que a identidade
+  de Jesus é declarada por Deus, não construída por opinião pública ou experiência pessoal
+  Jovens: confronta a tendência de "criar o próprio Jesus" adaptado às expectativas — o versículo
+  apresenta um Jesus com título definido e missão específica
+  Igreja: chama a comunidade a ancorá-la na pessoa real de Jesus Cristo, não em versões culturalmente
+  convenientes do Messias
+
+A herança como responsabilidade [Mt 1:1b — "filho de Davi"]:
+  Adultos: quem herda promessas de Deus carrega também a responsabilidade de transmiti-las; a
+  genealogia davídica foi preservada através de séculos de fidelidade de pessoas comuns
+  Jovens: ensina que a fé cristã não começa com você — você é herdeiro de uma história de promessas;
+  sua fé não é somente sua, ela é parte de uma corrente que atravessa gerações
+  Igreja: forma consciência histórica da comunidade de fé — somos parte de uma genealogia espiritual
+
+A universalidade como vocação [Mt 1:1c — "filho de Abraão"]:
+  Adultos: o título "filho de Abraão" em Mt 1:1 prepara Mt 28:19 ("ide a todas as nações") — a
+  missão universal não é apêndice opcional do Evangelho, é sua consequência lógica desde o versículo 1
+  Jovens: desfaz a visão de um Evangelho culturalmente localizado — Jesus pertence a todas as nações
+  Igreja: chama a comunidade à missão transcultural como cumprimento da promessa abraâmica
+
+Explicação Final: Mt 1:1 é um espelho em três faces: quem é Jesus (Cristo), de onde ele vem (filho
+de Davi) e para quem ele veio (filho de Abraão, portanto, para todas as nações). A pastoral deste
+versículo convida à ancoragem identitária em Cristo, à gratidão pela herança da fé e à responsabilidade
+da missão universal.
+
+==========================================
+
+21. ANTROPOLÓGICO
+
+Explicação: Mateus 1:1 ilumina a condição humana em múltiplas dimensões. No nível filosófico,
+o versículo levanta a questão do sentido da história: a genealogia estruturada em três eras de
+quatorze gerações revela que o tempo não é aleatório — ele tem direção e propósito. No nível
+psicológico, a busca humana por identidade e pertencimento encontra aqui um espelho: Jesus é
+definido por seus vínculos relacionais e históricos antes de qualquer feito pessoal. No nível
+sociológico, os dois títulos ("filho de Davi" e "filho de Abraão") cruzam fronteiras de classe
+(realeza) e de etnia (nações), recusando toda hierarquia excludente. No nível teológico, o texto
+declara que o ser humano não pode compreender a si mesmo fora de uma narrativa que o precede
+e o supera. No nível redentivo, o versículo afirma que a redenção não é improviso — ela foi
+planejada, genealogicamente enraizada e historicamente cumprida.
+
+Mt 1:1a — IDENTIDADE
+Filosófico: → Quem é Jesus? O texto responde antes de narrar: ele é o Cristo, o Ungido
+Psicológico: → A identidade humana busca nome e título; Jesus os tem, declarados por Deus
+Sociológico: → "Jesus" é nome comum; "Cristo" é título de autoridade; a combinação rompe
+  a separação entre o ordinário e o sagrado
+Teológico: → Christos = Mashiach; toda a unção do AT (reis, sacerdotes, profetas) converge aqui
+Redentivo: → O nome "Jesus" (o SENHOR salva) é a primeira declaração da missão salvífica
+
+Mt 1:1b — HERANÇA
+Filosófico: → O ser humano é ser histórico; Jesus tem genealogia; a encarnação leva a sério o tempo
+Psicológico: → Herança e pertencimento são necessidades humanas profundas; Jesus pertence a Israel
+Sociológico: → "Filho de Davi" é título régio; Jesus vem de dentro da estrutura social de Israel
+Teológico: → A aliança davídica é cumprida — o trono eterno encontra seu herdeiro
+Redentivo: → A fidelidade de Deus à aliança é demonstrada pela própria genealogia
+
+Mt 1:1c — ALCANCE
+Filosófico: → Toda filosofia do universal e do particular encontra aqui uma síntese: o particular
+  (Jesus, judeu, nazareno) é o portador do universal (bênção para todas as nações)
+Psicológico: → O desejo humano de ser incluído, de pertencer a algo maior, é endereçado: todas
+  as nações têm acesso ao Messias pela promessa abraâmica
+Sociológico: → "Filho de Abraão" cruza fronteiras étnicas; a genealogia de Jesus inclui mulheres
+  estrangeiras (Raabe, Rute) e prepara a missão universal
+Teológico: → Gênesis 12:3 ("em ti serão benditas todas as famílias da terra") encontra em Jesus
+  seu cumprimento definitivo
+Redentivo: → A salvação não é propriedade étnica; ela é promessa que atravessa toda genealogia humana
+
+==========================================
+
+22. FAMILIAR
+
+Mt 1:1b — "filho de Davi"
+Família: Jesus e a linhagem davídica
+→ A genealogia que segue em Mt 1:2–16 inclui não apenas reis ilustres, mas figuras moralmente
+  complexas (Rute, a moabita estrangeira; Raabe, a prostituta de Jericó; Bate-Seba, envolvida
+  em adultério) — a família de Jesus é real, humana e imperfeita.
+→ O texto ensina às famílias que a fidelidade de Deus não depende da perfeição das gerações;
+  ele trabalha através de genealogias complicadas para cumprir suas promessas.
+
+Mt 1:1c — "filho de Abraão"
+Família: A família ampliada da promessa
+→ Abraão é apresentado como "pai de muitas nações" (Gn 17:5); em Jesus, a família de Abraão
+  se torna verdadeiramente universal — judeus e gentios são herdeiros da mesma promessa.
+→ Famílias cristãs que compreendem esta lógica transmitem aos filhos uma identidade que vai
+  além da etnia, da classe e da cultura: somos filhos de Abraão pela fé (Gl 3:29).
+
+Mt 1:1 — Toda a perícope
+Família: a genealogia como pedagogia familiar
+→ A prática judaica de recitar genealogias tinha função pedagógica: ensinar às crianças que
+  elas fazem parte de uma história maior. Mateus adapta esta prática para revelar que Jesus
+  é o ponto de chegada da maior história de todas.
+→ Pais que ensinam seus filhos que a fé cristã tem raízes históricas (Abraão, Davi, Jesus)
+  estão ensinando a teologia de Mateus: a fé não começa com você — você é herdeiro de promessas.
+
+Explicação: Mt 1:1 é texto de formação familiar na medida em que apresenta a identidade cristã
+como herança recebida, não como construção autônoma. A família que transmite a fé transmite,
+com ela, a genealogia espiritual que a fundamenta.
+
+==========================================
+
+23. TRINITÁRIO
+
+Mt 1:1a — "Βίβλος γενέσεως"
+PAI → O Autor da história que ordena três eras de quatorze gerações com fidelidade inquebrantável
+  à sua promessa; o "Livro da genealogia" é, antes de tudo, o livro da fidelidade do Pai
+  (O Pai é o que prometeu a Abraão e a Davi — e dois milênios depois, cumpre na plenitude do tempo)
+
+Mt 1:1a–1c — "Iēsou Christou, huiou David, huiou Abraam"
+FILHO → O Ungido que assume genealogia humana real — não apenas aparente; o Filho eterno entra
+  na história como descendente de Abraão e herdeiro de Davi, cumprindo em sua própria pessoa
+  as promessas que o Pai havia feito ao longo dos séculos
+  (O Filho é o que recebe os títulos — Cristo, filho de Davi, filho de Abraão — e os preenche
+  de conteúdo com sua vida, morte e ressurreição)
+
+Mt 1:1 — implícito na concepção virginal anunciada em 1:18–20
+ESPÍRITO → O Agente da nova criação que tornará possível o que nenhuma genealogia humana poderia
+  produzir: a concepção de Jesus sem pai humano; o mesmo Espírito que pairava sobre as águas
+  na criação (Gn 1:2) age novamente na concepção do novo Adão
+  (O Espírito é o que transforma a genealogia humana em ponto de entrada para o divino; sem o
+  Espírito, a genealogia é apenas história; com ele, é portal da nova criação)
+
+Síntese Trinitária de Mt 1:1:
+PAI → O que prometeu e ordenou toda a genealogia em direção ao cumprimento
+FILHO → O que assumiu a genealogia e nela plantou o ponto de chegada: Jesus Cristo
+ESPÍRITO → O que tornará possível o que a genealogia por si mesma não poderia produzir
+
+Explicação: Em Mt 1:1, a Trindade está presente em forma de prefigurações e implicações estruturais:
+o Pai como autor da promessa genealógica, o Filho como seu cumprimento encarnado e o Espírito como
+agente da descontinuidade que tornará a genealogia uma nova criação. O versículo abre um livro que
+é, em seu conjunto, narrativa trinitária — da promessa do Pai, pelo Filho encarnado, na potência
+do Espírito Santo.
+
+

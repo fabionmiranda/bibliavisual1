@@ -1,0 +1,831 @@
+=========================================
+
+1. INTERLINEAR (NA28)
+
+[Mt 1:1 (A)] Grego: Βίβλος γενέσεως Ἰησοῦ Χριστοῦ υἱοῦ Δαυὶδ υἱοῦ Ἀβραάμ
+  Transliteração: Biblos geneseōs Iēsou Christou huiou Dauid huiou Abraam
+  Tradução: "Livro da genealogia de Jesus Cristo, filho de Davi, filho de Abraão"
+
+[Mt 1:2 (B1)] Grego: Ἀβραὰμ ἐγέννησεν τὸν Ἰσαάκ, Ἰσαὰκ δὲ ἐγέννησεν τὸν Ἰακώβ,
+  Ἰακὼβ δὲ ἐγέννησεν τὸν Ἰούδαν καὶ τοὺς ἀδελφοὺς αὐτοῦ
+  Tradução: "Abraão gerou Isaque; Isaque gerou Jacó; Jacó gerou Judá e seus irmãos"
+
+[Mt 1:3 (B1)] Grego: Ἰούδας δὲ ἐγέννησεν τὸν Φαρὲς καὶ τὸν Ζάρα ἐκ τῆς Θαμάρ
+  Tradução: "Judá gerou Perez e Zerá, de Tamar"
+
+[Mt 1:4–5 (B1)] Tradução: "Perez gerou Esrom; Esrom gerou Arão; Arão gerou Aminadabe;
+  Aminadabe gerou Naassom; Naassom gerou Salmom; Salmom gerou Boaz, de Raabe;
+  Boaz gerou Obede, de Rute; Obede gerou Jessé"
+
+[Mt 1:6 (B1)] Grego: Ἰεσσαὶ δὲ ἐγέννησεν τὸν Δαυὶδ τὸν βασιλέα.
+  Δαυὶδ δὲ ἐγέννησεν τὸν Σολομῶνα ἐκ τῆς τοῦ Οὐρίου
+  Tradução: "Jessé gerou o rei Davi. Davi gerou Salomão, da mulher de Urias"
+
+[Mt 1:7–11 (B2)] Tradução: "Salomão gerou Roboão; Roboão gerou Abias; Abias gerou Asa;
+  Asa gerou Josafá; Josafá gerou Jorão; Jorão gerou Uzias; Uzias gerou Jotão;
+  Jotão gerou Acaz; Acaz gerou Ezequias; Ezequias gerou Manassés;
+  Manassés gerou Amon; Amon gerou Josias; Josias gerou Jeconias e seus irmãos
+  por ocasião da deportação para a Babilônia"
+
+[Mt 1:12–16 (B3)] Tradução: "Depois da deportação para a Babilônia, Jeconias gerou Salatiel;
+  Salatiel gerou Zorobabel; Zorobabel gerou Abiúde; Abiúde gerou Eliaquim;
+  Eliaquim gerou Azor; Azor gerou Sadoque; Sadoque gerou Aquim;
+  Aquim gerou Eliúde; Eliúde gerou Eleazar; Eleazar gerou Matã; Matã gerou Jacó;
+  Jacó gerou José, o marido de Maria, da qual nasceu Jesus, chamado Cristo"
+
+[Mt 1:17 (A')] Grego: Πᾶσαι οὖν αἱ γενεαὶ ἀπὸ Ἀβραὰμ ἕως Δαυὶδ γενεαὶ δεκατέσσαρες,
+  καὶ ἀπὸ Δαυὶδ ἕως τῆς μετοικεσίας Βαβυλῶνος γενεαὶ δεκατέσσαρες,
+  καὶ ἀπὸ τῆς μετοικεσίας Βαβυλῶνος ἕως τοῦ Χριστοῦ γενεαὶ δεκατέσσαρες.
+  Tradução: "Assim, todas as gerações desde Abraão até Davi são quatorze gerações;
+  desde Davi até a deportação para a Babilônia, quatorze gerações;
+  desde a deportação para a Babilônia até o Cristo, quatorze gerações"
+
+Explicação: O interlinear de Mt 1:1–17 revela a arquitetura deliberada do texto. O versículo 1
+(A) e o versículo 17 (A') são os pilares que sustentam a genealogia: ambos nomeiam Abraão,
+Davi e Cristo, formando a moldura interpretativa de toda a perícope. Os versículos intermediários
+(B1–B3) operam pela repetição sistemática de ἐγέννησεν ("gerou"), criando um ritmo que conduz
+o leitor através de 42 gerações até o ponto de chegada: Jesus, chamado Cristo. A ruptura
+sintática em 1:16 — onde o padrão "X gerou Y" é substituído por "da qual nasceu Jesus" —
+é o sinal literário mais importante da perícope: a genealogia chega ao fim de um modo
+que ela própria não poderia produzir.
+
+==========================================
+
+2. MORFOLÓGICO-LEXICAL
+
+Βίβλος (biblos): Livro, documento solene; eco de "biblos" na LXX de Gn 2:4 e 5:1;
+  Mateus apresenta Jesus como início de uma nova criação [Mt 1:1]
+
+γένεσις (genesis): Origem, geração, genealogia; o mesmo termo de Gênesis (LXX);
+  a ressonância é intencional — nova criação começa aqui [Mt 1:1]
+
+Ἰησοῦς (Iēsous): Forma grega de יֵשׁוּעַ (Yeshua), "O SENHOR salva";
+  o nome já declara a missão antes de qualquer narrativa [Mt 1:1]
+
+Χριστός (Christos): Ungido; tradução de מָשִׁיַח (Mashiach); não é sobrenome,
+  mas título régio-profético que identifica Jesus como o Messias esperado [Mt 1:1]
+
+υἱός (huios): Filho; no contexto de aliança, designa herdeiro portador da promessa,
+  não apenas descendência biológica [Mt 1:1]
+
+Δαυίδ (David): O rei-pastor cuja aliança (2Sm 7:12–16) prometia descendência com
+  trono eterno; "filho de Davi" é o título messiânico dominante nos Evangelhos [Mt 1:1]
+
+Ἀβραάμ (Abraam): Receptor da promessa universal (Gn 12:3; 22:18);
+  "filho de Abraão" situa Jesus como cumprimento da promessa para todas as nações [Mt 1:1]
+
+ἐγέννησεν (egennēsen): "Gerou"; verbo no aoristo ativo, 3ª pessoa singular;
+  repete-se 39 vezes em Mt 1:2–16, criando ritmo genealógico deliberado [Mt 1:2–16]
+
+βασιλέα (basilea): Rei; o único título que aparece na genealogia intermediária
+  é o de Davi — "Davi, o rei" (v.6) — destacando-o entre todos os antepassados [Mt 1:6]
+
+μετοικεσία (metoikesia): Deportação, exílio; aparece três vezes em Mt 1:11–12 e 17;
+  o exílio babilônico é o terceiro marco estrutural da genealogia [Mt 1:11–12.17]
+
+ἐγεννήθη (egennēthē): "Nasceu"; voz passiva, distinta de todos os ἐγέννησεν ativos;
+  em 1:16, a ruptura da voz ativa para a passiva sinaliza que Jesus não é gerado pelo
+  padrão humano — ele nasce de Maria sem o agente masculino de toda a série anterior [Mt 1:16]
+
+γενεαί (geneai): Gerações; substantivo feminino plural; aparece quatro vezes em 1:17,
+  organizando a história em três blocos iguais de quatorze [Mt 1:17]
+
+Explicação: O vocabulário de Mt 1:1–17 é cuidadosamente estruturado. A série de ἐγέννησεν
+funciona como metrônomo histórico, enquanto a ruptura em 1:16 (ἐγεννήθη, passivo) é a
+nota inesperada que muda tudo. O texto ensina pela forma, não apenas pelo conteúdo:
+a genealogia não chega a Jesus pelo mesmo caminho que chegou a todos os outros.
+
+==========================================
+
+3. QUIÁSTICO
+
+[A]  Mt 1:1:     "filho de Davi, filho de Abraão" — os três nomes: Abraão, Davi, Cristo
+[B1] Mt 1:2–6:   Genealogia desde Abraão — era dos patriarcas e juízes (ἐγέννησεν)
+[B2] Mt 1:7–11:  Genealogia desde Davi — era da monarquia e dos reis (ἐγέννησεν)
+[B3] Mt 1:12–16: Genealogia após o cativeiro — era pós-exílica (ἐγέννησεν)
+[A'] Mt 1:17:    "desde Abraão até Davi… quatorze gerações" — os três nomes: Abraão, Davi, Cristo
+
+Explicação: A estrutura quiástica de Mt 1:1–17 é de tipo A–B–B–B–A', onde A e A' formam
+inclusão pelos mesmos três nomes (Abraão, Davi, Cristo), e B1–B3 são três genealogias
+paralelas. O paralelismo triplo de B reflete as três eras da história de Israel:
+dos patriarcas à monarquia (B1), da monarquia ao exílio (B2), do exílio ao Messias (B3).
+Cada era compreende quatorze gerações, e a convergência dos três grupos em 1:17 revela
+o propósito estrutural do texto: demonstrar que a história é ordenada por Deus em
+direção a um ponto inevitável — Jesus Cristo. A ruptura em 1:16 (passivo singular:
+"nasceu Jesus") é o centro funcional da perícope, pois interrompe o padrão estabelecido
+por 39 repetições de ἐγέννησεν e sinaliza que o Messias não é mais um produto da cadeia
+genealógica — ele é o seu ponto de chegada e de superação.
+
+==========================================
+
+4. SINTÁTICO
+
+[Mt 1:1] Frase nominal sem verbo explícito: "Livro da genealogia de Jesus Cristo,
+  filho de Davi, filho de Abraão" — estrutura de inscrição, não de narrativa;
+  as duas aposições genitivas ("filho de Davi", "filho de Abraão") qualificam
+  juridicamente a identidade de Jesus
+
+[Mt 1:2–15] Parataxe por coordenação aditiva: "X δὲ ἐγέννησεν τὸν Y" —
+  estrutura verbal repetida com sujeito e objeto em progressão linear;
+  o δέ (partícula de continuidade) encadeia cada geração à seguinte sem pausa;
+  a monotonia sintática é deliberada: ritmo que imita o peso acumulativo da história
+
+[Mt 1:6] Dupla predicação: "Jessé gerou o rei Davi" — único caso onde o filho
+  recebe título ("rei") dentro da cadeia; sinaliza a centralidade de Davi na estrutura
+
+[Mt 1:6b] Oração relativa com genitivo: "da mulher de Urias" — o nome de Bate-Seba
+  é substituído por sua relação com Urias; o texto recorda o adultério sem nomeá-lo,
+  mantendo a tensão moral sem julgamento explícito
+
+[Mt 1:11–12] Repetição lexical: "por ocasião da deportação (μετοικεσία) para a Babilônia"
+  aparece como marcação temporal de transição entre B2 e B3; a deportação é o
+  segundo marco estrutural da genealogia
+
+[Mt 1:16] Ruptura sintática decisiva: "Jacó gerou José, o marido de Maria,
+  da qual (ἐξ ἧς) nasceu Jesus, chamado Cristo" — o pronome relativo ἐξ ἧς
+  é feminino singular, excluindo José como agente da geração; a voz passiva
+  ἐγεννήθη (nasceu) contrasta com todos os ἐγέννησεν (gerou) anteriores;
+  a sintaxe protege a virgindade de Maria ao mesmo tempo que a inclui na cadeia
+
+[Mt 1:17] Tríplice anáfora com δεκατέσσαρες: "quatorze gerações… quatorze gerações…
+  quatorze gerações" — o número repetido três vezes fecha a perícope com simetria
+  aritmética que ressoa como declaração de providência
+
+Explicação: A sintaxe de Mt 1:1–17 é um instrumento teológico. O padrão repetitivo
+de Mt 1:2–15 cria expectativa pela sua regularidade; a ruptura de 1:16 é tanto mais
+poderosa quanto mais previsível havia se tornado o padrão. O versículo 17 resolve a
+tensão com simetria aritmética: a história não é caos, é geometria providencial.
+
+==========================================
+
+5. SEMÂNTICO
+
+[Mt 1:1] Ideia central: Jesus é o Messias prometido — filho de Davi (herança régia)
+  e filho de Abraão (herança universal); todo o campo semântico da perícope
+  está comprimido neste versículo inaugural
+
+[Mt 1:2–6 (B1)] Ideia central: A era dos patriarcas e da formação de Israel —
+  de Abraão a Davi, a linhagem passa por figuras moralmente complexas
+  (Tamar, Raabe, Rute), revelando que a graça de Deus opera através da imperfeição humana
+
+[Mt 1:7–11 (B2)] Ideia central: A era da monarquia e do declínio —
+  de Davi à deportação, reis bons e maus constituem a linhagem;
+  a genealogia não idealiza a história; ela a registra com sobriedade
+
+[Mt 1:12–16 (B3)] Ideia central: A era do silêncio e da esperança —
+  do exílio a José, os nomes são largamente desconhecidos da história bíblica;
+  são gerações que viveram sem profetas, sem reis, mantendo a linhagem viva
+
+[Mt 1:17] Ideia central: A história tem estrutura — Deus ordenou três eras simétricas
+  de quatorze gerações, revelando que o aparecimento do Messias não é acidente,
+  mas consumação de um plano eterno
+
+Explicação: O campo semântico de Mt 1:1–17 move-se da promessa (v.1) através da
+fidelidade histórica (vv.2–16) até a declaração de cumprimento (v.17). A inclusão
+das quatro mulheres (Tamar, Raabe, Rute, mulher de Urias) no campo semântico cria
+uma subcorrente que diz: o Messias vem através da margem, do estrangeiro, do
+escândalo. A semântica da genealogia recusa toda visão de linhagem pura.
+
+==========================================
+
+6. PROGRESSIVO
+
+Etapa 1 [Mt 1:1 — título]: declaração de identidade — Jesus Cristo é quem é antes
+  de qualquer narrativa; o título precede a história que o fundamenta
+
+Etapa 2 [Mt 1:2–6 — era abraâmica]: a promessa toma forma genealógica — de Abraão
+  a Davi, quatorze gerações de graça, imperfeição e fidelidade de Deus
+
+Etapa 3 [Mt 1:7–11 — era davídica]: a promessa atravessa a monarquia —
+  de Davi à deportação, a linhagem sobrevive apesar do pecado dos reis
+
+Etapa 4 [Mt 1:12–16 — era pós-exílica]: a promessa atravessa o silêncio —
+  do exílio a José, nomes obscuros sustentam a linhagem por gerações sem profecia
+
+Etapa 5 [Mt 1:16 — ruptura]: a cadeia chega ao fim inesperado — "da qual nasceu Jesus,
+  chamado Cristo"; o padrão ativo rompe-se numa passiva que aponta para além da história
+
+Etapa 6 [Mt 1:17 — conclusão]: a história é declarada completa —
+  três grupos de quatorze gerações, convergindo no Cristo;
+  o que foi prometido a Abraão e a Davi chegou
+
+Explicação: A progressão de Mt 1:1–17 é da promessa à consumação, com seis etapas
+insubstituíveis. Cada era é necessária; o exílio babilônico — que poderia parecer
+o fim da linhagem — é apenas o marcador do segundo terço. A perícope ensina que a
+providência de Deus não é interrompida pela tragédia histórica; ela é conduzida
+através dela.
+
+==========================================
+
+7. INTENSIFICAÇÃO
+
+[Mt 1:1] Foco: declaração máxima de identidade — em um versículo, toda a teologia
+  messiânica do AT está comprimida; a intensidade é máxima no início
+
+[Mt 1:2–6] Foco: intensificação pela expectativa — a genealogia confirma que a
+  promessa a Abraão está em andamento; o nome de Davi no v.6 como "o rei" eleva
+  a intensidade ao clímax do primeiro bloco
+
+[Mt 1:7–11] Foco: intensificação pela tensão moral — a deportação (v.11) representa
+  a crise mais severa da genealogia; a promessa parece estar em risco
+
+[Mt 1:12–16] Foco: intensificação pelo silêncio — nomes desconhecidos em uma
+  era sem profecia; a tensão é máxima porque a promessa parece esquecida
+
+[Mt 1:16] Foco: clímax narrativo — a ruptura sintática (ἐγεννήθη vs. ἐγέννησεν)
+  é o ponto de maior intensidade; tudo o que veio antes converge aqui
+
+[Mt 1:17] Foco: resolução pela simetria — a intensidade se resolve não em
+  narrativa dramática, mas em declaração aritmética; Deus ordena o que parecia caos
+
+Explicação: A intensificação de Mt 1:1–17 segue uma curva que começa no alto (v.1),
+desce pela monotonia genealógica (vv.2–15), alcança o clímax na ruptura sintática
+de 1:16 e se resolve na declaração providencial de 1:17. O texto usa a expectativa
+criada pela repetição para tornar a ruptura final tão impactante quanto possível.
+
+==========================================
+
+8. ESPACIAL
+
+[Mt 1:1] Esfera: esfera da identidade revelada — o versículo-inscrição existe
+  fora do espaço geográfico; é uma declaração que paira sobre toda a narrativa
+
+[Mt 1:2–6] Esfera: espaço dos patriarcas — Canaã, Egito, o deserto;
+  inclui Tamar (Canaã), Raabe (Jericó), Rute (Moabe) — o espaço já se abre
+  para fora de Israel desde o início
+
+[Mt 1:7–11] Esfera: espaço da monarquia davídica — Jerusalém, o templo,
+  a cidade de Davi; e ao fundo, a sombra da Babilônia avançando
+
+[Mt 1:12–16] Esfera: espaço do exílio e do retorno — Babilônia, depois Judeia
+  anônima; as gerações pós-exílicas habitam um espaço histórico comprimido,
+  vivendo à sombra de impérios estrangeiros
+
+[Mt 1:17] Esfera: esfera da interpretação meta-histórica — o versículo não
+  está em nenhum espaço geográfico; ele descreve a estrutura do tempo
+
+Explicação: O movimento espacial de Mt 1:1–17 é paradoxal: começa em toda parte
+(v.1, sem espaço), percorre terras concretas (vv.2–16) e retorna a nenhum lugar
+específico (v.17, análise estrutural). O texto inclui mulheres estrangeiras de Moabe,
+Canaã e dos hititas, sinalizando que a genealogia do Messias já traversa fronteiras
+antes que o mandato missionário final (Mt 28:19) as declare abertas.
+
+==========================================
+
+9. ACESSO
+
+[Mt 1:1 — "filho de Davi"] Acesso para Israel: o título abre a genealogia como
+  resposta à expectativa messiânica judaica; todo israelita que conhecia 2Sm 7
+  sabia que o herdeiro do trono eterno viria desta linhagem
+
+[Mt 1:1 — "filho de Abraão"] Acesso para as nações: "em ti serão benditas todas
+  as famílias da terra" (Gn 12:3); desde o primeiro versículo, o Evangelho
+  está aberto para além das fronteiras étnicas de Israel
+
+[Mt 1:3.5.6 — mulheres na genealogia] Acesso ampliado:
+  Tamar (irregularidade legal), Raabe (prostituta cananeia), Rute (moabita),
+  mulher de Urias (adultério davídico) — a genealogia inclui o excluído,
+  o estrangeiro, o moralmente comprometido; o acesso ao Messias não é garantido
+  pela pureza da linhagem
+
+[Mt 1:16 — ruptura passiva] Restrição ao padrão: o acesso ao Messias não é
+  produzido pela cadeia genealógica; Jesus nasce "da qual" (Maria), não "gerado por"
+  (José); o acesso à salvação não é por herança biológica, mas por ação divina
+
+Explicação: Mt 1:1–17 constrói uma teologia do acesso radicalmente inclusiva.
+A genealogia abre espaço para Israel (filho de Davi), para as nações (filho de Abraão),
+para estrangeiros (Raabe, Rute), para irregulares (Tamar), para vítimas de poder
+(mulher de Urias). E, em 1:16, fecha a série com uma declaração que diz: nenhum
+desses acessos produz o Messias — ele nasce por outro caminho.
+
+==========================================
+
+10. RELACIONAL
+
+[Mt 1:1 — Jesus e Deus] Status: Jesus é o Cristo, o Ungido do SENHOR —
+  a relação de eleição divina é declarada antes de qualquer outra
+
+[Mt 1:1–6 — Jesus e Abraão] Status: pertencimento e cumprimento da promessa —
+  a aliança abraâmica encontra seu herdeiro definitivo
+
+[Mt 1:6 — Jesus e Davi] Status: herança do trono — a promessa davídica
+  (2Sm 7:12–16) é genealogicamente cumprida; Jesus pertence à linhagem real
+
+[Mt 1:3.5.6 — Jesus e as mulheres na genealogia] Status: solidariedade com
+  a margem — Tamar, Raabe, Rute e a mulher de Urias são ancestrais do Messias;
+  ele vem de dentro da história humana em sua complexidade total
+
+[Mt 1:16 — Jesus e José/Maria] Status: José é "o marido de Maria" — seu papel
+  na genealogia é de reconhecimento legal, não de paternidade biológica;
+  a relação de José com Jesus é de adoção e pertencimento à linhagem davídica
+
+[Mt 1:17 — Jesus e a história] Status: ponto de chegada de 42 gerações —
+  Jesus não está apenas em relação com alguns; ele é o destinatário de toda
+  a história que o precedeu
+
+Explicação: A teia relacional de Mt 1:1–17 é extraordinariamente rica. Jesus está
+em relação com Deus (Ungido), com Abraão (cumprimento da promessa), com Davi
+(herdeiro do trono), com estrangeiras e irregulares (solidariedade com a margem)
+e com toda a história humana (ponto de chegada de 42 gerações). A genealogia
+não apenas lista nomes — ela declara a profundidade das relações que constituem
+a identidade do Messias.
+
+==========================================
+
+11. CRISTOLÓGICO
+
+[Mt 1:1 — "Jesus Cristo"] Conexão: Χριστός = Mashiach; a tríplice unção do AT
+  (reis, sacerdotes, profetas) converge neste título;
+  Jesus é o ungido por excelência (At 10:38; Lc 4:18; Hb 1:9)
+
+[Mt 1:1 — "filho de Davi"] Conexão: a aliança davídica (2Sm 7:12–16) prometia
+  descendência com trono eterno; Jesus cumpre pela ressurreição e exaltação,
+  não pela linhagem biológica apenas (Rm 1:3–4; At 2:29–36)
+
+[Mt 1:1 — "filho de Abraão"] Conexão: Gl 3:16 interpreta a "descendência de Abraão"
+  como referindo-se especificamente a Cristo; a bênção de todas as nações
+  se cumpre em Jesus
+
+[Mt 1:3.5.6 — mulheres na genealogia] Conexão cristológica: as quatro mulheres
+  prefiguram a inclusão que Cristo realizará — estrangeiras, irregulares,
+  vítimas são antepassadas do Redentor; ele vem de dentro da humanidade quebrada
+  para redimi-la de dentro (Hb 2:14–17)
+
+[Mt 1:16 — ruptura passiva] Conexão: a voz passiva ἐγεννήθη aponta para a
+  concepção virginal (desenvolvida em 1:18–25); Jesus é o novo Adão —
+  gerado pelo Espírito (Lc 1:35; 1Co 15:45–49), não pela vontade do homem (Jo 1:13)
+
+[Mt 1:17 — três eras] Conexão: a "plenitude do tempo" (Gl 4:4) é aqui
+  demonstrada estruturalmente — Jesus não veio cedo demais nem tarde demais;
+  42 gerações foram necessárias para que o Messias chegasse no momento certo
+
+Explicação: Mt 1:1–17 é uma cristologia condensada em genealogia. Cada elemento —
+título, linhagem, mulheres incluídas, ruptura passiva, simetria aritmética — aponta
+para a identidade única de Jesus: plenamente humano (tem genealogia), plenamente
+messiânico (filho de Davi e de Abraão), e categoricamente diferente de todos os
+seus antepassados (nasce de Maria, não gerado por José).
+
+==========================================
+
+12. SISTEMÁTICO
+
+[Mt 1:1 — "Biblos geneseōs"] Doutrina: Revelação — Mateus abre com título que
+  invoca a autoridade da Escritura; o que segue é Palavra de Deus, não biografia;
+  ressonância com Gênesis = nova criação
+
+[Mt 1:1 — "Iēsou Christou"] Doutrina: Cristologia — a identidade de Jesus como
+  humano (nome) e Ungido (título) é declarada antes de qualquer narrativa
+
+[Mt 1:1 — "huiou David"] Doutrina: Escatologia e Reino — Jesus como herdeiro
+  do trono davídico fundamenta a teologia do reino de Deus proclamado no Evangelho
+
+[Mt 1:1 — "huiou Abraam"] Doutrina: Missão e Soteriologia — a filiação abraâmica
+  funda a universalidade da salvação e antecipa Mt 28:19
+
+[Mt 1:3.5.6 — mulheres] Doutrina: Graça — a inclusão de Tamar, Raabe, Rute
+  e da mulher de Urias ensina que a graça de Deus opera através da irregularidade
+  humana, não apesar dela; a eleição não é por mérito
+
+[Mt 1:16 — ruptura passiva] Doutrina: Cristologia e Pneumatologia —
+  "nasceu Jesus" sem agente masculino aponta para a concepção pelo Espírito;
+  a geração do Messias transcende a biologia
+
+[Mt 1:17 — três eras de 14] Doutrina: Providência — a história não é acaso;
+  Deus ordena três eras simétricas, revelando que o Messias veio na plenitude do tempo
+
+Explicação: Em 17 versículos, Mt 1:1–17 toca sete categorias da teologia sistemática.
+A genealogia não é apenas lista de nomes — é argumento teológico que demonstra
+simultaneamente a humanidade de Jesus, a fidelidade de Deus, a universalidade
+da salvação e a soberania providencial sobre a história.
+
+==========================================
+
+13. TENSÃO
+
+[Mt 1:1 — tensão inaugural] Estado: "Jesus Cristo" cria tensão imediata para o leitor
+  judeu — este homem, com nome humano, é o Messias? A reivindicação precede a evidência
+
+[Mt 1:3.5.6 — tensão moral] Estado: as quatro mulheres introduzem irregularidades
+  na linhagem — adultério, prostituição, estrangeiria; a promessa parece contaminar-se
+  pelo pecado humano
+
+[Mt 1:7–11 — tensão histórica] Estado: reis que praticaram idolatria e injustiça
+  são elos da cadeia messiânica; a deportação para a Babilônia (v.11) é o nadir —
+  o momento em que a promessa parece extinta
+
+[Mt 1:12–16 — tensão pelo silêncio] Estado: nomes obscuros em uma era sem profecia;
+  o leitor não sabe se a promessa sobreviverá ao anonimato histórico
+
+[Mt 1:16 — tensão máxima e resolução parcial] Estado: a ruptura passiva resolve
+  parcialmente a tensão (o Messias chegou!) mas instala nova tensão (como nasceu
+  de Maria sem pai humano?) — a resposta virá em 1:18–25
+
+[Mt 1:17 — resolução estrutural] Estado: a tensão histórica se resolve pela
+  declaração de simetria; mas a tensão cristológica permanece aberta para o Evangelho todo
+
+Explicação: Mt 1:1–17 instala pelo menos cinco tensões que o Evangelho inteiro desenvolve:
+a tensão da identidade (quem é este?), a tensão moral (como um Messias pode vir desta
+linhagem?), a tensão histórica (como a promessa sobreviveu ao exílio?), a tensão
+do silêncio (as gerações sem profecia) e a tensão da concepção (como nasceu sem pai?).
+Mateus é mestre em deixar tensões propositalmente abertas.
+
+==========================================
+
+14. REPETIÇÃO
+
+[Mt 1:2–15 — ἐγέννησεν] Padrão: o verbo "gerou" repete-se 39 vezes;
+  a repetição cria ritmo e expectativa que torna a ruptura de 1:16 tanto mais impactante
+
+[Mt 1:1 e 1:17 — Abraão, Davi, Cristo] Padrão: os três nomes-chave repetem-se
+  no versículo de abertura (A) e de encerramento (A'), formando a inclusão quiástica
+  que delimita e interpreta toda a genealogia
+
+[Mt 1:17 — δεκατέσσαρες] Padrão: "quatorze gerações" repete-se três vezes
+  no mesmo versículo; a tripla repetição do número é declaração de providência
+
+[Mt 1:11–12 — μετοικεσία] Padrão: "deportação para a Babilônia" aparece duas vezes
+  em sequência, marcando o segundo divisor histórico
+
+[Mt 1:3.5.5.6 — ἐκ] Padrão: a preposição ἐκ ("de") aparece para identificar
+  as mães Tamar, Raabe, Rute e a mulher de Urias; repetição que destaca
+  intencionalmente as mulheres na cadeia genealógica
+
+Explicação: A repetição em Mt 1:1–17 opera em múltiplos níveis simultaneamente:
+o ἐγέννησεν rítmico cria a expectativa que a ruptura de 1:16 satisfaz; a inclusão
+A/A' pelos três nomes ensina o leitor a ler toda a genealogia sob a chave de
+Abraão–Davi–Cristo; e a tripla repetição de "quatorze" em 1:17 substitui qualquer
+argumento verbal: a simetria fala por si mesma.
+
+==========================================
+
+15. CAUSA E EFEITO
+
+[Promessa a Abraão (Gn 12:3; 22:18)] Ação: Deus promete bênção para todas as nações
+  através de sua descendência → Consequência: dois milênios depois, o herdeiro
+  desta promessa chega como Jesus Cristo, filho de Abraão
+
+[Aliança davídica (2Sm 7:12–16)] Ação: Deus promete descendência com trono eterno
+  → Consequência: mil anos depois, o herdeiro do trono é identificado como Jesus,
+  filho de Davi
+
+[Pecado e crise na linhagem (Mt 1:3.5.6.11)] Ação: pecado humano (adultério,
+  deportação) ameaça a promessa → Consequência: a graça de Deus opera precisamente
+  através das crises — as mulheres irregulares e o exílio são elos, não obstáculos
+
+[Ruptura de 1:16] Ação: a cadeia genealógica chega ao fim de um modo que ela
+  não poderia produzir → Consequência: Jesus nasce de Maria pela ação do Espírito,
+  inaugurando o que a genealogia apenas prenunciava
+
+[Simetria aritmética (Mt 1:17)] Ação: Deus ordena três eras de quatorze gerações
+  → Consequência: o Messias chega "na plenitude do tempo" (Gl 4:4); a história
+  tinha um calendário
+
+Explicação: Mt 1:1–17 é uma demonstração de que Deus conduz a história através de
+causas e efeitos que os agentes humanos não compreendem enquanto os vivem. O adultério
+de Davi, o exílio babilônico, o anonimato das gerações pós-exílicas — todos são
+elos de uma cadeia causal que Deus usa para cumprir o que prometeu a Abraão.
+A genealogia não é a lista dos méritos humanos; é o registro da fidelidade divina
+através da imperfeição humana.
+
+==========================================
+
+16. APOLOGÉTICO
+
+[Mt 1:1 — "Biblos geneseōs"] Tema: Contra o docetismo e o gnosticismo
+  Combate: toda teologia que nega a humanidade real de Jesus é refutada pela
+  genealogia — Jesus tem história, ancestrais, carne; a encarnação é real
+
+[Mt 1:1 — "Iēsou Christou"] Tema: Contra o adocionismo
+  Combate: Jesus não se torna o Cristo no batismo ou na ressurreição —
+  desde o versículo 1 ele já é "Jesus Cristo"; a identidade messiânica é constitutiva
+
+[Mt 1:1 — "huiou David, huiou Abraam"] Tema: Contra leituras que dissociam
+  Jesus do judaísmo
+  Combate: Jesus é profundamente enraizado na história de Israel e na promessa
+  abraâmica; sem esta raiz, o Evangelho não tem base
+
+[Mt 1:3.5.6 — mulheres na genealogia] Tema: Contra a pureza étnica como critério
+  de salvação
+  Combate: Raabe (cananeia), Rute (moabita), a mulher de Urias (heteia por casamento)
+  são antepassadas do Messias; a pureza étnica não é critério na genealogia divina
+
+[Mt 1:11 — deportação incluída] Tema: Contra a teodiceia que nega providência
+  na tragédia
+  Combate: o exílio babilônico é incluído na genealogia como marco providencial,
+  não como falha do plano; Deus ordena a história, inclusive seus capítulos sombrios
+
+[Mt 1:17 — três eras de 14] Tema: Contra o acaso histórico e o materialismo
+  Combate: a simetria de três grupos de quatorze gerações demonstra que a história
+  tem ordem, direção e propósito; o materialismo histórico que nega providência
+  é incompatível com a lógica estrutural do texto
+
+Explicação: Mt 1:1–17 refuta seis distorções teológicas e filosóficas: o docetismo
+(Jesus tem carne), o adocionismo (Jesus já é Cristo), o antissemitismo teológico
+(Jesus é de Israel), o exclusivismo étnico (o Messias tem antepassadas estrangeiras),
+a teodiceia sem tragédia (o exílio é incluído) e o acaso histórico (a simetria revela
+providência).
+
+==========================================
+
+17. PERGUNTAS AO TEXTO
+
+A abertura [Mt 1:1]:
+ - Por que Mateus começa com "Livro da genealogia" em vez de uma narrativa direta?
+ - O que a ressonância com Gênesis (γένεσις) sugere sobre a intenção do evangelista?
+ - Por que "filho de Davi" vem antes de "filho de Abraão", se Abraão é historicamente anterior?
+
+As mulheres na genealogia [Mt 1:3.5.6]:
+ - Por que Mateus inclui Tamar, Raabe, Rute e a mulher de Urias, mas não menciona Sara,
+   Rebeca ou Lia?
+ - O que une essas quatro mulheres? (irregularidade, estrangeiria, marginalidade)
+ - Como sua presença na genealogia prepara a narrativa do nascimento virginal de Maria?
+
+A deportação como marco [Mt 1:11–12]:
+ - Por que o exílio babilônico é o segundo divisor histórico da genealogia?
+ - O que significa que a promessa messiânica sobreviveu ao pior momento da história de Israel?
+
+A ruptura de 1:16:
+ - Por que o versículo 16 rompe o padrão estabelecido por 39 repetições de "gerou"?
+ - O que a voz passiva ἐγεννήθη e o pronome feminino ἐξ ἧς comunicam sobre a concepção de Jesus?
+ - Como José participa da genealogia davídica de Jesus sem ser seu pai biológico?
+
+A conclusão [Mt 1:17]:
+ - O que significa "quatorze gerações" × 3 para um leitor judeu do século I?
+ - Como a simetria aritmética de 1:17 é um argumento teológico sobre a providência?
+ - Como Mt 1:1 (A) e Mt 1:17 (A') funcionam juntos como chave interpretativa da perícope?
+
+Explicação: As perguntas ao texto de Mt 1:1–17 conduzem o leitor pelas camadas da
+perícope: da abertura programática, através das irregularidades inclusivas, até
+a ruptura central e a conclusão simétrica. As perguntas sobre as mulheres são
+especialmente frutíferas para grupos de estudo, pois abrem a discussão sobre graça,
+marginalidade e inclusão.
+
+==========================================
+
+18. AUTORAL
+
+A Genealogia como Argumento Teológico [DAVIES & ALLISON - Mt 1:1–17]:
+  W.D. Davies e Dale C. Allison Jr. (The Gospel According to Saint Matthew, ICC): "A genealogia
+  de Mateus não é mera introdução decorativa. Ela é um argumento teológico que demonstra
+  simultaneamente a legitimidade messiânica de Jesus (filho de Davi), a universalidade
+  da salvação (filho de Abraão), e a soberania de Deus sobre a história (três eras simétricas)."
+
+As Mulheres como Chave Hermenêutica [FRANCE - Mt 1:3.5.6]:
+  R.T. France (The Gospel of Matthew, NICNT): "A inclusão das quatro mulheres não celebra
+  sua virtude, mas sinaliza que Deus age através de circunstâncias inusitadas e pessoas
+  marginalizadas. Elas preparam o leitor para a narrativa do nascimento virginal, que também
+  envolve uma mulher em circunstâncias irregulares — desta vez, por ação do Espírito."
+
+A Ruptura de 1:16 como Ápice Estrutural [HAGNER - Mt 1:16]:
+  Donald A. Hagner (Matthew 1–13, WBC): "A mudança da voz ativa para a passiva em 1:16
+  ('da qual nasceu Jesus') é a virada decisiva da genealogia. Após 39 repetições de
+  ἐγέννησεν, a passiva ἐγεννήθη interrompe o padrão de forma deliberada, sinalizando
+  que a geração do Messias é de uma ordem diferente de todas as que a precederam."
+
+O Número Quatorze e a Providência [NOLLAND - Mt 1:17]:
+  John Nolland (The Gospel of Matthew, NIGTC): "O esquema de 3 × 14 gerações pode
+  evocar o valor numérico do nome David em hebraico (ד = 4, ו = 6, ד = 4; total = 14),
+  reforçando a identidade davídica de Jesus. Mais importante, a simetria revela que
+  a história é ordenada por Deus em direção ao Messias."
+
+Explicação: O diálogo com Davies-Allison, France, Hagner e Nolland confirma que as
+interpretações propostas neste estudo têm sólido fundamento na scholarship. O consenso
+é claro: Mt 1:1–17 é um texto teológico de alta densidade, e cada elemento — título,
+mulheres, ruptura passiva, simetria aritmética — é deliberado e significativo.
+
+==========================================
+
+19. HOMILÉTICO
+
+Tema Central: Como Deus conduz a história através de promessas, crises, silêncios
+e irregularidades humanas até o único ponto para o qual ela sempre caminhava?
+
+Título sugerido: "Quarenta e duas gerações até o Messias: a genealogia que conta
+a história que você precisava ouvir"
+
+I [Mt 1:1 — "Jesus Cristo, filho de Davi, filho de Abraão"]:
+  O fim está no começo — Mateus declara a conclusão antes de contar a história
+  Ponto: toda a perícope existe para justificar este versículo; o Messias já está
+  identificado antes que qualquer geração seja listada
+  Aplicação: a fé não começa com nossa busca — começa com uma identidade já declarada
+
+II [Mt 1:2–6 — era de Abraão a Davi]:
+  A promessa atravessa a imperfeição — Tamar, Raabe, Rute, a mulher de Urias
+  são antepassadas do Messias
+  Ponto: Deus não espera linhagens limpas; ele trabalha através das histórias
+  complicadas das pessoas reais
+  Aplicação: sua história, com todas as suas irregularidades, não está fora do
+  alcance da graça
+
+III [Mt 1:7–12 — era de Davi à deportação]:
+  A promessa atravessa a tragédia — o exílio babilônico não é o fim da genealogia;
+  é o segundo marco da providência
+  Ponto: Deus inclui as deportações na sua estrutura de quatorze gerações;
+  a crise não cancela a promessa
+  Aplicação: o que parece o fim da sua história pode ser apenas a transição
+  para o próximo capítulo
+
+IV [Mt 1:12–16 — era do silêncio]:
+  A promessa atravessa o anonimato — nomes desconhecidos, sem profecia,
+  mantendo a linhagem viva por séculos
+  Ponto: as gerações obscuras importam; a fidelidade cotidiana das pessoas
+  que ninguém conhece também faz parte do plano
+  Aplicação: a fidelidade silenciosa da sua vida tem peso na genealogia
+  espiritual que você transmite
+
+Conclusão: Em 1:17, Mateus faz a conta: quarenta e duas gerações, três grupos,
+uma simetria impossível de ser acidental. Deus ordenou tudo. E no final da última
+linha da última geração, não se lê "Jacó gerou Jesus" — lê-se "da qual nasceu Jesus,
+chamado Cristo". A genealogia chega ao fim por um caminho que ela mesma não poderia
+produzir. Isso é o Evangelho: Deus entra na linhagem da humanidade de dentro —
+e ainda assim a supera.
+
+Explicação: Esboço em quatro movimentos correspondentes às quatro eras da genealogia,
+seguindo o fluxo textual de Mt 1:1–17. Cada ponto tem aplicação pastoral específica
+sem perder o enraizamento exegético.
+
+==========================================
+
+20. PASTORAL PRÁTICO
+
+A identidade declarada antes da história [Mt 1:1]:
+  Adultos: em uma cultura que exige que cada pessoa construa e prove sua identidade,
+  o texto afirma que a identidade de Jesus foi declarada por Deus antes de qualquer feito;
+  somos amados antes de ser úteis
+  Jovens: combate a crença de que você precisa se provar para ser aceito;
+  Jesus foi identificado como Cristo antes de qualquer milagre ou ensinamento
+  Igreja: forma comunidade ancorada em identidade revelada, não em desempenho
+
+A graça que opera através da irregularidade [Mt 1:3.5.6]:
+  Adultos: Tamar, Raabe, Rute e a mulher de Urias ensinam que histórias complicadas
+  não disqualificam da linhagem da graça; Deus não exige passado limpo
+  Jovens: quem se sente excluído por sua história encontra aqui antepassadas do Messias
+  Igreja: chama a comunidade a não exigir perfeição histórica como condição de pertencimento
+
+A fidelidade nas gerações obscuras [Mt 1:12–16]:
+  Adultos: Zorobabel, Abiúde, Eliaquim — nomes sem narrativa; a fidelidade cotidiana
+  das gerações do pós-exílio manteve a linhagem viva; sua fidelidade obscura importa
+  Jovens: não é necessário ser famoso para importar no plano de Deus; as gerações
+  que ninguém conhece também são elos da cadeia
+  Igreja: valoriza as pessoas que servem sem visibilidade; elas são essenciais
+
+A história tem sentido — e você está nela [Mt 1:17]:
+  Adultos: a simetria de três eras de quatorze gerações declara que a história tem
+  estrutura e propósito; sua vida não é acidente
+  Jovens: quando tudo parece caótico, a genealogia ensina que Deus enxerga a estrutura
+  que você não consegue ver de dentro
+  Igreja: forma comunidade com consciência histórica — somos parte de uma genealogia
+  espiritual que antecede e excede qualquer geração individual
+
+Explicação Final: Mt 1:1–17 é texto pastoral de alta densidade. Ele fala a quem se
+sente excluído pela sua história (as mulheres na genealogia), a quem sente que a crise
+destruiu tudo (o exílio como marco, não como fim), a quem serve sem visibilidade
+(as gerações obscuras do pós-exílio) e a quem precisa de sentido numa história caótica
+(a simetria de 1:17). E ao mesmo tempo, a genealogia começa e termina com uma declaração:
+Jesus Cristo. Tudo o mais é explicação de quem ele é e como ele chegou.
+
+==========================================
+
+21. ANTROPOLÓGICO
+
+Explicação: Mateus 1:1–17 revela a condição humana em sua totalidade histórica,
+moral e existencial. No nível filosófico, a genealogia coloca a questão do sentido
+da história: ela é acaso ou tem direção? A simetria de três eras responde com estrutura.
+No nível psicológico, a inclusão das quatro mulheres enfrenta as narrativas de vergonha,
+irregularidade e marginalidade: Deus não apaga essas histórias — ele as inclui. No nível
+sociológico, a genealogia cruza fronteiras de gênero (mulheres incluídas), etnia
+(Raabe, Rute), classe (reis e anônimos) e moralidade (justos e pecadores). No nível
+teológico, a ruptura de 1:16 declara que o problema humano não pode ser resolvido
+pela história humana — precisa de intervenção divina. No nível redentivo, Jesus é
+o ponto de chegada de toda a genealogia humana: ele assume a história humana para
+redimi-la de dentro.
+
+Mt 1:1 — IDENTIDADE
+Filosófico: → Quem define a identidade humana — o indivíduo, a cultura ou Deus?
+Psicológico: → Jesus tem nome e título declarados por Deus antes de qualquer feito;
+  identidade revelada, não conquistada
+Sociológico: → "Filho de Davi" (realeza) e "filho de Abraão" (pertencimento pactual)
+  cruzam classe e etnia na definição de uma identidade
+Teológico: → Christos: o ungido; toda a função sacerdotal, profética e régia converge
+Redentivo: → O nome "Jesus" (o SENHOR salva) é a primeira declaração salvífica do Evangelho
+
+Mt 1:3.5.6 — MARGINALIDADE E GRAÇA
+Filosófico: → Quem tem direito a fazer parte da história sagrada?
+Psicológico: → Vergonha, irregularidade e exclusão são temas das quatro mulheres;
+  Deus as inclui sem apagar sua história
+Sociológico: → Estrangeiras (Raabe, Rute), vítima (mulher de Urias), marginal (Tamar)
+  são integradas à linhagem messiânica; fronteiras sociais não delimitam a graça
+Teológico: → A eleição não é por pureza moral ou étnica; Deus escolhe
+  e age através de quem o mundo exclui
+Redentivo: → A genealogia já prefigura a missão de Jesus: "veio buscar e salvar
+  o que estava perdido" (Lc 19:10)
+
+Mt 1:11–12 — CRISE E PROVIDÊNCIA
+Filosófico: → A tragédia (exílio) cancela o propósito ou o revela?
+Psicológico: → A deportação evoca perda de identidade, terra e futuro;
+  ser incluída como marco, não como fim, ressignifica a tragédia
+Sociológico: → O exílio babilônico desestruturou toda a organização social de Israel;
+  as gerações que se seguiram viveram no limite da sobrevivência identitária
+Teológico: → Deus ordena o exílio como segundo marco de quatorze gerações;
+  a tragédia está dentro do plano, não fora dele
+Redentivo: → A promessa sobreviveu ao pior; nenhuma crise humana pode extinguir
+  o propósito de Deus
+
+Mt 1:16–17 — RUPTURA E ESTRUTURA
+Filosófico: → A história pode produzir o seu próprio redentor, ou precisa de um agente externo?
+Psicológico: → A ruptura de 1:16 produz surpresa cognitiva; o leitor esperava mais
+  um elo e recebeu um ponto de chegada
+Sociológico: → José adota legalmente Jesus na linhagem davídica; a filiação pode ser
+  social e legal, não apenas biológica
+Teológico: → A passiva ἐγεννήθη declara que Jesus não é produto da genealogia humana;
+  ele é a intervenção de Deus dentro da história
+Redentivo: → A simetria de 1:17 declara que a redenção foi planejada, não improvisada
+
+==========================================
+
+22. FAMILIAR
+
+Mt 1:3.5.6 — As quatro mulheres
+Família: Tamar, Raabe, Rute, Bate-Seba
+→ As quatro mulheres na genealogia de Jesus têm histórias que nenhuma família
+  escolheria destacar: adultério forçado e lei deturpada (Tamar), prostituição
+  (Raabe), viuvez estrangeira (Rute), adulterio do rei (Bate-Seba/mulher de Urias).
+→ Mateus as inclui deliberadamente. O texto ensina às famílias que a graça de Deus
+  não exige histórias limpas para ser transmitida — ela opera através das histórias
+  reais, inclusive as dolorosas e complicadas.
+
+Mt 1:11–12 — A deportação como marco de transmissão
+Família: gerações que transmitiram a fé no exílio
+→ As gerações entre a deportação e o retorno (c. 586–538 a.C.) mantiveram a linhagem
+  viva sem terra, sem templo, sem reis. A fidelidade foi transmitida em ambiente
+  de opressão e anonimato.
+→ O texto ensina que a transmissão da fé acontece especialmente em tempos de crise;
+  famílias que preservam a fé no exílio fazem parte do plano — são elos insubstituíveis.
+
+Mt 1:16 — José e a paternidade por aliança
+Família: José como pai legal de Jesus
+→ José não é o pai biológico de Jesus, mas assume a paternidade davídica por decisão
+  e aliança. Sua inserção na genealogia ensina que a paternidade é um ato de cobertura
+  e responsabilidade, não apenas de biologia.
+→ Famílias que incluem filhos por adoção, casamento ou escolha encontram aqui
+  um modelo teológico: José, o pai por aliança do Filho de Deus.
+
+Mt 1:17 — Três gerações como pedagogia familiar
+Família: a genealogia como instrumento de formação de identidade
+→ A prática judaica de recitar genealogias tinha função pedagógica: ensinar às crianças
+  que elas fazem parte de uma história maior do que a sua própria vida.
+→ Pais que transmitem a fé transmitem, com ela, a genealogia espiritual que a fundamenta:
+  "somos filhos de Abraão pela fé" (Gl 3:7) e herdeiros de uma linhagem que chegou a Jesus.
+
+Explicação: Mt 1:1–17 é texto de formação familiar em múltiplos níveis: inclui
+histórias complicadas (mulheres na genealogia), exalta a fidelidade obscura (gerações
+do exílio), afirma a paternidade por aliança (José) e convoca cada família a saber
+de onde vem sua fé.
+
+==========================================
+
+23. TRINITÁRIO
+
+Mt 1:1 — PAI
+PAI → O Legislador da aliança e Autor da história: é o Pai que prometeu a Abraão
+  "em ti serão benditas todas as famílias da terra" (Gn 12:3) e a Davi "estabelecerei
+  o trono do teu reino para sempre" (2Sm 7:13); a genealogia é o registro da fidelidade
+  do Pai a suas próprias promessas ao longo de dois milênios
+  (O Pai é quem ordena as três eras de quatorze gerações — a simetria de 1:17 é
+  assinatura de sua soberania sobre o tempo)
+
+Mt 1:2–16 — FILHO
+FILHO → O herdeiro que assume a genealogia: o Filho eterno entra na história como
+  descendente de Abraão e herdeiro de Davi, cumprindo em sua própria pessoa as promessas
+  que o Pai havia feito; não assume uma linhagem idealizada, mas a linhagem real da
+  humanidade — com suas crises, irregularidades, exílios e silêncios
+  (O Filho é quem recebe os títulos — Cristo, filho de Davi, filho de Abraão — e os
+  preenche com vida, morte e ressurreição; Mt 1:16 declara que ele chegou
+  de modo que a genealogia não poderia produzir por si mesma)
+
+Mt 1:16.18–20 — ESPÍRITO
+ESPÍRITO → O Agente da ruptura: a passiva ἐγεννήθη em 1:16 aponta para o que
+  1:18–20 explicitará — a concepção de Jesus pelo Espírito Santo; o mesmo Espírito
+  que pairava sobre as águas na criação (Gn 1:2) age novamente para inaugurar a nova criação
+  (O Espírito transforma a genealogia humana em ponto de entrada para o divino;
+  sem o Espírito, a cadeia de 42 gerações é apenas história; com ele, é portal da
+  nova criação que Jesus inaugura)
+
+Síntese Trinitária de Mt 1:1–17:
+PAI    → O que prometeu e ordenou toda a genealogia em direção ao cumprimento;
+          autor das alianças com Abraão e Davi que a genealogia registra
+FILHO  → O que assumiu a genealogia humana em sua integridade — com suas falhas,
+          crises e silêncios — e chegou como seu ponto de chegada e superação
+ESPÍRITO → O que tornou possível o que a genealogia não poderia produzir:
+            o nascimento do Messias de Maria, inaugurando a nova criação
+
+Explicação: Em Mt 1:1–17, a Trindade está presente em forma de prefiguração e
+implicação estrutural: o Pai como autor das promessas que a genealogia registra,
+o Filho como seu cumprimento encarnado e o Espírito como agente da descontinuidade
+que transforma a genealogia em nova criação. O versículo 16 é o ponto de encontro
+das três pessoas: o Pai que ordena, o Filho que chega, o Espírito que torna possível
+o impossível. Toda a perícope é, em última análise, narrativa trinitária antes de
+ser narrativa biográfica.
+
+==========================================
+BÍBLIA VISUAL EXPOSITIVA
