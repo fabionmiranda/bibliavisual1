@@ -847,7 +847,7 @@ const HEBREW_TRANSLIT: Record<string, string> = {
   'בנימן': 'Binyamin', 'ויאכלו': "vayo'khelu", 'גביע': 'gavia',
   'יהודה': 'Yehudah', 'אני יוסף': 'ani-Yosef', 'ויתן': 'vayiten', 'ויחי': 'vayekhi',
   // Perícope 72
-  'אל תירא': 'al-tira', 'וירדו': 'vayerdu',
+  'אל תירא': 'al-tira',
   // Perícope 74
   'גשׁן': 'Goshen', 'יאמרו': 'yomru', 'ויברך': 'veyevarekh', 'רעמסס': "Ra'amses",
   // Perícope 75

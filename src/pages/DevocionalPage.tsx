@@ -325,7 +325,7 @@ const HEBREW_TRANSLIT: Record<string, string> = {
   'שׁבר': 'shavar', 'אשׁמים': 'ashamim', 'כסף': 'kesef', 'ויספרו': 'vayesapru',
   'בנימן': 'Binyamin', 'ויאכלו': "vayo'khelu", 'גביע': 'gavia',
   'יהודה': 'Yehudah', 'אני יוסף': 'ani-Yosef', 'ויתן': 'vayiten', 'ויחי': 'vayekhi',
-  'אל תירא': 'al-tira', 'וירדו': 'vayerdu',
+  'אל תירא': 'al-tira',
   'גשׁן': 'Goshen', 'יאמרו': 'yomru', 'ויברך': 'veyevarekh', 'רעמסס': "Ra'amses",
   'מקנה': 'mikneh', 'אדמה': 'adamah', 'כהנים': 'kohanim', 'חמישׁית': 'khamishit',
   'שׁבע עשׂרה': 'sheva-esreh', 'קבר': 'kavar',
