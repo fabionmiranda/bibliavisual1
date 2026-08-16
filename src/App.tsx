@@ -4,6 +4,14 @@ import Home from './pages/Home';
 import Method from './pages/Method';
 import Tutorials from './pages/Tutorials';
 import Biblioteca from './pages/Biblioteca';
+import BibliotecaPage from './pages/BibliotecaPage';
+import AcessarPage from './pages/AcessarPage';
+import EducacaoCristaPage from './pages/EducacaoCristaPage';
+import EducacaoCristaAula1Page from './pages/EducacaoCristaAula1Page';
+import EducacaoCristaAula2Page from './pages/EducacaoCristaAula2Page';
+import EducacaoCristaAula3Page from './pages/EducacaoCristaAula3Page';
+import LivroIsThereiningPage from './pages/LivroIsTheremeaningPage';
+import BibliotecaLivrosPage from './pages/BibliotecaLivrosPage';
 import LivroPage from './pages/LivroPage';
 import DiagramasPage from './pages/DiagramasPage';
 import AdminPage from './pages/AdminPage';
@@ -24,6 +32,8 @@ import TeologiaArtigosPage from './pages/TeologiaArtigosPage';
 import TeologiaAreaPage from './pages/TeologiaAreaPage';
 import TeologiaCredosPage from './pages/TeologiaCredosPage';
 import TeologiaArtigoPage from './pages/TeologiaArtigoPage';
+import ArtigosPage from './pages/ArtigosPage';
+import ArtigoPage from './pages/ArtigoPage';
 import Watermark from './components/Watermark';
 import LoginPage from './pages/LoginPage';
 import ProtectedRoute from './components/ProtectedRoute';
@@ -69,7 +79,17 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/metodo" element={<Method />} />
           <Route path="/tutoriais" element={<Tutorials />} />
-          <Route path="/biblioteca" element={<Biblioteca />} />
+          <Route path="/acessar" element={<AcessarPage />} />
+          <Route path="/diagramas" element={<Biblioteca />} />
+          <Route path="/biblioteca" element={<BibliotecaPage />} />
+          <Route path="/biblioteca/livros"                           element={<BibliotecaLivrosPage />} />
+          <Route path="/biblioteca/livros/is-there-meaning"        element={<LivroIsThereiningPage />} />
+          <Route path="/biblioteca/artigos"           element={<BibliotecaPage />} />
+          <Route path="/biblioteca/semana"            element={<BibliotecaPage />} />
+          <Route path="/biblioteca/autores"           element={<BibliotecaPage />} />
+          <Route path="/biblioteca/resenhas"          element={<BibliotecaPage />} />
+          <Route path="/biblioteca/guias"             element={<BibliotecaPage />} />
+          <Route path="/biblioteca/area/:slug"        element={<BibliotecaPage />} />
           <Route path="/livraria" element={<LibrariaPage />} />
           <Route path="/livros" element={<LivrosPage />} />
           <Route path="/livros/mateus" element={<Navigate to="/ebook/mateus" replace />} />
@@ -99,7 +119,15 @@ export default function App() {
           {/* Teologia */}
           <Route path="/teologia" element={<TeologiaPage />} />
           <Route path="/teologia/aulas" element={<TeologiaAulasPage />} />
+          <Route path="/teologia/pastoral/educacao-crista" element={<EducacaoCristaPage />} />
+          <Route path="/teologia/pastoral/educacao-crista/aula-1" element={<EducacaoCristaAula1Page />} />
+          <Route path="/teologia/pastoral/educacao-crista/aula-2" element={<EducacaoCristaAula2Page />} />
+          <Route path="/teologia/pastoral/educacao-crista/aula-3" element={<EducacaoCristaAula3Page />} />
           <Route path="/teologia/artigos" element={<TeologiaArtigosPage />} />
+
+          {/* Artigos */}
+          <Route path="/artigos" element={<ArtigosPage />} />
+          <Route path="/artigos/:slug" element={<ArtigoPage />} />
           <Route path="/teologia/area/:slug" element={<TeologiaAreaPage />} />
           <Route path="/teologia/credos" element={<TeologiaCredosPage />} />
           <Route path="/teologia/:slug" element={<TeologiaArtigoPage />} />

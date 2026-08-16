@@ -40,18 +40,15 @@ export default function Navbar() {
 
   // Nav links ordered and grouped
   const mainLinks = [
-    { name: 'Diagramas', path: '/metodo' },
-    { name: 'Tutoriais', path: '/tutoriais' },
     { name: 'Devocional',path: '/devocional' },
     { name: 'Pregação',  path: '/pregacao' },
     { name: 'Família',   path: '/familia' },
     { name: 'Teologia',  path: '/teologia' },
+    { name: 'Artigos',   path: '/artigos' },
     { name: 'Livraria',  path: '/livraria', activeOverride: isLibrariaActive },
   ];
 
-  const mobileLinks = [
-    ...mainLinks.map((l, i) => ({ ...l, delay: i * 0.05 })),
-  ];
+  const mobileLinks = mainLinks.map((l, i) => ({ ...l, delay: i * 0.05 }));
 
   return (
     <nav
@@ -104,6 +101,15 @@ export default function Navbar() {
               );
             })}
 
+            {/* Biblioteca */}
+            <Link
+              to="/biblioteca"
+              className={linkCls(location.pathname.startsWith('/biblioteca'))}
+            >
+              Biblioteca
+              <span className={underline(location.pathname.startsWith('/biblioteca'))} />
+            </Link>
+
             {/* Separator */}
             <div className="w-px h-4 bg-white/10 mx-1 lg:mx-1.5 shrink-0" />
 
@@ -143,7 +149,7 @@ export default function Navbar() {
 
             {/* Acessar */}
             <Link
-              to="/biblioteca"
+              to="/acessar"
               className="flex items-center px-3.5 py-1.5 xl:px-4 xl:py-2 bg-brand-blue text-bg-deep font-black text-[9px] xl:text-[10px] rounded-full hover:bg-white transition-all active:scale-95 tracking-widest uppercase whitespace-nowrap shadow-lg shadow-brand-blue/25 ml-1"
             >
               Acessar
@@ -212,9 +218,25 @@ export default function Navbar() {
                 })}
               </div>
 
+              {/* Biblioteca — mobile */}
+              <motion.div initial={{ opacity: 0, x: -12 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: mobileLinks.length * 0.05 }}>
+                <Link
+                  to="/biblioteca" onClick={close}
+                  className={cn(
+                    'flex items-center justify-between w-full px-3.5 py-3 rounded-xl font-black uppercase tracking-widest text-xs transition-all duration-200',
+                    location.pathname.startsWith('/biblioteca')
+                      ? 'text-brand-blue bg-brand-blue/10 border border-brand-blue/25'
+                      : 'text-white/75 hover:text-white hover:bg-white/[0.04] border border-transparent'
+                  )}
+                >
+                  Biblioteca
+                  {location.pathname.startsWith('/biblioteca') && <span className="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0" />}
+                </Link>
+              </motion.div>
+
               {/* Contatos + Admin */}
               <div className="grid grid-cols-2 gap-1.5 mt-1">
-                <motion.div initial={{ opacity: 0, x: -12 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.30 }}>
+                <motion.div initial={{ opacity: 0, x: -12 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.35 }}>
                   <button
                     onClick={scrollToFooter}
                     className="flex items-center w-full px-3.5 py-3 rounded-xl font-black uppercase tracking-widest text-xs text-white/75 hover:text-white hover:bg-white/[0.04] border border-transparent transition-all duration-200"
@@ -223,7 +245,7 @@ export default function Navbar() {
                   </button>
                 </motion.div>
 
-                <motion.div initial={{ opacity: 0, x: -12 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.35 }}>
+                <motion.div initial={{ opacity: 0, x: -12 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.40 }}>
                   <Link
                     to="/admin" onClick={close}
                     className={cn(
@@ -250,7 +272,7 @@ export default function Navbar() {
                   Unir-se ao Clube
                 </a>
                 <Link
-                  to="/biblioteca" onClick={close}
+                  to="/acessar" onClick={close}
                   className="w-full py-3 bg-brand-blue text-bg-deep font-black rounded-2xl text-center uppercase tracking-widest text-xs shadow-lg shadow-brand-blue/20"
                 >
                   Acessar

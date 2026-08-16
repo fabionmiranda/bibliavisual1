@@ -11,7 +11,7 @@ TEMA: A Família como Imagem do Criador
 ---
 
 TÍTULO DO SERMÃO FAMILIAR
-"Feitos à Sua Imagem: Nossa Família no Mundo do Criador"
+"Criados por Deus, para a Glória de Deus: o Propósito da Sua Família"
 
 BIG IDEA PARA A FAMÍLIA
 Deus criou o mundo com ordem e propósito, e cada família existe para refletir Sua glória administrando com fidelidade o que Ele criou.

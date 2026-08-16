@@ -156,6 +156,277 @@ function extractQuiasmaBloco(text: string, idx: number): string {
   return lines.slice(blockStart, blockEnd).join('\n').trim();
 }
 
+// ─── Estrutura Homilética (Gênesis Perícope 2) ──────────────────────
+function EstruturaHomileticaSection2() {
+  const accent = 'rgba(255,200,80,1)';
+  const accentL = 'rgba(255,200,80,0.10)';
+  const accentB = 'rgba(255,200,80,0.30)';
+
+  const SectionCard = ({ num, icon, title, children }: { num: string; icon: string; title: string; children: React.ReactNode }) => (
+    <div style={{ borderRadius: 16, border: `1px solid ${accentB}`, background: 'rgba(20,14,40,0.7)', padding: '24px 28px', marginBottom: 18 }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 14 }}>
+        <div style={{ width: 36, height: 36, borderRadius: 10, background: accentL, border: `1px solid ${accentB}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 18, flexShrink: 0 }}>{icon}</div>
+        <div>
+          <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.18em', color: accent, textTransform: 'uppercase', marginBottom: 2 }}>Seção {num}</div>
+          <div style={{ fontSize: 17, fontWeight: 800, color: C.white }}>{title}</div>
+        </div>
+      </div>
+      <div style={{ fontSize: 15, color: 'rgba(255,255,255,0.78)', lineHeight: 1.75 }}>{children}</div>
+    </div>
+  );
+
+  const Footnote = ({ num, text }: { num: number; text: string }) => (
+    <div style={{ fontSize: 12, color: C.muted, lineHeight: 1.6, marginBottom: 4, paddingLeft: 16, position: 'relative' }}>
+      <span style={{ position: 'absolute', left: 0, color: accent, fontWeight: 700 }}>{num}</span>
+      {text}
+    </div>
+  );
+
+  const Tag = ({ label, color = accentB }: { label: string; color?: string }) => (
+    <span style={{ display: 'inline-block', padding: '2px 10px', borderRadius: 20, background: color, color: C.white, fontSize: 11, fontWeight: 700, marginRight: 6, marginBottom: 4 }}>{label}</span>
+  );
+
+  return (
+    <div style={{ paddingBottom: 40 }}>
+      {/* Header */}
+      <div style={{ borderRadius: 16, border: `1px solid ${accentB}`, background: accentL, padding: '20px 24px', marginBottom: 24 }}>
+        <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.2em', color: accent, textTransform: 'uppercase', marginBottom: 8 }}>Gênesis 2:4b–17 · Perícope 2 · Dia 2</div>
+        <div style={{ fontSize: 'clamp(18px,2.8vw,24px)', fontWeight: 900, color: C.white, lineHeight: 1.3, marginBottom: 8 }}>
+          O Jardim do Limite: a Confiança que Floresce dentro dos Limites de Deus
+        </div>
+        <div style={{ fontSize: 15, color: 'rgba(255,255,255,0.65)', fontStyle: 'italic' }}>
+          "Por que onde Deus circunscreve com um limite, a confiança — e não a restrição — é o que floresce?"
+        </div>
+      </div>
+
+      {/* Seção 1 — Título */}
+      <SectionCard num="I" icon="📌" title="Título">
+        <p><strong style={{ color: accent }}>Título Principal:</strong> O Jardim do Limite: a Confiança que Floresce dentro dos Limites de Deus</p>
+        <p style={{ marginTop: 8 }}><strong style={{ color: accent }}>Subtítulo:</strong> A Aliança das Obras como fundamento do amor obediente no jardim</p>
+        <div style={{ marginTop: 12, padding: '10px 16px', borderRadius: 10, background: 'rgba(0,0,0,0.3)', fontFamily: 'monospace', fontSize: 13, color: 'rgba(255,255,255,0.60)', lineHeight: 1.7 }}>
+          Gn 2:16-17 — וַיְצַו יְהוָה אֱלֹהִים עַל-הָאָדָם לֵאמֹר מִכֹּל עֵץ-הַגָּן אָכֹל תֹּאכֵל<br />
+          <span style={{ color: C.muted, fontFamily: 'sans-serif', fontSize: 12 }}>"E ordenou o SENHOR Deus ao homem, dizendo: De toda árvore do jardim comerás livremente."</span>
+        </div>
+      </SectionCard>
+
+      {/* Seção 2 — Texto */}
+      <SectionCard num="II" icon="📖" title="Texto Base">
+        <p><strong style={{ color: accent }}>Perícope:</strong> Gênesis 2:4b–17 (ARA / NVI)</p>
+        <p style={{ marginTop: 8 }}><strong style={{ color: accent }}>Ponto focal:</strong> Gênesis 2:16-17 — o mandamento que circunscreve: abundância e limite como estrutura da Aliança das Obras</p>
+        <div style={{ marginTop: 10, display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+          <Tag label="Pentateuco" />
+          <Tag label="Narrativa Fundacional" />
+          <Tag label="Aliança das Obras" />
+          <Tag label="Teologia do Limite" />
+        </div>
+      </SectionCard>
+
+      {/* Seção 3 — Tema */}
+      <SectionCard num="III" icon="🎯" title="Tema (Big Idea)">
+        <p>O Deus que forma o homem do pó e o planta no jardim provê abundância e impõe limite, porque a obediência dentro do limite é o terreno onde a confiança e a vida florescem — revelando que a lei não é prisão mas promessa pactual.</p>
+        <p style={{ marginTop: 10, padding: '8px 14px', borderRadius: 8, background: 'rgba(255,200,80,0.08)', borderLeft: `3px solid ${accent}`, fontSize: 14, color: 'rgba(255,255,255,0.70)', fontStyle: 'italic' }}>
+          "O limite não é o oposto da graça — é sua forma mais elevada, porque trata a criatura como agente moral capaz de confiar."<br />
+          <span style={{ fontSize: 12 }}>— Parafraseado de Kline, M. G. <em>Kingdom Prologue</em>. Eugene: Wipf & Stock, 2006. p. 94.¹</span>
+        </p>
+      </SectionCard>
+
+      {/* Seção 4 — Exórdio */}
+      <SectionCard num="IV" icon="🔥" title="Exórdio (Gancho / Introdução)">
+        <p>Vivemos numa cultura que confunde limite com opressão. Toda cerca é vista como prisão; toda proibição, como abuso de poder. E quando esse espírito entra na leitura bíblica, Deus se torna o vilão do jardim — o que esconde o fruto bom e nega o melhor.</p>
+        <p style={{ marginTop: 10 }}>Mas o texto de Gênesis 2 conta outra história: antes de qualquer proibição, Deus regou a terra, formou o homem, plantou o jardim e encheu cada árvore de fruto. A proibição não vem no lugar da abundância — vem <em>depois</em> dela. O limite de Deus não é escassez: é <strong style={{ color: accent }}>definição</strong>.</p>
+        <p style={{ marginTop: 10, fontSize: 14, color: 'rgba(255,255,255,0.60)', fontStyle: 'italic' }}>
+          Cf. Keller, T. <em>Preaching: Communicating Faith in an Age of Skepticism</em>. New York: Viking, 2015. pp. 157–162.²
+        </p>
+      </SectionCard>
+
+      {/* Seção 5 — Proposição */}
+      <SectionCard num="V" icon="⚡" title="Proposição">
+        <div style={{ padding: '14px 18px', borderRadius: 12, background: 'rgba(255,200,80,0.12)', border: `1px solid ${accentB}` }}>
+          <p style={{ fontWeight: 800, fontSize: 17, color: C.white, margin: 0 }}>
+            O Deus que rega o jardim antes de plantar o homem é o mesmo que impõe o limite que define a criatura — e a confiança obediente dentro desse limite é a única vida que floresce para sempre.
+          </p>
+        </div>
+        <p style={{ marginTop: 12, fontSize: 14, color: 'rgba(255,255,255,0.65)' }}>
+          Cf. Clowney, E. P. <em>Preaching Christ in All of Scripture</em>. Wheaton: Crossway, 2003. pp. 41–48.³
+        </p>
+      </SectionCard>
+
+      {/* Seção 6 — Interrogação e Transição */}
+      <SectionCard num="VI" icon="❓" title="Interrogação e Transição">
+        <p><strong style={{ color: accent }}>Interrogação central:</strong> Por que onde Deus circunscreve com um limite, a confiança — e não a restrição — é o que floresce?</p>
+        <p style={{ marginTop: 10 }}><strong style={{ color: accent }}>Transição:</strong> Para responder, acompanharemos o padrão quiástico do texto: da providência que precede à vocação que define, chegando ao centro — o limite que revela o coração da criatura diante do Criador.</p>
+        <p style={{ marginTop: 10, fontSize: 14, color: 'rgba(255,255,255,0.60)' }}>
+          Cf. Chapell, B. <em>Christ-Centered Preaching</em>. 3. ed. Grand Rapids: Baker Academic, 2018. pp. 121–135.⁴
+        </p>
+      </SectionCard>
+
+      {/* Seção 7 — Divisões */}
+      <SectionCard num="VII" icon="📐" title="Divisões / Movimentos">
+        <p style={{ marginBottom: 14, fontSize: 14, color: C.muted }}>Estrutura quiástica em 5 movimentos (A–B–◉–B'–A'):</p>
+        {[
+          { sym: 'A',   ref: 'Gn 2:5–6',     label: 'Providência que precede: o ribeiro rega antes do homem',         cor: 'rgba(80,200,255,1)' },
+          { sym: 'B',   ref: 'Gn 2:7',        label: 'Homem formado do pó e vivificado pelo sopro divino',             cor: 'rgba(180,120,255,1)' },
+          { sym: '◉',   ref: 'Gn 2:8–9',      label: 'Jardim plantado; árvore da vida e do conhecimento no centro ← FOCO', cor: 'rgba(255,200,80,1)' },
+          { sym: "B'",  ref: 'Gn 2:15',       label: 'Homem colocado no jardim para avad e shamar (servir e guardar)', cor: 'rgba(180,120,255,1)' },
+          { sym: "A'",  ref: 'Gn 2:16–17',    label: 'Mandamento: abundância livre e único limite proibido',           cor: 'rgba(80,200,255,1)' },
+        ].map((m, i) => (
+          <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 12, padding: '10px 14px', borderRadius: 10, background: 'rgba(0,0,0,0.25)', marginBottom: 8, borderLeft: `3px solid ${m.cor}` }}>
+            <div style={{ fontFamily: 'monospace', fontWeight: 900, color: m.cor, fontSize: 16, minWidth: 28 }}>{m.sym}</div>
+            <div>
+              <div style={{ fontSize: 12, color: m.cor, fontWeight: 700, marginBottom: 2 }}>{m.ref}</div>
+              <div style={{ fontSize: 14, color: C.white }}>{m.label}</div>
+            </div>
+          </div>
+        ))}
+        {/* ASCII chiasma */}
+        <div style={{ marginTop: 16, padding: '14px 20px', borderRadius: 12, background: 'rgba(0,0,0,0.4)', fontFamily: 'monospace', fontSize: 12, color: 'rgba(255,255,255,0.55)', lineHeight: 2, overflowX: 'auto' }}>
+          <div style={{ paddingLeft: 0,  color: 'rgba(80,200,255,0.9)',  fontWeight: 700 }}>A  — 2:5–6   — Ribeiro irriga: providência antes da criatura</div>
+          <div style={{ paddingLeft: 16, color: 'rgba(180,120,255,0.9)', fontWeight: 700 }}>B  — 2:7     — Homem formado do pó e vivificado</div>
+          <div style={{ paddingLeft: 32, color: 'rgba(255,200,80,0.9)',  fontWeight: 700 }}>◉  — 2:8–9   — Jardim e árvore proibida ← <span style={{ color: accent }}>CENTRO</span></div>
+          <div style={{ paddingLeft: 16, color: 'rgba(180,120,255,0.9)', fontWeight: 700 }}>B' — 2:15    — Homem posto para avad e shamar</div>
+          <div style={{ paddingLeft: 0,  color: 'rgba(80,200,255,0.9)',  fontWeight: 700 }}>A' — 2:16–17 — Mandamento: abundância com limite</div>
+        </div>
+        <p style={{ marginTop: 12, fontSize: 14, color: 'rgba(255,255,255,0.60)' }}>
+          Cf. Wenham, G. J. <em>Genesis 1–15</em>. WBC 1. Waco: Word Books, 1987. pp. 56–70.⁵ | Dorsey, D. A. <em>The Literary Structure of the Old Testament</em>. Grand Rapids: Baker Academic, 1999. pp. 52–54.⁶
+        </p>
+
+        {/* Movimentos expositivos derivados */}
+        <div style={{ marginTop: 20, borderTop: '1px solid rgba(255,200,80,0.18)', paddingTop: 20 }}>
+          <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.18em', color: accent, textTransform: 'uppercase', marginBottom: 16 }}>Divisões Expositivas do Sermão</div>
+
+          {[
+            {
+              num: 'I', par: 'A ↔ A\'', ref: 'Gn 2:5–6 / 2:16–17',
+              title: 'A Providência que Precede: o Ribeiro que Rega o que Ainda Não Foi Plantado',
+              cor: 'rgba(80,200,255,1)', corL: 'rgba(80,200,255,0.10)', corB: 'rgba(80,200,255,0.30)',
+              indicacao: 'Gn 2.5-6 (a terra árida antes de chuva e homem; o ribeiro que subia e irrigava toda a face da terra) ecoa em 2.16-17 (o mandamento que circunscreve: "de toda árvore comerás livremente, mas da árvore do conhecimento não comerás") — providência e proibição formam um par estrutural.',
+              exegese: 'O hebraico ʾed (ribeiro/neblina, 2.6) sobe para irrigar antes de haver homem para lavrar — a providência precede a criatura. O mesmo padrão se repete no mandamento: Deus provê todas as árvores (kol ets, 2.16) livremente antes de nomear a única proibida. A proibição não é escassez: é definição. O verbo tsavah (ordenar, 2.16) introduz o primeiro mandamento — a Aliança das Obras tem forma de palavra antes de ter forma de lei escrita.',
+              teologia: 'CFW VII.1-2 estabelece a Aliança das Obras: Deus prometeu vida ao homem sob condição de obediência perfeita. O limite da árvore não é caprichoso; é o ponto de prova onde a criatura declara "Tu és Soberano e eu sou criatura grata." A Providência (CFW V.1) sustenta tudo, incluindo o jardim que Adão não plantou e a água que não fez fluir.',
+              aplicacao: 'Você reconhece que o que tem — casa, saúde, relacionamentos — é jardim que Deus regou antes de você existir? A ingratidão que ignora a providência prepara o coração para ignorar também o limite. Cultivar gratidão é a primeira defesa contra a tentação.',
+            },
+            {
+              num: 'II', par: 'B ↔ B\'', ref: 'Gn 2:7 / 2:15',
+              title: 'O Homem Formado e Colocado: Vocação antes de Liberdade',
+              cor: 'rgba(180,120,255,1)', corL: 'rgba(180,120,255,0.10)', corB: 'rgba(180,120,255,0.30)',
+              indicacao: 'Gn 2.7 (Deus forma o homem do pó — yatsar, como oleiro — e sopra nishmat chayim) corresponde a 2.15 (Deus "toma" e "coloca" o homem no jardim para avad e shamar — servir e guardar). Origem e vocação formam um par inseparável.',
+              exegese: 'O verbo yatsar (formar, 2.7) é vocabulário do oleiro: o homem é obra de mãos divinas. Nishmat chayim (sopro de vida) distingue o homem dos animais — há algo inalienável na vida humana. Mas a vocação vem antes da liberdade: avad (servir/lavrar) e shamar (guardar/vigiar) definem o que o homem é antes de definirem o que pode fazer. O jardim não é parque de lazer: é santuário de serviço.',
+              teologia: 'O Catecismo Maior P.17 descreve o homem criado com lei inscrita no coração, capacidade de cumpri-la e domínio sobre as criaturas — tudo a serviço de Deus, não de si mesmo. CFW IV.2: Deus criou o homem "à sua imagem... com a lei de Deus escrita no coração, com poder para cumpri-la". Vocação precede autonomia; serviço precede domínio.',
+              aplicacao: 'Você trata seu trabalho, seu lar, seus dons como propriedades ou como jardim confiado para avad e shamar? O homem que governa sem servir e domina sem guardar já cedeu à mentira da serpente antes de ouvi-la. Sua vocação é culto em forma de trabalho.',
+            },
+            {
+              num: 'III', par: 'CENTRO ◉', ref: 'Gn 2:8–9 + 2:16–17',
+              title: 'O Centro Proibido: a Árvore que Define o Limite da Criatura',
+              cor: 'rgba(255,200,80,1)', corL: 'rgba(255,200,80,0.12)', corB: 'rgba(255,200,80,0.35)',
+              indicacao: 'Gn 2.9 (a árvore do conhecimento do bem e do mal plantada no meio do jardim, betok hagan) e 2.16-17 (o mandamento explícito: "não comerás... pois no dia em que dela comeres, certamente morrerás"). A árvore no centro é o espelho do coração da criatura.',
+              exegese: 'A localização betok hagan (no meio, 2.9) é teologicamente central: o limite fica onde não pode ser ignorado, mas pode ser escolhido livremente. O "conhecimento do bem e do mal" (daʿat tov varaʿ) é a prerrogativa de definir moral de forma autônoma — o que pertence exclusivamente ao Criador. Comer seria assumir a cadeira do Juiz. O verbo mot tamut (certamente morrerás) é ênfase absoluta. A presença do limite no centro é a forma mais elevada de respeito: Deus trata a criatura como agente moral.',
+              teologia: 'CFW VII.2 especifica que a condição da Aliança das Obras era "obediência perfeita e pessoal". O Catecismo Maior P.92 define lei de Deus como "declaração de sua vontade para as criaturas que lhes indica o dever para com ele e com os outros". O limite da árvore é a Palavra de Deus antes de ser letra de lei — é relação antes de ser código. Onde Adão diz "não" ao fruto, diz "sim" ao Pai.',
+              aplicacao: 'Em que área da sua vida você trata o limite de Deus como privação, não como proteção? O mandamento que você acha mais restritivo é provavelmente o que mais está guardando sua vida. Confie que o Criador que regou o jardim antes de você chegar também soube onde plantar o limite que você precisa. Amém.',
+            },
+          ].map((mv, i) => (
+            <div key={i} style={{ borderRadius: 14, border: `1px solid ${mv.corB}`, background: mv.corL, padding: '18px 22px', marginBottom: 14 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 12, flexWrap: 'wrap' }}>
+                <div style={{ fontFamily: 'monospace', fontWeight: 900, fontSize: 18, color: mv.cor, minWidth: 28 }}>{mv.num}</div>
+                <span style={{ fontSize: 11, fontWeight: 700, padding: '2px 10px', borderRadius: 20, background: mv.corB, color: mv.cor }}>{mv.par}</span>
+                <span style={{ fontSize: 12, color: C.muted }}>{mv.ref}</span>
+              </div>
+              <div style={{ fontSize: 16, fontWeight: 800, color: C.white, marginBottom: 14, lineHeight: 1.4 }}>{mv.title}</div>
+              <div style={{ display: 'grid', gap: 10 }}>
+                {[
+                  { label: '§ Indicação Textual', text: mv.indicacao },
+                  { label: '§ Exegese', text: mv.exegese },
+                  { label: '§ Teologia Reformada', text: mv.teologia },
+                  { label: '§ Aplicação', text: mv.aplicacao },
+                ].map((item, j) => (
+                  <div key={j} style={{ padding: '10px 14px', borderRadius: 10, background: 'rgba(0,0,0,0.30)', borderLeft: `3px solid ${mv.cor}` }}>
+                    <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.12em', color: mv.cor, textTransform: 'uppercase', marginBottom: 4 }}>{item.label}</div>
+                    <div style={{ fontSize: 14, color: 'rgba(255,255,255,0.80)', lineHeight: 1.7 }}>{item.text}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </SectionCard>
+
+      {/* Seção 8 — Eixo Cristológico */}
+      <SectionCard num="VIII" icon="✝️" title="Eixo Cristológico">
+        <p>O jardim do Éden com sua árvore proibida no centro aponta para outro jardim — Getsêmani — onde o segundo Adão disse <em>"não a minha vontade, mas a tua"</em> (Lc 22:42). O que o primeiro Adão falhou em obedecer, Cristo cumpriu perfeitamente:</p>
+        <div style={{ marginTop: 12, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 10 }}>
+          {[
+            { at: 'Homem formado do pó (Gn 2:7)', nt: 'Cristo, segundo Adão, vivificador (1Co 15:45–47)', cor: 'rgba(80,200,255,0.15)' },
+            { at: 'Árvore proibida no centro (Gn 2:9)', nt: 'Madeira da cruz — maldição revertida (Gl 3:13)', cor: 'rgba(180,120,255,0.15)' },
+            { at: 'Mandamento obedecido (Gn 2:16–17)', nt: 'Obediência perfeita de Cristo (Rm 5:19; Fp 2:8)', cor: 'rgba(100,220,160,0.15)' },
+          ].map((p, i) => (
+            <div key={i} style={{ padding: '10px 14px', borderRadius: 10, background: p.cor, border: '1px solid rgba(255,255,255,0.08)' }}>
+              <div style={{ fontSize: 12, color: C.muted, marginBottom: 4 }}>AT: {p.at}</div>
+              <div style={{ fontSize: 13, color: C.white, fontWeight: 700 }}>NT: {p.nt}</div>
+            </div>
+          ))}
+        </div>
+        <p style={{ marginTop: 12, fontSize: 14, color: 'rgba(255,255,255,0.60)' }}>
+          Cf. Clowney, E. P. <em>op. cit.</em>³ pp. 60–72. | Goldsworthy, G. <em>According to Plan</em>. Downers Grove: IVP, 1991. pp. 95–104.⁷
+        </p>
+      </SectionCard>
+
+      {/* Seção 9 — Ilustração */}
+      <SectionCard num="IX" icon="💡" title="Ilustração">
+        <p>Imagine um pai que constrói um belo parque para seus filhos: árvores frutíferas, corredores de flores, uma fonte de água fresca. Ao centro, ele coloca uma única cerca com um aviso simples: "Este poço não tem fundo." A cerca não é inimiga do parque — <strong style={{ color: accent }}>ela o completa</strong>. Sem ela, o parque é perigoso.</p>
+        <p style={{ marginTop: 10 }}>O jardim de Deus funciona assim: a proibição não contradiz a abundância — ela define até onde a liberdade é liberdade e onde começa a queda livre. A criatura que respeita a cerca não é menos livre; é a única que pode desfrutar o jardim inteiro com segurança.</p>
+        <p style={{ marginTop: 10, fontSize: 14, color: 'rgba(255,255,255,0.60)' }}>
+          Cf. Keller, T. <em>op. cit.</em>² pp. 47–55. | Robinson, H. W. <em>Biblical Preaching</em>. 3. ed. Grand Rapids: Baker Academic, 2014. p. 21.⁸
+        </p>
+      </SectionCard>
+
+      {/* Seção 10 — Aplicação */}
+      <SectionCard num="X" icon="🛠️" title="Aplicação">
+        {[
+          { pub: 'Universal', app: 'Todo ser humano vive sob limites — físicos, morais, relacionais. Reconhecer o Criador como autor desses limites é o primeiro passo da sabedoria (Pv 1:7).', ref: 'Pv 1:7' },
+          { pub: 'Crentes', app: 'Os mandamentos de Deus não são pesados (1Jo 5:3) — são o mapa do jardim. Obedeça não por medo do castigo, mas por confiança no Jardineiro.', ref: '1Jo 5:3' },
+          { pub: 'Pastores/Pregadores', app: 'Pregar a lei de Deus é cuidado pastoral, não legalismo. Cada mandamento é cerca no jardim: protege a vida que o Espírito cultiva.', ref: 'Rm 7:12' },
+        ].map((a, i) => (
+          <div key={i} style={{ padding: '12px 16px', borderRadius: 10, background: 'rgba(0,0,0,0.25)', marginBottom: 10, borderLeft: `3px solid ${accent}` }}>
+            <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.12em', color: accent, textTransform: 'uppercase', marginBottom: 4 }}>{a.pub} · {a.ref}</div>
+            <div style={{ fontSize: 14, color: C.white }}>{a.app}</div>
+          </div>
+        ))}
+        <p style={{ marginTop: 10, fontSize: 14, color: 'rgba(255,255,255,0.60)' }}>
+          Cf. Chapell, B. <em>op. cit.</em>⁴ pp. 47–60. | Sproul, R. C. <em>Knowing Scripture</em>. Downers Grove: IVP, 1977. pp. 42–50.⁹
+        </p>
+      </SectionCard>
+
+      {/* Seção 11 — Conclusão */}
+      <SectionCard num="XI" icon="🏁" title="Conclusão e Apelo">
+        <p>O Éden não era prisão — era jardim irrigado pela providência, plantado pela mão divina, servido por vice-regentes honrados, e guardado por um único limite que definia tudo. A tentação sempre começa no mesmo lugar: <em>"será que Deus disse...?"</em> — a dúvida que transforma limite em privação.</p>
+        <p style={{ marginTop: 10 }}>Mas o jardim que Adão abandonou por autonomia, Cristo recuperou pela obediência. E agora, todo aquele que está em Cristo descobre que os mandamentos de Deus não são pesados (1Jo 5:3) — porque o mesmo Espírito que pairava sobre as águas do caos habita agora o crente, capacitando-o a <strong style={{ color: accent }}>avad e shamar</strong>: servir e guardar o que lhe foi confiado.</p>
+        <div style={{ marginTop: 14, padding: '14px 18px', borderRadius: 12, background: 'rgba(255,200,80,0.12)', border: `1px solid ${accentB}` }}>
+          <p style={{ fontWeight: 800, color: C.white, margin: 0, fontSize: 16 }}>
+            Apelo: Plante-se no jardim que Deus irrigou. Confie no limite que Ele traçou. E viva — não apesar do limite, mas dentro dele. Amém.
+          </p>
+        </div>
+        <p style={{ marginTop: 12, fontSize: 14, color: 'rgba(255,255,255,0.60)' }}>
+          Cf. Lloyd-Jones, D. M. <em>Preaching and Preachers</em>. Grand Rapids: Zondervan, 1971. pp. 96–100.¹⁰ | Piper, J. <em>The Supremacy of God in Preaching</em>. Grand Rapids: Baker Books, 1990. pp. 33–40.¹¹
+        </p>
+      </SectionCard>
+
+      {/* Notas de rodapé ABNT */}
+      <div style={{ borderRadius: 14, border: '1px solid rgba(255,255,255,0.07)', background: 'rgba(0,0,0,0.30)', padding: '20px 24px', marginTop: 8 }}>
+        <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.18em', color: accent, textTransform: 'uppercase', marginBottom: 14 }}>Referências (ABNT NBR 6023)</div>
+        <Footnote num={1} text="KLINE, Meredith G. Kingdom Prologue: Genesis Foundations for a Covenantal Worldview. Eugene: Wipf & Stock, 2006. p. 94." />
+        <Footnote num={2} text="KELLER, Timothy. Preaching: Communicating Faith in an Age of Skepticism. New York: Viking, 2015. pp. 157–162." />
+        <Footnote num={3} text="CLOWNEY, Edmund P. Preaching Christ in All of Scripture. Wheaton: Crossway, 2003. pp. 41–48." />
+        <Footnote num={4} text="CHAPELL, Bryan. Christ-Centered Preaching: Redeeming the Expository Sermon. 3. ed. Grand Rapids: Baker Academic, 2018. pp. 121–135." />
+        <Footnote num={5} text="WENHAM, Gordon J. Genesis 1–15. Word Biblical Commentary, v. 1. Waco: Word Books, 1987. pp. 56–70." />
+        <Footnote num={6} text="DORSEY, David A. The Literary Structure of the Old Testament: A Commentary on Genesis–Malachi. Grand Rapids: Baker Academic, 1999. pp. 52–54." />
+        <Footnote num={7} text="GOLDSWORTHY, Graeme. According to Plan: The Unfolding Revelation of God in the Bible. Downers Grove: InterVarsity Press, 1991. pp. 95–104." />
+        <Footnote num={8} text="ROBINSON, Haddon W. Biblical Preaching: The Development and Delivery of Expository Messages. 3. ed. Grand Rapids: Baker Academic, 2014. p. 21." />
+        <Footnote num={9} text="SPROUL, R. C. Knowing Scripture. Downers Grove: InterVarsity Press, 1977. pp. 42–50." />
+        <Footnote num={10} text="LLOYD-JONES, D. Martyn. Preaching and Preachers. Grand Rapids: Zondervan, 1971. pp. 96–100." />
+        <Footnote num={11} text="PIPER, John. The Supremacy of God in Preaching. Grand Rapids: Baker Books, 1990. pp. 33–40." />
+      </div>
+    </div>
+  );
+}
+
 // ─── Estrutura Homilética (Gênesis Perícope 1) ──────────────────────
 function EstruturaHomileticaSection() {
   const accent = 'rgba(255,200,80,1)';
@@ -192,7 +463,7 @@ function EstruturaHomileticaSection() {
       <div style={{ borderRadius: 16, border: `1px solid ${accentB}`, background: accentL, padding: '20px 24px', marginBottom: 24 }}>
         <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.2em', color: accent, textTransform: 'uppercase', marginBottom: 8 }}>Gênesis 1:1–2:4a · Perícope 1 · Dia 1</div>
         <div style={{ fontSize: 'clamp(18px,2.8vw,24px)', fontWeight: 900, color: C.white, lineHeight: 1.3, marginBottom: 8 }}>
-          Os Luminares do Pacto: quando o Soberano marca o tempo da Sua aliança
+          Do Caos ao Descanso: a Palavra que Cria, Ordena e Consagra
         </div>
         <div style={{ fontSize: 15, color: 'rgba(255,255,255,0.65)', fontStyle: 'italic' }}>
           "Como a Palavra soberana de Deus pode transformar o caos da nossa vida em cosmos consagrado?"
@@ -201,7 +472,7 @@ function EstruturaHomileticaSection() {
 
       {/* Seção 1 — Título */}
       <SectionCard num="I" icon="📌" title="Título">
-        <p><strong style={{ color: accent }}>Título Principal:</strong> Os Luminares do Pacto — quando o Soberano marca o tempo da Sua aliança</p>
+        <p><strong style={{ color: accent }}>Título Principal:</strong> Do Caos ao Descanso: a Palavra que Cria, Ordena e Consagra</p>
         <p style={{ marginTop: 8 }}><strong style={{ color: accent }}>Subtítulo:</strong> A criação como prólogo do drama redentor de Deus</p>
         <div style={{ marginTop: 12, padding: '10px 16px', borderRadius: 10, background: 'rgba(0,0,0,0.3)', fontFamily: 'monospace', fontSize: 13, color: 'rgba(255,255,255,0.60)', lineHeight: 1.7 }}>
           Gn 1:1 — בְּרֵאשִׁית בָּרָא אֱלֹהִים אֵת הַשָּׁמַיִם וְאֵת הָאָרֶץ<br />
@@ -1449,6 +1720,8 @@ export default function PregacaoPage() {
                       <motion.div key="estrutura" initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 10 }} transition={{ duration: 0.18 }}>
                         {selectedDia.dia === 1 ? (
                           <EstruturaHomileticaSection />
+                        ) : selectedDia.dia === 2 ? (
+                          <EstruturaHomileticaSection2 />
                         ) : (
                           <div style={{ padding: 32, borderRadius: 16, border: '1px solid rgba(168,120,255,0.20)', background: 'rgba(20,12,40,0.6)', color: C.muted, fontSize: 13, textAlign: 'center' }}>
                             Estrutura homilética ainda não disponível para esta perícope.

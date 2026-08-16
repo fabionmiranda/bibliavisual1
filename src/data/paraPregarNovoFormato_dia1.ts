@@ -4,7 +4,7 @@ PARA PREGAR · Gênesis 1:1–2:4a
 ---
 
 TÍTULO DO SERMÃO
-"Os Luminares do Pacto: quando o Soberano marca o tempo da Sua aliança"
+"Do Caos ao Descanso: a Palavra que Cria, Ordena e Consagra"
 
 BIG IDEA
 A Palavra soberana ordena o tempo para consagrar Seu povo.

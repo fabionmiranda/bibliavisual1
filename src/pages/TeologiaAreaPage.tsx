@@ -86,15 +86,18 @@ const AREAS_INFO: Record<string, AreaInfo> = {
   },
   pastoral: {
     titulo: 'Teologia Pastoral-Prática',
-    descricao: 'A teologia no serviço da Igreja — pregação, aconselhamento, liderança e cuidado das almas.',
+    descricao: 'A teologia no serviço da Igreja — pregação, aconselhamento, liderança, educação cristã e cuidado das almas.',
     icon: '🌿',
     cor: '#4ade80',
     materias: [
+      { nome: 'Educação Cristã para Igrejas', desc: 'Como a igreja local ensina, discipula e forma as gerações — da catequese à escola dominical, do jovem ao adulto', icon: '📚', link: '/teologia/pastoral/educacao-crista' },
       { nome: 'Homilética', desc: 'A arte e ciência da pregação expositiva e cristocêntrica', icon: '🎙️' },
       { nome: 'Aconselhamento Bíblico', desc: 'O cuidado pastoral das almas à luz das Escrituras', icon: '🤝' },
       { nome: 'Liderança Pastoral', desc: 'O ofício do pastor-pregador — vocação, caráter e ministério', icon: '👨‍🏫' },
       { nome: 'Liturgia e Culto', desc: 'A adoração regulada pela Escritura — princípio regulador do culto', icon: '🕊️' },
       { nome: 'Sacramentos', desc: 'Batismo e Ceia do Senhor — natureza, modo e significado', icon: '🍞' },
+      { nome: 'Evangelização em Cidades', desc: 'Fundamentos bíblicos e estratégias para o anúncio do Evangelho no contexto urbano — apologética, proclamação e evangelismo relacional', icon: '📢' },
+      { nome: 'Missões Urbanas', desc: 'Teologia e prática da missão nas grandes cidades — pluralidade cultural, plantio de igrejas em centros metropolitanos e alcance de grupos vulneráveis', icon: '🏙️' },
       { nome: 'Disciplina Eclesiástica', desc: 'A disciplina como ato de amor e preservação da Igreja', icon: '⚖️' },
     ],
   },
@@ -225,7 +228,7 @@ export default function TeologiaAreaPage() {
             }}>
               {area.titulo}
             </h1>
-            <p style={{ fontSize: 'clamp(15px,2vw,18px)', color: 'rgba(200,218,255,0.70)', lineHeight: 1.75, margin: 0, maxWidth: 640 }}>
+            <p style={{ fontSize: 'clamp(15px,2vw,18px)', color: 'rgba(220,235,255,0.88)', lineHeight: 1.75, margin: 0, maxWidth: 640 }}>
               {area.descricao}
             </p>
           </div>
@@ -235,7 +238,7 @@ export default function TeologiaAreaPage() {
         <div style={{ height: 1, background: `linear-gradient(90deg, ${area.cor}40 0%, transparent 70%)`, marginBottom: 44 }} />
 
         {/* Label matérias */}
-        <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.30)', marginBottom: 28 }}>
+        <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.55)', marginBottom: 28 }}>
           Matérias desta área
         </div>
 
@@ -274,7 +277,7 @@ export default function TeologiaAreaPage() {
                   </div>
                 </div>
                 {/* Descrição */}
-                <p style={{ margin: 0, fontSize: 'clamp(13px,1.6vw,14px)', color: 'rgba(200,218,255,0.65)', lineHeight: 1.65 }}>
+                <p style={{ margin: 0, fontSize: 'clamp(13px,1.6vw,14px)', color: 'rgba(220,235,255,0.82)', lineHeight: 1.65 }}>
                   {m.desc}
                 </p>
                 {/* Badge */}
@@ -282,7 +285,7 @@ export default function TeologiaAreaPage() {
                   marginTop: 4, alignSelf: 'flex-start',
                   fontSize: 10, fontWeight: 900, letterSpacing: '0.16em',
                   textTransform: 'uppercase',
-                  color: isLink ? area.cor : `${area.cor}80`,
+                  color: isLink ? area.cor : `${area.cor}BB`,
                   background: `${area.cor}0F`, border: `1px solid ${area.cor}28`,
                   borderRadius: 6, padding: '3px 9px',
                 }}>
@@ -324,7 +327,7 @@ export default function TeologiaAreaPage() {
           <div style={{ fontSize: 'clamp(15px,2vw,17px)', fontWeight: 800, color: '#ffffff', marginBottom: 8 }}>
             Conteúdo em desenvolvimento
           </div>
-          <p style={{ margin: 0, fontSize: 'clamp(13px,1.7vw,15px)', color: 'rgba(200,218,255,0.55)', lineHeight: 1.70 }}>
+          <p style={{ margin: 0, fontSize: 'clamp(13px,1.7vw,15px)', color: 'rgba(220,235,255,0.78)', lineHeight: 1.70 }}>
             As matérias desta área estão sendo preparadas com cuidado.<br />
             Novos conteúdos serão publicados progressivamente.
           </p>

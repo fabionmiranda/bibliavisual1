@@ -43,6 +43,15 @@
   img, video, canvas, svg {
     max-width: 100%;
   }
+
+  /* Justificação global para parágrafos de conteúdo em todas as páginas de cursos */
+  p {
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
 }
 
 @layer components {

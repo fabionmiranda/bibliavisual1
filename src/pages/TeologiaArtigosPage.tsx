@@ -6,7 +6,7 @@ import ArtigoCard from '../components/teologia/ArtigoCard';
 
 const BG = '#060d1f';
 
-const artigosPublicados = ARTIGOS_TEOLOGIA.filter(a => a.status === 'publicado');
+const artigosPublicados = ARTIGOS_TEOLOGIA.filter(a => a.status === 'publicado' && a.area !== 'artigos');
 
 export default function TeologiaArtigosPage() {
   const navigate = useNavigate();

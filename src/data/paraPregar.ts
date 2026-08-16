@@ -7,7 +7,7 @@ export function gerarParaPregar(d: DiaDevocional): string | null {
 ---
 
 TÍTULO DO SERMÃO
-"Os Luminares do Pacto: quando o Soberano marca o tempo da Sua aliança"
+"Do Caos ao Descanso: a Palavra que Cria, Ordena e Consagra"
 
 BIG IDEA
 A Palavra soberana que separou a luz das trevas ordena o tempo para que a criação alcance seu telos no culto consagrado.

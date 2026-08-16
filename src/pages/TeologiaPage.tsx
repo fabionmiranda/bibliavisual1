@@ -88,10 +88,10 @@ const AREAS: AreaCard[] = [
   {
     slug: 'missional',
     titulo: 'Teologia Missional',
-    descricao: 'A missão como atributo do próprio Deus — Missio Dei, encarnação, plantio de igrejas, teologia das religiões e a Igreja no mundo.',
+    descricao: 'A missão como atributo do próprio Deus — Missio Dei, encarnação, plantio de igrejas, teologia das religiões e a Igreja no mundo. Inclui Missões Urbanas e Evangelização em Cidades.',
     icon: '🌍',
     cor: '#86efac',
-    tags: ['Missio Dei', 'Encarnação', 'Plantio de Igrejas', 'Religiões', 'Contextualização', 'Evangelização'],
+    tags: ['Missio Dei', 'Missões Urbanas', 'Evangelização em Cidades', 'Plantio de Igrejas', 'Contextualização', 'Encarnação', 'Religiões'],
   },
   {
     slug: 'educacional',
@@ -99,7 +99,7 @@ const AREAS: AreaCard[] = [
     descricao: 'A fé cristã como fundamento de toda educação — cosmovisão bíblica, formação integral da pessoa, família, escola e cultura.',
     icon: '🏫',
     cor: '#f9a8d4',
-    tags: ['Cosmovisão Cristã', 'Educação Clássica', 'Família e Escola', 'Formação Integral', 'Paideia', 'Cultura'],
+    tags: ['Educação Cristã', 'Cosmovisão Cristã', 'Educação Clássica', 'Família e Escola', 'Formação Integral', 'Paideia', 'Cultura'],
   },
   {
     slug: 'digital',
@@ -130,6 +130,7 @@ const AREAS: AreaCard[] = [
     badge: `${totalArtigos} publicado${totalArtigos !== 1 ? 's' : ''}`,
   },
 ];
+
 
 // ── Componente card ──────────────────────────────────────────────────────────
 
