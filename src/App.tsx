@@ -23,6 +23,8 @@ import LivrosPage from './pages/LivrosPage';
 import LibrariaPage from './pages/LibrariaPage';
 import EbookMateusPage from './pages/EbookMateusPage';
 import DevocionalPage from './pages/DevocionalPage';
+import DevocionalHubPage from './pages/DevocionalHubPage';
+import DevocionalConfessionalPage from './pages/DevocionalConfessionalPage';
 import PregacaoPage from './pages/PregacaoPage';
 import FamiliaPage, { EsbocosPage, NoivosHub, AulaInaugural, CasadosPage } from './pages/FamiliaPage';
 import EducacaoPage from './pages/EducacaoPage';
@@ -101,7 +103,9 @@ export default function App() {
           <Route path="/livraria/ebook/mateus" element={<EbookMateusPage />} />
 
           {/* Devocional */}
-          <Route path="/devocional" element={<DevocionalPage />} />
+          <Route path="/devocional" element={<DevocionalHubPage />} />
+          <Route path="/devocional/espelhado" element={<DevocionalPage />} />
+          <Route path="/devocional/confessional" element={<DevocionalConfessionalPage />} />
 
           {/* Pregação */}
           <Route path="/pregacao" element={<PregacaoPage />} />
