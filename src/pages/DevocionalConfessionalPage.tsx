@@ -312,11 +312,7 @@ export default function DevocionalConfessionalPage() {
     <div style={{ minHeight: '100vh', background: BG, color: 'rgba(255,255,255,0.92)' }}>
       <Navbar />
 
-      {/* Layout principal: conteúdo + sidebar sticky */}
-      <div style={{ maxWidth: 1200, margin: '0 auto', padding: 'clamp(88px,11vw,108px) clamp(16px,4vw,32px) 100px', display: 'flex', gap: 32, alignItems: 'flex-start' }}>
-
-        {/* Coluna principal */}
-        <div style={{ flex: 1, minWidth: 0 }}>
+      <div style={{ maxWidth: 960, margin: '0 auto', padding: 'clamp(88px,11vw,108px) clamp(16px,4vw,32px) 100px' }}>
 
         {/* Back */}
         <button
@@ -469,150 +465,111 @@ export default function DevocionalConfessionalPage() {
           </motion.div>
         )}
 
-        </div>{/* fim coluna principal */}
+      </div>
 
-        {/* Sidebar sticky — Devocional de Hoje */}
-        <motion.aside
-          initial={{ opacity: 0, x: 24 }}
+      {/* Widget fixo — Devocional de Hoje (canto superior direito, apenas desktop) */}
+      {devocionalHoje && (
+        <motion.div
+          initial={{ opacity: 0, x: 40 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.15 }}
+          transition={{ delay: 0.2, type: 'spring', stiffness: 260, damping: 28 }}
+          className="widget-hoje"
           style={{
-            width: 280,
-            flexShrink: 0,
-            position: 'sticky',
-            top: 100,
-            alignSelf: 'flex-start',
+            position: 'fixed',
+            top: 80,
+            right: 24,
+            width: 252,
+            zIndex: 90,
+            cursor: 'pointer',
+            borderRadius: 18,
+            background: 'linear-gradient(155deg, rgba(12,10,30,0.97) 0%, rgba(18,12,40,0.97) 100%)',
+            border: '1.5px solid rgba(167,139,250,0.45)',
+            padding: '16px 18px',
             display: 'flex',
             flexDirection: 'column',
-            gap: 0,
+            gap: 10,
+            boxShadow: '0 8px 40px rgba(0,0,0,0.55), 0 0 28px rgba(167,139,250,0.12)',
+            backdropFilter: 'blur(16px)',
+            transition: 'border-color 0.2s, box-shadow 0.2s, transform 0.18s',
           }}
-          className="sidebar-hoje"
+          onClick={() => setDiaSel(devocionalHoje)}
+          onHoverStart={e => {
+            const el = (e.target as HTMLElement).closest('.widget-hoje') as HTMLElement;
+            if (el) {
+              el.style.borderColor = 'rgba(167,139,250,0.75)';
+              el.style.boxShadow = '0 8px 48px rgba(0,0,0,0.60), 0 0 40px rgba(167,139,250,0.20)';
+              el.style.transform = 'translateY(-2px)';
+            }
+          }}
+          onHoverEnd={e => {
+            const el = (e.target as HTMLElement).closest('.widget-hoje') as HTMLElement;
+            if (el) {
+              el.style.borderColor = 'rgba(167,139,250,0.45)';
+              el.style.boxShadow = '0 8px 40px rgba(0,0,0,0.55), 0 0 28px rgba(167,139,250,0.12)';
+              el.style.transform = 'translateY(0)';
+            }
+          }}
         >
-          {/* Pulse dot + label */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 12 }}>
+          {/* Header: pulse + label */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: 7 }}>
             <span style={{
-              width: 8, height: 8, borderRadius: '50%',
+              width: 7, height: 7, borderRadius: '50%',
               background: 'rgba(167,139,250,1)',
-              boxShadow: '0 0 0 3px rgba(167,139,250,0.25)',
-              display: 'inline-block',
+              flexShrink: 0,
               animation: 'pulse-hoje 2s ease-in-out infinite',
             }} />
-            <span style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase', color: 'rgba(167,139,250,0.80)' }}>
-              Hoje · {dataFormatada()}
+            <span style={{ fontSize: 9, fontWeight: 900, letterSpacing: '0.26em', textTransform: 'uppercase', color: 'rgba(167,139,250,0.80)', flex: 1 }}>
+              Devocional de Hoje
+            </span>
+            <span style={{
+              fontSize: 8, fontWeight: 900, letterSpacing: '0.14em', textTransform: 'uppercase',
+              color: 'rgba(167,139,250,0.70)',
+              background: 'rgba(167,139,250,0.10)', border: '1px solid rgba(167,139,250,0.22)',
+              padding: '2px 7px', borderRadius: 99,
+            }}>
+              {devocionalHoje.data}
             </span>
           </div>
 
-          {devocionalHoje ? (
-            <div
-              onClick={() => setDiaSel(devocionalHoje)}
-              style={{
-                cursor: 'pointer',
-                borderRadius: 20,
-                background: 'linear-gradient(155deg, rgba(167,139,250,0.14) 0%, rgba(0,212,255,0.06) 100%)',
-                border: '1.5px solid rgba(167,139,250,0.50)',
-                padding: '22px 20px',
-                display: 'flex',
-                flexDirection: 'column',
-                gap: 12,
-                boxShadow: '0 0 32px rgba(167,139,250,0.14), inset 0 1px 0 rgba(255,255,255,0.06)',
-                transition: 'border-color 0.2s, box-shadow 0.2s, transform 0.18s',
-              }}
-              onMouseEnter={e => {
-                (e.currentTarget as HTMLElement).style.borderColor = 'rgba(167,139,250,0.80)';
-                (e.currentTarget as HTMLElement).style.boxShadow = '0 0 48px rgba(167,139,250,0.22), inset 0 1px 0 rgba(255,255,255,0.08)';
-                (e.currentTarget as HTMLElement).style.transform = 'translateY(-2px)';
-              }}
-              onMouseLeave={e => {
-                (e.currentTarget as HTMLElement).style.borderColor = 'rgba(167,139,250,0.50)';
-                (e.currentTarget as HTMLElement).style.boxShadow = '0 0 32px rgba(167,139,250,0.14), inset 0 1px 0 rgba(255,255,255,0.06)';
-                (e.currentTarget as HTMLElement).style.transform = 'translateY(0)';
-              }}
-            >
-              {/* Badge confissão + dia */}
-              <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
-                <span style={{
-                  fontSize: 8, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase',
-                  color: BADGE_CONF[devocionalHoje.confissao].cor,
-                  padding: '2px 10px', borderRadius: 99,
-                  background: 'rgba(255,255,255,0.04)',
-                  border: `1px solid ${BADGE_CONF[devocionalHoje.confissao].cor}50`,
-                }}>
-                  {BADGE_CONF[devocionalHoje.confissao].label}
-                </span>
-                <span style={{ fontSize: 10, color: 'rgba(210,205,255,0.65)', fontWeight: 700 }}>
-                  Dia {devocionalHoje.dia} · {devocionalHoje.data}
-                </span>
-              </div>
+          {/* Badge confissão */}
+          <span style={{
+            alignSelf: 'flex-start',
+            fontSize: 8, fontWeight: 900, letterSpacing: '0.16em', textTransform: 'uppercase',
+            color: BADGE_CONF[devocionalHoje.confissao].cor,
+            padding: '2px 9px', borderRadius: 99,
+            background: 'rgba(255,255,255,0.04)',
+            border: `1px solid ${BADGE_CONF[devocionalHoje.confissao].cor}45`,
+          }}>
+            {BADGE_CONF[devocionalHoje.confissao].label} · {devocionalHoje.capitulo}
+          </span>
 
-              {/* Capítulo */}
-              <div style={{ fontSize: 10, color: 'rgba(167,139,250,0.70)', fontWeight: 800, letterSpacing: '0.10em', textTransform: 'uppercase' }}>
-                {devocionalHoje.capitulo}
-              </div>
+          {/* Tema */}
+          <div style={{ fontSize: 13, fontWeight: 900, lineHeight: 1.25, color: '#fff' }}>
+            {devocionalHoje.tema}
+          </div>
 
-              {/* Tema */}
-              <div style={{
-                fontSize: 15, fontWeight: 900, lineHeight: 1.22, color: '#fff',
-              }}>
-                {devocionalHoje.tema}
-              </div>
+          {/* Versículo */}
+          <div style={{ fontSize: 10, color: COR, fontWeight: 700, opacity: 0.88 }}>
+            {devocionalHoje.versiculo}
+          </div>
 
-              {/* Versículo */}
-              <div style={{ fontSize: 11, color: COR, fontWeight: 700, opacity: 0.90 }}>
-                {devocionalHoje.versiculo}
-              </div>
-
-              {/* Prévia da reflexão */}
-              <p style={{
-                fontSize: 12, color: 'rgba(225,220,255,0.78)', lineHeight: 1.70, margin: 0,
-                display: '-webkit-box', WebkitLineClamp: 4, WebkitBoxOrient: 'vertical', overflow: 'hidden',
-              }}>
-                {devocionalHoje.reflexao}
-              </p>
-
-              {/* CTA */}
-              <div style={{
-                display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-                marginTop: 4, paddingTop: 12,
-                borderTop: '1px solid rgba(167,139,250,0.18)',
-              }}>
-                <span style={{ fontSize: 11, fontWeight: 900, color: COR, letterSpacing: '0.06em' }}>
-                  Abrir devocional →
-                </span>
-                <span style={{
-                  fontSize: 8, fontWeight: 900, letterSpacing: '0.16em', textTransform: 'uppercase',
-                  color: 'rgba(167,139,250,0.75)',
-                  background: 'rgba(167,139,250,0.12)', border: '1px solid rgba(167,139,250,0.25)',
-                  padding: '3px 8px', borderRadius: 99,
-                }}>
-                  ✦ Hoje
-                </span>
-              </div>
-            </div>
-          ) : (
-            <div style={{
-              borderRadius: 20,
-              background: 'rgba(167,139,250,0.04)',
-              border: '1.5px solid rgba(167,139,250,0.15)',
-              padding: '22px 20px',
-              textAlign: 'center',
-            }}>
-              <div style={{ fontSize: 28, marginBottom: 10 }}>🔜</div>
-              <div style={{ fontSize: 13, fontWeight: 700, color: 'rgba(210,205,255,0.70)' }}>
-                Dia {diaHoje} em breve
-              </div>
-            </div>
-          )}
-        </motion.aside>
-
-      </div>{/* fim layout */}
+          {/* CTA */}
+          <div style={{
+            paddingTop: 10, borderTop: '1px solid rgba(167,139,250,0.16)',
+            fontSize: 11, fontWeight: 900, color: COR, letterSpacing: '0.06em',
+          }}>
+            Abrir devocional →
+          </div>
+        </motion.div>
+      )}
 
       <style>{`
         @keyframes pulse-hoje {
-          0%, 100% { box-shadow: 0 0 0 3px rgba(167,139,250,0.25); }
-          50% { box-shadow: 0 0 0 6px rgba(167,139,250,0.10); }
+          0%, 100% { box-shadow: 0 0 0 3px rgba(167,139,250,0.28); }
+          50% { box-shadow: 0 0 0 6px rgba(167,139,250,0.08); }
         }
-        @media (max-width: 760px) {
-          .sidebar-hoje { display: none !important; }
+        @media (max-width: 900px) {
+          .widget-hoje { display: none !important; }
         }
       `}</style>
 
