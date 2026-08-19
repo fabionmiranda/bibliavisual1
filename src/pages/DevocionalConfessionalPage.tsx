@@ -54,15 +54,17 @@ function Introducao({ onClose }: { onClose: () => void }) {
         <button
           onClick={onClose}
           style={{
-            background: COR_BG,
-            border: `1.5px solid ${COR_BORDA_H}`,
+            background: 'linear-gradient(135deg, rgba(167,139,250,0.18) 0%, rgba(167,139,250,0.08) 100%)',
+            border: `2px solid ${COR_BORDA_H}`,
             borderRadius: 99,
-            padding: '10px 28px',
+            padding: '12px 36px',
             color: COR,
-            fontSize: 13,
+            fontSize: 14,
             fontWeight: 900,
             cursor: 'pointer',
-            letterSpacing: '0.08em',
+            letterSpacing: '0.10em',
+            animation: 'pulse-btn 2.2s ease-in-out infinite',
+            boxShadow: '0 0 0 0 rgba(167,139,250,0.45)',
           }}
         >
           Ir para os Devocionais →
@@ -334,7 +336,7 @@ export default function DevocionalConfessionalPage() {
             background: 'linear-gradient(135deg, #fff 0%, rgba(167,139,250,1) 100%)',
             WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
           }}>
-            365 Dias de Teologia Histórica
+            365 Dias de Confessionalidade Bíblica para sua vida
           </h1>
           <p style={{ fontSize: 'clamp(14px,1.9vw,16px)', color: 'rgba(210,205,255,0.78)', lineHeight: 1.75, maxWidth: 520, margin: '0 auto' }}>
             Confissão Batista de 1689 e Confissão de Fé de Westminster — aplicadas ao cotidiano cristão.
@@ -439,11 +441,11 @@ export default function DevocionalConfessionalPage() {
                       Dia {d.dia} · {d.data}
                     </span>
                     <span style={{
-                      fontSize: 9, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase',
+                      fontSize: 9, fontWeight: 900, letterSpacing: '0.10em', textTransform: 'uppercase',
                       color: badge.cor, padding: '2px 8px', borderRadius: 99,
                       background: 'rgba(255,255,255,0.04)', border: `1px solid ${badge.cor}40`,
-                      flexShrink: 0,
-                    }}>{badge.label}</span>
+                      flexShrink: 0, maxWidth: 160, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap',
+                    }}>{d.capitulo.split(' — ')[0]}</span>
                   </div>
                   <div style={{ fontSize: 'clamp(14px,1.9vw,16px)', fontWeight: 800, color: '#fff', lineHeight: 1.25 }}>
                     {d.tema}
@@ -567,6 +569,10 @@ export default function DevocionalConfessionalPage() {
         @keyframes pulse-hoje {
           0%, 100% { box-shadow: 0 0 0 3px rgba(167,139,250,0.28); }
           50% { box-shadow: 0 0 0 6px rgba(167,139,250,0.08); }
+        }
+        @keyframes pulse-btn {
+          0%, 100% { box-shadow: 0 0 0 0 rgba(167,139,250,0.45), 0 4px 24px rgba(167,139,250,0.18); }
+          50% { box-shadow: 0 0 0 10px rgba(167,139,250,0.00), 0 4px 32px rgba(167,139,250,0.32); }
         }
         @media (max-width: 900px) {
           .widget-hoje { display: none !important; }
