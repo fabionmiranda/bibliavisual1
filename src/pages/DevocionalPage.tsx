@@ -4787,7 +4787,7 @@ function gerarOracao(d: DiaDevocional): string {
     return `Deus de atos visíveis, a geração que viu os prodígios devia transmiti-los. Que eu também transmita aos que vierem depois de mim o que os meus olhos viram de tua fidelidade. A testemunha ocular é responsável pela narrativa. Que eu não silencie o que Deus fez na minha vida. Amém.`;
   // [231]
   if (/bencaos e amaldicoa/i.test(p))
-    return `Pai que nos ofereces a escolha, tu nunca eliminaste o livre-arbítrio — puseste diante de nós a vida e a morte e disseste "escolhe." Que hoje eu escolha a vida. Que cada decisão minha, pequena ou grande, seja calibrada para o que te agrada — não para o que me convém. Amém.`;
+    return `Pai que nos ofereces a escolha, tu nunca eliminaste o nosso livre agir — puseste diante de nós a vida e a morte e disseste "escolhe." Que hoje eu escolha a vida. Que cada decisão minha, pequena ou grande, seja calibrada para o que te agrada — não para o que me convém. Amém.`;
   // [232]
   if (/lugar correto para a adoracao/i.test(p))
     return `Senhor que reúne o culto, a adoração não é uma prática privada e dispersa — tem lugar, tem comunidade, tem centro. Que eu não substitua a comunhão do povo reunido por devoção solitária que nunca se submete a nada além de si mesma. Amém.`;

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import Navbar from '../components/Navbar';
@@ -302,7 +302,10 @@ export default function DevocionalConfessionalPage() {
   const mesAtual = new Date().getMonth() + 1;
   const [mesSel, setMesSel] = useState(mesAtual);
   const [diaSel, setDiaSel] = useState<DiaConfessional | null>(null);
+  const [diaExpandido, setDiaExpandido] = useState<DiaConfessional | null>(null);
   const [introFechada, setIntroFechada] = useState(false);
+  const gridRef = useRef<HTMLDivElement>(null);
+  const expandidoRef = useRef<HTMLDivElement>(null);
 
   const diaHoje = diaDoAno();
   const devocionalHoje = DEVOCIONAL_CONFESSIONAL.find(d => d.dia === diaHoje) ?? null;
@@ -355,18 +358,21 @@ export default function DevocionalConfessionalPage() {
           {MESES_CONFESSIONAL.map(m => (
             <button
               key={m.mes}
-              onClick={() => setMesSel(m.mes)}
+              onClick={() => { setMesSel(m.mes); setDiaExpandido(null); }}
               style={{
-                background: mesSel === m.mes ? COR_BG : 'transparent',
-                border: `1.5px solid ${mesSel === m.mes ? COR_BORDA_H : 'rgba(167,139,250,0.15)'}`,
+                background: mesSel === m.mes
+                  ? 'linear-gradient(135deg,rgba(167,139,250,0.22) 0%,rgba(167,139,250,0.10) 100%)'
+                  : 'rgba(255,255,255,0.04)',
+                border: `1.5px solid ${mesSel === m.mes ? 'rgba(167,139,250,0.70)' : 'rgba(167,139,250,0.22)'}`,
                 borderRadius: 99,
-                padding: '6px 16px',
-                fontSize: 12,
+                padding: '7px 18px',
+                fontSize: 13,
                 fontWeight: 700,
-                color: mesSel === m.mes ? COR : 'rgba(200,200,255,0.45)',
+                color: mesSel === m.mes ? '#d4baff' : '#a89ec8',
                 cursor: 'pointer',
                 transition: 'all 0.18s',
-                letterSpacing: '0.04em',
+                letterSpacing: '0.05em',
+                boxShadow: mesSel === m.mes ? '0 0 12px rgba(167,139,250,0.18)' : 'none',
               }}
             >
               {m.nome}
@@ -380,18 +386,32 @@ export default function DevocionalConfessionalPage() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           style={{
-            background: COR_BG,
-            border: `1px solid ${COR_BORDA}`,
+            background: 'rgba(167,139,250,0.07)',
+            border: '1px solid rgba(167,139,250,0.30)',
             borderRadius: 16,
-            padding: 'clamp(16px,3vw,24px)',
+            padding: 'clamp(16px,3vw,28px)',
             marginBottom: 32,
             textAlign: 'center',
           }}
         >
-          <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(167,139,250,0.80)', marginBottom: 6 }}>
+          <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.26em', textTransform: 'uppercase', color: '#d4baff', marginBottom: 8 }}>
             Tema de {mesInfo.nome}
           </div>
-          <div style={{ fontSize: 'clamp(14px,1.9vw,16px)', color: 'rgba(220,215,255,0.80)', fontWeight: 600 }}>
+          {'artigos' in mesInfo && (
+            <div style={{
+              display: 'inline-block',
+              fontSize: 12, fontWeight: 700, letterSpacing: '0.08em',
+              color: '#c0a8f8',
+              background: 'rgba(167,139,250,0.14)',
+              border: '1px solid rgba(167,139,250,0.35)',
+              borderRadius: 99,
+              padding: '4px 16px',
+              marginBottom: 14,
+            }}>
+              {(mesInfo as any).artigos}
+            </div>
+          )}
+          <div style={{ fontSize: 'clamp(14px,1.9vw,16px)', color: '#e8e4ff', fontWeight: 500, lineHeight: 1.72 }}>
             {mesInfo.temaGeral}
           </div>
         </motion.div>
@@ -404,6 +424,7 @@ export default function DevocionalConfessionalPage() {
           </div>
         ) : (
           <motion.div
+            ref={gridRef}
             key={mesSel + '-dias'}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -415,50 +436,61 @@ export default function DevocionalConfessionalPage() {
           >
             {dias.map((d, i) => {
               const badge = BADGE_CONF[d.confissao];
+              const isJaneiro = mesSel >= 1 && mesSel <= 8;
+              const isExpandido = diaExpandido?.dia === d.dia;
               return (
                 <motion.div
                   key={d.dia}
                   initial={{ opacity: 0, y: 16 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: i * 0.04 }}
-                  onClick={() => setDiaSel(d)}
+                  onClick={() => {
+                    if (isJaneiro) {
+                      setDiaExpandido(isExpandido ? null : d);
+                      if (!isExpandido) {
+                        setTimeout(() => expandidoRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 80);
+                      }
+                    } else {
+                      setDiaSel(d);
+                    }
+                  }}
                   whileHover={{ scale: 1.02 }}
                   style={{
                     cursor: 'pointer',
                     borderRadius: 18,
-                    background: COR_BG,
-                    border: `1.5px solid ${COR_BORDA}`,
+                    background: isExpandido ? 'rgba(167,139,250,0.12)' : COR_BG,
+                    border: `1.5px solid ${isExpandido ? COR_BORDA_H : COR_BORDA}`,
                     padding: 'clamp(16px,3vw,24px)',
                     display: 'flex',
                     flexDirection: 'column',
                     gap: 10,
-                    transition: 'border-color 0.18s',
+                    transition: 'border-color 0.18s, background 0.18s',
                   }}
                   onHoverStart={() => {}}
                 >
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8 }}>
-                    <span style={{ fontSize: 11, fontWeight: 900, color: 'rgba(167,139,250,0.80)', letterSpacing: '0.08em' }}>
+                    <span style={{ fontSize: 12, fontWeight: 800, color: '#c0a8f8', letterSpacing: '0.06em' }}>
                       Dia {d.dia} · {d.data}
                     </span>
                     <span style={{
-                      fontSize: 9, fontWeight: 900, letterSpacing: '0.10em', textTransform: 'uppercase',
-                      color: badge.cor, padding: '2px 8px', borderRadius: 99,
-                      background: 'rgba(255,255,255,0.04)', border: `1px solid ${badge.cor}40`,
+                      fontSize: 10, fontWeight: 800, letterSpacing: '0.08em', textTransform: 'uppercase',
+                      color: badge.cor, padding: '2px 9px', borderRadius: 99,
+                      background: 'rgba(255,255,255,0.06)', border: `1px solid ${badge.cor}60`,
                       flexShrink: 0, maxWidth: 160, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap',
                     }}>{d.capitulo.split(' — ')[0]}</span>
                   </div>
-                  <div style={{ fontSize: 'clamp(14px,1.9vw,16px)', fontWeight: 800, color: '#fff', lineHeight: 1.25 }}>
+                  <div style={{ fontSize: 'clamp(15px,2vw,17px)', fontWeight: 800, color: '#ffffff', lineHeight: 1.28 }}>
                     {d.tema}
                   </div>
-                  <div style={{ fontSize: 12, color: COR, fontWeight: 700, opacity: 0.75 }}>
+                  <div style={{ fontSize: 13, color: '#b8a4f0', fontWeight: 700 }}>
                     {d.versiculo}
                   </div>
-                  <div style={{ fontSize: 13, color: 'rgba(220,215,255,0.78)', lineHeight: 1.60, display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
+                  <div style={{ fontSize: 14, color: '#cdc8e8', lineHeight: 1.65, display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
                     {d.reflexao}
                   </div>
                   <div style={{ marginTop: 4 }}>
-                    <span style={{ fontSize: 12, fontWeight: 900, color: COR, letterSpacing: '0.06em' }}>
-                      Ler devocional →
+                    <span style={{ fontSize: 13, fontWeight: 900, color: '#d4baff', letterSpacing: '0.06em' }}>
+                      {isJaneiro ? (isExpandido ? '↑ Fechar' : 'Ler devocional ↓') : 'Ler devocional →'}
                     </span>
                   </div>
                 </motion.div>
@@ -466,6 +498,100 @@ export default function DevocionalConfessionalPage() {
             })}
           </motion.div>
         )}
+
+        {/* Conteúdo expandido inline — apenas janeiro */}
+        <AnimatePresence>
+          {diaExpandido && mesSel >= 1 && mesSel <= 8 && (
+            <motion.div
+              ref={expandidoRef}
+              key={'expandido-' + diaExpandido.dia}
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 16 }}
+              style={{
+                marginTop: 40,
+                borderRadius: 22,
+                background: '#0b0d24',
+                border: `1.5px solid ${COR_BORDA_H}`,
+                padding: 'clamp(24px,4vw,44px)',
+                position: 'relative',
+              }}
+            >
+              {/* Botão voltar topo */}
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 24, flexWrap: 'wrap', gap: 12 }}>
+                <button
+                  onClick={() => {
+                    setDiaExpandido(null);
+                    setTimeout(() => gridRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 80);
+                  }}
+                  style={{
+                    background: COR_BG, border: `1.5px solid ${COR_BORDA_H}`, borderRadius: 99,
+                    padding: '8px 20px', color: COR, fontSize: 12, fontWeight: 900, cursor: 'pointer', letterSpacing: '0.06em',
+                  }}
+                >
+                  ↑ Voltar aos dias
+                </button>
+                <span style={{ fontSize: 12, color: 'rgba(210,205,255,0.55)', fontWeight: 700 }}>
+                  Dia {diaExpandido.dia} · {diaExpandido.data}
+                </span>
+              </div>
+
+              {/* Header */}
+              <div style={{ marginBottom: 28 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 10, flexWrap: 'wrap' }}>
+                  <span style={{
+                    fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase',
+                    color: BADGE_CONF[diaExpandido.confissao].cor, padding: '3px 12px', borderRadius: 99,
+                    background: 'rgba(255,255,255,0.05)', border: `1px solid ${BADGE_CONF[diaExpandido.confissao].cor}40`,
+                  }}>{diaExpandido.capitulo.split(' — ')[0]}</span>
+                </div>
+                <div style={{ fontSize: 11, color: 'rgba(167,139,250,0.65)', fontWeight: 700, letterSpacing: '0.10em', textTransform: 'uppercase', marginBottom: 8 }}>
+                  {diaExpandido.capitulo}
+                </div>
+                <h2 style={{ fontSize: 'clamp(20px,3vw,26px)', fontWeight: 900, color: '#fff', margin: '0 0 6px', lineHeight: 1.2 }}>
+                  {diaExpandido.tema}
+                </h2>
+                <div style={{ fontSize: 13, color: COR, fontWeight: 700, opacity: 0.80 }}>{diaExpandido.versiculo}</div>
+              </div>
+
+              {/* Conteúdo */}
+              {diaExpandido.conteudoHtml ? (
+                <div dangerouslySetInnerHTML={{ __html: diaExpandido.conteudoHtml }} />
+              ) : (
+                <>
+                  <section style={{ marginBottom: 24 }}>
+                    <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(167,139,250,0.80)', marginBottom: 10 }}>📖 Reflexão</div>
+                    <p style={{ fontSize: 'clamp(15px,2vw,16px)', color: 'rgba(220,215,255,0.82)', lineHeight: 1.80, margin: 0 }}>{diaExpandido.reflexao}</p>
+                  </section>
+                  <section style={{ marginBottom: 20, background: COR_BG, border: `1px solid ${COR_BORDA}`, borderRadius: 14, padding: 'clamp(14px,2.5vw,20px)' }}>
+                    <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: COR, marginBottom: 8 }}>✅ Aplicação</div>
+                    <p style={{ fontSize: 'clamp(14px,1.9vw,15px)', color: 'rgba(220,215,255,0.80)', lineHeight: 1.70, margin: 0 }}>{diaExpandido.aplicacao}</p>
+                  </section>
+                  <section style={{ background: 'rgba(167,139,250,0.05)', border: `1px solid ${COR_BORDA}`, borderRadius: 14, padding: 'clamp(14px,2.5vw,20px)' }}>
+                    <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: COR, marginBottom: 8 }}>🙏 Oração</div>
+                    <p style={{ fontSize: 'clamp(14px,1.9vw,15px)', color: 'rgba(220,215,255,0.82)', lineHeight: 1.75, margin: 0, fontStyle: 'italic' }}>{diaExpandido.oracao}</p>
+                  </section>
+                </>
+              )}
+
+              {/* Botão voltar rodapé */}
+              <div style={{ marginTop: 32, textAlign: 'center' }}>
+                <button
+                  onClick={() => {
+                    setDiaExpandido(null);
+                    setTimeout(() => gridRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 80);
+                  }}
+                  style={{
+                    background: COR_BG, border: `1.5px solid ${COR_BORDA_H}`, borderRadius: 99,
+                    padding: '10px 28px', color: COR, fontSize: 13, fontWeight: 900, cursor: 'pointer', letterSpacing: '0.08em',
+                  }}
+                >
+                  ↑ Voltar aos dias
+                </button>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
 
       </div>
 
