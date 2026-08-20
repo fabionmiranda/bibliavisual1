@@ -99,7 +99,7 @@ export const DEVOCIONAL_CONFESSIONAL: DiaConfessional[] = [
         <div><strong style="color:rgba(251,191,36,1);font-size:12px;letter-spacing:0.06em;text-transform:uppercase;">Era Digital</strong><p style="margin:4px 0 0;font-size:clamp(13px,1.7vw,15px);color:rgba(230,225,255,0.90);line-height:1.70;">Antes de abrir as redes sociais hoje, abra a Bíblia. A natureza já está no seu feed — mas o Evangelho não chega por algoritmo.</p></div>
       </div>
       <div style="display:flex;align-items:flex-start;gap:12px;">
-        <span style="font-size:20px;flex-shrink:0;">👨�?👩�?👧�?👦</span>
+        <span style="font-size:20px;flex-shrink:0;">👪</span>
         <div><strong style="color:rgba(251,191,36,1);font-size:12px;letter-spacing:0.06em;text-transform:uppercase;">Família</strong><p style="margin:4px 0 0;font-size:clamp(13px,1.7vw,15px);color:rgba(230,225,255,0.90);line-height:1.70;">No culto familiar de hoje, mostre pela janela ou numa foto da criação e pergunte: "Isso nos mostra que Deus existe — mas o que precisamos para ser salvos?"</p></div>
       </div>
       <div style="display:flex;align-items:flex-start;gap:12px;">
@@ -107,11 +107,11 @@ export const DEVOCIONAL_CONFESSIONAL: DiaConfessional[] = [
         <div><strong style="color:rgba(251,191,36,1);font-size:12px;letter-spacing:0.06em;text-transform:uppercase;">Filhos</strong><p style="margin:4px 0 0;font-size:clamp(13px,1.7vw,15px);color:rgba(230,225,255,0.90);line-height:1.70;">Diga à criança: "O céu estrelado mostra que Deus é grande — mas para saber que Ele te ama e quer te salvar, precisamos da Bíblia." Leia Salmo 19.1 e 7 juntos.</p></div>
       </div>
       <div style="display:flex;align-items:flex-start;gap:12px;">
-        <span style="font-size:20px;flex-shrink:0;">👨</span>
+        <span style="font-size:20px;flex-shrink:0;">👪</span>
         <div><strong style="color:rgba(251,191,36,1);font-size:12px;letter-spacing:0.06em;text-transform:uppercase;">Homens</strong><p style="margin:4px 0 0;font-size:clamp(13px,1.7vw,15px);color:rgba(230,225,255,0.90);line-height:1.70;">Um homem que lidera com a razão, mas sem a Palavra, lidera para o precipício. Abra a Escritura antes das decisões do dia — não apenas a intuição.</p></div>
       </div>
       <div style="display:flex;align-items:flex-start;gap:12px;">
-        <span style="font-size:20px;flex-shrink:0;">👩</span>
+        <span style="font-size:20px;flex-shrink:0;">👪</span>
         <div><strong style="color:rgba(251,191,36,1);font-size:12px;letter-spacing:0.06em;text-transform:uppercase;">Mulheres</strong><p style="margin:4px 0 0;font-size:clamp(13px,1.7vw,15px);color:rgba(230,225,255,0.90);line-height:1.70;">A sensibilidade espiritual é um dom — mas precisa ser ancorada na Palavra. Hoje, teste uma impressão espiritual que você carrega: ela tem base bíblica?</p></div>
       </div>
       <div style="display:flex;align-items:flex-start;gap:12px;">
@@ -223,7 +223,7 @@ export const DEVOCIONAL_CONFESSIONAL: DiaConfessional[] = [
         <div><strong style="color:rgba(251,191,36,1);font-size:12px;letter-spacing:0.06em;text-transform:uppercase;">Era Digital</strong><p style="margin:4px 0 0;font-size:clamp(13px,1.7vw,15px);color:rgba(230,225,255,0.90);line-height:1.70;">Quando um vídeo viral disser "siga sua intuição espiritual", pergunte-se: isso é revelação geral ou especial? O algoritmo não prega o Evangelho — a Igreja prega.</p></div>
       </div>
       <div style="display:flex;align-items:flex-start;gap:12px;">
-        <span style="font-size:20px;flex-shrink:0;">👨�?👩�?👧�?👦</span>
+        <span style="font-size:20px;flex-shrink:0;">👪</span>
         <div><strong style="color:rgba(251,191,36,1);font-size:12px;letter-spacing:0.06em;text-transform:uppercase;">Família</strong><p style="margin:4px 0 0;font-size:clamp(13px,1.7vw,15px);color:rgba(230,225,255,0.90);line-height:1.70;">Estabeleça o hábito de ler a Bíblia em família antes de qualquer tela. A Palavra não chega por osmose — ela precisa ser lida, ouvida e repetida em casa (Dt 6.7).</p></div>
       </div>
       <div style="display:flex;align-items:flex-start;gap:12px;">
@@ -231,11 +231,11 @@ export const DEVOCIONAL_CONFESSIONAL: DiaConfessional[] = [
         <div><strong style="color:rgba(251,191,36,1);font-size:12px;letter-spacing:0.06em;text-transform:uppercase;">Filhos</strong><p style="margin:4px 0 0;font-size:clamp(13px,1.7vw,15px);color:rgba(230,225,255,0.90);line-height:1.70;">Ensine a criança a diferença entre "sentir que Deus existe" e "saber que Jesus salva". O primeiro vem da natureza; o segundo, da Bíblia e da pregação.</p></div>
       </div>
       <div style="display:flex;align-items:flex-start;gap:12px;">
-        <span style="font-size:20px;flex-shrink:0;">👨</span>
+        <span style="font-size:20px;flex-shrink:0;">👪</span>
         <div><strong style="color:rgba(251,191,36,1);font-size:12px;letter-spacing:0.06em;text-transform:uppercase;">Homens</strong><p style="margin:4px 0 0;font-size:clamp(13px,1.7vw,15px);color:rgba(230,225,255,0.90);line-height:1.70;">Homem, você não salva sua família com bom senso ou instinto moral — mas com a Palavra pregada e vivida. Lidere o culto doméstico esta semana.</p></div>
       </div>
       <div style="display:flex;align-items:flex-start;gap:12px;">
-        <span style="font-size:20px;flex-shrink:0;">👩</span>
+        <span style="font-size:20px;flex-shrink:0;">👪</span>
         <div><strong style="color:rgba(251,191,36,1);font-size:12px;letter-spacing:0.06em;text-transform:uppercase;">Mulheres</strong><p style="margin:4px 0 0;font-size:clamp(13px,1.7vw,15px);color:rgba(230,225,255,0.90);line-height:1.70;">Identifique uma intuição espiritual que você carrega e submeta-a hoje à Escritura: ela confirma ou corrige o que a Palavra ensina? A fé genuína é sempre examinada pela Palavra.</p></div>
       </div>
       <div style="display:flex;align-items:flex-start;gap:12px;">
@@ -381,10 +381,10 @@ function bloco(dc: DiaCompacto): DiaConfessional {
     </div>
     <div style="padding:clamp(14px,2.5vw,22px);display:flex;flex-direction:column;gap:18px;">
       <div style="display:flex;align-items:flex-start;gap:12px;"><span style="font-size:20px;flex-shrink:0;">📱</span><div><strong style="color:#ffd436;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;">Era Digital</strong><p style="margin:6px 0 0;font-size:clamp(14px,1.8vw,16px);color:#f0eeff;font-weight:500;line-height:1.80;">${dc.aplicacoes.digital}</p></div></div>
-      <div style="display:flex;align-items:flex-start;gap:12px;"><span style="font-size:20px;flex-shrink:0;">👨�?👩�?👧�?👦</span><div><strong style="color:#ffd436;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;">Família</strong><p style="margin:6px 0 0;font-size:clamp(14px,1.8vw,16px);color:#f0eeff;font-weight:500;line-height:1.80;">${dc.aplicacoes.familia}</p></div></div>
+      <div style="display:flex;align-items:flex-start;gap:12px;"><span style="font-size:20px;flex-shrink:0;">👪</span><div><strong style="color:#ffd436;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;">Família</strong><p style="margin:6px 0 0;font-size:clamp(14px,1.8vw,16px);color:#f0eeff;font-weight:500;line-height:1.80;">${dc.aplicacoes.familia}</p></div></div>
       <div style="display:flex;align-items:flex-start;gap:12px;"><span style="font-size:20px;flex-shrink:0;">🧒</span><div><strong style="color:#ffd436;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;">Filhos</strong><p style="margin:6px 0 0;font-size:clamp(14px,1.8vw,16px);color:#f0eeff;font-weight:500;line-height:1.80;">${dc.aplicacoes.filhos}</p></div></div>
-      <div style="display:flex;align-items:flex-start;gap:12px;"><span style="font-size:20px;flex-shrink:0;">👨</span><div><strong style="color:#ffd436;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;">Homens</strong><p style="margin:6px 0 0;font-size:clamp(14px,1.8vw,16px);color:#f0eeff;font-weight:500;line-height:1.80;">${dc.aplicacoes.homens}</p></div></div>
-      <div style="display:flex;align-items:flex-start;gap:12px;"><span style="font-size:20px;flex-shrink:0;">👩</span><div><strong style="color:#ffd436;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;">Mulheres</strong><p style="margin:6px 0 0;font-size:clamp(14px,1.8vw,16px);color:#f0eeff;font-weight:500;line-height:1.80;">${dc.aplicacoes.mulheres}</p></div></div>
+      <div style="display:flex;align-items:flex-start;gap:12px;"><span style="font-size:20px;flex-shrink:0;">👪</span><div><strong style="color:#ffd436;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;">Homens</strong><p style="margin:6px 0 0;font-size:clamp(14px,1.8vw,16px);color:#f0eeff;font-weight:500;line-height:1.80;">${dc.aplicacoes.homens}</p></div></div>
+      <div style="display:flex;align-items:flex-start;gap:12px;"><span style="font-size:20px;flex-shrink:0;">👪</span><div><strong style="color:#ffd436;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;">Mulheres</strong><p style="margin:6px 0 0;font-size:clamp(14px,1.8vw,16px);color:#f0eeff;font-weight:500;line-height:1.80;">${dc.aplicacoes.mulheres}</p></div></div>
       <div style="display:flex;align-items:flex-start;gap:12px;"><span style="font-size:20px;flex-shrink:0;">⛪</span><div><strong style="color:#ffd436;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;">Igreja</strong><p style="margin:6px 0 0;font-size:clamp(14px,1.8vw,16px);color:#f0eeff;font-weight:500;line-height:1.80;">${dc.aplicacoes.igreja}</p></div></div>
     </div>
   </div>
