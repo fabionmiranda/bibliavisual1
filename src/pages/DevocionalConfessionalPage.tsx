@@ -317,7 +317,7 @@ export default function DevocionalConfessionalPage() {
     <div style={{ minHeight: '100vh', background: BG, color: 'rgba(255,255,255,0.92)' }}>
       <Navbar />
 
-      <div style={{ maxWidth: 960, margin: '0 auto', padding: 'clamp(88px,11vw,108px) clamp(16px,4vw,32px) 100px' }}>
+      <div style={{ maxWidth: 960, margin: '0 auto', padding: 'clamp(88px,11vw,108px) clamp(16px,4vw,32px) calc(80px + env(safe-area-inset-bottom))' }}>
 
         {/* Back */}
         <button
@@ -454,19 +454,19 @@ export default function DevocionalConfessionalPage() {
                       setDiaSel(d);
                     }
                   }}
-                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
                   style={{
                     cursor: 'pointer',
                     borderRadius: 18,
                     background: isExpandido ? 'rgba(167,139,250,0.12)' : COR_BG,
                     border: `1.5px solid ${isExpandido ? COR_BORDA_H : COR_BORDA}`,
-                    padding: 'clamp(16px,3vw,24px)',
+                    padding: 'clamp(14px,3vw,24px)',
                     display: 'flex',
                     flexDirection: 'column',
                     gap: 10,
                     transition: 'border-color 0.18s, background 0.18s',
+                    WebkitTapHighlightColor: 'transparent',
                   }}
-                  onHoverStart={() => {}}
                 >
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8 }}>
                     <span style={{ fontSize: 12, fontWeight: 800, color: '#c0a8f8', letterSpacing: '0.06em' }}>

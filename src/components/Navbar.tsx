@@ -53,7 +53,13 @@ export default function Navbar() {
   return (
     <nav
       className="fixed top-0 left-0 right-0 z-50 border-b border-white/[0.08]"
-      style={{ backdropFilter: 'blur(20px)', background: 'rgba(5,7,20,0.90)' }}
+      style={{
+        backdropFilter: 'blur(20px)',
+        background: 'rgba(5,7,20,0.90)',
+        paddingTop: 'env(safe-area-inset-top)',
+        paddingLeft: 'env(safe-area-inset-left)',
+        paddingRight: 'env(safe-area-inset-right)',
+      }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-[68px] lg:h-20">
@@ -186,7 +192,14 @@ export default function Navbar() {
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.2 }}
             className="md:hidden absolute top-[68px] left-0 right-0 border-t border-white/[0.08]"
-            style={{ background: 'rgba(5,7,20,0.97)', backdropFilter: 'blur(24px)' }}
+            style={{
+              background: 'rgba(5,7,20,0.97)',
+              backdropFilter: 'blur(24px)',
+              maxHeight: 'calc(100dvh - 68px)',
+              overflowY: 'auto',
+              WebkitOverflowScrolling: 'touch' as any,
+              paddingBottom: 'env(safe-area-inset-bottom)',
+            }}
           >
             <div className="max-w-7xl mx-auto px-4 py-5 flex flex-col gap-1.5">
 
