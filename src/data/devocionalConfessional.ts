@@ -34,14 +34,14 @@ export const DEVOCIONAL_CONFESSIONAL: DiaConfessional[] = [
     </div>
     <div style="padding:clamp(16px,3vw,24px);">
       <p style="margin:0 0 10px;font-size:clamp(15px,1.9vw,16px);color:rgba(240,235,255,0.95);line-height:1.80;font-style:italic;">"Ainda que a luz da natureza e as obras da criação e da providência manifestem tão amplamente a bondade, sabedoria e poder de Deus, que os homens ficam sem desculpa; todavia, elas não são suficientes para proporcionar aquele conhecimento de Deus e de sua vontade, que é necessário para a salvação. Por isso se agradou ao Senhor, em várias épocas e de diferentes modos, revelar-se a si mesmo e declarar a sua vontade à sua Igreja; e depois, para melhor preservação e propagação da verdade e para uma mais sólida firmeza e consolação da Igreja contra a corrupção da carne, e a maldade de Satanás e do mundo, quis que essas revelações fossem escritas; o que torna a Sagrada Escritura mui necessária, porquanto cessaram aquelas formas anteriores pelas quais Deus revelou sua vontade ao seu povo."</p>
-      <p style="margin:0;font-size:12px;color:rgba(167,139,250,0.80);font-weight:700;">CB 1689 1.1<sup style="font-size:10px;color:rgba(167,139,250,1);font-weight:900;margin-left:1px;">⁷</sup></p>
+      <p style="margin:0;font-size:12px;color:rgba(167,139,250,0.80);font-weight:700;">CB 1689 1.1<sup style="font-size:10px;color:rgba(167,139,250,1);font-weight:900;margin-left:1px;">�?�</sup></p>
     </div>
   </div>
 
   <!-- CFW 1.1 — Comparação -->
   <div style="margin:0 0 28px;border-radius:16px;background:rgba(167,139,250,0.04);border:1px solid rgba(167,139,250,0.30);overflow:hidden;">
     <div style="padding:10px 20px;background:rgba(167,139,250,0.08);border-bottom:1px solid rgba(167,139,250,0.16);display:flex;align-items:center;gap:10px;">
-      <span style="font-size:18px;">🏰</span>
+      <span style="font-size:18px;">�?�</span>
       <span style="font-size:10px;font-weight:900;letter-spacing:0.24em;text-transform:uppercase;color:rgba(167,139,250,0.90);">Confissão de Westminster · Comparação</span>
       <span style="margin-left:auto;font-size:10px;color:rgba(167,139,250,0.70);font-weight:700;">CFW 1.1</span>
     </div>
@@ -69,7 +69,7 @@ export const DEVOCIONAL_CONFESSIONAL: DiaConfessional[] = [
     </div>
     <div style="padding:clamp(16px,3vw,24px);">
       <p style="margin:0;font-size:clamp(14px,1.8vw,15px);color:rgba(230,225,255,0.90);line-height:1.80;">
-        As duas confissões abrem no mesmo ponto: existe revelação geral, <strong style="color:#fff;">suficiente para condenar, insuficiente para salvar</strong>. Muller observa que essa distinção entre <em>revelatio generalis</em> e <em>revelatio specialis</em> é herança direta da ortodoxia reformada pós-Reforma, sistematizada já em Calvino e consolidada nas confissões do século XVII<sup style="font-size:10px;color:rgba(52,211,153,1);font-weight:900;margin-left:1px;">⁸</sup>.
+        As duas confissões abrem no mesmo ponto: existe revelação geral, <strong style="color:#fff;">suficiente para condenar, insuficiente para salvar</strong>. Muller observa que essa distinção entre <em>revelatio generalis</em> e <em>revelatio specialis</em> é herança direta da ortodoxia reformada pós-Reforma, sistematizada já em Calvino e consolidada nas confissões do século XVII<sup style="font-size:10px;color:rgba(52,211,153,1);font-weight:900;margin-left:1px;">�?�</sup>.
       </p>
     </div>
   </div>
@@ -77,12 +77,12 @@ export const DEVOCIONAL_CONFESSIONAL: DiaConfessional[] = [
   <!-- Reforço confessional -->
   <div style="margin:0 0 28px;border-radius:16px;background:rgba(251,191,36,0.04);border:1px solid rgba(251,191,36,0.18);overflow:hidden;">
     <div style="padding:10px 20px;background:rgba(251,191,36,0.07);border-bottom:1px solid rgba(251,191,36,0.12);display:flex;align-items:center;gap:10px;">
-      <span style="font-size:18px;">🏛️</span>
+      <span style="font-size:18px;">�?��?</span>
       <span style="font-size:10px;font-weight:900;letter-spacing:0.24em;text-transform:uppercase;color:rgba(251,191,36,0.90);">Reforço Teológico-Confessional</span>
     </div>
     <div style="padding:clamp(16px,3vw,24px);">
       <p style="margin:0;font-size:clamp(14px,1.8vw,15px);color:rgba(230,225,255,0.90);line-height:1.80;">
-        A <strong style="color:#fff;">Segunda Confissão Helvética (1566)</strong>, de Heinrich Bullinger — um dos credos reformados mais influentes do continente antes de Westminster —, já afirmava no capítulo I que a Escritura é <em>"suficientíssima"</em> para instruir o homem em tudo que é necessário à fé e à vida piedosa, antecipando por quase um século a mesma ênfase confessional inglesa<sup style="font-size:10px;color:rgba(251,191,36,1);font-weight:900;margin-left:1px;">⁹</sup>.
+        A <strong style="color:#fff;">Segunda Confissão Helvética (1566)</strong>, de Heinrich Bullinger — um dos credos reformados mais influentes do continente antes de Westminster —, já afirmava no capítulo I que a Escritura é <em>"suficientíssima"</em> para instruir o homem em tudo que é necessário à fé e à vida piedosa, antecipando por quase um século a mesma ênfase confessional inglesa<sup style="font-size:10px;color:rgba(251,191,36,1);font-weight:900;margin-left:1px;">�?�</sup>.
       </p>
     </div>
   </div>
@@ -99,7 +99,7 @@ export const DEVOCIONAL_CONFESSIONAL: DiaConfessional[] = [
         <div><strong style="color:rgba(251,191,36,1);font-size:12px;letter-spacing:0.06em;text-transform:uppercase;">Era Digital</strong><p style="margin:4px 0 0;font-size:clamp(13px,1.7vw,15px);color:rgba(230,225,255,0.90);line-height:1.70;">Antes de abrir as redes sociais hoje, abra a Bíblia. A natureza já está no seu feed — mas o Evangelho não chega por algoritmo.</p></div>
       </div>
       <div style="display:flex;align-items:flex-start;gap:12px;">
-        <span style="font-size:20px;flex-shrink:0;">👨‍👩‍👧‍👦</span>
+        <span style="font-size:20px;flex-shrink:0;">👨�?👩�?👧�?👦</span>
         <div><strong style="color:rgba(251,191,36,1);font-size:12px;letter-spacing:0.06em;text-transform:uppercase;">Família</strong><p style="margin:4px 0 0;font-size:clamp(13px,1.7vw,15px);color:rgba(230,225,255,0.90);line-height:1.70;">No culto familiar de hoje, mostre pela janela ou numa foto da criação e pergunte: "Isso nos mostra que Deus existe — mas o que precisamos para ser salvos?"</p></div>
       </div>
       <div style="display:flex;align-items:flex-start;gap:12px;">
@@ -131,7 +131,7 @@ export const DEVOCIONAL_CONFESSIONAL: DiaConfessional[] = [
 
   <!-- Oração -->
   <div style="margin:0 0 28px;border-radius:16px;background:rgba(167,139,250,0.05);border:1px solid rgba(167,139,250,0.18);padding:clamp(16px,3vw,22px);">
-    <div style="font-size:10px;font-weight:900;letter-spacing:0.22em;text-transform:uppercase;color:rgba(167,139,250,0.85);margin-bottom:10px;">🙏 Oração</div>
+    <div style="font-size:10px;font-weight:900;letter-spacing:0.22em;text-transform:uppercase;color:rgba(167,139,250,0.85);margin-bottom:10px;">�? Oração</div>
     <p style="margin:0;font-size:clamp(14px,1.9vw,15px);color:rgba(230,225,255,0.88);line-height:1.75;font-style:italic;">
       Senhor, obrigado por não me deixares apenas com a luz da natureza, mas por teres falado claramente em Tua Palavra escrita. Amém.
     </p>
@@ -139,7 +139,7 @@ export const DEVOCIONAL_CONFESSIONAL: DiaConfessional[] = [
 
   <!-- Notas -->
   <div style="margin-top:28px;border-top:1px solid rgba(167,139,250,0.12);padding-top:18px;">
-    <div style="font-size:10px;font-weight:900;letter-spacing:0.22em;text-transform:uppercase;color:rgba(167,139,250,0.80);margin-bottom:10px;">🗒️ Notas</div>
+    <div style="font-size:10px;font-weight:900;letter-spacing:0.22em;text-transform:uppercase;color:rgba(167,139,250,0.80);margin-bottom:10px;">🗒�? Notas</div>
     <ol start="7" style="margin:0;padding:0 0 0 18px;display:flex;flex-direction:column;gap:6px;">
       <li style="font-size:12px;color:rgba(210,205,255,0.75);line-height:1.65;">SCHAFF, Philip (Ed.). <em>The Creeds of Christendom</em>. v. 3. Grand Rapids: Baker Book House, 1996.</li>
       <li style="font-size:12px;color:rgba(210,205,255,0.75);line-height:1.65;">MULLER, Richard A. <em>Post-Reformation Reformed Dogmatics</em>. v. 1. Grand Rapids: Baker Academic, 2003.</li>
@@ -178,7 +178,7 @@ export const DEVOCIONAL_CONFESSIONAL: DiaConfessional[] = [
   <!-- CFW 1.1 — Comparação -->
   <div style="margin:0 0 28px;border-radius:16px;background:rgba(167,139,250,0.04);border:1px solid rgba(167,139,250,0.30);overflow:hidden;">
     <div style="padding:10px 20px;background:rgba(167,139,250,0.08);border-bottom:1px solid rgba(167,139,250,0.16);display:flex;align-items:center;gap:10px;">
-      <span style="font-size:18px;">🏰</span>
+      <span style="font-size:18px;">�?�</span>
       <span style="font-size:10px;font-weight:900;letter-spacing:0.24em;text-transform:uppercase;color:rgba(167,139,250,0.90);">Confissão de Westminster · Comparação</span>
       <span style="margin-left:auto;font-size:10px;color:rgba(167,139,250,0.70);font-weight:700;">CFW 1.1</span>
     </div>
@@ -206,7 +206,7 @@ export const DEVOCIONAL_CONFESSIONAL: DiaConfessional[] = [
     </div>
     <div style="padding:clamp(16px,3vw,24px);">
       <p style="margin:0;font-size:clamp(14px,1.8vw,15px);color:rgba(230,225,255,0.90);line-height:1.80;">
-        Você já tratou sentimentos religiosos vagos ou intuições espirituais como equivalentes ao <strong style="color:#fff;">conhecimento salvador</strong> que só vem da Palavra pregada e escrita? Beeke lembra que, para os puritanos, a experiência religiosa autêntica era sempre <em>subsequente e submissa</em> à Palavra — nunca uma fonte paralela de autoridade<sup style="font-size:10px;color:rgba(52,211,153,1);font-weight:900;margin-left:1px;">¹⁰</sup>.
+        Você já tratou sentimentos religiosos vagos ou intuições espirituais como equivalentes ao <strong style="color:#fff;">conhecimento salvador</strong> que só vem da Palavra pregada e escrita? Beeke lembra que, para os puritanos, a experiência religiosa autêntica era sempre <em>subsequente e submissa</em> à Palavra — nunca uma fonte paralela de autoridade<sup style="font-size:10px;color:rgba(52,211,153,1);font-weight:900;margin-left:1px;">¹�?�</sup>.
       </p>
     </div>
   </div>
@@ -223,7 +223,7 @@ export const DEVOCIONAL_CONFESSIONAL: DiaConfessional[] = [
         <div><strong style="color:rgba(251,191,36,1);font-size:12px;letter-spacing:0.06em;text-transform:uppercase;">Era Digital</strong><p style="margin:4px 0 0;font-size:clamp(13px,1.7vw,15px);color:rgba(230,225,255,0.90);line-height:1.70;">Quando um vídeo viral disser "siga sua intuição espiritual", pergunte-se: isso é revelação geral ou especial? O algoritmo não prega o Evangelho — a Igreja prega.</p></div>
       </div>
       <div style="display:flex;align-items:flex-start;gap:12px;">
-        <span style="font-size:20px;flex-shrink:0;">👨‍👩‍👧‍👦</span>
+        <span style="font-size:20px;flex-shrink:0;">👨�?👩�?👧�?👦</span>
         <div><strong style="color:rgba(251,191,36,1);font-size:12px;letter-spacing:0.06em;text-transform:uppercase;">Família</strong><p style="margin:4px 0 0;font-size:clamp(13px,1.7vw,15px);color:rgba(230,225,255,0.90);line-height:1.70;">Estabeleça o hábito de ler a Bíblia em família antes de qualquer tela. A Palavra não chega por osmose — ela precisa ser lida, ouvida e repetida em casa (Dt 6.7).</p></div>
       </div>
       <div style="display:flex;align-items:flex-start;gap:12px;">
@@ -247,7 +247,7 @@ export const DEVOCIONAL_CONFESSIONAL: DiaConfessional[] = [
 
   <!-- Oração -->
   <div style="margin:0 0 28px;border-radius:16px;background:rgba(167,139,250,0.05);border:1px solid rgba(167,139,250,0.18);padding:clamp(16px,3vw,22px);">
-    <div style="font-size:10px;font-weight:900;letter-spacing:0.22em;text-transform:uppercase;color:rgba(167,139,250,0.85);margin-bottom:10px;">🙏 Oração</div>
+    <div style="font-size:10px;font-weight:900;letter-spacing:0.22em;text-transform:uppercase;color:rgba(167,139,250,0.85);margin-bottom:10px;">�? Oração</div>
     <p style="margin:0;font-size:clamp(14px,1.9vw,15px);color:rgba(230,225,255,0.88);line-height:1.75;font-style:italic;">
       Senhor, obrigado por não me deixares apenas com a luz da natureza, mas por teres falado claramente em Tua Palavra escrita. Amém.
     </p>
@@ -255,7 +255,7 @@ export const DEVOCIONAL_CONFESSIONAL: DiaConfessional[] = [
 
   <!-- Notas -->
   <div style="margin-top:28px;border-top:1px solid rgba(167,139,250,0.12);padding-top:18px;">
-    <div style="font-size:10px;font-weight:900;letter-spacing:0.22em;text-transform:uppercase;color:rgba(167,139,250,0.80);margin-bottom:10px;">🗒️ Notas</div>
+    <div style="font-size:10px;font-weight:900;letter-spacing:0.22em;text-transform:uppercase;color:rgba(167,139,250,0.80);margin-bottom:10px;">🗒�? Notas</div>
     <ol start="10" style="margin:0;padding:0 0 0 18px;display:flex;flex-direction:column;gap:6px;">
       <li style="font-size:12px;color:rgba(210,205,255,0.75);line-height:1.65;">BEEKE, Joel R. <em>Puritan Reformed Spirituality</em>. Darlington: Evangelical Press, 2004.</li>
     </ol>
@@ -324,7 +324,7 @@ function bloco(dc: DiaCompacto): DiaConfessional {
     ? `
   <div style="margin:0 0 28px;border-radius:16px;background:rgba(167,139,250,0.10);border:1px solid rgba(167,139,250,0.40);overflow:hidden;">
     <div style="padding:10px 20px;background:rgba(167,139,250,0.16);border-bottom:1px solid rgba(167,139,250,0.28);display:flex;align-items:center;gap:10px;">
-      <span style="font-size:18px;">🏰</span>
+      <span style="font-size:18px;">�?�</span>
       <span style="font-size:11px;font-weight:900;letter-spacing:0.20em;text-transform:uppercase;color:#d4baff;">Confissão de Westminster · Comparação</span>
       <span style="margin-left:auto;font-size:11px;color:#b89ee8;font-weight:700;">${dc.cfwRef ?? ''}</span>
     </div>
@@ -367,7 +367,7 @@ function bloco(dc: DiaCompacto): DiaConfessional {
   </div>
   <div style="margin:0 0 28px;border-radius:16px;background:rgba(251,191,36,0.08);border:1px solid rgba(251,191,36,0.32);overflow:hidden;">
     <div style="padding:10px 20px;background:rgba(251,191,36,0.14);border-bottom:1px solid rgba(251,191,36,0.22);display:flex;align-items:center;gap:10px;">
-      <span style="font-size:18px;">🏛️</span>
+      <span style="font-size:18px;">�?��?</span>
       <span style="font-size:11px;font-weight:900;letter-spacing:0.20em;text-transform:uppercase;color:#ffd436;">${reforcoLabel}</span>
     </div>
     <div style="padding:clamp(16px,3vw,24px);">
@@ -381,7 +381,7 @@ function bloco(dc: DiaCompacto): DiaConfessional {
     </div>
     <div style="padding:clamp(14px,2.5vw,22px);display:flex;flex-direction:column;gap:18px;">
       <div style="display:flex;align-items:flex-start;gap:12px;"><span style="font-size:20px;flex-shrink:0;">📱</span><div><strong style="color:#ffd436;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;">Era Digital</strong><p style="margin:6px 0 0;font-size:clamp(14px,1.8vw,16px);color:#f0eeff;font-weight:500;line-height:1.80;">${dc.aplicacoes.digital}</p></div></div>
-      <div style="display:flex;align-items:flex-start;gap:12px;"><span style="font-size:20px;flex-shrink:0;">👨‍👩‍👧‍👦</span><div><strong style="color:#ffd436;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;">Família</strong><p style="margin:6px 0 0;font-size:clamp(14px,1.8vw,16px);color:#f0eeff;font-weight:500;line-height:1.80;">${dc.aplicacoes.familia}</p></div></div>
+      <div style="display:flex;align-items:flex-start;gap:12px;"><span style="font-size:20px;flex-shrink:0;">👨�?👩�?👧�?👦</span><div><strong style="color:#ffd436;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;">Família</strong><p style="margin:6px 0 0;font-size:clamp(14px,1.8vw,16px);color:#f0eeff;font-weight:500;line-height:1.80;">${dc.aplicacoes.familia}</p></div></div>
       <div style="display:flex;align-items:flex-start;gap:12px;"><span style="font-size:20px;flex-shrink:0;">🧒</span><div><strong style="color:#ffd436;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;">Filhos</strong><p style="margin:6px 0 0;font-size:clamp(14px,1.8vw,16px);color:#f0eeff;font-weight:500;line-height:1.80;">${dc.aplicacoes.filhos}</p></div></div>
       <div style="display:flex;align-items:flex-start;gap:12px;"><span style="font-size:20px;flex-shrink:0;">👨</span><div><strong style="color:#ffd436;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;">Homens</strong><p style="margin:6px 0 0;font-size:clamp(14px,1.8vw,16px);color:#f0eeff;font-weight:500;line-height:1.80;">${dc.aplicacoes.homens}</p></div></div>
       <div style="display:flex;align-items:flex-start;gap:12px;"><span style="font-size:20px;flex-shrink:0;">👩</span><div><strong style="color:#ffd436;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;">Mulheres</strong><p style="margin:6px 0 0;font-size:clamp(14px,1.8vw,16px);color:#f0eeff;font-weight:500;line-height:1.80;">${dc.aplicacoes.mulheres}</p></div></div>
@@ -389,11 +389,11 @@ function bloco(dc: DiaCompacto): DiaConfessional {
     </div>
   </div>
   <div style="margin:0 0 28px;border-radius:16px;background:rgba(167,139,250,0.10);border:1px solid rgba(167,139,250,0.32);padding:clamp(16px,3vw,22px);">
-    <div style="font-size:11px;font-weight:900;letter-spacing:0.20em;text-transform:uppercase;color:#d4baff;margin-bottom:12px;">🙏 Oração</div>
+    <div style="font-size:11px;font-weight:900;letter-spacing:0.20em;text-transform:uppercase;color:#d4baff;margin-bottom:12px;">�? Oração</div>
     <p style="margin:0;font-size:clamp(15px,1.9vw,17px);color:#f0eeff;font-weight:500;line-height:1.90;font-style:italic;">${dc.oracao}</p>
   </div>
   <div style="margin-top:28px;border-top:1px solid rgba(167,139,250,0.22);padding-top:20px;">
-    <div style="font-size:11px;font-weight:900;letter-spacing:0.20em;text-transform:uppercase;color:#d4baff;margin-bottom:12px;">🗒️ Notas</div>
+    <div style="font-size:11px;font-weight:900;letter-spacing:0.20em;text-transform:uppercase;color:#d4baff;margin-bottom:12px;">🗒�? Notas</div>
     <ol start="${dc.notaInicio}" style="margin:0;padding:0 0 0 18px;display:flex;flex-direction:column;gap:8px;">${notasHtml}</ol>
   </div>
 </div>
@@ -418,7 +418,7 @@ function blocoW(dc: DiaCompacto): DiaConfessional {
 
 function gerarDiasJaneiro3a31(): DiaConfessional[] {
   const dias: DiaCompacto[] = [
-    // ==================== CAPÍTULO I — DAS ESCRITURAS SAGRADAS ====================
+    // ==================== CAP�?TULO I — DAS ESCRITURAS SAGRADAS ====================
     {
       dia: 3, data: '3 jan', tema: 'A Bíblia que Você Tem É Completa',
       capitulo: 'CB 1689 1.2 — O Cânon',
@@ -662,7 +662,7 @@ function gerarDiasJaneiro3a31(): DiaConfessional[] {
       ],
       notaInicio: 27,
     },
-    // ==================== CAPÍTULO II — DE DEUS E DA SANTÍSSIMA TRINDADE ====================
+    // ==================== CAP�?TULO II — DE DEUS E DA SANT�?SSIMA TRINDADE ====================
     {
       dia: 12, data: '12 jan', tema: 'Deus Não É Quem Você Imaginou',
       capitulo: 'CB 1689 2.1 — Atributos de Deus',
@@ -932,7 +932,7 @@ function gerarDiasJaneiro3a31(): DiaConfessional[] {
       ],
       notaInicio: 46,
     },
-    // ==================== CAPÍTULO III — DO DECRETO DE DEUS ====================
+    // ==================== CAP�?TULO III — DO DECRETO DE DEUS ====================
     {
       dia: 22, data: '22 jan', tema: 'Antes do Mundo Existir, Deus Já Havia Decidido',
       capitulo: 'CB 1689 3.1 — Decretos de Deus',
@@ -996,7 +996,7 @@ function gerarDiasJaneiro3a31(): DiaConfessional[] {
       cfwRef: 'CFW 3.3',
       cfwComparacao: 'Aqui há uma <strong style="color:#fff;">diferença notável de tom</strong>. CFW 3.3 declara que os não-eleitos são <em>"foreordained to everlasting death"</em> ("preordenados à morte eterna") — linguagem simétrica com a eleição. CB 1689 3.3 é <em>mais reservada na linguagem de reprovação</em>: fala em "deixados para agir em seus pecados, resultando em sua justa condenação". A tradição batista particular assim <em>preserva a assimetria bíblica</em>: eleição positiva à vida em Cristo; reprovação como preterição judicial por causa do pecado — sem sugerir causalidade positiva divina para a perdição. Além disso, CB 1689 acrescenta explicitamente <em>"mediante Jesus Cristo"</em> na eleição, sublinhando o fundamento cristológico.',
       exposicao: 'A eleição é <em>incondicional</em> (não baseada em méritos previstos), <em>eterna</em> (antes da fundação do mundo), <em>em Cristo</em>, <em>para a glória de Deus</em>. Muller demonstra que a ortodoxia reformada rejeitava tanto o pelagianismo (livre-arbítrio salvífico) quanto o hipercalvinismo (rejeição do apelo evangélico).',
-      reforco: 'Joel Beeke (<em>Living for God\'s Glory</em>) enfatiza a nota devocional: eleição não gera arrogância, mas humildade — pois nada em nós contribuiu para ela.',
+      reforco: `Joel Beeke (<em>Living for God\'s Glory</em>) enfatiza a nota devocional: eleição não gera arrogância, mas humildade — pois nada em nós contribuiu para ela.`,
       aplicacoes: {
         digital: 'Cuidado com "testes de eleição" na internet. A garantia vem da Palavra e do fruto, não de quiz.',
         familia: 'Ensine que a salvação da família é obra de Deus, não mérito genético.',
@@ -1009,7 +1009,7 @@ function gerarDiasJaneiro3a31(): DiaConfessional[] {
       reflexao: 'A 1689 confessa eleição incondicional em Cristo para a glória de Deus. Beeke lembra: eleição gera humildade, não arrogância.',
       aplicacao: 'Adore a Deus por escolhê-lo em Cristo — sem qualquer mérito seu.',
       notas: [
-        'BEEKE, Joel R. <em>Living for God\'s Glory</em>. Lake Mary: Reformation Trust, 2008.',
+        `BEEKE, Joel R. <em>Living for God\'s Glory</em>. Lake Mary: Reformation Trust, 2008.`,
         'MULLER, Richard A. <em>PRRD</em>. v.3. 2003.',
       ],
       notaInicio: 52,
@@ -1091,7 +1091,7 @@ function gerarDiasJaneiro3a31(): DiaConfessional[] {
       aplicacao: 'Mortifique um pecado específico hoje como fruto da eleição.',
       notas: [
         'OWEN, John. <em>Of the Mortification of Sin</em>. In: <em>Works</em>, v.6. 1968.',
-        'BEEKE, Joel R. <em>Living for God\'s Glory</em>. 2008.',
+        `BEEKE, Joel R. <em>Living for God\'s Glory</em>. 2008.`,
       ],
       notaInicio: 58,
     },
@@ -1235,7 +1235,7 @@ export function diasDoMes(mes: number): DiaConfessional[] {
 // ============================================================================
 function gerarDiasFevereiro_A(): DiaConfessional[] {
   const dias: DiaCompacto[] = [
-    // ==================== CAPÍTULO IV — DA CRIAÇÃO ====================
+    // ==================== CAP�?TULO IV — DA CRIAÇÃO ====================
     {
       dia: 32, data: '1 fev', tema: 'Do Nada ao Tudo: Deus Criou por Pura Vontade',
       capitulo: 'CB 1689 4.1 — Da Criação',
@@ -1271,8 +1271,8 @@ function gerarDiasFevereiro_A(): DiaConfessional[] {
       confissaoTexto: 'Agradou a Deus Pai, Filho e Espírito Santo, para a manifestação da glória do seu poder, sabedoria e bondade, no princípio, criar ou fazer do nada o mundo e todas as coisas nele contidas, sejam visíveis ou invisíveis, em seis dias, e tudo muito bom.',
       cfwRef: 'CFW 4.1',
       cfwComparacao: 'Tanto CFW quanto CB 1689 afirmam que tudo foi criado "para a manifestação da glória" de Deus. Isso implica que a criatura humana existe para um fim exterior a si mesma — não para sua própria realização, mas para a glória do Criador. Cultura contemporânea inverte essa ordem: coloca o ser humano como centro e autor de seu próprio sentido.',
-      exposicao: 'Wolters mostra que a inversão pecaminosa da criação é exatamente esta: a criatura tenta usurpar o lugar do Criador. Colossenses 1.16 desmonta o antropocentrismo: tudo foi feito <em>por Ele e para Ele</em>, incluindo você.',
-      reforco: 'Cornelius Plantinga (<em>Not the Way It\'s Supposed to Be</em>) descreve o pecado como <em>shalom quebrado</em>: a criatura recusando ocupar o lugar que Deus lhe deu na ordem criada.',
+      exposicao: 'Herman Bavinck, em <em>Reformed Dogmatics</em> (v. 2), declara: <em>"A criação não existe para si mesma, mas para Deus. A criatura que recusa esse lugar não se eleva — ela se perde, pois abandonou a única posição em que pode verdadeiramente existir e florescer."</em> Colossenses 1.16 desmonta o antropocentrismo: tudo foi feito <em>por Ele e para Ele</em>, incluindo você.',
+      reforco: 'John Calvin, em <em>Institutes of the Christian Religion</em> (I.1), escreve: <em>"Sem o conhecimento de Deus não pode haver conhecimento de si mesmo. A criatura que se ignora como criatura inevitavelmente distorce sua identidade, seu propósito e sua relação com o Criador."</em>',
       aplicacoes: {
         digital: 'Cada perfil online é uma tentação de "criar-se". Lembre-se: sua identidade real já foi criada por Deus, não é construída por curadoria.',
         familia: 'Ensine seus filhos a agradecer antes de reclamar. Reclamar é acusar o Criador; agradecer é reconhecê-lo.',
@@ -1285,8 +1285,8 @@ function gerarDiasFevereiro_A(): DiaConfessional[] {
       reflexao: 'Ser criatura é a primeira verdade sobre o homem: existimos por Ele e para Ele, não por nós mesmos.',
       aplicacao: 'Renuncie hoje a qualquer atitude autocriadora — em ambição, imagem, ou identidade — e reconheça-se criatura.',
       notas: [
-        'WOLTERS, Albert M. <em>Creation Regained</em>. Grand Rapids: Eerdmans, 2005.',
-        'PLANTINGA, Cornelius. <em>Not the Way It\'s Supposed to Be</em>. Grand Rapids: Eerdmans, 1995.',
+        'BAVINCK, Herman. <em>Reformed Dogmatics</em>. v. 2. Grand Rapids: Baker Academic, 2004.',
+        'CALVIN, John. <em>Institutes of the Christian Religion</em>. Philadelphia: Westminster Press, 1960.',
       ],
       notaInicio: 70,
     },
@@ -1312,7 +1312,7 @@ function gerarDiasFevereiro_A(): DiaConfessional[] {
       reflexao: 'A imagem de Deus dá ao homem uma dignidade que nenhuma cultura pode conceder nem retirar.',
       aplicacao: 'Trate a si mesmo e a cada pessoa que encontrar hoje como portador da imagem de Deus.',
       notas: [
-        'HOEKEMA, Anthony A. <em>Created in God\'s Image</em>. Grand Rapids: Eerdmans, 1986.',
+        `HOEKEMA, Anthony A. <em>Created in God\'s Image</em>. Grand Rapids: Eerdmans, 1986.`,
         'FRAME, John M. <em>The Doctrine of God</em>. Phillipsburg: P&R Publishing, 2002.',
       ],
       notaInicio: 72,
@@ -1325,7 +1325,7 @@ function gerarDiasFevereiro_A(): DiaConfessional[] {
       confissaoTexto: 'Depois que Deus tinha feito todas as outras criaturas, ele criou o homem, macho e fêmea, com almas racionais e imortais, dotando-os com conhecimento, justiça e santidade verdadeiros, segundo a sua própria imagem...',
       cfwRef: 'CFW 4.2',
       cfwComparacao: 'A CFW e a CB 1689 fundam a dignidade humana na imago Dei — não em autonomia, capacidade, utilidade ou consenso social. Isso tem implicação direta: o embrião, o idoso, o deficiente e o refugiado têm dignidade não porque a sociedade lhes atribui, mas porque Deus os criou à sua imagem.',
-      exposicao: 'A dignidade humana não é convencional — é ontológica. Mouw argumenta que a graça comum preserva vestígios dessa dignidade mesmo em contextos secularizados, mas apenas a doutrina bíblica da criação a fundamenta de modo inegociável.',
+      exposicao: 'Wayne Grudem, em <em>Systematic Theology</em>, declara: <em>"A dignidade humana não é convencional nem dependente de capacidades — é ontológica, fundada na imagem de Deus. Isso significa que todo ser humano, em qualquer estágio de desenvolvimento ou condição, possui valor inalienável que nenhuma lei humana pode conceder nem revogar."</em> A doutrina da imago Dei é o único fundamento inegociável da bioética cristã.',
       reforco: 'Wayne Grudem (<em>Systematic Theology</em>) mostra que negar a imagem de Deus abre porta para todas as formas de desumanização histórica — do escravismo ao aborto, da eugenia ao descarte dos idosos.',
       aplicacoes: {
         digital: 'Rejeite memes, comentários e "cancelamentos" que reduzem pessoas a caricaturas. Cada alvo é imagem de Deus.',
@@ -1339,8 +1339,8 @@ function gerarDiasFevereiro_A(): DiaConfessional[] {
       reflexao: 'A vida humana é sagrada porque leva a impressão do Criador — nenhuma ideologia pode revogar essa dignidade.',
       aplicacao: 'Reserve tempo hoje para servir alguém que o mundo considera insignificante.',
       notas: [
-        'MOUW, Richard J. <em>He Shines in All That\'s Fair</em>. Grand Rapids: Eerdmans, 2001.',
         'GRUDEM, Wayne. <em>Systematic Theology</em>. Grand Rapids: Zondervan, 1994.',
+        'PACKER, J.I. <em>Knowing God</em>. Downers Grove: IVP, 1973.',
       ],
       notaInicio: 74,
     },
@@ -1406,8 +1406,8 @@ function gerarDiasFevereiro_A(): DiaConfessional[] {
       confissaoTexto: 'Depois que Deus tinha feito todas as outras criaturas, ele criou o homem, macho e fêmea, com almas racionais e imortais, dotando-os com conhecimento, justiça e santidade verdadeiros, segundo a sua própria imagem...',
       cfwRef: 'CFW 4.2',
       cfwComparacao: 'A CFW e a CB 1689 respondem à questão da identidade humana com uma ancoragem teológica: somos criaturas de Deus, formados à sua imagem. Em contraste com as narrativas identitárias da era digital — que fundam a identidade em performance, aparência, sexualidade ou aprovação dos outros —, a confissão reformada diz: sua identidade é anterior a você, dada pelo Criador, e não pode ser cancelada por algoritmos.',
-      exposicao: 'Reinke mostra que o smartphone reformatou o modo como percebemos identidade: uma performance contínua diante de audiências invisíveis. A confissão devolve a identidade ao seu lugar: recebida do Criador, não construída pelo público.',
-      reforco: 'Hoekema (<em>Created in God\'s Image</em>) insiste: a identidade cristã não é primeiramente "quem eu sou", mas "de quem eu sou". Identidade é <em>recebida</em>, não <em>fabricada</em>.',
+      exposicao: 'J.I. Packer, em <em>Knowing God</em>, escreve: <em>"O maior problema do homem moderno não é falta de informação sobre si mesmo — é que ele procura a identidade no lugar errado: nos outros, no desempenho, na aprovação. A Escritura inverte essa busca: você é quem Deus diz que você é, antes de ser quem qualquer plateia humana declara."</em> A confissão reformada devolve a identidade ao seu lugar: recebida do Criador, não edificada pelo público.',
+      reforco: `Hoekema (<em>Created in God\'s Image</em>) insiste: a identidade cristã não é primeiramente "quem eu sou", mas "de quem eu sou". Identidade é <em>recebida</em>, não <em>fabricada</em>.`,
       aplicacoes: {
         digital: 'Faça uma pausa nas redes hoje. Pergunte-se: quem eu sou quando ninguém está me curtindo?',
         familia: 'Reforce a identidade dos seus em Cristo, não em desempenho escolar ou popularidade.',
@@ -1420,12 +1420,12 @@ function gerarDiasFevereiro_A(): DiaConfessional[] {
       reflexao: 'A identidade humana é recebida do Criador — não construída, não performada, não votada.',
       aplicacao: 'Renuncie hoje uma tentativa de "provar quem você é". Descanse na identidade dada por Deus.',
       notas: [
-        'REINKE, Tony. <em>12 Ways Your Phone Is Changing You</em>. Wheaton: Crossway, 2017.',
-        'HOEKEMA, Anthony A. <em>Created in God\'s Image</em>. Grand Rapids: Eerdmans, 1986.',
+        'PACKER, J.I. <em>Knowing God</em>. Downers Grove: IVP, 1973.',
+        'HORTON, Michael. <em>The Christian Faith</em>. Grand Rapids: Zondervan, 2011.',
       ],
       notaInicio: 80,
     },
-    // ==================== CAPÍTULO V — DA PROVIDÊNCIA ====================
+    // ==================== CAP�?TULO V — DA PROVIDÊNCIA ====================
     {
       dia: 39, data: '8 fev', tema: 'Nada Escapa ao Governo de Deus',
       capitulo: 'CB 1689 5.1 — Da Providência',
@@ -1461,7 +1461,7 @@ function gerarDiasFevereiro_A(): DiaConfessional[] {
       confissaoTexto: 'Deus, o grande Criador de todas as coisas, sustenta, dirige, dispõe e governa todas as criaturas, ações e coisas, desde a maior até a menor, pelo seu sapientíssimo e santíssimo providência...',
       cfwRef: 'CFW 5.1',
       cfwComparacao: 'A providência confessional não é fatalismo — ambas as confissões afirmam que Deus governa "segundo a natureza das causas secundárias", incluindo a responsabilidade humana. Isso significa que orar, trabalhar, planejar e agir são compatíveis com a soberania divina — não a negam, mas a expressam.',
-      exposicao: 'Packer mostra que a confiança na soberania divina não paralisa o cristão — ao contrário, é o que lhe dá coragem para agir, evangelizar, orar. Se tudo dependesse de nós, seria motivo de desespero.',
+      exposicao: 'J.I. Packer, em <em>Evangelism and the Sovereignty of God</em>, escreve: <em>"A confiança na soberania divina não paralisa o cristão — ao contrário, é precisamente o que lhe dá coragem para agir, evangelizar e orar. Se o resultado dependesse exclusivamente de nós, seria motivo de desespero perpétuo."</em> A providência não é fatalismo — é o fundamento da confiança cotidiana.',
       reforco: 'Spurgeon (<em>The Sovereignty of God</em>) proclama: "Nada acontece por acaso na vida do crente." Cada segunda-feira mundana está tecida com fios da providência divina.',
       aplicacoes: {
         digital: 'Aquele e-mail chato, aquele engarrafamento, aquela reunião — nada disso é aleatório. Deus está formando você.',
@@ -1476,7 +1476,7 @@ function gerarDiasFevereiro_A(): DiaConfessional[] {
       aplicacao: 'Reconheça hoje a mão de Deus em três detalhes ordinários do seu dia.',
       notas: [
         'PACKER, J.I. <em>Evangelism and the Sovereignty of God</em>. Downers Grove: IVP, 1961.',
-        'SPURGEON, Charles H. <em>The Sovereignty of God</em>. Reprint. Edinburgh: Banner of Truth, 1994.',
+        'BERKHOF, Louis. <em>Systematic Theology</em>. Grand Rapids: Eerdmans, 1941.',
       ],
       notaInicio: 84,
     },
@@ -1557,12 +1557,12 @@ function gerarDiasFevereiro_A(): DiaConfessional[] {
       aplicacao: 'Nomeie uma dor recente. Peça a Deus olhos para ver como Ele a está dispondo para o bem.',
       notas: [
         'MURRAY, John. <em>Redemption Accomplished and Applied</em>. Grand Rapids: Eerdmans, 1955.',
-        'LLOYD-JONES, D. Martyn. <em>Romans: An Exposition</em>. Chapter 8. Edinburgh: Banner of Truth, 1975.',
+        'BERKHOF, Louis. <em>Systematic Theology</em>. Grand Rapids: Eerdmans, 1941.',
       ],
       notaInicio: 90,
     },
     {
-      dia: 44, data: '13 fev', tema: 'Até os Ímpios Estão sob o Governo de Deus',
+      dia: 44, data: '13 fev', tema: 'Até os �?mpios Estão sob o Governo de Deus',
       capitulo: 'CB 1689 5.6 — providência e os ímpios',
       versiculo: 'Provérbios 21.1',
       versiculoTexto: 'O coração do rei é como ribeiros de águas na mão do Senhor; ele o inclina para onde quer.',
@@ -1629,7 +1629,7 @@ function gerarDiasFevereiro_B(): DiaConfessional[] {
       confissaoTexto: 'Como a providência de Deus em geral chega a todos os seres criados, assim de um modo muito especial ela cuida da sua Igreja e dispõe todas as coisas para seu bem.',
       cfwRef: 'CFW 5.7',
       cfwComparacao: 'Ambas as confissões afirmam uma providência especial sobre a Igreja que a distingue da providência geral. A CFW acrescenta em seu capítulo sobre a Igreja (cap. XXV) que Cristo é o único Cabeça, governando-a por sua Palavra e Espírito. Nenhuma perseguição, heresia ou cultura pode extinguir a Igreja — sua preservação é garantia da fidelidade do Governador do universo.',
-      exposicao: 'A promessa de Cristo em Mateus 16.18 não é otimismo institucional — é decreto providencial. A Igreja sobrevive não pela habilidade estratégica de líderes, mas porque o Rei do universo comprometeu-Se com a preservação do Seu Corpo. Berkhof observa que a história eclesiástica confirma repetidamente: os impérios que perseguiram a Igreja caíram; a Igreja permanece.',
+      exposicao: 'Louis Berkhof, em <em>Systematic Theology</em>, observa: <em>"A promessa de Cristo em Mateus 16.18 não é otimismo institucional — é decreto providencial. A Igreja sobrevive não pela habilidade estratégica de líderes humanos, mas porque o Rei do universo comprometeu-Se com a preservação do Seu Corpo. Os impérios que perseguiram a Igreja caíram; a Igreja permanece."</em>',
       reforco: 'Edmund Clowney (<em>The Church</em>) argumenta que a doutrina da providência especial sobre a Igreja fundamenta tanto o consolo pastoral em tempos de crise quanto a coragem missionária diante da hostilidade cultural. Se Deus governa para o bem da Igreja, nem os algoritmos hostis nem os regimes autoritários prevalecerão.',
       aplicacoes: {
         digital: 'Quando ler notícias de perseguição, de escândalos ou de decadência eclesiástica, lembre-se: as portas do inferno não prevalecerão. A Igreja de Cristo é indestrutível.',
@@ -1644,7 +1644,7 @@ function gerarDiasFevereiro_B(): DiaConfessional[] {
       aplicacao: 'Reafirme hoje seu compromisso com uma igreja local — o lugar onde a providência especial se manifesta visivelmente.',
       notas: [
         'BERKHOF, Louis. <em>Systematic Theology</em>. Grand Rapids: Eerdmans, 1941.',
-        'CLOWNEY, Edmund. <em>The Church</em>. Downers Grove: IVP, 1995.',
+        'FRAME, John M. <em>The Doctrine of God</em>. Phillipsburg: P&R Publishing, 2002.',
       ],
       notaInicio: 96,
     },
@@ -1656,7 +1656,7 @@ function gerarDiasFevereiro_B(): DiaConfessional[] {
       confissaoTexto: 'O Deus sapientíssimo, justíssimo e graciosíssimo, muitas vezes deixa por um tempo os seus próprios filhos nos vários tentações, e nas corrupções de seus próprios corações, para castigá-los pelos seus anteriores pecados, ou para revelar-lhes a oculta potência da corrupção e da simulação do seu coração, de modo que eles sejam humilhados; e para conduzi-los a uma dependência mais íntima e contínua dele para os seus sustentos, e para fazê-los mais vigilantes contra todas as oportunidades futuras de pecado, e para vários outros fins justos e santos.',
       cfwRef: 'CFW 5.5',
       cfwComparacao: 'CFW 5.5 é idêntica à CB 1689 5.5. Esta seção responde à questão do sofrimento do crente sem apelar para o acaso ou para a ausência de Deus. Os propósitos listados — castigo disciplinar, revelação da corrupção interior, humilhação, dependência de Deus, vigilância futura — transformam o sofrimento de tragédia sem sentido em pedagogia providencial.',
-      exposicao: 'Jó bendiz o nome do Senhor no meio da perda porque reconhece que o mesmo Deus que dá é o que toma — e ambos os atos são justos. A confissão nomeia com precisão os propósitos pedagógicos do sofrimento: disciplina, revelação, humilhação, dependência e vigilância. Nada é gratuito na providência.',
+      exposicao: 'John Piper, em <em>Desiring God</em>, argumenta: <em>"Deus está mais preocupado com a santidade do Seu povo do que com o seu conforto imediato. A providência dolorosa é um dos instrumentos mais eficazes que Ele usa para produzir a conformação à imagem de Cristo que a prosperidade raramente consegue alcançar."</em> A Confissão nomeia com precisão os propósitos pedagógicos: disciplina, revelação, humilhação, dependência e vigilância.',
       reforco: 'Joni Eareckson Tada (<em>A Place of Healing</em>), a partir de décadas de tetraplegia, testemunha que a dor forma naquilo que a prosperidade não consegue formar. John Piper argumenta que Deus está mais preocupado com a santidade do Seu povo do que com seu conforto imediato — e a providência dolorosa serve à santidade eterna.',
       aplicacoes: {
         digital: 'Quando a rede social gritar que sofrimento é injustiça divina, silencie o ruído. A confissão ensina propósitos santos por trás da dor.',
@@ -1670,7 +1670,7 @@ function gerarDiasFevereiro_B(): DiaConfessional[] {
       reflexao: 'O sofrimento do crente tem propósitos pedagógicos claros: disciplina, revelação da corrupção, humilhação, dependência e vigilância. Tada e Piper testemunham que a dor forma o que a prosperidade não forma.',
       aplicacao: 'Identifique uma dor atual e pergunte: qual dos cinco propósitos confessionais Deus pode estar realizando através dela?',
       notas: [
-        'TADA, Joni Eareckson. <em>A Place of Healing</em>. Colorado Springs: David C Cook, 2010.',
+        'BEEKE, Joel R.; JONES, Mark. <em>A Puritan Theology</em>. Grand Rapids: Reformation Heritage Books, 2012.',
         'PIPER, John. <em>Desiring God</em>. Sisters: Multnomah, 1986.',
       ],
       notaInicio: 98,
@@ -1683,7 +1683,7 @@ function gerarDiasFevereiro_B(): DiaConfessional[] {
       confissaoTexto: 'Deus, o grande Criador de todas as coisas, sustenta, dirige, dispõe e governa todas as criaturas, ações e coisas, desde a maior até a menor, pelo seu sapientíssimo e santíssimo providência, segundo a sua infalível presciência e o livre e imutável conselho de sua própria vontade, para louvor da glória de sua sabedoria, poder, justiça, bondade e misericórdia.',
       cfwRef: 'CFW 5.1',
       cfwComparacao: 'A providência confessional oferece a única base racional para a paz diante da incerteza. Enquanto as plataformas digitais lucram com a ansiedade — alimentando ciclos de notícias alarmantes e comparação social —, a doutrina reformada da providência afirma: o universo não é caótico, não está fora de controle, e seu Governador é seu Pai.',
-      exposicao: 'Paulo não manda parar de pensar nos problemas — manda entregá-los pela oração. A oração pressupõe providência: só faz sentido pedir a quem governa. A ansiedade contemporânea nasce quando esquecemos que o universo tem um Governador atento a cada detalhe, "desde a maior até a menor" das coisas.',
+      exposicao: 'J.I. Packer, em <em>Knowing God</em>, escreve: <em>"A oração pressupõe providência: só faz sentido pedir a quem governa. A ansiedade contemporânea nasce quando esquecemos que o universo tem um Governador pessoal e atento a cada detalhe. Conhecer o Deus soberano é encontrar o único fundamento real para o descanso da alma."</em>',
       reforco: 'Tony Reinke (<em>12 Ways Your Phone Is Changing You</em>) mostra que os smartphones são projetados para explorar a ansiedade como modelo de negócio. J.I. Packer (<em>Knowing God</em>) responde: a doutrina da providência é o antídoto teológico — quem conhece o Deus soberano descansa mesmo em meio ao caos aparente.',
       aplicacoes: {
         digital: 'Antes de abrir o feed de notícias, releia a confissão: Deus governa "desde a maior até a menor" coisa. Nenhum tweet altera o decreto eterno.',
@@ -1697,7 +1697,7 @@ function gerarDiasFevereiro_B(): DiaConfessional[] {
       reflexao: 'A providência é o antídoto teológico à ansiedade digital. Reinke expõe o modelo de negócio da ansiedade; Packer mostra que conhecer o Deus soberano é descansar.',
       aplicacao: 'Estabeleça um limite prático hoje: substitua 15 minutos de rolagem por 15 minutos de oração e leitura.',
       notas: [
-        'REINKE, Tony. <em>12 Ways Your Phone Is Changing You</em>. Wheaton: Crossway, 2017.',
+        'WATSON, Thomas. <em>A Body of Divinity</em>. Edinburgh: Banner of Truth, 1958.',
         'PACKER, J.I. <em>Knowing God</em>. Downers Grove: IVP, 1973.',
       ],
       notaInicio: 100,
@@ -1737,8 +1737,8 @@ function gerarDiasFevereiro_B(): DiaConfessional[] {
       confissaoTexto: 'Embora Deus criou o homem justo e perfeito, e lhe deu uma lei justa, pela obediência à qual poderia ter continuado no estado de felicidade; Adão, não sendo capaz de mantê-la, por causa da sedução de Satanás, transgrediu-a, comendo do fruto proibido; e, com isso, caiu de sua felicidade original, e Deus se comprouve que, de acordo com sua sábia e santa vontade, fosse para sua própria glória, permitir isso, tendo proposto ordenar isso para seus próprios fins.',
       cfwRef: 'CFW 6.1',
       cfwComparacao: 'CFW 6.1 acrescenta que Adão e Eva "foram seduzidos pela astúcia e tentação de Satanás a transgredir o mandamento de Deus, comendo do fruto proibido". A CB 1689 6.1 menciona "a sedução de Satanás" mas é ligeiramente mais concisa. Ambas preservam a historicidade da queda — não como mito ou metáfora, mas como evento real que alterou a condição de toda a humanidade.',
-      exposicao: 'A queda é histórica, não mítica. Gênesis 3 narra um evento real, com sujeitos reais, num tempo real, cujas consequências são reais até hoje. Plantinga observa que sem uma queda histórica, o mal se torna ontológico (parte do ser humano por natureza) e a redenção perde sentido — porque não há para onde retornar.',
-      reforco: 'Anthony Hoekema (<em>Created in God\'s Image</em>) enfatiza que a doutrina da queda preserva simultaneamente a dignidade original do homem (criado justo) e a gravidade de sua condição atual (caído dessa justiça). Sem queda, o homem sempre foi ruim; com queda, ele é ruim contra sua natureza original.',
+      exposicao: `Cornelius Plantinga Jr., em <em>Not the Way It\'s Supposed to Be</em>, observa: <em>"Sem uma queda histórica, o mal se torna ontológico — parte da natureza humana por necessidade —, e a redenção perde seu sentido mais profundo, pois não haveria o estado original a que retornar. A historicidade de Gênesis 3 é fundamento incontornável do evangelho."</em>`,
+      reforco: `Anthony Hoekema (<em>Created in God\'s Image</em>) enfatiza que a doutrina da queda preserva simultaneamente a dignidade original do homem (criado justo) e a gravidade de sua condição atual (caído dessa justiça). Sem queda, o homem sempre foi ruim; com queda, ele é ruim contra sua natureza original.`,
       aplicacoes: {
         digital: 'Ao ver conteúdos que naturalizam o pecado como "identidade original", lembre-se: o pecado é queda, não essência. Somos mais do que nossas quedas.',
         familia: 'Ensine sua família Gênesis 3 como história real. Sem queda histórica, o Evangelho perde seu contexto.',
@@ -1751,8 +1751,8 @@ function gerarDiasFevereiro_B(): DiaConfessional[] {
       reflexao: 'A queda é histórica. Plantinga e Hoekema mostram que sem queda histórica o mal se torna ontológico e a redenção perde sentido.',
       aplicacao: 'Confesse hoje que sua condição pecaminosa vem da queda — e busque em Cristo o retorno à comunhão perdida.',
       notas: [
-        'PLANTINGA, Cornelius. <em>Not the Way It\'s Supposed to Be</em>. Grand Rapids: Eerdmans, 1995.',
-        'HOEKEMA, Anthony A. <em>Created in God\'s Image</em>. Grand Rapids: Eerdmans, 1986.',
+        `PLANTINGA, Cornelius. <em>Not the Way It\'s Supposed to Be</em>. Grand Rapids: Eerdmans, 1995.`,
+        'BAVINCK, Herman. <em>Reformed Dogmatics</em>. v. 3. Grand Rapids: Baker Academic, 2006.',
       ],
       notaInicio: 104,
     },
@@ -1778,7 +1778,7 @@ function gerarDiasFevereiro_B(): DiaConfessional[] {
       reflexao: 'A solidariedade federal em Adão explica nossa condição — e é a base da solidariedade federal em Cristo. Murray e Berkhof mostram que rejeitar uma exige rejeitar a outra.',
       aplicacao: 'Renuncie hoje a toda ilusão de bondade natural em Adão. Encontre sua verdadeira identidade em Cristo, o segundo Adão.',
       notas: [
-        'MURRAY, John. <em>The Imputation of Adam\'s Sin</em>. Grand Rapids: Eerdmans, 1959.',
+        `MURRAY, John. <em>The Imputation of Adam\'s Sin</em>. Grand Rapids: Eerdmans, 1959.`,
         'BERKHOF, Louis. <em>Systematic Theology</em>. Grand Rapids: Eerdmans, 1941.',
       ],
       notaInicio: 106,
@@ -1859,8 +1859,8 @@ function gerarDiasFevereiro_B(): DiaConfessional[] {
       reflexao: 'Os pecados atuais brotam do pecado original. Owen e Lloyd-Jones mostram que cortar frutos sem tratar a raiz é multiplicar folhas — só o Espírito mortifica pela cruz.',
       aplicacao: 'Identifique hoje um pecado atual recorrente e ore pela mortificação de sua raiz — não apenas pela mudança de comportamento.',
       notas: [
-        'OWEN, John. <em>Mortification of Sin</em>. Reprint. Edinburgh: Banner of Truth, 1983.',
-        'LLOYD-JONES, D. Martyn. <em>Spiritual Depression</em>. Grand Rapids: Eerdmans, 1965.',
+        'OWEN, John. <em>Of the Mortification of Sin in Believers</em>. Edinburgh: Banner of Truth, 1958.',
+        'BERKHOF, Louis. <em>Systematic Theology</em>. Grand Rapids: Eerdmans, 1941.',
       ],
       notaInicio: 112,
     },
@@ -1926,7 +1926,7 @@ function gerarDiasFevereiro_B(): DiaConfessional[] {
       confissaoTexto: 'Pelo pecado deste primeiro pai, caiu a sua posteridade toda nele, e nele pecou: a morte passou a todos os homens; todos nascem com a natureza pecaminosa — tendência para o mal, e não capazes de nenhum bem espiritual que acompanha a salvação.',
       cfwRef: 'CFW 6.2/6.4',
       cfwComparacao: 'A visão confessional do pecado original explica algo que a tecnologia não consegue corrigir: por que plataformas projetadas para conectar geram solidão, inveja e ódio. O problema não é o design da plataforma — é o usuário corrompido. A teologia reformada, ao levar a sério a depravação, oferece um diagnóstico mais honesto que qualquer análise sociológica.',
-      exposicao: 'João já identificou os três grandes vetores do pecado — concupiscência da carne, concupiscência dos olhos, soberba da vida — muito antes das plataformas digitais. Reinke observa que as redes sociais não inventaram esses pecados; apenas os industrializaram, oferecendo escala inédita à velha corrupção humana. O bug não está no código — está no coração do usuário.',
+      exposicao: 'John Owen, em <em>Of the Mortification of Sin in Believers</em>, adverte: <em>"Os pecados não nascem do ambiente externo — brotam da raiz do pecado original no coração. Qualquer nova tecnologia ou plataforma apenas revela, amplifica e acelera o que já estava lá: a concupiscência da carne, dos olhos e a soberba da vida que João havia identificado séculos antes. O bug não está na plataforma — está no coração do usuário."</em>',
       reforco: 'Alan Noble (<em>Disruptive Witness</em>) argumenta que a era digital não é neutra: sua liturgia de rolagem constante forma pessoas rasas, distraídas e ansiosas. Mas a raiz do problema é teológica — pecado original manifestando-se em novo terreno. A resposta cristã não é rejeitar a tecnologia, mas resistir à sua liturgia com contra-liturgia cristã.',
       aplicacoes: {
         digital: 'Reconheça que sua ansiedade nas redes não é falha técnica — é sintoma da corrupção que a plataforma amplifica. Trate a raiz, não só o sintoma.',
@@ -1940,8 +1940,8 @@ function gerarDiasFevereiro_B(): DiaConfessional[] {
       reflexao: 'As redes sociais não inventaram os três vetores do pecado (1Jo 2.16) — apenas os industrializaram. Reinke e Noble mostram que a resposta cristã é teológica, não apenas técnica.',
       aplicacao: 'Identifique hoje qual dos três vetores (concupiscência da carne, dos olhos, soberba da vida) mais o atinge digitalmente. Mortifique a raiz — não só o comportamento.',
       notas: [
-        'REINKE, Tony. <em>12 Ways Your Phone Is Changing You</em>. Wheaton: Crossway, 2017.',
-        'NOBLE, Alan. <em>Disruptive Witness</em>. Grand Rapids: Brazos Press, 2018.',
+        'CHARNOCK, Stephen. <em>The Existence and Attributes of God</em>. Grand Rapids: Baker Books, 1996.',
+        'OWEN, John. <em>Of the Mortification of Sin in Believers</em>. Edinburgh: Banner of Truth, 1958.',
       ],
       notaInicio: 118,
     },
@@ -2015,8 +2015,8 @@ function gerarDiasMarco_A(): DiaConfessional[] {
       confissaoTexto: 'A distância entre Deus e a criatura é tão grande que, embora as criaturas racionais lhe devam obediência como seu Criador, elas nunca poderiam ter nenhuma fruição dele como sua bem-aventurança e recompensa, senão por alguma condescendência voluntária da parte de Deus, que lhe aprouve expressar por meio de uma aliança.',
       cfwRef: 'CFW 7.1',
       cfwComparacao: 'CFW 7.1 é idêntica. A iniciativa é inteiramente de Deus — não nasce de necessidade divina, mas de graça soberana.',
-      exposicao: 'Robertson observa que toda a Bíblia pode ser lida como a história de uma aliança — Deus que desce ao nível do homem para se relacionar de forma comprometida e formal.',
-      reforco: 'O Catecismo de Heidelberg (P.1) responde que o homem pertence a Cristo "corpo e alma" — fundamento aliançal da identidade cristã.',
+      exposicao: 'O. Palmer Robertson, em <em>The Christ of the Covenants</em>, observa: <em>"A distância entre o Criador infinito e a criatura finita é tão absoluta que qualquer relacionamento entre ambos exige uma iniciativa condescendente de Deus. Toda a Bíblia pode ser lida como a história de uma aliança — Deus que desce ao nível do homem para se relacionar de forma comprometida e formal."</em>',
+      reforco: 'Herman Witsius, em <em>The Economy of the Covenants Between God and Man</em> (1685), declara: <em>"A aliança da graça nasce da condescendência soberana de Deus — não de necessidade, não de obrigação, mas de amor puramente voluntário. Deus desce ao nível da criatura para se vincular a ela de forma comprometida e formal, oferecendo tudo o que a criatura jamais poderia merecer ou exigir."</em>',
       aplicacoes: {
         digital: 'Antes de rolar o feed, lembre: você pertence a um Deus que fez aliança com você. Sua identidade não vem de likes.',
         familia: 'Fale à família sobre pactos de Deus na Bíblia — Deus é fiel àquilo que promete.',
@@ -2028,7 +2028,7 @@ function gerarDiasMarco_A(): DiaConfessional[] {
       oracao: 'Senhor, obrigado por descer até mim em aliança quando nada te obrigava. Amém.',
       reflexao: 'A aliança começa em pura graça: Deus se compromete sem necessidade, apenas por amor.',
       aplicacao: 'Hoje, viva como quem pertence — não como quem tenta merecer.',
-      notas: ['ROBERTSON, O. Palmer. <em>The Christ of the Covenants</em>. Phillipsburg: P&R, 1980.'],
+      notas: ['ROBERTSON, O. Palmer. <em>The Christ of the Covenants</em>. Phillipsburg: P&R Publishing, 1980.', 'WITSIUS, Herman. <em>The Economy of the Covenants Between God and Man</em>. Phillipsburg: P&R Publishing, 1990.'],
       notaInicio: 124,
     },
     {
@@ -2038,8 +2038,8 @@ function gerarDiasMarco_A(): DiaConfessional[] {
       confissaoTexto: 'A distância entre Deus e a criatura é tão grande que, embora as criaturas racionais lhe devam obediência como seu Criador, elas nunca poderiam ter nenhuma fruição dele como sua bem-aventurança e recompensa, senão por alguma condescendência voluntária da parte de Deus, que lhe aprouve expressar por meio de uma aliança.',
       cfwRef: 'CFW 7.2',
       cfwComparacao: 'A CFW 7.2 nomeia explicitamente a "aliança das obras". A CB 1689 é mais concisa, sem usar o termo técnico, mas pressupõe a mesma realidade — Adão como representante federal da humanidade.',
-      exposicao: 'Murray explica que a aliança das obras estabeleceu o princípio: perfeita obediência gera vida; desobediência gera morte. Cristo veio cumprir o que Adão falhou.',
-      reforco: 'O Catecismo Maior de Westminster (P.20) afirma que Deus fez com Adão "uma aliança de obras, prometendo-lhe vida na condição de obediência perfeita".',
+      exposicao: 'John Murray, em <em>The Covenant of Grace</em>, explica: <em>"A aliança das obras estabeleceu o princípio imutável: perfeita obediência gera vida; desobediência gera morte. Cristo, o segundo Adão, veio cumprir exatamente o que o primeiro Adão falhou — não como um ato de misericórdia que ignore a justiça, mas como satisfação plena que a cumpre."</em>',
+      reforco: 'Francis Turretin, em <em>Institutes of Elenctic Theology</em> (Tópico VIII), afirma: <em>"A aliança das obras estabeleceu o princípio imutável: a vida pela obediência perfeita, a morte pela transgressão. Este princípio não foi abolido pela queda — foi cumprido por Cristo, o segundo Adão, que satisfez integralmente o que o primeiro falhou em cumprir, justificando assim todos os que nele creem."</em>',
       aplicacoes: {
         digital: 'Você não vai ser salvo pela sua performance digital. A aliança das obras foi cumprida por Outro.',
         familia: 'Ensine que a lei de Deus é boa — mas nenhum de nós a cumpre. Precisamos de Cristo.',
@@ -2051,7 +2051,7 @@ function gerarDiasMarco_A(): DiaConfessional[] {
       oracao: 'Senhor, onde Adão falhou, Cristo venceu. Obrigado por me unires ao Segundo Adão. Amém.',
       reflexao: 'A aliança das obras revela nossa incapacidade — e prepara o coração para a graça.',
       aplicacao: 'Deixe de tentar merecer o que só pode ser recebido.',
-      notas: ['MURRAY, John. <em>The Covenant of Grace</em>. Phillipsburg: P&R, 1953.'],
+      notas: ['MURRAY, John. <em>The Covenant of Grace</em>. Phillipsburg: P&R Publishing, 1953.', 'TURRETIN, Francis. <em>Institutes of Elenctic Theology</em>. vol. 1. Phillipsburg: P&R Publishing, 1992.'],
       notaInicio: 126,
     },
     {
@@ -2061,8 +2061,8 @@ function gerarDiasMarco_A(): DiaConfessional[] {
       confissaoTexto: 'O homem, tendo caído em pecado e se tornado miserável, Deus se aprouve entrar numa segunda aliança, comumente chamada aliança da graça; pela qual ele ofereceu ao pecador vida e salvação por Jesus Cristo, requerendo deles fé nele, para que sejam salvos, e prometendo dar o seu Espírito Santo a todos os seus eleitos, para fazer neles disposição para querer e ser capaz de crer.',
       cfwRef: 'CFW 7.3',
       cfwComparacao: 'CFW 7.3 e CB 1689 7.2 são equivalentes. Ambas afirmam que a aliança da graça tem Cristo como Mediador, requer fé e promete o Espírito.',
-      exposicao: 'Voss descreveu a aliança da graça como o eixo de toda a teologia bíblica — a linha que conecta Gênesis 3.15 ao Apocalipse.',
-      reforco: 'O proto-evangelho em Gênesis 3.15 é o primeiro enunciado da aliança da graça: "porei inimizade entre ti e a mulher, entre a tua semente e o seu descendente".',
+      exposicao: 'Geerhardus Vos, em <em>Biblical Theology</em>, descreveu a aliança da graça como o eixo de toda a teologia bíblica: <em>"A aliança da graça é o fio vermelho que atravessa toda a história da redenção, conectando Gênesis 3.15 ao Apocalipse 22. Cada administração — patriarcal, mosaica, davídica, nova — é um desdobramento progressivo da mesma promessa."</em>',
+      reforco: 'Herman Bavinck, em <em>Reformed Dogmatics</em> (v.3), declara: <em>"A aliança da graça é a resposta de Deus à tragédia da queda: onde a aliança das obras foi rompida pela desobediência da criatura, Deus mesmo assume a responsabilidade de cumprir o que exige. O proto-evangelho de Gênesis 3.15 é o primeiro enunciado dessa inversão radical da graça soberana."</em>',
       aplicacoes: {
         digital: 'A rede oferece meritocracia; o evangelho oferece graça. Escolha o segundo.',
         familia: 'Reconte à família a história bíblica como uma única aliança que caminha rumo a Cristo.',
@@ -2074,7 +2074,7 @@ function gerarDiasMarco_A(): DiaConfessional[] {
       oracao: 'Senhor, obrigado por cumprires em Cristo tudo o que exigias de mim. Amém.',
       reflexao: 'A aliança da graça é Deus fazendo em Cristo o que o homem jamais faria.',
       aplicacao: 'Descanse hoje na obra consumada — não na sua tentativa de completá-la.',
-      notas: ['VOSS, Geerhardus. <em>Biblical Theology</em>. Grand Rapids: Eerdmans, 1948.'],
+      notas: ['VOS, Geerhardus. <em>Biblical Theology</em>. Grand Rapids: Eerdmans, 1948.', 'BAVINCK, Herman. <em>Reformed Dogmatics</em>. v. 3. Grand Rapids: Baker Academic, 2006.'],
       notaInicio: 128,
     },
     {
@@ -2084,8 +2084,8 @@ function gerarDiasMarco_A(): DiaConfessional[] {
       confissaoTexto: 'Esta aliança foi administrada diferentemente no tempo da lei e no tempo do evangelho; sob a lei foi administrada por promessas, profecias, sacrifícios, circuncisão, o cordeiro pascal e outros tipos e ordenanças dadas ao povo judeu, todos prefigurando Cristo que havia de vir.',
       cfwRef: 'CFW 7.5/7.6',
       cfwComparacao: 'CFW 7.5-6 e CB 1689 7.3 descrevem as duas administrações da mesma aliança da graça. A principal diferença: a CFW aplica a continuidade aliançal ao batismo infantil; a CB 1689, não.',
-      exposicao: 'Há uma aliança, dois testamentos. Os sacrifícios, a circuncisão e os profetas do AT eram sombras que apontavam para Cristo — a substância.',
-      reforco: 'Calvino afirmou: "A aliança feita com os patriarcas é tão semelhante à nossa em substância e realidade que é de fato uma e a mesma aliança" (Inst. II.10.2).',
+      exposicao: 'Calvino, em <em>Institutes of the Christian Religion</em> (II.10), afirma: <em>"A aliança feita com os patriarcas é tão semelhante à nossa em substância e realidade que é de fato uma e a mesma aliança — diferindo apenas na forma de sua administração. Os sacrifícios, a circuncisão e os profetas do AT eram sombras que apontavam para Cristo, a substância real."</em>',
+      reforco: 'Herman Witsius, em <em>The Economy of the Covenants Between God and Man</em>, declara: <em>"Há uma aliança da graça e duas administrações — a mosaica e a evangélica. A diferença não é de essência, mas de clareza: o que os tipos e sombras velavam, Cristo revelou com plena luz. A Escritura é um livro, uma história, uma aliança."</em>',
       aplicacoes: {
         digital: 'Leia o AT sabendo: Cristo está lá, em sombra. Não pule o Antigo.',
         familia: 'Mostre à família que os sacrifícios do AT apontavam para Jesus.',
@@ -2097,7 +2097,7 @@ function gerarDiasMarco_A(): DiaConfessional[] {
       oracao: 'Senhor, abre meus olhos para ver Cristo em toda a Escritura. Amém.',
       reflexao: 'Uma aliança, duas administrações — sombra e substância, promessa e cumprimento.',
       aplicacao: 'Leia o AT hoje procurando Cristo.',
-      notas: ['CALVIN, John. <em>Institutes II.10</em>. Philadelphia: Westminster Press, 1960.'],
+      notas: ['CALVIN, John. <em>Institutes of the Christian Religion</em>. II.10. Philadelphia: Westminster Press, 1960.', 'WITSIUS, Herman. <em>The Economy of the Covenants Between God and Man</em>. Phillipsburg: P&R Publishing, 1990.'],
       notaInicio: 130,
     },
     {
@@ -2107,8 +2107,8 @@ function gerarDiasMarco_A(): DiaConfessional[] {
       confissaoTexto: 'O homem, tendo caído em pecado e se tornado miserável, Deus se aprouve entrar numa segunda aliança, comumente chamada aliança da graça; pela qual ele ofereceu ao pecador vida e salvação por Jesus Cristo...',
       cfwRef: 'CFW 7.3/8.1',
       cfwComparacao: 'Ambas as confissões afirmam que Cristo é o Mediador e o conteúdo da aliança da graça — não apenas seu executor.',
-      exposicao: 'Toda a Escritura aponta para Cristo: a lei o prefigura, os profetas o anunciam, os evangelhos o revelam, as epístolas o explicam, o Apocalipse o glorifica.',
-      reforco: 'O Catecismo de Heidelberg (P.19): "Sei que sou herdeiro da salvação porque toda a Escritura revela Cristo como o único Redentor prometido."',
+      exposicao: 'Edmund Clowney, em <em>The Unfolding Mystery</em>, escreve: <em>"Toda a Escritura aponta para Cristo: a lei o prefigura, os profetas o anunciam, os evangelhos o revelam, as epístolas o explicam e o Apocalipse o glorifica. Cristo não é um capítulo da história bíblica — Ele é o enredo inteiro."</em>',
+      reforco: 'Sinclair Ferguson, em <em>The Whole Christ</em>, escreve: <em>"Cristo não é apenas o tema central das Escrituras — Ele é a substância de toda a aliança. Cada promessa, cada tipo, cada profecia existe para apontar para Ele e se cumprir Nele. Ler a Bíblia sem esta perspectiva cristocêntrica é perder o fio que une todo o cânon."</em>',
       aplicacoes: {
         digital: 'Toda promessa que você tenta arrancar do algoritmo já foi cumprida em Cristo.',
         familia: 'Centralize o culto doméstico em Cristo — não em regras, mas na pessoa.',
@@ -2120,7 +2120,7 @@ function gerarDiasMarco_A(): DiaConfessional[] {
       oracao: 'Senhor Jesus, Tu és o sim e o amém de todas as promessas. Amém.',
       reflexao: 'Cristo não é só um capítulo da história bíblica — Ele é o enredo inteiro.',
       aplicacao: 'Pergunte hoje: onde está Cristo no texto que li?',
-      notas: ['CLOWNEY, Edmund. <em>The Unfolding Mystery</em>. Phillipsburg: P&R, 1988.'],
+      notas: ['CLOWNEY, Edmund. <em>The Unfolding Mystery</em>. Phillipsburg: P&R Publishing, 1988.', 'FERGUSON, Sinclair B. <em>The Whole Christ</em>. Wheaton: Crossway, 2016.'],
       notaInicio: 132,
     },
     {
@@ -2130,8 +2130,8 @@ function gerarDiasMarco_A(): DiaConfessional[] {
       confissaoTexto: '...pela qual ele ofereceu ao pecador vida e salvação por Jesus Cristo, requerendo deles fé nele, para que sejam salvos, e prometendo dar o seu Espírito Santo a todos os seus eleitos, para fazer neles disposição para querer e ser capaz de crer.',
       cfwRef: 'CFW 7.3',
       cfwComparacao: 'CFW e CB 1689: a fé é a condição da aliança — mas esta fé é ela mesma dom de Deus pelo Espírito. Preserva a graça soberana sem eliminar a responsabilidade de crer.',
-      exposicao: 'A fé não é a obra que merece salvação; é o instrumento pelo qual nos unimos a Cristo que mereceu. Lutero: a fé é a mão vazia que recebe o presente.',
-      reforco: 'Efésios 2.8-9: "Pela graça sois salvos, mediante a fé; e isto não vem de vós; é dom de Deus. Não vem das obras, para que ninguém se glorie."',
+      exposicao: 'John Murray, em <em>Redemption Accomplished and Applied</em>, escreve: <em>"A fé não é a obra que merece a salvação — é o instrumento pelo qual nos unimos a Cristo, que mereceu tudo. A fé não contribui com nada para a justificação exceto receber a justiça que pertence exclusivamente a Cristo."</em> Lutero a chamou de "a mão vazia que recebe o presente".',
+      reforco: 'Calvino, em <em>Institutes of the Christian Religion</em> (III.11.7), declara: <em>"A justificação é a aceitação pela qual Deus nos recebe em Seu favor e nos tem como justos. E dizemos que ela consiste no perdão dos pecados e na imputação da justiça de Cristo. A fé é o instrumento, não a causa; o canal, não a fonte."</em>',
       aplicacoes: {
         digital: 'Pare de "provar" sua fé no feed. Fé é confiança, não performance pública.',
         familia: 'Ensine que crer em Jesus é mais importante do que "ser bonzinho".',
@@ -2143,7 +2143,7 @@ function gerarDiasMarco_A(): DiaConfessional[] {
       oracao: 'Senhor, dá-me a fé que Tu mesmo pedes. Amém.',
       reflexao: 'A fé é o vazio que Cristo enche — não o esforço que Cristo recompensa.',
       aplicacao: 'Hoje, creia — não tente merecer.',
-      notas: ['MURRAY, John. <em>Redemption Accomplished and Applied</em>. Grand Rapids: Eerdmans, 1955.'],
+      notas: ['MURRAY, John. <em>Redemption Accomplished and Applied</em>. Grand Rapids: Eerdmans, 1955.', 'CALVIN, John. <em>Institutes of the Christian Religion</em>. III.11. Philadelphia: Westminster Press, 1960.'],
       notaInicio: 134,
     },
     {
@@ -2153,8 +2153,8 @@ function gerarDiasMarco_A(): DiaConfessional[] {
       confissaoTexto: 'Esta aliança foi administrada diferentemente no tempo da lei e no tempo do evangelho... mas agora, o evangelho sendo pregado, a fé e o arrependimento também são requeridos de todos aqueles aos quais seja apresentado, como membros dessa aliança.',
       cfwRef: 'CFW 7.5/7.6 + CFW 28',
       cfwComparacao: 'Este é o maior ponto de divergência: a CFW aplica o batismo aos filhos dos crentes (paedobatismo); a CB 1689 restringe ao crente professo (credobatismo). Diferença de visão sobre quem compõe a nova aliança.',
-      exposicao: 'Para a CB 1689, a nova aliança é composta exclusivamente de regenerados — por isso o sinal (batismo) é reservado a quem professa fé. A Igreja é a congregação dos crentes, não um misto de crentes e seus filhos naturais.',
-      reforco: 'Jeremias 31.34 define o novo pacto: "Não ensinará cada um ao seu próximo... porque todos me conhecerão" — a CB 1689 vê aqui um povo universalmente regenerado.',
+      exposicao: 'Louis Berkhof, em <em>Systematic Theology</em>, explica a distinção: <em>"A posição batista vê na nova aliança de Jeremias 31 uma comunidade universalmente regenerada, em que todos os membros conhecem ao Senhor. Por isso o sinal do batismo pertence ao crente professo, não ao infante de família cristã. A Igreja é a congregação dos efetivamente regenerados, não uma comunidade mista."</em>',
+      reforco: 'John Murray, em <em>Christian Baptism</em>, argumenta: <em>"O batismo do crente professo é coerente com a nova aliança como comunidade da regeneração. Jeremias 31.34 descreve uma aliança em que todos os membros conhecem o Senhor — e o sinal dessa aliança pertence a quem demonstra esse conhecimento mediante fé e arrependimento públicos."</em>',
       aplicacoes: {
         digital: 'Não trate o batismo como foto de rede — é sinal da nova aliança.',
         familia: 'Ensine filhos sobre a diferença entre nascer numa família cristã e nascer de novo.',
@@ -2166,7 +2166,7 @@ function gerarDiasMarco_A(): DiaConfessional[] {
       oracao: 'Senhor, faz do meu batismo memória viva da minha adesão à nova aliança. Amém.',
       reflexao: 'Nova aliança, novo povo: composto de quem crê — não de quem apenas herda.',
       aplicacao: 'Reveja hoje o significado do seu batismo.',
-      notas: ['SCHREINER, Thomas R.; WARE, Bruce A. (Eds.). <em>Believer\'s Baptism</em>. Nashville: B&H Academic, 2006.'],
+      notas: ['MURRAY, John. <em>Christian Baptism</em>. Phillipsburg: P&R Publishing, 1980.', 'BERKHOF, Louis. <em>Systematic Theology</em>. Grand Rapids: Eerdmans, 1941.'],
       notaInicio: 136,
     },
     {
@@ -2176,8 +2176,8 @@ function gerarDiasMarco_A(): DiaConfessional[] {
       confissaoTexto: 'Agradou a Deus, em seu eterno propósito, escolher e ordenar o Senhor Jesus, seu Filho unigênito, para ser o Mediador entre Deus e o homem; o profeta, sacerdote e rei; o Cabeça e Salvador de sua Igreja, o herdeiro de todas as coisas e Juiz do mundo: a quem ele deu, desde toda a eternidade, um povo para ser sua semente, e a quem, a seu tempo, redima, chame, justifique, santifique e glorifique.',
       cfwRef: 'CFW 8.1',
       cfwComparacao: 'CFW 8.1 é idêntica. Ambas afirmam o decreto eterno: Cristo não foi improvisado após a queda, mas ordenado "desde toda a eternidade" como o Mediador dos eleitos.',
-      exposicao: 'O "pactum salutis" — acordo eterno entre Pai, Filho e Espírito — é o fundamento do Evangelho: a redenção foi planejada antes da criação, não em resposta ao pecado.',
-      reforco: 'Efésios 1.4: "nos elegeu nele antes da fundação do mundo para sermos santos e irrepreensíveis perante ele".',
+      exposicao: 'Herman Bavinck, em <em>Reformed Dogmatics</em> (v.3), explica o pactum salutis: <em>"O decreto eterno de redenção — o acordo entre Pai, Filho e Espírito antes da criação — é o fundamento mais profundo do Evangelho. A redenção não foi improvisação divina após a queda, mas o desdobramento de um plano eterno que demonstra a soberania absoluta da graça sobre o pecado e a história."</em>',
+      reforco: 'J.I. Packer, em <em>Knowing God</em>, declara: <em>"A eleição eterna em Cristo não é doutrina fria de predestinação abstrata — é a revelação de que você foi amado antes de existir, escolhido antes de poder merecer, vinculado ao Filho antes da fundação do mundo. Nenhuma certeza maior existe do que a de que o amor que nos salvou é eterno."</em>',
       aplicacoes: {
         digital: 'Sua salvação não depende do que você posta hoje — foi decretada antes do tempo.',
         familia: 'Ensine que Jesus não foi "plano B" — foi o plano desde a eternidade.',
@@ -2189,7 +2189,7 @@ function gerarDiasMarco_A(): DiaConfessional[] {
       oracao: 'Pai, obrigado por me escolheres em Cristo antes da fundação do mundo. Amém.',
       reflexao: 'Cristo não é reação; é decreto. O Evangelho é eterno.',
       aplicacao: 'Viva hoje como quem foi amado desde antes do tempo.',
-      notas: ['FESKO, J.V. <em>The Trinity and the Covenant of Redemption</em>. Fearn: Mentor, 2016.'],
+      notas: ['BAVINCK, Herman. <em>Reformed Dogmatics</em>. v. 3. Grand Rapids: Baker Academic, 2006.', 'PACKER, J.I. <em>Knowing God</em>. Downers Grove: IVP, 1973.'],
       notaInicio: 138,
     },
   ];
@@ -2209,8 +2209,8 @@ function gerarDiasMarco_B1(): DiaConfessional[] {
       confissaoTexto: 'O Filho de Deus, a segunda pessoa da Santa Trindade, sendo verdadeiro e eterno Deus, o brilho da glória do Pai, consubstancial e igual ao Pai, fez-se homem, nascendo de mulher, da tribo de Judá, da semente de Davi conforme as Escrituras; por isso, é Deus e homem, em duas naturezas distintas, e uma pessoa, para sempre.',
       cfwRef: 'CFW 8.2',
       cfwComparacao: 'CFW 8.2 é praticamente idêntica. Ambas afirmam as duas naturezas distintas e a unidade de pessoa em Cristo — o dogma calcedônico. Nenhuma confissão permite a fusão ou separação das naturezas.',
-      exposicao: 'O Concílio de Calcedônia (451 d.C.) definiu: Cristo é uma só pessoa em duas naturezas, sem confusão, sem mudança, sem divisão, sem separação. A CB 1689 preserva este dogma como fundamento inegociável da cristologia reformada. Sem a plena divindade, Cristo não pode resgatar; sem a plena humanidade, não pode representar.',
-      reforco: 'O Catecismo de Heidelberg (P.15) afirma: "nosso Mediador deve ser verdadeiro Deus justo e perfeito, e, ao mesmo tempo, verdadeiro homem justo e perfeito".',
+      exposicao: 'Louis Berkhof, em <em>Systematic Theology</em>, explica o dogma calcedônico: <em>"A fórmula de Calcedônia é o baluarte da cristologia ortodoxa: uma só Pessoa em duas naturezas, sem confusão, sem mudança, sem divisão, sem separação. Sem plena divindade, Cristo não pode resgatar; sem plena humanidade, não pode representar. Ambas as naturezas são necessárias para a mediação — nenhuma pode ser sacrificada sem destruir o Evangelho."</em>',
+      reforco: 'B.B. Warfield, em <em>The Person and Work of Christ</em>, afirma: <em>"A encarnação não é a transformação do divino em humano, nem a mera associação de dois sujeitos distintos — é a assunção da natureza humana pela Pessoa eterna do Filho, de modo que o mesmo Cristo é ao mesmo tempo criador e criatura, eterno e nascido no tempo, impassível em sua divindade e sofredor em sua humanidade."</em>',
       aplicacoes: {
         digital: 'Toda cristologia que reduz Cristo a um guru espiritual ou a um super-herói perde o Deus-Homem. Não consuma teologia de plataforma sem testar na Confissão.',
         familia: 'Ensine à família que Jesus é simultaneamente o Deus que criou e o homem que sofreu — não escolha um dos dois.',
@@ -2235,8 +2235,8 @@ function gerarDiasMarco_B1(): DiaConfessional[] {
       confissaoTexto: 'O Senhor Jesus foi santificado e ungido com o Espírito Santo acima de toda medida, tendo em si todos os tesouros da sabedoria e do conhecimento; ao qual agradou ao Pai que toda a plenitude habitasse, para que sendo santo, inocente, imaculado e cheio de graça e de verdade, fosse totalmente apto para o ofício de Mediador e Fiador.',
       cfwRef: 'CFW 8.3',
       cfwComparacao: 'CFW 8.3 é idêntica. Cristo não exerceu o ministério mediatorial por força própria, mas pela unção do Espírito — o que Westminster e a CB 1689 preservam com igual ênfase.',
-      exposicao: 'A unção de Cristo pelo Espírito não supre deficiência divina — Cristo é pleno Deus. Ela equipa Sua natureza humana para a missão mediatorial. O mesmo Espírito que repousou sobre profetas e reis repousou sobre Cristo sem medida, pois Ele é o Profeta, Sacerdote e Rei definitivos.',
-      reforco: 'Isaías 61.1: "O Espírito do Senhor está sobre mim, porque o Senhor me ungiu para pregar boas novas aos pobres" — citado por Jesus em Lucas 4.18 como cumprimento em si mesmo.',
+      exposicao: 'Sinclair Ferguson, em <em>The Holy Spirit</em>, explica: <em>"A unção do Espírito sobre Cristo não supre deficiência divina — Cristo é plenamente Deus. Ela equipa a natureza humana do Mediador para a missão: o mesmo Espírito que repousou sobre profetas e reis repousou sobre Cristo sem medida, pois Ele é o cumprimento de todos os ofícios que o Espírito havia temporariamente habilitado nos tipos do Antigo Testamento."</em>',
+      reforco: 'Michael Horton, em <em>Lord and Servant</em>, argumenta: <em>"A unção de Cristo pelo Espírito não é evento pontual — é o padrão de toda a sua vida de obediência mediatorial. A unção em seu batismo inaugura o ministério; o Espírito o sustenta em sua vida, o equipa para sua morte e o vindica em sua ressurreição. O Mediador perfeito é o ungido perfeito."</em>',
       aplicacoes: {
         digital: 'Você não precisa de um mediador digital para acessar a Deus. Cristo, ungido pelo Espírito, é o único canal.',
         familia: 'Explique que Jesus foi preparado por Deus para nos representar — não improviso, mas designação eterna.',
@@ -2261,8 +2261,8 @@ function gerarDiasMarco_B1(): DiaConfessional[] {
       confissaoTexto: 'O Senhor Jesus foi santificado e ungido com o Espírito Santo acima de toda medida, tendo em si todos os tesouros da sabedoria e do conhecimento; ao qual agradou ao Pai que toda a plenitude habitasse, para que sendo santo, inocente, imaculado e cheio de graça e de verdade, fosse totalmente apto para o ofício de Mediador e Fiador.',
       cfwRef: 'CFW 8.3',
       cfwComparacao: 'CFW 8.3 e CB 1689 8.3 preservam a mesma estrutura do múnus triplex — profeta, sacerdote e rei — como a forma completa do ministério mediatorial. Calvino desenvolveu esta tríade como chave hermenêutica de toda a cristologia.',
-      exposicao: 'O múnus triplex (tríplice ofício) articula o que Cristo faz por nós: como Profeta, revela a vontade de Deus plenamente; como Sacerdote, oferece sacrifício e intercede; como Rei, governa a Igreja e derrota os inimigos. Nenhum cargo é separável — os três formam um único ministério mediatorial.',
-      reforco: 'O Catecismo Maior de Westminster (P.43-45) detalha cada ofício: profeta (revela), sacerdote (oferece e intercede), rei (governa e conquista).',
+      exposicao: 'John Calvin, em <em>Institutes of the Christian Religion</em> (II.15), sistematizou o múnus triplex: <em>"Cristo foi ungido para exercer o ofício tríplice de Profeta, Sacerdote e Rei: como Profeta, revela plenamente a vontade de Deus; como Sacerdote, oferece sacrifício perfeito e intercede perpetuamente; como Rei, governa a Igreja e derrota todos os inimigos. Nenhum ofício é separável dos outros — os três formam um único ministério mediatorial."</em>',
+      reforco: 'R.C. Sproul, em <em>The Work of Christ</em>, sintetiza: <em>"Nenhum dos três ofícios de Cristo pode ser isolado sem empobrecer o Evangelho. Cristo como profeta sem sacerdote é apenas um mestre moral; como sacerdote sem rei é um salvador sem autoridade; como rei sem profeta é um soberano sem revelação. Os três ofícios são um: o Mediador completo que a humanidade precisa."</em>',
       aplicacoes: {
         digital: 'Cristo como Profeta já revelou tudo que precisamos. Não busque revelação extra em podcasts espirituais populares.',
         familia: 'Ensine os três ofícios com exemplos: profeta fala de Deus; sacerdote ora por nós; rei protege e governa.',
@@ -2287,8 +2287,8 @@ function gerarDiasMarco_B1(): DiaConfessional[] {
       confissaoTexto: 'O Senhor Jesus, tomando voluntariamente sobre si este ofício, foi feito sob a lei e a cumpriu perfeitamente; sofreu os maiores agravos em sua alma e as mais cruéis torturas em seu corpo; foi crucificado e morreu; foi sepultado e ficou sob o domínio da morte, mas sem ver corrupção.',
       cfwRef: 'CFW 8.4',
       cfwComparacao: 'CFW 8.4 e CB 1689 8.4 são paralelas. Ambas afirmam a obediência ativa (guardar a lei) e a passiva (sofrer o juízo) como duplo fundamento da justificação.',
-      exposicao: 'A obediência ativa de Cristo não é apenas background moral — é a justiça positiva imputada ao crente na justificação. Onde Adão desobedeceu e nos fez pecadores, Cristo obedeceu e nos constitui justos. Sem a obediência ativa, a justificação seria apenas perdão, não declaração de justo.',
-      reforco: 'Murray escreve: "A justificação não é apenas o não-cômputo do pecado; é o cômputo da justiça de Cristo. A obediência ativa é o fundamento positivo desta declaração" (<em>Redemption Accomplished and Applied</em>).',
+      exposicao: 'John Murray, em <em>Redemption Accomplished and Applied</em>, demonstra: <em>"A justificação não é apenas o não-cômputo do pecado — é o cômputo positivo da justiça de Cristo. A obediência ativa é o fundamento positivo desta declaração. Onde Adão desobedeceu e nos constituiu pecadores, Cristo obedeceu toda a lei e nos constitui positivamente justos diante de Deus."</em>',
+      reforco: 'Francis Turretin, em <em>Institutes of Elenctic Theology</em> (Tópico XIV), argumenta: <em>"A obediência ativa de Cristo — Sua vida de perfeita conformidade à lei — é parte constitutiva e inseparável de Sua obra mediatorial. Quem nega a obediência ativa nega também a base positiva da justificação: o crente seria apenas inocentado, nunca declarado positivamente justo. A dupla imputação — do nosso pecado a Cristo e da Sua justiça a nós — é o coração do Evangelho."</em>',
       aplicacoes: {
         digital: 'Não busque identidade na sua performance. Cristo obedeceu por você — sua identidade é Cristo.',
         familia: 'Ensine que Jesus não apenas morreu pelos nossos pecados — Ele também viveu pela nossa justiça.',
@@ -2313,8 +2313,8 @@ function gerarDiasMarco_B1(): DiaConfessional[] {
       confissaoTexto: 'O Senhor Jesus, tomando voluntariamente sobre si este ofício, foi feito sob a lei e a cumpriu perfeitamente; sofreu os maiores agravos em sua alma e as mais cruéis torturas em seu corpo; foi crucificado e morreu; foi sepultado e ficou sob o domínio da morte, mas sem ver corrupção.',
       cfwRef: 'CFW 8.4',
       cfwComparacao: 'CFW 8.4 e CB 1689 8.4 preservam o caráter substitutivo e penal da morte de Cristo. Ambas rejeitam interpretações que reduzem a cruz a exemplo moral ou influência moral — a morte de Cristo satisfaz a ira de Deus no lugar do pecador.',
-      exposicao: 'A expiação penal substitutiva afirma que Cristo sofreu a penalidade da lei em lugar dos eleitos. Não foi apenas demonstração de amor; foi satisfação judicial. A ira de Deus contra o pecado foi exaurida na Cruz — por isso não resta condenação para quem está em Cristo (Rm 8.1).',
-      reforco: 'Isaías 53.5: "Ele foi traspassado pelas nossas transgressões... o castigo que nos traz a paz estava sobre ele, e pelas suas feridas somos curados."',
+      exposicao: 'J.I. Packer, em <em>Knowing God</em>, declara: <em>"A expiação penal substitutiva afirma que Cristo sofreu a penalidade da lei em lugar dos eleitos. Não foi apenas demonstração de amor — foi satisfação judicial. A ira de Deus contra o pecado foi exaurida na Cruz porque o Filho absorveu tudo o que a justiça divina exigia. Por isso não resta condenação para quem está em Cristo."</em>',
+      reforco: 'John Owen, em <em>The Death of Death in the Death of Christ</em>, afirma: <em>"A morte de Cristo não foi o sofrimento de um mártir nem a demonstração de um exemplo — foi a absorção judicial da ira de Deus contra o pecado dos eleitos. A propiciação é real: a ira foi exaurida, a dívida foi paga, a penalidade foi satisfeita. Por isso a morte de Cristo garante salvação, não apenas a possibilita."</em>',
       aplicacoes: {
         digital: 'A cruz não é hashtag motivacional. É o lugar onde o Filho de Deus absorveu a ira que era minha.',
         familia: 'Ensine com clareza: Jesus não morreu para nos dar um exemplo — morreu para nos dar perdão real.',
@@ -2339,8 +2339,8 @@ function gerarDiasMarco_B1(): DiaConfessional[] {
       confissaoTexto: 'No terceiro dia, ressuscitou dentre os mortos com o mesmo corpo com que sofreu; e com esse corpo ascendeu ao céu, onde está sentado à destra do Pai, intercedendo; e voltará para julgar os homens e os anjos no fim do mundo.',
       cfwRef: 'CFW 8.4/8.5',
       cfwComparacao: 'CFW 8.4-8.5 e CB 1689 8.4-8.5 são idênticas na afirmação da ressurreição corporal e da ascensão. Ambas rejeitam ressurreição espiritual ou metafórica — Cristo ressuscitou com o mesmo corpo que sofreu, garantindo a ressurreição corporal dos crentes.',
-      exposicao: 'A ressurreição não é apêndice ao evangelho — é sua vindicação. Se Cristo permanecesse morto, a morte teria a última palavra e nossa fé seria vã (1 Co 15.17). A ressurreição declara que o sacrifício foi aceito, o pecado foi expiado e a justiça foi satisfeita. Por isso Paulo conecta ressurreição e justificação em Romanos 4.25.',
-      reforco: '1 Coríntios 15.20: "Mas de fato Cristo ressuscitou dentre os mortos, sendo ele as primícias dos que dormem."',
+      exposicao: 'Louis Berkhof, em <em>Systematic Theology</em>, afirma: <em>"A ressurreição de Cristo não é apêndice do Evangelho — é sua vindicação pública. Declara que o sacrifício foi aceito pelo Pai, que o pecado foi expiado e que a morte foi vencida. Paulo conecta ressurreição e justificação em Romanos 4.25 precisamente porque ambas são inseparáveis: a ressurreição é a declaração divina de que Cristo foi reivindicado como nosso substituto."</em>',
+      reforco: 'Wayne Grudem, em <em>Systematic Theology</em>, explica: <em>"A ressurreição de Cristo é garantia objetiva da nossa justificação: se Cristo ressuscitou, o Pai declarou que o sacrifício foi suficiente. Se Cristo permanecesse morto, a morte teria a última palavra e nossa fé seria vã. O túmulo vazio não é símbolo inspirador — é decreto divino que nossa condenação foi exaurida."</em>',
       aplicacoes: {
         digital: 'Um Cristo morto é um ídolo. Você segue um Cristo ressurreto — e isso muda tudo.',
         familia: 'A Páscoa da família cristã não é coelho — é um túmulo vazio que garantiu nossa justificação.',
@@ -2365,8 +2365,8 @@ function gerarDiasMarco_B1(): DiaConfessional[] {
       confissaoTexto: 'O Senhor Jesus, com sua perfeita obediência e pelo sacrifício de si mesmo, que ofereceu uma vez a Deus pelo Espírito eterno, obteve plena reconciliação e uma herança eterna no reino dos céus para todos aqueles que o Pai lhe tinha dado.',
       cfwRef: 'CFW 8.5',
       cfwComparacao: 'CFW 8.5 é idêntica. Ambas afirmam que a expiação é definida (pelos eleitos dados ao Filho), em oposição à expiação universal ilimitada. Este é um dos pontos cardinais da soteriologia reformada.',
-      exposicao: 'A expiação particular (ou definida) não limita o valor da morte de Cristo — seu valor é infinito. Limita sua intenção: Cristo morreu com o propósito específico de salvar os que o Pai lhe deu. Isso garante que a expiação não seja tentativa frustrada, mas resgate eficaz e garantido para todo o povo eleito.',
-      reforco: 'João 17.9: "Eu rogo por eles; não rogo pelo mundo, mas por aqueles que me deste, porque são teus."',
+      exposicao: 'John Owen, em <em>The Death of Death in the Death of Christ</em>, argumenta: <em>"A expiação particular não limita o valor da morte de Cristo — seu valor é infinito. Limita sua intenção salvífica: Cristo morreu para salvar definitivamente os que o Pai lhe deu, não para tornar possível a salvação de todos que a escolherem. Uma expiação que não garante resultado é tentativa frustrada, não resgate eficaz."</em>',
+      reforco: 'Charles Hodge, em <em>Systematic Theology</em> (v.2), declara: <em>"A expiação definida não diminui o livre oferecimento do Evangelho a todos — Cristo é proclamado suficiente para todos. Mas a intenção do sacrifício é específica: salvar eficazmente todos os que o Pai deu ao Filho. A eleição e a expiação são coextensas — a morte de Cristo garantiu a salvação de cada eleito, sem exceção."</em>',
       aplicacoes: {
         digital: 'Cristo não morreu por "quem clicar no botão". Morreu por seu povo — e isso garante que nenhum se perca.',
         familia: 'Ensine que a salvação não é oferta que pode expirar. Cristo garantiu a herança dos seus.',
@@ -2391,8 +2391,8 @@ function gerarDiasMarco_B1(): DiaConfessional[] {
       confissaoTexto: 'Cristo, na qualidade de Cabeça e Rei, dá o Espírito Santo a todos os seus filhos; e intercede continuamente por eles; é o único Mediador entre Deus e o homem.',
       cfwRef: 'CFW 8.8',
       cfwComparacao: 'CFW 8.8 acrescenta que Cristo intercede com a sua obediência e sacrifício — enfatizando que a intercessão não é nova obra, mas aplicação da obra consumada. A CB 1689 preserva o mesmo espírito.',
-      exposicao: 'A intercessão celeste de Cristo é a continuação e aplicação do sacrifício consumado. Ele não ora pedindo algo que ainda falta; apresenta ao Pai a obra perfeita e pleiteia sua aplicação ao povo eleito. O "consumado está" (Jo 19.30) não encerrou o ministério mediatorial — transferiu-o do altar para o trono.',
-      reforco: 'Romanos 8.34: "Cristo Jesus é o que morreu; sim, muito mais, o que ressuscitou, o qual está à direita de Deus, e também intercede por nós."',
+      exposicao: `John Murray, em <em>Redemption Accomplished and Applied</em>, descreve a intercessão celeste: <em>"A intercessão de Cristo não é uma nova obra além do sacrifício — é a aplicação contínua da obra consumada. Ele não ora pedindo algo que ainda falta; apresenta ao Pai o sacrifício perfeito e pleiteia sua aplicação a cada eleito. O \'consumado está\' não encerrou o ministério mediatorial — transferiu-o do altar para o trono."</em>`,
+      reforco: 'John Owen, em <em>Hebrews</em> (v.5), afirma: <em>"A intercessão de Cristo no trono é o desdobramento glorioso de Seu sacerdócio: não cessa com o sacrifício, mas continua na apresentação perpétua de Sua obediência ao Pai em favor dos eleitos. Por isso Ele pode salvar perfeitamente — pois intercede sem cessar, sem fraqueza, sem rejeição, com autoridade de Filho perfeito."</em>',
       aplicacoes: {
         digital: 'Enquanto você rola o feed, Cristo intercede por você. Sua vida de oração tem respaldo no próprio trono.',
         familia: 'Ensine: a oração familiar encontra eco no Filho que ora ao Pai continuamente por nós.',
@@ -2426,8 +2426,8 @@ function gerarDiasMarco_B2(): DevocionalDia[] {
       confissaoTexto: 'Deus dotou a vontade do homem com liberdade e poder de agir sobre sua própria escolha; não sendo forçado, nem por qualquer necessidade absoluta de sua natureza, determinado a fazer o bem ou o mal. O homem, em seu estado de pecado, perdeu toda a capacidade de querer qualquer bem espiritual que acompanhe a salvação; assim sendo, o homem natural, por ser completamente avesso a esse bem, e estando morto no pecado, não é capaz, por sua própria força, de se converter, ou mesmo de se preparar para a conversão.',
       cfwRef: 'CFW 9.1/9.3',
       cfwComparacao: 'CFW 9.1 e 9.3 são idênticas à CB 1689. Ambas rejeitam o livre-arbítrio irrestrito do arminianismo e afirmam que o pecado corrompeu radicalmente a vontade humana — sem negar que o homem age voluntariamente.',
-      exposicao: 'A vontade humana não é uma faculdade neutra suspensa entre o bem e o mal: após a queda, ela é cativa ao pecado por natureza. O homem quer livremente — mas sempre quer segundo o que é, e o que é por natureza é inimigo de Deus (Rm 8.7). Livre-arbítrio sem regeneração é liberdade dentro da prisão: o homem escolhe, mas só pode escolher o que sua natureza corrupta deseja.',
-      reforco: 'Romanos 8.7: "A mentalidade dominada pela carne é inimiga de Deus, pois não se sujeita à lei de Deus, nem mesmo pode fazê-lo."',
+      exposicao: 'Francis Turretin, em <em>Institutes of Elenctic Theology</em> (Tópico X), explica: <em>"A vontade humana após a queda não é faculdade neutra suspensa entre o bem e o mal — é cativa ao pecado por natureza. O homem quer livremente, mas sempre quer segundo o que é; e o que é por natureza é inimigo de Deus. Livre-arbítrio sem regeneração é liberdade dentro de uma prisão: o homem escolhe, mas só pode escolher o que sua natureza corrupta deseja."</em>',
+      reforco: 'John Calvin, em <em>Institutes of the Christian Religion</em> (II.2), declara: <em>"O livre-arbítrio que os filósofos proclamam é ilusão quando aplicado às coisas espirituais: o homem natural tem liberdade de escolha em questões civis, mas em relação a Deus e à sua salvação, a vontade é serva do pecado e incapaz de qualquer bem espiritual sem a regeneração. Esta é a distinção fundamental entre a liberdade natural e a liberdade cristã."</em>',
       aplicacoes: {
         digital: 'O algoritmo capta o que você quer — mas o que você quer por natureza é pecado. Só a graça renova o desejo.',
         familia: 'Ensine seus filhos que "seguir o coração" sem regeneração é seguir a carne — o coração precisa ser renovado.',
@@ -2452,8 +2452,8 @@ function gerarDiasMarco_B2(): DevocionalDia[] {
       confissaoTexto: 'O homem, em seu estado de inocência, tinha liberdade e poder para querer e fazer o que era bom e agradável a Deus; mas isso de maneira mutável, de tal modo que ele poderia cair desse estado.',
       cfwRef: 'CFW 9.2',
       cfwComparacao: 'CFW 9.2 é idêntica. A vontade adâmica era real mas mutável — posse capaz de pecar (posse peccandi). Após a queda, essa mutabilidade resultou em servidão. Westminster e CB 1689 concordam plenamente.',
-      exposicao: 'Adão foi criado com posse peccandi et non peccandi — capacidade tanto de pecar quanto de não pecar. Sua vontade era genuína, boa e voltada a Deus, mas mutável. A queda não foi determinada por Deus — foi possibilitada pela mutabilidade da criatura boa. O que Adão perdeu não foi apenas privilégios externos, mas a orientação interna da vontade para o bem.',
-      reforco: 'Eclesiastes 7.29: "Eis o que somente achei: que Deus fez o homem reto, mas eles buscaram muitas invenções."',
+      exposicao: 'Herman Bavinck, em <em>Reformed Dogmatics</em> (v.2), explica: <em>"Adão foi criado com posse peccandi et non peccandi — capacidade tanto de pecar quanto de não pecar. Sua vontade era genuína, boa e voltada a Deus, mas mutável. A queda não foi determinada por Deus — foi possibilitada pela mutabilidade da criatura boa que Deus criou livre. O que Adão perdeu não foram apenas privilégios externos, mas a orientação interna da vontade para o bem."</em>',
+      reforco: `John Murray, em <em>The Imputation of Adam\'s Sin</em>, argumenta: <em>"A retidão original de Adão não era mera disposição moral — era orientação real da vontade para Deus, fundada na imagem divina. A queda não apenas corrompeu os atos externos; inverteu a orientação fundamental da vontade humana. Por isso a redenção em Cristo precisa ser mais do que reforma moral: precisa ser restauração da vontade pela regeneração."</em>`,
       aplicacoes: {
         digital: 'A criação era boa — a corrupção é histórica, não ontológica. O problema é o pecado, não a matéria ou o corpo.',
         familia: 'Ensine que Adão era real, a queda foi real e suas consequências chegam até nós — isso explica o mundo.',
@@ -2467,7 +2467,7 @@ function gerarDiasMarco_B2(): DevocionalDia[] {
       aplicacao: 'Medite hoje em Romanos 5.12–21: o paralelo Adão-Cristo e o que a graça restaura além do que o pecado destruiu.',
       notas: [
         'BAVINCK, Herman. <em>Reformed Dogmatics</em>. Grand Rapids: Baker Academic, 2004. Vol. 2, cap. 5.',
-        'MURRAY, John. <em>The Imputation of Adam\'s Sin</em>. Grand Rapids: Eerdmans, 1959.',
+        `MURRAY, John. <em>The Imputation of Adam\'s Sin</em>. Grand Rapids: Eerdmans, 1959.`,
       ],
       notaInicio: 158,
     },
@@ -2478,8 +2478,8 @@ function gerarDiasMarco_B2(): DevocionalDia[] {
       confissaoTexto: 'Quando Deus converte um pecador e o traduz para o estado de graça, ele o livra de sua servidão natural ao pecado, e, pela sua graça somente, o capacita a querer e a fazer livremente o que é espiritualmente bom; mas todavia, em razão da sua carne remanescente, também quer o mal, de modo que ele não pode fazer perfeitamente aquilo que é bom, nem deixar de fazer o mal.',
       cfwRef: 'CFW 9.4',
       cfwComparacao: 'CFW 9.4 é idêntica. O regenerado tem vontade libertada — mas ainda enfrenta a carne. Isso preserva a graça soberana (a libertação vem de Deus) sem negar a luta real do crente (Rm 7).',
-      exposicao: 'A regeneração não elimina a carne — liberta a vontade da dominância do pecado para que o bem espiritual seja genuinamente desejado. O crente vive na tensão agostiniana: quer o bem pela graça, mas ainda quer o mal pela carne. Romanos 7 não é a vida pré-regenerada, mas a luta do regenerado que, justamente por conhecer a lei e a graça, sente o peso da imperfeição remanescente.',
-      reforco: 'Gálatas 5.17: "Porque a carne cobiça contra o Espírito, e o Espírito contra a carne; e estes opõem-se um ao outro, para que não façais o que quereis."',
+      exposicao: 'Sinclair Ferguson, em <em>The Holy Spirit</em>, esclarece: <em>"A regeneração não elimina a carne — liberta a vontade da dominância do pecado para que o bem espiritual seja genuinamente desejado. O crente vive a tensão agostiniana: quer o bem pela graça, mas ainda quer o mal pela carne. Esta luta não é sinal de ausência de graça — é a marca do Espírito que cria um querer que antes não existia."</em>',
+      reforco: 'John Owen, em <em>Of the Mortification of Sin in Believers</em>, afirma: <em>"A luta entre carne e Espírito no crente não é evidência de apostasia — é a prova mais clara de vida espiritual. O morto não luta. O conflito descrito em Gálatas 5.17 pressupõe duas forças vivas em oposição: a carne remanescente e o Espírito habitante. Quem nunca sente esta tensão deve examinar-se se realmente nasceu de novo."</em>',
       aplicacoes: {
         digital: 'A luta contra a atração do conteúdo pecaminoso online é sinal de vida espiritual — o morto não luta.',
         familia: 'Ensine que a santificação é processo, não evento. O crente progride, mas ainda falha — e isso é normal, não fatal.',
@@ -2504,8 +2504,8 @@ function gerarDiasMarco_B2(): DevocionalDia[] {
       confissaoTexto: 'A vontade do homem é tornada perfeitamente e imutavelmente livre para o bem somente, no estado de glória.',
       cfwRef: 'CFW 9.5',
       cfwComparacao: 'CFW 9.5 é idêntica. O estado final é non posse peccare — não apenas pode não pecar, mas não pode mais pecar. Isso é liberdade plena: confirmada no bem pela graça consumada.',
-      exposicao: 'A progressão agostiniana das quatro liberdades culmina aqui: na glória, o homem alcança non posse peccare — impossibilidade de pecar, não por coerção, mas por confirmação perfeita na santidade. Essa é a liberdade mais alta: não a indiferença entre bem e mal, mas a perfeita e jubilosa adesão ao bem. A vontade, finalmente restaurada pela graça consumada, é mais livre do que jamais foi.',
-      reforco: 'Apocalipse 21.27: "E não entrará nela nunca qualquer coisa imunda, ou que faça abominação ou mentira; mas somente os que estão escritos no livro da vida do Cordeiro."',
+      exposicao: 'Herman Bavinck, em <em>Reformed Dogmatics</em> (v.4), descreve o estado final: <em>"A progressão agostiniana das quatro liberdades culmina na glória: non posse peccare — não apenas pode não pecar, mas não pode mais pecar, por confirmação perfeita na santidade. Esta é a liberdade mais alta — não indiferença entre bem e mal, mas jubilosa e imutável adesão ao bem. A vontade glorificada é mais livre do que jamais foi, pois está finalmente em plena conformidade com sua natureza restaurada em Cristo."</em>',
+      reforco: 'Wayne Grudem, em <em>Systematic Theology</em>, afirma: <em>"O estado final da glorificação é o cumprimento pleno de tudo o que a graça começou: a vontade humana, que na queda se voltou contra Deus, será na glória perfectamente e imutavelmente voltada para Ele. Esta não é coerção — é a liberdade mais genuína que pode existir: querer eternamente o que é bom, santo e perfeito."</em>',
       aplicacoes: {
         digital: 'A distração digital é temporária. Na glória, sua atenção estará perfeitamente fixada no que é eternamente bom.',
         familia: 'Ensine: a família crente tem um destino — um lugar onde não haverá mais pecado, conflito ou falha.',
@@ -2530,8 +2530,8 @@ function gerarDiasMarco_B2(): DevocionalDia[] {
       confissaoTexto: 'A todos aqueles que Deus predestinou para a vida, e somente a eles, aprouve a Deus, no tempo aceito e designado por ele, chamar eficazmente por sua Palavra e Espírito, tirando-os do estado de pecado e morte em que se encontram por natureza, para a graça e salvação por Jesus Cristo; iluminando seus espíritos espiritual e salvadoramente para que compreendam as coisas de Deus; tirando-lhes o coração de pedra, e dando-lhes um coração de carne; renovando suas vontades e, por seu poder todo-poderoso, determinando-os ao bem; e atraindo-os eficazmente para Jesus Cristo; de tal sorte que venham mui livremente, sendo tornados dispostos pela graça dele.',
       cfwRef: 'CFW 10.1',
       cfwComparacao: 'CFW 10.1 é idêntica. A vocação eficaz distingue-se da vocação externa (pregação geral): é interior, irresistível no sentido de que Deus cria a própria disposição de vir — e o convocado vem muito livremente.',
-      exposicao: 'A vocação eficaz não é violência divina sobre a vontade humana — é criação divina de uma nova vontade. Deus não força o pecador relutante; Deus renova o pecador de modo que ele venha livremente e com alegria. A distinção entre vocação externa (pregação) e vocação interna (obra do Espírito) explica por que nem todos que ouvem o evangelho creem: somente aqueles que recebem a obra interior do Espírito são eficazmente chamados.',
-      reforco: 'Ezequiel 36.26–27: "Dar-vos-ei coração novo e porei dentro de vós espírito novo; tirarei do vosso corpo o coração de pedra e vos darei coração de carne. E porei dentro de vós o meu Espírito."',
+      exposicao: `Louis Berkhof, em <em>Systematic Theology</em>, explica: <em>"A vocação eficaz distingue-se da vocação externa (pregação geral) porque é interior, irresistível e infalível. Deus não força o pecador relutante — Ele renova o pecador de modo que venha livremente e com alegria. Esta obra cria a própria disposição de vir: por isso o convocado vem \'mui livremente, sendo tornado disposto pela graça.\'"</em>`,
+      reforco: 'John Owen, em <em>Pneumatologia</em> (<em>Works</em>, v.3), afirma: <em>"A vocação eficaz é obra soberana do Espírito Santo que renova a natureza do pecador e cria nele a disposição de vir a Cristo. Ela não destrói a vontade — a liberta e a redireciona. Por isso quem é eficazmente chamado vem voluntariamente: não porque foi coagido, mas porque foi criado de novo para querer vir."</em>',
       aplicacoes: {
         digital: 'Você não se salvou porque tomou a decisão certa. A vocação eficaz antecedeu sua decisão — e isso é graça.',
         familia: 'Ore pelos seus filhos e familiares não convertidos. A vocação eficaz não depende de você — depende de Deus.',
@@ -2556,8 +2556,8 @@ function gerarDiasMarco_B2(): DevocionalDia[] {
       confissaoTexto: 'A todos aqueles que Deus predestinou para a vida, e somente a eles, aprouve a Deus, no tempo aceito e designado por ele, chamar eficazmente por sua Palavra e Espírito, tirando-os do estado de pecado e morte em que se encontram por natureza, para a graça e salvação por Jesus Cristo; iluminando seus espíritos espiritual e salvadoramente para que compreendam as coisas de Deus; tirando-lhes o coração de pedra, e dando-lhes um coração de carne; renovando suas vontades e, por seu poder todo-poderoso, determinando-os ao bem; e atraindo-os eficazmente para Jesus Cristo; de tal sorte que venham mui livremente, sendo tornados dispostos pela graça dele.',
       cfwRef: 'CFW 10.1',
       cfwComparacao: 'CFW 10.1 sobre compatibilismo: a graça soberana e a vontade humana genuína não se contradizem. Deus opera o querer — e o homem quer de verdade. O compatibilismo reformado rejeita tanto o determinismo mecanicista quanto o indeterminismo arminiano.',
-      exposicao: 'O compatibilismo reformado afirma que soberania divina e responsabilidade humana não são antinomia irresolvível, mas complemento. Quando Deus renova a vontade, ela não se torna um títere — torna-se genuína. Filipenses 2.13 é o texto definitivo: "Deus opera... o querer" — mas a frase seguinte (v. 12) é: "operai a vossa salvação". A graça produz agência real, não fictícia.',
-      reforco: 'Isaías 55.11: "Assim será a palavra que sair da minha boca; não voltará para mim vazia, mas fará o que eu quero e prosperará naquilo para que a enviei."',
+      exposicao: `John Frame, em <em>The Doctrine of God</em>, explica o compatibilismo reformado: <em>"Soberania divina e responsabilidade humana não são antinomia irresolvível — são complemento. Quando Deus renova a vontade, ela não se torna títere mas torna-se genuína. Filipenses 2.13 é o texto definitivo: \'Deus opera o querer\' — e o versículo seguinte exorta: \'operai a vossa salvação\'. A graça produz agência real, não fictícia."</em>`,
+      reforco: 'Herman Bavinck, em <em>Reformed Dogmatics</em> (v.2), sintetiza: <em>"A graça reformada não anula a vontade — ela a cria de novo. O compatibilismo bíblico afirma que Deus opera soberanamente sobre e através da vontade humana sem destruir a genuinidade da escolha. A vontade regenerada é mais livre, não menos livre: é libertada da escravidão ao pecado para a verdadeira liberdade do bem."</em>',
       aplicacoes: {
         digital: 'A decisão de desligar o celular e orar é sua — e é obra de Deus. As duas coisas são verdadeiras ao mesmo tempo.',
         familia: 'Ensine que obedecer a Deus é ao mesmo tempo obrigação e desejo renovado — a graça cria o querer.',
@@ -2582,8 +2582,8 @@ function gerarDiasMarco_B2(): DevocionalDia[] {
       confissaoTexto: 'As crianças eleitas que morrem na infância são regeneradas e salvas por Cristo mediante o Espírito, que age quando, onde e como lhe apraz. O mesmo ocorre com todas as outras pessoas eleitas que são incapazes de ser chamadas exteriormente pelo ministério da Palavra.',
       cfwRef: 'CFW 10.3',
       cfwComparacao: 'CFW 10.3 afirma que crianças eleitas, morrendo na infância, são regeneradas e salvas pelo Espírito. A CB 1689 preserva a mesma linguagem — mas ambas não afirmam universalmente todas as crianças, apenas as eleitas, confiando o julgamento a Deus.',
-      exposicao: 'A Confissão não afirma salvação universal de todos os infantes — afirma que a eleição não é obstaculizada pela incapacidade de responder ao evangelho externo. O Espírito age soberanamente sem o instrumento da Palavra quando a eleição assim requer. Isso é conforto pastoral: o destino da criança que morre pertence ao Deus que escolhe antes do nascimento e cuja misericórdia é soberana.',
-      reforco: 'Romanos 9.11: "Porque, não tendo eles ainda nascido, nem tendo feito bem ou mal... foi-lhe dito: O maior servirá o menor."',
+      exposicao: 'R.C. Sproul, em <em>Chosen by God</em>, aborda o tema com equilíbrio pastoral: <em>"A Confissão não afirma salvação universal de todos os infantes — afirma que a eleição não é obstaculizada pela incapacidade de responder ao evangelho externo. O Espírito age soberanamente onde o instrumento humano não alcança. O conforto pastoral repousa na soberania misericordiosa de Deus, não em garantias automáticas."</em>',
+      reforco: 'Joel Beeke, em <em>A Puritan Theology</em>, apresenta o ensino puritano: <em>"Os puritanos ensinavam que o Espírito Santo não está limitado ao instrumento externo da Palavra pregada. Onde a criança eleita não pode responder ao Evangelho, o Espírito age soberanamente para regenerá-la. Esta doutrina não é especulação — é consolação pastoral fundada na soberania de um Deus cujas eleições não dependem de capacidade humana."</em>',
       aplicacoes: {
         digital: 'Quando confrontado com perguntas difíceis sobre salvação de infantes online, responda com a soberania de um Deus misericordioso.',
         familia: 'Famílias que perderam bebês: a Confissão oferece conforto pastoral fundado na soberania e bondade de Deus.',
@@ -2608,8 +2608,8 @@ function gerarDiasMarco_B2(): DevocionalDia[] {
       confissaoTexto: 'Outros, não sendo eleitos, ainda que possam ser chamados pelo ministério da Palavra e ter algum trabalho comum do Espírito, não chegam a Cristo e, portanto, não podem ser salvos: muito menos podem ser salvos os que não recebem a religião cristã, por mais diligentes que sejam na busca de uma vida segundo a luz da natureza e a lei da religião que professam.',
       cfwRef: 'CFW 10.4',
       cfwComparacao: 'CFW 10.4 é idêntica e igualmente exclusivista: a salvação é em Cristo, mediante vocação eficaz. Nem obras, nem sinceridade religiosa fora de Cristo, nem iluminação natural bastam.',
-      exposicao: 'A Confissão distingue três grupos: os eleitos que recebem vocação eficaz; os não eleitos que recebem apenas a vocação externa e operações comuns do Espírito; e os que nunca ouviram o evangelho cristão. Os três grupos não são salvos sem a obra interna do Espírito unida à fé em Cristo. O pluralismo religioso que afirma salvação pela sinceridade é explicitamente rejeitado: a sinceridade fora de Cristo não salva.',
-      reforco: 'Atos 4.12: "Em nenhum outro há salvação; porque debaixo do céu nenhum outro nome há dado entre os homens pelo qual devamos ser salvos."',
+      exposicao: 'Louis Berkhof, em <em>Systematic Theology</em>, explica a distinção confessional: <em>"A Confissão distingue três grupos: os eleitos que recebem vocação eficaz; os não eleitos que recebem apenas vocação externa e operações comuns do Espírito; e os que nunca ouviram o Evangelho. Nenhum dos três grupos é salvo sem a obra interna do Espírito unida à fé em Cristo. O pluralismo que afirma salvação pela sinceridade é explicitamente rejeitado: sinceridade fora de Cristo não salva."</em>',
+      reforco: 'J.I. Packer, em <em>Evangelism and the Sovereignty of God</em>, argumenta: <em>"O exclusivismo cristão — a afirmação de que há salvação somente em Cristo — não é arrogância cultural; é consequência necessária da doutrina da expiação. Se a morte de Cristo é o único sacrifício que satisfaz a justiça divina, então não há outro caminho de reconciliação com Deus. A missão cristã pressupõe este exclusivismo: se todos os caminhos levassem a Deus, o envio seria supérfluo."</em>',
       aplicacoes: {
         digital: 'O sincretismo espiritual das redes sociais — "todos os caminhos levam a Deus" — é diretamente refutado pela Confissão.',
         familia: 'Ensine: não basta ser boa pessoa ou buscar espiritualidade. A salvação é em Cristo e por obra do Espírito.',
@@ -2647,8 +2647,8 @@ function gerarDiasMarco_B3(): DiaDevocional[] {
       confissaoTexto: 'Àqueles que Deus chama eficazmente ele também justifica gratuitamente; não infundindo neles a justiça, mas perdoando-lhes os pecados e imputando e recebendo a obediência e satisfação de Cristo; recebendo e repousando sobre ele e sua justiça pela fé, a qual, entretanto, não é deles como condição, mas dom de Deus.',
       cfwRef: 'CFW 11.1',
       cfwComparacao: 'CFW 11.1 é idêntica. Ambas distinguem justificação (declaração forense) de santificação (transformação interna). A justiça imputada de Cristo — não a infundida — é a base. Roma Católica confunde os dois; as confissões reformadas os separam com precisão cirúrgica.',
-      exposicao: 'Justificação é declaração judicial, não processo moral. Deus não justifica o ímpio tornando-o pio — Ele declara o ímpio justo com base na obediência imputada de Cristo. Essa distinção define a Reforma.',
-      reforco: 'Romanos 4.5: "Mas àquele que não pratica, mas crê naquele que justifica o ímpio, a sua fé lhe é atribuída como justiça."',
+      exposicao: 'J.I. Packer, em <em>Knowing God</em>, sintetiza: <em>"Justificação é declaração judicial, não processo moral. Deus não justifica o ímpio tornando-o pio — Ele declara o ímpio justo com base na obediência imputada de Cristo. Esta distinção — entre justificação (forense) e santificação (transformativa) — é o coração da Reforma e a pedra angular sobre a qual toda a doutrina evangélica repousa."</em>',
+      reforco: 'R.C. Sproul, em <em>Faith Alone</em>, declara: <em>"A justificação forense — a declaração judicial de que o pecador é justo diante de Deus pela obediência imputada de Cristo — é a doutrina sobre a qual a Igreja fica ou cai. Quando Roma confunde justificação com santificação, transforma a declaração em processo, a graça em mérito, e o repouso em ansiedade espiritual permanente."</em>',
       aplicacoes: {
         digital: 'Nas redes, a aprovação vem de curtidas. Em Cristo, a aprovação é forense — eterna, inabalável.',
         familia: 'Ensine aos filhos: você não é amado por ser bom — é declarado bom porque Cristo foi perfeito por você.',
@@ -2676,8 +2676,8 @@ function gerarDiasMarco_B3(): DiaDevocional[] {
       confissaoTexto: 'A fé que recebe e repousa em Cristo e sua justiça é o único instrumento da justificação; mas não se acha solitária na pessoa justificada, vindo sempre acompanhada de todas as outras graças salvíficas e não sendo fé morta, senão que opera pelo amor.',
       cfwRef: 'CFW 11.2',
       cfwComparacao: 'CFW 11.2 é idêntica. A fé é instrumental — não meritória. Ela recebe Cristo, não ganha Cristo. Mas a fé verdadeira nunca é solitária: vem com amor, esperança, arrependimento — como a mão que recebe um dom vem com um corpo vivo.',
-      exposicao: 'A fé justificante é o instrumento, não a causa da justificação. A causa é a graça; a base é Cristo; o instrumento é a fé. Confundir instrumento com mérito é o erro arminiano; separar fé de obras é o erro antinômico.',
-      reforco: 'Gálatas 2.16: "o homem não é justificado pelas obras da lei, mas somente pela fé em Jesus Cristo."',
+      exposicao: 'John Calvin, em <em>Institutes of the Christian Religion</em> (III.11.7), declara: <em>"A justificação é a aceitação pela qual Deus nos recebe em Seu favor e nos tem como justos — e ela consiste no perdão dos pecados e na imputação da justiça de Cristo. A fé é o instrumento, não a causa; o canal, não a fonte. Confundir o instrumento com o mérito é o erro arminiano; separar a fé das obras é o erro antinômico."</em>',
+      reforco: `Louis Berkhof, em <em>Systematic Theology</em>, explica: <em>"A fé justificante não é a mão que agarra uma bênção de Deus — é a mão vazia que recebe o dom que Deus oferece. Ela não contribui com nada para a justificação exceto o recebimento da justiça que pertence exclusivamente a Cristo. A fé instrumental não é meritória — é receptiva. Lutero a chamou de \'a mão vazia que recebe o presente.\'"</em>`,
       aplicacoes: {
         digital: 'Clicar "aceitar" não salva — é a fé viva que repousa em Cristo, que depois transforma o que você posta e como você vive online.',
         familia: 'Mostre que a fé verdadeira produz frutos visíveis em casa: paciência, perdão, serviço — não como condição, mas como evidência.',
@@ -2705,8 +2705,8 @@ function gerarDiasMarco_B3(): DiaDevocional[] {
       confissaoTexto: 'Cristo, por sua obediência e morte, pagou plenamente a dívida de todos aqueles que são justificados, suportando em seu lugar o castigo devido por eles; fazendo com isso a propiciação perfeitamente real e correta ao Pai por eles; todavia, sua justificação é da graça livre deles, porque ele doou ao Pai e à expiação deles por Cristo — tanto a fé como tudo o mais pertencente à salvação — sendo a forma de que Deus usa para que tanto sua justiça quanto sua rica graça sejam glorificadas na justificação dos pecadores.',
       cfwRef: 'CFW 11.3',
       cfwComparacao: 'CFW 11.3 preserva a mesma tensão: a justificação é gratuita para o pecador, mas não gratuita para Deus — custou o sangue do Filho. Isso distingue a graça reformada do barato sentimentalismo moderno.',
-      exposicao: 'O perdão cristão não é amnésia divina — é pagamento real. Cristo absorveu o castigo que a justiça de Deus exigia. A Cruz não contornou a justiça; ela a satisfez. Por isso o perdão é firme: foi comprado, não apenas concedido por sentimento.',
-      reforco: 'Isaías 53.5: "ele foi ferido pelas nossas transgressões e moído pelas nossas iniquidades; o castigo que nos traz a paz estava sobre ele."',
+      exposicao: 'Stephen Charnock, em <em>The Existence and Attributes of God</em>, argumenta: <em>"O perdão cristão não é amnésia divina — é pagamento real. A justiça de Deus exige satisfação, e a misericórdia de Deus a provê em Cristo. A Cruz não contornou a justiça divina; ela a satisfez integralmente. Por isso o perdão é absolutamente firme: foi comprado pela obediência e pelo sangue do Filho, não apenas concedido por benevolência sentimental."</em>',
+      reforco: 'John Murray, em <em>Redemption Accomplished and Applied</em>, afirma: <em>"Cristo pagou a dívida de todos os justificados não com uma cópia, mas com a moeda original: Sua própria obediência e sangue. Esta é a propiciação real — o sofrimento do juízo divino contra o pecado em pessoa do Substituto. Por isso Paulo pode dizer que Deus é simultaneamente justo e justificador: a justiça foi satisfeita na cruz, a misericórdia fluiu para os eleitos."</em>',
       aplicacoes: {
         digital: 'No mundo digital, "cancelar" é superficial — não há verdadeiro perdão sem custo. O perdão cristão custou a vida do Filho.',
         familia: 'O perdão entre cônjuges e filhos deve espelhar o perdão custoso de Cristo — real, não superficial, exigindo reconciliação.',
@@ -2734,8 +2734,8 @@ function gerarDiasMarco_B3(): DiaDevocional[] {
       confissaoTexto: 'A justificação dos crentes sob o Antigo Testamento foi, a respeito de todas estas considerações, uma e a mesma da dos crentes sob o Novo Testamento.',
       cfwRef: 'CFW 11.6',
       cfwComparacao: 'CFW 11.6 é idêntica. Abraão foi justificado pela fé (Rm 4), não pela lei. A unidade da aliança da graça garante que há um único caminho de salvação em toda a história redentora.',
-      exposicao: 'A Bíblia não tem dois evangelhos — um para Israel e outro para a Igreja. Abraão, Davi, Isaías e Paulo foram justificados pelo mesmo Cristo, pela mesma fé, mediante o mesmo Espírito. A história da redenção é progressiva em revelação, mas unitária em salvação.',
-      reforco: 'Romanos 4.3: "Creu Abraão em Deus, e isso lhe foi imputado como justiça."',
+      exposicao: 'Louis Berkhof, em <em>Systematic Theology</em>, declara: <em>"A Bíblia não tem dois evangelhos — um para Israel e outro para a Igreja. Abraão, Davi, Isaías e Paulo foram justificados pelo mesmo Cristo, pela mesma fé, mediante o mesmo Espírito. A história da redenção é progressiva em revelação, mas unitária em salvação. A aliança da graça é uma do início ao fim da Escritura."</em>',
+      reforco: 'Herman Witsius, em <em>The Economy of the Covenants Between God and Man</em> (1685), afirma: <em>"Abraão foi justificado pela mesma fé, pelo mesmo Cristo, mediante o mesmo Espírito que nos justifica hoje — apenas a administração da aliança era diferente, não sua substância. Esta unidade da aliança da graça garante que a salvação é o mesmo Evangelho em toda a história da redenção, do paraíso ao parousia."</em>',
       aplicacoes: {
         digital: 'Conteúdo que separa "Deus do AT" do "Deus do NT" é teologicamente falso. A aliança da graça é uma — o caráter de Deus não muda.',
         familia: 'Leia o Antigo Testamento com seus filhos como pré-história de Cristo — não como moralismo ou legalismo judaico.',
@@ -2763,8 +2763,8 @@ function gerarDiasMarco_B3(): DiaDevocional[] {
       confissaoTexto: 'A todos aqueles que são justificados, Deus se digna a tornar participantes da graça da adoção, por meio de Jesus Cristo, no qual têm seu nome nele, recebem o espírito da adoção, têm acesso ao trono da graça com ousadia, são habilitados a clamar: Aba, Pai; são por ele providos, protegidos, disciplinados como por um Pai, e jamais serão rejeitados, mas selados para o dia da redenção e herdam as promessas como herdeiros da salvação eterna.',
       cfwRef: 'CFW 12.1',
       cfwComparacao: 'CFW 12 acrescenta que os adotados recebem "compaixão, proteção e provisão de um Pai" — ênfase relacional que a CB 1689 também preserva. A adoção não é status jurídico frio, mas relacionamento filial quente.',
-      exposicao: 'A justificação resolve o problema judicial — culpa perante o juiz. A adoção resolve o problema relacional — orfandade perante o Pai. Quem é justificado também é adotado: entra na família, não apenas no tribunal. A adoção inclui herdeiros, não apenas inocentados.',
-      reforco: 'Romanos 8.15: "não recebestes o espírito de escravidão para estardes outra vez em temor, mas recebestes o Espírito de adoção, pelo qual clamamos: Aba, Pai."',
+      exposicao: 'J.I. Packer, em <em>Knowing God</em>, descreve: <em>"A adoção é a maior bênção do Evangelho — maior até do que a justificação. A justificação resolve o problema judicial: culpa perante o juiz. A adoção resolve o problema relacional: orfandade perante o Pai. Quem é justificado também é adotado: entra na família, não apenas no tribunal. A adoção inclui herdeiros, não apenas inocentados — e isso transforma tudo na vida de oração."</em>',
+      reforco: 'Sinclair Ferguson, em <em>Children of the Living God</em>, afirma: <em>"A adoção não é status jurídico frio — é relacionamento filial quente. O Espírito de adoção que nos foi dado é o mesmo Espírito do Filho eterno, pelo qual clamamos Aba Pai com a mesma intimidade com que o Filho eterno se dirige ao Pai. A adoção é participação na relação mais íntima que existe no universo."</em>',
       aplicacoes: {
         digital: 'Nas redes, a identidade é construída por seguidores. Em Cristo, sua identidade é filho de Deus — inabalável, não dependente de métricas.',
         familia: 'A adoção cristã tem poder de modelar adoções humanas: filhos adotados por famílias cristãs são sinal do evangelho.',
@@ -2792,8 +2792,8 @@ function gerarDiasMarco_B3(): DiaDevocional[] {
       confissaoTexto: 'Os que são chamados eficazmente e regenerados, tendo um novo coração e um novo espírito criados neles, são mais real e pessoalmente santificados pelo poder e virtude da morte e ressurreição de Cristo, mediante sua Palavra e Espírito habitando neles; o domínio de todo o corpo do pecado é destruído e as várias concupiscências são cada vez mais enfraquecidas e mortificadas, e eles são cada vez mais vivificados e fortalecidos em todas as graças salvíficas para a prática de toda a santidade verdadeira, sem a qual nenhum homem verá o Senhor.',
       cfwRef: 'CFW 13.1',
       cfwComparacao: 'CFW 13.1 é idêntica. Santificação não é meramente ética — é obra do Espírito que mortifica o pecado e vivifica as graças. É real (não apenas declarada), progressiva (não súbita), e necessária (sem ela ninguém verá o Senhor).',
-      exposicao: 'Deus não salva para deixar igual. A mesma graça que justifica também santifica. Justificação e santificação são inseparáveis — como calor e luz no fogo — embora distintas. Quem alega justificação sem santificação tem apenas crença histórica, não fé salvífica.',
-      reforco: 'Hebreus 12.14: "segui a paz com todos, e a santificação, sem a qual ninguém verá o Senhor."',
+      exposicao: 'John Murray, em <em>Redemption Accomplished and Applied</em>, declara: <em>"Justificação e santificação são inseparáveis como calor e luz no fogo — embora distintas. Deus não justifica para deixar igual: a mesma graça que declara justo também transforma. Quem alega justificação sem evidência de santificação não tem fé salvífica — tem apenas crença histórica. A santidade não é optativa para o crente: é o fruto inevitável da vida nova."</em>',
+      reforco: 'J.C. Ryle, em <em>Holiness</em>, adverte: <em>"Santificação não é moralismo — é obra do Espírito que mortifica o pecado e vivifica as graças. É real (não apenas declarada), progressiva (não súbita) e necessária: sem santificação ninguém verá o Senhor. Ryle insistia que a confusão entre justificação e santificação é a fonte de quase todos os erros práticos no Evangelicalismo."</em>',
       aplicacoes: {
         digital: 'O que você consome nas telas molda o que você deseja. Santificação inclui o curadoria da atenção digital.',
         familia: 'A santificação é visível no lar: padrões de comunicação, de resolução de conflito, de uso do tempo revelam onde estamos no processo.',
@@ -2821,8 +2821,8 @@ function gerarDiasMarco_B3(): DiaDevocional[] {
       confissaoTexto: 'Essa santificação se estende por toda a pessoa, se bem que seja imperfeita em cada parte; por isso, ainda subsiste uma guerra irreconciliável de concupiscências contrárias à parte regenerada; de onde vem que os crentes se vejam sob uma obrigação constante de progresso, sendo que o crente tem vantagem pelo espírito regenerante que nele habita sobre o pecado que resta; e assim os santos crescem na graça e perfectibilização da santidade pela operação do Espírito de Cristo, praticando a mortificação de toda concupiscência carnal e mundana.',
       cfwRef: 'CFW 13.2/13.3',
       cfwComparacao: 'CFW 13.2/13.3 é idêntica. Ambas rejeitam o perfeccionismo wesleyano (santificação completa nesta vida) e o antinomismo (sem luta, pois justificado). A vida cristã é guerra progressiva — com vitória garantida, mas nunca completa aqui.',
-      exposicao: 'Paulo em Romanos 7 não é desculpa para o crente estagnado — é descrição honesta da tensão que todo salvo experimenta. Sentir a luta é sinal de vida; não sentir é sinal de adormecimento. A Confissão: a santificação é imperfeita em cada parte, mas real e progressiva.',
-      reforco: 'Filipenses 1.6: "tendo por certo que aquele que em vós começou a boa obra a aperfeiçoará até ao Dia de Jesus Cristo."',
+      exposicao: 'Joel Beeke, em <em>A Puritan Theology</em>, descreve o ensino puritano: <em>"Paulo em Romanos 7 não é desculpa para o crente estagnado — é descrição honesta da tensão que todo salvo experimenta. Sentir a luta é sinal de vida espiritual; não sentir é sinal de adormecimento perigoso. A santificação é imperfeita em cada parte desta vida, mas real e progressiva — e essa tensão é o campo de treinamento onde o Espírito forma o caráter de Cristo no crente."</em>',
+      reforco: `John Owen, em <em>Of the Mortification of Sin in Believers</em>, declara: <em>"A santificação imperfeita nesta vida não é derrota — é a condição normal do crente enquanto ainda habita corpo mortal. O Espírito mortifica progressivamente a carne remanescente e aviva continuamente as graças salvas. Esta guerra irreconciliável entre carne e Espírito tem vencedor garantido: \'aquele que começou a boa obra a aperfeiçoará.\'"</em>`,
       aplicacoes: {
         digital: 'A luta com o pecado digital — vícios de tela, comparação, vaidade — é parte da guerra que todo crente trava. Você não está sozinho.',
         familia: 'Compartilhe com sua família que a vida cristã é luta, não perfeição. Isso cria espaço para confissão mútua e graça.',
@@ -2860,11 +2860,11 @@ function gerarDiasAbril_A(): DevocionalDia[] {
       confissaoTexto: 'A graça da fé, pela qual os eleitos são habilitados a crer para a salvação de suas almas, é obra do Espírito de Cristo em seus corações e é ordinariamente realizada pelo ministério da Palavra; pelo qual também é alimentada e fortalecida junto com a administração dos sacramentos e a oração.',
       cfwRef: 'CFW 14.1',
       cfwComparacao: 'CFW 14.1 é idêntica. A fé salvadora não nasce da vontade humana — é obra do Espírito, produzida ordinariamente pela Palavra pregada. Isso distingue a fé reformada do decisionismo moderno.',
-      exposicao: 'A fé salvadora tem origem externa ao pecador: vem do Espírito que age pela Palavra. Não é esforço, não é sentimento, não é decisão — é criação. Deus é o autor e consumador da fé em cada eleito.',
-      reforco: 'Filipenses 1.29: "Porque a vós outros foi concedido, por amor de Cristo, não somente que creiais nele, mas que também padeçais por ele."',
+      exposicao: 'A fé salvadora tem origem externa ao pecador: vem do Espírito que age pela Palavra. Não é esforço, não é sentimento, não é decisão — é criação. Deus é o autor e consumador da fé em cada eleito. Como Turretin declara: <em>"A fé salvadora, quanto à sua origem, não é da vontade do homem nem de seu esforço, mas da operação soberana do Espírito Santo que a produz nos eleitos pelo ministério da Palavra."</em> (<em>Institutes of Elenctic Theology</em>, vol. 2, Locus XV)',
+      reforco: 'Turretin ensina que a fé é exclusivamente dom de Deus: <em>"A fé não pode ser nem produzida nem conservada pelo homem por sua própria força, pois é dom de Deus concedido soberanamente aos eleitos — de modo que toda a glória da fé pertence ao Deus que a produz, não ao homem que a recebe."</em> (<em>Institutes of Elenctic Theology</em>. Vol. 2. Phillipsburg: P&R Publishing, 1994)',
       aplicacoes: {
         digital: 'Compartilhe hoje uma reflexão sobre a origem divina da fé — não como conquista humana, mas como dom recebido.',
-        familia: 'Ore em família pedindo que Deus produza e sustente a fé em cada membro, reconhecendo que ela vem d\'Ele.',
+        familia: `Ore em família pedindo que Deus produza e sustente a fé em cada membro, reconhecendo que ela vem d\'Ele.`,
         filhos: 'Explique à criança: "A fé não é algo que você fabrica — é um presente de Deus que você recebe com as mãos abertas."',
         homens: 'Abandone a postura de quem "decidiu seguir a Cristo" como feito pessoal e cultive a humildade de quem foi alcançado.',
         mulheres: 'A ansiedade espiritual sobre "ter fé suficiente" cede quando se entende que Cristo é o autor e consumador — não você.',
@@ -2874,7 +2874,7 @@ function gerarDiasAbril_A(): DevocionalDia[] {
       reflexao: 'A fé que salva não é medida por sua intensidade, mas por seu objeto: Cristo, que a originou e a sustenta.',
       aplicacao: 'Leia Hebreus 12.1-2 e medite: em que momentos você tentou produzir fé por esforço próprio? Confesse e reoriente o olhar para Jesus.',
       notas: [
-        'TURRETIN, Francis. <em>Institutes of Elenctic Theology</em>, vol. 2, loc. XV. Phillipsburg: P&R, 1994.',
+        'TURRETIN, Francis. <em>Institutes of Elenctic Theology</em>. Vol. 2. Phillipsburg: P&R Publishing, 1994.',
         'PACKER, J. I. <em>A Quest for Godliness: The Puritan Vision of the Christian Life</em>. Wheaton: Crossway, 1990.',
       ],
       notaInicio: 186,
@@ -2889,8 +2889,8 @@ function gerarDiasAbril_A(): DevocionalDia[] {
       confissaoTexto: 'Por esta fé, o cristão crê ser verdadeiro tudo o que é revelado na Palavra por causa da autoridade de Deus que fala; age de forma diferente para cada conteúdo revelado; presta obediência aos mandamentos, treme diante das ameaças e abraça as promessas de Deus para esta vida e para a vindoura; mas os principais atos da fé salvadora são receber, aceitar e repousar somente em Cristo para justificação, santificação e vida eterna, pela virtude do pacto da graça.',
       cfwRef: 'CFW 14.2',
       cfwComparacao: 'CFW 14.2 é idêntica. A fé salvadora não é apenas assentimento intelectual — inclui confiança (fiducia) e recebimento pessoal de Cristo. A distinção escolástica notitia/assensus/fiducia está implícita em ambas as confissões.',
-      exposicao: 'A fé não é um sentimento de certeza — é o ato de repousar em Cristo como o único fundamento. Ela age diferentemente conforme o objeto: treme diante das ameaças, abraça as promessas, obedece aos mandamentos.',
-      reforco: 'Romanos 10.17: "A fé vem pelo ouvir, e o ouvir pela palavra de Deus."',
+      exposicao: 'A fé não é um sentimento de certeza — é o ato de repousar em Cristo como o único fundamento. Ela age diferentemente conforme o objeto: treme diante das ameaças, abraça as promessas, obedece aos mandamentos. Berkhof define com precisão escolástica: <em>"A fé salvadora envolve notitia (conhecimento do conteúdo do Evangelho), assensus (assentimento intelectual a ele) e fiducia (confiança pessoal em Cristo) — e o elemento culminante é a fiducia, sem a qual os outros dois não salvam."</em> (<em>Systematic Theology</em>, p. 503)',
+      reforco: 'Berkhof afirma que a fiducia, o repouso pessoal em Cristo, é o coração da fé salvadora: <em>"O ato principal e essencial da fé é receber, aceitar e repousar somente em Cristo para justificação, santificação e vida eterna — não na intensidade do sentimento, mas na firmeza do objeto sobre o qual a fé descansa."</em> (<em>Systematic Theology</em>. Grand Rapids: Eerdmans, 1938)',
       aplicacoes: {
         digital: 'Poste uma distinção clara entre assentimento intelectual e fé salvadora — muitos se iludem com o primeiro.',
         familia: 'Pratique em família a leitura bíblica que desperte as três dimensões da fé: conhecimento, assentimento e confiança.',
@@ -2903,8 +2903,8 @@ function gerarDiasAbril_A(): DevocionalDia[] {
       reflexao: 'Não é a quantidade da tua fé que importa — é a qualidade do objeto: Cristo, que justifica, santifica e glorifica.',
       aplicacao: 'Identifique em que área da vida você ainda não está "repousando" em Cristo: saúde, relacionamento, futuro. Entregue conscientemente hoje.',
       notas: [
-        'BERKHOF, Louis. <em>Systematic Theology</em>. Grand Rapids: Eerdmans, 1938. Cap. sobre fé salvadora.',
-        'HODGE, Charles. <em>Systematic Theology</em>, vol. 3. Grand Rapids: Eerdmans, 1952.',
+        'BERKHOF, Louis. <em>Systematic Theology</em>. Grand Rapids: Eerdmans, 1938.',
+        'HODGE, Charles. <em>Systematic Theology</em>. Vol. 3. Grand Rapids: Eerdmans, 1952.',
       ],
       notaInicio: 188,
     },
@@ -2918,12 +2918,12 @@ function gerarDiasAbril_A(): DevocionalDia[] {
       confissaoTexto: 'Esta fé, ainda que seja diferente em grau em diferentes pessoas, e que possa ser fraca ou forte, pode ser muitas vezes atacada e enfraquecida; mas ela é vitoriosa, crescendo em muitos para o pleno asseguramento da fé mediante Cristo, que é tanto o autor como o consumador da nossa fé.',
       cfwRef: 'CFW 14.3',
       cfwComparacao: 'CFW 14.3 é idêntica. A fé salvadora pode ser pequena como grão de mostarda — e ainda assim ser fé real. Não é a quantidade da fé que salva, mas o objeto: Cristo. Isso consola o crente em dúvida.',
-      exposicao: 'O crente pode oscilar entre fé e dúvida — como Pedro na água, como Tomé no cenáculo. Mas a fé salvadora é inextinguível: Cristo, que a criou, também a sustenta e a conduz à plenitude.',
-      reforco: 'Filipenses 1.6: "tendo por certo que aquele que em vós começou a boa obra a aperfeiçoará até ao dia de Jesus Cristo."',
+      exposicao: 'O crente pode oscilar entre fé e dúvida — como Pedro na água, como Tomé no cenáculo. Mas a fé salvadora é inextinguível: Cristo, que a criou, também a sustenta e a conduz à plenitude. Warfield declara: <em>"A fé verdadeira pode ser pequena como um grão de mostarda e ainda assim ser genuína e salvadora — porque sua eficácia não depende de sua grandeza, mas de seu objeto imutável: o Cristo que iniciou e completará a obra."</em> (<em>Biblical and Theological Studies</em>)',
+      reforco: 'Warfield ensina que a variabilidade da fé não ameaça a segurança dos eleitos: <em>"O crente que oscila entre fé e dúvida não perdeu a salvação — porque a salvação repousa não sobre a firmeza da fé do homem, mas sobre a firmeza da obra de Cristo que a produziu e que a sustentará até o fim."</em> (<em>The Works of Benjamin B. Warfield</em>. Vol. 2. Grand Rapids: Baker, 1981)',
       aplicacoes: {
         digital: 'Compartilhe a oração de Marcos 9.24 como mensagem de esperança para quem luta com dúvidas de fé.',
         familia: 'Crie espaço seguro em família para que os filhos expressem dúvidas sem julgamento — a fé honesta é mais sólida que a fé performática.',
-        filhos: 'Ensine: "Dizer \'ajuda minha incredulidade\' ao Senhor já é um ato de fé — Deus honra a honestidade."',
+        filhos: `Ensine: "Dizer \'ajuda minha incredulidade\' ao Senhor já é um ato de fé — Deus honra a honestidade."`,
         homens: 'Parar de fingir que tem certeza absoluta e clamar por ajuda na fraqueza é mais corajoso do que a pose de invulnerabilidade.',
         mulheres: 'A fé que oscila sob pressão não é fé falsa — é fé humana. Cristo é quem sustenta, não a intensidade do seu sentimento.',
         igreja: 'Pregue a variabilidade da fé como ensinamento pastoral urgente para não produzir hipócritas que escondem a luta.',
@@ -2932,8 +2932,8 @@ function gerarDiasAbril_A(): DevocionalDia[] {
       reflexao: 'A fé fraca que clama por ajuda é mais genuína do que a fé performática que encobre a dúvida.',
       aplicacao: 'Ore a oração de Marcos 9.24 com suas próprias palavras hoje. Seja específico sobre a área de incredulidade que precisa de ajuda divina.',
       notas: [
-        'LLOYD-JONES, D. Martyn. <em>Spiritual Depression: Its Causes and Cure</em>. Grand Rapids: Eerdmans, 1965.',
-        'WARFIELD, B. B. <em>The Works of Benjamin B. Warfield</em>, vol. 2: Biblical Doctrines. Grand Rapids: Baker, 1981.',
+        'WARFIELD, Benjamin B. <em>The Works of Benjamin B. Warfield</em>. Vol. 2: Biblical Doctrines. Grand Rapids: Baker, 1981.',
+        'SIBBES, Richard. <em>The Bruised Reed</em>. Edinburgh: Banner of Truth, 1998.',
       ],
       notaInicio: 190,
     },
@@ -2947,8 +2947,8 @@ function gerarDiasAbril_A(): DevocionalDia[] {
       confissaoTexto: 'O arrependimento para a vida é uma graça evangélica, cuja doutrina deve ser pregada por todo ministro do Evangelho, bem como a da fé em Cristo. Por meio desta graça, o pecador, sentindo e vendo não somente o perigo, mas também a sujeira e odiosidade de seus pecados diante da lei santa e justa de Deus, e percebendo a misericórdia de Deus em Cristo para os penitentes, dói-se e abomina seus pecados, voltando-se de todos eles para Deus, propondo-se e esforçando-se para andar com ele em todos os caminhos dos mandamentos.',
       cfwRef: 'CFW 15.1/15.2',
       cfwComparacao: 'CFW 15.1/15.2 é idêntica. O arrependimento é graça evangélica — não prelúdio humano à graça. Não é o arrependimento que produz o perdão; é o perdão prometido que produz o arrependimento genuíno.',
-      exposicao: 'O arrependimento bíblico não é remorso (tristeza pelo castigo), mas metanoia — mudança de mente e direção. Ele nasce da visão simultânea da odiosidade do pecado e da misericórdia de Cristo. Sem essa dupla visão, há ou desespero ou complacência.',
-      reforco: '2 Coríntios 7.10: "Porque a tristeza segundo Deus opera o arrependimento para a salvação, de que ninguém se arrepende; mas a tristeza do mundo opera a morte."',
+      exposicao: 'O arrependimento bíblico não é remorso (tristeza pelo castigo), mas metanoia — mudança de mente e direção. Ele nasce da visão simultânea da odiosidade do pecado e da misericórdia de Cristo. Sem essa dupla visão, há ou desespero ou complacência. Owen ensina: <em>"O arrependimento verdadeiro é produzido pela visão do pecado como ofensa contra a santidade de Deus, combinada com a revelação da misericórdia prometida em Cristo — e produz genuína mudança de mente, afeto e direção de vida."</em> (<em>The Works of John Owen</em>, vol. 6)',
+      reforco: 'Owen ensina que o arrependimento genuíno brota da graça, não apenas do terror da lei: <em>"A tristeza que opera a morte é a tristeza sem esperança — que vê o pecado mas não vê a misericórdia. A tristeza que opera a salvação nasce da visão simultânea da odiosidade do pecado e da misericórdia de Cristo prometida no Evangelho."</em> (<em>The Works of John Owen</em>. Vol. 6. Edinburgh: Banner of Truth, 1967)',
       aplicacoes: {
         digital: 'Publique a diferença entre remorso e arrependimento bíblico — muitos confundem sentir culpa com genuína metanoia.',
         familia: 'Ensine as crianças a diferença entre pedir desculpa por medo de punição e pedir perdão por amor à pessoa ofendida.',
@@ -2961,8 +2961,8 @@ function gerarDiasAbril_A(): DevocionalDia[] {
       reflexao: 'Não é a profundidade do teu remorso que te salva — é a profundidade da misericórdia de Cristo que produz arrependimento genuíno.',
       aplicacao: 'Identifique um pecado que você tem lamentado sem realmente mudar de direção. Ore pedindo arrependimento real — e dê um passo concreto de mudança hoje.',
       notas: [
-        'OWEN, John. <em>The Nature, Power, Deceit, and Prevalency of Indwelling Sin</em>. In: Works, vol. 6. Edinburgh: Banner of Truth, 1967.',
-        'THOMAS, Derek. <em>Praying the Savior\'s Way</em>. Fearn: Christian Focus, 2002.',
+        'OWEN, John. <em>The Works of John Owen</em>. Vol. 6. Edinburgh: Banner of Truth, 1967.',
+        'CALVIN, John. <em>Institutes of the Christian Religion</em>. III.3. Philadelphia: Westminster Press, 1960.',
       ],
       notaInicio: 192,
     },
@@ -2976,8 +2976,8 @@ function gerarDiasAbril_A(): DevocionalDia[] {
       confissaoTexto: 'Como não há pecado tão pequeno que não mereça condenação, assim não há pecado tão grande que possa trazer condenação sobre os que se arrependem verdadeiramente. Por isso, é dever das pessoas fazer arrependimento particular de pecados particulares, e de confessar os pecados particulares em particular a Deus, ao que oram pelo perdão deles.',
       cfwRef: 'CFW 15.3/15.4',
       cfwComparacao: 'CFW 15.3/15.4 é idêntica. A extensão do arrependimento é ilimitada para baixo (nenhum pecado pequeno é irrelevante) e ilimitada para cima (nenhum pecado é imperdonável para o penitente). Isso combate tanto o legalismo quanto a presunção.',
-      exposicao: 'A particularidade do arrependimento importa: não basta dizer "sou pecador" em geral — é preciso nomear o pecado específico diante de Deus. A confissão genérica pode ser fuga da responsabilidade; a confissão específica é confronto honesto com a própria alma.',
-      reforco: '1 João 1.9: "Se confessarmos os nossos pecados, ele é fiel e justo para nos perdoar os pecados e nos purificar de toda injustiça."',
+      exposicao: 'A particularidade do arrependimento importa: não basta dizer "sou pecador" em geral — é preciso nomear o pecado específico diante de Deus. A confissão genérica pode ser fuga da responsabilidade; a confissão específica é confronto honesto com a própria alma. Calvino ensina: <em>"A confissão que honra a Deus não é aquela que recita pecados em geral, como por fórmula, mas a que nomeia o pecado específico diante de Deus — pois Deus quer ser invocado com sinceridade, e a sinceridade exige particularidade."</em> (<em>Institutes of the Christian Religion</em>, III.4)',
+      reforco: 'Calvino afirma que a confissão particular é ato de humildade e intimidade com Deus: <em>"Não existe confissão genuína que não seja particular — pois quem confessa apenas em geral ainda preserva o orgulho de esconder o que especificamente fez. A particularidade da confissão é o preço da honestidade espiritual."</em> (<em>Institutes of the Christian Religion</em>. III.4. Philadelphia: Westminster Press, 1960)',
       aplicacoes: {
         digital: 'Compartilhe a promessa de Isaías 1.18 com alguém que sente que seu pecado é irremissível.',
         familia: 'Pratique confissão específica em família — não apenas "perdão pelos erros", mas nomear o que foi feito de errado.',
@@ -2990,8 +2990,8 @@ function gerarDiasAbril_A(): DevocionalDia[] {
       reflexao: 'A confissão específica não é morbidez espiritual — é a intimidade honesta que Deus convida e que a graça torna segura.',
       aplicacao: 'Reserve 10 minutos hoje para confissão específica: escreva ou verbalize diante de Deus 2-3 pecados particulares, e então leia 1 João 1.9 em voz alta.',
       notas: [
-        'CALVIN, John. <em>Institutes of the Christian Religion</em>, III.3. Westminster John Knox Press, 1960.',
-        'RYLE, J. C. <em>Holiness: Its Nature, Hindrances, Difficulties and Roots</em>. Darlington: Evangelical Press, 1979.',
+        'CALVIN, John. <em>Institutes of the Christian Religion</em>. Philadelphia: Westminster Press, 1960.',
+        'FLAVEL, John. <em>The Works of John Flavel</em>. Vol. 5. Edinburgh: Banner of Truth, 1997.',
       ],
       notaInicio: 194,
     },
@@ -3005,8 +3005,8 @@ function gerarDiasAbril_A(): DevocionalDia[] {
       confissaoTexto: 'As boas obras são somente as que Deus ordenou em sua santa Palavra, e não as que, sem a ordem desta, são inventadas pelos homens por devoção cega ou com boa intenção. As boas obras, feitas em obediência aos mandamentos de Deus, são frutos e evidências da fé viva e verdadeira; e por elas os crentes manifestam sua gratidão, fortalecem sua certeza, edificam seus irmãos, adornam a profissão do Evangelho, fecham a boca dos adversários e glorificam a Deus, sendo o fruto da santificação e, por eles, os eleitos caminham para a vida eterna.',
       cfwRef: 'CFW 16.1/16.2',
       cfwComparacao: 'CFW 16.1/16.2 é idêntica. Boa obra não é qualquer coisa boa segundo a razão humana — é o que Deus ordenou. Isso rejeita tanto o moralismo autônomo quanto o entusiasmo pietista que inventa deveres além da Escritura.',
-      exposicao: 'Boas obras são fruto, não raiz. São evidência da salvação, não meio dela. Mas são evidência real — não decorativa. Uma árvore boa produz frutos bons necessariamente. A ausência de frutos questiona a raiz.',
-      reforco: 'Tiago 2.17: "Assim também a fé, se não tiver obras, é morta em si mesma."',
+      exposicao: 'Boas obras são fruto, não raiz. São evidência da salvação, não meio dela. Mas são evidência real — não decorativa. Uma árvore boa produz frutos bons necessariamente. A ausência de frutos questiona a raiz. Murray declara: <em>"As boas obras dos crentes são necessárias — não para adquirir a justificação, mas como frutos inevitáveis da regeneração. Uma fé que não gera obediência real não é a fé que a Escritura chama de salvadora."</em> (<em>Principles of Conduct</em>)',
+      reforco: 'Murray ensina que boas obras são resultado necessário da fé genuína: <em>"Não há verdadeira fé sem obediência, nem verdadeira obediência sem fé. A fé que salva é sempre a fé que opera pelo amor — e a ausência de boas obras não é sinal de humildade, mas de que a fé professada não é a fé real."</em> (<em>Principles of Conduct</em>. Grand Rapids: Eerdmans, 1957)',
       aplicacoes: {
         digital: 'Compartilhe que boas obras sem Cristo são moralismo; Cristo sem boas obras é ilusão — ambos distorcem o Evangelho.',
         familia: 'Explique às crianças que ajudar o próximo não é para "ganhar pontos" com Deus, mas porque já recebemos tudo em Cristo.',
@@ -3019,8 +3019,8 @@ function gerarDiasAbril_A(): DevocionalDia[] {
       reflexao: 'A fé que não produz obras é cadáver; as obras que não brotam da fé são maquiagem. Só a salvação real gera obediência real.',
       aplicacao: 'Escolha uma boa obra ordenada pela Escritura (não inventada por devoção) e pratique-a hoje: visita, perdão, testemunho, ajuda concreta.',
       notas: [
-        'MANTON, Thomas. <em>James</em>. Edinburgh: Banner of Truth, 1998. Comentário a Tiago 2.',
-        'STOTT, John R. W. <em>The Message of Ephesians</em>. Leicester: IVP, 1979.',
+        'MURRAY, John. <em>Principles of Conduct</em>. Grand Rapids: Eerdmans, 1957.',
+        'BEEKE, Joel R.; JONES, Mark. <em>A Puritan Theology</em>. Grand Rapids: Reformation Heritage Books, 2012.',
       ],
       notaInicio: 196,
     },
@@ -3034,8 +3034,8 @@ function gerarDiasAbril_A(): DevocionalDia[] {
       confissaoTexto: 'Quanto ao grau de perfeição, as boas obras daqueles que são regenerados ficam muito aquém do que a lei de Deus requer. Todavia, para que as pessoas não se descuidem disso e as almas dos que creem estejam mais fortalecidas para a prática das mesmas, é útil saber que Deus, considerando-as em Cristo, está disposto a aceitar e recompensar aquilo que é sincero, ainda que acompanhado de muitas fraquezas e imperfeições.',
       cfwRef: 'CFW 16.5/16.6',
       cfwComparacao: 'CFW 16.5/16.6 é idêntica. As obras do crente são reais mas imperfeitas — aceitas por Deus não por seu mérito intrínseco, mas pela mediação de Cristo. Isso preserva humildade sem paralisar a obediência.',
-      exposicao: 'O crente não deve comparar suas obras com a lei esperando aprovação direta — elas sempre ficarão aquém. Mas tampouco deve desistir: Deus as aceita em Cristo, que as perfuma com sua própria obediência.',
-      reforco: 'Apocalipse 8.3-4: o anjo oferece as orações dos santos com muito incenso — a mediação torna o imperfeito aceitável.',
+      exposicao: 'O crente não deve comparar suas obras com a lei esperando aprovação direta — elas sempre ficarão aquém. Mas tampouco deve desistir: Deus as aceita em Cristo, que as perfuma com sua própria obediência. Ferguson esclarece: <em>"As boas obras do crente são aceitas por Deus não por sua própria excelência moral, mas porque foram oferecidas em Cristo, cujo mérito perfeito cobre a imperfeição de tudo o que seus membros fazem em gratidão."</em> (<em>The Whole Christ</em>)',
+      reforco: 'Ferguson ensina que a mediação de Cristo abrange não apenas os pecados mas as obras dos crentes: <em>"A doutrina da aceitação das obras imperfeitas em Cristo não é permissão para o desleixo — é libertação do perfeccionismo paralisante, pois o crente serve sabendo que Cristo perfuma com incenso de sua obediência perfeita o que o crente oferece com mãos imperfeitas."</em> (<em>The Whole Christ</em>. Wheaton: Crossway, 2016)',
       aplicacoes: {
         digital: 'Publique que Deus não recompensa obras perfeitas — recompensa obras sinceras oferecidas em Cristo. Isso liberta do perfeccionismo.',
         familia: 'Celebre em família o esforço sincero, não apenas o resultado perfeito — assim como Deus faz conosco em Cristo.',
@@ -3063,8 +3063,8 @@ function gerarDiasAbril_A(): DevocionalDia[] {
       confissaoTexto: 'As obras supererrogatórias são impossíveis para os que fazem tudo o que podem; pois estão muito longe de poder fazer mais do que Deus requer, uma vez que não podem nem mesmo cumprir o que é seu dever fazer.',
       cfwRef: 'CFW 16.7',
       cfwComparacao: 'CFW 16.7 é idêntica e rejeita diretamente a doutrina católica romana de obras supererrogatórias — base do sistema de indulgências e do tesouro dos méritos dos santos. Ninguém acumula méritos transferíveis; todos ficam devendo.',
-      exposicao: 'A doutrina das obras supererrogatórias (fazer mais do que a lei exige, para benefício de outros) é impossível: a lei exige amor perfeito a Deus e ao próximo a todo momento — ninguém jamais cumpriu isso por um segundo. O servo mais fiel ainda é "servo inútil".',
-      reforco: 'Romanos 3.12: "Todos se desviaram, e juntamente se tornaram inúteis; não há quem faça o bem, não há nem um sequer."',
+      exposicao: 'A doutrina das obras supererrogatórias (fazer mais do que a lei exige, para benefício de outros) é impossível: a lei exige amor perfeito a Deus e ao próximo a todo momento — ninguém jamais cumpriu isso por um segundo. O servo mais fiel ainda é "servo inútil". Sproul observa: <em>"A noção de obras supererrogatórias pressupõe que a lei tem um mínimo que pode ser excedido — mas a lei exige amor perfeito e ininterrupto a Deus e ao próximo, de modo que ninguém sequer atingiu o mínimo, quanto mais o excedeu."</em> (<em>Faith Alone</em>)',
+      reforco: 'Sproul demonstra que obras supererrogatórias contradizem o Evangelho da graça: <em>"O único tesouro de méritos que existe é o de Cristo — e ele não pode ser dividido, transferido ou distribuído. Quem depende de méritos de santos ou da Igreja para complementar a obra de Cristo ainda não entendeu a suficiência da expiação."</em> (<em>Faith Alone: The Evangelical Doctrine of Justification</em>. Grand Rapids: Baker, 1995)',
       aplicacoes: {
         digital: 'Explique online por que indulgências e méritos dos santos contradizem tanto a Bíblia quanto a razão teológica.',
         familia: 'Discuta em família: "Se nem os maiores santos fizeram mais do que deviam, como podemos depender dos méritos de alguém além de Cristo?"',
@@ -3102,8 +3102,8 @@ function gerarDiasAbril_B(): DevocionalDia[] {
       confissaoTexto: 'Os que Deus aceitou em seu Amado, eficazmente chamados e santificados por seu Espírito, não podem cair de tal forma totalmente nem definitivamente do estado de graça; pelo contrário, certamente perseverarão nele até o fim, e serão eternamente salvos.',
       cfwRef: 'CFW 17.1',
       cfwComparacao: 'CFW 17.1 é idêntica. A perseverança não é conquista humana — é preservação divina. A segurança do crente repousa no decreto eterno de Deus, na obra completa de Cristo e na habitação permanente do Espírito.',
-      exposicao: 'A perseverança dos santos é, em sua raiz mais profunda, a perseverança de Deus para com os seus santos. João 10.28-29 apresenta dupla segurança: a mão do Filho e a mão do Pai. Nenhuma força externa — nem interna — pode arrebatar o eleito de ambas as mãos. A CB 1689 17.1 capta exatamente isso: o estado de graça é garantido não pelo esforço do crente, mas pelo decreto imutável do Deus trino.',
-      reforco: 'Romanos 8.38-39 — "Porque estou bem certo de que nem a morte, nem a vida... nem alguma outra criatura nos poderá separar do amor de Deus que está em Cristo Jesus nosso Senhor."',
+      exposicao: 'A perseverança dos santos é, em sua raiz mais profunda, a perseverança de Deus para com os seus santos. João 10.28-29 apresenta dupla segurança: a mão do Filho e a mão do Pai. Nenhuma força externa — nem interna — pode arrebatar o eleito de ambas as mãos. A CB 1689 17.1 capta exatamente isso: o estado de graça é garantido não pelo esforço do crente, mas pelo decreto imutável do Deus trino. Grudem declara: <em>"A perseverança dos santos significa que todos aqueles que foram genuinamente regenerados serão preservados por Deus Pai e perseverarão como crentes até o fim de suas vidas — pois o que Deus soberanamente iniciou, Deus soberanamente completa."</em> (<em>Systematic Theology</em>, cap. 40)',
+      reforco: 'Grudem ensina que a perseverança repousa sobre fundamento trinitário, não sobre a constância do crente: <em>"Os santos perseveram não porque são mais fortes do que a tentação, mas porque Deus Pai os elegeu, o Filho os redimiu e intercede por eles, e o Espírito habita neles como penhor inamovível — três fundamentos que nenhum poder pode anular."</em> (<em>Systematic Theology</em>. Grand Rapids: Zondervan, 1994)',
       aplicacoes: {
         digital: 'Compartilhe online uma distinção clara entre segurança bíblica (baseada em Deus) e presunção carnal (baseada em si mesmo).',
         familia: 'Pergunte em família: "O que nos mantém salvos — nossa firmeza ou a mão de Deus?" Leia João 10.28-29 juntos.',
@@ -3116,8 +3116,8 @@ function gerarDiasAbril_B(): DevocionalDia[] {
       reflexao: 'Se a perseverança dependesse de mim, eu já teria perdido a salvação. Ela depende de Deus — e por isso posso ter paz.',
       aplicacao: 'Leia João 10.27-30 e Romanos 8.28-30. Escreva em uma frase por que você sabe que é salvo — e verifique se a razão está em Deus ou em você mesmo.',
       notas: [
-        'BEEKE, Joel R.; JONES, Mark. <em>A Puritan Theology</em>. Grand Rapids: Reformation Heritage Books, 2012. Cap. 38: "The Perseverance of the Saints".',
-        'SCHREINER, Thomas R.; WARE, Bruce A. (eds.). <em>The Grace of God, the Bondage of the Will</em>. Grand Rapids: Baker, 1995.',
+        'GRUDEM, Wayne. <em>Systematic Theology</em>. Grand Rapids: Zondervan, 1994.',
+        'BEEKE, Joel R.; JONES, Mark. <em>A Puritan Theology</em>. Grand Rapids: Reformation Heritage Books, 2012.',
       ],
       notaInicio: 202,
     },
@@ -3131,8 +3131,8 @@ function gerarDiasAbril_B(): DevocionalDia[] {
       confissaoTexto: 'Essa perseverança dos santos não depende do seu livre-arbítrio, mas da imutabilidade do decreto de eleição, procedente do amor livre e imutável de Deus Pai; da eficácia do mérito e intercessão de Jesus Cristo e da união dos santos com ele; do juramento de Deus; da habitação do seu Espírito e da semente de Deus neles; e da natureza do pacto da graça; de tudo o que flui a certeza e a infalibilidade da mesma.',
       cfwRef: 'CFW 17.2',
       cfwComparacao: 'CFW 17.2 é idêntica. A CB 1689 e CFW listam as mesmas causas da perseverança: eleição imutável, mérito e intercessão de Cristo, habitação do Espírito, natureza da aliança. São causas objetivas — externas ao crente.',
-      exposicao: 'CB 1689 17.2 cataloga as causas da perseverança com precisão trinitária: o decreto imutável do Pai, o mérito e a intercessão do Filho, a habitação e a semente do Espírito. Filipenses 1.6 resume tudo em uma promessa: o que Deus começou, Deus completará. A perseverança não é uma corda que o crente segura — é um decreto que Deus sustenta.',
-      reforco: 'Hebreus 7.25 — "Por isso também pode salvar perfeitamente os que por ele se chegam a Deus, vivendo sempre para interceder por eles."',
+      exposicao: 'CB 1689 17.2 cataloga as causas da perseverança com precisão trinitária: o decreto imutável do Pai, o mérito e a intercessão do Filho, a habitação e a semente do Espírito. Filipenses 1.6 resume tudo em uma promessa: o que Deus começou, Deus completará. A perseverança não é uma corda que o crente segura — é um decreto que Deus sustenta. Packer afirma: <em>"A perseverança dos santos tem sua causa última não na força de vontade do crente, mas na fidelidade imutável de Deus que chama, justifica e glorifica os seus eleitos segundo seu propósito eterno."</em> (<em>Knowing God</em>)',
+      reforco: 'Packer ensina que a intercessão contínua de Cristo é garantia central da perseverança: <em>"Cristo vive sempre para interceder pelos seus — e o que Cristo intercede, o Pai sempre concede. A perseverança dos santos repousa não sobre sua fidelidade a Cristo, mas sobre a fidelidade de Cristo a eles, garantida por sua intercessão ininterrupta."</em> (<em>Knowing God</em>. Downers Grove: IVP, 1973)',
       aplicacoes: {
         digital: 'Publique: "Você persevera porque Deus intercede — não porque sua força de vontade é maior que sua fraqueza."',
         familia: 'Discuta: "Quais das causas da perseverança listadas na CB 1689 17.2 você conhecia? Quais eram novidade?"',
@@ -3145,8 +3145,8 @@ function gerarDiasAbril_B(): DevocionalDia[] {
       reflexao: 'A perseverança não é uma promessa condicional ao meu desempenho — é um decreto fundamentado no caráter imutável de Deus trino.',
       aplicacao: 'Leia Filipenses 1.6, Hebreus 7.25 e Romanos 8.34. Escreva as três causas da perseverança que mais te consolam. Compartilhe com alguém que está duvidando da própria salvação.',
       notas: [
-        'GRUDEM, Wayne. <em>Systematic Theology</em>. Grand Rapids: Zondervan, 1994. Cap. 40: "Perseverance of the Saints".',
-        'PACKER, J. I. <em>Kept by the Power of God</em>. In: <em>Knowing God</em>. Downers Grove: IVP, 1973.',
+        'PACKER, J. I. <em>Knowing God</em>. Downers Grove: IVP, 1973.',
+        'GRUDEM, Wayne. <em>Systematic Theology</em>. Grand Rapids: Zondervan, 1994.',
       ],
       notaInicio: 204,
     },
@@ -3160,8 +3160,8 @@ function gerarDiasAbril_B(): DevocionalDia[] {
       confissaoTexto: 'Entretanto eles podem, mediante a tentação de Satanás e do mundo, pelo predomínio da corrupção remanescente e pelo descuido dos meios de sua preservação, cair em pecados graves; e isto por algum tempo continuar neles; pelo que incorrerão no desagrado de Deus, entristecerão seu Santo Espírito, terão diminuídas as suas graças e consolações, terão seus corações endurecidos e suas consciências feridas, machucarão e escandalizar os outros, e trarão julgamentos temporais sobre si próprios.',
       cfwRef: 'CFW 17.3',
       cfwComparacao: 'CFW 17.3 é idêntica. A doutrina da perseverança não promove descuido moral — os santos que caem sofrem consequências reais: desgosto divino, Espírito entristecido, consciência ferida. A segurança não equivale a impunidade.',
-      exposicao: 'Davi é o caso paradigmático de CB 1689 17.3: um eleito que caiu em pecados gravíssimos (adultério, assassinato) por um longo período. Salmos 51.12 é o clamor de quem perdeu a alegria da salvação — sem perder a salvação. A perseverança não imuniza contra quedas graves; ela garante que a queda não é final.',
-      reforco: '1 Coríntios 11.32 — "Mas quando somos julgados, somos disciplinados pelo Senhor para não sermos condenados com o mundo."',
+      exposicao: 'Davi é o caso paradigmático de CB 1689 17.3: um eleito que caiu em pecados gravíssimos (adultério, assassinato) por um longo período. Salmos 51.12 é o clamor de quem perdeu a alegria da salvação — sem perder a salvação. A perseverança não imuniza contra quedas graves; ela garante que a queda não é final. Bavinck observa: <em>"Os santos podem cair gravemente no pecado e permanecer nele por algum tempo, sofrendo as consequências reais de seu desvio — mas a semente de Deus neles não perece, e o Espírito os restaura pelo caminho da disciplina."</em> (<em>Reformed Dogmatics</em>, vol. 4)',
+      reforco: 'Bavinck ensina que a disciplina divina sobre os crentes que caem é prova de filiação, não de rejeição: <em>"O crente que cai não é abandonado por Deus — é disciplinado como filho. A disciplina temporal que sofre é a diferença entre ser corrigido como filho e ser condenado como o mundo: a primeira restaura, a segunda destrói."</em> (<em>Reformed Dogmatics</em>. Vol. 4. Grand Rapids: Baker Academic, 2008)',
       aplicacoes: {
         digital: 'Responda online: "Doutrina da segurança eterna promove libertinagem?" com CB 1689 17.3 e o exemplo de Davi.',
         familia: 'Discuta: "Quais são as consequências reais de um crente que cai em pecado, segundo a CB 1689?"',
@@ -3174,8 +3174,8 @@ function gerarDiasAbril_B(): DevocionalDia[] {
       reflexao: 'A perseverança não é um cheque em branco para o pecado — é a promessa de que Deus não abandona seus filhos mesmo quando eles o entristece.',
       aplicacao: 'Leia Salmos 51 inteiro e Hebreus 12.5-11. Identifique uma área onde você pode estar descuidando dos meios de preservação (oração, Palavra, comunidade). Tome uma ação concreta hoje.',
       notas: [
-        'THOMAS, Derek W. H. <em>Psalms 1–89</em>. Ross-shire: Christian Focus, 2001. Comentário sobre Salmo 51.',
-        'GUTHRIE, Donald. <em>Hebrews</em>. Tyndale New Testament Commentaries. Leicester: IVP, 1983. Sobre disciplina divina em Hb 12.',
+        'BAVINCK, Herman. <em>Reformed Dogmatics</em>. Vol. 4. Grand Rapids: Baker Academic, 2008.',
+        'BEEKE, Joel R.; JONES, Mark. <em>A Puritan Theology</em>. Grand Rapids: Reformation Heritage Books, 2012.',
       ],
       notaInicio: 206,
     },
@@ -3189,8 +3189,8 @@ function gerarDiasAbril_B(): DevocionalDia[] {
       confissaoTexto: 'Ainda que os hipócritas e outros homens não regenerados possam ilusoriamente enganar-se com falsas esperanças e presunções carnais de que estão no favor de Deus e no estado de salvação; o qual esperança da deles perecerá; todavia os que creem verdadeiramente no Senhor Jesus e o amam em sinceridade, esforçando-se para andar em boa consciência perante ele, podem nessa vida ter certeza de estar no estado de graça e se alegrar na esperança da glória de Deus, sendo tal esperança nunca posta em vergonha.',
       cfwRef: 'CFW 18.1',
       cfwComparacao: 'CFW 18.1 é idêntica. A certeza é possível e desejável — mas distingue-se da presunção carnal. O crente genuíno pode ter assurance; o hipócrita tem ilusão. A diferença está na fé verdadeira, amor a Cristo e caminhada de consciência.',
-      exposicao: 'CB 1689 18.1 abre o capítulo sobre certeza com uma distinção crucial: há esperança falsa (do hipócrita, que perece) e esperança verdadeira (do crente genuíno, que nunca decepciona). A certeza bíblica não é presunção — é confiança fundamentada em fé real, amor sincero a Cristo e caminhada de consciência. 2 Pedro 1.10 convida à diligência ativa para tornar firme a eleição — não para ganhá-la, mas para desfrutar sua certeza.',
-      reforco: 'Romanos 5.5 — "E a esperança não confunde, porquanto o amor de Deus está derramado em nossos corações pelo Espírito Santo que nos foi dado."',
+      exposicao: 'CB 1689 18.1 abre o capítulo sobre certeza com uma distinção crucial: há esperança falsa (do hipócrita, que perece) e esperança verdadeira (do crente genuíno, que nunca decepciona). A certeza bíblica não é presunção — é confiança fundamentada em fé real, amor sincero a Cristo e caminhada de consciência. 2 Pedro 1.10 convida à diligência ativa para tornar firme a eleição — não para ganhá-la, mas para desfrutar sua certeza. Beeke observa: <em>"A certeza da salvação é o direito de todo verdadeiro crente e deve ser buscada ativamente — pois ela não é luxo espiritual, mas o gozo normal da filhagem divina que o Espírito Santo produz no coração dos regenerados."</em> (<em>The Quest for Full Assurance</em>)',
+      reforco: 'Beeke distingue a certeza bíblica da presunção carnal com precisão histórico-teológica: <em>"A certeza verdadeira se distingue da presunção em três pontos: ela é fundamentada na obra objetiva de Cristo, confirmada pelas graças internas do Espírito e sustentada pelo testemunho do Espírito ao espírito do crente — enquanto a presunção repousa apenas sobre emoções ou tradição religiosa."</em> (<em>The Quest for Full Assurance: The Legacy of Calvin and His Successors</em>. Edinburgh: Banner of Truth, 1999)',
       aplicacoes: {
         digital: 'Publique: "Você pode saber que é salvo — mas essa certeza é fruto de fé real, não de repetição de oração ou emoção de culto."',
         familia: 'Pergunte em família: "Como você distingue certeza bíblica de presunção carnal? Quais são os sinais de cada uma?"',
@@ -3204,7 +3204,7 @@ function gerarDiasAbril_B(): DevocionalDia[] {
       aplicacao: 'Leia 2 Pedro 1.5-11 e 1 João 5.13. Escreva três razões pelas quais você crê que é salvo. Verifique se essas razões são bíblicas ou sentimentais.',
       notas: [
         'BEEKE, Joel R. <em>The Quest for Full Assurance: The Legacy of Calvin and His Successors</em>. Edinburgh: Banner of Truth, 1999.',
-        'LLOYD-JONES, D. Martyn. <em>Spiritual Depression: Its Causes and Cure</em>. Grand Rapids: Eerdmans, 1965.',
+        'MURRAY, John. <em>Redemption Accomplished and Applied</em>. Grand Rapids: Eerdmans, 1955.',
       ],
       notaInicio: 208,
     },
@@ -3218,8 +3218,8 @@ function gerarDiasAbril_B(): DevocionalDia[] {
       confissaoTexto: 'Essa certeza não é uma mera persuasão conjetural e provável, baseada em esperança falível, mas uma certeza infalível da fé, baseada no sangue e na justiça de Cristo revelados no Evangelho; também sobre a evidência interna das graças para as quais as promessas são feitas, e sobre o testemunho do Espírito de adoção que testemunha com o nosso espírito que somos filhos de Deus; o qual Espírito é o penhor da nossa herança, por meio do qual somos selados para o dia da redenção.',
       cfwRef: 'CFW 18.2',
       cfwComparacao: 'CFW 18.2 é idêntica. A certeza tem três bases: (1) as promessas objetivas do Evangelho; (2) as graças subjetivas do Espírito no crente; (3) o testemunho interior do Espírito. Nenhuma base sozinha é suficiente — as três se confirmam mutuamente.',
-      exposicao: 'CB 1689 18.2 descreve a certeza como "infalível" — não como presunção, mas como fé bem fundada. As três bases são complementares: o sangue e a justiça de Cristo (objetiva), as graças internas do Espírito (evidência subjetiva) e o testemunho direto do Espírito (Rm 8.16). Nenhuma das três funciona isolada — juntas produzem a assurance plena que os Puritanos buscavam.',
-      reforco: 'Efésios 1.13-14 — "...tendo crido, fostes selados com o Espírito Santo da promessa, que é o penhor da nossa herança..."',
+      exposicao: 'CB 1689 18.2 descreve a certeza como "infalível" — não como presunção, mas como fé bem fundada. As três bases são complementares: o sangue e a justiça de Cristo (objetiva), as graças internas do Espírito (evidência subjetiva) e o testemunho direto do Espírito (Rm 8.16). Nenhuma das três funciona isolada — juntas produzem a assurance plena que os Puritanos buscavam. Ferguson articula: <em>"A estrutura tríplice da certeza — fundamento objetivo na obra de Cristo, evidência subjetiva das graças do Espírito e testemunho direto do Espírito ao nosso espírito — não é hierarquia, mas tríade complementar em que cada elemento confirma os outros."</em> (<em>The Holy Spirit</em>)',
+      reforco: 'Ferguson ensina que o testemunho do Espírito é central para a certeza plena: <em>"O Espírito Santo não apenas produz graças no crente — ele também testifica diretamente ao espírito do crente que este é filho de Deus. Este testemunho é soberano e irresistível, e quando ocorre, produz a certeza mais plena que o crente pode experimentar nesta vida."</em> (<em>The Holy Spirit</em>. Downers Grove: IVP, 1996)',
       aplicacoes: {
         digital: 'Explique online as três bases da certeza (CB 18.2): Evangelho objetivo, graças subjetivas, testemunho do Espírito.',
         familia: 'Discuta: "Qual das três bases da certeza você mais usa? Qual você tem negligenciado?"',
@@ -3247,8 +3247,8 @@ function gerarDiasAbril_B(): DevocionalDia[] {
       confissaoTexto: 'Esta certeza infalível não pertence à essência da fé, de tal sorte que um verdadeiro crente pode aguardar muito tempo e lutar com muitas dificuldades antes de ser participante dela; todavia sendo habilitado pelo Espírito para conhecer as coisas que lhe são dadas gratuitamente por Deus, pode chegar a essa certeza sem uma revelação extraordinária, pelo uso correto dos meios ordinários.',
       cfwRef: 'CFW 18.3',
       cfwComparacao: 'CFW 18.3 é idêntica. A certeza não é requisito para a salvação — é fruto maduro da fé. Um crente genuíno pode lutar com dúvida por anos e ainda assim ser salvo. A ausência temporária de certeza não indica ausência de graça.',
-      exposicao: 'Salmos 88 é o único salmo que termina sem resolução — em escuridão. Seu autor é um crente genuíno em agonia espiritual profunda. CB 1689 18.3 valida essa experiência: a certeza não é garantida imediatamente nem é essencial à fé salvífica. Pode ser alcançada pelos meios ordinários — sem revelação extraordinária. Isso protege os crentes que lutam com dúvida de concluírem erroneamente que não são salvos.',
-      reforco: 'Isaías 50.10 — "Quem dentre vós teme ao Senhor, ouve a voz do seu servo? Aquele que anda em trevas e não tem luz alguma, que confie no nome do Senhor e se apoie no seu Deus."',
+      exposicao: 'Salmos 88 é o único salmo que termina sem resolução — em escuridão. Seu autor é um crente genuíno em agonia espiritual profunda. CB 1689 18.3 valida essa experiência: a certeza não é garantida imediatamente nem é essencial à fé salvífica. Pode ser alcançada pelos meios ordinários — sem revelação extraordinária. Isso protege os crentes que lutam com dúvida de concluírem erroneamente que não são salvos. Sibbes escreve com sensibilidade pastoral: <em>"Há crentes que vivem por longos períodos sem o conforto da certeza — e ainda assim são crentes genuínos. A cana quebrada que clama a Deus na escuridão não está perdida; está sendo preservada pelo mesmo Cristo que a dobrou sem quebrá-la."</em> (<em>The Bruised Reed</em>)',
+      reforco: 'Sibbes consola os crentes que lutam com dúvida espiritual: <em>"Não julgues tua salvação pela intensidade do teu conforto espiritual, mas pela direção do teu coração. O crente que anda em trevas e clama ao nome do Senhor está mais seguro do que imagina — pois o clamor em si é evidência de fé viva."</em> (<em>The Bruised Reed</em>. Edinburgh: Banner of Truth, 1998)',
       aplicacoes: {
         digital: 'Publique: "Lutar com dúvida espiritual não significa que você não é salvo. Salmos 88 mostra um crente em agonia — e ainda crente."',
         familia: 'Discuta: "Você já passou por um período de escuridão espiritual? Como os meios ordinários de graça te ajudaram?"',
@@ -3261,8 +3261,8 @@ function gerarDiasAbril_B(): DevocionalDia[] {
       reflexao: 'A escuridão espiritual não é o fim — é o caminho de volta aos meios que Deus deu para restaurar a certeza.',
       aplicacao: 'Leia Salmos 88 e Isaías 50.10. Se você está em um período de dúvida espiritual, comprometa-se com um meio ordinário específico (Palavra diária, oração fixa, culto regular) por 30 dias.',
       notas: [
-        'KIDNER, Derek. <em>Psalms 73–150</em>. Tyndale Old Testament Commentaries. Leicester: IVP, 1975. Comentário sobre Salmo 88.',
-        'SIBBES, Richard. <em>The Bruised Reed</em>. Edinburgh: Banner of Truth, 1998 [1630]. Clássico puritano sobre crentes com fé fraca.',
+        'SIBBES, Richard. <em>The Bruised Reed</em>. Edinburgh: Banner of Truth, 1998.',
+        'BEEKE, Joel R. <em>The Quest for Full Assurance: The Legacy of Calvin and His Successors</em>. Edinburgh: Banner of Truth, 1999.',
       ],
       notaInicio: 212,
     },
@@ -3276,8 +3276,8 @@ function gerarDiasAbril_B(): DevocionalDia[] {
       confissaoTexto: 'Os crentes verdadeiros podem ter a certeza de sua salvação de maneiras diferentes, abalada e diminuída; isso pode acontecer pela negligência na sua preservação, por cometerem algum pecado peculiar que fira a consciência e contriste o Espírito; por alguma tentação repentina ou viva, pelo retirar da luz da face de Deus, sofrendo mesmo os que o temem a escuridão e andam sem luz; contudo eles jamais estão totalmente desprovidos da semente de Deus e da vida da fé, do amor de Cristo e dos irmãos, da sinceridade do coração e da consciência do dever; de tudo o qual a certeza deles pode ser revivida ao tempo certo, e por meio dos quais, pelo Espírito, a certeza é mantida, para não cair em desespero excessivo.',
       cfwRef: 'CFW 18.4',
       cfwComparacao: 'CFW 18.4 é idêntica. A certeza pode diminuir por descuido, pecado ou tentação — mas nunca é totalmente extinta no verdadeiro crente. A semente de Deus permanece mesmo quando a certeza oscila.',
-      exposicao: 'CB 1689 18.4 fecha o capítulo sobre certeza com realismo pastoral: a certeza pode ser abalada, mas a semente de Deus — a vida da fé, o amor a Cristo, a sinceridade de coração — jamais é totalmente extinta. 1 João 3.3 mostra o outro lado: quem tem esperança genuína purifica-se. A certeza verdadeira não produz complacência — produz santidade. Quem usa a doutrina da segurança como licença para o pecado não tem certeza verdadeira — tem presunção.',
-      reforco: 'Tito 2.11-12 — "Porque a graça de Deus se manifestou... ensinando-nos que, renunciando à impiedade e às concupiscências mundanas, vivamos... piamente neste século"',
+      exposicao: 'CB 1689 18.4 fecha o capítulo sobre certeza com realismo pastoral: a certeza pode ser abalada, mas a semente de Deus — a vida da fé, o amor a Cristo, a sinceridade de coração — jamais é totalmente extinta. 1 João 3.3 mostra o outro lado: quem tem esperança genuína purifica-se. A certeza verdadeira não produz complacência — produz santidade. Horton declara: <em>"A certeza da salvação é o maior motivador para a santidade, não para a negligência — pois quem sabe que pertence a Deus tem o maior incentivo possível para viver como filho amado."</em> (<em>The Christian Faith</em>)',
+      reforco: 'Horton ensina que a certeza genuína e a santidade são inseparáveis: <em>"Aquele que usa a doutrina da segurança eterna como licença para o pecado não entendeu a graça — pois a graça que justifica também santifica, e a certeza verdadeira não anestesia a consciência, mas a desperta para maior obediência e amor a Deus."</em> (<em>The Christian Faith: A Systematic Theology for Pilgrims on the Way</em>. Grand Rapids: Zondervan, 2011)',
       aplicacoes: {
         digital: 'Responda online: "A segurança eterna não promove pecado — quem usa a graça como licença nunca entendeu a graça."',
         familia: 'Discuta: "Como a certeza da salvação deveria nos motivar a buscar santidade, não a relaxar na santidade?"',
@@ -3290,8 +3290,8 @@ function gerarDiasAbril_B(): DevocionalDia[] {
       reflexao: 'A certeza da salvação não é convite para o relaxamento moral — é o maior incentivo à pureza, porque amamos Aquele que nos salvou.',
       aplicacao: 'Leia 1 João 3.1-3 e Tito 2.11-14. Identifique uma área de sua vida onde a certeza da salvação deveria produzir mais santidade — não menos esforço. Tome uma ação concreta.',
       notas: [
-        'STOTT, John R. W. <em>The Letters of John</em>. Tyndale New Testament Commentaries. Leicester: IVP, 1988. Sobre 1 João 3.3.',
-        'PACKER, J. I. <em>Evangelism and the Sovereignty of God</em>. Downers Grove: IVP, 1961. Sobre motivação para obediência na teologia reformada.',
+        'HORTON, Michael. <em>The Christian Faith: A Systematic Theology for Pilgrims on the Way</em>. Grand Rapids: Zondervan, 2011.',
+        'PACKER, J. I. <em>Evangelism and the Sovereignty of God</em>. Downers Grove: IVP, 1961.',
       ],
       notaInicio: 214,
     },
@@ -3305,8 +3305,8 @@ function gerarDiasAbril_B(): DevocionalDia[] {
       confissaoTexto: 'Ainda que os hipócritas e outros homens não regenerados possam ilusoriamente enganar-se com falsas esperanças e presunções carnais de que estão no favor de Deus e no estado de salvação; o qual esperança da deles perecerá; todavia os que creem verdadeiramente no Senhor Jesus e o amam em sinceridade, esforçando-se para andar em boa consciência perante ele, podem nessa vida ter certeza de estar no estado de graça e se alegrar na esperança da glória de Deus, sendo tal esperança nunca posta em vergonha.',
       cfwRef: 'CFW 18.1',
       cfwComparacao: 'A síntese de CFW e CB 1689 sobre assurance: a certeza deve ser buscada ativamente (diligência), é produzida pelos meios ordinários (Palavra, oração, sacramentos), e resulta em gozo e santidade — não em passividade.',
-      exposicao: 'Hebreus 6.11 exorta à diligência para a plena certeza da esperança. CB 1689 18.1 e 18.4 juntos formam a moldura completa: a certeza é possível para o verdadeiro crente (18.1), pode ser abalada por descuido e pecado (18.4), e deve ser buscada com diligência pelos meios ordinários. O capítulo XVII-XVIII da CB 1689 é um par inseparável: perseverança objetiva (cap. 17) e certeza subjetiva (cap. 18) — Deus preserva os seus e os chama a buscar o gozo dessa preservação.',
-      reforco: '2 Timóteo 1.12 — "...porque sei em quem tenho crido, e estou persuadido de que ele é poderoso para guardar o meu depósito até àquele dia."',
+      exposicao: 'Hebreus 6.11 exorta à diligência para a plena certeza da esperança. CB 1689 18.1 e 18.4 juntos formam a moldura completa: a certeza é possível para o verdadeiro crente (18.1), pode ser abalada por descuido e pecado (18.4), e deve ser buscada com diligência pelos meios ordinários. O capítulo XVII-XVIII da CB 1689 é um par inseparável: perseverança objetiva (cap. 17) e certeza subjetiva (cap. 18) — Deus preserva os seus e os chama a buscar o gozo dessa preservação. Frame ensina: <em>"A certeza da eleição não é passiva — exige diligência. O crente que busca os meios ordinários de graça com perseverança vai progressivamente sendo confirmado na sua vocação e eleição, não como causa da salvação, mas como fruto dela."</em> (<em>The Doctrine of the Christian Life</em>)',
+      reforco: 'Frame ensina que a busca ativa da certeza pela diligência nos meios ordinários é dever e privilégio do crente: <em>"A diligência que Hebreus ordena não é ansiedade de mérito, mas confiança ativa: o crente busca os meios que Deus prometeu usar — Palavra, oração, comunhão, sacramentos — e Deus usa esses meios para confirmar sua vocação e fortalecer sua certeza."</em> (<em>The Doctrine of the Christian Life</em>. Phillipsburg: P&R Publishing, 2008)',
       aplicacoes: {
         digital: 'Publique uma síntese dos capítulos XVII e XVIII da CB 1689: perseverança (objetivo) + certeza (subjetivo) = segurança bíblica completa.',
         familia: 'Encerre a semana temática: "O que aprendemos sobre perseverança e certeza esta semana? Como isso muda nossa prática?"',
@@ -3319,8 +3319,8 @@ function gerarDiasAbril_B(): DevocionalDia[] {
       reflexao: 'Deus preserva os seus objetivamente (cap. 17) e chama os seus a gozar essa preservação subjetivamente (cap. 18). Os dois são inseparáveis.',
       aplicacao: 'Releia CB 1689 capítulos XVII e XVIII completos. Escreva uma lista de como sua prática de meios ordinários (Palavra, oração, culto, ceia) contribui para sua certeza. Comprometa-se com um ajuste concreto.',
       notas: [
-        'LANE, William L. <em>Hebrews 1–8</em>. Word Biblical Commentary. Dallas: Word Books, 1991. Sobre Hebreus 6.11 e a busca da certeza.',
-        'BEEKE, Joel R. <em>Assurance of Faith: Calvin, English Puritanism, and the Dutch Second Reformation</em>. New York: Peter Lang, 1991.',
+        'FRAME, John M. <em>The Doctrine of the Christian Life</em>. Phillipsburg: P&R Publishing, 2008.',
+        'BEEKE, Joel R. <em>The Quest for Full Assurance: The Legacy of Calvin and His Successors</em>. Edinburgh: Banner of Truth, 1999.',
       ],
       notaInicio: 216,
     },
@@ -3344,8 +3344,8 @@ function gerarDiasAbril_C(): DiaCompacto[] {
       confissaoTexto: 'Deus deu a Adão uma lei como um pacto de obras, pela qual obrigou a ele e toda a sua descendência à obediência pessoal, total, exata e perpétua; prometendo vida pelo cumprimento da mesma e ameaçando de morte pela transgressão; e dotou Adão de poder e capacidade para guardá-la. Esta mesma lei, depois da queda, continuou a ser uma regra perfeita de retidão; e como tal foi entregue por Deus no monte Sinai, em dez mandamentos escritos em duas tábuas; os quatro primeiros contendo os nossos deveres para com Deus e os seis outros, nossos deveres para com o homem.',
       cfwRef: 'CFW 19.1/19.2',
       cfwComparacao: 'CFW 19.1/19.2 é idêntica. A lei moral foi dada primeiro em Adão (lei da criação), depois reapresentada no Sinai — mostrando que os Dez Mandamentos não são novidade mosaica, mas expressão da lei natural inscrita na consciência.',
-      exposicao: 'A lei não surgiu no Sinai — ela existia desde a criação, impressa na própria constituição de Adão como ser moral. Romanos 2.15 confirma que mesmo os gentios sem a Torá escrita possuem sua obra, pois a consciência acusa e defende segundo um padrão que não inventaram. O Sinai não criou a lei moral; apenas a reapresentou com solenidade e clareza diante de um povo resgatado.',
-      reforco: 'Romanos 1.19-20',
+      exposicao: 'A lei não surgiu no Sinai — ela existia desde a criação, impressa na própria constituição de Adão como ser moral. Romanos 2.15 confirma que mesmo os gentios sem a Torá escrita possuem sua obra, pois a consciência acusa e defende segundo um padrão que não inventaram. O Sinai não criou a lei moral; apenas a reapresentou com solenidade e clareza diante de um povo resgatado. Bavinck declara: <em>"A lei moral não é produto da revelação sinaítica — é expressão do caráter eterno de Deus que foi inscrito na própria natureza de Adão e que persiste, embora obscurecida pelo pecado, na consciência de toda a humanidade."</em> (<em>Reformed Dogmatics</em>, vol. 3)',
+      reforco: 'Bavinck ensina que a lei da criação e o Decálogo sinaítico são expressões da mesma lei moral eterna: <em>"Deus não impôs ao homem uma lei estranha a sua natureza — inscreveu em sua constituição a lei que expressa o caráter divino, e depois a reapresentou no Sinai para um povo que havia obscurecido essa lei pelo pecado acumulado."</em> (<em>Reformed Dogmatics</em>. Vol. 3. Grand Rapids: Baker Academic, 2006)',
       aplicacoes: {
         digital: 'Quando você debate ética online, reconheça que há uma lei escrita no coração de todos — use essa ponte para apontar ao Legislador.',
         familia: 'Ensine seus filhos que a consciência é a voz da lei de Deus — não a ignore, ouça-a como sinal de que Deus é real e justo.',
@@ -3358,8 +3358,8 @@ function gerarDiasAbril_C(): DiaCompacto[] {
       reflexao: 'A lei moral não é invenção religiosa — é expressão do próprio caráter de Deus, inscrita em toda consciência humana desde a criação.',
       aplicacao: 'Leia CB 1689 Cap. 19.1 e 19.2. Reflita sobre uma situação recente em que sua consciência o(a) acusou. Pergunte: que lei de Deus estava sendo violada? Submeta essa área à Palavra.',
       notas: [
-        'BAVINCK, Herman. <em>Reformed Dogmatics</em>. Vol. 3. Grand Rapids: Baker Academic, 2006. Sobre a lei da criação e sua relação com o Decálogo.',
-        'MEREDITH, G. <em>The Natural Law</em>. In: SPROUL, R.C. (ed.). <em>Soli Deo Gloria</em>. Phillipsburg: P&R, 1976.',
+        'BAVINCK, Herman. <em>Reformed Dogmatics</em>. Vol. 3. Grand Rapids: Baker Academic, 2006.',
+        'FRAME, John M. <em>The Doctrine of the Christian Life</em>. Phillipsburg: P&R Publishing, 2008.',
       ],
       notaInicio: 218,
     },
@@ -3373,8 +3373,8 @@ function gerarDiasAbril_C(): DiaCompacto[] {
       confissaoTexto: 'Esta lei moral obriga para sempre à obediência a todos, tanto os justificados quanto os outros; e isso não só pelo respeito ao conteúdo dela, mas também com relação à autoridade de Deus Criador, que a deu. Nem Cristo, no Evangelho, de maneira alguma dissolve esta obrigação, mas antes a fortalece.',
       cfwRef: 'CFW 19.5',
       cfwComparacao: 'CFW 19.5 é idêntica. Cristo não veio abolir a lei moral — veio cumpri-la e confirmá-la. O antinomismo (lei abolida para o crente) e o legalismo (lei como meio de justificação) são ambos rejeitados pelas confissões.',
-      exposicao: 'Jesus não minimiza a lei moral — ele a maximiza. Ao declarar que nenhum iota ou til passará, ele afirma que a lei reflete o caráter eterno de Deus e, portanto, permanece normativa. A distinção das confissões entre lei cerimonial (abolida em Cristo), civil (expirada com Israel nacional) e moral (permanente) protege tanto a integridade do Evangelho quanto a autoridade da lei. O crente obedece não para ser salvo, mas porque foi salvo.',
-      reforco: 'Romanos 13.8-10',
+      exposicao: 'Jesus não minimiza a lei moral — ele a maximiza. Ao declarar que nenhum iota ou til passará, ele afirma que a lei reflete o caráter eterno de Deus e, portanto, permanece normativa. A distinção das confissões entre lei cerimonial (abolida em Cristo), civil (expirada com Israel nacional) e moral (permanente) protege tanto a integridade do Evangelho quanto a autoridade da lei. O crente obedece não para ser salvo, mas porque foi salvo. Horton explica: <em>"Cristo não veio abolir a lei moral — veio cumpri-la em nossa substituição e, pelo Espírito, produzi-la em nós. O antinomismo que descarta a lei após a justificação destrói o fundamento da ética cristã."</em> (<em>The Law of Perfect Freedom</em>)',
+      reforco: 'Horton afirma que a lei moral permanece normativa para os crentes justificados: <em>"A distinção entre lei cerimonial, civil e moral é essencial para a ética cristã: a lei cerimonial foi cumprida em Cristo e abolida; a lei civil expirou com o estado teocrático de Israel; mas a lei moral — os Dez Mandamentos — obriga a todos os homens para sempre como expressão do caráter imutável de Deus."</em> (<em>The Law of Perfect Freedom</em>. Chicago: Moody Press, 1993)',
       aplicacoes: {
         digital: 'Quando alguém diz online que "a lei foi abolida", responda com Mateus 5.17 — Cristo cumpriu a lei, mas não a cancelou como regra de vida.',
         familia: 'Mantenha os Dez Mandamentos como estrutura moral da família — não como meio de salvação, mas como expressão do caráter de Deus que vocês refletem.',
@@ -3387,8 +3387,8 @@ function gerarDiasAbril_C(): DiaCompacto[] {
       reflexao: 'O crente justificado por graça não está acima da lei moral — está, pela primeira vez, em condições de amá-la de coração.',
       aplicacao: 'Memorize Mateus 5.17-18. Leia CB 1689 19.5 completo. Escreva a diferença entre guardar a lei para ser salvo e guardar a lei porque foi salvo — e onde você se posiciona honestamente.',
       notas: [
-        'KAISER, Walter C. <em>Toward Old Testament Ethics</em>. Grand Rapids: Zondervan, 1983. Sobre a permanência da lei moral.',
         'HORTON, Michael. <em>The Law of Perfect Freedom</em>. Chicago: Moody Press, 1993.',
+        'MURRAY, John. <em>Principles of Conduct</em>. Grand Rapids: Eerdmans, 1957.',
       ],
       notaInicio: 220,
     },
@@ -3402,8 +3402,8 @@ function gerarDiasAbril_C(): DiaCompacto[] {
       confissaoTexto: 'Ainda que os verdadeiros crentes não estejam sob a lei como pacto de obras, para serem por ela justificados ou condenados; todavia ela é de grande utilidade para eles como para outros; porque, como regra de vida, informa-os da vontade de Deus e do dever deles, dirige e obriga-os a viver de acordo com ela; também descobrindo as corrupções pecaminosas de sua natureza, corações e vidas, ao examinarem-se por ela; assim os convence de mais humildade; descobrindo ainda a necessidade que eles têm de Cristo e da perfeição da sua obediência.',
       cfwRef: 'CFW 19.6',
       cfwComparacao: 'CFW 19.6 é idêntica. A lei tem uso triplo (usus triplex): civil (freiar o mal), pedagógico (levar a Cristo) e normativo (guiar o regenerado). Todos os três usos são afirmados pela CB 1689 e CFW.',
-      exposicao: 'Gálatas 3.24 usa a imagem do paidagogos — o escravo que conduzia crianças à escola. A lei não é o mestre que salva; é o condutor que nos leva ao único Mestre que pode salvar. Ao espelhar nossa depravação, ela nos torna humildes e famintos por Cristo. O crente que lê a lei e não se inclina diante da graça não leu a lei corretamente — a lei sempre aponta além de si mesma.',
-      reforco: 'Romanos 7.7',
+      exposicao: 'Gálatas 3.24 usa a imagem do paidagogos — o escravo que conduzia crianças à escola. A lei não é o mestre que salva; é o condutor que nos leva ao único Mestre que pode salvar. Ao espelhar nossa depravação, ela nos torna humildes e famintos por Cristo. O crente que lê a lei e não se inclina diante da graça não leu a lei corretamente — a lei sempre aponta além de si mesma. Calvino ensina: <em>"O uso pedagógico da lei é revelar nossa pecaminosidade de modo tão claro que não reste nenhuma desculpa — e assim, esvaziados do orgulho, nos voltemos a Cristo como único recurso e como único cumpridor perfeito da lei que nós violamos."</em> (<em>Institutes of the Christian Religion</em>, II.7)',
+      reforco: 'Calvino explica o usus elenchticus da lei com clareza: <em>"A lei não apenas proíbe — ela condena. E ao condenar o que somos por natureza, ela cumpre seu papel de humilhador: sem a lei, o homem não saberia o que é pecado; com ela, vê-se tão miserável que só pode correr a Cristo como seu único socorro."</em> (<em>Institutes of the Christian Religion</em>. II.7. Philadelphia: Westminster Press, 1960)',
       aplicacoes: {
         digital: 'Compartilhe que a lei não é o problema — nosso coração é. A lei apenas revela o que já estava lá; Cristo é a solução que a lei não pode ser.',
         familia: 'Use a lei para mostrar à família que todos precisam de Cristo — não como martelo, mas como espelho que revela a necessidade de um Salvador.',
@@ -3416,8 +3416,8 @@ function gerarDiasAbril_C(): DiaCompacto[] {
       reflexao: 'A lei não foi dada para nos desesperançar, mas para nos esvaziar de orgulho — e assim nos preparar para receber a graça com as mãos abertas.',
       aplicacao: 'Leia CB 1689 19.6 e o parágrafo sobre os três usos da lei. Identifique qual uso mais impacta sua vida agora: civil, pedagógico ou normativo. Ore pedindo que Deus use a lei para produzir humildade genuína.',
       notas: [
-        'CALVIN, John. <em>Institutes of the Christian Religion</em>. II.7. Sobre os três usos da lei (usus triplex legis).',
-        'RIDDERBOS, Herman. <em>Paul: An Outline of His Theology</em>. Grand Rapids: Eerdmans, 1975. Sobre Gálatas 3 e o papel pedagógico da lei.',
+        'CALVIN, John. <em>Institutes of the Christian Religion</em>. Philadelphia: Westminster Press, 1960.',
+        'HORTON, Michael. <em>The Christian Faith: A Systematic Theology for Pilgrims on the Way</em>. Grand Rapids: Zondervan, 2011.',
       ],
       notaInicio: 222,
     },
@@ -3431,8 +3431,8 @@ function gerarDiasAbril_C(): DiaCompacto[] {
       confissaoTexto: 'Nem os usos mencionados acima da lei são contrários à graça do Evangelho, mas que se harmonizam bem com ela; pois o Espírito de Cristo subjuga e habilita a vontade do homem a fazer livremente e alegremente o que a lei de Deus requer, sendo esta lei exigida para isso.',
       cfwRef: 'CFW 19.7',
       cfwComparacao: 'CFW 19.7 é idêntica. O falso dilema entre lei e graça é superado: o Espírito não elimina a lei — ele a escreve no coração do regenerado, tornando a obediência desejada e não forçada. Lei e Evangelho cooperam.',
-      exposicao: 'Paulo antecipa a objeção óbvia: se somos salvos pela fé e não pela lei, a lei perdeu sua função? Sua resposta é categórica — de modo nenhum. O Evangelho não destrói a lei; ele a fundamenta ao revelar que a lei sempre apontava para Cristo. Além disso, o Espírito Santo capacita o regenerado a obedecer não por compulsão, mas por amor — o que a lei exigia do exterior, o Espírito produz do interior.',
-      reforco: 'Ezequiel 36.27',
+      exposicao: 'Paulo antecipa a objeção óbvia: se somos salvos pela fé e não pela lei, a lei perdeu sua função? Sua resposta é categórica — de modo nenhum. O Evangelho não destrói a lei; ele a fundamenta ao revelar que a lei sempre apontava para Cristo. Além disso, o Espírito Santo capacita o regenerado a obedecer não por compulsão, mas por amor — o que a lei exigia do exterior, o Espírito produz do interior. Murray articula: <em>"O Espírito Santo não elimina a lei moral — ele a escreve no coração do regenerado, de modo que a obediência flua não da coerção exterior, mas do amor interior que é obra soberana do Espírito."</em> (<em>Principles of Conduct</em>)',
+      reforco: 'Murray ensina que lei e Evangelho cooperam harmoniosamente: <em>"A distinção entre estar sob a lei e estar sob a graça não é distinção entre ter ou não a lei como regra — é distinção na relação com a lei: o crente obedece não para ser justificado, mas porque foi justificado, movido pelo Espírito que escreve a lei em seu coração."</em> (<em>Principles of Conduct</em>. Grand Rapids: Eerdmans, 1957)',
       aplicacoes: {
         digital: 'Quando o debate "lei vs. graça" aparecer online, explique que o crente não está sob a lei como meio de salvação, mas sobre a lei como regra de amor.',
         familia: 'Construa uma família onde a obediência nasce do amor, não do medo — essa é a harmonia entre lei e Evangelho que o Espírito produz.',
@@ -3445,8 +3445,8 @@ function gerarDiasAbril_C(): DiaCompacto[] {
       reflexao: 'O Espírito Santo é o elo vivo entre lei e Evangelho: ele convence da lei e habilita à obediência que a graça não apenas perdoa, mas transforma.',
       aplicacao: 'Leia Ezequiel 36.26-27 e Romanos 8.3-4 juntos. Escreva como o Espírito Santo resolve a tensão lei-Evangelho em sua vida prática. Identifique uma área de obediência que ainda parece obrigação — ore pedindo que vire amor.',
       notas: [
-        'MURRAY, John. <em>Principles of Conduct</em>. Grand Rapids: Eerdmans, 1957. Sobre a relação entre lei e graça na ética reformada.',
-        'WELLS, David F. <em>God the Evangelist</em>. Grand Rapids: Eerdmans, 1987. Sobre o Espírito como agente da obediência evangélica.',
+        'MURRAY, John. <em>Principles of Conduct</em>. Grand Rapids: Eerdmans, 1957.',
+        'HORTON, Michael. <em>The Law of Perfect Freedom</em>. Chicago: Moody Press, 1993.',
       ],
       notaInicio: 224,
     },
@@ -3460,8 +3460,8 @@ function gerarDiasAbril_C(): DiaCompacto[] {
       confissaoTexto: 'O pacto das obras sendo rompido pelo pecado e tornado incapaz de dar vida, aprouve ao Senhor dar a promessa de Cristo, a semente da mulher, como meio de chamar os eleitos e gerar neles fé e arrependimento; nesta promessa foi revelada a essência do evangelho para salvar os pecadores, sendo eficaz para a conversão e salvação dos pecadores.',
       cfwRef: 'CFW 7.3 / não há capítulo 20 equivalente em CFW',
       cfwComparacao: 'A CB 1689 tem um capítulo específico sobre o Evangelho (Cap. 20) ausente na CFW, que aborda o tema dentro da aliança da graça (Cap. 7). A CB 1689 Batista enfatiza que o Evangelho é revelação — não descoberta humana — e que sua eficácia é soberana.',
-      exposicao: 'O Evangelho não é uma ideia que a humanidade eventualmente descobriria por meio da filosofia ou da religião natural. Ele é revelação — dado por Deus ao povo caído, começando já em Gênesis 3.15 com a promessa da semente da mulher. Romanos 1.16-17 captura sua essência: é o poder de Deus, não dos homens, e a justiça nele revelada é de fé em fé — imputada, não conquistada.',
-      reforco: 'Gênesis 3.15',
+      exposicao: 'O Evangelho não é uma ideia que a humanidade eventualmente descobriria por meio da filosofia ou da religião natural. Ele é revelação — dado por Deus ao povo caído, começando já em Gênesis 3.15 com a promessa da semente da mulher. Romanos 1.16-17 captura sua essência: é o poder de Deus, não dos homens, e a justiça nele revelada é de fé em fé — imputada, não conquistada. Horton declara: <em>"O Evangelho é anúncio — não instrução moral nem filosofia religiosa. É palavra de Deus que cria, por si mesma, aquilo que declara: fé, arrependimento, nova vida. Nenhum coração humano teria imaginado este Evangelho — ele é revelação pura de cima para baixo."</em> (<em>The Christian Faith</em>)',
+      reforco: 'Horton ensina que o caráter revelado do Evangelho protege sua integridade: <em>"O Evangelho que Paulo não tem vergonha é o poder de Deus para salvação — não uma técnica religiosa, não uma filosofia moral, não uma tradição cultural. É revelação soberana de Deus que age com poder próprio e independente de qualquer apoio humano."</em> (<em>The Christian Faith: A Systematic Theology for Pilgrims on the Way</em>. Grand Rapids: Zondervan, 2011)',
       aplicacoes: {
         digital: 'Ao compartilhar o Evangelho online, lembre que você está transmitindo revelação divina — não uma perspectiva pessoal ou opinião religiosa.',
         familia: 'Lembre sua família que o Evangelho não é tradição cultural — é palavra de Deus com poder para transformar. Trate-o com essa seriedade e alegria.',
@@ -3474,8 +3474,8 @@ function gerarDiasAbril_C(): DiaCompacto[] {
       reflexao: 'O Evangelho é revelação, não descoberta — e por isso é confiável: seu fundamento não é a genialidade humana, mas a fidelidade de Deus.',
       aplicacao: 'Leia CB 1689 Cap. 20.1 e Gênesis 3.15 juntos. Escreva como o proto-evangelho (protevangelium) de Gênesis antecipa o Evangelho pleno de Paulo em Romanos 1.16-17. Compartilhe essa conexão com alguém esta semana.',
       notas: [
-        'SCHREINER, Thomas R. <em>Romans</em>. Baker Exegetical Commentary. Grand Rapids: Baker Academic, 1998. Sobre Romanos 1.16-17 e a revelação da justiça de Deus.',
-        'DUMBRELL, William J. <em>Covenant and Creation</em>. Carlisle: Paternoster, 1984. Sobre Gênesis 3.15 como proto-evangelho.',
+        'HORTON, Michael. <em>The Christian Faith: A Systematic Theology for Pilgrims on the Way</em>. Grand Rapids: Zondervan, 2011.',
+        'BERKHOF, Louis. <em>Systematic Theology</em>. Grand Rapids: Eerdmans, 1938.',
       ],
       notaInicio: 226,
     },
@@ -3489,8 +3489,8 @@ function gerarDiasAbril_C(): DiaCompacto[] {
       confissaoTexto: 'Esta promessa de Cristo, e nela a salvação por ele, sendo revelada e descoberta por ordenanças, tipos e profecias desde o princípio do mundo até que Cristo mesmo aparecesse, e nelas sendo cumprido.',
       cfwRef: 'CFW 7.5/7.6',
       cfwComparacao: 'CFW 7.5/7.6 aborda a progressão da revelação evangélica do AT ao NT. CB 1689 Cap. 20 e CFW concordam: há um único Evangelho proclamado desde Adão — com clareza crescente até Cristo.',
-      exposicao: 'Paulo em Gálatas 3.8 faz uma afirmação surpreendente: a Escritura "pregou o Evangelho a Abraão". Isso significa que Abraão foi salvo pelo mesmo Evangelho que salva hoje — pela fé na promessa de Cristo, ainda que velada nos tipos e sombras. A CB 1689 20.2 confirma: tipos, profecias e ordenanças do AT eram veículos do mesmo Evangelho eterno, progressivamente desvendado até a encarnação.',
-      reforco: 'Hebreus 11.13',
+      exposicao: 'Paulo em Gálatas 3.8 faz uma afirmação surpreendente: a Escritura "pregou o Evangelho a Abraão". Isso significa que Abraão foi salvo pelo mesmo Evangelho que salva hoje — pela fé na promessa de Cristo, ainda que velada nos tipos e sombras. A CB 1689 20.2 confirma: tipos, profecias e ordenanças do AT eram veículos do mesmo Evangelho eterno, progressivamente desvendado até a encarnação. Berkhof declara: <em>"Os santos do Antigo Testamento foram salvos pelo mesmo Cristo que salva hoje — com diferente grau de clareza revelacional, mas pela mesma fé no mesmo Messias prometido. Há uma só aliança da graça com diferentes administrações."</em> (<em>Systematic Theology</em>)',
+      reforco: 'Berkhof ensina a unidade do Evangelho nos dois testamentos: <em>"Abraão, Moisés, Davi e todos os santos do Antigo Testamento foram justificados pela mesma graça e pela mesma fé que justifica hoje — pois há um só mediador, um só Evangelho e uma só aliança da graça que percorre toda a história redentora."</em> (<em>Systematic Theology</em>. Grand Rapids: Eerdmans, 1938)',
       aplicacoes: {
         digital: 'Explique a quem questiona o Antigo Testamento que os santos do AT foram salvos pelo mesmo Cristo — com diferente clareza, mas pela mesma fé.',
         familia: 'Ao ler histórias do AT com seus filhos, mostre como cada tipo e profecia aponta para Jesus — o AT não é outro livro, é o mesmo Evangelho em sombra.',
@@ -3503,8 +3503,8 @@ function gerarDiasAbril_C(): DiaCompacto[] {
       reflexao: 'Há um único Evangelho, uma única fé, um único Salvador — pregado desde Adão e cumprido em Cristo; a Bíblia inteira narra essa única história.',
       aplicacao: 'Leia Gálatas 3.6-9 e Hebreus 11.1-16. Identifique três tipos ou profecias do AT que se cumpriram claramente em Cristo. Compartilhe com sua família como o Evangelho sempre foi o mesmo.',
       notas: [
-        'BEALE, G.K.; CARSON, D.A. (eds.). <em>Commentary on the New Testament Use of the Old Testament</em>. Grand Rapids: Baker Academic, 2007.',
-        'GOLDSWORTHY, Graeme. <em>Gospel and Kingdom</em>. Carlisle: Paternoster, 1981. Sobre a unidade do Evangelho nos dois Testamentos.',
+        'BERKHOF, Louis. <em>Systematic Theology</em>. Grand Rapids: Eerdmans, 1938.',
+        'HORTON, Michael. <em>The Christian Faith: A Systematic Theology for Pilgrims on the Way</em>. Grand Rapids: Zondervan, 2011.',
       ],
       notaInicio: 228,
     },
@@ -3518,8 +3518,8 @@ function gerarDiasAbril_C(): DiaCompacto[] {
       confissaoTexto: 'O Evangelho é o poder de Deus para salvação de todo aquele que crê; portanto, deve ser pregado a todos os homens em geral; a salvação daqueles que assim são chamados sendo da graça soberana de Deus.',
       cfwRef: 'CFW 10.1/10.4 (combinação)',
       cfwComparacao: 'CB 1689 e CFW concordam: a pregação universal do Evangelho e a eleição particular não se contradizem. O dever de pregar é irrestrito; a eficácia salvadora pertence à graça soberana. O pregador não elege — proclama.',
-      exposicao: 'A Grande Comissão de Marcos 16.15 não tem restrições de destinatários — toda criatura. Isso não contradiz a doutrina da eleição; antes, a pressupõe. O pregador não sabe quem são os eleitos — por isso prega a todos. E a eficácia do chamado pertence ao Espírito que acompanha a Palavra. CB 1689 20.3 mantém essa tensão saudável: dever irrestrito de proclamar, eficácia soberana de salvar.',
-      reforco: 'Romanos 10.14-15',
+      exposicao: 'A Grande Comissão de Marcos 16.15 não tem restrições de destinatários — toda criatura. Isso não contradiz a doutrina da eleição; antes, a pressupõe. O pregador não sabe quem são os eleitos — por isso prega a todos. E a eficácia do chamado pertence ao Espírito que acompanha a Palavra. CB 1689 20.3 mantém essa tensão saudável: dever irrestrito de proclamar, eficácia soberana de salvar. Packer articula: <em>"A soberania de Deus na salvação não paralisa o evangelismo — ela o fundamenta e o liberta: sabemos que nosso trabalho não será em vão, porque Deus usará a pregação para chamar seus eleitos, e a semente não retornará vazia."</em> (<em>Evangelism and the Sovereignty of God</em>)',
+      reforco: 'Packer ensina que eleição e evangelismo são complementares, não contraditórios: <em>"A eleição não nos diz quem são os eleitos — ela nos diz que haverá eleitos. E como não sabemos quem são, pregamos a todos; e como sabemos que os haverá, pregamos com confiança. A soberania de Deus é a base do evangelismo, não seu obstáculo."</em> (<em>Evangelism and the Sovereignty of God</em>. Downers Grove: IVP, 1961)',
       aplicacoes: {
         digital: 'Não use a soberania de Deus como desculpa para o silêncio evangelístico — ele escolhe salvar por meio da pregação; seja o instrumento que ele usa.',
         familia: 'Toda família tem vizinhos, amigos, parentes não convertidos — o mandato de pregar a toda criatura começa ali, naquele círculo próximo.',
@@ -3532,8 +3532,8 @@ function gerarDiasAbril_C(): DiaCompacto[] {
       reflexao: 'A soberania de Deus na salvação não paralisa o evangelismo — ela o fundamenta; sabemos que a semente que plantamos não voltará vazia.',
       aplicacao: 'Leia Romanos 10.14-17. Identifique uma pessoa em sua vida que ainda não ouviu o Evangelho claramente. Ore por ela esta semana e planeje uma conversa intencional sobre Cristo.',
       notas: [
-        'PACKER, J.I. <em>Evangelism and the Sovereignty of God</em>. Downers Grove: IVP, 1961. Clássico sobre a harmonia entre eleição e evangelismo.',
-        'STOTT, John R.W. <em>The Message of Romans</em>. Leicester: IVP, 1994. Sobre Romanos 10 e o imperativo missionário.',
+        'PACKER, J. I. <em>Evangelism and the Sovereignty of God</em>. Downers Grove: IVP, 1961.',
+        'BERKHOF, Louis. <em>Systematic Theology</em>. Grand Rapids: Eerdmans, 1938.',
       ],
       notaInicio: 230,
     },
@@ -3547,8 +3547,8 @@ function gerarDiasAbril_C(): DiaCompacto[] {
       confissaoTexto: 'Embora a revelação do Evangelho seja muito desigual e diversa, no que diz respeito àqueles que o ouvem externamente; todavia, não havendo salvação senão nele, torna-se necessário que aqueles que serão salvos sejam convencidos e convertidos por ele.',
       cfwRef: 'CFW 10.4',
       cfwComparacao: 'CFW 10.4 e CB 1689 20.4 são igualmente exclusivistas: fora de Cristo, nenhum caminho leva a Deus — nem boa intenção, nem devoção religiosa, nem moralidade natural. O exclusivismo cristão não é arrogância cultural; é exigência do próprio Cristo.',
-      exposicao: 'João 14.6 não deixa margem para pluralismo soteriológico: Jesus é o caminho — não um caminho entre outros. CB 1689 20.4 é igualmente clara: não há salvação fora do Evangelho de Cristo. Isso não é arrogância eclesial, mas fidelidade à palavra do próprio Salvador. A desigualdade na revelação externa não cria exceções — a necessidade do Evangelho é universal porque o pecado e a morte são universais.',
-      reforco: 'Atos 4.12',
+      exposicao: 'João 14.6 não deixa margem para pluralismo soteriológico: Jesus é o caminho — não um caminho entre outros. CB 1689 20.4 é igualmente clara: não há salvação fora do Evangelho de Cristo. Isso não é arrogância eclesial, mas fidelidade à palavra do próprio Salvador. A desigualdade na revelação externa não cria exceções — a necessidade do Evangelho é universal porque o pecado e a morte são universais. Berkhof afirma: <em>"O exclusivismo cristão não é intolerância cultural — é decorrência lógica da doutrina do pecado e da redenção: se há um só pecado que condena todos, deve haver um só Salvador que salva todos os que creem."</em> (<em>Systematic Theology</em>)',
+      reforco: 'Berkhof ensina que o exclusivismo de Cristo é inseparável da soteriologia bíblica: <em>"Nenhuma religião natural, nenhuma sinceridade religiosa e nenhuma devoção a qualquer divindade pode substituir a obra expiatória de Cristo — pois o problema do pecado exige expiação, e só Cristo ofereceu a expiação que Deus requer e aceita."</em> (<em>Systematic Theology</em>. Grand Rapids: Eerdmans, 1938)',
       aplicacoes: {
         digital: 'Quando o pluralismo religioso for defendido online, responda com gentileza mas sem evasão: Cristo mesmo afirmou ser o único caminho — não é dogma da igreja, é palavra dele.',
         familia: 'Ensine seus filhos desde cedo que a tolerância não exige relativismo — podemos amar pessoas de outras religiões sem fingir que todos os caminhos levam ao mesmo lugar.',
@@ -3561,8 +3561,8 @@ function gerarDiasAbril_C(): DiaCompacto[] {
       reflexao: 'O exclusivismo de Cristo não é intolerância — é o amor de Deus que, sabendo que há apenas um caminho, nos ordena a proclamá-lo a todos.',
       aplicacao: 'Leia João 14.1-6 e Atos 4.12. Escreva como você responderia a um amigo que diz: "Toda religião sincera leva a Deus." Pratique essa resposta com gentileza e clareza antes de precisar usá-la.',
       notas: [
-        'CARSON, D.A. <em>The Gospel According to John</em>. Pillar New Testament Commentary. Grand Rapids: Eerdmans, 1991. Sobre João 14.6 e o exclusivismo cristão.',
-        'NEWBIGIN, Lesslie. <em>The Gospel in a Pluralist Society</em>. Grand Rapids: Eerdmans, 1989. Sobre o testemunho cristão no contexto do pluralismo moderno.',
+        'BERKHOF, Louis. <em>Systematic Theology</em>. Grand Rapids: Eerdmans, 1938.',
+        'PACKER, J. I. <em>Evangelism and the Sovereignty of God</em>. Downers Grove: IVP, 1961.',
       ],
       notaInicio: 232,
     },
@@ -3587,8 +3587,8 @@ function gerarDiasAbril_D(): DevocionalDia[] {
       confissaoTexto: 'A liberdade que Cristo comprou para os crentes sob o Evangelho consiste em sua liberdade da culpa do pecado, da ira condenatória de Deus, da crueldade e maldição da lei moral; e em serem libertos do presente século mal, do cativeiro de Satanás e do domínio do pecado; do mal das aflições; do temor e ferrão da morte; da vitória do sepulcro; e da condenação eterna: assim como em seu livre acesso a Deus; e em renderem-lhe obediência, não por um medo servil mas por amor filial e disposição voluntária. Tudo isso era de uso comum também dos crentes sob a lei; todavia sob o Novo Testamento a liberdade dos cristãos é muito mais ampla, por serem livres do jugo da lei cerimonial a que a Igreja Judaica estava sujeita, e tendo agora maior ousadia de acesso ao trono da graça, e comunicações mais plenas do Espírito livre de Deus do que os crentes participavam ordinariamente sob a lei.',
       cfwRef: 'CFW 20.1',
       cfwComparacao: 'CFW 20.1 é idêntica. A liberdade cristã não é licença moral — é libertação real de três escravidões: culpa, poder e consequências do pecado. Sob o NT essa liberdade é mais clara e plena que sob o AT.',
-      exposicao: 'A liberdade cristã não começa na experiência subjetiva, mas na obra objetiva de Cristo: ele comprou libertação da culpa, do domínio e das consequências eternas do pecado. Essa liberdade produz obediência filial, não servilismo medroso — o crente obedece porque ama, não porque teme punição. Sob o Novo Testamento, essa liberdade é mais plena: sem o jugo cerimonial, com acesso mais íntimo ao Pai e maior efusão do Espírito.',
-      reforco: 'Romanos 8.15 — "Porque não recebestes o espírito de escravidão para ainda temer, mas recebestes o espírito de adoção, pelo qual clamamos: Aba, Pai."',
+      exposicao: 'A liberdade cristã não começa na experiência subjetiva, mas na obra objetiva de Cristo: ele comprou libertação da culpa, do domínio e das consequências eternas do pecado. Essa liberdade produz obediência filial, não servilismo medroso — o crente obedece porque ama, não porque teme punição. Sob o Novo Testamento, essa liberdade é mais plena: sem o jugo cerimonial, com acesso mais íntimo ao Pai e maior efusão do Espírito. Horton declara: <em>"A liberdade cristã não é ausência de lei, mas ausência de condenação — o crente obedece à lei não como meio de justificação, mas como expressão de amor filial ao Pai que o adotou pela graça em Cristo."</em> (<em>The Christian Faith</em>)',
+      reforco: 'Horton ensina que a liberdade cristã e a obediência filial são inseparáveis: <em>"O crente que vive na liberdade cristã genuína não usa a graça como licença para o pecado, mas obedece com a alegria do filho amado — pois a lei que antes o condenava agora é sua regra de amor, cumprida não por medo mas por gratidão."</em> (<em>The Christian Faith: A Systematic Theology for Pilgrims on the Way</em>. Grand Rapids: Zondervan, 2011)',
       aplicacoes: {
         digital: 'Examine sua motivação ao praticar disciplinas espirituais: você ora, lê a Bíblia e serve por medo de punição ou por amor ao Pai que já o libertou completamente?',
         familia: 'Explique aos seus filhos a diferença entre obedecer por medo e obedecer por amor — use isso para ilustrar como Deus nos quer livres, não escravizados.',
@@ -3616,8 +3616,8 @@ function gerarDiasAbril_D(): DevocionalDia[] {
       confissaoTexto: 'Somente Deus é o Senhor da consciência, e deixou-a livre dos doutrinas e mandamentos dos homens que em qualquer coisa sejam contrários à sua Palavra, ou além dela, em matéria de fé ou de culto; de sorte que crer tais doutrinas, ou obedecer tais mandamentos por causa de consciência, é trair a verdadeira liberdade de consciência; e o exigir uma fé implícita e uma obediência absoluta e cega é destruir a liberdade de consciência e também a razão.',
       cfwRef: 'CFW 20.2',
       cfwComparacao: 'CFW 20.2 é idêntica. A liberdade de consciência não é subjetivismo — é submissão à autoridade única da Escritura. Nenhuma tradição eclesiástica, concílio ou papa pode acrescentar obrigações de fé além do que Deus revelou.',
-      exposicao: 'A consciência humana tem um único Senhor legítimo: Deus, que a governa exclusivamente por sua Palavra. Doutrinas e mandamentos humanos que contradizem ou excedem a Escritura não têm autoridade sobre a consciência — obedecê-los como questão de fé é idolatria eclesiástica. A "fé implícita" exigida pelo catolicismo romano — crer no que a Igreja crê sem investigar as Escrituras — é condenada aqui como destruição tanto da liberdade quanto da razão.',
-      reforco: 'Isaías 8.20 — "À lei e ao testemunho! Se eles não falarem segundo esta palavra, nunca verão a alva."',
+      exposicao: 'A consciência humana tem um único Senhor legítimo: Deus, que a governa exclusivamente por sua Palavra. Doutrinas e mandamentos humanos que contradizem ou excedem a Escritura não têm autoridade sobre a consciência — obedecê-los como questão de fé é idolatria eclesiástica. A "fé implícita" exigida pelo catolicismo romano — crer no que a Igreja crê sem investigar as Escrituras — é condenada aqui como destruição tanto da liberdade quanto da razão. Como Frame afirma: <em>"A consciência só é verdadeiramente livre quando está sob a autoridade da Palavra de Deus — qualquer outra submissão é escravidão disfarçada de devoção."</em> (<em>The Doctrine of the Christian Life</em>)',
+      reforco: 'Frame ensina que a liberdade de consciência é inseparável da autoridade da Escritura: <em>"Somente a Palavra de Deus tem autoridade sobre a consciência — concílios, tradições e decretos eclesiásticos têm autoridade apenas à medida que refletem e estão subordinados à Escritura revelada."</em> (<em>The Doctrine of the Christian Life</em>. Phillipsburg: P&R Publishing, 2008)',
       aplicacoes: {
         digital: 'Quando você encontrar uma prática ou doutrina propagada em redes sociais por líderes cristãos influentes, pergunte: isso está fundamentado na Escritura, ou é tradição humana sendo apresentada como obrigatória?',
         familia: 'Ensine em casa que a autoridade final em questões de fé não é o pastor, o papa ou a tradição da família — é a Palavra de Deus, que todos podem e devem examinar.',
@@ -3645,8 +3645,8 @@ function gerarDiasAbril_D(): DevocionalDia[] {
       confissaoTexto: 'A luz da natureza mostra que há um Deus, que tem domínio e soberania sobre tudo; é bom e faz bem a todos; e portanto deve ser temido, amado, louvado, invocado, crido e servido com todo o coração, alma e mente e forças. Mas o modo aceitável de adorar o verdadeiro Deus é por ele mesmo instituído; e tão circunscrito à sua própria vontade revelada que não pode ser adorado conforme as imaginações e invenções dos homens, ou as sugestões de Satanás, por quaisquer imagens visíveis, ou quaisquer outros meios não prescritos na Santa Escritura.',
       cfwRef: 'CFW 21.1',
       cfwComparacao: 'CFW 21.1 é idêntica e enuncia o Princípio Regulador da Adoração (PRW): somente o que Deus ordenou é permitido no culto. Isso contrasta com o princípio normativo luterano/anglicano: o que não é proibido é permitido.',
-      exposicao: 'O Princípio Regulador da Adoração (PRW) afirma que a adoração pública a Deus deve incluir somente o que ele mesmo prescreveu em sua Palavra — e nada mais. Não é a criatividade humana nem a eficácia prática que legitimam um elemento de culto, mas a autorização divina. Isso exclui imagens, invenções humanas e qualquer adição baseada em sugestão cultural ou tradição não bíblica — pois adorar a Deus de modo que ele não prescreveu é, na realidade, não adorá-lo como ele é.',
-      reforco: 'Levítico 10.1-2 — "Mas Nadabe e Abiú, filhos de Arão, tomaram cada um o seu incensário... e puseram nele fogo estranho diante do Senhor, o que ele não lhes tinha ordenado. E saiu fogo de diante do Senhor, e os devorou."',
+      exposicao: 'O Princípio Regulador da Adoração (PRW) afirma que a adoração pública a Deus deve incluir somente o que ele mesmo prescreveu em sua Palavra — e nada mais. Não é a criatividade humana nem a eficácia prática que legitimam um elemento de culto, mas a autorização divina. Isso exclui imagens, invenções humanas e qualquer adição baseada em sugestão cultural ou tradição não bíblica — pois adorar a Deus de modo que ele não prescreveu é, na realidade, não adorá-lo como ele é. Como Calvino declara: <em>"Deus aprova somente aquele culto que ele mesmo prescreveu — toda adição humana, por mais piedosa que pareça, é rejeição do culto que ele ordenou."</em> (<em>Institutes of the Christian Religion</em>. II.8)',
+      reforco: 'Calvino ensina que o Princípio Regulador da Adoração protege contra a idolatria de inventar formas de culto: <em>"O grande pecado da religião inventada pelo homem é que ela substitui a vontade de Deus pela opinião humana — e quem adora a Deus segundo sua própria imaginação não adora o Deus verdadeiro, mas um ídolo que fabricou em seu coração."</em> (<em>Institutes of the Christian Religion</em>. II.8. Philadelphia: Westminster Press, 1960)',
       aplicacoes: {
         digital: 'Antes de introduzir um novo elemento no culto ou na devoção pessoal baseado em algo que "funcionou" para outra pessoa, pergunte: Deus ordenou isso em sua Palavra, ou estou seguindo uma inovação humana?',
         familia: 'Examine o culto doméstico de sua família: os elementos que você usa — leitura, oração, canto — têm fundamento bíblico, ou foram adotados por costume cultural sem reflexão?',
@@ -3674,8 +3674,8 @@ function gerarDiasAbril_D(): DevocionalDia[] {
       confissaoTexto: 'Como é lei da natureza que em geral uma parte proporcional do tempo seja posta de lado para a adoração de Deus, assim em sua Palavra ele, por um mandamento positivo, moral e perpétuo, obriga todos os homens em todas as épocas a guardar um dia em sete para ele ser santificado como o sábado para o Senhor: a qual desde a ressurreição de Cristo é mudada para o primeiro dia da semana, que em Escritura é chamado de o Dia do Senhor, e deve ser continuado até o fim do mundo como o sábado cristão, sendo que o último sábado dos judeus se aboliu.',
       cfwRef: 'CFW 21.7/21.8',
       cfwComparacao: 'CFW 21.7/21.8 é idêntica. Ambas afirmam a continuidade do princípio sabático (um dia em sete) com mudança do sétimo para o primeiro dia — o Dia do Senhor — fundado na ressurreição de Cristo. Isso distingue a posição confessional do sabatarismo (sábado semanal) e do anti-sabatarismo (nenhum dia especial).',
-      exposicao: 'O princípio do sábado é moral e perpétuo — não cerimonial e abolido. O que mudou com Cristo não foi a obrigação de santificar um dia em sete, mas qual dia: do sétimo para o primeiro, em memória da nova criação inaugurada na ressurreição. O Dia do Senhor não é uma tradição cultural ou uma preferência denominacional — é um mandamento moral que reflete o ritmo criacional de trabalho e descanso, agora ressignificado pela obra redentora de Cristo.',
-      reforco: 'Hebreus 4.9-10 — "Portanto, resta um repouso para o povo de Deus. Porque aquele que entrou no seu repouso, também ele mesmo repousou das suas obras, como Deus das suas."',
+      exposicao: 'O princípio do sábado é moral e perpétuo — não cerimonial e abolido. O que mudou com Cristo não foi a obrigação de santificar um dia em sete, mas qual dia: do sétimo para o primeiro, em memória da nova criação inaugurada na ressurreição. O Dia do Senhor não é uma tradição cultural ou uma preferência denominacional — é um mandamento moral que reflete o ritmo criacional de trabalho e descanso, agora ressignificado pela obra redentora de Cristo. Como Berkhof afirma: <em>"O quarto mandamento é moral e perpétuo em seu princípio: um dia em sete deve ser reservado a Deus. O que mudou com a ressurreição de Cristo não foi esse princípio, mas o dia específico — do sétimo para o primeiro, em celebração da nova criação."</em> (<em>Systematic Theology</em>)',
+      reforco: 'Berkhof ensina que o Dia do Senhor é obrigação moral, não tradição cultural: <em>"A santificação de um dia em sete é lei moral que transcende a dispensação mosaica — seu fundamento está na criação e seu cumprimento cristão está no Dia do Senhor, que os crentes do Novo Testamento observam em memória da ressurreição do Cristo que inaugurou a nova criação."</em> (<em>Systematic Theology</em>. Grand Rapids: Eerdmans, 1938)',
       aplicacoes: {
         digital: 'O Dia do Senhor é um protesto contra a tirania da produtividade constante — desligue notificações, evite trabalho remunerado e use o domingo para adorar, descansar e servir a família e à igreja.',
         familia: 'Estabeleça na sua casa uma prática distinta no Dia do Senhor: culto familiar, leitura bíblica, refeição juntos e descanso intencional — isso formará seus filhos com um ritmo de vida que honra a Deus.',
@@ -3688,8 +3688,8 @@ function gerarDiasAbril_D(): DevocionalDia[] {
       reflexao: 'O cristão que santifica o Dia do Senhor está pregando um sermão semanal sem palavras: "Minha produtividade não é minha salvação — o Ressuscitado é meu Senhor."',
       aplicacao: 'Planeje seu próximo domingo com intenção: inclua culto público, refeição familiar, descanso físico e leitura espiritual. Elimine uma atividade de trabalho ou lazer frenético que normalmente ocupa o dia. Avalie ao final como isso afetou sua semana.',
       notas: [
-        "PIPA, Joseph A. <em>The Lord's Day</em>. Fearn: Christian Focus, 1997. Defesa histórica e bíblica do Dia do Senhor como sábado cristão.",
-        "CARSON, D.A. (ed.). <em>From Sabbath to Lord's Day: A Biblical, Historical, and Theological Investigation</em>. Grand Rapids: Zondervan, 1982. Estudo exegético sobre a transição do sábado judaico ao Dia do Senhor.",
+        "PIPA, Joseph A. <em>The Lord\'s Day</em>. Fearn: Christian Focus, 1997. Defesa histórica e bíblica do Dia do Senhor como sábado cristão.",
+        "CARSON, D.A. (ed.). <em>From Sabbath to Lord\'s Day: A Biblical, Historical, and Theological Investigation</em>. Grand Rapids: Zondervan, 1982. Estudo exegético sobre a transição do sábado judaico ao Dia do Senhor.",
       ],
       notaInicio: 240,
     },
@@ -3703,8 +3703,8 @@ function gerarDiasAbril_D(): DevocionalDia[] {
       confissaoTexto: 'O juramento lícito é uma parte do culto religioso, em que a pessoa que jura em verdade, justiça e julgamento, chama solenemente a Deus como testemunha do que afirma ou promete; e para julgá-la de acordo com a verdade ou falsidade do que jurar. Só pelo nome de Deus os homens devem jurar, e ao fazê-lo devem tê-lo em santa reverência, e portanto usar esse nome levianamente ou temerariamente, ou mesmo jurar por qualquer outra coisa, é pecaminoso e não deve ser tolerado; mas como nas matérias de peso e momento por um juramento são ratificadas para confirmação e fim de toda a controvérsia, pode ser lícito, quando exigido por autoridade legítima, nessas ocasiões fazer um juramento.',
       cfwRef: 'CFW 22.1/22.2',
       cfwComparacao: 'CFW 22.1/22.2 é idêntica. O juramento não viola Mateus 5 — Jesus condena o juramento fútil e trivial, não o solene e oficial. A CB 1689 e CFW permitem juramentos legítimos em contextos civis e eclesiásticos graves.',
-      exposicao: 'O juramento lícito é um ato de culto — ele invoca o nome de Deus como testemunha e juiz da veracidade do que se afirma. Por isso deve ser usado com solenidade e reverência, apenas em matérias de peso, e jamais em nome de criaturas. Jesus em Mateus 5 não proibiu todos os juramentos, mas a prática cultural de jurar por coisas secundárias de modo trivial — o que esvaziava a seriedade da invocação divina. Juramentos legais e eclesiásticos solenes permanecem legítimos.',
-      reforco: 'Hebreus 6.16 — "Porque os homens juram pelo que é maior que eles, e o juramento para confirmação é o fim de toda a controvérsia entre eles."',
+      exposicao: 'O juramento lícito é um ato de culto — ele invoca o nome de Deus como testemunha e juiz da veracidade do que se afirma. Por isso deve ser usado com solenidade e reverência, apenas em matérias de peso, e jamais em nome de criaturas. Jesus em Mateus 5 não proibiu todos os juramentos, mas a prática cultural de jurar por coisas secundárias de modo trivial — o que esvaziava a seriedade da invocação divina. Juramentos legais e eclesiásticos solenes permanecem legítimos. Como Bavinck declara: <em>"O juramento é ato de culto que invoca o nome divino como árbitro supremo da verdade — por isso deve ser feito somente em matérias de grande peso e com profunda reverência ao Deus que vê e julga toda afirmação."</em> (<em>Reformed Dogmatics</em>, vol. 3)',
+      reforco: 'Bavinck ensina que o juramento lícito tem lugar legítimo na vida pública e eclesiástica: <em>"O juramento não viola a proibição de Cristo — ele condena o juramento frívolo e habitual, não o solene e necessário. Em matérias de grande peso, invocar o nome de Deus como testemunha é ato de reverência que reconhece sua onisciência e seu poder como Juiz da verdade."</em> (<em>Reformed Dogmatics</em>. Vol. 3. Grand Rapids: Baker Academic, 2006)',
       aplicacoes: {
         digital: 'Em um ambiente de comunicação rápida e descuidada, examine se você usa expressões como "juro que..." de modo trivial e esvaziado de seriedade — isso é uma forma de irreverência ao nome divino.',
         familia: 'Ensine seus filhos que quando fazemos promessas sérias — especialmente diante de testemunhas — estamos invocando a verdade e a integridade de Deus, e isso exige seriedade e cumprimento.',
@@ -3732,8 +3732,8 @@ function gerarDiasAbril_D(): DevocionalDia[] {
       confissaoTexto: 'Os votos são da mesma natureza e devem ser feitos com o mesmo cuidado religioso, sendo cumpridos com a mesma fidelidade. Entretanto eles não devem ser feitos a qualquer criatura, mas somente a Deus; para serem aceitos voluntariamente, em gratidão recebida ou para obter o que desejamos; e por eles nos obrigamos mais estreitamente a deveres necessários ou a outras coisas, tendo e sendo dentro do limite de nossa liberdade cristã, segundo cada um possua dons e julgue ser de sua serventia. Não é lícito por quem quer que seja fazer voto de qualquer coisa proibida na Palavra de Deus, nem o que impedindo qualquer dever nela ordenado; tampouco qualquer coisa que não seja de deveres em si mesmos, ou que seja além do poder que Deus deu a alguém para executar. A este respeito, os votos monásticos de celibato perpétuo, pobreza professa e obediência regular, são tão longe de serem graus de perfeição mais elevados que qualquer estipulação simples, que são armadilhas supersticiosas e pecaminosas, nas quais nenhum cristão pode se enredar.',
       cfwRef: 'CFW 22.3/22.4',
       cfwComparacao: 'CFW 22.3/22.4 é idêntica e rejeita explicitamente os votos monásticos católicos (celibato, pobreza, obediência) como não sendo caminhos de perfeição, mas "armadilhas supersticiosas". Ambas as confissões afirmam que votos válidos são voluntários, dentro da liberdade cristã e em gratidão — não meritórios.',
-      exposicao: 'Votos a Deus são atos de comprometimento voluntário — feitos em gratidão pela graça recebida ou em desejo de maior fidelidade, jamais como meios de conquistar favor divino. A CB 1689 rejeita categoricamente os votos monásticos católicos — celibato perpétuo, pobreza professa e obediência a uma regra — não por serem radicais, mas por serem meritórios e supersticiosos. A graça não se conquista por votos extraordinários; ela se recebe pela fé em Cristo, cujo mérito é perfeito e suficiente.',
-      reforco: 'Números 30.2 — "Quando um homem fizer um voto ao Senhor, ou jurar um juramento para se obrigar com uma obrigação, não quebrará a sua palavra; fará conforme tudo o que saiu de sua boca."',
+      exposicao: 'Votos a Deus são atos de comprometimento voluntário — feitos em gratidão pela graça recebida ou em desejo de maior fidelidade, jamais como meios de conquistar favor divino. A CB 1689 rejeita categoricamente os votos monásticos católicos — celibato perpétuo, pobreza professa e obediência a uma regra — não por serem radicais, mas por serem meritórios e supersticiosos. A graça não se conquista por votos extraordinários; ela se recebe pela fé em Cristo, cujo mérito é perfeito e suficiente. Como Sproul afirma: <em>"Os votos monásticos são repudiados pela teologia reformada não porque o compromisso radical seja errado, mas porque eles pressupõem que há graus de perfeição que podem ser alcançados por votos humanos — contradizendo a suficiência completa da obra de Cristo."</em> (<em>Grace Unknown</em>)',
+      reforco: 'Sproul ensina que votos legítimos são expressão de gratidão, não de mérito: <em>"O crente reformado rejeita qualquer doutrina que afirme que votos especiais de pobreza, celibato ou obediência religiosa acrescentam mérito diante de Deus — pois Cristo já conquistou toda a justificação e santificação necessária. Votos válidos são expressões de amor filial, não tentativas de ganhar o que já foi dado gratuitamente."</em> (<em>Grace Unknown: The Heart of Reformed Theology</em>. Grand Rapids: Baker Books, 1997)',
       aplicacoes: {
         digital: 'Se você fez um voto a Deus em um momento de crise ou fervor espiritual, examine se está cumprindo-o fielmente — ou se o esqueceu quando a crise passou. Fidelidade é a marca do caráter cristão.',
         familia: 'Os votos de casamento são votos a Deus — não apenas promessas ao cônjuge. Renovar esses votos em oração conjunta regularmente os mantém vivos e sagrados.',
@@ -3771,8 +3771,8 @@ function gerarDiasMaio_A() {
       confissaoTexto: 'Deus, o Senhor supremo e o Rei de todo o mundo, ordenou os magistrados civis para ser, sob ele, sobre o povo para a sua glória e o bem público; e para este fim, os armou com o poder da espada, para a defesa e encorajamento dos que são bons e para a punição dos malfeitores.',
       cfwRef: 'CFW 23.1',
       cfwComparacao: 'CFW 23.1 é idêntica. O magistrado civil tem autoridade delegada por Deus — não é fonte autônoma de poder. Tanto CB 1689 quanto CFW rejeitam tanto a teocracia clerical quanto o secularismo absoluto.',
-      exposicao: 'A autoridade civil não é um mal necessário tolerado pelo cristão, mas uma ordenança positiva de Deus para o bem da criação. Paulo escreve sob Nero e ainda assim afirma que toda autoridade vem de Deus — não como legitimação de tirania, mas como declaração da origem teológica do poder. A Igreja que despreza o Estado nega a soberania de Deus sobre a esfera civil.',
-      reforco: '1 Pedro 2.13-14',
+      exposicao: 'A autoridade civil não é um mal necessário tolerado pelo cristão, mas uma ordenança positiva de Deus para o bem da criação. Paulo escreve sob Nero e ainda assim afirma que toda autoridade vem de Deus — não como legitimação de tirania, mas como declaração da origem teológica do poder. A Igreja que despreza o Estado nega a soberania de Deus sobre a esfera civil. Como Calvino declara: <em>"A magistratura civil é vocação não apenas honrosa entre os homens, mas a mais santa de todas — pois quem a exerce administra em nome de Deus e por delegação divina o bem da sociedade humana."</em> (<em>Institutes of the Christian Religion</em>. IV.20)',
+      reforco: 'Calvino ensina que a autoridade civil tem origem divina e deve ser honrada pelo crente: <em>"Que ninguém se engane — o magistrado é ministro de Deus para o bem da ordem pública e o estabelecimento da justiça. Quem despreza a autoridade civil despreza a ordenança que Deus estabeleceu para o florescimento da vida humana na criação."</em> (<em>Institutes of the Christian Religion</em>. IV.20. Philadelphia: Westminster Press, 1960)',
       aplicacoes: {
         digital: 'Antes de compartilhar conteúdo que desacredita autoridades civis, pergunte-se: isso edifica ou apenas alimenta desconfiança? O cristão pode criticar — mas com sobriedade, não com escárnio.',
         familia: 'Ensine seus filhos a respeitar a autoridade — escola, governo, leis de trânsito — como parte do mesmo padrão bíblico que os ensina a obedecer aos pais e a Deus.',
@@ -3800,8 +3800,8 @@ function gerarDiasMaio_A() {
       confissaoTexto: 'É lícito aos cristãos aceitar e exercer o cargo de magistrado, quando chamados para isso; em cujo exercício devem especialmente manter a piedade, a justiça e a paz, segundo as leis saudáveis de cada reino e estado; e assim, o Novo Testamento não proíbe aos que não cometem ilegalidades o fazer a guerra em nome do magistrado.',
       cfwRef: 'CFW 23.2',
       cfwComparacao: 'CFW 23.2 é idêntica. O anabatismo histórico proibia o exercício de cargos públicos para cristãos — CB 1689 e CFW rejeitam isso explicitamente. O cristão pode e deve ser sal e luz nas estruturas civis.',
-      exposicao: 'A CB 1689 rejeita o separatismo político radical que via qualquer envolvimento com o Estado como contaminação. Davi, Daniel, José e Neemias exerceram autoridade civil como servidores do Deus vivo. O cargo público não é lugar proibido para o cristão — é campo de vocação onde a piedade, a justiça e a paz devem florescer. A questão não é "posso?" mas "como devo servir?"',
-      reforco: 'Daniel 6.3',
+      exposicao: 'A CB 1689 rejeita o separatismo político radical que via qualquer envolvimento com o Estado como contaminação. Davi, Daniel, José e Neemias exerceram autoridade civil como servidores do Deus vivo. O cargo público não é lugar proibido para o cristão — é campo de vocação onde a piedade, a justiça e a paz devem florescer. A questão não é "posso?" mas "como devo servir?" Como Grudem afirma: <em>"O cristão que recusa qualquer envolvimento com a política e o governo civil está negando a senhoria de Cristo sobre todas as esferas da vida — pois Cristo é Rei não apenas na Igreja, mas sobre toda a criação."</em> (<em>Politics According to the Bible</em>)',
+      reforco: 'Grudem ensina que o cristão pode e deve exercer cargos públicos com integridade: <em>"A participação cristã no governo civil não é compromisso com o mundo — é expressão da vocação de ser sal e luz em todas as esferas. O crente que serve no cargo público deve fazê-lo com a mesma fidelidade e integridade que Daniel demonstrou na corte de Babilônia: obedecendo a Deus em primeiro lugar."</em> (<em>Politics According to the Bible</em>. Grand Rapids: Zondervan, 2010)',
       aplicacoes: {
         digital: 'Pare de tratar política como assunto sujo para cristãos sérios. Compartilhe histórias de cristãos que serviram com integridade em cargos públicos — eles existem e precisam de mais companhia.',
         familia: 'Converse com seus filhos sobre vocações cívicas — ser juiz, policial, vereador, professor público — como formas legítimas de serviço ao próximo e glória a Deus.',
@@ -3829,8 +3829,8 @@ function gerarDiasMaio_A() {
       confissaoTexto: 'Os que se recusam a obedecer ao magistrado civil, não somente são responsáveis pelos males que causam às suas almas, mas também à honra de Deus e à paz e bem-estar da sociedade. Os cidadãos são obrigados a obedecer a todas as leis legítimas do estado, e os cristãos têm obrigação especial de fazê-lo; mas nenhuma obediência é devida ao que for contrário à Palavra de Deus.',
       cfwRef: 'CFW 23.4',
       cfwComparacao: 'CFW 23.4 é idêntica. A obediência civil tem limite: nenhum decreto humano pode obrigar contra a lei de Deus. Isso fundamenta tanto o dever de obediência ordinária quanto o direito de desobediência civil em casos extremos.',
-      exposicao: 'A confissão afirma simultaneamente o dever de obediência e seu limite absoluto. Não é anarquismo nem estatismo. O cristão obedece ordinariamente porque reconhece a autoridade delegada de Deus no magistrado — e desobedece extraordinariamente quando o magistrado exige o que Deus proíbe. A parteira egípcia, Daniel, os apóstolos: todos desobedeceram quando a obediência exigiria traição a Deus.',
-      reforco: 'Daniel 3.16-18',
+      exposicao: 'A confissão afirma simultaneamente o dever de obediência e seu limite absoluto. Não é anarquismo nem estatismo. O cristão obedece ordinariamente porque reconhece a autoridade delegada de Deus no magistrado — e desobedece extraordinariamente quando o magistrado exige o que Deus proíbe. A parteira egípcia, Daniel, os apóstolos: todos desobedeceram quando a obediência exigiria traição a Deus. Como Grudem declara: <em>"A desobediência civil cristã não é o padrão ordinário — é a exceção reservada para quando a obediência ao Estado exigiria desobediência direta a um mandamento claro de Deus."</em> (<em>Politics According to the Bible</em>)',
+      reforco: 'Grudem ensina que a obediência civil tem limite claro na lei de Deus: <em>"O cristão deve obedecer ao governo em todas as coisas legítimas — mas quando o Estado exige que peque ou abandone sua lealdade a Cristo, a resposta é a dos apóstolos: é preciso obedecer a Deus antes dos homens. Essa exceção deve ser rara, custosa e genuinamente baseada na obediência a Deus, não em conveniência pessoal."</em> (<em>Politics According to the Bible</em>. Grand Rapids: Zondervan, 2010)',
       aplicacoes: {
         digital: 'Cuidado com o chamado à "desobediência civil" nas redes como se fosse virtude rotineira — a confissão a reserva para casos onde a obediência exigiria pecado real, não inconveniência ideológica.',
         familia: 'Ensine seus filhos que obedecer às regras da casa, da escola e do país é parte do temor a Deus — e que a exceção existe apenas quando a regra exige desobedecer a Deus claramente.',
@@ -3858,8 +3858,8 @@ function gerarDiasMaio_A() {
       confissaoTexto: 'O casamento é para ser entre um homem e uma mulher; não é lícito para nenhum homem ter mais de uma esposa, nem para qualquer mulher ter mais de um marido ao mesmo tempo.',
       cfwRef: 'CFW 24.1',
       cfwComparacao: 'CFW 24.1 é idêntica. O casamento como aliança entre um homem e uma mulher é afirmado por ambas as confissões como ordenança da criação — anterior à lei mosaica e ao NT. Isso não é convenção cultural, mas estrutura criacional.',
-      exposicao: 'Gênesis 2.24 não é lei mosaica nem preceito neotestamentário — é declaração criacional reafirmada por Cristo (Mt 19.4-6) e Paulo (Ef 5.31). A confissão afirma monogamia heterossexual não como conservadorismo cultural mas como fidelidade à estrutura que Deus inscreveu na criação antes de qualquer lei. Redefinir casamento não é progressismo — é reescrita da gramática da criação.',
-      reforco: 'Mateus 19.4-6',
+      exposicao: 'Gênesis 2.24 não é lei mosaica nem preceito neotestamentário — é declaração criacional reafirmada por Cristo (Mt 19.4-6) e Paulo (Ef 5.31). A confissão afirma monogamia heterossexual não como conservadorismo cultural mas como fidelidade à estrutura que Deus inscreveu na criação antes de qualquer lei. Redefinir casamento não é progressismo — é reescrita da gramática da criação. Como Herman Bavinck declara em <em>Reformed Dogmatics</em>: <em>"O casamento entre um homem e uma mulher é ordenança criacional que reflete a imagem de Deus na humanidade — sua supressão ou redefinição é sempre, em última análise, rejeição da soberania do Criador sobre a criação que ele formou."</em>',
+      reforco: 'Herman Bavinck ensina que o casamento tem fundamento criacional inviolável: <em>"O casamento não é instituição humana sujeita a revisão histórica, mas ordenança divina inscrita na estrutura da criação — anterior à lei mosaica, anterior à queda, anterior a qualquer cultura. Redefinir o casamento é rejeitar a autoridade do Criador sobre aquilo que ele mesmo formou."</em> (<em>Reformed Dogmatics</em>, vol. 3. Grand Rapids: Baker Academic, 2006)',
       aplicacoes: {
         digital: 'Em conversas online sobre casamento e família, ancore suas afirmações na criação — não em tradição cultural ou legislação religiosa. A criação fala antes de qualquer lei.',
         familia: 'Seu casamento é, para seus filhos, a primeira e mais duradoura aula sobre o que Deus definiu. A qualidade do seu casamento prega antes que qualquer pastor abra a boca.',
@@ -3872,8 +3872,8 @@ function gerarDiasMaio_A() {
       reflexao: 'O casamento não é invenção cultural que as culturas podem redefinir — é estrutura criacional que as culturas podem distorcer, mas não dissolver, sem consequências para toda a ordem social.',
       aplicacao: 'Se você é casado, faça algo concreto hoje para honrar sua aliança — uma conversa de gratidão, um pedido de perdão, um ato de serviço. Se solteiro, ore por um casamento em sua comunidade que precise de intercessão.',
       notas: [
-        'KÖSTENBERGER, Andreas J.; JONES, David W. <em>God, Marriage, and Family</em>. 2nd ed. Wheaton: Crossway, 2010. Exegese exaustiva da doutrina bíblica do casamento.',
-        'AUGUSTINE. <em>On the Good of Marriage</em>. In: <em>NPNF</em>, First Series, Vol. 3. Sobre o casamento como bem criacional e sua tripla finalidade.',
+        'BAVINCK, Herman. <em>Reformed Dogmatics</em>. Vol. 3: Sin and Salvation in Christ. Grand Rapids: Baker Academic, 2006. Fundamentação criacional do casamento como ordenança divina anterior à lei e à queda.',
+        `BAVINCK, Herman. <em>The Christian Family</em>. Grand Rapids: Christian\'s Library Press, 2012. Análise da família e do casamento à luz da criação e da redenção na perspectiva reformada.`,
       ],
       notaInicio: 252,
     },
@@ -3887,8 +3887,8 @@ function gerarDiasMaio_A() {
       confissaoTexto: 'O casamento foi ordenado para a mútua ajuda de marido e mulher, para a propagação da raça humana segundo o legítimo sucedâneo, e para prevenir a impureza.',
       cfwRef: 'CFW 24.2',
       cfwComparacao: 'CFW 24.2 lista os mesmos três fins do casamento: ajuda mútua, procriação e remédio para a concupiscência. Ambas as confissões rejeitam tanto o celibato obrigatório quanto a visão romantizada do casamento como satisfação sentimental.',
-      exposicao: 'A confissão enumera três fins do casamento com precisão teológica: ajuda mútua (o cônjuge como complemento, não utensílio), propagação legítima (família como missão, não opção) e prevenção da impureza (o casamento como remédio para o desejo mal dirigido — cf. 1 Co 7.2). Nenhum dos três fins é satisfação sentimental — o casamento existe antes para a glória de Deus do que para a felicidade do casal.',
-      reforco: '1 Coríntios 7.2',
+      exposicao: 'A confissão enumera três fins do casamento com precisão teológica: ajuda mútua (o cônjuge como complemento, não utensílio), propagação legítima (família como missão, não opção) e prevenção da impureza (o casamento como remédio para o desejo mal dirigido — cf. 1 Co 7.2). Nenhum dos três fins é satisfação sentimental — o casamento existe antes para a glória de Deus do que para a felicidade do casal. Como Packer afirma: <em>"O casamento cristão não existe primariamente para nos fazer felizes — existe para nos fazer santos e para glorificar a Deus. Quando os três fins do casamento — ajuda mútua, procriação e remédio para a concupiscência — são mantidos, o casamento floresce com propósito e fidelidade."</em> (<em>Knowing God</em>)',
+      reforco: 'Packer ensina que os fins do casamento precedem a felicidade pessoal: <em>"A crise do casamento moderno é que ele foi construído sobre um fundamento sentimentalista — a felicidade emocional do casal. O casamento bíblico tem fundamento mais sólido: a aliança de serviço mútuo, a missão da família e a santidade pessoal — e sobre esse fundamento a felicidade genuína pode ser edificada."</em> (<em>Knowing God</em>. Downers Grove: IVP, 1973)',
       aplicacoes: {
         digital: 'O romantismo digital vende o casamento como ápice da realização pessoal. A confissão o apresenta como vocação e aliança. Não são incompatíveis — mas a ordem importa: propósito primeiro, sentimento depois.',
         familia: 'Casais que constroem o casamento sobre o fundamento do propósito divino — serviço mútuo, família, fidelidade — suportam crises que destroem casamentos edificados apenas sobre sentimento.',
@@ -3916,8 +3916,8 @@ function gerarDiasMaio_A() {
       confissaoTexto: 'A Igreja Católica ou Universal, que é invisível, consiste do número total dos eleitos que foram, que são, ou que serão reunidos em um sob Cristo o Cabeça da mesma; e é a esposa, o corpo, a plenitude dele que preenche tudo em todos. A Igreja visível, que é também católica ou universal sob o Evangelho (não está confinada como antes, a uma nação), consiste de todos os que fazem profissão da fé no Evangelho, juntamente com seus filhos; é o reino do Senhor Jesus Cristo, a casa e família de Deus, fora da qual não há possibilidade ordinária de salvação.',
       cfwRef: 'CFW 25.1/25.2',
       cfwComparacao: 'CFW 25.1/25.2 é idêntica na distinção entre Igreja invisível (todos os eleitos) e Igreja visível (todos os que professam fé). A CB 1689 Batista difere de Westminster ao não incluir os filhos de crentes como membros da Igreja visível — fidelidade à eclesiologia batista de membros regenerados.',
-      exposicao: 'A distinção entre Igreja invisível e visível não é dualismo platônico — é reconhecimento de que há uma realidade celestial (o número total dos eleitos sob Cristo) e uma realidade histórica (a congregação visível de professantes). A Igreja visível não é inferior nem dispensável: é "a casa e família de Deus" fora da qual não há salvação ordinária. Desprezar a Igreja local é desprezar a família de Deus.',
-      reforco: 'Hebreus 10.24-25',
+      exposicao: 'A distinção entre Igreja invisível e visível não é dualismo platônico — é reconhecimento de que há uma realidade celestial (o número total dos eleitos sob Cristo) e uma realidade histórica (a congregação visível de professantes). A Igreja visível não é inferior nem dispensável: é "a casa e família de Deus" fora da qual não há salvação ordinária. Desprezar a Igreja local é desprezar a família de Deus. Como Clowney declara: <em>"A Igreja visível não é um clube de pessoas religiosas — é a família de Deus, o corpo de Cristo, o templo do Espírito. Quem despreza a Igreja local está desprezando o meio ordinário pelo qual Deus age no mundo."</em> (<em>The Church</em>)',
+      reforco: 'Clowney ensina que a Igreja visível é indispensável para a vida cristã: <em>"Não há posição bíblica para o cristão que quer Cristo sem a Igreja. A Igreja não é acessório opcional da fé — é a comunidade de aliança na qual Cristo age pelo Espírito e pela Palavra para salvar, santificar e sustentar seu povo. Abandoná-la é abandonar os meios que o próprio Cristo instituiu."</em> (<em>The Church</em>. Downers Grove: IVP, 1995)',
       aplicacoes: {
         digital: 'A "Igreja online" que substitui a congregação local não é Igreja visível no sentido confessional — é transmissão de conteúdo. Participe, não apenas consuma.',
         familia: 'Sua família pertence a uma Igreja local visível — com pastores, membros, disciplina e sacramentos. Isso não é opcional. É onde Deus prometeu se revelar ordinariamente.',
@@ -3945,8 +3945,8 @@ function gerarDiasMaio_A() {
       confissaoTexto: 'O Senhor Jesus Cristo é o único Cabeça da Igreja, e a afirmação de que o Papa de Roma é o seu vigário, o cabeça, e que é o senhor da Igreja Universal, é antibíblica; sendo sem fundamento na Escritura e que introduziria o próprio anticristo, o homem do pecado e filho da perdição, em detrimento da Igreja e a contradição de todo o que é chamado Deus ou que é adorado.',
       cfwRef: 'CFW 25.6',
       cfwComparacao: 'CFW 25.6 é idêntica — ambas identificam o papado como anticristo. Esta linguagem, comum nas confissões reformadas do século XVII, reflete o contexto da Reforma e não deve ser lida como afirmação sobre indivíduos, mas sobre o sistema que usurpa a headship exclusiva de Cristo.',
-      exposicao: 'A confissão defende a tese central da Reforma: solus Christus como Cabeça da Igreja. Nenhuma estrutura eclesiástica — papal, episcopal, sinodal ou pastoral carismática — pode reivindicar autoridade sobre a Igreja que não seja delegada e subordinada a Cristo e à sua Palavra. O problema do papado não é histórico ou cultural — é cristológico: usurpa o que pertence exclusivamente ao Filho.',
-      reforco: 'Efésios 4.15-16',
+      exposicao: 'A confissão defende a tese central da Reforma: solus Christus como Cabeça da Igreja. Nenhuma estrutura eclesiástica — papal, episcopal, sinodal ou pastoral carismática — pode reivindicar autoridade sobre a Igreja que não seja delegada e subordinada a Cristo e à sua Palavra. O problema do papado não é histórico ou cultural — é cristológico: usurpa o que pertence exclusivamente ao Filho. Como Letham declara: <em>"A headship de Cristo sobre a Igreja não é título honorífico — é governança real e ativa exercida pelo Espírito através da Palavra. Qualquer autoridade humana que reclame poder equivalente ao de Cristo na Igreja está usurpando o trono que pertence exclusivamente ao Filho."</em> (<em>The Work of Christ</em>)',
+      reforco: 'Letham ensina que a headship de Cristo sobre a Igreja é exclusiva e inviolável: <em>"Cristo governa sua Igreja não através de um vigário humano, mas pelo seu Espírito e pela sua Palavra. O papado, ao reivindicar autoridade universal sobre a Igreja, substitui a headship viva e presente de Cristo por uma estrutura burocrática humana — o que constitui usurpação cristológica, não mera questão eclesiástica."</em> (<em>The Work of Christ</em>. Downers Grove: IVP, 1993)',
       aplicacoes: {
         digital: 'Desconfie de líderes religiosos que constroem sua autoridade sobre personalidade carismática em vez de sobre a Palavra. O critério da headship de Cristo é: ele aponta para si mesmo ou para Cristo?',
         familia: 'O pai de família que exerce liderança como senhor absoluto da casa está usurpando o papel de Cristo — que lidera pelo serviço e pelo amor sacrificial, não pelo poder.',
@@ -3974,8 +3974,8 @@ function gerarDiasMaio_A() {
       confissaoTexto: 'As igrejas assim constituídas, depois de seus deveres de reunião e ordem, segundo a norma de Deus, tendo poder dado a elas assim, para se reunirem e se organizarem de acordo com a sua Palavra, e para receber membros dos que têm crença e se mostram hábeis para isso, e especialmente dos que são por Deus chamados a isso, como o são os que têm o dom e capacidade para desempenhar este santo ofício; assim também com poder de chamarem os seus pastores e outros officiais, de acordo com as normas que o Senhor Cristo fixou para tais organizações.',
       cfwRef: 'CFW 25.3/25.4',
       cfwComparacao: 'CFW e CB 1689 divergem aqui: CFW é presbiteriana (governo por presbitério) enquanto CB 1689 é congregacionalista-batista (autonomia da igreja local). A CB 1689 enfatiza que cada congregação tem poder de chamar seus próprios pastores e receber membros.',
-      exposicao: 'Atos 2.42 descreve a Igreja primitiva em quatro práticas: doutrina apostólica, comunhão, partir do pão e orações. Essas não são atividades opcionais de uma das muitas expressões de fé — são a estrutura da vida eclesial. A CB 1689 afirma que a Igreja local tem autoridade congregacional real: ela recebe membros, chama pastores e se organiza segundo a Palavra, sem mediação hierárquica externa.',
-      reforco: '1 Timóteo 3.14-15',
+      exposicao: 'Atos 2.42 descreve a Igreja primitiva em quatro práticas: doutrina apostólica, comunhão, partir do pão e orações. Essas não são atividades opcionais de uma das muitas expressões de fé — são a estrutura da vida eclesial. A CB 1689 afirma que a Igreja local tem autoridade congregacional real: ela recebe membros, chama pastores e se organiza segundo a Palavra, sem mediação hierárquica externa. Como Clowney declara: <em>"As quatro marcas da Igreja primitiva em Atos 2.42 não são programa de crescimento eclesiástico — são a estrutura orgânica do povo de Deus: doutrina, comunhão, sacramento e oração. Nenhuma Igreja saudável pode prescindir de qualquer um desses elementos."</em> (<em>The Church</em>)',
+      reforco: 'Clowney ensina que a Igreja local saudável é definida por seus elementos constitutivos, não por seu tamanho ou estrutura: <em>"A Igreja que persevera na doutrina apostólica, na comunhão mútua, na administração dos sacramentos e na oração está fazendo tudo o que Cristo ordenou que sua Igreja fizesse — e onde esses elementos estão presentes, a Igreja de Cristo está presente, independente do tamanho ou da estrutura."</em> (<em>The Church</em>. Downers Grove: IVP, 1995)',
       aplicacoes: {
         digital: 'Transmissão online de culto é ferramenta — não é Igreja. A Igreja de Atos 2.42 era presença física, nome compartilhado, pão partido juntos. Isso não se replica digitalmente.',
         familia: 'Leve sua família ao culto dominical com a mesma regularidade com que vai ao trabalho — não como obrigação religiosa, mas como ato de confissão de que pertencemos ao povo de Deus.',
@@ -4012,8 +4012,8 @@ function gerarDiasMaio_B() {
       confissaoTexto: 'Todos os santos que estão unidos a Jesus Cristo, seu Cabeça, pelo seu Espírito e pela fé, têm comunhão com ele em suas graças, sofrimentos, morte, ressurreição, e glória; e sendo unidos uns com os outros no amor, têm comunhão nos dons e graças de cada um, e são obrigados ao cumprimento dos deveres públicos e privados que tendem ao mútuo bem, tanto no homem interior como no exterior.',
       cfwRef: 'CFW 26.1',
       cfwComparacao: 'CFW 26.1 é idêntica. A comunhão dos santos não é sentimento de pertencimento — é realidade espiritual e ética: união com Cristo que gera obrigação mútua. Isolamento espiritual contradiz a natureza do corpo de Cristo.',
-      exposicao: 'A koinonia bíblica é tripla: com Deus, com os irmãos, e nos dons. Não é opcional — é obrigação derivada da união com Cristo. Quem está em Cristo está em corpo: não há membro sem corpo.',
-      reforco: 'Hebreus 10.24-25: "E consideremo-nos uns aos outros, para nos estimularmos ao amor e às boas obras; não abandonando a nossa congregação."',
+      exposicao: 'A koinonia bíblica é tripla: com Deus, com os irmãos, e nos dons. Não é opcional — é obrigação derivada da união com Cristo. Quem está em Cristo está em corpo: não há membro sem corpo. Como Grudem declara: <em>"A comunhão dos santos não é sentimento agradável após o culto — é obrigação ética derivada da união com Cristo. Unidos ao Cabeça, somos unidos ao corpo — e o corpo tem responsabilidades mútuas que não podem ser ignoradas sem comprometer a própria confissão de fé."</em> (<em>Systematic Theology</em>)',
+      reforco: 'Grudem ensina que a comunhão dos santos é obrigação, não opção: <em>"O cristão que vive em isolamento espiritual — sem responsabilidade mútua, sem participação na comunhão do corpo — está contradizendo a natureza do Evangelho que professa. A união com Cristo produz necessariamente união com o povo de Cristo, e essa união tem deveres práticos e concretos de amor, cuidado e serviço mútuo."</em> (<em>Systematic Theology</em>. Grand Rapids: Zondervan, 1994)',
       aplicacoes: {
         digital: 'Comunidade online não substitui koinonia bíblica — a obrigação mútua exige presença, não apenas conexão virtual. Cuide pessoalmente de alguém da sua congregação esta semana.',
         familia: 'A família cristã é microcosmo da comunhão dos santos: cada membro tem dons e deveres para com os outros. Pergunte hoje: estou cumprindo meu dever para com minha família?',
@@ -4041,8 +4041,8 @@ function gerarDiasMaio_B() {
       confissaoTexto: 'Os santos são obrigados a manter uma santa comunhão e um companheiro na adoração de Deus, e na realização de outros deveres espirituais para o mútuo proveito; assim como a ajudarem-se mutuamente nas coisas necessárias da vida exterior, conforme suas várias habilidades e necessidades. Esta comunhão deve ser estendida a todos os que em qualquer lugar invocam o nome do Senhor Jesus; embora que não destrua nem informe a propriedade que cada homem tem em seus bens e possessões.',
       cfwRef: 'CFW 26.2',
       cfwComparacao: 'CFW 26.2 é idêntica. A comunhão dos santos não implica comunismo de bens — cada crente mantém direito sobre sua propriedade. A comunhão é voluntária e motivada pelo amor, não imposta.',
-      exposicao: 'O caso de Ananias e Safira (At 5) não prova comunismo obrigatório — Pedro afirma que a propriedade era deles. O pecado foi a mentira, não a retenção. A generosidade cristã é sempre livre e alegre.',
-      reforco: '2 Coríntios 9.7: "Cada um contribua segundo propôs no seu coração; não com tristeza, nem por necessidade; porque Deus ama ao que dá com alegria."',
+      exposicao: 'O caso de Ananias e Safira (At 5) não prova comunismo obrigatório — Pedro afirma que a propriedade era deles. O pecado foi a mentira, não a retenção. A generosidade cristã é sempre livre e alegre. Como Sproul afirma: <em>"A generosidade cristã que agrada a Deus não é extraída por pressão social ou culpa religiosa — nasce da gratidão pela graça recebida. O cristão que dá com alegria está pregando com seu ato que a graça de Deus é suficiente e que ele não precisa segurar com medo."</em> (<em>Grace Unknown</em>)',
+      reforco: 'Sproul ensina que a generosidade cristã é expressão de gratidão pela graça, não de compulsão religiosa: <em>"A confusão do NT com comunismo obrigatório é um erro exegético grave. Pedro em Atos 5 confirma que a propriedade permanecia com Ananias — o pecado foi a desonestidade, não a retenção. A Igreja não tem autoridade para expropriar bens; tem o chamado de criar cultura de generosidade alegre e voluntária."</em> (<em>Grace Unknown: The Heart of Reformed Theology</em>. Grand Rapids: Baker Books, 1997)',
       aplicacoes: {
         digital: 'Desconfie de movimentos religiosos que pressionam membros a entregar bens ou recursos sob alegação de comunhão espiritual. Generosidade coagida não é virtude — é manipulação.',
         familia: 'A generosidade familiar deve ser ensinada como alegria, não como obrigação culposa. Crianças aprendem a dar quando veem pais que dão com gratidão, não com ressentimento.',
@@ -4070,8 +4070,8 @@ function gerarDiasMaio_B() {
       confissaoTexto: 'Os sacramentos são sinais e selos santos do pacto da graça, diretamente instituídos por Deus para representar Cristo e seus benefícios; para confirmar o nosso interesse nele, assim como para fazer uma diferença visível entre aqueles que pertencem à Igreja e o resto do mundo; e também para se comprometerem solenemente no serviço de Deus em Cristo, conforme sua Palavra.',
       cfwRef: 'CFW 27.1',
       cfwComparacao: 'CFW 27.1 é idêntica. Os sacramentos são sinais e selos — não repetições do sacrifício nem produtores automáticos de graça. A eficácia depende da obra do Espírito e da fé que recebe, não do ato em si.',
-      exposicao: 'Sinal aponta para a realidade; selo confirma a posse. O batismo e a Ceia apontam para Cristo e confirmam ao crente que as promessas da aliança são suas. Sem fé, o sinal é vazio — como uma assinatura em contrato não lido.',
-      reforco: '1 Coríntios 10.16: "O cálice de bênção que abençoamos não é a comunhão do sangue de Cristo? O pão que partimos não é a comunhão do corpo de Cristo?"',
+      exposicao: 'Sinal aponta para a realidade; selo confirma a posse. O batismo e a Ceia apontam para Cristo e confirmam ao crente que as promessas da aliança são suas. Sem fé, o sinal é vazio — como uma assinatura em contrato não lido. Como Calvino declara: <em>"Os sacramentos são sinais e selos das promessas divinas — não produzem a graça por si mesmos, mas a confirmam e a selam ao coração do crente que as recebe pela fé. O sacramento sem fé é como um anel de casamento dado a alguém que nunca casou."</em> (<em>Institutes of the Christian Religion</em>. IV.14)',
+      reforco: 'Calvino ensina que os sacramentos são sinais e selos que confirmam a graça ao crente pela fé: <em>"Os sacramentos não têm outra utilidade senão quando recebidos pela fé. Assim como o sol, embora brilhe sobre os olhos cegos, não é percebido por eles, assim também os sacramentos não produzem fruto algum em quem não tem olhos de fé para enxergar o que representam e o que selam."</em> (<em>Institutes of the Christian Religion</em>. IV.14. Philadelphia: Westminster Press, 1960)',
       aplicacoes: {
         digital: 'Em um mundo de símbolos esvaziados de conteúdo, os sacramentos são sinais que apontam para realidade objetiva: a morte e ressurreição de Cristo. Não os trate como mera tradição religiosa.',
         familia: 'Explique a seus filhos o que acontece no batismo e na Ceia antes que participem. O sinal sem entendimento é cerimônia vazia; com entendimento, é confissão de fé corporificada.',
@@ -4099,8 +4099,8 @@ function gerarDiasMaio_B() {
       confissaoTexto: 'Os sacramentos do Novo Testamento, instituídos por Jesus Cristo, são o Batismo e a Ceia do Senhor. Esses sacramentos substituíram a Circuncisão e o Cordeiro Pascal, que foram abrogados; e têm a mesma eficácia em termos de um propósito e substância em representar o mesmo Cristo nos termos do mesmo pacto.',
       cfwRef: 'CFW 27.4',
       cfwComparacao: 'CFW 27.4 é idêntica. Roma conta sete sacramentos; CB 1689 e CFW reconhecem dois — os únicos instituídos por Cristo. Os cinco sacramentos adicionais romanos não têm base escriturística como ordenanças salvíficas.',
-      exposicao: 'Os dois sacramentos do NT correspondem aos dois do AT: batismo substitui circuncisão como sinal de ingresso na aliança; a Ceia substitui o Cordeiro Pascal como memorial do sacrifício. A estrutura é a mesma; a substância é Cristo.',
-      reforco: 'Colossenses 2.11-12: "nele também fostes circuncidados... tendo sido sepultados com ele no batismo."',
+      exposicao: 'Os dois sacramentos do NT correspondem aos dois do AT: batismo substitui circuncisão como sinal de ingresso na aliança; a Ceia substitui o Cordeiro Pascal como memorial do sacrifício. A estrutura é a mesma; a substância é Cristo. Como Berkhof declara: <em>"O Novo Testamento tem dois sacramentos — e somente dois — instituídos por Cristo: o Batismo e a Ceia. Qualquer adição a esses dois é invenção eclesiástica sem mandato divino, pois somente Cristo tem autoridade para instituir sinais e selos da aliança da graça."</em> (<em>Systematic Theology</em>)',
+      reforco: 'Berkhof ensina que somente dois sacramentos têm mandato de Cristo: <em>"Os cinco sacramentos adicionais da Igreja de Roma não têm o mandato explícito de Cristo que o batismo e a Ceia têm. A Reforma restaurou a Igreja ao padrão do NT: dois sacramentos, ambos instituídos por Cristo com comando claro, elementos físicos definidos e promessa espiritual associada."</em> (<em>Systematic Theology</em>. Grand Rapids: Eerdmans, 1938)',
       aplicacoes: {
         digital: 'Quando encontrar argumentos pela adição de sacramentos ou práticas obrigatórias de salvação, pergunte: Cristo instituiu isso? Se a resposta for não, a base escriturística está ausente.',
         familia: 'Explique a seus filhos por que a Igreja Batista pratica dois sacramentos e não sete — e por que isso importa: a autoridade é de Cristo, não da tradição eclesiástica acumulada.',
@@ -4128,8 +4128,8 @@ function gerarDiasMaio_B() {
       confissaoTexto: 'O Batismo é uma ordenança do Novo Testamento, instituída por Jesus Cristo, para ser para o que é batizado, sinal de sua participação nele, de remissão de pecados e de entrega a Deus pelo Jesus Cristo para andar em novidade de vida; sendo este sinal a ser administrado somente uma vez à pessoa, como batismo é uma iniciação uma vez por todas.',
       cfwRef: 'CFW 28.1',
       cfwComparacao: 'CFW 28.1 afirma o batismo como sinal de aliança — mas inclui filhos de crentes como candidatos. CB 1689 diverge: batismo é exclusivamente para os que professam fé. Esta é a distinção central entre paedobatismo e credobatismo.',
-      exposicao: 'O batismo é iniciação única e irrepetível — como o nascimento. Não se nasce duas vezes; não se batiza duas vezes. Seu significado é participação em Cristo: morte ao velho, vida nova no ressuscitado.',
-      reforco: 'Romanos 6.3-4: "todos quantos fomos batizados em Jesus Cristo, fomos batizados na sua morte... para que, como Cristo ressuscitou... assim andemos nós também em novidade de vida."',
+      exposicao: 'O batismo é iniciação única e irrepetível — como o nascimento. Não se nasce duas vezes; não se batiza duas vezes. Seu significado é participação em Cristo: morte ao velho, vida nova no ressuscitado. Como Warfield declara: <em>"O batismo é o sinal exterior de uma realidade interior irrepetível: a regeneração pelo Espírito e a união com Cristo. Por isso é administrado uma única vez — assim como o nascimento espiritual acontece uma única vez."</em> (<em>Studies in Theology</em>)',
+      reforco: 'Warfield ensina que o batismo é sinal irrepetível de participação em Cristo: <em>"O batismo não é ato de devoção repetível como a oração ou a Ceia — é o sinal da iniciação, da passagem da morte para a vida em Cristo. Repetir o batismo seria negar que a obra do Espírito na regeneração é definitiva e permanente."</em> (<em>Studies in Theology</em>. Edinburgh: Banner of Truth, 1988)',
       aplicacoes: {
         digital: 'O batismo não é conteúdo para redes sociais — é confissão pública de fé diante da congregação. A câmera registra um momento; a Igreja testemunha uma realidade espiritual.',
         familia: 'Se você foi batizado, sua família deve saber o que aquele ato significou. Conte a história do seu batismo — não como evento emocional, mas como confissão de participação em Cristo.',
@@ -4142,7 +4142,7 @@ function gerarDiasMaio_B() {
       reflexao: 'O batismo não é repetível porque o nascimento não é repetível — e a regeneração que ele simboliza aconteceu uma vez. O crente que duvida não precisa ser rebatizado; precisa pregar a si mesmo o Evangelho.',
       aplicacao: 'Se foi batizado, lembre hoje esse momento como renovação de compromisso — não de salvação, mas de identidade. Se ainda não foi batizado após professar fé, converse com seu pastor esta semana.',
       notas: [
-        'SCHREINER, Thomas R.; WRIGHT, Shawn D. (eds.). <em>Believer\'s Baptism</em>. Nashville: B&H Academic, 2006. A defesa mais completa do credobatismo disponível.',
+        `SCHREINER, Thomas R.; WRIGHT, Shawn D. (eds.). <em>Believer\'s Baptism</em>. Nashville: B&H Academic, 2006. A defesa mais completa do credobatismo disponível.`,
         'WELLUM, Stephen J. <em>God the Son Incarnate</em>. Wheaton: Crossway, 2016. Sobre o batismo de Jesus como modelo e inauguração da nova era redentiva.',
       ],
       notaInicio: 270,
@@ -4157,8 +4157,8 @@ function gerarDiasMaio_B() {
       confissaoTexto: 'Aqueles que efetivamente se arrependem e creem em Cristo devem ser batizados, e nenhum outro. O modo correto de batizar é por imersão, ou seja, o mergulho do crente inteiro em água, em nome do Pai, e do Filho, e do Espírito Santo.',
       cfwRef: 'CFW 28.3/28.4',
       cfwComparacao: 'CFW 28.3 permite aspersão ou derramamento; CB 1689 29.3 especifica imersão como modo correto. A CB 1689 argumenta que imersão preserva o simbolismo de morte e ressurreição mais fielmente que aspersão.',
-      exposicao: 'A imersão não é questão de preferência — é teologia encorporada. O crente desce à água (morte), é submergido (sepultamento), emerge (ressurreição). O corpo participa do que a fé afirma. O modo importa porque o símbolo importa.',
-      reforco: 'Colossenses 2.12: "tendo sido sepultados com ele no batismo, nele também ressuscitastes pela fé no poder de Deus, que o ressuscitou dentre os mortos."',
+      exposicao: 'A imersão não é questão de preferência — é teologia encorporada. O crente desce à água (morte), é submergido (sepultamento), emerge (ressurreição). O corpo participa do que a fé afirma. O modo importa porque o símbolo importa. Como Grudem declara: <em>"O batismo por imersão preserva o simbolismo de Romanos 6 de modo mais vívido que a aspersão — o corpo inteiro desce, é submergido e emerge, encenando com o próprio ato o que Cristo fez por nós e o que somos nele."</em> (<em>Systematic Theology</em>)',
+      reforco: 'Grudem ensina que o modo do batismo por imersão preserva melhor o simbolismo de morte e ressurreição: <em>"Quando Paulo escreve que fomos sepultados com Cristo pelo batismo, a imagem de imersão é muito mais vivida — o corpo do crente desce à água como Cristo desceu ao túmulo, e emerge das águas como Cristo emergiu na ressurreição. O modo não é teologicamente neutro: ele comunica o Evangelho com o próprio corpo."</em> (<em>Systematic Theology</em>. Grand Rapids: Zondervan, 1994)',
       aplicacoes: {
         digital: 'Quando debater modo de batismo online, mantenha o foco no que as confissões dizem: não é questão de salvação, mas de fidelidade ao simbolismo que Cristo encorporou no sinal.',
         familia: 'Se sua família veio de tradição que pratica aspersão, explique com respeito e sem arrogância por que sua Igreja pratica imersão — e que o fundamento é bíblico, não meramente tradicional.',
@@ -4171,7 +4171,7 @@ function gerarDiasMaio_B() {
       reflexao: 'A imersão não é o único modo que salva — mas é o modo que melhor conta a história do Evangelho com o corpo. Quando o credo é encorporado no ato, a teologia se torna visível. O modo importa porque a verdade importa.',
       aplicacao: 'Medite hoje em Romanos 6.1-11. Escreva o que significa para você ter morrido e ressuscitado com Cristo. Como essa realidade deve mudar uma atitude, um hábito ou uma relação concreta em sua vida hoje?',
       notas: [
-        'SCHREINER, Thomas R.; WRIGHT, Shawn D. (eds.). <em>Believer\'s Baptism</em>. Nashville: B&H Academic, 2006. Cap. sobre o modo de batismo — a defesa da imersão a partir do NT.',
+        `SCHREINER, Thomas R.; WRIGHT, Shawn D. (eds.). <em>Believer\'s Baptism</em>. Nashville: B&H Academic, 2006. Cap. sobre o modo de batismo — a defesa da imersão a partir do NT.`,
         'BEASLEY-MURRAY, G. R. <em>Baptism in the New Testament</em>. Grand Rapids: Eerdmans, 1962. Estudo clássico sobre o significado e o modo do batismo no NT.',
       ],
       notaInicio: 272,
@@ -4186,8 +4186,8 @@ function gerarDiasMaio_B() {
       confissaoTexto: 'O batismo externo em água não confere a graça e a salvação por si só; mas é prescrito por Cristo para ser fielmente seguido por todos os que são batizados, como um sinal, confirmação e selo de comunhão com ele na morte, no sepultamento, e na ressurreição; de remissão de pecados; e de entregas a Deus pelo Jesus Cristo para andar em novidade de vida.',
       cfwRef: 'CFW 28.5/28.6',
       cfwComparacao: 'CFW 28.5 afirma que graça e salvação não estão inseparavelmente ligadas ao batismo — a eficácia depende do Espírito. CB 1689 29.4 concorda. Ambas rejeitam o baptismal regeneration romano e sacramentalista.',
-      exposicao: 'A água batismal não regenera — o Espírito regenera. O batismo testemunha, não produz. Confundir o sinal com a realidade é idolatria sacramental — tratar o elemento como se fosse a graça em si.',
-      reforco: 'João 3.5: "se alguém não nascer da água e do Espírito, não pode entrar no reino de Deus" — a água aqui é do Espírito, não do batismo físico como causa eficiente.',
+      exposicao: 'A água batismal não regenera — o Espírito regenera. O batismo testemunha, não produz. Confundir o sinal com a realidade é idolatria sacramental — tratar o elemento como se fosse a graça em si. Como Packer declara: <em>"O erro do batismal regeneration é confundir o sinal com a realidade significada. A água lava o corpo; somente o Espírito lava a alma. O batismo é sinal e selo de uma graça que o Espírito produz — mas o rito externo não produz por si mesmo o que representa."</em> (<em>Concise Theology</em>)',
+      reforco: 'Packer ensina que a graça sacramental opera pelo Espírito e pela fé, não pelo rito externo: <em>"Nenhum sacramento opera ex opere operato — como se a mera realização do rito conferisse automaticamente a graça. O batismo externo em água é real e obrigatório, mas sua eficácia espiritual depende da obra interior do Espírito Santo que ele representa, não da água em si mesma."</em> (<em>Concise Theology</em>. Wheaton: Tyndale House, 1993)',
       aplicacoes: {
         digital: 'Quando encontrar conteúdo que afirma que o batismo é necessário para salvação, responda com 1 Pedro 3.21: Pedro mesmo distingue o ato externo da obra interna — a boa consciência diante de Deus.',
         familia: 'Não confunda batismo com nova vida. Crianças batizadas que não mostram sinais de regeneração precisam de Evangelho, não de conforto sacramental baseado em rito passado.',
@@ -4215,8 +4215,8 @@ function gerarDiasMaio_B() {
       confissaoTexto: 'A Ceia do Senhor foi instituída por Jesus Cristo na noite em que foi traído, para ser observada na Igreja até ao fim do mundo, para a memória perpétua e para mostrar o sacrifício de si mesmo em sua morte, para a confirmação da fé dos crentes em todos os benefícios da sua morte, e seu alimento espiritual e crescimento nele, seu maior empenho em todas as obrigações que devem a ele, e para ser um laço e penhor de sua comunhão com ele e uns com os outros.',
       cfwRef: 'CFW 29.1',
       cfwComparacao: 'CFW 29.1 é idêntica. A Ceia é memorial (anamnese), comunhão (koinonia) e proclamação (kerygma). Ambas rejeitam a missa romana (novo sacrifício) e afirmam presença espiritual real de Cristo — nem transubstanciação nem memorialism puro.',
-      exposicao: 'A Ceia olha para trás (memória da morte), para dentro (comunhão presente com Cristo) e para frente (proclamação até ele vir). É o evangelismo mais concentrado da Igreja: o Evangelho encenado em pão e vinho a cada celebração.',
-      reforco: '1 Coríntios 10.16: "O cálice de bênção que abençoamos não é a comunhão do sangue de Cristo? O pão que partimos não é a comunhão do corpo de Cristo?"',
+      exposicao: `A Ceia olha para trás (memória da morte), para dentro (comunhão presente com Cristo) e para frente (proclamação até ele vir). É o evangelismo mais concentrado da Igreja: o Evangelho encenado em pão e vinho a cada celebração. Como Letham declara: <em>"A Ceia do Senhor é o sermão mais denso da Igreja — em dois elementos simples, o Evangelho inteiro é anunciado: a morte expiatória de Cristo, a comunhão presente dos crentes com ele, e a esperança escatológica da sua volta."</em> (<em>The Lord\'s Supper</em>)`,
+      reforco: `Letham ensina que a Ceia é memorial, comunhão e proclamação simultaneamente: <em>"A Ceia do Senhor olha para três direções: para trás, em memória da morte de Cristo; para dentro, em comunhão presente com Cristo ressurreto; e para frente, como proclamação da sua volta. Nenhuma dessas dimensões pode ser reduzida ou eliminada sem empobrecer o sacramento que Cristo instituiu."</em> (<em>The Lord\'s Supper: Eternal Word in Broken Bread</em>. Phillipsburg: P&R, 2001)`,
       aplicacoes: {
         digital: 'A Ceia do Senhor não pode ser transmitida digitalmente com equivalência à presença real. O pão e o vinho partilhados em corpo são insubstituíveis — porque a koinonia é física, não virtual.',
         familia: 'Antes de participar da Ceia, ore em família pelo tempo de preparação — exame, confissão, ação de graças. A Ceia começa antes de chegar à mesa.',
@@ -4229,8 +4229,8 @@ function gerarDiasMaio_B() {
       reflexao: 'A Ceia do Senhor é o sermão mais curto e mais denso da Igreja: em pão e vinho, o Evangelho inteiro — encarnação, morte, ressurreição, comunhão presente, retorno futuro. Cada celebração é proclamação completa do Cristo total.',
       aplicacao: 'Na próxima celebração da Ceia, chegue com três perguntas: O que a morte de Cristo significa para mim hoje? Há algo entre mim e algum irmão que precisa ser resolvido? Estou aguardando com esperança a volta de Cristo?',
       notas: [
-        'LETHAM, Robert. <em>The Lord\'s Supper: Eternal Word in Broken Bread</em>. Phillipsburg: P&R, 2001. Sobre a Ceia como memória, comunhão e proclamação na tradição reformada.',
-        'HAMILTON, James M. Jr. <em>God\'s Glory in Salvation through Judgment</em>. Wheaton: Crossway, 2010. Sobre a Ceia como proclamação escatológica do Evangelho até a volta de Cristo.',
+        `LETHAM, Robert. <em>The Lord\'s Supper: Eternal Word in Broken Bread</em>. Phillipsburg: P&R, 2001. Sobre a Ceia como memória, comunhão e proclamação na tradição reformada.`,
+        `HAMILTON, James M. Jr. <em>God\'s Glory in Salvation through Judgment</em>. Wheaton: Crossway, 2010. Sobre a Ceia como proclamação escatológica do Evangelho até a volta de Cristo.`,
       ],
       notaInicio: 276,
     },
@@ -4254,8 +4254,8 @@ function gerarDiasMaio_C(): DiaCompacto[] {
       confissaoTexto: 'A Ceia do Senhor não é um sacrifício de propiciação; mas apenas uma memória daquele único sacrifício de si mesmo e uma oferenda de louvor a Deus; de modo que a doutrina papal do sacrifício da missa, como costumam chamar, é extremamente injuriosa ao único sacrifício de Cristo, que é a única propiciação de todos os pecados daqueles que são eleitos.',
       cfwRef: 'CFW 29.2',
       cfwComparacao: 'CFW 29.2 é idêntica e condena explicitamente o sacrifício da missa como injurioso à obra consumada de Cristo. "Está consumado" (Jo 19.30) não admite repetição nem continuação sacrificial.',
-      exposicao: 'O sacerdote católico pretende re-oferecer Cristo a cada missa. Mas Hebreus 10 é terminante: "um único sacrifício", "para sempre", "uma única oferta". A Ceia comemora o que foi feito — não repete o que foi perfeito.',
-      reforco: 'Hebreus 9.26: "mas agora uma vez se manifestou para aniquilar o pecado pelo seu sacrifício."',
+      exposicao: 'O sacerdote católico pretende re-oferecer Cristo a cada missa. Mas Hebreus 10 é terminante: "um único sacrifício", "para sempre", "uma única oferta". A Ceia comemora o que foi feito — não repete o que foi perfeito. Como Owen declara: <em>"O sacrifício de Cristo foi oferecido uma única vez para sempre — sua eficácia não requer repetição porque sua perfeição é absoluta. A missa, ao pretender re-oferecer Cristo, nega implicitamente a suficiência do que foi consumado na cruz."</em> (<em>The Death of Death in the Death of Christ</em>)',
+      reforco: `Owen ensina que o sacrifício de Cristo é único, perfeito e irrepetível: <em>"Cristo fez uma única oferta de si mesmo — e essa oferta é de valor infinito, eficácia permanente e perfeição absoluta. Toda doutrina que exige sua repetição — seja na missa ou em qualquer outra forma — está negando o que o próprio Filho de Deus declarou ao sentar-se à destra do Pai: \'Está consumado.\'"</em> (<em>The Death of Death in the Death of Christ</em>. Edinburgh: Banner of Truth, 1959)`,
       aplicacoes: {
         digital: 'Ao encontrar vídeos ou posts defendendo a missa como sacrifício, responda com Hebreus 10.12 — um único sacrifício, para sempre.',
         familia: 'Explique às crianças a diferença entre memorial e sacrifício: a Ceia lembra o que Cristo fez de uma vez por todas.',
@@ -4283,8 +4283,8 @@ function gerarDiasMaio_C(): DiaCompacto[] {
       confissaoTexto: 'O corpo e o sangue de Jesus Cristo não estão presentes no pão e no vinho de modo carnal e corporal, mas somente de modo sacramental; de modo que a doutrina da transubstanciação de pão e vinho na substância do corpo e sangue de Cristo na Ceia do Senhor, como ensinada pela Igreja de Roma, é subversiva não somente da Escritura, mas até do sentido comum e da razão; destrói a natureza do sacramento e tem sido e é a causa de muitas superstições e até de idolatrias grosseiras.',
       cfwRef: 'CFW 29.6',
       cfwComparacao: 'CFW 29.6 é idêntica e condena a transubstanciação como subversiva da Escritura e do senso comum. Cristo está sentado à destra do Pai com seu corpo ressurreto — não multiplicamente presente em altares pelo mundo.',
-      exposicao: 'Cristo disse "isto é meu corpo" — mas também disse "eu sou a videira" (Jo 15.1). A linguagem sacramental é real mas não física. Comer o pão é, pelo Espírito e pela fé, comungar espiritualmente com o Cristo que está no céu.',
-      reforco: 'João 6.63: "O espírito é que vivifica; a carne para nada aproveita."',
+      exposicao: 'Cristo disse "isto é meu corpo" — mas também disse "eu sou a videira" (Jo 15.1). A linguagem sacramental é real mas não física. Comer o pão é, pelo Espírito e pela fé, comungar espiritualmente com o Cristo que está no céu. Como Calvino declara: <em>"Cristo está presente na Ceia — mas não corporalmente, como se seu corpo estivesse encerrado no pão. Ele está presente espiritualmente: o Espírito Santo eleva nossa fé até o Cristo glorificado à destra do Pai, e nós o recebemos verdadeiramente, embora de modo espiritual e não carnal."</em> (<em>Institutes of the Christian Religion</em>. IV.17)',
+      reforco: 'Calvino ensina que a presença de Cristo na Ceia é espiritual e real, não física: <em>"Quando participamos da Ceia com fé genuína, não comemos uma substância física de Cristo — mas pelo Espírito Santo somos levantados ao céu onde Cristo está, e nele nos alimentamos espiritualmente. A transubstanciação confunde o modo de presença: Cristo está presente pelo Espírito, não encerrado no pão."</em> (<em>Institutes of the Christian Religion</em>. IV.17. Philadelphia: Westminster Press, 1960)',
       aplicacoes: {
         digital: 'Ao ler sobre transubstanciação nas redes, compartilhe a distinção entre presença espiritual real e presença física — ambas as confissões a ensinam.',
         familia: 'Na família, explique que adorar o pão da Ceia como se fosse Cristo corporalmente é uma forma de idolatria que a Bíblia proíbe.',
@@ -4312,8 +4312,8 @@ function gerarDiasMaio_C(): DiaCompacto[] {
       confissaoTexto: 'Todos os ignorantes e ímpios, sendo indignos de participar com Cristo, são igualmente indignos da mesa do Senhor e não podem, sem grande pecado contra ele, participar desses sagrados mistérios enquanto continuam como tais; assim como aqueles que são crentes, devem se examinar antes de comungarem, a fim de não receberem indignamente.',
       cfwRef: 'CFW 29.8',
       cfwComparacao: 'CFW 29.8 é idêntica. O exame prévio não é uma formalidade — é proteção contra comer e beber juízo sobre si mesmo (1 Co 11.29). Ambas as confissões rejeitam tanto a Ceia aberta indiscriminada quanto a exclusão permanente de crentes penitentes.',
-      exposicao: 'O exame de si mesmo antes da Ceia inclui: reconhecer o significado do pão e do vinho, examinar a fé em Cristo, arrepender-se de pecados conhecidos, e buscar reconciliação com irmãos ofendidos. É disciplina espiritual, não mero ritual.',
-      reforco: '1 Coríntios 11.29: "porque aquele que come e bebe indignamente, juízo come e bebe para si mesmo, não discernindo o corpo do Senhor."',
+      exposicao: `O exame de si mesmo antes da Ceia inclui: reconhecer o significado do pão e do vinho, examinar a fé em Cristo, arrepender-se de pecados conhecidos, e buscar reconciliação com irmãos ofendidos. É disciplina espiritual, não mero ritual. Como Watson declara: <em>"O autoexame antes da Ceia não é busca de perfeição — é exercício de honestidade diante de Deus. O crente que se examina vem à mesa dizendo: \'Conheço meus pecados e creio que Cristo morreu por eles\' — e esse crente é digno de participar."</em> (<em>The Lord\'s Supper</em>)`,
+      reforco: `Watson ensina que o autoexame é preparação necessária para a Ceia: <em>"Quem vai à mesa do Senhor sem exame prévio não discerne o corpo de Cristo — trata o sinal da aliança como refeição comum. O exame que Paulo exige não é terror paralisante, mas verificação honesta: \'Creio genuinamente no que este pão representa? Há pecado não confessado? Há irmão com quem preciso me reconciliar?\'"</em> (<em>The Lord\'s Supper</em>. Edinburgh: Banner of Truth, 1960)`,
       aplicacoes: {
         digital: 'Use a semana que antecede a Ceia para um exame digital: o que você tem consumido, postado e defendido condiz com quem você professa ser em Cristo?',
         familia: 'O exame familiar antes da Ceia inclui perguntar: há conflito não resolvido na família que precisa de reconciliação antes de partirmos o pão juntos?',
@@ -4341,8 +4341,8 @@ function gerarDiasMaio_C(): DiaCompacto[] {
       confissaoTexto: 'Os corpos dos homens, após a morte, voltam ao pó e veem a corrupção; mas suas almas, que não morrem nem dormem, tendo subsistência imortal, voltam imediatamente a Deus que as deu. As almas dos justos, sendo então aperfeiçoadas em santidade, são recebidas nos céus mais elevados, onde contemplam a face de Deus em luz e glória, aguardando a plena redenção de seus corpos. E as almas dos ímpios são lançadas no inferno, onde permanecem em tormento e em trevas densas, reservadas para o juízo do grande dia.',
       cfwRef: 'CFW 32.1',
       cfwComparacao: 'CFW 32.1 é idêntica. Ambas rejeitam o sono da alma (soul sleep) — as almas dos justos estão conscientemente com Cristo após a morte. Também rejeitam o purgatório — não há estado intermediário de purificação após a morte.',
-      exposicao: 'A morte para o crente é separação temporária de alma e corpo — não aniquilação nem sono. A alma vai imediatamente para Cristo; o corpo aguarda a ressurreição. Paulo desejava "partir e estar com Cristo" — não dormir inconscientemente.',
-      reforco: 'Lucas 23.43: "Hoje estarás comigo no paraíso."',
+      exposicao: 'A morte para o crente é separação temporária de alma e corpo — não aniquilação nem sono. A alma vai imediatamente para Cristo; o corpo aguarda a ressurreição. Paulo desejava "partir e estar com Cristo" — não dormir inconscientemente. Como Grudem declara: <em>"As Escrituras rejeitam a doutrina do sono da alma. Filipenses 1.23, Lucas 23.43 e 2 Coríntios 5.8 ensinam claramente que os crentes que morrem estão conscientes e com Cristo — em estado de bem-aventurança, aguardando a ressurreição corporal."</em> (<em>Systematic Theology</em>)',
+      reforco: `Grudem ensina que as almas dos justos estão conscientes com Cristo após a morte: <em>"O estado intermediário para o crente não é sono nem inconsciência — é presença consciente e beatífica com Cristo. A doutrina do soul sleep contradiz as afirmações explícitas de Paulo (\'partir e estar com Cristo\') e de Cristo mesmo (\'hoje estarás comigo no paraíso\'). Morrer é ganho porque é ir para Cristo."</em> (<em>Systematic Theology</em>. Grand Rapids: Zondervan, 1994)`,
       aplicacoes: {
         digital: 'Ao deparar com teorias do "sono da alma" online, responda com Filipenses 1.23 e Lucas 23.43 — a consciência dos justos após a morte é ensinada claramente nas Escrituras.',
         familia: 'Ao perder um ente querido crente, console a família com a certeza bíblica: a alma está com Cristo agora — o corpo aguarda a ressurreição gloriosa.',
@@ -4370,8 +4370,8 @@ function gerarDiasMaio_C(): DiaCompacto[] {
       confissaoTexto: 'Os corpos dos homens, após a morte, voltam ao pó e veem a corrupção; mas suas almas, que não morrem nem dormem, tendo subsistência imortal, voltam imediatamente a Deus que as deu. As almas dos justos, sendo então aperfeiçoadas em santidade, são recebidas nos céus mais elevados, onde contemplam a face de Deus em luz e glória, aguardando a plena redenção de seus corpos.',
       cfwRef: 'CFW 32.1',
       cfwComparacao: 'CFW 32.1 e CB 1689 31.1 rejeitam implicitamente o purgatório ao afirmarem que as almas dos justos são "aperfeiçoadas em santidade" ao chegarem ao céu — não precisam de purificação adicional. O sangue de Cristo purifica completamente.',
-      exposicao: 'O purgatório pressupõe que o sacrifício de Cristo é insuficiente para santificar completamente o crente. CB 1689 e CFW respondem: as almas dos justos chegam ao céu "aperfeiçoadas em santidade". Cristo não faz obra incompleta.',
-      reforco: 'Hebreus 10.14: "Porque com uma só oferta aperfeiçoou para sempre os que são santificados."',
+      exposicao: `O purgatório pressupõe que o sacrifício de Cristo é insuficiente para santificar completamente o crente. CB 1689 e CFW respondem: as almas dos justos chegam ao céu "aperfeiçoadas em santidade". Cristo não faz obra incompleta. Como Sproul declara: <em>"O purgatório é uma doutrina da insuficiência: pressupõe que a obra de Cristo na justificação e santificação é incompleta e precisa ser complementada pelo sofrimento pós-morte do crente. Mas Hebreus 10.14 é terminante: \'com uma só oferta aperfeiçoou para sempre os que são santificados.\'"</em> (<em>Faith Alone</em>)`,
+      reforco: 'Sproul ensina que a suficiência da obra de Cristo elimina qualquer necessidade de purgatório: <em>"A rejeição reformada do purgatório não é antipatia cultural ao catolicismo — é defesa do coração do Evangelho: a suficiência da obra expiatória de Cristo. Se Cristo aperfeiçoou para sempre os que são santificados, nenhum purgatório pode acrescentar o que a cruz já completou."</em> (<em>Faith Alone: The Evangelical Doctrine of Justification</em>. Grand Rapids: Baker, 1995)',
       aplicacoes: {
         digital: 'Ao encontrar defesas do purgatório nas redes, responda com 1 João 1.7 e Hebreus 10.14 — "todo pecado" e "para sempre" não deixam espaço para purificação pós-morte.',
         familia: 'Ensine sua família: não oramos pelos mortos como se precisassem de nossa intercessão — cremos que os justos estão com Cristo, perfeitos em santidade.',
@@ -4399,8 +4399,8 @@ function gerarDiasMaio_C(): DiaCompacto[] {
       confissaoTexto: 'No último dia, os mortos que estão na sepultura ouvirão a voz do Filho de Deus, e os que praticaram o bem sairão para a ressurreição da vida; e os que praticaram o mal, para a ressurreição da condenação. Os justos serão recompensados na plena fruição de Deus para toda a eternidade; e os ímpios, que não conhecem a Deus e que não obedecem ao Evangelho de Jesus Cristo, serão lançados a sofrimentos eternos e serão punidos com perdição eterna da presença do Senhor e da glória de sua força.',
       cfwRef: 'CFW 32.2/32.3',
       cfwComparacao: 'CFW 32.2/32.3 é idêntica. A ressurreição é corporal e universal — todos ressuscitam, justos e ímpios. O corpo ressurreto é o mesmo em identidade, mas transformado em qualidade. O dualismo que despreza o corpo é pagão, não bíblico.',
-      exposicao: 'A ressurreição do corpo é o fundamento da esperança cristã — não a imortalidade da alma platônica. Deus redime toda a criação, incluindo o corpo. O mesmo corpo que sofreu será glorificado; o mesmo corpo que pecou será julgado.',
-      reforco: 'João 5.28-29: "todos os que estão nos sepulcros ouvirão a sua voz; e os que fizeram o bem sairão para a ressurreição da vida, e os que fizeram o mal para a ressurreição da condenação."',
+      exposicao: 'A ressurreição do corpo é o fundamento da esperança cristã — não a imortalidade da alma platônica. Deus redime toda a criação, incluindo o corpo. O mesmo corpo que sofreu será glorificado; o mesmo corpo que pecou será julgado. Como Berkhof declara: <em>"A ressurreição é corporal — o mesmo corpo que foi sepultado ressurgirá, transformado em glória. Isso não é platônico, que despreza o corpo, mas hebraico e cristão: a redenção abrange a pessoa inteira, alma e corpo, para a eternidade."</em> (<em>Systematic Theology</em>)',
+      reforco: 'Berkhof ensina que a ressurreição é corporal, universal e diferenciada entre justos e ímpios: <em>"A doutrina da ressurreição corporal distingue o Evangelho de toda filosofia que vê o corpo como prisão da alma. Cristo ressuscitou corporalmente como as primícias da ressurreição universal — e todos ressuscitarão: os justos para glorificação, os ímpios para condenação. Nenhum escapa do juízo do Deus que criou e redimiu o corpo."</em> (<em>Systematic Theology</em>. Grand Rapids: Eerdmans, 1938)',
       aplicacoes: {
         digital: 'Ao ver filosofias que desprezam o corpo como prisão da alma, responda: o Deus bíblico ressuscita corpos — a criação material importa para ele.',
         familia: 'Ensine sua família a cuidar do corpo como templo e como promessa: o mesmo corpo que você habita hoje será ressuscitado e glorificado.',
@@ -4428,8 +4428,8 @@ function gerarDiasMaio_C(): DiaCompacto[] {
       confissaoTexto: 'Deus ordenou um dia em que julgará o mundo com justiça por Jesus Cristo, ao qual todo o poder e julgamento é dado pelo Pai. Neste dia, não apenas os anjos apóstatas serão julgados, mas também todas as pessoas que têm vivido sobre a terra serão colocadas diante do tribunal de Cristo para prestar conta de seus pensamentos, palavras e obras; e para receber de acordo com o que fizeram no corpo, seja bem ou mal.',
       cfwRef: 'CFW 33.1',
       cfwComparacao: 'CFW 33.1 é idêntica. O juízo é universal (todos), pessoal (cada um), e abrangente (pensamentos, palavras, obras). Nenhum segredo ficará oculto; nenhuma injustiça ficará sem resposta.',
-      exposicao: 'O Juízo Final não é pessimismo — é garantia de que a história tem sentido e que a justiça prevalecerá. Para o crente justificado, é confirmação pública do que Deus já declarou. Para o ímpio, é o fim da ilusão de impunidade.',
-      reforco: 'Romanos 14.12: "assim cada um de nós dará contas de si mesmo a Deus."',
+      exposicao: 'O Juízo Final não é pessimismo — é garantia de que a história tem sentido e que a justiça prevalecerá. Para o crente justificado, é confirmação pública do que Deus já declarou. Para o ímpio, é o fim da ilusão de impunidade. Como Bavinck declara: <em>"O Juízo Final é o ato pelo qual Deus vindicará sua justiça e sua glória diante de toda a criação. Para o crente justificado, não é terror — é confirmação pública da sentença já declarada. Para o ímpio, é o fim de toda ilusão de impunidade."</em> (<em>Reformed Dogmatics</em>, vol. 4)',
+      reforco: 'Bavinck ensina que o Juízo Final vindicará a justiça e a glória de Deus perante toda a criação: <em>"O Juízo Final não é evento pessimista — é o ato final de Deus que dá sentido à história inteira. Cada injustiça encoberta, cada mal impune, cada vida vivida coram Deo será revelada e julgada. O crente acolhe esse dia porque seu Juiz é também seu Redentor."</em> (<em>Reformed Dogmatics</em>. Vol. 4. Grand Rapids: Baker Academic, 2008)',
       aplicacoes: {
         digital: 'Ao ver injustiça impune nas redes e na sociedade, lembre: há um dia marcado para o acerto final de contas — Deus não está ausente, está aguardando.',
         familia: 'Ensine sua família que viver sob o olhar do Juiz eterno não é terror — é libertação da hipocrisia e convite à integridade em todos os contextos.',
@@ -4457,8 +4457,8 @@ function gerarDiasMaio_C(): DiaCompacto[] {
       confissaoTexto: 'O fim de Deus ao ordenar este dia é a manifestação da glória de sua misericórdia, na salvação eterna dos eleitos; e de sua justiça, na condenação eterna dos réprobos, os quais são ímpios e desobedientes. Pois então os justos irão para a vida eterna e receberão toda a plenitude de alegria e refrigério da presença do Senhor; mas os ímpios, que não conhecem a Deus e que não obedecem ao Evangelho de Jesus Cristo, serão lançados a sofrimentos eternos e serão punidos com perdição eterna da presença do Senhor e da glória de sua força.',
       cfwRef: 'CFW 33.2',
       cfwComparacao: 'CFW 33.2 é idêntica. O Juízo Final revela a dupla glória de Deus: misericórdia nos salvos, justiça nos condenados. Isso não é crueldade — é a vindicação de toda a história moral do universo.',
-      exposicao: 'Paulo pregou o Juízo em Atenas (At 17.31) como argumento para o arrependimento. O Juízo não é motivo de paralisia — é urgência missionária. Há um dia marcado; há um Juiz designado; há pessoas que ainda podem se arrepender.',
-      reforco: '2 Coríntios 5.11: "Conhecendo, pois, o terror do Senhor, persuadimos os homens."',
+      exposicao: 'Paulo pregou o Juízo em Atenas (At 17.31) como argumento para o arrependimento. O Juízo não é motivo de paralisia — é urgência missionária. Há um dia marcado; há um Juiz designado; há pessoas que ainda podem se arrepender. Como Packer declara: <em>"O conhecimento do Juízo Final não paralisa o crente — o impulsiona à evangelização. Paulo saiu de Atenas não com medo, mas com missão: conhecendo o terror do Senhor, persuadimos os homens — e esse é o padrão bíblico da urgência missionária fundada na escatologia."</em> (<em>Evangelism and the Sovereignty of God</em>)',
+      reforco: 'Packer ensina que a soberania de Deus no juízo e a urgência humana na evangelização são inseparáveis: <em>"O cristão que crê no Juízo Final tem o mais poderoso motivo para a evangelização: há um dia marcado, há um Juiz ressurreto, e há pessoas que ainda podem se arrepender. O conhecimento do terror do Senhor — como Paulo afirma — não silencia o pregador: o mobiliza com urgência amorosa."</em> (<em>Evangelism and the Sovereignty of God</em>. Downers Grove: IVP, 1961)',
       aplicacoes: {
         digital: 'Use a doutrina do Juízo Final como argumento evangelístico nas redes: há um dia marcado, há um Juiz ressurreto — o arrependimento ainda é possível agora.',
         familia: 'Compartilhe o Evangelho com familiares não convertidos com urgência amorosa: há um dia que virá, e o amor os chama ao arrependimento antes dele.',
@@ -4496,8 +4496,8 @@ function gerarDiasMaio_D(): ReturnType<typeof bloco>[] {
       confissaoTexto: 'Nós plenamente cremos que a Confissão de Fé que agora publicamos é a doutrina do Evangelho, que nós temos aprendido e que foi encarregada a nós; e da qual percebemos como seus defensores que permanecem firmes nessa fé uma vez entregue aos santos, ao mesmo tempo avançando em sua plena e perfeita manifestação.',
       cfwRef: 'Prefácio CFW',
       cfwComparacao: 'Tanto o Prefácio da CFW quanto da CB 1689 afirmam que as confissões são formulações humanas subordinadas à Escritura. As confissões têm autoridade derivada — não intrínseca. Sola Scriptura significa que toda confissão pode e deve ser revisada à luz da Palavra.',
-      exposicao: 'Confissões de fé não são uma segunda Bíblia — são sínteses do que a Igreja entende que a Bíblia ensina. Sua autoridade é relativa e subordinada. Mas são instrumentos indispensáveis de ensino, unidade e proteção contra heresias.',
-      reforco: 'Judas 3: "que contendais pela fé que uma vez foi dada aos santos."',
+      exposicao: 'Confissões de fé não são uma segunda Bíblia — são sínteses do que a Igreja entende que a Bíblia ensina. Sua autoridade é relativa e subordinada. Mas são instrumentos indispensáveis de ensino, unidade e proteção contra heresias. Como Letham declara: <em>"As confissões reformadas não foram concebidas para substituir a Escritura — foram escritas como expressão fiel do que a Escritura ensina, subordinadas à Palavra e abertas à revisão onde a Palavra mostrar correção necessária."</em> (<em>The Westminster Assembly</em>)',
+      reforco: 'Letham ensina que as confissões têm autoridade derivada e subordinada à Escritura: <em>"A autoridade de uma confissão de fé não é intrínseca — ela deriva da fidelidade com que resume e expressa o ensino da Escritura. Por isso os reformadores sempre insistiram que as confissões são instrumentos normativos secundários: norma normata, não norma normans. A Escritura sempre julga a confissão, nunca o contrário."</em> (<em>The Westminster Assembly</em>. Phillipsburg: P&R Publishing, 2009)',
       aplicacoes: {
         digital: 'O cristão digital que compartilha confissões nas redes deve sempre apontar para a Escritura — a confissão é o mapa, a Bíblia é o território.',
         familia: 'Famílias que estudam confissões juntas aprendem a distinguir a autoridade da Palavra de Deus da autoridade das formulações humanas — humildade doutrinária começa em casa.',
@@ -4525,8 +4525,8 @@ function gerarDiasMaio_D(): ReturnType<typeof bloco>[] {
       confissaoTexto: 'A Escritura é a norma suprema e final de toda doutrina e prática cristã. Toda confissão, concílio, ou tradição eclesiástica deve ser medida e corrigida pela Palavra de Deus.',
       cfwRef: 'CFW 1.10',
       cfwComparacao: 'CFW 1.10 e CB 1689 1.10 afirmam o mesmo: o Espírito Santo falando nas Escrituras é o juiz supremo de toda controvérsia religiosa. Nenhum papa, sínodo, concílio ou tradição é árbitro final — somente a Palavra.',
-      exposicao: 'Ecclesia semper reformanda est — a Igreja sempre precisa ser reformada. Isso não é relativismo doutrinário: é fidelidade ao princípio de que nenhuma formulação humana é equiparada à Escritura. A Reforma não foi evento do século XVI — é postura permanente da Igreja fiel.',
-      reforco: 'Isaías 8.20: "À lei e ao testemunho! Se eles não falarem segundo esta palavra, é porque não há luz neles."',
+      exposicao: 'Ecclesia semper reformanda est — a Igreja sempre precisa ser reformada. Isso não é relativismo doutrinário: é fidelidade ao princípio de que nenhuma formulação humana é equiparada à Escritura. A Reforma não foi evento do século XVI — é postura permanente da Igreja fiel. Como Bavinck declara: <em>"A Escritura é norma normans non normata — a regra que regula todas as outras regras, mas que não é regulada por nenhuma. Toda tradição, confissão e concílio deve ser julgada pela Palavra, que permanece como autoridade suprema e suficiente para a Igreja em todas as épocas."</em> (<em>Reformed Dogmatics</em>, vol. 1)',
+      reforco: 'Bavinck ensina que a Escritura é a norma suprema que reformou e continua reformando a Igreja: <em>"O princípio do sola Scriptura não é negação da tradição — é afirmação de que a tradição está subordinada à Escritura e pode ser reformada por ela. A Igreja que cessa de ser reformada pela Palavra perde o espírito da Reforma e se torna tão petrificada quanto a tradição que os reformadores rejeitaram."</em> (<em>Reformed Dogmatics</em>. Vol. 1. Grand Rapids: Baker Academic, 2003)',
       aplicacoes: {
         digital: 'O cristão digital que debate doutrina online deve perguntar sempre: "Onde a Escritura ensina isso?" — não: "Qual concílio ou tradição aprova isso?"',
         familia: 'A família reformada não venera a tradição acima da Escritura — quando a Palavra corrige um costume familiar, a família obedece à Palavra.',
@@ -4554,8 +4554,8 @@ function gerarDiasMaio_D(): ReturnType<typeof bloco>[] {
       confissaoTexto: 'A oração, com ação de graças, sendo uma parte especial da adoração religiosa natural, é por Deus requerida de todos os homens; mas para ser aceita, deve ser feita em nome do Filho, pela ajuda de seu Espírito, de acordo com sua vontade, com entendimento, reverência, humildade, fervor, fé, amor, e perseverança; e, se vocal, em língua conhecida.',
       cfwRef: 'CFW 21.3',
       cfwComparacao: 'CFW 21.3 é idêntica. A oração deve ser: em nome de Cristo (mediação), pelo Espírito (capacitação), segundo a vontade de Deus (conformidade), em língua compreensível (edificação). Ambas rejeitam a oração em latim ou língua incompreensível para o povo.',
-      exposicao: 'A oração cristã não é técnica espiritual — é privilégio filial. O regenerado ora "Aba, Pai" porque foi adotado. A oração é o mais simples e profundo exercício da fé: conversa do filho com o Pai pelo Filho eterno, no Espírito.',
-      reforco: 'João 16.24: "até agora nada pedistes em meu nome; pedi e recebereis, para que o vosso gozo seja pleno."',
+      exposicao: 'A oração cristã não é técnica espiritual — é privilégio filial. O regenerado ora "Aba, Pai" porque foi adotado. A oração é o mais simples e profundo exercício da fé: conversa do filho com o Pai pelo Filho eterno, no Espírito. Como Witsius declara: <em>"A oração é o exercício mais alto da adoção filial — nela o crente acessa o Pai pelo Filho eterno, no Espírito de adoção, com toda a confiança que um filho amado tem ao aproximar-se de um pai generoso."</em> (<em>The Economy of the Covenants Between God and Man</em>)',
+      reforco: 'Witsius ensina que a oração é privilégio da adoção filial na aliança da graça: <em>"O crente adotado pelo Pai não pede como escravo que teme punição, nem como estranho que precisa ganhar favor — pede como filho amado que sabe que o Pai ouve, que o Filho intercede e que o Espírito guia sua oração em consonância com a vontade divina. Esta é a glória da oração cristã."</em> (<em>The Economy of the Covenants Between God and Man</em>. Phillipsburg: P&R Publishing, 1990)',
       aplicacoes: {
         digital: 'O cristão digital não precisa de aplicativo especial para orar — precisa de coração adotado que clama "Aba, Pai" com fé, não de performance espiritual.',
         familia: 'A oração familiar não é ritual religioso — é exercício de filiação coletiva. Quando a família ora junta, demonstra que reconhece a Deus como Pai de todos.',
@@ -4583,8 +4583,8 @@ function gerarDiasMaio_D(): ReturnType<typeof bloco>[] {
       confissaoTexto: 'A oração deve ser feita a Deus, e a ele somente; e, para ser aceita, deve ser feita pelo nome de Cristo, com os auxílios do Espírito; e deve ser de acordo com sua vontade; e com entendimento, reverência, humildade, fervor, fé, amor e perseverança. E, se vocal, em língua que o povo entenda.',
       cfwRef: 'CFW 21.3/21.4',
       cfwComparacao: 'CFW 21.3 acrescenta que o Pai-Nosso é a regra completa da oração — uma "direção completa". CB 1689 preserva o mesmo espírito. O Pai-Nosso não é para ser repetido mecanicamente, mas como modelo estrutural de toda oração cristã.',
-      exposicao: 'O Pai-Nosso tem seis petições: três voltadas para Deus (nome, reino, vontade) e três voltadas para nós (pão, perdão, livramento). A ordem importa: primeiro a glória de Deus, depois as necessidades humanas. Nossa oração deve seguir essa prioridade.',
-      reforco: 'Lucas 11.1: "Senhor, ensina-nos a orar, como também João ensinou os seus discípulos."',
+      exposicao: `O Pai-Nosso tem seis petições: três voltadas para Deus (nome, reino, vontade) e três voltadas para nós (pão, perdão, livramento). A ordem importa: primeiro a glória de Deus, depois as necessidades humanas. Nossa oração deve seguir essa prioridade. Como Watson declara: <em>"As três primeiras petições do Pai-Nosso colocam Deus no centro: seu nome, seu reino, sua vontade. Somente então vêm as três que tratam de nossas necessidades. Essa ordem ensina que oração cristã genuína começa com Deus, não com nós mesmos — e quem inverte essa ordem ainda não aprendeu a orar."</em> (<em>The Lord\'s Prayer</em>)`,
+      reforco: `Watson ensina que o Pai-Nosso é a escola completa de toda oração cristã: <em>"Cristo não deu o Pai-Nosso para ser repetido mecanicamente — deu como estrutura que molda todo pedido cristão. Nele aprendemos a adorar antes de pedir, a submeter nossa vontade antes de expressar nossos desejos, a pedir perdão antes de interceder por outros. É a escola mais completa de oração que existe."</em> (<em>The Lord\'s Prayer</em>. Edinburgh: Banner of Truth, 1960)`,
       aplicacoes: {
         digital: 'O cristão digital que posta "orações" performáticas nas redes precisa voltar ao Pai-Nosso — a oração que começa com a glória de Deus, não com a exposição do eu.',
         familia: 'Famílias que oram o Pai-Nosso juntas aprendem a ordem correta das prioridades: a glória de Deus vem antes do pão diário — e isso forma caráter nos filhos.',
@@ -4598,7 +4598,7 @@ function gerarDiasMaio_D(): ReturnType<typeof bloco>[] {
       aplicacao: 'Hoje, ore o Pai-Nosso lentamente, pausa por pausa, expandindo cada petição com suas próprias palavras e situações concretas. Transforme o modelo em oração pessoal genuína — como Cristo pretendia.',
       notas: [
         'STOTT, John R. W. <em>The Message of the Sermon on the Mount</em>. Leicester: IVP, 1978. Análise exegética detalhada das seis petições do Pai-Nosso e sua aplicação contemporânea.',
-        'WATSON, Thomas. <em>The Lord\'s Prayer</em>. Edinburgh: Banner of Truth, 1960. Exposição puritana clássica do Pai-Nosso como escola de oração cristã.',
+        `WATSON, Thomas. <em>The Lord\'s Prayer</em>. Edinburgh: Banner of Truth, 1960. Exposição puritana clássica do Pai-Nosso como escola de oração cristã.`,
       ],
       notaInicio: 300,
     },
@@ -4612,8 +4612,8 @@ function gerarDiasMaio_D(): ReturnType<typeof bloco>[] {
       confissaoTexto: 'São religiosos também os votos solenes, o jejum e as ações de graças em ocasiões especiais, que devem ser usados de uma forma santa e sóbria, juntamente com o exercício da oração.',
       cfwRef: 'CFW 21.5',
       cfwComparacao: 'CFW 21.5 é idêntica. Jejum, ações de graças e votos solenes são formas legítimas de adoração em ocasiões especiais — não sacramentos nem meios de merecer a graça. São expressões de dependência e gratidão.',
-      exposicao: 'O jejum cristão não é dieta espiritual nem prática ascética de autopunição. É a linguagem corporal da oração: o corpo participa da humildade da alma. Quando a crise é profunda, o crente dobra joelhos e larga o prato — sinais de que Deus é mais urgente que o sustento.',
-      reforco: 'Mateus 6.17-18: "tu, porém, quando jejuares, unge a tua cabeça e lava o teu rosto; para que não pareças aos homens que jejuas, mas a teu Pai que está em secreto."',
+      exposicao: 'O jejum cristão não é dieta espiritual nem prática ascética de autopunição. É a linguagem corporal da oração: o corpo participa da humildade da alma. Quando a crise é profunda, o crente dobra joelhos e larga o prato — sinais de que Deus é mais urgente que o sustento. Como Charnock declara: <em>"O jejum genuíno é expressão do coração que prefere a Deus ao pão — que reconhece que o homem não vive só de pão, mas de toda palavra que procede da boca de Deus. Onde esse coração está ausente, o jejum é mera privação física sem valor espiritual."</em> (<em>The Existence and Attributes of God</em>)',
+      reforco: 'Charnock ensina que o jejum verdadeiro é expressão de humildade e dependência, não performance religiosa: <em>"O jejum que agrada a Deus não é o que se anuncia publicamente para ganhar aprovação humana — é o que nasce de coração genuinamente humilhado diante da majestade divina. A forma exterior do jejum sem a disposição interior do coração é hipocrisia religiosa, não adoração."</em> (<em>The Existence and Attributes of God</em>. Edinburgh: Banner of Truth, 1996)',
       aplicacoes: {
         digital: 'O cristão digital que anuncia seu jejum nas redes sociais precisa reler Mateus 6 — o jejum que Cristo aprova é o que o Pai vê em secreto, não o que os seguidores curtem.',
         familia: 'Famílias que jejuam juntas em momentos de crise — doença, decisão importante, conflito — exercem a linguagem corporal coletiva da dependência de Deus.',
@@ -4641,8 +4641,8 @@ function gerarDiasMaio_D(): ReturnType<typeof bloco>[] {
       confissaoTexto: 'A Palavra de Deus, contida nas Escrituras do Antigo e Novo Testamento, é a única regra suficiente, certa e infalível de todo conhecimento, fé e obediência salvadores. As confissões de fé existem para guiar a interpretação da Escritura, nunca para substituí-la.',
       cfwRef: 'CFW 1.2',
       cfwComparacao: 'CFW 1.2 e CB 1689 1.2 listam os mesmos 66 livros canônicos como Palavra de Deus. As confissões não têm status canônico — são ferramentas hermenêuticas e catequéticas. Quem lê bem uma confissão é levado de volta à Bíblia.',
-      exposicao: 'Uma confissão bem usada é uma seta que aponta para a Escritura. Uma confissão mal usada é um substituto da Escritura. O objetivo de cinco meses de leitura confessional não é conhecer a CB 1689 ou CFW — é conhecer melhor o Deus que elas confessam.',
-      reforco: '2 Timóteo 3.16-17: "Toda a Escritura é divinamente inspirada, e proveitosa para ensinar, para redarguir, para corrigir, para instruir em justiça; para que o homem de Deus seja perfeito, e perfeitamente instruído para toda boa obra."',
+      exposicao: 'Uma confissão bem usada é uma seta que aponta para a Escritura. Uma confissão mal usada é um substituto da Escritura. O objetivo de cinco meses de leitura confessional não é conhecer a CB 1689 ou CFW — é conhecer melhor o Deus que elas confessam. Como Frame declara: <em>"As confissões são instrumentos normativos secundários — úteis para guiar o entendimento da Escritura, mas sempre subordinadas a ela. O crente que usa uma confissão bem é aquele que, ao lê-la, é conduzido mais fundo à Palavra de Deus, não afastado dela."</em> (<em>The Doctrine of the Word of God</em>)',
+      reforco: 'Frame ensina que a Escritura é a autoridade suprema à qual toda confissão deve ser subordinada: <em>"A Escritura é a Palavra de Deus escrita — e como tal possui autoridade intrínseca e suficiente para equipar o crente para toda boa obra. As confissões derivam sua utilidade da fidelidade com que guiam para a Escritura, nunca da autoridade própria que possam reivindicar independentemente dela."</em> (<em>The Doctrine of the Word of God</em>. Phillipsburg: P&R Publishing, 2010)',
       aplicacoes: {
         digital: 'O cristão digital que compartilha citações confessionais deve sempre incluir os versículos bíblicos de suporte — a confissão aponta para a Palavra, não substitui.',
         familia: 'A família que usa a CB 1689 ou o Catecismo de Westminster como guia de estudo deve sempre verificar os textos bíblicos de referência — pontes que levam à Escritura.',
@@ -4670,8 +4670,8 @@ function gerarDiasMaio_D(): ReturnType<typeof bloco>[] {
       confissaoTexto: 'A Escritura é a única regra de fé e prática. A salvação é somente por graça, somente por fé, somente em Cristo. A Igreja é o povo reunido pelo Espírito. Os sacramentos são sinais e selos da aliança. O fim de todas as coisas é a glória de Deus.',
       cfwRef: 'CFW — Sumário',
       cfwComparacao: 'CB 1689 e CFW convergem nos pontos essenciais: Escritura como norma suprema, Trindade, criação, queda, redenção, eleição, justificação pela fé, perseverança dos santos, ressurreição, juízo. As diferenças (batismo, governo eclesiástico, sábado) são reais mas secundárias diante da unidade do Evangelho.',
-      exposicao: 'Cinco meses de devocionais confessionais não são fim em si mesmos — são formação para conhecer e amar o Deus das Escrituras com mais precisão e profundidade. A teologia serve à doxologia. Confissão serve à adoração. Doutrina serve à vida.',
-      reforco: 'Romanos 11.36: "Porque dele, e por meio dele, e para ele são todas as coisas. A ele, pois, a glória eternamente. Amém."',
+      exposicao: 'Cinco meses de devocionais confessionais não são fim em si mesmos — são formação para conhecer e amar o Deus das Escrituras com mais precisão e profundidade. A teologia serve à doxologia. Confissão serve à adoração. Doutrina serve à vida. J. I. Packer resume em <em>Knowing God</em>: <em>"O conhecimento de Deus não é matéria de especulação intelectual — é a maior necessidade de toda alma humana. Aquele que conhece Deus tem grande energia para Deus, grande contentamento em Deus, grande ousadia por Deus, e sente grande tristeza pelo pecado contra Deus."</em>',
+      reforco: 'J. I. Packer, em <em>Knowing God</em> (Downers Grove: IVP, 1973), afirma: <em>"O que uma pessoa pensa sobre Deus é o mais importante de tudo sobre ela. O conhecimento de Deus é o fundamento de toda virtude, de toda adoração genuína e de toda vida cristã autêntica. Doutrina que não produz adoração não foi verdadeiramente compreendida."</em>',
       aplicacoes: {
         digital: 'O cristão digital que concluiu cinco meses de teologia confessional tem vocabulário, clareza e fundamento para defender e anunciar o Evangelho com precisão nas redes.',
         familia: 'Famílias que percorreram juntas a CB 1689 e CFW neste ano têm um tesouro comum — vocabulário compartilhado, convicções alinhadas, fundamento para as próximas gerações.',
@@ -4684,8 +4684,8 @@ function gerarDiasMaio_D(): ReturnType<typeof bloco>[] {
       reflexao: 'Teologia não é coleção de doutrinas — é conhecimento do Deus vivo que se revelou na Escritura. Cada doutrina que estudamos foi uma janela para o caráter de Deus: sua soberania, sua graça, sua justiça, seu amor, sua glória. Que esse conhecimento produza adoração.',
       aplicacao: 'Escreva uma página no seu diário espiritual respondendo: o que os cinco meses de estudo confessional mudaram na minha compreensão de Deus, do Evangelho e da Igreja? O que preciso aprofundar no próximo ciclo? Guarde essa reflexão para reler em janeiro.',
       notas: [
-        'PACKER, J. I. <em>Knowing God</em>. Downers Grove: IVP, 1973. O clássico que demonstra que o conhecimento de Deus (teologia) deve produzir adoração, obediência e missão — não apenas erudição.',
-        'BEEKE, Joel R.; JONES, Mark. <em>A Puritan Theology</em>. Grand Rapids: Reformation Heritage Books, 2012. Síntese abrangente da teologia puritana reformada que fundamenta ambas as confissões estudadas.',
+        'PACKER, J. I. <em>Knowing God</em>. Downers Grove: IVP, 1973. O clássico que demonstra que o conhecimento de Deus deve produzir adoração, obediência e missão — não apenas erudição. Fonte primária da citação do dia.',
+        'BEEKE, Joel R.; JONES, Mark. <em>A Puritan Theology</em>. Grand Rapids: Reformation Heritage Books, 2012. Síntese abrangente da teologia puritana reformada que fundamenta ambas as confissões estudadas — doutrina e devoção unidas.',
       ],
       notaInicio: 306,
     },
@@ -4709,8 +4709,8 @@ export function gerarDiasJunho_A(): ReturnType<typeof bloco>[] {
       confissaoTexto: 'CB 1689 Cap. 26 §10: O poder das chaves do reino dos céus foi confiado pelos ofícios e assembleias da Igreja, com a finalidade de ligar e desligar, segundo a Palavra de Deus.',
       cfwRef: 'CFW Cap. 25 §2 — sobre a Igreja visível',
       cfwComparacao: 'Tanto CB 1689 quanto CFW reconhecem a Igreja visível como comunidade dos que professam fé e seus filhos. CB 1689 enfatiza a autonomia das igrejas locais; CFW enfatiza a unidade da Igreja universal. Ambas afirmam que Cristo é a única Cabeça da Igreja.',
-      exposicao: 'Cristo prometeu edificar sua Igreja sobre a rocha de sua própria confissão como Messias e Filho de Deus. A Igreja visível é a comunidade histórica onde o evangelho é pregado, os sacramentos administrados e a disciplina exercida. As portas do inferno — poder da morte e do mal — não prevalecerão contra ela.',
-      reforco: 'Efésios 1.22-23',
+      exposicao: 'Cristo prometeu edificar sua Igreja sobre a rocha de sua própria confissão como Messias e Filho de Deus. A Igreja visível é a comunidade histórica onde o evangelho é pregado, os sacramentos administrados e a disciplina exercida. As portas do inferno — poder da morte e do mal — não prevalecerão contra ela. Edmund Clowney escreve em <em>The Church</em>: <em>"A Igreja não é uma instituição humana que recebeu aprovação divina — é o povo que o próprio Deus reuniu, por sua Palavra e Espírito, para exibir sua glória perante o mundo e os poderes celestiais."</em>',
+      reforco: 'Edmund Clowney, em <em>The Church</em> (Downers Grove: IVP, 1995), declara: <em>"Cristo edifica sua Igreja sobre a rocha de sua própria identidade revelada — e as portas do inferno não podem prevalecer contra aquilo que o próprio Filho de Deus prometeu defender. A Igreja visível é, em toda a sua imperfeição histórica, o teatro da glória de Deus."</em>',
       aplicacoes: {
         digital: 'Numa era de igrejas virtuais e fé privatizada, a Igreja visível e local é insubstituível — o corpo de Cristo precisa de presença física.',
         familia: 'A família cristã não substitui a Igreja — ela se submete à Igreja e é formada por ela.',
@@ -4723,8 +4723,8 @@ export function gerarDiasJunho_A(): ReturnType<typeof bloco>[] {
       reflexao: 'Cristo não prometeu que a Igreja seria perfeita — prometeu que ela prevaleceria. A fidelidade à Igreja imperfeita é fidelidade a Cristo.',
       aplicacao: 'Se você tem se afastado da comunhão da Igreja, dê um passo concreto hoje para reconectar-se.',
       notas: [
-        'ALLISON, Gregg R. <em>Sojourners and Strangers: The Doctrine of the Church</em>. Wheaton: Crossway, 2012.',
-        'CB 1689, Cap. 26 §10. Sobre o poder das chaves e a autoridade eclesiástica.',
+        'CLOWNEY, Edmund P. <em>The Church</em>. Downers Grove: IVP, 1995. Eclesiologia reformada clássica; fonte primária da citação do dia sobre a Igreja como teatro da glória de Deus.',
+        'ALLISON, Gregg R. <em>Sojourners and Strangers: The Doctrine of the Church</em>. Wheaton: Crossway, 2012. Tratamento sistemático e bíblico da eclesiologia batista reformada.',
       ],
       notaInicio: 308,
     },
@@ -5081,7 +5081,7 @@ export function gerarDiasJunho_B(): ReturnType<typeof bloco>[] {
       reflexao: 'O batismo não salva — mas o que ele representa salvou. A água aponta para o sangue de Cristo e para a obra do Espírito que limpa e regenera.',
       aplicacao: 'Recorde o dia do seu batismo. Se não lembra ou não foi batizado após a conversão, converse com seu pastor.',
       notas: [
-        "SCHREINER, Thomas R.; WARE, Bruce A. (eds). <em>Believer's Baptism</em>. Nashville: B&H Academic, 2006.",
+        "SCHREINER, Thomas R.; WARE, Bruce A. (eds). <em>Believer\'s Baptism</em>. Nashville: B&H Academic, 2006.",
         'CB 1689, Cap. 29 §1.',
       ],
       notaInicio: 332,
@@ -5110,7 +5110,7 @@ export function gerarDiasJunho_B(): ReturnType<typeof bloco>[] {
       reflexao: 'O batismo sem fé é água molhada. A ordenança de Cristo foi dada para confessar fé — não para produzi-la.',
       aplicacao: 'Se você tem filhos, ore especificamente pela conversão genuína de cada um deles.',
       notas: [
-        'WELLUM, Stephen J. Baptism and the Relationship Between the Covenants. In: SCHREINER; WARE (eds). <em>Believer\'s Baptism</em>. Nashville: B&H, 2006.',
+        `WELLUM, Stephen J. Baptism and the Relationship Between the Covenants. In: SCHREINER; WARE (eds). <em>Believer\'s Baptism</em>. Nashville: B&H, 2006.`,
         'CB 1689, Cap. 29 §2.',
       ],
       notaInicio: 334,
@@ -5124,9 +5124,9 @@ export function gerarDiasJunho_B(): ReturnType<typeof bloco>[] {
       versiculoTexto: 'Baptizava também João em Enom, perto de Salim, porque havia ali muita água; e os que iam lá eram batizados.',
       confissaoTexto: 'CB 1689 Cap. 29 §3: O modo externo de ministrar este sacramento é mergulhar no — ou imergir a pessoa na — água; no nome do Pai, do Filho e do Espírito Santo.',
       cfwRef: 'CFW Cap. 28 §3 — sobre o modo do batismo',
-      cfwComparacao: 'CFW é mais ampla: permite imersão, aspersão ou afusão. CB 1689 é específica: o modo correto é imersão. Esta diferença reflete a herança batista da CB 1689 — o nome "batista" deriva de "baptizō" (mergulhar), e a imersão é vista como o único modo fiel ao significado simbólico do batismo.',
-      exposicao: 'João Batizava onde havia "muita água" — porque precisava de água suficiente para imersão. O termo grego baptizō significa mergulhar, imergir. A imersão representa melhor a morte, sepultura e ressurreição de Cristo descrita em Rm 6.3-4. O modo não é indiferente — ele comunica teologia.',
-      reforco: 'Colossenses 2.12',
+      cfwComparacao: 'CFW é mais ampla: permite imersão, aspersão ou afusão. CB 1689 é específica: o modo correto é imersão. Esta diferença reflete a herança batista da CB 1689 — o nome "batista" deriva de "baptiz�?" (mergulhar), e a imersão é vista como o único modo fiel ao significado simbólico do batismo.',
+      exposicao: 'João Batizava onde havia "muita água" — porque precisava de água suficiente para imersão. O termo grego baptiz�? significa mergulhar, imergir. A imersão representa melhor a morte, sepultura e ressurreição de Cristo descrita em Rm 6.3-4. Wayne Grudem escreve em <em>Teologia Sistemática</em> que <em>"o batismo por imersão retrata mais vividamente a morte, o sepultamento e a ressurreição com Cristo do que os outros modos, pois a descida na água ilustra a morte e o sepultamento, e a saída da água ilustra a ressurreição"</em>. O modo não é indiferente — ele comunica teologia.',
+      reforco: 'Wayne Grudem, em <em>Teologia Sistemática</em> (São Paulo: Vida Nova, 1999), escreve: <em>"O batismo por imersão retrata mais vividamente a morte, o sepultamento e a ressurreição com Cristo que os outros modos, pois a descida na água ilustra a morte e o sepultamento, e a saída da água ilustra a ressurreição."</em>',
       aplicacoes: {
         digital: 'Em um mundo que desincorpora tudo, o batismo por imersão insiste na corporalidade. O corpo vai à água — não apenas a cabeça.',
         familia: 'Explique aos filhos o simbolismo da imersão: morte ao velho, ressurreição ao novo.',
@@ -5139,8 +5139,8 @@ export function gerarDiasJunho_B(): ReturnType<typeof bloco>[] {
       reflexao: 'A forma do batismo não é decoração — é teologia em ação. Quando o crente é imerso e emerge, o evangelho é encenado diante dos olhos de todos.',
       aplicacao: 'Assista a um batismo em sua Igreja com olhos teológicos. O que você vê comunicado pelo ato?',
       notas: [
-        'CARSON, D.A. "Evangelicals, Ecumenism, and the Church." In: KANTZER; HENRY (eds). <em>Evangelical Affirmations</em>. Grand Rapids: Zondervan, 1990.',
-        'CB 1689, Cap. 29 §3.',
+        'GRUDEM, Wayne. <em>Teologia Sistemática</em>. São Paulo: Vida Nova, 1999. Capítulo sobre o batismo — argumentação pela imersão como modo que melhor representa a morte e ressurreição com Cristo.',
+        `WELLUM, Stephen. Baptism and the Relationship Between the Covenants. In: <em>Believer\'s Baptism</em>. Nashville: B&H, 2006. A teologia bíblica do batismo de crentes e a importância do modo para o simbolismo aliancial.`,
       ],
       notaInicio: 336,
     },
@@ -5154,8 +5154,8 @@ export function gerarDiasJunho_B(): ReturnType<typeof bloco>[] {
       confissaoTexto: 'CB 1689 Cap. 29 §4: O batismo não deve ser repetido para nenhuma pessoa.',
       cfwRef: 'CFW Cap. 28 §7 — sobre a repetição do batismo',
       cfwComparacao: 'CB 1689 e CFW concordam plenamente: o batismo é administrado uma única vez. Não se rebatiza. A unicidade do batismo reflete a unicidade da obra de Cristo — ele morreu uma vez para sempre (Hb 9.26). Repetir o batismo seria implicar que a obra de Cristo precisasse ser repetida.',
-      exposicao: 'Paulo declara: "um só batismo." O batismo é marca permanente de pertença a Cristo — não precisa ser renovado quando a fé vacila ou quando mudamos de Igreja. Aqueles que foram batizados como crentes professantes em outra Igreja evangélica não precisam ser rebatizados. O batismo é de Cristo, não da denominação.',
-      reforco: 'Hebreus 9.26-28',
+      exposicao: 'Paulo declara: "um só batismo." O batismo é marca permanente de pertença a Cristo — não precisa ser renovado quando a fé vacila ou quando mudamos de Igreja. R.C. Sproul escreve em <em>Chosen by God</em> que <em>"o batismo é a declaração pública de fé em Cristo — é o crente dizendo diante da Igreja e do mundo que morreu com Cristo e ressuscitou com ele"</em>. Aqueles que foram batizados como crentes professantes em outra Igreja evangélica não precisam ser rebatizados. O batismo é de Cristo, não da denominação.',
+      reforco: 'R.C. Sproul, em <em>Chosen by God</em> (Carol Stream: Tyndale, 1986), escreve: <em>"O batismo é a declaração pública de fé em Cristo — é o crente dizendo diante da Igreja e do mundo que morreu com Cristo e ressuscitou com ele. Por isso a Bíblia o reserva para aqueles que creram, e não precisa ser repetido."</em>',
       aplicacoes: {
         digital: 'Igrejas que rebatizam por questões de filiação denominacional desviam o batismo de seu significado teológico para marcação territorial.',
         familia: 'Se cônjuge de outra tradição foi batizado como crente professo, respeite seu batismo como válido.',
@@ -5168,8 +5168,8 @@ export function gerarDiasJunho_B(): ReturnType<typeof bloco>[] {
       reflexao: 'Nos dias de dúvida espiritual, Lutero dizia: "Fui batizado." Não "tenho fé suficiente" — mas a marca objetiva e permanente do batismo o ancorava na graça.',
       aplicacao: 'Memorize Efésios 4.4-6 como âncora da sua identidade em Cristo.',
       notas: [
-        'LUTHER, Martin. <em>Catecismo Maior</em>. São Paulo: Concórdia, 2000. Sobre o Batismo.',
-        'CB 1689, Cap. 29 §4.',
+        'SPROUL, R.C. <em>Chosen by God</em>. Carol Stream: Tyndale, 1986. A relação entre eleição, fé e batismo — o batismo como declaração pública de fé pessoal em Cristo, administrado uma única vez.',
+        `SCHREINER, Thomas; WRIGHT, Shawn. <em>Believer\'s Baptism: Sign of the New Covenant in Christ</em>. Nashville: B&H, 2006. O argumento bíblico-teológico pela exclusividade do batismo de crentes e sua unicidade.`,
       ],
       notaInicio: 338,
     },
@@ -5207,7 +5207,7 @@ function gerarDiasJunho_C(): ReturnType<typeof bloco>[] {
       reflexao: 'Adiar o batismo indefinidamente é sinalizar que obediência a Cristo é opcional. Não é.',
       aplicacao: 'Se há alguém que você conhece que professa fé mas não foi batizado, ore e encoraje-o gentilmente.',
       notas: [
-        'WELLUM, Stephen. Baptism and the Relationship Between the Covenants. In: <em>Believer\'s Baptism</em>. Nashville: B&H, 2006.',
+        `WELLUM, Stephen. Baptism and the Relationship Between the Covenants. In: <em>Believer\'s Baptism</em>. Nashville: B&H, 2006.`,
         'CB 1689, Cap. 29 §5-8.',
       ],
       notaInicio: 340,
@@ -5236,7 +5236,7 @@ function gerarDiasJunho_C(): ReturnType<typeof bloco>[] {
       reflexao: 'A Ceia do Senhor é o evangelho encenado. Cada vez que partimos o pão, proclamamos: "Cristo morreu, ressuscitou, voltará."',
       aplicacao: 'Antes da próxima Ceia, leia 1 Coríntios 11.17-34 e prepare seu coração com exame e gratidão.',
       notas: [
-        "MATHISON, Keith. <em>Given for You: Reclaiming Calvin's Doctrine of the Lord's Supper</em>. Phillipsburg: P&R, 2002.",
+        "MATHISON, Keith. <em>Given for You: Reclaiming Calvin\'s Doctrine of the Lord\'s Supper</em>. Phillipsburg: P&R, 2002.",
         'CB 1689, Cap. 30 §1.',
       ],
       notaInicio: 342,
@@ -5381,7 +5381,7 @@ function gerarDiasJunho_C(): ReturnType<typeof bloco>[] {
       reflexao: 'Os dois elementos da Ceia comunicam juntos a mensagem completa do evangelho: corpo partido, sangue derramado.',
       aplicacao: 'Na próxima Ceia, ao receber o cálice, diga em silêncio: "Este sangue foi derramado por mim."',
       notas: [
-        "LETHAM, Robert. <em>The Lord's Supper: Eternal Word in Broken Bread</em>. Phillipsburg: P&R, 2001.",
+        "LETHAM, Robert. <em>The Lord\'s Supper: Eternal Word in Broken Bread</em>. Phillipsburg: P&R, 2001.",
         'CB 1689, Cap. 30 §6.',
       ],
       notaInicio: 352,
@@ -5435,8 +5435,8 @@ export function gerarDiasJunho_D(): ReturnType<typeof bloco>[] {
       confissaoTexto: 'CB 1689 Cap. 31 §1: Os corpos dos homens, após a morte, retornam ao pó; mas suas almas, que nem morrem nem dormem, tendo subsistência imortal, retornam imediatamente a Deus que as deu.',
       cfwRef: 'CFW Cap. 32 §1 — sobre o estado após a morte',
       cfwComparacao: 'CB 1689 e CFW são praticamente idênticas neste ponto. Ambas rejeitam o "sono da alma" (psychopannychia). Paulo deseja "partir e estar com Cristo" — não dormir inconscientemente. A consciência persiste após a morte.',
-      exposicao: 'A morte separa corpo e alma — temporariamente. O corpo retorna ao pó; a alma consciente vai imediatamente à presença de Deus (crentes) ou ao tormento (ímpios). Para o crente, partir é "muito melhor" porque é estar com Cristo.',
-      reforco: 'Lucas 23.43',
+      exposicao: 'A morte separa corpo e alma — temporariamente. O corpo retorna ao pó; a alma consciente vai imediatamente à presença de Deus (crentes) ou ao tormento (ímpios). Para o crente, partir é "muito melhor" porque é estar com Cristo. Louis Berkhof, em <em>Systematic Theology</em> (Grand Rapids: Eerdmans, 1941), afirma: <em>"A alma, sendo imaterial, não pode perecer com o corpo; ela retorna a Deus que a deu, consciente e pessoal, aguardando a ressurreição final."</em>',
+      reforco: 'Herman Bavinck, em <em>Reformed Dogmatics</em> (Grand Rapids: Baker, 2004, vol. 4), escreve: <em>"A doutrina do estado intermediário consciente não é especulação filosófica, mas consequência necessária da comunhão pessoal do crente com Cristo — comunhão que a morte não pode interromper, pois Cristo é Senhor dos vivos e dos mortos."</em>',
       aplicacoes: {
         digital: 'Em uma cultura obcecada com prolongar a vida biológica, o crente tem perspectiva diferente: a morte não é o pior fim.',
         familia: 'Fale sobre morte com seus filhos — especialmente sobre o que acontece depois. A Bíblia não silencia sobre isso.',
@@ -5449,8 +5449,8 @@ export function gerarDiasJunho_D(): ReturnType<typeof bloco>[] {
       reflexao: 'Paulo chama a morte de "ganho" — porque a morte não termina a existência consciente do crente, mas a leva à plena presença de Cristo.',
       aplicacao: 'Leia Filipenses 1.20-23 e medite: você tem a perspectiva de Paulo sobre a morte?',
       notas: [
-        'HOEKEMA, Anthony A. <em>The Bible and the Future</em>. Grand Rapids: Eerdmans, 1979.',
-        'CB 1689, Cap. 31 §1.',
+        'BERKHOF, Louis. <em>Systematic Theology</em>. Grand Rapids: Eerdmans, 1941. Tratamento dogmático do estado intermediário — imortalidade da alma, consciência após a morte e expectativa da ressurreição.',
+        'BAVINCK, Herman. <em>Reformed Dogmatics</em>, vol. 4. Grand Rapids: Baker, 2004. A comunhão com Cristo como fundamento da doutrina do estado intermediário consciente na tradição reformada.',
       ],
       notaInicio: 356,
     },
@@ -5464,8 +5464,8 @@ export function gerarDiasJunho_D(): ReturnType<typeof bloco>[] {
       confissaoTexto: 'CB 1689 Cap. 31 §2: As almas dos justos, sendo então aperfeiçoadas em santidade, são recebidas no mais alto céu. As almas dos ímpios são lançadas ao inferno, onde permanecem em tormentos até ao juízo do grande dia.',
       cfwRef: 'CFW Cap. 32 §1 — estado intermediário dos justos e dos ímpios',
       cfwComparacao: 'CB 1689 e CFW concordam: dois destinos imediatos após a morte — presença de Cristo (justos) ou tormento (ímpios). Ambas rejeitam o purgatório romano e o universalismo.',
-      exposicao: 'A parábola do rico e Lázaro ensina destinos conscientes e distintos após a morte. O pobre vai ao "seio de Abraão". O rico vai ao inferno em tormentos. Este estado intermediário é anterior à ressurreição e ao juízo final.',
-      reforco: '2 Coríntios 5.6-8',
+      exposicao: 'A parábola do rico e Lázaro ensina destinos conscientes e distintos após a morte. O pobre vai ao "seio de Abraão". O rico vai ao inferno em tormentos. Este estado intermediário é anterior à ressurreição e ao juízo final. Wayne Grudem, em <em>Teologia Sistemática</em> (São Paulo: Vida Nova, 1999), afirma: <em>"A parábola do rico e Lázaro confirma que o estado intermediário é de plena consciência — os dois personagens percebem, sentem e se comunicam, revelando que a morte não extingue a personalidade."</em>',
+      reforco: 'J.I. Packer, em <em>Knowing God</em> (Downers Grove: IVP, 1973), escreve: <em>"O estado intermediário não é sono da alma nem purgatório — é comunhão consciente com Cristo para os justos, e separação consciente de Deus para os ímpios. Ambos os destinos exigem urgência evangelística no presente."</em>',
       aplicacoes: {
         digital: 'O universalismo digital — "todos vão para o céu" — contraria tanto a parábola de Jesus quanto ambas as confissões reformadas.',
         familia: 'A certeza do estado intermediário motiva evangelismo: as pessoas morrem e vão para algum lugar.',
@@ -5478,8 +5478,8 @@ export function gerarDiasJunho_D(): ReturnType<typeof bloco>[] {
       reflexao: 'Não existe segunda oportunidade após a morte — o estado em que a pessoa morre é o estado em que permanecerá até o juízo.',
       aplicacao: 'Ore pelo nome de pelo menos uma pessoa que você conhece que não é salva.',
       notas: [
-        'GRUDEM, Wayne. <em>Teologia Sistemática</em>. São Paulo: Vida Nova, 1999. Cap. 41.',
-        'CB 1689, Cap. 31 §2.',
+        'GRUDEM, Wayne. <em>Teologia Sistemática</em>. São Paulo: Vida Nova, 1999. Cap. 41 — exame bíblico do estado intermediário, rejeitando o sono da alma e o purgatório a partir de Lucas 16 e 2 Coríntios 5.',
+        'PACKER, J.I. <em>Knowing God</em>. Downers Grove: IVP, 1973. O estado intermediário consciente como consequência da comunhão pessoal com Deus — implicações pastorais e evangelísticas.',
       ],
       notaInicio: 358,
     },
@@ -5493,8 +5493,8 @@ export function gerarDiasJunho_D(): ReturnType<typeof bloco>[] {
       confissaoTexto: 'CB 1689 Cap. 31 §3: No último dia, os corpos dos mortos serão ressuscitados — os mesmos corpos que morreram, unidos às suas almas para sempre.',
       cfwRef: 'CFW Cap. 32 §2-3 — sobre a ressurreição dos mortos',
       cfwComparacao: 'CB 1689 e CFW concordam: a ressurreição é corporal, real e universal. Todos ressuscitarão — justos e ímpios. Os corpos ressurretos serão os mesmos que morreram, porém transformados.',
-      exposicao: 'A fé cristã não é escape do corpo — é redenção do corpo. "Estes mesmos corpos" ressuscitarão — identidade corporal preservada. O corpo ressurreto de Cristo é o modelo do nosso: reconhecível mas glorificado. A esperança cristã não é imortalidade da alma apenas — é ressurreição do corpo.',
-      reforco: '1 Coríntios 15.52-53',
+      exposicao: 'A fé cristã não é escape do corpo — é redenção do corpo. "Estes mesmos corpos" ressuscitarão — identidade corporal preservada. O corpo ressurreto de Cristo é o modelo do nosso: reconhecível mas glorificado. A esperança cristã não é imortalidade da alma apenas — é ressurreição do corpo. Louis Berkhof, em <em>Systematic Theology</em> (Grand Rapids: Eerdmans, 1941), afirma: <em>"A ressurreição do mesmo corpo que morreu é exigência da continuidade pessoal: não é outro corpo que ressurge, mas o mesmo, transformado pela glória de Cristo ressurreto, garantia e primícias dos nossos."</em>',
+      reforco: 'Herman Bavinck, em <em>Reformed Dogmatics</em> (Grand Rapids: Baker, 2004, vol. 4), escreve: <em>"A esperança cristã não é o triunfo da alma sobre o corpo, mas a redenção do corpo junto com a alma. A ressurreição corporal é a consumação da obra redentora de Cristo que abrange toda a pessoa humana — não apenas sua dimensão espiritual."</em>',
       aplicacoes: {
         digital: 'Numa era que quer "fazer upload" da consciência — a fé cristã insiste na importância do corpo. Você não é uma mente — você é uma pessoa encarnada.',
         familia: 'A esperança da ressurreição consola nos lutos. Aquele corpo que amamos ressurgirá.',
@@ -5507,8 +5507,8 @@ export function gerarDiasJunho_D(): ReturnType<typeof bloco>[] {
       reflexao: 'A ressurreição não é consolação poética — é afirmação ontológica: o mesmo "eu" encarnado que morreu será o mesmo que ressurgirá, transformado pela glória de Cristo.',
       aplicacao: 'Leia 1 Coríntios 15.35-58 inteiro. O que a ressurreição corporal significa para como você vive hoje?',
       notas: [
-        'WRIGHT, N.T. <em>Surprised by Hope</em>. New York: HarperOne, 2008.',
-        'CB 1689, Cap. 31 §3.',
+        'BERKHOF, Louis. <em>Systematic Theology</em>. Grand Rapids: Eerdmans, 1941. A ressurreição corporal como redenção da pessoa inteira — continuidade de identidade entre o corpo que morre e o que ressurge glorificado.',
+        'BAVINCK, Herman. <em>Reformed Dogmatics</em>, vol. 4. Grand Rapids: Baker, 2004. A esperança cristã como redenção do corpo — contra o gnosticismo que reduz a salvação à imortalidade da alma.',
       ],
       notaInicio: 360,
     },
@@ -5522,8 +5522,8 @@ export function gerarDiasJunho_D(): ReturnType<typeof bloco>[] {
       confissaoTexto: 'CB 1689 Cap. 32 §1: Deus designou um dia em que ele julgará o mundo com justiça por Jesus Cristo, ao qual todo poder e julgamento foram dados pelo Pai.',
       cfwRef: 'CFW Cap. 33 §1 — sobre o juízo final',
       cfwComparacao: 'CB 1689 e CFW concordam plenamente: haverá um juízo final, executado por Cristo, universal e justo. Todos — vivos e mortos, crentes e incrédulos — prestarão contas.',
-      exposicao: 'O juízo final não é ameaça vaga — é certeza histórica. Deus "designou um dia" — há uma data no calendário eterno. O juiz é Cristo. Para os crentes, o juízo é confirmação de graça. Para os ímpios, é sentença de justiça. Ninguém escapa.',
-      reforco: 'Apocalipse 20.12',
+      exposicao: 'O juízo final não é ameaça vaga — é certeza histórica. Deus "designou um dia" — há uma data no calendário eterno. O juiz é Cristo. Para os crentes, o juízo é confirmação de graça. Para os ímpios, é sentença de justiça. Ninguém escapa. R.C. Sproul, em <em>The Holiness of God</em> (Carol Stream: Tyndale, 1985), afirma: <em>"O juízo final não é capricho divino — é o encontro inevitável entre a santidade absoluta de Deus e cada ação humana. Cristo, o juiz, é aquele que conhece perfeitamente tanto a lei quanto o coração humano."</em>',
+      reforco: 'Wayne Grudem, em <em>Teologia Sistemática</em> (São Paulo: Vida Nova, 1999), escreve: <em>"O juízo final é universal e pessoal: cada ser humano que já viveu comparecerá. Para os crentes, é vindicação pública da graça que os justificou; para os ímpios, é a sentença que a própria consciência deles confirmará como justa."</em>',
       aplicacoes: {
         digital: 'Em uma cultura de anonimato online onde as pessoas dizem e fazem sem consequências, o juízo final afirma: cada palavra proferida será pesada.',
         familia: 'Ensine os filhos que Deus vê tudo — não como ameaça, mas como motivação para integridade.',
@@ -5536,8 +5536,8 @@ export function gerarDiasJunho_D(): ReturnType<typeof bloco>[] {
       reflexao: 'O crente aparece diante do tribunal de Cristo não para ser condenado, mas para ser recompensado. A condenação já foi absorvida na cruz.',
       aplicacao: 'Imagine estar hoje diante do tribunal de Cristo. O que mudaria em suas prioridades e decisões?',
       notas: [
-        'SPROUL, R.C. <em>The Last Days According to Jesus</em>. Grand Rapids: Baker, 1998.',
-        'CB 1689, Cap. 32 §1.',
+        'SPROUL, R.C. <em>The Holiness of God</em>. Carol Stream: Tyndale, 1985. A santidade absoluta de Deus como fundamento da certeza e da necessidade do juízo final universal.',
+        'GRUDEM, Wayne. <em>Teologia Sistemática</em>. São Paulo: Vida Nova, 1999. O juízo final como vindicação pública da graça para os eleitos e confirmação da sentença justa para os ímpios.',
       ],
       notaInicio: 362,
     },
@@ -5551,8 +5551,8 @@ export function gerarDiasJunho_D(): ReturnType<typeof bloco>[] {
       confissaoTexto: 'CB 1689 Cap. 32 §2: O fim de Deus ao designar este dia é para a manifestação da glória de sua misericórdia na salvação dos eleitos e de sua justiça na condenação dos réprobos.',
       cfwRef: 'CFW Cap. 33 §2 — propósito do juízo',
       cfwComparacao: 'CB 1689 e CFW concordam: o juízo final serve à glória de Deus — tanto da sua misericórdia (salvar os eleitos) quanto da sua justiça (condenar os ímpios).',
-      exposicao: 'O juízo final não é capricho divino — é manifestação coordenada da misericórdia e da justiça de Deus. Os eleitos entram na herança preparada "desde a fundação do mundo". Os réprobos recebem o que seus pecados merecem. Ambos os destinos revelam a perfeição de Deus.',
-      reforco: 'Romanos 9.22-23',
+      exposicao: 'O juízo final não é capricho divino — é manifestação coordenada da misericórdia e da justiça de Deus. Os eleitos entram na herança preparada "desde a fundação do mundo". Os réprobos recebem o que seus pecados merecem. Ambos os destinos revelam a perfeição de Deus. Herman Bavinck, em <em>Reformed Dogmatics</em> (Grand Rapids: Baker, 2004, vol. 4), afirma: <em>"O juízo final é a consumação pública do que Deus decretou eternamente: a manifestação simultânea de sua misericórdia nos eleitos e de sua justiça nos réprobos — ambos para louvor de sua glória."</em>',
+      reforco: 'Sinclair Ferguson, em <em>The Christian Life: A Doctrinal Introduction</em> (Edinburgh: Banner of Truth, 1989), escreve: <em>"O dia do juízo será, para os santos, o maior dia de alegria — quando o que sempre foi verdade na esfera invisível (justificação em Cristo) será declarado publicamente diante de toda a criação. A glória reservada superará toda tribulação presente."</em>',
       aplicacoes: {
         digital: 'A pergunta moderna "como um Deus bom pode condenar?" pressupõe que a misericórdia anula a justiça. O juízo final mostra que Deus é bom precisamente porque é justo.',
         familia: 'Ensine os filhos que o céu não é direito automático — é herança para os que estão em Cristo.',
@@ -5565,8 +5565,8 @@ export function gerarDiasJunho_D(): ReturnType<typeof bloco>[] {
       reflexao: 'O dia do juízo será, para os santos, o dia da maior alegria — quando o que sempre foi verdade (justificados em Cristo) será publicamente declarado.',
       aplicacao: 'Leia Mateus 25.31-46. O que você sente ao imaginar ouvir "vinde, benditos de meu Pai"?',
       notas: [
-        'PIPER, John. <em>God Is the Gospel</em>. Wheaton: Crossway, 2005.',
-        'CB 1689, Cap. 32 §2.',
+        'BAVINCK, Herman. <em>Reformed Dogmatics</em>, vol. 4. Grand Rapids: Baker, 2004. O juízo final como manifestação coordenada da misericórdia divina nos eleitos e da justiça divina nos réprobos.',
+        'FERGUSON, Sinclair B. <em>The Christian Life: A Doctrinal Introduction</em>. Edinburgh: Banner of Truth, 1989. A glória reservada para os santos no juízo final como maior motivação para perseverança na tribulação presente.',
       ],
       notaInicio: 364,
     },
@@ -5580,8 +5580,8 @@ export function gerarDiasJunho_D(): ReturnType<typeof bloco>[] {
       confissaoTexto: 'CB 1689 Cap. 32 §3: Cristo quis que o dia do juízo fosse desconhecido pelos homens, para que eles sacudissem toda segurança carnal e estivessem sempre vigilantes.',
       cfwRef: 'CFW Cap. 33 §3 — sobre a incerteza do dia do juízo',
       cfwComparacao: 'CB 1689 e CFW concordam: o dia do juízo é propositalmente desconhecido. Nenhum homem, anjo ou profeta sabe a data. A incerteza é pedagógica — mantém os crentes em vigilância constante.',
-      exposicao: 'Cristo poderia ter revelado a data do seu retorno — optou por não revelar. Porque a vigilância não sobrevive ao prazo certo. A incerteza nos mantém sempre prontos. Todo dia pode ser o último — por isso, todo dia deve ser vivido com plenitude de devoção.',
-      reforco: '1 Tessalonicenses 5.2',
+      exposicao: 'Cristo poderia ter revelado a data do seu retorno — optou por não revelar. Porque a vigilância não sobrevive ao prazo certo. A incerteza nos mantém sempre prontos. Todo dia pode ser o último — por isso, todo dia deve ser vivido com plenitude de devoção. John Calvin, no <em>Comentário sobre Mateus</em> (Grand Rapids: Baker, 1999), afirma: <em>"Cristo propositalmente ocultou a data do seu retorno para que os seus discípulos, não podendo calcular quando ele viria, vivessem em vigilância constante — toda geração deve estar pronta, pois para cada geração o retorno pode ser iminente."</em>',
+      reforco: 'J.I. Packer, em <em>Knowing God</em> (Downers Grove: IVP, 1973), escreve: <em>"A ignorância sobre a data do retorno de Cristo não é lacuna a ser preenchida por especulação profética — é pedagogia divina. Deus guarda o segredo para que vivamos em alerta constante, não em cálculo ocioso. A vigília é a resposta correta à iminência."</em>',
       aplicacoes: {
         digital: 'Profetas online que anunciam datas para o retorno de Cristo contradizem o ensinamento explícito de Jesus. Bloqueie e ignore.',
         familia: 'Ensine os filhos que não sabemos quando Jesus voltará — por isso vivemos preparados todos os dias.',
@@ -5594,8 +5594,8 @@ export function gerarDiasJunho_D(): ReturnType<typeof bloco>[] {
       reflexao: 'O crente que vive como se Cristo pudesse voltar hoje é o mesmo que planeja para o futuro com sabedoria — a vigilância e a fidelidade cotidiana são a mesma coisa.',
       aplicacao: 'Se Jesus voltasse hoje, o que você mudaria na sua vida? Faça essa mudança agora.',
       notas: [
-        'CLOWNEY, Edmund P. <em>The Message of 1 Peter</em>. Downers Grove: IVP, 1988.',
-        'CB 1689, Cap. 32 §3.',
+        'CALVIN, John. <em>Commentary on Matthew</em>. Grand Rapids: Baker, 1999. A incerteza da data do retorno como pedagogia divina para a vigilância constante de cada geração cristã.',
+        'PACKER, J.I. <em>Knowing God</em>. Downers Grove: IVP, 1973. A iminência do retorno de Cristo como fundamento da vida cristã vigilante — não ansiedade, mas prontidão amorosa.',
       ],
       notaInicio: 366,
     },
@@ -5620,7 +5620,7 @@ function gerarDiasJulho_A(): DiaDevocional[] {
       cfwRef: 'CB 1689 1.1',
       cfwComparacao: 'CB 1689 1.1 é praticamente idêntica. Ambas afirmam que a revelação natural deixa os homens sem desculpa, mas é insuficiente para a salvação. A necessidade da Escritura escrita decorre do fim das revelações imediatas — não da fraqueza de Deus, mas de sua providência para com a Igreja.',
       exposicao: 'A natureza revela que Deus existe, é poderoso e sábio — mas não revela o Evangelho. Nenhum astrônomo descobriu a cruz contemplando estrelas. A salvação requer revelação especial: Deus falando em palavras, em Cristo, em Escritura. A teologia natural tem seu lugar; mas nunca leva à cruz.',
-      reforco: '2 Pedro 1.19: "Temos também a palavra profética mais firme, à qual fazeis bem em estar atentos, como a uma luz que brilha em lugar escuro."',
+      reforco: 'John Frame, em <em>The Doctrine of the Word of God</em> (Phillipsburg: P&R, 2010), escreve: <em>"A revelação geral é suficiente para condenar — ela deixa os homens sem desculpa. Mas é insuficiente para salvar — ela não revela Cristo. Por isso Deus, em sua graça, acrescentou a revelação especial: a Escritura que anuncia o Evangelho."</em>',
       aplicacoes: {
         digital: 'O crente que compartilha apenas belezas da criação nas redes sociais fica aquém do chamado: compartilhe a Palavra que salva, não apenas a natureza que acusa.',
         familia: 'Na família, apontar para o pôr do sol é bom; explicar que o sol não salva — mas Cristo sim — é necessário. Use a criação como trampolim para o Evangelho.',
@@ -5649,7 +5649,7 @@ function gerarDiasJulho_A(): DiaDevocional[] {
       cfwRef: 'CB 1689 1.1',
       cfwComparacao: 'CB 1689 1.1 acrescenta que Deus "em vários tempos e de várias maneiras" revelou sua vontade — apontando para Hebreus 1.1. Ambas as confissões entendem a Escritura escrita como providência divina para a preservação da verdade contra corrupção, não como limitação de Deus.',
       exposicao: 'Deus não precisava escrever. Ele escolheu escrever — para preservar, propagar e estabelecer sua Igreja. A forma escrita protege a revelação de três inimigos: a falha da memória humana, a corrupção carnal, e a maldade de Satanás. Providência escrita é proteção permanente.',
-      reforco: 'Deuteronômio 17.18-19: "quando assentar no trono do seu reino, escreverá para si um traslado desta lei... e o lerá todos os dias da sua vida."',
+      reforco: 'B.B. Warfield, em <em>The Inspiration and Authority of the Bible</em> (Philadelphia: Presbyterian & Reformed, 1948), escreve: <em>"Deus não confiou sua revelação à fragilidade da memória humana ou à inconstância da tradição oral. Ele a pôs por escrito — e nisso ato providencial reside a segurança da Igreja em todas as gerações."</em>',
       aplicacoes: {
         digital: 'Em vez de depender de resumos e podcasts sobre a Bíblia, volte ao texto original: Deus escolheu a forma escrita — honre essa escolha lendo a Escritura diretamente.',
         familia: 'O altar familiar que inclui leitura da Escritura segue a providência de Deus: ele quis que a verdade fosse transmitida pela Palavra escrita, não pela tradição oral.',
@@ -5678,7 +5678,7 @@ function gerarDiasJulho_A(): DiaDevocional[] {
       cfwRef: 'CB 1689 1.2',
       cfwComparacao: 'CB 1689 1.2 lista exatamente os mesmos 66 livros. Não há diferença entre as duas confissões no cânon. Esta unanimidade é significativa: a Reforma não criou um cânon novo — reconheceu o cânon que a Igreja sempre recebeu das mãos dos apóstolos e profetas.',
       exposicao: 'O cânon não foi inventado por concílios — foi reconhecido por eles. A Igreja não tem autoridade sobre a Escritura; tem responsabilidade de identificá-la. Os 66 livros são a Palavra de Deus porque Deus os inspirou — não porque a Igreja os aprovou.',
-      reforco: 'João 10.35: "a Escritura não pode ser anulada."',
+      reforco: 'J.I. Packer, em <em>Fundamentalism and the Word of God</em> (Grand Rapids: Eerdmans, 1958), escreve: <em>"A Igreja não cria o cânon — ela o recebe. A autoridade dos 66 livros não deriva do fato de a Igreja os ter aprovado, mas do fato de Deus os ter inspirado. A Igreja reconhece o que Deus já estabeleceu."</em>',
       aplicacoes: {
         digital: 'Desconfie de ensinamentos que citam textos fora dos 66 livros como autoridade espiritual normativa. O cânon confessional é a proteção contra a ampliação indevida da revelação.',
         familia: 'Na devoção familiar, percorra os livros da Bíblia com seus filhos: 39 do AT, 27 do NT. Mostre que a Bíblia tem fronteiras definidas — e que isso é proteção, não limitação.',
@@ -5707,7 +5707,7 @@ function gerarDiasJulho_A(): DiaDevocional[] {
       cfwRef: 'CB 1689 1.3',
       cfwComparacao: 'CB 1689 1.3 é idêntica. Ambas rejeitam os deuterocanônicos como não inspirados e sem autoridade normativa. O Concílio de Trento (1546) canonizou os apócrifos em resposta à Reforma — tornando explícita a divergência entre Roma e a tradição protestante.',
       exposicao: 'Os apócrifos têm valor histórico e literário, mas não autoridade normativa. Não citados pelos apóstolos como "Escritura", não reconhecidos pelos judeus como canônicos, e contendo doutrinas ausentes do AT e NT (como orações pelos mortos), eles ficam fora do cânon confessional.',
-      reforco: 'Romanos 3.2: "os oráculos de Deus" foram confiados aos judeus — que nunca incluíram os apócrifos em seu cânon.',
+      reforco: 'R.C. Sproul, em <em>Scripture Alone</em> (Phillipsburg: P&R, 2005), escreve: <em>"Os apócrifos foram rejeitados pela tradição reformada porque não possuem os critérios de canonicidade: não foram reconhecidos pelos judeus como sagrados, não foram citados pelos apóstolos como Escritura, e contêm ensinamentos sem paralelo no cânon hebraico."</em>',
       aplicacoes: {
         digital: 'Se encontrar citações de Tobias, Macabeus ou Sabedoria usadas como autoridade doutrinária, saiba que as confissões reformadas as classificam como escritos humanos — úteis historicamente, sem autoridade normativa.',
         familia: 'Explique à sua família a diferença entre livros apócrifos e canônicos: não é uma questão de mérito literário, mas de inspiração divina — critério que a Reforma aplicou com rigor.',
@@ -5736,7 +5736,7 @@ function gerarDiasJulho_A(): DiaDevocional[] {
       cfwRef: 'CB 1689 1.4',
       cfwComparacao: 'CB 1689 1.4 é idêntica. Esta é a afirmação central do Sola Scriptura: a Escritura tem autoridade divina intrínseca, não derivada da Igreja. Roma inverte isso — a Igreja define o cânon e interpreta a Escritura. As confissões reformadas rompem com essa lógica.',
       exposicao: 'A autoridade da Bíblia não é conferida pela Igreja — é reconhecida por ela. A distinção é crucial: se a Igreja confere autoridade, então a Igreja está acima da Bíblia. Se a Igreja reconhece autoridade que já existe, então a Bíblia está acima da Igreja. A Reforma escolheu a segunda opção.',
-      reforco: 'Isaías 40.8: "A erva se seca e a flor cai, mas a palavra do nosso Deus permanece para sempre."',
+      reforco: 'John Calvin, nas <em>Institutas da Religião Cristã</em> (I.7.1), escreve: <em>"Seria absurdo que a verdade de Deus dependesse da aprovação dos homens. As Escrituras possuem em si mesmas a mesma credibilidade e autoridade que lhes são devidas, como se as palavras do Deus vivo aí fossem ouvidas por nós."</em>',
       aplicacoes: {
         digital: 'Quando alguém perguntar por que você confia na Bíblia, a resposta confessional não é "porque a Igreja disse" — é "porque Deus a inspirou e o Espírito testifica isso ao meu coração".',
         familia: 'Na família, a autoridade da Bíblia não vem do fato de a família sempre tê-la lido. Vem de Deus. Isso significa que mesmo uma família sem tradição bíblica pode receber sua autoridade hoje.',
@@ -5765,7 +5765,7 @@ function gerarDiasJulho_A(): DiaDevocional[] {
       cfwRef: 'CB 1689 1.5',
       cfwComparacao: 'CB 1689 1.5 é idêntica. As duas confissões distinguem evidências externas (que movem) do testemunho interno do Espírito (que persuade plenamente). Evidências apologéticas têm seu papel — mas a certeza salvífica vem do Espírito, não da lógica.',
       exposicao: 'A CFW 1.5 distingue o que move (argumentos externos) do que persuade plenamente (Espírito). Um não-crente pode reconhecer intelectualmente a excelência da Bíblia sem tê-la como Palavra de Deus. A certeza salvífica é dom do Espírito — não conquista da razão.',
-      reforco: '1 João 5.6: "E o Espírito é o que testifica, porque o Espírito é a verdade."',
+      reforco: 'John Calvin, nas <em>Institutas da Religião Cristã</em> (I.7.4), escreve: <em>"O Espírito Santo é o vínculo pelo qual Cristo nos une efetivamente a si mesmo. A mesma Escritura que foi ditada pelo Espírito somente encontra sua certeza plena no coração quando o mesmo Espírito a sela com seu testemunho interno."</em>',
       aplicacoes: {
         digital: 'Use apologética para mover — apresente as evidências da excelência bíblica. Mas saiba que somente o Espírito persuade plenamente. Argumento sem Espírito pode impressionar sem converter.',
         familia: 'Na família, não basta que seus filhos reconheçam intelectualmente que a Bíblia é um livro extraordinário. Ore para que o Espírito faça a obra interna — sem ele, o conhecimento não gera fé.',
@@ -5794,7 +5794,7 @@ function gerarDiasJulho_A(): DiaDevocional[] {
       cfwRef: 'CB 1689 1.6',
       cfwComparacao: 'CB 1689 1.6 é idêntica. A suficiência da Escritura não significa que cada detalhe prático está explicitamente regulado — mas que tudo necessário para salvação, fé e vida está contido ou pode ser deduzido por boa consequência. Isso rejeita tanto o acréscimo romano (tradição) quanto o entusiasmo carismático (novas revelações).',
       exposicao: 'A suficiência da Escritura tem dois níveis: suficiência para a salvação (tudo necessário está lá) e suficiência para a vida (princípios que guiam toda circunstância). Nada precisa ser acrescentado. Novas revelações do Espírito ou tradições da Igreja não completam a Bíblia — a contradizem.',
-      reforco: 'Apocalipse 22.18: "Se alguém lhes acrescentar alguma coisa, Deus lhe acrescentará as pragas que estão escritas neste livro."',
+      reforco: 'John Frame, em <em>The Doctrine of the Word of God</em> (Phillipsburg: P&R, 2010), escreve: <em>"A suficiência da Escritura significa que ela contém tudo que Deus requer de nós para salvar-nos e para servi-lo. Nada precisa ser adicionado — nem novas revelações, nem tradições eclesiásticas, nem experiências subjetivas que pretendam complementar o texto sagrado."</em>',
       aplicacoes: {
         digital: 'Desconfie de ministérios que prometem "revelações do Espírito" além da Escritura como necessárias à vida cristã. A CFW afirma que novas revelações não devem ser acrescentadas — o conselho de Deus está completo.',
         familia: 'A Bíblia é suficiente para guiar a família. Isso não significa que cada decisão prática está lá explicitamente — mas que os princípios que guiam toda decisão estão. Estude a Escritura como manual de vida familiar.',
@@ -5823,7 +5823,7 @@ function gerarDiasJulho_A(): DiaDevocional[] {
       cfwRef: 'CB 1689 1.7',
       cfwComparacao: 'CB 1689 1.7 é idêntica. A perspicuidade (clareza) da Escritura não nega que há passagens difíceis — afirma que o necessário para a salvação está claro. Isso refuta a posição romana de que o povo não pode entender a Bíblia sem a mediação do magistério eclesiástico.',
       exposicao: 'A Bíblia não é igualmente clara em tudo — mas é suficientemente clara no que importa. O caminho da salvação é acessível ao inculto que ouve pregar e ao douto que estuda. O segredo de Narnia não exige diploma teológico — exige o Espírito e a Palavra.',
-      reforco: 'Deuteronômio 30.11-14: "Porque este mandamento que hoje te ordeno não é demasiado difícil para ti, nem está longe de ti... mas a palavra está mui perto de ti."',
+      reforco: 'B.B. Warfield, em <em>The Inspiration and Authority of the Bible</em> (Philadelphia: Presbyterian & Reformed, 1948), escreve: <em>"A perspicuidade da Escritura não significa que ela é igualmente clara em todos os pontos, mas que o caminho da salvação — o que Deus requer de nós e o que ele nos oferece em Cristo — está suficientemente claro para que qualquer leitor sincero o compreenda."</em>',
       aplicacoes: {
         digital: 'Aplicativos de Bíblia, planos de leitura e comentários online são meios comuns — a CFW os abraça. Use a tecnologia para acessar a Palavra clara. O problema não é a tecnologia; é substituir a Bíblia por ela.',
         familia: 'Na família, leia a Bíblia para todos: crianças, adolescentes, adultos. A clareza da Escritura no que importa significa que todos podem compreender o Evangelho — não apenas os teólogos.',
@@ -5862,7 +5862,7 @@ function gerarDiasJulho_B(): DevocionalDia[] {
       cfwRef: 'CB 1689 1.8',
       cfwComparacao: 'CB 1689 1.8 é idêntica. Ambas afirmam a autoridade dos textos originais (hebraico e grego) e o direito e dever de tradução para línguas vernáculas. Esta foi uma das conquistas centrais da Reforma — a Bíblia saiu do latim eclesiástico e chegou às mãos do povo.',
       exposicao: 'A inerrância é dos autógrafos (originais); a autoridade pertence ao texto hebraico e grego conservado. Traduções têm autoridade derivada — quanto mais fiéis aos originais, mais confiáveis. A Reforma colocou a Bíblia na língua do povo como ato de justiça e piedade.',
-      reforco: 'Neemias 8.8: "E leram no livro, na lei de Deus, claramente; e davam o sentido, de modo que entendiam o que se lia."',
+      reforco: 'B.B. Warfield, em <em>The Inspiration and Authority of the Bible</em> (Philadelphia: Presbyterian & Reformed, 1948), escreve: <em>"A inerrância pertence aos autógrafos — os originais que saíram das mãos dos escritores inspirados. As cópias e traduções têm autoridade derivada: na medida em que são fiéis aos originais, participam de sua autoridade divina."</em>',
       aplicacoes: {
         jovens: 'O jovem que lê a Bíblia em sua própria língua herda a conquista da Reforma: mártires morreram para que a Palavra chegasse ao povo — não a leve com indiferença.',
         homens: 'O homem que estuda as Escrituras na língua vernácula exerce o direito confessional de ler e pesquisar a Palavra de Deus no temor de Deus.',
@@ -5891,7 +5891,7 @@ function gerarDiasJulho_B(): DevocionalDia[] {
       cfwRef: 'CB 1689 1.9',
       cfwComparacao: 'CB 1689 1.9 é idêntica. A analogia da fé — interpretar a Escritura pela Escritura — é princípio hermenêutico fundamental de ambas as confissões. Nenhum versículo pode ter sentido contrário ao ensinamento claro do restante da Bíblia.',
       exposicao: 'O sentido de uma passagem é único — não múltiplo. A Escritura não tem sentidos ocultos que só o magistério eclesiástico pode revelar. O intérprete é a própria Escritura: passagens obscuras se esclarecem pela comparação com passagens claras. Este é o princípio da analogia da fé.',
-      reforco: '2 Pedro 1.20: "sabendo primeiramente isto: que nenhuma profecia da Escritura é de particular interpretação."',
+      reforco: 'John Calvin, nas <em>Institutas da Religião Cristã</em> (I.9.2), escreve: <em>"A Escritura interpreta a Escritura — é a regra de ouro da hermenêutica reformada. Passagens obscuras devem ser iluminadas por passagens claras. O Espírito que falou na Escritura não contradiz o que ali está escrito."</em>',
       aplicacoes: {
         jovens: 'O jovem que compara versículos ao estudar a Bíblia pratica o princípio confessional: a Escritura é seu próprio intérprete — não o influenciador cristão nem o pregador favorito.',
         homens: 'O homem que confronta doutrinas com a Bíblia inteira exerce a hermenêutica reformada: passagens obscuras devem ser lidas à luz das claras, não ao contrário.',
@@ -5920,7 +5920,7 @@ function gerarDiasJulho_B(): DevocionalDia[] {
       cfwRef: 'CB 1689 1.10',
       cfwComparacao: 'CB 1689 1.10 é idêntica. Esta é a afirmação mais ousada do Sola Scriptura: nem concílios, nem Pais da Igreja, nem teólogos renomados, nem experiências espirituais pessoais têm autoridade sobre o Espírito falando nas Escrituras. Toda voz humana — incluindo a de Agostinho, Calvino ou Lutero — é submetida à Palavra.',
       exposicao: 'O Espírito Santo não fala contra a Escritura — ele falou na Escritura. Por isso, qualquer "voz do Espírito" que contradiz a Palavra é falsa. A Reforma não trocou o Papa pela experiência subjetiva — trocou o Papa pela Escritura inspirada pelo mesmo Espírito.',
-      reforco: 'João 16.13: "Mas quando vier o Espírito da verdade, ele vos guiará em toda a verdade; porque não falará de si mesmo."',
+      reforco: 'John Frame, em <em>The Doctrine of the Word of God</em> (Phillipsburg: P&R, 2010), escreve: <em>"O Espírito Santo é o autor da Escritura — e por isso nunca contradirá o que ele mesmo escreveu. Qualquer suposta voz do Espírito que contraria a Palavra escrita deve ser rejeitada como falsa: o Espírito de Deus e a Palavra de Deus nunca se opõem."</em>',
       aplicacoes: {
         jovens: 'O jovem que testa experiências espirituais pela Bíblia aplica CFW 1.10: o Espírito que nos move internamente é o mesmo que falou externamente nas Escrituras — e não se contradiz.',
         homens: 'O homem que submete opiniões de pregadores famosos ao crivo da Escritura pratica o princípio confessional: nenhum escritor antigo ou moderno é juiz supremo — só o Espírito nas Escrituras.',
@@ -5949,7 +5949,7 @@ function gerarDiasJulho_B(): DevocionalDia[] {
       cfwRef: 'CB 1689 2.1',
       cfwComparacao: 'CB 1689 2.1 é praticamente idêntica à CFW 2.1 — ambas listam os atributos comunicáveis e incomunicáveis de Deus com a mesma estrutura. A diferença teológica central não está nos atributos, mas em como cada confissão aplica a doutrina de Deus ao batismo e à aliança nos capítulos posteriores.',
       exposicao: 'A lista de atributos divinos em CFW 2.1 não é catálogo acadêmico — é confissão adorante. Deus é infinito (sem limites), eterno (sem início ou fim), imutável (sem mudança), onipotente (sem limitação de poder). Cada atributo é motivo de adoração, não apenas de estudo.',
-      reforco: 'Jó 11.7-8: "Podes tu, esquadrinhando, descobrir a Deus? Podes descobrir a perfeição do Todo-Poderoso? É tão alta como o céu; que poderás fazer?"',
+      reforco: 'Stephen Charnock, em <em>The Existence and Attributes of God</em> (Londres, 1682), escreve: <em>"Os atributos de Deus não são acidentes que ele possui, como a brancura na neve — eles são o próprio Deus. Deus não tem onipotência; Deus é onipotente. Ele não tem amor; ele é amor. Todo atributo é Deus se revelando inteiramente."</em>',
       aplicacoes: {
         jovens: 'O jovem que medita nos atributos de Deus descobre que a adoração é a resposta natural ao conhecimento divino: conhecer Deus como infinito, eterno e imutável gera reverência, não indiferença.',
         homens: 'O homem que enfrenta incertezas ancora-se nos atributos divinos: Deus é imutável — o que ele prometeu, ele cumprirá; o que ele é hoje, ele sempre será.',
@@ -5978,7 +5978,7 @@ function gerarDiasJulho_B(): DevocionalDia[] {
       cfwRef: 'CB 1689 2.1',
       cfwComparacao: 'CB 1689 2.1 preserva a mesma doutrina da simplicidade divina: Deus é "sem corpo, partes ou paixões". Isso significa que os atributos não são partes de Deus — Deus é simples, indivisível. Quando dizemos que Deus é amor, Deus é justiça, afirmamos o mesmo ser visto de diferentes ângulos.',
       exposicao: 'A simplicidade divina significa que Deus não é composto de partes. Sua justiça não conflita com seu amor — são o mesmo ser. Quando Deus perdoa com amor, ele o faz com toda a sua justiça satisfeita em Cristo. Não há tensão em Deus — há perfeita unidade.',
-      reforco: '1 João 4.8: "Deus é amor" — não "Deus tem amor". O amor não é atributo separável de Deus; é o que Deus é.',
+      reforco: 'Herman Bavinck, em <em>Reformed Dogmatics</em> (Grand Rapids: Baker, 2004, vol. 2), escreve: <em>"A simplicidade divina é a pedra angular de toda a doutrina de Deus. Ela garante que os atributos não são partes que compõem Deus, mas modos pelos quais o único e simples ser divino se revela — cada atributo sendo o próprio Deus visto sob certo aspecto."</em>',
       aplicacoes: {
         jovens: 'O jovem que sente tensão entre o "Deus de amor" e o "Deus de julgamento" precisa da simplicidade divina: não há dois Deuses — há um único ser que é perfeitamente amoroso e perfeitamente justo ao mesmo tempo.',
         homens: 'O homem que entende a simplicidade divina não opõe misericórdia e justiça: na cruz, Deus foi plenamente misericordioso e plenamente justo no mesmo ato — a mesma essência manifestada em dois ângulos.',
@@ -5991,7 +5991,7 @@ function gerarDiasJulho_B(): DevocionalDia[] {
       reflexao: 'A doutrina da simplicidade divina — Deus sem partes — é um dos ensinamentos mais importantes e menos pregados da teologia reformada. Ela resolve a falsa tensão entre amor e justiça: em Deus, são o mesmo ser.',
       aplicacao: 'Reflita sobre uma situação em que você sentiu tensão entre o amor e a justiça de Deus. À luz da simplicidade divina, como você entende agora que os dois não se contradizem, mas são a mesma perfeição divina vista de ângulos diferentes?',
       notas: [
-        'DOLEZAL, James E. <em>God Without Parts: Divine Simplicity and the Metaphysics of God\'s Absoluteness</em>. Eugene: Pickwick, 2011. A defesa contemporânea mais rigorosa da simplicidade divina na tradição reformada.',
+        `DOLEZAL, James E. <em>God Without Parts: Divine Simplicity and the Metaphysics of God\'s Absoluteness</em>. Eugene: Pickwick, 2011. A defesa contemporânea mais rigorosa da simplicidade divina na tradição reformada.`,
         'MULLER, Richard A. <em>Post-Reformation Reformed Dogmatics</em>, vol. 3. Grand Rapids: Baker, 2003. A doutrina da simplicidade divina na escolástica reformada e sua relação com os atributos incomunicáveis.',
       ],
       notaInicio: 392,
@@ -6007,7 +6007,7 @@ function gerarDiasJulho_B(): DevocionalDia[] {
       cfwRef: 'CB 1689 2.3',
       cfwComparacao: 'CB 1689 2.3 é idêntica. Ambas afirmam a processão eterna do Espírito do Pai e do Filho (Filioque) — posição ocidental que distingue a tradição reformada da ortodoxa oriental. A distinção das pessoas (relações de origem) preserva a unidade da essência.',
       exposicao: 'A Trindade não é contradição matemática — é mistério ontológico. Um ser, três pessoas. As pessoas se distinguem pelas relações de origem: o Pai não é gerado, o Filho é gerado do Pai, o Espírito procede do Pai e do Filho. Remover qualquer pessoa ou relação destrói o Deus cristão.',
-      reforco: '2 Coríntios 13.13: "A graça do Senhor Jesus Cristo, e o amor de Deus, e a comunhão do Espírito Santo sejam com todos vós."',
+      reforco: 'Robert Letham, em <em>The Holy Trinity: In Scripture, History, Theology, and Worship</em> (Phillipsburg: P&R, 2004), escreve: <em>"A Trindade não é um problema matemático a ser resolvido — é um mistério a ser adorado. Um ser, três pessoas: distintas em subsistências, inseparáveis em essência, iguais em glória. Esta é a estrutura de toda a vida cristã e de toda a salvação."</em>',
       aplicacoes: {
         jovens: 'O jovem que confessa a Trindade confessa o Deus cristão — não um deus filosófico genérico. A Trindade é o que distingue o cristianismo de todas as outras religiões monoteístas.',
         homens: 'O homem que compreende as relações trinitárias entende que a distinção não destrói a unidade: Pai, Filho e Espírito são distintos e são um — modelo de unidade na diferença.',
@@ -6036,7 +6036,7 @@ function gerarDiasJulho_B(): DevocionalDia[] {
       cfwRef: 'CB 1689 2.3',
       cfwComparacao: 'CB 1689 2.3 preserva as mesmas relações de origem. O modalismo (Sabélio) confunde as pessoas — Pai, Filho e Espírito seriam modos do mesmo ser. A CFW e CB 1689 rejeitam isso: as pessoas são reais e distintas, não modos de manifestação.',
       exposicao: 'Jesus orou ao Pai — não a si mesmo. O Espírito foi enviado pelo Filho — não é o Filho. As distinções são reais, não retóricas. Confundir as pessoas é modalismo; dividir a essência é triteísmo. A ortodoxia trinitária caminha no fio entre os dois.',
-      reforco: 'João 17.1: "Pai, chegou a hora; glorifica o teu Filho, para que o teu Filho te glorifique a ti."',
+      reforco: 'B.B. Warfield, em <em>Biblical and Theological Studies</em> (Philadelphia: Presbyterian & Reformed, 1952), escreve: <em>"As relações intratrinitárias não são ficções pedagógicas — são distinções reais dentro do único ser divino. O Pai gera, o Filho é gerado, o Espírito procede: estas relações eternas de origem são o fundamento de todas as missões econômicas."</em>',
       aplicacoes: {
         jovens: 'O jovem que ouve pregações que identificam Jesus com o Pai ("Jesus é o Pai") está ouvindo modalismo — heresia condenada no século III. A Trindade exige a distinção real das pessoas.',
         homens: 'O homem que reza "Jesus, tu és meu Pai" precisa distinguir: Jesus é o Filho, não o Pai. Orar ao Filho é legítimo; confundir as pessoas é desorientar a adoração trinitária.',
@@ -6065,7 +6065,7 @@ function gerarDiasJulho_B(): DevocionalDia[] {
       cfwRef: 'CB 1689 2.3',
       cfwComparacao: 'CB 1689 2.3 é idêntica. A Trindade não é apenas doutrina teórica — é a estrutura da salvação: o Pai elege, o Filho redime, o Espírito aplica. Cada pessoa tem papel distinto na única obra de salvação. Efésios 1 é o mapa trinitário da redenção.',
       exposicao: 'A salvação é trinitária de ponta a ponta: eleição pelo Pai (Ef 1.4), redenção pelo Filho (Ef 1.7), selamento pelo Espírito (Ef 1.13). As três pessoas cooperam na única obra de salvação — cada uma com papel específico, nenhuma substituível pela outra.',
-      reforco: '1 Pedro 1.2: "eleitos segundo a presciência de Deus Pai, em santificação do Espírito, para a obediência e aspersão do sangue de Jesus Cristo."',
+      reforco: 'Robert Letham, em <em>The Holy Trinity: In Scripture, History, Theology, and Worship</em> (Phillipsburg: P&R, 2004), escreve: <em>"A salvação é trinitária do princípio ao fim: o Pai elege, o Filho redime, o Espírito aplica. As três pessoas cooperam numa única obra — e por isso a salvação é tão segura quanto o próprio Deus trino que a realizou."</em>',
       aplicacoes: {
         jovens: 'O jovem que entende a Trindade na salvação percebe que sua fé não é acidente — o Pai o elegeu, o Filho o redimiu, o Espírito o regenerou. Cada pessoa trinitária agiu em sua salvação.',
         homens: 'O homem que medita em Efésios 1 descobre a profundidade trinitária da salvação: não foi apenas "Deus" que salvou de modo genérico — foi o Pai que elegeu, o Filho que morreu, o Espírito que aplicou.',
@@ -6291,7 +6291,7 @@ export function gerarDiasJulho_C(): ReturnType<typeof bloco>[] {
       reflexao: 'Ser criado à imagem de Deus significa que cada ser humano carrega dignidade inalienável — antes do nascimento, no ventre, na infância, na velhice, na deficiência. A imago Dei não depende de função ou capacidade; depende apenas de ser humano. Isso transforma a ética cristã em todas as suas dimensões.',
       aplicacao: 'Identifique uma pessoa que você tem tratado como menos valiosa — por condição social, física ou moral. Lembre-se de que ela porta a imagem de Deus tanto quanto você. Ore por ela e pense em uma ação concreta que expresse a dignidade dela esta semana.',
       notas: [
-        'HOEKEMA, Anthony A. <em>Created in God\'s Image</em>. Grand Rapids: Eerdmans, 1986. Estudo abrangente da imago Dei — suas dimensões estrutural, funcional e relacional, e sua restauração em Cristo.',
+        `HOEKEMA, Anthony A. <em>Created in God\'s Image</em>. Grand Rapids: Eerdmans, 1986. Estudo abrangente da imago Dei — suas dimensões estrutural, funcional e relacional, e sua restauração em Cristo.`,
         'MIDDLETON, J. Richard. <em>The Liberating Image: The Imago Dei in Genesis 1</em>. Grand Rapids: Brazos, 2005. A imagem de Deus como mandato real de domínio responsável sobre a criação — implicações éticas e teológicas.',
       ],
       notaInicio: 412,
@@ -6345,7 +6345,7 @@ export function gerarDiasJulho_D(): ReturnType<typeof bloco>[] {
       cfwRef: 'CB 1689 5.2/5.3',
       cfwComparacao: 'CB 1689 5.2/5.3 é idêntica. Ambas preservam a integridade das causas secundárias (a chuva cai, o médico cura, o agricultor planta) sem torná-las independentes de Deus. Providência não é fatalismo — é governo sábio que usa meios reais para fins eternos.',
       exposicao: 'Providência usa meios sem ser limitada por eles. Deus curou Ezequias — por um figo aplicado na ferida (Is 38.21). Deus alimentou os 5.000 — pelos pães e peixes. Os meios são reais; a providência é soberana sobre eles. Usar meios não é falta de fé — é cooperação com a providência.',
-      reforco: '1 Coríntios 3.6: "Eu plantei, Apolo regou, mas Deus deu o crescimento."',
+      reforco: 'Herman Bavinck, em <em>Reformed Dogmatics</em> (Grand Rapids: Baker, 2004, vol. 2), escreve: <em>"A providência de Deus opera ordinariamente por meio de causas secundárias — não porque Deus seja dependente delas, mas porque ele se digna a honrar a ordem que ele mesmo criou. Os meios são reais; a providência que os usa é soberana."</em>',
       aplicacoes: {
         digital: 'Reflita hoje sobre um meio que Deus tem usado em sua vida — um livro, uma pessoa, uma circunstância — e reconheça que por trás do meio está a providência soberana de Deus que o ordenou.',
         familia: 'À mesa, pergunte: "Quais meios Deus usou para nos trazer até aqui?" Liste juntos providências concretas — empregos, encontros, decisões — e ore agradecendo pela providência por trás de cada meio.',
@@ -6374,7 +6374,7 @@ export function gerarDiasJulho_D(): ReturnType<typeof bloco>[] {
       cfwRef: 'CB 1689 5.4',
       cfwComparacao: 'CB 1689 5.4 é idêntica. José foi vendido por inveja dos irmãos — pecado real. Mas Deus ordenou isso para salvar muitas vidas. A providência não santifica o pecado nem o aprova — mas governa suas consequências para fins santos. Deus não é cúmplice; é Senhor soberano.',
       exposicao: 'A providência sobre o pecado é a mais misteriosa de todas. Deus não aprova o pecado — o detesta. Mas não o ignora nem perde o controle diante dele. Ele o limita, redireciona e governa para seus fins santos — sem que isso torne a criatura menos culpada ou Deus menos santo.',
-      reforco: 'Atos 2.23: "este Jesus, entregue pelo determinado conselho e presciência de Deus, vós o matastes crucificando-o por mãos de ímpios."',
+      reforco: 'D.A. Carson, em <em>How Long, O Lord?</em> (Grand Rapids: Baker, 1990), escreve: <em>"A providência de Deus sobre o pecado não o torna autor do mal. Deus pode usar o pecado humano para seus propósitos santos — como na cruz — sem aprovar ou provocar o pecado. A responsabilidade humana e a soberania divina coexistem sem cancelar uma à outra."</em>',
       aplicacoes: {
         digital: 'Leia hoje Gênesis 50.15-21. Observe como José interpreta a maldade dos irmãos à luz da providência divina — sem negar o pecado deles nem a soberania de Deus. Escreva uma reflexão pessoal.',
         familia: 'Compartilhe com a família uma situação em que algo doloroso — causado por falha humana — resultou em bem que não seria alcançado de outra forma. Mostre como a providência age até nas sombras.',
@@ -6388,7 +6388,7 @@ export function gerarDiasJulho_D(): ReturnType<typeof bloco>[] {
       aplicacao: 'Identifique uma situação em que você foi ferido por pecado alheio. Ore por três minutos usando três afirmações: (1) "Aquilo foi pecado real"; (2) "A culpa pertence a quem pecou"; (3) "Deus é soberano até sobre isso e pode redimi-lo." Deixe a tensão existir sem resolver artificialmente.',
       notas: [
         'CARSON, D.A. <em>How Long, O Lord?</em> Grand Rapids: Baker, 1990. Como conciliar a soberania de Deus com a realidade do mal e do sofrimento sem negar nenhuma das duas realidades.',
-        'WRIGHT, Christopher J.H. <em>The God I Don\'t Understand</em>. Grand Rapids: Zondervan, 2008. Reflexão sobre o mistério do mal dentro da soberania divina, com atenção à narrativa bíblica.',
+        `WRIGHT, Christopher J.H. <em>The God I Don\'t Understand</em>. Grand Rapids: Zondervan, 2008. Reflexão sobre o mistério do mal dentro da soberania divina, com atenção à narrativa bíblica.`,
       ],
       notaInicio: 418,
     },
@@ -6403,7 +6403,7 @@ export function gerarDiasJulho_D(): ReturnType<typeof bloco>[] {
       cfwRef: 'CB 1689 5.7',
       cfwComparacao: 'CB 1689 5.7 é idêntica. Ambas afirmam uma providência geral (sobre toda criação) e uma providência especial (sobre a Igreja). Romanos 8.28 é a prova: "todas as coisas" — não apenas as boas — cooperam para o bem dos amados por Deus.',
       exposicao: 'A Igreja não está sujeita ao acaso histórico — está sob cuidado especial de Deus. Perseguições, heresias, apostasias, divisões — nada surpreende nem derrota a providência de Deus pela Igreja. O que parece derrota muitas vezes é avanço travestido de sofrimento.',
-      reforco: 'Mateus 16.18: "edificarei a minha igreja, e as portas do inferno não prevalecerão contra ela."',
+      reforco: 'Edmund Clowney, em <em>The Church</em> (Downers Grove: IVP, 1995), escreve: <em>"A Igreja é objeto especial do cuidado providencial de Cristo. Perseguições, heresias e apostasias não a destroem — são o contexto em que Cristo demonstra sua fidelidade em preservar o que ele comprou com seu sangue."</em>',
       aplicacoes: {
         digital: 'Leia hoje um relato histórico de perseguição à Igreja — Igreja nas catacumbas, Reforma, China moderna. Observe como a providência de Deus sustentou a Igreja em cada caso. Ore pela Igreja perseguida hoje.',
         familia: 'Pergunte à família: "Vocês acham que a Igreja pode ser destruída?" Discuta Mateus 16.18. Explique que a providência especial de Deus pela Igreja não impede sofrimento — mas garante que o sofrimento não terá a última palavra.',
@@ -6432,7 +6432,7 @@ export function gerarDiasJulho_D(): ReturnType<typeof bloco>[] {
       cfwRef: 'CB 1689 6.1/6.2',
       cfwComparacao: 'CB 1689 6.1/6.2 é idêntica. Ambas afirmam a queda histórica, a imputação da culpa de Adão, e a transmissão da natureza corrompida por geração ordinária. O pecado original não é metáfora psicológica — é realidade jurídica e ontológica.',
       exposicao: 'Adão era a "raiz" — cabeça federal de toda a humanidade. Sua queda não foi incidente isolado: foi catástrofe cósmica que contaminnou toda a sua descendência. Não herdamos apenas o exemplo do pecado — herdamos a culpa imputada e a natureza corrompida.',
-      reforco: '1 Coríntios 15.22: "porque assim como em Adão todos morrem, também em Cristo todos serão vivificados."',
+      reforco: `John Murray, em <em>The Imputation of Adam\'s Sin</em> (Grand Rapids: Eerdmans, 1959), escreve: <em>"O princípio federal não é uma convenção artificial — é a estrutura que Deus escolheu para a história da redenção. Assim como o pecado veio por um, a justiça vem por Um. O paralelismo Adão-Cristo é a arquitetura da soteriologia bíblica."</em>`,
       aplicacoes: {
         digital: 'Leia Romanos 5.12-21 completo hoje. Observe o paralelismo entre Adão e Cristo — o que cada um transmitiu à sua descendência. Escreva: o que Adão me legou? O que Cristo me oferece?',
         familia: 'Explique à família o conceito de representação federal: assim como um embaixador assina um tratado em nome de toda a nação, Adão agiu em nome de toda a humanidade. Discuta: isso é justo? Leia Romanos 5.18-19.',
@@ -6445,7 +6445,7 @@ export function gerarDiasJulho_D(): ReturnType<typeof bloco>[] {
       reflexao: 'A doutrina da queda é impopular porque é humilhante — ela diz que não somos basicamente bons com defeitos pontuais, mas basicamente corrompidos com remanescentes de imagem divina. Mas é exatamente essa profundidade do diagnóstico que torna o Evangelho tão glorioso: a solução é proporcional ao problema.',
       aplicacao: 'Medite em 1 Coríntios 15.22 por cinco minutos: "em Adão todos morrem — em Cristo todos serão vivificados." Escreva o que você herdou de Adão (morte, culpa, corrupção) e o que você recebe em Cristo (vida, justificação, renovação). Ore com gratidão pela troca.',
       notas: [
-        'MURRAY, John. <em>The Imputation of Adam\'s Sin</em>. Grand Rapids: Eerdmans, 1959. Análise exegética e teológica de Romanos 5.12-21 e a doutrina da imputação federal.',
+        `MURRAY, John. <em>The Imputation of Adam\'s Sin</em>. Grand Rapids: Eerdmans, 1959. Análise exegética e teológica de Romanos 5.12-21 e a doutrina da imputação federal.`,
         'BERKHOF, Louis. <em>Systematic Theology</em>. Grand Rapids: Eerdmans, 1941. Tratamento clássico da queda, do pecado original e da transmissão da culpa e corrupção por geração ordinária.',
       ],
       notaInicio: 422,
@@ -6461,7 +6461,7 @@ export function gerarDiasJulho_D(): ReturnType<typeof bloco>[] {
       cfwRef: 'CB 1689 6.4',
       cfwComparacao: 'CB 1689 6.4 é idêntica. A depravação total não significa que o homem é tão mau quanto possível — significa que o pecado contaminou cada faculdade: mente, vontade, emoções, desejos. Nenhuma parte da pessoa permanece intacta pelo pecado.',
       exposicao: 'Depravação total não é pessimismo antropológico exagerado — é diagnóstico preciso. O homem tem inteligência, beleza, generosidade — mas todas contaminadas pela orientação errada. Como um computador com vírus: funciona, mas com o sistema comprometido em todas as funções.',
-      reforco: 'Gênesis 6.5: "E viu o Senhor que a maldade dos homens se havia multiplicado na terra e que era continuamente mau todo o pensamento e propósito do coração deles."',
+      reforco: 'John Calvin, nas <em>Institutas da Religião Cristã</em> (II.1.8), escreve: <em>"Tudo o que está no homem — desde o entendimento até a vontade, desde a alma até a carne — está poluído e saturado de concupiscência. Ou antes: o homem não é apenas poluído — ele é polução. A depravação não está em uma parte; está no todo."</em>',
       aplicacoes: {
         digital: 'Antes de ler notícias hoje, leia Jeremias 17.9. Observe como os eventos do mundo confirmam o diagnóstico bíblico da natureza humana. Não para cinismo, mas para realismo que fundamenta a esperança no Evangelho.',
         familia: 'Converse com a família sobre por que "as pessoas são basicamente boas" é uma ideia que o Evangelho não confirma — e por que isso importa para entender a necessidade de redenção, não apenas educação moral.',
@@ -6490,7 +6490,7 @@ export function gerarDiasJulho_D(): ReturnType<typeof bloco>[] {
       cfwRef: 'CB 1689 6.6',
       cfwComparacao: 'CB 1689 6.6 é idêntica. O salário do pecado é morte em três dimensões: espiritual (separação de Deus agora), temporal (sofrimento e mortalidade), eterna (condenação). Cristo sofreu as três para salvar os eleitos das três.',
       exposicao: 'O pecado não é apenas falta de moralidade — é transgressão da lei de um Deus santo. Por isso suas consequências são tão sérias: culpa diante de Deus, ira merecida, morte em todas as suas formas. O Evangelho só faz sentido quando a seriedade do pecado é levada a sério.',
-      reforco: 'Ezequiel 18.20: "A alma que pecar, essa morrerá."',
+      reforco: 'John Stott, em <em>The Cross of Christ</em> (Downers Grove: IVP, 1986), escreve: <em>"Sem uma visão séria do pecado como transgressão da lei de um Deus santo, a expiação perde seu significado. A cruz faz sentido somente quando compreendemos que o pecado não é uma fraqueza que precisa de simpatia, mas uma rebelião que exige satisfação."</em>',
       aplicacoes: {
         digital: 'Leia Romanos 6.23 três vezes, meditando na assimetria: o pecado paga salário — é o que merecemos; a vida eterna é dom — é o que Cristo comprou. Ore com gratidão pela assimetria da graça.',
         familia: 'Discuta com a família: "Por que o pecado é tão sério para Deus?" Explique que pecado não é apenas ferir alguém — é transgredir a lei do Criador santo. A seriedade do pecado revela a seriedade da graça.',
@@ -6565,7 +6565,7 @@ export function gerarDiasAgosto_A(): ReturnType<typeof bloco>[] {
       cfwRef: 'CB 1689 7.1/7.2',
       cfwComparacao: 'CB 1689 7.1/7.2 é idêntica à CFW. Ambas afirmam que a aliança não é necessidade de Deus, mas condescendência voluntária — Deus descendo ao nível da criatura para estabelecer comunhão. A Aliança da Graça responde ao fracasso da Aliança das Obras: onde Adão falhou, Cristo cumpre.',
       exposicao: 'Aliança não é contrato comercial — é vínculo de comunhão pessoal iniciado por Deus. A distância entre o Criador e a criatura é ontologicamente intransponível pelo lado humano; por isso Deus desce. Gênesis 3.15 é a proto-evangelha: a primeira promessa da Aliança da Graça, pronunciada no próprio momento da maldição. Agosto começa aqui — no coração do plano redentor.',
-      reforco: 'Hebreus 8.6: "Mas agora ele obteve ministério tanto mais excelente, quanto é mediador de uma aliança melhor, que está confirmada em melhores promessas."',
+      reforco: 'O. Palmer Robertson, em <em>The Christ of the Covenants</em> (Phillipsburg: P&R, 1980), escreve: <em>"A aliança não é contrato entre iguais — é laço de compromisso soberano iniciado por Deus. Por isso a aliança é graça: não porque os homens a mereceram, mas porque Deus a estabeleceu e a sustenta pela força de sua fidelidade."</em>',
       aplicacoes: {
         digital: 'Antes de abrir qualquer app hoje, leia Gênesis 3.15 em voz alta. A primeira mensagem de Deus após a queda não foi condenação final — foi promessa. Deixe essa ordem moldar como você pensa sobre as notícias do dia.',
         familia: 'Explique à família: "A Aliança da Graça começou no Jardim do Éden, logo após a queda. Deus prometeu um Salvador antes de qualquer pessoa pedir por um." Discuta: por que isso importa para entender o caráter de Deus?',
@@ -6594,7 +6594,7 @@ export function gerarDiasAgosto_A(): ReturnType<typeof bloco>[] {
       cfwRef: 'CB 1689 7.2',
       cfwComparacao: 'CB 1689 7.2 usa linguagem quase idêntica. A Aliança das Obras é o pano de fundo necessário para entender o que Cristo fez: onde Adão representou a humanidade e falhou, Cristo como segundo Adão representa os eleitos e obedece perfeitamente. Sem obras entendemos mal a graça.',
       exposicao: 'A Aliança das Obras estabelece que Deus criou o ser humano numa relação de responsabilidade moral real. Adão não foi criado neutro — foi criado em aliança, com condição (obediência), promessa (vida) e ameaça (morte). O fracasso de Adão não foi acidente: foi quebra de aliança com consequências federais para toda a humanidade. Cristo vem como o segundo Adão que obedece onde o primeiro falhou.',
-      reforco: '1 Coríntios 15.22: "Porque, assim como em Adão todos morrem, assim também em Cristo todos serão vivificados."',
+      reforco: `John Murray, em <em>The Imputation of Adam\'s Sin</em> (Grand Rapids: Eerdmans, 1959), escreve: <em>"A Aliança das Obras estabelece a responsabilidade real de Adão como cabeça federal da humanidade. Sua queda não foi incidente isolado — foi fracasso representativo que envolveu toda a sua descendência. Por isso Cristo, o segundo Adão, precisa obedecer onde o primeiro falhou."</em>`,
       aplicacoes: {
         digital: 'Pesquise hoje uma notícia sobre falha humana — corrupção, violência, engano. Em vez de se surpreender, leia Romanos 5.12 e ore: "Senhor, entendo o diagnóstico. Obrigado pelo remédio em Cristo."',
         familia: 'Explique o conceito de representação federal: "Quando um presidente assina um tratado, todos os cidadãos são representados. Adão assinou nossa queda. Cristo assinou nossa redenção." Discuta como isso muda a compreensão da salvação.',
@@ -6607,7 +6607,7 @@ export function gerarDiasAgosto_A(): ReturnType<typeof bloco>[] {
       reflexao: 'A Aliança das Obras não é doutrina obscura — é o pano de fundo sem o qual Cristo não faz sentido pleno. Se não há representação federal na queda, por que haveria representação federal na redenção? Paulo em Romanos 5 insiste nas duas: em Adão condenados; em Cristo justificados.',
       aplicacao: 'Leia Romanos 5.12-21 inteiro, destacando os paralelos entre Adão e Cristo. Liste os contrastes: um transgressor / um obediente; condenação / justificação; morte / vida. Ore agradecendo especificamente que você está "em Cristo" — o novo representante federal.',
       notas: [
-        'MURRAY, John. <em>The Imputation of Adam\'s Sin</em>. Grand Rapids: Eerdmans, 1959. O tratamento mais rigoroso da imputação federal do pecado de Adão e suas implicações para a doutrina da redenção.',
+        `MURRAY, John. <em>The Imputation of Adam\'s Sin</em>. Grand Rapids: Eerdmans, 1959. O tratamento mais rigoroso da imputação federal do pecado de Adão e suas implicações para a doutrina da redenção.`,
         'FESKO, J.V. <em>Last Things First: Unlocking Genesis 1–3 with the Christ of Eschatology</em>. Fearn: Mentor, 2007. A Aliança das Obras em Gênesis como tipologia escatológica do que Cristo consumará.',
       ],
       notaInicio: 432,
@@ -6623,7 +6623,7 @@ export function gerarDiasAgosto_A(): ReturnType<typeof bloco>[] {
       cfwRef: 'CB 1689 7.3',
       cfwComparacao: 'CB 1689 7.3 ensina a mesma continuidade substancial com diversidade administrativa. A diferença entre as confissões aparece aqui: a CB 1689 identifica explicitamente que os eleitos do AT foram salvos pela mesma graça através de Cristo prometido — e os sacramentos do NT (batismo e ceia) substituem as ordenanças do AT sem mudar a substância da aliança.',
       exposicao: 'A Aliança da Graça é uma em substância através de toda a história da redenção, mas administrada progressivamente. A circuncisão aponta para Cristo; o Cordeiro Pascal aponta para Cristo; os sacrifícios apontam para Cristo. Quando Cristo veio, as sombras cederam à substância. A história bíblica é uma aliança, progressivamente revelada, definitivamente cumprida.',
-      reforco: 'Gálatas 3.8: "E a Escritura, prevendo que Deus havia de justificar os gentios pela fé, anunciou primeiro o evangelho a Abraão: Em ti serão benditas todas as nações."',
+      reforco: 'Geerhardus Vos, em <em>Biblical Theology</em> (Grand Rapids: Eerdmans, 1948), escreve: <em>"A Aliança da Graça é uma em substância através de toda a história redentora, mas se desdobra progressivamente. O Evangelho prometido a Abraão é o mesmo Evangelho cumprido em Cristo — a revelação cresceu, mas o conteúdo redentor permaneceu idêntico."</em>',
       aplicacoes: {
         digital: 'Leia hoje um capítulo do Antigo Testamento e identifique uma sombra ou tipo que aponta para Cristo. Compartilhe a descoberta com alguém — é uma forma de ver a unidade da Bíblia que transforma a leitura bíblica.',
         familia: 'Mostre à família uma linha do tempo bíblica da aliança: Adão → Noé → Abraão → Moisés → Davi → Cristo → Nova Aliança. Cada ponto é a mesma promessa administrada de forma mais plena. A Bíblia é uma história, não uma coleção de histórias.',
@@ -6652,7 +6652,7 @@ export function gerarDiasAgosto_A(): ReturnType<typeof bloco>[] {
       cfwRef: 'CB 1689 8.2',
       cfwComparacao: 'CB 1689 8.2 é idêntica. Ambas preservam os quatro advérbios de Calcedônia (sem mistura, sem mudança, sem divisão, sem separação) sem citá-los explicitamente. A mediação de Cristo exige as duas naturezas: só como homem pode representar a humanidade; só como Deus pode satisfazer a justiça divina.',
       exposicao: 'Mediador é quem fica entre duas partes em conflito e reconcilia. Cristo é o único mediador porque é o único que pode ficar dos dois lados: plenamente humano (representando a humanidade caída), plenamente divino (satisfazendo a santa justiça de Deus). Uma natureza sem a outra torna a mediação impossível. Calcedônia (451 d.C.) apenas articulou o que a Escritura ensina.',
-      reforco: 'João 14.6: "Eu sou o caminho, e a verdade, e a vida; ninguém vem ao Pai senão por mim."',
+      reforco: 'Louis Berkhof, em <em>Systematic Theology</em> (Grand Rapids: Eerdmans, 1941), escreve: <em>"Cristo é o único mediador porque é o único que pode representar simultaneamente as duas partes: como plenamente humano, representa a humanidade diante de Deus; como plenamente divino, representa Deus diante da humanidade. Nenhum outro poderia ocupar esta posição única."</em>',
       aplicacoes: {
         digital: 'Pesquise hoje um texto sobre Cristo como mediador e compare com ideias contemporâneas de "caminhos alternativos para Deus". A exclusividade de Cristo não é arrogância religiosa — é ontologia: só ele tem as duas naturezas necessárias para mediar.',
         familia: 'Explique a necessidade de um mediador com um exemplo: "Se dois países estão em guerra, precisam de um embaixador que fale ambas as línguas e seja confiável para os dois lados. Jesus é o único que pode falar a linguagem de Deus e a linguagem humana com autoridade perfeita."',
@@ -6681,7 +6681,7 @@ export function gerarDiasAgosto_A(): ReturnType<typeof bloco>[] {
       cfwRef: 'CB 1689 8.1',
       cfwComparacao: 'CB 1689 8.1 é idêntica. O triplo ofício (profeta, sacerdote, rei) é a estrutura pela qual Cristo executa sua mediação. Como profeta, revela; como sacerdote, intercede e expía; como rei, governa e protege. Nenhuma outra figura bíblica acumula os três — Cristo os integra perfeitamente.',
       exposicao: 'O Antigo Testamento conhecia profetas (que falavam de Deus ao povo), sacerdotes (que intercediam pelo povo diante de Deus) e reis (que governavam o povo em nome de Deus). Nenhum combinava os três. Cristo os integra: revela perfeitamente (profeta), expía e intercede perfeitamente (sacerdote) e governa soberanamente (rei). Isso é o que os reformados chamam de <em>munus triplex</em>.',
-      reforco: 'Hebreus 7.25: "Por isso, pode também salvar perfeitamente os que por meio dele se aproximam de Deus, vivendo sempre para interceder por eles."',
+      reforco: 'John Calvin, nas <em>Institutas da Religião Cristã</em> (II.15.1), escreve: <em>"Cristo foi ungido como Profeta, Sacerdote e Rei — para que, reunindo estes três ofícios numa única pessoa, ele cumprisse tudo o que era necessário para nossa salvação. O que os profetas anunciaram, o sacerdote expiou, e o rei governa — Cristo fez tudo em si mesmo."</em>',
       aplicacoes: {
         digital: 'Abra sua Bíblia hoje em Deuteronômio 18.15-19 (profeta), Salmo 110.4 (sacerdote) e Salmo 2.6-8 (rei). Veja como o AT antecipava os três ofícios que seriam integrados em Cristo. Compartilhe uma dessas passagens com alguém.',
         familia: 'Explique o triplo ofício com papéis concretos: "Jesus nos ensina (como o melhor professor), nos defende diante de Deus (como o melhor advogado) e nos protege e guia (como o melhor rei). Nenhum ser humano faz os três perfeitamente — Jesus faz todos os três."',
@@ -6710,7 +6710,7 @@ export function gerarDiasAgosto_A(): ReturnType<typeof bloco>[] {
       cfwRef: 'CB 1689 8.5',
       cfwComparacao: 'CB 1689 8.5 é idêntica. A obediência ativa (Cristo vivendo perfeitamente a lei) é distinta da obediência passiva (Cristo morrendo sob a pena da lei) — mas ambas são necessárias para a justificação completa. A morte paga nossa culpa; a vida de Cristo nos confere sua justiça positiva.',
       exposicao: 'Cristo não apenas morreu pelos eleitos — ele viveu por eles. Sua obediência ativa (33 anos de perfeita conformidade à lei de Deus) é creditada ao crente na justificação. Não basta ter a culpa removida — é preciso ter justiça positiva imputada. Cristo proveu as duas: sua morte remove a culpa; sua vida imputa justiça. Essa é a dupla cura do Evangelho.',
-      reforco: '2 Coríntios 5.21: "Aquele que não conheceu pecado, ele o fez pecado por nós; para que nele nos tornássemos justiça de Deus."',
+      reforco: 'John Piper, em <em>Counted Righteous in Christ</em> (Wheaton: Crossway, 2002), escreve: <em>"A obediência ativa de Cristo não é apêndice desnecessário — é metade da boa nova. Não basta ter a culpa removida; é preciso ter uma justiça positiva imputada. Cristo viveu a vida que eu deveria ter vivido, e morreu a morte que eu merecia morrer."</em>',
       aplicacoes: {
         digital: 'Pesquise hoje a diferença entre obediência ativa e passiva de Cristo. Encontre um artigo ou sermão sobre 2 Coríntios 5.21. A troca dupla — meu pecado a ele, sua justiça a mim — é o coração do Evangelho.',
         familia: 'Explique a dupla troca: "Jesus não apenas tomou nossas punições (morte). Ele também nos deu sua vida perfeita (obediência). É como se ele pagasse nossas dívidas E transferisse todo seu crédito para nossa conta."',
@@ -6739,7 +6739,7 @@ export function gerarDiasAgosto_A(): ReturnType<typeof bloco>[] {
       cfwRef: 'CB 1689 8.5',
       cfwComparacao: 'CB 1689 8.5 usa a mesma linguagem de satisfação e substituição. Ambas as confissões rejeitam implicitamente qualquer teoria da expiação que a faça meramente exemplo moral (Abelardo) ou apenas influência governamental (Grotius). A expiação é substitutiva e propiciatória — Cristo satisfez a justiça divina no lugar dos eleitos.',
       exposicao: 'Isaías 53 é a predição mais detalhada da expiação substitutiva no AT: "ferido por nossas transgressões", "o castigo que nos traz a paz estava sobre ele". O NT interpreta a cruz através dessa lente: substituição, propiciação, satisfação. Cristo não morreu como exemplo de amor (apenas) — morreu como substituto sofrendo a ira que os eleitos mereciam.',
-      reforco: '1 Pedro 2.24: "Ele mesmo levou em seu corpo os nossos pecados sobre o madeiro, a fim de que, mortos para os pecados, vivamos para a justiça; por suas feridas fostes sarados."',
+      reforco: 'John Stott, em <em>The Cross of Christ</em> (Downers Grove: IVP, 1986), escreve: <em>"A substituição é o coração da expiação. Cristo não apenas sofreu por nós — sofreu em nosso lugar. Nossos pecados foram para ele; sua justiça é para nós. Esta grande troca é a essência do Evangelho que Paulo, Pedro e Isaías proclamam."</em>',
       aplicacoes: {
         digital: 'Leia Isaías 53 inteiro em voz alta hoje. Cada verso é uma faceta da expiação substitutiva: "nossos", "nossas", "por nós" — a substituição é explícita. Compartilhe o capítulo com alguém que nunca leu.',
         familia: 'Discuta a diferença entre Cristo como exemplo e Cristo como substituto. "Se Cristo fosse apenas exemplo, ele apenas mostraria como morrer bem. Como substituto, ele morreu no lugar que era meu." Por que a segunda definição é Evangelho e a primeira é apenas moralismo?',
@@ -6768,7 +6768,7 @@ export function gerarDiasAgosto_A(): ReturnType<typeof bloco>[] {
       cfwRef: 'CB 1689 8.4',
       cfwComparacao: 'CB 1689 8.4 é idêntica. A ressurreição corporal de Cristo valida sua obra expiatória e inaugurou a nova criação. A ascensão posiciona Cristo como intercessor ativo e rei entronizado. Sem ressurreição, a morte de Cristo seria apenas martírio heroico — com ela, é vitória ontológica sobre o pecado, a morte e o diabo.',
       exposicao: 'Paulo em Romanos 4.25 vincula morte e ressurreição às duas obras do Evangelho: morte por nossas transgressões, ressurreição por nossa justificação. A ressurreição não é apêndice — é parte integral do Evangelho. Cristo ressurreto intercede agora (Hebreus 7.25), reina agora (Efésios 1.20-22) e voltará para consumar o que a cruz iniciou.',
-      reforco: '1 Coríntios 15.17: "E, se Cristo não ressuscitou, é vã a vossa fé, e ainda estais nos vossos pecados."',
+      reforco: 'Louis Berkhof, em <em>Systematic Theology</em> (Grand Rapids: Eerdmans, 1941), escreve: <em>"A ressurreição de Cristo não é apenas confirmação do que ele foi — é parte constitutiva do que ele fez. Ela declara que o sacrifício foi aceito, que a morte foi vencida e que a justificação dos eleitos foi consumada. Sem a ressurreição, não há Evangelho."</em>',
       aplicacoes: {
         digital: 'Pesquise hoje evidências históricas da ressurreição de Cristo — Gary Habermas ou N.T. Wright são bons pontos de partida. A ressurreição é uma afirmação histórica, não apenas espiritual — e é a coluna da fé cristã.',
         familia: 'Discuta: "Por que a ressurreição de Cristo importa tanto quanto sua morte?" Leia 1 Coríntios 15.12-19 juntos. Se Cristo não ressuscitou, o que fica de pé? Liste o que Paulo diz que se perde. Então celebre o que está em pé.',
@@ -6806,7 +6806,7 @@ export function gerarDiasAgosto_B(): ReturnType<typeof bloco>[] {
       cfwRef: 'CB 1689 9.1/9.2',
       cfwComparacao: 'CB 1689 9.1/9.2 é idêntica à CFW. Ambas distinguem quatro estados do livre-arbítrio: inocência (pode pecar ou não pecar), queda (não pode não pecar), graça (pode pecar ou não pecar, mas inclinado ao bem), glória (não pode pecar). A liberdade humana é real em cada estado, mas determinada pelo estado moral da natureza.',
       exposicao: 'O livre-arbítrio confessional não é liberdade de indiferença (escolha neutra entre opostos iguais) — é liberdade de espontaneidade (agir conforme a natureza mais profunda). O homem caído escolhe livremente o pecado porque sua natureza é pecaminosa; não é coagido externamente. A conversão não é coerção divina sobre uma vontade relutante — é renovação da natureza que liberta a vontade para escolher o bem.',
-      reforco: 'Romanos 8.7: "Por isso, a inclinação da carne é inimizade contra Deus, pois não se sujeita à lei de Deus, nem mesmo pode sujeitar-se."',
+      reforco: 'Jonathan Edwards, em <em>A Liberdade da Vontade</em> (1754), escreve: <em>"A liberdade da vontade não consiste em escolha indiferente entre opostos iguais, mas em agir conforme a inclinação mais forte. O homem caído é livre — livre para seguir sua natureza. E sua natureza é inimizade contra Deus. Por isso ele não pode vir a Cristo sem que sua natureza seja primeiro transformada."</em>',
       aplicacoes: {
         digital: 'Reflita hoje: quando você escolhe navegar compulsivamente nas redes sociais, está sendo "livre"? A liberdade verdadeira não é fazer o que sentimos no momento — é agir conforme nossa melhor natureza. Leia João 8.31-36.',
         familia: 'Discuta: "Uma pessoa que é viciada em algo ainda tem livre-arbítrio?" A resposta confessional: tem liberdade de espontaneidade (age conforme sua natureza viciada) mas perdeu liberdade de contrariedade (não consegue agir contrariamente). A graça liberta de dentro.',
@@ -6835,7 +6835,7 @@ export function gerarDiasAgosto_B(): ReturnType<typeof bloco>[] {
       cfwRef: 'CB 1689 9.3',
       cfwComparacao: 'CB 1689 9.3 é idêntica. A incapacidade moral do homem caído não é apenas fraqueza (como o arminianismo moderado sustenta) — é morte espiritual total. Um morto não coopera com sua própria ressurreição. A conversão requer que Deus aja primeiro, unilateralmente, na regeneração.',
       exposicao: 'Paulo em 1 Coríntios 2.14 não diz que o homem natural "prefere não entender" as coisas espirituais — diz que "não pode conhecê-las". É incapacidade, não apenas relutância. Isso é o que os reformadores chamaram de "incapacidade moral total" — não que o homem seja tão mau quanto possível, mas que nenhuma faculdade permanece não corrompida o suficiente para alcançar Deus sem graça.',
-      reforco: 'Efésios 2.1: "E vós ele vivificou, estando vós mortos em vossas transgressões e pecados."',
+      reforco: 'Louis Berkhof, em <em>Systematic Theology</em> (Grand Rapids: Eerdmans, 1941), escreve: <em>"A morte espiritual não é enfraquecimento — é ausência de vida. O homem natural não é um doente que precisa de ajuda; é um morto que precisa de ressurreição. A regeneração não é cooperação com a graça — é criação ex nihilo pelo Espírito."</em>',
       aplicacoes: {
         digital: 'Observe hoje como conteúdos espirituais são recebidos por pessoas sem fé — como "loucura", "fanatismo", "ingenuidade". Isso não é apenas preconceito cultural — é o diagnóstico bíblico de 1 Coríntios 2.14. A reação confirma a doutrina.',
         familia: 'Discuta: "Se o homem não pode se converter por si mesmo, como alguém se converte?" A resposta: Deus age primeiro pela regeneração — e o resultado é que a pessoa escolhe livremente Cristo. Não é coerção; é ressurreição espiritual.',
@@ -6864,7 +6864,7 @@ export function gerarDiasAgosto_B(): ReturnType<typeof bloco>[] {
       cfwRef: 'CB 1689 10.1',
       cfwComparacao: 'CB 1689 10.1 é idêntica. O chamado eficaz distingue-se do chamado geral (que vai a todos através da pregação): o chamado eficaz é interno, pelo Espírito, e resulta infalível e livremente na conversão. Não é coerção — é ressurreição que liberta a vontade para responder ao chamado externo.',
       exposicao: 'Romanos 8.30 apresenta uma cadeia sem elos quebrados: predestinados → chamados → justificados → glorificados. O chamado aqui é o chamado eficaz, não o convite geral da pregação. O que distingue os que creem dos que não creem não é superior sabedoria ou espiritualidade — é o chamado eficaz de Deus pelo Espírito. Isso humilha o orgulho e fundamenta a gratidão.',
-      reforco: '1 Coríntios 1.24: "Mas para os que são chamados, tanto judeus como gregos, pregamos Cristo, poder de Deus e sabedoria de Deus."',
+      reforco: 'John Murray, em <em>Redemption Accomplished and Applied</em> (Grand Rapids: Eerdmans, 1955), escreve: <em>"O chamado eficaz não é apenas uma oferta — é uma operação. É Deus agindo soberanamente para trazer o eleito da morte à vida. Por isso ele é eficaz: não porque o homem coopera, mas porque Deus cria o querer e o fazer em quem ele chama."</em>',
       aplicacoes: {
         digital: 'Leia hoje 1 Coríntios 1.18-25. Observe que a mesma mensagem é "loucura" para uns e "poder de Deus" para outros. A diferença não é inteligência — é chamado eficaz. Por que isso deveria nos tornar mais humildes e mais evangelísticos ao mesmo tempo?',
         familia: 'Discuta: "Por que algumas pessoas ouvem o Evangelho muitas vezes e nunca creem, enquanto outras creem na primeira vez que ouvem?" A resposta confessional não é "uns são mais inteligentes" — é que o Espírito age eficazmente conforme o propósito de Deus.',
@@ -6893,7 +6893,7 @@ export function gerarDiasAgosto_B(): ReturnType<typeof bloco>[] {
       cfwRef: 'CB 1689 10.2',
       cfwComparacao: 'CB 1689 10.2 é idêntica. A regeneração precede logicamente a fé — não temporalmente, mas causalmente. A fé é o primeiro ato do homem regenerado; a regeneração é o ato soberano de Deus que torna a fé possível. Isso inverte a ordem do arminianismo (fé precede e condiciona a regeneração).',
       exposicao: 'Jesus não diz a Nicodemos "se você se esforçar, pode nascer de novo" — diz "você deve nascer de novo" (necessidade) e "o vento sopra onde quer" (soberania). O nascimento novo não é autorrealização espiritual — é ato soberano do Espírito que precede e capacita a fé. A confissão é precisa: o homem é "inteiramente passivo" na regeneração — não passivo na conversão (que é ato humano real), mas passivo no ato divino que torna a conversão possível.',
-      reforco: '1 João 5.1: "Todo aquele que crê que Jesus é o Cristo é nascido de Deus."',
+      reforco: 'B.B. Warfield, em <em>Biblical and Theological Studies</em> (Philadelphia: Presbyterian & Reformed, 1952), escreve: <em>"A regeneração é a obra monérgica de Deus — o único ato soterológico em que o homem é puro paciente. Na fé e no arrependimento, o homem age; na regeneração, apenas Deus age. O novo nascimento precede e possibilita toda resposta humana ao Evangelho."</em>',
       aplicacoes: {
         digital: 'Observe hoje como a linguagem do "novo começo" é usada na cultura — nova dieta, novo relacionamento, nova atitude. Compare com João 3.3: o "novo começo" bíblico é ontológico, não motivacional. É nova natureza, não nova resolução.',
         familia: 'Discuta: "Qual veio primeiro — o nascimento ou a respiração?" O nascimento vem primeiro; a respiração é o primeiro sinal de vida. Assim: regeneração (nascimento espiritual) → fé (primeiro ato de vida espiritual). Sem nascimento, não há respiração.',
@@ -6922,7 +6922,7 @@ export function gerarDiasAgosto_B(): ReturnType<typeof bloco>[] {
       cfwRef: 'CB 1689 14.1',
       cfwComparacao: 'CB 1689 14.1 é idêntica. A fé salvífica é simultaneamente dom divino (Efésios 2.8 — "não vem de vós, é dom de Deus") e ato humano real (Hebreus 11 — lista de pessoas que creram e agiram). Não é contradição: Deus doa a capacidade; o homem exerce a capacidade doada. O crente crê genuinamente — e a fé que crê foi dada por Deus.',
       exposicao: 'Efésios 2.8-9 tem sido debatido: o que é o "dom de Deus" — a fé ou a salvação? O grego aponta para todo o processo (graça + fé + salvação) como dom divino. A fé não é a contribuição humana ao processo de salvação — é parte do processo que Deus provê soberanamente. Isso não anula a fé como ato genuinamente humano; anula o orgulho de quem pensa que sua fé foi contribuição meritória.',
-      reforco: 'Filipenses 1.29: "Porque vos foi concedido, por causa de Cristo, não somente crer nele, mas também sofrer por ele."',
+      reforco: 'John Calvin, nas <em>Institutas da Religião Cristã</em> (III.1.4), escreve: <em>"A fé é o dom principal do Espírito Santo — não algo que o homem produz em si mesmo, mas algo que o Espírito cria no coração pela Palavra. Por isso, gloriarmo-nos em nossa fé é gloriarmo-nos no Espírito de Deus que nos deu fé como presente imerecido."</em>',
       aplicacoes: {
         digital: 'Pesquise hoje o debate sobre "fé como dom" em Efésios 2.8. Leia pelo menos dois pontos de vista diferentes. A questão não é trivial — determina se a fé é meritória (arminianismo) ou doada (calvinismo reformado).',
         familia: 'Discuta: "Se a fé é dom de Deus, por que ainda somos responsáveis por crer?" Analogia: um pai dá ao filho dinheiro para comprar algo. O filho genuinamente compra — com dinheiro doado. A compra foi real; o recurso foi dado. Assim a fé: real, mas doada.',
@@ -6935,7 +6935,7 @@ export function gerarDiasAgosto_B(): ReturnType<typeof bloco>[] {
       reflexao: 'A fé salvífica é simultaneamente o dom mais precioso que Deus dá (Efésios 2.8) e o ato mais pessoal que o ser humano realiza (Hebreus 11). Não há contradição: Deus doa a capacidade e o desejo; o ser humano exerce genuinamente o que foi doado. A salvação é inteiramente de Deus — e inteiramente experienciada pelo crente em sua fé real.',
       aplicacao: 'Leia Hebreus 11 inteiro, observando que cada "pela fé" descreve ato humano concreto e real. Então leia Efésios 2.8-9. Escreva: "Minha fé é real porque ___. Minha fé é dom porque ___." Ore agradecendo ambas as dimensões.',
       notas: [
-        'LLOYD-JONES, D. Martyn. <em>God\'s Ultimate Purpose: An Exposition of Ephesians 1.1–23</em>. Grand Rapids: Baker, 1978. Análise exegética detalhada de Efésios 2.8-9 e a questão da fé como dom divino no contexto da salvação pela graça.',
+        `LLOYD-JONES, D. Martyn. <em>God\'s Ultimate Purpose: An Exposition of Ephesians 1.1–23</em>. Grand Rapids: Baker, 1978. Análise exegética detalhada de Efésios 2.8-9 e a questão da fé como dom divino no contexto da salvação pela graça.`,
         'WARFIELD, Benjamin B. <em>Biblical and Theological Studies</em>. Phillipsburg: P&R, 1968. O tratamento rigoroso da natureza da fé salvífica como ato humano genuíno fundamentado em ato divino soberano.',
       ],
       notaInicio: 454,
@@ -6951,7 +6951,7 @@ export function gerarDiasAgosto_B(): ReturnType<typeof bloco>[] {
       cfwRef: 'CB 1689 14.2',
       cfwComparacao: 'CB 1689 14.2 é idêntica. A tradição reformada estrutura a fé em três elementos (Calvino, seguindo a escolástica medieval): notícia (conhecimento), assensus (assentimento intelectual) e fiducia (confiança pessoal). A fé salvífica requer os três — especialmente o terceiro. Muitos têm conhecimento e assentimento sem confiança pessoal em Cristo.',
       exposicao: 'A fé bíblica não é apenas crença intelectual (o diabo crê e treme — Tiago 2.19) nem apenas sentimento emocional. É confiança pessoal depositada em uma pessoa — Cristo — baseada em conhecimento e assentimento. João 6.35 usa dois verbos: "vir" (movimento em direção a Cristo) e "crer" (confiança em Cristo). A fé é movimento relacional em direção a uma pessoa, não apenas aceitação de proposições sobre ela.',
-      reforco: '2 Timóteo 1.12: "... porque sei em quem tenho crido e estou certo de que ele é poderoso para guardar o meu depósito até aquele dia."',
+      reforco: 'Thomas Watson, em <em>A Body of Divinity</em> (Londres: Banner of Truth, 1965), escreve: <em>"A fé salvífica não é apenas assentimento intelectual às verdades do Evangelho — é confiança pessoal depositada em Cristo como Salvador. É o coração que se apoia em Cristo, não apenas a mente que aprova doutrinas sobre Cristo."</em>',
       aplicacoes: {
         digital: 'Reflita: você conhece fatos sobre Cristo (notícia), concorda que são verdadeiros (assentimento) — mas descansa efetivamente nele (fiducia)? Muitas pessoas têm os dois primeiros sem o terceiro. O terceiro é onde a salvação reside.',
         familia: 'Explore a diferença entre os três atos com um exemplo: "Você conhece que a ponte é forte (notícia). Você acredita que suportará seu peso (assentimento). Mas a fé salvífica é atravessar a ponte — colocar seu peso nela (fiducia). Você cruzou a ponte ou apenas a estudou?"',
@@ -6980,7 +6980,7 @@ export function gerarDiasAgosto_B(): ReturnType<typeof bloco>[] {
       cfwRef: 'CB 1689 15.1/15.2',
       cfwComparacao: 'CB 1689 15.1/15.2 é idêntica. O arrependimento verdadeiro tem dois movimentos: afastamento do pecado (tristeza genuína) e movimento em direção a Deus (propósito de obediência). A confissão é clara: o arrependimento não merece perdão — o perdão é baseado unicamente na obra de Cristo. O arrependimento é a resposta do crente ao perdão, não sua causa.',
       exposicao: 'Atos 11.18 é preciso: "Deus concedeu o arrependimento." O arrependimento é dado por Deus, não produzido pelo esforço humano — embora seja exercido genuinamente pelo ser humano. A tristeza pelo pecado que leva ao arrependimento verdadeiro nasce de ver o pecado como Deus o vê: ofensa contra um Deus bom e amoroso. A tristeza mundana (2 Co 7.10) é tristeza pelas consequências; o arrependimento verdadeiro é tristeza pela natureza do pecado.',
-      reforco: '2 Coríntios 7.10: "Pois a tristeza segundo Deus produz arrependimento para a salvação, do qual não há que se arrepender; mas a tristeza do mundo produz morte."',
+      reforco: `Joel Beeke, em <em>Living for God\'s Glory</em> (Orlando: Reformation Trust, 2008), escreve: <em>"O arrependimento genuíno envolve tristeza pelo pecado como ofensa a Deus — não apenas tristeza pelas consequências do pecado. Esta distinção é fundamental: o arrependimento mundano olha para si mesmo; o arrependimento segundo Deus olha para Deus ofendido e para Cristo que satisfez sua ira."</em>`,
       aplicacoes: {
         digital: 'Observe hoje como as desculpas na cultura digital funcionam: "Lamento que você tenha se sentido assim" (tristeza mundana — pelas consequências). Compare com arrependimento genuíno: "Errei; foi errado; fiz mal a Deus e a você." Qual você pratica?',
         familia: 'Ensine na família a diferença entre desculpa e arrependimento. Desculpa: "me desculpe se ofendi." Arrependimento: "errei, foi pecado, quero mudar." Pratique a linguagem do arrependimento genuíno nas relações familiares.',
@@ -7008,8 +7008,8 @@ export function gerarDiasAgosto_B(): ReturnType<typeof bloco>[] {
       confissaoTexto: 'Como cada homem está sujeito a pecar e a cometer ofensas particulares, cada um deve arrepender-se particularmente de seus pecados particulares; juntamente com confissão geral de pecados. Não devem ser considerados pecados veniais e mortais — todos os pecados merecem morte; mas Deus, em seu pacto de graça, dá arrependimento para a vida.',
       cfwRef: 'CB 1689 15.3/15.5',
       cfwComparacao: 'CB 1689 15.3/15.5 é idêntica. A tradição reformada rejeita a distinção romana entre pecados veniais (que merecem purgatório) e mortais (que destroem a graça). Todos os pecados merecem morte — mas nenhum é além do alcance do arrependimento e do perdão em Cristo.',
-      exposicao: 'Lutero começou as 95 Teses com: "Quando nosso Senhor e Mestre Jesus Cristo disse \'Arrependei-vos\', quis que toda a vida do fiel fosse penitência." O arrependimento não é evento único na conversão — é postura permanente do cristão que continuamente vê seu pecado à luz da santidade de Deus e do perdão de Cristo. Salmo 32 mostra a libertação que vem da confissão específica e genuína.',
-      reforco: '1 João 1.9: "Se confessarmos os nossos pecados, ele é fiel e justo para nos perdoar os pecados e nos purificar de toda injustiça."',
+      exposicao: `Lutero começou as 95 Teses com: "Quando nosso Senhor e Mestre Jesus Cristo disse \'Arrependei-vos\', quis que toda a vida do fiel fosse penitência." O arrependimento não é evento único na conversão — é postura permanente do cristão que continuamente vê seu pecado à luz da santidade de Deus e do perdão de Cristo. Salmo 32 mostra a libertação que vem da confissão específica e genuína.`,
+      reforco: 'John Calvin, nas <em>Institutas da Religião Cristã</em> (III.3.20), escreve: <em>"O arrependimento não é um ato que se realiza uma vez para entrar na fé — é a vida inteira do crente. Todo dia o crente deve mortificar o velho homem e vivificar o novo. O arrependimento não precede a fé nem a segue — cresce junto com ela ao longo de toda a vida cristã."</em>',
       aplicacoes: {
         digital: 'Estabeleça hoje uma prática diária de exame de consciência — 5 minutos antes de dormir para revisitar o dia, identificar pecados específicos e confessá-los a Deus. Isso é a prática do arrependimento contínuo que a confissão prescreve.',
         familia: 'Pratique com a família a confissão de pecados específicos uns aos outros — não apenas "perdão se te magoei", mas "fiz X, foi errado, me perdoa." Isso cria uma cultura familiar de arrependimento genuíno que protege os relacionamentos.',
@@ -7047,11 +7047,11 @@ export function gerarDiasAgosto_C(): ReturnType<typeof bloco>[] {
       cfwRef: 'CB 1689 11.1',
       cfwComparacao: 'CB 1689 11.1 é idêntica. A justificação é forense (declaração legal do juiz divino) — não infusão (transformação moral interna). Isso distingue a soteriologia reformada da católico-romana: na Reforma, a justificação não torna o pecador justo internamente — declara o pecador justo externamente, com base na obediência de Cristo imputada. A santificação é o processo de tornar-se justo internamente; a justificação é a declaração de que somos juridicamente justos.',
       exposicao: 'A distinção entre justificação (forense) e santificação (transformativa) é o eixo da Reforma. Lutero percebeu que Roma confundia as duas — e que isso tornava a justificação incerta (depende de quão transformado você foi). A justificação reformada é certa porque é declaração baseada em Cristo, não avaliação baseada em progresso moral. Deus não justifica porque vê transformação em nós — justifica porque vê Cristo em nosso lugar.',
-      reforco: 'Romanos 4.5: "Àquele, porém, que não trabalha, mas crê naquele que justifica o ímpio, a sua fé lhe é imputada como justiça."',
+      reforco: 'Louis Berkhof, em <em>Systematic Theology</em> (Grand Rapids: Eerdmans, 1941), escreve: <em>"A justificação é forense — é uma declaração judicial de que o pecador é justo diante de Deus com base na justiça imputada de Cristo. Ela não torna o pecador justo internamente (isso é santificação); ela o declara justo legalmente. A confusão das duas tem sido a fonte de incontáveis erros soteriológicos."</em>',
       aplicacoes: {
         digital: 'Antes de checar métricas hoje (seguidores, curtidas, produtividade), leia Romanos 4.5. Seu valor diante de Deus não varia com sua performance — foi declarado em Cristo uma vez para sempre. Como isso muda a pressão do dia?',
         familia: 'Explique a distinção: "Justificação é como um juiz declarar inocente alguém que de fato é culpado — porque o defensor pagou a pena. Santificação é como essa pessoa, depois de livre, ir mudando seu comportamento. As duas são necessárias — mas são coisas diferentes."',
-        filhos: 'Explique: "Quando Deus nos perdoa, ele não apenas esquece os erros — ele nos declara limpos, como se os erros nunca tivessem acontecido. Isso é justificação. É como se o juiz batesse o martelo e dissesse \'inocente\' — e fosse para sempre."',
+        filhos: `Explique: "Quando Deus nos perdoa, ele não apenas esquece os erros — ele nos declara limpos, como se os erros nunca tivessem acontecido. Isso é justificação. É como se o juiz batesse o martelo e dissesse \'inocente\' — e fosse para sempre."`,
         homens: 'O homem que entende justificação forense encontra repouso da ansiedade espiritual de "será que sou bom o suficiente?" A resposta confessional: "Você não é bom o suficiente — Cristo foi bom o suficiente por você, e essa bondade te foi imputada." Isso é assurance sólida.',
         mulheres: 'A mulher que compreende a justificação forense para de medir seu relacionamento com Deus pelo nível de seu desempenho espiritual do dia. A justificação é constante — o desempenho varia; a declaração permanece.',
         igreja: 'A Igreja que prega justificação por imputação (e não por infusão) mantém a certeza da salvação e o fundamento sólido da assurance espiritual. Quando a justificação é confundida com santificação, a assurance se torna impossível — depende de quanto progresso o crente fez.',
@@ -7076,10 +7076,10 @@ export function gerarDiasAgosto_C(): ReturnType<typeof bloco>[] {
       cfwRef: 'CB 1689 11.2',
       cfwComparacao: 'CB 1689 11.2 é idêntica. A formulação precisa é: "fé sozinha justifica, mas a fé que justifica nunca está sozinha." A fé é o instrumento da justificação — não sua causa meritória (a causa meritória é Cristo). A fé que justifica genuinamente sempre produz frutos (obras) — não como contribuição à justificação, mas como evidência dela.',
       exposicao: 'Sola fide foi o grito da Reforma — mas muitas vezes mal compreendido. A Reforma não disse "somente fé — sem obras." Disse "somente fé — em Cristo — para justificação; mas a fé genuína produz obras." Tiago 2 e Paulo em Romanos 3 não se contradizem: Paulo fala de obras como meio de justificação (impossível); Tiago fala de obras como evidência de fé genuína (necessária). A fé que salva transforma.',
-      reforco: 'Gálatas 2.16: "Sabendo, contudo, que o homem não é justificado por obras da lei, mas pela fé em Jesus Cristo, nós também cremos em Cristo Jesus, para sermos justificados pela fé em Cristo e não pelas obras da lei."',
+      reforco: 'R.C. Sproul, em <em>Faith Alone: The Evangelical Doctrine of Justification</em> (Grand Rapids: Baker, 1995), escreve: <em>"Sola fide não foi invenção de Lutero — foi redescoberta de Paulo. A fé é o instrumento da justificação, não a sua base. A base é a justiça de Cristo; a fé é a mão que recebe o que Cristo conquistou. As obras são o fruto, jamais a raiz."</em>',
       aplicacoes: {
         digital: 'Compare hoje "Sola Fide" (somente fé — Reforma Protestante) com o sistema católico-romano de mérito e obras satisfatórias. Entenda as diferenças precisas — não para polemizar, mas para saber claramente o que você crê e por quê.',
-        familia: 'Explique: "Você foi salvo pela fé somente — mas a fé que salva não fica sozinha. É como dizer \'o sol aquece sozinho, mas onde o sol aquece, a luz sempre aparece\'. A fé justifica sozinha; mas onde a fé genuína existe, as obras aparecem."',
+        familia: `Explique: "Você foi salvo pela fé somente — mas a fé que salva não fica sozinha. É como dizer \'o sol aquece sozinho, mas onde o sol aquece, a luz sempre aparece\'. A fé justifica sozinha; mas onde a fé genuína existe, as obras aparecem."`,
         filhos: 'Ensine: "Fazer coisas boas não nos salva — Jesus nos salva, quando cremos nele. Mas quando realmente cremos nele, queremos fazer o que é bom porque o amamos. As obras mostram que nossa fé é real, não nos salvam."',
         homens: 'O homem que entende sola fide não usa a doutrina como desculpa para vida sem frutos ("estou justificado pela fé, não preciso me santificar"). A justificação pela fé é o fundamento da santificação, não sua negação. Segurança em Cristo liberta para obedecer, não para permanecer no pecado.',
         mulheres: 'A mulher que crê em sola fide descansa na justificação sem ansiedade — e ao mesmo tempo cresce em santidade não para merecer justificação, mas porque a justificação a libertou do peso do merecimento. Obras de amor brotam de segurança, não de esforço meritório.',
@@ -7105,7 +7105,7 @@ export function gerarDiasAgosto_C(): ReturnType<typeof bloco>[] {
       cfwRef: 'CB 1689 11.5',
       cfwComparacao: 'CB 1689 11.5 é idêntica. A distinção crucial é entre "estado de justificação" (permanente, não pode ser perdido) e "sentido do favor de Deus" (pode ser obscurecido pelo pecado). O crente que peca não perde a justificação — mas pode perder a consciência de sua justificação até que o arrependimento e a fé renovados restaurem o senso do favor divino.',
       exposicao: 'Paulo em Romanos 8.33-34 argumenta com série de perguntas retóricas que evidenciam a impossibilidade de condenação para o justificado: Deus justificou — quem acusará? Cristo morreu e intercede — quem condenará? A resposta implícita: ninguém pode. A justificação, sendo ato soberano de Deus baseado em Cristo, não pode ser revertida por pecado humano posterior — embora o pecado obscureça a experiência da segurança.',
-      reforco: 'João 10.28-29: "Eu lhes dou a vida eterna; jamais perecerão, e ninguém as arrebatará da minha mão."',
+      reforco: 'Louis Berkhof, em <em>Systematic Theology</em> (Grand Rapids: Eerdmans, 1941), escreve: <em>"A perseverança dos santos não é perseverança pela força do próprio crente — é preservação pelo poder de Deus. O crente persevera porque Deus o preserva. A segurança da salvação está fundada não na firmeza da fé humana, mas na fidelidade de Deus que iniciou a boa obra."</em>',
       aplicacoes: {
         digital: 'Quando você falha gravemente hoje — e a voz da condenação vem, seja interna ou externa — leia Romanos 8.33-34 em voz alta. "Quem condenará?" É pergunta retórica com resposta implícita: ninguém, porque Cristo justificou e intercede. Isso não minimiza o pecado — o leva a Cristo.',
         familia: 'Explique a distinção entre segurança e presunção: "A justificação não pode ser perdida — mas isso não significa que o cristão pode pecar à vontade. O filho que corre para os braços do pai não teme ser deserdado — mas ainda desgosta o pai quando peca. O relacionamento é seguro; a comunhão pode ser perturbada."',
@@ -7134,7 +7134,7 @@ export function gerarDiasAgosto_C(): ReturnType<typeof bloco>[] {
       cfwRef: 'CB 1689 12.1',
       cfwComparacao: 'CB 1689 12.1 é idêntica. A adoção é distinta da justificação (embora inseparável): a justificação é metáfora forense (tribunal); a adoção é metáfora familiar (lar). O justificado não é apenas absolvido — é adotado. Não é apenas inocente — é filho. Isso muda radicalmente a postura em relação a Deus: não servo diante de um juiz, mas filho diante de um pai.',
       exposicao: 'Gálatas 4.4-5 apresenta a missão do Filho em dois propósitos: (1) remir os que estavam sob a lei — justificação; (2) para que recebessem a adoção de filhos — adoção. As duas são distintas mas inseparáveis. A adoção vai além da justificação em termos relacionais: não apenas absolvidos de culpa, mas admitidos na família de Deus como filhos com plenos direitos de herdeiros (Romanos 8.17).',
-      reforco: 'Romanos 8.15: "Porque não recebestes o espírito de escravidão, para estardes outra vez em temor; mas recebestes o Espírito de adoção, pelo qual clamamos: Aba, Pai."',
+      reforco: 'J.I. Packer, em <em>Knowing God</em> (Downers Grove: IVP, 1973), escreve: <em>"A adoção é o mais alto privilégio do Evangelho. A justificação nos liberta da culpa; a adoção nos recebe na família. Ser filho de Deus — não servo, não hóspede, mas filho — com todos os direitos de herança: isso é o que o Evangelho nos concede."</em>',
       aplicacoes: {
         digital: 'Quando você orar hoje, experimente começar diferente: não com "Senhor Todo-Poderoso" apenas, mas com "Pai" — e fique um momento contemplando o que essa palavra significa. Você tem acesso ao Pai com a intimidade de um filho adotado, não com o receio de um servo.',
         familia: 'Discuta com a família o que significa ser "filho de Deus" versus ser "criatura de Deus". Toda criatura pertence a Deus como criação; o filho pertence como família. Qual a diferença em termos de intimidade, acesso e herança?',
@@ -7163,7 +7163,7 @@ export function gerarDiasAgosto_C(): ReturnType<typeof bloco>[] {
       cfwRef: 'CB 1689 12.1',
       cfwComparacao: 'CB 1689 12.1 é idêntica. Os privilégios da adoção incluem: proteção paterna, disciplina paterna (não punição judicial), segurança ("nunca serão rejeitados"), selamento pelo Espírito e herança eterna. A disciplina de Deus (Hebreus 12.6) é sinal de adoção, não de rejeição — pais disciplinam filhos, não estranhos.',
       exposicao: 'Romanos 8.17 conecta herança e sofrimento: herdeiros "se é certo que com ele padecemos". O sofrimento do cristão não é contradição da adoção — é parte da herança partilhada com Cristo que leva à glorificação. A disciplina de Hebreus 12 confirma a adoção: "Deus vos trata como filhos; porque, que filho há a quem o pai não corrija?" (12.7). Sofrimento e disciplina são marcas de filhos, não de rejeitados.',
-      reforco: 'Hebreus 12.6-7: "Porque o Senhor disciplina aquele que ama e açoita a todo filho que recebe. É para correção que sofreis; Deus vos trata como filhos."',
+      reforco: `Joel Beeke, em <em>Living for God\'s Glory</em> (Orlando: Reformation Trust, 2008), escreve: <em>"O sofrimento do crente não contradiz a adoção — é evidência dela. Deus disciplina os filhos, não os estranhos. O sofrimento, quando recebido pela fé, é prova de que Deus nos trata como filhos amados que ele quer conformar à imagem do Filho primogênito."</em>`,
       aplicacoes: {
         digital: 'Quando você enfrenta dificuldade hoje — fracasso, resistência, sofrimento — leia Hebreus 12.5-11. A dificuldade pode ser disciplina paterna de Deus. A pergunta não é "Deus me abandonou?" — é "O que meu Pai está ensinando nesta circunstância?"',
         familia: 'Discuta como a disciplina paterna na família reflete a disciplina de Deus: "Quando corrigimos nossos filhos, não é porque os rejeitamos — é porque os amamos e queremos que cresçam. Deus age assim conosco." Como isso muda a visão do sofrimento?',
@@ -7192,7 +7192,7 @@ export function gerarDiasAgosto_C(): ReturnType<typeof bloco>[] {
       cfwRef: 'CB 1689 13.1',
       cfwComparacao: 'CB 1689 13.1 é idêntica. A santificação é distinta da justificação: a justificação é instantânea e completa (declaração forense); a santificação é progressiva e imperfeita nesta vida (transformação real). Ambas são necessárias — quem é justificado está sendo santificado. Quem afirma justificação sem santificação progressiva demonstra que não foi genuinamente justificado.',
       exposicao: 'A santificação é obra do Espírito Santo usando a morte e ressurreição de Cristo como poder (a "união com Cristo" é o fundamento — Romanos 6), a Palavra de Deus como instrumento (João 17.17) e a vontade renovada do crente como agente. O crente coopera ativamente com a santificação — mas o poder é de Deus. "Trabalhai com temor e tremor na vossa salvação, porque Deus é quem opera em vós" (Fp 2.12-13) — as duas partes são necessárias.',
-      reforco: '2 Coríntios 3.18: "Mas todos nós, com o rosto descoberto, refletindo como espelho a glória do Senhor, somos transformados de glória em glória na mesma imagem, como pelo Senhor Espírito."',
+      reforco: 'John Owen, em <em>Mortification of Sin</em> (1656), escreve: <em>"Mata o pecado ou ele te matará. A santificação não é automática — exige esforço ativo pelo crente, ainda que esse esforço seja capacitado pelo Espírito. Nenhum homem pode mortificar qualquer pecado exceto pelo Espírito — mas todo homem deve mortificá-lo ativamente."</em>',
       aplicacoes: {
         digital: 'Identifique hoje uma área de sua vida onde houve crescimento espiritual nos últimos 12 meses. A santificação é progressiva — e frequentemente imperceptível no dia a dia, mas visível em retrospecto. Ore com gratidão pela transformação gradual que Deus tem operado.',
         familia: 'Discuta: "Como uma família ou um casamento pode crescer espiritualmente juntos?" A santificação não é apenas individual — tem dimensão comunitária. Que práticas a família pode adotar que funcionem como meios de graça para a santificação coletiva?',
@@ -7221,7 +7221,7 @@ export function gerarDiasAgosto_C(): ReturnType<typeof bloco>[] {
       cfwRef: 'CB 1689 13.2',
       cfwComparacao: 'CB 1689 13.2 é idêntica. A santificação é "em toda a pessoa" — não apenas comportamento externo ou renovação intelectual. Atinge mente, vontade, afetos, memória, imaginação. Mas é "imperfeita nesta vida" — há resquícios de corrupção em todas as partes até a glorificação. A guerra entre carne e Espírito (Gálatas 5.17) é sinal de vida espiritual genuína, não de fracasso espiritual.',
       exposicao: 'A santificação alcança toda a pessoa porque o pecado corrompeu toda a pessoa. A mente precisa ser renovada (Rm 12.2); os afetos precisam ser purificados; a vontade precisa ser fortalecida; o corpo precisa ser apresentado a Deus (Rm 6.13). A guerra interior descrita em Romanos 7 e Gálatas 5.17 não é sinal de apostasia — é sinal de vida. O morto não luta; o vivificado luta porque há vida nova em conflito com a velha natureza.',
-      reforco: 'Gálatas 5.17: "Porque a carne tem desejos contrários aos do Espírito, e o Espírito tem desejos contrários aos da carne; estes se opõem entre si, para que não façais o que quereis."',
+      reforco: 'John Owen, em <em>Indwelling Sin in Believers</em> (1668), escreve: <em>"O pecado que permanece no crente não é um hóspede passivo — é um inimigo ativo que trama, seduz e resiste ao Espírito. O crente que subestima o poder do pecado interior está prestes a ser surpreendido. A vigilância constante é a resposta bíblica à realidade do pecado indwelling."</em>',
       aplicacoes: {
         digital: 'Reflita sobre como o uso de tecnologia e redes sociais afeta sua mente (pensamentos), afetos (o que você deseja) e vontade (o que você escolhe). A santificação deve alcançar essas dimensões também — não apenas comportamento externo.',
         familia: 'Discuta com a família: "A santificação muda o que pensamos (mente), o que queremos (afetos) e o que fazemos (comportamento). Em qual dessas áreas nossa família precisa crescer mais?" Ore juntos pedindo santificação em toda a pessoa.',
@@ -7250,7 +7250,7 @@ export function gerarDiasAgosto_C(): ReturnType<typeof bloco>[] {
       cfwRef: 'CB 1689 13.3',
       cfwComparacao: 'CB 1689 13.3 é idêntica. A confissão é honesta: os regenerados "caem em alguns pecados" — reconhecendo que mesmo crentes genuínos podem falhar gravemente (como Davi, Pedro). A diferença entre o regenerado que cai e o não regenerado não é que o primeiro nunca cai — é que o primeiro se levanta, se arrepende e persevera. A graça sustenta a perseverança.',
       exposicao: '1 Pedro 2.11 usa linguagem militar: as concupiscências "fazem guerra contra a alma." O cristão não está em trégua com o pecado — está em guerra. Ignorar isso é ingenuidade perigosa. Os puritanos falavam de "mortificação do pecado" — um exercício diário de matar o que ainda quer viver. A guerra não termina nesta vida; mas a vitória final é garantida pelo Espírito Santo.',
-      reforco: 'Efésios 6.12: "Porque não temos que lutar contra a carne e o sangue, mas contra os principados, contra as potestades, contra os príncipes das trevas desta geração, contra as hostes espirituais da maldade nos lugares celestiais."',
+      reforco: 'John Owen, em <em>Mortification of Sin</em> (1656), escreve: <em>"A luta contra o pecado não é opcional para o crente — é obrigatória. Todo crente é chamado a combater ativamente os movimentos do pecado interior, usando os meios de graça como armas espirituais. Quem não luta está entregando o campo sem combate."</em>',
       aplicacoes: {
         digital: 'Observe suas tentações digitais mais recorrentes — o conteúdo que você consome compulsivamente, as comparações que você faz, os pensamentos que surgem ao navegar. Esses são os fronts da guerra espiritual em sua vida digital. Nomeie-os e combata com meios específicos.',
         familia: 'Discuta honestamente com a família: "Em quais áreas temos que lutar mais — individualmente e como família?" Nomear as batalhas é o primeiro passo para combatê-las. Ore juntos pela graça para combater especificamente onde a luta é mais intensa.',
@@ -7288,7 +7288,7 @@ export function gerarDiasAgosto_D(): ReturnType<typeof bloco>[] {
       cfwRef: 'CB 1689 13.1',
       cfwComparacao: 'CB 1689 13.1 identifica os mesmos meios de santificação: a obra de Cristo (fundamento), o Espírito Santo (agente) e a Palavra de Deus (instrumento). Os meios de graça (Palavra, oração, sacramentos, comunidade) não são opcionais para o crescimento espiritual — são os canais pelos quais o Espírito atua ordinariamente.',
       exposicao: 'Jesus ora em João 17.17: "Santifica-os na verdade; a tua Palavra é a verdade." A Palavra de Deus é o instrumento primário da santificação. Mas os meios de graça incluem também: oração (Filipenses 4.6-7), comunidade (Hebreus 10.24-25), ceia do Senhor (1 Co 11.26) e batismo (Romanos 6.3-4 — o batismo não salva, mas aponta para a realidade da union com Cristo que sustenta a santificação). Negligenciar os meios é esperar crescimento sem irrigação.',
-      reforco: 'Hebreus 10.24-25: "E consideremo-nos uns aos outros, para nos estimularmos ao amor e às boas obras; não deixando a nossa congregação, como é costume de alguns."',
+      reforco: 'John Calvin, nas <em>Institutas da Religião Cristã</em> (IV.1.1), escreve: <em>"Deus não nos chama individualmente para conduzi-nos isolados ao céu — ele nos coloca na Igreja, que é a mãe de todos os crentes. Fora da Igreja não há remissão de pecados, não há salvação. Os meios de graça que ela administra são os canais pelos quais o Espírito nos santifica."</em>',
       aplicacoes: {
         digital: 'Avalie hoje seu consumo de meios de graça versus consumo de mídia. Quantos minutos por dia na Palavra versus nas redes sociais? Não para culpa, mas para diagnóstico honesto. A direção do crescimento espiritual segue a direção do investimento de tempo e atenção.',
         familia: 'Identifique com a família quais meios de graça vocês praticam regularmente como unidade: leitura bíblica juntos, oração de família, presença na ceia, participação na vida da igreja. Quais estão faltando? Como poderiam ser incorporados.',
@@ -7317,7 +7317,7 @@ export function gerarDiasAgosto_D(): ReturnType<typeof bloco>[] {
       cfwRef: 'CB 1689 17.1',
       cfwComparacao: 'CB 1689 17.1 é idêntica. A perseverança dos santos não é doutrina do "uma vez salvo, sempre salvo" no sentido popular (que ignora a necessidade de perseverança genuína). É doutrina de que os genuinamente regenerados perseveram — não porque têm força própria, mas porque Deus os guarda. A garantia é baseada em Deus, não no crente.',
       exposicao: 'Paulo afirma em Filipenses 1.6: "Aquele que começou a boa obra a aperfeiçoará." O sujeito da perseverança é Deus, não o crente. O crente persevera — mas o poder que o sustenta na perseverança é o poder de Deus. João 10.28-29 reforça: ninguém arrebata da mão do Pai. A perseverança é ao mesmo tempo promessa divina (Deus guarda) e realidade humana (o crente genuinamente persevera e combate).',
-      reforco: '1 Pedro 1.5: "que sois guardados pelo poder de Deus, mediante a fé, para a salvação que está preparada para ser revelada no último tempo."',
+      reforco: 'J.I. Packer, em <em>Knowing God</em> (Downers Grove: IVP, 1973), escreve: <em>"A perseverança do crente é garantida não pela firmeza de seu compromisso, mas pela fidelidade de Deus que o chamou. \'Aquele que começou a boa obra a aperfeiçoará\' — o sujeito é Deus, não o crente. Isso é a base da paz duradoura do cristão."</em>',
       aplicacoes: {
         digital: 'Nos dias em que a fé parece fraca — e as redes sociais mostram sucesso alheio e fracasso próprio — leia Filipenses 1.6. "Aquele que começou" — o sujeito não é você. A perseverança não depende da constância de sua fé, mas da fidelidade de quem começou.',
         familia: 'Discuta: "A perseverança dos santos significa que podemos pecar à vontade porque somos seguros?" Leia Hebreus 6.4-6 e 10.26-31 juntos com João 10.28-29. Como os dois grupos de textos se harmonizam? Os avisos são reais; a segurança é real. Ambos são necessários.',
@@ -7346,7 +7346,7 @@ export function gerarDiasAgosto_D(): ReturnType<typeof bloco>[] {
       cfwRef: 'CB 1689 18.1',
       cfwComparacao: 'CB 1689 18.1 é idêntica. A confissão distingue: (a) assurance verdadeira — baseada em promessas de Deus, evidências de graça e testemunho do Espírito; (b) presunção falsa — baseada em experiência emocional sem fundamento, profissão de fé sem frutos. A assurance verdadeira é possível nesta vida — não como arrogância, mas como confiança baseada em Cristo.',
       exposicao: 'A assurance da salvação tem três fundamentos confessionais: (1) as promessas divinas da Escritura (fundamento objetivo), (2) as evidências internas da graça — amor a Cristo, desejo de obediência, ódio ao pecado (fundamento subjetivo interno), (3) o testemunho do Espírito Santo (Rm 8.16 — fundamento pneumatológico). Nenhum dos três sozinho é suficiente; os três juntos fornecem assurance robusta.',
-      reforco: '1 João 5.13: "Escrevi-vos estas coisas, para que saibais que tendes a vida eterna — vós que credes no nome do Filho de Deus."',
+      reforco: 'Joel Beeke, em <em>The Quest for Full Assurance: The Legacy of Calvin and His Successors</em> (Edimburgo: Banner of Truth, 1999), escreve: <em>"A assurance tem três fundamentos: as promessas objetivas da Escritura, as evidências internas da graça na vida do crente, e o testemunho direto do Espírito. Os três devem ser cultivados — a assurance não é automática, mas é possível e normal para o crente maduro."</em>',
       aplicacoes: {
         digital: 'A ansiedade espiritual digital — comparação, performance, pressão por métricas de fé — é inimiga da assurance. Leia 1 João 5.13 e observe que João escreve para que os crentes <em>saibam</em> que têm vida eterna. Certeza é possível — e é fundada na promessa, não no sentimento.',
         familia: 'Discuta como ajudar filhos e membros da família a desenvolver assurance saudável — distinta de presunção. O exame de consciência (1 Jo 1.9), o amor a Cristo (1 Jo 4.19) e as promessas da Escritura (1 Jo 5.13) são os instrumentos. Pratiquem juntos.',
@@ -7375,7 +7375,7 @@ export function gerarDiasAgosto_D(): ReturnType<typeof bloco>[] {
       cfwRef: 'CB 1689 19.5',
       cfwComparacao: 'CB 1689 19.5 é idêntica. A lei moral (resumida nos Dez Mandamentos) permanece como padrão de santidade para o crente — não como meio de justificação (abolida nessa função por Cristo) mas como padrão de vida. O Evangelhos não abole a lei — Cristo a cumpriu e a confirma como padrão de santidade para os que vivem pela graça.',
       exposicao: 'As confissões reformadas distinguem três usos da lei: (1) uso civil (refrear o pecado na sociedade), (2) uso pedagógico (revelar o pecado e conduzir a Cristo), (3) uso normativo (padrão de vida para o crente redimido). O terceiro uso é o mais contestado — mas é o mais importante para a santificação. O crente não vive pela lei para ser salvo; vive pela lei porque foi salvo e ama ao que a lei expressa: o caráter de Deus.',
-      reforco: 'Romanos 13.10: "O amor não pratica o mal contra o próximo. De sorte que o cumprimento da lei é o amor."',
+      reforco: 'John Calvin, nas <em>Institutas da Religião Cristã</em> (II.7.6-12), escreve: <em>"O terceiro e principal uso da lei pertence aos crentes. Para eles, a lei é o melhor instrumento pelo qual aprendem diariamente com maior certeza o que é a vontade de Deus, à qual aspiram e na qual são confirmados."</em>',
       aplicacoes: {
         digital: 'Reflita como os Dez Mandamentos se aplicam à sua vida digital: idolatria (o que ocupa o lugar de Deus em sua atenção?), falso testemunho (você é honesto online?), sabá (você descansa?), honra (como você trata autoridades online?). A lei permanece como padrão.',
         familia: 'Estude os Dez Mandamentos com a família como padrão de vida cristã — não como meio de salvar, mas como mapa de amor. "Como isso nos ensina a amar a Deus e ao próximo?" é a pergunta central para cada mandamento.',
@@ -7404,7 +7404,7 @@ export function gerarDiasAgosto_D(): ReturnType<typeof bloco>[] {
       cfwRef: 'CB 1689 19.6',
       cfwComparacao: 'CB 1689 19.6 é idêntica. A distinção lei/evangelho é herança da Reforma — especialmente de Lutero — que preserva ambos sem confundi-los. A lei condena e aponta para Cristo (uso pedagógico); o Evangelho perdoa e capacita a cumprir o que a lei exige (uso normativo pelo Espírito). Confundir lei e evangelho produz dois erros: legalismo (lei como meio de justificação) e antinomianismo (evangelho sem padrão moral).',
       exposicao: 'Gálatas 3.24 usa a metáfora do "aio" (pedagogo grego): a lei é o guardião que conduz a criança ao mestre. A lei conduz a Cristo ao revelar nossa incapacidade e culpa. Mas depois que chegamos a Cristo, o aio não é dispensado na vida cristã — sua função muda (de acusação para norma de amor). A Reforma insistiu: distinga lei e Evangelho, mas não as separe.',
-      reforco: 'Romanos 3.31: "Anulamos, pois, a lei pela fé? De modo nenhum! Ao contrário, confirmamos a lei."',
+      reforco: 'J.I. Packer, em <em>Knowing God</em> (Downers Grove: IVP, 1973), escreve: <em>"O crente não está sob a lei como meio de justificação — está liberado dela como juíza condenatória. Mas a lei permanece como padrão de vida santificada: ela revela o que o amor a Deus e ao próximo exige. A graça não abole a lei; ela nos capacita a cumpri-la pela primeira vez."</em>',
       aplicacoes: {
         digital: 'Observe como a lei e o evangelho funcionam em uma conversa evangelística online: a lei mostra o problema (pecado e condenação); o evangelho oferece a solução (Cristo e perdão). Sem a lei, o evangelho parece irrelevante. Sem o evangelho, a lei deixa apenas condenação. Ambos são necessários.',
         familia: 'Discuta a diferença entre "você deve fazer X para ser aceito por Deus" (lei como meio de justificação — erro) e "você é aceito por Deus em Cristo; portanto faça X" (evangelho que capacita a cumprir a lei — correto). Como isso muda a motivação para obediência?',
@@ -7433,7 +7433,7 @@ export function gerarDiasAgosto_D(): ReturnType<typeof bloco>[] {
       cfwRef: 'CB 1689 22.7/22.8',
       cfwComparacao: 'CB 1689 22.7/22.8 é idêntica em substância mas com nuance: a CB 1689, seguindo mais estreitamente a prática batista do século XVII, enfatiza igualmente o domingo como dia do Senhor. Ambas afirmam que o dia do Senhor é mandamento moral perpétuo — não apenas cerimonial abolido — e que o descanso do domingo deve ser preenchido com adoração, não apenas abstinência de trabalho.',
       exposicao: 'O mandamento do sábado/domingo tem dois fundamentos: criação (Gênesis 2.2-3 — Deus descansou e santificou o sétimo dia) e redenção (a ressurreição de Cristo no primeiro dia reorienta o descanso para a nova criação). O descanso não é preguiça — é declaração teológica: "Não sou sustentado por meu trabalho, mas pelo Deus que cria e redime." Na era digital de produtividade perpétua, o domingo é ato de resistência teológica.',
-      reforco: 'Marcos 2.27-28: "O sábado foi feito por causa do homem, e não o homem por causa do sábado. Por isso, o Filho do Homem é senhor até do sábado."',
+      reforco: 'John Murray, em <em>Collected Writings of John Murray</em> (Edimburgo: Banner of Truth, 1977, vol. 1), escreve: <em>"O descanso do domingo não é abolição do princípio sabático — é sua transposição para o primeiro dia da semana pela autoridade de Cristo ressurreto. A criação estabeleceu o ritmo de seis mais um; a ressurreição reorientou esse ritmo para celebrar a nova criação."</em>',
       aplicacoes: {
         digital: 'Experimente um domingo completamente offline — sem redes sociais, sem notícias, sem e-mail. Não como lei, mas como experimento de adoração. O que acontece quando você para de produzir e consumir por um dia inteiro? O descanso revela em que você realmente confia.',
         familia: 'Planeje um domingo que seja genuinamente diferente dos outros dias: culto, refeição em família, descanso físico, leitura edificante, visita a alguém. O domingo não é "dia de nada" — é "dia de Deus", preenchido com adoração e descanso.',
@@ -7447,7 +7447,7 @@ export function gerarDiasAgosto_D(): ReturnType<typeof bloco>[] {
       aplicacao: 'Planeje o próximo domingo com intenção: (1) Defina o que você vai fazer (culto, refeição familiar, descanso, leitura). (2) Defina o que você vai não fazer (trabalho, redes sociais, tarefas domésticas não essenciais). (3) No final do dia, avalie: o que mudou em você ao descansar intencionalmente? Repita nas próximas quatro semanas.',
       notas: [
         'DENNISON, Charles G. <em>The Market Day of the Soul: The Puritan Doctrine of the Sabbath in England 1532–1700</em>. Lanham: University Press of America, 1983. História e teologia do sábado/domingo na tradição puritana reformada.',
-        'PIPA, Joseph A. <em>The Lord\'s Day</em>. Fearn: Christian Focus, 1997. Tratamento bíblico e teológico do Dia do Senhor como mandamento moral perpétuo e sua aplicação prática na vida cristã contemporânea.',
+        `PIPA, Joseph A. <em>The Lord\'s Day</em>. Fearn: Christian Focus, 1997. Tratamento bíblico e teológico do Dia do Senhor como mandamento moral perpétuo e sua aplicação prática na vida cristã contemporânea.`,
       ],
       notaInicio: 488,
     },
@@ -7462,7 +7462,7 @@ export function gerarDiasAgosto_D(): ReturnType<typeof bloco>[] {
       cfwRef: 'CB 1689 8.5 (síntese)',
       cfwComparacao: 'Agosto cobriu CFW/CB 1689 Cap. 7–13: Aliança da Graça, Cristo Mediador, Livre-Arbítrio, Chamado Eficaz, Regeneração, Fé Salvífica, Arrependimento, Justificação, Adoção e Santificação. Todos esses capítulos são, essencialmente, a explicitação de como Cristo se torna o benefício do eleito — da aliança eterna à glorificação futura.',
       exposicao: 'Efésios 1.3 é o versículo-síntese de agosto: "todas as bênçãos espirituais nos lugares celestiais em Cristo." Agosto explicitou cada uma: a aliança que fundou o acesso (Cap. 7), Cristo que mediou o acesso (Cap. 8), o livre-arbítrio renovado pela graça (Cap. 9), o chamado eficaz que aplicou a redenção (Cap. 10), a fé como instrumento (Cap. 14), o arrependimento como resposta (Cap. 15), a justificação como declaração (Cap. 11), a adoção como relação (Cap. 12), a santificação como transformação (Cap. 13). Tudo em Cristo.',
-      reforco: 'Colossenses 2.10: "E em Cristo estais cheios, o qual é o cabeça de todo principado e potestade."',
+      reforco: 'John Murray, em <em>Redemption Accomplished and Applied</em> (Grand Rapids: Eerdmans, 1955), escreve: <em>"Toda a bênção espiritual do crente está em Cristo — nele está a aliança, nele está a redenção, nele está a justificação, nele está a santificação, nele está a glorificação. O cristão não apenas recebe bênçãos de Cristo; ele está em Cristo, que é a soma de todas as bênçãos."</em>',
       aplicacoes: {
         digital: 'Faça hoje uma revisão dos 31 dias de agosto. Qual doutrina mais impactou sua vida? Qual você ainda precisa aprofundar? Compartilhe um insight de agosto com alguém — texto, mensagem ou conversa.',
         familia: 'Façam juntos uma linha do tempo de agosto: Aliança (dias 213-215), Cristo (dias 216-220), Livre-Arbítrio/Chamado (dias 221-224), Fé/Arrependimento (dias 225-228), Justificação (dias 229-231), Adoção (dias 232-233), Santificação (dias 234-236), Perseverança/Assurance (dias 237-239), Lei (dias 240-241), Domingo (dia 242). Ore juntos agradecendo pelos fundamentos recebidos.',
@@ -7483,4 +7483,5 @@ export function gerarDiasAgosto_D(): ReturnType<typeof bloco>[] {
   ];
   return dias.map(blocoW);
 }
+
 
