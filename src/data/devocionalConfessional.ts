@@ -34,14 +34,14 @@ export const DEVOCIONAL_CONFESSIONAL: DiaConfessional[] = [
     </div>
     <div style="padding:clamp(16px,3vw,24px);">
       <p style="margin:0 0 10px;font-size:clamp(15px,1.9vw,16px);color:rgba(240,235,255,0.95);line-height:1.80;font-style:italic;">"Ainda que a luz da natureza e as obras da criação e da providência manifestem tão amplamente a bondade, sabedoria e poder de Deus, que os homens ficam sem desculpa; todavia, elas não são suficientes para proporcionar aquele conhecimento de Deus e de sua vontade, que é necessário para a salvação. Por isso se agradou ao Senhor, em várias épocas e de diferentes modos, revelar-se a si mesmo e declarar a sua vontade à sua Igreja; e depois, para melhor preservação e propagação da verdade e para uma mais sólida firmeza e consolação da Igreja contra a corrupção da carne, e a maldade de Satanás e do mundo, quis que essas revelações fossem escritas; o que torna a Sagrada Escritura mui necessária, porquanto cessaram aquelas formas anteriores pelas quais Deus revelou sua vontade ao seu povo."</p>
-      <p style="margin:0;font-size:12px;color:rgba(167,139,250,0.80);font-weight:700;">CB 1689 1.1<sup style="font-size:10px;color:rgba(167,139,250,1);font-weight:900;margin-left:1px;">�?�</sup></p>
+      <p style="margin:0;font-size:12px;color:rgba(167,139,250,0.80);font-weight:700;">CB 1689 1.1<sup style="font-size:10px;color:rgba(167,139,250,1);font-weight:900;margin-left:1px;">⚖</sup></p>
     </div>
   </div>
 
   <!-- CFW 1.1 — Comparação -->
   <div style="margin:0 0 28px;border-radius:16px;background:rgba(167,139,250,0.04);border:1px solid rgba(167,139,250,0.30);overflow:hidden;">
     <div style="padding:10px 20px;background:rgba(167,139,250,0.08);border-bottom:1px solid rgba(167,139,250,0.16);display:flex;align-items:center;gap:10px;">
-      <span style="font-size:18px;">�?�</span>
+      <span style="font-size:18px;">⚖</span>
       <span style="font-size:10px;font-weight:900;letter-spacing:0.24em;text-transform:uppercase;color:rgba(167,139,250,0.90);">Confissão de Westminster · Comparação</span>
       <span style="margin-left:auto;font-size:10px;color:rgba(167,139,250,0.70);font-weight:700;">CFW 1.1</span>
     </div>
@@ -69,7 +69,7 @@ export const DEVOCIONAL_CONFESSIONAL: DiaConfessional[] = [
     </div>
     <div style="padding:clamp(16px,3vw,24px);">
       <p style="margin:0;font-size:clamp(14px,1.8vw,15px);color:rgba(230,225,255,0.90);line-height:1.80;">
-        As duas confissões abrem no mesmo ponto: existe revelação geral, <strong style="color:#fff;">suficiente para condenar, insuficiente para salvar</strong>. Muller observa que essa distinção entre <em>revelatio generalis</em> e <em>revelatio specialis</em> é herança direta da ortodoxia reformada pós-Reforma, sistematizada já em Calvino e consolidada nas confissões do século XVII<sup style="font-size:10px;color:rgba(52,211,153,1);font-weight:900;margin-left:1px;">�?�</sup>.
+        As duas confissões abrem no mesmo ponto: existe revelação geral, <strong style="color:#fff;">suficiente para condenar, insuficiente para salvar</strong>. Muller observa que essa distinção entre <em>revelatio generalis</em> e <em>revelatio specialis</em> é herança direta da ortodoxia reformada pós-Reforma, sistematizada já em Calvino e consolidada nas confissões do século XVII<sup style="font-size:10px;color:rgba(52,211,153,1);font-weight:900;margin-left:1px;">⚖</sup>.
       </p>
     </div>
   </div>
@@ -77,12 +77,12 @@ export const DEVOCIONAL_CONFESSIONAL: DiaConfessional[] = [
   <!-- Reforço confessional -->
   <div style="margin:0 0 28px;border-radius:16px;background:rgba(251,191,36,0.04);border:1px solid rgba(251,191,36,0.18);overflow:hidden;">
     <div style="padding:10px 20px;background:rgba(251,191,36,0.07);border-bottom:1px solid rgba(251,191,36,0.12);display:flex;align-items:center;gap:10px;">
-      <span style="font-size:18px;">�?��?</span>
+      <span style="font-size:18px;">📚</span>
       <span style="font-size:10px;font-weight:900;letter-spacing:0.24em;text-transform:uppercase;color:rgba(251,191,36,0.90);">Reforço Teológico-Confessional</span>
     </div>
     <div style="padding:clamp(16px,3vw,24px);">
       <p style="margin:0;font-size:clamp(14px,1.8vw,15px);color:rgba(230,225,255,0.90);line-height:1.80;">
-        A <strong style="color:#fff;">Segunda Confissão Helvética (1566)</strong>, de Heinrich Bullinger — um dos credos reformados mais influentes do continente antes de Westminster —, já afirmava no capítulo I que a Escritura é <em>"suficientíssima"</em> para instruir o homem em tudo que é necessário à fé e à vida piedosa, antecipando por quase um século a mesma ênfase confessional inglesa<sup style="font-size:10px;color:rgba(251,191,36,1);font-weight:900;margin-left:1px;">�?�</sup>.
+        A <strong style="color:#fff;">Segunda Confissão Helvética (1566)</strong>, de Heinrich Bullinger — um dos credos reformados mais influentes do continente antes de Westminster —, já afirmava no capítulo I que a Escritura é <em>"suficientíssima"</em> para instruir o homem em tudo que é necessário à fé e à vida piedosa, antecipando por quase um século a mesma ênfase confessional inglesa<sup style="font-size:10px;color:rgba(251,191,36,1);font-weight:900;margin-left:1px;">⚖</sup>.
       </p>
     </div>
   </div>
@@ -131,7 +131,7 @@ export const DEVOCIONAL_CONFESSIONAL: DiaConfessional[] = [
 
   <!-- Oração -->
   <div style="margin:0 0 28px;border-radius:16px;background:rgba(167,139,250,0.05);border:1px solid rgba(167,139,250,0.18);padding:clamp(16px,3vw,22px);">
-    <div style="font-size:10px;font-weight:900;letter-spacing:0.22em;text-transform:uppercase;color:rgba(167,139,250,0.85);margin-bottom:10px;">�? Oração</div>
+    <div style="font-size:10px;font-weight:900;letter-spacing:0.22em;text-transform:uppercase;color:rgba(167,139,250,0.85);margin-bottom:10px;">🙏 Oração</div>
     <p style="margin:0;font-size:clamp(14px,1.9vw,15px);color:rgba(230,225,255,0.88);line-height:1.75;font-style:italic;">
       Senhor, obrigado por não me deixares apenas com a luz da natureza, mas por teres falado claramente em Tua Palavra escrita. Amém.
     </p>
@@ -139,7 +139,7 @@ export const DEVOCIONAL_CONFESSIONAL: DiaConfessional[] = [
 
   <!-- Notas -->
   <div style="margin-top:28px;border-top:1px solid rgba(167,139,250,0.12);padding-top:18px;">
-    <div style="font-size:10px;font-weight:900;letter-spacing:0.22em;text-transform:uppercase;color:rgba(167,139,250,0.80);margin-bottom:10px;">🗒�? Notas</div>
+    <div style="font-size:10px;font-weight:900;letter-spacing:0.22em;text-transform:uppercase;color:rgba(167,139,250,0.80);margin-bottom:10px;">📝 Notas</div>
     <ol start="7" style="margin:0;padding:0 0 0 18px;display:flex;flex-direction:column;gap:6px;">
       <li style="font-size:12px;color:rgba(210,205,255,0.75);line-height:1.65;">SCHAFF, Philip (Ed.). <em>The Creeds of Christendom</em>. v. 3. Grand Rapids: Baker Book House, 1996.</li>
       <li style="font-size:12px;color:rgba(210,205,255,0.75);line-height:1.65;">MULLER, Richard A. <em>Post-Reformation Reformed Dogmatics</em>. v. 1. Grand Rapids: Baker Academic, 2003.</li>
@@ -178,7 +178,7 @@ export const DEVOCIONAL_CONFESSIONAL: DiaConfessional[] = [
   <!-- CFW 1.1 — Comparação -->
   <div style="margin:0 0 28px;border-radius:16px;background:rgba(167,139,250,0.04);border:1px solid rgba(167,139,250,0.30);overflow:hidden;">
     <div style="padding:10px 20px;background:rgba(167,139,250,0.08);border-bottom:1px solid rgba(167,139,250,0.16);display:flex;align-items:center;gap:10px;">
-      <span style="font-size:18px;">�?�</span>
+      <span style="font-size:18px;">⚖</span>
       <span style="font-size:10px;font-weight:900;letter-spacing:0.24em;text-transform:uppercase;color:rgba(167,139,250,0.90);">Confissão de Westminster · Comparação</span>
       <span style="margin-left:auto;font-size:10px;color:rgba(167,139,250,0.70);font-weight:700;">CFW 1.1</span>
     </div>
@@ -206,7 +206,7 @@ export const DEVOCIONAL_CONFESSIONAL: DiaConfessional[] = [
     </div>
     <div style="padding:clamp(16px,3vw,24px);">
       <p style="margin:0;font-size:clamp(14px,1.8vw,15px);color:rgba(230,225,255,0.90);line-height:1.80;">
-        Você já tratou sentimentos religiosos vagos ou intuições espirituais como equivalentes ao <strong style="color:#fff;">conhecimento salvador</strong> que só vem da Palavra pregada e escrita? Beeke lembra que, para os puritanos, a experiência religiosa autêntica era sempre <em>subsequente e submissa</em> à Palavra — nunca uma fonte paralela de autoridade<sup style="font-size:10px;color:rgba(52,211,153,1);font-weight:900;margin-left:1px;">¹�?�</sup>.
+        Você já tratou sentimentos religiosos vagos ou intuições espirituais como equivalentes ao <strong style="color:#fff;">conhecimento salvador</strong> que só vem da Palavra pregada e escrita? Beeke lembra que, para os puritanos, a experiência religiosa autêntica era sempre <em>subsequente e submissa</em> à Palavra — nunca uma fonte paralela de autoridade<sup style="font-size:10px;color:rgba(52,211,153,1);font-weight:900;margin-left:1px;">¹</sup>.
       </p>
     </div>
   </div>
@@ -247,7 +247,7 @@ export const DEVOCIONAL_CONFESSIONAL: DiaConfessional[] = [
 
   <!-- Oração -->
   <div style="margin:0 0 28px;border-radius:16px;background:rgba(167,139,250,0.05);border:1px solid rgba(167,139,250,0.18);padding:clamp(16px,3vw,22px);">
-    <div style="font-size:10px;font-weight:900;letter-spacing:0.22em;text-transform:uppercase;color:rgba(167,139,250,0.85);margin-bottom:10px;">�? Oração</div>
+    <div style="font-size:10px;font-weight:900;letter-spacing:0.22em;text-transform:uppercase;color:rgba(167,139,250,0.85);margin-bottom:10px;">🙏 Oração</div>
     <p style="margin:0;font-size:clamp(14px,1.9vw,15px);color:rgba(230,225,255,0.88);line-height:1.75;font-style:italic;">
       Senhor, obrigado por não me deixares apenas com a luz da natureza, mas por teres falado claramente em Tua Palavra escrita. Amém.
     </p>
@@ -255,7 +255,7 @@ export const DEVOCIONAL_CONFESSIONAL: DiaConfessional[] = [
 
   <!-- Notas -->
   <div style="margin-top:28px;border-top:1px solid rgba(167,139,250,0.12);padding-top:18px;">
-    <div style="font-size:10px;font-weight:900;letter-spacing:0.22em;text-transform:uppercase;color:rgba(167,139,250,0.80);margin-bottom:10px;">🗒�? Notas</div>
+    <div style="font-size:10px;font-weight:900;letter-spacing:0.22em;text-transform:uppercase;color:rgba(167,139,250,0.80);margin-bottom:10px;">📝 Notas</div>
     <ol start="10" style="margin:0;padding:0 0 0 18px;display:flex;flex-direction:column;gap:6px;">
       <li style="font-size:12px;color:rgba(210,205,255,0.75);line-height:1.65;">BEEKE, Joel R. <em>Puritan Reformed Spirituality</em>. Darlington: Evangelical Press, 2004.</li>
     </ol>
@@ -324,7 +324,7 @@ function bloco(dc: DiaCompacto): DiaConfessional {
     ? `
   <div style="margin:0 0 28px;border-radius:16px;background:rgba(167,139,250,0.10);border:1px solid rgba(167,139,250,0.40);overflow:hidden;">
     <div style="padding:10px 20px;background:rgba(167,139,250,0.16);border-bottom:1px solid rgba(167,139,250,0.28);display:flex;align-items:center;gap:10px;">
-      <span style="font-size:18px;">�?�</span>
+      <span style="font-size:18px;">⚖</span>
       <span style="font-size:11px;font-weight:900;letter-spacing:0.20em;text-transform:uppercase;color:#d4baff;">Confissão de Westminster · Comparação</span>
       <span style="margin-left:auto;font-size:11px;color:#b89ee8;font-weight:700;">${dc.cfwRef ?? ''}</span>
     </div>
@@ -367,7 +367,7 @@ function bloco(dc: DiaCompacto): DiaConfessional {
   </div>
   <div style="margin:0 0 28px;border-radius:16px;background:rgba(251,191,36,0.08);border:1px solid rgba(251,191,36,0.32);overflow:hidden;">
     <div style="padding:10px 20px;background:rgba(251,191,36,0.14);border-bottom:1px solid rgba(251,191,36,0.22);display:flex;align-items:center;gap:10px;">
-      <span style="font-size:18px;">�?��?</span>
+      <span style="font-size:18px;">📚</span>
       <span style="font-size:11px;font-weight:900;letter-spacing:0.20em;text-transform:uppercase;color:#ffd436;">${reforcoLabel}</span>
     </div>
     <div style="padding:clamp(16px,3vw,24px);">
@@ -389,11 +389,11 @@ function bloco(dc: DiaCompacto): DiaConfessional {
     </div>
   </div>
   <div style="margin:0 0 28px;border-radius:16px;background:rgba(167,139,250,0.10);border:1px solid rgba(167,139,250,0.32);padding:clamp(16px,3vw,22px);">
-    <div style="font-size:11px;font-weight:900;letter-spacing:0.20em;text-transform:uppercase;color:#d4baff;margin-bottom:12px;">�? Oração</div>
+    <div style="font-size:11px;font-weight:900;letter-spacing:0.20em;text-transform:uppercase;color:#d4baff;margin-bottom:12px;">🙏 Oração</div>
     <p style="margin:0;font-size:clamp(15px,1.9vw,17px);color:#f0eeff;font-weight:500;line-height:1.90;font-style:italic;">${dc.oracao}</p>
   </div>
   <div style="margin-top:28px;border-top:1px solid rgba(167,139,250,0.22);padding-top:20px;">
-    <div style="font-size:11px;font-weight:900;letter-spacing:0.20em;text-transform:uppercase;color:#d4baff;margin-bottom:12px;">🗒�? Notas</div>
+    <div style="font-size:11px;font-weight:900;letter-spacing:0.20em;text-transform:uppercase;color:#d4baff;margin-bottom:12px;">📝 Notas</div>
     <ol start="${dc.notaInicio}" style="margin:0;padding:0 0 0 18px;display:flex;flex-direction:column;gap:8px;">${notasHtml}</ol>
   </div>
 </div>
@@ -418,7 +418,7 @@ function blocoW(dc: DiaCompacto): DiaConfessional {
 
 function gerarDiasJaneiro3a31(): DiaConfessional[] {
   const dias: DiaCompacto[] = [
-    // ==================== CAP�?TULO I — DAS ESCRITURAS SAGRADAS ====================
+    // ==================== CAPÍTULO I — DAS ESCRITURAS SAGRADAS ====================
     {
       dia: 3, data: '3 jan', tema: 'A Bíblia que Você Tem É Completa',
       capitulo: 'CB 1689 1.2 — O Cânon',
@@ -662,7 +662,7 @@ function gerarDiasJaneiro3a31(): DiaConfessional[] {
       ],
       notaInicio: 27,
     },
-    // ==================== CAP�?TULO II — DE DEUS E DA SANT�?SSIMA TRINDADE ====================
+    // ==================== CAPÍTULO II — DE DEUS E DA SANTÍSSIMA TRINDADE ====================
     {
       dia: 12, data: '12 jan', tema: 'Deus Não É Quem Você Imaginou',
       capitulo: 'CB 1689 2.1 — Atributos de Deus',
@@ -932,7 +932,7 @@ function gerarDiasJaneiro3a31(): DiaConfessional[] {
       ],
       notaInicio: 46,
     },
-    // ==================== CAP�?TULO III — DO DECRETO DE DEUS ====================
+    // ==================== CAPÍTULO III — DO DECRETO DE DEUS ====================
     {
       dia: 22, data: '22 jan', tema: 'Antes do Mundo Existir, Deus Já Havia Decidido',
       capitulo: 'CB 1689 3.1 — Decretos de Deus',
@@ -1235,7 +1235,7 @@ export function diasDoMes(mes: number): DiaConfessional[] {
 // ============================================================================
 function gerarDiasFevereiro_A(): DiaConfessional[] {
   const dias: DiaCompacto[] = [
-    // ==================== CAP�?TULO IV — DA CRIAÇÃO ====================
+    // ==================== CAPÍTULO IV — DA CRIAÇÃO ====================
     {
       dia: 32, data: '1 fev', tema: 'Do Nada ao Tudo: Deus Criou por Pura Vontade',
       capitulo: 'CB 1689 4.1 — Da Criação',
@@ -1425,7 +1425,7 @@ function gerarDiasFevereiro_A(): DiaConfessional[] {
       ],
       notaInicio: 80,
     },
-    // ==================== CAP�?TULO V — DA PROVIDÊNCIA ====================
+    // ==================== CAPÍTULO V — DA PROVIDÊNCIA ====================
     {
       dia: 39, data: '8 fev', tema: 'Nada Escapa ao Governo de Deus',
       capitulo: 'CB 1689 5.1 — Da Providência',
@@ -1562,7 +1562,7 @@ function gerarDiasFevereiro_A(): DiaConfessional[] {
       notaInicio: 90,
     },
     {
-      dia: 44, data: '13 fev', tema: 'Até os �?mpios Estão sob o Governo de Deus',
+      dia: 44, data: '13 fev', tema: 'Até os Ímpios Estão sob o Governo de Deus',
       capitulo: 'CB 1689 5.6 — providência e os ímpios',
       versiculo: 'Provérbios 21.1',
       versiculoTexto: 'O coração do rei é como ribeiros de águas na mão do Senhor; ele o inclina para onde quer.',
@@ -5124,8 +5124,8 @@ export function gerarDiasJunho_B(): ReturnType<typeof bloco>[] {
       versiculoTexto: 'Baptizava também João em Enom, perto de Salim, porque havia ali muita água; e os que iam lá eram batizados.',
       confissaoTexto: 'CB 1689 Cap. 29 §3: O modo externo de ministrar este sacramento é mergulhar no — ou imergir a pessoa na — água; no nome do Pai, do Filho e do Espírito Santo.',
       cfwRef: 'CFW Cap. 28 §3 — sobre o modo do batismo',
-      cfwComparacao: 'CFW é mais ampla: permite imersão, aspersão ou afusão. CB 1689 é específica: o modo correto é imersão. Esta diferença reflete a herança batista da CB 1689 — o nome "batista" deriva de "baptiz�?" (mergulhar), e a imersão é vista como o único modo fiel ao significado simbólico do batismo.',
-      exposicao: 'João Batizava onde havia "muita água" — porque precisava de água suficiente para imersão. O termo grego baptiz�? significa mergulhar, imergir. A imersão representa melhor a morte, sepultura e ressurreição de Cristo descrita em Rm 6.3-4. Wayne Grudem escreve em <em>Teologia Sistemática</em> que <em>"o batismo por imersão retrata mais vividamente a morte, o sepultamento e a ressurreição com Cristo do que os outros modos, pois a descida na água ilustra a morte e o sepultamento, e a saída da água ilustra a ressurreição"</em>. O modo não é indiferente — ele comunica teologia.',
+      cfwComparacao: 'CFW é mais ampla: permite imersão, aspersão ou afusão. CB 1689 é específica: o modo correto é imersão. Esta diferença reflete a herança batista da CB 1689 — o nome "batista" deriva de "baptizō" (mergulhar), e a imersão é vista como o único modo fiel ao significado simbólico do batismo.',
+      exposicao: 'João Batizava onde havia "muita água" — porque precisava de água suficiente para imersão. O termo grego baptizō significa mergulhar, imergir. A imersão representa melhor a morte, sepultura e ressurreição de Cristo descrita em Rm 6.3-4. Wayne Grudem escreve em <em>Teologia Sistemática</em> que <em>"o batismo por imersão retrata mais vividamente a morte, o sepultamento e a ressurreição com Cristo do que os outros modos, pois a descida na água ilustra a morte e o sepultamento, e a saída da água ilustra a ressurreição"</em>. O modo não é indiferente — ele comunica teologia.',
       reforco: 'Wayne Grudem, em <em>Teologia Sistemática</em> (São Paulo: Vida Nova, 1999), escreve: <em>"O batismo por imersão retrata mais vividamente a morte, o sepultamento e a ressurreição com Cristo que os outros modos, pois a descida na água ilustra a morte e o sepultamento, e a saída da água ilustra a ressurreição."</em>',
       aplicacoes: {
         digital: 'Em um mundo que desincorpora tudo, o batismo por imersão insiste na corporalidade. O corpo vai à água — não apenas a cabeça.',
