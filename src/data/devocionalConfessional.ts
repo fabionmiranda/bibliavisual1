@@ -9,6 +9,7 @@ export interface DiaConfessional {
   aplicacao: string;
   oracao: string;
   conteudoHtml?: string; // conteúdo rico opcional (substitui reflexao no modal)
+  questao?: string;
 }
 
 // Dias 1–365 serão adicionados por partes
@@ -316,6 +317,7 @@ interface DiaCompacto {
   notaInicio: number;
   cfwComparacao?: string;
   cfwRef?: string;
+  questao?: string;
 }
 
 function bloco(dc: DiaCompacto): DiaConfessional {
@@ -409,6 +411,7 @@ function bloco(dc: DiaCompacto): DiaConfessional {
     aplicacao: dc.aplicacao,
     oracao: dc.oracao,
     conteudoHtml: html,
+    questao: dc.questao,
   };
 }
 
@@ -7309,6 +7312,7 @@ export function gerarDiasAgosto_D(): ReturnType<typeof bloco>[] {
     {
       dia: 238,
       data: '26 de agosto',
+      questao: 'Se a sua fé depende da sua força de vontade, o que acontece quando você não tem mais força?',
       tema: 'A Perseverança dos Santos: Deus Guarda os Que Ele Chamou',
       capitulo: 'CFW 17.1',
       versiculo: 'Filipenses 1.6',
