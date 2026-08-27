@@ -654,10 +654,10 @@ const AULAS_NOIVOS = [
   {
     num: 2,
     titulo: 'Aula 2',
-    subtitulo: 'Aliança Conjugal: Deixar, Unir e Ser Uma Só Carne',
-    desc: 'O que significa "deixar pai e mãe"? A ruptura necessária, a nova unidade e a integralidade do vínculo conjugal — corpo, alma e espírito.',
-    refs: 'Gn 2:24 · Mc 10:6–9 · Ml 2:14',
-    available: false,
+    subtitulo: 'Princípios Bíblicos de Comunicação',
+    desc: 'Os cinco níveis de comunicação, o nível de ruptura e sete princípios bíblicos que transformam a fala conjugal — da urgência estatística à restauração pelo Evangelho.',
+    refs: 'Ef 4:15,25–32 · Tg 1:19 · Pv 10:19 · 18:13 · Gl 6:1',
+    available: true,
   },
   {
     num: 3,
@@ -767,7 +767,10 @@ function AulaCard({ aula, cor, onOpen }: { aula: typeof AULAS_NOIVOS[0]; cor: st
 export function NoivosHub() {
   const navigate = useNavigate();
   const onBack = () => navigate('/familia');
-  const onAula = (num: number) => { if (num === 1) navigate('/familia/noivos/aula-inaugural'); };
+  const onAula = (num: number) => {
+    if (num === 1) navigate('/familia/noivos/aula-inaugural');
+    if (num === 2) navigate('/familia/noivos/aula-02');
+  };
   return (
     <div style={{ minHeight: '100vh', background: C.bg, color: C.white }}>
       <Navbar />
@@ -1694,6 +1697,181 @@ export function AulaInaugural() {
               'VOS, Geerhardus. Teologia Bíblica: Antigo e Novo Testamento. São Paulo: Cultura Cristã, 2010.',
             ].map((ref, i) => (
               <div key={i} style={{ fontSize: 'clamp(11px,1.5vw,12.5px)', color: 'rgba(255,255,255,0.45)', lineHeight: 1.75, borderBottom: i < 15 ? '1px solid rgba(255,255,255,0.05)' : 'none', padding: '6px 0' }}>
+                {ref}
+              </div>
+            ))}
+          </Bloco>
+
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ─── Aula 02 — Princípios Bíblicos de Comunicação ────────────────────
+export function Aula02() {
+  const navigate = useNavigate();
+  const onBack = () => navigate('/familia/noivos');
+  return (
+    <div style={{ minHeight: '100vh', background: C.bg, color: C.white }}>
+      <Navbar />
+      <div style={{ maxWidth: 860, margin: '0 auto', padding: 'clamp(90px,11vw,110px) clamp(16px,4vw,32px) 100px' }}>
+
+        {/* Voltar */}
+        <div style={{ marginBottom: 32 }}>
+          <button onClick={onBack} style={{ display: 'inline-flex', alignItems: 'center', gap: 7, fontSize: 12, fontWeight: 900, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(255,200,80,0.70)', background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}>
+            ← Aulas
+          </button>
+        </div>
+
+        {/* Cabeçalho */}
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} style={{ marginBottom: 48 }}>
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, marginBottom: 10, padding: '4px 12px', borderRadius: 7, background: GOLD_B, border: `1px solid ${GOLD_BD}` }}>
+            <span style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,200,80,0.75)' }}>Curso de Noivos · Material do Aluno</span>
+          </div>
+          <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.32)', marginBottom: 14 }}>
+            Aula 2 · Encontro 2
+          </div>
+          <h1 style={{ fontSize: 'clamp(26px,4.8vw,46px)', fontWeight: 900, lineHeight: 1.12, margin: '0 0 10px', background: `linear-gradient(135deg,rgba(255,255,255,0.95) 0%,${GOLD} 58%,rgba(255,230,140,0.72) 100%)`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+            Princípios Bíblicos de Comunicação
+          </h1>
+          <p style={{ fontSize: 'clamp(13px,1.8vw,15px)', color: 'rgba(255,255,255,0.42)', lineHeight: 1.70, fontStyle: 'italic', margin: '0 0 20px' }}>
+            A fala nasceu antes do pecado — e pode ser restaurada pelo Evangelho
+          </p>
+        </motion.div>
+
+        {/* Abertura estatística */}
+        <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.05 }} style={{ marginBottom: 36, padding: '18px 22px', borderRadius: 14, background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.09)' }}>
+          <Txt>{`Dados do IBGE mostram que, em 2024, o Brasil registrou 428.301 divórcios, para cerca de 949 mil casamentos civis — uma proporção de aproximadamente 45,7 divórcios para cada 100 casamentos registrados no país.\n\nMais grave: quase metade (47,8%) dos divórcios ocorre em menos de dez anos após o casamento, e o tempo médio entre casamento e divórcio caiu de 15,9 anos (2010) para 13,8 anos (2023). Os casamentos brasileiros estão sendo destruídos mais cedo, não mais tarde — o que torna a formação pré-matrimonial, incluindo comunicação, uma intervenção com janela de tempo estreita.\n\nA urgência teológica, porém, não nasce da estatística — nasce do fato de que a fala é anterior à Queda, parte do desenho original de Deus tanto para a criação quanto para o casamento.`}</Txt>
+        </motion.div>
+
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
+
+          {/* Parte 1 — Cinco Níveis */}
+          <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.08 }}>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '4px 14px', borderRadius: 7, background: 'rgba(255,200,80,0.10)', border: `1px solid ${GOLD_BD}`, marginBottom: 16 }}>
+              <span style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: GOLD }}>Parte 1 de 2 · Os Cinco Níveis de Comunicação</span>
+            </div>
+          </motion.div>
+
+          <Bloco titulo="Nível 1 — Clichê" delay={0.10}>
+            <Txt>{`Ela pergunta: "Como foi seu dia?" Ele responde: "Foi bom, correria normal." — Ou, dez anos de casados: "E aí?" — "Tudo certo, as crianças já jantaram." — "Ótimo."\n\nTroca de informação de superfície. Não há risco, não há revelação. A maioria das conversas do cotidiano começa aqui — o problema é quando nunca sai daqui.`}</Txt>
+          </Bloco>
+
+          <Bloco titulo="Nível 2 — Fatos e Informações" delay={0.12}>
+            <Txt>{`Noivos: "O cerimonial confirmou a igreja para dia 14. Preciso te enviar o orçamento do buffet."\nCasados: "A conta de luz veio mais alta. Marquei a consulta do pediatra pra quinta. Busca as crianças amanhã?"\n\nLogística eficiente. Necessária, mas insuficiente. Um casal que vive no nível 2 administra a vida juntos, mas não a compartilha.`}</Txt>
+          </Bloco>
+
+          <Bloco titulo="Nível 3 — Opiniões e Julgamentos" delay={0.14}>
+            <Verso ref="Provérbios 18.13" texto="O que responde antes de ouvir, estultícia lhe é, e vergonha." />
+            <Verso ref="Tiago 1.19" texto="...seja todo homem pronto para ouvir, tardio para falar, tardio para se irar." />
+            <Txt>{`"Acho que devíamos morar mais perto da sua igreja... mas se você preferir perto do meu trabalho, também dá certo, não é bem uma exigência."\n\nA autodesqualificação da opinião ("talvez seja só impressão minha") frequentemente não é humildade genuína — é medo disfarçado de humildade, porque antecipa rejeição sem testar se ela viria. A correção bíblica não é falar mais opinião com mais força, mas criar, através da escuta genuína do outro, segurança suficiente para que a opinião seja dita sem capa protetora.`}</Txt>
+          </Bloco>
+
+          <Bloco titulo="Nível 4 — Sentimentos e Emoções" delay={0.16}>
+            <Verso ref="Efésios 4.25" texto="Pelo que deixai a mentira, e falai a verdade cada um com o seu próximo; porque somos membros uns dos outros." />
+            <Verso ref="Efésios 4.32" texto="...sede uns para com os outros benignos, misericordiosos, perdoando-vos uns aos outros, como também Deus vos perdoou em Cristo." />
+            <Txt>{`"Quando você demora pra responder, eu me sinto ansiosa, como se não fosse prioridade pra você. Isso vem de coisas que vivi antes de te conhecer, mas preciso te contar."\n\nSentimento não expresso ao cônjuge, na lógica de Paulo, não é apenas reserva pessoal — é o corpo escondendo informação de si mesmo. O texto exige verdade emocional, não apenas factual. Mas Ef 4.32 fornece a condição que torna essa exposição segura: perdão com base no padrão do perdão de Deus em Cristo. Sem essa segurança teológica, ninguém se arrisca ao nível 4.`}</Txt>
+          </Bloco>
+
+          <Bloco titulo="Nível 5 — Comunicação Plena" delay={0.18}>
+            <Verso ref="Gênesis 2.25" texto="E ambos estavam nus, o homem e a sua mulher; e não se envergonhavam." />
+            <Verso ref="1 João 1.7" texto="...e o sangue de Jesus Cristo, seu Filho, nos purifica de todo o pecado." />
+            <Txt>{`"Tenho medo de repetir o casamento dos meus pais — às vezes te trato com a desconfiança que aprendi lá em casa. Preciso da sua ajuda pra não fazer isso, e quero que me avise quando perceber, mesmo que eu me incomode na hora."\n\nGênesis 2.25 fecha a narrativa da criação antes da Queda — nudez sem vergonha é o estado original da intimidade conjugal, não uma conquista terapêutica moderna. Nível 5 não é alcançável por técnica de comunicação — é fruto de uma segurança teológica: a certeza de que ser plenamente conhecido não resulta em rejeição, porque em Cristo o casal já foi plenamente conhecido por Deus e plenamente aceito.`}</Txt>
+          </Bloco>
+
+          <Bloco titulo="Nível de Ruptura — Silêncio Defensivo" delay={0.20}>
+            <Verso ref="Gênesis 3.8–10" texto='E ouviram a voz do Senhor Deus, que passeava no jardim... e escondeu-se Adão e sua mulher da presença do Senhor Deus... "Onde estás?" E ele disse: "Ouvi a tua voz soar no jardim, e temi, porque estava nu, e escondi-me."' />
+            <Txt>{`Depois de discutir a lista de convidados, ela para de comentar sobre o casamento por três dias. Ele pergunta se está tudo bem. Ela: "Tá tudo bem" — num tom que diz o contrário.\n\nEste é o primeiro relato de retirada relacional na Escritura. O esconderijo não é neutro — é resposta ativa ao medo de exposição. Deus não aceita o silêncio como resposta suficiente: Ele pergunta diretamente "onde estás?" para forçar a verbalização do que estava sendo evitado. A pergunta de Deus é o modelo pastoral para lidar com o silêncio defensivo no casamento: não se aceita a retirada como solução; ela é gentilmente confrontada e nomeada.`}</Txt>
+          </Bloco>
+
+          {/* Parte 2 — Princípios */}
+          <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.22 }} style={{ marginTop: 8 }}>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '4px 14px', borderRadius: 7, background: 'rgba(52,211,153,0.10)', border: '1px solid rgba(52,211,153,0.35)', marginBottom: 16 }}>
+              <span style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: SPIRIT }}>Parte 2 de 2 · Sete Princípios Bíblicos</span>
+            </div>
+            <div style={{ fontSize: 'clamp(13px,1.8vw,15px)', color: 'rgba(255,255,255,0.45)', lineHeight: 1.7, marginBottom: 8 }}>
+              Se vocês tivessem que escolher: preferiam um casamento com muito amor e pouca habilidade de conversar, ou um casamento com pouca intensidade de sentimento e excelente capacidade de conversar sobre qualquer assunto? A Bíblia não separa essas duas coisas.
+            </div>
+          </motion.div>
+
+          <Bloco titulo="Princípio 1 — Verdade com Amor" delay={0.24}>
+            <Verso ref="Efésios 4.15, 25" texto="Antes, seguindo a verdade em amor, cresçamos em tudo naquele que é a cabeça, Cristo. [...] Pelo que deixai a mentira, e falai a verdade cada um com o seu próximo; porque somos membros uns dos outros." />
+            <Txt>{`Paulo funde aqui os dois polos que a Queda separou: verdade (que a serpente distorceu) e amor (que Adão destruiu ao culpar Eva). Verdade sem amor vira arma. Amor sem verdade vira sentimentalismo vazio que evita qualquer assunto difícil. O casal cristão é chamado às duas coisas ao mesmo tempo, não a escolher uma.\n\n🗣 Dinâmica — Duas Colunas: peçam exemplos de frases que seriam "verdade sem amor" (ex.: "Você sempre estraga tudo") e "amor sem verdade" (ex.: "Tá tudo bem, não precisa comentar nada"). Para cada exemplo, reescrevam como "verdade com amor" (ex.: "Isso me machucou, e preciso te contar porque nos importamos um com o outro"). Perceberam que verdade com amor exige mais coragem que as duas outras opções?`}</Txt>
+          </Bloco>
+
+          <Bloco titulo="Princípio 2 — Escuta antes da Fala" delay={0.26}>
+            <Verso ref="Tiago 1.19" texto="...seja todo homem pronto para ouvir, tardio para falar, tardio para se irar." />
+            <Verso ref="Provérbios 18.13" texto="O que responde antes de ouvir, estultícia lhe é, e vergonha." />
+            <Txt>{`A ordem de Tiago não é aleatória: escuta lenta evita fala apressada, que evita ira. A Bíblia trata boa fala como consequência de boa escuta — não o contrário. A maioria dos conflitos conjugais não nasce de má intenção, mas de resposta formulada antes de a escuta terminar.\n\n🗣 Dinâmica — Repetir Antes de Responder: Um compartilha, por 1 minuto, algo real que sente sobre a preparação do casamento. Antes de responder, o outro precisa repetir com suas próprias palavras o que ouviu, até o primeiro confirmar: "sim, é isso mesmo." Só então o segundo responde. Invertam os papéis. Foi mais difícil repetir corretamente, ou segurar a vontade de já responder?`}</Txt>
+          </Bloco>
+
+          <Bloco titulo="Princípio 3 — Ira sem Pecado" delay={0.28}>
+            <Verso ref="Efésios 4.26" texto="Irai-vos, e não pequeis; não se ponha o sol sobre a vossa ira." />
+            <Txt>{`O texto grego distingue orgé (ira legítima e temporária) de parorgismós (indignação retida, processada em silêncio, que se converte em ressentimento acumulado — é essa forma que o texto proíbe ao dizer "não se ponha o sol"). A Escritura não pede supressão emocional. Pede processamento não adiado. Guardar mágoa "para não brigar" desobedece este texto tanto quanto explodir em fúria.\n\nNota pastoral: "não se ponha o sol" não significa resolver tudo em uma única conversa antes de dormir a qualquer custo — significa não deixar a indignação apodrecer em silêncio por dias ou semanas. Alguns temas exigem mais de uma conversa; o que o texto proíbe é o acúmulo silencioso, não a paciência para tratar bem um assunto complexo.\n\n🗣 Dinâmica — O Prazo do Sol: Cada um pensa em algo pequeno que ficou "engasgado" nas últimas duas semanas. Em dupla, compartilhem: "Eu me senti [sentimento] quando [situação], e eu ainda não tinha te contado isso." O outro responde apenas ouvindo e agradecendo — sem se defender ainda. O que fica mais pesado: o conflito resolvido na hora, ou o silêncio guardado por dias?`}</Txt>
+          </Bloco>
+
+          <Bloco titulo="Princípio 4 — Fala que Edifica" delay={0.30}>
+            <Verso ref="Efésios 4.29" texto="Não saia da vossa boca nenhuma palavra torpe, mas só a que for boa para edificação, para que dê graça aos que a ouvem." />
+            <Verso ref="Colossenses 4.6" texto="A vossa palavra seja sempre agradável, temperada com sal." />
+            <Txt>{`O verbo grego para "edificação" (oikodomé) é literalmente construção civil. Paulo propõe um teste funcional: cada fala deveria passar por duas perguntas — "isso é verdade?" (Ef 4.25) e "isso constrói?" (Ef 4.29). A ausência de qualquer uma das duas é desobediência — dizer uma verdade que apenas destrói não cumpre o texto tanto quanto mentir.\n\n🗣 Dinâmica — Teste da Edificação: Cada um pensa numa frase que já disse ao outro, ou pretende dizer, sobre algo difícil (família, dinheiro, hábito que incomoda). Aplica o teste: "Isso é verdade? Isso edifica?" Se falhar em qualquer um dos dois testes, reescreva a frase.`}</Txt>
+          </Bloco>
+
+          <Bloco titulo="Princípio 5 — Evite Aborrecer" delay={0.32}>
+            <Verso ref="Provérbios 10.19" texto="Na multidão de palavras não faltará transgressão, mas o que modera os seus lábios é prudente." />
+            <Verso ref="Provérbios 21.1" texto="Como ribeiros de águas, assim é o coração do rei na mão do Senhor; a tudo quanto quer o inclina." />
+            <Txt>{`Provérbios 10.19 não condena falar muito por si só — condena a probabilidade de que, quanto mais palavras, maior a chance de alguma delas ferir. "Aborrecer" aqui é o desgaste acumulado de repetir a mesma queixa até que a mensagem perca força e passe a ser ruído, não comunicação.\n\nProvérbios 21.1 é aplicado aqui por extensão pastoral: se até o coração de um rei está na mão do Senhor para ser inclinado, nenhum cônjuge precisa insistir, pressionar ou repetir um argumento dez vezes para "vencer" a vontade do outro. A confiança de que Deus é quem realmente move corações liberta o casal da compulsão de aborrecer o outro até obter concordância pela exaustão.\n\n🗣 Dinâmica — Editando o Discurso: Cada um escreve um pedido ou queixa que já repetiu ao outro mais de três vezes. Reduzam a frase ao essencial. Combinem: dizer essa versão uma vez, e depois entregar o resultado a Deus. O que muda quando vocês confiam que Deus pode tocar o coração do outro?`}</Txt>
+          </Bloco>
+
+          <Bloco titulo="Princípio 6 — Repita as Frases Essenciais" delay={0.34}>
+            <Verso ref="Efésios 4.32" texto="...sede uns para com os outros benignos, misericordiosos, perdoando-vos uns aos outros, como também Deus vos perdoou em Cristo." />
+            <Txt>{`Benignidade (chrestotes) não é traço de personalidade estático — é qualidade que se pratica em atos concretos e repetidos. Repetir frases simples — por favor, obrigado(a), eu te amo, me desculpa, eu te perdoo — não é vazio nem infantil: é a versão verbal, diária e miniatura, do mesmo perdão "como também Deus vos perdoou em Cristo".\n\n🗣 Dinâmica — Vocabulário do Amor: Cinco frases essenciais: "Por favor" · "Obrigado(a)" · "Eu te amo" · "Me desculpa" · "Eu te perdoo". Qual dessas frases vocês dizem menos um ao outro hoje? Comprometam-se a dizer, ao menos uma vez por dia nesta semana, a frase que menos costumam dizer. Vocês não vão sentir isso todos os dias com a mesma intensidade — e não precisam. A frase carrega o compromisso mesmo quando o sentimento ainda não alcançou.`}</Txt>
+          </Bloco>
+
+          <Bloco titulo="Princípio 7 — Não Culpe nem Critique" delay={0.36}>
+            <Verso ref="Gálatas 6.1" texto="Irmãos, se um homem chegar a ser surpreendido em algum delito, vós, que sois espirituais, encaminhai o tal com espírito de mansidão, considerando-te a ti mesmo, para que não sejas também tentado." />
+            <Txt>{`O verbo grego para "encaminhar" (katartizo) é o mesmo usado em Marcos 1.19 para os pescadores consertando as redes — e em contextos médicos gregos para reduzir uma fratura óssea. Restaurar, no vocabulário de Paulo, não é apontar o erro e se afastar — é o trabalho cuidadoso de recolocar algo quebrado em seu lugar.\n\nNote a condição final: "considerando-te a ti mesmo, para que não sejas também tentado" — a autocrítica antecede a crítica do outro. Isso ecoa Mateus 7.3–5 e serve como freio contra o padrão de crítica que Provérbios já havia advertido. Confrontar uma falha do cônjuge segue a lógica de katartizo — mansidão, consciência da própria vulnerabilidade ao mesmo pecado, e o objetivo de reparar, não de vencer a discussão.\n\n🗣 Dinâmica — Encaminhar em vez de Acusar: Cada um escreve uma frase de crítica no formato "você sempre..." ou "você nunca...". Reescrevam seguindo a estrutura de Gl 6.1: nomear o fato com mansidão + reconhecer a própria vulnerabilidade ao mesmo tipo de falha. Exemplo: "Você sempre chega atrasado" → "Percebi que você atrasou de novo — e eu sei que também falho em compromissos às vezes. Podemos conversar sobre isso com calma?"`}</Txt>
+          </Bloco>
+
+          {/* Para conversar */}
+          <Bloco titulo="Para Conversar em Casal" delay={0.38}>
+            <div style={{ marginBottom: 12, fontSize: 'clamp(12px,1.6vw,13.5px)', color: 'rgba(255,255,255,0.45)', fontStyle: 'italic' }}>
+              Reservem alguns minutos, só vocês dois. Não existe resposta certa — o objetivo é começar a nomear padrões reais.
+            </div>
+            <Pergunta n={1} texto="Individualmente: quando estou magoado(a) ou com medo na nossa relação, meu padrão mais comum é: (a) atacar/acusar, (b) me calar e me afastar, (c) minimizar e fingir que está tudo bem, (d) outro — qual?" />
+            <Pergunta n={2} texto="Isso é falha de personalidade, ou é o mesmo padrão de Adão e Eva se escondendo entre as árvores? O que muda para você ao pensar assim?" />
+            <Pergunta n={3} texto="Dos sete princípios de hoje, qual vocês precisam praticar com mais urgência como casal? Por quê?" />
+            <Pergunta n={4} texto="Que frase do Vocabulário do Amor (Princípio 6) vocês vão se comprometer a dizer mais esta semana?" />
+          </Bloco>
+
+          {/* Compromisso escrito */}
+          <Bloco titulo="Carta de Compromisso" delay={0.40}>
+            <Txt>Escolham, dos sete princípios trabalhados hoje, um que mais precisam praticar nas próximas semanas. Escrevam juntos uma frase concreta de compromisso abaixo — o líder de casais guardará e devolverá no encerramento do curso.</Txt>
+            <div style={{ marginTop: 16, height: 48, borderBottom: '1px solid rgba(255,200,80,0.20)' }} />
+            <div style={{ marginTop: 16, fontSize: 'clamp(12px,1.6vw,13.5px)', color: 'rgba(255,255,255,0.35)', fontStyle: 'italic' }}>
+              Oração de encerramento: Adoração (pela fala como dom de Deus) → Confissão (dos padrões de Queda nomeados hoje) → Petição (por graça para verdade com amor, escuta, ira sem pecado, fala que edifica) → Consagração (cada casal, nominalmente).
+            </div>
+          </Bloco>
+
+          {/* Versículo-síntese */}
+          <motion.div initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.42 }}
+            style={{ borderRadius: 14, background: 'rgba(255,200,80,0.10)', border: `1.5px solid ${GOLD_BD}`, padding: '22px 24px', textAlign: 'center' }}>
+            <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: GOLD, marginBottom: 12 }}>Versículo-Síntese</div>
+            <div style={{ fontSize: 'clamp(15px,2.2vw,18px)', fontWeight: 800, color: 'rgba(255,255,255,0.88)', lineHeight: 1.5, marginBottom: 10, fontStyle: 'italic' }}>
+              "Antes, seguindo a verdade em amor, cresçamos em tudo naquele que é a cabeça, Cristo."
+            </div>
+            <div style={{ fontSize: 11, color: GOLD, fontWeight: 700, letterSpacing: '0.12em' }}>Efésios 4.15</div>
+          </motion.div>
+
+          {/* Referências */}
+          <Bloco titulo="Referências" delay={0.44}>
+            {[
+              'EGGERICHS, Emerson. Amor e Respeito. São Paulo: Mundo Cristão, 2005.',
+              'HARLEY, Willard F. Amantes ou Cúmplices? O Segredo de um Casamento Feliz. Rio de Janeiro: CPAD, 2011.',
+              'HARVEY, Dave. When Sinners Say I Do: Discovering the Power of the Gospel for Marriage. Shepherdsville: Shepherd Press, 2007.',
+              'KELLER, Timothy; KELLER, Kathy. O Significado do Casamento. Rio de Janeiro: Vida Nova, 2012.',
+            ].map((ref, i) => (
+              <div key={i} style={{ fontSize: 'clamp(11px,1.5vw,12.5px)', color: 'rgba(255,255,255,0.45)', lineHeight: 1.75, borderBottom: i < 3 ? '1px solid rgba(255,255,255,0.05)' : 'none', padding: '6px 0' }}>
                 {ref}
               </div>
             ))}

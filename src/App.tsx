@@ -26,7 +26,7 @@ import DevocionalPage from './pages/DevocionalPage';
 import DevocionalHubPage from './pages/DevocionalHubPage';
 import DevocionalConfessionalPage from './pages/DevocionalConfessionalPage';
 import PregacaoPage from './pages/PregacaoPage';
-import FamiliaPage, { EsbocosPage, NoivosHub, AulaInaugural, CasadosPage } from './pages/FamiliaPage';
+import FamiliaPage, { EsbocosPage, NoivosHub, AulaInaugural, Aula02, CasadosPage } from './pages/FamiliaPage';
 import EducacaoPage from './pages/EducacaoPage';
 import TeologiaPage from './pages/TeologiaPage';
 import TeologiaAulasPage from './pages/TeologiaAulasPage';
@@ -115,6 +115,7 @@ export default function App() {
           <Route path="/familia/esbocos" element={<EsbocosPage />} />
           <Route path="/familia/noivos" element={<NoivosHub />} />
           <Route path="/familia/noivos/aula-inaugural" element={<AulaInaugural />} />
+          <Route path="/familia/noivos/aula-02" element={<Aula02 />} />
           <Route path="/familia/casados" element={<CasadosPage />} />
 
           {/* Educação (legado) */}
