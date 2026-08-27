@@ -1742,7 +1742,14 @@ export function Aula02() {
 
         {/* Abertura estatística */}
         <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.05 }} style={{ marginBottom: 36, padding: '18px 22px', borderRadius: 14, background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.09)' }}>
-          <Txt>{`Dados do IBGE mostram que, em 2024, o Brasil registrou 428.301 divórcios, para cerca de 949 mil casamentos civis — uma proporção de aproximadamente 45,7 divórcios para cada 100 casamentos registrados no país.\n\nMais grave: quase metade (47,8%) dos divórcios ocorre em menos de dez anos após o casamento, e o tempo médio entre casamento e divórcio caiu de 15,9 anos (2010) para 13,8 anos (2023). Os casamentos brasileiros estão sendo destruídos mais cedo, não mais tarde — o que torna a formação pré-matrimonial, incluindo comunicação, uma intervenção com janela de tempo estreita.\n\nA urgência teológica, porém, não nasce da estatística — nasce do fato de que a fala é anterior à Queda, parte do desenho original de Deus tanto para a criação quanto para o casamento.`}</Txt>
+          <Txt>{`Dados do IBGE mostram que, em 2024, o Brasil registrou 428.301 divórcios, para cerca de 949 mil casamentos civis — uma proporção de aproximadamente 45,7 divórcios para cada 100 casamentos registrados no país.¹\n\nMais grave: quase metade (47,8%) dos divórcios ocorre em menos de dez anos após o casamento, e o tempo médio entre casamento e divórcio caiu de 15,9 anos (2010) para 13,8 anos (2023). Os casamentos brasileiros estão sendo destruídos mais cedo, não mais tarde — o que torna a formação pré-matrimonial, incluindo comunicação, uma intervenção com janela de tempo estreita.²\n\nA urgência teológica, porém, não nasce da estatística — nasce do fato de que a fala é anterior à Queda, parte do desenho original de Deus tanto para a criação quanto para o casamento.`}</Txt>
+          {/* Notas de rodapé */}
+          <div style={{ marginTop: 20, paddingTop: 14, borderTop: '1px solid rgba(255,255,255,0.08)' }}>
+            <div style={{ fontSize: 'clamp(10px,1.3vw,11.5px)', color: 'rgba(255,255,255,0.38)', lineHeight: 1.75 }}>
+              <div style={{ marginBottom: 4 }}>¹ INSTITUTO BRASILEIRO DE GEOGRAFIA E ESTATÍSTICA (IBGE). <em>Estatísticas do Registro Civil 2024.</em> Rio de Janeiro: IBGE, 2025.</div>
+              <div>² INSTITUTO BRASILEIRO DE FAMÍLIA E DIREITO DAS FAMÍLIAS (IBDFAM), com base em dados do IBGE — <em>Estatísticas do Registro Civil 2023,</em> divulgação de 2025: 47,8% dos divórcios brasileiros com informação de data ocorreram em menos de dez anos de união, ante 42,8% em 2013; tempo médio entre casamento e divórcio caiu de 15,9 anos (2010) para 13,8 anos (2023).</div>
+            </div>
+          </div>
         </motion.div>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
