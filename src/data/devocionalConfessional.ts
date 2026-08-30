@@ -7342,14 +7342,14 @@ export function gerarDiasAgosto_D(): ReturnType<typeof bloco>[] {
     {
       dia: 239,
       data: '27 de agosto',
-      tema: 'A Assurance da Salvação: Certeza Baseada em Cristo, Não em Sentimentos',
+      tema: 'A certeza da Salvação: Certeza Baseada em Cristo, Não em Sentimentos',
       capitulo: 'CFW 18.1/18.2',
       versiculo: 'Romanos 8.16',
       versiculoTexto: 'O próprio Espírito testifica com o nosso espírito que somos filhos de Deus.',
       confissaoTexto: 'Embora os hipócritas e outras pessoas não regeneradas possam se enganar vãmente com esperanças falsas e presunções carnais de estarem no favor de Deus e no estado de salvação, todavia, tal esperança deles perecerá; os que verdadeiramente creem no Senhor Jesus e o amam sinceramente, se esforçando para andar em boa consciência diante dele, podem, nesta vida, ter certeza de estarem em estado de graça.',
       cfwRef: 'CB 1689 18.1',
       cfwComparacao: 'CB 1689 18.1 é idêntica. A confissão distingue: (a) assurance verdadeira — baseada em promessas de Deus, evidências de graça e testemunho do Espírito; (b) presunção falsa — baseada em experiência emocional sem fundamento, profissão de fé sem frutos. A assurance verdadeira é possível nesta vida — não como arrogância, mas como confiança baseada em Cristo.',
-      exposicao: 'A assurance da salvação tem três fundamentos confessionais: (1) as promessas divinas da Escritura (fundamento objetivo), (2) as evidências internas da graça — amor a Cristo, desejo de obediência, ódio ao pecado (fundamento subjetivo interno), (3) o testemunho do Espírito Santo (Rm 8.16 — fundamento pneumatológico). Nenhum dos três sozinho é suficiente; os três juntos fornecem assurance robusta.',
+      exposicao: 'A certeza da salvação tem três fundamentos confessionais: (1) as promessas divinas da Escritura (fundamento objetivo), (2) as evidências internas da graça — amor a Cristo, desejo de obediência, ódio ao pecado (fundamento subjetivo interno), (3) o testemunho do Espírito Santo (Rm 8.16 — fundamento pneumatológico). Nenhum dos três sozinho é suficiente; os três juntos fornecem assurance robusta.',
       reforco: 'Joel Beeke, em <em>The Quest for Full Assurance: The Legacy of Calvin and His Successors</em> (Edimburgo: Banner of Truth, 1999), escreve: <em>"A assurance tem três fundamentos: as promessas objetivas da Escritura, as evidências internas da graça na vida do crente, e o testemunho direto do Espírito. Os três devem ser cultivados — a assurance não é automática, mas é possível e normal para o crente maduro."</em>',
       aplicacoes: {
         digital: 'A ansiedade espiritual digital — comparação, performance, pressão por métricas de fé — é inimiga da assurance. Leia 1 João 5.13 e observe que João escreve para que os crentes <em>saibam</em> que têm vida eterna. Certeza é possível — e é fundada na promessa, não no sentimento.',
