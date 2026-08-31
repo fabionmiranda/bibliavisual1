@@ -28,6 +28,16 @@ const SEMANAS = [
   { semana: 16, titulo: 'Semana 16 — Atos',         tema: 'Testemunho fiel sob pressão' },
   { semana: 17, titulo: 'Semana 17 — Atos',         tema: 'Graça sem fronteiras' },
   { semana: 18, titulo: 'Semana 18 — Atos',         tema: 'Espírito que abre portas' },
+  { semana: 19, titulo: 'Semana 19 — Atos',         tema: 'Paulo preso, mas a Palavra livre' },
+  { semana: 20, titulo: 'Semana 20 — Romanos',      tema: 'Justificados pela fé' },
+  { semana: 21, titulo: 'Semana 21 — Romanos',      tema: 'Mortos para o pecado, vivos para Deus' },
+  { semana: 22, titulo: 'Semana 22 — Romanos',      tema: 'A vida da aliança no corpo de Cristo' },
+  { semana: 23, titulo: 'Semana 23 — 1 Coríntios',  tema: 'Fraqueza, fundação e o corpo como templo' },
+  { semana: 24, titulo: 'Semana 24 — 1 Coríntios',  tema: 'O amor que edifica o lar' },
+  { semana: 25, titulo: 'Semana 25 — 1 Coríntios',  tema: 'O amor nunca falha' },
+  { semana: 26, titulo: 'Semana 26 — 2 Coríntios',  tema: 'Consolação e aliança renovada' },
+  { semana: 27, titulo: 'Semana 27 — 2 Cor / Gl',   tema: 'Generosidade e poder na fraqueza' },
+  { semana: 28, titulo: 'Semana 28 — Gálatas',       tema: 'Fruto do Espírito e liberdade para amar' },
 ];
 
 const ESTACOES = ['I — O Noivo se revela', 'II — A Noiva é formada', 'III — A vida doméstica da aliança', 'IV — Fidelidade até as núpcias', 'Fechamento'];
