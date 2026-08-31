@@ -38,6 +38,11 @@ const SEMANAS = [
   { semana: 26, titulo: 'Semana 26 — 2 Coríntios',  tema: 'Consolação e aliança renovada' },
   { semana: 27, titulo: 'Semana 27 — 2 Cor / Gl',   tema: 'Generosidade e poder na fraqueza' },
   { semana: 28, titulo: 'Semana 28 — Gálatas',       tema: 'Fruto do Espírito e liberdade para amar' },
+  { semana: 29, titulo: 'Semana 29 — Efésios',       tema: 'O lar edificado em Cristo' },
+  { semana: 30, titulo: 'Semana 30 — Filipenses',    tema: 'Alegria e contentamento' },
+  { semana: 31, titulo: 'Semana 31 — Colossenses',   tema: 'Cristo, cabeça de tudo' },
+  { semana: 32, titulo: 'Semana 32 — Tessalonicenses', tema: 'Esperança da vinda e fidelidade no trabalho' },
+  { semana: 33, titulo: 'Semana 33 — 1-2 Timóteo',  tema: 'O bom depósito e a aliança fiel' },
 ];
 
 const ESTACOES = ['I — O Noivo se revela', 'II — A Noiva é formada', 'III — A vida doméstica da aliança', 'IV — Fidelidade até as núpcias', 'Fechamento'];
