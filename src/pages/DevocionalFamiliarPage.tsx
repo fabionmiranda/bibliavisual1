@@ -43,6 +43,11 @@ const SEMANAS = [
   { semana: 31, titulo: 'Semana 31 — Colossenses',   tema: 'Cristo, cabeça de tudo' },
   { semana: 32, titulo: 'Semana 32 — Tessalonicenses', tema: 'Esperança da vinda e fidelidade no trabalho' },
   { semana: 33, titulo: 'Semana 33 — 1-2 Timóteo',  tema: 'O bom depósito e a aliança fiel' },
+  { semana: 34, titulo: 'Semana 34 — 2Tm / Tito',   tema: 'Sofrer como bom soldado' },
+  { semana: 35, titulo: 'Semana 35 — Hebreus',       tema: 'O sumo sacerdote fiel' },
+  { semana: 36, titulo: 'Semana 36 — Hebreus',       tema: 'A fé que age' },
+  { semana: 37, titulo: 'Semana 37 — Tiago / 1Pe',   tema: 'Fé que age e amor que persevera' },
+  { semana: 38, titulo: 'Semana 38 — 1Pe / 2Pe / 1Jo', tema: 'Amor que persevera até o fim' },
 ];
 
 const ESTACOES = ['I — O Noivo se revela', 'II — A Noiva é formada', 'III — A vida doméstica da aliança', 'IV — Fidelidade até as núpcias', 'Fechamento'];
