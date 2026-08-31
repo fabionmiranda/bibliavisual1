@@ -23,6 +23,11 @@ const SEMANAS = [
   { semana: 11, titulo: 'Semana 11 — Lucas / João', tema: 'A Ressurreição e o Verbo encarnado' },
   { semana: 12, titulo: 'Semana 12 — João',         tema: 'O Bom Pastor e o Pão da Vida' },
   { semana: 13, titulo: 'Semana 13 — João',         tema: 'A Hora Gloriosa — serviço e paz' },
+  { semana: 14, titulo: 'Semana 14 — João',         tema: 'Permanecer na videira' },
+  { semana: 15, titulo: 'Semana 15 — João / Atos',  tema: 'O Espírito transforma a casa' },
+  { semana: 16, titulo: 'Semana 16 — Atos',         tema: 'Testemunho fiel sob pressão' },
+  { semana: 17, titulo: 'Semana 17 — Atos',         tema: 'Graça sem fronteiras' },
+  { semana: 18, titulo: 'Semana 18 — Atos',         tema: 'Espírito que abre portas' },
 ];
 
 const ESTACOES = ['I — O Noivo se revela', 'II — A Noiva é formada', 'III — A vida doméstica da aliança', 'IV — Fidelidade até as núpcias', 'Fechamento'];
@@ -292,7 +297,7 @@ export default function DevocionalFamiliarPage() {
             }}
           >
             <span style={{ fontSize: 13, fontWeight: 900, color: COR, letterSpacing: '0.14em', textTransform: 'uppercase' }}>
-              📅 Calendário — Janeiro a Março · 2026 (Dias 1–{DEVOCIONAL_FAMILIAR.length})
+              📅 Calendário · 2026 (Dias 1–{DEVOCIONAL_FAMILIAR.length})
             </span>
             <span style={{ fontSize: 16, color: COR, transition: 'transform 0.22s', transform: calAberto ? 'rotate(180deg)' : 'rotate(0deg)' }}>▼</span>
           </button>
