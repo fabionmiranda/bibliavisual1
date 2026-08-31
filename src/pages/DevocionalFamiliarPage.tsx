@@ -48,6 +48,11 @@ const SEMANAS = [
   { semana: 36, titulo: 'Semana 36 — Hebreus',       tema: 'A fé que age' },
   { semana: 37, titulo: 'Semana 37 — Tiago / 1Pe',   tema: 'Fé que age e amor que persevera' },
   { semana: 38, titulo: 'Semana 38 — 1Pe / 2Pe / 1Jo', tema: 'Amor que persevera até o fim' },
+  { semana: 39, titulo: 'Semana 39 — Jd / Ap 1-7',    tema: 'As cartas finais e o início da visão' },
+  { semana: 40, titulo: 'Semana 40 — Ap 8-14',         tema: 'No meio da tribulação' },
+  { semana: 41, titulo: 'Semana 41 — Ap 15-19',        tema: 'A queda de Babilônia e as núpcias' },
+  { semana: 42, titulo: 'Semana 42 — Ap 20-22',        tema: 'Todas as coisas novas' },
+  { semana: 43, titulo: 'Semana 43 — Fechamento',      tema: 'Renovação da aliança' },
 ];
 
 const ESTACOES = ['I — O Noivo se revela', 'II — A Noiva é formada', 'III — A vida doméstica da aliança', 'IV — Fidelidade até as núpcias', 'Fechamento'];
@@ -251,9 +256,18 @@ function CardDia({ d, expanded, onToggle }: { d: DiaFamiliar; expanded: boolean;
   );
 }
 
+function diaDeHoje(): number {
+  const inicio = new Date(2026, 0, 1);
+  const hoje = new Date();
+  const diff = Math.floor((hoje.getTime() - inicio.getTime()) / 86400000) + 1;
+  return Math.max(1, Math.min(diff, DEVOCIONAL_FAMILIAR.length));
+}
+
 export default function DevocionalFamiliarPage() {
   const [expandedDia, setExpandedDia] = useState<number | null>(null);
   const [calAberto, setCalAberto] = useState(true);
+  const diaHoje = diaDeHoje();
+  const diaAtual = DEVOCIONAL_FAMILIAR.find(d => d.dia === diaHoje) ?? DEVOCIONAL_FAMILIAR[0];
 
   function scrollToDia(dia: number) {
     setExpandedDia(dia);
@@ -296,6 +310,55 @@ export default function DevocionalFamiliarPage() {
               </span>
             ))}
           </div>
+        </motion.div>
+
+        {/* Card do dia atual */}
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.08 }}
+          style={{ marginBottom: 36 }}>
+          <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.26em', textTransform: 'uppercase', color: COR, marginBottom: 14, textAlign: 'center' }}>
+            📖 Devocional de Hoje
+          </div>
+          <button
+            onClick={() => scrollToDia(diaAtual.dia)}
+            style={{
+              width: '100%', background: 'none', border: 'none', cursor: 'pointer', padding: 0, textAlign: 'left',
+            }}
+          >
+            <motion.div
+              whileHover={{ borderColor: COR, background: 'rgba(251,113,133,0.09)' }}
+              transition={{ duration: 0.22 }}
+              style={{
+                borderRadius: 20, border: `1.5px solid rgba(251,113,133,0.38)`,
+                background: 'rgba(251,113,133,0.05)', padding: 'clamp(20px,3vw,30px)',
+                display: 'flex', alignItems: 'center', gap: 18,
+              }}
+            >
+              {/* Número */}
+              <div style={{
+                minWidth: 64, height: 64, borderRadius: 16, flexShrink: 0,
+                background: 'rgba(251,113,133,0.14)', border: `1.5px solid rgba(251,113,133,0.35)`,
+                display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
+              }}>
+                <span style={{ fontSize: 10, fontWeight: 900, color: COR, letterSpacing: '0.1em', textTransform: 'uppercase' }}>Dia</span>
+                <span style={{ fontSize: 22, fontWeight: 900, color: COR, lineHeight: 1.1 }}>{diaAtual.dia}</span>
+              </div>
+              <div style={{ flex: 1, minWidth: 0 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap', marginBottom: 6 }}>
+                  {(() => { const b = badgeTipo(diaAtual.tipo); return (
+                    <span style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: b.color, padding: '2px 10px', borderRadius: 99, background: b.bg }}>{b.label}</span>
+                  ); })()}
+                  <span style={{ fontSize: 11, color: 'rgba(251,113,133,0.60)', fontWeight: 600 }}>
+                    {diaParaDataCompleta(diaAtual.dia)}
+                  </span>
+                </div>
+                <div style={{ fontSize: 'clamp(16px,2.4vw,20px)', fontWeight: 900, color: '#fff', lineHeight: 1.25, marginBottom: 4 }}>
+                  {diaAtual.tema}
+                </div>
+                <div style={{ fontSize: 13, color: 'rgba(200,200,255,0.55)', fontWeight: 500 }}>{diaAtual.leitura}</div>
+              </div>
+              <div style={{ fontSize: 20, color: COR, flexShrink: 0, opacity: 0.7 }}>→</div>
+            </motion.div>
+          </button>
         </motion.div>
 
         {/* Como usar */}
