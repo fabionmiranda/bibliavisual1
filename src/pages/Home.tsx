@@ -330,7 +330,7 @@ export default function Home() {
   return (
     <div className="min-h-screen relative overflow-x-hidden">
       <MarcaDagua />
-      <Navbar lang={lang} />
+      <Navbar lang={lang} onToggleLang={() => setLang(l => l === 'pt' ? 'en' : 'pt')} />
       
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
@@ -897,30 +897,6 @@ export default function Home() {
 
       <Footer lang={lang} />
 
-      {/* Language toggle — fixed, discrete */}
-      <button
-        onClick={() => setLang(lang === 'pt' ? 'en' : 'pt')}
-        title={lang === 'pt' ? 'Switch to English' : 'Mudar para Português'}
-        className="fixed z-50 flex items-center gap-1.5 rounded-full font-black uppercase tracking-widest transition-all hover:scale-105 active:scale-95 select-none"
-        style={{
-          bottom: 'calc(1.5rem + env(safe-area-inset-bottom))',
-          right: '1rem',
-          padding: '0.35rem 0.75rem',
-          fontSize: '11px',
-          background: 'rgba(10,10,20,0.80)',
-          border: '1px solid rgba(255,255,255,0.14)',
-          color: 'rgba(255,255,255,0.55)',
-          backdropFilter: 'blur(14px)',
-          WebkitBackdropFilter: 'blur(14px)',
-          boxShadow: '0 2px 16px rgba(0,0,0,0.5)',
-          touchAction: 'manipulation',
-        }}
-        onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = '#fff'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(0,212,255,0.45)'; }}
-        onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = 'rgba(255,255,255,0.55)'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(255,255,255,0.14)'; }}
-      >
-        <Languages className="w-3 h-3 shrink-0" />
-        <span>{lang === 'pt' ? 'EN' : 'PT'}</span>
-      </button>
     </div>
   );
 }
