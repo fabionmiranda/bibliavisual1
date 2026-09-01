@@ -16,6 +16,134 @@ function dataFormatada(): string {
   return new Date().toLocaleDateString('pt-BR', { weekday: 'long', day: 'numeric', month: 'long' });
 }
 
+const MESES_NOMES = ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];
+
+function BarraProgressoAnual({ diaHoje, totalDias, devHoje }: {
+  diaHoje: number;
+  totalDias: number;
+  devHoje: DiaConfessional | null;
+}) {
+  const pct = Math.round((diaHoje / totalDias) * 100);
+  const mesIdx = new Date().getMonth();
+  const badge = devHoje ? BADGE_CONF[devHoje.confissao] : null;
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 18 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+      style={{
+        borderRadius: 22,
+        border: '1.5px solid rgba(167,139,250,0.32)',
+        background: 'linear-gradient(145deg, rgba(167,139,250,0.08) 0%, rgba(167,139,250,0.03) 100%)',
+        overflow: 'hidden',
+        marginBottom: 32,
+      }}
+    >
+      {/* Linha de topo */}
+      <div style={{ height: 3, background: 'linear-gradient(90deg, rgba(167,139,250,0.9), rgba(192,132,252,0.6), rgba(167,139,250,0.2))' }} />
+
+      <div style={{ padding: 'clamp(18px,3vw,28px)' }}>
+        {/* Linha superior: título + % */}
+        <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 16, marginBottom: 18, flexWrap: 'wrap' }}>
+          <div>
+            <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase', color: 'rgba(167,139,250,0.65)', marginBottom: 6 }}>
+              📊 Progresso Anual
+            </div>
+            <div style={{ fontSize: 'clamp(15px,2.2vw,18px)', fontWeight: 900, color: '#fff', lineHeight: 1.2 }}>
+              Dia <span style={{ color: COR }}>{diaHoje}</span> de <span style={{ color: 'rgba(200,200,255,0.55)' }}>{totalDias}</span>
+            </div>
+            <div style={{ fontSize: 12, color: 'rgba(200,200,255,0.45)', fontWeight: 600, marginTop: 3 }}>
+              {dataFormatada()}
+            </div>
+          </div>
+
+          {/* Percentual em destaque */}
+          <div style={{
+            display: 'flex', flexDirection: 'column', alignItems: 'center',
+            background: 'rgba(167,139,250,0.12)', border: '1.5px solid rgba(167,139,250,0.30)',
+            borderRadius: 16, padding: '12px 20px', minWidth: 80, flexShrink: 0,
+          }}>
+            <span style={{ fontSize: 'clamp(22px,3.5vw,30px)', fontWeight: 900, color: COR, lineHeight: 1 }}>{pct}%</span>
+            <span style={{ fontSize: 10, fontWeight: 700, color: 'rgba(167,139,250,0.65)', letterSpacing: '0.1em', marginTop: 3 }}>do ano</span>
+          </div>
+        </div>
+
+        {/* Barra principal */}
+        <div style={{ marginBottom: 10 }}>
+          <div style={{ height: 8, borderRadius: 99, background: 'rgba(255,255,255,0.06)', overflow: 'hidden' }}>
+            <motion.div
+              initial={{ width: 0 }}
+              animate={{ width: `${pct}%` }}
+              transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
+              style={{
+                height: '100%', borderRadius: 99,
+                background: 'linear-gradient(90deg, rgba(167,139,250,1), rgba(192,132,252,0.85))',
+                boxShadow: '0 0 12px rgba(167,139,250,0.40)',
+              }}
+            />
+          </div>
+        </div>
+
+        {/* Marcadores dos meses */}
+        <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 18 }}>
+          {MESES_NOMES.map((m, i) => (
+            <span key={m} style={{
+              fontSize: 9, fontWeight: i === mesIdx ? 900 : 600,
+              color: i === mesIdx ? COR : 'rgba(200,200,255,0.28)',
+              letterSpacing: '0.04em',
+            }}>{m}</span>
+          ))}
+        </div>
+
+        {/* Devocional de hoje (inline) */}
+        {devHoje && (
+          <div style={{
+            borderRadius: 14, background: 'rgba(167,139,250,0.07)',
+            border: '1px solid rgba(167,139,250,0.22)', padding: '14px 18px',
+            display: 'flex', alignItems: 'center', gap: 14, flexWrap: 'wrap',
+          }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 2, flex: 1, minWidth: 180 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+                <span style={{
+                  fontSize: 9, fontWeight: 900, letterSpacing: '0.16em', textTransform: 'uppercase',
+                  color: badge?.cor ?? COR, padding: '2px 8px', borderRadius: 99,
+                  background: 'rgba(255,255,255,0.05)', border: `1px solid ${badge?.cor ?? COR}50`,
+                }}>{devHoje.capitulo.split(' — ')[0]}</span>
+                <span style={{ fontSize: 10, color: 'rgba(200,200,255,0.45)', fontWeight: 600 }}>Leitura de hoje</span>
+              </div>
+              <div style={{ fontSize: 'clamp(14px,2vw,16px)', fontWeight: 800, color: '#fff', lineHeight: 1.3 }}>
+                {devHoje.tema}
+              </div>
+              <div style={{ fontSize: 12, color: COR, fontWeight: 700, opacity: 0.80 }}>{devHoje.versiculo}</div>
+            </div>
+            <div style={{
+              width: 36, height: 36, borderRadius: 10, flexShrink: 0,
+              background: 'rgba(167,139,250,0.14)', border: '1px solid rgba(167,139,250,0.30)',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              color: COR, fontSize: 16, fontWeight: 900,
+            }}>→</div>
+          </div>
+        )}
+
+        {/* Estatísticas rápidas */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 10, marginTop: 14 }}>
+          {[
+            { label: 'Dias lidos', valor: diaHoje, cor: COR },
+            { label: 'Faltam', valor: totalDias - diaHoje, cor: 'rgba(200,200,255,0.55)' },
+            { label: 'Semanas', valor: Math.ceil(diaHoje / 7), cor: 'rgba(192,132,252,0.85)' },
+          ].map(s => (
+            <div key={s.label} style={{ textAlign: 'center', padding: '10px 8px', borderRadius: 10, background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.06)' }}>
+              <div style={{ fontSize: 'clamp(16px,2.5vw,20px)', fontWeight: 900, color: s.cor, lineHeight: 1 }}>{s.valor}</div>
+              <div style={{ fontSize: 10, fontWeight: 700, color: 'rgba(200,200,255,0.40)', marginTop: 4, letterSpacing: '0.06em' }}>{s.label}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </motion.div>
+  );
+}
+
 const BG = '#05071a';
 const COR = 'rgba(167,139,250,1)';
 const COR_BG = 'rgba(167,139,250,0.07)';
@@ -632,74 +760,132 @@ export default function DevocionalConfessionalPage() {
           </p>
         </motion.div>
 
+        {/* Barra de progresso anual */}
+        <BarraProgressoAnual
+          diaHoje={diaHoje}
+          totalDias={365}
+          devHoje={devocionalHoje}
+        />
+
         {/* Introdução */}
         <AnimatePresence>
           {!introFechada && <Introducao onClose={() => setIntroFechada(true)} />}
         </AnimatePresence>
 
         {/* Seletor de Meses */}
-        <div style={{
-          display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 32, justifyContent: 'center',
-        }}>
-          {MESES_CONFESSIONAL.map(m => (
-            <button
-              key={m.mes}
-              onClick={() => { setMesSel(m.mes); setDiaExpandido(null); }}
-              style={{
-                background: mesSel === m.mes
-                  ? 'linear-gradient(135deg,rgba(167,139,250,0.22) 0%,rgba(167,139,250,0.10) 100%)'
-                  : 'rgba(255,255,255,0.04)',
-                border: `1.5px solid ${mesSel === m.mes ? 'rgba(167,139,250,0.70)' : 'rgba(167,139,250,0.22)'}`,
-                borderRadius: 99,
-                padding: '7px 18px',
-                fontSize: 13,
-                fontWeight: 700,
-                color: mesSel === m.mes ? '#d4baff' : '#a89ec8',
-                cursor: 'pointer',
-                transition: 'all 0.18s',
-                letterSpacing: '0.05em',
-                boxShadow: mesSel === m.mes ? '0 0 12px rgba(167,139,250,0.18)' : 'none',
-              }}
-            >
-              {m.nome}
-            </button>
-          ))}
+        <div style={{ marginBottom: 28 }}>
+          <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase', color: 'rgba(167,139,250,0.55)', marginBottom: 14, textAlign: 'center' }}>
+            Navegar por mês
+          </div>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(6, 1fr)',
+            gap: 6,
+            background: 'rgba(255,255,255,0.03)',
+            borderRadius: 16,
+            padding: 6,
+            border: '1px solid rgba(167,139,250,0.12)',
+          }}>
+            {MESES_CONFESSIONAL.map(m => {
+              const isSel = mesSel === m.mes;
+              const isHoje = m.mes === new Date().getMonth() + 1;
+              const diasMes = diasDoMes(m.mes);
+              const temConteudo = diasMes.length > 0;
+              return (
+                <button
+                  key={m.mes}
+                  onClick={() => { setMesSel(m.mes); setDiaExpandido(null); }}
+                  style={{
+                    background: isSel ? 'rgba(167,139,250,0.18)' : 'transparent',
+                    border: `1.5px solid ${isSel ? 'rgba(167,139,250,0.60)' : (isHoje ? 'rgba(167,139,250,0.28)' : 'transparent')}`,
+                    borderRadius: 10,
+                    padding: '8px 4px',
+                    cursor: 'pointer',
+                    transition: 'all 0.18s',
+                    display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3,
+                  }}
+                >
+                  <span style={{ fontSize: 'clamp(11px,1.5vw,13px)', fontWeight: isSel ? 900 : 600, color: isSel ? '#d4baff' : (temConteudo ? 'rgba(180,170,220,0.80)' : 'rgba(140,130,170,0.45)'), lineHeight: 1 }}>
+                    {m.nome.slice(0, 3)}
+                  </span>
+                  {isHoje && !isSel && (
+                    <span style={{ width: 4, height: 4, borderRadius: '50%', background: COR, flexShrink: 0 }} />
+                  )}
+                  {!temConteudo && (
+                    <span style={{ fontSize: 8, color: 'rgba(140,130,170,0.40)', lineHeight: 1 }}>—</span>
+                  )}
+                </button>
+              );
+            })}
+          </div>
         </div>
 
-        {/* Tema do Mês */}
+        {/* Tema do Mês + progresso do mês */}
         <motion.div
           key={mesSel}
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           style={{
-            background: 'rgba(167,139,250,0.07)',
-            border: '1px solid rgba(167,139,250,0.30)',
-            borderRadius: 16,
-            padding: 'clamp(16px,3vw,28px)',
-            marginBottom: 32,
-            textAlign: 'center',
+            background: 'rgba(167,139,250,0.06)',
+            border: '1px solid rgba(167,139,250,0.25)',
+            borderRadius: 18,
+            padding: 'clamp(16px,3vw,26px)',
+            marginBottom: 28,
           }}
         >
-          <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.26em', textTransform: 'uppercase', color: '#d4baff', marginBottom: 8 }}>
-            Tema de {mesInfo.nome}
-          </div>
-          {'artigos' in mesInfo && (
-            <div style={{
-              display: 'inline-block',
-              fontSize: 12, fontWeight: 700, letterSpacing: '0.08em',
-              color: '#c0a8f8',
-              background: 'rgba(167,139,250,0.14)',
-              border: '1px solid rgba(167,139,250,0.35)',
-              borderRadius: 99,
-              padding: '4px 16px',
-              marginBottom: 14,
-            }}>
-              {(mesInfo as any).artigos}
+          <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 16, flexWrap: 'wrap', marginBottom: 14 }}>
+            <div style={{ flex: 1, minWidth: 200 }}>
+              <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.26em', textTransform: 'uppercase', color: 'rgba(167,139,250,0.65)', marginBottom: 8 }}>
+                {mesInfo.nome} · Tema do mês
+              </div>
+              {'artigos' in mesInfo && (
+                <div style={{
+                  display: 'inline-block', fontSize: 11, fontWeight: 700, letterSpacing: '0.08em',
+                  color: '#c0a8f8', background: 'rgba(167,139,250,0.14)',
+                  border: '1px solid rgba(167,139,250,0.30)', borderRadius: 99, padding: '3px 14px', marginBottom: 10,
+                }}>
+                  {(mesInfo as any).artigos}
+                </div>
+              )}
+              <div style={{ fontSize: 'clamp(14px,1.9vw,16px)', color: '#e8e4ff', fontWeight: 500, lineHeight: 1.72 }}>
+                {mesInfo.temaGeral}
+              </div>
             </div>
-          )}
-          <div style={{ fontSize: 'clamp(14px,1.9vw,16px)', color: '#e8e4ff', fontWeight: 500, lineHeight: 1.72 }}>
-            {mesInfo.temaGeral}
+            {/* Progresso do mês */}
+            {dias.length > 0 && (() => {
+              const diasLidosNoMes = mesSel < new Date().getMonth() + 1 ? dias.length
+                : mesSel === new Date().getMonth() + 1 ? Math.min(new Date().getDate(), dias.length)
+                : 0;
+              const pctMes = Math.round((diasLidosNoMes / dias.length) * 100);
+              return (
+                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4, background: 'rgba(167,139,250,0.10)', borderRadius: 14, padding: '12px 18px', flexShrink: 0 }}>
+                  <span style={{ fontSize: 'clamp(20px,3vw,26px)', fontWeight: 900, color: COR, lineHeight: 1 }}>{pctMes}%</span>
+                  <span style={{ fontSize: 9, fontWeight: 700, color: 'rgba(167,139,250,0.60)', letterSpacing: '0.08em', textAlign: 'center' }}>
+                    {diasLidosNoMes}/{dias.length} dias
+                  </span>
+                </div>
+              );
+            })()}
           </div>
+          {/* Mini barra do mês */}
+          {dias.length > 0 && (() => {
+            const diasLidosNoMes = mesSel < new Date().getMonth() + 1 ? dias.length
+              : mesSel === new Date().getMonth() + 1 ? Math.min(new Date().getDate(), dias.length)
+              : 0;
+            const pctMes = Math.round((diasLidosNoMes / dias.length) * 100);
+            return (
+              <div>
+                <div style={{ height: 5, borderRadius: 99, background: 'rgba(255,255,255,0.06)', overflow: 'hidden' }}>
+                  <motion.div
+                    initial={{ width: 0 }}
+                    animate={{ width: `${pctMes}%` }}
+                    transition={{ duration: 1, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
+                    style={{ height: '100%', borderRadius: 99, background: 'linear-gradient(90deg, rgba(167,139,250,0.9), rgba(192,132,252,0.70))' }}
+                  />
+                </div>
+              </div>
+            );
+          })()}
         </motion.div>
 
         {/* Cards dos Dias */}
@@ -724,6 +910,8 @@ export default function DevocionalConfessionalPage() {
               const badge = BADGE_CONF[d.confissao];
               const isJaneiro = mesSel >= 1 && mesSel <= 8;
               const isExpandido = diaExpandido?.dia === d.dia;
+              const isHoje = d.dia === diaHoje;
+              const jaLido = d.dia < diaHoje;
               return (
                 <motion.div
                   key={d.dia}
@@ -744,20 +932,39 @@ export default function DevocionalConfessionalPage() {
                   style={{
                     cursor: 'pointer',
                     borderRadius: 18,
-                    background: isExpandido ? 'rgba(167,139,250,0.12)' : COR_BG,
-                    border: `1.5px solid ${isExpandido ? COR_BORDA_H : COR_BORDA}`,
+                    background: isHoje
+                      ? 'linear-gradient(145deg, rgba(167,139,250,0.16) 0%, rgba(167,139,250,0.08) 100%)'
+                      : isExpandido ? 'rgba(167,139,250,0.12)' : COR_BG,
+                    border: `1.5px solid ${isHoje ? 'rgba(167,139,250,0.60)' : isExpandido ? COR_BORDA_H : COR_BORDA}`,
                     padding: 'clamp(14px,3vw,24px)',
                     display: 'flex',
                     flexDirection: 'column',
                     gap: 10,
                     transition: 'border-color 0.18s, background 0.18s',
                     WebkitTapHighlightColor: 'transparent',
+                    position: 'relative',
+                    overflow: 'hidden',
+                    boxShadow: isHoje ? '0 0 24px rgba(167,139,250,0.14)' : 'none',
                   }}
                 >
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8 }}>
-                    <span style={{ fontSize: 12, fontWeight: 800, color: '#c0a8f8', letterSpacing: '0.06em' }}>
-                      Dia {d.dia} · {d.data}
-                    </span>
+                  {/* Linha de topo para o dia de hoje */}
+                  {isHoje && (
+                    <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 2, background: 'linear-gradient(90deg, rgba(167,139,250,0.9), rgba(192,132,252,0.6), transparent)' }} />
+                  )}
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, flexWrap: 'wrap' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                      <span style={{ fontSize: 12, fontWeight: 800, color: '#c0a8f8', letterSpacing: '0.06em' }}>
+                        Dia {d.dia} · {d.data}
+                      </span>
+                      {isHoje && (
+                        <span style={{ fontSize: 9, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: COR, padding: '2px 8px', borderRadius: 99, background: 'rgba(167,139,250,0.18)', border: '1px solid rgba(167,139,250,0.40)' }}>
+                          Hoje
+                        </span>
+                      )}
+                      {jaLido && !isHoje && (
+                        <span style={{ fontSize: 11, color: 'rgba(134,239,172,0.70)' }}>✓</span>
+                      )}
+                    </div>
                     <span style={{
                       fontSize: 10, fontWeight: 800, letterSpacing: '0.08em', textTransform: 'uppercase',
                       color: badge.cor, padding: '2px 9px', borderRadius: 99,
@@ -774,10 +981,17 @@ export default function DevocionalConfessionalPage() {
                   <div style={{ fontSize: 14, color: '#cdc8e8', lineHeight: 1.65, display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
                     {d.reflexao}
                   </div>
-                  <div style={{ marginTop: 4 }}>
-                    <span style={{ fontSize: 13, fontWeight: 900, color: '#d4baff', letterSpacing: '0.06em' }}>
+                  <div style={{ marginTop: 4, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                    <span style={{ fontSize: 13, fontWeight: 900, color: isHoje ? COR : '#d4baff', letterSpacing: '0.06em' }}>
                       {isJaneiro ? (isExpandido ? '↑ Fechar' : 'Ler devocional ↓') : 'Ler devocional →'}
                     </span>
+                    {/* Mini barra de posição no ano */}
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                      <div style={{ width: 40, height: 3, borderRadius: 99, background: 'rgba(255,255,255,0.06)', overflow: 'hidden' }}>
+                        <div style={{ width: `${Math.round((d.dia / 365) * 100)}%`, height: '100%', borderRadius: 99, background: 'rgba(167,139,250,0.60)' }} />
+                      </div>
+                      <span style={{ fontSize: 9, color: 'rgba(167,139,250,0.50)', fontWeight: 600 }}>{Math.round((d.dia / 365) * 100)}%</span>
+                    </div>
                   </div>
                 </motion.div>
               );
