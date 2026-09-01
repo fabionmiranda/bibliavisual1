@@ -176,25 +176,6 @@ export default function Navbar({
               {pt ? 'Clube' : 'Club'}
             </motion.a>
 
-            {/* Lang toggle — desktop */}
-            {onToggleLang && (
-              <button
-                onClick={onToggleLang}
-                title={pt ? 'Switch to English' : 'Mudar para Português'}
-                className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-full font-black uppercase tracking-wide transition-all hover:scale-105 active:scale-95 whitespace-nowrap ml-1"
-                style={{
-                  fontSize: '10px',
-                  background: 'linear-gradient(135deg, rgba(0,212,255,0.15), rgba(168,85,247,0.12))',
-                  border: '1px solid rgba(0,212,255,0.40)',
-                  color: '#fff',
-                  boxShadow: '0 0 12px rgba(0,212,255,0.20)',
-                }}
-              >
-                <span style={{ fontSize: '15px', lineHeight: 1 }}>{pt ? '🇺🇸' : '🇧🇷'}</span>
-                <span>{pt ? 'EN' : 'PT'}</span>
-              </button>
-            )}
-
             {/* Diagramas */}
             <Link
               to="/acessar"
@@ -318,16 +299,6 @@ export default function Navbar({
 
               {/* CTAs */}
               <div className="flex flex-col gap-2.5 mt-3 pt-4 border-t border-white/[0.07]">
-                {onToggleLang && (
-                  <button
-                    onClick={() => { onToggleLang(); close(); }}
-                    className="w-full py-3 flex items-center justify-center gap-2 border border-brand-blue/40 text-white font-black rounded-2xl uppercase tracking-widest text-xs"
-                    style={{ background: 'linear-gradient(135deg, rgba(0,212,255,0.15), rgba(168,85,247,0.12))' }}
-                  >
-                    <span style={{ fontSize: '18px', lineHeight: 1 }}>{pt ? '🇺🇸' : '🇧🇷'}</span>
-                    <span>{pt ? 'EN — English' : 'PT — Português'}</span>
-                  </button>
-                )}
                 <a
                   href="https://chat.whatsapp.com/HEIIFYAmLij62M0jRwwVhH"
                   target="_blank" rel="noopener noreferrer"

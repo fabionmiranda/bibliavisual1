@@ -897,6 +897,32 @@ export default function Home() {
 
       <Footer lang={lang} />
 
+      {/* Language toggle — floating fixed button */}
+      <button
+        onClick={() => setLang(l => l === 'pt' ? 'en' : 'pt')}
+        title={lang === 'pt' ? 'Switch to English' : 'Mudar para Português'}
+        className="fixed z-50 flex items-center gap-2 rounded-full font-black uppercase select-none cursor-pointer"
+        style={{
+          bottom: 'calc(1.75rem + env(safe-area-inset-bottom))',
+          right: '1.25rem',
+          padding: '0.5rem 1rem',
+          fontSize: '12px',
+          letterSpacing: '0.08em',
+          background: 'linear-gradient(135deg, rgba(0,212,255,0.18), rgba(168,85,247,0.14))',
+          border: '1.5px solid rgba(0,212,255,0.45)',
+          color: '#fff',
+          backdropFilter: 'blur(16px)',
+          WebkitBackdropFilter: 'blur(16px)',
+          boxShadow: '0 4px 20px rgba(0,212,255,0.25), 0 2px 8px rgba(0,0,0,0.5)',
+          touchAction: 'manipulation',
+        }}
+      >
+        <span style={{ fontSize: '18px', lineHeight: 1 }}>
+          {lang === 'pt' ? '🇺🇸' : '🇧🇷'}
+        </span>
+        <span>{lang === 'pt' ? 'EN' : 'PT'}</span>
+      </button>
+
     </div>
   );
 }
