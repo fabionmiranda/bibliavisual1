@@ -4,7 +4,8 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { cn } from '../lib/utils';
 
-export default function Navbar() {
+export default function Navbar({ lang = 'pt' }: { lang?: 'pt' | 'en' }) {
+  const pt = lang === 'pt';
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
@@ -29,7 +30,10 @@ export default function Navbar() {
   const isLibrariaActive = ['/livraria', '/ebook/mateus'].some(p => location.pathname.startsWith(p));
 
   const linkCls = (active: boolean) => cn(
-    'relative text-[10px] xl:text-[11px] font-black uppercase tracking-wider whitespace-nowrap transition-all duration-200 group px-2 py-1.5 xl:px-2.5',
+    'relative font-black uppercase whitespace-nowrap transition-all duration-200 group py-1.5',
+    pt
+      ? 'text-[10px] xl:text-[11px] tracking-wider px-2 xl:px-2.5'
+      : 'text-[9px] xl:text-[10px] tracking-wide px-1.5 xl:px-2',
     active ? 'text-brand-blue' : 'text-white/70 hover:text-white'
   );
 
@@ -39,13 +43,20 @@ export default function Navbar() {
       : `absolute -bottom-0.5 left-0 right-0 h-px ${color} rounded-full scale-x-0 group-hover:scale-x-100 transition-transform duration-200 origin-left`;
 
   // Nav links ordered and grouped
-  const mainLinks = [
-    { name: 'Devocional',path: '/devocional' },
-    { name: 'Pregação',  path: '/pregacao' },
-    { name: 'Família',   path: '/familia' },
-    { name: 'Teologia',  path: '/teologia' },
-    { name: 'Artigos',   path: '/artigos' },
-    { name: 'Livraria',  path: '/livraria', activeOverride: isLibrariaActive },
+  const mainLinks = pt ? [
+    { name: 'Devocional', path: '/devocional' },
+    { name: 'Pregação',   path: '/pregacao' },
+    { name: 'Família',    path: '/familia' },
+    { name: 'Teologia',   path: '/teologia' },
+    { name: 'Artigos',    path: '/artigos' },
+    { name: 'Livraria',   path: '/livraria', activeOverride: isLibrariaActive },
+  ] : [
+    { name: 'Devotional', path: '/devocional' },
+    { name: 'Preaching',  path: '/pregacao' },
+    { name: 'Family',     path: '/familia' },
+    { name: 'Theology',   path: '/teologia' },
+    { name: 'Articles',   path: '/artigos' },
+    { name: 'Bookstore',  path: '/livraria', activeOverride: isLibrariaActive },
   ];
 
   const mobileLinks = mainLinks.map((l, i) => ({ ...l, delay: i * 0.05 }));
@@ -83,12 +94,15 @@ export default function Navbar() {
                 </div>
               </div>
             </motion.div>
-            <div className="flex flex-col">
-              <span className="font-display font-black text-sm lg:text-base xl:text-lg tracking-tight text-white uppercase leading-none">
-                BIBLIA VISUAL <span className="text-brand-blue">EXPOSITIVA</span>
+            <div className="flex flex-col min-w-0">
+              <span className="font-display font-black text-sm lg:text-base xl:text-lg tracking-tight text-white uppercase leading-none whitespace-nowrap">
+                {pt
+                  ? <><span>BIBLIA VISUAL</span> <span className="text-brand-blue">EXPOSITIVA</span></>
+                  : <><span>VISUAL</span> <span className="text-brand-blue">BIBLE</span></>
+                }
               </span>
-              <span className="text-[7px] lg:text-[8px] text-white/35 font-bold tracking-[0.3em] uppercase mt-0.5 hidden sm:block">
-                O Futuro da Exposição Bíblica Visual
+              <span className="text-[7px] lg:text-[8px] text-white/35 font-bold tracking-[0.25em] uppercase mt-0.5 hidden sm:block whitespace-nowrap">
+                {pt ? 'O Futuro da Exposição Bíblica Visual' : 'Visual Expository Bible'}
               </span>
             </div>
           </Link>
@@ -112,7 +126,7 @@ export default function Navbar() {
               to="/biblioteca"
               className={linkCls(location.pathname.startsWith('/biblioteca'))}
             >
-              Biblioteca
+              {pt ? 'Biblioteca' : 'Library'}
               <span className={underline(location.pathname.startsWith('/biblioteca'))} />
             </Link>
 
@@ -122,9 +136,12 @@ export default function Navbar() {
             {/* Contatos */}
             <button
               onClick={scrollToFooter}
-              className="relative text-[10px] xl:text-[11px] font-black uppercase tracking-wider whitespace-nowrap transition-all duration-200 group text-white/70 hover:text-white px-2 py-1.5 xl:px-2.5"
+              className={cn(
+                'relative font-black uppercase whitespace-nowrap transition-all duration-200 group text-white/70 hover:text-white py-1.5',
+                pt ? 'text-[10px] xl:text-[11px] tracking-wider px-2 xl:px-2.5' : 'text-[9px] xl:text-[10px] tracking-wide px-1.5 xl:px-2'
+              )}
             >
-              Contatos
+              {pt ? 'Contatos' : 'Contact'}
               <span className="absolute -bottom-0.5 left-0 right-0 h-px bg-brand-blue rounded-full scale-x-0 group-hover:scale-x-100 transition-transform duration-200 origin-left" />
             </button>
 
@@ -150,7 +167,7 @@ export default function Navbar() {
               transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}
               className="hidden xl:flex items-center px-3 py-1.5 border border-brand-blue/50 text-brand-blue font-black text-[9px] rounded-full hover:bg-brand-blue/10 transition-all active:scale-95 tracking-widest uppercase whitespace-nowrap"
             >
-              Clube
+              {pt ? 'Clube' : 'Club'}
             </motion.a>
 
             {/* Acessar */}
@@ -158,7 +175,7 @@ export default function Navbar() {
               to="/acessar"
               className="flex items-center px-3.5 py-1.5 xl:px-4 xl:py-2 bg-brand-blue text-bg-deep font-black text-[9px] xl:text-[10px] rounded-full hover:bg-white transition-all active:scale-95 tracking-widest uppercase whitespace-nowrap shadow-lg shadow-brand-blue/25 ml-1"
             >
-              Acessar
+              {pt ? 'Diagramas' : 'Diagrams'}
             </Link>
           </div>
 
@@ -242,7 +259,7 @@ export default function Navbar() {
                       : 'text-white/75 hover:text-white hover:bg-white/[0.04] border border-transparent'
                   )}
                 >
-                  Biblioteca
+                  {pt ? 'Biblioteca' : 'Library'}
                   {location.pathname.startsWith('/biblioteca') && <span className="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0" />}
                 </Link>
               </motion.div>
@@ -254,7 +271,7 @@ export default function Navbar() {
                     onClick={scrollToFooter}
                     className="flex items-center w-full px-3.5 py-3 rounded-xl font-black uppercase tracking-widest text-xs text-white/75 hover:text-white hover:bg-white/[0.04] border border-transparent transition-all duration-200"
                   >
-                    Contatos
+                    {pt ? 'Contatos' : 'Contact'}
                   </button>
                 </motion.div>
 
@@ -282,13 +299,13 @@ export default function Navbar() {
                   onClick={close}
                   className="w-full py-3 border border-brand-blue/40 text-brand-blue font-black rounded-2xl text-center uppercase tracking-widest text-xs"
                 >
-                  Unir-se ao Clube
+                  {pt ? 'Unir-se ao Clube' : 'Join the Club'}
                 </a>
                 <Link
                   to="/acessar" onClick={close}
                   className="w-full py-3 bg-brand-blue text-bg-deep font-black rounded-2xl text-center uppercase tracking-widest text-xs shadow-lg shadow-brand-blue/20"
                 >
-                  Acessar
+                  {pt ? 'Diagramas' : 'Diagrams'}
                 </Link>
               </div>
             </div>

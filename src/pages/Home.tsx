@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { 
   ArrowRight, ChevronRight, Zap, Layout, Languages, Target, Activity, 
   ArrowRightCircle, Flame, Compass, ShieldCheck, Users, Cross, BookOpen, 
@@ -241,6 +241,8 @@ function MarcaDagua() {
 
 export default function Home() {
   const location = useLocation();
+  const [lang, setLang] = useState<'pt'|'en'>('pt');
+  const pt = lang === 'pt';
 
   useEffect(() => {
     if (location.hash) {
@@ -253,10 +255,82 @@ export default function Home() {
     }
   }, [location]);
 
+  const diagramCards = pt ? [
+    { n:  1, t: "Interlinear",     d: "Texto Original",  icon: Languages,      q: "O que o texto realmente diz em sua forma original?" },
+    { n:  2, t: "Morfológico",     d: "Gramática",        icon: Zap,            q: "Que tipo de palavras e formas revelam a precisão teológica?" },
+    { n:  3, t: "Quiástico",       d: "Simetria",         icon: Target,         q: "Como o texto está estruturado e onde está o seu centro de ênfase?" },
+    { n:  4, t: "Sintático",       d: "Estrutura",        icon: Layout,         q: "Quem faz o quê no texto e como as ações estão organizadas?" },
+    { n:  5, t: "Semântico",       d: "Significado",      icon: Activity,       q: "Qual é o fluxo de significado e a lógica das ideias do texto?" },
+    { n:  6, t: "Progressivo",     d: "Fluxo",            icon: ArrowRightCircle, q: "Como o texto avança passo a passo até seu objetivo final?" },
+    { n:  7, t: "Intensificação",  d: "Clímax",           icon: Flame,          q: "Onde o texto aumenta o peso, a gravidade ou a exigência?" },
+    { n:  8, t: "Espacial",        d: "Dimensões",        icon: Compass,        q: "Em quais esferas (humana, social, divina) o texto se move?" },
+    { n:  9, t: "Acesso",          d: "Autoridade",       icon: ShieldCheck,    q: "Quem pode agir, como pode agir e quais são os limites diante de Deus?" },
+    { n: 10, t: "Relacional",      d: "Vínculos",         icon: Users,          q: "Quais relações são rompidas, afetadas ou restauradas?" },
+    { n: 11, t: "Cristológico",    d: "Foco em Cristo",   icon: Cross,          q: "Como este texto aponta para ou se cumpre em Cristo?" },
+    { n: 12, t: "Sistemático",     d: "Doutrina",         icon: BookOpen,       q: "Que doutrinas estão presentes e como se conectam ao todo da teologia bíblica?" },
+    { n: 13, t: "Tensão",          d: "Resolução",        icon: AlertTriangle,  q: "Qual é o problema central do texto e como ele é resolvido?" },
+    { n: 14, t: "Repetição",       d: "Ênfase",           icon: Repeat,         q: "O que o texto enfatiza por meio de repetição de ideias ou temas?" },
+    { n: 15, t: "Causa/Efeito",    d: "Lógica",           icon: Zap,            q: "O que gera o quê dentro da lógica moral e teológica do texto?" },
+    { n: 16, t: "Apologético",     d: "Defesa",           icon: ShieldAlert,    q: "Que erros, objeções ou visões distorcidas o texto corrige?" },
+    { n: 17, t: "Perguntas",       d: "Investigação",     icon: MessageSquare,  q: "Que perguntas o próprio texto exige que façamos para compreendê-lo?" },
+    { n: 18, t: "Autoral",         d: "Comentários",      icon: PenTool,        q: "Como diferentes intérpretes entenderam cada parte do texto?" },
+    { n: 19, t: "Homilético",      d: "Pregação",         icon: Mic2,           q: "Como esse texto deve ser pregado de forma fiel e estruturada?" },
+    { n: 20, t: "Pastoral",        d: "Vida Prática",     icon: Heart,          q: "Como esse texto deve ser vivido concretamente na vida da igreja?" },
+    { n: 21, t: "Antropológico",   d: "Existência",       icon: UserCheck,      q: "Como o texto descreve o ser humano em sua experiência existencial?" },
+    { n: 22, t: "Familiar",        d: "Família",          icon: HomeIcon,       q: "Como o texto orienta as relações familiares diante do erro e da restauração?" },
+    { n: 23, t: "Trinitário",      d: "Trindade",         icon: Shield,         q: "Como a ação de Deus neste texto é compreendida à luz da Trindade?" },
+  ] : [
+    { n:  1, t: "Interlinear",     d: "Original Text",    icon: Languages,      q: "What does the text actually say in its original form?" },
+    { n:  2, t: "Morphological",   d: "Grammar",          icon: Zap,            q: "What types of words and forms reveal theological precision?" },
+    { n:  3, t: "Chiastic",        d: "Symmetry",         icon: Target,         q: "How is the text structured and where is its center of emphasis?" },
+    { n:  4, t: "Syntactic",       d: "Structure",        icon: Layout,         q: "Who does what in the text and how are the actions organized?" },
+    { n:  5, t: "Semantic",        d: "Meaning",          icon: Activity,       q: "What is the flow of meaning and the logic of the text's ideas?" },
+    { n:  6, t: "Progressive",     d: "Flow",             icon: ArrowRightCircle, q: "How does the text advance step by step toward its final goal?" },
+    { n:  7, t: "Intensification", d: "Climax",           icon: Flame,          q: "Where does the text increase in weight, gravity, or demand?" },
+    { n:  8, t: "Spatial",         d: "Dimensions",       icon: Compass,        q: "In which spheres (human, social, divine) does the text move?" },
+    { n:  9, t: "Access",          d: "Authority",        icon: ShieldCheck,    q: "Who can act, how can they act, and what are the limits before God?" },
+    { n: 10, t: "Relational",      d: "Bonds",            icon: Users,          q: "What relationships are broken, affected, or restored?" },
+    { n: 11, t: "Christological",  d: "Focus on Christ",  icon: Cross,          q: "How does this text point to or find fulfillment in Christ?" },
+    { n: 12, t: "Systematic",      d: "Doctrine",         icon: BookOpen,       q: "What doctrines are present and how do they connect to biblical theology?" },
+    { n: 13, t: "Tension",         d: "Resolution",       icon: AlertTriangle,  q: "What is the central problem of the text and how is it resolved?" },
+    { n: 14, t: "Repetition",      d: "Emphasis",         icon: Repeat,         q: "What does the text emphasize through repetition of ideas or themes?" },
+    { n: 15, t: "Cause/Effect",    d: "Logic",            icon: Zap,            q: "What generates what within the moral and theological logic of the text?" },
+    { n: 16, t: "Apologetic",      d: "Defense",          icon: ShieldAlert,    q: "What errors, objections, or distorted views does the text correct?" },
+    { n: 17, t: "Questions",       d: "Investigation",    icon: MessageSquare,  q: "What questions does the text itself demand we ask to understand it?" },
+    { n: 18, t: "Authorial",       d: "Commentary",       icon: PenTool,        q: "How have different interpreters understood each part of the text?" },
+    { n: 19, t: "Homiletic",       d: "Preaching",        icon: Mic2,           q: "How should this text be preached faithfully and structurally?" },
+    { n: 20, t: "Pastoral",        d: "Practical Life",   icon: Heart,          q: "How should this text be concretely lived in the life of the church?" },
+    { n: 21, t: "Anthropological", d: "Existence",        icon: UserCheck,      q: "How does the text describe the human being in their existential experience?" },
+    { n: 22, t: "Family",          d: "Family",           icon: HomeIcon,       q: "How does the text guide family relationships in the face of failure and restoration?" },
+    { n: 23, t: "Trinitarian",     d: "Trinity",          icon: Shield,         q: "How is God's action in this text understood in light of the Trinity?" },
+  ];
+
+  const impactCards = pt ? [
+    { title: "Clareza Absoluta",     desc: "Saia da confusão mental e entenda exatamente o fluxo lógico do pensamento divino em cada linha do texto sagrado.", icon: Zap,         color: "brand-blue" },
+    { title: "Foco Cristocêntrico",  desc: "Treine seus olhos para enxergar como cada palavra, estrutura e padrão aponta diretamente para a glória e o sacrifício de Jesus.", icon: Layout,      color: "brand-purple" },
+    { title: "Raízes Teológicas",    desc: "Desenvolva uma mente bíblica sólida, fundamentada na estrutura real da Palavra, tornando-se imune a distorções e ventos de doutrina.", icon: ArrowRight,  color: "brand-rose" },
+    { title: "Oração Estruturada",   desc: "Transforme seu tempo com Deus ao orar baseado na arquitetura real do texto, gerando uma comunhão profunda e bíblica.", icon: ChevronRight, color: "brand-blue" },
+  ] : [
+    { title: "Absolute Clarity",     desc: "Break free from mental confusion and understand exactly the logical flow of divine thought in every line of the sacred text.", icon: Zap,         color: "brand-blue" },
+    { title: "Christocentric Focus", desc: "Train your eyes to see how every word, structure, and pattern points directly to the glory and sacrifice of Jesus.", icon: Layout,      color: "brand-purple" },
+    { title: "Theological Roots",    desc: "Develop a solid biblical mind, grounded in the real structure of the Word, becoming immune to distortions and winds of doctrine.", icon: ArrowRight,  color: "brand-rose" },
+    { title: "Structured Prayer",    desc: "Transform your time with God by praying based on the actual architecture of the text, generating deep and biblical communion.", icon: ChevronRight, color: "brand-blue" },
+  ];
+
+  const showcaseItems = pt ? [
+    { title: "Simetria Quiástica",   type: "Estrutura Literária",   color: "brand-blue",   delay: 0.1 },
+    { title: "Conexão Trinitária",   type: "Revelação Teológica",   color: "brand-purple", delay: 0.2 },
+    { title: "Fluxo Expositivo",     type: "Lógica Homilética",     color: "brand-rose",   delay: 0.3 },
+  ] : [
+    { title: "Chiastic Symmetry",    type: "Literary Structure",    color: "brand-blue",   delay: 0.1 },
+    { title: "Trinitarian Connection", type: "Theological Revelation", color: "brand-purple", delay: 0.2 },
+    { title: "Expository Flow",      type: "Homiletic Logic",       color: "brand-rose",   delay: 0.3 },
+  ];
+
   return (
     <div className="min-h-screen relative overflow-x-hidden">
       <MarcaDagua />
-      <Navbar />
+      <Navbar lang={lang} />
       
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
@@ -313,13 +387,17 @@ export default function Home() {
                     opacity: { duration: 1 }
                   }}
                 >
-                  BÍBLIA VISUAL <br className="hidden md:block" /> EXPOSITIVA
+                  {pt
+                    ? <>BÍBLIA VISUAL <br className="hidden md:block" /> EXPOSITIVA</>
+                    : <>VISUAL <br className="hidden md:block" /> EXPOSITORY BIBLE</>
+                  }
                 </motion.span>
               </h1>
             </div>
             <p className="text-xl md:text-3xl text-white max-w-5xl mx-auto mb-14 font-display font-medium leading-tight">
-              O futuro da leitura, interpretação e aplicação da Palavra de Deus sob a ação poderosa do Espírito Santo de forma visual, expositiva, simples, e profunda!
-          
+              {pt
+                ? 'O futuro da leitura, interpretação e aplicação da Palavra de Deus sob a ação poderosa do Espírito Santo de forma visual, expositiva, simples, e profunda!'
+                : 'The future of reading, interpreting, and applying the Word of God under the powerful action of the Holy Spirit — visually, expositionally, simply, and deeply!'}
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
               <Link
@@ -328,7 +406,7 @@ export default function Home() {
                   hover:bg-white hover:text-brand-blue transition-all hover:scale-105 active:scale-95
                   shadow-[0_0_40px_rgba(59,130,246,0.4)]"
               >
-                ACESSAR <ArrowRight className="w-5 h-5" />
+                {pt ? 'DIAGRAMAS' : 'DIAGRAMS'} <ArrowRight className="w-5 h-5" />
               </Link>
             </div>
           </motion.div>
@@ -367,20 +445,20 @@ export default function Home() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-blue opacity-75" />
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-blue" />
               </span>
-              <span className="font-mono text-[10px] font-black uppercase tracking-widest text-brand-blue/80">Gratuito</span>
+              <span className="font-mono text-[10px] font-black uppercase tracking-widest text-brand-blue/80">{pt ? 'Gratuito' : 'Free'}</span>
             </div>
 
             {/* Texto esquerda */}
             <div className="text-center sm:text-left">
               <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-brand-blue/70 font-black mb-1">
-                Faca parte
+                {pt ? 'Faca parte' : 'Join us'}
               </p>
               <h3 className="font-display font-black text-2xl sm:text-3xl uppercase tracking-tighter text-white leading-tight"
                 style={{ textShadow: '0 0 30px rgba(0,212,255,0.3)' }}>
-                Clube da Biblia Visual Expositiva
+                {pt ? 'Clube da Biblia Visual Expositiva' : 'Visual Expository Bible Club'}
               </h3>
               <p className="text-white/55 text-sm sm:text-base mt-1.5 max-w-lg leading-relaxed">
-                Receba devocionais, diagramas e ensinos profundos. Clique e acesse agora.
+                {pt ? 'Receba devocionais, diagramas e ensinos profundos. Clique e acesse agora.' : 'Receive devotionals, diagrams, and deep teachings. Click and access now.'}
               </p>
             </div>
 
@@ -392,7 +470,7 @@ export default function Home() {
                 boxShadow: '0 0 28px rgba(0,212,255,0.35)',
               }}
             >
-              Acessar o Clube
+              {pt ? 'Acessar o Clube' : 'Join the Club'}
               <ArrowRight className="w-4 h-4" />
             </div>
           </motion.a>
@@ -418,43 +496,19 @@ export default function Home() {
           >
             <div className="inline-flex items-center gap-2 px-5 py-2 bg-brand-purple/10 rounded-full border border-brand-purple/25 mb-6">
               <Layout className="w-4 h-4 text-brand-purple" />
-              <span className="text-[11px] font-black text-brand-purple uppercase tracking-[0.25em]">Metodologia Científica</span>
+              <span className="text-[11px] font-black text-brand-purple uppercase tracking-[0.25em]">{pt ? 'Metodologia Científica' : 'Scientific Methodology'}</span>
             </div>
             <h2 className="text-4xl md:text-6xl font-display font-black mb-5 uppercase tracking-tighter leading-none">
-              OS <span className="text-brand-purple" style={{ textShadow: '0 0 40px rgba(168,85,247,0.5)' }}>DIAGRAMAS</span> DE EXEGESE
+              {pt ? 'OS' : 'THE'} <span className="text-brand-purple" style={{ textShadow: '0 0 40px rgba(168,85,247,0.5)' }}>{pt ? 'DIAGRAMAS' : 'DIAGRAMS'}</span> {pt ? 'DE EXEGESE' : 'OF EXEGESIS'}
             </h2>
             <p className="text-white/55 max-w-2xl mx-auto text-base sm:text-lg leading-relaxed">
-              Dezenas de diagramas visuais que revelam a beleza oculta do texto sagrado — cada perspectiva, um novo olhar didático, profundo e transformador.
+              {pt ? 'Dezenas de diagramas visuais que revelam a beleza oculta do texto sagrado — cada perspectiva, um novo olhar didático, profundo e transformador.' : 'Dozens of visual diagrams that reveal the hidden beauty of the sacred text — each perspective, a new didactic, deep, and transforming lens.'}
             </p>
           </motion.div>
 
           {/* Grid de cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-            {[
-              { n:  1, t: "Interlinear",     d: "Texto Original",  icon: Languages,      q: "O que o texto realmente diz em sua forma original?" },
-              { n:  2, t: "Morfológico",     d: "Gramática",        icon: Zap,            q: "Que tipo de palavras e formas revelam a precisão teológica?" },
-              { n:  3, t: "Quiástico",       d: "Simetria",         icon: Target,         q: "Como o texto está estruturado e onde está o seu centro de ênfase?" },
-              { n:  4, t: "Sintático",       d: "Estrutura",        icon: Layout,         q: "Quem faz o quê no texto e como as ações estão organizadas?" },
-              { n:  5, t: "Semântico",       d: "Significado",      icon: Activity,       q: "Qual é o fluxo de significado e a lógica das ideias do texto?" },
-              { n:  6, t: "Progressivo",     d: "Fluxo",            icon: ArrowRightCircle, q: "Como o texto avança passo a passo até seu objetivo final?" },
-              { n:  7, t: "Intensificação",  d: "Clímax",           icon: Flame,          q: "Onde o texto aumenta o peso, a gravidade ou a exigência?" },
-              { n:  8, t: "Espacial",        d: "Dimensões",        icon: Compass,        q: "Em quais esferas (humana, social, divina) o texto se move?" },
-              { n:  9, t: "Acesso",          d: "Autoridade",       icon: ShieldCheck,    q: "Quem pode agir, como pode agir e quais são os limites diante de Deus?" },
-              { n: 10, t: "Relacional",      d: "Vínculos",         icon: Users,          q: "Quais relações são rompidas, afetadas ou restauradas?" },
-              { n: 11, t: "Cristológico",    d: "Foco em Cristo",   icon: Cross,          q: "Como este texto aponta para ou se cumpre em Cristo?" },
-              { n: 12, t: "Sistemático",     d: "Doutrina",         icon: BookOpen,       q: "Que doutrinas estão presentes e como se conectam ao todo da teologia bíblica?" },
-              { n: 13, t: "Tensão",          d: "Resolução",        icon: AlertTriangle,  q: "Qual é o problema central do texto e como ele é resolvido?" },
-              { n: 14, t: "Repetição",       d: "Ênfase",           icon: Repeat,         q: "O que o texto enfatiza por meio de repetição de ideias ou temas?" },
-              { n: 15, t: "Causa/Efeito",    d: "Lógica",           icon: Zap,            q: "O que gera o quê dentro da lógica moral e teológica do texto?" },
-              { n: 16, t: "Apologético",     d: "Defesa",           icon: ShieldAlert,    q: "Que erros, objeções ou visões distorcidas o texto corrige?" },
-              { n: 17, t: "Perguntas",       d: "Investigação",     icon: MessageSquare,  q: "Que perguntas o próprio texto exige que façamos para compreendê-lo?" },
-              { n: 18, t: "Autoral",         d: "Comentários",      icon: PenTool,        q: "Como diferentes intérpretes entenderam cada parte do texto?" },
-              { n: 19, t: "Homilético",      d: "Pregação",         icon: Mic2,           q: "Como esse texto deve ser pregado de forma fiel e estruturada?" },
-              { n: 20, t: "Pastoral",        d: "Vida Prática",     icon: Heart,          q: "Como esse texto deve ser vivido concretamente na vida da igreja?" },
-              { n: 21, t: "Antropológico",   d: "Existência",       icon: UserCheck,      q: "Como o texto descreve o ser humano em sua experiência existencial?" },
-              { n: 22, t: "Familiar",        d: "Família",          icon: HomeIcon,       q: "Como o texto orienta as relações familiares diante do erro e da restauração?" },
-              { n: 23, t: "Trinitário",      d: "Trindade",         icon: Shield,         q: "Como a ação de Deus neste texto é compreendida à luz da Trindade?" },
-            ].map((d, i) => {
+            {diagramCards.map((d, i) => {
               // Paleta idêntica a DiagramaLetraPage / CORES
               const PALETA_HOME: Record<number,string> = {
                 1:'#00d4ff', 2:'#22c55e', 3:'#a855f7', 4:'#f59e0b', 5:'#06b6d4',
@@ -558,7 +612,7 @@ export default function Home() {
 
           <div className="text-center mt-12">
             <Link to="/metodo" className="inline-flex items-center gap-2 px-8 py-3.5 glass rounded-full text-xs font-black uppercase tracking-widest border border-white/10 hover:border-brand-purple/50 hover:text-brand-purple transition-all">
-              Ver Metodologia Completa <ArrowRight className="w-3.5 h-3.5" />
+              {pt ? 'Ver Metodologia Completa' : 'View Full Methodology'} <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>
         </div>
@@ -575,14 +629,14 @@ export default function Home() {
               className="space-y-6"
             >
               <h2 className="text-3xl md:text-4xl font-display font-bold leading-tight">
-                O PROBLEMA DA <span className="text-brand-rose text-shadow-rose">LEITURA LINEAR</span>
+                {pt ? 'O PROBLEMA DA' : 'THE PROBLEM OF'} <span className="text-brand-rose text-shadow-rose">{pt ? 'LEITURA LINEAR' : 'LINEAR READING'}</span>
               </h2>
               <p className="text-lg text-white/80 leading-relaxed">
-                As pessoas leem a Bíblia, mas muitas vezes não enxergam sua estrutura, seu fluxo e seu centro. A leitura superficial ignora a arquitetura divina do texto.
+                {pt ? 'As pessoas leem a Bíblia, mas muitas vezes não enxergam sua estrutura, seu fluxo e seu centro. A leitura superficial ignora a arquitetura divina do texto.' : 'People read the Bible, but often miss its structure, flow, and center. Superficial reading ignores the divine architecture of the text.'}
               </p>
               <div className="p-6 glass rounded-2xl border-l-4 border-brand-rose shadow-[0_0_15px_rgba(255,45,85,0.1)]">
                 <p className="italic text-white/80">
-                  "Sem estrutura, a interpretação torna-se subjetiva. Com estrutura, a revelação torna-se clara."
+                  {pt ? '"Sem estrutura, a interpretação torna-se subjetiva. Com estrutura, a revelação torna-se clara."' : '"Without structure, interpretation becomes subjective. With structure, revelation becomes clear."'}
                 </p>
               </div>
             </motion.div>
@@ -595,7 +649,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-br from-brand-rose/20 to-transparent" />
               <div className="text-center p-8">
                 <Zap className="w-16 h-16 text-brand-rose mx-auto mb-4 animate-bounce drop-shadow-[0_0_10px_rgba(255,45,85,0.5)]" />
-                <p className="font-display font-bold text-xl">FALTA DE PROFUNDIDADE</p>
+                <p className="font-display font-bold text-xl">{pt ? 'FALTA DE PROFUNDIDADE' : 'LACK OF DEPTH'}</p>
               </div>
             </motion.div>
           </div>
@@ -615,7 +669,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-br from-brand-blue/20 to-transparent" />
               <div className="text-center p-8">
                 <Layout className="w-16 h-16 text-brand-blue mx-auto mb-4 animate-pulse" />
-                <p className="font-display font-bold text-xl">VISÃO ESTRUTURAL</p>
+                <p className="font-display font-bold text-xl">{pt ? 'VISÃO ESTRUTURAL' : 'STRUCTURAL VISION'}</p>
               </div>
             </motion.div>
             <motion.div
@@ -625,13 +679,13 @@ export default function Home() {
               className="order-1 lg:order-2 space-y-6"
             >
               <h2 className="text-3xl md:text-4xl font-display font-bold leading-tight">
-                A SOLUÇÃO: <span className="text-brand-blue">DIAGRAMAS</span>
+                {pt ? 'A SOLUÇÃO:' : 'THE SOLUTION:'} <span className="text-brand-blue">{pt ? 'DIAGRAMAS' : 'DIAGRAMS'}</span>
               </h2>
               <p className="text-lg text-white/60 leading-relaxed">
-                Com o sistema dos Diagramas, você enxerga o texto como Deus organizou. Nossa plataforma transforma versículos em estruturas lógicas que revelam o fluxo do pensamento bíblico.
+                {pt ? 'Com o sistema dos Diagramas, você enxerga o texto como Deus organizou. Nossa plataforma transforma versículos em estruturas lógicas que revelam o fluxo do pensamento bíblico.' : 'With the Diagram system, you see the text as God organized it. Our platform transforms verses into logical structures that reveal the flow of biblical thought.'}
               </p>
               <Link to="/metodo" className="inline-flex items-center gap-2 text-brand-blue font-bold hover:underline">
-                Conheça os Diagramas <ChevronRight className="w-5 h-5" />
+                {pt ? 'Conheça os Diagramas' : 'Explore the Diagrams'} <ChevronRight className="w-5 h-5" />
               </Link>
             </motion.div>
           </div>
@@ -650,40 +704,15 @@ export default function Home() {
               viewport={{ once: true }}
               className="text-4xl md:text-6xl font-display font-black mb-6 uppercase tracking-tighter"
             >
-              A TRANSFORMAÇÃO NA SUA <span className="text-brand-rose">CAMINHADA COM CRISTO</span>
+              {pt ? 'A TRANSFORMAÇÃO NA SUA' : 'THE TRANSFORMATION IN YOUR'} <span className="text-brand-rose">{pt ? 'CAMINHADA COM CRISTO' : 'WALK WITH CHRIST'}</span>
             </motion.h2>
             <p className="text-white/80 text-xl max-w-3xl mx-auto font-light">
-              Os diagramas não são apenas desenhos; são lentes que corrigem sua visão espiritual para que você deixe de ler superficialmente e comece a contemplar a glória de Deus em cada versículo.
+              {pt ? 'Os diagramas não são apenas desenhos; são lentes que corrigem sua visão espiritual para que você deixe de ler superficialmente e comece a contemplar a glória de Deus em cada versículo.' : 'The diagrams are not mere drawings; they are lenses that correct your spiritual vision so you stop reading superficially and begin to contemplate the glory of God in every verse.'}
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                title: "Clareza Absoluta",
-                desc: "Saia da confusão mental e entenda exatamente o fluxo lógico do pensamento divino em cada linha do texto sagrado.",
-                icon: Zap,
-                color: "brand-blue"
-              },
-              {
-                title: "Foco Cristocêntrico",
-                desc: "Treine seus olhos para enxergar como cada palavra, estrutura e padrão aponta diretamente para a glória e o sacrifício de Jesus.",
-                icon: Layout,
-                color: "brand-purple"
-              },
-              {
-                title: "Raízes Teológicas",
-                desc: "Desenvolva uma mente bíblica sólida, fundamentada na estrutura real da Palavra, tornando-se imune a distorções e ventos de doutrina.",
-                icon: ArrowRight,
-                color: "brand-rose"
-              },
-              {
-                title: "Oração Estruturada",
-                desc: "Transforme seu tempo com Deus ao orar baseado na arquitetura real do texto, gerando uma comunhão profunda e bíblica.",
-                icon: ChevronRight,
-                color: "brand-blue"
-              }
-            ].map((item, i) => (
+            {impactCards.map((item, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 30 }}
@@ -716,10 +745,11 @@ export default function Home() {
             className="glass p-12 rounded-[40px] border-brand-purple/20 shadow-[0_0_50px_rgba(123,47,247,0.1)]"
           >
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-8">
-              POR QUE ESTE MÉTODO É DIFERENTE?
+              {pt ? 'POR QUE ESTE MÉTODO É DIFERENTE?' : 'WHY IS THIS METHOD DIFFERENT?'}
             </h2>
             <p className="text-2xl md:text-3xl font-light leading-relaxed text-white/90 italic">
-              "Não é devocional. Não é opinião. É estrutura, revelação e <span className="text-brand-purple font-bold">Cristo no centro</span>."
+              {pt ? '"Não é devocional. Não é opinião. É estrutura, revelação e ' : '"It is not a devotional. It is not opinion. It is structure, revelation, and '}
+              <span className="text-brand-purple font-bold">{pt ? 'Cristo no centro' : 'Christ at the center'}</span>."
             </p>
           </motion.div>
         </div>
@@ -737,7 +767,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-brand-blue/5 -z-10" />
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-6xl font-display font-bold mb-12">
-            PRONTO PARA <span className="text-brand-blue">MERGULHAR</span>?
+            {pt ? 'PRONTO PARA' : 'READY TO'} <span className="text-brand-blue">{pt ? 'MERGULHAR' : 'DIVE IN'}</span>?
           </h2>
         </div>
       </section>
@@ -755,37 +785,18 @@ export default function Home() {
               className="inline-flex items-center gap-2 px-4 py-2 bg-brand-blue/10 rounded-full border border-brand-blue/20 mb-6"
             >
               <Layout className="w-4 h-4 text-brand-blue" />
-              <span className="text-[10px] font-black text-brand-blue uppercase tracking-[0.2em]">Estética do Futuro</span>
+              <span className="text-[10px] font-black text-brand-blue uppercase tracking-[0.2em]">{pt ? 'Estética do Futuro' : 'Aesthetics of the Future'}</span>
             </motion.div>
             <h2 className="text-3xl md:text-5xl font-display font-black mb-6 uppercase tracking-tighter">
-              A ARQUITETURA <span className="text-brand-blue">DA REVELAÇÃO</span>
+              {pt ? 'A ARQUITETURA' : 'THE ARCHITECTURE'} <span className="text-brand-blue">{pt ? 'DA REVELAÇÃO' : 'OF REVELATION'}</span>
             </h2>
             <p className="text-white/70 max-w-2xl mx-auto font-medium">
-              Não são apenas estudos, são representações visuais da estrutura eterna da Palavra de Deus.
+              {pt ? 'Não são apenas estudos, são representações visuais da estrutura eterna da Palavra de Deus.' : 'They are not just studies — they are visual representations of the eternal structure of the Word of God.'}
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Simetria Quiástica",
-                type: "Estrutura Literária",
-                color: "brand-blue",
-                delay: 0.1
-              },
-              {
-                title: "Conexão Trinitária",
-                type: "Revelação Teológica",
-                color: "brand-purple",
-                delay: 0.2
-              },
-              {
-                title: "Fluxo Expositivo",
-                type: "Lógica Homilética",
-                color: "brand-rose",
-                delay: 0.3
-              }
-            ].map((item, i) => (
+            {showcaseItems.map((item, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, scale: 0.9 }}
@@ -873,18 +884,43 @@ export default function Home() {
                 ))}
               </div>
               <div className="text-left">
-                <p className="text-white font-bold text-sm">Biblioteca em Expansão</p>
-                <p className="text-white/70 text-xs mt-1">Novos diagramas adicionados mensalmente.</p>
+                <p className="text-white font-bold text-sm">{pt ? 'Biblioteca em Expansão' : 'Growing Library'}</p>
+                <p className="text-white/70 text-xs mt-1">{pt ? 'Novos diagramas adicionados mensalmente.' : 'New diagrams added monthly.'}</p>
               </div>
             </div>
             <Link to="/metodo" className="px-8 py-3 bg-white/5 hover:bg-white/10 text-white border border-white/10 rounded-full text-xs font-black uppercase tracking-widest transition-all">
-              Ver Metodologia Completa
+              {pt ? 'Ver Metodologia Completa' : 'View Full Methodology'}
             </Link>
           </div>
         </div>
       </section>
 
-      <Footer />
+      <Footer lang={lang} />
+
+      {/* Language toggle — fixed, discrete */}
+      <button
+        onClick={() => setLang(lang === 'pt' ? 'en' : 'pt')}
+        title={lang === 'pt' ? 'Switch to English' : 'Mudar para Português'}
+        className="fixed z-50 flex items-center gap-1.5 rounded-full font-black uppercase tracking-widest transition-all hover:scale-105 active:scale-95 select-none"
+        style={{
+          bottom: 'calc(1.5rem + env(safe-area-inset-bottom))',
+          right: '1rem',
+          padding: '0.35rem 0.75rem',
+          fontSize: '11px',
+          background: 'rgba(10,10,20,0.80)',
+          border: '1px solid rgba(255,255,255,0.14)',
+          color: 'rgba(255,255,255,0.55)',
+          backdropFilter: 'blur(14px)',
+          WebkitBackdropFilter: 'blur(14px)',
+          boxShadow: '0 2px 16px rgba(0,0,0,0.5)',
+          touchAction: 'manipulation',
+        }}
+        onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = '#fff'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(0,212,255,0.45)'; }}
+        onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = 'rgba(255,255,255,0.55)'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(255,255,255,0.14)'; }}
+      >
+        <Languages className="w-3 h-3 shrink-0" />
+        <span>{lang === 'pt' ? 'EN' : 'PT'}</span>
+      </button>
     </div>
   );
 }
