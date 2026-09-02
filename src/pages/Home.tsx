@@ -897,34 +897,54 @@ export default function Home() {
 
       <Footer lang={lang} />
 
-      {/* Language toggle — floating, top-left, below logo */}
-      <button
-        onClick={() => setLang(l => l === 'pt' ? 'en' : 'pt')}
-        title={lang === 'pt' ? 'Switch to English' : 'Mudar para Português'}
-        className="fixed z-50 flex items-center justify-center select-none cursor-pointer"
+      {/* Language toggle — both flags, bottom-left */}
+      <div
+        className="fixed z-50 flex items-center gap-2"
         style={{
           bottom: 'calc(1.75rem + env(safe-area-inset-bottom))',
           left: '1rem',
-          width: '42px',
-          height: '42px',
-          borderRadius: '50%',
           background: 'rgba(10,14,26,0.72)',
-          border: '1.5px solid rgba(0,212,255,0.35)',
+          border: '1.5px solid rgba(0,212,255,0.25)',
           backdropFilter: 'blur(14px)',
           WebkitBackdropFilter: 'blur(14px)',
           boxShadow: '0 4px 18px rgba(0,0,0,0.45)',
-          touchAction: 'manipulation',
-          transition: 'transform 0.15s, box-shadow 0.15s',
+          borderRadius: '999px',
+          padding: '6px 10px',
         }}
-        onMouseEnter={e => { (e.currentTarget as HTMLButtonElement).style.transform = 'scale(1.08)'; }}
-        onMouseLeave={e => { (e.currentTarget as HTMLButtonElement).style.transform = 'scale(1)'; }}
       >
-        <img
-          src={lang === 'pt' ? 'https://flagcdn.com/us.svg' : 'https://flagcdn.com/br.svg'}
-          alt={lang === 'pt' ? 'English' : 'Português'}
-          style={{ width: '26px', height: '18px', borderRadius: '3px', objectFit: 'cover', display: 'block' }}
-        />
-      </button>
+        <button
+          onClick={() => setLang('pt')}
+          title="Português"
+          style={{
+            opacity: lang === 'pt' ? 1 : 0.4,
+            transform: lang === 'pt' ? 'scale(1.15)' : 'scale(1)',
+            transition: 'opacity 0.2s, transform 0.2s',
+            cursor: 'pointer',
+            background: 'none',
+            border: 'none',
+            padding: 0,
+            lineHeight: 0,
+          }}
+        >
+          <img src="https://flagcdn.com/br.svg" alt="Português" style={{ width: '28px', height: '19px', borderRadius: '3px', objectFit: 'cover', display: 'block' }} />
+        </button>
+        <button
+          onClick={() => setLang('en')}
+          title="English"
+          style={{
+            opacity: lang === 'en' ? 1 : 0.4,
+            transform: lang === 'en' ? 'scale(1.15)' : 'scale(1)',
+            transition: 'opacity 0.2s, transform 0.2s',
+            cursor: 'pointer',
+            background: 'none',
+            border: 'none',
+            padding: 0,
+            lineHeight: 0,
+          }}
+        >
+          <img src="https://flagcdn.com/us.svg" alt="English" style={{ width: '28px', height: '19px', borderRadius: '3px', objectFit: 'cover', display: 'block' }} />
+        </button>
+      </div>
 
     </div>
   );
