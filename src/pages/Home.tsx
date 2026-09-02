@@ -919,9 +919,11 @@ export default function Home() {
         onMouseEnter={e => { (e.currentTarget as HTMLButtonElement).style.transform = 'scale(1.08)'; }}
         onMouseLeave={e => { (e.currentTarget as HTMLButtonElement).style.transform = 'scale(1)'; }}
       >
-        <span style={{ fontSize: '24px', lineHeight: 1, display: 'block' }}>
-          {lang === 'pt' ? '🇺🇸' : '🇧🇷'}
-        </span>
+        <img
+          src={lang === 'pt' ? 'https://flagcdn.com/us.svg' : 'https://flagcdn.com/br.svg'}
+          alt={lang === 'pt' ? 'English' : 'Português'}
+          style={{ width: '26px', height: '18px', borderRadius: '3px', objectFit: 'cover', display: 'block' }}
+        />
       </button>
 
     </div>
