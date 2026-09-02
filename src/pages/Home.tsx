@@ -903,7 +903,7 @@ export default function Home() {
         title={lang === 'pt' ? 'Switch to English' : 'Mudar para Português'}
         className="fixed z-50 flex items-center justify-center select-none cursor-pointer"
         style={{
-          top: '72px',
+          bottom: 'calc(1.75rem + env(safe-area-inset-bottom))',
           left: '1rem',
           width: '42px',
           height: '42px',
