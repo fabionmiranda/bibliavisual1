@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import {
@@ -7,6 +8,7 @@ import {
 } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import FlagToggle from '../components/FlagToggle';
 
 const SECAO_PRINCIPAL = [
   {
@@ -76,9 +78,11 @@ const SECAO_AREAS = [
 ];
 
 export default function BibliotecaPage() {
+  const [lang, setLang] = useState<'pt'|'en'>('pt');
+  const pt = lang === 'pt';
   return (
     <div className="min-h-screen relative">
-      <Navbar />
+      <Navbar lang={lang} />
 
       {/* Hero */}
       <section className="pt-28 sm:pt-36 pb-12 px-4 sm:px-6 lg:px-8">
@@ -90,14 +94,15 @@ export default function BibliotecaPage() {
             className="mb-14 sm:mb-18"
           >
             <p className="text-[10px] font-black tracking-[0.35em] uppercase text-brand-blue mb-3">
-              Recursos Teológicos
+              {pt ? 'Recursos Teológicos' : 'Theological Resources'}
             </p>
             <h1 className="font-display font-black text-3xl sm:text-4xl lg:text-5xl text-white leading-tight mb-4">
-              Biblioteca
+              {pt ? 'Biblioteca' : 'Library'}
             </h1>
             <p className="text-white/45 text-base sm:text-lg max-w-xl leading-relaxed">
-              Livros, artigos, autores e guias de leitura selecionados para
-              aprofundar o estudo expositivo da Bíblia.
+              {pt
+                ? 'Livros, artigos, autores e guias de leitura selecionados para aprofundar o estudo expositivo da Bíblia.'
+                : 'Books, articles, authors and reading guides selected to deepen expository Bible study.'}
             </p>
           </motion.div>
 
@@ -106,7 +111,7 @@ export default function BibliotecaPage() {
             <div className="flex items-center gap-4 mb-8">
               <div className="w-1 h-6 rounded-full bg-brand-blue" style={{ boxShadow: '0 0 10px #00d4ff80' }} />
               <h2 className="font-display font-black text-sm uppercase tracking-widest text-brand-blue">
-                Biblioteca
+                {pt ? 'Biblioteca' : 'Library'}
               </h2>
               <div className="flex-1 h-px" style={{ background: 'linear-gradient(90deg,#00d4ff30,transparent)' }} />
             </div>
@@ -153,7 +158,7 @@ export default function BibliotecaPage() {
 
                       <div className="flex items-center gap-1 mt-4" style={{ color: item.accent }}>
                         <span className="text-[10px] font-black uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                          Explorar
+                          {pt ? 'Explorar' : 'Explore'}
                         </span>
                         <ChevronRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-200" />
                       </div>
@@ -172,7 +177,7 @@ export default function BibliotecaPage() {
             <div className="flex items-center gap-4 mb-8">
               <div className="w-1 h-6 rounded-full bg-brand-rose" style={{ boxShadow: '0 0 10px #ff2d5580' }} />
               <h2 className="font-display font-black text-sm uppercase tracking-widest text-brand-rose">
-                Por Área
+                {pt ? 'Por Área' : 'By Area'}
               </h2>
               <div className="flex-1 h-px" style={{ background: 'linear-gradient(90deg,#ff2d5530,transparent)' }} />
             </div>
@@ -213,7 +218,8 @@ export default function BibliotecaPage() {
         </div>
       </section>
 
-      <Footer />
+      <Footer lang={lang} />
+      <FlagToggle lang={lang} setLang={setLang} />
     </div>
   );
 }

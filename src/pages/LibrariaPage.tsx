@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { useRef, useState } from 'react';
 import { BookOpen, ShoppingCart, Eye, Lock, Star, BookMarked, Award, Users, ChevronRight, ChevronDown } from 'lucide-react';
 import Navbar from '../components/Navbar';
+import FlagToggle from '../components/FlagToggle';
 
 /* ── SVGs temáticos para as capas ── */
 const SVG_MATEUS = (cor: string) => (
@@ -447,6 +448,8 @@ function CatalogCard({ vol, idx }: { vol: typeof VOLUMES[0]; idx: number }) {
 
 /* ══ PÁGINA PRINCIPAL ══ */
 export default function LibrariaPage() {
+  const [lang, setLang] = useState<'pt'|'en'>('pt');
+  const pt = lang === 'pt';
   const [selectedEvangelho, setSelectedEvangelho] = useState<string | null>(null);
   const catalogRef = useRef<HTMLElement>(null);
 
@@ -461,7 +464,7 @@ export default function LibrariaPage() {
 
   return (
     <div className="min-h-screen bg-bg-deep">
-      <Navbar />
+      <Navbar lang={lang} />
 
       {/* ══ HERO SELETOR — OS EVANGELHOS (TOPO) ══ */}
       <section style={{
@@ -494,7 +497,7 @@ export default function LibrariaPage() {
               Bíblia Visual Expositiva
             </h1>
             <p style={{ fontFamily: '"Space Grotesk", sans-serif', fontSize: 'clamp(14px,2vw,17px)', color: 'rgba(255,255,255,0.5)', letterSpacing: '0.04em' }}>
-              Selecione um evangelho para explorar a coleção de volumes
+              {pt ? 'Selecione um evangelho para explorar a coleção de volumes' : 'Select a gospel to explore the volume collection'}
             </p>
           </motion.div>
 
@@ -665,6 +668,7 @@ export default function LibrariaPage() {
           </Link>
         </div>
       </footer>
+      <FlagToggle lang={lang} setLang={setLang} />
     </div>
   );
 }

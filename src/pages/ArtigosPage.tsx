@@ -1,8 +1,10 @@
+import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import FlagToggle from '../components/FlagToggle';
 import { ARTIGOS_TEOLOGIA } from '../data/teologia';
 
 const BG = '#060d1f';
@@ -12,10 +14,12 @@ const artigos = ARTIGOS_TEOLOGIA.filter(a => a.area === 'artigos' && a.status ==
 
 export default function ArtigosPage() {
   const navigate = useNavigate();
+  const [lang, setLang] = useState<'pt'|'en'>('pt');
+  const pt = lang === 'pt';
 
   return (
     <div style={{ minHeight: '100vh', background: BG, color: 'rgba(255,255,255,0.92)' }}>
-      <Navbar />
+      <Navbar lang={lang} />
 
       <div style={{ maxWidth: 1100, margin: '0 auto', padding: 'clamp(88px,11vw,108px) clamp(16px,4vw,32px) 100px' }}>
 
@@ -28,7 +32,7 @@ export default function ArtigosPage() {
               display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 24,
             }}>✍️</div>
             <div style={{ fontSize: 'clamp(10px,1.4vw,12px)', fontWeight: 900, letterSpacing: '0.32em', textTransform: 'uppercase', color: COR }}>
-              Artigos · Teologia &amp; Hermenêutica
+              {pt ? 'Artigos · Teologia & Hermenêutica' : 'Articles · Theology & Hermeneutics'}
             </div>
           </div>
           <h1 style={{
@@ -37,16 +41,19 @@ export default function ArtigosPage() {
             background: `linear-gradient(135deg, #fff 0%, ${COR} 100%)`,
             WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
           }}>
-            Artigos
+            {pt ? 'Artigos' : 'Articles'}
           </h1>
           <p style={{ fontSize: 'clamp(15px,2.2vw,18px)', color: 'rgba(220,200,255,0.65)', lineHeight: 1.75, maxWidth: 620, margin: 0 }}>
-            Textos de aprofundamento nas grandes questões da fé cristã — escritos com rigor teológico
-            e linguagem acessível para pastores, professores e estudantes.
+            {pt
+              ? 'Textos de aprofundamento nas grandes questões da fé cristã — escritos com rigor teológico e linguagem acessível para pastores, professores e estudantes.'
+              : 'In-depth texts on the great questions of the Christian faith — written with theological rigor and accessible language for pastors, professors and students.'}
           </p>
           <div style={{ marginTop: 24 }}>
             <span style={{ fontSize: 'clamp(22px,3.5vw,30px)', fontWeight: 900, color: COR }}>{artigos.length}</span>
             <span style={{ fontSize: 13, color: 'rgba(220,200,255,0.40)', marginLeft: 8 }}>
-              artigo{artigos.length !== 1 ? 's' : ''} publicado{artigos.length !== 1 ? 's' : ''}
+              {pt
+                ? `artigo${artigos.length !== 1 ? 's' : ''} publicado${artigos.length !== 1 ? 's' : ''}`
+                : `published article${artigos.length !== 1 ? 's' : ''}`}
             </span>
           </div>
         </motion.div>
@@ -57,7 +64,7 @@ export default function ArtigosPage() {
         {/* Grid de artigos */}
         {artigos.length === 0 ? (
           <div style={{ textAlign: 'center', padding: '60px 24px', color: 'rgba(255,255,255,0.30)', fontSize: 16 }}>
-            Nenhum artigo publicado ainda. Em breve.
+            {pt ? 'Nenhum artigo publicado ainda. Em breve.' : 'No articles published yet. Coming soon.'}
           </div>
         ) : (
           <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
@@ -159,13 +166,14 @@ export default function ArtigosPage() {
             onMouseOver={e => (e.currentTarget.style.color = COR)}
             onMouseOut={e => (e.currentTarget.style.color = 'rgba(167,139,250,0.55)')}
           >
-            ← Voltar para Teologia
+            {pt ? '← Voltar para Teologia' : '← Back to Theology'}
           </button>
         </motion.div>
 
       </div>
 
-      <Footer />
+      <Footer lang={lang} />
+      <FlagToggle lang={lang} setLang={setLang} />
     </div>
   );
 }

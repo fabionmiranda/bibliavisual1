@@ -2,6 +2,7 @@ import { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { BookOpen, ChevronRight, ChevronDown } from 'lucide-react';
 import Navbar from '../components/Navbar';
+import FlagToggle from '../components/FlagToggle';
 import { PLANO_COMPLETO, type DiaDevocional } from '../data/calendarioDevocional';
 import { gerarParaPregar } from '../data/paraPregar';
 import { SERMON_TITLES } from '../data/sermonTitles';
@@ -1338,6 +1339,8 @@ function ParaPregarSection({ d, pericopeIdx, conteudo, sermonTitulo, sermonPergu
 
 // ─── Main Page ───────────────────────────────────────────────────────
 export default function PregacaoPage() {
+  const [lang, setLang] = useState<'pt'|'en'>('pt');
+  const pt = lang === 'pt';
   const [selectedBook, setSelectedBook] = useState<BibleBook>(BIBLE_BOOKS[0]);
   const [pericopes, setPericopes] = useState<Pericope[]>([]);
   const [loadingPericopes, setLoadingPericopes] = useState(false);
@@ -1409,7 +1412,7 @@ export default function PregacaoPage() {
 
   return (
     <div style={{ minHeight: '100vh', background: C.bg, color: C.white }} onClick={() => setBookDropOpen(false)}>
-      <Navbar />
+      <Navbar lang={lang} />
 
       <div style={{ maxWidth: 1100, margin: '0 auto', padding: 'clamp(80px,10vw,100px) clamp(16px,4vw,32px) 60px' }}>
 
@@ -1417,10 +1420,10 @@ export default function PregacaoPage() {
         <div style={{ marginBottom: 32, display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 16, flexWrap: 'nowrap' }}>
           <div style={{ minWidth: 0, flex: 1 }}>
             <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.26em', textTransform: 'uppercase', background: 'linear-gradient(90deg, rgba(196,160,255,1) 0%, rgba(147,197,253,1) 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', marginBottom: 6 }}>
-              Pregação
+              {pt ? 'Pregação' : 'Preaching'}
             </div>
             <div style={{ fontSize: 'clamp(14px,2.4vw,24px)', fontWeight: 800, color: C.white, letterSpacing: '-0.02em', lineHeight: 1.25 }}>
-              <span style={{ fontWeight: 800, color: cor }}>{bookDays.length}</span> esboços homiléticos e estruturas espelhadas para pregação
+              <span style={{ fontWeight: 800, color: cor }}>{bookDays.length}</span> {pt ? 'esboços homiléticos e estruturas espelhadas para pregação' : 'homiletic outlines and mirror structures for preaching'}
             </div>
           </div>
 
@@ -1750,7 +1753,7 @@ export default function PregacaoPage() {
         </AnimatePresence>
       </div>
 
-
+      <FlagToggle lang={lang} setLang={setLang} />
     </div>
   );
 }

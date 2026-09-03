@@ -7,6 +7,7 @@ import {
   LogOut, Users, User, Crown,
 } from 'lucide-react';
 import Navbar from '../components/Navbar';
+import FlagToggle from '../components/FlagToggle';
 import { BIBLE_DATA } from '../data/bibleData';
 import { BOOK_CONFIG } from './LivroPage';
 import { useAuth } from '../contexts/AuthContext';
@@ -259,6 +260,7 @@ function ModalUsuarios({ token, onClose }: { token: string; onClose: () => void 
 }
 
 export default function AdminPage() {
+  const [lang, setLang] = useState<'pt'|'en'>('pt');
   const [busca, setBusca]             = useState('');
   const [statuses, setStatuses]       = useState<Record<string, Status | null>>({});
   const [modalUsuarios, setModalUsuarios] = useState(false);
@@ -294,7 +296,7 @@ export default function AdminPage() {
 
   return (
     <div className="min-h-screen bg-bg-deep text-white">
-      <Navbar />
+      <Navbar lang={lang} />
 
       <section className="pt-28 sm:pt-32 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
@@ -432,6 +434,7 @@ export default function AdminPage() {
           <ModalUsuarios token={token ?? ''} onClose={() => setModalUsuarios(false)} />
         )}
       </AnimatePresence>
+      <FlagToggle lang={lang} setLang={setLang} />
     </div>
   );
 }

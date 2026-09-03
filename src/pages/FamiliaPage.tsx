@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { useNavigate } from 'react-router-dom';
 import { BookOpen, ChevronDown } from 'lucide-react';
 import Navbar from '../components/Navbar';
+import FlagToggle from '../components/FlagToggle';
 import { PLANO_COMPLETO, type DiaDevocional } from '../data/calendarioDevocional';
 import { gerarParaFamilia } from '../data/paraFamilia';
 
@@ -766,6 +767,7 @@ function AulaCard({ aula, cor, onOpen }: { aula: typeof AULAS_NOIVOS[0]; cor: st
 
 export function NoivosHub() {
   const navigate = useNavigate();
+  const [lang, setLang] = useState<'pt'|'en'>('pt');
   const onBack = () => navigate('/familia');
   const onAula = (num: number) => {
     if (num === 1) navigate('/familia/noivos/aula-inaugural');
@@ -773,7 +775,7 @@ export function NoivosHub() {
   };
   return (
     <div style={{ minHeight: '100vh', background: C.bg, color: C.white }}>
-      <Navbar />
+      <Navbar lang={lang} />
       <div style={{ maxWidth: 1060, margin: '0 auto', padding: 'clamp(90px,11vw,110px) clamp(16px,4vw,32px) 80px' }}>
 
         {/* Voltar */}
@@ -1516,10 +1518,11 @@ function DiagramaMandatos() {
 
 export function AulaInaugural() {
   const navigate = useNavigate();
+  const [lang, setLang] = useState<'pt'|'en'>('pt');
   const onBack = () => navigate('/familia/noivos');
   return (
     <div style={{ minHeight: '100vh', background: C.bg, color: C.white }}>
-      <Navbar />
+      <Navbar lang={lang} />
       <div style={{ maxWidth: 860, margin: '0 auto', padding: 'clamp(90px,11vw,110px) clamp(16px,4vw,32px) 100px' }}>
 
         {/* Voltar */}
@@ -1704,6 +1707,7 @@ export function AulaInaugural() {
 
         </div>
       </div>
+      <FlagToggle lang={lang} setLang={setLang} />
     </div>
   );
 }
@@ -1711,10 +1715,11 @@ export function AulaInaugural() {
 // ─── Aula 02 — Princípios Bíblicos de Comunicação ────────────────────
 export function Aula02() {
   const navigate = useNavigate();
+  const [lang, setLang] = useState<'pt'|'en'>('pt');
   const onBack = () => navigate('/familia/noivos');
   return (
     <div style={{ minHeight: '100vh', background: C.bg, color: C.white }}>
-      <Navbar />
+      <Navbar lang={lang} />
       <div style={{ maxWidth: 860, margin: '0 auto', padding: 'clamp(90px,11vw,110px) clamp(16px,4vw,32px) 100px' }}>
 
         {/* Voltar */}
@@ -1886,6 +1891,7 @@ export function Aula02() {
 
         </div>
       </div>
+      <FlagToggle lang={lang} setLang={setLang} />
     </div>
   );
 }
@@ -1926,10 +1932,12 @@ const HUB_ITEMS = [
 
 export function FamiliaHub() {
   const navigate = useNavigate();
+  const [lang, setLang] = useState<'pt'|'en'>('pt');
+  const pt = lang === 'pt';
   const onSelect = (id: string) => navigate(`/familia/${id}`);
   return (
     <div style={{ minHeight: '100vh', background: C.bg, color: C.white }}>
-      <Navbar />
+      <Navbar lang={lang} />
       <div style={{ maxWidth: 960, margin: '0 auto', padding: 'clamp(90px,11vw,110px) clamp(16px,4vw,32px) 80px' }}>
 
         {/* Hero */}
@@ -1951,7 +1959,7 @@ export function FamiliaHub() {
             Família
           </h1>
           <p style={{ fontSize: 'clamp(14px,2vw,17px)', color: 'rgba(255,255,255,0.52)', maxWidth: 560, margin: '0 auto', lineHeight: 1.7 }}>
-            Escolha o recurso que deseja acessar. Novos módulos serão disponibilizados em breve.
+            {pt ? 'Escolha o recurso que deseja acessar. Novos módulos serão disponibilizados em breve.' : 'Choose the resource you want to access. New modules will be available soon.'}
           </p>
         </motion.div>
 
@@ -2005,6 +2013,7 @@ export function FamiliaHub() {
           ))}
         </div>
       </div>
+      <FlagToggle lang={lang} setLang={setLang} />
     </div>
   );
 }
@@ -2012,9 +2021,10 @@ export function FamiliaHub() {
 // ─── Para Casados (placeholder) ──────────────────────────────────────
 export function CasadosPage() {
   const navigate = useNavigate();
+  const [lang, setLang] = useState<'pt'|'en'>('pt');
   return (
     <div style={{ minHeight: '100vh', background: C.bg, color: C.white }}>
-      <Navbar />
+      <Navbar lang={lang} />
       <div style={{ maxWidth: 860, margin: '0 auto', padding: 'clamp(90px,11vw,110px) clamp(16px,4vw,32px) 80px' }}>
         <div style={{ marginBottom: 32 }}>
           <button onClick={() => navigate('/familia')} style={{ display: 'inline-flex', alignItems: 'center', gap: 7, fontSize: 12, fontWeight: 900, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(80,200,255,0.70)', background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}>
@@ -2029,6 +2039,7 @@ export function CasadosPage() {
           </p>
         </motion.div>
       </div>
+      <FlagToggle lang={lang} setLang={setLang} />
     </div>
   );
 }
@@ -2036,6 +2047,7 @@ export function CasadosPage() {
 // ─── Esboços Page ────────────────────────────────────────────────────
 export function EsbocosPage() {
   const navigate = useNavigate();
+  const [lang, setLang] = useState<'pt'|'en'>('pt');
   const [selectedBook, setSelectedBook] = useState<BibleBook>(BIBLE_BOOKS[0]);
   const [pericopes, setPericopes] = useState<Pericope[]>([]);
   const [loadingPericopes, setLoadingPericopes] = useState(false);
@@ -2105,7 +2117,7 @@ export function EsbocosPage() {
 
   return (
     <div style={{ minHeight: '100vh', background: C.bg, color: C.white }} onClick={() => setBookDropOpen(false)}>
-      <Navbar />
+      <Navbar lang={lang} />
 
       <div style={{ maxWidth: 1100, margin: '0 auto', padding: 'clamp(80px,10vw,100px) clamp(16px,4vw,32px) 60px' }}>
 
@@ -2363,6 +2375,7 @@ export function EsbocosPage() {
           </motion.div>
         </AnimatePresence>
       </div>
+      <FlagToggle lang={lang} setLang={setLang} />
     </div>
   );
 }

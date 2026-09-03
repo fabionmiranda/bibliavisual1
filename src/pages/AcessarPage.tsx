@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import {
@@ -6,6 +7,7 @@ import {
 } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import FlagToggle from '../components/FlagToggle';
 
 const PREVIEW_DIAGRAMAS = [
   { label: 'Interlinear',        color: '#00d4ff' },
@@ -121,9 +123,11 @@ const CARDS = [
 ];
 
 export default function AcessarPage() {
+  const [lang, setLang] = useState<'pt'|'en'>('pt');
+  const pt = lang === 'pt';
   return (
     <div className="min-h-screen relative">
-      <Navbar />
+      <Navbar lang={lang} />
 
       <section className="pt-28 sm:pt-36 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
@@ -136,14 +140,15 @@ export default function AcessarPage() {
             className="text-center mb-14 sm:mb-18"
           >
             <p className="text-[10px] font-black tracking-[0.35em] uppercase text-brand-blue mb-3">
-              Por onde começar?
+              {pt ? 'Por onde começar?' : 'Where to start?'}
             </p>
             <h1 className="font-display font-black text-3xl sm:text-4xl lg:text-5xl text-white leading-tight mb-4">
-              Acesse a Plataforma
+              {pt ? 'Acesse a Plataforma' : 'Access the Platform'}
             </h1>
             <p className="text-white/40 text-base sm:text-lg max-w-lg mx-auto leading-relaxed">
-              Escolha como deseja entrar — conheça o método, explore os diagramas
-              ou aprenda com os tutoriais.
+              {pt
+                ? 'Escolha como deseja entrar — conheça o método, explore os diagramas ou aprenda com os tutoriais.'
+                : 'Choose how you want to enter — learn the method, explore the diagrams or study the tutorials.'}
             </p>
           </motion.div>
 
@@ -198,7 +203,8 @@ export default function AcessarPage() {
         </div>
       </section>
 
-      <Footer />
+      <Footer lang={lang} />
+      <FlagToggle lang={lang} setLang={setLang} />
     </div>
   );
 }

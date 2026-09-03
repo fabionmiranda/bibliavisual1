@@ -1,6 +1,8 @@
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import FlagToggle from '../components/FlagToggle';
 import { ARTIGOS_TEOLOGIA } from '../data/teologia';
 
 const BG = '#060d1f';
@@ -277,12 +279,14 @@ function AreaCardItem({ area }: { area: AreaCard }) {
 // ── Página hub ───────────────────────────────────────────────────────────────
 
 export default function TeologiaPage() {
+  const [lang, setLang] = useState<'pt'|'en'>('pt');
+  const pt = lang === 'pt';
   const areasAcademic = AREAS.slice(0, 11);
   const areasFixed    = AREAS.slice(11);
 
   return (
     <div style={{ minHeight: '100vh', background: BG, color: 'rgba(255,255,255,0.92)' }}>
-      <Navbar />
+      <Navbar lang={lang} />
 
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: 'clamp(88px,11vw,108px) clamp(16px,4vw,40px) 100px' }}>
 
@@ -293,7 +297,7 @@ export default function TeologiaPage() {
             letterSpacing: '0.36em', textTransform: 'uppercase',
             color: '#00D4FF', marginBottom: 14,
           }}>
-            Biblioteca Teológica
+            {pt ? 'Biblioteca Teológica' : 'Theological Library'}
           </div>
           <h1 style={{
             fontSize: 'clamp(32px,6vw,58px)', fontWeight: 900,
@@ -301,14 +305,15 @@ export default function TeologiaPage() {
             background: 'linear-gradient(135deg, #fff 0%, rgba(0,212,255,0.85) 100%)',
             WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
           }}>
-            Teologia
+            {pt ? 'Teologia' : 'Theology'}
           </h1>
           <p style={{
             fontSize: 'clamp(16px,2.2vw,19px)', color: 'rgba(200,218,255,0.65)',
             lineHeight: 1.75, maxWidth: 600, margin: '0 auto',
           }}>
-            Escolha uma área de formação teológica — cada uma com matérias,
-            textos e conteúdos para o seu crescimento na fé.
+            {pt
+              ? 'Escolha uma área de formação teológica — cada uma com matérias, textos e conteúdos para o seu crescimento na fé.'
+              : 'Choose a theological formation area — each with courses, texts and content for your growth in faith.'}
           </p>
         </div>
 
@@ -318,7 +323,7 @@ export default function TeologiaPage() {
         {/* ── Seção: Áreas da Teologia ── */}
         <div style={{ marginBottom: 16 }}>
           <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.30)', marginBottom: 24 }}>
-            Áreas de Estudo
+            {pt ? 'Áreas de Estudo' : 'Areas of Study'}
           </div>
           <div style={{
             display: 'grid',
@@ -338,7 +343,7 @@ export default function TeologiaPage() {
         {/* ── Seção: Aulas & Artigos ── */}
         <div>
           <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.30)', marginBottom: 24 }}>
-            Conteúdo Disponível
+            {pt ? 'Conteúdo Disponível' : 'Available Content'}
           </div>
           <div style={{
             display: 'grid',
@@ -354,7 +359,8 @@ export default function TeologiaPage() {
 
       </div>
 
-      <Footer />
+      <Footer lang={lang} />
+      <FlagToggle lang={lang} setLang={setLang} />
     </div>
   );
 }
