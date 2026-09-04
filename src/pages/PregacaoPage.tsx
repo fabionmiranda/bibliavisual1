@@ -158,7 +158,7 @@ function extractQuiasmaBloco(text: string, idx: number): string {
 }
 
 // ─── Estrutura Homilética (Gênesis Perícope 2) ──────────────────────
-function EstruturaHomileticaSection2() {
+function EstruturaHomileticaSection2({ pt }: { pt: boolean }) {
   const accent = 'rgba(255,200,80,1)';
   const accentL = 'rgba(255,200,80,0.10)';
   const accentB = 'rgba(255,200,80,0.30)';
@@ -168,7 +168,7 @@ function EstruturaHomileticaSection2() {
       <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 14 }}>
         <div style={{ width: 36, height: 36, borderRadius: 10, background: accentL, border: `1px solid ${accentB}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 18, flexShrink: 0 }}>{icon}</div>
         <div>
-          <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.18em', color: accent, textTransform: 'uppercase', marginBottom: 2 }}>Seção {num}</div>
+          <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.18em', color: accent, textTransform: 'uppercase', marginBottom: 2 }}>{pt ? 'Seção' : 'Section'} {num}</div>
           <div style={{ fontSize: 17, fontWeight: 800, color: C.white }}>{title}</div>
         </div>
       </div>
@@ -201,7 +201,7 @@ function EstruturaHomileticaSection2() {
       </div>
 
       {/* Seção 1 — Título */}
-      <SectionCard num="I" icon="📌" title="Título">
+      <SectionCard num="I" icon="📌" title={pt ? 'Título' : 'Title'}>
         <p><strong style={{ color: accent }}>Título Principal:</strong> O Jardim do Limite: a Confiança que Floresce dentro dos Limites de Deus</p>
         <p style={{ marginTop: 8 }}><strong style={{ color: accent }}>Subtítulo:</strong> A Aliança das Obras como fundamento do amor obediente no jardim</p>
         <div style={{ marginTop: 12, padding: '10px 16px', borderRadius: 10, background: 'rgba(0,0,0,0.3)', fontFamily: 'monospace', fontSize: 13, color: 'rgba(255,255,255,0.60)', lineHeight: 1.7 }}>
@@ -211,7 +211,7 @@ function EstruturaHomileticaSection2() {
       </SectionCard>
 
       {/* Seção 2 — Texto */}
-      <SectionCard num="II" icon="📖" title="Texto Base">
+      <SectionCard num="II" icon="📖" title={pt ? 'Texto Base' : 'Base Text'}>
         <p><strong style={{ color: accent }}>Perícope:</strong> Gênesis 2:4b–17 (ARA / NVI)</p>
         <p style={{ marginTop: 8 }}><strong style={{ color: accent }}>Ponto focal:</strong> Gênesis 2:16-17 — o mandamento que circunscreve: abundância e limite como estrutura da Aliança das Obras</p>
         <div style={{ marginTop: 10, display: 'flex', flexWrap: 'wrap', gap: 6 }}>
@@ -223,7 +223,7 @@ function EstruturaHomileticaSection2() {
       </SectionCard>
 
       {/* Seção 3 — Tema */}
-      <SectionCard num="III" icon="🎯" title="Tema (Big Idea)">
+      <SectionCard num="III" icon="🎯" title={pt ? 'Tema (Big Idea)' : 'Theme (Big Idea)'}>
         <p>O Deus que forma o homem do pó e o planta no jardim provê abundância e impõe limite, porque a obediência dentro do limite é o terreno onde a confiança e a vida florescem — revelando que a lei não é prisão mas promessa pactual.</p>
         <p style={{ marginTop: 10, padding: '8px 14px', borderRadius: 8, background: 'rgba(255,200,80,0.08)', borderLeft: `3px solid ${accent}`, fontSize: 14, color: 'rgba(255,255,255,0.70)', fontStyle: 'italic' }}>
           "O limite não é o oposto da graça — é sua forma mais elevada, porque trata a criatura como agente moral capaz de confiar."<br />
@@ -232,7 +232,7 @@ function EstruturaHomileticaSection2() {
       </SectionCard>
 
       {/* Seção 4 — Exórdio */}
-      <SectionCard num="IV" icon="🔥" title="Exórdio (Gancho / Introdução)">
+      <SectionCard num="IV" icon="🔥" title={pt ? 'Exórdio (Gancho / Introdução)' : 'Exordium (Hook / Introduction)'}>
         <p>Vivemos numa cultura que confunde limite com opressão. Toda cerca é vista como prisão; toda proibição, como abuso de poder. E quando esse espírito entra na leitura bíblica, Deus se torna o vilão do jardim — o que esconde o fruto bom e nega o melhor.</p>
         <p style={{ marginTop: 10 }}>Mas o texto de Gênesis 2 conta outra história: antes de qualquer proibição, Deus regou a terra, formou o homem, plantou o jardim e encheu cada árvore de fruto. A proibição não vem no lugar da abundância — vem <em>depois</em> dela. O limite de Deus não é escassez: é <strong style={{ color: accent }}>definição</strong>.</p>
         <p style={{ marginTop: 10, fontSize: 14, color: 'rgba(255,255,255,0.60)', fontStyle: 'italic' }}>
@@ -241,7 +241,7 @@ function EstruturaHomileticaSection2() {
       </SectionCard>
 
       {/* Seção 5 — Proposição */}
-      <SectionCard num="V" icon="⚡" title="Proposição">
+      <SectionCard num="V" icon="⚡" title={pt ? 'Proposição' : 'Proposition'}>
         <div style={{ padding: '14px 18px', borderRadius: 12, background: 'rgba(255,200,80,0.12)', border: `1px solid ${accentB}` }}>
           <p style={{ fontWeight: 800, fontSize: 17, color: C.white, margin: 0 }}>
             O Deus que rega o jardim antes de plantar o homem é o mesmo que impõe o limite que define a criatura — e a confiança obediente dentro desse limite é a única vida que floresce para sempre.
@@ -253,7 +253,7 @@ function EstruturaHomileticaSection2() {
       </SectionCard>
 
       {/* Seção 6 — Interrogação e Transição */}
-      <SectionCard num="VI" icon="❓" title="Interrogação e Transição">
+      <SectionCard num="VI" icon="❓" title={pt ? 'Interrogação e Transição' : 'Question and Transition'}>
         <p><strong style={{ color: accent }}>Interrogação central:</strong> Por que onde Deus circunscreve com um limite, a confiança — e não a restrição — é o que floresce?</p>
         <p style={{ marginTop: 10 }}><strong style={{ color: accent }}>Transição:</strong> Para responder, acompanharemos o padrão quiástico do texto: da providência que precede à vocação que define, chegando ao centro — o limite que revela o coração da criatura diante do Criador.</p>
         <p style={{ marginTop: 10, fontSize: 14, color: 'rgba(255,255,255,0.60)' }}>
@@ -262,8 +262,8 @@ function EstruturaHomileticaSection2() {
       </SectionCard>
 
       {/* Seção 7 — Divisões */}
-      <SectionCard num="VII" icon="📐" title="Divisões / Movimentos">
-        <p style={{ marginBottom: 14, fontSize: 14, color: C.muted }}>Estrutura quiástica em 5 movimentos (A–B–◉–B'–A'):</p>
+      <SectionCard num="VII" icon="📐" title={pt ? 'Divisões / Movimentos' : 'Divisions / Movements'}>
+        <p style={{ marginBottom: 14, fontSize: 14, color: C.muted }}>{pt ? 'Estrutura quiástica em 5 movimentos (A–B–◉–B\'–A\'):' : 'Chiastic structure in 5 movements (A–B–◉–B\'–A\'):'}</p>
         {[
           { sym: 'A',   ref: 'Gn 2:5–6',     label: 'Providência que precede: o ribeiro rega antes do homem',         cor: 'rgba(80,200,255,1)' },
           { sym: 'B',   ref: 'Gn 2:7',        label: 'Homem formado do pó e vivificado pelo sopro divino',             cor: 'rgba(180,120,255,1)' },
@@ -293,7 +293,7 @@ function EstruturaHomileticaSection2() {
 
         {/* Movimentos expositivos derivados */}
         <div style={{ marginTop: 20, borderTop: '1px solid rgba(255,200,80,0.18)', paddingTop: 20 }}>
-          <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.18em', color: accent, textTransform: 'uppercase', marginBottom: 16 }}>Divisões Expositivas do Sermão</div>
+          <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.18em', color: accent, textTransform: 'uppercase', marginBottom: 16 }}>{pt ? 'Divisões Expositivas do Sermão' : 'Expository Sermon Divisions'}</div>
 
           {[
             {
@@ -333,10 +333,10 @@ function EstruturaHomileticaSection2() {
               <div style={{ fontSize: 16, fontWeight: 800, color: C.white, marginBottom: 14, lineHeight: 1.4 }}>{mv.title}</div>
               <div style={{ display: 'grid', gap: 10 }}>
                 {[
-                  { label: '§ Indicação Textual', text: mv.indicacao },
-                  { label: '§ Exegese', text: mv.exegese },
-                  { label: '§ Teologia Reformada', text: mv.teologia },
-                  { label: '§ Aplicação', text: mv.aplicacao },
+                  { label: pt ? '§ Indicação Textual' : '§ Textual Indication', text: mv.indicacao },
+                  { label: pt ? '§ Exegese' : '§ Exegesis', text: mv.exegese },
+                  { label: pt ? '§ Teologia Reformada' : '§ Reformed Theology', text: mv.teologia },
+                  { label: pt ? '§ Aplicação' : '§ Application', text: mv.aplicacao },
                 ].map((item, j) => (
                   <div key={j} style={{ padding: '10px 14px', borderRadius: 10, background: 'rgba(0,0,0,0.30)', borderLeft: `3px solid ${mv.cor}` }}>
                     <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.12em', color: mv.cor, textTransform: 'uppercase', marginBottom: 4 }}>{item.label}</div>
@@ -350,7 +350,7 @@ function EstruturaHomileticaSection2() {
       </SectionCard>
 
       {/* Seção 8 — Eixo Cristológico */}
-      <SectionCard num="VIII" icon="✝️" title="Eixo Cristológico">
+      <SectionCard num="VIII" icon="✝️" title={pt ? 'Eixo Cristológico' : 'Christological Axis'}>
         <p>O jardim do Éden com sua árvore proibida no centro aponta para outro jardim — Getsêmani — onde o segundo Adão disse <em>"não a minha vontade, mas a tua"</em> (Lc 22:42). O que o primeiro Adão falhou em obedecer, Cristo cumpriu perfeitamente:</p>
         <div style={{ marginTop: 12, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 10 }}>
           {[
@@ -359,8 +359,8 @@ function EstruturaHomileticaSection2() {
             { at: 'Mandamento obedecido (Gn 2:16–17)', nt: 'Obediência perfeita de Cristo (Rm 5:19; Fp 2:8)', cor: 'rgba(100,220,160,0.15)' },
           ].map((p, i) => (
             <div key={i} style={{ padding: '10px 14px', borderRadius: 10, background: p.cor, border: '1px solid rgba(255,255,255,0.08)' }}>
-              <div style={{ fontSize: 12, color: C.muted, marginBottom: 4 }}>AT: {p.at}</div>
-              <div style={{ fontSize: 13, color: C.white, fontWeight: 700 }}>NT: {p.nt}</div>
+              <div style={{ fontSize: 12, color: C.muted, marginBottom: 4 }}>{pt ? 'AT' : 'OT'}: {p.at}</div>
+              <div style={{ fontSize: 13, color: C.white, fontWeight: 700 }}>{pt ? 'NT' : 'NT'}: {p.nt}</div>
             </div>
           ))}
         </div>
@@ -370,7 +370,7 @@ function EstruturaHomileticaSection2() {
       </SectionCard>
 
       {/* Seção 9 — Ilustração */}
-      <SectionCard num="IX" icon="💡" title="Ilustração">
+      <SectionCard num="IX" icon="💡" title={pt ? 'Ilustração' : 'Illustration'}>
         <p>Imagine um pai que constrói um belo parque para seus filhos: árvores frutíferas, corredores de flores, uma fonte de água fresca. Ao centro, ele coloca uma única cerca com um aviso simples: "Este poço não tem fundo." A cerca não é inimiga do parque — <strong style={{ color: accent }}>ela o completa</strong>. Sem ela, o parque é perigoso.</p>
         <p style={{ marginTop: 10 }}>O jardim de Deus funciona assim: a proibição não contradiz a abundância — ela define até onde a liberdade é liberdade e onde começa a queda livre. A criatura que respeita a cerca não é menos livre; é a única que pode desfrutar o jardim inteiro com segurança.</p>
         <p style={{ marginTop: 10, fontSize: 14, color: 'rgba(255,255,255,0.60)' }}>
@@ -379,7 +379,7 @@ function EstruturaHomileticaSection2() {
       </SectionCard>
 
       {/* Seção 10 — Aplicação */}
-      <SectionCard num="X" icon="🛠️" title="Aplicação">
+      <SectionCard num="X" icon="🛠️" title={pt ? 'Aplicação' : 'Application'}>
         {[
           { pub: 'Universal', app: 'Todo ser humano vive sob limites — físicos, morais, relacionais. Reconhecer o Criador como autor desses limites é o primeiro passo da sabedoria (Pv 1:7).', ref: 'Pv 1:7' },
           { pub: 'Crentes', app: 'Os mandamentos de Deus não são pesados (1Jo 5:3) — são o mapa do jardim. Obedeça não por medo do castigo, mas por confiança no Jardineiro.', ref: '1Jo 5:3' },
@@ -396,7 +396,7 @@ function EstruturaHomileticaSection2() {
       </SectionCard>
 
       {/* Seção 11 — Conclusão */}
-      <SectionCard num="XI" icon="🏁" title="Conclusão e Apelo">
+      <SectionCard num="XI" icon="🏁" title={pt ? 'Conclusão e Apelo' : 'Conclusion and Appeal'}>
         <p>O Éden não era prisão — era jardim irrigado pela providência, plantado pela mão divina, servido por vice-regentes honrados, e guardado por um único limite que definia tudo. A tentação sempre começa no mesmo lugar: <em>"será que Deus disse...?"</em> — a dúvida que transforma limite em privação.</p>
         <p style={{ marginTop: 10 }}>Mas o jardim que Adão abandonou por autonomia, Cristo recuperou pela obediência. E agora, todo aquele que está em Cristo descobre que os mandamentos de Deus não são pesados (1Jo 5:3) — porque o mesmo Espírito que pairava sobre as águas do caos habita agora o crente, capacitando-o a <strong style={{ color: accent }}>avad e shamar</strong>: servir e guardar o que lhe foi confiado.</p>
         <div style={{ marginTop: 14, padding: '14px 18px', borderRadius: 12, background: 'rgba(255,200,80,0.12)', border: `1px solid ${accentB}` }}>
@@ -411,7 +411,7 @@ function EstruturaHomileticaSection2() {
 
       {/* Notas de rodapé ABNT */}
       <div style={{ borderRadius: 14, border: '1px solid rgba(255,255,255,0.07)', background: 'rgba(0,0,0,0.30)', padding: '20px 24px', marginTop: 8 }}>
-        <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.18em', color: accent, textTransform: 'uppercase', marginBottom: 14 }}>Referências (ABNT NBR 6023)</div>
+        <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.18em', color: accent, textTransform: 'uppercase', marginBottom: 14 }}>{pt ? 'Referências (ABNT NBR 6023)' : 'References'}</div>
         <Footnote num={1} text="KLINE, Meredith G. Kingdom Prologue: Genesis Foundations for a Covenantal Worldview. Eugene: Wipf & Stock, 2006. p. 94." />
         <Footnote num={2} text="KELLER, Timothy. Preaching: Communicating Faith in an Age of Skepticism. New York: Viking, 2015. pp. 157–162." />
         <Footnote num={3} text="CLOWNEY, Edmund P. Preaching Christ in All of Scripture. Wheaton: Crossway, 2003. pp. 41–48." />
@@ -429,7 +429,7 @@ function EstruturaHomileticaSection2() {
 }
 
 // ─── Estrutura Homilética (Gênesis Perícope 1) ──────────────────────
-function EstruturaHomileticaSection() {
+function EstruturaHomileticaSection({ pt }: { pt: boolean }) {
   const accent = 'rgba(255,200,80,1)';
   const accentL = 'rgba(255,200,80,0.10)';
   const accentB = 'rgba(255,200,80,0.30)';
@@ -439,7 +439,7 @@ function EstruturaHomileticaSection() {
       <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 14 }}>
         <div style={{ width: 36, height: 36, borderRadius: 10, background: accentL, border: `1px solid ${accentB}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 18, flexShrink: 0 }}>{icon}</div>
         <div>
-          <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.18em', color: accent, textTransform: 'uppercase', marginBottom: 2 }}>Seção {num}</div>
+          <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.18em', color: accent, textTransform: 'uppercase', marginBottom: 2 }}>{pt ? 'Seção' : 'Section'} {num}</div>
           <div style={{ fontSize: 17, fontWeight: 800, color: C.white }}>{title}</div>
         </div>
       </div>
@@ -472,7 +472,7 @@ function EstruturaHomileticaSection() {
       </div>
 
       {/* Seção 1 — Título */}
-      <SectionCard num="I" icon="📌" title="Título">
+      <SectionCard num="I" icon="📌" title={pt ? 'Título' : 'Title'}>
         <p><strong style={{ color: accent }}>Título Principal:</strong> Do Caos ao Descanso: a Palavra que Cria, Ordena e Consagra</p>
         <p style={{ marginTop: 8 }}><strong style={{ color: accent }}>Subtítulo:</strong> A criação como prólogo do drama redentor de Deus</p>
         <div style={{ marginTop: 12, padding: '10px 16px', borderRadius: 10, background: 'rgba(0,0,0,0.3)', fontFamily: 'monospace', fontSize: 13, color: 'rgba(255,255,255,0.60)', lineHeight: 1.7 }}>
@@ -482,7 +482,7 @@ function EstruturaHomileticaSection() {
       </SectionCard>
 
       {/* Seção 2 — Texto */}
-      <SectionCard num="II" icon="📖" title="Texto Base">
+      <SectionCard num="II" icon="📖" title={pt ? 'Texto Base' : 'Base Text'}>
         <p><strong style={{ color: accent }}>Perícope:</strong> Gênesis 1:1–2:4a (ARA / NVI)</p>
         <p style={{ marginTop: 8 }}><strong style={{ color: accent }}>Ponto focal:</strong> Gênesis 1:14–19 — os luminares como marcadores do tempo sagrado de Deus</p>
         <div style={{ marginTop: 10, display: 'flex', flexWrap: 'wrap', gap: 6 }}>
@@ -494,7 +494,7 @@ function EstruturaHomileticaSection() {
       </SectionCard>
 
       {/* Seção 3 — Tema */}
-      <SectionCard num="III" icon="🎯" title="Tema (Big Idea)">
+      <SectionCard num="III" icon="🎯" title={pt ? 'Tema (Big Idea)' : 'Theme (Big Idea)'}>
         <p>O Deus soberano, pela Sua Palavra criadora e organizadora, transforma o caos (<span style={{ fontFamily: 'monospace', color: accent }}>תֹהוּ וָבֹהוּ</span>) em cosmos sagrado — revelando que a criação é o palco preparado para o drama da redenção.</p>
         <p style={{ marginTop: 10, padding: '8px 14px', borderRadius: 8, background: 'rgba(255,200,80,0.08)', borderLeft: `3px solid ${accent}`, fontSize: 14, color: 'rgba(255,255,255,0.70)', fontStyle: 'italic' }}>
           "Deus não cria para Si um mundo, mas para o Seu povo — um cosmos onde a aliança possa habitar."<br />
@@ -503,7 +503,7 @@ function EstruturaHomileticaSection() {
       </SectionCard>
 
       {/* Seção 4 — Exórdio */}
-      <SectionCard num="IV" icon="🔥" title="Exórdio (Gancho / Introdução)">
+      <SectionCard num="IV" icon="🔥" title={pt ? 'Exórdio (Gancho / Introdução)' : 'Exordium (Hook / Introduction)'}>
         <p>Vivemos em mundo onde a desordem parece ter a última palavra. Crises, relacionamentos fragmentados, propósitos perdidos — o <span style={{ fontFamily: 'monospace', color: accent }}>תֹהוּ</span> do Gênesis ressoa na nossa experiência mais íntima.</p>
         <p style={{ marginTop: 10 }}>Mas antes de qualquer caos humano existir, houve uma Voz. E essa Voz disse: <em>"Haja luz"</em> — e o cosmos emergiu da desordem. A pergunta não é <em>se</em> Deus pode transformar o caos, mas <em>quando</em> Ele já o fez — e o que isso significa para nós.</p>
         <p style={{ marginTop: 10, fontSize: 14, color: 'rgba(255,255,255,0.60)', fontStyle: 'italic' }}>
@@ -512,7 +512,7 @@ function EstruturaHomileticaSection() {
       </SectionCard>
 
       {/* Seção 5 — Proposição */}
-      <SectionCard num="V" icon="⚡" title="Proposição">
+      <SectionCard num="V" icon="⚡" title={pt ? 'Proposição' : 'Proposition'}>
         <div style={{ padding: '14px 18px', borderRadius: 12, background: 'rgba(255,200,80,0.12)', border: `1px solid ${accentB}` }}>
           <p style={{ fontWeight: 800, fontSize: 17, color: C.white, margin: 0 }}>
             A Palavra soberana de Deus transforma todo caos em cosmos consagrado — e isso é o fundamento da nossa esperança redentor-criacional.
@@ -524,7 +524,7 @@ function EstruturaHomileticaSection() {
       </SectionCard>
 
       {/* Seção 6 — Interrogação e Transição */}
-      <SectionCard num="VI" icon="❓" title="Interrogação e Transição">
+      <SectionCard num="VI" icon="❓" title={pt ? 'Interrogação e Transição' : 'Question and Transition'}>
         <p><strong style={{ color: accent }}>Interrogação central:</strong> Como a Palavra soberana de Deus pode transformar o caos da nossa vida em cosmos consagrado?</p>
         <p style={{ marginTop: 10 }}><strong style={{ color: accent }}>Transição:</strong> Para responder, precisamos acompanhar a ação divina nos seis dias — observando o padrão quiástico que revela a lógica teológica da criação.</p>
         <p style={{ marginTop: 10, fontSize: 14, color: 'rgba(255,255,255,0.60)' }}>
@@ -533,8 +533,8 @@ function EstruturaHomileticaSection() {
       </SectionCard>
 
       {/* Seção 7 — Divisões */}
-      <SectionCard num="VII" icon="📐" title="Divisões / Movimentos">
-        <p style={{ marginBottom: 14, fontSize: 14, color: C.muted }}>Estrutura quiástica em 8 movimentos (P–A–B–C–C'–B'–A'–P'):</p>
+      <SectionCard num="VII" icon="📐" title={pt ? 'Divisões / Movimentos' : 'Divisions / Movements'}>
+        <p style={{ marginBottom: 14, fontSize: 14, color: C.muted }}>{pt ? 'Estrutura quiástica em 8 movimentos (P–A–B–C–C\'–B\'–A\'–P\'):' : 'Chiastic structure in 8 movements (P–A–B–C–C\'–B\'–A\'–P\'):'}</p>
         {[
           { sym: 'P',  ref: 'Gn 1:1–2',    label: 'Prólogo: O Soberano e o Caos Primordial',      cor: 'rgba(255,200,80,1)' },
           { sym: 'A',  ref: 'Gn 1:3–5',    label: 'Luz separada das trevas (Dia 1)',               cor: 'rgba(80,200,255,1)' },
@@ -570,7 +570,7 @@ function EstruturaHomileticaSection() {
 
         {/* Movimentos expositivos derivados */}
         <div style={{ marginTop: 20, borderTop: '1px solid rgba(255,200,80,0.18)', paddingTop: 20 }}>
-          <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.18em', color: accent, textTransform: 'uppercase', marginBottom: 16 }}>Divisões Expositivas do Sermão</div>
+          <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.18em', color: accent, textTransform: 'uppercase', marginBottom: 16 }}>{pt ? 'Divisões Expositivas do Sermão' : 'Expository Sermon Divisions'}</div>
 
           {[
             {
@@ -619,10 +619,10 @@ function EstruturaHomileticaSection() {
               <div style={{ fontSize: 16, fontWeight: 800, color: C.white, marginBottom: 14, lineHeight: 1.4 }}>{mv.title}</div>
               <div style={{ display: 'grid', gap: 10 }}>
                 {[
-                  { label: '§ Indicação Textual', text: mv.indicacao },
-                  { label: '§ Exegese', text: mv.exegese },
-                  { label: '§ Teologia Reformada', text: mv.teologia },
-                  { label: '§ Aplicação', text: mv.aplicacao },
+                  { label: pt ? '§ Indicação Textual' : '§ Textual Indication', text: mv.indicacao },
+                  { label: pt ? '§ Exegese' : '§ Exegesis', text: mv.exegese },
+                  { label: pt ? '§ Teologia Reformada' : '§ Reformed Theology', text: mv.teologia },
+                  { label: pt ? '§ Aplicação' : '§ Application', text: mv.aplicacao },
                 ].map((item, j) => (
                   <div key={j} style={{ padding: '10px 14px', borderRadius: 10, background: 'rgba(0,0,0,0.30)', borderLeft: `3px solid ${mv.cor}` }}>
                     <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.12em', color: mv.cor, textTransform: 'uppercase', marginBottom: 4 }}>{item.label}</div>
@@ -636,7 +636,7 @@ function EstruturaHomileticaSection() {
       </SectionCard>
 
       {/* Seção 8 — Eixo Cristológico */}
-      <SectionCard num="VIII" icon="✝️" title="Eixo Cristológico">
+      <SectionCard num="VIII" icon="✝️" title={pt ? 'Eixo Cristológico' : 'Christological Axis'}>
         <p>A criação não é um fim em si mesma — é o <em>anfiteatro da redenção</em> (Calvino). O Logos que "estava no princípio com Deus" (Jo 1:1–3) é o mesmo que sustenta o cosmos criado (Cl 1:16–17). O Gênesis 1 aponta para o Novo Gênesis em Cristo:</p>
         <div style={{ marginTop: 12, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 10 }}>
           {[
@@ -645,8 +645,8 @@ function EstruturaHomileticaSection() {
             { at: 'Repouso sabático (Gn 2:2)', nt: 'Repouso em Cristo (Hb 4:9–10)', cor: 'rgba(100,220,160,0.15)' },
           ].map((p, i) => (
             <div key={i} style={{ padding: '10px 14px', borderRadius: 10, background: p.cor, border: '1px solid rgba(255,255,255,0.08)' }}>
-              <div style={{ fontSize: 12, color: C.muted, marginBottom: 4 }}>AT: {p.at}</div>
-              <div style={{ fontSize: 13, color: C.white, fontWeight: 700 }}>NT: {p.nt}</div>
+              <div style={{ fontSize: 12, color: C.muted, marginBottom: 4 }}>{pt ? 'AT' : 'OT'}: {p.at}</div>
+              <div style={{ fontSize: 13, color: C.white, fontWeight: 700 }}>{pt ? 'NT' : 'NT'}: {p.nt}</div>
             </div>
           ))}
         </div>
@@ -656,7 +656,7 @@ function EstruturaHomileticaSection() {
       </SectionCard>
 
       {/* Seção 9 — Ilustração */}
-      <SectionCard num="IX" icon="💡" title="Ilustração">
+      <SectionCard num="IX" icon="💡" title={pt ? 'Ilustração' : 'Illustration'}>
         <p>Imagine um arquiteto que recebe um terreno em ruínas — entulho, lama, sem forma. Ele não abandona o local: <em>ele fala</em>. Cada palavra de comando transforma o caos em estrutura habitável. Assim age o Deus de Gênesis 1: Sua Palavra não descreve a realidade — <strong style={{ color: accent }}>ela a produz</strong>.</p>
         <p style={{ marginTop: 10 }}>Na pregação reformada, a Palavra de Deus tem poder análogo: ela não apenas informa — ela <em>reforma</em>. Assim como os luminares foram criados para <em>governar</em> o tempo (Gn 1:14–18), o pregador é convocado a proclamar a Palavra que reorienta o tempo de sua congregação.</p>
         <p style={{ marginTop: 10, fontSize: 14, color: 'rgba(255,255,255,0.60)' }}>
@@ -665,7 +665,7 @@ function EstruturaHomileticaSection() {
       </SectionCard>
 
       {/* Seção 10 — Aplicação */}
-      <SectionCard num="X" icon="🛠️" title="Aplicação">
+      <SectionCard num="X" icon="🛠️" title={pt ? 'Aplicação' : 'Application'}>
         {[
           { pub: 'Universal', app: 'Todo ser humano experimenta o caos — Deus é o único que transforma desordem em propósito (Gn 1:2).', ref: 'Rm 8:28' },
           { pub: 'Crentes', app: 'A Palavra de Deus tem poder de re-criar a vida desordenada do crente. Permita que ela fale ao seu caos.', ref: '2Co 4:6' },
@@ -682,7 +682,7 @@ function EstruturaHomileticaSection() {
       </SectionCard>
 
       {/* Seção 11 — Conclusão */}
-      <SectionCard num="XI" icon="🏁" title="Conclusão e Apelo">
+      <SectionCard num="XI" icon="🏁" title={pt ? 'Conclusão e Apelo' : 'Conclusion and Appeal'}>
         <p>No princípio, havia caos. Deus falou — e houve cosmos. No princípio da sua vida, havia desordem. Cristo falou — e há nova criação (2Co 5:17). O mesmo Deus que disse <em>"haja luz"</em> na criação diz <em>"haja luz"</em> no seu coração.</p>
         <p style={{ marginTop: 10 }}>O descanso do sétimo dia (Gn 2:1–3) não é inatividade — é <strong style={{ color: accent }}>consagração</strong>. É o Soberano declarando que o cosmos está completo, pronto para ser habitado pela aliança. E esse mesmo repouso está disponível para você em Cristo (Hb 4:9–11).</p>
         <div style={{ marginTop: 14, padding: '14px 18px', borderRadius: 12, background: 'rgba(255,200,80,0.12)', border: `1px solid ${accentB}` }}>
@@ -697,7 +697,7 @@ function EstruturaHomileticaSection() {
 
       {/* Notas de rodapé ABNT */}
       <div style={{ borderRadius: 14, border: '1px solid rgba(255,255,255,0.07)', background: 'rgba(0,0,0,0.30)', padding: '20px 24px', marginTop: 8 }}>
-        <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.18em', color: accent, textTransform: 'uppercase', marginBottom: 14 }}>Referências (ABNT NBR 6023)</div>
+        <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.18em', color: accent, textTransform: 'uppercase', marginBottom: 14 }}>{pt ? 'Referências (ABNT NBR 6023)' : 'References'}</div>
         <Footnote num={1} text="VOS, Geerhardus. Biblical Theology: Old and New Testaments. Grand Rapids: Eerdmans, 1948. p. 27." />
         <Footnote num={2} text="KELLER, Timothy. Preaching: Communicating Faith in an Age of Skepticism. New York: Viking, 2015. pp. 157–162." />
         <Footnote num={3} text="CLOWNEY, Edmund P. Preaching Christ in All of Scripture. Wheaton: Crossway, 2003. pp. 41–48." />
@@ -870,7 +870,7 @@ const HEBREW_TRANSLIT: Record<string, string> = {
 };
 
 // ─── Quiasma renderer ───────────────────────────────────────────────
-function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: number }) {
+function QuiasmaSection({ d, pericopeIdx, pt }: { d: DiaDevocional; pericopeIdx: number; pt: boolean }) {
   const [quiasma, setQuiasma] = useState('');
   const [status, setStatus] = useState<'loading' | 'ok' | 'none'>('loading');
   const book = BIBLE_BOOKS.find(b => b.abrev === d.livroAbrev);
@@ -894,12 +894,12 @@ function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: num
   }, [d, pericopeIdx, book]);
 
   if (status === 'loading') return (
-    <div style={{ padding: 40, textAlign: 'center', color: C.muted, fontSize: 12 }}>Carregando estrutura...</div>
+    <div style={{ padding: 40, textAlign: 'center', color: C.muted, fontSize: 12 }}>{pt ? 'Carregando estrutura...' : 'Loading structure...'}</div>
   );
 
   if (status !== 'ok') return (
     <div style={{ padding: 32, textAlign: 'center', color: C.muted, fontSize: 13 }}>
-      Esta perícope ainda não possui estrutura quiástica cadastrada.
+      {pt ? 'Esta perícope ainda não possui estrutura quiástica cadastrada.' : 'This pericope does not yet have a chiastic structure registered.'}
     </div>
   );
 
@@ -943,8 +943,8 @@ function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: num
           <BookOpen size={15} color={cor} />
         </div>
         <div>
-          <div style={{ fontSize: 15, fontWeight: 900, color: cor, letterSpacing: '0.20em', textTransform: 'uppercase' }}>Estrutura Quiástica</div>
-          <div style={{ fontSize: 14, color: 'rgba(255,255,255,0.4)', marginTop: 2 }}>{d.livro} — Perícope {pericopeIdx}</div>
+          <div style={{ fontSize: 15, fontWeight: 900, color: cor, letterSpacing: '0.20em', textTransform: 'uppercase' }}>{pt ? 'Estrutura Quiástica' : 'Chiastic Structure'}</div>
+          <div style={{ fontSize: 14, color: 'rgba(255,255,255,0.4)', marginTop: 2 }}>{d.livro} — {pt ? 'Perícope' : 'Pericope'} {pericopeIdx}</div>
         </div>
       </div>
       <div style={{ background: 'rgba(5,7,26,0.85)', padding: '16px 14px' }}>
@@ -994,7 +994,7 @@ function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: num
 }
 
 // ─── Para Pregar renderer ────────────────────────────────────────────
-function ParaPregarSection({ d, pericopeIdx, conteudo, sermonTitulo, sermonPergunta }: { d: DiaDevocional; pericopeIdx: number; conteudo: string; sermonTitulo?: string; sermonPergunta?: string }) {
+function ParaPregarSection({ d, pericopeIdx, conteudo, sermonTitulo, sermonPergunta, pt }: { d: DiaDevocional; pericopeIdx: number; conteudo: string; sermonTitulo?: string; sermonPergunta?: string; pt: boolean }) {
   const [quiasmaArms, setQuiasmaArms] = useState<{ badgeLetter: string; refPart: string; desc: string; level: number; isCenter: boolean }[]>([]);
   const book = BIBLE_BOOKS.find(b => b.abrev === d.livroAbrev);
 
@@ -1137,14 +1137,14 @@ function ParaPregarSection({ d, pericopeIdx, conteudo, sermonTitulo, sermonPergu
       <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
         {/* Cabeçalho */}
         <div style={{ borderRadius: 16, padding: `${pv} ${ph}`, background: 'linear-gradient(135deg, rgba(20,12,40,0.97) 0%, rgba(10,18,48,0.97) 100%)', border: '1px solid rgba(168,120,255,0.30)', boxShadow: '0 8px 32px rgba(0,0,0,0.45)' }}>
-          <div style={tagStyle('rgba(196,160,255,0.55)')}>Para Pregar · Homilética Expositiva Reformada</div>
+          <div style={tagStyle('rgba(196,160,255,0.55)')}>{pt ? 'Para Pregar · Homilética Expositiva Reformada' : 'For Preaching · Reformed Expository Homiletics'}</div>
           {nTitulo && <div style={{ fontSize: 'clamp(20px,3.8vw,28px)', fontWeight: 900, lineHeight: 1.25, background: 'linear-gradient(135deg, rgba(226,210,255,1) 0%, rgba(147,210,255,1) 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', marginBottom: 16 }}>{nTitulo}</div>}
           {nBigIdeia && <div style={{ padding: '12px 16px', borderRadius: 10, background: 'rgba(139,92,246,0.10)', border: '1px solid rgba(139,92,246,0.25)', marginBottom: 12 }}>
-            <div style={tagStyle('rgba(196,160,255,0.60)')}>Big Idea</div>
+            <div style={tagStyle('rgba(196,160,255,0.60)')}>{pt ? 'Big Idea' : 'Big Idea'}</div>
             <div style={{ fontSize: 'clamp(17px,3vw,21px)', color: 'rgba(226,220,255,0.97)', fontWeight: 700, fontStyle: 'italic', lineHeight: 1.5 }}>"{nBigIdeia}"</div>
           </div>}
           {nPergunta && <div style={{ padding: '12px 16px', borderRadius: 10, background: 'linear-gradient(135deg, rgba(96,165,250,0.08) 0%, rgba(139,92,246,0.06) 100%)', border: '1px solid rgba(96,165,250,0.25)', borderLeft: '4px solid rgba(96,165,250,1)', marginBottom: 12 }}>
-            <div style={tagStyle('rgba(147,197,253,0.65)')}>Pergunta de Transição</div>
+            <div style={tagStyle('rgba(147,197,253,0.65)')}>{pt ? 'Pergunta de Transição' : 'Transition Question'}</div>
             <div style={{ fontSize: 'clamp(15px,2.6vw,18px)', color: 'rgba(210,230,255,0.95)', fontWeight: 600, fontStyle: 'italic', lineHeight: 1.6 }}>{nPergunta}</div>
           </div>}
           {nPalavraChave && <div style={{ fontSize: 'clamp(14px,2.4vw,16px)', color: 'rgba(180,175,220,0.78)', lineHeight: 1.65, fontStyle: 'italic' }}>{nPalavraChave}</div>}
@@ -1152,7 +1152,7 @@ function ParaPregarSection({ d, pericopeIdx, conteudo, sermonTitulo, sermonPergu
 
         {/* Movimentos */}
         {nMovimentos.length > 0 && <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-          <div style={tagStyle('rgba(147,197,253,0.60)')}>Movimentos do Sermão</div>
+          <div style={tagStyle('rgba(147,197,253,0.60)')}>{pt ? 'Movimentos do Sermão' : 'Sermon Movements'}</div>
           {nMovimentos.map((mv, i) => {
             const cor = MOV_CORES[i % MOV_CORES.length];
             const corB = cor.replace('1)', '0.25)');
@@ -1172,10 +1172,10 @@ function ParaPregarSection({ d, pericopeIdx, conteudo, sermonTitulo, sermonPergu
                     ) : null;
                   })()}
                   {[
-                    { label: 'Indicação Textual', text: mv.indicacao, cor: 'rgba(255,220,120,0.80)' },
-                    { label: 'Exegese', text: mv.exegese, cor: 'rgba(180,230,255,0.80)' },
-                    { label: 'Teologia Reformada', text: mv.teologia, cor: 'rgba(200,170,255,0.80)' },
-                    { label: 'Aplicação', text: mv.aplicacao, cor: 'rgba(120,220,160,0.90)' },
+                    { label: pt ? 'Indicação Textual' : 'Textual Indication', text: mv.indicacao, cor: 'rgba(255,220,120,0.80)' },
+                    { label: pt ? 'Exegese' : 'Exegesis', text: mv.exegese, cor: 'rgba(180,230,255,0.80)' },
+                    { label: pt ? 'Teologia Reformada' : 'Reformed Theology', text: mv.teologia, cor: 'rgba(200,170,255,0.80)' },
+                    { label: pt ? 'Aplicação' : 'Application', text: mv.aplicacao, cor: 'rgba(120,220,160,0.90)' },
                   ].filter(f => f.text).map((f, fi) => (
                     <div key={fi} style={{ marginBottom: fi < 3 ? 12 : 0 }}>
                       <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase', color: f.cor, marginBottom: 4 }}>{f.label}</div>
@@ -1190,19 +1190,19 @@ function ParaPregarSection({ d, pericopeIdx, conteudo, sermonTitulo, sermonPergu
 
         {/* Eixo Redentor */}
         {nEixoRedentor && <div style={{ borderRadius: 12, padding: '16px 20px', background: 'rgba(255,140,80,0.07)', border: '1px solid rgba(255,140,80,0.25)', borderLeft: '4px solid rgba(255,140,80,0.80)' }}>
-          <div style={tagStyle('rgba(255,180,100,0.80)')}>Eixo Redentor · Perspectiva Histórico-Redentiva</div>
+          <div style={tagStyle('rgba(255,180,100,0.80)')}>{pt ? 'Eixo Redentor · Perspectiva Histórico-Redentiva' : 'Redemptive Axis · Redemptive-Historical Perspective'}</div>
           <div style={{ fontSize: 'clamp(14px,2.4vw,16px)', color: 'rgba(255,225,185,0.93)', lineHeight: 1.75 }}>{nEixoRedentor}</div>
         </div>}
 
         {/* Doutrina Central */}
         {nDoutrina && <div style={{ borderRadius: 12, padding: '14px 20px', background: 'rgba(80,200,255,0.06)', border: '1px solid rgba(80,200,255,0.22)' }}>
-          <div style={tagStyle('rgba(147,197,253,0.75)')}>Doutrina Central</div>
+          <div style={tagStyle('rgba(147,197,253,0.75)')}>{pt ? 'Doutrina Central' : 'Central Doctrine'}</div>
           <div style={{ fontSize: 'clamp(15px,2.5vw,17px)', color: 'rgba(205,232,255,0.93)', fontWeight: 600, lineHeight: 1.65 }}>{nDoutrina}</div>
         </div>}
 
         {/* Aplicações Pastorais */}
         {nAplicacoes.length > 0 && <div style={{ borderRadius: 12, padding: '14px 20px', background: 'rgba(100,220,160,0.06)', border: '1px solid rgba(100,220,160,0.22)' }}>
-          <div style={tagStyle('rgba(120,220,160,0.75)')}>Aplicações Pastorais</div>
+          <div style={tagStyle('rgba(120,220,160,0.75)')}>{pt ? 'Aplicações Pastorais' : 'Pastoral Applications'}</div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
             {nAplicacoes.map((ap, i) => (
               <div key={i} style={{ display: 'flex', gap: 12, alignItems: 'flex-start' }}>
@@ -1215,7 +1215,7 @@ function ParaPregarSection({ d, pericopeIdx, conteudo, sermonTitulo, sermonPergu
 
         {/* Conclusão */}
         {nConclusao && <div style={{ borderRadius: 12, padding: '16px 20px', background: 'linear-gradient(135deg, rgba(139,92,246,0.08) 0%, rgba(96,165,250,0.06) 100%)', border: '1px solid rgba(139,92,246,0.22)' }}>
-          <div style={tagStyle('rgba(196,160,255,0.75)')}>Conclusão</div>
+          <div style={tagStyle('rgba(196,160,255,0.75)')}>{pt ? 'Conclusão' : 'Conclusion'}</div>
           <div style={{ fontSize: 'clamp(14px,2.4vw,16px)', color: 'rgba(222,218,255,0.92)', lineHeight: 1.85 }}>{nConclusao}</div>
         </div>}
       </div>
@@ -1230,14 +1230,14 @@ function ParaPregarSection({ d, pericopeIdx, conteudo, sermonTitulo, sermonPergu
           <div style={{ width: 28, height: 28, borderRadius: 8, flexShrink: 0, background: 'linear-gradient(135deg, rgba(139,92,246,0.35), rgba(96,165,250,0.25))', border: '1px solid rgba(168,120,255,0.40)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 0 12px rgba(139,92,246,0.25)' }}>
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="rgba(196,160,255,1)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
           </div>
-          <div style={{ fontSize: 'clamp(11px,2.2vw,13px)', fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', background: 'linear-gradient(90deg, rgba(196,160,255,1) 0%, rgba(147,197,253,1) 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Para Pregar</div>
+          <div style={{ fontSize: 'clamp(11px,2.2vw,13px)', fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', background: 'linear-gradient(90deg, rgba(196,160,255,1) 0%, rgba(147,197,253,1) 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>{pt ? 'Para Pregar' : 'For Preaching'}</div>
           <div style={{ flex: 1, height: 1, marginLeft: 4, background: 'linear-gradient(90deg, rgba(139,92,246,0.40) 0%, rgba(96,165,250,0.15) 60%, transparent 100%)' }} />
         </div>
         {/* Título do Sermão */}
         {sermonTitulo && (
           <div style={{ marginBottom: 18 }}>
             <div style={{ fontSize: 12, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(196,160,255,0.60)', marginBottom: 8 }}>
-              Título do Sermão
+              {pt ? 'Título do Sermão' : 'Sermon Title'}
             </div>
             <div style={{
               fontSize: 'clamp(20px,3.5vw,28px)', fontWeight: 800, lineHeight: 1.25,
@@ -1264,20 +1264,20 @@ function ParaPregarSection({ d, pericopeIdx, conteudo, sermonTitulo, sermonPergu
             <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 4, background: 'linear-gradient(180deg, rgba(96,165,250,1) 0%, rgba(139,92,246,1) 100%)', borderRadius: '12px 0 0 12px' }} />
             <div style={{ paddingLeft: 8 }}>
               <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(147,197,253,0.75)', marginBottom: 10 }}>
-                Pergunta Geradora do Sermão
+                {pt ? 'Pergunta Geradora do Sermão' : 'Sermon Generating Question'}
               </div>
               <div style={{ fontSize: 'clamp(16px,2.8vw,19px)', color: 'rgba(210,230,255,0.97)', fontWeight: 700, lineHeight: 1.65, fontStyle: 'italic' }}>
                 {sermonPergunta}
               </div>
               <div style={{ marginTop: 10, fontSize: 11, color: 'rgba(147,197,253,0.50)', fontWeight: 600, letterSpacing: '0.08em' }}>
-                Esta pergunta guia todos os pontos do sermão
+                {pt ? 'Esta pergunta guia todos os pontos do sermão' : 'This question guides all sermon points'}
               </div>
             </div>
           </div>
         )}
         {quiasmaArms.length > 0 && titlesGanchos.length > 0 && (
           <div style={{ marginBottom: 16 }}>
-            <div style={{ fontSize: 12, fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase', color: 'rgba(147,197,253,0.65)', marginBottom: 14 }}>Movimentos do Texto</div>
+            <div style={{ fontSize: 12, fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase', color: 'rgba(147,197,253,0.65)', marginBottom: 14 }}>{pt ? 'Movimentos do Texto' : 'Text Movements'}</div>
             {quiasmaArms.map((arm, idx) => {
               const tg = titlesGanchos[idx];
               if (!tg) return null;
@@ -1328,7 +1328,7 @@ function ParaPregarSection({ d, pericopeIdx, conteudo, sermonTitulo, sermonPergu
         )}
         {eixo && (
           <div style={{ padding: '10px 14px', borderRadius: 10, background: 'rgba(96,165,250,0.06)', border: '1px solid rgba(96,165,250,0.18)' }}>
-            <div style={{ fontSize: 'clamp(10px,1.8vw,12px)', fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase', color: 'rgba(147,197,253,0.65)', marginBottom: 6 }}>Eixo Cristológico</div>
+            <div style={{ fontSize: 'clamp(10px,1.8vw,12px)', fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase', color: 'rgba(147,197,253,0.65)', marginBottom: 6 }}>{pt ? 'Eixo Cristológico' : 'Christological Axis'}</div>
             <div style={{ fontSize: 'clamp(14px,2.5vw,16px)', color: 'rgba(200,220,255,0.85)', lineHeight: 1.7 }}>{eixo}</div>
           </div>
         )}
@@ -1529,12 +1529,12 @@ export default function PregacaoPage() {
             {/* Nome do livro + contagem */}
             <div id="pregacao-pericopes" style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 16 }}>
               <span style={{ fontSize: 17, fontWeight: 800, color: cor }}>{selectedBook.nome}</span>
-              {loadingPericopes && <span style={{ fontSize: 12, color: C.muted }}>Carregando...</span>}
+              {loadingPericopes && <span style={{ fontSize: 12, color: C.muted }}>{pt ? 'Carregando...' : 'Loading...'}</span>}
               {!loadingPericopes && pericopes.length > 0 && (
-                <span style={{ fontSize: 12, color: C.muted, fontWeight: 600 }}>{pericopes.length} perícopes</span>
+                <span style={{ fontSize: 12, color: C.muted, fontWeight: 600 }}>{pericopes.length} {pt ? 'perícopes' : 'pericopes'}</span>
               )}
               {!loadingPericopes && pericopes.length === 0 && (
-                <span style={{ fontSize: 12, color: C.muted }}>Perícopes ainda não cadastradas</span>
+                <span style={{ fontSize: 12, color: C.muted }}>{pt ? 'Perícopes ainda não cadastradas' : 'Pericopes not yet registered'}</span>
               )}
             </div>
 
@@ -1678,9 +1678,9 @@ export default function PregacaoPage() {
                   {/* Tab bar */}
                   <div style={{ display: 'flex', gap: 4, marginBottom: 20, borderBottom: `1px solid ${C.border}`, paddingBottom: 0, flexWrap: 'wrap' }}>
                     {([
-                      { key: 'estrutura',  label: 'Estrutura Homilética' },
-                      { key: 'homilestica', label: 'Homilética para Pregar' },
-                      { key: 'quiasma',    label: 'Estrutura Quiástica Espelhada' },
+                      { key: 'estrutura',  label: pt ? 'Estrutura Homilética' : 'Homiletic Structure' },
+                      { key: 'homilestica', label: pt ? 'Homilética para Pregar' : 'Homiletics for Preaching' },
+                      { key: 'quiasma',    label: pt ? 'Estrutura Quiástica Espelhada' : 'Mirror Chiastic Structure' },
                     ] as { key: 'estrutura' | 'homilestica' | 'quiasma'; label: string }[]).map(tab => {
                       const active = contentTab === tab.key;
                       return (
@@ -1707,7 +1707,7 @@ export default function PregacaoPage() {
                   {/* Pericope title */}
                   <div style={{ marginBottom: 20 }}>
                     <div style={{ fontSize: 12, fontWeight: 900, letterSpacing: '0.18em', color: selectedBook.testamento === 'AT' ? C.atColor : C.ntColor, textTransform: 'uppercase', marginBottom: 6 }}>
-                      Perícope {String(selectedPericope.idx).padStart(2, '0')}
+                      {pt ? 'Perícope' : 'Pericope'} {String(selectedPericope.idx).padStart(2, '0')}
                     </div>
                     <div style={{ fontSize: 'clamp(22px,3.5vw,30px)', fontWeight: 800, color: C.white, lineHeight: 1.3 }}>
                       {selectedPericope.titulo}
@@ -1722,26 +1722,26 @@ export default function PregacaoPage() {
                     {contentTab === 'estrutura' ? (
                       <motion.div key="estrutura" initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 10 }} transition={{ duration: 0.18 }}>
                         {selectedDia.dia === 1 ? (
-                          <EstruturaHomileticaSection />
+                          <EstruturaHomileticaSection pt={pt} />
                         ) : selectedDia.dia === 2 ? (
-                          <EstruturaHomileticaSection2 />
+                          <EstruturaHomileticaSection2 pt={pt} />
                         ) : (
                           <div style={{ padding: 32, borderRadius: 16, border: '1px solid rgba(168,120,255,0.20)', background: 'rgba(20,12,40,0.6)', color: C.muted, fontSize: 13, textAlign: 'center' }}>
-                            Estrutura homilética ainda não disponível para esta perícope.
+                            {pt ? 'Estrutura homilética ainda não disponível para esta perícope.' : 'Homiletic structure not yet available for this pericope.'}
                           </div>
                         )}
                       </motion.div>
                     ) : contentTab === 'quiasma' ? (
                       <motion.div key="quiasma" initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 10 }} transition={{ duration: 0.18 }}>
-                        <QuiasmaSection d={selectedDia} pericopeIdx={selectedPericope.idx} />
+                        <QuiasmaSection d={selectedDia} pericopeIdx={selectedPericope.idx} pt={pt} />
                       </motion.div>
                     ) : (
                       <motion.div key="homilestica" initial={{ opacity: 0, x: 10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -10 }} transition={{ duration: 0.18 }}>
                         {paraPregarConteudo ? (
-                          <ParaPregarSection d={selectedDia} pericopeIdx={selectedPericope.idx} conteudo={paraPregarConteudo} sermonTitulo={SERMON_TITLES[selectedDia.dia]} sermonPergunta={SERMON_QUESTIONS[selectedDia.dia]} />
+                          <ParaPregarSection d={selectedDia} pericopeIdx={selectedPericope.idx} conteudo={paraPregarConteudo} sermonTitulo={SERMON_TITLES[selectedDia.dia]} sermonPergunta={SERMON_QUESTIONS[selectedDia.dia]} pt={pt} />
                         ) : (
                           <div style={{ padding: 32, borderRadius: 16, border: '1px solid rgba(168,120,255,0.20)', background: 'rgba(20,12,40,0.6)', color: C.muted, fontSize: 13, textAlign: 'center' }}>
-                            Esboço homilético ainda não disponível para esta perícope.
+                            {pt ? 'Esboço homilético ainda não disponível para esta perícope.' : 'Homiletic outline not yet available for this pericope.'}
                           </div>
                         )}
                       </motion.div>

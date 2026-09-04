@@ -66,48 +66,58 @@ const SVG_JOAO = (cor: string) => (
 );
 
 /* ── Dados dos Evangelhos ── */
-const GOSPELS = [
-  {
-    nome: 'Mateus',  abbr: 'Mt', ref: 'Mt 1–28',
-    subtitulo: 'O Rei Prometido',
-    disponivel: true,
-    cor: '#00d4ff', corRgb: '0,212,255',
-    svg: SVG_MATEUS,
-    desc: 'Análise expositiva completa com diagramas hermenêuticos aplicados a cada perícope — quiasmas, cristologia, homilética e mais.',
-    symbol: 'Homem · Genealogia',
-    floatDelay: 0,
-  },
-  {
-    nome: 'Marcos',  abbr: 'Mc', ref: 'Mc 1–16',
-    subtitulo: 'O Servo em Ação',
-    disponivel: false,
-    cor: '#7b2ff7', corRgb: '123,47,247',
-    svg: SVG_MARCOS,
-    desc: 'O evangelho da velocidade e ação — o Filho de Deus que age com poder imediato. Análise em produção.',
-    symbol: 'Leão · Ação',
-    floatDelay: 0.4,
-  },
-  {
-    nome: 'Lucas',   abbr: 'Lc', ref: 'Lc 1–24',
-    subtitulo: 'O Salvador Universal',
-    disponivel: false,
-    cor: '#ff9f1c', corRgb: '255,159,28',
-    svg: SVG_LUCAS,
-    desc: 'O evangelho do Espírito Santo, da oração e dos marginalizados — o Filho do Homem. Análise em produção.',
-    symbol: 'Touro · Sacrifício',
-    floatDelay: 0.8,
-  },
-  {
-    nome: 'João',    abbr: 'Jo', ref: 'Jo 1–21',
-    subtitulo: 'O Logos Eterno',
-    disponivel: false,
-    cor: '#ff2d55', corRgb: '255,45,85',
-    svg: SVG_JOAO,
-    desc: 'O evangelho teológico por excelência — sete sinais, sete "Eu sou", a glória do Logos encarnado. Análise em produção.',
-    symbol: 'Águia · Divindade',
-    floatDelay: 1.2,
-  },
-];
+function getGospels(pt: boolean) {
+  return [
+    {
+      nome: pt ? 'Mateus' : 'Matthew',  abbr: 'Mt', ref: 'Mt 1–28',
+      subtitulo: pt ? 'O Rei Prometido' : 'The Promised King',
+      disponivel: true,
+      cor: '#00d4ff', corRgb: '0,212,255',
+      svg: SVG_MATEUS,
+      desc: pt
+        ? 'Análise expositiva completa com diagramas hermenêuticos aplicados a cada perícope — quiasmas, cristologia, homilética e mais.'
+        : 'Complete expository analysis with hermeneutical diagrams applied to each pericope — chiasms, Christology, homiletics and more.',
+      symbol: pt ? 'Homem · Genealogia' : 'Man · Genealogy',
+      floatDelay: 0,
+    },
+    {
+      nome: pt ? 'Marcos' : 'Mark',  abbr: 'Mc', ref: 'Mc 1–16',
+      subtitulo: pt ? 'O Servo em Ação' : 'The Servant in Action',
+      disponivel: false,
+      cor: '#7b2ff7', corRgb: '123,47,247',
+      svg: SVG_MARCOS,
+      desc: pt
+        ? 'O evangelho da velocidade e ação — o Filho de Deus que age com poder imediato. Análise em produção.'
+        : 'The gospel of speed and action — the Son of God who acts with immediate power. Analysis in production.',
+      symbol: pt ? 'Leão · Ação' : 'Lion · Action',
+      floatDelay: 0.4,
+    },
+    {
+      nome: pt ? 'Lucas' : 'Luke',   abbr: 'Lc', ref: 'Lc 1–24',
+      subtitulo: pt ? 'O Salvador Universal' : 'The Universal Savior',
+      disponivel: false,
+      cor: '#ff9f1c', corRgb: '255,159,28',
+      svg: SVG_LUCAS,
+      desc: pt
+        ? 'O evangelho do Espírito Santo, da oração e dos marginalizados — o Filho do Homem. Análise em produção.'
+        : 'The gospel of the Holy Spirit, prayer and the marginalized — the Son of Man. Analysis in production.',
+      symbol: pt ? 'Touro · Sacrifício' : 'Bull · Sacrifice',
+      floatDelay: 0.8,
+    },
+    {
+      nome: pt ? 'João' : 'John',    abbr: 'Jo', ref: 'Jo 1–21',
+      subtitulo: pt ? 'O Logos Eterno' : 'The Eternal Logos',
+      disponivel: false,
+      cor: '#ff2d55', corRgb: '255,45,85',
+      svg: SVG_JOAO,
+      desc: pt
+        ? 'O evangelho teológico por excelência — sete sinais, sete "Eu sou", a glória do Logos encarnado. Análise em produção.'
+        : 'The theological gospel par excellence — seven signs, seven "I am", the glory of the incarnate Logos. Analysis in production.',
+      symbol: pt ? 'Águia · Divindade' : 'Eagle · Divinity',
+      floatDelay: 1.2,
+    },
+  ];
+}
 
 /* ── SVGs para os volumes de Mateus (catálogo) ── */
 const SVG_VOL1 = (cor: string) => (
@@ -158,50 +168,66 @@ const SVG_VOL3 = (cor: string) => (
 
 const SVGS = [SVG_VOL1, SVG_VOL2, SVG_VOL3];
 
-const VOLUMES = [
-  {
-    vol: 'I', titulo: 'Mateus', subtitulo: 'Genealogia ao Envio dos Doze',
-    cap: 'Mt 1–10', paginas: '320 páginas', formato: 'Digital · PDF · Online',
-    isbn: 'ISBN em produção', seccoes: '10 seções · diagramas expositivos',
-    disponivel: true, lerHref: '/ebook/mateus', amazonHref: '#',
-    temas: ['Genealogia','Nascimento','Sermão da Montanha','Milagres','Envio dos Doze'],
-    cor: '#00d4ff', corRgb: '0,212,255', badge: 'Disponível Agora',
-    descricao: 'Análise expositiva completa de Mateus 1–10 com diagramas hermenêuticos aplicados a cada perícope.',
-    avaliacao: 5,
-  },
-  {
-    vol: 'II', titulo: 'Mateus', subtitulo: 'O Reino e o Conflito',
-    cap: 'Mt 11–20', paginas: 'Em produção', formato: 'Digital · PDF · Online',
-    isbn: 'ISBN em produção', seccoes: '10 seções · diagramas expositivos',
-    disponivel: false, lerHref: null, amazonHref: null,
-    temas: ['Parábolas do Reino','Conflito com Fariseus','Transfiguração','Discurso Comunitário'],
-    cor: '#7b2ff7', corRgb: '123,47,247', badge: 'Em Breve',
-    descricao: 'A segunda parte: o reino em parábolas, os conflitos, a transfiguração e o discurso comunitário.',
-    avaliacao: 0,
-  },
-  {
-    vol: 'III', titulo: 'Mateus', subtitulo: 'Jerusalém e a Grande Comissão',
-    cap: 'Mt 21–28', paginas: 'Em produção', formato: 'Digital · PDF · Online',
-    isbn: 'ISBN em produção', seccoes: '5 seções · diagramas expositivos',
-    disponivel: false, lerHref: null, amazonHref: null,
-    temas: ['Entrada em Jerusalém','Discurso Escatológico','Paixão','Ressurreição','Grande Comissão'],
-    cor: '#ff2d55', corRgb: '255,45,85', badge: 'Em Breve',
-    descricao: 'O clímax: entrada triunfal, discurso escatológico, paixão, ressurreição e Grande Comissão.',
-    avaliacao: 0,
-  },
-];
+function getVolumes(pt: boolean) {
+  return [
+    {
+      vol: 'I', titulo: pt ? 'Mateus' : 'Matthew', subtitulo: pt ? 'Genealogia ao Envio dos Doze' : 'Genealogy to the Sending of the Twelve',
+      cap: 'Mt 1–10', paginas: pt ? '320 páginas' : '320 pages', formato: 'Digital · PDF · Online',
+      isbn: pt ? 'ISBN em produção' : 'ISBN in production', seccoes: pt ? '10 seções · diagramas expositivos' : '10 sections · expository diagrams',
+      disponivel: true, lerHref: '/ebook/mateus', amazonHref: '#',
+      temas: pt
+        ? ['Genealogia','Nascimento','Sermão da Montanha','Milagres','Envio dos Doze']
+        : ['Genealogy','Birth','Sermon on the Mount','Miracles','Sending of the Twelve'],
+      cor: '#00d4ff', corRgb: '0,212,255', badge: pt ? 'Disponível Agora' : 'Available Now',
+      descricao: pt
+        ? 'Análise expositiva completa de Mateus 1–10 com diagramas hermenêuticos aplicados a cada perícope.'
+        : 'Complete expository analysis of Matthew 1–10 with hermeneutical diagrams applied to each pericope.',
+      avaliacao: 5,
+    },
+    {
+      vol: 'II', titulo: pt ? 'Mateus' : 'Matthew', subtitulo: pt ? 'O Reino e o Conflito' : 'The Kingdom and the Conflict',
+      cap: 'Mt 11–20', paginas: pt ? 'Em produção' : 'In production', formato: 'Digital · PDF · Online',
+      isbn: pt ? 'ISBN em produção' : 'ISBN in production', seccoes: pt ? '10 seções · diagramas expositivos' : '10 sections · expository diagrams',
+      disponivel: false, lerHref: null, amazonHref: null,
+      temas: pt
+        ? ['Parábolas do Reino','Conflito com Fariseus','Transfiguração','Discurso Comunitário']
+        : ['Parables of the Kingdom','Conflict with Pharisees','Transfiguration','Community Discourse'],
+      cor: '#7b2ff7', corRgb: '123,47,247', badge: pt ? 'Em Breve' : 'Coming Soon',
+      descricao: pt
+        ? 'A segunda parte: o reino em parábolas, os conflitos, a transfiguração e o discurso comunitário.'
+        : 'The second part: the kingdom in parables, conflicts, transfiguration and the community discourse.',
+      avaliacao: 0,
+    },
+    {
+      vol: 'III', titulo: pt ? 'Mateus' : 'Matthew', subtitulo: pt ? 'Jerusalém e a Grande Comissão' : 'Jerusalem and the Great Commission',
+      cap: 'Mt 21–28', paginas: pt ? 'Em produção' : 'In production', formato: 'Digital · PDF · Online',
+      isbn: pt ? 'ISBN em produção' : 'ISBN in production', seccoes: pt ? '5 seções · diagramas expositivos' : '5 sections · expository diagrams',
+      disponivel: false, lerHref: null, amazonHref: null,
+      temas: pt
+        ? ['Entrada em Jerusalém','Discurso Escatológico','Paixão','Ressurreição','Grande Comissão']
+        : ['Entry into Jerusalem','Eschatological Discourse','Passion','Resurrection','Great Commission'],
+      cor: '#ff2d55', corRgb: '255,45,85', badge: pt ? 'Em Breve' : 'Coming Soon',
+      descricao: pt
+        ? 'O clímax: entrada triunfal, discurso escatológico, paixão, ressurreição e Grande Comissão.'
+        : 'The climax: triumphal entry, eschatological discourse, passion, resurrection and Great Commission.',
+      avaliacao: 0,
+    },
+  ];
+}
 
 const AUTOR = 'Prof. Dr. Fabio Miranda';
 const AUTOR_FULL = 'Prof. Dr. Fabio Miranda — Teologia e Tecnologias';
 
 /* ══ Capa flutuante de cada evangelho no seletor ══ */
+type GospelItem = ReturnType<typeof getGospels>[0];
 function GospelFloatingCover({
-  gospel, isSelected, floatDelay, onClick,
+  gospel, isSelected, floatDelay, onClick, pt,
 }: {
-  gospel: typeof GOSPELS[0];
+  gospel: GospelItem;
   isSelected: boolean;
   floatDelay: number;
   onClick: () => void;
+  pt: boolean;
 }) {
   const { cor, corRgb, disponivel } = gospel;
   return (
@@ -289,7 +315,7 @@ function GospelFloatingCover({
             {!disponivel && (
               <div style={{ position: 'absolute', inset: 0, background: 'rgba(5,8,18,0.55)', backdropFilter: 'blur(1.5px)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 6 }}>
                 <Lock size={20} color="rgba(255,255,255,0.22)" />
-                <span style={{ fontFamily: '"Orbitron", sans-serif', fontSize: 6.5, letterSpacing: '0.3em', color: 'rgba(255,255,255,0.18)', textTransform: 'uppercase' }}>Em breve</span>
+                <span style={{ fontFamily: '"Orbitron", sans-serif', fontSize: 6.5, letterSpacing: '0.3em', color: 'rgba(255,255,255,0.18)', textTransform: 'uppercase' }}>{pt ? 'Em breve' : 'Coming soon'}</span>
               </div>
             )}
 
@@ -331,7 +357,7 @@ function GospelFloatingCover({
 }
 
 /* ══ BookCover para o catálogo ══ */
-function BookCover({ vol, disponivel, idx }: { vol: typeof VOLUMES[0]; disponivel: boolean; idx: number }) {
+function BookCover({ vol, disponivel, idx, pt }: { vol: VolumeItem; disponivel: boolean; idx: number; pt: boolean }) {
   const { cor, corRgb } = vol;
   return (
     <div style={{ perspective: 1200 }} className="flex justify-center">
@@ -369,7 +395,7 @@ function BookCover({ vol, disponivel, idx }: { vol: typeof VOLUMES[0]; disponive
           {!disponivel && (
             <div style={{ position: 'absolute', inset: 0, background: 'rgba(5,8,18,0.62)', backdropFilter: 'blur(2px)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 8 }}>
               <Lock size={26} color="rgba(255,255,255,0.25)" />
-              <span style={{ fontFamily: '"Orbitron", sans-serif', fontSize: 8, letterSpacing: '0.35em', color: 'rgba(255,255,255,0.2)', textTransform: 'uppercase' }}>Em breve</span>
+              <span style={{ fontFamily: '"Orbitron", sans-serif', fontSize: 8, letterSpacing: '0.35em', color: 'rgba(255,255,255,0.2)', textTransform: 'uppercase' }}>{pt ? 'Em breve' : 'Coming soon'}</span>
             </div>
           )}
         </div>
@@ -380,7 +406,8 @@ function BookCover({ vol, disponivel, idx }: { vol: typeof VOLUMES[0]; disponive
 }
 
 /* ══ Card do catálogo ══ */
-function CatalogCard({ vol, idx }: { vol: typeof VOLUMES[0]; idx: number }) {
+type VolumeItem = ReturnType<typeof getVolumes>[0];
+function CatalogCard({ vol, idx, pt }: { vol: VolumeItem; idx: number; pt: boolean }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 24 }}
@@ -392,7 +419,7 @@ function CatalogCard({ vol, idx }: { vol: typeof VOLUMES[0]; idx: number }) {
     >
       <div style={{ height: 3, background: vol.disponivel ? `linear-gradient(90deg, rgba(${vol.corRgb},1), rgba(${vol.corRgb},0.3))` : 'rgba(255,255,255,0.06)' }} />
       <div className="flex justify-center pt-8 pb-4 px-6" style={{ background: `radial-gradient(ellipse at 50% 0%, rgba(${vol.corRgb},0.07) 0%, transparent 70%)` }}>
-        <BookCover vol={vol} disponivel={vol.disponivel} idx={idx} />
+        <BookCover vol={vol} disponivel={vol.disponivel} idx={idx} pt={pt} />
       </div>
       <div className="flex flex-col flex-1 p-6 gap-4">
         <div className="flex items-center justify-between">
@@ -419,7 +446,7 @@ function CatalogCard({ vol, idx }: { vol: typeof VOLUMES[0]; idx: number }) {
         {vol.disponivel && (
           <div className="flex items-center gap-2">
             <div className="flex gap-0.5">{[1,2,3,4,5].map(i => <Star key={i} size={12} fill="#c9a84c" color="#c9a84c" />)}</div>
-            <span style={{ fontFamily: '"Space Grotesk", sans-serif', fontSize: 11, color: 'rgba(255,255,255,0.45)' }}>Análise hermenêutica completa</span>
+            <span style={{ fontFamily: '"Space Grotesk", sans-serif', fontSize: 11, color: 'rgba(255,255,255,0.45)' }}>{pt ? 'Análise hermenêutica completa' : 'Complete hermeneutical analysis'}</span>
           </div>
         )}
         <div className="flex-1" />
@@ -427,18 +454,18 @@ function CatalogCard({ vol, idx }: { vol: typeof VOLUMES[0]; idx: number }) {
           <div className="flex flex-col gap-2 mt-2">
             <Link to={vol.lerHref!}>
               <motion.button whileHover={{ scale: 1.03, boxShadow: `0 0 24px rgba(${vol.corRgb},0.4)` }} whileTap={{ scale: 0.97 }} style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, padding: '11px 16px', borderRadius: 50, fontFamily: '"Orbitron", sans-serif', fontSize: 10, fontWeight: 900, letterSpacing: '0.12em', textTransform: 'uppercase', background: vol.cor, color: '#000', border: 'none', cursor: 'pointer', boxShadow: `0 4px 18px rgba(${vol.corRgb},0.3)` }}>
-                <Eye size={13} /> Ler Online — Grátis
+                <Eye size={13} /> {pt ? 'Ler Online — Grátis' : 'Read Online — Free'}
               </motion.button>
             </Link>
             <a href={vol.amazonHref!} target="_blank" rel="noopener noreferrer">
               <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, padding: '10px 16px', borderRadius: 50, fontFamily: '"Orbitron", sans-serif', fontSize: 10, fontWeight: 900, letterSpacing: '0.12em', textTransform: 'uppercase', background: 'transparent', border: `1px solid rgba(${vol.corRgb},0.45)`, color: vol.cor, cursor: 'pointer' }}>
-                <ShoppingCart size={13} /> Comprar na Amazon
+                <ShoppingCart size={13} /> {pt ? 'Comprar na Amazon' : 'Buy on Amazon'}
               </motion.button>
             </a>
           </div>
         ) : (
           <div style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '10px 16px', borderRadius: 50, border: '1px solid rgba(255,255,255,0.07)', color: 'rgba(255,255,255,0.3)', fontFamily: '"Orbitron", sans-serif', fontSize: 10, letterSpacing: '0.2em', textTransform: 'uppercase', justifyContent: 'center' }}>
-            <Lock size={12} /> Em Produção
+            <Lock size={12} /> {pt ? 'Em Produção' : 'In Production'}
           </div>
         )}
       </div>
@@ -460,6 +487,8 @@ export default function LibrariaPage() {
     }, 80);
   }
 
+  const GOSPELS = getGospels(pt);
+  const VOLUMES = getVolumes(pt);
   const selEv = GOSPELS.find(e => e.nome === selectedEvangelho);
 
   return (
@@ -489,7 +518,7 @@ export default function LibrariaPage() {
             <div className="flex items-center justify-center gap-3 mb-4">
               <div style={{ height: 1, width: 48, background: 'linear-gradient(to right, transparent, rgba(0,212,255,0.5))' }} />
               <BookMarked size={14} color="rgba(0,212,255,0.7)" />
-              <span style={{ fontFamily: '"Orbitron", sans-serif', fontSize: 9, letterSpacing: '0.5em', color: 'rgba(0,212,255,0.7)', textTransform: 'uppercase' }}>Coleção · Novo Testamento</span>
+              <span style={{ fontFamily: '"Orbitron", sans-serif', fontSize: 9, letterSpacing: '0.5em', color: 'rgba(0,212,255,0.7)', textTransform: 'uppercase' }}>{pt ? 'Coleção · Novo Testamento' : 'Collection · New Testament'}</span>
               <BookMarked size={14} color="rgba(0,212,255,0.7)" />
               <div style={{ height: 1, width: 48, background: 'linear-gradient(to left, transparent, rgba(0,212,255,0.5))' }} />
             </div>
@@ -510,6 +539,7 @@ export default function LibrariaPage() {
                 isSelected={selectedEvangelho === g.nome}
                 floatDelay={i}
                 onClick={() => selectEvangelho(g.nome)}
+                pt={pt}
               />
             ))}
           </div>
@@ -522,8 +552,10 @@ export default function LibrariaPage() {
           >
             <p style={{ fontFamily: '"Space Grotesk", sans-serif', fontSize: 13, color: 'rgba(255,255,255,0.4)', letterSpacing: '0.05em' }}>
               {selectedEvangelho
-                ? `Evangelho de ${selectedEvangelho} selecionado — veja os volumes abaixo ↓`
-                : 'Clique em um evangelho para ver os volumes disponíveis'
+                ? pt
+                  ? `Evangelho de ${selectedEvangelho} selecionado — veja os volumes abaixo ↓`
+                  : `Gospel of ${selectedEvangelho} selected — see volumes below ↓`
+                : pt ? 'Clique em um evangelho para ver os volumes disponíveis' : 'Click a gospel to see available volumes'
               }
             </p>
           </motion.div>
@@ -535,9 +567,9 @@ export default function LibrariaPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { icon: <BookOpen size={22} color="#00d4ff" />, titulo: 'Hermenêutica Visual', desc: 'Cada perícope analisada com diagramas de múltiplas lentes: quiasma, interlinear, cristologia, homilética e muito mais.' },
-              { icon: <Award size={22} color="#00d4ff" />, titulo: 'Rigor Acadêmico', desc: 'Diálogo com comentaristas clássicos e contemporâneos. Fundamentado na scholarship bíblica séria.' },
-              { icon: <Users size={22} color="#00d4ff" />, titulo: 'Para Todos os Públicos', desc: 'Do estudante ao pastor. Cada diagrama foi pensado para comunicar com clareza em todos os contextos.' },
+              { icon: <BookOpen size={22} color="#00d4ff" />, titulo: pt ? 'Hermenêutica Visual' : 'Visual Hermeneutics', desc: pt ? 'Cada perícope analisada com diagramas de múltiplas lentes: quiasma, interlinear, cristologia, homilética e muito mais.' : 'Each pericope analyzed with multi-lens diagrams: chiasm, interlinear, Christology, homiletics and much more.' },
+              { icon: <Award size={22} color="#00d4ff" />, titulo: pt ? 'Rigor Acadêmico' : 'Academic Rigor', desc: pt ? 'Diálogo com comentaristas clássicos e contemporâneos. Fundamentado na scholarship bíblica séria.' : 'Dialogue with classic and contemporary commentators. Grounded in serious biblical scholarship.' },
+              { icon: <Users size={22} color="#00d4ff" />, titulo: pt ? 'Para Todos os Públicos' : 'For All Audiences', desc: pt ? 'Do estudante ao pastor. Cada diagrama foi pensado para comunicar com clareza em todos os contextos.' : 'From the student to the pastor. Each diagram was designed to communicate clearly in every context.' },
             ].map(({ icon, titulo, desc }) => (
               <motion.div
                 key={titulo}
@@ -565,7 +597,7 @@ export default function LibrariaPage() {
                 <div style={{ padding: '56px 24px', textAlign: 'center', borderRadius: 24, border: '1px solid rgba(255,255,255,0.06)', background: 'rgba(255,255,255,0.01)' }}>
                   <BookOpen size={44} color="rgba(0,212,255,0.2)" style={{ margin: '0 auto 18px' }} />
                   <p style={{ fontFamily: '"Cinzel", serif', fontSize: 'clamp(15px,2.5vw,18px)', color: 'rgba(255,255,255,0.35)', letterSpacing: '0.08em' }}>
-                    Selecione um evangelho no topo para ver os volumes
+                    {pt ? 'Selecione um evangelho no topo para ver os volumes' : 'Select a gospel at the top to see the volumes'}
                   </p>
                 </div>
               </motion.div>
@@ -573,35 +605,38 @@ export default function LibrariaPage() {
               <motion.div key={selectedEvangelho} initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} transition={{ duration: 0.4 }}>
                 <div className="flex items-center justify-between flex-wrap gap-4 mb-10">
                   <div>
-                    <p style={{ fontFamily: '"Orbitron", sans-serif', fontSize: 10, letterSpacing: '0.4em', color: `rgba(${selEv.corRgb},0.8)`, textTransform: 'uppercase', marginBottom: 6 }}>Volumes Disponíveis</p>
-                    <h2 style={{ fontFamily: '"Cinzel Decorative", serif', fontSize: 'clamp(22px,4vw,36px)', fontWeight: 900, color: '#fff' }}>Evangelho de {selectedEvangelho}</h2>
+                    <p style={{ fontFamily: '"Orbitron", sans-serif', fontSize: 10, letterSpacing: '0.4em', color: `rgba(${selEv.corRgb},0.8)`, textTransform: 'uppercase', marginBottom: 6 }}>{pt ? 'Volumes Disponíveis' : 'Available Volumes'}</p>
+                    <h2 style={{ fontFamily: '"Cinzel Decorative", serif', fontSize: 'clamp(22px,4vw,36px)', fontWeight: 900, color: '#fff' }}>{pt ? `Evangelho de ${selectedEvangelho}` : `Gospel of ${selectedEvangelho}`}</h2>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '8px 16px', borderRadius: 50, border: `1px solid rgba(${selEv.corRgb},0.25)`, color: `rgba(${selEv.corRgb},0.8)`, fontFamily: '"Space Grotesk", sans-serif', fontSize: 12 }}>
-                    3 volumes · 25 perícopes
+                    {pt ? '3 volumes · 25 perícopes' : '3 volumes · 25 pericopes'}
                   </div>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {VOLUMES.map((vol, i) => <CatalogCard key={vol.vol} vol={vol} idx={i} />)}
+                  {VOLUMES.map((vol, i) => <CatalogCard key={vol.vol} vol={vol} idx={i} pt={pt} />)}
                 </div>
               </motion.div>
             ) : (
               <motion.div key={selectedEvangelho} initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} transition={{ duration: 0.4 }}>
                 <div className="flex items-center gap-4 mb-10">
                   <div>
-                    <p style={{ fontFamily: '"Orbitron", sans-serif', fontSize: 10, letterSpacing: '0.4em', color: `rgba(${selEv!.corRgb},0.7)`, textTransform: 'uppercase', marginBottom: 6 }}>Em Produção</p>
-                    <h2 style={{ fontFamily: '"Cinzel Decorative", serif', fontSize: 'clamp(22px,4vw,36px)', fontWeight: 900, color: '#fff' }}>Evangelho de {selectedEvangelho}</h2>
+                    <p style={{ fontFamily: '"Orbitron", sans-serif', fontSize: 10, letterSpacing: '0.4em', color: `rgba(${selEv!.corRgb},0.7)`, textTransform: 'uppercase', marginBottom: 6 }}>{pt ? 'Em Produção' : 'In Production'}</p>
+                    <h2 style={{ fontFamily: '"Cinzel Decorative", serif', fontSize: 'clamp(22px,4vw,36px)', fontWeight: 900, color: '#fff' }}>{pt ? `Evangelho de ${selectedEvangelho}` : `Gospel of ${selectedEvangelho}`}</h2>
                   </div>
                 </div>
                 <div style={{ padding: '56px 24px', textAlign: 'center', borderRadius: 24, border: `1px solid rgba(${selEv!.corRgb},0.18)`, background: `rgba(${selEv!.corRgb},0.04)`, position: 'relative', overflow: 'hidden' }}>
                   <div style={{ position: 'absolute', inset: 0, background: `radial-gradient(ellipse at 50% 0%, rgba(${selEv!.corRgb},0.08) 0%, transparent 60%)`, pointerEvents: 'none' }} />
                   <div style={{ fontFamily: '"Cinzel Decorative", serif', fontSize: 'clamp(56px,12vw,80px)', fontWeight: 900, color: `rgba(${selEv!.corRgb},0.15)`, lineHeight: 1, marginBottom: 16, position: 'relative' }}>{selEv!.abbr}</div>
                   <Lock size={28} color={`rgba(${selEv!.corRgb},0.35)`} style={{ margin: '0 auto 16px', position: 'relative' }} />
-                  <h3 style={{ fontFamily: '"Cinzel", serif', fontSize: 'clamp(18px,3vw,24px)', fontWeight: 700, color: 'rgba(255,255,255,0.7)', marginBottom: 12, position: 'relative' }}>Em produção</h3>
+                  <h3 style={{ fontFamily: '"Cinzel", serif', fontSize: 'clamp(18px,3vw,24px)', fontWeight: 700, color: 'rgba(255,255,255,0.7)', marginBottom: 12, position: 'relative' }}>{pt ? 'Em produção' : 'In production'}</h3>
                   <p style={{ fontFamily: '"Space Grotesk", sans-serif', fontSize: 15, color: 'rgba(255,255,255,0.4)', lineHeight: 1.75, maxWidth: 460, margin: '0 auto 24px', position: 'relative' }}>
-                    A análise expositiva do Evangelho de {selectedEvangelho} está sendo desenvolvida. Junte-se ao clube para ser notificado quando for lançado.
+                    {pt
+                      ? `A análise expositiva do Evangelho de ${selectedEvangelho} está sendo desenvolvida. Junte-se ao clube para ser notificado quando for lançado.`
+                      : `The expository analysis of the Gospel of ${selectedEvangelho} is being developed. Join the club to be notified when it launches.`
+                    }
                   </p>
                   <a href="https://chat.whatsapp.com/HEIIFYAmLij62M0jRwwVhH" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '11px 24px', borderRadius: 50, background: `rgba(${selEv!.corRgb},0.12)`, border: `1px solid rgba(${selEv!.corRgb},0.35)`, color: selEv!.cor, fontFamily: '"Orbitron", sans-serif', fontSize: 9, letterSpacing: '0.3em', textTransform: 'uppercase', textDecoration: 'none', position: 'relative' }}>
-                    Entrar no Clube · Notificar-me
+                    {pt ? 'Entrar no Clube · Notificar-me' : 'Join the Club · Notify Me'}
                   </a>
                 </div>
               </motion.div>
@@ -618,17 +653,23 @@ export default function LibrariaPage() {
               <div style={{ width: 96, height: 96, borderRadius: '50%', background: 'linear-gradient(135deg, rgba(0,212,255,0.2), rgba(123,47,247,0.2))', border: '2px solid rgba(0,212,255,0.35)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <BookOpen size={36} color="#00d4ff" strokeWidth={1.2} />
               </div>
-              <span style={{ fontFamily: '"Orbitron", sans-serif', fontSize: 8, letterSpacing: '0.3em', color: 'rgba(0,212,255,0.6)', textTransform: 'uppercase' }}>Autor</span>
+              <span style={{ fontFamily: '"Orbitron", sans-serif', fontSize: 8, letterSpacing: '0.3em', color: 'rgba(0,212,255,0.6)', textTransform: 'uppercase' }}>{pt ? 'Autor' : 'Author'}</span>
             </div>
             <div className="flex-1">
-              <p style={{ fontFamily: '"Orbitron", sans-serif', fontSize: 9, letterSpacing: '0.4em', color: 'rgba(0,212,255,0.65)', textTransform: 'uppercase', marginBottom: 8 }}>Sobre o Autor</p>
+              <p style={{ fontFamily: '"Orbitron", sans-serif', fontSize: 9, letterSpacing: '0.4em', color: 'rgba(0,212,255,0.65)', textTransform: 'uppercase', marginBottom: 8 }}>{pt ? 'Sobre o Autor' : 'About the Author'}</p>
               <h2 style={{ fontFamily: '"Cinzel Decorative", serif', fontSize: 'clamp(20px,3vw,30px)', fontWeight: 900, color: '#fff', marginBottom: 4 }}>{AUTOR}</h2>
-              <p style={{ fontFamily: '"Cinzel", serif', fontSize: 12, letterSpacing: '0.15em', color: 'rgba(0,212,255,0.65)', marginBottom: 16 }}>Teologia e Tecnologias</p>
+              <p style={{ fontFamily: '"Cinzel", serif', fontSize: 12, letterSpacing: '0.15em', color: 'rgba(0,212,255,0.65)', marginBottom: 16 }}>{pt ? 'Teologia e Tecnologias' : 'Theology and Technologies'}</p>
               <p style={{ fontFamily: '"Space Grotesk", sans-serif', fontSize: 'clamp(14px,2vw,16px)', color: 'rgba(255,255,255,0.7)', lineHeight: 1.9, marginBottom: 16, textAlign: 'justify' }}>
-                Teólogo e pesquisador especializado na interface entre hermenêutica bíblica e tecnologias educacionais. A Bíblia Visual Expositiva é o resultado de anos de pesquisa, desenvolvendo metodologia de diagramas expositivos para tornar o estudo profundo das Escrituras acessível e visualmente claro.
+                {pt
+                  ? 'Teólogo e pesquisador especializado na interface entre hermenêutica bíblica e tecnologias educacionais. A Bíblia Visual Expositiva é o resultado de anos de pesquisa, desenvolvendo metodologia de diagramas expositivos para tornar o estudo profundo das Escrituras acessível e visualmente claro.'
+                  : 'Theologian and researcher specialized in the interface between biblical hermeneutics and educational technologies. The Visual Expository Bible is the result of years of research developing expository diagram methodology to make deep Scripture study accessible and visually clear.'
+                }
               </p>
               <div className="flex flex-wrap gap-3">
-                {['Hermenêutica','Grego Bíblico','Teologia Sistemática','Homilética','Tecnologias Educacionais'].map(tag => (
+                {(pt
+                  ? ['Hermenêutica','Grego Bíblico','Teologia Sistemática','Homilética','Tecnologias Educacionais']
+                  : ['Hermeneutics','Biblical Greek','Systematic Theology','Homiletics','Educational Technologies']
+                ).map(tag => (
                   <span key={tag} style={{ fontFamily: '"Space Grotesk", sans-serif', fontSize: 11, padding: '3px 10px', borderRadius: 50, color: 'rgba(0,212,255,0.7)', background: 'rgba(0,212,255,0.06)', border: '1px solid rgba(0,212,255,0.18)' }}>{tag}</span>
                 ))}
               </div>
@@ -640,13 +681,19 @@ export default function LibrariaPage() {
       {/* ══ PRÓXIMOS VOLUMES ══ */}
       <section style={{ padding: 'clamp(40px,6vw,60px) 0', borderTop: '1px solid rgba(0,212,255,0.08)', background: 'rgba(0,212,255,0.025)' }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p style={{ fontFamily: '"Orbitron", sans-serif', fontSize: 9, letterSpacing: '0.4em', color: 'rgba(0,212,255,0.6)', textTransform: 'uppercase', marginBottom: 8 }}>Em Produção</p>
-          <h2 style={{ fontFamily: '"Cinzel Decorative", serif', fontSize: 'clamp(18px,3vw,28px)', fontWeight: 900, color: '#fff', marginBottom: 12 }}>Novos Volumes em Breve</h2>
+          <p style={{ fontFamily: '"Orbitron", sans-serif', fontSize: 9, letterSpacing: '0.4em', color: 'rgba(0,212,255,0.6)', textTransform: 'uppercase', marginBottom: 8 }}>{pt ? 'Em Produção' : 'In Production'}</p>
+          <h2 style={{ fontFamily: '"Cinzel Decorative", serif', fontSize: 'clamp(18px,3vw,28px)', fontWeight: 900, color: '#fff', marginBottom: 12 }}>{pt ? 'Novos Volumes em Breve' : 'New Volumes Coming Soon'}</h2>
           <p style={{ fontFamily: '"Space Grotesk", sans-serif', fontSize: 15, color: 'rgba(255,255,255,0.55)', marginBottom: 24, maxWidth: 480, margin: '0 auto 24px' }}>
-            Mateus Vol. II e Vol. III estão em produção. Outros livros da Bíblia serão adicionados progressivamente.
+            {pt
+              ? 'Mateus Vol. II e Vol. III estão em produção. Outros livros da Bíblia serão adicionados progressivamente.'
+              : 'Matthew Vol. II and Vol. III are in production. Other Bible books will be added progressively.'
+            }
           </p>
           <div className="flex flex-wrap justify-center gap-3">
-            {['Mateus Vol. II · Mt 11–20','Mateus Vol. III · Mt 21–28','Romanos · Em planejamento','João · Em planejamento'].map(item => (
+            {(pt
+              ? ['Mateus Vol. II · Mt 11–20','Mateus Vol. III · Mt 21–28','Romanos · Em planejamento','João · Em planejamento']
+              : ['Matthew Vol. II · Mt 11–20','Matthew Vol. III · Mt 21–28','Romans · In planning','John · In planning']
+            ).map(item => (
               <span key={item} style={{ fontFamily: '"JetBrains Mono", monospace', fontSize: 11, padding: '5px 14px', borderRadius: 50, color: 'rgba(255,255,255,0.35)', background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)' }}>{item}</span>
             ))}
           </div>
@@ -664,7 +711,7 @@ export default function LibrariaPage() {
           <p style={{ fontFamily: '"Cinzel Decorative", serif', fontSize: 12, letterSpacing: '0.2em', color: 'rgba(0,212,255,0.7)', marginBottom: 4 }}>Bíblia Visual Expositiva</p>
           <p style={{ fontFamily: '"Cinzel", serif', fontSize: 11, letterSpacing: '0.15em', color: 'rgba(255,255,255,0.4)' }}>{AUTOR_FULL}</p>
           <Link to="/" style={{ display: 'inline-flex', alignItems: 'center', gap: 6, marginTop: 16, fontFamily: '"Orbitron", sans-serif', fontSize: 9, letterSpacing: '0.3em', color: 'rgba(255,255,255,0.25)', textDecoration: 'none', textTransform: 'uppercase' }}>
-            <ChevronRight size={11} className="rotate-180" /> Voltar ao início
+            <ChevronRight size={11} className="rotate-180" /> {pt ? 'Voltar ao início' : 'Back to home'}
           </Link>
         </div>
       </footer>

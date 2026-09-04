@@ -10,76 +10,95 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import FlagToggle from '../components/FlagToggle';
 
-const SECAO_PRINCIPAL = [
-  {
-    icon: BookMarked,
-    label: 'Livros Recomendados',
-    descricao: 'Seleção criteriosa dos melhores livros de teologia e exposição bíblica.',
-    cor: 'from-blue-950 via-indigo-950 to-slate-950',
-    accent: '#00d4ff',
-    path: '/biblioteca/livros',
-    badge: '1 disponível',
-  },
-  {
-    icon: FileText,
-    label: 'Artigos Recomendados',
-    descricao: 'Artigos teológicos selecionados para aprofundar o estudo da Palavra.',
-    cor: 'from-violet-950 via-purple-950 to-slate-950',
-    accent: '#a78bfa',
-    path: '/biblioteca/artigos',
-    badge: 'Em breve',
-  },
-  {
-    icon: Star,
-    label: 'Livro da Semana',
-    descricao: 'Uma recomendação nova a cada semana, com resenha e aplicação pastoral.',
-    cor: 'from-amber-950 via-yellow-950 to-slate-950',
-    accent: '#fbbf24',
-    path: '/biblioteca/semana',
-    badge: 'Em breve',
-  },
-  {
-    icon: User,
-    label: 'Autores',
-    descricao: 'Perfis de teólogos, pregadores e escritores que moldaram a fé cristã.',
-    cor: 'from-teal-950 via-cyan-950 to-slate-950',
-    accent: '#2dd4bf',
-    path: '/biblioteca/autores',
-    badge: 'Em breve',
-  },
-  {
-    icon: BookOpen,
-    label: 'Resenhas',
-    descricao: 'Análises detalhadas de obras importantes para o ministério e estudo.',
-    cor: 'from-rose-950 via-pink-950 to-slate-950',
-    accent: '#fb7185',
-    path: '/biblioteca/resenhas',
-    badge: 'Em breve',
-  },
-  {
-    icon: Layers,
-    label: 'Guias de Leitura',
-    descricao: 'Roteiros temáticos para uma leitura sistemática e progressiva.',
-    cor: 'from-green-950 via-emerald-950 to-slate-950',
-    accent: '#34d399',
-    path: '/biblioteca/guias',
-    badge: 'Em breve',
-  },
-];
+function getSecaoPrincipal(pt: boolean) {
+  return [
+    {
+      icon: BookMarked,
+      label: pt ? 'Livros Recomendados' : 'Recommended Books',
+      descricao: pt
+        ? 'Seleção criteriosa dos melhores livros de teologia e exposição bíblica.'
+        : 'A careful selection of the best books in theology and biblical exposition.',
+      cor: 'from-blue-950 via-indigo-950 to-slate-950',
+      accent: '#00d4ff',
+      path: '/biblioteca/livros',
+      badge: pt ? '1 disponível' : '1 available',
+    },
+    {
+      icon: FileText,
+      label: pt ? 'Artigos Recomendados' : 'Recommended Articles',
+      descricao: pt
+        ? 'Artigos teológicos selecionados para aprofundar o estudo da Palavra.'
+        : 'Selected theological articles to deepen study of the Word.',
+      cor: 'from-violet-950 via-purple-950 to-slate-950',
+      accent: '#a78bfa',
+      path: '/biblioteca/artigos',
+      badge: pt ? 'Em breve' : 'Coming soon',
+    },
+    {
+      icon: Star,
+      label: pt ? 'Livro da Semana' : 'Book of the Week',
+      descricao: pt
+        ? 'Uma recomendação nova a cada semana, com resenha e aplicação pastoral.'
+        : 'A new recommendation every week, with a review and pastoral application.',
+      cor: 'from-amber-950 via-yellow-950 to-slate-950',
+      accent: '#fbbf24',
+      path: '/biblioteca/semana',
+      badge: pt ? 'Em breve' : 'Coming soon',
+    },
+    {
+      icon: User,
+      label: pt ? 'Autores' : 'Authors',
+      descricao: pt
+        ? 'Perfis de teólogos, pregadores e escritores que moldaram a fé cristã.'
+        : 'Profiles of theologians, preachers and writers who shaped Christian faith.',
+      cor: 'from-teal-950 via-cyan-950 to-slate-950',
+      accent: '#2dd4bf',
+      path: '/biblioteca/autores',
+      badge: pt ? 'Em breve' : 'Coming soon',
+    },
+    {
+      icon: BookOpen,
+      label: pt ? 'Resenhas' : 'Book Reviews',
+      descricao: pt
+        ? 'Análises detalhadas de obras importantes para o ministério e estudo.'
+        : 'Detailed analyses of important works for ministry and study.',
+      cor: 'from-rose-950 via-pink-950 to-slate-950',
+      accent: '#fb7185',
+      path: '/biblioteca/resenhas',
+      badge: pt ? 'Em breve' : 'Coming soon',
+    },
+    {
+      icon: Layers,
+      label: pt ? 'Guias de Leitura' : 'Reading Guides',
+      descricao: pt
+        ? 'Roteiros temáticos para uma leitura sistemática e progressiva.'
+        : 'Thematic roadmaps for systematic and progressive reading.',
+      cor: 'from-green-950 via-emerald-950 to-slate-950',
+      accent: '#34d399',
+      path: '/biblioteca/guias',
+      badge: pt ? 'Em breve' : 'Coming soon',
+    },
+  ];
+}
 
-const SECAO_AREAS = [
-  { icon: BookOpen,  label: 'Teologia Bíblica',       path: '/biblioteca/area/teologia-biblica', accent: '#00d4ff' },
-  { icon: Layers,    label: 'Teologia Sistemática',    path: '/biblioteca/area/sistematica',      accent: '#a78bfa' },
-  { icon: Search,    label: 'Exegese e Hermenêutica',  path: '/biblioteca/area/exegese',          accent: '#fbbf24' },
-  { icon: Mic2,      label: 'Homilética e Pregação',   path: '/biblioteca/area/homiletica',       accent: '#fb7185' },
-  { icon: Landmark,  label: 'História da Igreja',      path: '/biblioteca/area/historia',         accent: '#2dd4bf' },
-  { icon: Handshake, label: 'Teologia do Pacto',       path: '/biblioteca/area/pacto',            accent: '#34d399' },
-  { icon: Cross,     label: 'Teologia Reformada',      path: '/biblioteca/area/reformada',        accent: '#f472b6' },
-];
+function getSecaoAreas(pt: boolean) {
+  return [
+    { icon: BookOpen,  label: pt ? 'Teologia Bíblica'      : 'Biblical Theology',       path: '/biblioteca/area/teologia-biblica', accent: '#00d4ff' },
+    { icon: Layers,    label: pt ? 'Teologia Sistemática'   : 'Systematic Theology',     path: '/biblioteca/area/sistematica',      accent: '#a78bfa' },
+    { icon: Search,    label: pt ? 'Exegese e Hermenêutica' : 'Exegesis and Hermeneutics', path: '/biblioteca/area/exegese',        accent: '#fbbf24' },
+    { icon: Mic2,      label: pt ? 'Homilética e Pregação'  : 'Homiletics and Preaching', path: '/biblioteca/area/homiletica',      accent: '#fb7185' },
+    { icon: Landmark,  label: pt ? 'História da Igreja'     : 'Church History',           path: '/biblioteca/area/historia',        accent: '#2dd4bf' },
+    { icon: Handshake, label: pt ? 'Teologia do Pacto'      : 'Covenant Theology',        path: '/biblioteca/area/pacto',           accent: '#34d399' },
+    { icon: Cross,     label: pt ? 'Teologia Reformada'     : 'Reformed Theology',        path: '/biblioteca/area/reformada',       accent: '#f472b6' },
+  ];
+}
 
 export default function BibliotecaPage() {
   const [lang, setLang] = useState<'pt'|'en'>('pt');
   const pt = lang === 'pt';
+  const SECAO_PRINCIPAL = getSecaoPrincipal(pt);
+  const SECAO_AREAS = getSecaoAreas(pt);
+
   return (
     <div className="min-h-screen relative">
       <Navbar lang={lang} />

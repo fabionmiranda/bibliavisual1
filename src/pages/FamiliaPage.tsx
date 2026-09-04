@@ -160,7 +160,7 @@ function extractQuiasmaBloco(text: string, idx: number): string {
 }
 
 // ─── Quiasma renderer ───────────────────────────────────────────────
-function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: number }) {
+function QuiasmaSection({ d, pericopeIdx, pt }: { d: DiaDevocional; pericopeIdx: number; pt: boolean }) {
   const [quiasma, setQuiasma] = useState('');
   const [status, setStatus] = useState<'loading' | 'ok' | 'none'>('loading');
   const book = BIBLE_BOOKS.find(b => b.abrev === d.livroAbrev);
@@ -184,12 +184,12 @@ function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: num
   }, [d, pericopeIdx, book]);
 
   if (status === 'loading') return (
-    <div style={{ padding: 40, textAlign: 'center', color: C.muted, fontSize: 12 }}>Carregando estrutura...</div>
+    <div style={{ padding: 40, textAlign: 'center', color: C.muted, fontSize: 12 }}>{pt ? 'Carregando estrutura...' : 'Loading structure...'}</div>
   );
 
   if (status !== 'ok') return (
     <div style={{ padding: 32, textAlign: 'center', color: C.muted, fontSize: 13 }}>
-      Esta perícope ainda não possui estrutura quiástica cadastrada.
+      {pt ? 'Esta perícope ainda não possui estrutura quiástica cadastrada.' : 'This pericope does not yet have a chiastic structure registered.'}
     </div>
   );
 
@@ -233,8 +233,8 @@ function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: num
           <BookOpen size={15} color={cor} />
         </div>
         <div>
-          <div style={{ fontSize: 15, fontWeight: 900, color: cor, letterSpacing: '0.20em', textTransform: 'uppercase' }}>Estrutura Quiástica</div>
-          <div style={{ fontSize: 14, color: 'rgba(255,255,255,0.4)', marginTop: 2 }}>{d.livro} — Perícope {pericopeIdx}</div>
+          <div style={{ fontSize: 15, fontWeight: 900, color: cor, letterSpacing: '0.20em', textTransform: 'uppercase' }}>{pt ? 'Estrutura Quiástica' : 'Chiastic Structure'}</div>
+          <div style={{ fontSize: 14, color: 'rgba(255,255,255,0.4)', marginTop: 2 }}>{d.livro} — {pt ? 'Perícope' : 'Pericope'} {pericopeIdx}</div>
         </div>
       </div>
       <div style={{ background: 'rgba(5,7,26,0.85)', padding: '16px 14px' }}>
@@ -274,7 +274,7 @@ function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: num
 }
 
 // ─── Para a Família renderer ────────────────────────────────────────
-function ParaFamiliaSection({ d, pericopeIdx, conteudo }: { d: DiaDevocional; pericopeIdx: number; conteudo: string }) {
+function ParaFamiliaSection({ d, pericopeIdx, conteudo, pt }: { d: DiaDevocional; pericopeIdx: number; conteudo: string; pt: boolean }) {
   const isNovoFormato = conteudo.includes('MOVIMENTOS DO SERMÃO');
 
   interface Movimento { titulo: string; indicacao: string; exegese: string; teologia: string; aplicacao: string; isCenter: boolean; }
@@ -354,14 +354,14 @@ function ParaFamiliaSection({ d, pericopeIdx, conteudo }: { d: DiaDevocional; pe
       <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
         {/* Cabeçalho */}
         <div style={{ borderRadius: 16, padding: `${pv} ${ph}`, background: 'linear-gradient(135deg, rgba(12,40,28,0.97) 0%, rgba(10,32,28,0.97) 100%)', border: '1px solid rgba(52,211,153,0.30)', boxShadow: '0 8px 32px rgba(0,0,0,0.45)' }}>
-          <div style={tagStyle('rgba(52,211,153,0.55)')}>Para a Família · Homilética Familiar Expositiva</div>
+          <div style={tagStyle('rgba(52,211,153,0.55)')}>{pt ? 'Para a Família · Homilética Familiar Expositiva' : 'For the Family · Expository Family Homiletics'}</div>
           {nTitulo && <div style={{ fontSize: 'clamp(20px,3.8vw,28px)', fontWeight: 900, lineHeight: 1.25, background: 'linear-gradient(135deg, rgba(167,243,208,1) 0%, rgba(110,231,183,1) 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', marginBottom: 16 }}>{nTitulo}</div>}
           {nBigIdeia && <div style={{ padding: '12px 16px', borderRadius: 10, background: 'rgba(52,211,153,0.08)', border: '1px solid rgba(52,211,153,0.25)', marginBottom: 12 }}>
-            <div style={tagStyle('rgba(52,211,153,0.60)')}>Big Idea</div>
+            <div style={tagStyle('rgba(52,211,153,0.60)')}>{pt ? 'Big Idea' : 'Big Idea'}</div>
             <div style={{ fontSize: 'clamp(17px,3vw,21px)', color: 'rgba(167,243,208,0.97)', fontWeight: 700, fontStyle: 'italic', lineHeight: 1.5 }}>"{nBigIdeia}"</div>
           </div>}
           {nPergunta && <div style={{ padding: '12px 16px', borderRadius: 10, background: 'linear-gradient(135deg, rgba(52,211,153,0.08) 0%, rgba(16,185,129,0.06) 100%)', border: '1px solid rgba(52,211,153,0.25)', borderLeft: '4px solid rgba(52,211,153,0.80)', marginBottom: 12 }}>
-            <div style={tagStyle('rgba(110,231,183,0.65)')}>Pergunta de Transição</div>
+            <div style={tagStyle('rgba(110,231,183,0.65)')}>{pt ? 'Pergunta de Transição' : 'Transition Question'}</div>
             <div style={{ fontSize: 'clamp(15px,2.6vw,18px)', color: 'rgba(167,243,208,0.95)', fontWeight: 600, fontStyle: 'italic', lineHeight: 1.6 }}>{nPergunta}</div>
           </div>}
           {nPalavraChave && (() => {
@@ -382,7 +382,7 @@ function ParaFamiliaSection({ d, pericopeIdx, conteudo }: { d: DiaDevocional; pe
 
         {/* Movimentos */}
         {nMovimentos.length > 0 && <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-          <div style={tagStyle('rgba(110,231,183,0.60)')}>Movimentos do Sermão</div>
+          <div style={tagStyle('rgba(110,231,183,0.60)')}>{pt ? 'Movimentos do Sermão' : 'Sermon Movements'}</div>
           {nMovimentos.map((mv, i) => {
             const cor = MOV_CORES[i % MOV_CORES.length];
             const corB = cor.replace('1)', '0.25)');
@@ -402,10 +402,10 @@ function ParaFamiliaSection({ d, pericopeIdx, conteudo }: { d: DiaDevocional; pe
                     ) : null;
                   })()}
                   {[
-                    { label: 'Indicação Textual', text: mv.indicacao, cor: 'rgba(255,220,120,0.80)' },
-                    { label: 'Exegese', text: mv.exegese, cor: 'rgba(180,230,255,0.80)' },
-                    { label: 'Teologia Reformada', text: mv.teologia, cor: 'rgba(200,170,255,0.80)' },
-                    { label: 'Aplicação Familiar', text: mv.aplicacao, cor: 'rgba(52,211,153,0.90)' },
+                    { label: pt ? 'Indicação Textual' : 'Textual Indication', text: mv.indicacao, cor: 'rgba(255,220,120,0.80)' },
+                    { label: pt ? 'Exegese' : 'Exegesis', text: mv.exegese, cor: 'rgba(180,230,255,0.80)' },
+                    { label: pt ? 'Teologia Reformada' : 'Reformed Theology', text: mv.teologia, cor: 'rgba(200,170,255,0.80)' },
+                    { label: pt ? 'Aplicação Familiar' : 'Family Application', text: mv.aplicacao, cor: 'rgba(52,211,153,0.90)' },
                   ].filter(f => f.text).map((f, fi) => (
                     <div key={fi} style={{ marginBottom: fi < 3 ? 12 : 0 }}>
                       <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase', color: f.cor, marginBottom: 4 }}>{f.label}</div>
@@ -420,19 +420,19 @@ function ParaFamiliaSection({ d, pericopeIdx, conteudo }: { d: DiaDevocional; pe
 
         {/* Eixo Redentor */}
         {nEixoRedentor && <div style={{ borderRadius: 12, padding: '16px 20px', background: 'rgba(255,140,80,0.07)', border: '1px solid rgba(255,140,80,0.25)', borderLeft: '4px solid rgba(255,140,80,0.80)' }}>
-          <div style={tagStyle('rgba(255,180,100,0.80)')}>Eixo Redentor · Perspectiva Histórico-Redentiva</div>
+          <div style={tagStyle('rgba(255,180,100,0.80)')}>{pt ? 'Eixo Redentor · Perspectiva Histórico-Redentiva' : 'Redemptive Axis · Redemptive-Historical Perspective'}</div>
           <div style={{ fontSize: 'clamp(14px,2.4vw,16px)', color: 'rgba(255,225,185,0.93)', lineHeight: 1.75 }}>{nEixoRedentor}</div>
         </div>}
 
         {/* Doutrina Central */}
         {nDoutrina && <div style={{ borderRadius: 12, padding: '14px 20px', background: 'rgba(80,200,255,0.06)', border: '1px solid rgba(80,200,255,0.22)' }}>
-          <div style={tagStyle('rgba(147,197,253,0.75)')}>Doutrina Central</div>
+          <div style={tagStyle('rgba(147,197,253,0.75)')}>{pt ? 'Doutrina Central' : 'Central Doctrine'}</div>
           <div style={{ fontSize: 'clamp(15px,2.5vw,17px)', color: 'rgba(205,232,255,0.93)', fontWeight: 600, lineHeight: 1.65 }}>{nDoutrina}</div>
         </div>}
 
         {/* Aplicações */}
         {nAplicacoes.length > 0 && <div style={{ borderRadius: 12, padding: '14px 20px', background: 'rgba(52,211,153,0.06)', border: '1px solid rgba(52,211,153,0.22)' }}>
-          <div style={tagStyle('rgba(52,211,153,0.75)')}>Aplicações para a Família</div>
+          <div style={tagStyle('rgba(52,211,153,0.75)')}>{pt ? 'Aplicações para a Família' : 'Family Applications'}</div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
             {nAplicacoes.map((ap, i) => (
               <div key={i} style={{ display: 'flex', gap: 12, alignItems: 'flex-start' }}>
@@ -447,14 +447,14 @@ function ParaFamiliaSection({ d, pericopeIdx, conteudo }: { d: DiaDevocional; pe
         {nDinamica && <div style={{ borderRadius: 12, padding: '16px 20px', background: 'linear-gradient(135deg, rgba(52,211,153,0.10) 0%, rgba(16,185,129,0.06) 100%)', border: '2px solid rgba(52,211,153,0.35)', position: 'relative', overflow: 'hidden' }}>
           <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 3, background: 'linear-gradient(90deg, rgba(52,211,153,1) 0%, rgba(16,185,129,0.5) 70%, transparent 100%)' }} />
           <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
-            <div style={tagStyle('rgba(52,211,153,0.85)')}>Dinâmica Familiar</div>
+            <div style={tagStyle('rgba(52,211,153,0.85)')}>{pt ? 'Dinâmica Familiar' : 'Family Activity'}</div>
           </div>
           <div style={{ fontSize: 'clamp(14px,2.4vw,16px)', color: 'rgba(167,243,208,0.95)', lineHeight: 1.8, whiteSpace: 'pre-line' }}>{nDinamica}</div>
         </div>}
 
         {/* Autores Reformados */}
         {nAutores.length > 0 && <div style={{ borderRadius: 12, padding: '16px 20px', background: 'rgba(180,120,255,0.06)', border: '1px solid rgba(180,120,255,0.22)' }}>
-          <div style={tagStyle('rgba(200,160,255,0.75)')}>Autores Reformados</div>
+          <div style={tagStyle('rgba(200,160,255,0.75)')}>{pt ? 'Autores Reformados' : 'Reformed Authors'}</div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
             {nAutores.map((a, i) => (
               <div key={i} style={{ borderLeft: '3px solid rgba(52,211,153,0.60)', paddingLeft: 14 }}>
@@ -472,7 +472,7 @@ function ParaFamiliaSection({ d, pericopeIdx, conteudo }: { d: DiaDevocional; pe
 
         {/* Conclusão */}
         {nConclusao && <div style={{ borderRadius: 12, padding: '16px 20px', background: 'linear-gradient(135deg, rgba(52,211,153,0.08) 0%, rgba(16,185,129,0.05) 100%)', border: '1px solid rgba(52,211,153,0.22)' }}>
-          <div style={tagStyle('rgba(110,231,183,0.75)')}>Conclusão</div>
+          <div style={tagStyle('rgba(110,231,183,0.75)')}>{pt ? 'Conclusão' : 'Conclusion'}</div>
           <div style={{ fontSize: 'clamp(14px,2.4vw,16px)', color: 'rgba(167,243,208,0.92)', lineHeight: 1.85 }}>{nConclusao}</div>
         </div>}
       </div>
@@ -494,12 +494,14 @@ function PericopeCard({
   active,
   conteudo,
   onClick,
+  pt,
 }: {
   p: Pericope;
   cardIdx: number;
   active: boolean;
   conteudo: string | null;
   onClick: () => void;
+  pt: boolean;
 }) {
   const accentColor = THEME_COLORS[cardIdx % THEME_COLORS.length];
   const accentAlpha = (a: number) => accentColor.replace('1)', `${a})`);
@@ -575,7 +577,7 @@ function PericopeCard({
             fontStyle: 'italic',
             paddingRight: 72,
           }}>
-            Em breve...
+            {pt ? 'Em breve...' : 'Coming soon...'}
           </div>
         )}
 
@@ -630,7 +632,7 @@ function PericopeCard({
               background: accentColor,
               boxShadow: `0 0 10px ${accentColor}`,
             }} />
-            <span style={{ fontSize: 10, fontWeight: 700, color: accentAlpha(0.75), letterSpacing: '0.10em', textTransform: 'uppercase' }}>Selecionada</span>
+            <span style={{ fontSize: 10, fontWeight: 700, color: accentAlpha(0.75), letterSpacing: '0.10em', textTransform: 'uppercase' }}>{pt ? 'Selecionada' : 'Selected'}</span>
           </div>
         )}
       </div>
@@ -710,7 +712,7 @@ const AULAS_NOIVOS = [
   },
 ];
 
-function AulaCard({ aula, cor, onOpen }: { aula: typeof AULAS_NOIVOS[0]; cor: string; onOpen: () => void }) {
+function AulaCard({ aula, cor, onOpen, pt }: { aula: typeof AULAS_NOIVOS[0]; cor: string; onOpen: () => void; pt: boolean }) {
   const available = aula.available;
   return (
     <motion.div
@@ -735,7 +737,7 @@ function AulaCard({ aula, cor, onOpen }: { aula: typeof AULAS_NOIVOS[0]; cor: st
 
       {!available && (
         <div style={{ position: 'absolute', top: 12, right: 12, fontSize: 9, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.28)', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.09)', borderRadius: 5, padding: '3px 7px' }}>
-          Em breve
+          {pt ? 'Em breve' : 'Coming soon'}
         </div>
       )}
 
@@ -758,7 +760,7 @@ function AulaCard({ aula, cor, onOpen }: { aula: typeof AULAS_NOIVOS[0]; cor: st
 
       {available && (
         <div style={{ marginTop: 16, fontSize: 11, fontWeight: 900, letterSpacing: '0.14em', textTransform: 'uppercase', color: GOLD }}>
-          Abrir aula →
+          {pt ? 'Abrir aula →' : 'Open lesson →'}
         </div>
       )}
     </motion.div>
@@ -768,6 +770,7 @@ function AulaCard({ aula, cor, onOpen }: { aula: typeof AULAS_NOIVOS[0]; cor: st
 export function NoivosHub() {
   const navigate = useNavigate();
   const [lang, setLang] = useState<'pt'|'en'>('pt');
+  const pt = lang === 'pt';
   const onBack = () => navigate('/familia');
   const onAula = (num: number) => {
     if (num === 1) navigate('/familia/noivos/aula-inaugural');
@@ -781,30 +784,31 @@ export function NoivosHub() {
         {/* Voltar */}
         <div style={{ marginBottom: 32 }}>
           <button onClick={onBack} style={{ display: 'inline-flex', alignItems: 'center', gap: 7, fontSize: 12, fontWeight: 900, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(255,200,80,0.70)', background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}>
-            ← Voltar
+            {pt ? '← Voltar' : '← Back'}
           </button>
         </div>
 
         {/* Hero */}
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} style={{ marginBottom: 44 }}>
           <div style={{ fontSize: 'clamp(10px,1.4vw,12px)', fontWeight: 900, letterSpacing: '0.32em', textTransform: 'uppercase', marginBottom: 12, background: `linear-gradient(90deg,${GOLD},rgba(255,230,140,1))`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-            Curso Pré-Matrimonial Reformado
+            {pt ? 'Curso Pré-Matrimonial Reformado' : 'Reformed Pre-Marital Course'}
           </div>
           <h1 style={{ fontSize: 'clamp(28px,5vw,48px)', fontWeight: 900, lineHeight: 1.1, margin: '0 0 16px', background: `linear-gradient(135deg,rgba(255,255,255,0.95) 0%,${GOLD} 60%,rgba(255,230,140,0.75) 100%)`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-            Preparatório para Noivos
+            {pt ? 'Preparatório para Noivos' : 'Pre-Wedding Preparation'}
           </h1>
           <p style={{ fontSize: 'clamp(13px,1.8vw,16px)', color: 'rgba(255,255,255,0.50)', maxWidth: 620, lineHeight: 1.75 }}>
-            Oito aulas expositivas com fundamento nas Escrituras, na Confissão de Fé de Westminster e nos autores reformados — para construir o casamento sobre a Rocha.
+            {pt ? 'Oito aulas expositivas com fundamento nas Escrituras, na Confissão de Fé de Westminster e nos autores reformados — para construir o casamento sobre a Rocha.' : 'Eight expository lessons grounded in Scripture, the Westminster Confession of Faith, and Reformed authors — to build marriage on the Rock.'}
           </p>
         </motion.div>
 
         {/* Grid de aulas */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(280px,1fr))', gap: 18 }}>
           {AULAS_NOIVOS.map(aula => (
-            <AulaCard key={aula.num} aula={aula} cor={GOLD} onOpen={() => onAula(aula.num)} />
+            <AulaCard key={aula.num} aula={aula} cor={GOLD} onOpen={() => onAula(aula.num)} pt={pt} />
           ))}
         </div>
       </div>
+      <FlagToggle lang={lang} setLang={setLang} />
     </div>
   );
 }
@@ -984,7 +988,7 @@ const RPM_DEFS = [
   },
 ];
 
-function DiagramaRPM() {
+function DiagramaRPM({ pt }: { pt: boolean }) {
   // SVG dimensions
   const W = 1000, H = 760;
   const cx = W / 2;
@@ -1029,17 +1033,17 @@ function DiagramaRPM() {
       {/* Cabeçalho */}
       <div style={{ textAlign: 'center', marginBottom: 4 }}>
         <span style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.26em', textTransform: 'uppercase', color: GOLD }}>
-          Diagrama Didático · Van Groningen
+          {pt ? 'Diagrama Didático · Van Groningen' : 'Didactic Diagram · Van Groningen'}
         </span>
       </div>
       <div style={{ textAlign: 'center', marginBottom: 6 }}>
         <span style={{ fontSize: 'clamp(17px,2.6vw,22px)', fontWeight: 900, color: 'rgba(255,255,255,0.90)' }}>
-          Reino · Pacto · Mediadores
+          {pt ? 'Reino · Pacto · Mediadores' : 'Kingdom · Covenant · Mediators'}
         </span>
       </div>
       <div style={{ textAlign: 'center', marginBottom: 24 }}>
         <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.38)', fontStyle: 'italic', letterSpacing: '0.08em', textTransform: 'uppercase' as const }}>
-          Relacionamentos
+          {pt ? 'Relacionamentos' : 'Relationships'}
         </span>
       </div>
 
@@ -1283,7 +1287,7 @@ function DiagramaRPM() {
             {/* Van Groningen */}
             <div style={{ padding: '14px 16px', borderRadius: 10, background: 'rgba(255,255,255,0.035)', border: '1px solid rgba(255,255,255,0.09)', marginBottom: 14 }}>
               <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.38)', marginBottom: 7 }}>
-                Van Groningen — Contribuição Teológica
+                {pt ? 'Van Groningen — Contribuição Teológica' : 'Van Groningen — Theological Contribution'}
               </div>
               <div style={{ fontSize: 'clamp(13px,1.8vw,15px)', color: 'rgba(255,255,255,0.68)', lineHeight: 1.88, fontStyle: 'italic', whiteSpace: 'pre-line' }}>
                 {d.vanGroningen}
@@ -1293,7 +1297,7 @@ function DiagramaRPM() {
             {/* Referências ABNT */}
             <div>
               <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: d.cor, opacity: 0.70, marginBottom: 7 }}>
-                Referências (ABNT)
+                {pt ? 'Referências (ABNT)' : 'References (ABNT)'}
               </div>
               {d.referencias.map((ref, ri) => (
                 <div key={ri} style={{ fontSize: 'clamp(11px,1.5vw,12.5px)', color: 'rgba(255,255,255,0.38)', lineHeight: 1.72, padding: '5px 0', borderBottom: ri < d.referencias.length - 1 ? '1px solid rgba(255,255,255,0.05)' : 'none' }}>
@@ -1308,7 +1312,7 @@ function DiagramaRPM() {
   );
 }
 
-function DiagramaMandatos() {
+function DiagramaMandatos({ pt }: { pt: boolean }) {
   const W = 900, H = 680;
   const cx = W / 2, cy = H / 2 + 20;
   const R = 218;
@@ -1332,17 +1336,17 @@ function DiagramaMandatos() {
       {/* Cabeçalho */}
       <div style={{ textAlign: 'center', marginBottom: 4 }}>
         <span style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.26em', textTransform: 'uppercase', color: GOLD }}>
-          Diagrama · Van Groningen
+          {pt ? 'Diagrama · Van Groningen' : 'Diagram · Van Groningen'}
         </span>
       </div>
       <div style={{ textAlign: 'center', marginBottom: 6 }}>
         <span style={{ fontSize: 'clamp(17px,2.6vw,22px)', fontWeight: 900, color: 'rgba(255,255,255,0.90)', letterSpacing: '0.04em' }}>
-          Reino · Pacto · Mediadores
+          {pt ? 'Reino · Pacto · Mediadores' : 'Kingdom · Covenant · Mediators'}
         </span>
       </div>
       <div style={{ textAlign: 'center', marginBottom: 24 }}>
         <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.38)', fontStyle: 'italic' }}>
-          Os três mandatos que estruturam o casamento e a família cristã
+          {pt ? 'Os três mandatos que estruturam o casamento e a família cristã' : 'The three mandates that structure marriage and the Christian family'}
         </span>
       </div>
 
@@ -1491,7 +1495,7 @@ function DiagramaMandatos() {
             {/* Van Groningen */}
             <div style={{ padding: '12px 16px', borderRadius: 10, background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.09)', marginBottom: 14 }}>
               <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.40)', marginBottom: 7 }}>
-                Van Groningen — Contribuição Teológica
+                {pt ? 'Van Groningen — Contribuição Teológica' : 'Van Groningen — Theological Contribution'}
               </div>
               <div style={{ fontSize: 'clamp(13px,1.8vw,15px)', color: 'rgba(255,255,255,0.68)', lineHeight: 1.85, fontStyle: 'italic' }}>
                 {m.vanGroningen}
@@ -1501,7 +1505,7 @@ function DiagramaMandatos() {
             {/* Referências ABNT */}
             <div>
               <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: m.color, opacity: 0.70, marginBottom: 7 }}>
-                Referências (ABNT)
+                {pt ? 'Referências (ABNT)' : 'References (ABNT)'}
               </div>
               {m.referencias.map((ref, ri) => (
                 <div key={ri} style={{ fontSize: 'clamp(11px,1.5vw,12.5px)', color: 'rgba(255,255,255,0.38)', lineHeight: 1.70, paddingBottom: ri < m.referencias.length - 1 ? 5 : 0, borderBottom: ri < m.referencias.length - 1 ? '1px solid rgba(255,255,255,0.05)' : 'none', marginBottom: ri < m.referencias.length - 1 ? 5 : 0 }}>
@@ -1519,6 +1523,7 @@ function DiagramaMandatos() {
 export function AulaInaugural() {
   const navigate = useNavigate();
   const [lang, setLang] = useState<'pt'|'en'>('pt');
+  const pt = lang === 'pt';
   const onBack = () => navigate('/familia/noivos');
   return (
     <div style={{ minHeight: '100vh', background: C.bg, color: C.white }}>
@@ -1528,69 +1533,69 @@ export function AulaInaugural() {
         {/* Voltar */}
         <div style={{ marginBottom: 32 }}>
           <button onClick={onBack} style={{ display: 'inline-flex', alignItems: 'center', gap: 7, fontSize: 12, fontWeight: 900, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(255,200,80,0.70)', background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}>
-            ← Aulas
+            {pt ? '← Aulas' : '← Lessons'}
           </button>
         </div>
 
         {/* Cabeçalho */}
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} style={{ marginBottom: 48 }}>
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, marginBottom: 10, padding: '4px 12px', borderRadius: 7, background: GOLD_B, border: `1px solid ${GOLD_BD}` }}>
-            <span style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,200,80,0.75)' }}>Curso de Noivos · Material do Aluno</span>
+            <span style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,200,80,0.75)' }}>{pt ? 'Curso de Noivos · Material do Aluno' : 'Pre-Wedding Course · Student Material'}</span>
           </div>
           <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.32)', marginBottom: 14 }}>
-            Aula Inaugural · Encontro 1
+            {pt ? 'Aula Inaugural · Encontro 1' : 'Inaugural Lesson · Session 1'}
           </div>
           <h1 style={{ fontSize: 'clamp(26px,4.8vw,46px)', fontWeight: 900, lineHeight: 1.12, margin: '0 0 10px', background: `linear-gradient(135deg,rgba(255,255,255,0.95) 0%,${GOLD} 58%,rgba(255,230,140,0.72) 100%)`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-            A Aliança como Fundamento
+            {pt ? 'A Aliança como Fundamento' : 'The Covenant as Foundation'}
           </h1>
           <p style={{ fontSize: 'clamp(13px,1.8vw,15px)', color: 'rgba(255,255,255,0.42)', lineHeight: 1.70, fontStyle: 'italic', margin: '0 0 20px' }}>
-            O casamento de vocês começa antes de vocês
+            {pt ? 'O casamento de vocês começa antes de vocês' : 'Your marriage began before you did'}
           </p>
         </motion.div>
 
         {/* Boas-vindas */}
         <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.05 }} style={{ marginBottom: 36, padding: '18px 22px', borderRadius: 14, background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.09)' }}>
-          <Txt>Sejam bem-vindos! Este material acompanha o primeiro encontro do curso de noivos. Use-o durante a aula para acompanhar o ensino e anotar suas respostas, e leve-o para casa — vocês vão voltar a ele mais de uma vez ao longo do noivado.</Txt>
+          <Txt>{pt ? 'Sejam bem-vindos! Este material acompanha o primeiro encontro do curso de noivos. Use-o durante a aula para acompanhar o ensino e anotar suas respostas, e leve-o para casa — vocês vão voltar a ele mais de uma vez ao longo do noivado.' : 'Welcome! This material accompanies the first session of the pre-wedding course. Use it during the lesson to follow the teaching and record your answers, and take it home — you will return to it more than once throughout your engagement.'}</Txt>
         </motion.div>
 
         {/* ── BLOCO 1: Diagrama e definições de Reino · Pacto · Mediadores ── */}
         <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.08 }} style={{ marginBottom: 8 }}>
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '4px 14px', borderRadius: 7, background: 'rgba(255,200,80,0.10)', border: `1px solid ${GOLD_BD}`, marginBottom: 16 }}>
-            <span style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: GOLD }}>Parte 1 de 2 · Estrutura Teológica</span>
+            <span style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: GOLD }}>{pt ? 'Parte 1 de 2 · Estrutura Teológica' : 'Part 1 of 2 · Theological Framework'}</span>
           </div>
           <div style={{ fontSize: 'clamp(18px,3vw,26px)', fontWeight: 900, color: 'rgba(255,255,255,0.90)', marginBottom: 6 }}>
-            Reino · Pacto · Mediadores
+            {pt ? 'Reino · Pacto · Mediadores' : 'Kingdom · Covenant · Mediators'}
           </div>
           <div style={{ fontSize: 'clamp(13px,1.8vw,15px)', color: 'rgba(255,255,255,0.45)', lineHeight: 1.7, marginBottom: 24 }}>
-            A estrutura pela qual Deus governa a história da redenção — e dentro da qual o casamento de vocês existe.
+            {pt ? 'A estrutura pela qual Deus governa a história da redenção — e dentro da qual o casamento de vocês existe.' : 'The framework by which God governs the history of redemption — and within which your marriage exists.'}
           </div>
         </motion.div>
-        <DiagramaRPM />
+        <DiagramaRPM pt={pt} />
 
         {/* ── BLOCO 2: Diagrama e definições dos 3 Mandatos ── */}
         <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.10 }} style={{ marginBottom: 8, marginTop: 16 }}>
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '4px 14px', borderRadius: 7, background: 'rgba(52,211,153,0.10)', border: '1px solid rgba(52,211,153,0.35)', marginBottom: 16 }}>
-            <span style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: SPIRIT }}>Parte 2 de 2 · Os Três Mandatos</span>
+            <span style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: SPIRIT }}>{pt ? 'Parte 2 de 2 · Os Três Mandatos' : 'Part 2 of 2 · The Three Mandates'}</span>
           </div>
           <div style={{ fontSize: 'clamp(18px,3vw,26px)', fontWeight: 900, color: 'rgba(255,255,255,0.90)', marginBottom: 6 }}>
-            Mandato Espiritual · Social · Cultural
+            {pt ? 'Mandato Espiritual · Social · Cultural' : 'Spiritual · Social · Cultural Mandate'}
           </div>
           <div style={{ fontSize: 'clamp(13px,1.8vw,15px)', color: 'rgba(255,255,255,0.45)', lineHeight: 1.7, marginBottom: 24 }}>
-            As três dimensões da missão que Deus confiou ao casal como imagem dEle na criação — baseado em Van Groningen.
+            {pt ? 'As três dimensões da missão que Deus confiou ao casal como imagem dEle na criação — baseado em Van Groningen.' : 'The three dimensions of the mission God entrusted to the couple as His image in creation — based on Van Groningen.'}
           </div>
         </motion.div>
-        <DiagramaMandatos />
+        <DiagramaMandatos pt={pt} />
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: 18, marginTop: 16 }}>
 
           {/* Percurso */}
-          <Bloco titulo="Nosso Percurso — 8 Encontros (Agosto a Dezembro)" delay={0.14}>
-            <Txt style={{ marginBottom: 16 }}>Este é apenas o primeiro passo de uma caminhada de alguns meses. Os encontros presenciais marcam a abertura, um tema mais delicado e o encerramento do curso; os demais podem acontecer de forma híbrida. A coluna "Mandato" mostra onde cada tema se encaixa no diagrama — Espiritual, Social ou Cultural.</Txt>
+          <Bloco titulo={pt ? 'Nosso Percurso — 8 Encontros (Agosto a Dezembro)' : 'Our Journey — 8 Sessions (August to December)'} delay={0.14}>
+            <Txt style={{ marginBottom: 16 }}>{pt ? 'Este é apenas o primeiro passo de uma caminhada de alguns meses. Os encontros presenciais marcam a abertura, um tema mais delicado e o encerramento do curso; os demais podem acontecer de forma híbrida. A coluna "Mandato" mostra onde cada tema se encaixa no diagrama — Espiritual, Social ou Cultural.' : 'This is only the first step of a journey spanning several months. In-person sessions mark the opening, a more sensitive topic, and the closing of the course; the others may be hybrid. The "Mandate" column shows where each topic fits in the diagram — Spiritual, Social, or Cultural.'}</Txt>
             <div style={{ overflowX: 'auto', marginTop: 10 }}>
               <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 'clamp(11px,1.5vw,13px)' }}>
                 <thead>
                   <tr style={{ borderBottom: '1px solid rgba(255,200,80,0.25)' }}>
-                    {['Nº','Quando','Tema','Pergunta que guia','Mandato'].map(h => (
+                    {(pt ? ['Nº','Quando','Tema','Pergunta que guia','Mandato'] : ['#','When','Topic','Guiding Question','Mandate']).map(h => (
                       <th key={h} style={{ padding: '8px 10px', textAlign: 'left', fontSize: 10, fontWeight: 900, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'rgba(255,200,80,0.65)' }}>{h}</th>
                     ))}
                   </tr>
@@ -1611,39 +1616,39 @@ export function AulaInaugural() {
               </table>
             </div>
             <div style={{ marginTop: 14, fontSize: 'clamp(12px,1.6vw,13.5px)', color: 'rgba(255,255,255,0.42)', fontStyle: 'italic' }}>
-              O curso inteiro é o próprio diagrama sendo desdobrado, encontro após encontro.
+              {pt ? 'O curso inteiro é o próprio diagrama sendo desdobrado, encontro após encontro.' : 'The entire course is the diagram itself being unfolded, session by session.'}
             </div>
           </Bloco>
 
           {/* I */}
-          <Bloco titulo="Mandato Espiritual (I) — O Casamento Começa em Deus, Não em Vocês" delay={0.20}>
+          <Bloco titulo={pt ? 'Mandato Espiritual (I) — O Casamento Começa em Deus, Não em Vocês' : 'Spiritual Mandate (I) — Marriage Begins in God, Not in You'} delay={0.20}>
             <Verso ref="Gênesis 1.26" texto='Deus disse: "Façamos o homem à nossa imagem, conforme a nossa semelhança."' />
             <Txt>{`No topo do diagrama estão o Pai, o Filho e o Espírito. Antes de existir qualquer casal, já existia comunhão perfeita dentro do próprio Deus. Isso muda a forma de olhar para o casamento: ele não é um projeto que vocês vão inventar do zero — é um convite para refletir, em carne humana, uma comunhão que já existe eternamente. Vocês não precisam criar a intimidade e a fidelidade a partir de si mesmos; podem recebê-las de Deus e aprender a vivê-las, dia após dia.\n\nIsso aponta para Cristo e o Espírito: o Pai enviou o Filho para restaurar a comunhão que o pecado quebrou (João 1.14; Colossenses 1.19-20), e hoje o Espírito Santo habita no casal cristão, derramando o próprio amor de Deus em nossos corações (Romanos 5.5). A comunhão que vocês buscam no casamento só é plenamente possível porque Cristo já reconciliou o que estava separado.`}</Txt>
           </Bloco>
 
           {/* II */}
-          <Bloco titulo="Mandato Espiritual (II) — O Casamento Está sob o Governo de Deus" delay={0.23}>
+          <Bloco titulo={pt ? 'Mandato Espiritual (II) — O Casamento Está sob o Governo de Deus' : 'Spiritual Mandate (II) — Marriage Is Under God\'s Rule'} delay={0.23}>
             <Verso ref="Salmo 103.19" texto="O Senhor estabeleceu nos céus o seu trono, e o seu reino domina sobre tudo." />
             <Txt>{`As linhas diagonais do diagrama, marcadas "Reino", envolvem toda a figura. Nada no casamento de vocês vai ficar fora do governo de Deus — nem as finanças, nem a intimidade, nem as brigas, nem a rotina do dia a dia. Isso não é uma ameaça; é uma proteção. Significa que vocês não vão precisar resolver tudo sozinhos, pelo próprio critério — há um Rei que já estabeleceu o padrão certo e que caminha com vocês em cada decisão.\n\nIsso aponta para Cristo e o Espírito: o Reino que envolve o casamento de vocês foi inaugurado por Jesus (Marcos 1.15) e é vivido, no dia a dia, pelo poder do Espírito Santo — "o Reino de Deus... é justiça, paz e alegria no Espírito Santo" (Romanos 14.17). Render-se ao governo de Deus é, na prática, render-se ao senhorio de Cristo, sustentado pelo Espírito.`}</Txt>
           </Bloco>
 
           {/* III */}
-          <Bloco titulo="Mandato Espiritual (III) — O Casamento É Pacto, Não Contrato" delay={0.26}>
+          <Bloco titulo={pt ? 'Mandato Espiritual (III) — O Casamento É Pacto, Não Contrato' : 'Spiritual Mandate (III) — Marriage Is Covenant, Not Contract'} delay={0.26}>
             <Verso ref="Malaquias 2.14" texto="Ela é tua companheira e a mulher da tua aliança." />
             <Verso ref="Gênesis 2.24" texto="Por isso deixará o homem pai e mãe e se unirá à sua mulher, e serão uma só carne." />
             <Txt>{`Um contrato pode ser desfeito quando uma das partes não cumpre sua parte. Um pacto bíblico é diferente: é uma promessa feita diante de Deus, que Ele mesmo testemunha e sustenta. Malaquias chama a esposa de "mulher da aliança" — não "parceira contratual". É isso que vocês estão prestes a viver: não um acordo que pode ser cancelado quando as coisas ficarem difíceis, mas um pacto diante de Deus, que Ele mesmo vai ajudar vocês a cumprir.\n\nIsso aponta para Cristo e o Espírito: nenhum casal cumpre perfeitamente sua parte no pacto — por isso Deus enviou Jesus como o Mediador de uma aliança melhor, que garante o que nós não conseguimos garantir sozinhos (Hebreus 8.6; 9.15). E é o Espírito Santo quem cumpre em nós a promessa antiga: "Porei dentro de vós o meu Espírito" (Ezequiel 36.26-27) — Ele nos capacita a viver fiéis à aliança que vocês vão fazer.`}</Txt>
           </Bloco>
 
           {/* IV */}
-          <Bloco titulo="Mandato Social e Mandato Cultural — Chamados para uma Missão" delay={0.29}>
+          <Bloco titulo={pt ? 'Mandato Social e Mandato Cultural — Chamados para uma Missão' : 'Social and Cultural Mandate — Called to a Mission'} delay={0.29}>
             <Verso ref="Gênesis 1.28" texto="Deus os abençoou e disse: sede fecundos, multiplicai-vos, enchei a terra e sujeitai-a." />
             <Txt>{`No centro do diagrama estão os "Mediadores (agentes)" — o próprio casal, e não Cristo, que é o único Mediador entre Deus e os homens (1 Timóteo 2.5). Da união de vocês nascem coisas: uma casa organizada (Mandato Social) e uma influência que chega ao trabalho, à cidade, à arte, à igreja (Mandato Cultural). O casamento cristão não existe só para fazer os dois felizes — embora a alegria seja parte real do plano de Deus. Ele existe para que, unidos, vocês representem a aliança de Deus no mundo: em casa, no trabalho, na vizinhança, na igreja.\n\nIsso aponta para Cristo e o Espírito: a missão de gerar fruto para o mundo — que começou em Gênesis como mandato cultural — é retomada e ampliada por Jesus na Grande Comissão: "fazei discípulos de todas as nações" (Mateus 28.18-20). E é o Espírito Santo quem dá poder para essa missão (Atos 1.8). O casamento de vocês participa, em pequena escala, da grande obra de Deus na história da redenção — do jardim do Éden até a nova criação.`}</Txt>
           </Bloco>
 
           {/* Para conversar */}
-          <Bloco titulo="Para Conversar em Casal" delay={0.32}>
+          <Bloco titulo={pt ? 'Para Conversar em Casal' : 'Couple Discussion'} delay={0.32}>
             <div style={{ marginBottom: 12, fontSize: 'clamp(12px,1.6vw,13.5px)', color: 'rgba(255,255,255,0.45)', fontStyle: 'italic' }}>
-              Reservem alguns minutos, só vocês dois, para conversar e escrever as respostas abaixo. Não existe resposta certa — o objetivo é começar a colocar em palavras o que vocês pensam e sentem sobre o casamento.
+              {pt ? 'Reservem alguns minutos, só vocês dois, para conversar e escrever as respostas abaixo. Não existe resposta certa — o objetivo é começar a colocar em palavras o que vocês pensam e sentem sobre o casamento.' : 'Set aside a few minutes, just the two of you, to talk and write down your answers below. There is no right answer — the goal is to begin putting into words what you think and feel about marriage.'}
             </div>
             <Pergunta n={1} texto={'Até hoje, o que vocês vinham considerando como a “base” do nosso relacionamento? Como isso se compara com a ideia de que o casamento nasce da comunhão de Deus?'} />
             <Pergunta n={2} texto={'Existe alguma área da nossa vida que já tratamos como “assunto nosso”, fora do que a Palavra de Deus ensina? Qual?'} />
@@ -1653,14 +1658,14 @@ export function AulaInaugural() {
           </Bloco>
 
           {/* Nosso combinado */}
-          <Bloco titulo="Nosso Combinado" delay={0.35}>
+          <Bloco titulo={pt ? 'Nosso Combinado' : 'Our Commitment'} delay={0.35}>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
               <div>
-                <div style={{ fontSize: 'clamp(13px,1.7vw,14.5px)', color: 'rgba(255,255,255,0.70)', marginBottom: 6 }}>Vamos priorizar os encontros deste curso porque...</div>
+                <div style={{ fontSize: 'clamp(13px,1.7vw,14.5px)', color: 'rgba(255,255,255,0.70)', marginBottom: 6 }}>{pt ? 'Vamos priorizar os encontros deste curso porque...' : 'We will prioritize the sessions of this course because...'}</div>
                 <div style={{ height: 36, borderBottom: '1px solid rgba(255,200,80,0.20)', borderRadius: 0 }} />
               </div>
               <div>
-                <div style={{ fontSize: 'clamp(13px,1.7vw,14.5px)', color: 'rgba(255,255,255,0.70)', marginBottom: 6 }}>Uma pergunta que queremos levar para o próximo encontro é...</div>
+                <div style={{ fontSize: 'clamp(13px,1.7vw,14.5px)', color: 'rgba(255,255,255,0.70)', marginBottom: 6 }}>{pt ? 'Uma pergunta que queremos levar para o próximo encontro é...' : 'A question we want to bring to the next session is...'}</div>
                 <div style={{ height: 36, borderBottom: '1px solid rgba(255,200,80,0.20)' }} />
               </div>
             </div>
@@ -1669,18 +1674,18 @@ export function AulaInaugural() {
           {/* Para guardar */}
           <motion.div initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.38 }}
             style={{ borderRadius: 14, background: 'rgba(255,200,80,0.10)', border: `1.5px solid ${GOLD_BD}`, padding: '22px 24px', textAlign: 'center' }}>
-            <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: GOLD, marginBottom: 12 }}>Para Guardar no Coração</div>
+            <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: GOLD, marginBottom: 12 }}>{pt ? 'Para Guardar no Coração' : 'To Keep in Your Heart'}</div>
             <div style={{ fontSize: 'clamp(15px,2.2vw,18px)', fontWeight: 800, color: 'rgba(255,255,255,0.88)', lineHeight: 1.5, marginBottom: 10, fontStyle: 'italic' }}>
-              "E o cordão de três dobras não se quebra tão depressa."
+              {pt ? '"E o cordão de três dobras não se quebra tão depressa."' : '"A threefold cord is not quickly broken."'}
             </div>
             <div style={{ fontSize: 11, color: GOLD, fontWeight: 700, letterSpacing: '0.12em', marginBottom: 14 }}>Eclesiastes 4.12</div>
             <div style={{ fontSize: 'clamp(13px,1.7vw,14.5px)', color: 'rgba(255,255,255,0.55)', lineHeight: 1.80 }}>
-              Que o casamento de vocês seja, desde já, um cordão de três dobras: você, seu noivo ou noiva, e Deus no centro, segurando tudo junto. Essa história não começa em vocês, nem termina em vocês. Ela começou no jardim do Éden, foi restaurada por Jesus na cruz, é sustentada hoje pelo Espírito Santo, e aponta para as bodas do Cordeiro (Apocalipse 19.7-9) — o casamento final entre Cristo e a Sua Igreja. O casamento de vocês é um pequeno reflexo dessa grande história.
+              {pt ? 'Que o casamento de vocês seja, desde já, um cordão de três dobras: você, seu noivo ou noiva, e Deus no centro, segurando tudo junto. Essa história não começa em vocês, nem termina em vocês. Ela começou no jardim do Éden, foi restaurada por Jesus na cruz, é sustentada hoje pelo Espírito Santo, e aponta para as bodas do Cordeiro (Apocalipse 19.7-9) — o casamento final entre Cristo e a Sua Igreja. O casamento de vocês é um pequeno reflexo dessa grande história.' : 'May your marriage be, from this moment on, a threefold cord: you, your fiancé or fiancée, and God at the center, holding everything together. This story did not begin with you, nor does it end with you. It began in the Garden of Eden, was restored by Jesus on the cross, is sustained today by the Holy Spirit, and points to the Wedding of the Lamb (Revelation 19.7-9) — the final marriage between Christ and His Church. Your marriage is a small reflection of that great story.'}
             </div>
           </motion.div>
 
           {/* Referências */}
-          <Bloco titulo="Referências" delay={0.41}>
+          <Bloco titulo={pt ? 'Referências' : 'References'} delay={0.41}>
             {[
               'BAVINCK, Herman. Reformed Dogmatics. Grand Rapids: Baker Academic, 2003-2008. 4 v.',
               'BERKHOF, Louis. Teologia Sistemática. São Paulo: Cultura Cristã, 2014.',
@@ -1716,6 +1721,7 @@ export function AulaInaugural() {
 export function Aula02() {
   const navigate = useNavigate();
   const [lang, setLang] = useState<'pt'|'en'>('pt');
+  const pt = lang === 'pt';
   const onBack = () => navigate('/familia/noivos');
   return (
     <div style={{ minHeight: '100vh', background: C.bg, color: C.white }}>
@@ -1725,23 +1731,23 @@ export function Aula02() {
         {/* Voltar */}
         <div style={{ marginBottom: 32 }}>
           <button onClick={onBack} style={{ display: 'inline-flex', alignItems: 'center', gap: 7, fontSize: 12, fontWeight: 900, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(255,200,80,0.70)', background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}>
-            ← Aulas
+            {pt ? '← Aulas' : '← Lessons'}
           </button>
         </div>
 
         {/* Cabeçalho */}
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} style={{ marginBottom: 48 }}>
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, marginBottom: 10, padding: '4px 12px', borderRadius: 7, background: GOLD_B, border: `1px solid ${GOLD_BD}` }}>
-            <span style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,200,80,0.75)' }}>Curso de Noivos · Material do Aluno</span>
+            <span style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,200,80,0.75)' }}>{pt ? 'Curso de Noivos · Material do Aluno' : 'Pre-Wedding Course · Student Material'}</span>
           </div>
           <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.32)', marginBottom: 14 }}>
-            Aula 2 · Encontro 2
+            {pt ? 'Aula 2 · Encontro 2' : 'Lesson 2 · Session 2'}
           </div>
           <h1 style={{ fontSize: 'clamp(26px,4.8vw,46px)', fontWeight: 900, lineHeight: 1.12, margin: '0 0 10px', background: `linear-gradient(135deg,rgba(255,255,255,0.95) 0%,${GOLD} 58%,rgba(255,230,140,0.72) 100%)`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-            Princípios Bíblicos de Comunicação
+            {pt ? 'Princípios Bíblicos de Comunicação' : 'Biblical Principles of Communication'}
           </h1>
           <p style={{ fontSize: 'clamp(13px,1.8vw,15px)', color: 'rgba(255,255,255,0.42)', lineHeight: 1.70, fontStyle: 'italic', margin: '0 0 20px' }}>
-            A fala nasceu antes do pecado — e pode ser restaurada pelo Evangelho
+            {pt ? 'A fala nasceu antes do pecado — e pode ser restaurada pelo Evangelho' : 'Speech was born before sin — and can be restored by the Gospel'}
           </p>
         </motion.div>
 
@@ -1762,37 +1768,37 @@ export function Aula02() {
           {/* Parte 1 — Cinco Níveis */}
           <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.08 }}>
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '4px 14px', borderRadius: 7, background: 'rgba(255,200,80,0.10)', border: `1px solid ${GOLD_BD}`, marginBottom: 16 }}>
-              <span style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: GOLD }}>Parte 1 de 2 · Os Cinco Níveis de Comunicação</span>
+              <span style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: GOLD }}>{pt ? 'Parte 1 de 2 · Os Cinco Níveis de Comunicação' : 'Part 1 of 2 · The Five Levels of Communication'}</span>
             </div>
           </motion.div>
 
-          <Bloco titulo="Nível 1 — Clichê" delay={0.10}>
+          <Bloco titulo={pt ? 'Nível 1 — Clichê' : 'Level 1 — Cliché'} delay={0.10}>
             <Txt>{`Ela pergunta: "Como foi seu dia?" Ele responde: "Foi bom, correria normal." — Ou, dez anos de casados: "E aí?" — "Tudo certo, as crianças já jantaram." — "Ótimo."\n\nTroca de informação de superfície. Não há risco, não há revelação. A maioria das conversas do cotidiano começa aqui — o problema é quando nunca sai daqui.`}</Txt>
           </Bloco>
 
-          <Bloco titulo="Nível 2 — Fatos e Informações" delay={0.12}>
+          <Bloco titulo={pt ? 'Nível 2 — Fatos e Informações' : 'Level 2 — Facts and Information'} delay={0.12}>
             <Txt>{`Noivos: "O cerimonial confirmou a igreja para dia 14. Preciso te enviar o orçamento do buffet."\nCasados: "A conta de luz veio mais alta. Marquei a consulta do pediatra pra quinta. Busca as crianças amanhã?"\n\nLogística eficiente. Necessária, mas insuficiente. Um casal que vive no nível 2 administra a vida juntos, mas não a compartilha.`}</Txt>
           </Bloco>
 
-          <Bloco titulo="Nível 3 — Opiniões e Julgamentos" delay={0.14}>
+          <Bloco titulo={pt ? 'Nível 3 — Opiniões e Julgamentos' : 'Level 3 — Opinions and Judgments'} delay={0.14}>
             <Verso ref="Provérbios 18.13" texto="O que responde antes de ouvir, estultícia lhe é, e vergonha." />
             <Verso ref="Tiago 1.19" texto="...seja todo homem pronto para ouvir, tardio para falar, tardio para se irar." />
             <Txt>{`"Acho que devíamos morar mais perto da sua igreja... mas se você preferir perto do meu trabalho, também dá certo, não é bem uma exigência."\n\nA autodesqualificação da opinião ("talvez seja só impressão minha") frequentemente não é humildade genuína — é medo disfarçado de humildade, porque antecipa rejeição sem testar se ela viria. A correção bíblica não é falar mais opinião com mais força, mas criar, através da escuta genuína do outro, segurança suficiente para que a opinião seja dita sem capa protetora.`}</Txt>
           </Bloco>
 
-          <Bloco titulo="Nível 4 — Sentimentos e Emoções" delay={0.16}>
+          <Bloco titulo={pt ? 'Nível 4 — Sentimentos e Emoções' : 'Level 4 — Feelings and Emotions'} delay={0.16}>
             <Verso ref="Efésios 4.25" texto="Pelo que deixai a mentira, e falai a verdade cada um com o seu próximo; porque somos membros uns dos outros." />
             <Verso ref="Efésios 4.32" texto="...sede uns para com os outros benignos, misericordiosos, perdoando-vos uns aos outros, como também Deus vos perdoou em Cristo." />
             <Txt>{`"Quando você demora pra responder, eu me sinto ansiosa, como se não fosse prioridade pra você. Isso vem de coisas que vivi antes de te conhecer, mas preciso te contar."\n\nSentimento não expresso ao cônjuge, na lógica de Paulo, não é apenas reserva pessoal — é o corpo escondendo informação de si mesmo. O texto exige verdade emocional, não apenas factual. Mas Ef 4.32 fornece a condição que torna essa exposição segura: perdão com base no padrão do perdão de Deus em Cristo. Sem essa segurança teológica, ninguém se arrisca ao nível 4.`}</Txt>
           </Bloco>
 
-          <Bloco titulo="Nível 5 — Comunicação Plena" delay={0.18}>
+          <Bloco titulo={pt ? 'Nível 5 — Comunicação Plena' : 'Level 5 — Full Communication'} delay={0.18}>
             <Verso ref="Gênesis 2.25" texto="E ambos estavam nus, o homem e a sua mulher; e não se envergonhavam." />
             <Verso ref="1 João 1.7" texto="...e o sangue de Jesus Cristo, seu Filho, nos purifica de todo o pecado." />
             <Txt>{`"Tenho medo de repetir o casamento dos meus pais — às vezes te trato com a desconfiança que aprendi lá em casa. Preciso da sua ajuda pra não fazer isso, e quero que me avise quando perceber, mesmo que eu me incomode na hora."\n\nGênesis 2.25 fecha a narrativa da criação antes da Queda — nudez sem vergonha é o estado original da intimidade conjugal, não uma conquista terapêutica moderna. Nível 5 não é alcançável por técnica de comunicação — é fruto de uma segurança teológica: a certeza de que ser plenamente conhecido não resulta em rejeição, porque em Cristo o casal já foi plenamente conhecido por Deus e plenamente aceito.`}</Txt>
           </Bloco>
 
-          <Bloco titulo="Nível de Ruptura — Silêncio Defensivo" delay={0.20}>
+          <Bloco titulo={pt ? 'Nível de Ruptura — Silêncio Defensivo' : 'Breakdown Level — Defensive Silence'} delay={0.20}>
             <Verso ref="Gênesis 3.8–10" texto='E ouviram a voz do Senhor Deus, que passeava no jardim... e escondeu-se Adão e sua mulher da presença do Senhor Deus... "Onde estás?" E ele disse: "Ouvi a tua voz soar no jardim, e temi, porque estava nu, e escondi-me."' />
             <Txt>{`Depois de discutir a lista de convidados, ela para de comentar sobre o casamento por três dias. Ele pergunta se está tudo bem. Ela: "Tá tudo bem" — num tom que diz o contrário.\n\nEste é o primeiro relato de retirada relacional na Escritura. O esconderijo não é neutro — é resposta ativa ao medo de exposição. Deus não aceita o silêncio como resposta suficiente: Ele pergunta diretamente "onde estás?" para forçar a verbalização do que estava sendo evitado. A pergunta de Deus é o modelo pastoral para lidar com o silêncio defensivo no casamento: não se aceita a retirada como solução; ela é gentilmente confrontada e nomeada.`}</Txt>
           </Bloco>
@@ -1800,55 +1806,55 @@ export function Aula02() {
           {/* Parte 2 — Princípios */}
           <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.22 }} style={{ marginTop: 8 }}>
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '4px 14px', borderRadius: 7, background: 'rgba(52,211,153,0.10)', border: '1px solid rgba(52,211,153,0.35)', marginBottom: 16 }}>
-              <span style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: SPIRIT }}>Parte 2 de 2 · Sete Princípios Bíblicos</span>
+              <span style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: SPIRIT }}>{pt ? 'Parte 2 de 2 · Sete Princípios Bíblicos' : 'Part 2 of 2 · Seven Biblical Principles'}</span>
             </div>
             <div style={{ fontSize: 'clamp(13px,1.8vw,15px)', color: 'rgba(255,255,255,0.45)', lineHeight: 1.7, marginBottom: 8 }}>
-              Se vocês tivessem que escolher: preferiam um casamento com muito amor e pouca habilidade de conversar, ou um casamento com pouca intensidade de sentimento e excelente capacidade de conversar sobre qualquer assunto? A Bíblia não separa essas duas coisas.
+              {pt ? 'Se vocês tivessem que escolher: preferiam um casamento com muito amor e pouca habilidade de conversar, ou um casamento com pouca intensidade de sentimento e excelente capacidade de conversar sobre qualquer assunto? A Bíblia não separa essas duas coisas.' : 'If you had to choose: would you prefer a marriage with great love and poor communication skills, or a marriage with low emotional intensity but excellent ability to discuss anything? The Bible does not separate these two things.'}
             </div>
           </motion.div>
 
-          <Bloco titulo="Princípio 1 — Verdade com Amor" delay={0.24}>
+          <Bloco titulo={pt ? 'Princípio 1 — Verdade com Amor' : 'Principle 1 — Truth in Love'} delay={0.24}>
             <Verso ref="Efésios 4.15, 25" texto="Antes, seguindo a verdade em amor, cresçamos em tudo naquele que é a cabeça, Cristo. [...] Pelo que deixai a mentira, e falai a verdade cada um com o seu próximo; porque somos membros uns dos outros." />
             <Txt>{`Paulo funde aqui os dois polos que a Queda separou: verdade (que a serpente distorceu) e amor (que Adão destruiu ao culpar Eva). Verdade sem amor vira arma. Amor sem verdade vira sentimentalismo vazio que evita qualquer assunto difícil. O casal cristão é chamado às duas coisas ao mesmo tempo, não a escolher uma.\n\n🗣 Dinâmica — Duas Colunas: peçam exemplos de frases que seriam "verdade sem amor" (ex.: "Você sempre estraga tudo") e "amor sem verdade" (ex.: "Tá tudo bem, não precisa comentar nada"). Para cada exemplo, reescrevam como "verdade com amor" (ex.: "Isso me machucou, e preciso te contar porque nos importamos um com o outro"). Perceberam que verdade com amor exige mais coragem que as duas outras opções?`}</Txt>
           </Bloco>
 
-          <Bloco titulo="Princípio 2 — Escuta antes da Fala" delay={0.26}>
+          <Bloco titulo={pt ? 'Princípio 2 — Escuta antes da Fala' : 'Principle 2 — Listen Before You Speak'} delay={0.26}>
             <Verso ref="Tiago 1.19" texto="...seja todo homem pronto para ouvir, tardio para falar, tardio para se irar." />
             <Verso ref="Provérbios 18.13" texto="O que responde antes de ouvir, estultícia lhe é, e vergonha." />
             <Txt>{`A ordem de Tiago não é aleatória: escuta lenta evita fala apressada, que evita ira. A Bíblia trata boa fala como consequência de boa escuta — não o contrário. A maioria dos conflitos conjugais não nasce de má intenção, mas de resposta formulada antes de a escuta terminar.\n\n🗣 Dinâmica — Repetir Antes de Responder: Um compartilha, por 1 minuto, algo real que sente sobre a preparação do casamento. Antes de responder, o outro precisa repetir com suas próprias palavras o que ouviu, até o primeiro confirmar: "sim, é isso mesmo." Só então o segundo responde. Invertam os papéis. Foi mais difícil repetir corretamente, ou segurar a vontade de já responder?`}</Txt>
           </Bloco>
 
-          <Bloco titulo="Princípio 3 — Ira sem Pecado" delay={0.28}>
+          <Bloco titulo={pt ? 'Princípio 3 — Ira sem Pecado' : 'Principle 3 — Anger Without Sin'} delay={0.28}>
             <Verso ref="Efésios 4.26" texto="Irai-vos, e não pequeis; não se ponha o sol sobre a vossa ira." />
             <Txt>{`O texto grego distingue orgé (ira legítima e temporária) de parorgismós (indignação retida, processada em silêncio, que se converte em ressentimento acumulado — é essa forma que o texto proíbe ao dizer "não se ponha o sol"). A Escritura não pede supressão emocional. Pede processamento não adiado. Guardar mágoa "para não brigar" desobedece este texto tanto quanto explodir em fúria.\n\nNota pastoral: "não se ponha o sol" não significa resolver tudo em uma única conversa antes de dormir a qualquer custo — significa não deixar a indignação apodrecer em silêncio por dias ou semanas. Alguns temas exigem mais de uma conversa; o que o texto proíbe é o acúmulo silencioso, não a paciência para tratar bem um assunto complexo.\n\n🗣 Dinâmica — O Prazo do Sol: Cada um pensa em algo pequeno que ficou "engasgado" nas últimas duas semanas. Em dupla, compartilhem: "Eu me senti [sentimento] quando [situação], e eu ainda não tinha te contado isso." O outro responde apenas ouvindo e agradecendo — sem se defender ainda. O que fica mais pesado: o conflito resolvido na hora, ou o silêncio guardado por dias?`}</Txt>
           </Bloco>
 
-          <Bloco titulo="Princípio 4 — Fala que Edifica" delay={0.30}>
+          <Bloco titulo={pt ? 'Princípio 4 — Fala que Edifica' : 'Principle 4 — Speech that Builds Up'} delay={0.30}>
             <Verso ref="Efésios 4.29" texto="Não saia da vossa boca nenhuma palavra torpe, mas só a que for boa para edificação, para que dê graça aos que a ouvem." />
             <Verso ref="Colossenses 4.6" texto="A vossa palavra seja sempre agradável, temperada com sal." />
             <Txt>{`O verbo grego para "edificação" (oikodomé) é literalmente construção civil. Paulo propõe um teste funcional: cada fala deveria passar por duas perguntas — "isso é verdade?" (Ef 4.25) e "isso constrói?" (Ef 4.29). A ausência de qualquer uma das duas é desobediência — dizer uma verdade que apenas destrói não cumpre o texto tanto quanto mentir.\n\n🗣 Dinâmica — Teste da Edificação: Cada um pensa numa frase que já disse ao outro, ou pretende dizer, sobre algo difícil (família, dinheiro, hábito que incomoda). Aplica o teste: "Isso é verdade? Isso edifica?" Se falhar em qualquer um dos dois testes, reescreva a frase.`}</Txt>
           </Bloco>
 
-          <Bloco titulo="Princípio 5 — Evite Aborrecer" delay={0.32}>
+          <Bloco titulo={pt ? 'Princípio 5 — Evite Aborrecer' : 'Principle 5 — Avoid Nagging'} delay={0.32}>
             <Verso ref="Provérbios 10.19" texto="Na multidão de palavras não faltará transgressão, mas o que modera os seus lábios é prudente." />
             <Verso ref="Provérbios 21.1" texto="Como ribeiros de águas, assim é o coração do rei na mão do Senhor; a tudo quanto quer o inclina." />
             <Txt>{`Provérbios 10.19 não condena falar muito por si só — condena a probabilidade de que, quanto mais palavras, maior a chance de alguma delas ferir. "Aborrecer" aqui é o desgaste acumulado de repetir a mesma queixa até que a mensagem perca força e passe a ser ruído, não comunicação.\n\nProvérbios 21.1 é aplicado aqui por extensão pastoral: se até o coração de um rei está na mão do Senhor para ser inclinado, nenhum cônjuge precisa insistir, pressionar ou repetir um argumento dez vezes para "vencer" a vontade do outro. A confiança de que Deus é quem realmente move corações liberta o casal da compulsão de aborrecer o outro até obter concordância pela exaustão.\n\n🗣 Dinâmica — Editando o Discurso: Cada um escreve um pedido ou queixa que já repetiu ao outro mais de três vezes. Reduzam a frase ao essencial. Combinem: dizer essa versão uma vez, e depois entregar o resultado a Deus. O que muda quando vocês confiam que Deus pode tocar o coração do outro?`}</Txt>
           </Bloco>
 
-          <Bloco titulo="Princípio 6 — Repita as Frases Essenciais" delay={0.34}>
+          <Bloco titulo={pt ? 'Princípio 6 — Repita as Frases Essenciais' : 'Principle 6 — Repeat the Essential Phrases'} delay={0.34}>
             <Verso ref="Efésios 4.32" texto="...sede uns para com os outros benignos, misericordiosos, perdoando-vos uns aos outros, como também Deus vos perdoou em Cristo." />
             <Txt>{`Benignidade (chrestotes) não é traço de personalidade estático — é qualidade que se pratica em atos concretos e repetidos. Repetir frases simples — por favor, obrigado(a), eu te amo, me desculpa, eu te perdoo — não é vazio nem infantil: é a versão verbal, diária e miniatura, do mesmo perdão "como também Deus vos perdoou em Cristo".\n\n🗣 Dinâmica — Vocabulário do Amor: Cinco frases essenciais: "Por favor" · "Obrigado(a)" · "Eu te amo" · "Me desculpa" · "Eu te perdoo". Qual dessas frases vocês dizem menos um ao outro hoje? Comprometam-se a dizer, ao menos uma vez por dia nesta semana, a frase que menos costumam dizer. Vocês não vão sentir isso todos os dias com a mesma intensidade — e não precisam. A frase carrega o compromisso mesmo quando o sentimento ainda não alcançou.`}</Txt>
           </Bloco>
 
-          <Bloco titulo="Princípio 7 — Não Culpe nem Critique" delay={0.36}>
+          <Bloco titulo={pt ? 'Princípio 7 — Não Culpe nem Critique' : 'Principle 7 — Do Not Blame or Criticize'} delay={0.36}>
             <Verso ref="Gálatas 6.1" texto="Irmãos, se um homem chegar a ser surpreendido em algum delito, vós, que sois espirituais, encaminhai o tal com espírito de mansidão, considerando-te a ti mesmo, para que não sejas também tentado." />
             <Txt>{`O verbo grego para "encaminhar" (katartizo) é o mesmo usado em Marcos 1.19 para os pescadores consertando as redes — e em contextos médicos gregos para reduzir uma fratura óssea. Restaurar, no vocabulário de Paulo, não é apontar o erro e se afastar — é o trabalho cuidadoso de recolocar algo quebrado em seu lugar.\n\nNote a condição final: "considerando-te a ti mesmo, para que não sejas também tentado" — a autocrítica antecede a crítica do outro. Isso ecoa Mateus 7.3–5 e serve como freio contra o padrão de crítica que Provérbios já havia advertido. Confrontar uma falha do cônjuge segue a lógica de katartizo — mansidão, consciência da própria vulnerabilidade ao mesmo pecado, e o objetivo de reparar, não de vencer a discussão.\n\n🗣 Dinâmica — Encaminhar em vez de Acusar: Cada um escreve uma frase de crítica no formato "você sempre..." ou "você nunca...". Reescrevam seguindo a estrutura de Gl 6.1: nomear o fato com mansidão + reconhecer a própria vulnerabilidade ao mesmo tipo de falha. Exemplo: "Você sempre chega atrasado" → "Percebi que você atrasou de novo — e eu sei que também falho em compromissos às vezes. Podemos conversar sobre isso com calma?"`}</Txt>
           </Bloco>
 
           {/* Para conversar */}
-          <Bloco titulo="Para Conversar em Casal" delay={0.38}>
+          <Bloco titulo={pt ? 'Para Conversar em Casal' : 'Couple Discussion'} delay={0.38}>
             <div style={{ marginBottom: 12, fontSize: 'clamp(12px,1.6vw,13.5px)', color: 'rgba(255,255,255,0.45)', fontStyle: 'italic' }}>
-              Reservem alguns minutos, só vocês dois. Não existe resposta certa — o objetivo é começar a nomear padrões reais.
+              {pt ? 'Reservem alguns minutos, só vocês dois. Não existe resposta certa — o objetivo é começar a nomear padrões reais.' : 'Set aside a few minutes, just the two of you. There is no right answer — the goal is to begin naming real patterns.'}
             </div>
             <Pergunta n={1} texto="Individualmente: quando estou magoado(a) ou com medo na nossa relação, meu padrão mais comum é: (a) atacar/acusar, (b) me calar e me afastar, (c) minimizar e fingir que está tudo bem, (d) outro — qual?" />
             <Pergunta n={2} texto="Isso é falha de personalidade, ou é o mesmo padrão de Adão e Eva se escondendo entre as árvores? O que muda para você ao pensar assim?" />
@@ -1857,18 +1863,18 @@ export function Aula02() {
           </Bloco>
 
           {/* Compromisso escrito */}
-          <Bloco titulo="Carta de Compromisso" delay={0.40}>
-            <Txt>Escolham, dos sete princípios trabalhados hoje, um que mais precisam praticar nas próximas semanas. Escrevam juntos uma frase concreta de compromisso abaixo — o líder de casais guardará e devolverá no encerramento do curso.</Txt>
+          <Bloco titulo={pt ? 'Carta de Compromisso' : 'Commitment Letter'} delay={0.40}>
+            <Txt>{pt ? 'Escolham, dos sete princípios trabalhados hoje, um que mais precisam praticar nas próximas semanas. Escrevam juntos uma frase concreta de compromisso abaixo — o líder de casais guardará e devolverá no encerramento do curso.' : 'Choose, from the seven principles covered today, the one you most need to practice in the coming weeks. Write together a concrete commitment phrase below — the couples leader will keep it and return it at the end of the course.'}</Txt>
             <div style={{ marginTop: 16, height: 48, borderBottom: '1px solid rgba(255,200,80,0.20)' }} />
             <div style={{ marginTop: 16, fontSize: 'clamp(12px,1.6vw,13.5px)', color: 'rgba(255,255,255,0.35)', fontStyle: 'italic' }}>
-              Oração de encerramento: Adoração (pela fala como dom de Deus) → Confissão (dos padrões de Queda nomeados hoje) → Petição (por graça para verdade com amor, escuta, ira sem pecado, fala que edifica) → Consagração (cada casal, nominalmente).
+              {pt ? 'Oração de encerramento: Adoração (pela fala como dom de Deus) → Confissão (dos padrões de Queda nomeados hoje) → Petição (por graça para verdade com amor, escuta, ira sem pecado, fala que edifica) → Consagração (cada casal, nominalmente).' : 'Closing prayer: Worship (for speech as God\'s gift) → Confession (of the Fall patterns named today) → Petition (for grace toward truth in love, listening, anger without sin, speech that builds up) → Consecration (each couple, by name).'}
             </div>
           </Bloco>
 
           {/* Versículo-síntese */}
           <motion.div initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.42 }}
             style={{ borderRadius: 14, background: 'rgba(255,200,80,0.10)', border: `1.5px solid ${GOLD_BD}`, padding: '22px 24px', textAlign: 'center' }}>
-            <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: GOLD, marginBottom: 12 }}>Versículo-Síntese</div>
+            <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: GOLD, marginBottom: 12 }}>{pt ? 'Versículo-Síntese' : 'Key Verse'}</div>
             <div style={{ fontSize: 'clamp(15px,2.2vw,18px)', fontWeight: 800, color: 'rgba(255,255,255,0.88)', lineHeight: 1.5, marginBottom: 10, fontStyle: 'italic' }}>
               "Antes, seguindo a verdade em amor, cresçamos em tudo naquele que é a cabeça, Cristo."
             </div>
@@ -1876,7 +1882,7 @@ export function Aula02() {
           </motion.div>
 
           {/* Referências */}
-          <Bloco titulo="Referências" delay={0.44}>
+          <Bloco titulo={pt ? 'Referências' : 'References'} delay={0.44}>
             {[
               'EGGERICHS, Emerson. Amor e Respeito. São Paulo: Mundo Cristão, 2005.',
               'HARLEY, Willard F. Amantes ou Cúmplices? O Segredo de um Casamento Feliz. Rio de Janeiro: CPAD, 2011.',
@@ -1949,14 +1955,14 @@ export function FamiliaHub() {
             background: 'linear-gradient(90deg,rgba(52,211,153,1),rgba(110,231,183,1))',
             WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
           }}>
-            Recursos para a Família Cristã
+            {pt ? 'Recursos para a Família Cristã' : 'Resources for the Christian Family'}
           </div>
           <h1 style={{
             fontSize: 'clamp(30px,5.5vw,52px)', fontWeight: 900, lineHeight: 1.1, margin: '0 0 18px',
             background: 'linear-gradient(135deg,rgba(255,255,255,0.95) 0%,rgba(52,211,153,0.88) 55%,rgba(110,231,183,0.72) 100%)',
             WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
           }}>
-            Família
+            {pt ? 'Família' : 'Family'}
           </h1>
           <p style={{ fontSize: 'clamp(14px,2vw,17px)', color: 'rgba(255,255,255,0.52)', maxWidth: 560, margin: '0 auto', lineHeight: 1.7 }}>
             {pt ? 'Escolha o recurso que deseja acessar. Novos módulos serão disponibilizados em breve.' : 'Choose the resource you want to access. New modules will be available soon.'}
@@ -1992,7 +1998,7 @@ export function FamiliaHub() {
               {/* Badge "Em breve" */}
               {!item.available && (
                 <div style={{ position: 'absolute', top: 14, right: 14, fontSize: 9, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.30)', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.10)', borderRadius: 6, padding: '3px 8px' }}>
-                  Em breve
+                  {pt ? 'Em breve' : 'Coming soon'}
                 </div>
               )}
 
@@ -2006,7 +2012,7 @@ export function FamiliaHub() {
 
               {item.available && (
                 <div style={{ marginTop: 20, display: 'inline-flex', alignItems: 'center', gap: 6, fontSize: 11, fontWeight: 900, letterSpacing: '0.14em', textTransform: 'uppercase', color: item.color }}>
-                  Acessar →
+                  {pt ? 'Acessar →' : 'Access →'}
                 </div>
               )}
             </motion.div>
@@ -2022,20 +2028,21 @@ export function FamiliaHub() {
 export function CasadosPage() {
   const navigate = useNavigate();
   const [lang, setLang] = useState<'pt'|'en'>('pt');
+  const pt = lang === 'pt';
   return (
     <div style={{ minHeight: '100vh', background: C.bg, color: C.white }}>
       <Navbar lang={lang} />
       <div style={{ maxWidth: 860, margin: '0 auto', padding: 'clamp(90px,11vw,110px) clamp(16px,4vw,32px) 80px' }}>
         <div style={{ marginBottom: 32 }}>
           <button onClick={() => navigate('/familia')} style={{ display: 'inline-flex', alignItems: 'center', gap: 7, fontSize: 12, fontWeight: 900, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(80,200,255,0.70)', background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}>
-            ← Voltar
+            {pt ? '← Voltar' : '← Back'}
           </button>
         </div>
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} style={{ textAlign: 'center', paddingTop: 60 }}>
           <div style={{ fontSize: 48, marginBottom: 20 }}>🏡</div>
-          <h1 style={{ fontSize: 'clamp(28px,5vw,44px)', fontWeight: 900, color: 'rgba(80,200,255,1)', marginBottom: 16 }}>Para Casados</h1>
+          <h1 style={{ fontSize: 'clamp(28px,5vw,44px)', fontWeight: 900, color: 'rgba(80,200,255,1)', marginBottom: 16 }}>{pt ? 'Para Casados' : 'For Married Couples'}</h1>
           <p style={{ fontSize: 'clamp(14px,2vw,17px)', color: 'rgba(255,255,255,0.45)', maxWidth: 480, margin: '0 auto', lineHeight: 1.75 }}>
-            Recursos homiléticos e devocionais para casais. Módulo em desenvolvimento — disponível em breve.
+            {pt ? 'Recursos homiléticos e devocionais para casais. Módulo em desenvolvimento — disponível em breve.' : 'Homiletical and devotional resources for couples. Module in development — available soon.'}
           </p>
         </motion.div>
       </div>
@@ -2048,6 +2055,7 @@ export function CasadosPage() {
 export function EsbocosPage() {
   const navigate = useNavigate();
   const [lang, setLang] = useState<'pt'|'en'>('pt');
+  const pt = lang === 'pt';
   const [selectedBook, setSelectedBook] = useState<BibleBook>(BIBLE_BOOKS[0]);
   const [pericopes, setPericopes] = useState<Pericope[]>([]);
   const [loadingPericopes, setLoadingPericopes] = useState(false);
@@ -2127,7 +2135,7 @@ export function EsbocosPage() {
             onClick={() => navigate('/familia')}
             style={{ display: 'inline-flex', alignItems: 'center', gap: 7, fontSize: 12, fontWeight: 900, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(52,211,153,0.75)', background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
           >
-            ← Voltar
+            {pt ? '← Voltar' : '← Back'}
           </button>
         </div>
 
@@ -2143,7 +2151,7 @@ export function EsbocosPage() {
             WebkitTextFillColor: 'transparent',
             marginBottom: 10,
           }}>
-            Homilética Familiar Expositiva
+            {pt ? 'Homilética Familiar Expositiva' : 'Expository Family Homiletics'}
           </div>
           <div style={{
             fontSize: 'clamp(32px,6vw,56px)',
@@ -2155,7 +2163,7 @@ export function EsbocosPage() {
             marginBottom: 14,
             letterSpacing: '-0.02em',
           }}>
-            Família
+            {pt ? 'Família' : 'Family'}
           </div>
           <div style={{
             fontSize: 'clamp(14px,2.2vw,17px)',
@@ -2163,7 +2171,7 @@ export function EsbocosPage() {
             lineHeight: 1.7,
             maxWidth: 560,
           }}>
-            Esboços homiléticos expositivos organizados por perícope bíblica — pregando a Palavra de Deus no lar.
+            {pt ? 'Esboços homiléticos expositivos organizados por perícope bíblica — pregando a Palavra de Deus no lar.' : 'Expository homiletical outlines organized by biblical pericope — preaching God\'s Word in the home.'}
           </div>
         </div>
 
@@ -2171,7 +2179,7 @@ export function EsbocosPage() {
         <div style={{ marginBottom: 32, display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 16, flexWrap: 'nowrap' }}>
           <div style={{ minWidth: 0 }}>
             <span style={{ fontSize: 'clamp(13px,2vw,18px)', fontWeight: 700, color: cor }}>{bookDays.length}</span>
-            <span style={{ fontSize: 'clamp(12px,1.8vw,15px)', color: C.muted, marginLeft: 6 }}>esboços para {selectedBook.nome}</span>
+            <span style={{ fontSize: 'clamp(12px,1.8vw,15px)', color: C.muted, marginLeft: 6 }}>{pt ? `esboços para ${selectedBook.nome}` : `outlines for ${selectedBook.nome}`}</span>
           </div>
 
           {/* Book dropdown */}
@@ -2273,12 +2281,12 @@ export function EsbocosPage() {
 
             <div id="familia-pericopes" style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 20 }}>
               <span style={{ fontSize: 17, fontWeight: 800, color: cor }}>{selectedBook.nome}</span>
-              {loadingPericopes && <span style={{ fontSize: 12, color: C.muted }}>Carregando...</span>}
+              {loadingPericopes && <span style={{ fontSize: 12, color: C.muted }}>{pt ? 'Carregando...' : 'Loading...'}</span>}
               {!loadingPericopes && pericopes.length > 0 && (
-                <span style={{ fontSize: 12, color: C.muted, fontWeight: 600 }}>{pericopes.length} perícopes</span>
+                <span style={{ fontSize: 12, color: C.muted, fontWeight: 600 }}>{pericopes.length} {pt ? 'perícopes' : 'pericopes'}</span>
               )}
               {!loadingPericopes && pericopes.length === 0 && (
-                <span style={{ fontSize: 12, color: C.muted }}>Perícopes ainda não cadastradas</span>
+                <span style={{ fontSize: 12, color: C.muted }}>{pt ? 'Perícopes ainda não cadastradas' : 'Pericopes not yet registered'}</span>
               )}
             </div>
 
@@ -2300,6 +2308,7 @@ export function EsbocosPage() {
                         active={p.idx === selectedPericopeIdx}
                         conteudo={conteudoCard}
                         onClick={() => selectPericope(p.idx)}
+                        pt={pt}
                       />
                     );
                   })}
@@ -2314,8 +2323,8 @@ export function EsbocosPage() {
                 {/* Tab bar */}
                 <div style={{ display: 'flex', gap: 4, marginBottom: 20, borderBottom: `1px solid ${C.border}`, paddingBottom: 0 }}>
                   {([
-                    { key: 'familia', label: 'Esboço Familiar' },
-                    { key: 'quiasma', label: 'Estrutura Quiástica' },
+                    { key: 'familia', label: pt ? 'Esboço Familiar' : 'Family Outline' },
+                    { key: 'quiasma', label: pt ? 'Estrutura Quiástica' : 'Chiastic Structure' },
                   ] as { key: 'quiasma' | 'familia'; label: string }[]).map(tab => {
                     const active = contentTab === tab.key;
                     return (
@@ -2342,7 +2351,7 @@ export function EsbocosPage() {
                 {/* Pericope title */}
                 <div style={{ marginBottom: 20 }}>
                   <div style={{ fontSize: 12, fontWeight: 900, letterSpacing: '0.18em', color: cor, textTransform: 'uppercase', marginBottom: 6 }}>
-                    Perícope {String(selectedPericope.idx).padStart(2, '0')}
+                    {pt ? 'Perícope' : 'Pericope'} {String(selectedPericope.idx).padStart(2, '0')}
                   </div>
                   <div style={{ fontSize: 'clamp(22px,3.5vw,30px)', fontWeight: 800, color: C.white, lineHeight: 1.3 }}>
                     {selectedPericope.titulo}
@@ -2356,15 +2365,15 @@ export function EsbocosPage() {
                 <AnimatePresence mode="wait">
                   {contentTab === 'quiasma' ? (
                     <motion.div key="quiasma" initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 10 }} transition={{ duration: 0.18 }}>
-                      <QuiasmaSection d={selectedDia} pericopeIdx={selectedPericope.idx} />
+                      <QuiasmaSection d={selectedDia} pericopeIdx={selectedPericope.idx} pt={pt} />
                     </motion.div>
                   ) : (
                     <motion.div key="familia" initial={{ opacity: 0, x: 10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -10 }} transition={{ duration: 0.18 }}>
                       {familiaConteudo ? (
-                        <ParaFamiliaSection d={selectedDia} pericopeIdx={selectedPericope.idx} conteudo={familiaConteudo} />
+                        <ParaFamiliaSection d={selectedDia} pericopeIdx={selectedPericope.idx} conteudo={familiaConteudo} pt={pt} />
                       ) : (
                         <div style={{ padding: 32, borderRadius: 16, border: '1px solid rgba(52,211,153,0.20)', background: 'rgba(12,40,28,0.6)', color: C.muted, fontSize: 13, textAlign: 'center' }}>
-                          Esboço familiar ainda não disponível para esta perícope. Em breve!
+                          {pt ? 'Esboço familiar ainda não disponível para esta perícope. Em breve!' : 'Family outline not yet available for this pericope. Coming soon!'}
                         </div>
                       )}
                     </motion.div>

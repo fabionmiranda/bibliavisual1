@@ -115,14 +115,14 @@ function CardLivro({ livro, status }: { livro: typeof livrosAT[0]; status: Statu
   );
 }
 
-function Secao({ titulo, livros, statuses }: { titulo: string; livros: typeof livrosAT; statuses: Record<string, Status | null> }) {
+function Secao({ titulo, livros, statuses, pt }: { titulo: string; livros: typeof livrosAT; statuses: Record<string, Status | null>; pt: boolean }) {
   if (!livros.length) return null;
   return (
     <div className="mb-20">
       <div className="flex items-center gap-4 mb-8">
         <div className="h-px flex-1 bg-white/5" />
         <h2 className="text-xs sm:text-sm font-black uppercase tracking-[0.25em] text-brand-blue whitespace-nowrap">
-          {titulo} — {livros.length} livros
+          {titulo} — {livros.length} {pt ? 'livros' : 'books'}
         </h2>
         <div className="h-px flex-1 bg-white/5" />
       </div>
@@ -145,7 +145,7 @@ function Secao({ titulo, livros, statuses }: { titulo: string; livros: typeof li
 
 interface UsuarioItem { id: number; username: string; role: string; created_at: number }
 
-function ModalUsuarios({ token, onClose }: { token: string; onClose: () => void }) {
+function ModalUsuarios({ token, onClose, pt }: { token: string; onClose: () => void; pt: boolean }) {
   const [usuarios,  setUsuarios]  = useState<UsuarioItem[]>([]);
   const [carregando, setCarregando] = useState(true);
   const [erro, setErro] = useState('');
@@ -159,7 +159,7 @@ function ModalUsuarios({ token, onClose }: { token: string; onClose: () => void 
       .then(r => r.json())
       .then(json => {
         if (json.ok) setUsuarios(json.users);
-        else setErro(json.error ?? 'Erro ao carregar usuários');
+        else setErro(json.error ?? 'Error loading users');
       })
       .catch(() => setErro('Erro de rede'))
       .finally(() => setCarregando(false));
@@ -187,7 +187,7 @@ function ModalUsuarios({ token, onClose }: { token: string; onClose: () => void 
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Users className="w-5 h-5" style={{ color: '#00d4ff' }} />
-            <h2 className="text-lg font-black uppercase tracking-wider text-white">Usuários</h2>
+            <h2 className="text-lg font-black uppercase tracking-wider text-white">{pt ? 'Usuários' : 'Users'}</h2>
           </div>
           <button
             onClick={onClose}
@@ -203,7 +203,7 @@ function ModalUsuarios({ token, onClose }: { token: string; onClose: () => void 
         {/* Conteúdo */}
         <div className="flex flex-col gap-2 overflow-y-auto flex-1">
           {carregando && (
-            <p className="text-center py-8" style={{ color: 'rgba(255,255,255,0.4)' }}>Carregando…</p>
+            <p className="text-center py-8" style={{ color: 'rgba(255,255,255,0.4)' }}>{pt ? 'Carregando…' : 'Loading…'}</p>
           )}
           {erro && (
             <p className="text-center py-8" style={{ color: '#ff2d55' }}>{erro}</p>
@@ -231,7 +231,7 @@ function ModalUsuarios({ token, onClose }: { token: string; onClose: () => void 
               <div className="flex-1 min-w-0">
                 <p className="font-black text-white text-sm truncate">{u.username}</p>
                 <p className="text-xs font-mono" style={{ color: 'rgba(255,255,255,0.35)' }}>
-                  {u.role} · desde {new Date(u.created_at * 1000).toLocaleDateString('pt-BR')}
+                  {u.role} · {pt ? 'desde' : 'since'} {new Date(u.created_at * 1000).toLocaleDateString(pt ? 'pt-BR' : 'en-US')}
                 </p>
               </div>
               <span
@@ -247,12 +247,15 @@ function ModalUsuarios({ token, onClose }: { token: string; onClose: () => void 
             </div>
           ))}
           {!carregando && !erro && usuarios.length === 0 && (
-            <p className="text-center py-8" style={{ color: 'rgba(255,255,255,0.3)' }}>Nenhum usuário encontrado</p>
+            <p className="text-center py-8" style={{ color: 'rgba(255,255,255,0.3)' }}>{pt ? 'Nenhum usuário encontrado' : 'No users found'}</p>
           )}
         </div>
 
         <p className="text-xs text-center" style={{ color: 'rgba(255,255,255,0.2)' }}>
-          {usuarios.length} usuário{usuarios.length !== 1 ? 's' : ''} cadastrado{usuarios.length !== 1 ? 's' : ''}
+          {pt
+            ? `${usuarios.length} usuário${usuarios.length !== 1 ? 's' : ''} cadastrado${usuarios.length !== 1 ? 's' : ''}`
+            : `${usuarios.length} registered user${usuarios.length !== 1 ? 's' : ''}`
+          }
         </p>
       </motion.div>
     </div>
@@ -261,6 +264,7 @@ function ModalUsuarios({ token, onClose }: { token: string; onClose: () => void 
 
 export default function AdminPage() {
   const [lang, setLang] = useState<'pt'|'en'>('pt');
+  const pt = lang === 'pt';
   const [busca, setBusca]             = useState('');
   const [statuses, setStatuses]       = useState<Record<string, Status | null>>({});
   const [modalUsuarios, setModalUsuarios] = useState(false);
@@ -305,20 +309,20 @@ export default function AdminPage() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mb-12 text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-blue/10 rounded-full border border-brand-blue/20 mb-6">
               <ShieldCheck className="w-4 h-4 text-brand-blue" />
-              <span className="text-[10px] font-black text-brand-blue uppercase tracking-[0.2em]">Área Administrativa</span>
+              <span className="text-[10px] font-black text-brand-blue uppercase tracking-[0.2em]">{pt ? 'Área Administrativa' : 'Admin Area'}</span>
             </div>
             <h1 className="text-4xl sm:text-6xl md:text-7xl font-display font-black uppercase tracking-tighter text-white mb-4">
-              GESTÃO DE <span className="text-brand-blue">ARQUIVOS</span>
+              {pt ? <>GESTÃO DE <span className="text-brand-blue">ARQUIVOS</span></> : <>FILE <span className="text-brand-blue">MANAGEMENT</span></>}
             </h1>
             <p className="text-white/40 text-base sm:text-lg max-w-xl mx-auto">
-              Selecione um livro para carregar os arquivos de estrutura e divisões quiásticas.
+              {pt ? 'Selecione um livro para carregar os arquivos de estrutura e divisões quiásticas.' : 'Select a book to upload the structure and chiastic division files.'}
             </p>
             <div className="mt-4 flex items-center justify-center gap-3 text-sm">
               <span className="flex items-center gap-1.5 text-green-400 font-bold">
-                <CheckCircle2 className="w-4 h-4" />{prontos} completos
+                <CheckCircle2 className="w-4 h-4" />{prontos} {pt ? 'completos' : 'complete'}
               </span>
               <span className="text-white/20">·</span>
-              <span className="text-white/40">{total - prontos} pendentes</span>
+              <span className="text-white/40">{total - prontos} {pt ? 'pendentes' : 'pending'}</span>
             </div>
 
             {/* Usuário logado + ações */}
@@ -359,7 +363,7 @@ export default function AdminPage() {
                   onMouseEnter={e => { e.currentTarget.style.background = 'rgba(0,212,255,0.12)'; }}
                   onMouseLeave={e => { e.currentTarget.style.background = 'rgba(0,212,255,0.07)'; }}
                 >
-                  <Users className="w-4 h-4" /> Usuários
+                  <Users className="w-4 h-4" /> {pt ? 'Usuários' : 'Users'}
                 </button>
               )}
 
@@ -374,7 +378,7 @@ export default function AdminPage() {
                 onMouseEnter={e => { e.currentTarget.style.background = 'rgba(255,45,85,0.12)'; }}
                 onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255,45,85,0.07)'; }}
               >
-                <LogOut className="w-4 h-4" /> Sair
+                <LogOut className="w-4 h-4" /> {pt ? 'Sair' : 'Sign Out'}
               </button>
             </div>
           </motion.div>
@@ -383,19 +387,19 @@ export default function AdminPage() {
           <div className="flex flex-wrap items-center justify-center gap-3 mb-10">
             <div className="flex items-center gap-2 px-4 py-2 rounded-xl bg-white/[0.03] border border-white/8">
               <span className="px-2 py-0.5 rounded-md text-[11px] font-black border bg-green-500/15 border-green-500/40 text-green-400">E</span>
-              <span className="text-sm font-semibold text-white/60">Estrutura Literaria</span>
+              <span className="text-sm font-semibold text-white/60">{pt ? 'Estrutura Literaria' : 'Literary Structure'}</span>
             </div>
             <div className="flex items-center gap-2 px-4 py-2 rounded-xl bg-white/[0.03] border border-white/8">
               <span className="px-2 py-0.5 rounded-md text-[11px] font-black border bg-green-500/15 border-green-500/40 text-green-400">Q</span>
-              <span className="text-sm font-semibold text-white/60">Divisoes Quiasticas Espelhadas</span>
+              <span className="text-sm font-semibold text-white/60">{pt ? 'Divisoes Quiasticas Espelhadas' : 'Mirrored Chiastic Divisions'}</span>
             </div>
             <div className="flex items-center gap-2 px-4 py-2 rounded-xl bg-white/[0.03] border border-white/8">
               <span className="px-2 py-0.5 rounded-md text-[11px] font-black border bg-green-500/15 border-green-500/40 text-green-400">D</span>
-              <span className="text-sm font-semibold text-white/60">Diagramas por Divisao</span>
+              <span className="text-sm font-semibold text-white/60">{pt ? 'Diagramas por Divisao' : 'Diagrams per Division'}</span>
             </div>
             <div className="flex items-center gap-2 px-4 py-2 rounded-xl bg-white/[0.03] border border-white/8">
               <span className="px-2 py-0.5 rounded-md text-[11px] font-black border bg-white/5 border-white/10 text-white/25">·</span>
-              <span className="text-sm font-semibold text-white/30">Pendente</span>
+              <span className="text-sm font-semibold text-white/30">{pt ? 'Pendente' : 'Pending'}</span>
             </div>
           </div>
 
@@ -412,7 +416,7 @@ export default function AdminPage() {
               type="text"
               value={busca}
               onChange={e => setBusca(e.target.value)}
-              placeholder="Pesquisar livro…"
+              placeholder={pt ? 'Pesquisar livro…' : 'Search book…'}
               className="w-full bg-white/5 border border-white/10 focus:border-brand-blue/60 focus:bg-white/[0.07] rounded-2xl pl-12 sm:pl-14 pr-12 py-4 sm:py-5 text-base sm:text-xl text-white placeholder-white/25 outline-none transition-all font-medium"
             />
             {busca && (
@@ -422,8 +426,8 @@ export default function AdminPage() {
             )}
           </motion.div>
 
-          <Secao titulo="Antigo Testamento" livros={atFiltrado} statuses={statuses} />
-          <Secao titulo="Novo Testamento"   livros={ntFiltrado} statuses={statuses} />
+          <Secao titulo={pt ? 'Antigo Testamento' : 'Old Testament'} livros={atFiltrado} statuses={statuses} pt={pt} />
+          <Secao titulo={pt ? 'Novo Testamento' : 'New Testament'}   livros={ntFiltrado} statuses={statuses} pt={pt} />
 
         </div>
       </section>
@@ -431,7 +435,7 @@ export default function AdminPage() {
       {/* Modal usuários */}
       <AnimatePresence>
         {modalUsuarios && (
-          <ModalUsuarios token={token ?? ''} onClose={() => setModalUsuarios(false)} />
+          <ModalUsuarios token={token ?? ''} onClose={() => setModalUsuarios(false)} pt={pt} />
         )}
       </AnimatePresence>
       <FlagToggle lang={lang} setLang={setLang} />

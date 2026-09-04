@@ -22,121 +22,178 @@ interface AreaCard {
   badge?: string;    // badge opcional
 }
 
-const AREAS: AreaCard[] = [
-  {
-    slug: 'reformada',
-    titulo: 'Teologia Reformada',
-    descricao: 'Os fundamentos da tradição reformada: soberania de Deus, graça soberana, solas da Reforma e os grandes teólogos que moldaram a fé protestante.',
-    icon: '⛪',
-    cor: '#00D4FF',
-    tags: ['Solas da Reforma', 'Soberania de Deus', 'Calvino', 'Graça', 'Eleição', 'Confissões'],
-  },
-  {
-    slug: 'sistematica',
-    titulo: 'Teologia Sistemática',
-    descricao: 'O estudo ordenado das doutrinas cristãs — de Deus, da criação, do homem, de Cristo, da salvação, da Igreja e das últimas coisas. Inclui Credos e Confissões.',
-    icon: '📐',
-    cor: '#a78bfa',
-    tags: ['Teologia Própria', 'Cristologia', 'Soteriologia', 'Eclesiologia', 'Credos', 'Confissões'],
-  },
-  {
-    slug: 'biblica',
-    titulo: 'Teologia Bíblica',
-    descricao: 'O desenvolvimento progressivo da revelação divina ao longo das Escrituras — da promessa ao cumprimento, do Éden à Nova Criação.',
-    icon: '📖',
-    cor: '#34d399',
-    tags: ['Redemptio-Historia', 'Tipologia', 'Profecia', 'Cumprimento', 'Canon', 'Narrativa Bíblica'],
-  },
-  {
-    slug: 'exegetica',
-    titulo: 'Teologia Exegética',
-    descricao: 'Métodos e princípios de interpretação das Escrituras: hermenêutica, análise gramatical-histórica, línguas bíblicas e exegese aplicada.',
-    icon: '🔍',
-    cor: '#f472b6',
-    tags: ['Hermenêutica', 'Grego Bíblico', 'Hebraico', 'Análise Textual', 'Crítica Textual', 'Exegese'],
-  },
-  {
-    slug: 'historica',
-    titulo: 'Teologia Histórica',
-    descricao: 'A trajetória do pensamento cristão através dos séculos: patrística, escolástica medieval, Reforma e desenvolvimento doutrinal moderno.',
-    icon: '🏛️',
-    cor: '#fb923c',
-    tags: ['Patrística', 'Concílios', 'Escolástica', 'Reforma', 'Pós-Reforma', 'Modernidade'],
-  },
-  {
-    slug: 'pastoral',
-    titulo: 'Teologia Pastoral-Prática',
-    descricao: 'A teologia no serviço da Igreja: pregação, aconselhamento bíblico, liderança pastoral, liturgia, sacramentos e cuidado das almas.',
-    icon: '🌿',
-    cor: '#4ade80',
-    tags: ['Homilética', 'Aconselhamento', 'Liderança', 'Liturgia', 'Sacramentos', 'Cura de Almas'],
-  },
-  {
-    slug: 'pacto',
-    titulo: 'Teologia do Pacto',
-    descricao: 'A estrutura pactual da revelação bíblica: o Pacto das Obras, da Graça e da Redenção como chave hermenêutica das Escrituras.',
-    icon: '🤝',
-    cor: '#38bdf8',
-    tags: ['Pacto da Graça', 'Pacto das Obras', 'Aliança', 'Lei e Evangelho', 'Adão e Cristo', 'Israel e Igreja'],
-  },
-  {
-    slug: 'contemporanea',
-    titulo: 'Teologia Contemporânea',
-    descricao: 'Os grandes movimentos teológicos dos séculos XX e XXI: Neo-ortodoxia, Teologia da Libertação, Pós-liberalismo e o diálogo com a cultura atual.',
-    icon: '🌐',
-    cor: '#c084fc',
-    tags: ['Barth', 'Pós-liberalismo', 'Teologia Narrativa', 'Feminismo Teológico', 'Abertura Divina', 'Pós-modernidade'],
-  },
-  {
-    slug: 'missional',
-    titulo: 'Teologia Missional',
-    descricao: 'A missão como atributo do próprio Deus — Missio Dei, encarnação, plantio de igrejas, teologia das religiões e a Igreja no mundo. Inclui Missões Urbanas e Evangelização em Cidades.',
-    icon: '🌍',
-    cor: '#86efac',
-    tags: ['Missio Dei', 'Missões Urbanas', 'Evangelização em Cidades', 'Plantio de Igrejas', 'Contextualização', 'Encarnação', 'Religiões'],
-  },
-  {
-    slug: 'educacional',
-    titulo: 'Teologia Educacional',
-    descricao: 'A fé cristã como fundamento de toda educação — cosmovisão bíblica, formação integral da pessoa, família, escola e cultura.',
-    icon: '🏫',
-    cor: '#f9a8d4',
-    tags: ['Educação Cristã', 'Cosmovisão Cristã', 'Educação Clássica', 'Família e Escola', 'Formação Integral', 'Paideia', 'Cultura'],
-  },
-  {
-    slug: 'digital',
-    titulo: 'Teologia Digital',
-    descricao: 'Como a fé cristã interpreta e responde ao mundo digital — inteligência artificial, ética tecnológica, humanidade, imagem de Deus e cultura digital.',
-    icon: '💻',
-    cor: '#67e8f9',
-    tags: ['Inteligência Artificial', 'Ética Digital', 'Imago Dei', 'Transhumanismo', 'Redes Sociais', 'Cultura Digital'],
-  },
-  {
-    slug: 'aulas-avancadas',
-    titulo: 'Aulas Avançadas',
-    descricao: 'Formação teológica progressiva em módulos avançados — organizados por categorias, da epistemologia à história da razão teológica.',
-    icon: '🎓',
-    cor: '#00D4FF',
-    tags: ['Epistemologia', 'História da Teologia', 'Revelação', 'Autoridade Bíblica', 'Método'],
-    rota: '/teologia/aulas',
-    badge: `${ARTIGOS_TEOLOGIA.filter(a => a.status === 'rascunho').length} módulos`,
-  },
-  {
-    slug: 'artigos',
-    titulo: 'Artigos',
-    descricao: 'Textos publicados para leitura e aprofundamento nas grandes questões da fé cristã — com rigor teológico e linguagem acessível.',
-    icon: '📝',
-    cor: '#B46FFF',
-    tags: ['Textos completos', 'Vanhoozer', 'Drama da Doutrina', 'Publicados'],
-    rota: '/teologia/artigos',
-    badge: `${totalArtigos} publicado${totalArtigos !== 1 ? 's' : ''}`,
-  },
-];
+function getAreas(pt: boolean): AreaCard[] {
+  const modulosCount = ARTIGOS_TEOLOGIA.filter(a => a.status === 'rascunho').length;
+  return [
+    {
+      slug: 'reformada',
+      titulo: pt ? 'Teologia Reformada' : 'Reformed Theology',
+      descricao: pt
+        ? 'Os fundamentos da tradição reformada: soberania de Deus, graça soberana, solas da Reforma e os grandes teólogos que moldaram a fé protestante.'
+        : 'The foundations of the Reformed tradition: sovereignty of God, sovereign grace, the Reformation solas and the great theologians who shaped Protestant faith.',
+      icon: '⛪',
+      cor: '#00D4FF',
+      tags: pt
+        ? ['Solas da Reforma', 'Soberania de Deus', 'Calvino', 'Graça', 'Eleição', 'Confissões']
+        : ['Reformation Solas', 'Sovereignty of God', 'Calvin', 'Grace', 'Election', 'Confessions'],
+    },
+    {
+      slug: 'sistematica',
+      titulo: pt ? 'Teologia Sistemática' : 'Systematic Theology',
+      descricao: pt
+        ? 'O estudo ordenado das doutrinas cristãs — de Deus, da criação, do homem, de Cristo, da salvação, da Igreja e das últimas coisas. Inclui Credos e Confissões.'
+        : 'The ordered study of Christian doctrines — God, creation, humanity, Christ, salvation, the Church and last things. Includes Creeds and Confessions.',
+      icon: '📐',
+      cor: '#a78bfa',
+      tags: pt
+        ? ['Teologia Própria', 'Cristologia', 'Soteriologia', 'Eclesiologia', 'Credos', 'Confissões']
+        : ['Theology Proper', 'Christology', 'Soteriology', 'Ecclesiology', 'Creeds', 'Confessions'],
+    },
+    {
+      slug: 'biblica',
+      titulo: pt ? 'Teologia Bíblica' : 'Biblical Theology',
+      descricao: pt
+        ? 'O desenvolvimento progressivo da revelação divina ao longo das Escrituras — da promessa ao cumprimento, do Éden à Nova Criação.'
+        : 'The progressive development of divine revelation throughout Scripture — from promise to fulfillment, from Eden to the New Creation.',
+      icon: '📖',
+      cor: '#34d399',
+      tags: pt
+        ? ['Redemptio-Historia', 'Tipologia', 'Profecia', 'Cumprimento', 'Canon', 'Narrativa Bíblica']
+        : ['Redemptio-Historia', 'Typology', 'Prophecy', 'Fulfillment', 'Canon', 'Biblical Narrative'],
+    },
+    {
+      slug: 'exegetica',
+      titulo: pt ? 'Teologia Exegética' : 'Exegetical Theology',
+      descricao: pt
+        ? 'Métodos e princípios de interpretação das Escrituras: hermenêutica, análise gramatical-histórica, línguas bíblicas e exegese aplicada.'
+        : 'Methods and principles of biblical interpretation: hermeneutics, grammatical-historical analysis, biblical languages and applied exegesis.',
+      icon: '🔍',
+      cor: '#f472b6',
+      tags: pt
+        ? ['Hermenêutica', 'Grego Bíblico', 'Hebraico', 'Análise Textual', 'Crítica Textual', 'Exegese']
+        : ['Hermeneutics', 'Biblical Greek', 'Hebrew', 'Textual Analysis', 'Textual Criticism', 'Exegesis'],
+    },
+    {
+      slug: 'historica',
+      titulo: pt ? 'Teologia Histórica' : 'Historical Theology',
+      descricao: pt
+        ? 'A trajetória do pensamento cristão através dos séculos: patrística, escolástica medieval, Reforma e desenvolvimento doutrinal moderno.'
+        : 'The trajectory of Christian thought through the centuries: patristics, medieval scholasticism, the Reformation and modern doctrinal development.',
+      icon: '🏛️',
+      cor: '#fb923c',
+      tags: pt
+        ? ['Patrística', 'Concílios', 'Escolástica', 'Reforma', 'Pós-Reforma', 'Modernidade']
+        : ['Patristics', 'Councils', 'Scholasticism', 'Reformation', 'Post-Reformation', 'Modernity'],
+    },
+    {
+      slug: 'pastoral',
+      titulo: pt ? 'Teologia Pastoral-Prática' : 'Pastoral-Practical Theology',
+      descricao: pt
+        ? 'A teologia no serviço da Igreja: pregação, aconselhamento bíblico, liderança pastoral, liturgia, sacramentos e cuidado das almas.'
+        : 'Theology in service of the Church: preaching, biblical counseling, pastoral leadership, liturgy, sacraments and care of souls.',
+      icon: '🌿',
+      cor: '#4ade80',
+      tags: pt
+        ? ['Homilética', 'Aconselhamento', 'Liderança', 'Liturgia', 'Sacramentos', 'Cura de Almas']
+        : ['Homiletics', 'Counseling', 'Leadership', 'Liturgy', 'Sacraments', 'Cure of Souls'],
+    },
+    {
+      slug: 'pacto',
+      titulo: pt ? 'Teologia do Pacto' : 'Covenant Theology',
+      descricao: pt
+        ? 'A estrutura pactual da revelação bíblica: o Pacto das Obras, da Graça e da Redenção como chave hermenêutica das Escrituras.'
+        : 'The covenantal structure of biblical revelation: the Covenant of Works, Grace and Redemption as hermeneutical keys to Scripture.',
+      icon: '🤝',
+      cor: '#38bdf8',
+      tags: pt
+        ? ['Pacto da Graça', 'Pacto das Obras', 'Aliança', 'Lei e Evangelho', 'Adão e Cristo', 'Israel e Igreja']
+        : ['Covenant of Grace', 'Covenant of Works', 'Alliance', 'Law and Gospel', 'Adam and Christ', 'Israel and Church'],
+    },
+    {
+      slug: 'contemporanea',
+      titulo: pt ? 'Teologia Contemporânea' : 'Contemporary Theology',
+      descricao: pt
+        ? 'Os grandes movimentos teológicos dos séculos XX e XXI: Neo-ortodoxia, Teologia da Libertação, Pós-liberalismo e o diálogo com a cultura atual.'
+        : 'The major theological movements of the 20th and 21st centuries: Neo-orthodoxy, Liberation Theology, Post-liberalism and dialogue with contemporary culture.',
+      icon: '🌐',
+      cor: '#c084fc',
+      tags: pt
+        ? ['Barth', 'Pós-liberalismo', 'Teologia Narrativa', 'Feminismo Teológico', 'Abertura Divina', 'Pós-modernidade']
+        : ['Barth', 'Post-liberalism', 'Narrative Theology', 'Feminist Theology', 'Open Theism', 'Postmodernity'],
+    },
+    {
+      slug: 'missional',
+      titulo: pt ? 'Teologia Missional' : 'Missional Theology',
+      descricao: pt
+        ? 'A missão como atributo do próprio Deus — Missio Dei, encarnação, plantio de igrejas, teologia das religiões e a Igreja no mundo. Inclui Missões Urbanas e Evangelização em Cidades.'
+        : 'Mission as an attribute of God himself — Missio Dei, incarnation, church planting, theology of religions and the Church in the world. Includes Urban Missions and City Evangelism.',
+      icon: '🌍',
+      cor: '#86efac',
+      tags: pt
+        ? ['Missio Dei', 'Missões Urbanas', 'Evangelização em Cidades', 'Plantio de Igrejas', 'Contextualização', 'Encarnação', 'Religiões']
+        : ['Missio Dei', 'Urban Missions', 'City Evangelism', 'Church Planting', 'Contextualization', 'Incarnation', 'Religions'],
+    },
+    {
+      slug: 'educacional',
+      titulo: pt ? 'Teologia Educacional' : 'Educational Theology',
+      descricao: pt
+        ? 'A fé cristã como fundamento de toda educação — cosmovisão bíblica, formação integral da pessoa, família, escola e cultura.'
+        : 'Christian faith as the foundation of all education — biblical worldview, integral formation of the person, family, school and culture.',
+      icon: '🏫',
+      cor: '#f9a8d4',
+      tags: pt
+        ? ['Educação Cristã', 'Cosmovisão Cristã', 'Educação Clássica', 'Família e Escola', 'Formação Integral', 'Paideia', 'Cultura']
+        : ['Christian Education', 'Christian Worldview', 'Classical Education', 'Family and School', 'Integral Formation', 'Paideia', 'Culture'],
+    },
+    {
+      slug: 'digital',
+      titulo: pt ? 'Teologia Digital' : 'Digital Theology',
+      descricao: pt
+        ? 'Como a fé cristã interpreta e responde ao mundo digital — inteligência artificial, ética tecnológica, humanidade, imagem de Deus e cultura digital.'
+        : 'How Christian faith interprets and responds to the digital world — artificial intelligence, technological ethics, humanity, image of God and digital culture.',
+      icon: '💻',
+      cor: '#67e8f9',
+      tags: pt
+        ? ['Inteligência Artificial', 'Ética Digital', 'Imago Dei', 'Transhumanismo', 'Redes Sociais', 'Cultura Digital']
+        : ['Artificial Intelligence', 'Digital Ethics', 'Imago Dei', 'Transhumanism', 'Social Media', 'Digital Culture'],
+    },
+    {
+      slug: 'aulas-avancadas',
+      titulo: pt ? 'Aulas Avançadas' : 'Advanced Classes',
+      descricao: pt
+        ? 'Formação teológica progressiva em módulos avançados — organizados por categorias, da epistemologia à história da razão teológica.'
+        : 'Progressive theological formation in advanced modules — organized by categories, from epistemology to the history of theological reason.',
+      icon: '🎓',
+      cor: '#00D4FF',
+      tags: pt
+        ? ['Epistemologia', 'História da Teologia', 'Revelação', 'Autoridade Bíblica', 'Método']
+        : ['Epistemology', 'History of Theology', 'Revelation', 'Biblical Authority', 'Method'],
+      rota: '/teologia/aulas',
+      badge: pt ? `${modulosCount} módulos` : `${modulosCount} modules`,
+    },
+    {
+      slug: 'artigos',
+      titulo: pt ? 'Artigos' : 'Articles',
+      descricao: pt
+        ? 'Textos publicados para leitura e aprofundamento nas grandes questões da fé cristã — com rigor teológico e linguagem acessível.'
+        : 'Published texts for reading and deepening study of the great questions of Christian faith — with theological rigor and accessible language.',
+      icon: '📝',
+      cor: '#B46FFF',
+      tags: pt
+        ? ['Textos completos', 'Vanhoozer', 'Drama da Doutrina', 'Publicados']
+        : ['Complete texts', 'Vanhoozer', 'Drama of Doctrine', 'Published'],
+      rota: '/teologia/artigos',
+      badge: pt
+        ? `${totalArtigos} publicado${totalArtigos !== 1 ? 's' : ''}`
+        : `${totalArtigos} published`,
+    },
+  ];
+}
 
 
 // ── Componente card ──────────────────────────────────────────────────────────
 
-function AreaCardItem({ area }: { area: AreaCard }) {
+function AreaCardItem({ area, pt }: { area: AreaCard; pt: boolean }) {
   const navigate = useNavigate();
   const isComingSoon = !area.rota;
 
@@ -218,7 +275,7 @@ function AreaCardItem({ area }: { area: AreaCard }) {
               background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.10)',
               borderRadius: 8, padding: '3px 9px',
             }}>
-              Em breve
+              {pt ? 'Em breve' : 'Coming soon'}
             </span>
           )}
         </div>
@@ -270,7 +327,10 @@ function AreaCardItem({ area }: { area: AreaCard }) {
         fontSize: 11, fontWeight: 900, letterSpacing: '0.18em',
         textTransform: 'uppercase', color: area.cor,
       }}>
-        {isComingSoon ? 'Explorar área' : 'Acessar'} <span style={{ fontSize: 14 }}>→</span>
+        {isComingSoon
+          ? (pt ? 'Explorar área' : 'Explore area')
+          : (pt ? 'Acessar' : 'Access')}
+        {' '}<span style={{ fontSize: 14 }}>→</span>
       </div>
     </button>
   );
@@ -281,6 +341,7 @@ function AreaCardItem({ area }: { area: AreaCard }) {
 export default function TeologiaPage() {
   const [lang, setLang] = useState<'pt'|'en'>('pt');
   const pt = lang === 'pt';
+  const AREAS = getAreas(pt);
   const areasAcademic = AREAS.slice(0, 11);
   const areasFixed    = AREAS.slice(11);
 
@@ -332,7 +393,7 @@ export default function TeologiaPage() {
             alignItems: 'stretch',
           }}>
             {areasAcademic.map(area => (
-              <AreaCardItem key={area.slug} area={area} />
+              <AreaCardItem key={area.slug} area={area} pt={pt} />
             ))}
           </div>
         </div>
@@ -352,7 +413,7 @@ export default function TeologiaPage() {
             alignItems: 'stretch',
           }}>
             {areasFixed.map(area => (
-              <AreaCardItem key={area.slug} area={area} />
+              <AreaCardItem key={area.slug} area={area} pt={pt} />
             ))}
           </div>
         </div>
