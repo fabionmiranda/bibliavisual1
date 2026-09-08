@@ -380,7 +380,7 @@ function bloco(dc: DiaCompacto): DiaConfessional {
       <p style="margin:0;font-size:clamp(15px,1.9vw,17px);color:#f0eeff;font-weight:500;line-height:1.90;">${dc.reforco}</p>
     </div>
   </div>
-  <div style="margin:0 0 28px;border-radius:16px;background:rgba(251,191,36,0.08);border:1px solid rgba(251,191,36,0.32);overflow:hidden;">
+  ${dc.aplicacoes ? `<div style="margin:0 0 28px;border-radius:16px;background:rgba(251,191,36,0.08);border:1px solid rgba(251,191,36,0.32);overflow:hidden;">
     <div style="padding:10px 20px;background:rgba(251,191,36,0.14);border-bottom:1px solid rgba(251,191,36,0.22);display:flex;align-items:center;gap:10px;">
       <span style="font-size:18px;">✅</span>
       <span style="font-size:11px;font-weight:900;letter-spacing:0.20em;text-transform:uppercase;color:#ffd436;">Aplicações para a Vida</span>
@@ -393,7 +393,7 @@ function bloco(dc: DiaCompacto): DiaConfessional {
       <div style="display:flex;align-items:flex-start;gap:12px;"><span style="font-size:20px;flex-shrink:0;">👪</span><div><strong style="color:#ffd436;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;">Mulheres</strong><p style="margin:6px 0 0;font-size:clamp(14px,1.8vw,16px);color:#f0eeff;font-weight:500;line-height:1.80;">${dc.aplicacoes.mulheres}</p></div></div>
       <div style="display:flex;align-items:flex-start;gap:12px;"><span style="font-size:20px;flex-shrink:0;">⛪</span><div><strong style="color:#ffd436;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;">Igreja</strong><p style="margin:6px 0 0;font-size:clamp(14px,1.8vw,16px);color:#f0eeff;font-weight:500;line-height:1.80;">${dc.aplicacoes.igreja}</p></div></div>
     </div>
-  </div>
+  </div>` : ''}
   <div style="margin:0 0 28px;border-radius:16px;background:rgba(167,139,250,0.10);border:1px solid rgba(167,139,250,0.32);padding:clamp(16px,3vw,22px);">
     <div style="font-size:11px;font-weight:900;letter-spacing:0.20em;text-transform:uppercase;color:#d4baff;margin-bottom:12px;">🙏 Oração</div>
     <p style="margin:0;font-size:clamp(15px,1.9vw,17px);color:#f0eeff;font-weight:500;line-height:1.90;font-style:italic;">${dc.oracao}</p>
