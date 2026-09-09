@@ -1337,6 +1337,221 @@ function ParaPregarSection({ d, pericopeIdx, conteudo, sermonTitulo, sermonPergu
   );
 }
 
+// ─── Infográfico Card 1 ──────────────────────────────────────────────
+function InfograficoSection({ pt }: { pt: boolean }) {
+  const MOVES = [
+    {
+      num: 'I', sym: 'A ↔ A\'', ref: 'Gn 1:3–5 / 1:14–19',
+      title: pt ? 'A Palavra que Separa' : 'The Word that Separates',
+      sub: pt ? 'Luz, Espaço e Tempo como Domínio do Soberano' : 'Light, Space and Time as the Sovereign\'s Domain',
+      emoji: '☀️',
+      key: pt ? 'badal (separar) aparece 5×. Luminares governam moʿadim — o calendário litúrgico nasce na criação.' : 'badal (separate) appears 5×. Luminaries govern moʿadim — the liturgical calendar is born at creation.',
+      app: pt ? 'Submeta calendário, afetos e prioridades à Palavra.' : 'Submit your calendar, affections and priorities to the Word.',
+      cor: 'rgba(80,200,255,1)', corL: 'rgba(80,200,255,0.10)', corB: 'rgba(80,200,255,0.30)',
+    },
+    {
+      num: 'II', sym: 'B ↔ B\'', ref: 'Gn 1:6–10 / 1:20–23',
+      title: pt ? 'A Palavra que Forma e Enche' : 'The Word that Forms and Fills',
+      sub: pt ? 'Espaços Ordenados, Vida Multiplicada' : 'Ordered Spaces, Multiplied Life',
+      emoji: '🌊',
+      key: pt ? 'Dias 1–3: domínios formados. Dias 4–6: preenchidos. barak (bênção) lançado pela 1ª vez sobre seres vivos.' : 'Days 1–3: domains formed. Days 4–6: filled. barak (blessing) first cast on living beings.',
+      app: pt ? 'A bênção segue a estrutura que Ele estabelece — não a urgência que nós impomos.' : 'Blessing follows the structure He establishes — not our urgency.',
+      cor: 'rgba(180,120,255,1)', corL: 'rgba(180,120,255,0.10)', corB: 'rgba(180,120,255,0.30)',
+    },
+    {
+      num: 'III', sym: 'C ↔ C\'', ref: 'Gn 1:11–13 / 1:24–31',
+      title: pt ? 'A Palavra que Delega' : 'The Word that Delegates',
+      sub: pt ? 'O Homem como Imagem Governante' : 'Man as Governing Image',
+      emoji: '👑',
+      key: pt ? 'tselem + demut habilitam radah (domínio vicário). Deus inspeciona e declara tov meod.' : 'tselem + demut enable radah (vicarious dominion). God inspects and declares tov meod.',
+      app: pt ? 'Você governa como senhor absoluto ou como mordomo responsável?' : 'Do you rule as an absolute lord or as a responsible steward?',
+      cor: 'rgba(100,220,160,1)', corL: 'rgba(100,220,160,0.10)', corB: 'rgba(100,220,160,0.30)',
+    },
+    {
+      num: 'IV', sym: 'CENTRO ◉', ref: 'Gn 2:1–4a',
+      title: pt ? 'A Palavra que Consagra' : 'The Word that Consecrates',
+      sub: pt ? 'O Descanso como Telos da Criação' : 'Rest as the Telos of Creation',
+      emoji: '✨',
+      key: pt ? 'qadash (santificar) lançado pela 1ª vez sobre o TEMPO — não sobre espaço ou objeto. Criação e culto convergem.' : 'qadash (sanctify) first cast on TIME — not space or object. Creation and worship converge.',
+      app: pt ? 'Sua semana corre para o trabalho como finalidade ou para o culto como ápice?' : 'Does your week run toward work as its end, or toward worship as its apex?',
+      cor: 'rgba(255,200,80,1)', corL: 'rgba(255,200,80,0.12)', corB: 'rgba(255,200,80,0.35)',
+    },
+  ];
+
+  return (
+    <div style={{ paddingBottom: 48 }}>
+
+      {/* ── HERO ── */}
+      <div style={{ borderRadius: 20, background: 'linear-gradient(135deg,rgba(255,200,80,0.12) 0%,rgba(80,200,255,0.08) 100%)', border: '1px solid rgba(255,200,80,0.30)', padding: 'clamp(24px,4vw,36px)', marginBottom: 28, textAlign: 'center' }}>
+        <div style={{ fontSize: 'clamp(48px,8vw,72px)', lineHeight: 1, marginBottom: 10, filter: 'drop-shadow(0 0 20px rgba(255,200,80,0.45))' }}>🌌</div>
+        <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase', color: 'rgba(255,200,80,0.80)', marginBottom: 8 }}>Gênesis 1:1 – 2:4a · Perícope 01 · {pt ? 'Dia 1' : 'Day 1'}</div>
+        <div style={{ fontSize: 'clamp(20px,3.5vw,30px)', fontWeight: 900, color: '#fff', lineHeight: 1.25, marginBottom: 8 }}>
+          {pt ? 'Do Caos ao Descanso' : 'From Chaos to Rest'}
+        </div>
+        <div style={{ fontSize: 'clamp(13px,2vw,16px)', color: 'rgba(255,255,255,0.55)', fontStyle: 'italic', marginBottom: 16 }}>
+          {pt ? 'A Palavra que Cria, Ordena e Consagra' : 'The Word that Creates, Orders and Consecrates'}
+        </div>
+        <div style={{ display: 'inline-flex', flexWrap: 'wrap', gap: 8, justifyContent: 'center' }}>
+          {['Pentateuco', pt ? 'Narrativa Fundacional' : 'Foundational Narrative', pt ? 'Teologia da Criação' : 'Creation Theology'].map(t => (
+            <span key={t} style={{ fontSize: 11, fontWeight: 700, padding: '3px 12px', borderRadius: 99, background: 'rgba(255,200,80,0.12)', border: '1px solid rgba(255,200,80,0.25)', color: 'rgba(255,200,80,0.85)' }}>{t}</span>
+          ))}
+        </div>
+      </div>
+
+      {/* ── BIG IDEA ── */}
+      <div style={{ borderRadius: 16, background: 'linear-gradient(135deg,rgba(255,200,80,0.10),rgba(80,200,255,0.07))', border: '1.5px solid rgba(255,200,80,0.35)', padding: '20px 24px', marginBottom: 20 }}>
+        <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,200,80,0.85)', marginBottom: 8 }}>💡 {pt ? 'Big Idea · Tema Central' : 'Big Idea · Central Theme'}</div>
+        <p style={{ fontSize: 'clamp(14px,2vw,17px)', fontWeight: 800, color: '#fff', lineHeight: 1.70, margin: 0 }}>
+          {pt
+            ? 'O Deus soberano, pela Sua Palavra criadora e organizadora, transforma o caos (תֹהוּ וָבֹהוּ) em cosmos sagrado — revelando que a criação é o palco preparado para o drama da redenção.'
+            : 'The sovereign God, by His creative and organizing Word, transforms chaos (tohu vavohu) into sacred cosmos — revealing that creation is the stage prepared for the drama of redemption.'}
+        </p>
+      </div>
+
+      {/* ── PERGUNTA + PROPOSIÇÃO ── */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))', gap: 14, marginBottom: 28 }}>
+        <div style={{ borderRadius: 14, background: 'rgba(255,100,100,0.06)', border: '1px solid rgba(255,100,100,0.22)', padding: '18px 20px' }}>
+          <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,140,140,0.85)', marginBottom: 8 }}>❓ {pt ? 'Pergunta Central' : 'Central Question'}</div>
+          <p style={{ fontSize: 14, color: 'rgba(255,210,210,0.90)', lineHeight: 1.70, fontStyle: 'italic', margin: 0 }}>
+            {pt
+              ? '"Como a Palavra soberana de Deus pode transformar o caos da nossa vida em cosmos consagrado?"'
+              : '"How can God\'s sovereign Word transform the chaos of our lives into consecrated cosmos?"'}
+          </p>
+        </div>
+        <div style={{ borderRadius: 14, background: 'rgba(255,200,80,0.08)', border: '1px solid rgba(255,200,80,0.30)', padding: '18px 20px' }}>
+          <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,200,80,0.85)', marginBottom: 8 }}>⚡ {pt ? 'Proposição' : 'Proposition'}</div>
+          <p style={{ fontSize: 14, fontWeight: 700, color: '#fff', lineHeight: 1.70, margin: 0 }}>
+            {pt
+              ? 'A Palavra soberana de Deus transforma todo caos em cosmos consagrado — fundamento da nossa esperança redentor-criacional.'
+              : 'God\'s sovereign Word transforms all chaos into consecrated cosmos — the foundation of our redemptive-creational hope.'}
+          </p>
+        </div>
+      </div>
+
+      {/* ── QUIASMA VISUAL ── */}
+      <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.08)', padding: 'clamp(18px,3vw,28px)', marginBottom: 28 }}>
+        <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.45)', marginBottom: 20, textAlign: 'center' }}>
+          🔄 {pt ? 'Estrutura Quiástica · Gênesis 1–2' : 'Chiastic Structure · Genesis 1–2'}
+        </div>
+        {[
+          { sym: 'P',   ref: 'Gn 1:1–2',   label: pt ? 'Prólogo: O Soberano e o Caos Primordial' : 'Prologue: The Sovereign and Primordial Chaos',   cor: 'rgba(255,200,80,1)',  indent: 0,  emoji: '🌌' },
+          { sym: 'A',   ref: 'Gn 1:3–5',   label: pt ? 'Luz separada das trevas — Dia 1' : 'Light separated from darkness — Day 1',                  cor: 'rgba(80,200,255,1)',  indent: 1,  emoji: '💡' },
+          { sym: 'B',   ref: 'Gn 1:6–8',   label: pt ? 'Expansão separa as águas — Dia 2' : 'Expanse separates the waters — Day 2',                   cor: 'rgba(180,120,255,1)', indent: 2,  emoji: '🌊' },
+          { sym: 'C',   ref: 'Gn 1:9–13',  label: pt ? 'Terra e vegetação emergem — Dia 3' : 'Land and vegetation emerge — Day 3',                    cor: 'rgba(100,220,160,1)', indent: 3,  emoji: '🌿' },
+          { sym: "A'",  ref: 'Gn 1:14–19', label: pt ? '⭐ Luminares governam a luz — Dia 4 (EIXO)' : '⭐ Luminaries govern light — Day 4 (AXIS)',    cor: 'rgba(80,200,255,1)',  indent: 2,  emoji: '🌟' },
+          { sym: "B'",  ref: 'Gn 1:20–23', label: pt ? 'Criaturas preenchem águas/ar — Dia 5' : 'Creatures fill water/air — Day 5',                   cor: 'rgba(180,120,255,1)', indent: 2,  emoji: '🐦' },
+          { sym: "C'",  ref: 'Gn 1:24–31', label: pt ? 'Criaturas terrestres e o Homem — Dia 6' : 'Land creatures and Man — Day 6',                   cor: 'rgba(100,220,160,1)', indent: 1,  emoji: '👑' },
+          { sym: "P'",  ref: 'Gn 2:1–4a',  label: pt ? 'Epílogo: O Soberano repousa e consagra' : 'Epilogue: The Sovereign rests and consecrates',     cor: 'rgba(255,200,80,1)',  indent: 0,  emoji: '✨' },
+        ].map((row, i) => (
+          <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 6, paddingLeft: row.indent * 20 }}>
+            <div style={{ flexShrink: 0, width: 28, textAlign: 'center', fontFamily: 'monospace', fontWeight: 900, fontSize: 13, color: row.cor }}>{row.sym}</div>
+            <div style={{ flexShrink: 0, fontSize: 16 }}>{row.emoji}</div>
+            <div style={{ flex: 1, padding: '7px 12px', borderRadius: 8, background: `${row.cor.replace('1)', '0.08)')}`, borderLeft: `3px solid ${row.cor.replace('1)', '0.50)')}` }}>
+              <span style={{ fontSize: 11, color: row.cor.replace('1)', '0.70)'), fontWeight: 700, marginRight: 8 }}>{row.ref}</span>
+              <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.85)' }}>{row.label}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* ── 4 MOVIMENTOS ── */}
+      <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.40)', marginBottom: 14 }}>
+        📐 {pt ? 'Divisões Expositivas do Sermão' : 'Expository Sermon Divisions'}
+      </div>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: 14, marginBottom: 28 }}>
+        {MOVES.map((mv) => (
+          <div key={mv.num} style={{ borderRadius: 16, background: mv.corL, border: `1px solid ${mv.corB}`, overflow: 'hidden' }}>
+            {/* Cabeçalho colorido */}
+            <div style={{ padding: '12px 16px', background: mv.corB, display: 'flex', alignItems: 'center', gap: 10 }}>
+              <span style={{ fontSize: 22 }}>{mv.emoji}</span>
+              <div>
+                <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: mv.cor }}>
+                  {pt ? 'Movimento' : 'Movement'} {mv.num} · {mv.sym}
+                </div>
+                <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.55)' }}>{mv.ref}</div>
+              </div>
+            </div>
+            <div style={{ padding: '14px 16px' }}>
+              <div style={{ fontSize: 15, fontWeight: 800, color: '#fff', lineHeight: 1.35, marginBottom: 4 }}>{mv.title}</div>
+              <div style={{ fontSize: 12, color: mv.cor.replace('1)', '0.75)'), fontStyle: 'italic', marginBottom: 12 }}>{mv.sub}</div>
+              {/* Chave exegética */}
+              <div style={{ padding: '8px 12px', borderRadius: 8, background: 'rgba(0,0,0,0.30)', borderLeft: `3px solid ${mv.corB}`, marginBottom: 10 }}>
+                <div style={{ fontSize: 9, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: mv.cor, marginBottom: 4 }}>🔑 {pt ? 'Chave' : 'Key'}</div>
+                <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.78)', lineHeight: 1.60 }}>{mv.key}</div>
+              </div>
+              {/* Aplicação */}
+              <div style={{ padding: '8px 12px', borderRadius: 8, background: 'rgba(255,255,255,0.04)', borderLeft: `3px solid ${mv.cor.replace('1)', '0.40)')}` }}>
+                <div style={{ fontSize: 9, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: mv.cor, marginBottom: 4 }}>🛠 {pt ? 'Aplicação' : 'Application'}</div>
+                <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.70)', lineHeight: 1.60, fontStyle: 'italic' }}>{mv.app}</div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* ── EIXO CRISTOLÓGICO ── */}
+      <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.08)', padding: 'clamp(18px,3vw,24px)', marginBottom: 20 }}>
+        <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.40)', marginBottom: 16 }}>
+          ✝️ {pt ? 'Eixo Cristológico · AT → NT' : 'Christological Axis · OT → NT'}
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(200px,1fr))', gap: 10 }}>
+          {[
+            { at: pt ? 'Trevas → Luz (Gn 1:3)' : 'Darkness → Light (Gen 1:3)',           nt: pt ? 'Cristo, a Luz do mundo (Jo 8:12)' : 'Christ, the Light of the world (John 8:12)',  cor: 'rgba(80,200,255,0.14)', emoji: '💡' },
+            { at: pt ? 'Imagem de Deus (Gn 1:26)' : 'Image of God (Gen 1:26)',            nt: pt ? 'Cristo, imagem perfeita (Cl 1:15)' : 'Christ, perfect image (Col 1:15)',            cor: 'rgba(180,120,255,0.14)', emoji: '👁️' },
+            { at: pt ? 'Repouso sabático (Gn 2:2)' : 'Sabbath rest (Gen 2:2)',            nt: pt ? 'Repouso em Cristo (Hb 4:9–10)' : 'Rest in Christ (Heb 4:9–10)',                   cor: 'rgba(100,220,160,0.14)', emoji: '✨' },
+          ].map((c, i) => (
+            <div key={i} style={{ borderRadius: 12, background: c.cor, border: '1px solid rgba(255,255,255,0.07)', padding: '12px 14px' }}>
+              <div style={{ fontSize: 18, marginBottom: 6 }}>{c.emoji}</div>
+              <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.50)', marginBottom: 4 }}>AT: {c.at}</div>
+              <div style={{ fontSize: 13, color: '#fff', fontWeight: 700, lineHeight: 1.4 }}>NT: {c.nt}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ── APLICAÇÃO ── */}
+      <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.08)', padding: 'clamp(18px,3vw,24px)', marginBottom: 20 }}>
+        <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.40)', marginBottom: 14 }}>
+          🛠️ {pt ? 'Aplicação por Público' : 'Application by Audience'}
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+          {[
+            { pub: pt ? 'Universal' : 'Universal',          ref: 'Rm 8:28', emoji: '🌍', app: pt ? 'Todo ser humano experimenta o caos — Deus é o único que transforma desordem em propósito.' : 'Every human experiences chaos — God alone transforms disorder into purpose.',          cor: 'rgba(255,200,80,0.25)' },
+            { pub: pt ? 'Crentes' : 'Believers',            ref: '2Co 4:6', emoji: '🙏', app: pt ? 'A Palavra de Deus tem poder de re-criar a vida desordenada do crente.' : 'The Word of God has power to re-create the believer\'s disordered life.',                  cor: 'rgba(80,200,255,0.20)' },
+            { pub: pt ? 'Pastores / Pregadores' : 'Pastors', ref: 'Is 55:10–11', emoji: '📢', app: pt ? 'Pregar é participar da ação criadora de Deus — cada sermão é um ato de ordenação pelo Espírito.' : 'Preaching is participating in God\'s creative action — each sermon is an act of ordering by the Spirit.', cor: 'rgba(180,120,255,0.20)' },
+          ].map((a, i) => (
+            <div key={i} style={{ display: 'flex', gap: 12, alignItems: 'flex-start', padding: '10px 14px', borderRadius: 10, background: a.cor, border: '1px solid rgba(255,255,255,0.06)' }}>
+              <span style={{ fontSize: 20, flexShrink: 0 }}>{a.emoji}</span>
+              <div>
+                <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.60)', marginBottom: 3 }}>{a.pub} · {a.ref}</div>
+                <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.85)', lineHeight: 1.60 }}>{a.app}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ── CONCLUSÃO / APELO ── */}
+      <div style={{ borderRadius: 16, background: 'linear-gradient(135deg,rgba(255,200,80,0.12),rgba(80,200,255,0.08))', border: '1.5px solid rgba(255,200,80,0.35)', padding: 'clamp(18px,3vw,28px)' }}>
+        <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,200,80,0.85)', marginBottom: 12 }}>🏁 {pt ? 'Conclusão e Apelo' : 'Conclusion and Appeal'}</div>
+        <p style={{ fontSize: 'clamp(14px,2vw,16px)', color: 'rgba(255,255,255,0.85)', lineHeight: 1.75, margin: '0 0 14px' }}>
+          {pt
+            ? 'No princípio, havia caos. Deus falou — e houve cosmos. No princípio da sua vida, havia desordem. Cristo falou — e há nova criação (2Co 5:17). O mesmo Deus que disse "haja luz" na criação diz "haja luz" no seu coração.'
+            : 'In the beginning there was chaos. God spoke — and there was cosmos. In the beginning of your life there was disorder. Christ spoke — and there is new creation (2 Cor 5:17).'}
+        </p>
+        <div style={{ padding: '14px 18px', borderRadius: 12, background: 'rgba(255,200,80,0.15)', border: '1px solid rgba(255,200,80,0.30)' }}>
+          <p style={{ fontWeight: 800, color: '#fff', margin: 0, fontSize: 'clamp(14px,2vw,16px)', lineHeight: 1.65 }}>
+            {pt
+              ? '🙌 Apelo: Entregue o seu caos à Palavra soberana de Deus. Permita que o mesmo Logos que criou o cosmos recrie a sua vida.'
+              : '🙌 Appeal: Surrender your chaos to the sovereign Word of God. Let the same Logos who created the cosmos re-create your life.'}
+          </p>
+        </div>
+      </div>
+
+    </div>
+  );
+}
+
 // ─── Main Page ───────────────────────────────────────────────────────
 export default function PregacaoPage() {
   const [lang, setLang] = useState<'pt'|'en'>('pt');
@@ -1345,7 +1560,7 @@ export default function PregacaoPage() {
   const [pericopes, setPericopes] = useState<Pericope[]>([]);
   const [loadingPericopes, setLoadingPericopes] = useState(false);
   const [selectedPericopeIdx, setSelectedPericopeIdx] = useState<number | null>(null);
-  const [contentTab, setContentTab] = useState<'estrutura' | 'homilestica' | 'quiasma'>('estrutura');
+  const [contentTab, setContentTab] = useState<'estrutura' | 'homilestica' | 'quiasma' | 'infografico'>('estrutura');
 
   // Busca perícopes quando muda o livro
   useEffect(() => {
@@ -1678,10 +1893,11 @@ export default function PregacaoPage() {
                   {/* Tab bar */}
                   <div style={{ display: 'flex', gap: 4, marginBottom: 20, borderBottom: `1px solid ${C.border}`, paddingBottom: 0, flexWrap: 'wrap' }}>
                     {([
-                      { key: 'estrutura',  label: pt ? 'Estrutura Homilética' : 'Homiletic Structure' },
+                      { key: 'estrutura',   label: pt ? 'Estrutura Homilética' : 'Homiletic Structure' },
                       { key: 'homilestica', label: pt ? 'Homilética para Pregar' : 'Homiletics for Preaching' },
-                      { key: 'quiasma',    label: pt ? 'Estrutura Quiástica Espelhada' : 'Mirror Chiastic Structure' },
-                    ] as { key: 'estrutura' | 'homilestica' | 'quiasma'; label: string }[]).map(tab => {
+                      { key: 'quiasma',     label: pt ? 'Estrutura Quiástica Espelhada' : 'Mirror Chiastic Structure' },
+                      ...(selectedDia?.dia === 1 ? [{ key: 'infografico', label: pt ? '🖼 Infográfico' : '🖼 Infographic' }] : []),
+                    ] as { key: 'estrutura' | 'homilestica' | 'quiasma' | 'infografico'; label: string }[]).map(tab => {
                       const active = contentTab === tab.key;
                       return (
                         <button
@@ -1719,7 +1935,11 @@ export default function PregacaoPage() {
 
                   {/* Tab content */}
                   <AnimatePresence mode="wait">
-                    {contentTab === 'estrutura' ? (
+                    {contentTab === 'infografico' ? (
+                      <motion.div key="infografico" initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 10 }} transition={{ duration: 0.18 }}>
+                        <InfograficoSection pt={pt} />
+                      </motion.div>
+                    ) : contentTab === 'estrutura' ? (
                       <motion.div key="estrutura" initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 10 }} transition={{ duration: 0.18 }}>
                         {selectedDia.dia === 1 ? (
                           <EstruturaHomileticaSection pt={pt} />
