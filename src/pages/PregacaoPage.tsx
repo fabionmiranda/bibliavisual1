@@ -714,6 +714,273 @@ function EstruturaHomileticaSection({ pt }: { pt: boolean }) {
   );
 }
 
+// ─── EstruturaHomileticaJosueSection — Josué 1:1–18 ─────────────────
+function EstruturaHomileticaJosueSection({ pt }: { pt: boolean }) {
+  const accent  = 'rgba(255,180,50,1)';
+  const accentL = 'rgba(255,180,50,0.10)';
+  const accentB = 'rgba(255,180,50,0.30)';
+
+  const SectionCard = ({ num, icon, title, children }: { num: string; icon: string; title: string; children: React.ReactNode }) => (
+    <div style={{ borderRadius: 16, border: `1px solid ${accentB}`, background: 'rgba(20,14,40,0.7)', padding: '24px 28px', marginBottom: 18 }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 14 }}>
+        <div style={{ width: 36, height: 36, borderRadius: 10, background: accentL, border: `1px solid ${accentB}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 18, flexShrink: 0 }}>{icon}</div>
+        <div>
+          <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.18em', color: accent, textTransform: 'uppercase', marginBottom: 2 }}>{pt ? 'Seção' : 'Section'} {num}</div>
+          <div style={{ fontSize: 'clamp(15px,2vw,17px)', fontWeight: 800, color: C.white }}>{title}</div>
+        </div>
+      </div>
+      <div style={{ fontSize: 'clamp(13px,1.6vw,15px)', color: 'rgba(255,255,255,0.78)', lineHeight: 1.75 }}>{children}</div>
+    </div>
+  );
+
+  const Footnote = ({ num, text }: { num: number; text: string }) => (
+    <div style={{ fontSize: 'clamp(11px,1.4vw,12px)', color: C.muted, lineHeight: 1.6, marginBottom: 4, paddingLeft: 16, position: 'relative' }}>
+      <span style={{ position: 'absolute', left: 0, color: accent, fontWeight: 700 }}>{num}</span>
+      {text}
+    </div>
+  );
+
+  const Tag = ({ label, color = accentB }: { label: string; color?: string }) => (
+    <span style={{ display: 'inline-block', padding: '2px 10px', borderRadius: 20, background: color, color: C.white, fontSize: 'clamp(10px,1.3vw,11px)', fontWeight: 700, marginRight: 6, marginBottom: 4 }}>{label}</span>
+  );
+
+  return (
+    <div style={{ paddingBottom: 40 }}>
+      {/* Header */}
+      <div style={{ borderRadius: 16, border: `1px solid ${accentB}`, background: accentL, padding: '20px 24px', marginBottom: 24 }}>
+        <div style={{ fontSize: 'clamp(9px,1.2vw,11px)', fontWeight: 900, letterSpacing: '0.2em', color: accent, textTransform: 'uppercase', marginBottom: 8 }}>Josué 1:1–18 · Narrativa de Transição</div>
+        <div style={{ fontSize: 'clamp(16px,2.8vw,24px)', fontWeight: 900, color: C.white, lineHeight: 1.3, marginBottom: 8 }}>
+          Levanta-te e Atravessa: A Comissão Soberana que Não Aguarda o Luto
+        </div>
+        <div style={{ fontSize: 'clamp(13px,1.7vw,15px)', color: 'rgba(255,255,255,0.65)', fontStyle: 'italic' }}>
+          "A Palavra de Deus como fundamento único da coragem ministerial"
+        </div>
+      </div>
+
+      {/* Seção I — Título */}
+      <SectionCard num="I" icon="📌" title={pt ? 'Título' : 'Title'}>
+        <p><strong style={{ color: accent }}>Título Principal:</strong> Levanta-te e Atravessa: A Comissão Soberana que Não Aguarda o Luto</p>
+        <p style={{ marginTop: 8 }}><strong style={{ color: accent }}>Subtítulo:</strong> A Palavra de Deus como fundamento único da coragem ministerial</p>
+        <div style={{ marginTop: 12, padding: '10px 16px', borderRadius: 10, background: 'rgba(0,0,0,0.3)', fontFamily: 'monospace', fontSize: 'clamp(11px,1.5vw,13px)', color: 'rgba(255,255,255,0.60)', lineHeight: 1.7 }}>
+          יְהוֹשֻׁעַ 1:9<br />
+          <span style={{ color: C.muted, fontFamily: 'sans-serif', fontSize: 'clamp(10px,1.3vw,12px)' }}>hazaq we'ematz ki 'immekha YHWH Elohekha</span>
+        </div>
+      </SectionCard>
+
+      {/* Seção II — Texto Base */}
+      <SectionCard num="II" icon="📖" title={pt ? 'Texto Base' : 'Base Text'}>
+        <p><strong style={{ color: accent }}>Perícope:</strong> Josué 1:1–18 (ARA / NVI)</p>
+        <p style={{ marginTop: 8 }}><strong style={{ color: accent }}>Ponto focal:</strong> Josué 1:8 — "Não se aparte da tua boca este livro da lei"</p>
+        <div style={{ marginTop: 10, display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+          <Tag label="Históricos" />
+          <Tag label="Narrativa de Transição" />
+          <Tag label="Teologia da Palavra" />
+          <Tag label="Josué como Tipo de Cristo" />
+        </div>
+      </SectionCard>
+
+      {/* Seção III — Tema */}
+      <SectionCard num="III" icon="🎯" title={pt ? 'Tema (Big Idea)' : 'Theme (Big Idea)'}>
+        <p>O Deus soberano que comissionou Josué no luto de Moisés equipa todo servo com o único instrumento que garante sucesso: a meditação contínua e obediente na Sua Palavra.</p>
+        <p style={{ marginTop: 10, padding: '8px 14px', borderRadius: 8, background: 'rgba(255,180,50,0.08)', borderLeft: `3px solid ${accent}`, fontSize: 'clamp(12px,1.6vw,14px)', color: 'rgba(255,255,255,0.70)', fontStyle: 'italic' }}>
+          "Josué não traz o descanso eterno — ele apenas prefigura Aquele que o traria. Pois o verdadeiro Josué (Jesus) é quem dá o repouso que a lei e a terra não podiam dar."<br />
+          <span style={{ fontSize: 'clamp(10px,1.3vw,12px)' }}>— Parafraseado de Calvino, com base em Hebreus 4:8. Cf. VOS, G. <em>Biblical Theology</em>. Grand Rapids: Eerdmans, 1948. p. 109.¹</span>
+        </p>
+      </SectionCard>
+
+      {/* Seção IV — Exórdio */}
+      <SectionCard num="IV" icon="🔥" title={pt ? 'Exórdio (Gancho / Introdução)' : 'Exordium (Hook / Introduction)'}>
+        <p>"Depois da morte de Moisés" — o livro de Josué abre com uma perda. Toda geração enfrenta a morte do líder do qual dependia. A crise da transição não é exceção histórica — é a condição normal do povo de Deus em marcha. A questão não é <em>se</em> enfrentaremos o vazio da transição, mas <em>o que preenche esse vazio</em>.</p>
+        <p style={{ marginTop: 10 }}>Quando o líder que conhecíamos não está mais, a resposta natural é o luto paralisante. Mas YHWH não aguarda o luto — Ele fala imediatamente com imperativo: <em>"Levanta-te e atravessa."</em> A coragem que Deus demanda não é produto da ausência de dor, mas da presença da Sua Palavra.</p>
+        <p style={{ marginTop: 10, fontSize: 'clamp(12px,1.6vw,14px)', color: 'rgba(255,255,255,0.60)', fontStyle: 'italic' }}>
+          Cf. Keller, T. <em>Preaching: Communicating Faith in an Age of Skepticism</em>. New York: Viking, 2015. pp. 200–210.²
+        </p>
+      </SectionCard>
+
+      {/* Seção V — Proposição */}
+      <SectionCard num="V" icon="⚡" title={pt ? 'Proposição' : 'Proposition'}>
+        <div style={{ padding: '14px 18px', borderRadius: 12, background: 'rgba(255,180,50,0.12)', border: `1px solid ${accentB}` }}>
+          <p style={{ fontWeight: 800, fontSize: 'clamp(14px,2vw,17px)', color: C.white, margin: 0 }}>
+            A coragem que Deus demanda não nasce do temperamento, da experiência ou do número de soldados — ela brota da Palavra meditada que o servo carrega na boca e no coração.
+          </p>
+        </div>
+        <p style={{ marginTop: 12, fontSize: 'clamp(12px,1.6vw,14px)', color: 'rgba(255,255,255,0.65)' }}>
+          Cf. Clowney, E. P. <em>Preaching Christ in All of Scripture</em>. Wheaton: Crossway, 2003. pp. 73–82.³
+        </p>
+      </SectionCard>
+
+      {/* Seção VI — Interrogação e Transição */}
+      <SectionCard num="VI" icon="❓" title={pt ? 'Interrogação e Transição' : 'Question and Transition'}>
+        <p><strong style={{ color: accent }}>Interrogação central:</strong> De onde vem a coragem que avança quando o líder que conhecemos não está mais?</p>
+        <p style={{ marginTop: 10 }}><strong style={{ color: accent }}>Transição:</strong> Para responder, seguiremos a estrutura quiástica A–B–C–B'–A' de Josué 1, onde o centro revela a lógica do texto e os espelhos confirmam a teologia da comissão descendente.</p>
+        <p style={{ marginTop: 10, fontSize: 'clamp(12px,1.6vw,14px)', color: 'rgba(255,255,255,0.60)' }}>
+          Cf. Chapell, B. <em>Christ-Centered Preaching</em>. 3. ed. Grand Rapids: Baker Academic, 2018. pp. 148–160.⁴
+        </p>
+      </SectionCard>
+
+      {/* Seção VII — Divisões */}
+      <SectionCard num="VII" icon="📐" title={pt ? 'Divisões / Movimentos' : 'Divisions / Movements'}>
+        <p style={{ marginBottom: 14, fontSize: 'clamp(12px,1.5vw,14px)', color: C.muted }}>{pt ? 'Estrutura quiástica em 5 movimentos (A–B–C–B\'–A\'):' : 'Chiastic structure in 5 movements (A–B–C–B\'–A\'):'}</p>
+
+        {/* ASCII chiasm */}
+        <div style={{ marginBottom: 16, padding: '14px 20px', borderRadius: 12, background: 'rgba(0,0,0,0.4)', fontFamily: 'monospace', fontSize: 'clamp(11px,1.4vw,12px)', color: 'rgba(255,255,255,0.55)', lineHeight: 2, overflowX: 'auto' }}>
+          <div style={{ color: 'rgba(255,180,50,0.9)', fontWeight: 700 }}>A  — 1:1–2   — Comissão de YHWH a Josué (qum + 'abor)</div>
+          <div style={{ paddingLeft: 20, color: 'rgba(80,200,255,0.9)', fontWeight: 700 }}>B  — 1:3–9   — Tríplice promessa: terra, presença, Palavra (hazaq 3×)</div>
+          <div style={{ paddingLeft: 40, color: 'rgba(100,220,160,0.9)', fontWeight: 700 }}>C  — 1:10–15 — <span style={{ color: 'rgba(255,180,50,0.9)' }}>CENTRO ◉</span> Josué comanda; solidariedade pactual</div>
+          <div style={{ paddingLeft: 20, color: 'rgba(80,200,255,0.9)', fontWeight: 700 }}>B' — 1:16–17 — Resposta do povo (eco de Êx 19:8)</div>
+          <div style={{ color: 'rgba(255,180,50,0.9)', fontWeight: 700 }}>A' — 1:18    — "Sê forte e corajoso" — eco fechando o quiasma</div>
+        </div>
+
+        {/* Movimentos expositivos */}
+        <div style={{ borderTop: '1px solid rgba(255,180,50,0.18)', paddingTop: 20 }}>
+          <div style={{ fontSize: 'clamp(9px,1.2vw,11px)', fontWeight: 900, letterSpacing: '0.18em', color: accent, textTransform: 'uppercase', marginBottom: 16 }}>{pt ? 'Divisões Expositivas do Sermão' : 'Expository Sermon Divisions'}</div>
+
+          {[
+            {
+              num: 'I', par: 'A ↔ A\'', ref: 'Js 1:1-2 / 1:18',
+              title: 'A Comissão e o Seu Eco: YHWH Fala no Luto',
+              cor: 'rgba(255,180,50,1)', corL: 'rgba(255,180,50,0.10)', corB: 'rgba(255,180,50,0.30)',
+              indicacao: '"Depois da morte de Moisés" (1:1) — o livro abre no luto. YHWH fala imediatamente com imperativo: qum (levanta-te) + \'abor (atravessa). Em A\' (1:18), o povo repete a Josué as mesmas palavras que Deus havia dito a Josué: "sê forte e corajoso" — a comissão desceu completamente.',
+              exegese: 'eved YHWH ("servo do SENHOR") é o título mais elevado do AT (Dt 34:5; cf. Is 53). A designação transfere honra: quem serve este Servo herda a comissão. qum não é encorajamento gentil — é imperativo soberano. Deus não aguarda que o luto se resolva para falar.',
+              teologia: 'CFW V.1 (a Providência continua através da perda humana); CFW I.6 (as Escrituras suficientes para equipar); Calvino: "Deus nunca abandona a obra que Ele mesmo iniciou" (Inst. I.17.6).',
+              aplicacao: 'Em que área você está aguardando se sentir pronto antes de obedecer ao chamado de Deus? O comando "levanta-te" veio antes de qualquer prontidão emocional.',
+            },
+            {
+              num: 'II', par: 'B — Js 1:3-9', ref: 'Js 1:3–9',
+              title: 'A Tríplice Promessa: Terra, Presença e a Palavra como Único Equipamento',
+              cor: 'rgba(80,200,255,1)', corL: 'rgba(80,200,255,0.10)', corB: 'rgba(80,200,255,0.30)',
+              indicacao: 'Três promessas aninhadas: (1) terra 1:3-4, (2) presença 1:5, (3) a Lei 1:7-9. "Hazaq we\'ematz" aparece 3× (vv.6,7,9) como marcador estrutural — cada ocorrência ancora uma promessa distinta.',
+              exegese: '"Todo lugar que a planta do pé pisar" — eco de Gn 13:17 (promessa abraâmica). "Como fui com Moisés, serei contigo" — a presença divina é transferível através da aliança. "Sefer hatorah não se aparte da tua boca" — hagah = meditação ruminante, não mera leitura. A promessa de sucesso (tatsliach, 1:8) está atada SOMENTE à Palavra, não à preparação militar.',
+              teologia: 'CFW I.6 (as Escrituras como única regra suficiente); WLC P.99 (a lei como regra de vida); Packer sobre a suficiência das Escrituras.',
+              aplicacao: 'Você busca sucesso sem meditação sistemática na Palavra? O texto amarra o sucesso (tatsliach) exclusivamente ao hagah — não há outra fórmula.',
+            },
+            {
+              num: 'III', par: 'C (CENTRO ◉)', ref: 'Js 1:10–15',
+              title: 'A Liderança que Transmite: O Servo que Move o Povo',
+              cor: 'rgba(100,220,160,1)', corL: 'rgba(100,220,160,0.10)', corB: 'rgba(100,220,160,0.30)',
+              indicacao: 'CENTRO do quiasma — Josué age imediatamente sobre a comissão recebida: comanda os oficiais (1:10-11), discursa às tribos transjordanianas — Rúben, Gad e ½ Manassés (1:12-15).',
+              exegese: '"Passareis armados diante de vossos irmãos" (1:14) — solidariedade pactual. As tribos transjordanianas receberam terra de Moisés; agora devem lutar pelos outros antes de descansar elas mesmas. Liderança é a transmissão descendente da comissão.',
+              teologia: 'CFW XXVI.2 (a autoridade como serviço); o ofício de liderança como mordomia, não propriedade.',
+              aplicacao: 'Que comissão você está transmitindo à sua esfera de influência? Liderança sem transmissão da comissão divina é apenas gerenciamento.',
+            },
+            {
+              num: 'IV', par: 'B\' + A\'', ref: 'Js 1:16–18',
+              title: 'A Obediência Pactual: O Povo que Responde com Solenidade',
+              cor: 'rgba(180,120,255,1)', corL: 'rgba(180,120,255,0.10)', corB: 'rgba(180,120,255,0.30)',
+              indicacao: '"Tudo o que nos ordenares faremos" (1:16) — espelha a promessa pactual de Êxodo 19:8 palavra por palavra. Em A\' (1:18): "Qualquer que for rebelde... será morto. Sê forte e corajoso."',
+              exegese: 'A resposta do povo não é mera obediência — é solenidade pactual. As sanções do pacto aparecem: morte para a rebelião (1:18). A repetição de "sê forte e corajoso" de YHWH → Josué → povo cria uma cadeia descendente de comissão. O povo fortalece o líder com as mesmas palavras que Deus usou.',
+              teologia: 'CFW VII (estrutura da aliança: estipulações → sanções → bênçãos); Boston sobre a obediência pactual.',
+              aplicacao: 'A sua obediência aos seus líderes espirituais é proporcional à solenidade de Josué 1:16-18? A comunidade pactual avança como um único corpo.',
+            },
+          ].map((mv, i) => (
+            <div key={i} style={{ borderRadius: 14, border: `1px solid ${mv.corB}`, background: mv.corL, padding: '18px 22px', marginBottom: 14 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 12, flexWrap: 'wrap' }}>
+                <div style={{ fontFamily: 'monospace', fontWeight: 900, fontSize: 'clamp(15px,2vw,18px)', color: mv.cor, minWidth: 28 }}>{mv.num}</div>
+                <span style={{ fontSize: 'clamp(9px,1.2vw,11px)', fontWeight: 700, padding: '2px 10px', borderRadius: 20, background: mv.corB, color: mv.cor }}>{mv.par}</span>
+                <span style={{ fontSize: 'clamp(11px,1.5vw,12px)', color: C.muted }}>{mv.ref}</span>
+              </div>
+              <div style={{ fontSize: 'clamp(14px,1.8vw,16px)', fontWeight: 800, color: C.white, marginBottom: 14, lineHeight: 1.4 }}>{mv.title}</div>
+              <div style={{ display: 'grid', gap: 10 }}>
+                {[
+                  { label: pt ? '§ Indicação Textual' : '§ Textual Indication', text: mv.indicacao },
+                  { label: pt ? '§ Exegese' : '§ Exegesis',                     text: mv.exegese },
+                  { label: pt ? '§ Teologia Reformada' : '§ Reformed Theology', text: mv.teologia },
+                  { label: pt ? '§ Aplicação' : '§ Application',                text: mv.aplicacao },
+                ].map((item, j) => (
+                  <div key={j} style={{ padding: '10px 14px', borderRadius: 10, background: 'rgba(0,0,0,0.30)', borderLeft: `3px solid ${mv.cor}` }}>
+                    <div style={{ fontSize: 'clamp(9px,1.2vw,11px)', fontWeight: 900, letterSpacing: '0.12em', color: mv.cor, textTransform: 'uppercase', marginBottom: 4 }}>{item.label}</div>
+                    <div style={{ fontSize: 'clamp(12px,1.5vw,14px)', color: 'rgba(255,255,255,0.80)', lineHeight: 1.7 }}>{item.text}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <p style={{ marginTop: 12, fontSize: 'clamp(12px,1.5vw,14px)', color: 'rgba(255,255,255,0.60)' }}>
+          Cf. Dorsey, D. A. <em>The Literary Structure of the Old Testament</em>. Grand Rapids: Baker Academic, 1999. pp. 110–114.⁵ | Woudstra, M. H. <em>The Book of Joshua</em>. NICOT. Grand Rapids: Eerdmans, 1981. pp. 57–76.⁶
+        </p>
+      </SectionCard>
+
+      {/* Seção VIII — Eixo Cristológico */}
+      <SectionCard num="VIII" icon="✝️" title={pt ? 'Eixo Cristológico' : 'Christological Axis'}>
+        <p>Josué é o tipo mais explícito de Cristo no livro que leva seu nome. O nome "Josué" (יֵשׁוּעַ / Ieshua em hebraico) é o mesmo nome traduzido "Jesus" no NT — e a convergência não é acidental:</p>
+        <div style={{ marginTop: 12, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 10 }}>
+          {[
+            { at: '"Josué" (Ieshua em hebraico — Js 1:1)', nt: 'Jesus — mesmo nome, maior conquista (Mt 1:21)', cor: 'rgba(255,180,50,0.15)' },
+            { at: '"Sê forte e corajoso" (Js 1:6,7,9)', nt: '"Sede firmes" (1Co 16:13; Ef 6:10)', cor: 'rgba(80,200,255,0.15)' },
+            { at: 'Josué conduz ao descanso na terra (Js 1:15)', nt: 'Cristo dá o verdadeiro descanso (Hb 4:8-11)', cor: 'rgba(100,220,160,0.15)' },
+          ].map((p, i) => (
+            <div key={i} style={{ padding: '10px 14px', borderRadius: 10, background: p.cor, border: '1px solid rgba(255,255,255,0.08)' }}>
+              <div style={{ fontSize: 'clamp(11px,1.4vw,12px)', color: C.muted, marginBottom: 4 }}>{pt ? 'AT' : 'OT'}: {p.at}</div>
+              <div style={{ fontSize: 'clamp(12px,1.5vw,13px)', color: C.white, fontWeight: 700 }}>{pt ? 'NT' : 'NT'}: {p.nt}</div>
+            </div>
+          ))}
+        </div>
+        <p style={{ marginTop: 12, fontSize: 'clamp(12px,1.5vw,14px)', color: 'rgba(255,255,255,0.60)' }}>
+          Cf. Clowney, E. P. <em>op. cit.</em>³ pp. 73–82. | Goldsworthy, G. <em>According to Plan</em>. Downers Grove: IVP, 1991. pp. 120–128.⁷
+        </p>
+      </SectionCard>
+
+      {/* Seção IX — Ilustração */}
+      <SectionCard num="IX" icon="💡" title={pt ? 'Ilustração' : 'Illustration'}>
+        <p>Imagine um general passando seu comando a um oficial mais jovem. O general mais velho não passa apenas a espada — ele passa o manual de campo. A espada representa a coragem de Josué; o manual de campo é a Torá. Deus não entrega a Josué um plano de batalha — <strong style={{ color: accent }}>Ele lhe entrega um Livro.</strong></p>
+        <p style={{ marginTop: 10 }}>E a promessa atrelada ao Livro não é vitória tática, mas sucesso no sentido mais profundo: <em>tatsliach</em> — prosperidade que vem da fidelidade à Palavra, não da habilidade estratégica. O campo de batalha muda; a Palavra permanece.</p>
+        <p style={{ marginTop: 10, fontSize: 'clamp(12px,1.5vw,14px)', color: 'rgba(255,255,255,0.60)' }}>
+          Cf. Robinson, H. W. <em>Biblical Preaching</em>. 3. ed. Grand Rapids: Baker Academic, 2014. p. 38.⁸
+        </p>
+      </SectionCard>
+
+      {/* Seção X — Aplicação */}
+      <SectionCard num="X" icon="🛠️" title={pt ? 'Aplicação' : 'Application'}>
+        {[
+          { pub: 'Universal', app: 'Toda transição humana — luto, mudança, nova fase — é território onde YHWH fala "levanta-te e atravessa". Nenhum vazio da história humana silencia a voz de Deus.', ref: 'Js 1:1-2' },
+          { pub: 'Crentes', app: 'A meditação na Palavra dia e noite (hagah) é a única ferramenta prometida para o sucesso que Deus define. Sem o Sl 1:2-3 vivido, Js 1:8 permanece promessa não reclamada.', ref: 'Js 1:8; Sl 1:2-3' },
+          { pub: 'Pastores', app: 'A liderança bíblica é comissão descendente — o pastor que não medita na Palavra não tem nada para transmitir à congregação. O que você está passando é Palavra ou apenas opinião?', ref: 'Js 1:10-11' },
+        ].map((a, i) => (
+          <div key={i} style={{ padding: '12px 16px', borderRadius: 10, background: 'rgba(0,0,0,0.25)', marginBottom: 10, borderLeft: `3px solid ${accent}` }}>
+            <div style={{ fontSize: 'clamp(9px,1.2vw,11px)', fontWeight: 900, letterSpacing: '0.12em', color: accent, textTransform: 'uppercase', marginBottom: 4 }}>{a.pub} · {a.ref}</div>
+            <div style={{ fontSize: 'clamp(12px,1.5vw,14px)', color: C.white }}>{a.app}</div>
+          </div>
+        ))}
+        <p style={{ marginTop: 10, fontSize: 'clamp(12px,1.5vw,14px)', color: 'rgba(255,255,255,0.60)' }}>
+          Cf. Packer, J. I. <em>God Has Spoken</em>. 3. ed. Grand Rapids: Baker Books, 1994. pp. 44–52.⁹ | Lloyd-Jones, D. M. <em>Preaching and Preachers</em>. Grand Rapids: Zondervan, 1971. pp. 110–118.¹⁰
+        </p>
+      </SectionCard>
+
+      {/* Seção XI — Conclusão */}
+      <SectionCard num="XI" icon="🏁" title={pt ? 'Conclusão e Apelo' : 'Conclusion and Appeal'}>
+        <p>Depois da morte de Moisés, Deus falou. Ele sempre fala depois das mortes que nos assustam. Mas Ele não fala para consolar — <strong style={{ color: accent }}>Ele comissiona.</strong> O livro da lei que Josué devia carregar na boca não era um manual de estratégia militar: era a Palavra que transformaria um servo enlutado em um conquistador que daria o descanso ao povo de Deus.</p>
+        <p style={{ marginTop: 10 }}>Esse livro está nas suas mãos.</p>
+        <div style={{ marginTop: 14, padding: '14px 18px', borderRadius: 12, background: 'rgba(255,180,50,0.12)', border: `1px solid ${accentB}` }}>
+          <p style={{ fontWeight: 800, color: C.white, margin: 0, fontSize: 'clamp(14px,1.8vw,16px)' }}>
+            Sê forte e corajoso. O SENHOR teu Deus é contigo.
+          </p>
+        </div>
+        <p style={{ marginTop: 12, fontSize: 'clamp(12px,1.5vw,14px)', color: 'rgba(255,255,255,0.60)' }}>
+          Cf. Calvin, J. <em>Commentaries on the Book of Joshua</em>. Grand Rapids: Baker Books, 2003 [1564]. pp. 30–45.¹¹
+        </p>
+      </SectionCard>
+
+      {/* Notas de rodapé ABNT */}
+      <div style={{ borderRadius: 14, border: '1px solid rgba(255,255,255,0.07)', background: 'rgba(0,0,0,0.30)', padding: '20px 24px', marginTop: 8 }}>
+        <div style={{ fontSize: 'clamp(9px,1.2vw,11px)', fontWeight: 900, letterSpacing: '0.18em', color: accent, textTransform: 'uppercase', marginBottom: 14 }}>{pt ? 'Referências (ABNT NBR 6023)' : 'References'}</div>
+        <Footnote num={1}  text="VOS, Geerhardus. Biblical Theology. Grand Rapids: Eerdmans, 1948. p. 109." />
+        <Footnote num={2}  text="KELLER, Timothy. Preaching: Communicating Faith in an Age of Skepticism. New York: Viking, 2015. pp. 200–210." />
+        <Footnote num={3}  text="CLOWNEY, Edmund P. Preaching Christ in All of Scripture. Wheaton: Crossway, 2003. pp. 73–82." />
+        <Footnote num={4}  text="CHAPELL, Bryan. Christ-Centered Preaching. 3. ed. Grand Rapids: Baker Academic, 2018. pp. 148–160." />
+        <Footnote num={5}  text="DORSEY, David A. The Literary Structure of the Old Testament. Grand Rapids: Baker Academic, 1999. pp. 110–114." />
+        <Footnote num={6}  text="WOUDSTRA, Marten H. The Book of Joshua. NICOT. Grand Rapids: Eerdmans, 1981. pp. 57–76." />
+        <Footnote num={7}  text="GOLDSWORTHY, Graeme. According to Plan. Downers Grove: IVP, 1991. pp. 120–128." />
+        <Footnote num={8}  text="ROBINSON, Haddon W. Biblical Preaching. 3. ed. Grand Rapids: Baker Academic, 2014. p. 38." />
+        <Footnote num={9}  text="PACKER, J. I. God Has Spoken: Revelation and the Bible. 3. ed. Grand Rapids: Baker Books, 1994. pp. 44–52." />
+        <Footnote num={10} text="LLOYD-JONES, D. Martyn. Preaching and Preachers. Grand Rapids: Zondervan, 1971. pp. 110–118." />
+        <Footnote num={11} text="CALVIN, John. Commentaries on the Book of Joshua. Grand Rapids: Baker Books, 2003 [1564]. pp. 30–45." />
+      </div>
+    </div>
+  );
+}
+
 // ─── Transliteração hebraica (Gênesis) ──────────────────────────────
 const HEBREW_TRANSLIT: Record<string, string> = {
   // Perícope 01
@@ -2142,6 +2409,8 @@ export default function PregacaoPage() {
                           <EstruturaHomileticaSection pt={pt} />
                         ) : selectedDia.dia === 2 ? (
                           <EstruturaHomileticaSection2 pt={pt} />
+                        ) : selectedDia.dia === 254 ? (
+                          <EstruturaHomileticaJosueSection pt={pt} />
                         ) : (
                           <div style={{ padding: 32, borderRadius: 16, border: '1px solid rgba(168,120,255,0.20)', background: 'rgba(20,12,40,0.6)', color: C.muted, fontSize: 13, textAlign: 'center' }}>
                             {pt ? 'Estrutura homilética ainda não disponível para esta perícope.' : 'Homiletic structure not yet available for this pericope.'}
