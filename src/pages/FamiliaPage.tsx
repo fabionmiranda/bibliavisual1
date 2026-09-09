@@ -2052,6 +2052,235 @@ export function CasadosPage() {
 }
 
 // ─── Esboços Page ────────────────────────────────────────────────────
+// ─── Infográfico Família Card 1 ──────────────────────────────────────
+function InfograficoFamiliaSection({ pt }: { pt: boolean }) {
+  const MOVES = [
+    {
+      num: 'I', sym: 'A ↔ A\'', ref: 'Gn 1:1–5 / 1:14–25',
+      title: pt ? 'A Palavra que Ordena' : 'The Word that Orders',
+      sub: pt ? 'Deus Estabelece Estrutura para a Vida Familiar' : 'God Establishes Structure for Family Life',
+      emoji: '🏗️',
+      key: pt ? 'bara (criar) — sujeito exclusivo: Deus. Dias 1–3: domínios formados. Dias 4–6: preenchidos. Ordem precede vida — o arquiteto antes do habitante.' : 'bara (create) — exclusive subject: God. Days 1–3: domains formed. Days 4–6: filled. Order precedes life.',
+      app: pt ? 'Pais: cultivem nos filhos o hábito de ver a ordem de Deus na natureza. Casal: você tem criado ordem e estrutura no lar? Ordem é ato de obediência criacional.' : 'Parents: teach children to see God\'s order in nature. Couple: are you creating structure in your home?',
+      cor: 'rgba(80,200,255,1)', corL: 'rgba(80,200,255,0.10)', corB: 'rgba(80,200,255,0.28)',
+    },
+    {
+      num: 'II', sym: 'B ↔ B\'', ref: 'Gn 1:26–28',
+      title: pt ? 'A Palavra que Delega' : 'The Word that Delegates',
+      sub: pt ? 'A Família como Vice-Regente de Deus' : 'The Family as God\'s Vice-Regent',
+      emoji: '👑',
+      key: pt ? 'tselem + demut dados ao casal como unidade. O mandato cultural (dominar, multiplicar, encher) é familiar, não individual. A família é a unidade primária do governo delegado de Deus.' : 'tselem + demut given to the couple as a unit. The cultural mandate is familial, not individual.',
+      app: pt ? 'Pais: ensinem que cada filho é portador da imagem de Deus. Filhos: você não é acidente — Deus te fez para representar Ele no mundo.' : 'Parents: teach that each child bears God\'s image. Children: you were made to represent Him in the world.',
+      cor: 'rgba(255,200,80,1)', corL: 'rgba(255,200,80,0.10)', corB: 'rgba(255,200,80,0.28)',
+    },
+    {
+      num: 'III', sym: 'CENTRO ◉', ref: 'Gn 2:1–4a',
+      title: pt ? 'A Palavra que Consagra' : 'The Word that Consecrates',
+      sub: pt ? 'O Descanso como Telos da Família' : 'Rest as the Telos of the Family',
+      emoji: '✨',
+      key: pt ? 'qadash (santificar) lançado pela 1ª vez sobre o TEMPO — não sobre espaço ou objeto. O Dia do Senhor é o coração que bombeia vida à família-igreja.' : 'qadash (sanctify) first cast on TIME. The Lord\'s Day is the heart that pumps life into the family-church.',
+      app: pt ? 'Pais: o Dia do Senhor não é opcional. Guardá-lo juntos é a disciplina semanal mais formadora. Casal: comprometam-se a guardar o Dia do Senhor sem exceções.' : 'Parents: the Lord\'s Day is not optional. Observing it together is the most formative weekly discipline.',
+      cor: 'rgba(52,211,153,1)', corL: 'rgba(52,211,153,0.10)', corB: 'rgba(52,211,153,0.28)',
+    },
+  ];
+
+  const ACTIVITIES = [
+    { n: '1', icon: '📖', text: pt ? 'Leiam juntos Gn 1:1 e 2:1-3. Cada membro lê um versículo em voz alta.' : 'Read Genesis 1:1 and 2:1-3 aloud together. Each member reads a verse.' },
+    { n: '2', icon: '💬', text: pt ? 'Perguntem às crianças: "Se você pudesse criar algo que não existe, o que seria?" Por que Deus criou tantas coisas diferentes?' : 'Ask children: "If you could create something that doesn\'t exist, what would it be?"' },
+    { n: '3', icon: '🎨', text: pt ? 'Atividade: Faça uma "Tabela da Criação" em cartolina — dias 1 a 7 com desenhos. Cole na parede!' : 'Activity: Make a "Creation Table" on cardboard — days 1–7 with drawings. Hang it on the wall!' },
+    { n: '4', icon: '🙏', text: pt ? 'Orem juntos agradecendo a Deus por ser o Criador perfeito e pedindo que a família reflita a Sua imagem no mundo.' : 'Pray together, thanking God for being the perfect Creator and asking that your family reflect His image.' },
+  ];
+
+  return (
+    <div style={{ paddingBottom: 48 }}>
+
+      {/* ── HERO ── */}
+      <div style={{ borderRadius: 20, background: 'linear-gradient(135deg,rgba(52,211,153,0.13) 0%,rgba(80,200,255,0.08) 60%,rgba(255,200,80,0.08) 100%)', border: '1px solid rgba(52,211,153,0.32)', padding: 'clamp(24px,4vw,36px)', marginBottom: 28, textAlign: 'center' }}>
+        <div style={{ fontSize: 'clamp(48px,8vw,72px)', lineHeight: 1, marginBottom: 10, filter: 'drop-shadow(0 0 24px rgba(52,211,153,0.45))' }}>🏡</div>
+        <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase', color: 'rgba(52,211,153,0.85)', marginBottom: 8 }}>
+          Gênesis 1:1 – 2:4a · Perícope 01 · {pt ? 'Família — Dia 1' : 'Family — Day 1'}
+        </div>
+        <div style={{ fontSize: 'clamp(18px,3.2vw,28px)', fontWeight: 900, color: '#fff', lineHeight: 1.25, marginBottom: 8 }}>
+          {pt ? 'Criados por Deus, para a Glória de Deus' : 'Created by God, for the Glory of God'}
+        </div>
+        <div style={{ fontSize: 'clamp(13px,2vw,15px)', color: 'rgba(255,255,255,0.55)', fontStyle: 'italic', marginBottom: 16 }}>
+          {pt ? 'O Propósito da Sua Família · Tema: A Família como Imagem do Criador' : 'Your Family\'s Purpose · Theme: The Family as Image of the Creator'}
+        </div>
+        <div style={{ display: 'inline-flex', flexWrap: 'wrap', gap: 8, justifyContent: 'center' }}>
+          {[
+            pt ? 'Imagem de Deus' : 'Image of God',
+            pt ? 'Mandato Cultural' : 'Cultural Mandate',
+            pt ? 'Dia do Senhor' : 'Lord\'s Day',
+            pt ? 'Vice-Regência Familiar' : 'Family Vice-Regency',
+          ].map(t => (
+            <span key={t} style={{ fontSize: 11, fontWeight: 700, padding: '3px 12px', borderRadius: 99, background: 'rgba(52,211,153,0.12)', border: '1px solid rgba(52,211,153,0.25)', color: 'rgba(52,211,153,0.90)' }}>{t}</span>
+          ))}
+        </div>
+      </div>
+
+      {/* ── BIG IDEA ── */}
+      <div style={{ borderRadius: 16, background: 'linear-gradient(135deg,rgba(52,211,153,0.10),rgba(255,200,80,0.07))', border: '1.5px solid rgba(52,211,153,0.35)', padding: '20px 24px', marginBottom: 20 }}>
+        <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(52,211,153,0.85)', marginBottom: 8 }}>💡 {pt ? 'Big Idea · Para a Família' : 'Big Idea · For the Family'}</div>
+        <p style={{ fontSize: 'clamp(14px,2vw,17px)', fontWeight: 800, color: '#fff', lineHeight: 1.75, margin: 0 }}>
+          {pt
+            ? 'Deus criou o mundo com ordem e propósito, e cada família existe para refletir Sua glória administrando com fidelidade o que Ele criou.'
+            : 'God created the world with order and purpose, and each family exists to reflect His glory by faithfully stewarding what He created.'}
+        </p>
+      </div>
+
+      {/* ── PERGUNTA + DOUTRINA ── */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))', gap: 14, marginBottom: 28 }}>
+        <div style={{ borderRadius: 14, background: 'rgba(255,100,100,0.06)', border: '1px solid rgba(255,100,100,0.22)', padding: '18px 20px' }}>
+          <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,140,140,0.85)', marginBottom: 8 }}>❓ {pt ? 'Pergunta Central' : 'Central Question'}</div>
+          <p style={{ fontSize: 14, color: 'rgba(255,210,210,0.90)', lineHeight: 1.70, fontStyle: 'italic', margin: 0 }}>
+            {pt
+              ? '"Se Deus planejou cada detalhe da criação com cuidado paternal, o que isso nos ensina sobre como Ele pensa e cuida da nossa família?"'
+              : '"If God planned every detail of creation with fatherly care, what does that teach us about how He thinks about and cares for our family?"'}
+          </p>
+        </div>
+        <div style={{ borderRadius: 14, background: 'rgba(52,211,153,0.08)', border: '1px solid rgba(52,211,153,0.28)', padding: '18px 20px' }}>
+          <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(52,211,153,0.85)', marginBottom: 8 }}>📜 {pt ? 'Doutrina Central' : 'Central Doctrine'}</div>
+          <p style={{ fontSize: 14, fontWeight: 700, color: '#fff', lineHeight: 1.70, margin: 0 }}>
+            {pt
+              ? 'Deus é o Criador soberano que delegou à família humana a mordomia do mundo e a consagrou ao descanso semanal como ensaio do repouso eterno em Cristo.'
+              : 'God is the sovereign Creator who delegated to the human family the stewardship of the world and consecrated them to weekly rest as a rehearsal of eternal rest in Christ.'}
+          </p>
+        </div>
+      </div>
+
+      {/* ── 3 MOVIMENTOS ── */}
+      <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.40)', marginBottom: 14 }}>
+        📐 {pt ? 'Movimentos do Sermão Familiar' : 'Family Sermon Movements'}
+      </div>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: 14, marginBottom: 28 }}>
+        {MOVES.map((mv) => (
+          <div key={mv.num} style={{ borderRadius: 16, background: mv.corL, border: `1px solid ${mv.corB}`, overflow: 'hidden' }}>
+            <div style={{ padding: '12px 16px', background: mv.corB, display: 'flex', alignItems: 'center', gap: 10 }}>
+              <span style={{ fontSize: 22 }}>{mv.emoji}</span>
+              <div>
+                <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: mv.cor }}>
+                  {pt ? 'Movimento' : 'Movement'} {mv.num} · {mv.sym}
+                </div>
+                <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.55)' }}>{mv.ref}</div>
+              </div>
+            </div>
+            <div style={{ padding: '14px 16px' }}>
+              <div style={{ fontSize: 15, fontWeight: 800, color: '#fff', lineHeight: 1.35, marginBottom: 4 }}>{mv.title}</div>
+              <div style={{ fontSize: 12, color: mv.cor.replace('1)', '0.75)'), fontStyle: 'italic', marginBottom: 12 }}>{mv.sub}</div>
+              <div style={{ padding: '8px 12px', borderRadius: 8, background: 'rgba(0,0,0,0.30)', borderLeft: `3px solid ${mv.corB}`, marginBottom: 10 }}>
+                <div style={{ fontSize: 9, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: mv.cor, marginBottom: 4 }}>🔑 {pt ? 'Chave Exegética' : 'Exegetical Key'}</div>
+                <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.78)', lineHeight: 1.60 }}>{mv.key}</div>
+              </div>
+              <div style={{ padding: '8px 12px', borderRadius: 8, background: 'rgba(255,255,255,0.04)', borderLeft: `3px solid ${mv.cor.replace('1)', '0.40)')}` }}>
+                <div style={{ fontSize: 9, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: mv.cor, marginBottom: 4 }}>🏡 {pt ? 'Aplicação Familiar' : 'Family Application'}</div>
+                <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.70)', lineHeight: 1.60, fontStyle: 'italic' }}>{mv.app}</div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* ── EIXO REDENTOR ── */}
+      <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.08)', padding: 'clamp(18px,3vw,24px)', marginBottom: 20 }}>
+        <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.40)', marginBottom: 14 }}>
+          ✝️ {pt ? 'Eixo Redentor · Gênesis → Cristo' : 'Redemptive Axis · Genesis → Christ'}
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(190px,1fr))', gap: 10 }}>
+          {[
+            { at: pt ? 'Criação com ordem (Gn 1)' : 'Creation with order (Gen 1)',          nt: pt ? 'Nova criação em Cristo (Ap 21:1-5)' : 'New creation in Christ (Rev 21:1-5)',         cor: 'rgba(80,200,255,0.14)', emoji: '🌌' },
+            { at: pt ? 'Imagem de Deus (Gn 1:26-27)' : 'Image of God (Gen 1:26-27)',        nt: pt ? 'Novo Adão restaura a imagem (Rm 5:17)' : 'New Adam restores the image (Rom 5:17)',    cor: 'rgba(255,200,80,0.14)', emoji: '👑' },
+            { at: pt ? 'Descanso sabático (Gn 2:2-3)' : 'Sabbath rest (Gen 2:2-3)',         nt: pt ? '"Vinde a mim... darei descanso" (Mt 11:28)' : '"Come to me...I will give rest" (Mt 11:28)', cor: 'rgba(52,211,153,0.14)', emoji: '✨' },
+          ].map((c, i) => (
+            <div key={i} style={{ borderRadius: 12, background: c.cor, border: '1px solid rgba(255,255,255,0.07)', padding: '12px 14px' }}>
+              <div style={{ fontSize: 20, marginBottom: 6 }}>{c.emoji}</div>
+              <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.50)', marginBottom: 4 }}>AT: {c.at}</div>
+              <div style={{ fontSize: 13, color: '#fff', fontWeight: 700, lineHeight: 1.4 }}>NT: {c.nt}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ── APLICAÇÕES POR PÚBLICO ── */}
+      <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.08)', padding: 'clamp(18px,3vw,24px)', marginBottom: 20 }}>
+        <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.40)', marginBottom: 14 }}>
+          🛠️ {pt ? 'Aplicações por Público' : 'Application by Audience'}
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+          {[
+            { pub: pt ? 'Pais' : 'Parents',     emoji: '👨‍👩‍👧', cor: 'rgba(52,211,153,0.20)', app: pt ? 'Esta semana, use um momento à mesa para perguntar: "O que na natureza nos mostra que Deus é grande?" Ouçam cada filho e orem de ação de graças.' : 'This week, at dinner ask: "What in nature shows us that God is great?" Listen to each child and give thanks.' },
+            { pub: pt ? 'Filhos' : 'Children',  emoji: '👧',      cor: 'rgba(80,200,255,0.18)', app: pt ? 'Escolha uma coisa da criação que te parece incrível e pesquise como ela funciona. Depois agradeça a Deus por ter feito isso.' : 'Choose something in creation that amazes you and research how it works. Then thank God for making it.' },
+            { pub: pt ? 'Casal' : 'Couple',      emoji: '💑',      cor: 'rgba(255,200,80,0.18)', app: pt ? 'Conversem sobre como vocês vão guardar o próximo Dia do Senhor. Planejem juntos o culto, o descanso e uma refeição em família — sem telas.' : 'Plan together how you will observe the next Lord\'s Day — worship, rest, a family meal without screens.' },
+            { pub: pt ? 'Avós' : 'Grandparents', emoji: '👴',     cor: 'rgba(180,120,255,0.16)', app: pt ? 'Compartilhem com netos como o ritmo do Dia do Senhor moldou suas vidas. A memória da fidelidade edifica as gerações.' : 'Share with grandchildren how the rhythm of the Lord\'s Day shaped your lives. Faithful memory builds generations.' },
+          ].map((a, i) => (
+            <div key={i} style={{ display: 'flex', gap: 12, alignItems: 'flex-start', padding: '10px 14px', borderRadius: 10, background: a.cor, border: '1px solid rgba(255,255,255,0.06)' }}>
+              <span style={{ fontSize: 20, flexShrink: 0 }}>{a.emoji}</span>
+              <div>
+                <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.60)', marginBottom: 3 }}>{a.pub}</div>
+                <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.85)', lineHeight: 1.60 }}>{a.app}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ── DINÂMICA FAMILIAR ── */}
+      <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.08)', padding: 'clamp(18px,3vw,24px)', marginBottom: 20 }}>
+        <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.40)', marginBottom: 14 }}>
+          🎯 {pt ? 'Dinâmica Familiar · 4 Atividades' : 'Family Dynamic · 4 Activities'}
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))', gap: 10 }}>
+          {ACTIVITIES.map((a) => (
+            <div key={a.n} style={{ borderRadius: 12, background: 'rgba(52,211,153,0.05)', border: '1px solid rgba(52,211,153,0.18)', padding: '14px 16px', display: 'flex', gap: 12 }}>
+              <div style={{ flexShrink: 0, width: 28, height: 28, borderRadius: '50%', background: 'rgba(52,211,153,0.18)', border: '1px solid rgba(52,211,153,0.35)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 12, fontWeight: 900, color: 'rgba(52,211,153,0.90)' }}>{a.n}</div>
+              <div>
+                <div style={{ fontSize: 16, marginBottom: 4 }}>{a.icon}</div>
+                <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.80)', lineHeight: 1.60 }}>{a.text}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ── VOZES REFORMADAS ── */}
+      <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.08)', padding: 'clamp(18px,3vw,24px)', marginBottom: 20 }}>
+        <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.40)', marginBottom: 14 }}>
+          📚 {pt ? 'Vozes Reformadas' : 'Reformed Voices'}
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+          {[
+            { autor: 'Joel Beeke', obra: 'Parenting by God\'s Promises', cor: 'rgba(52,211,153,0.18)', quote: pt ? '"Os pais cristãos têm o privilégio e a responsabilidade de apontar seus filhos ao Criador em cada aspecto da vida."' : '"Christian parents have the privilege and responsibility of pointing their children to the Creator in every aspect of life."' },
+            { autor: 'Herman Bavinck', obra: 'The Christian Family, 1912', cor: 'rgba(80,200,255,0.15)', quote: pt ? '"A família é a célula básica da humanidade, fundada no próprio ato criador de Deus. Onde a família vai bem, a sociedade vai bem."' : '"The family is the basic cell of humanity, founded on God\'s own creative act. Where the family thrives, society thrives."' },
+            { autor: 'J.C. Ryle', obra: 'The Duties of Parents', cor: 'rgba(255,200,80,0.15)', quote: pt ? '"Habituai vossos filhos a pensar em Deus. Ensinai-os cedo que há um Deus que os fez, que os sustenta e a quem eles devem prestar contas."' : '"Accustom your children to think of God. Teach them early that there is a God who made them, sustains them, and to whom they must give account."' },
+          ].map((v, i) => (
+            <div key={i} style={{ padding: '12px 16px', borderRadius: 12, background: v.cor, border: '1px solid rgba(255,255,255,0.07)' }}>
+              <div style={{ fontSize: 11, fontWeight: 900, color: 'rgba(255,255,255,0.75)', marginBottom: 6 }}>{v.autor} · <em style={{ fontWeight: 400 }}>{v.obra}</em></div>
+              <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.85)', fontStyle: 'italic', lineHeight: 1.65 }}>{v.quote}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ── CONCLUSÃO ── */}
+      <div style={{ borderRadius: 16, background: 'linear-gradient(135deg,rgba(52,211,153,0.13),rgba(80,200,255,0.08))', border: '1.5px solid rgba(52,211,153,0.35)', padding: 'clamp(18px,3vw,28px)' }}>
+        <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(52,211,153,0.85)', marginBottom: 12 }}>🏁 {pt ? 'Conclusão' : 'Conclusion'}</div>
+        <p style={{ fontSize: 'clamp(14px,2vw,16px)', color: 'rgba(255,255,255,0.85)', lineHeight: 1.75, margin: '0 0 14px' }}>
+          {pt
+            ? 'A Palavra que disse "haja luz" não parou de falar. Ela ainda ordena, delega e consagra — e sua família existe dentro dessa Palavra. Você não escolheu sua família por acaso: Deus a planejou como o palco onde Sua glória será exibida.'
+            : 'The Word that said "let there be light" has not stopped speaking. It still orders, delegates and consecrates — and your family exists within that Word.'}
+        </p>
+        <div style={{ padding: '14px 18px', borderRadius: 12, background: 'rgba(52,211,153,0.15)', border: '1px solid rgba(52,211,153,0.30)' }}>
+          <p style={{ fontWeight: 800, color: '#fff', margin: 0, fontSize: 'clamp(14px,2vw,16px)', lineHeight: 1.65 }}>
+            {pt
+              ? '🙌 Viva como família à imagem do Deus que criou, com a alegria de quem sabe que o melhor ainda está por vir — na nova criação, onde o sábado será eterno.'
+              : '🙌 Live as a family in the image of the God who created, with the joy of those who know the best is yet to come — in the new creation, where the sabbath will be eternal.'}
+          </p>
+        </div>
+      </div>
+
+    </div>
+  );
+}
+
 export function EsbocosPage() {
   const navigate = useNavigate();
   const [lang, setLang] = useState<'pt'|'en'>('pt');
@@ -2060,7 +2289,7 @@ export function EsbocosPage() {
   const [pericopes, setPericopes] = useState<Pericope[]>([]);
   const [loadingPericopes, setLoadingPericopes] = useState(false);
   const [selectedPericopeIdx, setSelectedPericopeIdx] = useState<number | null>(null);
-  const [contentTab, setContentTab] = useState<'quiasma' | 'familia'>('familia');
+  const [contentTab, setContentTab] = useState<'quiasma' | 'familia' | 'infografico'>('familia');
   const [bookDropOpen, setBookDropOpen] = useState(false);
 
   useEffect(() => {
@@ -2325,7 +2554,8 @@ export function EsbocosPage() {
                   {([
                     { key: 'familia', label: pt ? 'Esboço Familiar' : 'Family Outline' },
                     { key: 'quiasma', label: pt ? 'Estrutura Quiástica' : 'Chiastic Structure' },
-                  ] as { key: 'quiasma' | 'familia'; label: string }[]).map(tab => {
+                    ...(selectedDia?.dia === 1 ? [{ key: 'infografico', label: pt ? '🖼 Infográfico' : '🖼 Infographic' }] : []),
+                  ] as { key: 'quiasma' | 'familia' | 'infografico'; label: string }[]).map(tab => {
                     const active = contentTab === tab.key;
                     return (
                       <button
@@ -2363,7 +2593,11 @@ export function EsbocosPage() {
 
                 {/* Tab content */}
                 <AnimatePresence mode="wait">
-                  {contentTab === 'quiasma' ? (
+                  {contentTab === 'infografico' ? (
+                    <motion.div key="infografico" initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 10 }} transition={{ duration: 0.18 }}>
+                      <InfograficoFamiliaSection pt={pt} />
+                    </motion.div>
+                  ) : contentTab === 'quiasma' ? (
                     <motion.div key="quiasma" initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 10 }} transition={{ duration: 0.18 }}>
                       <QuiasmaSection d={selectedDia} pericopeIdx={selectedPericope.idx} pt={pt} />
                     </motion.div>
