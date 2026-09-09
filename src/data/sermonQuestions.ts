@@ -252,4 +252,5 @@ export const SERMON_QUESTIONS: Record<number, string> = {
   251: "Como podemos receber estas palavras não como vãs, mas como nossa vida e prolongamento de dias na pátria celestial em Cristo?",
   252: "Por que bem-aventurado é o povo cujo Deus é o Senhor que em Cristo culmina toda bênção espiritual nas regiões celestiais?",
   253: "Como Moisés morre fora da terra apontando para o Profeta que viria nos introduzir no verdadeiro repouso prometido em Cristo?",
+  254: "De onde vem a coragem para atravessar o Jordão — e o que Deus prometeu a Josué que é igualmente promessa para a sua família e ministério hoje?",
 };

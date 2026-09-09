@@ -2232,6 +2232,7 @@ export default function PregacaoPage() {
                       const pCorB  = isAT ? C.goldB : C.blueB;
                       const dia    = bookDays[p.idx - 1];
                       const sermonTitle = dia ? SERMON_TITLES[dia.dia] : undefined;
+                      const sermonQuestion = dia ? SERMON_QUESTIONS[dia.dia] : undefined;
 
                       // Paleta rotativa sutil para dar personalidade a cada card
                       const CARD_ACCENTS = [
@@ -2321,7 +2322,7 @@ export default function PregacaoPage() {
                             {/* Título do sermão — destaque principal */}
                             {sermonTitle && (
                               <div style={{
-                                fontSize: 13, fontWeight: 800, lineHeight: 1.42,
+                                fontSize: 'clamp(13px,1.8vw,15px)', fontWeight: 800, lineHeight: 1.42,
                                 color: accentFull,
                                 marginBottom: 8,
                                 overflow: 'hidden', display: '-webkit-box',
@@ -2331,15 +2332,33 @@ export default function PregacaoPage() {
                               </div>
                             )}
 
+                            {/* Pergunta do sermão */}
+                            {sermonQuestion && (
+                              <div style={{
+                                fontSize: 'clamp(11px,1.5vw,12px)', fontWeight: 600, lineHeight: 1.55,
+                                color: `${accent.glow}0.72)`,
+                                fontStyle: 'italic',
+                                marginBottom: 8,
+                                padding: '6px 10px',
+                                borderRadius: 7,
+                                background: `${accent.glow}0.06)`,
+                                borderLeft: `2px solid ${accent.glow}0.40)`,
+                                overflow: 'hidden', display: '-webkit-box',
+                                WebkitLineClamp: 3, WebkitBoxOrient: 'vertical',
+                              }}>
+                                {sermonQuestion}
+                              </div>
+                            )}
+
                             {/* Título da perícope — referência secundária */}
                             <div style={{
-                              fontSize: 10, fontWeight: 600, lineHeight: 1.4,
+                              fontSize: 'clamp(10px,1.3vw,11px)', fontWeight: 600, lineHeight: 1.4,
                               color: accentStrong,
-                              opacity: 0.75,
+                              opacity: 0.70,
                               overflow: 'hidden', display: '-webkit-box',
                               WebkitLineClamp: 2, WebkitBoxOrient: 'vertical',
-                              paddingTop: sermonTitle ? 6 : 0,
-                              borderTop: sermonTitle ? `1px solid ${accentBorderL}` : 'none',
+                              paddingTop: (sermonTitle || sermonQuestion) ? 6 : 0,
+                              borderTop: (sermonTitle || sermonQuestion) ? `1px solid ${accentBorderL}` : 'none',
                             }}>
                               {p.titulo}
                             </div>

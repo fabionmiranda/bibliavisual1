@@ -259,4 +259,5 @@ export const SERMON_TITLES: Record<number, string> = {
   251: "Estas Palavras São a Vossa Vida: A Tensão entre a Fidelidade e o Juízo",
   252: "Bem-aventurado o Povo cujo Deus é o SENHOR: Não Há Outro como ele",
   253: "Moisés Morre, o Profeta Maior Virá: A Promessa Aguarda Outro",
+  254: "Levanta-te e Atravessa: A Comissão Soberana que Não Aguarda o Luto",
 };

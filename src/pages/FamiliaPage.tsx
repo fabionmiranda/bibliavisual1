@@ -140,6 +140,18 @@ function extractBibleRef(content: string | null): string {
   return m ? m[1].trim() : '';
 }
 
+function extractBigIdeia(content: string | null): string {
+  if (!content) return '';
+  const m = content.match(/^BIG IDEA PARA A FAMÍLIA\s*\n([^\n]+)/m);
+  return m ? m[1].trim().replace(/^"|"$/g, '') : '';
+}
+
+function extractSermonTitulo(content: string | null): string {
+  if (!content) return '';
+  const m = content.match(/^TÍTULO DO SERMÃO FAMILIAR\s*\n([^\n]+)/m);
+  return m ? m[1].trim() : '';
+}
+
 function extractQuiasmaBloco(text: string, idx: number): string {
   const normalized = text.replace(/'|'|ʼ/g, "'");
   const markerRe = new RegExp(`^\\[0*${idx}\\]`);
@@ -508,6 +520,8 @@ function PericopeCard({
   const tema = extractTema(conteudo);
   const hasTema = tema.length > 0;
   const bibleRef = extractBibleRef(conteudo);
+  const bigIdeia = extractBigIdeia(conteudo);
+  const sermonTitulo = extractSermonTitulo(conteudo);
 
   return (
     <motion.div
@@ -555,84 +569,51 @@ function PericopeCard({
       </div>
 
       <div style={{ padding: '14px 18px 18px' }}>
+        {/* Bible ref badge + pericope title row */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10, paddingRight: 64, flexWrap: 'wrap' }}>
+          {bibleRef && (
+            <span style={{ fontSize: 'clamp(11px,1.5vw,13px)', fontWeight: 800, padding: '3px 10px', borderRadius: 7, background: accentAlpha(0.14), border: `1px solid ${accentAlpha(0.45)}`, color: accentColor, letterSpacing: '0.04em', whiteSpace: 'nowrap' }}>
+              {bibleRef}
+            </span>
+          )}
+          <span style={{ fontSize: 'clamp(10px,1.4vw,12px)', fontWeight: 700, color: accentAlpha(0.65), letterSpacing: '0.06em', textTransform: 'uppercase', lineHeight: 1.3, overflow: 'hidden', display: '-webkit-box', WebkitLineClamp: 1, WebkitBoxOrient: 'vertical' }}>
+            {p.titulo}
+          </span>
+        </div>
+
         {/* TEMA — most prominent */}
         {hasTema ? (
-          <div style={{
-            fontSize: 'clamp(15px,2.6vw,18px)',
-            fontWeight: 800,
-            color: accentColor,
-            lineHeight: 1.35,
-            marginBottom: 10,
-            paddingRight: 72,
-          }}>
+          <div style={{ fontSize: 'clamp(15px,2.6vw,18px)', fontWeight: 900, color: accentColor, lineHeight: 1.3, marginBottom: sermonTitulo ? 6 : 10 }}>
             {tema}
           </div>
         ) : (
-          <div style={{
-            fontSize: 'clamp(13px,2.2vw,15px)',
-            fontWeight: 600,
-            color: C.muted,
-            lineHeight: 1.4,
-            marginBottom: 10,
-            fontStyle: 'italic',
-            paddingRight: 72,
-          }}>
+          <div style={{ fontSize: 'clamp(13px,2.2vw,15px)', fontWeight: 600, color: C.muted, lineHeight: 1.4, marginBottom: 10, fontStyle: 'italic' }}>
             {pt ? 'Em breve...' : 'Coming soon...'}
           </div>
         )}
 
-        {/* Pericope title */}
-        <div style={{
-          fontSize: 12,
-          fontWeight: 700,
-          color: accentAlpha(0.80),
-          letterSpacing: '0.06em',
-          textTransform: 'uppercase',
-          marginBottom: 5,
-          lineHeight: 1.4,
-          overflow: 'hidden',
-          display: '-webkit-box',
-          WebkitLineClamp: 2,
-          WebkitBoxOrient: 'vertical',
-        }}>
-          {p.titulo}
-        </div>
-
-        {/* Bible reference — from paraFamilia content */}
-        {bibleRef && (
-          <div style={{
-            display: 'inline-flex',
-            alignItems: 'center',
-            marginTop: 8,
-            padding: '4px 10px',
-            borderRadius: 8,
-            background: accentAlpha(0.12),
-            border: `1px solid ${accentAlpha(0.40)}`,
-            fontSize: 12,
-            fontWeight: 800,
-            color: accentColor,
-            letterSpacing: '0.05em',
-          }}>
-            {bibleRef}
+        {/* Sermon title */}
+        {sermonTitulo && (
+          <div style={{ fontSize: 'clamp(13px,2vw,15px)', fontWeight: 700, color: 'rgba(255,255,255,0.85)', lineHeight: 1.45, marginBottom: 10, fontStyle: 'italic', borderLeft: `3px solid ${accentAlpha(0.50)}`, paddingLeft: 10 }}>
+            "{sermonTitulo}"
           </div>
         )}
 
-        {/* Active indicator dot */}
+        {/* Big Idea */}
+        {bigIdeia && (
+          <div style={{ padding: '8px 12px', borderRadius: 9, background: accentAlpha(0.07), border: `1px solid ${accentAlpha(0.22)}`, marginBottom: 10 }}>
+            <div style={{ fontSize: 'clamp(9px,1.2vw,11px)', fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: accentAlpha(0.70), marginBottom: 4 }}>💡 {pt ? 'Big Idea' : 'Big Idea'}</div>
+            <div style={{ fontSize: 'clamp(12px,1.7vw,14px)', color: 'rgba(255,255,255,0.78)', lineHeight: 1.55, overflow: 'hidden', display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical' }}>
+              {bigIdeia}
+            </div>
+          </div>
+        )}
+
+        {/* Active indicator */}
         {active && (
-          <div style={{
-            marginTop: 10,
-            display: 'flex',
-            alignItems: 'center',
-            gap: 6,
-          }}>
-            <div style={{
-              width: 6,
-              height: 6,
-              borderRadius: '50%',
-              background: accentColor,
-              boxShadow: `0 0 10px ${accentColor}`,
-            }} />
-            <span style={{ fontSize: 10, fontWeight: 700, color: accentAlpha(0.75), letterSpacing: '0.10em', textTransform: 'uppercase' }}>{pt ? 'Selecionada' : 'Selected'}</span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginTop: 4 }}>
+            <div style={{ width: 6, height: 6, borderRadius: '50%', background: accentColor, boxShadow: `0 0 10px ${accentColor}` }} />
+            <span style={{ fontSize: 'clamp(9px,1.2vw,11px)', fontWeight: 700, color: accentAlpha(0.75), letterSpacing: '0.10em', textTransform: 'uppercase' }}>{pt ? 'Selecionada' : 'Selected'}</span>
           </div>
         )}
       </div>

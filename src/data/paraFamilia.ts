@@ -2329,8 +2329,7 @@ AUTORES REFORMADOS
 
   if (d.dia === 254) return `PARA A FAMÍLIA · Josué 1:1–18
 
-TEMA
-A Família que Avança: Coragem, Palavra e Solidariedade Pactual
+TEMA: Levanta-te, Família: Coragem pela Palavra, Avanço pelo Pacto
 
 TÍTULO DO SERMÃO FAMILIAR
 Levanta-te e Atravessa — A Família que Não Para no Jordão
