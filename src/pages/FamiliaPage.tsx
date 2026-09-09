@@ -2051,6 +2051,179 @@ export function CasadosPage() {
   );
 }
 
+// ─── Infográfico Família Josué 1 ─────────────────────────────────────
+function InfograficoJosueFamiliaSection({ pt }: { pt: boolean }) {
+  const MOVES = [
+    {
+      num: 'I', sym: 'Js 1:1–5',
+      title: pt ? 'A Palavra que Comissiona a Família' : 'The Word that Commissions the Family',
+      sub: pt ? 'Deus fala no luto — "levanta-te e atravessa"' : 'God speaks in mourning — "rise and cross"',
+      emoji: '📯',
+      key: pt ? 'A comissão vem no luto, não depois dele. YHWH não espera condições perfeitas — Ele fala à família no momento mais difícil.' : 'The commission comes in mourning, not after it. YHWH does not wait for perfect conditions — He speaks to the family in the hardest moment.',
+      app: pt ? 'Pais: não esperem o momento perfeito para liderar espiritualmente. A comissão de Deus para a família chega agora.' : 'Parents: don\'t wait for the perfect moment to lead spiritually. God\'s commission for the family comes now.',
+      cor: 'rgba(255,180,50,1)', corL: 'rgba(255,180,50,0.10)', corB: 'rgba(255,180,50,0.28)',
+    },
+    {
+      num: 'II', sym: 'Js 1:6–9',
+      title: pt ? 'A Palavra que Forma Coragem no Lar' : 'The Word that Forms Courage at Home',
+      sub: pt ? '"Não se aparte da tua boca este livro da Lei" — hagah diurno e noturno' : '"This Book of the Law shall not depart from your mouth" — day and night hagah',
+      emoji: '📜',
+      key: pt ? 'Hagah = ruminação em voz baixa. Sucesso vinculado à meditação, não ao esforço. "Sê forte e corajoso" 3× — a ordem produz o que ordena quando a Palavra é meditada.' : 'Hagah = audible rumination. Success tied to meditation, not effort. "Be strong and courageous" 3× — the command produces what it commands when the Word is meditated.',
+      app: pt ? 'Casal e pais: estabeleçam leitura bíblica familiar diária. A família que rumina a Palavra cria filhos corajosos sem esforço artificial.' : 'Couples and parents: establish daily family Bible reading. The family that ruminates the Word raises courageous children without artificial effort.',
+      cor: 'rgba(52,211,153,1)', corL: 'rgba(52,211,153,0.10)', corB: 'rgba(52,211,153,0.28)',
+    },
+    {
+      num: 'III', sym: 'Js 1:10–18',
+      title: pt ? 'A Família que Avança Junta em Solidariedade' : 'The Family that Advances Together in Solidarity',
+      sub: pt ? '"Passareis armados diante de vossos irmãos" — ninguém descansa sozinho' : '"You shall pass over armed before your brothers" — no one rests alone',
+      emoji: '🛡️',
+      key: pt ? 'As tribos que já tinham herança acompanharam as que ainda lutavam. Na família: o filho estabelecido acompanha o pai idoso; os pais saudáveis apoiam o filho em crise. Ninguém descansa enquanto o irmão ainda luta.' : 'Tribes with inheritance accompanied those still fighting. In the family: the established child accompanies the aging parent; healthy parents support the child in crisis. No one rests while a sibling still fights.',
+      app: pt ? 'Mapeiem quem na família ainda não entrou no repouso. Planejem uma ação concreta de solidariedade esta semana.' : 'Map who in the family has not yet entered rest. Plan a concrete solidarity action this week.',
+      cor: 'rgba(80,200,255,1)', corL: 'rgba(80,200,255,0.10)', corB: 'rgba(80,200,255,0.28)',
+    },
+  ];
+
+  const ACTIVITIES = [
+    { n: '1', icon: '📖', text: pt ? 'Leiam Js 1:1-2 juntos. "O que estava acontecendo quando Deus falou? Quando Deus fala à nossa família — nos momentos difíceis ou fáceis?"' : 'Read Josh 1:1-2 together. "What was happening when God spoke? Does God speak to our family in hard moments or easy ones?"' },
+    { n: '2', icon: '💬', text: pt ? 'Leiam Js 1:8. Cada membro sugere um momento do dia para "ruminar" a Palavra. Comprometam-se a fazer por 7 dias.' : 'Read Josh 1:8. Each member suggests a time of day to "ruminate" the Word. Commit to doing it for 7 days.' },
+    { n: '3', icon: '✊', text: pt ? 'Contem quantas vezes aparece "sê forte e corajoso" (vv.6,7,9). "Por que 3 vezes? Que tipo de coragem Deus está ordenando?"' : 'Count how many times "be strong and courageous" appears (vv.6,7,9). "Why 3 times? What kind of courage is God commanding?"' },
+    { n: '4', icon: '🤝', text: pt ? 'Leiam Js 1:14. "Que irmão na nossa família ou comunidade ainda está lutando enquanto nós já estamos em repouso? O que faremos?"' : 'Read Josh 1:14. "Which sibling in our family or community is still fighting while we are at rest? What will we do?"' },
+    { n: '5', icon: '🙏', text: pt ? 'Cada membro nomeia um "Jordão" pessoal — algo que está evitando atravessar. Orem juntos pedindo coragem pela Palavra.' : 'Each member names a personal "Jordan" — something they are avoiding crossing. Pray together for courage through the Word.' },
+    { n: '6', icon: '📝', text: pt ? 'Escrevam Js 1:9 em um papel e colem na geladeira ou espelho. Lembrem-se diariamente: "o SENHOR teu Deus é contigo por onde quer que andares."' : 'Write Josh 1:9 on paper and stick it on the fridge or mirror. Remember daily: "the LORD your God is with you wherever you go."' },
+  ];
+
+  const APPS_FAMILIA = [
+    { role: pt ? 'Pais' : 'Parents', icon: '👨‍👩‍👧', text: pt ? 'Vocês são os "oficiais" de Js 1:10 — responsáveis por mobilizar a família para o avanço. Estabeleçam devoção familiar diária e liderem com exemplo.' : 'You are the "officers" of Josh 1:10 — responsible for mobilizing the family. Establish daily family devotion and lead by example.' },
+    { role: pt ? 'Filhos' : 'Children', icon: '👦', text: pt ? 'A coragem que YHWH ordenou a Josué está disponível para vocês — não como sentimento, mas como produto da meditação. Leiam a Bíblia. A Palavra produz o que ordena.' : 'The courage YHWH commanded Joshua is available to you — not as a feeling, but as a product of meditation. Read the Bible. The Word produces what it commands.' },
+    { role: pt ? 'Noivos' : 'Engaged', icon: '💍', text: pt ? 'Antes de casar, perguntem: "qual será nosso Jordão juntos?" e "como nossa devoção juntos nos preparará para atravessá-lo?" A família que começa com hagah chega ao outro lado.' : 'Before marrying, ask: "what will our Jordan be together?" and "how will our devotion together prepare us to cross it?" The family that begins with hagah reaches the other side.' },
+    { role: pt ? 'Casal' : 'Couple', icon: '👫', text: pt ? 'Revisem juntos se a devoção familiar está acontecendo. Se parou, recomece hoje. O "levanta-te" de Js 1:2 é agora — não amanhã.' : 'Review together whether family devotion is happening. If it stopped, restart today. The "rise" of Josh 1:2 is now — not tomorrow.' },
+    { role: pt ? 'Avós' : 'Grandparents', icon: '👴', text: pt ? 'Vocês já cruzaram muitos Jordões. Contem isso aos netos. Seu testemunho de fidelidade de Deus é o "sê forte e corajoso" mais poderoso que podem pronunciar sobre a próxima geração.' : 'You have crossed many Jordans. Tell your grandchildren. Your testimony of God\'s faithfulness is the most powerful "be strong and courageous" you can speak over the next generation.' },
+  ];
+
+  return (
+    <div style={{ paddingBottom: 48 }}>
+
+      {/* ── HERO ── */}
+      <div style={{ borderRadius: 20, background: 'linear-gradient(135deg,rgba(255,180,50,0.13) 0%,rgba(52,211,153,0.09) 60%,rgba(80,200,255,0.07) 100%)', border: '1px solid rgba(255,180,50,0.30)', padding: 'clamp(24px,4vw,36px)', marginBottom: 28, textAlign: 'center' }}>
+        <div style={{ fontSize: 'clamp(48px,8vw,72px)', lineHeight: 1, marginBottom: 10, filter: 'drop-shadow(0 0 24px rgba(255,180,50,0.50))' }}>🏡⚔️</div>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase', color: 'rgba(255,180,50,0.85)', marginBottom: 8 }}>
+          Josué 1:1–18 · Perícope 254 · {pt ? 'Família — Dia 254' : 'Family — Day 254'}
+        </div>
+        <div style={{ fontSize: 'clamp(18px,3.2vw,28px)', fontWeight: 900, color: '#fff', lineHeight: 1.25, marginBottom: 8 }}>
+          {pt ? 'Levanta-te e Atravessa — A Família que Não Para no Jordão' : 'Rise and Cross Over — The Family that Does Not Stop at the Jordan'}
+        </div>
+        <div style={{ fontSize: 'clamp(13px,2vw,15px)', color: 'rgba(255,255,255,0.55)', fontStyle: 'italic', marginBottom: 16 }}>
+          {pt ? 'Coragem, Palavra e Solidariedade Pactual' : 'Courage, Word and Covenantal Solidarity'}
+        </div>
+        <div style={{ display: 'inline-flex', flexWrap: 'wrap', gap: 8, justifyContent: 'center' }}>
+          {[
+            pt ? 'Comissão Familiar' : 'Family Commission',
+            pt ? 'Hagah Diário' : 'Daily Hagah',
+            pt ? 'Solidariedade Pactual' : 'Covenantal Solidarity',
+            pt ? 'Coragem pela Palavra' : 'Courage through Word',
+          ].map(t => (
+            <span key={t} style={{ fontSize: 'clamp(12px,1.5vw,14px)', fontWeight: 700, padding: '3px 12px', borderRadius: 99, background: 'rgba(255,180,50,0.12)', border: '1px solid rgba(255,180,50,0.28)', color: 'rgba(255,180,50,0.92)' }}>{t}</span>
+          ))}
+        </div>
+      </div>
+
+      {/* ── BIG IDEA ── */}
+      <div style={{ borderRadius: 16, background: 'linear-gradient(135deg,rgba(52,211,153,0.10),rgba(255,180,50,0.07))', border: '1.5px solid rgba(52,211,153,0.32)', padding: '20px 24px', marginBottom: 20 }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(52,211,153,0.85)', marginBottom: 8 }}>💡 {pt ? 'Big Idea · Para a Família' : 'Big Idea · For the Family'}</div>
+        <p style={{ fontSize: 'clamp(16px,2.2vw,19px)', fontWeight: 800, color: '#fff', lineHeight: 1.75, margin: 0 }}>
+          {pt
+            ? 'Deus comissiona cada família cristã para avançar com coragem na obediência — não pela força própria, mas pela meditação diária na Sua Palavra e pela solidariedade com os irmãos que ainda lutam.'
+            : 'God commissions each Christian family to advance with courage in obedience — not by their own strength, but through daily meditation on His Word and solidarity with brothers still fighting.'}
+        </p>
+      </div>
+
+      {/* ── PERGUNTA + DOUTRINA ── */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))', gap: 14, marginBottom: 28 }}>
+        <div style={{ borderRadius: 14, background: 'rgba(255,100,100,0.06)', border: '1px solid rgba(255,100,100,0.22)', padding: '18px 20px' }}>
+          <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,140,140,0.85)', marginBottom: 8 }}>❓ {pt ? 'Pergunta Central' : 'Central Question'}</div>
+          <p style={{ fontSize: 'clamp(15px,2vw,17px)', color: 'rgba(255,210,210,0.90)', lineHeight: 1.70, fontStyle: 'italic', margin: 0 }}>
+            {pt
+              ? '"O que faz a nossa família parar diante dos seus Jordões — e como a Palavra de Deus pode nos dar coragem para atravessá-los juntos?"'
+              : '"What makes our family stop at its Jordans — and how can God\'s Word give us courage to cross them together?"'}
+          </p>
+        </div>
+        <div style={{ borderRadius: 14, background: 'rgba(52,211,153,0.08)', border: '1px solid rgba(52,211,153,0.28)', padding: '18px 20px' }}>
+          <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(52,211,153,0.85)', marginBottom: 8 }}>📜 {pt ? 'Doutrina Central' : 'Central Doctrine'}</div>
+          <p style={{ fontSize: 'clamp(15px,2vw,17px)', fontWeight: 700, color: '#fff', lineHeight: 1.70, margin: 0 }}>
+            {pt
+              ? 'A família cristã avança com coragem não pela força do temperamento, mas pela meditação constante na Palavra — e por isso avança junta, em solidariedade pactual, até que todos entrem no repouso que Cristo conquistou.'
+              : 'The Christian family advances with courage not through natural temperament, but through constant meditation on the Word — and thus advances together, in covenantal solidarity, until all enter the rest Christ secured.'}
+          </p>
+        </div>
+      </div>
+
+      {/* ── MOVIMENTOS ── */}
+      <div style={{ marginBottom: 28 }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.45)', marginBottom: 16 }}>
+          📋 {pt ? 'Movimentos do Sermão Familiar' : 'Family Sermon Movements'}
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: 14 }}>
+          {MOVES.map(m => (
+            <div key={m.num} style={{ borderRadius: 16, background: m.corL, border: `1.5px solid ${m.corB}`, padding: '18px 20px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 10 }}>
+                <div style={{ width: 34, height: 34, borderRadius: 9, background: `${m.cor}22`, border: `1.5px solid ${m.cor}55`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 'clamp(16px,2vw,18px)', fontWeight: 900, color: m.cor }}>{m.emoji}</div>
+                <div>
+                  <div style={{ fontSize: 'clamp(11px,1.3vw,12px)', fontWeight: 700, color: m.cor, letterSpacing: '0.12em' }}>{m.num} · {m.sym}</div>
+                  <div style={{ fontSize: 'clamp(14px,1.8vw,16px)', fontWeight: 800, color: '#fff', lineHeight: 1.3 }}>{m.title}</div>
+                </div>
+              </div>
+              <div style={{ fontSize: 'clamp(13px,1.6vw,14px)', color: 'rgba(255,255,255,0.60)', fontStyle: 'italic', marginBottom: 8 }}>{m.sub}</div>
+              <div style={{ fontSize: 'clamp(13px,1.6vw,14px)', color: 'rgba(255,255,255,0.82)', lineHeight: 1.60, marginBottom: 10, padding: '8px 10px', borderRadius: 8, background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.07)' }}>{m.key}</div>
+              <div style={{ fontSize: 'clamp(13px,1.6vw,14px)', color: m.cor, lineHeight: 1.55, fontWeight: 600 }}>▸ {m.app}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ── APLICAÇÕES POR PAPEL NA FAMÍLIA ── */}
+      <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.09)', padding: 'clamp(18px,3vw,26px)', marginBottom: 28 }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(52,211,153,0.70)', marginBottom: 18, textAlign: 'center' }}>
+          🎯 {pt ? 'Aplicações por Papel na Família' : 'Applications by Family Role'}
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(220px,1fr))', gap: 12 }}>
+          {APPS_FAMILIA.map(a => (
+            <div key={a.role} style={{ borderRadius: 12, background: 'rgba(52,211,153,0.07)', border: '1px solid rgba(52,211,153,0.20)', padding: '14px 16px' }}>
+              <div style={{ fontSize: 'clamp(14px,1.8vw,16px)', fontWeight: 800, color: 'rgba(52,211,153,0.95)', marginBottom: 6 }}>{a.icon} {a.role}</div>
+              <div style={{ fontSize: 'clamp(13px,1.6vw,14px)', color: 'rgba(255,255,255,0.78)', lineHeight: 1.60 }}>{a.text}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ── DINÂMICA FAMILIAR ── */}
+      <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.09)', padding: 'clamp(18px,3vw,26px)', marginBottom: 28 }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,180,50,0.70)', marginBottom: 18, textAlign: 'center' }}>
+          🎲 {pt ? 'Dinâmica Familiar — 6 Atividades' : 'Family Activities — 6 Activities'}
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))', gap: 10 }}>
+          {ACTIVITIES.map(a => (
+            <div key={a.n} style={{ borderRadius: 12, background: 'rgba(255,180,50,0.07)', border: '1px solid rgba(255,180,50,0.20)', padding: '12px 14px', display: 'flex', gap: 10 }}>
+              <div style={{ fontSize: 'clamp(18px,2.4vw,22px)', lineHeight: 1.2 }}>{a.icon}</div>
+              <div style={{ fontSize: 'clamp(13px,1.6vw,14px)', color: 'rgba(255,255,255,0.82)', lineHeight: 1.60 }}><span style={{ fontWeight: 800, color: 'rgba(255,200,80,0.90)' }}>{a.n}. </span>{a.text}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ── CONCLUSÃO ── */}
+      <div style={{ borderRadius: 16, background: 'linear-gradient(135deg,rgba(255,180,50,0.10),rgba(52,211,153,0.07))', border: '1.5px solid rgba(52,211,153,0.28)', padding: '20px 24px' }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(52,211,153,0.85)', marginBottom: 10 }}>🏁 {pt ? 'Conclusão' : 'Conclusion'}</div>
+        <p style={{ fontSize: 'clamp(14px,1.8vw,16px)', color: 'rgba(255,255,255,0.85)', lineHeight: 1.75, margin: 0 }}>
+          {pt
+            ? 'Família amada, o Jordão diante de vocês não é obstáculo — é a fronteira da obediência. A família que medita na Palavra juntos, avança junta. Os que já têm repouso acompanham os que ainda lutam. E do outro lado está o repouso eterno que Cristo já conquistou pela ressurreição. Levanta-te, família. Atravessa. O SENHOR vai na tua frente.'
+            : 'Beloved family, the Jordan before you is not an obstacle — it is the boundary of obedience. The family that meditates on the Word together advances together. Those already at rest accompany those still fighting. And on the other side is the eternal rest Christ secured through resurrection. Rise, family. Cross over. The LORD goes before you.'}
+        </p>
+      </div>
+
+    </div>
+  );
+}
+
 // ─── Esboços Page ────────────────────────────────────────────────────
 // ─── Infográfico Família Card 1 ──────────────────────────────────────
 function InfograficoFamiliaSection({ pt }: { pt: boolean }) {
@@ -2554,7 +2727,7 @@ export function EsbocosPage() {
                   {([
                     { key: 'familia', label: pt ? 'Esboço Familiar' : 'Family Outline' },
                     { key: 'quiasma', label: pt ? 'Estrutura Quiástica' : 'Chiastic Structure' },
-                    ...(selectedDia?.dia === 1 ? [{ key: 'infografico', label: pt ? '🖼 Infográfico' : '🖼 Infographic' }] : []),
+                    ...(selectedDia?.dia === 1 || selectedDia?.dia === 254 ? [{ key: 'infografico', label: pt ? '🖼 Infográfico' : '🖼 Infographic' }] : []),
                   ] as { key: 'quiasma' | 'familia' | 'infografico'; label: string }[]).map(tab => {
                     const active = contentTab === tab.key;
                     return (
@@ -2595,7 +2768,7 @@ export function EsbocosPage() {
                 <AnimatePresence mode="wait">
                   {contentTab === 'infografico' ? (
                     <motion.div key="infografico" initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 10 }} transition={{ duration: 0.18 }}>
-                      <InfograficoFamiliaSection pt={pt} />
+                      {selectedDia?.dia === 254 ? <InfograficoJosueFamiliaSection pt={pt} /> : <InfograficoFamiliaSection pt={pt} />}
                     </motion.div>
                   ) : contentTab === 'quiasma' ? (
                     <motion.div key="quiasma" initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 10 }} transition={{ duration: 0.18 }}>

@@ -2327,5 +2327,69 @@ AUTORES REFORMADOS
 ▸ Herman Bavinck (The Christian Family): "Que Abraão insistisse em pagar o preço justo mesmo quando lhe foi oferecido o campo gratuitamente revela integridade comercial integrada à fé. A família cristã não aceita vantagens indevidas mesmo quando oferecidas por gentileza — porque sua reputação de honestidade é parte de seu testemunho."
 ▸ R.C. Sproul (Last Days According to Jesus): "O cuidado cristão com os mortos não é superstição: é confissão escatológica. O corpo que é sepultado aguarda a ressurreição. A família que cuida dos mortos com dignidade está confessando que eles não são descartáveis, mas pessoas feitas à imagem de Deus que aguardam a redenção completa do corpo."`;
 
+  if (d.dia === 254) return `PARA A FAMÍLIA · Josué 1:1–18
+
+TEMA
+A Família que Avança: Coragem, Palavra e Solidariedade Pactual
+
+TÍTULO DO SERMÃO FAMILIAR
+Levanta-te e Atravessa — A Família que Não Para no Jordão
+
+BIG IDEA PARA A FAMÍLIA
+Deus comissiona cada família cristã para avançar com coragem na obediência — não pela força própria, mas pela meditação diária na Sua Palavra e pela solidariedade com os irmãos que ainda lutam.
+
+PERGUNTA PARA A FAMÍLIA
+O que faz a nossa família parar diante dos seus "Jordões" — e como a Palavra de Deus pode nos dar coragem para atravessá-los juntos?
+
+PALAVRA-CHAVE DE TRANSIÇÃO
+AVANÇO (a família que medita na Palavra avança onde a força própria paralisa)
+
+MOVIMENTOS DO SERMÃO
+
+I. A PALAVRA QUE COMISSIONA: DEUS FALA À FAMÍLIA (Js 1:1–5)
+A família cristã não escolhe seus próprios projetos — ela recebe comissão de Deus. Como YHWH falou a Josué imediatamente após a morte de Moisés, Ele fala à sua família hoje pela Palavra: "levanta-te e atravessa." Os "Jordões" da sua família — mudanças de vida, perdas, desafios financeiros, filhos rebeldes — não são acidentes. São a voz de Deus dizendo: "agora avance." A promessa "não te deixarei nem te abandonarei" (v.5b, citada em Hb 13:5) é para cada família que caminha em aliança com Ele.
+
+Aplicação: Pais, leiam Js 1:1-5 em voz alta juntos e perguntem: "Qual é o 'Jordão' que nossa família está evitando atravessar?" Orem pedindo coragem para obedecer à comissão de Deus para sua família específica.
+
+II. A PALAVRA QUE FORMA CORAGEM: MEDITAÇÃO DIÁRIA (Js 1:6–9)
+"Sê forte e corajoso" aparece três vezes em quatro versículos — mas a fonte da coragem não é força de vontade. É meditação na Lei. "Não se aparte da tua boca este livro da Lei; medita nele dia e noite" (v.8). O verbo hagah significa ruminação — como um animal que mastiga o bolo. A família que "rumina" a Palavra durante o dia (à mesa, no carro, antes de dormir) cria um ambiente onde a coragem cresce naturalmente nos filhos — não por sermões ocasionais, mas por imersão constante.
+
+Aplicação: Casal e pais, estabeleçam uma leitura bíblica familiar diária — não apenas domingo. Joel Beeke (Family Worship): "A prática de ler a Bíblia juntos como família é o meio que Deus usa mais poderosamente para moldar o caráter dos filhos para a geração seguinte."
+
+III. A PALAVRA QUE UNE: SOLIDARIEDADE PACTUAL DA FAMÍLIA (Js 1:10–18)
+As tribos transjordânicas já tinham sua herança — poderiam ficar. Mas o princípio pactual exige: "passareis armados diante de vossos irmãos" (v.14). Ninguém descansa enquanto o irmão ainda luta. Na família cristã: o filho que já estabeleceu sua vida não abandona os pais idosos; os pais que já têm estabilidade não se isolam dos filhos em crise; o casal saudável acompanha o que está em dificuldade. A família pactual avança junta.
+
+Aplicação: Como família, mapeiem quem entre vocês — e em sua família estendida — ainda não entrou no "repouso". Planejem uma ação concreta de solidariedade esta semana. Voddie Baucham (Family Driven Faith): "A família cristã não existe como ilha de segurança — ela é unidade de missão dentro do corpo de Cristo."
+
+EIXO REDENTOR
+Josué (Yehoshua = YHWH salva) é sombra de Jesus. O Josué histórico levou Israel a um repouso provisório; Jesus conduz Sua família — a Igreja — ao repouso eterno (Hb 4:9-10). Cada "Jordão" que a família cristã atravessa pela fé é um ensaio da travessia final que Cristo já garantiu pela ressurreição.
+
+DOUTRINA CENTRAL
+A família cristã avança com coragem não pela força do temperamento ou da situação, mas pela meditação constante na Palavra de Deus — e por isso avança junta, em solidariedade pactual, até que todos entrem no repouso que Cristo conquistou.
+
+APLICAÇÕES PARA A FAMÍLIA
+▸ Para os Pais: vocês são os "oficiais" de Js 1:10-11 — líderes responsáveis por mobilizar a família para o avanço. Estabeleçam devoção familiar diária e liderem com o exemplo da meditação na Palavra.
+▸ Para os Filhos: a coragem que YHWH ordenou a Josué está disponível para vocês também — não como sentimento, mas como produto da meditação. Leiam a Bíblia. Memorizem versículos. A Palavra produz o que ordena.
+▸ Para os Noivos: antes de casar, perguntem: "qual será nosso 'Jordão' juntos?" e "como nossa vida de oração e Palavra nos preparará para atravessá-lo?" A família que começa com hagah chega ao outro lado.
+▸ Para o Casal: revisem juntos se a devoção familiar está acontecendo. Se parou, recomece hoje — não amanhã. O "levanta-te" de Js 1:2 é agora.
+▸ Para os Avós: vocês são os que já cruzaram muitos Jordões. Contem isso aos netos. Seu testemunho de fidelidade de Deus ao longo da vida é o "sê forte e corajoso" mais poderoso que podem pronunciar sobre a geração seguinte.
+
+DINÂMICA FAMILIAR
+1. Leiam Js 1:1-2 juntos. Perguntem: "O que estava acontecendo quando Deus falou a Josué? O que isso nos diz sobre quando Deus fala à nossa família — nos momentos difíceis ou somente nos fáceis?"
+2. Leiam Js 1:8 e perguntem: "O que significa 'meditar dia e noite'? Como fazemos isso praticamente — não apenas ler, mas 'ruminar'?" Cada membro sugere um momento do dia para praticar.
+3. Leiam Js 1:6,7,9. Contem quantas vezes aparece "sê forte e corajoso." Perguntem: "Por que Deus precisou repetir isso três vezes? O que isso nos diz sobre o caráter da coragem que Ele ordena?"
+4. Leiam Js 1:14 e discutam: "As tribos transjordânicas já tinham sua herança mas tiveram que ajudar os irmãos. Que 'irmão' na nossa família ou comunidade ainda está lutando enquanto nós já estamos em repouso?"
+5. Leiam Js 1:16-17. Perguntem: "Como a resposta do povo se parece com Êx 19:8? O que significa dizer 'tudo o que nos ordenares faremos' — como família — a Deus esta semana?"
+6. Orem juntos: cada membro nomeia um "Jordão" pessoal e um familiar. Orem pedindo que a meditação na Palavra produza em cada um o "sê forte e corajoso" que Deus ordenou.
+
+AUTORES REFORMADOS
+▸ Joel Beeke (Family Worship): "Josué 1:8 é o texto fundacional para a devoção familiar — 'não se aparte da tua boca este livro da Lei' implica vocalização, imersão, repetição. A família que pratica isso produz filhos com coragem que não é produzida por nenhuma outra disciplina."
+▸ Voddie Baucham (Family Driven Faith): "A solidariedade das tribos transjordânicas em Josué 1 é o modelo do que a família cristã deve ser na comunidade local — não uma ilha de segurança, mas uma unidade de missão que não descansa enquanto irmãos ainda lutam."
+▸ Thomas Boston (Human Nature in its Fourfold State): "A coragem que Deus ordena em Josué 1 é sobrenatural em sua fonte mas natural em sua expressão — ela cresce na alma pelo exercício constante da fé na Palavra, como um músculo que se fortalece pelo uso."
+
+CONCLUSÃO
+Família amada, o capítulo de Josué 1 começa com um morto e termina com um exército. YHWH não interrompeu Sua missão pela morte de Moisés — Ele comissionou Josué no dia seguinte. Sua família não precisa esperar condições perfeitas para avançar. O "levanta-te e atravessa" é para vocês hoje. A promessa de presença — "não te deixarei nem te abandonarei" — está sobre cada família que medita na Palavra e avança em solidariedade com os irmãos. O Jordão diante de vocês não é obstáculo: é a fronteira da obediência. E do outro lado está o repouso que Cristo já conquistou. Levanta-te, família. Atravessa. Amém.
+`;
+
   return null;
 }

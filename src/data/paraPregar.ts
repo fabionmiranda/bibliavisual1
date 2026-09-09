@@ -15999,6 +15999,97 @@ CONCLUSÃO
 Irmãos, o livro de Josué termina com três sepultamentos. Josué. Os ossos de José. Eleazar. Os servos partem. Mas os ossos de José chegaram a Siquém — quatro séculos depois de um velho moribundo no Egito pedir em fé: "quando Deus vos visitar, levai meus ossos". E chegaram. Porque Deus não esquece. Os servos passam; a Palavra fica. Os ossos chegam; a promessa se cumpre. Deposite sua fé no Deus que carregou ossos pelo deserto durante quarenta anos sem esquecer. Ele carregará você até o destino que prometeu. Amém.
 `;
 
+  if (d.dia === 254) return `PARA PREGAR · Josué 1:1–18
+
+TÍTULO DO SERMÃO
+Levanta-te e Atravessa: A Comissão Soberana que Não Espera o Luto Terminar
+
+BIG IDEA
+O Deus soberano comissiona Josué imediatamente após a morte de Moisés — revelando que a providência divina não depende de nenhum instrumento humano, que a Palavra é o único instrumento de sucesso, e que a coragem nasce da Lei, não do temperamento.
+
+PERGUNTA DE TRANSIÇÃO
+Como um homem pode avançar em fé quando o grande líder que o precedeu acabou de morrer — e a tarefa diante dele é humanamente impossível?
+
+PALAVRA-CHAVE DE TRANSIÇÃO
+COMISSÃO (missio Dei que avança além de qualquer servo)
+
+MOVIMENTOS DO SERMÃO
+
+I. A COMISSÃO QUE NÃO ESPERA (Js 1:1–2) [A]
+§ Indicação Textual
+"Depois da morte de Moisés... o SENHOR falou a Josué." Dois imperativos: qum (levanta-te) + ʿabor (atravessa). Moisés é chamado "eved YHWH" — o título mais elevado do AT, concedido a somente poucos (Abraão, Davi, Moisés). A conjunção "depois" (acharê) marca transição imediata: o período de luto de trinta dias (Dt 34:8) terminou, e Deus fala no dia seguinte.
+
+§ Exegese
+Os dois imperativos são urgentes, quase sem pausa. "Agora levanta-te" (weʿattah qum) — o weʿattah é adversativo: "e agora, portanto." Deus não consulta o luto de Josué nem o preparo logístico da nação. A morte de Moisés não interrompeu o projeto de YHWH; interrompeu apenas o instrumento. O título "eved YHWH" sobre Moisés não é saudosismo — é calibração: Josué recebe a mesma tarefa de um eved morto. A missão é maior que qualquer servo.
+
+§ Teologia Reformada
+CFW V.1: "Deus, o grande Criador de todas as coisas, sustenta, dirige, dispõe e governa todas as criaturas, atos e coisas... segundo a Sua infalível presciência e o livre e imutável conselho da Sua própria vontade." A morte de Moisés é providência, não acidente. Calvino (Commentaries on Joshua): "Deus nunca abandona Sua obra quando remove Seus servos; Ele levanta outros em seu lugar, para que saibamos que a salvação não depende de mortais mas da mão imortal de Deus."
+
+§ Aplicação
+A morte de líderes espirituais que amamos — pastores, pais, reformadores — não é o fim da missão. A pergunta não é "quem substituirá este servo?" mas "onde YHWH está falando agora?" Pastores: não esperem condições perfeitas para a comissão. Ela vem no luto, não depois dele.
+
+──────────────────────────────────────────
+
+II. A TRÍPLICE PROMESSA: TERRA, PRESENÇA, PALAVRA (Js 1:3–9) [B]
+§ Indicação Textual
+Três promessas progressivas: (1) terra — "todo lugar que a planta do vosso pé pisar" (v.3); (2) presença — "como fui com Moisés, serei contigo" (v.5); (3) Palavra — "não se aparte da tua boca este livro da Lei... medita nele dia e noite" (v.8). "Sê forte e corajoso" aparece três vezes: vv.6, 7, 9 — formando uma trípla de encorajamento que enquadra as três promessas.
+
+§ Exegese
+"Hagah" (v.8) não é leitura silenciosa: é ruminação, murmurar em voz baixa — como um animal mastigando o bolo. O sucesso (hishkîl, v.8) está vinculado não à estratégia militar mas à meditação na Torá. "Não se aparte da tua boca" — a boca implica verbalização pública, não apenas devoção privada. O mandato era pregar, ensinar, proclamar a Lei enquanto avançava. A presença de YHWH (v.5b, "não te deixarei nem te abandonarei") é citada em Hb 13:5 como promessa para o povo de Deus em toda geração.
+
+§ Teologia Reformada
+CFW I.6–7: a Escritura é suficiente para toda a vida de obediência; nada deve ser acrescentado a ela como regra de fé ou prática. CFW I.7: a Escritura interpreta a si mesma. Thomas Boston (Human Nature in its Fourfold State): "A coragem cristã não é produto do temperamento natural mas da convicção fundada na Palavra de Deus. Josué não era corajoso por natureza — ele foi ordenado a ser corajoso pela Palavra, e a Palavra produziu nele o que ordenou." WLC Q.99: a Lei como regra de vida para o crente.
+
+§ Aplicação
+A pergunta não é "tenho coragem suficiente?" mas "estou meditando na Palavra o suficiente?" A coragem que Deus ordena é produzida pela Palavra que Ele promete. Para famílias: a meditação diurna e noturna na Lei (v.8) é o modelo bíblico da devoção familiar. Joel Beeke (Family Worship): "A leitura bíblica familiar diária é o meio primário pelo qual Deus edifica coragem para a geração seguinte."
+
+──────────────────────────────────────────
+
+III. A SOLIDARIEDADE DO PACTO: TODA A COMUNIDADE AVANÇA JUNTA (Js 1:10–15) [CENTRO C]
+§ Indicação Textual
+Josué comanda os oficiais (shoterîm) — burocracia militar — para preparar provisões em três dias. Depois vira-se para as tribos transjordânicas (Rúben, Gade, metade de Manassés): "vossas mulheres, vossos filhos e vosso gado ficarão... mas vós passareis armados diante de vossos irmãos" (v.14). "Armados" (chamushim) pode significar "em formação de cinco" — ordem táctica. O centro do quiasma não é a promessa de Deus — é a resposta corporativa do povo.
+
+§ Exegese
+As tribos transjordânicas já tinham sua herança (Nm 32). Elas poderiam legitimamente ficar. Mas o princípio da aliança exige solidariedade: "até que o SENHOR dê repouso a vossos irmãos como vos deu a vós" (v.15). Ninguém entra no repouso enquanto o irmão não entra. Este é o princípio paulino de Rm 12:15: "alegrai-vos com os que se alegram; chorai com os que choram." A herança de uns não os isenta da batalha dos outros.
+
+§ Teologia Reformada
+CFW VII (Pacto de Graça): o povo de Deus avança como comunidade pactual, não como indivíduos isolados. A solidariedade das tribos transjordânicas é tipologia da diaconia da igreja — os que já têm "repouso" (membros estáveis, famílias ordenadas) devem armados acompanhar os que ainda lutam. Voddie Baucham (Family Driven Faith): "A família cristã não existe como ilha de segurança — ela existe como unidade de missão dentro da comunidade pactual mais ampla."
+
+§ Aplicação
+A pergunta para a congregação: quais "tribos" na sua comunidade já entraram no repouso — estabilidade econômica, saúde espiritual, família estabelecida — e estão tentadas a permanecer confortáveis enquanto irmãos ainda lutam? A solidariedade pactual exige que os estáveis acompanhem os vulneráveis até o repouso comum.
+
+──────────────────────────────────────────
+
+IV. O ECO QUE FECHA O QUIASMA: OBEDIÊNCIA E SANÇÃO (Js 1:16–18) [B' e A']
+§ Indicação Textual
+B' (vv.16–17): resposta do povo — "tudo o que nos ordenares faremos, e a todo lugar que nos enviares iremos." Eco verbal de Êx 19:8: "tudo o que o SENHOR falou faremos." O mesmo vocabulário, o mesmo comprometimento pactual, agora dirigido a Josué como mediador. A' (v.18): "qualquer que for rebelde às tuas ordens... seja morto." A sanção encerra o anel quiástico. A última palavra do capítulo é "forte e corajoso" — eco perfeito de v.6.
+
+§ Exegese
+A resposta popular em vv.16–17 é extraordinária: eles equiparam a autoridade de Josué à de Moisés. "Como obedecemos a Moisés assim te obedeceremos." Mas eles vão além: condicionam sua obediência à presença de YHWH com Josué — "somente que o SENHOR teu Deus seja contigo como foi com Moisés" (v.17b). Eles não são seguidores de Josué — são seguidores de YHWH que usa Josué. A sanção do v.18 não é crueldade: é a seriedade pactual que garante que a missão não seja sabotada por rebeldes internos.
+
+§ Teologia Reformada
+CFW XXIII (do magistrado civil): a autoridade de Josué como líder civil-militar deriva de sua comissão divina, não de eleição popular. O povo reconhece a autoridade porque reconhece a fonte — YHWH. A obediência ao líder ungido é ato de fé em quem o ungiu. J.I. Packer (Knowing God): "A submissão à autoridade legítima é uma das expressões práticas da confiança em que Deus governa a história por meio de instrumentos humanos."
+
+§ Aplicação
+A pergunta para os membros da igreja: você segue a liderança pastoral porque segue a Deus que a comissionou — ou porque aprova pessoalmente as decisões do pastor? A obediência condicional ("obedeço se concordo") não é obediência pactual. E para pastores: a sua autoridade é derivada — exerci-a com humildade e com consciência de que responderá a Quem a concedeu.
+
+──────────────────────────────────────────
+
+EIXO REDENTOR
+Josué (Yehoshua = YHWH é salvação) é tipo de Jesus (Iesous = Hb 4:8). O Josué histórico levou o povo a um repouso provisório na terra; o Jesus eterno leva o povo ao repouso definitivo na nova criação. Assim como Josué não pôde dar o repouso perfeito (Hb 4:8), assim também toda liderança humana é penúltima. O "levanta-te e atravessa" de YHWH para Josué antecipa o "levanta-te" de Cristo sobre o sepulcro — e o "ide" do Grande Comissionamento (Mt 28:19) que ressoa com os imperativos qum + ʿabor de Js 1:2.
+
+DOUTRINA CENTRAL
+A soberania providencial de Deus garante que a missão redentora avance através da sucessão de servos humanos: cada líder morre, mas a Palavra de YHWH permanece — e essa Palavra, meditada dia e noite, é o único e suficiente instrumento de todo sucesso verdadeiro.
+
+APLICAÇÕES PASTORAIS
+▸ Para a Igreja: celebre os servos que partiram sem idolatrá-los — e receba os que Deus comissiona em seu lugar com a mesma obediência pactual com que o povo recebeu Josué.
+▸ Para as Famílias: o hagah (meditação diurna e noturna) do v.8 é o modelo bíblico para a devoção familiar — pais que "murmuram" a Palavra em casa, à mesa, no carro, formam filhos com coragem para atravessar qualquer Jordão.
+▸ Para o Discípulo: identifique seu "Jordão" — a fronteira de obediência que você tem postergado por falta de coragem. A coragem que YHWH ordena, a Palavra de YHWH produz. Mergulhe na meditação e avance.
+
+CONCLUSÃO
+Irmãos, o capítulo começa com um morto e termina com um exército. Moisés jaz em um vale que ninguém conhece (Dt 34:6) — e YHWH fala a Josué no dia seguinte. O Deus que fez o Universo não entra em luto. Ele comissiona. Ele promete terra, presença e Palavra. E Sua única exigência é esta: medita na Torá dia e noite — porque o sucesso que importa não é mensurado pela largura da terra conquistada, mas pela profundidade da obediência à Palavra. O "sê forte e corajoso" que abre e fecha este capítulo não é autoajuda bíblica — é a ordem de um Comandante que já venceu a batalha e convida Seu servo a caminhar na vitória que Ele garantiu. Levanta-te. Atravessa. O SENHOR vai na tua frente. Amém.
+`;
+
   return null;
 }
 

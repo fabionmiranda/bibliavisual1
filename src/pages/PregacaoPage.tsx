@@ -1337,6 +1337,203 @@ function ParaPregarSection({ d, pericopeIdx, conteudo, sermonTitulo, sermonPergu
   );
 }
 
+// ─── Infográfico Josué 1 ─────────────────────────────────────────────
+function InfograficoJosueSection({ pt }: { pt: boolean }) {
+  const MOVES = [
+    {
+      num: 'I', sym: 'A', ref: 'Js 1:1–2',
+      title: pt ? 'A Comissão que Não Espera' : 'The Commission that Does Not Wait',
+      sub: pt ? 'YHWH fala no dia seguinte ao luto' : 'YHWH speaks the day after mourning',
+      emoji: '📯',
+      key: pt ? 'qum + ʿabor (levanta-te + atravessa) — imperativos urgentes. Moisés = eved YHWH, o título mais elevado do AT. A missão é maior que qualquer servo.' : 'qum + ʿabor imperatives — urgent. Moses = eved YHWH, the highest OT title. The mission outlasts any servant.',
+      app: pt ? 'Não espere condições perfeitas para obedecer. A comissão divina vem no luto, não depois dele.' : 'Don\'t wait for perfect conditions to obey. The divine commission comes in mourning, not after it.',
+      cor: 'rgba(255,180,50,1)', corL: 'rgba(255,180,50,0.10)', corB: 'rgba(255,180,50,0.30)',
+    },
+    {
+      num: 'II', sym: 'B', ref: 'Js 1:3–9',
+      title: pt ? 'Tríplice Promessa: Terra, Presença, Palavra' : 'Triple Promise: Land, Presence, Word',
+      sub: pt ? '"Sê forte e corajoso" — 3× (vv.6,7,9)' : '"Be strong and courageous" — 3× (vv.6,7,9)',
+      emoji: '📜',
+      key: pt ? 'hagah (v.8) = ruminação em voz baixa, dia e noite. Sucesso (hishkîl) vinculado à Torá, não à estratégia militar. Hb 13:5 cita v.5b para toda geração.' : 'hagah (v.8) = ruminating aloud, day and night. Success (hishkîl) tied to Torah, not military strategy.',
+      app: pt ? 'A coragem que Deus ordena, a Palavra produz. A pergunta não é "tenho coragem?" mas "estou meditando na Palavra?"' : 'The courage God commands, the Word produces. The question is not "do I have courage?" but "am I meditating on the Word?"',
+      cor: 'rgba(80,200,255,1)', corL: 'rgba(80,200,255,0.10)', corB: 'rgba(80,200,255,0.30)',
+    },
+    {
+      num: 'III', sym: 'CENTRO C', ref: 'Js 1:10–15',
+      title: pt ? 'Solidariedade Pactual: Toda a Nação Avança' : 'Covenantal Solidarity: The Whole Nation Advances',
+      sub: pt ? 'Tribos transjordânicas armadas ao lado dos irmãos' : 'Transjordanian tribes armed beside their brothers',
+      emoji: '🛡️',
+      key: pt ? 'chamushim = em formação militar. Os que já têm herança acompanham os que ainda lutam — até que todos entrem no repouso (v.15).' : 'chamushim = in battle formation. Those with inheritance join those still fighting — until all enter rest (v.15).',
+      app: pt ? 'Os "estabelecidos" da congregação devem armados acompanhar os vulneráveis — ninguém descansa enquanto o irmão ainda luta.' : 'The "established" in the congregation must stand armed beside the vulnerable — no one rests while a brother still fights.',
+      cor: 'rgba(52,211,153,1)', corL: 'rgba(52,211,153,0.10)', corB: 'rgba(52,211,153,0.30)',
+    },
+    {
+      num: 'IV', sym: 'B\' + A\'', ref: 'Js 1:16–18',
+      title: pt ? 'O Eco que Fecha o Quiasma' : 'The Echo that Closes the Chiasm',
+      sub: pt ? 'Resposta pactual + sanção + "sê forte e corajoso"' : 'Covenantal response + sanction + "be strong and courageous"',
+      emoji: '⚔️',
+      key: pt ? '"Tudo o que nos ordenares faremos" (v.16) — eco de Êx 19:8. Eles seguem Josué por seguirem YHWH. Sanção (v.18): seriedade pactual que protege a missão.' : '"All you command we will do" (v.16) — echo of Exod 19:8. They follow Joshua by following YHWH. Sanction (v.18): covenant seriousness protecting the mission.',
+      app: pt ? 'A obediência condicional ("obedeço se concordo") não é obediência pactual. Submeter-se à liderança ungida é ato de fé em quem a ungiu.' : 'Conditional obedience ("I obey if I agree") is not covenantal obedience. Submitting to appointed leadership is an act of faith in the One who appointed.',
+      cor: 'rgba(255,100,120,1)', corL: 'rgba(255,100,120,0.10)', corB: 'rgba(255,100,120,0.30)',
+    },
+  ];
+
+  const CHIASM = [
+    { sym: 'A',  ref: 'Js 1:1–2',   label: pt ? 'Comissão: qum + ʿabor — "levanta-te e atravessa"' : 'Commission: qum + ʿabor — "rise and cross"', cor: 'rgba(255,180,50,1)', indent: 0, emoji: '📯' },
+    { sym: 'B',  ref: 'Js 1:3–9',   label: pt ? 'Tríplice promessa + "sê forte e corajoso" (3×)' : 'Triple promise + "be strong and courageous" (3×)', cor: 'rgba(80,200,255,1)', indent: 1, emoji: '📜' },
+    { sym: 'C',  ref: 'Js 1:10–15', label: pt ? '⬛ CENTRO: Solidariedade pactual — toda a nação avança' : '⬛ CENTER: Covenantal solidarity — whole nation advances', cor: 'rgba(52,211,153,1)', indent: 2, emoji: '🛡️' },
+    { sym: 'B\'', ref: 'Js 1:16–17', label: pt ? 'Resposta do povo — eco de Êxodo 19:8' : 'People\'s pledge — echo of Exodus 19:8', cor: 'rgba(80,200,255,1)', indent: 1, emoji: '🤝' },
+    { sym: 'A\'', ref: 'Js 1:18',   label: pt ? 'Sanção pactual + "sê forte e corajoso" (eco final)' : 'Covenantal sanction + "be strong and courageous" (closing echo)', cor: 'rgba(255,180,50,1)', indent: 0, emoji: '⚔️' },
+  ];
+
+  const CHRISTOLOGICAL = [
+    { icon: '✝️', title: pt ? 'Josué — Tipo de Cristo' : 'Joshua — Type of Christ', body: pt ? 'Yehoshua = "YHWH salva" = Iesous. O Josué histórico deu repouso provisório (Hb 4:8); Cristo dá o repouso eterno (Hb 4:9-10). O "levanta-te e atravessa" prefigura a ressurreição e o Grande Comissionamento.' : 'Yehoshua = "YHWH saves" = Iesous. Historical Joshua gave provisional rest (Heb 4:8); Christ gives eternal rest (Heb 4:9-10).' },
+    { icon: '💪', title: pt ? 'ḥazaq → 1Co 16:13 / Ef 6:10' : 'ḥazaq → 1 Cor 16:13 / Eph 6:10', body: pt ? '"Sede vigilantes, estai firmes na fé, sede homens de valor, sede fortes" (1Co 16:13) — vocabulário de Js 1:6-9 aplicado à Igreja do NT. Paulo convoca a mesma coragem sob o mesmo Comandante.' : '"Be watchful, stand firm in the faith, act like men, be strong" (1 Cor 16:13) — Js 1:6-9 vocabulary applied to the NT Church.' },
+    { icon: '🌿', title: pt ? 'Repouso — Nova Criação' : 'Rest — New Creation', body: pt ? 'O repouso da terra prometida (v.13,15) é sombra do repouso escatológico (Hb 4:9: sabbatismos). A travessia do Jordão prefigura o batismo — morte e ressurreição — e a entrada na nova criação.' : 'The land-rest (vv.13,15) is shadow of eschatological rest (Heb 4:9: sabbatismos). Jordan-crossing prefigures baptism — death and resurrection — and new creation entry.' },
+  ];
+
+  const APPS = [
+    { audience: pt ? 'Universal' : 'Universal', icon: '🌍', items: pt ? ['A missão de Deus avança além de qualquer líder humano', 'A coragem é produzida pela Palavra, não pelo temperamento', 'Ninguém descansa enquanto o irmão ainda luta'] : ['God\'s mission advances beyond any human leader', 'Courage is produced by the Word, not temperament', 'No one rests while a brother still fights'] },
+    { audience: pt ? 'Crentes' : 'Believers', icon: '📖', items: pt ? ['Estabeleça hagah diário — ruminação em voz baixa', 'Identifique seu "Jordão" e avance nesta semana', 'Ore pelos líderes que Deus comissionou em seu lugar'] : ['Establish daily hagah — audible rumination', 'Identify your "Jordan" and advance this week', 'Pray for leaders God commissioned in your place'] },
+    { audience: pt ? 'Pastores' : 'Pastors', icon: '🏛️', items: pt ? ['A autoridade é derivada — exerci-a com humildade', 'Comissionamento vem no luto, não depois', 'Solidariedade pactual: lidere toda a congregação ao repouso'] : ['Authority is derived — exercise it with humility', 'Commission comes in mourning, not after', 'Covenantal solidarity: lead the whole congregation to rest'] },
+  ];
+
+  return (
+    <div style={{ paddingBottom: 48 }}>
+
+      {/* ── HERO ── */}
+      <div style={{ borderRadius: 20, background: 'linear-gradient(135deg,rgba(255,180,50,0.13) 0%,rgba(52,211,153,0.08) 100%)', border: '1px solid rgba(255,180,50,0.32)', padding: 'clamp(24px,4vw,36px)', marginBottom: 28, textAlign: 'center' }}>
+        <div style={{ fontSize: 'clamp(48px,8vw,72px)', lineHeight: 1, marginBottom: 10, filter: 'drop-shadow(0 0 20px rgba(255,180,50,0.50))' }}>⚔️</div>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase', color: 'rgba(255,180,50,0.85)', marginBottom: 8 }}>Josué 1:1–18 · Perícope 254 · {pt ? 'Dia 254' : 'Day 254'}</div>
+        <div style={{ fontSize: 'clamp(22px,3.8vw,32px)', fontWeight: 900, color: '#fff', lineHeight: 1.25, marginBottom: 8 }}>
+          {pt ? 'Levanta-te e Atravessa' : 'Rise and Cross Over'}
+        </div>
+        <div style={{ fontSize: 'clamp(15px,2.2vw,18px)', color: 'rgba(255,255,255,0.55)', fontStyle: 'italic', marginBottom: 16 }}>
+          {pt ? 'A Comissão Soberana que Não Espera o Luto Terminar' : 'The Sovereign Commission that Does Not Wait for Mourning to End'}
+        </div>
+        <div style={{ display: 'inline-flex', flexWrap: 'wrap', gap: 8, justifyContent: 'center' }}>
+          {['Josué', pt ? 'Literatura Histórica' : 'Historical Literature', pt ? 'Teologia do Pacto' : 'Covenant Theology'].map(t => (
+            <span key={t} style={{ fontSize: 'clamp(12px,1.5vw,14px)', fontWeight: 700, padding: '3px 12px', borderRadius: 99, background: 'rgba(255,180,50,0.12)', border: '1px solid rgba(255,180,50,0.28)', color: 'rgba(255,180,50,0.90)' }}>{t}</span>
+          ))}
+        </div>
+      </div>
+
+      {/* ── BIG IDEA ── */}
+      <div style={{ borderRadius: 16, background: 'linear-gradient(135deg,rgba(255,180,50,0.10),rgba(52,211,153,0.07))', border: '1.5px solid rgba(255,180,50,0.35)', padding: '20px 24px', marginBottom: 20 }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,180,50,0.90)', marginBottom: 8 }}>💡 {pt ? 'Big Idea · Tema Central' : 'Big Idea · Central Theme'}</div>
+        <p style={{ fontSize: 'clamp(16px,2.2vw,19px)', fontWeight: 800, color: '#fff', lineHeight: 1.70, margin: 0 }}>
+          {pt
+            ? 'O Deus soberano comissiona Josué imediatamente após a morte de Moisés — revelando que a providência divina não depende de nenhum instrumento humano, que a Palavra é o único instrumento de sucesso, e que a coragem nasce da Lei, não do temperamento.'
+            : 'The sovereign God commissions Joshua immediately after Moses\' death — revealing that divine providence depends on no human instrument, that the Word is the sole instrument of success, and that courage is born from the Law, not from temperament.'}
+        </p>
+      </div>
+
+      {/* ── PERGUNTA + PROPOSIÇÃO ── */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))', gap: 14, marginBottom: 28 }}>
+        <div style={{ borderRadius: 14, background: 'rgba(255,100,100,0.06)', border: '1px solid rgba(255,100,100,0.22)', padding: '18px 20px' }}>
+          <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,140,140,0.85)', marginBottom: 8 }}>❓ {pt ? 'Pergunta Central' : 'Central Question'}</div>
+          <p style={{ fontSize: 'clamp(15px,2vw,17px)', color: 'rgba(255,210,210,0.90)', lineHeight: 1.70, fontStyle: 'italic', margin: 0 }}>
+            {pt
+              ? '"Como um homem pode avançar em fé quando o grande líder que o precedeu acabou de morrer — e a tarefa diante dele é humanamente impossível?"'
+              : '"How can a man advance in faith when the great leader before him has just died — and the task ahead is humanly impossible?"'}
+          </p>
+        </div>
+        <div style={{ borderRadius: 14, background: 'rgba(255,180,50,0.08)', border: '1px solid rgba(255,180,50,0.28)', padding: '18px 20px' }}>
+          <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,180,50,0.90)', marginBottom: 8 }}>⚡ {pt ? 'Proposição' : 'Proposition'}</div>
+          <p style={{ fontSize: 'clamp(15px,2vw,17px)', fontWeight: 700, color: '#fff', lineHeight: 1.70, margin: 0 }}>
+            {pt
+              ? 'A soberania providencial de Deus garante que a missão avance através de toda sucessão de servos — e a Palavra meditada dia e noite é o único e suficiente instrumento de todo sucesso verdadeiro.'
+              : 'God\'s providential sovereignty guarantees the mission advances through every succession of servants — and the Word meditated day and night is the sole and sufficient instrument of all true success.'}
+          </p>
+        </div>
+      </div>
+
+      {/* ── QUIASMA VISUAL ── */}
+      <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.08)', padding: 'clamp(18px,3vw,28px)', marginBottom: 28 }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.45)', marginBottom: 20, textAlign: 'center' }}>
+          🔄 {pt ? 'Estrutura Quiástica · Josué 1' : 'Chiastic Structure · Joshua 1'}
+        </div>
+        {CHIASM.map(({ sym, ref, label, cor, indent, emoji }) => (
+          <div key={sym} style={{ display: 'flex', alignItems: 'flex-start', gap: 10, marginBottom: 10, paddingLeft: `${indent * 20}px` }}>
+            <div style={{ width: 38, height: 38, minWidth: 38, borderRadius: 10, background: `${cor}22`, border: `1.5px solid ${cor}55`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 'clamp(14px,1.8vw,16px)', fontWeight: 900, color: cor }}>{sym}</div>
+            <div style={{ flex: 1, padding: '8px 12px', borderRadius: 10, background: `${cor}0d`, border: `1px solid ${cor}28` }}>
+              <span style={{ fontSize: 'clamp(11px,1.3vw,12px)', fontWeight: 700, color: cor, marginRight: 8 }}>{emoji} {ref}</span>
+              <span style={{ fontSize: 'clamp(13px,1.6vw,14px)', color: 'rgba(255,255,255,0.82)' }}>{label}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* ── MOVIMENTOS ── */}
+      <div style={{ marginBottom: 28 }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.45)', marginBottom: 16 }}>
+          📋 {pt ? 'Movimentos do Sermão' : 'Sermon Movements'}
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: 14 }}>
+          {MOVES.map(m => (
+            <div key={m.num} style={{ borderRadius: 16, background: m.corL, border: `1.5px solid ${m.corB}`, padding: '18px 20px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 10 }}>
+                <div style={{ width: 34, height: 34, borderRadius: 9, background: `${m.cor}22`, border: `1.5px solid ${m.cor}55`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 'clamp(14px,1.8vw,16px)', fontWeight: 900, color: m.cor }}>{m.num}</div>
+                <div>
+                  <div style={{ fontSize: 'clamp(11px,1.3vw,12px)', fontWeight: 700, color: m.cor, letterSpacing: '0.12em' }}>{m.sym} · {m.ref}</div>
+                  <div style={{ fontSize: 'clamp(14px,1.8vw,16px)', fontWeight: 800, color: '#fff', lineHeight: 1.3 }}>{m.emoji} {m.title}</div>
+                </div>
+              </div>
+              <div style={{ fontSize: 'clamp(13px,1.6vw,14px)', color: 'rgba(255,255,255,0.60)', fontStyle: 'italic', marginBottom: 8 }}>{m.sub}</div>
+              <div style={{ fontSize: 'clamp(13px,1.6vw,14px)', color: 'rgba(255,255,255,0.82)', lineHeight: 1.60, marginBottom: 10, padding: '8px 10px', borderRadius: 8, background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.07)' }}>{m.key}</div>
+              <div style={{ fontSize: 'clamp(13px,1.6vw,14px)', color: m.cor, lineHeight: 1.55, fontWeight: 600 }}>▸ {m.app}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ── EIXO CRISTOLÓGICO ── */}
+      <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.09)', padding: 'clamp(18px,3vw,26px)', marginBottom: 28 }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,180,50,0.70)', marginBottom: 18, textAlign: 'center' }}>
+          ✝️ {pt ? 'Eixo Redentor · Josué → Cristo' : 'Redemptive Axis · Joshua → Christ'}
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))', gap: 14 }}>
+          {CHRISTOLOGICAL.map(c => (
+            <div key={c.title} style={{ borderRadius: 12, background: 'rgba(255,180,50,0.07)', border: '1px solid rgba(255,180,50,0.22)', padding: '14px 16px' }}>
+              <div style={{ fontSize: 'clamp(20px,2.8vw,26px)', marginBottom: 6 }}>{c.icon}</div>
+              <div style={{ fontSize: 'clamp(13px,1.6vw,14px)', fontWeight: 800, color: 'rgba(255,200,100,0.95)', marginBottom: 6 }}>{c.title}</div>
+              <div style={{ fontSize: 'clamp(13px,1.6vw,14px)', color: 'rgba(255,255,255,0.75)', lineHeight: 1.60 }}>{c.body}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ── APLICAÇÕES POR AUDIÊNCIA ── */}
+      <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.09)', padding: 'clamp(18px,3vw,26px)', marginBottom: 28 }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(52,211,153,0.70)', marginBottom: 18, textAlign: 'center' }}>
+          🎯 {pt ? 'Aplicações por Audiência' : 'Applications by Audience'}
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(220px,1fr))', gap: 12 }}>
+          {APPS.map(a => (
+            <div key={a.audience} style={{ borderRadius: 12, background: 'rgba(52,211,153,0.07)', border: '1px solid rgba(52,211,153,0.20)', padding: '14px 16px' }}>
+              <div style={{ fontSize: 'clamp(14px,1.8vw,16px)', fontWeight: 800, color: 'rgba(52,211,153,0.95)', marginBottom: 8 }}>{a.icon} {a.audience}</div>
+              {a.items.map((item, i) => (
+                <div key={i} style={{ fontSize: 'clamp(13px,1.6vw,14px)', color: 'rgba(255,255,255,0.78)', lineHeight: 1.55, marginBottom: 4 }}>▸ {item}</div>
+              ))}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ── CONCLUSÃO ── */}
+      <div style={{ borderRadius: 16, background: 'linear-gradient(135deg,rgba(255,180,50,0.10),rgba(52,211,153,0.07))', border: '1.5px solid rgba(255,180,50,0.30)', padding: '20px 24px' }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,180,50,0.85)', marginBottom: 10 }}>🏁 {pt ? 'Conclusão' : 'Conclusion'}</div>
+        <p style={{ fontSize: 'clamp(14px,1.8vw,16px)', color: 'rgba(255,255,255,0.85)', lineHeight: 1.75, margin: 0 }}>
+          {pt
+            ? 'O capítulo começa com um morto e termina com um exército. A morte de Moisés não interrompeu o projeto de YHWH — ela apenas revelou que o projeto nunca dependeu de Moisés. A Palavra meditada dia e noite (hagah) é o único instrumento de todo sucesso verdadeiro. O "levanta-te e atravessa" de Josué 1 ecoa no "ide" do Grande Comissionamento — e ambos apontam para Aquele que se levantou do sepulcro e cruzou a fronteira entre a morte e a vida para dar repouso eterno ao Seu povo.'
+            : 'The chapter begins with a dead man and ends with an army. Moses\' death did not interrupt YHWH\'s project — it only revealed that the project never depended on Moses. The Word meditated day and night (hagah) is the sole instrument of all true success. The "rise and cross" of Joshua 1 echoes in the Great Commission\'s "go" — both pointing to the One who rose from the tomb and crossed the boundary between death and life to give eternal rest to His people.'}
+        </p>
+      </div>
+
+    </div>
+  );
+}
+
 // ─── Infográfico Card 1 ──────────────────────────────────────────────
 function InfograficoSection({ pt }: { pt: boolean }) {
   const MOVES = [
@@ -1896,7 +2093,7 @@ export default function PregacaoPage() {
                       { key: 'estrutura',   label: pt ? 'Estrutura Homilética' : 'Homiletic Structure' },
                       { key: 'homilestica', label: pt ? 'Homilética para Pregar' : 'Homiletics for Preaching' },
                       { key: 'quiasma',     label: pt ? 'Estrutura Quiástica Espelhada' : 'Mirror Chiastic Structure' },
-                      ...(selectedDia?.dia === 1 ? [{ key: 'infografico', label: pt ? '🖼 Infográfico' : '🖼 Infographic' }] : []),
+                      ...(selectedDia?.dia === 1 || selectedDia?.dia === 254 ? [{ key: 'infografico', label: pt ? '🖼 Infográfico' : '🖼 Infographic' }] : []),
                     ] as { key: 'estrutura' | 'homilestica' | 'quiasma' | 'infografico'; label: string }[]).map(tab => {
                       const active = contentTab === tab.key;
                       return (
@@ -1937,7 +2134,7 @@ export default function PregacaoPage() {
                   <AnimatePresence mode="wait">
                     {contentTab === 'infografico' ? (
                       <motion.div key="infografico" initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 10 }} transition={{ duration: 0.18 }}>
-                        <InfograficoSection pt={pt} />
+                        {selectedDia?.dia === 254 ? <InfograficoJosueSection pt={pt} /> : <InfograficoSection pt={pt} />}
                       </motion.div>
                     ) : contentTab === 'estrutura' ? (
                       <motion.div key="estrutura" initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 10 }} transition={{ duration: 0.18 }}>
