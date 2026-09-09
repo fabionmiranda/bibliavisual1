@@ -2339,10 +2339,10 @@ BIG IDEA PARA A FAMÍLIA
 Deus comissiona cada família cristã para avançar com coragem na obediência — não pela força própria, mas pela meditação diária na Sua Palavra e pela solidariedade com os irmãos que ainda lutam.
 
 PERGUNTA PARA A FAMÍLIA
-O que faz a nossa família parar diante dos seus "Jordões" — e como a Palavra de Deus pode nos dar coragem para atravessá-los juntos?
+Se Deus falou a Josué no meio do luto e o comissionou a atravessar o Jordão, o que isso nos ensina sobre como Ele equipa a nossa família para avançar nos momentos de transição, perda e dificuldade?
 
 PALAVRA-CHAVE DE TRANSIÇÃO
-AVANÇO (a família que medita na Palavra avança onde a força própria paralisa)
+Vejamos os FUNDAMENTOS que Deus deu a Josué — e dá à sua família — para atravessar qualquer Jordão: a comissão soberana recebida pela Palavra, a coragem formada pela meditação diária e a solidariedade que avança junta.
 
 MOVIMENTOS DO SERMÃO
 
