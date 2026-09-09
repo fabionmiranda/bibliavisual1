@@ -91,7 +91,7 @@ const AREAS_INFO: Record<string, AreaInfo> = {
     cor: '#4ade80',
     materias: [
       { nome: 'Educação Cristã para Igrejas', desc: 'Como a igreja local ensina, discipula e forma as gerações — da catequese à escola dominical, do jovem ao adulto', icon: '📚', link: '/teologia/pastoral/educacao-crista' },
-      { nome: 'Homilética', desc: 'A arte e ciência da pregação expositiva e cristocêntrica', icon: '🎙️' },
+      { nome: 'Homilética', desc: 'A arte e ciência da pregação expositiva e cristocêntrica', icon: '🎙️', link: '/teologia/pastoral/homiletica' },
       { nome: 'Aconselhamento Bíblico', desc: 'O cuidado pastoral das almas à luz das Escrituras', icon: '🤝' },
       { nome: 'Liderança Pastoral', desc: 'O ofício do pastor-pregador — vocação, caráter e ministério', icon: '👨‍🏫' },
       { nome: 'Liturgia e Culto', desc: 'A adoração regulada pela Escritura — princípio regulador do culto', icon: '🕊️' },

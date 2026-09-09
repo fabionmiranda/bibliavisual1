@@ -7,6 +7,7 @@ import Biblioteca from './pages/Biblioteca';
 import BibliotecaPage from './pages/BibliotecaPage';
 import AcessarPage from './pages/AcessarPage';
 import EducacaoCristaPage from './pages/EducacaoCristaPage';
+import HomileticaPage from './pages/HomileticaPage';
 import EducacaoCristaAula1Page from './pages/EducacaoCristaAula1Page';
 import EducacaoCristaAula2Page from './pages/EducacaoCristaAula2Page';
 import EducacaoCristaAula3Page from './pages/EducacaoCristaAula3Page';
@@ -127,6 +128,7 @@ export default function App() {
           <Route path="/teologia" element={<TeologiaPage />} />
           <Route path="/teologia/aulas" element={<TeologiaAulasPage />} />
           <Route path="/teologia/pastoral/educacao-crista" element={<EducacaoCristaPage />} />
+          <Route path="/teologia/pastoral/homiletica" element={<HomileticaPage />} />
           <Route path="/teologia/pastoral/educacao-crista/aula-1" element={<EducacaoCristaAula1Page />} />
           <Route path="/teologia/pastoral/educacao-crista/aula-2" element={<EducacaoCristaAula2Page />} />
           <Route path="/teologia/pastoral/educacao-crista/aula-3" element={<EducacaoCristaAula3Page />} />
