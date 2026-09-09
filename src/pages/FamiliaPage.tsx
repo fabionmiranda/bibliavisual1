@@ -2097,7 +2097,7 @@ function InfograficoFamiliaSection({ pt }: { pt: boolean }) {
       {/* ── HERO ── */}
       <div style={{ borderRadius: 20, background: 'linear-gradient(135deg,rgba(52,211,153,0.13) 0%,rgba(80,200,255,0.08) 60%,rgba(255,200,80,0.08) 100%)', border: '1px solid rgba(52,211,153,0.32)', padding: 'clamp(24px,4vw,36px)', marginBottom: 28, textAlign: 'center' }}>
         <div style={{ fontSize: 'clamp(48px,8vw,72px)', lineHeight: 1, marginBottom: 10, filter: 'drop-shadow(0 0 24px rgba(52,211,153,0.45))' }}>🏡</div>
-        <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase', color: 'rgba(52,211,153,0.85)', marginBottom: 8 }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase', color: 'rgba(52,211,153,0.85)', marginBottom: 8 }}>
           Gênesis 1:1 – 2:4a · Perícope 01 · {pt ? 'Família — Dia 1' : 'Family — Day 1'}
         </div>
         <div style={{ fontSize: 'clamp(18px,3.2vw,28px)', fontWeight: 900, color: '#fff', lineHeight: 1.25, marginBottom: 8 }}>
@@ -2113,15 +2113,15 @@ function InfograficoFamiliaSection({ pt }: { pt: boolean }) {
             pt ? 'Dia do Senhor' : 'Lord\'s Day',
             pt ? 'Vice-Regência Familiar' : 'Family Vice-Regency',
           ].map(t => (
-            <span key={t} style={{ fontSize: 11, fontWeight: 700, padding: '3px 12px', borderRadius: 99, background: 'rgba(52,211,153,0.12)', border: '1px solid rgba(52,211,153,0.25)', color: 'rgba(52,211,153,0.90)' }}>{t}</span>
+            <span key={t} style={{ fontSize: 'clamp(12px,1.5vw,14px)', fontWeight: 700, padding: '3px 12px', borderRadius: 99, background: 'rgba(52,211,153,0.12)', border: '1px solid rgba(52,211,153,0.25)', color: 'rgba(52,211,153,0.90)' }}>{t}</span>
           ))}
         </div>
       </div>
 
       {/* ── BIG IDEA ── */}
       <div style={{ borderRadius: 16, background: 'linear-gradient(135deg,rgba(52,211,153,0.10),rgba(255,200,80,0.07))', border: '1.5px solid rgba(52,211,153,0.35)', padding: '20px 24px', marginBottom: 20 }}>
-        <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(52,211,153,0.85)', marginBottom: 8 }}>💡 {pt ? 'Big Idea · Para a Família' : 'Big Idea · For the Family'}</div>
-        <p style={{ fontSize: 'clamp(14px,2vw,17px)', fontWeight: 800, color: '#fff', lineHeight: 1.75, margin: 0 }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(52,211,153,0.85)', marginBottom: 8 }}>💡 {pt ? 'Big Idea · Para a Família' : 'Big Idea · For the Family'}</div>
+        <p style={{ fontSize: 'clamp(16px,2.2vw,19px)', fontWeight: 800, color: '#fff', lineHeight: 1.75, margin: 0 }}>
           {pt
             ? 'Deus criou o mundo com ordem e propósito, e cada família existe para refletir Sua glória administrando com fidelidade o que Ele criou.'
             : 'God created the world with order and purpose, and each family exists to reflect His glory by faithfully stewarding what He created.'}
@@ -2131,16 +2131,16 @@ function InfograficoFamiliaSection({ pt }: { pt: boolean }) {
       {/* ── PERGUNTA + DOUTRINA ── */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))', gap: 14, marginBottom: 28 }}>
         <div style={{ borderRadius: 14, background: 'rgba(255,100,100,0.06)', border: '1px solid rgba(255,100,100,0.22)', padding: '18px 20px' }}>
-          <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,140,140,0.85)', marginBottom: 8 }}>❓ {pt ? 'Pergunta Central' : 'Central Question'}</div>
-          <p style={{ fontSize: 14, color: 'rgba(255,210,210,0.90)', lineHeight: 1.70, fontStyle: 'italic', margin: 0 }}>
+          <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,140,140,0.85)', marginBottom: 8 }}>❓ {pt ? 'Pergunta Central' : 'Central Question'}</div>
+          <p style={{ fontSize: 'clamp(15px,2vw,17px)', color: 'rgba(255,210,210,0.90)', lineHeight: 1.70, fontStyle: 'italic', margin: 0 }}>
             {pt
               ? '"Se Deus planejou cada detalhe da criação com cuidado paternal, o que isso nos ensina sobre como Ele pensa e cuida da nossa família?"'
               : '"If God planned every detail of creation with fatherly care, what does that teach us about how He thinks about and cares for our family?"'}
           </p>
         </div>
         <div style={{ borderRadius: 14, background: 'rgba(52,211,153,0.08)', border: '1px solid rgba(52,211,153,0.28)', padding: '18px 20px' }}>
-          <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(52,211,153,0.85)', marginBottom: 8 }}>📜 {pt ? 'Doutrina Central' : 'Central Doctrine'}</div>
-          <p style={{ fontSize: 14, fontWeight: 700, color: '#fff', lineHeight: 1.70, margin: 0 }}>
+          <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(52,211,153,0.85)', marginBottom: 8 }}>📜 {pt ? 'Doutrina Central' : 'Central Doctrine'}</div>
+          <p style={{ fontSize: 'clamp(15px,2vw,17px)', fontWeight: 700, color: '#fff', lineHeight: 1.70, margin: 0 }}>
             {pt
               ? 'Deus é o Criador soberano que delegou à família humana a mordomia do mundo e a consagrou ao descanso semanal como ensaio do repouso eterno em Cristo.'
               : 'God is the sovereign Creator who delegated to the human family the stewardship of the world and consecrated them to weekly rest as a rehearsal of eternal rest in Christ.'}
@@ -2149,7 +2149,7 @@ function InfograficoFamiliaSection({ pt }: { pt: boolean }) {
       </div>
 
       {/* ── 3 MOVIMENTOS ── */}
-      <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.40)', marginBottom: 14 }}>
+      <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.40)', marginBottom: 14 }}>
         📐 {pt ? 'Movimentos do Sermão Familiar' : 'Family Sermon Movements'}
       </div>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: 14, marginBottom: 28 }}>
@@ -2158,22 +2158,22 @@ function InfograficoFamiliaSection({ pt }: { pt: boolean }) {
             <div style={{ padding: '12px 16px', background: mv.corB, display: 'flex', alignItems: 'center', gap: 10 }}>
               <span style={{ fontSize: 22 }}>{mv.emoji}</span>
               <div>
-                <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: mv.cor }}>
+                <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: mv.cor }}>
                   {pt ? 'Movimento' : 'Movement'} {mv.num} · {mv.sym}
                 </div>
-                <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.55)' }}>{mv.ref}</div>
+                <div style={{ fontSize: 'clamp(12px,1.5vw,14px)', color: 'rgba(255,255,255,0.55)' }}>{mv.ref}</div>
               </div>
             </div>
             <div style={{ padding: '14px 16px' }}>
-              <div style={{ fontSize: 15, fontWeight: 800, color: '#fff', lineHeight: 1.35, marginBottom: 4 }}>{mv.title}</div>
-              <div style={{ fontSize: 12, color: mv.cor.replace('1)', '0.75)'), fontStyle: 'italic', marginBottom: 12 }}>{mv.sub}</div>
+              <div style={{ fontSize: 'clamp(16px,2.1vw,18px)', fontWeight: 800, color: '#fff', lineHeight: 1.35, marginBottom: 4 }}>{mv.title}</div>
+              <div style={{ fontSize: 'clamp(13px,1.6vw,15px)', color: mv.cor.replace('1)', '0.75)'), fontStyle: 'italic', marginBottom: 12 }}>{mv.sub}</div>
               <div style={{ padding: '8px 12px', borderRadius: 8, background: 'rgba(0,0,0,0.30)', borderLeft: `3px solid ${mv.corB}`, marginBottom: 10 }}>
-                <div style={{ fontSize: 9, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: mv.cor, marginBottom: 4 }}>🔑 {pt ? 'Chave Exegética' : 'Exegetical Key'}</div>
-                <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.78)', lineHeight: 1.60 }}>{mv.key}</div>
+                <div style={{ fontSize: 'clamp(11px,1.3vw,12px)', fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: mv.cor, marginBottom: 4 }}>🔑 {pt ? 'Chave Exegética' : 'Exegetical Key'}</div>
+                <div style={{ fontSize: 'clamp(13px,1.6vw,15px)', color: 'rgba(255,255,255,0.78)', lineHeight: 1.60 }}>{mv.key}</div>
               </div>
               <div style={{ padding: '8px 12px', borderRadius: 8, background: 'rgba(255,255,255,0.04)', borderLeft: `3px solid ${mv.cor.replace('1)', '0.40)')}` }}>
-                <div style={{ fontSize: 9, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: mv.cor, marginBottom: 4 }}>🏡 {pt ? 'Aplicação Familiar' : 'Family Application'}</div>
-                <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.70)', lineHeight: 1.60, fontStyle: 'italic' }}>{mv.app}</div>
+                <div style={{ fontSize: 'clamp(11px,1.3vw,12px)', fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: mv.cor, marginBottom: 4 }}>🏡 {pt ? 'Aplicação Familiar' : 'Family Application'}</div>
+                <div style={{ fontSize: 'clamp(13px,1.6vw,15px)', color: 'rgba(255,255,255,0.70)', lineHeight: 1.60, fontStyle: 'italic' }}>{mv.app}</div>
               </div>
             </div>
           </div>
@@ -2182,7 +2182,7 @@ function InfograficoFamiliaSection({ pt }: { pt: boolean }) {
 
       {/* ── EIXO REDENTOR ── */}
       <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.08)', padding: 'clamp(18px,3vw,24px)', marginBottom: 20 }}>
-        <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.40)', marginBottom: 14 }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.40)', marginBottom: 14 }}>
           ✝️ {pt ? 'Eixo Redentor · Gênesis → Cristo' : 'Redemptive Axis · Genesis → Christ'}
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(190px,1fr))', gap: 10 }}>
@@ -2193,8 +2193,8 @@ function InfograficoFamiliaSection({ pt }: { pt: boolean }) {
           ].map((c, i) => (
             <div key={i} style={{ borderRadius: 12, background: c.cor, border: '1px solid rgba(255,255,255,0.07)', padding: '12px 14px' }}>
               <div style={{ fontSize: 20, marginBottom: 6 }}>{c.emoji}</div>
-              <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.50)', marginBottom: 4 }}>AT: {c.at}</div>
-              <div style={{ fontSize: 13, color: '#fff', fontWeight: 700, lineHeight: 1.4 }}>NT: {c.nt}</div>
+              <div style={{ fontSize: 'clamp(12px,1.5vw,14px)', color: 'rgba(255,255,255,0.50)', marginBottom: 4 }}>AT: {c.at}</div>
+              <div style={{ fontSize: 'clamp(14px,1.8vw,16px)', color: '#fff', fontWeight: 700, lineHeight: 1.4 }}>NT: {c.nt}</div>
             </div>
           ))}
         </div>
@@ -2202,7 +2202,7 @@ function InfograficoFamiliaSection({ pt }: { pt: boolean }) {
 
       {/* ── APLICAÇÕES POR PÚBLICO ── */}
       <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.08)', padding: 'clamp(18px,3vw,24px)', marginBottom: 20 }}>
-        <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.40)', marginBottom: 14 }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.40)', marginBottom: 14 }}>
           🛠️ {pt ? 'Aplicações por Público' : 'Application by Audience'}
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
@@ -2215,8 +2215,8 @@ function InfograficoFamiliaSection({ pt }: { pt: boolean }) {
             <div key={i} style={{ display: 'flex', gap: 12, alignItems: 'flex-start', padding: '10px 14px', borderRadius: 10, background: a.cor, border: '1px solid rgba(255,255,255,0.06)' }}>
               <span style={{ fontSize: 20, flexShrink: 0 }}>{a.emoji}</span>
               <div>
-                <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.60)', marginBottom: 3 }}>{a.pub}</div>
-                <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.85)', lineHeight: 1.60 }}>{a.app}</div>
+                <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.60)', marginBottom: 3 }}>{a.pub}</div>
+                <div style={{ fontSize: 'clamp(14px,1.8vw,16px)', color: 'rgba(255,255,255,0.85)', lineHeight: 1.60 }}>{a.app}</div>
               </div>
             </div>
           ))}
@@ -2225,16 +2225,16 @@ function InfograficoFamiliaSection({ pt }: { pt: boolean }) {
 
       {/* ── DINÂMICA FAMILIAR ── */}
       <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.08)', padding: 'clamp(18px,3vw,24px)', marginBottom: 20 }}>
-        <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.40)', marginBottom: 14 }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.40)', marginBottom: 14 }}>
           🎯 {pt ? 'Dinâmica Familiar · 4 Atividades' : 'Family Dynamic · 4 Activities'}
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))', gap: 10 }}>
           {ACTIVITIES.map((a) => (
             <div key={a.n} style={{ borderRadius: 12, background: 'rgba(52,211,153,0.05)', border: '1px solid rgba(52,211,153,0.18)', padding: '14px 16px', display: 'flex', gap: 12 }}>
-              <div style={{ flexShrink: 0, width: 28, height: 28, borderRadius: '50%', background: 'rgba(52,211,153,0.18)', border: '1px solid rgba(52,211,153,0.35)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 12, fontWeight: 900, color: 'rgba(52,211,153,0.90)' }}>{a.n}</div>
+              <div style={{ flexShrink: 0, width: 28, height: 28, borderRadius: '50%', background: 'rgba(52,211,153,0.18)', border: '1px solid rgba(52,211,153,0.35)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 'clamp(13px,1.6vw,15px)', fontWeight: 900, color: 'rgba(52,211,153,0.90)' }}>{a.n}</div>
               <div>
                 <div style={{ fontSize: 16, marginBottom: 4 }}>{a.icon}</div>
-                <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.80)', lineHeight: 1.60 }}>{a.text}</div>
+                <div style={{ fontSize: 'clamp(14px,1.8vw,16px)', color: 'rgba(255,255,255,0.80)', lineHeight: 1.60 }}>{a.text}</div>
               </div>
             </div>
           ))}
@@ -2243,7 +2243,7 @@ function InfograficoFamiliaSection({ pt }: { pt: boolean }) {
 
       {/* ── VOZES REFORMADAS ── */}
       <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.08)', padding: 'clamp(18px,3vw,24px)', marginBottom: 20 }}>
-        <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.40)', marginBottom: 14 }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.40)', marginBottom: 14 }}>
           📚 {pt ? 'Vozes Reformadas' : 'Reformed Voices'}
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
@@ -2253,8 +2253,8 @@ function InfograficoFamiliaSection({ pt }: { pt: boolean }) {
             { autor: 'J.C. Ryle', obra: 'The Duties of Parents', cor: 'rgba(255,200,80,0.15)', quote: pt ? '"Habituai vossos filhos a pensar em Deus. Ensinai-os cedo que há um Deus que os fez, que os sustenta e a quem eles devem prestar contas."' : '"Accustom your children to think of God. Teach them early that there is a God who made them, sustains them, and to whom they must give account."' },
           ].map((v, i) => (
             <div key={i} style={{ padding: '12px 16px', borderRadius: 12, background: v.cor, border: '1px solid rgba(255,255,255,0.07)' }}>
-              <div style={{ fontSize: 11, fontWeight: 900, color: 'rgba(255,255,255,0.75)', marginBottom: 6 }}>{v.autor} · <em style={{ fontWeight: 400 }}>{v.obra}</em></div>
-              <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.85)', fontStyle: 'italic', lineHeight: 1.65 }}>{v.quote}</div>
+              <div style={{ fontSize: 'clamp(12px,1.5vw,14px)', fontWeight: 900, color: 'rgba(255,255,255,0.75)', marginBottom: 6 }}>{v.autor} · <em style={{ fontWeight: 400 }}>{v.obra}</em></div>
+              <div style={{ fontSize: 'clamp(14px,1.8vw,16px)', color: 'rgba(255,255,255,0.85)', fontStyle: 'italic', lineHeight: 1.65 }}>{v.quote}</div>
             </div>
           ))}
         </div>
@@ -2262,7 +2262,7 @@ function InfograficoFamiliaSection({ pt }: { pt: boolean }) {
 
       {/* ── CONCLUSÃO ── */}
       <div style={{ borderRadius: 16, background: 'linear-gradient(135deg,rgba(52,211,153,0.13),rgba(80,200,255,0.08))', border: '1.5px solid rgba(52,211,153,0.35)', padding: 'clamp(18px,3vw,28px)' }}>
-        <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(52,211,153,0.85)', marginBottom: 12 }}>🏁 {pt ? 'Conclusão' : 'Conclusion'}</div>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(52,211,153,0.85)', marginBottom: 12 }}>🏁 {pt ? 'Conclusão' : 'Conclusion'}</div>
         <p style={{ fontSize: 'clamp(14px,2vw,16px)', color: 'rgba(255,255,255,0.85)', lineHeight: 1.75, margin: '0 0 14px' }}>
           {pt
             ? 'A Palavra que disse "haja luz" não parou de falar. Ela ainda ordena, delega e consagra — e sua família existe dentro dessa Palavra. Você não escolheu sua família por acaso: Deus a planejou como o palco onde Sua glória será exibida.'

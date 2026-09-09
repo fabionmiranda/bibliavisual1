@@ -1384,24 +1384,24 @@ function InfograficoSection({ pt }: { pt: boolean }) {
       {/* ── HERO ── */}
       <div style={{ borderRadius: 20, background: 'linear-gradient(135deg,rgba(255,200,80,0.12) 0%,rgba(80,200,255,0.08) 100%)', border: '1px solid rgba(255,200,80,0.30)', padding: 'clamp(24px,4vw,36px)', marginBottom: 28, textAlign: 'center' }}>
         <div style={{ fontSize: 'clamp(48px,8vw,72px)', lineHeight: 1, marginBottom: 10, filter: 'drop-shadow(0 0 20px rgba(255,200,80,0.45))' }}>🌌</div>
-        <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase', color: 'rgba(255,200,80,0.80)', marginBottom: 8 }}>Gênesis 1:1 – 2:4a · Perícope 01 · {pt ? 'Dia 1' : 'Day 1'}</div>
-        <div style={{ fontSize: 'clamp(20px,3.5vw,30px)', fontWeight: 900, color: '#fff', lineHeight: 1.25, marginBottom: 8 }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase', color: 'rgba(255,200,80,0.80)', marginBottom: 8 }}>Gênesis 1:1 – 2:4a · Perícope 01 · {pt ? 'Dia 1' : 'Day 1'}</div>
+        <div style={{ fontSize: 'clamp(22px,3.8vw,32px)', fontWeight: 900, color: '#fff', lineHeight: 1.25, marginBottom: 8 }}>
           {pt ? 'Do Caos ao Descanso' : 'From Chaos to Rest'}
         </div>
-        <div style={{ fontSize: 'clamp(13px,2vw,16px)', color: 'rgba(255,255,255,0.55)', fontStyle: 'italic', marginBottom: 16 }}>
+        <div style={{ fontSize: 'clamp(15px,2.2vw,18px)', color: 'rgba(255,255,255,0.55)', fontStyle: 'italic', marginBottom: 16 }}>
           {pt ? 'A Palavra que Cria, Ordena e Consagra' : 'The Word that Creates, Orders and Consecrates'}
         </div>
         <div style={{ display: 'inline-flex', flexWrap: 'wrap', gap: 8, justifyContent: 'center' }}>
           {['Pentateuco', pt ? 'Narrativa Fundacional' : 'Foundational Narrative', pt ? 'Teologia da Criação' : 'Creation Theology'].map(t => (
-            <span key={t} style={{ fontSize: 11, fontWeight: 700, padding: '3px 12px', borderRadius: 99, background: 'rgba(255,200,80,0.12)', border: '1px solid rgba(255,200,80,0.25)', color: 'rgba(255,200,80,0.85)' }}>{t}</span>
+            <span key={t} style={{ fontSize: 'clamp(12px,1.5vw,14px)', fontWeight: 700, padding: '3px 12px', borderRadius: 99, background: 'rgba(255,200,80,0.12)', border: '1px solid rgba(255,200,80,0.25)', color: 'rgba(255,200,80,0.85)' }}>{t}</span>
           ))}
         </div>
       </div>
 
       {/* ── BIG IDEA ── */}
       <div style={{ borderRadius: 16, background: 'linear-gradient(135deg,rgba(255,200,80,0.10),rgba(80,200,255,0.07))', border: '1.5px solid rgba(255,200,80,0.35)', padding: '20px 24px', marginBottom: 20 }}>
-        <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,200,80,0.85)', marginBottom: 8 }}>💡 {pt ? 'Big Idea · Tema Central' : 'Big Idea · Central Theme'}</div>
-        <p style={{ fontSize: 'clamp(14px,2vw,17px)', fontWeight: 800, color: '#fff', lineHeight: 1.70, margin: 0 }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,200,80,0.85)', marginBottom: 8 }}>💡 {pt ? 'Big Idea · Tema Central' : 'Big Idea · Central Theme'}</div>
+        <p style={{ fontSize: 'clamp(16px,2.2vw,19px)', fontWeight: 800, color: '#fff', lineHeight: 1.70, margin: 0 }}>
           {pt
             ? 'O Deus soberano, pela Sua Palavra criadora e organizadora, transforma o caos (תֹהוּ וָבֹהוּ) em cosmos sagrado — revelando que a criação é o palco preparado para o drama da redenção.'
             : 'The sovereign God, by His creative and organizing Word, transforms chaos (tohu vavohu) into sacred cosmos — revealing that creation is the stage prepared for the drama of redemption.'}
@@ -1411,16 +1411,16 @@ function InfograficoSection({ pt }: { pt: boolean }) {
       {/* ── PERGUNTA + PROPOSIÇÃO ── */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))', gap: 14, marginBottom: 28 }}>
         <div style={{ borderRadius: 14, background: 'rgba(255,100,100,0.06)', border: '1px solid rgba(255,100,100,0.22)', padding: '18px 20px' }}>
-          <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,140,140,0.85)', marginBottom: 8 }}>❓ {pt ? 'Pergunta Central' : 'Central Question'}</div>
-          <p style={{ fontSize: 14, color: 'rgba(255,210,210,0.90)', lineHeight: 1.70, fontStyle: 'italic', margin: 0 }}>
+          <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,140,140,0.85)', marginBottom: 8 }}>❓ {pt ? 'Pergunta Central' : 'Central Question'}</div>
+          <p style={{ fontSize: 'clamp(15px,2vw,17px)', color: 'rgba(255,210,210,0.90)', lineHeight: 1.70, fontStyle: 'italic', margin: 0 }}>
             {pt
               ? '"Como a Palavra soberana de Deus pode transformar o caos da nossa vida em cosmos consagrado?"'
               : '"How can God\'s sovereign Word transform the chaos of our lives into consecrated cosmos?"'}
           </p>
         </div>
         <div style={{ borderRadius: 14, background: 'rgba(255,200,80,0.08)', border: '1px solid rgba(255,200,80,0.30)', padding: '18px 20px' }}>
-          <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,200,80,0.85)', marginBottom: 8 }}>⚡ {pt ? 'Proposição' : 'Proposition'}</div>
-          <p style={{ fontSize: 14, fontWeight: 700, color: '#fff', lineHeight: 1.70, margin: 0 }}>
+          <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,200,80,0.85)', marginBottom: 8 }}>⚡ {pt ? 'Proposição' : 'Proposition'}</div>
+          <p style={{ fontSize: 'clamp(15px,2vw,17px)', fontWeight: 700, color: '#fff', lineHeight: 1.70, margin: 0 }}>
             {pt
               ? 'A Palavra soberana de Deus transforma todo caos em cosmos consagrado — fundamento da nossa esperança redentor-criacional.'
               : 'God\'s sovereign Word transforms all chaos into consecrated cosmos — the foundation of our redemptive-creational hope.'}
@@ -1430,7 +1430,7 @@ function InfograficoSection({ pt }: { pt: boolean }) {
 
       {/* ── QUIASMA VISUAL ── */}
       <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.08)', padding: 'clamp(18px,3vw,28px)', marginBottom: 28 }}>
-        <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.45)', marginBottom: 20, textAlign: 'center' }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.45)', marginBottom: 20, textAlign: 'center' }}>
           🔄 {pt ? 'Estrutura Quiástica · Gênesis 1–2' : 'Chiastic Structure · Genesis 1–2'}
         </div>
         {[
@@ -1444,18 +1444,18 @@ function InfograficoSection({ pt }: { pt: boolean }) {
           { sym: "P'",  ref: 'Gn 2:1–4a',  label: pt ? 'Epílogo: O Soberano repousa e consagra' : 'Epilogue: The Sovereign rests and consecrates',     cor: 'rgba(255,200,80,1)',  indent: 0,  emoji: '✨' },
         ].map((row, i) => (
           <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 6, paddingLeft: row.indent * 20 }}>
-            <div style={{ flexShrink: 0, width: 28, textAlign: 'center', fontFamily: 'monospace', fontWeight: 900, fontSize: 13, color: row.cor }}>{row.sym}</div>
+            <div style={{ flexShrink: 0, width: 28, textAlign: 'center', fontFamily: 'monospace', fontWeight: 900, fontSize: 'clamp(14px,1.8vw,16px)', color: row.cor }}>{row.sym}</div>
             <div style={{ flexShrink: 0, fontSize: 16 }}>{row.emoji}</div>
             <div style={{ flex: 1, padding: '7px 12px', borderRadius: 8, background: `${row.cor.replace('1)', '0.08)')}`, borderLeft: `3px solid ${row.cor.replace('1)', '0.50)')}` }}>
-              <span style={{ fontSize: 11, color: row.cor.replace('1)', '0.70)'), fontWeight: 700, marginRight: 8 }}>{row.ref}</span>
-              <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.85)' }}>{row.label}</span>
+              <span style={{ fontSize: 'clamp(12px,1.5vw,14px)', color: row.cor.replace('1)', '0.70)'), fontWeight: 700, marginRight: 8 }}>{row.ref}</span>
+              <span style={{ fontSize: 'clamp(14px,1.8vw,16px)', color: 'rgba(255,255,255,0.85)' }}>{row.label}</span>
             </div>
           </div>
         ))}
       </div>
 
       {/* ── 4 MOVIMENTOS ── */}
-      <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.40)', marginBottom: 14 }}>
+      <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.40)', marginBottom: 14 }}>
         📐 {pt ? 'Divisões Expositivas do Sermão' : 'Expository Sermon Divisions'}
       </div>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: 14, marginBottom: 28 }}>
@@ -1465,24 +1465,24 @@ function InfograficoSection({ pt }: { pt: boolean }) {
             <div style={{ padding: '12px 16px', background: mv.corB, display: 'flex', alignItems: 'center', gap: 10 }}>
               <span style={{ fontSize: 22 }}>{mv.emoji}</span>
               <div>
-                <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: mv.cor }}>
+                <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: mv.cor }}>
                   {pt ? 'Movimento' : 'Movement'} {mv.num} · {mv.sym}
                 </div>
-                <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.55)' }}>{mv.ref}</div>
+                <div style={{ fontSize: 'clamp(12px,1.5vw,14px)', color: 'rgba(255,255,255,0.55)' }}>{mv.ref}</div>
               </div>
             </div>
             <div style={{ padding: '14px 16px' }}>
-              <div style={{ fontSize: 15, fontWeight: 800, color: '#fff', lineHeight: 1.35, marginBottom: 4 }}>{mv.title}</div>
-              <div style={{ fontSize: 12, color: mv.cor.replace('1)', '0.75)'), fontStyle: 'italic', marginBottom: 12 }}>{mv.sub}</div>
+              <div style={{ fontSize: 'clamp(16px,2.1vw,18px)', fontWeight: 800, color: '#fff', lineHeight: 1.35, marginBottom: 4 }}>{mv.title}</div>
+              <div style={{ fontSize: 'clamp(13px,1.6vw,15px)', color: mv.cor.replace('1)', '0.75)'), fontStyle: 'italic', marginBottom: 12 }}>{mv.sub}</div>
               {/* Chave exegética */}
               <div style={{ padding: '8px 12px', borderRadius: 8, background: 'rgba(0,0,0,0.30)', borderLeft: `3px solid ${mv.corB}`, marginBottom: 10 }}>
-                <div style={{ fontSize: 9, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: mv.cor, marginBottom: 4 }}>🔑 {pt ? 'Chave' : 'Key'}</div>
-                <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.78)', lineHeight: 1.60 }}>{mv.key}</div>
+                <div style={{ fontSize: 'clamp(11px,1.3vw,12px)', fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: mv.cor, marginBottom: 4 }}>🔑 {pt ? 'Chave' : 'Key'}</div>
+                <div style={{ fontSize: 'clamp(13px,1.6vw,15px)', color: 'rgba(255,255,255,0.78)', lineHeight: 1.60 }}>{mv.key}</div>
               </div>
               {/* Aplicação */}
               <div style={{ padding: '8px 12px', borderRadius: 8, background: 'rgba(255,255,255,0.04)', borderLeft: `3px solid ${mv.cor.replace('1)', '0.40)')}` }}>
-                <div style={{ fontSize: 9, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: mv.cor, marginBottom: 4 }}>🛠 {pt ? 'Aplicação' : 'Application'}</div>
-                <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.70)', lineHeight: 1.60, fontStyle: 'italic' }}>{mv.app}</div>
+                <div style={{ fontSize: 'clamp(11px,1.3vw,12px)', fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: mv.cor, marginBottom: 4 }}>🛠 {pt ? 'Aplicação' : 'Application'}</div>
+                <div style={{ fontSize: 'clamp(13px,1.6vw,15px)', color: 'rgba(255,255,255,0.70)', lineHeight: 1.60, fontStyle: 'italic' }}>{mv.app}</div>
               </div>
             </div>
           </div>
@@ -1491,7 +1491,7 @@ function InfograficoSection({ pt }: { pt: boolean }) {
 
       {/* ── EIXO CRISTOLÓGICO ── */}
       <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.08)', padding: 'clamp(18px,3vw,24px)', marginBottom: 20 }}>
-        <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.40)', marginBottom: 16 }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.40)', marginBottom: 16 }}>
           ✝️ {pt ? 'Eixo Cristológico · AT → NT' : 'Christological Axis · OT → NT'}
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(200px,1fr))', gap: 10 }}>
@@ -1502,8 +1502,8 @@ function InfograficoSection({ pt }: { pt: boolean }) {
           ].map((c, i) => (
             <div key={i} style={{ borderRadius: 12, background: c.cor, border: '1px solid rgba(255,255,255,0.07)', padding: '12px 14px' }}>
               <div style={{ fontSize: 18, marginBottom: 6 }}>{c.emoji}</div>
-              <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.50)', marginBottom: 4 }}>AT: {c.at}</div>
-              <div style={{ fontSize: 13, color: '#fff', fontWeight: 700, lineHeight: 1.4 }}>NT: {c.nt}</div>
+              <div style={{ fontSize: 'clamp(12px,1.5vw,14px)', color: 'rgba(255,255,255,0.50)', marginBottom: 4 }}>AT: {c.at}</div>
+              <div style={{ fontSize: 'clamp(14px,1.8vw,16px)', color: '#fff', fontWeight: 700, lineHeight: 1.4 }}>NT: {c.nt}</div>
             </div>
           ))}
         </div>
@@ -1511,7 +1511,7 @@ function InfograficoSection({ pt }: { pt: boolean }) {
 
       {/* ── APLICAÇÃO ── */}
       <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.08)', padding: 'clamp(18px,3vw,24px)', marginBottom: 20 }}>
-        <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.40)', marginBottom: 14 }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.40)', marginBottom: 14 }}>
           🛠️ {pt ? 'Aplicação por Público' : 'Application by Audience'}
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
@@ -1523,8 +1523,8 @@ function InfograficoSection({ pt }: { pt: boolean }) {
             <div key={i} style={{ display: 'flex', gap: 12, alignItems: 'flex-start', padding: '10px 14px', borderRadius: 10, background: a.cor, border: '1px solid rgba(255,255,255,0.06)' }}>
               <span style={{ fontSize: 20, flexShrink: 0 }}>{a.emoji}</span>
               <div>
-                <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.60)', marginBottom: 3 }}>{a.pub} · {a.ref}</div>
-                <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.85)', lineHeight: 1.60 }}>{a.app}</div>
+                <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.60)', marginBottom: 3 }}>{a.pub} · {a.ref}</div>
+                <div style={{ fontSize: 'clamp(14px,1.8vw,16px)', color: 'rgba(255,255,255,0.85)', lineHeight: 1.60 }}>{a.app}</div>
               </div>
             </div>
           ))}
@@ -1533,7 +1533,7 @@ function InfograficoSection({ pt }: { pt: boolean }) {
 
       {/* ── CONCLUSÃO / APELO ── */}
       <div style={{ borderRadius: 16, background: 'linear-gradient(135deg,rgba(255,200,80,0.12),rgba(80,200,255,0.08))', border: '1.5px solid rgba(255,200,80,0.35)', padding: 'clamp(18px,3vw,28px)' }}>
-        <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,200,80,0.85)', marginBottom: 12 }}>🏁 {pt ? 'Conclusão e Apelo' : 'Conclusion and Appeal'}</div>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,200,80,0.85)', marginBottom: 12 }}>🏁 {pt ? 'Conclusão e Apelo' : 'Conclusion and Appeal'}</div>
         <p style={{ fontSize: 'clamp(14px,2vw,16px)', color: 'rgba(255,255,255,0.85)', lineHeight: 1.75, margin: '0 0 14px' }}>
           {pt
             ? 'No princípio, havia caos. Deus falou — e houve cosmos. No princípio da sua vida, havia desordem. Cristo falou — e há nova criação (2Co 5:17). O mesmo Deus que disse "haja luz" na criação diz "haja luz" no seu coração.'
