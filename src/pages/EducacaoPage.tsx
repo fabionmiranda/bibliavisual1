@@ -1056,6 +1056,102 @@ function MetodologiasGrid({ pt }: { pt: boolean }) {
   );
 }
 
+// ─── Josué 1 × Metodologias ─────────────────────────────────────
+const JOSUE1_METOD: { titulo: string; aplicacao: string }[] = [
+  {
+    titulo: 'Método Socrático',
+    aplicacao: 'Abra com a pergunta: "O que significa ser forte e corajoso sem mencionar sentimentos?" Conduza o grupo a descobrir que a coragem em Js 1 está ancorada na promessa de Deus, não em disposição emocional.',
+  },
+  {
+    titulo: 'Estudo Bíblico Indutivo',
+    aplicacao: 'Distribua Js 1:1-9 sem qualquer comentário. Peça que cada aluno observe, interprete e aplique sozinho: quantas vezes Deus repete "seja forte e corajoso"? O que isso revela sobre o estado de Josué?',
+  },
+  {
+    titulo: 'Análise Quiástica como Metodologia Ativa',
+    aplicacao: 'Mostre o quiasmo de Js 1:1-9 (A-B-C-B\'-A\'). O centro é o v.7 — a obediência à Torah. Desafie: por que a obediência à Palavra, e não a estratégia militar, está no centro do texto?',
+  },
+  {
+    titulo: 'Aprendizagem Baseada em Projetos (PBL)',
+    aplicacao: 'Grupo mapeia Js 1 inteiro: identifica perícopes, estrutura quiástica, promessas e condições. Produto final: um infográfico ou apresentação que explique "a liderança segundo Deus" com base no capítulo.',
+  },
+  {
+    titulo: 'Pedagogia Narrativa Bíblica',
+    aplicacao: 'Peça que o aluno se coloque no lugar de Josué: Moisés acaba de morrer, o povo está à beira do Jordão. O que você sente? Agora leia Js 1:1-9 como a voz de Deus respondendo a essa ansiedade.',
+  },
+  {
+    titulo: 'Sala Invertida Bíblica (Flipped Classroom)',
+    aplicacao: 'Antes da aula, alunos leem Js 1 e respondem: "Qual promessa de Deus você acha mais difícil de crer hoje?" Na aula, o debate parte dessas respostas pessoais e vai ao texto para respondê-las.',
+  },
+  {
+    titulo: 'Andragogia Teológica Reformada',
+    aplicacao: 'Para adultos: "Qual situação em sua vida agora exige a coragem de Js 1:9?" O texto não é lição histórica — é Palavra viva endereçada à experiência presente do discípulo adulto.',
+  },
+  {
+    titulo: 'Aprendizagem Transformativa Bíblica',
+    aplicacao: 'Questione a premissa: "Coragem é virtude pessoal ou dádiva de Deus?" Js 1:9 ("Eu não te ordenei?") revela que a coragem bíblica é um imperativo fundado em uma promessa — isso transforma a cosmovisão.',
+  },
+  {
+    titulo: 'Comunidade de Prática da Aliança',
+    aplicacao: 'O grupo lê Js 1:10-18: o povo responde "como fizemos a Moisés, assim faremos a ti." Pratique: como uma comunidade atual pode fazer este mesmo pacto de fidelidade mútua na missão?',
+  },
+  {
+    titulo: 'Tutoria Expositiva (Modelo Timóteo)',
+    aplicacao: 'O pastor/mentor expõe Js 1 versículo a versículo junto ao discípulo, mostrando como movimentar-se do texto original ao esboço de sermão — transformando um discipulado pessoal em formação homilética prática.',
+  },
+  {
+    titulo: 'Micro-aprendizagem Bíblica (Microlearning)',
+    aplicacao: 'Envia-se uma mensagem por dia durante 9 dias: cada dia um versículo de Js 1:1-9 com uma pergunta de reflexão e uma promessa para memorizar. Ao nono dia, o aluno percebe a estrutura completa do texto.',
+  },
+  {
+    titulo: 'Aprendizagem Experiencial Reformada (Ciclo de Kolb)',
+    aplicacao: 'Experiência concreta: liderar uma decisão difícil na semana. Reflexão: onde Deus apareceu nessa situação? Conceitualização: Js 1 como mapa teológico da liderança. Experimentação: aplicar uma promessa do texto à próxima decisão.',
+  },
+  {
+    titulo: 'Seminário Socrático Reformado',
+    aplicacao: 'Texto-âncora: Js 1:1-9. Pergunta geradora: "Pode-se obedecer sem crença, e crer sem obedecer?" O grupo debate movendo-se entre o imperativo (vs. 7-8) e a promessa (vs. 5,9) — descobrindo que fé e obediência são inseparáveis.',
+  },
+  {
+    titulo: 'Orientação Formativa Bíblica (OFB)',
+    aplicacao: 'Sessão de OFB com Js 1:7-8: o orientador pergunta "O que você mediaria na Lei de Deus esta semana?" e acompanha o discípulo durante sete dias — verificando como a meditação diária na Palavra transforma o comportamento concreto.',
+  },
+  {
+    titulo: 'Design Instrucional Teológico (DIT)',
+    aplicacao: 'Projete uma unidade de 4 aulas sobre Js 1: Aula 1 — contexto histórico-redentor; Aula 2 — estrutura quiástica; Aula 3 — teologia das promessas; Aula 4 — aplicação à liderança cristã atual. DIT garante progressão e coerência curricular.',
+  },
+  {
+    titulo: 'Heutagogia Cristã',
+    aplicacao: 'O aluno define sua própria pergunta sobre Js 1 e conduz sua pesquisa: textos paralelos, comentários, uso do quiasmo. Apresenta suas descobertas ao grupo — o professor supervisiona sem dirigir. Aprender a aprender a partir da Palavra.',
+  },
+  {
+    titulo: 'Círculos de Ferro — Mentoria Masculina Reformada',
+    aplicacao: 'Js 1:6 ("Sê forte e corajoso, pois tu farás este povo herdar a terra"). Cada homem do grupo responde: "Em que área você está sendo Josué — liderando com a Palavra — e em que área está hesitando?"',
+  },
+  {
+    titulo: 'Andragogia da Liderança Masculina Cristã',
+    aplicacao: 'Js 1:1-9 como retrato da transição de liderança. Homens adultos refletem: "Quem foi seu Moisés? Onde você é chamado a ser Josué agora?" O texto deixa de ser narrativa histórica e torna-se espelho de vocação.',
+  },
+  {
+    titulo: 'Método Tito 2 — Mentoria Feminina Intergeracional',
+    aplicacao: 'Rahabe (Js 2, preparada em Js 1:2) como modelo de mulher que ousou confiar na promessa de Deus. A mulher mais velha do grupo narra como a fé sustentou uma decisão difícil — a mais jovem ouve, pergunta e aplica.',
+  },
+  {
+    titulo: 'Círculos de Sabedoria Feminina Reformada',
+    aplicacao: 'O grupo feminino estuda Js 1:7-8: "Não se aparte da tua boca este livro da lei." Como a meditação diária na Palavra sustenta a mulher cristã em papéis de mãe, professora, conselheira? Debate expositivo e aplicado.',
+  },
+  {
+    titulo: 'Gamificação Bíblica Reformada',
+    aplicacao: 'Missão: "Reconstrua o mapa de Josué 1." Cada equipe identifica personagens, promessas, condições e ordens em Js 1, monta um diagrama e apresenta. Pontuação por precisão exegética e clareza na apresentação.',
+  },
+  {
+    titulo: 'Aprendizagem Colaborativa por Pares (Peer Learning) Juvenil',
+    aplicacao: 'Cada jovem recebe uma missão: ensinar Js 1:1-5 ao seu par em 5 minutos usando o quiasmo. Depois invertem. Quem ensina aprende duas vezes — e descobre que Deus fala a Josué exatamente onde ele está.',
+  },
+  {
+    titulo: 'Aprendizagem Baseada em Problemas Bíblicos (ABP Juvenil)',
+    aplicacao: 'Situação-problema: "Você foi eleito líder do grupo de jovens, mas sente que não tem capacidade. O que Deus diria a você?" O grupo vai a Js 1:1-9 para construir uma resposta bíblica fundamentada — não uma opinião, mas uma convicção.',
+  },
+];
+
 function JosuePericopesSection({ pt }: { pt: boolean }) {
   const [pericopes, setPericopes] = useState<Pericope[]>([]);
   const [loading, setLoading] = useState(true);
@@ -1193,6 +1289,72 @@ function JosuePericopesSection({ pt }: { pt: boolean }) {
               {pt ? 'Ver no menu Pregação' : 'View in Preaching menu'}
               <ChevronRight size={14} />
             </Link>
+          </div>
+        </motion.div>
+      )}
+
+      {/* ── Josué 1 × Metodologias Ativas ─────────────────── */}
+      {selectedP && /^(Js\s+)?1:/.test(selectedP.ref) && (
+        <motion.div
+          key="josue1-metod"
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.35 }}
+          style={{ display: 'flex', flexDirection: 'column', gap: 16 }}
+        >
+          {/* Cabeçalho */}
+          <div style={{
+            display: 'flex', alignItems: 'center', gap: 10,
+            padding: '14px 18px', borderRadius: 14,
+            background: `linear-gradient(135deg, ${C.atColor}12, ${C.gold}08)`,
+            border: `1px solid ${C.atColor}40`,
+          }}>
+            <BookOpen size={16} color={C.gold} />
+            <div>
+              <div style={{ fontSize: 11, fontWeight: 900, color: C.gold, letterSpacing: '0.20em', textTransform: 'uppercase' }}>
+                {pt ? 'Josué 1 em cada Metodologia' : 'Joshua 1 in Each Methodology'}
+              </div>
+              <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.50)', marginTop: 2 }}>
+                {pt ? 'Exemplos práticos de aplicação para cada abordagem pedagógica' : 'Practical application examples for each pedagogical approach'}
+              </div>
+            </div>
+          </div>
+
+          {/* Cards de aplicação */}
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(clamp(260px, 30vw, 340px), 1fr))',
+            gap: 12,
+          }}>
+            {JOSUE1_METOD.map((item, i) => (
+              <motion.div
+                key={item.titulo}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.04 }}
+                style={{
+                  padding: '16px 18px', borderRadius: 14,
+                  background: `${C.atColor}07`,
+                  border: `1px solid ${C.atColor}20`,
+                  display: 'flex', flexDirection: 'column', gap: 8,
+                }}
+              >
+                <div style={{
+                  fontSize: 10, fontWeight: 900, color: C.atColor,
+                  letterSpacing: '0.08em', textTransform: 'uppercase',
+                  paddingBottom: 6,
+                  borderBottom: `1px solid ${C.atColor}18`,
+                }}>
+                  {item.titulo}
+                </div>
+                <p style={{
+                  margin: 0, fontSize: 'clamp(11px,1.3vw,12.5px)',
+                  color: 'rgba(220,235,255,0.78)', lineHeight: 1.65,
+                }}>
+                  {item.aplicacao}
+                </p>
+              </motion.div>
+            ))}
           </div>
         </motion.div>
       )}
