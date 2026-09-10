@@ -1294,7 +1294,7 @@ function JosuePericopesSection({ pt }: { pt: boolean }) {
       )}
 
       {/* ── Josué 1 × Metodologias Ativas ─────────────────── */}
-      {selectedP && /^(Js\s+)?1:/.test(selectedP.ref) && (
+      {selectedP && selectedP.idx === 1 && (
         <motion.div
           key="josue1-metod"
           initial={{ opacity: 0, y: 16 }}
