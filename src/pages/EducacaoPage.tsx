@@ -1156,6 +1156,7 @@ function JosuePericopesSection({ pt }: { pt: boolean }) {
   const [pericopes, setPericopes] = useState<Pericope[]>([]);
   const [loading, setLoading] = useState(true);
   const [selected, setSelected] = useState<number | null>(null);
+  const metodPanelRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     fetch(`${livroPath('josue', 'AT')}/quiastico.txt`)
@@ -1170,6 +1171,14 @@ function JosuePericopesSection({ pt }: { pt: boolean }) {
   }, []);
 
   const selectedP = pericopes.find(p => p.idx === selected) ?? null;
+
+  useEffect(() => {
+    if (selectedP?.idx === 1 && metodPanelRef.current) {
+      setTimeout(() => {
+        metodPanelRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 380);
+    }
+  }, [selectedP?.idx]);
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
@@ -1296,6 +1305,7 @@ function JosuePericopesSection({ pt }: { pt: boolean }) {
       {/* ── Josué 1 × Metodologias Ativas ─────────────────── */}
       {selectedP && selectedP.idx === 1 && (
         <motion.div
+          ref={metodPanelRef}
           key="josue1-metod"
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
