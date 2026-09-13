@@ -11,7 +11,400 @@
 };
 
 export const ARTIGOS_TEOLOGIA: ArtigoTeologia[] = [
-  // ── Introdução aos Estudos Teológicos ──────────────────────────────
+
+  {
+    id: 'artigo-pregacao-expositiva-01',
+    slug: 'o-que-nao-e-pregacao-expositiva',
+    categoria: 'Homilética & Pregação',
+    titulo: 'O Que Não É Pregação Expositiva',
+    parte: 'Delimitação Negativa',
+    resumo: 'Uma delimitação negativa a partir da tradição homilética reformada e evangélica: dezenove desvios agrupados em quatro categorias que ajudam o pregador a identificar quando a pregação deixou de ser genuinamente expositiva.',
+    area: 'artigos',
+    status: 'publicado',
+    conteudo: `
+<!-- CABEÇALHO DO ARTIGO -->
+<div style="margin-bottom:40px;padding:clamp(24px,4vw,36px);border-radius:20px;background:linear-gradient(135deg,rgba(167,139,250,0.08) 0%,rgba(167,139,250,0.03) 100%);border:1px solid rgba(167,139,250,0.25);">
+  <div style="font-size:10px;font-weight:900;letter-spacing:0.30em;text-transform:uppercase;color:rgba(167,139,250,0.75);margin-bottom:10px;">Artigo Científico · Homilética Reformada</div>
+  <h1 style="font-size:clamp(22px,4vw,34px);font-weight:900;color:#fff;line-height:1.18;margin:0 0 6px;">O Que Não É Pregação Expositiva</h1>
+  <div style="font-size:clamp(14px,2vw,17px);color:rgba(200,210,255,0.65);font-style:italic;margin-bottom:20px;">uma delimitação negativa a partir da tradição homilética reformada e evangélica</div>
+  <div style="font-size:13px;color:rgba(200,210,255,0.55);margin-bottom:24px;">
+    <strong style="color:rgba(200,210,255,0.80);">Fabio N. Miranda</strong><sup><a href="#fn-1" style="color:#a78bfa;text-decoration:none;">[1]</a></sup>
+  </div>
+  <div style="height:1px;background:linear-gradient(90deg,rgba(167,139,250,0.40) 0%,transparent 70%);margin-bottom:24px;"></div>
+  <div style="font-size:11px;font-weight:900;letter-spacing:0.24em;text-transform:uppercase;color:rgba(167,139,250,0.60);margin-bottom:10px;">Resumo</div>
+  <p style="font-size:clamp(14px,1.9vw,16px);line-height:1.80;color:rgba(220,230,255,0.80);margin:0 0 18px;">O crescente prestígio da pregação expositiva entre pregadores evangélicos e reformados tem produzido, paradoxalmente, uma inflação do termo, aplicado a práticas homiléticas muito diversas entre si e, por vezes, incompatíveis com seus fundamentos hermenêuticos e teológicos. Este artigo propõe uma via de acesso pouco explorada para a definição do conceito: em vez de descrever positivamente o que caracteriza a exposição bíblica, mapeia-se aquilo que ela <em>não é</em>. A partir da obra clássica de Faris D. Whitesell, de artigos fundadores publicados no <em>The Master's Seminary Journal</em> (Richard L. Mayhue e John F. MacArthur Jr.) e de autores como Haddon W. Robinson, David Martyn Lloyd-Jones, Bryan Chapell e H. B. Charles Jr., identificam-se dezenove desvios recorrentes, agrupados em quatro categorias: falhas na relação com o texto, falhas estruturais e formais, falhas teológicas e falhas comunicativo-pastorais. Conclui-se que a pregação deixa de ser expositiva sempre que um elemento externo ao sentido do texto passa a governar a mensagem.</p>
+  <div style="display:flex;flex-wrap:wrap;gap:8px;">
+    <span style="font-size:10px;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:rgba(167,139,250,0.80);padding:3px 10px;border-radius:6px;background:rgba(167,139,250,0.10);border:1px solid rgba(167,139,250,0.22);">Pregação expositiva</span>
+    <span style="font-size:10px;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:rgba(167,139,250,0.80);padding:3px 10px;border-radius:6px;background:rgba(167,139,250,0.10);border:1px solid rgba(167,139,250,0.22);">Homilética reformada</span>
+    <span style="font-size:10px;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:rgba(167,139,250,0.80);padding:3px 10px;border-radius:6px;background:rgba(167,139,250,0.10);border:1px solid rgba(167,139,250,0.22);">Hermenêutica bíblica</span>
+    <span style="font-size:10px;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:rgba(167,139,250,0.80);padding:3px 10px;border-radius:6px;background:rgba(167,139,250,0.10);border:1px solid rgba(167,139,250,0.22);">Exegese</span>
+    <span style="font-size:10px;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:rgba(167,139,250,0.80);padding:3px 10px;border-radius:6px;background:rgba(167,139,250,0.10);border:1px solid rgba(167,139,250,0.22);">Teologia pastoral</span>
+  </div>
+</div>
+
+<!-- MAPA VISUAL DOS 19 DESVIOS -->
+<div style="margin-bottom:48px;">
+  <div style="font-size:11px;font-weight:900;letter-spacing:0.28em;text-transform:uppercase;color:rgba(167,139,250,0.60);margin-bottom:16px;">Estrutura do Artigo</div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;">
+    <div style="padding:18px 20px;border-radius:14px;background:rgba(239,68,68,0.07);border:1px solid rgba(239,68,68,0.22);">
+      <div style="font-size:11px;font-weight:900;letter-spacing:0.20em;text-transform:uppercase;color:rgba(239,68,68,0.85);margin-bottom:8px;">I. Relação com o Texto</div>
+      <div style="font-size:13px;color:rgba(255,220,220,0.75);line-height:1.6;">6 desvios · §§ 2.1 — 2.6</div>
+    </div>
+    <div style="padding:18px 20px;border-radius:14px;background:rgba(251,146,60,0.07);border:1px solid rgba(251,146,60,0.22);">
+      <div style="font-size:11px;font-weight:900;letter-spacing:0.20em;text-transform:uppercase;color:rgba(251,146,60,0.85);margin-bottom:8px;">II. Estrutura e Forma</div>
+      <div style="font-size:13px;color:rgba(255,230,200,0.75);line-height:1.6;">5 desvios · §§ 3.1 — 3.5</div>
+    </div>
+    <div style="padding:18px 20px;border-radius:14px;background:rgba(99,102,241,0.07);border:1px solid rgba(99,102,241,0.22);">
+      <div style="font-size:11px;font-weight:900;letter-spacing:0.20em;text-transform:uppercase;color:rgba(167,139,250,0.85);margin-bottom:8px;">III. Falhas Teológicas</div>
+      <div style="font-size:13px;color:rgba(210,200,255,0.75);line-height:1.6;">4 desvios · §§ 4.1 — 4.4</div>
+    </div>
+    <div style="padding:18px 20px;border-radius:14px;background:rgba(34,197,94,0.07);border:1px solid rgba(34,197,94,0.22);">
+      <div style="font-size:11px;font-weight:900;letter-spacing:0.20em;text-transform:uppercase;color:rgba(34,197,94,0.85);margin-bottom:8px;">IV. Comunicação Pastoral</div>
+      <div style="font-size:13px;color:rgba(200,240,215,0.75);line-height:1.6;">4 desvios · §§ 5.1 — 5.4</div>
+    </div>
+  </div>
+</div>
+
+<!-- SEÇÃO 1 -->
+<h2>1 &nbsp;Introdução</h2>
+<p>A pregação expositiva goza hoje de prestígio quase universal entre pregadores evangélicos e reformados — o que produziu, paradoxalmente, uma inflação do termo: aplica-se a etiqueta "expositiva" a quase qualquer prática de púlpito que toque, de algum modo, um texto bíblico. Whitesell já advertia, ainda na década de 1960, que o poder da pregação expositiva não reside na etiqueta metodológica adotada pelo pregador, mas na disciplina com que ele submete forma e conteúdo do sermão ao texto revelado.<sup><a href="#fn-2" style="color:#a78bfa;text-decoration:none;">[2]</a></sup> Décadas depois, Mayhue situou o problema com mais precisão teológica: a autenticidade da pregação contemporânea está comprometida porque muitos comunicadores estão mais preocupados com a relevância pessoal do que com a revelação de Deus.<sup><a href="#fn-3" style="color:#a78bfa;text-decoration:none;">[3]</a></sup></p>
+<p>Este ensaio não pretende definir positivamente a pregação expositiva — tarefa já cumprida com rigor por Robinson, Chapell, MacArthur e outros — mas realizar o exercício inverso e igualmente necessário: mapear, a partir desses autores e de outros da tradição homilética reformada, aquilo que a pregação expositiva <em>não é</em>. Trata-se de um exercício de <strong>delimitação negativa</strong>, de valor didático tanto para a autoavaliação homilética do pregador quanto para a formação de novos expositores.</p>
+
+<blockquote>Os dezenove itens a seguir foram agrupados em quatro categorias: falhas na relação com o texto, falhas estruturais e formais, falhas teológicas e falhas comunicativo-pastorais.</blockquote>
+
+<!-- SEÇÃO 2 -->
+<h2>2 &nbsp;Falhas na Relação com o Texto</h2>
+
+<div style="display:flex;align-items:center;gap:10px;margin-bottom:24px;">
+  <div style="width:36px;height:36px;border-radius:10px;background:rgba(239,68,68,0.12);border:1px solid rgba(239,68,68,0.30);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;">📖</div>
+  <p style="margin:0;font-size:clamp(14px,1.9vw,16px);color:rgba(220,230,255,0.75);line-height:1.7;">Esta categoria reúne os desvios mais fundamentais: aqueles que comprometem a relação básica entre o sermão e o texto bíblico que lhe deveria dar origem, forma e conteúdo.</p>
+</div>
+
+<!-- Desvio 1 -->
+<div style="margin-bottom:20px;padding:clamp(18px,3vw,26px);border-radius:16px;background:rgba(255,255,255,0.025);border:1px solid rgba(239,68,68,0.18);border-left:4px solid rgba(239,68,68,0.60);">
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+    <span style="font-size:10px;font-weight:900;letter-spacing:0.22em;text-transform:uppercase;color:rgba(239,68,68,0.85);padding:2px 8px;border-radius:5px;background:rgba(239,68,68,0.10);">Desvio 2.1</span>
+  </div>
+  <h3 style="margin:0 0 10px;color:#fff;">Não é mera menção ao texto</h3>
+  <p style="margin:0;color:rgba(225,220,255,0.85);line-height:1.80;">Ler um versículo, referir-se a ele ou extrair dele pontos avulsos não torna a pregação expositiva. O sermão só é exposição quando o <strong>sentido central do texto</strong> — e não apenas sua presença ocasional no discurso — governa a mensagem do início ao fim.</p>
+</div>
+
+<!-- Desvio 2 -->
+<div style="margin-bottom:20px;padding:clamp(18px,3vw,26px);border-radius:16px;background:rgba(255,255,255,0.025);border:1px solid rgba(239,68,68,0.18);border-left:4px solid rgba(239,68,68,0.60);">
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+    <span style="font-size:10px;font-weight:900;letter-spacing:0.22em;text-transform:uppercase;color:rgba(239,68,68,0.85);padding:2px 8px;border-radius:5px;background:rgba(239,68,68,0.10);">Desvio 2.2</span>
+  </div>
+  <h3 style="margin:0 0 10px;color:#fff;">Não é exegese apresentada como sermão</h3>
+  <p style="margin:0;color:rgba(225,220,255,0.85);line-height:1.80;">O estudo das palavras, da gramática, do contexto literário e histórico é indispensável, mas é o <em>ingrediente</em> do sermão, não o sermão em si. Pregar é proclamar uma mensagem bíblica; não é reproduzir, do púlpito, o material de pesquisa reunido no gabinete.</p>
+</div>
+
+<!-- Desvio 3 -->
+<div style="margin-bottom:20px;padding:clamp(18px,3vw,26px);border-radius:16px;background:rgba(255,255,255,0.025);border:1px solid rgba(239,68,68,0.18);border-left:4px solid rgba(239,68,68,0.60);">
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+    <span style="font-size:10px;font-weight:900;letter-spacing:0.22em;text-transform:uppercase;color:rgba(239,68,68,0.85);padding:2px 8px;border-radius:5px;background:rgba(239,68,68,0.10);">Desvio 2.3</span>
+  </div>
+  <h3 style="margin:0 0 10px;color:#fff;">Não é comentário corrido <em>(running commentary)</em></h3>
+  <p style="margin:0 0 14px;color:rgba(225,220,255,0.85);line-height:1.80;">Percorrer o texto verso a verso, comentando cada unidade até esgotar o tempo ou o texto, sem arquitetura homilética nem propósito unificador, é a distorção mais frequentemente apontada por diferentes tradições homiléticas.<sup><a href="#fn-4" style="color:#a78bfa;text-decoration:none;">[4]</a></sup></p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;">
+    <div style="padding:14px 16px;border-radius:10px;background:rgba(239,68,68,0.06);border:1px solid rgba(239,68,68,0.14);">
+      <div style="font-size:11px;font-weight:900;color:rgba(239,68,68,0.75);margin-bottom:6px;letter-spacing:0.12em;text-transform:uppercase;">H. B. Charles Jr.</div>
+      <div style="font-size:13px;color:rgba(220,215,255,0.75);line-height:1.6;">"Professor de escola dominical glorificado"<sup><a href="#fn-5" style="color:#a78bfa;text-decoration:none;">[5]</a></sup></div>
+    </div>
+    <div style="padding:14px 16px;border-radius:10px;background:rgba(239,68,68,0.06);border:1px solid rgba(239,68,68,0.14);">
+      <div style="font-size:11px;font-weight:900;color:rgba(239,68,68,0.75);margin-bottom:6px;letter-spacing:0.12em;text-transform:uppercase;">H. Robinson</div>
+      <div style="font-size:13px;color:rgba(220,215,255,0.75);line-height:1.6;">Pregação "bastardizada": informação sem relevância, sem ideia central<sup><a href="#fn-6" style="color:#a78bfa;text-decoration:none;">[6]</a></sup></div>
+    </div>
+    <div style="padding:14px 16px;border-radius:10px;background:rgba(239,68,68,0.06);border:1px solid rgba(239,68,68,0.14);">
+      <div style="font-size:11px;font-weight:900;color:rgba(239,68,68,0.75);margin-bottom:6px;letter-spacing:0.12em;text-transform:uppercase;">Lloyd-Jones</div>
+      <div style="font-size:13px;color:rgba(220,215,255,0.75);line-height:1.6;">O sermão precisa de forma própria — comparável à de uma sinfonia</div>
+    </div>
+  </div>
+</div>
+
+<!-- Desvio 4 -->
+<div style="margin-bottom:20px;padding:clamp(18px,3vw,26px);border-radius:16px;background:rgba(255,255,255,0.025);border:1px solid rgba(239,68,68,0.18);border-left:4px solid rgba(239,68,68,0.60);">
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+    <span style="font-size:10px;font-weight:900;letter-spacing:0.22em;text-transform:uppercase;color:rgba(239,68,68,0.85);padding:2px 8px;border-radius:5px;background:rgba(239,68,68,0.10);">Desvio 2.4</span>
+  </div>
+  <h3 style="margin:0 0 10px;color:#fff;">Não é pregação textual confundida com expositiva</h3>
+  <p style="margin:0 0 14px;color:rgba(225,220,255,0.85);line-height:1.80;">A distinção é sutil, mas relevante:<sup><a href="#fn-7" style="color:#a78bfa;text-decoration:none;">[7]</a></sup></p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+    <div style="padding:16px;border-radius:10px;background:rgba(239,68,68,0.06);border:1px solid rgba(239,68,68,0.18);">
+      <div style="font-size:11px;font-weight:900;letter-spacing:0.18em;text-transform:uppercase;color:rgba(239,68,68,0.70);margin-bottom:8px;">Pregação Textual</div>
+      <div style="font-size:13px;color:rgba(220,215,255,0.80);line-height:1.65;">Constrói o sermão ao redor das <strong style="color:#fff;">palavras</strong> do texto. Spurgeon é o exemplo clássico — fiel, mas tecnicamente não expositor.</div>
+    </div>
+    <div style="padding:16px;border-radius:10px;background:rgba(167,139,250,0.06);border:1px solid rgba(167,139,250,0.20);">
+      <div style="font-size:11px;font-weight:900;letter-spacing:0.18em;text-transform:uppercase;color:rgba(167,139,250,0.80);margin-bottom:8px;">Pregação Expositiva</div>
+      <div style="font-size:13px;color:rgba(220,215,255,0.80);line-height:1.65;">Constrói o sermão ao redor do <strong style="color:#fff;">sentido</strong> do texto — o que o autor quis dizer em seu contexto original.</div>
+    </div>
+  </div>
+</div>
+
+<!-- Desvio 5 -->
+<div style="margin-bottom:20px;padding:clamp(18px,3vw,26px);border-radius:16px;background:rgba(255,255,255,0.025);border:1px solid rgba(239,68,68,0.18);border-left:4px solid rgba(239,68,68,0.60);">
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+    <span style="font-size:10px;font-weight:900;letter-spacing:0.22em;text-transform:uppercase;color:rgba(239,68,68,0.85);padding:2px 8px;border-radius:5px;background:rgba(239,68,68,0.10);">Desvio 2.5</span>
+  </div>
+  <h3 style="margin:0 0 10px;color:#fff;">Não é exposição seletiva do texto</h3>
+  <p style="margin:0;color:rgba(225,220,255,0.85);line-height:1.80;">Selecionar do texto apenas o que confirma uma ideia já formada pelo pregador, e ignorar o restante, é <strong>eisegese disfarçada de exposição</strong>.<sup><a href="#fn-8" style="color:#a78bfa;text-decoration:none;">[8]</a></sup> O expositor se submete à agenda que o próprio texto impõe, inclusive quando esse texto contraria a ideia inicial do pregador para o sermão.</p>
+</div>
+
+<!-- Desvio 6 -->
+<div style="margin-bottom:20px;padding:clamp(18px,3vw,26px);border-radius:16px;background:rgba(255,255,255,0.025);border:1px solid rgba(239,68,68,0.18);border-left:4px solid rgba(239,68,68,0.60);">
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+    <span style="font-size:10px;font-weight:900;letter-spacing:0.22em;text-transform:uppercase;color:rgba(239,68,68,0.85);padding:2px 8px;border-radius:5px;background:rgba(239,68,68,0.10);">Desvio 2.6</span>
+  </div>
+  <h3 style="margin:0 0 10px;color:#fff;">Não é imposição de tema predeterminado sobre o texto</h3>
+  <p style="margin:0;color:rgba(225,220,255,0.85);line-height:1.80;">Robinson observava que alguns pregadores esboçam primeiro o sermão e depois saem "à pesca" de versículos que sustentem os pontos já decididos.<sup><a href="#fn-9" style="color:#a78bfa;text-decoration:none;">[9]</a></sup> O expositor genuíno nunca impõe um tópico ao texto; ele deixa o texto falar e molda o sermão a partir dele.</p>
+</div>
+
+<!-- SEÇÃO 3 -->
+<h2>3 &nbsp;Falhas Estruturais e Formais</h2>
+
+<div style="display:flex;align-items:center;gap:10px;margin-bottom:24px;">
+  <div style="width:36px;height:36px;border-radius:10px;background:rgba(251,146,60,0.12);border:1px solid rgba(251,146,60,0.30);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;">🏗️</div>
+  <p style="margin:0;font-size:clamp(14px,1.9vw,16px);color:rgba(220,230,255,0.75);line-height:1.7;">Mesmo quando o pregador tem boa intenção de expor o texto, podem ocorrer falhas na forma que comprometem a natureza expositiva do sermão.</p>
+</div>
+
+<!-- Desvio 7 -->
+<div style="margin-bottom:20px;padding:clamp(18px,3vw,26px);border-radius:16px;background:rgba(255,255,255,0.025);border:1px solid rgba(251,146,60,0.18);border-left:4px solid rgba(251,146,60,0.60);">
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+    <span style="font-size:10px;font-weight:900;letter-spacing:0.22em;text-transform:uppercase;color:rgba(251,146,60,0.85);padding:2px 8px;border-radius:5px;background:rgba(251,146,60,0.10);">Desvio 3.1</span>
+  </div>
+  <h3 style="margin:0 0 10px;color:#fff;">Não se define pela extensão do texto</h3>
+  <p style="margin:0;color:rgba(225,220,255,0.85);line-height:1.80;">Um expositor tende a respeitar as divisões naturais da passagem, mas a exposição não se mede pelo tamanho do texto trabalhado — seja um versículo, um parágrafo ou um capítulo —, e sim pelo <strong>modo como esse texto é tratado</strong>.<sup><a href="#fn-10" style="color:#a78bfa;text-decoration:none;">[10]</a></sup></p>
+</div>
+
+<!-- Desvio 8 -->
+<div style="margin-bottom:20px;padding:clamp(18px,3vw,26px);border-radius:16px;background:rgba(255,255,255,0.025);border:1px solid rgba(251,146,60,0.18);border-left:4px solid rgba(251,146,60,0.60);">
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+    <span style="font-size:10px;font-weight:900;letter-spacing:0.22em;text-transform:uppercase;color:rgba(251,146,60,0.85);padding:2px 8px;border-radius:5px;background:rgba(251,146,60,0.10);">Desvio 3.2</span>
+  </div>
+  <h3 style="margin:0 0 10px;color:#fff;">Não se define pelo número de pontos do esboço</h3>
+  <p style="margin:0;color:rgba(225,220,255,0.85);line-height:1.80;">Três pontos alitrados não garantem exposição, tampouco a ausência de aliteração a invalida.<sup><a href="#fn-11" style="color:#a78bfa;text-decoration:none;">[11]</a></sup> O esboço deve ter tantos pontos quantos <em>o texto exigir</em>, nem mais nem menos.</p>
+</div>
+
+<!-- Desvio 9 -->
+<div style="margin-bottom:20px;padding:clamp(18px,3vw,26px);border-radius:16px;background:rgba(255,255,255,0.025);border:1px solid rgba(251,146,60,0.18);border-left:4px solid rgba(251,146,60,0.60);">
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+    <span style="font-size:10px;font-weight:900;letter-spacing:0.22em;text-transform:uppercase;color:rgba(251,146,60,0.85);padding:2px 8px;border-radius:5px;background:rgba(251,146,60,0.10);">Desvio 3.3</span>
+  </div>
+  <h3 style="margin:0 0 10px;color:#fff;">Não exige consecutividade obrigatória</h3>
+  <p style="margin:0;color:rgba(225,220,255,0.85);line-height:1.80;">O compromisso com a exposição costuma gerar, organicamente, séries consecutivas por livros bíblicos — é o modo mais fiel de preservar o contexto. Mas a exposição não se identifica com a pregação em série: uma mensagem temática bem ancorada em textos específicos, explicativa e não meramente ilustrativa deles, também pode ser genuinamente expositiva.<sup><a href="#fn-12" style="color:#a78bfa;text-decoration:none;">[12]</a></sup></p>
+</div>
+
+<!-- Desvio 10 -->
+<div style="margin-bottom:20px;padding:clamp(18px,3vw,26px);border-radius:16px;background:rgba(255,255,255,0.025);border:1px solid rgba(251,146,60,0.18);border-left:4px solid rgba(251,146,60,0.60);">
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+    <span style="font-size:10px;font-weight:900;letter-spacing:0.22em;text-transform:uppercase;color:rgba(251,146,60,0.85);padding:2px 8px;border-radius:5px;background:rgba(251,146,60,0.10);">Desvio 3.4</span>
+  </div>
+  <h3 style="margin:0 0 10px;color:#fff;">Não é palestra teológica desprovida de forma homilética</h3>
+  <p style="margin:0 0 14px;color:rgba(225,220,255,0.85);line-height:1.80;">Uma preleção sobre os temas doutrinários ligados ao texto, sem que o próprio texto estruture a mensagem, é <strong>ensino, não pregação</strong>: o púlpito é a plataforma do arauto, não a sala de aula do professor.<sup><a href="#fn-13" style="color:#a78bfa;text-decoration:none;">[13]</a></sup></p>
+  <blockquote style="border-left:4px solid rgba(251,146,60,0.60);padding:14px 18px;margin:0;background:rgba(251,146,60,0.06);border-radius:0 10px 10px 0;color:rgba(255,225,190,0.85);font-style:italic;font-size:clamp(14px,1.9vw,16px);line-height:1.75;">"O sermão não é um ensaio nem uma aula, mas um discurso com forma própria, definida, dirigida ao coração do ouvinte." — Lloyd-Jones</blockquote>
+</div>
+
+<!-- Desvio 11 -->
+<div style="margin-bottom:20px;padding:clamp(18px,3vw,26px);border-radius:16px;background:rgba(255,255,255,0.025);border:1px solid rgba(251,146,60,0.18);border-left:4px solid rgba(251,146,60,0.60);">
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+    <span style="font-size:10px;font-weight:900;letter-spacing:0.22em;text-transform:uppercase;color:rgba(251,146,60,0.85);padding:2px 8px;border-radius:5px;background:rgba(251,146,60,0.10);">Desvio 3.5</span>
+  </div>
+  <h3 style="margin:0 0 10px;color:#fff;">Não prescinde de uma ideia central unificadora</h3>
+  <p style="margin:0;color:rgba(225,220,255,0.85);line-height:1.80;">Robinson insiste que os sermões raramente fracassam por terem ideias demais; fracassam por lidarem com <strong>ideias desconexas demais</strong>.<sup><a href="#fn-14" style="color:#a78bfa;text-decoration:none;">[14]</a></sup> Sem um <em>"grande assunto" (big idea)</em> que organize explicação, argumentação e aplicação, o que se tem é uma sequência de observações sobre o texto, não uma exposição dele.</p>
+</div>
+
+<!-- SEÇÃO 4 -->
+<h2>4 &nbsp;Falhas Teológicas</h2>
+
+<div style="display:flex;align-items:center;gap:10px;margin-bottom:24px;">
+  <div style="width:36px;height:36px;border-radius:10px;background:rgba(99,102,241,0.12);border:1px solid rgba(99,102,241,0.30);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;">⛪</div>
+  <p style="margin:0;font-size:clamp(14px,1.9vw,16px);color:rgba(220,230,255,0.75);line-height:1.7;">Estas falhas tocam os fundamentos teológicos que sustentam — ou deveriam sustentar — toda pregação genuinamente expositiva.</p>
+</div>
+
+<!-- Desvio 12 -->
+<div style="margin-bottom:20px;padding:clamp(18px,3vw,26px);border-radius:16px;background:rgba(255,255,255,0.025);border:1px solid rgba(167,139,250,0.22);border-left:4px solid rgba(167,139,250,0.60);">
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+    <span style="font-size:10px;font-weight:900;letter-spacing:0.22em;text-transform:uppercase;color:rgba(167,139,250,0.85);padding:2px 8px;border-radius:5px;background:rgba(167,139,250,0.10);">Desvio 4.1</span>
+  </div>
+  <h3 style="margin:0 0 10px;color:#fff;">Não é leitura redentivo-histórica imposta de forma artificial</h3>
+  <p style="margin:0 0 14px;color:rgba(225,220,255,0.85);line-height:1.80;">A conclusão cristológica é necessária e legítima, mas não pode substituir o sentido gramatical-histórico do texto em sua situação original, nem ser imposta sobre ele antes de esgotada a exegese.<sup><a href="#fn-15" style="color:#a78bfa;text-decoration:none;">[15]</a></sup></p>
+  <div style="padding:16px 18px;border-radius:10px;background:rgba(167,139,250,0.06);border:1px solid rgba(167,139,250,0.16);">
+    <div style="font-size:11px;font-weight:900;letter-spacing:0.18em;text-transform:uppercase;color:rgba(167,139,250,0.70);margin-bottom:8px;">Chapell adverte:</div>
+    <div style="font-size:13px;color:rgba(210,205,255,0.80);line-height:1.65;">O objetivo não é encontrar Cristo forçadamente em cada detalhe do texto, mas revelar <em>onde cada texto se situa em relação a Cristo</em> — distinção que evita tanto o moralismo quanto a eisegese cristológica.</div>
+  </div>
+</div>
+
+<!-- Desvio 13 -->
+<div style="margin-bottom:20px;padding:clamp(18px,3vw,26px);border-radius:16px;background:rgba(255,255,255,0.025);border:1px solid rgba(167,139,250,0.22);border-left:4px solid rgba(167,139,250,0.60);">
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+    <span style="font-size:10px;font-weight:900;letter-spacing:0.22em;text-transform:uppercase;color:rgba(167,139,250,0.85);padding:2px 8px;border-radius:5px;background:rgba(167,139,250,0.10);">Desvio 4.2</span>
+  </div>
+  <h3 style="margin:0 0 10px;color:#fff;">Não é moralismo desconectado da graça</h3>
+  <p style="margin:0 0 14px;color:rgba(225,220,255,0.85);line-height:1.80;">Chapell nomeia esse desvio como um dos dois grandes inimigos do sermão expositivo, ao lado da erosão da autoridade bíblica.<sup><a href="#fn-16" style="color:#a78bfa;text-decoration:none;">[16]</a></sup> Pregar imperativos morais sem o indicativo da graça que os sustenta produz sermões do tipo:</p>
+  <blockquote style="border-left:4px solid rgba(167,139,250,0.50);padding:12px 18px;margin:0;background:rgba(167,139,250,0.06);border-radius:0 10px 10px 0;color:rgba(200,195,255,0.85);font-style:italic;font-size:clamp(14px,1.9vw,16px);line-height:1.75;">"Sinta-se mal, não faça isso, agora a bênção." — moralmente corretos, porém teologicamente insuficientes, porque ignoram que, à parte de Cristo, nada podemos fazer.</blockquote>
+</div>
+
+<!-- Desvio 14 -->
+<div style="margin-bottom:20px;padding:clamp(18px,3vw,26px);border-radius:16px;background:rgba(255,255,255,0.025);border:1px solid rgba(167,139,250,0.22);border-left:4px solid rgba(167,139,250,0.60);">
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+    <span style="font-size:10px;font-weight:900;letter-spacing:0.22em;text-transform:uppercase;color:rgba(167,139,250,0.85);padding:2px 8px;border-radius:5px;background:rgba(167,139,250,0.10);">Desvio 4.3</span>
+  </div>
+  <h3 style="margin:0 0 10px;color:#fff;">Não é pregação movida pela relevância em detrimento da revelação</h3>
+  <p style="margin:0;color:rgba(225,220,255,0.85);line-height:1.80;">Este é, para Mayhue, o critério mais decisivo de todos: a exposição verdadeira não é definida por estilo, mas por <strong>autoridade</strong>.<sup><a href="#fn-17" style="color:#a78bfa;text-decoration:none;">[17]</a></sup> Quando o comunicador prioriza a necessidade sentida da audiência sobre a vontade revelada de Deus, o resultado pode até parecer bíblico, mas já deixou de ser proclamação submissa ao texto.</p>
+</div>
+
+<!-- Desvio 15 -->
+<div style="margin-bottom:20px;padding:clamp(18px,3vw,26px);border-radius:16px;background:rgba(255,255,255,0.025);border:1px solid rgba(167,139,250,0.22);border-left:4px solid rgba(167,139,250,0.60);">
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+    <span style="font-size:10px;font-weight:900;letter-spacing:0.22em;text-transform:uppercase;color:rgba(167,139,250,0.85);padding:2px 8px;border-radius:5px;background:rgba(167,139,250,0.10);">Desvio 4.4</span>
+  </div>
+  <h3 style="margin:0 0 10px;color:#fff;">Não é pregação que dispensa o fundamento da inerrância</h3>
+  <p style="margin:0;color:rgba(225,220,255,0.85);line-height:1.80;">MacArthur argumenta que o único mandato lógico decorrente de uma Escritura inerrante é pregá-la expositivamente: se o texto é a própria Palavra de Deus, nenhuma outra fonte de autoridade — experiência, opinião ou tendência cultural — pode ocupar o centro do sermão sem comprometer a proclamação.<sup><a href="#fn-18" style="color:#a78bfa;text-decoration:none;">[18]</a></sup></p>
+</div>
+
+<!-- SEÇÃO 5 -->
+<h2>5 &nbsp;Falhas Comunicativas e Pastorais</h2>
+
+<div style="display:flex;align-items:center;gap:10px;margin-bottom:24px;">
+  <div style="width:36px;height:36px;border-radius:10px;background:rgba(34,197,94,0.12);border:1px solid rgba(34,197,94,0.30);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;">🕊️</div>
+  <p style="margin:0;font-size:clamp(14px,1.9vw,16px);color:rgba(220,230,255,0.75);line-height:1.7;">A fidelidade ao texto não esgota os requisitos da pregação expositiva. A dimensão comunicativa e pastoral é igualmente constitutiva da exposição genuína.</p>
+</div>
+
+<!-- Desvio 16 -->
+<div style="margin-bottom:20px;padding:clamp(18px,3vw,26px);border-radius:16px;background:rgba(255,255,255,0.025);border:1px solid rgba(34,197,94,0.18);border-left:4px solid rgba(34,197,94,0.55);">
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+    <span style="font-size:10px;font-weight:900;letter-spacing:0.22em;text-transform:uppercase;color:rgba(34,197,94,0.85);padding:2px 8px;border-radius:5px;background:rgba(34,197,94,0.10);">Desvio 5.1</span>
+  </div>
+  <h3 style="margin:0 0 10px;color:#fff;">Não é informação descritiva sem imperativo</h3>
+  <p style="margin:0;color:rgba(225,220,255,0.85);line-height:1.80;">Um esboço puramente narrativo — "a situação de Davi, a devoção de Davi, a libertação de Davi" — pode descrever fielmente a passagem sem jamais <em>prescrever</em> verdade ao ouvinte. Whitesell dedica capítulos inteiros à aplicação e ao apelo justamente porque rigor exegético sem poder de aplicação é exposição capenga.<sup><a href="#fn-19" style="color:#a78bfa;text-decoration:none;">[19]</a></sup></p>
+</div>
+
+<!-- Desvio 17 -->
+<div style="margin-bottom:20px;padding:clamp(18px,3vw,26px);border-radius:16px;background:rgba(255,255,255,0.025);border:1px solid rgba(34,197,94,0.18);border-left:4px solid rgba(34,197,94,0.55);">
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+    <span style="font-size:10px;font-weight:900;letter-spacing:0.22em;text-transform:uppercase;color:rgba(34,197,94,0.85);padding:2px 8px;border-radius:5px;background:rgba(34,197,94,0.10);">Desvio 5.2</span>
+  </div>
+  <h3 style="margin:0 0 10px;color:#fff;">Não é verdade divorciada da vida</h3>
+  <p style="margin:0;color:rgba(225,220,255,0.85);line-height:1.80;">A exposição fiel constrói uma <strong>ponte entre o mundo do texto e o mundo do ouvinte</strong>; não permanece apenas explicando, mas também exorta.<sup><a href="#fn-20" style="color:#a78bfa;text-decoration:none;">[20]</a></sup> Doutrina sólida, estrutura coerente e sensibilidade pastoral devem coexistir no mesmo sermão.</p>
+</div>
+
+<!-- Desvio 18 -->
+<div style="margin-bottom:20px;padding:clamp(18px,3vw,26px);border-radius:16px;background:rgba(255,255,255,0.025);border:1px solid rgba(34,197,94,0.18);border-left:4px solid rgba(34,197,94,0.55);">
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+    <span style="font-size:10px;font-weight:900;letter-spacing:0.22em;text-transform:uppercase;color:rgba(34,197,94,0.85);padding:2px 8px;border-radius:5px;background:rgba(34,197,94,0.10);">Desvio 5.3</span>
+  </div>
+  <h3 style="margin:0 0 10px;color:#fff;">Não é pregação tediosa</h3>
+  <p style="margin:0;color:rgba(225,220,255,0.85);line-height:1.80;">Exposição não é sinônimo de aridez. O expositor não manipula emoções, mas também não as ignora.<sup><a href="#fn-21" style="color:#a78bfa;text-decoration:none;">[21]</a></sup> Deveria ser considerado <strong>falha pastoral</strong> entediar o ouvinte com o evangelho. O expositor é um arauto que persuade, não um relator que apenas informa.</p>
+</div>
+
+<!-- Desvio 19 -->
+<div style="margin-bottom:20px;padding:clamp(18px,3vw,26px);border-radius:16px;background:rgba(255,255,255,0.025);border:1px solid rgba(34,197,94,0.18);border-left:4px solid rgba(34,197,94,0.55);">
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+    <span style="font-size:10px;font-weight:900;letter-spacing:0.22em;text-transform:uppercase;color:rgba(34,197,94,0.85);padding:2px 8px;border-radius:5px;background:rgba(34,197,94,0.10);">Desvio 5.4</span>
+  </div>
+  <h3 style="margin:0 0 10px;color:#fff;">Não é intelectualismo frio, desprovido de poder e unção</h3>
+  <p style="margin:0 0 14px;color:rgba(225,220,255,0.85);line-height:1.80;">Lloyd-Jones criticava, sobretudo entre pregadores reformados, a tendência a tornar-se "excessivamente intelectual", quase desprezando o elemento afetivo da pregação.<sup><a href="#fn-22" style="color:#a78bfa;text-decoration:none;">[22]</a></sup></p>
+  <blockquote style="border-left:4px solid rgba(34,197,94,0.55);padding:14px 18px;margin:0;background:rgba(34,197,94,0.05);border-radius:0 10px 10px 0;color:rgba(190,245,215,0.85);font-style:italic;font-size:clamp(14px,1.9vw,16px);line-height:1.75;">"Lógica em chamas" — teologia rigorosa atravessada pela unção do Espírito. — Lloyd-Jones</blockquote>
+</div>
+
+<!-- SEÇÃO 6 -->
+<h2>6 &nbsp;Considerações Finais</h2>
+
+<p>Os dezenove itens reunidos aqui não compõem uma lista exaustiva, mas evidenciam um padrão: <strong>a pregação deixa de ser expositiva sempre que algo diferente do sentido do texto passa a governar a mensagem</strong> — seja a pesquisa exegética do pregador, seja sua agenda temática, seja a relevância percebida pela audiência, seja um esquema teológico externo imposto sobre a passagem.</p>
+
+<blockquote>Robinson resume esse critério ao afirmar que a pregação não é a transmissão de detalhes aleatórios unidos apenas pela proximidade no texto bíblico; é a comunicação de um único conceito, extraído do texto e transmitido através dele.</blockquote>
+
+<p>Definir com precisão o que a exposição <em>não é</em>, portanto, não é exercício meramente negativo: é disciplina necessária para que a etiqueta "expositiva" continue a designar algo teologicamente preciso, e não apenas um selo de credibilidade homilética.</p>
+
+<!-- QUADRO SÍNTESE -->
+<div style="margin:40px 0;padding:clamp(22px,4vw,32px);border-radius:18px;background:rgba(167,139,250,0.06);border:1px solid rgba(167,139,250,0.22);">
+  <div style="font-size:11px;font-weight:900;letter-spacing:0.28em;text-transform:uppercase;color:rgba(167,139,250,0.70);margin-bottom:18px;">Síntese — Os 19 Desvios</div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;">
+    <div>
+      <div style="font-size:10px;font-weight:900;letter-spacing:0.20em;text-transform:uppercase;color:rgba(239,68,68,0.80);margin-bottom:10px;">I. Relação com o Texto</div>
+      <ul style="margin:0;padding-left:16px;color:rgba(220,215,255,0.80);font-size:13px;line-height:1.85;">
+        <li>Mera menção ao texto</li>
+        <li>Exegese como sermão</li>
+        <li>Comentário corrido</li>
+        <li>Textual ≠ expositivo</li>
+        <li>Exposição seletiva</li>
+        <li>Tema predeterminado</li>
+      </ul>
+    </div>
+    <div>
+      <div style="font-size:10px;font-weight:900;letter-spacing:0.20em;text-transform:uppercase;color:rgba(251,146,60,0.80);margin-bottom:10px;">II. Estrutura e Forma</div>
+      <ul style="margin:0;padding-left:16px;color:rgba(220,215,255,0.80);font-size:13px;line-height:1.85;">
+        <li>Definida pela extensão</li>
+        <li>Definida pelo nº de pontos</li>
+        <li>Exige série consecutiva</li>
+        <li>Palestra sem forma homilética</li>
+        <li>Sem ideia central unificadora</li>
+      </ul>
+    </div>
+    <div>
+      <div style="font-size:10px;font-weight:900;letter-spacing:0.20em;text-transform:uppercase;color:rgba(167,139,250,0.80);margin-bottom:10px;">III. Falhas Teológicas</div>
+      <ul style="margin:0;padding-left:16px;color:rgba(220,215,255,0.80);font-size:13px;line-height:1.85;">
+        <li>Cristologia artificial</li>
+        <li>Moralismo sem graça</li>
+        <li>Relevância > revelação</li>
+        <li>Dispensa a inerrância</li>
+      </ul>
+    </div>
+    <div>
+      <div style="font-size:10px;font-weight:900;letter-spacing:0.20em;text-transform:uppercase;color:rgba(34,197,94,0.80);margin-bottom:10px;">IV. Comunicação Pastoral</div>
+      <ul style="margin:0;padding-left:16px;color:rgba(220,215,255,0.80);font-size:13px;line-height:1.85;">
+        <li>Descreve sem prescrever</li>
+        <li>Verdade sem aplicação</li>
+        <li>Pregação tediosa</li>
+        <li>Intelectualismo sem unção</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- REFERÊNCIAS -->
+<h2>Referências</h2>
+<div style="display:flex;flex-direction:column;gap:10px;">
+  <p style="margin:0;font-size:clamp(14px,1.9vw,15px);color:rgba(220,230,255,0.78);line-height:1.75;">CHAPELL, Bryan. <em>Christ-Centered Preaching: Redeeming the Expository Sermon.</em> 2. ed. Grand Rapids: Baker Academic, 2005.</p>
+  <p style="margin:0;font-size:clamp(14px,1.9vw,15px);color:rgba(220,230,255,0.78);line-height:1.75;">CHARLES JR., H. B. <em>What Expository Preaching Is Not.</em> [S. l.], 7 dez. 2017.</p>
+  <p style="margin:0;font-size:clamp(14px,1.9vw,15px);color:rgba(220,230,255,0.78);line-height:1.75;">LLOYD-JONES, David Martyn. <em>Preaching and Preachers.</em> Grand Rapids: Zondervan, 1971.</p>
+  <p style="margin:0;font-size:clamp(14px,1.9vw,15px);color:rgba(220,230,255,0.78);line-height:1.75;">MACARTHUR JR., John F. The Mandate of Biblical Inerrancy: Expository Preaching. <em>The Master's Seminary Journal,</em> Sun Valley, v. 1, n. 1, p. 3–15, primavera 1990.</p>
+  <p style="margin:0;font-size:clamp(14px,1.9vw,15px);color:rgba(220,230,255,0.78);line-height:1.75;">MAYHUE, Richard L. Rediscovering Expository Preaching. <em>The Master's Seminary Journal,</em> Sun Valley, v. 1, n. 2, p. 109–128, outono 1990.</p>
+  <p style="margin:0;font-size:clamp(14px,1.9vw,15px);color:rgba(220,230,255,0.78);line-height:1.75;">ROBINSON, Haddon W. <em>Biblical Preaching: The Development and Delivery of Expository Messages.</em> 3. ed. Grand Rapids: Baker Academic, 2014.</p>
+  <p style="margin:0;font-size:clamp(14px,1.9vw,15px);color:rgba(220,230,255,0.78);line-height:1.75;">WHITESELL, Faris D. <em>Power in Expository Preaching.</em> Westwood: Fleming H. Revell, 1963.</p>
+</div>
+
+<!-- NOTAS DE RODAPÉ -->
+<div style="margin-top:48px;padding-top:28px;border-top:1px solid rgba(255,255,255,0.08);">
+  <div style="font-size:11px;font-weight:900;letter-spacing:0.28em;text-transform:uppercase;color:rgba(167,139,250,0.55);margin-bottom:18px;">Notas de Rodapé</div>
+  <div style="display:flex;flex-direction:column;gap:9px;">
+    <p id="fn-1" style="margin:0;font-size:12px;color:rgba(200,210,255,0.60);line-height:1.70;"><sup style="color:#a78bfa;">[1]</sup> Bacharel em Teologia Reformada. Mestre em Educação e Tecnologias. Doutorado em Teologia. Atualmente cursando PhD em Teologia Contemporânea. Professor universitário há mais de 20 anos em Teologia e Tecnologias.</p>
+    <p id="fn-2" style="margin:0;font-size:12px;color:rgba(200,210,255,0.60);line-height:1.70;"><sup style="color:#a78bfa;">[2]</sup> WHITESELL, 1963, p. 11–25.</p>
+    <p id="fn-3" style="margin:0;font-size:12px;color:rgba(200,210,255,0.60);line-height:1.70;"><sup style="color:#a78bfa;">[3]</sup> MAYHUE, 1990, p. 109.</p>
+    <p id="fn-4" style="margin:0;font-size:12px;color:rgba(200,210,255,0.60);line-height:1.70;"><sup style="color:#a78bfa;">[4]</sup> CHARLES JR., 2017.</p>
+    <p id="fn-5" style="margin:0;font-size:12px;color:rgba(200,210,255,0.60);line-height:1.70;"><sup style="color:#a78bfa;">[5]</sup> CHARLES JR., 2017.</p>
+    <p id="fn-6" style="margin:0;font-size:12px;color:rgba(200,210,255,0.60);line-height:1.70;"><sup style="color:#a78bfa;">[6]</sup> CHARLES JR., 2017; ROBINSON, 2014, p. 20–22; LLOYD-JONES, 1971, p. 65–72.</p>
+    <p id="fn-7" style="margin:0;font-size:12px;color:rgba(200,210,255,0.60);line-height:1.70;"><sup style="color:#a78bfa;">[7]</sup> CHARLES JR., 2017.</p>
+    <p id="fn-8" style="margin:0;font-size:12px;color:rgba(200,210,255,0.60);line-height:1.70;"><sup style="color:#a78bfa;">[8]</sup> CHARLES JR., 2017.</p>
+    <p id="fn-9" style="margin:0;font-size:12px;color:rgba(200,210,255,0.60);line-height:1.70;"><sup style="color:#a78bfa;">[9]</sup> ROBINSON, 2014, p. 15–19.</p>
+    <p id="fn-10" style="margin:0;font-size:12px;color:rgba(200,210,255,0.60);line-height:1.70;"><sup style="color:#a78bfa;">[10]</sup> CHARLES JR., 2017.</p>
+    <p id="fn-11" style="margin:0;font-size:12px;color:rgba(200,210,255,0.60);line-height:1.70;"><sup style="color:#a78bfa;">[11]</sup> CHARLES JR., 2017.</p>
+    <p id="fn-12" style="margin:0;font-size:12px;color:rgba(200,210,255,0.60);line-height:1.70;"><sup style="color:#a78bfa;">[12]</sup> CHARLES JR., 2017; ROBINSON, 2014, p. 20–21.</p>
+    <p id="fn-13" style="margin:0;font-size:12px;color:rgba(200,210,255,0.60);line-height:1.70;"><sup style="color:#a78bfa;">[13]</sup> CHARLES JR., 2017; LLOYD-JONES, 1971, p. 65.</p>
+    <p id="fn-14" style="margin:0;font-size:12px;color:rgba(200,210,255,0.60);line-height:1.70;"><sup style="color:#a78bfa;">[14]</sup> ROBINSON, 2014, p. 31–35.</p>
+    <p id="fn-15" style="margin:0;font-size:12px;color:rgba(200,210,255,0.60);line-height:1.70;"><sup style="color:#a78bfa;">[15]</sup> CHARLES JR., 2017; CHAPELL, 2005, p. 279–280.</p>
+    <p id="fn-16" style="margin:0;font-size:12px;color:rgba(200,210,255,0.60);line-height:1.70;"><sup style="color:#a78bfa;">[16]</sup> CHAPELL, 2005, p. 15–16, 30–33, 326–327.</p>
+    <p id="fn-17" style="margin:0;font-size:12px;color:rgba(200,210,255,0.60);line-height:1.70;"><sup style="color:#a78bfa;">[17]</sup> MAYHUE, 1990, p. 109–111.</p>
+    <p id="fn-18" style="margin:0;font-size:12px;color:rgba(200,210,255,0.60);line-height:1.70;"><sup style="color:#a78bfa;">[18]</sup> MACARTHUR JR., 1990, p. 3–15.</p>
+    <p id="fn-19" style="margin:0;font-size:12px;color:rgba(200,210,255,0.60);line-height:1.70;"><sup style="color:#a78bfa;">[19]</sup> CHARLES JR., 2017; WHITESELL, 1963, p. 121–140.</p>
+    <p id="fn-20" style="margin:0;font-size:12px;color:rgba(200,210,255,0.60);line-height:1.70;"><sup style="color:#a78bfa;">[20]</sup> CHARLES JR., 2017.</p>
+    <p id="fn-21" style="margin:0;font-size:12px;color:rgba(200,210,255,0.60);line-height:1.70;"><sup style="color:#a78bfa;">[21]</sup> CHARLES JR., 2017.</p>
+    <p id="fn-22" style="margin:0;font-size:12px;color:rgba(200,210,255,0.60);line-height:1.70;"><sup style="color:#a78bfa;">[22]</sup> LLOYD-JONES, 1971, p. 97–99; WHITESELL, 1963, p. 161–174.</p>
+  </div>
+</div>
+`,
+  },
+
+   // ── Introdução aos Estudos Teológicos ──────────────────────────────
   {
     id: '01',
     slug: 'conhecendo-a-area',
@@ -1575,8 +1968,7 @@ Se o significado bíblico não pode ser ancorado em nada além do jogo infinito 
     status: 'publicado',
     area: 'artigos',
   },
-
-  {
+ {
     id: '13',
     slug: 'revelacao-escritura-autoridade-parte-2',
     categoria: 'Revelação e Autoridade Bíblica',
