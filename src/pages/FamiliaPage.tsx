@@ -6961,6 +6961,1204 @@ function AconselhamentoBiblicoGenesis2FamiliaSection({ pt }: { pt: boolean }) {
   );
 }
 
+// ─── Infográfico Gênesis 3 ───────────────────────────────────────────
+function InfograficoGenesis3FamiliaSection({ pt }: { pt: boolean }) {
+  const amber  = 'rgba(255,180,50,1)';
+  const green  = 'rgba(52,211,153,1)';
+  const blue   = 'rgba(80,200,255,1)';
+  const purple = 'rgba(180,120,255,1)';
+
+  const MOVES = [
+    {
+      num: 'I', sym: 'Gn 2:18,23',
+      title: pt ? 'A Solidão que Deus Nomeia' : 'The Loneliness God Names',
+      sub: pt ? '"Não é bom que o homem esteja só" — lo’ tov; pedagogia da busca pelos animais' : '"It is not good for the man to be alone" — lo’ tov; pedagogy of searching among animals',
+      emoji: '🙍',
+      key: pt ? `Lo’ tov (não é bom) é o único juízo negativo de Deus na narrativa pré-queda — a solidão não é pecado, mas incompletude de design. A busca pelos animais (2:19–20) é pedagogia: Adão precisa entender sua própria necessidade antes de receber o complemento. Quando vê a mulher, a exclamação poética (2:23) é o primeiro poema da humanidade — amor que irrompe em adoração.` : `Lo’ tov (not good) is God’s only negative judgment in the pre-fall narrative — loneliness is not sin but design incompleteness. The search among animals (2:19–20) is pedagogy: Adam must understand his own need before receiving his complement. When he sees the woman, his poetic exclamation (2:23) is humanity’s first poem — love erupting in worship.`,
+      app: pt ? 'Casal: quando foi a última vez que você agradeceu a Deus pelo seu cônjuge com o entusiasmo de Adão — "este é osso dos meus ossos"? A solidão que Deus nomeou revela o valor imensionável do cônjuge dado por Ele.' : `Couple: when was the last time you thanked God for your spouse with Adam’s enthusiasm — "bone of my bones"? The loneliness God named reveals the immeasurable value of the spouse He gave.`,
+      cor: amber, corL: 'rgba(255,180,50,0.10)', corB: 'rgba(255,180,50,0.28)',
+    },
+    {
+      num: 'II', sym: 'Gn 2:18,21–22',
+      title: pt ? 'Ezer Kenegdo: Complementaridade, não Uniformidade' : 'Ezer Kenegdo: Complementarity, not Uniformity',
+      sub: pt ? 'Auxiliadora correspondente — não inferior nem idêntica, mas perfeitamente complementar' : 'Corresponding helper — not inferior nor identical, but perfectly complementary',
+      emoji: '🤝',
+      key: pt ? `‘Ezer (auxiliadora) não implica inferioridade — é o mesmo termo usado para Deus como "auxiliador" de Israel (Sl 121:2). Kenegdo significa "correspondendo a ele" — complementar, não idêntica. A tsela’ (costela) implica origem compartilhada e paridade de essência. Homem e mulher são iguais em dignidade e diferentes em design — essa diferença é presente de Deus, não produto da queda.` : `Ezer (helper) does not imply inferiority — it is the same term used for God as "helper" of Israel (Ps 121:2). Kenegdo means "corresponding to him" — complementary, not identical. The tsela’ (rib) implies shared origin and parity of essence. Man and woman are equal in dignity and different in design — this difference is God’s gift, not a result of the fall.`,
+      app: pt ? 'Pais: seus filhos precisam ver você honrando as diferenças do seu cônjuge — não tentando mudar o que Deus criou diferente. Mostre que a complementaridade é fonte de força, não de conflito.' : `Parents: your children need to see you honoring your spouse’s differences — not trying to change what God made different. Show that complementarity is a source of strength, not conflict.`,
+      cor: green, corL: 'rgba(52,211,153,0.10)', corB: 'rgba(52,211,153,0.28)',
+    },
+    {
+      num: 'III', sym: 'Gn 2:24',
+      title: pt ? 'Deixar, Unir, Uma Só Carne — CENTRO ◉' : 'Leave, Cleave, One Flesh — CENTER ◉',
+      sub: pt ? 'Fórmula pactual tripartite: azav (deixar), davaq (unir-se), basar echad (uma só carne)' : 'Tripartite covenant formula: azav (leave), davaq (cleave), basar echad (one flesh)',
+      emoji: '💍',
+      key: pt ? 'A fórmula tripartite de Gn 2:24 é prescritiva (dada antes da queda): (1) azav — ruptura necessária do núcleo familiar de origem; (2) davaq — adesão, lealdade pactual; (3) basar echad — intimidade total. Esta é a definição divina de casamento: não sentimento, não contrato legal — aliança. Jesus cita este verso em Mt 19:5 como fundamento irrevogável do matrimônio. Paulo em Ef 5:31–32 o conecta ao "grande mistério": Cristo e a Igreja.' : `The tripartite formula of Gen 2:24 is prescriptive (given before the fall): (1) azav — necessary break from family of origin; (2) davaq — attachment, covenant loyalty; (3) basar echad — total intimacy. This is God’s definition of marriage: not feeling, not legal contract — covenant. Jesus cites this verse in Matt 19:5 as the irrevocable foundation of marriage. Paul in Eph 5:31–32 connects it to the "great mystery": Christ and the Church.`,
+      app: pt ? 'Noivos: Gn 2:24 é o texto de vocês. Revisem os três movimentos: vocês completaram o azav — há dependências emocionais ou financeiras dos pais que precisam ser entregues conscientemente antes do altar?' : 'Engaged: Gen 2:24 is your text. Review the three movements: have you completed the azav — are there emotional or financial dependencies on parents that need to be consciously released before the altar?',
+      cor: blue, corL: 'rgba(80,200,255,0.10)', corB: 'rgba(80,200,255,0.28)',
+    },
+  ];
+
+  const ACTIVITIES = [
+    { n: '1', icon: '📖', text: pt ? 'Leiam juntos Gn 2:18–24. Peça que cada membro identifique: qual foi o primeiro problema que Deus nomeou? O que Ele fez a respeito? O que Adão sentiu quando viu Eva?' : 'Read Gen 2:18–24 together. Ask each member: what was the first problem God named? What did He do about it? What did Adam feel when he saw Eve?' },
+    { n: '2', icon: '💬', text: pt ? 'Perguntem às crianças: "Por que Deus criou homem e mulher diferentes? O que cada um tem que o outro precisa?" Expliquem complementaridade com exemplos práticos da família.' : 'Ask children: "Why did God create man and woman differently? What does each have that the other needs?" Explain complementarity with practical examples from family life.' },
+    { n: `3`, icon: `💍`, text: pt ? `Casal compartilhe com os filhos: "O que mais nos complementa no casamento? Qual diferença do outro tem sido bênção para vocês?" Deixe os filhos ouvir a história do casamento dos pais.` : "Couple share with children: \"What complements us most in our marriage? Which difference in the other has been a blessing to you?\" Let children hear the story of their parents’ marriage." },
+    { n: `4`, icon: `✊`, text: pt ? `Reflitam sobre os três movimentos de Gn 2:24 em família: "Nós nos «deixamos» bem dos nossos pais? Estamos «unidos»? Estamos cultivando a «uma só carne» em todas as dimensões?"` : `Reflect as a family on the three movements of Gen 2:24: "Did we leave our parents well? Are we cleaving? Are we cultivating the one flesh in all dimensions?"` },
+    { n: '5', icon: '🙏', text: pt ? 'Atividade "Escudo da Família": desenhem juntos um escudo com símbolos que representam os valores do casamento e da família. Inclua um símbolo de aliança (não de sentimento). Cole na parede.' : 'Activity "Family Shield": draw together a shield with symbols representing your marriage and family values. Include a symbol of covenant (not of feeling). Post on the wall.' },
+    { n: '6', icon: '📝', text: pt ? 'Orem juntos: filhos orando pelo casamento dos pais, pais orando pelos futuros casamentos dos filhos. Leiam Ef 5:25 juntos: "Maridos, amai vossas mulheres, como Cristo amou a Igreja."' : `Pray together: children praying for their parents' marriage, parents praying for their children's future marriages. Read Eph 5:25 together: "Husbands, love your wives, as Christ loved the Church."` },
+  ];
+
+  const APPS_FAMILIA = [
+    { role: pt ? 'Pais' : 'Parents', icon: '👨‍👩‍👧', text: pt ? 'Seu casamento é o maior sermão que seus filhos ouvirão sobre o amor de Cristo pela Igreja. Esta semana, demonstrem afeto um pelo outro diante dos filhos — um abraço, um elogio público, um gesto de respeito.' : `Your marriage is the greatest sermon your children will hear about Christ's love for the Church. This week, show affection for each other in front of your children — a hug, a public compliment, a gesture of respect.` },
+    { role: pt ? 'Filhos' : 'Children', icon: '👦', text: pt ? 'Quando você vê seus pais se amando, se respeitando e se perdoando, você está vendo uma imagem de como Cristo ama a Sua Igreja. Ore esta semana pelo casamento dos seus pais.' : `When you see your parents loving, respecting and forgiving each other, you are seeing an image of how Christ loves His Church. Pray this week for your parents' marriage.` },
+    { role: pt ? 'Noivos' : 'Engaged', icon: '💍', text: pt ? 'Gn 2:24 é o texto de vocês: "deixar, unir, uma só carne." Meditem sobre o azav: quais dependências emocionais, financeiras ou familiares precisam ser conscientemente entregues antes do altar?' : 'Gen 2:24 is your text: "leave, cleave, one flesh." Meditate on the azav: which emotional, financial or family dependencies need to be consciously released before the altar?' },
+    { role: pt ? 'Casal' : 'Couple', icon: '👫', text: pt ? 'Tenham uma "noite de aliança" — relembrem seus votos matrimoniais, orem juntos e renovem o compromisso. Se tiverem filhos, façam isso na frente deles. A memória da aliança edifica as gerações.' : 'Have a "covenant night" — recall your wedding vows, pray together and renew your commitment. If you have children, do this in front of them. The memory of covenant builds generations.' },
+    { role: pt ? 'Avós' : 'Grandparents', icon: '👴', text: pt ? 'O casamento de vocês é testemunho vivo de aliança para toda a família. Esta semana, narrem aos netos a história de como se conheceram e por que escolheram ficar juntos — a fidelidade de décadas edifica as gerações.' : 'Your marriage is a living testimony of covenant for the whole family. This week, tell your grandchildren the story of how you met and why you chose to stay together — decades of faithfulness builds generations.' },
+  ];
+
+  return (
+    <div style={{ paddingBottom: 48 }}>
+
+      {/* HERO */}
+      <div style={{ borderRadius: 20, background: 'linear-gradient(135deg,rgba(255,180,50,0.13) 0%,rgba(80,200,255,0.09) 60%,rgba(52,211,153,0.07) 100%)', border: '1px solid rgba(255,180,50,0.30)', padding: 'clamp(24px,4vw,36px)', marginBottom: 28, textAlign: 'center' }}>
+        <div style={{ fontSize: 'clamp(48px,8vw,72px)', lineHeight: 1, marginBottom: 10, filter: 'drop-shadow(0 0 24px rgba(255,180,50,0.50))' }}>💍🤝</div>
+        <div style={{ fontSize: 'clamp(14px,2vw,16px)', fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase', color: 'rgba(255,180,50,0.85)', marginBottom: 8 }}>
+          Gênesis 2:18–25 · {pt ? 'Família — Dia 3' : 'Family — Day 3'}
+        </div>
+        <div style={{ fontSize: 'clamp(18px,3.2vw,28px)', fontWeight: 900, color: '#fff', lineHeight: 1.25, marginBottom: 8 }}>
+          {pt ? 'Dois que se Tornam Um: O Casamento como Aliança de Deus' : 'Two Becoming One: Marriage as God\'s Covenant'}
+        </div>
+        <div style={{ fontSize: 'clamp(15px,2.4vw,17px)', color: 'rgba(255,255,255,0.55)', fontStyle: 'italic', marginBottom: 16 }}>
+          {pt ? 'Solidão, Complementaridade e a Aliança Tripartite como Fundamento da Família Cristã' : 'Loneliness, Complementarity and the Tripartite Covenant as the Foundation of the Christian Family'}
+        </div>
+        <div style={{ display: 'inline-flex', flexWrap: 'wrap', gap: 8, justifyContent: 'center' }}>
+          {[
+            pt ? 'Solidão Nomeada' : 'Named Loneliness',
+            pt ? 'Ezer Kenegdo' : 'Ezer Kenegdo',
+            pt ? 'Aliança Conjugal' : 'Marital Covenant',
+            pt ? 'Deixar-Unir-Carne' : 'Leave-Cleave-Flesh',
+          ].map(t => (
+            <span key={t} style={{ fontSize: 'clamp(14px,2vw,16px)', fontWeight: 700, padding: '3px 12px', borderRadius: 99, background: 'rgba(255,180,50,0.12)', border: '1px solid rgba(255,180,50,0.28)', color: 'rgba(255,180,50,0.92)' }}>{t}</span>
+          ))}
+        </div>
+      </div>
+
+      {/* BIG IDEA */}
+      <div style={{ borderRadius: 16, background: 'linear-gradient(135deg,rgba(255,180,50,0.10),rgba(80,200,255,0.07))', border: '1.5px solid rgba(255,180,50,0.32)', padding: '20px 24px', marginBottom: 20 }}>
+        <div style={{ fontSize: 'clamp(14px,2vw,16px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,180,50,0.85)', marginBottom: 8 }}>💡 {pt ? 'Big Idea · Para a Família' : 'Big Idea · For the Family'}</div>
+        <p style={{ fontSize: 'clamp(18px,2.8vw,22px)', fontWeight: 800, color: '#fff', lineHeight: 1.75, margin: 0 }}>
+          {pt
+            ? 'Deus institui o casamento como aliança de complementaridade e unidade permanente porque ele aponta para a união de Cristo com Sua Igreja — e é o fundamento sobre o qual toda família cristã é construída.'
+            : 'God institutes marriage as a covenant of complementarity and permanent unity because it points to the union of Christ with His Church — and it is the foundation on which every Christian family is built.'}
+        </p>
+      </div>
+
+      {/* PERGUNTA + DOUTRINA */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))', gap: 14, marginBottom: 28 }}>
+        <div style={{ borderRadius: 14, background: 'rgba(255,100,100,0.06)', border: '1px solid rgba(255,100,100,0.22)', padding: '18px 20px' }}>
+          <div style={{ fontSize: 'clamp(14px,2vw,16px)', fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,140,140,0.85)', marginBottom: 8 }}>❓ {pt ? 'Pergunta Central' : 'Central Question'}</div>
+          <p style={{ fontSize: 'clamp(17px,2.6vw,20px)', color: 'rgba(255,210,210,0.90)', lineHeight: 1.70, fontStyle: 'italic', margin: 0 }}>
+            {pt ? '"O que faz um casamento diferente de qualquer outra relação humana — e por que Deus se importa tanto com isso?"' : '"What makes marriage different from any other human relationship — and why does God care so deeply about it?"'}
+          </p>
+        </div>
+        <div style={{ borderRadius: 14, background: 'rgba(80,200,255,0.08)', border: '1px solid rgba(80,200,255,0.28)', padding: '18px 20px' }}>
+          <div style={{ fontSize: 'clamp(14px,2vw,16px)', fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(80,200,255,0.85)', marginBottom: 8 }}>📜 {pt ? 'Doutrina Central' : 'Central Doctrine'}</div>
+          <p style={{ fontSize: 'clamp(17px,2.6vw,20px)', fontWeight: 700, color: '#fff', lineHeight: 1.70, margin: 0 }}>
+            {pt ? 'Deus institui o casamento como aliança de complementaridade (não uniformidade) e unidade permanente que aponta para Cristo e a Igreja — o fundamento de toda família cristã.' : 'God institutes marriage as a covenant of complementarity (not uniformity) and permanent unity that points to Christ and the Church — the foundation of every Christian family.'}
+          </p>
+        </div>
+      </div>
+
+      {/* MOVIMENTOS */}
+      <div style={{ marginBottom: 28 }}>
+        <div style={{ fontSize: 'clamp(14px,2vw,16px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.45)', marginBottom: 16 }}>
+          📋 {pt ? 'Movimentos do Sermão Familiar' : 'Family Sermon Movements'}
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: 14 }}>
+          {MOVES.map(m => (
+            <div key={m.num} style={{ borderRadius: 16, background: m.corL, border: `1.5px solid ${m.corB}`, padding: '18px 20px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 10 }}>
+                <div style={{ width: 34, height: 34, borderRadius: 9, background: `${m.cor}22`, border: `1.5px solid ${m.cor}55`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 'clamp(16px,2vw,18px)', fontWeight: 900, color: m.cor }}>{m.emoji}</div>
+                <div>
+                  <div style={{ fontSize: 'clamp(13px,1.8vw,15px)', fontWeight: 700, color: m.cor, letterSpacing: '0.12em' }}>{m.num} · {m.sym}</div>
+                  <div style={{ fontSize: 'clamp(16px,2.4vw,19px)', fontWeight: 800, color: '#fff', lineHeight: 1.3 }}>{m.title}</div>
+                </div>
+              </div>
+              <div style={{ fontSize: 'clamp(15px,2.2vw,17px)', color: 'rgba(255,255,255,0.60)', fontStyle: 'italic', marginBottom: 8 }}>{m.sub}</div>
+              <div style={{ fontSize: 'clamp(15px,2.2vw,17px)', color: 'rgba(255,255,255,0.82)', lineHeight: 1.60, marginBottom: 10, padding: '8px 10px', borderRadius: 8, background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.07)' }}>{m.key}</div>
+              <div style={{ fontSize: 'clamp(15px,2.2vw,17px)', color: m.cor, lineHeight: 1.55, fontWeight: 600 }}>▸ {m.app}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* EIXO REDENTOR */}
+      <div style={{ borderRadius: 16, background: 'rgba(255,180,50,0.07)', border: '1px solid rgba(255,180,50,0.28)', padding: '20px 24px', marginBottom: 28 }}>
+        <div style={{ fontSize: 'clamp(14px,2vw,16px)', fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,180,50,0.85)', marginBottom: 10 }}>
+          ✝️ {pt ? 'Eixo Histórico-Redentivo' : 'Redemptive-Historical Axis'}
+        </div>
+        <p style={{ fontSize: 'clamp(16px,2.4vw,19px)', color: 'rgba(255,230,180,0.90)', lineHeight: 1.80, margin: 0 }}>
+          {pt
+            ? 'Paulo em Efésios 5:31–32 cita Gênesis 2:24 e declara: "Este mistério é grande — e eu o refiro a Cristo e a Igreja." O casamento não é apenas instituição social — é sacramento do evangelho. Cristo "deixou" o Pai (azav) ao encarnar, "uniu-Se" (davaq) à Sua Igreja pela aliança de sangue, e na Cruz tornou-Se "uma só carne" (basar echad) com a Sua noiva ao tomar sobre Si os nossos pecados. Todo casamento cristão é uma miniatura desse amor — e cada vez que um casal pratica perdão, fidelidade e sacrifício, ele está pregando o evangelho sem palavras.'
+            : 'Paul in Ephesians 5:31–32 quotes Genesis 2:24 and declares: "This mystery is profound — and I am saying that it refers to Christ and the Church." Marriage is not merely a social institution — it is a sacrament of the gospel. Christ "left" the Father (azav) in the incarnation, "cleaved" (davaq) to His Church by the blood covenant, and on the Cross became "one flesh" (basar echad) with His bride by bearing our sins. Every Christian marriage is a miniature of that love — and every time a couple practices forgiveness, faithfulness and sacrifice, they preach the gospel without words.'}
+        </p>
+      </div>
+
+      {/* APLICAÇÕES POR PAPEL */}
+      <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.09)', padding: 'clamp(18px,3vw,26px)', marginBottom: 28 }}>
+        <div style={{ fontSize: 'clamp(14px,2vw,16px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,180,50,0.70)', marginBottom: 18, textAlign: 'center' }}>
+          🎯 {pt ? 'Aplicações por Papel na Família' : 'Applications by Family Role'}
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(220px,1fr))', gap: 12 }}>
+          {APPS_FAMILIA.map(a => (
+            <div key={a.role} style={{ borderRadius: 12, background: 'rgba(255,180,50,0.07)', border: '1px solid rgba(255,180,50,0.20)', padding: '14px 16px' }}>
+              <div style={{ fontSize: 'clamp(16px,2.4vw,19px)', fontWeight: 800, color: 'rgba(255,180,50,0.95)', marginBottom: 6 }}>{a.icon} {a.role}</div>
+              <div style={{ fontSize: 'clamp(15px,2.2vw,17px)', color: 'rgba(255,255,255,0.78)', lineHeight: 1.60 }}>{a.text}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* DINÂMICA FAMILIAR */}
+      <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.09)', padding: 'clamp(18px,3vw,26px)', marginBottom: 28 }}>
+        <div style={{ fontSize: 'clamp(14px,2vw,16px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,180,50,0.70)', marginBottom: 18, textAlign: 'center' }}>
+          🎲 {pt ? 'Dinâmica Familiar — 6 Atividades' : 'Family Activities — 6 Activities'}
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))', gap: 10 }}>
+          {ACTIVITIES.map(a => (
+            <div key={a.n} style={{ borderRadius: 12, background: 'rgba(255,180,50,0.07)', border: '1px solid rgba(255,180,50,0.20)', padding: '12px 14px', display: 'flex', gap: 10 }}>
+              <div style={{ fontSize: 'clamp(18px,2.4vw,22px)', lineHeight: 1.2 }}>{a.icon}</div>
+              <div style={{ fontSize: 'clamp(15px,2.2vw,17px)', color: 'rgba(255,255,255,0.82)', lineHeight: 1.60 }}><span style={{ fontWeight: 800, color: 'rgba(255,200,80,0.90)' }}>{a.n}. </span>{a.text}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* AUTORES */}
+      <div style={{ borderRadius: 16, background: 'rgba(80,200,255,0.06)', border: '1px solid rgba(80,200,255,0.20)', padding: '18px 22px', marginBottom: 28 }}>
+        <div style={{ fontSize: 'clamp(14px,2vw,16px)', fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(80,200,255,0.80)', marginBottom: 14 }}>
+          📚 {pt ? 'Autores Reformados' : 'Reformed Authors'}
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+          {[
+            { name: 'Douglas Wilson', work: 'Her Hand in Marriage', text: pt ? '"O casamento não começa no dia do casamento. Começa com pais que modelam e ensinam o que é amar de aliança, anos antes que seus filhos se casem."' : '"Marriage does not begin on the wedding day. It begins with parents who model and teach what it is to love covenantally, years before their children marry."' },
+            { name: 'Herman Bavinck', work: 'The Christian Family (1912)', text: pt ? '"O casamento é a mais santa das instituições humanas porque foi estabelecido por Deus antes do pecado, não como remédio para ele. É a forma primária em que o ser humano reflete a imagem de Deus como ser relacional."' : '"Marriage is the most holy of human institutions because it was established by God before sin, not as a remedy for it. It is the primary form in which the human being reflects the image of God as a relational being."' },
+            { name: 'Matthew Henry', work: 'Commentary on Genesis', text: pt ? '"Eva foi tirada do lado de Adão — não de sua cabeça para dominá-lo, nem de seus pés para ser pisada, mas de perto de seu coração para ser amada e de sob seu braço para ser protegida."' : '"Eve was taken from Adam\'s side — not from his head to rule over him, nor from his feet to be trampled, but from near his heart to be loved and from under his arm to be protected."' },
+          ].map((a, i) => (
+            <div key={i} style={{ background: 'rgba(0,0,0,0.20)', borderRadius: 10, padding: '12px 16px', borderLeft: `3px solid ${blue}` }}>
+              <div style={{ fontSize: 'clamp(14px,2vw,16px)', fontWeight: 800, color: blue, marginBottom: 4 }}>{a.name} <span style={{ fontWeight: 400, color: 'rgba(255,255,255,0.40)', fontStyle: 'italic' }}>{a.work}</span></div>
+              <p style={{ fontSize: 'clamp(15px,2.2vw,17px)', color: 'rgba(255,255,255,0.82)', lineHeight: 1.70, margin: 0, fontStyle: 'italic' }}>{a.text}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* CONCLUSÃO */}
+      <div style={{ borderRadius: 16, background: 'linear-gradient(135deg,rgba(255,180,50,0.10),rgba(80,200,255,0.07))', border: '1.5px solid rgba(255,180,50,0.28)', padding: '20px 24px' }}>
+        <div style={{ fontSize: 'clamp(14px,2vw,16px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,180,50,0.85)', marginBottom: 10 }}>🏁 {pt ? 'Conclusão' : 'Conclusion'}</div>
+        <p style={{ fontSize: 'clamp(16px,2.4vw,19px)', color: 'rgba(255,255,255,0.85)', lineHeight: 1.75, margin: 0 }}>
+          {pt
+            ? 'Dois que se tornam um — esta é a fórmula de Deus para a família. Não é sentimento romântico que passa; é aliança que persiste. Quando seu casamento é forte, seus filhos têm um alicerce; quando é frágil, eles sentem cada tremor. O mesmo Cristo que uniu-Se à Sua Igreja com amor inalterável é o que pode sustentar seu casamento nas estações de seca. Invista no casamento — porque você está investindo em tudo que vem depois.'
+            : 'Two becoming one — this is God\'s formula for the family. It is not passing romantic feeling; it is covenant that persists. When your marriage is strong, your children have a foundation; when it is fragile, they feel every tremor. The same Christ who united Himself to His Church with unchanging love can sustain your marriage through seasons of drought. Invest in the marriage — because you are investing in everything that comes after.'}
+        </p>
+      </div>
+    </div>
+  );
+}
+
+// ─── Aconselhamento Bíblico Gênesis 3 ────────────────────────────────
+function AconselhamentoBiblicoGenesis3FamiliaSection({ pt }: { pt: boolean }) {
+  const amber  = 'rgba(255,180,50,1)';
+  const amberL = 'rgba(255,180,50,0.10)';
+  const amberB = 'rgba(255,180,50,0.28)';
+  const green  = 'rgba(52,211,153,1)';
+  const greenL = 'rgba(52,211,153,0.10)';
+  const greenB = 'rgba(52,211,153,0.28)';
+  const blue   = 'rgba(80,200,255,1)';
+  const blueL  = 'rgba(80,200,255,0.10)';
+  const blueB  = 'rgba(80,200,255,0.28)';
+  const purple = 'rgba(180,120,255,1)';
+  const purpleL= 'rgba(180,120,255,0.10)';
+  const purpleB= 'rgba(180,120,255,0.28)';
+  const pink   = 'rgba(255,120,160,1)';
+  const pinkL  = 'rgba(255,120,160,0.10)';
+  const pinkB  = 'rgba(255,120,160,0.28)';
+
+  const titleSz = 'clamp(18px,2.8vw,22px)';
+  const bodySz  = 'clamp(16px,2.4vw,19px)';
+  const labelSz = 'clamp(14px,2vw,16px)';
+  const smallSz = 'clamp(13px,1.7vw,15px)';
+
+  const fn = (n: number) => (
+    <sup style={{ fontSize: '0.70em', fontWeight: 900, color: amber, marginLeft: 2, verticalAlign: 'super', lineHeight: 0 }}>[{n}]</sup>
+  );
+
+  const sectionCard = (accent: string, accentL: string, accentB: string, emoji: string, heading: string, theme: string, children: React.ReactNode) => (
+    <div style={{ borderRadius: 16, background: accentL, border: `1.5px solid ${accentB}`, padding: '22px 24px', marginBottom: 20 }}>
+      <div style={{ fontSize: labelSz, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: accent, marginBottom: 8 }}>{emoji} {heading}</div>
+      <div style={{ fontSize: labelSz, color: 'rgba(255,255,255,0.55)', marginBottom: 14, fontStyle: 'italic' }}>{theme}</div>
+      {children}
+    </div>
+  );
+
+  const quoteBox = (text: string, author: string, accent: string, fnNum: number) => (
+    <div style={{ background: 'rgba(0,0,0,0.25)', borderLeft: `3px solid ${accent}`, borderRadius: '0 8px 8px 0', padding: '12px 16px', marginBottom: 12 }}>
+      <p style={{ fontSize: bodySz, color: 'rgba(255,255,255,0.82)', lineHeight: 1.7, margin: '0 0 6px 0', fontStyle: 'italic' }}>"{text}"</p>
+      <div style={{ fontSize: labelSz, color: accent, fontWeight: 700 }}>— {author}{fn(fnNum)}</div>
+    </div>
+  );
+
+  const questionsBox = (questions: string[], accent: string) => (
+    <div style={{ background: 'rgba(0,0,0,0.20)', borderRadius: 10, padding: '14px 18px', marginTop: 14 }}>
+      <div style={{ fontSize: labelSz, fontWeight: 900, color: accent, letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 10 }}>
+        {pt ? 'Perguntas para o Conselheiro' : 'Counselor Questions'}
+      </div>
+      <ol style={{ margin: 0, paddingLeft: 20 }}>
+        {questions.map((q, i) => (
+          <li key={i} style={{ fontSize: bodySz, color: 'rgba(255,255,255,0.82)', lineHeight: 1.7, marginBottom: 8 }}>{q}</li>
+        ))}
+      </ol>
+    </div>
+  );
+
+  const REFS = [
+    { n: 1,  abnt: 'POWLISON, David. Seeing with New Eyes: Counseling and the Human Condition through the Lens of Scripture. Phillipsburg: Presbyterian and Reformed, 2003.' },
+    { n: 2,  abnt: 'ADAMS, Jay E. Competent to Counsel: Introduction to Nouthetic Counseling. Grand Rapids: Zondervan, 1970.' },
+    { n: 3,  abnt: 'TRIPP, Paul David. What Did You Expect? Redeeming the Realities of Marriage. Wheaton: Crossway, 2010.' },
+    { n: 4,  abnt: 'WELCH, Edward T. Side by Side: Walking with Others in Wisdom and Love. Wheaton: Crossway, 2015.' },
+    { n: 5,  abnt: 'TRIPP, Paul David. Instruments in the Redeemer\'s Hands: People in Need of Change Helping People in Need of Change. Phillipsburg: Presbyterian and Reformed, 2002.' },
+    { n: 6,  abnt: 'POWLISON, David. Speaking Truth in Love: Counsel in Community. Greensboro: New Growth Press, 2005.' },
+    { n: 7,  abnt: 'BAVINCK, Herman. The Christian Family. Grand Rapids: Christian\'s Library Press, 2012.' },
+    { n: 8,  abnt: 'BAUCHAM, Voddie, Jr. Family Driven Faith: Doing What It Takes to Raise Sons and Daughters Who Walk with God. Wheaton: Crossway, 2007.' },
+    { n: 9,  abnt: 'WILSON, Douglas. Her Hand in Marriage: Biblical Courtship in the Modern World. Moscow: Canon Press, 1997.' },
+    { n: 10, abnt: 'BEEKE, Joel R.; JONES, Mark. A Puritan Theology: Doctrine for Life. Grand Rapids: Reformation Heritage Books, 2012.' },
+    { n: 11, abnt: 'ADAMS, Jay E. A Theology of Christian Counseling: More Than Redemption. Grand Rapids: Zondervan, 1979.' },
+    { n: 12, abnt: 'BAXTER, Richard. A Christian Directory. London, 1673. Reprint: Soli Deo Gloria Publications, 1996.' },
+  ];
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
+
+      {/* HERO */}
+      <div style={{ borderRadius: 16, background: 'linear-gradient(135deg,rgba(255,180,50,0.15),rgba(80,200,255,0.10))', border: `1.5px solid ${amberB}`, padding: '28px 28px 22px', marginBottom: 20 }}>
+        <div style={{ fontSize: 'clamp(28px,4vw,38px)', marginBottom: 10 }}>💍🤝</div>
+        <div style={{ fontSize: 'clamp(20px,3.2vw,26px)', fontWeight: 900, color: amber, marginBottom: 8, lineHeight: 1.3 }}>
+          {pt ? 'Aconselhamento Bíblico · Gênesis 2:18–25' : 'Biblical Counseling · Genesis 2:18–25'}
+        </div>
+        <div style={{ fontSize: titleSz, fontWeight: 700, color: green, marginBottom: 14 }}>
+          {pt ? 'Recursos para o Conselheiro de Casais e Famílias' : 'Resources for the Couples and Family Counselor'}
+        </div>
+        <p style={{ fontSize: bodySz, color: 'rgba(255,255,255,0.80)', lineHeight: 1.75, margin: 0 }}>
+          {pt
+            ? 'Este guia oferece estrutura clínico-pastoral para conselheiros bíblicos que trabalham com casais e famílias, a partir dos temas centrais de Gênesis 2:18–25: a solidão que Deus nomeia, a complementaridade de ezer kenegdo, e a aliança tripartite do casamento. As citações dos autores são identificadas por notas de rodapé numeradas; as referências ABNT completas constam ao final.'
+            : 'This guide offers a clinical-pastoral framework for biblical counselors working with couples and families, drawn from the central themes of Genesis 2:18–25: the loneliness God names, the complementarity of ezer kenegdo, and the tripartite covenant of marriage. Author citations are identified by numbered footnotes; full ABNT references appear at the end.'}
+        </p>
+      </div>
+
+      {/* TRIAGE */}
+      <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.12)', padding: '22px 24px', marginBottom: 20 }}>
+        <div style={{ fontSize: labelSz, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.55)', marginBottom: 16 }}>
+          🎯 {pt ? 'Problemas que esta Perícope Endereça — Guia de Triagem para o Conselheiro' : 'Problems this Pericope Addresses — Counselor Triage Guide'}
+        </div>
+        <p style={{ fontSize: smallSz, color: 'rgba(255,255,255,0.50)', lineHeight: 1.65, margin: '0 0 16px 0', fontStyle: 'italic' }}>
+          {pt
+            ? 'Gênesis 2:18–25 é a perícope da aliança conjugal: a solidão como incompletude criacional, a complementaridade como design de Deus, e a fórmula pactual tripartite (azav-davaq-basar echad) como definição divina de casamento. O conselheiro pode utilizá-la quando o aconselhando enfrenta qualquer um dos cenários abaixo:'
+            : 'Genesis 2:18–25 is the pericope of the marital covenant: loneliness as creational incompleteness, complementarity as God\'s design, and the tripartite covenant formula (azav-davaq-basar echad) as God\'s definition of marriage. The counselor may use it when the counselee faces any of the scenarios below:'}
+        </p>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(240px,1fr))', gap: 10 }}>
+          {[
+            { icon: '😔', cor: amber,  titulo: pt ? 'Solidão como Vazio Existencial' : 'Loneliness as Existential Void',
+              desc: pt ? 'Adultos ou adolescentes que sentem solidão crônica mesmo em relacionamentos. Gn 2:18 diagnostica: lo\' tov — a solidão não é pecado, mas incompletude criacional. O conselheiro ancora: Deus mesmo nomeou essa necessidade e a supriu. Solidão não é vergonha — é design.' : 'Adults or adolescents who feel chronic loneliness even in relationships. Gen 2:18 diagnoses: lo\' tov — loneliness is not sin but creational incompleteness. The counselor anchors: God himself named this need and met it. Loneliness is not shame — it is design.' },
+            { icon: '🤝', cor: blue,   titulo: pt ? 'Casamento Sem Aliança — Parceiros, não Cônjuges' : 'Marriage Without Covenant — Partners, not Spouses',
+              desc: pt ? 'Casais que vivem como colegas de apartamento — sem intimidade, sem comunicação profunda, sem senso de aliança. Gn 2:24 oferece o diagnóstico: o casamento é basar echad (uma só carne) em todas as dimensões — física, emocional, espiritual. O que está faltando?' : 'Couples who live as roommates — no intimacy, no deep communication, no sense of covenant. Gen 2:24 provides the diagnosis: marriage is basar echad (one flesh) in all dimensions — physical, emotional, spiritual. What is missing?' },
+            { icon: '⚔️', cor: green,  titulo: pt ? 'Complementaridade Rejeitada — Diferenças como Defeitos' : 'Complementarity Rejected — Differences as Defects',
+              desc: pt ? 'Cônjuges que tratam as diferenças do outro como problemas a serem corrigidos, não como presentes a serem valorizados. Ezer kenegdo (Gn 2:18) — "correspondendo a ele" — diagnostica: Deus criou a diferença como design, não como consequência da queda.' : 'Spouses who treat the other\'s differences as problems to be corrected, not gifts to be valued. Ezer kenegdo (Gen 2:18) — "corresponding to him" — diagnoses: God created difference as design, not as a consequence of the fall.' },
+            { icon: '🔗', cor: purple, titulo: pt ? 'Dependência Emocional dos Pais — O Azav Incompleto' : 'Emotional Dependence on Parents — The Incomplete Azav',
+              desc: pt ? 'Casais onde um ou ambos os cônjuges não "deixaram" (azav) emocionalmente a família de origem — interferência dos sogros, triangulação, lealdades divididas. Gn 2:24 é prescritivo: o azav é o primeiro movimento da aliança conjugal, e deve ser consciente e completo.' : 'Couples where one or both spouses have not emotionally "left" (azav) their family of origin — in-law interference, triangulation, divided loyalties. Gen 2:24 is prescriptive: the azav is the first movement of the marital covenant, and must be conscious and complete.' },
+            { icon: '😶', cor: pink,   titulo: pt ? 'Identidade Perdida no Casamento' : 'Identity Lost in Marriage',
+              desc: pt ? 'Cônjuges (especialmente mulheres) que sentem ter "perdido a si mesmos" no casamento — sem interesses próprios, sem voz, sem identidade fora do papel conjugal. Ezer kenegdo preserva a individualidade: "correspondendo" implica que cada um tem algo distinto a contribuir — não uniformidade.' : 'Spouses (especially women) who feel they have "lost themselves" in marriage — no personal interests, no voice, no identity outside the marital role. Ezer kenegdo preserves individuality: "corresponding" implies each has something distinct to contribute — not uniformity.' },
+            { icon: '📃', cor: amber,  titulo: pt ? 'Casamento como Contrato, não Aliança' : 'Marriage as Contract, not Covenant',
+              desc: pt ? 'Cônjuge que abandona o casamento quando o sentimento passa ou as dificuldades chegam, tratando o matrimônio como contrato condicional. Gn 2:24 é prescritivo: davaq (unir-se) é adesão de lealdade pactual, não sentimento. A aliança persiste quando o sentimento oscila.' : 'Spouse who abandons the marriage when feelings fade or difficulties arise, treating matrimony as a conditional contract. Gen 2:24 is prescriptive: davaq (cleave) is covenant loyalty attachment, not feeling. The covenant persists when feelings fluctuate.' },
+          ].map((p2, i) => (
+            <div key={i} style={{ background: `${p2.cor}0D`, border: `1px solid ${p2.cor}33`, borderRadius: 12, padding: '14px 16px' }}>
+              <div style={{ fontSize: labelSz, fontWeight: 900, color: p2.cor, marginBottom: 6 }}>{p2.icon} {p2.titulo}</div>
+              <div style={{ fontSize: smallSz, color: 'rgba(255,255,255,0.78)', lineHeight: 1.65 }}>{p2.desc}</div>
+            </div>
+          ))}
+        </div>
+
+        <div style={{ marginTop: 18, borderRadius: 12, background: 'rgba(255,180,50,0.07)', border: '1px solid rgba(255,180,50,0.28)', padding: '16px 20px' }}>
+          <div style={{ fontSize: labelSz, fontWeight: 900, color: amber, letterSpacing: '0.16em', textTransform: 'uppercase', marginBottom: 10 }}>
+            ✝️ {pt ? 'Enquadramento Histórico-Redentivo para o Conselheiro' : 'Redemptive-Historical Frame for the Counselor'}
+          </div>
+          <p style={{ fontSize: bodySz, color: 'rgba(255,230,180,0.88)', lineHeight: 1.80, margin: 0 }}>
+            {pt
+              ? 'Paulo em Efésios 5:31–32 cita Gênesis 2:24 e declara: "Este mistério é grande — e eu o refiro a Cristo e a Igreja." O casamento é "mistério grande" (musterion mega) porque é ícone cristológico: Cristo "deixou" o Pai (azav), "uniu-Se" à Sua Igreja pela aliança de sangue, e na Cruz tornou-Se "uma só carne" com Sua noiva ao tomar nossos pecados. O conselheiro que apresenta Gênesis 2:24 sem este horizonte cristológico está prescrevendo técnica matrimonial, não evangelho. A aliança conjugal somente prospera quando ambos os cônjuges estão unindo-se primeiro a Cristo — cujo amor não depende do desempenho do amado.'
+              : 'Paul in Ephesians 5:31–32 quotes Genesis 2:24 and declares: "This mystery is profound — and I am saying that it refers to Christ and the Church." Marriage is "great mystery" (musterion mega) because it is a Christological icon: Christ "left" the Father (azav), "cleaved" to His Church by the blood covenant, and on the Cross became "one flesh" with His bride by bearing our sins. The counselor who presents Genesis 2:24 without this Christological horizon is prescribing marital technique, not gospel. The marital covenant only thrives when both spouses are first united to Christ — whose love does not depend on the beloved\'s performance.'}
+          </p>
+        </div>
+      </div>
+
+      {/* SEÇÃO 1 — A Solidão que Deus Nomeia */}
+      {sectionCard(amber, amberL, amberB, '🙍',
+        pt ? 'Seção 1 — A Solidão que Deus Nomeia: Lo\' Tov' : 'Section 1 — The Loneliness God Names: Lo\' Tov',
+        pt ? 'Gênesis 2:18,23 — "não é bom estar só"; pedagogia da busca pelos animais; exclamação poética de Adão' : 'Genesis 2:18,23 — "not good to be alone"; pedagogy of searching among animals; Adam\'s poetic exclamation',
+        <>
+          <ul style={{ margin: '0 0 14px 0', paddingLeft: 20 }}>
+            {[
+              pt ? 'Lo\' tov (não é bom) é o único juízo negativo de Deus na narrativa criacional pré-queda — anterior ao pecado, portanto a solidão não é consequência da queda: é incompletude de design. O conselheiro que ouve "me sinto só mesmo casado" não está diante de um problema de comportamento — está diante de uma necessidade que o próprio Deus nomeou e que só pode ser suprida por uma presença genuína, não por técnica de comunicação.' : 'Lo\' tov (not good) is God\'s only negative judgment in the pre-fall creation narrative — prior to sin, so loneliness is not a consequence of the fall: it is design incompleteness. The counselor who hears "I feel alone even in my marriage" is not facing a behavior problem — they are facing a need God himself named, one that can only be met by genuine presence, not communication technique.',
+              pt ? 'A busca pelos animais (2:19–20) é pedagogia divina: Adão precisa sentir a ausência antes de receber o complemento. O conselheiro que precipita soluções sem permitir que o aconselhando nomeie honestamente sua solidão está saltando a pedagogia de Deus. A solidão bem nomeada é o primeiro passo para a intimidade real.' : 'The search among animals (2:19–20) is divine pedagogy: Adam must feel the absence before receiving the complement. The counselor who rushes to solutions without allowing the counselee to honestly name their loneliness is skipping God\'s pedagogy. Loneliness well-named is the first step toward real intimacy.',
+            ].map((item, i) => (
+              <li key={i} style={{ fontSize: bodySz, color: 'rgba(255,255,255,0.82)', lineHeight: 1.7, marginBottom: 6 }}>{item}</li>
+            ))}
+          </ul>
+          {quoteBox(
+            pt ? 'O casamento que perdeu a intimidade não fracassou por falta de técnica — fracassou porque dois pecadores, cada um tentando gerenciar o outro, nunca foram honestos sobre a solidão que cada um carregava. O conselheiro não pergunta "o que vocês fazem errado?" — pergunta "qual solidão você trouxe para o casamento que nunca nomeou para o seu cônjuge?"'
+               : 'The marriage that has lost intimacy did not fail for lack of technique — it failed because two sinners, each trying to manage the other, were never honest about the loneliness each carried. The counselor does not ask "what are you doing wrong?" — but "what loneliness did you bring to the marriage that you have never named to your spouse?"',
+            'Paul David Tripp', amber, 3)}
+          {quoteBox(
+            pt ? 'A solidão que o cônjuge sente na presença do outro é frequentemente o sintoma de que o cônjuge mais presente está usando o casamento para gerenciar sua própria ansiedade, em vez de genuinamente conhecer e ser conhecido. Lo\' tov — não é bom estar só — é o diagnóstico que Deus fez antes da queda, e ainda é o diagnóstico de muitos casamentos hoje.'
+               : 'The loneliness a spouse feels in the other\'s presence is often the symptom that the more present spouse is using the marriage to manage their own anxiety, rather than genuinely knowing and being known. Lo\' tov — not good to be alone — is the diagnosis God made before the fall, and it is still the diagnosis of many marriages today.',
+            'David Powlison', green, 6)}
+          {quoteBox(
+            pt ? 'A exclamação de Adão — "este é agora osso dos meus ossos" — não foi ensinada: irrompeu. O casamento que ainda tem essa espontaneidade — gratidão pelo cônjuge que explode em admiração — ainda tem combustível vivo. O conselheiro pergunta: "quando foi a última vez que você teve um momento como o de Adão com o seu cônjuge?"'
+               : 'Adam\'s exclamation — "this is now bone of my bones" — was not taught: it erupted. The marriage that still has this spontaneity — gratitude for the spouse that bursts into admiration — still has living fuel. The counselor asks: "when was the last time you had an Adam moment with your spouse?"',
+            'Edward T. Welch', blue, 4)}
+          <div style={{ background: 'rgba(255,180,50,0.07)', border: '1px solid rgba(255,180,50,0.25)', borderRadius: 10, padding: '12px 16px', marginBottom: 14 }}>
+            <div style={{ fontSize: labelSz, fontWeight: 800, color: amber, marginBottom: 6 }}>✝️ {pt ? 'Perspectiva Histórico-Redentiva' : 'Redemptive-Historical Perspective'}</div>
+            <p style={{ fontSize: smallSz, color: 'rgba(255,230,180,0.88)', lineHeight: 1.75, margin: 0 }}>
+              {pt
+                ? 'Cristo no Getsêmani disse "Minha alma está profundamente triste até à morte. Ficai aqui e vigiai comigo" (Mt 26:38). O Filho de Deus nomeou Sua própria solidão — e encontrou nos discípulos companhia que falhou. Somente o Pai nunca o abandonou. O conselheiro que ajuda o aconselhando a nomear a solidão com honestidade está seguindo o padrão de Cristo — que não suprimiu a solidão, mas a levou ao Pai em oração. O casamento que aprende a nomear a solidão mútua e a levá-la a Deus tem uma fonte que não seca.'
+                : 'Christ in Gethsemane said "My soul is overwhelmed with sorrow to the point of death. Stay here and keep watch with me" (Matt 26:38). The Son of God named his own loneliness — and found in the disciples a companionship that failed. Only the Father never abandoned him. The counselor who helps the counselee name loneliness with honesty is following Christ\'s pattern — who did not suppress loneliness but took it to the Father in prayer. The marriage that learns to name mutual loneliness and bring it to God has a source that does not run dry.'}
+            </p>
+          </div>
+          {questionsBox([
+            pt ? '"Você se sente genuinamente conhecido pelo seu cônjuge — ou sente que ele/ela conhece a versão que você apresenta, não quem você realmente é? O que você nunca nomeou para ele/ela?"'
+               : '"Do you feel genuinely known by your spouse — or do you feel they know the version you present, not who you really are? What have you never named to them?"',
+            pt ? '"Quando a solidão aparece no casamento, qual é sua resposta automática — você se aproxima ou se distancia? Você nomeia ou suprime?"'
+               : '"When loneliness appears in your marriage, what is your automatic response — do you draw near or withdraw? Do you name it or suppress it?"',
+            pt ? '"Seu cônjuge já soube que você estava só? Você já lhe disse: \'Me sinto só\'? O que impediu (ou impede) essa honestidade?"'
+               : '"Has your spouse ever known you were lonely? Have you ever told them: \'I feel alone\'? What prevented (or prevents) that honesty?"',
+          ], amber)}
+        </>
+      )}
+
+      {/* SEÇÃO 2 — Ezer Kenegdo */}
+      {sectionCard(green, greenL, greenB, '🤝',
+        pt ? 'Seção 2 — Ezer Kenegdo: Complementaridade que Cura Conflitos' : 'Section 2 — Ezer Kenegdo: Complementarity that Heals Conflict',
+        pt ? 'Gênesis 2:18,21–22 — \'ezer (auxiliadora); kenegdo (correspondendo); tsela\' (costela — origem e paridade)' : 'Genesis 2:18,21–22 — \'ezer (helper); kenegdo (corresponding); tsela\' (rib — shared origin and parity)',
+        <>
+          <ul style={{ margin: '0 0 14px 0', paddingLeft: 20 }}>
+            {[
+              pt ? '\'Ezer não é servilidade — é o mesmo termo usado para Deus como "auxiliador" de Israel (Sl 121:2; 124:8). Quando Gn 2:18 usa \'ezer para a mulher, não está descrevendo inferioridade — está descrevendo a capacidade de suprir o que o outro não tem. Kenegdo ("correspondendo a ele") define complementaridade: não idêntica, não intercambiável, mas perfeitamente correspondente. A tsela\' implica origem compartilhada — a mulher não é menos que o homem, é diferente do homem. O conflito conjugal frequentemente nasce quando "diferente" é interpretado como "errado".' : 'Ezer is not servility — it is the same term used for God as "helper" of Israel (Ps 121:2; 124:8). When Gen 2:18 uses ezer for the woman, it is not describing inferiority — it is describing the capacity to supply what the other lacks. Kenegdo ("corresponding to him") defines complementarity: not identical, not interchangeable, but perfectly correspondent. The tsela\' implies shared origin — the woman is not less than the man, she is different from the man. Marital conflict often arises when "different" is interpreted as "wrong."',
+              pt ? 'O conselheiro diante de um casal em conflito por diferenças pergunta: "Qual diferença do seu cônjuge tem sido a maior bênção para você — mesmo que inicialmente te irritasse?" Reframe: as diferenças que causam mais conflito são frequentemente as mesmas que geram os maiores complementos quando compreendidas pela lente de Gn 2:18.' : 'The counselor before a couple in conflict over differences asks: "Which difference in your spouse has been the greatest blessing to you — even if it initially irritated you?" Reframe: the differences that cause the most conflict are often the same ones that generate the greatest complements when understood through the lens of Gen 2:18.',
+            ].map((item, i) => (
+              <li key={i} style={{ fontSize: bodySz, color: 'rgba(255,255,255,0.82)', lineHeight: 1.7, marginBottom: 6 }}>{item}</li>
+            ))}
+          </ul>
+          {quoteBox(
+            pt ? 'Homem e mulher são iguais em dignidade diante de Deus e diferentes em função e design. Essa diferença não é resultado da queda — é presente da criação. O casamento que abraça as diferenças como design de Deus, em vez de tentar eliminá-las, descobre que a complementaridade é a fonte de uma força que nenhum dos dois teria sozinho.'
+               : 'Man and woman are equal in dignity before God and different in function and design. This difference is not a result of the fall — it is a creation gift. The marriage that embraces differences as God\'s design, rather than trying to eliminate them, discovers that complementarity is the source of a strength neither would have alone.',
+            'Herman Bavinck', amber, 7)}
+          {quoteBox(
+            pt ? 'O maior problema no casamento não é que os cônjuges são diferentes — é que eles tentam fazer o outro igual a si mesmos. Ezer kenegdo ensina que Deus criou a diferença para que nenhum dos dois seja suficiente sozinho. Abraçar a diferença do cônjuge é confiar no design de Deus, não se resignar a ele.'
+               : 'The greatest problem in marriage is not that spouses are different — it is that they try to make the other like themselves. Ezer kenegdo teaches that God created difference so that neither is sufficient alone. Embracing the spouse\'s difference is trusting God\'s design, not merely resigning to it.',
+            'Douglas Wilson', green, 9)}
+          {quoteBox(
+            pt ? 'Toda esposa que usa sua força de ezer para suprir o que seu marido não tem está exercendo exatamente o papel para o qual Deus a formou. E todo marido que permite ser "auxiliado" pela esposa não está sendo fraco — está sendo sábio. O erro é quando o "diferente" vira "defeituoso" — e aí o casamento vira um projeto de reform do cônjuge.'
+               : 'Every wife who uses her ezer strength to supply what her husband lacks is exercising exactly the role God formed her for. And every husband who allows himself to be "helped" by his wife is not being weak — he is being wise. The error is when "different" becomes "defective" — and then the marriage becomes a spouse-reform project.',
+            'Paul David Tripp', blue, 5)}
+          <div style={{ background: 'rgba(255,180,50,0.07)', border: '1px solid rgba(255,180,50,0.25)', borderRadius: 10, padding: '12px 16px', marginBottom: 14 }}>
+            <div style={{ fontSize: labelSz, fontWeight: 800, color: amber, marginBottom: 6 }}>✝️ {pt ? 'Perspectiva Histórico-Redentiva' : 'Redemptive-Historical Perspective'}</div>
+            <p style={{ fontSize: smallSz, color: 'rgba(255,230,180,0.88)', lineHeight: 1.75, margin: 0 }}>
+              {pt
+                ? 'Cristo é o perfeito \'Ezer — o Auxiliador enviado pelo Pai (Jo 14:16 usa parakletos, o mesmo conceito). Ele supre o que nós não temos: justiça, reconciliação, acesso ao Pai. A relação de Cristo com a Igreja não é de uniformidade — é de complementaridade pactual: Ele dá o que nós não podemos dar a nós mesmos. O casamento que opera nessa lógica — eu dou ao meu cônjuge o que ele não tem, e recebo o que não tenho — está imitando a lógica da graça: não merecimento, mas complemento. O Espírito Santo (também parakletos) habilita os cônjuges a se tornarem ezer um para o outro com alegria, não com ressentimento.'
+                : 'Christ is the perfect Ezer — the Helper sent by the Father (John 14:16 uses parakletos, the same concept). He supplies what we do not have: righteousness, reconciliation, access to the Father. Christ\'s relationship with the Church is not uniformity — it is covenantal complementarity: He gives what we cannot give ourselves. The marriage that operates on this logic — I give my spouse what they lack, and receive what I lack — is imitating the logic of grace: not merit, but complement. The Holy Spirit (also parakletos) enables spouses to become ezer for each other with joy, not resentment.'}
+            </p>
+          </div>
+          {questionsBox([
+            pt ? '"Qual é a diferença do seu cônjuge que mais te irrita? E qual é a diferença que, quando você é honesto, já te salvou de um erro que você teria cometido sozinho?"'
+               : '"Which difference in your spouse most irritates you? And which difference, when you are honest, has already saved you from a mistake you would have made alone?"',
+            pt ? '"Você está tentando mudar seu cônjuge para que ele seja mais como você — ou está aprendendo a receber o que ele tem que você não tem? Como Gênesis 2:18 desafia sua postura?"'
+               : '"Are you trying to change your spouse to be more like you — or are you learning to receive what they have that you do not? How does Genesis 2:18 challenge your posture?"',
+            pt ? '"Em que área do casamento vocês têm tratado a diferença como defeito — e poderiam, com uma mudança de perspectiva, começar a tratá-la como complemento?"'
+               : '"In what area of your marriage have you been treating difference as defect — and could, with a shift in perspective, begin treating it as complement?"',
+          ], green)}
+        </>
+      )}
+
+      {/* SEÇÃO 3 — Azav-Davaq-Basar Echad */}
+      {sectionCard(blue, blueL, blueB, '💍',
+        pt ? 'Seção 3 — Azav, Davaq, Basar Echad: A Fórmula da Aliança — Centro ◉' : 'Section 3 — Azav, Davaq, Basar Echad: The Covenant Formula — Center ◉',
+        pt ? 'Gênesis 2:24 — azav (deixar), davaq (unir-se), basar echad (uma só carne) — fórmula pactual prescritiva' : 'Genesis 2:24 — azav (leave), davaq (cleave), basar echad (one flesh) — prescriptive covenant formula',
+        <>
+          <ul style={{ margin: '0 0 14px 0', paddingLeft: 20 }}>
+            {[
+              pt ? 'A fórmula tripartite de Gn 2:24 é prescritiva (dada antes da queda) e irreversível (citada por Jesus em Mt 19:5 como fundamento irrevogável). Azav não é abandono dos pais — é a ruptura necessária da lealdade primária: agora o cônjuge ocupa o centro. Davaq é adesão ativa de lealdade — não "ficar junto por inércia," mas escolha cotidiana de unir-se. Basar echad é intimidade total: física, emocional, espiritual — não apenas sexual.' : 'The tripartite formula of Gen 2:24 is prescriptive (given before the fall) and irreversible (cited by Jesus in Matt 19:5 as irrevocable foundation). Azav is not abandonment of parents — it is the necessary rupture of the primary loyalty: now the spouse occupies the center. Davaq is active adherence of loyalty — not "staying together by inertia," but daily choice to cleave. Basar echad is total intimacy: physical, emotional, spiritual — not only sexual.',
+              pt ? 'O conselheiro pode usar os três movimentos como grelha diagnóstica: (1) Azav — o casal deixou bem os pais? Há dependências financeiras, emocionais ou de interferência nos filhos que nunca foram conscientemente cortadas? (2) Davaq — a escolha de unir-se está sendo feita diariamente? Ou o casamento está "existindo" por inércia? (3) Basar echad — qual dimensão da "carne única" está deficitária — a física, a emocional ou a espiritual?' : 'The counselor can use the three movements as a diagnostic grid: (1) Azav — did the couple leave their parents well? Are there financial, emotional or child-interference dependencies that were never consciously cut? (2) Davaq — is the choice to cleave being made daily? Or is the marriage "existing" by inertia? (3) Basar echad — which dimension of "one flesh" is deficient — the physical, emotional or spiritual?',
+            ].map((item, i) => (
+              <li key={i} style={{ fontSize: bodySz, color: 'rgba(255,255,255,0.82)', lineHeight: 1.7, marginBottom: 6 }}>{item}</li>
+            ))}
+          </ul>
+          {quoteBox(
+            pt ? 'O pai que não completou o azav criará filhos que também não completarão — porque o azav é herdado por modelagem, não transmitido por instrução. A família que quer casamentos saudáveis na próxima geração precisa começar completando o azav nesta geração.'
+               : 'The father who did not complete the azav will raise children who also will not complete it — because azav is inherited by modeling, not transmitted by instruction. The family that wants healthy marriages in the next generation needs to begin by completing the azav in this generation.',
+            'Douglas Wilson', blue, 9)}
+          {quoteBox(
+            pt ? 'O casamento não é um sentimento que você tem — é uma escolha que você renova toda manhã. Davaq não é uma emoção; é uma decisão. Os casamentos que sobrevivem às secas são os que praticaram o davaq quando não sentiram vontade — porque construíram um padrão de escolha ativa que o sentimento não governa.'
+               : 'Marriage is not a feeling you have — it is a choice you renew every morning. Davaq is not an emotion; it is a decision. The marriages that survive the droughts are those that practiced davaq when they did not feel like it — because they built a pattern of active choice that feeling does not govern.',
+            'Voddie Baucham Jr.', amber, 8)}
+          {quoteBox(
+            pt ? 'A mais simples e devastadora pergunta que faço a casais é: "Vocês completaram o azav?" Em trinta anos de aconselhamento, a maioria dos problemas conjugais graves tem raiz em um azav incompleto. Os pais continuam na cama do casal — não fisicamente, mas emocionalmente e nas decisões do lar.'
+               : 'The simplest and most devastating question I ask couples is: "Did you complete the azav?" In thirty years of counseling, most serious marital problems are rooted in an incomplete azav. The parents remain in the couple\'s bed — not physically, but emotionally and in the home\'s decisions.',
+            'Jay E. Adams', green, 2)}
+          <div style={{ background: 'rgba(80,200,255,0.10)', border: '1px solid rgba(80,200,255,0.25)', borderRadius: 10, padding: '12px 16px', marginBottom: 14 }}>
+            <div style={{ fontSize: labelSz, fontWeight: 800, color: blue, marginBottom: 6 }}>{pt ? 'Prática Clínica Pastoral' : 'Clinical Pastoral Practice'}</div>
+            <p style={{ fontSize: bodySz, color: 'rgba(255,255,255,0.80)', lineHeight: 1.7, margin: 0 }}>
+              {pt
+                ? 'Peça ao casal que avalie, em escala de 1 a 10, cada um dos três movimentos: "Quanto do azav você completou em relação aos seus pais? Quanto do davaq você pratica conscientemente? Em qual dimensão do basar echad (física, emocional, espiritual) o casamento está mais deficitário?" Isso cria um mapa de trabalho concreto para as próximas sessões.'
+                : 'Ask the couple to rate, on a scale of 1 to 10, each of the three movements: "How much of the azav have you completed in relation to your parents? How much of the davaq do you practice consciously? In which dimension of basar echad (physical, emotional, spiritual) is the marriage most deficient?" This creates a concrete work map for the next sessions.'}
+            </p>
+          </div>
+          <div style={{ background: 'rgba(255,180,50,0.07)', border: '1px solid rgba(255,180,50,0.25)', borderRadius: 10, padding: '12px 16px', marginBottom: 14 }}>
+            <div style={{ fontSize: labelSz, fontWeight: 800, color: amber, marginBottom: 6 }}>✝️ {pt ? 'Perspectiva Histórico-Redentiva' : 'Redemptive-Historical Perspective'}</div>
+            <p style={{ fontSize: smallSz, color: 'rgba(255,230,180,0.88)', lineHeight: 1.75, margin: 0 }}>
+              {pt
+                ? 'Cristo cumpriu os três movimentos de Gn 2:24 em dimensão cósmica: azav — "saí do Pai e vim ao mundo" (Jo 16:28), a descida da encarnação como deixar; davaq — a aliança de sangue (Hb 9:15), a adesão irreversível ao Seu povo; basar echad — "o Verbo se fez carne" (Jo 1:14), a união perfeita entre divino e humano na pessoa de Cristo. O conselheiro que apresenta os três movimentos ao casal pode dizer: "Vocês estão imitando os três movimentos de Cristo com a Sua Igreja — e quando um dos movimentos falha, o casamento reflete uma falha na representação do evangelho." A aliança conjugal é sermão vivo da aliança de Cristo.'
+                : 'Christ fulfilled the three movements of Gen 2:24 in cosmic dimension: azav — "I came from the Father and entered the world" (John 16:28), the descent of incarnation as leaving; davaq — the blood covenant (Heb 9:15), the irreversible adherence to His people; basar echad — "the Word became flesh" (John 1:14), the perfect union between divine and human in the person of Christ. The counselor who presents the three movements to the couple can say: "You are imitating the three movements of Christ with His Church — and when one movement fails, the marriage reflects a failure in representing the gospel." The marital covenant is a living sermon of Christ\'s covenant.'}
+            </p>
+          </div>
+          {questionsBox([
+            pt ? '"Vocês completaram o azav? Há alguma dependência emocional, financeira ou de interferência parental que nunca foi conscientemente cortada? Como isso está afetando o davaq?"'
+               : '"Did you complete the azav? Is there any emotional, financial or parental interference dependency that was never consciously cut? How is this affecting the davaq?"',
+            pt ? '"O davaq em vocês é ativo ou passivo — vocês escolhem ativamente unir-se, ou apenas não se separaram ainda? O que uma decisão ativa de davaq pareceria esta semana?"'
+               : '"Is the davaq between you active or passive — do you actively choose to cleave, or have you simply not yet separated? What would an active davaq decision look like this week?"',
+            pt ? '"Em qual dimensão do basar echad o casamento está mais deficitário — a física, a emocional ou a espiritual? O que impede que essa dimensão seja cultivada?"'
+               : '"In which dimension of basar echad is your marriage most deficient — the physical, emotional or spiritual? What prevents that dimension from being cultivated?"',
+          ], blue)}
+        </>
+      )}
+
+      {/* SEÇÃO 4 — O Casamento como Sermão do Evangelho */}
+      {sectionCard(purple, purpleL, purpleB, '⛪',
+        pt ? 'Seção 4 — O Casamento como Sermão do Evangelho' : 'Section 4 — Marriage as a Sermon of the Gospel',
+        pt ? 'Efésios 5:31–32 sobre Gênesis 2:24 — musterion mega; o casal como ícone cristológico' : 'Ephesians 5:31–32 on Genesis 2:24 — musterion mega; the couple as Christological icon',
+        <>
+          <ul style={{ margin: '0 0 14px 0', paddingLeft: 20 }}>
+            {[
+              pt ? 'Paulo em Ef 5:31–32 não usa Gn 2:24 como mera ilustração — usa-o como argumento teológico: o casamento é "mistério grande" (musterion mega) porque é sinal sacramental da relação de Cristo com a Igreja. Quando um casal cristão pratica perdão, fidelidade e sacrifício, está pregando o evangelho sem palavras. Quando o casamento falha nessas dimensões, a mensagem que o lar envia sobre Cristo e a Igreja também falha.' : 'Paul in Eph 5:31–32 does not use Gen 2:24 as mere illustration — he uses it as a theological argument: marriage is "great mystery" (musterion mega) because it is a sacramental sign of Christ\'s relationship with the Church. When a Christian couple practices forgiveness, faithfulness and sacrifice, they preach the gospel without words. When the marriage fails in these dimensions, the message the home sends about Christ and the Church also fails.',
+              pt ? 'O conselheiro diante de um casal em crise tem uma oportunidade única: o sofrimento do casamento pode ser o que levou o casal a descobrir que eles estavam olhando para o casamento como fonte de identidade e felicidade em vez de olhar para Cristo como fonte. O casamento não sustenta esse peso — e quando cede, a crise pode ser o caminho para a descoberta de que somente Cristo pode ser o fundamento.' : 'The counselor before a couple in crisis has a unique opportunity: the suffering of the marriage may be what brought the couple to discover they were looking to marriage as the source of identity and happiness rather than looking to Christ as the source. Marriage cannot sustain that weight — and when it gives way, the crisis can be the path to discovering that only Christ can be the foundation.',
+            ].map((item, i) => (
+              <li key={i} style={{ fontSize: bodySz, color: 'rgba(255,255,255,0.82)', lineHeight: 1.7, marginBottom: 6 }}>{item}</li>
+            ))}
+          </ul>
+          {quoteBox(
+            pt ? 'O lar cristão não é o menor departamento da Igreja — é onde a Igreja começa. O casamento que reflete Cristo e a Igreja é o melhor argumento evangelístico que uma família pode produzir: não palavras, mas vida. Quando o marido ama como Cristo e a esposa respeita como a Igreja, o bairro vê o evangelho encarnado.'
+               : 'The Christian home is not the smallest department of the Church — it is where the Church begins. The marriage that reflects Christ and the Church is the best evangelistic argument a family can produce: not words, but life. When the husband loves as Christ and the wife respects as the Church, the neighborhood sees the incarnate gospel.',
+            'Richard Baxter', purple, 12)}
+          {quoteBox(
+            pt ? 'O maior presente que um pai pode dar a seus filhos é amar a mãe deles. O casamento forte não é apenas bênção para o casal — é o alicerce sobre o qual toda a educação cristã dos filhos é construída. Uma casa sem casamento sólido é uma casa sobre areia — pode parecer bem por um tempo, mas qualquer tempestade revela a fundação.'
+               : 'The greatest gift a father can give his children is to love their mother. A strong marriage is not only a blessing for the couple — it is the foundation on which all the children\'s Christian education is built. A house without a solid marriage is a house on sand — it may seem fine for a while, but any storm reveals the foundation.',
+            'Voddie Baucham Jr.', amber, 8)}
+          {quoteBox(
+            pt ? 'O casamento cristão é uma teologia prática. Quando dois pecadores aprendem a perdoar-se como Cristo os perdoou, a amar-se como Cristo os amou, e a servir-se como Cristo os serviu, eles não estão apenas sobrevivendo juntos — estão pregando. O conselheiro que ajuda um casal a chegar a isso não está apenas salvando um casamento — está restaurando um sermão.'
+               : 'Christian marriage is practical theology. When two sinners learn to forgive each other as Christ forgave them, to love each other as Christ loved them, and to serve each other as Christ served them, they are not merely surviving together — they are preaching. The counselor who helps a couple reach this is not merely saving a marriage — they are restoring a sermon.',
+            'Joel R. Beeke', green, 10)}
+          <div style={{ background: 'rgba(255,180,50,0.07)', border: '1px solid rgba(255,180,50,0.25)', borderRadius: 10, padding: '12px 16px', marginBottom: 14 }}>
+            <div style={{ fontSize: labelSz, fontWeight: 800, color: amber, marginBottom: 6 }}>✝️ {pt ? 'Perspectiva Histórico-Redentiva' : 'Redemptive-Historical Perspective'}</div>
+            <p style={{ fontSize: smallSz, color: 'rgba(255,230,180,0.88)', lineHeight: 1.75, margin: 0 }}>
+              {pt
+                ? 'O casamento como musterion mega (Ef 5:32) aponta para o fim da história: o banquete das bodas do Cordeiro (Ap 19:7–9). Todo casamento cristão é um ensaio de escatologia — uma antecipação do dia em que Cristo e a Igreja serão reunidos em glória. O conselheiro que ajuda um casal a permanecer junto nas dificuldades está, na perspectiva do grande drama redentor, ajudando-os a ser fiéis ao ensaio. E o casamento que sobrevive à tempestade tem uma mensagem que o casamento sem cicatrizes nunca terá: "a aliança de Cristo com a Igreja também sobreviveu — e nós o testificamos."'
+                : 'Marriage as musterion mega (Eph 5:32) points to the end of history: the marriage supper of the Lamb (Rev 19:7–9). Every Christian marriage is a rehearsal of eschatology — an anticipation of the day when Christ and the Church will be reunited in glory. The counselor who helps a couple remain together through difficulties is, in the perspective of the great redemptive drama, helping them be faithful to the rehearsal. And the marriage that survives the storm has a message that the scar-free marriage will never have: "Christ\'s covenant with the Church also survived — and we testify to it."'}
+            </p>
+          </div>
+          {questionsBox([
+            pt ? '"Que mensagem sobre Cristo e a Igreja o seu casamento está pregando para seus filhos, seus vizinhos e sua comunidade agora mesmo? Você está satisfeito com esse sermão?"'
+               : '"What message about Christ and the Church is your marriage preaching to your children, your neighbors and your community right now? Are you satisfied with that sermon?"',
+            pt ? '"Você está olhando para o casamento como fonte da sua identidade e felicidade — ou como veículo para amar e servir o seu cônjuge como Cristo te amou e serviu? Como essa diferença muda tudo?"'
+               : '"Are you looking to marriage as the source of your identity and happiness — or as a vehicle to love and serve your spouse as Christ loved and served you? How does this difference change everything?"',
+            pt ? '"O que impede que vocês tenham uma \'noite de aliança\' esta semana — relembrar os votos, orar juntos, renovar o compromisso? Que obstáculo concreto existe e como vocês podem removê-lo?"'
+               : '"What prevents you from having a \'covenant night\' this week — recalling vows, praying together, renewing commitment? What concrete obstacle exists and how can you remove it?"',
+          ], purple)}
+        </>
+      )}
+
+      {/* SEÇÃO 5 — Autores */}
+      <div style={{ borderRadius: 16, background: pinkL, border: `1.5px solid ${pinkB}`, padding: '22px 24px', marginBottom: 20 }}>
+        <div style={{ fontSize: labelSz, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: pink, marginBottom: 16 }}>
+          📚 {pt ? 'Seção 5 — Autores e Obras de Referência' : 'Section 5 — Reference Authors and Works'}
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(260px,1fr))', gap: 12, marginBottom: 16 }}>
+          {[
+            { fn: 2,  name: 'Jay E. Adams',       works: 'Competent to Counsel (1970)', desc: pt ? 'Azav incompleto como raiz de problemas conjugais; fórmula pactual como grelha diagnóstica' : 'Incomplete azav as root of marital problems; covenant formula as diagnostic grid', color: blue },
+            { fn: 1,  name: 'David Powlison',     works: 'Seeing with New Eyes (2003); Speaking Truth in Love (2005)', desc: pt ? 'Lo\' tov como diagnóstico de solidão conjugal; pais como imagem de Deus para os filhos' : 'Lo\' tov as diagnosis of marital loneliness; parents as image of God for children', color: green },
+            { fn: 3,  name: 'Paul David Tripp',   works: 'What Did You Expect? (2010); Instruments (2002)', desc: pt ? 'Solidão nomeada como primeiro passo da intimidade; casamento como ídolo vs. vocação' : 'Named loneliness as first step of intimacy; marriage as idol vs. vocation', color: amber },
+            { fn: 7,  name: 'Herman Bavinck',     works: 'The Christian Family (1912)', desc: pt ? 'Complementaridade como design pré-queda; casamento como instituição sagrada anterior ao pecado' : 'Complementarity as pre-fall design; marriage as sacred institution prior to sin', color: purple },
+            { fn: 9,  name: 'Douglas Wilson',     works: 'Her Hand in Marriage (1997)', desc: pt ? 'Azav como herança modelada; complementaridade como força, não concessão' : 'Azav as modeled inheritance; complementarity as strength, not concession', color: blue },
+            { fn: 8,  name: 'Voddie Baucham Jr.', works: 'Family Driven Faith (2007)', desc: pt ? 'Davaq como escolha ativa diária; casamento forte como fundação da educação cristã dos filhos' : 'Davaq as active daily choice; strong marriage as foundation of children\'s Christian education', color: amber },
+            { fn: 12, name: 'Richard Baxter',     works: 'A Christian Directory (1673)', desc: pt ? 'O lar cristão como onde a Igreja começa; casamento como sermão vivo do evangelho' : 'The Christian home as where the Church begins; marriage as living sermon of the gospel', color: green },
+          ].map((a, i) => (
+            <div key={i} style={{ background: 'rgba(0,0,0,0.25)', borderRadius: 10, border: '1px solid rgba(255,255,255,0.08)', padding: '14px 16px' }}>
+              <div style={{ fontSize: labelSz, fontWeight: 900, color: a.color, marginBottom: 4 }}>{a.name}{fn(a.fn)}</div>
+              <div style={{ fontSize: smallSz, color: 'rgba(255,255,255,0.50)', marginBottom: 6, fontStyle: 'italic' }}>{a.works}</div>
+              <div style={{ fontSize: labelSz, color: 'rgba(255,255,255,0.75)', lineHeight: 1.6 }}>{a.desc}</div>
+            </div>
+          ))}
+        </div>
+        <div style={{ background: 'rgba(0,0,0,0.20)', borderRadius: 10, padding: '12px 16px', borderLeft: `3px solid ${pink}` }}>
+          <p style={{ fontSize: bodySz, color: 'rgba(255,255,255,0.82)', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            {pt
+              ? 'Conselheiro bíblico reformado diante de Gênesis 2:18–25: use os três movimentos de Gn 2:24 como grelha diagnóstica. Quando um casamento sofre, pergunte: o azav foi completado? O davaq está sendo praticado ativamente? Em qual dimensão do basar echad o déficit é maior? O diagnóstico correto precede a prescrição correta.'
+              : 'Reformed biblical counselor before Genesis 2:18–25: use the three movements of Gen 2:24 as a diagnostic grid. When a marriage suffers, ask: was the azav completed? Is davaq being actively practiced? In which dimension of basar echad is the deficit greatest? The correct diagnosis precedes the correct prescription.'}
+          </p>
+        </div>
+      </div>
+
+      {/* SEÇÃO 6 — Plano */}
+      <div style={{ borderRadius: 16, background: greenL, border: `1.5px solid ${greenB}`, padding: '22px 24px', marginBottom: 20 }}>
+        <div style={{ fontSize: labelSz, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: green, marginBottom: 16 }}>
+          🗓️ {pt ? 'Seção 6 — Plano de 4 Sessões baseado em Gênesis 2:18–25' : 'Section 6 — 4-Session Plan based on Genesis 2:18–25'}
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+          {[
+            { n: '1', ref: 'Gênesis 2:18,23', color: amber,
+              title: pt ? 'A Solidão Nomeada — Diagnóstico de Intimidade' : 'Named Loneliness — Intimacy Diagnosis',
+              desc: pt ? 'Cada cônjuge nomeia honestamente sua solidão dentro do casamento. Lo\' tov como diagnóstico pré-queda: a solidão não é vergonha. Âncora histórico-redentiva: Cristo nomeou Sua solidão em Getsêmani e a levou ao Pai. O casamento que aprende a nomear a solidão mútua e a orá-la tem uma fonte inesgotável. Powlison[1,6], Tripp[3], Welch[4].' : 'Each spouse honestly names their loneliness within the marriage. Lo\' tov as pre-fall diagnosis: loneliness is not shame. Redemptive anchor: Christ named His loneliness in Gethsemane and took it to the Father. The marriage that learns to name mutual loneliness and pray it has an inexhaustible source. Powlison[1,6], Tripp[3], Welch[4].' },
+            { n: '2', ref: 'Gênesis 2:18,21–22', color: green,
+              title: pt ? 'Ezer Kenegdo — Mapeando Complementaridades' : 'Ezer Kenegdo — Mapping Complementarities',
+              desc: pt ? 'Cada cônjuge lista 3 diferenças do outro que têm sido bênção (mesmo as que inicialmente irritaram). Trabalho com ezer: como minha força complementa o que meu cônjuge não tem? Âncora histórico-redentiva: Cristo o perfeito Ezer — Ele supre o que não temos. O Espírito habilita a complementaridade com alegria. Bavinck[7], Wilson[9], Tripp[5].' : 'Each spouse lists 3 differences in the other that have been a blessing (even those that initially irritated). Work with ezer: how does my strength complement what my spouse lacks? Redemptive anchor: Christ the perfect Ezer — He supplies what we lack. The Spirit enables complementarity with joy. Bavinck[7], Wilson[9], Tripp[5].' },
+            { n: '3', ref: 'Gênesis 2:24', color: blue,
+              title: pt ? 'Azav-Davaq — Auditoria da Aliança' : 'Azav-Davaq — Covenant Audit',
+              desc: pt ? 'Escala 1–10: quanto do azav cada cônjuge completou em relação aos pais? Quanto davaq está sendo praticado conscientemente? Identificação das interferências do azav incompleto. Âncora histórico-redentiva: Cristo completou o azav perfeito — saiu do Pai para unir-Se à Igreja irreversivelmente (Jo 16:28). Adams[2], Wilson[9], Baucham[8].' : 'Scale 1–10: how much of the azav has each spouse completed in relation to their parents? How much davaq is being consciously practiced? Identifying the interferences of the incomplete azav. Redemptive anchor: Christ completed the perfect azav — left the Father to unite Himself to the Church irreversibly (John 16:28). Adams[2], Wilson[9], Baucham[8].' },
+            { n: '4', ref: 'Efésios 5:31–32 sobre Gênesis 2:24', color: purple,
+              title: pt ? 'Basar Echad — O Sermão que Vocês Estão Pregando' : 'Basar Echad — The Sermon You Are Preaching',
+              desc: pt ? 'Avaliação do basar echad nas três dimensões: física, emocional, espiritual. Que sermão sobre Cristo e a Igreja o casamento de vocês está pregando agora? Plano concreto para uma "noite de aliança" antes da próxima sessão. Âncora: o banquete das bodas do Cordeiro (Ap 19:7–9) — todo casamento cristão é ensaio de escatologia. Baxter[12], Beeke[10], Baucham[8].' : 'Assessment of basar echad in three dimensions: physical, emotional, spiritual. What sermon about Christ and the Church is your marriage preaching now? Concrete plan for a "covenant night" before the next session. Anchor: the marriage supper of the Lamb (Rev 19:7–9) — every Christian marriage is a rehearsal of eschatology. Baxter[12], Beeke[10], Baucham[8].' },
+          ].map((s) => (
+            <div key={s.n} style={{ display: 'flex', gap: 14, alignItems: 'flex-start', background: 'rgba(0,0,0,0.20)', borderRadius: 10, padding: '14px 16px' }}>
+              <div style={{ flexShrink: 0, width: 36, height: 36, borderRadius: '50%', background: s.color, display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 900, fontSize: 16, color: '#000' }}>{s.n}</div>
+              <div>
+                <div style={{ fontSize: titleSz, fontWeight: 800, color: s.color, marginBottom: 4 }}>{s.title}</div>
+                <div style={{ fontSize: labelSz, color: 'rgba(255,255,255,0.55)', fontStyle: 'italic', marginBottom: 6 }}>{s.ref}</div>
+                <div style={{ fontSize: bodySz, color: 'rgba(255,255,255,0.80)', lineHeight: 1.65 }}>{s.desc}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* REFS */}
+      <div style={{ borderRadius: 14, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.09)', padding: '18px 22px' }}>
+        <div style={{ fontSize: labelSz, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.40)', marginBottom: 14 }}>
+          🗂️ {pt ? 'Referências Bibliográficas (ABNT)' : 'Bibliographic References (ABNT)'}
+        </div>
+        <ol style={{ margin: 0, paddingLeft: 20 }}>
+          {REFS.map(r => (
+            <li key={r.n} style={{ fontSize: smallSz, color: 'rgba(255,255,255,0.55)', lineHeight: 1.70, marginBottom: 6 }}>{r.abnt}</li>
+          ))}
+        </ol>
+      </div>
+    </div>
+  );
+}
+
+// ─── Infográfico Gênesis 4 ───────────────────────────────────────────
+function InfograficoGenesis4FamiliaSection({ pt }: { pt: boolean }) {
+  const amber  = 'rgba(255,180,50,1)';
+  const green  = 'rgba(52,211,153,1)';
+  const blue   = 'rgba(80,200,255,1)';
+  const purple = 'rgba(180,120,255,1)';
+
+  const MOVES = [
+    {
+      num: 'I', sym: 'Gn 3:1,22–24',
+      title: pt ? 'A Tentação que Desfaz: A Serpente e a Dúvida' : 'The Temptation that Undoes: The Serpent and Doubt',
+      sub: pt ? '"Será que Deus disse?" — ha\'af ki amar Elohim; estratégia da dúvida sutil' : '"Did God actually say?" — ha\'af ki amar Elohim; strategy of subtle doubt',
+      emoji: '🐍',
+      key: pt ? 'Ha\'af ki amar Elohim (será que Deus disse?) — o prefixo ha\'af implica surpresa incrédula: "será possível que Deus disse isso?" A serpente não nega frontalmente: distorce, exagera ("de nenhuma árvore") e reinterpreta o limite como privação. A queda começa na mente antes de chegar à mão. Para a família: toda desobediência em casa começa com uma narrativa alternativa sobre as regras — "será que mamãe/papai disse mesmo?"' : 'Ha\'af ki amar Elohim (did God actually say?) — the prefix ha\'af implies incredulous surprise: "is it possible God said that?" The serpent does not deny directly: it distorts, exaggerates ("from no tree") and reinterpretes the limit as deprivation. The fall begins in the mind before reaching the hand. For the family: every disobedience at home begins with an alternative narrative about the rules — "did mom/dad actually say that?"',
+      app: pt ? 'Pais: ensinem seus filhos a identificar o padrão da tentação — ela começa com "será que é realmente errado?" Antes de agir, perguntem: "O que Deus diz sobre isso? O que nossos pais disseram?" O padrão da serpente é sempre o mesmo: questionar antes de desobedecer.' : 'Parents: teach your children to identify the temptation pattern — it begins with "is it really wrong?" Before acting, ask: "What does God say about this? What did our parents say?" The serpent\'s pattern is always the same: question before disobeying.',
+      cor: amber, corL: 'rgba(255,180,50,0.10)', corB: 'rgba(255,180,50,0.28)',
+    },
+    {
+      num: 'II', sym: 'Gn 3:7–10',
+      title: pt ? 'O Pecado que Esconde: Vergonha, Medo e Culpa' : 'The Sin that Hides: Shame, Fear and Guilt',
+      sub: pt ? 'Folhas de figueira, esconderijo e culpa que fragmenta relações — três consequências do pecado na família' : 'Fig leaves, hiding and guilt that fragments relationships — three consequences of sin in the family',
+      emoji: '😔',
+      key: pt ? 'O pecado produz três movimentos trágicos: (1) vergonha — a nudez que era inocência vira vulnerabilidade; (2) esconder — o relacionamento com Deus (e entre si) é rompido; (3) culpa — Adão culpa Eva, Eva culpa a serpente. O pecado sempre fragmenta relacionamentos. Para a família: quando há pecado, os sintomas são: afastamento, silêncio, raiva, culpabilização do outro. O conselheiro reconhece esse padrão de Gênesis 3 em todo conflito familiar.' : 'Sin produces three tragic movements: (1) shame — the nakedness that was innocence becomes vulnerability; (2) hiding — the relationship with God (and with each other) is broken; (3) guilt — Adam blames Eve, Eve blames the serpent. Sin always fragments relationships. For the family: when there is sin, the symptoms are: withdrawal, silence, anger, blaming the other. The counselor recognizes this Genesis 3 pattern in every family conflict.',
+      app: pt ? 'Filhos: quando você erra e se esconde — não conta para ninguém — você está fazendo o mesmo que Adão. A graça acontece quando você sai do esconderijo e confessa. Esconder o pecado não o apaga — o aprofunda.' : 'Children: when you err and hide — tell no one — you are doing what Adam did. Grace happens when you come out of hiding and confess. Hiding sin does not erase it — it deepens it.',
+      cor: blue, corL: 'rgba(80,200,255,0.10)', corB: 'rgba(80,200,255,0.28)',
+    },
+    {
+      num: 'III', sym: 'Gn 3:9,15,21',
+      title: pt ? 'A Graça que Veste: Deus Busca, Promete e Cobre — CENTRO ◉' : 'The Grace that Clothes: God Seeks, Promises and Covers — CENTER ◉',
+      sub: pt ? '"Onde estás tu?" — Deus busca o fugitivo; protoevangelium (3:15); vestes de pele (substituição)' : '"Where are you?" — God seeks the fugitive; protoevangelium (3:15); skin garments (substitution)',
+      emoji: '🩺',
+      key: pt ? '"Onde estás tu?" (3:9) não é pergunta de ignorância — é convite ao retorno. Gn 3:15 é o protoevangelium: a semente da mulher esmagará a cabeça da serpente — primeira promessa messiânica. E 3:21 é o momento mais dramático: Deus mata um animal para vestir os que falharam — substituição, cobertura, graça. O evangelho em germe. Para a família: quando há queda, o padrão de Deus não é abandono — é busca, promessa e cobertura.' : '"Where are you?" (3:9) is not a question of ignorance — it is an invitation to return. Gen 3:15 is the protoevangelium: the woman\'s seed will crush the serpent\'s head — the first messianic promise. And 3:21 is the most dramatic moment: God kills an animal to clothe those who failed — substitution, covering, grace. The gospel in seed form. For the family: when there is a fall, God\'s pattern is not abandonment — it is seeking, promising and covering.',
+      app: pt ? 'Pais: quando seus filhos erram, a primeira pergunta que vocês fazem deve ser "onde você está?" como Deus fez — não como interrogatório, mas como convite ao retorno. Criem uma cultura onde o pecado pode ser confessado sem terror, e a graça é a resposta antes da disciplina.' : 'Parents: when your children err, the first question you ask should be "where are you?" as God did — not as an interrogation, but as an invitation to return. Create a culture where sin can be confessed without terror, and grace is the response before discipline.',
+      cor: green, corL: 'rgba(52,211,153,0.10)', corB: 'rgba(52,211,153,0.28)',
+    },
+  ];
+
+  const ACTIVITIES = [
+    { n: '1', icon: '📖', text: pt ? 'Leiam juntos Gn 3:1–10 e 3:15 e 3:21. Pause nos três momentos-chave: a tentação, o esconderijo e a busca de Deus. Peça que cada membro identifique o que aconteceu em cada momento.' : 'Read Gen 3:1–10 and 3:15 and 3:21 together. Pause at the three key moments: the temptation, the hiding, and God\'s seeking. Ask each member to identify what happened at each moment.' },
+    { n: '2', icon: '💬', text: pt ? 'Perguntem às crianças: "Por que Adão e Eva se esconderam de Deus? Você já se escondeu de alguém depois de errar? Como foi? O que aconteceu quando você saiu do esconderijo?" Ouçam sem julgamento.' : 'Ask children: "Why did Adam and Eve hide from God? Have you ever hidden from someone after making a mistake? How was it? What happened when you came out of hiding?" Listen without judgment.' },
+    { n: '3', icon: '🌱', text: pt ? 'Pais compartilhem: "Quando vocês eram crianças, como seus pais reagiam quando vocês erravam? O que vocês aprenderam disso? O que querem fazer diferente?" Mostrem que a graça é aprendida pela modelagem.' : 'Parents share: "When you were children, how did your parents react when you made mistakes? What did you learn from that? What do you want to do differently?" Show that grace is learned through modeling.' },
+    { n: '4', icon: '✊', text: pt ? 'Atividade: deem a cada filho uma folha de papel e peçam que escrevam ou desenhem algo que erraram recentemente e ainda não confessaram. Depois rasgue-as juntos — simbolizando o perdão. Os pais fazem o mesmo.' : 'Activity: give each child a piece of paper and ask them to write or draw something they did wrong recently and have not yet confessed. Then tear them together — symbolizing forgiveness. Parents do the same.' },
+    { n: '5', icon: '🙏', text: pt ? 'Expliquem Gênesis 3:21: "Deus matou um animal para cobrir Adão e Eva. Por que Ele fez isso? O que isso nos ensina sobre Jesus — que morreu no nosso lugar?" Leiam Is 53:5–6 juntos.' : 'Explain Genesis 3:21: "God killed an animal to cover Adam and Eve. Why did He do that? What does this teach us about Jesus — who died in our place?" Read Isaiah 53:5–6 together.' },
+    { n: '6', icon: '📝', text: pt ? 'Orem juntos: confessem os pecados da família diante de Deus, agradeçam pelo Filho que veio esmagar a cabeça da serpente (Gn 3:15), e peçam graça para criar uma cultura de confissão no lar.' : 'Pray together: confess the family\'s sins before God, give thanks for the Son who came to crush the serpent\'s head (Gen 3:15), and ask for grace to create a culture of confession in the home.' },
+  ];
+
+  const APPS_FAMILIA = [
+    { role: pt ? 'Pais' : 'Parents', icon: '👨‍👩‍👧', text: pt ? 'Criem uma cultura de confissão em casa — não punam a honestidade, recompensem-na. Quando seu filho confessa algo errado, a resposta deve ser graça antes de disciplina. A família que aprende a confessar aprendeu a graça.' : 'Create a culture of confession at home — do not punish honesty, reward it. When your child confesses something wrong, the response should be grace before discipline. The family that learns to confess has learned grace.' },
+    { role: pt ? 'Filhos' : 'Children', icon: '👦', text: pt ? 'Esta semana, se você errar algo, não se esconda. Vá até um dos seus pais e diga: "Errei. Preciso de ajuda." Deus não esperou que Adão se corrigisse para buscá-lo — Ele foi antes. Seus pais também irão.' : 'This week, if you make a mistake, do not hide. Go to one of your parents and say: "I was wrong. I need help." God did not wait for Adam to fix himself before seeking him — He went first. Your parents will too.' },
+    { role: pt ? 'Noivos' : 'Engaged', icon: '💍', text: pt ? 'A queda revelou que toda família carregará feridas. Antes de casar, conversem honestamente sobre padrões de pecado, traumas e mecanismos de defesa que cada um traz — e comprometam-se a buscar graça juntos, não a se esconder um do outro.' : 'The fall revealed that every family will carry wounds. Before marrying, talk honestly about sin patterns, traumas and defense mechanisms each brings — and commit to seeking grace together, not hiding from each other.' },
+    { role: pt ? 'Casal' : 'Couple', icon: '👫', text: pt ? 'Pratiquem confissão mútua regularmente — não apenas erros grandes, mas as atitudes pequenas que magoam. Usem as palavras: "Eu errei. Me perdoa?" Quando o pecado entra no casamento, o padrão de Deus é buscar, não abandonar.' : 'Practice mutual confession regularly — not only big mistakes, but the small attitudes that hurt. Use the words: "I was wrong. Will you forgive me?" When sin enters the marriage, God\'s pattern is to seek, not abandon.' },
+    { role: pt ? 'Avós' : 'Grandparents', icon: '👴', text: pt ? 'Famílias carregam cicatrizes de gerações. Se há reconciliações pendentes em sua família, vocês têm autoridade e sabedoria para iniciar o processo. Uma palavra de perdão de um avô pode libertar filhos e netos de ciclos de décadas.' : 'Families carry generational scars. If there are pending reconciliations in your family, you have the authority and wisdom to initiate the process. A word of forgiveness from a grandparent can free children and grandchildren from cycles of decades.' },
+  ];
+
+  return (
+    <div style={{ paddingBottom: 48 }}>
+
+      {/* HERO */}
+      <div style={{ borderRadius: 20, background: 'linear-gradient(135deg,rgba(255,100,100,0.13) 0%,rgba(255,180,50,0.09) 60%,rgba(52,211,153,0.07) 100%)', border: '1px solid rgba(255,100,100,0.30)', padding: 'clamp(24px,4vw,36px)', marginBottom: 28, textAlign: 'center' }}>
+        <div style={{ fontSize: 'clamp(48px,8vw,72px)', lineHeight: 1, marginBottom: 10, filter: 'drop-shadow(0 0 24px rgba(255,100,100,0.50))' }}>🐍💔</div>
+        <div style={{ fontSize: 'clamp(14px,2vw,16px)', fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase', color: 'rgba(255,180,50,0.85)', marginBottom: 8 }}>
+          Gênesis 3:1–24 · {pt ? 'Família — Dia 4' : 'Family — Day 4'}
+        </div>
+        <div style={{ fontSize: 'clamp(18px,3.2vw,28px)', fontWeight: 900, color: '#fff', lineHeight: 1.25, marginBottom: 8 }}>
+          {pt ? 'Quando o Jardim Quebrou: A Queda e a Promessa que Ficou' : 'When the Garden Broke: The Fall and the Promise that Remained'}
+        </div>
+        <div style={{ fontSize: 'clamp(15px,2.4vw,17px)', color: 'rgba(255,255,255,0.55)', fontStyle: 'italic', marginBottom: 16 }}>
+          {pt ? 'Tentação, Vergonha e a Graça que Veste: o Evangelho em Germe na Família Quebrada' : 'Temptation, Shame and the Grace that Clothes: the Gospel in Seed Form in the Broken Family'}
+        </div>
+        <div style={{ display: 'inline-flex', flexWrap: 'wrap', gap: 8, justifyContent: 'center' }}>
+          {[
+            pt ? 'Tentação e Dúvida' : 'Temptation and Doubt',
+            pt ? 'Vergonha e Esconderijo' : 'Shame and Hiding',
+            pt ? 'Protoevangelium' : 'Protoevangelium',
+            pt ? 'Graça que Veste' : 'Grace that Clothes',
+          ].map(t => (
+            <span key={t} style={{ fontSize: 'clamp(14px,2vw,16px)', fontWeight: 700, padding: '3px 12px', borderRadius: 99, background: 'rgba(255,180,50,0.12)', border: '1px solid rgba(255,180,50,0.28)', color: 'rgba(255,180,50,0.92)' }}>{t}</span>
+          ))}
+        </div>
+      </div>
+
+      {/* BIG IDEA */}
+      <div style={{ borderRadius: 16, background: 'linear-gradient(135deg,rgba(255,100,100,0.10),rgba(255,180,50,0.07))', border: '1.5px solid rgba(255,180,50,0.32)', padding: '20px 24px', marginBottom: 20 }}>
+        <div style={{ fontSize: 'clamp(14px,2vw,16px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,180,50,0.85)', marginBottom: 8 }}>💡 {pt ? 'Big Idea · Para a Família' : 'Big Idea · For the Family'}</div>
+        <p style={{ fontSize: 'clamp(18px,2.8vw,22px)', fontWeight: 800, color: '#fff', lineHeight: 1.75, margin: 0 }}>
+          {pt
+            ? 'A queda de Adão e Eva revela que toda família é marcada pelo pecado — mas o Deus que os veste com pele de animal já estava preparando a redenção que viria em Cristo.'
+            : 'The fall of Adam and Eve reveals that every family is marked by sin — but the God who clothes them with animal skin was already preparing the redemption that would come in Christ.'}
+        </p>
+      </div>
+
+      {/* PERGUNTA + DOUTRINA */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))', gap: 14, marginBottom: 28 }}>
+        <div style={{ borderRadius: 14, background: 'rgba(255,100,100,0.06)', border: '1px solid rgba(255,100,100,0.22)', padding: '18px 20px' }}>
+          <div style={{ fontSize: 'clamp(14px,2vw,16px)', fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,140,140,0.85)', marginBottom: 8 }}>❓ {pt ? 'Pergunta Central' : 'Central Question'}</div>
+          <p style={{ fontSize: 'clamp(17px,2.6vw,20px)', color: 'rgba(255,210,210,0.90)', lineHeight: 1.70, fontStyle: 'italic', margin: 0 }}>
+            {pt ? '"Como uma família que conhece o próprio pecado pode viver com esperança — sabendo que Deus prometeu redenção ainda no dia mais escuro da história?"' : '"How can a family that knows its own sin live with hope — knowing that God promised redemption on the darkest day in history?"'}
+          </p>
+        </div>
+        <div style={{ borderRadius: 14, background: 'rgba(80,200,255,0.08)', border: '1px solid rgba(80,200,255,0.28)', padding: '18px 20px' }}>
+          <div style={{ fontSize: 'clamp(14px,2vw,16px)', fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(80,200,255,0.85)', marginBottom: 8 }}>📜 {pt ? 'Doutrina Central' : 'Central Doctrine'}</div>
+          <p style={{ fontSize: 'clamp(17px,2.6vw,20px)', fontWeight: 700, color: '#fff', lineHeight: 1.70, margin: 0 }}>
+            {pt ? 'A queda tornou toda família pecadora e envergonhada, mas o Deus que buscou Adão no jardim prometeu desde ali a semente que esmagaria a serpente — e essa promessa sustenta toda família cristã.' : 'The fall made every family sinful and ashamed, but the God who sought Adam in the garden promised from there the seed that would crush the serpent — and that promise sustains every Christian family.'}
+          </p>
+        </div>
+      </div>
+
+      {/* MOVIMENTOS */}
+      <div style={{ marginBottom: 28 }}>
+        <div style={{ fontSize: 'clamp(14px,2vw,16px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.45)', marginBottom: 16 }}>
+          📋 {pt ? 'Movimentos do Sermão Familiar' : 'Family Sermon Movements'}
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: 14 }}>
+          {MOVES.map(m => (
+            <div key={m.num} style={{ borderRadius: 16, background: m.corL, border: `1.5px solid ${m.corB}`, padding: '18px 20px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 10 }}>
+                <div style={{ width: 34, height: 34, borderRadius: 9, background: `${m.cor}22`, border: `1.5px solid ${m.cor}55`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 'clamp(16px,2vw,18px)', fontWeight: 900, color: m.cor }}>{m.emoji}</div>
+                <div>
+                  <div style={{ fontSize: 'clamp(13px,1.8vw,15px)', fontWeight: 700, color: m.cor, letterSpacing: '0.12em' }}>{m.num} · {m.sym}</div>
+                  <div style={{ fontSize: 'clamp(16px,2.4vw,19px)', fontWeight: 800, color: '#fff', lineHeight: 1.3 }}>{m.title}</div>
+                </div>
+              </div>
+              <div style={{ fontSize: 'clamp(15px,2.2vw,17px)', color: 'rgba(255,255,255,0.60)', fontStyle: 'italic', marginBottom: 8 }}>{m.sub}</div>
+              <div style={{ fontSize: 'clamp(15px,2.2vw,17px)', color: 'rgba(255,255,255,0.82)', lineHeight: 1.60, marginBottom: 10, padding: '8px 10px', borderRadius: 8, background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.07)' }}>{m.key}</div>
+              <div style={{ fontSize: 'clamp(15px,2.2vw,17px)', color: m.cor, lineHeight: 1.55, fontWeight: 600 }}>▸ {m.app}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* EIXO REDENTOR */}
+      <div style={{ borderRadius: 16, background: 'rgba(255,180,50,0.07)', border: '1px solid rgba(255,180,50,0.28)', padding: '20px 24px', marginBottom: 28 }}>
+        <div style={{ fontSize: 'clamp(14px,2vw,16px)', fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,180,50,0.85)', marginBottom: 10 }}>
+          ✝️ {pt ? 'Eixo Histórico-Redentivo' : 'Redemptive-Historical Axis'}
+        </div>
+        <p style={{ fontSize: 'clamp(16px,2.4vw,19px)', color: 'rgba(255,230,180,0.90)', lineHeight: 1.80, margin: 0 }}>
+          {pt
+            ? 'O protoevangelium (Gn 3:15) percorre toda a história redentiva: Gn 49:10, Is 7:14, Mq 5:2, até Gl 4:4: "Deus enviou Seu Filho, nascido de mulher." As vestes de pele (3:21) prefiguram a justificação: Deus cobre a vergonha dos pecadores com a justiça de Cristo (Rm 3:21–22). O jardim fechado (3:24) aponta para o jardim aberto da nova criação (Ap 22:1–5). "Onde estás tu?" (3:9) antecipa "eu sou o caminho" (Jo 14:6). Toda família que conhece Gênesis 3 conhece seu próprio diagnóstico — e toda família que conhece Cristo conhece sua única cura.'
+            : 'The protoevangelium (Gen 3:15) runs through all of redemptive history: Gen 49:10, Isa 7:14, Mic 5:2, until Gal 4:4: "God sent His Son, born of woman." The skin garments (3:21) prefigure justification: God covers the sinners\' shame with Christ\'s righteousness (Rom 3:21–22). The closed garden (3:24) points to the open garden of the new creation (Rev 22:1–5). "Where are you?" (3:9) anticipates "I am the way" (John 14:6). Every family that knows Genesis 3 knows its own diagnosis — and every family that knows Christ knows its only cure.'}
+        </p>
+      </div>
+
+      {/* APLICAÇÕES POR PAPEL */}
+      <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.09)', padding: 'clamp(18px,3vw,26px)', marginBottom: 28 }}>
+        <div style={{ fontSize: 'clamp(14px,2vw,16px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,180,50,0.70)', marginBottom: 18, textAlign: 'center' }}>
+          🎯 {pt ? 'Aplicações por Papel na Família' : 'Applications by Family Role'}
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(220px,1fr))', gap: 12 }}>
+          {APPS_FAMILIA.map(a => (
+            <div key={a.role} style={{ borderRadius: 12, background: 'rgba(255,180,50,0.07)', border: '1px solid rgba(255,180,50,0.20)', padding: '14px 16px' }}>
+              <div style={{ fontSize: 'clamp(16px,2.4vw,19px)', fontWeight: 800, color: 'rgba(255,180,50,0.95)', marginBottom: 6 }}>{a.icon} {a.role}</div>
+              <div style={{ fontSize: 'clamp(15px,2.2vw,17px)', color: 'rgba(255,255,255,0.78)', lineHeight: 1.60 }}>{a.text}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* DINÂMICA FAMILIAR */}
+      <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.09)', padding: 'clamp(18px,3vw,26px)', marginBottom: 28 }}>
+        <div style={{ fontSize: 'clamp(14px,2vw,16px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,180,50,0.70)', marginBottom: 18, textAlign: 'center' }}>
+          🎲 {pt ? 'Dinâmica Familiar — 6 Atividades' : 'Family Activities — 6 Activities'}
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))', gap: 10 }}>
+          {ACTIVITIES.map(a => (
+            <div key={a.n} style={{ borderRadius: 12, background: 'rgba(255,180,50,0.07)', border: '1px solid rgba(255,180,50,0.20)', padding: '12px 14px', display: 'flex', gap: 10 }}>
+              <div style={{ fontSize: 'clamp(18px,2.4vw,22px)', lineHeight: 1.2 }}>{a.icon}</div>
+              <div style={{ fontSize: 'clamp(15px,2.2vw,17px)', color: 'rgba(255,255,255,0.82)', lineHeight: 1.60 }}><span style={{ fontWeight: 800, color: 'rgba(255,200,80,0.90)' }}>{a.n}. </span>{a.text}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* AUTORES */}
+      <div style={{ borderRadius: 16, background: 'rgba(80,200,255,0.06)', border: '1px solid rgba(80,200,255,0.20)', padding: '18px 22px', marginBottom: 28 }}>
+        <div style={{ fontSize: 'clamp(14px,2vw,16px)', fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(80,200,255,0.80)', marginBottom: 14 }}>
+          📚 {pt ? 'Autores Reformados' : 'Reformed Authors'}
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+          {[
+            { name: 'J.C. Ryle', work: 'The Duties of Parents', text: pt ? '"Não negligencie dizer a seus filhos que eles são pecadores. Este não é um ensinamento cruel — é o mais misericordioso de todos, pois abre o caminho para o evangelho. A criança que conhece seu pecado pode conhecer seu Salvador."' : '"Do not neglect to tell your children they are sinners. This is not cruel teaching — it is the most merciful of all, for it opens the way to the gospel. The child who knows their sin can know their Savior."' },
+            { name: 'Joel R. Beeke', work: 'Parenting by God\'s Promises', text: pt ? '"Os pais cristãos não devem ter ilusões sobre a natureza de seus filhos — nem sobre a própria. Somos todos Adão, todos fugindo de Deus. A graça acontece quando paramos de costurar folhas e aceitamos as vestes que Deus prepara."' : '"Christian parents should have no illusions about their children\'s nature — nor about their own. We are all Adam, all fleeing from God. Grace happens when we stop sewing leaves and accept the garments God prepares."' },
+            { name: 'Thomas Watson', work: 'A Body of Divinity', text: pt ? '"O pecado original é a corrupção de toda a natureza do homem — transmitido a toda a sua descendência. E contudo, maravilha das maravilhas, Deus já tinha preparado o remédio antes de a doença aparecer: a semente da mulher."' : '"Original sin is the corruption of the whole nature of man — transmitted to all his descendants. And yet, wonder of wonders, God had already prepared the remedy before the disease appeared: the seed of the woman."' },
+          ].map((a, i) => (
+            <div key={i} style={{ background: 'rgba(0,0,0,0.20)', borderRadius: 10, padding: '12px 16px', borderLeft: `3px solid ${blue}` }}>
+              <div style={{ fontSize: 'clamp(14px,2vw,16px)', fontWeight: 800, color: blue, marginBottom: 4 }}>{a.name} <span style={{ fontWeight: 400, color: 'rgba(255,255,255,0.40)', fontStyle: 'italic' }}>{a.work}</span></div>
+              <p style={{ fontSize: 'clamp(15px,2.2vw,17px)', color: 'rgba(255,255,255,0.82)', lineHeight: 1.70, margin: 0, fontStyle: 'italic' }}>{a.text}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* CONCLUSÃO */}
+      <div style={{ borderRadius: 16, background: 'linear-gradient(135deg,rgba(255,100,100,0.10),rgba(52,211,153,0.07))', border: '1.5px solid rgba(255,180,50,0.28)', padding: '20px 24px' }}>
+        <div style={{ fontSize: 'clamp(14px,2vw,16px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,180,50,0.85)', marginBottom: 10 }}>🏁 {pt ? 'Conclusão' : 'Conclusion'}</div>
+        <p style={{ fontSize: 'clamp(16px,2.4vw,19px)', color: 'rgba(255,255,255,0.85)', lineHeight: 1.75, margin: 0 }}>
+          {pt
+            ? 'Toda família carrega as marcas de Gênesis 3 — a vergonha que se esconde, a culpa que acusa, o relacionamento que fragmentou. Mas Gênesis 3 não termina no esconderijo: termina com Deus vestindo os que falharam. A mesma graça que cobriu Adão e Eva cobre sua família hoje — não por folhas de figueira que vocês costuraram, mas pela justiça de Cristo que Deus providenciou. Confessem, recebam a cobertura, e vivam como família que conhece tanto o peso do pecado quanto a profundidade da graça.'
+            : 'Every family carries the marks of Genesis 3 — the shame that hides, the guilt that accuses, the relationship that fragmented. But Genesis 3 does not end in the hiding place: it ends with God clothing those who failed. The same grace that covered Adam and Eve covers your family today — not by fig leaves you sewed, but by Christ\'s righteousness that God provided. Confess, receive the covering, and live as a family that knows both the weight of sin and the depth of grace.'}
+        </p>
+      </div>
+    </div>
+  );
+}
+
+// ─── Aconselhamento Bíblico Gênesis 4 ────────────────────────────────
+function AconselhamentoBiblicoGenesis4FamiliaSection({ pt }: { pt: boolean }) {
+  const amber  = 'rgba(255,180,50,1)';
+  const amberL = 'rgba(255,180,50,0.10)';
+  const amberB = 'rgba(255,180,50,0.28)';
+  const green  = 'rgba(52,211,153,1)';
+  const greenL = 'rgba(52,211,153,0.10)';
+  const greenB = 'rgba(52,211,153,0.28)';
+  const blue   = 'rgba(80,200,255,1)';
+  const blueL  = 'rgba(80,200,255,0.10)';
+  const blueB  = 'rgba(80,200,255,0.28)';
+  const purple = 'rgba(180,120,255,1)';
+  const purpleL= 'rgba(180,120,255,0.10)';
+  const purpleB= 'rgba(180,120,255,0.28)';
+  const pink   = 'rgba(255,120,160,1)';
+  const pinkL  = 'rgba(255,120,160,0.10)';
+  const pinkB  = 'rgba(255,120,160,0.28)';
+
+  const titleSz = 'clamp(18px,2.8vw,22px)';
+  const bodySz  = 'clamp(16px,2.4vw,19px)';
+  const labelSz = 'clamp(14px,2vw,16px)';
+  const smallSz = 'clamp(13px,1.7vw,15px)';
+
+  const fn = (n: number) => (
+    <sup style={{ fontSize: '0.70em', fontWeight: 900, color: amber, marginLeft: 2, verticalAlign: 'super', lineHeight: 0 }}>[{n}]</sup>
+  );
+
+  const sectionCard = (accent: string, accentL: string, accentB: string, emoji: string, heading: string, theme: string, children: React.ReactNode) => (
+    <div style={{ borderRadius: 16, background: accentL, border: `1.5px solid ${accentB}`, padding: '22px 24px', marginBottom: 20 }}>
+      <div style={{ fontSize: labelSz, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: accent, marginBottom: 8 }}>{emoji} {heading}</div>
+      <div style={{ fontSize: labelSz, color: 'rgba(255,255,255,0.55)', marginBottom: 14, fontStyle: 'italic' }}>{theme}</div>
+      {children}
+    </div>
+  );
+
+  const quoteBox = (text: string, author: string, accent: string, fnNum: number) => (
+    <div style={{ background: 'rgba(0,0,0,0.25)', borderLeft: `3px solid ${accent}`, borderRadius: '0 8px 8px 0', padding: '12px 16px', marginBottom: 12 }}>
+      <p style={{ fontSize: bodySz, color: 'rgba(255,255,255,0.82)', lineHeight: 1.7, margin: '0 0 6px 0', fontStyle: 'italic' }}>"{text}"</p>
+      <div style={{ fontSize: labelSz, color: accent, fontWeight: 700 }}>— {author}{fn(fnNum)}</div>
+    </div>
+  );
+
+  const questionsBox = (questions: string[], accent: string) => (
+    <div style={{ background: 'rgba(0,0,0,0.20)', borderRadius: 10, padding: '14px 18px', marginTop: 14 }}>
+      <div style={{ fontSize: labelSz, fontWeight: 900, color: accent, letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 10 }}>
+        {pt ? 'Perguntas para o Conselheiro' : 'Counselor Questions'}
+      </div>
+      <ol style={{ margin: 0, paddingLeft: 20 }}>
+        {questions.map((q, i) => (
+          <li key={i} style={{ fontSize: bodySz, color: 'rgba(255,255,255,0.82)', lineHeight: 1.7, marginBottom: 8 }}>{q}</li>
+        ))}
+      </ol>
+    </div>
+  );
+
+  const REFS = [
+    { n: 1,  abnt: 'POWLISON, David. Seeing with New Eyes: Counseling and the Human Condition through the Lens of Scripture. Phillipsburg: Presbyterian and Reformed, 2003.' },
+    { n: 2,  abnt: 'ADAMS, Jay E. Competent to Counsel: Introduction to Nouthetic Counseling. Grand Rapids: Zondervan, 1970.' },
+    { n: 3,  abnt: 'TRIPP, Paul David. Instruments in the Redeemer\'s Hands: People in Need of Change Helping People in Need of Change. Phillipsburg: Presbyterian and Reformed, 2002.' },
+    { n: 4,  abnt: 'WELCH, Edward T. Shame Interrupted: How God Lifts the Pain of Worthlessness and Rejection. Greensboro: New Growth Press, 2012.' },
+    { n: 5,  abnt: 'BEEKE, Joel R. Parenting by God\'s Promises: How to Raise Children in the Covenant of Grace. Orlando: Reformation Trust, 2011.' },
+    { n: 6,  abnt: 'POWLISON, David. Good and Angry: Redeeming Anger, Irritability, Complaining, and Bitterness. Greensboro: New Growth Press, 2016.' },
+    { n: 7,  abnt: 'BAUCHAM, Voddie, Jr. Family Driven Faith: Doing What It Takes to Raise Sons and Daughters Who Walk with God. Wheaton: Crossway, 2007.' },
+    { n: 8,  abnt: 'ADAMS, Jay E. A Theology of Christian Counseling: More Than Redemption. Grand Rapids: Zondervan, 1979.' },
+    { n: 9,  abnt: 'TRIPP, Paul David. Age of Opportunity: A Biblical Guide to Parenting Teens. Phillipsburg: Presbyterian and Reformed, 1997.' },
+    { n: 10, abnt: 'WATSON, Thomas. A Body of Divinity. London, 1692. Reprint: Banner of Truth Trust, 1958.' },
+    { n: 11, abnt: 'LANE, Timothy S.; TRIPP, Paul David. How People Change. Greensboro: New Growth Press, 2008.' },
+    { n: 12, abnt: 'WELCH, Edward T. Side by Side: Walking with Others in Wisdom and Love. Wheaton: Crossway, 2015.' },
+  ];
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
+
+      {/* HERO */}
+      <div style={{ borderRadius: 16, background: 'linear-gradient(135deg,rgba(255,100,100,0.15),rgba(255,180,50,0.10))', border: `1.5px solid ${amberB}`, padding: '28px 28px 22px', marginBottom: 20 }}>
+        <div style={{ fontSize: 'clamp(28px,4vw,38px)', marginBottom: 10 }}>🐍💔</div>
+        <div style={{ fontSize: 'clamp(20px,3.2vw,26px)', fontWeight: 900, color: amber, marginBottom: 8, lineHeight: 1.3 }}>
+          {pt ? 'Aconselhamento Bíblico · Gênesis 3:1–24' : 'Biblical Counseling · Genesis 3:1–24'}
+        </div>
+        <div style={{ fontSize: titleSz, fontWeight: 700, color: green, marginBottom: 14 }}>
+          {pt ? 'Recursos para o Conselheiro de Casais, Famílias e Indivíduos' : 'Resources for the Couples, Family and Individual Counselor'}
+        </div>
+        <p style={{ fontSize: bodySz, color: 'rgba(255,255,255,0.80)', lineHeight: 1.75, margin: 0 }}>
+          {pt
+            ? 'Este guia oferece estrutura clínico-pastoral para conselheiros bíblicos que trabalham com famílias marcadas pelo pecado, vergonha e esperança, a partir dos temas centrais de Gênesis 3:1–24: a tentação pela dúvida, o esconderijo da vergonha e a graça que busca e veste. As citações dos autores são identificadas por notas de rodapé numeradas; as referências ABNT completas constam ao final.'
+            : 'This guide offers a clinical-pastoral framework for biblical counselors working with families marked by sin, shame and hope, drawn from the central themes of Genesis 3:1–24: temptation by doubt, the hiding of shame, and the grace that seeks and clothes. Author citations are identified by numbered footnotes; full ABNT references appear at the end.'}
+        </p>
+      </div>
+
+      {/* TRIAGE */}
+      <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.12)', padding: '22px 24px', marginBottom: 20 }}>
+        <div style={{ fontSize: labelSz, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.55)', marginBottom: 16 }}>
+          🎯 {pt ? 'Problemas que esta Perícope Endereça — Guia de Triagem para o Conselheiro' : 'Problems this Pericope Addresses — Counselor Triage Guide'}
+        </div>
+        <p style={{ fontSize: smallSz, color: 'rgba(255,255,255,0.50)', lineHeight: 1.65, margin: '0 0 16px 0', fontStyle: 'italic' }}>
+          {pt
+            ? 'Gênesis 3:1–24 é a perícope da queda e da graça: a tentação que começa com a dúvida sobre a Palavra de Deus, a vergonha e o esconderijo como resposta ao pecado, e a busca de Deus com o protoevangelium e as vestes de pele. O conselheiro pode utilizá-la quando o aconselhando enfrenta qualquer um dos cenários abaixo:'
+            : 'Genesis 3:1–24 is the pericope of the fall and grace: the temptation that begins with doubt about God\'s Word, shame and hiding as responses to sin, and God\'s seeking with the protoevangelium and skin garments. The counselor may use it when the counselee faces any of the scenarios below:'}
+        </p>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(240px,1fr))', gap: 10 }}>
+          {[
+            { icon: '😳', cor: amber,  titulo: pt ? 'Vergonha Crônica — Família Marcada pelo Passado' : 'Chronic Shame — Family Marked by the Past',
+              desc: pt ? 'Famílias ou indivíduos que carregam vergonha crônica — por pecados do passado, traumas ou herança familiar. Gn 3:21 é o texto diagnóstico e terapêutico: Deus mesmo veste os envergonhados. Vergonha não é a última palavra.' : 'Families or individuals carrying chronic shame — from past sins, traumas or family legacy. Gen 3:21 is the diagnostic and therapeutic text: God himself clothes the ashamed. Shame is not the final word.' },
+            { icon: '🙈', cor: blue,   titulo: pt ? 'Mecanismo do Esconderijo — Nunca Confessa Erros' : 'Hiding Mechanism — Never Confesses Mistakes',
+              desc: pt ? 'Filhos ou cônjuges que nunca confessam erros — afastamento silencioso, mentira por omissão, aparência de perfeição. Gn 3:8 diagnostica: o esconderijo não apaga o pecado, o aprofunda. A cultura de confissão no lar precisa ser deliberadamente cultivada.' : 'Children or spouses who never confess mistakes — silent withdrawal, lying by omission, appearance of perfection. Gen 3:8 diagnoses: hiding does not erase sin, it deepens it. A culture of confession in the home must be deliberately cultivated.' },
+            { icon: '👉', cor: green,  titulo: pt ? 'Culpa que Fragmenta — Bode Expiatório na Família' : 'Guilt that Fragments — Scapegoat in the Family',
+              desc: pt ? 'Padrão de acusação mútua onde cada membro culpa o outro por problemas — replicando o padrão de Gn 3:12–13 (Adão culpa Eva, Eva culpa a serpente). O conselheiro nomeia o padrão de Gênesis 3 e apresenta o segundo Adão que não culpou — mas assumiu.' : 'Pattern of mutual accusation where each member blames the other for problems — replicating the pattern of Gen 3:12–13 (Adam blames Eve, Eve blames the serpent). The counselor names the Genesis 3 pattern and presents the second Adam who did not blame — but assumed.' },
+            { icon: '🧬', cor: purple, titulo: pt ? 'Herança de Disfunção — Padrões Geracionais de Pecado' : 'Dysfunctional Legacy — Generational Patterns of Sin',
+              desc: pt ? 'Famílias onde os mesmos padrões de pecado (adição, violência, abandono, perfeccionismo) se repetem de geração em geração. Gn 3 é o diagnóstico da origem: a queda corrompeu "toda a posteridade" (CFB 6.2). Mas Gn 3:15 é a promessa: a semente da mulher quebrará o ciclo.' : 'Families where the same sin patterns (addiction, violence, abandonment, perfectionism) repeat from generation to generation. Gen 3 is the origin diagnosis: the fall corrupted "all their descendants" (WCF 6.2). But Gen 3:15 is the promise: the woman\'s seed will break the cycle.' },
+            { icon: '🤔', cor: pink,   titulo: pt ? 'Dúvida Corrosiva sobre Deus — "Será que Deus disse?"' : 'Corrosive Doubt about God — "Did God Actually Say?"',
+              desc: pt ? 'Aconselhando que questiona a bondade, a justiça ou a fidelidade de Deus diante de sofrimento ou fracasso familiar. Ha\'af ki amar Elohim (Gn 3:1) é o diagnóstico: a serpente usa a dúvida como portal para a desobediência. O conselheiro ancora na Palavra, não na experiência.' : 'Counselee who questions God\'s goodness, justice or faithfulness in the face of family suffering or failure. Ha\'af ki amar Elohim (Gen 3:1) is the diagnosis: the serpent uses doubt as a gateway to disobedience. The counselor anchors in the Word, not in experience.' },
+            { icon: '😶', cor: amber,  titulo: pt ? 'Família sem Esperança — Só Diagnóstico, Sem Protoevangelium' : 'Family without Hope — Only Diagnosis, No Protoevangelium',
+              desc: pt ? 'Famílias que conhecem o problema (somos pecadores) mas não a solução (há uma semente que esmaga a serpente). O conselheiro que apresenta apenas Gn 3:1–13 sem Gn 3:15 e 3:21 está prescrevendo diagnóstico sem remédio. Gênesis 3 termina com graça, não com juízo.' : 'Families who know the problem (we are sinners) but not the solution (there is a seed that crushes the serpent). The counselor who presents only Gen 3:1–13 without Gen 3:15 and 3:21 is prescribing diagnosis without remedy. Genesis 3 ends with grace, not judgment.' },
+          ].map((p2, i) => (
+            <div key={i} style={{ background: `${p2.cor}0D`, border: `1px solid ${p2.cor}33`, borderRadius: 12, padding: '14px 16px' }}>
+              <div style={{ fontSize: labelSz, fontWeight: 900, color: p2.cor, marginBottom: 6 }}>{p2.icon} {p2.titulo}</div>
+              <div style={{ fontSize: smallSz, color: 'rgba(255,255,255,0.78)', lineHeight: 1.65 }}>{p2.desc}</div>
+            </div>
+          ))}
+        </div>
+
+        <div style={{ marginTop: 18, borderRadius: 12, background: 'rgba(255,180,50,0.07)', border: '1px solid rgba(255,180,50,0.28)', padding: '16px 20px' }}>
+          <div style={{ fontSize: labelSz, fontWeight: 900, color: amber, letterSpacing: '0.16em', textTransform: 'uppercase', marginBottom: 10 }}>
+            ✝️ {pt ? 'Enquadramento Histórico-Redentivo para o Conselheiro' : 'Redemptive-Historical Frame for the Counselor'}
+          </div>
+          <p style={{ fontSize: bodySz, color: 'rgba(255,230,180,0.88)', lineHeight: 1.80, margin: 0 }}>
+            {pt
+              ? 'O protoevangelium (Gn 3:15) é a primeira promessa messiânica da Escritura — e percorre toda a história redentiva até Gl 4:4: "Deus enviou Seu Filho, nascido de mulher." As vestes de pele (3:21) prefiguram Rm 3:21–22: "a justiça de Deus por meio da fé em Jesus Cristo." O jardim fechado (3:24) aponta para o jardim aberto (Ap 22:1–5). "Onde estás tu?" (3:9) antecipa Jo 14:6: "eu sou o caminho." O conselheiro que usa Gênesis 3 sem este horizonte cristológico está diagnosticando o problema sem apresentar a cura. Toda família em crise precisa ouvir que o Deus que disse "Onde estás tu?" ainda busca — e que o sangue de Cristo fala coisas melhores que o pecado (Hb 12:24).'
+              : 'The protoevangelium (Gen 3:15) is the first messianic promise of Scripture — and runs through all of redemptive history until Gal 4:4: "God sent His Son, born of woman." The skin garments (3:21) prefigure Rom 3:21–22: "the righteousness of God through faith in Jesus Christ." The closed garden (3:24) points to the open garden (Rev 22:1–5). "Where are you?" (3:9) anticipates John 14:6: "I am the way." The counselor who uses Genesis 3 without this Christological horizon is diagnosing the problem without presenting the cure. Every family in crisis needs to hear that the God who said "Where are you?" still seeks — and that the blood of Christ speaks better things than sin (Heb 12:24).'}
+          </p>
+        </div>
+      </div>
+
+      {/* SEÇÃO 1 — Tentação e Dúvida */}
+      {sectionCard(amber, amberL, amberB, '🐍',
+        pt ? 'Seção 1 — A Tentação pela Dúvida: Ha\'af ki Amar Elohim' : 'Section 1 — Temptation by Doubt: Ha\'af ki Amar Elohim',
+        pt ? 'Gênesis 3:1–6 — "será que Deus disse?"; distorção, exagero, reinterpretação do limite como privação' : 'Genesis 3:1–6 — "did God actually say?"; distortion, exaggeration, reinterpretation of the limit as deprivation',
+        <>
+          <ul style={{ margin: '0 0 14px 0', paddingLeft: 20 }}>
+            {[
+              pt ? 'Ha\'af ki amar Elohim — o prefixo ha\'af implica surpresa incrédula: a serpente não nega Deus frontalmente, questiona Sua bondade sutilmente. A estratégia é sempre a mesma: distorcer ("de nenhuma árvore" em vez de "de uma"), exagerar a restrição, reinterpretar o limite como privação. O conselheiro que trabalha com aconselhando ressentido com Deus frequentemente encontra este padrão: o problema não é a ausência de evidência da bondade de Deus — é a narrativa distorcida que enquadra Deus como o grande privador.' : 'Ha\'af ki amar Elohim — the prefix ha\'af implies incredulous surprise: the serpent does not frontally deny God, it subtly questions His goodness. The strategy is always the same: distort ("from no tree" instead of "from one"), exaggerate the restriction, reinterpret the limit as deprivation. The counselor working with a counselee resentful toward God frequently finds this pattern: the problem is not the absence of evidence of God\'s goodness — it is the distorted narrative that frames God as the great depriver.',
+              pt ? 'A queda começa na mente antes de chegar à mão — "a mulher viu que a árvore era boa para comer, agradável aos olhos e desejável para se adquirir entendimento" (3:6). Três portas: apetite (boa para comer), estética (agradável aos olhos), orgulho intelectual (adquirir entendimento). 1Jo 2:16 reconhece o padrão: "a concupiscência da carne, a concupiscência dos olhos e a soberba da vida." O conselheiro identifica qual das três portas está sendo usada no caso específico do aconselhando.' : 'The fall begins in the mind before reaching the hand — "the woman saw that the tree was good for food, pleasing to the eye, and desirable for gaining wisdom" (3:6). Three doors: appetite (good for food), aesthetics (pleasing to the eye), intellectual pride (gaining wisdom). 1 John 2:16 recognizes the pattern: "the lust of the flesh, the lust of the eyes, and the pride of life." The counselor identifies which of the three doors is being used in the counselee\'s specific case.',
+            ].map((item, i) => (
+              <li key={i} style={{ fontSize: bodySz, color: 'rgba(255,255,255,0.82)', lineHeight: 1.7, marginBottom: 6 }}>{item}</li>
+            ))}
+          </ul>
+          {quoteBox(
+            pt ? 'O diabo nunca diz "peque". Ele diz "questione". A dúvida é o portal por onde o pecado entra em todo coração humano. O conselheiro que não nomeia a dúvida como ponto de entrada da tentação está trabalhando nos galhos em vez de na raiz. A pergunta da serpente ainda ressoa: "Será que Deus disse?"'
+               : 'The devil never says "sin." He says "question." Doubt is the gateway through which sin enters every human heart. The counselor who does not name doubt as the entry point of temptation is working on the branches instead of the root. The serpent\'s question still echoes: "Did God actually say?"',
+            'Thomas Watson', amber, 10)}
+          {quoteBox(
+            pt ? 'O conselheiro precisa ajudar o aconselhando a examinar a narrativa que ele tem sobre Deus: é o Deus de Gênesis 2 — que provê 99% antes de restringir 1% — ou é o Deus distorcido pela serpente, que só restringe? A percepção distorcida de Deus é o diagnóstico primário de toda recaída espiritual e moral.'
+               : 'The counselor needs to help the counselee examine the narrative they have about God: is it the God of Genesis 2 — who provides 99% before restricting 1% — or is it the God distorted by the serpent, who only restricts? The distorted perception of God is the primary diagnosis of every spiritual and moral relapse.',
+            'David Powlison', green, 1)}
+          {quoteBox(
+            pt ? 'Quando um adolescente questiona as regras dos pais com "por que vocês são tão rigorosos?", o conselheiro reconhece o padrão de Gênesis 3:1. A resposta pastoral não é defensiva — é "boa pergunta: vamos olhar juntos o que Deus diz, e o que seus pais têm provido antes de impor o limite."'
+               : 'When an adolescent questions parental rules with "why are you so strict?", the counselor recognizes the Genesis 3:1 pattern. The pastoral response is not defensive — it is "good question: let\'s look together at what God says, and what your parents have provided before imposing the limit."',
+            'Paul David Tripp', blue, 9)}
+          <div style={{ background: 'rgba(255,180,50,0.07)', border: '1px solid rgba(255,180,50,0.25)', borderRadius: 10, padding: '12px 16px', marginBottom: 14 }}>
+            <div style={{ fontSize: labelSz, fontWeight: 800, color: amber, marginBottom: 6 }}>✝️ {pt ? 'Perspectiva Histórico-Redentiva' : 'Redemptive-Historical Perspective'}</div>
+            <p style={{ fontSize: smallSz, color: 'rgba(255,230,180,0.88)', lineHeight: 1.75, margin: 0 }}>
+              {pt
+                ? 'Cristo foi tentado "em tudo como nós, mas sem pecado" (Hb 4:15). No deserto, a tentação seguiu o mesmo padrão de Gn 3:6: pedras em pão (apetite), saltar do templo (prestígio/orgulho), os reinos do mundo (poder). Cristo respondeu em cada ponto com "Está escrito" — ancorando na Palavra, não na experiência. O conselheiro que equipa o aconselhando a responder à tentação com a Palavra está seguindo o padrão de Cristo. A diferença entre Adão e Cristo não foi a intensidade da tentação — foi a âncora: Adão substituiu a Palavra pela experiência; Cristo não.'
+                : 'Christ was tempted "in every way, just as we are — yet he did not sin" (Heb 4:15). In the desert, the temptation followed the same pattern as Gen 3:6: stones to bread (appetite), leap from the temple (prestige/pride), the kingdoms of the world (power). Christ responded each time with "It is written" — anchoring in the Word, not in experience. The counselor who equips the counselee to respond to temptation with the Word is following Christ\'s pattern. The difference between Adam and Christ was not the intensity of the temptation — it was the anchor: Adam substituted experience for the Word; Christ did not.'}
+            </p>
+          </div>
+          {questionsBox([
+            pt ? '"Qual é a narrativa que você tem sobre Deus nesta situação — Ele é o que provê ou o que priva? De onde veio essa narrativa? Ela está alinhada com o que a Escritura diz sobre Ele?"'
+               : '"What is the narrative you have about God in this situation — is He the one who provides or the one who deprives? Where did that narrative come from? Is it aligned with what Scripture says about Him?"',
+            pt ? '"Qual das três portas de Gênesis 3:6 é usada com mais frequência na sua tentação — o apetite físico, o apetite visual ou o orgulho intelectual? Como você pode reconhecer esse padrão antes de agir?"'
+               : '"Which of the three doors of Genesis 3:6 is used most frequently in your temptation — physical appetite, visual appetite or intellectual pride? How can you recognize this pattern before acting?"',
+            pt ? '"Quando a dúvida sobre a bondade de Deus aparece — \'será que Deus disse?\' — o que você faz com ela? Você a examina pela Escritura ou a alimenta com a experiência?"'
+               : '"When doubt about God\'s goodness appears — \'did God actually say?\' — what do you do with it? Do you examine it by Scripture or feed it with experience?"',
+          ], amber)}
+        </>
+      )}
+
+      {/* SEÇÃO 2 — Esconderijo e Confissão */}
+      {sectionCard(green, greenL, greenB, '🙈',
+        pt ? 'Seção 2 — O Esconderijo: Cultura de Confissão na Família' : 'Section 2 — The Hiding Place: Culture of Confession in the Family',
+        pt ? 'Gênesis 3:7–10 — vergonha, folhas de figueira, esconderijo; diagnóstico dos três movimentos do pecado' : 'Genesis 3:7–10 — shame, fig leaves, hiding; diagnosis of the three movements of sin',
+        <>
+          <ul style={{ margin: '0 0 14px 0', paddingLeft: 20 }}>
+            {[
+              pt ? 'O pecado produz três movimentos trágicos e previsíveis: (1) vergonha — a nakedness que era inocência vira vulnerabilidade; (2) autocoberta — folhas de figueira como solução humana para o problema da vergonha (sempre insuficiente); (3) esconderijo — afastamento de Deus e do cônjuge. O conselheiro que vê um cônjuge que "se fechou" ou um filho que "não conta nada" está vendo a replicação exata de Gênesis 3:7–8. O padrão não mudou.' : 'Sin produces three tragic and predictable movements: (1) shame — the nakedness that was innocence becomes vulnerability; (2) self-covering — fig leaves as the human solution to the problem of shame (always insufficient); (3) hiding — withdrawal from God and from the spouse. The counselor who sees a spouse who "shut down" or a child who "tells nothing" is seeing the exact replication of Genesis 3:7–8. The pattern has not changed.',
+              pt ? 'A culpa que acusa — Adão culpa Eva, Eva culpa a serpente (3:12–13) — é o quarto movimento que fragmenta os relacionamentos. O bode expiatório é a resposta natural de alguém que não quer assumir responsabilidade. O conselheiro identifica qual membro da família está exercendo o papel de "serpente" — o bode expiatório de toda culpa — e desmonta o padrão de Gênesis 3 com o padrão de Cristo: Ele não culpou, assumiu.' : 'The guilt that accuses — Adam blames Eve, Eve blames the serpent (3:12–13) — is the fourth movement that fragments relationships. Scapegoating is the natural response of someone who does not want to take responsibility. The counselor identifies which family member is playing the role of "serpent" — the scapegoat of all guilt — and dismantles the Genesis 3 pattern with Christ\'s pattern: He did not blame, He assumed.',
+            ].map((item, i) => (
+              <li key={i} style={{ fontSize: bodySz, color: 'rgba(255,255,255,0.82)', lineHeight: 1.7, marginBottom: 6 }}>{item}</li>
+            ))}
+          </ul>
+          {quoteBox(
+            pt ? 'Os pais que fingem que seus filhos não são pecadores não estão sendo gentis — estão sendo tragicamente enganosos. A graça começa com o diagnóstico honesto do pecado. A família que não pode falar sobre pecado não pode falar sobre graça. E a família que não pode falar sobre graça está vivendo no esconderijo de Gênesis 3.'
+               : 'Parents who pretend their children are not sinners are not being kind — they are being tragically deceptive. Grace begins with an honest diagnosis of sin. The family that cannot talk about sin cannot talk about grace. And the family that cannot talk about grace is living in the hiding place of Genesis 3.',
+            'Joel R. Beeke', green, 5)}
+          {quoteBox(
+            pt ? 'O aconselhando que nunca confessa é o aconselhando que ainda está costurando folhas de figueira. O conselheiro sabe que folhas de figueira nunca cobriram ninguém — Deus mesmo precisou matar um animal. A confissão não é o caminho para o esconderijo: é o caminho para fora dele.'
+               : 'The counselee who never confesses is the counselee who is still sewing fig leaves. The counselor knows that fig leaves never covered anyone — God himself needed to kill an animal. Confession is not the path to the hiding place: it is the path out of it.',
+            'Paul David Tripp', amber, 3)}
+          {quoteBox(
+            pt ? 'A vergonha crônica — a sensação de que você é fundamentalmente inadequado, não apenas de que fez algo errado — tem sua origem em Gênesis 3:7. A boa notícia é que o mesmo capítulo que diagnostica a vergonha apresenta o remédio: Deus veste os envergonhados. A pergunta terapêutica não é "o que você fez?" — é "o que Deus fez em 3:21?"'
+               : 'Chronic shame — the feeling that you are fundamentally inadequate, not merely that you did something wrong — has its origin in Genesis 3:7. The good news is that the same chapter that diagnoses shame presents the remedy: God clothes the ashamed. The therapeutic question is not "what did you do?" — but "what did God do in 3:21?"',
+            'Edward T. Welch', blue, 4)}
+          <div style={{ background: 'rgba(255,180,50,0.07)', border: '1px solid rgba(255,180,50,0.25)', borderRadius: 10, padding: '12px 16px', marginBottom: 14 }}>
+            <div style={{ fontSize: labelSz, fontWeight: 800, color: amber, marginBottom: 6 }}>✝️ {pt ? 'Perspectiva Histórico-Redentiva' : 'Redemptive-Historical Perspective'}</div>
+            <p style={{ fontSize: smallSz, color: 'rgba(255,230,180,0.88)', lineHeight: 1.75, margin: 0 }}>
+              {pt
+                ? 'Cristo "veio a casa" no Getsêmani — para o lugar de sofrimento e confronto com o pecado — sem se esconder. Na Cruz, Ele assumiu toda a vergonha de Adão: "feito maldição por nós" (Gl 3:13), "exposto à vergonha" (Hb 12:2). Hb 4:16 convida: "cheguemos, pois, com confiança ao trono da graça" — o oposto de Gênesis 3:8. A família que pratica confissão não está apenas fazendo terapia — está praticando a liturgia do evangelho: saindo do esconderijo de Adão para o trono de graça que Cristo abriu.'
+                : 'Christ "came home" in Gethsemane — to the place of suffering and confrontation with sin — without hiding. On the Cross, He assumed all of Adam\'s shame: "becoming a curse for us" (Gal 3:13), "enduring shame" (Heb 12:2). Heb 4:16 invites: "let us then approach the throne of grace with confidence" — the opposite of Genesis 3:8. The family that practices confession is not merely doing therapy — it is practicing the liturgy of the gospel: coming out of Adam\'s hiding place into the throne of grace that Christ opened.'}
+            </p>
+          </div>
+          {questionsBox([
+            pt ? '"Quando você erra, qual é sua resposta automática — você confessa ou se esconde? O esconderijo toma que forma na sua vida — silêncio, ocupação, irritabilidade, distância emocional?"'
+               : '"When you make a mistake, what is your automatic response — do you confess or hide? What form does the hiding take in your life — silence, busyness, irritability, emotional distance?"',
+            pt ? '"Há alguém na família que é sistematicamente culpado por tudo — o bode expiatório de Gênesis 3? Como o conselheiro pode nomear esse padrão com cuidado pastoral?"'
+               : '"Is there someone in the family who is systematically blamed for everything — the scapegoat of Genesis 3? How can the counselor name this pattern with pastoral care?"',
+            pt ? '"Sua família tem cultura de confissão — onde erros podem ser admitidos sem terror, e a graça é a primeira resposta? O que impede essa cultura? O que seria necessário mudar?"'
+               : '"Does your family have a culture of confession — where mistakes can be admitted without terror, and grace is the first response? What prevents this culture? What would need to change?"',
+          ], green)}
+        </>
+      )}
+
+      {/* SEÇÃO 3 — Onde Estás Tu */}
+      {sectionCard(blue, blueL, blueB, '🔍',
+        pt ? 'Seção 3 — "Onde Estás Tu?": A Busca de Deus e a Graça que Veste — Centro ◉' : 'Section 3 — "Where Are You?": God\'s Seeking and the Grace that Clothes — Center ◉',
+        pt ? 'Gênesis 3:9,15,21 — "Onde estás tu?"; protoevangelium; vestes de pele como substituição e cobertura' : 'Genesis 3:9,15,21 — "Where are you?"; protoevangelium; skin garments as substitution and covering',
+        <>
+          <ul style={{ margin: '0 0 14px 0', paddingLeft: 20 }}>
+            {[
+              pt ? '"Onde estás tu?" (3:9) não é pergunta de ignorância omnisciência — é convite ao retorno. O Deus que deveria executar a sentença imediata (mot tamut) vem buscar o fugitivo. Este padrão — busca antes de julgamento — é o DNA de toda a Escritura: o pastor que deixa as 99 ovelhas (Lc 15:4), o pai que corre ao encontro do filho pródigo (Lc 15:20), o Filho que vem ao mundo para buscar o perdido (Lc 19:10). A família que usa "Onde estás tu?" como convite ao retorno — não como interrogatório — está praticando a linguagem de Gênesis 3:9.' : '"Where are you?" (3:9) is not a question of omniscient ignorance — it is an invitation to return. The God who should execute the immediate sentence (mot tamut) comes seeking the fugitive. This pattern — seeking before judgment — is the DNA of all Scripture: the shepherd who leaves the 99 sheep (Luke 15:4), the father who runs to meet the prodigal son (Luke 15:20), the Son who comes to the world to seek the lost (Luke 19:10). The family that uses "Where are you?" as an invitation to return — not as interrogation — is practicing the language of Genesis 3:9.',
+              pt ? 'Gn 3:21 é o evangelho em semente: Deus mata um animal (sacrifício involuntário, sangue derramado) para fazer vestes de pele (substituição — a morte do inocente cobre a vergonha do culpado). Este é o padrão de toda a história redentiva: Abel → Abraão e o cordeiro (22:13) → o sistema sacrificial levítico → "o Cordeiro de Deus que tira o pecado do mundo" (Jo 1:29). O conselheiro que usa 3:21 com o aconselhando não está apenas apresentando uma imagem bonita — está conectando-o à espinha dorsal da redenção.' : 'Gen 3:21 is the gospel in seed form: God kills an animal (involuntary sacrifice, shed blood) to make skin garments (substitution — the death of the innocent covers the guilt of the guilty). This is the pattern of all redemptive history: Abel → Abraham and the lamb (22:13) → the Levitical sacrificial system → "the Lamb of God who takes away the sin of the world" (John 1:29). The counselor who uses 3:21 with the counselee is not merely presenting a beautiful image — they are connecting them to the backbone of redemption.',
+            ].map((item, i) => (
+              <li key={i} style={{ fontSize: bodySz, color: 'rgba(255,255,255,0.82)', lineHeight: 1.7, marginBottom: 6 }}>{item}</li>
+            ))}
+          </ul>
+          {quoteBox(
+            pt ? 'Quando seus filhos erram e se escondem, a primeira frase que você diz determina se eles aprenderão a ver Deus como o Deus de Gênesis 3:9 ou como o Deus que eles temem. "Onde você está?" — como convite — cria uma família que pode confessar. "Como você ousou?" — como interrogatório — cria uma família que se esconde melhor.'
+               : 'When your children err and hide, the first sentence you say determines whether they will learn to see God as the God of Genesis 3:9 or as the God they fear. "Where are you?" — as invitation — creates a family that can confess. "How dare you?" — as interrogation — creates a family that hides better.',
+            'J.C. Ryle', blue, 2)}
+          {quoteBox(
+            pt ? 'A graça começa onde a desonestidade termina. O aconselhando que ainda está escondido — com folhas de figueira no lugar da confissão — ainda não chegou ao ponto onde Deus pode vesti-lo. As vestes de pele de Gênesis 3:21 estão disponíveis para todo fugitivo — mas só se ele sair do esconderijo.'
+               : 'Grace begins where dishonesty ends. The counselee who is still hiding — with fig leaves in place of confession — has not yet arrived at the point where God can clothe them. The skin garments of Genesis 3:21 are available to every fugitive — but only if they come out of hiding.',
+            'David Powlison', green, 6)}
+          {quoteBox(
+            pt ? 'A família que aprende a dizer "eu errei, me perdoa?" está saindo do esconderijo de Adão para o trono de graça. E a família que aprende a responder "eu te perdoo" está exercendo o único ministério que o mundo não pode oferecer: o ministério da substituição — o inocente cobrindo o culpado, como Deus fez em Gênesis 3:21.'
+               : 'The family that learns to say "I was wrong, will you forgive me?" is coming out of Adam\'s hiding place toward the throne of grace. And the family that learns to respond "I forgive you" is exercising the only ministry the world cannot offer: the ministry of substitution — the innocent covering the guilty, as God did in Genesis 3:21.',
+            'Paul David Tripp', amber, 11)}
+          <div style={{ background: 'rgba(80,200,255,0.10)', border: '1px solid rgba(80,200,255,0.25)', borderRadius: 10, padding: '12px 16px', marginBottom: 14 }}>
+            <div style={{ fontSize: labelSz, fontWeight: 800, color: blue, marginBottom: 6 }}>{pt ? 'Prática Clínica Pastoral' : 'Clinical Pastoral Practice'}</div>
+            <p style={{ fontSize: bodySz, color: 'rgba(255,255,255,0.80)', lineHeight: 1.7, margin: 0 }}>
+              {pt
+                ? 'O conselheiro pode perguntar: "Quando você erra, você corre para Deus ou foge dEle? O que acontece no lar quando alguém confessa — graça ou punição? Se seus filhos vissem você confessar um erro hoje, o que eles aprenderiam sobre o Deus que busca?" Esta é a avaliação diagnóstica da saúde espiritual do lar segundo Gênesis 3:9–21.'
+                : 'The counselor can ask: "When you err, do you run toward God or flee from Him? What happens in the home when someone confesses — grace or punishment? If your children saw you confess a mistake today, what would they learn about the God who seeks?" This is the diagnostic assessment of the spiritual health of the home according to Genesis 3:9–21.'}
+            </p>
+          </div>
+          <div style={{ background: 'rgba(255,180,50,0.07)', border: '1px solid rgba(255,180,50,0.25)', borderRadius: 10, padding: '12px 16px', marginBottom: 14 }}>
+            <div style={{ fontSize: labelSz, fontWeight: 800, color: amber, marginBottom: 6 }}>✝️ {pt ? 'Perspectiva Histórico-Redentiva' : 'Redemptive-Historical Perspective'}</div>
+            <p style={{ fontSize: smallSz, color: 'rgba(255,230,180,0.88)', lineHeight: 1.75, margin: 0 }}>
+              {pt
+                ? '"Onde estás tu?" (Gn 3:9) encontra sua resposta definitiva em Jo 14:6: "eu sou o caminho, a verdade e a vida." Cristo não apenas busca o fugitivo — Ele SE TORNA o caminho de volta. A serpente propôs um atalho para "ser como Deus" (3:5); Cristo É Deus e veio até nós para nos levar ao Pai. Hb 12:24 declara que o sangue de Cristo "fala coisas melhores do que o sangue de Abel" — onde Abel clama por justiça, Cristo clama por misericórdia. A família que confessa os pecados uns aos outros (Tg 5:16) está vivendo a liturgia de Gênesis 3:9–21 na comunidade do Novo Testamento.'
+                : '"Where are you?" (Gen 3:9) finds its definitive answer in John 14:6: "I am the way, the truth and the life." Christ does not merely seek the fugitive — He BECOMES the way back. The serpent proposed a shortcut to "be like God" (3:5); Christ IS God and came to us to bring us to the Father. Heb 12:24 declares that the blood of Christ "speaks better things than the blood of Abel" — where Abel cries for justice, Christ cries for mercy. The family that confesses sins to one another (James 5:16) is living the liturgy of Genesis 3:9–21 in New Testament community.'}
+            </p>
+          </div>
+          {questionsBox([
+            pt ? '"Quando você erra, você corre para Deus — como para um Pai que busca — ou foge dEle — como Adão? O que determina essa resposta: a percepção que você tem do caráter de Deus?"'
+               : '"When you err, do you run toward God — as to a Father who seeks — or flee from Him — as Adam did? What determines this response: the perception you have of God\'s character?"',
+            pt ? '"O que acontece nesta família quando alguém admite que errou? A resposta é graça, interrogatório ou punição? Essa resposta está moldando os seus filhos para fugirem de Deus ou para correrem a Ele?"'
+               : '"What happens in this family when someone admits they were wrong? Is the response grace, interrogation or punishment? Is this response shaping your children to flee from God or run to Him?"',
+            pt ? '"Gênesis 3:21 — Deus mata um animal para cobrir os envergonhados. O que isso significa para você pessoalmente agora — há alguma vergonha que você ainda não trouxe para a cobertura de Cristo?"'
+               : '"Genesis 3:21 — God kills an animal to cover the ashamed. What does this mean for you personally right now — is there any shame you have not yet brought under the covering of Christ?"',
+          ], blue)}
+        </>
+      )}
+
+      {/* SEÇÃO 4 — Vestes de Pele */}
+      {sectionCard(purple, purpleL, purpleB, '🩺',
+        pt ? 'Seção 4 — Vestes de Pele: A Família que Vive Coberta pela Graça' : 'Section 4 — Skin Garments: The Family that Lives Covered by Grace',
+        pt ? 'Síntese de Gênesis 3 — protoevangelium (3:15) + vestes de pele (3:21) como fundação da esperança familiar' : 'Genesis 3 synthesis — protoevangelium (3:15) + skin garments (3:21) as foundation of family hope',
+        <>
+          <ul style={{ margin: '0 0 14px 0', paddingLeft: 20 }}>
+            {[
+              pt ? 'O protoevangelium (3:15) é a primeira palavra de esperança após a queda: a semente da mulher esmagará a cabeça da serpente. O verbo shuph (esmagar) é recíproco — a serpente ferirá o calcanhar da semente, mas a semente esmagará a cabeça. Cristo foi ferido no calcanhar (morte) mas esmagou a cabeça da serpente (ressurreição). Para o aconselhando em desespero familiar: há uma semente prometida que já quebrou o poder do pecado — a família que conhece isso não precisa ser escrava dos padrões geracionais de queda.' : 'The protoevangelium (3:15) is the first word of hope after the fall: the woman\'s seed will crush the serpent\'s head. The verb shuph (crush) is reciprocal — the serpent will strike the heel of the seed, but the seed will crush the head. Christ was struck on the heel (death) but crushed the serpent\'s head (resurrection). For the counselee in family despair: there is a promised seed that has already broken the power of sin — the family that knows this does not need to be enslaved to generational patterns of the fall.',
+              pt ? 'A família que vive "coberta pela graça" (3:21) não é a família perfeita — é a família que aprendeu a confessar e receber cobertura. As vestes de pele não fizeram Adão e Eva menos pecadores; tornaram-nos cobertos. O conselheiro que apresenta um padrão de santidade que exige performance sem graça está prescrevendo um projeto impossível — folhas de figueira mais elaboradas. O padrão de Deus em Gênesis 3 é: cobertura primeiro, caminhada depois.' : 'The family that lives "covered by grace" (3:21) is not the perfect family — it is the family that learned to confess and receive covering. The skin garments did not make Adam and Eve less sinful; they made them covered. The counselor who presents a pattern of holiness that demands performance without grace is prescribing an impossible project — more elaborate fig leaves. God\'s pattern in Genesis 3 is: covering first, walking after.',
+            ].map((item, i) => (
+              <li key={i} style={{ fontSize: bodySz, color: 'rgba(255,255,255,0.82)', lineHeight: 1.7, marginBottom: 6 }}>{item}</li>
+            ))}
+          </ul>
+          {quoteBox(
+            pt ? 'Toda família carrega cicatrizes de Gênesis 3. A questão não é "sua família tem queda?" — todas têm. A questão é "sua família conhece o Gênesis 3:15 — a semente que esmaga — e o Gênesis 3:21 — a cobertura que Deus provê?" A família que conhece a cura não precisa negar a doença.'
+               : 'Every family carries scars from Genesis 3. The question is not "does your family have a fall?" — all do. The question is "does your family know Genesis 3:15 — the seed that crushes — and Genesis 3:21 — the covering God provides?" The family that knows the cure does not need to deny the disease.',
+            'Joel R. Beeke', purple, 5)}
+          {quoteBox(
+            pt ? 'Padrões geracionais de pecado — vícios, violência, abandono — não são destino inevitável. Eles são o padrão de Adão sem Cristo. Em Cristo, a semente da mulher já esmagou a cabeça da serpente. O poder do padrão geracional está quebrado na Cruz — a família que crê nisso vive com autoridade para dizer: "Este ciclo termina aqui, nesta geração."'
+               : 'Generational patterns of sin — addictions, violence, abandonment — are not inevitable destiny. They are the pattern of Adam without Christ. In Christ, the woman\'s seed has already crushed the serpent\'s head. The power of the generational pattern is broken at the Cross — the family that believes this lives with authority to say: "This cycle ends here, in this generation."',
+            'Voddie Baucham Jr.', amber, 7)}
+          {quoteBox(
+            pt ? 'O maior presente que os pais cristãos podem dar a seus filhos não é um lar sem conflito — é um lar onde conflito, pecado e queda são tratados com confissão e graça, ensinando os filhos que a graça de Cristo é suficiente para tudo que Gênesis 3 produziu. Um lar assim não está negando a queda — está pregando o evangelho dentro dela.'
+               : 'The greatest gift Christian parents can give their children is not a home without conflict — it is a home where conflict, sin and fall are addressed with confession and grace, teaching children that Christ\'s grace is sufficient for everything Genesis 3 produced. Such a home is not denying the fall — it is preaching the gospel within it.',
+            'Richard Baxter', green, 12)}
+          <div style={{ background: 'rgba(255,180,50,0.07)', border: '1px solid rgba(255,180,50,0.25)', borderRadius: 10, padding: '12px 16px', marginBottom: 14 }}>
+            <div style={{ fontSize: labelSz, fontWeight: 800, color: amber, marginBottom: 6 }}>✝️ {pt ? 'Perspectiva Histórico-Redentiva' : 'Redemptive-Historical Perspective'}</div>
+            <p style={{ fontSize: smallSz, color: 'rgba(255,230,180,0.88)', lineHeight: 1.75, margin: 0 }}>
+              {pt
+                ? 'Gênesis 3:21 — vestes de pele — e o primeiro sacramento da graça: Deus cobre a vergonha com sangue. Este padrão percorre toda a Escritura: Abel (4:4), Abraão e o carneiro (22:13), o sistema levítico (Lv 16 — o Yom Kippur), até Jo 1:29: "o Cordeiro de Deus que tira o pecado do mundo." Rm 3:21–22 é o cumprimento: "a justiça de Deus por meio da fé em Jesus Cristo para todos os que creem." E Ap 7:14 é o desfecho: os remidos "lavaram e embranqueceram suas roupas no sangue do Cordeiro." As vestes de pele de Gênesis 3 são as "roupas brancas" do Apocalipse — o mesmo Deus que vestiu Adão e Eva, vestindo Sua noiva para a eternidade.'
+                : 'Genesis 3:21 — skin garments — is the first sacrament of grace: God covers shame with blood. This pattern runs through all of Scripture: Abel (4:4), Abraham and the ram (22:13), the Levitical system (Lev 16 — Yom Kippur), until John 1:29: "the Lamb of God who takes away the sin of the world." Rom 3:21–22 is the fulfillment: "the righteousness of God through faith in Jesus Christ for all who believe." And Rev 7:14 is the conclusion: the redeemed "washed and whitened their robes in the blood of the Lamb." The skin garments of Genesis 3 are the "white robes" of Revelation — the same God who clothed Adam and Eve, clothing His bride for eternity.'}
+            </p>
+          </div>
+          {questionsBox([
+            pt ? '"Há padrões geracionais de pecado na sua família — vícios, abandono, violência, perfeccionismo — que você teme estar replicando? Como Gênesis 3:15 (a semente que esmaga) fala diretamente a esse medo?"'
+               : '"Are there generational patterns of sin in your family — addictions, abandonment, violence, perfectionism — that you fear replicating? How does Genesis 3:15 (the seed that crushes) speak directly to that fear?"',
+            pt ? '"Sua família conhece Gênesis 3:21 — que Deus cobre os envergonhados — não apenas Gênesis 3:6–7 — que o pecado envergonha? Qual metade de Gênesis 3 ocupa mais espaço no seu lar: o diagnóstico ou a graça?"'
+               : '"Does your family know Genesis 3:21 — that God covers the ashamed — not only Genesis 3:6–7 — that sin shames? Which half of Genesis 3 occupies more space in your home: the diagnosis or the grace?"',
+            pt ? '"Se você pudesse dizer a seus filhos uma coisa sobre Gênesis 3 esta semana — não para ensinar teologia, mas para que eles soubessem que a graça é real em sua casa — o que você diria? Como você poderia mostrá-la, não apenas dizê-la?"'
+               : '"If you could say one thing to your children about Genesis 3 this week — not to teach theology, but so they would know that grace is real in your home — what would you say? How could you show it, not merely say it?"',
+          ], purple)}
+        </>
+      )}
+
+      {/* SEÇÃO 5 — Autores */}
+      <div style={{ borderRadius: 16, background: pinkL, border: `1.5px solid ${pinkB}`, padding: '22px 24px', marginBottom: 20 }}>
+        <div style={{ fontSize: labelSz, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: pink, marginBottom: 16 }}>
+          📚 {pt ? 'Seção 5 — Autores e Obras de Referência' : 'Section 5 — Reference Authors and Works'}
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(260px,1fr))', gap: 12, marginBottom: 16 }}>
+          {[
+            { fn: 2,  name: 'Jay E. Adams',        works: 'Competent to Counsel (1970); A Theology of Christian Counseling (1979)', desc: pt ? 'Diagnóstico do pecado como ponto de partida; confissão e graça como prescrição pastoral' : 'Sin diagnosis as starting point; confession and grace as pastoral prescription', color: blue },
+            { fn: 1,  name: 'David Powlison',      works: 'Seeing with New Eyes (2003); Good and Angry (2016)', desc: pt ? 'Narrativa distorcida de Deus como diagnóstico primário; dúvida corrosiva vs. Palavra âncora' : 'Distorted God-narrative as primary diagnosis; corrosive doubt vs. Word as anchor', color: green },
+            { fn: 3,  name: 'Paul David Tripp',    works: 'Instruments (2002); Age of Opportunity (1997)', desc: pt ? '"Onde estás tu?" como linguagem pastoral; folhas de figueira vs. cobertura da graça' : '"Where are you?" as pastoral language; fig leaves vs. grace covering', color: amber },
+            { fn: 4,  name: 'Edward T. Welch',     works: 'Shame Interrupted (2012); Side by Side (2015)', desc: pt ? 'Vergonha crônica com raiz em Gn 3:7; cobertura terapêutica de Gn 3:21' : 'Chronic shame rooted in Gen 3:7; therapeutic covering of Gen 3:21', color: purple },
+            { fn: 5,  name: 'Joel R. Beeke',       works: 'Parenting by God\'s Promises (2011)', desc: pt ? 'Cultura de confissão no lar; protoevangelium como fundação da esperança familiar' : 'Culture of confession in the home; protoevangelium as foundation of family hope', color: amber },
+            { fn: 7,  name: 'Voddie Baucham Jr.',  works: 'Family Driven Faith (2007)', desc: pt ? 'Padrões geracionais quebrados em Cristo; semente que esmaga vs. ciclo de queda' : 'Generational patterns broken in Christ; seed that crushes vs. cycle of the fall', color: pink },
+            { fn: 10, name: 'Thomas Watson',       works: 'A Body of Divinity (1692)', desc: pt ? 'Dúvida como portal do pecado; ha\'af ki amar Elohim como padrão da tentação' : 'Doubt as gateway of sin; ha\'af ki amar Elohim as temptation pattern', color: green },
+          ].map((a, i) => (
+            <div key={i} style={{ background: 'rgba(0,0,0,0.25)', borderRadius: 10, border: '1px solid rgba(255,255,255,0.08)', padding: '14px 16px' }}>
+              <div style={{ fontSize: labelSz, fontWeight: 900, color: a.color, marginBottom: 4 }}>{a.name}{fn(a.fn)}</div>
+              <div style={{ fontSize: smallSz, color: 'rgba(255,255,255,0.50)', marginBottom: 6, fontStyle: 'italic' }}>{a.works}</div>
+              <div style={{ fontSize: labelSz, color: 'rgba(255,255,255,0.75)', lineHeight: 1.6 }}>{a.desc}</div>
+            </div>
+          ))}
+        </div>
+        <div style={{ background: 'rgba(0,0,0,0.20)', borderRadius: 10, padding: '12px 16px', borderLeft: `3px solid ${pink}` }}>
+          <p style={{ fontSize: bodySz, color: 'rgba(255,255,255,0.82)', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            {pt
+              ? 'Conselheiro bíblico reformado diante de Gênesis 3: nunca apresente apenas o diagnóstico (versículos 1–13) sem a cura (versículos 15 e 21). A família que sai do aconselhamento conhecendo mais seu pecado do que a graça de Deus foi mal servida. Gênesis 3 termina com cobertura, não com expulsão — e o conselheiro termina cada sessão da mesma forma.'
+              : 'Reformed biblical counselor before Genesis 3: never present only the diagnosis (verses 1–13) without the cure (verses 15 and 21). The family that leaves counseling knowing more about their sin than God\'s grace has been poorly served. Genesis 3 ends with covering, not expulsion — and the counselor ends each session the same way.'}
+          </p>
+        </div>
+      </div>
+
+      {/* SEÇÃO 6 — Plano */}
+      <div style={{ borderRadius: 16, background: greenL, border: `1.5px solid ${greenB}`, padding: '22px 24px', marginBottom: 20 }}>
+        <div style={{ fontSize: labelSz, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: green, marginBottom: 16 }}>
+          🗓️ {pt ? 'Seção 6 — Plano de 4 Sessões baseado em Gênesis 3:1–24' : 'Section 6 — 4-Session Plan based on Genesis 3:1–24'}
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+          {[
+            { n: '1', ref: 'Gênesis 3:1–6', color: amber,
+              title: pt ? 'A Tentação pela Dúvida — Diagnóstico da Narrativa' : 'Temptation by Doubt — Narrative Diagnosis',
+              desc: pt ? 'Identificar a narrativa que o aconselhando tem sobre Deus: provedor ou privador? Mapear as três portas da tentação (apetite, estética, orgulho intelectual). Âncora histórico-redentiva: Cristo respondeu a cada tentação com "Está escrito" — identificar quais textos da Escritura contradizem a narrativa distorcida do aconselhando. Powlison[1], Watson[10], Tripp[9].' : 'Identify the narrative the counselee has about God: provider or depriver? Map the three doors of temptation (appetite, aesthetics, intellectual pride). Redemptive anchor: Christ responded to each temptation with "It is written" — identify which Scripture texts contradict the counselee\'s distorted narrative. Powlison[1], Watson[10], Tripp[9].' },
+            { n: '2', ref: 'Gênesis 3:7–13', color: blue,
+              title: pt ? 'O Esconderijo — Mapeando a Vergonha e a Culpa' : 'The Hiding Place — Mapping Shame and Guilt',
+              desc: pt ? 'Nomear o mecanismo de esconderijo específico do aconselhando. Identificar o padrão de culpabilização (quem é o bode expiatório da família?). Âncora histórico-redentiva: Cristo "exposto à vergonha" (Hb 12:2) — Ele não se escondeu, enfrentou. Hb 4:16: "cheguemos com confiança ao trono da graça." Welch[4], Beeke[5], Adams[2].' : 'Name the counselee\'s specific hiding mechanism. Identify the blame pattern (who is the family\'s scapegoat?). Redemptive anchor: Christ "endured shame" (Heb 12:2) — He did not hide, He faced it. Heb 4:16: "approach the throne of grace with confidence." Welch[4], Beeke[5], Adams[2].' },
+            { n: '3', ref: 'Gênesis 3:9,15,21', color: green,
+              title: pt ? '"Onde Estás Tu?" — Cultivando Confissão e Cobertura' : '"Where Are You?" — Cultivating Confession and Covering',
+              desc: pt ? 'Prática de confissão: cada cônjuge confessa um padrão específico à família (não ao conselheiro — à família). Âncora histórico-redentiva: Gn 3:21 → Jo 1:29 → Rm 3:21–22. A cobertura de Cristo não é condicional ao desempenho — é pré-requisito para o desempenho. Tripp[3], Powlison[6], Lane/Tripp[11].' : 'Confession practice: each spouse confesses a specific pattern to the family (not to the counselor — to the family). Redemptive anchor: Gen 3:21 → John 1:29 → Rom 3:21–22. Christ\'s covering is not conditional on performance — it is the prerequisite for performance. Tripp[3], Powlison[6], Lane/Tripp[11].' },
+            { n: '4', ref: 'Gênesis 3:15 + 3:21 síntese', color: purple,
+              title: pt ? 'Vestes de Pele — A Família Coberta, Não a Família Perfeita' : 'Skin Garments — The Covered Family, Not the Perfect Family',
+              desc: pt ? 'Síntese: que família de Gênesis 3 vocês querem ser — a que costura folhas de figueira (aparência de perfeição) ou a que aceita as vestes de pele (cobertura pela graça)? Plano concreto para cultura de confissão no lar. Padrões geracionais de pecado nomeados e entregues ao protoevangelium. Âncora: Ap 7:14 — "branquearam no sangue do Cordeiro." Beeke[5], Baucham[7], Welch[12].' : 'Synthesis: which family of Genesis 3 do you want to be — the one that sews fig leaves (appearance of perfection) or the one that accepts the skin garments (covering by grace)? Concrete plan for a culture of confession in the home. Generational sin patterns named and entrusted to the protoevangelium. Anchor: Rev 7:14 — "whitened in the blood of the Lamb." Beeke[5], Baucham[7], Welch[12].' },
+          ].map((s) => (
+            <div key={s.n} style={{ display: 'flex', gap: 14, alignItems: 'flex-start', background: 'rgba(0,0,0,0.20)', borderRadius: 10, padding: '14px 16px' }}>
+              <div style={{ flexShrink: 0, width: 36, height: 36, borderRadius: '50%', background: s.color, display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 900, fontSize: 16, color: '#000' }}>{s.n}</div>
+              <div>
+                <div style={{ fontSize: titleSz, fontWeight: 800, color: s.color, marginBottom: 4 }}>{s.title}</div>
+                <div style={{ fontSize: labelSz, color: 'rgba(255,255,255,0.55)', fontStyle: 'italic', marginBottom: 6 }}>{s.ref}</div>
+                <div style={{ fontSize: bodySz, color: 'rgba(255,255,255,0.80)', lineHeight: 1.65 }}>{s.desc}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* REFS */}
+      <div style={{ borderRadius: 14, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.09)', padding: '18px 22px' }}>
+        <div style={{ fontSize: labelSz, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.40)', marginBottom: 14 }}>
+          🗂️ {pt ? 'Referências Bibliográficas (ABNT)' : 'Bibliographic References (ABNT)'}
+        </div>
+        <ol style={{ margin: 0, paddingLeft: 20 }}>
+          {REFS.map(r => (
+            <li key={r.n} style={{ fontSize: smallSz, color: 'rgba(255,255,255,0.55)', lineHeight: 1.70, marginBottom: 6 }}>{r.abnt}</li>
+          ))}
+        </ol>
+      </div>
+    </div>
+  );
+}
+
 // ─── Esboços Page ────────────────────────────────────────────────────
 // ─── Infográfico Família Card 1 ──────────────────────────────────────
 function InfograficoFamiliaSection({ pt }: { pt: boolean }) {
@@ -7466,8 +8664,8 @@ export function EsbocosPage() {
                         active={p.idx === selectedPericopeIdx}
                         conteudo={conteudoCard}
                         hasQuiasma={quiasmaDias.has(p.idx)}
-                        hasInfografico={!!(diaForCard && (diaForCard.dia === 1 || diaForCard.dia === 2 || (diaForCard.dia >= 254 && diaForCard.dia <= 265)))}
-                        hasAconselhamento={!!(diaForCard && (diaForCard.dia === 1 || diaForCard.dia === 2 || diaForCard.dia === 254 || diaForCard.dia === 255 || diaForCard.dia === 256 || diaForCard.dia === 257))}
+                        hasInfografico={!!(diaForCard && (diaForCard.dia === 1 || diaForCard.dia === 2 || diaForCard.dia === 3 || diaForCard.dia === 4 || (diaForCard.dia >= 254 && diaForCard.dia <= 265)))}
+                        hasAconselhamento={!!(diaForCard && (diaForCard.dia === 1 || diaForCard.dia === 2 || diaForCard.dia === 3 || diaForCard.dia === 4 || diaForCard.dia === 254 || diaForCard.dia === 255 || diaForCard.dia === 256 || diaForCard.dia === 257))}
                         onClick={() => selectPericope(p.idx)}
                         pt={pt}
                       />
@@ -7508,8 +8706,8 @@ export function EsbocosPage() {
                   {([
                     { key: 'familia', label: pt ? 'Esboço Familiar' : 'Family Outline' },
                     { key: 'quiasma', label: pt ? 'Estrutura Quiástica' : 'Chiastic Structure' },
-                    ...((selectedDia?.dia === 1 || selectedDia?.dia === 2 || (selectedDia?.dia !== undefined && selectedDia.dia >= 254 && selectedDia.dia <= 265)) ? [{ key: 'infografico', label: pt ? '🖼 Infográfico' : '🖼 Infographic' }] : []),
-                    ...((selectedDia?.dia === 1 || selectedDia?.dia === 2 || selectedDia?.dia === 254 || selectedDia?.dia === 255 || selectedDia?.dia === 256 || selectedDia?.dia === 257) ? [{ key: 'aconselhamento', label: pt ? '🧭 Aconselhamento' : '🧭 Counseling' }] : []),
+                    ...((selectedDia?.dia === 1 || selectedDia?.dia === 2 || selectedDia?.dia === 3 || selectedDia?.dia === 4 || (selectedDia?.dia !== undefined && selectedDia.dia >= 254 && selectedDia.dia <= 265)) ? [{ key: 'infografico', label: pt ? '🖼 Infográfico' : '🖼 Infographic' }] : []),
+                    ...((selectedDia?.dia === 1 || selectedDia?.dia === 2 || selectedDia?.dia === 3 || selectedDia?.dia === 4 || selectedDia?.dia === 254 || selectedDia?.dia === 255 || selectedDia?.dia === 256 || selectedDia?.dia === 257) ? [{ key: 'aconselhamento', label: pt ? '🧭 Aconselhamento' : '🧭 Counseling' }] : []),
                   ] as { key: 'quiasma' | 'familia' | 'infografico' | 'aconselhamento'; label: string }[]).map(tab => {
                     const active = contentTab === tab.key;
                     return (
@@ -7563,6 +8761,8 @@ export function EsbocosPage() {
                         : selectedDia?.dia === 264 ? <InfograficoJosue264FamiliaSection pt={pt} />
                         : selectedDia?.dia === 265 ? <InfograficoJosue265FamiliaSection pt={pt} />
                         : selectedDia?.dia === 2 ? <InfograficoGenesis2FamiliaSection pt={pt} />
+                        : selectedDia?.dia === 3 ? <InfograficoGenesis3FamiliaSection pt={pt} />
+                        : selectedDia?.dia === 4 ? <InfograficoGenesis4FamiliaSection pt={pt} />
                         : <InfograficoFamiliaSection pt={pt} />}
                     </motion.div>
                   ) : contentTab === 'aconselhamento' ? (
@@ -7571,6 +8771,10 @@ export function EsbocosPage() {
                         ? <AconselhamentoBiblicoGenesis1FamiliaSection pt={pt} />
                         : selectedDia?.dia === 2
                         ? <AconselhamentoBiblicoGenesis2FamiliaSection pt={pt} />
+                        : selectedDia?.dia === 3
+                        ? <AconselhamentoBiblicoGenesis3FamiliaSection pt={pt} />
+                        : selectedDia?.dia === 4
+                        ? <AconselhamentoBiblicoGenesis4FamiliaSection pt={pt} />
                         : selectedDia?.dia === 257
                         ? <AconselhamentoBiblicoJosue257FamiliaSection pt={pt} />
                         : selectedDia?.dia === 256
