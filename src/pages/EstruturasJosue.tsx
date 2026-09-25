@@ -192,7 +192,7 @@ const D255: EData = {
   proposicao: 'A fé de Rahab — confissão verbal, aliança visível (fio escarlate) e ação protetora — é o modelo bíblico da fé que salva: conhecimento, confiança e compromisso unificados pelo sinal do sangue que cobre no juízo.',
   interrogacao: 'O que o fio escarlate de Rahab revela sobre a fé que salva no meio do juízo — e como esse sinal aponta para o sangue que nos cobre em Cristo?',
   palavraChave: 'FIO ESCARLATE',
-  transicao: "Para responder, seguiremos o FIO ESCARLATE da fé pela estrutura quiástica A–B–◉–B'–A' de Josué 2 — cada movimento revela uma dimensão da fé que salva no meio do juízo.",
+  transicao: "Para responder, seguiremos o FIO ESCARLATE pela estrutura de Josué 2 — cada movimento revela uma dimensão da fé que salva no meio do juízo.",
   chiasm: [
     { sym: 'A',  ref: 'Js 2:1',     label: 'Dois espias entram em secreto — missão de reconhecimento',              cor: 'rgba(210,70,70,1)' },
     { sym: 'B',  ref: 'Js 2:2-8',   label: 'Rahab esconde os espias no telhado — risco de vida pela fé',            cor: 'rgba(255,140,80,1)' },
@@ -254,8 +254,8 @@ const D256: EData = {
   exordio: 'O Rio Jordão estava cheio. Era a época da sega — o pior momento para atravessar. E Josué mandou os sacerdotes pisar naquele rio transbordante. Não houve divisão de águas à distância. Não houve sinal prévio. O milagre esperava um passo. Um passo no pior momento possível.',
   proposicao: 'A travessia do Jordão é o segundo Êxodo: como o Mar Vermelho se abriu diante de Moisés, o Jordão se abre diante da arca — confirmando que a presença santificadora de YHWH, carregada por sacerdotes que pisam primeiro, é o único poder que garante passagem do deserto à herança.',
   interrogacao: 'O que a parada do Jordão quando os sacerdotes tocam as águas revela sobre a relação entre fé-que-age e presença-que-abre-o-caminho — e como isso aponta para Cristo como nossa arca?',
-  palavraChave: 'FÉ-QUE-PISA',
-  transicao: "Para responder, veremos a FÉ-QUE-PISA na estrutura quiástica A–B–◉–B'–A' de Josué 3 — cada movimento revela como a presença de YHWH requer e produz obediência prévia.",
+  palavraChave: 'FÉ',
+  transicao: "Para responder, seguiremos a FÉ que pisa na estrutura quiástica A–B–◉–B'–A' de Josué 3 — cada movimento revela como a presença de YHWH requer e produz obediência prévia.",
   chiasm: [
     { sym: 'A',  ref: 'Js 3:1-4',   label: 'Israel acampa no Jordão — 2.000 côvados de distância da arca',          cor: 'rgba(80,150,240,1)' },
     { sym: 'B',  ref: 'Js 3:5-8',   label: '"Santificai-vos" — preparação que precede o poder divino',               cor: 'rgba(255,180,50,1)' },
@@ -309,8 +309,8 @@ const D257: EData = {
   exordio: 'Doze homens desceram ao leito seco do Jordão e carregaram pedras. Não eram pedras especiais. Eram pedras do lugar onde o milagre aconteceu. E Deus disse: erguei-as onde seus filhos possam ver. Porque chega um dia em que seus filhos perguntam: "O que são essas pedras?" E você precisa ter uma resposta.',
   proposicao: 'O memorial de pedras em Gilgal é catequese encarnada: Deus ordena que Israel construa um monumento que provoca perguntas para que a resposta — "YHWH secou o Jordão" — produza temor e fé em cada geração que nunca viveu o milagre mas ouve sobre ele.',
   interrogacao: 'O que as doze pedras do leito do Jordão revelam sobre a responsabilidade de cada geração de transmitir a memória das obras de YHWH — e como isso aponta para a Ceia do Senhor?',
-  palavraChave: 'ZIKKARON',
-  transicao: "Para responder, seguiremos o ZIKKARON — o memorial geracional — de Josué 4: cada movimento revela como Deus ordena que cada geração transmita a memória das obras de YHWH.",
+  palavraChave: 'MEMORIAL',
+  transicao: "Para responder, seguiremos o MEMORIAL geracional de Josué 4: cada movimento revela como Deus ordena que cada geração transmita a memória das obras de YHWH.",
   chiasm: [
     { sym: 'A',  ref: 'Js 4:1-3',   label: 'Mandamento: tirai 12 pedras do leito seco — uma por tribo',                      cor: 'rgba(170,110,50,1)' },
     { sym: 'B',  ref: 'Js 4:4-10',  label: 'Execução: 12 homens tiram 12 pedras — sacerdotes firmes no meio',                cor: 'rgba(255,180,50,1)' },
@@ -364,8 +364,8 @@ const D258: EData = {
   exordio: 'Você acabou de atravessar o impossível. O Jordão está atrás. Jericó está à frente. E Deus manda parar — para fazer facas de pederneira. A conquista mais urgente antes de Jericó não era a batalha. Era Gilgal. A identidade aliançal precisava ser restaurada. Sem a marca da aliança, você não pode tomar posse da herança.',
   proposicao: 'Antes de entrar em Jericó, Israel precisou passar por Gilgal — onde a vergonha do Egito foi rolada pela circuncisão, confirmando que nenhuma herança prometida pode ser possuída sem a marca aliançal que separa o povo como propriedade de YHWH.',
   interrogacao: 'O que a segunda circuncisão em Gilgal revela sobre a necessidade de restauração aliançal antes da conquista — e como isso aponta para a circuncisão do coração em Cristo?',
-  palavraChave: 'GILGAL',
-  transicao: "Para responder, veremos o GILGAL em Josué 5:2-12 — o lugar onde a vergonha é rolada: cada movimento expõe uma dimensão da restauração aliançal que YHWH exige antes da conquista.",
+  palavraChave: 'RESTAURAÇÃO',
+  transicao: "Para responder, seguiremos a RESTAURAÇÃO aliançal em Josué 5:2-12: cada movimento expõe uma dimensão do que YHWH exige — remoção da vergonha, sinal visível, herança recebida — antes da conquista.",
   chiasm: [
     { sym: 'A',  ref: 'Js 5:2-3',   label: 'Mandamento: "faze facas de pederneira e circuncida novamente"',             cor: 'rgba(80,190,100,1)' },
     { sym: 'B',  ref: 'Js 5:4-8',   label: 'Razão: geração do deserto morreu incircuncisa — nova geração circuncidada',   cor: 'rgba(255,180,50,1)' },
@@ -528,8 +528,8 @@ const D263: EData = {
   exordio: 'Um manto babilônico. Duzentos siclos de prata. Um linguado de ouro. Escondidos debaixo de uma tenda. E no campo de batalha — trinta e seis israelitas mortos. Uma conexão que nenhum analista militar identificaria. Mas Deus identificou. O pecado de Acã não ficou na sua tenda. Nunca fica.',
   proposicao: "O ma'al (prevaricação comunitária) de Acã demonstra que o pecado oculto tem peso público: contamina o acampamento, anula a proteção divina e derrota o exército; e o vale de Acor revela que o mesmo lugar de juízo pode tornar-se porta de esperança quando o mal é confrontado com transparência diante de YHWH.",
   interrogacao: 'Como um pecado oculto de um só homem pode derrotar uma nação inteira — e o que o vale de Acor revela sobre a relação entre juízo, comunidade e esperança?',
-  palavraChave: 'ḤĒREM',
-  transicao: "Para responder, seguiremos o ḤĒREM violado em Josué 7: cada movimento revela como o pecado oculto de um indivíduo contamina toda a comunidade aliançal — da derrota ao juízo que abre o vale de esperança.",
+  palavraChave: 'CONTAMINAÇÃO',
+  transicao: "Para responder, seguiremos a CONTAMINAÇÃO do pecado oculto em Josué 7: cada movimento revela como o crime de um indivíduo corrompe toda a comunidade aliançal — da derrota ao juízo que abre o vale de esperança.",
   chiasm: [
     { sym: 'A',  ref: 'Js 7:1-5',   label: 'Derrota em Ai: "os corações do povo se derreteram como água"',                cor: 'rgba(195,75,40,1)' },
     { sym: 'B',  ref: 'Js 7:6-9',   label: 'Josué rasga vestes e ora prostrado: "Por que nos fizeste passar o Jordão?"',  cor: 'rgba(255,140,80,1)' },
