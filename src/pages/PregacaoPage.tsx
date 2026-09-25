@@ -8,6 +8,26 @@ import { gerarParaPregar } from '../data/paraPregar';
 import { SERMON_TITLES } from '../data/sermonTitles';
 import { SERMON_QUESTIONS } from '../data/sermonQuestions';
 import { SERMON_GANCHOS } from '../data/sermonGanchos';
+import {
+  InfograficoJosue255Section, InfograficoJosue256Section, InfograficoJosue257Section,
+  InfograficoJosue258Section, InfograficoJosue259Section, InfograficoJosue261Section,
+  InfograficoJosue262Section,
+  InfograficoJosue263Section, InfograficoJosue264Section, InfograficoJosue265Section,
+  InfograficoJosue266Section, InfograficoJosue267Section, InfograficoJosue268Section,
+  InfograficoJosue269Section, InfograficoJosue270Section, InfograficoJosue271Section,
+  InfograficoJosue272Section, InfograficoJosue273Section, InfograficoJosue274Section,
+  InfograficoJosue275Section, InfograficoJosue276Section, InfograficoJosue277Section,
+  InfograficoJosue278Section, InfograficoJosue279Section, InfograficoJosue280Section,
+  InfograficoJosue281Section, InfograficoJosue282Section, InfograficoJosue283Section,
+  InfograficoJosue284Section,
+} from './InfograficosJosue';
+import {
+  EstruturaJosue255Section, EstruturaJosue256Section, EstruturaJosue257Section,
+  EstruturaJosue258Section, EstruturaJosue259Section,
+  EstruturaJosue262Section, EstruturaJosue263Section,
+  EstruturaJosue264Section, EstruturaJosue265Section,
+} from './EstruturasJosue';
+import { EstruturaGenesis3Section } from './EstruturasGenesis';
 
 // ─── Design tokens ──────────────────────────────────────────────────
 const C = {
@@ -1136,6 +1156,1200 @@ const HEBREW_TRANSLIT: Record<string, string> = {
   'מאה ועשׂר': "me'ah-vaEser", 'פקד יפקד': 'pakod-yifkod', 'ויחנטו': 'vayakhantu',
 };
 
+// ─── EstruturaHomileticaJosue6Section — Josué 6:1–15 ─────────────────
+function EstruturaHomileticaJosue6Section({ pt }: { pt: boolean }) {
+  const accent  = 'rgba(100,220,160,1)';
+  const accentL = 'rgba(100,220,160,0.10)';
+  const accentB = 'rgba(100,220,160,0.30)';
+
+  const SectionCard = ({ num, icon, title, children }: { num: string; icon: string; title: string; children: React.ReactNode }) => (
+    <div style={{ borderRadius: 16, border: `1px solid ${accentB}`, background: 'rgba(14,22,18,0.75)', padding: '24px 28px', marginBottom: 18 }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 14 }}>
+        <div style={{ width: 36, height: 36, borderRadius: 10, background: accentL, border: `1px solid ${accentB}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 18, flexShrink: 0 }}>{icon}</div>
+        <div>
+          <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.18em', color: accent, textTransform: 'uppercase', marginBottom: 2 }}>{pt ? 'Seção' : 'Section'} {num}</div>
+          <div style={{ fontSize: 'clamp(15px,2vw,17px)', fontWeight: 800, color: C.white }}>{title}</div>
+        </div>
+      </div>
+      <div style={{ fontSize: 'clamp(13px,1.6vw,15px)', color: 'rgba(255,255,255,0.78)', lineHeight: 1.75 }}>{children}</div>
+    </div>
+  );
+
+  const Footnote = ({ num, text }: { num: number; text: string }) => (
+    <div style={{ fontSize: 'clamp(11px,1.4vw,12px)', color: C.muted, lineHeight: 1.6, marginBottom: 4, paddingLeft: 16, position: 'relative' }}>
+      <span style={{ position: 'absolute', left: 0, color: accent, fontWeight: 700 }}>{num}</span>
+      {text}
+    </div>
+  );
+
+  const Tag = ({ label, color = accentB }: { label: string; color?: string }) => (
+    <span style={{ display: 'inline-block', padding: '2px 10px', borderRadius: 20, background: color, color: C.white, fontSize: 'clamp(10px,1.3vw,11px)', fontWeight: 700, marginRight: 6, marginBottom: 4 }}>{label}</span>
+  );
+
+  return (
+    <div style={{ paddingBottom: 40 }}>
+      {/* Header */}
+      <div style={{ borderRadius: 16, border: `1px solid ${accentB}`, background: accentL, padding: '20px 24px', marginBottom: 24 }}>
+        <div style={{ fontSize: 'clamp(9px,1.2vw,11px)', fontWeight: 900, letterSpacing: '0.2em', color: accent, textTransform: 'uppercase', marginBottom: 8 }}>
+          Josué 6:1–15 · {pt ? 'Perícope 261 · Dia 261' : 'Pericope 261 · Day 261'}
+        </div>
+        <div style={{ fontSize: 'clamp(18px,2.8vw,24px)', fontWeight: 900, color: C.white, lineHeight: 1.3, marginBottom: 8 }}>
+          {pt ? 'A Marcha da Fé: quando a obediência litúrgica precede a vitória militar' : 'The March of Faith: when liturgical obedience precedes military victory'}
+        </div>
+        <div style={{ fontSize: 15, color: 'rgba(255,255,255,0.65)', fontStyle: 'italic' }}>
+          {pt
+            ? '"Por que Deus ordena marchar em silêncio por seis dias antes de agir — e o que essa espera revela sobre a natureza da fé que move muralhas?"'
+            : '"Why does God command silent marching for six days before acting — and what does this waiting reveal about the nature of faith that moves walls?"'}
+        </div>
+      </div>
+
+      {/* Seção I — Título */}
+      <SectionCard num="I" icon="📌" title={pt ? 'Título' : 'Title'}>
+        <p><strong style={{ color: accent }}>{pt ? 'Título Principal:' : 'Main Title:'}</strong> {pt ? 'A Marcha da Fé: quando a obediência litúrgica precede a vitória militar' : 'The March of Faith: when liturgical obedience precedes military victory'}</p>
+        <p style={{ marginTop: 8 }}><strong style={{ color: accent }}>{pt ? 'Subtítulo:' : 'Subtitle:'}</strong> {pt ? 'Como o decreto divino transforma a espera silenciosa em ato de guerra' : 'How the divine decree transforms silent waiting into an act of war'}</p>
+        <div style={{ marginTop: 12, padding: '10px 16px', borderRadius: 10, background: 'rgba(0,0,0,0.3)', fontFamily: 'monospace', fontSize: 13, color: 'rgba(255,255,255,0.60)', lineHeight: 1.7 }}>
+          Js 6:2 — וַיֹּאמֶר יְהוָה אֶל-יְהוֹשֻׁעַ רְאֵה נָתַתִּי בְיָדְךָ אֶת-יְרִיחוֹ<br />
+          <span style={{ color: C.muted, fontFamily: 'sans-serif', fontSize: 12 }}>"E disse o SENHOR a Josué: Olha, tenho entregado nas tuas mãos Jericó."</span>
+        </div>
+      </SectionCard>
+
+      {/* Seção II — Texto Base */}
+      <SectionCard num="II" icon="📖" title={pt ? 'Texto Base' : 'Base Text'}>
+        <p><strong style={{ color: accent }}>{pt ? 'Perícope:' : 'Pericope:'}</strong> Josué 6:1–15 (ARA / NVI)</p>
+        <p style={{ marginTop: 8 }}><strong style={{ color: accent }}>{pt ? 'Ponto focal:' : 'Focal point:'}</strong> {pt ? 'Josué 6:2 — "Tenho entregado" (nātattî, perfeito profético) — a vitória declarada antes da marcha' : 'Joshua 6:2 — "I have given" (nātattî, prophetic perfect) — victory declared before the march'}</p>
+        <div style={{ marginTop: 10, display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+          <Tag label="Josué" />
+          <Tag label={pt ? 'Literatura Histórica' : 'Historical Literature'} />
+          <Tag label={pt ? 'Teologia do Pacto' : 'Covenant Theology'} />
+          <Tag label={pt ? 'Fé e Obediência' : 'Faith and Obedience'} />
+          <Tag label={pt ? 'Guerra Santa' : 'Holy War'} />
+        </div>
+      </SectionCard>
+
+      {/* Seção III — Tema */}
+      <SectionCard num="III" icon="🎯" title={pt ? 'Tema (Big Idea)' : 'Theme (Big Idea)'}>
+        <p>
+          {pt
+            ? 'O decreto soberano de YHWH — "tenho entregado Jericó" (perfeito profético, v.2) — transforma seis dias de silêncio e marcha aparentemente inútil no ato de fé mais radical da conquista: obedecer sem ver resultado é a guerra que antecede a queda das muralhas.'
+            : "YHWH's sovereign decree — 'I have given Jericho' (prophetic perfect, v.2) — transforms six days of silence and seemingly pointless marching into the most radical act of faith in the conquest: obeying without seeing results is the war that precedes the fall of the walls."}
+        </p>
+        <p style={{ marginTop: 10, padding: '8px 14px', borderRadius: 8, background: 'rgba(100,220,160,0.08)', borderLeft: `3px solid ${accent}`, fontSize: 14, color: 'rgba(255,255,255,0.70)', fontStyle: 'italic' }}>
+          {pt
+            ? '"A fé hebraica não é sentimento religioso — é ação em resposta à Palavra de Deus. Josué marcha porque Deus falou, não porque viu a estratégia funcionar."'
+            : '"Hebrew faith is not religious feeling — it is action in response to God\'s Word. Joshua marches because God spoke, not because he saw the strategy working."'}
+          <br /><span style={{ fontSize: 12 }}>— Cf. Woudstra, M. H. <em>The Book of Joshua</em>. NICOT. Grand Rapids: Eerdmans, 1981. p. 108.¹</span>
+        </p>
+      </SectionCard>
+
+      {/* Seção IV — Exórdio */}
+      <SectionCard num="IV" icon="🔥" title={pt ? 'Exórdio (Gancho / Introdução)' : 'Exordium (Hook / Introduction)'}>
+        <p>
+          {pt
+            ? 'Imagine ser o general encarregado de conquistar a cidade mais fortemente defendida da Canaã. Você tem um exército. Você tem experiência. E então Deus chega com o plano: marche ao redor da cidade. Em silêncio. Por seis dias.'
+            : 'Imagine being the general tasked with conquering the most heavily fortified city in Canaan. You have an army. You have experience. And then God arrives with the plan: march around the city. In silence. For six days.'}
+        </p>
+        <p style={{ marginTop: 10 }}>
+          {pt
+            ? 'Do ponto de vista estratégico, o plano de Deus para Jericó é um absurdo militar. Do ponto de vista teológico, é a revelação mais clara de toda a conquista: a vitória é de Deus antes de ser de Israel, e o instrumento que Deus usa não é a espada — é a obediência.'
+            : "From a strategic standpoint, God's plan for Jericho is military nonsense. From a theological standpoint, it is the clearest revelation of the entire conquest: the victory belongs to God before it belongs to Israel, and the instrument God uses is not the sword — it is obedience."}
+        </p>
+        <p style={{ marginTop: 10, fontSize: 14, color: 'rgba(255,255,255,0.60)', fontStyle: 'italic' }}>
+          Cf. Keller, T. <em>Preaching: Communicating Faith in an Age of Skepticism</em>. New York: Viking, 2015. pp. 157–162.²
+        </p>
+      </SectionCard>
+
+      {/* Seção V — Proposição */}
+      <SectionCard num="V" icon="⚡" title={pt ? 'Proposição' : 'Proposition'}>
+        <div style={{ padding: '14px 18px', borderRadius: 12, background: 'rgba(100,220,160,0.12)', border: `1px solid ${accentB}` }}>
+          <p style={{ fontWeight: 800, fontSize: 17, color: C.white, margin: 0 }}>
+            {pt
+              ? 'O Deus que já declarou a vitória antes da batalha (v.2) chama seu povo a uma obediência litúrgica que parece inútil — porque a marcha silenciosa é a prova de que a fé descansa no decreto divino, não na estratégia humana.'
+              : 'The God who already declared victory before the battle (v.2) calls his people to a liturgical obedience that appears useless — because the silent march is the proof that faith rests on the divine decree, not on human strategy.'}
+          </p>
+        </div>
+        <p style={{ marginTop: 12, fontSize: 14, color: 'rgba(255,255,255,0.65)' }}>
+          Cf. Clowney, E. P. <em>Preaching Christ in All of Scripture</em>. Wheaton: Crossway, 2003. pp. 41–48.³
+        </p>
+      </SectionCard>
+
+      {/* Seção VI — Interrogação e Transição */}
+      <SectionCard num="VI" icon="❓" title={pt ? 'Interrogação e Transição' : 'Question and Transition'}>
+        <p><strong style={{ color: accent }}>{pt ? 'Interrogação central:' : 'Central question:'}</strong>{' '}
+          {pt
+            ? 'Por que Deus ordena marchar em silêncio por seis dias antes de agir — e o que essa espera revela sobre a natureza da fé que move muralhas?'
+            : 'Why does God command silent marching for six days before acting — and what does this waiting reveal about the nature of faith that moves walls?'}
+        </p>
+        <div style={{ margin: '14px 0', padding: '12px 18px', borderRadius: 14, background: 'rgba(100,220,160,0.10)', border: '1px solid rgba(100,220,160,0.30)', display: 'flex', alignItems: 'center', gap: 14 }}>
+          <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', color: 'rgba(100,220,160,1)', textTransform: 'uppercase', whiteSpace: 'nowrap', flexShrink: 0 }}>{pt ? 'PALAVRA-CHAVE' : 'KEY WORD'}</div>
+          <div style={{ width: 1, height: 28, background: 'rgba(100,220,160,0.30)', flexShrink: 0 }} />
+          <div style={{ fontSize: 'clamp(17px,2.4vw,21px)', fontWeight: 900, color: '#ffffff', letterSpacing: '0.04em' }}>OBEDIÊNCIA</div>
+        </div>
+        <p style={{ marginTop: 10 }}><strong style={{ color: accent }}>{pt ? 'Transição:' : 'Transition:'}</strong>{' '}
+          {pt
+            ? 'Para responder, seguiremos a estrutura quiástica A–B–◉–B\'–A\' de Josué 6:1–15, onde o centro revela a lógica teológica do texto e os espelhos confirmam que toda a perícope gira em torno da obediência silenciosa que descansa no decreto soberano.'
+            : "To answer, we will follow the chiastic structure A–B–◉–B'–A' of Joshua 6:1–15, where the center reveals the theological logic of the text and the mirrors confirm that the entire pericope revolves around silent obedience resting on the sovereign decree."}
+        </p>
+        <p style={{ marginTop: 10, fontSize: 14, color: 'rgba(255,255,255,0.60)' }}>
+          Cf. Chapell, B. <em>Christ-Centered Preaching</em>. 3. ed. Grand Rapids: Baker Academic, 2018. pp. 121–135.⁴
+        </p>
+      </SectionCard>
+
+      {/* Seção VII — Divisões */}
+      <SectionCard num="VII" icon="📐" title={pt ? 'Divisões / Movimentos' : 'Divisions / Movements'}>
+        <p style={{ marginBottom: 14, fontSize: 14, color: C.muted }}>
+          {pt ? 'Estrutura quiástica em 5 movimentos (A–B–◉–B\'–A\'):' : "Chiastic structure in 5 movements (A–B–◉–B'–A'):"}
+        </p>
+        {[
+          { sym: 'A',   ref: 'Js 6:1',     label: pt ? 'Jericó fechada e trancada — a situação humanamente impossível'                  : 'Jericho shut and barred — the humanly impossible situation',      cor: 'rgba(100,220,160,1)' },
+          { sym: 'B',   ref: 'Js 6:2',     label: pt ? 'Decreto divino — "tenho entregado" (nātattî, perfeito profético)'               : 'Divine decree — "I have given" (nātattî, prophetic perfect)',     cor: 'rgba(255,200,80,1)' },
+          { sym: '◉',   ref: 'Js 6:3–5',   label: pt ? 'CENTRO ← Instruções litúrgicas: 7 sacerdotes, 7 trombetas, 7 dias, 7 voltas'   : 'CENTER ← Liturgical instructions: 7 priests, 7 trumpets, 7 days, 7 circuits', cor: 'rgba(255,100,130,1)' },
+          { sym: "B'",  ref: 'Js 6:6–11',  label: pt ? 'Josué executa imediatamente — obediência sem hesitação (dia 1)'                 : 'Joshua executes immediately — obedience without hesitation (day 1)', cor: 'rgba(255,200,80,1)' },
+          { sym: "A'",  ref: 'Js 6:12–15', label: pt ? 'Dias 2–7 iniciam — obediência sustentada sem resultado visível acumulada'       : 'Days 2–7 begin — sustained obedience without visible results accumulated', cor: 'rgba(100,220,160,1)' },
+        ].map((m, i) => (
+          <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 12, padding: '10px 14px', borderRadius: 10, background: 'rgba(0,0,0,0.25)', marginBottom: 8, borderLeft: `3px solid ${m.cor}` }}>
+            <div style={{ fontFamily: 'monospace', fontWeight: 900, color: m.cor, fontSize: 16, minWidth: 28 }}>{m.sym}</div>
+            <div>
+              <div style={{ fontSize: 12, color: m.cor, fontWeight: 700, marginBottom: 2 }}>{m.ref}</div>
+              <div style={{ fontSize: 14, color: C.white }}>{m.label}</div>
+            </div>
+          </div>
+        ))}
+
+        {/* ASCII Quiasma */}
+        <div style={{ marginTop: 16, padding: '14px 20px', borderRadius: 12, background: 'rgba(0,0,0,0.4)', fontFamily: 'monospace', fontSize: 12, color: 'rgba(255,255,255,0.55)', lineHeight: 2, overflowX: 'auto' }}>
+          <div style={{ paddingLeft: 0,  color: 'rgba(100,220,160,0.9)', fontWeight: 700 }}>A   — 6:1    — Jericó sōgeret ûmesugeret: muralha dupla, impossível</div>
+          <div style={{ paddingLeft: 20, color: 'rgba(255,200,80,0.9)',  fontWeight: 700 }}>B   — 6:2    — "Tenho entregado" (perfeito): vitória já decretada</div>
+          <div style={{ paddingLeft: 40, color: 'rgba(255,100,130,0.9)', fontWeight: 700 }}>◉   — 6:3–5  — Plano litúrgico ← <span style={{ color: accent }}>CENTRO</span>: 7×7×7×7</div>
+          <div style={{ paddingLeft: 20, color: 'rgba(255,200,80,0.9)',  fontWeight: 700 }}>B'  — 6:6–11 — Josué executa sem hesitação (dia 1, silêncio total)</div>
+          <div style={{ paddingLeft: 0,  color: 'rgba(100,220,160,0.9)', fontWeight: 700 }}>A'  — 6:12–15— Obediência sustentada dias 2–7 (cumulation)</div>
+        </div>
+
+        <p style={{ marginTop: 12, fontSize: 14, color: 'rgba(255,255,255,0.60)' }}>
+          Cf. Woudstra, M. H. <em>The Book of Joshua</em>. NICOT. Grand Rapids: Eerdmans, 1981. pp. 104–115.⁵ | Dorsey, D. A. <em>The Literary Structure of the Old Testament</em>. Grand Rapids: Baker Academic, 1999. pp. 100–102.⁶
+        </p>
+
+        {/* Movimentos expositivos */}
+        <div style={{ marginTop: 20, borderTop: `1px solid ${accentB}`, paddingTop: 20 }}>
+          <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.18em', color: accent, textTransform: 'uppercase', marginBottom: 16 }}>
+            {pt ? 'Divisões Expositivas do Sermão' : 'Expository Sermon Divisions'}
+          </div>
+
+          {[
+            {
+              letra: 'I',
+              titulo: pt ? 'JERICÓ FECHADA — A MURALHA QUE NÃO TEM RESPOSTA HUMANA (A)' : 'JERICHO SHUT — THE WALL WITH NO HUMAN ANSWER (A)',
+              ref: 'Js 6:1',
+              indicacao: pt
+                ? 'Js 6:1 — "Jericó estava fechada e bem trancada por causa dos israelitas; ninguém saía nem entrava." O texto abre com a declaração da impossibilidade — não como drama, mas como realidade. A muralha dupla de Jericó (arqueologicamente confirmada) era a defesa militar mais avançada de Canaã.'
+                : 'Josh 6:1 — "Jericho was shut up tight. No one went out and no one came in." The text opens with a statement of impossibility — not as drama, but as reality. Jericho\'s double wall (archaeologically confirmed) was the most advanced military defense in Canaan.',
+              exegese: pt
+                ? 'sōgeret ûmesugeret ("fechada e trancada") — a duplicação verbal intensifica: era duplamente fechada. Não havia vulnerabilidade militar visível. O narrador não deixa espaço para ilusão: a entrada humana era impossível. O texto coloca a impossibilidade antes do decreto para que o decreto pareça ainda mais absoluto.'
+                : 'sōgeret ûmesugeret ("shut and barred") — the verbal duplication intensifies: it was doubly closed. There was no visible military vulnerability. The narrator leaves no room for illusion: human entry was impossible. The text places the impossibility before the decree so that the decree appears even more absolute.',
+              teologia: pt
+                ? 'CFW III.1 ensina que o decreto eterno precede e garante o evento temporal. A fé opera exatamente nessa lacuna — entre a impossibilidade humana e o decreto divino. A CFB 3.1 afirma igualmente que Deus, desde toda a eternidade, decretou livremente tudo o que acontece, sem que isso destrua a agência das criaturas nem produza nenhuma injustiça.'
+                : 'WCF III.1 teaches that the eternal decree precedes and guarantees the temporal event. Faith operates exactly in this gap — between human impossibility and divine decree. The 1689 Baptist Confession 3.1 likewise affirms that God, from all eternity, freely decreed whatsoever comes to pass.',
+              aplicacao: pt
+                ? 'Qual muralha você enfrenta que parece impenetrável? O texto não começa com a estratégia — começa com a impossibilidade. Deus não ignora as muralhas que fecham o caminho; Ele as declara entregues antes de abrir qualquer fissura.'
+                : 'What wall do you face that seems impenetrable? The text does not begin with strategy — it begins with impossibility. God does not ignore the walls that block the path; He declares them given before opening any crack.',
+              cor: 'rgba(100,220,160,1)',
+            },
+            {
+              letra: 'II',
+              titulo: pt ? 'O DECRETO QUE SUSTENTA A MARCHA — "TENHO ENTREGADO" (B)' : 'THE DECREE SUSTAINING THE MARCH — "I HAVE GIVEN" (B)',
+              ref: 'Js 6:2',
+              indicacao: pt
+                ? 'Js 6:2 — "O SENHOR disse a Josué: Vê, tenho entregado nas tuas mãos Jericó, o seu rei e os seus guerreiros valorosos." O decreto divino vem em resposta direta à situação impossível do v.1. Antes de qualquer instrução, antes de qualquer estratégia, YHWH declara.'
+                : 'Josh 6:2 — "The LORD said to Joshua: See, I have delivered Jericho into your hands, along with its king and its fighting men." The divine decree comes in direct response to the impossible situation of v.1. Before any instruction, before any strategy, YHWH declares.',
+              exegese: pt
+                ? 'nātattî ("tenho entregado") é perfeito profético hebraico — o futuro é descrito no tempo do passado/presente porque o decreto divino é tão certo quanto um fato já consumado. O versículo não diz "vou entregar" mas "tenho entregado." A gramática é teologia: a certeza do decreto precede a experiência da vitória. rəʾēh ("vê, olha") é imperativo — Josué é convidado a perceber pela fé o que ainda não é visível pelo olho.'
+                : 'nātattî ("I have given") is the Hebrew prophetic perfect — the future is described in past/present tense because the divine decree is as certain as an already completed fact. The verse does not say "I will give" but "I have given." The grammar is theology: the certainty of the decree precedes the experience of victory. rəʾēh ("see, look") is imperative — Joshua is invited to perceive by faith what is not yet visible to the eye.',
+              teologia: pt
+                ? 'CFW XIV.2 — a fé salvadora assente firmemente em todas as promessas de Deus. O "tenho entregado" de YHWH é o fundamento sobre o qual Israel marcha. Sem esse decreto, a marcha seria loucura. Com ele, é obediência. A CFB 14.2 afirma igualmente que a fé salvadora inclui assentir, receber e repousar sobre Cristo e sua justiça como o único fundamento da salvação e de toda confiança.'
+                : 'WCF XIV.2 — saving faith firmly assents to all the promises of God. YHWH\'s "I have given" is the foundation upon which Israel marches. Without this decree, the march would be madness. With it, it is obedience.',
+              aplicacao: pt
+                ? 'Você tem orado "dá-me vitória" quando Deus já declarou "tenho entregado"? A diferença entre ansiedade e confiança não é a circunstância — é se você ouviu o decreto. Rəʾēh — vê o que Deus já declarou antes de avaliar o que você ainda não vê.'
+                : 'Have you been praying "give me victory" when God already declared "I have given"? The difference between anxiety and trust is not the circumstance — it is whether you have heard the decree. Rəʾēh — see what God already declared before evaluating what you do not yet see.',
+              cor: 'rgba(255,200,80,1)',
+            },
+            {
+              letra: 'III',
+              titulo: pt ? 'LITURGIA COMO GUERRA — O MÉTODO QUE NÃO PRECISA DE EXPLICAÇÃO (◉ CENTRO)' : 'LITURGY AS WAR — THE METHOD THAT NEEDS NO EXPLANATION (◉ CENTER)',
+              ref: 'Js 6:3–5',
+              indicacao: pt
+                ? 'Js 6:3–5 — CENTRO do quiasma: sete sacerdotes, sete trombetas de jubileu, seis dias de uma volta, sétimo dia de sete voltas. O número sete estrutura todo o plano. Não é estratégia militar — é liturgia aliançal.'
+                : 'Josh 6:3–5 — CENTER of the chiasm: seven priests, seven jubilee trumpets, six days of one circuit, seventh day of seven circuits. The number seven structures the entire plan. This is not military strategy — it is covenant liturgy.',
+              exegese: pt
+                ? 'šeba kōhănim (sete sacerdotes) — o sete é o número da aliança (cf. criação em sete dias, Gn 2:2-3). šofrot hayyōbēlim ("trombetas de jubileu") — o instrumento litúrgico da libertação (Lv 25:9) é o instrumento da conquista. A guerra santa não é separada do culto — é expressão do culto. O silêncio mandatório (v.10) é obediência sem racionalização: o povo não sabe por que marcha; sabe que YHWH ordenou. A obediência que precisa de explicação não é fé — é cálculo.'
+                : 'šeba kōhănim (seven priests) — seven is the number of the covenant (cf. creation in seven days, Gen 2:2-3). šofrot hayyōbēlim ("jubilee trumpets") — the liturgical instrument of liberation (Lev 25:9) is the instrument of conquest. Holy war is not separate from worship — it is the expression of worship. The mandatory silence (v.10) is obedience without rationalization: the people do not know why they march; they know YHWH commanded it.',
+              teologia: pt
+                ? 'Hb 11:30 — "pela fé caíram as muralhas de Jericó, depois de serem rodeadas por sete dias." O autor de Hebreus cataloga a marcha como ato de fé, não como estratégia. CFW XVI.1 — as boas obras aceitáveis a Deus são aquelas "prescritas na Sua Palavra". A marcha é boa obra porque Deus a prescreveu, não porque parece eficaz. A CFB 16.1 afirma igualmente que as boas obras são somente as que Deus ordenou em sua Palavra Santa.'
+                : 'Heb 11:30 — "By faith the walls of Jericho fell, after the army had marched around them for seven days." The author of Hebrews catalogs the march as an act of faith, not strategy. WCF XVI.1 — good works acceptable to God are those "prescribed in His Word." The march is a good work because God prescribed it, not because it seems effective.',
+              aplicacao: pt
+                ? 'Você tem condicionado obediência à compreensão? "Obedeço quando entender o método" não é fé — é racionalismo disfarçado de humildade. O povo de Israel marchou sem saber se ia funcionar. Você está disposto a marchar pelo que Deus ordenou mesmo quando o método parece absurdo?'
+                : 'Have you been conditioning obedience on understanding? "I\'ll obey when I understand the method" is not faith — it is rationalism disguised as humility. The people of Israel marched without knowing if it would work. Are you willing to march for what God commanded even when the method seems absurd?',
+              cor: 'rgba(255,100,130,1)',
+            },
+            {
+              letra: 'IV',
+              titulo: pt ? 'O DECRETO PRODUZ OBEDIÊNCIA — JOSUÉ EXECUTA SEM HESITAR (B\')' : "THE DECREE PRODUCES OBEDIENCE — JOSHUA EXECUTES WITHOUT HESITATION (B')",
+              ref: 'Js 6:6–11',
+              indicacao: pt
+                ? 'Js 6:6–11 — Josué convoca os sacerdotes e dá as instruções exatamente como recebeu. Não há negociação, não há sugestão alternativa. O povo marcha em silêncio absoluto no primeiro dia. A estrutura espelha o v.2 (decreto → execução imediata).'
+                : 'Josh 6:6–11 — Joshua summons the priests and gives instructions exactly as received. There is no negotiation, no alternative suggestion. The people march in absolute silence on the first day. The structure mirrors v.2 (decree → immediate execution).',
+              exegese: pt
+                ? 'wayətsav yəhoshua (v.7 — "e Josué ordenou") — a cadeia de comando desce intacta: YHWH → Josué → sacerdotes → povo. O v.10 — "não gritareis, nem fareis ouvir a vossa voz" — é a instrução mais difícil: silêncio ativo quando tudo em você quer gritar ou questionar. heʿavir (v.7 — "que passe diante da arca") — a arca de YHWH lidera o exército; a presença divina está na vanguarda, não na retaguarda. A guerra não é de Israel; é de YHWH.'
+                : 'wayətsav yəhoshua (v.7 — "and Joshua commanded") — the chain of command descends intact: YHWH → Joshua → priests → people. V.10 — "do not give a war cry, do not raise your voices" — is the most difficult instruction: active silence when everything in you wants to shout or question. heʿavir (v.7 — "have the armed guard pass on") — the ark of YHWH leads the army; divine presence is in the vanguard, not the rear. The war is not Israel\'s; it is YHWH\'s.',
+              teologia: pt
+                ? 'CFW XVI.3 — as boas obras dos regenerados procedem da fé genuína e são aceitas apenas em Cristo. A obediência imediata de Josué não é mérito — é fruto. A cadeia descendente de comissão (YHWH → Josué → povo) espelha a estrutura da aliança: Deus fala, o mediador transmite, o povo obedece. A CFB 16.3 afirma que a capacidade de fazer boas obras não vem dos próprios crentes, mas do Espírito de Cristo que habita neles.'
+                : 'WCF XVI.3 — the good works of the regenerate proceed from genuine faith and are accepted only in Christ. Joshua\'s immediate obedience is not merit — it is fruit. The descending chain of commission (YHWH → Joshua → people) mirrors the covenant structure: God speaks, the mediator transmits, the people obey.',
+              aplicacao: pt
+                ? 'Qual instrução de Deus você está "processando" quando deveria simplesmente obedecer? Josué não pediu uma reunião para discutir a estratégia. Ele convocou os sacerdotes. A liderança que espera sentir antes de obedecer perde o ritmo da marcha. Obedeça enquanto ainda não entende; entenda enquanto obedece.'
+                : 'Which instruction from God are you "processing" when you should simply obey? Joshua did not call a meeting to discuss strategy. He summoned the priests. Leadership that waits to feel before obeying loses the rhythm of the march. Obey while you do not yet understand; understand while you obey.',
+              cor: 'rgba(255,200,80,1)',
+            },
+            {
+              letra: 'V',
+              titulo: pt ? 'SEIS DIAS SEM RESULTADO — A PERSEVERANÇA QUE RESPONDE À MURALHA (A\')' : "SIX DAYS WITHOUT RESULT — THE PERSEVERANCE THAT ANSWERS THE WALL (A')",
+              ref: 'Js 6:12–15',
+              indicacao: pt
+                ? 'Js 6:12–15 — O padrão se repete por seis dias (vv.12-14) e no sétimo dia levantam-se de madrugada para fazer sete voltas (v.15). A obediência não é espontânea — é disciplinada, diária, acumulada. Não há resultado visível nos primeiros seis dias: a muralha não racha, não treme, não mostra nenhum sinal.'
+                : 'Josh 6:12–15 — The pattern repeats for six days (vv.12-14) and on the seventh day they rise at dawn to march seven times (v.15). The obedience is not spontaneous — it is disciplined, daily, accumulated. There is no visible result in the first six days: the wall does not crack, does not tremble, shows no sign.',
+              exegese: pt
+                ? 'wayyāqom yehoshua baboqer (v.12 — "e Josué se levantou de madrugada") — o verbo baqqer (madrugada) aparece tanto no v.12 (dia 2) quanto no v.15 (dia 7), criando inclusio sobre a perseverança. Não há atalho: a obediência começa cedo e se repete fielmente. kayyom hazzeh (v.14 — "da mesma forma, todos os dias") — a repetição é o teste: a fé que só obedece quando há resultado não é fé na promessa — é fé na experiência. No sétimo dia, sete voltas (šeba peʿamim) acumulam em si a obediência de toda a semana.'
+                : 'wayyāqom yehoshua baboqer (v.12 — "Joshua got up early in the morning") — the verb baqqer (early morning) appears in both v.12 (day 2) and v.15 (day 7), creating an inclusio over perseverance. There is no shortcut: obedience begins early and repeats faithfully. kayyom hazzeh (v.14 — "they did this the same way") — repetition is the test: faith that only obeys when there are results is not faith in the promise — it is faith in experience.',
+              teologia: pt
+                ? 'CFW XVII.1 — a perseverança dos santos: os que Deus aceitou em Cristo perseveram na graça e na fé. A marcha dos seis dias é a perseverança em miniatura — obediência sustentada sem recompensa visível até o momento determinado por Deus. Hb 11:30 confirma que a fé que move muralhas não é fé instantânea — é fé que marcha por sete dias. A CFB 17.1 afirma igualmente que os que Deus aceitou em Cristo perseveram em sua graça até o fim e são guardados pelo poder de Deus mediante a fé.'
+                : 'WCF XVII.1 — the perseverance of the saints: those God accepted in Christ persevere in grace and faith. The six-day march is perseverance in miniature — sustained obedience without visible reward until the moment God determined. Heb 11:30 confirms that faith that moves walls is not instantaneous faith — it is faith that marches for seven days.',
+              aplicacao: pt
+                ? 'Você abandonou uma obediência porque não viu resultado nos primeiros dias? A muralha de Jericó não rachou nos primeiros seis dias. A obra que Deus prepara no silêncio é mais sólida do que a que explode no primeiro dia. Levante-se de madrugada e marche mais um dia.'
+                : 'Did you abandon an obedience because you saw no result in the first days? The wall of Jericho did not crack in the first six days. The work God prepares in silence is more solid than the one that explodes on the first day. Rise early and march one more day.',
+              cor: 'rgba(100,220,160,1)',
+            },
+          ].map((m, i) => (
+            <div key={i} style={{ marginBottom: 20, borderRadius: 14, border: `1px solid rgba(255,255,255,0.08)`, background: 'rgba(0,0,0,0.25)', overflow: 'hidden' }}>
+              <div style={{ padding: '14px 18px', background: `${m.cor}18`, borderBottom: `1px solid ${m.cor}40`, display: 'flex', alignItems: 'center', gap: 12 }}>
+                <div style={{ fontFamily: 'monospace', fontWeight: 900, color: m.cor, fontSize: 20, minWidth: 36 }}>{m.letra}</div>
+                <div>
+                  <div style={{ fontSize: 10, color: m.cor, fontWeight: 700, letterSpacing: '0.15em', marginBottom: 2 }}>{m.ref}</div>
+                  <div style={{ fontSize: 14, fontWeight: 800, color: C.white }}>{m.titulo}</div>
+                </div>
+              </div>
+              <div style={{ padding: '16px 18px' }}>
+                <div style={{ marginBottom: 10 }}>
+                  <span style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.15em', color: 'rgba(255,255,255,0.40)', textTransform: 'uppercase' }}>{pt ? 'Indicação Textual' : 'Textual Indication'}</span>
+                  <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.75)', marginTop: 4, lineHeight: 1.65 }}>{m.indicacao}</p>
+                </div>
+                <div style={{ marginBottom: 10 }}>
+                  <span style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.15em', color: 'rgba(255,255,255,0.40)', textTransform: 'uppercase' }}>{pt ? 'Exegese' : 'Exegesis'}</span>
+                  <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.75)', marginTop: 4, lineHeight: 1.65 }}>{m.exegese}</p>
+                </div>
+                <div style={{ marginBottom: 10 }}>
+                  <span style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.15em', color: 'rgba(255,255,255,0.40)', textTransform: 'uppercase' }}>{pt ? 'Teologia Reformada' : 'Reformed Theology'}</span>
+                  <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.75)', marginTop: 4, lineHeight: 1.65 }}>{m.teologia}</p>
+                </div>
+                <div style={{ padding: '10px 14px', borderRadius: 10, background: `${m.cor}12`, borderLeft: `3px solid ${m.cor}` }}>
+                  <span style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.15em', color: m.cor, textTransform: 'uppercase' }}>{pt ? 'Aplicação' : 'Application'}</span>
+                  <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.80)', marginTop: 4, lineHeight: 1.65 }}>{m.aplicacao}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </SectionCard>
+
+      {/* Seção VIII — Eixo Redentor */}
+      <SectionCard num="VIII" icon="✝️" title={pt ? 'Eixo Redentor (Histórico-Redentivo)' : 'Redemptive Axis (Redemptive-Historical)'}>
+        <div style={{ display: 'grid', gap: 12 }}>
+          {[
+            {
+              at: pt ? 'Josué 6:1-15 — A marcha silenciosa por sete dias' : 'Joshua 6:1-15 — The silent march for seven days',
+              nt: pt ? 'Cristo no Getsêmani — obediência ao Pai em silêncio absoluto antes da vitória (Lc 22:42)' : 'Christ in Gethsemane — obedience to the Father in absolute silence before victory (Luke 22:42)',
+              cor: 'rgba(100,220,160,0.15)',
+            },
+            {
+              at: pt ? 'O decreto "tenho entregado" antes da batalha (v.2)' : 'The decree "I have given" before the battle (v.2)',
+              nt: pt ? 'Cristo declarado Cordeiro imolado "desde a fundação do mundo" (Ap 13:8) — vitória decretada antes da criação' : 'Christ declared the Lamb slain "from the foundation of the world" (Rev 13:8) — victory decreed before creation',
+              cor: 'rgba(255,200,80,0.15)',
+            },
+            {
+              at: pt ? 'Arca de YHWH liderando a marcha (vv.6-9) — presença divina na vanguarda' : 'Ark of YHWH leading the march (vv.6-9) — divine presence in the vanguard',
+              nt: pt ? 'Cristo, o Precursor (Hb 6:20) — entrou na glória à nossa frente como Sumo Sacerdote eterno' : 'Christ, the Forerunner (Heb 6:20) — entered glory ahead of us as eternal High Priest',
+              cor: 'rgba(180,120,255,0.15)',
+            },
+            {
+              at: pt ? 'Trombetas de jubileu (šofrot hayyōbēlim, v.4) — instrumento da libertação' : 'Jubilee trumpets (šofrot hayyōbēlim, v.4) — instrument of liberation',
+              nt: pt ? 'A última trombeta (1Co 15:52) que ressuscita os mortos e proclama o jubileu eterno em Cristo' : 'The last trumpet (1 Cor 15:52) that raises the dead and proclaims eternal jubilee in Christ',
+              cor: 'rgba(255,100,130,0.15)',
+            },
+          ].map((row, i) => (
+            <div key={i} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 1, borderRadius: 12, overflow: 'hidden' }}>
+              <div style={{ padding: '12px 16px', background: row.cor, fontSize: 13, color: 'rgba(255,255,255,0.80)', lineHeight: 1.55 }}>
+                <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.15em', color: C.atColor, marginBottom: 4 }}>AT</div>
+                {row.at}
+              </div>
+              <div style={{ padding: '12px 16px', background: row.cor, fontSize: 13, color: 'rgba(255,255,255,0.80)', lineHeight: 1.55, borderLeft: '1px solid rgba(255,255,255,0.06)' }}>
+                <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.15em', color: C.ntColor, marginBottom: 4 }}>NT</div>
+                {row.nt}
+              </div>
+            </div>
+          ))}
+        </div>
+        <p style={{ marginTop: 14, fontSize: 13, color: 'rgba(255,255,255,0.55)', fontStyle: 'italic' }}>
+          {pt
+            ? 'Cf. Clowney, E. P. Preaching Christ in All of Scripture. Wheaton: Crossway, 2003. | Greidanus, S. Preaching Christ from the Old Testament. Grand Rapids: Eerdmans, 1999.'
+            : 'Cf. Clowney, E. P. Preaching Christ in All of Scripture. Wheaton: Crossway, 2003. | Greidanus, S. Preaching Christ from the Old Testament. Grand Rapids: Eerdmans, 1999.'}
+        </p>
+      </SectionCard>
+
+      {/* Seção IX — Doutrina Central */}
+      <SectionCard num="IX" icon="⚓" title={pt ? 'Doutrina Central' : 'Central Doctrine'}>
+        <div style={{ padding: '16px 20px', borderRadius: 12, background: 'rgba(100,220,160,0.10)', border: `1px solid ${accentB}`, marginBottom: 14 }}>
+          <p style={{ fontWeight: 700, fontSize: 16, color: C.white, margin: 0, lineHeight: 1.7 }}>
+            {pt
+              ? 'YHWH é o único Senhor da guerra santa: Ele decreta antes de agir, instrui pela Palavra, lidera pela Sua presença (arca) e exige obediência litúrgica silenciosa — revelando que toda vitória nasce do decreto soberano e nunca da astúcia militar humana.'
+              : 'YHWH is the sole Lord of holy war: He decrees before acting, instructs through His Word, leads by His presence (ark), and demands silent liturgical obedience — revealing that every victory is born from the sovereign decree and never from human military cleverness.'}
+          </p>
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(180px,1fr))', gap: 10 }}>
+          {[
+            { titulo: pt ? 'Soberania Divina' : 'Divine Sovereignty', desc: pt ? 'CFW III — decreto eterno precede o temporal' : 'WCF III — eternal decree precedes the temporal', cor: 'rgba(100,220,160,0.15)' },
+            { titulo: pt ? 'Fé e Obediência' : 'Faith and Obedience', desc: pt ? 'Hb 11:30 — a marcha foi catalogada como fé' : 'Heb 11:30 — the march was cataloged as faith', cor: 'rgba(255,200,80,0.15)' },
+            { titulo: pt ? 'Guerra Santa' : 'Holy War', desc: pt ? 'ḥērem — a conquista é de YHWH, não de Israel' : 'ḥērem — the conquest belongs to YHWH, not Israel', cor: 'rgba(255,100,130,0.15)' },
+            { titulo: pt ? 'Perseverança' : 'Perseverance', desc: pt ? 'CFW XVII — 7 dias de obediência sem resultado visível' : 'WCF XVII — 7 days of obedience without visible result', cor: 'rgba(180,120,255,0.15)' },
+          ].map((d, i) => (
+            <div key={i} style={{ padding: '12px 14px', borderRadius: 10, background: d.cor, border: '1px solid rgba(255,255,255,0.08)' }}>
+              <div style={{ fontSize: 12, fontWeight: 800, color: accent, marginBottom: 4 }}>{d.titulo}</div>
+              <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.65)', lineHeight: 1.55 }}>{d.desc}</div>
+            </div>
+          ))}
+        </div>
+      </SectionCard>
+
+      {/* Seção X — Aplicações Pastorais */}
+      <SectionCard num="X" icon="🌿" title={pt ? 'Aplicações Pastorais' : 'Pastoral Applications'}>
+        {[
+          {
+            icone: '⛪',
+            titulo: pt ? 'Para a Igreja' : 'For the Church',
+            texto: pt
+              ? 'O culto não é alternativa à ação — é fundamento dela. Israel marchou com sacerdotes e trombetas litúrgicas. A adoração corporativa não é fuga do campo de batalha; é o campo de batalha onde Deus declara vitória antes de a conceder.'
+              : 'Worship is not an alternative to action — it is its foundation. Israel marched with priests and liturgical trumpets. Corporate worship is not an escape from the battlefield; it is the battlefield where God declares victory before granting it.',
+          },
+          {
+            icone: '🏠',
+            titulo: pt ? 'Para as Famílias' : 'For Families',
+            texto: pt
+              ? 'A disciplina diária da Palavra (Js 1:8) que Josué recebeu é o que sustentou a marcha de seis dias. Famílias que cultivam o ritmo diário da Escritura constroem a resiliência de obediência sustentada que não abandona a marcha antes do sétimo dia.'
+              : 'The daily discipline of the Word (Josh 1:8) that Joshua received is what sustained the six-day march. Families that cultivate the daily rhythm of Scripture build the resilience of sustained obedience that does not abandon the march before the seventh day.',
+          },
+          {
+            icone: '🙏',
+            titulo: pt ? 'Para o Discípulo' : 'For the Disciple',
+            texto: pt
+              ? 'Qual obediência você abandonou porque seis dias se passaram sem resultado? A muralha só caiu no sétimo dia. O teste da fé não é a velocidade da resposta — é a fidelidade diária na marcha que parece inútil.'
+              : 'Which obedience did you abandon because six days passed without result? The wall only fell on the seventh day. The test of faith is not the speed of the response — it is daily faithfulness in the march that seems pointless.',
+          },
+          {
+            icone: '📢',
+            titulo: pt ? 'Para o Pregador' : 'For the Preacher',
+            texto: pt
+              ? 'Você tem pregado obediência imediata apenas quando há resultados imediatos? A teologia de Josué 6:1-15 desafia a pregação de prosperidade em sua forma mais sutil: a ideia de que Deus recompensa prontamente toda obediência visível. Às vezes, Deus chama a seis dias de marcha silenciosa.'
+              : 'Have you been preaching immediate obedience only when there are immediate results? The theology of Joshua 6:1-15 challenges prosperity preaching in its most subtle form: the idea that God promptly rewards all visible obedience. Sometimes, God calls to six days of silent marching.',
+          },
+        ].map((a, i) => (
+          <div key={i} style={{ display: 'flex', gap: 14, marginBottom: 14, padding: '12px 14px', borderRadius: 12, background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.06)' }}>
+            <div style={{ fontSize: 22, flexShrink: 0, marginTop: 2 }}>{a.icone}</div>
+            <div>
+              <div style={{ fontSize: 12, fontWeight: 800, color: accent, marginBottom: 4, textTransform: 'uppercase', letterSpacing: '0.12em' }}>{a.titulo}</div>
+              <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.75)', lineHeight: 1.65 }}>{a.texto}</div>
+            </div>
+          </div>
+        ))}
+      </SectionCard>
+
+      {/* Seção XI — Conclusão */}
+      <SectionCard num="XI" icon="🏁" title={pt ? 'Conclusão' : 'Conclusion'}>
+        <p style={{ fontSize: 15, lineHeight: 1.85, color: 'rgba(255,255,255,0.82)' }}>
+          {pt
+            ? 'Jericó estava fechada e trancada. Não havia fissura militar, não havia ponto de vulnerabilidade. E então YHWH chegou com uma palavra no perfeito: "tenho entregado." Antes da primeira volta, antes da primeira trombeta, antes do primeiro dia de silêncio — a vitória estava decretada.'
+            : 'Jericho was shut and barred. There was no military crack, no point of vulnerability. And then YHWH arrived with a word in the perfect tense: "I have given." Before the first circuit, before the first trumpet, before the first day of silence — the victory was decreed.'}
+        </p>
+        <p style={{ fontSize: 15, lineHeight: 1.85, color: 'rgba(255,255,255,0.82)', marginTop: 12 }}>
+          {pt
+            ? 'O problema não era Jericó. O problema nunca é a muralha. O problema é se você ouviu o decreto antes de avaliar o obstáculo. Israel não marchou porque a estratégia fazia sentido — marcharam porque Deus falou. E a fé que descansa no decreto marcha seis dias sem ver resultado, levanta-se de madrugada no sétimo, e dá sete voltas em silêncio — não porque é corajosa, mas porque confia no Deus que já decretou o fim antes do começo.'
+            : "The problem was not Jericho. The problem is never the wall. The problem is whether you heard the decree before evaluating the obstacle. Israel did not march because the strategy made sense — they marched because God spoke. And the faith that rests on the decree marches six days without seeing results, rises early on the seventh, and makes seven circuits in silence — not because it is courageous, but because it trusts the God who already decreed the end before the beginning."}
+        </p>
+        <p style={{ fontSize: 15, lineHeight: 1.85, color: accent, marginTop: 12, fontWeight: 700 }}>
+          {pt
+            ? 'Levante-se de madrugada. Marche mais uma volta. O Deus que disse "tenho entregado" a Josué ainda fala no mesmo perfeito profético sobre as muralhas que cercam a sua vida. Amém.'
+            : 'Rise early. March one more circuit. The God who said "I have given" to Joshua still speaks in the same prophetic perfect about the walls surrounding your life. Amen.'}
+        </p>
+      </SectionCard>
+
+      {/* Notas de Rodapé */}
+      <div style={{ marginTop: 24, padding: '16px 20px', borderRadius: 12, background: 'rgba(0,0,0,0.25)', border: '1px solid rgba(255,255,255,0.06)' }}>
+        <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.18em', color: C.muted, textTransform: 'uppercase', marginBottom: 12 }}>{pt ? 'Notas e Referências' : 'Notes and References'}</div>
+        <Footnote num={1} text="Woudstra, M. H. The Book of Joshua. NICOT. Grand Rapids: Eerdmans, 1981. p. 108." />
+        <Footnote num={2} text="Keller, T. Preaching: Communicating Faith in an Age of Skepticism. New York: Viking, 2015. pp. 157–162." />
+        <Footnote num={3} text="Clowney, E. P. Preaching Christ in All of Scripture. Wheaton: Crossway, 2003. pp. 41–48." />
+        <Footnote num={4} text="Chapell, B. Christ-Centered Preaching. 3. ed. Grand Rapids: Baker Academic, 2018. pp. 121–135." />
+        <Footnote num={5} text="Woudstra, M. H. The Book of Joshua. NICOT. Grand Rapids: Eerdmans, 1981. pp. 104–115." />
+        <Footnote num={6} text="Dorsey, D. A. The Literary Structure of the Old Testament. Grand Rapids: Baker Academic, 1999. pp. 100–102." />
+        <Footnote num={7} text="Greidanus, S. Preaching Christ from the Old Testament. Grand Rapids: Eerdmans, 1999. pp. 237–252." />
+        <Footnote num={8} text="Howard Jr., D. M. Joshua. NAC 5. Nashville: B&H Publishing, 1998. pp. 163–182." />
+      </div>
+    </div>
+  );
+}
+
+// ─── EstruturaHomileticaJosue5v13Section — Josué 5:13–15 ──────────────
+function EstruturaHomileticaJosue5v13Section({ pt }: { pt: boolean }) {
+  const accent  = 'rgba(255,140,80,1)';
+  const accentL = 'rgba(255,140,80,0.10)';
+  const accentB = 'rgba(255,140,80,0.30)';
+
+  const SectionCard = ({ num, icon, title, children }: { num: string; icon: string; title: string; children: React.ReactNode }) => (
+    <div style={{ borderRadius: 16, border: `1px solid ${accentB}`, background: 'rgba(22,14,8,0.75)', padding: '24px 28px', marginBottom: 18 }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 14 }}>
+        <div style={{ width: 36, height: 36, borderRadius: 10, background: accentL, border: `1px solid ${accentB}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 18, flexShrink: 0 }}>{icon}</div>
+        <div>
+          <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.18em', color: accent, textTransform: 'uppercase', marginBottom: 2 }}>{pt ? 'Seção' : 'Section'} {num}</div>
+          <div style={{ fontSize: 'clamp(15px,2vw,17px)', fontWeight: 800, color: C.white }}>{title}</div>
+        </div>
+      </div>
+      <div style={{ fontSize: 'clamp(13px,1.6vw,15px)', color: 'rgba(255,255,255,0.78)', lineHeight: 1.75 }}>{children}</div>
+    </div>
+  );
+
+  const Footnote = ({ num, text }: { num: number; text: string }) => (
+    <div style={{ fontSize: 'clamp(11px,1.4vw,12px)', color: C.muted, lineHeight: 1.6, marginBottom: 4, paddingLeft: 16, position: 'relative' }}>
+      <span style={{ position: 'absolute', left: 0, color: accent, fontWeight: 700 }}>{num}</span>
+      {text}
+    </div>
+  );
+
+  const Tag = ({ label, color = accentB }: { label: string; color?: string }) => (
+    <span style={{ display: 'inline-block', padding: '2px 10px', borderRadius: 20, background: color, color: C.white, fontSize: 'clamp(10px,1.3vw,11px)', fontWeight: 700, marginRight: 6, marginBottom: 4 }}>{label}</span>
+  );
+
+  return (
+    <div style={{ paddingBottom: 40 }}>
+      {/* Header */}
+      <div style={{ borderRadius: 16, border: `1px solid ${accentB}`, background: accentL, padding: '20px 24px', marginBottom: 24 }}>
+        <div style={{ fontSize: 'clamp(9px,1.2vw,11px)', fontWeight: 900, letterSpacing: '0.2em', color: accent, textTransform: 'uppercase', marginBottom: 8 }}>
+          Josué 5:13–15 · {pt ? 'Perícope 260 · Dia 260' : 'Pericope 260 · Day 260'}
+        </div>
+        <div style={{ fontSize: 'clamp(18px,2.8vw,24px)', fontWeight: 900, color: C.white, lineHeight: 1.3, marginBottom: 8 }}>
+          {pt ? 'O Príncipe que Não Toma Partido: santidade antes da vitória' : 'The Prince Who Takes No Side: holiness before victory'}
+        </div>
+        <div style={{ fontSize: 15, color: 'rgba(255,255,255,0.65)', fontStyle: 'italic' }}>
+          {pt
+            ? '"Por que o Príncipe do Exército do SENHOR responde \'Não\' à pergunta de Josué — e o que esse \'Não\' revela sobre quem realmente conduz a conquista?"'
+            : '"Why does the Prince of the LORD\'s Army answer \'No\' to Joshua\'s question — and what does that \'No\' reveal about who truly leads the conquest?"'}
+        </div>
+        <div style={{ marginTop: 12, padding: '10px 16px', borderRadius: 10, background: 'rgba(0,0,0,0.3)', fontFamily: 'monospace', fontSize: 13, color: 'rgba(255,255,255,0.60)', lineHeight: 1.7 }}>
+          Js 5:14 — וַיֹּאמֶר לֹא כִּי אֲנִי שַׂר-צְבָא יְהוָה עַתָּה בָאתִי<br />
+          <span style={{ color: C.muted, fontFamily: 'sans-serif', fontSize: 12 }}>"E ele disse: Não; sou o Príncipe do Exército do SENHOR; agora cheguei."</span>
+        </div>
+      </div>
+
+      {/* Seção I — Título */}
+      <SectionCard num="I" icon="📌" title={pt ? 'Título' : 'Title'}>
+        <p><strong style={{ color: accent }}>{pt ? 'Título Principal:' : 'Main Title:'}</strong> {pt ? 'O Príncipe que Não Toma Partido: santidade antes da vitória' : 'The Prince Who Takes No Side: holiness before victory'}</p>
+        <p style={{ marginTop: 8 }}><strong style={{ color: accent }}>{pt ? 'Subtítulo:' : 'Subtitle:'}</strong> {pt ? 'Quando o Santo revela que a conquista é Sua — não de Israel' : 'When the Holy One reveals the conquest is His — not Israel\'s'}</p>
+        <div style={{ marginTop: 12, padding: '10px 16px', borderRadius: 10, background: 'rgba(0,0,0,0.3)', fontFamily: 'monospace', fontSize: 13, color: 'rgba(255,255,255,0.60)', lineHeight: 1.7 }}>
+          Js 5:14 — וַיֹּאמֶר לֹא כִּי אֲנִי שַׂר-צְבָא יְהוָה עַתָּה בָאתִי<br />
+          <span style={{ color: C.muted, fontFamily: 'sans-serif', fontSize: 12 }}>"E ele disse: Não; sou o Príncipe do Exército do SENHOR; agora cheguei."</span>
+        </div>
+      </SectionCard>
+
+      {/* Seção II — Texto Base */}
+      <SectionCard num="II" icon="📖" title={pt ? 'Texto Base' : 'Base Text'}>
+        <p><strong style={{ color: accent }}>{pt ? 'Perícope:' : 'Pericope:'}</strong> Josué 5:13–15 (ARA / NVI)</p>
+        <p style={{ marginTop: 8 }}><strong style={{ color: accent }}>{pt ? 'Ponto focal:' : 'Focal point:'}</strong> {pt ? 'Josué 5:14a — "lo" (Não) — uma palavra que reorienta toda a teologia da conquista' : 'Joshua 5:14a — "lo" (No) — one word that reorients the entire theology of the conquest'}</p>
+        <div style={{ marginTop: 10, display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+          <Tag label="Josué" />
+          <Tag label={pt ? 'Teofania' : 'Theophany'} />
+          <Tag label={pt ? 'Guerra Santa' : 'Holy War'} />
+          <Tag label={pt ? 'Santidade de Deus' : 'Holiness of God'} />
+        </div>
+      </SectionCard>
+
+      {/* Seção III — Tema */}
+      <SectionCard num="III" icon="🎯" title={pt ? 'Tema (Big Idea)' : 'Theme (Big Idea)'}>
+        <p>
+          {pt
+            ? 'O Príncipe do Exército do SENHOR não veio como aliado de Israel nem como aliado de Canaã — veio como Comandante Soberano; e a única resposta correta ao encontro com o Santo é prostrar-se, adorar e descalçar as sandálias.'
+            : 'The Prince of the LORD\'s Army did not come as an ally of Israel nor of Canaan — He came as Sovereign Commander; and the only correct response to the encounter with the Holy One is to fall down, worship, and remove one\'s sandals.'}
+        </p>
+        <p style={{ marginTop: 10, padding: '8px 14px', borderRadius: 8, background: 'rgba(255,140,80,0.08)', borderLeft: `3px solid ${accent}`, fontSize: 14, color: 'rgba(255,255,255,0.70)', fontStyle: 'italic' }}>
+          {pt
+            ? '"A resposta de Josué ao \'Não\' divino é um dos momentos mais instrutivos do livro: o líder militar mais poderoso de Israel cai de rosto em terra não diante da derrota, mas diante da santidade."'
+            : '"Joshua\'s response to the divine \'No\' is one of the most instructive moments in the book: Israel\'s most powerful military leader falls face-down not in defeat, but before holiness."'}
+          <br /><span style={{ fontSize: 12 }}>— Cf. Woudstra, M. H. <em>The Book of Joshua</em>. NICOT. Grand Rapids: Eerdmans, 1981. p. 97.¹</span>
+        </p>
+      </SectionCard>
+
+      {/* Seção IV — Exórdio */}
+      <SectionCard num="IV" icon="🔥" title={pt ? 'Exórdio (Gancho / Introdução)' : 'Exordium (Hook / Introduction)'}>
+        <p>
+          {pt
+            ? 'Você está prestes a travar a batalha mais importante da sua vida. Você está reconhecendo o terreno, calculando os riscos, elaborando o plano. E então aparece um guerreiro com espada desembainhada. E você pergunta a ele: "Você está do meu lado ou do lado do inimigo?" E ele responde: "Não."'
+            : 'You are about to fight the most important battle of your life. You are surveying the terrain, calculating risks, forming the plan. And then a warrior appears with a drawn sword. You ask him: "Are you for us or for our enemies?" He answers: "No."'}
+        </p>
+        <p style={{ marginTop: 10 }}>
+          {pt
+            ? 'Esse "Não" é a resposta mais importante do livro de Josué — e talvez uma das mais importantes da Bíblia inteira. Porque ela recusa o enquadramento mais profundo do coração humano: a ideia de que Deus toma o nosso partido.'
+            : 'That "No" is the most important answer in the book of Joshua — and perhaps one of the most important in all of Scripture. Because it refuses the deepest framing of the human heart: the idea that God takes our side.'}
+        </p>
+        <p style={{ marginTop: 10, fontSize: 14, color: 'rgba(255,255,255,0.60)', fontStyle: 'italic' }}>
+          Cf. Keller, T. <em>Preaching: Communicating Faith in an Age of Skepticism</em>. New York: Viking, 2015. pp. 157–162.²
+        </p>
+      </SectionCard>
+
+      {/* Seção V — Proposição */}
+      <SectionCard num="V" icon="⚡" title={pt ? 'Proposição' : 'Proposition'}>
+        <div style={{ padding: '14px 18px', borderRadius: 12, background: 'rgba(255,140,80,0.12)', border: `1px solid ${accentB}` }}>
+          <p style={{ fontWeight: 800, fontSize: 17, color: C.white, margin: 0 }}>
+            {pt
+              ? 'A conquista de Canaã não pertence a Israel — pertence ao Comandante que não toma partido de nenhum exército humano; e Josué aprende que liderar a conquista de Deus começa com a postura de adoração, não de estratégia.'
+              : "Canaan's conquest does not belong to Israel — it belongs to the Commander who takes no side with any human army; and Joshua learns that leading God's conquest begins with a posture of worship, not strategy."}
+          </p>
+        </div>
+        <p style={{ marginTop: 12, fontSize: 14, color: 'rgba(255,255,255,0.65)' }}>
+          Cf. Chapell, B. <em>Christ-Centered Preaching</em>. 3. ed. Grand Rapids: Baker Academic, 2018. pp. 121–135.³
+        </p>
+      </SectionCard>
+
+      {/* Seção VI — Interrogação e Transição */}
+      <SectionCard num="VI" icon="❓" title={pt ? 'Interrogação e Transição' : 'Question and Transition'}>
+        <p><strong style={{ color: accent }}>{pt ? 'Interrogação central:' : 'Central question:'}</strong>{' '}
+          {pt
+            ? 'Por que o Príncipe do Exército do SENHOR responde "Não" à pergunta de Josué — e o que esse "Não" revela sobre quem realmente conduz a conquista?'
+            : 'Why does the Prince of the LORD\'s Army answer "No" to Joshua\'s question — and what does that "No" reveal about who truly leads the conquest?'}
+        </p>
+        <div style={{ margin: '14px 0', padding: '12px 18px', borderRadius: 14, background: 'rgba(255,140,80,0.10)', border: '1px solid rgba(255,140,80,0.30)', display: 'flex', alignItems: 'center', gap: 14 }}>
+          <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', color: 'rgba(255,140,80,1)', textTransform: 'uppercase', whiteSpace: 'nowrap', flexShrink: 0 }}>{pt ? 'PALAVRA-CHAVE' : 'KEY WORD'}</div>
+          <div style={{ width: 1, height: 28, background: 'rgba(255,140,80,0.30)', flexShrink: 0 }} />
+          <div style={{ fontSize: 'clamp(17px,2.4vw,21px)', fontWeight: 900, color: '#ffffff', letterSpacing: '0.04em' }}>SOBERANIA</div>
+        </div>
+        <p style={{ marginTop: 10 }}><strong style={{ color: accent }}>{pt ? 'Transição:' : 'Transition:'}</strong>{' '}
+          {pt
+            ? "Para responder, seguiremos a estrutura quiástica A–B–◉–B'–A' de Josué 5:13–15, onde o centro (◉) é o 'Não' soberano que reorienta toda a teologia da conquista, e os membros exteriores mostram o encontro que transforma Josué de general em adorador."
+            : "To answer, we follow the chiastic structure A–B–◉–B'–A' of Joshua 5:13–15, where the center (◉) is the sovereign 'No' that reorients the entire theology of the conquest, and the outer members show the encounter that transforms Joshua from general to worshiper."}
+        </p>
+        <p style={{ marginTop: 10, fontSize: 14, color: 'rgba(255,255,255,0.60)' }}>
+          Cf. Chapell, B. <em>Christ-Centered Preaching</em>. 3. ed. Grand Rapids: Baker Academic, 2018. pp. 121–135.⁴
+        </p>
+      </SectionCard>
+
+      {/* Seção VII — Divisões */}
+      <SectionCard num="VII" icon="📐" title={pt ? 'Divisões / Movimentos' : 'Divisions / Movements'}>
+        <p style={{ marginBottom: 14, fontSize: 14, color: C.muted }}>
+          {pt ? "Estrutura quiástica em 5 movimentos (A–B–◉–B'–A'):" : "Chiastic structure in 5 movements (A–B–◉–B'–A'):"}
+        </p>
+        {[
+          { sym: 'A',   ref: 'Js 5:13a',  label: pt ? 'Josué levanta os olhos — o encontro inesperado com o guerreiro'            : 'Joshua raises his eyes — the unexpected encounter with the warrior',      cor: 'rgba(255,140,80,1)' },
+          { sym: 'B',   ref: 'Js 5:13b',  label: pt ? '"De nós és ou de nossos adversários?" — a pergunta que revela o erro'      : '"Are you for us or our enemies?" — the question revealing the error',      cor: 'rgba(255,200,80,1)' },
+          { sym: '◉',   ref: 'Js 5:14a',  label: pt ? 'CENTRO ← "Não. Sou o Príncipe do Exército do SENHOR" — soberania'       : 'CENTER ← "No. I am the Prince of the LORD\'s Army" — sovereignty',         cor: 'rgba(255,100,130,1)' },
+          { sym: "B'",  ref: 'Js 5:14b',  label: pt ? 'Josué prostra-se, adora, pergunta "Que diz meu Senhor?" — correção'       : 'Joshua falls, worships, asks "What says my Lord?" — the correction',       cor: 'rgba(255,200,80,1)' },
+          { sym: "A'",  ref: 'Js 5:15',   label: pt ? '"Descalça as sandálias — o lugar é santo" — o encontro redefine a postura' : '"Remove your sandals — this place is holy" — the encounter redefines posture', cor: 'rgba(255,140,80,1)' },
+        ].map((m, i) => (
+          <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 12, padding: '10px 14px', borderRadius: 10, background: 'rgba(0,0,0,0.25)', marginBottom: 8, borderLeft: `3px solid ${m.cor}` }}>
+            <div style={{ fontFamily: 'monospace', fontWeight: 900, color: m.cor, fontSize: 16, minWidth: 28 }}>{m.sym}</div>
+            <div>
+              <div style={{ fontSize: 12, color: m.cor, fontWeight: 700, marginBottom: 2 }}>{m.ref}</div>
+              <div style={{ fontSize: 14, color: C.white }}>{m.label}</div>
+            </div>
+          </div>
+        ))}
+
+        {/* ASCII Quiasma */}
+        <div style={{ marginTop: 16, padding: '14px 20px', borderRadius: 12, background: 'rgba(0,0,0,0.4)', fontFamily: 'monospace', fontSize: 12, color: 'rgba(255,255,255,0.55)', lineHeight: 2, overflowX: 'auto' }}>
+          <div style={{ paddingLeft: 0,  color: 'rgba(255,140,80,0.9)',  fontWeight: 700 }}>A   — 5:13a — wayyissa et-eynav: o encontro inesperado (linguagem teofânica)</div>
+          <div style={{ paddingLeft: 20, color: 'rgba(255,200,80,0.9)',  fontWeight: 700 }}>B   — 5:13b — lanu attah im letsarenu: a pergunta errada de enquadramento</div>
+          <div style={{ paddingLeft: 40, color: 'rgba(255,100,130,0.9)', fontWeight: 700 }}>◉   — 5:14a — "lo" (Não): sar-tseva YHWH ← <span style={{ color: accent }}>CENTRO</span></div>
+          <div style={{ paddingLeft: 20, color: 'rgba(255,200,80,0.9)',  fontWeight: 700 }}>B'  — 5:14b — wayippol / wayyishtahu / mah adoni medabber: adoração corretiva</div>
+          <div style={{ paddingLeft: 0,  color: 'rgba(255,140,80,0.9)',  fontWeight: 700 }}>A'  — 5:15  — shal-naalekha: terra santa = postura redefinida (eco de Êx 3:5)</div>
+        </div>
+
+        <p style={{ marginTop: 12, fontSize: 14, color: 'rgba(255,255,255,0.60)' }}>
+          Cf. Woudstra, M. H. <em>The Book of Joshua</em>. NICOT. Grand Rapids: Eerdmans, 1981. pp. 94–99.⁵ | Dorsey, D. A. <em>The Literary Structure of the Old Testament</em>. Grand Rapids: Baker Academic, 1999. pp. 98–100.⁶
+        </p>
+
+        {/* Movimentos expositivos */}
+        <div style={{ marginTop: 20, borderTop: `1px solid ${accentB}`, paddingTop: 20 }}>
+          <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.18em', color: accent, textTransform: 'uppercase', marginBottom: 16 }}>
+            {pt ? 'Divisões Expositivas do Sermão' : 'Expository Sermon Divisions'}
+          </div>
+
+          {[
+            {
+              letra: 'I',
+              titulo: pt ? 'O ENCONTRO QUE INTERROMPE O GENERAL — OS OLHOS QUE SE LEVANTAM (A)' : 'THE ENCOUNTER THAT INTERRUPTS THE GENERAL — EYES THAT RISE (A)',
+              ref: 'Js 5:13a',
+              indicacao: pt
+                ? 'Js 5:13a — Josué estava perto de Jericó, provavelmente em reconhecimento militar, quando levanta os olhos (wayyissa yehoshua et-eynav) e vê um homem de pé com espada desembainhada. O encontro não foi buscado por Josué; foi iniciado por Deus no momento de maior pressão estratégica.'
+                : 'Josh 5:13a — Joshua was near Jericho, likely in military reconnaissance, when he raises his eyes (wayyissa yehoshua et-eynav) and sees a man standing with a drawn sword. The encounter was not sought by Joshua; it was initiated by God at the moment of greatest strategic pressure.',
+              exegese: pt
+                ? 'wayyissa yehoshua et-eynav ("levantou seus olhos") é linguagem de encontro teofânico que aparece em Gn 18:2 (Abraão vendo os três visitantes) e Gn 22:13 (Abraão vendo o carneiro). O verbo nāśāʾ + eynav marca sempre a irrupção do divino no campo visual humano. A iniciativa da revelação é sempre divina — Josué não buscou o encontro; Deus interrompeu o planejamento militar.'
+                : 'wayyissa yehoshua et-eynav ("raised his eyes") is theophanic encounter language appearing in Gen 18:2 (Abraham seeing the three visitors) and Gen 22:13 (Abraham seeing the ram). The verb nāśāʾ + eynav always marks divine irruption into the human visual field. The initiative of revelation is always divine — Joshua did not seek the encounter; God interrupted the military planning.',
+              teologia: pt
+                ? 'CFW V.1 — Deus se revela quando e como quer, sem que a criatura possa antecipar ou condicionar o momento da revelação. A soberania da iniciativa divina é fundamento de toda teologia da revelação. A CFB 1.1 afirma igualmente que Deus se agradou em revelar a Si mesmo e declarar a Sua vontade à Sua Igreja pela maneira que Lhe pareceu bem.'
+                : 'WCF V.1 — God reveals Himself when and as He pleases, without the creature being able to anticipate or condition the moment of revelation. The sovereignty of divine initiative is the foundation of all theology of revelation.',
+              aplicacao: pt
+                ? 'Você está tão ocupado planejando a conquista que não levanta os olhos para encontrar o Comandante? A pressão estratégica é exatamente o momento em que Deus aparece — não para confirmar o seu plano, mas para revelar o Seu.'
+                : 'Are you so busy planning the conquest that you do not raise your eyes to encounter the Commander? Strategic pressure is exactly the moment God appears — not to confirm your plan, but to reveal His.',
+              cor: 'rgba(255,140,80,1)',
+            },
+            {
+              letra: 'II',
+              titulo: pt ? 'A PERGUNTA QUE REVELA O ERRO DE ENQUADRAMENTO (B)' : 'THE QUESTION REVEALING THE ERROR OF FRAMING (B)',
+              ref: 'Js 5:13b',
+              indicacao: pt
+                ? 'Js 5:13b — "De nós és ou de nossos adversários?" (lanu attah im letsarenu). Josué enquadra o guerreiro dentro da lógica binária da guerra humana: aliado ou inimigo. É a mesma presunção de toda teologia de prosperidade nacional — "Deus está do nosso lado." O guerreiro recusa o enquadramento.'
+                : 'Josh 5:13b — "Are you for us or for our enemies?" (lanu attah im letsarenu). Joshua frames the warrior within the binary logic of human war: ally or enemy. This is the presumption of all national prosperity theology — "God is on our side." The warrior refuses the framing.',
+              exegese: pt
+                ? 'lanu attah im letsarenu — a construção sintática pressupõe que existem apenas dois lados e que o guerreiro deve escolher um. É a presunção mais profunda do coração religioso humano: que Deus funciona como recurso de apoio às causas humanas. O texto não critica Josué por perguntar — mas a resposta que vem é uma recusa radical desse enquadramento. Cf. o mesmo erro em Nm 22:28-30 (Balaão enquadrando o anjo).'
+                : 'lanu attah im letsarenu — the syntactic structure presupposes only two sides exist and the warrior must choose one. This is the deepest presumption of the human religious heart: that God functions as a support resource for human causes. The text does not criticize Joshua for asking — but the answer is a radical refusal of that framing.',
+              teologia: pt
+                ? 'CFW II.2 — Deus é infinitamente exaltado acima de todas as criaturas e não pode ser enquadrado nos sistemas humanos de avaliação. Os Seus caminhos são mais altos do que os nossos caminhos (Is 55:9). Toda teologia que recruta Deus para causas humanas — políticas, nacionais, culturais — comete o erro de Josué em 5:13b.'
+                : 'WCF II.2 — God is infinitely exalted above all creatures and cannot be framed within human evaluation systems. His ways are higher than our ways (Isa 55:9). Every theology that recruits God for human causes — political, national, cultural — commits Joshua\'s error in 5:13b.',
+              aplicacao: pt
+                ? 'Você tem pedido a Deus que tome o seu partido — quando deveria perguntar de que lado você está do Dele? A diferença entre oração de manipulação e oração de submissão é exatamente esta: quem está sendo recrutado para o projeto de quem.'
+                : 'Have you been asking God to take your side — when you should be asking which side of His you are on? The difference between manipulative prayer and submissive prayer is precisely this: who is being recruited for whose project.',
+              cor: 'rgba(255,200,80,1)',
+            },
+            {
+              letra: 'III',
+              titulo: pt ? 'LO: O "NÃO" QUE REORIENTA TODA A TEOLOGIA DA CONQUISTA (◉ CENTRO)' : 'LO: THE "NO" THAT REORIENTS ALL THEOLOGY OF CONQUEST (◉ CENTER)',
+              ref: 'Js 5:14a',
+              indicacao: pt
+                ? 'Js 5:14a — CENTRO do quiasma. "lo" (Não). Uma só palavra hebraica que recusa o enquadramento binário. "Sou o Príncipe do Exército do SENHOR" (sar-tseva YHWH). Não é aliado de Israel; não é aliado de Canaã. É o Comandante Soberano de ambos. "Agora cheguei" — a conquista não é de Israel; é de YHWH.'
+                : 'Josh 5:14a — CENTER of the chiasm. "lo" (No). A single Hebrew word refusing the binary framing. "I am the Prince of the LORD\'s Army" (sar-tseva YHWH). Not an ally of Israel; not an ally of Canaan. He is the Sovereign Commander of both. "Now I have come" — the conquest does not belong to Israel; it belongs to YHWH.',
+              exegese: pt
+                ? '"lo" (Não) é a palavra mais importante do livro de Josué. "sar-tseva YHWH" — o mesmo título aparece em Dn 8:11 (Michel?) e é identificado com YHWH porque no v.15 a ordem de descalçar os pés repete Êx 3:5 quase verbatim — o que só acontece na presença de YHWH. Não é anjo mediador comum; é o Cristo pré-encarnado (cf. Jo 8:58; Ap 19:11-16). "attah bati" ("agora cheguei") — não é passado; é chegada presente e soberana: a conquista começa agora, sob Meu comando, não sob o seu.'
+                : '"lo" (No) is the most important word in the book of Joshua. "sar-tseva YHWH" — the same title appears in Dan 8:11 and is identified with YHWH because in v.15 the command to remove sandals repeats Exod 3:5 almost verbatim — which only occurs in YHWH\'s presence. Not an ordinary mediating angel; this is the pre-incarnate Christ (cf. John 8:58; Rev 19:11-16). "attah bati" ("now I have come") — not past; it is a present, sovereign arrival: the conquest begins now, under My command, not yours.',
+              teologia: pt
+                ? 'CFW II.1 — Deus é infinito em ser e perfeição, o mais puro espírito, invisível, sem corpo, membros ou paixões — porém capaz de aparecer em forma teofânica. O "Não" de 5:14a é a mais radical afirmação da transcendência divina sobre toda causa humana: Deus não é recurso, é Senhor. CFB 2.1 afirma igualmente que Deus é um Espírito infinito em ser e perfeição, o mais santo, o mais livre, o mais absoluto.'
+                : 'WCF II.1 — God is infinite in being and perfection, the most pure spirit, invisible, without body, parts, or passions — yet able to appear in theophanic form. The "No" of 5:14a is the most radical affirmation of divine transcendence over every human cause: God is not a resource, He is Lord.',
+              aplicacao: pt
+                ? '"Não" — o Deus que você serve não é seu aliado de causas humanas. Ele é o Comandante. Você está sob Ele, não com Ele como reforço. A conquista mais importante que você precisa travar hoje não é contra o inimigo externo — é contra a presunção interna de que Deus veio reforçar o seu projeto.'
+                : '"No" — the God you serve is not your ally in human causes. He is the Commander. You are under Him, not with Him as backup. The most important conquest you need to fight today is not against the external enemy — it is against the internal presumption that God came to reinforce your project.',
+              cor: 'rgba(255,100,130,1)',
+            },
+            {
+              letra: 'IV',
+              titulo: pt ? 'JOSUÉ PROSTRA-SE E PERGUNTA O CERTO — A ADORAÇÃO QUE CORRIGE (B\')' : "JOSHUA FALLS AND ASKS RIGHTLY — THE WORSHIP THAT CORRECTS (B')",
+              ref: 'Js 5:14b',
+              indicacao: pt
+                ? 'Js 5:14b — Josué prostra-se (wayippol al-panav artsah), adora (wayyishtahu), e pergunta: "Que diz meu Senhor a seu servo?" (mah adoni medabber el-avdo). Três atos que invertem completamente a postura de 5:13b: de interrogador de lados a servo que pergunta o que o Senhor ordena.'
+                : "Josh 5:14b — Joshua falls (wayippol al-panav artsah), worships (wayyishtahu), and asks: 'What does my Lord say to His servant?' (mah adoni medabber el-avdo). Three acts that completely invert the posture of 5:13b: from a questioner of sides to a servant asking what the Lord commands.",
+              exegese: pt
+                ? 'wayippol al-panav artsah ("caiu com o rosto em terra") — postura de adoração total, idêntica à de Abraão (Gn 17:3) e de Moisés (Nm 16:22). wayyishtahu — raiz šāhāh: curvar-se em adoração cultual, não em capitulação militar. mah adoni medabber — "o que diz meu Senhor": a pergunta correta. Não "quem és tu?" (que seria lógico para alguém que acabou de ouvir um título desconhecido) — mas "o que dizes?" A curiosidade teológica dá lugar à obediência.'
+                : 'wayippol al-panav artsah ("fell face to the ground") — posture of total worship, identical to Abraham (Gen 17:3) and Moses (Num 16:22). wayyishtahu — root šāhāh: to bow in cultic worship, not military capitulation. mah adoni medabber — "what does my Lord say": the correct question. Not "who are you?" (which would be logical for someone who just heard an unknown title) — but "what do you say?" Theological curiosity gives way to obedience.',
+              teologia: pt
+                ? 'CFW XVI.1-2 — a obediência genuína nasce da fé e não precede o entendimento completo — ela responde ao Senhor antes de resolver todas as perguntas. Josué não pediu mais explicações sobre o título "Príncipe do Exército do SENHOR"; ele perguntou imediatamente o que deveria fazer. A CFB 14.2 afirma que a fé salvadora inclui ceder, receber e repousar sobre Cristo para salvação — e isso se expressa em obediência responsiva.'
+                : 'WCF XVI.1-2 — genuine obedience is born of faith and does not wait for complete understanding — it responds to the Lord before resolving all questions. Joshua did not request more explanation about the title "Prince of the LORD\'s Army"; he immediately asked what he should do.',
+              aplicacao: pt
+                ? 'A adoração que corrige é aquela que muda a pergunta: de "quem está do meu lado?" para "o que dizes, Senhor?" Josué entrou em Jericó como conquistador — mas a conquista começou quando ele mudou de interrogador para servo. Qual é a pergunta que você precisa parar de fazer e substituir por "que diz meu Senhor?"'
+                : 'The worship that corrects is the one that changes the question: from "who is on my side?" to "what do you say, Lord?" Joshua entered Jericho as a conqueror — but the conquest began when he changed from interrogator to servant. What is the question you need to stop asking and replace with "what does my Lord say?"',
+              cor: 'rgba(255,200,80,1)',
+            },
+            {
+              letra: 'V',
+              titulo: pt ? 'DESCALÇA AS SANDÁLIAS — A SANTIDADE QUE PRECEDE A VITÓRIA (A\')' : "REMOVE YOUR SANDALS — THE HOLINESS THAT PRECEDES VICTORY (A')",
+              ref: 'Js 5:15',
+              indicacao: pt
+                ? 'Js 5:15 — "O Príncipe do Exército do SENHOR disse a Josué: Descalça as sandálias dos teus pés, porque o lugar em que estás é santo." A ordem replica quase verbatim Êx 3:5 (Moisés diante da sarça ardente). O terreno perto de Jericó torna-se terra santa pela presença divina — não por ritual, não por consagração humana.'
+                : 'Josh 5:15 — "The Prince of the LORD\'s Army said to Joshua: Remove the sandals from your feet, for the place where you are standing is holy." The command nearly verbatim replicates Exod 3:5 (Moses before the burning bush). The ground near Jericho becomes holy ground through divine presence — not by ritual, not by human consecration.',
+              exegese: pt
+                ? 'shal-naalekha meʿal raglekha ("descalça as sandálias dos teus pés") — eco direto de Êx 3:5 (shal-naalekha meʿal raglekha). O texto de Josué 5 está deliberadamente construído para ecoar a teofania do Sinai: assim como Moisés foi comissionado descalço, Josué recebe a comissão para Jericó descalço. ki hamakom asher attah omed alav qadosh hu ("porque o lugar em que estás é santo") — a santidade não é intrínseca ao solo; é derivada da presença de YHWH. O texto encerra sem revelar as instruções — o que sugere que 6:2-5 é a continuação direta desta teofania.'
+                : "shal-naalekha meʿal raglekha ('remove your sandals') — direct echo of Exod 3:5. Joshua 5 is deliberately constructed to echo the Sinai theophany: just as Moses was commissioned barefoot, Joshua receives Jericho's commission barefoot. ki hamakom asher attah omed alav qadosh hu ('the place where you stand is holy') — holiness is not intrinsic to the soil; it is derived from YHWH's presence. The text closes without revealing the instructions — suggesting 6:2-5 is the direct continuation of this theophany.",
+              teologia: pt
+                ? 'CFW II.2 — Deus é infinitamente Santo, e a criatura só pode se aproximar Dele pela mediação que Ele mesmo estabelece. A ordem das sandálias revela a ordem da conquista: santidade → estratégia, adoração → ação, reverência → vitória. Hb 12:28-29: "tenhamos graça para servir a Deus agradavelmente, com reverência e santo temor; porque o nosso Deus é fogo consumidor." A CFB 2.2 afirma igualmente que Deus é santíssimo em todos os Seus conselhos, obras e mandamentos.'
+                : 'WCF II.2 — God is infinitely Holy, and the creature can only approach Him through the mediation He Himself establishes. The sandal command reveals the order of conquest: holiness → strategy, worship → action, reverence → victory. Heb 12:28-29: "let us be thankful, and so worship God acceptably with reverence and awe, for our God is a consuming fire."',
+              aplicacao: pt
+                ? 'Josué entrou em Jericó não com um plano de batalha — entrou descalço. A santidade que precede a vitória é mais importante que a estratégia que a prepara. Antes de qualquer batalha que Deus lhe chamou a travar, há uma pergunta anterior: você descalçou as sandálias? Você reconheceu que o terreno em que pisa é santo — porque Ele está presente?'
+                : 'Joshua entered Jericho not with a battle plan — he entered barefoot. The holiness that precedes victory is more important than the strategy that prepares for it. Before any battle God has called you to fight, there is a prior question: did you remove your sandals? Did you acknowledge that the ground you stand on is holy — because He is present?',
+              cor: 'rgba(255,140,80,1)',
+            },
+          ].map((m, i) => (
+            <div key={i} style={{ marginBottom: 20, borderRadius: 14, border: '1px solid rgba(255,255,255,0.08)', background: 'rgba(0,0,0,0.25)', overflow: 'hidden' }}>
+              <div style={{ padding: '14px 18px', background: `${m.cor}18`, borderBottom: `1px solid ${m.cor}40`, display: 'flex', alignItems: 'center', gap: 12 }}>
+                <div style={{ fontFamily: 'monospace', fontWeight: 900, color: m.cor, fontSize: 20, minWidth: 36 }}>{m.letra}</div>
+                <div>
+                  <div style={{ fontSize: 10, color: m.cor, fontWeight: 700, letterSpacing: '0.15em', marginBottom: 2 }}>{m.ref}</div>
+                  <div style={{ fontSize: 14, fontWeight: 800, color: C.white }}>{m.titulo}</div>
+                </div>
+              </div>
+              <div style={{ padding: '16px 18px' }}>
+                <div style={{ marginBottom: 10 }}>
+                  <span style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.15em', color: 'rgba(255,255,255,0.40)', textTransform: 'uppercase' }}>{pt ? 'Indicação Textual' : 'Textual Indication'}</span>
+                  <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.75)', marginTop: 4, lineHeight: 1.65 }}>{m.indicacao}</p>
+                </div>
+                <div style={{ marginBottom: 10 }}>
+                  <span style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.15em', color: 'rgba(255,255,255,0.40)', textTransform: 'uppercase' }}>{pt ? 'Exegese' : 'Exegesis'}</span>
+                  <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.75)', marginTop: 4, lineHeight: 1.65 }}>{m.exegese}</p>
+                </div>
+                <div style={{ marginBottom: 10 }}>
+                  <span style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.15em', color: 'rgba(255,255,255,0.40)', textTransform: 'uppercase' }}>{pt ? 'Teologia Reformada' : 'Reformed Theology'}</span>
+                  <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.75)', marginTop: 4, lineHeight: 1.65 }}>{m.teologia}</p>
+                </div>
+                <div style={{ padding: '10px 14px', borderRadius: 10, background: `${m.cor}12`, borderLeft: `3px solid ${m.cor}` }}>
+                  <span style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.15em', color: m.cor, textTransform: 'uppercase' }}>{pt ? 'Aplicação' : 'Application'}</span>
+                  <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.80)', marginTop: 4, lineHeight: 1.65 }}>{m.aplicacao}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </SectionCard>
+
+      {/* Seção VIII — Eixo Redentor */}
+      <SectionCard num="VIII" icon="✝️" title={pt ? 'Eixo Redentor (Histórico-Redentivo)' : 'Redemptive Axis (Redemptive-Historical)'}>
+        <div style={{ display: 'grid', gap: 12 }}>
+          {[
+            {
+              at: pt ? 'Josué 5:14a — "sar-tseva YHWH" — Príncipe do Exército do SENHOR' : 'Joshua 5:14a — "sar-tseva YHWH" — Prince of the LORD\'s Army',
+              nt: pt ? 'Cristo Comandante — Ap 19:11-16: "no seu nome está escrito Rei dos Reis e Senhor dos Senhores"; o guerreiro de Js 5 é o Cristo pré-encarnado' : 'Christ as Commander — Rev 19:11-16: "on his robe and on his thigh he has written King of Kings and Lord of Lords"; the warrior of Josh 5 is the pre-incarnate Christ',
+              cor: 'rgba(255,140,80,0.15)',
+            },
+            {
+              at: pt ? 'Josué prostra-se e descalça as sandálias (Js 5:14b-15) — eco de Êx 3:5' : 'Joshua falls and removes sandals (Josh 5:14b-15) — echo of Exod 3:5',
+              nt: pt ? 'João Batista — "não sou digno de desatar as correias das sandálias" (Jo 1:27); o ato de Josué é padrão de toda resposta humana ante a glória de Cristo' : 'John the Baptist — "I am not worthy to untie the strap of his sandal" (John 1:27); Joshua\'s act is the pattern for every human response before Christ\'s glory',
+              cor: 'rgba(255,200,80,0.15)',
+            },
+            {
+              at: pt ? 'Teofania antes de Jericó — o Comandante aparece com espada desembainhada (Js 5:13)' : 'Theophany before Jericho — the Commander appears with drawn sword (Josh 5:13)',
+              nt: pt ? 'Getsêmani — o mesmo "Eu sou" (Jo 18:6) prostrou os soldados antes da batalha; a identidade divina precede e garante a vitória' : 'Gethsemane — the same "I am" (John 18:6) drove soldiers back before the battle; divine identity precedes and guarantees victory',
+              cor: 'rgba(180,120,255,0.15)',
+            },
+          ].map((row, i) => (
+            <div key={i} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 1, borderRadius: 12, overflow: 'hidden' }}>
+              <div style={{ padding: '12px 16px', background: row.cor, fontSize: 13, color: 'rgba(255,255,255,0.80)', lineHeight: 1.55 }}>
+                <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.15em', color: C.atColor, marginBottom: 4 }}>AT</div>
+                {row.at}
+              </div>
+              <div style={{ padding: '12px 16px', background: row.cor, fontSize: 13, color: 'rgba(255,255,255,0.80)', lineHeight: 1.55, borderLeft: '1px solid rgba(255,255,255,0.06)' }}>
+                <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.15em', color: C.ntColor, marginBottom: 4 }}>NT</div>
+                {row.nt}
+              </div>
+            </div>
+          ))}
+        </div>
+        <p style={{ marginTop: 14, fontSize: 13, color: 'rgba(255,255,255,0.55)', fontStyle: 'italic' }}>
+          {pt
+            ? 'Cf. Greidanus, S. Preaching Christ from the Old Testament. Grand Rapids: Eerdmans, 1999. | Goldsworthy, G. Preaching the Whole Bible as Christian Scripture. Grand Rapids: Eerdmans, 2000.'
+            : 'Cf. Greidanus, S. Preaching Christ from the Old Testament. Grand Rapids: Eerdmans, 1999. | Goldsworthy, G. Preaching the Whole Bible as Christian Scripture. Grand Rapids: Eerdmans, 2000.'}
+        </p>
+      </SectionCard>
+
+      {/* Seção IX — Doutrina Central */}
+      <SectionCard num="IX" icon="⚓" title={pt ? 'Doutrina Central' : 'Central Doctrine'}>
+        <div style={{ padding: '16px 20px', borderRadius: 12, background: 'rgba(255,140,80,0.10)', border: `1px solid ${accentB}`, marginBottom: 14 }}>
+          <p style={{ fontWeight: 700, fontSize: 16, color: C.white, margin: 0, lineHeight: 1.7 }}>
+            {pt
+              ? 'YHWH é o Comandante Soberano que não toma partido de nenhum exército humano: Ele transcende toda causa nacional, política ou religiosa, e exige que Seus líderes respondam ao encontro com o Santo pela postura de adoração e santidade — não de estratégia e aliança.'
+              : 'YHWH is the Sovereign Commander who takes no side with any human army: He transcends every national, political, or religious cause, and demands that His leaders respond to the encounter with the Holy One through a posture of worship and holiness — not strategy and alliance.'}
+          </p>
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(180px,1fr))', gap: 10 }}>
+          {[
+            { titulo: pt ? 'Soberania Divina' : 'Divine Sovereignty', desc: pt ? 'CFW II — Deus acima de toda causa humana' : 'WCF II — God above every human cause', cor: 'rgba(255,140,80,0.15)' },
+            { titulo: pt ? 'Transcendência' : 'Transcendence', desc: pt ? '"Não" — Deus recusa ser enquadrado em sistemas humanos' : '"No" — God refuses to be framed in human systems', cor: 'rgba(255,200,80,0.15)' },
+            { titulo: pt ? 'Santidade' : 'Holiness', desc: pt ? 'Êx 3:5 → Js 5:15 — terra santa pela presença divina' : 'Exod 3:5 → Josh 5:15 — holy ground by divine presence', cor: 'rgba(255,100,130,0.15)' },
+            { titulo: pt ? 'Adoração Responsiva' : 'Responsive Worship', desc: pt ? 'Hb 12:28-29 — reverência e santo temor como postura básica' : 'Heb 12:28-29 — reverence and awe as basic posture', cor: 'rgba(180,120,255,0.15)' },
+          ].map((d, i) => (
+            <div key={i} style={{ padding: '12px 14px', borderRadius: 10, background: d.cor, border: '1px solid rgba(255,255,255,0.08)' }}>
+              <div style={{ fontSize: 12, fontWeight: 800, color: accent, marginBottom: 4 }}>{d.titulo}</div>
+              <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.65)', lineHeight: 1.55 }}>{d.desc}</div>
+            </div>
+          ))}
+        </div>
+      </SectionCard>
+
+      {/* Seção X — Aplicações Pastorais */}
+      <SectionCard num="X" icon="🌿" title={pt ? 'Aplicações Pastorais' : 'Pastoral Applications'}>
+        {[
+          {
+            icone: '🌍',
+            titulo: pt ? 'Universal' : 'Universal',
+            texto: pt
+              ? 'O "Não" de Josué 5:14 confronta toda teologia que recruta Deus para causas humanas. Não importa o lado — político, cultural, religioso, nacional: YHWH não veio reforçar nenhum projeto humano. Ele é o Comandante; você é o servo que pergunta "o que dizes, Senhor?"'
+              : 'The "No" of Joshua 5:14 confronts every theology that recruits God for human causes. No matter the side — political, cultural, religious, national: YHWH did not come to reinforce any human project. He is the Commander; you are the servant who asks "what do you say, Lord?"',
+          },
+          {
+            icone: '📖',
+            titulo: pt ? 'Para os Crentes' : 'For Believers',
+            texto: pt
+              ? 'Antes de qualquer batalha espiritual, pergunta-se: descalcei as sandálias? A santidade que precede a vitória não é sentimento — é postura concreta: prostrar-se, adorar, perguntar o que o Senhor diz antes de avançar. Josué foi ao campo de batalha com os pés descalços — e venceu.'
+              : 'Before any spiritual battle, ask yourself: did I remove my sandals? The holiness that precedes victory is not a feeling — it is a concrete posture: falling down, worshiping, asking what the Lord says before advancing. Joshua went to the battlefield barefoot — and won.',
+          },
+          {
+            icone: '⛪',
+            titulo: pt ? 'Para as Famílias' : 'For Families',
+            texto: pt
+              ? 'A família que ensina os filhos a perguntar "o que diz meu Senhor?" antes de "quem está do nosso lado?" está construindo a fundação mais sólida de todas: a submissão ao Comandante Soberano acima de todas as lealdades humanas — família, tribo, nação, cultura.'
+              : 'The family that teaches children to ask "what does my Lord say?" before "who is on our side?" is building the most solid foundation of all: submission to the Sovereign Commander above all human loyalties — family, tribe, nation, culture.',
+          },
+          {
+            icone: '📢',
+            titulo: pt ? 'Para o Pregador' : 'For the Preacher',
+            texto: pt
+              ? 'Você tem pregado um Deus que confirma o projeto da sua congregação — ou o Deus que aparece com espada desembainhada e diz "Não"? A pregação que não desafia a presunção de que Deus está do nosso lado não está pregando o Deus de Josué 5:14.'
+              : 'Are you preaching a God who confirms your congregation\'s project — or the God who appears with a drawn sword and says "No"? Preaching that does not challenge the presumption that God is on our side is not preaching the God of Joshua 5:14.',
+          },
+        ].map((a, i) => (
+          <div key={i} style={{ display: 'flex', gap: 14, marginBottom: 14, padding: '12px 14px', borderRadius: 12, background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.06)' }}>
+            <div style={{ fontSize: 22, flexShrink: 0, marginTop: 2 }}>{a.icone}</div>
+            <div>
+              <div style={{ fontSize: 12, fontWeight: 800, color: accent, marginBottom: 4, textTransform: 'uppercase', letterSpacing: '0.12em' }}>{a.titulo}</div>
+              <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.75)', lineHeight: 1.65 }}>{a.texto}</div>
+            </div>
+          </div>
+        ))}
+      </SectionCard>
+
+      {/* Seção XI — Conclusão */}
+      <SectionCard num="XI" icon="🏁" title={pt ? 'Conclusão' : 'Conclusion'}>
+        <p style={{ fontSize: 15, lineHeight: 1.85, color: 'rgba(255,255,255,0.82)' }}>
+          {pt
+            ? 'Josué estava planejando a conquista quando o Comandante apareceu com espada desembainhada. E Josué fez a pergunta errada: "De que lado você está?" A resposta foi "Não." Não de nenhum lado humano — porque a conquista não é de Israel. É do SENHOR.'
+            : 'Joshua was planning the conquest when the Commander appeared with a drawn sword. And Joshua asked the wrong question: "Which side are you on?" The answer was "No." Not on any human side — because the conquest does not belong to Israel. It belongs to the LORD.'}
+        </p>
+        <p style={{ fontSize: 15, lineHeight: 1.85, color: 'rgba(255,255,255,0.82)', marginTop: 12 }}>
+          {pt
+            ? 'E a única preparação que Josué precisava não era um plano de batalha: era o rosto no chão e os pés descalços. A santidade precede a vitória. O Comandante que apareceu a Josué aparecerá novamente em Apocalipse 19 — montado, com espada, com o nome que ninguém conhece.'
+            : 'And the only preparation Joshua needed was not a battle plan: it was his face on the ground and his feet bare. Holiness precedes victory. The Commander who appeared to Joshua will appear again in Revelation 19 — mounted, with a sword, with the name no one knows.'}
+        </p>
+        <p style={{ fontSize: 15, lineHeight: 1.85, color: accent, marginTop: 12, fontWeight: 700 }}>
+          {pt
+            ? 'Antes de qualquer batalha que Deus lhe chamou a travar, descalce as sandálias. Amém.'
+            : 'Before any battle God has called you to fight, remove your sandals. Amen.'}
+        </p>
+      </SectionCard>
+
+      {/* Notas de Rodapé */}
+      <div style={{ marginTop: 24, padding: '16px 20px', borderRadius: 12, background: 'rgba(0,0,0,0.25)', border: '1px solid rgba(255,255,255,0.06)' }}>
+        <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.18em', color: C.muted, textTransform: 'uppercase', marginBottom: 12 }}>{pt ? 'Notas e Referências' : 'Notes and References'}</div>
+        <Footnote num={1} text="Woudstra, M. H. The Book of Joshua. NICOT. Grand Rapids: Eerdmans, 1981. p. 97." />
+        <Footnote num={2} text="Keller, T. Preaching: Communicating Faith in an Age of Skepticism. New York: Viking, 2015. pp. 157–162." />
+        <Footnote num={3} text="Chapell, B. Christ-Centered Preaching. 3. ed. Grand Rapids: Baker Academic, 2018. pp. 121–135." />
+        <Footnote num={4} text="Chapell, B. Christ-Centered Preaching. 3. ed. Grand Rapids: Baker Academic, 2018. pp. 121–135." />
+        <Footnote num={5} text="Woudstra, M. H. The Book of Joshua. NICOT. Grand Rapids: Eerdmans, 1981. pp. 94–99." />
+        <Footnote num={6} text="Dorsey, D. A. The Literary Structure of the Old Testament. Grand Rapids: Baker Academic, 1999. pp. 98–100." />
+        <Footnote num={7} text="Greidanus, S. Preaching Christ from the Old Testament. Grand Rapids: Eerdmans, 1999. pp. 237–252." />
+        <Footnote num={8} text="Howard Jr., D. M. Joshua. NAC 5. Nashville: B&H Publishing, 1998. pp. 154–162." />
+        <Footnote num={9} text="Keil, C. F.; Delitzsch, F. Commentary on the Old Testament. Vol. 2: Joshua, Judges, Ruth. Peabody: Hendrickson, 1996. pp. 58–62." />
+        <Footnote num={10} text="Lloyd-Jones, D. M. Preaching and Preachers. Grand Rapids: Zondervan, 1971. pp. 75, 97." />
+      </div>
+    </div>
+  );
+}
+
+// ─── InfograficoJosue5v13Section — Josué 5:13–15 ──────────────────────
+function InfograficoJosue5v13Section({ pt }: { pt: boolean }) {
+
+  const ORANGE = 'rgba(255,140,80,1)';
+  const GOLD   = 'rgba(255,180,50,1)';
+  const BLUE   = 'rgba(80,200,255,1)';
+  const ROSE   = 'rgba(255,100,130,1)';
+
+  const DESC_BIGIDEA = pt
+    ? 'A Big Idea é o conceito único, abrangente e predicativo que governa todo o sermão — extraído diretamente do texto. Robinson definiu-a como "a single, unifying concept of the biblical text expressed in a complete sentence." Todo ponto, ilustração e aplicação deve servir essa ideia.'
+    : 'The Big Idea is the single, comprehensive, predicative concept governing the entire sermon — drawn from the text. Every point, illustration, and application must serve it.';
+
+  const DESC_PERGUNTA = pt
+    ? 'A Pergunta Central é a tensão existencial ou teológica que o texto levanta no coração do ouvinte. Ela serve de gancho (hook) e de fio condutor para toda a mensagem — Robinson a chamou de "the complement" antes de ser respondida pela proposição.'
+    : 'The Central Question is the existential or theological tension the text raises in the hearer\'s heart. It serves as hook and unifying thread for the entire message.';
+
+  const DESC_PROP = pt
+    ? 'A Proposição é a resposta afirmativa, completa e predicativa à Pergunta Central — a Big Idea formulada como tese declarativa. Deve ser memorável, fiel ao texto e capaz de governar cada divisão do sermão.'
+    : 'The Proposition is the affirmative, complete, predicative answer to the Central Question — the Big Idea as a declarative thesis. It must govern every sermon division.';
+
+  const DESC_CHIASM = pt
+    ? "O Quiasma é um recurso literário hebraico em que os elementos se correspondem simetricamente (A–B–◉–B'–A'). O CENTRO (◉) carrega o peso teológico principal. Em Josué 5:13-15, o centro é o 'Não' soberano (v.14a) que reorienta toda a perícope."
+    : "Chiasm is a Hebrew literary device where elements correspond symmetrically (A–B–◉–B'–A'). The CENTER (◉) carries the main theological weight. In Joshua 5:13-15, the center is the sovereign 'No' (v.14a) that reorients the entire pericope.";
+
+  const DESC_MOVIMENTOS = pt
+    ? 'Os Movimentos do Sermão são as grandes divisões que desenvolvem a Big Idea por etapas — cada um explicando, argumentando e aplicando um aspecto da proposição. Eles fluem organicamente do texto e conduzem o ouvinte da tensão até a resolução final.'
+    : 'Sermon Movements are the major divisions that develop the Big Idea step by step. They flow from the text and lead the hearer from tension to resolution.';
+
+  const DESC_CRISTOLOGICO = pt
+    ? 'O Eixo Redentor identifica onde a perícope se situa na história da redenção culminada em Cristo. Josué 5:13-15 é especialmente rico em cristologia direta: o "sar-tseva YHWH" é identificado com YHWH pela repetição de Êx 3:5 — o Cristo pré-encarnado que comanda a conquista.'
+    : 'The Redemptive Axis identifies where the pericope stands in redemptive history culminating in Christ. Joshua 5:13-15 is especially rich in direct Christology: the "sar-tseva YHWH" is identified with YHWH by the repetition of Exod 3:5 — the pre-incarnate Christ commanding the conquest.';
+
+  const DESC_APPS = pt
+    ? 'A Aplicação é a ponte do mundo do texto ao mundo do ouvinte — prescrevendo o que o ouvinte deve crer, sentir ou fazer em resposta. Chapell insiste que a aplicação deve derivar do FCF (Fallen Condition Focus), nunca ser inventada pelo pregador.'
+    : 'Application is the bridge from the text\'s world to the hearer\'s world — prescribing what the hearer must believe, feel, or do. Chapell insists application must derive from the FCF, never invented by the preacher.';
+
+  const DESC_CONCLUSAO = pt
+    ? 'A Conclusão é o apelo final que convoca o ouvinte à resposta concreta diante da verdade proclamada — fé, arrependimento, louvor ou obediência. Lloyd-Jones alertava que a conclusão deve ser o momento de maior intensidade do sermão.'
+    : 'The Conclusion is the final appeal calling the hearer to a concrete response — faith, repentance, praise, or obedience. Lloyd-Jones warned it must be the sermon\'s moment of greatest intensity.';
+
+  const FN: { id: string; txt: string }[] = [
+    { id: 'j5-r1',  txt: 'WOUDSTRA, Marten H. The Book of Joshua. NICOT. Grand Rapids: Eerdmans, 1981. pp. 94–99.' },
+    { id: 'j5-r2',  txt: 'HOWARD JR., David M. Joshua. NAC 5. Nashville: B&H Publishing, 1998. pp. 154–162.' },
+    { id: 'j5-r3',  txt: 'KEIL, C. F.; DELITZSCH, F. Commentary on the Old Testament. Vol. 2. Peabody: Hendrickson, 1996. pp. 58–62.' },
+    { id: 'j5-r4',  txt: 'KELLER, Timothy. Preaching: Communicating Faith in an Age of Skepticism. New York: Viking, 2015. pp. 157–162.' },
+    { id: 'j5-r5',  txt: 'CHAPELL, Bryan. Christ-Centered Preaching. 3. ed. Grand Rapids: Baker Academic, 2018. pp. 121–135.' },
+    { id: 'j5-r6',  txt: 'ROBINSON, Haddon W. Biblical Preaching. 3. ed. Grand Rapids: Baker Academic, 2014. p. 35.' },
+    { id: 'j5-r7',  txt: 'DORSEY, David A. The Literary Structure of the Old Testament. Grand Rapids: Baker Academic, 1999. pp. 98–100.' },
+    { id: 'j5-r8',  txt: 'GREIDANUS, Sidney. Preaching Christ from the Old Testament. Grand Rapids: Eerdmans, 1999. pp. 237–252.' },
+    { id: 'j5-r9',  txt: 'LLOYD-JONES, David Martyn. Preaching and Preachers. Grand Rapids: Zondervan, 1971. pp. 75, 97.' },
+    { id: 'j5-r10', txt: 'GOLDSWORTHY, Graeme. Preaching the Whole Bible as Christian Scripture. Grand Rapids: Eerdmans, 2000. pp. 86–90.' },
+  ];
+
+  const Ref = ({ ids }: { ids: string[] }) => (
+    <sup style={{ fontSize: 10, color: ORANGE, marginLeft: 2, fontWeight: 700 }}>
+      {ids.map((id, i) => {
+        const num = FN.findIndex(f => f.id === id) + 1;
+        return <a key={id} href={`#${id}`} style={{ color: ORANGE, textDecoration: 'none' }}>{i > 0 ? ',' : ''}{num}</a>;
+      })}
+    </sup>
+  );
+
+  const DescBlock = ({ text, refs }: { text: string; refs: string[] }) => (
+    <div style={{ margin: '10px 0 4px', padding: '10px 14px', borderRadius: 10, background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)' }}>
+      <p style={{ margin: 0, fontSize: 'clamp(12px,1.5vw,13px)', color: 'rgba(220,230,255,0.65)', lineHeight: 1.75, fontStyle: 'italic' }}>
+        {text}<Ref ids={refs} />
+      </p>
+    </div>
+  );
+
+  const MOVES = [
+    {
+      num: 'I', sym: 'A', ref: 'Js 5:13a',
+      title: pt ? 'O Encontro que Interrompe o General (A)' : 'The Encounter that Interrupts the General (A)',
+      sub: pt ? '[Pergunta 1ª parte] "Como o Comandante se revela no momento de maior pressão estratégica?"' : '[Question part 1] "How does the Commander reveal Himself at the moment of greatest strategic pressure?"',
+      emoji: '⚔️',
+      key: pt ? 'wayyissa yehoshua et-eynav ("levantou seus olhos") — linguagem teofânica (cf. Gn 18:2; 22:13). O encontro não foi buscado por Josué; foi iniciado por Deus. A iniciativa da revelação é sempre divina. O guerreiro com espada desembainhada não está esperando ser recrutado — está chegando como Comandante.' : 'wayyissa yehoshua et-eynav ("raised his eyes") — theophanic language (cf. Gen 18:2; 22:13). The encounter was not sought by Joshua; it was initiated by God. The initiative of revelation is always divine. The warrior with drawn sword is not waiting to be recruited — he is arriving as Commander.',
+      app: pt ? 'Você está tão ocupado planejando a conquista que não levanta os olhos para encontrar o Comandante? A pressão estratégica é exatamente o momento em que Deus aparece — não para confirmar o seu plano, mas para revelar o Seu.' : 'Are you so busy planning the conquest that you do not raise your eyes to encounter the Commander? Strategic pressure is exactly when God appears — not to confirm your plan, but to reveal His.',
+      desc: pt ? 'O 1º movimento (A do quiasma) estabelece a cena com linguagem teofânica deliberada (Robinson: "the subject in its unresolved state"). O ouvinte precisa sentir o peso do encontro inesperado antes de ouvir o que o guerreiro revela — caso contrário, o "Não" não terá peso.' : 'Movement 1 (A of the chiasm) sets the scene with deliberate theophanic language (Robinson: "the subject in its unresolved state"). The hearer must feel the weight of the unexpected encounter before hearing what the warrior reveals.',
+      descRefs: ['j5-r6', 'j5-r1'],
+      cor: ORANGE, corL: 'rgba(255,140,80,0.10)', corB: 'rgba(255,140,80,0.30)',
+    },
+    {
+      num: 'II', sym: 'B', ref: 'Js 5:13b',
+      title: pt ? 'A Pergunta que Revela o Erro de Enquadramento (B)' : 'The Question Revealing the Error of Framing (B)',
+      sub: pt ? '[Pergunta 2ª parte] "O que revela a pergunta de Josué sobre nossa compreensão de Deus?"' : '[Question part 2] "What does Joshua\'s question reveal about our understanding of God?"',
+      emoji: '❓',
+      key: pt ? 'lanu attah im letsarenu ("de nós és ou de nossos adversários?") — a pergunta pressupõe que Deus escolhe lados entre exércitos humanos. É a presunção mais profunda do coração religioso: que Deus funciona como recurso de apoio às causas humanas. O guerreiro recusa o enquadramento.' : 'lanu attah im letsarenu ("are you for us or our enemies?") — the question presupposes God chooses sides between human armies. This is the deepest presumption of the religious heart: that God functions as a support resource for human causes. The warrior refuses the framing.',
+      app: pt ? 'Você tem pedido a Deus que tome o seu partido — quando deveria perguntar de que lado você está do Dele? A diferença entre oração de manipulação e oração de submissão é exatamente esta: quem está sendo recrutado para o projeto de quem.' : 'Have you been asking God to take your side — when you should be asking which side of His you are on? The difference between manipulative and submissive prayer is this: who is being recruited for whose project.',
+      desc: pt ? 'O 2º movimento (B do quiasma) expõe "the Fallen Condition Focus" (Chapell): a presunção de que Deus é recurso é a condição caída que toda a perícope confronta. A pergunta de Josué não é ingênua — ela é o erro mais comum e mais refinado da teologia religiosa popular.' : 'Movement 2 (B of the chiasm) exposes the "Fallen Condition Focus" (Chapell): the presumption that God is a resource is the fallen condition the entire pericope confronts.',
+      descRefs: ['j5-r5', 'j5-r2'],
+      cor: GOLD, corL: 'rgba(255,180,50,0.10)', corB: 'rgba(255,180,50,0.30)',
+    },
+    {
+      num: 'III', sym: '◉ CENTRO', ref: 'Js 5:14a',
+      title: pt ? '"Não": O Comandante Soberano (◉)' : '"No": The Sovereign Commander (◉)',
+      sub: pt ? '[Clímax] "O que o \'Não\' revela sobre quem realmente conduz a conquista?"' : '[Climax] "What does the \'No\' reveal about who truly leads the conquest?"',
+      emoji: '⚡',
+      key: pt ? '"lo" (Não) — uma palavra que reorienta toda a teologia da conquista. "sar-tseva YHWH" — Príncipe do Exército de YHWH; identificado com YHWH porque v.15 repete Êx 3:5 quase verbatim. É o Cristo pré-encarnado. "attah bati" ("agora cheguei") — a conquista começa agora, sob Meu comando. "lo" é a resposta mais importante do livro de Josué.' : '"lo" (No) — one word that reorients all theology of conquest. "sar-tseva YHWH" — identified with YHWH because v.15 repeats Exod 3:5 almost verbatim. This is the pre-incarnate Christ. "attah bati" ("now I have come") — the conquest begins now, under My command. "lo" is the most important answer in the book of Joshua.',
+      app: pt ? '"Não" — o Deus que você serve não é seu aliado de causas humanas. Ele é o Comandante. Você está sob Ele, não com Ele como reforço. A conquista mais importante que você precisa travar hoje não é contra o inimigo externo — é contra a presunção interna de que Deus veio reforçar o seu projeto.' : '"No" — the God you serve is not your ally in human causes. He is the Commander. You are under Him, not with Him as backup. The most important conquest today is not against the external enemy — it is against the internal presumption that God came to reinforce your project.',
+      desc: pt ? 'O CENTRO quiástico (◉) é o ápice teológico ao qual toda a perícope converge (Dorsey). "lo" recusa o enquadramento binário e revela a transcendência absoluta de YHWH sobre toda causa humana. Este é o ponto doutrinário central: Deus não é recurso; é Soberano.' : 'The chiastic CENTER (◉) is the theological apex to which the entire pericope converges (Dorsey). "lo" refuses the binary framing and reveals YHWH\'s absolute transcendence over every human cause. This is the central doctrinal point: God is not a resource; He is Sovereign.',
+      descRefs: ['j5-r7', 'j5-r3'],
+      cor: ROSE, corL: 'rgba(255,100,130,0.10)', corB: 'rgba(255,100,130,0.30)',
+    },
+    {
+      num: 'IV', sym: "B' + A'", ref: 'Js 5:14b-15',
+      title: pt ? 'A Postura que Aprende com o "Não" (B\' + A\')' : "The Posture that Learns from the 'No' (B' + A')",
+      sub: pt ? '[Resolução] "Como a adoração corrige o erro de enquadramento e abre o caminho para a vitória?"' : "[Resolution] \"How does worship correct the error of framing and open the path to victory?\"",
+      emoji: '👡',
+      key: pt ? 'wayippol al-panav artsah (prostrou-se, B\') espelha lanu attah (pergunta errada, B): adoração substitui interrogação. shal-naalekha (descalça, A\') espelha wayyissa et-eynav (levantou os olhos, A): a postura corrigida substitui a curiosidade estratégica. Josué entra em Jericó descalço — e conquista.' : "wayippol al-panav artsah (fell down, B') mirrors lanu attah (wrong question, B): worship replaces interrogation. shal-naalekha (remove sandals, A') mirrors wayyissa et-eynav (raised eyes, A): the corrected posture replaces strategic curiosity. Joshua enters Jericho barefoot — and conquers.",
+      app: pt ? 'Antes de qualquer batalha que Deus lhe chamou a travar, descalce as sandálias. A santidade que precede a vitória é mais importante que a estratégia que a prepara. Josué entrou em Jericó não com um plano de batalha — entrou com o rosto no chão e os pés descalços.' : 'Before any battle God has called you to fight, remove your sandals. The holiness that precedes victory is more important than the strategy that prepares for it. Joshua entered Jericho not with a battle plan — he entered face-down and barefoot.',
+      desc: pt ? "Os movimentos B' e A' fecham o quiasma espelhando B e A — confirmando que a estrutura literária é argumento teológico: a adoração (B') corrige a pergunta errada (B); a postura descalça (A') corrige os olhos levantados em curiosidade estratégica (A). A resolução é doutrinária e narrativa ao mesmo tempo." : "Movements B' and A' close the chiasm mirroring B and A — confirming that the literary structure is theological argument: worship (B') corrects the wrong question (B); barefoot posture (A') corrects eyes raised in strategic curiosity (A).",
+      descRefs: ['j5-r5', 'j5-r4'],
+      cor: BLUE, corL: 'rgba(80,200,255,0.10)', corB: 'rgba(80,200,255,0.30)',
+    },
+  ];
+
+  const CHIASM = [
+    { sym: 'A',   ref: 'Js 5:13a',  label: pt ? 'wayyissa et-eynav — os olhos levantados em encontro teofânico' : 'wayyissa et-eynav — eyes raised in theophanic encounter',    cor: ORANGE, indent: 0, emoji: '⚔️' },
+    { sym: 'B',   ref: 'Js 5:13b',  label: pt ? 'lanu attah im letsarenu — a pergunta errada de enquadramento'  : 'lanu attah im letsarenu — the wrong framing question',          cor: GOLD,   indent: 1, emoji: '❓' },
+    { sym: '◉',   ref: 'Js 5:14a',  label: pt ? '⬛ CENTRO: "lo" + sar-tseva YHWH + attah bati — o Não soberano' : '⬛ CENTER: "lo" + sar-tseva YHWH + attah bati — the sovereign No', cor: ROSE,   indent: 2, emoji: '⚡' },
+    { sym: "B'",  ref: 'Js 5:14b',  label: pt ? 'wayippol / wayyishtahu / mah adoni medabber — adoração corretiva' : 'wayippol / wayyishtahu / mah adoni medabber — corrective worship', cor: GOLD,   indent: 1, emoji: '🙏' },
+    { sym: "A'",  ref: 'Js 5:15',   label: pt ? 'shal-naalekha — terra santa pela presença divina (eco Êx 3:5)'   : 'shal-naalekha — holy ground by divine presence (echo Exod 3:5)', cor: ORANGE, indent: 0, emoji: '👡' },
+  ];
+
+  const CHRISTOLOGICAL = [
+    { icon: '🗡️', title: pt ? '"Sar-Tseva YHWH" → Cristo Comandante' : '"Sar-Tseva YHWH" → Christ as Commander', body: pt ? 'Ap 19:11-16: "no seu nome está escrito Rei dos Reis e Senhor dos Senhores." O guerreiro de Js 5 é o Cristo pré-encarnado — identificado com YHWH pela repetição de Êx 3:5 no v.15. A conquista de Canaã é tipologia da conquista de Cristo sobre todos os inimigos.' : 'Rev 19:11-16: "on his robe and thigh is written King of Kings and Lord of Lords." The warrior of Josh 5 is the pre-incarnate Christ — identified with YHWH by the repetition of Exod 3:5 in v.15. Canaan\'s conquest typifies Christ\'s conquest over all enemies.' },
+    { icon: '👡', title: pt ? 'Sandálias descalçadas → João Batista' : 'Sandals removed → John the Baptist', body: pt ? '"Não sou digno de desatar as correias das sandálias" (Jo 1:27). O ato de Josué (pés descalços diante do divino) é o padrão de toda resposta humana ante a glória de Cristo. João Batista o confirma: a única postura correta diante de Cristo é a indignidade reconhecida.' : '"I am not worthy to untie the strap of his sandal" (John 1:27). Joshua\'s act (barefoot before the divine) is the pattern for every human response before Christ\'s glory. John the Baptist confirms it: the only right posture before Christ is acknowledged unworthiness.' },
+    { icon: '🔥', title: pt ? 'Teofania em Jericó → Getsêmani' : 'Theophany at Jericho → Gethsemane', body: pt ? 'O Comandante que diz "Eu sou" prostrou os soldados em Getsêmani (Jo 18:6) antes da batalha da cruz. O mesmo princípio de Js 5: a identidade divina precede e garante a vitória. Em Getsêmani, os inimigos recuaram diante do Nome antes de o prender.' : 'The Commander who says "I am" drove soldiers back in Gethsemane (John 18:6) before the cross battle. The same principle as Josh 5: divine identity precedes and guarantees victory. In Gethsemane, enemies fell back before the Name before arresting Him.' },
+  ];
+
+  const APPS = [
+    { audience: pt ? 'Universal' : 'Universal', icon: '🌍', items: pt ? ['O "Não" divino recusa ser enquadrado em qualquer causa humana', 'A santidade precede a vitória — sempre', 'A única postura correta ante o Santo é prostrar-se'] : ['The divine "No" refuses to be framed in any human cause', 'Holiness precedes victory — always', 'The only correct posture before the Holy One is to fall down'] },
+    { audience: pt ? 'Crentes' : 'Believers', icon: '📖', items: pt ? ['Descalce as sandálias antes de avançar para a batalha', 'Mude a pergunta: de "quem está do meu lado?" para "o que dizes, Senhor?"', 'A adoração que corrige é mais poderosa que a estratégia que planeja'] : ['Remove your sandals before advancing to battle', 'Change the question: from "who is on my side?" to "what do you say, Lord?"', 'The worship that corrects is more powerful than the strategy that plans'] },
+    { audience: pt ? 'Pastores' : 'Pastors', icon: '🏛️', items: pt ? ['Pregue o Deus que diz "Não" às causas humanas', 'A pregação que recruta Deus para projetos não é pregação expositiva', 'A santidade que você prega deve ser expressa em postura — não só em conceito'] : ['Preach the God who says "No" to human causes', 'Preaching that recruits God for projects is not expository preaching', 'The holiness you preach must be expressed in posture — not just concept'] },
+  ];
+
+  return (
+    <div style={{ paddingBottom: 48 }}>
+
+      {/* ── HERO ── */}
+      <div style={{ borderRadius: 20, background: 'linear-gradient(135deg,rgba(255,140,80,0.13) 0%,rgba(255,100,130,0.08) 100%)', border: '1px solid rgba(255,140,80,0.32)', padding: 'clamp(24px,4vw,36px)', marginBottom: 28, textAlign: 'center' }}>
+        <div style={{ fontSize: 'clamp(48px,8vw,72px)', lineHeight: 1, marginBottom: 10, filter: 'drop-shadow(0 0 20px rgba(255,140,80,0.50))' }}>⚔️</div>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase', color: 'rgba(255,140,80,0.85)', marginBottom: 8 }}>Josué 5:13–15 · Perícope 260 · {pt ? 'Dia 260' : 'Day 260'}</div>
+        <div style={{ fontSize: 'clamp(22px,3.8vw,32px)', fontWeight: 900, color: '#fff', lineHeight: 1.25, marginBottom: 8 }}>
+          {pt ? 'O Príncipe que Não Toma Partido' : 'The Prince Who Takes No Side'}
+        </div>
+        <div style={{ fontSize: 'clamp(15px,2.2vw,18px)', color: 'rgba(255,255,255,0.55)', fontStyle: 'italic', marginBottom: 16 }}>
+          {pt ? 'Quando o Santo revela que a conquista é Sua — não de Israel' : 'When the Holy One reveals the conquest is His — not Israel\'s'}
+        </div>
+        <div style={{ display: 'inline-flex', flexWrap: 'wrap', gap: 8, justifyContent: 'center' }}>
+          {['Josué', pt ? 'Teofania' : 'Theophany', pt ? 'Guerra Santa' : 'Holy War', pt ? 'Santidade de Deus' : "God's Holiness"].map(t => (
+            <span key={t} style={{ fontSize: 'clamp(12px,1.5vw,14px)', fontWeight: 700, padding: '3px 12px', borderRadius: 99, background: 'rgba(255,140,80,0.12)', border: '1px solid rgba(255,140,80,0.28)', color: 'rgba(255,140,80,0.90)' }}>{t}</span>
+          ))}
+        </div>
+      </div>
+
+      {/* ── BIG IDEA ── */}
+      <div style={{ borderRadius: 16, background: 'linear-gradient(135deg,rgba(255,140,80,0.10),rgba(255,100,130,0.07))', border: '1.5px solid rgba(255,140,80,0.35)', padding: '20px 24px', marginBottom: 20 }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,140,80,0.90)', marginBottom: 6 }}>
+          💡 {pt ? 'Big Idea · Tema Central' : 'Big Idea · Central Theme'}
+        </div>
+        <DescBlock text={DESC_BIGIDEA} refs={['j5-r6', 'j5-r1']} />
+        <p style={{ fontSize: 'clamp(16px,2.2vw,19px)', fontWeight: 800, color: '#fff', lineHeight: 1.70, margin: '14px 0 0' }}>
+          {pt
+            ? 'O Príncipe do Exército do SENHOR não veio como aliado de Israel nem como aliado de Canaã — veio como Comandante Soberano; e a única resposta correta ao encontro com o Santo é prostrar-se, adorar e descalçar as sandálias.'
+            : "The Prince of the LORD's Army did not come as an ally of Israel nor of Canaan — He came as Sovereign Commander; and the only correct response to the encounter with the Holy One is to fall down, worship, and remove one's sandals."}
+        </p>
+      </div>
+
+      {/* ── PERGUNTA + PROPOSIÇÃO ── */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))', gap: 14, marginBottom: 28 }}>
+        <div style={{ borderRadius: 14, background: 'rgba(255,100,130,0.06)', border: '1px solid rgba(255,100,130,0.22)', padding: '18px 20px' }}>
+          <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,140,140,0.85)', marginBottom: 6 }}>❓ {pt ? 'Pergunta Central' : 'Central Question'}</div>
+          <DescBlock text={DESC_PERGUNTA} refs={['j5-r6', 'j5-r5']} />
+          <p style={{ fontSize: 'clamp(15px,2vw,17px)', color: 'rgba(255,210,210,0.90)', lineHeight: 1.70, fontStyle: 'italic', margin: '12px 0 0' }}>
+            {pt
+              ? '"Por que o Príncipe do Exército do SENHOR responde \'Não\' à pergunta de Josué — e o que esse \'Não\' revela sobre quem realmente conduz a conquista?"'
+              : '"Why does the Prince of the LORD\'s Army answer \'No\' to Joshua\'s question — and what does that \'No\' reveal about who truly leads the conquest?"'}
+          </p>
+        </div>
+        <div style={{ borderRadius: 14, background: 'rgba(255,140,80,0.08)', border: '1px solid rgba(255,140,80,0.28)', padding: '18px 20px' }}>
+          <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,140,80,0.90)', marginBottom: 6 }}>⚡ {pt ? 'Proposição' : 'Proposition'}</div>
+          <DescBlock text={DESC_PROP} refs={['j5-r6', 'j5-r5', 'j5-r1']} />
+          <p style={{ fontSize: 'clamp(15px,2vw,17px)', fontWeight: 700, color: '#fff', lineHeight: 1.70, margin: '12px 0 0' }}>
+            {pt
+              ? 'A conquista de Canaã não pertence a Israel — pertence ao Comandante que não toma partido de nenhum exército humano; e Josué aprende que liderar a conquista de Deus começa com a postura de adoração, não de estratégia.'
+              : "Canaan's conquest does not belong to Israel — it belongs to the Commander who takes no side with any human army; and Joshua learns that leading God's conquest begins with a posture of worship, not strategy."}
+          </p>
+        </div>
+      </div>
+
+      {/* ── QUIASMA VISUAL ── */}
+      <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.08)', padding: 'clamp(18px,3vw,28px)', marginBottom: 28 }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.45)', marginBottom: 8, textAlign: 'center' }}>
+          🔄 {pt ? 'Estrutura Quiástica · Josué 5:13–15' : 'Chiastic Structure · Joshua 5:13–15'}
+        </div>
+        <DescBlock text={DESC_CHIASM} refs={['j5-r7', 'j5-r2']} />
+        <div style={{ marginTop: 16 }}>
+          {CHIASM.map(({ sym, ref, label, cor, indent, emoji }) => (
+            <div key={sym} style={{ display: 'flex', alignItems: 'flex-start', gap: 10, marginBottom: 10, paddingLeft: `${indent * 20}px` }}>
+              <div style={{ width: 38, height: 38, minWidth: 38, borderRadius: 10, background: `${cor}22`, border: `1.5px solid ${cor}55`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 'clamp(13px,1.6vw,15px)', fontWeight: 900, color: cor }}>{sym}</div>
+              <div style={{ flex: 1, padding: '8px 12px', borderRadius: 10, background: `${cor}0d`, border: `1px solid ${cor}28` }}>
+                <span style={{ fontSize: 'clamp(11px,1.3vw,12px)', fontWeight: 700, color: cor, marginRight: 8 }}>{emoji} {ref}</span>
+                <span style={{ fontSize: 'clamp(13px,1.6vw,14px)', color: 'rgba(255,255,255,0.82)' }}>{label}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ── MOVIMENTOS ── */}
+      <div style={{ marginBottom: 28 }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.45)', marginBottom: 8 }}>
+          📋 {pt ? 'Movimentos do Sermão' : 'Sermon Movements'}
+        </div>
+        <DescBlock text={DESC_MOVIMENTOS} refs={['j5-r6', 'j5-r9']} />
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: 14, marginTop: 14 }}>
+          {MOVES.map(m => (
+            <div key={m.num} style={{ borderRadius: 16, background: m.corL, border: `1.5px solid ${m.corB}`, padding: '18px 20px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 8 }}>
+                <div style={{ width: 34, height: 34, borderRadius: 9, background: `${m.cor}22`, border: `1.5px solid ${m.cor}55`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 'clamp(14px,1.8vw,16px)', fontWeight: 900, color: m.cor }}>{m.num}</div>
+                <div>
+                  <div style={{ fontSize: 'clamp(11px,1.3vw,12px)', fontWeight: 700, color: m.cor, letterSpacing: '0.12em' }}>{m.sym} · {m.ref}</div>
+                  <div style={{ fontSize: 'clamp(14px,1.8vw,16px)', fontWeight: 800, color: '#fff', lineHeight: 1.3 }}>{m.emoji} {m.title}</div>
+                </div>
+              </div>
+              <div style={{ fontSize: 'clamp(11px,1.4vw,12px)', color: 'rgba(220,230,255,0.55)', lineHeight: 1.65, fontStyle: 'italic', marginBottom: 8, padding: '7px 10px', borderRadius: 8, background: 'rgba(255,255,255,0.03)', border: `1px solid ${m.cor}15` }}>
+                {m.desc}<sup style={{ fontSize: 9, color: ORANGE, marginLeft: 2 }}>{m.descRefs.map((id, i) => { const n = FN.findIndex(f => f.id === id)+1; return <a key={id} href={`#${id}`} style={{ color: ORANGE, textDecoration: 'none' }}>{i>0?',':''}{n}</a>; })}</sup>
+              </div>
+              <div style={{ fontSize: 'clamp(13px,1.6vw,14px)', color: 'rgba(255,255,255,0.60)', fontStyle: 'italic', marginBottom: 8 }}>{m.sub}</div>
+              <div style={{ fontSize: 'clamp(13px,1.6vw,14px)', color: 'rgba(255,255,255,0.82)', lineHeight: 1.60, marginBottom: 10, padding: '8px 10px', borderRadius: 8, background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.07)' }}>{m.key}</div>
+              <div style={{ fontSize: 'clamp(13px,1.6vw,14px)', color: m.cor, lineHeight: 1.55, fontWeight: 600 }}>▸ {m.app}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ── EIXO CRISTOLÓGICO ── */}
+      <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.09)', padding: 'clamp(18px,3vw,26px)', marginBottom: 28 }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,140,80,0.70)', marginBottom: 8, textAlign: 'center' }}>
+          ✝️ {pt ? 'Eixo Redentor · Josué 5 → Cristo' : 'Redemptive Axis · Joshua 5 → Christ'}
+        </div>
+        <DescBlock text={DESC_CRISTOLOGICO} refs={['j5-r5', 'j5-r8', 'j5-r10']} />
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))', gap: 14, marginTop: 14 }}>
+          {CHRISTOLOGICAL.map(c => (
+            <div key={c.title} style={{ borderRadius: 12, background: 'rgba(255,140,80,0.07)', border: '1px solid rgba(255,140,80,0.22)', padding: '14px 16px' }}>
+              <div style={{ fontSize: 'clamp(20px,2.8vw,26px)', marginBottom: 6 }}>{c.icon}</div>
+              <div style={{ fontSize: 'clamp(13px,1.6vw,14px)', fontWeight: 800, color: 'rgba(255,180,120,0.95)', marginBottom: 6 }}>{c.title}</div>
+              <div style={{ fontSize: 'clamp(13px,1.6vw,14px)', color: 'rgba(255,255,255,0.75)', lineHeight: 1.60 }}>{c.body}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ── APLICAÇÕES POR AUDIÊNCIA ── */}
+      <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.09)', padding: 'clamp(18px,3vw,26px)', marginBottom: 28 }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,180,50,0.70)', marginBottom: 8, textAlign: 'center' }}>
+          🎯 {pt ? 'Aplicações por Audiência' : 'Applications by Audience'}
+        </div>
+        <DescBlock text={DESC_APPS} refs={['j5-r5', 'j5-r4']} />
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(220px,1fr))', gap: 12, marginTop: 14 }}>
+          {APPS.map(a => (
+            <div key={a.audience} style={{ borderRadius: 12, background: 'rgba(255,180,50,0.07)', border: '1px solid rgba(255,180,50,0.20)', padding: '14px 16px' }}>
+              <div style={{ fontSize: 'clamp(14px,1.8vw,16px)', fontWeight: 800, color: 'rgba(255,200,80,0.95)', marginBottom: 8 }}>{a.icon} {a.audience}</div>
+              {a.items.map((item, i) => (
+                <div key={i} style={{ fontSize: 'clamp(13px,1.6vw,14px)', color: 'rgba(255,255,255,0.78)', lineHeight: 1.55, marginBottom: 4 }}>▸ {item}</div>
+              ))}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ── CONCLUSÃO ── */}
+      <div style={{ borderRadius: 16, background: 'linear-gradient(135deg,rgba(255,140,80,0.10),rgba(255,100,130,0.07))', border: '1.5px solid rgba(255,140,80,0.30)', padding: '20px 24px', marginBottom: 28 }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,140,80,0.85)', marginBottom: 8 }}>🏁 {pt ? 'Conclusão' : 'Conclusion'}</div>
+        <DescBlock text={DESC_CONCLUSAO} refs={['j5-r9', 'j5-r4']} />
+        <p style={{ fontSize: 'clamp(14px,1.8vw,16px)', color: 'rgba(255,255,255,0.85)', lineHeight: 1.75, margin: '12px 0 0' }}>
+          {pt
+            ? 'Josué estava planejando a conquista quando o Comandante apareceu com espada desembainhada. E Josué fez a pergunta errada: "De que lado você está?" A resposta foi "Não." Não de nenhum lado humano — porque a conquista não é de Israel. É do SENHOR. E a única preparação que Josué precisava não era um plano de batalha: era o rosto no chão e os pés descalços. A santidade precede a vitória. O Comandante que apareceu a Josué aparecerá novamente em Apocalipse 19 — montado, com espada, com o nome que ninguém conhece. Antes de qualquer batalha que Deus lhe chamou a travar, descalce as sandálias.'
+            : "Joshua was planning the conquest when the Commander appeared with a drawn sword. And Joshua asked the wrong question: 'Which side are you on?' The answer was 'No.' Not on any human side — because the conquest does not belong to Israel. It belongs to the LORD. And the only preparation Joshua needed was not a battle plan: it was his face on the ground and his feet bare. Holiness precedes victory. The Commander who appeared to Joshua will appear again in Revelation 19 — mounted, with a sword, with the name no one knows. Before any battle God has called you to fight, remove your sandals."}
+        </p>
+      </div>
+
+      {/* ── NOTAS DE RODAPÉ ── */}
+      <div style={{ borderRadius: 14, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.07)', padding: '18px 20px' }}>
+        <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.26em', textTransform: 'uppercase', color: 'rgba(255,140,80,0.50)', marginBottom: 12 }}>
+          {pt ? 'Notas de Rodapé' : 'Footnotes'}
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 7 }}>
+          {FN.map((f, i) => (
+            <p key={f.id} id={f.id} style={{ margin: 0, fontSize: 'clamp(11px,1.4vw,12px)', color: 'rgba(200,215,255,0.55)', lineHeight: 1.65 }}>
+              <span style={{ color: ORANGE, fontWeight: 800, marginRight: 6 }}>[{i + 1}]</span>{f.txt}
+            </p>
+          ))}
+        </div>
+      </div>
+
+    </div>
+  );
+}
+
 // ─── Quiasma renderer ───────────────────────────────────────────────
 function QuiasmaSection({ d, pericopeIdx, pt }: { d: DiaDevocional; pericopeIdx: number; pt: boolean }) {
   const [quiasma, setQuiasma] = useState('');
@@ -1606,6 +2820,81 @@ function ParaPregarSection({ d, pericopeIdx, conteudo, sermonTitulo, sermonPergu
 
 // ─── Infográfico Josué 1 ─────────────────────────────────────────────
 function InfograficoJosueSection({ pt }: { pt: boolean }) {
+
+  /* ── cores reutilizáveis ── */
+  const GOLD  = 'rgba(255,180,50,1)';
+  const BLUE  = 'rgba(80,200,255,1)';
+  const GREEN = 'rgba(52,211,153,1)';
+  const ROSE  = 'rgba(255,100,120,1)';
+
+  /* ── Descrição de cada conceito homilético (o "o que é") ── */
+  const DESC_BIGIDEA = pt
+    ? 'A Big Idea (ou Ideia Central) é o conceito único, abrangente e predicativo que governa todo o sermão — extraído diretamente do texto, não imposto sobre ele. Robinson definiu-a como "a single, unifying concept of the biblical text expressed in a complete sentence." Todo ponto, ilustração e aplicação deve servir essa ideia.'
+    : 'The Big Idea is the single, comprehensive, predicative concept that governs the entire sermon — drawn directly from the text, not imposed upon it. Every point, illustration, and application must serve this idea.';
+
+  const DESC_PERGUNTA = pt
+    ? 'A Pergunta Central (ou Interrogação Homilética) é a questão que a perícope levanta no coração do ouvinte — a tensão existencial ou teológica que o texto resolve. Ela serve de "gancho" (hook) para capturar a atenção e de fio condutor para toda a mensagem. Robinson a chamou de "the complement" antes de ser respondida pela proposição.'
+    : 'The Central Question is the existential or theological tension the text raises in the hearer\'s heart. It serves as the hook that captures attention and the unifying thread for the entire message.';
+
+  const DESC_PROP = pt
+    ? 'A Proposição é a resposta afirmativa, completa e predicativa à Pergunta Central. Ela é a Big Idea formulada como tese declarativa — uma sentença que articula sujeito + predicado a partir do texto. Deve ser memorável, fiel ao texto e capaz de governar cada divisão do sermão.'
+    : 'The Proposition is the affirmative, complete, predicative answer to the Central Question — the Big Idea formulated as a thesis sentence. It must govern every division of the sermon.';
+
+  const DESC_CHIASM = pt
+    ? 'O Quiasma é um recurso literário hebraico em que os elementos se correspondem simetricamente (A–B–C–B\'–A\'). O centro (C) carrega o peso teológico principal da unidade; os membros externos enquadram e amplificam esse núcleo. Reconhecer a estrutura quiástica é indispensável para identificar a Big Idea que o autor inspirado quer comunicar.'
+    : 'Chiasm is a Hebrew literary device where elements correspond symmetrically (A–B–C–B\'–A\'). The center (C) carries the unit\'s main theological weight; outer members frame and amplify that nucleus. Recognizing chiastic structure is essential for identifying the Big Idea the inspired author intends to communicate.';
+
+  const DESC_MOVIMENTOS = pt
+    ? 'Os Movimentos do Sermão são as grandes divisões que desenvolvem a Big Idea por etapas — cada um explicando, argumentando e aplicando um aspecto da proposição. Ao contrário de "pontos" desconexos, os movimentos fluem organicamente do texto e conduzem o ouvinte de uma tensão até a resolução final.'
+    : 'Sermon Movements are the major divisions that develop the Big Idea step by step — each explaining, arguing, and applying one aspect of the proposition. Unlike disconnected points, movements flow organically from the text and lead the hearer from tension to final resolution.';
+
+  const DESC_CRISTOLOGICO = pt
+    ? 'O Eixo Redentor (ou Foco na Condição Caída — FCF, segundo Chapell) identifica onde a perícope se situa na história da redenção culminada em Cristo. Todo texto do AT aponta, prefigura ou pressupõe o Cristo redentor. Pregar sem esse eixo produz moralismo; pregar apenas esse eixo sem o texto produz eisegese cristológica.'
+    : 'The Redemptive Axis (FCF — Fallen Condition Focus, per Chapell) identifies where the pericope stands in redemptive history culminating in Christ. Every OT text points to, prefigures, or presupposes the redeeming Christ. Preaching without this axis produces moralism; forcing it without the text produces christological eisegesis.';
+
+  const DESC_APPS = pt
+    ? 'A Aplicação é a ponte que leva a verdade do mundo do texto ao mundo do ouvinte — não apenas descrevendo o que o texto diz, mas prescrevendo o que o ouvinte deve crer, sentir ou fazer em resposta. Whitesell insistia que uma exposição sem apelo é "capenga"; Chapell acrescenta que a aplicação deve derivar do FCF, nunca ser inventada pelo pregador.'
+    : 'Application is the bridge from the text\'s world to the hearer\'s world — not merely describing what the text says, but prescribing what the hearer must believe, feel, or do. Whitesell insisted that exposition without appeal is "lame"; Chapell adds that application must derive from the FCF, never be invented by the preacher.';
+
+  const DESC_CONCLUSAO = pt
+    ? 'A Conclusão é o apelo final que convoca o ouvinte à resposta concreta diante da verdade proclamada — fé, arrependimento, louvor ou obediência. Lloyd-Jones alertava que a conclusão não pode ser apenas um sumário; ela deve ser o momento de maior intensidade emocional e espiritual do sermão, acendendo a "lógica em chamas" que atravessa todo o coração.'
+    : 'The Conclusion is the final appeal calling the hearer to a concrete response — faith, repentance, praise, or obedience. Lloyd-Jones warned that the conclusion cannot be merely a summary; it must be the sermon\'s moment of greatest emotional and spiritual intensity.';
+
+  /* ── notas de rodapé ── */
+  const FN: { id: string; txt: string }[] = [
+    { id: 'fn-r1', txt: 'ROBINSON, Haddon W. Biblical Preaching: The Development and Delivery of Expository Messages. 3. ed. Grand Rapids: Baker Academic, 2014. p. 35.' },
+    { id: 'fn-r2', txt: 'CHAPELL, Bryan. Christ-Centered Preaching: Redeeming the Expository Sermon. 2. ed. Grand Rapids: Baker Academic, 2005. p. 42, 279.' },
+    { id: 'fn-r3', txt: 'NICODEMUS, Augustus Lopes. A Pregação Expositiva. São Paulo: Cultura Cristã, 2012. p. 28–34.' },
+    { id: 'fn-r4', txt: 'LOPES, Hernandes Dias. Pregação: A Arte da Comunicação Bíblica. São Paulo: Hagnos, 2010. p. 89–92.' },
+    { id: 'fn-r5', txt: 'DORSEY, David A. The Literary Structure of the Old Testament: A Commentary on Genesis–Malachi. Grand Rapids: Baker Academic, 1999. p. 14–18.' },
+    { id: 'fn-r6', txt: 'GREIDANUS, Sidney. Preaching Christ from the Old Testament. Grand Rapids: Eerdmans, 1999. p. 227–231.' },
+    { id: 'fn-r7', txt: 'GOLDSWORTHY, Graeme. Preaching the Whole Bible as Christian Scripture. Grand Rapids: Eerdmans, 2000. p. 86–90.' },
+    { id: 'fn-r8', txt: 'LLOYD-JONES, David Martyn. Preaching and Preachers. Grand Rapids: Zondervan, 1971. p. 75, 97.' },
+    { id: 'fn-r9', txt: 'WHITESELL, Faris D. Power in Expository Preaching. Westwood: Fleming H. Revell, 1963. p. 121–140.' },
+    { id: 'fn-r10', txt: 'PORTELA, Denilson. O Expositor Fiel: Princípios e Prática da Pregação Expositiva. Brasília: Monergismo, 2019. p. 54–62.' },
+    { id: 'fn-r11', txt: 'MAYHUE, Richard L. Rediscovering Expository Preaching. The Master\'s Seminary Journal, Sun Valley, v. 1, n. 2, p. 109–128, outono 1990.' },
+    { id: 'fn-r12', txt: 'JACKMAN, David. Proclamar Toda a Palavra de Deus: Princípios e Prática da Exposição Bíblica. Brasília: Monergismo, 2018. p. 77–83.' },
+  ];
+
+  /* pequeno helper de superscript clicável */
+  const Ref = ({ ids }: { ids: string[] }) => (
+    <sup style={{ fontSize: 10, color: GOLD, marginLeft: 2, fontWeight: 700, letterSpacing: 0 }}>
+      {ids.map((id, i) => {
+        const num = FN.findIndex(f => f.id === id) + 1;
+        return <a key={id} href={`#${id}`} style={{ color: GOLD, textDecoration: 'none' }}>{i > 0 ? ',' : ''}{num}</a>;
+      })}
+    </sup>
+  );
+
+  /* ── bloco reutilizável de descrição ── */
+  const DescBlock = ({ text, refs }: { text: string; refs: string[] }) => (
+    <div style={{ margin: '10px 0 4px', padding: '10px 14px', borderRadius: 10, background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)' }}>
+      <p style={{ margin: 0, fontSize: 'clamp(12px,1.5vw,13px)', color: 'rgba(220,230,255,0.65)', lineHeight: 1.75, fontStyle: 'italic' }}>
+        {text}<Ref ids={refs} />
+      </p>
+    </div>
+  );
+
   const MOVES = [
     {
       num: 'I', sym: 'A', ref: 'Js 1:1–2',
@@ -1614,7 +2903,9 @@ function InfograficoJosueSection({ pt }: { pt: boolean }) {
       emoji: '📯',
       key: pt ? 'qum + ʿabor (levanta-te + atravessa) — imperativos urgentes. Moisés = eved YHWH, o título mais elevado do AT. A missão é maior que qualquer servo.' : 'qum + ʿabor imperatives — urgent. Moses = eved YHWH, the highest OT title. The mission outlasts any servant.',
       app: pt ? 'Não espere condições perfeitas para obedecer. A comissão divina vem no luto, não depois dele.' : 'Don\'t wait for perfect conditions to obey. The divine commission comes in mourning, not after it.',
-      cor: 'rgba(255,180,50,1)', corL: 'rgba(255,180,50,0.10)', corB: 'rgba(255,180,50,0.30)',
+      desc: pt ? 'O 1º movimento apresenta a situação de tensão (Sitz im Leben) e o imperativo divino inicial — é o exórdio narrativo que ancora o ouvinte no texto antes de introduzir a proposição. Robinson chama essa abertura de "the subject" em estado não resolvido.' : 'The 1st movement presents the tension situation and the initial divine imperative — the narrative exordium that anchors the hearer in the text before the proposition is introduced.',
+      descRefs: ['fn-r1', 'fn-r3'],
+      cor: GOLD, corL: 'rgba(255,180,50,0.10)', corB: 'rgba(255,180,50,0.30)',
     },
     {
       num: 'II', sym: 'B', ref: 'Js 1:3–9',
@@ -1623,7 +2914,9 @@ function InfograficoJosueSection({ pt }: { pt: boolean }) {
       emoji: '📜',
       key: pt ? 'hagah (v.8) = ruminação em voz baixa, dia e noite. Sucesso (hishkîl) vinculado à Torá, não à estratégia militar. Hb 13:5 cita v.5b para toda geração.' : 'hagah (v.8) = ruminating aloud, day and night. Success (hishkîl) tied to Torah, not military strategy.',
       app: pt ? 'A coragem que Deus ordena, a Palavra produz. A pergunta não é "tenho coragem?" mas "estou meditando na Palavra?"' : 'The courage God commands, the Word produces. The question is not "do I have courage?" but "am I meditating on the Word?"',
-      cor: 'rgba(80,200,255,1)', corL: 'rgba(80,200,255,0.10)', corB: 'rgba(80,200,255,0.30)',
+      desc: pt ? 'O 2º movimento desenvolve o "indicativo" teológico: antes dos imperativos há promessas. Chapell chama esse padrão de estrutura "FCF → graça → imperativo" — pregar o imperativo sem o indicativo produz moralismo. A Tríplice Promessa é o fundamento sobre o qual toda obediência descansa.' : 'The 2nd movement develops the theological indicative: before imperatives, there are promises. Chapell calls this "FCF → grace → imperative" structure — preaching the imperative without the indicative produces moralism.',
+      descRefs: ['fn-r2', 'fn-r4'],
+      cor: BLUE, corL: 'rgba(80,200,255,0.10)', corB: 'rgba(80,200,255,0.30)',
     },
     {
       num: 'III', sym: 'CENTRO C', ref: 'Js 1:10–15',
@@ -1632,7 +2925,9 @@ function InfograficoJosueSection({ pt }: { pt: boolean }) {
       emoji: '🛡️',
       key: pt ? 'chamushim = em formação militar. Os que já têm herança acompanham os que ainda lutam — até que todos entrem no repouso (v.15).' : 'chamushim = in battle formation. Those with inheritance join those still fighting — until all enter rest (v.15).',
       app: pt ? 'Os "estabelecidos" da congregação devem armados acompanhar os vulneráveis — ninguém descansa enquanto o irmão ainda luta.' : 'The "established" in the congregation must stand armed beside the vulnerable — no one rests while a brother still fights.',
-      cor: 'rgba(52,211,153,1)', corL: 'rgba(52,211,153,0.10)', corB: 'rgba(52,211,153,0.30)',
+      desc: pt ? 'O CENTRO quiástico é o ápice teológico da perícope — o ponto que o autor inspirado quer que o leitor não esqueça. Dorsey explica que em quiasmas hebraicos o centro não é transição, mas clímax: toda a estrutura converge aqui. O pregador deve identificar e proclamar o centro com ênfase proporcional.' : 'The chiastic CENTER is the theological apex — the point the inspired author intends the reader to retain. Dorsey explains that in Hebrew chiasms the center is not transition but climax: the entire structure converges here.',
+      descRefs: ['fn-r5', 'fn-r12'],
+      cor: GREEN, corL: 'rgba(52,211,153,0.10)', corB: 'rgba(52,211,153,0.30)',
     },
     {
       num: 'IV', sym: 'B\' + A\'', ref: 'Js 1:16–18',
@@ -1641,16 +2936,18 @@ function InfograficoJosueSection({ pt }: { pt: boolean }) {
       emoji: '⚔️',
       key: pt ? '"Tudo o que nos ordenares faremos" (v.16) — eco de Êx 19:8. Eles seguem Josué por seguirem YHWH. Sanção (v.18): seriedade pactual que protege a missão.' : '"All you command we will do" (v.16) — echo of Exod 19:8. They follow Joshua by following YHWH. Sanction (v.18): covenant seriousness protecting the mission.',
       app: pt ? 'A obediência condicional ("obedeço se concordo") não é obediência pactual. Submeter-se à liderança ungida é ato de fé em quem a ungiu.' : 'Conditional obedience ("I obey if I agree") is not covenantal obedience. Submitting to appointed leadership is an act of faith in the One who appointed.',
-      cor: 'rgba(255,100,120,1)', corL: 'rgba(255,100,120,0.10)', corB: 'rgba(255,100,120,0.30)',
+      desc: pt ? 'O último movimento fecha o quiasma com o "eco" dos membros externos (B\' e A\'): ele resolve a tensão aberta no Movimento I e aplica a conclusão diretamente à congregação. Jackman chama essa estrutura de "resolução pactual" — o povo responde ao que Deus declarou, espelhando a lógica divina.' : 'The final movement closes the chiasm with the echo of outer members (B\' + A\'): it resolves the tension opened in Movement I and applies the conclusion directly to the congregation — covenantal resolution.',
+      descRefs: ['fn-r12', 'fn-r10'],
+      cor: ROSE, corL: 'rgba(255,100,120,0.10)', corB: 'rgba(255,100,120,0.30)',
     },
   ];
 
   const CHIASM = [
-    { sym: 'A',  ref: 'Js 1:1–2',   label: pt ? 'Comissão: qum + ʿabor — "levanta-te e atravessa"' : 'Commission: qum + ʿabor — "rise and cross"', cor: 'rgba(255,180,50,1)', indent: 0, emoji: '📯' },
-    { sym: 'B',  ref: 'Js 1:3–9',   label: pt ? 'Tríplice promessa + "sê forte e corajoso" (3×)' : 'Triple promise + "be strong and courageous" (3×)', cor: 'rgba(80,200,255,1)', indent: 1, emoji: '📜' },
-    { sym: 'C',  ref: 'Js 1:10–15', label: pt ? '⬛ CENTRO: Solidariedade pactual — toda a nação avança' : '⬛ CENTER: Covenantal solidarity — whole nation advances', cor: 'rgba(52,211,153,1)', indent: 2, emoji: '🛡️' },
-    { sym: 'B\'', ref: 'Js 1:16–17', label: pt ? 'Resposta do povo — eco de Êxodo 19:8' : 'People\'s pledge — echo of Exodus 19:8', cor: 'rgba(80,200,255,1)', indent: 1, emoji: '🤝' },
-    { sym: 'A\'', ref: 'Js 1:18',   label: pt ? 'Sanção pactual + "sê forte e corajoso" (eco final)' : 'Covenantal sanction + "be strong and courageous" (closing echo)', cor: 'rgba(255,180,50,1)', indent: 0, emoji: '⚔️' },
+    { sym: 'A',  ref: 'Js 1:1–2',   label: pt ? 'Comissão: qum + ʿabor — "levanta-te e atravessa"' : 'Commission: qum + ʿabor — "rise and cross"', cor: GOLD,  indent: 0, emoji: '📯' },
+    { sym: 'B',  ref: 'Js 1:3–9',   label: pt ? 'Tríplice promessa + "sê forte e corajoso" (3×)' : 'Triple promise + "be strong and courageous" (3×)',    cor: BLUE,  indent: 1, emoji: '📜' },
+    { sym: 'C',  ref: 'Js 1:10–15', label: pt ? '⬛ CENTRO: Solidariedade pactual — toda a nação avança' : '⬛ CENTER: Covenantal solidarity — whole nation advances', cor: GREEN, indent: 2, emoji: '🛡️' },
+    { sym: 'B\'', ref: 'Js 1:16–17', label: pt ? 'Resposta do povo — eco de Êxodo 19:8' : 'People\'s pledge — echo of Exodus 19:8', cor: BLUE,  indent: 1, emoji: '🤝' },
+    { sym: 'A\'', ref: 'Js 1:18',   label: pt ? 'Sanção pactual + "sê forte e corajoso" (eco final)' : 'Covenantal sanction + "be strong and courageous" (closing echo)', cor: GOLD, indent: 0, emoji: '⚔️' },
   ];
 
   const CHRISTOLOGICAL = [
@@ -1687,8 +2984,11 @@ function InfograficoJosueSection({ pt }: { pt: boolean }) {
 
       {/* ── BIG IDEA ── */}
       <div style={{ borderRadius: 16, background: 'linear-gradient(135deg,rgba(255,180,50,0.10),rgba(52,211,153,0.07))', border: '1.5px solid rgba(255,180,50,0.35)', padding: '20px 24px', marginBottom: 20 }}>
-        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,180,50,0.90)', marginBottom: 8 }}>💡 {pt ? 'Big Idea · Tema Central' : 'Big Idea · Central Theme'}</div>
-        <p style={{ fontSize: 'clamp(16px,2.2vw,19px)', fontWeight: 800, color: '#fff', lineHeight: 1.70, margin: 0 }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,180,50,0.90)', marginBottom: 6 }}>
+          💡 {pt ? 'Big Idea · Tema Central' : 'Big Idea · Central Theme'}
+        </div>
+        <DescBlock text={DESC_BIGIDEA} refs={['fn-r1','fn-r3','fn-r11']} />
+        <p style={{ fontSize: 'clamp(16px,2.2vw,19px)', fontWeight: 800, color: '#fff', lineHeight: 1.70, margin: '14px 0 0' }}>
           {pt
             ? 'O Deus soberano comissiona Josué imediatamente após a morte de Moisés — revelando que a providência divina não depende de nenhum instrumento humano, que a Palavra é o único instrumento de sucesso, e que a coragem nasce da Lei, não do temperamento.'
             : 'The sovereign God commissions Joshua immediately after Moses\' death — revealing that divine providence depends on no human instrument, that the Word is the sole instrument of success, and that courage is born from the Law, not from temperament.'}
@@ -1698,16 +2998,18 @@ function InfograficoJosueSection({ pt }: { pt: boolean }) {
       {/* ── PERGUNTA + PROPOSIÇÃO ── */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))', gap: 14, marginBottom: 28 }}>
         <div style={{ borderRadius: 14, background: 'rgba(255,100,100,0.06)', border: '1px solid rgba(255,100,100,0.22)', padding: '18px 20px' }}>
-          <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,140,140,0.85)', marginBottom: 8 }}>❓ {pt ? 'Pergunta Central' : 'Central Question'}</div>
-          <p style={{ fontSize: 'clamp(15px,2vw,17px)', color: 'rgba(255,210,210,0.90)', lineHeight: 1.70, fontStyle: 'italic', margin: 0 }}>
+          <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,140,140,0.85)', marginBottom: 6 }}>❓ {pt ? 'Pergunta Central' : 'Central Question'}</div>
+          <DescBlock text={DESC_PERGUNTA} refs={['fn-r1','fn-r2','fn-r4']} />
+          <p style={{ fontSize: 'clamp(15px,2vw,17px)', color: 'rgba(255,210,210,0.90)', lineHeight: 1.70, fontStyle: 'italic', margin: '12px 0 0' }}>
             {pt
               ? '"Como um homem pode avançar em fé quando o grande líder que o precedeu acabou de morrer — e a tarefa diante dele é humanamente impossível?"'
               : '"How can a man advance in faith when the great leader before him has just died — and the task ahead is humanly impossible?"'}
           </p>
         </div>
         <div style={{ borderRadius: 14, background: 'rgba(255,180,50,0.08)', border: '1px solid rgba(255,180,50,0.28)', padding: '18px 20px' }}>
-          <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,180,50,0.90)', marginBottom: 8 }}>⚡ {pt ? 'Proposição' : 'Proposition'}</div>
-          <p style={{ fontSize: 'clamp(15px,2vw,17px)', fontWeight: 700, color: '#fff', lineHeight: 1.70, margin: 0 }}>
+          <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,180,50,0.90)', marginBottom: 6 }}>⚡ {pt ? 'Proposição' : 'Proposition'}</div>
+          <DescBlock text={DESC_PROP} refs={['fn-r1','fn-r2','fn-r10']} />
+          <p style={{ fontSize: 'clamp(15px,2vw,17px)', fontWeight: 700, color: '#fff', lineHeight: 1.70, margin: '12px 0 0' }}>
             {pt
               ? 'A soberania providencial de Deus garante que a missão avance através de toda sucessão de servos — e a Palavra meditada dia e noite é o único e suficiente instrumento de todo sucesso verdadeiro.'
               : 'God\'s providential sovereignty guarantees the mission advances through every succession of servants — and the Word meditated day and night is the sole and sufficient instrument of all true success.'}
@@ -1717,34 +3019,42 @@ function InfograficoJosueSection({ pt }: { pt: boolean }) {
 
       {/* ── QUIASMA VISUAL ── */}
       <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.08)', padding: 'clamp(18px,3vw,28px)', marginBottom: 28 }}>
-        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.45)', marginBottom: 20, textAlign: 'center' }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.45)', marginBottom: 8, textAlign: 'center' }}>
           🔄 {pt ? 'Estrutura Quiástica · Josué 1' : 'Chiastic Structure · Joshua 1'}
         </div>
-        {CHIASM.map(({ sym, ref, label, cor, indent, emoji }) => (
-          <div key={sym} style={{ display: 'flex', alignItems: 'flex-start', gap: 10, marginBottom: 10, paddingLeft: `${indent * 20}px` }}>
-            <div style={{ width: 38, height: 38, minWidth: 38, borderRadius: 10, background: `${cor}22`, border: `1.5px solid ${cor}55`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 'clamp(14px,1.8vw,16px)', fontWeight: 900, color: cor }}>{sym}</div>
-            <div style={{ flex: 1, padding: '8px 12px', borderRadius: 10, background: `${cor}0d`, border: `1px solid ${cor}28` }}>
-              <span style={{ fontSize: 'clamp(11px,1.3vw,12px)', fontWeight: 700, color: cor, marginRight: 8 }}>{emoji} {ref}</span>
-              <span style={{ fontSize: 'clamp(13px,1.6vw,14px)', color: 'rgba(255,255,255,0.82)' }}>{label}</span>
+        <DescBlock text={DESC_CHIASM} refs={['fn-r5','fn-r12','fn-r3']} />
+        <div style={{ marginTop: 16 }}>
+          {CHIASM.map(({ sym, ref, label, cor, indent, emoji }) => (
+            <div key={sym} style={{ display: 'flex', alignItems: 'flex-start', gap: 10, marginBottom: 10, paddingLeft: `${indent * 20}px` }}>
+              <div style={{ width: 38, height: 38, minWidth: 38, borderRadius: 10, background: `${cor}22`, border: `1.5px solid ${cor}55`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 'clamp(14px,1.8vw,16px)', fontWeight: 900, color: cor }}>{sym}</div>
+              <div style={{ flex: 1, padding: '8px 12px', borderRadius: 10, background: `${cor}0d`, border: `1px solid ${cor}28` }}>
+                <span style={{ fontSize: 'clamp(11px,1.3vw,12px)', fontWeight: 700, color: cor, marginRight: 8 }}>{emoji} {ref}</span>
+                <span style={{ fontSize: 'clamp(13px,1.6vw,14px)', color: 'rgba(255,255,255,0.82)' }}>{label}</span>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
 
       {/* ── MOVIMENTOS ── */}
       <div style={{ marginBottom: 28 }}>
-        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.45)', marginBottom: 16 }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.45)', marginBottom: 8 }}>
           📋 {pt ? 'Movimentos do Sermão' : 'Sermon Movements'}
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: 14 }}>
+        <DescBlock text={DESC_MOVIMENTOS} refs={['fn-r1','fn-r8','fn-r4']} />
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: 14, marginTop: 14 }}>
           {MOVES.map(m => (
             <div key={m.num} style={{ borderRadius: 16, background: m.corL, border: `1.5px solid ${m.corB}`, padding: '18px 20px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 10 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 8 }}>
                 <div style={{ width: 34, height: 34, borderRadius: 9, background: `${m.cor}22`, border: `1.5px solid ${m.cor}55`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 'clamp(14px,1.8vw,16px)', fontWeight: 900, color: m.cor }}>{m.num}</div>
                 <div>
                   <div style={{ fontSize: 'clamp(11px,1.3vw,12px)', fontWeight: 700, color: m.cor, letterSpacing: '0.12em' }}>{m.sym} · {m.ref}</div>
                   <div style={{ fontSize: 'clamp(14px,1.8vw,16px)', fontWeight: 800, color: '#fff', lineHeight: 1.3 }}>{m.emoji} {m.title}</div>
                 </div>
+              </div>
+              {/* descrição do papel homilético deste movimento */}
+              <div style={{ fontSize: 'clamp(11px,1.4vw,12px)', color: 'rgba(220,230,255,0.55)', lineHeight: 1.65, fontStyle: 'italic', marginBottom: 8, padding: '7px 10px', borderRadius: 8, background: 'rgba(255,255,255,0.03)', border: `1px solid ${m.cor}15` }}>
+                {m.desc}<sup style={{ fontSize: 9, color: GOLD, marginLeft: 2 }}>{m.descRefs.map((id, i) => { const n = FN.findIndex(f => f.id === id)+1; return <a key={id} href={`#${id}`} style={{ color: GOLD, textDecoration: 'none' }}>{i>0?',':''}{n}</a>; })}</sup>
               </div>
               <div style={{ fontSize: 'clamp(13px,1.6vw,14px)', color: 'rgba(255,255,255,0.60)', fontStyle: 'italic', marginBottom: 8 }}>{m.sub}</div>
               <div style={{ fontSize: 'clamp(13px,1.6vw,14px)', color: 'rgba(255,255,255,0.82)', lineHeight: 1.60, marginBottom: 10, padding: '8px 10px', borderRadius: 8, background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.07)' }}>{m.key}</div>
@@ -1756,10 +3066,11 @@ function InfograficoJosueSection({ pt }: { pt: boolean }) {
 
       {/* ── EIXO CRISTOLÓGICO ── */}
       <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.09)', padding: 'clamp(18px,3vw,26px)', marginBottom: 28 }}>
-        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,180,50,0.70)', marginBottom: 18, textAlign: 'center' }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,180,50,0.70)', marginBottom: 8, textAlign: 'center' }}>
           ✝️ {pt ? 'Eixo Redentor · Josué → Cristo' : 'Redemptive Axis · Joshua → Christ'}
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))', gap: 14 }}>
+        <DescBlock text={DESC_CRISTOLOGICO} refs={['fn-r2','fn-r6','fn-r7']} />
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))', gap: 14, marginTop: 14 }}>
           {CHRISTOLOGICAL.map(c => (
             <div key={c.title} style={{ borderRadius: 12, background: 'rgba(255,180,50,0.07)', border: '1px solid rgba(255,180,50,0.22)', padding: '14px 16px' }}>
               <div style={{ fontSize: 'clamp(20px,2.8vw,26px)', marginBottom: 6 }}>{c.icon}</div>
@@ -1772,10 +3083,11 @@ function InfograficoJosueSection({ pt }: { pt: boolean }) {
 
       {/* ── APLICAÇÕES POR AUDIÊNCIA ── */}
       <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.09)', padding: 'clamp(18px,3vw,26px)', marginBottom: 28 }}>
-        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(52,211,153,0.70)', marginBottom: 18, textAlign: 'center' }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(52,211,153,0.70)', marginBottom: 8, textAlign: 'center' }}>
           🎯 {pt ? 'Aplicações por Audiência' : 'Applications by Audience'}
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(220px,1fr))', gap: 12 }}>
+        <DescBlock text={DESC_APPS} refs={['fn-r9','fn-r2','fn-r4']} />
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(220px,1fr))', gap: 12, marginTop: 14 }}>
           {APPS.map(a => (
             <div key={a.audience} style={{ borderRadius: 12, background: 'rgba(52,211,153,0.07)', border: '1px solid rgba(52,211,153,0.20)', padding: '14px 16px' }}>
               <div style={{ fontSize: 'clamp(14px,1.8vw,16px)', fontWeight: 800, color: 'rgba(52,211,153,0.95)', marginBottom: 8 }}>{a.icon} {a.audience}</div>
@@ -1788,13 +3100,333 @@ function InfograficoJosueSection({ pt }: { pt: boolean }) {
       </div>
 
       {/* ── CONCLUSÃO ── */}
-      <div style={{ borderRadius: 16, background: 'linear-gradient(135deg,rgba(255,180,50,0.10),rgba(52,211,153,0.07))', border: '1.5px solid rgba(255,180,50,0.30)', padding: '20px 24px' }}>
-        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,180,50,0.85)', marginBottom: 10 }}>🏁 {pt ? 'Conclusão' : 'Conclusion'}</div>
-        <p style={{ fontSize: 'clamp(14px,1.8vw,16px)', color: 'rgba(255,255,255,0.85)', lineHeight: 1.75, margin: 0 }}>
+      <div style={{ borderRadius: 16, background: 'linear-gradient(135deg,rgba(255,180,50,0.10),rgba(52,211,153,0.07))', border: '1.5px solid rgba(255,180,50,0.30)', padding: '20px 24px', marginBottom: 28 }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,180,50,0.85)', marginBottom: 8 }}>🏁 {pt ? 'Conclusão' : 'Conclusion'}</div>
+        <DescBlock text={DESC_CONCLUSAO} refs={['fn-r8','fn-r3','fn-r9']} />
+        <p style={{ fontSize: 'clamp(14px,1.8vw,16px)', color: 'rgba(255,255,255,0.85)', lineHeight: 1.75, margin: '12px 0 0' }}>
           {pt
             ? 'O capítulo começa com um morto e termina com um exército. A morte de Moisés não interrompeu o projeto de YHWH — ela apenas revelou que o projeto nunca dependeu de Moisés. A Palavra meditada dia e noite (hagah) é o único instrumento de todo sucesso verdadeiro. O "levanta-te e atravessa" de Josué 1 ecoa no "ide" do Grande Comissionamento — e ambos apontam para Aquele que se levantou do sepulcro e cruzou a fronteira entre a morte e a vida para dar repouso eterno ao Seu povo.'
             : 'The chapter begins with a dead man and ends with an army. Moses\' death did not interrupt YHWH\'s project — it only revealed that the project never depended on Moses. The Word meditated day and night (hagah) is the sole instrument of all true success. The "rise and cross" of Joshua 1 echoes in the Great Commission\'s "go" — both pointing to the One who rose from the tomb and crossed the boundary between death and life to give eternal rest to His people.'}
         </p>
+      </div>
+
+      {/* ── NOTAS DE RODAPÉ ── */}
+      <div style={{ borderRadius: 14, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.07)', padding: '18px 20px' }}>
+        <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.26em', textTransform: 'uppercase', color: 'rgba(255,180,50,0.50)', marginBottom: 12 }}>
+          {pt ? 'Notas de Rodapé' : 'Footnotes'}
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 7 }}>
+          {FN.map((f, i) => (
+            <p key={f.id} id={f.id} style={{ margin: 0, fontSize: 'clamp(11px,1.4vw,12px)', color: 'rgba(200,215,255,0.55)', lineHeight: 1.65 }}>
+              <span style={{ color: GOLD, fontWeight: 800, marginRight: 6 }}>[{i + 1}]</span>{f.txt}
+            </p>
+          ))}
+        </div>
+      </div>
+
+    </div>
+  );
+}
+
+// ─── Infográfico Josué 6 ─────────────────────────────────────────────
+function InfograficoJosue6Section({ pt }: { pt: boolean }) {
+
+  const GOLD  = 'rgba(255,180,50,1)';
+  const BLUE  = 'rgba(80,200,255,1)';
+  const GREEN = 'rgba(100,220,160,1)';
+  const ROSE  = 'rgba(255,100,120,1)';
+
+  const DESC_BIGIDEA = pt
+    ? 'A Big Idea é o conceito único, abrangente e predicativo que governa todo o sermão — extraído diretamente do texto. Robinson definiu-a como "a single, unifying concept of the biblical text expressed in a complete sentence." Todo ponto, ilustração e aplicação deve servir essa ideia.'
+    : 'The Big Idea is the single, comprehensive, predicative concept governing the entire sermon — drawn from the text, not imposed upon it. Every point, illustration, and application must serve it.';
+
+  const DESC_PERGUNTA = pt
+    ? 'A Pergunta Central é a tensão existencial ou teológica que o texto levanta no coração do ouvinte. Ela serve de gancho (hook) e de fio condutor para toda a mensagem — Robinson a chamou de "the complement" antes de ser respondida pela proposição.'
+    : 'The Central Question is the existential or theological tension the text raises in the hearer\'s heart. It serves as hook and unifying thread for the entire message.';
+
+  const DESC_PROP = pt
+    ? 'A Proposição é a resposta afirmativa, completa e predicativa à Pergunta Central — a Big Idea formulada como tese declarativa (sujeito + predicado). Deve ser memorável, fiel ao texto e capaz de governar cada divisão do sermão.'
+    : 'The Proposition is the affirmative, complete, predicative answer to the Central Question — the Big Idea as a declarative thesis sentence. It must govern every sermon division.';
+
+  const DESC_CHIASM = pt
+    ? 'O Quiasma é um recurso literário hebraico em que os elementos se correspondem simetricamente (A–B–◉–B\'–A\'). O CENTRO (◉) carrega o peso teológico principal; os membros externos enquadram e amplificam esse núcleo. Em Josué 6:1-15, o centro é o plano litúrgico divino (vv.3-5) que governa toda a perícope.'
+    : 'Chiasm is a Hebrew literary device where elements correspond symmetrically (A–B–◉–B\'–A\'). The CENTER (◉) carries the main theological weight. In Joshua 6:1-15, the center is the divine liturgical plan (vv.3-5) governing the entire pericope.';
+
+  const DESC_MOVIMENTOS = pt
+    ? 'Os Movimentos do Sermão são as grandes divisões que desenvolvem a Big Idea por etapas — cada um explicando, argumentando e aplicando um aspecto da proposição. Eles fluem organicamente do texto e conduzem o ouvinte da tensão até a resolução final.'
+    : 'Sermon Movements are the major divisions that develop the Big Idea step by step — each explaining, arguing, and applying one aspect of the proposition. They flow from the text and lead the hearer from tension to resolution.';
+
+  const DESC_CRISTOLOGICO = pt
+    ? 'O Eixo Redentor identifica onde a perícope se situa na história da redenção culminada em Cristo. Todo texto do AT aponta, prefigura ou pressupõe o Cristo redentor. Josué 6 é especialmente rico em tipologia: as trombetas, a marcha, a queda da muralha e o fio escarlate de Raabe apontam para Cristo em múltiplas dimensões.'
+    : 'The Redemptive Axis identifies where the pericope stands in redemptive history culminating in Christ. Joshua 6 is especially rich in typology: the trumpets, the march, the wall\'s fall, and Rahab\'s scarlet cord all point to Christ in multiple dimensions.';
+
+  const DESC_APPS = pt
+    ? 'A Aplicação é a ponte do mundo do texto ao mundo do ouvinte — não apenas descrevendo o que o texto diz, mas prescrevendo o que o ouvinte deve crer, sentir ou fazer em resposta. Chapell insiste que a aplicação deve derivar do FCF (Fallen Condition Focus), nunca ser inventada pelo pregador.'
+    : 'Application is the bridge from the text\'s world to the hearer\'s world — prescribing what the hearer must believe, feel, or do. Chapell insists application must derive from the FCF (Fallen Condition Focus), never invented by the preacher.';
+
+  const DESC_CONCLUSAO = pt
+    ? 'A Conclusão é o apelo final que convoca o ouvinte à resposta concreta diante da verdade proclamada — fé, arrependimento, louvor ou obediência. Lloyd-Jones alertava que a conclusão deve ser o momento de maior intensidade do sermão, acendendo a "lógica em chamas" que atravessa todo o coração.'
+    : 'The Conclusion is the final appeal calling the hearer to a concrete response — faith, repentance, praise, or obedience. Lloyd-Jones warned it must be the sermon\'s moment of greatest intensity.';
+
+  const FN: { id: string; txt: string }[] = [
+    { id: 'j6-r1', txt: 'WOUDSTRA, Marten H. The Book of Joshua. NICOT. Grand Rapids: Eerdmans, 1981. pp. 104–115.' },
+    { id: 'j6-r2', txt: 'ROBINSON, Haddon W. Biblical Preaching. 3. ed. Grand Rapids: Baker Academic, 2014. p. 35.' },
+    { id: 'j6-r3', txt: 'CHAPELL, Bryan. Christ-Centered Preaching. 3. ed. Grand Rapids: Baker Academic, 2018. pp. 121–135.' },
+    { id: 'j6-r4', txt: 'HOWARD JR., David M. Joshua. NAC 5. Nashville: B&H Publishing, 1998. pp. 163–182.' },
+    { id: 'j6-r5', txt: 'DORSEY, David A. The Literary Structure of the Old Testament. Grand Rapids: Baker Academic, 1999. pp. 100–102.' },
+    { id: 'j6-r6', txt: 'GREIDANUS, Sidney. Preaching Christ from the Old Testament. Grand Rapids: Eerdmans, 1999. pp. 237–252.' },
+    { id: 'j6-r7', txt: 'GOLDSWORTHY, Graeme. Preaching the Whole Bible as Christian Scripture. Grand Rapids: Eerdmans, 2000. pp. 86–90.' },
+    { id: 'j6-r8', txt: 'LLOYD-JONES, David Martyn. Preaching and Preachers. Grand Rapids: Zondervan, 1971. pp. 75, 97.' },
+    { id: 'j6-r9', txt: 'NICODEMUS, Augustus Lopes. A Pregação Expositiva. São Paulo: Cultura Cristã, 2012. pp. 28–34.' },
+    { id: 'j6-r10', txt: 'KELLER, Timothy. Preaching: Communicating Faith in an Age of Skepticism. New York: Viking, 2015. pp. 157–162.' },
+  ];
+
+  const Ref = ({ ids }: { ids: string[] }) => (
+    <sup style={{ fontSize: 10, color: GREEN, marginLeft: 2, fontWeight: 700 }}>
+      {ids.map((id, i) => {
+        const num = FN.findIndex(f => f.id === id) + 1;
+        return <a key={id} href={`#${id}`} style={{ color: GREEN, textDecoration: 'none' }}>{i > 0 ? ',' : ''}{num}</a>;
+      })}
+    </sup>
+  );
+
+  const DescBlock = ({ text, refs }: { text: string; refs: string[] }) => (
+    <div style={{ margin: '10px 0 4px', padding: '10px 14px', borderRadius: 10, background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)' }}>
+      <p style={{ margin: 0, fontSize: 'clamp(12px,1.5vw,13px)', color: 'rgba(220,230,255,0.65)', lineHeight: 1.75, fontStyle: 'italic' }}>
+        {text}<Ref ids={refs} />
+      </p>
+    </div>
+  );
+
+  // Pergunta de transição: "Como um povo pode avançar por seis dias sem ver resultado —
+  // e qual decreto sustenta a obediência silenciosa diante de uma muralha intransponível?"
+  // Cada movimento responde um aspecto da pergunta, seguindo A → B → ◉ → B'+A'
+  const MOVES = [
+    {
+      num: 'I', sym: 'A', ref: 'Js 6:1',
+      title: pt ? 'A Muralha que Não Tem Resposta Humana (A)' : 'The Wall with No Human Answer (A)',
+      sub: pt ? '[Pergunta 1ª parte] "Como avançar diante de uma muralha intransponível?"' : '[Question part 1] "How to advance before an impenetrable wall?"',
+      emoji: '🏰',
+      key: pt ? 'sōgeret ûmesugeret ("fechada e trancada") — o narrador abre com a impossibilidade total, sem minimizá-la. Não há fissura, não há ponto de ataque. A pergunta homilética nasce aqui: o povo de Deus não tem resposta humana para Jericó — e o texto confirma isso antes de revelar o decreto.' : 'sōgeret ûmesugeret ("shut and barred") — the narrator opens with total impossibility, not minimizing it. No crack, no point of attack. The homiletic question is born here: God\'s people have no human answer for Jericho — the text confirms this before revealing the decree.',
+      app: pt ? '[Resposta ao ouvinte] Qual é a sua Jericó? Identifique-a sem minimizá-la. O texto não finge que a muralha é pequena — Deus a declara entregue exatamente porque é impenetrável para você.' : '[Response to hearer] What is your Jericho? Name it without minimizing it. The text does not pretend the wall is small — God declares it delivered precisely because it is impenetrable to you.',
+      desc: pt ? 'O 1º movimento (A do quiasma) apresenta "the subject in its unresolved state" (Robinson) — a pergunta sem resposta. O ouvinte precisa sentir o peso total da impossibilidade antes de ouvir o decreto, caso contrário o decreto não terá peso. Este movimento gera a tensão que os movimentos II–IV resolverão progressivamente.' : 'Movement 1 (A of the chiasm) presents "the subject in its unresolved state" (Robinson) — the question without an answer. The hearer must feel the full weight of impossibility before hearing the decree; otherwise the decree carries no weight.',
+      descRefs: ['j6-r2', 'j6-r9'],
+      cor: GREEN, corL: 'rgba(100,220,160,0.10)', corB: 'rgba(100,220,160,0.30)',
+    },
+    {
+      num: 'II', sym: 'B', ref: 'Js 6:2',
+      title: pt ? 'O Decreto que Sustenta a Marcha (B)' : 'The Decree that Sustains the March (B)',
+      sub: pt ? '[Resposta à 2ª parte da pergunta] "Qual decreto sustenta a obediência silenciosa?"' : '[Answer to question part 2] "What decree sustains silent obedience?"',
+      emoji: '📯',
+      key: pt ? 'nātattî (perfeito profético, v.2) — "tenho entregado": a gramática é a resposta. O futuro é declarado no passado consumado porque o decreto de Deus não depende do cumprimento histórico para ser certo. rəʾēh ("vê!") convida Josué a perceber pela fé o que os olhos ainda não veem. ESTE é o decreto que sustenta seis dias de silêncio.' : 'nātattî (prophetic perfect, v.2) — "I have given": the grammar is the answer. The future is declared as completed past because God\'s decree does not depend on historical fulfillment to be certain. rəʾēh ("see!") invites Joshua to perceive by faith what eyes cannot yet see. THIS is the decree sustaining six days of silence.',
+      app: pt ? '[Resposta ao ouvinte] Você marchará em silêncio quando não há resultado se — e somente se — ouviu o decreto antes de ver o obstáculo. A obediência sem decreto é superstição; com decreto é fé. Ouça o "tenho entregado" antes de avaliar o "ainda não conquistei."' : '[Response to hearer] You will march in silence without results if — and only if — you heard the decree before seeing the obstacle. Obedience without decree is superstition; with decree it is faith. Hear "I have given" before assessing "I have not yet conquered."',
+      desc: pt ? 'O 2º movimento (B do quiasma) revela o "indicativo teológico" que fundamenta todo imperativo. Chapell chama isso de estrutura "FCF → graça → imperativo": sem o decreto (v.2), a marcha silenciosa é loucura; com ele, é a obediência mais racional possível. Este movimento responde diretamente à 2ª parte da pergunta de transição.' : 'Movement 2 (B of the chiasm) reveals the "theological indicative" grounding every imperative — the "FCF → grace → imperative" structure. Without the decree (v.2), the silent march is madness; with it, it is the most rational obedience possible.',
+      descRefs: ['j6-r3', 'j6-r1'],
+      cor: GOLD, corL: 'rgba(255,180,50,0.10)', corB: 'rgba(255,180,50,0.30)',
+    },
+    {
+      num: 'III', sym: '◉ CENTRO', ref: 'Js 6:3–5',
+      title: pt ? 'O Método de Deus: Liturgia como Guerra (◉)' : "God's Method: Liturgy as War (◉)",
+      sub: pt ? '[Clímax da pergunta] "Como o povo obedece sem entender o método?"' : '[Question climax] "How does the people obey without understanding the method?"',
+      emoji: '🎺',
+      key: pt ? 'šeba kōhănim + šofrot hayyōbēlim + šeba yamim + šeba peʿamim — quatro séries de sete, cada uma aliançal. O CENTRO revela: o método de Deus não é estratégia militar, é liturgia. O silêncio (v.10 — "não gritareis") é a prova mais dura de que a obediência não depende de compreensão. Marchar sem saber o porquê é o núcleo do que significa confiar.' : 'šeba kōhănim + šofrot hayyōbēlim + šeba yamim + šeba peʿamim — four series of seven, each covenantal. The CENTER reveals: God\'s method is not military strategy, it is liturgy. The silence (v.10 — "do not shout") is the hardest proof that obedience does not depend on comprehension. Marching without knowing why is the core of what it means to trust.',
+      app: pt ? '[Aplicação ao centro] Qual é o "método de Deus" que parece absurdo na sua situação — culto, oração, fidelidade sem resultado — e que você tem evitado por não entender? O CENTRO do quiasma não é o ponto mais obvio; é o ponto mais exigente: obedeça ao método sem exigir explicação.' : "[Application to center] What is God's 'method' that seems absurd in your situation — worship, prayer, faithfulness without result — that you have avoided because you do not understand it? The CENTER is not the most obvious point; it is the most demanding: obey the method without demanding explanation.",
+      desc: pt ? 'O CENTRO quiástico (◉) é o ápice teológico ao qual toda a perícope converge (Dorsey). Ele responde ao clímax da pergunta — "como obedecer sem entender?" — revelando que a liturgia aliançal (sete sobre sete) É o ato de guerra, não preparação para ele. A obediência sem racionalização prévia é o núcleo da fé hebraica que Hb 11:30 cataloga como ato de fé.' : 'The chiastic CENTER (◉) is the theological apex to which the whole pericope converges (Dorsey). It answers the question\'s climax — "how to obey without understanding?" — revealing that covenant liturgy (seven upon seven) IS the act of war, not preparation for it.',
+      descRefs: ['j6-r5', 'j6-r4'],
+      cor: ROSE, corL: 'rgba(255,100,120,0.10)', corB: 'rgba(255,100,120,0.30)',
+    },
+    {
+      num: 'IV', sym: "B' + A'", ref: 'Js 6:6–15',
+      title: pt ? 'A Fé que Avança Seis Dias sem Ver (B\' + A\')' : "Faith that Advances Six Days without Seeing (B' + A')",
+      sub: pt ? '[Resolução da pergunta] "Como avançar seis dias sem resultado visível?"' : '[Question resolution] "How to advance six days without visible result?"',
+      emoji: '🌅',
+      key: pt ? 'wayətsav yəhoshua (v.7 — obediência imediata, B\') espelha o decreto do v.2 (B): o indicativo produz imperativo. wayyāqom yehoshua baboqer (vv.12,15 — "levantou-se de madrugada", A\') espelha a impossibilidade do v.1 (A): a perseverança diária é a resposta à muralha que não cedeu ontem. A fé que sustenta seis dias não é entusiasmo — é memória do decreto.' : "wayətsav yəhoshua (v.7 — immediate obedience, B') mirrors the decree of v.2 (B): the indicative produces the imperative. wayyāqom yehoshua baboqer (vv.12,15 — 'rose early,' A') mirrors the impossibility of v.1 (A): daily perseverance is the answer to the wall that didn't yield yesterday. Faith sustaining six days is not enthusiasm — it is memory of the decree.",
+      app: pt ? '[Resolução final] A resposta à pergunta "como avançar seis dias?" é: porque no sétimo dia — no tempo de Deus — o decreto se cumpre. Levante-se de madrugada e marche mais um dia. A obediência de hoje não é porque ontem funcionou; é porque o decreto ainda está de pé.' : "[Final resolution] The answer to 'how to advance six days?' is: because on the seventh day — in God's time — the decree is fulfilled. Rise early and march one more day. Today's obedience is not because yesterday worked; it is because the decree still stands.",
+      desc: pt ? 'Os movimentos B\' e A\' fecham o quiasma espelhando B e A respectivamente — confirmando que a estrutura literária é argumento teológico: o decreto (B) produz obediência (B\'); a impossibilidade (A) é vencida pela perseverança diária (A\'). A pergunta de transição encontra aqui sua resolução narrativa e doutrinária completa.' : "Movements B' and A' close the chiasm mirroring B and A respectively — confirming that the literary structure is theological argument: the decree (B) produces obedience (B'); the impossibility (A) is overcome by daily perseverance (A'). The transition question finds its complete narrative and doctrinal resolution here.",
+      descRefs: ['j6-r3', 'j6-r10'],
+      cor: BLUE, corL: 'rgba(80,200,255,0.10)', corB: 'rgba(80,200,255,0.30)',
+    },
+  ];
+
+  const CHIASM = [
+    { sym: 'A',   ref: 'Js 6:1',    label: pt ? 'Jericó sōgeret ûmesugeret — duplamente fechada' : 'Jericho sōgeret ûmesugeret — doubly shut',              cor: GREEN, indent: 0, emoji: '🏰' },
+    { sym: 'B',   ref: 'Js 6:2',    label: pt ? 'nātattî — "Tenho entregado" (perfeito profético)'  : 'nātattî — "I have given" (prophetic perfect)',           cor: GOLD,  indent: 1, emoji: '📯' },
+    { sym: '◉',   ref: 'Js 6:3–5',  label: pt ? '⬛ CENTRO: Plano litúrgico — 7 sacerdotes, 7 trombetas, 7 dias, 7 voltas' : '⬛ CENTER: Liturgical plan — 7 priests, 7 trumpets, 7 days, 7 circuits', cor: ROSE, indent: 2, emoji: '🎺' },
+    { sym: "B'",  ref: 'Js 6:6–11', label: pt ? 'Josué executa imediatamente — silêncio e obediência (dia 1)' : 'Joshua executes immediately — silence and obedience (day 1)', cor: GOLD, indent: 1, emoji: '🤫' },
+    { sym: "A'",  ref: 'Js 6:12–15',label: pt ? 'Dias 2–7 — levanta-se de madrugada, obediência acumulada' : 'Days 2–7 — rises early, accumulated obedience',          cor: GREEN, indent: 0, emoji: '🌅' },
+  ];
+
+  const CHRISTOLOGICAL = [
+    { icon: '🎺', title: pt ? 'Trombetas de Jubileu → Última Trombeta' : 'Jubilee Trumpets → Last Trumpet', body: pt ? 'šofrot hayyōbēlim (trombetas de jubileu, Lv 25:9) → a última trombeta (1Co 15:52) que ressuscita os mortos e proclama o jubileu eterno. A libertação de Jericó prefigura a libertação escatológica em Cristo.' : 'šofrot hayyōbēlim (jubilee trumpets, Lev 25:9) → the last trumpet (1 Cor 15:52) raising the dead. Jericho\'s liberation prefigures eschatological liberation in Christ.' },
+    { icon: '🏛️', title: pt ? 'Jericó — Primícias do Juízo' : 'Jericho — Firstfruits of Judgment', body: pt ? 'Jericó é a primeira cidade da conquista — suas riquezas são ḥērem (devotadas ao SENHOR, v.17-19), primícias da terra. Cristo é as primícias da ressurreição (1Co 15:20) e executor do juízo final. As trombetas de Jericó prefiguram as do Apocalipse (Ap 8-9).' : 'Jericho is the first city of conquest — its wealth is ḥērem (devoted to the LORD), firstfruits of the land. Christ is firstfruits of resurrection (1 Cor 15:20). Jericho\'s trumpets prefigure those of Revelation (Rev 8-9).' },
+    { icon: '🔴', title: pt ? 'Fio Escarlate de Raabe → Sangue de Cristo' : "Rahab's Scarlet Cord → Christ's Blood", body: pt ? 'O fio escarlate (Js 2:18; 6:25) que marca a casa de Raabe no meio do juízo aponta ao sangue de Cristo que marca os seus no juízo final. Raabe salva com toda a sua casa prefigura a salvação que opera em famílias pela aliança.' : "Rahab's scarlet cord (Josh 2:18; 6:25) marking her house in judgment points to Christ's blood marking His people in final judgment. Rahab saved with her whole house prefigures covenant family salvation." },
+  ];
+
+  const APPS = [
+    { audience: pt ? 'Universal' : 'Universal', icon: '🌍', items: pt ? ['O decreto antecede a batalha — Deus decreta antes de agir', 'A obediência litúrgica é ato de guerra, não fuga dela', 'A muralha que parece impossível já está entregue'] : ['The decree precedes the battle — God decrees before acting', 'Liturgical obedience is an act of war, not an escape from it', 'The seemingly impossible wall is already delivered'] },
+    { audience: pt ? 'Crentes' : 'Believers', icon: '📖', items: pt ? ['Marche mais um dia quando não há resultado visível', 'Estabeleça disciplina diária de obediência sem resultado imediato', 'Confie no "tenho entregado" antes de avaliar o "tenho conquistado"'] : ['March one more day when there is no visible result', 'Establish daily obedience without immediate result', 'Trust "I have given" before assessing "I have conquered"'] },
+    { audience: pt ? 'Pastores' : 'Pastors', icon: '🏛️', items: pt ? ['O culto não é alternativa à ação — é fundamento dela', 'Pregue o indicativo antes do imperativo: o decreto sustenta a marcha', 'A fé que você prega deve marchar seis dias antes de ver resultado'] : ['Worship is not an alternative to action — it is its foundation', 'Preach the indicative before the imperative: the decree sustains the march', 'The faith you preach must march six days before seeing results'] },
+  ];
+
+  return (
+    <div style={{ paddingBottom: 48 }}>
+
+      {/* ── HERO ── */}
+      <div style={{ borderRadius: 20, background: 'linear-gradient(135deg,rgba(100,220,160,0.13) 0%,rgba(255,100,120,0.08) 100%)', border: '1px solid rgba(100,220,160,0.32)', padding: 'clamp(24px,4vw,36px)', marginBottom: 28, textAlign: 'center' }}>
+        <div style={{ fontSize: 'clamp(48px,8vw,72px)', lineHeight: 1, marginBottom: 10, filter: 'drop-shadow(0 0 20px rgba(100,220,160,0.50))' }}>🎺</div>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase', color: 'rgba(100,220,160,0.85)', marginBottom: 8 }}>Josué 6:1–15 · Perícope 261 · {pt ? 'Dia 261' : 'Day 261'}</div>
+        <div style={{ fontSize: 'clamp(22px,3.8vw,32px)', fontWeight: 900, color: '#fff', lineHeight: 1.25, marginBottom: 8 }}>
+          {pt ? 'A Marcha da Fé' : 'The March of Faith'}
+        </div>
+        <div style={{ fontSize: 'clamp(15px,2.2vw,18px)', color: 'rgba(255,255,255,0.55)', fontStyle: 'italic', marginBottom: 16 }}>
+          {pt ? 'Quando a Obediência Litúrgica Precede a Vitória Militar' : 'When Liturgical Obedience Precedes Military Victory'}
+        </div>
+        <div style={{ display: 'inline-flex', flexWrap: 'wrap', gap: 8, justifyContent: 'center' }}>
+          {['Josué', pt ? 'Guerra Santa' : 'Holy War', pt ? 'Fé e Obediência' : 'Faith & Obedience', pt ? 'Decreto Divino' : 'Divine Decree'].map(t => (
+            <span key={t} style={{ fontSize: 'clamp(12px,1.5vw,14px)', fontWeight: 700, padding: '3px 12px', borderRadius: 99, background: 'rgba(100,220,160,0.12)', border: '1px solid rgba(100,220,160,0.28)', color: 'rgba(100,220,160,0.90)' }}>{t}</span>
+          ))}
+        </div>
+      </div>
+
+      {/* ── BIG IDEA ── */}
+      <div style={{ borderRadius: 16, background: 'linear-gradient(135deg,rgba(100,220,160,0.10),rgba(255,100,120,0.07))', border: '1.5px solid rgba(100,220,160,0.35)', padding: '20px 24px', marginBottom: 20 }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(100,220,160,0.90)', marginBottom: 6 }}>
+          💡 {pt ? 'Big Idea · Tema Central' : 'Big Idea · Central Theme'}
+        </div>
+        <DescBlock text={DESC_BIGIDEA} refs={['j6-r2', 'j6-r9']} />
+        <p style={{ fontSize: 'clamp(16px,2.2vw,19px)', fontWeight: 800, color: '#fff', lineHeight: 1.70, margin: '14px 0 0' }}>
+          {pt
+            ? 'O SENHOR que declarou "tenho entregado" (perfeito profético, v.2) convoca Israel a sete dias de obediência litúrgica silenciosa — revelando que toda vitória é obra de Deus antecipada no decreto e que a fé que move muralhas marcha em silêncio antes de gritar.'
+            : 'The LORD who declared "I have given" (prophetic perfect, v.2) calls Israel to seven days of silent liturgical obedience — revealing that every victory is God\'s work anticipated in the decree and that faith that moves walls marches in silence before it shouts.'}
+        </p>
+      </div>
+
+      {/* ── PERGUNTA + PROPOSIÇÃO ── */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))', gap: 14, marginBottom: 28 }}>
+        <div style={{ borderRadius: 14, background: 'rgba(255,100,120,0.06)', border: '1px solid rgba(255,100,120,0.22)', padding: '18px 20px' }}>
+          <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(255,140,140,0.85)', marginBottom: 6 }}>❓ {pt ? 'Pergunta Central' : 'Central Question'}</div>
+          <DescBlock text={DESC_PERGUNTA} refs={['j6-r2', 'j6-r3']} />
+          <p style={{ fontSize: 'clamp(15px,2vw,17px)', color: 'rgba(255,210,210,0.90)', lineHeight: 1.70, fontStyle: 'italic', margin: '12px 0 0' }}>
+            {pt
+              ? '"Como um povo pode avançar por seis dias sem ver resultado — e qual decreto sustenta a obediência silenciosa diante de uma muralha intransponível?"'
+              : '"How can a people advance for six days without seeing results — and what decree sustains silent obedience before an impenetrable wall?"'}
+          </p>
+        </div>
+        <div style={{ borderRadius: 14, background: 'rgba(100,220,160,0.08)', border: '1px solid rgba(100,220,160,0.28)', padding: '18px 20px' }}>
+          <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(100,220,160,0.90)', marginBottom: 6 }}>⚡ {pt ? 'Proposição' : 'Proposition'}</div>
+          <DescBlock text={DESC_PROP} refs={['j6-r2', 'j6-r3', 'j6-r9']} />
+          <p style={{ fontSize: 'clamp(15px,2vw,17px)', fontWeight: 700, color: '#fff', lineHeight: 1.70, margin: '12px 0 0' }}>
+            {pt
+              ? 'O decreto soberano de YHWH — "tenho entregado" — transforma a marcha silenciosa em ato de guerra; a fé que repousa nesse decreto obedece sem exigir resultado imediato e avança até o sétimo dia.'
+              : "YHWH's sovereign decree — \"I have given\" — transforms the silent march into an act of war; faith resting on this decree obeys without demanding immediate results and advances to the seventh day."}
+          </p>
+        </div>
+      </div>
+
+      {/* ── QUIASMA VISUAL ── */}
+      <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.08)', padding: 'clamp(18px,3vw,28px)', marginBottom: 28 }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.45)', marginBottom: 8, textAlign: 'center' }}>
+          🔄 {pt ? 'Estrutura Quiástica · Josué 6:1–15' : 'Chiastic Structure · Joshua 6:1–15'}
+        </div>
+        <DescBlock text={DESC_CHIASM} refs={['j6-r5', 'j6-r4']} />
+        <div style={{ marginTop: 16 }}>
+          {CHIASM.map(({ sym, ref, label, cor, indent, emoji }) => (
+            <div key={sym} style={{ display: 'flex', alignItems: 'flex-start', gap: 10, marginBottom: 10, paddingLeft: `${indent * 20}px` }}>
+              <div style={{ width: 38, height: 38, minWidth: 38, borderRadius: 10, background: `${cor}22`, border: `1.5px solid ${cor}55`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 'clamp(13px,1.6vw,15px)', fontWeight: 900, color: cor }}>{sym}</div>
+              <div style={{ flex: 1, padding: '8px 12px', borderRadius: 10, background: `${cor}0d`, border: `1px solid ${cor}28` }}>
+                <span style={{ fontSize: 'clamp(11px,1.3vw,12px)', fontWeight: 700, color: cor, marginRight: 8 }}>{emoji} {ref}</span>
+                <span style={{ fontSize: 'clamp(13px,1.6vw,14px)', color: 'rgba(255,255,255,0.82)' }}>{label}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ── MOVIMENTOS ── */}
+      <div style={{ marginBottom: 28 }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.45)', marginBottom: 8 }}>
+          📋 {pt ? 'Movimentos do Sermão' : 'Sermon Movements'}
+        </div>
+        <DescBlock text={DESC_MOVIMENTOS} refs={['j6-r2', 'j6-r8']} />
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: 14, marginTop: 14 }}>
+          {MOVES.map(m => (
+            <div key={m.num} style={{ borderRadius: 16, background: m.corL, border: `1.5px solid ${m.corB}`, padding: '18px 20px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 8 }}>
+                <div style={{ width: 34, height: 34, borderRadius: 9, background: `${m.cor}22`, border: `1.5px solid ${m.cor}55`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 'clamp(14px,1.8vw,16px)', fontWeight: 900, color: m.cor }}>{m.num}</div>
+                <div>
+                  <div style={{ fontSize: 'clamp(11px,1.3vw,12px)', fontWeight: 700, color: m.cor, letterSpacing: '0.12em' }}>{m.sym} · {m.ref}</div>
+                  <div style={{ fontSize: 'clamp(14px,1.8vw,16px)', fontWeight: 800, color: '#fff', lineHeight: 1.3 }}>{m.emoji} {m.title}</div>
+                </div>
+              </div>
+              <div style={{ fontSize: 'clamp(11px,1.4vw,12px)', color: 'rgba(220,230,255,0.55)', lineHeight: 1.65, fontStyle: 'italic', marginBottom: 8, padding: '7px 10px', borderRadius: 8, background: 'rgba(255,255,255,0.03)', border: `1px solid ${m.cor}15` }}>
+                {m.desc}<sup style={{ fontSize: 9, color: GREEN, marginLeft: 2 }}>{m.descRefs.map((id, i) => { const n = FN.findIndex(f => f.id === id)+1; return <a key={id} href={`#${id}`} style={{ color: GREEN, textDecoration: 'none' }}>{i>0?',':''}{n}</a>; })}</sup>
+              </div>
+              <div style={{ fontSize: 'clamp(13px,1.6vw,14px)', color: 'rgba(255,255,255,0.60)', fontStyle: 'italic', marginBottom: 8 }}>{m.sub}</div>
+              <div style={{ fontSize: 'clamp(13px,1.6vw,14px)', color: 'rgba(255,255,255,0.82)', lineHeight: 1.60, marginBottom: 10, padding: '8px 10px', borderRadius: 8, background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.07)' }}>{m.key}</div>
+              <div style={{ fontSize: 'clamp(13px,1.6vw,14px)', color: m.cor, lineHeight: 1.55, fontWeight: 600 }}>▸ {m.app}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ── EIXO CRISTOLÓGICO ── */}
+      <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.09)', padding: 'clamp(18px,3vw,26px)', marginBottom: 28 }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(100,220,160,0.70)', marginBottom: 8, textAlign: 'center' }}>
+          ✝️ {pt ? 'Eixo Redentor · Josué 6 → Cristo' : 'Redemptive Axis · Joshua 6 → Christ'}
+        </div>
+        <DescBlock text={DESC_CRISTOLOGICO} refs={['j6-r3', 'j6-r6', 'j6-r7']} />
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))', gap: 14, marginTop: 14 }}>
+          {CHRISTOLOGICAL.map(c => (
+            <div key={c.title} style={{ borderRadius: 12, background: 'rgba(100,220,160,0.07)', border: '1px solid rgba(100,220,160,0.22)', padding: '14px 16px' }}>
+              <div style={{ fontSize: 'clamp(20px,2.8vw,26px)', marginBottom: 6 }}>{c.icon}</div>
+              <div style={{ fontSize: 'clamp(13px,1.6vw,14px)', fontWeight: 800, color: 'rgba(130,240,180,0.95)', marginBottom: 6 }}>{c.title}</div>
+              <div style={{ fontSize: 'clamp(13px,1.6vw,14px)', color: 'rgba(255,255,255,0.75)', lineHeight: 1.60 }}>{c.body}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ── APLICAÇÕES POR AUDIÊNCIA ── */}
+      <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.09)', padding: 'clamp(18px,3vw,26px)', marginBottom: 28 }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(255,180,50,0.70)', marginBottom: 8, textAlign: 'center' }}>
+          🎯 {pt ? 'Aplicações por Audiência' : 'Applications by Audience'}
+        </div>
+        <DescBlock text={DESC_APPS} refs={['j6-r3', 'j6-r10']} />
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(220px,1fr))', gap: 12, marginTop: 14 }}>
+          {APPS.map(a => (
+            <div key={a.audience} style={{ borderRadius: 12, background: 'rgba(255,180,50,0.07)', border: '1px solid rgba(255,180,50,0.20)', padding: '14px 16px' }}>
+              <div style={{ fontSize: 'clamp(14px,1.8vw,16px)', fontWeight: 800, color: 'rgba(255,200,80,0.95)', marginBottom: 8 }}>{a.icon} {a.audience}</div>
+              {a.items.map((item, i) => (
+                <div key={i} style={{ fontSize: 'clamp(13px,1.6vw,14px)', color: 'rgba(255,255,255,0.78)', lineHeight: 1.55, marginBottom: 4 }}>▸ {item}</div>
+              ))}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ── CONCLUSÃO ── */}
+      <div style={{ borderRadius: 16, background: 'linear-gradient(135deg,rgba(100,220,160,0.10),rgba(255,100,120,0.07))', border: '1.5px solid rgba(100,220,160,0.30)', padding: '20px 24px', marginBottom: 28 }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(100,220,160,0.85)', marginBottom: 8 }}>🏁 {pt ? 'Conclusão' : 'Conclusion'}</div>
+        <DescBlock text={DESC_CONCLUSAO} refs={['j6-r8', 'j6-r9']} />
+        <p style={{ fontSize: 'clamp(14px,1.8vw,16px)', color: 'rgba(255,255,255,0.85)', lineHeight: 1.75, margin: '12px 0 0' }}>
+          {pt
+            ? 'Jericó estava fechada e trancada. E então YHWH chegou com uma palavra no perfeito: "tenho entregado." A vitória estava decretada antes da primeira marcha. O povo não marchava porque a estratégia fazia sentido — marchava porque Deus falou. E a fé que descansa no decreto marcha seis dias sem ver resultado, levanta-se de madrugada no sétimo e dá sete voltas em silêncio — não porque é corajosa, mas porque confia no Deus que já decretou o fim antes do começo.'
+            : "Jericho was shut and barred. And then YHWH arrived with a word in the perfect tense: \"I have given.\" The victory was decreed before the first march. The people did not march because the strategy made sense — they marched because God spoke. And the faith that rests on the decree marches six days without seeing results, rises early on the seventh, and makes seven circuits in silence — not because it is courageous, but because it trusts the God who already decreed the end before the beginning."}
+        </p>
+      </div>
+
+      {/* ── NOTAS DE RODAPÉ ── */}
+      <div style={{ borderRadius: 14, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.07)', padding: '18px 20px' }}>
+        <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.26em', textTransform: 'uppercase', color: 'rgba(100,220,160,0.50)', marginBottom: 12 }}>
+          {pt ? 'Notas de Rodapé' : 'Footnotes'}
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 7 }}>
+          {FN.map((f, i) => (
+            <p key={f.id} id={f.id} style={{ margin: 0, fontSize: 'clamp(11px,1.4vw,12px)', color: 'rgba(200,215,255,0.55)', lineHeight: 1.65 }}>
+              <span style={{ color: GREEN, fontWeight: 800, marginRight: 6 }}>[{i + 1}]</span>{f.txt}
+            </p>
+          ))}
+        </div>
       </div>
 
     </div>
@@ -2025,22 +3657,30 @@ export default function PregacaoPage() {
   const [loadingPericopes, setLoadingPericopes] = useState(false);
   const [selectedPericopeIdx, setSelectedPericopeIdx] = useState<number | null>(null);
   const [contentTab, setContentTab] = useState<'estrutura' | 'homilestica' | 'quiasma' | 'infografico'>('estrutura');
+  const [quiasmaDias, setQuiasmaDias] = useState<Set<number>>(new Set());
 
   // Busca perícopes quando muda o livro
   useEffect(() => {
     setLoadingPericopes(true);
     setPericopes([]);
     setSelectedPericopeIdx(null);
+    setQuiasmaDias(new Set());
     fetch(`${livroPath(selectedBook.slug, selectedBook.testamento)}/quiastico.txt`)
       .then(r => r.ok ? r.text() : '')
       .then(text => {
         const list: Pericope[] = [];
+        const qSet = new Set<number>();
         for (const raw of text.split(/\r?\n/)) {
           const line = raw.trim();
           const m = line.match(/^\[(\d+)\]\s+(.+?)(?:\s+[—–-]\s+(.+))?$/);
-          if (m) list.push({ idx: parseInt(m[1], 10), titulo: m[2].trim(), ref: (m[3] ?? '').trim() });
+          if (m) {
+            const idx = parseInt(m[1], 10);
+            list.push({ idx, titulo: m[2].trim(), ref: (m[3] ?? '').trim() });
+            if (extractQuiasmaBloco(text, idx)) qSet.add(idx);
+          }
         }
         setPericopes(list);
+        setQuiasmaDias(qSet);
         if (list.length > 0) setSelectedPericopeIdx(list[0].idx);
         setLoadingPericopes(false);
       })
@@ -2057,6 +3697,16 @@ export default function PregacaoPage() {
   const selectedPericope = pericopes.find(p => p.idx === selectedPericopeIdx) ?? null;
   const paraPregarConteudo = selectedDia ? gerarParaPregar(selectedDia) : null;
 
+  const ESTRUTURA_DIAS = new Set([1, 2, 3, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265]);
+  const tabHasContent = (key: string) => {
+    if (!selectedDia || !selectedPericope) return false;
+    if (key === 'estrutura') return ESTRUTURA_DIAS.has(selectedDia.dia);
+    if (key === 'homilestica') return !!paraPregarConteudo;
+    if (key === 'quiasma') return quiasmaDias.has(selectedPericope.idx);
+    if (key === 'infografico') return true;
+    return false;
+  };
+
   const cor = selectedBook.testamento === 'AT' ? C.atColor : C.ntColor;
   const corB = selectedBook.testamento === 'AT' ? C.goldB : C.blueB;
 
@@ -2071,7 +3721,8 @@ export default function PregacaoPage() {
 
   function selectPericope(idx: number) {
     setSelectedPericopeIdx(idx);
-    setContentTab('estrutura');
+    const dia = bookDays[idx - 1]?.dia;
+    setContentTab(selectedBook.slug === 'josue' || dia === 1 ? 'infografico' : 'estrutura');
     setTimeout(() => {
       const el = document.getElementById('pregacao-content');
       if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -2362,6 +4013,45 @@ export default function PregacaoPage() {
                             }}>
                               {p.titulo}
                             </div>
+
+                            {/* Indicadores de abas disponíveis */}
+                            {dia && (() => {
+                              const hasEstrutura = ESTRUTURA_DIAS.has(dia.dia);
+                              const hasHomilestica = !!gerarParaPregar(dia);
+                              const hasQuiasma = quiasmaDias.has(p.idx);
+                              const hasInfografico = dia.dia === 1 || selectedBook.slug === 'josue';
+                              const tabs = [
+                                { key: 'E', label: pt ? 'Estrutura' : 'Structure',   ok: hasEstrutura },
+                                { key: 'H', label: pt ? 'Homilética' : 'Homiletics', ok: hasHomilestica },
+                                { key: 'Q', label: pt ? 'Quiástica' : 'Chiastic',    ok: hasQuiasma },
+                                ...(hasInfografico ? [{ key: 'I', label: 'Infográfico', ok: true }] : []),
+                              ];
+                              return (
+                                <div style={{ display: 'flex', gap: 4, marginTop: 10, flexWrap: 'wrap' }}>
+                                  {tabs.map(t => (
+                                    <span
+                                      key={t.key}
+                                      title={`${t.label}: ${t.ok ? (pt ? 'disponível' : 'available') : (pt ? 'não disponível' : 'not available')}`}
+                                      style={{
+                                        display: 'inline-flex', alignItems: 'center', gap: 3,
+                                        padding: '2px 6px', borderRadius: 4,
+                                        fontSize: 9, fontWeight: 900, letterSpacing: '0.06em',
+                                        background: t.ok ? 'rgba(100,220,130,0.15)' : 'rgba(255,255,255,0.05)',
+                                        border: `1px solid ${t.ok ? 'rgba(100,220,130,0.40)' : 'rgba(255,255,255,0.10)'}`,
+                                        color: t.ok ? 'rgba(130,240,160,0.90)' : 'rgba(255,255,255,0.25)',
+                                      }}
+                                    >
+                                      <span style={{
+                                        width: 5, height: 5, borderRadius: '50%', flexShrink: 0,
+                                        background: t.ok ? 'rgba(100,220,130,1)' : 'rgba(255,255,255,0.20)',
+                                        boxShadow: t.ok ? '0 0 4px rgba(100,220,130,0.8)' : 'none',
+                                      }} />
+                                      {t.key}
+                                    </span>
+                                  ))}
+                                </div>
+                              );
+                            })()}
                           </div>
                         </button>
                       );
@@ -2379,9 +4069,10 @@ export default function PregacaoPage() {
                       { key: 'estrutura',   label: pt ? 'Estrutura Homilética' : 'Homiletic Structure' },
                       { key: 'homilestica', label: pt ? 'Homilética para Pregar' : 'Homiletics for Preaching' },
                       { key: 'quiasma',     label: pt ? 'Estrutura Quiástica Espelhada' : 'Mirror Chiastic Structure' },
-                      ...(selectedDia?.dia === 1 || selectedDia?.dia === 254 ? [{ key: 'infografico', label: pt ? '🖼 Infográfico' : '🖼 Infographic' }] : []),
+                      ...(selectedDia?.dia === 1 || selectedBook.slug === 'josue' ? [{ key: 'infografico', label: pt ? '🖼 Infográfico' : '🖼 Infographic' }] : []),
                     ] as { key: 'estrutura' | 'homilestica' | 'quiasma' | 'infografico'; label: string }[]).map(tab => {
                       const active = contentTab === tab.key;
+                      const filled = tabHasContent(tab.key);
                       return (
                         <button
                           key={tab.key}
@@ -2395,9 +4086,19 @@ export default function PregacaoPage() {
                             marginBottom: -1,
                             transition: 'all 0.15s',
                             letterSpacing: '0.03em',
+                            display: 'flex', alignItems: 'center', gap: 6,
                           }}
                         >
                           {tab.label}
+                          <span
+                            title={filled ? (pt ? 'Conteúdo disponível' : 'Content available') : (pt ? 'Ainda não disponível' : 'Not yet available')}
+                            style={{
+                              width: 7, height: 7, borderRadius: '50%', flexShrink: 0,
+                              background: filled ? 'rgba(100,220,130,1)' : 'rgba(255,255,255,0.18)',
+                              boxShadow: filled ? '0 0 5px rgba(100,220,130,0.6)' : 'none',
+                              display: 'inline-block',
+                            }}
+                          />
                         </button>
                       );
                     })}
@@ -2420,7 +4121,38 @@ export default function PregacaoPage() {
                   <AnimatePresence mode="wait">
                     {contentTab === 'infografico' ? (
                       <motion.div key="infografico" initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 10 }} transition={{ duration: 0.18 }}>
-                        {selectedDia?.dia === 254 ? <InfograficoJosueSection pt={pt} /> : <InfograficoSection pt={pt} />}
+                        {selectedDia?.dia === 254 ? <InfograficoJosueSection pt={pt} />
+                          : selectedDia?.dia === 255 ? <InfograficoJosue255Section pt={pt} />
+                          : selectedDia?.dia === 256 ? <InfograficoJosue256Section pt={pt} />
+                          : selectedDia?.dia === 257 ? <InfograficoJosue257Section pt={pt} />
+                          : selectedDia?.dia === 258 ? <InfograficoJosue258Section pt={pt} />
+                          : selectedDia?.dia === 259 ? <InfograficoJosue259Section pt={pt} />
+                          : selectedDia?.dia === 260 ? <InfograficoJosue5v13Section pt={pt} />
+                          : selectedDia?.dia === 261 ? <InfograficoJosue261Section pt={pt} />
+                          : selectedDia?.dia === 262 ? <InfograficoJosue262Section pt={pt} />
+                          : selectedDia?.dia === 263 ? <InfograficoJosue263Section pt={pt} />
+                          : selectedDia?.dia === 264 ? <InfograficoJosue264Section pt={pt} />
+                          : selectedDia?.dia === 265 ? <InfograficoJosue265Section pt={pt} />
+                          : selectedDia?.dia === 266 ? <InfograficoJosue266Section pt={pt} />
+                          : selectedDia?.dia === 267 ? <InfograficoJosue267Section pt={pt} />
+                          : selectedDia?.dia === 268 ? <InfograficoJosue268Section pt={pt} />
+                          : selectedDia?.dia === 269 ? <InfograficoJosue269Section pt={pt} />
+                          : selectedDia?.dia === 270 ? <InfograficoJosue270Section pt={pt} />
+                          : selectedDia?.dia === 271 ? <InfograficoJosue271Section pt={pt} />
+                          : selectedDia?.dia === 272 ? <InfograficoJosue272Section pt={pt} />
+                          : selectedDia?.dia === 273 ? <InfograficoJosue273Section pt={pt} />
+                          : selectedDia?.dia === 274 ? <InfograficoJosue274Section pt={pt} />
+                          : selectedDia?.dia === 275 ? <InfograficoJosue275Section pt={pt} />
+                          : selectedDia?.dia === 276 ? <InfograficoJosue276Section pt={pt} />
+                          : selectedDia?.dia === 277 ? <InfograficoJosue277Section pt={pt} />
+                          : selectedDia?.dia === 278 ? <InfograficoJosue278Section pt={pt} />
+                          : selectedDia?.dia === 279 ? <InfograficoJosue279Section pt={pt} />
+                          : selectedDia?.dia === 280 ? <InfograficoJosue280Section pt={pt} />
+                          : selectedDia?.dia === 281 ? <InfograficoJosue281Section pt={pt} />
+                          : selectedDia?.dia === 282 ? <InfograficoJosue282Section pt={pt} />
+                          : selectedDia?.dia === 283 ? <InfograficoJosue283Section pt={pt} />
+                          : selectedDia?.dia === 284 ? <InfograficoJosue284Section pt={pt} />
+                          : <InfograficoSection pt={pt} />}
                       </motion.div>
                     ) : contentTab === 'estrutura' ? (
                       <motion.div key="estrutura" initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 10 }} transition={{ duration: 0.18 }}>
@@ -2428,8 +4160,32 @@ export default function PregacaoPage() {
                           <EstruturaHomileticaSection pt={pt} />
                         ) : selectedDia.dia === 2 ? (
                           <EstruturaHomileticaSection2 pt={pt} />
+                        ) : selectedDia.dia === 3 ? (
+                          <EstruturaGenesis3Section pt={pt} />
                         ) : selectedDia.dia === 254 ? (
                           <EstruturaHomileticaJosueSection pt={pt} />
+                        ) : selectedDia.dia === 255 ? (
+                          <EstruturaJosue255Section pt={pt} />
+                        ) : selectedDia.dia === 256 ? (
+                          <EstruturaJosue256Section pt={pt} />
+                        ) : selectedDia.dia === 257 ? (
+                          <EstruturaJosue257Section pt={pt} />
+                        ) : selectedDia.dia === 258 ? (
+                          <EstruturaJosue258Section pt={pt} />
+                        ) : selectedDia.dia === 259 ? (
+                          <EstruturaJosue259Section pt={pt} />
+                        ) : selectedDia.dia === 260 ? (
+                          <EstruturaHomileticaJosue5v13Section pt={pt} />
+                        ) : selectedDia.dia === 261 ? (
+                          <EstruturaHomileticaJosue6Section pt={pt} />
+                        ) : selectedDia.dia === 262 ? (
+                          <EstruturaJosue262Section pt={pt} />
+                        ) : selectedDia.dia === 263 ? (
+                          <EstruturaJosue263Section pt={pt} />
+                        ) : selectedDia.dia === 264 ? (
+                          <EstruturaJosue264Section pt={pt} />
+                        ) : selectedDia.dia === 265 ? (
+                          <EstruturaJosue265Section pt={pt} />
                         ) : (
                           <div style={{ padding: 32, borderRadius: 16, border: '1px solid rgba(168,120,255,0.20)', background: 'rgba(20,12,40,0.6)', color: C.muted, fontSize: 13, textAlign: 'center' }}>
                             {pt ? 'Estrutura homilética ainda não disponível para esta perícope.' : 'Homiletic structure not yet available for this pericope.'}
