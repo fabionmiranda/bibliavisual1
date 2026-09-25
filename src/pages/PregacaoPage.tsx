@@ -1279,15 +1279,10 @@ function EstruturaHomileticaJosue6Section({ pt }: { pt: boolean }) {
             ? 'Por que Deus ordena marchar em silêncio por seis dias antes de agir — e o que essa espera revela sobre a natureza da fé que move muralhas?'
             : 'Why does God command silent marching for six days before acting — and what does this waiting reveal about the nature of faith that moves walls?'}
         </p>
-        <div style={{ margin: '14px 0', padding: '12px 18px', borderRadius: 14, background: 'rgba(100,220,160,0.10)', border: '1px solid rgba(100,220,160,0.30)', display: 'flex', alignItems: 'center', gap: 14 }}>
-          <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', color: 'rgba(100,220,160,1)', textTransform: 'uppercase', whiteSpace: 'nowrap', flexShrink: 0 }}>{pt ? 'PALAVRA-CHAVE' : 'KEY WORD'}</div>
-          <div style={{ width: 1, height: 28, background: 'rgba(100,220,160,0.30)', flexShrink: 0 }} />
-          <div style={{ fontSize: 'clamp(17px,2.4vw,21px)', fontWeight: 900, color: '#ffffff', letterSpacing: '0.04em' }}>OBEDIÊNCIA</div>
-        </div>
         <p style={{ marginTop: 10 }}><strong style={{ color: accent }}>{pt ? 'Transição:' : 'Transition:'}</strong>{' '}
           {pt
-            ? 'Para responder, seguiremos a estrutura quiástica A–B–◉–B\'–A\' de Josué 6:1–15, onde o centro revela a lógica teológica do texto e os espelhos confirmam que toda a perícope gira em torno da obediência silenciosa que descansa no decreto soberano.'
-            : "To answer, we will follow the chiastic structure A–B–◉–B'–A' of Joshua 6:1–15, where the center reveals the theological logic of the text and the mirrors confirm that the entire pericope revolves around silent obedience resting on the sovereign decree."}
+            ? <>Para responder, seguiremos a <strong style={{ color: accent, fontWeight: 900, letterSpacing: '0.06em', fontSize: '1.05em' }}>OBEDIÊNCIA</strong> silenciosa de Josué 6:1–15: cada movimento revela como um povo obedece por seis dias sem resultado visível, descansando no decreto soberano de YHWH.</>
+            : <>To answer, we follow the silent <strong style={{ color: accent, fontWeight: 900, letterSpacing: '0.06em', fontSize: '1.05em' }}>OBEDIENCE</strong> of Joshua 6:1–15: each movement reveals how a people obeys for six days without visible result, resting on the sovereign decree of YHWH.</>}
         </p>
         <p style={{ marginTop: 10, fontSize: 14, color: 'rgba(255,255,255,0.60)' }}>
           Cf. Chapell, B. <em>Christ-Centered Preaching</em>. 3. ed. Grand Rapids: Baker Academic, 2018. pp. 121–135.⁴
@@ -1728,15 +1723,10 @@ function EstruturaHomileticaJosue5v13Section({ pt }: { pt: boolean }) {
             ? 'Por que o Príncipe do Exército do SENHOR responde "Não" à pergunta de Josué — e o que esse "Não" revela sobre quem realmente conduz a conquista?'
             : 'Why does the Prince of the LORD\'s Army answer "No" to Joshua\'s question — and what does that "No" reveal about who truly leads the conquest?'}
         </p>
-        <div style={{ margin: '14px 0', padding: '12px 18px', borderRadius: 14, background: 'rgba(255,140,80,0.10)', border: '1px solid rgba(255,140,80,0.30)', display: 'flex', alignItems: 'center', gap: 14 }}>
-          <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', color: 'rgba(255,140,80,1)', textTransform: 'uppercase', whiteSpace: 'nowrap', flexShrink: 0 }}>{pt ? 'PALAVRA-CHAVE' : 'KEY WORD'}</div>
-          <div style={{ width: 1, height: 28, background: 'rgba(255,140,80,0.30)', flexShrink: 0 }} />
-          <div style={{ fontSize: 'clamp(17px,2.4vw,21px)', fontWeight: 900, color: '#ffffff', letterSpacing: '0.04em' }}>SOBERANIA</div>
-        </div>
         <p style={{ marginTop: 10 }}><strong style={{ color: accent }}>{pt ? 'Transição:' : 'Transition:'}</strong>{' '}
           {pt
-            ? "Para responder, seguiremos a estrutura quiástica A–B–◉–B'–A' de Josué 5:13–15, onde o centro (◉) é o 'Não' soberano que reorienta toda a teologia da conquista, e os membros exteriores mostram o encontro que transforma Josué de general em adorador."
-            : "To answer, we follow the chiastic structure A–B–◉–B'–A' of Joshua 5:13–15, where the center (◉) is the sovereign 'No' that reorients the entire theology of the conquest, and the outer members show the encounter that transforms Joshua from general to worshiper."}
+            ? <>Para responder, seguiremos a <strong style={{ color: accent, fontWeight: 900, letterSpacing: '0.06em', fontSize: '1.05em' }}>SOBERANIA</strong> revelada em Josué 5:13–15: cada movimento mostra como o encontro com o Comandante transforma Josué de general em adorador.</>
+            : <>To answer, we follow the <strong style={{ color: accent, fontWeight: 900, letterSpacing: '0.06em', fontSize: '1.05em' }}>SOVEREIGNTY</strong> revealed in Joshua 5:13–15: each movement shows how the encounter with the Commander transforms Joshua from general to worshiper.</>}
         </p>
         <p style={{ marginTop: 10, fontSize: 14, color: 'rgba(255,255,255,0.60)' }}>
           Cf. Chapell, B. <em>Christ-Centered Preaching</em>. 3. ed. Grand Rapids: Baker Academic, 2018. pp. 121–135.⁴

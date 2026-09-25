@@ -92,14 +92,15 @@ function EstruturaTemplate({ d, pt }: { d: EData; pt: boolean }) {
 
       <SC num="VI" icon="❓" title={pt ? 'Interrogação e Transição' : 'Question and Transition'}>
         <p><strong style={{ color: acc }}>{pt ? 'Interrogação central:' : 'Central question:'}</strong> {d.interrogacao}</p>
-        {d.palavraChave && (
-          <div style={{ margin: '14px 0', padding: '12px 18px', borderRadius: 14, background: `${acc}18`, border: `1px solid ${accB}`, display: 'flex', alignItems: 'center', gap: 14 }}>
-            <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', color: acc, textTransform: 'uppercase', whiteSpace: 'nowrap', flexShrink: 0 }}>{pt ? 'PALAVRA-CHAVE' : 'KEY WORD'}</div>
-            <div style={{ width: 1, height: 28, background: accB, flexShrink: 0 }} />
-            <div style={{ fontSize: 'clamp(17px,2.4vw,21px)', fontWeight: 900, color: C.white, letterSpacing: '0.04em' }}>{d.palavraChave}</div>
-          </div>
-        )}
-        <p style={{ marginTop: 10 }}><strong style={{ color: acc }}>{pt ? 'Transição:' : 'Transition:'}</strong> {d.transicao}</p>
+        <p style={{ marginTop: 10 }}><strong style={{ color: acc }}>{pt ? 'Transição:' : 'Transition:'}</strong>{' '}
+          {(() => {
+            const key = d.palavraChave;
+            const text = d.transicao;
+            if (!key || !text.includes(key)) return <>{text}</>;
+            const i = text.indexOf(key);
+            return <>{text.slice(0, i)}<strong style={{ color: acc, fontWeight: 900, letterSpacing: '0.06em', fontSize: '1.05em' }}>{key}</strong>{text.slice(i + key.length)}</>;
+          })()}
+        </p>
       </SC>
 
       <SC num="VII" icon="📐" title={pt ? 'Divisões / Movimentos' : 'Divisions / Movements'}>
@@ -191,7 +192,7 @@ const D255: EData = {
   proposicao: 'A fé de Rahab — confissão verbal, aliança visível (fio escarlate) e ação protetora — é o modelo bíblico da fé que salva: conhecimento, confiança e compromisso unificados pelo sinal do sangue que cobre no juízo.',
   interrogacao: 'O que o fio escarlate de Rahab revela sobre a fé que salva no meio do juízo — e como esse sinal aponta para o sangue que nos cobre em Cristo?',
   palavraChave: 'FIO ESCARLATE',
-  transicao: "Para responder, seguiremos a estrutura quiástica A–B–◉–B'–A' de Josué 2, onde o centro (◉) é a confissão de fé de Rahab que governa toda a perícope.",
+  transicao: "Para responder, seguiremos o FIO ESCARLATE da fé pela estrutura quiástica A–B–◉–B'–A' de Josué 2 — cada movimento revela uma dimensão da fé que salva no meio do juízo.",
   chiasm: [
     { sym: 'A',  ref: 'Js 2:1',     label: 'Dois espias entram em secreto — missão de reconhecimento',              cor: 'rgba(210,70,70,1)' },
     { sym: 'B',  ref: 'Js 2:2-8',   label: 'Rahab esconde os espias no telhado — risco de vida pela fé',            cor: 'rgba(255,140,80,1)' },
@@ -254,7 +255,7 @@ const D256: EData = {
   proposicao: 'A travessia do Jordão é o segundo Êxodo: como o Mar Vermelho se abriu diante de Moisés, o Jordão se abre diante da arca — confirmando que a presença santificadora de YHWH, carregada por sacerdotes que pisam primeiro, é o único poder que garante passagem do deserto à herança.',
   interrogacao: 'O que a parada do Jordão quando os sacerdotes tocam as águas revela sobre a relação entre fé-que-age e presença-que-abre-o-caminho — e como isso aponta para Cristo como nossa arca?',
   palavraChave: 'FÉ-QUE-PISA',
-  transicao: "Para responder, seguiremos a estrutura quiástica A–B–◉–B'–A' de Josué 3, onde o centro (◉) é o passo de fé que precede o milagre.",
+  transicao: "Para responder, veremos a FÉ-QUE-PISA na estrutura quiástica A–B–◉–B'–A' de Josué 3 — cada movimento revela como a presença de YHWH requer e produz obediência prévia.",
   chiasm: [
     { sym: 'A',  ref: 'Js 3:1-4',   label: 'Israel acampa no Jordão — 2.000 côvados de distância da arca',          cor: 'rgba(80,150,240,1)' },
     { sym: 'B',  ref: 'Js 3:5-8',   label: '"Santificai-vos" — preparação que precede o poder divino',               cor: 'rgba(255,180,50,1)' },
@@ -309,7 +310,7 @@ const D257: EData = {
   proposicao: 'O memorial de pedras em Gilgal é catequese encarnada: Deus ordena que Israel construa um monumento que provoca perguntas para que a resposta — "YHWH secou o Jordão" — produza temor e fé em cada geração que nunca viveu o milagre mas ouve sobre ele.',
   interrogacao: 'O que as doze pedras do leito do Jordão revelam sobre a responsabilidade de cada geração de transmitir a memória das obras de YHWH — e como isso aponta para a Ceia do Senhor?',
   palavraChave: 'ZIKKARON',
-  transicao: "Para responder, seguiremos a estrutura quiástica de Josué 4, onde o centro (◉) é a confirmação da liderança de Josué e os membros externos (A–A') enquadram o mandamento do memorial e sua instrução catequética.",
+  transicao: "Para responder, seguiremos o ZIKKARON — o memorial geracional — de Josué 4: cada movimento revela como Deus ordena que cada geração transmita a memória das obras de YHWH.",
   chiasm: [
     { sym: 'A',  ref: 'Js 4:1-3',   label: 'Mandamento: tirai 12 pedras do leito seco — uma por tribo',                      cor: 'rgba(170,110,50,1)' },
     { sym: 'B',  ref: 'Js 4:4-10',  label: 'Execução: 12 homens tiram 12 pedras — sacerdotes firmes no meio',                cor: 'rgba(255,180,50,1)' },
@@ -364,7 +365,7 @@ const D258: EData = {
   proposicao: 'Antes de entrar em Jericó, Israel precisou passar por Gilgal — onde a vergonha do Egito foi rolada pela circuncisão, confirmando que nenhuma herança prometida pode ser possuída sem a marca aliançal que separa o povo como propriedade de YHWH.',
   interrogacao: 'O que a segunda circuncisão em Gilgal revela sobre a necessidade de restauração aliançal antes da conquista — e como isso aponta para a circuncisão do coração em Cristo?',
   palavraChave: 'GILGAL',
-  transicao: "Para responder, seguiremos a estrutura quiástica de Josué 5:2-12, onde o centro (◉) é a declaração de YHWH: 'rolei a vergonha do Egito' — ato que nomeia Gilgal e restaura a identidade do povo.",
+  transicao: "Para responder, veremos o GILGAL em Josué 5:2-12 — o lugar onde a vergonha é rolada: cada movimento expõe uma dimensão da restauração aliançal que YHWH exige antes da conquista.",
   chiasm: [
     { sym: 'A',  ref: 'Js 5:2-3',   label: 'Mandamento: "faze facas de pederneira e circuncida novamente"',             cor: 'rgba(80,190,100,1)' },
     { sym: 'B',  ref: 'Js 5:4-8',   label: 'Razão: geração do deserto morreu incircuncisa — nova geração circuncidada',   cor: 'rgba(255,180,50,1)' },
@@ -419,7 +420,7 @@ const D259: EData = {
   proposicao: 'O maná cessou no momento exato em que era desnecessário — revelando que a providência de YHWH é perfeitamente calibrada para cada estágio da jornada; e que Cristo, o pão verdadeiro do céu (Jo 6:35), é o alimento permanente que o maná apenas prefigurava.',
   interrogacao: 'O que a cessação precisa do maná — exatamente no dia em que Israel comeu do fruto da terra — revela sobre a fidelidade de YHWH nos estágios da jornada?',
   palavraChave: 'FIDELIDADE',
-  transicao: "Para responder, seguiremos a estrutura quiástica compacta de Js 5:10-12, onde o centro (◉) é a cessação precisa do maná — marcador da transição do deserto à herança.",
+  transicao: "Para responder, seguiremos a FIDELIDADE de YHWH em Js 5:10-12: cada movimento revela como a providência divina se ajusta com precisão aos estágios da jornada — da Páscoa ao maná que cessa no dia certo.",
   chiasm: [
     { sym: 'A',  ref: 'Js 5:10',  label: 'Páscoa celebrada no 14º dia — identidade aliançal confirmada antes da herança',   cor: 'rgba(200,155,75,1)' },
     { sym: 'B',  ref: 'Js 5:11',  label: 'Comeram pães ázimos e trigo torrado — primeiro fruto da terra de fé',             cor: 'rgba(255,180,50,1)' },
@@ -473,7 +474,7 @@ const D262: EData = {
   proposicao: 'A Palavra de YHWH tem eficácia infalível e alcance trans-geracional: o decreto de Josué sobre Jericó aguardou 500 anos e então se cumpriu palavra por palavra — porque a Palavra profética de Deus governa o tempo, não é governada por ele.',
   interrogacao: 'O que o cumprimento literal da maldição de Josué em 1Rs 16:34, cinco séculos depois, revela sobre a permanência e a soberania da Palavra de YHWH na história?',
   palavraChave: 'PALAVRA',
-  transicao: "Para responder, seguiremos a estrutura quiástica de Josué 6:26-27, onde o centro (◉) é a declaração 'o SENHOR estava com Josué' — fundamento de toda eficácia profética.",
+  transicao: "Para responder, seguiremos a PALAVRA profética de Josué 6:26-27: cada movimento revela como a Palavra de YHWH governa o tempo — do decreto ao cumprimento literal 500 anos depois.",
   chiasm: [
     { sym: 'A',  ref: 'Js 6:26a',  label: 'Josué jura: "Maldito diante do SENHOR quem reedificar Jericó"',                 cor: 'rgba(150,70,190,1)' },
     { sym: 'B',  ref: 'Js 6:26b',  label: 'Forma precisa da maldição: primogênito (alicerces), filho mais moço (portas)',   cor: 'rgba(255,140,80,1)' },
@@ -528,7 +529,7 @@ const D263: EData = {
   proposicao: "O ma'al (prevaricação comunitária) de Acã demonstra que o pecado oculto tem peso público: contamina o acampamento, anula a proteção divina e derrota o exército; e o vale de Acor revela que o mesmo lugar de juízo pode tornar-se porta de esperança quando o mal é confrontado com transparência diante de YHWH.",
   interrogacao: 'Como um pecado oculto de um só homem pode derrotar uma nação inteira — e o que o vale de Acor revela sobre a relação entre juízo, comunidade e esperança?',
   palavraChave: 'ḤĒREM',
-  transicao: "Para responder, seguiremos a estrutura quiástica de Josué 7, onde o centro (◉) é a declaração divina — 'Israel pecou, violou minha aliança' — e os membros exteriores contrastam derrota (A) e restauração (A').",
+  transicao: "Para responder, seguiremos o ḤĒREM violado em Josué 7: cada movimento revela como o pecado oculto de um indivíduo contamina toda a comunidade aliançal — da derrota ao juízo que abre o vale de esperança.",
   chiasm: [
     { sym: 'A',  ref: 'Js 7:1-5',   label: 'Derrota em Ai: "os corações do povo se derreteram como água"',                cor: 'rgba(195,75,40,1)' },
     { sym: 'B',  ref: 'Js 7:6-9',   label: 'Josué rasga vestes e ora prostrado: "Por que nos fizeste passar o Jordão?"',  cor: 'rgba(255,140,80,1)' },
@@ -582,8 +583,8 @@ const D264: EData = {
   exordio: 'A primeira batalha de Ai foi derrota. Trinta e seis mortos. Corações derretidos como água. E então veio o julgamento de Acã. E então YHWH disse: "Não temas. Levanta-te. Sobe a Ai." E Josué estendeu o kîdôn. E não o recolheu. Até que tudo estivesse cumprido.',
   proposicao: 'A emboscada de Ai foi ordenada por decreto de YHWH com sinal específico (kîdôn estendido): a vitória pertencia a Deus; e assim como a lança estendida não foi recolhida até o cumprimento completo, Cristo estendeu-se na cruz até "consumado está" — sem recuo.',
   interrogacao: 'O que o kîdôn que Josué estendeu e não recolheu até a destruição completa de Ai revela sobre a natureza da autoridade divina — e como tipifica o comprometimento irrevogável de Cristo?',
-  palavraChave: 'KÎDÔN',
-  transicao: "Para responder, seguiremos a estrutura quiástica de Josué 8, onde o centro (◉) é a saída confiante do rei de Ai para a armadilha de Deus.",
+  palavraChave: 'MARCAS',
+  transicao: "Para responder, vejamos as MARCAS da vitória devolvida em Josué 8: cada movimento expõe uma marca da soberania divina que transforma derrota em conquista — da recomissão à lança que não voltou.",
   chiasm: [
     { sym: 'A',  ref: 'Js 8:1-2',   label: 'YHWH: "Não temas — entreguei em tua mão o rei de Ai e seu povo"',              cor: 'rgba(50,170,160,1)' },
     { sym: 'B',  ref: 'Js 8:3-13',  label: 'Preparação da emboscada: 30.000 homens posicionados à noite',                   cor: 'rgba(255,140,80,1)' },
@@ -638,7 +639,7 @@ const D265: EData = {
   proposicao: 'A adoração no monte Ebal imediatamente após a vitória demonstra que a herança da terra não é fruto da estratégia militar mas da fidelidade aliançal: o altar de pedras brutas, a Torah gravada em cal e a leitura de bênçãos e maldições declaram que YHWH, não Josué, é o Conquistador.',
   interrogacao: 'Por que Josué interrompe a campanha após Ai para realizar uma cerimônia de aliança no monte Ebal — e o que as pedras não lavradas e a Torah caiada ensinam sobre adoração e obediência?',
   palavraChave: 'ALIANÇA',
-  transicao: "Para responder, seguiremos a estrutura aliançal de Josué 8:30-35, onde o centro (◉) é a Torah gravada em pedras caiadas — a Palavra que governa a herança.",
+  transicao: "Para responder, veremos a ALIANÇA renovada em Josué 8:30-35: cada movimento revela como a Torah governa a herança — das pedras não lavradas às bênçãos e maldições entre Gerizim e Ebal.",
   chiasm: [
     { sym: 'A',  ref: 'Js 8:30-31',  label: 'Altar de pedras não lavradas no Ebal: ferro não toca as pedras — Dt 27:5-6',          cor: 'rgba(210,170,40,1)' },
     { sym: 'B',  ref: 'Js 8:31b',    label: 'Holocaustos e sacrifícios de paz oferecidos a YHWH — adoração antes de estratégia',    cor: 'rgba(255,140,80,1)' },
