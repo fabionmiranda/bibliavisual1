@@ -2393,5 +2393,793 @@ CONCLUSÃO
 Família amada, o capítulo de Josué 1 começa com um morto e termina com um exército. YHWH não interrompeu Sua missão pela morte de Moisés — Ele comissionou Josué no dia seguinte. Sua família não precisa esperar condições perfeitas para avançar. O "levanta-te e atravessa" é para vocês hoje. A promessa de presença — "não te deixarei nem te abandonarei" — está sobre cada família que medita na Palavra e avança em solidariedade com os irmãos. O Jordão diante de vocês não é obstáculo: é a fronteira da obediência. E do outro lado está o repouso que Cristo já conquistou. Levanta-te, família. Atravessa. Amém.
 `;
 
+  if (d.dia === 265) return `PARA A FAMÍLIA · Josué 8:30–35
+
+TEMA: Adoração que Consagra a Vitória — a Família que Constrói Altar Antes de Avançar
+
+TÍTULO DO SERMÃO FAMILIAR
+O Altar no Ebal — A Família que Responde à Vitória com Adoração e Palavra
+
+BIG IDEA PARA A FAMÍLIA
+Depois de cada vitória, Deus convoca a família cristã a parar, construir altar e ouvir toda a Palavra — porque a conquista pertence ao Deus que a ordenou, não à família que a executou.
+
+PERGUNTA PARA A FAMÍLIA
+Se Josué parou toda a campanha militar para construir altar e ler a Lei ao povo depois de Ai, o que isso nos ensina sobre como a nossa família deve responder às vitórias que Deus nos concede?
+
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as MARCAS da resposta aliançal à vitória: o altar que reconhece o Dador, a Torah gravada que governa a herança e a assembleia inteira que ouve — inclusive os filhos e os estrangeiros.
+
+MOVIMENTOS DO SERMÃO
+
+I. ALTAR NO EBAL — ADORAÇÃO IMEDIATA E REGULADA (A ↔ A' — Js 8:30–31 / 8:33–35)
+§ Indicação Textual: Js 8:30-31 — "então Josué edificou altar ao SENHOR Deus de Israel no monte Ebal, como Moisés ordenara... não levantou sobre elas instrumentos de ferro." O altar no Ebal — o monte das maldições — não foi construído por iniciativa de Josué: foi obediência direta a Dt 27:5-6. A' em 8:33-35 fecha o arco: todo o povo ouve "todas as palavras da lei, as bênçãos e as maldições" — adoração que começa com altar e termina com Palavra.
+§ Exegese: A localização é teológica: Ebal é o monte das maldições (Dt 27:13) — Josué constrói o altar da graça no monte do juízo. A expressão kaʾasher tsiwwâ mōsheh ("como Moisés ordenara") aparece quatro vezes em 8:30-35 — a obediência à Palavra não é improviso piedoso, é execução precisa do mandato. As pedras sem ferro (ʾăbānîm shĕlēmôt, "pedras inteiras") representam que o altar de Deus não pode ser aperfeiçoado pela habilidade humana. O princípio regulativo do culto nasce aqui: adoração válida é adoração prescrita, não inventada.
+§ Teologia Reformada: A CFW XXI.1 ensina que "somente o que Deus mesmo instituiu é aceitável no culto". O Catecismo Maior P.108 inclui entre os deveres do segundo mandamento "receber, observar e guardar pura e inteira toda a adoração religiosa e ordenanças de Deus como Ele mesmo as instituiu na Palavra". Joel Beeke (Family Worship): "A família que adora só o que Deus prescreveu preserva seus filhos do sincretismo devocional que corrói gerações." A CFB 21.1 concorda que a adoração aceitável é aquela "instituída pelo próprio Deus", não pela vontade ou imaginação dos homens.
+§ Aplicação Familiar: Pais: quando a família conquista algo — promoção, saúde restaurada, filho convertido — a primeira resposta não deve ser celebração social, mas altar. Reúnam a família para gratidão e Palavra antes de qualquer outra comemoração. / Filhos: você está aprendendo que a vitória não pertence a quem lutou — pertence a Deus. Isso muda a forma como você recebe elogios, prêmios e conquistas. / Casal: estabeleçam o costume de parar após vitórias e ler a Palavra juntos. O "altar no Ebal" do casal cristão pode ser tão simples quanto Sal 34 e uma oração de gratidão antes de contar a boa notícia a alguém.
+
+II. TORAH NAS PEDRAS CAIADAS — A PALAVRA QUE GOVERNA A HERANÇA — CENTRO ◉
+§ Indicação Textual: Js 8:32 — "e escreveu ali, sobre as pedras, uma cópia da lei de Moisés, a qual ele escreveu na presença dos filhos de Israel." O CENTRO da pericope é a gravação da Torah em pedras grandes cobertas de cal — cumprimento de Dt 27:2-8. A lei está no coração da conquista, não na margem.
+§ Exegese: ʾăbānîm gĕdōlôt ("pedras grandes") com revestimento de ṣîd (cal) era técnica epigráfica do Antigo Oriente Próximo para inscrições visíveis a distância. baʾēr hêṭēb ("muito claramente") usa baʾēr — "explicar, tornar claro" — a lei deve ser inteligível, não apenas presente. A conquista não cria nova lei — está sujeita à lei preexistente que o próprio Deus deu. A família que conquista território — material, relacional, espiritual — está sujeita à Palavra que preexiste a conquista.
+§ Teologia Reformada: CFW I.6 — "a Escritura é o único e suficiente, certo e infalível árbitro de toda controvérsia religiosa." R.C. Sproul (Scripture Alone): "A Palavra de Deus não é guia de consulta ocasional — é constituição permanente da comunidade aliançal." Matthew Henry (A Church in the House): "A família que coloca a Bíblia no centro — na mesa, na conversa, na disciplina — constrói suas pedras caiadas. A Palavra visível governa a herança invisível." A CFB 1.6 confirma que toda a vontade de Deus concernente à fé, à vida e ao culto está expressamente declarada ou necessariamente implicada na Escritura.
+§ Aplicação Familiar: Pais: a Bíblia deve ser a "pedra grande" da sua casa — visível, legível, compreensível. Não apenas na estante — na mesa, no jantar, no carro. Quando foi a última vez que a família leu a Palavra juntos e não apenas sobre ela? / Filhos e Jovens: a Torah caiada era monumento público — qualquer pessoa passando pelo monte Ebal podia ler. Sua confissão cristã tem essa visibilidade ou está escondida entre amigos? / Avós: vocês são a "cal" que torna a Palavra visível para os netos. O que vocês têm contado sobre como a Bíblia governou as decisões mais importantes da vida de vocês?
+
+III. TODO ISRAEL OUVE — A FAMÍLIA QUE NÃO EXCLUI NINGUÉM DA PALAVRA (A')
+§ Indicação Textual: Js 8:33-35 — "todo Israel, seus anciãos, oficiais e juízes, de um lado e do outro da arca... metade em frente ao monte Gerizim e metade em frente ao monte Ebal... e não houve palavra alguma de tudo o que Moisés ordenara que Josué não lesse diante de toda a assembleia de Israel, com as mulheres, os meninos e os estrangeiros que andavam no meio deles."
+§ Exegese: A inclusividade é radical: hanashshîm wĕhattaph wĕhagêr ("as mulheres e os meninos e o estrangeiro") — a Torah não é para líderes adultos apenas. Os "meninos" (taf) incluem crianças de colo — presença física na liturgia aliançal precede compreensão completa. O gêr ("estrangeiro") está incluído — a aliança tem abertura universal desde Josué 8, não apenas desde Pentecostes. kol-divrê hatôrâ ("todas as palavras da lei") — não um resumo cuidadosamente editado para não assustar: toda a lei, incluindo as maldições.
+§ Teologia Reformada: CFW XXV.2 — "a Igreja visível, que é o reino do Senhor Jesus Cristo... consiste de todos os que no mundo inteiro professam a verdadeira religião, junto com seus filhos." O Catecismo Maior P.62 fala da Igreja como "um só povo" que professa a religião verdadeira com os seus filhos — eco direto de Josué 8. Voddie Baucham (Family Driven Faith): "Crianças que participam do culto corporativo desde pequenas — mesmo sem entender tudo — são formadas pela liturgia antes de serem formadas pela teologia explícita. O ritmo do culto entra no corpo antes de entrar na mente." A CFB 25.2 confirma que a Igreja visível consiste de todos os que professam a verdadeira religião junto com seus filhos, exatamente o padrão da assembleia de Josué 8.
+§ Aplicação Familiar: Pais: não excluam os filhos pequenos da leitura bíblica familiar por acharem que eles não entendem. Josué leu para os "meninos" presentes. O ritual os forma mesmo antes da compreensão. / Filhos maiores: vocês são a geração Josué — cresceram ouvindo a Palavra desde pequenos. Sua responsabilidade agora é passá-la para quem veio depois. / Casal: a família entre Gerizim e Ebal está posicionada entre bênção e maldição — cada decisão da vida familiar tem peso aliançal. Cristo assumiu o monte Ebal por vocês (Gl 3:13) — vivam em Gerizim.
+
+EIXO REDENTOR
+O monte Ebal é o monte das maldições — e é exatamente ali que Josué constrói o altar da graça. A lei lida no Ebal declara a maldição sobre todo transgressor. Mas Paulo em Gálatas 3:13 revela o cumprimento: "Cristo nos resgatou da maldição da lei, fazendo-se ele próprio maldição em nosso lugar." Cristo subiu ao Monte Ebal tipológico — o Calvário — e recebeu sobre si todas as maldições aliançais para que Seu povo habitasse permanentemente no Monte Gerizim da bênção. A Torah escrita em pedras caiadas aponta ao cumprimento de Jr 31:33 e 2Co 3:3 — não mais lei em pedra fria, mas lei escrita pelo Espírito no coração regenerado. A família que ouve a Palavra inteira, incluindo as maldições, não é aterrorizada: é aliviada, porque sabe que Cristo as absorveu.
+
+DOUTRINA CENTRAL
+A vitória aliançal da família cristã deve ser imediatamente consagrada pela adoração regulada pela Palavra — altar, sacrifícios e leitura completa da Lei — porque a conquista pertence ao Deus que a ordenou, não à família que a executou, e a herança é inseparável da aliança que a governa.
+
+APLICAÇÕES PARA A FAMÍLIA
+▸ Para os Pais: vocês são os "Josués" da família — responsáveis por construir o altar depois da vitória. Não celebrem conquistas familiares sem primeiro parar para ler a Palavra e agradecer. Estabeleçam esse ritual como resposta automática a toda boa notícia.
+▸ Para os Filhos: você estava presente quando a Torah foi lida — mesmo sendo criança. Deus conta com a sua presença no culto familiar desde pequeno. Peça a um dos seus pais que explique o que a família leu junto recentemente e o que significou para eles.
+▸ Para os Noivos: antes de casar, perguntem: "como nossa família responderá às vitórias — com altar ou com festa?" A família que constrói o hábito de consagrar as conquistas pela adoração antes do casamento já tem suas pedras caiadas prontas.
+▸ Para o Casal: identifiquem a última vitória significativa de vocês. Houve um "altar no Ebal"? Se não houve, criem um agora — leiam Sl 34 ou Ef 1:3-14 juntos e orem com gratidão específica pela conquista que Deus deu.
+▸ Para os Avós: contem aos netos quais foram os "altares no Ebal" da história da família — os momentos em que, após uma grande conquista, a família parou para adorar antes de avançar. Esses relatos são a "cal" que mantém a Torah visível para as gerações seguintes.
+
+DINÂMICA FAMILIAR
+1. Leiam Js 8:30-31 juntos. Perguntem: "Josué estava no meio de uma campanha militar. Por que ele parou para construir altar? O que isso diz sobre as prioridades depois de uma vitória?"
+2. Discutam as "pedras sem ferro": "Por que Deus não queria ferramentas humanas nas pedras do altar? O que acontece quando tentamos melhorar o que Deus ordenou com nossos próprios métodos?"
+3. Leiam Js 8:32. "A Torah estava escrita nas pedras para qualquer um ver. Que 'pedras caiadas' a nossa família tem — coisas que mostram claramente a quem pertencemos e o que acreditamos?"
+4. Leiam Js 8:33-35. Listem quem estava presente: anciãos, oficiais, mulheres, meninos, estrangeiros. "Nossa família inclui as crianças na leitura bíblica regular? Por quê ou por que não?"
+5. Posicionamento em Gerizim e Ebal: cada membro da família identifica uma área da vida onde está "entre as bênçãos e as maldições" — uma decisão pendente com peso aliançal. Orem juntos pedindo sabedoria.
+6. Construam um "altar familiar": escolham uma vitória recente da família, leiam juntos Sl 34:1-8 ou Dt 8:10-18, e registrem a conquista num diário familiar ou caderno de memórias. Datem e assinem todos.
+
+AUTORES REFORMADOS
+▸ Joel Beeke (Family Worship): "O princípio regulativo do culto começa em casa — a família que adora apenas o que Deus prescreveu ensina aos filhos que Deus, não o sentimento, define o que é aceitável perante Ele. Josué no Ebal é o modelo: pedras sem ferro, Lei sem adição."
+▸ Voddie Baucham (Family Driven Faith): "Josué 8:35 é um dos textos mais radicais sobre educação cristã na Bíblia: crianças presentes na leitura de toda a lei — incluindo as partes difíceis. A família que protege os filhos das partes duras da Palavra os desequipa para a vida real."
+▸ R.C. Sproul (Chosen by God / The Holiness of God): "O altar no monte Ebal — monte das maldições — é teologia visual: onde há juízo, ali Deus coloca graça. Isso é o evangelho em pedras. A família que entende isso não tem medo de falar sobre o pecado e a maldição em casa, porque sabe que o altar da graça foi erguido exatamente ali."
+
+CONCLUSÃO
+Família amada, Josué poderia ter seguido imediatamente para a próxima cidade depois de Ai. Em vez disso, parou no monte das maldições e construiu um altar da graça. Gravou a Torah em pedras grandes. Reuniu todo o Israel — homens, mulheres, crianças, estrangeiros — e leu toda a lei. Nada omitido. Porque a conquista não pertencia a Israel — pertencia ao Deus cuja Palavra governa a herança. E Cristo, o verdadeiro Josué, fez mais: subiu ao Monte Ebal eterno, ao Calvário, e absorveu toda maldição para que Sua família viva para sempre em Gerizim. Que cada vitória da sua família termine aqui: altar, Palavra e gratidão. O Ebal mais temível já foi cruzado por Ele. Amém.
+`;
+
+  // ── JOSUÉ 2–8 (cards 02-11) ──────────────────────────────────────────
+
+  if (d.dia === 255) return `PARA A FAMÍLIA · Josué 2:1–24
+
+TEMA: A Graça que Atravessa Fronteiras — Fé que Age Antes da Conquista
+
+---
+
+TÍTULO DO SERMÃO FAMILIAR
+O Cordão Escarlate — A Família que é Salva pela Graça em Meio ao Juízo
+
+BIG IDEA PARA A FAMÍLIA
+Raabe não foi salva por sua bondade, mas pela fé que a levou a esconder os espias e dependurar o cordão escarlate — e Deus honrou essa fé incluindo-a na linhagem do Messias.
+
+PERGUNTA PARA A FAMÍLIA
+Como uma prostituta cananeia se tornou antepassada de Jesus Cristo, enquanto israelitas infiéis morreram no deserto? O que isso nos diz sobre como Deus escolhe e salva as famílias?
+
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as MARCAS da fé que salva: a missão clandestina que Deus governa, a proteção corajosa que Raabe oferece e o sinal escarlate que selou a aliança da vida.
+
+---
+
+MOVIMENTOS DO SERMÃO
+
+I. A MISSÃO QUE DEUS GOVERNA EM SEGREDO (A — Js 2:1–7)
+§ Indicação Textual: Js 2:1 — "Josué filho de Num enviou secretamente de Sitim dois homens como espias." Os espias chegam à casa de Raabe; o rei de Jericó soube e mandou buscá-los; Raabe os escondeu e enganou os mensageiros.
+§ Exegese: O envio secreto contrasta com o envio público e desastroso dos doze espias em Nm 13. Josué agiu com discrição aprendida da falha anterior. A providência divina é visível na chegada dos espias justamente à casa de Raabe — mulher que já havia ouvido (2:10-11) e processado a fé. A mentira de Raabe ao rei é tema debatido — a tradição reformada majoritária (Calvino, Matthew Henry) entende que Deus honrou a fé, não a mentira; o princípio é que o menor dos males em conflito de deveres não é tratado como virtude a imitar, mas a misericórdia com os espias é o ato fé que Hebreus 11:31 elogia.
+§ Teologia Reformada: A CFW V.4 afirma que Deus "ordena e governa" as criaturas para seus fins sem violar a liberdade delas. Calvino (Inst. I.16.4): "A providência não é uma espectadora ociosa dos eventos — ela governa com mão paterna cada movimento." Joel Beeke (Parenting by God's Promises): "A providência de Deus opera através de meios humanos imperfeitos — inclusive a fé rudimentar de uma prostituta pagã é matéria suficiente para a graça."
+§ Aplicação Familiar: Pais: a providência de Deus alcança as famílias improvávais — inclusive a sua, com toda a sua história de falhas. A discrição de Josué ensina que liderança madura aprende com erros passados. / Filhos: Raabe ouviu sobre Deus antes de conhecê-Lo pessoalmente (2:10). A história de Deus com outros já estava preparando o coração dela. Quem na sua vida está sendo preparado por histórias que você nem sabe?
+
+II. A FÉ QUE PROTEGE E PROCLAMA — CENTRO ◉ (Js 2:8–14)
+§ Indicação Textual: Js 2:9-11 — "Sei que o SENHOR vos deu esta terra... pois ouvimos que o SENHOR secou as águas do Mar Vermelho... o SENHOR vosso Deus é Deus em cima nos céus e embaixo na terra." Raabe confessa a soberania de YHWH antes de qualquer israelita ter pisado em Canaã.
+§ Exegese: A confissão de Raabe em 2:11 é teologicamente densa: YHWH elohîm ("SENHOR é Deus") — ela usa o nome pactual de Deus. "Em cima nos céus e embaixo na terra" é fórmula de soberania total. Esta é a maior confissão de fé no livro de Josué até esse ponto — e vem de uma cananeia. Tiago 2:25 cita Raabe como exemplo de fé que age: fé sem obras é morta — Raabe tinha fé com obras de proteção. Hebreus 11:31 a coloca no rol dos heróis da fé.
+§ Teologia Reformada: A CFW III (O decreto de Deus) ensina que Deus, desde a eternidade, elegeu para si um povo de toda tribo, língua e nação. Raabe é evidência viva de que a eleição não respeita fronteiras étnicas ou morais. R.C. Sproul (Grace Unknown): "Raabe é prova de que a graça é monergista — ela não contribuiu com nada exceto pecado; Deus contribuiu com tudo exceto o pecado."
+§ Aplicação Familiar: Pais: a fé de Raabe veio pelo ouvir (2:10) — ela ouviu o que Deus fez. A família que conta as obras de Deus está semeando fé nos corações de todos que ouvem — inclusive visitas, filhos de amigos, empregados. / Casal: quando foi a última vez que vocês contaram uma obra de Deus na família, explicitamente, como Raabe contou o Mar Vermelho? Testemunho familiar é missão.
+
+III. O CORDÃO ESCARLATE — O SINAL DA ALIANÇA DA VIDA (A' — Js 2:15–24)
+§ Indicação Textual: Js 2:18 — "eis que quando entrarmos na terra, ataras este fio de cordão escarlate na janela pela qual nos fizeste descer." O cordão escarlate é o sinal pactual que distinguirá a casa de Raabe no dia da conquista.
+§ Exegese: O cordão escarlate (tiqwat ḥûṭ hashshânî) é lexicamente ligado a tiqwah, "esperança" — o fio de esperança escarlate. A cor escarlate evoca o sangue; a janela evoca a serventia que salva. A estrutura A-A' é espelhada: no início da pericope, os espias entram pela janela para escapar (2:15); no final da narrativa (6:17,23,25), Raabe e sua família são salvas enquanto tudo o mais é destruído. A inclusão de "toda a família de seu pai" (2:18) mostra que a salvação de Raabe é de alcance familiar — ela intercede por todos os seus.
+§ Teologia Reformada: Matthew Henry (Comentário): "O cordão escarlate pregado na janela de Raabe fala do sangue de Cristo pregado sobre a consciência do pecador — é o sinal que distingue o salvo do condenado no dia do juízo." A CFW XI.1 (Justificação): Deus justifica o pecador "pela imputação da obediência e satisfação de Cristo ao crente, não pela infusão de justiça." Raabe foi justificada por fé — o cordão era o sinal visível da fé invisível.
+§ Aplicação Familiar: Pais: Raabe não pediu salvação só para ela — pediu para "meu pai, minha mãe, meus irmãos" (2:13). Que membro da sua família ainda não está sob o "cordão escarlate"? Ore com nomes específicos, família por família. / Avós: vocês são como Raabe — já viram o que Deus fez, já confessaram, já dependuraram o cordão. Agora podem interceder por cada neto que ainda não está na janela. Não desistam.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+O cordão escarlate de Raabe aponta diretamente ao sangue de Cristo como único sinal que protege no dia do juízo. Como o sangue do cordeiro nas ombreiras do Egito (Êx 12), o cordão escarlate marca a casa da salvação enquanto o juízo passa. Raabe entra na genealogia de Jesus (Mt 1:5) — a prostituta cananeia se torna bisavó de Davi e antepassada do Messias. A graça que atravessou as muralhas de Jericó para salvar Raabe é a mesma graça que atravessou o véu do templo para salvar pecadores de toda nação. Jr 31:31-33 e Ap 7:9 — a nova aliança incluirá de todo povo e nação, como Raabe antecipou.
+
+DOUTRINA CENTRAL
+A salvação é pela graça mediante a fé — não por mérito étnico, moral ou religioso — e alcança famílias inteiras quando um membro responde ao evangelho com fé que age e intercede pelos seus.
+
+APLICAÇÕES PARA A FAMÍLIA
+▸ Para os Pais: esta semana, contem explicitamente uma obra de Deus na história da família — como Raabe contou o Mar Vermelho. Nomeem a graça. A fé dos filhos cresce pelo ouvir as obras de Deus.
+▸ Para os Filhos: Raabe ouviu sobre Deus e isso foi suficiente para despertar fé. O que você já ouviu sobre Deus que ainda não virou fé ativa na sua vida? Converse com seus pais sobre isso.
+▸ Para Noivos: antes de casar, conversem sobre quais membros da família de cada um ainda não estão sob o "cordão escarlate." O casamento cristão é também uma missão de intercessão familiar.
+▸ Para o Casal: façam juntos uma lista de oração com os nomes de familiares que ainda não confessaram Cristo. Orem por eles regularmente — você não sabe quantos já estão ouvindo o que Deus está fazendo na sua vida.
+▸ Para os Avós: Raabe intercedeu por toda a sua família. Vocês têm o privilégio e a responsabilidade de ser os intercessores da família. Cada oração pelos netos é um cordão escarlate pregado sobre a janela deles.
+
+DINÂMICA FAMILIAR
+1. Leiam Js 2:9-11 juntos. Perguntem: "O que Raabe sabia sobre Deus? Como ela soube? O que isso diz sobre como a fé pode vir pelo ouvir histórias de Deus?"
+2. Façam uma lista dos "mares que Deus secou" na história da família — momentos em que Deus claramente interveio. Contem essas histórias em voz alta, como Raabe contou.
+3. O cordão escarlate era um sinal visível de fé. Que sinais visíveis a sua família tem — na casa, no ritmo da semana — que mostram a quem vocês pertencem?
+4. Leiam Hebreus 11:31. "Raabe é listada entre os heróis da fé ao lado de Abraão, Moisés e Gideão. O que isso diz sobre quem Deus considera herói?"
+5. Cada membro escreve o nome de uma pessoa fora da família que precisa do "cordão escarlate." Orem juntos por essas pessoas nominalmente.
+6. Perguntem aos filhos: "Se você estivesse em Jericó e ouvisse que um povo invencível estava chegando por causa de seu Deus, o que você faria?" Conectem com a escolha de Raabe.
+
+AUTORES REFORMADOS
+▸ Joel Beeke (Parenting by God's Promises): "Raabe mostra que a fé geracional não começa com um pai cristão perfeito — ela pode começar com um único membro que ouviu, creu e colocou o sinal da graça na janela. Que encorajamento para famílias em conversão de primeira geração."
+▸ Matthew Henry (Comentário ao Antigo Testamento): "O cordão escarlate de Raabe é figura do sangue de Cristo — o único sinal que protege a alma e a casa no dia do juízo final. Que todo crente o dependure não apenas na janela, mas na consciência."
+▸ R.C. Sproul (Grace Unknown): "A inclusão de Raabe na genealogia de Jesus não é detalhe sentimental — é declaração teológica: a graça elege onde quer, quando quer, quem quer, sem respeito a méritos. Nenhuma família está além do alcance do cordão escarlate."
+
+CONCLUSÃO
+Família amada, Raabe não tinha templo, não tinha lei escrita, não tinha sacerdote — tinha apenas o que ouviu sobre o Deus de Israel e um cordão escarlate pregado na janela. E isso foi suficiente. Porque o que Deus honra não é a perfeição da família, mas a fé que age, que protege os enviados de Deus e que intercede por todos os seus. O cordão escarlate de Raabe aponta ao sangue de Cristo — o único sinal que salva quando o juízo passa. Dependure-o, família. Dependure-o na sua oração, na sua mesa, no seu ritmo semanal de culto. E ore pelos seus que ainda não estão sob ele. O Deus que abriu caminho pelo Mar Vermelho pode abrir caminho pelo coração mais fechado da sua família. Amém.
+`;
+
+  if (d.dia === 256) return `PARA A FAMÍLIA · Josué 3:1–17
+
+TEMA: A Família que Atravessa em Obediência — A Fé que Entra nas Águas Antes de Vê-las Recuar
+
+---
+
+TÍTULO DO SERMÃO FAMILIAR
+Pés nas Águas — A Família que Avança pela Presença, Não pela Visibilidade
+
+BIG IDEA PARA A FAMÍLIA
+Israel só viu o Jordão recuar depois que os pés dos sacerdotes tocaram a água — porque Deus honra a fé que obedece antes de ver, não a fé que espera condições perfeitas para agir.
+
+PERGUNTA PARA A FAMÍLIA
+Qual é o "Jordão" que a nossa família está evitando atravessar porque as águas ainda não recuaram? O que precisamos fazer para que os pés toquem a água?
+
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as MARCAS da travessia da fé: a Arca que precede o povo, os pés que entram na água e o Jordão que recua para que todo Israel passe em pé seco.
+
+---
+
+MOVIMENTOS DO SERMÃO
+
+I. A ARCA QUE PRECEDE — A PRESENÇA DE DEUS COMO ÚNICO GUIA (A — Js 3:1–8)
+§ Indicação Textual: Js 3:3-4 — "quando virdes a arca da aliança do SENHOR vosso Deus... então partireis do vosso lugar... para que saibais o caminho pelo qual haveis de andar, pois nunca antes passastes por este caminho." Dois mil côvados de distância entre a arca e o povo.
+§ Exegese: A distância de dois mil côvados (~900m) entre a arca e o povo não era protocolo de segurança — era teologia visível: a Presença de Deus vai na frente, e o povo segue o suficientemente distante para VER onde ela vai, não para dirigi-la. O mandato "santificai-vos" (3:5) antes de cruzar exige preparação espiritual antes de ação. A expressão "nunca antes passastes por este caminho" é chave: a família cristã frequentemente enfrenta situações sem precedente — sem mapa humano, com apenas a Presença como guia.
+§ Teologia Reformada: A CFW II.2 afirma que Deus é "plenamente livre para fazer o que lhe apraz." A Presença representada pela Arca não pode ser manipulada — ela lidera, o povo segue. Joel Beeke (The Family at Church): "A família que aprende a seguir a Presença de Deus — no culto, na Palavra, na oração — em vez de liderar Deus pelos seus próprios planos, descobre que há sempre caminho onde parecia não haver."
+§ Aplicação Familiar: Pais: quando a família enfrenta decisões sem precedente — mudança de cidade, doença grave, crise financeira — a pergunta não é "o que fazemos?" mas "onde está a Arca?" A Presença de Deus na Palavra e na oração precede todas as travessias. / Filhos: você já se sentiu em um caminho que nunca havia sido percorrido? Josué 3:4 foi escrito para momentos assim: a Presença vai na frente. Sua tarefa é segui-La.
+
+II. OS PÉS NAS ÁGUAS — A FÉ QUE OBEDECE ANTES DE VER — CENTRO ◉ (Js 3:13–16)
+§ Indicação Testual: Js 3:13 — "e sucederá que, quando as plantas dos pés dos sacerdotes que levam a arca do SENHOR, o Senhor de toda a terra, repousarem nas águas do Jordão, as águas do Jordão se dividirão." O Jordão estava transbordante (3:15). O milagre não aconteceu antes dos pés tocarem a água — aconteceu no momento do toque.
+§ Exegese: O Jordão em "tempo de colheita" (3:15) significava cheias máximas — a dificuldade estava no pico. Deus não esperou condições favoráveis para agir: o milagre exigiu primeiramente ato de fé (pés na água), depois veio a resposta divina (3:16: "pararam-se as águas"). Este é o padrão da fé bíblica: obediência precede visibilidade. A expressão "pararam-se as águas" usa o verbo ʿāmad (ficar de pé) — as águas ficaram de pé como muros. A terra seca sob os pés de Israel em terreno de rio inundado é milagre explícito da soberania divina sobre a criação.
+§ Teologia Reformada: A CFW XIV.1 (Fé Salvadora): "a graça de fé pela qual os eleitos são habilitados a crer em Cristo para salvação é obra do Espírito... ordinariamente aumentada e fortalecida pelo ministério da Palavra." Matthew Henry: "A fé que espera o caminho aberto antes de obedecer não é fé bíblica — é cálculo. A fé bíblica coloca os pés na água e espera que Deus abra o caminho."
+§ Aplicação Familiar: Pais: que "Jordão em cheia" sua família está evitando porque espera condições melhores para dar o passo? A pergunta não é "quando as águas vão recuar?" mas "quando vamos colocar os pés na água?" / Casal: identifiquem uma área de obediência que vocês têm adiado por esperar condições favoráveis — servir na igreja, ter um filho, reconciliar um relacionamento. Quando os pés tocam a água, o caminho se abre.
+
+III. TODO ISRAEL EM PÉ SECO — A TRAVESSIA QUE FORMA MEMÓRIA (A' — Js 3:16–17)
+§ Indicação Textual: Js 3:17 — "os sacerdotes que levavam a arca da aliança do SENHOR ficaram parados em terra seca no meio do Jordão... e todo o Israel passou em terra seca, até todo o povo ter terminado de passar o Jordão."
+§ Exegese: "Todo o Israel passou" — não apenas os guerreiros, não apenas os adultos, mas todo o povo incluindo crianças, idosos e mulheres. A travessia é comunitária e geracional. Os sacerdotes ficaram parados no meio do rio ENQUANTO o povo passava — a Presença sustentou a travessia do começo ao fim. A memória da travessia será preservada pelas pedras memoriais de Josué 4 — Deus projeta memória antes da conquista acontecer.
+§ Teologia Reformada: A CFW XXVI.1 (Comunhão dos Santos): "todos os santos... têm comunhão em... auxílios e socorros mútuos." A travessia coletiva em pé seco é imagem da comunhão pactual — ninguém atravessa sozinho. Voddie Baucham (Family Driven Faith): "A família que atravessa junta — pais, filhos, avós — é a família que forma memória coletiva de fé. Memória de fé é o solo onde a próxima geração planta raízes."
+§ Aplicação Familiar: Pais: certifiquem-se de que os filhos participam das "travessias" da família — decisões de fé, momentos de oração em crise, respostas de graça. Eles precisam ver vocês atravessando o Jordão para que possam atravessar os seus. / Avós: quando foi a última vez que você contou para os netos como Deus abriu o Jordão para a sua família? Essas histórias são a terra seca que os filhos pisam.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A travessia do Jordão é tipologia do batismo: Paulo em 1Co 10:1-2 conecta a travessia do Mar Vermelho ao batismo, e a tradição patrística estende o mesmo padrão ao Jordão. O batismo de Jesus no Jordão (Mc 1:9-11) é a "travessia" definitiva — Jesus desce às águas do juízo (o Jordão em cheia) em lugar do Seu povo, emerge com a voz do Pai declarando-O Filho amado. A família batizada atravessa em Cristo o Jordão da condenação e entra na terra da promessa — não pelo mérito próprio, mas pela Presença de Deus que vai na frente e sustenta a travessia até o final.
+
+DOUTRINA CENTRAL
+Deus honra a fé que obedece antes de ver — que coloca os pés nas águas do impossível confiando na Presença que precede e sustenta toda travessia, e que atravessa coletivamente para que a memória da graça forme a próxima geração.
+
+APLICAÇÕES PARA A FAMÍLIA
+▸ Para os Pais: identifiquem o "Jordão" atual da família e coloquem os pés na água esta semana — uma decisão de obediência adiada que precisa de ação, não de melhores condições.
+▸ Para os Filhos: perguntem aos pais: "Qual foi o Jordão mais difícil que nossa família já atravessou?" Ouçam a história e agradeçam a Deus pela travessia.
+▸ Para Noivos: conversem sobre os "Jordões" que cada um traz da própria família — os pontos de medo ou de paralisia. A família que se casa preparada para atravessar junta já tem a arca na frente.
+▸ Para o Casal: identifiquem uma área da vida conjugal ou familiar onde estão esperando condições perfeitas para obedecer. Decidam juntos quando colocarão os pés na água.
+▸ Para os Avós: contem para os netos o maior "Jordão em cheia" que Deus abriu para vocês. Seja específico: a data, a crise, o momento em que colocaram os pés na água e as águas recuaram.
+
+DINÂMICA FAMILIAR
+1. Leiam Js 3:4 juntos. "Nunca antes passamos por este caminho" — cada membro nomeia algo em sua vida que parece um caminho sem precedente. Orem juntos pedindo que a Arca de Deus vá na frente.
+2. Leiam Js 3:13-16. Perguntem: "As águas recuaram ANTES ou DEPOIS dos pés tocarem?" Por que Deus pediu que os pés tocassem primeiro? O que isso nos ensina sobre como a fé funciona?
+3. O Jordão estava transbordante no pior momento do ano. Perguntem: "Deus escolheu o momento mais difícil para o milagre. Por quê?" Conectem com situações atuais da família.
+4. Todo Israel passou junto — guerreiros, idosos, crianças. "Quem na nossa família é o mais difícil de atravessar junto? Como podemos ser sacerdotes uns para os outros no meio do rio?"
+5. Os sacerdotes ficaram parados no meio do rio ENQUANTO o povo passava. Que pessoas na vida de vocês estão "paradas no meio do rio" para que outros passem? Como agradecê-las?
+6. Orem juntos pelo "Jordão" da família: nomeiem a crise, confessem o medo, e declarem: "Coloco os pés na água — YHWH vai na frente."
+
+AUTORES REFORMADOS
+▸ Matthew Henry (Comentário ao Antigo Testamento): "A ordem dos pés antes do milagre é o padrão de toda a vida de fé: Deus abre o caminho para os que caminham, não para os que esperam o caminho aberto. A fé bíblica é sempre um passo adiante da visibilidade."
+▸ Joel Beeke (Parenting by God's Promises): "O pai que atravessa o Jordão na frente da família — em obediência visível, fé declarada, liderança corajosa — dá aos filhos o maior presente que a pedagogia familiar pode oferecer: a memória de Deus abrindo o caminho impossível."
+▸ Voddie Baucham (Family Driven Faith): "A travessia coletiva do Jordão é o modelo da família que vai à igreja junta, ora junta, obedece junta e atravessa as crises junta. A família que atravessa separada perde a memória coletiva que forma a identidade pactual das gerações."
+
+CONCLUSÃO
+Família amada, o Jordão está em cheia. O momento nunca vai parecer perfeito. As condições nunca vão ser favoráveis o suficiente. Mas a Arca vai na frente — a Presença de Deus na Palavra e na oração precede cada travessia. O chamado é simples: colocar os pés na água. Não esperar as águas recuarem para então decidir confiar. Deus honrou a fé dos sacerdotes que molharam os pés e sustentou o povo inteiro até o último filho passar em pé seco. Ele fará o mesmo por sua família. Coloque os pés na água. Amém.
+`;
+
+  if (d.dia === 257) return `PARA A FAMÍLIA · Josué 4:1–24; 5:1
+
+TEMA: A Família que Constrói Memórias Sagradas — As Pedras que Respondem à Pergunta dos Filhos
+
+---
+
+TÍTULO DO SERMÃO FAMILIAR
+Doze Pedras em Gilgal — A Família que Preserva a Memória da Graça para as Gerações
+
+BIG IDEA PARA A FAMÍLIA
+Deus ordenou as pedras memoriais antes que o último israelita saísse do Jordão — porque ele sabia que os filhos perguntariam, e queria que houvesse uma resposta visível, permanente e familiar ao alcance de cada geração.
+
+PERGUNTA PARA A FAMÍLIA
+Que "pedras memoriais" nossa família tem — coisas visíveis e permanentes que contam o que Deus fez por nós — para quando nossos filhos e netos perguntarem "o que significam estas pedras para vocês?"
+
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as MARCAS da memória que forma gerações: as doze pedras tiradas do Jordão, a pergunta dos filhos que Deus antecipou e o terror nas nações que o memorial provoca.
+
+---
+
+MOVIMENTOS DO SERMÃO
+
+I. DOZE PEDRAS TIRADAS DO MEIO DO JORDÃO (A — Js 4:1–10)
+§ Indicação Textual: Js 4:2-3 — "tomai doze homens do povo... e tomai daqui, do meio do Jordão, do lugar onde os pés dos sacerdotes estão parados, doze pedras... e as levai convosco, e as ponde na pousada onde haveis de dormir esta noite." Cada tribo, uma pedra.
+§ Exegese: O mandato das pedras é dado ENQUANTO os pés dos sacerdotes ainda estão no meio do rio (4:3) — a memória é construída antes da travessia estar completa. O número doze é pactual: uma pedra por tribo, representação total de Israel. As pedras saíram do meio do Jordão — do local do milagre, não de um lugar conveniente. A memória fiel preserva o específico, não o genérico. Deus foi quem ordenou o memorial: a memória sagrada não nasce da iniciativa humana de não esquecer — nasce da fidelidade de Deus que sabe que esquecemos.
+§ Teologia Reformada: A CFW XXI.5 lista os sacramentos como "memórias" visíveis da graça — Deus institui sinais materiais para preservar verdades espirituais. R.C. Sproul (The Holiness of God): "Deus conhece a fraqueza da memória humana. Por isso institui pedras, altares, ceia, batismo — memórias visíveis que falam quando as palavras falham." Joel Beeke (Parenting): "A memória espiritual não é cultivada apenas pela repetição verbal — é ancorada em objetos, rituais e lugares que dizem 'aqui Deus agiu.'"
+§ Aplicação Familiar: Pais: que "pedras memoriais" vocês têm na casa? Fotos de batismos, diários de oração respondida, versículos gravados em molduras? Não são superstição — são pedagogia de fé. / Filhos: quando você olha para um objeto na sua casa, você sabe a história de Deus por trás dele? Pergunte aos seus pais. Cada objeto com história é uma pedra do Jordão.
+
+II. A PERGUNTA DOS FILHOS QUE DEUS ANTECIPOU — CENTRO ◉ (Js 4:6–7, 21–24)
+§ Indicação Textual: Js 4:6-7 — "para que isto seja sinal entre vós; quando vossos filhos perguntarem no futuro: que significam para vós estas pedras? Então lhes direis..." e Js 4:21-23 — "quando vossos filhos perguntarem a seus pais no futuro: que significam estas pedras? Então fareis saber a vossos filhos..."
+§ Exegese: A pergunta dos filhos aparece duas vezes no mesmo capítulo (4:6 e 4:21) — ênfase deliberada. Deus instituiu as pedras PORQUE sabia que as crianças perguntariam. A pedagogia divina é iniciada pela curiosidade infantil: o objeto visível provoca a pergunta; a pergunta abre a porta para o testemunho; o testemunho forma a fé. O verbo "fareis saber" (wĕhôdaʿtĕm) é causativo — os pais são responsáveis por CAUSAR conhecimento nos filhos, não apenas aguardar que eles descubram. A resposta inclui referência ao Egito (4:23) — a memória recente aponta à memória fundacional: toda travessia pessoal está ligada à salvação maior.
+§ Teologia Reformada: Dt 6:20-25 é o texto paralelo: quando o filho perguntar, o pai responde com a história do Êxodo. A educação pactual é responsiva à curiosidade, não apenas didática formal. Joel Beeke: "O pai reformado não espera que o filho entre para o catecismo para aprender sobre Deus — ele constrói pedras memoriais na casa para que a pergunta apareça naturalmente na infância." A CFW XXVIII-XXIX conecta o batismo e a ceia como pedras memoriais instituídas por Cristo para que a pergunta "o que significa isto?" seja sempre respondida com o evangelho.
+§ Aplicação Familiar: Pais: esta é a missão mais concreta deste sermão — construam esta semana uma "pedra memorial" familiar. Pode ser um diário, uma moldura, uma caixa de memórias com um versículo e a data. Quando o filho perguntar, a resposta estará pronta. / Filhos: você sabe a história de Deus na vida dos seus pais? Esta semana, pergunte a eles: "Qual foi a vez que você sentiu que Deus estava mais perto da nossa família?"
+
+III. O TERROR NAS NAÇÕES — A MEMÓRIA QUE TESTEMUNHA AO MUNDO (A' — Js 4:24; 5:1)
+§ Indicação Textual: Js 4:24 — "para que todos os povos da terra saibam que a mão do SENHOR é poderosa, e para que temais o SENHOR vosso Deus continuamente." Js 5:1 — "os reis dos amorreus... e os reis dos cananeus... ouviram que o SENHOR havia secado as águas do Jordão diante dos filhos de Israel... e o coração deles se derreteu."
+§ Exegese: O memorial de Gilgal tinha dois destinatários: "todos os povos da terra" (4:24) e "vós" (o próprio Israel). A memória da graça não é privada — ela testemunha ao mundo que YHWH é Deus. O "coração derretido" dos reis cananeus em 5:1 é eco da confissão de Raabe em 2:9-11: o que Deus faz pela família aliançal produz efeito missiológico. A família que preserva e conta a memória da graça é família missionária sem precisar sair de casa.
+§ Teologia Reformada: A CFW XXVI.2 (Comunhão dos Santos): a comunhão não é apenas interna — ela testemunha ao mundo exterior. Abraham Kuyper: "A família cristã que vive visivelmente sob a soberania de Cristo é o testemunho mais poderoso à cultura pagã que a rodeia — não propaganda, mas existência alternativa."
+§ Aplicação Familiar: Pais: a memória da graça que vocês preservam não é apenas para os filhos — é para os vizinhos, amigos e familiares que veem a sua família de fora e perguntam "o que torna esta família diferente?" / Casal: que história de Deus na vida de vocês tem sido tão visível que provocou a pergunta de alguém de fora?
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+As doze pedras de Gilgal apontam aos doze apóstolos como fundação da nova Jerusalém (Ap 21:14) — a memória do povo de Deus é preservada para a eternidade. A Ceia do Senhor é a "pedra memorial" definitiva instituída por Cristo: "fazei isto em memória de mim" (1Co 11:24-25). Cada vez que a família parte o pão, ela responde à pergunta dos filhos: estas pedras significam que Cristo morreu e ressuscitou, e que o Jordão do juízo já foi atravessado por Ele. A nova criação não terá memória apagada — terá pedras eternas: "não haverá mais morte, nem pranto, nem clamor, nem dor" (Ap 21:4), porque a travessia estará eternamente celebrada.
+
+DOUTRINA CENTRAL
+Deus institui memórias visíveis da graça porque sabe que esquecemos — e a família que constrói pedras memoriais preserva a identidade pactual para as gerações, testemunhando ao mesmo tempo ao mundo que YHWH é o único Deus poderoso.
+
+APLICAÇÕES PARA A FAMÍLIA
+▸ Para os Pais: criem esta semana uma "pedra memorial" concreta — um diário de oração respondida, uma caixa de memórias, um versículo emoldurado com a data de um momento marcante. Quando o filho perguntar, a resposta estará ali.
+▸ Para os Filhos: pergunte a seus pais ou avós: "Qual é a maior coisa que Deus já fez pela nossa família?" Ouça com atenção — você está ouvindo uma pedra do Jordão.
+▸ Para Noivos: antes de casar, comecem um diário de casal onde registrem as obras de Deus no noivado. Esse diário será uma das primeiras "pedras memoriais" do novo lar.
+▸ Para o Casal: identifiquem três "pedras do Jordão" da história do casamento — três momentos em que claramente viram a mão de Deus. Escrevam, datem e guardem. São o patrimônio espiritual dos filhos.
+▸ Para os Avós: vocês são as pedras mais antigas do Jordão da família. Esta semana, escrevam ou gravem em vídeo a história da maior travessia de fé de suas vidas. Esse registro é para os bisnetos que ainda não nasceram.
+
+DINÂMICA FAMILIAR
+1. Leiam Js 4:6-7 juntos. Perguntem a cada membro: "Se você pudesse escolher uma 'pedra memorial' que representa o que Deus fez por você, o que seria e qual seria o versículo que escreveria nela?"
+2. Atividade: cada membro da família escolhe uma pedra no quintal ou jardim (ou um objeto da casa) e escreve nela uma palavra que representa uma obra de Deus. Coloquem-nas juntas em um lugar visível da casa.
+3. Leiam Js 4:21-23. A resposta à pergunta dos filhos incluía o Egito (v.23) — memória sobre memória. Que "Egito" da família — libertação passada — os filhos precisam conhecer?
+4. Js 5:1 — os reis inimigos "ficaram com o coração derretido." Que pessoa não-cristã em volta da família tem visto a obra de Deus em vocês e ficado sem resposta? Orem por ela pelo nome.
+5. Criem juntos um "Mural de Gilgal" na família — um espaço (geladeira, quadro, parede) onde registram datas e descrições breves de respostas de oração e obras de Deus. Comecem hoje.
+6. Orem juntos, nomeando as "pedras" que cada um trouxe do Jordão da própria vida. Agradeçam especificamente por cada travessia.
+
+AUTORES REFORMADOS
+▸ Joel Beeke (Parenting by God's Promises): "O catecismo familiar começa antes do catecismo formal: começa nas pedras que o pai posicionou em lugares visíveis da casa, nas histórias que a mãe conta ao deitar, nas canções que repetem o nome de Deus. Gilgal começa no quarto dos filhos."
+▸ R.C. Sproul (The Holiness of God): "A memória da santidade de Deus é o antídoto mais poderoso contra a trivialidade religiosa. As pedras de Gilgal gritavam: 'Deus agiu aqui.' Que a família cristã construa monumentos que gritem o mesmo."
+▸ Matthew Henry (Comentário): "Dois propósitos têm as pedras: ensinar os filhos (v.6) e temer a Deus (v.24). Memória e temor são inseparáveis — quem lembra do que Deus fez não consegue deixar de temê-Lo, e quem O teme cuida de lembrar."
+
+CONCLUSÃO
+Família amada, a pergunta dos filhos está vindo. "O que significam estas pedras?" Ela virá na mesa do jantar, na hora de dormir, num momento de crise — quando o filho olhar para a vida e precisar saber se Deus é real e se age. A resposta não precisa ser improvisada: Deus já mandou construir o memorial antes que a travessia terminasse. Sua tarefa é posicionar as pedras agora, enquanto o Jordão ainda está fresco na memória. Que cada lar cristão seja um Gilgal — um lugar onde as obras de Deus estão registradas, visíveis e prontas para responder à próxima geração que perguntar: "O que significam estas pedras para vocês?" A resposta é: aqui Deus abriu o caminho. Amém.
+`;
+
+  if (d.dia === 258) return `PARA A FAMÍLIA · Josué 5:2–12
+
+TEMA: A Família que Renova a Aliança — A Consagração que Precede a Conquista
+
+---
+
+TÍTULO DO SERMÃO FAMILIAR
+O Vitupério Removido — A Família Consagrada pela Aliança Antes de Entrar na Herança
+
+BIG IDEA PARA A FAMÍLIA
+Antes de qualquer batalha, Deus chamou Israel a renovar a aliança pela circuncisão — porque a conquista da herança exige que o povo seja primeiramente consagrado ao Deus que concede a herança.
+
+PERGUNTA PARA A FAMÍLIA
+Há "vitupérios" — marcas de escravidão espiritual, hábitos do deserto, compromissos inacabados — que nossa família precisa deixar remover antes de entrar na herança que Deus preparou?
+
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as MARCAS da consagração que precede a conquista: a circuncisão que remove o vitupério do Egito, o nome Gilgal que sela a renovação e a Páscoa que celebra a redenção na terra da promessa.
+
+---
+
+MOVIMENTOS DO SERMÃO
+
+I. A NOVA GERAÇÃO CIRCUNCIDADA — O PACTO INACABADO COMPLETADO (A — Js 5:2–8)
+§ Indicação Textual: Js 5:5-7 — "todos os que saíram do Egito... foram circuncidados, mas todos os que nasceram no deserto, durante o caminho, depois de saídos do Egito, não foram circuncidados." A geração do deserto havia deixado de circuncidar os filhos durante os quarenta anos de peregrinação.
+§ Exegese: A não-circuncisão durante o deserto é teologicamente significativa: uma geração inteira cresceu sem o sinal da aliança. Não foi por falta de fé — foi pela situação de julgamento que o deserto representava (a geração da desobediência estava sob sentença). Mas o mandato aliançal não foi cancelado — foi suspenso. Em Gilgal, antes de qualquer batalha, Deus exige que o sinal seja aplicado. A circuncisão dolorosa imobiliza temporariamente os guerreiros (5:8) — Deus prefere um povo consagrado e vulnerável a um exército pagão e poderoso. A prioridade é a aliança, não a eficiência militar.
+§ Teologia Reformada: A CFW XXVII.1-2 (Sacramentos): os sacramentos são "sinais e selos" da graça — eles não produzem a graça, mas a confirmam e a aplicam ao coração do crente. A circuncisão era o equivalente veterotestamentário do batismo (Cl 2:11-12). Joel Beeke (Parenting): "A família que adia os sacramentos por conveniência ou medo de constrangimento está repetindo o erro da geração do deserto — deixando o sinal da aliança inacabado nos filhos."
+§ Aplicação Familiar: Pais: há promessas aliançais inacabadas na sua família — compromissos de dedicar os filhos a Deus, de estabelecer culto familiar, de ser membro ativo de uma igreja? O vitupério é removido quando o inacabado é completado. / Filhos: a circuncisão doía, e os guerreiros ficaram vulneráveis por dias. Às vezes consagração custa algo — mas Deus prefere você consagrado e fraco a autossuficiente e não consagrado.
+
+II. GILGAL — O VITUPÉRIO DO EGITO REMOVIDO — CENTRO ◉ (Js 5:9)
+§ Indicação Textual: Js 5:9 — "E disse o SENHOR a Josué: hoje revolvi de sobre vós o opróbrio do Egito. Por isso se chama aquele lugar Gilgal até ao dia de hoje." Gilgal (gālal) = rolar, remover.
+§ Exegese: O "vitupério do Egito" (ḥerpat mitsrayim) não é explicado em detalhes — pode ser a marca da escravidão, a ausência do sinal aliançal, ou a vergonha de quarenta anos de julgamento no deserto. O ponto é que Deus DECLAROU o vitupério removido — antes de qualquer batalha, antes de qualquer conquista, antes de qualquer fruto visível da herança. A remoção do vitupério é ato de graça declaratória: Deus fala e é assim. O nome do lugar — Gilgal — preserva a memória da remoção da vergonha. Todo lugar onde Deus age pode receber nome.
+§ Teologia Reformada: A CFW XI.1-2 (Justificação): Deus justifica o pecador "declarando-o justo" — não pela infusão de bondade, mas pela declaração da graça. A remoção do vitupério em Gilgal é tipo da justificação: Deus rola o opróbrio antes que o povo prove qualquer conquista. R.C. Sproul (Faith Alone): "O vitupério do Egito é a nossa escravidão ao pecado — e Cristo é o verdadeiro Gilgal onde Deus declara: 'hoje revolvi de sobre vós o opróbrio.' Isso é justificação."
+§ Aplicação Familiar: Pais: há "vitupérios" na história da família — vícios, vergonhas, pecados geracionais — que vocês carregam como se nunca tivessem sido removidos? Em Cristo, Deus declarou em Gilgal: hoje revolvi. Recebam a remoção pela fé. / Casal: há vergonha conjugal — conflitos não resolvidos, pecados antigos, cicatrizes do passado — que ainda governa o relacionamento de vocês? Leiam Cl 2:13-14 juntos: o vitupério foi pregado na cruz.
+
+III. A PÁSCOA NA TERRA PROMETIDA — A REDENÇÃO CELEBRADA NA HERANÇA (A' — Js 5:10–12)
+§ Indicação Testual: Js 5:10-12 — "os filhos de Israel acamparam em Gilgal e celebraram a Páscoa... e comeram do produto da terra... e o maná cessou no dia seguinte." A Páscoa em solo de Canaã, com maná cessando e herança alimentando.
+§ Exegese: A Páscoa em Gilgal é a primeira celebrada em solo da terra prometida — ela fecha o ciclo iniciado no Egito e reaberto no deserto. O cessamento do maná no dia seguinte é simbólico: a provisão sobrenatural do deserto cede à provisão ordinária da terra — mas ambas são igualmente graça de Deus. A herança não cancela a dependência; ela muda a forma dela. A família que entra na herança ainda precisa do alimento diário de Deus — agora pelo produto da terra que Ele mesmo deu.
+§ Teologia Reformada: A CFW XXIX.1-7 (Ceia do Senhor): a Ceia é a "Páscoa cristã" — memorial da redenção e antecipação do banquete messiânico. Matthew Henry: "A Páscoa em Gilgal é modelo do culto familiar na terra da promessa — redimidos, consagrados, alimentados pela herança, aguardando o banquete eterno."
+§ Aplicação Familiar: Pais: a Páscoa em Gilgal foi antes da batalha, não depois. O culto familiar não é recompensa pela conquista — é sustento que precede e acompanha cada passo. Estabeleçam a mesa familiar de Palavra e oração como Páscoa semanal. / Filhos: o maná no deserto e o produto da terra em Canaã são igualmente dádivas de Deus. O que você tem recebido de Deus hoje — mesmo que pareça "produto ordinário da terra"?
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A circuncisão aponta ao batismo (Cl 2:11-12): em Cristo, o "vitupério da carne" é removido pela circuncisão feita sem mãos — a morte e ressurreição de Jesus. O vitupério do Egito (escravidão ao pecado) foi rolado para sempre na cruz: "Anulou o escrito das ordenanças que havia contra nós... pregando-o na cruz" (Cl 2:14). Gilgal é tipo do Calvário — o lugar onde Deus declara o opróbrio removido. A Páscoa em Gilgal aponta à Ceia do Senhor: o cordeiro sacrificado, o sangue que protege, o pão da herança que sustenta o povo redimido até o banquete eterno. A família que parte o pão juntos está em Gilgal — consagrada, com o vitupério removido, aguardando a herança final.
+
+DOUTRINA CENTRAL
+Antes da conquista, Deus exige consagração — e a consagração que Ele opera é graça pura: Ele remove o vitupério antes que o povo prove qualquer fruto, instituindo a Páscoa como memorial de redenção que sustenta a família em cada passo em direção à herança.
+
+APLICAÇÕES PARA A FAMÍLIA
+▸ Para os Pais: esta semana, complete um compromisso aliançal inacabado — uma promessa a Deus sobre a família que ainda não foi honrada. O vitupério do "inacabado" só é removido quando o compromisso é cumprido.
+▸ Para os Filhos: a circuncisão doía mas era necessária. Há algo que Deus está pedindo de você que parece doloroso mas é consagração? Converse com seus pais sobre isso.
+▸ Para Noivos: o noivado é um "Gilgal" — um período de remoção de vitupérios e consagração antes de entrar na herança do casamento. Que compromissos aliançais estão pendentes antes do casamento?
+▸ Para o Casal: identifiquem juntos um "vitupério do Egito" que ainda governa o relacionamento — um padrão herdado da família de origem, uma vergonha não resolvida, um pecado recorrente. Orem por remoção específica e busquem aconselhamento se necessário.
+▸ Para os Avós: contem para os netos como Deus removeu um "vitupério" na história da família — uma vergonha, uma escravidão, um ciclo quebrado. Essas histórias são o Gilgal da próxima geração.
+
+DINÂMICA FAMILIAR
+1. Leiam Js 5:9 juntos. "Hoje revolvi de sobre vós o opróbrio." Cada membro escreve em um papel uma vergonha ou vitupério que quer deixar em Gilgal. Depois de lerem Cl 2:13-14, rasgam o papel juntos como símbolo da remoção em Cristo.
+2. A circuncisão foi dolorosa e imobilizou os guerreiros por dias. "O que Deus pediu à nossa família que custou algo, mas era necessário para a consagração?" Compartilhem histórias.
+3. Discutam: o maná cessou quando começaram a comer da terra. "Deus provê de formas diferentes em épocas diferentes. Que provision de Deus você reconhece hoje que antes não reconhecia como graça?"
+4. A Páscoa foi antes da batalha, não depois. "Nossa família celebra a redenção ANTES de conseguir as conquistas, ou só depois?" Como seria uma Páscoa antes da batalha na família de vocês?
+5. Gilgal significa "remover, rolar." Onde na família precisamos de um Gilgal — algo que precisa ser removido ou encerrado antes de avançar?
+6. Orem juntos: nomeiem o vitupério que querem ver removido por Cristo. Declarem em oração a promessa de Cl 2:14 sobre cada item. Datem e guardem a oração.
+
+AUTORES REFORMADOS
+▸ Joel Beeke (Parenting by God's Promises): "O pai que leva os filhos ao batismo não está cumprindo uma formalidade — está repetindo Gilgal: removendo o vitupério, aplicando o sinal aliançal e declarando: esta criança pertence ao Deus que rola os opróbrios."
+▸ R.C. Sproul (Faith Alone): "Gilgal é a gramática da justificação escrita em história: Deus declara o vitupério removido antes da batalha, não depois da vitória. É assim que a graça funciona — ela precede todo mérito e desempenho."
+▸ Matthew Henry (Comentário): "A Páscoa em Gilgal é a primeira vez que Israel celebra a redenção na terra da promessa — redimidos, consagrados e alimentados pela herança. Que toda família cristã encontre seu Gilgal: o lugar onde o vitupério foi rolado e a Páscoa de Cristo foi celebrada."
+
+CONCLUSÃO
+Família amada, há vitupérios que carregamos como se nunca tivessem sido removidos: vergonhas do passado, ciclos herdados, compromissos inacabados com Deus. Mas Deus tem um Gilgal para cada família — o lugar onde Ele declara: "hoje revolvi de sobre vós o opróbrio." Esse Gilgal tem endereço: chama-se Calvário. Ali Cristo absorveu cada vitupério — o da escravidão, o do deserto, o da geração perdida. E a Páscoa que se celebra do outro lado do Jordão é a mesa que Cristo preparou para sua família — não como recompensa pela conquista, mas como sustento para ela. Vá para Gilgal. Deixe o vitupério. Coma da Páscoa. E avance. Amém.
+`;
+
+  if (d.dia === 259) return `PARA A FAMÍLIA · Josué 5:10–12
+
+TEMA: A Mesa Pactual na Terra da Promessa — A Família que Celebra a Redenção Antes de Conquistar
+
+---
+
+TÍTULO DO SERMÃO FAMILIAR
+A Páscoa em Gilgal — A Família que Come da Redenção Antes de Entrar na Batalha
+
+BIG IDEA PARA A FAMÍLIA
+Deus não deixou Israel partir para Jericó sem primeiro celebrar a Páscoa — porque a família que lembra de onde foi resgatada tem coragem para avançar, e a que esquece entra na batalha pela força própria.
+
+PERGUNTA PARA A FAMÍLIA
+Nossa família celebra a redenção de Cristo antes das batalhas ou apenas depois das vitórias? Como a memória do que Cristo fez muda nossa postura diante do que ainda precisamos enfrentar?
+
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as MARCAS da mesa que forma guerreiros: a Páscoa celebrada na terra, o maná que cessa e a herança que alimenta — porque Deus é o mesmo Provedor no deserto e na conquista.
+
+---
+
+MOVIMENTOS DO SERMÃO
+
+I. A PÁSCOA GUARDADA NA TERRA PROMETIDA (A — Js 5:10)
+§ Indicação Textual: Js 5:10 — "Os filhos de Israel acamparam em Gilgal e celebraram a Páscoa no décimo quarto dia do mês pela tarde, nas planícies de Jericó." A primeira Páscoa em solo de Canaã.
+§ Exegese: O décimo quarto do mês é a data prescrita em Êx 12:6 — Israel guarda a Páscoa com precisão calendárica mesmo após quarenta anos de julgamento no deserto. A fidelidade ao rito revela que a memória da redenção sobreviveu ao deserto. As "planícies de Jericó" são detalhe geográfico perturbador: Jericó está à vista — as muralhas visíveis, os inimigos alertados. Mas Israel para para comer o cordeiro antes de atacar a cidade. A Páscoa precede a guerra; a redenção precede a conquista.
+§ Teologia Reformada: A CFW XXIX.1 (Ceia do Senhor): "Nosso Senhor Jesus na noite em que foi traído instituiu o sacramento de seu corpo e sangue, chamado Ceia do Senhor, para ser observado em Sua Igreja até o fim do mundo." A Ceia é a Páscoa cristã — celebrada não depois das vitórias, mas antes e durante a caminhada. Joel Beeke (Family Worship): "A família que observa a Ceia do Senhor regularmente está guardando a Páscoa em Gilgal — memorizando a redenção antes de entrar no campo de batalha da semana."
+§ Aplicação Familiar: Pais: o culto familiar antes do dia de trabalho, a oração antes da decisão difícil, a Ceia antes da semana que se avizinha — são Páscoas em Gilgal. A redenção que a família lembra antes da batalha é o que sustenta no meio dela. / Filhos: antes de um exame difícil, uma conversa dura ou um desafio novo, você lembra o que Cristo fez por você? A memória da Páscoa é combustível para o coraje.
+
+II. O MANÁ CESSA — A PROVISÃO QUE MUDA DE FORMA — CENTRO ◉ (Js 5:11–12)
+§ Indicação Textual: Js 5:11-12 — "E comeram do produto da terra no dia seguinte à Páscoa, pães ázimos e trigo tostado... e o maná cessou no dia seguinte, depois de comerem do produto da terra; e os filhos de Israel não tiveram mais maná, e comeram, naquele ano, do produto da terra de Canaã."
+§ Exegese: O maná cessou — não porque Deus deixou de prover, mas porque a forma da provisão mudou. No deserto, pão do céu diariamente; na terra, produto da herança que o próprio Deus deu. O cessamento do maná não é abandono — é herança. A família que entrou na promessa agora planta, colhe e come a mesma graça de Deus num novo modo. "Pães ázimos" em referência direta à Páscoa — o pão que conecta a redenção à provisão ordinária. Deus é o mesmo Provedor no deserto sobrenatural e na terra ordinária.
+§ Teologia Reformada: A CFW V.2-3 (Providência): Deus governa "as criaturas mais livres" por Sua providência — não por milagres constantes, mas pelo governo ordinário. Matthew Henry: "O maná foi graça extraordinária para circunstância extraordinária. O produto da terra é graça ordinária para vida ordinária. Ambos são igualmente dom de Deus — e o segundo não é menor porque é menos espetacular."
+§ Aplicação Familiar: Pais: ensinei os filhos a reconhecer a graça de Deus não apenas nos milagres dramáticos, mas no "produto ordinário da terra" — saúde, trabalho, refeição, amizade. A família que só reconhece Deus no extraordinário fica cega para Ele no cotidiano. / Casal: como vocês têm reconhecido a graça de Deus na rotina desta semana — no produto ordinário da terra que Ele deu? Nomeiem três coisas concretas.
+
+III. JERICÓ À VISTA — CORAGEM DA PÁSCOA (A' — contexto de Js 5:10 com Js 6:1)
+§ Indicação Textual: Js 6:1 — "Jericó estava fechada e trancada por causa dos filhos de Israel; ninguém saía nem entrava." A Páscoa foi guardada nas planícies de Jericó — com a cidade à vista e os muros imponentes ao horizonte.
+§ Exegese: O contraste é deliberado: Israel ao ar livre celebrando a Páscoa; Jericó fechada por dentro com medo. A memória da redenção dá ao povo de Deus a capacidade de comer com paz enquanto o inimigo treme por dentro de suas fortalezas. A Páscoa não ignora Jericó — ela a enfrenta de uma posição de identidade: "somos o povo do cordeiro que nos redimiu; Jericó não define nossa identidade."
+§ Teologia Reformada: A CFW XVIII.1-3 (Assurance of Grace): "o que verdadeiramente crê em Cristo... pode ter assurance de sua salvação." A certeza da redenção — a Páscoa guardada — é o fundamento da coragem diante de Jericós. Voddie Baucham (Family Driven Faith): "A família que come junta da mesa do Senhor antes de enfrentar a cultura tem coragem que a família que pula a Ceia não tem. O cordeiro nos sustenta para os muros."
+§ Aplicação Familiar: Pais: a refeição familiar — o pão e a conversa à mesa — é um tipo de Páscoa. Antes de enviar os filhos para a escola, o trabalho, o mundo, ali estão vocês nas planícies de Jericó, comendo o pão que Cristo deu. Não subestimem a mesa. / Filhos: você sai de casa de manhã com a memória do que Cristo fez por você? Isso muda como você enfrenta os "muros" do dia.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A Páscoa em Gilgal é o tipo mais claro da Ceia do Senhor na narrativa de Josué. O cordeiro pascal do Egito (Êx 12), a Páscoa em Gilgal (Js 5) e a Ceia do Senhor (1Co 11:23-26) formam uma linha progressiva: redenção do Egito → entrada na herança → antecipação do banquete eterno. Jesus declarou na última ceia: "Não beberei mais deste fruto da videira até aquele dia em que o beber novo convosco no reino de meu Pai" (Mt 26:29) — a Páscoa aponta ao banquete messiânico onde o maná eterno nunca cessará. A família que parte o pão juntos nas planícies de Jericó está aguardando o banquete do Rei.
+
+DOUTRINA CENTRAL
+A família que lembra da redenção antes de entrar na batalha tem identidade e coragem que a que esquece não tem — porque a Páscoa declara: nossa conquista não depende de nossa força, mas do cordeiro que nos resgatou.
+
+APLICAÇÕES PARA A FAMÍLIA
+▸ Para os Pais: estabeleçam a refeição familiar como "Páscoa cotidiana" — um momento de gratidão explícita antes de enviar cada membro para as batalhas do dia.
+▸ Para os Filhos: antes de um desafio difícil esta semana, leiam juntos com os pais um versículo sobre o que Cristo fez por vocês. Saiam de casa com a Páscoa na memória.
+▸ Para Noivos: conversem sobre como celebrarão a Ceia do Senhor juntos como casal — ela será a Páscoa do lar, o memorial que sustenta antes de cada batalha da vida conjugal.
+▸ Para o Casal: identifiquem a "Jericó" mais presente na vida de vocês agora — o desafio mais intimidante. Antes de decidir como atacá-la, sentem-se à mesa e leiam juntos 1Co 11:23-26. A Páscoa precede a estratégia.
+▸ Para os Avós: vocês já guardaram muitas Páscoas nas planícies de muitas Jericós. Contem aos netos uma batalha que enfrentaram depois de ter comido o cordeiro — e como a memória da redenção os sustentou.
+
+DINÂMICA FAMILIAR
+1. Leiam Js 5:10-12 juntos. "Israel comeu a Páscoa COM JERICÓ À VISTA. O que isso diz sobre a relação entre memória da redenção e coragem para as batalhas?"
+2. O maná cessou quando a herança começou. "Que 'maná' de uma fase anterior de vida da família Deus substituiu pela provisão ordinária da 'terra'? Como reconhecemos que ambos são iguamente graça?"
+3. Criem um ritual de "Páscoa familiar" antes de grandes desafios: leiam Sl 116 ou 1Co 11:23-26, partam um pão juntos e orem antes de enfrentar a situação difícil.
+4. Perguntem: "Qual foi a última vez que saímos para o 'campo de batalha' sem ter comido a Páscoa — sem ter lembrado do que Cristo fez?" Como isso afetou o resultado?
+5. Perguntem às crianças: "Se você soubesse que amanhã haveria uma batalha muito difícil, o que você faria hoje à noite?" Conectem com a Páscoa que Israel guardou nas planícies de Jericó.
+6. Orem juntos nomeando as "Jericós" de cada membro. Declarem sobre cada uma: "Somos o povo do cordeiro que nos resgatou — esta Jericó não nos define."
+
+AUTORES REFORMADOS
+▸ Joel Beeke (Family Worship): "A família que guarda culto familiar está guardando a Páscoa nas planícies de Jericó — comendo o cordeiro com as muralhas à vista. O culto não ignora a realidade; ele a enfrenta de uma posição de identidade redimida."
+▸ Matthew Henry (Comentário): "O maná cessou — não porque Deus abandonou Israel, mas porque Israel entrou na herança. O Provedor não mudou; a forma da provisão mudou. Que a família cristã aprenda a reconhecer a graça de Deus tanto no extraordinário quanto no ordinário."
+▸ R.C. Sproul (The Soul of Prayer): "A oração antes da batalha é a Páscoa em Gilgal. Quando nos ajoelhamos antes de agir, declaramos: a vitória não depende de mim — depende do Deus que abriu o Mar Vermelho e sustentou cuarenta anos no deserto."
+
+CONCLUSÃO
+Família amada, Jericó está à vista. Os muros são altos, as portas estão trancadas e os inimigos estão dentro. Mas Deus não chamou Israel para atacar sem antes comer. Ele chamou para a Páscoa — para o memorial do cordeiro, para o pão da redenção, para a mesa que diz: "Somos o povo resgatado, não o povo que se resgata." A família que senta à mesa de Cristo antes de entrar no campo tem uma força que o inimigo não tem: a memória de que Deus já venceu o maior inimigo, na maior batalha, no maior Calvário. Comam o cordeiro. E então avancem. Amém.
+`;
+
+  if (d.dia === 260) return `PARA A FAMÍLIA · Josué 5:13–15
+
+TEMA: A Família Diante do Santo — A Adoração que Precede Toda Batalha
+
+---
+
+TÍTULO DO SERMÃO FAMILIAR
+O Príncipe do Exército — A Família que Aprende que a Batalha Pertence ao Senhor
+
+BIG IDEA PARA A FAMÍLIA
+Quando Josué encontrou o Príncipe do Exército de YHWH com espada desembainhada, ele aprendeu a lição mais importante antes de Jericó: esta batalha não é sua — você não é o comandante, é o soldado sob ordens.
+
+PERGUNTA PARA A FAMÍLIA
+Nas batalhas da nossa família, quem é o comandante? Josué precisou tirar as sandálias e se prostrar antes de receber as ordens. O que significa para a nossa família se prostrar diante do Senhor antes de agir?
+
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as MARCAS do encontro que transforma: a pergunta de Josué que foi revertida, a adoração que precedeu a estratégia e o solo santo que a presença divina cria.
+
+---
+
+MOVIMENTOS DO SERMÃO
+
+I. A PERGUNTA REVERTIDA — JOSUÉ NÃO É O COMANDANTE (A — Js 5:13–14a)
+§ Indicação Textual: Js 5:13 — "E sucedeu que, estando Josué junto a Jericó, levantou os olhos e viu que estava diante dele um homem com a espada desembainhada na mão. E Josué foi a ele e lhe disse: És dos nossos ou de nossos adversários? Ao que respondeu: Não; mas sou Príncipe do exército do SENHOR."
+§ Exegese: A pergunta de Josué — "és dos nossos ou dos adversários?" — revela a lógica militar natural: há dois lados, e você está num deles. A resposta divina recusa ambas as categorias: "Não" — ou seja, nem dos teus, nem dos adversários. O Príncipe do Exército de YHWH não é um aliado a ser recrutado; é o Comandante a ser obedecido. Josué chegou à beira de Jericó pensando que era ele quem comandava — a theofania corrige isso radicalmente. A expressão "Príncipe do exército do SENHOR" (śar-tsĕbaʾ YHWH) é teologicamente densa: śar é príncipe, comandante — esta é uma das teofanias pré-encarnadas de Cristo (ver: o "Anjo do SENHOR" em Gn 16, 22, Êx 3, Jz 6).
+§ Teologia Reformada: A CFW II.2: Deus "não é autora do pecado, nem violentadora da liberdade das criaturas, nem comunicável a toda terceira causa; mas santíssima e soberanamente livre." O Príncipe do Exército não consulta Josué — ele ordena. R.C. Sproul (The Holiness of God): "A santidade de Deus esmaga toda presunção humana de que Deus está do nosso lado. A pergunta correta não é 'Deus está comigo?' mas 'estou eu com Deus?'"
+§ Aplicação Familiar: Pais: nas decisões familiares difíceis — mudança, doença, conflito — você age como Josué antes (perguntando "Deus está do nosso lado?") ou como Josué depois da teofania (perguntando "o que o Comandante ordena?") A postura muda tudo. / Filhos: nas suas batalhas — escola, amizades, pressões — você tenta recrutar Deus para o seu lado ou se coloca do lado Dele? A diferença entre as duas perguntas é a diferença entre religião e fé.
+
+II. A ADORAÇÃO ANTES DA ESTRATÉGIA — CENTRO ◉ (Js 5:14b–15)
+§ Indicação Textual: Js 5:14b-15 — "Josué caiu com o seu rosto em terra e o adorou, e disse-lhe: Que diz meu Senhor ao seu servo? E o Príncipe do exército do SENHOR disse a Josué: Tira o teu calçado dos pés, porque o lugar onde estás é santo. E Josué assim o fez."
+§ Exegese: A sequência é teologicamente precisa: Josué cai (prostração), adora (latreía), pergunta ("que diz meu Senhor?"), obedece imediatamente. A adoração precede a pergunta sobre a estratégia. O mandato de tirar as sandálias espelha exatamente Moisés na sarça ardente (Êx 3:5) — Josué está em continuidade com a linhagem dos encontros teofânicos. "O lugar onde estás é santo" — o terreno de batalha é solo sagrado; a guerra santa é litúrgica antes de ser militar. Josué recebe a estratégia de Jericó (cap. 6) DEPOIS de se prostrar — a adoração é o pré-requisito da revelação da estratégia divina.
+§ Teologia Reformada: A CFW XXI.2 (Culto Religioso e Sábado): "a adoração religiosa é devida a Deus Pai, Filho e Espírito Santo, somente, e não a anjos, santos ou qualquer outra criatura." Josué adora o Príncipe do Exército — e não é corrigido (contraste com Ap 19:10, onde João é corrigido por adorar um anjo). Este é Cristo pré-encarnado. Calvino (Inst. I.12.1): "A adoração é o fundamento de toda obediência — quem adora corretamente obedece corretamente, porque reconhece a quem pertence a autoridade."
+§ Aplicação Familiar: Pais: a oração antes de qualquer decisão familiar não é ritual — é prostração diante do Comandante antes de pedir as ordens. Tirar as sandálias é reconhecer que o solo onde a família está é sagrado: o casamento, a paternidade, a crise atual. / Casal: antes de discutir estratégia para qualquer grande desafio — financeiro, relacional, vocacional — prostrem-se primeiro. A adoração que precede a estratégia transforma a qualidade da decisão.
+
+III. O SOLO SANTO — A BATALHA É LITÚRGICA (A' — implícito em Js 5:15 com Js 6:2)
+§ Indicação Textual: Js 5:15 — "o lugar onde estás é santo." Js 6:2 — "E o SENHOR disse a Josué: Vê, tenho entregado na tua mão Jericó..." A estratégia de Jericó — marchar, tocar trombetas, gritar — é litúrgica, não militar.
+§ Exegese: A santidade do solo implica que toda a campanha de Josué é culto antes de ser guerra. As marchar ao redor de Jericó (Js 6) com a Arca à frente, sacerdotes com trombetas, silêncio do povo — é uma liturgia processional. A batalha de Jericó não foi vencida pela habilidade militar de Israel, mas pela obediência litúrgica. A santidade do solo cria um padrão: o que parece estratégia militar é, em sua essência, adoração obediente ao Comandante que já entregou a cidade.
+§ Teologia Reformada: A CFW XXI.1: "somente a luz da natureza mostra que há um Deus que tem senhorio e soberania sobre tudo; a quem o homem deve temer e adorar... mas o modo aceitável de adorar a Deus é por Ele mesmo instituído." A guerra santa de Josué é tipo da batalha espiritual de Ef 6:10-18 — a armadura do crente é litúrgica (verdade, justiça, evangelho, fé, salvação, Palavra). Joel Beeke: "A família que vive como se a espiritualidade e a vida prática fossem dois domínios separados ainda não aprendeu a lição de Josué 5: o terreno de batalha é solo santo."
+§ Aplicação Familiar: Pais: a escola dos filhos, o local de trabalho, a vizinhança — são "solos santos" onde vocês foram colocados como embaixadores de Cristo. Tirem as sandálias; o terreno onde atuam é sagrado. / Filhos: a sala de aula, o campo de futebol, o grupo de amigos — são solos onde o Príncipe do Exército já chegou antes de você. A pergunta não é "como vou vencer aqui?" mas "o que o Comandante ordena?"
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+O Príncipe do Exército com espada desembainhada é Cristo pré-encarnado — o mesmo que em Ap 19:11-16 retorna sobre cavalo branco com espada da boca para a batalha final. Em Josué 5, a espada está desembainhada mas ainda não foi usada — a batalha ainda vai começar. No Calvário, a espada da justiça divina foi desembainhada contra o próprio Filho (Zc 13:7 — "desperta, ó espada, contra meu pastor"). Cristo recebeu a espada para que Seu povo não a receba. A família que se prostra diante do Príncipe do Exército reconhece que a maior batalha — contra o pecado e a morte — já foi vencida por Ele. Nossa batalha é litúrgica: adoração, Palavra, oração, comunhão, Ceia — as trombetas que derrubam as muralhas de Jericó.
+
+DOUTRINA CENTRAL
+A família que aprende a se prostrar diante do Comandante antes de agir descobre que a batalha pertence ao SENHOR — e que a estratégia divina é sempre litúrgica antes de ser tática, adoração antes de ação.
+
+APLICAÇÕES PARA A FAMÍLIA
+▸ Para os Pais: antes de qualquer decisão familiar importante esta semana, realizem uma "prostração de Josué" — um momento de adoração explícita onde a família reconhece que o Comandante é Cristo, não os pais.
+▸ Para os Filhos: na sua maior batalha atual, pratique a pergunta de Josué pós-prostração: "Que diz meu Senhor ao seu servo?" Abra a Bíblia e procure a resposta.
+▸ Para Noivos: conversem sobre como tomarão decisões juntos como casal — começando pela adoração ou pela estratégia? A família que se prostra antes de decidir tem uma qualidade de discernimento que a que não se prostra não tem.
+▸ Para o Casal: identifiquem a maior "Jericó" da vida de vocês agora. Antes de discutir como atacá-la, sentem-se juntos, tirem as "sandálias" (reconheçam a santidade do momento) e perguntem: "Que diz nosso Senhor?"
+▸ Para os Avós: contem uma história em que Deus virou a pergunta de vocês — em que vocês foram a Ele perguntando "Deus, você está do nosso lado?" e Ele revelou que a pergunta estava errada. Como isso mudou tudo?
+
+DINÂMICA FAMILIAR
+1. Leiam Js 5:13-15 juntos. "Josué perguntou: És dos nossos ou dos adversários? A resposta foi: Não. O que isso significa para como pensamos sobre Deus nas nossas batalhas?"
+2. Moisés e Josué receberam o mesmo mandato: tirar as sandálias (Êx 3:5 e Js 5:15). "O que significa 'tirar as sandálias' para nossa família hoje? Que atitude ou postura precisamos remover diante de Deus?"
+3. Josué adorou ANTES de pedir a estratégia. Pratiquem: antes de discutir qualquer assunto difícil na família esta semana, passem 2 minutos em silêncio ou oração antes de começar a conversa.
+4. "A batalha pertence ao SENHOR" (1Sm 17:47) — como essa verdade muda o que você sente de responsabilidade, medo e pressão nas batalhas atuais? Cada membro compartilha.
+5. Leiam Efésios 6:10-18. Compare a armadura do crente com a liturgia de Jericó — quais elementos são litúrgicos antes de serem táticos? Como a família pode se "armar" dessa forma?
+6. Orem de joelhos juntos — literalmente prostrados ou de joelhos — confessando que Cristo é o Príncipe do Exército da família e pedindo as ordens para a semana.
+
+AUTORES REFORMADOS
+▸ R.C. Sproul (The Holiness of God): "A teofania de Josué 5 é evangelicamente perturbadora: o Santo não escolhe lados humanos. Ele não é nosso mascote divino. Quando Sua santidade aparece com espada desembainhada, a única resposta é cair de rosto em terra e perguntar: o que ordenas, Senhor?"
+▸ Joel Beeke (Family Worship): "A família que adora antes de agir está imitando Josué: primeiro a prostração, depois a estratégia. A adoração não atrasa a ação — ela a qualifica. A estratégia que nasce da adoração tem uma solidez que a estratégia que nasce do medo não tem."
+▸ Matthew Henry (Comentário): "O solo de batalha é solo santo — esta é a lição mais profunda de Josué 5. O cristão que entra no escritório, na escola, no mercado com essa consciência não vai ao trabalho: vai ao culto. Cada esfera da vida é área do domínio do Príncipe do Exército."
+
+CONCLUSÃO
+Família amada, o Príncipe do Exército está diante de vocês com a espada desembainhada. Ele não está do lado de vocês nem dos adversários — Ele é o Comandante. A única pergunta certa não é "Deus, você está comigo?" mas "Senhor, o que ordenas?" E a resposta a essa pergunta nunca veio para quem ainda está de pé com as sandálias calçadas. Prostrem-se primeiro. Adorem antes de agir. Tirem as sandálias — o solo onde estão é santo. E então ouçam: "Vê, tenho entregado na tua mão Jericó." A batalha já está ganha pelo Comandante que a travou no Calvário. Sua tarefa é marchar em obediência litúrgica ao ritmo que Ele ordena. Amém.
+`;
+
+  if (d.dia === 261) return `PARA A FAMÍLIA · Josué 6:1–25
+
+TEMA: A Família que Marcha em Obediência — A Vitória que Pertence ao Culto, Não à Força
+
+---
+
+TÍTULO DO SERMÃO FAMILIAR
+As Trombetas de Jericó — A Família que Derruba Muros pela Obediência Litúrgica
+
+BIG IDEA PARA A FAMÍLIA
+Jericó não caiu porque Israel tinha exército superior — caiu porque Israel obedeceu a uma estratégia que parecia loucura militar mas era obediência perfeita ao Comandante que já havia entregado a cidade.
+
+PERGUNTA PARA A FAMÍLIA
+Que "muros de Jericó" existem na vida da nossa família — obstáculos que parecem impenetráveis — e o que significa "marchar" ao redor deles pela obediência à Palavra em vez de tentar derrubá-los pela força própria?
+
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as MARCAS da vitória que vem do culto: a estratégia litúrgica que Deus ordena, o silêncio obediente do povo e o clamor que derruba o que seis dias de marcha não derrubaram.
+
+---
+
+MOVIMENTOS DO SERMÃO
+
+I. A ESTRATÉGIA QUE É CULTO — A ARCA NA FRENTE DA GUERRA (A — Js 6:1–13)
+§ Indicação Textual: Js 6:3-5 — "vós, todos os homens de guerra, rodeareis a cidade, dando uma volta em derredor da cidade; assim o farás por seis dias. E sete sacerdotes levarão sete trombetas de jubileu diante da arca... e ao sétimo dia, rodeareis a cidade sete vezes, e os sacerdotes tocarão as trombetas."
+§ Exegese: A estratégia de YHWH é contracultural em todos os aspectos militares da época: não assalto frontal, não catapultas, não negociação — marcha processional com a Arca na frente e sacerdotes tocando trombetas. O número sete (sacerdotes, trombetas, dias, voltas) é número da perfeição aliançal — toda a estrutura da campanha é litúrgica. O shôphar (trombeta de jubileu) é instrumento do Jubileu (Lv 25:9) e da assembleia sagrada (Lv 23:24) — Jericó cai ao som do instrumento do culto, não da guerra. Apenas Rahab — a prostituta da fé — sobrevive dentro: a graça precede o juízo na narrativa.
+§ Teologia Reformada: A CFW I.6 — "toda a vontade de Deus concernente às coisas necessárias para Sua glória... está expressamente declarada na Escritura ou pode ser deduzida dela." A estratégia de Jericó é bíblica antes de ser militar — Deus revelou o método. A obediência à Palavra, mesmo quando contraintuitiva, é a base da fé reformada. Joel Beeke (Parenting): "O pai que lida com obstáculos familiares pela Palavra de Deus — mesmo quando a Palavra parece estratégia de louco — está marchando ao redor de Jericó."
+§ Aplicação Familiar: Pais: qual é a Jericó da sua família — o obstáculo que parece impenetrável? A pergunta não é "como atacamos?" mas "qual é a marcha que Deus ordenou?" Às vezes é consistência fiel na Palavra; às vezes é perdão repetido; às vezes é oração diária por sete dias. / Filhos: os muros de Jericó não caíram na primeira volta — caíram no sétimo dia, sétima volta. O que você está prestes a desistir porque a sétima volta ainda não chegou?
+
+II. O SILÊNCIO DO POVO E O CLAMOR QUE DERRUBA — CENTRO ◉ (Js 6:10, 16, 20)
+§ Indicação Textual: Js 6:10 — "E Josué ordenou ao povo, dizendo: Não griteis, nem façais ouvir a vossa voz... até ao dia em que eu vos disser: Gritai! Então gritareis." Js 6:20 — "E o povo gritou com grande alarido... e as muralhas caíram."
+§ Exegese: O silêncio durante seis dias e seis voltas é disciplina de obediência — o povo guardou o clamor até o momento prescrito. O clamor no momento certo (rûaʿ gādôl) é o ato de fé coletivo: seis dias de marcha silenciosa prepararam para um clamor que derrubou o que parecia indestrutível. A estrutura é quiástica: silêncio → marcha → silêncio → marcha → silêncio → marcha → CLAMOR → queda. O quiasma concentra no clamor o ponto de virada. Teologicamente: o silêncio obediente e o clamor no tempo de Deus são mais poderosos que qualquer iniciativa humana fora do tempo.
+§ Teologia Reformada: A CFW XXI.3 (Oração): "a oração com ação de graças... é uma parte especial da adoração religiosa... quando feita com entendimento, reverência, humildade, fervor, fé, amor e perseverança." O clamor de Josué 6 é tipo da oração perseverante — silenciosa e disciplinada nos seis dias, estrondosa no momento de Deus. Calvino (Inst. III.20.11): "A perseverança na oração, mesmo sem resposta visível, é ela própria uma forma de fé que honra a Deus."
+§ Aplicação Familiar: Pais: há orações da família que estão no "sexto dia de marcha silenciosa"? Não desistam antes do sétimo dia. O silêncio obediente é tão importante quanto o clamor final. / Casal: quando foi a última vez que vocês "clamaram" juntos — oraram de forma intensa, concreta e persistente por uma necessidade específica? O clamor coletivo da família tem poder que o silêncio individual não tem.
+
+III. RAABE SALVA — A GRAÇA QUE PRECEDE O JUÍZO (A' — Js 6:17, 22–25)
+§ Indicação Testual: Js 6:17 — "e a cidade será dedicada ao SENHOR para destruição... somente Raabe, a prostituta, viverá, ela e todos os que estiverem com ela na casa, porque escondeu os mensageiros que enviamos." Js 6:25 — "E Josué conservou a vida de Raabe, a prostituta, e a casa de seu pai..."
+§ Exegese: Em meio ao herem (destruição total), a graça faz exceção por Raabe. O cordão escarlate (2:18) é cumprido: a casa marcada sobrevive enquanto tudo ao redor cai. A inclusão de "todos os que estiverem com ela" confirma que a salvação de Raabe é de alcance familiar — ela intercedeu por todos os seus (2:13) e todos foram salvos. A narrativa de Jericó começa e termina com Raabe: o livro está emoldurado pela graça no meio do juízo. Raabe "habita no meio de Israel até hoje" (6:25) — ela se tornou israelita, foi incluída na comunidade do pacto.
+§ Teologia Reformada: A CFW X.1-4 (Chamado Eficaz): Deus chama eficazmente quem quer, quando quer, pelos meios que quer — inclusive a prostituta de Jericó pela fé. Matthew Henry: "Raabe em Jericó é a Igreja no mundo — cercada pelo juízo que está por vir, protegida pelo sinal do sangue, esperando que o Príncipe do Exército cumpra o que prometeu."
+§ Aplicação Familiar: Pais: Raabe pediu salvação para "meu pai, minha mãe, meus irmãos" — sua fé foi missionária para os seus antes de ser pública para os outros. A intercessão pelos membros da família ainda não salvos é a missão mais próxima que existe. / Filhos: Raabe estava dentro dos muros que cairiam — mas o cordão escarlate a distinguia. O batismo e a profissão de fé distinguem você nos ambientes onde vive. Não escondam o cordão.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+Jericó é tipo do juízo escatológico: uma cidade que, apesar de suas muralhas, não pode resistir ao Príncipe do Exército. O herem (destruição total) aponta ao juízo final sobre tudo o que não está sob o sangue do cordeiro. Raabe e o cordão escarlate são tipo da salvação em Cristo: em meio ao juízo, o sinal do sangue protege a família. As trombetas de Jericó ressoam em Ap 8-9 (as sete trombetas do Apocalipse) e em 1Ts 4:16 (a trombeta final que ressuscita os mortos em Cristo). A marcha ao redor de Jericó é tipo da vida cristã — circuito de obediência litúrgica em torno das fortalezas do pecado e da morte, aguardando o clamor final que as derrubará para sempre na vinda de Cristo.
+
+DOUTRINA CENTRAL
+A vitória da família cristã sobre as fortalezas do pecado, da dúvida e do medo não vem da força própria — vem da obediência litúrgica ao Comandante que já entregou a cidade, perseverando em silêncio e clamando no tempo de Deus.
+
+APLICAÇÕES PARA A FAMÍLIA
+▸ Para os Pais: identifiquem as "Jericós" da família — obstáculos que parecem impenetráveis. Esta semana, comecem uma "marcha litúrgica" ao redor deles: oração diária, leitura da Palavra, confiança silenciosa. Não parem antes do sétimo dia.
+▸ Para os Filhos: os muros não caíram no primeiro dia. Qual é a coisa que você está prestes a desistir porque não viu resultado? Quantas voltas você já deu? Quantas faltam?
+▸ Para Noivos: o casamento terá suas Jericós — obstáculos que parecem impenetráveis. Decidam agora: quando as muralhas não caírem na primeira volta, vão marchar juntos ou desistir sozinhos?
+▸ Para o Casal: identifiquem uma "Jericó" do casamento — um padrão, uma dificuldade, um sonho adiado. Comprometam-se a "marchar" juntos por sete semanas: oração diária específica, sem desistir. Datem o início.
+▸ Para os Avós: contem uma "Jericó" que caiu depois de muitas voltas — um familiar convertido, uma crise superada, uma oração de anos respondida. Esse testemunho é o combustível para a perseverança das gerações seguintes.
+
+DINÂMICA FAMILIAR
+1. Leiam Js 6:3-5 juntos. "A estratégia de Deus era marchar em silêncio por seis dias e gritar no sétimo. O que você teria pensado se fosse um soldado ouvindo isso? O que isso nos ensina sobre confiar nas instruções de Deus mesmo quando parecem loucura?"
+2. Os muros de Jericó eram famosos — impenetráveis para a tecnologia militar da época. Cada membro nomeia uma "muralha de Jericó" na própria vida. Orem juntos ao redor de cada uma.
+3. Josué mandou o povo ficar em silêncio por seis dias. "Para a nossa família, que tipo de silêncio obediente Deus está pedindo agora — que batalha estamos tentando resolver com palavras quando precisamos de silêncio e marcha?"
+4. Raabe foi salva porque seu cordão escarlate estava visível. "Nossa família tem sinais visíveis de quem pertence ao Senhor? O que pessoas de fora veem que distingue esta casa?"
+5. Leiam Hebreus 11:30: "Pela fé caíram as muralhas de Jericó, depois de rodeadas por sete dias." A fé que derruba muros é a fé que persevera em obediência mesmo sem ver resultado. Como cultivamos essa fé na família?
+6. Orem juntos — de preferência literalmente marchando ao redor de uma cômodo da casa — intercedendo por cada "Jericó" familiar. Terminam com um "clamor" unido de adoração e confiança.
+
+AUTORES REFORMADOS
+▸ Voddie Baucham (Family Driven Faith): "Jericó foi tomada pela liturgia — arca, sacerdotes, trombetas, silêncio, clamor. A família que entende isso sabe que o culto familiar não é opcional ou sentimental: é a estratégia de guerra espiritual que Deus prescreveu para derrubar muros."
+▸ Joel Beeke (Parenting by God's Promises): "O pai que persevera em seis dias de 'marcha silenciosa' — orando pelos filhos sem ver resultado, lendo a Palavra sem resposta visível, amando sem retribuição — está no caminho do sétimo dia. Não desista antes do clamor."
+▸ Matthew Henry (Comentário): "A marcha ao redor de Jericó nos ensina que a obediência simples à Palavra de Deus, mesmo quando parece ineficaz ao olho humano, é o caminho certo para a vitória que só Deus pode dar. O segredo de Jericó não era a estratégia — era a fé obediente."
+
+CONCLUSÃO
+Família amada, os muros de Jericó eram altos, grossos e impenetráveis. Mas caíram no sétimo dia porque um povo obediente marchou quando Deus mandou marchar, ficou em silêncio quando Deus mandou calar, e clamou quando Deus mandou clamar. Não pela força do exército — pela fé que obedece. Suas Jericós também cairão. Não no primeiro dia — talvez não antes do sétimo. Mas cairão, porque o Príncipe do Exército que disse "tenho entregado na tua mão Jericó" ainda fala com a mesma autoridade sobre cada muralha que sua família enfrenta. Marche. Fique em silêncio. E no tempo de Deus, clame. Os muros cairão. Amém.
+`;
+
+  if (d.dia === 262) return `PARA A FAMÍLIA · Josué 6:26–27
+
+TEMA: A Família que Teme a Palavra — A Seriedade das Promessas de Deus
+
+---
+
+TÍTULO DO SERMÃO FAMILIAR
+A Maldição de Jericó — A Família que Aprende que as Palavras de Deus Não Voltam Vazias
+
+BIG IDEA PARA A FAMÍLIA
+A maldição sobre quem reconstruísse Jericó foi pronunciada por Josué, ignorada por Hiel quatrocentos anos depois, e se cumpriu com exatidão em cada filho de Hiel — porque as palavras proféticas de Deus sempre se cumprem, mesmo quando a geração que as ouviu já não existe.
+
+PERGUNTA PARA A FAMÍLIA
+Nossa família leva a sério as promessas E as advertências de Deus na Bíblia — ou tratamos as promessas como garantidas e as advertências como exagero? O que o caso de Hiel nos ensina sobre como Deus fala?
+
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as MARCAS da Palavra que não falha: a maldição pronunciada, o cumprimento exato quatrocentos anos depois e a presença de YHWH com Josué que dá autoridade à sua fala.
+
+---
+
+MOVIMENTOS DO SERMÃO
+
+I. A MALDIÇÃO PRONUNCIADA — A PALAVRA QUE PERMANECE (A — Js 6:26)
+§ Indicação Textual: Js 6:26 — "E naquele tempo Josué os adjurou, dizendo: Maldito diante do SENHOR o homem que se levantar e edificar esta cidade de Jericó: ao preço de seu primogênito lançará seus fundamentos, e ao preço de seu filho mais novo porá as suas portas."
+§ Exegese: A maldição é pronunciada no ápice da vitória — não como ato de raiva, mas como ordenança profética instituída por autoridade divina. A estrutura bipartida (primogênito para os fundamentos, filho mais novo para as portas) abrange toda a obra de reconstrução, do início ao fim. A palavra ʾārûr ("maldito") é o mesmo termo das maldições do Sinai (Dt 27-28). Josué não improvisa — ele atua como porta-voz de YHWH. A maldição é ratificada pela presença divina: "o SENHOR estava com Josué" (6:27) é o selo que garante que a palavra de Josué tem peso eterno.
+§ Teologia Reformada: A CFW I.4-5 — "a autoridade da Escritura... depende inteiramente de Deus, que é a verdade mesma, seu autor." As palavras de Deus — promessas e advertências — têm autoridade permanente porque Deus não mente (Nm 23:19). R.C. Sproul (Can I Trust the Bible?): "A confiabilidade da Palavra de Deus é total — as promessas são garantidas e as advertências são reais. Ignorar as advertências é tão irracional quanto ignorar as promessas."
+§ Aplicação Familiar: Pais: quando vocês leem a Bíblia para os filhos, ensinam tanto as advertências quanto as promessas? Uma fé que conhece só as promessas é uma fé que não entende a santidade de Deus. / Filhos: há uma advertência bíblica que você está tendendo a ignorar porque parece exagerada ou distante? O caso de Hiel mostra que as advertências de Deus têm endereço e data de cumprimento.
+
+II. YHWH COM JOSUÉ — A PRESENÇA QUE SELA A PALAVRA — CENTRO ◉ (Js 6:27)
+§ Indicação Textual: Js 6:27 — "E o SENHOR estava com Josué, e o seu nome se divulgou por toda a terra." A presença de YHWH com Josué é o fundamento da autoridade de sua palavra — e o motor da fama que se espalhou pelas nações.
+§ Exegese: "O SENHOR estava com Josué" (wayhî YHWH ʾet-yĕhôshûaʿ) é a frase que enquadra toda a narrativa de Josué — aparece no começo (1:5,9), no meio (6:27) e no fim implícito. É a promessa cumprida: "não te deixarei nem te abandonarei" (1:5). A fama de Josué não veio de sua habilidade — veio da Presença divina que o acompanhou. A mesma lógica se aplica à família cristã: a "fama" que honra a Deus não nasce da competência da família, mas da Presença de Deus que a habita e cujas palavras ela obedece.
+§ Teologia Reformada: A CFW XVII.1-2 (Perseverança dos Santos): Deus preserva Seu povo para que Sua Palavra não caia em vão. A promessa de presença ("YHWH com Josué") é irrevogável — ela não depende do desempenho de Josué, mas da fidelidade de Deus. Joel Beeke: "A família que vive sob a promessa 'não te deixarei' tem uma segurança que não é produzida pelo desempenho — é garantida pela Palavra do Deus que 'estava com Josué'."
+§ Aplicação Familiar: Pais: a "fama" que vocês querem para a família — o testemunho que ela tem no bairro, na escola, na cidade — nasce da Presença de Deus com ela, não da sua gestão cuidadosa da imagem. Busquem a Presença, não a reputação. / Casal: "o SENHOR estava com Josué" — esta frase pode ser dita sobre o lar de vocês? O que precisaria mudar para que a Presença de Deus fosse a explicação óbvia para quem observa a família de fora?
+
+III. O CUMPRIMENTO EM HIEL — QUATROCENTOS ANOS DEPOIS (A' — 1Reis 16:34)
+§ Indicação Textual: 1Rs 16:34 — "Em seus dias Hiel betelita edificou Jericó; ao preço de Abirão, seu primogênito, lançou os seus fundamentos, e ao preço de Segube, seu filho mais novo, pôs as suas portas, conforme a palavra do SENHOR, que havia falado por intermédio de Josué filho de Num." Quatrocentos anos depois, exatamente como pronunciado.
+§ Exegese: A citação explícita de "a palavra do SENHOR que havia falado por Josué" em 1Rs 16:34 é editorial deliberado: o autor de Reis quer que o leitor conecte o cumprimento à maldição de Josué 6:26. A precisão é perturbadora: primogênito nos fundamentos, filho mais novo nas portas. Hiel ignorou a maldição — talvez não a conhecesse, talvez a desprezasse. Mas a Palavra de Deus não caducou em quatrocentos anos. A narrativa de 1Rs 16 está no contexto do reinado de Acabe — a época de maior apostasia do reino norte. Jericó reconstruída é símbolo de Israel reconstruindo o que Deus destruiu: reabilitando o que o juízo divino condenou.
+§ Teologia Reformada: A CFW V.3 (Providência): "Deus em Sua providência... ordena e governa... de acordo com a sua infalível presciência e com o livre e imutável conselho da sua própria vontade." A maldição de Josué é cumprida na providência divina — sem que Hiel soubesse ou quisesse. Matthew Henry: "O exemplo de Hiel é o mais solene aviso da história: as advertências de Deus têm data de vencimento eterno. Nenhuma geração que as ignora escapa da conta."
+§ Aplicação Familiar: Pais: como vocês apresentam as advertências bíblicas aos filhos — como regras arbitrárias ou como proteções amorosas de um Pai que conhece o futuro? A maldição de Jericó não era punição mesquinha — era proteção de Israel para não reconstruir o que Deus destruiu. / Avós: vocês têm visto na história da família o cumprimento de advertências bíblicas que alguém ignorou? Esses testemunhos — narrados com misericórdia, não com julgamento — formam o temor de Deus na próxima geração.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A maldição sobre Jericó é tipo da lei que amaldiçoa o transgressor (Dt 27-28) — e Cristo a absorveu em nosso lugar (Gl 3:13: "Cristo nos resgatou da maldição da lei, fazendo-se ele próprio maldição em nosso lugar"). O primogênito e o filho mais novo de Hiel são sombras do Filho Unigênito que recebeu toda maldição: Jesus é o primogênito que lançou os fundamentos da nova criação com Seu próprio sangue, e o Filho que selou as portas da morte e do inferno com Sua ressurreição. A Palavra que pronunciou maldição sobre Jericó é a mesma Palavra que diz: "o que crer em mim, ainda que esteja morto, viverá" (Jo 11:25). Para os que estão em Cristo, a maldição foi absorvida — a Palavra de Deus traz agora apenas promessa.
+
+DOUTRINA CENTRAL
+As palavras de Deus — promessas e advertências — têm eficácia eterna porque Deus não falha; a família que leva tanto as promessas quanto as advertências com seriedade igual demonstra que conhece a santidade do Deus que fala.
+
+APLICAÇÕES PARA A FAMÍLIA
+▸ Para os Pais: esta semana, leiam juntos uma advertência bíblica que a família costuma tratar como exagero ou irrelevante. Discutam seriamente: o que acontece com quem ignora esta palavra? O que Hiel nos ensina?
+▸ Para os Filhos: há uma advertência bíblica que você conhece mas tem ignorado? Josué 6 e 1 Reis 16 mostram que o tempo de cumprimento pode ser longo — mas o cumprimento é certo. Não reconstrua o que Deus destruiu.
+▸ Para Noivos: conversem sobre áreas da vida onde cada um tem sido tentado a "reconstruir Jericó" — reabilitar hábitos, relacionamentos ou padrões que Deus foi destruindo. O casamento não é lugar de reabilitar o que Deus destruiu.
+▸ Para o Casal: há áreas do casamento ou da família onde vocês têm ignorado advertências bíblicas claras — sobre finanças, sobre disciplina dos filhos, sobre padrões de convivência? Nomeiem e tragam ao Senhor antes que o "primogênito nos fundamentos" se cumpra.
+▸ Para os Avós: contem uma história em que Deus cumpriu uma promessa que parecia impossível. Mas também — com humildade — uma advertência que alguém da família ignorou e que se cumpriu. Ambas formam o temor de Deus.
+
+DINÂMICA FAMILIAR
+1. Leiam Js 6:26 e depois 1Rs 16:34 juntos. "Quatrocentos anos depois, exatamente como pronunciado. O que isso revela sobre a Palavra de Deus?" Discutam.
+2. "Nossa família acredita nas promessas de Deus com a mesma seriedade que nas advertências?" Façam uma lista de 3 promessas e 3 advertências que conhecem. Compare a seriedade com que tratam cada uma.
+3. Por que Hiel reconstruiu Jericó? (Não sabemos exatamente — ambição, ignorância, desprezo?) "Quando você ignora uma advertência bíblica, qual é geralmente o motivo?" Cada membro compartilha honestamente.
+4. "O SENHOR estava com Josué." Discutam: o que precisaria ser verdade sobre a família para que esta frase pudesse ser dita sobre vocês? O que está impedindo?
+5. O cumprimento da maldição em Hiel foi preciso — primogênito nos fundamentos, filho mais novo nas portas. "O que isso nos ensina sobre a precisão de Deus? Isso é confortante ou aterrorizante — ou ambos? Por quê?"
+6. Orem pedindo a Deus que a família tenha temor de Sua Palavra — que nem as promessas sejam tomadas por garantidas, nem as advertências sejam tratadas como exagero. Citem Isaías 66:2 na oração.
+
+AUTORES REFORMADOS
+▸ R.C. Sproul (The Holiness of God): "O caso de Hiel é pedagogia da santidade: Deus não faz ameaças que não cumpre. Isso é perturbador para a nossa domesticação da religião. O Deus que diz 'maldito' e cumpre quatrocentos anos depois é o mesmo Deus que diz 'salvo' — e esse também cumprirá."
+▸ Matthew Henry (Comentário ao Antigo Testamento): "Hiel reconstruiu Jericó a um preço que não pretendia pagar. Assim todo homem que reconstrói o que Deus destruiu — o pecado abandonado, o hábito quebrado, o relacionamento encerrado por Sua Palavra. O custo é sempre maior do que se calculou."
+▸ Joel Beeke (Parenting by God's Promises): "A família que ensina os filhos tanto o amor quanto o temor de Deus — tanto as promessas quanto as advertências — está dando a eles uma teologia completa. Temor de Deus não é terror — é a reverência de quem conhece o poder e a fidelidade de Deus em tudo o que diz."
+
+CONCLUSÃO
+Família amada, Hiel não acordou aquela manhã pensando: "vou perder todos os meus filhos hoje." Ele apenas ignorou uma palavra pronunciada quatrocentos anos antes. Mas a Palavra de Deus não caducou. Ela nunca caduca. O mesmo Deus que disse "maldito" disse "salvo" — e os dois têm a mesma certeza de cumprimento. A família que leva a sério tanto as promessas quanto as advertências não vive no medo — vive na reverência. E a reverência é o solo onde a bênção cresce. "O SENHOR estava com Josué" — que esta seja a epitáfio da sua família: que a Presença de Deus explique tudo o que a família foi. Amém.
+`;
+
+  if (d.dia === 263) return `PARA A FAMÍLIA · Josué 7:1–26
+
+TEMA: O Pecado Escondido — A Família que Aprende que o Pecado de Um Afeta a Todos
+
+---
+
+TÍTULO DO SERMÃO FAMILIAR
+O Vale de Acor — A Família que Enfrenta o Pecado Escondido Antes que Ele Enterre a Próxima Batalha
+
+BIG IDEA PARA A FAMÍLIA
+O pecado de Acã não ficou no quarto dele — derrubou o exército de Israel, matou trinta e seis homens e paralisou a conquista, porque na aliança de Deus a solidariedade vai nos dois sentidos: tanto no pecado quanto na bênção.
+
+PERGUNTA PARA A FAMÍLIA
+Há pecados "escondidos no acampamento" da nossa família — coisas que alguém está escondendo que estão afetando a todos sem que ninguém perceba a conexão? O que o caso de Acã nos ensina sobre a importância da confissão e da transparência?
+
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as MARCAS do pecado que a aliança expõe: a derrota que revela o problema oculto, a busca que Deus dirige e o vale de Acor que se torna porta de esperança.
+
+---
+
+MOVIMENTOS DO SERMÃO
+
+I. A DERROTA QUE REVELA O PROBLEMA OCULTO (A — Js 7:1–9)
+§ Indicação Textual: Js 7:1 — "Mas os filhos de Israel cometeram uma transgressão quanto ao anátema; pois Acã... tomou do anátema; e a ira do SENHOR se acendeu contra os filhos de Israel." Js 7:5 — "os homens de Ai feriram deles uns trinta e seis homens... e o coração do povo se derreteu."
+§ Exegese: O versículo 1 começa com wĕyimʿalû ("e transgrediram") — antes da derrota ser narrada, o texto já revela a causa. O leitor sabe o que Israel não sabe: há pecado no acampamento. O verbo mʿal é termo técnico para violação da aliança — é o mesmo termo de Nm 5:12,27 (infidelidade conjugal). Acã violou a aliança pactual de Israel com YHWH tão seriamente quanto infidelidade conjugal viola a aliança do casamento. A derrota em Ai (cidade menor que Jericó) é desproporcional ao tamanho do adversário — a causa não é militar, é espiritual. Josué chora e se prostra (7:6-9): a liderança genuína sente a derrota do povo como derrota própria.
+§ Teologia Reformada: A CFW XXVI.2 (Comunhão dos Santos): a comunhão pactual significa que os membros do povo de Deus compartilham não apenas as bênçãos mas também as consequências — em certa medida — das transgressões uns dos outros. R.C. Sproul (Chosen by God): "A solidariedade pactual é tanto gloriosa quanto solene. Em Adão, todos morremos; em Cristo, todos viveremos. Em Acã, Israel foi derrotado — a aliança é sempre coletiva."
+§ Aplicação Familiar: Pais: a família é uma aliança — o pecado escondido de um membro afeta a atmosfera e a bênção de todos. Isso não é superstição; é teologia pactual. Criem uma cultura de confissão segura onde o pecado pode vir à luz antes que cause "derrota" coletiva. / Filhos: o pecado que você está escondendo não fica só com você — ele muda quem você é no relacionamento com todos ao redor. A confissão não é fraqueza; é a única saída que não deixa o pecado escondido no acampamento.
+
+II. A BUSCA QUE DEUS DIRIGE — O PECADO EXPOSTO PELA ALIANÇA — CENTRO ◉ (Js 7:10–21)
+§ Indicação Textual: Js 7:10-12 — "Levanta-te! Por que assim jazes com o teu rosto em terra? Israel pecou... transgrediu minha aliança... furtou, e também mentiu... não poderei mais estar com vós se não destruirdes o anátema do meio de vós." Js 7:20-21 — "E Acã respondeu a Josué e disse: Verdadeiramente tenho pecado... vi no despojo um manto babilônico formoso e duzentos siclos de prata... e os cobicei e os tomei."
+§ Exegese: O processo de eliminação (por tribo, família, casa) é teológico: Deus vai estreitando o círculo até que o responsável seja identificado. Acã confessa com detalhe: "vi... cobicei... tomei" — a sequência do pecado humano desde Gênesis 3 (Havá viu, apanhou, comeu). A descrição do que Acã tomou é reveladora: um "manto babilônico formoso" — beleza de Babilônia no coração de Israel; prata e ouro — riqueza do herem destinada ao tesouro de YHWH. Acã tomou o que pertencia a Deus e enterrou sob sua tenda — literalmente "escondeu o pecado no acampamento." A confissão de Acã chega tarde demais para evitar a consequência, mas cedo o suficiente para ser registro de que Deus sempre expõe.
+§ Teologia Reformada: A CFW XV.1-3 (Arrependimento): "não é suficiente que o homem se doa e confesse pecados em geral... mas é necessário que o pecado seja designado especificamente." Acã confessa especificamente: o manto, os duzentos siclos, o lingote de ouro. A confissão específica honra a santidade de Deus. Calvino (Inst. III.4.9): "A confissão específica humilha a carne e honra a Deus — o pecador que nomeia o pecado com precisão mostra que entendeu o que fez."
+§ Aplicação Familiar: Pais: a cultura de confissão na família começa com os pais confessando primeiro — especificamente, sem generalidades. "Errei quando falei assim com você" é mais formativo do que "peço desculpa por tudo." / Filhos: a sequência de Acã — "vi, cobicei, tomei" — é a anatomia de toda tentação. Quando você identifica o "vi" (o gatilho), você pode parar antes do "tomei". Converse com seus pais sobre isso.
+
+III. O VALE DE ACOR — LUGAR DE ANGÚSTIA QUE SE TORNA PORTA DE ESPERANÇA (A' — Js 7:24–26)
+§ Indicação Textual: Js 7:24-26 — "E Josué, e todo Israel com ele, tomou Acã... e seus filhos... e todas as suas ovelhas... e o subiram ao vale de Acor... e todos os israelitas o apedrejaram; e ergueram sobre ele um grande monte de pedras."
+§ Exegese: O vale de Acor (ʿēmeq ʿākôr) significa "vale da angústia/perturbação" — Acor sendo o nome que remete ao verbo ʿākar (perturbar, angustiar). O monte de pedras sobre Acã espelha o monte de pedras sobre o rei de Ai (8:29) — dois monumentos do juízo de Deus. O texto é perturbador: a família de Acã também morre. A discussão teológica é longa — a solidariedade familiar no pecado (os filhos provavelmente sabiam e foram cúmplices) é o princípio mais provável. O ponto final: Oséias 2:15 transforma o vale de Acor em "porta de esperança" — o lugar de maior angústia em Israel se torna, em Cristo, porta para a restauração. Deus escreve redenção sobre os lugares de maior vergonha.
+§ Teologia Reformada: A CFW XI.3 (Justificação): Cristo "foi feito pecado por nós" (2Co 5:21) — Ele foi ao vale de Acor em nosso lugar, recebendo o monte de pedras do juízo que merecíamos. Matthew Henry: "O vale de Acor é tipo do Calvário: o lugar onde o juízo cai sobre o pecado é o mesmo lugar onde a graça inaugura a porta de esperança para os que creem."
+§ Aplicação Familiar: Pais: os "vales de Acor" da história familiar — os lugares de vergonha, fracasso e punição — podem se tornar, em Cristo, portas de esperança que a família conta para as próximas gerações. A redenção não apaga a história; ela a transforma. / Avós: há um "vale de Acor" na história da família que você nunca contou porque é lugar de dor? Em Cristo, esse vale pode ser contado como porta de esperança — não como motivo de vergonha, mas como evidência de que Deus restaura.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+Acã é tipo do pecado humano que viola a aliança e traz morte coletiva. Cristo é o antítipo: onde Acã escondeu o pecado e morreu por ele, Cristo que não tinha pecado assumiu o herem (o "anátema") do pecado de todo o Seu povo e morreu por ele. Gl 3:13 — "Cristo nos resgatou da maldição da lei, fazendo-se ele próprio maldição em nosso lugar." O monte de pedras sobre Acã é tipo do sepulcro de Cristo — mas ao contrário de Acã, a pedra foi rolada no terceiro dia (Mt 28:2). O vale de Acor (Oséias 2:15) torna-se "porta de esperança" porque Cristo transformou o lugar do juízo em portal de ressurreição. A confissão de Acã chegou tarde demais para salvá-lo; a confissão do pecador que vem ao Calvário nunca chega tarde demais.
+
+DOUTRINA CENTRAL
+O pecado escondido no acampamento não fica privado — ele viola a aliança coletiva, paralisa a missão e traz consequências sobre os inocentes; mas Cristo assumiu o anátema de todo pecado confessado, e o vale de Acor torna-se, em Seu sangue, porta de esperança e restauração.
+
+APLICAÇÕES PARA A FAMÍLIA
+▸ Para os Pais: criem esta semana um momento de confissão em família — não para expor vergonhas, mas para criar cultura de transparência. Comecem confessando vocês próprios algo específico. A confissão dos pais abre a porta para a confissão dos filhos.
+▸ Para os Filhos: a sequência "vi, cobicei, tomei" começa com os olhos. Esta semana, pratique identificar o "vi" — o gatilho — antes que vire "tomei." Conte para um dos seus pais quando identificar um "vi" que está virando tentação.
+▸ Para Noivos: no casamento, o pecado escondido de um cônjuge afeta o outro de formas que nem sempre são visíveis imediatamente. Comprometam-se, antes de casar, à transparência — confissão mútua e regular, cultura de honestidade sem medo de rejeição.
+▸ Para o Casal: há algo "enterrado sob a tenda" — uma área de pecado, vício, dívida, segredo — que um de vocês sabe e o outro não? O custo de revelar é menor do que o custo de manter enterrado. A aliança do casamento suporta a confissão; não suporta o segredo.
+▸ Para os Avós: o vale de Acor da família pode se tornar porta de esperança quando narrado honestamente às gerações seguintes. Considere contar uma história de fracasso e restauração — não para expor, mas para mostrar que Deus escreve redenção sobre os lugares de vergonha.
+
+DINÂMICA FAMILIAR
+1. Leiam Js 7:1 e depois Js 7:5. "O leitor sabe o que Israel não sabe. O pecado de Acã causou a morte de 36 homens que provavelmente não sabiam de nada. Como o pecado escondido de um pode afetar os outros?" Discutam exemplos reais (sem expor ninguém).
+2. "Vi, cobicei, tomei" — identifiquem juntos as três etapas de uma tentação que cada membro enfrenta. Como podemos nos ajudar mutuamente a parar no 'vi'?
+3. A confissão de Acã foi específica: o manto, os duzentos siclos, o lingote. Pratiquem confissão específica: cada membro diz algo específico pelo qual pede desculpa a alguém da família esta semana.
+4. Oséias 2:15 — "darei o vale de Acor como porta de esperança." Que "vale de Acor" da família Deus pode transformar em porta de esperança? Orem especificamente por isso.
+5. Por que Deus não destruiu o pecado de Acã em silêncio? Por que expô-lo diante de todo Israel? O que a exposição pública revela sobre a santidade de Deus e a seriedade do pecado pactual?
+6. Orem juntos: confessem o pecado que a família sabe que existe (sem precisar nomear o de cada um), peçam perdão pela solidariedade pactual no pecado, e recebam a promessa de 1Jo 1:9.
+
+AUTORES REFORMADOS
+▸ R.C. Sproul (Chosen by God): "A história de Acã é espelho da doutrina do pecado original — um homem pecou e todos sofreram. Mas a boa notícia é que a mesma lógica opera em sentido inverso em Cristo: um homem obedeceu e todos os que estão Nele são justificados."
+▸ Joel Beeke (Parenting by God's Promises): "A família que cria cultura de confissão específica — onde o pecado pode vir à luz com segurança — está construindo o ambiente mais saudável para o crescimento espiritual dos filhos. O lar onde ninguém confessa é o lar onde o pecado se enterra."
+▸ Matthew Henry (Comentário): "O vale de Acor foi lugar de angústia; Oséias diz que Deus o tornará porta de esperança. Isso é evangelhos em miniatura: o lugar mais escuro da história da aliança é transformado por Deus em porta para o futuro. Que a família cristã aprenda a ler seus vales de Acor com os olhos de Oséias 2:15."
+
+CONCLUSÃO
+Família amada, há algo enterrado sob a tenda? Algo que ninguém sabe, que parece inofensivo porque está escondido, mas que está mudando a atmosfera da família de formas que vocês ainda não identificaram? O chamado de Josué 7 é: tragam à luz. Não porque a exposição seja fácil, mas porque o pecado escondido sempre custa mais do que o confessado. E para quem confessa — especificamente, humildemente, sem excusas — há uma promessa que Acã não aproveitou mas que você pode: "se confessarmos os nossos pecados, ele é fiel e justo para nos perdoar os pecados e nos purificar de toda injustiça" (1Jo 1:9). O vale de Acor não precisa ser o fim da história. Em Cristo, ele é porta de esperança. Amém.
+`;
+
+  if (d.dia === 264) return `PARA A FAMÍLIA · Josué 8:1–29
+
+TEMA: A Graça que Restaura a Batalha — A Família que Recomeça Depois da Queda
+
+---
+
+TÍTULO DO SERMÃO FAMILIAR
+Ai Capturada — A Família que Aprende que Deus Recomissiona Depois do Fracasso
+
+BIG IDEA PARA A FAMÍLIA
+Depois da vergonhosa derrota em Ai causada pelo pecado de Acã, Deus não abandona Israel — Ele recomissiona Josué com as mesmas palavras de encorajamento de Josué 1, porque a graça de Deus não é cancelada pelo fracasso confessado e corrigido.
+
+PERGUNTA PARA A FAMÍLIA
+Nossa família acredita que Deus recomissiona depois do fracasso? Ou tratamos as quedas como disqualificações permanentes? O que a segunda batalha de Ai nos ensina sobre a graça que restaura a missão?
+
+PALAVRA-CHAVE DE TRANSIÇÃO
+Vejamos as MARCAS da graça que restaura: a recomissão de Josué após a queda, a estratégia obediente que desta vez funciona e o rei de Ai que prefigura a vitória de Cristo sobre toda hostilidade.
+
+---
+
+MOVIMENTOS DO SERMÃO
+
+I. A RECOMISSÃO APÓS A QUEDA — AS MESMAS PALAVRAS DE JOSUÉ 1 (A — Js 8:1–2)
+§ Indicação Textual: Js 8:1-2 — "E o SENHOR disse a Josué: Não temas nem te aterres; toma contigo toda a gente de guerra, e levanta-te, sobe a Ai... Faze a Ai e ao seu rei como fizeste a Jericó e ao seu rei." Os mesmos verbos de encorajamento de Josué 1:6,9.
+§ Exegese: As palavras "não temas nem te aterres" (ʾal-tîrāʾ wĕʾal-tēḥāt) são eco direto de Josué 1:9 — a mesma recomissão que abriu o livro é repetida após o fracasso mais humilhante do livro. Deus não começa com "agora que vocês aprenderam a lição" ou "desta vez não errem" — Ele começa com encorajamento. A condição para a recomissão não foi desempenho melhorado, mas o pecado confessado e corrigido (Acã foi tratado no cap. 7). A promessa de darle Ai e seu rei repete a estrutura da promessa sobre Jericó — o fracasso não cancelou o programa divino, apenas o atrasou temporariamente.
+§ Teologia Reformada: A CFW XVII.1 (Perseverança dos Santos): "os que Deus aceitou em seu Amado... não podem cair totalmente nem definitivamente da graça." A recomissão de Josué 8 é narrativa da perseverança: o fracasso de Josué 7 não destruiu a relação pactual. R.C. Sproul (Grace Unknown): "A perseverança não significa ausência de quedas — significa que Deus recomissiona os que caíram depois que o pecado foi tratado. A queda não é o fim; é o capítulo antes da restauração."
+§ Aplicação Familiar: Pais: quando os filhos falham — no caráter, na fé, nos relacionamentos — o impulso paterno de Josué 8 não é punição perpétua, mas recomissão depois da correção. "Levanta-te, sobe a Ai" é a língua da graça que segue a disciplina. / Filhos: você acredita que Deus pode recomeçar com você depois de uma queda séria? Josué 8:1 foi dito ao mesmo Josué que chorou de vergonha no cap. 7. Deus não trocou de líder — Ele restaurou o mesmo.
+
+II. A ESTRATÉGIA OBEDIENTE — A EMBOSCADA QUE FUNCIONA — CENTRO ◉ (Js 8:3–22)
+§ Indicação Testual: Js 8:4-8 — "E Josué ordenou-lhes, dizendo: Vede, vós poreis emboscadas à cidade... quando nós sairmos contra eles, eles sairão atrás de nós... vós vos levantareis do lugar de emboscada e tomareis posse da cidade; o SENHOR vosso Deus a entregará na vossa mão."
+§ Exegese: A estratégia de Ai é radicalmente diferente da de Jericó: ali, marcha processional e clamor; aqui, emboscada e estratagema militar. Deus não repete a mesma estratégia — Ele adapta o método ao contexto, mas o princípio é o mesmo: obediência ao que Ele ordena. A emboscada funciona porque Josué executa com precisão o plano divino: trinta mil guerreiros à noite (8:3), cinco mil em posição de emboscada (8:12), o grupo principal como isca (8:5-6). A complexidade do plano contrasta com a simplicidade de Jericó — Deus usa tanto liturgia quanto tática, dependendo do que a situação requer.
+§ Teologia Reformada: A CFW V.2-3 (Providência): Deus governa "os acontecimentos mais livres" usando meios secundários. A emboscada de Josué é meio providencial — tática humana dentro do plano divino. Calvino (Inst. I.17.4): "Deus age através de meios — mas os meios não explicam o resultado. O resultado é da mão de Deus que governa os meios." Joel Beeke: "A família que busca sabedoria de Deus para cada situação específica — em vez de repetir a última estratégia que funcionou — está seguindo o modelo de Josué 8: obediência adaptada ao novo contexto."
+§ Aplicação Familiar: Pais: a estratégia que funcionou na criação do filho mais velho pode não funcionar no mais novo. A estratégia conjugal que superou a crise de cinco anos atrás pode não ser a que supera a de hoje. Busquem Deus para cada situação — Ele não repete estratégias mecanicamente. / Casal: há um desafio atual que vocês estão tentando resolver com a estratégia da "última batalha"? Perguntem ao Comandante qual é a estratégia para esta nova Ai.
+
+III. O REI DE AI NO MADEIRO — O JUÍZO QUE PREFIGURA CRISTO (A' — Js 8:23, 29)
+§ Indicação Textual: Js 8:23 — "E prenderam vivo o rei de Ai, e o trouxeram a Josué." Js 8:29 — "E ao rei de Ai pendurou numa árvore até à tarde; e logo após o pôr do sol, Josué mandou tirar seu cadáver da árvore e lançá-lo à porta da cidade, e ergueram sobre ele um grande monte de pedras."
+§ Exegese: O rei de Ai é pendurado "numa árvore" (ʿēts — madeiro/árvore) — cumprimento direto de Dt 21:22-23: "quando houver em alguém pecado cujo julgamento seja de morte... e o enforcares numa árvore... não deixarás o seu corpo pernoitar na árvore; mas certamente o enterrarás no mesmo dia." A derrubada ao pôr do sol cumpre o mandato de Dt 21 com precisão. Paulo cita Dt 21:23 em Gl 3:13 para explicar a morte de Cristo: "maldito todo aquele que é pendurado em madeiro." O rei de Ai é, assim, tipo de Cristo — mas de forma invertida: o rei de Ai foi pendurado como culpado merecedor de maldição; Cristo foi pendurado como inocente recebendo a maldição dos outros.
+§ Teologia Reformada: A CFW VIII.4 (Cristo o Mediador): Cristo "foi feito sob a lei, e cumpriu-a perfeitamente; padeceu as agonias mais horríveis em sua alma e as dores mais cruéis em seu corpo... e foi crucificado e morreu." A morte de Cristo cumpre e supera o tipo do rei de Ai: o pendurado que merecia a maldição é substituído pelo Inocente que a absorveu. Matthew Henry: "O rei de Ai no madeiro é a sombra; Cristo no Calvário é a substância. A sombra foi merecida; a substância foi voluntária e vicária."
+§ Aplicação Familiar: Pais: o tipo do rei de Ai no madeiro é oportunidade para ensinar a substitutividade da morte de Cristo. "Por que Deus tinha a lei de pendurar o criminoso numa árvore? Porque estava preparando o mundo para entender o que Seu Filho faria." / Filhos: o rei de Ai foi pendurado porque era culpado. Jesus foi pendurado sendo inocente — carregando a culpa dos que Ele amava. Isso é o evangelho: o Rei inocente no lugar dos rebeldes culpados.
+
+---
+
+EIXO REDENTOR (HISTÓRICO-REDENTIVO)
+A segunda batalha de Ai — após o fracasso de Josué 7 — é tipo da graça que restaura a missão depois da queda. Adão falhou na primeira batalha (Gênesis 3); Cristo, o segundo Adão, vence onde o primeiro falhou. A família de Deus falha constantemente — mas Cristo não é substituído como Josué não foi substituído após Acã. A recomissão de Josué 8:1 prefigura a restauração de Pedro em Jo 21:15-19 ("apascenta minhas ovelhas") — o mesmo Senhor que diz "não temas" a Josué diz "me amas?" a Pedro e os dois são recomissionados. O rei de Ai no madeiro aponta a Cristo em Gl 3:13 — o madeiro do juízo se torna o madeiro da graça. A estratégia da emboscada mostra que Deus é criativo em Sua soberania: cada batalha tem seu próprio plano, e o Comandante sempre tem um para esta situação específica da sua família.
+
+DOUTRINA CENTRAL
+Deus recomissiona o fracassado que confessou e corrigiu o pecado com as mesmas palavras de encorajamento do início da jornada — porque a perseverança dos santos não é ausência de queda, mas certeza de que o Senhor que começa a obra a completa.
+
+APLICAÇÕES PARA A FAMÍLIA
+▸ Para os Pais: qual é a "Ai" que vocês deixaram de atacar depois de um fracasso anterior? Esta semana, recebam a recomissão de Js 8:1 como palavras para vocês: "Não temas nem te aterres; levanta-te, sobe a Ai."
+▸ Para os Filhos: há algo que você desistiu de tentar porque falhou antes? Josué foi ao mesmo lugar que o havia derrotado. Deus não o transferiu para uma batalha mais fácil — Ele o recomissionou para a mesma. O fracasso não é disqualificação.
+▸ Para Noivos: o casamento terá suas "primeiras batalhas de Ai" — fracassos que envergonham. Decidam agora: quando isso acontecer, vão carregar sozinhos ou vão se apoiar mutuamente e buscar a recomissão de Deus juntos?
+▸ Para o Casal: há uma área do casamento onde vocês falharam e nunca mais tentaram? A graça de Josué 8 é para o casamento: "não temas nem te aterres; levanta-te, sobe à Ai do casamento de novo." Identifiquem a área e orem juntos pela recomissão.
+▸ Para os Avós: contem um fracasso sério — uma "primeira batalha de Ai" da vida de vocês — e como Deus os recomissionou. Essa história é o maior presente que podem dar aos netos que estão vivendo suas próprias derrotas.
+
+DINÂMICA FAMILIAR
+1. Leiam Js 8:1 e depois Js 1:9. "As palavras são quase idênticas. Por que Deus repetiu as mesmas palavras depois do fracasso?" O que isso revela sobre como Deus trata os que falharam e confessaram?
+2. A estratégia de Ai foi totalmente diferente de Jericó. "Deus não tem uma só estratégia para todas as batalhas. Como a família busca a estratégia de Deus para cada situação específica em vez de repetir a última que funcionou?"
+3. Trinta mil guerreiros foram enviados à noite — em segredo, sem saber se a emboscada funcionaria. "Qual é o 'madeiro de trinta mil' da família — o passo de obediência que parece arriscado mas Deus ordenou?" Orem juntos sobre isso.
+4. O rei de Ai foi pendurado numa árvore — cumprindo Dt 21:22-23. Leiam Gálatas 3:13. "Como Cristo transformou o 'pendurado na árvore' de símbolo de maldição em símbolo de graça?" Discutam com as crianças em nível adequado à idade.
+5. Josué ergueu um monte de pedras sobre o rei de Ai (8:29) — assim como sobre Acã (7:26). "Um monte marca o lugar do juízo; o outro, o do pecado de Israel. Que 'montes de pedras' a família precisa levantar — marcos de lugares onde Deus julgou e restaurou?"
+6. Orem de pé, com Js 8:1 como base: "Senhor, não temeremos nem nos aterraremos. Levanta-nos para a batalha que adiamos. Dá-nos a estratégia para esta Ai específica. Confiamos que a cidade está nas Tuas mãos."
+
+AUTORES REFORMADOS
+▸ R.C. Sproul (The Promises of God): "Josué 8:1 é evangelhos em miniatura: depois do fracasso, depois da vergonha, depois da correção, Deus diz: 'levanta-te.' Não 'tente de novo por conta própria' — mas 'levanta-te, eu entrego.' A recomissão é sempre iniciativa divina."
+▸ Joel Beeke (Parenting by God's Promises): "O pai que diz ao filho que falhou: 'levanta-te, eu estou contigo nesta Ai de novo' está refletindo a paternidade de Deus. A recomissão após a queda — não a punição perpétua — é o modelo divino de disciplina restauradora."
+▸ Matthew Henry (Comentário): "A segunda batalha de Ai foi mais difícil de planejar mas mais gloriosa de ganhar, porque era a batalha depois da humilhação. As vitórias que seguem as quedas honram mais a Deus do que as que nunca foram precedidas por fracasso — porque nestas, a graça aparece mais claramente."
+
+CONCLUSÃO
+Família amada, Ai derrotou Israel uma vez. Mas depois que o pecado foi tratado, Deus disse: "levanta-te, sobe de volta." A mesma Ai. O mesmo Josué. O mesmo Deus — com a mesma promessa: "a entrego na tua mão." O fracasso não encerrou a jornada. Não cancela o chamado. Não silencia a promessa. Em Cristo, toda "primeira batalha de Ai" — toda derrota causada por pecado confessado e corrigido — encontra uma recomissão: "não temas nem te aterres." Levanta-te, família. A Ai que te derrotou ainda está diante de ti. Desta vez, vai ao lugar certo, com a estratégia certa, sob o Comandante certo. A cidade foi entregue na tua mão antes de você subir o morro. Amém.
+`;
+
   return null;
 }
