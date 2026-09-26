@@ -65,7 +65,6 @@ function getSecaoPrincipal(pt: boolean) {
       cor: 'from-rose-950 via-pink-950 to-slate-950',
       accent: '#fb7185',
       path: '/biblioteca/resenhas',
-      badge: pt ? 'Em breve' : 'Coming soon',
     },
     {
       icon: Layers,

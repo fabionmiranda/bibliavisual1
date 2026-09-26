@@ -13,6 +13,9 @@ import EducacaoCristaAula2Page from './pages/EducacaoCristaAula2Page';
 import EducacaoCristaAula3Page from './pages/EducacaoCristaAula3Page';
 import LivroIsThereiningPage from './pages/LivroIsTheremeaningPage';
 import BibliotecaLivrosPage from './pages/BibliotecaLivrosPage';
+import BibliotecaResenhasPage from './pages/BibliotecaResenhasPage';
+import ResenhaGonzalezEraReformadoresPage from './pages/ResenhaGonzalezEraReformadoresPage';
+import ResenhaGonzalezLuteroPage from './pages/ResenhaGonzalezLuteroPage';
 import LivroPage from './pages/LivroPage';
 import DiagramasPage from './pages/DiagramasPage';
 import AdminPage from './pages/AdminPage';
@@ -91,7 +94,9 @@ export default function App() {
           <Route path="/biblioteca/artigos"           element={<BibliotecaPage />} />
           <Route path="/biblioteca/semana"            element={<BibliotecaPage />} />
           <Route path="/biblioteca/autores"           element={<BibliotecaPage />} />
-          <Route path="/biblioteca/resenhas"          element={<BibliotecaPage />} />
+          <Route path="/biblioteca/resenhas"          element={<BibliotecaResenhasPage />} />
+          <Route path="/biblioteca/resenhas/gonzalez-era-reformadores-cap1" element={<ResenhaGonzalezEraReformadoresPage />} />
+          <Route path="/biblioteca/resenhas/gonzalez-lutero-cap2"           element={<ResenhaGonzalezLuteroPage />} />
           <Route path="/biblioteca/guias"             element={<BibliotecaPage />} />
           <Route path="/biblioteca/area/:slug"        element={<BibliotecaPage />} />
           <Route path="/livraria" element={<LibrariaPage />} />
