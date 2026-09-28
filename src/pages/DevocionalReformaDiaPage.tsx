@@ -25,7 +25,7 @@ const TIPO_CONFIG = {
 export default function DevocionalReformaDiaPage() {
   const { dia: diaParam } = useParams<{ dia: string }>();
   const navigate = useNavigate();
-  const dia = Number(diaParam ?? '1');
+  const dia = Number((diaParam ?? '1').replace(/^dia-?/i, ''));
   const content = DIAS_CONTENT[dia];
   const semana = getSemana(dia);
   const accent = semana?.cor ?? ACCENT_DEFAULT;
