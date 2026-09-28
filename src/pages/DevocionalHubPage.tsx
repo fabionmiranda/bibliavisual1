@@ -63,8 +63,35 @@ function getDevocionais(pt: boolean) {
       destaqueLabel: pt ? 'Dias' : 'Days',
     },
     {
+      id: 'reforma',
+      num: '04',
+      icon: '⚡',
+      titulo: pt ? 'Devocional da Reforma Protestante' : 'Protestant Reformation Devotional',
+      subtitulo: pt ? '31 dias como você nunca viu antes' : '31 days like you have never seen before',
+      descricao: pt
+        ? 'Trinta e um dias percorrendo os homens, os momentos e as doutrinas que partiram a história da Igreja ao meio — da crise de Lutero no mosteiro à Dieta de Worms, dos cinco solas ao legado que ainda molda o mundo.'
+        : 'Thirty-one days through the men, moments, and doctrines that split church history in half — from Luther\'s crisis in the monastery to the Diet of Worms, from the five solas to the legacy that still shapes the world.',
+      cor: 'rgba(217,119,6,1)',
+      corRgb: '217,119,6',
+      path: '/devocional/reforma',
+      badge: pt ? '31 Dias · Série' : '31 Days · Series',
+      bullets: pt ? [
+        { icon: '⛪', texto: 'Wyclif, Hus, Lutero, Calvino, Knox' },
+        { icon: '📖', texto: 'Os cinco solas da Reforma' },
+        { icon: '🔥', texto: 'Mártires, debates e momentos decisivos' },
+        { icon: '⚡', texto: 'Worms — "Aqui estou, não posso fazer de outra forma"' },
+      ] : [
+        { icon: '⛪', texto: 'Wyclif, Hus, Luther, Calvin, Knox' },
+        { icon: '📖', texto: 'The five solas of the Reformation' },
+        { icon: '🔥', texto: 'Martyrs, debates and decisive moments' },
+        { icon: '⚡', texto: 'Worms — "Here I stand, I can do no other"' },
+      ],
+      destaque: '31',
+      destaqueLabel: pt ? 'Dias' : 'Days',
+    },
+    {
       id: 'confessional',
-      num: '03',
+      num: '05',
       icon: '📜',
       titulo: pt ? 'Devocional Confessional' : 'Confessional Devotional',
       subtitulo: pt ? 'Teologia histórica na Era Digital' : 'Historic theology in the Digital Age',
@@ -92,46 +119,50 @@ function getDevocionais(pt: boolean) {
   ];
 }
 
+// ─── Card premium ─────────────────────────────────────────────────────────────
 function CardDevocional({ dev, index, pt }: { dev: ReturnType<typeof getDevocionais>[0]; index: number; pt: boolean }) {
   const navigate = useNavigate();
   const [hover, setHover] = useState(false);
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 40 }}
+      initial={{ opacity: 0, y: 48 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: index * 0.13, duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ delay: index * 0.13, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       onHoverStart={() => setHover(true)}
       onHoverEnd={() => setHover(false)}
       onClick={() => navigate(dev.path)}
-      style={{ cursor: 'pointer', position: 'relative' }}
+      style={{ cursor: 'pointer', position: 'relative', height: '100%' }}
     >
+      {/* ambient glow */}
       <motion.div
         animate={{ opacity: hover ? 1 : 0 }}
         transition={{ duration: 0.4 }}
         style={{
-          position: 'absolute', inset: -2, borderRadius: 28, pointerEvents: 'none', zIndex: 0,
-          background: `radial-gradient(ellipse at 50% -10%, rgba(${dev.corRgb},0.22) 0%, transparent 65%)`,
-          filter: 'blur(1px)',
+          position: 'absolute', inset: -3, borderRadius: 30, pointerEvents: 'none', zIndex: 0,
+          background: `radial-gradient(ellipse at 50% -10%, rgba(${dev.corRgb},0.20) 0%, transparent 62%)`,
+          filter: 'blur(2px)',
         }}
       />
 
       <motion.div
         animate={{
-          borderColor: hover ? `rgba(${dev.corRgb},0.60)` : `rgba(${dev.corRgb},0.16)`,
-          background: hover ? `rgba(${dev.corRgb},0.07)` : `rgba(${dev.corRgb},0.02)`,
+          borderColor: hover ? `rgba(${dev.corRgb},0.58)` : `rgba(${dev.corRgb},0.15)`,
+          background: hover ? `rgba(${dev.corRgb},0.065)` : `rgba(${dev.corRgb},0.025)`,
         }}
         transition={{ duration: 0.25 }}
         style={{
           position: 'relative', zIndex: 1,
-          borderRadius: 26,
-          border: `1.5px solid rgba(${dev.corRgb},0.16)`,
-          padding: 'clamp(26px,3.5vw,38px)',
+          borderRadius: 28,
+          border: `1.5px solid rgba(${dev.corRgb},0.15)`,
+          padding: 'clamp(28px,3.5vw,40px)',
           display: 'flex', flexDirection: 'column', gap: 0,
           overflow: 'hidden',
           height: '100%',
+          boxSizing: 'border-box',
         }}
       >
+        {/* animated top border */}
         <motion.div
           animate={{ scaleX: hover ? 1 : 0, opacity: hover ? 1 : 0 }}
           transition={{ duration: 0.38 }}
@@ -142,61 +173,95 @@ function CardDevocional({ dev, index, pt }: { dev: ReturnType<typeof getDevocion
           }}
         />
 
-        <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: 28 }}>
-          <span style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.28em', color: `rgba(${dev.corRgb},0.38)` }}>
-            N.º {dev.num}
-          </span>
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 6 }}>
-            <motion.span
-              animate={{ background: hover ? `rgba(${dev.corRgb},0.18)` : `rgba(${dev.corRgb},0.08)` }}
-              transition={{ duration: 0.25 }}
-              style={{
-                fontSize: 10, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase',
-                color: dev.cor, padding: '4px 14px', borderRadius: 99,
-                border: `1px solid rgba(${dev.corRgb},0.25)`,
-              }}
-            >
-              {dev.badge}
-            </motion.span>
-          </div>
+        {/* decorative large number — far right background */}
+        <div style={{
+          position: 'absolute', top: -12, right: 16,
+          fontSize: 'clamp(80px,10vw,120px)', fontWeight: 900, lineHeight: 1,
+          color: `rgba(${dev.corRgb},0.055)`,
+          userSelect: 'none', pointerEvents: 'none',
+          letterSpacing: '-0.05em',
+        }}>
+          {dev.num}
         </div>
 
-        <div style={{ display: 'flex', alignItems: 'flex-end', gap: 16, marginBottom: 22 }}>
+        {/* ── Row 1: badge + num label ── */}
+        <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: 24 }}>
+          {/* prominent number left */}
+          <div style={{
+            fontSize: 'clamp(38px,5vw,56px)', fontWeight: 900, lineHeight: 1,
+            color: `rgba(${dev.corRgb},0.22)`,
+            letterSpacing: '-0.04em',
+            userSelect: 'none',
+          }}>
+            {dev.num}
+          </div>
+
+          {/* badge top right */}
+          <motion.span
+            animate={{ background: hover ? `rgba(${dev.corRgb},0.18)` : `rgba(${dev.corRgb},0.08)` }}
+            transition={{ duration: 0.25 }}
+            style={{
+              fontSize: 9, fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase',
+              color: dev.cor, padding: '5px 14px', borderRadius: 99,
+              border: `1px solid rgba(${dev.corRgb},0.25)`,
+              whiteSpace: 'nowrap',
+            }}
+          >
+            {dev.badge}
+          </motion.span>
+        </div>
+
+        {/* ── Row 2: icon + stat ── */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 20 }}>
           <motion.div
-            animate={{ scale: hover ? 1.10 : 1, y: hover ? -3 : 0 }}
+            animate={{ scale: hover ? 1.08 : 1, y: hover ? -2 : 0 }}
             transition={{ duration: 0.32, ease: [0.22, 1, 0.36, 1] }}
             style={{
-              width: 62, height: 62, borderRadius: 18, flexShrink: 0,
+              width: 56, height: 56, borderRadius: 16, flexShrink: 0,
               background: `rgba(${dev.corRgb},0.10)`,
-              border: `1.5px solid rgba(${dev.corRgb},0.24)`,
+              border: `1.5px solid rgba(${dev.corRgb},0.22)`,
               display: 'flex', alignItems: 'center', justifyContent: 'center',
-              fontSize: 28,
+              fontSize: 26,
             }}
           >
             {dev.icon}
           </motion.div>
+
+          {/* stat */}
           <div style={{ display: 'flex', flexDirection: 'column', lineHeight: 1 }}>
-            <span style={{ fontSize: 'clamp(26px,3.5vw,34px)', fontWeight: 900, color: `rgba(${dev.corRgb},0.55)`, letterSpacing: '-0.02em' }}>
+            <span style={{ fontSize: 'clamp(28px,3.8vw,40px)', fontWeight: 900, color: dev.cor, letterSpacing: '-0.03em', opacity: 0.85 }}>
               {dev.destaque}
             </span>
-            <span style={{ fontSize: 10, fontWeight: 700, color: `rgba(${dev.corRgb},0.45)`, letterSpacing: '0.12em', textTransform: 'uppercase' }}>
+            <span style={{ fontSize: 9, fontWeight: 800, color: `rgba(${dev.corRgb},0.50)`, letterSpacing: '0.16em', textTransform: 'uppercase', marginTop: 2 }}>
               {dev.destaqueLabel}
             </span>
           </div>
         </div>
 
-        <h2 style={{ fontSize: 'clamp(20px,2.6vw,26px)', fontWeight: 900, color: '#fff', margin: '0 0 6px', lineHeight: 1.15 }}>
+        {/* ── Title ── */}
+        <h2 style={{ fontSize: 'clamp(20px,2.6vw,24px)', fontWeight: 900, color: '#fff', margin: '0 0 6px', lineHeight: 1.18 }}>
           {dev.titulo}
         </h2>
-        <div style={{ fontSize: 13, fontWeight: 700, marginBottom: 16, color: `rgba(${dev.corRgb},0.75)` }}>
+
+        {/* ── Subtitle in accent ── */}
+        <div style={{ fontSize: 13, fontWeight: 700, marginBottom: 16, color: dev.cor, opacity: 0.82 }}>
           {dev.subtitulo}
         </div>
 
-        <p style={{ fontSize: 'clamp(13px,1.7vw,15px)', color: 'rgba(210,205,255,0.62)', lineHeight: 1.82, margin: '0 0 22px', flex: 1 }}>
+        {/* divider */}
+        <motion.div
+          animate={{ background: hover ? `rgba(${dev.corRgb},0.22)` : `rgba(${dev.corRgb},0.10)` }}
+          transition={{ duration: 0.25 }}
+          style={{ height: 1, marginBottom: 18 }}
+        />
+
+        {/* ── Description ── */}
+        <p style={{ fontSize: 15, color: 'rgba(210,205,255,0.60)', lineHeight: 1.88, margin: '0 0 22px', flex: 1 }}>
           {dev.descricao}
         </p>
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 8, marginBottom: 26 }}>
+        {/* ── Bullets ── */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 9, marginBottom: 28 }}>
           {dev.bullets.map((b, j) => (
             <motion.div
               key={j}
@@ -205,44 +270,97 @@ function CardDevocional({ dev, index, pt }: { dev: ReturnType<typeof getDevocion
               style={{ display: 'flex', alignItems: 'center', gap: 10 }}
             >
               <span style={{ fontSize: 14, flexShrink: 0 }}>{b.icon}</span>
-              <span style={{ fontSize: 13, color: 'rgba(210,205,255,0.75)', fontWeight: 500 }}>{b.texto}</span>
+              <span style={{ fontSize: 13, color: 'rgba(210,205,255,0.78)', fontWeight: 500 }}>{b.texto}</span>
             </motion.div>
           ))}
         </div>
 
-        <motion.div
-          animate={{ background: hover ? `rgba(${dev.corRgb},0.25)` : `rgba(${dev.corRgb},0.10)` }}
-          transition={{ duration: 0.25 }}
-          style={{ height: 1, marginBottom: 20 }}
-        />
-
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+        {/* ── CTA ── */}
+        <motion.button
+          animate={{
+            background: hover ? dev.cor : 'transparent',
+            borderColor: hover ? dev.cor : `rgba(${dev.corRgb},0.32)`,
+            color: hover ? '#05071a' : dev.cor,
+          }}
+          transition={{ duration: 0.22 }}
+          style={{
+            width: '100%',
+            border: `1.5px solid rgba(${dev.corRgb},0.32)`,
+            borderRadius: 12,
+            padding: '13px 20px',
+            display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+            cursor: 'pointer',
+            fontSize: 12, fontWeight: 900, letterSpacing: '0.12em', textTransform: 'uppercase',
+          }}
+        >
+          <span>{pt ? 'Acessar devocional' : 'Open devotional'}</span>
           <motion.span
-            animate={{ color: hover ? dev.cor : `rgba(${dev.corRgb},0.55)` }}
+            animate={{ x: hover ? 4 : 0 }}
             transition={{ duration: 0.22 }}
-            style={{ fontSize: 13, fontWeight: 900, letterSpacing: '0.10em', textTransform: 'uppercase' }}
-          >
-            {pt ? 'Acessar devocional' : 'Open devotional'}
-          </motion.span>
-          <motion.div
-            animate={{
-              x: hover ? 6 : 0,
-              opacity: hover ? 1 : 0.45,
-              background: hover ? `rgba(${dev.corRgb},0.18)` : `rgba(${dev.corRgb},0.08)`,
-            }}
-            transition={{ duration: 0.26, ease: [0.22, 1, 0.36, 1] }}
-            style={{
-              width: 38, height: 38, borderRadius: 10,
-              border: `1px solid rgba(${dev.corRgb},0.28)`,
-              display: 'flex', alignItems: 'center', justifyContent: 'center',
-              color: dev.cor, fontSize: 16, fontWeight: 900,
-            }}
+            style={{ fontSize: 16 }}
           >
             →
-          </motion.div>
-        </div>
+          </motion.span>
+        </motion.button>
       </motion.div>
     </motion.div>
+  );
+}
+
+// ─── Como funciona — 3 steps ──────────────────────────────────────────────────
+function ComoFunciona({ pt }: { pt: boolean }) {
+  const steps = pt ? [
+    { num: '1', titulo: 'Escolha seu devocional', texto: 'Cada devocional tem público, estrutura e ritmo próprios. Leia as descrições e escolha o que fala com sua estação de vida.' },
+    { num: '2', titulo: 'Siga a sequência', texto: 'Nenhum dia tem data fixa. Comece quando quiser — mas siga a ordem. O texto vai em sequência como foi escrito.' },
+    { num: '3', titulo: 'Transforme sua formação', texto: 'Cada dia é uma camada. Com o tempo, os temas, as conexões e a profundidade teológica moldam sua vida de dentro para fora.' },
+  ] : [
+    { num: '1', titulo: 'Choose your devotional', texto: 'Each devotional has its own audience, structure and rhythm. Read the descriptions and choose the one that speaks to your season.' },
+    { num: '2', titulo: 'Follow the sequence', texto: 'No day is tied to a date. Start whenever you want — but follow the order. The text runs in sequence as it was written.' },
+    { num: '3', titulo: 'Transform your formation', texto: 'Each day is a layer. Over time, the themes, connections and theological depth shape your life from the inside out.' },
+  ];
+
+  return (
+    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))', gap: 18 }}>
+      {steps.map((s, i) => (
+        <motion.div
+          key={i}
+          initial={{ opacity: 0, y: 14 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: i * 0.10 }}
+          style={{
+            borderRadius: 20,
+            border: '1px solid rgba(167,139,250,0.12)',
+            background: 'rgba(167,139,250,0.03)',
+            padding: 'clamp(22px,3vw,30px)',
+            position: 'relative',
+            overflow: 'hidden',
+          }}
+        >
+          {/* big step number background */}
+          <div style={{
+            position: 'absolute', top: -10, right: 14,
+            fontSize: 80, fontWeight: 900, lineHeight: 1,
+            color: 'rgba(167,139,250,0.07)',
+            userSelect: 'none', pointerEvents: 'none',
+          }}>
+            {s.num}
+          </div>
+          <div style={{
+            width: 36, height: 36, borderRadius: 10,
+            background: 'rgba(167,139,250,0.12)',
+            border: '1px solid rgba(167,139,250,0.25)',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            fontSize: 14, fontWeight: 900, color: 'rgba(167,139,250,1)',
+            marginBottom: 16,
+          }}>
+            {s.num}
+          </div>
+          <div style={{ fontSize: 15, fontWeight: 900, color: '#fff', marginBottom: 10, lineHeight: 1.3 }}>{s.titulo}</div>
+          <p style={{ margin: 0, fontSize: 13, color: 'rgba(200,200,255,0.52)', lineHeight: 1.82 }}>{s.texto}</p>
+        </motion.div>
+      ))}
+    </div>
   );
 }
 
@@ -381,7 +499,7 @@ export default function DevocionalHubPage() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-          style={{ marginBottom: 72, textAlign: 'center' }}
+          style={{ marginBottom: 56, textAlign: 'center' }}
         >
           <motion.div
             animate={{ rotate: [0, 6, -6, 0] }}
@@ -405,8 +523,8 @@ export default function DevocionalHubPage() {
 
           <p style={{ fontSize: 'clamp(14px,1.9vw,17px)', color: 'rgba(200,200,255,0.52)', lineHeight: 1.85, maxWidth: 580, margin: '0 auto 32px' }}>
             {pt
-              ? 'Três caminhos de formação espiritual — expositivo, familiar e confessional. Cada um tem estrutura, ritmo e público próprios. Você pode usar os três.'
-              : 'Three paths of spiritual formation — expository, family, and confessional. Each has its own structure, rhythm, and audience. You can use all three.'}
+              ? 'Caminhos de formação espiritual — expositivo, familiar e confessional. Cada um tem estrutura, ritmo e público próprios.'
+              : 'Paths of spiritual formation — expository, family, and confessional. Each has its own structure, rhythm, and audience.'}
           </p>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: 16, maxWidth: 280, margin: '0 auto' }}>
@@ -416,11 +534,29 @@ export default function DevocionalHubPage() {
           </div>
         </motion.div>
 
-        {/* ── Cards ── */}
+        {/* ── Como funciona ── 3 steps above cards */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          style={{ marginBottom: 52 }}
+        >
+          <div style={{ textAlign: 'center', marginBottom: 28 }}>
+            <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.34em', textTransform: 'uppercase', color: 'rgba(167,139,250,0.60)', marginBottom: 8 }}>
+              {pt ? 'Guia rápido' : 'Quick guide'}
+            </div>
+            <h2 style={{ fontSize: 'clamp(18px,2.6vw,24px)', fontWeight: 900, color: '#fff', margin: 0 }}>
+              {pt ? 'Como funciona' : 'How it works'}
+            </h2>
+          </div>
+          <ComoFunciona pt={pt} />
+        </motion.div>
+
+        {/* ── Cards grid 2 columns ── */}
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))',
-          gap: 22,
+          gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 440px), 1fr))',
+          gap: 24,
           marginBottom: 72,
           alignItems: 'stretch',
         }}>
@@ -478,7 +614,7 @@ export default function DevocionalHubPage() {
           </AnimatePresence>
         </motion.div>
 
-        {/* ── Como funciona ── */}
+        {/* ── Princípios ── */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
