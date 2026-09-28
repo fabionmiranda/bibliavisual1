@@ -22,6 +22,14 @@ const TIPO_CONFIG = {
   leitura:  { label: 'Leitura',            color: '#fbbf24', icon: BookOpen },
 };
 
+/* ── shared text styles ─────────────────────────────────────────────────── */
+const T = {
+  body:   { fontSize: 'clamp(16px,2.1vw,18px)', color: 'rgba(228,232,255,0.93)', lineHeight: 2.0 } as React.CSSProperties,
+  label:  { fontSize: 10, fontWeight: 900, letterSpacing: '0.32em', textTransform: 'uppercase' as const },
+  h2:     { margin: 0, fontSize: 'clamp(19px,2.8vw,24px)', fontWeight: 900, color: '#fff', lineHeight: 1.22 } as React.CSSProperties,
+  quote:  { margin: 0, fontSize: 'clamp(16px,2.3vw,20px)', fontWeight: 700, color: '#fff', lineHeight: 1.70, fontStyle: 'italic' } as React.CSSProperties,
+};
+
 export default function DevocionalReformaDiaPage() {
   const { dia: diaParam } = useParams<{ dia: string }>();
   const navigate = useNavigate();
@@ -37,8 +45,8 @@ export default function DevocionalReformaDiaPage() {
         <Navbar />
         <div style={{ maxWidth: 720, margin: '0 auto', padding: 'clamp(100px,12vw,140px) 24px 80px', textAlign: 'center' }}>
           <div style={{ fontSize: 64, marginBottom: 24, opacity: 0.3 }}>⚡</div>
-          <h2 style={{ fontSize: 28, fontWeight: 900, color: '#fff', marginBottom: 12 }}>Em breve</h2>
-          <p style={{ fontSize: 15, color: 'rgba(200,200,255,0.50)', lineHeight: 1.8, marginBottom: 32 }}>
+          <h2 style={{ fontSize: 30, fontWeight: 900, color: '#fff', marginBottom: 14 }}>Em breve</h2>
+          <p style={{ ...T.body, color: 'rgba(210,215,255,0.65)', marginBottom: 32, maxWidth: 420, margin: '0 auto 32px' }}>
             O conteúdo do Dia {dia} está sendo preparado e será publicado em breve.
           </p>
           <button
@@ -60,28 +68,28 @@ export default function DevocionalReformaDiaPage() {
   const nextHasContent = nextDia ? !!DIAS_CONTENT[nextDia] : false;
 
   return (
-    <div style={{ minHeight: '100vh', background: BG, color: 'rgba(255,255,255,0.92)' }}>
+    <div style={{ minHeight: '100vh', background: BG, color: '#e4e8ff' }}>
       <Navbar />
 
-      <div style={{ maxWidth: 760, margin: '0 auto', padding: 'clamp(84px,10vw,106px) clamp(16px,4vw,32px) 120px' }}>
+      <div style={{ maxWidth: 780, margin: '0 auto', padding: 'clamp(84px,10vw,106px) clamp(20px,4vw,36px) 120px' }}>
 
         {/* ── Breadcrumb ── */}
         <motion.div
           initial={{ opacity: 0, x: -10 }}
           animate={{ opacity: 1, x: 0 }}
-          style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 48, fontSize: 10, fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase', color: 'rgba(200,200,255,0.28)' }}
+          style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: 8, marginBottom: 48, fontSize: 10, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(200,205,255,0.38)' }}
         >
-          <span onClick={() => navigate('/devocional')} style={{ cursor: 'pointer' }}
+          <span onClick={() => navigate('/devocional')} style={{ cursor: 'pointer', transition: 'color 0.18s' }}
             onMouseEnter={e => (e.currentTarget.style.color = accent)}
-            onMouseLeave={e => (e.currentTarget.style.color = 'rgba(200,200,255,0.28)')}
+            onMouseLeave={e => (e.currentTarget.style.color = 'rgba(200,205,255,0.38)')}
           >Devocional</span>
           <span>›</span>
-          <span onClick={() => navigate('/devocional/reforma')} style={{ cursor: 'pointer' }}
+          <span onClick={() => navigate('/devocional/reforma')} style={{ cursor: 'pointer', transition: 'color 0.18s' }}
             onMouseEnter={e => (e.currentTarget.style.color = accent)}
-            onMouseLeave={e => (e.currentTarget.style.color = 'rgba(200,200,255,0.28)')}
+            onMouseLeave={e => (e.currentTarget.style.color = 'rgba(200,205,255,0.38)')}
           >Reforma Protestante</span>
           <span>›</span>
-          <span style={{ color: `rgba(${accentRgb},0.75)` }}>Dia {String(dia).padStart(2, '0')}</span>
+          <span style={{ color: `rgba(${accentRgb},0.85)` }}>Dia {String(dia).padStart(2, '0')}</span>
         </motion.div>
 
         {/* ── Hero do dia ── */}
@@ -91,37 +99,36 @@ export default function DevocionalReformaDiaPage() {
           transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
           style={{
             position: 'relative', borderRadius: 28, overflow: 'hidden',
-            marginBottom: 56, padding: 'clamp(32px,5vw,52px)',
-            background: `linear-gradient(135deg, #0d0500 0%, #080510 100%)`,
-            border: `1.5px solid rgba(${accentRgb},0.25)`,
+            marginBottom: 52, padding: 'clamp(32px,5vw,52px)',
+            background: `linear-gradient(135deg, #0e0600 0%, #080512 100%)`,
+            border: `1.5px solid rgba(${accentRgb},0.28)`,
           }}
         >
-          <div style={{ position: 'absolute', top: -50, right: -50, width: 240, height: 240, borderRadius: '50%', background: accent, filter: 'blur(70px)', opacity: 0.13, pointerEvents: 'none' }} />
+          <div style={{ position: 'absolute', top: -60, right: -60, width: 280, height: 280, borderRadius: '50%', background: accent, filter: 'blur(80px)', opacity: 0.14, pointerEvents: 'none' }} />
 
           <div style={{ position: 'relative' }}>
-            {/* semana badge + data */}
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 22 }}>
-              <span style={{ fontSize: 9, fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase', color: accent, background: `rgba(${accentRgb},0.12)`, border: `1px solid rgba(${accentRgb},0.25)`, padding: '5px 14px', borderRadius: 99 }}>
+            {/* badges */}
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 24 }}>
+              <span style={{ fontSize: 9, fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase', color: accent, background: `rgba(${accentRgb},0.14)`, border: `1px solid rgba(${accentRgb},0.28)`, padding: '6px 16px', borderRadius: 99 }}>
                 Semana {semana?.num} · {TITULOS_DIAS[dia]?.ref}
               </span>
-              <span style={{ fontSize: 9, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(200,200,255,0.40)', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)', padding: '5px 14px', borderRadius: 99 }}>
+              <span style={{ fontSize: 9, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(220,225,255,0.55)', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.10)', padding: '6px 16px', borderRadius: 99 }}>
                 {content.data}
               </span>
             </div>
 
-            {/* DIA número grande */}
-            <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.38em', textTransform: 'uppercase', color: `rgba(${accentRgb},0.55)`, marginBottom: 10 }}>
+            <div style={{ ...T.label, color: `rgba(${accentRgb},0.65)`, marginBottom: 12 }}>
               Dia {String(dia).padStart(2, '0')} de 31
             </div>
 
             <h1 style={{
-              fontSize: 'clamp(28px,5vw,48px)', fontWeight: 900, lineHeight: 1.1, margin: '0 0 10px',
-              background: `linear-gradient(135deg, #fff 30%, rgba(${accentRgb},0.85) 100%)`,
+              fontSize: 'clamp(30px,5.5vw,52px)', fontWeight: 900, lineHeight: 1.08, margin: '0 0 14px',
+              background: `linear-gradient(135deg, #fff 25%, rgba(${accentRgb},0.90) 100%)`,
               WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
             }}>
               {content.titulo}
             </h1>
-            <p style={{ fontSize: 16, color: `rgba(${accentRgb},0.72)`, fontWeight: 600, fontStyle: 'italic', margin: 0 }}>
+            <p style={{ fontSize: 17, color: `rgba(${accentRgb},0.88)`, fontWeight: 600, fontStyle: 'italic', margin: 0, lineHeight: 1.55 }}>
               {content.subtitulo}
             </p>
           </div>
@@ -133,41 +140,39 @@ export default function DevocionalReformaDiaPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.12 }}
           style={{
-            marginBottom: 52,
-            borderRadius: 20,
-            border: `1.5px solid rgba(${accentRgb},0.28)`,
-            background: `rgba(${accentRgb},0.07)`,
-            padding: 'clamp(24px,4vw,36px)',
-            position: 'relative',
-            overflow: 'hidden',
+            marginBottom: 56,
+            borderRadius: 22,
+            border: `1.5px solid rgba(${accentRgb},0.32)`,
+            background: `rgba(${accentRgb},0.08)`,
+            padding: 'clamp(26px,4vw,40px)',
+            position: 'relative', overflow: 'hidden',
           }}
         >
-          <div style={{ position: 'absolute', top: -20, right: -20, width: 120, height: 120, borderRadius: '50%', background: accent, filter: 'blur(40px)', opacity: 0.10, pointerEvents: 'none' }} />
+          <div style={{ position: 'absolute', top: -24, right: -24, width: 130, height: 130, borderRadius: '50%', background: accent, filter: 'blur(45px)', opacity: 0.12, pointerEvents: 'none' }} />
           <div style={{ position: 'relative' }}>
-            <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.32em', textTransform: 'uppercase', color: `rgba(${accentRgb},0.60)`, marginBottom: 16 }}>
+            <div style={{ ...T.label, color: `rgba(${accentRgb},0.75)`, marginBottom: 18 }}>
               Versículo do Dia
             </div>
             <blockquote style={{
-              margin: 0,
-              fontSize: 'clamp(18px,2.8vw,24px)',
+              margin: '0 0 16px',
+              fontSize: 'clamp(20px,3vw,26px)',
               fontWeight: 700,
-              lineHeight: 1.55,
+              lineHeight: 1.60,
               color: '#fff',
               fontStyle: 'italic',
-              borderLeft: `3px solid ${accent}`,
-              paddingLeft: 20,
-              marginBottom: 14,
+              borderLeft: `4px solid ${accent}`,
+              paddingLeft: 22,
             }}>
               "{content.versiculo}"
             </blockquote>
-            <p style={{ margin: 0, fontSize: 13, fontWeight: 800, color: `rgba(${accentRgb},0.70)`, letterSpacing: '0.08em' }}>
+            <p style={{ margin: 0, fontSize: 14, fontWeight: 800, color: `rgba(${accentRgb},0.85)`, letterSpacing: '0.10em' }}>
               {content.versiculoRef}
             </p>
           </div>
         </motion.div>
 
         {/* ── Seções de conteúdo ── */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 40 }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 52 }}>
           {content.secoes.map((secao, i) => {
             const cfg = TIPO_CONFIG[secao.tipo] ?? TIPO_CONFIG.contexto;
             const IconComp = cfg.icon;
@@ -179,24 +184,22 @@ export default function DevocionalReformaDiaPage() {
                 transition={{ delay: 0.18 + i * 0.10 }}
               >
                 {/* section header */}
-                <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 22 }}>
-                  <div style={{ width: 36, height: 36, borderRadius: 10, background: cfg.color + '18', border: `1px solid ${cfg.color}28`, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                    <IconComp size={16} color={cfg.color} strokeWidth={2} />
+                <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 26 }}>
+                  <div style={{ width: 42, height: 42, borderRadius: 13, background: cfg.color + '20', border: `1.5px solid ${cfg.color}38`, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                    <IconComp size={18} color={cfg.color} strokeWidth={2} />
                   </div>
                   <div>
-                    <div style={{ fontSize: 9, fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase', color: cfg.color + 'aa', marginBottom: 2 }}>
+                    <div style={{ ...T.label, color: cfg.color, marginBottom: 4 }}>
                       {cfg.label}
                     </div>
-                    <h2 style={{ margin: 0, fontSize: 'clamp(17px,2.6vw,22px)', fontWeight: 900, color: '#fff', lineHeight: 1.2 }}>
-                      {secao.titulo}
-                    </h2>
+                    <h2 style={T.h2}>{secao.titulo}</h2>
                   </div>
                 </div>
 
                 {/* paragraphs */}
-                <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
                   {secao.paragrafos.map((p, pi) => (
-                    <p key={pi} style={{ margin: 0, fontSize: 'clamp(15px,2vw,17px)', color: 'rgba(210,215,255,0.78)', lineHeight: 1.9 }}>
+                    <p key={pi} style={{ margin: 0, ...T.body }}>
                       {p}
                     </p>
                   ))}
@@ -205,18 +208,18 @@ export default function DevocionalReformaDiaPage() {
                 {/* pull quote */}
                 {secao.citacao && (
                   <div style={{
-                    marginTop: 28,
-                    borderRadius: 16,
-                    background: `linear-gradient(135deg, rgba(${accentRgb},0.07) 0%, rgba(${accentRgb},0.03) 100%)`,
-                    border: `1px solid rgba(${accentRgb},0.22)`,
-                    borderLeft: `4px solid ${accent}`,
-                    padding: '20px 24px',
+                    marginTop: 32,
+                    borderRadius: 18,
+                    background: `linear-gradient(135deg, rgba(${accentRgb},0.09) 0%, rgba(${accentRgb},0.04) 100%)`,
+                    border: `1px solid rgba(${accentRgb},0.25)`,
+                    borderLeft: `5px solid ${accent}`,
+                    padding: '24px 28px',
                   }}>
-                    <p style={{ margin: 0, fontSize: 'clamp(15px,2.2vw,18px)', fontWeight: 700, color: 'rgba(255,255,255,0.90)', lineHeight: 1.65, fontStyle: 'italic', marginBottom: secao.citacaoAutor ? 12 : 0 }}>
+                    <p style={{ ...T.quote, marginBottom: secao.citacaoAutor ? 14 : 0 }}>
                       "{secao.citacao}"
                     </p>
                     {secao.citacaoAutor && (
-                      <p style={{ margin: 0, fontSize: 12, fontWeight: 800, color: `rgba(${accentRgb},0.65)`, letterSpacing: '0.08em' }}>
+                      <p style={{ margin: 0, fontSize: 13, fontWeight: 800, color: `rgba(${accentRgb},0.80)`, letterSpacing: '0.10em' }}>
                         — {secao.citacaoAutor}
                       </p>
                     )}
@@ -225,7 +228,7 @@ export default function DevocionalReformaDiaPage() {
 
                 {/* divider */}
                 {i < content.secoes.length - 1 && (
-                  <div style={{ height: 1, background: `linear-gradient(90deg, transparent, rgba(${accentRgb},0.18), transparent)`, marginTop: 40 }} />
+                  <div style={{ height: 1, background: `linear-gradient(90deg, transparent, rgba(${accentRgb},0.22), transparent)`, marginTop: 48 }} />
                 )}
               </motion.div>
             );
@@ -237,31 +240,31 @@ export default function DevocionalReformaDiaPage() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.45 }}
-          style={{ marginTop: 56 }}
+          style={{ marginTop: 64 }}
         >
-          <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 28 }}>
-            <div style={{ width: 36, height: 36, borderRadius: 10, background: '#a78bfa18', border: '1px solid #a78bfa28', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <MessageCircle size={16} color="#a78bfa" strokeWidth={2} />
+          <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 30 }}>
+            <div style={{ width: 42, height: 42, borderRadius: 13, background: 'rgba(167,139,250,0.16)', border: '1.5px solid rgba(167,139,250,0.30)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <MessageCircle size={18} color="#a78bfa" strokeWidth={2} />
             </div>
             <div>
-              <div style={{ fontSize: 9, fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase', color: '#a78bfaaa', marginBottom: 2 }}>Reflexão</div>
-              <h2 style={{ margin: 0, fontSize: 'clamp(17px,2.6vw,22px)', fontWeight: 900, color: '#fff' }}>Para Refletir</h2>
+              <div style={{ ...T.label, color: '#a78bfa', marginBottom: 4 }}>Reflexão Pessoal</div>
+              <h2 style={T.h2}>Para Refletir</h2>
             </div>
           </div>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
             {content.perguntas.map((q, i) => (
               <div key={i} style={{
-                display: 'flex', gap: 16, alignItems: 'flex-start',
-                borderRadius: 16,
-                background: 'rgba(167,139,250,0.05)',
-                border: '1px solid rgba(167,139,250,0.14)',
-                padding: '18px 20px',
+                display: 'flex', gap: 18, alignItems: 'flex-start',
+                borderRadius: 18,
+                background: 'rgba(167,139,250,0.07)',
+                border: '1px solid rgba(167,139,250,0.20)',
+                padding: '22px 24px',
               }}>
-                <div style={{ width: 28, height: 28, borderRadius: 8, background: 'rgba(167,139,250,0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 12, fontWeight: 900, color: '#a78bfa', flexShrink: 0, marginTop: 1 }}>
+                <div style={{ width: 32, height: 32, borderRadius: 10, background: 'rgba(167,139,250,0.20)', border: '1px solid rgba(167,139,250,0.30)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 14, fontWeight: 900, color: '#c4b5fd', flexShrink: 0, marginTop: 2 }}>
                   {i + 1}
                 </div>
-                <p style={{ margin: 0, fontSize: 'clamp(14px,1.9vw,16px)', color: 'rgba(210,215,255,0.80)', lineHeight: 1.80 }}>
+                <p style={{ margin: 0, fontSize: 'clamp(15px,2vw,17px)', color: 'rgba(225,228,255,0.90)', lineHeight: 1.90 }}>
                   {q}
                 </p>
               </div>
@@ -275,26 +278,27 @@ export default function DevocionalReformaDiaPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.52 }}
           style={{
-            marginTop: 52,
-            borderRadius: 22,
-            background: 'linear-gradient(135deg, rgba(52,211,153,0.07) 0%, rgba(52,211,153,0.03) 100%)',
-            border: '1px solid rgba(52,211,153,0.20)',
-            padding: 'clamp(26px,4vw,40px)',
+            marginTop: 56,
+            borderRadius: 24,
+            background: 'linear-gradient(135deg, rgba(52,211,153,0.09) 0%, rgba(52,211,153,0.04) 100%)',
+            border: '1.5px solid rgba(52,211,153,0.25)',
+            padding: 'clamp(28px,4vw,44px)',
             position: 'relative', overflow: 'hidden',
           }}
         >
-          <div style={{ position: 'absolute', top: -30, right: -30, width: 140, height: 140, borderRadius: '50%', background: '#34d399', filter: 'blur(50px)', opacity: 0.07, pointerEvents: 'none' }} />
+          <div style={{ position: 'absolute', top: -40, right: -40, width: 160, height: 160, borderRadius: '50%', background: '#34d399', filter: 'blur(60px)', opacity: 0.09, pointerEvents: 'none' }} />
           <div style={{ position: 'relative' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 20 }}>
-              <div style={{ width: 34, height: 34, borderRadius: 10, background: 'rgba(52,211,153,0.14)', border: '1px solid rgba(52,211,153,0.25)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <Heart size={15} color="#34d399" strokeWidth={2} />
+            <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 24 }}>
+              <div style={{ width: 42, height: 42, borderRadius: 13, background: 'rgba(52,211,153,0.18)', border: '1.5px solid rgba(52,211,153,0.32)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <Heart size={18} color="#34d399" strokeWidth={2} />
               </div>
-              <div style={{ fontSize: 9, fontWeight: 900, letterSpacing: '0.30em', textTransform: 'uppercase', color: 'rgba(52,211,153,0.70)' }}>
-                Oração
+              <div>
+                <div style={{ ...T.label, color: 'rgba(52,211,153,0.80)', marginBottom: 4 }}>Oração do Dia</div>
+                <h2 style={{ ...T.h2, color: '#a7f3d0' }}>Oração</h2>
               </div>
             </div>
-            {content.oracao.split('\n\n').map((p, i) => (
-              <p key={i} style={{ margin: i < content.oracao.split('\n\n').length - 1 ? '0 0 16px' : 0, fontSize: 'clamp(15px,2vw,17px)', color: 'rgba(210,215,255,0.78)', lineHeight: 1.90, fontStyle: 'italic' }}>
+            {content.oracao.split('\n\n').map((p, i, arr) => (
+              <p key={i} style={{ margin: i < arr.length - 1 ? '0 0 18px' : 0, ...T.body, color: 'rgba(220,250,240,0.90)', fontStyle: 'italic' }}>
                 {p}
               </p>
             ))}
@@ -307,20 +311,20 @@ export default function DevocionalReformaDiaPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.58 }}
           style={{
-            marginTop: 40,
-            borderRadius: 16,
-            background: 'rgba(255,255,255,0.03)',
-            border: '1px solid rgba(255,255,255,0.08)',
-            padding: '20px 24px',
-            display: 'flex', alignItems: 'flex-start', gap: 14,
+            marginTop: 44,
+            borderRadius: 18,
+            background: 'rgba(251,191,36,0.05)',
+            border: '1px solid rgba(251,191,36,0.18)',
+            padding: '22px 28px',
+            display: 'flex', alignItems: 'flex-start', gap: 16,
           }}
         >
-          <BookMarked size={18} color="rgba(251,191,36,0.65)" strokeWidth={2} style={{ flexShrink: 0, marginTop: 2 }} />
+          <BookMarked size={20} color="rgba(251,191,36,0.80)" strokeWidth={2} style={{ flexShrink: 0, marginTop: 3 }} />
           <div>
-            <div style={{ fontSize: 9, fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase', color: 'rgba(251,191,36,0.55)', marginBottom: 8 }}>
+            <div style={{ ...T.label, color: 'rgba(251,191,36,0.75)', marginBottom: 10 }}>
               Leitura Complementar
             </div>
-            <p style={{ margin: 0, fontSize: 13, color: 'rgba(200,200,255,0.55)', lineHeight: 1.75 }}>
+            <p style={{ margin: 0, fontSize: 14, color: 'rgba(220,215,180,0.85)', lineHeight: 1.85 }}>
               {content.leituraComplementar}
             </p>
           </div>
@@ -331,25 +335,12 @@ export default function DevocionalReformaDiaPage() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.62 }}
-          style={{
-            marginTop: 64,
-            display: 'flex', gap: 14, justifyContent: 'space-between', flexWrap: 'wrap',
-          }}
+          style={{ marginTop: 72, display: 'flex', gap: 14, justifyContent: 'space-between', flexWrap: 'wrap' }}
         >
-          {/* prev */}
           <button
             onClick={() => prevDia && navigate(`/devocional/reforma/dia-${String(prevDia).padStart(2, '0')}`)}
             disabled={!prevDia}
-            style={{
-              display: 'flex', alignItems: 'center', gap: 8,
-              background: 'none', cursor: prevDia ? 'pointer' : 'default',
-              border: `1px solid rgba(${accentRgb},${prevDia ? '0.25' : '0.10'})`,
-              borderRadius: 99, padding: '10px 20px',
-              fontSize: 11, fontWeight: 900, letterSpacing: '0.12em', textTransform: 'uppercase',
-              color: prevDia ? accent : `rgba(${accentRgb},0.25)`,
-              opacity: prevDia ? 1 : 0.5,
-              transition: 'all 0.2s',
-            }}
+            style={{ display: 'flex', alignItems: 'center', gap: 8, background: 'none', cursor: prevDia ? 'pointer' : 'default', border: `1px solid rgba(${accentRgb},${prevDia ? '0.30' : '0.10'})`, borderRadius: 99, padding: '11px 22px', fontSize: 11, fontWeight: 900, letterSpacing: '0.12em', textTransform: 'uppercase', color: prevDia ? accent : `rgba(${accentRgb},0.25)`, opacity: prevDia ? 1 : 0.4, transition: 'all 0.2s' }}
             onMouseEnter={e => { if (prevDia) e.currentTarget.style.background = `rgba(${accentRgb},0.10)`; }}
             onMouseLeave={e => { e.currentTarget.style.background = 'none'; }}
           >
@@ -357,37 +348,19 @@ export default function DevocionalReformaDiaPage() {
             Dia {prevDia ? String(prevDia).padStart(2, '0') : '—'}
           </button>
 
-          {/* back to list */}
           <button
             onClick={() => navigate('/devocional/reforma')}
-            style={{
-              background: 'none', cursor: 'pointer',
-              border: '1px solid rgba(255,255,255,0.10)',
-              borderRadius: 99, padding: '10px 20px',
-              fontSize: 11, fontWeight: 900, letterSpacing: '0.12em', textTransform: 'uppercase',
-              color: 'rgba(255,255,255,0.40)',
-              transition: 'all 0.2s',
-            }}
-            onMouseEnter={e => { e.currentTarget.style.color = '#fff'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.25)'; }}
-            onMouseLeave={e => { e.currentTarget.style.color = 'rgba(255,255,255,0.40)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.10)'; }}
+            style={{ background: 'none', cursor: 'pointer', border: '1px solid rgba(255,255,255,0.14)', borderRadius: 99, padding: '11px 22px', fontSize: 11, fontWeight: 900, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgba(220,225,255,0.55)', transition: 'all 0.2s' }}
+            onMouseEnter={e => { e.currentTarget.style.color = '#fff'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.30)'; }}
+            onMouseLeave={e => { e.currentTarget.style.color = 'rgba(220,225,255,0.55)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.14)'; }}
           >
             ☰ Todos os Dias
           </button>
 
-          {/* next */}
           <button
             onClick={() => nextDia && navigate(`/devocional/reforma/dia-${String(nextDia).padStart(2, '0')}`)}
             disabled={!nextDia || !nextHasContent}
-            style={{
-              display: 'flex', alignItems: 'center', gap: 8,
-              background: 'none', cursor: (nextDia && nextHasContent) ? 'pointer' : 'default',
-              border: `1px solid rgba(${accentRgb},${(nextDia && nextHasContent) ? '0.25' : '0.10'})`,
-              borderRadius: 99, padding: '10px 20px',
-              fontSize: 11, fontWeight: 900, letterSpacing: '0.12em', textTransform: 'uppercase',
-              color: (nextDia && nextHasContent) ? accent : `rgba(${accentRgb},0.25)`,
-              opacity: (nextDia && nextHasContent) ? 1 : 0.5,
-              transition: 'all 0.2s',
-            }}
+            style={{ display: 'flex', alignItems: 'center', gap: 8, background: 'none', cursor: (nextDia && nextHasContent) ? 'pointer' : 'default', border: `1px solid rgba(${accentRgb},${(nextDia && nextHasContent) ? '0.30' : '0.10'})`, borderRadius: 99, padding: '11px 22px', fontSize: 11, fontWeight: 900, letterSpacing: '0.12em', textTransform: 'uppercase', color: (nextDia && nextHasContent) ? accent : `rgba(${accentRgb},0.25)`, opacity: (nextDia && nextHasContent) ? 1 : 0.4, transition: 'all 0.2s' }}
             onMouseEnter={e => { if (nextDia && nextHasContent) e.currentTarget.style.background = `rgba(${accentRgb},0.10)`; }}
             onMouseLeave={e => { e.currentTarget.style.background = 'none'; }}
           >
