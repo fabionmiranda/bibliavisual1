@@ -20,6 +20,62 @@ export interface DiaDevoContent {
 }
 
 const DIAS_CONTENT: Record<number, DiaDevoContent> = {
+  2: {
+    dia: 2,
+    data: '2 de outubro de 2026',
+    titulo: 'Isabel, a Católica: A Reforma Antes da Reforma',
+    subtitulo: 'Capítulo 1 — Parte 1',
+    versiculo: 'Mas Deus escolheu as coisas loucas do mundo para confundir as sábias; e Deus escolheu as coisas fracas do mundo para confundir as fortes.',
+    versiculoRef: '1 Coríntios 1.27',
+    secoes: [
+      {
+        tipo: 'contexto',
+        titulo: 'Antes de Lutero, Houve Isabel',
+        paragrafos: [
+          'Quando falamos em Reforma, o nome que vem imediatamente à mente é Martinho Lutero — o monge alemão que, em 1517, afixou suas 95 Teses na porta da Igreja do Castelo de Wittenberg. Mas Justo L. González nos desafia a recuar alguns anos. Antes de Lutero, houve Isabel.',
+          'Isabel de Castela — conhecida como "a Católica" — governou a Espanha na virada do século XV para o XVI. Ao lado de seu marido Fernando de Aragão, ela não apenas unificou politicamente a Espanha e patrocinou a viagem de Colombo (1492). Ela também empreendeu algo que a historiografia frequentemente ignora: uma profunda reforma do clero espanhol, décadas antes do protesto luterano.',
+          'A questão central para Isabel era simples e urgente: a Igreja espanhola estava corrompida. Bispos acumulavam cargos e riquezas sem pisar em suas dioceses. Conventos haviam perdido toda disciplina. O povo não tinha pastores; tinha administradores ausentes. Algo precisava mudar.',
+        ],
+      },
+      {
+        tipo: 'analise',
+        titulo: 'A Alavanca do Poder: Quem Nomeia, Reforma',
+        paragrafos: [
+          'Isabel entendeu algo que reformadores posteriores aprenderiam a duras penas: a chave da reforma institucional é o controle das nomeações. Enquanto Roma nomeava bispos por critérios políticos e financeiros, qualquer reforma seria superficial. Isabel negociou com o papado o chamado "direito de padroado" — a prerrogativa real de indicar bispos para a Espanha.',
+          'Com esse poder nas mãos, ela pôde nomear homens de caráter. O mais importante deles foi Francisco Ximénez de Cisneros — frade franciscano, humanista, homem de oração e disciplina rigorosa. Isabel o nomeou arcebispo de Toledo, a sé mais poderosa da Espanha.',
+          'Há um episódio notável: Cisneros se recusou a aceitar o cargo. Para ele, a vida de pobreza e retiro contemplativo era incompatível com a grandeza episcopal. Foi necessário que Roma emitisse uma bula papal ordenando-o a aceitar. Ele obedeceu — mas nunca abandonou o hábito franciscano, nem a simplicidade de vida, mesmo chefiando a Igreja mais rica da Espanha.',
+        ],
+        citacao: 'Esse paradoxo diz muito sobre a tensão que percorre todo este período: a reforma genuína de espírito lutando dentro de estruturas de poder institucional.',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'Cisneros e a Poliglota Complutense',
+        paragrafos: [
+          'Cisneros não era apenas um administrador. Era um humanista que compreendia que a renovação da Igreja passava pela renovação do conhecimento bíblico. Seu projeto mais ambicioso foi a Bíblia Poliglota Complutense — uma edição da Bíblia com o texto original em hebraico, aramaico, grego e latim, impressa em colunas paralelas para facilitar a comparação e o estudo.',
+          'Esse projeto, concluído em 1517 (o mesmo ano das 95 Teses), reuniu os melhores hebraístas e helenistas da Espanha. Era humanismo a serviço da teologia: voltar às fontes, ad fontes, para que a Igreja fosse reformada pela Palavra em sua forma mais fiel.',
+          'Erasmo de Roterdã, o grande humanista da época, tinha um projeto semelhante — sua edição crítica do Novo Testamento grego, publicada em 1516. Reformadores protestantes e católicos beberam da mesma fonte humanista. A divergência viria depois — e foi mais amarga exatamente porque começaram no mesmo lugar.',
+        ],
+        citacao: 'Reformadores protestantes e católicos beberam da mesma fonte humanista. A divergência viria depois — e foi mais amarga exatamente porque começaram no mesmo lugar.',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'O Nó Central de uma Teia Geopolítica',
+        paragrafos: [
+          'Isabel importa não apenas pela reforma que empreendeu, mas pela teia política que ela representa. Sua neta Joana teve um filho chamado Carlos — que se tornaria Carlos I de Espanha e Carlos V, imperador do Sacro Império Romano-Germânico. O mesmo homem que julgaria Lutero em Worms em 1521.',
+          'Sua filha Catarina de Aragão casou-se com Henrique VIII da Inglaterra — e o fracasso desse casamento desencadearia o cisma anglicano. Seu neto Felipe II herdaria a hegemonia espanhola e tentaria suprimir a Reforma nos Países Baixos.',
+        ],
+        citacao: 'Isabel não é um personagem isolado. Ela é o nó central de uma teia que conecta Lutero, Henrique VIII, Carlos V e Felipe II. Sem entender Isabel, não se entende o século XVI.',
+        citacaoAutor: 'Justo L. González',
+      },
+    ],
+    perguntas: [
+      'Isabel reformou a Igreja sem romper com ela. Cisneros reformou como bispo sem abrir mão da espiritualidade de frade. Que tensão entre instituição e autenticidade espiritual você reconhece na sua própria vida de fé ou contexto eclesial?',
+      'A chave da reforma de Isabel foi o controle das nomeações — quem ocupa os cargos de liderança determina a direção da instituição. Você concorda com essa leitura? Como isso se aplica às igrejas hoje?',
+      'González começa pela Espanha, não pela Alemanha. O que essa inversão de perspectiva revela sobre os pontos cegos que temos ao contar a história da nossa própria fé?',
+    ],
+    oracao: 'Senhor, obrigado pela lembrança de que Tu ages na história muito antes de percebermos. Antes de Lutero, havia Isabel. Antes da ruptura, havia reforma. Antes do escândalo público, havia o trabalho silencioso de homens e mulheres que buscavam um clero fiel e uma Igreja renovada.\n\nEnsina-nos a ter paciência com os processos lentos da renovação. E dá-nos sabedoria para identificar as alavancas certas — os pontos onde uma mudança genuína pode começar.\n\nAmém.',
+    leituraComplementar: 'González, Justo L. A Era dos Reformadores. São Paulo: Vida Nova, 1995. Capítulo 1: "Isabel, a Católica" (pp. 11–28).',
+  },
   1: {
     dia: 1,
     data: '1 de outubro de 2026',
