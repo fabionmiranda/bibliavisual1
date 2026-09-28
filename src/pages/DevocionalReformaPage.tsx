@@ -3,13 +3,14 @@ import { useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import DIAS_CONTENT from '../data/devocionalReformaContent';
 
 const ACCENT = 'rgba(217,119,6,1)';
 const ACCENT_RGB = '217,119,6';
 const BG = '#05071a';
 
 // Semanas seguindo os capítulos de González — A Era dos Reformadores
-const SEMANAS = [
+export const SEMANAS = [
   {
     num: 1,
     titulo: 'Contexto, Isabel e a Teologia de Lutero',
@@ -53,7 +54,7 @@ const SEMANAS = [
 ];
 
 // 31 dias conforme cronograma — A Era dos Reformadores (Outubro 2026)
-const TITULOS_DIAS: Record<number, { titulo: string; ref: string }> = {
+export const TITULOS_DIAS: Record<number, { titulo: string; ref: string }> = {
   1:  { titulo: 'O Século XVI e o Cenário que Tornou a Reforma Necessária',         ref: 'Introdução · Contexto Geral' },
   2:  { titulo: 'Isabel, a Católica: A Reforma Antes da Reforma',                   ref: 'Cap. 1 — Parte 1' },
   3:  { titulo: 'Cisneros e a Poliglota Complutense',                               ref: 'Cap. 1 — Parte 2' },
@@ -95,6 +96,8 @@ function DayCard({ dia, semana, si, di }: {
   di: number;
 }) {
   const [hover, setHover] = useState(false);
+  const navigate = useNavigate();
+  const hasContent = !!DIAS_CONTENT[dia];
 
   return (
     <motion.div
@@ -104,19 +107,20 @@ function DayCard({ dia, semana, si, di }: {
       transition={{ delay: si * 0.06 + di * 0.035 }}
       onHoverStart={() => setHover(true)}
       onHoverEnd={() => setHover(false)}
+      onClick={() => hasContent && navigate(`/devocional/reforma/dia-${String(dia).padStart(2, '0')}`)}
       style={{
         borderRadius: 16,
-        border: `1.5px solid rgba(${semana.corRgb},${hover ? 0.40 : 0.22})`,
-        background: `rgba(${semana.corRgb},${hover ? 0.09 : 0.06})`,
+        border: `1.5px solid rgba(${semana.corRgb},${hover ? 0.45 : 0.22})`,
+        background: `rgba(${semana.corRgb},${hover ? 0.10 : 0.06})`,
         padding: '18px 16px',
         display: 'flex', flexDirection: 'column', gap: 8,
-        cursor: 'default',
+        cursor: hasContent ? 'pointer' : 'default',
         position: 'relative',
         overflow: 'hidden',
         minHeight: 160,
         boxSizing: 'border-box',
-        transition: 'border-color 0.22s, background 0.22s',
-        transform: hover ? 'scale(1.02)' : 'scale(1)',
+        transition: 'border-color 0.22s, background 0.22s, transform 0.22s',
+        transform: (hover && hasContent) ? 'scale(1.02)' : 'scale(1)',
       }}
     >
       {/* animated top border */}
@@ -149,16 +153,28 @@ function DayCard({ dia, semana, si, di }: {
         {TITULOS_DIAS[dia].titulo}
       </div>
 
-      {/* em breve badge */}
-      <div style={{
-        marginTop: 6,
-        display: 'inline-flex', alignItems: 'center', gap: 5,
-        fontSize: 8, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase',
-        color: `rgba(${semana.corRgb},0.45)`,
-      }}>
-        <div style={{ width: 5, height: 5, borderRadius: '50%', background: `rgba(${semana.corRgb},0.30)` }} />
-        Em breve
-      </div>
+      {/* status badge */}
+      {hasContent ? (
+        <div style={{
+          marginTop: 6,
+          display: 'inline-flex', alignItems: 'center', gap: 5,
+          fontSize: 8, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase',
+          color: semana.cor,
+        }}>
+          <div style={{ width: 5, height: 5, borderRadius: '50%', background: semana.cor }} />
+          Ler devocional →
+        </div>
+      ) : (
+        <div style={{
+          marginTop: 6,
+          display: 'inline-flex', alignItems: 'center', gap: 5,
+          fontSize: 8, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase',
+          color: `rgba(${semana.corRgb},0.45)`,
+        }}>
+          <div style={{ width: 5, height: 5, borderRadius: '50%', background: `rgba(${semana.corRgb},0.30)` }} />
+          Em breve
+        </div>
+      )}
 
       {/* decorative background number */}
       <div style={{
