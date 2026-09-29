@@ -32,6 +32,8 @@ import DevocionalConfessionalPage from './pages/DevocionalConfessionalPage';
 import DevocionalFamiliarPage from './pages/DevocionalFamiliarPage';
 import DevocionalReformaPage from './pages/DevocionalReformaPage';
 import DevocionalReformaDiaPage from './pages/DevocionalReformaDiaPage';
+import BibliotecaAutoresPage from './pages/BibliotecaAutoresPage';
+import AutorMastrichtPage from './pages/AutorMastrichtPage';
 import PregacaoPage from './pages/PregacaoPage';
 import FamiliaPage, { EsbocosPage, NoivosHub, AulaInaugural, Aula02, CasadosPage } from './pages/FamiliaPage';
 import EducacaoPage from './pages/EducacaoPage';
@@ -96,6 +98,8 @@ export default function App() {
           <Route path="/biblioteca/artigos"           element={<BibliotecaPage />} />
           <Route path="/biblioteca/semana"            element={<BibliotecaPage />} />
           <Route path="/biblioteca/autores"           element={<BibliotecaPage />} />
+          <Route path="/biblioteca/autores" element={<BibliotecaAutoresPage />} />
+          <Route path="/biblioteca/autores/mastricht" element={<AutorMastrichtPage />} />
           <Route path="/biblioteca/resenhas"          element={<BibliotecaResenhasPage />} />
           <Route path="/biblioteca/resenhas/gonzalez-era-reformadores-cap1" element={<ResenhaGonzalezEraReformadoresPage />} />
           <Route path="/biblioteca/resenhas/gonzalez-lutero-cap2"           element={<ResenhaGonzalezLuteroPage />} />

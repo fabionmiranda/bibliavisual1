@@ -54,7 +54,7 @@ function getSecaoPrincipal(pt: boolean) {
       cor: 'from-teal-950 via-cyan-950 to-slate-950',
       accent: '#2dd4bf',
       path: '/biblioteca/autores',
-      badge: pt ? 'Em breve' : 'Coming soon',
+      badge: pt ? '1 perfil' : '1 profile',
     },
     {
       icon: BookOpen,
