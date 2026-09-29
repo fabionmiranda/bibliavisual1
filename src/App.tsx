@@ -97,7 +97,6 @@ export default function App() {
           <Route path="/biblioteca/livros/is-there-meaning"        element={<LivroIsThereiningPage />} />
           <Route path="/biblioteca/artigos"           element={<BibliotecaPage />} />
           <Route path="/biblioteca/semana"            element={<BibliotecaPage />} />
-          <Route path="/biblioteca/autores"           element={<BibliotecaPage />} />
           <Route path="/biblioteca/autores" element={<BibliotecaAutoresPage />} />
           <Route path="/biblioteca/autores/mastricht" element={<AutorMastrichtPage />} />
           <Route path="/biblioteca/resenhas"          element={<BibliotecaResenhasPage />} />
