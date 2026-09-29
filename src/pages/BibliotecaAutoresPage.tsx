@@ -25,6 +25,8 @@ function IconMastricht({ color }: { color: string }) {
   );
 }
 
+const FOTO_MASTRICHT = 'https://commons.wikimedia.org/wiki/Special:FilePath/Petrus_van_Mastricht.jpg';
+
 const AUTORES = [
   {
     slug: 'mastricht',
@@ -40,6 +42,7 @@ const AUTORES = [
     gradHero: 'linear-gradient(135deg, #001a18 0%, #00100e 50%, #05071a 100%)',
     gradOrb1: '#2dd4bf',
     gradOrb2: '#0ea5e9',
+    foto: FOTO_MASTRICHT,
     IconFigura: IconMastricht,
   },
 ];
@@ -92,31 +95,37 @@ export default function BibliotecaAutoresPage() {
                 >
                   <div className="grid grid-cols-1 sm:grid-cols-[200px_1fr]">
 
-                    {/* Painel visual esquerdo */}
+                    {/* Painel visual esquerdo — foto */}
                     <div
-                      className="relative flex flex-col items-center justify-center p-8 sm:p-0 min-h-[180px] sm:min-h-0 overflow-hidden"
-                      style={{ borderRight: '1px solid rgba(255,255,255,0.07)' }}
+                      className="relative overflow-hidden min-h-[220px] sm:min-h-0"
+                      style={{ borderRight: '1px solid rgba(255,255,255,0.07)', width: 'clamp(160px,22vw,220px)', flexShrink: 0 }}
                     >
-                      <div className="absolute inset-0 opacity-20 group-hover:opacity-35 transition-opacity duration-500"
-                        style={{ background: `radial-gradient(ellipse at center, ${a.gradOrb1} 0%, transparent 70%)` }} />
-                      <div className="absolute bottom-0 right-0 w-28 h-28 blur-3xl opacity-15"
-                        style={{ background: a.gradOrb2 }} />
+                      {/* overlay gradiente para fundir com o fundo */}
+                      <div className="absolute inset-0 z-10 pointer-events-none" style={{
+                        background: `linear-gradient(to right, transparent 60%, rgba(0,16,14,0.70) 100%), linear-gradient(to top, rgba(0,16,14,0.75) 0%, transparent 40%)`,
+                      }} />
+                      {/* glow accent no topo */}
+                      <div className="absolute inset-0 z-10 pointer-events-none opacity-20 group-hover:opacity-30 transition-opacity duration-500"
+                        style={{ background: `radial-gradient(ellipse at top center, ${a.gradOrb1} 0%, transparent 65%)` }} />
 
-                      {/* ícone */}
-                      <div className="relative z-10 w-18 h-18 mb-4" style={{ width: 72, height: 72 }}>
-                        <div className="absolute inset-0 rounded-2xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-300"
-                          style={{ background: a.accentColor }} />
-                        <div className="relative w-full h-full">
+                      {a.foto ? (
+                        <img
+                          src={a.foto}
+                          alt={`Retrato de ${a.nome}`}
+                          className="w-full h-full object-cover object-top block"
+                          style={{ minHeight: 220, filter: 'sepia(12%) contrast(1.06) brightness(0.90)' }}
+                          onError={e => { (e.currentTarget as HTMLImageElement).parentElement!.style.display = 'none'; }}
+                        />
+                      ) : (
+                        <div className="w-full h-full flex items-center justify-center" style={{ minHeight: 220 }}>
                           <a.IconFigura color={a.accentColor} />
                         </div>
-                      </div>
+                      )}
 
-                      {/* datas */}
-                      <div className="relative z-10 text-center">
-                        <div className="text-[8px] font-black uppercase tracking-[0.28em] mb-1.5"
-                          style={{ color: a.accentColor + '80' }}>Viveu</div>
-                        <div className="px-3 py-1.5 rounded-full border font-black text-[11px] tracking-widest"
-                          style={{ color: a.accentColor, background: a.accentColor + '18', borderColor: a.accentColor + '35' }}>
+                      {/* badge datas sobre a foto */}
+                      <div className="absolute bottom-3 left-0 right-0 z-20 flex justify-center">
+                        <div className="px-3 py-1.5 rounded-full font-black text-[10px] tracking-widest backdrop-blur-sm"
+                          style={{ color: a.accentColor, background: 'rgba(0,0,0,0.55)', border: `1px solid ${a.accentColor}40` }}>
                           {a.datas}
                         </div>
                       </div>
