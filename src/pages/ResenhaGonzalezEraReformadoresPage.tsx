@@ -192,11 +192,17 @@ export default function ResenhaGonzalezEraReformadoresPage() {
 
             <div className="relative p-8 sm:p-12 border border-white/10 rounded-3xl">
               {/* badges */}
-              <div className="flex flex-wrap items-center gap-2 mb-7">
+              <div className="flex flex-wrap items-center gap-3 mb-7">
+                {/* DIA 01 destacado */}
+                <div className="flex items-center gap-2 rounded-xl px-4 py-2"
+                  style={{ background: '#fb7185', boxShadow: '0 0 24px #fb718566' }}>
+                  <span style={{ fontSize: 18, fontWeight: 900, color: '#000', letterSpacing: '0.08em', lineHeight: 1 }}>DIA 01</span>
+                  <span style={{ fontSize: 10, fontWeight: 700, color: 'rgba(0,0,0,0.55)', letterSpacing: '0.06em' }}>de 31</span>
+                </div>
                 <span className="inline-flex items-center gap-1.5 text-[8px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full"
                   style={{ color: '#fb7185', background: '#fb718518', border: '1px solid #fb718530' }}>
                   <Library className="w-2.5 h-2.5" />
-                  Resenhas da Reforma Protestante · Parte 1
+                  Resenhas da Reforma Protestante
                 </span>
                 <span className="inline-flex items-center gap-1.5 text-[8px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full text-amber-400/80 bg-amber-400/10 border border-amber-400/20">
                   <Star className="w-2.5 h-2.5 fill-current" />
