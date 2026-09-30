@@ -203,26 +203,22 @@ export default function BibliotecaResenhasPage() {
                         </div>
                       </div>
 
-                      {/* badge Parte N */}
-                      <div
-                        className="relative z-10 flex flex-col items-center gap-1"
-                      >
-                        <span
-                          className="text-[8px] font-black uppercase tracking-[0.3em]"
-                          style={{ color: r.accentColor + '80' }}
-                        >
-                          Série
-                        </span>
+                      {/* número da resenha destacado */}
+                      <div className="relative z-10 flex flex-col items-center gap-2">
                         <div
-                          className="px-4 py-1.5 rounded-full border font-black text-[11px] uppercase tracking-widest"
-                          style={{
-                            color: r.accentColor,
-                            background: r.accentColor + '18',
-                            borderColor: r.accentColor + '35',
-                          }}
+                          className="flex items-center gap-2 rounded-xl font-black px-5 py-2"
+                          style={{ background: r.accentColor, boxShadow: `0 0 20px ${r.accentColor}55` }}
                         >
-                          Parte {r.parteRomano}
+                          <span style={{ fontSize: 22, fontWeight: 900, color: '#000', lineHeight: 1 }}>
+                            {String(r.parte).padStart(2, '0')}
+                          </span>
                         </div>
+                        <span
+                          className="text-[8px] font-black uppercase tracking-[0.24em]"
+                          style={{ color: r.accentColor + 'aa' }}
+                        >
+                          Resenha
+                        </span>
                       </div>
                     </div>
 
@@ -236,7 +232,7 @@ export default function BibliotecaResenhasPage() {
                             style={{ color: r.accentColor, background: r.accentColor + '15', border: `1px solid ${r.accentColor}28` }}
                           >
                             <Library className="w-2.5 h-2.5" />
-                            {r.serie}
+                            {r.area}
                           </span>
                           <span
                             className="inline-flex items-center gap-1.5 text-[8px] font-black uppercase tracking-widest px-2.5 py-1 rounded-full text-amber-400/80 bg-amber-400/10 border border-amber-400/20"
