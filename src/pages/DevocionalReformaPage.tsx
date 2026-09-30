@@ -153,26 +153,30 @@ function DayCard({ dia, semana, si, di }: {
 
       {/* DIA label */}
       {hasContent ? (
-        <div style={{
-          display: 'inline-flex', alignItems: 'baseline', gap: 5,
-          fontSize: 15, fontWeight: 900, letterSpacing: '0.10em',
-          color: semana.cor,
-        }}>
-          Dia {String(dia).padStart(2, '0')}
-          <span style={{ fontSize: 11, fontWeight: 700, color: `rgba(${semana.corRgb},0.65)`, letterSpacing: '0.06em' }}>
-            de 31
-          </span>
+        <div style={{ marginBottom: 2 }}>
+          <div style={{
+            display: 'inline-flex', alignItems: 'center', gap: 6,
+            background: semana.cor,
+            borderRadius: 8, padding: '4px 12px',
+          }}>
+            <span style={{ fontSize: 13, fontWeight: 900, color: '#000', letterSpacing: '0.12em' }}>
+              DIA {String(dia).padStart(2, '0')}
+            </span>
+            <span style={{ fontSize: 10, fontWeight: 700, color: 'rgba(0,0,0,0.60)', letterSpacing: '0.06em' }}>
+              de 31
+            </span>
+          </div>
         </div>
       ) : (
-        <div style={{ fontSize: 13, fontWeight: 900, color: `rgba(${semana.corRgb},0.55)`, letterSpacing: '0.14em' }}>
+        <div style={{ fontSize: 12, fontWeight: 900, color: `rgba(${semana.corRgb},0.45)`, letterSpacing: '0.14em' }}>
           DIA {String(dia).padStart(2, '0')}
         </div>
       )}
 
-      {/* ref — só mostra se não tem "Parte" ou se não tem conteúdo */}
+      {/* ref */}
       <div style={{
         fontSize: 10, fontWeight: 700,
-        color: hasContent ? `rgba(${semana.corRgb},0.75)` : `rgba(${semana.corRgb},0.42)`,
+        color: hasContent ? `rgba(${semana.corRgb},0.85)` : `rgba(${semana.corRgb},0.38)`,
         letterSpacing: '0.10em', textTransform: 'uppercase', lineHeight: 1.3,
       }}>
         {TITULOS_DIAS[dia].ref.replace(/ — Parte \d+/g, '').replace(/ · Parte \d+/g, '')}
