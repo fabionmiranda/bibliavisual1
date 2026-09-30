@@ -99,8 +99,8 @@ function DayCard({ dia, semana, si, di }: {
   const navigate = useNavigate();
   const hasContent = !!DIAS_CONTENT[dia];
 
-  const borderOpacity   = hasContent ? (hover ? 0.80 : 0.55) : (hover ? 0.35 : 0.18);
-  const bgOpacity       = hasContent ? (hover ? 0.18 : 0.12) : (hover ? 0.08 : 0.04);
+  const borderOpacity   = hasContent ? (hover ? 0.90 : 0.65) : (hover ? 0.32 : 0.16);
+  const bgOpacity       = hasContent ? (hover ? 0.22 : 0.14) : (hover ? 0.07 : 0.04);
 
   return (
     <motion.div
@@ -126,8 +126,8 @@ function DayCard({ dia, semana, si, di }: {
         transform: (hover && hasContent) ? 'scale(1.03)' : 'scale(1)',
         boxShadow: hasContent
           ? hover
-            ? `0 0 28px rgba(${semana.corRgb},0.30), 0 0 8px rgba(${semana.corRgb},0.15)`
-            : `0 0 16px rgba(${semana.corRgb},0.18)`
+            ? `0 0 36px rgba(${semana.corRgb},0.40), 0 0 12px rgba(${semana.corRgb},0.22), inset 0 0 24px rgba(${semana.corRgb},0.06)`
+            : `0 0 22px rgba(${semana.corRgb},0.26), inset 0 0 16px rgba(${semana.corRgb},0.04)`
           : 'none',
       }}
     >
@@ -152,22 +152,30 @@ function DayCard({ dia, semana, si, di }: {
       )}
 
       {/* DIA label */}
-      <div style={{
-        fontSize: hasContent ? 14 : 13,
-        fontWeight: 900,
-        color: hasContent ? semana.cor : `rgba(${semana.corRgb},0.75)`,
-        letterSpacing: '0.14em',
-      }}>
-        DIA {String(dia).padStart(2, '0')}
-      </div>
+      {hasContent ? (
+        <div style={{
+          display: 'inline-flex', alignItems: 'baseline', gap: 5,
+          fontSize: 15, fontWeight: 900, letterSpacing: '0.10em',
+          color: semana.cor,
+        }}>
+          Dia {String(dia).padStart(2, '0')}
+          <span style={{ fontSize: 11, fontWeight: 700, color: `rgba(${semana.corRgb},0.65)`, letterSpacing: '0.06em' }}>
+            de 31
+          </span>
+        </div>
+      ) : (
+        <div style={{ fontSize: 13, fontWeight: 900, color: `rgba(${semana.corRgb},0.55)`, letterSpacing: '0.14em' }}>
+          DIA {String(dia).padStart(2, '0')}
+        </div>
+      )}
 
-      {/* ref */}
+      {/* ref — só mostra se não tem "Parte" ou se não tem conteúdo */}
       <div style={{
         fontSize: 10, fontWeight: 700,
-        color: hasContent ? `rgba(${semana.corRgb},0.80)` : `rgba(${semana.corRgb},0.50)`,
+        color: hasContent ? `rgba(${semana.corRgb},0.75)` : `rgba(${semana.corRgb},0.42)`,
         letterSpacing: '0.10em', textTransform: 'uppercase', lineHeight: 1.3,
       }}>
-        {TITULOS_DIAS[dia].ref}
+        {TITULOS_DIAS[dia].ref.replace(/ — Parte \d+/g, '').replace(/ · Parte \d+/g, '')}
       </div>
 
       {/* title — main focus */}
