@@ -186,6 +186,14 @@ export default function ResenhaGonzalezLuteroPage() {
             className="relative rounded-3xl overflow-hidden mb-12"
             style={{ background: 'linear-gradient(135deg, #140800 0%, #100c00 40%, #0d0818 100%)' }}
           >
+            {/* foto de fundo — Martinho Lutero por Cranach */}
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Martin_Luther_by_Cranach-restoration.jpg"
+              alt="Martinho Lutero"
+              className="absolute inset-0 w-full h-full object-cover object-top pointer-events-none"
+              style={{ opacity: 0.13, filter: 'sepia(40%) contrast(0.9) brightness(0.7)', mixBlendMode: 'luminosity' }}
+              onError={e => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }}
+            />
             <div className="absolute -top-20 -right-20 w-80 h-80 rounded-full blur-3xl opacity-20" style={{ background: '#f97316' }} />
             <div className="absolute -bottom-16 -left-10 w-60 h-60 rounded-full blur-3xl opacity-10" style={{ background: '#a855f7' }} />
             <div className="absolute top-1/3 right-1/3 w-40 h-40 rounded-full blur-3xl opacity-8" style={{ background: '#fbbf24' }} />

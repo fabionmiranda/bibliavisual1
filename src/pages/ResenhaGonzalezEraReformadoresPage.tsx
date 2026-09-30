@@ -185,6 +185,14 @@ export default function ResenhaGonzalezEraReformadoresPage() {
             className="relative rounded-3xl overflow-hidden mb-12"
             style={{ background: 'linear-gradient(135deg, #1a0010 0%, #180010 40%, #0d0818 100%)' }}
           >
+            {/* foto de fundo — Isabel, a Católica */}
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Isabel_la_Cat%C3%B3lica-2.jpg"
+              alt="Isabel, a Católica"
+              className="absolute inset-0 w-full h-full object-cover object-top pointer-events-none"
+              style={{ opacity: 0.13, filter: 'sepia(40%) contrast(0.9) brightness(0.7)', mixBlendMode: 'luminosity' }}
+              onError={e => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }}
+            />
             {/* glows decorativos */}
             <div className="absolute -top-20 -right-20 w-80 h-80 rounded-full blur-3xl opacity-20" style={{ background: '#fb7185' }} />
             <div className="absolute -bottom-20 -left-10 w-60 h-60 rounded-full blur-3xl opacity-10" style={{ background: '#a855f7' }} />
