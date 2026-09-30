@@ -9,6 +9,42 @@ const ACCENT = 'rgba(217,119,6,1)';
 const ACCENT_RGB = '217,119,6';
 const BG = '#05071a';
 
+// Imagens temáticas por dia — retratos e cenas históricas (domínio público, Wikimedia Commons)
+const WC = 'https://commons.wikimedia.org/wiki/Special:FilePath/';
+const IMAGENS_DIAS: Record<number, string> = {
+  1:  WC + 'Lucas_Cranach_d.%C3%84._-_Martin_Luther,_1528_(Veste_Coburg).jpg',   // Lutero jovem — contexto séc. XVI
+  2:  WC + 'Isabel_la_Cat%C3%B3lica-2.jpg',                                       // Isabel, a Católica
+  3:  WC + 'Cardenal_cisneros.jpg',                                               // Cisneros
+  4:  WC + 'Martin_Luther_by_Cranach-restoration.jpg',                            // Lutero — angústia
+  5:  WC + 'Martin_Luther,_1529.jpg',                                             // Lutero — 95 Teses / Worms
+  6:  WC + 'Lucas_Cranach_-_Portrait_of_Martin_Luther,_circa_1530.jpg',           // Teologia da Cruz
+  7:  WC + 'Lucas_Cranach_-_Portrait_of_Martin_Luther,_circa_1530.jpg',           // Lei e Evangelho
+  8:  WC + 'Martin_Luther_by_Cranach-restoration.jpg',                            // Reflexão / Reforma
+  9:  WC + 'Lucas_Cranach_d.%C3%84._-_Martin_Luther,_1528_(Veste_Coburg).jpg',   // Wartburgo
+  10: WC + 'Martin_Luther,_1529.jpg',                                             // Radicais de Wittenberg
+  11: WC + 'Ulrich_Zwingli_by_Hans_Asper_1531.jpg',                              // Zuínglio
+  12: WC + 'Ulrich_Zwingli_by_Hans_Asper_1531.jpg',                              // Colóquio de Marburgo
+  13: WC + 'Ulrich-Zwingli-1.jpg',                                                // Anabatistas
+  14: WC + 'Ulrich-Zwingli-1.jpg',                                                // Batismo
+  15: WC + 'Portrait_john_calvin.jpg',                                            // Calvino — Institutas
+  16: WC + 'Portrait_john_calvin.jpg',                                            // Calvino — Genebra
+  17: WC + 'Portrait_john_calvin.jpg',                                            // Calvino — soberania
+  18: WC + 'Isabel_la_Cat%C3%B3lica-2.jpg',                                      // Henrique VIII (reutiliza)
+  19: WC + 'Martin_Luther_by_Cranach-restoration.jpg',                            // Cranmer / Anglicana
+  20: WC + 'Portrait_john_calvin.jpg',                                            // Knox — Escócia
+  21: WC + 'Lucas_Cranach_-_Portrait_of_Martin_Luther,_circa_1530.jpg',           // Guerra de Esmalcalda
+  22: WC + 'Martin_Luther,_1529.jpg',                                             // Paz de Augsburgo
+  23: WC + 'Ulrich_Zwingli_by_Hans_Asper_1531.jpg',                              // Países Baixos
+  24: WC + 'Ulrich_Zwingli_by_Hans_Asper_1531.jpg',                              // Guilherme de Orange
+  25: WC + 'Portrait_john_calvin.jpg',                                            // Huguenotes
+  26: WC + 'Martin_Luther_by_Cranach-restoration.jpg',                            // Massacre S. Bartolomeu
+  27: WC + 'Cardenal_cisneros.jpg',                                               // Reforma Católica
+  28: WC + 'Cardenal_cisneros.jpg',                                               // Teresa de Ávila / Jesuítas
+  29: WC + 'Isabel_la_Cat%C3%B3lica-2.jpg',                                      // Paradoxo Espanhol
+  30: WC + 'Isabel_la_Cat%C3%B3lica-2.jpg',                                      // Casiodoro de Reina
+  31: WC + 'Lucas_Cranach_d.%C3%84._-_Martin_Luther,_1528_(Veste_Coburg).jpg',   // Síntese Final
+};
+
 // Semanas seguindo os capítulos de González — A Era dos Reformadores
 export const SEMANAS = [
   {
@@ -98,6 +134,7 @@ function DayCard({ dia, semana, si, di }: {
   const [hover, setHover] = useState(false);
   const navigate = useNavigate();
   const hasContent = !!DIAS_CONTENT[dia];
+  const imgUrl = IMAGENS_DIAS[dia];
 
   const borderOpacity   = hasContent ? (hover ? 0.90 : 0.65) : (hover ? 0.32 : 0.16);
   const bgOpacity       = hasContent ? (hover ? 0.22 : 0.14) : (hover ? 0.07 : 0.04);
@@ -131,6 +168,25 @@ function DayCard({ dia, semana, si, di }: {
           : 'none',
       }}
     >
+      {/* foto de fundo temática */}
+      {imgUrl && (
+        <img
+          src={imgUrl}
+          alt=""
+          aria-hidden="true"
+          style={{
+            position: 'absolute', inset: 0, width: '100%', height: '100%',
+            objectFit: 'cover', objectPosition: 'center top',
+            opacity: hover ? 0.18 : 0.10,
+            filter: 'sepia(35%) contrast(0.85) brightness(0.55)',
+            mixBlendMode: 'luminosity',
+            transition: 'opacity 0.35s',
+            pointerEvents: 'none',
+          }}
+          onError={e => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }}
+        />
+      )}
+
       {/* top bar — sempre visível nos dias com conteúdo */}
       <div style={{
         position: 'absolute', top: 0, left: 0, right: 0, height: hasContent ? 3 : 2,
