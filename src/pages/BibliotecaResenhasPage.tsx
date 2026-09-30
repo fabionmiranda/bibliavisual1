@@ -4,45 +4,9 @@ import { ArrowLeft, ChevronRight, Star, Library, BookOpen } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
-// ── Ícone SVG: coroa (Isabel) ─────────────────────────────────────────────────
-function IconCoroa({ color }: { color: string }) {
-  return (
-    <svg viewBox="0 0 64 64" fill="none" className="w-full h-full">
-      <path
-        d="M8 48 L12 24 L24 36 L32 12 L40 36 L52 24 L56 48 Z"
-        stroke={color} strokeWidth="2.5" strokeLinejoin="round"
-        fill={color + '18'}
-      />
-      <circle cx="12" cy="22" r="3" fill={color} opacity="0.7" />
-      <circle cx="32" cy="10" r="4" fill={color} opacity="0.9" />
-      <circle cx="52" cy="22" r="3" fill={color} opacity="0.7" />
-      <rect x="8" y="48" width="48" height="5" rx="2.5" fill={color} opacity="0.5" />
-    </svg>
-  );
-}
-
-// ── Ícone SVG: chama + martelo (Lutero) ──────────────────────────────────────
-function IconChama({ color }: { color: string }) {
-  return (
-    <svg viewBox="0 0 64 64" fill="none" className="w-full h-full">
-      {/* chama */}
-      <path
-        d="M32 52 C18 52 12 40 14 30 C16 20 22 18 22 18 C20 26 26 28 26 28 C24 20 30 10 32 8 C34 10 36 16 34 22 C38 16 40 20 40 28 C44 24 44 18 42 14 C48 18 52 26 50 36 C48 46 42 52 32 52 Z"
-        stroke={color} strokeWidth="2" strokeLinejoin="round"
-        fill={color + '22'}
-      />
-      <circle cx="32" cy="38" r="5" fill={color} opacity="0.5" />
-      {/* tese / pergaminho */}
-      <rect x="20" y="44" width="24" height="3" rx="1.5" fill={color} opacity="0.4" />
-      <rect x="24" y="49" width="16" height="2" rx="1" fill={color} opacity="0.25" />
-    </svg>
-  );
-}
-
 const RESENHAS = [
   {
     slug: 'gonzalez-era-reformadores-cap1',
-    parteRomano: 'I',
     titulo: 'A Era dos Reformadores',
     tituloDestaque: 'Isabel, a Católica',
     subtitulo: 'A Reforma Antes da Reforma',
@@ -51,20 +15,18 @@ const RESENHAS = [
     editora: 'Vida Nova',
     referencia: 'Vol. 6 · Cap. I · p. 19–41',
     area: 'História da Igreja',
-    serie: 'Resenhas da Reforma Protestante',
     parte: 1,
     categorias: ['Reforma Protestante', 'História Medieval', 'Igreja e Estado'],
     sinopse:
       'González escolhe começar a história da Reforma pela Espanha de Isabel I — demonstrando que a Reforma do século XVI foi gestada num cenário cujas raízes antecedem Lutero em décadas.',
     accentColor: '#fb7185',
+    accentRgb: '251,113,133',
     gradHero: 'linear-gradient(135deg, #1a0010 0%, #180010 50%, #0d0818 100%)',
-    gradOrb1: '#fb7185',
-    gradOrb2: '#a855f7',
-    IconFigura: IconCoroa,
+    foto: 'https://commons.wikimedia.org/wiki/Special:FilePath/Isabel_la_Cat%C3%B3lica-2.jpg',
+    fotoCredito: 'Isabel I de Castela · séc. XV · domínio público',
   },
   {
     slug: 'gonzalez-lutero-cap2',
-    parteRomano: 'II',
     titulo: 'Martinho Lutero',
     tituloDestaque: 'A Peregrinação que Mudou o Mundo',
     subtitulo: 'A Crise que Gerou uma Época',
@@ -73,16 +35,15 @@ const RESENHAS = [
     editora: 'Vida Nova',
     referencia: 'Vol. 6 · Cap. II · p. 43–63',
     area: 'História da Igreja',
-    serie: 'Resenhas da Reforma Protestante',
     parte: 2,
     categorias: ['Reforma Protestante', 'Lutero', 'Justificação pela Fé'],
     sinopse:
       'Lutero não planejou a Reforma. González apresenta um homem em crise existencial profunda cuja descoberta de Rm 1:17 — e a coragem de não recuar em Worms — gerou a maior ruptura da história cristã ocidental.',
     accentColor: '#f97316',
+    accentRgb: '249,115,22',
     gradHero: 'linear-gradient(135deg, #140800 0%, #100c00 50%, #0d0818 100%)',
-    gradOrb1: '#f97316',
-    gradOrb2: '#fbbf24',
-    IconFigura: IconChama,
+    foto: 'https://commons.wikimedia.org/wiki/Special:FilePath/Martin_Luther_by_Cranach-restoration.jpg',
+    fotoCredito: 'Martinho Lutero · Lucas Cranach · 1529 · domínio público',
   },
 ];
 
@@ -159,118 +120,107 @@ export default function BibliotecaResenhasPage() {
               >
                 <Link
                   to={`/biblioteca/resenhas/${r.slug}`}
-                  className="group block rounded-3xl overflow-hidden border border-white/10 hover:border-white/25 hover:shadow-2xl hover:scale-[1.008] active:scale-[0.998] transition-all duration-300"
-                  style={{ background: r.gradHero }}
+                  className="group block rounded-3xl overflow-hidden border border-white/10 hover:border-white/30 hover:shadow-2xl hover:scale-[1.008] active:scale-[0.998] transition-all duration-300"
+                  style={{ background: r.gradHero, position: 'relative' }}
                 >
-                  <div className="grid grid-cols-1 sm:grid-cols-[220px_1fr]">
-
-                    {/* ── Painel visual esquerdo ─────────────────────────────── */}
-                    <div
-                      className="relative flex flex-col items-center justify-center p-8 sm:p-0 min-h-[200px] sm:min-h-0 overflow-hidden"
-                      style={{ borderRight: '1px solid rgba(255,255,255,0.07)' }}
-                    >
-                      {/* glow de fundo */}
-                      <div
-                        className="absolute inset-0 opacity-20 group-hover:opacity-35 transition-opacity duration-500"
-                        style={{ background: `radial-gradient(ellipse at center, ${r.gradOrb1} 0%, transparent 70%)` }}
-                      />
-                      <div
-                        className="absolute bottom-0 right-0 w-32 h-32 blur-3xl opacity-15"
-                        style={{ background: r.gradOrb2 }}
-                      />
-
-                      {/* número romano grande decorativo */}
-                      <div
-                        className="absolute top-4 left-0 right-0 text-center font-black leading-none select-none pointer-events-none"
+                  {/* ── Foto de fundo do personagem ── */}
+                  {r.foto && (
+                    <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden rounded-3xl">
+                      <img
+                        src={r.foto}
+                        alt={r.tituloDestaque}
+                        className="absolute top-0 right-0 h-full object-cover object-top"
                         style={{
-                          fontSize: '120px',
-                          color: r.accentColor,
-                          opacity: 0.06,
-                          letterSpacing: '-0.05em',
+                          width: 'clamp(160px, 35%, 320px)',
+                          filter: 'sepia(30%) contrast(0.85) brightness(0.55)',
+                          maskImage: 'linear-gradient(to left, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.3) 60%, transparent 100%)',
+                          WebkitMaskImage: 'linear-gradient(to left, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.3) 60%, transparent 100%)',
                         }}
-                      >
-                        {r.parteRomano}
-                      </div>
+                        onError={e => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }}
+                      />
+                      {/* overlay gradiente para legibilidade */}
+                      <div className="absolute inset-0"
+                        style={{ background: `linear-gradient(to right, ${r.gradHero.match(/#\w+/)?.[0] ?? '#000'} 30%, rgba(0,0,0,0) 80%)` }} />
+                    </div>
+                  )}
 
-                      {/* ícone SVG temático */}
-                      <div className="relative z-10 w-20 h-20 mb-4">
-                        <div
-                          className="absolute inset-0 rounded-2xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-300"
-                          style={{ background: r.accentColor }}
-                        />
-                        <div className="relative w-full h-full">
-                          <r.IconFigura color={r.accentColor} />
-                        </div>
-                      </div>
+                  {/* ── Conteúdo ── */}
+                  <div className="relative z-10 flex flex-col sm:flex-row gap-0">
 
-                      {/* número da resenha destacado */}
-                      <div className="relative z-10 flex flex-col items-center gap-2">
+                    {/* Coluna esquerda: badge Dia + ícone */}
+                    <div
+                      className="flex sm:flex-col items-center justify-start sm:justify-center gap-4 sm:gap-3 px-6 pt-6 pb-2 sm:py-8 sm:px-6"
+                      style={{ minWidth: 'clamp(100px,18vw,160px)', flexShrink: 0, borderRight: '1px solid rgba(255,255,255,0.07)' }}
+                    >
+                      {/* badge DIA XX */}
+                      <div className="flex flex-col items-center gap-1">
                         <div
-                          className="flex items-center gap-2 rounded-xl font-black px-5 py-2"
-                          style={{ background: r.accentColor, boxShadow: `0 0 20px ${r.accentColor}55` }}
+                          className="rounded-xl px-4 py-2 flex items-center gap-2"
+                          style={{ background: r.accentColor, boxShadow: `0 0 22px ${r.accentColor}55` }}
                         >
-                          <span style={{ fontSize: 22, fontWeight: 900, color: '#000', lineHeight: 1 }}>
-                            {String(r.parte).padStart(2, '0')}
+                          <span style={{ fontSize: 20, fontWeight: 900, color: '#000', letterSpacing: '0.06em', lineHeight: 1 }}>
+                            DIA {String(r.parte).padStart(2, '0')}
                           </span>
                         </div>
-                        <span
-                          className="text-[8px] font-black uppercase tracking-[0.24em]"
-                          style={{ color: r.accentColor + 'aa' }}
-                        >
-                          Resenha
-                        </span>
+                        <span className="text-[8px] font-black uppercase tracking-[0.22em]"
+                          style={{ color: r.accentColor + 'aa' }}>de 31</span>
                       </div>
+
+                      {/* crédito foto — só desktop */}
+                      {r.foto && (
+                        <span className="hidden sm:block text-[7px] font-bold text-center leading-relaxed"
+                          style={{ color: 'rgba(255,255,255,0.22)', maxWidth: 100 }}>
+                          {r.fotoCredito}
+                        </span>
+                      )}
                     </div>
 
-                    {/* ── Conteúdo direito ───────────────────────────────────── */}
-                    <div className="flex flex-col justify-between p-6 sm:p-8 gap-5">
+                    {/* Coluna direita: conteúdo */}
+                    <div className="flex flex-col justify-between p-6 sm:p-8 gap-4 flex-1">
                       <div>
                         {/* badges topo */}
                         <div className="flex flex-wrap items-center gap-2 mb-4">
                           <span
                             className="inline-flex items-center gap-1.5 text-[8px] font-black uppercase tracking-widest px-2.5 py-1 rounded-full"
-                            style={{ color: r.accentColor, background: r.accentColor + '15', border: `1px solid ${r.accentColor}28` }}
+                            style={{ color: r.accentColor, background: r.accentColor + '18', border: `1px solid ${r.accentColor}30` }}
                           >
                             <Library className="w-2.5 h-2.5" />
                             {r.area}
                           </span>
-                          <span
-                            className="inline-flex items-center gap-1.5 text-[8px] font-black uppercase tracking-widest px-2.5 py-1 rounded-full text-amber-400/80 bg-amber-400/10 border border-amber-400/20"
-                          >
+                          <span className="inline-flex items-center gap-1.5 text-[8px] font-black uppercase tracking-widest px-2.5 py-1 rounded-full text-amber-400/80 bg-amber-400/10 border border-amber-400/20">
                             <Star className="w-2.5 h-2.5 fill-current" />
                             Destaque
                           </span>
                         </div>
 
                         {/* título */}
-                        <p className="text-[10px] font-black tracking-[0.3em] uppercase mb-1" style={{ color: r.accentColor + 'aa' }}>
-                          {r.titulo}
-                        </p>
+                        <p className="text-[10px] font-black tracking-[0.3em] uppercase mb-1"
+                          style={{ color: r.accentColor + 'aa' }}>{r.titulo}</p>
                         <h2 className="font-display font-black text-xl sm:text-2xl text-white leading-tight mb-1">
                           {r.tituloDestaque}
                         </h2>
-                        <p className="text-white/55 text-xs italic mb-4">{r.subtitulo}</p>
+                        <p className="text-white/60 text-xs italic mb-4">{r.subtitulo}</p>
 
                         {/* meta */}
                         <div className="flex flex-wrap gap-2 mb-4">
                           {[r.autor, r.editora, r.referencia].map(m => (
-                            <span key={m} className="px-3 py-1 rounded-lg text-[10px] font-bold text-white/65 bg-white/5 border border-white/8">
+                            <span key={m} className="px-3 py-1 rounded-lg text-[10px] font-bold text-white/70 bg-white/6 border border-white/10">
                               {m}
                             </span>
                           ))}
                         </div>
 
                         {/* sinopse */}
-                        <p className="text-white/75 text-sm leading-relaxed line-clamp-3">
+                        <p className="text-white/78 text-sm leading-relaxed line-clamp-3">
                           {r.sinopse}
                         </p>
                       </div>
 
-                      {/* rodapé do card */}
-                      <div className="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-white/6">
+                      {/* rodapé */}
+                      <div className="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-white/8">
                         <div className="flex flex-wrap gap-1.5">
                           {r.categorias.map(c => (
-                            <span key={c} className="px-2.5 py-1 rounded-full text-[8px] font-black uppercase tracking-widest text-white/55 border border-white/8">
+                            <span key={c} className="px-2.5 py-1 rounded-full text-[8px] font-black uppercase tracking-widest text-white/50 border border-white/10">
                               {c}
                             </span>
                           ))}
