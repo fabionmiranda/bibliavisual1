@@ -99,6 +99,9 @@ function DayCard({ dia, semana, si, di }: {
   const navigate = useNavigate();
   const hasContent = !!DIAS_CONTENT[dia];
 
+  const borderOpacity   = hasContent ? (hover ? 0.80 : 0.55) : (hover ? 0.35 : 0.18);
+  const bgOpacity       = hasContent ? (hover ? 0.18 : 0.12) : (hover ? 0.08 : 0.04);
+
   return (
     <motion.div
       key={dia}
@@ -110,8 +113,8 @@ function DayCard({ dia, semana, si, di }: {
       onClick={() => hasContent && navigate(`/devocional/reforma/dia-${String(dia).padStart(2, '0')}`)}
       style={{
         borderRadius: 16,
-        border: `1.5px solid rgba(${semana.corRgb},${hover ? 0.45 : 0.22})`,
-        background: `rgba(${semana.corRgb},${hover ? 0.10 : 0.06})`,
+        border: `${hasContent ? '2px' : '1.5px'} solid rgba(${semana.corRgb},${borderOpacity})`,
+        background: `rgba(${semana.corRgb},${bgOpacity})`,
         padding: '18px 16px',
         display: 'flex', flexDirection: 'column', gap: 8,
         cursor: hasContent ? 'pointer' : 'default',
@@ -119,26 +122,49 @@ function DayCard({ dia, semana, si, di }: {
         overflow: 'hidden',
         minHeight: 160,
         boxSizing: 'border-box',
-        transition: 'border-color 0.22s, background 0.22s, transform 0.22s',
-        transform: (hover && hasContent) ? 'scale(1.02)' : 'scale(1)',
+        transition: 'border-color 0.22s, background 0.22s, transform 0.22s, box-shadow 0.22s',
+        transform: (hover && hasContent) ? 'scale(1.03)' : 'scale(1)',
+        boxShadow: hasContent
+          ? hover
+            ? `0 0 28px rgba(${semana.corRgb},0.30), 0 0 8px rgba(${semana.corRgb},0.15)`
+            : `0 0 16px rgba(${semana.corRgb},0.18)`
+          : 'none',
       }}
     >
-      {/* animated top border */}
+      {/* top bar — sempre visível nos dias com conteúdo */}
       <div style={{
-        position: 'absolute', top: 0, left: 0, right: 0, height: 2,
-        background: `linear-gradient(90deg, transparent, ${semana.cor}, transparent)`,
-        opacity: hover ? 1 : 0,
+        position: 'absolute', top: 0, left: 0, right: 0, height: hasContent ? 3 : 2,
+        background: hasContent
+          ? `linear-gradient(90deg, rgba(${semana.corRgb},0.4), ${semana.cor}, rgba(${semana.corRgb},0.4))`
+          : `linear-gradient(90deg, transparent, ${semana.cor}, transparent)`,
+        opacity: hasContent ? 1 : (hover ? 1 : 0),
         transition: 'opacity 0.3s',
       }} />
 
+      {/* glow interno nos dias com conteúdo */}
+      {hasContent && (
+        <div style={{
+          position: 'absolute', top: -20, right: -20, width: 100, height: 100,
+          borderRadius: '50%', background: semana.cor,
+          filter: 'blur(35px)', opacity: hover ? 0.20 : 0.10,
+          pointerEvents: 'none', transition: 'opacity 0.3s',
+        }} />
+      )}
+
       {/* DIA label */}
-      <div style={{ fontSize: 13, fontWeight: 900, color: semana.cor, letterSpacing: '0.14em' }}>
+      <div style={{
+        fontSize: hasContent ? 14 : 13,
+        fontWeight: 900,
+        color: hasContent ? semana.cor : `rgba(${semana.corRgb},0.75)`,
+        letterSpacing: '0.14em',
+      }}>
         DIA {String(dia).padStart(2, '0')}
       </div>
 
       {/* ref */}
       <div style={{
-        fontSize: 10, fontWeight: 700, color: `rgba(${semana.corRgb},0.60)`,
+        fontSize: 10, fontWeight: 700,
+        color: hasContent ? `rgba(${semana.corRgb},0.80)` : `rgba(${semana.corRgb},0.50)`,
         letterSpacing: '0.10em', textTransform: 'uppercase', lineHeight: 1.3,
       }}>
         {TITULOS_DIAS[dia].ref}
@@ -146,7 +172,9 @@ function DayCard({ dia, semana, si, di }: {
 
       {/* title — main focus */}
       <div style={{
-        fontSize: 15, fontWeight: 700, color: hover ? '#fff' : 'rgba(255,255,255,0.78)',
+        fontSize: hasContent ? 15 : 14,
+        fontWeight: hasContent ? 800 : 600,
+        color: hasContent ? (hover ? '#fff' : 'rgba(255,255,255,0.95)') : (hover ? 'rgba(255,255,255,0.65)' : 'rgba(255,255,255,0.45)'),
         lineHeight: 1.5, flex: 1,
         transition: 'color 0.22s',
       }}>
@@ -157,9 +185,13 @@ function DayCard({ dia, semana, si, di }: {
       {hasContent ? (
         <div style={{
           marginTop: 6,
-          display: 'inline-flex', alignItems: 'center', gap: 5,
-          fontSize: 8, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase',
+          display: 'inline-flex', alignItems: 'center', gap: 6,
+          fontSize: 9, fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase',
           color: semana.cor,
+          background: `rgba(${semana.corRgb},0.14)`,
+          border: `1px solid rgba(${semana.corRgb},0.30)`,
+          borderRadius: 99, padding: '4px 10px',
+          alignSelf: 'flex-start',
         }}>
           <div style={{ width: 5, height: 5, borderRadius: '50%', background: semana.cor }} />
           Ler devocional →
@@ -169,9 +201,9 @@ function DayCard({ dia, semana, si, di }: {
           marginTop: 6,
           display: 'inline-flex', alignItems: 'center', gap: 5,
           fontSize: 8, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase',
-          color: `rgba(${semana.corRgb},0.45)`,
+          color: `rgba(${semana.corRgb},0.35)`,
         }}>
-          <div style={{ width: 5, height: 5, borderRadius: '50%', background: `rgba(${semana.corRgb},0.30)` }} />
+          <div style={{ width: 5, height: 5, borderRadius: '50%', background: `rgba(${semana.corRgb},0.22)` }} />
           Em breve
         </div>
       )}
