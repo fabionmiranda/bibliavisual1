@@ -151,35 +151,29 @@ function DayCard({ dia, semana, si, di }: {
         }} />
       )}
 
-      {/* DIA label */}
-      {hasContent ? (
-        <div style={{ marginBottom: 2 }}>
-          <div style={{
-            display: 'inline-flex', alignItems: 'center', gap: 6,
-            background: semana.cor,
-            borderRadius: 8, padding: '4px 12px',
-          }}>
-            <span style={{ fontSize: 13, fontWeight: 900, color: '#000', letterSpacing: '0.12em' }}>
-              DIA {String(dia).padStart(2, '0')}
-            </span>
-            <span style={{ fontSize: 10, fontWeight: 700, color: 'rgba(0,0,0,0.60)', letterSpacing: '0.06em' }}>
-              de 31
-            </span>
-          </div>
+      {/* DIA label — sempre visível em todos os cards */}
+      <div style={{ marginBottom: 2 }}>
+        <div style={{
+          display: 'inline-flex', alignItems: 'center', gap: 6,
+          background: hasContent ? semana.cor : `rgba(${semana.corRgb},0.22)`,
+          borderRadius: 8, padding: '4px 12px',
+        }}>
+          <span style={{ fontSize: 13, fontWeight: 900, letterSpacing: '0.12em', color: hasContent ? '#000' : `rgba(${semana.corRgb},0.90)` }}>
+            DIA {String(dia).padStart(2, '0')}
+          </span>
+          <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.06em', color: hasContent ? 'rgba(0,0,0,0.55)' : `rgba(${semana.corRgb},0.55)` }}>
+            de 31
+          </span>
         </div>
-      ) : (
-        <div style={{ fontSize: 12, fontWeight: 900, color: `rgba(${semana.corRgb},0.45)`, letterSpacing: '0.14em' }}>
-          DIA {String(dia).padStart(2, '0')}
-        </div>
-      )}
+      </div>
 
-      {/* ref */}
+      {/* ref — sem "Parte X" */}
       <div style={{
         fontSize: 10, fontWeight: 700,
-        color: hasContent ? `rgba(${semana.corRgb},0.85)` : `rgba(${semana.corRgb},0.38)`,
+        color: hasContent ? `rgba(${semana.corRgb},0.85)` : `rgba(${semana.corRgb},0.36)`,
         letterSpacing: '0.10em', textTransform: 'uppercase', lineHeight: 1.3,
       }}>
-        {TITULOS_DIAS[dia].ref.replace(/ — Parte \d+/g, '').replace(/ · Parte \d+/g, '')}
+        {TITULOS_DIAS[dia].ref.replace(/\s*[·—–]\s*Parte\s*\d+/gi, '')}
       </div>
 
       {/* title — main focus */}
