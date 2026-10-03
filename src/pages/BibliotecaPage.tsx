@@ -9,6 +9,9 @@ import {
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import FlagToggle from '../components/FlagToggle';
+import { ARTIGOS_TEOLOGIA } from '../data/teologia';
+
+const ARTIGOS_COUNT = ARTIGOS_TEOLOGIA.filter(a => a.area === 'artigos' && a.status === 'publicado').length;
 
 function getSecaoPrincipal(pt: boolean) {
   return [
@@ -32,18 +35,18 @@ function getSecaoPrincipal(pt: boolean) {
       cor: 'from-violet-950 via-purple-950 to-slate-950',
       accent: '#a78bfa',
       path: '/biblioteca/artigos',
-      badge: pt ? 'Em breve' : 'Coming soon',
+      badge: pt ? `${ARTIGOS_COUNT} artigos` : `${ARTIGOS_COUNT} articles`,
     },
     {
       icon: Star,
-      label: pt ? 'Livro da Semana' : 'Book of the Week',
+      label: pt ? 'Livro do Dia / Semana' : 'Book of the Day / Week',
       descricao: pt
-        ? 'Uma recomendação nova a cada semana, com resenha e aplicação pastoral.'
-        : 'A new recommendation every week, with a review and pastoral application.',
+        ? 'Uma recomendação diária ou semanal, com resenha e aplicação pastoral.'
+        : 'A daily or weekly recommendation, with a review and pastoral application.',
       cor: 'from-amber-950 via-yellow-950 to-slate-950',
       accent: '#fbbf24',
       path: '/biblioteca/semana',
-      badge: pt ? 'Em breve' : 'Coming soon',
+      badge: pt ? 'Novo' : 'New',
     },
     {
       icon: User,

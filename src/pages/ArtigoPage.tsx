@@ -21,7 +21,7 @@ export default function ArtigoPage() {
         <div style={{ maxWidth: 700, margin: '0 auto', padding: 'clamp(88px,11vw,108px) 24px 60px', textAlign: 'center' }}>
           <div style={{ fontSize: 48, marginBottom: 16 }}>404</div>
           <div style={{ color: 'rgba(255,255,255,0.50)', marginBottom: 24 }}>Artigo não encontrado.</div>
-          <button onClick={() => navigate('/artigos')} style={{ all: 'unset', cursor: 'pointer', color: COR, fontWeight: 700 }}>
+          <button onClick={() => navigate('/biblioteca/artigos')} style={{ all: 'unset', cursor: 'pointer', color: COR, fontWeight: 700 }}>
             ← Voltar para Artigos
           </button>
         </div>
@@ -34,7 +34,7 @@ export default function ArtigoPage() {
       <div style={{ minHeight: '100vh', background: BG, color: 'rgba(255,255,255,0.92)' }}>
         <Navbar />
         <div style={{ maxWidth: 700, margin: '0 auto', padding: 'clamp(88px,11vw,108px) 24px 60px' }}>
-          <button onClick={() => navigate('/artigos')} style={{ all: 'unset', cursor: 'pointer', fontSize: 12, fontWeight: 900, letterSpacing: '0.14em', textTransform: 'uppercase', color: `${COR}b0`, marginBottom: 36, display: 'block' }}>
+          <button onClick={() => navigate('/biblioteca/artigos')} style={{ all: 'unset', cursor: 'pointer', fontSize: 12, fontWeight: 900, letterSpacing: '0.14em', textTransform: 'uppercase', color: `${COR}b0`, marginBottom: 36, display: 'block' }}>
             ← Voltar para Artigos
           </button>
           <div style={{ borderRadius: 16, padding: '40px 32px', border: '1px solid rgba(255,200,80,0.20)', background: 'rgba(255,200,80,0.05)', textAlign: 'center' }}>
@@ -57,7 +57,7 @@ export default function ArtigoPage() {
       <div style={{ maxWidth: 860, margin: '0 auto', padding: 'clamp(88px,11vw,108px) clamp(16px,4vw,36px) 100px' }}>
 
         {/* Voltar */}
-        <button onClick={() => navigate('/artigos')} style={{ all: 'unset', cursor: 'pointer', fontSize: 12, fontWeight: 900, letterSpacing: '0.14em', textTransform: 'uppercase', color: `${COR}b0`, marginBottom: 40, display: 'inline-flex', alignItems: 'center', gap: 6 }}>
+        <button onClick={() => navigate('/biblioteca/artigos')} style={{ all: 'unset', cursor: 'pointer', fontSize: 12, fontWeight: 900, letterSpacing: '0.14em', textTransform: 'uppercase', color: `${COR}b0`, marginBottom: 40, display: 'inline-flex', alignItems: 'center', gap: 6 }}>
           ← Voltar para Artigos
         </button>
 

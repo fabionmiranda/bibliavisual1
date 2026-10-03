@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useState, useEffect, useRef } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { motion } from 'motion/react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -125,22 +125,31 @@ export const TITULOS_DIAS: Record<number, { titulo: string; ref: string }> = {
 };
 
 // ─── Day card with hover ──────────────────────────────────────────────────────
-function DayCard({ dia, semana, si, di }: {
+function DayCard({ dia, semana, si, di, isActive }: {
   dia: number;
   semana: typeof SEMANAS[0];
   si: number;
   di: number;
+  isActive?: boolean;
 }) {
   const [hover, setHover] = useState(false);
   const navigate = useNavigate();
   const hasContent = !!DIAS_CONTENT[dia];
   const imgUrl = IMAGENS_DIAS[dia];
+  const cardRef = useRef<HTMLDivElement>(null);
 
-  const borderOpacity   = hasContent ? (hover ? 0.90 : 0.65) : (hover ? 0.32 : 0.16);
-  const bgOpacity       = hasContent ? (hover ? 0.22 : 0.14) : (hover ? 0.07 : 0.04);
+  useEffect(() => {
+    if (isActive && cardRef.current) {
+      cardRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }, [isActive]);
+
+  const borderOpacity = isActive ? 1 : hasContent ? (hover ? 0.90 : 0.65) : (hover ? 0.32 : 0.16);
+  const bgOpacity     = isActive ? 0.28 : hasContent ? (hover ? 0.22 : 0.14) : (hover ? 0.07 : 0.04);
 
   return (
     <motion.div
+      ref={cardRef}
       key={dia}
       initial={{ opacity: 0, scale: 0.92 }}
       animate={{ opacity: 1, scale: 1 }}
@@ -150,7 +159,9 @@ function DayCard({ dia, semana, si, di }: {
       onClick={() => hasContent && navigate(`/devocional/reforma/dia-${String(dia).padStart(2, '0')}`)}
       style={{
         borderRadius: 16,
-        border: `${hasContent ? '2px' : '1.5px'} solid rgba(${semana.corRgb},${borderOpacity})`,
+        border: isActive
+          ? `2.5px solid ${semana.cor}`
+          : `${hasContent ? '2px' : '1.5px'} solid rgba(${semana.corRgb},${borderOpacity})`,
         background: `rgba(${semana.corRgb},${bgOpacity})`,
         padding: '18px 16px',
         display: 'flex', flexDirection: 'column', gap: 8,
@@ -160,12 +171,14 @@ function DayCard({ dia, semana, si, di }: {
         minHeight: 160,
         boxSizing: 'border-box',
         transition: 'border-color 0.22s, background 0.22s, transform 0.22s, box-shadow 0.22s',
-        transform: (hover && hasContent) ? 'scale(1.03)' : 'scale(1)',
-        boxShadow: hasContent
-          ? hover
-            ? `0 0 36px rgba(${semana.corRgb},0.40), 0 0 12px rgba(${semana.corRgb},0.22), inset 0 0 24px rgba(${semana.corRgb},0.06)`
-            : `0 0 22px rgba(${semana.corRgb},0.26), inset 0 0 16px rgba(${semana.corRgb},0.04)`
-          : 'none',
+        transform: isActive ? 'scale(1.04)' : (hover && hasContent) ? 'scale(1.03)' : 'scale(1)',
+        boxShadow: isActive
+          ? `0 0 0 3px rgba(${semana.corRgb},0.35), 0 0 40px rgba(${semana.corRgb},0.55), 0 0 16px rgba(${semana.corRgb},0.30), inset 0 0 28px rgba(${semana.corRgb},0.10)`
+          : hasContent
+            ? hover
+              ? `0 0 36px rgba(${semana.corRgb},0.40), 0 0 12px rgba(${semana.corRgb},0.22), inset 0 0 24px rgba(${semana.corRgb},0.06)`
+              : `0 0 22px rgba(${semana.corRgb},0.26), inset 0 0 16px rgba(${semana.corRgb},0.04)`
+            : 'none',
       }}
     >
       {/* foto de fundo temática */}
@@ -187,13 +200,28 @@ function DayCard({ dia, semana, si, di }: {
         />
       )}
 
+      {/* badge LENDO AGORA — só no dia ativo */}
+      {isActive && (
+        <div style={{
+          position: 'absolute', top: 10, right: 10,
+          fontSize: 8, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase',
+          color: '#000',
+          background: semana.cor,
+          borderRadius: 99, padding: '4px 9px',
+          zIndex: 2,
+          boxShadow: `0 0 12px rgba(${semana.corRgb},0.70)`,
+        }}>
+          ▶ LENDO
+        </div>
+      )}
+
       {/* top bar — sempre visível nos dias com conteúdo */}
       <div style={{
-        position: 'absolute', top: 0, left: 0, right: 0, height: hasContent ? 3 : 2,
+        position: 'absolute', top: 0, left: 0, right: 0, height: isActive ? 4 : hasContent ? 3 : 2,
         background: hasContent
           ? `linear-gradient(90deg, rgba(${semana.corRgb},0.4), ${semana.cor}, rgba(${semana.corRgb},0.4))`
           : `linear-gradient(90deg, transparent, ${semana.cor}, transparent)`,
-        opacity: hasContent ? 1 : (hover ? 1 : 0),
+        opacity: isActive ? 1 : hasContent ? 1 : (hover ? 1 : 0),
         transition: 'opacity 0.3s',
       }} />
 
@@ -283,8 +311,20 @@ function DayCard({ dia, semana, si, di }: {
   );
 }
 
+function getTodayDia(): number | null {
+  const now = new Date();
+  if (now.getFullYear() === 2026 && now.getMonth() === 9) {
+    const d = now.getDate();
+    if (d >= 1 && d <= 31 && DIAS_CONTENT[d]) return d;
+  }
+  return null;
+}
+
 export default function DevocionalReformaPage() {
   const navigate = useNavigate();
+  const location = useLocation();
+  const stateActiveDia = (location.state as { activeDia?: number } | null)?.activeDia ?? null;
+  const activeDia = stateActiveDia ?? getTodayDia();
 
   // week color dots for progress indicator
   const semanasCores = SEMANAS.map(s => ({ cor: s.cor, corRgb: s.corRgb, num: s.num }));
@@ -449,7 +489,7 @@ export default function DevocionalReformaPage() {
                 gap: 14,
               }}>
                 {semana.dias.map((dia, di) => (
-                  <DayCard key={dia} dia={dia} semana={semana} si={si} di={di} />
+                  <DayCard key={dia} dia={dia} semana={semana} si={si} di={di} isActive={dia === activeDia} />
                 ))}
               </div>
             </motion.div>

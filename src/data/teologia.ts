@@ -13,6 +13,396 @@
 export const ARTIGOS_TEOLOGIA: ArtigoTeologia[] = [
 
   {
+    id: 'da-experiencia-a-palavra',
+    slug: 'da-experiencia-a-palavra',
+    categoria: 'Teologia Confessional e Pneumatologia',
+    titulo: 'Da Experiência à Palavra',
+    parte: 'CF Batista de 1689 em Diálogo com a Teologia Pentecostal',
+    resumo: 'Comparação entre a Confissão de Fé Batista de 1689 e a Declaração de Fé das Assembleias de Deus, identificando convergências e divergências em oito temas — da soteriologia à escatologia — para o discipulado de irmãos vindos do pentecostalismo.',
+    status: 'publicado',
+    area: 'artigos',
+    conteudo: `
+<div style="font-family:'Inter',system-ui,sans-serif;max-width:820px;margin:0 auto;color:rgba(255,255,255,0.88);">
+
+<!-- CABEÇALHO DO ARTIGO -->
+<div style="margin-bottom:40px;padding:clamp(28px,4vw,44px);border-radius:20px;background:linear-gradient(135deg,#1a0a30 0%,#0d0520 60%,#0a0318 100%);border:1px solid rgba(192,132,252,0.30);">
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:20px;flex-wrap:wrap;">
+    <span style="font-size:10px;font-weight:900;letter-spacing:0.30em;text-transform:uppercase;color:#c084fc;padding:4px 12px;border-radius:20px;background:rgba(192,132,252,0.12);border:1px solid rgba(192,132,252,0.30);">Teologia Confessional</span>
+    <span style="font-size:10px;font-weight:900;letter-spacing:0.30em;text-transform:uppercase;color:#818cf8;padding:4px 12px;border-radius:20px;background:rgba(129,140,248,0.12);border:1px solid rgba(129,140,248,0.30);">Pneumatologia</span>
+    <span style="font-size:10px;font-weight:900;letter-spacing:0.30em;text-transform:uppercase;color:#34d399;padding:4px 12px;border-radius:20px;background:rgba(52,211,153,0.12);border:1px solid rgba(52,211,153,0.30);">Artigo Publicado</span>
+  </div>
+  <h1 style="font-size:clamp(26px,4.5vw,42px);font-weight:900;line-height:1.15;margin:0 0 10px;background:linear-gradient(135deg,#fff 0%,#c084fc 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Da Experiência à Palavra</h1>
+  <p style="font-size:clamp(15px,2vw,18px);font-weight:600;color:rgba(192,132,252,0.80);margin:0 0 20px;line-height:1.5;">A Teologia Reformada da Confissão de Fé Batista de 1689<br/>em Diálogo Crítico com a Teologia Pentecostal</p>
+  <div style="display:flex;flex-wrap:wrap;gap:20px;border-top:1px solid rgba(255,255,255,0.08);padding-top:20px;">
+    <div><span style="font-size:10px;font-weight:700;color:rgba(255,255,255,0.35);text-transform:uppercase;letter-spacing:0.2em;display:block;margin-bottom:3px;">Autor</span><span style="font-size:14px;font-weight:700;color:#fff;">Fabio Miranda<sup style="font-size:10px;color:#c084fc;margin-left:2px;vertical-align:super;">*</sup></span></div>
+    <div><span style="font-size:10px;font-weight:700;color:rgba(255,255,255,0.35);text-transform:uppercase;letter-spacing:0.2em;display:block;margin-bottom:3px;">Área</span><span style="font-size:14px;font-weight:700;color:#fff;">Teologia Confessional · Pneumatologia</span></div>
+    <div><span style="font-size:10px;font-weight:700;color:rgba(255,255,255,0.35);text-transform:uppercase;letter-spacing:0.2em;display:block;margin-bottom:3px;">Método</span><span style="font-size:14px;font-weight:700;color:#fff;">Pesquisa Qualitativa · Documental</span></div>
+  </div>
+</div>
+
+<!-- RESUMO -->
+<div style="margin-bottom:36px;padding:clamp(22px,3vw,34px);border-radius:16px;background:rgba(192,132,252,0.07);border-left:4px solid #c084fc;">
+  <p style="font-size:11px;font-weight:900;letter-spacing:0.28em;text-transform:uppercase;color:#c084fc;margin:0 0 14px;">Resumo</p>
+  <p style="font-size:clamp(17px,2.2vw,19px);color:rgba(240,232,255,0.95);line-height:1.80;margin:0 0 14px;">Este artigo compara a teologia reformada expressa na <strong style="color:#fff;">Confissão de Fé Batista de 1689</strong> com a teologia pentecostal clássica, representada pela <strong style="color:#fff;">Declaração de Fé das Assembleias de Deus (2017)</strong>, a fim de identificar convergências e divergências doutrinárias relevantes para o discipulado de pessoas oriundas do meio pentecostal que ingressam em igrejas batistas reformadas.</p>
+  <p style="font-size:clamp(17px,2.2vw,19px);color:rgba(240,232,255,0.95);line-height:1.80;margin:0 0 14px;">Os resultados indicam <strong style="color:#34d399;">amplo terreno comum</strong> — autoridade da Escritura, Trindade, depravação humana, justificação pela fé, batismo de crentes por imersão e esperança escatológica — e <strong style="color:#fb7185;">divergências concentradas em oito temas</strong>: o status das revelações atuais, o batismo no Espírito Santo como experiência subsequente com evidência de línguas, a continuidade dos dons, a soteriologia, a perseverança dos santos, a cura e a prosperidade, o culto e o governo eclesiástico, e a escatologia.</p>
+  <p style="font-size:clamp(17px,2.2vw,19px);color:rgba(240,232,255,0.95);line-height:1.80;margin:0;">Conclui-se que as divergências decorrem, em grande parte, de <strong style="color:#fbbf24;">pressupostos hermenêuticos e soteriológicos distintos</strong>, e que a distinção entre pentecostalismo clássico e neopentecostalismo é indispensável para um diálogo justo e pastoralmente frutífero.</p>
+  <div style="margin-top:16px;padding-top:14px;border-top:1px solid rgba(192,132,252,0.20);">
+    <span style="font-size:10px;font-weight:700;color:rgba(192,132,252,0.60);letter-spacing:0.18em;text-transform:uppercase;">Palavras-chave: </span>
+    <span style="font-size:11px;color:rgba(192,132,252,0.80);">Confissão de Fé Batista de 1689 · Pentecostalismo · Teologia Reformada · Batismo no Espírito Santo · Pneumatologia</span>
+  </div>
+</div>
+
+<!-- 1. INTRODUÇÃO -->
+<h2 style="font-size:clamp(18px,2.8vw,26px);font-weight:900;color:#fff;margin:40px 0 16px;display:flex;align-items:center;gap:10px;">
+  <span style="display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:10px;background:rgba(192,132,252,0.18);border:1px solid rgba(192,132,252,0.35);font-size:13px;font-weight:900;color:#c084fc;flex-shrink:0;">1</span>
+  Introdução
+</h2>
+<p style="font-size:clamp(18px,2.4vw,21px);color:rgba(235,228,255,0.92);line-height:1.82;margin:0 0 16px;">O pentecostalismo é hoje a principal expressão do protestantismo brasileiro, e uma parcela significativa dos membros que ingressam em igrejas de tradição reformada provém desse meio. Esse trânsito religioso coloca às igrejas batistas reformadas, que subscrevem a Confissão de Fé Batista de 1689, uma tarefa pastoral e teológica: apresentar com clareza a fé que confessam, reconhecendo o que compartilham com a tradição de origem desses irmãos e explicando, com fundamentação bíblica e histórica, os pontos em que dela divergem.</p>
+<p style="font-size:clamp(18px,2.4vw,21px);color:rgba(235,228,255,0.92);line-height:1.82;margin:0 0 16px;">Materiais polêmicos sobre o tema são abundantes, mas frequentemente tratam o pentecostalismo de modo indiferenciado, atribuindo ao pentecostalismo clássico ensinos próprios do neopentecostalismo, ou recorrendo a fontes secundárias em vez dos documentos oficiais das igrejas.</p>
+<p style="font-size:clamp(18px,2.4vw,21px);color:rgba(235,228,255,0.92);line-height:1.82;margin:0 0 16px;">A publicação, em 2017, da <strong style="color:#c084fc;">Declaração de Fé das Assembleias de Deus</strong> oferece pela primeira vez um texto confessional extenso e oficial que permite comparação direta com a Confissão de 1689. O objetivo deste artigo é comparar os dois documentos em oito temas doutrinários, à luz da literatura reformada e pentecostal, identificando convergências e divergências e suas raízes teológicas.</p>
+
+<!-- 2. METODOLOGIA -->
+<h2 style="font-size:clamp(18px,2.8vw,26px);font-weight:900;color:#fff;margin:40px 0 16px;display:flex;align-items:center;gap:10px;">
+  <span style="display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:10px;background:rgba(129,140,248,0.18);border:1px solid rgba(129,140,248,0.35);font-size:13px;font-weight:900;color:#818cf8;flex-shrink:0;">2</span>
+  Metodologia
+</h2>
+<p style="font-size:clamp(18px,2.4vw,21px);color:rgba(235,228,255,0.92);line-height:1.82;margin:0 0 16px;">Pesquisa qualitativa, bibliográfica e documental, com abordagem comparativa. O corpus primário constitui-se de dois documentos confessionais:</p>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:0 0 22px;">
+  <div style="padding:18px;border-radius:14px;background:rgba(192,132,252,0.08);border:1px solid rgba(192,132,252,0.25);">
+    <p style="font-size:10px;font-weight:900;letter-spacing:0.22em;text-transform:uppercase;color:#c084fc;margin:0 0 8px;">Documento Reformado</p>
+    <p style="font-size:14px;font-weight:700;color:#fff;margin:0 0 6px;">Confissão de Fé Batista de 1689</p>
+    <p style="font-size:12px;color:rgba(255,255,255,0.50);margin:0;line-height:1.6;">Texto inglês de 1677/1689. Analisado junto a Waldron (2021), Gaffin Jr. (1979) e outros cessacionistas e continuístas.</p>
+  </div>
+  <div style="padding:18px;border-radius:14px;background:rgba(251,146,60,0.08);border:1px solid rgba(251,146,60,0.25);">
+    <p style="font-size:10px;font-weight:900;letter-spacing:0.22em;text-transform:uppercase;color:#fb923c;margin:0 0 8px;">Documento Pentecostal</p>
+    <p style="font-size:14px;font-weight:700;color:#fff;margin:0 0 6px;">Declaração de Fé das Assembleias de Deus (2017)</p>
+    <p style="font-size:12px;color:rgba(255,255,255,0.50);margin:0;line-height:1.6;">Complementada pela declaração das Assemblies of God norte-americanas. Analisada junto a Horton, Stronstad e Fee.</p>
+  </div>
+</div>
+<p style="font-size:clamp(18px,2.4vw,21px);color:rgba(235,228,255,0.92);line-height:1.82;margin:0 0 16px;">A escolha de dar voz às <strong style="color:#fff;">melhores formulações de cada tradição</strong> busca evitar a caricatura do interlocutor. O campo reformado foi apresentado em sua diversidade interna: tanto autores cessacionistas (Warfield, Gaffin Jr., Robertson, Waldron) quanto continuístas (Grudem, Carson).</p>
+
+<!-- 3. CONTEXTO HISTÓRICO E TERRENO COMUM -->
+<h2 style="font-size:clamp(18px,2.8vw,26px);font-weight:900;color:#fff;margin:40px 0 16px;display:flex;align-items:center;gap:10px;">
+  <span style="display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:10px;background:rgba(52,211,153,0.18);border:1px solid rgba(52,211,153,0.35);font-size:13px;font-weight:900;color:#34d399;flex-shrink:0;">3</span>
+  Contexto Histórico e Terreno Comum
+</h2>
+
+<h3 style="font-size:clamp(15px,2.2vw,19px);font-weight:800;color:#34d399;margin:28px 0 14px;">3.1 Origens do Pentecostalismo e da Confissão de 1689</h3>
+<p style="font-size:clamp(18px,2.4vw,21px);color:rgba(235,228,255,0.92);line-height:1.82;margin:0 0 14px;">O pentecostalismo moderno nasceu nos Estados Unidos no início do século XX, a partir do movimento de santidade de raiz wesleyana. Em 1º de janeiro de 1901, em Topeka (Kansas), a aluna Agnes Ozman falou em línguas — e Charles Fox Parham passou a ensinar que as línguas eram a evidência do batismo no Espírito. William J. Seymour levou esse ensino a Los Angeles, onde começou, em 1906, o avivamento da Rua Azusa.</p>
+<div style="margin:0 0 20px;padding:16px 20px;border-radius:12px;background:rgba(251,191,36,0.08);border:1px solid rgba(251,191,36,0.22);">
+  <p style="margin:0;font-size:13px;color:rgba(251,191,36,0.90);line-height:1.70;"><strong style="color:#fbbf24;">Dado histórico relevante:</strong> A doutrina da evidência inicial das línguas tem data e lugar de origem — não aparece nas confissões históricas da Reforma. As Assembleias de Deus norte-americanas (1914) adotaram o batismo no Espírito como a segunda experiência após a conversão.</p>
+</div>
+<p style="font-size:clamp(18px,2.4vw,21px);color:rgba(235,228,255,0.92);line-height:1.82;margin:0 0 14px;">No Brasil, o pentecostalismo chegou com a Congregação Cristã (1910) e com as Assembleias de Deus (1911), fundadas pelos missionários suecos Daniel Berg e Gunnar Vingren, ambos de origem batista. Ricardo Mariano propôs a tipologia: pentecostalismo clássico, deuteropentecostalismo e neopentecostalismo — distinção sociológica indispensável para um diálogo justo.</p>
+<p style="font-size:clamp(18px,2.4vw,21px);color:rgba(235,228,255,0.92);line-height:1.82;margin:0 0 14px;">A <strong style="color:#c084fc;">Confissão de Fé Batista de 1689</strong> foi publicada em 1677 por batistas particulares de Londres e endossada em 1689 por mais de cem igrejas. Baseia-se na Confissão de Westminster (1646), alterada apenas onde as convicções batistas exigiam — é conscientemente reformada em sua soteriologia.</p>
+
+<h3 style="font-size:clamp(15px,2.2vw,19px);font-weight:800;color:#34d399;margin:28px 0 14px;">3.2 O Que as Tradições Compartilham</h3>
+<p style="font-size:clamp(18px,2.4vw,21px);color:rgba(235,228,255,0.92);line-height:1.82;margin:0 0 18px;">Antes das divergências, é justo registrar o que une as duas tradições. As divergências que seguem acontecem entre irmãos que confessam o mesmo Senhor e a mesma Escritura.</p>
+
+<!-- QUADRO 1 -->
+<div style="margin-bottom:32px;overflow-x:auto;">
+  <div style="min-width:520px;">
+    <div style="padding:12px 16px;background:rgba(52,211,153,0.15);border-radius:10px 10px 0 0;border:1px solid rgba(52,211,153,0.30);border-bottom:none;">
+      <p style="margin:0;font-size:10px;font-weight:900;letter-spacing:0.24em;text-transform:uppercase;color:#34d399;">Quadro 1 — Convergências Doutrinárias</p>
+    </div>
+    <div style="border:1px solid rgba(52,211,153,0.20);border-radius:0 0 10px 10px;overflow:hidden;">
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;background:rgba(255,255,255,0.06);border-bottom:1px solid rgba(255,255,255,0.06);">
+        <div style="padding:10px 14px;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:0.16em;color:rgba(255,255,255,0.50);">Doutrina</div>
+        <div style="padding:10px 14px;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:0.16em;color:rgba(251,146,60,0.80);">Assembleias de Deus (2017)</div>
+        <div style="padding:10px 14px;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:0.16em;color:rgba(192,132,252,0.80);">Confissão de 1689</div>
+      </div>
+      ${[
+        ['Escritura','Inspiração verbal e plenária; única regra infalível de fé e prática','Única regra suficiente, certa e infalível (cap. 1)'],
+        ['Deus','Um só Deus em três pessoas (Cremos 2)','Um só Deus em três subsistências (cap. 2)'],
+        ['Pecado','Corrupção total do gênero humano (Cremos 5)','Corrupção total da natureza (caps. 6 e 9)'],
+        ['Salvação','Justificação pela fé no sacrifício de Cristo (Cremos 7)','Justificação pela fé somente (cap. 11)'],
+        ['Batismo','Imersão de crentes, em nome da Trindade (Cremos 9)','Imersão dos que professam fé (cap. 29)'],
+        ['Fim','Volta de Cristo, juízo e castigo eterno (Cremos 13-15)','Ressurreição e juízo final (caps. 31-32)'],
+      ].map((r,i) => `
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;border-bottom:1px solid rgba(255,255,255,0.04);background:${i%2===0?'transparent':'rgba(255,255,255,0.02)'};">
+        <div style="padding:10px 14px;font-size:13px;font-weight:800;color:#34d399;">${r[0]}</div>
+        <div style="padding:10px 14px;font-size:14px;color:rgba(225,218,255,0.88);line-height:1.55;">${r[1]}</div>
+        <div style="padding:10px 14px;font-size:14px;color:rgba(225,218,255,0.88);line-height:1.55;">${r[2]}</div>
+      </div>`).join('')}
+    </div>
+  </div>
+</div>
+
+<!-- 4. ANÁLISE COMPARATIVA -->
+<h2 style="font-size:clamp(18px,2.8vw,26px);font-weight:900;color:#fff;margin:40px 0 10px;display:flex;align-items:center;gap:10px;">
+  <span style="display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:10px;background:rgba(251,113,133,0.18);border:1px solid rgba(251,113,133,0.35);font-size:13px;font-weight:900;color:#fb7185;flex-shrink:0;">4</span>
+  Análise Comparativa — Os Oito Temas
+</h2>
+<p style="font-size:clamp(14px,1.8vw,15px);color:rgba(220,210,255,0.55);line-height:1.70;margin:0 0 28px;">Em cada tema: posição pentecostal → texto da Confissão de 1689 → análise à luz da literatura.</p>
+
+<!-- TEMA 4.1 -->
+<div style="margin-bottom:28px;border-radius:16px;overflow:hidden;border:1px solid rgba(96,165,250,0.30);">
+  <div style="padding:14px 20px;background:rgba(96,165,250,0.14);display:flex;align-items:center;gap:10px;">
+    <span style="font-size:10px;font-weight:900;letter-spacing:0.24em;text-transform:uppercase;color:#60a5fa;padding:3px 10px;border-radius:20px;background:rgba(96,165,250,0.15);border:1px solid rgba(96,165,250,0.35);">Tema 4.1</span>
+    <h3 style="margin:0;font-size:clamp(15px,2.2vw,18px);font-weight:900;color:#fff;">A Escritura e as Revelações Atuais</h3>
+  </div>
+  <div style="padding:clamp(16px,3vw,24px);">
+    <p style="font-size:clamp(17px,2.2vw,19px);color:rgba(235,228,255,0.92);line-height:1.82;margin:0 0 14px;">A Declaração das Assembleias de Deus confessa a Bíblia como "única regra infalível de fé e prática" e que "não necessitamos de uma nova revelação extraordinária ou pretensamente canônica". Ao mesmo tempo, afirma a "atualidade dos dons espirituais" e que o Espírito "continua guiando o seu povo" — com profecias e revelações julgadas pela Bíblia.</p>
+    <div style="padding:14px 18px;border-radius:10px;background:rgba(96,165,250,0.08);border-left:3px solid #60a5fa;margin-bottom:14px;">
+      <p style="margin:0;font-size:16px;font-style:italic;color:rgba(220,235,255,0.95);line-height:1.70;"><strong style="color:#60a5fa;font-style:normal;">Confissão de 1689, cap. 1, §1:</strong> "A Sagrada Escritura é a única regra suficiente, certa e infalível [...], tendo agora cessado aqueles modos anteriores pelos quais Deus revelava sua vontade ao seu povo."</p>
+    </div>
+    <p style="font-size:clamp(17px,2.2vw,19px);color:rgba(235,228,255,0.92);line-height:1.82;margin:0 0 10px;">A Confissão distingue <em>revelação</em> de <em>iluminação</em>: o reformado não nega a obra presente do Espírito — nega que ele acrescente <em>conteúdo novo</em> à revelação. Samuel Waldron observa que a Confissão não afirma que tudo o que Deus revelou foi escrito, mas que tudo o que Deus <em>agora</em> revela à igreja está na Escritura.</p>
+    <div style="padding:12px 16px;border-radius:10px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);">
+      <p style="margin:0;font-size:14px;color:rgba(255,255,255,0.72);line-height:1.65;"><strong style="color:rgba(255,255,255,0.65);">Nota interna:</strong> Há reformados continuístas (Grudem) que defendem profecia local falível sem autoridade igual à Escritura. A Confissão de 1689, contudo, inclina-se claramente para o cessacionismo.</p>
+    </div>
+  </div>
+</div>
+
+<!-- TEMA 4.2 -->
+<div style="margin-bottom:28px;border-radius:16px;overflow:hidden;border:1px solid rgba(251,146,60,0.30);">
+  <div style="padding:14px 20px;background:rgba(251,146,60,0.14);display:flex;align-items:center;gap:10px;">
+    <span style="font-size:10px;font-weight:900;letter-spacing:0.24em;text-transform:uppercase;color:#fb923c;padding:3px 10px;border-radius:20px;background:rgba(251,146,60,0.15);border:1px solid rgba(251,146,60,0.35);">Tema 4.2</span>
+    <h3 style="margin:0;font-size:clamp(15px,2.2vw,18px);font-weight:900;color:#fff;">O Batismo no Espírito Santo e a Evidência das Línguas</h3>
+  </div>
+  <div style="padding:clamp(16px,3vw,24px);">
+    <div style="padding:14px 18px;border-radius:10px;background:rgba(251,146,60,0.10);border-left:3px solid #fb923c;margin-bottom:14px;">
+      <p style="margin:0;font-size:13px;font-weight:700;color:#fb923c;margin-bottom:6px;">Posição Pentecostal (Assemblies of God)</p>
+      <p style="margin:0;font-size:16px;font-style:italic;color:rgba(255,220,195,0.95);line-height:1.70;">"O batismo no Espírito Santo é distinto da salvação [...], demonstrado pela evidência física do falar em outras línguas." (SILVA, 2017)</p>
+    </div>
+    <p style="font-size:clamp(17px,2.2vw,19px);color:rgba(235,228,255,0.92);line-height:1.82;margin:0 0 14px;">A defesa acadêmica mais consistente é a de Roger Stronstad: Lucas tem uma teologia do Espírito própria, distinta da de Paulo — voltada para capacitação profética e missionária. A unção de Jesus no batismo seria o paradigma do batismo no Espírito dos discípulos.</p>
+    <p style="font-size:clamp(17px,2.2vw,19px);color:rgba(235,228,255,0.92);line-height:1.82;margin:0 0 14px;">Três argumentos reformados contrários: (1) <strong style="color:#fff;">Paulino</strong> — "em um só Espírito todos fomos batizados em um corpo" (1Co 12.13; Stott); (2) <strong style="color:#fff;">Histórico-redentor</strong> — o Pentecostes é evento irrepetível da história da salvação (Gaffin Jr.); (3) <strong style="color:#fff;">Exegético</strong> — a pergunta retórica de 1Co 12.29-30 (<em>"falam todos em outras línguas?"</em>) espera resposta negativa — logo as línguas não podem ser evidência de uma experiência universal.</p>
+    <div style="padding:12px 16px;border-radius:10px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);">
+      <p style="margin:0;font-size:12px;color:rgba(255,255,255,0.50);line-height:1.65;">Vale notar que foi a obra de James Dunn que provocou as respostas de Stronstad e Menzies. O debate é sério de ambos os lados.</p>
+    </div>
+  </div>
+</div>
+
+<!-- TEMA 4.3 -->
+<div style="margin-bottom:28px;border-radius:16px;overflow:hidden;border:1px solid rgba(167,139,250,0.30);">
+  <div style="padding:14px 20px;background:rgba(167,139,250,0.14);display:flex;align-items:center;gap:10px;">
+    <span style="font-size:10px;font-weight:900;letter-spacing:0.24em;text-transform:uppercase;color:#a78bfa;padding:3px 10px;border-radius:20px;background:rgba(167,139,250,0.15);border:1px solid rgba(167,139,250,0.35);">Tema 4.3</span>
+    <h3 style="margin:0;font-size:clamp(15px,2.2vw,18px);font-weight:900;color:#fff;">Os Dons Espirituais Hoje</h3>
+  </div>
+  <div style="padding:clamp(16px,3vw,24px);">
+    <p style="font-size:clamp(17px,2.2vw,19px);color:rgba(235,228,255,0.92);line-height:1.82;margin:0 0 14px;">A Declaração confessa "a atualidade dos dons espirituais" (1Co 12). Gordon Fee, exegeta pentecostal respeitado além de seu meio, argumenta que Paulo concebe a igreja como comunidade em que o Espírito se manifesta de forma concreta e experimentada.</p>
+    <p style="font-size:clamp(17px,2.2vw,19px);color:rgba(235,228,255,0.92);line-height:1.82;margin:0 0 14px;">O cessacionismo clássico foi formulado por B.B. Warfield: os dons miraculosos eram credenciais dos apóstolos e cessaram com eles. Gaffin refina: todos os dons revelacionais estão ligados ao fundamento apostólico (Ef 2.20) — um fundamento só se lança uma vez.</p>
+    <div style="padding:14px 18px;border-radius:10px;background:rgba(167,139,250,0.08);border-left:3px solid #a78bfa;">
+      <p style="margin:0;font-size:13px;color:rgba(200,185,255,0.85);line-height:1.70;">O debate atravessa o próprio campo reformado. O volume organizado por Grudem reúne quatro posições: cessacionista (Gaffin), aberta mas cautelosa (Saucy), Terceira Onda (Storms) e pentecostal (Oss). D.A. Carson recusa tanto o cessacionismo rígido quanto a doutrina da segunda bênção.</p>
+    </div>
+  </div>
+</div>
+
+<!-- TEMA 4.4 -->
+<div style="margin-bottom:28px;border-radius:16px;overflow:hidden;border:1px solid rgba(251,191,36,0.30);">
+  <div style="padding:14px 20px;background:rgba(251,191,36,0.14);display:flex;align-items:center;gap:10px;">
+    <span style="font-size:10px;font-weight:900;letter-spacing:0.24em;text-transform:uppercase;color:#fbbf24;padding:3px 10px;border-radius:20px;background:rgba(251,191,36,0.15);border:1px solid rgba(251,191,36,0.35);">Tema 4.4</span>
+    <h3 style="margin:0;font-size:clamp(15px,2.2vw,18px);font-weight:900;color:#fff;">A Salvação: Graça Soberana e Livre-Arbítrio</h3>
+  </div>
+  <div style="padding:clamp(16px,3vw,24px);">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px;">
+      <div style="padding:16px;border-radius:12px;background:rgba(251,146,60,0.08);border:1px solid rgba(251,146,60,0.22);">
+        <p style="font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:0.20em;color:#fb923c;margin:0 0 8px;">Posição Pentecostal (Arminiana)</p>
+        <p style="font-size:13px;color:rgba(255,210,180,0.80);margin:0;line-height:1.65;">Graça preveniente que capacita a vontade — mas que pode ser resistida. Eleição condicionada à fé prevista por Deus.</p>
+      </div>
+      <div style="padding:16px;border-radius:12px;background:rgba(251,191,36,0.08);border:1px solid rgba(251,191,36,0.22);">
+        <p style="font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:0.20em;color:#fbbf24;margin:0 0 8px;">Posição Reformada (Confissão, cap. 10)</p>
+        <p style="font-size:13px;color:rgba(255,240,180,0.80);margin:0;line-height:1.65;">Graça eficaz e monergística. O pecador vem a Cristo "mui livremente" — mas essa liberdade é <em>efeito</em> da graça, não sua condição.</p>
+      </div>
+    </div>
+    <div style="padding:14px 18px;border-radius:10px;background:rgba(251,191,36,0.08);border-left:3px solid #fbbf24;">
+      <p style="margin:0;font-size:13px;font-style:italic;color:rgba(255,240,180,0.85);line-height:1.70;"><strong style="color:#fbbf24;font-style:normal;">Confissão de 1689, cap. 3, §5:</strong> "[Os eleitos foram escolhidos] por sua mera graça e amor, sem qualquer outra coisa na criatura como condição ou causa que o movesse a isso."</p>
+    </div>
+    <p style="font-size:clamp(17px,2.2vw,19px);color:rgba(235,228,255,0.92);line-height:1.82;margin:14px 0 0;">Nota pedagógica útil: a própria Declaração das Assembleias de Deus reconhece a tradição de Westminster e a tradição remonstrante (arminiana). O debate é interno ao protestantismo — não entre ortodoxia e heresia.</p>
+  </div>
+</div>
+
+<!-- TEMA 4.5 -->
+<div style="margin-bottom:28px;border-radius:16px;overflow:hidden;border:1px solid rgba(52,211,153,0.30);">
+  <div style="padding:14px 20px;background:rgba(52,211,153,0.14);display:flex;align-items:center;gap:10px;">
+    <span style="font-size:10px;font-weight:900;letter-spacing:0.24em;text-transform:uppercase;color:#34d399;padding:3px 10px;border-radius:20px;background:rgba(52,211,153,0.15);border:1px solid rgba(52,211,153,0.35);">Tema 4.5</span>
+    <h3 style="margin:0;font-size:clamp(15px,2.2vw,18px);font-weight:900;color:#fff;">A Perseverança e a Segurança da Salvação</h3>
+  </div>
+  <div style="padding:clamp(16px,3vw,24px);">
+    <p style="font-size:clamp(17px,2.2vw,19px);color:rgba(235,228,255,0.92);line-height:1.82;margin:0 0 14px;">A Declaração das Assembleias de Deus ensina expressamente que <em>"é possível a perda da salvação"</em> e que <em>"mediante o mau uso do livre arbítrio, o crente pode apostatar da fé"</em>.</p>
+    <div style="padding:14px 18px;border-radius:10px;background:rgba(52,211,153,0.08);border-left:3px solid #34d399;margin-bottom:14px;">
+      <p style="margin:0;font-size:16px;font-style:italic;color:rgba(190,255,228,0.95);line-height:1.70;"><strong style="color:#34d399;font-style:normal;">Confissão de 1689, cap. 17, §1:</strong> "Aqueles a quem Deus aceitou no Amado [...] não podem cair nem total nem finalmente do estado de graça, mas certamente perseverarão nele até o fim e serão eternamente salvos."</p>
+    </div>
+    <p style="font-size:clamp(17px,2.2vw,19px);color:rgba(235,228,255,0.92);line-height:1.82;margin:0 0 14px;">A Confissão funda a perseverança não na força do crente, mas em Deus: no decreto imutável da eleição, na eficácia do mérito e da intercessão de Cristo, na habitação do Espírito e na natureza do pacto da graça.</p>
+    <div style="padding:12px 16px;border-radius:10px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);">
+      <p style="margin:0;font-size:15px;color:rgba(255,255,255,0.85);line-height:1.65;"><strong style="color:#34d399;">Ponte pastoral:</strong> A Declaração fala em perda "temporária" da salvação; a Confissão fala de crentes que caem "por algum tempo". Ambas descrevem o mesmo fenômeno. A diferença está na interpretação — disciplina paterna vs. perda real. Quem abandona definitivamente a fé mostra que nunca pertenceu de fato a Cristo (1Jo 2.19).</p>
+    </div>
+  </div>
+</div>
+
+<!-- TEMA 4.6 -->
+<div style="margin-bottom:28px;border-radius:16px;overflow:hidden;border:1px solid rgba(244,114,182,0.30);">
+  <div style="padding:14px 20px;background:rgba(244,114,182,0.14);display:flex;align-items:center;gap:10px;">
+    <span style="font-size:10px;font-weight:900;letter-spacing:0.24em;text-transform:uppercase;color:#f472b6;padding:3px 10px;border-radius:20px;background:rgba(244,114,182,0.15);border:1px solid rgba(244,114,182,0.35);">Tema 4.6</span>
+    <h3 style="margin:0;font-size:clamp(15px,2.2vw,18px);font-weight:900;color:#fff;">Cura Divina, Sofrimento e Prosperidade</h3>
+  </div>
+  <div style="padding:clamp(16px,3vw,24px);">
+    <p style="font-size:clamp(17px,2.2vw,19px);color:rgba(235,228,255,0.92);line-height:1.82;margin:0 0 14px;">O lema pentecostal clássico: <em>"Jesus salva, cura, batiza no Espírito Santo e breve voltará."</em> A cura está na expiação. Fundamental distinguir: o pentecostalismo clássico não ensina prosperidade material — essa é marca do neopentecostalismo, com raízes no movimento da "confissão positiva" (E.W. Kenyon, Hagin).</p>
+    <p style="font-size:clamp(17px,2.2vw,19px);color:rgba(235,228,255,0.92);line-height:1.82;margin:0 0 14px;">A crítica mais eficaz à teologia da prosperidade, para quem vem do meio pentecostal, vem de um pentecostal: Gordon Fee classificou o evangelho da saúde e da riqueza como <em>"uma doença na igreja e um evangelho falso"</em>.</p>
+    <div style="padding:14px 18px;border-radius:10px;background:rgba(244,114,182,0.08);border-left:3px solid #f472b6;">
+      <p style="margin:0;font-size:16px;font-style:italic;color:rgba(255,205,230,0.95);line-height:1.70;"><strong style="color:#f472b6;font-style:normal;">Confissão de 1689, cap. 5, §5:</strong> "O sapientíssimo, justo e gracioso Deus muitas vezes deixa por algum tempo seus filhos em várias tentações [...] para que sejam humilhados [...] e para que sejam levados a uma dependência mais íntima e constante dele."</p>
+    </div>
+    <p style="font-size:clamp(17px,2.2vw,19px);color:rgba(235,228,255,0.92);line-height:1.82;margin:14px 0 0;">Este cap. 5, §5 é o texto-chave para consolar quem foi ensinado que doença ou pobreza indicam falta de fé. Paulo deixou Trófimo doente (2Tm 4.20) e ouviu <em>"a minha graça te basta"</em> (2Co 12.9).</p>
+  </div>
+</div>
+
+<!-- TEMA 4.7 -->
+<div style="margin-bottom:28px;border-radius:16px;overflow:hidden;border:1px solid rgba(45,212,191,0.30);">
+  <div style="padding:14px 20px;background:rgba(45,212,191,0.14);display:flex;align-items:center;gap:10px;">
+    <span style="font-size:10px;font-weight:900;letter-spacing:0.24em;text-transform:uppercase;color:#2dd4bf;padding:3px 10px;border-radius:20px;background:rgba(45,212,191,0.15);border:1px solid rgba(45,212,191,0.35);">Tema 4.7</span>
+    <h3 style="margin:0;font-size:clamp(15px,2.2vw,18px);font-weight:900;color:#fff;">O Culto e o Governo da Igreja</h3>
+  </div>
+  <div style="padding:clamp(16px,3vw,24px);">
+    <p style="font-size:clamp(17px,2.2vw,19px);color:rgba(235,228,255,0.92);line-height:1.82;margin:0 0 14px;">O culto pentecostal valoriza espontaneidade, participação emocional intensa e abertura às manifestações do Espírito. O governo organiza-se em ministérios e convenções, com pastores-presidentes.</p>
+    <div style="padding:14px 18px;border-radius:10px;background:rgba(45,212,191,0.08);border-left:3px solid #2dd4bf;margin-bottom:14px;">
+      <p style="margin:0;font-size:13px;font-style:italic;color:rgba(180,255,240,0.85);line-height:1.70;"><strong style="color:#2dd4bf;font-style:normal;">Confissão de 1689, cap. 22, §1:</strong> "O modo aceitável de adorar o verdadeiro Deus é instituído por ele mesmo [...] nenhum modo não prescrito na Sagrada Escritura."</p>
+    </div>
+    <p style="font-size:clamp(17px,2.2vw,19px);color:rgba(235,228,255,0.92);line-height:1.82;margin:0 0 14px;">O <strong style="color:#2dd4bf;">princípio regulador do culto</strong>: os elementos são os prescritos pela Escritura — leitura e pregação da Palavra, oração, cânticos, ofertas, batismo e Ceia. As <em>circunstâncias</em> do culto (horário, lugar) ordenam-se pela prudência cristã. Isso não torna o culto frio: alegria e reverência caminham juntas (Sl 2.11).</p>
+    <p style="font-size:clamp(17px,2.2vw,19px);color:rgba(235,228,255,0.92);line-height:1.82;margin:0;">No governo: dois ofícios (presbíteros/pastores e diáconos), escolhidos pela congregação. Ponto de afinidade com o pentecostalismo: o cap. 26, §11 reconhece que irmãos capacitados e aprovados pela igreja <em>podem pregar</em>.</p>
+  </div>
+</div>
+
+<!-- TEMA 4.8 -->
+<div style="margin-bottom:36px;border-radius:16px;overflow:hidden;border:1px solid rgba(129,140,248,0.30);">
+  <div style="padding:14px 20px;background:rgba(129,140,248,0.14);display:flex;align-items:center;gap:10px;">
+    <span style="font-size:10px;font-weight:900;letter-spacing:0.24em;text-transform:uppercase;color:#818cf8;padding:3px 10px;border-radius:20px;background:rgba(129,140,248,0.15);border:1px solid rgba(129,140,248,0.35);">Tema 4.8</span>
+    <h3 style="margin:0;font-size:clamp(15px,2.2vw,18px);font-weight:900;color:#fff;">As Últimas Coisas</h3>
+  </div>
+  <div style="padding:clamp(16px,3vw,24px);">
+    <p style="font-size:clamp(17px,2.2vw,19px);color:rgba(235,228,255,0.92);line-height:1.82;margin:0 0 14px;">A Declaração confessa a segunda vinda "em duas fases distintas: arrebatamento pré-tribulacional e reino milenar de mil anos" — escatologia pré-milenista dispensacionalista, sistema formulado no século XIX.</p>
+    <p style="font-size:clamp(17px,2.2vw,19px);color:rgba(235,228,255,0.92);line-height:1.82;margin:0 0 14px;">A Confissão de 1689 <strong style="color:#818cf8;">não define posição sobre o milênio</strong>. Fala de "um dia" de juízo e da ressurreição, linguagem compatível com amilenismo, pós-milenismo histórico e pré-milenismo histórico. O que ela não acomoda com facilidade é o esquema dispensacionalista das duas vindas separadas.</p>
+    <div style="padding:14px 18px;border-radius:10px;background:rgba(129,140,248,0.08);border-left:3px solid #818cf8;">
+      <p style="margin:0;font-size:15px;color:rgba(215,220,255,0.92);line-height:1.70;">Este é ponto secundário — a Confissão exige fé na volta pessoal e visível de Cristo, na ressurreição do corpo e no juízo final. A ênfase reformada recai menos em cronogramas e mais na vigilância e na esperança que santificam a vida presente (Mt 25.13; 1Jo 3.2-3).</p>
+    </div>
+  </div>
+</div>
+
+<!-- 5. DISCUSSÃO / QUADRO 2 -->
+<h2 style="font-size:clamp(18px,2.8vw,26px);font-weight:900;color:#fff;margin:40px 0 16px;display:flex;align-items:center;gap:10px;">
+  <span style="display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:10px;background:rgba(251,191,36,0.18);border:1px solid rgba(251,191,36,0.35);font-size:13px;font-weight:900;color:#fbbf24;flex-shrink:0;">5</span>
+  Discussão
+</h2>
+<p style="font-size:clamp(18px,2.4vw,21px);color:rgba(235,228,255,0.92);line-height:1.82;margin:0 0 20px;">A análise permite agrupar as divergências em três núcleos:</p>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-bottom:28px;">
+  <div style="padding:18px;border-radius:14px;background:rgba(96,165,250,0.08);border:1px solid rgba(96,165,250,0.25);">
+    <p style="font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:0.20em;color:#60a5fa;margin:0 0 8px;">1 — Hermenêutico</p>
+    <p style="font-size:13px;color:rgba(200,220,255,0.80);margin:0;line-height:1.65;">Leitura de Atos como narrativa normativa para o indivíduo (pentecostal) ou como eventos histórico-redentores irrepetíveis (reformado). Daqui dependem batismo no Espírito e continuidade dos dons.</p>
+  </div>
+  <div style="padding:18px;border-radius:14px;background:rgba(251,191,36,0.08);border:1px solid rgba(251,191,36,0.25);">
+    <p style="font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:0.20em;color:#fbbf24;margin:0 0 8px;">2 — Soteriológico</p>
+    <p style="font-size:13px;color:rgba(255,240,180,0.80);margin:0;line-height:1.65;">Graça resistível (arminiana) ou eficaz monergística (reformada). Daqui decorrem coerentemente a possível perda da salvação e a perseverança dos santos.</p>
+  </div>
+  <div style="padding:18px;border-radius:14px;background:rgba(45,212,191,0.08);border:1px solid rgba(45,212,191,0.25);">
+    <p style="font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:0.20em;color:#2dd4bf;margin:0 0 8px;">3 — Eclesiológico</p>
+    <p style="font-size:13px;color:rgba(180,255,240,0.80);margin:0;line-height:1.65;">Princípio regulador do culto e autonomia da igreja local (reformado) vs. espontaneidade e governo episcopal-convencional (pentecostal).</p>
+  </div>
+</div>
+
+<!-- QUADRO 2 -->
+<div style="margin-bottom:32px;overflow-x:auto;">
+  <div style="min-width:600px;">
+    <div style="padding:12px 16px;background:rgba(251,113,133,0.15);border-radius:10px 10px 0 0;border:1px solid rgba(251,113,133,0.30);border-bottom:none;">
+      <p style="margin:0;font-size:10px;font-weight:900;letter-spacing:0.24em;text-transform:uppercase;color:#fb7185;">Quadro 2 — Síntese das Divergências Doutrinárias</p>
+    </div>
+    <div style="border:1px solid rgba(251,113,133,0.20);border-radius:0 0 10px 10px;overflow:hidden;">
+      <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr 0.6fr;background:rgba(255,255,255,0.06);border-bottom:1px solid rgba(255,255,255,0.06);">
+        <div style="padding:10px 14px;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:0.14em;color:rgba(255,255,255,0.50);">Tema</div>
+        <div style="padding:10px 14px;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:0.14em;color:rgba(251,146,60,0.80);">Pentecostalismo</div>
+        <div style="padding:10px 14px;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:0.14em;color:rgba(192,132,252,0.80);">Confissão de 1689</div>
+        <div style="padding:10px 14px;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:0.14em;color:rgba(255,255,255,0.40);">Cap.</div>
+      </div>
+      ${[
+        ['Escritura','Única regra; revelações atuais julgadas pela Bíblia','Única regra; modos antigos cessaram','1'],
+        ['Batismo no Espírito','Distinto da salvação; evidência: línguas','Todo regenerado tem o Espírito','10, 13'],
+        ['Dons','Atualidade de todos os dons','Cessação dos dons revelacionais','1, 22'],
+        ['Salvação','Graça resistível; eleição condicional','Eleição incondicional; vocação eficaz','3, 9, 10'],
+        ['Perseverança','Possível perda da salvação','Os eleitos perseveram até o fim','17, 18'],
+        ['Cura e prosperidade','Cura na expiação; prosperidade (neopentecostal)','Deus cura segundo sua vontade','5'],
+        ['Culto e governo','Espontaneidade; convenções','Princípio regulador; presbíteros e diáconos','22, 26'],
+        ['Escatologia','Arrebatamento pré-trib.; milênio literal','Volta, ressurreição e juízo; milênio não definido','31, 32'],
+      ].map((r,i) => `
+      <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr 0.6fr;border-bottom:1px solid rgba(255,255,255,0.04);background:${i%2===0?'transparent':'rgba(255,255,255,0.02)'};">
+        <div style="padding:10px 14px;font-size:13px;font-weight:800;color:#fb7185;">${r[0]}</div>
+        <div style="padding:10px 14px;font-size:14px;color:rgba(255,210,185,0.90);line-height:1.55;">${r[1]}</div>
+        <div style="padding:10px 14px;font-size:14px;color:rgba(218,200,255,0.90);line-height:1.55;">${r[2]}</div>
+        <div style="padding:10px 14px;font-size:12px;color:rgba(255,255,255,0.35);">${r[3]}</div>
+      </div>`).join('')}
+    </div>
+  </div>
+</div>
+
+<div style="padding:16px 20px;border-radius:12px;background:rgba(52,211,153,0.08);border:1px solid rgba(52,211,153,0.22);margin-bottom:16px;">
+  <p style="margin:0;font-size:16px;color:rgba(190,255,228,0.95);line-height:1.75;"><strong style="color:#34d399;">Implicação pastoral:</strong> A teologia da prosperidade <em>não deve</em> ser tratada como divergência entre reformados e pentecostais clássicos — ela é criticada também por teólogos pentecostais (Fee) e caracteriza o neopentecostalismo. O discipulado deve começar pelo terreno comum, distinguir o essencial do secundário, e apresentar a doutrina reformada como consolo — especialmente a segurança da salvação.</p>
+</div>
+
+<!-- 6. CONSIDERAÇÕES FINAIS -->
+<h2 style="font-size:clamp(18px,2.8vw,26px);font-weight:900;color:#fff;margin:40px 0 16px;display:flex;align-items:center;gap:10px;">
+  <span style="display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:10px;background:rgba(192,132,252,0.18);border:1px solid rgba(192,132,252,0.35);font-size:13px;font-weight:900;color:#c084fc;flex-shrink:0;">6</span>
+  Considerações Finais
+</h2>
+<p style="font-size:clamp(18px,2.4vw,21px);color:rgba(235,228,255,0.92);line-height:1.82;margin:0 0 14px;">Este artigo comparou a Confissão de Fé Batista de 1689 e a Declaração de Fé das Assembleias de Deus em oito temas doutrinários. Constatou-se que as duas tradições compartilham o núcleo da fé evangélica e, no caso batista, também a prática do batismo de crentes por imersão.</p>
+<p style="font-size:clamp(18px,2.4vw,21px);color:rgba(235,228,255,0.92);line-height:1.82;margin:0 0 14px;">As divergências concentram-se nos oito temas analisados. Verificou-se que elas não são arbitrárias, mas decorrem de <strong style="color:#c084fc;">pressupostos hermenêuticos e soteriológicos coerentes em cada sistema</strong>. Por isso, um diálogo frutífero exige que cada tradição seja apresentada por suas fontes oficiais e por seus melhores teólogos.</p>
+<div style="padding:16px 20px;border-radius:12px;background:rgba(192,132,252,0.08);border:1px solid rgba(192,132,252,0.22);margin-bottom:16px;">
+  <p style="margin:0;font-size:16px;color:rgba(228,210,255,0.95);line-height:1.75;"><strong style="color:#c084fc;">Desdobramentos sugeridos:</strong> Estudos que verifiquem empiricamente a experiência de membros oriundos do pentecostalismo em igrejas reformadas; e que ampliem a comparação a outras confissões pentecostais brasileiras, como as da Congregação Cristã no Brasil e da Igreja do Evangelho Quadrangular.</p>
+</div>
+
+<!-- REFERÊNCIAS -->
+<h2 style="font-size:clamp(16px,2.4vw,22px);font-weight:900;color:#fff;margin:40px 0 16px;">Referências</h2>
+<div style="padding:clamp(20px,3vw,28px);border-radius:14px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,255,255,0.08);">
+  <div style="display:flex;flex-direction:column;gap:10px;">
+    ${[
+      'A CONFESSION of faith put forth by the elders and brethren of many congregations of Christians [...] in London and the country. London, 1677.',
+      'ASSEMBLIES OF GOD (USA). <em>Statement of Fundamental Truths.</em> Springfield, MO: General Council of the Assemblies of God, [20--].',
+      'BERKHOF, Louis. <em>Teologia sistemática.</em> 4. ed. Campinas: Luz para o Caminho, 1996.',
+      'BRUNER, Frederick Dale. <em>A Theology of the Holy Spirit.</em> Grand Rapids: Eerdmans, 1970.',
+      'CARSON, D. A. <em>A manifestação do Espírito.</em> São Paulo: Vida Nova, 2013.',
+      'DUNN, James D. G. <em>Baptism in the Holy Spirit.</em> London: SCM Press, 1970.',
+      'FEE, Gordon D. <em>Paulo, o Espírito e o povo de Deus.</em> São Paulo: Vida Nova, 2015.',
+      'FEE, Gordon D. <em>The Disease of the Health and Wealth Gospels.</em> Vancouver: Regent College Publishing, 1985.',
+      'FEE, Gordon D.; STUART, Douglas. <em>Entendes o que lês?</em> 3. ed. São Paulo: Vida Nova, 2011.',
+      'FERGUSON, Sinclair B. <em>O Espírito Santo.</em> São Paulo: Os Puritanos, 2000.',
+      'FRESTON, Paul. Breve história do pentecostalismo brasileiro. In: ANTONIAZZI, Alberto et al. <em>Nem anjos nem demônios.</em> Petrópolis: Vozes, 1994.',
+      'GAFFIN JR., Richard B. <em>Perspectives on Pentecost.</em> Phillipsburg, NJ: Presbyterian and Reformed, 1979.',
+      'GRUDEM, Wayne A. (org.). <em>Cessaram os dons espirituais? 4 pontos de vista.</em> São Paulo: Vida, 2003.',
+      'HORTON, Stanley M. (ed.). <em>Teologia sistemática: uma perspectiva pentecostal.</em> Rio de Janeiro: CPAD, 1996.',
+      'LOPES, Augustus Nicodemus. Martyn Lloyd-Jones, John Stott e 1Co 12.13. <em>Fides Reformata,</em> v. 1, n. 1, 1996.',
+      'MACARTHUR, John. <em>Fogo estranho.</em> Rio de Janeiro: Thomas Nelson Brasil, 2016.',
+      'MARIANO, Ricardo. <em>Neopentecostais.</em> São Paulo: Loyola, 1999.',
+      'ROBERTSON, O. Palmer. <em>A palavra final.</em> São Paulo: Os Puritanos, 1999.',
+      'SILVA, Esequias Soares da (org.). <em>Declaração de Fé das Assembleias de Deus.</em> Rio de Janeiro: CPAD, 2017.',
+      'STOTT, John R. W. <em>Batismo e plenitude do Espírito Santo.</em> 2. ed. São Paulo: Vida Nova, 1986.',
+      'STRONSTAD, Roger. <em>A teologia carismática de Lucas.</em> Rio de Janeiro: CPAD, 2018.',
+      'WALDRON, Samuel E. <em>Uma exposição moderna da Confissão de Fé Batista de 1689.</em> [S.l.]: O Estandarte de Cristo, 2021.',
+      'WARFIELD, Benjamin B. <em>Counterfeit Miracles.</em> New York: Charles Scribner\'s Sons, 1918.',
+    ].map(r => `<p style="margin:0;font-size:15px;color:rgba(215,225,255,0.88);line-height:1.65;">${r}</p>`).join('')}
+  </div>
+</div>
+
+<!-- NOTAS DE RODAPÉ -->
+<div style="margin-top:48px;padding-top:28px;border-top:1px solid rgba(192,132,252,0.20);">
+  <p style="font-size:10px;font-weight:900;letter-spacing:0.28em;text-transform:uppercase;color:rgba(192,132,252,0.55);margin:0 0 20px;">Notas de Rodapé</p>
+  <div style="display:flex;flex-direction:column;gap:14px;">
+
+    <div style="display:flex;gap:12px;align-items:flex-start;">
+      <span style="flex-shrink:0;display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:6px;background:rgba(192,132,252,0.14);border:1px solid rgba(192,132,252,0.30);font-size:11px;font-weight:900;color:#c084fc;margin-top:2px;">*</span>
+      <p style="margin:0;font-size:14px;color:rgba(210,200,255,0.80);line-height:1.72;">
+        <strong style="color:rgba(235,225,255,0.92);">Fabio Miranda.</strong>
+        Bacharel em Teologia Reformada (2001–2006). Mestre em Educação e Tecnologias (2012–2014). Doutorado em Teologia Reformada (2022–2026). Cursando PhD em Teologia Contemporânea (2026–2028). Professor universitário há mais de 30 anos em Teologia e Tecnologias.
+      </p>
+    </div>
+
+    <div style="display:flex;gap:12px;align-items:flex-start;">
+      <span style="flex-shrink:0;display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:6px;background:rgba(192,132,252,0.14);border:1px solid rgba(192,132,252,0.30);font-size:11px;font-weight:900;color:#c084fc;margin-top:2px;">1</span>
+      <p style="margin:0;font-size:14px;color:rgba(210,200,255,0.80);line-height:1.72;">
+        As citações da Confissão de Fé Batista de 1689 são tradução livre do autor a partir do texto inglês original. Recomenda-se o cotejo com edições em língua portuguesa (por exemplo, <em>CONFISSÃO…</em>, 2025).
+      </p>
+    </div>
+
+  </div>
+</div>
+
+</div>
+`,
+  },
+  {
     id: 'artigo-pregacao-expositiva-01',
     slug: 'o-que-nao-e-pregacao-expositiva',
     categoria: 'Homilética & Pregação',
@@ -584,7 +974,7 @@ Como interpretar a Escritura de modo a produzir conhecimento verdadeiro de Deus,
     <span style="font-size:10px;font-weight:900;letter-spacing:0.26em;text-transform:uppercase;color:rgba(255,130,130,0.90);">⚠️ Problema de Pesquisa</span>
   </div>
   <div style="padding:clamp(16px,3vw,24px);">
-    <p style="font-size:clamp(15px,2vw,17px);color:rgba(255,210,210,0.92);font-style:italic;line-height:1.85;margin:0;">Como interpretar a Escritura de modo a produzir conhecimento verdadeiro de Deus, sem reduzir o significado bíblico a apenas um dos três polos do ato interpretativo — a <strong>intenção do autor</strong>, a <strong>subjetividade do leitor</strong>, ou as <strong>convenções da comunidade interpretativa</strong>?</p>
+    <p style="font-size:clamp(18px,2.4vw,21px);color:rgba(255,210,210,0.92);font-style:italic;line-height:1.85;margin:0;">Como interpretar a Escritura de modo a produzir conhecimento verdadeiro de Deus, sem reduzir o significado bíblico a apenas um dos três polos do ato interpretativo — a <strong>intenção do autor</strong>, a <strong>subjetividade do leitor</strong>, ou as <strong>convenções da comunidade interpretativa</strong>?</p>
   </div>
 </div>
 
@@ -598,7 +988,7 @@ Como interpretar a Escritura de modo a produzir conhecimento verdadeiro de Deus,
     <span style="font-size:10px;font-weight:900;letter-spacing:0.30em;text-transform:uppercase;color:#00D4FF;">Tese Central do Artigo</span>
   </div>
   <div style="padding:clamp(18px,3vw,28px);">
-    <p style="font-size:clamp(15px,2vw,17px);color:#ffffff;font-weight:700;line-height:1.80;margin:0 0 12px;">Vanhoozer ancora o significado bíblico no <em>ato comunicativo do autor</em> — humano e divino — regulado pela unidade canônica, recusando tanto o autoritarismo autoral (Hirsch) quanto o relativismo do leitor (Fish) e a autoridade comunitária autorreferente (Lindbeck).</p>
+    <p style="font-size:clamp(18px,2.4vw,21px);color:#ffffff;font-weight:700;line-height:1.80;margin:0 0 12px;">Vanhoozer ancora o significado bíblico no <em>ato comunicativo do autor</em> — humano e divino — regulado pela unidade canônica, recusando tanto o autoritarismo autoral (Hirsch) quanto o relativismo do leitor (Fish) e a autoridade comunitária autorreferente (Lindbeck).</p>
     <p style="font-size:14px;color:rgba(180,210,255,0.70);line-height:1.65;margin:0;font-style:italic;">A quarta via: nem psicologismo, nem relativismo, nem comunitarismo — mas hermenêutica canônico-comunicativa.</p>
   </div>
 </div>
@@ -824,7 +1214,7 @@ Como interpretar a Escritura de modo a produzir conhecimento verdadeiro de Deus,
 
 <!-- PULL QUOTE: VANHOOZER -->
 <blockquote style="border-left:4px solid rgba(0,212,255,0.55);background:rgba(0,212,255,0.04);padding:18px 24px;border-radius:0 10px 10px 0;margin:28px 0;">
-  <p style="font-size:clamp(15px,2vw,17px);font-style:italic;color:rgba(180,230,255,0.92);line-height:1.80;margin:0 0 8px;">"O significado é ação comunicativa tridimensional, com forma e matéria (conteúdo proposicional), energia e trajetória (força ilocucionária), e teleologia (efeito perlocucionário)."</p>
+  <p style="font-size:clamp(18px,2.4vw,21px);font-style:italic;color:rgba(180,230,255,0.92);line-height:1.80;margin:0 0 8px;">"O significado é ação comunicativa tridimensional, com forma e matéria (conteúdo proposicional), energia e trajetória (força ilocucionária), e teleologia (efeito perlocucionário)."</p>
   <div style="font-size:12px;color:rgba(0,212,255,0.60);font-weight:700;letter-spacing:0.08em;">— Kevin J. Vanhoozer, <em>Is There a Meaning in This Text?</em>, 1998</div>
 </blockquote>
 
@@ -870,7 +1260,7 @@ Como interpretar a Escritura de modo a produzir conhecimento verdadeiro de Deus,
 
 <!-- PULL QUOTE: RICOEUR -->
 <blockquote style="border-left:4px solid rgba(255,140,60,0.50);background:rgba(255,140,60,0.04);padding:18px 24px;border-radius:0 10px 10px 0;margin:0 0 28px;">
-  <p style="font-size:clamp(15px,2vw,17px);font-style:italic;color:rgba(255,200,150,0.90);line-height:1.80;margin:0 0 8px;">"Compreender o texto não é descobrir a intenção do autor escondida atrás do texto, mas desdobrar o mundo <em>diante</em> dele."</p>
+  <p style="font-size:clamp(18px,2.4vw,21px);font-style:italic;color:rgba(255,200,150,0.90);line-height:1.80;margin:0 0 8px;">"Compreender o texto não é descobrir a intenção do autor escondida atrás do texto, mas desdobrar o mundo <em>diante</em> dele."</p>
   <div style="font-size:12px;color:rgba(255,180,100,0.55);font-weight:700;letter-spacing:0.08em;">— Paul Ricoeur, <em>Interpretation Theory</em>, 1976, p. 38</div>
 </blockquote>
 
@@ -909,7 +1299,7 @@ Como interpretar a Escritura de modo a produzir conhecimento verdadeiro de Deus,
 
 <!-- PULL QUOTE: WEBSTER -->
 <blockquote style="border-left:4px solid rgba(60,200,100,0.55);background:rgba(60,200,100,0.04);padding:18px 24px;border-radius:0 10px 10px 0;margin:0 0 28px;">
-  <p style="font-size:clamp(15px,2vw,17px);font-style:italic;color:rgba(160,240,180,0.92);line-height:1.80;margin:0 0 8px;">"A teologia fala do que o texto <em>é</em> e do que o texto <em>faz</em> antes de falar do que nós fazemos com o texto."</p>
+  <p style="font-size:clamp(18px,2.4vw,21px);font-style:italic;color:rgba(160,240,180,0.92);line-height:1.80;margin:0 0 8px;">"A teologia fala do que o texto <em>é</em> e do que o texto <em>faz</em> antes de falar do que nós fazemos com o texto."</p>
   <div style="font-size:12px;color:rgba(100,230,140,0.55);font-weight:700;letter-spacing:0.08em;">— John Webster, <em>The Domain of the Word</em>, 2012, p. 3</div>
 </blockquote>
 
@@ -1232,7 +1622,7 @@ Se o significado bíblico não pode ser ancorado em nada além do jogo infinito 
     <span style="margin-left:auto;font-size:10px;color:rgba(255,130,130,0.55);font-weight:700;">Roland Barthes · "The Death of the Author" (1967)</span>
   </div>
   <div style="padding:clamp(16px,3vw,24px);">
-    <p style="font-size:clamp(15px,2vw,17px);color:rgba(255,210,210,0.92);font-style:italic;line-height:1.85;margin:0 0 12px;">"To give a text an Author is to impose a limit on that text, to furnish it with a final signified, to close the writing. Such a conception suits criticism very well, the latter then allotting itself the important task of discovering the Author... beneath the work: when the Author has been found, the text is 'explained' — victory to the critic."</p>
+    <p style="font-size:clamp(18px,2.4vw,21px);color:rgba(255,210,210,0.92);font-style:italic;line-height:1.85;margin:0 0 12px;">"To give a text an Author is to impose a limit on that text, to furnish it with a final signified, to close the writing. Such a conception suits criticism very well, the latter then allotting itself the important task of discovering the Author... beneath the work: when the Author has been found, the text is 'explained' — victory to the critic."</p>
     <p style="font-size:13px;color:rgba(255,160,160,0.60);margin:0;font-weight:700;letter-spacing:0.04em;">— BARTHES, Roland. "The Death of the Author." In: <em>Image, Music, Text.</em> Transl. Stephen Heath. New York: Hill and Wang, 1977. p. 147.</p>
   </div>
 </div>
@@ -1247,7 +1637,7 @@ Se o significado bíblico não pode ser ancorado em nada além do jogo infinito 
     <span style="margin-left:auto;font-size:10px;color:rgba(0,212,255,0.55);font-weight:700;">Vanhoozer · <em>Is There a Meaning in This Text?</em> p. 48</span>
   </div>
   <div style="padding:clamp(16px,3vw,24px);">
-    <p style="font-size:clamp(15px,2vw,17px);color:rgba(200,235,255,0.92);font-style:italic;line-height:1.85;margin:0 0 12px;">"The 'death of the author' is more than a literary slogan; it is an ideological manifesto... If the author is dead, the text is an orphan and interpretation becomes an exercise in literary adoption — readers take texts home and make them their own. The theological consequences are severe: if God is an author — indeed, if God is the author of authors — then the death of the author is the death of God."</p>
+    <p style="font-size:clamp(18px,2.4vw,21px);color:rgba(200,235,255,0.92);font-style:italic;line-height:1.85;margin:0 0 12px;">"The 'death of the author' is more than a literary slogan; it is an ideological manifesto... If the author is dead, the text is an orphan and interpretation becomes an exercise in literary adoption — readers take texts home and make them their own. The theological consequences are severe: if God is an author — indeed, if God is the author of authors — then the death of the author is the death of God."</p>
     <p style="font-size:13px;color:rgba(0,212,255,0.55);margin:0;font-weight:700;letter-spacing:0.04em;">— VANHOOZER, Kevin J. <em>Is There a Meaning in This Text? The Bible, the Reader, and the Morality of Literary Knowledge.</em> Grand Rapids: Zondervan, 1998. p. 48.</p>
   </div>
 </div>
@@ -1310,7 +1700,7 @@ Se o significado bíblico não pode ser ancorado em nada além do jogo infinito 
     <span style="margin-left:auto;font-size:10px;color:rgba(0,212,255,0.55);font-weight:700;">Vanhoozer · <em>Is There a Meaning in This Text?</em> p. 209</span>
   </div>
   <div style="padding:clamp(16px,3vw,24px);">
-    <p style="font-size:clamp(15px,2vw,17px);color:rgba(200,235,255,0.92);font-style:italic;line-height:1.85;margin:0 0 12px;">"Meaning is a matter of what authors do with words — specifically, illocutionary acts. The text's meaning is not hidden behind the words, nor projected onto them by the reader, but is enacted through them. To understand a text is to grasp what the author was doing in writing it — the kind of act being performed."</p>
+    <p style="font-size:clamp(18px,2.4vw,21px);color:rgba(200,235,255,0.92);font-style:italic;line-height:1.85;margin:0 0 12px;">"Meaning is a matter of what authors do with words — specifically, illocutionary acts. The text's meaning is not hidden behind the words, nor projected onto them by the reader, but is enacted through them. To understand a text is to grasp what the author was doing in writing it — the kind of act being performed."</p>
     <p style="font-size:13px;color:rgba(0,212,255,0.55);margin:0;font-weight:700;letter-spacing:0.04em;">— VANHOOZER, Kevin J. <em>Is There a Meaning in This Text?</em> Grand Rapids: Zondervan, 1998. p. 209.</p>
   </div>
 </div>
@@ -1344,7 +1734,7 @@ Se o significado bíblico não pode ser ancorado em nada além do jogo infinito 
     <span style="margin-left:auto;font-size:10px;color:rgba(0,212,255,0.55);font-weight:700;">Vanhoozer · <em>The Drama of Doctrine</em> p. 115</span>
   </div>
   <div style="padding:clamp(16px,3vw,24px);">
-    <p style="font-size:clamp(15px,2vw,17px);color:rgba(200,235,255,0.92);font-style:italic;line-height:1.85;margin:0 0 12px;">"Scripture is the script for the theodrama... The canon provides an authoritative account of the divine action and the divinely authorized norms for human response. What makes the Bible canonical is, first and foremost, what God does with the text: Scripture is the Spirit's means of communicating Christ's lordship."</p>
+    <p style="font-size:clamp(18px,2.4vw,21px);color:rgba(200,235,255,0.92);font-style:italic;line-height:1.85;margin:0 0 12px;">"Scripture is the script for the theodrama... The canon provides an authoritative account of the divine action and the divinely authorized norms for human response. What makes the Bible canonical is, first and foremost, what God does with the text: Scripture is the Spirit's means of communicating Christ's lordship."</p>
     <p style="font-size:13px;color:rgba(0,212,255,0.55);margin:0;font-weight:700;letter-spacing:0.04em;">— VANHOOZER, Kevin J. <em>The Drama of Doctrine: A Canonical-Linguistic Approach to Christian Theology.</em> Louisville: Westminster John Knox Press, 2005. p. 115.</p>
   </div>
 </div>
@@ -1362,7 +1752,7 @@ Se o significado bíblico não pode ser ancorado em nada além do jogo infinito 
     <span style="margin-left:auto;font-size:10px;color:rgba(160,80,255,0.60);font-weight:700;">Stanley Fish · <em>Is There a Text in This Class?</em> p. 3</span>
   </div>
   <div style="padding:clamp(16px,3vw,24px);">
-    <p style="font-size:clamp(15px,2vw,17px);color:rgba(225,210,255,0.92);font-style:italic;line-height:1.85;margin:0 0 12px;">"Readers do not decode poems; they make them... Interpretation is not the art of construing but the art of constructing. Interpreters do not decode meaning; they create it... There is no such thing as a text that is not already the product of an interpretation."</p>
+    <p style="font-size:clamp(18px,2.4vw,21px);color:rgba(225,210,255,0.92);font-style:italic;line-height:1.85;margin:0 0 12px;">"Readers do not decode poems; they make them... Interpretation is not the art of construing but the art of constructing. Interpreters do not decode meaning; they create it... There is no such thing as a text that is not already the product of an interpretation."</p>
     <p style="font-size:13px;color:rgba(160,80,255,0.60);margin:0;font-weight:700;letter-spacing:0.04em;">— FISH, Stanley. <em>Is There a Text in This Class? The Authority of Interpretive Communities.</em> Cambridge: Harvard University Press, 1980. p. 3.</p>
   </div>
 </div>
@@ -1419,7 +1809,7 @@ Se o significado bíblico não pode ser ancorado em nada além do jogo infinito 
     <span style="margin-left:auto;font-size:10px;color:rgba(255,140,60,0.60);font-weight:700;">Paul Ricoeur · <em>Interpretation Theory</em> p. 29–30</span>
   </div>
   <div style="padding:clamp(16px,3vw,24px);">
-    <p style="font-size:clamp(15px,2vw,17px);color:rgba(255,230,200,0.92);font-style:italic;line-height:1.85;margin:0 0 12px;">"A text's career escapes the finite horizon lived by its author. What the text says now matters more than what the author meant to say... The text's meaning and the author's meaning overlap only partially. This is why understanding at depth requires something other than divining the original intention."</p>
+    <p style="font-size:clamp(18px,2.4vw,21px);color:rgba(255,230,200,0.92);font-style:italic;line-height:1.85;margin:0 0 12px;">"A text's career escapes the finite horizon lived by its author. What the text says now matters more than what the author meant to say... The text's meaning and the author's meaning overlap only partially. This is why understanding at depth requires something other than divining the original intention."</p>
     <p style="font-size:13px;color:rgba(255,140,60,0.55);margin:0;font-weight:700;letter-spacing:0.04em;">— RICOEUR, Paul. <em>Interpretation Theory: Discourse and the Surplus of Meaning.</em> Fort Worth: Texas Christian University Press, 1976. pp. 29–30.</p>
   </div>
 </div>
@@ -1433,24 +1823,24 @@ Se o significado bíblico não pode ser ancorado em nada além do jogo infinito 
   <div style="display:flex;flex-direction:column;gap:14px;">
     <div style="display:flex;gap:12px;">
       <span style="font-size:11px;font-weight:900;color:#00D4FF;min-width:32px;padding-top:2px;">P1</span>
-      <span style="font-size:clamp(15px,2vw,17px);color:rgba(220,232,255,0.85);line-height:1.65;">Todo ato de fala possui uma dimensão ilocucionária — aquilo que o falante <em>faz</em> ao dizer algo — distinta do mero proferir palavras e do efeito produzido no ouvinte.</span>
+      <span style="font-size:clamp(18px,2.4vw,21px);color:rgba(220,232,255,0.85);line-height:1.65;">Todo ato de fala possui uma dimensão ilocucionária — aquilo que o falante <em>faz</em> ao dizer algo — distinta do mero proferir palavras e do efeito produzido no ouvinte.</span>
     </div>
     <div style="display:flex;gap:12px;">
       <span style="font-size:11px;font-weight:900;color:#00D4FF;min-width:32px;padding-top:2px;">P2</span>
-      <span style="font-size:clamp(15px,2vw,17px);color:rgba(220,232,255,0.85);line-height:1.65;">Os autores bíblicos realizam atos de fala genuínos, mesmo sob inspiração divina — a inspiração se serve da agência comunicativa humana, de modo que os atos ilocucionários são, em última instância, de Deus.</span>
+      <span style="font-size:clamp(18px,2.4vw,21px);color:rgba(220,232,255,0.85);line-height:1.65;">Os autores bíblicos realizam atos de fala genuínos, mesmo sob inspiração divina — a inspiração se serve da agência comunicativa humana, de modo que os atos ilocucionários são, em última instância, de Deus.</span>
     </div>
     <div style="display:flex;gap:12px;">
       <span style="font-size:11px;font-weight:900;color:#00D4FF;min-width:32px;padding-top:2px;">P3</span>
-      <span style="font-size:clamp(15px,2vw,17px);color:rgba(220,232,255,0.85);line-height:1.65;">Reconhecer o ato ilocucionário do autor é condição necessária para identificar o significado do texto — somente a dimensão ilocucionária refere-se a algo intrínseco ao ato.</span>
+      <span style="font-size:clamp(18px,2.4vw,21px);color:rgba(220,232,255,0.85);line-height:1.65;">Reconhecer o ato ilocucionário do autor é condição necessária para identificar o significado do texto — somente a dimensão ilocucionária refere-se a algo intrínseco ao ato.</span>
     </div>
     <div style="display:flex;gap:12px;">
       <span style="font-size:11px;font-weight:900;color:#00D4FF;min-width:32px;padding-top:2px;">P4</span>
-      <span style="font-size:clamp(15px,2vw,17px);color:rgba(220,232,255,0.85);line-height:1.65;">O cânon, como discurso autoral divino unificado, fornece o contexto regulador dentro do qual os atos ilocucionários humanos devem ser lidos teologicamente.</span>
+      <span style="font-size:clamp(18px,2.4vw,21px);color:rgba(220,232,255,0.85);line-height:1.65;">O cânon, como discurso autoral divino unificado, fornece o contexto regulador dentro do qual os atos ilocucionários humanos devem ser lidos teologicamente.</span>
     </div>
     <div style="height:1px;background:rgba(0,212,255,0.20);margin:4px 0;"></div>
     <div style="display:flex;gap:12px;align-items:flex-start;">
       <span style="font-size:16px;font-weight:900;color:#4ade80;min-width:32px;padding-top:1px;">∴</span>
-      <span style="font-size:clamp(15px,2vw,17px);color:#fff;line-height:1.65;font-weight:700;">O significado bíblico está ancorado no ato comunicativo do autor — humano e divino — regulado pela unidade canônica, e não na recepção autônoma do leitor ou nas convenções da comunidade interpretativa.</span>
+      <span style="font-size:clamp(18px,2.4vw,21px);color:#fff;line-height:1.65;font-weight:700;">O significado bíblico está ancorado no ato comunicativo do autor — humano e divino — regulado pela unidade canônica, e não na recepção autônoma do leitor ou nas convenções da comunidade interpretativa.</span>
     </div>
   </div>
 </div>
@@ -1463,7 +1853,7 @@ Se o significado bíblico não pode ser ancorado em nada além do jogo infinito 
     <span style="margin-left:auto;font-size:10px;color:rgba(0,212,255,0.55);font-weight:700;">Vanhoozer · <em>Is There a Meaning in This Text?</em> p. 265</span>
   </div>
   <div style="padding:clamp(16px,3vw,24px);">
-    <p style="font-size:clamp(15px,2vw,17px);color:rgba(200,235,255,0.92);font-style:italic;line-height:1.85;margin:0 0 12px;">"If interpretive communities create meaning, then there is no shared world between communities, only the worlds they create. But Christianity makes a universal claim — that in the life, death, and resurrection of Jesus Christ, something happened that matters for all people everywhere. Biblical interpretation must be anchored in something more than the will of the community if it is to maintain this claim."</p>
+    <p style="font-size:clamp(18px,2.4vw,21px);color:rgba(200,235,255,0.92);font-style:italic;line-height:1.85;margin:0 0 12px;">"If interpretive communities create meaning, then there is no shared world between communities, only the worlds they create. But Christianity makes a universal claim — that in the life, death, and resurrection of Jesus Christ, something happened that matters for all people everywhere. Biblical interpretation must be anchored in something more than the will of the community if it is to maintain this claim."</p>
     <p style="font-size:13px;color:rgba(0,212,255,0.55);margin:0;font-weight:700;letter-spacing:0.04em;">— VANHOOZER, Kevin J. <em>Is There a Meaning in This Text?</em> Grand Rapids: Zondervan, 1998. p. 265.</p>
   </div>
 </div>
@@ -1481,7 +1871,7 @@ Se o significado bíblico não pode ser ancorado em nada além do jogo infinito 
     <span style="margin-left:auto;font-size:10px;color:rgba(60,200,100,0.60);font-weight:700;">Webster · <em>The Domain of the Word</em> p. 6</span>
   </div>
   <div style="padding:clamp(16px,3vw,24px);">
-    <p style="font-size:clamp(15px,2vw,17px);color:rgba(210,255,230,0.92);font-style:italic;line-height:1.85;margin:0 0 12px;">"Scripture is part of the doctrine of God before it is part of hermeneutics or literary theory... It belongs to an account of what God is and does, and that account both defines what Scripture is and specifies the scope and character of rational human engagement with Scripture — engagement which is, at its core, repentance and faith."</p>
+    <p style="font-size:clamp(18px,2.4vw,21px);color:rgba(210,255,230,0.92);font-style:italic;line-height:1.85;margin:0 0 12px;">"Scripture is part of the doctrine of God before it is part of hermeneutics or literary theory... It belongs to an account of what God is and does, and that account both defines what Scripture is and specifies the scope and character of rational human engagement with Scripture — engagement which is, at its core, repentance and faith."</p>
     <p style="font-size:13px;color:rgba(60,200,100,0.55);margin:0;font-weight:700;letter-spacing:0.04em;">— WEBSTER, John. <em>The Domain of the Word: Scripture and Theological Reason.</em> London: T&T Clark, 2012. p. 6.</p>
   </div>
 </div>
@@ -1500,7 +1890,7 @@ Se o significado bíblico não pode ser ancorado em nada além do jogo infinito 
     <span style="margin-left:auto;font-size:10px;color:rgba(255,200,80,0.60);font-weight:700;">Thiselton · <em>The Two Horizons</em> p. 103</span>
   </div>
   <div style="padding:clamp(16px,3vw,24px);">
-    <p style="font-size:clamp(15px,2vw,17px);color:rgba(255,245,210,0.92);font-style:italic;line-height:1.85;margin:0 0 12px;">"The Holy Spirit operates through the ordinary processes of human understanding, and not independently of them, nor in contradiction to them... The interpreter's own horizon is not to be dissolved into that of the text, nor the text's horizon into the interpreter's, but both are enlarged and brought together in genuine understanding."</p>
+    <p style="font-size:clamp(18px,2.4vw,21px);color:rgba(255,245,210,0.92);font-style:italic;line-height:1.85;margin:0 0 12px;">"The Holy Spirit operates through the ordinary processes of human understanding, and not independently of them, nor in contradiction to them... The interpreter's own horizon is not to be dissolved into that of the text, nor the text's horizon into the interpreter's, but both are enlarged and brought together in genuine understanding."</p>
     <p style="font-size:13px;color:rgba(255,200,80,0.55);margin:0;font-weight:700;letter-spacing:0.04em;">— THISELTON, Anthony C. <em>The Two Horizons: New Testament Hermeneutics and Philosophical Description.</em> Grand Rapids: Eerdmans, 1980. p. 103.</p>
   </div>
 </div>
@@ -1537,7 +1927,7 @@ Se o significado bíblico não pode ser ancorado em nada além do jogo infinito 
   <div style="font-size:28px;flex-shrink:0;line-height:1;padding-top:2px;">⚠️</div>
   <div>
     <div style="font-size:10px;font-weight:900;letter-spacing:0.24em;text-transform:uppercase;color:rgba(255,140,100,0.85);margin-bottom:10px;">Diagnóstico Pastoral</div>
-    <p style="font-size:clamp(15px,2vw,17px);color:rgba(255,230,220,0.88);line-height:1.80;margin:0;">A crise hermenêutica que Vanhoozer diagnostica não é apenas acadêmica. Ela se manifesta toda vez que uma comunidade decide que a Bíblia significa o que a cultura já diz — toda vez que o "texto" é convocado para confirmar o que o leitor já quer ouvir, e toda vez que a autoridade da Escritura é subordinada ao consenso comunitário.</p>
+    <p style="font-size:clamp(18px,2.4vw,21px);color:rgba(255,230,220,0.88);line-height:1.80;margin:0;">A crise hermenêutica que Vanhoozer diagnostica não é apenas acadêmica. Ela se manifesta toda vez que uma comunidade decide que a Bíblia significa o que a cultura já diz — toda vez que o "texto" é convocado para confirmar o que o leitor já quer ouvir, e toda vez que a autoridade da Escritura é subordinada ao consenso comunitário.</p>
   </div>
 </div>
 
@@ -1551,7 +1941,7 @@ Se o significado bíblico não pode ser ancorado em nada além do jogo infinito 
     <span style="margin-left:auto;font-size:10px;color:rgba(0,212,255,0.55);font-weight:700;">Vanhoozer · <em>The Drama of Doctrine</em> p. 454</span>
   </div>
   <div style="padding:clamp(16px,3vw,24px);">
-    <p style="font-size:clamp(15px,2vw,17px);color:rgba(200,235,255,0.92);font-style:italic;line-height:1.85;margin:0 0 12px;">"Obedience and freedom are not necessarily contradictory... Obedience means understanding oneself in relation to another. The church's freedom lies not in autonomy from the canon but in its ability to perform the Scriptures faithfully — to embody the wisdom of God for the sake of the world."</p>
+    <p style="font-size:clamp(18px,2.4vw,21px);color:rgba(200,235,255,0.92);font-style:italic;line-height:1.85;margin:0 0 12px;">"Obedience and freedom are not necessarily contradictory... Obedience means understanding oneself in relation to another. The church's freedom lies not in autonomy from the canon but in its ability to perform the Scriptures faithfully — to embody the wisdom of God for the sake of the world."</p>
     <p style="font-size:13px;color:rgba(0,212,255,0.55);margin:0;font-weight:700;letter-spacing:0.04em;">— VANHOOZER, Kevin J. <em>The Drama of Doctrine.</em> Louisville: Westminster John Knox Press, 2005. p. 454.</p>
   </div>
 </div>
@@ -1675,7 +2065,7 @@ Se o significado bíblico não pode ser ancorado em nada além do jogo infinito 
     <span style="margin-left:auto;font-size:10px;color:rgba(0,212,255,0.55);font-weight:700;">Vanhoozer · <em>The Drama of Doctrine</em> p. 114</span>
   </div>
   <div style="padding:clamp(16px,3vw,24px);">
-    <p style="font-size:clamp(15px,2vw,17px);color:rgba(200,235,255,0.92);font-style:italic;line-height:1.85;margin:0 0 12px;">"The drama of doctrine... is about participating in the ongoing story of what God has done, is doing, and will do in Christ through the Spirit for the sake of the world. Doctrine is neither abstract proposition nor mere personal experience; it is the church's understanding of its role in the theodrama — the story of God's dealings with the world."</p>
+    <p style="font-size:clamp(18px,2.4vw,21px);color:rgba(200,235,255,0.92);font-style:italic;line-height:1.85;margin:0 0 12px;">"The drama of doctrine... is about participating in the ongoing story of what God has done, is doing, and will do in Christ through the Spirit for the sake of the world. Doctrine is neither abstract proposition nor mere personal experience; it is the church's understanding of its role in the theodrama — the story of God's dealings with the world."</p>
     <p style="font-size:13px;color:rgba(0,212,255,0.55);margin:0;font-weight:700;letter-spacing:0.04em;">— VANHOOZER, Kevin J. <em>The Drama of Doctrine: A Canonical-Linguistic Approach to Christian Theology.</em> Louisville: Westminster John Knox Press, 2005. p. 114.</p>
   </div>
 </div>
@@ -1729,7 +2119,7 @@ Se o significado bíblico não pode ser ancorado em nada além do jogo infinito 
     <span style="margin-left:auto;font-size:10px;color:rgba(0,212,255,0.55);font-weight:700;">Vanhoozer · <em>The Drama of Doctrine</em> p. 115</span>
   </div>
   <div style="padding:clamp(16px,3vw,24px);">
-    <p style="font-size:clamp(15px,2vw,17px);color:rgba(200,235,255,0.92);font-style:italic;line-height:1.85;margin:0 0 12px;">"Scripture is the script for the theodrama. The canon — the rule of faith — is an authoritative account of the divine action and the divinely authorized norms for human response... The Spirit makes the Scriptures into a living word: not a dead letter, but a living voice that speaks to, and in, every new situation."</p>
+    <p style="font-size:clamp(18px,2.4vw,21px);color:rgba(200,235,255,0.92);font-style:italic;line-height:1.85;margin:0 0 12px;">"Scripture is the script for the theodrama. The canon — the rule of faith — is an authoritative account of the divine action and the divinely authorized norms for human response... The Spirit makes the Scriptures into a living word: not a dead letter, but a living voice that speaks to, and in, every new situation."</p>
     <p style="font-size:13px;color:rgba(0,212,255,0.55);margin:0;font-weight:700;letter-spacing:0.04em;">— VANHOOZER, Kevin J. <em>The Drama of Doctrine.</em> Louisville: Westminster John Knox Press, 2005. p. 115.</p>
   </div>
 </div>
@@ -1749,7 +2139,7 @@ Se o significado bíblico não pode ser ancorado em nada além do jogo infinito 
         <span style="font-size:clamp(15px,2.2vw,18px);font-weight:900;color:#ffffff;">Ato 1 — Criação</span>
         <span style="font-size:clamp(12px,1.6vw,14px);font-weight:700;color:#4EC880;letter-spacing:0.06em;">Gênesis 1–2</span>
       </div>
-      <p style="margin:0;font-size:clamp(15px,2vw,17px);line-height:1.75;color:#D0E8D8;">O Autor apresenta o cenário perfeito. Deus cria com sabedoria e amor. Homem e mulher, imagem de Deus, vivem em <em>shalom</em> pleno.</p>
+      <p style="margin:0;font-size:clamp(18px,2.4vw,21px);line-height:1.75;color:#D0E8D8;">O Autor apresenta o cenário perfeito. Deus cria com sabedoria e amor. Homem e mulher, imagem de Deus, vivem em <em>shalom</em> pleno.</p>
     </div>
   </div>
 
@@ -1760,7 +2150,7 @@ Se o significado bíblico não pode ser ancorado em nada além do jogo infinito 
         <span style="font-size:clamp(15px,2.2vw,18px);font-weight:900;color:#ffffff;">Ato 2 — Queda</span>
         <span style="font-size:clamp(12px,1.6vw,14px);font-weight:700;color:#FF6B6B;letter-spacing:0.06em;">Gênesis 3–11</span>
       </div>
-      <p style="margin:0;font-size:clamp(15px,2vw,17px);line-height:1.75;color:#F0D0D0;">O enredo é perturbado. A rebelião humana introduz morte, vergonha, conflito e separação. O drama ganha sua <strong>tensão central</strong>.</p>
+      <p style="margin:0;font-size:clamp(18px,2.4vw,21px);line-height:1.75;color:#F0D0D0;">O enredo é perturbado. A rebelião humana introduz morte, vergonha, conflito e separação. O drama ganha sua <strong>tensão central</strong>.</p>
     </div>
   </div>
 
@@ -1771,7 +2161,7 @@ Se o significado bíblico não pode ser ancorado em nada além do jogo infinito 
         <span style="font-size:clamp(15px,2.2vw,18px);font-weight:900;color:#ffffff;">Ato 3 — Israel</span>
         <span style="font-size:clamp(12px,1.6vw,14px);font-weight:700;color:#FFC83C;letter-spacing:0.06em;">Gênesis 12 – Malaquias</span>
       </div>
-      <p style="margin:0;font-size:clamp(15px,2vw,17px);line-height:1.75;color:#EEE0C0;">Deus escolhe um povo como veículo de sua solução. A Lei, os profetas, o tabernáculo, os reis — tudo aponta para <strong>além de si mesmo</strong>.</p>
+      <p style="margin:0;font-size:clamp(18px,2.4vw,21px);line-height:1.75;color:#EEE0C0;">Deus escolhe um povo como veículo de sua solução. A Lei, os profetas, o tabernáculo, os reis — tudo aponta para <strong>além de si mesmo</strong>.</p>
     </div>
   </div>
 
@@ -1782,7 +2172,7 @@ Se o significado bíblico não pode ser ancorado em nada além do jogo infinito 
         <span style="font-size:clamp(15px,2.2vw,18px);font-weight:900;color:#ffffff;">Ato 4 — Jesus</span>
         <span style="font-size:clamp(12px,1.6vw,14px);font-weight:700;color:#00D4FF;letter-spacing:0.06em;">Evangelhos e Atos</span>
       </div>
-      <p style="margin:0;font-size:clamp(15px,2vw,17px);line-height:1.75;color:#C8E8F8;"><strong>O Clímax.</strong> O Autor entra no palco como personagem. Na encarnação, morte e ressurreição de Cristo, o conflito central é resolvido de forma definitiva.</p>
+      <p style="margin:0;font-size:clamp(18px,2.4vw,21px);line-height:1.75;color:#C8E8F8;"><strong>O Clímax.</strong> O Autor entra no palco como personagem. Na encarnação, morte e ressurreição de Cristo, o conflito central é resolvido de forma definitiva.</p>
     </div>
   </div>
 
@@ -1793,7 +2183,7 @@ Se o significado bíblico não pode ser ancorado em nada além do jogo infinito 
         <span style="font-size:clamp(15px,2.2vw,18px);font-weight:900;color:#ffffff;">Ato 5 — Igreja e Nova Criação</span>
         <span style="font-size:clamp(12px,1.6vw,14px);font-weight:700;color:#B46FFF;letter-spacing:0.06em;">Epístolas – Apocalipse</span>
       </div>
-      <p style="margin:0;font-size:clamp(15px,2vw,17px);line-height:1.75;color:#DDD0F8;">O ato final ainda está sendo representado. A Igreja é o povo do Ato V — chamado a viver <strong>antecipando o desfecho já revelado</strong>.</p>
+      <p style="margin:0;font-size:clamp(18px,2.4vw,21px);line-height:1.75;color:#DDD0F8;">O ato final ainda está sendo representado. A Igreja é o povo do Ato V — chamado a viver <strong>antecipando o desfecho já revelado</strong>.</p>
     </div>
   </div>
 </div>
@@ -1817,7 +2207,7 @@ Se o significado bíblico não pode ser ancorado em nada além do jogo infinito 
     <span style="margin-left:auto;font-size:10px;color:rgba(0,212,255,0.55);font-weight:700;">Vanhoozer · <em>The Drama of Doctrine</em> p. 67</span>
   </div>
   <div style="padding:clamp(16px,3vw,24px);">
-    <p style="font-size:clamp(15px,2vw,17px);color:rgba(200,235,255,0.92);font-style:italic;line-height:1.85;margin:0 0 12px;">"Canonical wisdom — the kind of knowledge that enables persons to participate fittingly in the theodrama — is a form of practical wisdom... It is the ability to improvise in ways that are not arbitrary or eccentric but fitting, that is, in keeping with what has preceded and what we know of the ending."</p>
+    <p style="font-size:clamp(18px,2.4vw,21px);color:rgba(200,235,255,0.92);font-style:italic;line-height:1.85;margin:0 0 12px;">"Canonical wisdom — the kind of knowledge that enables persons to participate fittingly in the theodrama — is a form of practical wisdom... It is the ability to improvise in ways that are not arbitrary or eccentric but fitting, that is, in keeping with what has preceded and what we know of the ending."</p>
     <p style="font-size:13px;color:rgba(0,212,255,0.55);margin:0;font-weight:700;letter-spacing:0.04em;">— VANHOOZER, Kevin J. <em>The Drama of Doctrine.</em> Louisville: Westminster John Knox Press, 2005. p. 67.</p>
   </div>
 </div>
@@ -1854,7 +2244,7 @@ Se o significado bíblico não pode ser ancorado em nada além do jogo infinito 
     <span style="margin-left:auto;font-size:10px;color:rgba(0,212,255,0.55);font-weight:700;">Vanhoozer · <em>The Drama of Doctrine</em> p. 97</span>
   </div>
   <div style="padding:clamp(16px,3vw,24px);">
-    <p style="font-size:clamp(15px,2vw,17px);color:rgba(200,235,255,0.92);font-style:italic;line-height:1.85;margin:0 0 12px;">"The church is a community of the Spirit commissioned to continue the drama of redemption... The church does not author its script; it receives it. Its task is not creativity but fidelity — not to write a new story, but to perform the old one with fresh understanding and new embodiment in ever-changing contexts."</p>
+    <p style="font-size:clamp(18px,2.4vw,21px);color:rgba(200,235,255,0.92);font-style:italic;line-height:1.85;margin:0 0 12px;">"The church is a community of the Spirit commissioned to continue the drama of redemption... The church does not author its script; it receives it. Its task is not creativity but fidelity — not to write a new story, but to perform the old one with fresh understanding and new embodiment in ever-changing contexts."</p>
     <p style="font-size:13px;color:rgba(0,212,255,0.55);margin:0;font-weight:700;letter-spacing:0.04em;">— VANHOOZER, Kevin J. <em>The Drama of Doctrine.</em> Louisville: Westminster John Knox Press, 2005. p. 97.</p>
   </div>
 </div>
@@ -1865,7 +2255,7 @@ Se o significado bíblico não pode ser ancorado em nada além do jogo infinito 
     <div style="flex-shrink:0;font-size:clamp(32px,4.5vw,44px);line-height:1;filter:drop-shadow(0 0 8px rgba(255,220,80,0.35));">🎓</div>
     <div>
       <div style="font-size:clamp(13px,1.8vw,15px);font-weight:900;color:#ffffff;margin-bottom:6px;">Para o ensino</div>
-      <p style="margin:0;font-size:clamp(15px,2vw,17px);line-height:1.75;color:#C8D8F0;">Aprender teologia não é memorizar doutrinas — é ser <strong>formado no script</strong> para agir com sabedoria no palco da vida.<sup style="font-size:10px;color:#00D4FF;font-weight:900;margin-left:2px;">⁸</sup></p>
+      <p style="margin:0;font-size:clamp(18px,2.4vw,21px);line-height:1.75;color:#C8D8F0;">Aprender teologia não é memorizar doutrinas — é ser <strong>formado no script</strong> para agir com sabedoria no palco da vida.<sup style="font-size:10px;color:#00D4FF;font-weight:900;margin-left:2px;">⁸</sup></p>
     </div>
   </div>
 
@@ -1873,7 +2263,7 @@ Se o significado bíblico não pode ser ancorado em nada além do jogo infinito 
     <div style="flex-shrink:0;font-size:clamp(32px,4.5vw,44px);line-height:1;filter:drop-shadow(0 0 8px rgba(0,212,255,0.35));">📢</div>
     <div>
       <div style="font-size:clamp(13px,1.8vw,15px);font-weight:900;color:#ffffff;margin-bottom:6px;">Para a pregação</div>
-      <p style="margin:0;font-size:clamp(15px,2vw,17px);line-height:1.75;color:#C8D8F0;">Pregar não é aplicar regras morais — é <strong>anunciar o que Deus fez em Cristo</strong> e convocar a audiência a entrar no drama.</p>
+      <p style="margin:0;font-size:clamp(18px,2.4vw,21px);line-height:1.75;color:#C8D8F0;">Pregar não é aplicar regras morais — é <strong>anunciar o que Deus fez em Cristo</strong> e convocar a audiência a entrar no drama.</p>
     </div>
   </div>
 
@@ -1881,7 +2271,7 @@ Se o significado bíblico não pode ser ancorado em nada além do jogo infinito 
     <div style="flex-shrink:0;font-size:clamp(32px,4.5vw,44px);line-height:1;filter:drop-shadow(0 0 8px rgba(80,200,120,0.35));">🌍</div>
     <div>
       <div style="font-size:clamp(13px,1.8vw,15px);font-weight:900;color:#ffffff;margin-bottom:6px;">Para a missão</div>
-      <p style="margin:0;font-size:clamp(15px,2vw,17px);line-height:1.75;color:#C8D8F0;">Evangelizar não é distribuir um manual — é <strong>convidar pessoas a ingressar</strong> na maior história já contada.</p>
+      <p style="margin:0;font-size:clamp(18px,2.4vw,21px);line-height:1.75;color:#C8D8F0;">Evangelizar não é distribuir um manual — é <strong>convidar pessoas a ingressar</strong> na maior história já contada.</p>
     </div>
   </div>
 
@@ -1889,7 +2279,7 @@ Se o significado bíblico não pode ser ancorado em nada além do jogo infinito 
     <div style="flex-shrink:0;font-size:clamp(32px,4.5vw,44px);line-height:1;filter:drop-shadow(0 0 8px rgba(180,120,255,0.35));">⚖️</div>
     <div>
       <div style="font-size:clamp(13px,1.8vw,15px);font-weight:900;color:#ffffff;margin-bottom:6px;">Para a ética</div>
-      <p style="margin:0;font-size:clamp(15px,2vw,17px);line-height:1.75;color:#C8D8F0;">Tomar decisões morais não é consultar um índice de regras — é perguntar: <em>"O que um fiel ator do Ato V faria aqui?"</em></p>
+      <p style="margin:0;font-size:clamp(18px,2.4vw,21px);line-height:1.75;color:#C8D8F0;">Tomar decisões morais não é consultar um índice de regras — é perguntar: <em>"O que um fiel ator do Ato V faria aqui?"</em></p>
     </div>
   </div>
 
@@ -1902,7 +2292,7 @@ Se o significado bíblico não pode ser ancorado em nada além do jogo infinito 
   <div style="font-size:clamp(52px,8vw,72px);margin-bottom:18px;line-height:1;filter:drop-shadow(0 0 20px rgba(0,212,255,0.40));">🎭</div>
   <p style="font-size:clamp(17px,2.6vw,22px);font-weight:700;color:#ffffff;line-height:1.65;margin:0 0 22px;font-style:italic;">"A Escritura é o script do maior drama já concebido.<br/>Cristo é o Ato central. O Espírito é o Diretor.<br/>E você — <span style="color:#00D4FF;">você está no palco.</span>"</p>
   <div style="width:60px;height:3px;background:rgba(0,212,255,0.70);border-radius:3px;margin:0 auto 22px;"></div>
-  <p style="font-size:clamp(15px,2vw,17px);color:rgba(200,220,255,0.80);line-height:1.80;margin:0;">A próxima vez que você abrir sua Bíblia, não a abra como um manual.<br/>Abra-a como um ator que precisa conhecer o script para <strong style="color:#ffffff;">representar bem o papel que Deus lhe deu.</strong></p>
+  <p style="font-size:clamp(18px,2.4vw,21px);color:rgba(200,220,255,0.80);line-height:1.80;margin:0;">A próxima vez que você abrir sua Bíblia, não a abra como um manual.<br/>Abra-a como um ator que precisa conhecer o script para <strong style="color:#ffffff;">representar bem o papel que Deus lhe deu.</strong></p>
 </div>
 
 <!-- CITAÇÃO ORIGINAL — VANHOOZER sobre obediência e improvisação -->
@@ -1913,7 +2303,7 @@ Se o significado bíblico não pode ser ancorado em nada além do jogo infinito 
     <span style="margin-left:auto;font-size:10px;color:rgba(0,212,255,0.55);font-weight:700;">Vanhoozer · <em>The Drama of Doctrine</em> p. 402</span>
   </div>
   <div style="padding:clamp(16px,3vw,24px);">
-    <p style="font-size:clamp(15px,2vw,17px);color:rgba(200,235,255,0.92);font-style:italic;line-height:1.85;margin:0 0 12px;">"The church's vocation is to be a theater of the gospel: a community that enacts the word and embodies the way of Jesus Christ in the power of the Spirit... To improvise is not to play without a script, but to play the script in a new key — faithfully, imaginatively, fittingly."</p>
+    <p style="font-size:clamp(18px,2.4vw,21px);color:rgba(200,235,255,0.92);font-style:italic;line-height:1.85;margin:0 0 12px;">"The church's vocation is to be a theater of the gospel: a community that enacts the word and embodies the way of Jesus Christ in the power of the Spirit... To improvise is not to play without a script, but to play the script in a new key — faithfully, imaginatively, fittingly."</p>
     <p style="font-size:13px;color:rgba(0,212,255,0.55);margin:0;font-weight:700;letter-spacing:0.04em;">— VANHOOZER, Kevin J. <em>The Drama of Doctrine.</em> Louisville: Westminster John Knox Press, 2005. p. 402.</p>
   </div>
 </div>
@@ -1926,7 +2316,7 @@ Se o significado bíblico não pode ser ancorado em nada além do jogo infinito 
     <span style="margin-left:auto;font-size:10px;color:rgba(255,200,80,0.60);font-weight:700;">N. T. Wright · <em>Scripture and the Authority of God</em> p. 122</span>
   </div>
   <div style="padding:clamp(16px,3vw,24px);">
-    <p style="font-size:clamp(15px,2vw,17px);color:rgba(255,245,210,0.92);font-style:italic;line-height:1.85;margin:0 0 12px;">"The story is told as a five-act play... The church is called to improvise the fifth act, in the light of what has gone before... This is not an invitation to chaos or relativism. The church's improvisation must be in keeping with the narrative, characters, and resolution already revealed in the first four acts."</p>
+    <p style="font-size:clamp(18px,2.4vw,21px);color:rgba(255,245,210,0.92);font-style:italic;line-height:1.85;margin:0 0 12px;">"The story is told as a five-act play... The church is called to improvise the fifth act, in the light of what has gone before... This is not an invitation to chaos or relativism. The church's improvisation must be in keeping with the narrative, characters, and resolution already revealed in the first four acts."</p>
     <p style="font-size:13px;color:rgba(255,200,80,0.55);margin:0;font-weight:700;letter-spacing:0.04em;">— WRIGHT, N. T. <em>Scripture and the Authority of God: How to Read the Bible Today.</em> New York: HarperOne, 2011. p. 122.</p>
   </div>
 </div>
@@ -1968,7 +2358,8 @@ Se o significado bíblico não pode ser ancorado em nada além do jogo infinito 
     status: 'publicado',
     area: 'artigos',
   },
- {
+
+ {
     id: '13',
     slug: 'revelacao-escritura-autoridade-parte-2',
     categoria: 'Revelação e Autoridade Bíblica',

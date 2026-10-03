@@ -33,6 +33,7 @@ import DevocionalFamiliarPage from './pages/DevocionalFamiliarPage';
 import DevocionalReformaPage from './pages/DevocionalReformaPage';
 import DevocionalReformaDiaPage from './pages/DevocionalReformaDiaPage';
 import BibliotecaAutoresPage from './pages/BibliotecaAutoresPage';
+import BibliotecaSemanaPage from './pages/BibliotecaSemanaPage';
 import AutorMastrichtPage from './pages/AutorMastrichtPage';
 import PregacaoPage from './pages/PregacaoPage';
 import FamiliaPage, { EsbocosPage, NoivosHub, AulaInaugural, Aula02, CasadosPage } from './pages/FamiliaPage';
@@ -45,6 +46,7 @@ import TeologiaCredosPage from './pages/TeologiaCredosPage';
 import TeologiaArtigoPage from './pages/TeologiaArtigoPage';
 import ArtigosPage from './pages/ArtigosPage';
 import ArtigoPage from './pages/ArtigoPage';
+import BibliotecaArtigosPage from './pages/BibliotecaArtigosPage';
 import Watermark from './components/Watermark';
 import LoginPage from './pages/LoginPage';
 import ProtectedRoute from './components/ProtectedRoute';
@@ -95,8 +97,8 @@ export default function App() {
           <Route path="/biblioteca" element={<BibliotecaPage />} />
           <Route path="/biblioteca/livros"                           element={<BibliotecaLivrosPage />} />
           <Route path="/biblioteca/livros/is-there-meaning"        element={<LivroIsThereiningPage />} />
-          <Route path="/biblioteca/artigos"           element={<BibliotecaPage />} />
-          <Route path="/biblioteca/semana"            element={<BibliotecaPage />} />
+          <Route path="/biblioteca/artigos"           element={<BibliotecaArtigosPage />} />
+          <Route path="/biblioteca/semana"            element={<BibliotecaSemanaPage />} />
           <Route path="/biblioteca/autores" element={<BibliotecaAutoresPage />} />
           <Route path="/biblioteca/autores/mastricht" element={<AutorMastrichtPage />} />
           <Route path="/biblioteca/resenhas"          element={<BibliotecaResenhasPage />} />
@@ -147,7 +149,7 @@ export default function App() {
           <Route path="/teologia/artigos" element={<TeologiaArtigosPage />} />
 
           {/* Artigos */}
-          <Route path="/artigos" element={<ArtigosPage />} />
+          <Route path="/artigos" element={<Navigate to="/biblioteca/artigos" replace />} />
           <Route path="/artigos/:slug" element={<ArtigoPage />} />
           <Route path="/teologia/area/:slug" element={<TeologiaAreaPage />} />
           <Route path="/teologia/credos" element={<TeologiaCredosPage />} />

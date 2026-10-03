@@ -84,7 +84,7 @@ export default function DevocionalReformaDiaPage() {
             onMouseLeave={e => (e.currentTarget.style.color = 'rgba(200,205,255,0.38)')}
           >Devocional</span>
           <span>›</span>
-          <span onClick={() => navigate('/devocional/reforma')} style={{ cursor: 'pointer', transition: 'color 0.18s' }}
+          <span onClick={() => navigate('/devocional/reforma', { state: { activeDia: dia } })} style={{ cursor: 'pointer', transition: 'color 0.18s' }}
             onMouseEnter={e => (e.currentTarget.style.color = accent)}
             onMouseLeave={e => (e.currentTarget.style.color = 'rgba(200,205,255,0.38)')}
           >Reforma Protestante</span>
@@ -108,17 +108,23 @@ export default function DevocionalReformaDiaPage() {
 
           <div style={{ position: 'relative' }}>
             {/* badges */}
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 24 }}>
-              <span style={{ fontSize: 9, fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase', color: accent, background: `rgba(${accentRgb},0.14)`, border: `1px solid rgba(${accentRgb},0.28)`, padding: '6px 16px', borderRadius: 99 }}>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, marginBottom: 28 }}>
+              <span style={{ fontSize: 12, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: accent, background: `rgba(${accentRgb},0.18)`, border: `1.5px solid rgba(${accentRgb},0.40)`, padding: '8px 18px', borderRadius: 99, boxShadow: `0 0 14px rgba(${accentRgb},0.25)` }}>
                 Semana {semana?.num} · {TITULOS_DIAS[dia]?.ref}
               </span>
-              <span style={{ fontSize: 9, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(220,225,255,0.55)', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.10)', padding: '6px 16px', borderRadius: 99 }}>
+              <span style={{ fontSize: 12, fontWeight: 700, letterSpacing: '0.12em', color: 'rgba(230,230,255,0.80)', background: 'rgba(255,255,255,0.07)', border: '1px solid rgba(255,255,255,0.16)', padding: '8px 18px', borderRadius: 99 }}>
                 {content.data}
               </span>
             </div>
 
-            <div style={{ ...T.label, color: `rgba(${accentRgb},0.65)`, marginBottom: 12 }}>
-              Dia {String(dia).padStart(2, '0')} de 31
+            <div style={{ fontSize: 'clamp(15px,2.2vw,20px)', fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase', color: accent, marginBottom: 14, display: 'flex', alignItems: 'center', gap: 10 }}>
+              <span style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 48, height: 48, borderRadius: 14, background: `rgba(${accentRgb},0.18)`, border: `2px solid rgba(${accentRgb},0.50)`, fontSize: 'clamp(18px,2.5vw,24px)', fontWeight: 900, color: accent, boxShadow: `0 0 18px rgba(${accentRgb},0.35)`, flexShrink: 0 }}>
+                {String(dia).padStart(2, '0')}
+              </span>
+              <span>
+                <span style={{ fontSize: 'clamp(13px,1.8vw,16px)', fontWeight: 900, letterSpacing: '0.26em', display: 'block', color: `rgba(${accentRgb},0.70)` }}>DIA</span>
+                <span style={{ fontSize: 'clamp(11px,1.4vw,13px)', fontWeight: 700, letterSpacing: '0.18em', color: 'rgba(220,220,255,0.40)' }}>de 31 dias</span>
+              </span>
             </div>
 
             <h1 style={{
@@ -199,9 +205,7 @@ export default function DevocionalReformaDiaPage() {
                 {/* paragraphs */}
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
                   {secao.paragrafos.map((p, pi) => (
-                    <p key={pi} style={{ margin: 0, ...T.body }}>
-                      {p}
-                    </p>
+                    <p key={pi} style={{ margin: 0, ...T.body }} dangerouslySetInnerHTML={{ __html: p }} />
                   ))}
                 </div>
 
@@ -349,7 +353,7 @@ export default function DevocionalReformaDiaPage() {
           </button>
 
           <button
-            onClick={() => navigate('/devocional/reforma')}
+            onClick={() => navigate('/devocional/reforma', { state: { activeDia: dia } })}
             style={{ background: 'none', cursor: 'pointer', border: '1px solid rgba(255,255,255,0.14)', borderRadius: 99, padding: '11px 22px', fontSize: 11, fontWeight: 900, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgba(220,225,255,0.55)', transition: 'all 0.2s' }}
             onMouseEnter={e => { e.currentTarget.style.color = '#fff'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.30)'; }}
             onMouseLeave={e => { e.currentTarget.style.color = 'rgba(220,225,255,0.55)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.14)'; }}

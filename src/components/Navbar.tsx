@@ -55,7 +55,6 @@ export default function Navbar({
     { name: 'Família',    path: '/familia' },
     { name: 'Educação',   path: '/educacao' },
     { name: 'Teologia',   path: '/teologia' },
-    { name: 'Artigos',    path: '/artigos' },
     { name: 'Livraria',   path: '/livraria', activeOverride: isLibrariaActive },
   ] : [
     { name: 'Devotional', path: '/devocional' },
@@ -63,7 +62,6 @@ export default function Navbar({
     { name: 'Family',     path: '/familia' },
     { name: 'Education',  path: '/educacao' },
     { name: 'Theology',   path: '/teologia' },
-    { name: 'Articles',   path: '/artigos' },
     { name: 'Bookstore',  path: '/livraria', activeOverride: isLibrariaActive },
   ];
 
