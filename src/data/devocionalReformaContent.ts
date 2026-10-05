@@ -20,6 +20,64 @@ export interface DiaDevoContent {
 }
 
 const DIAS_CONTENT: Record<number, DiaDevoContent> = {
+  4: {
+    dia: 4,
+    data: '4 de outubro de 2026',
+    titulo: 'Lutero: Da Tempestade ao Mosteiro',
+    subtitulo: 'Capítulo 2 — Parte 1',
+    versiculo: 'Porque o Senhor não rejeita para sempre; mas, ainda que aflija, também se compadece, segundo a multidão das suas misericórdias.',
+    versiculoRef: 'Lamentações 3.31–32',
+    secoes: [
+      {
+        tipo: 'contexto',
+        titulo: 'Um Voto Feito no Relâmpago',
+        paragrafos: [
+          'Nos últimos três dias, conhecemos o cenário que antecede a Reforma: o ideal medieval do <span style="background:rgba(251,191,36,0.15);border:1px solid rgba(251,191,36,0.35);border-radius:5px;padding:1px 8px;color:#fde68a;font-weight:800;font-style:italic;">Corpus Christianum</span>, a reforma clerical de Isabel de Castela e o trabalho de Cisneros. Agora chegamos ao homem cujo nome se tornou sinônimo de Reforma: <strong style="color:#fff;">Martinho Lutero</strong>.',
+          'Mas González nos adverte desde o início: <span style="color:#fbbf24;font-weight:700;">Lutero não chegou à Reforma por planejamento estratégico.</span> Chegou por angústia. A história começa em <span style="color:#60a5fa;font-weight:700;">julho de 1505</span>, num campo aberto perto de <span style="color:#f97316;font-weight:600;">Erfurt</span>. Uma tempestade elétrica violenta apanha o jovem estudante de Direito. Convencido de que vai morrer e será julgado por Deus, ele clama: <span style="background:rgba(192,132,252,0.15);border:1px solid rgba(192,132,252,0.35);border-radius:5px;padding:2px 10px;color:#e9d5ff;font-weight:700;font-style:italic;">"Santa Ana, me salva — e serei monge!"</span>',
+          'Ele sobreviveu. E, para desgosto de seu pai — que havia investido tudo para que o filho se tornasse <span style="color:#fb7185;font-weight:600;">advogado</span> —, <strong style="color:#34d399;">honrou o voto</strong>. Duas semanas depois, entrou no <span style="color:#f97316;font-weight:700;">mosteiro agostiniano de Erfurt</span>.',
+        ],
+        citacao: 'Lutero não chegou à Reforma por planejamento estratégico. Chegou por angústia — e Deus usou essa angústia para mudar o mundo.',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'A Angústia que Nenhum Mosteiro Resolvia',
+        paragrafos: [
+          'Lutero se lançou na vida monástica com uma intensidade que <span style="color:#fb7185;font-weight:600;">assustava os próprios monges</span>. Jejuns prolongados, confissões intermináveis, vigílias noturnas, penitências severas. Não por hipocrisia — por <strong style="color:#fff;">desespero genuíno</strong>. Ele queria certeza: certeza de que seus pecados estavam perdoados, certeza de que Deus não o condenaria.',
+          'Os teólogos medievais ensinavam que, depois do batismo, os pecados eram apagados pela <span style="color:#a78bfa;font-weight:600;">contrição, confissão e satisfação</span>. Lutero praticava tudo isso com escrúpulo absoluto — e <span style="color:#fb7185;font-weight:700;">continuava sem paz</span>. O problema não era a prática. Era a estrutura: um sistema que descansava sobre a <span style="background:rgba(251,113,133,0.12);border:1px solid rgba(251,113,133,0.30);border-radius:5px;padding:1px 7px;color:#fecdd3;font-weight:700;">capacidade humana de produzir contrição suficiente</span>, satisfação suficiente, amor suficiente a Deus.',
+          'Em alemão, Lutero chamava essa experiência de <span style="background:rgba(251,191,36,0.15);border:1px solid rgba(251,191,36,0.35);border-radius:5px;padding:1px 8px;color:#fde68a;font-weight:900;font-style:italic;">Anfechung</span> — uma palavra quase intraduzível que combina <span style="color:#fb7185;font-weight:600;">angústia espiritual</span>, <span style="color:#fb7185;font-weight:600;">sensação de abandono divino</span> e <span style="color:#fb7185;font-weight:600;">medo existencial do julgamento</span>. Não era depressão clínica, embora tivesse traços disso. Era uma <span style="background:rgba(192,132,252,0.12);border-left:3px solid #a78bfa;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(230,220,255,0.95);">crise teológica vivida no corpo e na alma.</span>',
+        ],
+        citacao: 'O problema não era a prática de Lutero. Era a estrutura de um sistema que descansava inteiramente sobre a capacidade humana de ser suficiente diante de Deus.',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'Staupitz: O Confessor que Mudou a Direção',
+        paragrafos: [
+          'O superior do mosteiro, <strong style="color:#fff;">Johann von Staupitz</strong>, era um homem sábio e compassivo. Ouviu Lutero por anos — confissões que se estendiam por horas, inquirindo cada pensamento, cada impulso, cada falha. Chegou um ponto em que Staupitz perdeu a paciência — <span style="color:#fbbf24;font-style:italic;">não com Lutero, mas com o ciclo que o aprisionava</span>.',
+          'Sua resposta foi surpreendente: em vez de prescrever <span style="color:#fb7185;font-weight:600;">mais penitência</span>, mandou Lutero <span style="background:rgba(52,211,153,0.12);border:1px solid rgba(52,211,153,0.30);border-radius:5px;padding:1px 8px;color:#a7f3d0;font-weight:700;">ensinar Bíblia na recém-fundada Universidade de Wittenberg</span>.',
+          'Era um gesto pastoral de rara inteligência: interromper a espiral de introspecção obrigando o angustiado a se voltar para algo <strong style="color:#34d399;">externo</strong> — o texto sagrado, os estudantes, a tarefa de explicar as Escrituras. <span style="background:rgba(52,211,153,0.12);border-left:3px solid #34d399;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(200,255,235,0.95);">O remédio para a ansiedade espiritual não foi mais penitência; foi ocupação com a Palavra.</span> E foi preparando aulas sobre as Epístolas de Paulo que Lutero encontraria, alguns anos depois, aquilo que buscava há tanto tempo.',
+        ],
+        citacao: 'Staupitz não deu a Lutero mais técnicas espirituais. Deu-lhe uma tarefa: ensinar a Palavra. E isso mudou tudo.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'Roma: A Desilusão que Plantou uma Semente',
+        paragrafos: [
+          'Em <span style="color:#60a5fa;font-weight:700;">1510</span>, Lutero viajou a <span style="color:#f97316;font-weight:700;">Roma</span> em missão oficial da ordem agostiniana. Foi sua única visita à cidade santa. E foi uma experiência de <strong style="color:#fb7185;">desilusão profunda</strong>.',
+          'Ele chegou com a devoção de um peregrino medieval: queria visitar as igrejas, venerar as relíquias, escalar de joelhos a <span style="color:#a78bfa;font-weight:600;">Scala Sancta</span> para ganhar as indulgências prometidas. Fez tudo isso — e ficou perturbado com o que viu. <span style="color:#fb7185;font-weight:600;">Sacerdotes celebrando missa em velocidade absurda.</span> <span style="color:#fb7185;font-weight:600;">Clérigos fazendo piadas sobre a eucaristia</span> durante a celebração. Uma cidade que deveria ser o centro da cristandade exibindo, na prática cotidiana de seu clero, um <span style="background:rgba(251,113,133,0.12);border:1px solid rgba(251,113,133,0.30);border-radius:5px;padding:1px 7px;color:#fecdd3;font-weight:700;">cinismo que contrastava violentamente com a fé ingênua do peregrino alemão</span>.',
+          'Lutero voltou à Alemanha diferente. Não era ainda um reformador. Mas algo havia se quebrado: <span style="background:rgba(251,191,36,0.12);border-left:3px solid #fbbf24;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(255,245,210,0.95);">a suposição de que Roma era, necessariamente, modelo de fé.</span> A semente da desilusão estava plantada.',
+        ],
+        citacao: 'Lutero voltou de Roma diferente. Não era ainda um reformador — mas a suposição de que Roma era modelo de fé havia se quebrado para sempre.',
+      },
+    ],
+    perguntas: [
+      'Lutero entrou no mosteiro em resposta a uma crise de medo e barganha com Deus. Você já viveu momentos em que sua fé era movida principalmente pelo medo? Como isso se compara a uma fé movida pela gratidão e confiança?',
+      'Staupitz não deu a Lutero mais técnicas espirituais — deu-lhe uma tarefa: ensinar a Palavra. De que forma a ocupação com as Escrituras (estudar, ensinar, meditar) pode ser um remédio para a ansiedade espiritual?',
+      'A visita de Lutero a Roma o desiludiu com a instituição, mas não com Cristo. Você já viveu uma desilusão com a Igreja? Como separar a fé em Cristo da decepção com instituições e pessoas?',
+    ],
+    oracao: 'Senhor, há em nós algo da angústia de Lutero — o desejo de certeza, o medo do julgamento, a sensação de que nunca somos suficientes. Obrigado por não nos deixares nessa espiral, mas nos conduzires — como conduziste Lutero — em direção à Tua Palavra, onde a justiça não é exigência que nos esmaga, mas dom que nos liberta.\n\nQue possamos, como Staupitz, ter sabedoria para desviar olhares angustiados da introspecção paralisante para a contemplação de Cristo.\n\nAmém.',
+    leituraComplementar: 'González, Justo L. A Era dos Reformadores. São Paulo: Vida Nova, 1995. Capítulo 2: "Martinho Lutero: O Caminho para a Reforma" (pp. 29–52). [Parte 1 — foco na biografia espiritual até a chegada a Wittenberg]',
+  },
   3: {
     dia: 3,
     data: '3 de outubro de 2026',
