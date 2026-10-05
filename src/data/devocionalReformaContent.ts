@@ -20,6 +20,67 @@ export interface DiaDevoContent {
 }
 
 const DIAS_CONTENT: Record<number, DiaDevoContent> = {
+  5: {
+    dia: 5,
+    data: '5 de outubro de 2026',
+    titulo: 'Lutero: As 95 Teses e o Ponto sem Retorno',
+    subtitulo: 'Capítulo 2 — Parte 2',
+    versiculo: 'Porque não me envergonho do evangelho, pois é o poder de Deus para a salvação de todo aquele que crê.',
+    versiculoRef: 'Romanos 1.16',
+    secoes: [
+      {
+        tipo: 'contexto',
+        titulo: 'A Descoberta da Torre: Quando Romanos 1.17 Mudou Tudo',
+        paragrafos: [
+          'Em <span style="color:#60a5fa;font-weight:700;">1515</span>, preparando aulas sobre a Epístola aos Romanos, Lutero tropeça num versículo que conhecia de cor — <span style="background:rgba(192,132,252,0.18);border:1px solid rgba(192,132,252,0.40);border-radius:5px;padding:1px 8px;color:#e9d5ff;font-weight:800;">Romanos 1.17</span>: <span style="color:#a78bfa;font-style:italic;">"a justiça de Deus é revelada no evangelho."</span> Durante anos, essa frase o aterrorizara. A <span style="color:#fb7185;font-weight:700;">"justiça de Deus"</span> era para ele o padrão impossível pelo qual seria julgado — e pelo qual, certamente, seria condenado.',
+          'Mas agora, no silêncio do seu estudo em Wittenberg, algo muda. Ele relê Paulo com atenção renovada e começa a perceber: a <span style="color:#34d399;font-weight:700;">"justiça de Deus"</span> não é a exigência que condena. <strong style="color:#fff;">É o dom que liberta.</strong> Não é o padrão que Deus impõe; é a justiça que Deus <em>oferece</em> ao pecador que crê.',
+          'Lutero descreveria depois esse momento como <span style="background:rgba(251,191,36,0.15);border:1px solid rgba(251,191,36,0.35);border-radius:5px;padding:1px 8px;color:#fde68a;font-weight:700;font-style:italic;">sentir as portas do paraíso se abrindo</span>. A <strong style="color:#fbbf24;">"descoberta da torre"</strong> — chamada assim porque ocorreu no estudo da torre do convento — foi a semente de toda a teologia da Reforma.',
+        ],
+        citacao: 'A "justiça de Deus" não é a exigência que condena. É o dom que liberta — a justiça que Deus oferece ao pecador que crê.',
+        citacaoAutor: 'Martinho Lutero',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'As 95 Teses: Um Protesto Acadêmico que Escapou do Controle',
+        paragrafos: [
+          'Em <span style="color:#60a5fa;font-weight:700;">1517</span>, o frade dominicano <strong style="color:#fff;">João Tetzel</strong> percorria as regiões vizinhas a Wittenberg vendendo <span style="color:#f97316;font-weight:700;">indulgências</span> — documentos que prometiam redução da pena purgatória para o comprador e seus familiares já falecidos. O slogan corria de boca em boca: <span style="background:rgba(251,113,133,0.12);border:1px solid rgba(251,113,133,0.30);border-radius:5px;padding:2px 10px;color:#fecdd3;font-weight:700;font-style:italic;">"Quando o dinheiro cai na caixa, a alma sobe ao paraíso."</span>',
+          'Para Lutero, isso era teologicamente inadmissível. Havia descoberto que <span style="background:rgba(52,211,153,0.12);border-left:3px solid #34d399;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(200,255,235,0.95);">a salvação é dom de Deus recebido pela fé — não mercadoria negociada por dinheiro.</span> Em <span style="color:#fbbf24;font-weight:700;">31 de outubro de 1517</span>, Lutero enviou ao arcebispo de Mainz uma carta protestando o abuso e anexou <span style="color:#c084fc;font-weight:800;">95 teses</span> para debate acadêmico. Segundo a tradição, também as afixou na porta da <span style="color:#f97316;font-weight:600;">Igreja do Castelo de Wittenberg</span>.',
+          'Sua intenção era provocar um <span style="color:#a78bfa;font-weight:600;">debate teológico interno</span>. O que aconteceu foi outra coisa. Em semanas, as teses foram traduzidas do latim para o alemão e impressas em <strong style="color:#fff;">milhares de cópias</strong>. Em dois meses, circulavam por toda a Alemanha. Em dois anos, por toda a Europa. González sublinha: <span style="background:rgba(251,191,36,0.12);border-left:3px solid #fbbf24;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(255,245,210,0.95);">sem a imprensa de Gutenberg, as 95 Teses seriam uma nota de rodapé esquecida.</span> Com ela, tornaram-se o estopim de um incêndio que ninguém havia planejado acender.',
+        ],
+        citacao: 'Sem a imprensa de Gutenberg, as 95 Teses seriam uma nota de rodapé esquecida. Com ela, tornaram-se o estopim de um incêndio que ninguém havia planejado acender.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'Worms: Aqui Estou — Não Posso Fazer de Outra Forma',
+        paragrafos: [
+          'O processo contra Lutero se intensificou. Roma exigiu retratação. Lutero se recusou. Em <span style="color:#60a5fa;font-weight:700;">1521</span>, o imperador <strong style="color:#fff;">Carlos V</strong> — neto de Isabel de Castela, o homem mais poderoso da Europa — convocou Lutero à <span style="color:#f97316;font-weight:700;">Dieta de Worms</span> para responder por suas posições.',
+          'Lutero se apresenta diante do imperador, dos príncipes e dos legados papais. A pergunta foi direta: <span style="color:#fb7185;font-style:italic;">você retrata o que escreveu?</span> Pediu um dia para pensar. No dia seguinte, respondeu: não posso me retratar a menos que seja refutado <span style="color:#34d399;font-weight:700;">pela Escritura ou pela razão evidente</span>. Seguir apenas a autoridade de papas e concílios era seguir instituições que já haviam se contradito entre si.',
+          '<span style="background:rgba(192,132,252,0.15);border:1px solid rgba(192,132,252,0.35);border-radius:8px;padding:4px 14px;color:#e9d5ff;font-weight:800;font-style:italic;display:inline-block;margin:4px 0;">"Aqui estou; não posso fazer de outra forma. Que Deus me ajude. Amém."</span> Carlos V declarou Lutero <span style="color:#fb7185;font-weight:700;">fora da lei</span>. Mas o príncipe <strong style="color:#fff;">Frederico, o Sábio</strong>, havia preparado um plano de resgate — e Lutero foi levado ao <span style="color:#fbbf24;font-weight:700;">castelo de Wartburgo</span>, onde passaria quase um ano traduzindo o <span style="color:#34d399;font-weight:600;">Novo Testamento para o alemão</span>.',
+        ],
+        citacao: 'Minha consciência está presa à Palavra de Deus. Aqui estou; não posso fazer de outra forma. Que Deus me ajude. Amém.',
+        citacaoAutor: 'Martinho Lutero — Dieta de Worms, 1521',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'A Reforma que Ninguém Planejou',
+        paragrafos: [
+          'González insiste num ponto que costuma ser esquecido: <strong style="color:#fff;">Lutero não planejou a Reforma.</strong> Em cada etapa — as 95 Teses, o processo em Roma, a Dieta de Worms — ele estava respondendo a eventos que <span style="color:#fb7185;font-weight:600;">escapavam ao seu controle</span>. Não havia estratégia, não havia movimento organizado, não havia programa político.',
+          'Havia um <span style="color:#fbbf24;font-style:italic;">monge angustiado</span> que havia descoberto o evangelho e não conseguia ficar quieto. E havia condições históricas — <span style="color:#60a5fa;font-weight:600;">a imprensa</span>, <span style="color:#60a5fa;font-weight:600;">o nacionalismo alemão</span>, <span style="color:#60a5fa;font-weight:600;">os interesses dos príncipes</span>, <span style="color:#60a5fa;font-weight:600;">as guerras que distraíam Carlos V</span> — que transformaram o protesto de um indivíduo num <strong style="color:#34d399;">movimento continental</strong>.',
+          'Isso não diminui Lutero. Mas nos lembra de que <span style="background:rgba(52,211,153,0.12);border-left:3px solid #34d399;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(200,255,235,0.95);">as grandes renovações na história da Igreja raramente saem de planejamento humano. Saem de fidelidade à Palavra em contextos que Deus prepara</span> — muitas vezes sem que os agentes percebam o que está acontecendo.',
+        ],
+        citacao: 'As grandes renovações na história da Igreja raramente saem de planejamento humano. Saem de fidelidade à Palavra em contextos que Deus prepara.',
+        citacaoAutor: 'Justo L. González',
+      },
+    ],
+    perguntas: [
+      'A "descoberta da torre" de Lutero foi uma reviravolta na leitura de Romanos 1.17 — um versículo que ele conhecia, mas não compreendia. Você já viveu o momento em que uma passagem bíblica familiar ganhou um significado completamente novo? O que mudou?',
+      'Lutero em Worms disse que não podia retratar-se porque sua consciência estava "presa à Palavra de Deus." Que papel a consciência informada pelas Escrituras deve ter em momentos de pressão institucional ou social?',
+      'González mostra que a Reforma aconteceu porque Lutero foi fiel em condições que ele não controlava. Como você equilibra responsabilidade pessoal com a confiança de que Deus age na história independentemente dos nossos planos?',
+    ],
+    oracao: 'Senhor, obrigado pela história de Lutero — um homem que não planejou mudar o mundo, mas não conseguiu ficar calado diante do que Tu lhe revelaste. Dá-nos essa mesma fidelidade: consciências presas à Tua Palavra, coragem para sustentá-la diante de pressões que nos pedem silêncio.\n\nE ajuda-nos a confiar que, quando somos fiéis no que está ao nosso alcance, Tu cuidas do que está além dele.\n\nAmém.',
+    leituraComplementar: 'González, Justo L. A Era dos Reformadores. São Paulo: Vida Nova, 1995. Capítulo 2: "Martinho Lutero: O Caminho para a Reforma" (pp. 29–52). [Parte 2 — foco na descoberta da torre, 95 Teses e Dieta de Worms]',
+  },
   4: {
     dia: 4,
     data: '4 de outubro de 2026',
