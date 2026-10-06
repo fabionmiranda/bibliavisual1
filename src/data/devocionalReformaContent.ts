@@ -20,6 +20,66 @@ export interface DiaDevoContent {
 }
 
 const DIAS_CONTENT: Record<number, DiaDevoContent> = {
+  6: {
+    dia: 6,
+    data: '6 de outubro de 2026',
+    titulo: 'A Teologia de Lutero: Cruz, Lei e Evangelho',
+    subtitulo: 'Capítulo 3 — Parte 1',
+    versiculo: 'Mas longe esteja de mim gloriar-me, senão na cruz de nosso Senhor Jesus Cristo, pela qual o mundo está crucificado para mim, e eu para o mundo.',
+    versiculoRef: 'Gálatas 6.14',
+    secoes: [
+      {
+        tipo: 'contexto',
+        titulo: 'Da Biografia à Teologia: Ideias Forjadas na Forja da Vida',
+        paragrafos: [
+          'Nos últimos dois dias, acompanhamos Lutero na sua peregrinação espiritual: do mosteiro ao púlpito, da angústia à descoberta, de Wittenberg a Worms. Hoje deixamos a biografia e entramos na <strong style="color:#fff;">teologia</strong>. Que ideias centrais Lutero desenvolveu a partir dessas experiências?',
+          'González nos apresenta não um sistema abstrato, mas um conjunto de <span style="color:#fbbf24;font-weight:700;">distinções pastorais forjadas na forja da vida</span>. A teologia de Lutero não começa com axiomas filosóficos — começa com a pergunta que o atormentou por anos: <span style="background:rgba(192,132,252,0.15);border:1px solid rgba(192,132,252,0.35);border-radius:5px;padding:2px 10px;color:#e9d5ff;font-weight:700;font-style:italic;">como posso estar em paz com um Deus justo?</span>',
+        ],
+        citacao: 'A teologia de Lutero não começa com axiomas filosóficos. Começa com a pergunta que o atormentou por anos: como posso estar em paz com um Deus justo?',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'Teologia da Glória vs. Teologia da Cruz',
+        paragrafos: [
+          'A distinção mais profunda de Lutero é, ao mesmo tempo, a mais contracultural: a diferença entre a <span style="color:#fb7185;font-weight:800;">teologia da glória</span> e a <span style="color:#34d399;font-weight:800;">teologia da cruz</span>.',
+          'A <span style="color:#fb7185;font-weight:700;">teologia da glória</span> é o impulso natural da religião humana: buscar Deus onde esperamos encontrá-lo — no <span style="color:#fb7185;font-weight:600;">poder, na grandeza, no esplendor, no êxito</span>. É a teologia que associa a bênção divina com prosperidade e prestígio. É a teologia que faz o pecador perguntar: <span style="color:#fb7185;font-style:italic;">"o que preciso fazer para que Deus me aprove?"</span>',
+          'A <span style="color:#34d399;font-weight:700;">teologia da cruz</span> vai na direção oposta. Ela insiste que <span style="background:rgba(52,211,153,0.12);border-left:3px solid #34d399;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(200,255,235,0.95);">Deus se revela onde menos esperamos — na fraqueza, no sofrimento, no escândalo de um crucificado.</span> Deus não se esconde nos palácios dos poderosos; revela-se no madeiro de uma <span style="color:#f97316;font-weight:600;">execução romana</span>. Qualquer teologia que não passe pela cruz está, na verdade, <strong style="color:#fff;">evitando o Deus que se revelou em Cristo</strong>.',
+          'Para Lutero, isso não é apenas doutrina. É <span style="color:#a78bfa;font-weight:700;">epistemologia</span>: a maneira como conhecemos a Deus determina tudo o que diremos sobre Ele. E a Escritura nos diz que Deus escolheu se revelar <em>onde os sábios não procuram</em>.',
+        ],
+        citacao: 'Qualquer teologia que não passe pela cruz está, na verdade, evitando o Deus que se revelou em Cristo.',
+        citacaoAutor: 'Martinho Lutero',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'Lei e Evangelho: A Distinção Fundamental',
+        paragrafos: [
+          'Talvez a contribuição mais prática de Lutero seja a distinção entre <span style="color:#fb7185;font-weight:800;">Lei</span> e <span style="color:#34d399;font-weight:800;">Evangelho</span> — e a insistência de que <span style="background:rgba(251,113,133,0.12);border:1px solid rgba(251,113,133,0.30);border-radius:5px;padding:1px 7px;color:#fecdd3;font-weight:700;">confundi-los é o erro pastoral mais comum e mais destrutivo</span>.',
+          'Lei e Evangelho <strong style="color:#fff;">não são o Antigo e o Novo Testamento.</strong> São dois modos simultâneos pelos quais Deus fala. A <span style="color:#fb7185;font-weight:700;">Lei</span> diz: <span style="color:#fb7185;font-style:italic;">"tu deves"</span> — e ao revelar o que devemos, revela também que não cumprimos. A Lei <span style="color:#fb7185;font-weight:600;">diagnostica o pecado; não o cura.</span> O <span style="color:#34d399;font-weight:700;">Evangelho</span> diz: <span style="color:#34d399;font-style:italic;">"tu és perdoado em Cristo"</span> — e ao revelar o perdão, liberta o crente da espiral de autoprovação que a Lei por si só intensifica.',
+          'O erro da piedade medieval era tratar a Lei como se fosse Evangelho: dizer ao pecador angustiado <span style="color:#fb7185;font-style:italic;">"faça mais obras, ore mais, confesse mais"</span> quando ele precisava ouvir <span style="color:#34d399;font-style:italic;">"em Cristo, você é perdoado gratuitamente."</span> <span style="background:rgba(251,191,36,0.12);border-left:3px solid #fbbf24;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(255,245,210,0.95);">O remédio era transformado em veneno ao ser administrado no lugar errado.</span>',
+        ],
+        citacao: 'Toda boa pregação deve deixar a Lei fazer seu trabalho diagnóstico — e então proclamar o Evangelho como dom puro, sem condições.',
+        citacaoAutor: 'Martinho Lutero',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'Sola Fide: Justiça Imputada, Não Infundida',
+        paragrafos: [
+          'No centro de toda a teologia de Lutero está a doutrina da <span style="background:rgba(251,191,36,0.15);border:1px solid rgba(251,191,36,0.35);border-radius:5px;padding:1px 8px;color:#fde68a;font-weight:900;font-style:italic;">justificação pela fé</span>. A tradição católica medieval ensinava que Deus justifica o pecador <span style="color:#a78bfa;font-weight:700;">infundindo</span> nele uma qualidade espiritual — a graça que torna o crente progressivamente mais justo. A justificação era um <span style="color:#fb7185;font-weight:600;">processo de transformação interior</span>.',
+          'Lutero, ao ler Paulo, chegou a uma conclusão diferente: a justificação é uma <span style="color:#34d399;font-weight:700;">declaração forense</span> — um ato judicial pelo qual Deus <strong style="color:#fff;">declara</strong> o pecador justo em Cristo, <span style="color:#fbbf24;font-weight:700;">imputando</span> ao crente a justiça de Cristo. Não é que Deus nos <em>torna</em> justos antes de nos declarar justos; é que Deus nos <em>declara</em> justos <strong style="color:#34d399;">gratuitamente, por causa de Cristo, recebido pela fé</strong>.',
+          'Essa distinção tem consequências pastorais enormes. Se a justificação depende de <span style="color:#fb7185;font-weight:600;">transformação progressiva</span>, o crente nunca sabe se já transformou o suficiente. Se a justificação é <span style="color:#34d399;font-weight:600;">declaração gratuita em Cristo</span>, a certeza da salvação descansa não no meu progresso moral, mas na <span style="background:rgba(52,211,153,0.12);border-left:3px solid #34d399;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(200,255,235,0.95);">palavra de Deus sobre mim em Cristo.</span>',
+        ],
+        citacao: 'A certeza da salvação não repousa no meu progresso moral, mas na palavra de Deus sobre mim em Cristo.',
+        citacaoAutor: 'Martinho Lutero',
+      },
+    ],
+    perguntas: [
+      'A teologia da glória busca Deus no poder e no êxito. Você reconhece esse impulso em si mesmo, na sua comunidade, na pregação que costuma ouvir? Onde você tende a "procurar Deus" primeiro?',
+      'Lutero distingue Lei e Evangelho como dois modos da Palavra de Deus. Qual é o risco de uma pregação que só usa a Lei (condenação sem graça)? E de uma que só usa o Evangelho (graça sem diagnóstico do pecado)?',
+      'A justificação pela fé significa que a certeza da salvação não repousa no meu progresso moral, mas na palavra de Deus. Como isso afeta sua vida espiritual prática — sua oração, seu relacionamento com Deus, sua resposta ao fracasso moral?',
+    ],
+    oracao: 'Senhor, perdoa-nos pela tendência de preferir uma teologia da glória — que busca o Teu rosto nos lugares confortáveis, que confunde prosperidade com bênção e sucesso com aprovação. Ensina-nos a encontrar-Te na cruz: no lugar do escândalo, da fraqueza, do fracasso que Tu redimes.\n\nE que a distinção entre Lei e Evangelho nos liberte da religiosidade ansiosa: que a Lei faça seu trabalho de nos mostrar quem somos, e o Evangelho faça o Seu — de nos dizer, em Cristo, quem somos diante de Ti.\n\nAmém.',
+    leituraComplementar: 'González, Justo L. A Era dos Reformadores. São Paulo: Vida Nova, 1995. Capítulo 3: "A Teologia de Martinho Lutero" (pp. 53–74). [Parte 1 — foco na Teologia da Cruz, Lei/Evangelho e justificação pela fé]',
+  },
   5: {
     dia: 5,
     data: '5 de outubro de 2026',
