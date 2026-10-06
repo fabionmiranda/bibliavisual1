@@ -21,6 +21,22 @@ const LIVROS = [
     accentColor: '#a855f7',
     grad: 'from-violet-950 via-purple-950 to-slate-950',
   },
+  {
+    slug: 'os-batistas-e-a-biblia',
+    titulo: 'Os Batistas e a Bíblia',
+    subtitulo: 'Capítulos, Teólogos e Obras — 4 séculos de história batista',
+    autor: 'L. Russ Bush & Tom J. Nettles',
+    ano: 'ed. brasileira',
+    editora: 'Ortodoxia Batista',
+    capa: '/livros/os-batistas-e-a-biblia.jpg',
+    categorias: ['História Batista', 'Bibliologia'],
+    sinopse:
+      'Uma obra monumental que percorre quatro séculos em 19 capítulos e 36 teólogos — de John Smyth (1609) a Ralph Elliott (anos 1960) — provando que a fidelidade à Escritura como inspirada, infalível e autoridade final sempre foi o fundamento e o campo de batalha da identidade batista.',
+    destaque: true,
+    nota: 5,
+    accentColor: '#f97316',
+    grad: 'from-orange-950 via-amber-950 to-slate-950',
+  },
 ];
 
 export default function BibliotecaLivrosPage() {

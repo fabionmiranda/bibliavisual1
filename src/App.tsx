@@ -12,6 +12,7 @@ import EducacaoCristaAula1Page from './pages/EducacaoCristaAula1Page';
 import EducacaoCristaAula2Page from './pages/EducacaoCristaAula2Page';
 import EducacaoCristaAula3Page from './pages/EducacaoCristaAula3Page';
 import LivroIsThereiningPage from './pages/LivroIsTheremeaningPage';
+import LivroBatistasBibliaPage from './pages/LivroBatistasBibliaPage';
 import BibliotecaLivrosPage from './pages/BibliotecaLivrosPage';
 import BibliotecaResenhasPage from './pages/BibliotecaResenhasPage';
 import ResenhaGonzalezEraReformadoresPage from './pages/ResenhaGonzalezEraReformadoresPage';
@@ -97,6 +98,7 @@ export default function App() {
           <Route path="/biblioteca" element={<BibliotecaPage />} />
           <Route path="/biblioteca/livros"                           element={<BibliotecaLivrosPage />} />
           <Route path="/biblioteca/livros/is-there-meaning"        element={<LivroIsThereiningPage />} />
+          <Route path="/biblioteca/livros/os-batistas-e-a-biblia" element={<LivroBatistasBibliaPage />} />
           <Route path="/biblioteca/artigos"           element={<BibliotecaArtigosPage />} />
           <Route path="/biblioteca/semana"            element={<BibliotecaSemanaPage />} />
           <Route path="/biblioteca/autores" element={<BibliotecaAutoresPage />} />
