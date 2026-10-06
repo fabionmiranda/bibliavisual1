@@ -20,6 +20,63 @@ export interface DiaDevoContent {
 }
 
 const DIAS_CONTENT: Record<number, DiaDevoContent> = {
+  7: {
+    dia: 7,
+    data: '7 de outubro de 2026',
+    titulo: 'A Teologia de Lutero: Os Dois Reinos e os Sacramentos',
+    subtitulo: 'Capítulo 3 — Parte 2',
+    versiculo: 'Ide, portanto, fazei discípulos de todas as nações, batizando-os em nome do Pai, e do Filho, e do Espírito Santo.',
+    versiculoRef: 'Mateus 28.19',
+    secoes: [
+      {
+        tipo: 'contexto',
+        titulo: 'Dois Temas que Dividiram a Reforma',
+        paragrafos: [
+          'Ontem exploramos as distinções centrais da teologia de Lutero: a Teologia da Cruz, a distinção Lei/Evangelho e a justificação pela fé. Hoje completamos o panorama com dois temas igualmente decisivos: a doutrina dos <span style="color:#fbbf24;font-weight:700;">Dois Reinos</span> — que explica como Lutero pensava a relação entre fé e vida pública — e a doutrina dos <span style="color:#c084fc;font-weight:700;">sacramentos</span>, que seria o <span style="color:#fb7185;font-weight:600;">ponto de ruptura entre Lutero e os outros reformadores</span>.',
+        ],
+      },
+      {
+        tipo: 'analise',
+        titulo: 'Os Dois Reinos: Deus Governa de Duas Formas',
+        paragrafos: [
+          'Lutero desenvolveu a doutrina dos <strong style="color:#fbbf24;">Dois Reinos</strong>: Deus governa o mundo por dois meios diferentes, com lógicas diferentes. No <span style="color:#34d399;font-weight:700;">reino espiritual</span> — a Igreja, a fé, a salvação — Deus governa pelo <span style="color:#34d399;font-weight:600;">Evangelho, pela graça, pela Palavra</span>. No <span style="color:#60a5fa;font-weight:700;">reino temporal</span> — o Estado, a família, a economia — Deus governa pela <span style="color:#60a5fa;font-weight:600;">razão, pela lei e, quando necessário, pela coerção</span>. Os dois reinos são distintos, mas <strong style="color:#fff;">ambos são de Deus</strong>.',
+          'Isso tem consequências práticas enormes. O cristão vive simultaneamente nos dois reinos: como <span style="color:#34d399;font-weight:600;">crente</span>, vive sob o Evangelho; como <span style="color:#60a5fa;font-weight:600;">cidadão, pai, juiz ou soldado</span>, vive sob a lei temporal. <span style="background:rgba(251,191,36,0.12);border-left:3px solid #fbbf24;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(255,245,210,0.95);">As normas de um reino não se aplicam diretamente ao outro.</span> Um juiz que absolvesse todos os criminosos "por amor cristão" estaria confundindo os reinos — assim como um pregador que usasse o Estado para impor a fé.',
+          'González observa o <span style="color:#fb7185;font-weight:700;">risco histórico</span> desta doutrina: ela foi usada para justificar o <span style="background:rgba(251,113,133,0.12);border:1px solid rgba(251,113,133,0.30);border-radius:5px;padding:1px 7px;color:#fecdd3;font-weight:700;">quietismo político</span> — cristãos que se recusavam a resistir a governos injustos porque "o reino temporal não é assunto da Igreja." Lutero mesmo a usou para apoiar a brutal <span style="color:#fb7185;font-weight:600;">repressão da Revolta dos Camponeses em 1525</span>. A doutrina é válida; <em>os usos podem ser distorcidos.</em>',
+        ],
+        citacao: 'Os dois reinos são distintos, mas ambos são de Deus. A arte cristã está em viver fielmente em cada um sem confundir as lógicas de ambos.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'Sola Scriptura: A Palavra como Autoridade Final',
+        paragrafos: [
+          'Em Worms, Lutero declarou que sua consciência estava <span style="background:rgba(192,132,252,0.15);border:1px solid rgba(192,132,252,0.35);border-radius:5px;padding:1px 8px;color:#e9d5ff;font-weight:700;font-style:italic;">"presa à Palavra de Deus."</span> Essa afirmação resume o princípio que ficou conhecido como <strong style="color:#c084fc;">Sola Scriptura</strong>: a Escritura tem autoridade final sobre <span style="color:#fb7185;font-weight:600;">papas, concílios e tradição</span>.',
+          'Mas é preciso entender o que Lutero quis dizer — e o que <em>não</em> quis. Ele não estava afirmando que cada cristão lê a Bíblia sozinho e chega às suas próprias conclusões sem qualquer mediação. Estava afirmando que, <span style="background:rgba(52,211,153,0.12);border-left:3px solid #34d399;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(200,255,235,0.95);">quando a tradição eclesiástica contradiz a Escritura, a Escritura vence.</span>',
+          'Para Lutero, <span style="color:#fbbf24;font-weight:700;">"Escritura"</span> era, antes de tudo, <strong style="color:#fff;">o que testifica de Cristo</strong>. O centro da Bíblia é o Evangelho de Jesus Cristo. Qualquer interpretação que afaste o leitor de Cristo — mesmo que autorizada por Roma — está errada. A Escritura não é um conjunto de proposições inerrantes; é <span style="color:#34d399;font-style:italic;">o meio pelo qual Cristo chega até o leitor.</span>',
+        ],
+        citacao: 'A Escritura não é um conjunto de proposições a defender. É o meio pelo qual Cristo chega até o leitor — e esse critério cristológico deve guiar toda interpretação.',
+        citacaoAutor: 'Martinho Lutero',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'Os Sacramentos: O Ponto de Ruptura com Zuínglio',
+        paragrafos: [
+          'Lutero manteve apenas <span style="color:#fbbf24;font-weight:700;">dois sacramentos</span> — <span style="color:#60a5fa;font-weight:600;">batismo</span> e <span style="color:#60a5fa;font-weight:600;">Ceia do Senhor</span> — rejeitando os cinco adicionais medievais. Para ele, os sacramentos são <span style="background:rgba(251,191,36,0.15);border:1px solid rgba(251,191,36,0.35);border-radius:5px;padding:1px 8px;color:#fde68a;font-weight:800;font-style:italic;">"Palavra visível"</span> — a mesma graça proclamada no sermão, tornada presente e tangível em forma física.',
+          'Na Ceia do Senhor, Lutero sustentou a <span style="color:#c084fc;font-weight:700;">presença real de Cristo</span> no pão e no vinho — não a <span style="color:#fb7185;font-weight:600;">transubstanciação</span> (a substância do pão se transforma), mas a <span style="color:#a78bfa;font-weight:700;">consubstanciação</span>: Cristo está <em>verdadeiramente presente junto com</em> o pão e o vinho. <span style="background:rgba(192,132,252,0.15);border:1px solid rgba(192,132,252,0.35);border-radius:5px;padding:2px 10px;color:#e9d5ff;font-weight:700;font-style:italic;">"Isto é meu corpo"</span> significa, para Lutero, exatamente o que diz.',
+          '<strong style="color:#fff;">Zuínglio</strong>, em Zurique, discordava radicalmente: para ele, <span style="color:#34d399;font-style:italic;">"isto é meu corpo"</span> significa <span style="color:#34d399;font-style:italic;">"isto representa meu corpo."</span> A Ceia é <span style="color:#34d399;font-weight:600;">memorial</span>, não presença real. Em <span style="color:#60a5fa;font-weight:700;">1529</span>, no <span style="color:#f97316;font-weight:700;">Colóquio de Marburgo</span>, Lutero e Zuínglio tentaram chegar a acordo. <strong style="color:#fb7185;">Não conseguiram.</strong> <span style="background:rgba(251,113,133,0.12);border-left:3px solid #fb7185;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(255,220,225,0.95);">A Reforma Protestante nasceu dividida — e essa divisão persiste até hoje.</span>',
+        ],
+        citacao: 'A Reforma Protestante nasceu dividida. Lutero e Zuínglio concordavam no Evangelho e discordavam na Ceia — e essa tensão moldou o protestantismo para sempre.',
+        citacaoAutor: 'Justo L. González',
+      },
+    ],
+    perguntas: [
+      'A doutrina dos Dois Reinos distingue a lógica do Evangelho da lógica da ordem política. Onde você vê cristãos confundindo os dois — aplicando a coerção do Estado onde deveria valer a graça, ou esperando do Estado o que só a Igreja pode fazer?',
+      'Lutero disse que a Escritura é autoridade final não como coleção de proposições, mas como testemunho de Cristo. Como esse critério cristológico deveria guiar a sua leitura da Bíblia?',
+      'A divisão entre Lutero e Zuínglio sobre a Ceia ocorreu dentro do mesmo movimento reformador. O que esse episódio diz sobre como comunidades que compartilham convicções centrais podem se dividir em questões secundárias? Como você navega esse tipo de tensão na sua própria comunidade de fé?',
+    ],
+    oracao: 'Senhor, obrigado por falar de duas formas ao mundo: pela lei que ordena a vida em comunidade, e pelo Evangelho que liberta a consciência. Guarda-nos de confundir as duas vozes — de transformar o Evangelho em coerção ou de esperar da lei temporal o que só a graça pode dar.\n\nQue a Tua Palavra seja sempre nossa ancoragem: não como código de proposições a defender, mas como testemunho vivo de Cristo que nos encontra onde estamos.\n\nAmém.',
+    leituraComplementar: 'González, Justo L. A Era dos Reformadores. São Paulo: Vida Nova, 1995. Capítulo 3: "A Teologia de Martinho Lutero" (pp. 53–74). [Parte 2 — foco nos Dois Reinos, Sola Scriptura e sacramentos]',
+  },
   6: {
     dia: 6,
     data: '6 de outubro de 2026',
