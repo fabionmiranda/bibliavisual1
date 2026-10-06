@@ -76,21 +76,57 @@ const PARTES = [
   },
 ];
 
-// ── Teólogos selecionados ────────────────────────────────────────────────────
-const TEOLOGOS = [
-  { nome: 'John Smyth', datas: 'c.1570–1612', papel: 'Fundador da 1ª igreja batista inglesa (Amsterdã, 1609)', cor: '#f97316' },
-  { nome: 'Thomas Helwys', datas: 'c.1575–c.1616', papel: '1ª igreja batista em solo inglês (1612). Morreu na prisão pela liberdade religiosa', cor: '#f97316' },
-  { nome: 'Thomas Grantham', datas: '1634–1692', papel: 'Principal teólogo dos batistas gerais. Refutou os quakers pela Escritura escrita', cor: '#f97316' },
-  { nome: 'John Gill', datas: '1697–1771', papel: 'O mais prolífico. Pastor em Londres na igreja que depois seria de Spurgeon', cor: '#fbbf24' },
-  { nome: 'Andrew Fuller', datas: '1754–1815', papel: 'Uniu calvinismo e oferta universal. Cofundador da Sociedade Missionária Batista (1792)', cor: '#fbbf24' },
-  { nome: 'William Carey', datas: '1761–1834', papel: '"Pai das missões modernas". Traduziu a Bíblia para dezenas de línguas na Índia', cor: '#fbbf24' },
-  { nome: 'John L. Dagg', datas: '1794–1884', papel: 'Autor da 1ª teologia sistemática batista americana', cor: '#fbbf24' },
-  { nome: 'Charles H. Spurgeon', datas: '1834–1892', papel: 'Metropolitan Tabernacle. Denunciou o abandono da Escritura; deixou a Baptist Union (1887)', cor: '#ef4444' },
-  { nome: 'J. P. Boyce', datas: '1827–1888', papel: 'Fundador do Southern Seminary. Afirmava a Escritura sem erro', cor: '#ef4444' },
-  { nome: 'Crawford H. Toy', datas: '1836–1919', papel: 'Adotou a alta crítica; desligado do Southern em 1879. Tipo do "declínio"', cor: '#ef4444' },
-  { nome: 'E. Y. Mullins', datas: '1860–1928', papel: 'Presidente do Southern. Afirmou a Escritura, mas enfatizou a experiência e a "alma competente"', cor: '#a78bfa' },
-  { nome: 'A. T. Robertson', datas: '1863–1934', papel: 'Grande erudito do grego neotestamentário, que submetia sua erudição à Escritura', cor: '#a78bfa' },
-  { nome: 'B. H. Carroll', datas: '1843–1914', papel: 'Fundador do Southwestern Seminary. Não separava verdade teológica, científica e histórica', cor: '#22c55e' },
+// ── 36 teólogos na ordem do livro ────────────────────────────────────────────
+const TEOLOGOS: { num: number; cap: string; nome: string; datas: string; papel: string; cor: string }[] = [
+  // Cap. 1 — Batistas Gerais, séc. XVII
+  { num:  1, cap: 'Cap. 1', nome: 'John Smyth',         datas: 'c.1570–1612',    papel: 'Fundou a 1ª igreja batista inglesa em Amsterdã (1609). Via a Escritura como plenamente confiável nos originais.',          cor: '#f97316' },
+  { num:  2, cap: 'Cap. 1', nome: 'Thomas Helwys',      datas: 'c.1575–c.1616',  papel: 'Fundou a 1ª igreja batista em solo inglês (1612). Defensor da liberdade religiosa; morreu na prisão.',                    cor: '#f97316' },
+  { num:  3, cap: 'Cap. 1', nome: 'John Murton',        datas: '?–c.1626',       papel: 'Sucessor de Helwys; defendeu a liberdade de consciência diante do Estado.',                                                cor: '#f97316' },
+  { num:  4, cap: 'Cap. 1', nome: 'Thomas Grantham',    datas: '1634–1692',      papel: 'Principal teólogo dos batistas gerais. Combateu os quakers em favor da Escritura escrita.',                                cor: '#f97316' },
+  // Cap. 4 — Grande nuvem de testemunhas
+  { num:  5, cap: 'Cap. 4', nome: 'Roger Williams',     datas: 'c.1603–1683',    papel: 'Fundou Rhode Island e a 1ª igreja batista da América (Providence, 1638–39). Defendeu a separação Igreja–Estado.',          cor: '#fb923c' },
+  { num:  6, cap: 'Cap. 4', nome: 'Isaac Backus',       datas: '1724–1806',      papel: 'Pastor na Nova Inglaterra, historiador e defensor da liberdade religiosa.',                                                 cor: '#fb923c' },
+  { num:  7, cap: 'Cap. 4', nome: 'John Bunyan',        datas: '1628–1688',      papel: 'Pregador leigo preso por pregar. Sua obra é saturada de Escritura. Autor de O Peregrino (1678).',                          cor: '#fb923c' },
+  { num:  8, cap: 'Cap. 4', nome: 'Benjamin Keach',     datas: '1640–1704',      papel: 'Signatário da Confissão de 1689. Introduziu o canto de hinos nas igrejas batistas inglesas.',                              cor: '#fb923c' },
+  // Cap. 5 — Séc. XVIII inglês
+  { num:  9, cap: 'Cap. 5', nome: 'John Gill',          datas: '1697–1771',      papel: 'O mais prolífico da denominação. Pastor em Londres na igreja que depois seria de Spurgeon.',                               cor: '#fbbf24' },
+  { num: 10, cap: 'Cap. 5', nome: 'Andrew Fuller',      datas: '1754–1815',      papel: 'Uniu calvinismo e oferta universal do evangelho. Cofundador da Sociedade Missionária Batista (1792).',                     cor: '#fbbf24' },
+  { num: 11, cap: 'Cap. 5', nome: 'Dan Taylor',         datas: '1738–1816',      papel: 'Batista geral. Fundou a New Connexion (1770) contra a deriva unitarista.',                                                 cor: '#fbbf24' },
+  // Cap. 6 — Missões
+  { num: 12, cap: 'Cap. 6', nome: 'William Carey',      datas: '1761–1834',      papel: '"Pai das missões modernas". Na Índia (Serampore), traduziu a Bíblia para dezenas de línguas.',                             cor: '#fbbf24' },
+  { num: 13, cap: 'Cap. 6', nome: 'Adoniram Judson',    datas: '1788–1850',      papel: 'Missionário na Birmânia; tornou-se batista durante a viagem. Traduziu a Bíblia para o birmanês (1834).',                   cor: '#fbbf24' },
+  // Cap. 7 — Divisão Norte/Sul
+  { num: 14, cap: 'Cap. 7', nome: 'John Leland',        datas: '1754–1841',      papel: 'Pregador na Virgínia. Influenciou a liberdade religiosa na Constituição americana.',                                       cor: '#fbbf24' },
+  { num: 15, cap: 'Cap. 7', nome: 'Richard Furman',     datas: '1755–1825',      papel: 'Primeiro presidente da Convenção Trienal (1814). Pastor em Charleston.',                                                   cor: '#fbbf24' },
+  { num: 16, cap: 'Cap. 7', nome: 'Francis Wayland',    datas: '1796–1865',      papel: 'Presidente da Brown University. Moralista do Norte e opositor da escravidão.',                                             cor: '#fbbf24' },
+  { num: 17, cap: 'Cap. 7', nome: 'John L. Dagg',       datas: '1794–1884',      papel: 'Autor da 1ª teologia sistemática batista americana: Manual of Theology (1857).',                                           cor: '#fbbf24' },
+  // Cap. 9 — Fundação do Southern Seminary
+  { num: 18, cap: 'Cap. 9', nome: 'J. P. Boyce',        datas: '1827–1888',      papel: 'Fundador e 1º presidente do Southern Seminary (1859). Afirmava a Escritura sem erro.',                                    cor: '#ef4444' },
+  { num: 19, cap: 'Cap. 9', nome: 'Basil Manly Jr.',    datas: '1825–1892',      papel: 'Redigiu o Abstract of Principles (1858), confissão fundadora do Southern.',                                                cor: '#ef4444' },
+  { num: 20, cap: 'Cap. 9', nome: 'J. R. Graves',       datas: '1820–1893',      papel: 'Líder do landmarkismo. Defendeu a fundação do Southern na convenção de 1849.',                                             cor: '#ef4444' },
+  // Cap. 10 — Crise Toy
+  { num: 21, cap: 'Cap. 10', nome: 'John A. Broadus',   datas: '1827–1895',      papel: 'Professor do Southern alinhado a Boyce e Manly. Lamentou a perda de Toy como Davi lamentou Absalão.',                     cor: '#ef4444' },
+  { num: 22, cap: 'Cap. 10', nome: 'Crawford H. Toy',   datas: '1836–1919',      papel: 'Adotou a alta crítica alemã; desligado do Southern em 1879. Tipo do "declínio" liberal.',                                 cor: '#ef4444' },
+  // Cap. 11 — Controvérsia do Declínio (Inglaterra)
+  { num: 23, cap: 'Cap. 11', nome: 'C. H. Spurgeon',    datas: '1834–1892',      papel: 'Metropolitan Tabernacle. Denunciou o abandono da Escritura e deixou a Baptist Union em 1887.',                            cor: '#ef4444' },
+  { num: 24, cap: 'Cap. 11', nome: 'John Clifford',     datas: '1836–1923',      papel: '1º presidente da Aliança Batista Mundial (1905). Buscou conciliar alta crítica com piedade.',                             cor: '#ef4444' },
+  // Cap. 12 — Batistas do Norte (EUA)
+  { num: 25, cap: 'Cap. 12', nome: 'A. H. Strong',      datas: '1836–1921',      papel: 'Presidente do Rochester Seminary. Firme nas doutrinas básicas, mas influenciado pelo evolucionismo.',                     cor: '#a78bfa' },
+  { num: 26, cap: 'Cap. 12', nome: 'Alvah Hovey',       datas: '1820–1903',      papel: 'Presidente da Newton Institution; talvez o maior teólogo bíblico do Norte em sua época.',                                 cor: '#a78bfa' },
+  // Cap. 13 — Southern no início do séc. XX
+  { num: 27, cap: 'Cap. 13', nome: 'E. Y. Mullins',     datas: '1860–1928',      papel: 'Presidente do Southern. Afirmou a Escritura, mas enfatizou a experiência e a "alma competente".',                         cor: '#a78bfa' },
+  { num: 28, cap: 'Cap. 13', nome: 'A. T. Robertson',   datas: '1863–1934',      papel: 'Grande erudito do grego do NT. Submetia toda sua erudição à autoridade da Escritura.',                                    cor: '#a78bfa' },
+  // Cap. 14 — Southwestern Seminary
+  { num: 29, cap: 'Cap. 14', nome: 'B. H. Carroll',     datas: '1843–1914',      papel: 'Fundador do Southwestern Seminary (1908). Não separava verdade teológica, científica e histórica.',                       cor: '#22c55e' },
+  { num: 30, cap: 'Cap. 14', nome: 'W. T. Conner',      datas: '1877–1952',      papel: 'Principal teólogo do Southwestern. Afirmava a inspiração, mas via "inerrância" como desnecessário.',                      cor: '#22c55e' },
+  // Cap. 15 — Modernismo vs. Fundamentalismo
+  { num: 31, cap: 'Cap. 15', nome: 'W. Rauschenbusch',  datas: '1861–1918',      papel: 'Principal nome do evangelho social. Teologia centrada na transformação social, não na Escritura.',                        cor: '#60a5fa' },
+  { num: 32, cap: 'Cap. 15', nome: 'Shailer Mathews',   datas: '1863–1941',      papel: 'Decano da Divinity School de Chicago e porta-voz do modernismo teológico.',                                               cor: '#60a5fa' },
+  { num: 33, cap: 'Cap. 15', nome: 'W. N. Clarke',      datas: '1841–1912',      papel: 'Autor da 1ª sistemática liberal americana. Via a Bíblia como registro de experiência religiosa.',                         cor: '#60a5fa' },
+  { num: 34, cap: 'Cap. 15', nome: 'H. E. Fosdick',     datas: '1878–1969',      papel: 'Símbolo da controvérsia modernista. Sermão "Shall the Fundamentalists Win?" (1922).',                                     cor: '#60a5fa' },
+  { num: 35, cap: 'Cap. 15', nome: 'J. J. Reeve',       datas: 'séc. XIX–XX',    papel: 'Professor do Southwestern que abandonou a alta crítica. Contraponto conservador no Cap. 15.',                             cor: '#22c55e' },
+  // Cap. 16 — Séc. XX
+  { num: 36, cap: 'Cap. 16', nome: 'Ralph Elliott',     datas: 'séc. XX',        papel: 'Professor do Midwestern Seminary. Seu livro crítico sobre Gênesis levou à demissão em 1962.',                             cor: '#60a5fa' },
 ];
 
 // ── Conceitos-chave ──────────────────────────────────────────────────────────
@@ -423,16 +459,29 @@ export default function LivroBatistasBibliaPage() {
                 initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.05 }}
+                transition={{ delay: Math.min(i * 0.03, 0.6) }}
                 className="flex items-start gap-4 p-5 rounded-2xl border border-white/8 bg-white/[0.03] hover:bg-white/[0.05] transition-all duration-200"
               >
+                {/* Número */}
                 <div
-                  className="w-2 h-2 rounded-full shrink-0 mt-2"
-                  style={{ background: t.cor, boxShadow: `0 0 6px ${t.cor}80` }}
-                />
-                <div>
-                  <p className="text-white font-black text-sm leading-snug">{t.nome}</p>
-                  <p className="text-white/35 text-[11px] font-bold mb-1">{t.datas}</p>
+                  className="shrink-0 w-8 h-8 rounded-xl flex items-center justify-center text-[11px] font-black"
+                  style={{ background: t.cor + '18', border: `1px solid ${t.cor}40`, color: t.cor }}
+                >
+                  {String(t.num).padStart(2, '0')}
+                </div>
+                <div className="min-w-0">
+                  <div className="flex items-center gap-2 mb-0.5">
+                    <p className="text-white font-black text-sm leading-snug">{t.nome}</p>
+                  </div>
+                  <div className="flex items-center gap-2 mb-1.5">
+                    <span className="text-white/35 text-[10px] font-bold">{t.datas}</span>
+                    <span
+                      className="text-[9px] font-black uppercase tracking-wider px-1.5 py-0.5 rounded"
+                      style={{ color: t.cor + 'cc', background: t.cor + '12' }}
+                    >
+                      {t.cap}
+                    </span>
+                  </div>
                   <p className="text-white/55 text-xs leading-relaxed">{t.papel}</p>
                 </div>
               </motion.div>
