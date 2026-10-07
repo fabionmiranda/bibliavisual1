@@ -122,14 +122,14 @@ export default function BibliotecaLivrosPage() {
                           Destaque
                         </span>
                       )}
-                      <h2 className="font-display font-black text-xl sm:text-2xl text-white leading-tight mb-1">
+                      <h2 className="font-display font-black text-2xl sm:text-3xl text-white leading-tight mb-2">
                         {livro.titulo}
                       </h2>
-                      <p className="text-white/35 text-xs italic mb-3">{livro.subtitulo}</p>
-                      <p className="text-white/55 text-[11px] font-bold uppercase tracking-wider mb-4">
+                      <p className="text-white/60 text-sm sm:text-base italic mb-3">{livro.subtitulo}</p>
+                      <p className="text-white/75 text-xs sm:text-sm font-bold uppercase tracking-wider mb-4">
                         {livro.autor} · {livro.editora} · {livro.ano}
                       </p>
-                      <p className="text-white/50 text-sm leading-relaxed line-clamp-3 sm:line-clamp-4">
+                      <p className="text-white/70 text-sm sm:text-base leading-relaxed line-clamp-3 sm:line-clamp-4">
                         {livro.sinopse}
                       </p>
                     </div>
@@ -137,13 +137,13 @@ export default function BibliotecaLivrosPage() {
                     <div className="flex flex-wrap items-center justify-between gap-3">
                       <div className="flex flex-wrap gap-2">
                         {livro.categorias.map(c => (
-                          <span key={c} className="px-2.5 py-1 rounded-full text-[8px] font-black uppercase tracking-widest text-white/40 border border-white/10">
+                          <span key={c} className="px-2.5 py-1 rounded-full text-[10px] font-black uppercase tracking-widest text-white/60 border border-white/20">
                             {c}
                           </span>
                         ))}
                       </div>
                       <span
-                        className="flex items-center gap-1.5 text-[10px] font-black uppercase tracking-widest transition-all duration-200 group-hover:gap-2.5"
+                        className="flex items-center gap-1.5 text-xs font-black uppercase tracking-widest transition-all duration-200 group-hover:gap-2.5"
                         style={{ color: livro.accentColor }}
                       >
                         Ver completo
