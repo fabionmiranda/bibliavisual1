@@ -1,0 +1,331 @@
+// gerar_novembro.cjs — CFW Cap. XXVI–XXIX (dias 304–333)
+const fs = require('fs');
+const path = require('path');
+const filePath = path.join(__dirname, 'src/data/devocionalConfessional.ts');
+let content = fs.readFileSync(filePath, 'utf8');
+
+const novembro = `
+function gerarDiasNovembro(): DiaConfessional[] {
+  const dias: DiaCompacto[] = [
+    // ── CFW XXVI — Comunhão dos Santos ─────────────────────────────────────
+    {
+      dia: 304, data: '1 de novembro', tema: 'A Comunhão dos Santos: Unidos em Cristo',
+      capitulo: 'CFW Cap. XXVI.1', versiculo: '1 João 1.3',
+      devocional: 'A comunhão dos santos não é apenas amizade entre crentes — é participação compartilhada na vida de Cristo. CFW XXVI.1 afirma que todos os santos, por estarem unidos a Cristo como cabeça, têm comunhão uns com os outros em seus dons e graças. Não escolhemos nossa família espiritual; fomos enxertados nela pela fé. "O que temos visto e ouvido, isso vos anunciamos, para que também vós tenhais comunhão conosco; e a nossa comunhão é com o Pai e com seu Filho Jesus Cristo" (1Jo 1.3).',
+      cfwRef: 'CFW XXVI.1', cfwComparacao: 'CB 1689 Cap. XXVI.1 usa linguagem quase idêntica — a comunhão dos santos como participação em Cristo e uns com os outros; ambas as confissões rejeitam o individualismo cristão.',
+      reforco: 'A Igreja não é uma opção para quem "prefere adorar em grupo" — é a família de Deus, da qual todo crente é membro necessário.',
+      aplicacao: 'Liste três crentes que têm sido "comunhão" real para você. Escreva-lhes uma mensagem de gratidão esta semana.',
+      notas: [
+        'CLOWNEY, Edmund. <em>The Church</em>. Downers Grove: IVP, 1995. A eclesiologia mais completa e acessível na tradição reformada — comunhão como essência da Igreja.',
+      ],
+      notaInicio: 70,
+    },
+    {
+      dia: 305, data: '2 de novembro', tema: 'Comunhão nas Graças: Partilhando o que Cristo Deu',
+      capitulo: 'CFW Cap. XXVI.1', versiculo: 'Romanos 12.5',
+      devocional: 'CFW XXVI.1 ensina que os santos têm comunhão nos dons e graças uns dos outros — não apenas nos sacramentos e no culto, mas na vida diária. Paulo ilustra isso com o corpo: "sendo muitos, somos um só corpo em Cristo, mas individualmente membros uns dos outros" (Rm 12.5). O dom dado a um é dado à Igreja; a fraqueza de um é fraqueza de todos. Essa realidade transforma como olhamos para os talentos alheios: não com inveja, mas com gratidão — pois o que meu irmão tem também me serve.',
+      cfwRef: 'CFW XXVI.1', cfwComparacao: 'CB 1689 Cap. XXVI.1 é paralelo — a comunhão inclui partilha de dons, não apenas presença no mesmo espaço.',
+      reforco: 'Individualism espiritual — "minha fé é pessoal" — contraria a doutrina bíblica da comunhão dos santos.',
+      aplicacao: 'Que dom ou graça de outro crente você tem recebido sem reconhecer? Reconheça hoje.',
+      notas: [],
+    },
+    {
+      dia: 306, data: '3 de novembro', tema: 'Comunhão nas Aflições: Suportar as Cargas',
+      capitulo: 'CFW Cap. XXVI.1', versiculo: 'Gálatas 6.2',
+      devocional: 'A comunhão dos santos inclui suportar os pesos uns dos outros — "e assim cumprireis a lei de Cristo" (Gl 6.2). CFW XXVI.1 inclui na comunhão o socorro mútuo em necessidades externas. Uma Igreja que se reúne para cantar, mas não suporta os fardos dos seus membros, pratica uma comunhão incompleta. A encarnação de Cristo, que veio carregar nossos pecados, é o modelo: não adoração a distância, mas presença que carrega peso real.',
+      cfwRef: 'CFW XXVI.1', cfwComparacao: 'CB 1689 Cap. XXVI.1 inclui a mesma ênfase no socorro mútuo — a comunhão não é apenas espiritual, mas também material e prática.',
+      reforco: 'Diaconato ativo é expressão da doutrina da comunhão dos santos — teologia que não produz cuidado mútuo é incompleta.',
+      aplicacao: 'Há alguém em sua congregação carregando um peso que você poderia ajudar a suportar? Ofereça-se hoje.',
+      notas: [],
+    },
+    {
+      dia: 307, data: '4 de novembro', tema: 'Comunhão Universal: Além da Congregação Local',
+      capitulo: 'CFW Cap. XXVI.2', versiculo: 'Hebreus 11.39-40',
+      devocional: 'CFW XXVI.2 afirma que os santos, por sua profissão pública, são obrigados a manter comunhão no culto e nos serviços mútuos. Mas a comunhão dos santos transcende qualquer congregação local — inclui os que morreram na fé. Hebreus 11 apresenta uma nuvem de testemunhas cujas vidas falam ainda hoje. Ler Agostinho, Calvino, Lutero, Owen é praticar comunhão com santos que nos precederam. Somos herdeiros de uma fé que não começa nem termina conosco.',
+      cfwRef: 'CFW XXVI.2', cfwComparacao: 'CB 1689 Cap. XXVI.2 é paralelo — a comunhão inclui deveres recíprocos na Igreja visível local e a conexão com a Igreja universal.',
+      reforco: 'Paroquialismo eclesiástico — "só minha denominação tem a verdade" — contradiz a catolicidade da Igreja.',
+      aplicacao: 'Leia um capítulo de um clássico da fé reformada (Agostinho, Calvino, Lutero, Bavinck). Pratique comunhão com os santos do passado.',
+      notas: [
+        'GRUDEM, Wayne. <em>Systematic Theology</em>. Grand Rapids: Zondervan, 1994. Cap. sobre a Igreja e a comunhão dos santos — base para compreender CFW XXVI.',
+      ],
+      notaInicio: 71,
+    },
+    // ── CFW XXVII — Os Sacramentos em Geral ────────────────────────────────
+    {
+      dia: 308, data: '5 de novembro', tema: 'Os Sacramentos: Sinais e Selos da Graça',
+      capitulo: 'CFW Cap. XXVII.1', versiculo: 'Gênesis 17.11',
+      devocional: 'CFW XXVII.1 define os sacramentos como "sinais e selos santos da aliança da graça" — instituídos por Cristo para representar e aplicar o benefício do novo pacto. Não são meros símbolos vazios, nem conferem graça automaticamente: são meios pelos quais o Espírito trabalha pela fé. A circuncisão foi sinal e selo para Abraão (Rm 4.11); o batismo e a Ceia são os sinais do novo pacto que confirmam as promessas de Deus aos que creem.',
+      cfwRef: 'CFW XXVII.1', cfwComparacao: 'CB 1689 Cap. XXVIII.1 usa linguagem equivalente — sacramentos como sinais e selos; a diferença está no número (CB admite apenas dois: batismo e Ceia, como CFW).',
+      reforco: 'Sacramentos sem a Palavra tornam-se ritualismo; Palavra sem sacramentos empobrece a comunhão da aliança.',
+      aplicacao: 'Na próxima Ceia, venha preparado. Antes do culto, leia 1Co 11.23-34 e examine-se.',
+      notas: [
+        'BERKHOF, Louis. <em>Systematic Theology</em>. Grand Rapids: Eerdmans, 1941. Cap. sobre os sacramentos — exposição clássica reformada de CFW XXVII.',
+      ],
+      notaInicio: 72,
+    },
+    {
+      dia: 309, data: '6 de novembro', tema: 'Graça Sacramental: O Espírito que Age pelos Meios',
+      capitulo: 'CFW Cap. XXVII.3', versiculo: '1 Coríntios 10.16',
+      devocional: 'CFW XXVII.3 ensina que a graça sacramental não está ligada ao elemento físico em si, mas ao Espírito Santo que age soberanamente pelos sacramentos. O pão e o vinho não transformam; o batismo não regenera automaticamente. Mas o Espírito usa esses meios — pela Palavra que os acompanha e pela fé que os recebe — para confirmar e nutrir a vida espiritual. "O cálice da bênção que abençoamos não é a comunhão do sangue de Cristo?" (1Co 10.16). Sim — mas pela ação do Espírito, não pela água ou o vinho em si.',
+      cfwRef: 'CFW XXVII.3', cfwComparacao: 'CB 1689 Cap. XXVIII.3 é equivalente — rejeita tanto o ex opere operato católico quanto o esvaziamento anabatista, mantendo a eficácia instrumental dos sacramentos pelo Espírito.',
+      reforco: 'Ex opere operato (a graça age pelo ato em si) é erro católico; sacramentos vazios de significado real é erro oposto — ambos devem ser rejeitados.',
+      aplicacao: 'Você recebe os sacramentos com fé ativa ou mecanicamente? Ore pedindo ao Espírito que torne cada Ceia uma renovação real da aliança.',
+      notas: [],
+    },
+    {
+      dia: 310, data: '7 de novembro', tema: 'Dois Sacramentos: Batismo e Ceia do Senhor',
+      capitulo: 'CFW Cap. XXVII.4', versiculo: 'Mateus 28.19',
+      devocional: 'CFW XXVII.4 afirma que há somente dois sacramentos do Evangelho: o Batismo e a Ceia do Senhor — ambos instituídos por Cristo, ambos somente para ministros ordenados da Palavra. A Igreja Romana adicionou cinco outros "sacramentos" (crisma, penitência, ordens, matrimônio, extrema-unção) sem mandato bíblico. A Reforma recuperou a simplicidade: o Evangelho tem dois sinais visíveis, instituídos pelo próprio Cristo, que selam as promessas da aliança da graça para todos os seus beneficiários.',
+      cfwRef: 'CFW XXVII.4', cfwComparacao: 'CB 1689 Cap. XXVIII.2 é idêntico — dois sacramentos, apenas por ministros ordenados; rejeita os cinco sacramentos adicionais de Roma.',
+      reforco: 'A simplicidade dos meios de graça é característica do Evangelho — Cristo não precisou de sete sacramentos para comunicar sua graça.',
+      aplicacao: 'Estude a origem dos "sete sacramentos" de Roma. Entender o erro ajuda a valorizar a pureza reformada.',
+      notas: [],
+    },
+    // ── CFW XXVIII — O Batismo ──────────────────────────────────────────────
+    {
+      dia: 311, data: '8 de novembro', tema: 'O Batismo: Sinal de Enxerto na Aliança',
+      capitulo: 'CFW Cap. XXVIII.1', versiculo: 'Mateus 28.19',
+      devocional: 'CFW XXVIII.1 define o batismo como sinal e selo da aliança da graça, do enxerto em Cristo, da regeneração, da remissão dos pecados, e da entrega a Deus em Cristo para andar em novidade de vida. O batismo não salva — mas representa e sela o que pertence ao batizado por promessa. Como a circuncisão era sinal de inclusão na comunidade da aliança no AT, o batismo é o sinal da nova aliança. Não é um testemunho público de fé já existente (posição anabatista); é a marca de Deus sobre os seus.',
+      cfwRef: 'CFW XXVIII.1', cfwComparacao: 'CB 1689 Cap. XXIX.1 usa linguagem similar mas com diferença crucial: para os batistas, o batismo pressupõe fé pessoal professa — rejeita o batismo de infantes.',
+      reforco: 'O debate pedo-batismo vs. credo-batismo não é questão menor — envolve como se entende a aliança, seus sinais e a relação de crentes e seus filhos com Deus.',
+      aplicacao: 'Estude Gênesis 17 e Colossenses 2.11-12. Como o paralelo circuncisão/batismo fundamenta o pedobatismo reformado?',
+      notas: [
+        'MARCEL, Pierre-Charles. <em>The Biblical Doctrine of Infant Baptism</em>. Cambridge: James Clarke, 1953. A defesa mais completa do batismo de infantes na teologia da aliança.',
+      ],
+      notaInicio: 73,
+    },
+    {
+      dia: 312, data: '9 de novembro', tema: 'Modo do Batismo: Aspersão, Derramamento ou Imersão',
+      capitulo: 'CFW Cap. XXVIII.3', versiculo: 'Romanos 6.3-4',
+      devocional: 'CFW XXVIII.3 afirma que o batismo pode ser administrado por aspersão, derramamento ou imersão — sem que o modo seja prescrito como essencial. O que importa é a água, o nome trinitário e a fé. O NT usa "batizar" (baptizō) em contextos que permitem aspersão (At 2.41; Hb 9.10,19-22). A ênfase de Romanos 6 não é no modo físico, mas no significado teológico: sepultamento com Cristo e ressurreição para nova vida. A imersão ilustra isso vividamente, mas não é o único modo válido.',
+      cfwRef: 'CFW XXVIII.3', cfwComparacao: 'CB 1689 Cap. XXIX.4 especifica imersão como o modo bíblico — esta é uma das principais diferenças práticas entre a tradição presbiteriana e a batista.',
+      reforco: 'O modo do batismo não deveria ser causa de divisão entre cristãos reformados — o sinal, o nome e a fé são o essencial.',
+      aplicacao: 'Pesquise o significado de aspersão, derramamento e imersão no AT. Como cada um ilustra a obra do Espírito?',
+      notas: [],
+    },
+    {
+      dia: 313, data: '10 de novembro', tema: 'Batismo de Infantes: Filhos da Aliança',
+      capitulo: 'CFW Cap. XXVIII.4', versiculo: 'Atos 2.39',
+      devocional: 'CFW XXVIII.4 afirma que os filhos de um ou ambos os pais crentes devem ser batizados. A promessa é "para vós, para vossos filhos" (At 2.39). Na aliança abraâmica, os filhos recebiam o sinal (circuncisão) antes de qualquer profissão pessoal. Na nova aliança, os filhos de crentes são incluídos na comunidade da aliança e recebem o sinal correspondente. O batismo de infantes não é "cristismo" forçado — é reconhecimento de que Deus faz promessas às famílias dos seus eleitos, não apenas aos indivíduos.',
+      cfwRef: 'CFW XXVIII.4', cfwComparacao: 'CB 1689 rejeita o batismo de infantes — este é o ponto de maior divergência entre CFW e CB, refletindo duas eclesiologias e teologias da aliança distintas.',
+      reforco: 'O pedobatismo pressupõe continuidade da aliança entre AT e NT; o credo-batismo pressupõe maior descontinuidade — é uma disputa hermenêutica profunda, não apenas prática.',
+      aplicacao: 'Se você foi batizado na infância, relembre esse ato como sinal das promessas de Deus — não como garantia automática de salvação, mas como marco de inclusão na comunidade do pacto.',
+      notas: [],
+    },
+    {
+      dia: 314, data: '11 de novembro', tema: 'Batismo: Uma Vez para Sempre',
+      capitulo: 'CFW Cap. XXVIII.7', versiculo: 'Efésios 4.5',
+      devocional: 'CFW XXVIII.7 afirma que o batismo é administrado uma vez — não deve ser repetido. "Um só Senhor, uma só fé, um só batismo" (Ef 4.5). O batismo é sinal da nova criação em Cristo, que é irreversível. Rebatizar implica que o primeiro batismo não foi válido — mas a validade não está na fé do batizando ou na perfeição do batizador, mas na instituição divina e no nome trinitário. A pergunta não é "fui batizado da forma certa?" mas "fui batizado no nome do Pai, do Filho e do Espírito Santo?"',
+      cfwRef: 'CFW XXVIII.7', cfwComparacao: 'CB 1689 Cap. XXIX.7 é paralelo — um só batismo, não repetido. A diferença está em quem deve receber o batismo, não em sua unicidade.',
+      reforco: 'Rebatismo por conversão posterior ou mudança de denominação nega a objetividade do sinal da aliança.',
+      aplicacao: 'Você duvida da validade do seu batismo? Examine: foi no nome trinitário? Se sim, descanse nessa marca objetiva de Deus sobre você.',
+      notas: [],
+    },
+    {
+      dia: 315, data: '12 de novembro', tema: 'Eficácia do Batismo: Ligada ao Espírito, Não ao Momento',
+      capitulo: 'CFW Cap. XXVIII.6', versiculo: 'Tito 3.5',
+      devocional: 'CFW XXVIII.6 ensina que a graça do batismo não está necessariamente ligada ao momento da administração — mas o Espírito pode trabalhar "quando, onde e como lhe aprouver". O batismo de infantes, por exemplo, pode ser acompanhado de regeneração imediata ou de regeneração que se manifesta mais tarde na vida. A eficácia pertence ao Espírito, não ao rito. Isso liberta tanto do sacramentalismo (a água salva) quanto do simbolismo vazio (o batismo não faz nada).',
+      cfwRef: 'CFW XXVIII.6', cfwComparacao: 'CB 1689 Cap. XXIX.2 afirma que o batismo é para aqueles que já manifestam fé e arrependimento — pressupõe a obra do Espírito antes do rito, não depois.',
+      reforco: 'A soberania do Espírito na aplicação da graça liberta o batismo de ser "automático" (ex opere operato) ou meramente simbólico.',
+      aplicacao: 'Medite em Tito 3.5: "lavagem da regeneração e renovação do Espírito Santo." O batismo aponta para isso — ore para que essa realidade seja sua experiência viva.',
+      notas: [
+        'FESKO, John V. <em>Word, Water, and Spirit</em>. Grand Rapids: Reformation Heritage Books, 2010. A defesa mais completa da teologia batismal reformada (CFW XXVIII).',
+      ],
+      notaInicio: 74,
+    },
+    // ── CFW XXIX — A Ceia do Senhor ────────────────────────────────────────
+    {
+      dia: 316, data: '13 de novembro', tema: 'A Ceia do Senhor: Memorial e Proclamação',
+      capitulo: 'CFW Cap. XXIX.1', versiculo: '1 Coríntios 11.26',
+      devocional: 'CFW XXIX.1 define a Ceia do Senhor como memorial do sacrifício de Cristo — "fazei isso em memória de mim" — e proclamação de sua morte até que ele venha. Não é um novo sacrifício (como Roma ensina na missa) nem apenas um símbolo vazio (como alguns protestantes afirmam). É um memorial eficaz: ao partir o pão e beber o cálice, a Igreja proclama a morte de Cristo, comunga espiritualmente com ele, e antecipa seu retorno. "Todas as vezes que comerdes este pão e beberdes o cálice, anunciais a morte do Senhor até que ele venha" (1Co 11.26).',
+      cfwRef: 'CFW XXIX.1', cfwComparacao: 'CB 1689 Cap. XXX.1 usa linguagem idêntica — a Ceia como memorial e proclamação; ambas as confissões rejeitam a missa como sacrifício.',
+      reforco: 'A missa católica nega a suficiência do sacrifício de Cristo — "uma vez por todas" (Hb 10.10) é o fundamento da Ceia reformada.',
+      aplicacao: 'Na próxima Ceia, antes de comer, lembre: este pão representa o corpo que foi partido por mim. Este cálice, o sangue derramado por mim. Receba com gratidão.',
+      notas: [
+        'THOMAS, Derek. <em>The Lord\'s Supper</em>. Fearn: Christian Focus, 2021. Breve e devocional — ideal para preparação para a Ceia.',
+      ],
+      notaInicio: 75,
+    },
+    {
+      dia: 317, data: '14 de novembro', tema: 'Presença de Cristo na Ceia: Espiritual e Real',
+      capitulo: 'CFW Cap. XXIX.7', versiculo: '1 Coríntios 10.16',
+      devocional: 'CFW XXIX.7 afirma que Cristo está presente na Ceia de modo espiritual e real — não corporal ou carnalmente (contra a transubstanciação e a consubstanciação). Os crentes recebem e se alimentam de Cristo pela fé, não porque pão e vinho se transformem em seu corpo e sangue, nem porque seu corpo esteja "sob" os elementos (Lutero). Cristo está no céu, à destra do Pai — mas o Espírito une o crente que come pela fé ao Cristo exaltado. É real, mas espiritual: "o cálice de bênção que abençoamos não é a comunhão do sangue de Cristo?" (1Co 10.16).',
+      cfwRef: 'CFW XXIX.7', cfwComparacao: 'CB 1689 Cap. XXX.7 é idêntico — presença espiritual de Cristo, não corporal; rejeita transubstanciação e consubstanciação.',
+      reforco: 'A posição reformada sobre a Ceia é mais do que simbólica (Zuínglio) e menos do que corporal (Roma/Lutero) — é comunhão espiritual real com o Cristo exaltado.',
+      aplicacao: 'Você come a Ceia com expectativa de comunhão real com Cristo? Ou apenas com memória de algo passado? Ore por fé que una você ao Cristo vivo.',
+      notas: [],
+    },
+    {
+      dia: 318, data: '15 de novembro', tema: 'Transubstanciação: O Erro que Desonra Cristo',
+      capitulo: 'CFW Cap. XXIX.6', versiculo: 'Hebreus 10.10',
+      devocional: 'CFW XXIX.6 rejeita explicitamente a transubstanciação — a doutrina de que pão e vinho se transformam substancialmente no corpo e sangue de Cristo. Esse erro é "repugnante às Escrituras" e "subversivo da natureza do sacramento". Se Cristo foi sacrificado "uma vez por todas" (Hb 10.10), a missa que reoferece seu sacrifício contradiz a suficiência da cruz. A Ceia olha para trás (memorial), proclama no presente (anúncio) e antecipa o futuro (promessa de retorno) — mas não repete o sacrifício.',
+      cfwRef: 'CFW XXIX.6', cfwComparacao: 'CB 1689 Cap. XXX.6 é idêntico — rejeição da transubstanciação como contrária à Escritura e subversiva do sacramento.',
+      reforco: 'Clareza sobre o que a Ceia NÃO é (novo sacrifício, presença corporal automática) é tão importante quanto saber o que ela É.',
+      aplicacao: 'Leia Hebreus 10.10-14. Medite: "por uma só oferta, aperfeiçoou para sempre os que são santificados." A missa nega isso. A Ceia reformada o proclama.',
+      notas: [],
+    },
+    {
+      dia: 319, data: '16 de novembro', tema: 'Autoexame Antes da Ceia',
+      capitulo: 'CFW Cap. XXIX.8', versiculo: '1 Coríntios 11.28',
+      devocional: 'CFW XXIX.8 instrui que não se deve admitir à Ceia ninguém que seja ignorante ou escandaloso, sem antes ser catequizado e examinado pelos presbíteros. Paulo exorta: "examine-se o homem a si mesmo, e assim coma do pão e beba do cálice" (1Co 11.28). Comer indignamente é comer juízo contra si mesmo. Mas "indignamente" não se refere ao estado moral geral — ninguém é "digno" — mas a comungar sem discernir o corpo, sem arrependimento, sem fé. O autoexame é convite à graça, não barreira para os fracos.',
+      cfwRef: 'CFW XXIX.8', cfwComparacao: 'CB 1689 Cap. XXX.8 é idêntico — o autoexame é exigência apostólica; a disciplina de acesso à Ceia protege a santidade do sacramento.',
+      reforco: 'Afastar os impenitentes da Ceia não é arrogância eclesiástica — é proteção do sacramento e amor pelo transgressor.',
+      aplicacao: 'Antes da próxima Ceia: confesse pecados conhecidos, reconcilie-se com irmãos em conflito, e venha com fé em Cristo — não em sua própria dignidade.',
+      notas: [],
+    },
+    {
+      dia: 320, data: '17 de novembro', tema: 'Frequência da Ceia: A Negligência é Perda',
+      capitulo: 'CFW Cap. XXIX — Prática', versiculo: 'Atos 2.42',
+      devocional: 'CFW não legisla sobre frequência da Ceia — mas a prática apostólica era semanal: "perseveravam na doutrina dos apóstolos, na comunhão, no partir do pão e nas orações" (At 2.42). Calvino defendia a Ceia semanal; o Concílio de Genebra permitiu apenas trimestral. Muitas igrejas reformadas a celebram mensalmente. O que é claro: negligenciar a Ceia empobrece a vida espiritual. Os meios de graça são "ordinários" — mas sua ausência não é inofensiva. Quanto mais frequente a Ceia, mais frequente a proclamação da morte de Cristo e a comunhão com ele.',
+      cfwRef: 'CFW XXIX — prática', cfwComparacao: 'CB 1689 é equivalente — frequência não legislada, mas prática apostólica como norma orientadora.',
+      reforco: 'A Ceia trimestral ou semestral empobrece a vida eucarística da Igreja sem fundamento bíblico.',
+      aplicacao: 'Converse com os líderes de sua igreja sobre a frequência da Ceia. Ore por uma prática que honre a instituição apostólica.',
+      notas: [
+        'MATHISON, Keith. <em>Given for You</em>. Phillipsburg: P&R, 2002. Defende a Ceia semanal reformada — o estudo mais completo sobre a Ceia do Senhor na tradição de Westminster.',
+      ],
+      notaInicio: 76,
+    },
+    {
+      dia: 321, data: '18 de novembro', tema: 'A Ceia como Antecipação do Banquete do Cordeiro',
+      capitulo: 'CFW Cap. XXIX.1', versiculo: 'Apocalipse 19.9',
+      devocional: 'A Ceia do Senhor é refeição de aliança com dimensão escatológica: "Anunciais a morte do Senhor até que ele venha" (1Co 11.26). Cada Ceia é antecipação do banquete messiânico prometido: "Bem-aventurados os que são chamados à ceia das bodas do Cordeiro" (Ap 19.9). Ao partir o pão, a Igreja não olha apenas para trás (para a cruz) e para o presente (comunhão com Cristo), mas para a frente — para o festim eterno no reino consumado. A Ceia alimenta a esperança: não apenas "ele morreu", mas "ele voltará".',
+      cfwRef: 'CFW XXIX.1', cfwComparacao: 'CB 1689 Cap. XXX.1 inclui a mesma dimensão escatológica — a Ceia como antecipação do reino.',
+      reforco: 'Escatologia eucarística — comer a Ceia com esperança do retorno de Cristo — é dimensão negligenciada que precisa ser recuperada.',
+      aplicacao: 'Na próxima Ceia, ao comer, lembre: esta não é a última refeição — há um banquete eterno esperando. Venha com esperança.',
+      notas: [],
+    },
+    {
+      dia: 322, data: '19 de novembro', tema: 'Disciplina de Acesso: A Mesa do Senhor é Sagrada',
+      capitulo: 'CFW Cap. XXIX.8', versiculo: '1 Coríntios 5.11',
+      devocional: 'CFW XXIX.8 instrui que pessoas ignorantes ou escandalosas não devem ser admitidas à Ceia sem catequese e exame dos presbíteros. Paulo vai além: "não comais com o que, chamando-se irmão, for imoral" (1Co 5.11). A disciplina de acesso à Ceia não é exclusividade arrogante — é proteção da santidade da mesa e amor pelo transgressor. Excluir o impenitente da Ceia é ato disciplinar que visa a restauração (1Co 5.5). A abertura irrestrita da mesa desonra a Cristo e prejudica os que comem indignamente.',
+      cfwRef: 'CFW XXIX.8', cfwComparacao: 'CB 1689 Cap. XXX.8 é idêntico — a disciplina de acesso como responsabilidade presbiterial.',
+      reforco: 'Mesa aberta sem disciplina (communio in sacris com qualquer professo) contradiz 1Co 5 e CFW XXIX.8.',
+      aplicacao: 'Conheça os procedimentos de sua igreja para receber a Ceia. A disciplina de acesso protege você e glorifica a Cristo.',
+      notas: [],
+    },
+    {
+      dia: 323, data: '20 de novembro', tema: 'A Ceia e a Unidade da Igreja',
+      capitulo: 'CFW Cap. XXIX — Eclesiologia', versiculo: '1 Coríntios 10.17',
+      devocional: '"Porque há um só pão, nós, embora muitos, somos um só corpo, porque todos participamos deste único pão" (1Co 10.17). A Ceia do Senhor não é apenas encontro individual com Cristo — é expressão da unidade do corpo. Partir o pão juntos é afirmar: somos um. Por isso, divisões e facções dentro de uma congregação tornam a Ceia uma contradição: comemoramos a unidade que negamos na prática. Paulo repreende os coríntios exatamente porque suas divisões socioeconômicas contradiziam o significado da Ceia (1Co 11.17-22).',
+      cfwRef: 'CFW XXIX — eclesiologia', cfwComparacao: 'CB 1689 é paralelo — a dimensão eclesiológica da Ceia como expressão da unidade do corpo de Cristo.',
+      reforco: 'Conflito não resolvido entre membros de uma congregação torna sua participação na Ceia hipócrita — reconciliação é pré-requisito.',
+      aplicacao: 'Há conflito não resolvido com algum irmão na fé? Antes da próxima Ceia, busque reconciliação (Mt 5.23-24).',
+      notas: [],
+    },
+    {
+      dia: 324, data: '21 de novembro', tema: 'Ceia sem Missa: A Reforma Eucarística',
+      capitulo: 'CFW Cap. XXIX.2', versiculo: 'Hebreus 9.26',
+      devocional: 'CFW XXIX.2 afirma que a Ceia não é sacrifício propiciatório — é memorial do único sacrifício de Cristo, "uma vez por todas" (Hb 9.26). A Reforma recuperou a Ceia como comunhão (não como missa), com o pão e o cálice distribuídos a todos os fiéis (não apenas o pão ao leigo), com a língua vernácula (não o latim), e com a proclamação da morte de Cristo (não a recriação misteriosa de seu sacrifício). Cada elemento da Reforma da Ceia foi uma recuperação da institução apostólica contra a acreção medieval.',
+      cfwRef: 'CFW XXIX.2', cfwComparacao: 'CB 1689 Cap. XXX.2 é idêntico — rejeição da missa como sacrifício; recuperação da Ceia como memorial e comunhão.',
+      reforco: 'A Reforma não inventou uma nova Ceia — recuperou a Ceia apostólica contra séculos de acreção ritual e teológica.',
+      aplicacao: 'Pesquise como era a Ceia na Igreja primitiva (Did 9-10, Justino Mártir, I Apologia 65-67). Compare com a prática de sua congregação.',
+      notas: [],
+    },
+    {
+      dia: 325, data: '22 de novembro', tema: 'Síntese: Os Sacramentos como Meios de Graça',
+      capitulo: 'CFW Cap. XXVII–XXIX — Revisão', versiculo: 'Romanos 4.11',
+      devocional: 'Os sacramentos são "sinais e selos" — palavra de Paulo sobre a circuncisão de Abraão (Rm 4.11) que CFW aplica ao batismo e à Ceia. Como sinais, representam visualmente as promessas do Evangelho. Como selos, confirmam e autenticam essas promessas para os que creem. Não são sacramentos porque conferem graça automaticamente, nem meros símbolos porque não conferem nada. São meios pelos quais o Espírito Santo trabalha pela fé para nutrir, confirmar e fortalecer a vida da aliança. Novembro foi mês de sacramentos — reafirme sua fé nesses meios de graça.',
+      cfwRef: 'CFW XXVII–XXIX — síntese', cfwComparacao: 'CFW e CB 1689 concordam: dois sacramentos, instituídos por Cristo, administrados por ministros ordenados; diferem no modo do batismo e nos recipientes do batismo.',
+      reforco: 'A teologia dos sacramentos é prática — determina como você recebe o batismo, como se prepara para a Ceia, e o que espera dos meios de graça.',
+      aplicacao: 'Escreva em uma frase: o que o batismo representa para você? E a Ceia? Essas respostas revelam sua teologia sacramental real.',
+      notas: [
+        'BEEKE, Joel e JONES, Mark. <em>A Puritan Theology</em>. Grand Rapids: Reformation Heritage Books, 2012. Cap. sobre sacramentos — a visão puritana que fundamenta CFW XXVII–XXIX.',
+      ],
+      notaInicio: 77,
+    },
+    // ── Revisão e Aplicação de Novembro ────────────────────────────────────
+    {
+      dia: 326, data: '23 de novembro', tema: 'A Igreja Local: Onde a Doutrina se Torna Vida',
+      capitulo: 'CFW Cap. XXVI–XXIX — Aplicação', versiculo: 'Hebreus 10.24-25',
+      devocional: 'Tudo que estudamos em novembro — comunhão dos santos, sacramentos, batismo, Ceia — acontece na Igreja local. "Não deixemos de congregar-nos" (Hb 10.25) não é conselho opcional — é mandamento apostólico. A comunhão dos santos não ocorre online ou em devocional privado; os sacramentos não podem ser administrados individualmente. A Igreja local imperfeita, com suas limitações e conflitos, é o lugar onde a graça de Deus se torna tangível, os meios de graça são administrados, e a comunhão dos santos é praticada.',
+      cfwRef: 'CFW XXVI–XXIX — aplicação', cfwComparacao: 'CFW e CB 1689 concordam que os meios de graça são administrados na Igreja visível — fora dela, o acesso ordinário à graça é limitado.',
+      reforco: '"Igreja invisível" não é desculpa para negligenciar a Igreja visível local — é preciso pertencer a uma congregação específica.',
+      aplicacao: 'Você está comprometido com uma Igreja local? Se não, ore e busque uma congregação fiel esta semana.',
+      notas: [],
+    },
+    {
+      dia: 327, data: '24 de novembro', tema: 'Gratidão pelos Meios de Graça',
+      capitulo: 'CFW Cap. XXVII–XXIX — Gratidão', versiculo: 'Salmo 84.1-2',
+      devocional: '"Como são amáveis os teus tabernáculos, ó Senhor dos Exércitos! Suspira e se consome a minha alma pelos átrios do Senhor" (Sl 84.1-2). O salmista não ansiava pelo templo como lugar místico, mas como lugar onde Deus encontrava seu povo — onde os sacrifícios eram oferecidos, os salmos cantados, a lei lida. Para nós, é a Igreja local: onde a Palavra é pregada, o batismo administrado, a Ceia partida. O crente que não anseia pela assembleia não entende os meios de graça. A gratidão pelos meios de graça se manifesta em presença fiel, não em ausência justificada.',
+      cfwRef: 'CFW XXVII–XXIX — gratidão', cfwComparacao: 'CFW e CB 1689 entendem a participação regular nos meios de graça como obrigação e privilégio — não como opção.',
+      reforco: 'Participação irregular nos meios de graça (culto, Palavra, sacramentos) enfraquece a vida espiritual — não é fé madura, é negligência.',
+      aplicacao: 'Você anseia pelo culto domingo como o salmista ansiava pelo templo? Ore para que Deus produza em você esse anseio.',
+      notas: [],
+    },
+    {
+      dia: 328, data: '25 de novembro', tema: 'Comunhão dos Santos na Família',
+      capitulo: 'CFW Cap. XXVI — Família', versiculo: 'Deuteronômio 6.7',
+      devocional: 'A comunhão dos santos começa em casa. A família cristã é a menor expressão da Igreja: pai e mãe em comunhão com Cristo, transmitindo fé às crianças, partilhando vida espiritual cotidiana. "E as repetirás a teus filhos" (Dt 6.7) — a catequese doméstica não é atividade extra-curricular, é dever covenantal. O batismo de crianças é sinal de que Deus inclui as gerações nas promessas da aliança; a família cristã é o lugar onde essa promessa se torna cultura vivida.',
+      cfwRef: 'CFW XXVI — família', cfwComparacao: 'CB 1689 Cap. XXVI — a comunhão dos santos na família é igualmente enfatizada; a diferença está no batismo dos filhos, não no dever de catequese familiar.',
+      reforco: 'Família cristã sem devoção doméstica (oração, leitura bíblica, catequese) é comunhão dos santos incompleta.',
+      aplicacao: 'Sua família tem devoção doméstica regular? Se não, comece esta semana: leia um Salmo e ore juntos antes do jantar.',
+      notas: [],
+    },
+    {
+      dia: 329, data: '26 de novembro', tema: 'Sacramentos e Evangelismo: Sinais que Proclamam',
+      capitulo: 'CFW Cap. XXVII–XXIX — Missão', versiculo: '1 Coríntios 11.26',
+      devocional: 'Os sacramentos têm dimensão evangelística: o batismo proclama o Evangelho ao representar a morte ao pecado e vida em Cristo; a Ceia "anuncia a morte do Senhor" (1Co 11.26). Quando a Igreja batiza e parte o pão publicamente, pregamos o Evangelho em atos — além de palavras. Convidar incrédulos para testemunhar um batismo ou uma Ceia é missão. Eles veem, antes de entender com palavras, o que significa morrer com Cristo e ser alimentado por ele. Os sacramentos são sermões encenados.',
+      cfwRef: 'CFW XXVII–XXIX — missão', cfwComparacao: 'CFW e CB 1689 não desenvolvem explicitamente a dimensão evangelística dos sacramentos, mas ela está implícita em sua função como proclamação pública da aliança.',
+      reforco: 'Sacramentos realizados apenas "para os de dentro" perdem sua dimensão de testemunho ao mundo.',
+      aplicacao: 'Convide um amigo não-cristão para assistir ao próximo batismo na sua igreja. Explique antes o que ele vai ver e por quê.',
+      notas: [],
+    },
+    {
+      dia: 330, data: '27 de novembro', tema: 'O Espírito e os Meios de Graça',
+      capitulo: 'CFW Cap. XXVII.3 — Espírito', versiculo: '2 Coríntios 3.18',
+      devocional: 'Palavra, batismo e Ceia não funcionam sem o Espírito Santo. CFW XXVII.3 enfatiza que a graça sacramental não está atada ao elemento físico — o Espírito age soberanamente. O mesmo vale para a pregação: a Palavra "não retorna vazia" (Is 55.11) não porque as palavras humanas sejam mágicas, mas porque o Espírito as usa soberanamente. "Nós todos, com o rosto descoberto, contemplando como em espelho a glória do Senhor, somos transformados de glória em glória" (2Co 3.18) — esse é o trabalho do Espírito pelos meios de graça.',
+      cfwRef: 'CFW XXVII.3 — Espírito', cfwComparacao: 'CFW e CB 1689 concordam: a eficácia dos meios de graça é do Espírito, não do elemento físico ou do ministro.',
+      reforco: 'Confiar nos meios sem depender do Espírito é ritualismo; desprezar os meios esperando ação direta do Espírito é entusiasmo — ambos são erros.',
+      aplicacao: 'Ore antes de cada culto: "Senhor, pelos meios de graça deste dia, aja teu Espírito em mim para me transformar."',
+      notas: [],
+    },
+    {
+      dia: 331, data: '28 de novembro', tema: 'Catequese: Preparando para os Sacramentos',
+      capitulo: 'CFW Cap. XXIX.8 — Catequese', versiculo: 'Atos 8.37',
+      devocional: 'CFW XXIX.8 exige catequese antes de acesso à Ceia. A tradição reformada sempre ligou catequese e sacramentos: não se batiza nem admite à Ceia quem não entende o Evangelho. Na Igreja primitiva, o catecumenato precedia o batismo; nas igrejas reformadas, a catequese precedia a profissão de fé e a confirmação. O Catecismo de Westminster, o Catecismo de Heidelberg, e o Catecismo Menor de Calvino foram escritos precisamente para preparar jovens e convertidos para uma participação inteligente e fiel nos sacramentos.',
+      cfwRef: 'CFW XXIX.8 — catequese', cfwComparacao: 'CB 1689 Cap. XXX.8 é equivalente — catequese como pré-requisito para acesso à Ceia.',
+      reforco: 'Admissão à Ceia sem catequese básica desonra o sacramento e prejudica o participante não-preparado.',
+      aplicacao: 'Você catequizou seus filhos sobre o significado da Ceia? Use o Catecismo Menor de Westminster, perguntas 92–97, como ponto de partida.',
+      notas: [
+        'WILLIAMSON, G. I. <em>The Westminster Shorter Catechism</em>. Phillipsburg: P&R, 2003. Comentário acessível do catecismo — ideal para catequese familiar sobre os sacramentos.',
+      ],
+      notaInicio: 78,
+    },
+    {
+      dia: 332, data: '29 de novembro', tema: 'Comunhão, Sacramentos e o Reino de Deus',
+      capitulo: 'CFW Cap. XXVI–XXIX — Reino', versiculo: 'Lucas 22.29-30',
+      devocional: 'Jesus disse: "Eu vos preparo um reino... para que comais e bebais à minha mesa no meu reino" (Lc 22.29-30). A Ceia do Senhor é refeição do reino — antecipação da mesa escatológica. A comunhão dos santos é cidadania do reino — pertencemos a uma polis celestial antes de qualquer nação terrena. Os sacramentos são as credenciais visíveis dessa cidadania: o batismo nos inclui na comunidade do rei; a Ceia nos alimenta com a vida do rei. Novembro foi mês de sacramentos — foi mês de reino.',
+      cfwRef: 'CFW XXVI–XXIX — reino', cfwComparacao: 'CFW e CB 1689 compartilham a visão escatológica dos sacramentos como antecipação do reino consumado.',
+      reforco: 'Sacramentos sem dimensão escatológica tornam-se rituais estáticos; com ela, são sinal vivo do reino que avança.',
+      aplicacao: 'Na próxima Ceia, ao comer, lembre: "Maranata — vem, Senhor Jesus!" A Ceia é oração pelo retorno de Cristo.',
+      notas: [],
+    },
+    {
+      dia: 333, data: '30 de novembro', tema: 'Síntese de Novembro: CFW Cap. XXVI–XXIX',
+      capitulo: 'CFW Cap. XXVI–XXIX — Revisão Final', versiculo: '1 Coríntios 1.9',
+      devocional: '"Fiel é Deus, pelo qual fostes chamados para a comunhão de seu Filho Jesus Cristo" (1Co 1.9). Novembro cobriu a comunhão dos santos (XXVI), os sacramentos em geral (XXVII), o batismo (XXVIII) e a Ceia do Senhor (XXIX) — o coração da vida eclesial reformada. A comunhão não é opcional: somos chamados para ela. Os sacramentos não são decorativos: são meios pelos quais o Espírito nos alimenta e confirma. O batismo nos marca; a Ceia nos sustenta. Dezembro fechará a Confissão com escatologia — disciplina, concílios, ressurreição e juízo final.',
+      cfwRef: 'CFW XXVI–XXIX — síntese', cfwComparacao: 'CFW e CB 1689 concordam em substância em XXVI–XXIX, com a diferença principal no batismo (modo e recipientes). Ambas exaltam a Igreja como comunidade de aliança sustentada pelos meios de graça.',
+      reforco: 'Novembro foi mês de ecclesia — Igreja, sacramentos, comunhão. Dezembro será mês de eschatologia — fim, juízo, glória.',
+      aplicacao: 'Faça um balanço: você pratica comunhão real com outros crentes? Recebe os sacramentos com fé? Se há lacunas, ore e aja para corrigi-las em dezembro.',
+      notas: [
+        'HORTON, Michael. <em>People and Place</em>. Louisville: Westminster John Knox, 2008. A eclesiologia mais integrada da tradição reformada contemporânea — une comunhão, sacramentos e escatologia.',
+      ],
+      notaInicio: 79,
+      aplicacoes: {
+        digital: 'Revise sua participação nos meios de graça este mês. Você tem buscado culto, Palavra, sacramentos e comunhão com regularidade?',
+        familia: 'Conversem sobre o que aprenderam em novembro: o que é comunhão dos santos, o que representa o batismo, o que acontece na Ceia.',
+        filhos: 'Pergunte: "O que acontece quando tomamos a Ceia do Senhor?" Ensine a resposta do Catecismo Menor (perguntas 96-97).',
+        homens: 'O homem que lidera sua família nos meios de graça — culto, Bíblia, Ceia — cumpre o mandato sacerdotal do lar.',
+        mulheres: 'A mulher que anseia pelos meios de graça e conduz os filhos ao culto é guardiã da vida espiritual da família.',
+      },
+    },
+  ];
+  return dias.map(blocoW);
+}
+`;
+
+content = content + novembro;
+fs.writeFileSync(filePath, content, 'utf8');
+const lines = content.split('\n').length;
+console.log('✅ gerarDiasNovembro() adicionada');
+console.log('Linhas:', lines);
