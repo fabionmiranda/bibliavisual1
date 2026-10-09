@@ -50,7 +50,7 @@ function getSecaoPrincipal(pt: boolean) {
     },
     {
       icon: User,
-      label: pt ? 'Autores' : 'Authors',
+      label: pt ? 'Autores-Teologos' : 'Authors-Theologians',
       descricao: pt
         ? 'Perfis de teólogos, pregadores e escritores que moldaram a fé cristã.'
         : 'Profiles of theologians, preachers and writers who shaped Christian faith.',

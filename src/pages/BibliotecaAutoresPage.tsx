@@ -63,7 +63,7 @@ export default function BibliotecaAutoresPage() {
           >
             <Link to="/biblioteca" className="hover:text-brand-blue transition-colors">Biblioteca</Link>
             <ChevronRight className="w-3 h-3" />
-            <span className="text-white/75">Autores</span>
+            <span className="text-white/75">Autores-Teologos-Pastores-Pregadores-Escritores</span>
           </motion.div>
 
           {/* Header */}
@@ -72,7 +72,7 @@ export default function BibliotecaAutoresPage() {
               Perfis Teológicos
             </p>
             <h1 className="font-display font-black text-3xl sm:text-4xl text-white leading-tight mb-3">
-              Autores
+              Autores-Teologos-Pastores-Pregadores-Escritores
             </h1>
             <p className="text-white/65 text-sm sm:text-base max-w-lg leading-relaxed">
               Perfis de teólogos, pregadores e escritores que moldaram a fé cristã — suas vidas, métodos e contribuições para a história da Igreja.

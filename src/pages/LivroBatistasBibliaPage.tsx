@@ -271,8 +271,8 @@ export default function LivroBatistasBibliaPage() {
                   { label: 'Período',  valor: '4 séculos de história batista' },
                 ].map(({ label, valor }) => (
                   <div key={label} className="flex items-baseline justify-between gap-3">
-                    <span className="text-[10px] font-black uppercase tracking-widest text-white/35 shrink-0">{label}</span>
-                    <span className="text-[12px] font-bold text-white/80 text-right">{valor}</span>
+                    <span className="text-sm font-black uppercase tracking-widest text-white/65 shrink-0">{label}</span>
+                    <span className="text-base font-bold text-white text-right">{valor}</span>
                   </div>
                 ))}
               </div>
@@ -286,26 +286,26 @@ export default function LivroBatistasBibliaPage() {
               className="flex flex-col gap-7"
             >
               <div>
-                <p className="text-[11px] font-black tracking-[0.35em] uppercase mb-4" style={{ color: ACCENT }}>
+                <p className="text-sm font-black tracking-[0.35em] uppercase mb-4" style={{ color: ACCENT }}>
                   Livro Recomendado · História Batista
                 </p>
-                <h1 className="font-display font-black text-4xl sm:text-5xl xl:text-6xl text-white leading-tight mb-3">
+                <h1 className="font-display font-black text-5xl sm:text-6xl xl:text-7xl text-white leading-tight mb-4">
                   Os Batistas<br className="hidden sm:block" /> e a Bíblia
                 </h1>
-                <p className="text-white/55 text-base sm:text-lg italic leading-relaxed">
+                <p className="text-white/85 text-xl sm:text-2xl italic leading-relaxed">
                   L. Russ Bush & Tom J. Nettles
                 </p>
               </div>
 
               {/* Introdução */}
               <div className="space-y-4 border-l-2 pl-5" style={{ borderColor: `${ACCENT}50` }}>
-                <p className="text-white/85 text-base sm:text-lg leading-relaxed font-medium">
+                <p className="text-white/95 text-xl sm:text-2xl leading-relaxed font-medium">
                   Uma obra monumental que percorre quatro séculos de história batista para provar uma tese simples e poderosa:
                 </p>
-                <p className="text-white font-black text-lg sm:text-xl leading-snug">
+                <p className="text-white font-black text-2xl sm:text-3xl leading-snug">
                   "A fidelidade à Escritura como inspirada, infalível e autoridade final sempre foi o fundamento da identidade batista."
                 </p>
-                <p className="text-white/60 text-sm sm:text-base leading-relaxed">
+                <p className="text-white/80 text-lg sm:text-xl leading-relaxed">
                   Em 19 capítulos distribuídos em 3 partes, Bush e Nettles apresentam 36 teólogos batistas — de John Smyth em 1609 a Ralph Elliott nos anos 1960 — mostrando que o consenso histórico sobre a Escritura foi tanto a força da denominação quanto o campo de batalha de sua maior crise.
                 </p>
               </div>
@@ -319,10 +319,10 @@ export default function LivroBatistasBibliaPage() {
                 style={{ borderColor: `${ACCENT}25`, background: `${ACCENT}08` }}
               >
                 <Quote className="absolute top-5 left-5 w-6 h-6 opacity-50" style={{ color: ACCENT }} />
-                <p className="text-white/90 text-base sm:text-lg italic leading-relaxed pl-5 font-medium">
+                <p className="text-white text-xl sm:text-2xl italic leading-relaxed pl-5 font-medium">
                   "O que a Escritura diz, Deus diz. Essa foi a convicção que uniu batistas de tradições diferentes ao longo de quatro séculos — e quando ela foi abandonada, as consequências foram devastadoras."
                 </p>
-                <p className="text-xs font-black uppercase tracking-widest mt-4 pl-5" style={{ color: ACCENT }}>
+                <p className="text-sm font-black uppercase tracking-widest mt-4 pl-5" style={{ color: ACCENT }}>
                   — Bush & Nettles
                 </p>
               </motion.div>
@@ -368,11 +368,11 @@ export default function LivroBatistasBibliaPage() {
                     {parte.numero}
                   </span>
                 </div>
-                <h3 className="text-white font-black text-base sm:text-lg leading-snug">{parte.titulo}</h3>
-                <p className="text-xs italic font-semibold" style={{ color: parte.cor + 'cc' }}>{parte.versículo}</p>
-                <p className="text-white/60 text-sm leading-relaxed">{parte.descricao}</p>
+                <h3 className="text-white font-black text-xl sm:text-2xl leading-snug">{parte.titulo}</h3>
+                <p className="text-base italic font-semibold" style={{ color: parte.cor + 'cc' }}>{parte.versículo}</p>
+                <p className="text-white/85 text-base sm:text-lg leading-relaxed">{parte.descricao}</p>
                 <div className="mt-auto pt-3 border-t border-white/08">
-                  <p className="text-white/35 text-[11px] leading-relaxed">{parte.teologos}</p>
+                  <p className="text-white/65 text-sm leading-relaxed">{parte.teologos}</p>
                 </div>
               </motion.div>
             ))}
@@ -417,11 +417,11 @@ export default function LivroBatistasBibliaPage() {
                   background: `${ACCENT}08`,
                 } : {}}
               >
-                <h3 className={`font-black text-base sm:text-lg mb-3 ${bloco.destaque ? '' : 'text-white/90'}`}
+                <h3 className={`font-black text-xl sm:text-2xl mb-3 ${bloco.destaque ? '' : 'text-white'}`}
                   style={bloco.destaque ? { color: '#fdba74' } : {}}>
                   {bloco.titulo}
                 </h3>
-                <p className={`text-sm sm:text-base leading-relaxed ${bloco.destaque ? 'text-white/80' : 'text-white/60'}`}>
+                <p className={`text-lg sm:text-xl leading-relaxed ${bloco.destaque ? 'text-white/95' : 'text-white/85'}`}>
                   {bloco.texto}
                 </p>
               </motion.div>
@@ -471,10 +471,10 @@ export default function LivroBatistasBibliaPage() {
                 </div>
                 <div className="min-w-0">
                   <div className="flex items-center gap-2 mb-0.5">
-                    <p className="text-white font-black text-sm leading-snug">{t.nome}</p>
+                    <p className="text-white font-black text-lg leading-snug">{t.nome}</p>
                   </div>
                   <div className="flex items-center gap-2 mb-1.5">
-                    <span className="text-white/35 text-[10px] font-bold">{t.datas}</span>
+                    <span className="text-white/65 text-sm font-bold">{t.datas}</span>
                     <span
                       className="text-[9px] font-black uppercase tracking-wider px-1.5 py-0.5 rounded"
                       style={{ color: t.cor + 'cc', background: t.cor + '12' }}
@@ -482,7 +482,7 @@ export default function LivroBatistasBibliaPage() {
                       {t.cap}
                     </span>
                   </div>
-                  <p className="text-white/55 text-xs leading-relaxed">{t.papel}</p>
+                  <p className="text-white/80 text-base leading-relaxed">{t.papel}</p>
                 </div>
               </motion.div>
             ))}
@@ -496,7 +496,7 @@ export default function LivroBatistasBibliaPage() {
             className="mt-6 flex items-center gap-3 px-5 py-4 rounded-xl border border-white/08 bg-white/[0.02]"
           >
             <Users className="w-4 h-4 text-white/25 shrink-0" />
-            <p className="text-white/35 text-xs leading-relaxed">
+            <p className="text-white/60 text-sm leading-relaxed">
               O livro apresenta 36 teólogos ao total, organizados nos capítulos 1, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14 e 15.
               Os capítulos 2, 3, 8, 16, 17, 18 e 19 analisam confissões, movimentos e períodos, sem focar em indivíduos específicos.
             </p>
@@ -533,7 +533,7 @@ export default function LivroBatistasBibliaPage() {
                 className="flex flex-col gap-4 p-6 rounded-2xl border border-white/10 bg-white/[0.04] hover:bg-white/[0.07] transition-all duration-200"
               >
                 <div className="flex items-center justify-between gap-3">
-                  <h3 className="text-white font-black text-sm sm:text-base leading-snug">{c.termo}</h3>
+                  <h3 className="text-white font-black text-lg sm:text-xl leading-snug">{c.termo}</h3>
                   <span
                     className="text-[9px] font-black uppercase tracking-widest px-2.5 py-1 rounded-full shrink-0"
                     style={{ color: c.cor, background: c.cor + '18', border: `1px solid ${c.cor}35` }}
@@ -541,7 +541,7 @@ export default function LivroBatistasBibliaPage() {
                     {c.nivel}
                   </span>
                 </div>
-                <p className="text-white/60 text-sm leading-relaxed">{c.definicao}</p>
+                <p className="text-white/85 text-lg leading-relaxed">{c.definicao}</p>
               </motion.div>
             ))}
           </div>
@@ -578,8 +578,8 @@ export default function LivroBatistasBibliaPage() {
               >
                 <span className="text-3xl shrink-0 mt-0.5">{item.icon}</span>
                 <div>
-                  <h3 className="text-white font-black text-base sm:text-lg mb-1.5">{item.perfil}</h3>
-                  <p className="text-white/60 text-sm sm:text-base leading-relaxed">{item.motivo}</p>
+                  <h3 className="text-white font-black text-xl sm:text-2xl mb-1.5">{item.perfil}</h3>
+                  <p className="text-white/85 text-lg sm:text-xl leading-relaxed">{item.motivo}</p>
                 </div>
               </motion.div>
             ))}
@@ -609,7 +609,7 @@ export default function LivroBatistasBibliaPage() {
               <h2 className="font-display font-black text-3xl sm:text-4xl text-white mb-5 leading-tight">
                 Quatro séculos de fidelidade — e as consequências de abandoná-la
               </h2>
-              <p className="text-white/55 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto mb-10">
+              <p className="text-white/80 text-lg sm:text-xl leading-relaxed max-w-2xl mx-auto mb-10">
                 Após ler este livro, você entenderá por que a inerrância bíblica não é um debate recente —
                 e por que os batistas que a abandonaram pagaram um preço histórico irreversível.
               </p>
