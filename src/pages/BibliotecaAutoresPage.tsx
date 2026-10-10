@@ -107,6 +107,126 @@ export default function BibliotecaAutoresPage() {
             </p>
           </motion.div>
 
+          {/* ══ PRÉ-REFORMA & REFORMA ══ */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1 }}
+            className="mb-12 rounded-3xl border border-white/10 overflow-hidden"
+            style={{ background: 'linear-gradient(135deg, #0a0a1a 0%, #0d0800 60%, #0a0a1a 100%)' }}
+          >
+            {/* cabeçalho da seção */}
+            <div className="px-6 sm:px-8 pt-7 pb-5 border-b border-white/08 flex items-center gap-4">
+              <div className="w-1 h-8 rounded-full shrink-0" style={{ background: 'linear-gradient(180deg,#fbbf24,#f97316)' }} />
+              <div>
+                <p className="text-[10px] font-black tracking-[0.30em] uppercase text-amber-400/70 mb-0.5">Mapa Histórico</p>
+                <h2 className="font-display font-black text-xl sm:text-2xl text-white leading-tight">
+                  Pré-Reforma &amp; Reforma — Teólogos em Destaque
+                </h2>
+              </div>
+            </div>
+
+            <div className="px-6 sm:px-8 py-6 space-y-6">
+
+              {/* Pré-Reforma */}
+              <div>
+                <p className="text-[10px] font-black tracking-widest uppercase mb-3" style={{ color: '#a78bfa' }}>
+                  Pré-Reforma · séc. XV – início XVI
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {[
+                    { nome: 'Isabel de Castela', datas: '1451–1504', nota: 'Reforma clerical espanhola · Cap. 1 (González)', link: '/devocional/reforma/2' },
+                    { nome: 'Cardeal Cisneros', datas: '1436–1517', nota: 'Bíblia Poliglota Complutense · Cap. 1–2 (González)', link: '/devocional/reforma/3' },
+                  ].map(t => (
+                    <Link key={t.nome} to={t.link}
+                      className="group flex flex-col gap-0.5 px-4 py-2.5 rounded-xl border border-purple-500/20 bg-purple-500/08 hover:border-purple-400/40 hover:bg-purple-500/15 transition-all duration-200">
+                      <span className="font-black text-sm text-white group-hover:text-purple-200 transition-colors">{t.nome}</span>
+                      <span className="text-[10px] font-bold text-white/40">{t.datas}</span>
+                      <span className="text-[10px] text-purple-300/60 leading-tight">{t.nota}</span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
+              {/* Reforma Magisterial */}
+              <div>
+                <p className="text-[10px] font-black tracking-widest uppercase mb-3" style={{ color: '#60a5fa' }}>
+                  Reforma Magisterial · 1517–1564
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {[
+                    { nome: 'Martinho Lutero', datas: '1483–1546', nota: 'Reforma alemã · Caps. 2–4 (González)', link: '/devocional/reforma/4' },
+                    { nome: 'Ulrico Zuínglio', datas: '1484–1531', nota: 'Reforma suíça · Cap. 5 (González)', link: '/devocional/reforma/9' },
+                    { nome: 'William Perkins', datas: '1558–1602', nota: 'Puritanismo inglês · par de Smyth', link: '/biblioteca/autores/batistas-presbiterianos' },
+                    { nome: 'William Ames', datas: '1576–1633', nota: 'Puritanismo federal · par de Helwys', link: '/biblioteca/autores/batistas-presbiterianos' },
+                  ].map(t => (
+                    <Link key={t.nome} to={t.link}
+                      className="group flex flex-col gap-0.5 px-4 py-2.5 rounded-xl border border-blue-500/20 bg-blue-500/08 hover:border-blue-400/40 hover:bg-blue-500/15 transition-all duration-200">
+                      <span className="font-black text-sm text-white group-hover:text-blue-200 transition-colors">{t.nome}</span>
+                      <span className="text-[10px] font-bold text-white/40">{t.datas}</span>
+                      <span className="text-[10px] text-blue-300/60 leading-tight">{t.nota}</span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
+              {/* Reforma Radical */}
+              <div>
+                <p className="text-[10px] font-black tracking-widest uppercase mb-3" style={{ color: '#34d399' }}>
+                  Reforma Radical (Anabatistas) · 1525–
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {[
+                    { nome: 'Conrado Grebel', datas: 'c.1498–1526', nota: 'Batismo de crentes · Zurique 1525 · Cap. 6 (González)', link: '/devocional/reforma/10' },
+                    { nome: 'Felix Manz', datas: 'c.1498–1527', nota: 'Primeiro mártir anabatista · Cap. 6 (González)', link: '/devocional/reforma/10' },
+                    { nome: 'Menno Simmons', datas: '1496–1561', nota: 'Reconstruiu o anabatismo pacifista · menonitas', link: '/devocional/reforma/10' },
+                    { nome: 'John Smyth', datas: 'c.1570–1612', nota: '1ª Igreja batista (1609) · Cap. 1 (Bush & Nettles)', link: '/biblioteca/autores/batistas-presbiterianos' },
+                    { nome: 'Thomas Helwys', datas: 'c.1575–c.1616', nota: '1ª Igreja batista inglesa (1612) · Cap. 1', link: '/biblioteca/autores/batistas-presbiterianos' },
+                    { nome: 'John Murton', datas: '?–c.1626', nota: 'Liberdade de consciência · Cap. 1', link: '/biblioteca/autores/batistas-presbiterianos' },
+                  ].map(t => (
+                    <Link key={t.nome} to={t.link}
+                      className="group flex flex-col gap-0.5 px-4 py-2.5 rounded-xl border border-emerald-500/20 bg-emerald-500/08 hover:border-emerald-400/40 hover:bg-emerald-500/15 transition-all duration-200">
+                      <span className="font-black text-sm text-white group-hover:text-emerald-200 transition-colors">{t.nome}</span>
+                      <span className="text-[10px] font-bold text-white/40">{t.datas}</span>
+                      <span className="text-[10px] text-emerald-300/60 leading-tight">{t.nota}</span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
+              {/* Ortodoxia Pós-Reforma / Westminster */}
+              <div>
+                <p className="text-[10px] font-black tracking-widest uppercase mb-3" style={{ color: '#f97316' }}>
+                  Ortodoxia Pós-Reforma &amp; Westminster · 1600–1700
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {[
+                    { nome: 'Samuel Rutherford', datas: '1600–1661', nota: 'Westminster Assembly · par de Grantham', link: '/biblioteca/autores/batistas-presbiterianos' },
+                    { nome: 'George Gillespie', datas: '1613–1648', nota: 'Westminster Assembly · par de Roger Williams', link: '/biblioteca/autores/batistas-presbiterianos' },
+                    { nome: 'John Owen', datas: '1616–1683', nota: 'Divine Original of Scripture (1659) · par de Bunyan', link: '/biblioteca/autores/batistas-presbiterianos' },
+                    { nome: 'John Bunyan', datas: '1628–1688', nota: 'O Peregrino (1678) · Cap. 4 (Bush & Nettles)', link: '/biblioteca/autores/batistas-presbiterianos' },
+                    { nome: 'Thomas Grantham', datas: '1634–1692', nota: 'Christianismus Primitivus (1678) · Cap. 1', link: '/biblioteca/autores/batistas-presbiterianos' },
+                    { nome: 'Francis Turretin', datas: '1623–1687', nota: 'Institutio Theologiae Elencticae · par de Keach', link: '/biblioteca/autores/batistas-presbiterianos' },
+                    { nome: 'Petrus van Mastricht', datas: '1630–1706', nota: 'Theoretico-Practica Theologia · Ortodoxia Reformada', link: '/biblioteca/autores/mastricht' },
+                    { nome: 'Benjamin Keach', datas: '1640–1704', nota: 'Confissão de 1689 · Cap. 4 (Bush & Nettles)', link: '/biblioteca/autores/batistas-presbiterianos' },
+                  ].map(t => (
+                    <Link key={t.nome} to={t.link}
+                      className="group flex flex-col gap-0.5 px-4 py-2.5 rounded-xl border border-orange-500/20 bg-orange-500/08 hover:border-orange-400/40 hover:bg-orange-500/15 transition-all duration-200">
+                      <span className="font-black text-sm text-white group-hover:text-orange-200 transition-colors">{t.nome}</span>
+                      <span className="text-[10px] font-bold text-white/40">{t.datas}</span>
+                      <span className="text-[10px] text-orange-300/60 leading-tight">{t.nota}</span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
+              {/* nota de rodapé */}
+              <p className="text-white/30 text-[11px] leading-relaxed border-t border-white/06 pt-4">
+                Os teólogos acima aparecem nos <Link to="/devocional/reforma" className="underline hover:text-white/60 transition-colors">Devocionais da Reforma</Link> (González, <em>A Era dos Reformadores</em>) e na <Link to="/biblioteca/autores/batistas-presbiterianos" className="underline hover:text-white/60 transition-colors">tabela comparativa Batistas & Presbiterianos</Link>. Clique em qualquer nome para acessar o conteúdo correspondente.
+              </p>
+            </div>
+          </motion.div>
+
           {/* Cards */}
           <div className="flex flex-col gap-6">
             {AUTORES.map((a, i) => (
