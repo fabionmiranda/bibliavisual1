@@ -29,6 +29,34 @@ const FOTO_MASTRICHT = 'https://commons.wikimedia.org/wiki/Special:FilePath/Petr
 
 const AUTORES = [
   {
+    slug: 'batistas-presbiterianos',
+    nome: 'Batistas & Presbiterianos: Quatro Séculos em Paralelo',
+    datas: 'Séc. XVII – XX',
+    area: 'Tabela Comparativa',
+    subtitulo: 'Os Batistas e a Bíblia — Bush & Nettles',
+    descricao:
+      '36 teólogos batistas do livro Os Batistas e a Bíblia (Bush & Nettles) postos ao lado de contemporâneos presbiterianos/reformados — mesma linha ou contraponto — em torno da questão central: a autoridade e a inerrância das Escrituras. 6 pares obrigatórios, tabela em ABNT.',
+    destaque: '"A inerrância não é um fundamentalismo recente — é a posição original dos batistas em quatro séculos de história." — Bush & Nettles',
+    tags: ['História Batista', 'Presbiteriana', 'Inerrância', 'Tabela Comparativa', 'ABNT'],
+    accentColor: '#f97316',
+    gradHero: 'linear-gradient(135deg, #1a0800 0%, #0d0400 50%, #050100 100%)',
+    gradOrb1: '#f97316',
+    gradOrb2: '#fbbf24',
+    foto: null,
+    IconFigura: ({ color }: { color: string }) => (
+      <svg viewBox="0 0 64 64" fill="none" className="w-full h-full">
+        <rect x="6" y="14" width="20" height="28" rx="2" stroke={color} strokeWidth="1.8" fill={color + '12'} />
+        <rect x="28" y="14" width="8" height="28" rx="1" stroke={color} strokeWidth="1.2" fill={color + '08'} strokeDasharray="3 2" />
+        <rect x="38" y="14" width="20" height="28" rx="2" stroke="#60a5fa" strokeWidth="1.8" fill={'#60a5fa12'} />
+        {[20,26,32,36].map(y => <line key={y} x1="10" y1={y} x2="22" y2={y} stroke={color} strokeWidth="1.2" strokeOpacity="0.5" />)}
+        {[20,26,32,36].map(y => <line key={y+50} x1="42" y1={y} x2="54" y2={y} stroke="#60a5fa" strokeWidth="1.2" strokeOpacity="0.5" />)}
+        <line x1="32" y1="8" x2="32" y2="12" stroke="#fbbf24" strokeWidth="2" strokeLinecap="round" />
+        <line x1="29" y1="10" x2="35" y2="10" stroke="#fbbf24" strokeWidth="2" strokeLinecap="round" />
+        <text x="32" y="48" textAnchor="middle" fontSize="5" fill="#fbbf24" fontWeight="bold">vs</text>
+      </svg>
+    ),
+  },
+  {
     slug: 'mastricht',
     nome: 'Petrus van Mastricht',
     datas: '1630–1706',
