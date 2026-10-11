@@ -37,6 +37,7 @@ import BibliotecaAutoresPage from './pages/BibliotecaAutoresPage';
 import BibliotecaSemanaPage from './pages/BibliotecaSemanaPage';
 import AutorMastrichtPage from './pages/AutorMastrichtPage';
 import BibliotecaAutoresBatistasComparativoPage from './pages/BibliotecaAutoresBatistasComparativoPage';
+import BibliotecaAutoresReformadoresPage from './pages/BibliotecaAutoresReformadoresPage';
 import PregacaoPage from './pages/PregacaoPage';
 import FamiliaPage, { EsbocosPage, NoivosHub, AulaInaugural, Aula02, CasadosPage } from './pages/FamiliaPage';
 import EducacaoPage from './pages/EducacaoPage';
@@ -105,6 +106,7 @@ export default function App() {
           <Route path="/biblioteca/autores" element={<BibliotecaAutoresPage />} />
           <Route path="/biblioteca/autores/mastricht" element={<AutorMastrichtPage />} />
           <Route path="/biblioteca/autores/batistas-presbiterianos" element={<BibliotecaAutoresBatistasComparativoPage />} />
+          <Route path="/biblioteca/autores/reformadores" element={<BibliotecaAutoresReformadoresPage />} />
           <Route path="/biblioteca/resenhas"          element={<BibliotecaResenhasPage />} />
           <Route path="/biblioteca/resenhas/gonzalez-era-reformadores-cap1" element={<ResenhaGonzalezEraReformadoresPage />} />
           <Route path="/biblioteca/resenhas/gonzalez-lutero-cap2"           element={<ResenhaGonzalezLuteroPage />} />

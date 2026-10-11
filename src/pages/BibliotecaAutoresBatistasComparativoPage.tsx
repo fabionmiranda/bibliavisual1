@@ -301,6 +301,57 @@ const mandatoryPairs = new Set([
   'Harry Emerson Fosdick',
 ]);
 
+// ─── Fotos ───────────────────────────────────────────────────────────────────
+// URLs via commons.wikimedia.org/wiki/Special:FilePath/ (stable redirect)
+const FP = (f: string) => `https://commons.wikimedia.org/wiki/Special:FilePath/${f}`;
+
+const FOTOS: Record<string, string> = {
+  // Batistas
+  'John Smyth':             FP('John-Smyth.png'),
+  'Roger Williams':         FP('Roger_Williams_%281603-1683%29.jpg'),
+  'John Bunyan':            FP('John_Bunyan_by_Thomas_Sadler_1684.jpg'),
+  'William Kiffin':         FP('William_Kiffin_(c._1616-1702).jpg'),
+  'Hanserd Knollys':        FP('Hanserd_Knollys_(page_124_crop).jpg'),
+  'Benjamin Keach':         FP('Benjamin_Keach.jpg'),
+  'John Gill':              FP('John_Gill_(theologian).jpg'),
+  'Andrew Fuller':          FP('Andrew_Fuller.jpg'),
+  'William Carey':          FP('William_Carey_by_Robert_Home.jpg'),
+  'Adoniram Judson':        FP('Adoniram_Judson.jpg'),
+  'C. H. Spurgeon':         FP('Charles_Haddon_Spurgeon.jpg'),
+  'Crawford H. Toy':        FP('Crawford_Howell_Toy.jpg'),
+  'A. H. Strong':           FP('AHStrong.png'),
+  'E. Y. Mullins':          FP('Edgar_Young_Mullins.jpg'),
+  'Shailer Mathews':        FP('ShailerMathews.jpg'),
+  'Harry Emerson Fosdick':  FP('Harry_Emerson_Fosdick.jpg'),
+  'Walter Rauschenbusch':   FP('Walter_Rauschenbusch.jpg'),
+  'Isaac Backus':           FP('Isaac_Backus.jpg'),
+  'Richard Furman':         FP('Richard_Furman.jpg'),
+  // Presbiterianos / Reformados
+  'William Perkins':        FP('British_-_William_Perkins_-_Google_Art_Project.jpg'),
+  'William Ames':           FP('WilliamAmes.jpg'),
+  'Alexander Henderson':    FP('Alexander_Henderson_(1583-1646).jpg'),
+  'Samuel Rutherford':      FP('Samuel_Rutherford.jpg'),
+  'George Gillespie':       FP('George_Gillespie.jpg'),
+  'John Owen':              FP('John_Owen_by_John_Greenhill.jpg'),
+  'Francis Turretin':       FP('Francis_Turretin.jpg'),
+  'Petrus van Mastricht':   FP('Petrus_van_Mastricht.jpg'),
+  'Jonathan Edwards':       FP('Jonathan_Edwards_(Princeton_Portrait).jpg'),
+  'John Witherspoon':       FP('John_Witherspoon_by_Charles_Willson_Peale.jpg'),
+  'John Erskine':           FP('John_Erskine_of_Carnock.jpg'),
+  'Archibald Alexander':    FP('ArchibaldAlexander.jpg'),
+  'Charles Hodge':          FP('Portrait_of_Charles_Hodge.jpg'),
+  'A. A. Hodge':            FP('ArchibaldAlexanderHodge.jpg'),
+  'B. B. Warfield':         FP('Benjamin_Breckinridge_Warfield.jpg'),
+  'Charles A. Briggs':      FP('CharlesAugustusBriggs.jpg'),
+  'J. Gresham Machen':      FP('J.G.Machen.jpg'),
+  'Horatius Bonar':         FP('Horatius_Bonar.jpg'),
+  "Robert Murray M'Cheyne": FP('RobertMurrayMcCheyne.jpg'),
+  'James Orr':              FP('James_Orr_(theologian).jpg'),
+  'Geerhardus Vos':         FP('Geerhardus_Vos.jpg'),
+  'Louis Berkhof':          FP('Louis_Berkhof.jpg'),
+  'Robert Dick Wilson':     FP('Robert_Dick_Wilson.jpg'),
+};
+
 // ─── TeologicoPanel ──────────────────────────────────────────────────────────
 
 interface TeologicoPanelProps {
@@ -318,15 +369,31 @@ function TeologicoPanel({ t, side }: TeologicoPanelProps) {
     ? 'bg-orange-950/40 border-l-2 border-orange-700/50'
     : 'bg-blue-950/40 border-l-2 border-blue-700/50';
 
+  const foto = FOTOS[t.nome] ?? null;
+
   return (
     <div className={`rounded-lg border p-4 flex flex-col gap-3 h-full ${bgClass}`}>
-      <div className="flex items-center gap-2">
+      <div className="flex items-start justify-between gap-3">
         <span
-          className="text-[10px] font-bold tracking-widest uppercase px-2 py-0.5 rounded"
+          className="text-[10px] font-bold tracking-widest uppercase px-2 py-0.5 rounded shrink-0"
           style={{ color: accentColor, backgroundColor: `${accentColor}18` }}
         >
           {labelText}
         </span>
+        {foto && (
+          <div
+            className="shrink-0 overflow-hidden rounded-lg"
+            style={{ width: 52, height: 66, border: `1px solid ${accentColor}35`, boxShadow: `0 0 10px ${accentColor}20` }}
+          >
+            <img
+              src={foto}
+              alt={`Retrato de ${t.nome}`}
+              className="w-full h-full object-cover object-top"
+              style={{ filter: 'sepia(15%) contrast(1.06) brightness(0.88)' }}
+              onError={e => { (e.currentTarget as HTMLImageElement).parentElement!.style.display = 'none'; }}
+            />
+          </div>
+        )}
       </div>
       <div>
         <h3 className="text-white font-bold text-base leading-tight">{t.nome}</h3>

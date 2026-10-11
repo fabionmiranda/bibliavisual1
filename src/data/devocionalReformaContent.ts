@@ -371,6 +371,142 @@ const DIAS_CONTENT: Record<number, DiaDevoContent> = {
     oracao: 'Senhor, obrigado pela lembrança de que Tu ages na história muito antes de percebermos. Antes de Lutero, havia Isabel. Antes da ruptura, havia reforma. Antes do escândalo público, havia o trabalho silencioso de homens e mulheres que buscavam um clero fiel e uma Igreja renovada.\n\nEnsina-nos a ter paciência com os processos lentos da renovação. E dá-nos sabedoria para identificar as alavancas certas — os pontos onde uma mudança genuína pode começar.\n\nAmém.',
     leituraComplementar: 'González, Justo L. A Era dos Reformadores. São Paulo: Vida Nova, 1995. Capítulo 1: "Isabel, a Católica" (pp. 11–28).',
   },
+  12: {
+    dia: 12,
+    data: '12 de outubro de 2026',
+    titulo: 'A Reforma na Grã-Bretanha: Henrique, Cranmer e Knox',
+    subtitulo: 'Capítulo 8',
+    versiculo: 'É melhor refugiar-se no Senhor do que confiar no homem. É melhor refugiar-se no Senhor do que confiar em príncipes.',
+    versiculoRef: 'Salmo 118.8–9',
+    secoes: [
+      {
+        tipo: 'contexto',
+        titulo: 'A Reforma Mais Desconfortável: Linhas Tortas, Escrita Reta',
+        paragrafos: [
+          'A Reforma britânica é uma das mais complexas — e também das mais <span style="color:#fb7185;font-weight:700;">desconfortáveis</span> para quem acredita que reformas eclesiásticas devem nascer de convicção espiritual. González nos apresenta uma Reforma <span style="background:rgba(251,191,36,0.15);border:1px solid rgba(251,191,36,0.35);border-radius:5px;padding:1px 8px;color:#fde68a;font-weight:700;">iniciada por um rei que queria um divórcio</span>, consolidada por um arcebispo que morreu pela fé, quase destruída por uma rainha que amava Roma, e finalmente estabilizada por outra rainha que amava sobretudo o poder.',
+          'É a história de como <span style="color:#34d399;font-weight:700;">Deus escreve reto por linhas tortas</span> — e de que o instrumento usado por Deus pode não ser o mais santo, mas o mais conveniente. O Salmo 118 seria a resposta antecipatória a essa história: <span style="color:#60a5fa;font-style:italic;font-weight:600;">não confie em príncipes</span> — nem mesmo nos que, por acidente ou conveniência, acabam servindo à causa do Evangelho.',
+        ],
+      },
+      {
+        tipo: 'analise',
+        titulo: 'Henrique VIII: A Reforma do Rei Sem Convicção',
+        paragrafos: [
+          'Henrique VIII havia recebido do papa o título de <span style="background:rgba(251,191,36,0.15);border:1px solid rgba(251,191,36,0.35);border-radius:5px;padding:1px 8px;color:#fde68a;font-weight:800;font-style:italic;">"Defensor da Fé"</span> por ter escrito uma refutação de Lutero. Não era um reformador protestante. Era um rei que precisava de um filho varão para garantir a sucessão, e sua esposa, <span style="color:#a78bfa;font-weight:700;">Catarina de Aragão</span>, não havia conseguido dá-lo.',
+          'Catarina era tia do imperador <span style="color:#60a5fa;font-weight:700;">Carlos V</span> — o mesmo que controlava o papa após o saque de Roma (1527). Roma não podia anular o casamento sem provocar Carlos V. Henrique ficou sem saída pelo caminho canônico.',
+          'A solução foi legislativa: o <span style="color:#f97316;font-weight:700;">Ato de Supremacia de 1534</span> declarou o rei <span style="background:rgba(249,115,22,0.15);border:1px solid rgba(249,115,22,0.35);border-radius:5px;padding:1px 8px;color:#fed7aa;font-weight:800;font-style:italic;">"Cabeça Suprema da Igreja da Inglaterra."</span> Com um decreto do Parlamento, Henrique criou uma nova Igreja — <span style="color:#fb7185;font-weight:700;">não por teologia, mas por necessidade dinástica</span>. As abadias foram dissolvidas e seus bens confiscados para a coroa. González observa a ironia: Henrique continuou sendo essencialmente <span style="color:#fb7185;font-weight:600;">católico em teologia</span> — rejeitava a justificação pela fé, mantinha o celibato clerical e punia quem defendesse doutrinas luteranas. <span style="background:rgba(251,113,133,0.12);border-left:3px solid #fb7185;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(255,220,225,0.95);">Criou uma Igreja anglicana sem anglicanismo ainda.</span>',
+        ],
+        citacao: 'Henrique VIII criou uma Igreja anglicana sem anglicanismo. A ruptura com Roma foi política; a convicção teológica viria depois, por outros.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'Thomas More: O Humanista que Pagou o Preço',
+        paragrafos: [
+          'Entre os que se recusaram a jurar o Ato de Supremacia estava <strong style="color:#fff;">Thomas More</strong> — humanista do círculo de Erasmo, amigo pessoal de Henrique, ex-chanceler do reino. Quando sua filha Margaret o visitou na prisão e implorou que jurasse <span style="color:#fb7185;font-style:italic;">"como tantos homens ilustres fizeram,"</span> More respondeu: <span style="background:rgba(192,132,252,0.15);border:1px solid rgba(192,132,252,0.35);border-radius:5px;padding:2px 10px;color:#e9d5ff;font-weight:700;font-style:italic;">"Não me é dado carregar minha consciência às custas de outro."</span>',
+          'Na execução, suas últimas palavras foram: <span style="background:rgba(251,191,36,0.15);border:1px solid rgba(251,191,36,0.35);border-radius:5px;padding:1px 8px;color:#fde68a;font-weight:800;font-style:italic;">"Morro sendo servo do Rei, mas antes de tudo sou servo de Deus."</span>',
+          'González vê nessa morte uma <span style="color:#fb7185;font-weight:700;">tragédia dupla</span>: um homem que dedicara a vida à renovação da Igreja <em>por dentro</em>, sem ruptura com Roma, executado pela nova Igreja de um rei que reformou por motivos pessoais. A reforma correta morreu pelas mãos de quem reformou pelos motivos errados. More foi canonizado em <span style="color:#a78bfa;font-weight:600;">1935</span>.',
+        ],
+        citacao: 'Morro sendo servo do Rei, mas antes de tudo sou servo de Deus.',
+        citacaoAutor: 'Thomas More, na execução (1535)',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'Cranmer e o Livro de Oração: A Reforma que Entrou nos Ossos',
+        paragrafos: [
+          'A reforma doutrinária genuína veio com <strong style="color:#fff;">Thomas Cranmer</strong>, arcebispo de Canterbury. Cranmer tinha convicções protestantes reais — influenciado por <span style="color:#2dd4bf;font-weight:700;">Zuínglio</span> e pelos reformadores de Estrasburgo — e as implementou gradualmente, aproveitando as janelas abertas pelos monarcas.',
+          'Sua maior obra foi o <span style="background:rgba(96,165,250,0.15);border:1px solid rgba(96,165,250,0.35);border-radius:5px;padding:1px 8px;color:#bfdbfe;font-weight:800;font-style:italic;">Livro Comum de Oração</span> (Book of Common Prayer) de 1549, revisado em 1552. Esse livro colocou a liturgia em inglês nas mãos do povo, substituiu o latim incompreensível por prosa inglesa de extraordinária beleza, e incorporou uma teologia protestante clara nas orações e nos sacramentos. <span style="background:rgba(52,211,153,0.12);border-left:3px solid #34d399;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(200,255,235,0.95);">A Reforma inglesa entrou nos ossos do povo pela liturgia, não pelos decretos.</span>',
+          'Com a morte do jovem rei <span style="color:#60a5fa;font-weight:700;">Eduardo VI</span> em 1553, <span style="color:#fb7185;font-weight:700;">Maria Tudor</span> — fervorosamente católica — assumiu o trono e restaurou a obediência a Roma. Cerca de 300 protestantes foram executados, incluindo Cranmer. Na fogueira, Cranmer estendeu primeiro a <span style="background:rgba(251,113,133,0.12);border:1px solid rgba(251,113,133,0.30);border-radius:5px;padding:1px 7px;color:#fecdd3;font-weight:700;">mão direita</span> — a mão com que havia assinado uma retratação de suas convicções sob pressão — dizendo que aquela mão indigna deveria ser queimada primeiro. <span style="color:#fbbf24;font-weight:700;">John Foxe</span> imortalizou esse e outros mártires no <em>Livro dos Mártires</em> (1563), que moldou a identidade protestante inglesa por gerações.',
+        ],
+        citacao: 'A Reforma inglesa entrou nos ossos do povo pela liturgia, não pelos decretos. Cranmer entendeu que o culto forma o coração mais profundamente do que qualquer tratado.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'Isabel I, Knox e as Duas Direções do Protestantismo Britânico',
+        paragrafos: [
+          'Com a morte de Maria Tudor em 1558, subiu ao trono <span style="color:#a78bfa;font-weight:700;">Isabel I</span> — filha de Ana Bolena. González é preciso: Isabel não era uma protestante convicta. Era uma <span style="background:rgba(251,191,36,0.15);border:1px solid rgba(251,191,36,0.35);border-radius:5px;padding:1px 8px;color:#fde68a;font-weight:700;">pragmática genial</span> que entendia que a estabilidade do reino dependia de um compromisso que unisse católicos e protestantes moderados sob a coroa. O anglicanismo elizabetano foi deliberadamente <span style="color:#60a5fa;font-weight:700;">ambíguo</span>: protestante no dogma, episcopal na estrutura, litúrgico no culto. <span style="color:#fb7185;font-style:italic;font-weight:600;">A via media não foi escolha espiritual; foi estratégia de sobrevivência política.</span>',
+          'A Reforma escocesa foi outra história. <strong style="color:#fff;">João Knox</strong> não foi a Wittenberg — foi a <span style="color:#34d399;font-weight:700;">Genebra</span>. Formado diretamente por Calvino, Knox retornou à Escócia com um programa radicalmente presbiteriano: <span style="color:#fbbf24;font-weight:600;">nenhum bispo</span>, governo pela assembleia de presbíteros, disciplina rigorosa, liturgia simples. A Reforma escocesa foi mais popular e mais calvinista do que a inglesa — <span style="background:rgba(52,211,153,0.12);border-left:3px solid #34d399;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(200,255,235,0.95);">não foi imposta pelo rei, mas conquistada contra a rainha.</span> Criou o presbiterianismo que se espalharia pela Irlanda, Holanda e colônias americanas.',
+        ],
+        citacao: 'A Reforma escocesa foi conquistada contra a rainha, não imposta pelo rei. A diferença entre as duas reformas britânicas é a diferença entre fé e pragmatismo.',
+        citacaoAutor: 'Justo L. González',
+      },
+    ],
+    perguntas: [
+      'A Reforma inglesa começou com motivos políticos, não espirituais. Deus usou um instrumento impuro para realizar mudanças duradouras. Como você pensa a providência de Deus operando por meio de pessoas e motivos mistos? Isso muda a forma como você avalia os resultados?',
+      'Thomas Cranmer reformou a Igreja pela liturgia — pela oração e pelo culto comum, não apenas pelos tratados teológicos. Que papel a liturgia e o culto desempenham na formação espiritual da sua própria comunidade? O que você repete em culto está moldando seu coração?',
+      'Cranmer havia assinado uma retratação de suas convicções sob pressão — e depois a reverteu na hora da morte. O que esse episódio diz sobre a fragilidade humana diante da perseguição, e sobre a possibilidade de recuperação da integridade?',
+    ],
+    oracao: 'Senhor, obrigado pelo testemunho de Cranmer e de More — dois homens do mesmo círculo intelectual, que tomaram caminhos opostos e ambos pagaram com a vida pela fidelidade à consciência. Que nos ensinemos a honrar a consciência acima do pragmatismo, mesmo quando o pragmatismo promete segurança.\n\nE que a liturgia que usamos em culto não seja apenas rotina, mas formação: palavras que, repetidas fielmente, vão moldando o coração para o Teu reino.\n\nAmém.',
+    leituraComplementar: 'González, Justo L. A Era dos Reformadores. São Paulo: Vida Nova, 1995. Capítulo 8: "A Reforma na Grã-Bretanha" (pp. 179–214).',
+  },
+  11: {
+    dia: 11,
+    data: '11 de outubro de 2026',
+    titulo: 'João Calvino: O Sistematizador da Reforma',
+    subtitulo: 'Capítulo 7',
+    versiculo: 'A mim, que sou o menor de todos os santos, me foi dada esta graça de anunciar entre os gentios as inescrutáveis riquezas de Cristo.',
+    versiculoRef: 'Efésios 3.8',
+    secoes: [
+      {
+        tipo: 'contexto',
+        titulo: 'O Arquiteto: Uma Geração Depois',
+        paragrafos: [
+          'Acompanhamos até agora os dois primeiros grandes reformadores: <span style="color:#f97316;font-weight:700;">Lutero</span>, o profeta apaixonado que descobriu o Evangelho pela angústia, e <span style="color:#2dd4bf;font-weight:700;">Zuínglio</span>, o humanista que chegou às mesmas conclusões pelo estudo cuidadoso das Escrituras. Hoje González nos apresenta a terceira grande figura — e, em muitos sentidos, a <span style="background:rgba(251,191,36,0.15);border:1px solid rgba(251,191,36,0.35);border-radius:5px;padding:1px 8px;color:#fde68a;font-weight:700;">mais influente na configuração duradoura do protestantismo</span>: <strong style="color:#fff;">João Calvino</strong>.',
+          'Calvino nasceu na França em <span style="color:#60a5fa;font-weight:700;">1509</span> — uma geração depois de Lutero e Zuínglio. Quando a Reforma irrompia na Alemanha e na Suíça, ele ainda era criança. Quando se converteu ao protestantismo, por volta de <span style="color:#60a5fa;font-weight:600;">1533</span>, já havia os fundamentos a sistematizar. <span style="background:rgba(52,211,153,0.12);border-left:3px solid #34d399;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(200,255,235,0.95);">Sua vocação não foi a de profeta; foi a de arquiteto.</span>',
+        ],
+      },
+      {
+        tipo: 'analise',
+        titulo: 'A Vocação Forçada: Farel e Genebra',
+        paragrafos: [
+          'Em <span style="color:#60a5fa;font-weight:700;">1536</span>, Calvino passava por Genebra em trânsito. Seu plano era ir a Estrasburgo e dedicar-se ao estudo em paz — era um <span style="color:#a78bfa;font-weight:700;">homem de gabinete, não de púlpito</span>. Guilherme Farel, que tentava reformar a cidade turbulenta de Genebra, soube de sua passagem e foi ao seu encontro.',
+          'Calvino recusou o apelo de Farel. Então Farel — segundo o próprio relato de Calvino — <span style="background:rgba(251,113,133,0.12);border:1px solid rgba(251,113,133,0.30);border-radius:5px;padding:1px 7px;color:#fecdd3;font-weight:700;font-style:italic;">"ameaçou-o com a maldição de Deus"</span> caso se recusasse a ficar e servir onde a necessidade era urgente. Calvino sentiu <span style="color:#fbbf24;font-style:italic;font-weight:600;">"como se Deus do alto houvesse estendido sua mão poderosa"</span> e capitulou.',
+          'Ele nunca quis ser líder eclesiástico. A vocação lhe foi imposta. Essa tensão — o <span style="color:#fb7185;font-weight:700;">intelectual forçado para o centro da ação</span> — marcou toda a sua vida em Genebra, incluindo um período de exílio (<span style="color:#60a5fa;font-weight:700;">1538–1541</span>) quando o Conselho Municipal o expulsou por excesso de rigor. Quando foi chamado de volta, em 1541, teria dito: <span style="background:rgba(192,132,252,0.15);border:1px solid rgba(192,132,252,0.35);border-radius:5px;padding:2px 10px;color:#e9d5ff;font-weight:700;font-style:italic;">"Preferiria a morte a esta cruz."</span> E foi assim mesmo assim.',
+        ],
+        citacao: 'Calvino nunca quis ser líder eclesiástico. A vocação lhe foi imposta pelo apelo de Farel — e ele passou a vida em Genebra vivendo essa tensão entre o gabinete e o púlpito.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'As Institutas: Uma Obra em Crescimento',
+        paragrafos: [
+          'Em <span style="color:#60a5fa;font-weight:700;">1536</span>, Calvino publicou a primeira edição das <span style="background:rgba(251,191,36,0.15);border:1px solid rgba(251,191,36,0.35);border-radius:5px;padding:1px 8px;color:#fde68a;font-weight:800;font-style:italic;">Institutas da Religião Cristã</span> — um manual compacto de seis capítulos, originalmente escrito para defender os protestantes franceses perseguidos. Ao longo de sua vida, o livro cresceu em cinco edições até chegar, em <span style="color:#60a5fa;font-weight:700;">1559</span>, a uma enciclopédia teológica de <span style="color:#fbbf24;font-weight:700;">80 capítulos</span>, considerada o maior monumento intelectual da Reforma.',
+          'González observa que as Institutas não foram um sistema fechado imposto de cima; <span style="background:rgba(52,211,153,0.12);border-left:3px solid #34d399;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(200,255,235,0.95);">cresceram em resposta às polêmicas, às necessidades pastorais e ao aprofundamento do próprio Calvino.</span> É teologia viva, não filosofia abstrata.',
+          'O centro organizador das Institutas <span style="color:#fb7185;font-weight:700;">não é a predestinação</span> — como popularmente se pensa. É a <span style="color:#fbbf24;font-weight:800;">soberania de Deus</span>. Para Calvino, tudo começa com o reconhecimento de que Deus é Deus: absoluto, glorioso, incompreensível. A salvação, a ética, a Igreja, os sacramentos — <span style="color:#34d399;font-weight:600;">tudo deriva dessa convicção central</span>.',
+        ],
+        citacao: 'O centro das Institutas não é a predestinação, mas a soberania de Deus. Tudo em Calvino deriva do reconhecimento de que Deus é Deus.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'Predestinação, Santificação e Genebra como Laboratório',
+        paragrafos: [
+          'A <span style="color:#c084fc;font-weight:700;">predestinação dupla</span> de Calvino — a ideia de que Deus elegeu alguns para salvação e outros para perdição, por soberania e não por mérito previsto — é a doutrina que mais choques produziu. Mas González insiste num ponto frequentemente ignorado: para Calvino, a predestinação não gera <span style="color:#fb7185;font-weight:600;">passividade</span>, mas <span style="color:#34d399;font-weight:700;">intensa atividade</span>.',
+          'O eleito não sabe com certeza absoluta que o é, mas <span style="background:rgba(52,211,153,0.12);border:1px solid rgba(52,211,153,0.30);border-radius:5px;padding:2px 10px;color:#a7f3d0;font-weight:800;">confirma sua eleição pela vida santa, pelo fruto visível da graça</span>. Daí o rigor moral que caracteriza o calvinismo: não porque obras salvam, mas porque o salvo inevitavelmente frutifica. <span style="color:#fbbf24;font-weight:700;">A santificação não é opcional — é evidência.</span>',
+          'Por isso Calvino criou o <span style="color:#f97316;font-weight:700;">Consistório</span> em Genebra: um tribunal eclesiástico que aplicava disciplina moral à cidade. Frequentar cultos, viver com integridade, tratar os pobres com justiça — tudo isso era monitorado. Genebra tornou-se um <span style="background:rgba(251,191,36,0.12);border-left:3px solid #fbbf24;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(255,245,210,0.95);">laboratório da ideia de que o Evangelho transforma não apenas almas, mas cidades inteiras.</span>',
+        ],
+        citacao: 'Para Calvino, a santificação não é opcional — é evidência. O salvo inevitavelmente frutifica, e esse fruto é ao mesmo tempo dádiva e confirmação da eleição.',
+        citacaoAutor: 'João Calvino',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'Serveto: A Sombra no Legado de Calvino',
+        paragrafos: [
+          'Em <span style="color:#60a5fa;font-weight:700;">1553</span>, <strong style="color:#fff;">Miguel Serveto</strong> — teólogo espanhol que negava a Trindade e o batismo infantil — chegou a Genebra. Calvino, que havia trocado correspondência hostil com ele, ordenou sua prisão. Serveto foi julgado, condenado por heresia e <span style="color:#fb7185;font-weight:700;">queimado vivo</span>.',
+          'Calvino aprovou a sentença, embora tenha pedido uma forma de morte mais misericordiosa (negada). González não minimiza o episódio: foi um <span style="background:rgba(251,113,133,0.12);border:1px solid rgba(251,113,133,0.30);border-radius:5px;padding:1px 7px;color:#fecdd3;font-weight:700;">erro grave, incompatível com o princípio da liberdade de consciência</span> que a Reforma em outros momentos havia defendido. A execução de Serveto é o ponto mais sombrio do legado de Calvino — e um lembrete de que <span style="background:rgba(251,191,36,0.12);border-left:3px solid #fbbf24;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(255,245,210,0.95);">reformadores genuínos podem perpetuar as mesmas violências que combateram.</span>',
+        ],
+        citacao: 'Reformadores genuínos podem perpetuar as mesmas violências que combateram. O caso Serveto é o lembrete permanente de que nenhuma teologia nos protege automaticamente do erro moral.',
+        citacaoAutor: 'Justo L. González',
+      },
+    ],
+    perguntas: [
+      'Calvino foi convocado para uma tarefa que não queria. Como você pensa a tensão entre vocação pessoal e chamado comunitário? Já foi "Farel-ado" — chamado por outros para algo que não escolheria por conta própria?',
+      'O calvinismo enfatiza que a eleição se confirma pela vida santa e pela transformação moral. Qual é o risco de transformar isso em moralismo ansioso? Como a graça e a responsabilidade se equilibram na sua própria espiritualidade?',
+      'Calvino aprovou a execução de Serveto. Como esse fato deve influenciar a maneira como lemos e avaliamos os grandes teólogos? É possível aprender com alguém sem minimizar seus erros sérios?',
+    ],
+    oracao: 'Senhor, obrigado pelo dom dos sistematizadores — daqueles que tomam a chama viva da descoberta e a organizam em luz duradoura. Que possamos receber a herança de Calvino com discernimento: a soberania de Deus como fundação inabalável, a santificação como vocação séria, e a disciplina como cuidado mútuo — sem o rigor que pune onde deveria curar.\n\nE que o caso de Serveto nos ensine humildade permanente: que nenhuma teologia, por mais sólida, nos protege automaticamente do erro moral.\n\nAmém.',
+    leituraComplementar: 'González, Justo L. A Era dos Reformadores. São Paulo: Vida Nova, 1995. Capítulo 7: "João Calvino" (pp. 149–178).',
+  },
   10: {
     dia: 10,
     data: '10 de outubro de 2026',
