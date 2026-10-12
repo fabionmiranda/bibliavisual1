@@ -232,8 +232,8 @@ function VersiculoBox({ texto, ref: r, cor }: { texto: string; ref: string; cor:
       className="rounded-xl p-5 mb-6"
       style={{ background: `${cor}12`, border: `1px solid ${cor}35`, borderLeft: `4px solid ${cor}` }}
     >
-      <p className="text-base leading-relaxed italic" style={{ color: cor }}>"{texto}"</p>
-      <p className="mt-2 text-sm font-semibold" style={{ color: `${cor}bb` }}>— {r}</p>
+      <p className="text-lg leading-relaxed italic font-medium" style={{ color: cor }}>"{texto}"</p>
+      <p className="mt-2 text-base font-semibold" style={{ color: `${cor}cc` }}>— {r}</p>
     </motion.div>
   );
 }
@@ -251,7 +251,7 @@ function ConfTexto({ items, cor }: { items: typeof CONF_TEXT_1_5; cor: string })
           >
             <div className="flex items-center gap-3">
               <span className="text-xs font-bold px-2 py-0.5 rounded-full" style={{ background: `${cor}25`, color: cor }}>{item.para}</span>
-              <span className="font-semibold text-white/90 text-sm">{item.titulo}</span>
+              <span className="font-bold text-white text-base">{item.titulo}</span>
             </div>
             <motion.span animate={{ rotate: open === item.para ? 180 : 0 }} className="text-lg" style={{ color: cor }}>▾</motion.span>
           </button>
@@ -263,7 +263,7 @@ function ConfTexto({ items, cor }: { items: typeof CONF_TEXT_1_5; cor: string })
                 exit={{ height: 0, opacity: 0 }}
                 className="px-5 pb-5"
               >
-                <p className="text-white/75 leading-relaxed text-sm pt-3 italic border-t" style={{ borderColor: `${cor}20` }}>{item.texto}</p>
+                <p className="text-white/90 leading-relaxed text-base pt-4 italic border-t" style={{ borderColor: `${cor}20` }}>{item.texto}</p>
               </motion.div>
             )}
           </AnimatePresence>
@@ -287,8 +287,8 @@ function PerguntasGrid({ perguntas, cor }: { perguntas: { num: string; texto: st
           style={{ background: `${cor}0a`, border: `1px solid ${cor}22` }}
         >
           <div className="flex items-start gap-3">
-            <span className="shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold" style={{ background: `${cor}22`, color: cor }}>{p.num}</span>
-            <p className="text-white/80 text-sm leading-relaxed">{p.texto}</p>
+            <span className="shrink-0 w-9 h-9 rounded-full flex items-center justify-center text-sm font-extrabold" style={{ background: `${cor}28`, color: cor }}>{p.num}</span>
+            <p className="text-white/95 text-base leading-relaxed font-medium">{p.texto}</p>
           </div>
           {p.recurso && (
             <div className="flex flex-col gap-1.5 mt-1">
@@ -326,8 +326,8 @@ function GlossarioCards({ items, cor }: { items: { termo: string; def: string }[
     <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
       {items.map(g => (
         <div key={g.termo} className="rounded-xl p-4" style={{ background: `${cor}0c`, border: `1px solid ${cor}28` }}>
-          <p className="font-bold text-sm mb-1" style={{ color: cor }}>{g.termo}</p>
-          <p className="text-white/70 text-sm leading-relaxed">{g.def}</p>
+          <p className="font-extrabold text-base mb-2" style={{ color: cor }}>{g.termo}</p>
+          <p className="text-white/90 text-base leading-relaxed">{g.def}</p>
         </div>
       ))}
     </div>
@@ -337,9 +337,9 @@ function GlossarioCards({ items, cor }: { items: { termo: string; def: string }[
 function MemorizarBox({ texto, ref: r, cor }: { texto: string; ref: string; cor: string }) {
   return (
     <div className="rounded-xl p-5 mt-4" style={{ background: `${cor}10`, border: `2px dashed ${cor}40` }}>
-      <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: `${cor}90` }}>✦ Versículo para memorizar</p>
-      <p className="text-white/85 leading-relaxed italic text-sm">"{texto}"</p>
-      <p className="mt-2 font-semibold text-sm" style={{ color: cor }}>— {r}</p>
+      <p className="text-sm font-extrabold uppercase tracking-widest mb-4" style={{ color: cor }}>✦ Versículo para memorizar</p>
+      <p className="text-white/95 leading-relaxed italic text-lg font-medium">"{texto}"</p>
+      <p className="mt-3 font-bold text-base" style={{ color: cor }}>— {r}</p>
     </div>
   );
 }
@@ -365,18 +365,18 @@ function TableElementosCircunstancias({ cor }: { cor: string }) {
   ];
   return (
     <div className="overflow-x-auto mt-4">
-      <table className="w-full text-sm rounded-xl overflow-hidden" style={{ borderCollapse: 'collapse' }}>
+      <table className="w-full text-base rounded-xl overflow-hidden" style={{ borderCollapse: 'collapse' }}>
         <thead>
-          <tr style={{ background: `${cor}20` }}>
-            <th className="px-4 py-3 text-left font-bold" style={{ color: cor }}>Elementos (prescritos pela Escritura)</th>
-            <th className="px-4 py-3 text-left font-bold" style={{ color: cor }}>Circunstâncias (discrição humana)</th>
+          <tr style={{ background: `${cor}22` }}>
+            <th className="px-4 py-3 text-left font-extrabold" style={{ color: cor }}>Elementos (prescritos pela Escritura)</th>
+            <th className="px-4 py-3 text-left font-extrabold" style={{ color: cor }}>Circunstâncias (discrição humana)</th>
           </tr>
         </thead>
         <tbody>
           {rows.map((r, i) => (
-            <tr key={i} style={{ background: i % 2 === 0 ? `${cor}07` : `${cor}03`, borderTop: `1px solid ${cor}18` }}>
-              <td className="px-4 py-2 text-white/80">{r.elemento}</td>
-              <td className="px-4 py-2 text-white/60">{r.circ}</td>
+            <tr key={i} style={{ background: i % 2 === 0 ? `${cor}09` : `${cor}04`, borderTop: `1px solid ${cor}18` }}>
+              <td className="px-4 py-3 text-white/95 font-medium">{r.elemento}</td>
+              <td className="px-4 py-3 text-white/75">{r.circ}</td>
             </tr>
           ))}
         </tbody>
@@ -408,24 +408,24 @@ function EncontroSection({ enc, textos, confTexto, mostrarTabela }: {
         <div className="flex flex-wrap items-center gap-3 mb-3">
           <span className="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider" style={{ background: `${cor}22`, color: cor }}>{enc.titulo}</span>
         </div>
-        <h2 className="text-xl font-bold text-white">{enc.subtitulo}</h2>
-        <p className="mt-1 text-sm" style={{ color: `${cor}99` }}>"{enc.versiculo}" — {enc.ref_versiculo}</p>
+        <h2 className="text-2xl font-extrabold text-white tracking-tight">{enc.subtitulo}</h2>
+        <p className="mt-2 text-base font-medium" style={{ color: `${cor}cc` }}>"{enc.versiculo}" — {enc.ref_versiculo}</p>
       </div>
 
       <div className="p-6 space-y-8">
 
         {/* introducao */}
         <div>
-          <h3 className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: `${cor}80` }}>Introdução</h3>
+          <h3 className="text-sm font-extrabold uppercase tracking-widest mb-4" style={{ color: cor }}>Introdução</h3>
           {enc.introducao.split('\n\n').map((para, i) => (
-            <p key={i} className="text-white/75 leading-relaxed text-sm mb-3">{para}</p>
+            <p key={i} className="text-white/90 leading-relaxed text-base mb-4">{para}</p>
           ))}
         </div>
 
         {/* textos-prova */}
         {textos && (
           <div>
-            <h3 className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: `${cor}80` }}>Textos-Prova</h3>
+            <h3 className="text-sm font-extrabold uppercase tracking-widest mb-4" style={{ color: cor }}>Textos-Prova</h3>
             <TextosProva items={textos} cor={cor} />
           </div>
         )}
@@ -433,7 +433,7 @@ function EncontroSection({ enc, textos, confTexto, mostrarTabela }: {
         {/* texto confessional */}
         {confTexto && (
           <div>
-            <h3 className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: `${cor}80` }}>Texto Confessional</h3>
+            <h3 className="text-sm font-extrabold uppercase tracking-widest mb-4" style={{ color: cor }}>Texto Confessional</h3>
             <ConfTexto items={confTexto} cor={cor} />
           </div>
         )}
@@ -441,20 +441,20 @@ function EncontroSection({ enc, textos, confTexto, mostrarTabela }: {
         {/* tabela elementos */}
         {mostrarTabela && (
           <div>
-            <h3 className="text-xs font-bold uppercase tracking-widest mb-2" style={{ color: `${cor}80` }}>Elementos × Circunstâncias do Culto</h3>
+            <h3 className="text-sm font-extrabold uppercase tracking-widest mb-3" style={{ color: cor }}>Elementos × Circunstâncias do Culto</h3>
             <TableElementosCircunstancias cor={cor} />
           </div>
         )}
 
         {/* perguntas */}
         <div>
-          <h3 className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: `${cor}80` }}>Perguntas para Discussão</h3>
+          <h3 className="text-sm font-extrabold uppercase tracking-widest mb-4" style={{ color: cor }}>Perguntas para Discussão</h3>
           <PerguntasGrid perguntas={enc.perguntas} cor={cor} />
         </div>
 
         {/* glossario */}
         <div>
-          <h3 className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: `${cor}80` }}>Glossário</h3>
+          <h3 className="text-sm font-extrabold uppercase tracking-widest mb-4" style={{ color: cor }}>Glossário</h3>
           <GlossarioCards items={enc.glossario} cor={cor} />
         </div>
 
@@ -602,8 +602,8 @@ function GabaritoSection({
         <div className="flex items-center gap-3">
           <span className="text-lg">📋</span>
           <div>
-            <p className="font-bold text-white text-sm">{titulo}</p>
-            <p className="text-xs mt-0.5" style={{ color: `${cor}80` }}>Respostas orientadoras</p>
+            <p className="font-extrabold text-white text-base">{titulo}</p>
+            <p className="text-sm mt-0.5 font-medium" style={{ color: `${cor}aa` }}>Respostas orientadoras</p>
           </div>
         </div>
         <motion.span animate={{ rotate: open ? 180 : 0 }} style={{ color: cor }} className="text-lg">▾</motion.span>
@@ -618,7 +618,7 @@ function GabaritoSection({
             className="overflow-hidden"
           >
             <div className="px-6 pb-6 pt-2 space-y-3">
-              <p className="text-xs italic mb-4" style={{ color: `${cor}60` }}>{aviso}</p>
+              <p className="text-sm italic mb-5" style={{ color: `${cor}88` }}>{aviso}</p>
 
               {itens.map(item => (
                 <motion.div key={item.num} layout className="rounded-xl overflow-hidden" style={{ border: `1px solid ${cor}20` }}>
@@ -627,10 +627,10 @@ function GabaritoSection({
                     className="w-full flex items-center justify-between px-4 py-3 text-left"
                     style={{ background: openItem === item.num ? `${cor}14` : `${cor}07` }}
                   >
-                    <span className="text-xs font-bold px-2 py-0.5 rounded-full mr-3 shrink-0" style={{ background: `${cor}22`, color: cor }}>
+                    <span className="text-sm font-extrabold px-2.5 py-1 rounded-full mr-3 shrink-0" style={{ background: `${cor}28`, color: cor }}>
                       {item.num}
                     </span>
-                    <span className="flex-1 text-white/80 text-sm truncate pr-3">
+                    <span className="flex-1 text-white/95 text-base font-medium truncate pr-3">
                       {perguntas.find(p => p.num === item.num)?.texto}
                     </span>
                     <motion.span animate={{ rotate: openItem === item.num ? 180 : 0 }} style={{ color: `${cor}80` }} className="text-sm shrink-0">▾</motion.span>
@@ -645,7 +645,7 @@ function GabaritoSection({
                         className="px-5 pb-4"
                       >
                         <p
-                          className="text-white/78 text-sm leading-relaxed pt-3"
+                          className="text-white/92 text-base leading-relaxed pt-4"
                           style={{ borderTop: `1px solid ${cor}18` }}
                           dangerouslySetInnerHTML={{
                             __html: item.notas
@@ -664,7 +664,7 @@ function GabaritoSection({
                             {item.notas.map(n => {
                               const nota = notas.find(r => r.num === n);
                               return nota ? (
-                                <p key={n} className="text-xs leading-relaxed" style={{ color: `${cor}70` }}>
+                                <p key={n} className="text-sm leading-relaxed" style={{ color: `${cor}99` }}>
                                   <sup style={{ color: cor }} className="font-bold mr-1">{n}</sup>
                                   {nota.ref}
                                 </p>
@@ -679,10 +679,10 @@ function GabaritoSection({
               ))}
 
               <div className="mt-4 pt-4 rounded-xl px-4 py-3" style={{ background: `${cor}07`, border: `1px solid ${cor}15` }}>
-                <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: `${cor}60` }}>Notas de rodapé</p>
-                <ol className="space-y-1.5 list-none">
+                <p className="text-sm font-extrabold uppercase tracking-widest mb-3" style={{ color: `${cor}99` }}>Notas de rodapé</p>
+                <ol className="space-y-2 list-none">
                   {notas.map(n => (
-                    <li key={n.num} className="text-xs leading-relaxed" style={{ color: '#ffffff55' }}>
+                    <li key={n.num} className="text-sm leading-relaxed" style={{ color: '#ffffff80' }}>
                       <sup style={{ color: cor }} className="font-bold mr-1">{n.num}</sup>
                       {n.ref}
                     </li>
@@ -806,13 +806,13 @@ export default function DiscipuladoConfessionalCap1Page() {
           <h1 className="text-3xl md:text-4xl font-black mb-3 text-white leading-tight">
             Das Sagradas Escrituras
           </h1>
-          <p className="text-white/60 text-lg max-w-2xl leading-relaxed">
+          <p className="text-white/80 text-xl max-w-2xl leading-relaxed font-medium">
             Discipulado Confessional — Caderno do Aluno · Encontros 1 a 3
           </p>
 
-          <div className="mt-6 p-4 rounded-xl" style={{ background: `${GOLD}10`, border: `1px solid ${GOLD}25` }}>
-            <p className="text-sm text-white/70 leading-relaxed">
-              <span style={{ color: GOLD }} className="font-semibold">Como usar este material:</span> Cada encontro tem duração de 90 min. Leia o texto confessional antes do encontro, traga suas respostas às perguntas, e pesquise os textos-prova na Bíblia. O versículo para memorizar deve ser aprendido antes do próximo encontro.
+          <div className="mt-6 p-5 rounded-xl" style={{ background: `${GOLD}10`, border: `1px solid ${GOLD}30` }}>
+            <p className="text-base text-white/85 leading-relaxed">
+              <span style={{ color: GOLD }} className="font-bold">Como usar este material:</span> Cada encontro tem duração de 90 min. Leia o texto confessional antes do encontro, traga suas respostas às perguntas, e pesquise os textos-prova na Bíblia. O versículo para memorizar deve ser aprendido antes do próximo encontro.
             </p>
           </div>
         </div>
@@ -829,7 +829,7 @@ export default function DiscipuladoConfessionalCap1Page() {
               <button
                 key={n}
                 onClick={() => setTab(n)}
-                className="shrink-0 px-4 py-2 rounded-xl text-sm font-semibold transition-all"
+                className="shrink-0 px-4 py-2.5 rounded-xl text-base font-semibold transition-all"
                 style={{
                   background: isActive ? `${cors[n - 1]}20` : 'transparent',
                   color: isActive ? cors[n - 1] : '#ffffff50',
