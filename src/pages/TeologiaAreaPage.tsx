@@ -82,6 +82,7 @@ const AREAS_INFO: Record<string, AreaInfo> = {
       { nome: 'A Reforma Protestante', desc: 'Lutero, Calvino e a ruptura com Roma — causas e consequências', icon: '⚡' },
       { nome: 'Ortodoxia e Pietismo', desc: 'A escolástica reformada e o movimento pietista (séc. XVII–XVIII)', icon: '📚' },
       { nome: 'Modernidade e Reação', desc: 'Iluminismo, liberalismo teológico e a resposta conservadora', icon: '🌊' },
+      { nome: 'Credos e Confissões', desc: 'Credo Apostólico, Niceno, Calcedônia, Westminster, Heidelberg e Cânones de Dort — os grandes documentos doutrinários que a Igreja forjou ao longo dos séculos', icon: '📜', link: '/teologia/credos' },
     ],
   },
   pastoral: {
