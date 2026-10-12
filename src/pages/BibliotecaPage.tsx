@@ -104,7 +104,7 @@ function getSecaoPrincipal(pt: boolean) {
         ? 'Cadernos de discipulado confessional — estudo sistemático das grandes confissões de fé com perguntas, gabaritos e referências.'
         : 'Confessional discipleship notebooks — systematic study of the great confessions of faith with questions, answers and references.',
       accent: '#f97316',
-      path: '/discipulado/confessional/cap1',
+      path: '/discipulado/confessional',
       badge: pt ? 'Novo' : 'New',
       bg: 'linear-gradient(145deg, #1c0d00 0%, #150900 50%, #0d0806 100%)',
       Pattern: PatternCross,

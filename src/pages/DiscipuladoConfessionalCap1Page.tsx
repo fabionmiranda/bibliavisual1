@@ -816,7 +816,7 @@ function ChapterNav({ onPrev, onNext, compact }: { onPrev: () => void; onNext: (
 export default function DiscipuladoConfessionalCap1Page() {
   const navigate = useNavigate();
   const [tab, setTab] = useState<1 | 2 | 3>(1);
-  const goBack = () => navigate('/teologia/credos');
+  const goBack = () => navigate('/discipulado/confessional/batista');
   const goNext = () => navigate('/discipulado/confessional/cap2');
 
   return (
@@ -839,11 +839,11 @@ export default function DiscipuladoConfessionalCap1Page() {
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 py-14">
           <button
-            onClick={() => navigate('/teologia/credos')}
+            onClick={() => navigate('/discipulado/confessional/batista')}
             className="flex items-center gap-2 text-sm mb-6 transition-opacity hover:opacity-80"
             style={{ color: `${GOLD}99` }}
           >
-            ← Voltar para Credos e Confissões
+            ← Confissão Batista de 1689
           </button>
 
           <div className="flex flex-wrap items-center gap-3 mb-4">
