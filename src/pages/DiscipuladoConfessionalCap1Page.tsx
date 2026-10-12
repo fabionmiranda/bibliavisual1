@@ -141,13 +141,13 @@ const ENCONTRO1 = {
 
 A Confissão de Fé Batista de 1677/1689 nasceu nesse contexto: igrejas batistas particulares na Inglaterra, sob perseguição, precisavam demonstrar que sua fé era ortodoxa e bíblica. Ao modelar sua confissão sobre a de Westminster (1646), declararam continuidade com a grande tradição reformada — distinguindo-se apenas na eclesiologia e nos sacramentos.`,
   perguntas: [
-    { num: '1.1', texto: 'Por que a Igreja precisa de confissões de fé, se já tem a Bíblia?' },
-    { num: '1.2', texto: 'O que significa dizer que a Escritura é "norma normans" e a confissão é "norma normata"?' },
-    { num: '1.3', texto: 'Qual a diferença entre um "Batista Geral" e um "Batista Particular" no século XVII?' },
-    { num: '1.4', texto: 'Por que as igrejas batistas de 1677 modelaram sua confissão sobre a de Westminster?' },
-    { num: '1.5', texto: 'Em Judas 3, o que significa "a fé que uma vez por todas foi entregue aos santos"?' },
-    { num: '1.6', texto: 'Como a confissão protege a Igreja de desvios doutrinários ao longo das gerações?' },
-    { num: '1.7', texto: 'Que perigo existe em uma Igreja que nunca formulou sua doutrina explicitamente?' },
+    { num: '1.1', texto: 'Por que a Igreja precisa de confissões de fé, se já tem a Bíblia?', recurso: { label: 'O Imperativo Credal — Ligonier PT', url: 'https://pt.ligonier.org/articles/o-imperativo-credal/' } },
+    { num: '1.2', texto: 'O que significa dizer que a Escritura é "norma normans" e a confissão é "norma normata"?', recurso: { label: 'Norma normans e normata — Monergismo', url: 'https://www.monergismo.com/?s=norma+normans' } },
+    { num: '1.3', texto: 'Qual a diferença entre um "Batista Geral" e um "Batista Particular" no século XVII?', recurso: { label: 'Batistas Particulares — Monergismo', url: 'https://www.monergismo.com/?s=batistas+particulares' } },
+    { num: '1.4', texto: 'Por que as igrejas batistas de 1677 modelaram sua confissão sobre a de Westminster?', recurso: { label: 'Confissão Batista de 1689 — Fiel', url: 'https://fiel.com.br/?s=confissao+batista+1689' } },
+    { num: '1.5', texto: 'Em Judas 3, o que significa "a fé que uma vez por todas foi entregue aos santos"?', recurso: { label: 'Judas 3 — Ligonier PT', url: 'https://pt.ligonier.org/articles/contendendo-pela-fe/' } },
+    { num: '1.6', texto: 'Como a confissão protege a Igreja de desvios doutrinários ao longo das gerações?', recurso: { label: 'Confissões e proteção doutrinária — TGC Brasil', url: 'https://brasil.thegospelcoalition.org/?s=confissao+de+fe' } },
+    { num: '1.7', texto: 'Que perigo existe em uma Igreja que nunca formulou sua doutrina explicitamente?', recurso: { label: 'Por que confissões importam — Verdade Gospel', url: 'https://verdadegospel.com/?s=confissao+de+fe' } },
     { num: '1.8', texto: 'Como sua congregação local recebe e usa uma confissão de fé hoje?' },
   ],
   glossario: GLOSSARIO_GERAL,
@@ -167,13 +167,13 @@ Por isso Deus falou "muitas vezes e de muitas maneiras" pelos profetas, e "neste
 
 Os parágrafos §3–§5 tratam da autoridade: ela não vem do papa, não vem de concílio, não vem de tradição. Vem de Deus — e o Espírito Santo nos convence disso interiormente. A Igreja pode atestar; não pode conferir.`,
   perguntas: [
-    { num: '2.1', texto: 'Qual a diferença entre revelação geral e revelação especial? Dê exemplos bíblicos.' },
-    { num: '2.2', texto: 'O que significa "inspiração verbal plenária"? Como §1 e 2Tm 3.16 sustentam essa doutrina?' },
-    { num: '2.3', texto: 'Por que os apócrifos foram excluídos do cânon pela Confissão (§2)?' },
-    { num: '2.4', texto: 'Segundo §3, de onde vem a autoridade da Escritura? Por que não pode vir da Igreja?' },
-    { num: '2.5', texto: 'O que é o "testemunho interno do Espírito Santo" mencionado em §4? Como ele se relaciona com evidências racionais?' },
-    { num: '2.6', texto: 'Leia 1Co 2.10–14. Como o homem natural recebe a Escritura? O que é necessário para que ela seja entendida como Palavra de Deus?' },
-    { num: '2.7', texto: 'Por que §5 afirma que o testemunho da Igreja é "razão adequada" mas não "autoridade infalível"?' },
+    { num: '2.1', texto: 'Qual a diferença entre revelação geral e revelação especial? Dê exemplos bíblicos.', recurso: { label: 'Revelação geral e especial — Ligonier PT', url: 'https://pt.ligonier.org/articles/revelacao-geral-e-revelacao-especial/' } },
+    { num: '2.2', texto: 'O que significa "inspiração verbal plenária"? Como §1 e 2Tm 3.16 sustentam essa doutrina?', recurso: { label: 'Inspiração da Escritura — Monergismo', url: 'https://www.monergismo.com/?s=inspiracao+verbal+plenaria' } },
+    { num: '2.3', texto: 'Por que os apócrifos foram excluídos do cânon pela Confissão (§2)?', recurso: { label: 'Os apócrifos e o cânon — Fiel', url: 'https://fiel.com.br/?s=apocrifos+canon' } },
+    { num: '2.4', texto: 'Segundo §3, de onde vem a autoridade da Escritura? Por que não pode vir da Igreja?', recurso: { label: 'Autoridade da Escritura — Ligonier PT', url: 'https://pt.ligonier.org/articles/a-autoridade-da-escritura/' } },
+    { num: '2.5', texto: 'O que é o "testemunho interno do Espírito Santo" mencionado em §4? Como ele se relaciona com evidências racionais?', recurso: { label: 'Testemunho interno do Espírito — Monergismo', url: 'https://www.monergismo.com/?s=testemunho+interno+espirito' } },
+    { num: '2.6', texto: 'Leia 1Co 2.10–14. Como o homem natural recebe a Escritura? O que é necessário para que ela seja entendida como Palavra de Deus?', recurso: { label: '1Co 2.14 — o homem natural — Verdade Gospel', url: 'https://verdadegospel.com/?s=homem+natural+espirito' } },
+    { num: '2.7', texto: 'Por que §5 afirma que o testemunho da Igreja é "razão adequada" mas não "autoridade infalível"?', recurso: { label: 'Escritura e Igreja — TGC Brasil', url: 'https://brasil.thegospelcoalition.org/?s=autoridade+escritura+igreja' } },
   ],
   glossario: [
     { termo: 'Revelação Geral', def: 'A revelação de Deus a toda a humanidade por meio da criação, da consciência e da história — suficiente para inexcusabilidade (Rm 1.20), insuficiente para salvação.' },
@@ -197,14 +197,14 @@ O princípio regulador do culto (§6, último parágrafo) decorre diretamente di
 
 §7 garante que a suficiência não produz elitismo: as verdades necessárias para a salvação são claras o suficiente para que qualquer pessoa possa compreendê-las. §9 dá a regra hermenêutica: a Escritura interpreta a Escritura. §10 encerra o capítulo com a declaração mais polemicamente reformada: o juiz supremo é o Espírito falando na Escritura — não o papa, não o concílio, não o pastor.`,
   perguntas: [
-    { num: '3.1', texto: 'O que significa afirmar que a Escritura contém "o conselho completo de Deus" (§6)? Que implicações isso tem para as tradições e revelações pós-bíblicas?' },
-    { num: '3.2', texto: 'Qual é o "princípio regulador do culto" e como ele deriva da suficiência da Escritura?' },
-    { num: '3.3', texto: 'O que Gálatas 1.8–9 acrescenta à doutrina da suficiência? Por que Paulo usa linguagem tão forte?' },
-    { num: '3.4', texto: 'A perspicuidade (§7) afirma que toda a Bíblia é igualmente clara? O que exatamente ela afirma?' },
-    { num: '3.5', texto: 'Como §8 justifica a tradução da Bíblia para as línguas do povo? Que princípio teológico está em jogo?' },
-    { num: '3.6', texto: '"A Escritura interpreta a Escritura" (§9). Aplique esse princípio a um texto difícil da Bíblia.' },
-    { num: '3.7', texto: 'Por que §10 é controverso para católicos romanos e para carismáticos? O que cada grupo diria contra ele?' },
-    { num: '3.8', texto: 'Como os três princípios — suficiência, clareza, supremacia — se relacionam entre si? São independentes ou derivados um do outro?' },
+    { num: '3.1', texto: 'O que significa afirmar que a Escritura contém "o conselho completo de Deus" (§6)? Que implicações isso tem para as tradições e revelações pós-bíblicas?', recurso: { label: 'Suficiência da Escritura — Ligonier PT', url: 'https://pt.ligonier.org/articles/a-suficiencia-da-escritura/' } },
+    { num: '3.2', texto: 'Qual é o "princípio regulador do culto" e como ele deriva da suficiência da Escritura?', recurso: { label: 'Princípio regulador do culto — Monergismo', url: 'https://www.monergismo.com/?s=principio+regulador+culto' } },
+    { num: '3.3', texto: 'O que Gálatas 1.8–9 acrescenta à doutrina da suficiência? Por que Paulo usa linguagem tão forte?', recurso: { label: 'Gálatas 1 — Sola Scriptura — Fiel', url: 'https://fiel.com.br/?s=sola+scriptura+galatas' } },
+    { num: '3.4', texto: 'A perspicuidade (§7) afirma que toda a Bíblia é igualmente clara? O que exatamente ela afirma?', recurso: { label: 'Perspicuidade da Escritura — Ligonier PT', url: 'https://pt.ligonier.org/articles/a-clareza-da-escritura/' } },
+    { num: '3.5', texto: 'Como §8 justifica a tradução da Bíblia para as línguas do povo? Que princípio teológico está em jogo?', recurso: { label: 'A Bíblia em sua língua — Verdade Gospel', url: 'https://verdadegospel.com/?s=traducao+biblia+lingua' } },
+    { num: '3.6', texto: '"A Escritura interpreta a Escritura" (§9). Aplique esse princípio a um texto difícil da Bíblia.', recurso: { label: 'Analogia da fé — Monergismo', url: 'https://www.monergismo.com/?s=analogia+da+fe+hermeneutica' } },
+    { num: '3.7', texto: 'Por que §10 é controverso para católicos romanos e para carismáticos? O que cada grupo diria contra ele?', recurso: { label: 'Sola Scriptura — TGC Brasil', url: 'https://brasil.thegospelcoalition.org/?s=sola+scriptura' } },
+    { num: '3.8', texto: 'Como os três princípios — suficiência, clareza, supremacia — se relacionam entre si? São independentes ou derivados um do outro?', recurso: { label: 'Sola Scriptura completa — Fiel', url: 'https://fiel.com.br/?s=sola+scriptura+suficiencia' } },
   ],
   glossario: [
     { termo: 'Suficiência', def: 'A doutrina de que a Escritura contém tudo que é necessário para a fé e a prática cristã. Nada pode ser adicionado como artigo obrigatório de fé.' },
@@ -273,7 +273,7 @@ function ConfTexto({ items, cor }: { items: typeof CONF_TEXT_1_5; cor: string })
   );
 }
 
-function PerguntasGrid({ perguntas, cor }: { perguntas: { num: string; texto: string }[]; cor: string }) {
+function PerguntasGrid({ perguntas, cor }: { perguntas: { num: string; texto: string; recurso?: { label: string; url: string } }[]; cor: string }) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
       {perguntas.map((p, i) => (
@@ -283,13 +283,29 @@ function PerguntasGrid({ perguntas, cor }: { perguntas: { num: string; texto: st
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: i * 0.06 }}
-          className="rounded-xl p-4"
+          className="rounded-xl p-4 flex flex-col gap-3"
           style={{ background: `${cor}0a`, border: `1px solid ${cor}22` }}
         >
           <div className="flex items-start gap-3">
             <span className="shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold" style={{ background: `${cor}22`, color: cor }}>{p.num}</span>
             <p className="text-white/80 text-sm leading-relaxed">{p.texto}</p>
           </div>
+          {p.recurso && (
+            <a
+              href={p.recurso.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 self-start rounded-lg px-3 py-1.5 text-xs font-semibold transition-all hover:scale-[1.03] hover:opacity-90"
+              style={{ background: `${cor}14`, color: cor, border: `1px solid ${cor}30` }}
+            >
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                <polyline points="15 3 21 3 21 9" />
+                <line x1="10" y1="14" x2="21" y2="3" />
+              </svg>
+              {p.recurso.label}
+            </a>
+          )}
         </motion.div>
       ))}
     </div>
@@ -556,7 +572,7 @@ function GabaritoSection({
   aviso: string;
   itens: GabaritoItem[];
   notas: NotaRodape[];
-  perguntas: { num: string; texto: string }[];
+  perguntas: { num: string; texto: string; recurso?: { label: string; url: string } }[];
 }) {
   const [open, setOpen] = useState(false);
   const [openItem, setOpenItem] = useState<string | null>(null);
