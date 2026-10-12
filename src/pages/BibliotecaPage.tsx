@@ -111,7 +111,6 @@ export default function BibliotecaPage() {
   const pt = lang === 'pt';
   const SECAO_PRINCIPAL = getSecaoPrincipal(pt);
   const SECAO_AREAS = getSecaoAreas(pt);
-  const [destaque, ...restCards] = SECAO_PRINCIPAL;
 
   return (
     <div className="min-h-screen relative">
@@ -146,59 +145,9 @@ export default function BibliotecaPage() {
             </p>
           </motion.div>
 
-          {/* ── card de destaque ── */}
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1, duration: 0.5 }}
-            className="mb-5"
-          >
-            <Link
-              to={destaque.path}
-              className="group relative flex flex-col sm:flex-row items-start sm:items-center gap-6 p-7 sm:p-8 rounded-3xl overflow-hidden hover:scale-[1.015] active:scale-[0.99] transition-all duration-300"
-              style={{
-                background: `linear-gradient(135deg, #1a0e05 0%, #130b03 60%, #0c0a08 100%)`,
-                border: `1.5px solid ${destaque.accent}45`,
-                boxShadow: `0 0 40px ${destaque.accent}15`,
-              }}
-            >
-              {/* glow corner */}
-              <div className="absolute top-0 right-0 w-64 h-64 rounded-full pointer-events-none"
-                style={{ background: `radial-gradient(circle, ${destaque.accent}12 0%, transparent 65%)`, transform: 'translate(30%,-30%)' }} />
-
-              <div className="flex items-center gap-5 shrink-0">
-                <div className="p-4 rounded-2xl" style={{ background: `${destaque.accent}18`, border: `1.5px solid ${destaque.accent}40` }}>
-                  <GraduationCap className="w-8 h-8" style={{ color: destaque.accent }} strokeWidth={1.5} />
-                </div>
-                <span className="text-xs font-black uppercase tracking-widest px-3 py-1 rounded-full sm:hidden"
-                  style={{ color: destaque.accent, background: `${destaque.accent}18`, border: `1px solid ${destaque.accent}35` }}>
-                  {destaque.badge}
-                </span>
-              </div>
-
-              <div className="flex-1 min-w-0">
-                <div className="flex flex-wrap items-center gap-3 mb-2">
-                  <h2 className="text-white font-black text-xl sm:text-2xl leading-tight">{destaque.label}</h2>
-                  <span className="hidden sm:inline text-xs font-black uppercase tracking-widest px-3 py-1 rounded-full"
-                    style={{ color: destaque.accent, background: `${destaque.accent}18`, border: `1px solid ${destaque.accent}35` }}>
-                    {destaque.badge}
-                  </span>
-                </div>
-                <p className="text-white/50 text-sm sm:text-base leading-relaxed max-w-2xl">{destaque.descricao}</p>
-              </div>
-
-              <div className="flex items-center gap-2 shrink-0" style={{ color: destaque.accent }}>
-                <span className="text-xs font-black uppercase tracking-widest hidden sm:block opacity-0 group-hover:opacity-100 transition-opacity">
-                  {pt ? 'Acessar' : 'Open'}
-                </span>
-                <ChevronRight className="w-5 h-5 -translate-x-1 group-hover:translate-x-0 transition-transform duration-200" />
-              </div>
-            </Link>
-          </motion.div>
-
-          {/* ── demais cards ── */}
+          {/* ── todos os cards — mesmo design ── */}
           <div className="mb-6">
-            <div className="flex items-center gap-4 mb-6 mt-12">
+            <div className="flex items-center gap-4 mb-8">
               <div className="w-1 h-6 rounded-full bg-brand-blue" style={{ boxShadow: '0 0 10px #00d4ff80' }} />
               <h2 className="font-display font-black text-sm uppercase tracking-widest text-brand-blue">
                 {pt ? 'Coleções' : 'Collections'}
@@ -207,31 +156,33 @@ export default function BibliotecaPage() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
-              {restCards.map((item, i) => {
+              {SECAO_PRINCIPAL.map((item, i) => {
                 const Icone = item.icon;
                 return (
                   <motion.div
                     key={item.path}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.18 + i * 0.07, duration: 0.4 }}
+                    transition={{ delay: 0.1 + i * 0.07, duration: 0.4 }}
                   >
                     <Link
                       to={item.path}
-                      className={`group flex flex-col justify-between p-6 sm:p-7 rounded-2xl sm:rounded-3xl bg-gradient-to-br ${item.cor} border border-white/10 hover:border-white/25 hover:scale-[1.02] hover:shadow-2xl active:scale-[0.98] transition-all duration-300 h-full min-h-[190px]`}
+                      className={`group relative flex flex-col justify-between p-6 sm:p-7 rounded-2xl sm:rounded-3xl bg-gradient-to-br ${item.cor} border hover:scale-[1.02] hover:shadow-2xl active:scale-[0.98] transition-all duration-300 h-full min-h-[200px] overflow-hidden`}
+                      style={{ borderColor: i === 0 ? `${item.accent}45` : 'rgba(255,255,255,0.10)' }}
                     >
+                      {/* subtle corner glow on first card */}
+                      {i === 0 && (
+                        <div className="absolute top-0 right-0 w-48 h-48 rounded-full pointer-events-none"
+                          style={{ background: `radial-gradient(circle, ${item.accent}14 0%, transparent 65%)`, transform: 'translate(25%,-25%)' }} />
+                      )}
+
                       <div className="flex items-start justify-between mb-5">
-                        <div
-                          className="p-3 rounded-xl"
-                          style={{ background: item.accent + '18', border: `1px solid ${item.accent}30` }}
-                        >
+                        <div className="p-3 rounded-xl" style={{ background: item.accent + '18', border: `1px solid ${item.accent}30` }}>
                           <Icone className="w-6 h-6" style={{ color: item.accent }} strokeWidth={1.5} />
                         </div>
                         {item.badge && (
-                          <span
-                            className="text-[8px] font-black uppercase tracking-widest px-2 py-0.5 rounded-full"
-                            style={{ color: item.accent, background: item.accent + '18', border: `1px solid ${item.accent}30` }}
-                          >
+                          <span className="text-[8px] font-black uppercase tracking-widest px-2 py-0.5 rounded-full"
+                            style={{ color: item.accent, background: item.accent + '18', border: `1px solid ${item.accent}30` }}>
                             {item.badge}
                           </span>
                         )}
