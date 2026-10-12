@@ -365,18 +365,39 @@ function MemorizarBox({ texto, ref: r, cor }: { texto: string; ref: string; cor:
   );
 }
 
+/* livros com apenas 1 capítulo — a referência "Jd 3" significa Jd 1.3 */
+const SINGLE_CHAP = ['ob', 'fm', '2jo', '3jo', 'jd'];
+
+function refToUrl(ref: string): string {
+  const base = 'https://www.bibliaonline.com.br/ara';
+  const norm = ref.trim().replace(/[–—]/g, '-');
+  const sp = norm.lastIndexOf(' ');
+  if (sp === -1) return base;
+  const book = norm.slice(0, sp).toLowerCase().replace(/\s/g, '');
+  const cv = norm.slice(sp + 1);
+  if (cv.includes('.')) {
+    const [chap, verseRange] = cv.split('.');
+    const verseNum = verseRange.split('-')[0];
+    return `${base}/${book}/${chap}/${verseNum}`;
+  }
+  if (SINGLE_CHAP.includes(book)) {
+    return `${base}/${book}/1/${cv.split('-')[0]}`;
+  }
+  return `${base}/${book}/${cv}/1`;
+}
+
 function TextosProva({ items, cor }: { items: string[]; cor: string }) {
   return (
     <div className="flex flex-wrap gap-2">
       {items.map(t => (
         <a
           key={t}
-          href={`https://www.biblegateway.com/passage/?search=${encodeURIComponent(t)}&version=ARA`}
+          href={refToUrl(t)}
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-semibold transition-all hover:scale-105 hover:opacity-90"
           style={{ background: `${cor}18`, color: cor, border: `1px solid ${cor}40` }}
-          title={`Abrir ${t} na Bíblia online (ARA)`}
+          title={`Ler ${t} — Bíblia Online ARA`}
         >
           <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ opacity: 0.7 }}>
             <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
