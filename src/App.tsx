@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import React from 'react';
 import Home from './pages/Home';
 import Method from './pages/Method';
@@ -56,6 +56,13 @@ import LoginPage from './pages/LoginPage';
 import ProtectedRoute from './components/ProtectedRoute';
 import { AuthProvider } from './contexts/AuthContext';
 
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  React.useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
+  return null;
+}
+
 class ErrorBoundary extends React.Component<
   { children: React.ReactNode },
   { hasError: boolean; msg: string }
@@ -90,6 +97,7 @@ export default function App() {
   return (
     <AuthProvider>
       <Router>
+        <ScrollToTop />
         <ErrorBoundary>
         <Watermark />
         <Routes>
