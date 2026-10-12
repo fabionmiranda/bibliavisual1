@@ -389,11 +389,72 @@ function EncontroSection({ enc, textos, confTexto, mostrarTabela }: {
   );
 }
 
+/* ─── chapter nav bar ───────────────────────────────────────────────────── */
+
+function ChapterNav({ onPrev, onNext, compact }: { onPrev: () => void; onNext: () => void; compact?: boolean }) {
+  return (
+    <div className={`flex items-center justify-between gap-3 ${compact ? 'py-3 px-4' : 'py-4 px-0'}`}>
+      <button
+        onClick={onPrev}
+        className="group flex items-center gap-2 rounded-xl px-4 py-2 transition-all hover:scale-105"
+        style={{ background: `${GOLD}0a`, border: `1px solid ${GOLD}20` }}
+      >
+        <motion.span
+          animate={{ x: [0, -3, 0] }}
+          transition={{ duration: 2, repeat: Infinity }}
+          style={{ color: GOLD }}
+          className="text-base"
+        >←</motion.span>
+        <div className="text-left hidden sm:block">
+          <p className="text-xs font-bold uppercase tracking-wider leading-none" style={{ color: `${GOLD}70` }}>Anterior</p>
+          <p className="text-xs text-white/60 mt-0.5">Credos e Confissões</p>
+        </div>
+        <span className="text-xs text-white/50 sm:hidden">Anterior</span>
+      </button>
+
+      {/* chapter dots */}
+      <div className="flex items-center gap-1.5">
+        {Array.from({ length: 18 }, (_, i) => (
+          <div
+            key={i}
+            className="rounded-full transition-all"
+            style={{
+              width: i === 0 ? 20 : 6,
+              height: 6,
+              background: i === 0 ? GOLD : `${GOLD}28`,
+            }}
+          />
+        ))}
+      </div>
+
+      <button
+        onClick={onNext}
+        className="group flex items-center gap-2 rounded-xl px-4 py-2 transition-all hover:scale-105"
+        style={{ background: `${GOLD}0a`, border: `1px solid ${GOLD}20` }}
+      >
+        <div className="text-right hidden sm:block">
+          <p className="text-xs font-bold uppercase tracking-wider leading-none" style={{ color: `${GOLD}70` }}>Próximo</p>
+          <p className="text-xs text-white/60 mt-0.5">Cap. II — Deus e a Trindade</p>
+        </div>
+        <span className="text-xs text-white/50 sm:hidden">Próximo</span>
+        <motion.span
+          animate={{ x: [0, 3, 0] }}
+          transition={{ duration: 2, repeat: Infinity }}
+          style={{ color: GOLD }}
+          className="text-base"
+        >→</motion.span>
+      </button>
+    </div>
+  );
+}
+
 /* ─── page ──────────────────────────────────────────────────────────────── */
 
 export default function DiscipuladoConfessionalCap1Page() {
   const navigate = useNavigate();
   const [tab, setTab] = useState<1 | 2 | 3>(1);
+  const goBack = () => navigate('/teologia/credos');
+  const goNext = () => navigate('/discipulado/confessional/cap2');
 
   return (
     <div className="min-h-screen flex flex-col" style={{ background: BG, color: '#e2e8f0' }}>
@@ -474,6 +535,11 @@ export default function DiscipuladoConfessionalCap1Page() {
         </div>
       </div>
 
+      {/* top nav */}
+      <div className="max-w-4xl mx-auto w-full px-4" style={{ borderBottom: '1px solid #ffffff08' }}>
+        <ChapterNav onPrev={goBack} onNext={goNext} compact />
+      </div>
+
       {/* content */}
       <main className="flex-1 max-w-4xl mx-auto w-full px-4 py-10">
 
@@ -520,51 +586,17 @@ export default function DiscipuladoConfessionalCap1Page() {
           </ul>
         </motion.section>
 
-        {/* chapter navigation */}
+        {/* chapter navigation bottom */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-8 flex items-stretch gap-4"
+          className="mt-8 rounded-2xl px-2"
+          style={{ background: '#0b1530', border: '1px solid #ffffff0a' }}
         >
-          {/* prev: back to confissão */}
-          <button
-            onClick={() => navigate('/teologia/credos')}
-            className="flex-1 rounded-2xl p-5 flex items-center gap-4 transition-all hover:scale-[1.02]"
-            style={{ background: `${GOLD}08`, border: `1px solid ${GOLD}25`, cursor: 'pointer' }}
-          >
-            <motion.span
-              animate={{ x: [0, -5, 0] }}
-              transition={{ duration: 1.8, repeat: Infinity }}
-              className="text-2xl shrink-0"
-              style={{ color: GOLD }}
-            >←</motion.span>
-            <div className="text-left">
-              <p className="text-xs font-bold uppercase tracking-widest mb-1" style={{ color: `${GOLD}80` }}>Voltar</p>
-              <p className="text-sm font-bold text-white">Credos e Confissões</p>
-              <p className="text-xs mt-1" style={{ color: `${GOLD}70` }}>Confissão Batista de 1689</p>
-            </div>
-          </button>
-
-          {/* next: cap 2 */}
-          <button
-            onClick={() => navigate('/discipulado/confessional/cap2')}
-            className="flex-1 rounded-2xl p-5 flex items-center justify-between gap-4 transition-all hover:scale-[1.02]"
-            style={{ background: `${GOLD}10`, border: `1px solid ${GOLD}35`, cursor: 'pointer' }}
-          >
-            <div className="text-left">
-              <p className="text-xs font-bold uppercase tracking-widest mb-1" style={{ color: `${GOLD}80` }}>Próximo capítulo</p>
-              <p className="text-sm font-bold text-white">Cap. II — De Deus e da Santa Trindade</p>
-              <p className="text-xs mt-1" style={{ color: `${GOLD}70` }}>Encontros 4 a 6</p>
-            </div>
-            <motion.span
-              animate={{ x: [0, 5, 0] }}
-              transition={{ duration: 1.8, repeat: Infinity }}
-              className="text-2xl shrink-0"
-              style={{ color: GOLD }}
-            >→</motion.span>
-          </button>
+          <ChapterNav onPrev={goBack} onNext={goNext} />
         </motion.div>
+
       </main>
 
       <Footer />
