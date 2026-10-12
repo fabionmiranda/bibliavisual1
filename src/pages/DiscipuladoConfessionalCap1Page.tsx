@@ -77,27 +77,37 @@ const CONF_TEXT_1_5 = [
   {
     para: '§1',
     titulo: 'O que a Escritura é',
-    texto: 'As Escrituras Sagradas são os livros do Antigo e do Novo Testamento, dados por inspiração de Deus, e são a regra de fé e vida. Os livros do Antigo Testamento são: Gênesis, Êxodo, Levítico, Números, Deuteronômio, Josué, Juízes, Rute, 1 Samuel, 2 Samuel, 1 Reis, 2 Reis, 1 Crônicas, 2 Crônicas, Esdras, Neemias, Ester, Jó, Salmos, Provérbios, Eclesiastes, Cantares, Isaías, Jeremias, Lamentações, Ezequiel, Daniel, Oseias, Joel, Amós, Obadias, Jonas, Miqueias, Naum, Habacuque, Sofonias, Ageu, Zacarias, Malaquias. Os do Novo Testamento: Mateus, Marcos, Lucas, João, Atos, Romanos, 1 Coríntios, 2 Coríntios, Gálatas, Efésios, Filipenses, Colossenses, 1 Tessalonicenses, 2 Tessalonicenses, 1 Timóteo, 2 Timóteo, Tito, Filemom, Hebreus, Tiago, 1 Pedro, 2 Pedro, 1 João, 2 João, 3 João, Judas e Apocalipse. Todos esses livros são dados por inspiração divina, e são a regra de fé e vida.',
+    texto: (<p className="italic">
+      As Escrituras Sagradas são os livros do Antigo e do Novo Testamento, <strong style={{ color: GREEN }}>dados por inspiração de Deus</strong>, e são <strong style={{ color: GREEN }}>a regra de fé e vida</strong>. Os livros do Antigo Testamento são: Gênesis, Êxodo, Levítico, Números, Deuteronômio, Josué, Juízes, Rute, 1 Samuel, 2 Samuel, 1 Reis, 2 Reis, 1 Crônicas, 2 Crônicas, Esdras, Neemias, Ester, Jó, Salmos, Provérbios, Eclesiastes, Cantares, Isaías, Jeremias, Lamentações, Ezequiel, Daniel, Oseias, Joel, Amós, Obadias, Jonas, Miqueias, Naum, Habacuque, Sofonias, Ageu, Zacarias, Malaquias. Os do Novo Testamento: Mateus, Marcos, Lucas, João, Atos, Romanos, 1 Coríntios, 2 Coríntios, Gálatas, Efésios, Filipenses, Colossenses, 1 Tessalonicenses, 2 Tessalonicenses, 1 Timóteo, 2 Timóteo, Tito, Filemom, Hebreus, Tiago, 1 Pedro, 2 Pedro, 1 João, 2 João, 3 João, Judas e Apocalipse. Todos esses livros são dados por <strong style={{ color: GREEN }}>inspiração divina</strong>, e são a regra de fé e vida.
+    </p>),
   },
   {
     para: '§2',
     titulo: 'Os apócrifos',
-    texto: 'Os livros comumente chamados de apócrifos, não sendo de inspiração divina, não fazem parte do cânon ou regra das Escrituras, e portanto não têm autoridade sobre a Igreja de Deus, podendo ser usados somente como escritos humanos.',
+    texto: (<p className="italic">
+      Os livros comumente chamados de <strong style={{ color: GREEN }}>apócrifos</strong>, <span style={{ color: ROSE, fontWeight: 600 }}>não sendo de inspiração divina, não fazem parte do cânon</span> ou regra das Escrituras, e portanto <span style={{ color: ROSE, fontWeight: 600 }}>não têm autoridade sobre a Igreja de Deus</span>, podendo ser usados <strong style={{ color: GREEN }}>somente como escritos humanos</strong>.
+    </p>),
   },
   {
     para: '§3',
     titulo: 'A autoridade da Escritura',
-    texto: 'A autoridade das Sagradas Escrituras, em razão da qual elas devem ser cridas, não depende do testemunho de nenhum homem ou Igreja, mas somente de Deus, seu Autor, que é a própria Verdade; portanto, devem ser recebidas porque são a Palavra de Deus.',
+    texto: (<p className="italic">
+      A autoridade das Sagradas Escrituras, em razão da qual elas devem ser cridas, <span style={{ color: ROSE, fontWeight: 600 }}>não depende do testemunho de nenhum homem ou Igreja</span>, mas <strong style={{ color: GREEN }}>somente de Deus, seu Autor, que é a própria Verdade</strong>; portanto, devem ser recebidas porque são <strong style={{ color: GREEN }}>a Palavra de Deus</strong>.
+    </p>),
   },
   {
     para: '§4',
     titulo: 'O testemunho interno do Espírito',
-    texto: 'A majestade e a pureza do estilo, o consenso de todas as partes, o alcance do todo (que é dar toda a glória a Deus), a plena manifestação do único caminho de salvação do homem, e muitas outras excelências incomparáveis e toda a perfeição que nelas se encontra, constituem abundantes evidências de que são a Palavra de Deus; entretanto, o pleno reconhecimento e a certeza de que a Bíblia é a infalível Palavra de Deus e que possui autoridade divina, provêm somente da obra interior do Espírito Santo que, com a Palavra e pela Palavra, dá testemunho em nossos corações.',
+    texto: (<p className="italic">
+      A majestade e a pureza do estilo, o consenso de todas as partes, o alcance do todo (que é dar toda a glória a Deus), a plena manifestação do único caminho de salvação do homem, e muitas outras excelências incomparáveis e toda a perfeição que nelas se encontra, constituem <strong style={{ color: GREEN }}>abundantes evidências</strong> de que são a Palavra de Deus; entretanto, o pleno reconhecimento e a certeza de que a Bíblia é a infalível Palavra de Deus e que possui autoridade divina, provêm <span style={{ color: ROSE, fontWeight: 600 }}>somente</span> da <strong style={{ color: GREEN }}>obra interior do Espírito Santo</strong> que, com a Palavra e pela Palavra, <strong style={{ color: GREEN }}>dá testemunho em nossos corações</strong>.
+    </p>),
   },
   {
     para: '§5',
     titulo: 'O cânon e a Igreja',
-    texto: 'Pode-se apontar como razão adequada para nosso reconhecimento e respeito para com as Sagradas Escrituras: o testemunho da Igreja de Deus. Mas a autoridade absoluta e infalível pela qual cremos e obedecemos à Escritura repousa inteiramente sobre o fato de que ela é a Palavra de Deus.',
+    texto: (<p className="italic">
+      Pode-se apontar como <span style={{ color: GREEN, fontWeight: 600 }}>razão adequada</span> para nosso reconhecimento e respeito para com as Sagradas Escrituras: o <strong style={{ color: GREEN }}>testemunho da Igreja de Deus</strong>. Mas a <strong style={{ color: GREEN }}>autoridade absoluta e infalível</strong> pela qual cremos e obedecemos à Escritura repousa inteiramente sobre o fato de que ela é <strong style={{ color: GREEN }}>a Palavra de Deus</strong> — <span style={{ color: ROSE, fontWeight: 600 }}>não sobre o testemunho humano da Igreja</span>.
+    </p>),
   },
 ];
 
@@ -105,27 +115,37 @@ const CONF_TEXT_6_10 = [
   {
     para: '§6',
     titulo: 'A suficiência da Escritura',
-    texto: 'O conselho completo de Deus acerca de tudo necessário para sua própria glória, para a salvação, a fé e a vida do homem, está expressamente declarado na Escritura ou dela pode ser deduzido por boa e necessária consequência. Nada deve ser acrescentado à Escritura em nenhum tempo — nem por novas revelações do Espírito, nem por tradições dos homens.',
+    texto: (<p className="italic">
+      <strong style={{ color: BLUE }}>O conselho completo de Deus</strong> acerca de tudo necessário para sua própria glória, para a salvação, a fé e a vida do homem, está <strong style={{ color: BLUE }}>expressamente declarado na Escritura</strong> ou dela pode ser deduzido por <span style={{ color: BLUE, fontWeight: 600 }}>boa e necessária consequência</span>. <span style={{ color: ROSE, fontWeight: 600 }}>Nada deve ser acrescentado à Escritura em nenhum tempo</span> — nem por novas revelações do Espírito, nem por tradições dos homens.
+    </p>),
   },
   {
     para: '§7',
     titulo: 'A clareza da Escritura',
-    texto: 'Nem todas as coisas contidas na Escritura são igualmente claras em si mesmas ou igualmente claras para todos. Entretanto, as coisas que precisam ser conhecidas, cridas e obedecidas para salvação são tão claramente expostas e explicadas em algum lugar da Escritura, que não somente os eruditos, mas também os iletrados, podem alcançar um entendimento suficiente delas pelo uso regular dos meios.',
+    texto: (<p className="italic">
+      Nem todas as coisas contidas na Escritura são igualmente claras em si mesmas ou igualmente claras para todos. Entretanto, as coisas que precisam ser <strong style={{ color: BLUE }}>conhecidas, cridas e obedecidas para salvação</strong> são tão claramente expostas e explicadas em algum lugar da Escritura, que <span style={{ color: BLUE, fontWeight: 600 }}>não somente os eruditos, mas também os iletrados</span>, podem alcançar um <strong style={{ color: BLUE }}>entendimento suficiente</strong> delas pelo <span style={{ color: BLUE, fontWeight: 600 }}>uso regular dos meios</span>.
+    </p>),
   },
   {
     para: '§8',
     titulo: 'A Escritura em língua vernácula',
-    texto: 'O Antigo Testamento em hebraico e o Novo Testamento em grego, sendo imediatamente inspirados por Deus e, por sua singular providência e cuidado, preservados puros em todos os tempos, são, portanto, autênticos. Em todas as controvérsias religiosas, a Igreja deve fazer apelo à Escritura no original. Visto que nem todos têm acesso às línguas originais, têm elas o direito de ter as Escrituras traduzidas para a língua do povo de cada nação, a fim de que, com a Palavra de Deus habitando ricamente em todos, possam adorar a Deus de maneira aceitável e ter esperança por meio da paciência e da consolação das Escrituras.',
+    texto: (<p className="italic">
+      O Antigo Testamento em hebraico e o Novo Testamento em grego, sendo <strong style={{ color: BLUE }}>imediatamente inspirados por Deus</strong> e, por sua <span style={{ color: BLUE, fontWeight: 600 }}>singular providência e cuidado, preservados puros em todos os tempos</span>, são, portanto, <strong style={{ color: BLUE }}>autênticos</strong>. Em todas as controvérsias religiosas, a Igreja deve fazer apelo à Escritura no original. Visto que nem todos têm acesso às <span style={{ color: BLUE, fontWeight: 600 }}>línguas originais</span>, têm elas o direito de ter as Escrituras traduzidas para a <strong style={{ color: BLUE }}>língua do povo de cada nação</strong>, a fim de que, com a Palavra de Deus habitando ricamente em todos, possam <strong style={{ color: BLUE }}>adorar a Deus de maneira aceitável</strong> e ter esperança por meio da paciência e da consolação das Escrituras.
+    </p>),
   },
   {
     para: '§9',
     titulo: 'A Escritura interpreta a Escritura',
-    texto: 'A regra infalível de interpretação da Escritura é a própria Escritura; portanto, quando há uma questão acerca do verdadeiro e pleno sentido de qualquer lugar das Escrituras (o qual não é múltiplo, mas um só), deve-se investigar e conhecer pelos outros lugares que tratam do mesmo assunto com mais clareza.',
+    texto: (<p className="italic">
+      <strong style={{ color: BLUE }}>A regra infalível de interpretação da Escritura é a própria Escritura</strong>; portanto, quando há uma questão acerca do verdadeiro e pleno sentido de qualquer lugar das Escrituras (<span style={{ color: BLUE, fontWeight: 600 }}>o qual não é múltiplo, mas um só</span>), deve-se investigar e conhecer pelos <strong style={{ color: BLUE }}>outros lugares que tratam do mesmo assunto com mais clareza</strong>.
+    </p>),
   },
   {
     para: '§10',
     titulo: 'O juiz supremo das controvérsias',
-    texto: 'O juiz supremo pelo qual devem ser decididas todas as controvérsias religiosas, pelo qual devem ser examinados todos os decretos de concílios, as opiniões de escritores antigos, as doutrinas dos homens e as revelações particulares, e por cujo veredicto devemos nos render, é somente o Espírito Santo falando na Escritura.',
+    texto: (<p className="italic">
+      <strong style={{ color: BLUE }}>O juiz supremo</strong> pelo qual devem ser decididas todas as controvérsias religiosas, pelo qual devem ser examinados todos os <span style={{ color: ROSE, fontWeight: 600 }}>decretos de concílios, as opiniões de escritores antigos, as doutrinas dos homens e as revelações particulares</span>, e por cujo veredicto devemos nos render, é <strong style={{ color: BLUE }}>somente o Espírito Santo falando na Escritura</strong>.
+    </p>),
   },
 ];
 
@@ -137,9 +157,10 @@ const ENCONTRO1 = {
   ref_versiculo: '2 Timóteo 1.14',
   memorizar: { texto: 'Amados, embora eu estivesse com muita diligência para vos escrever acerca da nossa comum salvação, foi-me necessário escrever-vos exortando-vos a batalhar ferrenhamente pela fé que uma vez por todas foi entregue aos santos.', ref: 'Judas 3' },
   textos: ['2Tm 2.2', 'Jd 3', 'At 17.11', '1Tm 3.16', 'Rm 10.9–10'],
-  introducao: `O Novo Testamento não conhece uma fé que não possa ser enunciada. Paulo exorta Timóteo a "guardar o bom depósito" (2Tm 1.14), Judas a "batalhar pela fé entregue aos santos" (Jd 3), os beréianos a examinar as Escrituras diariamente (At 17.11). Confessar a fé não é opção devocional — é obrigação eclesial.
-
-A Confissão de Fé Batista de 1677/1689 nasceu nesse contexto: igrejas batistas particulares na Inglaterra, sob perseguição, precisavam demonstrar que sua fé era ortodoxa e bíblica. Ao modelar sua confissão sobre a de Westminster (1646), declararam continuidade com a grande tradição reformada — distinguindo-se apenas na eclesiologia e nos sacramentos.`,
+  introducao: (<>
+    <p>O Novo Testamento não conhece uma fé que não possa ser enunciada. Paulo exorta Timóteo a <strong style={{ color: GOLD }}>"guardar o bom depósito"</strong> (2Tm 1.14), Judas a <strong style={{ color: GOLD }}>"batalhar pela fé entregue aos santos"</strong> (Jd 3), os beréianos a examinar as Escrituras diariamente (At 17.11). <span style={{ color: GOLD, fontWeight: 700 }}>Confessar a fé não é opção devocional — é obrigação eclesial.</span></p>
+    <p>A <strong style={{ color: GOLD }}>Confissão de Fé Batista de 1677/1689</strong> nasceu nesse contexto: igrejas batistas particulares na Inglaterra, <span style={{ color: ROSE, fontWeight: 600 }}>sob perseguição</span>, precisavam demonstrar que sua fé era <strong style={{ color: GOLD }}>ortodoxa e bíblica</strong>. Ao modelar sua confissão sobre a de <strong style={{ color: GOLD }}>Westminster (1646)</strong>, declararam continuidade com a grande tradição reformada — distinguindo-se apenas na <span style={{ color: GOLD + 'bb', fontWeight: 600 }}>eclesiologia e nos sacramentos</span>.</p>
+  </>),
   perguntas: [
     { num: '1.1', texto: 'Por que a Igreja precisa de confissões de fé, se já tem a Bíblia?', recurso: { label: 'Por que somos confessionais — Ligonier PT', url: 'https://pt.ligonier.org/artigos/porque-somos-confessionais/' } },
     { num: '1.2', texto: 'O que significa dizer que a Escritura é "norma normans" e a confissão é "norma normata"?', recurso: { label: 'A relevância dos credos e confissões — Monergismo', url: 'https://monergismo.com/a-relevancia-dos-credos-e-confissoes-heber-carlos-de-campos/' } },
@@ -161,11 +182,11 @@ const ENCONTRO2 = {
   ref_versiculo: '2 Timóteo 3.16–17',
   memorizar: { texto: 'Toda a Escritura é inspirada por Deus e útil para o ensino, para a repreensão, para a correção, para a instrução na justiça, para que o homem de Deus seja perfeito e perfeitamente instruído para toda boa obra.', ref: '2 Timóteo 3.16–17' },
   textos: ['Sl 19.1–3', 'Rm 1.19–21', 'Hb 1.1–2', '2Tm 3.15–17', '2Pe 1.19–21', '1Ts 2.13', '1Co 2.10–14'],
-  introducao: `A pergunta que o §1 responde não é "qual versão usar" — é "por que precisamos de uma Escritura?" A resposta começa com o que Deus já revelou pela criação (Sl 19.1–3; Rm 1.19–21) — e com o que essa revelação não pode fazer: salvar. A revelação geral diz que Deus existe e é grande; não diz como ser reconciliado com ele.
-
-Por isso Deus falou "muitas vezes e de muitas maneiras" pelos profetas, e "nestes últimos dias" pelo Filho (Hb 1.1–2). Essa fala foi inspirada — Deus soprou (ἐθεόπνευστος, 2Tm 3.16) seu Espírito nos hagiógrafos, para que escrevessem não palavras humanas, mas a Palavra de Deus (2Pe 1.21; 1Ts 2.13).
-
-Os parágrafos §3–§5 tratam da autoridade: ela não vem do papa, não vem de concílio, não vem de tradição. Vem de Deus — e o Espírito Santo nos convence disso interiormente. A Igreja pode atestar; não pode conferir.`,
+  introducao: (<>
+    <p>A pergunta que o §1 responde não é "qual versão usar" — é <strong style={{ color: GREEN }}>"por que precisamos de uma Escritura?"</strong> A resposta começa com o que Deus já revelou pela criação (Sl 19.1–3; Rm 1.19–21) — e com o que essa <strong style={{ color: GREEN }}>revelação geral</strong> não pode fazer: <span style={{ color: ROSE, fontWeight: 600 }}>salvar</span>. A revelação geral diz que Deus existe e é grande; <span style={{ color: ROSE, fontWeight: 600 }}>não diz como ser reconciliado com ele</span>.</p>
+    <p>Por isso Deus falou <em>"muitas vezes e de muitas maneiras"</em> pelos profetas, e <em>"nestes últimos dias"</em> pelo Filho (Hb 1.1–2). Essa fala foi <strong style={{ color: GREEN }}>inspirada</strong> — Deus soprou (<strong style={{ color: GREEN }}>θεόπνευστος</strong>, 2Tm 3.16) seu Espírito nos hagiógrafos, para que escrevessem não palavras humanas, mas <strong style={{ color: GREEN }}>a Palavra de Deus</strong> (2Pe 1.21; 1Ts 2.13).</p>
+    <p>Os parágrafos §3–§5 tratam da <strong style={{ color: GREEN }}>autoridade</strong>: ela <span style={{ color: ROSE, fontWeight: 600 }}>não vem do papa, não vem de concílio, não vem de tradição</span>. <strong style={{ color: GREEN }}>Vem de Deus</strong> — e o Espírito Santo nos convence disso interiormente. <span style={{ color: GREEN, fontWeight: 600 }}>A Igreja pode atestar; não pode conferir.</span></p>
+  </>),
   perguntas: [
     { num: '2.1', texto: 'Qual a diferença entre revelação geral e revelação especial? Dê exemplos bíblicos.', recurso: { label: 'A autorrevelação de Deus — Ligonier PT', url: 'https://pt.ligonier.org/artigos/a-autorrevelacao-de-deus/' } },
     { num: '2.2', texto: 'O que significa "inspiração verbal plenária"? Como §1 e 2Tm 3.16 sustentam essa doutrina?', recurso: { label: 'Inspirada por Deus — Monergismo', url: 'https://monergismo.com/inspirada-por-deus/' } },
@@ -191,11 +212,11 @@ const ENCONTRO3 = {
   ref_versiculo: 'Salmo 119.130',
   memorizar: { texto: 'A exposição das tuas palavras dá luz e dá entendimento aos simples.', ref: 'Salmo 119.130' },
   textos: ['Gl 1.8–9', '2Tm 3.17', 'Sl 119.130', 'At 15.13–18'],
-  introducao: `§6 é o parágrafo mais prático do capítulo: a Escritura contém "o conselho completo de Deus" para tudo necessário. Isso tem consequências duplas — positiva e negativa. Positiva: a Escritura é suficiente; não precisa ser completada por revelação posterior nem por tradição eclesiástica. Negativa: o que não está na Escritura (expresso ou por dedução necessária) não pode ser imposto como artigo de fé.
-
-O princípio regulador do culto (§6, último parágrafo) decorre diretamente disso: se a Escritura é suficiente, então tudo que Deus quer no culto já está nela. Acrescentar elementos inventados por homens é infração à suficiência — é o que Paulo chama de "ordenamentos e ensinamentos humanos" (Cl 2.22).
-
-§7 garante que a suficiência não produz elitismo: as verdades necessárias para a salvação são claras o suficiente para que qualquer pessoa possa compreendê-las. §9 dá a regra hermenêutica: a Escritura interpreta a Escritura. §10 encerra o capítulo com a declaração mais polemicamente reformada: o juiz supremo é o Espírito falando na Escritura — não o papa, não o concílio, não o pastor.`,
+  introducao: (<>
+    <p>§6 é o parágrafo mais prático do capítulo: a Escritura contém <strong style={{ color: BLUE }}>"o conselho completo de Deus"</strong> para tudo necessário. Isso tem consequências duplas. <strong style={{ color: BLUE }}>Positiva:</strong> a Escritura é <strong style={{ color: BLUE }}>suficiente</strong> — não precisa ser completada por revelação posterior nem por tradição eclesiástica. <span style={{ color: ROSE, fontWeight: 600 }}>Negativa:</span> o que não está na Escritura (expresso ou por dedução necessária) <span style={{ color: ROSE, fontWeight: 600 }}>não pode ser imposto como artigo de fé</span>.</p>
+    <p>O <strong style={{ color: BLUE }}>princípio regulador do culto</strong> (§6, último parágrafo) decorre diretamente disso: se a Escritura é suficiente, então tudo que Deus quer no culto já está nela. <span style={{ color: ROSE, fontWeight: 600 }}>Acrescentar elementos inventados por homens é infração à suficiência</span> — é o que Paulo chama de <em>"ordenamentos e ensinamentos humanos"</em> (Cl 2.22).</p>
+    <p>§7 garante que a suficiência não produz elitismo: as verdades necessárias para a salvação são <strong style={{ color: BLUE }}>claras o suficiente para que qualquer pessoa possa compreendê-las</strong>. §9 dá a regra hermenêutica: <strong style={{ color: BLUE }}>a Escritura interpreta a Escritura</strong>. §10 encerra o capítulo com a declaração mais polemicamente reformada: <strong style={{ color: BLUE }}>o juiz supremo é o Espírito falando na Escritura</strong> — <span style={{ color: ROSE, fontWeight: 600 }}>não o papa, não o concílio, não o pastor</span>.</p>
+  </>),
   perguntas: [
     { num: '3.1', texto: 'O que significa afirmar que a Escritura contém "o conselho completo de Deus" (§6)? Que implicações isso tem para as tradições e revelações pós-bíblicas?', recurso: { label: 'O que significa Sola Scriptura — Ligonier PT', url: 'https://pt.ligonier.org/artigos/o-que-significa-sola-scriptura/' } },
     { num: '3.2', texto: 'Qual é o "princípio regulador do culto" e como ele deriva da suficiência da Escritura?', recurso: { label: 'O princípio regulador do culto — Ligonier PT', url: 'https://pt.ligonier.org/artigos/o-que-e-o-principio-regulador-do-culto/' } },
@@ -263,7 +284,7 @@ function ConfTexto({ items, cor }: { items: typeof CONF_TEXT_1_5; cor: string })
                 exit={{ height: 0, opacity: 0 }}
                 className="px-5 pb-5"
               >
-                <p className="text-white/90 leading-relaxed text-base pt-4 italic border-t" style={{ borderColor: `${cor}20` }}>{item.texto}</p>
+                <div className="text-white/90 leading-relaxed text-base pt-4 border-t" style={{ borderColor: `${cor}20` }}>{item.texto}</div>
               </motion.div>
             )}
           </AnimatePresence>
@@ -417,9 +438,7 @@ function EncontroSection({ enc, textos, confTexto, mostrarTabela }: {
         {/* introducao */}
         <div>
           <h3 className="text-sm font-extrabold uppercase tracking-widest mb-4" style={{ color: cor }}>Introdução</h3>
-          {enc.introducao.split('\n\n').map((para, i) => (
-            <p key={i} className="text-white/90 leading-relaxed text-base mb-4">{para}</p>
-          ))}
+          <div className="space-y-4 text-white/90 leading-relaxed text-base">{enc.introducao}</div>
         </div>
 
         {/* textos-prova */}
