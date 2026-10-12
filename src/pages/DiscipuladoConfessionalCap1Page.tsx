@@ -519,6 +519,43 @@ export default function DiscipuladoConfessionalCap1Page() {
             ))}
           </ul>
         </motion.section>
+
+        {/* chapter navigation */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-8 flex items-stretch gap-4"
+        >
+          {/* prev placeholder */}
+          <div className="flex-1 rounded-2xl p-5 flex items-center gap-4 opacity-30 cursor-not-allowed"
+            style={{ background: '#0b1530', border: '1px solid #ffffff12' }}>
+            <span className="text-2xl">←</span>
+            <div>
+              <p className="text-xs font-bold uppercase tracking-widest text-white/40 mb-1">Anterior</p>
+              <p className="text-sm font-bold text-white/50">— início do curso —</p>
+            </div>
+          </div>
+
+          {/* next: cap 2 */}
+          <button
+            onClick={() => navigate('/discipulado/confessional/cap2')}
+            className="flex-1 rounded-2xl p-5 flex items-center justify-between gap-4 transition-all hover:scale-[1.02]"
+            style={{ background: `${GOLD}10`, border: `1px solid ${GOLD}35`, cursor: 'pointer' }}
+          >
+            <div className="text-left">
+              <p className="text-xs font-bold uppercase tracking-widest mb-1" style={{ color: `${GOLD}80` }}>Próximo capítulo</p>
+              <p className="text-sm font-bold text-white">Cap. II — De Deus e da Santa Trindade</p>
+              <p className="text-xs mt-1" style={{ color: `${GOLD}70` }}>Encontros 4 a 6</p>
+            </div>
+            <motion.span
+              animate={{ x: [0, 5, 0] }}
+              transition={{ duration: 1.8, repeat: Infinity }}
+              className="text-2xl shrink-0"
+              style={{ color: GOLD }}
+            >→</motion.span>
+          </button>
+        </motion.div>
       </main>
 
       <Footer />
