@@ -870,7 +870,7 @@ export default function DiscipuladoConfessionalCap1Page() {
 
           <div className="mt-6 p-5 rounded-xl" style={{ background: `${GOLD}10`, border: `1px solid ${GOLD}30` }}>
             <p className="text-base text-white/85 leading-relaxed">
-              <span style={{ color: GOLD }} className="font-bold">Como usar este material:</span> Leia a introdução, os textos-prova, os textos confessionais e o glossário — depois procure responder cada pergunta por conta própria. Caso tenha dúvidas, acesse a <span style={{ color: GREEN }} className="font-semibold">ajuda</span> disponível em cada pergunta. Ao final, confira o <span style={{ color: BLUE }} className="font-semibold">gabarito</span> com as respostas orientadoras e as <span style={{ color: BLUE }} className="font-semibold">referências bibliográficas</span> para consulta posterior.
+              <span style={{ color: GOLD }} className="font-bold">Como usar este material:</span> Leia a introdução, os textos-prova, os textos confessionais e o glossário — depois procure responder cada pergunta por conta própria. Caso tenha dúvidas, acesse a <span style={{ color: GREEN }} className="font-semibold">ajuda</span> disponível em cada pergunta. Ao final, além da aplicação, confira o  <span style={{ color: BLUE }} className="font-semibold">gabarito</span> com as respostas orientadoras e as <span style={{ color: BLUE }} className="font-semibold">referências bibliográficas</span> para consulta posterior.
             </p>
           </div>
         </div>
@@ -915,7 +915,6 @@ export default function DiscipuladoConfessionalCap1Page() {
         <AnimatePresence mode="wait">
           {tab === 1 && (
             <motion.div key="enc1" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }}>
-              <VersiculoBox texto={ENCONTRO1.versiculo} ref={ENCONTRO1.ref_versiculo} cor={GOLD} />
               <EncontroSection enc={ENCONTRO1} textos={ENCONTRO1.textos} />
               <GabaritoSection
                 cor={GOLD}
@@ -930,7 +929,6 @@ export default function DiscipuladoConfessionalCap1Page() {
 
           {tab === 2 && (
             <motion.div key="enc2" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }}>
-              <VersiculoBox texto={ENCONTRO2.versiculo} ref={ENCONTRO2.ref_versiculo} cor={GREEN} />
               <EncontroSection enc={ENCONTRO2} textos={ENCONTRO2.textos} confTexto={CONF_TEXT_1_5} />
               <GabaritoSection
                 cor={GREEN}
@@ -945,7 +943,6 @@ export default function DiscipuladoConfessionalCap1Page() {
 
           {tab === 3 && (
             <motion.div key="enc3" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }}>
-              <VersiculoBox texto={ENCONTRO3.versiculo} ref={ENCONTRO3.ref_versiculo} cor={BLUE} />
               <EncontroSection enc={ENCONTRO3} textos={ENCONTRO3.textos} confTexto={CONF_TEXT_6_10} mostrarTabela />
               <GabaritoSection
                 cor={BLUE}
