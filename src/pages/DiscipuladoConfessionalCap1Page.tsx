@@ -14,6 +14,58 @@ const ORANGE = '#f97316';
 
 /* ─── data ─────────────────────────────────────────────────────────────── */
 
+const GABARITO_ENC1: { num: string; resposta: string; notas?: number[] }[] = [
+  {
+    num: '1.1',
+    resposta: 'A Bíblia é a Palavra de Deus, mas sozinha ela exige interpretação. Toda comunidade que lê a Escritura inevitavelmente articula o que crê — a confissão torna essa articulação explícita, pública e responsável. Sem uma confissão formulada, cada geração recomeça do zero e fica vulnerável a desvios que o debate teológico já resolveu. A confissão não substitui a Bíblia; ela registra o que a Igreja entendeu dela, subordinada à Escritura como norma normata.¹',
+    notas: [1],
+  },
+  {
+    num: '1.2',
+    resposta: '"Norma normans" (norma que normatiza) é a Escritura: sua autoridade é absoluta, originária e inderrogável, pois vem diretamente de Deus. "Norma normata" (norma normatizada) é a confissão: ela possui autoridade derivada, válida somente enquanto concordar com a Escritura e sujeita a correção por ela. Portanto, a confissão obedece à Bíblia; a Bíblia não obedece à confissão. Se houver conflito, a Escritura sempre prevalece.²',
+    notas: [2],
+  },
+  {
+    num: '1.3',
+    resposta: 'A distinção é soteriológica, não eclesiológica. Os Batistas Gerais (General Baptists, c. 1612) seguiam Jacob Arminius e sustentavam que Cristo morreu por todos os seres humanos — expiação geral ou universal. Os Batistas Particulares (Particular Baptists, c. 1638) seguiam a soterologia calvinista e defendiam que Cristo morreu de modo eficaz e definitivo pelos eleitos — expiação particular ou definida. Ambos concordavam no batismo de crentes por imersão; divergiam na extensão da expiação.³',
+    notas: [3],
+  },
+  {
+    num: '1.4',
+    resposta: 'As igrejas batistas de 1677 modelaram sua confissão sobre a de Westminster por três razões: (1) demonstrar que sua fé era ortodoxa e bíblica, refutando acusações de heresia dirigidas aos dissidentes; (2) mostrar concordância substancial com as igrejas reformadas e presbiterianas da Inglaterra, diferenciando-se apenas nos pontos de batismo e ecclesiologia; (3) beneficiar-se da precisão doutrinária de um documento já testado e amplamente reconhecido, adaptando-o onde necessário.⁴',
+    notas: [4],
+  },
+  {
+    num: '1.5',
+    resposta: 'Judas escreve a cristãos que estão sendo infiltrados por falsos mestres (Jd 4). A expressão "fé que uma vez por todas foi entregue aos santos" (τῇ ἅπαξ παραδοθείσῃ τοῖς ἁγίοις πίστει) indica que o conteúdo da fé cristã foi transmitido de modo definitivo, completo e irrepetível — o que se chama technicamente de "depósito da fé" (παραθήκη, 2Tm 1.14). O ἅπαξ ("uma vez por todas") exclui revelações adicionais que pretendam alterar ou suplementar esse depósito.⁵',
+    notas: [5],
+  },
+  {
+    num: '1.6',
+    resposta: 'A confissão funciona como guardrail doutrinário em pelo menos três frentes: (1) disciplina interna — define os limites do ensino aceitável na comunidade e oferece base para tratar desvios; (2) continuidade geracional — transmite o entendimento maduro da Escritura de uma geração para a seguinte, evitando que cada época repita os mesmos erros; (3) comunhão ecumênica — permite que igrejas distintas reconheçam umas às outras como igualmente comprometidas com a fé ortodoxa, sem depender apenas de acordos pessoais.⁶',
+    notas: [6],
+  },
+  {
+    num: '1.7',
+    resposta: 'Uma Igreja que nunca formalizou sua doutrina está sujeita a: (a) personalismo pastoral — a teologia torna-se o que o pastor atual crê, sem freios institucionais; (b) deriva silenciosa — sem parâmetro escrito, pequenos desvios se acumulam imperceptivelmente ao longo de décadas; (c) divisão fácil — na ausência de um padrão comum, qualquer divergência torna-se irresolvível porque não há critério objetivo de apelação; (d) vulnerabilidade ao sectarismo — movimentos heterodoxos infiltram-se com mais facilidade quando não há doutrina explícita que sirva de contraste.⁷',
+    notas: [7],
+  },
+  {
+    num: '1.8',
+    resposta: 'Resposta pessoal e congregacional — não há gabarito fechado. Os elementos a considerar: sua congregação usa alguma confissão formalmente (como norma de admissão de membros, ordenação ou ensino)? Ela é usada apenas simbolicamente, ou efetivamente orienta o ensino e a prática? Os membros a conhecem? O uso real é coerente com o que a confissão afirma? Este é o momento para auto-avaliação honesta: a confissão é norma viva ou documento decorativo?',
+  },
+];
+
+const NOTAS_RODAPE = [
+  { num: 1, ref: 'WALDRON, Samuel E. Uma exposição moderna da Confissão de Fé Batista de 1689. São Paulo: Fiel, 2014. p. 15–18.' },
+  { num: 2, ref: 'MULLER, Richard A. Dictionary of Latin and Greek Theological Terms. 2. ed. Grand Rapids: Baker Academic, 2017. p. 214–215. Verbetes: norma normans; norma normata.' },
+  { num: 3, ref: 'BEBBINGTON, David W. Baptists Through the Centuries: A History of a Global People. Waco: Baylor University Press, 2010. p. 22–27.' },
+  { num: 4, ref: 'CONFISSÃO DE FÉ BATISTA DE LONDRES DE 1689. Tradução e notas de Pro Nobis. São Paulo: Pro Nobis, 2025. Prefácio histórico, p. 7–12.' },
+  { num: 5, ref: 'MOUNCE, William D. Mounce\'s Complete Expository Dictionary of Old and New Testament Words. Grand Rapids: Zondervan, 2006. p. 283. Verbete: ἅπαξ.' },
+  { num: 6, ref: 'BAVINCK, Herman. Dogmática Reformada. São Paulo: Cultura Cristã, 2012. v. 1, p. 56–62.' },
+  { num: 7, ref: 'TRUEMAN, Carl R. The Creedal Imperative. Wheaton: Crossway, 2012. p. 47–72.' },
+];
+
 const GLOSSARIO_GERAL = [
   { termo: 'Confissão de Fé', def: 'Documento eclesiástico que articula sistematicamente as doutrinas centrais de uma tradição cristã, servindo como padrão subordinado de ensino e comunhão.' },
   { termo: 'Batistas Particulares', def: 'Batistas do século XVII que abraçaram a soterologia calvinista ("expiação particular"), distinguindo-se dos Batistas Gerais que defendiam expiação universal.' },
@@ -389,6 +441,132 @@ function EncontroSection({ enc, textos, confTexto, mostrarTabela }: {
   );
 }
 
+/* ─── gabarito ──────────────────────────────────────────────────────────── */
+
+function GabaritoEncontro1({ cor }: { cor: string }) {
+  const [open, setOpen] = useState(false);
+  const [openItem, setOpenItem] = useState<string | null>(null);
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 16 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      className="rounded-2xl overflow-hidden mt-6"
+      style={{ border: `1px solid ${cor}30` }}
+    >
+      {/* toggle header */}
+      <button
+        onClick={() => setOpen(v => !v)}
+        className="w-full flex items-center justify-between px-6 py-4 text-left transition-all"
+        style={{ background: open ? `${cor}14` : `${cor}08` }}
+      >
+        <div className="flex items-center gap-3">
+          <span className="text-lg">📋</span>
+          <div>
+            <p className="font-bold text-white text-sm">Gabarito — Encontro 1</p>
+            <p className="text-xs mt-0.5" style={{ color: `${cor}80` }}>Respostas orientadoras · Perguntas 1.1 a 1.8</p>
+          </div>
+        </div>
+        <motion.span animate={{ rotate: open ? 180 : 0 }} style={{ color: cor }} className="text-lg">▾</motion.span>
+      </button>
+
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            className="overflow-hidden"
+          >
+            <div className="px-6 pb-6 pt-2 space-y-3">
+              <p className="text-xs italic mb-4" style={{ color: `${cor}60` }}>
+                As respostas abaixo são orientadoras, não exaustivas. A pergunta 1.8 admite apenas resposta pessoal.
+              </p>
+
+              {GABARITO_ENC1.map(item => (
+                <motion.div
+                  key={item.num}
+                  layout
+                  className="rounded-xl overflow-hidden"
+                  style={{ border: `1px solid ${cor}20` }}
+                >
+                  <button
+                    onClick={() => setOpenItem(openItem === item.num ? null : item.num)}
+                    className="w-full flex items-center justify-between px-4 py-3 text-left"
+                    style={{ background: openItem === item.num ? `${cor}14` : `${cor}07` }}
+                  >
+                    <span className="text-xs font-bold px-2 py-0.5 rounded-full mr-3" style={{ background: `${cor}22`, color: cor }}>
+                      {item.num}
+                    </span>
+                    <span className="flex-1 text-white/80 text-sm truncate pr-3">
+                      {ENCONTRO1.perguntas.find(p => p.num === item.num)?.texto}
+                    </span>
+                    <motion.span animate={{ rotate: openItem === item.num ? 180 : 0 }} style={{ color: `${cor}80` }} className="text-sm shrink-0">▾</motion.span>
+                  </button>
+
+                  <AnimatePresence>
+                    {openItem === item.num && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        className="px-5 pb-4"
+                      >
+                        <p
+                          className="text-white/78 text-sm leading-relaxed pt-3"
+                          style={{ borderTop: `1px solid ${cor}18` }}
+                          dangerouslySetInnerHTML={{
+                            __html: item.notas
+                              ? item.notas.reduce(
+                                  (html, n) => html.replace(
+                                    new RegExp(`${n}(?=\\b)`),
+                                    `<sup style="color:${cor};font-weight:700">${n}</sup>`
+                                  ),
+                                  item.resposta
+                                )
+                              : item.resposta,
+                          }}
+                        />
+                        {item.notas && (
+                          <div className="mt-3 pt-3 space-y-1" style={{ borderTop: `1px solid ${cor}12` }}>
+                            {item.notas.map(n => {
+                              const nota = NOTAS_RODAPE.find(r => r.num === n);
+                              return nota ? (
+                                <p key={n} className="text-xs leading-relaxed" style={{ color: `${cor}70` }}>
+                                  <sup style={{ color: cor }} className="font-bold mr-1">{n}</sup>
+                                  {nota.ref}
+                                </p>
+                              ) : null;
+                            })}
+                          </div>
+                        )}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+              ))}
+
+              {/* all footnotes consolidated */}
+              <div className="mt-4 pt-4 rounded-xl px-4 py-3" style={{ background: `${cor}07`, border: `1px solid ${cor}15` }}>
+                <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: `${cor}60` }}>Notas de rodapé</p>
+                <ol className="space-y-1.5 list-none">
+                  {NOTAS_RODAPE.map(n => (
+                    <li key={n.num} className="text-xs leading-relaxed" style={{ color: '#ffffff55' }}>
+                      <sup style={{ color: cor }} className="font-bold mr-1">{n.num}</sup>
+                      {n.ref}
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </motion.div>
+  );
+}
+
 /* ─── chapter nav bar ───────────────────────────────────────────────────── */
 
 function ChapterNav({ onPrev, onNext, compact }: { onPrev: () => void; onNext: () => void; compact?: boolean }) {
@@ -548,6 +726,7 @@ export default function DiscipuladoConfessionalCap1Page() {
             <motion.div key="enc1" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }}>
               <VersiculoBox texto={ENCONTRO1.versiculo} ref={ENCONTRO1.ref_versiculo} cor={GOLD} />
               <EncontroSection enc={ENCONTRO1} textos={ENCONTRO1.textos} />
+              <GabaritoEncontro1 cor={GOLD} />
             </motion.div>
           )}
 
