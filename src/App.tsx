@@ -46,6 +46,7 @@ import TeologiaAulasPage from './pages/TeologiaAulasPage';
 import TeologiaArtigosPage from './pages/TeologiaArtigosPage';
 import TeologiaAreaPage from './pages/TeologiaAreaPage';
 import DiscipuladoConfessionalCap1Page from './pages/DiscipuladoConfessionalCap1Page';
+import DiscipuladoConfessionalCap2Page from './pages/DiscipuladoConfessionalCap2Page';
 import EstudosConfessionaisPage from './pages/EstudosConfessionaisPage';
 import DiscipuladoBatistaPage from './pages/DiscipuladoBatistaPage';
 import TeologiaCredosPage from './pages/TeologiaCredosPage';
@@ -173,6 +174,7 @@ export default function App() {
           <Route path="/discipulado/confessional" element={<EstudosConfessionaisPage />} />
           <Route path="/discipulado/confessional/batista" element={<DiscipuladoBatistaPage />} />
           <Route path="/discipulado/confessional/cap1" element={<DiscipuladoConfessionalCap1Page />} />
+          <Route path="/discipulado/confessional/cap2" element={<DiscipuladoConfessionalCap2Page />} />
           <Route path="/teologia/:slug" element={<TeologiaArtigoPage />} />
 
           {/* Login */}

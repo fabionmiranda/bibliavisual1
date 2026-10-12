@@ -8,7 +8,7 @@ const GOLD = '#fbbf24';
 
 const CAPITULOS = [
   { num: 1, titulo: 'Das Sagradas Escrituras', disponivel: true, path: '/discipulado/confessional/cap1' },
-  { num: 2, titulo: 'De Deus e da Santa Trindade', disponivel: false, path: '' },
+  { num: 2, titulo: 'De Deus e da Santa Trindade', disponivel: true, path: '/discipulado/confessional/cap2' },
   { num: 3, titulo: 'Do Decreto de Deus', disponivel: false, path: '' },
   { num: 4, titulo: 'Da Criação', disponivel: false, path: '' },
   { num: 5, titulo: 'Da Providência', disponivel: false, path: '' },
