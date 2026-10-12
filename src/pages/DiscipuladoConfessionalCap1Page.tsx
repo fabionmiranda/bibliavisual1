@@ -150,7 +150,7 @@ const CONF_TEXT_6_10 = [
 ];
 
 const ENCONTRO1 = {
-  titulo: 'Encontro 1',
+  titulo: 'Parte 1',
   subtitulo: 'Por que a Igreja confessa sua fé?',
   cor: GOLD,
   versiculo: 'Guardou o bom depósito por meio do Espírito Santo que habita em nós.',
@@ -175,7 +175,7 @@ const ENCONTRO1 = {
 };
 
 const ENCONTRO2 = {
-  titulo: 'Encontro 2',
+  titulo: 'Parte 2',
   subtitulo: 'A necessidade e a autoridade da Escritura (§1–5)',
   cor: GREEN,
   versiculo: 'Toda a Escritura é inspirada por Deus e útil para o ensino, para a repreensão, para a correção, para a instrução na justiça.',
@@ -205,7 +205,7 @@ const ENCONTRO2 = {
 };
 
 const ENCONTRO3 = {
-  titulo: 'Encontro 3',
+  titulo: 'Parte 3',
   subtitulo: 'A suficiência, a clareza e a supremacia da Escritura (§6–10)',
   cor: BLUE,
   versiculo: 'A exposição das tuas palavras dá luz e dá entendimento aos simples.',
@@ -838,7 +838,7 @@ export default function DiscipuladoConfessionalCap1Page() {
               Capítulo I
             </span>
             <span className="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider" style={{ background: '#ffffff10', color: '#ffffff70' }}>
-              3 Encontros
+              3 Partes
             </span>
           </div>
 
@@ -846,7 +846,7 @@ export default function DiscipuladoConfessionalCap1Page() {
             Das Sagradas Escrituras
           </h1>
           <p className="text-white/80 text-base md:text-xl max-w-2xl leading-relaxed font-medium">
-            Discipulado Confessional — Caderno do Aluno · Encontros 1 a 3
+            Discipulado Confessional — Caderno do Aluno · Partes 1 a 3
           </p>
 
           <div className="mt-6 p-5 rounded-xl" style={{ background: `${GOLD}10`, border: `1px solid ${GOLD}30` }}>
@@ -861,7 +861,7 @@ export default function DiscipuladoConfessionalCap1Page() {
       <div className="sticky top-0 z-20 px-3 py-3" style={{ background: '#080f22', borderBottom: '1px solid #ffffff12' }}>
         <div className="max-w-4xl mx-auto grid grid-cols-3 gap-2">
           {([1, 2, 3] as const).map(n => {
-            const shortLabels = ['Encontro 1', 'Encontro 2', 'Encontro 3'];
+            const shortLabels = ['Parte 1', 'Parte 2', 'Parte 3'];
             const subLabels = ['Por que confessar?', 'Autoridade §1–5', 'Suficiência §6–10'];
             const cors = [GOLD, GREEN, BLUE];
             const isActive = tab === n;
@@ -900,7 +900,7 @@ export default function DiscipuladoConfessionalCap1Page() {
               <EncontroSection enc={ENCONTRO1} textos={ENCONTRO1.textos} />
               <GabaritoSection
                 cor={GOLD}
-                titulo="Gabarito — Encontro 1"
+                titulo="Gabarito — Parte 1"
                 aviso="As respostas abaixo são orientadoras, não exaustivas. A pergunta 1.8 admite apenas resposta pessoal."
                 itens={GABARITO_ENC1}
                 notas={NOTAS_RODAPE}
@@ -915,7 +915,7 @@ export default function DiscipuladoConfessionalCap1Page() {
               <EncontroSection enc={ENCONTRO2} textos={ENCONTRO2.textos} confTexto={CONF_TEXT_1_5} />
               <GabaritoSection
                 cor={GREEN}
-                titulo="Gabarito — Encontro 2"
+                titulo="Gabarito — Parte 2"
                 aviso="As respostas abaixo são orientadoras, não exaustivas."
                 itens={GABARITO_ENC2}
                 notas={NOTAS_RODAPE_ENC2}
@@ -930,7 +930,7 @@ export default function DiscipuladoConfessionalCap1Page() {
               <EncontroSection enc={ENCONTRO3} textos={ENCONTRO3.textos} confTexto={CONF_TEXT_6_10} mostrarTabela />
               <GabaritoSection
                 cor={BLUE}
-                titulo="Gabarito — Encontro 3"
+                titulo="Gabarito — Parte 3"
                 aviso="As respostas abaixo são orientadoras, não exaustivas."
                 itens={GABARITO_ENC3}
                 notas={NOTAS_RODAPE_ENC3}
