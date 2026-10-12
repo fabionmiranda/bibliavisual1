@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import Navbar from '../components/Navbar';
@@ -155,7 +155,11 @@ const ENCONTRO1 = {
   cor: GOLD,
   versiculo: 'Guardou o bom depósito por meio do Espírito Santo que habita em nós.',
   ref_versiculo: '2 Timóteo 1.14',
-  memorizar: { texto: 'Amados, embora eu estivesse com muita diligência para vos escrever acerca da nossa comum salvação, foi-me necessário escrever-vos exortando-vos a batalhar ferrenhamente pela fé que uma vez por todas foi entregue aos santos.', ref: 'Judas 3' },
+  aplicacao: (<>
+    <p>A Confissão não é documento de museu — é <strong style={{ color: GOLD }}>instrumento pastoral vivo</strong>. Pergunte à sua congregação: a confissão que adotamos orienta nossa admissão de membros, nossa pregação e nossa disciplina, ou é apenas uma placa na parede? Se a resposta for incerta, esta Parte expôs o problema: <strong style={{ color: GOLD }}>uma Igreja sem confissão funcional</strong> tem apenas a personalidade do pastor atual como seu padrão doutrinário — e pastores mudam, envelhecem e morrem.</p>
+    <p>Na prática: <strong style={{ color: GOLD }}>ensine a confissão no culto</strong>. Leia um parágrafo por semana. Insira-a no catecismo dos novos membros. Quando surgir controvérsia doutrinária, pergunte primeiro: "O que nossa confissão diz sobre isso?" — antes de pesquisar na internet. Isso é o que significa ser uma Igreja confessional no século XXI.</p>
+    <p>Para além da congregação: a confissão é também um <strong style={{ color: GOLD }}>instrumento de unidade inter-eclesial</strong>. Ela permite que igrejas de cidades e países diferentes reconheçam umas às outras como irmãs — não por afinidade cultural, mas por compromisso doutrinário comum. Batalhe por essa fé. Ela foi entregue aos santos uma vez por todas (Jd 3).</p>
+  </>),
   textos: ['2Tm 2.2', 'Jd 3', 'At 17.11', '1Tm 3.16', 'Rm 10.9–10'],
   introducao: (<>
     <p>O Novo Testamento não conhece uma fé que não possa ser enunciada. Paulo exorta Timóteo a <strong style={{ color: GOLD }}>"guardar o bom depósito"</strong> (2Tm 1.14), Judas a <strong style={{ color: GOLD }}>"batalhar pela fé entregue aos santos"</strong> (Jd 3), os beréianos a examinar as Escrituras diariamente (At 17.11). <span style={{ color: GOLD, fontWeight: 700 }}>Confessar a fé não é opção devocional — é obrigação eclesial.</span></p>
@@ -180,7 +184,11 @@ const ENCONTRO2 = {
   cor: GREEN,
   versiculo: 'Toda a Escritura é inspirada por Deus e útil para o ensino, para a repreensão, para a correção, para a instrução na justiça.',
   ref_versiculo: '2 Timóteo 3.16–17',
-  memorizar: { texto: 'Toda a Escritura é inspirada por Deus e útil para o ensino, para a repreensão, para a correção, para a instrução na justiça, para que o homem de Deus seja perfeito e perfeitamente instruído para toda boa obra.', ref: '2 Timóteo 3.16–17' },
+  aplicacao: (<>
+    <p>Se a autoridade da Escritura vem <strong style={{ color: GREEN }}>somente de Deus</strong> e não da Igreja (§3), então a pregação que não expõe o texto bíblico está, na prática, substituindo a Palavra de Deus pela opinião do pregador. A aplicação imediata desta Parte é avaliar honestamente: <strong style={{ color: GREEN }}>a pregação da sua congregação parte do texto e retorna ao texto</strong>, ou usa o texto como pretexto para uma mensagem já decidida antes?</p>
+    <p>A doutrina da <strong style={{ color: GREEN }}>inspiração verbal plenária</strong> também muda a forma de ler a Bíblia pessoalmente. Se cada palavra foi soprada por Deus (θεόπνευστος), então a leitura bíblica não é apenas edificação emocional — é encontro com a fala do Criador. Isso exige atenção às palavras, não apenas às histórias. Cultive o hábito de ler devagar, com perguntas: <em>Por que esta palavra? Por que esta ordem? O que o autor quer dizer, não o que eu quero ouvir?</em></p>
+    <p>Quanto à autoridade da Igreja (§5): a Igreja <strong style={{ color: GREEN }}>atesta, não confere</strong> autoridade à Escritura. Isso significa que quando seu pastor, seu concílio ou sua denominação contradiz a Escritura, a Escritura prevalece. Isso não é rebeldia — é fidelidade. E o Espírito Santo, que dá testemunho interno da Palavra (§4), é quem garante que o crente possa reconhecer essa autoridade sem precisar de intermediário infalível.</p>
+  </>),
   textos: ['Sl 19.1–3', 'Rm 1.19–21', 'Hb 1.1–2', '2Tm 3.15–17', '2Pe 1.19–21', '1Ts 2.13', '1Co 2.10–14'],
   introducao: (<>
     <p>A pergunta que o §1 responde não é "qual versão usar" — é <strong style={{ color: GREEN }}>"por que precisamos de uma Escritura?"</strong> A resposta começa com o que Deus já revelou pela criação (Sl 19.1–3; Rm 1.19–21) — e com o que essa <strong style={{ color: GREEN }}>revelação geral</strong> não pode fazer: <span style={{ color: ROSE, fontWeight: 600 }}>salvar</span>. A revelação geral diz que Deus existe e é grande; <span style={{ color: ROSE, fontWeight: 600 }}>não diz como ser reconciliado com ele</span>.</p>
@@ -210,7 +218,11 @@ const ENCONTRO3 = {
   cor: BLUE,
   versiculo: 'A exposição das tuas palavras dá luz e dá entendimento aos simples.',
   ref_versiculo: 'Salmo 119.130',
-  memorizar: { texto: 'A exposição das tuas palavras dá luz e dá entendimento aos simples.', ref: 'Salmo 119.130' },
+  aplicacao: (<>
+    <p>A <strong style={{ color: BLUE }}>suficiência da Escritura</strong> (§6) tem consequências pastorais diretas que muitas igrejas evangélicas evitam enfrentar. Se a Escritura contém o conselho completo de Deus para a fé e a prática, então <strong style={{ color: BLUE }}>nenhuma técnica de gestão, psicologia popular ou "palavra profética" pode ser imposta como instrução espiritual obrigatória</strong>. A pergunta que toda liderança deve fazer sobre qualquer prática, programa ou exigência é: <em>onde a Escritura manda isso?</em> Se não há resposta, não há obrigação.</p>
+    <p>O <strong style={{ color: BLUE }}>princípio regulador do culto</strong> (§6) é a aplicação mais prática e mais esquecida desta doutrina. Ele pergunta: temos base escriturística para cada elemento do nosso culto — pregação, oração, canto, batismo, Ceia, leitura pública? Se um elemento não pode ser justificado pela Escritura, ele não deveria estar no culto. Isso não é rigidez — é respeito à suficiência de Deus.</p>
+    <p>A <strong style={{ color: BLUE }}>clareza da Escritura</strong> (§7) é uma doutrina libertadora: ela devolve a Bíblia ao povo. Você não precisa de um especialista para entender o caminho da salvação. Isso significa que <strong style={{ color: BLUE }}>a Igreja deve equipar seus membros para lerem a Bíblia</strong>, não criar dependência do pastor como intérprete exclusivo. Ofereça ferramentas de leitura bíblica, planos de leitura, grupos de estudo. O §10 fecha com o maior desafio: <strong style={{ color: BLUE }}>o juiz supremo das controvérsias é o Espírito falando na Escritura</strong> — não a tradição, não o magistério, não a experiência pessoal. Toda decisão teológica deve ser submetida a esse tribunal.</p>
+  </>),
   textos: ['Gl 1.8–9', '2Tm 3.17', 'Sl 119.130', 'At 15.13–18'],
   introducao: (<>
     <p>§6 é o parágrafo mais prático do capítulo: a Escritura contém <strong style={{ color: BLUE }}>"o conselho completo de Deus"</strong> para tudo necessário. Isso tem consequências duplas. <strong style={{ color: BLUE }}>Positiva:</strong> a Escritura é <strong style={{ color: BLUE }}>suficiente</strong> — não precisa ser completada por revelação posterior nem por tradição eclesiástica. <span style={{ color: ROSE, fontWeight: 600 }}>Negativa:</span> o que não está na Escritura (expresso ou por dedução necessária) <span style={{ color: ROSE, fontWeight: 600 }}>não pode ser imposto como artigo de fé</span>.</p>
@@ -355,12 +367,19 @@ function GlossarioCards({ items, cor }: { items: { termo: string; def: string }[
   );
 }
 
-function MemorizarBox({ texto, ref: r, cor }: { texto: string; ref: string; cor: string }) {
+function AplicacaoBox({ conteudo, cor }: { conteudo: React.ReactNode; cor: string }) {
   return (
-    <div className="rounded-xl p-5 mt-4" style={{ background: `${cor}10`, border: `2px dashed ${cor}40` }}>
-      <p className="text-sm font-extrabold uppercase tracking-widest mb-4" style={{ color: cor }}>✦ Versículo para memorizar</p>
-      <p className="text-white/95 leading-relaxed italic text-lg font-medium">"{texto}"</p>
-      <p className="mt-3 font-bold text-base" style={{ color: cor }}>— {r}</p>
+    <div className="rounded-xl overflow-hidden mt-4" style={{ border: `1px solid ${cor}35` }}>
+      <div className="flex items-center gap-2 px-5 py-3" style={{ background: `${cor}18`, borderBottom: `1px solid ${cor}25` }}>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ color: cor, flexShrink: 0 }}>
+          <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+          <path d="M12 8v4M12 16h.01" />
+        </svg>
+        <p className="text-sm font-extrabold uppercase tracking-widest" style={{ color: cor }}>Aplicação para a vida e a Igreja</p>
+      </div>
+      <div className="px-5 py-5 space-y-4 text-sm md:text-base leading-relaxed text-white/90" style={{ background: `${cor}07` }}>
+        {conteudo}
+      </div>
     </div>
   );
 }
@@ -513,8 +532,8 @@ function EncontroSection({ enc, textos, confTexto, mostrarTabela }: {
           <GlossarioCards items={enc.glossario} cor={cor} />
         </div>
 
-        {/* memorizar */}
-        <MemorizarBox texto={enc.memorizar.texto} ref={enc.memorizar.ref} cor={cor} />
+        {/* aplicacao */}
+        <AplicacaoBox conteudo={enc.aplicacao} cor={cor} />
 
       </div>
     </motion.section>
