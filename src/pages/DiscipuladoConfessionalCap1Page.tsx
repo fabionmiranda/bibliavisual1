@@ -369,7 +369,22 @@ function TextosProva({ items, cor }: { items: string[]; cor: string }) {
   return (
     <div className="flex flex-wrap gap-2">
       {items.map(t => (
-        <span key={t} className="px-3 py-1 rounded-full text-xs font-semibold" style={{ background: `${cor}18`, color: cor, border: `1px solid ${cor}35` }}>{t}</span>
+        <a
+          key={t}
+          href={`https://www.biblegateway.com/passage/?search=${encodeURIComponent(t)}&version=ARA`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-semibold transition-all hover:scale-105 hover:opacity-90"
+          style={{ background: `${cor}18`, color: cor, border: `1px solid ${cor}40` }}
+          title={`Abrir ${t} na Bíblia online (ARA)`}
+        >
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ opacity: 0.7 }}>
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+            <polyline points="15 3 21 3 21 9" />
+            <line x1="10" y1="14" x2="21" y2="3" />
+          </svg>
+          {t}
+        </a>
       ))}
     </div>
   );
@@ -831,7 +846,7 @@ export default function DiscipuladoConfessionalCap1Page() {
 
           <div className="mt-6 p-5 rounded-xl" style={{ background: `${GOLD}10`, border: `1px solid ${GOLD}30` }}>
             <p className="text-base text-white/85 leading-relaxed">
-              <span style={{ color: GOLD }} className="font-bold">Como usar este material:</span> Cada encontro tem duração de <span style={{ color: GOLD }} className="font-semibold">90 minutos</span>. Leia a introdução, os textos-prova, os textos confessionais e o glossário — depois procure responder cada pergunta por conta própria. Caso tenha dúvidas, acesse a <span style={{ color: GREEN }} className="font-semibold">ajuda</span> disponível em cada pergunta. Ao final, confira o <span style={{ color: BLUE }} className="font-semibold">gabarito</span> com as respostas orientadoras e as <span style={{ color: BLUE }} className="font-semibold">referências bibliográficas</span> para consulta posterior.
+              <span style={{ color: GOLD }} className="font-bold">Como usar este material:</span> Leia a introdução, os textos-prova, os textos confessionais e o glossário — depois procure responder cada pergunta por conta própria. Caso tenha dúvidas, acesse a <span style={{ color: GREEN }} className="font-semibold">ajuda</span> disponível em cada pergunta. Ao final, confira o <span style={{ color: BLUE }} className="font-semibold">gabarito</span> com as respostas orientadoras e as <span style={{ color: BLUE }} className="font-semibold">referências bibliográficas</span> para consulta posterior.
             </p>
           </div>
         </div>
