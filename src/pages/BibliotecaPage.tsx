@@ -16,6 +16,18 @@ const ARTIGOS_COUNT = ARTIGOS_TEOLOGIA.filter(a => a.area === 'artigos' && a.sta
 function getSecaoPrincipal(pt: boolean) {
   return [
     {
+      icon: GraduationCap,
+      label: pt ? 'Estudos Bíblicos e Confessionais' : 'Biblical & Confessional Studies',
+      descricao: pt
+        ? 'Cadernos de discipulado confessional — estudo sistemático das grandes confissões de fé com perguntas, gabaritos e referências.'
+        : 'Confessional discipleship notebooks — systematic study of the great confessions of faith with questions, answers and references.',
+      cor: 'from-orange-950 via-amber-950 to-slate-950',
+      accent: '#f97316',
+      path: '/discipulado/confessional/cap1',
+      badge: pt ? 'Novo' : 'New',
+      destaque: true,
+    },
+    {
       icon: BookMarked,
       label: pt ? 'Livros Recomendados' : 'Recommended Books',
       descricao: pt
@@ -50,14 +62,13 @@ function getSecaoPrincipal(pt: boolean) {
     },
     {
       icon: User,
-      label: pt ? 'Autores-Teologos' : 'Authors-Theologians',
+      label: pt ? 'Autores-Teólogos' : 'Authors-Theologians',
       descricao: pt
         ? 'Perfis de teólogos, pregadores e escritores que moldaram a fé cristã.'
         : 'Profiles of theologians, preachers and writers who shaped Christian faith.',
       cor: 'from-teal-950 via-cyan-950 to-slate-950',
       accent: '#2dd4bf',
       path: '/biblioteca/autores',
-      badge: pt ? '1 perfil' : '1 profile',
     },
     {
       icon: BookOpen,
@@ -80,17 +91,6 @@ function getSecaoPrincipal(pt: boolean) {
       path: '/biblioteca/guias',
       badge: pt ? 'Em breve' : 'Coming soon',
     },
-    {
-      icon: GraduationCap,
-      label: pt ? 'Estudos Bíblicos e Confessionais' : 'Biblical & Confessional Studies',
-      descricao: pt
-        ? 'Cadernos de discipulado confessional — estudo versículo a versículo das grandes confissões de fé com perguntas, gabaritos e referências.'
-        : 'Confessional discipleship notebooks — verse-by-verse study of the great confessions of faith with questions, answers and references.',
-      cor: 'from-orange-950 via-amber-950 to-slate-950',
-      accent: '#f97316',
-      path: '/discipulado/confessional/cap1',
-      badge: pt ? 'Cap. I disponível' : 'Ch. I available',
-    },
   ];
 }
 
@@ -111,56 +111,114 @@ export default function BibliotecaPage() {
   const pt = lang === 'pt';
   const SECAO_PRINCIPAL = getSecaoPrincipal(pt);
   const SECAO_AREAS = getSecaoAreas(pt);
+  const [destaque, ...restCards] = SECAO_PRINCIPAL;
 
   return (
     <div className="min-h-screen relative">
       <Navbar lang={lang} />
 
       {/* Hero */}
-      <section className="pt-28 sm:pt-36 pb-12 px-4 sm:px-6 lg:px-8">
+      <section className="relative pt-28 sm:pt-36 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        {/* background glow */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[320px] rounded-full pointer-events-none"
+          style={{ background: 'radial-gradient(ellipse, #00d4ff0a 0%, transparent 70%)', filter: 'blur(40px)' }} />
+
         <div className="max-w-7xl mx-auto">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="mb-14 sm:mb-18"
+            transition={{ duration: 0.55 }}
+            className="mb-16"
           >
-            <p className="text-[10px] font-black tracking-[0.35em] uppercase text-brand-blue mb-3">
-              {pt ? 'Recursos Teológicos' : 'Theological Resources'}
-            </p>
-            <h1 className="font-display font-black text-3xl sm:text-4xl lg:text-5xl text-white leading-tight mb-4">
+            <div className="flex items-center gap-3 mb-5">
+              <div className="w-8 h-px" style={{ background: '#00d4ff' }} />
+              <p className="text-[10px] font-black tracking-[0.35em] uppercase text-brand-blue">
+                {pt ? 'Recursos Teológicos' : 'Theological Resources'}
+              </p>
+            </div>
+            <h1 className="font-display font-black text-4xl sm:text-5xl lg:text-6xl text-white leading-[1.1] mb-5">
               {pt ? 'Biblioteca' : 'Library'}
             </h1>
-            <p className="text-white/45 text-base sm:text-lg max-w-xl leading-relaxed">
+            <p className="text-white/40 text-base sm:text-lg max-w-2xl leading-relaxed">
               {pt
-                ? 'Livros, artigos, autores e guias de leitura selecionados para aprofundar o estudo expositivo da Bíblia.'
-                : 'Books, articles, authors and reading guides selected to deepen expository Bible study.'}
+                ? 'Livros, artigos, estudos confessionais, autores e guias selecionados para aprofundar o estudo expositivo da Bíblia.'
+                : 'Books, articles, confessional studies, authors and guides selected to deepen expository Bible study.'}
             </p>
           </motion.div>
 
-          {/* Cards principais */}
+          {/* ── card de destaque ── */}
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1, duration: 0.5 }}
+            className="mb-5"
+          >
+            <Link
+              to={destaque.path}
+              className="group relative flex flex-col sm:flex-row items-start sm:items-center gap-6 p-7 sm:p-8 rounded-3xl overflow-hidden hover:scale-[1.015] active:scale-[0.99] transition-all duration-300"
+              style={{
+                background: `linear-gradient(135deg, #1a0e05 0%, #130b03 60%, #0c0a08 100%)`,
+                border: `1.5px solid ${destaque.accent}45`,
+                boxShadow: `0 0 40px ${destaque.accent}15`,
+              }}
+            >
+              {/* glow corner */}
+              <div className="absolute top-0 right-0 w-64 h-64 rounded-full pointer-events-none"
+                style={{ background: `radial-gradient(circle, ${destaque.accent}12 0%, transparent 65%)`, transform: 'translate(30%,-30%)' }} />
+
+              <div className="flex items-center gap-5 shrink-0">
+                <div className="p-4 rounded-2xl" style={{ background: `${destaque.accent}18`, border: `1.5px solid ${destaque.accent}40` }}>
+                  <GraduationCap className="w-8 h-8" style={{ color: destaque.accent }} strokeWidth={1.5} />
+                </div>
+                <span className="text-xs font-black uppercase tracking-widest px-3 py-1 rounded-full sm:hidden"
+                  style={{ color: destaque.accent, background: `${destaque.accent}18`, border: `1px solid ${destaque.accent}35` }}>
+                  {destaque.badge}
+                </span>
+              </div>
+
+              <div className="flex-1 min-w-0">
+                <div className="flex flex-wrap items-center gap-3 mb-2">
+                  <h2 className="text-white font-black text-xl sm:text-2xl leading-tight">{destaque.label}</h2>
+                  <span className="hidden sm:inline text-xs font-black uppercase tracking-widest px-3 py-1 rounded-full"
+                    style={{ color: destaque.accent, background: `${destaque.accent}18`, border: `1px solid ${destaque.accent}35` }}>
+                    {destaque.badge}
+                  </span>
+                </div>
+                <p className="text-white/50 text-sm sm:text-base leading-relaxed max-w-2xl">{destaque.descricao}</p>
+              </div>
+
+              <div className="flex items-center gap-2 shrink-0" style={{ color: destaque.accent }}>
+                <span className="text-xs font-black uppercase tracking-widest hidden sm:block opacity-0 group-hover:opacity-100 transition-opacity">
+                  {pt ? 'Acessar' : 'Open'}
+                </span>
+                <ChevronRight className="w-5 h-5 -translate-x-1 group-hover:translate-x-0 transition-transform duration-200" />
+              </div>
+            </Link>
+          </motion.div>
+
+          {/* ── demais cards ── */}
           <div className="mb-6">
-            <div className="flex items-center gap-4 mb-8">
+            <div className="flex items-center gap-4 mb-6 mt-12">
               <div className="w-1 h-6 rounded-full bg-brand-blue" style={{ boxShadow: '0 0 10px #00d4ff80' }} />
               <h2 className="font-display font-black text-sm uppercase tracking-widest text-brand-blue">
-                {pt ? 'Biblioteca' : 'Library'}
+                {pt ? 'Coleções' : 'Collections'}
               </h2>
               <div className="flex-1 h-px" style={{ background: 'linear-gradient(90deg,#00d4ff30,transparent)' }} />
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
-              {SECAO_PRINCIPAL.map((item, i) => {
+              {restCards.map((item, i) => {
                 const Icone = item.icon;
                 return (
                   <motion.div
                     key={item.path}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: i * 0.07, duration: 0.4 }}
+                    transition={{ delay: 0.18 + i * 0.07, duration: 0.4 }}
                   >
                     <Link
                       to={item.path}
-                      className={`group flex flex-col justify-between p-6 sm:p-7 rounded-2xl sm:rounded-3xl bg-gradient-to-br ${item.cor} border border-white/10 hover:border-white/25 hover:scale-[1.02] hover:shadow-2xl active:scale-[0.98] transition-all duration-300 h-full min-h-[180px]`}
+                      className={`group flex flex-col justify-between p-6 sm:p-7 rounded-2xl sm:rounded-3xl bg-gradient-to-br ${item.cor} border border-white/10 hover:border-white/25 hover:scale-[1.02] hover:shadow-2xl active:scale-[0.98] transition-all duration-300 h-full min-h-[190px]`}
                     >
                       <div className="flex items-start justify-between mb-5">
                         <div
@@ -179,7 +237,7 @@ export default function BibliotecaPage() {
                         )}
                       </div>
 
-                      <div>
+                      <div className="flex-1">
                         <h3 className="text-white font-black text-base sm:text-lg leading-tight mb-2">
                           {item.label}
                         </h3>
