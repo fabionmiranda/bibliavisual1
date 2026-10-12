@@ -441,9 +441,123 @@ function EncontroSection({ enc, textos, confTexto, mostrarTabela }: {
   );
 }
 
+const GABARITO_ENC2: { num: string; resposta: string; notas?: number[] }[] = [
+  {
+    num: '2.1',
+    resposta: 'Revelação geral é o conhecimento de Deus disponível a toda a humanidade por meio da criação (Sl 19.1–3), da consciência moral e da história. É suficiente para tornar os humanos inexcusáveis diante de Deus (Rm 1.20), mas insuficiente para revelar o caminho da salvação. Revelação especial é a comunicação direta e particular de Deus — por meio dos profetas, das Escrituras e supremamente em Jesus Cristo (Hb 1.1–2) — que torna conhecido o evangelho e a redenção.¹',
+    notas: [1],
+  },
+  {
+    num: '2.2',
+    resposta: '"Inspiração verbal plenária" significa que o Espírito Santo superintendeu os hagiógrafos de modo que cada palavra (verbal) e todo o escopo da Escritura (plenária) sejam divinamente inspirados, sem erro no que afirmam. O §1 da Confissão afirma que todos os livros foram "dados por inspiração divina" e são "regra de fé e vida". 2Tm 3.16 usa θεόπνευστος (theopneustos) — literalmente "soprado por Deus" —, indicando que o produto (o texto) é de origem divina, não apenas os autores.²',
+    notas: [2],
+  },
+  {
+    num: '2.3',
+    resposta: 'Os apócrifos (Tobias, Judite, 1–2 Macabeus, Sabedoria, Sirácides, Baruque) foram excluídos porque: (1) nunca foram reconhecidos pelos judeus como parte do cânon hebraico; (2) o próprio Jesus e os apóstolos nunca os citam como Escritura; (3) possuem inconsistências históricas e doutrinas não encontradas nas Escrituras canônicas (ex.: orações pelos mortos); (4) a Igreja primitiva oriental e a tradição reformada seguiram o cânon hebraico. O §2 afirma que os apócrifos "não sendo de inspiração divina, não fazem parte do cânon".³',
+    notas: [3],
+  },
+  {
+    num: '2.4',
+    resposta: 'Segundo §3, a autoridade da Escritura vem "somente de Deus, seu Autor, que é a própria Verdade". Ela não pode vir da Igreja porque isso inverteria a relação: a Igreja é criada pela Palavra, não a Palavra pela Igreja. Se a Igreja conferisse autoridade à Escritura, ela seria superior à Bíblia — o que implicaria que suas decisões adicionais teriam igual ou maior peso. A Reforma corrigiu esse erro romano ao afirmar que a Igreja apenas reconhece (não cria) a autoridade da Escritura.⁴',
+    notas: [4],
+  },
+  {
+    num: '2.5',
+    resposta: 'O testimonium Spiritus Sancti internum (testemunho interno do Espírito Santo) é a obra subjetiva do Espírito que convence o crente, no ato da leitura, de que a Escritura é genuinamente a Palavra de Deus. Ele não contradiz as evidências racionais (beleza literária, coerência interna, cumprimento profético, impacto histórico) — mencionadas no §4 como "abundantes evidências" —, mas vai além delas: produz uma certeza plena que nenhum argumento racional sozinho consegue gerar, pois o homem natural não recebe as coisas do Espírito de Deus (1Co 2.14).⁵',
+    notas: [5],
+  },
+  {
+    num: '2.6',
+    resposta: '1Co 2.10–14 ensina que as verdades espirituais são escrutadas pelo Espírito e reveladas aos que o possuem. O "homem natural" (ψυχικὸς ἄνθρωπος) não as recebe porque lhe parecem loucura — ele não tem o instrumental hermenêutico necessário. Portanto, para que a Escritura seja entendida como Palavra de Deus é necessário que o Espírito Santo opere internamente no leitor, iluminando o entendimento e inclinando a vontade para receber a Palavra com fé. Isso não elimina o uso da razão, mas a situa em sua devida ordem: instrumentalmente subordinada à iluminação do Espírito.⁶',
+    notas: [6],
+  },
+  {
+    num: '2.7',
+    resposta: 'O §5 distingue dois planos: o histórico-apologético e o teológico-normativo. Historicamente, o testemunho da Igreja — sua preservação, uso litúrgico e canon estabelecido — é "razão adequada" para dar crédito à Escritura; não é irracional crer com base nesse testemunho. Porém teologicamente, essa razão não é "autoridade infalível": a Igreja pode errar, e seu testemunho é humano. A autoridade infalível repousa inteiramente sobre o fato de a Escritura ser a Palavra do Deus infalível — o que o Espírito confirma internamente ao crente.⁷',
+    notas: [7],
+  },
+];
+
+const NOTAS_RODAPE_ENC2 = [
+  { num: 1, ref: 'BAVINCK, Herman. Dogmática Reformada. São Paulo: Cultura Cristã, 2012. v. 1, p. 303–340. (Revelação geral e especial).' },
+  { num: 2, ref: 'GRUDEM, Wayne. Teologia Sistemática. São Paulo: Vida Nova, 1999. p. 73–86. (Inspiração verbal plenária e inerrância).' },
+  { num: 3, ref: 'BRUCE, F. F. O Cânon das Escrituras. São Paulo: Hagnos, 2011. p. 68–93. (Os apócrifos e o cânon hebraico).' },
+  { num: 4, ref: 'CALVINO, João. Institutas da Religião Cristã. São Paulo: UNESP/Cultura Cristã, 2008. I.7.1–4. (A Escritura se autentifica; a Igreja não lhe confere autoridade).' },
+  { num: 5, ref: 'CALVINO, João. Institutas da Religião Cristã. São Paulo: UNESP/Cultura Cristã, 2008. I.7.4–5. (Testimonium Spiritus Sancti internum).' },
+  { num: 6, ref: 'FEE, Gordon D. The First Epistle to the Corinthians. Grand Rapids: Eerdmans, 1987. p. 103–115. (Comentário a 1Co 2.10–14).' },
+  { num: 7, ref: 'WALDRON, Samuel E. Uma exposição moderna da Confissão de Fé Batista de 1689. São Paulo: Fiel, 2014. p. 25–30. (Autoridade da Escritura e testemunho da Igreja).' },
+];
+
+const GABARITO_ENC3: { num: string; resposta: string; notas?: number[] }[] = [
+  {
+    num: '3.1',
+    resposta: 'Afirmar que a Escritura contém "o conselho completo de Deus" (§6, At 20.27) significa que tudo necessário para a salvação, para a fé e para a prática cristã está nela — expressamente declarado ou deduzido por boa e necessária consequência. As implicações são duplas: (1) nenhuma tradição eclesiástica, decreto conciliar ou revelação pós-apostólica pode ser imposto como artigo de fé se não tiver base escriturística; (2) nenhum novo "evangelho" — mesmo anunciado por um anjo (Gl 1.8) — pode suplementar o que foi entregue.¹',
+    notas: [1],
+  },
+  {
+    num: '3.2',
+    resposta: 'O princípio regulador do culto (Regulative Principle of Worship) afirma que somente o que Deus ordenou na Escritura deve compor o culto público. Deriva diretamente da suficiência: se a Escritura é suficiente para ensinar toda boa obra (2Tm 3.17), então o que Deus quer no culto já foi revelado — acrescentar elementos humanos não prescritos é presumir que a Escritura é insuficiente. Difere do princípio normativo (usado por luteranos e anglicanos), que permite o que a Escritura não proíbe.²',
+    notas: [2],
+  },
+  {
+    num: '3.3',
+    resposta: 'Gálatas 1.8–9 acrescenta a dimensão da irreversibilidade da suficiência: mesmo que um anjo do céu pregasse um evangelho diferente, deveria ser anátema (ἀνάθεμα). Paulo repete a maldição duas vezes para enfatizar: não há exceção nem por autoridade angelical. Isso implica que o evangelho entregue aos apóstolos é normativo e final — não está aberto a revisões. A linguagem forte revela que desvios do evangelho revelado não são meras diferenças de ênfase, mas apostasia em potencial.³',
+    notas: [3],
+  },
+  {
+    num: '3.4',
+    resposta: 'A perspicuidade (§7) não afirma que toda a Bíblia é igualmente clara em todos os sentidos. Ela afirma especificamente que "as coisas que precisam ser conhecidas, cridas e obedecidas para salvação" são suficientemente claras para que qualquer pessoa — erudita ou iletrada — possa compreendê-las "pelo uso regular dos meios". Passagens difíceis existem (2Pe 3.16); a doutrina da perspicuidade não as nega — garante apenas que o caminho da salvação é acessível sem necessidade de magistério infalível ou esoterismo teológico.⁴',
+    notas: [4],
+  },
+  {
+    num: '3.5',
+    resposta: 'O §8 justifica a tradução da Bíblia para as línguas vernáculas com base em dois princípios: (1) a Escritura é para todo o povo de Deus — "nem todos têm acesso às línguas originais" e "têm o direito de ter as Escrituras traduzidas"; (2) o objetivo é que "a Palavra de Deus habite ricamente em todos" (Cl 3.16). O princípio teológico subjacente é a suficiência da Escritura aliada à clareza: se a Bíblia é suficientemente clara para a salvação, ela precisa estar acessível em forma inteligível — o que exige tradução.⁵',
+    notas: [5],
+  },
+  {
+    num: '3.6',
+    resposta: '"A Escritura interpreta a Escritura" (analogia fidei, §9) significa que o sentido correto de uma passagem difícil deve ser buscado em outras passagens mais claras que tratem do mesmo assunto. Aplicação prática: ao interpretar Romanos 9 (eleição), busca-se luz em João 6.37–44, Efésios 1.4–5, 2Timóteo 1.9; ao interpretar Tiago 2.24 ("o homem é justificado pelas obras"), busca-se harmonia com Romanos 3.28 — Tiago fala de evidência externa de fé viva, Paulo de base forense da justificação. O método evita provar doutrinas por textos isolados.⁶',
+    notas: [6],
+  },
+  {
+    num: '3.7',
+    resposta: 'Para católicos romanos, §10 é controverso porque nega ao papa e aos concílios o papel de intérprete infalível da Escritura — o que a Igreja Católica afirma desde Trento (1546) e o Vaticano I (1870). Para carismáticos que enfatizam "revelação profética", §10 é controverso porque subordina toda revelação particular ao veredicto da Escritura — o que limita a autoridade de "palavras proféticas" modernas. Em ambos os casos, o ponto é o mesmo: o Espírito fala na Escritura, não além dela, não por autoridade institucional.⁷',
+    notas: [7],
+  },
+  {
+    num: '3.8',
+    resposta: 'Os três princípios são logicamente interdependentes, não independentes. A suficiência (§6) afirma que a Escritura já contém tudo necessário — o que pressupõe que ela pode ser entendida (perspicuidade, §7). A perspicuidade afirma que a Escritura é clara o suficiente para ser lida diretamente — o que pressupõe que ela é a fonte final de autoridade, sem necessidade de magistério humano intermediário (supremacia, §10). A supremacia (§10) afirma que o Espírito fala na Escritura — o que pressupõe que a Escritura é suficiente e inteligível. Retirar um princípio desfaz os outros.⁸',
+    notas: [8],
+  },
+];
+
+const NOTAS_RODAPE_ENC3 = [
+  { num: 1, ref: 'WALDRON, Samuel E. Uma exposição moderna da Confissão de Fé Batista de 1689. São Paulo: Fiel, 2014. p. 31–36. (Suficiência e o conselho completo de Deus).' },
+  { num: 2, ref: 'CHAPELL, Bryan. Christ-Centered Worship: Letting the Gospel Shape Our Practice. Grand Rapids: Baker Academic, 2009. p. 83–101. (Princípio regulador do culto).' },
+  { num: 3, ref: 'SCHREINER, Thomas R. Galatians. Grand Rapids: Zondervan, 2010. p. 82–89. (Comentário a Gl 1.8–9 e a irrevogabilidade do evangelho).' },
+  { num: 4, ref: 'GRUDEM, Wayne. Teologia Sistemática. São Paulo: Vida Nova, 1999. p. 107–113. (A clareza da Escritura / perspicuidade).' },
+  { num: 5, ref: 'BRUCE, F. F. A Bíblia e o Mundo Antigo. São Paulo: Vida, 2004. p. 156–172. (Tradução e acessibilidade das Escrituras).' },
+  { num: 6, ref: 'BERKHOF, Louis. Princípios de Interpretação Bíblica. São Paulo: Cultura Cristã, 2007. p. 163–172. (Analogia da fé e regra hermenêutica).' },
+  { num: 7, ref: 'SPROUL, R. C. Sola Scriptura: The Protestant Position on the Bible. Orlando: Reformation Trust, 2019. p. 43–68. (Escritura vs. magistério e revelação contínua).' },
+  { num: 8, ref: 'BAVINCK, Herman. Dogmática Reformada. São Paulo: Cultura Cristã, 2012. v. 1, p. 549–570. (Suficiência, clareza e autoridade da Escritura como sistema coerente).' },
+];
+
 /* ─── gabarito ──────────────────────────────────────────────────────────── */
 
-function GabaritoEncontro1({ cor }: { cor: string }) {
+type GabaritoItem = { num: string; resposta: string; notas?: number[] };
+type NotaRodape = { num: number; ref: string };
+
+function GabaritoSection({
+  cor, titulo, aviso, itens, notas, perguntas,
+}: {
+  cor: string;
+  titulo: string;
+  aviso: string;
+  itens: GabaritoItem[];
+  notas: NotaRodape[];
+  perguntas: { num: string; texto: string }[];
+}) {
   const [open, setOpen] = useState(false);
   const [openItem, setOpenItem] = useState<string | null>(null);
 
@@ -455,7 +569,6 @@ function GabaritoEncontro1({ cor }: { cor: string }) {
       className="rounded-2xl overflow-hidden mt-6"
       style={{ border: `1px solid ${cor}30` }}
     >
-      {/* toggle header */}
       <button
         onClick={() => setOpen(v => !v)}
         className="w-full flex items-center justify-between px-6 py-4 text-left transition-all"
@@ -464,8 +577,8 @@ function GabaritoEncontro1({ cor }: { cor: string }) {
         <div className="flex items-center gap-3">
           <span className="text-lg">📋</span>
           <div>
-            <p className="font-bold text-white text-sm">Gabarito — Encontro 1</p>
-            <p className="text-xs mt-0.5" style={{ color: `${cor}80` }}>Respostas orientadoras · Perguntas 1.1 a 1.8</p>
+            <p className="font-bold text-white text-sm">{titulo}</p>
+            <p className="text-xs mt-0.5" style={{ color: `${cor}80` }}>Respostas orientadoras</p>
           </div>
         </div>
         <motion.span animate={{ rotate: open ? 180 : 0 }} style={{ color: cor }} className="text-lg">▾</motion.span>
@@ -480,27 +593,20 @@ function GabaritoEncontro1({ cor }: { cor: string }) {
             className="overflow-hidden"
           >
             <div className="px-6 pb-6 pt-2 space-y-3">
-              <p className="text-xs italic mb-4" style={{ color: `${cor}60` }}>
-                As respostas abaixo são orientadoras, não exaustivas. A pergunta 1.8 admite apenas resposta pessoal.
-              </p>
+              <p className="text-xs italic mb-4" style={{ color: `${cor}60` }}>{aviso}</p>
 
-              {GABARITO_ENC1.map(item => (
-                <motion.div
-                  key={item.num}
-                  layout
-                  className="rounded-xl overflow-hidden"
-                  style={{ border: `1px solid ${cor}20` }}
-                >
+              {itens.map(item => (
+                <motion.div key={item.num} layout className="rounded-xl overflow-hidden" style={{ border: `1px solid ${cor}20` }}>
                   <button
                     onClick={() => setOpenItem(openItem === item.num ? null : item.num)}
                     className="w-full flex items-center justify-between px-4 py-3 text-left"
                     style={{ background: openItem === item.num ? `${cor}14` : `${cor}07` }}
                   >
-                    <span className="text-xs font-bold px-2 py-0.5 rounded-full mr-3" style={{ background: `${cor}22`, color: cor }}>
+                    <span className="text-xs font-bold px-2 py-0.5 rounded-full mr-3 shrink-0" style={{ background: `${cor}22`, color: cor }}>
                       {item.num}
                     </span>
                     <span className="flex-1 text-white/80 text-sm truncate pr-3">
-                      {ENCONTRO1.perguntas.find(p => p.num === item.num)?.texto}
+                      {perguntas.find(p => p.num === item.num)?.texto}
                     </span>
                     <motion.span animate={{ rotate: openItem === item.num ? 180 : 0 }} style={{ color: `${cor}80` }} className="text-sm shrink-0">▾</motion.span>
                   </button>
@@ -531,7 +637,7 @@ function GabaritoEncontro1({ cor }: { cor: string }) {
                         {item.notas && (
                           <div className="mt-3 pt-3 space-y-1" style={{ borderTop: `1px solid ${cor}12` }}>
                             {item.notas.map(n => {
-                              const nota = NOTAS_RODAPE.find(r => r.num === n);
+                              const nota = notas.find(r => r.num === n);
                               return nota ? (
                                 <p key={n} className="text-xs leading-relaxed" style={{ color: `${cor}70` }}>
                                   <sup style={{ color: cor }} className="font-bold mr-1">{n}</sup>
@@ -547,11 +653,10 @@ function GabaritoEncontro1({ cor }: { cor: string }) {
                 </motion.div>
               ))}
 
-              {/* all footnotes consolidated */}
               <div className="mt-4 pt-4 rounded-xl px-4 py-3" style={{ background: `${cor}07`, border: `1px solid ${cor}15` }}>
                 <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: `${cor}60` }}>Notas de rodapé</p>
                 <ol className="space-y-1.5 list-none">
-                  {NOTAS_RODAPE.map(n => (
+                  {notas.map(n => (
                     <li key={n.num} className="text-xs leading-relaxed" style={{ color: '#ffffff55' }}>
                       <sup style={{ color: cor }} className="font-bold mr-1">{n.num}</sup>
                       {n.ref}
@@ -726,7 +831,14 @@ export default function DiscipuladoConfessionalCap1Page() {
             <motion.div key="enc1" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }}>
               <VersiculoBox texto={ENCONTRO1.versiculo} ref={ENCONTRO1.ref_versiculo} cor={GOLD} />
               <EncontroSection enc={ENCONTRO1} textos={ENCONTRO1.textos} />
-              <GabaritoEncontro1 cor={GOLD} />
+              <GabaritoSection
+                cor={GOLD}
+                titulo="Gabarito — Encontro 1"
+                aviso="As respostas abaixo são orientadoras, não exaustivas. A pergunta 1.8 admite apenas resposta pessoal."
+                itens={GABARITO_ENC1}
+                notas={NOTAS_RODAPE}
+                perguntas={ENCONTRO1.perguntas}
+              />
             </motion.div>
           )}
 
@@ -734,6 +846,14 @@ export default function DiscipuladoConfessionalCap1Page() {
             <motion.div key="enc2" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }}>
               <VersiculoBox texto={ENCONTRO2.versiculo} ref={ENCONTRO2.ref_versiculo} cor={GREEN} />
               <EncontroSection enc={ENCONTRO2} textos={ENCONTRO2.textos} confTexto={CONF_TEXT_1_5} />
+              <GabaritoSection
+                cor={GREEN}
+                titulo="Gabarito — Encontro 2"
+                aviso="As respostas abaixo são orientadoras, não exaustivas."
+                itens={GABARITO_ENC2}
+                notas={NOTAS_RODAPE_ENC2}
+                perguntas={ENCONTRO2.perguntas}
+              />
             </motion.div>
           )}
 
@@ -741,6 +861,14 @@ export default function DiscipuladoConfessionalCap1Page() {
             <motion.div key="enc3" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }}>
               <VersiculoBox texto={ENCONTRO3.versiculo} ref={ENCONTRO3.ref_versiculo} cor={BLUE} />
               <EncontroSection enc={ENCONTRO3} textos={ENCONTRO3.textos} confTexto={CONF_TEXT_6_10} mostrarTabela />
+              <GabaritoSection
+                cor={BLUE}
+                titulo="Gabarito — Encontro 3"
+                aviso="As respostas abaixo são orientadoras, não exaustivas."
+                itens={GABARITO_ENC3}
+                notas={NOTAS_RODAPE_ENC3}
+                perguntas={ENCONTRO3.perguntas}
+              />
             </motion.div>
           )}
         </AnimatePresence>
