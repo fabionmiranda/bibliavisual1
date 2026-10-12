@@ -527,15 +527,24 @@ export default function DiscipuladoConfessionalCap1Page() {
           viewport={{ once: true }}
           className="mt-8 flex items-stretch gap-4"
         >
-          {/* prev placeholder */}
-          <div className="flex-1 rounded-2xl p-5 flex items-center gap-4 opacity-30 cursor-not-allowed"
-            style={{ background: '#0b1530', border: '1px solid #ffffff12' }}>
-            <span className="text-2xl">←</span>
-            <div>
-              <p className="text-xs font-bold uppercase tracking-widest text-white/40 mb-1">Anterior</p>
-              <p className="text-sm font-bold text-white/50">— início do curso —</p>
+          {/* prev: back to confissão */}
+          <button
+            onClick={() => navigate('/teologia/credos')}
+            className="flex-1 rounded-2xl p-5 flex items-center gap-4 transition-all hover:scale-[1.02]"
+            style={{ background: `${GOLD}08`, border: `1px solid ${GOLD}25`, cursor: 'pointer' }}
+          >
+            <motion.span
+              animate={{ x: [0, -5, 0] }}
+              transition={{ duration: 1.8, repeat: Infinity }}
+              className="text-2xl shrink-0"
+              style={{ color: GOLD }}
+            >←</motion.span>
+            <div className="text-left">
+              <p className="text-xs font-bold uppercase tracking-widest mb-1" style={{ color: `${GOLD}80` }}>Voltar</p>
+              <p className="text-sm font-bold text-white">Credos e Confissões</p>
+              <p className="text-xs mt-1" style={{ color: `${GOLD}70` }}>Confissão Batista de 1689</p>
             </div>
-          </div>
+          </button>
 
           {/* next: cap 2 */}
           <button
