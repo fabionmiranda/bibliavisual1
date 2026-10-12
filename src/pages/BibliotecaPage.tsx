@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import {
   BookMarked, Star, User, FileText, BookOpen,
   Layers, Search, Mic2, Landmark, Handshake, Cross,
-  ChevronRight,
+  ChevronRight, GraduationCap,
 } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -79,6 +79,17 @@ function getSecaoPrincipal(pt: boolean) {
       accent: '#34d399',
       path: '/biblioteca/guias',
       badge: pt ? 'Em breve' : 'Coming soon',
+    },
+    {
+      icon: GraduationCap,
+      label: pt ? 'Estudos Bíblicos e Confessionais' : 'Biblical & Confessional Studies',
+      descricao: pt
+        ? 'Cadernos de discipulado confessional — estudo versículo a versículo das grandes confissões de fé com perguntas, gabaritos e referências.'
+        : 'Confessional discipleship notebooks — verse-by-verse study of the great confessions of faith with questions, answers and references.',
+      cor: 'from-orange-950 via-amber-950 to-slate-950',
+      accent: '#f97316',
+      path: '/discipulado/confessional/cap1',
+      badge: pt ? 'Cap. I disponível' : 'Ch. I available',
     },
   ];
 }
