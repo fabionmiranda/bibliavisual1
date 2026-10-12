@@ -812,7 +812,7 @@ export default function DiscipuladoConfessionalCap1Page() {
 
           <div className="mt-6 p-5 rounded-xl" style={{ background: `${GOLD}10`, border: `1px solid ${GOLD}30` }}>
             <p className="text-base text-white/85 leading-relaxed">
-              <span style={{ color: GOLD }} className="font-bold">Como usar este material:</span> Cada encontro tem duração de 90 min. Leia o texto confessional antes do encontro, traga suas respostas às perguntas, e pesquise os textos-prova na Bíblia. O versículo para memorizar deve ser aprendido antes do próximo encontro.
+              <span style={{ color: GOLD }} className="font-bold">Como usar este material:</span> Cada encontro tem duração de <span style={{ color: GOLD }} className="font-semibold">90 minutos</span>. Leia a introdução, os textos-prova, os textos confessionais e o glossário — depois procure responder cada pergunta por conta própria. Caso tenha dúvidas, acesse a <span style={{ color: GREEN }} className="font-semibold">ajuda</span> disponível em cada pergunta. Ao final, confira o <span style={{ color: BLUE }} className="font-semibold">gabarito</span> com as respostas orientadoras e as <span style={{ color: BLUE }} className="font-semibold">referências bibliográficas</span> para consulta posterior.
             </p>
           </div>
         </div>
