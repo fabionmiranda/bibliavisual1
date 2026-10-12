@@ -21,6 +21,38 @@ interface Confissao {
 
 const CONFISSOES: Confissao[] = [
   {
+    id: 'batista-1689',
+    titulo: 'Confissão de Fé Batista de Londres',
+    subtitulo: 'Second London Baptist Confession of Faith',
+    ano: '1689',
+    icon: '📗',
+    origem: 'Igrejas Batistas Particulares · Londres, Inglaterra',
+    resumo:
+      'Publicada em 1677 e adotada oficialmente em 1689, a Segunda Confissão de Fé Batista de Londres foi elaborada pelas igrejas batistas particulares da Inglaterra para demonstrar sua substancial concordância com a Confissão de Westminster, distinguindo-se principalmente na doutrina dos sacramentos — especialmente o batismo de crentes por imersão, como sinal da nova aliança — e na ecclesiologia congregacional. Tornou-se o padrão doutrinário das igrejas batistas reformadas ao redor do mundo e é um dos documentos mais ricos da tradição batista histórica.',
+    topicos: [
+      { label: 'Cap. I — Das Sagradas Escrituras', desc: 'A Bíblia — 66 livros do AT e NT — é a Palavra de Deus escrita, plenamente inspirada pelo Espírito Santo. É a única regra infalível e suficiente de fé e prática; sua autoridade não depende de qualquer testemunho humano ou eclesiástico, mas do próprio Deus que a inspirou.' },
+      { label: 'Cap. II — De Deus e da Santa Trindade', desc: 'Há um único Deus vivo e verdadeiro, autoexistente, infinito em ser e perfeição, eternamente sábio, santo, justo, misericordioso e fiel. Na unidade da divindade subsistem três Pessoas — Pai, Filho e Espírito Santo — de uma mesma substância, iguais em poder e glória.' },
+      { label: 'Cap. III — Dos Decretos de Deus', desc: 'Deus, desde a eternidade e pelo conselho soberaníssimo de sua vontade, decretou livremente tudo o que acontece, sem ser autor do pecado nem violar a vontade das criaturas. Elegeu alguns para a vida eterna e os predestinou para adoção em Cristo, para louvor de sua glória.' },
+      { label: 'Cap. IV — Da Criação', desc: 'No princípio, Deus criou o céu e a terra do nada, em seis dias, para manifestar a glória de seu poder, sabedoria e bondade. Criou o ser humano — homem e mulher — à sua imagem, dotado de razão, de vontade livre e de conhecimento real de Deus, em justiça e santidade.' },
+      { label: 'Cap. V — Da Providência Divina', desc: 'Deus, o grande Criador, sustenta, dirige, dispõe e governa todas as criaturas, ações e coisas, desde a maior até a menor, por sua providência santíssima e infalível, para os fins que lhe agrada — usando meios secundários, mas não estando ligado a eles.' },
+      { label: 'Cap. VI — Da Queda do Homem, do Pecado e de seu Castigo', desc: 'Adão e Eva, seduzidos pela astúcia de Satanás, transgediram o mandamento de Deus. Por essa queda, perderam a justiça original; seu pecado foi imputado a toda a posteridade. A natureza humana tornou-se totalmente corrompida — o que os batistas chamam de depravação total.' },
+      { label: 'Cap. VII — Da Aliança de Deus com o Homem', desc: 'Deus fez com Adão uma aliança de obras, prometendo vida mediante obediência perfeita. Após a queda, estabeleceu a aliança da graça — prometendo vida e salvação por meio de Cristo, exigindo fé nele. Essa aliança foi administrada de modo diferente sob o AT e o NT, mas é uma só aliança em sua essência.' },
+      { label: 'Cap. VIII — De Cristo o Mediador', desc: 'O Filho de Deus, segunda Pessoa da Trindade, assumiu a natureza humana — com todas as suas propriedades essenciais — permanecendo verdadeiro Deus e tornando-se verdadeiro homem numa única Pessoa. Como nosso Profeta, Sacerdote e Rei, satisfez a justiça divina, sendo obediente em lugar dos eleitos e ressuscitando vitorioso.' },
+      { label: 'Cap. IX — Do Livre-Arbítrio', desc: 'Deus dotou o homem de vontade naturalmente livre — capaz de escolher o bem ou o mal. Pela queda, o homem perdeu a capacidade de querer qualquer bem espiritual; somente pela graça eficaz Deus liberta a vontade do pecador para que deseje e escolha o bem salvífico.' },
+      { label: 'Cap. X — Da Chamada Eficaz', desc: 'Todos os eleitos — e somente eles — são chamados eficazmente por Deus em seu tempo determinado: iluminados no entendimento, renovados na vontade e atraídos para Cristo. Esse chamado é inteiramente de graça soberana, não baseado em nenhuma previsão de mérito ou disposição humana.' },
+      { label: 'Cap. XI — Da Justificação', desc: 'Deus justifica os que chamou eficazmente: não por nenhuma obra infundida ou por eles realizada, mas gratuitamente, pela imputação da obediência ativa e passiva de Cristo. A fé que recebe a justificação não é o fundamento da justificação — o fundamento é unicamente Cristo e sua justiça.' },
+      { label: 'Cap. XII — Da Adoção', desc: 'Em Cristo, todos os justificados são admitidos no número dos filhos de Deus, participam das liberdades e privilégios da filiação, têm o Espírito da adoção, têm acesso ao trono da graça, são disciplinados como filhos e herdeiros da promessa eterna da salvação.' },
+      { label: 'Cap. XIII — Da Santificação', desc: 'Os chamados e regenerados são progressivamente santificados — a dominação do pecado é destruída, os desejos do Espírito crescem no crente. Essa santificação é real e imperfeita nesta vida: os eleitos lutam contra os resquícios da carne até a glorificação.' },
+      { label: 'Cap. XIV — Da Fé Salvadora', desc: 'A fé salvadora — dom de Deus operado pelo Espírito — habilita o pecador a crer em Cristo para justificação, santificação e vida eterna. Ela age pelos frutos: arrepende-se do pecado, obedece aos mandamentos, persevera nas tribulações e vive de Cristo como seu único e suficiente Salvador.' },
+      { label: 'Cap. XV — Do Arrependimento para a Vida e Salvação', desc: 'O arrependimento é graça evangélica pela qual o pecador percebe o perigo e sujidade do pecado, se humilha diante de Deus, se afasta de todo pecado conhecido e anda nos mandamentos com propósito de obediência. Nenhum pecado é imperdoável para quem se arrepende genuinamente.' },
+      { label: 'Cap. XVI — Das Boas Obras', desc: 'As boas obras — ordenadas por Deus em sua Palavra — são frutos e evidências da fé viva; por elas os crentes fortalecem sua asseguração, edificam os irmãos e adornam o Evangelho. Elas não merecem a salvação, mas são indispensáveis como prova da graça operante.' },
+      { label: 'Cap. XVII — Da Perseverança dos Santos', desc: 'Os que Deus aceitou em Cristo e chamou eficazmente jamais poderão cair total nem definitivamente do estado de graça. Ainda que possam cair em pecados graves, serão certamente preservados pela fé e pelo poder de Deus até a salvação final — pois a perseverança é garantida pelo decreto eterno e pela intercessão de Cristo.' },
+      { label: 'Cap. XVIII — Da Certeza da Graça e da Salvação', desc: 'Os verdadeiros crentes podem ter certeza infalível de sua salvação — não por mera esperança conjectural, mas pelo testemunho do Espírito com o seu espírito (Rm 8.16), pelo fruto das promessas, pela evidência das graças operantes. Esta asseguração não enfraquece a santidade, mas a fortalece.' },
+    ],
+    tradição: 'Batista Reformada / Batista Particular',
+    corAcento: '#34d399',
+  },
+  {
     id: 'westminster',
     titulo: 'Confissão de Fé de Westminster',
     subtitulo: 'Westminster Confession of Faith',
@@ -42,32 +74,11 @@ const CONFISSOES: Confissao[] = [
     tradição: 'Presbiteriana / Reformada',
     corAcento: '#60a5fa',
   },
-  {
-    id: 'batista-1689',
-    titulo: 'Confissão de Fé Batista de Londres',
-    subtitulo: 'Second London Baptist Confession of Faith',
-    ano: '1689',
-    icon: '📗',
-    origem: 'Igrejas Batistas Particulares · Londres, Inglaterra',
-    resumo:
-      'Publicada em 1677 e adotada oficialmente em 1689, a Segunda Confissão de Fé Batista de Londres foi elaborada pelas igrejas batistas particulares da Inglaterra para demonstrar sua substancial concordância com a Confissão de Westminster, distinguindo-se principalmente na doutrina dos sacramentos — especialmente o batismo de crentes por imersão, como sinal da nova aliança — e na ecclesiologia congregacional. Tornou-se o padrão doutrinário das igrejas batistas reformadas ao redor do mundo e é um dos documentos mais ricos da tradição batista histórica.',
-    topicos: [
-      { label: 'Autoridade das Escrituras', desc: 'A Bíblia como única regra infalível de fé e prática, conforme a tradição reformada (cap. I)' },
-      { label: 'Trindade e Atributos Divinos', desc: 'Deus uno e trino, com todos os seus atributos de perfeição absoluta (cap. II)' },
-      { label: 'Eleição Soberana', desc: 'A eleição incondicional dos salvos pelo decreto eterno de Deus (cap. III)' },
-      { label: 'Aliança da Graça', desc: 'Cristo como mediador do pacto — a nova aliança cumprida e superior às alianças anteriores (cap. VII)' },
-      { label: 'Justificação pela Fé', desc: 'A justificação pela fé somente, com base na imputação da justiça de Cristo (cap. XI)' },
-      { label: 'Batismo de Crentes', desc: 'O batismo por imersão de crentes como sinal da nova aliança — a principal distinção batista (cap. XXIX)' },
-      { label: 'Ceia do Senhor', desc: 'A Ceia como memorial e proclamação da morte de Cristo, rejeitando a transubstanciação (cap. XXX)' },
-      { label: 'Governo Congregacional', desc: 'A autonomia local da Igreja e o governo congregacional como ordem bíblica (cap. XXVI)' },
-    ],
-    tradição: 'Batista Reformada / Batista Particular',
-    corAcento: '#34d399',
-  },
 ];
 
 function ConfissaoCard({ conf }: { conf: Confissao }) {
   const [aberto, setAberto] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <div
@@ -188,38 +199,53 @@ function ConfissaoCard({ conf }: { conf: Confissao }) {
             gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 280px), 1fr))',
             gap: 'clamp(10px,1.5vw,14px)',
           }}>
-            {conf.topicos.map((t, i) => (
-              <div key={i} style={{
-                padding: 'clamp(14px,2vw,18px)',
-                borderRadius: 12,
-                background: 'rgba(255,255,255,0.03)',
-                border: `1px solid ${conf.corAcento}22`,
-                display: 'flex', flexDirection: 'column', gap: 6,
-              }}>
-                <div style={{
-                  display: 'flex', alignItems: 'center', gap: 8,
-                }}>
-                  <div style={{
-                    width: 22, height: 22, borderRadius: 6, flexShrink: 0,
-                    background: `${conf.corAcento}20`,
-                    border: `1px solid ${conf.corAcento}40`,
-                    display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    fontSize: 11, fontWeight: 900, color: conf.corAcento,
-                  }}>
-                    {i + 1}
+            {conf.topicos.map((t, i) => {
+              const isClickable = conf.id === 'batista-1689' && i === 0;
+              const CardEl = isClickable ? 'button' : 'div';
+              return (
+                <CardEl
+                  key={i}
+                  onClick={isClickable ? () => navigate('/discipulado/confessional/cap1') : undefined}
+                  style={{
+                    all: isClickable ? 'unset' : undefined,
+                    padding: 'clamp(14px,2vw,18px)',
+                    borderRadius: 12,
+                    background: isClickable ? `${conf.corAcento}12` : 'rgba(255,255,255,0.03)',
+                    border: `1px solid ${isClickable ? conf.corAcento + '50' : conf.corAcento + '22'}`,
+                    display: 'flex', flexDirection: 'column', gap: 6,
+                    cursor: isClickable ? 'pointer' : 'default',
+                    boxSizing: 'border-box', width: '100%', textAlign: 'left',
+                    transition: 'background 0.2s, border-color 0.2s',
+                  }}
+                >
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                    <div style={{
+                      width: 22, height: 22, borderRadius: 6, flexShrink: 0,
+                      background: `${conf.corAcento}20`,
+                      border: `1px solid ${conf.corAcento}40`,
+                      display: 'flex', alignItems: 'center', justifyContent: 'center',
+                      fontSize: 11, fontWeight: 900, color: conf.corAcento,
+                    }}>
+                      {i + 1}
+                    </div>
+                    <span style={{ fontSize: 'clamp(13px,1.7vw,15px)', fontWeight: 900, color: '#ffffff' }}>
+                      {t.label}
+                    </span>
+                    {isClickable && (
+                      <span style={{ marginLeft: 'auto', fontSize: 11, fontWeight: 700, color: conf.corAcento, opacity: 0.8 }}>
+                        Abrir aula →
+                      </span>
+                    )}
                   </div>
-                  <span style={{ fontSize: 'clamp(13px,1.7vw,15px)', fontWeight: 900, color: '#ffffff' }}>
-                    {t.label}
-                  </span>
-                </div>
-                <p style={{
-                  margin: 0, fontSize: 'clamp(12px,1.5vw,13px)',
-                  color: 'rgba(200,218,255,0.62)', lineHeight: 1.65, paddingLeft: 30,
-                }}>
-                  {t.desc}
-                </p>
-              </div>
-            ))}
+                  <p style={{
+                    margin: 0, fontSize: 'clamp(12px,1.5vw,13px)',
+                    color: 'rgba(200,218,255,0.62)', lineHeight: 1.65, paddingLeft: 30,
+                  }}>
+                    {t.desc}
+                  </p>
+                </CardEl>
+              );
+            })}
           </div>
         </div>
       )}
