@@ -291,20 +291,29 @@ function PerguntasGrid({ perguntas, cor }: { perguntas: { num: string; texto: st
             <p className="text-white/80 text-sm leading-relaxed">{p.texto}</p>
           </div>
           {p.recurso && (
-            <a
-              href={p.recurso.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 self-start rounded-lg px-3 py-1.5 text-xs font-semibold transition-all hover:scale-[1.03] hover:opacity-90"
-              style={{ background: `${cor}14`, color: cor, border: `1px solid ${cor}30` }}
-            >
-              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                <polyline points="15 3 21 3 21 9" />
-                <line x1="10" y1="14" x2="21" y2="3" />
-              </svg>
-              {p.recurso.label}
-            </a>
+            <div className="flex flex-col gap-1.5 mt-1">
+              <span className="flex items-center gap-1.5 text-[10px] font-semibold uppercase tracking-widest opacity-50" style={{ color: cor }}>
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 16v-4M12 8h.01" />
+                </svg>
+                Quer ajuda para responder?
+              </span>
+              <a
+                href={p.recurso.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 self-start rounded-lg px-3 py-1.5 text-xs font-semibold transition-all hover:scale-[1.03] hover:opacity-90"
+                style={{ background: `${cor}14`, color: cor, border: `1px solid ${cor}30` }}
+              >
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                {p.recurso.label}
+              </a>
+            </div>
           )}
         </motion.div>
       ))}
