@@ -253,8 +253,8 @@ function VersiculoBox({ texto, ref: r, cor }: { texto: string; ref: string; cor:
       className="rounded-xl p-5 mb-6"
       style={{ background: `${cor}12`, border: `1px solid ${cor}35`, borderLeft: `4px solid ${cor}` }}
     >
-      <p className="text-lg leading-relaxed italic font-medium" style={{ color: cor }}>"{texto}"</p>
-      <p className="mt-2 text-base font-semibold" style={{ color: `${cor}cc` }}>— {r}</p>
+      <p className="text-base md:text-lg leading-relaxed italic font-medium" style={{ color: cor }}>"{texto}"</p>
+      <p className="mt-2 text-sm md:text-base font-semibold" style={{ color: `${cor}cc` }}>— {r}</p>
     </motion.div>
   );
 }
@@ -284,7 +284,7 @@ function ConfTexto({ items, cor }: { items: typeof CONF_TEXT_1_5; cor: string })
                 exit={{ height: 0, opacity: 0 }}
                 className="px-5 pb-5"
               >
-                <div className="text-white/90 leading-relaxed text-base pt-4 border-t" style={{ borderColor: `${cor}20` }}>{item.texto}</div>
+                <div className="text-white/90 leading-relaxed text-sm md:text-base pt-4 border-t" style={{ borderColor: `${cor}20` }}>{item.texto}</div>
               </motion.div>
             )}
           </AnimatePresence>
@@ -296,7 +296,7 @@ function ConfTexto({ items, cor }: { items: typeof CONF_TEXT_1_5; cor: string })
 
 function PerguntasGrid({ perguntas, cor }: { perguntas: { num: string; texto: string; recurso?: { label: string; url: string } }[]; cor: string }) {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
       {perguntas.map((p, i) => (
         <motion.div
           key={p.num}
@@ -309,7 +309,7 @@ function PerguntasGrid({ perguntas, cor }: { perguntas: { num: string; texto: st
         >
           <div className="flex items-start gap-3">
             <span className="shrink-0 w-9 h-9 rounded-full flex items-center justify-center text-sm font-extrabold" style={{ background: `${cor}28`, color: cor }}>{p.num}</span>
-            <p className="text-white/95 text-base leading-relaxed font-medium">{p.texto}</p>
+            <p className="text-white/95 text-sm md:text-base leading-relaxed font-medium">{p.texto}</p>
           </div>
           {p.recurso && (
             <div className="flex flex-col gap-1.5 mt-1">
@@ -344,7 +344,7 @@ function PerguntasGrid({ perguntas, cor }: { perguntas: { num: string; texto: st
 
 function GlossarioCards({ items, cor }: { items: { termo: string; def: string }[]; cor: string }) {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
       {items.map(g => (
         <div key={g.termo} className="rounded-xl p-4" style={{ background: `${cor}0c`, border: `1px solid ${cor}28` }}>
           <p className="font-extrabold text-base mb-2" style={{ color: cor }}>{g.termo}</p>
@@ -461,20 +461,20 @@ function EncontroSection({ enc, textos, confTexto, mostrarTabela }: {
       style={{ background: '#0b1530', border: `1px solid ${cor}30` }}
     >
       {/* header */}
-      <div className="px-6 pt-6 pb-4" style={{ borderBottom: `1px solid ${cor}22` }}>
+      <div className="px-4 md:px-6 pt-5 pb-4" style={{ borderBottom: `1px solid ${cor}22` }}>
         <div className="flex flex-wrap items-center gap-3 mb-3">
           <span className="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider" style={{ background: `${cor}22`, color: cor }}>{enc.titulo}</span>
         </div>
-        <h2 className="text-2xl font-extrabold text-white tracking-tight">{enc.subtitulo}</h2>
+        <h2 className="text-xl md:text-2xl font-extrabold text-white tracking-tight">{enc.subtitulo}</h2>
         <p className="mt-2 text-base font-medium" style={{ color: `${cor}cc` }}>"{enc.versiculo}" — {enc.ref_versiculo}</p>
       </div>
 
-      <div className="p-6 space-y-8">
+      <div className="p-4 md:p-6 space-y-7">
 
         {/* introducao */}
         <div>
           <h3 className="text-sm font-extrabold uppercase tracking-widest mb-4" style={{ color: cor }}>Introdução</h3>
-          <div className="space-y-4 text-white/90 leading-relaxed text-base">{enc.introducao}</div>
+          <div className="space-y-4 text-white/90 leading-relaxed text-sm md:text-base">{enc.introducao}</div>
         </div>
 
         {/* textos-prova */}
@@ -685,7 +685,7 @@ function GabaritoSection({
                     <span className="text-sm font-extrabold px-2.5 py-1 rounded-full mr-3 shrink-0" style={{ background: `${cor}28`, color: cor }}>
                       {item.num}
                     </span>
-                    <span className="flex-1 text-white/95 text-base font-medium truncate pr-3">
+                    <span className="flex-1 text-white/95 text-sm md:text-base font-medium truncate pr-3">
                       {perguntas.find(p => p.num === item.num)?.texto}
                     </span>
                     <motion.span animate={{ rotate: openItem === item.num ? 180 : 0 }} style={{ color: `${cor}80` }} className="text-sm shrink-0">▾</motion.span>
@@ -700,7 +700,7 @@ function GabaritoSection({
                         className="px-5 pb-4"
                       >
                         <p
-                          className="text-white/92 text-base leading-relaxed pt-4"
+                          className="text-white/92 text-sm md:text-base leading-relaxed pt-4"
                           style={{ borderTop: `1px solid ${cor}18` }}
                           dangerouslySetInnerHTML={{
                             __html: item.notas
@@ -756,56 +756,40 @@ function GabaritoSection({
 
 function ChapterNav({ onPrev, onNext, compact }: { onPrev: () => void; onNext: () => void; compact?: boolean }) {
   return (
-    <div className={`flex items-center justify-between gap-3 ${compact ? 'py-3 px-4' : 'py-4 px-0'}`}>
+    <div className={`flex items-center justify-between gap-2 ${compact ? 'py-2 px-2' : 'py-4 px-0'}`}>
       <button
         onClick={onPrev}
-        className="group flex items-center gap-2 rounded-xl px-4 py-2 transition-all hover:scale-105"
+        className="flex items-center gap-1.5 rounded-xl px-3 py-2 transition-all hover:scale-105 min-w-0"
         style={{ background: `${GOLD}0a`, border: `1px solid ${GOLD}20` }}
       >
-        <motion.span
-          animate={{ x: [0, -3, 0] }}
-          transition={{ duration: 2, repeat: Infinity }}
-          style={{ color: GOLD }}
-          className="text-base"
-        >←</motion.span>
-        <div className="text-left hidden sm:block">
-          <p className="text-xs font-bold uppercase tracking-wider leading-none" style={{ color: `${GOLD}70` }}>Anterior</p>
-          <p className="text-xs text-white/60 mt-0.5">Credos e Confissões</p>
+        <motion.span animate={{ x: [0, -3, 0] }} transition={{ duration: 2, repeat: Infinity }} style={{ color: GOLD }} className="text-base shrink-0">←</motion.span>
+        <div className="text-left min-w-0">
+          <p className="text-[10px] font-bold uppercase tracking-wider leading-none truncate" style={{ color: `${GOLD}70` }}>Anterior</p>
+          <p className="text-xs text-white/55 mt-0.5 truncate hidden xs:block">Cap. I</p>
         </div>
-        <span className="text-xs text-white/50 sm:hidden">Anterior</span>
       </button>
 
-      {/* chapter dots */}
-      <div className="flex items-center gap-1.5">
+      {/* chapter dots — show fewer on mobile */}
+      <div className="flex items-center gap-1 overflow-hidden">
         {Array.from({ length: 18 }, (_, i) => (
           <div
             key={i}
-            className="rounded-full transition-all"
-            style={{
-              width: i === 0 ? 20 : 6,
-              height: 6,
-              background: i === 0 ? GOLD : `${GOLD}28`,
-            }}
+            className={`rounded-full transition-all ${i > 9 ? 'hidden sm:block' : ''}`}
+            style={{ width: i === 0 ? 16 : 5, height: 5, background: i === 0 ? GOLD : `${GOLD}28`, flexShrink: 0 }}
           />
         ))}
       </div>
 
       <button
         onClick={onNext}
-        className="group flex items-center gap-2 rounded-xl px-4 py-2 transition-all hover:scale-105"
+        className="flex items-center gap-1.5 rounded-xl px-3 py-2 transition-all hover:scale-105 min-w-0"
         style={{ background: `${GOLD}0a`, border: `1px solid ${GOLD}20` }}
       >
-        <div className="text-right hidden sm:block">
-          <p className="text-xs font-bold uppercase tracking-wider leading-none" style={{ color: `${GOLD}70` }}>Próximo</p>
-          <p className="text-xs text-white/60 mt-0.5">Cap. II — Deus e a Trindade</p>
+        <div className="text-right min-w-0">
+          <p className="text-[10px] font-bold uppercase tracking-wider leading-none truncate" style={{ color: `${GOLD}70` }}>Próximo</p>
+          <p className="text-xs text-white/55 mt-0.5 truncate hidden xs:block">Cap. II</p>
         </div>
-        <span className="text-xs text-white/50 sm:hidden">Próximo</span>
-        <motion.span
-          animate={{ x: [0, 3, 0] }}
-          transition={{ duration: 2, repeat: Infinity }}
-          style={{ color: GOLD }}
-          className="text-base"
-        >→</motion.span>
+        <motion.span animate={{ x: [0, 3, 0] }} transition={{ duration: 2, repeat: Infinity }} style={{ color: GOLD }} className="text-base shrink-0">→</motion.span>
       </button>
     </div>
   );
@@ -837,7 +821,7 @@ export default function DiscipuladoConfessionalCap1Page() {
           ))}
         </div>
 
-        <div className="relative z-10 max-w-4xl mx-auto px-6 py-14">
+        <div className="relative z-10 max-w-4xl mx-auto px-4 md:px-6 py-10 md:py-14">
           <button
             onClick={() => navigate('/discipulado/confessional/batista')}
             className="flex items-center gap-2 text-sm mb-6 transition-opacity hover:opacity-80"
@@ -858,10 +842,10 @@ export default function DiscipuladoConfessionalCap1Page() {
             </span>
           </div>
 
-          <h1 className="text-3xl md:text-4xl font-black mb-3 text-white leading-tight">
+          <h1 className="text-2xl md:text-4xl font-black mb-3 text-white leading-tight">
             Das Sagradas Escrituras
           </h1>
-          <p className="text-white/80 text-xl max-w-2xl leading-relaxed font-medium">
+          <p className="text-white/80 text-base md:text-xl max-w-2xl leading-relaxed font-medium">
             Discipulado Confessional — Caderno do Aluno · Encontros 1 a 3
           </p>
 
@@ -874,24 +858,27 @@ export default function DiscipuladoConfessionalCap1Page() {
       </div>
 
       {/* tabs */}
-      <div className="sticky top-0 z-20 px-4 py-3" style={{ background: '#080f22', borderBottom: '1px solid #ffffff12' }}>
-        <div className="max-w-4xl mx-auto flex gap-2 overflow-x-auto">
+      <div className="sticky top-0 z-20 px-3 py-3" style={{ background: '#080f22', borderBottom: '1px solid #ffffff12' }}>
+        <div className="max-w-4xl mx-auto grid grid-cols-3 gap-2">
           {([1, 2, 3] as const).map(n => {
-            const labels = ['Encontro 1 — Por que confessar?', 'Encontro 2 — Autoridade (§1–5)', 'Encontro 3 — Suficiência (§6–10)'];
+            const shortLabels = ['Encontro 1', 'Encontro 2', 'Encontro 3'];
+            const subLabels = ['Por que confessar?', 'Autoridade §1–5', 'Suficiência §6–10'];
             const cors = [GOLD, GREEN, BLUE];
             const isActive = tab === n;
             return (
               <button
                 key={n}
                 onClick={() => setTab(n)}
-                className="shrink-0 px-4 py-2.5 rounded-xl text-base font-semibold transition-all"
+                className="flex flex-col items-center justify-center gap-0.5 px-2 py-2.5 rounded-xl transition-all text-center"
                 style={{
-                  background: isActive ? `${cors[n - 1]}20` : 'transparent',
-                  color: isActive ? cors[n - 1] : '#ffffff50',
-                  border: `1px solid ${isActive ? cors[n - 1] + '50' : 'transparent'}`,
+                  background: isActive ? `${cors[n - 1]}22` : '#ffffff08',
+                  color: isActive ? cors[n - 1] : '#ffffff45',
+                  border: `1px solid ${isActive ? cors[n - 1] + '55' : '#ffffff10'}`,
                 }}
               >
-                {labels[n - 1]}
+                <span className="text-sm font-extrabold leading-none">{shortLabels[n - 1]}</span>
+                <span className="text-[10px] leading-none mt-0.5 hidden sm:block" style={{ opacity: 0.7 }}>{subLabels[n - 1]}</span>
+                {isActive && <span className="w-4 h-0.5 rounded-full mt-1" style={{ background: cors[n - 1] }} />}
               </button>
             );
           })}
@@ -904,7 +891,7 @@ export default function DiscipuladoConfessionalCap1Page() {
       </div>
 
       {/* content */}
-      <main className="flex-1 max-w-4xl mx-auto w-full px-4 py-10">
+      <main className="flex-1 max-w-4xl mx-auto w-full px-3 md:px-4 py-6 md:py-10">
 
         <AnimatePresence mode="wait">
           {tab === 1 && (
