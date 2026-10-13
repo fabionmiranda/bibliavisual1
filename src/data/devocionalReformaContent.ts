@@ -920,6 +920,154 @@ const DIAS_CONTENT: Record<number, DiaDevoContent> = {
     oracao: 'Senhor, os habitantes de Leyde abriram os diques de suas próprias terras para resistir ao inimigo. Que aprendamos com esse gesto a disposição de sacrificar o que nos é mais precioso para defender o que é essencial.\n\nObrigado pelos que, sob perseguição extrema, não abandonaram a fé — mas a tornaram mais profunda. E que a história dos Países Baixos nos lembre: a repressão raramente extingue o que é genuíno; muitas vezes, só o fortalece.\n\nQue tenhamos fé suficiente para suportar o que vier, e sabedoria para distinguir quando o sofrimento tem propósito e quando simplesmente precisa ser aliviado.\n\nAmém.',
     leituraComplementar: 'González, Justo L. A Era dos Reformadores. São Paulo: Vida Nova, 1995. Capítulo 10: "A Reforma nos Países Baixos" (pp. 241–264).',
   },
+  15: {
+    dia: 15,
+    data: '15 de outubro de 2026',
+    titulo: 'O Protestantismo na França: Fé, Sangue e Pragmatismo',
+    subtitulo: 'Capítulo 11',
+    versiculo: 'Bendito seja o Senhor, que não nos entregou como presa a seus dentes. A nossa alma escapou como um pássaro do laço dos caçadores; o laço se quebrou, e nós escapamos.',
+    versiculoRef: 'Salmo 124.6–7',
+    secoes: [
+      {
+        tipo: 'contexto',
+        titulo: 'O Mesmo Movimento, Um Desfecho Radicalmente Diferente',
+        paragrafos: [
+          'Ontem vimos a Reforma nos Países Baixos — onde fé e resistência nacional se fundiram e produziram, apesar de décadas de guerra, uma república próspera. Hoje González nos leva à França, onde a mesma combinação de <span style="color:#c084fc;font-weight:700;">calvinismo e política</span> terminou de forma radicalmente diferente: no <span style="color:#fb7185;font-weight:800;">maior massacre de protestantes da história europeia</span>.',
+          'A história dos <span style="color:#fbbf24;font-weight:700;">huguenotes</span> é uma meditação sobre o que acontece quando uma minoria religiosa depende da proteção de patrocinadores políticos que podem, a qualquer momento, <span style="background:rgba(251,113,133,0.12);border-left:3px solid #fb7185;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(255,220,225,0.95);">mudar de lado.</span>',
+        ],
+      },
+      {
+        tipo: 'analise',
+        titulo: 'Os Huguenotes: Crescimento e Fragilidade Estrutural',
+        paragrafos: [
+          'O calvinismo chegou à França diretamente de <span style="color:#fbbf24;font-weight:700;">Genebra</span> — Calvino acompanhou os acontecimentos franceses com angústia, enviando pastores treinados e correspondência constante. O movimento cresceu rapidamente: nas décadas de 1550 e 1560, havia mais de <span style="background:rgba(251,191,36,0.15);border:1px solid rgba(251,191,36,0.35);border-radius:5px;padding:1px 8px;color:#fde68a;font-weight:800;">1.200 congregações</span> huguenotes — cerca de <span style="color:#fbbf24;font-weight:700;">10% da população francesa</span>.',
+          'A fragilidade, porém, era <span style="color:#fb7185;font-weight:700;">estrutural</span>: os huguenotes não controlavam o Estado. Dependiam da proteção de nobres simpáticos — especialmente a família <span style="color:#60a5fa;font-weight:600;">Bourbon</span> e o almirante <span style="color:#34d399;font-weight:700;">Gaspar de Coligny</span>, homem de integridade rara num século de oportunistas. Quando essa proteção fosse removida, o movimento estaria exposto.',
+          'O rei <span style="color:#f97316;font-weight:600;">Francisco I</span> oscilou entre tolerância e perseguição conforme a conveniência diplomática — precisava dos protestantes alemães como aliados contra Carlos V, mas os temia dentro do próprio reino. <span style="background:rgba(52,211,153,0.12);border-left:3px solid #34d399;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(200,255,235,0.95);">Essa ambiguidade criou décadas de incerteza mortal.</span>',
+        ],
+        citacao: 'A fé que depende de proteção política está sempre a um giro de política de distância do massacre.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'Catarina de Médici: A Religião como Peça no Tabuleiro',
+        paragrafos: [
+          'Com a morte precoce do rei Henrique II, o trono passou para filhos jovens e a rainha-mãe italiana, <span style="color:#c084fc;font-weight:700;">Catarina de Médici</span>, tornou-se regente de fato. González a retrata com precisão cirúrgica: Catarina <span style="color:#fb7185;font-weight:600;">não tinha convicções religiosas profundas</span>. Tinha um único objetivo — preservar o poder de seus filhos no trono francês.',
+          'Para isso, ela usou huguenotes e católicos como <span style="background:rgba(192,132,252,0.15);border:1px solid rgba(192,132,252,0.35);border-radius:5px;padding:1px 8px;color:#e9d5ff;font-weight:700;font-style:italic;">peças de um tabuleiro</span>. Quando os huguenotes eram necessários para equilibrar o poder da família de Guisa, ela os protegia. Quando os católicos eram necessários para pressionar os huguenotes, ela os abandonava.',
+          'A <span style="color:#fb7185;font-weight:700;">religião como instrumento de política</span> — não como objeto de convicção. Esse oportunismo calculado preparou o terreno para o maior erro de seu reinado.',
+        ],
+      },
+      {
+        tipo: 'analise',
+        titulo: 'A Noite de São Bartolomeu: 24 de Agosto de 1572',
+        paragrafos: [
+          'Para selar a paz entre as facções, Catarina organizou o casamento de <span style="color:#fbbf24;font-weight:700;">Henrique de Bourbon</span> — líder protestante — com <span style="color:#c084fc;font-weight:600;">Margarida de Valois</span>, filha católica da rainha. O casamento reuniu em Paris a <span style="color:#fbbf24;font-weight:600;">elite inteira do protestantismo francês</span>: pastores, nobres, militares, intelectuais. Parecia o início de uma era de coexistência.',
+          'Dias antes, um atentado feriu o almirante <span style="color:#34d399;font-weight:700;">Coligny</span> sem matá-lo. Quando Coligny sobreviveu e começou a fazer perguntas, Catarina temeu que a investigação revelasse seu próprio envolvimento. A decisão foi escalada ao jovem rei Carlos IX: <span style="background:rgba(251,113,133,0.15);border:1px solid rgba(251,113,133,0.35);border-radius:5px;padding:1px 8px;color:#fecdd3;font-weight:800;">Coligny e os líderes huguenotes teriam que ser eliminados.</span>',
+          'Na madrugada do dia <span style="color:#fb7185;font-weight:800;">24 de agosto</span>, os sinos da Igreja de São Germano tocaram — o sinal combinado. A guarda real invadiu as casas onde os huguenotes dormiam. Coligny foi assassinado e seu corpo jogado pela janela. O massacre se espalhou pela cidade e pelo interior da França.',
+          'O saldo: <span style="background:rgba(251,113,133,0.15);border:1px solid rgba(251,113,133,0.35);border-radius:5px;padding:1px 8px;color:#fecdd3;font-weight:800;">aproximadamente 5.000 mortos em Paris; 20.000 em todo o país.</span> O papa mandou rezar um <em>Te Deum</em> em Roma. A rainha Isabel I da Inglaterra recebeu o embaixador francês vestida de luto.',
+        ],
+        citacao: 'O massacre de São Bartolomeu não foi um acidente — foi uma decisão. E decisões têm nomes.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'analise',
+        titulo: '"Paris Bem Vale uma Missa": Henrique IV e o Édito de Nantes',
+        paragrafos: [
+          'O próprio <span style="color:#fbbf24;font-weight:700;">Henrique de Bourbon</span>, noivo na fatídica semana, sobreviveu ao massacre ao se converter provisoriamente ao catolicismo. Após décadas de guerras religiosas que nenhum lado conseguia vencer, emergiu como o candidato mais viável ao trono da França.',
+          'O problema: Paris e a maior parte da nobreza eram católicos. Henrique converteu-se ao catolicismo em 1593 — de forma que muitos consideraram cínica. A frase que lhe é atribuída resume o pragmatismo que seus críticos huguenotes nunca perdoaram: <span style="background:rgba(251,191,36,0.15);border:1px solid rgba(251,191,36,0.35);border-radius:5px;padding:1px 8px;color:#fde68a;font-weight:800;font-style:italic;">"Paris bem vale uma missa."</span>',
+          'Mas González pede uma avaliação mais nuançada. Em <span style="color:#34d399;font-weight:700;">1598</span>, Henrique promulgou o <span style="color:#34d399;font-weight:800;">Édito de Nantes</span> — o primeiro documento de tolerância religiosa da Europa moderna, concedendo aos huguenotes <span style="color:#34d399;font-weight:600;">liberdade de culto, acesso a cargos públicos e cidades de refúgio</span>. <span style="background:rgba(52,211,153,0.12);border-left:3px solid #34d399;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(200,255,235,0.95);">A conversão pragmática de Henrique IV preservou uma geração inteira de protestantes franceses.</span> O édito durou 87 anos — revogado por Luís XIV em 1685.',
+        ],
+        citacao: 'Às vezes Deus usa pragmatistas para fazer o bem que os idealistas não conseguiram proteger.',
+        citacaoAutor: 'Justo L. González',
+      },
+    ],
+    perguntas: [
+      'Os huguenotes dependiam da proteção de patrocinadores políticos — e quando essa proteção foi retirada, o massacre foi possível. Em que medida a fé da sua comunidade depende de condições políticas ou sociais favoráveis? O que sustentaria a comunidade se essas condições mudassem?',
+      'Catarina de Médici usou a religião como instrumento de poder sem convicção pessoal. Como você identifica quando a religião está sendo instrumentalizada politicamente — seja por governantes, seja por líderes religiosos?',
+      'A conversão de Henrique IV foi pragmática, mas produziu o Édito de Nantes. É possível separar a pureza dos motivos dos frutos concretos de uma decisão? Como julgar Henrique IV com justiça?',
+    ],
+    oracao: 'Senhor, diante do Massacre de São Bartolomeu, nossa oração é de lamento — pelo sangue derramado em Teu nome, pela traição planejada sob o pretexto de paz, pela cumplicidade de líderes religiosos que rezaram Te Deums enquanto os corpos ainda estavam quentes.\n\nQue esse episódio nunca se apague da memória da Igreja — não para alimentar ressentimento entre tradições, mas para nos lembrar do que somos capazes quando misturamos poder político com convicção religiosa sem freio de consciência.\n\nE que a história de Henrique IV nos ensine que às vezes Deus usa pragmatistas para fazer o bem que os idealistas não conseguiram proteger.\n\nAmém.',
+    leituraComplementar: 'González, Justo L. A Era dos Reformadores. São Paulo: Vida Nova, 1995. Capítulo 11: "O Protestantismo na França" (pp. 265–288).',
+  },
+  16: {
+    dia: 16,
+    data: '16 de outubro de 2026',
+    titulo: 'A Reforma Católica: Renovação, Disciplina e Mística',
+    subtitulo: 'Capítulo 12',
+    versiculo: 'Porque o Senhor disciplina aquele a quem ama, e castiga a todo filho que recebe.',
+    versiculoRef: 'Hebreus 12.6',
+    secoes: [
+      {
+        tipo: 'contexto',
+        titulo: 'O Que Acontecia do Outro Lado',
+        paragrafos: [
+          'Ao longo destas duas semanas, acompanhamos a Reforma Protestante em seus múltiplos cenários: Alemanha, Suíça, Inglaterra, Países Baixos, França. Hoje González nos convida a fazer o que narrativas protestantes frequentemente omitem: <span style="color:#fbbf24;font-weight:700;">olhar para dentro da Igreja Católica</span> e perguntar o que acontecia lá.',
+          'A resposta surpreende. A renovação dentro do catolicismo não foi apenas <span style="color:#fb7185;font-weight:600;">"Contra-Reforma"</span> — reação defensiva ao protestantismo. Foi um <span style="color:#34d399;font-weight:700;">movimento genuíno</span>, com raízes anteriores a Lutero, que produziu algumas das figuras espirituais mais extraordinárias do século XVI.',
+        ],
+      },
+      {
+        tipo: 'analise',
+        titulo: 'Antes de Lutero: As Raízes Espanholas',
+        paragrafos: [
+          'González retoma o fio do primeiro capítulo: a reforma iniciada por <span style="color:#fbbf24;font-weight:700;">Isabel, a Católica</span>, e o cardeal <span style="color:#fbbf24;font-weight:700;">Cisneros</span> na Espanha era <span style="background:rgba(251,191,36,0.15);border:1px solid rgba(251,191,36,0.35);border-radius:5px;padding:1px 8px;color:#fde68a;font-weight:800;font-style:italic;">anterior às 95 Teses</span>. Cisneros havia reformado o clero espanhol, fundado a Universidade de Alcalá, financiado a <span style="color:#34d399;font-weight:600;">Bíblia Poliglota Complutense</span> e imposto padrões rigorosos de formação sacerdotal.',
+          'O humanismo de <span style="color:#c084fc;font-weight:700;">Erasmo</span> — com seu apelo ao retorno às fontes, à reforma dos costumes clericais e à piedade interior genuína — circulava amplamente em círculos católicos. Havia um <span style="color:#fbbf24;font-weight:600;">apetite real por renovação</span> dentro da Igreja, antes que Lutero fornecesse uma alternativa externa.',
+          'A pergunta que González implicitamente coloca: <span style="background:rgba(192,132,252,0.15);border:1px solid rgba(192,132,252,0.35);border-radius:5px;padding:2px 10px;color:#e9d5ff;font-weight:700;font-style:italic;">se Cisneros e Erasmo tivessem encontrado mais terreno fértil em Roma, a Reforma Protestante teria sido necessária?</span>',
+        ],
+      },
+      {
+        tipo: 'analise',
+        titulo: 'Inácio de Loyola: O Soldado Convertido',
+        paragrafos: [
+          'Em <span style="background:rgba(251,191,36,0.15);border:1px solid rgba(251,191,36,0.35);border-radius:5px;padding:1px 8px;color:#fde68a;font-weight:800;">1521</span> — o mesmo ano da Dieta de Worms — um nobre vasco chamado <span style="color:#fbbf24;font-weight:700;">Inácio de Loyola</span> estava se recuperando de um ferimento de bala em Pamplona. Durante a longa convalescença, sem romances de cavalaria para ler, voltou-se para as únicas leituras disponíveis: vidas de santos e a vida de Cristo.',
+          'Homem de temperamento <span style="color:#60a5fa;font-weight:600;">militar</span>, Loyola traduziu a espiritualidade em categorias de <span style="color:#60a5fa;font-weight:600;">disciplina, discernimento e missão</span>. Os <span style="color:#34d399;font-weight:700;font-style:italic;">Exercícios Espirituais</span> que desenvolveu — um método de quatro semanas de meditação, exame de consciência e disposição à vontade de Deus — tornaram-se um dos textos formativos mais influentes da história cristã.',
+          'Em 1534, Loyola e um grupo de amigos — entre eles <span style="color:#f97316;font-weight:700;">Francisco Xavier</span> — fundaram a <span style="color:#fbbf24;font-weight:700;">Companhia de Jesus</span>. Em 1540, o papa Paulo III a aprovou oficialmente. Seu quarto voto especial era de <span style="background:rgba(96,165,250,0.12);border-left:3px solid #60a5fa;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(200,230,255,0.95);">obediência direta ao papa para missão: iriam onde quer que o papa os enviasse.</span>',
+        ],
+        citacao: 'Loyola não abandonou o soldado quando se converteu — aprendeu a combater com outras armas: disciplina, discernimento, missão.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'Os Jesuítas: Educação, Missão e Recuperação',
+        paragrafos: [
+          'A Companhia de Jesus tornou-se o instrumento mais eficaz da Reforma Católica em múltiplas frentes. González identifica três áreas de impacto:',
+          '<span style="color:#fbbf24;font-weight:700;">Educação:</span> os jesuítas fundaram centenas de colégios e universidades. Sua pedagogia rigorosa — o <span style="color:#fbbf24;font-style:italic;">Ratio Studiorum</span> — formou gerações de católicos instruídos capazes de responder aos argumentos protestantes. Onde o protestantismo havia investido na <span style="color:#34d399;font-weight:600;">Bíblia em língua vernácula</span>, os jesuítas investiram em <span style="color:#fbbf24;font-weight:600;">escolas</span>.',
+          '<span style="color:#60a5fa;font-weight:700;">Missão:</span> <span style="color:#f97316;font-weight:600;">Francisco Xavier</span> alcançou a Índia, o Japão e as portas da China. A Companhia de Jesus levou o catolicismo às Américas, à África e à Ásia com uma intensidade missionária sem paralelo. O mundo que a Reforma Protestante europeizou, os jesuítas catolicizaram.',
+          '<span style="color:#c084fc;font-weight:700;">Recuperação de territórios:</span> na Europa Central — <span style="color:#c084fc;font-weight:600;">Polônia, Bavária, Áustria</span> — onde o protestantismo havia penetrado, os jesuítas trabalharam para reconquistar populações pela educação e pela pregação. Com considerável sucesso. A obediência inaciana era radical: o jesuíta ideal era disposto a obedecer "como cadáver nas mãos de quem o maneja" — <span style="background:rgba(251,113,133,0.12);border-left:3px solid #fb7185;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(255,220,225,0.95);">disciplina que podia gerar tanto santidade quanto abuso.</span>',
+        ],
+        citacao: 'Onde o protestantismo entregou a Bíblia ao povo, os jesuítas entregaram escolas. Ambas as apostas moldaram séculos.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'O Concílio de Trento: Reforma dos Costumes, Trincheira das Doutrinas',
+        paragrafos: [
+          'O <span style="color:#fbbf24;font-weight:700;">Concílio de Trento (1545–1563)</span> foi a resposta institucional mais importante da Igreja Católica à Reforma Protestante. González o caracteriza com uma imagem precisa: <span style="background:rgba(251,191,36,0.15);border:1px solid rgba(251,191,36,0.35);border-radius:5px;padding:1px 8px;color:#fde68a;font-weight:800;font-style:italic;">reforma dos costumes com endurecimento das doutrinas.</span>',
+          '<span style="color:#34d399;font-weight:700;">Por um lado</span>, Trento corrigiu abusos reais: a venda de indulgências foi regulamentada, a formação sacerdotal foi sistematizada com a criação obrigatória de <span style="color:#34d399;font-weight:600;">seminários</span> em cada diocese, o pluralismo de benefícios foi condenado.',
+          '<span style="color:#fb7185;font-weight:700;">Por outro lado</span>, em cada ponto onde o protestantismo havia desafiado a doutrina, Trento endureceu a posição oposta. <span style="color:#fb7185;font-weight:600;">Sola Scriptura?</span> Trento definiu que a Escritura E a Tradição são igualmente fontes de autoridade. <span style="color:#fb7185;font-weight:600;">Justificação pela fé?</span> Trento afirmou que as obras cooperam na salvação. <span style="background:rgba(251,113,133,0.12);border-left:3px solid #fb7185;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(255,220,225,0.95);">Trento definiu o catolicismo moderno — e fechou a porta à reconciliação com o protestantismo por séculos.</span>',
+        ],
+        citacao: 'Trento foi a porta que se fechou. Definiu com precisão o que a Igreja Católica era — e o que ela não era disposta a negociar.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'Teresa de Ávila e João da Cruz: A Via Interior',
+        paragrafos: [
+          'Enquanto os jesuítas reformavam pela educação e Trento reformava pela doutrina, outro caminho de renovação florescia na Espanha: a <span style="color:#c084fc;font-weight:700;">mística</span>.',
+          '<span style="color:#fbbf24;font-weight:700;">Teresa de Ávila</span> encontrou no convento uma vida religiosa mais próxima do clube social do que da disciplina espiritual. Depois de uma crise espiritual profunda, passou por uma conversão interior que a levou a reformar a ordem. Fundou os <span style="color:#fbbf24;font-weight:600;">Carmelitas Descalços</span> — retorno à pobreza, clausura rigorosa, oração contemplativa intensa.',
+          '<span style="color:#60a5fa;font-weight:700;">João da Cruz</span>, seu colaborador mais próximo, foi o místico-poeta que descreveu em linguagem de extraordinária beleza a jornada da alma a Deus: a <span style="background:rgba(192,132,252,0.15);border:1px solid rgba(192,132,252,0.35);border-radius:5px;padding:1px 8px;color:#e9d5ff;font-weight:800;font-style:italic;">"Noite Escura da Alma"</span> — o esvaziamento de todo apoio sensível até a união pura com Deus.',
+          'González identifica aqui um caminho que o protestantismo não desenvolveu da mesma forma: <span style="color:#c084fc;font-weight:600;">a renovação pela transformação interior, pelo silêncio e pela contemplação.</span> Teresa e João da Cruz responderam à crise espiritual do século XVI sem ruptura institucional — e deixaram uma herança que <span style="background:rgba(52,211,153,0.12);border-left:3px solid #34d399;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(200,255,235,0.95);">transcende fronteiras confessionais.</span>',
+        ],
+        citacao: 'Há formas de Deus que só se revelam quando os apoios humanos falham — e Teresa e João da Cruz aprenderam isso antes de ensinar.',
+        citacaoAutor: 'Justo L. González',
+      },
+    ],
+    perguntas: [
+      'González insiste: a Reforma Católica foi genuína, não apenas reação. Isso desafia narrativas protestantes que tendem a ver o catolicismo do século XVI apenas como corrupção a ser superada. Como você pensa a renovação espiritual dentro de uma instituição que também cometia erros graves?',
+      'Os jesuítas investiram em educação como forma de fortalecer a fé. Os protestantes investiram na Bíblia em língua vernácula. Quais são as apostas estratégicas que sua comunidade está fazendo para formar a geração seguinte?',
+      'Teresa de Ávila e João da Cruz oferecem um caminho de renovação pela contemplação e pela "noite escura." Que espaço a contemplação ocupa na sua própria espiritualidade? O que você perderia se esse espaço fosse removido?',
+    ],
+    oracao: 'Senhor, obrigado por nos mostrar que o Teu Espírito não ficou preso em nenhuma tradição confessional — que Loyola e Teresa e João da Cruz foram Tuas testemunhas tão genuínas quanto Lutero e Calvino e Knox.\n\nQue a grandeza de uns não nos cegue para a grandeza dos outros. Que aprendamos a receber a herança ampla da Igreja sem apagar as diferenças reais — mas também sem transformar diferenças em muros que impedem reconhecermos uns nos outros os frutos do mesmo Espírito.\n\nE que a "noite escura" que Teresa e João descrevem não nos assuste, mas nos prepare: há formas de Deus que só se revelam quando os apoios humanos falham.\n\nAmém.',
+    leituraComplementar: 'González, Justo L. A Era dos Reformadores. São Paulo: Vida Nova, 1995. Capítulo 12: "A Reforma Católica" (pp. 289–318).',
+  },
 };
 
 export default DIAS_CONTENT;
