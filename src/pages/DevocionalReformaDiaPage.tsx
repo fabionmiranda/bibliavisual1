@@ -140,43 +140,6 @@ export default function DevocionalReformaDiaPage() {
           </div>
         </motion.div>
 
-        {/* ── Versículo do dia ── */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.12 }}
-          style={{
-            marginBottom: 56,
-            borderRadius: 22,
-            border: `1.5px solid rgba(${accentRgb},0.32)`,
-            background: `rgba(${accentRgb},0.08)`,
-            padding: 'clamp(26px,4vw,40px)',
-            position: 'relative', overflow: 'hidden',
-          }}
-        >
-          <div style={{ position: 'absolute', top: -24, right: -24, width: 130, height: 130, borderRadius: '50%', background: accent, filter: 'blur(45px)', opacity: 0.12, pointerEvents: 'none' }} />
-          <div style={{ position: 'relative' }}>
-            <div style={{ ...T.label, color: `rgba(${accentRgb},0.75)`, marginBottom: 18 }}>
-              Versículo do Dia
-            </div>
-            <blockquote style={{
-              margin: '0 0 16px',
-              fontSize: 'clamp(20px,3vw,26px)',
-              fontWeight: 700,
-              lineHeight: 1.60,
-              color: '#fff',
-              fontStyle: 'italic',
-              borderLeft: `4px solid ${accent}`,
-              paddingLeft: 22,
-            }}>
-              "{content.versiculo}"
-            </blockquote>
-            <p style={{ margin: 0, fontSize: 14, fontWeight: 800, color: `rgba(${accentRgb},0.85)`, letterSpacing: '0.10em' }}>
-              {content.versiculoRef}
-            </p>
-          </div>
-        </motion.div>
-
         {/* ── Seções de conteúdo ── */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: 52 }}>
           {content.secoes.map((secao, i) => {
