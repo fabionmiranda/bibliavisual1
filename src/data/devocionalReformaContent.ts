@@ -766,6 +766,160 @@ const DIAS_CONTENT: Record<number, DiaDevoContent> = {
     oracao: 'Senhor, ao iniciarmos esta jornada pelo século XVI, pedimos sabedoria para olhar a história sem ingenuidade e sem cinismo. Ajuda-nos a ver Tua mão nos eventos que pareciam apenas políticos, nos conflitos que pareciam apenas humanos, nas rupturas que produziram consequências que ninguém previu.\n\nQue este estudo não seja apenas informação histórica, mas formação espiritual. Que ao conhecermos melhor de onde viemos, saibamos melhor para onde vamos.\n\nAmém.',
     leituraComplementar: 'González, Justo L. A Era dos Reformadores. São Paulo: Vida Nova, 1995. (Série "E até aos confins da Terra", vol. 6) — Introdução e Capítulo 14 (para visão panorâmica).',
   },
+  13: {
+    dia: 13,
+    data: '13 de outubro de 2026',
+    titulo: 'O Luteranismo após Lutero: Guerra, Derrota e Sobrevivência',
+    subtitulo: 'Capítulo 9',
+    versiculo: 'Porque nem a morte, nem a vida, nem os anjos, nem os principados, nem as potestades, nem o presente, nem o porvir, nem a altura, nem a profundidade, nem qualquer outra criatura nos poderá separar do amor de Deus, que está em Cristo Jesus nosso Senhor.',
+    versiculoRef: 'Romanos 8.38–39',
+    secoes: [
+      {
+        tipo: 'contexto',
+        titulo: 'O Momento Heroico Acabou',
+        paragrafos: [
+          'Até aqui, acompanhamos a Reforma em seu <span style="color:#fbbf24;font-weight:700;">momento heroico</span>: Lutero diante de Worms, Calvino sistematizando as Institutas, Knox confrontando rainhas. Hoje González nos conduz a um capítulo mais <span style="color:#fb7185;font-weight:600;">sombrio</span> — e mais instrutivo: o que acontece com um movimento reformador quando seu fundador morre e os inimigos atacam?',
+          'Lutero morreu em fevereiro de <span style="background:rgba(251,191,36,0.15);border:1px solid rgba(251,191,36,0.35);border-radius:5px;padding:1px 8px;color:#fde68a;font-weight:800;">1546</span>. Poucos meses depois, Carlos V lançou a <span style="color:#fb7185;font-weight:700;">Guerra de Esmalcalda</span> — e a venceu. A pergunta que toda a Europa protestante se fazia era a mesma que toda geração perseguida se faz: <span style="background:rgba(192,132,252,0.15);border:1px solid rgba(192,132,252,0.35);border-radius:5px;padding:2px 10px;color:#e9d5ff;font-weight:700;font-style:italic;">sobreviveria a Reforma sem Lutero e sem vitória militar?</span>',
+        ],
+      },
+      {
+        tipo: 'analise',
+        titulo: 'A Liga de Esmalcalda e a Derrota de Mühlberg',
+        paragrafos: [
+          'Os príncipes protestantes alemães haviam formado a <span style="color:#fbbf24;font-weight:700;">Liga de Esmalcalda</span> em 1531 como aliança de defesa mútua. Por mais de uma década, Carlos V tolerou sua existência — precisava deles contra os <span style="color:#60a5fa;font-weight:600;">turcos</span> e contra <span style="color:#60a5fa;font-weight:600;">Francisco I da França</span>. Quando esses conflitos se resolveram, voltou sua atenção para a Alemanha.',
+          'Na batalha de <span style="color:#fb7185;font-weight:700;">Mühlberg (1547)</span>, Carlos V derrotou os príncipes protestantes de forma esmagadora. <span style="color:#f97316;font-weight:600;">Felipe de Hesse</span> e <span style="color:#f97316;font-weight:600;">João Frederico da Saxônia</span> foram capturados. O movimento parecia decapitado.',
+          'González aponta um detalhe revelador: a Liga já estava fragilizada antes da batalha. <span style="color:#fb7185;font-weight:700;">Maurício da Saxônia</span> — duque luterano — havia <span style="background:rgba(251,113,133,0.12);border-left:3px solid #fb7185;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(255,220,225,0.95);">traído a Liga em favor de Carlos V em troca de territórios.</span> A Reforma foi vendida por um de seus próprios — lição que toda geração da Igreja precisa aprender de novo.',
+        ],
+        citacao: 'O maior inimigo de um movimento muitas vezes não é o perseguidor externo, mas a traição que vem de dentro.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'O Interim de Augsburgo: O Limite do Poder Político',
+        paragrafos: [
+          'Com os príncipes capturados, Carlos V tentou impor uma solução: o <span style="color:#fbbf24;font-weight:700;">Interim de Augsburgo (1548)</span>. Era um compromisso: as regiões protestantes voltariam ao catolicismo, com apenas duas concessões — os clérigos poderiam se casar e os leigos receber a Ceia sob as <span style="color:#34d399;font-weight:600;">duas espécies (pão e vinho)</span>.',
+          'A solução foi um fracasso em <strong style="color:#fff;">ambos os lados</strong>. Os católicos achavam que as concessões eram demais. Os protestantes, que eram de menos — <span style="background:rgba(52,211,153,0.12);border-left:3px solid #34d399;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(200,255,235,0.95);">nenhuma das doutrinas centrais havia sido tocada: justificação pela fé, autoridade da Escritura, rejeição do purgatório.</span>',
+          'O Interim revelou o que González chama de <span style="color:#c084fc;font-weight:700;">limite do poder político sobre a consciência</span>: Carlos V podia capturar príncipes, mas não podia capturar convicções. A Reforma havia entrado profundamente demais na alma do povo alemão para ser revertida por decreto. <span style="color:#fbbf24;font-style:italic;">Reis podem mudar fronteiras; não podem mudar fés.</span>',
+        ],
+        citacao: 'Carlos V podia capturar príncipes, mas não podia capturar convicções.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'A Reviravolta de Maurício e a Paz de Augsburgo',
+        paragrafos: [
+          'O mesmo Maurício da Saxônia que havia traído os protestantes voltou a trair — desta vez, <span style="color:#34d399;font-weight:700;">o imperador</span>. Em 1552, atacou Carlos V de surpresa, quase o capturando. O imperador, exausto de guerras, negociou.',
+          'O resultado foi a <span style="color:#fbbf24;font-weight:800;">Paz de Augsburgo (1555)</span>: cada príncipe alemão poderia escolher entre luteranismo e catolicismo para o seu território. O princípio ficou conhecido pela fórmula latina <span style="background:rgba(251,191,36,0.15);border:1px solid rgba(251,191,36,0.35);border-radius:5px;padding:1px 8px;color:#fde68a;font-weight:800;font-style:italic;">cuius regio, eius religio</span> — de quem o território, dessa a religião.',
+          'González é preciso sobre o significado histórico: pela primeira vez na cristandade europeia, um acordo legal reconhecia que podia haver <span style="color:#34d399;font-weight:700;">mais de uma religião cristã</span>. Era o fim prático do ideal medieval de uma única Igreja unificada sob Roma. <span style="background:rgba(52,211,153,0.12);border-left:3px solid #34d399;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(200,255,235,0.95);">O pluralismo religioso não nasceu da tolerância — nasceu da exaustão e do equilíbrio de forças.</span>',
+          '<strong style="color:#fb7185;">Limitação importante:</strong> o <span style="color:#c084fc;font-weight:700;">calvinismo</span> não foi reconhecido pela Paz de Augsburgo — apenas o luteranismo. Os calvinistas teriam que encontrar outras formas de legitimidade, o que contribuiu para sua resistência mais radical ao poder estatal.',
+        ],
+        citacao: 'O pluralismo religioso não nasceu da tolerância — nasceu da exaustão e do equilíbrio de forças.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'Divisões Internas e a Fórmula de Concórdia',
+        paragrafos: [
+          'Com a ameaça externa momentaneamente resolvida, os luteranos voltaram-se para suas <span style="color:#fb7185;font-weight:700;">disputas internas</span>. O principal conflito foi entre os seguidores de <span style="color:#fbbf24;font-weight:700;">Melanchthon</span> — mais conciliatórios com o calvinismo e com os católicos — e os <span style="color:#f97316;font-weight:700;">"gnesioluteranos"</span> (luteranos genuínos), que acusavam Melanchthon de trair o legado de Lutero.',
+          'As disputas envolviam questões centrais: qual o papel das obras na salvação? A vontade humana coopera de alguma forma com a graça? A presença de Cristo na Ceia é <span style="color:#c084fc;font-weight:600;">real</span> ou <span style="color:#60a5fa;font-weight:600;">espiritual</span>?',
+          'A solução veio com a <span style="color:#34d399;font-weight:700;">Fórmula de Concórdia (1577)</span> — documento que estabeleceu as posições luteranas oficiais e criou a base do <strong style="color:#fff;">luteranismo confessional</strong> que persiste até hoje. A lição: movimentos precisam formular o que creem com precisão — não apenas para se defender de inimigos externos, mas para <span style="background:rgba(52,211,153,0.12);border-left:3px solid #34d399;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(200,255,235,0.95);">preservar a herança contra a diluição interna.</span>',
+        ],
+      },
+      {
+        tipo: 'analise',
+        titulo: 'A Escandinávia: Reforma por Decreto',
+        paragrafos: [
+          'A expansão mais ordenada — e mais ambígua — do luteranismo ocorreu ao norte. <span style="color:#60a5fa;font-weight:700;">Gustavo Vasa</span>, rei da Suécia, adotou o luteranismo em 1527 — não primariamente por convicção teológica, mas porque <span style="color:#fb7185;font-weight:600;">precisava dos recursos das igrejas e dos mosteiros</span> para consolidar seu novo estado nacional.',
+          'A Dinamarca, a Noruega e a Finlândia seguiram padrão semelhante: a Reforma foi imposta de cima para baixo pelos reis, sem os conflitos sangrentos da Alemanha. González observa o paradoxo: <span style="background:rgba(251,191,36,0.15);border:1px solid rgba(251,191,36,0.35);border-radius:5px;padding:1px 8px;color:#fde68a;font-weight:700;">as reformas mais tranquilas foram as mais oportunistas.</span> <em>A profundidade da convicção não se mede pela facilidade da adoção.</em>',
+        ],
+        citacao: 'As reformas mais tranquilas foram as mais oportunistas. A profundidade da convicção não se mede pela facilidade da adoção.',
+        citacaoAutor: 'Justo L. González',
+      },
+    ],
+    perguntas: [
+      'A Reforma sobreviveu à derrota militar porque já havia penetrado a consciência popular. O que isso diz sobre a diferença entre um movimento espiritual genuíno e um projeto político que depende de vitórias para sobreviver?',
+      'O Interim de Augsburgo mostrou que o poder político tem limites sobre a consciência religiosa. Onde você percebe esse limite hoje — situações em que decretos ou pressões externas não conseguem tocar convicções mais profundas?',
+      'A Paz de Augsburgo nasceu da exaustão, não da tolerância. O pluralismo religioso moderno tem raízes semelhantes? Como isso deve moldar nossa gratidão pela liberdade religiosa que temos?',
+    ],
+    oracao: 'Senhor, obrigado porque nenhuma derrota política pode extinguir o fogo que o Teu Espírito acende nas consciências. A Reforma sobreviveu à Guerra de Esmalcalda não pela força dos príncipes, mas porque havia entrado fundo demais na alma do povo para ser arrancada por decreto.\n\nQue esse mesmo fogo arda em nós — não a religiosidade que depende de condições favoráveis, mas a convicção que resiste quando as condições se invertem.\n\nE que aprendamos com as divisões internas do luteranismo: o maior inimigo de um movimento muitas vezes não é o perseguidor externo, mas a disputa interna que consume as energias que deveriam ser dirigidas ao mundo.\n\nAmém.',
+    leituraComplementar: 'González, Justo L. A Era dos Reformadores. São Paulo: Vida Nova, 1995. Capítulo 9: "O Curso Posterior do Luteranismo" (pp. 215–240).',
+  },
+  14: {
+    dia: 14,
+    data: '14 de outubro de 2026',
+    titulo: 'Fé e Resistência: A Reforma nos Países Baixos',
+    subtitulo: 'Capítulo 10',
+    versiculo: 'Sede firmes e corajosos. Não temais nem vos assusteis diante deles, porque o Senhor, vosso Deus, vai convosco; não vos abandonará nem vos desamparará.',
+    versiculoRef: 'Deuteronômio 31.6',
+    secoes: [
+      {
+        tipo: 'contexto',
+        titulo: 'Um Teatro Diferente — e Igualmente Dramático',
+        paragrafos: [
+          'Se o capítulo anterior nos mostrou a Reforma lutando para sobreviver na Alemanha, este nos leva para um teatro diferente e igualmente dramático: <span style="color:#60a5fa;font-weight:700;">os Países Baixos</span>. Aqui a Reforma não apenas sobreviveu — ela se fundiu com a resistência de um povo inteiro e produziu a <span style="color:#34d399;font-weight:700;">primeira república protestante da Europa moderna</span>.',
+          'González nos apresenta uma Reforma <span style="color:#fbbf24;font-weight:700;">inseparável da política</span>, onde a fé calvinista e a luta pela independência nacional se tornaram uma única chama. A pergunta que esse capítulo levanta é perturbadora e atual: <span style="background:rgba(192,132,252,0.15);border:1px solid rgba(192,132,252,0.35);border-radius:5px;padding:2px 10px;color:#e9d5ff;font-weight:700;font-style:italic;">quando fé e política se fundem, quem está a serviço de quem?</span>',
+        ],
+      },
+      {
+        tipo: 'analise',
+        titulo: 'As Dezessete Províncias e o Domínio de Felipe II',
+        paragrafos: [
+          'Os Países Baixos — o que hoje é a Holanda, a Bélgica e o Luxemburgo — eram uma das regiões mais <span style="color:#fbbf24;font-weight:700;">prósperas e comercialmente desenvolvidas</span> da Europa. Foram herdados por <span style="color:#60a5fa;font-weight:600;">Carlos V</span>, cujo filho <span style="color:#f97316;font-weight:700;">Felipe II</span> os recebeu como parte do enorme império espanhol.',
+          'O problema era de temperamento e de política. Carlos V, nascido em Gante, compreendia a mentalidade flamenga. <span style="background:rgba(251,113,133,0.12);border-left:3px solid #fb7185;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(255,220,225,0.95);">Felipe II nunca visitou os Países Baixos depois de assumir o poder</span> — governava de Madrid uma região que não entendia e que não queria entender. Quando determinou a implantação da <span style="color:#fb7185;font-weight:700;">Inquisição espanhola</span> e a centralização do poder, a reação foi imediata e violenta.',
+        ],
+      },
+      {
+        tipo: 'analise',
+        titulo: 'Os Geuzen: O Insulto Transformado em Honra',
+        paragrafos: [
+          'Em 1566, um grupo de aristocratas flamengos apresentou uma petição pedindo o fim da Inquisição. Um conselheiro espanhol, vendo o grupo de nobres mal-vestidos, os chamou de <span style="color:#fb7185;font-weight:700;font-style:italic;">"mendigos"</span> (<em>geuzen</em>, em holandês). O insulto foi ouvido.',
+          'Os nobres adotaram o nome com orgulho. Prenderam ao pescoço <span style="color:#fbbf24;font-weight:600;">bolsas de mendigos como medalhas de honra</span>, bradando: <span style="background:rgba(251,191,36,0.15);border:1px solid rgba(251,191,36,0.35);border-radius:5px;padding:1px 8px;color:#fde68a;font-weight:800;font-style:italic;">"Somos mendigos de Deus e do rei!"</span>',
+          'González observa o que acontece quando um povo oprimido se apodera do insulto dos opressores e o transforma em identidade: <span style="color:#34d399;font-weight:700;">nasce um movimento que não pode mais ser intimidado por palavras.</span> A revolta se intensificou. Igrejas foram saqueadas em uma onda de <span style="color:#c084fc;font-weight:600;">iconoclasmo</span>. Felipe II respondeu com o <span style="color:#fb7185;font-weight:700;">Duque de Alba</span>.',
+        ],
+        citacao: 'Quando um povo oprimido se apodera do insulto dos opressores e o transforma em identidade, nasce um movimento que não pode mais ser intimidado por palavras.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'O Duque de Alba e o Tribunal de Sangue',
+        paragrafos: [
+          'O Duque de Alba chegou com <span style="color:#fb7185;font-weight:700;">dez mil soldados</span> em 1567 e instalou o "Conselho de Tumultos" — imediatamente apelidado pelo povo de <span style="background:rgba(251,113,133,0.15);border:1px solid rgba(251,113,133,0.35);border-radius:5px;padding:1px 8px;color:#fecdd3;font-weight:800;font-style:italic;">Tribunal de Sangue</span>. Milhares foram executados — entre eles, os condes de <span style="color:#f97316;font-weight:600;">Egmont</span> e <span style="color:#f97316;font-weight:600;">Hoorn</span>, líderes católicos moderados que haviam simplesmente pedido clemência.',
+          'O resultado foi o oposto do pretendido. <span style="background:rgba(52,211,153,0.12);border-left:3px solid #34d399;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(200,255,235,0.95);">A repressão radical não eliminou a resistência — a radicalizou e a expandiu.</span> González formula o padrão que se repete na história: a Inquisição como geradora do contrário. A política que pretendia extirpar o protestantismo o vinculou definitivamente à <span style="color:#fbbf24;font-weight:700;">identidade nacional flamenga</span>.',
+        ],
+        citacao: 'A Inquisição que pretendia extirpar o protestantismo o vinculou definitivamente à identidade nacional flamenga.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'Guilherme de Orange e o Sítio de Leyde',
+        paragrafos: [
+          'A figura central da resistência foi <span style="color:#fbbf24;font-weight:700;">Guilherme de Orange</span>, chamado "O Taciturno" por seu cuidado extremo com as palavras. Originalmente católico, converteu-se ao calvinismo por entender que era a força capaz de manter unida a resistência sob perseguição.',
+          'O episódio mais marcante foi o <span style="color:#60a5fa;font-weight:700;">Sítio de Leyde (1574)</span>. Os espanhóis sitiaram a cidade por meses. A fome chegou ao extremo. Quando enviados espanhóis propuseram a rendição, um habitante respondeu: <span style="background:rgba(251,191,36,0.15);border:1px solid rgba(251,191,36,0.35);border-radius:5px;padding:1px 8px;color:#fde68a;font-weight:700;font-style:italic;">"Temos dois braços; se a fome chegar a tal ponto, comeremos um deles para continuar lutando com o outro."</span>',
+          'Os holandeses abriram os <span style="color:#34d399;font-weight:700;">próprios diques</span> — inundando suas terras — para desorientar as tropas espanholas. Quando a cidade foi liberada, os habitantes pediam <span style="color:#fbbf24;font-style:italic;">pão e arenque, não glória.</span> Leyde tornou-se o símbolo da resistência alimentada pela fé calvinista: convicção de que Deus havia eleito aquele povo para resistir, e que o sofrimento tinha sentido dentro de uma <span style="color:#c084fc;font-weight:600;">providência maior</span>.',
+        ],
+        citacao: 'Os habitantes de Leyde pediam pão e arenque, não glória. A resistência genuína não busca reconhecimento — busca sobreviver para testemunhar.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'A República e a Tolerância Paradoxal',
+        paragrafos: [
+          'A <span style="color:#f97316;font-weight:700;">Guerra dos Oitenta Anos (1568–1648)</span> resultou finalmente na independência das províncias do norte como <span style="color:#34d399;font-weight:700;">República das Províncias Unidas</span> — a Holanda. Guilherme de Orange foi assassinado em 1584, mas o movimento sobreviveu ao seu líder.',
+          'A República Holandesa tornou-se, paradoxalmente, o <span style="color:#fbbf24;font-weight:700;">primeiro estado europeu a praticar alguma tolerância religiosa</span>. Judeus perseguidos da Espanha e de Portugal, protestantes de toda espécie, até católicos moderados — todos encontraram refúgio em Amsterdã.',
+          'González identifica o paradoxo com precisão: <span style="background:rgba(52,211,153,0.12);border-left:3px solid #34d399;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(200,255,235,0.95);">a tolerância holandesa não nasceu de princípios filosóficos liberais, mas da necessidade prática de uma sociedade mercantil.</span> A virtude política nem sempre nasce da virtude moral — às vezes nasce do interesse iluminado. Isso não invalida o resultado, mas deve nos fazer perguntar: <span style="color:#fbbf24;font-style:italic;">em que se sustenta a liberdade religiosa que desfrutamos hoje?</span>',
+        ],
+        citacao: 'A virtude política nem sempre nasce da virtude moral — às vezes nasce do interesse iluminado.',
+        citacaoAutor: 'Justo L. González',
+      },
+    ],
+    perguntas: [
+      'Os Geuzen transformaram o insulto "mendigos" em honra e identidade. Você já experimentou ser chamado de algo depreciativo por causa da fé ou de convicções? Como essa experiência moldou — ou poderia moldar — sua identidade?',
+      'O calvinismo provou ser especialmente resiliente sob perseguição porque sua teologia da eleição e providência dava estrutura para o sofrimento. Que recursos teológicos você tem para dar sentido ao sofrimento? São suficientes para sustentar uma fé perseguida?',
+      'A tolerância holandesa nasceu do interesse comercial, não da convicção moral. Você confia mais na tolerância baseada em princípios ou na tolerância baseada em interesse mútuo? Qual delas é mais durável?',
+    ],
+    oracao: 'Senhor, os habitantes de Leyde abriram os diques de suas próprias terras para resistir ao inimigo. Que aprendamos com esse gesto a disposição de sacrificar o que nos é mais precioso para defender o que é essencial.\n\nObrigado pelos que, sob perseguição extrema, não abandonaram a fé — mas a tornaram mais profunda. E que a história dos Países Baixos nos lembre: a repressão raramente extingue o que é genuíno; muitas vezes, só o fortalece.\n\nQue tenhamos fé suficiente para suportar o que vier, e sabedoria para distinguir quando o sofrimento tem propósito e quando simplesmente precisa ser aliviado.\n\nAmém.',
+    leituraComplementar: 'González, Justo L. A Era dos Reformadores. São Paulo: Vida Nova, 1995. Capítulo 10: "A Reforma nos Países Baixos" (pp. 241–264).',
+  },
 };
 
 export default DIAS_CONTENT;
