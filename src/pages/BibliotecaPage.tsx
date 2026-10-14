@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import {
   BookMarked, Star, User, FileText, BookOpen,
   Layers, Search, Mic2, Landmark, Handshake, Cross,
-  ChevronRight, GraduationCap,
+  ChevronRight, GraduationCap, Shield,
 } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -168,6 +168,18 @@ function getSecaoPrincipal(pt: boolean) {
       badge: undefined as string | undefined,
       bg: 'linear-gradient(145deg, #190007 0%, #0f0005 50%, #090608 100%)',
       Pattern: PatternWave,
+    },
+    {
+      icon: Shield,
+      label: pt ? 'Heróis da Fé' : 'Heroes of Faith',
+      descricao: pt
+        ? 'Série de estudos sobre personagens bíblicos — suas vidas, falhas, fé e o Deus que os transformou.'
+        : 'A study series on biblical characters — their lives, failures, faith and the God who transformed them.',
+      accent: '#f97316',
+      path: '/estudos/herois-da-fe',
+      badge: pt ? 'Em breve' : 'Coming soon',
+      bg: 'linear-gradient(145deg, #1a0a00 0%, #120700 50%, #090604 100%)',
+      Pattern: PatternHex,
     },
     {
       icon: Layers,
