@@ -143,17 +143,43 @@ export default function HeroisDaFePage() {
             </p>
           </motion.div>
 
+          {/* Aula disponível */}
+          <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.18 }} className="mb-6">
+            <p className="text-[10px] font-black uppercase tracking-widest text-white/30 mb-3">Aulas Disponíveis</p>
+            <Link
+              to="/estudos/herois-da-fe/aula-01"
+              className="group flex items-center gap-5 rounded-2xl p-5 hover:scale-[1.015] active:scale-[0.99] transition-all duration-200"
+              style={{ background: 'linear-gradient(145deg,#1a0a00,#0d0600)', border: `1.5px solid ${ACCENT}45` }}
+            >
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0 font-black text-lg"
+                style={{ background: `${ACCENT}25`, border: `1px solid ${ACCENT}45`, color: ACCENT }}>
+                01
+              </div>
+              <div className="flex-1">
+                <p className="text-[10px] font-black uppercase tracking-widest mb-0.5" style={{ color: `${ACCENT}88` }}>Panorama · Hebreus 10.35–12.2</p>
+                <p className="text-white font-black text-base">O Que Aprendemos com os Heróis da Fé</p>
+                <p className="text-white/45 text-xs mt-0.5">16 heróis nomeados · 5 galerias · As 5 grandes lições · Conclusão: Jesus</p>
+              </div>
+              <div className="shrink-0 flex items-center gap-1.5">
+                <span className="text-[9px] font-black uppercase tracking-widest px-2 py-1 rounded-full" style={{ color: ACCENT, background: `${ACCENT}18`, border: `1px solid ${ACCENT}35` }}>
+                  Disponível
+                </span>
+                <ChevronRight className="w-4 h-4 text-white/30 group-hover:text-white/70 transition-colors" />
+              </div>
+            </Link>
+          </motion.div>
+
           {/* banner em construção */}
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="rounded-2xl p-6 mb-14 flex items-center gap-4"
-            style={{ background: `${ACCENT}10`, border: `1.5px solid ${ACCENT}28` }}
+            transition={{ delay: 0.22 }}
+            className="rounded-2xl p-5 mb-10 flex items-center gap-4"
+            style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.08)' }}
           >
-            <Lock className="w-5 h-5 shrink-0" style={{ color: ACCENT }} />
-            <p className="text-white/60 text-sm leading-relaxed">
-              Esta série está em produção. Os estudos serão liberados progressivamente — acompanhe as atualizações.
+            <Lock className="w-4 h-4 shrink-0 text-white/25" />
+            <p className="text-white/40 text-sm leading-relaxed">
+              Os próximos estudos serão liberados progressivamente — um herói por vez.
             </p>
           </motion.div>
 

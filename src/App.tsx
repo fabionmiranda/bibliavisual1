@@ -56,6 +56,7 @@ import ArtigosPage from './pages/ArtigosPage';
 import ArtigoPage from './pages/ArtigoPage';
 import BibliotecaArtigosPage from './pages/BibliotecaArtigosPage';
 import HeroisDaFePage from './pages/HeroisDaFePage';
+import HeroisDaFeAula01Page from './pages/HeroisDaFeAula01Page';
 import Watermark from './components/Watermark';
 import LoginPage from './pages/LoginPage';
 import ProtectedRoute from './components/ProtectedRoute';
@@ -115,7 +116,8 @@ export default function App() {
           <Route path="/biblioteca/livros"                           element={<BibliotecaLivrosPage />} />
           <Route path="/biblioteca/livros/is-there-meaning"        element={<LivroIsThereiningPage />} />
           <Route path="/biblioteca/livros/os-batistas-e-a-biblia" element={<LivroBatistasBibliaPage />} />
-          <Route path="/estudos/herois-da-fe"          element={<HeroisDaFePage />} />
+          <Route path="/estudos/herois-da-fe"           element={<HeroisDaFePage />} />
+          <Route path="/estudos/herois-da-fe/aula-01" element={<HeroisDaFeAula01Page />} />
           <Route path="/biblioteca/artigos"           element={<BibliotecaArtigosPage />} />
           <Route path="/biblioteca/semana"            element={<BibliotecaSemanaPage />} />
           <Route path="/biblioteca/autores" element={<BibliotecaAutoresPage />} />
