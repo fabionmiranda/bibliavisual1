@@ -26,6 +26,19 @@ interface EstudoCard {
 
 const ESTUDOS: EstudoCard[] = [
   {
+    id: 'herois',
+    titulo: 'Heróis da Fé',
+    subtitulo: 'Série de Estudos Bíblicos',
+    descricao: 'Estudos sobre personagens bíblicos — suas vidas, falhas, fé e o Deus que os chamou, sustentou e transformou. Baseado em Hebreus 11.',
+    cor: ORANGE,
+    badge: 'Em breve',
+    capitulos: 10,
+    path: '/estudos/herois-da-fe',
+    disponivel: false,
+    bg: 'linear-gradient(145deg, #1a0a00 0%, #120700 50%, #090604 100%)',
+    sigla: 'Hb 11',
+  },
+  {
     id: 'batista',
     titulo: 'Confissão Batista de 1689',
     subtitulo: 'Discipulado Confessional Batista',
