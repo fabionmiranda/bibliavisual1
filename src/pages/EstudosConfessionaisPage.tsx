@@ -33,7 +33,7 @@ const ESTUDOS: EstudoCard[] = [
     cor: ORANGE,
     badge: 'Em breve',
     capitulos: 10,
-    path: '/estudos/herois-da-fe',
+    path: '/discipulado/confessional/herois-da-fe',
     disponivel: false,
     bg: 'linear-gradient(145deg, #1a0a00 0%, #120700 50%, #090604 100%)',
     sigla: 'Hb 11',

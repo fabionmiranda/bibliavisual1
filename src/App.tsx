@@ -116,8 +116,8 @@ export default function App() {
           <Route path="/biblioteca/livros"                           element={<BibliotecaLivrosPage />} />
           <Route path="/biblioteca/livros/is-there-meaning"        element={<LivroIsThereiningPage />} />
           <Route path="/biblioteca/livros/os-batistas-e-a-biblia" element={<LivroBatistasBibliaPage />} />
-          <Route path="/estudos/herois-da-fe"           element={<HeroisDaFePage />} />
-          <Route path="/estudos/herois-da-fe/aula-01" element={<HeroisDaFeAula01Page />} />
+          <Route path="/discipulado/confessional/herois-da-fe"          element={<HeroisDaFePage />} />
+          <Route path="/discipulado/confessional/herois-da-fe/aula-01" element={<HeroisDaFeAula01Page />} />
           <Route path="/biblioteca/artigos"           element={<BibliotecaArtigosPage />} />
           <Route path="/biblioteca/semana"            element={<BibliotecaSemanaPage />} />
           <Route path="/biblioteca/autores" element={<BibliotecaAutoresPage />} />

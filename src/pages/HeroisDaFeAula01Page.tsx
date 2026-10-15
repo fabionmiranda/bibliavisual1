@@ -280,8 +280,12 @@ export default function HeroisDaFeAula01Page() {
 
           {/* breadcrumb */}
           <motion.div initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} className="flex items-center gap-2 mb-10">
-            <Link to="/estudos/herois-da-fe" className="flex items-center gap-1.5 text-white/35 hover:text-white/70 text-xs font-bold uppercase tracking-widest transition-colors">
+            <Link to="/discipulado/confessional" className="flex items-center gap-1.5 text-white/35 hover:text-white/70 text-xs font-bold uppercase tracking-widest transition-colors">
               <ArrowLeft className="w-3 h-3" />
+              Estudos Confessionais
+            </Link>
+            <ChevronRight className="w-3 h-3 text-white/20" />
+            <Link to="/discipulado/confessional/herois-da-fe" className="text-white/35 hover:text-white/70 text-xs font-bold uppercase tracking-widest transition-colors">
               Heróis da Fé
             </Link>
             <ChevronRight className="w-3 h-3 text-white/20" />
