@@ -342,7 +342,7 @@ const CINCO_LICOES = [
 function KeywordBadge({ word, cor }: { word: string; cor: string }) {
   return (
     <span
-      className="inline-block text-[10px] font-black uppercase tracking-widest px-2.5 py-1 rounded-full"
+      className="inline-block text-xs font-black uppercase tracking-widest px-3 py-1 rounded-full"
       style={{ background: cor + '20', color: cor, border: `1px solid ${cor}40` }}
     >
       {word}
@@ -361,14 +361,14 @@ function HeroiCard({ heroi, delay }: { heroi: Heroi; delay: number }) {
       style={{ background: heroi.cor + '0a', border: `1px solid ${heroi.cor}28` }}
     >
       {/* topo */}
-      <div className="p-4 flex flex-col gap-2.5">
-        <div className="flex items-start justify-between gap-2">
-          <h4 className="text-white font-black text-base leading-tight">{heroi.nome}</h4>
-          <span className="text-xs font-bold shrink-0 mt-0.5" style={{ color: heroi.cor + 'aa' }}>{heroi.versiculo}</span>
+      <div className="p-5 flex flex-col gap-3">
+        <div className="flex items-start justify-between gap-3">
+          <h4 className="text-white font-black text-lg sm:text-xl leading-tight">{heroi.nome}</h4>
+          <span className="text-sm font-bold shrink-0 mt-0.5" style={{ color: heroi.cor + 'aa' }}>{heroi.versiculo}</span>
         </div>
-        <p className="text-white/65 text-sm leading-relaxed italic">"{heroi.pelafe}"</p>
-        <div className="flex items-center justify-between pt-2" style={{ borderTop: `1px solid ${heroi.cor}18` }}>
-          <span className="text-xs text-white/35 font-medium">{heroi.atRef}</span>
+        <p className="text-white/75 text-base sm:text-lg leading-relaxed italic">"{heroi.pelafe}"</p>
+        <div className="flex items-center justify-between pt-2.5" style={{ borderTop: `1px solid ${heroi.cor}18` }}>
+          <span className="text-sm text-white/40 font-medium">{heroi.atRef}</span>
           <KeywordBadge word={heroi.keyword} cor={heroi.cor} />
         </div>
       </div>
@@ -376,15 +376,15 @@ function HeroiCard({ heroi, delay }: { heroi: Heroi; delay: number }) {
       {/* contexto AT */}
       <button
         onClick={() => setExpanded(v => !v)}
-        className="flex items-center gap-2 px-4 py-2.5 w-full text-left transition-colors hover:brightness-110"
+        className="flex items-center gap-2.5 px-5 py-3.5 w-full text-left transition-colors hover:brightness-110"
         style={{ background: heroi.cor + '14', borderTop: `1px solid ${heroi.cor}25` }}
       >
-        <Scroll className="w-3.5 h-3.5 shrink-0" style={{ color: heroi.cor }} />
-        <span className="text-xs font-black uppercase tracking-widest flex-1" style={{ color: heroi.cor + 'cc' }}>
+        <Scroll className="w-4 h-4 shrink-0" style={{ color: heroi.cor }} />
+        <span className="text-sm font-black uppercase tracking-widest flex-1" style={{ color: heroi.cor + 'cc' }}>
           O que o AT nos ensina
         </span>
         <motion.div animate={{ rotate: expanded ? 180 : 0 }} transition={{ duration: 0.2 }}>
-          <ChevronDown className="w-3.5 h-3.5" style={{ color: heroi.cor + '88' }} />
+          <ChevronDown className="w-4 h-4" style={{ color: heroi.cor + '88' }} />
         </motion.div>
       </button>
 
@@ -397,7 +397,7 @@ function HeroiCard({ heroi, delay }: { heroi: Heroi; delay: number }) {
             transition={{ duration: 0.28 }}
             className="overflow-hidden"
           >
-            <p className="px-4 py-4 text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.70)', borderTop: `1px solid ${heroi.cor}15` }}>
+            <p className="px-5 py-5 text-base sm:text-lg leading-relaxed" style={{ color: 'rgba(255,255,255,0.78)', borderTop: `1px solid ${heroi.cor}15` }}>
               {heroi.atContexto}
             </p>
           </motion.div>
@@ -423,8 +423,8 @@ function GaleriaSection({ galeria, isOpen, onToggle }: {
               Galeria {galeria.numero} · {galeria.tempo}
             </span>
           </div>
-          <h3 className="text-white font-black text-lg sm:text-xl leading-tight">{galeria.titulo}</h3>
-          <p className="text-white/50 text-sm mt-0.5">{galeria.licao}</p>
+          <h3 className="text-white font-black text-xl sm:text-2xl leading-tight">{galeria.titulo}</h3>
+          <p className="text-white/60 text-base sm:text-lg mt-1">{galeria.licao}</p>
         </div>
         <motion.div animate={{ rotate: isOpen ? 180 : 0 }} transition={{ duration: 0.25 }} className="shrink-0">
           <ChevronDown className="w-5 h-5 text-white/30 group-hover:text-white/60 transition-colors" />
@@ -450,17 +450,17 @@ function GaleriaSection({ galeria, isOpen, onToggle }: {
               </div>
 
               {galeria.destaque && (
-                <div className="rounded-xl p-4 text-sm leading-relaxed"
-                  style={{ background: galeria.cor + '10', borderLeft: `3px solid ${galeria.cor}60`, color: 'rgba(255,255,255,0.70)' }}>
-                  <span className="font-black uppercase text-[10px] tracking-widest block mb-2" style={{ color: galeria.cor }}>
+                <div className="rounded-xl p-5 text-base sm:text-lg leading-relaxed"
+                  style={{ background: galeria.cor + '10', borderLeft: `4px solid ${galeria.cor}60`, color: 'rgba(255,255,255,0.78)' }}>
+                  <span className="font-black uppercase text-xs tracking-widest block mb-2" style={{ color: galeria.cor }}>
                     Destaque
                   </span>
                   {galeria.destaque}
                 </div>
               )}
 
-              <div className="rounded-xl p-4" style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)' }}>
-                <p className="text-[11px] font-black uppercase tracking-widest mb-2.5 text-white/40">No quadro</p>
+              <div className="rounded-xl p-5" style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)' }}>
+                <p className="text-xs font-black uppercase tracking-widest mb-3 text-white/40">No quadro</p>
                 <div className="flex flex-wrap gap-2">
                   {galeria.quadro.map(q => <KeywordBadge key={q} word={q} cor={galeria.cor} />)}
                 </div>
@@ -561,7 +561,7 @@ export default function HeroisDaFeAula01Page() {
             <div className="flex flex-col gap-4">
               <div className="rounded-xl p-4" style={{ background: BLUE + '0a', border: `1px solid ${BLUE}25` }}>
                 <p className="text-xs font-black uppercase tracking-widest mb-2" style={{ color: BLUE + '99' }}>Por que o capítulo foi escrito — Hb 10.35–39</p>
-                <p className="text-white/70 text-base leading-relaxed">
+                <p className="text-white/75 text-lg leading-relaxed">
                   Os leitores eram cristãos <strong className="text-white/90">perseguidos e cansados</strong>, tentados a abandonar Cristo. O autor os encoraja: "nós, porém, não somos dos que retrocedem para a perdição; somos, entretanto, da fé" (10.39). O capítulo 11 mostra quem são <em>"os da fé"</em>.
                 </p>
               </div>
@@ -572,24 +572,24 @@ export default function HeroisDaFeAula01Page() {
                   { ref: 'v. 6', texto: '"Sem fé é impossível agradar a Deus." Quem se aproxima precisa crer que Ele existe e recompensa.' },
                 ].map(item => (
                   <div key={item.ref} className="rounded-xl p-4" style={{ background: GOLD + '08', border: `1px solid ${GOLD}20` }}>
-                    <p className="font-black text-base mb-1.5" style={{ color: GOLD }}>{item.ref}</p>
-                    <p className="text-white/60 text-sm leading-relaxed">{item.texto}</p>
+                    <p className="font-black text-lg mb-2" style={{ color: GOLD }}>{item.ref}</p>
+                    <p className="text-white/70 text-base leading-relaxed">{item.texto}</p>
                   </div>
                 ))}
               </div>
               <div className="rounded-xl p-4 flex gap-3" style={{ background: ROSE + '0d', border: `1px solid ${ROSE}28` }}>
                 <span className="text-xl shrink-0">⚠️</span>
                 <div>
-                  <p className="font-black text-base mb-1" style={{ color: ROSE }}>Aviso importante</p>
-                  <p className="text-white/65 text-sm leading-relaxed">
-                    Esses heróis não eram perfeitos. Vamos ver mentirosos, medrosos, um assassino arrependido, uma prostituta e um adúltero arrependido na lista. <strong className="text-white/85">Eles não estão ali por serem bons, mas porque confiaram num Deus fiel.</strong>
+                  <p className="font-black text-lg mb-2" style={{ color: ROSE }}>Aviso importante</p>
+                  <p className="text-white/70 text-base sm:text-lg leading-relaxed">
+                    Esses heróis não eram perfeitos. Vamos ver mentirosos, medrosos, um assassino arrependido, uma prostituta e um adúltero arrependido na lista. <strong className="text-white/90">Eles não estão ali por serem bons, mas porque confiaram num Deus fiel.</strong>
                   </p>
                 </div>
               </div>
               <div className="rounded-xl p-4 text-center" style={{ background: ORANGE + '0a', border: `1px solid ${ORANGE}25` }}>
-                <p className="text-base text-white/55 leading-relaxed">
-                  A expressão <span className="font-black text-2xl" style={{ color: ORANGE }}>"Pela fé"</span> abre quase todos os parágrafos do capítulo —{' '}
-                  <strong className="text-white/85">18 vezes na ARA.</strong>
+                <p className="text-lg text-white/65 leading-relaxed">
+                  A expressão <span className="font-black text-3xl" style={{ color: ORANGE }}>"Pela fé"</span> abre quase todos os parágrafos do capítulo —{' '}
+                  <strong className="text-white/90 text-xl">18 vezes na ARA.</strong>
                 </p>
               </div>
             </div>
@@ -602,7 +602,7 @@ export default function HeroisDaFeAula01Page() {
               <h2 className="font-display font-black text-sm uppercase tracking-widest" style={{ color: ORANGE }}>As 5 Galerias da Fé</h2>
               <div className="flex-1 h-px" style={{ background: `linear-gradient(90deg,${ORANGE}30,transparent)` }} />
             </div>
-            <p className="text-white/45 text-sm mb-6">Clique em cada galeria para expandir. Dentro de cada herói, clique em <span style={{ color: ORANGE }}>"O que o AT nos ensina"</span> para ver o contexto do Antigo Testamento.</p>
+            <p className="text-white/55 text-base sm:text-lg mb-6">Clique em cada galeria para expandir. Dentro de cada herói, clique em <span style={{ color: ORANGE }} className="font-semibold">"O que o AT nos ensina"</span> para ver o contexto do Antigo Testamento.</p>
           </motion.div>
 
           <div className="flex flex-col gap-3 mb-14">
@@ -628,15 +628,15 @@ export default function HeroisDaFeAula01Page() {
               <h2 className="font-black text-2xl sm:text-3xl text-white mb-4 leading-tight">
                 O maior herói<br /><span className="text-white/50">não está na lista</span>
               </h2>
-              <p className="text-white/60 text-base leading-relaxed max-w-xl mx-auto mb-6">
-                "Todos estes não obtiveram, contudo, a concretização da promessa" (11.39). Morreram esperando. Agora são <strong className="text-white/80">"tão grande nuvem de testemunhas"</strong> (12.1) — e o olhar final vai para:
+              <p className="text-white/65 text-lg sm:text-xl leading-relaxed max-w-xl mx-auto mb-6">
+                "Todos estes não obtiveram, contudo, a concretização da promessa" (11.39). Morreram esperando. Agora são <strong className="text-white/85">"tão grande nuvem de testemunhas"</strong> (12.1) — e o olhar final vai para:
               </p>
               <div className="inline-block rounded-2xl px-8 py-5" style={{ background: 'rgba(255,255,255,0.05)', border: '1.5px solid rgba(255,255,255,0.18)' }}>
                 <p className="text-3xl sm:text-4xl font-black text-white mb-1">Jesus</p>
                 <p className="text-sm text-white/45 font-bold uppercase tracking-widest">O Autor e Consumador da Fé</p>
                 <p className="text-sm mt-1.5" style={{ color: WHITE + '60' }}>Hebreus 12.2</p>
               </div>
-              <p className="mt-6 text-white/45 text-base italic max-w-lg mx-auto">
+              <p className="mt-6 text-white/55 text-lg italic max-w-lg mx-auto">
                 "Tudo o que aprendemos com eles, Jesus viveu de modo perfeito. Eles apontam para Ele."
               </p>
             </div>
@@ -652,12 +652,12 @@ export default function HeroisDaFeAula01Page() {
             <div className="flex flex-col gap-3">
               {CINCO_LICOES.map((l, i) => (
                 <motion.div key={l.num} initial={{ opacity: 0, x: -16 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.57 + i * 0.07 }}
-                  className="flex items-start gap-4 rounded-xl p-4" style={{ background: l.cor + '08', border: `1px solid ${l.cor}22` }}>
-                  <div className="w-9 h-9 rounded-full flex items-center justify-center shrink-0 font-black text-base"
+                  className="flex items-start gap-4 rounded-xl p-5" style={{ background: l.cor + '08', border: `1px solid ${l.cor}22` }}>
+                  <div className="w-10 h-10 rounded-full flex items-center justify-center shrink-0 font-black text-lg"
                     style={{ background: l.cor + '20', border: `1px solid ${l.cor}40`, color: l.cor }}>{l.num}</div>
                   <div>
-                    <p className="font-black text-white text-base mb-0.5">{l.titulo}</p>
-                    <p className="text-white/60 text-base">{l.licao}</p>
+                    <p className="font-black text-white text-lg mb-1">{l.titulo}</p>
+                    <p className="text-white/65 text-base sm:text-lg">{l.licao}</p>
                   </div>
                 </motion.div>
               ))}
@@ -669,8 +669,8 @@ export default function HeroisDaFeAula01Page() {
                   <Award className="w-4 h-4 text-white" strokeWidth={1.5} />
                 </div>
                 <div>
-                  <p className="font-black text-white text-base mb-0.5">E acima de todas</p>
-                  <p className="text-white/70 text-base">Os heróis apontam para <strong className="text-white">Jesus</strong> (Hb 12.2).</p>
+                  <p className="font-black text-white text-lg mb-1">E acima de todas</p>
+                  <p className="text-white/70 text-base sm:text-lg">Os heróis apontam para <strong className="text-white">Jesus</strong> (Hb 12.2).</p>
                 </div>
               </motion.div>
             </div>
@@ -688,10 +688,10 @@ export default function HeroisDaFeAula01Page() {
                 <table className="w-full">
                   <thead>
                     <tr style={{ background: 'rgba(255,255,255,0.04)' }}>
-                      <th className="text-left px-4 py-3 text-xs font-black uppercase tracking-widest text-white/40">Herói</th>
-                      <th className="text-left px-4 py-3 text-xs font-black uppercase tracking-widest text-white/40">Texto</th>
-                      <th className="text-left px-4 py-3 text-xs font-black uppercase tracking-widest text-white/40 hidden sm:table-cell">O que aprendemos</th>
-                      <th className="text-left px-4 py-3 text-xs font-black uppercase tracking-widest text-white/40">Palavra</th>
+                      <th className="text-left px-4 py-4 text-sm font-black uppercase tracking-widest text-white/50">Herói</th>
+                      <th className="text-left px-4 py-4 text-sm font-black uppercase tracking-widest text-white/50">Texto</th>
+                      <th className="text-left px-4 py-4 text-sm font-black uppercase tracking-widest text-white/50 hidden sm:table-cell">O que aprendemos</th>
+                      <th className="text-left px-4 py-4 text-sm font-black uppercase tracking-widest text-white/50">Palavra</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -722,10 +722,10 @@ export default function HeroisDaFeAula01Page() {
                       { nome: 'Jesus',              texto: 'Hb 12.2',       licao: 'Todos os heróis apontam para Ele, o Autor e Consumador da fé',          kw: 'OLHAR P/ JESUS', cor: WHITE  },
                     ].map((row, i) => (
                       <tr key={i} style={{ borderTop: '1px solid rgba(255,255,255,0.05)', background: i % 2 === 0 ? 'transparent' : 'rgba(255,255,255,0.015)' }}>
-                        <td className="px-4 py-3 font-bold text-white/85 text-sm whitespace-nowrap">{row.nome}</td>
-                        <td className="px-4 py-3 text-sm font-medium whitespace-nowrap" style={{ color: row.cor + 'aa' }}>{row.texto}</td>
-                        <td className="px-4 py-3 text-sm text-white/50 hidden sm:table-cell leading-relaxed">{row.licao}</td>
-                        <td className="px-4 py-3"><KeywordBadge word={row.kw} cor={row.cor} /></td>
+                        <td className="px-4 py-3.5 font-bold text-white/90 text-base whitespace-nowrap">{row.nome}</td>
+                        <td className="px-4 py-3.5 text-base font-medium whitespace-nowrap" style={{ color: row.cor + 'bb' }}>{row.texto}</td>
+                        <td className="px-4 py-3.5 text-base text-white/60 hidden sm:table-cell leading-relaxed">{row.licao}</td>
+                        <td className="px-4 py-3.5"><KeywordBadge word={row.kw} cor={row.cor} /></td>
                       </tr>
                     ))}
                   </tbody>
@@ -739,10 +739,10 @@ export default function HeroisDaFeAula01Page() {
             className="rounded-2xl p-6 sm:p-8 text-center"
             style={{ background: ORANGE + '0c', border: `1.5px solid ${ORANGE}28` }}>
             <p className="text-xs font-black uppercase tracking-widest mb-4" style={{ color: ORANGE + '88' }}>Pergunta de Abertura</p>
-            <p className="text-white font-black text-xl sm:text-2xl leading-relaxed mb-3">
+            <p className="text-white font-black text-xl sm:text-2xl lg:text-3xl leading-relaxed mb-4">
               "Se você tivesse que montar um mural com as pessoas que mais marcaram a sua fé, quem estaria nele?"
             </p>
-            <p className="text-white/45 text-base">
+            <p className="text-white/55 text-base sm:text-lg">
               Hebreus 11 é o mural de Deus — homens e mulheres de quase dois mil anos de história.
             </p>
           </motion.div>
