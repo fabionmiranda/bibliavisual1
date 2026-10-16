@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 const BG = '#060d1f';
 const GREEN = '#34d399';
 const ORANGE = '#f97316';
+const BLUE = '#60a5fa';
 
 interface EstudoCard {
   id: string;
@@ -24,7 +25,7 @@ interface EstudoCard {
 const ESTUDOS: EstudoCard[] = [
   {
     id: 'herois',
-    titulo: 'Heróis da Fé',
+    titulo: 'Heróis da Fé na Biblia',
     subtitulo: 'Série de Estudos Bíblicos',
     descricao: 'Estudos sobre personagens bíblicos — suas vidas, falhas, fé e o Deus que os chamou, sustentou e transformou. Baseado em Hebreus 11.',
     cor: ORANGE,
@@ -34,6 +35,19 @@ const ESTUDOS: EstudoCard[] = [
     disponivel: true,
     bg: 'linear-gradient(145deg, #1a0a00 0%, #120700 50%, #090604 100%)',
     sigla: 'Hb 11',
+  },
+  {
+    id: 'herois-igreja',
+    titulo: 'Heróis da Fé na História da Igreja',
+    subtitulo: 'Série de Estudos Históricos',
+    descricao: 'Estudos sobre homens e mulheres que mudaram o curso da Igreja — mártires, reformadores, missionários e teólogos cujas vidas falam mais alto que qualquer doutrina.',
+    cor: BLUE,
+    badge: 'Em breve',
+    aulas: 12,
+    path: '/estudos/biblicos/herois-da-fe-na-historia',
+    disponivel: false,
+    bg: 'linear-gradient(145deg, #001220 0%, #000d18 50%, #000608 100%)',
+    sigla: 'Hist.',
   },
 ];
 
