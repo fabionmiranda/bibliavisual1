@@ -98,14 +98,26 @@ const PatternScroll = ({ color }: { color: string }) => (
 function getSecaoPrincipal(pt: boolean) {
   return [
     {
+      icon: BookOpen,
+      label: pt ? 'Estudos Bíblicos' : 'Biblical Studies',
+      descricao: pt
+        ? 'Séries de estudos sobre personagens, livros e temas bíblicos — didáticos, coloridos e com contexto do Antigo e Novo Testamento.'
+        : 'Study series on biblical characters, books and themes — didactic, colorful and with Old and New Testament context.',
+      accent: '#34d399',
+      path: '/estudos/biblicos',
+      badge: pt ? 'Novo' : 'New',
+      bg: 'linear-gradient(145deg, #001a0d 0%, #001208 50%, #000804 100%)',
+      Pattern: PatternGrid,
+    },
+    {
       icon: GraduationCap,
-      label: pt ? 'Estudos Bíblicos e Confessionais' : 'Biblical & Confessional Studies',
+      label: pt ? 'Estudos Confessionais' : 'Confessional Studies',
       descricao: pt
         ? 'Cadernos de discipulado confessional — estudo sistemático das grandes confissões de fé com perguntas, gabaritos e referências.'
         : 'Confessional discipleship notebooks — systematic study of the great confessions of faith with questions, answers and references.',
       accent: '#f97316',
       path: '/discipulado/confessional',
-      badge: pt ? 'Novo' : 'New',
+      badge: pt ? 'Em andamento' : 'In progress',
       bg: 'linear-gradient(145deg, #1c0d00 0%, #150900 50%, #0d0806 100%)',
       Pattern: PatternCross,
     },
