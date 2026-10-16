@@ -1068,6 +1068,144 @@ const DIAS_CONTENT: Record<number, DiaDevoContent> = {
     oracao: 'Senhor, obrigado por nos mostrar que o Teu Espírito não ficou preso em nenhuma tradição confessional — que Loyola e Teresa e João da Cruz foram Tuas testemunhas tão genuínas quanto Lutero e Calvino e Knox.\n\nQue a grandeza de uns não nos cegue para a grandeza dos outros. Que aprendamos a receber a herança ampla da Igreja sem apagar as diferenças reais — mas também sem transformar diferenças em muros que impedem reconhecermos uns nos outros os frutos do mesmo Espírito.\n\nE que a "noite escura" que Teresa e João descrevem não nos assuste, mas nos prepare: há formas de Deus que só se revelam quando os apoios humanos falham.\n\nAmém.',
     leituraComplementar: 'González, Justo L. A Era dos Reformadores. São Paulo: Vida Nova, 1995. Capítulo 12: "A Reforma Católica" (pp. 289–318).',
   },
+  17: {
+    dia: 17,
+    data: '17 de outubro de 2026',
+    titulo: 'O Protestantismo Espanhol: Fé em Surdina',
+    subtitulo: 'Capítulo 13',
+    versiculo: 'E não temais os que matam o corpo e não podem matar a alma; temei antes aquele que pode fazer perecer no inferno tanto a alma como o corpo.',
+    versiculoRef: 'Mateus 10.28',
+    secoes: [
+      {
+        tipo: 'contexto',
+        titulo: 'O Capítulo que os Historiadores Passam em Silêncio',
+        paragrafos: [
+          'Ontem vimos a Reforma Católica: Loyola, Trento, Teresa de Ávila — renovação genuína dentro do catolicismo. Hoje González nos conduz a um capítulo que a maioria dos historiadores passa em silêncio: <span style="color:#fbbf24;font-weight:800;">existiu protestantismo espanhol?</span>',
+          'A resposta é <span style="color:#34d399;font-weight:800;">sim</span> — e é um dos episódios mais dramáticos e menos conhecidos de todo o século XVI. Uma Reforma que floresceu na sombra, foi descoberta, e foi suprimida com uma eficiência brutal que impediu qualquer enraizamento duradouro.',
+        ],
+      },
+      {
+        tipo: 'analise',
+        titulo: 'O Solo Improvável: O Paradoxo Espanhol',
+        paragrafos: [
+          'À primeira vista, a Espanha era o último lugar onde se esperaria uma Reforma Protestante. Era o país de <span style="color:#c084fc;font-weight:700;">Cisneros</span> e da <span style="color:#fb7185;font-weight:700;">Inquisição</span>, de Carlos V e de Teresa de Ávila. Havia expulsado judeus em <span style="color:#fbbf24;font-weight:700;">1492</span> e muçulmanos em <span style="color:#fbbf24;font-weight:700;">1502</span>, e mantinha uma vigilância religiosa sem paralelo na Europa.',
+          'No entanto, González identifica elementos que criaram brechas inesperadas. O <span style="color:#60a5fa;font-weight:700;">erasmismo</span> havia penetrado profundamente nas universidades espanholas durante o reinado de Carlos V. A corte imperial atraía humanistas de toda a Europa. Mercadores que comercializavam com Flandres e a Alemanha <span style="background:rgba(251,191,36,0.12);border-left:3px solid #fbbf24;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(255,245,210,0.95);">traziam junto livros proibidos.</span> Monges agostinianos — a mesma ordem de Lutero — liam os textos reformadores com interesse crescente.',
+          'O paradoxo espanhol: <span style="background:rgba(52,211,153,0.12);border:1px solid rgba(52,211,153,0.30);border-radius:5px;padding:1px 8px;color:#a7f3d0;font-weight:700;">o país mais catolicizado da Europa produziu, em meados do século XVI, focos significativos de protestantismo</span> — justamente entre os mais instruídos e os mais piedosos.',
+        ],
+        citacao: 'A espiritualidade mais intensa da Espanha católica — monges genuinamente devotos — produziu os candidatos mais naturais à Reforma.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'Valladolid e Sevilha: Os Dois Focos',
+        paragrafos: [
+          'Os dois centros do protestantismo espanhol eram geograficamente distintos e socialmente diferentes.',
+          'Em <span style="color:#fbbf24;font-weight:800;">Valladolid</span> — sede da corte real — o movimento penetrou entre nobres, funcionários imperiais e intelectuais próximos ao poder. O caso mais notório foi o de <span style="color:#60a5fa;font-weight:700;">Carlos de Seso</span>, gentil-homem italiano radicado na Espanha, que havia chegado à convicção da <span style="color:#34d399;font-weight:600;">justificação pela fé</span> depois de uma leitura atenta das cartas de Paulo. Ele converteu silenciosamente outras pessoas de seu círculo social.',
+          'Em <span style="color:#c084fc;font-weight:800;">Sevilha</span> — a cidade mais cosmopolita da Espanha, porto do comércio com as Américas — o protestantismo penetrou por via diferente: <span style="color:#c084fc;font-weight:700;">monges</span>. No mosteiro de <span style="background:rgba(192,132,252,0.12);border:1px solid rgba(192,132,252,0.30);border-radius:5px;padding:1px 8px;color:#e9d5ff;font-weight:700;">San Isidoro del Campo</span>, um grupo de monges hieronimitas passou a estudar a Bíblia em grupos e a ler Lutero em edições contrabandeadas. Quando perceberam que a Inquisição estava fechando o cerco, a maioria fugiu para Genebra. <span style="background:rgba(251,113,133,0.12);border-left:3px solid #fb7185;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(255,220,225,0.95);">Aqueles que ficaram foram presos.</span>',
+        ],
+      },
+      {
+        tipo: 'analise',
+        titulo: 'A Inquisição em Ação: Os Autos de Fé de 1559',
+        paragrafos: [
+          'O reinado de <span style="color:#fb7185;font-weight:800;">Felipe II</span> marcou a ruptura decisiva. Ao contrário do pai Carlos V — que tinha interesses pan-europeus e às vezes tolerava ambiguidades — Felipe II era rigidamente espanhol e rigidamente católico. O protestantismo era para ele não apenas <span style="color:#fb7185;font-weight:700;">heresia</span>, mas <span style="color:#fb7185;font-weight:700;">traição nacional</span>.',
+          'Os <span style="color:#fbbf24;font-weight:700;">autos de fé</span> de outubro de 1559, em Valladolid, foram espetáculos calculados de poder religioso: realizado na presença do próprio rei, o evento queimou vivos ou em efígie dezenas de protestantes espanhóis.',
+          'Carlos de Seso, antes de morrer na fogueira, dirigiu ao rei uma frase que González cita com precisão perturbadora: <span style="background:rgba(251,113,133,0.15);border:1px solid rgba(251,113,133,0.35);border-radius:5px;padding:2px 10px;color:#fecdd3;font-weight:800;font-style:italic;">"Como pode Vossa Majestade permitir que me queimem?"</span> Felipe respondeu: <span style="color:#fb7185;font-weight:700;font-style:italic;">"Se meu próprio filho fosse herege, eu mesmo traria a lenha."</span>',
+          'O endurecimento foi total. Qualquer resquício de <span style="color:#60a5fa;font-weight:600;">erasmismo</span> nas universidades foi eliminado. <span style="background:rgba(251,191,36,0.12);border-left:3px solid #fbbf24;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(255,245,210,0.95);">A fronteira intelectual da Espanha foi fechada.</span> O país que havia produzido os maiores humanistas da cristandade ibérica passou décadas em isolamento cultural crescente.',
+        ],
+        citacao: 'O endurecimento foi total. O preço da pureza religiosa foi pago com juros no desenvolvimento intelectual dos séculos seguintes.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'Casiodoro de Reina: A Bíblia Nascida no Exílio',
+        paragrafos: [
+          'Os monges de San Isidoro que escaparam para Genebra não ficaram calados. González conta a história de <span style="color:#34d399;font-weight:800;">Casiodoro de Reina</span> — um deles — que passou anos em exílio percorrendo a Europa (<span style="color:#60a5fa;font-weight:600;">Frankfurt, Londres, Antuérpia, Basileia</span>) perseguido pelos agentes inquisitoriais e pelos próprios calvinistas que duvidavam de sua ortodoxia.',
+          'Em <span style="color:#fbbf24;font-weight:700;">1569</span>, Casiodoro de Reina publicou em Basileia a primeira tradução completa da Bíblia para o espanhol — a <span style="background:rgba(251,191,36,0.15);border:1px solid rgba(251,191,36,0.35);border-radius:5px;padding:1px 8px;color:#fde68a;font-weight:800;font-style:italic;">"Bíblia do Urso,"</span> assim chamada pela marca tipográfica da editora. É ainda a base das traduções protestantes espanholas até hoje.',
+          'González aponta o alcance histórico: <span style="background:rgba(52,211,153,0.12);border:1px solid rgba(52,211,153,0.30);border-radius:5px;padding:1px 8px;color:#a7f3d0;font-weight:700;">a Inquisição eliminou o protestantismo espanhol dentro da Espanha, mas produziu involuntariamente um presente duradouro para os protestantes de língua espanhola em todo o mundo</span> — uma Bíblia de qualidade literária excepcional, traduzida por um homem que a perseguição havia transformado em erudito.',
+        ],
+        citacao: 'A Palavra de Deus não fica acorrentada. Traduzida em fuga, impressa em exílio — ela sobreviveu às fogueiras.',
+        citacaoAutor: 'Justo L. González',
+      },
+    ],
+    perguntas: [
+      'Os protestantes espanhóis eram, em sua maioria, pessoas de fé genuína e vida exemplar — não libertinos em busca de justificativa para o pecado. A Inquisição os queimou de qualquer forma. O que isso diz sobre os limites da pureza institucional como critério de verdade?',
+      'Casiodoro de Reina foi perseguido tanto pela Inquisição quanto por calvinistas ortodoxos desconfiados. A perseguição veio de "ambos os lados." Como você se protege de transformar convicção em crueldade?',
+      'O fechamento intelectual da Espanha no século XVI teve consequências duradouras. Em que medida comunidades religiosas hoje repetem esse padrão — fechando-se ao questionamento externo em nome da pureza interna? Qual é o custo a longo prazo?',
+    ],
+    oracao: 'Senhor, lembramos hoje daqueles que morreram na fogueira em Valladolid por terem lido as cartas de Paulo com atenção demais. Lembramos de Casiodoro de Reina, perseguido por décadas, traduzindo a Bíblia em exílio para um povo que não poderia lê-la em sua pátria.\n\nQue sua fé silenciada nos envergonhe quando exigimos que a fé seja fácil e bem-vista. Que sua disposição de pagar o preço máximo pela convicção nos faça humildes diante da nossa própria comodidade.\n\nE que a Bíblia que sobreviveu às fogueiras — traduzida em fuga, impressa em exílio — nos lembre de que a Palavra de Deus não fica acorrentada.\n\nAmém.',
+    leituraComplementar: 'González, Justo L. A Era dos Reformadores. São Paulo: Vida Nova, 1995. Capítulo 13: "O Protestantismo Espanhol" (pp. 319–342).',
+  },
+  18: {
+    dia: 18,
+    data: '18 de outubro de 2026',
+    titulo: 'O Significado da Reforma: Herança, Tensões e Perguntas Abertas',
+    subtitulo: 'Capítulo 14 — Conclusão da Série',
+    versiculo: 'Portanto, visto que estamos rodeados de tão grande nuvem de testemunhas, deixemos todo embaraço e o pecado que tão de perto nos rodeia, e corramos com perseverança a carreira que nos está proposta.',
+    versiculoRef: 'Hebreus 12.1',
+    secoes: [
+      {
+        tipo: 'contexto',
+        titulo: 'O Capítulo das Perguntas Abertas',
+        paragrafos: [
+          'Ao longo destas três semanas, González nos conduziu pela Reforma como um guia que conhece o terreno sem perdê-la de vista. Hoje chegamos ao capítulo final — não o capítulo da resposta definitiva, mas o <span style="color:#a78bfa;font-weight:800;">capítulo das perguntas que a Reforma ainda faz a nós</span>.',
+          'O século XVI transformou a cristandade ocidental de forma irreversível. Não apenas a teologia: transformou a <span style="color:#fbbf24;font-weight:700;">política</span>, a <span style="color:#60a5fa;font-weight:700;">linguagem</span>, a <span style="color:#34d399;font-weight:700;">educação</span>, a relação dos indivíduos com a autoridade e com o texto sagrado. Para entender o Ocidente moderno, é preciso entender a Reforma. Para entender a Igreja de hoje, é preciso entender o que foi <span style="color:#34d399;font-weight:700;">ganho</span> — e o que foi <span style="color:#fb7185;font-weight:700;">perdido</span> — naquele século de rupturas.',
+        ],
+      },
+      {
+        tipo: 'analise',
+        titulo: 'O Que a Reforma Ganhou',
+        paragrafos: [
+          'González é generoso na avaliação das conquistas. Há realizações que precisam ser nomeadas sem desconforto:',
+          '<strong style="color:#fbbf24;">A Escritura em mãos do povo.</strong> Antes de Lutero, a Bíblia era um texto clerical — lida em latim por pessoas treinadas, mediada pela autoridade eclesiástica antes de chegar ao leigo. A Reforma colocou nas mãos de camponeses alemães, artesãos ingleses e mercadores suíços o texto sagrado em sua própria língua. Isso transformou a relação entre o cristão e Deus — <span style="background:rgba(251,191,36,0.12);border-left:3px solid #fbbf24;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(255,245,210,0.95);">de uma relação mediada por especialistas para uma relação direta com o testemunho apostólico.</span>',
+          '<strong style="color:#34d399;">A justificação pela fé.</strong> A recuperação da doutrina paulina — que a aceitação diante de Deus é <span style="color:#34d399;font-weight:600;">graça recebida, não mérito acumulado</span> — libertou gerações de uma espiritualidade de ansiedade e contabilidade religiosa. A Reforma ofereceu <span style="background:rgba(52,211,153,0.12);border:1px solid rgba(52,211,153,0.30);border-radius:5px;padding:1px 8px;color:#a7f3d0;font-weight:700;">repouso.</span>',
+          '<strong style="color:#60a5fa;">A vocação secular como sagrada.</strong> Lutero demoliu a hierarquia que colocava monges e padres acima de agricultores e sapateiros no mapa espiritual. A doutrina do <span style="color:#60a5fa;font-weight:700;">sacerdócio universal dos crentes</span> afirmou que o trabalho ordinário — se feito para a glória de Deus — tem a mesma dignidade que o serviço no altar. <span style="color:#fff;font-style:italic;">Uma revolução cultural de consequências imensas.</span>',
+        ],
+        citacao: 'A Reforma não precisou inventar a graça — ela a redescobriu. E redescobrir a graça sempre produz um novo começo.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'O Que a Reforma Perdeu',
+        paragrafos: [
+          'González é igualmente honesto sobre os custos. A Reforma não foi apenas libertação — foi também fragmentação.',
+          '<strong style="color:#fb7185;">A unidade visível da Igreja.</strong> A cristandade medieval era disfuncional em muitos aspectos, mas partilhava uma estrutura comum que permitia a um monge italiano e a um bispo polonês reconhecerem-se como membros da mesma família. A Reforma quebrou esse quadro. Não apenas entre protestantes e católicos, mas entre os próprios protestantes: <span style="color:#fb7185;font-weight:600;">luteranos e zwinglianos discordaram sobre a Ceia</span>; luteranos e calvinistas sobre a predestinação; calvinistas e anabatistas sobre o batismo. <span style="background:rgba(251,113,133,0.12);border-left:3px solid #fb7185;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(255,220,225,0.95);">O princípio do exame pessoal das Escrituras, uma vez liberado, não parou na geração de Lutero.</span>',
+          '<strong style="color:#a78bfa;">A riqueza da tradição contemplativa.</strong> As reformas que fecharam mosteiros eliminaram séculos de cultura acumulada: bibliotecas, tradições de oração, arquitetura, arte, redes de cuidado com os pobres. González observa que <span style="background:rgba(167,139,250,0.12);border:1px solid rgba(167,139,250,0.30);border-radius:5px;padding:1px 8px;color:#ede9fe;font-weight:700;">o protestantismo ganhou a pregação e perdeu o silêncio.</span> Ganhou a palavra proclamada e perdeu — em grande medida — a palavra meditada.',
+          '<strong style="color:#fbbf24;">A catolicidade geográfica.</strong> A Reforma foi, em sua maioria, um fenômeno europeu do norte. O catolicismo levou o evangelho às Américas, à África e à Ásia via jesuítas e franciscanos antes que o protestantismo tivesse estrutura missionária equivalente.',
+        ],
+        citacao: 'O protestantismo ganhou a pregação e perdeu o silêncio. Ganhou a palavra proclamada e perdeu, em grande medida, a palavra meditada.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'A Reforma e a Modernidade: Uma Relação Ambígua',
+        paragrafos: [
+          'Um debate historiográfico que González não evita: <span style="color:#fbbf24;font-weight:800;">a Reforma produziu a modernidade?</span>',
+          'A resposta simples — "sim, Lutero abriu caminho para a liberdade individual e o iluminismo" — é sedutora mas imprecisa. Lutero nunca pretendeu fundar o individualismo moderno. Calvino nunca pretendeu fundar o capitalismo. <span style="background:rgba(251,191,36,0.12);border-left:3px solid #fbbf24;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(255,245,210,0.95);">Os reformadores eram homens do século XVI, não precursores do século XVIII.</span>',
+          'O que González sustenta com mais precisão: a Reforma criou condições que tornaram possíveis desenvolvimentos que seus próprios fundadores não autorizariam — e provavelmente condenariam. O princípio de que cada crente pode examinar as Escrituras por si mesmo, uma vez generalizado, tornou-se o princípio de que <span style="color:#a78bfa;font-weight:600;font-style:italic;">cada indivíduo pode examinar qualquer autoridade por si mesmo.</span> Lutero não queria isso. Mas abriu a porta. <span style="color:#fff;">Isso não é acusação — é observação histórica sobre como as ideias excedem as intenções de seus autores.</span>',
+        ],
+      },
+      {
+        tipo: 'analise',
+        titulo: 'As Perguntas que a Reforma Ainda Faz',
+        paragrafos: [
+          'González encerra sua narrativa não com uma conclusão triunfal, mas com perguntas que permanecem abertas cinco séculos depois:',
+          '<strong style="color:#60a5fa;">Onde está a autoridade?</strong> A Reforma deslocou a autoridade do papa e dos concílios para a Escritura — mas <span style="color:#60a5fa;font-style:italic;">quem interpreta a Escritura?</span> Cada denominação, cada pastor, cada leitor? A proliferação de grupos protestantes ao longo dos séculos sugere que a pergunta sobre autoridade não foi resolvida pela Reforma, <span style="background:rgba(96,165,250,0.12);border:1px solid rgba(96,165,250,0.30);border-radius:5px;padding:1px 8px;color:#bfdbfe;font-weight:700;">apenas reformulada.</span>',
+          '<strong style="color:#34d399;">Como convivem unidade e verdade?</strong> O diálogo católico-luterano produziu documentos notáveis, incluindo a <span style="color:#34d399;font-weight:700;">Declaração Conjunta sobre a Justificação (1999)</span>. Mas a unidade visível da Igreja permanece uma promessa não cumprida. Como buscar verdade sem sacrificar unidade? Como buscar unidade sem sacrificar verdade?',
+          '<strong style="color:#c084fc;">O que é Reforma contínua?</strong> A fórmula protestante <span style="background:rgba(192,132,252,0.15);border:1px solid rgba(192,132,252,0.35);border-radius:5px;padding:2px 10px;color:#e9d5ff;font-weight:800;font-style:italic;">ecclesia semper reformanda</span> — a Igreja sempre precisa ser reformada — é uma confissão de humildade institucional. Mas como distinguir reforma genuína de mera adaptação à cultura? <span style="color:#c084fc;font-weight:600;">Como saber quando se está reformando o acessório e quando se está abandonando o essencial?</span>',
+        ],
+        citacao: 'Ecclesia semper reformanda. A Igreja sempre precisa ser reformada. Começa em nós.',
+        citacaoAutor: 'Justo L. González',
+      },
+    ],
+    perguntas: [
+      'González aponta tanto conquistas quanto perdas da Reforma. Qual das perdas que ele identifica você sente mais pesadamente na sua própria tradição cristã? O que seria necessário para recuperar algo do que foi perdido sem abandonar o que foi ganho?',
+      'A Reforma produziu consequências que seus fundadores não autorizariam. Isso deve tornar Lutero e Calvino responsáveis pelo individualismo religioso moderno? Como avaliamos uma figura histórica pelas consequências involuntárias de suas ideias?',
+      'Ecclesia semper reformanda — a Igreja sempre em reforma. Que área da vida da sua comunidade mais precisa de reforma agora? O que está impedindo essa reforma? Quem seria hoje o "Lutero" que precisaria de coragem para nomeá-la?',
+    ],
+    oracao: 'Senhor, chegamos ao fim desta jornada pela Era dos Reformadores com mais perguntas do que respostas — e isso, percebemos, é o destino de quem estuda história com honestidade.\n\nObrigado por Lutero, Calvino, Zuínglio, Knox, Cranmer, Loyola, Teresa, João da Cruz, Casiodoro de Reina — figuras imperfeitas, todas elas, usadas para fazer avançar uma história maior do que qualquer uma delas compreendia.\n\nQue a nuvem de testemunhas que circunda a Igreja — dos reformadores do século XVI aos mártires de Valladolid — não nos deixe complacentes com o que somos, nem desesperados com o que ainda falta.\n\nEcclesia semper reformanda. A Igreja sempre precisa ser reformada. Começa em nós.\n\nAmém.',
+    leituraComplementar: 'González, Justo L. A Era dos Reformadores. São Paulo: Vida Nova, 1995. Capítulo 14: "O Significado da Reforma" (pp. 343–368).',
+  },
 };
 
 export default DIAS_CONTENT;

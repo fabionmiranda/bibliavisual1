@@ -28,8 +28,8 @@ const IMAGENS_DIAS: Record<number, string> = {
   14: WC + 'Ulrich-Zwingli-1.jpg',                                                // Batismo
   15: WC + 'Portrait_john_calvin.jpg',                                            // Calvino — Institutas
   16: WC + 'Portrait_john_calvin.jpg',                                            // Calvino — Genebra
-  17: WC + 'Portrait_john_calvin.jpg',                                            // Calvino — soberania
-  18: WC + 'Isabel_la_Cat%C3%B3lica-2.jpg',                                      // Henrique VIII (reutiliza)
+  17: WC + 'Isabel_la_Cat%C3%B3lica-2.jpg',                                      // Protestantismo espanhol — Isabel
+  18: WC + 'Martin_Luther_by_Cranach-restoration.jpg',                            // Significado da Reforma — conclusão
   19: WC + 'Martin_Luther_by_Cranach-restoration.jpg',                            // Cranmer / Anglicana
   20: WC + 'Portrait_john_calvin.jpg',                                            // Knox — Escócia
   21: WC + 'Lucas_Cranach_-_Portrait_of_Martin_Luther,_circa_1530.jpg',           // Guerra de Esmalcalda
@@ -107,8 +107,8 @@ export const TITULOS_DIAS: Record<number, { titulo: string; ref: string }> = {
   14: { titulo: 'Batismo como Questão de Fé e Consciência',                         ref: 'Cap. 6 — Parte 2' },
   15: { titulo: 'Calvino: As Institutas da Religião Cristã',                        ref: 'Cap. 7 — Parte 1' },
   16: { titulo: 'Predestinação, Santidade e a Cidade de Genebra',                   ref: 'Cap. 7 — Parte 2' },
-  17: { titulo: 'Reflexão: Calvino e a Soberania de Deus',                          ref: 'Cap. 7 — Parte 3' },
-  18: { titulo: 'Henrique VIII e a Reforma Inglesa',                                ref: 'Cap. 8 — Parte 1' },
+  17: { titulo: 'O Protestantismo Espanhol: Fé em Surdina',                         ref: 'Cap. 13' },
+  18: { titulo: 'O Significado da Reforma: Herança, Tensões e Perguntas Abertas',   ref: 'Cap. 14 — Conclusão' },
   19: { titulo: 'Cranmer, o Livro de Oração Comum e Tomás More',                   ref: 'Cap. 8 — Parte 2' },
   20: { titulo: 'Knox e a Reforma na Escócia',                                      ref: 'Cap. 8 — Parte 3' },
   21: { titulo: 'Guerra de Esmalcalda: Fé e Poder Político',                        ref: 'Cap. 9 — Parte 1' },
