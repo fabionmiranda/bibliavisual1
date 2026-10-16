@@ -18,6 +18,30 @@ interface Heroi {
 const HEROIS: Heroi[] = [
   {
     ordem: 1,
+    nome: 'Abel',
+    referencia: 'Gênesis 4.1–10',
+    descricao: 'O primeiro mártir da fé — sua oferta foi aceita não pelo que era, mas pelo coração que a trouxe. Depois de morto, ainda fala.',
+    versiculoChave: 'Pela fé, Abel ofereceu a Deus mais excelente sacrifício do que Caim. (Hb 11.4)',
+    disponivel: true,
+  },
+  {
+    ordem: 2,
+    nome: 'Enoque',
+    referencia: 'Gênesis 5.21–24',
+    descricao: 'Andou com Deus trezentos anos — e desapareceu, porque Deus o tomou. A fé que agrada a Deus é a que o busca de verdade.',
+    versiculoChave: 'Pela fé, Enoque foi trasladado para não ver a morte. (Hb 11.5)',
+    disponivel: false,
+  },
+  {
+    ordem: 3,
+    nome: 'Noé',
+    referencia: 'Gênesis 6–9',
+    descricao: 'Construiu uma arca para eventos que ainda não via — obedeceu sem entender o horizonte completo. Fé que age antes de ver.',
+    versiculoChave: 'Pela fé, Noé, divinamente advertido das coisas que ainda não se viam, com piedoso temor preparou a arca. (Hb 11.7)',
+    disponivel: false,
+  },
+  {
+    ordem: 4,
     nome: 'Abraão',
     referencia: 'Gênesis 12–25',
     descricao: 'O pai da fé — chamado a sair sem saber para onde ia, prometido um filho impossível, testado até o limite.',
@@ -25,7 +49,23 @@ const HEROIS: Heroi[] = [
     disponivel: false,
   },
   {
-    ordem: 2,
+    ordem: 5,
+    nome: 'Sara',
+    referencia: 'Gênesis 17–21',
+    descricao: 'Recebeu força para conceber sendo estéril e fora da idade — porque considerou fiel aquele que havia prometido.',
+    versiculoChave: 'Pela fé, também a própria Sara recebeu força para conceber. (Hb 11.11)',
+    disponivel: false,
+  },
+  {
+    ordem: 6,
+    nome: 'José',
+    referencia: 'Gênesis 37–50',
+    descricao: 'Vendido pelos irmãos, esquecido na prisão — e ainda assim guardou a memória da promessa de Deus ao seu povo.',
+    versiculoChave: 'Pela fé, José, ao morrer, fez menção da saída dos filhos de Israel. (Hb 11.22)',
+    disponivel: false,
+  },
+  {
+    ordem: 7,
     nome: 'Moisés',
     referencia: 'Êxodo 1–Deuteronômio 34',
     descricao: 'Do palácio do faraó ao deserto — o homem mais manso da terra conduziu um povo impossível por quarenta anos.',
@@ -33,7 +73,7 @@ const HEROIS: Heroi[] = [
     disponivel: false,
   },
   {
-    ordem: 3,
+    ordem: 8,
     nome: 'Raabe',
     referencia: 'Josué 2; 6',
     descricao: 'Uma prostituta de Jericó que reconheceu o Deus de Israel antes que os próprios israelitas cruzassem o Jordão.',
@@ -41,7 +81,7 @@ const HEROIS: Heroi[] = [
     disponivel: false,
   },
   {
-    ordem: 4,
+    ordem: 9,
     nome: 'Gideão',
     referencia: 'Juízes 6–8',
     descricao: 'O menor do menor clã — Deus o chamou de "homem valente" enquanto ele se escondia na prensa de vinho.',
@@ -49,7 +89,7 @@ const HEROIS: Heroi[] = [
     disponivel: false,
   },
   {
-    ordem: 5,
+    ordem: 10,
     nome: 'Rute',
     referencia: 'Rute 1–4',
     descricao: 'A moabita que escolheu o povo de Deus na hora em que todo incentivo apontava para o contrário.',
@@ -57,7 +97,7 @@ const HEROIS: Heroi[] = [
     disponivel: false,
   },
   {
-    ordem: 6,
+    ordem: 11,
     nome: 'Davi',
     referencia: '1 Samuel 16 – 1 Reis 2',
     descricao: 'O pastor-rei — homem segundo o coração de Deus, que caiu profundamente e se arrependeu ainda mais profundamente.',
@@ -65,7 +105,7 @@ const HEROIS: Heroi[] = [
     disponivel: false,
   },
   {
-    ordem: 7,
+    ordem: 12,
     nome: 'Elias',
     referencia: '1 Reis 17–19; 2 Reis 2',
     descricao: 'O profeta de fogo que venceu os profetas de Baal no Carmelo e colapsou de exaustão sob uma árvore no dia seguinte.',
@@ -73,15 +113,7 @@ const HEROIS: Heroi[] = [
     disponivel: false,
   },
   {
-    ordem: 8,
-    nome: 'Ester',
-    referencia: 'Ester 1–10',
-    descricao: 'A rainha que arriscou a vida para salvar seu povo — "para tal momento como este."',
-    versiculoChave: 'Quem sabe se para uma ocasião como esta chegaste ao reino? (Et 4.14)',
-    disponivel: false,
-  },
-  {
-    ordem: 9,
+    ordem: 13,
     nome: 'Jó',
     referencia: 'Jó 1–42',
     descricao: 'O homem que perdeu tudo e não recebeu explicações — mas encontrou Deus no turbilhão.',
@@ -89,7 +121,15 @@ const HEROIS: Heroi[] = [
     disponivel: false,
   },
   {
-    ordem: 10,
+    ordem: 14,
+    nome: 'Ester',
+    referencia: 'Ester 1–10',
+    descricao: 'A rainha que arriscou a vida para salvar seu povo — "para tal momento como este."',
+    versiculoChave: 'Quem sabe se para uma ocasião como esta chegaste ao reino? (Et 4.14)',
+    disponivel: false,
+  },
+  {
+    ordem: 15,
     nome: 'Daniel',
     referencia: 'Daniel 1–6',
     descricao: 'Fidelidade em terra estrangeira — da recusa da comida real ao coval dos leões, Daniel não negociou o essencial.',
@@ -132,7 +172,7 @@ export default function HeroisDaFePage() {
                 <Shield className="w-8 h-8" style={{ color: ACCENT }} strokeWidth={1.5} />
               </div>
               <h1 className="font-display font-black text-4xl sm:text-5xl lg:text-6xl text-white leading-[1.1]">
-                Heróis da Fé
+                Heróis da Fé na Biblia
               </h1>
             </div>
             <p className="text-white/45 text-base sm:text-lg max-w-2xl leading-relaxed mb-4">
