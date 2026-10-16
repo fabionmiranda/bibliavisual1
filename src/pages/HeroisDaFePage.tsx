@@ -112,10 +112,10 @@ export default function HeroisDaFePage() {
 
           {/* back */}
           <motion.div initial={{ opacity: 0, x: -12 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.4 }}>
-            <Link to="/discipulado/confessional"
+            <Link to="/estudos/biblicos"
               className="inline-flex items-center gap-2 text-white/40 hover:text-white/80 text-xs font-bold uppercase tracking-widest mb-10 transition-colors duration-200">
               <ArrowLeft className="w-3.5 h-3.5" />
-              Estudos Bíblicos e Confessionais
+              Estudos Bíblicos
             </Link>
           </motion.div>
 
@@ -147,7 +147,7 @@ export default function HeroisDaFePage() {
           <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.18 }} className="mb-6">
             <p className="text-[10px] font-black uppercase tracking-widest text-white/30 mb-3">Aulas Disponíveis</p>
             <Link
-              to="/discipulado/confessional/herois-da-fe/aula-01"
+              to="/estudos/biblicos/herois-da-fe/aula-01"
               className="group flex items-center gap-5 rounded-2xl p-5 hover:scale-[1.015] active:scale-[0.99] transition-all duration-200"
               style={{ background: 'linear-gradient(145deg,#1a0a00,#0d0600)', border: `1.5px solid ${ACCENT}45` }}
             >

@@ -57,6 +57,7 @@ import ArtigoPage from './pages/ArtigoPage';
 import BibliotecaArtigosPage from './pages/BibliotecaArtigosPage';
 import HeroisDaFePage from './pages/HeroisDaFePage';
 import HeroisDaFeAula01Page from './pages/HeroisDaFeAula01Page';
+import EstudosBiblicosPage from './pages/EstudosBiblicosPage';
 import Watermark from './components/Watermark';
 import LoginPage from './pages/LoginPage';
 import ProtectedRoute from './components/ProtectedRoute';
@@ -116,6 +117,9 @@ export default function App() {
           <Route path="/biblioteca/livros"                           element={<BibliotecaLivrosPage />} />
           <Route path="/biblioteca/livros/is-there-meaning"        element={<LivroIsThereiningPage />} />
           <Route path="/biblioteca/livros/os-batistas-e-a-biblia" element={<LivroBatistasBibliaPage />} />
+          <Route path="/estudos/biblicos"                               element={<EstudosBiblicosPage />} />
+          <Route path="/estudos/biblicos/herois-da-fe"                 element={<HeroisDaFePage />} />
+          <Route path="/estudos/biblicos/herois-da-fe/aula-01"         element={<HeroisDaFeAula01Page />} />
           <Route path="/discipulado/confessional/herois-da-fe"          element={<HeroisDaFePage />} />
           <Route path="/discipulado/confessional/herois-da-fe/aula-01" element={<HeroisDaFeAula01Page />} />
           <Route path="/biblioteca/artigos"           element={<BibliotecaArtigosPage />} />
