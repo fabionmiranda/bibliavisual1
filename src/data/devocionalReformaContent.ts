@@ -1206,6 +1206,189 @@ const DIAS_CONTENT: Record<number, DiaDevoContent> = {
     oracao: 'Senhor, chegamos ao fim desta jornada pela Era dos Reformadores com mais perguntas do que respostas — e isso, percebemos, é o destino de quem estuda história com honestidade.\n\nObrigado por Lutero, Calvino, Zuínglio, Knox, Cranmer, Loyola, Teresa, João da Cruz, Casiodoro de Reina — figuras imperfeitas, todas elas, usadas para fazer avançar uma história maior do que qualquer uma delas compreendia.\n\nQue a nuvem de testemunhas que circunda a Igreja — dos reformadores do século XVI aos mártires de Valladolid — não nos deixe complacentes com o que somos, nem desesperados com o que ainda falta.\n\nEcclesia semper reformanda. A Igreja sempre precisa ser reformada. Começa em nós.\n\nAmém.',
     leituraComplementar: 'González, Justo L. A Era dos Reformadores. São Paulo: Vida Nova, 1995. Capítulo 14: "O Significado da Reforma" (pp. 343–368).',
   },
+
+  19: {
+    dia: 19,
+    data: '19 de outubro de 2026',
+    titulo: 'Cranmer, o Livro de Oração Comum e Tomás More',
+    subtitulo: 'Capítulo 8 — Parte 1',
+    versiculo: 'Porque nenhum de nós vive para si mesmo, e nenhum morre para si mesmo.',
+    versiculoRef: 'Romanos 14.7',
+    secoes: [
+      {
+        tipo: 'contexto',
+        titulo: 'Uma Reforma que Nasceu de uma Crise Matrimonial',
+        paragrafos: [
+          'A Reforma na Grã-Bretanha não nasceu de uma crise teológica — nasceu de uma <span style="color:#f97316;font-weight:700;">crise matrimonial</span>. Henrique VIII queria anular seu casamento com Catarina de Aragão, tia do imperador Carlos V. Roma recusou. Henrique reagiu <span style="background:rgba(249,115,22,0.12);border-left:3px solid #f97316;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(255,230,210,0.95);">declarando-se cabeça suprema da Igreja da Inglaterra</span>.',
+          'González é preciso na avaliação: o <span style="color:#fbbf24;font-weight:700;">Ato de Supremacia de 1534</span> não foi uma reforma por convicção evangélica — foi uma <span style="color:#fb7185;font-weight:600;">ruptura por conveniência política</span>. Henrique VIII morreu com uma teologia essencialmente católica, exceto no ponto que mais lhe convinha mudar. A Reforma Inglesa começou não com um monge angustiado diante de Deus, mas com um rei angustiado diante de sua falta de herdeiro varão.',
+          'E no entanto — como González mostra — das <span style="color:#34d399;font-weight:600;">intenções impuras de um rei emergiu uma das heranças litúrgicas mais duradouras do cristianismo ocidental</span>.',
+        ],
+      },
+      {
+        tipo: 'analise',
+        titulo: 'Thomas Cranmer: O Reformador Relutante',
+        paragrafos: [
+          'Thomas Cranmer foi o homem que Henrique VIII escolheu para fazer o trabalho teológico da Reforma Inglesa. <span style="color:#60a5fa;font-weight:700;">Arcebispo de Cantuária</span>, Cranmer era um humanista cuidadoso, mais inclinado ao compromisso do que ao confronto. Não tinha o temperamento de Lutero nem a clareza de Calvino.',
+          'Mas tinha um dom extraordinário: sabia escrever uma prosa que unia <span style="color:#c084fc;font-weight:700;">clareza doutrinária com beleza litúrgica</span>. E foi esse dom que produziu, em 1549, o <span style="background:rgba(192,132,252,0.15);border:1px solid rgba(192,132,252,0.35);border-radius:5px;padding:1px 8px;color:#e9d5ff;font-weight:800;font-style:italic;">Book of Common Prayer</span> — o Livro de Oração Comum. González sublinha o alcance histórico desse livro: Cranmer fez para a língua inglesa o que Lutero havia feito para o alemão — <span style="color:#34d399;font-style:italic;">colocou o culto nas mãos do povo em sua própria língua</span>.',
+          'O próprio Cranmer pagou com a vida por essa obra. Sob o reinado de Maria Tudor — <span style="color:#fb7185;font-weight:600;">"Maria, a Sanguinária"</span> — foi preso, torturado e levado à fogueira em <span style="color:#fbbf24;font-weight:700;">1556</span>. No momento da execução, <span style="background:rgba(251,191,36,0.12);border-left:3px solid #fbbf24;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(255,245,210,0.95);">estendeu primeiro para as chamas a mão com que havia assinado uma retratação sob pressão</span> — gesto que se tornou símbolo de redenção da própria covardia.',
+        ],
+        citacao: 'Cranmer fez para a língua inglesa o que Lutero havia feito para o alemão — colocou o culto nas mãos do povo em sua própria língua.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'Tomás More: O Santo do Lado Oposto',
+        paragrafos: [
+          'Nenhum retrato da Reforma Inglesa é honesto sem <span style="color:#fbbf24;font-weight:700;">Tomás More</span>. González o inclui não como adversário a ser descartado, mas como <span style="color:#f97316;font-style:italic;">figura trágica de integridade comparável — num campo oposto</span>.',
+          'More foi <span style="color:#60a5fa;font-weight:700;">Lord Chanceler de Henrique VIII</span>, o homem mais poderoso da Inglaterra depois do rei. Era amigo de Erasmo, humanista convicto, autor da <em>Utopia</em>. Quando Henrique declarou-se cabeça da Igreja e exigiu o juramento de todos os súditos, More recusou em silêncio. <span style="background:rgba(96,165,250,0.12);border-left:3px solid #60a5fa;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(200,220,255,0.95);">Não escreveu tratados. Não liderou resistência. Simplesmente não assinou.</span> E por não assinar, foi decapitado em 1535.',
+          'González não canoniza nem demoniza More. Registra o paradoxo: o mesmo humanismo que preparou o terreno para a Reforma na Alemanha produziu, na Inglaterra, um de seus mártires mais célebres — do lado católico. A questão não era apenas teológica. Era: <span style="color:#c084fc;font-weight:700;font-style:italic;">a quem pertencem a consciência e a fé de um homem? A Deus, ou ao rei?</span>',
+          'More e Cranmer responderam de formas diferentes — e <strong style="color:#fff;">ambos morreram por suas respostas</strong>.',
+        ],
+      },
+      {
+        tipo: 'analise',
+        titulo: 'A Reforma sem Convicção e seus Frutos Inesperados',
+        paragrafos: [
+          'González extrai uma lição incômoda dessa história: <span style="color:#34d399;font-weight:700;">Deus age através de instrumentos imperfeitos e intenções mistas</span>. A Reforma Inglesa foi iniciada por um rei que não era teólogo, conduzida por um arcebispo que preferia o compromisso ao confronto, e consolidada por uma rainha — Isabel I — que a usou antes como política do que como fé.',
+          'E no entanto produziu o <span style="color:#fbbf24;font-weight:700;">Book of Common Prayer</span>, a <span style="color:#fbbf24;font-weight:700;">Bíblia do Rei Tiago</span>, e uma tradição anglicana que carrega até hoje a tensão criativa entre catolicismo e protestantismo — uma tensão que seus fundadores criaram por acidente e seus herdeiros transformaram em vocação.',
+          '<span style="background:rgba(52,211,153,0.10);border-left:3px solid #34d399;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(200,250,235,0.95);">A história da Igreja raramente segue o roteiro que seus atores imaginavam.</span>',
+        ],
+        citacao: 'Deus age através de instrumentos imperfeitos e intenções mistas. A Reforma Inglesa é prova disso.',
+        citacaoAutor: 'Justo L. González',
+      },
+    ],
+    perguntas: [
+      'A Reforma Inglesa nasceu de motivações políticas e pessoais, não teológicas — e ainda assim produziu frutos espirituais duradouros. Como você avalia obras que nascem de motivações impuras? Isso invalida os frutos, ou Deus age apesar das intenções?',
+      'Cranmer recuou sob pressão e depois se arrependeu publicamente. Tomás More manteve o silêncio até a morte. Com qual desses dois você mais se identifica — e o que isso revela sobre sua própria relação com a pressão e a integridade?',
+      'González mostra que More e Cranmer defenderam a liberdade de consciência — cada um do seu lado. O que é a liberdade de consciência para você? Há algo que você não assinaria, mesmo sob grande pressão?',
+    ],
+    oracao: 'Senhor, obrigado por Cranmer — que escreveu orações mais belas do que viveu, e que no fim da vida encontrou coragem para colocar na chama a mão que havia traído.\n\nObrigado por Tomás More — que não escreveu nenhum tratado de resistência, mas simplesmente se recusou a assinar o que sua consciência não podia assinar.\n\nPerdoa-nos pelas nossas próprias retratações — as vezes em que assinamos o que não deveríamos, em que ficamos em silêncio quando devíamos falar, em que deixamos o custo determinar a resposta.\n\nQue quando chegar o momento em que a fidelidade tiver um preço, tenhamos a clareza de More e a coragem final de Cranmer.\n\nAmém.',
+    leituraComplementar: 'González, Justo L. A Era dos Reformadores. São Paulo: Vida Nova, 1995. Capítulo 8: "A Reforma na Grã-Bretanha" (pp. 173–210).',
+  },
+
+  20: {
+    dia: 20,
+    data: '20 de outubro de 2026',
+    titulo: 'Knox e a Reforma na Escócia',
+    subtitulo: 'Capítulo 8 — Parte 2',
+    versiculo: 'Sede firmes, inabaláveis, sempre abundantes na obra do Senhor, sabendo que o vosso trabalho não é vão no Senhor.',
+    versiculoRef: '1 Coríntios 15.58',
+    secoes: [
+      {
+        tipo: 'contexto',
+        titulo: 'Um Pregador sem Exércitos nem Títulos',
+        paragrafos: [
+          'Se a Reforma Inglesa nasceu da crise de um rei, a Reforma Escocesa nasceu da <span style="color:#f97316;font-weight:700;">coragem de um pregador</span>. João Knox não tinha exércitos nem títulos. Tinha apenas um púlpito — e a convicção de que o que pregava era verdade.',
+          'González traça um retrato de Knox que não suaviza suas arestas. Era <span style="color:#fb7185;font-weight:600;">intransigente, combativo, frequentemente injusto</span> em seu julgamento das adversárias femininas — chegou a publicar um panfleto com o título <em>O Primeiro Toque da Trombeta Contra o Monstruoso Regimento das Mulheres</em>. Mas era também um <span style="color:#34d399;font-weight:700;">homem de oração implacável e coragem inabalável</span> diante dos poderosos.',
+        ],
+        citacao: 'Aqui jaz um homem que jamais temeu a face humana.',
+        citacaoAutor: 'Epitáfio de João Knox',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'Do Galé ao Púlpito',
+        paragrafos: [
+          'A biografia de Knox começa no sofrimento. Capturado pelos franceses após a morte de <span style="color:#fbbf24;font-weight:700;">George Wishart</span> — mártir protestante escocês — Knox passou <span style="background:rgba(249,115,22,0.12);border-left:3px solid #f97316;padding:2px 8px;border-radius:3px;font-weight:700;color:rgba(255,230,210,0.95);">dezenove meses acorrentado como remador numa galé francesa</span>. Não abandonou a fé. Não recuou.',
+          'Libertado, foi para a Inglaterra, onde pregou durante os anos do jovem Eduardo VI. Quando Maria Tudor assumiu o trono, Knox fugiu para o continente. Passou anos em <span style="color:#60a5fa;font-weight:700;">Frankfurt e Genebra</span>, estudando com Calvino, aprofundando sua visão de Igreja.',
+          'González ressalta: o exílio de Knox não foi passividade. Foi <span style="color:#c084fc;font-weight:700;">formação</span>. Calvino moldou o sistema teológico que Knox levaria para a Escócia. A <span style="background:rgba(192,132,252,0.15);border:1px solid rgba(192,132,252,0.35);border-radius:5px;padding:1px 8px;color:#e9d5ff;font-weight:800;">Igreja Presbiteriana</span> — governada por presbíteros eleitos, sem bispos, com assembleias representativas — é em grande medida o legado dessa temporada em Genebra.',
+        ],
+      },
+      {
+        tipo: 'analise',
+        titulo: 'O Retorno e a Batalha',
+        paragrafos: [
+          'Em <span style="color:#fbbf24;font-weight:700;">1559</span>, Knox retornou à Escócia para enfrentar <span style="color:#fb7185;font-weight:600;">Maria de Guise</span> — regente católica e mãe de Maria, Rainha dos Escoceses. O confronto foi político, religioso e pessoal ao mesmo tempo. Knox pregava; o povo respondia; igrejas eram reformadas; estátuas eram destruídas.',
+          'González descreve as famosas <span style="color:#60a5fa;font-weight:700;">cinco audiências entre Knox e Maria, Rainha dos Escoceses</span> — encontros em que a rainha tentou dobrar Knox pela sedução intelectual e Knox respondeu com uma franqueza que beirava a rudeza. Quando Maria chorou numa das audiências, Knox declarou que <span style="background:rgba(96,165,250,0.12);border-left:3px solid #60a5fa;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(200,220,255,0.95);">preferia suportar as lágrimas de dez rainhas a abandonar o que considerava verdade</span>.',
+          'Era um homem incapaz de diplomatizar o evangelho.',
+        ],
+        citacao: 'Knox preferia suportar as lágrimas de dez rainhas a abandonar o que considerava verdade.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'O Presbiterianismo e seu Legado',
+        paragrafos: [
+          'A contribuição duradoura de Knox não foi apenas teológica — foi <span style="color:#34d399;font-weight:700;">eclesiástica e política</span>. A Igreja da Escócia que ele ajudou a fundar introduziu um princípio revolucionário: o <span style="background:rgba(52,211,153,0.12);border:1px solid rgba(52,211,153,0.30);border-radius:5px;padding:1px 8px;color:#a7f3d0;font-weight:700;">governo da Igreja por assembleias de presbíteros</span>, não por bispos designados pelo rei.',
+          'González aponta as implicações políticas que Knox não pretendia: se a Igreja pode governar-se por representação sem reis e bispos, por que não o Estado? O presbiterianismo escocês plantou sementes que floresceriam nas <span style="color:#fbbf24;font-weight:700;">revoluções políticas dos séculos seguintes</span> — incluindo a Revolução Americana, profundamente marcada pela tradição presbiteriana dos colonos escoceses e irlandeses.',
+          '<span style="color:#c084fc;font-style:italic;font-weight:600;">Knox queria reformar a Igreja da Escócia. Não sabia que estava contribuindo para reformar a política do mundo ocidental.</span>',
+        ],
+      },
+    ],
+    perguntas: [
+      'Knox era um homem de convicções fortes e maneiras ásperas — "jamais temeu a face humana." Há uma tensão entre fidelidade profética e sensibilidade pastoral. Como você navega essa tensão na sua própria vida? Onde você tende a errar — para a suavidade que evita o confronto necessário, ou para a aspereza que perde a pessoa?',
+      'O exílio de Knox em Genebra foi um período de formação que precedeu o impacto maior. Há períodos de aparente marginalidade ou espera na sua vida que, vistos em retrospecto, foram tempos de preparo? Como você interpreta as "galés" da sua história?',
+      'González mostra que a eclesiologia presbiteriana de Knox teve consequências políticas que ele mesmo não previu. Que ideias ou práticas da sua fé têm implicações para a vida pública que você talvez não tenha explorado plenamente?',
+    ],
+    oracao: 'Senhor, obrigado por João Knox — esse homem rude e corajoso que preferiu desagradar rainhas a desonrar o evangelho.\n\nPerdoa-nos pela nossa tendência contrária: de preferirmos a aprovação dos poderosos à clareza do que tu nos chamaste a dizer. De suavizarmos a mensagem para não incomodar, de calamos quando deveríamos falar.\n\nMas guarda-nos também da dureza que machuca sem necessidade, da intransigência que confunde teimosia com fidelidade, da aspereza que fecha portas que o amor poderia abrir.\n\nDá-nos a coragem de Knox e a ternura que a ele faltou — e que a tua graça nos ensina.\n\nAmém.',
+    leituraComplementar: 'González, Justo L. A Era dos Reformadores. São Paulo: Vida Nova, 1995. Capítulo 8: "A Reforma na Grã-Bretanha" (pp. 173–210).',
+  },
+
+  21: {
+    dia: 21,
+    data: '21 de outubro de 2026',
+    titulo: 'Guerra de Esmalcalda: Fé e Poder Político',
+    subtitulo: 'Capítulo 9',
+    versiculo: 'Não ponhais a vossa confiança em príncipes, nem em filho de homem, em quem não há salvação.',
+    versiculoRef: 'Salmos 146.3',
+    secoes: [
+      {
+        tipo: 'contexto',
+        titulo: 'Quando a Teologia Chegou ao Campo de Batalha',
+        paragrafos: [
+          'Há uma pergunta que a Reforma nunca conseguiu evitar: <span style="color:#f97316;font-weight:700;">até onde o Estado pode — ou deve — servir à causa do evangelho?</span> E a pergunta inversa: até onde a fé pode sobreviver quando o Estado se volta contra ela?',
+          'O capítulo 9 de González nos coloca diante do momento em que o luteranismo deixou de ser apenas um movimento teológico e se tornou <span style="background:rgba(249,115,22,0.12);border-left:3px solid #f97316;padding:2px 8px;border-radius:3px;font-weight:700;color:rgba(255,230,210,0.95);">questão de guerra</span>. A <span style="color:#fbbf24;font-weight:700;">Liga de Esmalcalda</span> — aliança dos príncipes protestantes alemães — e a resposta armada de Carlos V colocaram a Reforma no campo de batalha. O que havia começado como debate sobre indulgências chegou às espadas e canhões.',
+          'González examina esse capítulo sem nostalgia e sem cinismo. O que aconteceu entre <span style="color:#60a5fa;font-weight:700;">1546 e 1555</span> revela algo permanente sobre a relação entre fé e poder — uma lição que cada geração de cristãos precisa aprender de novo.',
+        ],
+      },
+      {
+        tipo: 'analise',
+        titulo: 'A Liga de Esmalcalda e a Aliança Perigosa',
+        paragrafos: [
+          'Desde o início, a sobrevivência da Reforma dependeu da <span style="color:#60a5fa;font-weight:700;">proteção de príncipes</span>. Lutero sobreviveu a Worms porque o Eleitor Frederico da Saxônia o escondeu no Castelo de Wartburgo. A Reforma se expandiu nos territórios cujos príncipes a adotaram — e foi suprimida onde os príncipes a rejeitaram.',
+          'González é direto na avaliação: essa dependência dos príncipes foi ao mesmo tempo <span style="color:#34d399;font-weight:700;">a salvação e o peso da Reforma Luterana</span>. Salvação, porque sem proteção política Lutero teria terminado como Hus — queimado. Peso, porque a Igreja ficou <span style="background:rgba(251,113,133,0.12);border:1px solid rgba(251,113,133,0.30);border-radius:5px;padding:1px 8px;color:#fecdd3;font-weight:700;">estruturalmente vinculada ao poder civil</span> de uma forma que comprometeria sua independência profética por séculos.',
+          'Em <span style="color:#fbbf24;font-weight:700;">1531</span>, os príncipes e cidades protestantes formalizaram essa aliança na Liga de Esmalcalda — pacto de defesa mútua contra Carlos V. Era uma aliança militar com motivações religiosas, ou uma aliança religiosa com consequências militares? González sugere que <span style="color:#c084fc;font-style:italic;">a distinção não era clara para os próprios participantes</span>.',
+        ],
+        citacao: 'A dependência dos príncipes foi ao mesmo tempo a salvação e o peso da Reforma Luterana.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'A Guerra e a Derrota',
+        paragrafos: [
+          'Lutero morreu em <span style="color:#fbbf24;font-weight:700;">fevereiro de 1546</span>. Seis meses depois, Carlos V declarou guerra à Liga de Esmalcalda. Em abril de 1547, na <span style="color:#fb7185;font-weight:700;">Batalha de Mühlberg</span>, Carlos derrotou decisivamente as forças protestantes. O Eleitor João Frederico da Saxônia foi capturado. Filipe de Hesse se rendeu.',
+          'Para os protestantes, foi uma catástrofe. O imperador que havia querido eliminar Lutero em Worms havia finalmente esmagado militarmente os príncipes que o protegiam. A Reforma parecia à beira do colapso.',
+          'González registra a ironia: <span style="background:rgba(52,211,153,0.12);border-left:3px solid #34d399;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(200,250,235,0.95);">a derrota militar não silenciou a fé</span>. Nas cidades e aldeias protestantes, o povo continuou celebrando a Ceia com as duas espécies, continuou ouvindo pregação em alemão, continuou lendo a Bíblia de Lutero. <strong style="color:#fff;">O poder político havia sido derrotado. A fé, não.</strong>',
+        ],
+      },
+      {
+        tipo: 'analise',
+        titulo: 'A Paz de Augsburgo: Quando a Política Reconhece o Inevitável',
+        paragrafos: [
+          'Carlos V não conseguiu converter os protestantes pela força. Os príncipes protestantes não conseguiram resistir indefinidamente ao imperador. O impasse gerou, em <span style="color:#fbbf24;font-weight:700;">1555</span>, a <span style="color:#60a5fa;font-weight:700;">Paz de Augsburgo</span> — o primeiro reconhecimento legal do pluralismo religioso na Europa cristã.',
+          'O princípio estabelecido foi <span style="background:rgba(192,132,252,0.15);border:1px solid rgba(192,132,252,0.35);border-radius:5px;padding:2px 10px;color:#e9d5ff;font-weight:800;font-style:italic;">cuius regio, eius religio</span>: a religião do príncipe determina a religião do território. Não era tolerância no sentido moderno — os súditos ainda não tinham liberdade religiosa individual. Mas era o <span style="color:#34d399;font-weight:600;">fim prático do ideal medieval de uma cristandade unificada</span> sob uma única fé.',
+          'González avalia Augsburgo com precisão cirúrgica: foi uma <span style="color:#f97316;font-style:italic;">solução imperfeita para um problema insolúvel</span>. Reconhecia uma realidade — que a Europa cristã estava permanentemente dividida — sem resolvê-la dignamente. A questão da consciência individual seria deixada para outros séculos resolverem.',
+        ],
+        citacao: 'A Paz de Augsburgo foi uma solução imperfeita para um problema insolúvel. Reconhecia uma realidade sem resolvê-la dignamente.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'A Lição Duradoura',
+        paragrafos: [
+          'González extrai do episódio de Esmalcalda uma lição que transcende o século XVI: <span style="background:rgba(251,113,133,0.12);border-left:3px solid #fb7185;padding:2px 8px;border-radius:3px;font-weight:700;color:rgba(255,220,225,0.95);">quando a Igreja deposita sua esperança na proteção do Estado, ela ganha segurança temporária e perde independência permanente</span>.',
+          'Os príncipes luteranos protegeram a Reforma — e ao fazê-lo, tornaram-se seus patronos, e portanto seus senhores. <span style="color:#fb7185;font-style:italic;">A Igreja que precisa do Estado para sobreviver acaba servindo ao Estado para sobreviver.</span>',
+          'A fé que resistiu à derrota de Mühlberg — nos corações do povo comum, nos cultos realizados em casas, na Bíblia lida à mesa de família — era uma fé que <span style="color:#34d399;font-weight:700;">não dependia de príncipes para existir</span>. Essa fé provou ser mais duradoura do que a aliança que havia sido construída para protegê-la.',
+        ],
+      },
+    ],
+    perguntas: [
+      'González mostra que a dependência dos príncipes foi ao mesmo tempo a salvação e o peso da Reforma Luterana. Em que medida a sua comunidade de fé depende de estruturas de poder externas — culturais, políticas, institucionais — para existir? O que aconteceria se esse suporte desaparecesse?',
+      'A fé do povo comum sobreviveu à derrota militar dos príncipes. O que isso revela sobre onde a vitalidade da Igreja realmente reside — nas estruturas institucionais ou na fé das pessoas comuns? Como isso molda sua visão do que é essencial preservar na vida da Igreja?',
+      'A Paz de Augsburgo resolveu o conflito pela divisão — cada príncipe decide por seu território. Como você avalia soluções que reconhecem uma realidade dolorosa sem resolvê-la plenamente? Há situações na sua vida ou comunidade em que o "possível" e o "justo" não coincidem?',
+    ],
+    oracao: 'Senhor, perdoa-nos pela tendência de buscar nos príncipes e nas estruturas de poder a segurança que só tu podes dar. De confundir a proteção do Estado com a tua bênção, e a perseguição do Estado com o teu abandono.\n\nObrigado por aqueles cristãos anônimos que, após Mühlberg, continuaram a ler a Escritura, a celebrar a Ceia e a orar — sem esperar que um príncipe lhes dissesse que era seguro fazê-lo.\n\nQue a nossa fé não dependa de circunstâncias favoráveis para existir. Que sobreviva às batalhas que perdemos, às alianças que se desfazem, às instituições que entram em colapso.\n\nE que quando os príncipes falharem — como sempre falham — encontremos em ti o fundamento que não se move.\n\nAmém.',
+    leituraComplementar: 'González, Justo L. A Era dos Reformadores. São Paulo: Vida Nova, 1995. Capítulo 9: "O Curso Posterior do Luteranismo" (pp. 211–236).',
+  },
 };
 
 export default DIAS_CONTENT;
