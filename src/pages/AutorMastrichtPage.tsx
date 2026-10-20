@@ -14,25 +14,25 @@ const METODO = [
   {
     num: '01', label: 'Exegese', titulo: 'Ouvir a Escritura',
     cor: '#60a5fa', corRgb: '96,165,250', icon: BookOpen,
-    texto: 'O primeiro movimento é exegético. Mastricht parte das Escrituras para estabelecer o fundamento bíblico daquilo que será afirmado teologicamente. Não se trata de construir primeiro um sistema filosófico e depois buscar textos que o confirmem — a Escritura funciona como fundamento e autoridade normativa da teologia.',
+    texto: 'O <strong style="color:#fff;">primeiro movimento é exegético.</strong> Mastricht parte das <span style="color:#2dd4bf;font-weight:700;">Escrituras</span> para estabelecer o <span style="background:rgba(45,212,191,0.12);border-left:3px solid #2dd4bf;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(200,255,250,0.95);">fundamento bíblico</span> daquilo que será afirmado teologicamente. Não se trata de construir primeiro um <em style="color:#f97316;">sistema filosófico</em> e depois buscar textos que o confirmem — a <span style="color:#60a5fa;font-weight:700;">Escritura</span> funciona como <strong style="color:#fff;">fundamento e autoridade normativa</strong> da teologia.',
     destaque: 'O que este texto diz?',
   },
   {
     num: '02', label: 'Dogmática', titulo: 'Compreender e Organizar a Verdade',
     cor: '#f97316', corRgb: '249,115,22', icon: Layers,
-    texto: 'Depois da exposição do texto, vem a formulação dogmática. A pergunta deixa de ser apenas "O que este texto diz?" e passa a ser "Que verdade doutrinária devemos afirmar a partir das Escrituras?" A dogmática organiza as verdades bíblicas em uma estrutura coerente de doutrina cristã. Para Mastricht, a teologia precisa ser intelectualmente rigorosa — mas esse rigor não constitui seu objetivo final.',
+    texto: 'Depois da exposição do texto, vem a <span style="color:#f97316;font-weight:700;">formulação dogmática.</span> A pergunta deixa de ser apenas <em style="color:#60a5fa;">"O que este texto diz?"</em> e passa a ser <em style="color:#2dd4bf;">"Que verdade doutrinária devemos afirmar a partir das Escrituras?"</em> A <strong style="color:#fff;">dogmática</strong> organiza as verdades bíblicas em uma <span style="background:rgba(249,115,22,0.12);border-left:3px solid #f97316;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(255,230,200,0.95);">estrutura coerente de doutrina cristã.</span> Para Mastricht, a teologia precisa ser <span style="color:#fbbf24;font-weight:700;">intelectualmente rigorosa</span> — mas esse rigor não constitui seu objetivo final.',
     destaque: 'Que verdade devemos afirmar?',
   },
   {
     num: '03', label: 'Elêntica', titulo: 'Confrontar o Erro',
     cor: '#f43f5e', corRgb: '244,63,94', icon: Shield,
-    texto: 'O terceiro movimento é elêntico (elenchtic): a exposição e refutação das objeções e dos ensinamentos incompatíveis com a doutrina bíblica. A teologia exerce aqui função apologética e polêmica — não basta afirmar a verdade; é necessário responder aos erros que a contradizem. A preocupação de Mastricht não era acumular argumentos, mas demonstrar por que determinada formulação doutrinária era biblicamente sustentável.',
+    texto: 'O terceiro movimento é <span style="color:#f43f5e;font-weight:700;">elêntico</span> <span style="background:rgba(129,140,248,0.15);border:1px solid rgba(129,140,248,0.35);border-radius:5px;padding:1px 8px;color:#e9d5ff;font-weight:700;">elenchtic</span>: a exposição e <strong style="color:#fff;">refutação das objeções</strong> e dos ensinamentos incompatíveis com a doutrina bíblica. A teologia exerce aqui <span style="background:rgba(244,63,94,0.12);border-left:3px solid #f43f5e;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(255,210,215,0.95);">função apologética e polêmica</span> — não basta afirmar a verdade; é necessário <em style="color:#fbbf24;">responder aos erros que a contradizem.</em> A preocupação de Mastricht não era acumular argumentos, mas demonstrar por que determinada <span style="color:#2dd4bf;font-weight:700;">formulação doutrinária</span> era biblicamente sustentável.',
     destaque: 'Como responder às objeções?',
   },
   {
     num: '04', label: 'Prática', titulo: 'Viver a Verdade',
     cor: '#34d399', corRgb: '52,211,153', icon: Heart,
-    texto: 'Finalmente, chega-se à teologia prática — o ponto essencial para compreender Mastricht. A doutrina não deve terminar na cabeça do teólogo. Ela precisa chegar à consciência, ao coração e à vida. A finalidade da teologia é a vida diante de Deus — integração entre tratamento escolástico rigoroso da doutrina e o propósito pastoral de preparar o povo de Deus para viver para Deus por meio de Cristo.',
+    texto: 'Finalmente, chega-se à <span style="color:#34d399;font-weight:700;">teologia prática</span> — o ponto essencial para compreender Mastricht. A doutrina não deve terminar na cabeça do teólogo. Ela precisa chegar à <span style="background:rgba(45,212,191,0.12);border-left:3px solid #2dd4bf;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(200,255,250,0.95);">consciência, ao coração e à vida.</span> A finalidade da teologia é a <strong style="color:#fff;">vida diante de Deus</strong> — integração entre <em style="color:#60a5fa;">tratamento escolástico rigoroso</em> da doutrina e o <span style="color:#fbbf24;font-weight:700;">propósito pastoral</span> de preparar o povo de Deus para <em style="color:#34d399;">viver para Deus por meio de Cristo.</em>',
     destaque: 'Como essa verdade transforma a vida?',
   },
 ];
@@ -164,13 +164,11 @@ export default function AutorMastrichtPage() {
           </p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
             {[
-              'Petrus van Mastricht (1630–1706) foi um dos mais importantes representantes da ortodoxia reformada pós-Reforma. Professor de teologia em Utrecht, ele compreendia a teologia cristã essencialmente como uma disciplina teórico-prática — onde conhecimento e piedade não podem ser separados.',
-              'Para ele, a teologia não deveria ser reduzida à aquisição intelectual de informações acerca de Deus. Seu propósito fundamental é conduzir o ser humano a viver para Deus por meio de Cristo. A verdadeira teologia nasce da Escritura, formula corretamente a doutrina, confronta os erros e, finalmente, conduz o cristão à prática da vida diante de Deus.',
-              'Mastricht desenvolveu esse projeto em sua monumental Theoretico-Practica Theologia — obra tão estimada que Jonathan Edwards a considerou a maior obra de teologia de seu tempo, superior até mesmo às Institutas de Calvino em utilidade.',
+              '<strong style="color:#fff;">Petrus van Mastricht</strong> <span style="color:#2dd4bf;font-weight:700;">(1630–1706)</span> foi um dos mais importantes representantes da <em style="color:#60a5fa;">ortodoxia reformada</em> pós-Reforma. Professor de teologia em <span style="color:#fbbf24;font-weight:700;">Utrecht,</span> ele compreendia a teologia cristã essencialmente como uma disciplina <span style="background:rgba(45,212,191,0.12);border-left:3px solid #2dd4bf;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(200,255,250,0.95);">teórico-prática</span> — onde conhecimento e piedade não podem ser separados.',
+              'Para ele, a teologia não deveria ser reduzida à aquisição intelectual de informações acerca de Deus. Seu propósito fundamental é conduzir o ser humano a <span style="color:#2dd4bf;font-weight:700;">viver para Deus por meio de Cristo.</span> A verdadeira teologia <em style="color:#60a5fa;">nasce da Escritura,</em> formula corretamente a doutrina, confronta os erros e, finalmente, conduz o cristão à <strong style="color:#fff;">prática da vida diante de Deus.</strong>',
+              'Mastricht desenvolveu esse projeto em sua monumental <span style="color:#fbbf24;font-weight:700;">Theoretico-Practica Theologia</span> — obra tão estimada que <em style="color:#34d399;">Jonathan Edwards</em> a considerou a maior obra de teologia de seu tempo, <span style="background:rgba(45,212,191,0.12);border-left:3px solid #2dd4bf;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(200,255,250,0.95);">superior até mesmo às Institutas de Calvino em utilidade.</span>',
             ].map((p, i) => (
-              <p key={i} style={{ margin: 0, fontSize: 'clamp(16px,2.1vw,18px)', color: 'rgba(228,232,255,0.93)', lineHeight: 2.0 }}>
-                {p}
-              </p>
+              <p key={i} style={{ margin: 0, fontSize: 'clamp(16px,2.1vw,18px)', color: 'rgba(228,232,255,0.93)', lineHeight: 2.0 }} dangerouslySetInnerHTML={{ __html: p }} />
             ))}
           </div>
         </motion.div>
@@ -228,9 +226,7 @@ export default function AutorMastrichtPage() {
                   </div>
                 </div>
                 <div style={{ padding: '24px 28px 28px' }}>
-                  <p style={{ margin: '0 0 20px', fontSize: 'clamp(15px,2vw,17px)', color: 'rgba(228,232,255,0.90)', lineHeight: 2.0 }}>
-                    {m.texto}
-                  </p>
+                  <p style={{ margin: '0 0 20px', fontSize: 'clamp(15px,2vw,17px)', color: 'rgba(228,232,255,0.90)', lineHeight: 2.0 }} dangerouslySetInnerHTML={{ __html: m.texto }} />
                   <div style={{ display: 'inline-flex', alignItems: 'center', gap: 10, borderRadius: 12, background: `rgba(${m.corRgb},0.10)`, border: `1px solid rgba(${m.corRgb},0.25)`, padding: '10px 18px' }}>
                     <div style={{ width: 6, height: 6, borderRadius: '50%', background: m.cor, flexShrink: 0 }} />
                     <span style={{ fontSize: 13, fontWeight: 700, color: m.cor, fontStyle: 'italic' }}>"{m.destaque}"</span>
