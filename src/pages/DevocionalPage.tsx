@@ -8937,6 +8937,131 @@ function gerarTextoWhatsApp(d: DiaDevocional): string {
 }
 
 
+// Map livroAbrev → slugs for each Bible service
+const LIVRO_BIBLIAONLINE: Record<string, string> = {
+  'Gn':'genesis','Êx':'exodo','Lv':'levitico','Nm':'numeros','Dt':'deuteronomio',
+  'Js':'josue','Jz':'juizes','Rt':'rute','1Sm':'1samuel','2Sm':'2samuel',
+  '1Rs':'1reis','2Rs':'2reis','1Cr':'1cronicas','2Cr':'2cronicas',
+  'Ed':'esdras','Ne':'neemias','Et':'ester','Jó':'jo','Sl':'salmos',
+  'Pv':'proverbios','Ec':'eclesiastes','Ct':'cantico','Is':'isaias',
+  'Jr':'jeremias','Lm':'lamentacoes','Ez':'ezequiel','Dn':'daniel',
+  'Os':'oseias','Jl':'joel','Am':'amos','Ob':'obadias','Jn':'jonas',
+  'Mq':'miqueias','Na':'naum','Hc':'habacuque','Sf':'sofonias',
+  'Ag':'ageu','Zc':'zacarias','Ml':'malaquias',
+  'Mt':'mateus','Mc':'marcos','Lc':'lucas','Jo':'joao',
+  'At':'atos','Rm':'romanos','1Co':'1corintios','2Co':'2corintios',
+  'Gl':'galatas','Ef':'efesios','Fp':'filipenses','Cl':'colossenses',
+  '1Ts':'1tessalonicenses','2Ts':'2tessalonicenses',
+  '1Tm':'1timoteo','2Tm':'2timoteo','Tt':'tito','Fm':'filemon',
+  'Hb':'hebreus','Tg':'tiago','1Pe':'1pedro','2Pe':'2pedro',
+  '1Jo':'1joao','2Jo':'2joao','3Jo':'3joao','Jd':'judas','Ap':'apocalipse',
+};
+
+const LIVRO_SEFARIA: Record<string, string> = {
+  'Gn':'Genesis','Êx':'Exodus','Lv':'Leviticus','Nm':'Numbers','Dt':'Deuteronomy',
+  'Js':'Joshua','Jz':'Judges','Rt':'Ruth','1Sm':'I_Samuel','2Sm':'II_Samuel',
+  '1Rs':'I_Kings','2Rs':'II_Kings','1Cr':'I_Chronicles','2Cr':'II_Chronicles',
+  'Ed':'Ezra','Ne':'Nehemiah','Et':'Esther','Jó':'Job','Sl':'Psalms',
+  'Pv':'Proverbs','Ec':'Ecclesiastes','Ct':'Song_of_Songs','Is':'Isaiah',
+  'Jr':'Jeremiah','Lm':'Lamentations','Ez':'Ezekiel','Dn':'Daniel',
+  'Os':'Hosea','Jl':'Joel','Am':'Amos','Ob':'Obadiah','Jn':'Jonah',
+  'Mq':'Micah','Na':'Nahum','Hc':'Habakkuk','Sf':'Zephaniah',
+  'Ag':'Haggai','Zc':'Zechariah','Ml':'Malachi',
+};
+
+const LIVRO_BIBLEGATEWAY: Record<string, string> = {
+  'Gn':'Gênesis','Êx':'Êxodo','Lv':'Levítico','Nm':'Números','Dt':'Deuteronômio',
+  'Js':'Josué','Jz':'Juízes','Rt':'Rute','1Sm':'1+Samuel','2Sm':'2+Samuel',
+  '1Rs':'1+Reis','2Rs':'2+Reis','1Cr':'1+Crônicas','2Cr':'2+Crônicas',
+  'Ed':'Esdras','Ne':'Neemias','Et':'Ester','Jó':'Jó','Sl':'Salmos',
+  'Pv':'Provérbios','Ec':'Eclesiastes','Ct':'Cântico+dos+Cânticos','Is':'Isaías',
+  'Jr':'Jeremias','Lm':'Lamentações','Ez':'Ezequiel','Dn':'Daniel',
+  'Os':'Oseias','Jl':'Joel','Am':'Amós','Ob':'Obadias','Jn':'Jonas',
+  'Mq':'Miquéias','Na':'Naum','Hc':'Habacuque','Sf':'Sofonias',
+  'Ag':'Ageu','Zc':'Zacarias','Ml':'Malaquias',
+  'Mt':'Mateus','Mc':'Marcos','Lc':'Lucas','Jo':'João',
+  'At':'Atos','Rm':'Romanos','1Co':'1+Coríntios','2Co':'2+Coríntios',
+  'Gl':'Gálatas','Ef':'Efésios','Fp':'Filipenses','Cl':'Colossenses',
+  '1Ts':'1+Tessalonicenses','2Ts':'2+Tessalonicenses',
+  '1Tm':'1+Timóteo','2Tm':'2+Timóteo','Tt':'Tito','Fm':'Filemom',
+  'Hb':'Hebreus','Tg':'Tiago','1Pe':'1+Pedro','2Pe':'2+Pedro',
+  '1Jo':'1+João','2Jo':'2+João','3Jo':'3+João','Jd':'Judas','Ap':'Apocalipse',
+};
+
+function getChapter(capitulos: string): string {
+  // e.g. "1.1-36" → "1", "3-4" → "3", "3.1-4.5" → "3"
+  const m = capitulos.match(/^(\d+)/);
+  return m ? m[1] : '1';
+}
+
+function VersoesOnlineSection({ d, cor, corB }: { d: DiaDevocional; cor: string; corB: string }) {
+  const cap = getChapter(d.capitulos);
+  const livroBO = LIVRO_BIBLIAONLINE[d.livroAbrev];
+  const livroSef = LIVRO_SEFARIA[d.livroAbrev];
+  const livroBG = LIVRO_BIBLEGATEWAY[d.livroAbrev];
+  const isOT = d.testamento === 'AT';
+
+  const links = [
+    livroBO ? {
+      label: 'ARA',
+      sublabel: 'Almeida Revista e Atualizada',
+      url: `https://www.bibliaonline.com.br/ara/${livroBO}/${cap}`,
+      color: '#fbbf24',
+    } : null,
+    livroBG ? {
+      label: 'NVI',
+      sublabel: 'Nova Versão Internacional',
+      url: `https://www.biblegateway.com/passage/?search=${livroBG}+${cap}&version=NVI`,
+      color: '#34d399',
+    } : null,
+    isOT && livroSef ? {
+      label: 'Hebraico',
+      sublabel: 'Texto Massorético (Sefaria)',
+      url: `https://www.sefaria.org/${livroSef}.${cap}`,
+      color: '#a78bfa',
+    } : null,
+  ].filter(Boolean) as { label: string; sublabel: string; url: string; color: string }[];
+
+  if (!links.length) return null;
+
+  return (
+    <div style={{
+      marginTop: 16,
+      padding: 'clamp(12px,3vw,18px) clamp(14px,3.5vw,20px)',
+      borderRadius: 14,
+      background: 'rgba(255,255,255,0.03)',
+      border: `1px solid ${corB}`,
+    }}>
+      <div style={{ fontSize: 'clamp(9px,2vw,10px)', fontWeight: 900, letterSpacing: '0.18em', color: cor, textTransform: 'uppercase', marginBottom: 12 }}>
+        📖 Versões Online — {d.livroAbrev} {d.capitulos}
+      </div>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
+        {links.map(l => (
+          <a
+            key={l.label}
+            href={l.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: 'flex', flexDirection: 'column',
+              padding: '10px 16px',
+              borderRadius: 10,
+              background: `${l.color}14`,
+              border: `1px solid ${l.color}44`,
+              textDecoration: 'none',
+              transition: 'background 0.18s',
+              minWidth: 120,
+            }}
+          >
+            <span style={{ fontSize: 15, fontWeight: 800, color: l.color, letterSpacing: '0.04em' }}>{l.label}</span>
+            <span style={{ fontSize: 11, color: 'rgba(255,255,255,0.55)', marginTop: 2 }}>{l.sublabel}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function DiaModal({ d, onClose, innerRef }: { d: DiaDevocional; onClose: () => void; innerRef?: React.RefObject<HTMLDivElement> }) {
   const isAT = d.testamento === 'AT';
   const cor = isAT ? C.atColor : C.ntColor;
@@ -9081,6 +9206,9 @@ function DiaModal({ d, onClose, innerRef }: { d: DiaDevocional; onClose: () => v
 
         {/* Quiasma */}
         <QuiasmaSection d={d} pericopeIdx={pericopeIdx} />
+
+        {/* Versões Online */}
+        <VersoesOnlineSection d={d} cor={cor} corB={corB} />
 
         {/* Reflexao, Familia e Oracao */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginTop: 14, marginBottom: 4 }}>
