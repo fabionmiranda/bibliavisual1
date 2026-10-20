@@ -9204,11 +9204,11 @@ function DiaModal({ d, onClose, innerRef }: { d: DiaDevocional; onClose: () => v
           )}
         </div>
 
-        {/* Quiasma */}
-        <QuiasmaSection d={d} pericopeIdx={pericopeIdx} />
-
         {/* Versões Online */}
         <VersoesOnlineSection d={d} cor={cor} corB={corB} />
+
+        {/* Quiasma */}
+        <QuiasmaSection d={d} pericopeIdx={pericopeIdx} />
 
         {/* Reflexao, Familia e Oracao */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginTop: 14, marginBottom: 4 }}>
