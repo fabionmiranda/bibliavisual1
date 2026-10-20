@@ -8957,35 +8957,37 @@ const LIVRO_BIBLIAONLINE: Record<string, string> = {
   '1Jo':'1joao','2Jo':'2joao','3Jo':'3joao','Jd':'judas','Ap':'apocalipse',
 };
 
-const LIVRO_SEFARIA: Record<string, string> = {
+// STEPBible OSMHB (BHS com nikud completo + interlinear)
+const LIVRO_STEPBIBLE: Record<string, string> = {
+  'Gn':'Gen','Êx':'Exod','Lv':'Lev','Nm':'Num','Dt':'Deut',
+  'Js':'Josh','Jz':'Judg','Rt':'Ruth','1Sm':'1Sam','2Sm':'2Sam',
+  '1Rs':'1Kgs','2Rs':'2Kgs','1Cr':'1Chr','2Cr':'2Chr',
+  'Ed':'Ezra','Ne':'Neh','Et':'Esth','Jó':'Job','Sl':'Ps',
+  'Pv':'Prov','Ec':'Eccl','Ct':'Song','Is':'Isa',
+  'Jr':'Jer','Lm':'Lam','Ez':'Ezek','Dn':'Dan',
+  'Os':'Hos','Jl':'Joel','Am':'Amos','Ob':'Obad','Jn':'Jonah',
+  'Mq':'Mic','Na':'Nah','Hc':'Hab','Sf':'Zeph',
+  'Ag':'Hag','Zc':'Zech','Ml':'Mal',
+};
+
+// BibleGateway usa nomes ingleses para evitar problemas de encoding (funciona com NVI-PT)
+const LIVRO_BIBLEGATEWAY: Record<string, string> = {
   'Gn':'Genesis','Êx':'Exodus','Lv':'Leviticus','Nm':'Numbers','Dt':'Deuteronomy',
-  'Js':'Joshua','Jz':'Judges','Rt':'Ruth','1Sm':'I_Samuel','2Sm':'II_Samuel',
-  '1Rs':'I_Kings','2Rs':'II_Kings','1Cr':'I_Chronicles','2Cr':'II_Chronicles',
+  'Js':'Joshua','Jz':'Judges','Rt':'Ruth','1Sm':'1+Samuel','2Sm':'2+Samuel',
+  '1Rs':'1+Kings','2Rs':'2+Kings','1Cr':'1+Chronicles','2Cr':'2+Chronicles',
   'Ed':'Ezra','Ne':'Nehemiah','Et':'Esther','Jó':'Job','Sl':'Psalms',
-  'Pv':'Proverbs','Ec':'Ecclesiastes','Ct':'Song_of_Songs','Is':'Isaiah',
+  'Pv':'Proverbs','Ec':'Ecclesiastes','Ct':'Song+of+Solomon','Is':'Isaiah',
   'Jr':'Jeremiah','Lm':'Lamentations','Ez':'Ezekiel','Dn':'Daniel',
   'Os':'Hosea','Jl':'Joel','Am':'Amos','Ob':'Obadiah','Jn':'Jonah',
   'Mq':'Micah','Na':'Nahum','Hc':'Habakkuk','Sf':'Zephaniah',
   'Ag':'Haggai','Zc':'Zechariah','Ml':'Malachi',
-};
-
-const LIVRO_BIBLEGATEWAY: Record<string, string> = {
-  'Gn':'Gênesis','Êx':'Êxodo','Lv':'Levítico','Nm':'Números','Dt':'Deuteronômio',
-  'Js':'Josué','Jz':'Juízes','Rt':'Rute','1Sm':'1+Samuel','2Sm':'2+Samuel',
-  '1Rs':'1+Reis','2Rs':'2+Reis','1Cr':'1+Crônicas','2Cr':'2+Crônicas',
-  'Ed':'Esdras','Ne':'Neemias','Et':'Ester','Jó':'Jó','Sl':'Salmos',
-  'Pv':'Provérbios','Ec':'Eclesiastes','Ct':'Cântico+dos+Cânticos','Is':'Isaías',
-  'Jr':'Jeremias','Lm':'Lamentações','Ez':'Ezequiel','Dn':'Daniel',
-  'Os':'Oseias','Jl':'Joel','Am':'Amós','Ob':'Obadias','Jn':'Jonas',
-  'Mq':'Miquéias','Na':'Naum','Hc':'Habacuque','Sf':'Sofonias',
-  'Ag':'Ageu','Zc':'Zacarias','Ml':'Malaquias',
-  'Mt':'Mateus','Mc':'Marcos','Lc':'Lucas','Jo':'João',
-  'At':'Atos','Rm':'Romanos','1Co':'1+Coríntios','2Co':'2+Coríntios',
-  'Gl':'Gálatas','Ef':'Efésios','Fp':'Filipenses','Cl':'Colossenses',
-  '1Ts':'1+Tessalonicenses','2Ts':'2+Tessalonicenses',
-  '1Tm':'1+Timóteo','2Tm':'2+Timóteo','Tt':'Tito','Fm':'Filemom',
-  'Hb':'Hebreus','Tg':'Tiago','1Pe':'1+Pedro','2Pe':'2+Pedro',
-  '1Jo':'1+João','2Jo':'2+João','3Jo':'3+João','Jd':'Judas','Ap':'Apocalipse',
+  'Mt':'Matthew','Mc':'Mark','Lc':'Luke','Jo':'John',
+  'At':'Acts','Rm':'Romans','1Co':'1+Corinthians','2Co':'2+Corinthians',
+  'Gl':'Galatians','Ef':'Ephesians','Fp':'Philippians','Cl':'Colossians',
+  '1Ts':'1+Thessalonians','2Ts':'2+Thessalonians',
+  '1Tm':'1+Timothy','2Tm':'2+Timothy','Tt':'Titus','Fm':'Philemon',
+  'Hb':'Hebrews','Tg':'James','1Pe':'1+Peter','2Pe':'2+Peter',
+  '1Jo':'1+John','2Jo':'2+John','3Jo':'3+John','Jd':'Jude','Ap':'Revelation',
 };
 
 function getChapter(capitulos: string): string {
@@ -8997,7 +8999,7 @@ function getChapter(capitulos: string): string {
 function VersoesOnlineSection({ d, cor, corB }: { d: DiaDevocional; cor: string; corB: string }) {
   const cap = getChapter(d.capitulos);
   const livroBO = LIVRO_BIBLIAONLINE[d.livroAbrev];
-  const livroSef = LIVRO_SEFARIA[d.livroAbrev];
+  const livroStep = LIVRO_STEPBIBLE[d.livroAbrev];
   const livroBG = LIVRO_BIBLEGATEWAY[d.livroAbrev];
   const isOT = d.testamento === 'AT';
 
@@ -9011,13 +9013,13 @@ function VersoesOnlineSection({ d, cor, corB }: { d: DiaDevocional; cor: string;
     livroBG ? {
       label: 'NVI',
       sublabel: 'Nova Versão Internacional',
-      url: `https://www.biblegateway.com/passage/?search=${livroBG}+${cap}&version=NVI`,
+      url: `https://www.biblegateway.com/passage/?search=${livroBG}+${cap}&version=NVI-PT`,
       color: '#34d399',
     } : null,
-    isOT && livroSef ? {
-      label: 'Hebraico',
-      sublabel: 'Texto Massorético (Sefaria)',
-      url: `https://www.sefaria.org/${livroSef}.${cap}`,
+    isOT && livroStep ? {
+      label: 'Hebraico BHS',
+      sublabel: 'BHS c/ nikud + interlinear (STEPBible)',
+      url: `https://www.stepbible.org/?q=version=OSMHB|reference=${livroStep}.${cap}&options=VN`,
       color: '#a78bfa',
     } : null,
   ].filter(Boolean) as { label: string; sublabel: string; url: string; color: string }[];
