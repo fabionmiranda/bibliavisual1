@@ -52,7 +52,7 @@ function FotoComFallback({ src, alt, accentColor, IconFigura }: {
 const FOTO_MASTRICHT = 'https://commons.wikimedia.org/wiki/Special:FilePath/Petrus_van_Mastricht.jpg';
 const FOTO_TURRETIN  = 'https://commons.wikimedia.org/wiki/Special:FilePath/Francis_Turretin.jpg';
 const FOTO_WEBSTER   = 'https://www.st-andrews.ac.uk/assets/university/schools/school-of-divinity/images/news/john-webster.jpg';
-const FOTO_BAVINCK   = 'https://commons.wikimedia.org/wiki/Special:FilePath/Herman_Bavinck.jpg';
+const FOTO_BAVINCK   = 'https://commons.wikimedia.org/wiki/Special:FilePath/HermanBavinckBig.jpg';
 
 const AUTORES = [
   {

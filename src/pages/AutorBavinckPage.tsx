@@ -8,7 +8,7 @@ const ACCENT     = '#fb923c'; // amber-orange
 const ACCENT_RGB = '251,146,60';
 const BG         = '#0d0800';
 
-const FOTO_URL = 'https://commons.wikimedia.org/wiki/Special:FilePath/Herman_Bavinck.jpg';
+const FOTO_URL = 'https://commons.wikimedia.org/wiki/Special:FilePath/HermanBavinckBig.jpg';
 
 // ─── 5 eixos dogmáticos ───────────────────────────────────────────────────────
 const PILARES = [
@@ -393,7 +393,7 @@ export default function AutorBavinckPage() {
 
         {/* ── Fonte da imagem ── */}
         <p style={{ marginTop: 16, fontSize: 11, color: 'rgba(200,205,255,0.28)', lineHeight: 1.6 }}>
-          Retrato: domínio público — <a href="https://commons.wikimedia.org/wiki/File:Herman_Bavinck.jpg" target="_blank" rel="noopener noreferrer" style={{ color: `rgba(${ACCENT_RGB},0.50)`, textDecoration: 'none' }}>Wikimedia Commons</a>
+          Retrato: domínio público — <a href="https://commons.wikimedia.org/wiki/File:HermanBavinckBig.jpg" target="_blank" rel="noopener noreferrer" style={{ color: `rgba(${ACCENT_RGB},0.50)`, textDecoration: 'none' }}>Wikimedia Commons</a>
         </p>
 
         {/* ── Voltar ── */}
