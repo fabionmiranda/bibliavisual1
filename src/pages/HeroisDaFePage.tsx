@@ -46,7 +46,7 @@ const HEROIS: Heroi[] = [
     referencia: 'Gênesis 12–25',
     descricao: 'O pai da fé — chamado a sair sem saber para onde ia, prometido um filho impossível, testado até o limite.',
     versiculoChave: 'Pela fé, Abraão obedeceu quando foi chamado a sair para um lugar que havia de receber por herança. (Hb 11.8)',
-    disponivel: false,
+    disponivel: true,
   },
   {
     ordem: 5,
@@ -173,6 +173,7 @@ export default function HeroisDaFePage() {
               </div>
               <h1 className="font-display font-black text-4xl sm:text-5xl lg:text-6xl text-white leading-[1.1]">
                 Heróis da Fé na Biblia
+                
               </h1>
             </div>
             <p className="text-white/45 text-base sm:text-lg max-w-2xl leading-relaxed mb-4">
@@ -209,6 +210,30 @@ export default function HeroisDaFePage() {
             </Link>
           </motion.div>
 
+          <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.22 }} className="mb-6">
+            <Link
+              to="/estudos/biblicos/herois-da-fe/aula-02"
+              className="group flex items-center gap-5 rounded-2xl p-5 hover:scale-[1.015] active:scale-[0.99] transition-all duration-200"
+              style={{ background: 'linear-gradient(145deg,#0a0f1a,#060a12)', border: '1.5px solid #f59e0b45' }}
+            >
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0 font-black text-lg"
+                style={{ background: '#f59e0b25', border: '1px solid #f59e0b45', color: '#f59e0b' }}>
+                02
+              </div>
+              <div className="flex-1">
+                <p className="text-[10px] font-black uppercase tracking-widest mb-0.5" style={{ color: '#f59e0b88' }}>Abraão · Hebreus 11.8–10</p>
+                <p className="text-white font-black text-base">A Fé que Obedece</p>
+                <p className="text-white/45 text-xs mt-0.5">3 movimentos · Tabelas De Abraão a Cristo · Perguntas · Plano semanal</p>
+              </div>
+              <div className="shrink-0 flex items-center gap-1.5">
+                <span className="text-[9px] font-black uppercase tracking-widest px-2 py-1 rounded-full" style={{ color: '#f59e0b', background: '#f59e0b18', border: '1px solid #f59e0b35' }}>
+                  Disponível
+                </span>
+                <ChevronRight className="w-4 h-4 text-white/30 group-hover:text-white/70 transition-colors" />
+              </div>
+            </Link>
+          </motion.div>
+
           {/* banner em construção */}
           <motion.div
             initial={{ opacity: 0, y: 16 }}
@@ -232,14 +257,19 @@ export default function HeroisDaFePage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.25 + i * 0.06 }}
               >
+                <Link
+                  to={heroi.disponivel && heroi.ordem === 4 ? '/estudos/biblicos/herois-da-fe/aula-02' : '#'}
+                  className={heroi.disponivel ? 'group' : ''}
+                  onClick={e => { if (!heroi.disponivel) e.preventDefault(); }}
+                >
                 <div
                   className="relative rounded-2xl overflow-hidden flex flex-col"
                   style={{
                     background: heroi.disponivel
-                      ? 'linear-gradient(145deg,#1a0a00,#0d0600)'
+                      ? 'linear-gradient(145deg,#0a0f1a,#060a12)'
                       : 'rgba(255,255,255,0.03)',
                     border: heroi.disponivel
-                      ? `1.5px solid ${ACCENT}40`
+                      ? '1.5px solid #f59e0b40'
                       : '1px solid rgba(255,255,255,0.07)',
                     opacity: heroi.disponivel ? 1 : 0.75,
                   }}
@@ -289,6 +319,7 @@ export default function HeroisDaFePage() {
                     )}
                   </div>
                 </div>
+                </Link>
               </motion.div>
             ))}
           </div>
