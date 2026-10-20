@@ -36,6 +36,9 @@ import DevocionalReformaDiaPage from './pages/DevocionalReformaDiaPage';
 import BibliotecaAutoresPage from './pages/BibliotecaAutoresPage';
 import BibliotecaSemanaPage from './pages/BibliotecaSemanaPage';
 import AutorMastrichtPage from './pages/AutorMastrichtPage';
+import AutorTurretinPage from './pages/AutorTurretinPage';
+import AutorWebsterPage from './pages/AutorWebsterPage';
+import AutorBavinckPage from './pages/AutorBavinckPage';
 import BibliotecaAutoresBatistasComparativoPage from './pages/BibliotecaAutoresBatistasComparativoPage';
 import BibliotecaAutoresReformadoresPage from './pages/BibliotecaAutoresReformadoresPage';
 import PregacaoPage from './pages/PregacaoPage';
@@ -57,6 +60,7 @@ import ArtigoPage from './pages/ArtigoPage';
 import BibliotecaArtigosPage from './pages/BibliotecaArtigosPage';
 import HeroisDaFePage from './pages/HeroisDaFePage';
 import HeroisDaFeAula01Page from './pages/HeroisDaFeAula01Page';
+import HeroisDaFeAula02Page from './pages/HeroisDaFeAula02Page';
 import EstudosBiblicosPage from './pages/EstudosBiblicosPage';
 import HeroisDaFeHistoriaPage from './pages/HeroisDaFeHistoriaPage';
 import Watermark from './components/Watermark';
@@ -122,12 +126,16 @@ export default function App() {
           <Route path="/estudos/biblicos/herois-da-fe-na-historia"    element={<HeroisDaFeHistoriaPage />} />
           <Route path="/estudos/biblicos/herois-da-fe"                 element={<HeroisDaFePage />} />
           <Route path="/estudos/biblicos/herois-da-fe/aula-01"         element={<HeroisDaFeAula01Page />} />
+          <Route path="/estudos/biblicos/herois-da-fe/aula-02"         element={<HeroisDaFeAula02Page />} />
           <Route path="/discipulado/confessional/herois-da-fe"          element={<HeroisDaFePage />} />
           <Route path="/discipulado/confessional/herois-da-fe/aula-01" element={<HeroisDaFeAula01Page />} />
           <Route path="/biblioteca/artigos"           element={<BibliotecaArtigosPage />} />
           <Route path="/biblioteca/semana"            element={<BibliotecaSemanaPage />} />
           <Route path="/biblioteca/autores" element={<BibliotecaAutoresPage />} />
           <Route path="/biblioteca/autores/mastricht" element={<AutorMastrichtPage />} />
+          <Route path="/biblioteca/autores/turretin" element={<AutorTurretinPage />} />
+          <Route path="/biblioteca/autores/webster" element={<AutorWebsterPage />} />
+          <Route path="/biblioteca/autores/bavinck" element={<AutorBavinckPage />} />
           <Route path="/biblioteca/autores/batistas-presbiterianos" element={<BibliotecaAutoresBatistasComparativoPage />} />
           <Route path="/biblioteca/autores/reformadores" element={<BibliotecaAutoresReformadoresPage />} />
           <Route path="/biblioteca/resenhas"          element={<BibliotecaResenhasPage />} />

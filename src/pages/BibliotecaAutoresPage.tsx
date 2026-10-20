@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { ChevronRight, User, BookOpen, ExternalLink } from 'lucide-react';
@@ -25,7 +26,33 @@ function IconMastricht({ color }: { color: string }) {
   );
 }
 
+function FotoComFallback({ src, alt, accentColor, IconFigura }: {
+  src: string; alt: string; accentColor: string;
+  IconFigura: ({ color }: { color: string }) => React.ReactElement;
+}) {
+  const [erro, setErro] = React.useState(false);
+  if (erro) {
+    return (
+      <div className="w-full h-full flex items-center justify-center" style={{ minHeight: 220 }}>
+        <IconFigura color={accentColor} />
+      </div>
+    );
+  }
+  return (
+    <img
+      src={src}
+      alt={alt}
+      className="w-full h-full object-cover object-top block"
+      style={{ minHeight: 220, filter: 'sepia(12%) contrast(1.06) brightness(0.90)' }}
+      onError={() => setErro(true)}
+    />
+  );
+}
+
 const FOTO_MASTRICHT = 'https://commons.wikimedia.org/wiki/Special:FilePath/Petrus_van_Mastricht.jpg';
+const FOTO_TURRETIN  = 'https://commons.wikimedia.org/wiki/Special:FilePath/Francis_Turretin.jpg';
+const FOTO_WEBSTER   = 'https://www.st-andrews.ac.uk/assets/university/schools/school-of-divinity/images/news/john-webster.jpg';
+const FOTO_BAVINCK   = 'https://commons.wikimedia.org/wiki/Special:FilePath/Herman_Bavinck.jpg';
 
 const AUTORES = [
   {
@@ -81,6 +108,97 @@ const AUTORES = [
         {/* brilho interno */}
         <path d="M32 46 C26 40 25 34 28 28 C29 32 31 34 31 34 C30 29 32 24 32 22 C32 24 34 29 33 34 C33 34 35 32 36 28 C39 34 38 40 32 46Z"
           fill={color + '35'} />
+      </svg>
+    ),
+  },
+  {
+    slug: 'turretin',
+    nome: 'Francis Turretin',
+    datas: '1623–1687',
+    area: 'Ortodoxia Reformada',
+    subtitulo: 'A Teologia Elênctica',
+    descricao:
+      'Teólogo genebrino e figura central da Escolástica Reformada do século XVII. Professor na Academia de Genebra, Turretin sistematizou a fé reformada em formato de Questões Disputadas (Quaestiones Disputatae), confrontando o catolicismo tridentino, o arminianismo, o socinianismo e o cartesianismo com método rigoroso e precisão doutrinária.',
+    destaque: '"A teologia é um sistema doutrinal controverso, racionalmente ordenado e biblicamente fundado." — Institutio Theologiae Elencticae',
+    tags: ['Ortodoxia Reformada', 'Escolástica', 'Teologia Sistemática', 'Século XVII', 'Genebra'],
+    accentColor: '#818cf8',
+    gradHero: 'linear-gradient(135deg, #0a0520 0%, #06061a 50%, #080416 100%)',
+    gradOrb1: '#818cf8',
+    gradOrb2: '#f59e0b',
+    foto: FOTO_TURRETIN,
+    IconFigura: ({ color }: { color: string }) => (
+      <svg viewBox="0 0 64 64" fill="none" className="w-full h-full">
+        <rect x="8" y="16" width="20" height="30" rx="2.5" stroke={color} strokeWidth="1.8" fill={color + '12'} />
+        <rect x="36" y="16" width="20" height="30" rx="2.5" stroke={color} strokeWidth="1.8" fill={color + '12'} />
+        <line x1="32" y1="16" x2="32" y2="46" stroke={color} strokeWidth="2" />
+        {[22, 27, 32, 38, 43].map(y => (
+          <line key={y} x1="12" y1={y} x2="24" y2={y} stroke={color} strokeWidth="1.3" strokeOpacity="0.5" />
+        ))}
+        {[22, 27, 32, 38, 43].map(y => (
+          <line key={y + 50} x1="40" y1={y} x2="52" y2={y} stroke={color} strokeWidth="1.3" strokeOpacity="0.5" />
+        ))}
+        <text x="32" y="10" textAnchor="middle" fontSize="8" fill={color} fontWeight="900">Q?</text>
+        <line x1="32" y1="48" x2="32" y2="56" stroke={color} strokeWidth="2" strokeLinecap="round" />
+        <line x1="28" y1="52" x2="36" y2="52" stroke={color} strokeWidth="1.8" strokeLinecap="round" />
+        <polygon points="32,48 29.5,52 34.5,52" fill={color} opacity="0.8" />
+      </svg>
+    ),
+  },
+  {
+    slug: 'webster',
+    nome: 'John Webster',
+    datas: '1955–2016',
+    area: 'Teologia Reformada',
+    subtitulo: 'Teocentrismo Radical e a Escritura Santificada',
+    descricao:
+      'Teólogo sistemático anglicano e reformado, professor em Oxford, Aberdeen e St Andrews. Webster resgatou o teocentrismo na dogmática contemporânea ao inserir a bibliologia dentro da doutrina de Deus — invertendo a ordem moderna que começa pelo texto e pelo leitor.',
+    destaque: '"A teologia é a disciplina de pensar depois de Deus — de seguir o movimento do seu ser, de sua obra e de seu falar." — Holy Scripture, 2003',
+    tags: ['Teologia Reformada', 'Bibliologia', 'Teocentrismo', 'Século XX–XXI', 'Anglicano'],
+    accentColor: '#34d399',
+    gradHero: 'linear-gradient(135deg, #001a0e 0%, #00100a 50%, #04100c 100%)',
+    gradOrb1: '#34d399',
+    gradOrb2: '#60a5fa',
+    foto: FOTO_WEBSTER,
+    IconFigura: ({ color }: { color: string }) => (
+      <svg viewBox="0 0 64 64" fill="none" className="w-full h-full">
+        <circle cx="32" cy="22" r="9" stroke={color} strokeWidth="1.8" fill={color + '15'} />
+        <text x="32" y="26" textAnchor="middle" fontSize="9" fill={color} fontWeight="900">T</text>
+        {[0,60,120,180,240,300].map((deg, i) => {
+          const rad = (deg * Math.PI) / 180;
+          const x1 = 32 + 12 * Math.cos(rad); const y1 = 22 + 12 * Math.sin(rad);
+          const x2 = 32 + 19 * Math.cos(rad); const y2 = 22 + 19 * Math.sin(rad);
+          return <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke={color} strokeWidth="1.4" strokeOpacity="0.55" strokeLinecap="round" />;
+        })}
+        <rect x="12" y="44" width="18" height="12" rx="2" stroke={color} strokeWidth="1.6" fill={color + '12'} />
+        <rect x="34" y="44" width="18" height="12" rx="2" stroke={color} strokeWidth="1.6" fill={color + '12'} />
+        <line x1="32" y1="44" x2="32" y2="56" stroke={color} strokeWidth="1.8" />
+        <line x1="32" y1="38" x2="32" y2="42" stroke={color} strokeWidth="1.8" strokeLinecap="round" />
+        <polygon points="32,44 29.5,40 34.5,40" fill={color} opacity="0.8" />
+      </svg>
+    ),
+  },
+  {
+    slug: 'bavinck',
+    nome: 'Herman Bavinck',
+    datas: '1854–1921',
+    area: 'Neocalvinismo Holandês',
+    subtitulo: 'A Dogmática Orgânica — Graça que Restaura a Natureza',
+    descricao:
+      'Um dos maiores teólogos dogmáticos do protestantismo, figura central do neocalvinismo holandês ao lado de Kuyper. Sua Dogmática Reformada (4 vols.) realiza uma síntese monumental entre ortodoxia reformada e modernidade — demonstrando que a graça não destrói a natureza, mas a restaura.',
+    destaque: '"A graça não destrói a natureza — ela a restaura. A redenção recapitula e cura a criação, não a substitui." — Gereformeerde Dogmatiek',
+    tags: ['Neocalvinismo', 'Dogmática', 'Modernidade', 'Holanda', 'Século XIX–XX'],
+    accentColor: '#fb923c',
+    gradHero: 'linear-gradient(135deg, #1a0800 0%, #0d0800 50%, #100a04 100%)',
+    gradOrb1: '#fb923c',
+    gradOrb2: '#34d399',
+    foto: FOTO_BAVINCK,
+    IconFigura: ({ color }: { color: string }) => (
+      <svg viewBox="0 0 64 64" fill="none" className="w-full h-full">
+        <circle cx="32" cy="18" r="7" stroke={color} strokeWidth="1.8" fill={color + '15'} />
+        <path d="M32 26 C20 30 16 40 20 52 L44 52 C48 40 44 30 32 26Z" stroke={color} strokeWidth="1.6" fill={color + '10'} strokeLinejoin="round" />
+        <line x1="32" y1="32" x2="32" y2="46" stroke={color} strokeWidth="1.4" strokeOpacity="0.5" />
+        <line x1="24" y1="38" x2="40" y2="38" stroke={color} strokeWidth="1.4" strokeOpacity="0.5" />
+        <circle cx="32" cy="44" r="2.5" stroke={color} strokeWidth="1.4" fill={color + '30'} />
       </svg>
     ),
   },
@@ -165,12 +283,11 @@ export default function BibliotecaAutoresPage() {
                         style={{ background: `radial-gradient(ellipse at top center, ${a.gradOrb1} 0%, transparent 65%)` }} />
 
                       {a.foto ? (
-                        <img
+                        <FotoComFallback
                           src={a.foto}
                           alt={`Retrato de ${a.nome}`}
-                          className="w-full h-full object-cover object-top block"
-                          style={{ minHeight: 220, filter: 'sepia(12%) contrast(1.06) brightness(0.90)' }}
-                          onError={e => { (e.currentTarget as HTMLImageElement).parentElement!.style.display = 'none'; }}
+                          accentColor={a.accentColor}
+                          IconFigura={a.IconFigura}
                         />
                       ) : (
                         <div className="w-full h-full flex items-center justify-center" style={{ minHeight: 220 }}>
