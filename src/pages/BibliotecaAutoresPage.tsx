@@ -52,7 +52,8 @@ function FotoComFallback({ src, alt, accentColor, IconFigura }: {
 const FOTO_MASTRICHT = 'https://commons.wikimedia.org/wiki/Special:FilePath/Petrus_van_Mastricht.jpg';
 const FOTO_TURRETIN  = 'https://commons.wikimedia.org/wiki/Special:FilePath/Francis_Turretin.jpg';
 const FOTO_WEBSTER   = 'https://www.st-andrews.ac.uk/assets/university/schools/school-of-divinity/images/news/john-webster.jpg';
-const FOTO_BAVINCK   = 'https://commons.wikimedia.org/wiki/Special:FilePath/HermanBavinckBig.jpg';
+const FOTO_BAVINCK    = 'https://commons.wikimedia.org/wiki/Special:FilePath/HermanBavinckBig.jpg';
+const FOTO_PLANTINGA  = 'https://commons.wikimedia.org/wiki/Special:FilePath/Alvin_Plantinga.jpg';
 
 const AUTORES = [
   {
@@ -174,6 +175,35 @@ const AUTORES = [
         <line x1="32" y1="44" x2="32" y2="56" stroke={color} strokeWidth="1.8" />
         <line x1="32" y1="38" x2="32" y2="42" stroke={color} strokeWidth="1.8" strokeLinecap="round" />
         <polygon points="32,44 29.5,40 34.5,40" fill={color} opacity="0.8" />
+      </svg>
+    ),
+  },
+  {
+    slug: 'plantinga',
+    nome: 'Alvin Plantinga',
+    datas: '1932 –',
+    area: 'Epistemologia Reformada',
+    subtitulo: 'A Garantia Epistêmica — Crença em Deus como Propriamente Básica',
+    descricao:
+      'O principal formulador da Epistemologia Reformada. Professor em Notre Dame, Plantinga desconstruiu a acusação iluminista de que a fé seria irracional, demonstrando que a crença em Deus é propriamente básica, garantida pelo Sensus Divinitatis e pela ação do Espírito Santo — e formulou a Defesa do Livre-Arbítrio contra o problema do mal.',
+    destaque: '"A crença em Deus não precisa ser inferida de argumentos para ser racional — ela pode ser propriamente básica, assim como a crença no mundo externo." — Warranted Christian Belief',
+    tags: ['Epistemologia Reformada', 'Filosofia Analítica', 'Warrant', 'Notre Dame', 'Século XX–XXI'],
+    accentColor: '#38bdf8',
+    gradHero: 'linear-gradient(135deg, #030e1c 0%, #020d1a 50%, #030f1e 100%)',
+    gradOrb1: '#38bdf8',
+    gradOrb2: '#a78bfa',
+    foto: FOTO_PLANTINGA,
+    IconFigura: ({ color }: { color: string }) => (
+      <svg viewBox="0 0 64 64" fill="none" className="w-full h-full">
+        <circle cx="32" cy="26" r="10" stroke={color} strokeWidth="1.8" fill={color + '15'} />
+        <text x="32" y="30" textAnchor="middle" fontSize="10" fill={color} fontWeight="900">?</text>
+        <path d="M18 50 C18 40 26 36 32 36 C38 36 46 40 46 50" stroke={color} strokeWidth="1.6" fill="none" strokeLinecap="round" />
+        <line x1="8" y1="18" x2="14" y2="22" stroke={color} strokeWidth="1.4" strokeOpacity="0.5" strokeLinecap="round" />
+        <line x1="56" y1="18" x2="50" y2="22" stroke={color} strokeWidth="1.4" strokeOpacity="0.5" strokeLinecap="round" />
+        <line x1="8" y1="30" x2="14" y2="29" stroke={color} strokeWidth="1.4" strokeOpacity="0.5" strokeLinecap="round" />
+        <line x1="56" y1="30" x2="50" y2="29" stroke={color} strokeWidth="1.4" strokeOpacity="0.5" strokeLinecap="round" />
+        <circle cx="32" cy="56" r="2.5" stroke={color} strokeWidth="1.4" fill={color + '30'} />
+        <line x1="32" y1="50" x2="32" y2="53" stroke={color} strokeWidth="1.4" strokeLinecap="round" />
       </svg>
     ),
   },

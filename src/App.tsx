@@ -39,6 +39,7 @@ import AutorMastrichtPage from './pages/AutorMastrichtPage';
 import AutorTurretinPage from './pages/AutorTurretinPage';
 import AutorWebsterPage from './pages/AutorWebsterPage';
 import AutorBavinckPage from './pages/AutorBavinckPage';
+import AutorPlantingaPage from './pages/AutorPlantingaPage';
 import BibliotecaAutoresBatistasComparativoPage from './pages/BibliotecaAutoresBatistasComparativoPage';
 import BibliotecaAutoresReformadoresPage from './pages/BibliotecaAutoresReformadoresPage';
 import PregacaoPage from './pages/PregacaoPage';
@@ -136,6 +137,7 @@ export default function App() {
           <Route path="/biblioteca/autores/turretin" element={<AutorTurretinPage />} />
           <Route path="/biblioteca/autores/webster" element={<AutorWebsterPage />} />
           <Route path="/biblioteca/autores/bavinck" element={<AutorBavinckPage />} />
+          <Route path="/biblioteca/autores/plantinga" element={<AutorPlantingaPage />} />
           <Route path="/biblioteca/autores/batistas-presbiterianos" element={<BibliotecaAutoresBatistasComparativoPage />} />
           <Route path="/biblioteca/autores/reformadores" element={<BibliotecaAutoresReformadoresPage />} />
           <Route path="/biblioteca/resenhas"          element={<BibliotecaResenhasPage />} />
