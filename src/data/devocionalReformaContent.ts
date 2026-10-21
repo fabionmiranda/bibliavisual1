@@ -1389,6 +1389,364 @@ const DIAS_CONTENT: Record<number, DiaDevoContent> = {
     oracao: 'Senhor, perdoa-nos pela tendência de buscar nos príncipes e nas estruturas de poder a segurança que só tu podes dar. De confundir a proteção do Estado com a tua bênção, e a perseguição do Estado com o teu abandono.\n\nObrigado por aqueles cristãos anônimos que, após Mühlberg, continuaram a ler a Escritura, a celebrar a Ceia e a orar — sem esperar que um príncipe lhes dissesse que era seguro fazê-lo.\n\nQue a nossa fé não dependa de circunstâncias favoráveis para existir. Que sobreviva às batalhas que perdemos, às alianças que se desfazem, às instituições que entram em colapso.\n\nE que quando os príncipes falharem — como sempre falham — encontremos em ti o fundamento que não se move.\n\nAmém.',
     leituraComplementar: 'González, Justo L. A Era dos Reformadores. São Paulo: Vida Nova, 1995. Capítulo 9: "O Curso Posterior do Luteranismo" (pp. 211–236).',
   },
+
+  22: {
+    dia: 22,
+    data: '22 de outubro de 2026',
+    titulo: 'Luteranismo na Escandinávia e a Paz de Augsburgo',
+    subtitulo: 'Capítulo 9 — Parte 2',
+    versiculo: 'Se for possível, quanto depender de vós, tende paz com todos os homens.',
+    versiculoRef: 'Romanos 12.18',
+    secoes: [
+      {
+        tipo: 'contexto',
+        titulo: 'Do Impasse à Lei: A Cristandade Dividida para Ficar',
+        paragrafos: [
+          'Ontem vimos a derrota militar dos príncipes luteranos em Mühlberg e o impasse que se seguiu. Hoje González nos leva às consequências — a consolidação do luteranismo nos reinos do norte da Europa e o tratado que, <span style="color:#fbbf24;font-weight:700;">pela primeira vez na história do Ocidente cristão</span>, reconheceu legalmente que a cristandade estava dividida para ficar.',
+          'A <span style="background:rgba(251,191,36,0.12);border-left:3px solid #fbbf24;padding:2px 8px;border-radius:3px;font-weight:700;color:rgba(255,245,210,0.95);">Paz de Augsburgo de 1555</span> não foi uma vitória. Foi um <span style="color:#fb7185;font-weight:700;">empate transformado em lei</span>. E ao norte, enquanto o centro da Europa sangrava, os reinos escandinavos construíam em relativa paz uma versão do luteranismo que duraria séculos.',
+        ],
+      },
+      {
+        tipo: 'analise',
+        titulo: 'A Reforma Escandinava: Reforma por Decreto',
+        paragrafos: [
+          'A Reforma chegou à Escandinávia de forma diferente da Alemanha. Não foi um monge angustiado que a iniciou — foram <span style="color:#60a5fa;font-weight:700;">reis que a adotaram por uma combinação de convicção e conveniência</span>. Na <span style="color:#fbbf24;font-weight:700;">Dinamarca</span>, Cristiano III adotou o luteranismo em <span style="color:#fbbf24;font-weight:600;">1536</span>, confiscou os bens da Igreja e reorganizou o clero sob autoridade real. Na <span style="color:#fbbf24;font-weight:700;">Suécia</span>, Gustavo Vasa fez o mesmo.',
+          'González não romantiza esse processo. A motivação dos reis escandinavos incluía teologia — mas incluía também <span style="background:rgba(251,113,133,0.12);border:1px solid rgba(251,113,133,0.30);border-radius:5px;padding:1px 7px;color:#fecdd3;font-weight:700;">controle sobre propriedades eclesiásticas e independência de Roma</span>. O luteranismo chegou ao norte como reforma genuína e como conveniência política <em>ao mesmo tempo</em>.',
+          'O resultado, porém, foi duradouro: a <span style="color:#34d399;font-weight:700;">Escandinávia se tornou o coração do luteranismo mundial</span>. As Igrejas Luteranas do norte da Europa preservaram uma tradição de <span style="color:#34d399;font-weight:600;">pregação, catequese e cuidado social</span> que moldou sociedades inteiras — prova de que Deus usa processos imperfeitos para construir comunidades duradouras.',
+        ],
+        citacao: 'A Reforma Escandinava foi conduzida por reis com motivações mistas — teologia e interesse político. González mostra que Deus usou mesmo assim esse processo para construir comunidades de fé que duraram séculos.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'Augsburgo: O Fim do Sonho Medieval',
+        paragrafos: [
+          'A Paz de Augsburgo, assinada em setembro de 1555, estabeleceu o princípio <span style="background:rgba(192,132,252,0.15);border:1px solid rgba(192,132,252,0.35);border-radius:5px;padding:2px 10px;color:#e9d5ff;font-weight:700;font-style:italic;">cuius regio, eius religio</span>: a religião do território segue a religião do príncipe. Cada príncipe do Sacro Império podia escolher entre o catolicismo romano e o luteranismo — e os súditos deviam <span style="color:#fbbf24;font-weight:700;">seguir ou emigrar</span>.',
+          'González aponta o que esse acordo representava historicamente: <span style="color:#fb7185;font-weight:700;">o fim do ideal medieval de uma cristandade unificada</span> sob uma única fé. Por mil anos, a ideia de Europa e a ideia de cristandade haviam sido praticamente sinônimas. <span style="background:rgba(251,113,133,0.12);border-left:3px solid #fb7185;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(255,220,225,0.95);">Augsburgo reconhecia que isso havia acabado.</span>',
+          'Mas González também aponta os <span style="color:#f97316;font-weight:700;">limites do acordo</span>: Augsburgo protegia apenas luteranos — <span style="color:#fb7185;font-weight:600;">calvinistas e anabatistas ficaram de fora</span>. A liberdade religiosa era dos príncipes, não dos súditos. E a pergunta sobre como cristãos de convicções diferentes poderiam conviver no mesmo território ainda aguardava resposta — uma resposta que só viria, a sangue e fogo, na <span style="color:#fb7185;font-weight:700;">Guerra dos Trinta Anos</span> do século seguinte.',
+        ],
+        citacao: 'Acordos de paz imperfeitos são frequentemente o melhor que a história permite. Augsburgo não era justo — mas deu à Reforma tempo para se consolidar.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'reflexao',
+        titulo: 'A Paz Possível e a Esperança Realista',
+        paragrafos: [
+          'González encerra esse capítulo com uma observação que soa contemporânea: <span style="color:#fbbf24;font-weight:700;">a paz possível não é a paz desejada — mas costuma ser a única disponível</span>. Augsburgo não era justo. Não resolvia a questão da consciência individual. Não acomodava todas as tradições protestantes.',
+          'Mas <span style="background:rgba(52,211,153,0.12);border-left:3px solid #34d399;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(200,255,235,0.95);">evitou décadas de guerra imediata. Deu à Reforma tempo para se consolidar. Permitiu que gerações crescessem em comunidades protestantes</span> que de outra forma teriam sido destruídas. A sabedoria cristã às vezes consiste em saber aceitar o possível — sem abandonar o ideal — enquanto a história amadurece.',
+        ],
+      },
+    ],
+    perguntas: [
+      'A Reforma Escandinava foi conduzida por reis com motivações mistas — teologia e interesse político. González mostra que Deus usou mesmo assim esse processo para construir comunidades de fé duradouras. Como você avalia processos de transformação institucional que nascem de motivações impuras?',
+      'Augsburgo reconhecia a divisão sem resolvê-la plenamente. Há conflitos na sua vida ou comunidade que você tentou resolver definitivamente — e que talvez precisassem apenas de um "Augsburgo": um acordo imperfeito que permita a convivência enquanto a história amadurece?',
+      'O acordo de Augsburgo não incluía calvinistas nem anabatistas — apenas luteranos. Como você reage quando acordos de paz deixam grupos de fora? Qual é a responsabilidade de quem está protegido pelo acordo em relação a quem não está?',
+    ],
+    oracao: 'Senhor, obrigado por Augsburgo — mesmo imperfeito, mesmo incompleto, mesmo injusto com tantos. Obrigado pela paz que às vezes só a exaustão produz, quando nenhum lado consegue mais destruir o outro.\n\nPerdoa-nos pela tendência de recusar acordos imperfeitos em nome de soluções ideais que não chegam — enquanto o conflito continua destruindo pessoas reais.\n\nEnsina-nos a sabedoria de saber quando lutar, quando negociar e quando aceitar o possível sem abandonar o ideal. E que quando o ideal não chegar em nossa geração, tenhamos humildade suficiente para deixar o trabalho para quem vem depois de nós.\n\nAmém.',
+    leituraComplementar: 'González, Justo L. A Era dos Reformadores. São Paulo: Vida Nova, 1995. Capítulo 9: "O Curso Posterior do Luteranismo" (pp. 211–236).',
+  },
+
+  23: {
+    dia: 23,
+    data: '23 de outubro de 2026',
+    titulo: 'Os Países Baixos: Reforma, Resistência e Liberdade',
+    subtitulo: 'Capítulo 10 — Parte 1',
+    versiculo: 'Onde está o Espírito do Senhor, aí há liberdade.',
+    versiculoRef: '2 Coríntios 3.17',
+    secoes: [
+      {
+        tipo: 'contexto',
+        titulo: 'A Reforma Que Sobreviveu Sem Príncipes',
+        paragrafos: [
+          'Se a Reforma Luterana se consolidou na Alemanha e na Escandinávia com o apoio dos príncipes, havia uma região da Europa onde o protestantismo precisou sobreviver <span style="color:#fb7185;font-weight:700;">sem príncipes favoráveis — ou melhor, contra eles</span>.',
+          'Os <span style="color:#fbbf24;font-weight:700;">Países Baixos</span> — o que hoje são a Holanda e a Bélgica — eram território do imperador <span style="color:#f97316;font-weight:700;">Felipe II da Espanha</span>, filho de Carlos V e defensor inflexível do catolicismo. Aqui a Reforma não encontrou proteção política. Encontrou a <span style="background:rgba(251,113,133,0.15);border:1px solid rgba(251,113,133,0.35);border-radius:5px;padding:1px 8px;color:#fecdd3;font-weight:800;">Inquisição espanhola</span>. E sobreviveu mesmo assim.',
+        ],
+      },
+      {
+        tipo: 'analise',
+        titulo: 'O Calvinismo como Tecnologia de Sobrevivência',
+        paragrafos: [
+          'O calvinismo chegou aos Países Baixos por volta de <span style="color:#fbbf24;font-weight:700;">1540</span>, trazido por mercadores e refugiados. Diferente do luteranismo, que dependia da proteção dos príncipes, o calvinismo havia desenvolvido <span style="color:#34d399;font-weight:700;">estruturas eclesiásticas que funcionavam na clandestinidade</span>: consistórios, presbíteros, assembleias locais que se conectavam em sínodos regionais.',
+          'A Igreja calvinista nos Países Baixos era uma <span style="background:rgba(52,211,153,0.12);border-left:3px solid #34d399;padding:2px 8px;border-radius:3px;font-weight:700;color:rgba(200,255,235,0.95);">Igreja de catacumbas — organizada, disciplinada, com liderança distribuída</span> que não dependia de nenhuma figura central para funcionar. Quando as autoridades espanholas prendiam um pastor, a comunidade continuava. Quando fechavam uma congregação, outra se formava em outro lugar.',
+          'González sublinha: a eclesiologia calvinista não foi apenas teologia abstrata — foi uma <span style="color:#fbbf24;font-weight:800;font-style:italic;">tecnologia de sobrevivência</span>. A Igreja distribuída, sem dependência de uma hierarquia central, provou ser <span style="color:#34d399;font-weight:700;">extraordinariamente resistente à perseguição</span>.',
+        ],
+        citacao: 'A eclesiologia calvinista não foi apenas teologia abstrata — foi uma tecnologia de sobrevivência. A Igreja distribuída provou ser extraordinariamente resistente à perseguição.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'O Duque de Alba e o Efeito Paradoxal do Terror',
+        paragrafos: [
+          'Em <span style="color:#fb7185;font-weight:700;">1567</span>, Felipe II enviou o <span style="color:#fb7185;font-weight:700;">Duque de Alba</span> aos Países Baixos com um exército e uma missão: eliminar o protestantismo pela força. O <span style="background:rgba(251,113,133,0.12);border:1px solid rgba(251,113,133,0.30);border-radius:5px;padding:1px 7px;color:#fecdd3;font-weight:700;">"Tribunal dos Tumultos"</span> — chamado pelos habitantes de <span style="color:#fb7185;font-style:italic;">"Tribunal de Sangue"</span> — condenou à morte <strong style="color:#fff;">milhares de pessoas</strong>.',
+          'González descreve o efeito inesperado da repressão: em vez de sufocar a resistência, ela a <span style="color:#fbbf24;font-weight:700;">unificou</span>. Católicos e protestantes que haviam discordado em teologia encontraram causa comum na resistência à tirania espanhola. A questão religiosa e a questão nacional se fundiram numa única luta.',
+          'Os <span style="color:#60a5fa;font-weight:800;font-style:italic;">Geuzen</span> — <span style="color:#60a5fa;font-style:italic;">"mendigos"</span>, apelido dado com ironia pelos espanhóis e adotado com orgulho pelos rebeldes — controlaram o mar e começaram a libertar cidades. A resistência armada se tornou <span style="color:#34d399;font-weight:700;">guerra de independência</span>. <span style="background:rgba(52,211,153,0.12);border-left:3px solid #34d399;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(200,255,235,0.95);">A tentativa de destruir a fé criou os mártires que alimentaram décadas de resistência.</span>',
+        ],
+        citacao: 'Quando a fé é atacada, ela frequentemente descobre recursos que a prosperidade nunca havia revelado.',
+        citacaoAutor: 'Justo L. González',
+      },
+    ],
+    perguntas: [
+      'A eclesiologia calvinista — Igreja distribuída, sem dependência de hierarquia central — provou ser resiliente sob perseguição. O que isso sugere para a estrutura de comunidades de fé hoje? Sua comunidade sobreviveria se a liderança central fosse removida?',
+      'González mostra que a perseguição brutal do Duque de Alba criou mártires que alimentaram décadas de resistência. Como você interpreta o paradoxo de que a tentativa de destruir a fé frequentemente a fortalece? Há algo nesse padrão que informa como você enfrenta a oposição?',
+      'Nos Países Baixos, fé e identidade nacional se fundiram na resistência à perseguição. Que riscos isso cria? Como distinguir fidelidade ao evangelho de fidelidade à nação quando as duas causas andam juntas?',
+    ],
+    oracao: 'Senhor, obrigado pelos Geuzen — por esses "mendigos" que, sem exército organizado e sem príncipe protetor, mantiveram acesa a fé e a liberdade contra o poder do maior império do mundo.\n\nPerdoa-nos pela tendência de acreditar que a Igreja só pode crescer em circunstâncias favoráveis — que precisamos de proteção, recursos e reconhecimento para cumprir nossa missão.\n\nEnsina-nos que a fé distribuída, enraizada em comunidades reais e não dependente de estruturas centrais frágeis, é a fé que sobrevive. E que quando o Duque de Alba chegar — em qualquer de suas formas contemporâneas — encontre em nós não a fragilidade de uma instituição, mas a teimosia de um povo.\n\nAmém.',
+    leituraComplementar: 'González, Justo L. A Era dos Reformadores. São Paulo: Vida Nova, 1995. Capítulo 10: "A Reforma nos Países Baixos" (pp. 237–260).',
+  },
+
+  24: {
+    dia: 24,
+    data: '24 de outubro de 2026',
+    titulo: 'Guilherme de Orange e a Independência dos Países Baixos',
+    subtitulo: 'Capítulo 10 — Parte 2',
+    versiculo: 'O coração do rei está na mão do Senhor como ribeiros de águas; para onde quer, o inclina.',
+    versiculoRef: 'Provérbios 21.1',
+    secoes: [
+      {
+        tipo: 'contexto',
+        titulo: 'O Rosto Humano da Resistência',
+        paragrafos: [
+          'Ontem vimos a resistência anônima dos <span style="color:#60a5fa;font-style:italic;font-weight:700;">Geuzen</span> e das comunidades calvinistas nos Países Baixos contra o poder espanhol. Hoje González nos apresenta o rosto humano dessa resistência: <span style="color:#fbbf24;font-weight:700;">Guilherme de Orange</span>, o nobre que se tornou pai de uma nação.',
+          'Guilherme não era um reformador religioso. Era um <span style="color:#c084fc;font-weight:700;">aristocrata prudente</span>, educado na corte de Carlos V, criado como católico, mais tarde aderindo ao luteranismo e finalmente ao calvinismo. González nos conta sua história não como hagiografia, mas como exemplo de como <span style="background:rgba(192,132,252,0.12);border-left:3px solid #c084fc;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(235,220,255,0.95);">circunstâncias e convicções transformam um homem ao longo do tempo</span> — e como lideranças surgem nos momentos em que a história as exige.',
+        ],
+      },
+      {
+        tipo: 'analise',
+        titulo: 'O Taciturno: A Arte de Calar, Observar e Persistir',
+        paragrafos: [
+          'Guilherme recebeu o apelido de <span style="color:#fbbf24;font-weight:700;font-style:italic;">"o Taciturno"</span> — não porque fosse tímido, mas porque soube guardar segredos quando a prudência o exigia. Ele soube, anos antes da repressão espanhola, das intenções de Felipe II de eliminar o protestantismo nos Países Baixos. <span style="color:#fbbf24;font-weight:600;">Calou. Observou. Esperou o momento certo.</span>',
+          'Quando o Duque de Alba chegou em 1567, Guilherme já havia fugido para a Alemanha. De lá, organizou expedições militares, buscou aliados, trabalhou incansavelmente para reunir recursos para a resistência. <span style="color:#fb7185;font-weight:700;">Foi derrotado várias vezes. Continuou.</span>',
+          'González enfatiza: <span style="background:rgba(251,191,36,0.12);border-left:3px solid #fbbf24;padding:2px 8px;border-radius:3px;font-weight:700;color:rgba(255,245,210,0.95);">Guilherme não era invencível — era persistente. A diferença entre os que mudam a história e os que apenas a observam não é raramente o talento. É a recusa em aceitar a derrota como definitiva.</span>',
+        ],
+        citacao: 'A diferença entre os que mudam a história e os que apenas a observam não é raramente o talento. É a recusa em aceitar a derrota como definitiva.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'O Sítio de Leyde e a Tolerância como Valor',
+        paragrafos: [
+          'Um dos episódios mais dramáticos da luta pela independência ocorreu em <span style="color:#60a5fa;font-weight:700;">Leyde, em 1574</span>. As forças espanholas sitiaram a cidade; os habitantes resistiram por meses, reduzidos à fome extrema. Guilherme tomou uma decisão desesperada: <span style="background:rgba(96,165,250,0.12);border:1px solid rgba(96,165,250,0.30);border-radius:5px;padding:1px 8px;color:#bfdbfe;font-weight:700;">ordenou a abertura dos diques</span>. As águas do Mar do Norte inundaram a planície holandesa. Os <span style="color:#60a5fa;font-style:italic;">Geuzen</span> navegaram sobre campos que dias antes eram terra. Leyde foi libertada.',
+          'Em memória da libertação, Guilherme fundou a <span style="color:#34d399;font-weight:700;">Universidade de Leyde</span> — que se tornaria um dos maiores centros intelectuais da Europa e um refúgio para pensadores perseguidos. <span style="color:#34d399;font-style:italic;">O sofrimento gerou instituição; a resistência gerou cultura.</span>',
+          'González aponta uma contribuição que transcende a política militar: a <span style="color:#fbbf24;font-weight:700;">insistência na tolerância religiosa</span> como princípio de governo. A Holanda do século XVII se tornaria o refúgio dos perseguidos da Europa — <span style="color:#c084fc;font-weight:600;">judeus, huguenotes, filósofos</span> cujas ideias eram proibidas em outros lugares. <span style="background:rgba(192,132,252,0.12);border-left:3px solid #c084fc;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(235,220,255,0.95);">González traça uma linha direta entre a tolerância de Guilherme e a liberdade de imprensa, de consciência e de pensamento que floresceu em Amsterdam.</span>',
+        ],
+        citacao: 'A tolerância de Guilherme nasceu da necessidade prática antes de se tornar valor. E os valores que nascem da necessidade e persistem na prosperidade são os mais honestos.',
+        citacaoAutor: 'Justo L. González',
+      },
+    ],
+    perguntas: [
+      'Guilherme foi derrotado repetidamente e continuou. González descreve sua persistência como a diferença entre os que mudam a história e os que apenas a observam. Há uma causa ou compromisso na sua vida que você abandonou após uma derrota — que talvez merecesse a persistência de Guilherme?',
+      'A abertura dos diques em Leyde foi uma decisão desesperada que destruiu propriedades e terra cultivável para salvar a cidade. Que tipo de perdas você estaria disposto a aceitar para preservar o que considera essencial?',
+      'A tolerância religiosa de Guilherme nasceu da necessidade prática antes de se tornar valor. Como você avalia convicções que começam como conveniência e se transformam em princípio? Isso as torna menos válidas — ou mais honestas?',
+    ],
+    oracao: 'Senhor, obrigado por Guilherme de Orange — pelo homem prudente que calou quando devia calar, agiu quando devia agir, e persistiu quando todos os outros haviam desistido.\n\nObrigado pela lição de Leyde: que às vezes a libertação chega pelas águas que inundamos nós mesmos, destruindo o que construímos, para salvar o que não tem preço.\n\nQue sejamos capazes de distinguir o que pode ser perdido do que não pode. De abrir os diques quando necessário. De persistir depois das derrotas. E de construir, no lugar dos sofrimentos, instituições que abriguem os que vêm depois de nós.\n\nAmém.',
+    leituraComplementar: 'González, Justo L. A Era dos Reformadores. São Paulo: Vida Nova, 1995. Capítulo 10: "A Reforma nos Países Baixos" (pp. 237–260).',
+  },
+
+  25: {
+    dia: 25,
+    data: '25 de outubro de 2026',
+    titulo: 'Huguenotes: O Protestantismo Francês sob Perseguição',
+    subtitulo: 'Capítulo 11 — Parte 1',
+    versiculo: 'Bem-aventurados os que são perseguidos por causa da justiça, porque deles é o reino dos céus.',
+    versiculoRef: 'Mateus 5.10',
+    secoes: [
+      {
+        tipo: 'contexto',
+        titulo: 'Um Protestantismo que Cresceu e Foi Destruído',
+        paragrafos: [
+          'A França do século XVI apresenta um dos episódios mais dolorosos da história da Reforma: um protestantismo que cresceu rapidamente, conquistou nobres e artesãos, intelectuais e camponeses — e foi <span style="color:#fb7185;font-weight:700;">sistematicamente destruído</span> pelo poder da Coroa e da Igreja.',
+          'Os <span style="color:#fbbf24;font-weight:700;font-style:italic;">huguenotes</span> — nome de origem incerta, talvez do alemão <span style="color:#c084fc;font-style:italic;">Eidgenossen</span>, "aliados pelo juramento" — eram os protestantes franceses de tradição calvinista. No auge do movimento, representavam talvez <span style="color:#fbbf24;font-weight:700;">dez por cento da população francesa</span> e incluíam figuras da mais alta nobreza. Por um momento, parecia possível que a França se tornasse um país protestante. <span style="background:rgba(251,113,133,0.12);border-left:3px solid #fb7185;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(255,220,225,0.95);">Não se tornou. E González examina por quê — e a que custo.</span>',
+        ],
+      },
+      {
+        tipo: 'analise',
+        titulo: 'O Calvinismo como Movimento de Resistência',
+        paragrafos: [
+          'O protestantismo chegou à França com muito mais força pela teologia de <span style="color:#60a5fa;font-weight:700;">Calvino</span>. O calvinismo tinha vantagens práticas para um movimento perseguido: sua eclesiologia de Igreja local autônoma, seus consistórios e presbíteros, sua ênfase na <span style="color:#34d399;font-weight:700;">formação e na disciplina</span> — tudo isso criava comunidades resilientes que podiam funcionar mesmo sem proteção estatal.',
+          'Os huguenotes construíram igrejas secretas, depois igrejas protegidas por nobres simpáticos. Calvino acompanhava de perto o movimento de Genebra, enviando <span style="color:#fbbf24;font-weight:600;">pastores treinados, cartas de orientação</span>, e a segunda edição das <span style="color:#c084fc;font-style:italic;font-weight:700;">Institutas</span> — dedicada ao rei Francisco I como apelo à tolerância. <span style="color:#fb7185;font-weight:700;">O apelo foi em vão.</span>',
+        ],
+        citacao: 'Os huguenotes memorizavam salmos para cantar caminhando para o exílio. Para esses homens e mulheres, a fé era completamente real — mais do que política.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'Guerras de Religião: Quando a Teologia Vira Política',
+        paragrafos: [
+          'A segunda metade do século XVI foi marcada pelas <span style="color:#fb7185;font-weight:700;">Guerras de Religião Francesas</span> — uma série de conflitos armados entre <span style="color:#fbbf24;font-weight:700;">1562 e 1598</span> que devastaram o país. González é preciso: essas guerras não foram apenas sobre religião. Foram sobre <span style="color:#f97316;font-weight:600;">poder, sucessão dinástica, rivalidade entre famílias nobres</span>. A religião foi o vocabulário da luta política.',
+          'Mas isso não significa que a fé era irrelevante. González nos pede que mantenhamos uma distinção essencial: <span style="background:rgba(251,191,36,0.12);border-left:3px solid #fbbf24;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(255,245,210,0.95);">entre os que usavam a religião como instrumento e os que viviam a fé como realidade. Os primeiros geraram as guerras. Os segundos geraram os mártires.</span>',
+          '<span style="color:#c084fc;font-weight:700;">Catarina de Médici</span> tentou, em vários momentos, uma política de tolerância pragmática. O <span style="color:#c084fc;font-style:italic;">Édito de Janeiro de 1562</span> concedeu aos huguenotes o direito de culto fora das cidades. <span style="color:#fb7185;font-weight:600;">Mas a tolerância de Catarina não era convicção — era cálculo. Quando o cálculo mudou, a tolerância desapareceu.</span> E o cálculo mudou em 1572.',
+        ],
+        citacao: 'A política se serviu da religião. A religião, para muitos, era mais do que política. Não devemos confundir os que usam a fé com os que a vivem.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'reflexao',
+        titulo: 'A Véspera do Que Viria',
+        paragrafos: [
+          'González encerra a primeira parte do capítulo 11 numa suspensão dramática. Os huguenotes estavam em <span style="color:#fbbf24;font-weight:700;">Paris em agosto de 1572</span> para celebrar o casamento de Henrique de Navarra — líder protestante — com Margarida de Valois, irmã do rei. Era suposto ser um gesto de reconciliação nacional.',
+          '<span style="background:rgba(251,113,133,0.12);border:1px solid rgba(251,113,133,0.35);border-radius:8px;padding:6px 14px;display:inline-block;color:#fecdd3;font-weight:800;font-size:1.05em;">O que aconteceu em 24 de agosto de 1572 mudou a história da França — e da Reforma — para sempre.</span>',
+        ],
+      },
+    ],
+    perguntas: [
+      'González distingue entre os que usavam a religião como instrumento político e os que viviam a fé como realidade. Como você faz essa distinção no presente — em si mesmo e nas comunidades de fé que observa? Quais são os sinais de cada um?',
+      'A tolerância de Catarina de Médici era pragmática, não convicção — e desapareceu quando o cálculo mudou. Que tipo de tolerância você pratica? É convicção ou conveniência? O que revelaria a diferença?',
+      'Os huguenotes construíram comunidades resilientes sob perseguição. Que elementos da sua própria vida espiritual foram fortalecidos pelas dificuldades — e quais foram enfraquecidos pela facilidade?',
+    ],
+    oracao: 'Senhor, obrigado pelos huguenotes que se reuniam de noite, que cantavam salmos caminhando para o exílio, que memorizavam a tua Palavra porque não sabiam quando lhes tirariam os livros.\n\nPerdoa-nos pela leveza com que às vezes tratamos a fé que eles pagaram tão caro para manter. Pela facilidade com que nos ausentamos do culto que eles arriscavam a vida para frequentar.\n\nQue a memória deles — e dos que em nosso próprio tempo sofrem pela fé — nos devolva o senso do que realmente importa. E quando vier a véspera do que tememos, que nos encontres em oração, não em pânico.\n\nAmém.',
+    leituraComplementar: 'González, Justo L. A Era dos Reformadores. São Paulo: Vida Nova, 1995. Capítulo 11: "O Protestantismo na França" (pp. 261–290).',
+  },
+
+  26: {
+    dia: 26,
+    data: '26 de outubro de 2026',
+    titulo: 'Massacre de São Bartolomeu: Sangue e Fé',
+    subtitulo: 'Capítulo 11 — Parte 2',
+    versiculo: 'Até quando, Senhor? Ocultarás para sempre o teu rosto? Até quando arderá como fogo o teu furor?',
+    versiculoRef: 'Salmos 89.46',
+    secoes: [
+      {
+        tipo: 'contexto',
+        titulo: 'A Madrugada que Mudou a França',
+        paragrafos: [
+          'Na madrugada de <span style="color:#fb7185;font-weight:800;">24 de agosto de 1572</span> — Dia de São Bartolomeu — os sinos da Igreja de Saint-Germain-l\'Auxerrois soaram em Paris. Era o sinal.',
+          'O que se seguiu foi um dos <span style="background:rgba(251,113,133,0.12);border:1px solid rgba(251,113,133,0.35);border-radius:5px;padding:1px 8px;color:#fecdd3;font-weight:800;">massacres mais sangrentos da história do cristianismo ocidental</span>. Em Paris e nas províncias, <strong style="color:#fff;">milhares de huguenotes foram assassinados</strong> — estimativas variam entre dez mil e setenta mil mortos nas semanas seguintes. O almirante <span style="color:#fbbf24;font-weight:700;">Coligny</span> — o mais importante líder militar huguenote — foi assassinado em sua cama. González não poupa o leitor dos fatos. E ao não poupar, nos obriga a perguntar: <span style="color:#fb7185;font-style:italic;font-weight:700;">como cristãos chegaram a fazer isso a outros cristãos?</span>',
+        ],
+      },
+      {
+        tipo: 'analise',
+        titulo: 'O Que Levou ao Massacre: Política Disfarçada de Religião',
+        paragrafos: [
+          'González desmonta a narrativa simplista de que o massacre foi impulso espontâneo do povo católico contra os hereges protestantes. <span style="color:#fbbf24;font-weight:700;">Foi planejado.</span> A ordem partiu de <span style="color:#c084fc;font-weight:700;">Catarina de Médici</span> e do rei Carlos IX — motivados não apenas por fervor religioso, mas por <span style="color:#f97316;font-weight:600;">medo político</span>.',
+          'O almirante Coligny havia ganhado influência excessiva sobre o jovem rei. A facção dos <span style="color:#fb7185;font-weight:700;">Guise</span> — família católica rival — via no massacre a oportunidade de eliminar a liderança protestante de uma vez. <span style="background:rgba(251,113,133,0.12);border-left:3px solid #fb7185;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(255,220,225,0.95);">A religião foi o pretexto; o poder foi a causa imediata.</span>',
+          'Mas González não permite que essa análise política exonere a religião completamente. O fato de que o vocabulário disponível para justificar o massacre era religioso — <span style="color:#fb7185;font-style:italic;">"hereges", "inimigos de Deus", "limpeza da Igreja"</span> — revela que a <span style="color:#fbbf24;font-weight:700;">fusão entre fé e violência</span> havia penetrado fundo na cultura cristã do século XVI. A religião forneceu a linguagem e a legitimidade para o que era, em parte, política de Estado.',
+        ],
+        citacao: 'A religião forneceu a linguagem e a legitimidade para o massacre. Isso revela que a fusão entre fé e violência havia penetrado fundo na cultura cristã do século XVI.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'A Diáspora que Espalhou o Que Tentava Destruir',
+        paragrafos: [
+          'A notícia do massacre chegou a Roma como vitória. O <span style="color:#f97316;font-weight:700;">papa Gregório XIII</span> mandou celebrar um <span style="color:#f97316;font-style:italic;">Te Deum</span> de ação de graças e comissionou afrescos na Sala Régia do Vaticano celebrando o evento. <span style="background:rgba(249,115,22,0.12);border-left:3px solid #f97316;padding:2px 8px;border-radius:3px;font-weight:700;color:rgba(255,235,200,0.95);">Uma medalha comemorativa foi cunhada. A hierarquia católica celebrou o assassinato em massa de cristãos que discordavam doutrinariamente.</span>',
+          'Vinte e seis anos após o massacre, em <span style="color:#fbbf24;font-weight:700;">1598</span>, o rei <span style="color:#34d399;font-weight:700;">Henrique IV</span> — o mesmo Henrique de Navarra que havia escapado da noite de São Bartolomeu — assinou o <span style="color:#34d399;font-weight:700;">Édito de Nantes</span>, concedendo aos huguenotes ampla tolerância religiosa.',
+          'Mas em <span style="color:#fb7185;font-weight:700;">1685</span>, Luís XIV o revogou. <span style="color:#fbbf24;font-weight:700;">Quatrocentos mil huguenotes fugiram da França</span> — levando sua fé, seu artesanato, sua educação e sua ética de trabalho para a Holanda, a Inglaterra, a Prússia, a África do Sul, a América. <span style="background:rgba(52,211,153,0.12);border-left:3px solid #34d399;padding:2px 8px;border-radius:3px;font-weight:700;color:rgba(200,255,235,0.95);">A tentativa de eliminar os huguenotes pela força produziu uma diáspora que espalhou o protestantismo calvinista pelo mundo. A perseguição não destruiu — dispersou.</span>',
+        ],
+        citacao: 'A perseguição não destruiu o que tentava eliminar. A diáspora huguenote espalhou o calvinismo pelo mundo — a última palavra não foi São Bartolomeu, mas a diáspora que plantou.',
+        citacaoAutor: 'Justo L. González',
+      },
+    ],
+    perguntas: [
+      'González mostra que a religião forneceu vocabulário e legitimidade para o massacre — mesmo que as causas imediatas fossem políticas. Como você avalia o risco de que a linguagem religiosa seja usada para justificar violência ou exclusão nos nossos próprios contextos?',
+      'O papa celebrou o massacre; a Europa protestante horrorizou-se. Isso revela como a mesma fé pode produzir julgamentos morais opostos. Como você desenvolve critérios morais que não dependam apenas do que sua tradição religiosa aprova?',
+      'A diáspora huguenote espalhou o calvinismo pelo mundo. González mostra que a perseguição dispersou o que tentava destruir. Há perdas na sua vida ou comunidade que, em retrospecto, se tornaram sementes de algo novo? Como você mantém essa perspectiva no meio do sofrimento, e não apenas depois?',
+    ],
+    oracao: 'Senhor, diante do Massacre de São Bartolomeu, não há outra oração senão a do salmista: "Até quando?"\n\nAté quando o teu nome será usado para justificar o derramamento de sangue? Até quando a religião servirá de pretexto para o que é, simplesmente, desejo de poder?\n\nPerdoa a Igreja — a nossa também — pelas vezes em que usamos a tua autoridade para legitimar o que tu jamais autorizaste.\n\nObrigado pelos huguenotes que sobreviveram, fugiram e carregaram a fé consigo para os quatro cantos do mundo. O que a perseguição quis destruir, tu usaste para plantar. Que essa seja a última palavra — não São Bartolomeu, mas a diáspora que plantou.\n\nAmém.',
+    leituraComplementar: 'González, Justo L. A Era dos Reformadores. São Paulo: Vida Nova, 1995. Capítulo 11: "O Protestantismo na França" (pp. 261–290).',
+  },
+
+  27: {
+    dia: 27,
+    data: '27 de outubro de 2026',
+    titulo: 'Reforma Católica: A Resposta de Roma ao Protestantismo',
+    subtitulo: 'Capítulo 12 — Parte 1',
+    versiculo: 'Examinai-vos a vós mesmos, para ver se estais na fé; provai-vos a vós mesmos.',
+    versiculoRef: '2 Coríntios 13.5',
+    secoes: [
+      {
+        tipo: 'contexto',
+        titulo: 'Cruzando a Linha: Olhando para o Outro Lado',
+        paragrafos: [
+          'Durante vinte e seis dias percorremos a Reforma Protestante em seus múltiplos rostos: Lutero em Wittenberg, Calvino em Genebra, Knox em Edimburgo, os anabatistas nos rios da Suíça, os huguenotes nas ruas de Paris. Hoje González nos pede que <span style="color:#fbbf24;font-weight:700;">cruzemos a linha e olhemos para o outro lado</span>.',
+          'O capítulo 12 é um dos mais importantes da obra — e um dos mais frequentemente mal compreendidos. González insiste numa distinção que muda tudo: <span style="background:rgba(251,191,36,0.15);border-left:3px solid #fbbf24;padding:2px 8px;border-radius:3px;font-weight:700;color:rgba(255,245,210,0.95);">a Reforma Católica não foi apenas uma "Contra-Reforma" — uma reação defensiva ao protestantismo. Foi uma renovação genuína, com raízes anteriores a Lutero.</span> Reconhecer isso não é ecumenismo ingênuo. É honestidade histórica.',
+        ],
+      },
+      {
+        tipo: 'analise',
+        titulo: 'Antes de Lutero: A Reforma que Já Havia Começado',
+        paragrafos: [
+          'González começa por corrigir uma cronologia equivocada. Quando Lutero pregou suas Noventa e Cinco Teses em 1517, o cardeal <span style="color:#f97316;font-weight:700;">Cisneros</span> já havia reformado o clero espanhol por décadas. <span style="color:#fbbf24;font-weight:700;">Erasmo de Roterdã</span> — talvez o intelectual mais influente da Europa — criticava os abusos eclesiásticos com uma mordacidade que em nada ficava atrás de Lutero. E Erasmo nunca rompeu com Roma.',
+          'A diferença não estava no <span style="color:#34d399;font-weight:700;">diagnóstico</span>. Tanto Lutero quanto os reformadores católicos viam a mesma doença. <span style="background:rgba(52,211,153,0.12);border-left:3px solid #34d399;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(200,255,235,0.95);">A diferença estava na terapia: reforma de dentro, ou ruptura e reconstrução de fora?</span>',
+        ],
+        citacao: 'Tanto Lutero quanto os reformadores católicos viam a mesma doença. A diferença estava na terapia: reforma de dentro, ou ruptura e reconstrução de fora?',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'O Concílio de Trento: Definição e Renovação',
+        paragrafos: [
+          'O instrumento central da Reforma Católica foi o <span style="color:#c084fc;font-weight:700;">Concílio de Trento</span>, reunido em três períodos entre <span style="color:#fbbf24;font-weight:700;">1545 e 1563</span>. González o examina com equilíbrio raro: Trento fez coisas importantes e necessárias — reformou os seminários, eliminou o pluralismo de benefícios, restabeleceu a obrigação de residência dos bispos.',
+          'Ao mesmo tempo, <span style="color:#fb7185;font-weight:700;">Trento definiu doutrina em reação ao protestantismo</span> — e ao fazê-lo, fechou portas que poderiam ter permanecido abertas. A doutrina da justificação foi formulada de modo a <span style="color:#fb7185;font-weight:600;">excluir explicitamente a posição luterana</span>. A autoridade da Tradição foi afirmada ao lado da Escritura. A Bíblia em vernáculo foi restringida.',
+          'González avalia: <span style="background:rgba(251,113,133,0.12);border-left:3px solid #fb7185;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(255,220,225,0.95);">o que havia sido crise tornou-se estrutura. A divisão entre católicos e protestantes foi transformada em sistema.</span> O custo de um concílio reunido no auge do conflito confessional foi que não poderia ter sido ecumênico.',
+        ],
+        citacao: 'O protestantismo ganhou a pregação e a Bíblia vernácula. O catolicismo reteve o silêncio, a contemplação, a beleza litúrgica e o alcance missionário global. Uma Igreja que soubesse integrar ambas seria mais rica.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'reflexao',
+        titulo: 'O Que a Reforma Católica Preservou',
+        paragrafos: [
+          'González é generoso aqui com algo que os protestantes frequentemente ignoram: a Reforma Católica preservou e aprofundou dimensões do cristianismo que o protestantismo, em sua reação aos abusos medievais, havia abandonado.',
+          'A <span style="color:#c084fc;font-weight:700;">tradição contemplativa</span> — a espiritualidade de <span style="color:#c084fc;font-style:italic;">Teresa de Ávila, João da Cruz, Inácio de Loyola</span> — floresceu precisamente no século XVI católico. A <span style="color:#34d399;font-weight:700;">missão global</span> — jesuítas no Japão, na China, na Índia, franciscanos nas Américas — foi predominantemente obra católica. <span style="background:rgba(192,132,252,0.12);border-left:3px solid #c084fc;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(235,220,255,0.95);">O protestantismo ganhou a pregação. O catolicismo reteve o silêncio. González sugere que uma Igreja que soubesse integrar ambas as heranças seria mais rica do que qualquer uma das duas sozinha.</span>',
+        ],
+      },
+    ],
+    perguntas: [
+      'González insiste que a Reforma Católica foi genuína, não apenas reativa. Como isso muda sua avaliação das figuras católicas do século XVI? Que elementos da espiritualidade católica desse período têm algo a ensinar à sua própria tradição?',
+      'Trento reformou abusos reais e ao mesmo tempo fechou portas ecumênicas. É possível fazer reforma sem ao mesmo tempo criar novas fronteiras? Como você navega a tensão entre clareza doutrinária e abertura ao diálogo?',
+      'González aponta que o protestantismo ganhou a pregação e perdeu o silêncio. O catolicismo reteve a contemplação e perdeu a Bíblia acessível. O que sua própria tradição ganhou — e o que perdeu? O que seria necessário para recuperar o perdido sem abandonar o ganho?',
+    ],
+    oracao: 'Senhor, obrigado pela honestidade de González — que nos obriga a ver o teu Espírito agindo também onde nossa tradição não costuma olhar.\n\nPerdoa-nos pelo provincianismo espiritual: por acharmos que a tua obra ficou contida dentro das nossas fronteiras confessionais, que tua graça respeita nossas divisões.\n\nQue possamos aprender com Trento o rigor da formação. Com Teresa o silêncio da contemplação. Com Loyola a clareza vocacional. Com Cisneros a coragem de reformar de dentro.\n\nE que, ao aprender com os que não são da nossa tradição, não percamos o que recebemos — mas o enriqueçamos.\n\nAmém.',
+    leituraComplementar: 'González, Justo L. A Era dos Reformadores. São Paulo: Vida Nova, 1995. Capítulo 12: "A Reforma Católica" (pp. 271–322).',
+  },
+
+  28: {
+    dia: 28,
+    data: '28 de outubro de 2026',
+    titulo: 'Teresa de Ávila, os Jesuítas e o Concílio de Trento',
+    subtitulo: 'Capítulo 12 — Parte 2',
+    versiculo: 'Ide, portanto, fazei discípulos de todas as nações, batizando-os em nome do Pai, e do Filho, e do Espírito Santo.',
+    versiculoRef: 'Mateus 28.19',
+    secoes: [
+      {
+        tipo: 'contexto',
+        titulo: 'Os Rostos Humanos da Renovação Católica',
+        paragrafos: [
+          'Ontem González nos mostrou a estrutura institucional da Reforma Católica — o Concílio de Trento como instrumento de definição e renovação. Hoje ele nos apresenta os rostos humanos dessa renovação: <span style="color:#c084fc;font-weight:700;">uma mística que reformou o silêncio</span>, <span style="color:#60a5fa;font-weight:700;">um soldado convertido que formou missionários</span>, e <span style="color:#a78bfa;font-weight:700;">um frade que desceu à noite da alma</span>.',
+          'Essas três figuras — <span style="color:#c084fc;font-style:italic;font-weight:700;">Teresa de Ávila, Inácio de Loyola e João da Cruz</span> — são, para González, a prova de que a Reforma Católica não foi apenas reação política e definição doutrinária. <span style="background:rgba(192,132,252,0.12);border-left:3px solid #c084fc;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(235,220,255,0.95);">Foi também um florescimento genuíno da vida espiritual — um dos mais ricos na história do cristianismo.</span>',
+        ],
+      },
+      {
+        tipo: 'analise',
+        titulo: 'Teresa de Ávila: A Mística que Reformou o Carmelo',
+        paragrafos: [
+          '<span style="color:#c084fc;font-weight:700;">Teresa</span> nasceu em <span style="color:#fbbf24;font-weight:700;">1515</span>, dois anos antes das Noventa e Cinco Teses, numa família de conversos judeus em Ávila. Em seus quarenta anos, após uma crise espiritual profunda, viveu o que descreve como a <span style="color:#c084fc;font-style:italic;font-weight:700;">"segunda conversão"</span> — um despertar para a presença de Deus que transformou sua vida de oração. A partir daí, fundou o movimento das <span style="color:#c084fc;font-weight:700;">Carmelitas Descalças</span>, insistindo num retorno à pobreza, ao silêncio e à oração contemplativa.',
+          'González destaca duas obras que a tornaram imortal: <span style="color:#e9d5ff;font-style:italic;font-weight:700;">O Caminho da Perfeição</span> — guia prático de oração — e <span style="color:#e9d5ff;font-style:italic;font-weight:700;">O Castelo Interior</span> — mapa das mansões da alma em seu caminho em direção a Deus. <span style="background:rgba(192,132,252,0.12);border-left:3px solid #c084fc;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(235,220,255,0.95);">Essas obras são lidas igualmente por católicos e protestantes até hoje; pertencem ao patrimônio de toda a Igreja.</span>',
+          '<span style="color:#fbbf24;font-style:italic;">O protestantismo produziu grandes pregadores. A Reforma Católica produziu Teresa — e o silêncio que a pregação nunca substitui.</span>',
+        ],
+        citacao: 'O protestantismo produziu grandes pregadores. A Reforma Católica produziu Teresa — e o silêncio que a pregação nunca substitui.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'João da Cruz e Inácio de Loyola: Noite e Missão',
+        paragrafos: [
+          'Colaborador de Teresa na reforma do Carmelo masculino, <span style="color:#a78bfa;font-weight:700;">João da Cruz</span> foi preso pelos próprios carmelitas que resistiam à reforma. Na prisão, compôs poemas que figuram entre os mais belos da língua espanhola. Sua contribuição central — a <span style="color:#a78bfa;font-style:italic;font-weight:700;">Noite Escura da Alma</span> — descreve o caminho espiritual como passagem pela perda de todas as consolações, até a <span style="color:#a78bfa;font-weight:700;">união nua com Deus</span>. <span style="background:rgba(167,139,250,0.12);border-left:3px solid #a78bfa;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(230,225,255,0.95);">Não é pessimismo — é a afirmação de que Deus frequentemente nos transforma precisamente removendo o que nos impede de depender apenas d\'Ele.</span>',
+          '<span style="color:#60a5fa;font-weight:700;">Inácio de Loyola</span> nasceu em 1491, filho de família nobre basca. Soldado ferido em batalha em <span style="color:#fbbf24;font-weight:700;">1521</span> — o mesmo ano em que Lutero comparecia à Dieta de Worms — pediu romances de cavalaria para ler; recebeu vidas de Cristo e de santos. A conversão que se seguiu foi total. Em <span style="color:#fbbf24;font-weight:700;">1540</span>, a <span style="color:#60a5fa;font-weight:700;">Companhia de Jesus</span> foi aprovada por Roma.',
+          'Os <span style="color:#60a5fa;font-style:italic;font-weight:700;">jesuítas</span> foram a resposta mais eficaz da Igreja Católica ao protestantismo — não pela polêmica, mas pela <span style="color:#34d399;font-weight:700;">formação</span>. Seus colégios elevaram o nível intelectual do clero. Seus missionários chegaram ao <span style="color:#34d399;font-weight:600;">Japão em 1549, à China em 1583, à Índia e às Américas</span> muito antes. González avalia: <span style="background:rgba(52,211,153,0.12);border-left:3px solid #34d399;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(200,255,235,0.95);">os jesuítas superaram os protestantes em alcance missionário global precisamente porque tinham uma eclesiologia que permitia mobilidade total — disponíveis para ir onde o papa mandasse, sem vínculos territoriais.</span>',
+        ],
+        citacao: 'Dá-nos o silêncio de Teresa, a coragem de João e a disponibilidade de Inácio — em qualquer tradição que sejamos.',
+        citacaoAutor: 'Oração do Dia 28',
+      },
+    ],
+    perguntas: [
+      'Teresa de Ávila representa uma dimensão da vida espiritual que o protestantismo perdeu em grande medida — a contemplação profunda, o silêncio, a mística. Qual é o lugar do silêncio e da contemplação na sua vida espiritual? O que estaria impedindo um aprofundamento?',
+      'João da Cruz descreveu a "noite escura" — o período em que todas as consolações espirituais desaparecem — como parte do caminho para Deus, não como sinal de abandono. Você já viveu uma "noite escura"? Como a interpretou na época — e como a interpreta agora?',
+      'Os jesuítas foram formados para dizer "sim" incondicionalmente — disponíveis para ir onde fossem enviados. Que nível de disponibilidade você tem diante de Deus em relação ao futuro? Há destinos que você excluiu de antemão?',
+    ],
+    oracao: 'Senhor, obrigado por Teresa — que nos ensina que a maior aventura não é conquistar territórios, mas explorar as mansões interiores da alma.\n\nObrigado por João da Cruz — que nos mostra que a noite não é ausência tua, mas o caminho para uma presença mais profunda do que a luz diurna permite.\n\nObrigado por Inácio — que nos lembra que a disponibilidade total não é ingenuidade, mas a maior sabedoria de quem confia que tu sabes melhor do que nós onde precisamos ir.\n\nDá-nos o silêncio de Teresa, a coragem de João e a disponibilidade de Inácio — em qualquer tradição que sejamos.\n\nAmém.',
+    leituraComplementar: 'González, Justo L. A Era dos Reformadores. São Paulo: Vida Nova, 1995. Capítulo 12: "A Reforma Católica" (pp. 271–322).',
+  },
 };
 
 export default DIAS_CONTENT;
