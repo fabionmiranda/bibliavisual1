@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { ChevronRight, BookOpen, Scale, Layers, Shield, ArrowRight, Zap, Church } from 'lucide-react';
@@ -65,6 +66,165 @@ const PILARES = [
     destaque: 'Crentes falíveis podem ter certeza — o Espírito ilumina a Escritura.',
   },
 ];
+
+// ─── Roda dos 6 Eixos (hexágono donut) ──────────────────────────────────────
+// cx=250, cy=250, r_outer=185, r_inner=60, cada fatia=60°, início -90° (topo)
+const WHEEL_LABELS_G = ['Eclesiologia','Culto','Consequência','Confessional','Liberdade','Certeza'];
+
+const GRAFICO_GILLESPIE: { num: string; path: string; lx: number; ly: number }[] = [
+  { num: '01', path: 'M 250 190 L 250 65 A 185 185 0 0 1 410.2 157.5 L 302 220 A 60 60 0 0 0 250 190 Z',     lx: 312.5, ly: 141.8 },
+  { num: '02', path: 'M 302 220 L 410.2 157.5 A 185 185 0 0 1 410.2 342.5 L 302 280 A 60 60 0 0 0 302 220 Z', lx: 375,   ly: 250   },
+  { num: '03', path: 'M 302 280 L 410.2 342.5 A 185 185 0 0 1 250 435 L 250 310 A 60 60 0 0 0 302 280 Z',     lx: 312.5, ly: 358.3 },
+  { num: '04', path: 'M 250 310 L 250 435 A 185 185 0 0 1 89.8 342.5 L 198 280 A 60 60 0 0 0 250 310 Z',      lx: 187.5, ly: 358.3 },
+  { num: '05', path: 'M 198 280 L 89.8 342.5 A 185 185 0 0 1 89.8 157.5 L 198 220 A 60 60 0 0 0 198 280 Z',   lx: 125,   ly: 250   },
+  { num: '06', path: 'M 198 220 L 89.8 157.5 A 185 185 0 0 1 250 65 L 250 190 A 60 60 0 0 0 198 220 Z',       lx: 187.5, ly: 141.8 },
+];
+
+function RodaEixosG() {
+  const [hovered, setHovered] = useState(-1);
+  const sel = hovered >= 0 ? PILARES[hovered] : null;
+
+  return (
+    <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.30 }}
+      style={{ marginBottom: 60 }}>
+
+      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 24 }}>
+        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"
+          style={{ width: '100%', maxWidth: 600, filter: `drop-shadow(0 10px 50px rgba(${ACCENT_RGB},0.24))` }}>
+
+          <circle cx="250" cy="250" r="192" fill="none" stroke={`rgba(${ACCENT_RGB},0.06)`} strokeWidth="1" />
+
+          {GRAFICO_GILLESPIE.map((e, i) => {
+            const p = PILARES[i];
+            const isHov = hovered === i;
+            const isDim = hovered >= 0 && !isHov;
+            return (
+              <g key={e.num} style={{ cursor: 'pointer' }}
+                onMouseEnter={() => setHovered(i)}
+                onMouseLeave={() => setHovered(-1)}>
+                {isHov && (
+                  <path d={e.path} fill={`rgba(${p.corRgb},0.22)`} style={{ filter: 'blur(8px)' }} />
+                )}
+                <path d={e.path}
+                  fill={`rgba(${p.corRgb},${isHov ? 0.38 : isDim ? 0.06 : 0.17})`}
+                  stroke={BG} strokeWidth="3.5"
+                  style={{ transition: 'fill 0.18s ease' }} />
+                <path d={e.path} fill="none"
+                  stroke={p.cor}
+                  strokeWidth={isHov ? 2.2 : 1.1}
+                  opacity={isHov ? 1 : isDim ? 0.18 : 0.42}
+                  style={{ transition: 'all 0.18s ease' }} />
+                <text x={e.lx} y={e.ly - 10} textAnchor="middle"
+                  fontSize={isHov ? '20' : '17'} fontWeight="900"
+                  fill={p.cor} fontFamily="system-ui,sans-serif"
+                  opacity={isDim ? 0.28 : 1}
+                  style={{ transition: 'all 0.18s ease', userSelect: 'none' }}>{e.num}</text>
+                <text x={e.lx} y={e.ly + 11} textAnchor="middle"
+                  fontSize={isHov ? '12' : '10.5'} fontWeight={isHov ? '900' : '700'}
+                  fill={isHov ? p.cor : `rgba(${p.corRgb},0.80)`} fontFamily="system-ui,sans-serif"
+                  opacity={isDim ? 0.25 : 1}
+                  style={{ transition: 'all 0.18s ease', userSelect: 'none' }}>{WHEEL_LABELS_G[i]}</text>
+              </g>
+            );
+          })}
+
+          <circle cx="250" cy="250" r="62" fill={BG}
+            stroke={sel ? sel.cor : `rgba(${ACCENT_RGB},0.32)`}
+            strokeWidth="1.8"
+            style={{ transition: 'stroke 0.2s' }} />
+          <circle cx="250" cy="250" r="55" fill="none"
+            stroke={sel ? `rgba(${sel.corRgb},0.14)` : `rgba(${ACCENT_RGB},0.08)`}
+            strokeWidth="8"
+            style={{ transition: 'all 0.2s' }} />
+
+          {sel ? (
+            <>
+              <text x="250" y="240" textAnchor="middle" fontSize="22" fontWeight="900"
+                fill={sel.cor} fontFamily="system-ui,sans-serif"
+                style={{ userSelect: 'none' }}>{sel.num}</text>
+              <text x="250" y="260" textAnchor="middle" fontSize="9.5" fontWeight="800"
+                fill={`rgba(${sel.corRgb},0.78)`} fontFamily="system-ui,sans-serif"
+                letterSpacing="1.2" style={{ userSelect: 'none' }}>{WHEEL_LABELS_G[PILARES.indexOf(sel)]}</text>
+            </>
+          ) : (
+            <>
+              <text x="250" y="244" textAnchor="middle" fontSize="10" fontWeight="900"
+                fill={`rgba(${ACCENT_RGB},0.88)`} fontFamily="system-ui,sans-serif"
+                letterSpacing="2.5" style={{ userSelect: 'none' }}>GEORGE</text>
+              <text x="250" y="261" textAnchor="middle" fontSize="10" fontWeight="900"
+                fill={`rgba(${ACCENT_RGB},0.88)`} fontFamily="system-ui,sans-serif"
+                letterSpacing="1" style={{ userSelect: 'none' }}>GILLESPIE</text>
+            </>
+          )}
+        </svg>
+      </div>
+
+      {/* Painel de detalhe */}
+      <div style={{ minHeight: 90, marginBottom: 32 }}>
+        {sel ? (
+          <div style={{
+            borderRadius: 18, padding: '20px 26px',
+            background: `rgba(${sel.corRgb},0.09)`,
+            border: `1.5px solid rgba(${sel.corRgb},0.30)`,
+            display: 'flex', alignItems: 'flex-start', gap: 18,
+            transition: 'all 0.18s ease',
+          }}>
+            <div style={{ flexShrink: 0, width: 52, height: 52, borderRadius: 14, background: `rgba(${sel.corRgb},0.18)`, border: `1.5px solid rgba(${sel.corRgb},0.35)`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <span style={{ fontSize: 22, fontWeight: 900, color: sel.cor }}>{sel.num}</span>
+            </div>
+            <div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6 }}>
+                <span style={{ fontSize: 12, fontWeight: 900, color: sel.cor, letterSpacing: '0.22em', textTransform: 'uppercase' }}>{WHEEL_LABELS_G[PILARES.indexOf(sel)]}</span>
+                <span style={{ fontSize: 10, color: 'rgba(200,205,255,0.35)' }}>·</span>
+                <span style={{ fontSize: 11, fontWeight: 700, color: 'rgba(210,215,255,0.60)', letterSpacing: '0.10em' }}>{sel.label}</span>
+              </div>
+              <p style={{ margin: '0 0 8px', fontSize: 16, fontWeight: 900, color: '#fff', lineHeight: 1.25 }}>{sel.titulo}</p>
+              <p style={{ margin: 0, fontSize: 13, color: sel.cor, fontStyle: 'italic', fontWeight: 700 }}>"{sel.destaque}"</p>
+            </div>
+          </div>
+        ) : (
+          <p style={{ textAlign: 'center', fontSize: 13, color: 'rgba(200,205,255,0.35)', fontStyle: 'italic', margin: '16px 0' }}>
+            Passe o mouse sobre um eixo para ver os detalhes
+          </p>
+        )}
+      </div>
+
+      {/* Grade resumo */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(270px,1fr))', gap: 10 }}>
+        {PILARES.map((p, i) => {
+          const isActive = hovered === i;
+          return (
+            <div key={p.num}
+              onMouseEnter={() => setHovered(i)}
+              onMouseLeave={() => setHovered(-1)}
+              style={{
+                display: 'flex', alignItems: 'flex-start', gap: 13,
+                borderRadius: 13, padding: '13px 16px', cursor: 'pointer',
+                background: isActive ? `rgba(${p.corRgb},0.14)` : `rgba(${p.corRgb},0.05)`,
+                border: `1.5px solid rgba(${p.corRgb},${isActive ? 0.40 : 0.18})`,
+                transform: isActive ? 'translateY(-1px)' : 'none',
+                transition: 'all 0.16s ease',
+              }}>
+              <div style={{ flexShrink: 0, width: 40, height: 40, borderRadius: 10, background: `rgba(${p.corRgb},${isActive ? 0.28 : 0.14})`, border: `1.5px solid rgba(${p.corRgb},${isActive ? 0.45 : 0.26})`, display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'all 0.16s ease' }}>
+                <span style={{ fontSize: 15, fontWeight: 900, color: p.cor }}>{p.num}</span>
+              </div>
+              <div style={{ minWidth: 0 }}>
+                <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: 5, marginBottom: 4 }}>
+                  <span style={{ fontSize: 11, fontWeight: 900, color: p.cor, letterSpacing: '0.18em', textTransform: 'uppercase' }}>{WHEEL_LABELS_G[i]}</span>
+                  <span style={{ fontSize: 9, color: 'rgba(200,205,255,0.28)' }}>·</span>
+                  <span style={{ fontSize: 10, color: 'rgba(200,205,255,0.50)', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase' }}>{p.label}</span>
+                </div>
+                <p style={{ margin: 0, fontSize: 12.5, color: isActive ? 'rgba(228,232,255,0.92)' : 'rgba(210,215,255,0.72)', lineHeight: 1.55, fontStyle: 'italic', transition: 'color 0.16s' }}>
+                  "{p.destaque}"
+                </p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </motion.div>
+  );
+}
 
 const FLUXO_UNIDADE = [
   { label: 'Um Deus',       cor: '#a78bfa' },
@@ -225,6 +385,9 @@ export default function AutorGillespiePage() {
             Da eclesiologia presbiteriana ao princípio regulador, da epistemologia teológica à liberdade de consciência.
           </p>
         </motion.div>
+
+        {/* ── Gráfico — Roda dos 6 Eixos ── */}
+        <RodaEixosG />
 
         {/* ── Cards dos eixos ── */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: 28 }}>

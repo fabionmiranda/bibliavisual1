@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { ChevronRight, BookOpen, Scale, Layers, Shield, ArrowRight, Zap, Crown } from 'lucide-react';
@@ -109,6 +110,162 @@ const GRAFICO_EIXOS: { num: string; path: string; lx: number; ly: number }[] = [
   { num: '07', path: 'M 190 250 L 65 250 A 185 185 0 0 1 119.2 119.2 L 207.6 207.6 A 60 60 0 0 0 190 250 Z',      lx: 134.5, ly: 202.2 },
   { num: '08', path: 'M 207.6 207.6 L 119.2 119.2 A 185 185 0 0 1 250 65 L 250 190 A 60 60 0 0 0 207.6 207.6 Z',  lx: 202.2, ly: 134.5 },
 ];
+
+// ─── Componente interativo da roda ───────────────────────────────────────────
+function RodaEixos() {
+  const [hovered, setHovered] = useState(-1);
+  const sel = hovered >= 0 ? PILARES[hovered] : null;
+
+  return (
+    <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.30 }}
+      style={{ marginBottom: 60 }}>
+
+      {/* SVG roda */}
+      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 24 }}>
+        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"
+          style={{ width: '100%', maxWidth: 600, filter: `drop-shadow(0 10px 50px rgba(${ACCENT_RGB},0.24))` }}>
+
+          {/* Anel de fundo sutil */}
+          <circle cx="250" cy="250" r="192" fill="none" stroke={`rgba(${ACCENT_RGB},0.06)`} strokeWidth="1" />
+
+          {GRAFICO_EIXOS.map((e, i) => {
+            const p = PILARES[i];
+            const isHov = hovered === i;
+            const isDim = hovered >= 0 && !isHov;
+            return (
+              <g key={e.num} style={{ cursor: 'pointer' }}
+                onMouseEnter={() => setHovered(i)}
+                onMouseLeave={() => setHovered(-1)}>
+                {/* Sombra glow no hover */}
+                {isHov && (
+                  <path d={e.path} fill={`rgba(${p.corRgb},0.22)`}
+                    style={{ filter: `blur(8px)` }} />
+                )}
+                {/* Preenchimento */}
+                <path d={e.path}
+                  fill={`rgba(${p.corRgb},${isHov ? 0.38 : isDim ? 0.06 : 0.17})`}
+                  stroke={BG} strokeWidth="3.5"
+                  style={{ transition: 'fill 0.18s ease' }} />
+                {/* Borda */}
+                <path d={e.path} fill="none"
+                  stroke={p.cor}
+                  strokeWidth={isHov ? 2.2 : 1.1}
+                  opacity={isHov ? 1 : isDim ? 0.18 : 0.42}
+                  style={{ transition: 'all 0.18s ease' }} />
+                {/* Número */}
+                <text x={e.lx} y={e.ly - 10} textAnchor="middle"
+                  fontSize={isHov ? '20' : '17'} fontWeight="900"
+                  fill={p.cor} fontFamily="system-ui,sans-serif"
+                  opacity={isDim ? 0.28 : 1}
+                  style={{ transition: 'all 0.18s ease', userSelect: 'none' }}>{e.num}</text>
+                {/* Label */}
+                <text x={e.lx} y={e.ly + 11} textAnchor="middle"
+                  fontSize={isHov ? '12' : '10.5'} fontWeight={isHov ? '900' : '700'}
+                  fill={isHov ? p.cor : `rgba(${p.corRgb},0.80)`} fontFamily="system-ui,sans-serif"
+                  opacity={isDim ? 0.25 : 1}
+                  style={{ transition: 'all 0.18s ease', userSelect: 'none' }}>{WHEEL_LABELS[i]}</text>
+              </g>
+            );
+          })}
+
+          {/* Círculo central */}
+          <circle cx="250" cy="250" r="62" fill={BG}
+            stroke={sel ? sel.cor : `rgba(${ACCENT_RGB},0.32)`}
+            strokeWidth="1.8"
+            style={{ transition: 'stroke 0.2s' }} />
+          <circle cx="250" cy="250" r="55" fill="none"
+            stroke={sel ? `rgba(${sel.corRgb},0.14)` : `rgba(${ACCENT_RGB},0.08)`}
+            strokeWidth="8"
+            style={{ transition: 'all 0.2s' }} />
+
+          {sel ? (
+            <>
+              <text x="250" y="240" textAnchor="middle" fontSize="22" fontWeight="900"
+                fill={sel.cor} fontFamily="system-ui,sans-serif"
+                style={{ userSelect: 'none' }}>{sel.num}</text>
+              <text x="250" y="260" textAnchor="middle" fontSize="9.5" fontWeight="800"
+                fill={`rgba(${sel.corRgb},0.78)`} fontFamily="system-ui,sans-serif"
+                letterSpacing="1.2" style={{ userSelect: 'none' }}>{WHEEL_LABELS[PILARES.indexOf(sel)]}</text>
+            </>
+          ) : (
+            <>
+              <text x="250" y="244" textAnchor="middle" fontSize="10" fontWeight="900"
+                fill={`rgba(${ACCENT_RGB},0.88)`} fontFamily="system-ui,sans-serif"
+                letterSpacing="2.5" style={{ userSelect: 'none' }}>SAMUEL</text>
+              <text x="250" y="261" textAnchor="middle" fontSize="10" fontWeight="900"
+                fill={`rgba(${ACCENT_RGB},0.88)`} fontFamily="system-ui,sans-serif"
+                letterSpacing="1.2" style={{ userSelect: 'none' }}>RUTHERFORD</text>
+            </>
+          )}
+        </svg>
+      </div>
+
+      {/* Painel de detalhe ao hover */}
+      <div style={{ minHeight: 90, marginBottom: 32 }}>
+        {sel ? (
+          <div style={{
+            borderRadius: 18, padding: '20px 26px',
+            background: `rgba(${sel.corRgb},0.09)`,
+            border: `1.5px solid rgba(${sel.corRgb},0.30)`,
+            display: 'flex', alignItems: 'flex-start', gap: 18,
+            transition: 'all 0.18s ease',
+          }}>
+            <div style={{ flexShrink: 0, width: 52, height: 52, borderRadius: 14, background: `rgba(${sel.corRgb},0.18)`, border: `1.5px solid rgba(${sel.corRgb},0.35)`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <span style={{ fontSize: 22, fontWeight: 900, color: sel.cor }}>{sel.num}</span>
+            </div>
+            <div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6 }}>
+                <span style={{ fontSize: 12, fontWeight: 900, color: sel.cor, letterSpacing: '0.22em', textTransform: 'uppercase' }}>{WHEEL_LABELS[PILARES.indexOf(sel)]}</span>
+                <span style={{ fontSize: 10, color: 'rgba(200,205,255,0.35)' }}>·</span>
+                <span style={{ fontSize: 11, fontWeight: 700, color: 'rgba(210,215,255,0.60)', letterSpacing: '0.10em' }}>{sel.label}</span>
+              </div>
+              <p style={{ margin: '0 0 8px', fontSize: 16, fontWeight: 900, color: '#fff', lineHeight: 1.25 }}>{sel.titulo}</p>
+              <p style={{ margin: 0, fontSize: 13, color: sel.cor, fontStyle: 'italic', fontWeight: 700 }}>"{sel.destaque}"</p>
+            </div>
+          </div>
+        ) : (
+          <p style={{ textAlign: 'center', fontSize: 13, color: 'rgba(200,205,255,0.35)', fontStyle: 'italic', margin: '16px 0' }}>
+            Passe o mouse sobre um eixo para ver os detalhes
+          </p>
+        )}
+      </div>
+
+      {/* Grade resumo 2 colunas */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(270px,1fr))', gap: 10 }}>
+        {PILARES.map((p, i) => {
+          const isActive = hovered === i;
+          return (
+            <div key={p.num}
+              onMouseEnter={() => setHovered(i)}
+              onMouseLeave={() => setHovered(-1)}
+              style={{
+                display: 'flex', alignItems: 'flex-start', gap: 13,
+                borderRadius: 13, padding: '13px 16px', cursor: 'pointer',
+                background: isActive ? `rgba(${p.corRgb},0.14)` : `rgba(${p.corRgb},0.05)`,
+                border: `1.5px solid rgba(${p.corRgb},${isActive ? 0.40 : 0.18})`,
+                transform: isActive ? 'translateY(-1px)' : 'none',
+                transition: 'all 0.16s ease',
+              }}>
+              <div style={{ flexShrink: 0, width: 40, height: 40, borderRadius: 10, background: `rgba(${p.corRgb},${isActive ? 0.28 : 0.14})`, border: `1.5px solid rgba(${p.corRgb},${isActive ? 0.45 : 0.26})`, display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'all 0.16s ease' }}>
+                <span style={{ fontSize: 15, fontWeight: 900, color: p.cor }}>{p.num}</span>
+              </div>
+              <div style={{ minWidth: 0 }}>
+                <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: 5, marginBottom: 4 }}>
+                  <span style={{ fontSize: 11, fontWeight: 900, color: p.cor, letterSpacing: '0.18em', textTransform: 'uppercase' }}>{WHEEL_LABELS[i]}</span>
+                  <span style={{ fontSize: 9, color: 'rgba(200,205,255,0.28)' }}>·</span>
+                  <span style={{ fontSize: 10, color: 'rgba(200,205,255,0.50)', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase' }}>{p.label}</span>
+                </div>
+                <p style={{ margin: 0, fontSize: 12.5, color: isActive ? 'rgba(228,232,255,0.92)' : 'rgba(210,215,255,0.72)', lineHeight: 1.55, fontStyle: 'italic', transition: 'color 0.16s' }}>
+                  "{p.destaque}"
+                </p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </motion.div>
+  );
+}
 
 export default function AutorRutherfordPage() {
   return (
@@ -259,62 +416,7 @@ export default function AutorRutherfordPage() {
         </motion.div>
 
         {/* ── Gráfico — Roda dos 8 Eixos ── */}
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.30 }}
-          style={{ marginBottom: 60 }}>
-
-          {/* Roda SVG */}
-          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 36 }}>
-            <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"
-              style={{ width: '100%', maxWidth: 420, filter: `drop-shadow(0 8px 40px rgba(${ACCENT_RGB},0.20))` }}>
-              {/* Fatias da roda */}
-              {GRAFICO_EIXOS.map((e, i) => (
-                <g key={e.num}>
-                  {/* Preenchimento da fatia */}
-                  <path d={e.path} fill={`rgba(${PILARES[i].corRgb},0.18)`} stroke={BG} strokeWidth="3.5" />
-                  {/* Borda colorida */}
-                  <path d={e.path} fill="none" stroke={PILARES[i].cor} strokeWidth="1.2" opacity="0.45" />
-                  {/* Número do eixo */}
-                  <text x={e.lx} y={e.ly - 7} textAnchor="middle" fontSize="14" fontWeight="900"
-                    fill={PILARES[i].cor} fontFamily="system-ui,sans-serif">{e.num}</text>
-                  {/* Nome curto */}
-                  <text x={e.lx} y={e.ly + 9} textAnchor="middle" fontSize="8.2" fontWeight="700"
-                    fill={`rgba(${PILARES[i].corRgb},0.82)`} fontFamily="system-ui,sans-serif">{WHEEL_LABELS[i]}</text>
-                </g>
-              ))}
-              {/* Círculo central */}
-              <circle cx="250" cy="250" r="58" fill={BG} stroke={`rgba(${ACCENT_RGB},0.30)`} strokeWidth="1.5" />
-              <circle cx="250" cy="250" r="52" fill="none" stroke={`rgba(${ACCENT_RGB},0.08)`} strokeWidth="7" />
-              <text x="250" y="244" textAnchor="middle" fontSize="8.5" fontWeight="900"
-                fill={`rgba(${ACCENT_RGB},0.88)`} fontFamily="system-ui,sans-serif" letterSpacing="2.5">SAMUEL</text>
-              <text x="250" y="259" textAnchor="middle" fontSize="8.5" fontWeight="900"
-                fill={`rgba(${ACCENT_RGB},0.88)`} fontFamily="system-ui,sans-serif" letterSpacing="1.2">RUTHERFORD</text>
-            </svg>
-          </div>
-
-          {/* Grade resumo: 8 eixos em 2 colunas */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))', gap: 10 }}>
-            {PILARES.map((p, i) => (
-              <div key={p.num} style={{ display: 'flex', alignItems: 'flex-start', gap: 12, borderRadius: 12, padding: '12px 16px', background: `rgba(${p.corRgb},0.06)`, border: `1px solid rgba(${p.corRgb},0.20)` }}>
-                {/* Número */}
-                <div style={{ flexShrink: 0, width: 38, height: 38, borderRadius: 10, background: `rgba(${p.corRgb},0.16)`, border: `1px solid rgba(${p.corRgb},0.30)`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <span style={{ fontSize: 14, fontWeight: 900, color: p.cor, lineHeight: 1 }}>{p.num}</span>
-                </div>
-                <div style={{ minWidth: 0 }}>
-                  {/* Linha de tags */}
-                  <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: 5, marginBottom: 4 }}>
-                    <span style={{ fontSize: 10, fontWeight: 900, color: p.cor, letterSpacing: '0.20em', textTransform: 'uppercase' }}>{WHEEL_LABELS[i]}</span>
-                    <span style={{ fontSize: 9, color: 'rgba(200,205,255,0.30)', fontWeight: 700 }}>·</span>
-                    <span style={{ fontSize: 9, color: 'rgba(200,205,255,0.48)', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase' }}>{p.label}</span>
-                  </div>
-                  {/* Destaque como síntese */}
-                  <p style={{ margin: 0, fontSize: 11.5, color: 'rgba(215,220,255,0.80)', lineHeight: 1.55, fontStyle: 'italic' }}>
-                    "{p.destaque}"
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </motion.div>
+        <RodaEixos />
 
         {/* ── Cards dos eixos ── */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: 28 }}>
