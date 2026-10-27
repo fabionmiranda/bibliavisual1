@@ -51,7 +51,7 @@ function FotoComFallback({ src, alt, accentColor, IconFigura }: {
 
 const FOTO_MASTRICHT  = 'https://commons.wikimedia.org/wiki/Special:FilePath/Petrus_van_Mastricht.jpg';
 const FOTO_GILLESPIE   = 'https://commons.wikimedia.org/wiki/Special:FilePath/George_Gillespie.jpg';
-const FOTO_RUTHERFORD  = 'https://commons.wikimedia.org/wiki/Special:FilePath/Samuel_Rutherford_(minister).jpg';
+const FOTO_RUTHERFORD  = 'https://upload.wikimedia.org/wikipedia/commons/a/a3/Samuel_Rutherford_St._Andrews.jpg';
 const FOTO_TURRETIN  = 'https://commons.wikimedia.org/wiki/Special:FilePath/Francis_Turretin.jpg';
 const FOTO_WEBSTER   = 'https://www.st-andrews.ac.uk/assets/university/schools/school-of-divinity/images/news/john-webster.jpg';
 const FOTO_BAVINCK    = 'https://commons.wikimedia.org/wiki/Special:FilePath/HermanBavinckBig.jpg';
