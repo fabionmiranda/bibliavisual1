@@ -49,7 +49,8 @@ function FotoComFallback({ src, alt, accentColor, IconFigura }: {
   );
 }
 
-const FOTO_MASTRICHT = 'https://commons.wikimedia.org/wiki/Special:FilePath/Petrus_van_Mastricht.jpg';
+const FOTO_MASTRICHT  = 'https://commons.wikimedia.org/wiki/Special:FilePath/Petrus_van_Mastricht.jpg';
+const FOTO_GILLESPIE  = 'https://commons.wikimedia.org/wiki/Special:FilePath/George_Gillespie.jpg';
 const FOTO_TURRETIN  = 'https://commons.wikimedia.org/wiki/Special:FilePath/Francis_Turretin.jpg';
 const FOTO_WEBSTER   = 'https://www.st-andrews.ac.uk/assets/university/schools/school-of-divinity/images/news/john-webster.jpg';
 const FOTO_BAVINCK    = 'https://commons.wikimedia.org/wiki/Special:FilePath/HermanBavinckBig.jpg';
@@ -229,6 +230,37 @@ const AUTORES = [
         <line x1="32" y1="32" x2="32" y2="46" stroke={color} strokeWidth="1.4" strokeOpacity="0.5" />
         <line x1="24" y1="38" x2="40" y2="38" stroke={color} strokeWidth="1.4" strokeOpacity="0.5" />
         <circle cx="32" cy="44" r="2.5" stroke={color} strokeWidth="1.4" fill={color + '30'} />
+      </svg>
+    ),
+  },
+  {
+    slug: 'gillespie',
+    nome: 'George Gillespie',
+    datas: '1613–1648',
+    area: 'Eclesiologia Reformada',
+    subtitulo: 'Princípio Regulador, Liberdade de Consciência e Arquitetura da Verdade',
+    descricao:
+      'Teólogo presbiteriano escocês e figura proeminente da Assembleia de Westminster. Aos 24 anos escreveu contra a imposição de ritos anglicanos, formulando o Princípio Regulador do Culto. Em Aaron\'s Rod Blossoming defendeu o poder espiritual autônomo da Igreja contra o erastianismo. Morreu aos 35 anos, mas sua influência sobre a eclesiologia presbiteriana e a doutrina da boa e necessária consequência foi permanente.',
+    destaque: '"A antiguidade deve ser examinada, não simplesmente obedecida." — A Dispute Against the English Popish Ceremonies, 1637',
+    tags: ['Westminster', 'Eclesiologia', 'Princípio Regulador', 'Consciência', 'Século XVII'],
+    accentColor: '#a78bfa',
+    gradHero: 'linear-gradient(135deg, #0d0520 0%, #06061a 50%, #090418 100%)',
+    gradOrb1: '#a78bfa',
+    gradOrb2: '#f59e0b',
+    foto: FOTO_GILLESPIE,
+    IconFigura: ({ color }: { color: string }) => (
+      <svg viewBox="0 0 64 64" fill="none" className="w-full h-full">
+        {/* Igreja / frontão */}
+        <path d="M12 48 L12 30 L32 16 L52 30 L52 48 Z" stroke={color} strokeWidth="1.8" fill={color + '10'} strokeLinejoin="round" />
+        {/* cruz no topo */}
+        <line x1="32" y1="8" x2="32" y2="16" stroke={color} strokeWidth="2.5" strokeLinecap="round" />
+        <line x1="28" y1="11" x2="36" y2="11" stroke={color} strokeWidth="2.5" strokeLinecap="round" />
+        {/* porta */}
+        <rect x="26" y="36" width="12" height="12" rx="6" stroke={color} strokeWidth="1.6" fill={color + '18'} />
+        {/* chave / Palavra */}
+        <circle cx="44" cy="26" r="4" stroke={color} strokeWidth="1.4" fill="none" strokeOpacity="0.6" />
+        <line x1="48" y1="26" x2="54" y2="26" stroke={color} strokeWidth="1.4" strokeOpacity="0.6" strokeLinecap="round" />
+        <line x1="52" y1="24" x2="52" y2="28" stroke={color} strokeWidth="1.2" strokeOpacity="0.6" strokeLinecap="round" />
       </svg>
     ),
   },
