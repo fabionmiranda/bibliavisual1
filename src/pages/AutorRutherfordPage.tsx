@@ -94,6 +94,22 @@ const ESCADA = [
   { label: 'Confissão',         sub: 'Autoridade Derivada',    cor: '#60a5fa' },
 ];
 
+// ─── Roda dos 8 Eixos (SVG pré-calculado) ────────────────────────────────────
+// Octógono donut: cx=250, cy=250, r_outer=185, r_inner=60
+// Cada fatia: 45°, sentido horário, início no topo (-90°)
+const WHEEL_LABELS = ['Bibliologia','Três Graus','Razão Serva','Três Zonas','Escolástica','Providência','Reforma','Lex, Rex'];
+
+const GRAFICO_EIXOS: { num: string; path: string; lx: number; ly: number }[] = [
+  { num: '01', path: 'M 250 190 L 250 65 A 185 185 0 0 1 380.8 119.2 L 292.4 207.6 A 60 60 0 0 0 250 190 Z',     lx: 297.8, ly: 134.5 },
+  { num: '02', path: 'M 292.4 207.6 L 380.8 119.2 A 185 185 0 0 1 435 250 L 310 250 A 60 60 0 0 0 292.4 207.6 Z', lx: 365.5, ly: 202.2 },
+  { num: '03', path: 'M 310 250 L 435 250 A 185 185 0 0 1 380.8 380.8 L 292.4 292.4 A 60 60 0 0 0 310 250 Z',     lx: 365.5, ly: 297.8 },
+  { num: '04', path: 'M 292.4 292.4 L 380.8 380.8 A 185 185 0 0 1 250 435 L 250 310 A 60 60 0 0 0 292.4 292.4 Z', lx: 297.8, ly: 365.5 },
+  { num: '05', path: 'M 250 310 L 250 435 A 185 185 0 0 1 119.2 380.8 L 207.6 292.4 A 60 60 0 0 0 250 310 Z',     lx: 202.2, ly: 365.5 },
+  { num: '06', path: 'M 207.6 292.4 L 119.2 380.8 A 185 185 0 0 1 65 250 L 190 250 A 60 60 0 0 0 207.6 292.4 Z',  lx: 134.5, ly: 297.8 },
+  { num: '07', path: 'M 190 250 L 65 250 A 185 185 0 0 1 119.2 119.2 L 207.6 207.6 A 60 60 0 0 0 190 250 Z',      lx: 134.5, ly: 202.2 },
+  { num: '08', path: 'M 207.6 207.6 L 119.2 119.2 A 185 185 0 0 1 250 65 L 250 190 A 60 60 0 0 0 207.6 207.6 Z',  lx: 202.2, ly: 134.5 },
+];
+
 export default function AutorRutherfordPage() {
   return (
     <div style={{ minHeight: '100vh', background: BG, color: '#e4e8ff' }}>
@@ -240,6 +256,64 @@ export default function AutorRutherfordPage() {
           <p style={{ margin: '0 auto', maxWidth: 560, fontSize: 16, color: 'rgba(210,215,255,0.72)', lineHeight: 1.85 }}>
             Da bibliologia à filosofia política, da epistemologia escolástica à doutrina da providência.
           </p>
+        </motion.div>
+
+        {/* ── Gráfico — Roda dos 8 Eixos ── */}
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.30 }}
+          style={{ marginBottom: 60 }}>
+
+          {/* Roda SVG */}
+          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 36 }}>
+            <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"
+              style={{ width: '100%', maxWidth: 420, filter: `drop-shadow(0 8px 40px rgba(${ACCENT_RGB},0.20))` }}>
+              {/* Fatias da roda */}
+              {GRAFICO_EIXOS.map((e, i) => (
+                <g key={e.num}>
+                  {/* Preenchimento da fatia */}
+                  <path d={e.path} fill={`rgba(${PILARES[i].corRgb},0.18)`} stroke={BG} strokeWidth="3.5" />
+                  {/* Borda colorida */}
+                  <path d={e.path} fill="none" stroke={PILARES[i].cor} strokeWidth="1.2" opacity="0.45" />
+                  {/* Número do eixo */}
+                  <text x={e.lx} y={e.ly - 7} textAnchor="middle" fontSize="14" fontWeight="900"
+                    fill={PILARES[i].cor} fontFamily="system-ui,sans-serif">{e.num}</text>
+                  {/* Nome curto */}
+                  <text x={e.lx} y={e.ly + 9} textAnchor="middle" fontSize="8.2" fontWeight="700"
+                    fill={`rgba(${PILARES[i].corRgb},0.82)`} fontFamily="system-ui,sans-serif">{WHEEL_LABELS[i]}</text>
+                </g>
+              ))}
+              {/* Círculo central */}
+              <circle cx="250" cy="250" r="58" fill={BG} stroke={`rgba(${ACCENT_RGB},0.30)`} strokeWidth="1.5" />
+              <circle cx="250" cy="250" r="52" fill="none" stroke={`rgba(${ACCENT_RGB},0.08)`} strokeWidth="7" />
+              <text x="250" y="244" textAnchor="middle" fontSize="8.5" fontWeight="900"
+                fill={`rgba(${ACCENT_RGB},0.88)`} fontFamily="system-ui,sans-serif" letterSpacing="2.5">SAMUEL</text>
+              <text x="250" y="259" textAnchor="middle" fontSize="8.5" fontWeight="900"
+                fill={`rgba(${ACCENT_RGB},0.88)`} fontFamily="system-ui,sans-serif" letterSpacing="1.2">RUTHERFORD</text>
+            </svg>
+          </div>
+
+          {/* Grade resumo: 8 eixos em 2 colunas */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))', gap: 10 }}>
+            {PILARES.map((p, i) => (
+              <div key={p.num} style={{ display: 'flex', alignItems: 'flex-start', gap: 12, borderRadius: 12, padding: '12px 16px', background: `rgba(${p.corRgb},0.06)`, border: `1px solid rgba(${p.corRgb},0.20)` }}>
+                {/* Número */}
+                <div style={{ flexShrink: 0, width: 38, height: 38, borderRadius: 10, background: `rgba(${p.corRgb},0.16)`, border: `1px solid rgba(${p.corRgb},0.30)`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <span style={{ fontSize: 14, fontWeight: 900, color: p.cor, lineHeight: 1 }}>{p.num}</span>
+                </div>
+                <div style={{ minWidth: 0 }}>
+                  {/* Linha de tags */}
+                  <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: 5, marginBottom: 4 }}>
+                    <span style={{ fontSize: 10, fontWeight: 900, color: p.cor, letterSpacing: '0.20em', textTransform: 'uppercase' }}>{WHEEL_LABELS[i]}</span>
+                    <span style={{ fontSize: 9, color: 'rgba(200,205,255,0.30)', fontWeight: 700 }}>·</span>
+                    <span style={{ fontSize: 9, color: 'rgba(200,205,255,0.48)', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase' }}>{p.label}</span>
+                  </div>
+                  {/* Destaque como síntese */}
+                  <p style={{ margin: 0, fontSize: 11.5, color: 'rgba(215,220,255,0.80)', lineHeight: 1.55, fontStyle: 'italic' }}>
+                    "{p.destaque}"
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
         </motion.div>
 
         {/* ── Cards dos eixos ── */}
