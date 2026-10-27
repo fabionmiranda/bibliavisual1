@@ -234,6 +234,36 @@ const AUTORES = [
     ),
   },
   {
+    slug: 'rutherford',
+    nome: 'Samuel Rutherford',
+    datas: '1600–1661',
+    area: 'Escolástica Reformada',
+    subtitulo: 'Arquitetura do Conhecimento, A Razão Serva e Lex, Rex',
+    descricao:
+      'Teólogo presbiteriano escocês, pastor de profunda piedade e delegado na Assembleia de Westminster. Autor do revolucionário Lex, Rex (1644) — que colocou a lei de Deus acima do monarca — e da Disputatio Scholastica de Divina Providentia. Construiu uma arquitetura do conhecimento teológico em que a Escritura é a fundação, a razão é serva, e nenhum rei está acima da lei de Deus. O livro foi queimado publicamente em 1660.',
+    destaque: '"A verdade para com Cristo não pode ser traição a César." — Lex, Rex, 1644',
+    tags: ['Westminster', 'Lex Rex', 'Escolástica', 'Providência', 'Filosofia Política'],
+    accentColor: '#f97316',
+    gradHero: 'linear-gradient(135deg, #1a0800 0%, #0d0400 50%, #080200 100%)',
+    gradOrb1: '#f97316',
+    gradOrb2: '#fbbf24',
+    foto: null,
+    IconFigura: ({ color }: { color: string }) => (
+      <svg viewBox="0 0 64 64" fill="none" className="w-full h-full">
+        {/* coroa — lei acima do rei */}
+        <path d="M12 38 L12 28 L20 34 L32 20 L44 34 L52 28 L52 38 Z" stroke={color} strokeWidth="1.8" fill={color + '14'} strokeLinejoin="round" />
+        <rect x="12" y="38" width="40" height="8" rx="2" stroke={color} strokeWidth="1.6" fill={color + '10'} />
+        {/* livro aberto abaixo */}
+        <rect x="16" y="48" width="14" height="10" rx="1.5" stroke={color} strokeWidth="1.4" fill={color + '08'} />
+        <rect x="34" y="48" width="14" height="10" rx="1.5" stroke={color} strokeWidth="1.4" fill={color + '08'} />
+        <line x1="32" y1="48" x2="32" y2="58" stroke={color} strokeWidth="1.4" />
+        {/* seta lei > rei */}
+        <line x1="32" y1="8" x2="32" y2="18" stroke={color} strokeWidth="2" strokeLinecap="round" strokeOpacity="0.6" />
+        <polygon points="32,8 29,14 35,14" fill={color} opacity="0.6" />
+      </svg>
+    ),
+  },
+  {
     slug: 'gillespie',
     nome: 'George Gillespie',
     datas: '1613–1648',
