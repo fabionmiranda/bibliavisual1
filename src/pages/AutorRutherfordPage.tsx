@@ -8,7 +8,7 @@ const ACCENT     = '#f97316'; // orange-500
 const ACCENT_RGB = '249,115,22';
 const BG         = '#06061a';
 
-const FOTO_URL = 'https://commons.wikimedia.org/wiki/Special:FilePath/Samuel_Rutherford.jpg';
+const FOTO_URL = 'https://commons.wikimedia.org/wiki/Special:FilePath/Samuel_Rutherford_(minister).jpg';
 
 // ─── Notas de rodapé ─────────────────────────────────────────────────────────
 const NOTAS: { num: number; ref: string }[] = [

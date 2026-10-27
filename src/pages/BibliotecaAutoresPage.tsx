@@ -50,7 +50,8 @@ function FotoComFallback({ src, alt, accentColor, IconFigura }: {
 }
 
 const FOTO_MASTRICHT  = 'https://commons.wikimedia.org/wiki/Special:FilePath/Petrus_van_Mastricht.jpg';
-const FOTO_GILLESPIE  = 'https://commons.wikimedia.org/wiki/Special:FilePath/George_Gillespie.jpg';
+const FOTO_GILLESPIE   = 'https://commons.wikimedia.org/wiki/Special:FilePath/George_Gillespie.jpg';
+const FOTO_RUTHERFORD  = 'https://commons.wikimedia.org/wiki/Special:FilePath/Samuel_Rutherford_(minister).jpg';
 const FOTO_TURRETIN  = 'https://commons.wikimedia.org/wiki/Special:FilePath/Francis_Turretin.jpg';
 const FOTO_WEBSTER   = 'https://www.st-andrews.ac.uk/assets/university/schools/school-of-divinity/images/news/john-webster.jpg';
 const FOTO_BAVINCK    = 'https://commons.wikimedia.org/wiki/Special:FilePath/HermanBavinckBig.jpg';
@@ -247,7 +248,7 @@ const AUTORES = [
     gradHero: 'linear-gradient(135deg, #1a0800 0%, #0d0400 50%, #080200 100%)',
     gradOrb1: '#f97316',
     gradOrb2: '#fbbf24',
-    foto: null,
+    foto: FOTO_RUTHERFORD,
     IconFigura: ({ color }: { color: string }) => (
       <svg viewBox="0 0 64 64" fill="none" className="w-full h-full">
         {/* coroa — lei acima do rei */}
