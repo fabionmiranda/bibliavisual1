@@ -143,6 +143,66 @@ function estacaoDeHoje(dia: number) {
 }
 
 // ─── Conteúdo expandido de um dia ────────────────────────────────────────────
+// ─── Animações por dia (YouTube) ──────────────────────────────────────────────
+// Aceita: youtube.com/watch?v=ID, youtu.be/ID, youtube.com/shorts/ID, youtube.com/embed/ID ou só o ID.
+const VIDEOS_FAMILIAR: Record<number, string> = {
+  302: 'https://www.youtube.com/watch?v=QWdIpjZaK4I', // Hebreus 12
+};
+
+function youtubeId(url: string): string | null {
+  const m = url.match(/(?:youtu\.be\/|[?&]v=|\/shorts\/|\/embed\/|\/live\/)([\w-]{11})/);
+  if (m) return m[1];
+  return /^[\w-]{11}$/.test(url.trim()) ? url.trim() : null;
+}
+
+function VideoDia({ d, cor }: { d: DiaFamiliar; cor: string }) {
+  const [tocando, setTocando] = useState(false);
+  const url = VIDEOS_FAMILIAR[d.dia];
+  const id = url ? youtubeId(url) : null;
+  if (!id) return null;
+  const borda = cor.replace('1)', '0.30)');
+
+  return (
+    <div style={{ borderRadius: 16, background: 'rgba(0,0,0,0.25)', border: `1px solid ${borda}`, padding: 'clamp(10px,2.5vw,16px)' }}>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 10, marginBottom: 10, flexWrap: 'wrap' }}>
+        <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: cor }}>
+          🎬 Animação do Dia
+        </div>
+        <div style={{ fontSize: 12, color: 'rgba(200,200,255,0.55)' }}>
+          Assistam juntos antes da reflexão · {d.leitura}
+        </div>
+      </div>
+      <div style={{
+        position: 'relative', width: '100%', maxWidth: 820, margin: '0 auto', aspectRatio: '16 / 9',
+        borderRadius: 12, overflow: 'hidden', background: '#000', boxShadow: '0 10px 30px rgba(0,0,0,0.45)',
+      }}>
+        {tocando ? (
+          <iframe
+            src={`https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&modestbranding=1`}
+            title={`Animação — ${d.leitura}`}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+            allowFullScreen
+            style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 0 }}
+          />
+        ) : (
+          <button type="button" onClick={() => setTocando(true)} aria-label={`Assistir animação de ${d.leitura}`}
+            style={{ position: 'absolute', inset: 0, padding: 0, border: 0, cursor: 'pointer', background: '#000' }}>
+            <img src={`https://i.ytimg.com/vi/${id}/hqdefault.jpg`} alt="" loading="lazy"
+              style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.85 }} />
+            <span style={{
+              position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)',
+              width: 'clamp(52px,10vw,72px)', height: 'clamp(52px,10vw,72px)', borderRadius: '50%', background: cor,
+              display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 0 30px rgba(0,0,0,0.6)',
+            }}>
+              <span style={{ width: 0, height: 0, marginLeft: 5, borderTop: '11px solid transparent', borderBottom: '11px solid transparent', borderLeft: '18px solid #05071a' }} />
+            </span>
+          </button>
+        )}
+      </div>
+    </div>
+  );
+}
+
 function ConteudoDia({ d, cor }: { d: DiaFamiliar; cor: string }) {
   const borda = cor.replace('1)', '0.22)');
   const fundo = cor.replace('1)', '0.07)');
@@ -167,6 +227,9 @@ function ConteudoDia({ d, cor }: { d: DiaFamiliar; cor: string }) {
           </p>
         </div>
       )}
+
+      {/* Animação do dia — antes da reflexão, para a família assistir junta */}
+      <VideoDia d={d} cor={cor} />
 
       {/* Reflexão */}
       {d.reflexaoTexto && (

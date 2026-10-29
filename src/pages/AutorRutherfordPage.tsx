@@ -39,7 +39,7 @@ const PILARES = [
   {
     num: '01', label: 'Bibliologia', titulo: 'A Palavra Final — Fundação de Todo o Conhecimento',
     cor: '#f97316', corRgb: '249,115,22', icon: BookOpen,
-    texto: 'Rutherford estabelece a premissa metodológica central com precisão lapidar: <span style="color:#f97316;font-weight:700;">"The foundation of our Faith is Gods Word"</span><sup style="color:#f97316;font-size:0.72em;vertical-align:super;">5</sup> — a Palavra de Deus é a fundação absoluta; a teologia é a superestrutura. A <span style="background:rgba(249,115,22,0.12);border-left:3px solid #f97316;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(255,220,190,0.95);">Regra de Rutherford</span> é direta: <em style="color:#fbbf24;">"Quanto mais distante da Escritura, mais derivada é a autoridade."</em><sup style="color:#f97316;font-size:0.72em;vertical-align:super;">6</sup> A dogmática não produz a Escritura — a Escritura é que produz a dogmática. A <strong style="color:#fff;">Escada do Conhecimento</strong> desce em autoridade progressivamente: <span style="color:#f97316;">Revelação</span> → <span style="color:#fbbf24;">Escritura</span> → <span style="color:#2dd4bf;">Exegese</span> → <span style="color:#a78bfa;">Teologia Bíblica</span> → <span style="color:#34d399;">Dogmática</span> → <span style="color:#60a5fa;">Sistema</span> → <span style="color:rgba(200,205,255,0.65);">Confissão</span><sup style="color:#f97316;font-size:0.72em;vertical-align:super;">7</sup>. A Confissão de Westminster, da qual Rutherford foi delegado, consagra esse princípio em seu Capítulo I.',
+    texto: 'Rutherford estabelece a premissa metodológica central com precisão lapidar: <span style="color:#f97316;font-weight:700;">"The foundation of our Faith is Gods Word"</span><sup style="color:#f97316;font-size:0.72em;vertical-align:super;">5</sup> — a Palavra de Deus é a fundação absoluta; a teologia é a superestrutura. A <span style="background:rgba(249,115,22,0.12);border-left:3px solid #f97316;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(255,220,190,0.95);">Regra de Rutherford</span> é direta: <em style="color:#fbbf24;">"Quanto mais distante da Escritura, mais derivada é a autoridade."</em><sup style="color:#f97316;font-size:0.72em;vertical-align:super;">6</sup> A dogmática não produz a Escritura — a Escritura é que produz a dogmática. A <strong style="color:#fff;">Escada do Conhecimento</strong> desce em autoridade em <strong style="color:#fff;">sete degraus</strong>: <span style="color:#f97316;">(1) Revelação</span> → <span style="color:#fbbf24;">(2) Escritura</span> → <span style="color:#2dd4bf;">(3) Exegese</span> → <span style="color:#a78bfa;">(4) Teologia Bíblica</span> → <span style="color:#34d399;">(5) Dogmática</span> → <span style="color:#60a5fa;">(6) Sistema</span> → <span style="color:#c8cdff;">(7) Confissão</span><sup style="color:#f97316;font-size:0.72em;vertical-align:super;">7</sup>. A Confissão de Westminster, da qual Rutherford foi delegado, consagra esse princípio em seu Capítulo I.',
     destaque: 'A dogmática não produz a Escritura — a Escritura é que produz a dogmática.',
   },
   {
@@ -86,13 +86,22 @@ const PILARES = [
   },
 ];
 
+// Escada do Conhecimento: 7 degraus, autoridade decrescente a partir da Revelação
 const ESCADA = [
-  { label: 'Revelação',         sub: 'Deus fala',              cor: '#f97316' },
-  { label: 'Escritura',         sub: 'Registrada',             cor: '#fbbf24' },
-  { label: 'Exegese',           sub: 'Interpretação',          cor: '#2dd4bf' },
-  { label: 'Teologia Bíblica',  sub: 'Progresso da Redenção',  cor: '#a78bfa' },
-  { label: 'Dogmática',         sub: 'Síntese',                cor: '#34d399' },
-  { label: 'Confissão',         sub: 'Autoridade Derivada',    cor: '#60a5fa' },
+  { label: 'Revelação',        sub: 'Deus fala',              cor: '#f97316', autoridade: 100, nivel: 'Fonte absoluta',
+    desc: 'Deus se dá a conhecer. É a origem de todo conhecimento teológico — nada acima dela, nada além dela.' },
+  { label: 'Escritura',        sub: 'Palavra registrada',     cor: '#fbbf24', autoridade: 100, nivel: 'Norma normans',
+    desc: 'A revelação inspirada e inscriturada. É a norma que julga todas as demais normas — regra suprema de fé e prática.' },
+  { label: 'Exegese',          sub: 'Interpretação do texto', cor: '#2dd4bf', autoridade: 82,  nivel: 'Derivada',
+    desc: 'Extrai do texto o sentido pretendido pelo autor, pela gramática, história e contexto. Vale enquanto fiel ao texto.' },
+  { label: 'Teologia Bíblica', sub: 'Progresso da redenção',  cor: '#a78bfa', autoridade: 68,  nivel: 'Derivada',
+    desc: 'Acompanha o desenvolvimento da revelação ao longo da história da redenção, de Gênesis a Apocalipse.' },
+  { label: 'Dogmática',        sub: 'Síntese doutrinária',    cor: '#34d399', autoridade: 54,  nivel: 'Derivada',
+    desc: 'Reúne o ensino de toda a Escritura sobre cada tema — Deus, homem, Cristo, salvação, Igreja, últimas coisas.' },
+  { label: 'Sistema',          sub: 'Organização coerente',   cor: '#60a5fa', autoridade: 42,  nivel: 'Derivada',
+    desc: 'Articula as doutrinas num todo lógico, pela "boa e necessária consequência" extraída da Escritura.' },
+  { label: 'Confissão',        sub: 'Fé confessada',          cor: '#c8cdff', autoridade: 30,  nivel: 'Norma normata',
+    desc: 'A Igreja declara publicamente o que crê. Indispensável — mas sempre subordinada e corrigível pela Escritura.' },
 ];
 
 // ─── Roda dos 8 Eixos (SVG pré-calculado) ────────────────────────────────────
@@ -384,21 +393,57 @@ export default function AutorRutherfordPage() {
           <h3 style={{ margin: '0 0 8px', fontSize: 'clamp(17px,2.5vw,22px)', fontWeight: 900, color: '#fff', lineHeight: 1.22, position: 'relative' }}>
             A Escada do Conhecimento Teológico<sup style={{ fontSize: '0.6em', color: 'rgba(249,115,22,0.75)', verticalAlign: 'super', marginLeft: 4 }}>6,7</sup>
           </h3>
-          <p style={{ margin: '0 0 28px', fontSize: 15, color: 'rgba(228,232,255,0.72)', lineHeight: 1.8, position: 'relative' }}>
-            A autoridade decresce progressivamente à medida que nos afastamos da Revelação. A Confissão é indispensável — mas sempre subordinada à Escritura.
+          <p style={{ margin: '0 0 12px', fontSize: 15, color: 'rgba(228,232,255,0.72)', lineHeight: 1.8, position: 'relative' }}>
+            Sete degraus, do topo para a base. Cada degrau <strong style={{ color: '#fff' }}>depende</strong> do de cima e <strong style={{ color: '#fff' }}>responde</strong> a ele: quanto mais nos afastamos da Revelação, mais derivada é a autoridade.
           </p>
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexWrap: 'wrap', gap: 8, position: 'relative' }}>
+          <p style={{ margin: '0 0 28px', fontSize: 14, color: 'rgba(251,191,36,0.85)', fontStyle: 'italic', lineHeight: 1.7, position: 'relative' }}>
+            Regra de Rutherford: "Quanto mais distante da Escritura, mais derivada é a autoridade."
+          </p>
+
+          {/* sequência resumida */}
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexWrap: 'wrap', gap: 6, marginBottom: 28, position: 'relative' }}>
             {ESCADA.map((e, i, arr) => (
-              <div key={e.label} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                <div style={{ textAlign: 'center' }}>
-                  <div style={{ padding: '8px 16px', borderRadius: 99, background: `rgba(249,115,22,0.10)`, border: `1.5px solid ${e.cor}44`, fontSize: 11, fontWeight: 900, letterSpacing: '0.12em', textTransform: 'uppercase', color: e.cor, marginBottom: 4 }}>
-                    {e.label}
-                  </div>
-                  <div style={{ fontSize: 9, color: e.cor + '88', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase' }}>{e.sub}</div>
-                </div>
-                {i < arr.length - 1 && <ArrowRight size={14} color="rgba(200,205,255,0.20)" style={{ flexShrink: 0 }} />}
+              <div key={e.label} style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                <span style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.10em', textTransform: 'uppercase', color: e.cor }}>{e.label}</span>
+                {i < arr.length - 1 && <ArrowRight size={12} color="rgba(200,205,255,0.30)" style={{ flexShrink: 0 }} />}
               </div>
             ))}
+          </div>
+
+          {/* escada descendente */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 10, position: 'relative' }}>
+            {ESCADA.map((e, i) => (
+              <motion.div key={e.label} initial={{ opacity: 0, x: -12 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.22 + i * 0.06 }}
+                style={{ marginLeft: `calc(${i} * clamp(0px, 2.6vw, 30px))`, display: 'flex', alignItems: 'stretch', borderRadius: 14, background: `${e.cor}0d`, border: `1.5px solid ${e.cor}33`, overflow: 'hidden' }}>
+                <div style={{ width: 52, flexShrink: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', background: `${e.cor}1a`, borderRight: `1px solid ${e.cor}33` }}>
+                  <div style={{ fontSize: 8, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: `${e.cor}99` }}>Degrau</div>
+                  <div style={{ fontSize: 22, fontWeight: 900, lineHeight: 1, color: e.cor }}>{i + 1}</div>
+                </div>
+                <div style={{ flex: 1, minWidth: 0, padding: '12px 16px' }}>
+                  <div style={{ display: 'flex', alignItems: 'baseline', flexWrap: 'wrap', gap: '4px 10px', marginBottom: 4 }}>
+                    <span style={{ fontSize: 15, fontWeight: 900, color: e.cor }}>{e.label}</span>
+                    <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(200,205,255,0.55)' }}>{e.sub}</span>
+                  </div>
+                  <p style={{ margin: '0 0 10px', fontSize: 14, color: 'rgba(228,232,255,0.82)', lineHeight: 1.65 }}>{e.desc}</p>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                    <div style={{ flex: 1, maxWidth: 220, height: 6, borderRadius: 99, background: 'rgba(200,205,255,0.08)', overflow: 'hidden' }}>
+                      <div style={{ width: `${e.autoridade}%`, height: '100%', borderRadius: 99, background: e.cor }} />
+                    </div>
+                    <span style={{ fontSize: 10, fontWeight: 800, letterSpacing: '0.12em', textTransform: 'uppercase', color: `${e.cor}cc`, whiteSpace: 'nowrap' }}>Autoridade: {e.nivel}</span>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* chave de leitura */}
+          <div style={{ marginTop: 22, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 12, position: 'relative' }}>
+            <div style={{ borderRadius: 12, background: 'rgba(251,191,36,0.07)', border: '1px solid rgba(251,191,36,0.22)', padding: '12px 14px', fontSize: 13, color: 'rgba(228,232,255,0.80)', lineHeight: 1.6 }}>
+              <strong style={{ color: '#fbbf24' }}>Degraus 1–2 · Autoridade absoluta.</strong> É Deus quem fala; a Escritura é a <em>norma normans</em> — a norma que julga.
+            </div>
+            <div style={{ borderRadius: 12, background: 'rgba(200,205,255,0.05)', border: '1px solid rgba(200,205,255,0.18)', padding: '12px 14px', fontSize: 13, color: 'rgba(228,232,255,0.80)', lineHeight: 1.6 }}>
+              <strong style={{ color: '#c8cdff' }}>Degraus 3–7 · Autoridade derivada.</strong> Trabalho humano sobre o texto; valem na medida em que são fiéis a ele (<em>norma normata</em>).
+            </div>
           </div>
         </motion.div>
 

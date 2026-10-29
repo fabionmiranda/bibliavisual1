@@ -1,6 +1,6 @@
 ﻿import { useState, useMemo, useRef, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { BookOpen, Calendar, Search, X, Moon, Heart } from 'lucide-react';
+import { BookOpen, Calendar, Search, X, Moon, Heart, Play } from 'lucide-react';
 import { toPng } from 'html-to-image';
 import Navbar from '../components/Navbar';
 import { PLANO_COMPLETO, TOTAL_DIAS, getDayOfYear, type DiaDevocional } from '../data/calendarioDevocional';
@@ -752,6 +752,109 @@ function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: num
         })}
       </div>
     </div>
+  );
+}
+
+// Notas de rodapé da Reflexão (dia → notas). Os números ¹ ² ³ no texto correspondem à ordem.
+// nota: o comentário; autor/titulo/resto: referência ABNT (título em itálico).
+type NotaReflexao = { nota: string; autor: string; titulo: string; resto: string };
+const NOTAS_REFLEXAO: Record<number, NotaReflexao[]> = {
+  300: [
+    {
+      nota: 'Barry G. Webb observa que o narrador emoldura o capítulo com comentários teológicos explícitos (9.23-24 e 9.56-57): o tema é a retribuição divina — Deus faz voltar o sangue dos setenta sobre Abimeleque e sobre os siquemitas que o apoiaram. Comentário a Jz 9.',
+      autor: 'WEBB, Barry G.', titulo: 'The Book of Judges', resto: 'Grand Rapids: Eerdmans, 2012. (The New International Commentary on the Old Testament).',
+    },
+    {
+      nota: 'Matthew Henry aplica a parábola de Jotão: os que são úteis e frutíferos costumam recusar o poder para não abandonar o serviço, enquanto os indignos, como a espinheira, são os mais ambiciosos por governar — e acabam ferindo os que se abrigam sob eles. Comentário a Jz 9.7-21.',
+      autor: 'HENRY, Matthew.', titulo: 'Commentary on the Whole Bible', resto: 'Peabody: Hendrickson, 1991. v. 2: Joshua to Esther.',
+    },
+    {
+      nota: 'Dale Ralph Davis destaca que Deus executa sua justiça por meio de causas comuns — desconfiança entre aliados, uma revolta, a mão de uma mulher —, de modo que o juízo, ainda que lento, é certo: a aparente ausência de Deus nos três anos de Abimeleque não é indiferença. Comentário a Jz 9.',
+      autor: 'DAVIS, Dale Ralph.', titulo: 'Judges: Such a Great Salvation', resto: 'Fearn, Ross-shire: Christian Focus, 2000. (Focus on the Bible).',
+    },
+  ],
+  301: [
+    {
+      nota: 'Matthew Henry destaca que Tolá, embora da tribo de Issacar, fixou residência na região montanhosa de Efraim — no centro da terra —, para estar acessível ao povo que vinha a ele para ser julgado. Comentário a Jz 10.1-5.',
+      autor: 'HENRY, Matthew.', titulo: 'Commentary on the Whole Bible', resto: 'Peabody: Hendrickson, 1991. v. 2: Joshua to Esther.',
+    },
+    {
+      nota: 'Barry G. Webb observa que o verbo "livrar/salvar" (yasha) aplicado a Tolá o liga aos grandes libertadores do livro; como não há opressor estrangeiro mencionado, o livramento consiste em restaurar Israel da instabilidade deixada por Abimeleque. Comentário a Jz 10.1-2.',
+      autor: 'WEBB, Barry G.', titulo: 'The Book of Judges', resto: 'Grand Rapids: Eerdmans, 2012. (The New International Commentary on the Old Testament).',
+    },
+    {
+      nota: 'Dale Ralph Davis lê os relatos breves dos "juízes menores" (Jz 10.1-5) como testemunho de que Deus também governa e preserva seu povo em tempos comuns, sem feitos espetaculares — a fidelidade divina não depende de narrativas heroicas. Comentário a Jz 10.1-5.',
+      autor: 'DAVIS, Dale Ralph.', titulo: 'Judges: Such a Great Salvation', resto: 'Fearn, Ross-shire: Christian Focus, 2000. (Focus on the Bible).',
+    },
+  ],
+  302: [
+    {
+      nota: 'Barry G. Webb destaca o jogo de palavras do v. 4: o termo para "jumentos" e a forma usada para "cidades" soam quase iguais em hebraico (ʿayārîm), ligando os filhos montados às cidades que governavam. Comentário a Jz 10.3-5.',
+      autor: 'WEBB, Barry G.', titulo: 'The Book of Judges', resto: 'Grand Rapids: Eerdmans, 2012. (The New International Commentary on the Old Testament).',
+    },
+    {
+      nota: 'Matthew Henry observa que cavalgar jumentos era, naquele tempo, sinal de dignidade, e que os filhos de Jair eram homens de posição, à frente das cidades de Gileade. Comentário a Jz 10.3-5.',
+      autor: 'HENRY, Matthew.', titulo: 'Commentary on the Whole Bible', resto: 'Peabody: Hendrickson, 1991. v. 2: Joshua to Esther.',
+    },
+    {
+      nota: 'Dale Ralph Davis lê Jz 10.1-5 junto com o que vem em seguida (10.6-16): os anos de estabilidade sob os juízes menores não impediram que Israel voltasse à idolatria — a graça de Deus em tempos tranquilos não é garantia de fidelidade do povo. Comentário a Jz 10.1-16.',
+      autor: 'DAVIS, Dale Ralph.', titulo: 'Judges: Such a Great Salvation', resto: 'Fearn, Ross-shire: Christian Focus, 2000. (Focus on the Bible).',
+    },
+  ],
+  303: [
+    {
+      nota: 'Barry G. Webb analisa a expressão de 10.16b ("a sua alma se encurtou"), que pode indicar compaixão ou impaciência de Deus diante da miséria de Israel; em qualquer leitura, a libertação seguinte nasce da disposição do próprio Deus, e não de um arrependimento que o obrigasse a agir. Comentário a Jz 10.6-16.',
+      autor: 'WEBB, Barry G.', titulo: 'The Book of Judges', resto: 'Grand Rapids: Eerdmans, 2012. (The New International Commentary on the Old Testament).',
+    },
+    {
+      nota: 'Matthew Henry destaca a oração de 10.15: os verdadeiros penitentes se submetem à justiça de Deus ("faze-nos tudo quanto te parecer bem") e, ao mesmo tempo, apelam à sua misericórdia — e mostram a sinceridade do arrependimento abandonando os ídolos. Comentário a Jz 10.10-16.',
+      autor: 'HENRY, Matthew.', titulo: 'Commentary on the Whole Bible', resto: 'Peabody: Hendrickson, 1991. v. 2: Joshua to Esther.',
+    },
+    {
+      nota: 'Dale Ralph Davis observa que a recusa de Deus em 10.11-14 desmonta a ideia de que o clamor funciona automaticamente: Deus não é um recurso de emergência a ser acionado, e a confissão de Israel é posta à prova antes que a compaixão divina se manifeste. Comentário a Jz 10.6-16.',
+      autor: 'DAVIS, Dale Ralph.', titulo: 'Judges: Such a Great Salvation', resto: 'Fearn, Ross-shire: Christian Focus, 2000. (Focus on the Bible).',
+    },
+  ],
+};
+
+// Marcadores sobrescritos (¹ ² ³ …) viram selos clicáveis que levam à nota correspondente
+const SOBRESCRITOS = '⁰¹²³⁴⁵⁶⁷⁸⁹';
+
+function SeloNota({ n, cor, onClick }: { n: number; cor: string; onClick?: () => void }) {
+  return (
+    <sup
+      onClick={onClick}
+      title={onClick ? `Ver nota ${n}` : undefined}
+      style={{
+        display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+        minWidth: 18, height: 18, padding: '0 5px', margin: '0 2px 0 3px',
+        borderRadius: 99, background: cor, color: '#06061a',
+        fontSize: 11, fontWeight: 900, lineHeight: 1, fontStyle: 'normal',
+        verticalAlign: 'super', cursor: onClick ? 'pointer' : 'default',
+        boxShadow: `0 0 10px ${cor}66`,
+      }}
+    >
+      {n}
+    </sup>
+  );
+}
+
+function TextoComNotas({ text, dia, cor }: { text: string; dia: number; cor: string }) {
+  const partes = text.split(/([⁰¹²³⁴⁵⁶⁷⁸⁹]+)/);
+  const irPara = (n: number) => {
+    const el = document.getElementById(`nota-${dia}-${n}`);
+    if (!el) return;
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    el.animate([{ background: `${cor}33` }, { background: 'transparent' }], { duration: 1600 });
+  };
+  return (
+    <>
+      {partes.map((parte, i) => {
+        if (!/^[⁰¹²³⁴⁵⁶⁷⁸⁹]+$/.test(parte)) return parte;
+        const n = Number([...parte].map(c => SOBRESCRITOS.indexOf(c)).join(''));
+        return <SeloNota key={i} n={n} cor={cor} onClick={() => irPara(n)} />;
+      })}
+    </>
   );
 }
 
@@ -1671,16 +1774,89 @@ function gerarReflexao(d: DiaDevocional): string {
     return `A simetria da morte de Gideão espelha a família numerosa e a vida doméstica (A) ↔ Israel se prostituindo a Baalins — não lembrando a misericórdia (A'). No centro: Gideão morre em boa velhice — o melhor fim possível para um juiz. O pivô é a brevidade da memória: Gideão não terminou de ser enterrado quando Israel voltou à prostituição espiritual. Na vida da igreja: a gratidão espiritual tem vida curta quando não é cultivada ativamente. A geração que viveu sob Gideão e esqueceu o Senhor não era necessariamente mais má — era simplesmente humana sem disciplina de memória. Rituais de memória não são opcional — são vacinas contra a ingratidão.`;
   // [300]
   if (/a queda de abimeleque/i.test(p))
-    return `A simetria da queda de Abimeleque espelha os setenta meios-irmãos mortos sobre uma pedra (A) ↔ uma mulher jogando pedra de moinho sobre a cabeça de Abimeleque (A'). No centro: Deus enviou espírito maligno entre Abimeleque e Siquém — o retribuidor da violência usa a própria aliança que produziu o poder. O pivô é a simetria do julgamento: quem subiu pelo derramamento de sangue sobre pedra morre por pedra, pela mão de uma mulher. Na vida da igreja: o julgamento de Deus frequentemente usa a mesma estrutura do pecado para execução da punição. A parábola de Jotão — a espinheira reinando sobre as árvores — é lida como absurda, mas é exatamente o que ocorre quando a liderança é buscada pelo assassinato.`;
+    return `📖 O texto em resumo (Jz 9): Abimeleque, filho de Gideão com uma concubina de Siquém, convence os siquemitas a fazê-lo rei ("sou osso vosso e carne vossa", 9.2), paga homens vadios com a prata do templo de Baal-Berite e mata os seus setenta irmãos "sobre uma pedra". Só Jotão escapa e, do alto do monte Gerizim, conta a parábola das árvores. Três anos depois, Deus envia um espírito mau entre Abimeleque e Siquém; a cidade se rebela, Abimeleque a destrói e queima a torre com mil pessoas dentro. Em Tebes, uma mulher lança uma pedra de moinho sobre a cabeça dele.
+
+🔁 O espelho (quiasma) — cinco camadas que se dobram ao meio:
+A — Abimeleque mata setenta irmãos sobre uma pedra (9.1-6) → o CRIME
+   ↳ B — Parábola de Jotão: "reine a espinheira" e a maldição do fogo (9.7-21) → a PROFECIA
+      ↳ C — CENTRO: Deus envia um espírito mau entre Abimeleque e Siquém (9.22-25) → DEUS entra em cena
+   ↳ B' — Siquém se rebela e é destruída; a torre é queimada (9.26-52) → a profecia se CUMPRE
+A' — Uma mulher lança uma pedra de moinho sobre Abimeleque (9.53-57) → o CASTIGO
+
+🔎 Como ler o espelho:
+• A ↔ A' (pedra ↔ pedra): Abimeleque subiu ao trono derramando sangue sobre uma pedra e caiu do trono atingido por uma pedra. O instrumento do crime volta como instrumento do juízo. O próprio narrador explica no começo e no fim: Deus fez "tornar" o mal sobre Abimeleque e sobre os homens de Siquém (9.24; 9.56-57).¹
+• B ↔ B' (palavra ↔ cumprimento): Jotão anuncia que sairá fogo de Abimeleque para devorar Siquém, e de Siquém para devorar Abimeleque (9.20). Em B', exatamente isso acontece: Abimeleque queima a torre de Siquém e depois morre tentando queimar a torre de Tebes. Na parábola, as árvores que dão fruto — oliveira, figueira, videira — recusam o trono para não deixar de servir; só a espinheira, que não dá fruto nem sombra, aceita reinar.²
+• C (o centro): a virada não vem de um exército, mas de Deus. Por três anos parece que o crime compensou; então Deus "envia" a discórdia entre os cúmplices. O mesmo pacto que levou Abimeleque ao poder é o que o destrói.³
+
+🕰️ Por que isso importa: Gideão tinha dito: "Não dominarei sobre vós... o SENHOR vos dominará" (8.23). Mas o filho se chamava Abimeleque — "meu pai é rei". O filho tomou o que o pai recusou. Este é o primeiro "rei" em Israel: autoproclamado, pago com dinheiro de ídolo, coroado sobre sangue. E neste capítulo não há opressor estrangeiro: o inimigo veio de dentro.
+
+⛪ Na vida da igreja:
+• A espinheira ainda se oferece para reinar. Quem tem fruto costuma estar ocupado servindo; quem não tem nada a oferecer é quem mais disputa posição. A igreja deve desconfiar de quem busca liderança com pressa, com apelo de grupo ("sou osso vosso") e com dinheiro.
+• Alianças feitas no pecado não se sustentam: os siquemitas que coroaram Abimeleque foram destruídos por ele. Panelinhas, grupos de pressão e acordos às escondidas acabam ferindo os próprios participantes.
+• Deus pode esperar "três anos", mas não esquece o sangue do inocente. A demora do juízo não é aprovação. E na cruz a pedra do juízo caiu sobre o único Inocente, para que culpados como nós fossem perdoados.`;
   // [301]
   if (d.livroAbrev === 'Jz' && /tola/i.test(p))
-    return `A simetria de Tolá espelha o seu levantamento para salvar Israel (A) ↔ vinte e três anos de julgamento e morte em Samir (A'). No centro: habitou em Samir na montanha de Efraim — a localização como dado teológico. O pivô é a contenção da narrativa: Tolá não tem história de batalha, não tem crise, não tem falha registrada. Simplesmente foi levantado, habitou no lugar dado, julgou, morreu. Na vida da igreja: nem todo chamado tem epopeia. A fidelidade silenciosa que ocupa o lugar designado por anos sem drama é tão honrada quanto a batalha de Gideão — simplesmente não ocupa o mesmo espaço na narrativa humana.`;
+    return `📖 O texto em dois versículos: "Depois de Abimeleque, levantou-se para livrar a Israel Tolá, filho de Puá, filho de Dodô, homem de Issacar; e habitava em Samir, na montanha de Efraim. E julgou a Israel vinte e três anos; e morreu, e foi sepultado em Samir."
+
+🔁 O espelho (quiasma) — o texto se dobra ao meio:
+A — Tolá se levanta para livrar Israel (10.1a) → o COMEÇO do serviço
+   ↳ B — CENTRO: habitava em Samir, na montanha de Efraim (10.1b)
+A' — Julgou 23 anos, morreu e foi sepultado em Samir (10.2) → o FIM do serviço
+
+🔎 Como ler o espelho:
+• A ↔ A' (as pontas): "levantou-se" ↔ "morreu". O começo e o fim se correspondem — e tudo o que fica entre eles é serviço. Não há desvio, queda ou pausa registrada.
+• B (o centro): num quiasma, o meio é o ponto principal. O destaque não é uma batalha, mas um verbo simples: HABITAR. Tolá era de Issacar, mas foi morar em Efraim, no coração da terra — a região onde Abimeleque havia derramado sangue (Jz 9).¹
+• O detalhe que amarra tudo: Samir aparece duas vezes — no centro (habitou) e no fim (sepultado). Ele viveu e morreu no mesmo lugar em que Deus o colocou.
+
+🕰️ Por que isso importa: o capítulo anterior é Abimeleque — um homem que se fez rei, matou setenta irmãos e trouxe três anos de guerra civil. Tolá é o contrário: não tomou o poder, foi levantado; não feriu o povo, foi morar entre os feridos; não durou três anos de caos, mas vinte e três de paz. O verbo "livrar" (yasha) é o mesmo usado para os grandes libertadores — só que aqui o inimigo não é estrangeiro: é a desordem interna deixada por Abimeleque.² Seu nome significa "verme carmesim" — a mesma palavra do Salmo 22.6, onde o Messias diz "eu sou verme, e não homem".
+
+⛪ Na vida da igreja:
+• Depois de uma crise (divisão, escândalo, liderança abusiva), a igreja não precisa de outro "Abimeleque" carismático — precisa de restauradores pacientes como Tolá.
+• O centro do ministério é habitar: estar presente, morar perto da ferida, permanecer. Pastores, presbíteros e servos que ficam por anos no mesmo lugar curam o que um herói de passagem não consegue.
+• Fidelidade não precisa de epopeia. A vida de Tolá cabe em dois versículos — começo, presença, fim — e Deus a registrou para sempre.³`;
   // [302]
   if (d.livroAbrev === 'Jz' && /jair/i.test(p))
-    return `A simetria de Jair espelha os vinte e dois anos de julgamento (A) ↔ a morte em Camom (A'). No centro: trinta filhos em trinta jumentos com trinta cidades — a simetria da abundância. O pivô é o número trinta: filhos, jumentos, cidades — a prosperidade de Jair é representada em tríades. Na vida da igreja: a bênção material de um juiz não é condenação nem celebração — é dado. O texto não critica nem elogia a prosperidade de Jair. O que Deus julga é a fidelidade, não a condição econômica. Jair exerceu seu chamado e foi enterrado. Isso é suficiente para o registro.`;
+    return `📖 O texto em três versículos: "Depois dele, se levantou Jair, gileadita, e julgou a Israel vinte e dois anos. Tinha este trinta filhos, que cavalgavam trinta jumentos; e tinham trinta cidades, a que chamam Havote-Jair até ao dia de hoje, as quais estão na terra de Gileade. Morreu Jair e foi sepultado em Camom."
+
+🔁 O espelho (quiasma) — o texto se dobra ao meio:
+A — Jair se levanta e julga Israel vinte e dois anos (10.3) → o COMEÇO
+   ↳ B — CENTRO: trinta filhos, trinta jumentos, trinta cidades (10.4)
+A' — Jair morre e é sepultado em Camom (10.5) → o FIM
+
+🔎 Como ler o espelho:
+• A ↔ A' (as pontas): são curtas e quase iguais às de Tolá — levantou-se, julgou, morreu. O que muda de um juiz para o outro é o centro.
+• B (o centro): em Tolá, o centro era HABITAR; em Jair, é TER — filhos, montarias, cidades. O número trinta, repetido três vezes, força o leitor a olhar para a abundância.
+• O jogo de palavras: em hebraico, "jumentos" e "cidades" soam quase iguais — ʿayārîm.¹ O texto brinca com o som: os trinta filhos montados em trinta jumentos governam trinta cidades.
+• O sinal de status: cavalgar jumentos era marca de posição e autoridade (cf. Jz 5.10; 12.14).² Os filhos de Jair formam uma pequena aristocracia em Gileade.
+
+🕰️ Por que isso importa: o texto não condena Jair — vinte e dois anos de julgamento são um dado positivo. Mas o leitor atento lembra que Gideão também teve muitos filhos (setenta), e isso terminou em Abimeleque. E o versículo seguinte a Jair diz: "Tornaram os filhos de Israel a fazer o que era mau perante o SENHOR" (10.6). A prosperidade da casa do juiz não impediu a apostasia do povo.³ O centro do quiasma deixa a pergunta: o que está sendo multiplicado?
+
+⛪ Na vida da igreja:
+• Bênçãos visíveis — membros, estrutura, recursos — não são pecado, mas não são o centro do chamado. Tolá habitou; Jair multiplicou. Deus registra os dois, mas o capítulo seguinte mostra que abundância sozinha não sustenta a fidelidade.
+• Famílias pastorais e lideranças precisam vigiar para que o ministério não vire "dinastia": prestígio passado de pai para filho sem o temor do Senhor.
+• A medida de um ministério não é quantas "cidades" ele acumula, mas se o povo continua andando com Deus depois que o líder é sepultado.`;
   // [303]
   if (/opressao por amonitas/i.test(p))
-    return `A simetria da opressão por amonitas espelha Israel servindo a oito deuses (A) ↔ "sua alma ficou angustiada por causa da miséria de Israel" (A'). No centro: Israel clama — Deus responde "ide clamar aos deuses que escolhestes." O pivô é a recusa divina: pela primeira vez no ciclo dos juízes, Deus não responde imediatamente com misericórdia — Ele recusa com ironia. Na vida da igreja: há momentos em que Deus permite que a consequência de nossas escolhas seja o único professor disponível. A recusa de Deus não é abandono — é pedagogia severa. O retorno genuíno de Israel — removendo os deuses — é o que finalmente move a angústia de Deus.`;
+    return `📖 O texto em resumo (Jz 10.6-16): Israel volta a fazer o mal e serve a uma lista enorme de deuses — baalins, astarotes, os deuses da Síria, de Sidom, de Moabe, dos amonitas e dos filisteus — "e deixaram o SENHOR e não o serviram". Deus os entrega aos filisteus e aos amonitas, que os oprimem dezoito anos. Israel clama: "Pecamos contra ti". Deus responde lembrando tudo o que já fez e diz: "Ide e clamai aos deuses que escolhestes". Israel insiste: "Pecamos; faze-nos tudo quanto te parecer bem; livra-nos, porém, ainda esta vez". Então tiram os deuses estranhos do meio de si e servem ao SENHOR — e Deus já não suporta ver a miséria de Israel.
+
+🔁 O espelho (quiasma) — cinco camadas que se dobram ao meio:
+A — Israel serve aos deuses das nações; Deus os entrega por dezoito anos (10.6-8) → a IDOLATRIA
+   ↳ B — Oprimidos por filisteus e amonitas, clamam: "Pecamos" (10.9-10) → o PRIMEIRO clamor
+      ↳ C — CENTRO: Deus responde: "Ide e clamai aos deuses que escolhestes" (10.11-14) → a RECUSA de Deus
+   ↳ B' — "Pecamos; faze-nos o que te parecer bem" — e removem os deuses (10.15-16a) → o SEGUNDO clamor
+A' — "Já não pôde reter a sua compaixão por causa da miséria de Israel" (10.16b) → o CORAÇÃO de Deus
+
+🔎 Como ler o espelho:
+• A ↔ A' (ira ↔ compaixão): o texto começa com Israel deixando o SENHOR e a ira de Deus acendendo-se (10.7); termina com a alma de Deus "angustiada" pela desgraça do seu povo. A expressão hebraica é literalmente "a sua alma se encurtou" — Deus não aguentou mais ver o sofrimento de Israel. O que muda o fim da história não é o mérito de Israel, mas o coração de Deus.¹
+• B ↔ B' (dois clamores): as duas orações começam com a mesma palavra — "Pecamos" —, mas não são iguais. A primeira é um pedido de socorro. A segunda acrescenta duas coisas: submissão ("faze-nos tudo quanto te parecer bem") e ação ("tiraram os deuses alheios do meio de si"). Arrependimento verdadeiro aceita a justiça de Deus e abandona o ídolo.²
+• C (o centro): pela primeira vez no livro, Deus recusa o clamor. Ele lembra sete livramentos (egípcios, amorreus, amonitas, filisteus, sidônios, amalequitas, maonitas) — a mesma quantidade dos sete grupos de deuses que Israel serviu. Sete livramentos de Deus contra sete ídolos de Israel. E a ironia: "Clamai aos deuses que escolhestes; eles que vos livrem".³
+
+🕰️ Por que isso importa: o ciclo dos Juízes vinha se repetindo — pecado, opressão, clamor, livramento. Aqui o ciclo trava no centro: Deus não é uma máquina que libera socorro sempre que alguém aperta o botão "pecamos". O texto ensina a diferença entre remorso pelas consequências e arrependimento diante de Deus. E mesmo assim, o livramento que vem em seguida (Jefté) não é pagamento pelo arrependimento — é compaixão.
+
+⛪ Na vida da igreja:
+• Confissão não é fórmula. Dizer "pecamos" no culto ou na oração não basta, se os ídolos continuam no meio de nós. Arrependimento bíblico tira os "deuses alheios" — o dinheiro, a imagem, o poder, o entretenimento que ocupa o lugar de Deus.
+• Deus não é seguro de emergência. Os ídolos que servimos na fartura não nos salvam no aperto. Uma igreja que só ora em crise ainda não entendeu quem é o seu Senhor.
+• O coração de Deus é a nossa esperança. "Em toda a angústia deles foi ele angustiado" (Is 63.9). Em Cristo, Deus não apenas sentiu a nossa miséria — entrou nela e a carregou na cruz.`;
   // [304]
   if (/jefte/i.test(p))
     return `A simetria de Jefté espelha o ilegítimo expulso pelos meios-irmãos (A) ↔ vitória sobre amonitas e seis anos de julgamento (A'). No centro: o voto de Jefté — "o que sair primeiro" — a promessa que nenhum triunfo pode desfazer. O pivô é a filha: saiu ela primeiro. O voto foi cumprido. Na vida da igreja: as promessas feitas a Deus têm peso que o sucesso não anula. Jefté venceu a batalha e perdeu a filha. O texto não resolve a tensão — apenas a apresenta. O ilegítimo que se tornou líder descobriu que a vitória militar não é o capítulo final de sua história. O que prometemos importa mais do que o que conquistamos.`;
@@ -4998,16 +5174,16 @@ function gerarOracao(d: DiaDevocional): string {
     return `Pai, Israel esqueceu o Senhor antes de Gideão ser enterrado. Que eu não dependa de um líder humano para manter a minha fidelidade — porque líderes morrem. Que a minha gratidão espiritual seja cultivada ativamente, não apenas reativa à presença dos que me inspiram. A memória de Deus é responsabilidade minha, não de quem está ao meu lado. Amém.`;
   // [300]
   if (/a queda de abimeleque/i.test(p))
-    return `Deus que julgas com simetria, Abimeleque matou sobre uma pedra e morreu por uma pedra — lançada por uma mulher. Que eu nunca esqueça que o mesmo instrumento do meu pecado pode tornar-se instrumento do meu julgamento. E que a parábola de Jotão me faça desconfiar de qualquer liderança que sobe pelo derramamento do sangue dos irmãos. Amém.`;
+    return `Senhor, justo Juiz, Abimeleque subiu ao trono pela pedra do crime e caiu pela pedra do juízo. Tu viste o sangue dos setenta, esperaste três anos e fizeste tornar o mal sobre a cabeça de quem o praticou. Guarda-me de ser espinheira: de querer posição sem fruto, de buscar poder pela pressão do grupo, pelo dinheiro ou pela manipulação. Faz-me oliveira, figueira e videira — frutífero e contente no lugar onde me puseste. Desfaz em mim toda aliança feita às escondidas. E obrigado porque, em Cristo, o juízo que eu merecia caiu sobre o Inocente, para que eu fosse perdoado. Em nome de Jesus. Amém.`;
   // [301]
   if (d.livroAbrev === 'Jz' && /tola/i.test(p))
-    return `Senhor que honras a fidelidade silenciosa, Tolá habitou em Samir, julgou vinte e três anos e morreu. Sem batalha registrada, sem crise narrada. Que eu não desprezar a estação em que minha vocação é simplesmente ocupar o lugar designado com constância. O registro silencioso também é honrado por ti. Amém.`;
+    return `Senhor que levantas restauradores, depois de Abimeleque tu deste a Israel Tolá — um homem que não tomou o poder, mas se levantou para livrar; que deixou a sua tribo para habitar em Efraim, entre os feridos da guerra; que julgou vinte e três anos sem buscar fama. Livra-me de desejar a glória de Abimeleque. Dá-me a constância de Tolá: habitar onde me enviares, cuidar do que foi ferido e permanecer fiel ano após ano, mesmo que a minha história caiba em dois versículos. E que eu me lembre de Cristo, que se fez "verme, e não homem" para me salvar. Amém.`;
   // [302]
   if (d.livroAbrev === 'Jz' && /jair/i.test(p))
-    return `Pai, Jair teve trinta filhos, trinta jumentos e trinta cidades — e o texto não condena nem celebra. Tu julgaste a sua fidelidade, não a sua conta bancária. Que eu não use a prosperidade nem a pobreza como termômetro de aprovação divina. O que tu perguntas é se ocupei o meu chamado. Amém.`;
+    return `Pai, Jair teve trinta filhos, trinta jumentos e trinta cidades — e logo depois dele o teu povo voltou a fazer o que era mau aos teus olhos. Livra-me de confundir abundância com fidelidade. Se me deres crescimento, guarda o meu coração do orgulho; se me deres pouco, guarda-me da inveja. Que a minha casa não multiplique apenas bens, posição e nome, mas temor do teu nome. E que, quando eu for sepultado, os que ficarem continuem andando contigo — porque a herança que importa é a fé, não as cidades. Em nome de Jesus. Amém.`;
   // [303]
   if (/opressao por amonitas/i.test(p))
-    return `Senhor que respondes "ide clamar aos deuses que escolhestes", às vezes a tua pedagogia é deixar que a consequência das minhas escolhas seja o professor. Que quando o desconforto do distanciamento de ti me mover ao clamor, eu não apenas clame — mas remova os deuses estrangeiros que instalei. A angústia de Deus pela miséria do seu povo é o versículo mais comovente desta perícope. Amém.`;
+    return `Senhor, tu me livraste tantas vezes — e ainda assim eu servi a outros deuses. Não quero clamar a ti apenas quando o aperto chega, como quem aperta um botão de emergência. Eu pequei: faze comigo o que te parecer bem; mas livra-me, ainda esta vez. Mostra-me os deuses alheios que guardo no meio da minha casa e do meu coração, e dá-me coragem para tirá-los, e não apenas confessá-los. Obrigado porque a tua alma se angustia com a miséria do teu povo, e porque em Cristo tu mesmo carregaste a minha. Em nome de Jesus. Amém.`;
   // [304]
   if (/jefte/i.test(p))
     return `Pai, Jefté venceu a batalha e perdeu a filha. O voto feito a ti não pode ser desfeito pelo sucesso subsequente. Que eu seja cuidadoso com o que prometo diante de ti — especialmente nos momentos de pressão, quando as promessas saem de uma ânsia que não pensa nas consequências. O que prometo importa mais do que o que conquisto. Amém.`;
@@ -7341,6 +7517,26 @@ function gerarFamilia(d: DiaDevocional): string {
   if (/novas jerusalem|tudo novo|deus.*habitara/i.test(p))
     return `👫 *Casais:* "Não haverá mais morte, nem pranto, nem clamor." Todas as dores do casamento — as perdas, as mágoas — são temporárias. Essa esperança muda como vivemos hoje. Conversem sobre o que a esperança da nova criação muda no cotidiano de vocês.\n👧 *Filhos:* Explique que Deus vai fazer tudo novo e lindo no final. Pergunte: "O que você acha que vai ter na nova criação?" Deixe a imaginação voar — e aproveite para falar sobre a esperança cristã.\n👴 *Avós:* "Enxugará toda lágrima dos seus olhos." Compartilhe com os netos a esperança que sustenta você diante das perdas da vida. Avós que morrem com esperança ensinam a gerar que virá a viver com ela.`;
 
+  // [301] Tolá — Jz 10.1-2
+  if (d.livroAbrev === 'Jz' && /tola/i.test(p))
+    return `👫 *Casais:* Tolá veio depois de Abimeleque — depois de traição, sangue e três anos de caos — e trouxe vinte e três anos de estabilidade. Todo lar passa por "temporadas de Abimeleque": brigas, feridas, palavras duras. A restauração raramente é um grande gesto; é constância diária. Conversem: depois da última crise, o que cada um pode fazer, todos os dias, para trazer paz à casa?
+👧 *Filhos:* Tolá era da tribo de Issacar, mas foi morar em Efraim, onde as pessoas estavam machucadas pela guerra. Pergunte aos seus filhos: "Quem na escola, na igreja ou na rua está machucado e precisa que alguém chegue perto?" Escolham juntos uma pessoa para ajudar esta semana — Tolá ajudou indo morar perto.
+👴 *Avós:* A Bíblia resume a vida de Tolá em dois versículos: levantou-se, habitou, julgou, morreu. Nenhum milagre registrado — só fidelidade. Conte aos netos a história de alguém fiel e "sem fama" que marcou a sua fé: um pastor, uma professora de escola dominical, um parente. Ensine que, para Deus, constância também é heroísmo.`;
+
+  // [302] Jair — Jz 10.3-5
+  if (d.livroAbrev === 'Jz' && /jair/i.test(p))
+    return `👫 *Casais:* Jair teve trinta filhos, cada um com seu jumento e sua cidade — uma casa próspera e influente. Mas logo depois dele Israel voltou à idolatria. Conversem com honestidade: o que vocês estão multiplicando — bens, agenda, conquistas, seguidores? E o que estão transmitindo de fé? Escolham uma coisa para "multiplicar menos" e outra de valor eterno para cultivar mais esta semana.
+👧 *Filhos:* Em hebraico, "jumentos" e "cidades" têm quase o mesmo som (ʿayārîm)! Brinque com as crianças: façam uma lista de três coisas que elas TÊM (brinquedos, roupas…) e três coisas que Deus VALORIZA (verdade, bondade, oração). Pergunte: "Qual das duas listas vai durar para sempre?"
+👴 *Avós:* As cidades de Jair ficaram com o nome dele "até ao dia de hoje" — mas o texto não diz que a fé dele ficou. Conte aos netos qual herança você deseja deixar que não seja dinheiro nem casa: uma oração diária, um versículo de vida, um hábito de culto em família. Diga em voz alta: "Esta é a herança que quero que fique."`;
+
+  // [300] A queda de Abimeleque — Jz 9.1-57
+  if (/a queda de abimeleque/i.test(p))
+    return `👫 *Casais:* Abimeleque usou os laços de família — "sou osso vosso e carne vossa" — para manipular e chegar ao poder. Conversem com sinceridade: existe manipulação nas conversas da casa? Chantagem emocional, "a minha família contra a sua", decisões tomadas pela pressão de parentes? Combinem uma regra: as decisões importantes do casal são tomadas às claras, a dois, diante de Deus.\n👧 *Filhos:* Encenem a parábola de Jotão (Jz 9.8-15): cada um é uma árvore. Pergunte: "Por que a oliveira não quis ser rei?" — porque preferiu continuar dando azeite. "O que você faz de bom que não quer deixar de fazer só para mandar nos outros?" Ensine que, para Deus, liderar é servir — e quem só quer mandar é como a espinheira, que não dá fruto.\n👴 *Avós:* Gideão recusou ser rei, mas o filho recebeu um nome que dizia "meu pai é rei". O que dizemos em casa — nos nomes, nos apelidos, nas conversas à mesa — forma o coração dos netos. Conte a eles a história de alguém que buscou poder e se perdeu, e de alguém que serviu com humildade e foi honrado por Deus.`;
+
+  // [303] Opressão por Amonitas — Jz 10.6-16
+  if (/opressao por amonitas/i.test(p))
+    return `👫 *Casais:* Israel disse "pecamos" duas vezes, mas só a segunda foi arrependimento de verdade: veio com submissão e com a retirada dos ídolos. No casamento também existe o "desculpa" automático, que não muda nada. Conversem: há algum "deus alheio" no meio da casa — trabalho, celular, dinheiro, aparência — que precisa ser tirado, e não apenas confessado? Escolham juntos uma atitude concreta para esta semana.\n👧 *Filhos:* Israel só pediu ajuda a Deus quando a situação apertou. Pergunte às crianças: "A gente só ora quando precisa de alguma coisa?" Comecem um "pote de gratidão": cada dia, um papelzinho com algo bom que Deus fez. Ensine também que pedir desculpas de verdade tem duas partes: dizer "eu errei" e consertar o que foi feito.\n👴 *Avós:* Deus lembrou a Israel sete livramentos que eles tinham esquecido (10.11-12). Faça com os netos a "lista de livramentos da família": doenças, viagens, crises, mudanças em que Deus cuidou de vocês. Quem esquece os livramentos de Deus fica pronto para servir a outros deuses — a memória da família é proteção contra a idolatria.`;
+
   // FALLBACK por livro/contexto
   const livro = d.livro.toLowerCase();
   const isAT = d.testamento === 'AT';
@@ -8930,6 +9126,10 @@ function gerarTextoWhatsApp(d: DiaDevocional): string {
     `_${d.pericope}_\n\n` +
     `*✦ Reflexão*\n${reflexao}\n\n` +
     `*🙏 Oração*\n${oracao}\n\n` +
+    (NOTAS_REFLEXAO[d.dia]
+      ? `*Notas*\n${NOTAS_REFLEXAO[d.dia].map((n, i) => `${i + 1}. ${n.nota}`).join('\n')}\n\n` +
+        `*Referências*\n${[...NOTAS_REFLEXAO[d.dia]].sort((a, b) => a.autor.localeCompare(b.autor)).map(n => `${n.autor} _${n.titulo}_. ${n.resto}`).join('\n')}\n\n`
+      : '') +
     `─────────────────────\n` +
     `*Bíblia Visual Expositiva*\n` +
     `${DEVOCIONAL_URL}`
@@ -8957,18 +9157,33 @@ const LIVRO_BIBLIAONLINE: Record<string, string> = {
   '1Jo':'1joao','2Jo':'2joao','3Jo':'3joao','Jd':'judas','Ap':'apocalipse',
 };
 
-// STEPBible OSMHB (BHS com nikud completo + interlinear)
-const LIVRO_STEPBIBLE: Record<string, string> = {
-  'Gn':'Gen','Êx':'Exod','Lv':'Lev','Nm':'Num','Dt':'Deut',
-  'Js':'Josh','Jz':'Judg','Rt':'Ruth','1Sm':'1Sam','2Sm':'2Sam',
-  '1Rs':'1Kgs','2Rs':'2Kgs','1Cr':'1Chr','2Cr':'2Chr',
-  'Ed':'Ezra','Ne':'Neh','Et':'Esth','Jó':'Job','Sl':'Ps',
-  'Pv':'Prov','Ec':'Eccl','Ct':'Song','Is':'Isa',
-  'Jr':'Jer','Lm':'Lam','Ez':'Ezek','Dn':'Dan',
-  'Os':'Hos','Jl':'Joel','Am':'Amos','Ob':'Obad','Jn':'Jonah',
-  'Mq':'Mic','Na':'Nah','Hc':'Hab','Sf':'Zeph',
-  'Ag':'Hag','Zc':'Zech','Ml':'Mal',
+// BHS oficial (Deutsche Bibelgesellschaft — die-bibel.de), códigos USFM dos livros
+const LIVRO_BHS: Record<string, string> = {
+  'Gn':'GEN','Êx':'EXO','Lv':'LEV','Nm':'NUM','Dt':'DEU',
+  'Js':'JOS','Jz':'JDG','Rt':'RUT','1Sm':'1SA','2Sm':'2SA',
+  '1Rs':'1KI','2Rs':'2KI','1Cr':'1CH','2Cr':'2CH',
+  'Ed':'EZR','Ne':'NEH','Et':'EST','Jó':'JOB','Sl':'PSA',
+  'Pv':'PRO','Ec':'ECC','Ct':'SNG','Is':'ISA',
+  'Jr':'JER','Lm':'LAM','Ez':'EZK','Dn':'DAN',
+  'Os':'HOS','Jl':'JOL','Am':'AMO','Ob':'OBA','Jn':'JON',
+  'Mq':'MIC','Na':'NAM','Hc':'HAB','Sf':'ZEP',
+  'Ag':'HAG','Zc':'ZEC','Ml':'MAL',
 };
+
+// "10.1-2" → JDG.10.1-JDG.10.2 · "1.1-36" → GEN.1.1-GEN.1.36 · "3" → GEN.3
+// Trechos que atravessam capítulos ("10.17-18; 11.1-40") abrem o capítulo inicial inteiro,
+// pois o site não aceita intervalos entre capítulos.
+function urlBHS(livro: string, capitulos: string): string {
+  const base = 'https://www.die-bibel.de/en/bible/BHS/';
+  const segmentos = capitulos.trim().split(/[;\s]+/).map(semPrefixoLivro);
+  // meio-versículos (4b, 14c) apontam para o versículo inteiro
+  const m = segmentos.length === 1 && segmentos[0].match(/^(\d+)\.(\d+)[a-z]?(?:-(\d+)[a-z]?)?$/);
+  if (m) {
+    const [, c, v1, v2] = m;
+    return `${base}${livro}.${c}.${v1}` + (v2 ? `-${livro}.${c}.${v2}` : '');
+  }
+  return `${base}${livro}.${getChapter(capitulos)}`;
+}
 
 // BibleGateway usa nomes ingleses para evitar problemas de encoding (funciona com NVI-PT)
 const LIVRO_BIBLEGATEWAY: Record<string, string> = {
@@ -8990,16 +9205,21 @@ const LIVRO_BIBLEGATEWAY: Record<string, string> = {
   '1Jo':'1+John','2Jo':'2+John','3Jo':'3+John','Jd':'Jude','Ap':'Revelation',
 };
 
+// Algumas referências do calendário trazem o livro colado: "1S9.1-27", "2Ch3.1-17", "Ezr5.1-17"
+function semPrefixoLivro(ref: string): string {
+  return ref.trim().replace(/^\d?[A-Za-z]+(?=\d)/, '');
+}
+
 function getChapter(capitulos: string): string {
-  // e.g. "1.1-36" → "1", "3-4" → "3", "3.1-4.5" → "3"
-  const m = capitulos.match(/^(\d+)/);
+  // e.g. "1.1-36" → "1", "3-4" → "3", "3.1-4.5" → "3", "1S9.1-27" → "9"
+  const m = semPrefixoLivro(capitulos).match(/^(\d+)/);
   return m ? m[1] : '1';
 }
 
 function VersoesOnlineSection({ d, cor, corB }: { d: DiaDevocional; cor: string; corB: string }) {
   const cap = getChapter(d.capitulos);
   const livroBO = LIVRO_BIBLIAONLINE[d.livroAbrev];
-  const livroStep = LIVRO_STEPBIBLE[d.livroAbrev];
+  const livroBHS = LIVRO_BHS[d.livroAbrev];
   const livroBG = LIVRO_BIBLEGATEWAY[d.livroAbrev];
   const isOT = d.testamento === 'AT';
 
@@ -9016,10 +9236,10 @@ function VersoesOnlineSection({ d, cor, corB }: { d: DiaDevocional; cor: string;
       url: `https://www.biblegateway.com/passage/?search=${livroBG}+${cap}&version=NVI-PT`,
       color: '#34d399',
     } : null,
-    isOT && livroStep ? {
+    isOT && livroBHS ? {
       label: 'Hebraico BHS',
-      sublabel: 'BHS c/ nikud + interlinear (STEPBible)',
-      url: `https://www.stepbible.org/?q=version=OSMHB|reference=${livroStep}.${cap}&options=VN`,
+      sublabel: 'Biblia Hebraica Stuttgartensia (die-bibel.de)',
+      url: urlBHS(livroBHS, d.capitulos),
       color: '#a78bfa',
     } : null,
   ].filter(Boolean) as { label: string; sublabel: string; url: string; color: string }[];
@@ -9060,6 +9280,99 @@ function VersoesOnlineSection({ d, cor, corB }: { d: DiaDevocional; cor: string;
           </a>
         ))}
       </div>
+    </div>
+  );
+}
+
+// Animações por perícope (dia → link do YouTube ou arquivo .mp4).
+// Aceita: youtube.com/watch?v=ID, youtu.be/ID, youtube.com/shorts/ID, youtube.com/embed/ID ou só o ID.
+// String vazia = usa o vídeo padrão (VIDEO_PADRAO).
+const VIDEO_PADRAO = 'https://www.youtube.com/watch?v=cjLoSgCJF6Y';
+const VIDEOS_PERICOPE: Record<number, string> = {
+  300: '', // Jz 9.1-57 — A queda de Abimeleque
+  301: '', // Jz 10.1-2 — Tolá
+  302: '', // Jz 10.3-5 — Jair
+  303: '', // Jz 10.6-16 — Opressão por Amonitas
+};
+
+function youtubeId(url: string): string | null {
+  const m = url.match(/(?:youtu\.be\/|[?&]v=|\/shorts\/|\/embed\/|\/live\/)([\w-]{11})/);
+  if (m) return m[1];
+  return /^[\w-]{11}$/.test(url.trim()) ? url.trim() : null;
+}
+
+function VideoPericope({ d, cor, corB }: { d: DiaDevocional; cor: string; corB: string }) {
+  const [tocando, setTocando] = useState(false);
+  if (VIDEOS_PERICOPE[d.dia] === undefined) return null;
+  const url = VIDEOS_PERICOPE[d.dia] || VIDEO_PADRAO;
+
+  const id = url ? youtubeId(url) : null;
+  const isMp4 = !!url && /\.mp4(\?|$)/i.test(url);
+  const caixa: React.CSSProperties = {
+    position: 'relative', width: '100%', maxWidth: 760, margin: '0 auto', aspectRatio: '16 / 9',
+    borderRadius: 10, overflow: 'hidden', background: '#000',
+    border: `1px solid ${corB}`, boxShadow: '0 4px 16px rgba(0,0,0,0.35)',
+  };
+  // Compacto como miniatura; ao tocar, ocupa a linha inteira para assistir
+  const expandido = tocando || isMp4;
+
+  return (
+    <div style={{
+      flex: expandido ? '1 1 100%' : '1 1 260px', maxWidth: expandido ? '100%' : 320, minWidth: 0,
+      display: 'flex', flexDirection: 'column', justifyContent: 'center',
+      padding: 'clamp(10px,2.5vw,14px)', borderRadius: 14, background: 'rgba(255,255,255,0.03)', border: `1px solid ${corB}`,
+    }}>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 8, marginBottom: 8 }}>
+        <span style={{ fontSize: 9, fontWeight: 900, letterSpacing: '0.2em', color: cor, textTransform: 'uppercase' }}>
+          🎬 Animação
+        </span>
+        {tocando && (
+          <button type="button" onClick={() => setTocando(false)}
+            style={{ fontSize: 9, fontWeight: 800, letterSpacing: '0.12em', textTransform: 'uppercase', color: C.muted, background: 'none', border: 0, cursor: 'pointer', padding: 0 }}>
+            Recolher
+          </button>
+        )}
+      </div>
+      {isMp4 ? (
+        <video src={url} controls preload="metadata" playsInline style={{ ...caixa, display: 'block' }} />
+      ) : id ? (
+        <div style={caixa}>
+          {tocando ? (
+            <iframe
+              src={`https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&modestbranding=1`}
+              title={`Animação — ${d.livroAbrev} ${d.capitulos}`}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+              allowFullScreen
+              style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 0 }}
+            />
+          ) : (
+            <button type="button" onClick={() => setTocando(true)} aria-label="Assistir animação"
+              style={{ position: 'absolute', inset: 0, padding: 0, border: 0, cursor: 'pointer', background: '#000' }}>
+              <img src={`https://i.ytimg.com/vi/${id}/hqdefault.jpg`} alt="" loading="lazy"
+                style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.85 }} />
+              <span style={{
+                position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)',
+                width: 40, height: 40, borderRadius: '50%', background: cor,
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                boxShadow: '0 0 30px rgba(0,0,0,0.6)',
+              }}>
+                <Play size={16} color="#000" fill="#000" style={{ marginLeft: 2 }} />
+              </span>
+            </button>
+          )}
+        </div>
+      ) : (
+        <div style={{ ...caixa, background: 'rgba(255,255,255,0.03)', borderStyle: 'dashed', boxShadow: 'none', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 4, textAlign: 'center' }}>
+          <Play size={18} color={cor} style={{ opacity: 0.6 }} />
+          <div style={{ fontSize: 11, fontWeight: 800, color: 'rgba(255,255,255,0.7)' }}>Em produção</div>
+        </div>
+      )}
+      {!tocando && (
+        <div style={{ marginTop: 8, fontSize: 11, lineHeight: 1.45, color: C.muted }}>
+          {id || isMp4 ? 'Assista à cena antes da leitura — ' : 'Em breve: a cena de '}
+          <span style={{ color: 'rgba(255,255,255,0.8)', fontWeight: 700 }}>{d.pericope}</span> ({d.livroAbrev} {d.capitulos})
+        </div>
+      )}
     </div>
   );
 }
@@ -9163,9 +9476,12 @@ function DiaModal({ d, onClose, innerRef }: { d: DiaDevocional; onClose: () => v
           </div>
 
           {/* Questão — agosto (dias 213–243) */}
+          {(gerarQuestao(d) || VIDEOS_PERICOPE[d.dia] !== undefined) && (
+          <div style={{ marginTop: 8, display: 'flex', flexWrap: 'wrap', alignItems: 'stretch', gap: 'clamp(10px,2vw,16px)' }}>
           {gerarQuestao(d) && (
             <div style={{
-              marginTop: 8,
+              flex: '1 1 340px', minWidth: 0,
+              display: 'flex', flexDirection: 'column', justifyContent: 'center',
               padding: 'clamp(12px,3vw,18px) clamp(14px,3.5vw,22px)',
               borderRadius: 14,
               background: 'rgba(239,68,68,0.08)',
@@ -9178,6 +9494,9 @@ function DiaModal({ d, onClose, innerRef }: { d: DiaDevocional; onClose: () => v
                 {gerarQuestao(d)}
               </div>
             </div>
+          )}
+          <VideoPericope key={d.dia} d={d} cor={cor} corB={corB} />
+          </div>
           )}
 
           {/* Título impactante */}
@@ -9243,11 +9562,40 @@ function DiaModal({ d, onClose, innerRef }: { d: DiaDevocional; onClose: () => v
               <div style={{ color: accentColor, marginTop: 2, flexShrink: 0 }}>{icon}</div>
               <div>
                 <div style={{ fontSize: 'clamp(10px,2.5vw,11px)', color: accentColor, fontWeight: 900, letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 6 }}>{label}</div>
-                <div style={{ fontSize: 'clamp(14px,3.2vw,16px)', color: 'rgba(255,255,255,0.92)', lineHeight: 1.8, whiteSpace: 'pre-line' }}>{text}</div>
+                <div style={{ fontSize: 'clamp(14px,3.2vw,16px)', color: 'rgba(255,255,255,0.92)', lineHeight: 1.8, whiteSpace: 'pre-line' }}>
+                  {label === 'Reflexao' ? <TextoComNotas text={text} dia={d.dia} cor={accentColor} /> : text}
+                </div>
               </div>
             </div>
           ))}
         </div>
+
+        {/* Notas de rodapé e Referências (ABNT) */}
+        {NOTAS_REFLEXAO[d.dia] && (
+          <div style={{ marginTop: 14, borderTop: `1px solid ${corB}`, paddingTop: 16 }}>
+            <div style={{ fontSize: 'clamp(10px,2.5vw,11px)', color: cor, fontWeight: 900, letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 10 }}>
+              Notas da Reflexão
+            </div>
+            <ol style={{ margin: 0, padding: 0, listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 8 }}>
+              {NOTAS_REFLEXAO[d.dia].map((n, i) => (
+                <li key={i} id={`nota-${d.dia}-${i + 1}`} style={{ display: 'flex', alignItems: 'flex-start', gap: 8, fontSize: 'clamp(12px,2.8vw,13px)', color: 'rgba(255,255,255,0.78)', lineHeight: 1.65, borderRadius: 8, padding: '4px 6px', margin: '0 -6px', scrollMarginTop: 80 }}>
+                  <span style={{ flexShrink: 0, marginTop: 2 }}><SeloNota n={i + 1} cor={cor} /></span>
+                  <span>{n.nota}</span>
+                </li>
+              ))}
+            </ol>
+            <div style={{ fontSize: 'clamp(10px,2.5vw,11px)', color: cor, fontWeight: 900, letterSpacing: '0.15em', textTransform: 'uppercase', margin: '18px 0 10px' }}>
+              Referências
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+              {[...NOTAS_REFLEXAO[d.dia]].sort((a, b) => a.autor.localeCompare(b.autor)).map(n => (
+                <p key={n.autor} style={{ margin: 0, fontSize: 'clamp(12px,2.8vw,13px)', color: 'rgba(255,255,255,0.72)', lineHeight: 1.6 }}>
+                  {n.autor} <em style={{ fontStyle: 'italic', fontWeight: 700, color: 'rgba(255,255,255,0.88)' }}>{n.titulo}</em>. {n.resto}
+                </p>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Progresso */}
         <div style={{ marginTop: 24 }}>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
-import { ChevronRight, User, BookOpen, ExternalLink } from 'lucide-react';
+import { ChevronRight, User, BookOpen, ExternalLink, Search, X } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
@@ -314,7 +314,33 @@ const AUTORES = [
   },
 ];
 
+// Normaliza para busca: minúsculas e sem acentos
+const normalizar = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+
+const INDICE_BUSCA = AUTORES.map(a =>
+  normalizar([a.nome, a.datas, a.area, a.subtitulo, a.descricao, a.destaque, ...a.tags].join(' ')),
+);
+
 export default function BibliotecaAutoresPage() {
+  const [busca, setBusca] = React.useState('');
+  const inputRef = React.useRef<HTMLInputElement>(null);
+
+  // Atalho "/" foca a busca
+  React.useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      const alvo = e.target as HTMLElement;
+      if (e.key === '/' && alvo.tagName !== 'INPUT' && alvo.tagName !== 'TEXTAREA') {
+        e.preventDefault();
+        inputRef.current?.focus();
+      }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, []);
+
+  const termos = normalizar(busca).split(/\s+/).filter(Boolean);
+  const filtrados = AUTORES.filter((_, i) => termos.every(t => INDICE_BUSCA[i].includes(t)));
+
   return (
     <div className="min-h-screen relative">
       <Navbar />
@@ -346,14 +372,73 @@ export default function BibliotecaAutoresPage() {
             </p>
           </motion.div>
 
+          {/* Busca */}
+          <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.05 }}
+            className="sticky top-20 z-30 mb-8">
+            <div className="relative rounded-2xl border border-white/12 bg-[#06061a]/85 backdrop-blur-md focus-within:border-[#2dd4bf]/60 transition-colors">
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-white/40 pointer-events-none" />
+              <input
+                ref={inputRef}
+                type="search"
+                value={busca}
+                onChange={e => setBusca(e.target.value)}
+                onKeyDown={e => { if (e.key === 'Escape') setBusca(''); }}
+                placeholder="Buscar autor, época, tema ou tag… (ex.: Westminster, escolástica, 1600)"
+                aria-label="Buscar autores"
+                className="w-full bg-transparent pl-11 pr-24 py-3.5 text-sm sm:text-base text-white placeholder:text-white/35 outline-none [&::-webkit-search-cancel-button]:hidden"
+              />
+              <div className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center gap-2">
+                {busca ? (
+                  <button type="button" onClick={() => { setBusca(''); inputRef.current?.focus(); }}
+                    aria-label="Limpar busca" className="p-1 rounded-md text-white/50 hover:text-white hover:bg-white/10 transition-colors">
+                    <X className="w-4 h-4" />
+                  </button>
+                ) : (
+                  <kbd className="hidden sm:inline-block px-2 py-0.5 rounded-md border border-white/15 text-[10px] font-black text-white/40">/</kbd>
+                )}
+              </div>
+            </div>
+
+            {/* atalhos por nome */}
+            <div className="flex flex-wrap gap-1.5 mt-3">
+              {AUTORES.map(a => {
+                const ativo = filtrados.length === 1 && filtrados[0].slug === a.slug;
+                return (
+                  <button key={a.slug} type="button" onClick={() => setBusca(ativo ? '' : a.nome)}
+                    className="px-2.5 py-1 rounded-full text-[9px] font-black uppercase tracking-widest border transition-colors"
+                    style={ativo
+                      ? { color: a.accentColor, borderColor: a.accentColor + '80', background: a.accentColor + '18' }
+                      : { color: 'rgba(255,255,255,0.55)', borderColor: 'rgba(255,255,255,0.10)' }}>
+                    {a.slug === 'batistas-presbiterianos' ? 'Batistas & Presbiterianos' : a.nome}
+                  </button>
+                );
+              })}
+            </div>
+
+            {busca && (
+              <p className="mt-3 text-[11px] font-bold text-white/45">
+                {filtrados.length} {filtrados.length === 1 ? 'resultado' : 'resultados'} para “{busca}”
+              </p>
+            )}
+          </motion.div>
+
           {/* Cards */}
           <div className="flex flex-col gap-6">
-            {AUTORES.map((a, i) => (
+            {filtrados.length === 0 && (
+              <div className="rounded-2xl border border-dashed border-white/12 p-10 text-center">
+                <p className="text-white/70 text-sm mb-3">Nenhum autor encontrado para “{busca}”.</p>
+                <button type="button" onClick={() => setBusca('')}
+                  className="text-[10px] font-black uppercase tracking-widest text-[#2dd4bf] hover:text-white transition-colors">
+                  Limpar busca
+                </button>
+              </div>
+            )}
+            {filtrados.map((a, i) => (
               <motion.div
                 key={a.slug}
                 initial={{ opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.12 }}
+                transition={{ delay: busca ? 0 : i * 0.12 }}
               >
                 <Link
                   to={`/biblioteca/autores/${a.slug}`}
