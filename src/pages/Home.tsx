@@ -408,12 +408,12 @@ export default function Home() {
             </motion.div>
             <p className="text-lg sm:text-xl md:text-2xl text-white/90 max-w-3xl mx-auto mb-10 font-display font-medium leading-snug">
               {pt
-                ? 'O futuro da leitura, interpretação e aplicação da Palavra de Deus sob a ação poderosa do Espírito Santo de forma visual, expositiva, simples, e profunda!'
+                ? 'O futuro da leitura, interpretação e aplicação da Palavra de Deus sob a ação poderosa do Espírito Santo de forma visual, expositiva, simples, e profunda! Um Projeto Missional e sempre Gratuito!'
                 : 'The future of reading, interpreting, and applying the Word of God under the powerful action of the Holy Spirit — visually, expositionally, simply, and deeply!'}
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
               <Link
-                to="/biblioteca"
+                to="/acessar"
                 className="inline-flex items-center gap-3 px-10 py-5 bg-brand-blue text-white text-lg font-black rounded-full
                   hover:bg-white hover:text-brand-blue transition-all hover:scale-105 active:scale-95
                   shadow-[0_0_40px_rgba(59,130,246,0.4)]"
