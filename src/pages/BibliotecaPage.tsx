@@ -7,6 +7,7 @@ import {
   ChevronRight, GraduationCap,
 } from 'lucide-react';
 import Navbar from '../components/Navbar';
+import VideoIntro from '../components/VideoIntro';
 import Footer from '../components/Footer';
 import FlagToggle from '../components/FlagToggle';
 import { ARTIGOS_TEOLOGIA } from '../data/teologia';
@@ -238,6 +239,11 @@ export default function BibliotecaPage() {
             <h1 className="font-display font-black text-4xl sm:text-5xl lg:text-6xl text-white leading-[1.1] mb-5">
               {pt ? 'Biblioteca' : 'Library'}
             </h1>
+
+            {/* Vídeo de introdução — logo após o título */}
+            <div className="w-full max-w-3xl mx-auto" style={{ margin: '8px auto 32px' }}>
+              <VideoIntro pt={pt} />
+            </div>
             <p className="text-white/40 text-base sm:text-lg max-w-2xl leading-relaxed">
               {pt
                 ? 'Livros, artigos, estudos confessionais, autores e guias selecionados para aprofundar o estudo expositivo da Bíblia.'

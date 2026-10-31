@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
+import VideoIntro from '../components/VideoIntro';
 import Footer from '../components/Footer';
 import FlagToggle from '../components/FlagToggle';
 import { ARTIGOS_TEOLOGIA } from '../data/teologia';
@@ -368,6 +369,11 @@ export default function TeologiaPage() {
           }}>
             {pt ? 'Teologia' : 'Theology'}
           </h1>
+
+          {/* Vídeo de introdução — logo após o título */}
+          <div className="w-full max-w-3xl mx-auto" style={{ margin: '8px auto 32px' }}>
+            <VideoIntro pt={pt} />
+          </div>
           <p style={{
             fontSize: 'clamp(16px,2.2vw,19px)', color: 'rgba(200,218,255,0.65)',
             lineHeight: 1.75, maxWidth: 600, margin: '0 auto',

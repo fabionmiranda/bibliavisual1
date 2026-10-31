@@ -13,6 +13,7 @@ import EducacaoCristaAula2Page from './pages/EducacaoCristaAula2Page';
 import EducacaoCristaAula3Page from './pages/EducacaoCristaAula3Page';
 import LivroIsThereiningPage from './pages/LivroIsTheremeaningPage';
 import LivroBatistasBibliaPage from './pages/LivroBatistasBibliaPage';
+import TeologoBatistaPage from './pages/TeologoBatistaPage';
 import BibliotecaLivrosPage from './pages/BibliotecaLivrosPage';
 import BibliotecaResenhasPage from './pages/BibliotecaResenhasPage';
 import ResenhaGonzalezEraReformadoresPage from './pages/ResenhaGonzalezEraReformadoresPage';
@@ -125,6 +126,7 @@ export default function App() {
           <Route path="/biblioteca/livros"                           element={<BibliotecaLivrosPage />} />
           <Route path="/biblioteca/livros/is-there-meaning"        element={<LivroIsThereiningPage />} />
           <Route path="/biblioteca/livros/os-batistas-e-a-biblia" element={<LivroBatistasBibliaPage />} />
+          <Route path="/biblioteca/livros/os-batistas-e-a-biblia/:slug" element={<TeologoBatistaPage />} />
           <Route path="/estudos/biblicos"                               element={<EstudosBiblicosPage />} />
           <Route path="/estudos/biblicos/herois-da-fe-na-historia"    element={<HeroisDaFeHistoriaPage />} />
           <Route path="/estudos/biblicos/herois-da-fe"                 element={<HeroisDaFePage />} />

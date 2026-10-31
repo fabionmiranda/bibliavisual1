@@ -759,6 +759,62 @@ function QuiasmaSection({ d, pericopeIdx }: { d: DiaDevocional; pericopeIdx: num
 // nota: o comentário; autor/titulo/resto: referência ABNT (título em itálico).
 type NotaReflexao = { nota: string; autor: string; titulo: string; resto: string };
 const NOTAS_REFLEXAO: Record<number, NotaReflexao[]> = {
+  1: [
+    {
+      nota: 'Bruce K. Waltke organiza Gn 1 em dois painéis de três dias: os dias 1-3 respondem ao "sem forma" (tohu), criando os espaços, e os dias 4-6 respondem ao "vazio" (bohu), preenchendo-os com seus habitantes; o sétimo dia é o clímax do relato. Comentário a Gn 1.1–2.3.',
+      autor: 'WALTKE, Bruce K.; FREDRICKS, Cathi J.', titulo: 'Genesis: A Commentary', resto: 'Grand Rapids: Zondervan, 2001.',
+    },
+    {
+      nota: 'Anthony A. Hoekema mostra que a imagem de Deus em Gn 1.26-28 envolve a relação do ser humano com Deus, com o próximo (homem e mulher) e com a criação; o domínio é uma tarefa de mordomia exercida sob a autoridade de Deus, e não posse absoluta.',
+      autor: 'HOEKEMA, Anthony A.', titulo: "Created in God's Image", resto: 'Grand Rapids: Eerdmans, 1986.',
+    },
+    {
+      nota: 'João Calvino, comentando Gn 2.3, ensina que Deus santificou o sétimo dia para que os homens, deixando as demais ocupações, se dedicassem a meditar nas obras de Deus — o descanso existe para a contemplação e o culto ao Criador. Comentário a Gn 2.1-3.',
+      autor: 'CALVIN, John.', titulo: 'Commentaries on the First Book of Moses Called Genesis', resto: 'Tradução de John King. Edinburgh: Calvin Translation Society, 1847. v. 1.',
+    },
+  ],
+  2: [
+    {
+      nota: 'G. K. Beale mostra que os verbos "cultivar" (ʿābad) e "guardar" (šāmar) de Gn 2.15 reaparecem juntos para o serviço dos levitas no tabernáculo (Nm 3.7-8; 8.26; 18.5-6), o que sugere que o Éden foi o primeiro santuário e Adão, um sacerdote-rei encarregado de guardá-lo.',
+      autor: 'BEALE, G. K.', titulo: 'The Temple and the Church\'s Mission: A Biblical Theology of the Dwelling Place of God', resto: 'Downers Grove: InterVarsity Press, 2004. (New Studies in Biblical Theology, 17).',
+    },
+    {
+      nota: 'João Calvino destaca, em Gn 2.16-17, a liberalidade de Deus: ele concede ao homem todas as árvores do jardim e proíbe apenas uma, como prova de obediência — Deus não exigiu nada difícil, mas um sinal simples de sujeição à sua palavra. Comentário a Gn 2.16-17.',
+      autor: 'CALVIN, John.', titulo: 'Commentaries on the First Book of Moses Called Genesis', resto: 'Tradução de John King. Edinburgh: Calvin Translation Society, 1847. v. 1.',
+    },
+    {
+      nota: 'Geerhardus Vos interpreta a árvore do conhecimento do bem e do mal como instrumento de prova: o homem chegaria ao conhecimento do bem e do mal de um modo ou de outro — pela obediência, confirmando-se no bem, ou pela desobediência, experimentando o mal.',
+      autor: 'VOS, Geerhardus.', titulo: 'Biblical Theology: Old and New Testaments', resto: 'Grand Rapids: Eerdmans, 1948.',
+    },
+  ],
+  3: [
+    {
+      nota: 'Anthony A. Hoekema observa que a expressão "auxiliadora que lhe corresponda" (ʿēzer kenegdô) não implica inferioridade: ʿēzer é usado para o próprio Deus como socorro de Israel, e kenegdô indica alguém que corresponde ao homem, seu igual e complemento; homem e mulher juntos refletem a imagem de Deus.',
+      autor: 'HOEKEMA, Anthony A.', titulo: 'Created in God\'s Image', resto: 'Grand Rapids: Eerdmans, 1986.',
+    },
+    {
+      nota: 'João Calvino comenta Gn 2.21-22 dizendo que Adão perdeu uma de suas costelas, mas recebeu em troca uma recompensa muito mais rica — uma companheira fiel —, e que a mulher foi formada do corpo do homem para que ele reconhecesse nela parte de si mesmo. Comentário a Gn 2.21-22.',
+      autor: 'CALVIN, John.', titulo: 'Commentaries on the First Book of Moses Called Genesis', resto: 'Tradução de John King. Edinburgh: Calvin Translation Society, 1847. v. 1.',
+    },
+    {
+      nota: 'Bruce K. Waltke lê Gn 2.24 em chave de aliança: "deixar" e "unir-se" (dābaq) são termos usados para a fidelidade pactual, de modo que o casamento é apresentado como um compromisso de aliança que forma uma nova unidade familiar. Comentário a Gn 2.18-25.',
+      autor: 'WALTKE, Bruce K.; FREDRICKS, Cathi J.', titulo: 'Genesis: A Commentary', resto: 'Grand Rapids: Zondervan, 2001.',
+    },
+  ],
+  4: [
+    {
+      nota: 'João Calvino entende Gn 3.22 ("o homem se tornou como um de nós") como uma repreensão irônica: Adão, que quis ser como Deus, foi reduzido à miséria, e a ironia de Deus expõe a loucura da ambição humana. Comentário a Gn 3.22.',
+      autor: 'CALVIN, John.', titulo: 'Commentaries on the First Book of Moses Called Genesis', resto: 'Tradução de John King. Edinburgh: Calvin Translation Society, 1847. v. 1.',
+    },
+    {
+      nota: 'Matthew Henry observa que as vestes de pele de Gn 3.21 provavelmente vieram de animais mortos em sacrifício, e vê nelas uma figura da justiça de Cristo, que cobre a vergonha do pecador de modo que nenhuma cobertura humana consegue. Comentário a Gn 3.21.',
+      autor: 'HENRY, Matthew.', titulo: 'Commentary on the Whole Bible', resto: 'Peabody: Hendrickson, 1991. v. 1: Genesis to Deuteronomy.',
+    },
+    {
+      nota: 'Geerhardus Vos trata Gn 3.15 como a primeira revelação redentora após a queda (o "protoevangelho"): Deus mesmo estabelece a inimizade contra a serpente e promete a vitória por meio da descendência da mulher, de modo que a graça é anunciada antes da sentença sobre o homem.',
+      autor: 'VOS, Geerhardus.', titulo: 'Biblical Theology: Old and New Testaments', resto: 'Grand Rapids: Eerdmans, 1948.',
+    },
+  ],
   300: [
     {
       nota: 'Barry G. Webb observa que o narrador emoldura o capítulo com comentários teológicos explícitos (9.23-24 e 9.56-57): o tema é a retribuição divina — Deus faz voltar o sangue dos setenta sobre Abimeleque e sobre os siquemitas que o apoiaram. Comentário a Jz 9.',
@@ -865,16 +921,100 @@ function gerarReflexao(d: DiaDevocional): string {
   // ── GÊNESIS ──────────────────────────────────────────────────────────────
   // [1] Seis Dias de Criação e O Sábado
   if (/seis dias de criacao/i.test(p))
-    return `A simetria da criação é perfeito: os dias se espelham em pares — luz (dia 1) ↔ astros (dia 4); firmamento (dia 2) ↔ aves e peixes (dia 5); terra seca e plantas (dia 3) ↔ animais e ser humano (dia 6). O centro da estrutura não é um dia de obra — é o sábado do dia 7, o descanso de Deus. Toda a criação foi feita para convergir no repouso com Deus. Na vida da igreja: reunir-se para adorar não interrompe a semana — é o ponto ao redor do qual a semana inteira faz sentido. O culto não é pausa do trabalho; é o centro que dá significado a tudo o mais.`;
+    return `📖 O texto em resumo (Gn 1.1–2.4a): "No princípio, criou Deus os céus e a terra. A terra, porém, estava sem forma e vazia." Em seis dias, Deus fala, separa, nomeia e enche. Sete vezes o texto diz que o que Deus fez era "bom" — a última, "muito bom". No sétimo dia, Deus descansa, abençoa e santifica o dia.
+
+🔁 O espelho — uma moldura com dois painéis paralelos:
+P — "Criou Deus os céus e a terra" (1.1-2) → a ABERTURA
+   ↳ A — Dia 1: luz e trevas (1.3-5)
+   ↳ B — Dia 2: águas e céu (1.6-8)
+   ↳ C — Dia 3: terra seca e plantas (1.9-13)
+   ↳ A' — Dia 4: luzeiros — sol, lua e estrelas (1.14-19)
+   ↳ B' — Dia 5: peixes nas águas e aves no céu (1.20-23)
+   ↳ C' — Dia 6: animais terrestres e o ser humano (1.24-31)
+P' — "Assim foram acabados os céus e a terra" e o sétimo dia (2.1-4a) → o FECHAMENTO
+
+🔎 Como ler o espelho:
+• P ↔ P' (a moldura): o relato abre e fecha com "os céus e a terra". Tudo o que está dentro é obra inteira e completa de Deus — nada ficou por fazer.
+• A-B-C ↔ A'-B'-C' (os dois painéis): o v. 2 apresenta dois problemas — a terra estava "sem forma" e "vazia". Nos dias 1 a 3, Deus dá FORMA, criando os espaços (luz; céu e mar; terra). Nos dias 4 a 6, Deus ENCHE esses espaços com seus habitantes (astros; aves e peixes; animais e o homem). Cada dia do segundo painel corresponde ao seu par no primeiro.¹
+• O dia 6 tem o seu próprio espelho (1.24-31): "bom" (A) ↔ "bom" (A'); "domine" (B) ↔ "dominai" (B'); e no CENTRO (C): "Criou Deus o homem à sua imagem... homem e mulher os criou" (1.27). O ponto mais alto da criação é o ser humano feito à imagem de Deus — e o domínio que ele recebe é mordomia, não tirania.²
+• O sétimo dia (2.1-3) fica fora dos painéis e acima deles: não tem "tarde e manhã" nem nova obra. Deus descansa, abençoa e santifica. A semana inteira converge para o descanso com Deus.³
+
+🕰️ Por que isso importa: os povos vizinhos de Israel contavam histórias da criação cheias de deuses em guerra, e adoravam o sol, a lua e as estrelas. Gênesis 1 desmonta tudo isso com serenidade: há um só Deus, que cria pela palavra, sem esforço e sem rival. O sol e a lua nem são chamados pelo nome — são "luzeiros", lâmpadas que Deus pendura no céu no dia 4. Aquilo que as nações adoravam, Gênesis coloca a serviço.
+
+⛪ Na vida da igreja:
+• Deus ainda transforma "sem forma e vazio" em ordem e plenitude. Uma vida, uma família ou uma igreja em caos não está fora do alcance da Palavra que disse "Haja luz" (2Co 4.6).
+• Cada pessoa — de qualquer idade, origem ou condição — carrega a imagem de Deus. Isso fundamenta a dignidade humana, o cuidado com o mais fraco e o trabalho como mordomia da criação.
+• O culto não é intervalo da semana — é o seu ponto de chegada. Como a criação converge para o sétimo dia, a vida da igreja converge para a adoração e o descanso em Deus, descanso que se cumpre em Cristo (Hb 4.9-10).`;
   // [2] Jardim no Éden
   if (/jardim no eden/i.test(p))
-    return `A simetria do jardim coloca no centro o rio que nasce no Éden e se divide em quatro — imagem de vida que flui para os quatro cantos do mundo. Os elementos externos espelham o caos inicial (terra sem chuva, sem homem) ↔ a proibição terminal ("no dia que dela comeres, morrerás"). Entre a vida que flui e a morte anunciada, Deus coloca o homem no jardim para cultivar e guardar. Na vida da igreja: somos chamados a ser guardiões do que Deus planta — a comunidade, o chamado, a missão. Cultivar é mais do que crescer; é preservar o que Deus confiou, dentro dos limites que ele estabeleceu.`;
+    return `📖 O texto em resumo (Gn 2.4b-17): antes de haver chuva e lavrador, uma névoa sobe e rega a terra. Deus forma o homem do pó da terra e sopra em suas narinas o fôlego de vida. Planta um jardim no Éden, faz brotar árvores agradáveis e boas para comer e, no meio do jardim, a árvore da vida e a árvore do conhecimento do bem e do mal. Um rio sai do Éden e se divide em quatro. Deus coloca o homem no jardim "para o cultivar e o guardar" e lhe dá uma ordem: "De toda árvore do jardim comerás livremente, mas da árvore do conhecimento do bem e do mal não comerás".
+
+🔁 O espelho — dois painéis paralelos (A-B-C ↔ A'-B'-C'):
+A — Uma névoa sobe e rega a terra (2.4b-6) → a ÁGUA
+   ↳ B — Deus forma o homem e o põe no jardim (2.7-8) → o LUGAR
+      ↳ C — No meio do jardim, a árvore do conhecimento do bem e do mal (2.9) → a ÁRVORE
+A' — Um rio sai do Éden para regar o jardim (2.10-14) → a ÁGUA
+   ↳ B' — Deus põe o homem no jardim para cultivar e guardar (2.15) → o LUGAR e a MISSÃO
+      ↳ C' — "Da árvore do conhecimento do bem e do mal não comerás" (2.16-17) → a ÁRVORE e a PALAVRA
+
+🔎 Como ler o espelho:
+• A ↔ A' (água): primeiro a terra seca recebe uma névoa; depois o jardim recebe um rio que se divide em quatro e leva vida ao mundo. A vida brota do lugar onde Deus está e corre para fora.
+• B ↔ B' (o homem no jardim): o primeiro painel diz que Deus "pôs" o homem ali; o segundo explica para quê: "para o cultivar e o guardar". Esses dois verbos aparecem juntos de novo na Bíblia para o serviço dos levitas no tabernáculo (Nm 3.7-8). O Éden é o primeiro santuário, e Adão, o primeiro sacerdote: trabalhar e vigiar são formas de culto.¹
+• C ↔ C' (a árvore e a palavra): no primeiro painel a árvore aparece; no segundo, ela recebe uma palavra de Deus. A ordem começa com generosidade — "de toda árvore comerás livremente" — e só uma é proibida.² A árvore é um teste: o homem chegaria a conhecer o bem e o mal pelo caminho da obediência ou pelo caminho da desobediência.³
+
+🕰️ Por que isso importa: Gênesis 2 aproxima a câmera. O Deus que no capítulo 1 criou as galáxias pela palavra agora se inclina, forma o homem com as próprias mãos e sopra nele a vida. O jardim não é paraíso de ócio: é lugar de trabalho, de presença de Deus e de uma única regra. Liberdade ampla, limite claro — e o limite existe para proteger a vida.
+
+⛪ Na vida da igreja:
+• O trabalho é vocação sagrada. Antes da queda, Adão já trabalhava. Cultivar e guardar — a família, a igreja, a profissão, a criação — é servir a Deus no santuário que ele nos confiou.
+• A igreja é um jardim a ser guardado. Pastores e membros são chamados a vigiar o que Deus plantou, para que nenhuma serpente entre sem ser percebida (At 20.28-31).
+• A Palavra de Deus é generosa antes de ser restritiva: o "comerás livremente" vem antes do "não comerás". Quem obedece não perde a liberdade — guarda a vida. E onde o primeiro Adão falhou como guarda do jardim, Cristo, o último Adão, foi fiel até a cruz.`;
   // [3] Criação de Mulher
   if (/criacao de mulher/i.test(p))
-    return `A simetria da criação da mulher tem no centro o sono profundo de Adão — o momento em que ele nada pode fazer e Deus age sozinho. Os elementos externos espelham o "não é bom estar só" ↔ "por isso o homem deixa pai e mãe e se une à mulher". No centro, Deus opera na ausência total de esforço humano: constrói da costela o que nenhuma busca produziria. Na vida da igreja: as dádivas mais preciosas — comunidade, vocação, graça — chegam quando paramos de nos completar por conta própria. A complementaridade que Deus constrói não é produto de habilidade relacional; é dom recebido com as mãos abertas.`;
+    return `📖 O texto em resumo (Gn 2.18-25): pela primeira vez, Deus diz que algo "não é bom": que o homem esteja só. Ele traz os animais a Adão para que lhes dê nome — mas, entre todos, não se acha uma auxiliadora que lhe corresponda. Deus faz cair um sono profundo sobre Adão, toma uma de suas costelas e dela forma a mulher. Ao vê-la, Adão exclama: "Esta, afinal, é osso dos meus ossos e carne da minha carne". Por isso o homem deixa pai e mãe, une-se à sua mulher, e os dois se tornam uma só carne — nus, e sem vergonha.
+
+🔁 O espelho (quiasma) — o texto se dobra ao meio:
+A — "Não é bom que o homem esteja só; far-lhe-ei uma auxiliadora" (2.18) → a FALTA
+   ↳ B — Deus forma os animais e Adão lhes dá nome (2.19-20) → a busca SEM resposta
+      ↳ C — CENTRO: o sono profundo e a costela (2.21) → DEUS age sozinho
+   ↳ B' — Deus forma a mulher e Adão lhe dá nome (2.22-23) → a busca COM resposta
+A' — O homem e sua mulher: uma só carne, sem vergonha (2.24-25) → a PLENITUDE
+
+🔎 Como ler o espelho:
+• A ↔ A' (falta ↔ plenitude): o relato começa com o único "não é bom" da criação e termina com "uma só carne". A palavra "auxiliadora" (ʿēzer) não indica inferioridade — a Bíblia a usa até para o próprio Deus ("o meu socorro vem do SENHOR", Sl 121.2). "Que lhe corresponda" quer dizer alguém à sua altura, face a face.¹
+• B ↔ B' (dois desfiles, dois nomes): os animais passam diante de Adão, e ele dá nome a todos — mas nenhum lhe corresponde. Quando a mulher é trazida, ele dá nome de novo, agora em forma de poema: ela é "varoa" (ʾiššâ), porque foi tirada do "varão" (ʾîš). O primeiro desfile mostra a falta; o segundo, a resposta.
+• C (o centro): Adão não participa — dorme. Deus age sozinho, "constrói" a mulher e a apresenta. O dom mais precioso de Adão não foi conquistado; foi recebido. Ele perdeu uma costela, mas ganhou uma companheira.²
+
+🕰️ Por que isso importa: Jesus voltou a este texto para ensinar sobre o casamento (Mt 19.4-6), e Paulo o chamou de "grande mistério" que aponta para Cristo e a igreja (Ef 5.31-32). Deixar, unir-se e tornar-se uma só carne é linguagem de aliança: o casamento não é contrato de conveniência, mas compromisso diante de Deus.³ E há uma imagem bela: assim como Eva foi formada do lado de Adão adormecido, a igreja nasce do lado aberto de Cristo, o último Adão, no sono da morte (Jo 19.34).
+
+⛪ Na vida da igreja:
+• Homem e mulher têm a mesma dignidade e a mesma imagem de Deus; as diferenças existem para completar, não para competir nem para dominar.
+• A solidão é um "não é bom" que Deus leva a sério. A igreja é a família de Deus para os que estão sós — viúvos, solteiros, idosos, estrangeiros (Sl 68.6).
+• O casamento cristão é aliança: deixar, unir-se, ser uma só carne. Casais fiéis testemunham ao mundo o amor de Cristo pela sua noiva.`;
   // [4] Primeiro Pecado e Punição
   if (/primeiro pecado/i.test(p))
-    return `A simetria da queda tem no centro exato a pergunta de Deus: "Onde estás?" — não porque ele não saiba, mas porque o pecador precisa responder. Os elementos externos espelham a sedução da serpente ↔ a punição do homem; a mulher come ↔ o homem come. O pivô não é o pecado — é o chamado de Deus ao escondido. Na vida da igreja: o evangelho começa sempre com Deus rompendo o silêncio. O pecado cria escondimento; a graça cria convocação. Cada vez que Deus nos encontra onde estamos — não onde deveríamos estar —, ele repete o padrão do jardim.`;
+    return `📖 O texto em resumo (Gn 3): a serpente pergunta à mulher: "É assim que Deus disse?" e promete: "sereis como Deus, conhecedores do bem e do mal". A mulher come, dá ao marido, e ele come. Os olhos dos dois se abrem, eles percebem que estão nus e costuram folhas de figueira. Ao ouvirem Deus no jardim, escondem-se. Deus chama: "Onde estás?". O homem culpa a mulher; a mulher culpa a serpente. Deus amaldiçoa a serpente e anuncia que a descendência da mulher lhe ferirá a cabeça; anuncia dor à mulher e trabalho penoso ao homem; faz para eles vestes de pele e os expulsa do jardim, guardado por querubins.
+
+🔁 O espelho (quiasma) — sete camadas que se dobram ao meio:
+A — "Sereis como Deus, conhecedores do bem e do mal" (3.1-6) → a PROMESSA da serpente
+   ↳ B — Folhas de figueira (3.7-8) → a cobertura HUMANA
+      ↳ C — "Onde estás?" — o homem e a mulher se desculpam (3.9-13) → o pecado EXPOSTO
+         ↳ D — CENTRO: a maldição sobre a serpente e a promessa (3.14-15) → o EVANGELHO
+      ↳ C' — A sentença sobre a mulher e o homem (3.16-20) → o pecado JULGADO
+   ↳ B' — Deus faz vestes de pele (3.21) → a cobertura DIVINA
+A' — "O homem se tornou como um de nós, conhecendo o bem e o mal" (3.22-24) → a promessa "cumprida"... para a morte
+
+🔎 Como ler o espelho:
+• A ↔ A' (a mentira e a ironia): a serpente prometeu "sereis como Deus"; no fim, Deus diz, com ironia: "o homem se tornou como um de nós". Eles conseguiram o que queriam — e o resultado foi vergonha, morte e exílio. O conhecimento buscado longe de Deus não os fez deuses, mas escravos.¹
+• B ↔ B' (folhas ↔ peles): a primeira tentativa de cobrir a vergonha é humana — folhas que secam. A segunda é de Deus — vestes de pele, que custaram a vida de um animal. Só Deus cobre de verdade o pecado, e essa cobertura custa uma vida.²
+• C ↔ C' (desculpa ↔ sentença): diante do "Onde estás?", cada um empurra a culpa para outro — "a mulher que me deste", "a serpente me enganou". Em C', Deus responde a cada um: dor no parto, trabalho penoso, retorno ao pó. Mas, depois da sentença, Adão chama a mulher de Eva, "mãe de todos os viventes" — um ato de fé na promessa.
+• D (o centro): no coração do capítulo do pecado está a primeira promessa do evangelho: "Porei inimizade entre ti e a mulher, entre a tua descendência e o seu descendente; este te ferirá a cabeça, e tu lhe ferirás o calcanhar" (3.15). Antes de anunciar o castigo ao homem, Deus anuncia a derrota da serpente.³
+
+🕰️ Por que isso importa: Gênesis 3 explica por que o mundo é como é — vergonha, culpa, conflito no casamento, dor, trabalho frustrado e morte. Mas o centro do capítulo não é o pecado; é a promessa. Toda a Bíblia, daqui em diante, procura esse Descendente da mulher — e o encontra em Jesus, que teve o calcanhar ferido na cruz e esmagou a cabeça da serpente (Gl 4.4; Hb 2.14; Ap 12.9).
+
+⛪ Na vida da igreja:
+• A tentação começa questionando a Palavra: "É assim que Deus disse?". A igreja precisa conhecer bem o que Deus disse, para não ser enganada pelo que ele não disse.
+• Folhas de figueira não cobrem pecado. Religiosidade, desculpas e boas obras são coberturas humanas; só a cobertura que Deus providencia — a justiça de Cristo — nos veste diante dele (Is 61.10).
+• O "Onde estás?" continua sendo voz de graça: Deus procura o pecador escondido. A igreja que prega Gênesis 3 não esconde o pecado — mas também não esconde a promessa.`;
   // [5] Caim assassina Abel
   if (/caim assassina abel/i.test(p))
     return `A simetria de Caim e Abel coloca no centro a advertência divina antes do crime: "o pecado está à porta, desejando-te; porém tu deves dominá-lo." Os elementos externos espelham as vocações (lavrador e pastor) ↔ os descendentes de Caim (linhagem de violência). O pivô é o aviso ignorado — Deus falou antes. Na vida da igreja: antes de cada grande queda há uma palavra que avisa. A questão não é se Deus falou — é se havia disposição de ouvir antes que a ira se instalasse. Construir cultura de escuta às advertências é um dos maiores serviços que uma comunidade pode prestar.`;
@@ -4265,16 +4405,16 @@ function gerarOracao(d: DiaDevocional): string {
   // ── GÊNESIS ──────────────────────────────────────────────────────────────
   // [1]
   if (/seis dias de criacao/i.test(p))
-    return `Senhor, tu estruturaste a criação para convergir ao descanso contigo. Que o culto seja o centro ao redor do qual toda a minha semana faça sentido — não uma pausa, mas o eixo que sustenta tudo. Amém.`;
+    return `Senhor Criador, no princípio a terra estava sem forma e vazia — e tu falaste, e houve luz. Fala também sobre o que em mim está sem forma e vazio: põe ordem no meu caos e enche o meu vazio com a tua presença. Obrigado porque me fizeste à tua imagem; ajuda-me a enxergar essa imagem em cada pessoa e a cuidar da tua criação como mordomo, e não como dono. E ensina-me a terminar cada semana como tu terminaste a tua: descansando, abençoando e adorando. Em Cristo, o meu descanso. Amém.`;
   // [2]
   if (/jardim no eden/i.test(p))
-    return `Pai, tu me colocaste para cultivar e guardar o que confiaste à minha vida — comunidade, chamado, missão. Guarda-me dentro dos limites que estabeleceste, e que eu seja guardião fiel do que plantaste em mim. Amém.`;
+    return `Senhor, tu formaste o homem do pó e sopraste nele a vida — tudo o que sou recebi de ti. Obrigado pelo jardim que me confiaste: a minha casa, o meu trabalho, a minha igreja. Ensina-me a cultivar com diligência e a guardar com vigilância, como quem serve no teu santuário. Dá-me um coração que se alegra com a tua generosidade e que confia no teu limite. Onde o primeiro Adão falhou, Cristo foi fiel; nele eu descanso e obedeço. Amém.`;
   // [3]
   if (/criacao de mulher/i.test(p))
-    return `Senhor, tu ages no silêncio quando eu nada posso fazer. Ensinai-me a receber as tuas dádivas com as mãos abertas, sem tentar fabricar o que só tu podes dar. Amém.`;
+    return `Senhor, tu viste que não era bom que o homem estivesse só — e providenciaste, com tuas próprias mãos, o que ele não podia achar sozinho. Obrigado pelas pessoas que colocaste ao meu lado: cônjuge, família, irmãos na fé. Ensina-me a recebê-las como dom, e não como posse; a honrá-las como imagem tua, e não a usá-las para os meus desejos. Guarda os casamentos da tua igreja na aliança e acolhe os que estão sós. E obrigado porque, do lado aberto de Cristo, formaste a tua igreja, a noiva que ele ama. Amém.`;
   // [4]
   if (/primeiro pecado/i.test(p))
-    return `Pai, tu rompes o silêncio e me convocas do escondimento. Onde eu me afastei e me escondi, respondo aqui: estou aqui, Senhor. Faz em mim o que o pecado desfez. Amém.`;
+    return `Senhor, quantas vezes eu ouvi a voz que pergunta "É assim que Deus disse?" e quis ser como Deus, decidindo sozinho o que é bom e o que é mau. Perdoa as minhas desculpas e as folhas de figueira com que tento esconder a minha vergonha. Obrigado porque tu vieste me procurar — "Onde estás?" — e me vestiste com uma cobertura que eu não podia fazer. Obrigado pela promessa do Descendente da mulher: Jesus, que teve o calcanhar ferido na cruz e esmagou a cabeça da serpente. Nele eu me escondo; nele eu sou coberto. Amém.`;
   // [5]
   if (/caim assassina abel/i.test(p))
     return `Senhor, antes de cada grande queda tu falas. Abre meus ouvidos para ouvir as advertências antes que a ira se instale. Que a nossa comunidade seja lugar onde a tua voz é ouvida a tempo. Amém.`;
@@ -6209,19 +6349,19 @@ function gerarFamilia(d: DiaDevocional): string {
   // ── GÊNESIS — 81 perícopes ──────────────────────────────────────────
   // 1. Seis Dias de Criação e O Sábado
   if (/seis dias de criacao/i.test(p))
-    return `👫 *Casais:* A criação culmina no sábado — não no trabalho, mas no descanso de Deus. Como casal, conversem sobre o ritmo da casa: há espaço intencional para parar, descansar e adorar juntos? O sábado não é pausa do casal; é o ponto que dá sentido à semana toda.\n👧 *Filhos:* Deus criou com ordem e propósito — cada dia com seu lugar. Faça com seus filhos um "mapa da criação": seis dias com desenhos do que Deus fez. No sétimo, deixem o papel em branco e converse: "O que é descansar com Deus?"\n👴 *Avós:* Na sua geração, o domingo era diferente — separado, sagrado. Compartilhe com os netos como era esse ritmo e por que ele importava. O testemunho de um dia santificado ensina que Deus merece mais do que as sobras do tempo.`;
+    return `👫 *Casais:* Deus transformou o "sem forma e vazio" em ordem e plenitude — e no centro colocou o homem e a mulher, juntos, à sua imagem. Conversem: em que área do lar há "caos" hoje — rotina, finanças, comunicação? Escolham uma para pôr em ordem nesta semana. E reservem um tempo de descanso e adoração a dois, como o sétimo dia: não é pausa no casamento, é o que dá sentido a ele.\n👧 *Filhos:* Montem juntos o "quadro dos dias": duas colunas. À esquerda, os dias 1, 2 e 3 — as "casas" (luz; céu e mar; terra). À direita, os dias 4, 5 e 6 — os "moradores" (sol e estrelas; peixes e aves; animais e gente). Liguem cada casa ao seu morador com uma linha. Depois pergunte: "E o sétimo dia, onde fica?" — em cima de tudo, porque é o dia de estar com Deus.\n👴 *Avós:* Deus olhou o que fez e disse: "muito bom". Conte aos netos algo da criação que sempre encantou você — o mar, um céu estrelado, um jardim — e ensine-os a olhar para o mundo dizendo, como Deus: "isto é bom", com gratidão. Compartilhe também como você aprendeu a separar um dia para descansar em Deus.`;
 
   // 2. Jardim no Éden
   if (/jardim no eden/i.test(p))
-    return `👫 *Casais:* O jardim foi o primeiro lar — lugar de trabalho, comunhão e presença de Deus. Deus colocou o homem ali para cultivar e guardar, não apenas usufruir. Conversem: o lar de vocês é cultivado com cuidado ou consumido sem atenção? O que precisam guardar juntos com mais intenção?\n👧 *Filhos:* Deus plantou um jardim e pediu ao homem para cuidar. Proponha ao seu filho cuidar de uma semente ou plantinha por 30 dias. O jardim ensina que cuidar de algo vivo exige constância — e isso forma caráter.\n👴 *Avós:* O jardim tinha limites — boa parte disponível, uma árvore proibida. Compartilhe com os netos como você aprendeu a respeitar limites ao longo da vida. Fronteiras não são prisão — são a forma de Deus proteger o que plantou.`;
+    return `👫 *Casais:* O jardim foi o primeiro lar: lugar de trabalho, de presença de Deus e de um limite claro. Deus pôs o homem ali "para o cultivar e o guardar". Conversem: o que no nosso lar precisa ser cultivado — fazer crescer — e o que precisa ser guardado — proteger? Escolham uma coisa de cada para esta semana.\n👧 *Filhos:* Plantem juntos uma semente num copinho e combinem: cada dia alguém rega (cultivar) e alguém protege do sol forte ou do gato (guardar). Explique que Deus deu a Adão esse mesmo trabalho no jardim — e que cuidar bem do que é de Deus é uma forma de adorar.\n👴 *Avós:* Deus deu muitas árvores livres e só uma proibida. Conte aos netos um "não" de Deus que, olhando para trás, protegeu a sua vida. Ensine que os limites de Deus não são prisão: são a cerca de proteção ao redor do jardim.`;
 
   // 3. Criação de Mulher
   if (/criacao de mulher/i.test(p))
-    return `👫 *Casais:* Deus construiu a mulher enquanto Adão dormia — ele não a conquistou, a recebeu. O casamento começa como presente, não como conquista. Reservem um momento hoje para agradecer um ao outro em voz alta pela dádiva que cada um representa na vida do outro.\n👧 *Filhos:* Adão reconheceu Eva e proclamou: "Esta é!" — admiração imediata. Converse com seus filhos sobre como tratar as pessoas ao redor com admiração e respeito, especialmente os da própria família. Quem na casa você pode admirar hoje?\n👴 *Avós:* "Por isso o homem deixa pai e mãe e se une à mulher." O casamento cria um novo lar. Conte para os netos como foi o processo de deixar a casa dos seus pais e construir a própria família — os medos, as descobertas, o que Deus fez.`;
+    return `👫 *Casais:* Adão recebeu Eva enquanto dormia — o cônjuge é presente de Deus, não conquista. Reservem hoje um momento para dizer um ao outro, em voz alta: "Você é dom de Deus para mim por causa de...". E conversem sobre os três verbos de Gn 2.24: o que ainda precisa ser "deixado", como fortalecer a "união" e o que significa ser "uma só carne" na rotina de vocês.\n👧 *Filhos:* Leiam Gn 2.19-20 e brinquem de "Adão dando nomes": mostrem figuras de animais e deixem as crianças inventarem nomes. Depois contem que, mesmo depois de nomear todos, Adão continuava sozinho — e Deus fez alguém igual a ele. Ensine que cada pessoa da família é presente de Deus e deve ser tratada com carinho e respeito.\n👴 *Avós:* Contem aos netos como vocês se conheceram e como perceberam que o cônjuge era um presente de Deus. Se viveram a viuvez ou a solidão, compartilhem como Deus cuidou desse "não é bom" — por meio da família, da igreja e da presença dele.`;
 
   // 4. Primeiro Pecado e Punição
   if (/primeiro pecado/i.test(p))
-    return `👫 *Casais:* A primeira reação ao pecado foi culpar o outro: "A mulher que me deste..." Toda briga que começa com acusação segue o padrão do jardim. Pratiquem esta semana a regra do "eu" em vez do "você": "Eu me sinto..." em vez de "Você sempre...". Pequena mudança, grande impacto.\n👧 *Filhos:* Adão e Eva se esconderam de Deus com vergonha. Pergunte aos seus filhos: "Tem alguma coisa que você fez e tem vergonha de contar?" Crie um ambiente onde errar não resulta em punição imediata, mas em conversa honesta. Filhos que se escondem viram adultos que se isolam.\n👴 *Avós:* Deus foi atrás de Adão mesmo depois do pecado: "Onde estás?" Compartilhe com os netos um momento em que errou feio e sentiu Deus indo atrás de você. Esse testemunho de graça é mais formador do que qualquer exemplo de perfeição.`;
+    return `👫 *Casais:* A primeira reação ao pecado foi culpar o outro: "a mulher que me deste". Toda briga que começa com acusação repete o jardim. Pratiquem esta semana trocar o "você sempre..." por "eu errei em...". E lembrem: no casamento, a graça cobre; a acusação expõe.\n👧 *Filhos:* Adão e Eva se esconderam de Deus. Pergunte: "Tem alguma coisa que você fez e tem medo de contar?" Mostre que Deus foi procurar Adão chamando "Onde estás?" — não para destruí-lo, mas para trazê-lo de volta. Façam o mesmo em casa: confessar deve ser seguro, e o perdão vem junto com a correção.\n👴 *Avós:* Depois do pecado, Deus fez roupas para Adão e Eva. Conte aos netos um momento em que você errou feio e Deus "cobriu" você com graça — por meio do perdão, de alguém que o acolheu, de uma segunda chance. E ensine Gn 3.15 como a primeira promessa de Jesus na Bíblia.`;
 
   // 5. Caim assassina Abel
   if (/caim assassina abel/i.test(p))
@@ -7571,6 +7711,10 @@ function formatarDataCompartilhamento(): string {
 const DEVOCIONAL_URL = 'https://biblivisual.fabionmiranda.com/devocional';
 
 const TITULOS_CARD: Record<number, string> = {
+  1: 'A Criação: Forma, Plenitude e Descanso',
+  2: 'O Jardim: Sacerdotes no Santuário de Deus',
+  3: 'A Mulher: O Dom Recebido no Sono',
+  4: 'A Queda: Do "Onde Estás?" à Promessa',
   // GÊNESIS
   1:  'No Princípio: O Cosmos Nasce pela Palavra',
   2:  'O Jardim e o Chamado à Guarda',
@@ -9289,7 +9433,11 @@ function VersoesOnlineSection({ d, cor, corB }: { d: DiaDevocional; cor: string;
 // String vazia = usa o vídeo padrão (VIDEO_PADRAO).
 const VIDEO_PADRAO = 'https://www.youtube.com/watch?v=cjLoSgCJF6Y';
 const VIDEOS_PERICOPE: Record<number, string> = {
-  300: '', // Jz 9.1-57 — A queda de Abimeleque
+  1: 'https://youtu.be/HQQSS4e222E', // Gn 1.1–2.4a — Seis Dias de Criação e o Sábado
+  2: '', // Gn 2.4b-17 — Jardim no Éden
+  3: '', // Gn 2.18-25 — Criação de Mulher
+  4: '', // Gn 3.1-24 — Primeiro Pecado e Punição
+  300: 'https://www.youtube.com/watch?v=tI2fuoHXgHA', // Jz 9.1-57 — A queda de Abimeleque
   301: '', // Jz 10.1-2 — Tolá
   302: '', // Jz 10.3-5 — Jair
   303: '', // Jz 10.6-16 — Opressão por Amonitas

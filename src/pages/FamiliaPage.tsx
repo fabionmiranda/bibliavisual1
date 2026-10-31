@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { useNavigate } from 'react-router-dom';
 import { BookOpen, ChevronDown } from 'lucide-react';
 import Navbar from '../components/Navbar';
+import VideoIntro from '../components/VideoIntro';
 import FlagToggle from '../components/FlagToggle';
 import { PLANO_COMPLETO, type DiaDevocional } from '../data/calendarioDevocional';
 import { gerarParaFamilia } from '../data/paraFamilia';
@@ -1986,6 +1987,11 @@ export function FamiliaHub() {
           }}>
             {pt ? 'Família' : 'Family'}
           </h1>
+
+          {/* Vídeo de introdução — logo após o título */}
+          <div className="w-full max-w-3xl mx-auto" style={{ margin: '8px auto 32px' }}>
+            <VideoIntro pt={pt} />
+          </div>
           <p style={{ fontSize: 'clamp(14px,2vw,17px)', color: 'rgba(255,255,255,0.52)', maxWidth: 560, margin: '0 auto', lineHeight: 1.7 }}>
             {pt ? 'Escolha o recurso que deseja acessar. Novos módulos serão disponibilizados em breve.' : 'Choose the resource you want to access. New modules will be available soon.'}
           </p>

@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import VideoIntro from '../components/VideoIntro';
 
 const BG = '#05071a';
 
@@ -520,6 +521,11 @@ export default function DevocionalHubPage() {
           }}>
             {pt ? 'Escolha seu Devocional' : 'Choose Your Devotional'}
           </h1>
+
+          {/* Vídeo de introdução — logo após o título */}
+          <div className="w-full max-w-3xl mx-auto" style={{ margin: '8px auto 32px' }}>
+            <VideoIntro pt={pt} />
+          </div>
 
           <p style={{ fontSize: 'clamp(14px,1.9vw,17px)', color: 'rgba(200,200,255,0.52)', lineHeight: 1.85, maxWidth: 580, margin: '0 auto 32px' }}>
             {pt

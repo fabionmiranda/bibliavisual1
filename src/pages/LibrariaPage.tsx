@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { useRef, useState } from 'react';
 import { BookOpen, ShoppingCart, Eye, Lock, Star, BookMarked, Award, Users, ChevronRight, ChevronDown } from 'lucide-react';
 import Navbar from '../components/Navbar';
+import VideoIntro from '../components/VideoIntro';
 import FlagToggle from '../components/FlagToggle';
 
 /* ── SVGs temáticos para as capas ── */
@@ -525,6 +526,11 @@ export default function LibrariaPage() {
             <h1 style={{ fontFamily: '"Cinzel Decorative", serif', fontSize: 'clamp(28px,5vw,52px)', fontWeight: 900, color: '#fff', lineHeight: 1.1, marginBottom: 12, textShadow: '0 0 60px rgba(0,212,255,0.15)' }}>
               Bíblia Visual Expositiva
             </h1>
+
+            {/* Vídeo de introdução — logo após o título */}
+            <div className="w-full max-w-3xl mx-auto" style={{ margin: '8px auto 32px' }}>
+              <VideoIntro pt={pt} />
+            </div>
             <p style={{ fontFamily: '"Space Grotesk", sans-serif', fontSize: 'clamp(14px,2vw,17px)', color: 'rgba(255,255,255,0.5)', letterSpacing: '0.04em' }}>
               {pt ? 'Selecione um evangelho para explorar a coleção de volumes' : 'Select a gospel to explore the volume collection'}
             </p>

@@ -6,6 +6,7 @@ import {
   Languages, Target, Layout, Activity,
 } from 'lucide-react';
 import Navbar from '../components/Navbar';
+import VideoIntro from '../components/VideoIntro';
 import Footer from '../components/Footer';
 import FlagToggle from '../components/FlagToggle';
 
@@ -167,6 +168,11 @@ export default function AcessarPage() {
             <h1 className="font-display font-black text-3xl sm:text-4xl lg:text-5xl text-white leading-tight mb-4">
               {pt ? 'Acesse a Plataforma' : 'Access the Platform'}
             </h1>
+
+            {/* Vídeo de introdução — logo após o título */}
+            <div className="w-full max-w-3xl mx-auto" style={{ margin: '8px auto 32px' }}>
+              <VideoIntro pt={pt} />
+            </div>
             <p className="text-white/40 text-base sm:text-lg max-w-lg mx-auto leading-relaxed">
               {pt
                 ? 'Escolha como deseja entrar — conheça o método, explore os diagramas ou aprenda com os tutoriais.'

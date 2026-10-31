@@ -8,6 +8,7 @@ import {
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
+import VideoIntro from '../components/VideoIntro';
 import Footer from '../components/Footer';
 import FlagToggle from '../components/FlagToggle';
 
@@ -1536,6 +1537,11 @@ export default function EducacaoPage() {
               </>
             )}
           </h1>
+
+          {/* Vídeo de introdução — logo após o título */}
+          <div className="w-full max-w-3xl mx-auto" style={{ margin: '8px auto 32px' }}>
+            <VideoIntro pt={pt} />
+          </div>
 
           <p style={{ fontSize: 'clamp(0.95rem,1.8vw,1.1rem)', color: 'rgba(255,255,255,0.75)', lineHeight: 1.75, marginBottom: 36, maxWidth: 620, margin: '0 auto 36px' }}>
             {pt

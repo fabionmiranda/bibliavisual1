@@ -7,6 +7,7 @@ import {
 } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import { FOTOS_TEOLOGOS_BATISTAS } from '../data/fotosTeologosBatistas';
 
 const ACCENT   = '#f97316';
 const ACCENT_BG = '#f9731618';
@@ -77,11 +78,12 @@ const PARTES = [
 ];
 
 // ── 36 teólogos na ordem do livro ────────────────────────────────────────────
-const TEOLOGOS: { num: number; cap: string; nome: string; datas: string; papel: string; cor: string }[] = [
+// slug: quando preenchido, o card abre a página do teólogo em /biblioteca/livros/os-batistas-e-a-biblia/<slug>
+const TEOLOGOS: { num: number; cap: string; nome: string; datas: string; papel: string; cor: string; slug?: string }[] = [
   // Cap. 1 — Batistas Gerais, séc. XVII
-  { num:  1, cap: 'Cap. 1', nome: 'John Smyth',         datas: 'c.1570–1612',    papel: 'Fundou a 1ª igreja batista inglesa em Amsterdã (1609). Via a Escritura como plenamente confiável nos originais.',          cor: '#f97316' },
-  { num:  2, cap: 'Cap. 1', nome: 'Thomas Helwys',      datas: 'c.1575–c.1616',  papel: 'Fundou a 1ª igreja batista em solo inglês (1612). Defensor da liberdade religiosa; morreu na prisão.',                    cor: '#f97316' },
-  { num:  3, cap: 'Cap. 1', nome: 'John Murton',        datas: '?–c.1626',       papel: 'Sucessor de Helwys; defendeu a liberdade de consciência diante do Estado.',                                                cor: '#f97316' },
+  { num:  1, cap: 'Cap. 1', slug: 'john-smyth', nome: 'John Smyth',         datas: 'c.1570–1612',    papel: 'Fundou a 1ª igreja batista inglesa em Amsterdã (1609). Via a Escritura como plenamente confiável nos originais.',          cor: '#f97316' },
+  { num:  2, cap: 'Cap. 1', slug: 'thomas-helwys', nome: 'Thomas Helwys',      datas: 'c.1575–c.1616',  papel: 'Fundou a 1ª igreja batista em solo inglês (1612). Defensor da liberdade religiosa; morreu na prisão.',                    cor: '#f97316' },
+  { num:  3, cap: 'Cap. 1', slug: 'john-murton', nome: 'John Murton',        datas: '?–c.1626',       papel: 'Sucessor de Helwys; defendeu a liberdade de consciência diante do Estado.',                                                cor: '#f97316' },
   { num:  4, cap: 'Cap. 1', nome: 'Thomas Grantham',    datas: '1634–1692',      papel: 'Principal teólogo dos batistas gerais. Combateu os quakers em favor da Escritura escrita.',                                cor: '#f97316' },
   // Cap. 4 — Grande nuvem de testemunhas
   { num:  5, cap: 'Cap. 4', nome: 'Roger Williams',     datas: 'c.1603–1683',    papel: 'Fundou Rhode Island e a 1ª igreja batista da América (Providence, 1638–39). Defendeu a separação Igreja–Estado.',          cor: '#fb923c' },
@@ -453,23 +455,39 @@ export default function LivroBatistasBibliaPage() {
           </motion.div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {TEOLOGOS.map((t, i) => (
+            {TEOLOGOS.map((t, i) => {
+              const foto = FOTOS_TEOLOGOS_BATISTAS[t.nome];
+              const card = (
               <motion.div
-                key={i}
                 initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: Math.min(i * 0.03, 0.6) }}
-                className="flex items-start gap-4 p-5 rounded-2xl border border-white/8 bg-white/[0.03] hover:bg-white/[0.05] transition-all duration-200"
+                className={`group relative overflow-hidden h-full min-h-[190px] flex items-start gap-4 p-5 rounded-2xl border bg-white/[0.03] hover:bg-white/[0.05] transition-all duration-200 ${t.slug ? 'border-orange-400/40 hover:border-orange-400/70 cursor-pointer' : 'border-white/8'}`}
               >
+                {/* Retrato de fundo — escurecido à esquerda para o texto ficar legível */}
+                {foto && (
+                  <>
+                    <img
+                      src={foto}
+                      alt=""
+                      loading="lazy"
+                      onError={e => { e.currentTarget.style.display = 'none'; }}
+                      className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-65 group-hover:scale-105 transition-all duration-500"
+                      style={{ objectPosition: 'center 20%', filter: 'sepia(15%) contrast(1.05)' }}
+                    />
+                    <div className="absolute inset-0 pointer-events-none"
+                      style={{ background: 'linear-gradient(90deg, rgba(5,7,26,0.96) 0%, rgba(5,7,26,0.86) 50%, rgba(5,7,26,0.45) 100%)' }} />
+                  </>
+                )}
                 {/* Número */}
                 <div
-                  className="shrink-0 w-8 h-8 rounded-xl flex items-center justify-center text-[11px] font-black"
+                  className="relative z-10 shrink-0 w-8 h-8 rounded-xl flex items-center justify-center text-[11px] font-black"
                   style={{ background: t.cor + '18', border: `1px solid ${t.cor}40`, color: t.cor }}
                 >
                   {String(t.num).padStart(2, '0')}
                 </div>
-                <div className="min-w-0">
+                <div className="relative z-10 min-w-0">
                   <div className="flex items-center gap-2 mb-0.5">
                     <p className="text-white font-black text-lg leading-snug">{t.nome}</p>
                   </div>
@@ -483,9 +501,18 @@ export default function LivroBatistasBibliaPage() {
                     </span>
                   </div>
                   <p className="text-white/80 text-base leading-relaxed">{t.papel}</p>
+                  {t.slug && (
+                    <span className="inline-flex items-center gap-1 mt-3 text-xs font-black uppercase tracking-widest" style={{ color: t.cor }}>
+                      Ver perfil e relação com a Bíblia <ChevronRight className="w-3.5 h-3.5" />
+                    </span>
+                  )}
                 </div>
               </motion.div>
-            ))}
+              );
+              return t.slug
+                ? <Link key={i} to={`/biblioteca/livros/os-batistas-e-a-biblia/${t.slug}`} className="block">{card}</Link>
+                : <div key={i}>{card}</div>;
+            })}
           </div>
 
           {/* Nota sobre os 36 */}

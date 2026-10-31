@@ -10,6 +10,7 @@ import { Link, useLocation } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import ClubeBanner from '../components/ClubeBanner';
+import VideoIntro from '../components/VideoIntro';
 import { cn } from '../lib/utils';
 
 // ─── Marca d'água: diagramas futuristas decorativos ───────────────────────
@@ -333,20 +334,21 @@ export default function Home() {
       <Navbar lang={lang} onToggleLang={() => setLang(l => l === 'pt' ? 'en' : 'pt')} />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+      <section className="relative pt-28 pb-20 lg:pt-36 lg:pb-28 overflow-hidden">
         {/* Animated Background Elements */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-blue/20 rounded-full blur-[120px] animate-pulse" />
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-brand-purple/20 rounded-full blur-[120px] animate-pulse delay-700" />
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
+            className="text-center"
           >
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 mb-10 overflow-hidden">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6 mb-8 md:mb-10 overflow-hidden">
               <motion.div
                 initial={{ scale: 0, rotate: -20 }}
                 animate={{ scale: 1, rotate: 0 }}
@@ -354,8 +356,8 @@ export default function Home() {
                 className="relative shrink-0"
               >
                 <div className="absolute -inset-2 bg-brand-blue/20 blur-xl rounded-full" />
-                <div className="relative p-3 md:p-5 bg-bg-deep/50 border border-brand-blue/20 rounded-[1.5rem] md:rounded-[2rem] shadow-2xl backdrop-blur-sm">
-                  <BookOpen className="w-8 h-8 md:w-16 md:h-16 text-brand-blue" />
+                <div className="relative p-3 md:p-4 bg-bg-deep/50 border border-brand-blue/20 rounded-[1.5rem] md:rounded-[2rem] shadow-2xl backdrop-blur-sm">
+                  <BookOpen className="w-8 h-8 md:w-12 md:h-12 text-brand-blue" />
                   <motion.div
                     animate={{ y: [0, -4, 0] }}
                     transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
@@ -366,7 +368,7 @@ export default function Home() {
                 </div>
               </motion.div>
 
-              <h1 className="font-display text-4xl md:text-6xl lg:text-8xl font-black tracking-tighter leading-[1] text-center md:text-left">
+              <h1 className="font-display text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-black tracking-tighter leading-[1] text-center">
                 <motion.span 
                   className="bg-gradient-to-r from-brand-blue via-brand-purple via-brand-rose to-brand-blue bg-[length:200%_auto] bg-clip-text text-transparent uppercase inline-block pb-4"
                   initial={{ y: 100, opacity: 0 }}
@@ -388,13 +390,23 @@ export default function Home() {
                   }}
                 >
                   {pt
-                    ? <>BÍBLIA VISUAL <br className="hidden md:block" /> EXPOSITIVA</>
-                    : <>VISUAL <br className="hidden md:block" /> EXPOSITORY BIBLE</>
+                    ? <>BÍBLIA VISUAL EXPOSITIVA</>
+                    : <>VISUAL EXPOSITORY BIBLE</>
                   }
                 </motion.span>
               </h1>
             </div>
-            <p className="text-xl md:text-3xl text-white max-w-5xl mx-auto mb-14 font-display font-medium leading-tight">
+
+            {/* Vídeo de introdução — entre o título e a apresentação */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className="w-full max-w-3xl mx-auto mb-10 md:mb-14"
+            >
+              <VideoIntro pt={pt} videoId="LYZEMhB4Q1s" inicio={0} />
+            </motion.div>
+            <p className="text-lg sm:text-xl md:text-2xl text-white/90 max-w-3xl mx-auto mb-10 font-display font-medium leading-snug">
               {pt
                 ? 'O futuro da leitura, interpretação e aplicação da Palavra de Deus sob a ação poderosa do Espírito Santo de forma visual, expositiva, simples, e profunda!'
                 : 'The future of reading, interpreting, and applying the Word of God under the powerful action of the Holy Spirit — visually, expositionally, simply, and deeply!'}
@@ -410,6 +422,7 @@ export default function Home() {
               </Link>
             </div>
           </motion.div>
+
         </div>
       </section>
 

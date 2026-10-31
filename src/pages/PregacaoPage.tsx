@@ -2,6 +2,7 @@ import { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { BookOpen, ChevronRight, ChevronDown } from 'lucide-react';
 import Navbar from '../components/Navbar';
+import VideoIntro from '../components/VideoIntro';
 import FlagToggle from '../components/FlagToggle';
 import { PLANO_COMPLETO, type DiaDevocional } from '../data/calendarioDevocional';
 import { gerarParaPregar } from '../data/paraPregar';
@@ -3837,6 +3838,11 @@ export default function PregacaoPage() {
               )}
             </AnimatePresence>
           </div>
+        </div>
+
+        {/* Vídeo de introdução — logo após o título */}
+        <div className="w-full max-w-3xl mx-auto" style={{ margin: '8px auto 32px' }}>
+          <VideoIntro pt={pt} />
         </div>
 
         {/* Divisor */}
