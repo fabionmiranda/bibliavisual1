@@ -4,19 +4,54 @@ import { useState } from 'react';
 import { ArrowLeft, ArrowRight, BookOpen, ChevronRight, ChevronDown, Feather, Quote, Users, Clock, MessageCircle } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import { TEOLOGOS_BATISTAS, type BlocoGrupo, type TeologoBatista } from '../data/teologosBatistas';
+import { TEOLOGOS_BATISTAS, ROTA_TEOLOGOS_BATISTAS, type BlocoGrupo, type TeologoBatista } from '../data/teologosBatistas';
+import { TEOLOGOS_PRESBITERIANOS, ROTA_TEOLOGOS_PRESBITERIANOS } from '../data/teologosPresbiterianos';
 import { FOTOS_TEOLOGOS_BATISTAS } from '../data/fotosTeologosBatistas';
 
-// Página de cada teólogo de "Os Batistas e a Bíblia" — o conteúdo vem de src/data/teologosBatistas.ts
+// Página de perfil de um teólogo. Mesmo modelo para duas coleções:
+// - batistas de "Os Batistas e a Bíblia" (src/data/teologosBatistas.ts)
+// - presbiterianos/reformados de /biblioteca/autores/batistas-presbiterianos (src/data/teologosPresbiterianos.ts)
 
-const ACCENT = '#f97316';
-const ACCENT_BG = '#f9731618';
-const ACCENT_BORDER = '#f9731635';
+type Colecao = {
+  lista: TeologoBatista[];
+  rota: string;                          // base das URLs dos perfis
+  migalhas: { to: string; label: string }[];
+  voltar: string;                        // texto do botão "Voltar para ..."
+  cor: string;                           // cor principal
+  corClara: string;                      // subtítulo, anos da linha do tempo
+  corCitacao: string;
+  fundoRetrato: string;
+};
 
-const LIVRO_URL = '/biblioteca/livros/os-batistas-e-a-biblia';
+const BATISTAS: Colecao = {
+  lista: TEOLOGOS_BATISTAS,
+  rota: ROTA_TEOLOGOS_BATISTAS,
+  migalhas: [
+    { to: '/biblioteca', label: 'Biblioteca' },
+    { to: '/biblioteca/livros', label: 'Livros' },
+    { to: ROTA_TEOLOGOS_BATISTAS, label: 'Os Batistas e a Bíblia' },
+  ],
+  voltar: 'Os Batistas e a Bíblia',
+  cor: '#f97316', corClara: '#fdba74', corCitacao: '#fed7aa',
+  fundoRetrato: 'linear-gradient(160deg,#1a0800,#2d0e00 40%,#050200)',
+};
+
+const PRESBITERIANOS: Colecao = {
+  lista: TEOLOGOS_PRESBITERIANOS,
+  rota: ROTA_TEOLOGOS_PRESBITERIANOS,
+  migalhas: [
+    { to: '/biblioteca', label: 'Biblioteca' },
+    { to: '/biblioteca/autores', label: 'Autores-Teólogos' },
+    { to: ROTA_TEOLOGOS_PRESBITERIANOS, label: 'Batistas & Presbiterianos' },
+  ],
+  voltar: 'Batistas & Presbiterianos',
+  cor: '#3b82f6', corClara: '#93c5fd', corCitacao: '#bfdbfe',
+  fundoRetrato: 'linear-gradient(160deg,#00081a,#0a1a3d 40%,#000205)',
+};
+
 
 // Ênfase no texto: **trecho** = negrito branco; ==trecho== = destaque na cor da seção
-function Enfase({ texto, cor = ACCENT }: { texto: string; cor?: string }) {
+function Enfase({ texto, cor }: { texto: string; cor: string }) {
   return (
     <>
       {texto.split(/(\*\*[^*]+\*\*|==[^=]+==)/).map((parte, i) => {
@@ -30,14 +65,15 @@ function Enfase({ texto, cor = ACCENT }: { texto: string; cor?: string }) {
   );
 }
 
-function Retrato({ t }: { t: TeologoBatista }) {
+function Retrato({ t, fundo, cor }: { t: TeologoBatista; fundo: string; cor: string }) {
+  const ACCENT = cor, ACCENT_BORDER = `${cor}35`;
   // foto própria do teólogo ou, se não houver, o retrato usado no card do livro
   const foto = t.foto ?? FOTOS_TEOLOGOS_BATISTAS[t.nome];
   const [ok, setOk] = useState(Boolean(foto));
   return (
     <div
       className="relative w-full overflow-hidden rounded-2xl"
-      style={{ aspectRatio: '3/4', background: 'linear-gradient(160deg,#1a0800,#2d0e00 40%,#050200)', border: `1px solid ${ACCENT_BORDER}`, boxShadow: '0 32px 80px rgba(0,0,0,0.8)' }}
+      style={{ aspectRatio: '3/4', background: fundo, border: `1px solid ${ACCENT_BORDER}`, boxShadow: '0 32px 80px rgba(0,0,0,0.8)' }}
     >
       {ok && foto ? (
         <img src={foto} alt={`${t.nome} (imagem ilustrativa)`} onError={() => setOk(false)}
@@ -168,16 +204,16 @@ function DiscussaoGrupo({ grupo }: { grupo: BlocoGrupo[] }) {
   );
 }
 
-function NaoEncontrado() {
+function NaoEncontrado({ c }: { c: Colecao }) {
   return (
     <div className="min-h-screen relative bg-bg-deep">
       <Navbar />
       <div className="max-w-3xl mx-auto px-4 pt-40 pb-24 text-center">
         <h1 className="font-display font-black text-3xl text-white mb-4">Perfil em preparação</h1>
         <p className="text-white/70 text-lg mb-8">A página deste teólogo ainda não foi publicada.</p>
-        <Link to={LIVRO_URL} className="inline-flex items-center gap-2 px-5 py-3 rounded-full text-xs font-black uppercase tracking-widest"
-          style={{ color: ACCENT, border: `1px solid ${ACCENT_BORDER}`, background: ACCENT_BG }}>
-          <ArrowLeft className="w-4 h-4" /> Voltar para Os Batistas e a Bíblia
+        <Link to={c.rota} className="inline-flex items-center gap-2 px-5 py-3 rounded-full text-xs font-black uppercase tracking-widest"
+          style={{ color: c.cor, border: `1px solid ${c.cor}35`, background: `${c.cor}18` }}>
+          <ArrowLeft className="w-4 h-4" /> Voltar para {c.voltar}
         </Link>
       </div>
       <Footer />
@@ -186,15 +222,24 @@ function NaoEncontrado() {
 }
 
 export default function TeologoBatistaPage() {
+  return <PerfilTeologo c={BATISTAS} />;
+}
+
+export function TeologoPresbiterianoPage() {
+  return <PerfilTeologo c={PRESBITERIANOS} />;
+}
+
+function PerfilTeologo({ c }: { c: Colecao }) {
   const { slug } = useParams();
-  const idx = TEOLOGOS_BATISTAS.findIndex(x => x.slug === slug);
-  if (idx === -1) return <NaoEncontrado />;
-  const t = TEOLOGOS_BATISTAS[idx];
-  const anterior = TEOLOGOS_BATISTAS[idx - 1];
-  const proximo = TEOLOGOS_BATISTAS[idx + 1];
+  const idx = c.lista.findIndex(x => x.slug === slug);
+  if (idx === -1) return <NaoEncontrado c={c} />;
+  const t = c.lista[idx];
+  const anterior = c.lista[idx - 1];
+  const proximo = c.lista[idx + 1];
+  const ACCENT = c.cor, ACCENT_BG = `${c.cor}18`, ACCENT_BORDER = `${c.cor}35`;
 
   return (
-    <div className="min-h-screen relative bg-bg-deep">
+    <div className="min-h-screen relative bg-bg-deep" style={{ ['--acc' as string]: c.corClara }}>
       <Navbar />
 
       {/* ════ HERO ════ */}
@@ -204,18 +249,18 @@ export default function TeologoBatistaPage() {
           {/* Breadcrumb */}
           <motion.nav initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }}
             className="flex flex-wrap items-center gap-2 mb-10 text-[11px] font-black uppercase tracking-widest">
-            <Link to="/biblioteca" className="text-white/50 hover:text-orange-400 transition-colors">Biblioteca</Link>
-            <ChevronRight className="w-3 h-3 text-white/25" />
-            <Link to="/biblioteca/livros" className="text-white/50 hover:text-orange-400 transition-colors">Livros</Link>
-            <ChevronRight className="w-3 h-3 text-white/25" />
-            <Link to={LIVRO_URL} className="text-white/50 hover:text-orange-400 transition-colors">Os Batistas e a Bíblia</Link>
-            <ChevronRight className="w-3 h-3 text-white/25" />
+            {c.migalhas.map(m => (
+              <span key={m.to} className="contents">
+                <Link to={m.to} className="text-white/50 hover:text-[var(--acc)] transition-colors">{m.label}</Link>
+                <ChevronRight className="w-3 h-3 text-white/25" />
+              </span>
+            ))}
             <span className="text-white/80">{t.nome}</span>
           </motion.nav>
 
           <div className="grid grid-cols-1 md:grid-cols-[260px_1fr] gap-10 lg:gap-14 items-start">
             <motion.div key={t.slug} initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} className="w-full max-w-[260px] mx-auto md:mx-0">
-              <Retrato t={t} />
+              <Retrato t={t} fundo={c.fundoRetrato} cor={c.cor} />
               {t.fotoNota && <p className="mt-2 text-xs text-white/55 text-center leading-snug">{t.fotoNota}</p>}
             </motion.div>
 
@@ -231,14 +276,14 @@ export default function TeologoBatistaPage() {
               </div>
 
               <h1 className="font-display font-black text-4xl sm:text-5xl lg:text-6xl text-white leading-[1.05] mb-3">{t.nome}</h1>
-              <p className="text-lg sm:text-xl font-bold mb-6" style={{ color: '#fdba74' }}>{t.subtitulo}</p>
+              <p className="text-lg sm:text-xl font-bold mb-6" style={{ color: c.corClara }}>{t.subtitulo}</p>
 
-              <p className="text-white/90 text-lg sm:text-xl leading-[1.75] mb-6"><Enfase texto={t.intro} /></p>
+              <p className="text-white/90 text-lg sm:text-xl leading-[1.75] mb-6"><Enfase texto={t.intro} cor={ACCENT} /></p>
 
               <div className="rounded-2xl border-l-4 px-5 py-4" style={{ borderColor: ACCENT, background: ACCENT_BG }}>
                 <div className="flex items-start gap-3">
                   <Quote className="w-5 h-5 shrink-0 mt-0.5" style={{ color: ACCENT }} />
-                  <p className="text-lg sm:text-xl font-bold italic leading-relaxed" style={{ color: '#fed7aa' }}>{t.citacao}</p>
+                  <p className="text-lg sm:text-xl font-bold italic leading-relaxed" style={{ color: c.corCitacao }}>{t.citacao}</p>
                 </div>
               </div>
             </motion.div>
@@ -284,14 +329,14 @@ export default function TeologoBatistaPage() {
       <section className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
         <div className="max-w-4xl mx-auto">
           <TituloSecao cor="#fbbf24" titulo="Linha do tempo" sub={t.linhaSub} />
-          <ol className="relative border-l-2 ml-3" style={{ borderColor: 'rgba(249,115,22,0.30)' }}>
+          <ol className="relative border-l-2 ml-3" style={{ borderColor: `${c.cor}4d` }}>
             {t.linha.map((m, i) => (
               <motion.li key={i} initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}
                 transition={{ delay: i * 0.04 }} className="relative pl-7 pb-7 last:pb-0">
                 <span className="absolute -left-[9px] top-1 w-4 h-4 rounded-full" style={{ background: ACCENT, boxShadow: `0 0 10px ${ACCENT}` }} />
-                <div className="text-sm font-black uppercase tracking-widest mb-1" style={{ color: '#fdba74' }}>{m.ano}</div>
+                <div className="text-sm font-black uppercase tracking-widest mb-1" style={{ color: c.corClara }}>{m.ano}</div>
                 <div className="text-white font-black text-xl leading-snug mb-1.5">{m.titulo}</div>
-                <p className="text-white/90 text-[17px] sm:text-lg leading-[1.75]"><Enfase texto={m.texto} /></p>
+                <p className="text-white/90 text-[17px] sm:text-lg leading-[1.75]"><Enfase texto={m.texto} cor={ACCENT} /></p>
               </motion.li>
             ))}
           </ol>
@@ -351,24 +396,24 @@ export default function TeologoBatistaPage() {
           {/* Navegação entre teólogos */}
           <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-3">
             {anterior ? (
-              <Link to={`${LIVRO_URL}/${anterior.slug}`} className="group rounded-2xl px-5 py-4 border border-white/10 hover:border-orange-400/50 bg-white/[0.02] transition-colors">
+              <Link to={`${c.rota}/${anterior.slug}`} className="group rounded-2xl px-5 py-4 border border-white/10 hover:border-[var(--acc)] bg-white/[0.02] transition-colors">
                 <span className="flex items-center gap-1.5 text-xs font-black uppercase tracking-widest text-white/50"><ArrowLeft className="w-3.5 h-3.5" /> Anterior</span>
-                <span className="block mt-1 text-white font-black text-lg group-hover:text-orange-300">{anterior.nome}</span>
+                <span className="block mt-1 text-white font-black text-lg group-hover:text-[var(--acc)]">{anterior.nome}</span>
               </Link>
             ) : <span className="hidden sm:block" />}
             {proximo && (
-              <Link to={`${LIVRO_URL}/${proximo.slug}`} className="group rounded-2xl px-5 py-4 border border-white/10 hover:border-orange-400/50 bg-white/[0.02] transition-colors sm:text-right">
+              <Link to={`${c.rota}/${proximo.slug}`} className="group rounded-2xl px-5 py-4 border border-white/10 hover:border-[var(--acc)] bg-white/[0.02] transition-colors sm:text-right">
                 <span className="flex items-center sm:justify-end gap-1.5 text-xs font-black uppercase tracking-widest text-white/50">Próximo <ArrowRight className="w-3.5 h-3.5" /></span>
-                <span className="block mt-1 text-white font-black text-lg group-hover:text-orange-300">{proximo.nome}</span>
+                <span className="block mt-1 text-white font-black text-lg group-hover:text-[var(--acc)]">{proximo.nome}</span>
               </Link>
             )}
           </div>
 
           <div className="mt-8">
-            <Link to={LIVRO_URL}
+            <Link to={c.rota}
               className="inline-flex items-center gap-2 px-5 py-3 rounded-full text-xs font-black uppercase tracking-widest transition-colors"
               style={{ color: ACCENT, border: `1px solid ${ACCENT_BORDER}`, background: ACCENT_BG }}>
-              <ArrowLeft className="w-4 h-4" /> Voltar para Os Batistas e a Bíblia
+              <ArrowLeft className="w-4 h-4" /> Voltar para {c.voltar}
             </Link>
           </div>
         </div>

@@ -1747,6 +1747,193 @@ const DIAS_CONTENT: Record<number, DiaDevoContent> = {
     oracao: 'Senhor, obrigado por Teresa — que nos ensina que a maior aventura não é conquistar territórios, mas explorar as mansões interiores da alma.\n\nObrigado por João da Cruz — que nos mostra que a noite não é ausência tua, mas o caminho para uma presença mais profunda do que a luz diurna permite.\n\nObrigado por Inácio — que nos lembra que a disponibilidade total não é ingenuidade, mas a maior sabedoria de quem confia que tu sabes melhor do que nós onde precisamos ir.\n\nDá-nos o silêncio de Teresa, a coragem de João e a disponibilidade de Inácio — em qualquer tradição que sejamos.\n\nAmém.',
     leituraComplementar: 'González, Justo L. A Era dos Reformadores. São Paulo: Vida Nova, 1995. Capítulo 12: "A Reforma Católica" (pp. 271–322).',
   },
+  29: {
+    dia: 29,
+    data: '29 de outubro de 2026',
+    titulo: 'O Paradoxo Espanhol: A Inquisição como Reforma mais Eficaz',
+    subtitulo: 'Capítulo 13 — Parte 1',
+    versiculo: 'A palavra de Deus não está acorrentada.',
+    versiculoRef: '2 Timóteo 2.9',
+    secoes: [
+      {
+        tipo: 'contexto',
+        titulo: 'Um Movimento que Quase Existiu',
+        paragrafos: [
+          'González reservou para o capítulo 13 um dos episódios mais fascinantes — e mais perturbadores — de toda a Era dos Reformadores: o <strong style="color:#fbbf24;">protestantismo espanhol</strong>. Um movimento que <span style="color:#34d399;font-weight:700;">tinha todos os ingredientes para florescer</span> e que foi <span style="color:#fb7185;font-weight:700;">sistematicamente destruído antes de criar raízes</span>.',
+          'A Espanha era, em muitos aspectos, o país <span style="background:rgba(52,211,153,0.12);border-left:3px solid #34d399;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(200,255,235,0.95);">mais bem preparado da Europa para a Reforma.</span> Tinha o <span style="color:#a78bfa;font-weight:700;">humanismo de Cisneros</span>. Tinha uma <span style="color:#60a5fa;font-weight:600;">tradição de estudo bíblico rigoroso</span>. Tinha intelectuais que <span style="color:#fbbf24;font-weight:600;">leram Lutero com interesse genuíno</span>. Tinha <span style="color:#f97316;font-weight:600;">conversos</span> — judeus e mouros que haviam adotado o cristianismo — com uma relação diferente com a autoridade eclesiástica estabelecida.',
+          '<span style="background:rgba(251,113,133,0.15);border:1px solid rgba(251,113,133,0.40);border-radius:5px;padding:2px 10px;color:#fecdd3;font-weight:900;">E tinha a Inquisição.</span>',
+        ],
+      },
+      {
+        tipo: 'analise',
+        titulo: 'Por que a Espanha Deveria Ter Tido uma Reforma',
+        paragrafos: [
+          'González constrói o paradoxo com cuidado. A Espanha de <span style="color:#f97316;font-weight:700;">Carlos V</span> produziu alguns dos humanistas mais sofisticados da Europa — <strong style="color:#fff;">Juan de Valdés</strong>, <strong style="color:#fff;">Alfonso de Valdés</strong>, <strong style="color:#fff;">Juan Luis Vives</strong>. Leram <span style="color:#a78bfa;font-weight:700;">Erasmo</span> e dialogaram com ideias que, em outros contextos, levariam à ruptura com Roma. Alguns chegaram a posições <span style="color:#34d399;font-weight:700;">próximas à justificação pela fé</span>.',
+          'Em <span style="color:#fbbf24;font-weight:700;">Sevilha</span> e <span style="color:#fbbf24;font-weight:700;">Valladolid</span> — as duas cidades onde o protestantismo espanhol mais se desenvolveu — havia <span style="color:#60a5fa;font-weight:600;">círculos de estudo bíblico</span>, comunidades de leitura dos escritos de Lutero e de outros reformadores, nobres e religiosos que <span style="color:#c084fc;font-style:italic;">questionavam em silêncio</span> as doutrinas que os reformadores alemães <span style="color:#c084fc;font-style:italic;">questionavam em público</span>.',
+          'A diferença estava na proteção. <span style="color:#34d399;font-weight:600;">Na Alemanha, Lutero tinha príncipes que o protegiam.</span> <span style="color:#fb7185;font-weight:600;">Na Espanha, não havia príncipe disposto a proteger ninguém.</span> A <span style="background:rgba(251,113,133,0.12);border:1px solid rgba(251,113,133,0.30);border-radius:5px;padding:1px 7px;color:#fecdd3;font-weight:700;">Inquisição espanhola</span> — subordinada à Coroa, não a Roma — era <strong style="color:#fff;">eficientíssima, bem financiada e implacável</strong>.',
+        ],
+        citacao: 'Na Alemanha, Lutero tinha príncipes que o protegiam. Na Espanha, não havia príncipe disposto a proteger ninguém.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'Os Autos de Fé de 1559: A Reforma Liquidada',
+        paragrafos: [
+          'Em <span style="background:rgba(251,113,133,0.18);border:1px solid rgba(251,113,133,0.40);border-radius:5px;padding:1px 8px;color:#fecdd3;font-weight:900;">1559</span>, dois grandes <span style="color:#fb7185;font-weight:700;font-style:italic;">autos de fé</span> — cerimônias públicas de punição de hereges — foram realizados em <span style="color:#fbbf24;font-weight:700;">Valladolid</span> e <span style="color:#fbbf24;font-weight:700;">Sevilha</span>. Os círculos protestantes dessas cidades foram <span style="color:#fb7185;font-weight:600;">sistematicamente desmantelados</span>. Muitos morreram na fogueira. Outros fugiram para o exílio antes de serem presos.',
+          'González não minimiza a brutalidade. Mas aponta a <span style="color:#f97316;font-weight:700;">eficácia brutal do método</span>: enquanto na <span style="color:#60a5fa;font-weight:600;">França</span> e nos <span style="color:#60a5fa;font-weight:600;">Países Baixos</span> o protestantismo sobreviveu a <em>décadas</em> de perseguição, na Espanha foi eliminado em <em>poucos anos</em>. <span style="background:rgba(251,191,36,0.12);border-left:3px solid #fbbf24;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(255,245,210,0.95);">A Inquisição extirpou o protestantismo antes que ele alcançasse a massa crítica necessária para sobreviver à perseguição.</span>',
+          'É isso que González chama de <span style="background:rgba(251,191,36,0.15);border:1px solid rgba(251,191,36,0.35);border-radius:5px;padding:1px 8px;color:#fde68a;font-weight:800;font-style:italic;">"paradoxo espanhol"</span>: <strong style="color:#fff;">o país mais bem preparado para a Reforma foi também o mais eficaz em impedi-la.</strong>',
+        ],
+        citacao: 'O país mais bem preparado para a Reforma foi também o mais eficaz em impedi-la.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'reflexao',
+        titulo: 'O Custo do Silêncio',
+        paragrafos: [
+          'A supressão teve consequências que González traça com precisão. Enquanto a Europa do norte, estimulada pelo debate da Reforma, entrava no <span style="color:#34d399;font-weight:600;">florescimento científico e filosófico</span> que levaria à Revolução Científica, a Espanha investia em <span style="color:#fb7185;font-weight:600;">manter o consenso católico pela força</span> — e <span style="color:#fb7185;font-weight:700;">fechou-se intelectualmente</span>.',
+          'Os intelectuais que poderiam ter contribuído para um renascimento espanhol <span style="color:#c084fc;font-weight:700;">fugiram, se silenciaram ou foram queimados</span>. O resultado, a longo prazo, foi um fechamento cultural que marcaria a Espanha por séculos.',
+          'González não diz que a Reforma Protestante era necessariamente superior. Diz algo mais amplo e mais incômodo: <span style="background:rgba(192,132,252,0.12);border-left:3px solid #c084fc;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(235,220,255,0.95);">a supressão violenta do pensamento tem sempre um custo — que nem sempre aparece de imediato, mas que a história eventualmente apresenta.</span> E Paulo, escrevendo de dentro de uma prisão, já sabia o fim da história: <span style="color:#34d399;font-style:italic;font-weight:700;">"a palavra de Deus não está acorrentada."</span>',
+        ],
+        citacao: 'A supressão violenta do pensamento tem sempre um custo — que nem sempre aparece de imediato, mas que a história eventualmente apresenta.',
+        citacaoAutor: 'Justo L. González',
+      },
+    ],
+    perguntas: [
+      'González mostra que a Espanha tinha todos os ingredientes para uma Reforma — e a destruiu pela força. O que isso revela sobre a relação entre potencial e contexto? Há reformas necessárias na sua comunidade que estão sendo impedidas — não pela falta de visão, mas pela falta de espaço para existirem?',
+      'A supressão do protestantismo espanhol foi eficaz no curto prazo e custosa no longo prazo. Como você avalia decisões que resolvem problemas imediatos criando problemas futuros? Que decisões assim você identifica na sua própria vida ou comunidade?',
+      'González descreve intelectuais espanhóis que se silenciaram para sobreviver. Há verdades que você sabe — sobre a sua fé, sua comunidade, sua tradição — que você não tem coragem de dizer? O que seria necessário para criar espaço para essas conversas?',
+    ],
+    oracao: 'Senhor, diante do paradoxo espanhol, oramos pelos que foram silenciados — os que viram a verdade e não puderam dizê-la, os que foram queimados antes de poder plantar.\n\nPerdoa as Igrejas — a nossa também — pelas vezes em que usamos o poder institucional para calar vozes que precisávamos ouvir. Pelas reformas que impedimos por medo do que mudariam. Pelos Valdés que silenciamos em nossos próprios contextos.\n\nQue a tua Palavra — que não está acorrentada, como Paulo afirma de dentro de uma prisão — encontre sempre uma voz, um copista, um exilado que a carregue para onde ela precisa chegar.\n\nMesmo quando tentamos pará-la.\n\nAmém.',
+    leituraComplementar: 'González, Justo L. A Era dos Reformadores. São Paulo: Vida Nova, 1995. Capítulo 13: "O Protestantismo Espanhol" (pp. 291–322). [Parte 1 — foco no paradoxo espanhol e nos autos de fé de 1559]',
+  },
+  30: {
+    dia: 30,
+    data: '30 de outubro de 2026',
+    titulo: 'Casiodoro de Reina: A Bíblia em Espanhol',
+    subtitulo: 'Capítulo 13 — Parte 2',
+    versiculo: 'A relva se seca, a flor cai, mas a palavra do nosso Deus permanece para sempre.',
+    versiculoRef: 'Isaías 40.8',
+    secoes: [
+      {
+        tipo: 'contexto',
+        titulo: 'Uma Fuga na Noite',
+        paragrafos: [
+          'Ontem vimos como a <span style="color:#fb7185;font-weight:700;">Inquisição espanhola</span> destruiu o protestantismo espanhol com uma eficiência que nenhum outro poder na Europa havia alcançado. Os círculos de Sevilha e Valladolid foram desmantelados. Os líderes foram <span style="color:#fb7185;font-weight:600;">queimados ou fugiram</span>.',
+          'Entre os que fugiram estava um frade do <span style="color:#fbbf24;font-weight:700;">Mosteiro de San Isidoro del Campo</span>, em Sevilha — um dos conventos mais prósperos da Espanha. Seu nome era <strong style="color:#fff;">Casiodoro de Reina</strong>. Saiu na noite, deixando tudo para trás, carregando apenas <span style="background:rgba(52,211,153,0.12);border-left:3px solid #34d399;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(200,255,235,0.95);">o que não podia ser tirado: a convicção de que o povo espanhol precisava da Bíblia em sua própria língua.</span>',
+          'Doze anos depois, em <span style="background:rgba(192,132,252,0.18);border:1px solid rgba(192,132,252,0.40);border-radius:5px;padding:1px 8px;color:#e9d5ff;font-weight:900;">1569</span>, em <span style="color:#60a5fa;font-weight:700;">Basileia</span>, ele a entregaria.',
+        ],
+      },
+      {
+        tipo: 'analise',
+        titulo: 'Um Homem em Fuga, um Projeto que Não Parava',
+        paragrafos: [
+          'A vida de Reina após a fuga foi uma <span style="color:#f97316;font-weight:700;">odisseia de perseguição, suspeita e recomeços</span>. Foi para <span style="color:#60a5fa;font-weight:600;">Genebra</span> — e foi visto com desconfiança pelos <em>próprios calvinistas</em>, que duvidavam de suas posições sobre a Trindade. Passou pela <span style="color:#60a5fa;font-weight:600;">França</span>, pela <span style="color:#60a5fa;font-weight:600;">Inglaterra</span>, retornou ao continente.',
+          'Em toda cidade em que parou, a Inquisição enviava agentes para rastreá-lo. Seu nome constava das <span style="color:#fb7185;font-weight:700;">listas de hereges mais perigosos</span>. Sua família na Espanha sofreu as consequências da fuga.',
+          'González conta essa história não como romance de aventura, mas como exemplo do fio que percorre todo o capítulo 13: <span style="background:rgba(251,191,36,0.15);border:1px solid rgba(251,191,36,0.35);border-radius:5px;padding:1px 8px;color:#fde68a;font-weight:800;">o exilado que carrega uma obra que nenhuma perseguição consegue confiscar.</span> A Inquisição podia queimar livros e pessoas. <strong style="color:#fff;">Não podia queimar o projeto que vivia na mente e na fé de um homem determinado.</strong>',
+        ],
+        citacao: 'A Inquisição podia queimar livros e pessoas. Não podia queimar o projeto que vivia na mente e na fé de um homem determinado.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'A Bíblia do Urso: Um Monumento Duradouro',
+        paragrafos: [
+          'Em <span style="color:#c084fc;font-weight:700;">1569</span>, Reina publicou em Basileia a <span style="color:#34d399;font-weight:700;">primeira tradução completa da Bíblia para o espanhol</span> — chamada <span style="background:rgba(251,191,36,0.15);border:1px solid rgba(251,191,36,0.35);border-radius:5px;padding:1px 8px;color:#fde68a;font-weight:800;font-style:italic;">Biblia del Oso</span> (Bíblia do Urso) pela figura de um urso na página de rosto.',
+          'Foi obra de anos de trabalho em <span style="color:#fb7185;font-weight:600;">exílio e perseguição</span>, sem recursos estáveis, sem comunidade de apoio, sem reconhecimento imediato. Reina trabalhou com os <span style="color:#fbbf24;font-weight:700;">textos hebraico e grego originais</span>, no mesmo espírito humanista — <span style="color:#a78bfa;font-style:italic;">ad fontes</span> — que havia produzido a <span style="color:#a78bfa;font-weight:700;">Poliglota Complutense de Cisneros</span> décadas antes.',
+          'Em <span style="color:#60a5fa;font-weight:700;">1602</span>, a Bíblia do Urso foi revisada por <strong style="color:#fff;">Cipriano de Valera</strong> — outro exilado espanhol — dando origem à <span style="background:rgba(52,211,153,0.15);border:1px solid rgba(52,211,153,0.35);border-radius:5px;padding:1px 8px;color:#a7f3d0;font-weight:900;">Bíblia Reina-Valera</span>, que em suas edições revisadas é até hoje a versão mais usada no mundo protestante de língua espanhola. <span style="color:#fbbf24;font-weight:600;">Lutero traduziu a Bíblia para o alemão e transformou a língua alemã.</span> <span style="color:#34d399;font-weight:600;">Reina traduziu para o espanhol — e transformou, séculos depois, o protestantismo latino-americano.</span>',
+        ],
+        citacao: 'Lutero traduziu a Bíblia e transformou a língua alemã. Reina traduziu para o espanhol — e transformou, séculos depois, o protestantismo latino-americano.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'reflexao',
+        titulo: 'O Fruto que a Inquisição Não Conseguiu Confiscar',
+        paragrafos: [
+          'González encerra o capítulo 13 com uma observação de força quase poética: a Inquisição destruiu o protestantismo espanhol <em>na Espanha</em>. Mas os exilados que ela expulsou levaram consigo uma Bíblia em espanhol que <span style="color:#34d399;font-weight:700;">voltou ao mundo de língua espanhola</span> — não pela Europa, mas <span style="color:#f97316;font-weight:700;">pelas Américas</span> — três séculos depois, nas mãos dos missionários protestantes do século XIX.',
+          '<span style="background:rgba(251,113,133,0.12);border:1px solid rgba(251,113,133,0.30);border-radius:5px;padding:1px 7px;color:#fecdd3;font-weight:700;">A Inquisição venceu a batalha.</span> <span style="background:rgba(52,211,153,0.15);border:1px solid rgba(52,211,153,0.35);border-radius:5px;padding:1px 7px;color:#a7f3d0;font-weight:800;">Perdeu a guerra de longo prazo.</span>',
+          'A Palavra de Deus não estava acorrentada. <span style="background:rgba(192,132,252,0.12);border-left:3px solid #c084fc;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(235,220,255,0.95);">Estava apenas esperando o momento e o caminho certos.</span> <span style="color:#34d399;font-style:italic;">"A relva se seca, a flor cai, mas a palavra do nosso Deus permanece para sempre."</span>',
+        ],
+        citacao: 'A Inquisição venceu a batalha. Perdeu a guerra de longo prazo. A Palavra de Deus estava apenas esperando o momento e o caminho certos.',
+        citacaoAutor: 'Justo L. González',
+      },
+    ],
+    perguntas: [
+      'Reina trabalhou por anos em condições de exílio e perseguição, sem ver o impacto de sua obra. O que sustenta uma pessoa numa obra de longo prazo quando os resultados estão além do horizonte visível? Há uma obra assim na sua vida — que exige fidelidade sem ver o fruto?',
+      'González mostra que a Inquisição venceu a batalha e perdeu a guerra de longo prazo. Como você mantém perspectiva histórica quando enfrenta derrotas no curto prazo? O que te ajuda a enxergar além do momento presente?',
+      'A Bíblia Reina-Valera foi obra de dois exilados que nunca viram seu impacto pleno. Como você avalia o seu próprio papel numa história maior do que você consegue ver? Que "Bíblia do Urso" você está construindo — algo que outros usarão muito depois de você?',
+    ],
+    oracao: 'Senhor, obrigado por Casiodoro de Reina — pelo homem que fugiu na noite com nada além de sua convicção e passou anos construindo o que não viveria para ver plenamente usado.\n\nObrigado pela Bíblia Reina-Valera — que nasceu do exílio, sobreviveu à perseguição e chegou às mãos de centenas de milhões de pessoas que nunca souberam o nome do homem que a traduziu.\n\nPerdoa-nos pela impaciência com obras de longo prazo. Pela tendência de abandonar o que não produz resultado imediato. Pela falta de fé de que a semente que plantamos hoje pode alimentar gerações que ainda não nasceram.\n\nQue sejamos fiéis às obras que tu nos deste — mesmo sem ver o fruto.\n\nAmém.',
+    leituraComplementar: 'González, Justo L. A Era dos Reformadores. São Paulo: Vida Nova, 1995. Capítulo 13: "O Protestantismo Espanhol" (pp. 291–322). [Parte 2 — foco em Casiodoro de Reina e na Bíblia Reina-Valera]',
+  },
+  31: {
+    dia: 31,
+    data: '31 de outubro de 2026',
+    titulo: 'Uma Era em Convulsão: Fim da Cristandade Medieval e Início do Mundo Moderno',
+    subtitulo: 'Capítulo 14 — Síntese Final',
+    versiculo: 'Portanto, visto que estamos rodeados de tão grande nuvem de testemunhas, deixemos todo embaraço e o pecado que tão de perto nos rodeia, e corramos com perseverança a carreira que nos está proposta.',
+    versiculoRef: 'Hebreus 12.1',
+    secoes: [
+      {
+        tipo: 'contexto',
+        titulo: '31 de Outubro: Do Alto da Montanha',
+        paragrafos: [
+          'Hoje é <span style="background:rgba(251,191,36,0.15);border:1px solid rgba(251,191,36,0.35);border-radius:5px;padding:1px 8px;color:#fde68a;font-weight:900;">31 de outubro</span> — data em que, em <span style="background:rgba(192,132,252,0.18);border:1px solid rgba(192,132,252,0.40);border-radius:5px;padding:1px 8px;color:#e9d5ff;font-weight:900;">1517</span>, <strong style="color:#fff;">Martinho Lutero</strong> afixou suas <span style="color:#c084fc;font-weight:700;">Noventa e Cinco Teses</span> na porta da Igreja do Castelo de Wittenberg. Há exatamente <span style="color:#fbbf24;font-weight:700;">509 anos</span>, um monge agostiniano de trinta e três anos iniciou, sem saber completamente o que fazia, <span style="color:#34d399;font-weight:600;">uma cadeia de eventos que transformou o mundo</span>.',
+          'Depois de trinta e um dias, González nos convida a subir ao ponto mais alto da narrativa e olhar o panorama inteiro. <span style="background:rgba(96,165,250,0.12);border-left:3px solid #60a5fa;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(215,230,255,0.95);">O que foi o século XVI? O que a Reforma — luterana, calvinista, anglicana, anabatista, católica, espanhola — significou? E o que ainda significa?</span>',
+        ],
+      },
+      {
+        tipo: 'analise',
+        titulo: 'O Fim de um Mundo: A Morte do Corpus Christianum',
+        paragrafos: [
+          'O título do capítulo 14 — <span style="color:#fbbf24;font-style:italic;font-weight:700;">"Uma Idade em Convulsão"</span> — é preciso. O século XVI não foi apenas um período de reforma religiosa. Foi <span style="color:#fb7185;font-weight:700;">o colapso de uma civilização inteira</span> e o <span style="color:#34d399;font-weight:700;">nascimento difícil, sangrento e incompleto de outra</span>.',
+          'O <span style="background:rgba(192,132,252,0.15);border:1px solid rgba(192,132,252,0.35);border-radius:5px;padding:1px 8px;color:#e9d5ff;font-weight:800;font-style:italic;">Corpus Christianum</span> — a cristandade medieval como sociedade unificada sob uma única fé, com o <span style="color:#c084fc;font-weight:600;">papa</span> como autoridade espiritual suprema e o <span style="color:#f97316;font-weight:600;">imperador</span> como braço secular — <strong style="color:#fb7185;">morreu no século XVI</strong>. Não porque Lutero assim decidiu, nem porque Roma o permitiu, mas porque as forças que o sustentavam foram irreversivelmente alteradas pela <span style="color:#60a5fa;font-weight:600;">imprensa</span>, pelo <span style="color:#60a5fa;font-weight:600;">comércio</span>, pelas <span style="color:#60a5fa;font-weight:600;">Américas</span> e pelas <span style="color:#60a5fa;font-weight:600;">ambições dos príncipes</span>.',
+          '<span style="background:rgba(251,191,36,0.12);border-left:3px solid #fbbf24;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(255,245,210,0.95);">Lutero não destruiu a cristandade medieval. Lutero foi o sintoma mais visível de que ela já havia desmoronado por dentro.</span>',
+        ],
+        citacao: 'Lutero não destruiu a cristandade medieval. Lutero foi o sintoma mais visível de que ela já havia desmoronado por dentro.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'O Nascimento de um Mundo: Três Heranças',
+        paragrafos: [
+          '<span style="color:#60a5fa;font-weight:900;">① O pluralismo religioso como realidade permanente.</span> A <span style="color:#fbbf24;font-weight:700;">Paz de Augsburgo (1555)</span> foi o primeiro reconhecimento legal de que a cristandade estava dividida para ficar. O <span style="color:#fbbf24;font-weight:700;">Édito de Nantes (1598)</span> foi um passo — frágil, depois revogado — rumo à tolerância. <span style="background:rgba(96,165,250,0.12);border-left:3px solid #60a5fa;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(215,230,255,0.95);">O século XVI não produziu o pluralismo como ideal. Produziu-o como fato.</span>',
+          '<span style="color:#c084fc;font-weight:900;">② A consciência individual como autoridade.</span> Ao afirmar que nem o papa nem os concílios podiam substituir a <span style="color:#c084fc;font-weight:700;">consciência iluminada pela Palavra</span>, a Reforma abriu uma porta que nunca mais se fechou. Lutero não queria fundar o individualismo moderno — mas <span style="color:#c084fc;font-style:italic;">plantou a semente de algo muito maior do que pretendia</span>.',
+          '<span style="color:#34d399;font-weight:900;">③ A Bíblia como bem público.</span> As traduções de <strong style="color:#fff;">Lutero, Tyndale, Reina, Castellio</strong> e dezenas de outros colocaram as Escrituras nas mãos de pessoas que nunca teriam acesso a elas. <span style="background:rgba(52,211,153,0.12);border-left:3px solid #34d399;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(200,255,235,0.95);">Isso transformou não apenas a religião, mas a alfabetização, a educação e a relação das pessoas comuns com o texto escrito.</span>',
+        ],
+        citacao: 'O século XVI não produziu o pluralismo como ideal. Produziu-o como fato — e as gerações seguintes precisaram aprender a viver com o fato antes de transformá-lo em princípio.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'analise',
+        titulo: 'Ecclesia Semper Reformanda: O que a História Exige de Nós',
+        paragrafos: [
+          'González encerra a obra não com uma conclusão triunfal — nem protestante, nem católica — mas com um <span style="color:#f97316;font-weight:700;">desafio histórico</span>. Ele escreve como <strong style="color:#fff;">latino-americano</strong>, de um contexto onde o século XVI ainda ecoa: nas <span style="color:#34d399;font-weight:600;">igrejas fundadas pelos herdeiros da Reforma</span>, nas <span style="color:#fbbf24;font-weight:600;">tradições trazidas pelos colonizadores católicos</span>, nas <span style="color:#fb7185;font-weight:600;">comunidades indígenas batizadas à força</span> que ainda carregam as marcas desse século.',
+          'Estudar a Era dos Reformadores não é exercício de <span style="color:#fb7185;font-style:italic;">nostalgia confessional</span>. É aprender a fazer, com mais sabedoria e humildade, o que cada geração precisa fazer: discernir <span style="color:#34d399;font-weight:700;">o essencial</span> do <span style="color:#fb7185;font-weight:700;">acidental</span>, <span style="color:#34d399;font-weight:700;">o evangelho</span> da <span style="color:#fb7185;font-weight:700;">cultura</span>, <span style="color:#34d399;font-weight:700;">o que deve ser reformado</span> do <span style="color:#60a5fa;font-weight:700;">que precisa ser preservado</span>.',
+          '<span style="background:rgba(251,191,36,0.15);border:1px solid rgba(251,191,36,0.35);border-radius:5px;padding:2px 10px;color:#fde68a;font-weight:900;font-style:italic;">Ecclesia semper reformanda</span> — a Igreja sempre precisa ser reformada. Não como slogan, mas como <strong style="color:#fff;">vocação permanente</strong>, que exige <span style="color:#fbbf24;font-weight:700;">coragem</span> para ver os próprios pontos cegos, <span style="color:#a78bfa;font-weight:700;">humildade</span> para aprender com os adversários e <span style="color:#34d399;font-weight:700;">fidelidade</span> para não abandonar o essencial enquanto se reforma o acessório.',
+        ],
+        citacao: 'Ecclesia semper reformanda: não como slogan, mas como vocação permanente — coragem para ver os próprios pontos cegos, humildade para aprender com os adversários, fidelidade para não abandonar o essencial.',
+        citacaoAutor: 'Justo L. González',
+      },
+      {
+        tipo: 'reflexao',
+        titulo: 'A Nuvem de Testemunhas',
+        paragrafos: [
+          'Ao longo destes trinta e um dias, passamos por uma <span style="color:#fbbf24;font-weight:700;">nuvem de testemunhas</span>: <span style="color:#fbbf24;font-weight:600;">Isabel e Cisneros</span>, reformando antes que a Reforma fosse necessária. <span style="color:#c084fc;font-weight:600;">Lutero</span> em Worms — <span style="color:#e9d5ff;font-style:italic;">"Aqui estou. Não posso fazer de outra forma."</span> <span style="color:#60a5fa;font-weight:600;">Zuínglio</span>, morrendo em campo de batalha. <span style="color:#60a5fa;font-weight:600;">Calvino</span>, construindo Genebra. Os <span style="color:#34d399;font-weight:600;">anabatistas</span>, afogados nos rios por perguntar o que deveria ser a Igreja. <span style="color:#f97316;font-weight:600;">Cranmer</span>, estendendo a mão à chama para redimir a própria covardia. <span style="color:#f97316;font-weight:600;">Knox</span>, que jamais temeu a face humana.',
+          '<span style="color:#f97316;font-weight:600;">Guilherme de Orange</span>, abrindo os diques. Os <span style="color:#60a5fa;font-weight:600;">huguenotes</span>, cantando salmos a caminho do exílio. <span style="color:#c084fc;font-weight:600;">Teresa</span>, encontrando Deus no castelo interior. <span style="color:#a78bfa;font-weight:600;">João da Cruz</span>, na noite escura. <span style="color:#60a5fa;font-weight:600;">Loyola</span>, disponível para qualquer destino. Os <span style="color:#fb7185;font-weight:600;">mártires de Valladolid</span>, queimados por ler a Bíblia. <span style="color:#34d399;font-weight:600;">Casiodoro de Reina</span>, traduzindo no exílio o que gerações futuras leriam.',
+          '<span style="background:rgba(52,211,153,0.12);border-left:3px solid #34d399;padding:2px 8px;border-radius:3px;font-weight:600;color:rgba(200,255,235,0.95);">Eles correram a carreira que lhes foi proposta. Com imperfeições, erros, contradições — mas correram.</span> <strong style="color:#fbbf24;">Agora é a nossa vez.</strong>',
+        ],
+        citacao: 'Eles correram a carreira que lhes foi proposta. Com imperfeições, erros, contradições — mas correram. Agora é a nossa vez.',
+        citacaoAutor: 'Oração do Dia 31',
+      },
+    ],
+    perguntas: [
+      'González afirma que o século XVI ainda ecoa no presente — especialmente na América Latina. Onde você vê os ecos do século XVI na sua própria tradição, comunidade e contexto? O que ainda precisa ser reformado?',
+      'Ao longo destes trinta e um dias, qual figura ou episódio ficou mais fortemente na sua memória? O que essa figura ou episódio diz sobre o que você mais precisa ouvir agora?',
+      'Ecclesia semper reformanda. Se essa convicção é verdadeira, o que ela exige de você concretamente — não da Igreja em abstrato, mas de você, na sua comunidade, neste momento? Qual é a reforma que começa em você?',
+    ],
+    oracao: 'Senhor, chegamos ao fim desta jornada de trinta e um dias pela Era dos Reformadores. Viemos com mais perguntas do que respostas — e isso, aprendemos com González, é o destino de quem estuda a história com honestidade.\n\nObrigado por Lutero, Calvino, Zuínglio, Knox, Cranmer, Loyola, Teresa, João da Cruz, Casiodoro de Reina, Guilherme de Orange, os huguenotes, os anabatistas, os mártires de Valladolid — figuras imperfeitas, todas elas, usadas para fazer avançar uma história maior do que qualquer uma delas compreendia.\n\nQue a nuvem de testemunhas que circunda a Igreja — dos reformadores do século XVI aos que hoje sofrem pela fé em cada continente — não nos deixe complacentes com o que somos, nem desesperados com o que ainda falta.\n\nEcclesia semper reformanda. A Igreja sempre precisa ser reformada. Começa em nós.\n\nAmém.',
+    leituraComplementar: 'González, Justo L. A Era dos Reformadores. São Paulo: Vida Nova, 1995. Capítulo 14: "Uma Idade em Convulsão" (pp. 323–368).',
+  },
 };
 
 export default DIAS_CONTENT;

@@ -871,6 +871,384 @@ const NOTAS_REFLEXAO: Record<number, NotaReflexao[]> = {
       autor: 'DAVIS, Dale Ralph.', titulo: 'Judges: Such a Great Salvation', resto: 'Fearn, Ross-shire: Christian Focus, 2000. (Focus on the Bible).',
     },
   ],
+  304: [
+    {
+      nota: 'Dale Ralph Davis observa que o Espírito do SENHOR já havia vindo sobre Jefté (11.29) antes do voto (11.30-31): o voto não foi exigido por Deus, mas nasceu da tentativa de Jefté de assegurar a vitória por meio de uma barganha. Comentário a Jz 11.29-40.',
+      autor: 'DAVIS, Dale Ralph.', titulo: 'Judges: Such a Great Salvation', resto: 'Fearn, Ross-shire: Christian Focus, 2000. (Focus on the Bible).',
+    },
+    {
+      nota: 'Daniel Block lê o episódio como sinal da cananização de Israel: Jefté trata o SENHOR como as nações tratavam os seus deuses, e sua habilidade de negociador — usada com os anciãos e com o rei amonita — acaba voltada contra a própria família. Comentário a Jz 11.1-40.',
+      autor: 'BLOCK, Daniel I.', titulo: 'Judges, Ruth', resto: 'Nashville: Broadman & Holman, 1999. (The New American Commentary, 6).',
+    },
+    {
+      nota: 'Keil e Delitzsch defendem que a filha de Jefté não foi oferecida em sacrifício humano, proibido pela Lei, mas consagrada ao serviço do SENHOR em virgindade perpétua — o que explicaria o lamento por sua virgindade (11.37-39); outros intérpretes reformados entendem que houve sacrifício literal. Comentário a Jz 11.34-40.',
+      autor: 'KEIL, C. F.; DELITZSCH, F.', titulo: 'Commentary on the Old Testament', resto: 'Peabody: Hendrickson, 1996. v. 2: Joshua, Judges, Ruth, 1 and 2 Samuel.',
+    },
+  ],
+  305: [
+    {
+      nota: 'Keil e Delitzsch entendem que a Belém de Ibsã é provavelmente a Belém de Zebulom (Js 19.15), no norte, e não a Belém de Judá, já que o texto não acrescenta "de Judá", como faz em outros lugares do livro. Comentário a Jz 12.8-10.',
+      autor: 'KEIL, C. F.; DELITZSCH, F.', titulo: 'Commentary on the Old Testament', resto: 'Peabody: Hendrickson, 1996. v. 2: Joshua, Judges, Ruth, 1 and 2 Samuel.',
+    },
+    {
+      nota: 'Daniel Block observa que os casamentos dos sessenta filhos de Ibsã fora do clã sugerem alianças políticas e uma ambição quase real, à semelhança dos reis do antigo Oriente, sinal de que a liderança dos juízes se aproximava cada vez mais de uma dinastia. Comentário a Jz 12.8-10.',
+      autor: 'BLOCK, Daniel I.', titulo: 'Judges, Ruth', resto: 'Nashville: Broadman & Holman, 1999. (The New American Commentary, 6).',
+    },
+    {
+      nota: 'Barry Webb nota que os juízes menores emolduram a narrativa de Jefté e formam um contraste com ela: enquanto Jefté perde sua única descendente, os juízes ao redor são descritos por famílias numerosas e prosperidade — um contraste que convida o leitor a refletir sobre o que de fato torna uma liderança fiel. Comentário a Jz 12.8-15.',
+      autor: 'WEBB, Barry G.', titulo: 'The Book of Judges', resto: 'Grand Rapids: Eerdmans, 2012. (The New International Commentary on the Old Testament).',
+    },
+  ],
+  306: [
+    {
+      nota: 'Matthew Henry comenta que, dos juízes menores, pouco se registra além do tempo de seu governo e do lugar de seu sepultamento, e observa que os tempos de paz, sem grandes feitos, são também uma bênção de Deus para o seu povo. Comentário a Jz 12.8-15.',
+      autor: 'HENRY, Matthew.', titulo: 'Commentary on the Whole Bible', resto: 'Peabody: Hendrickson, 1991. v. 2: Joshua to Esther.',
+    },
+    {
+      nota: 'Daniel Block chama a atenção para a semelhança, no hebraico, entre o nome Elom e o nome do lugar de seu sepultamento, Aijalom, um jogo de palavras que liga o juiz à terra em que foi sepultado. Comentário a Jz 12.11-12.',
+      autor: 'BLOCK, Daniel I.', titulo: 'Judges, Ruth', resto: 'Nashville: Broadman & Holman, 1999. (The New American Commentary, 6).',
+    },
+    {
+      nota: 'Barry Webb observa que a sucessão dos juízes menores dá ao leitor a impressão de continuidade e relativa estabilidade, em contraste com o caos dos grandes ciclos de juízes — uma pausa narrativa antes da história de Sansão. Comentário a Jz 12.8-15.',
+      autor: 'WEBB, Barry G.', titulo: 'The Book of Judges', resto: 'Grand Rapids: Eerdmans, 2012. (The New International Commentary on the Old Testament).',
+    },
+  ],
+  307: [
+    {
+      nota: 'Matthew Henry observa que cavalgar jumentos era, naquele tempo, sinal de dignidade, e que os descendentes de Abdom, montados em setenta jumentos, mostravam a honra e a prosperidade de sua casa. Comentário a Jz 12.13-15.',
+      autor: 'HENRY, Matthew.', titulo: 'Commentary on the Whole Bible', resto: 'Peabody: Hendrickson, 1991. v. 2: Joshua to Esther.',
+    },
+    {
+      nota: 'Daniel Block vê nas famílias numerosas e nos jumentos de Jair, Ibsã e Abdom indícios de ambições dinásticas, e lembra que o número setenta evoca os setenta filhos de Gideão, cuja história terminou no massacre promovido por Abimeleque (Jz 9). Comentário a Jz 12.13-15.',
+      autor: 'BLOCK, Daniel I.', titulo: 'Judges, Ruth', resto: 'Nashville: Broadman & Holman, 1999. (The New American Commentary, 6).',
+    },
+    {
+      nota: 'Barry Webb destaca que, depois dos juízes menores, a narrativa recomeça com a fórmula "tornaram a fazer o que era mau" (13.1), mostrando que os períodos de estabilidade e prosperidade não produziram uma mudança duradoura no coração de Israel. Comentário a Jz 12.8–13.1.',
+      autor: 'WEBB, Barry G.', titulo: 'The Book of Judges', resto: 'Grand Rapids: Eerdmans, 2012. (The New International Commentary on the Old Testament).',
+    },
+  ],
+  308: [
+    {
+      nota: 'Matthew Henry relaciona o nome "Maravilhoso" do Anjo (13.18) ao nome do Messias em Isaías 9.6 e entende que o Anjo do SENHOR que aparece a Manoá é o próprio Filho de Deus, que subiu na chama do altar como sinal do sacrifício que ofereceria. Comentário a Jz 13.15-23.',
+      autor: 'HENRY, Matthew.', titulo: 'Commentary on the Whole Bible', resto: 'Peabody: Hendrickson, 1991. v. 2: Joshua to Esther.',
+    },
+    {
+      nota: 'Dale Ralph Davis destaca a teologia da esposa de Manoá (13.23): enquanto o marido conclui pelo medo que vão morrer, ela raciocina a partir do que Deus já havia feito e prometido — um modelo de fé que lê as circunstâncias à luz da palavra de Deus. Comentário a Jz 13.15-25.',
+      autor: 'DAVIS, Dale Ralph.', titulo: 'Judges: Such a Great Salvation', resto: 'Fearn, Ross-shire: Christian Focus, 2000. (Focus on the Bible).',
+    },
+    {
+      nota: 'Barry Webb observa que, ao contrário dos ciclos anteriores, Israel não clama ao SENHOR em 13.1; a iniciativa da libertação é inteiramente divina, e o anúncio a uma mulher estéril insere Sansão na linhagem das grandes narrativas de nascimento da Escritura. Comentário a Jz 13.1-25.',
+      autor: 'WEBB, Barry G.', titulo: 'The Book of Judges', resto: 'Grand Rapids: Eerdmans, 2012. (The New International Commentary on the Old Testament).',
+    },
+  ],
+  309: [
+    {
+      nota: 'Barry Webb destaca que 14.4 revela o SENHOR agindo por meio das escolhas de Sansão para buscar ocasião contra os filisteus, sem que o texto aprove os motivos de Sansão: a soberania divina e a responsabilidade humana caminham juntas na narrativa. Comentário a Jz 14.1-4.',
+      autor: 'WEBB, Barry G.', titulo: 'The Book of Judges', resto: 'Grand Rapids: Eerdmans, 2012. (The New International Commentary on the Old Testament).',
+    },
+    {
+      nota: 'Matthew Henry observa que Sansão, tão forte diante do leão, foi vencido pelas lágrimas e importunações de sua mulher, e adverte que muitos que resistem a grandes ataques caem diante de tentações domésticas e persistentes. Comentário a Jz 14.15-18.',
+      autor: 'HENRY, Matthew.', titulo: 'Commentary on the Whole Bible', resto: 'Peabody: Hendrickson, 1991. v. 2: Joshua to Esther.',
+    },
+    {
+      nota: 'Daniel Block observa que, ao tirar mel do cadáver do leão, Sansão viola a proibição nazireia de tocar em corpo morto (Nm 6.6-7), e que o "banquete" de 14.10, termo ligado à bebida, sugere outra transgressão de sua consagração. Comentário a Jz 14.8-10.',
+      autor: 'BLOCK, Daniel I.', titulo: 'Judges, Ruth', resto: 'Nashville: Broadman & Holman, 1999. (The New American Commentary, 6).',
+    },
+  ],
+  310: [
+    {
+      nota: 'Barry Webb observa que a narrativa de 15.1-11 é construída como uma espiral de represálias em que cada lado justifica sua ação pela ação do outro, resumida nas palavras de Sansão: "assim como eles me fizeram, assim lhes fiz eu" (15.11). Comentário a Jz 15.1-11.',
+      autor: 'WEBB, Barry G.', titulo: 'The Book of Judges', resto: 'Grand Rapids: Eerdmans, 2012. (The New International Commentary on the Old Testament).',
+    },
+    {
+      nota: 'Timothy Keller observa que os motivos de Sansão são pessoais — honra ferida e vingança — e não o zelo pelo povo de Deus; ainda assim, Deus usa esse homem falho para começar a libertar Israel, o que destaca a graça de Deus e não a virtude do juiz. Comentário a Jz 15.',
+      autor: 'KELLER, Timothy.', titulo: 'Judges for You', resto: 'Purcellville: The Good Book Company, 2013.',
+    },
+    {
+      nota: 'Daniel Block observa que o incêndio atinge o trigo, as vinhas e os olivais, isto é, a base da economia agrícola da região, e que o fogo acendido por Sansão retorna sobre a própria mulher e sua família na vingança dos filisteus. Comentário a Jz 15.4-6.',
+      autor: 'BLOCK, Daniel I.', titulo: 'Judges, Ruth', resto: 'Nashville: Broadman & Holman, 1999. (The New American Commentary, 6).',
+    },
+  ],
+  311: [
+    {
+      nota: 'Dale Ralph Davis observa que a pergunta dos homens de Judá — "não sabias que os filisteus dominam sobre nós?" (15.11) — revela um povo acomodado à opressão, que já não deseja ser libertado e prefere entregar o seu libertador ao inimigo. Comentário a Jz 15.9-13.',
+      autor: 'DAVIS, Dale Ralph.', titulo: 'Judges: Such a Great Salvation', resto: 'Fearn, Ross-shire: Christian Focus, 2000. (Focus on the Bible).',
+    },
+    {
+      nota: 'Barry Webb nota o contraste entre o canto de Sansão, centrado em si mesmo (15.16), e o clamor que se segue (15.18): a sede leva Sansão, pela primeira vez na narrativa, a dirigir-se ao SENHOR e a reconhecer que a vitória viera da mão de Deus. Comentário a Jz 15.14-19.',
+      autor: 'WEBB, Barry G.', titulo: 'The Book of Judges', resto: 'Grand Rapids: Eerdmans, 2012. (The New International Commentary on the Old Testament).',
+    },
+    {
+      nota: 'Matthew Henry vê em Sansão, amarrado e entregue pelos seus próprios irmãos aos filisteus, um tipo de Cristo, entregue pelos judeus aos gentios, e que, rompendo as cordas, triunfou sobre os seus inimigos. Comentário a Jz 15.9-17.',
+      autor: 'HENRY, Matthew.', titulo: 'Commentary on the Whole Bible', resto: 'Peabody: Hendrickson, 1991. v. 2: Joshua to Esther.',
+    },
+  ],
+  312: [
+    {
+      nota: 'Dale Ralph Davis considera 16.20 ("ele não sabia que o SENHOR se tinha retirado dele") um dos versículos mais solenes da Escritura: a maior tragédia de Sansão não foi a perda da força, mas a perda da presença de Deus sem que ele percebesse. Comentário a Jz 16.15-22.',
+      autor: 'DAVIS, Dale Ralph.', titulo: 'Judges: Such a Great Salvation', resto: 'Fearn, Ross-shire: Christian Focus, 2000. (Focus on the Bible).',
+    },
+    {
+      nota: 'Daniel Block ressalta que a força de Sansão não residia magicamente no cabelo, mas no SENHOR; o cabelo era o sinal externo da consagração nazireia, e ao revelá-lo Sansão entregou o último símbolo de sua separação para Deus. Comentário a Jz 16.15-20.',
+      autor: 'BLOCK, Daniel I.', titulo: 'Judges, Ruth', resto: 'Nashville: Broadman & Holman, 1999. (The New American Commentary, 6).',
+    },
+    {
+      nota: 'Matthew Henry adverte, a partir das três tentativas de Dalila, sobre o perigo de brincar com a tentação: quem se aproxima repetidamente do pecado, confiando em sua própria força, acaba vencido; e vê graça em 16.22, quando o cabelo começa a crescer. Comentário a Jz 16.4-22.',
+      autor: 'HENRY, Matthew.', titulo: 'Commentary on the Whole Bible', resto: 'Peabody: Hendrickson, 1991. v. 2: Joshua to Esther.',
+    },
+  ],
+  313: [
+    {
+      nota: 'Barry Webb destaca que o clímax da narrativa é o confronto entre o SENHOR e Dagom: a festa que celebrava a vitória de Dagom termina com a destruição do seu templo, demonstrando que o Deus de Israel não fora derrotado com a queda de Sansão. Comentário a Jz 16.23-31.',
+      autor: 'WEBB, Barry G.', titulo: 'The Book of Judges', resto: 'Grand Rapids: Eerdmans, 2012. (The New International Commentary on the Old Testament).',
+    },
+    {
+      nota: 'Dale Ralph Davis observa que a oração de Sansão (16.28) é a expressão de alguém totalmente dependente, e que 16.22 — o cabelo que volta a crescer — já anunciava a graça de Deus em restaurar o seu servo caído antes mesmo da resposta à oração. Comentário a Jz 16.22-31.',
+      autor: 'DAVIS, Dale Ralph.', titulo: 'Judges: Such a Great Salvation', resto: 'Fearn, Ross-shire: Christian Focus, 2000. (Focus on the Bible).',
+    },
+    {
+      nota: 'Timothy Keller vê na morte de Sansão, que obtém a vitória entregando a própria vida com os braços estendidos entre as colunas, uma sombra imperfeita da obra de Cristo, que venceu os inimigos de Deus por meio da sua morte na cruz. Comentário a Jz 16.',
+      autor: 'KELLER, Timothy.', titulo: 'Judges for You', resto: 'Purcellville: The Good Book Company, 2013.',
+    },
+  ],
+  314: [
+    {
+      nota: 'Daniel Block observa o sincretismo da religião de Mica: a prata é "consagrada ao SENHOR" e, ao mesmo tempo, usada para fazer uma imagem, em contradição direta com o segundo mandamento — um retrato de Israel cananizado que mantém o nome do SENHOR em um culto pagão. Comentário a Jz 17.1-6.',
+      autor: 'BLOCK, Daniel I.', titulo: 'Judges, Ruth', resto: 'Nashville: Broadman & Holman, 1999. (The New American Commentary, 6).',
+    },
+    {
+      nota: 'Dale Ralph Davis ressalta o caráter mercenário do levita, que troca a casa de Mica pela tribo de Dã porque recebe uma oferta mais vantajosa, e a confiança supersticiosa de Mica de que ter um levita garantiria a bênção de Deus (17.13). Comentário a Jz 17.7–18.20.',
+      autor: 'DAVIS, Dale Ralph.', titulo: 'Judges: Such a Great Salvation', resto: 'Fearn, Ross-shire: Christian Focus, 2000. (Focus on the Bible).',
+    },
+    {
+      nota: 'Barry Webb destaca o impacto de 18.30, que identifica o sacerdote de Dã como Jônatas, descendente de Moisés, mostrando quão rapidamente a apostasia alcançou até a família do grande mediador da aliança. Comentário a Jz 18.27-31.',
+      autor: 'WEBB, Barry G.', titulo: 'The Book of Judges', resto: 'Grand Rapids: Eerdmans, 2012. (The New International Commentary on the Old Testament).',
+    },
+  ],
+  315: [
+    {
+      nota: 'Daniel Block mostra os paralelos deliberados entre Jz 19 e Gn 19 (o hóspede, o cerco à casa, a exigência dos homens da cidade, a oferta das mulheres) e conclui que o narrador apresenta Gibeá, uma cidade de Israel, como uma nova Sodoma. Comentário a Jz 19.',
+      autor: 'BLOCK, Daniel I.', titulo: 'Judges, Ruth', resto: 'Nashville: Broadman & Holman, 1999. (The New American Commentary, 6).',
+    },
+    {
+      nota: 'Barry Webb observa que a solução encontrada para preservar Benjamim (Jz 21) repete a violência contra mulheres que motivou a guerra, o que revela a incapacidade de Israel de resolver o próprio pecado sem um governo justo. Comentário a Jz 21.',
+      autor: 'WEBB, Barry G.', titulo: 'The Book of Judges', resto: 'Grand Rapids: Eerdmans, 2012. (The New International Commentary on the Old Testament).',
+    },
+    {
+      nota: 'Dale Ralph Davis entende as duas derrotas de Israel (20.18-25), mesmo após consultar ao SENHOR, como disciplina divina sobre todo o povo, que precisava humilhar-se com choro, jejum e sacrifícios antes de executar o juízo sobre Benjamim. Comentário a Jz 20.18-28.',
+      autor: 'DAVIS, Dale Ralph.', titulo: 'Judges: Such a Great Salvation', resto: 'Fearn, Ross-shire: Christian Focus, 2000. (Focus on the Bible).',
+    },
+  ],
+  285: [
+    {
+      nota: 'Barry Webb observa que Juízes 1 é construído como uma deterioração progressiva: começa com Judá e Simeão vitoriosos e termina com Dã sendo empurrado para a região montanhosa, preparando o leitor para a apostasia narrada no restante do livro. Comentário a Jz 1.',
+      autor: 'WEBB, Barry G.', titulo: 'The Book of Judges', resto: 'Grand Rapids: Eerdmans, 2012. (The New International Commentary on the Old Testament).',
+    },
+    {
+      nota: 'Dale Ralph Davis destaca a tensão de 1.19: o SENHOR estava com Judá, mas Judá não expulsou os moradores do vale por causa dos carros de ferro — uma explicação que soa como desculpa diante da promessa de Js 17.18. Comentário a Jz 1.19.',
+      autor: 'DAVIS, Dale Ralph.', titulo: 'Judges: Such a Great Salvation', resto: 'Fearn, Ross-shire: Christian Focus, 2000. (Focus on the Bible).',
+    },
+    {
+      nota: 'Daniel Block vê no episódio de Betel (1.22-26) um modelo da cananização de Israel: em vez de executar a ordem de Deus, os israelitas fazem um acordo com um cananeu, que é poupado e reconstrói a antiga Luz em outro lugar. Comentário a Jz 1.22-26.',
+      autor: 'BLOCK, Daniel I.', titulo: 'Judges, Ruth', resto: 'Nashville: Broadman & Holman, 1999. (The New American Commentary, 6).',
+    },
+  ],
+  286: [
+    {
+      nota: 'Matthew Henry observa que o povo em Boquim chorou e ofereceu sacrifícios, mas sem a reforma correspondente: lágrimas diante da repreensão de Deus não equivalem a um arrependimento que abandona o pecado. Comentário a Jz 2.1-5.',
+      autor: 'HENRY, Matthew.', titulo: 'Commentary on the Whole Bible', resto: 'Peabody: Hendrickson, 1991. v. 2: Joshua to Esther.',
+    },
+    {
+      nota: 'Dale Ralph Davis destaca 2.10 como o diagnóstico do livro: uma geração que não conhecia o SENHOR nem as suas obras mostra o fracasso na transmissão da fé, que é tarefa de cada geração para com a seguinte. Comentário a Jz 2.6-10.',
+      autor: 'DAVIS, Dale Ralph.', titulo: 'Judges: Such a Great Salvation', resto: 'Fearn, Ross-shire: Christian Focus, 2000. (Focus on the Bible).',
+    },
+    {
+      nota: 'Barry Webb observa que o padrão de 2.11-19 não descreve um ciclo que se repete igual, mas uma espiral descendente — "corrompiam-se mais do que seus pais" (2.19) —, ao mesmo tempo em que destaca a compaixão do SENHOR diante dos gemidos do povo (2.18). Comentário a Jz 2.11-19.',
+      autor: 'WEBB, Barry G.', titulo: 'The Book of Judges', resto: 'Grand Rapids: Eerdmans, 2012. (The New International Commentary on the Old Testament).',
+    },
+  ],
+  287: [
+    {
+      nota: 'Daniel Block observa que o nome Cusã-Risataim significa algo como "Cusã da dupla maldade", provavelmente um apelido pejorativo criado pelos israelitas, e que o relato breve enfatiza a grandeza do inimigo vencido pela intervenção do SENHOR. Comentário a Jz 3.7-11.',
+      autor: 'BLOCK, Daniel I.', titulo: 'Judges, Ruth', resto: 'Nashville: Broadman & Holman, 1999. (The New American Commentary, 6).',
+    },
+    {
+      nota: 'Barry Webb apresenta a narrativa de Otoniel como o paradigma dos juízes: todos os elementos do ciclo aparecem nela em forma pura, fornecendo o padrão com o qual os juízes seguintes serão comparados. Comentário a Jz 3.7-11.',
+      autor: 'WEBB, Barry G.', titulo: 'The Book of Judges', resto: 'Grand Rapids: Eerdmans, 2012. (The New International Commentary on the Old Testament).',
+    },
+    {
+      nota: 'Timothy Keller observa que, no relato de Otoniel, todos os verbos decisivos têm Deus como sujeito — o SENHOR levanta, o Espírito vem, o SENHOR entrega —, mostrando que a libertação é inteiramente obra da graça de Deus. Comentário a Jz 3.7-11.',
+      autor: 'KELLER, Timothy.', titulo: 'Judges for You', resto: 'Purcellville: The Good Book Company, 2013.',
+    },
+  ],
+  288: [
+    {
+      nota: 'Matthew Henry comenta que o mesmo Deus que fortaleceu Eglom como instrumento de disciplina sobre Israel (3.12) levantou Eúde como libertador quando o povo clamou, mostrando que tanto a vara quanto o livramento estão nas mãos do SENHOR. Comentário a Jz 3.12-15.',
+      autor: 'HENRY, Matthew.', titulo: 'Commentary on the Whole Bible', resto: 'Peabody: Hendrickson, 1991. v. 2: Joshua to Esther.',
+    },
+    {
+      nota: 'Dale Ralph Davis destaca a ironia e o humor da narrativa — o benjamita ("filho da mão direita") canhoto, o rei obeso e os servos constrangidos à porta — e observa que Deus usa um instrumento improvável para libertar seu povo. Comentário a Jz 3.15-26.',
+      autor: 'DAVIS, Dale Ralph.', titulo: 'Judges: Such a Great Salvation', resto: 'Fearn, Ross-shire: Christian Focus, 2000. (Focus on the Bible).',
+    },
+    {
+      nota: 'Daniel Block observa o duplo sentido do hebraico dabar em 3.19-20 ("palavra" e "coisa"): Eúde anuncia uma "palavra de Deus", e o rei recebe o juízo divino na forma do punhal. Comentário a Jz 3.19-22.',
+      autor: 'BLOCK, Daniel I.', titulo: 'Judges, Ruth', resto: 'Nashville: Broadman & Holman, 1999. (The New American Commentary, 6).',
+    },
+  ],
+  289: [
+    {
+      nota: 'Daniel Block observa que "filho de Anate" remete ao nome de uma deusa cananeia da guerra, o que pode indicar uma origem cananeia ou uma família de influência estrangeira, ressaltando que Deus usou alguém de fora do padrão para libertar Israel. Comentário a Jz 3.31.',
+      autor: 'BLOCK, Daniel I.', titulo: 'Judges, Ruth', resto: 'Nashville: Broadman & Holman, 1999. (The New American Commentary, 6).',
+    },
+    {
+      nota: 'Matthew Henry comenta que Sangar, sem armas de guerra, fez grande obra com uma aguilhada de bois, e que Deus muitas vezes realiza grandes coisas por meio de instrumentos fracos e desprezíveis, para que a glória seja somente dele. Comentário a Jz 3.31.',
+      autor: 'HENRY, Matthew.', titulo: 'Commentary on the Whole Bible', resto: 'Peabody: Hendrickson, 1991. v. 2: Joshua to Esther.',
+    },
+    {
+      nota: 'Barry Webb observa que a breve nota sobre Sangar funciona como ponte entre Eúde e Débora, e que o Cântico de Débora (5.6) mostra que, mesmo nos dias de Sangar, a situação de Israel permanecia precária. Comentário a Jz 3.31; 5.6.',
+      autor: 'WEBB, Barry G.', titulo: 'The Book of Judges', resto: 'Grand Rapids: Eerdmans, 2012. (The New International Commentary on the Old Testament).',
+    },
+  ],
+  290: [
+    {
+      nota: 'Dale Ralph Davis destaca que o verdadeiro herói da narrativa é o SENHOR: é ele quem derrota Sísera e os seus carros (4.15) e quem humilha Jabim (4.23), enquanto os instrumentos humanos ocupam um lugar secundário. Comentário a Jz 4.14-24.',
+      autor: 'DAVIS, Dale Ralph.', titulo: 'Judges: Such a Great Salvation', resto: 'Fearn, Ross-shire: Christian Focus, 2000. (Focus on the Bible).',
+    },
+    {
+      nota: 'Barry Webb observa a ironia da profecia de 4.9: o leitor espera que a mulher que receberá a honra seja Débora, mas é Jael, uma estrangeira, quem mata Sísera — e a hesitação de Baraque o faz chegar tarde à tenda. Comentário a Jz 4.4-22.',
+      autor: 'WEBB, Barry G.', titulo: 'The Book of Judges', resto: 'Grand Rapids: Eerdmans, 2012. (The New International Commentary on the Old Testament).',
+    },
+    {
+      nota: 'Daniel Block relaciona a derrota dos carros de ferro ao Cântico de Débora (5.20-21), que atribui a vitória a uma intervenção cósmica de Deus: as águas do Quisom arrastam os inimigos e neutralizam a principal força militar cananeia. Comentário a Jz 4.12-16; 5.19-22.',
+      autor: 'BLOCK, Daniel I.', titulo: 'Judges, Ruth', resto: 'Nashville: Broadman & Holman, 1999. (The New American Commentary, 6).',
+    },
+  ],
+  291: [
+    {
+      nota: 'Daniel Block chama a atenção para o contraste entre as duas mães do cântico — Débora, "mãe em Israel" (5.7), e a mãe de Sísera, que espera em vão à janela (5.28-30) —, um recurso poético que destaca a inversão de destinos produzida pela vitória do SENHOR. Comentário a Jz 5.',
+      autor: 'BLOCK, Daniel I.', titulo: 'Judges, Ruth', resto: 'Nashville: Broadman & Holman, 1999. (The New American Commentary, 6).',
+    },
+    {
+      nota: 'Matthew Henry comenta a maldição de Meroz (5.23): o pecado de Meroz não foi lutar contra Israel, mas recusar-se a vir em socorro do SENHOR, e adverte contra a neutralidade e a omissão quando a causa de Deus está em jogo. Comentário a Jz 5.23.',
+      autor: 'HENRY, Matthew.', titulo: 'Commentary on the Whole Bible', resto: 'Peabody: Hendrickson, 1991. v. 2: Joshua to Esther.',
+    },
+    {
+      nota: 'Barry Webb observa que o cântico interpreta teologicamente a narrativa do capítulo 4, apresentando a vitória como resultado da intervenção do SENHOR sobre as forças da natureza — as estrelas e as águas do Quisom. Comentário a Jz 5.19-22.',
+      autor: 'WEBB, Barry G.', titulo: 'The Book of Judges', resto: 'Grand Rapids: Eerdmans, 2012. (The New International Commentary on the Old Testament).',
+    },
+  ],
+  292: [
+    {
+      nota: 'Dale Ralph Davis destaca que, quando Israel clama (6.7), Deus envia primeiro um profeta e não um libertador: antes de resolver a opressão, o SENHOR expõe a causa espiritual do sofrimento — a desobediência e a idolatria do povo. Comentário a Jz 6.7-10.',
+      autor: 'DAVIS, Dale Ralph.', titulo: 'Judges: Such a Great Salvation', resto: 'Fearn, Ross-shire: Christian Focus, 2000. (Focus on the Bible).',
+    },
+    {
+      nota: 'Matthew Henry entende que o Anjo do SENHOR que aparece a Gideão é o próprio Filho de Deus, que aceitou a oferta, foi reconhecido como SENHOR e deu a Gideão a paz ("Paz seja contigo"), antecipando a sua obra de reconciliação. Comentário a Jz 6.11-24.',
+      autor: 'HENRY, Matthew.', titulo: 'Commentary on the Whole Bible', resto: 'Peabody: Hendrickson, 1991. v. 2: Joshua to Esther.',
+    },
+    {
+      nota: 'Timothy Keller observa que o Anjo chama Gideão de "homem valente" quando ele está escondido com medo: Deus o trata de acordo com aquilo que a sua graça fará dele, e a base da missão é a promessa da presença divina (6.16). Comentário a Jz 6.11-16.',
+      autor: 'KELLER, Timothy.', titulo: 'Judges for You', resto: 'Purcellville: The Good Book Company, 2013.',
+    },
+  ],
+  293: [
+    {
+      nota: 'Daniel Block observa a ligação entre o touro de sete anos (6.25) e os sete anos de opressão midianita (6.1), sugerindo que o sacrifício simboliza o fim do período de juízo ligado à idolatria de Israel. Comentário a Jz 6.25-26.',
+      autor: 'BLOCK, Daniel I.', titulo: 'Judges, Ruth', resto: 'Nashville: Broadman & Holman, 1999. (The New American Commentary, 6).',
+    },
+    {
+      nota: 'Dale Ralph Davis destaca que a primeira tarefa de Gideão não é militar, mas religiosa e doméstica: antes de enfrentar Midiã, ele precisa derrubar o altar de Baal na casa do próprio pai, porque a reforma começa onde está a idolatria. Comentário a Jz 6.25-32.',
+      autor: 'DAVIS, Dale Ralph.', titulo: 'Judges: Such a Great Salvation', resto: 'Fearn, Ross-shire: Christian Focus, 2000. (Focus on the Bible).',
+    },
+    {
+      nota: 'Matthew Henry comenta a resposta de Joás (6.31): um deus que precisa que os homens o defendam não é deus algum, e o novo nome de Gideão, Jerubaal, tornou-se um desafio permanente à impotência de Baal. Comentário a Jz 6.28-32.',
+      autor: 'HENRY, Matthew.', titulo: 'Commentary on the Whole Bible', resto: 'Peabody: Hendrickson, 1991. v. 2: Joshua to Esther.',
+    },
+  ],
+  294: [
+    {
+      nota: 'Dale Ralph Davis adverte contra o uso do velo como método normativo para discernir a vontade de Deus: Gideão já conhecia a vontade divina ("como disseste"), e o episódio revela a fraqueza da sua fé e a paciência condescendente de Deus. Comentário a Jz 6.36-40.',
+      autor: 'DAVIS, Dale Ralph.', titulo: 'Judges: Such a Great Salvation', resto: 'Fearn, Ross-shire: Christian Focus, 2000. (Focus on the Bible).',
+    },
+    {
+      nota: 'Barry Webb observa a ironia de que Gideão pede sinais logo depois de ser revestido pelo Espírito do SENHOR (6.34) e de as tribos responderem ao seu chamado, mostrando que a sua hesitação persiste mesmo diante da evidência da ação divina. Comentário a Jz 6.33-40.',
+      autor: 'WEBB, Barry G.', titulo: 'The Book of Judges', resto: 'Grand Rapids: Eerdmans, 2012. (The New International Commentary on the Old Testament).',
+    },
+    {
+      nota: 'Matthew Henry destaca a condescendência de Deus em atender aos pedidos de Gideão: o SENHOR não se irritou com a fraqueza do seu servo, mas a socorreu, e assim mostra a sua ternura para com os que têm fé verdadeira, embora fraca. Comentário a Jz 6.36-40.',
+      autor: 'HENRY, Matthew.', titulo: 'Commentary on the Whole Bible', resto: 'Peabody: Hendrickson, 1991. v. 2: Joshua to Esther.',
+    },
+  ],
+  295: [
+    {
+      nota: 'Matthew Henry comenta que Deus reduziu o exército de Gideão para que Israel não atribuísse a vitória à sua própria força (7.2), e que o SENHOR muitas vezes escolhe agir por meios fracos para que toda a glória seja dada somente a ele. Comentário a Jz 7.1-8.',
+      autor: 'HENRY, Matthew.', titulo: 'Commentary on the Whole Bible', resto: 'Peabody: Hendrickson, 1991. v. 2: Joshua to Esther.',
+    },
+    {
+      nota: 'Dale Ralph Davis destaca a graça de Deus em 7.10-11: sem que Gideão pedisse, o SENHOR lhe oferece um meio de vencer o medo, levando-o a ouvir o sonho do midianita, o que mostra a ternura de Deus para com o seu servo temeroso. Comentário a Jz 7.9-15.',
+      autor: 'DAVIS, Dale Ralph.', titulo: 'Judges: Such a Great Salvation', resto: 'Fearn, Ross-shire: Christian Focus, 2000. (Focus on the Bible).',
+    },
+    {
+      nota: 'Barry Webb observa que o grito de guerra de 7.18-20 acrescenta o nome de Gideão ao do SENHOR, um primeiro indício do protagonismo crescente de Gideão que se tornará evidente no capítulo 8. Comentário a Jz 7.16-22.',
+      autor: 'WEBB, Barry G.', titulo: 'The Book of Judges', resto: 'Grand Rapids: Eerdmans, 2012. (The New International Commentary on the Old Testament).',
+    },
+  ],
+  296: [
+    {
+      nota: 'Barry Webb chama a atenção para o paralelo entre a queixa de Efraim a Gideão (8.1-3) e a queixa a Jefté (12.1-6): a mesma situação termina em paz com Gideão e em guerra civil com Jefté, mostrando a deterioração da liderança ao longo do livro. Comentário a Jz 8.1-3; 12.1-6.',
+      autor: 'WEBB, Barry G.', titulo: 'The Book of Judges', resto: 'Grand Rapids: Eerdmans, 2012. (The New International Commentary on the Old Testament).',
+    },
+    {
+      nota: 'Matthew Henry vê na resposta de Gideão uma ilustração de Pv 15.1: com humildade e palavras brandas, ele valorizou a contribuição de Efraim e diminuiu a sua, e assim desviou a ira e preservou a paz entre as tribos. Comentário a Jz 8.1-3.',
+      autor: 'HENRY, Matthew.', titulo: 'Commentary on the Whole Bible', resto: 'Peabody: Hendrickson, 1991. v. 2: Joshua to Esther.',
+    },
+    {
+      nota: 'Dale Ralph Davis contrasta a diplomacia humilde de Gideão com Efraim (8.1-3) e a dureza com que ele tratará Sucote e Penuel logo em seguida (8.4-17), mostrando a complexidade e as contradições do caráter de Gideão. Comentário a Jz 8.1-17.',
+      autor: 'DAVIS, Dale Ralph.', titulo: 'Judges: Such a Great Salvation', resto: 'Fearn, Ross-shire: Christian Focus, 2000. (Focus on the Bible).',
+    },
+  ],
+  297: [
+    {
+      nota: 'Barry Webb observa que, em 8.4-21, a guerra do SENHOR se transforma em uma vingança pessoal de Gideão, revelada no diálogo com Zeba e Zalmuna ("eram meus irmãos", 8.19), e que a referência explícita ao SENHOR quase desaparece da narrativa. Comentário a Jz 8.4-21.',
+      autor: 'WEBB, Barry G.', titulo: 'The Book of Judges', resto: 'Grand Rapids: Eerdmans, 2012. (The New International Commentary on the Old Testament).',
+    },
+    {
+      nota: 'Daniel Block destaca a gravidade das ações de Gideão contra Sucote e Penuel: o libertador volta a sua violência contra cidades israelitas, tratando compatriotas com a dureza reservada aos inimigos. Comentário a Jz 8.13-17.',
+      autor: 'BLOCK, Daniel I.', titulo: 'Judges, Ruth', resto: 'Nashville: Broadman & Holman, 1999. (The New American Commentary, 6).',
+    },
+    {
+      nota: 'Dale Ralph Davis nota o contraste entre a perseverança admirável de Gideão — "cansados, mas ainda perseguindo" (8.4) — e a dureza vingativa que se manifesta no mesmo episódio. Comentário a Jz 8.4-21.',
+      autor: 'DAVIS, Dale Ralph.', titulo: 'Judges: Such a Great Salvation', resto: 'Fearn, Ross-shire: Christian Focus, 2000. (Focus on the Bible).',
+    },
+  ],
+  298: [
+    {
+      nota: 'Daniel Block observa a contradição entre as palavras de Gideão, que recusa a realeza (8.23), e as suas ações, que imitam as de um rei — o ouro, o éfode, o harém e o nome do filho, Abimeleque, que significa "meu pai é rei" (8.31). Comentário a Jz 8.22-31.',
+      autor: 'BLOCK, Daniel I.', titulo: 'Judges, Ruth', resto: 'Nashville: Broadman & Holman, 1999. (The New American Commentary, 6).',
+    },
+    {
+      nota: 'Barry Webb sugere que o éfode talvez tenha sido feito para fins oraculares, mas, instalado em Ofra fora do santuário autorizado, tornou-se objeto de culto ilegítimo e "laço" para Gideão e sua casa. Comentário a Jz 8.24-27.',
+      autor: 'WEBB, Barry G.', titulo: 'The Book of Judges', resto: 'Grand Rapids: Eerdmans, 2012. (The New International Commentary on the Old Testament).',
+    },
+    {
+      nota: 'Matthew Henry comenta que mesmo os homens bons podem dar passos errados que se tornam ocasião de pecado para outros, e que o éfode de Gideão, talvez feito com boa intenção, levou Israel à idolatria. Comentário a Jz 8.24-28.',
+      autor: 'HENRY, Matthew.', titulo: 'Commentary on the Whole Bible', resto: 'Peabody: Hendrickson, 1991. v. 2: Joshua to Esther.',
+    },
+  ],
+  299: [
+    {
+      nota: 'Daniel Block observa que o nome Abimeleque ("meu pai é rei", 8.31) revela as pretensões reais de Gideão, apesar da sua recusa formal da realeza, e prepara a tragédia narrada no capítulo 9. Comentário a Jz 8.29-35.',
+      autor: 'BLOCK, Daniel I.', titulo: 'Judges, Ruth', resto: 'Nashville: Broadman & Holman, 1999. (The New American Commentary, 6).',
+    },
+    {
+      nota: 'Barry Webb observa que o nome Baal-Berite ("Baal da aliança", 8.33) sugere uma paródia da aliança com o SENHOR: Israel substitui o Deus da aliança por um deus cananeu associado à ideia de aliança. Comentário a Jz 8.33-35.',
+      autor: 'WEBB, Barry G.', titulo: 'The Book of Judges', resto: 'Grand Rapids: Eerdmans, 2012. (The New International Commentary on the Old Testament).',
+    },
+    {
+      nota: 'Dale Ralph Davis destaca a rapidez da apostasia logo após a morte de Gideão (8.33) e a dupla ingratidão de Israel — contra o SENHOR, que o livrara, e contra a casa de Jerubaal (8.34-35) —, mostrando que a fidelidade do povo dependia da presença do juiz. Comentário a Jz 8.33-35.',
+      autor: 'DAVIS, Dale Ralph.', titulo: 'Judges: Such a Great Salvation', resto: 'Fearn, Ross-shire: Christian Focus, 2000. (Focus on the Bible).',
+    },
+  ],
 };
 
 // Marcadores sobrescritos (¹ ² ³ …) viram selos clicáveis que levam à nota correspondente
@@ -1869,49 +2247,330 @@ A' — "O homem se tornou como um de nós, conhecendo o bem e o mal" (3.22-24) �
   // Juízes
   // [285]
   if (/de israel fracasso a completo conquista de canaa/i.test(p))
-    return `A simetria do fracasso de Israel espelha Judá e Simeão com vitórias iniciais (A) ↔ Dã recuado para a montanha (A'). No centro: Bete-El tomado por traição interna — não pela força, mas pela informação de um desertor. O pivô é a descida progressiva: a narrativa começa com vitórias parciais e termina com regressão. Cada tribo falha um pouco mais do que a anterior. Na vida da igreja: o compromisso parcial com a santidade não estabiliza — regride. Cada concessão ao que deveria ser expulso cria raízes que a próxima geração pagará. O mapa do fracasso de Israel é lição de anatomia espiritual: a obediência incompleta não é virtude moderada, é início de apostasia.`;
+    return `📖 O texto em resumo (Jz 1.1-36): depois da morte de Josué, Israel pergunta: "Quem subirá primeiro?". Judá e Simeão vencem Adoni-Bezeque, que reconhece: "Assim como eu fiz, assim Deus me pagou". Calebe entrega a filha Acsa a Otniel, e ela pede fontes de água. Mas logo o texto muda de tom: Judá "não pôde" expulsar os moradores do vale, porque tinham carros de ferro; Benjamim não expulsa os jebuseus; a casa de José toma Betel graças a um morador que mostra a entrada da cidade e é poupado. Depois vem uma lista que piora a cada tribo: Manassés, Efraim, Zebulom, Aser e Naftali não expulsam os cananeus — e Dã é empurrado para a montanha.
+
+🔁 O espelho (quiasma) — cinco camadas que se dobram ao meio:
+A — Judá e Simeão: as primeiras vitórias (1.1-8) → a OBEDIÊNCIA
+   ↳ B — Judá não expulsa os moradores do vale (1.9-21) → a PRIMEIRA falha
+      ↳ C — CENTRO: Betel tomada por um acordo com um cananeu, que é poupado (1.22-26) → o ACORDO
+   ↳ B' — As tribos do norte falham uma após a outra (1.27-33) → a FALHA em série
+A' — Dã é empurrado de volta para a montanha (1.34-36) → a DERROTA
+
+🔎 Como ler o espelho:
+• A ↔ A' (avançar ↔ recuar): o capítulo começa com Judá subindo e vencendo e termina com Dã recuando, encurralado pelos amorreus. Em 36 versículos, Israel passa da conquista à retirada. O ponto de partida é a pergunta certa ("quem subirá?"); o ponto de chegada é um povo que já não consegue nem ocupar a própria herança.¹
+• B ↔ B' (não pôde ↔ não quis): a desculpa de Judá são os carros de ferro (1.19) — embora o texto diga, no mesmo versículo, que "o SENHOR era com Judá", e Deus já tivesse prometido vitória mesmo contra carros de ferro (Js 17.18). Nas tribos do norte, a linguagem piora: primeiro os cananeus habitam no meio de Israel; depois Israel habita no meio dos cananeus (1.32). A convivência vira assimilação.²
+• C (o centro): Betel — "casa de Deus" — é tomada por meio de um acordo com um cananeu, que sai livre e funda outra cidade com o nome antigo (Luz). No centro do capítulo, Israel troca a ordem de Deus por um bom negócio. A semente da apostasia não é uma rebelião aberta, mas uma série de acordos "razoáveis".³
+
+🕰️ Por que isso importa: Juízes começa explicando por que o resto do livro vai dar errado. Israel não perdeu a terra numa grande batalha; perdeu-a aos poucos, em concessões, desculpas e convivências. O que não foi expulso no capítulo 1 se tornará "laço" no capítulo 2 e deuses no capítulo 3.
+
+⛪ Na vida da igreja:
+• Obediência parcial é desobediência. Expulsar "quase todos" os cananeus foi suficiente para contaminar gerações. O pecado tolerado não fica parado.
+• Cuidado com as desculpas. "Eles tinham carros de ferro" soa razoável, mas Deus tinha prometido vitória. Muitas vezes chamamos de impossível o que, na verdade, não queremos enfrentar.
+• Os acordos pequenos decidem o futuro. A igreja não costuma cair num dia; ela se acomoda ao mundo um acordo de cada vez (Tg 4.4).`;
   // [286]
   if (/de israel infidelidade/i.test(p))
-    return `A simetria da infidelidade de Israel espelha o anjo em Boquim (A) ↔ Israel vivendo entre cananeus e servindo seus deuses (A'). No centro: o ciclo dos juízes — o padrão recorrente: pecado, opressão, clamor, libertação, recaída. O pivô é que o ciclo é descrito não como história passada, mas como lição metodológica: cada juiz executará o mesmo padrão. Na vida da igreja: reconhecer o padrão é a metade da libertação. O ciclo não é inevitável — é interrompido quando o clamor é acompanhado de arrependimento genuíno, não apenas de desconforto. Boquim — "o lugar do choro" — é onde o ciclo pode ser quebrado.`;
+    return `📖 O texto em resumo (Jz 2.1–3.6): o Anjo do SENHOR sobe de Gilgal a Boquim e acusa Israel: "Não obedecestes à minha voz. Por que fizestes isso?". O povo chora — por isso o lugar se chama Boquim, "os que choram" — e oferece sacrifícios. O texto volta à morte de Josué e afirma: "levantou-se outra geração que não conhecia o SENHOR". Então descreve o ciclo que vai marcar todo o livro: Israel faz o mal e serve aos baalins; Deus os entrega aos inimigos; eles gemem; Deus levanta juízes e os livra; mas, quando o juiz morre, voltam a se corromper "mais do que seus pais". Deus deixa nações em Canaã para provar Israel — e Israel se casa com elas e serve aos seus deuses.
+
+🔁 O espelho (quiasma) — cinco camadas que se dobram ao meio:
+A — O Anjo em Boquim: "Por que fizestes isso?" (2.1-5) → a ACUSAÇÃO
+   ↳ B — Uma geração que não conhecia o SENHOR (2.6-13) → o ESQUECIMENTO
+      ↳ C — CENTRO: o ciclo dos juízes — pecado, opressão, gemido, livramento (2.14-19) → o CICLO
+   ↳ B' — As nações deixadas para provar Israel (2.20–3.4) → a PROVA
+A' — Israel habita entre os cananeus, casa com eles e serve aos seus deuses (3.5-6) → a CONFIRMAÇÃO
+
+🔎 Como ler o espelho:
+• A ↔ A' (o aviso ↔ o resultado): em Boquim, Deus avisa que os povos não expulsos seriam "laços" e seus deuses, "ciladas" (2.3). No fim da seção, o aviso se cumpre: casamentos mistos e culto aos deuses deles (3.6). Israel chorou em Boquim, mas não mudou de caminho. Lágrimas não são o mesmo que arrependimento.¹
+• B ↔ B' (esquecer e ser provado): a nova geração "não conhecia o SENHOR, nem a obra que fizera a Israel" (2.10). Por isso Deus deixa nações para provar se Israel guardaria o caminho do SENHOR (2.22). Quem não conhece a Deus pela memória será provado pela dificuldade.²
+• C (o centro): o ciclo não é um círculo fechado, mas uma espiral que desce: "tornavam a corromper-se mais do que seus pais" (2.19). E no meio do ciclo aparece o coração de Deus: "o SENHOR se compadecia deles, por causa dos seus gemidos" (2.18). O livro inteiro vive dessa tensão: a infidelidade crescente do povo e a compaixão persistente de Deus.³
+
+🕰️ Por que isso importa: em uma geração, Israel passou dos que viram as obras de Deus para os que nem o conheciam. A fé não foi transmitida. Juízes 2 é o mapa do livro e também um diagnóstico de qualquer igreja ou família: quando a memória de Deus se perde, o coração procura outros deuses — e o ciclo começa.
+
+⛪ Na vida da igreja:
+• Fé precisa ser transmitida. Uma geração pode perder o que a anterior viveu. Ensinar as crianças e os jovens não é opcional (Sl 78.4-7).
+• Chorar não basta. Boquim teve lágrimas e sacrifícios, mas não mudança. Arrependimento verdadeiro abandona os ídolos.
+• A compaixão de Deus é maior que o ciclo. Ele ouve gemidos, levanta libertadores e, em Cristo, quebra o ciclo do pecado de uma vez por todas.`;
   // [287]
   if (/otoniel/i.test(p))
-    return `A simetria de Otoniel espelha Israel fazendo o mal (A) ↔ a terra descansando quarenta anos (A'). No centro: Otoniel levantado — o Espírito veio sobre ele. O pivô é a brevidade: o primeiro juiz recebe a narrativa mais condensada. O Espírito vem, a vitória acontece, a terra descansa. Sem drama, sem vacilação, sem desvios. Na vida da igreja: a fidelidade silenciosa de Otoniel é modelo que o texto preserva precisamente por não ter história complicada. Não é a narrativa mais dramática — é a mais limpa. Há ministérios que Deus usa sem que a história deles caiba num romance.`;
+    return `📖 O texto em resumo (Jz 3.7-11): os filhos de Israel fazem o mal, esquecem o SENHOR e servem aos baalins e aos postes-ídolos. Deus os entrega a Cusã-Risataim, rei da Mesopotâmia, por oito anos. Eles clamam ao SENHOR, e o SENHOR levanta um libertador: Otoniel, filho de Quenaz, irmão mais novo de Calebe. "Veio sobre ele o Espírito do SENHOR", ele julga Israel, sai à guerra, e o SENHOR entrega o inimigo em suas mãos. A terra descansa quarenta anos.
+
+🔁 O espelho (quiasma) — cinco camadas que se dobram ao meio:
+A — Israel faz o mal: oito anos de opressão (3.7-8) → o PECADO
+   ↳ B — Israel clama ao SENHOR (3.9a) → o CLAMOR
+      ↳ C — CENTRO: o SENHOR levanta Otoniel, e o Espírito vem sobre ele (3.9b-10a) → a GRAÇA
+   ↳ B' — O SENHOR entrega Cusã-Risataim; Otoniel prevalece (3.10b) → a VITÓRIA
+A' — A terra descansa quarenta anos (3.11) → o DESCANSO
+
+🔎 Como ler o espelho:
+• A ↔ A' (opressão ↔ descanso): oito anos de opressão terminam em quarenta anos de paz. O nome do opressor, Cusã-Risataim, soa em hebraico como "Cusã da dupla maldade" — um apelido zombeteiro. O inimigo parecia enorme, vindo da Mesopotâmia, mas Deus o derruba num único versículo.¹
+• B ↔ B' (clamor e vitória): Israel clama e o SENHOR responde. O texto não registra discursos, estratégias nem detalhes da batalha. Tudo é resumido em uma frase: "o SENHOR entregou nas suas mãos". A vitória é atribuída a Deus do começo ao fim.²
+• C (o centro): Otoniel é o juiz-modelo. Ele tem todos os elementos que os outros juízes vão perdendo aos poucos: é de uma família fiel (sobrinho de Calebe), é levantado por Deus, recebe o Espírito, julga e vence, e não há nenhum pecado registrado contra ele. No centro do texto não está a força de Otoniel, mas o Espírito do SENHOR.³
+
+🕰️ Por que isso importa: Otoniel é o "molde" pelo qual os outros juízes serão medidos. Depois dele, cada juiz terá mais falhas, e Israel, mais problemas. A primeira história do ciclo mostra como Deus salva: o povo clama, Deus levanta alguém, o Espírito capacita, Deus dá a vitória, e há descanso. É um retrato, em pequena escala, do evangelho.
+
+⛪ Na vida da igreja:
+• A salvação é obra de Deus. "O SENHOR levantou", "o Espírito veio", "o SENHOR entregou". A igreja vive da graça, não da própria força.
+• Líderes cheios do Espírito. Antes de "julgar" e "sair à guerra", Otoniel recebeu o Espírito. Liderança na igreja começa com dependência de Deus, não com talento.
+• Herança de fé. Otoniel veio da família de Calebe. Famílias fiéis formam líderes fiéis.`;
   // [288]
   if (/eude/i.test(p))
-    return `A simetria de Eúde espelha dezoito anos de opressão de Moabe (A) ↔ Moabe subjugado, terra descansando oitenta anos (A'). No centro: Eúde mata Eglom no aposento privado — a cena mais íntima e mais brutal de Juízes. O pivô é a espada de dois gumes escondida na coxa direita: Eúde usa a surpresa e a ineficiência dos servos de Eglom. Na vida da igreja: Deus usa estratégias que não constam nos manuais de guerra. Eúde não tinha exército — tinha coragem e clareza de missão. O maior período de descanso em Juízes (oitenta anos) nasce da ação mais solitária registrada no livro.`;
+    return `📖 O texto em resumo (Jz 3.12-30): Israel volta a fazer o mal, e o SENHOR fortalece Eglom, rei de Moabe — um homem "muito gordo" —, que domina Israel dezoito anos. Israel clama, e Deus levanta Eúde, benjamita e canhoto. Ele faz um punhal de dois gumes e o prende na coxa direita, por baixo da roupa. Leva o tributo ao rei, sai, volta sozinho e diz: "Tenho uma palavra de Deus para ti". Mata Eglom no quarto do andar de cima; a gordura cobre o punhal. Eúde tranca as portas e foge, enquanto os servos pensam que o rei está se aliviando. Depois toca a trombeta em Efraim, toma os vaus do Jordão, e dez mil moabitas caem. A terra descansa oitenta anos.
+
+🔁 O espelho (quiasma) — cinco camadas que se dobram ao meio:
+A — Moabe oprime Israel por dezoito anos (3.12-14) → a OPRESSÃO
+   ↳ B — Eúde, o canhoto, prepara o punhal e leva o tributo (3.15-18) → o PLANO
+      ↳ C — CENTRO: "Tenho uma palavra de Deus para ti" — Eglom morre no quarto (3.19-22) → o JUÍZO
+   ↳ B' — Eúde escapa enquanto os servos esperam (3.23-26) → a FUGA
+A' — Moabe é subjugado; a terra descansa oitenta anos (3.27-30) → o DESCANSO
+
+🔎 Como ler o espelho:
+• A ↔ A' (dezoito anos ↔ oitenta anos): o texto abre com "o SENHOR fortaleceu Eglom" e fecha com Moabe subjugado. Deus levantou o opressor como disciplina e o derrubou como livramento. O descanso de oitenta anos é o mais longo do livro: Deus dá mais do que tirou.¹
+• B ↔ B' (o plano e a fuga): Eúde é benjamita — da tribo cujo nome significa "filho da mão direita" — mas é canhoto. O guarda do rei provavelmente revistava o lado esquerdo, onde um destro levaria a arma. Deus usa justamente o que parecia uma limitação. A narrativa está cheia de ironia e até de humor: os servos esperam do lado de fora, constrangidos, enquanto o libertador foge.²
+• C (o centro): a frase "tenho uma palavra de Deus para ti" tem duplo sentido, porque no hebraico dabar significa tanto "palavra" quanto "coisa". Eglom se levanta para ouvir um oráculo e recebe o juízo. O rei que engordava com o tributo de Israel é derrubado pela "palavra" de Deus.³
+
+🕰️ Por que isso importa: a história de Eúde é desconfortável — há engano, violência e detalhes crus. O texto não apresenta Eúde como modelo moral em tudo, mas mostra que Deus é capaz de derrubar opressores aparentemente invencíveis, usando instrumentos improváveis. O poder de Moabe parecia enorme, mas era apenas gordura diante da palavra de Deus.
+
+⛪ Na vida da igreja:
+• Deus usa os "canhotos". Pessoas com limitações, fora do padrão ou desacreditadas podem ser exatamente quem Deus vai usar (1Co 1.27).
+• Nenhum opressor é grande demais. Os "Eglons" que parecem dominar — vícios, injustiças, medos — não resistem à palavra de Deus.
+• A Palavra corta. A Escritura é "mais cortante do que qualquer espada de dois gumes" (Hb 4.12). Ela ainda derruba o que se levanta contra Deus.`;
   // [289]
   if (/sangar/i.test(p))
-    return `A simetria de Sangar espelha o seu nome e origem (A) ↔ "e também livrou Israel" (A'). No centro: feriu seiscentos filisteus com uma aguilhada de bois. O pivô é o instrumento: não uma espada, não um exército — uma ferramenta agrícola. Na vida da igreja: Sangar não tinha armamento militar — tinha o que estava em sua mão. A libertação de Israel veio de um agricultor com o instrumento do seu trabalho diário. O que está na mão de cada pessoa, quando consagrado ao Senhor, pode liberar uma nação. Deus não pede ferramentas extraordinárias — pede coragem de usar o ordinário.`;
+    return `📖 O texto em resumo (Jz 3.31): "Depois dele, foi Sangar, filho de Anate, que feriu seiscentos homens dos filisteus com uma aguilhada de bois; e também ele libertou Israel". Um único versículo. Sangar volta a ser mencionado no Cântico de Débora: "Nos dias de Sangar, filho de Anate... cessaram as caravanas, e os viajantes tomavam desvios" (5.6).
+
+🔁 O espelho (quiasma) — três camadas que se dobram ao meio:
+A — Sangar, filho de Anate (3.31a) → o HOMEM
+   ↳ B — CENTRO: feriu seiscentos filisteus com uma aguilhada de bois (3.31b) → o INSTRUMENTO
+A' — "E também ele libertou Israel" (3.31c) → a LIBERTAÇÃO
+
+🔎 Como ler o espelho:
+• A ↔ A' (de onde veio ↔ o que fez): Sangar é chamado "filho de Anate", nome de uma deusa cananeia da guerra. Talvez ele viesse de uma cidade ou família de influência cananeia, talvez nem fosse israelita. O texto não esconde essa origem estranha, mas termina dizendo: "também ele libertou Israel". Deus pode usar quem vem de longe.¹
+• B (o centro): a arma é uma aguilhada de bois — uma vara longa, com ponta de metal, usada para conduzir o gado no arado. Não é espada nem lança; é uma ferramenta de trabalho. Na época, os filisteus controlavam o metal e as armas (1Sm 13.19-22). Sangar luta com o que tem nas mãos.²
+• O conjunto: o versículo está entre Eúde e Débora, como uma ponte. E o Cântico de Débora mostra que, mesmo depois de Sangar, as estradas continuavam perigosas. Ele não resolveu tudo, mas fez a sua parte. Deus constrói a sua história também com pessoas de um versículo só.³
+
+🕰️ Por que isso importa: muita gente acha que precisa de grandes recursos para servir a Deus. Sangar mostra o contrário: um homem comum, com uma ferramenta comum, numa situação desesperadora. A pergunta não é "o que eu não tenho?", mas "o que está na minha mão?" — como Deus perguntou a Moisés (Êx 4.2).
+
+⛪ Na vida da igreja:
+• Use o que está na sua mão. A ferramenta do seu trabalho, a sua casa, a sua profissão podem ser instrumentos de Deus.
+• Ninguém é pequeno demais. Uma vida "de um versículo" ainda é parte da história da salvação. Deus vê o serviço dos anônimos.
+• Deus usa quem vem de fora. A igreja deve acolher quem chega de outras histórias e origens: Deus pode levantar libertadores entre eles.`;
   // [290]
   if (/debora e baraque/i.test(p))
-    return `A simetria de Débora e Baraque espelha Jabim oprimindo por vinte anos (A) ↔ Jabim destruído (A'). No centro: "o Senhor entregará Sísera nas mãos de uma mulher" — a profecia muda a narrativa antes da batalha. O pivô é a recusa de Baraque: ele vai apenas se Débora for. A consequência é que a honra da vitória passa para Jaele. Na vida da igreja: a hesitação diante do chamado não cancela a missão de Deus — transfere a glória. Débora não repreende Baraque com amargura — declara as consequências com clareza. O Senhor cumpre Seu propósito com ou sem a coragem dos que hesitam.`;
+    return `📖 O texto em resumo (Jz 4.1-24): depois da morte de Eúde, Israel volta a fazer o mal. Jabim, rei de Canaã em Hazor, com o general Sísera e novecentos carros de ferro, oprime Israel por vinte anos. Débora, profetisa, julga Israel debaixo de uma palmeira. Ela chama Baraque e lhe transmite a ordem de Deus: reunir dez mil homens no monte Tabor. Baraque responde: "Se fores comigo, irei". Débora vai, mas avisa: "a honra não será tua, porque o SENHOR entregará Sísera nas mãos de uma mulher". No dia da batalha, ela diz: "Dispõe-te, porque este é o dia". O SENHOR derrota Sísera, que foge a pé até a tenda de Jael. Ela o recebe, dá leite, cobre-o — e crava uma estaca em sua cabeça. Jabim é subjugado.
+
+🔁 O espelho (quiasma) — cinco camadas que se dobram ao meio:
+A — Jabim oprime Israel por vinte anos (4.1-3) → a OPRESSÃO
+   ↳ B — Débora profetiza; Baraque hesita; "nas mãos de uma mulher" (4.4-9) → a PALAVRA
+      ↳ C — CENTRO: "Este é o dia" — o SENHOR desbarata Sísera (4.10-16) → a BATALHA do SENHOR
+   ↳ B' — Sísera foge a pé; Jael o mata na tenda (4.17-22) → a PALAVRA cumprida
+A' — Deus humilha Jabim diante de Israel (4.23-24) → a LIBERTAÇÃO
+
+🔎 Como ler o espelho:
+• A ↔ A' (Jabim forte ↔ Jabim humilhado): o texto começa com novecentos carros de ferro e termina com "Deus humilhou naquele dia a Jabim". O opressor que parecia invencível cai — e o texto atribui a vitória a Deus, não a Israel.¹
+• B ↔ B' (a profecia e o cumprimento): Débora anuncia que Sísera cairia "nas mãos de uma mulher". O leitor pensa que seria ela, mas a mulher é Jael, uma estrangeira, esposa de um queneu que tinha paz com Jabim. A palavra de Deus se cumpre de um jeito que ninguém esperava. E a hesitação de Baraque tem um custo: ele chega à tenda depois que tudo já foi feito.²
+• C (o centro): o verdadeiro guerreiro é Deus. "O SENHOR derrotou Sísera, e todos os seus carros" (4.15). O Cântico do capítulo 5 explica: as chuvas transformaram o ribeiro de Quisom numa enxurrada, e os carros de ferro atolaram. Aquilo que era a força de Canaã se tornou a sua armadilha.³
+
+🕰️ Por que isso importa: Débora é uma das líderes mais sábias de Juízes: ela ouve a Deus, transmite a palavra com clareza e encoraja na hora certa. Baraque, apesar da hesitação, está na lista da fé de Hebreus 11.32. E Jael mostra que Deus pode usar quem está fora do povo da aliança. A história ensina que a vitória vem da palavra de Deus, e não dos carros de ferro.
+
+⛪ Na vida da igreja:
+• Obedecer sem condições. "Se fores comigo, irei" mostra uma fé que precisa de garantias humanas. Deus pede que confiemos na palavra dele.
+• Encorajar na hora certa. "Este é o dia!" A igreja precisa de pessoas que, como Débora, discernem o tempo de Deus e animam os outros a agir.
+• Deus usa quem ninguém espera. Jael não estava nos planos de ninguém. O Reino de Deus é cheio de surpresas.`;
   // [291]
   if (d.livroAbrev === 'Jz' && /o cantico de debora/i.test(p))
-    return `A simetria do Cântico de Débora espelha "bendizei ao Senhor — líderes que se ofereceram" (A) ↔ "mãe de Sísera esperando em vão" (A'). No centro: os astros lutaram contra Sísera — o cosmos se mobiliza para a batalha do Senhor. O pivô é o contraste final: enquanto Débora e Baraque cantam vitória, a mãe de Sísera aguarda à janela o que nunca chegará. Na vida da igreja: o mesmo evento é vitória para uns e devastação para outros. O cântico não é cruel — é honesto sobre o que o julgamento de Deus significa para os dois lados. A janela vazia de Sísera é lembrete de que o lado errado da batalha de Deus tem consequências reais.`;
+    return `📖 O texto em resumo (Jz 5.1-31): depois da vitória, Débora e Baraque cantam. Bendizem ao SENHOR porque os líderes lideraram e o povo se ofereceu voluntariamente. Descrevem o SENHOR marchando de Seir, enquanto a terra treme. Lembram os dias em que as estradas estavam vazias, "até que eu, Débora, me levantei, mãe em Israel". Elogiam as tribos que vieram e repreendem as que ficaram em casa: Rúben, com suas "grandes resoluções do coração", Dã nos navios, Aser na praia. "Desde os céus pelejaram as estrelas" e o ribeiro Quisom arrastou os inimigos. Meroz é amaldiçoada por não vir em socorro do SENHOR; Jael é bendita. O cântico termina com a mãe de Sísera à janela, esperando um filho que nunca voltará.
+
+🔁 O espelho (quiasma) — cinco camadas que se dobram ao meio:
+A — "Bendizei ao SENHOR": líderes que lideram e povo que se oferece (5.1-11) → o LOUVOR
+   ↳ B — As tribos que responderam — e as que ficaram em casa (5.12-18) → a RESPOSTA
+      ↳ C — CENTRO: "Desde os céus pelejaram as estrelas"; o Quisom arrasta os inimigos (5.19-22) → a BATALHA de Deus
+   ↳ B' — Maldita Meroz, bendita Jael (5.23-27) → o JULGAMENTO
+A' — A mãe de Sísera espera em vão; "assim pereçam todos os teus inimigos" (5.28-31) → o DESFECHO
+
+🔎 Como ler o espelho:
+• A ↔ A' (duas mães): o cântico começa com Débora, "mãe em Israel", que se levanta para salvar o seu povo, e termina com a mãe de Sísera, que espera o filho voltar com despojos e escravas. Duas mães, dois destinos. O cântico termina com uma oração: "assim pereçam todos os teus inimigos, ó SENHOR; porém os que te amam sejam como o sol quando se levanta no seu esplendor".¹
+• B ↔ B' (quem veio e quem ficou): as tribos são avaliadas pela disposição de se envolver. Rúben teve "grandes discussões do coração", mas ficou ouvindo o balido dos rebanhos. Meroz é amaldiçoada não por lutar contra Israel, mas por não vir "em socorro do SENHOR". Neutralidade, na guerra de Deus, é pecado.²
+• C (o centro): o cântico revela o que o capítulo 4 apenas sugere: a vitória foi cósmica. As estrelas lutaram, as águas varreram os carros. O Deus de Israel governa o céu e a natureza — justamente as áreas que os cananeus atribuíam a Baal, o deus da tempestade.³
+
+🕰️ Por que isso importa: Israel não apenas venceu: cantou. O cântico transforma a vitória em memória e em teologia. Cantar o que Deus fez ajuda o povo a não esquecer — e Juízes inteiro mostra o que acontece quando o povo esquece. Além disso, o cântico confronta a igreja: há os que se oferecem e há os que ficam discutindo em casa.
+
+⛪ Na vida da igreja:
+• Cantar o que Deus fez. O louvor não é apenas emoção; é memória do que Deus fez. Igrejas que cantam a verdade lembram quem é o seu Senhor.
+• Oferecer-se voluntariamente. "O povo se ofereceu de boa vontade" (5.2, 9). O Reino avança com voluntários, não com espectadores.
+• Não ser Meroz. Ficar neutro enquanto o Reino de Deus enfrenta batalhas também é uma escolha. Grandes resoluções do coração não substituem a ação.`;
   // [292]
   if (/o chamado de gideao/i.test(p))
-    return `A simetria do chamado de Gideão espelha sete anos de opressão de Midiã (A) ↔ o altar "O Senhor é paz" (A'). No centro: o anjo chama Gideão debaixo do carvalho — "homem valente" dito a quem está escondido. O pivô é o nome antes da realidade: Deus chama Gideão pelo que ele se tornará, não pelo que está fazendo no momento. Na vida da igreja: Deus frequentemente fala ao chamado com a linguagem do destino, não da circunstância presente. "Homem valente" pronunciado sobre quem debulha trigo escondido não é ironia — é profecia. O chamado de Deus cria o que nomeia.`;
+    return `📖 O texto em resumo (Jz 6.1-24): Israel faz o mal e é entregue a Midiã por sete anos. Os midianitas chegam "como gafanhotos", destroem as colheitas, e os israelitas se escondem em cavernas. Quando Israel clama, Deus primeiro envia um profeta: "Eu vos tirei do Egito... mas não destes ouvidos à minha voz". Depois, o Anjo do SENHOR se assenta debaixo do carvalho de Ofra, onde Gideão malha trigo escondido no lagar. "O SENHOR é contigo, homem valente". Gideão questiona: "Se o SENHOR é conosco, por que nos sobreveio tudo isto?". Deus responde: "Vai nessa tua força... não te enviei eu?". Gideão alega ser o menor da família mais pobre. Pede um sinal; o fogo sai da rocha e consome a oferta. Com medo de morrer, ouve: "Paz seja contigo". Constrói um altar: "O SENHOR é Paz".
+
+🔁 O espelho (quiasma) — cinco camadas que se dobram ao meio:
+A — Midiã oprime Israel sete anos; o povo se esconde (6.1-6) → o MEDO
+   ↳ B — Um profeta repreende Israel: "não destes ouvidos à minha voz" (6.7-10) → a PALAVRA que confronta
+      ↳ C — CENTRO: o Anjo chama Gideão — "O SENHOR é contigo, homem valente" (6.11-16) → o CHAMADO
+   ↳ B' — Gideão pede um sinal; o fogo consome a oferta (6.17-21) → o SINAL que confirma
+A' — "Paz seja contigo"; o altar "O SENHOR é Paz" (6.22-24) → a PAZ
+
+🔎 Como ler o espelho:
+• A ↔ A' (medo ↔ paz): o texto começa com Israel escondido em cavernas e termina com um altar chamado "O SENHOR é Paz". Antes de dar a vitória sobre Midiã, Deus dá paz ao coração de Gideão. A paz com Deus vem antes da vitória sobre os inimigos.¹
+• B ↔ B' (a palavra e o sinal): quando Israel clama, Deus não manda logo um libertador, mas um profeta que expõe a causa do problema: a idolatria. Antes do livramento, o diagnóstico. Depois, Gideão pede um sinal e Deus o concede com paciência. Deus fala primeiro pela palavra e, por graça, confirma com sinais a fé fraca.²
+• C (o centro): Deus chama Gideão de "homem valente" quando ele está escondido no lagar, com medo. O nome descreve não quem Gideão era, mas quem ele seria pela presença de Deus: "Já que eu estou contigo" (6.16). A força de Gideão é a promessa de Deus. Muitos intérpretes viram no Anjo do SENHOR, que aceita oferta e é chamado de SENHOR, uma aparição do Filho de Deus.³
+
+🕰️ Por que isso importa: Gideão faz a pergunta que muitos fazem: "Se Deus está conosco, por que tudo isso aconteceu?". Deus não responde com uma explicação, mas com uma missão e uma promessa: "Não te enviei eu? Eu estarei contigo". Deus chama gente com medo, da família mais pobre, e a transforma pela sua presença.
+
+⛪ Na vida da igreja:
+• Deus chama os improváveis. "O menor da família mais pobre" é exatamente o tipo de pessoa que Deus gosta de usar.
+• O problema começa no coração. Antes de mudar as circunstâncias, Deus confronta a idolatria. Avivamento começa com arrependimento.
+• "Já que eu estou contigo." O chamado de Deus vem acompanhado da sua presença. Em Cristo, ele é o Emanuel, Deus conosco, "todos os dias" (Mt 28.20).`;
   // [293]
   if (/gideao destroi o altar de baal/i.test(p))
-    return `A simetria da destruição do altar espelha a ordem divina de derrubar o altar do pai (A) ↔ "que Baal se defenda" — o nome Jerubaal (A'). No centro: os homens da cidade exigem a morte de Gideão. O pivô é o pai de Gideão defendendo o filho: "se Baal é deus, defenda-se por si mesmo." A lógica irônica do pai vira teologia. Na vida da igreja: ídolos que precisam ser defendidos por seus adoradores não são deuses. O verdadeiro Deus defende a si mesmo. O nome Jerubaal — "que Baal contenda" — se tornará testemunho da impotência do ídolo toda vez que Gideão for chamado.`;
+    return `📖 O texto em resumo (Jz 6.25-32): na mesma noite do chamado, Deus ordena a Gideão: pegar o segundo touro do pai, de sete anos, derrubar o altar de Baal que pertencia ao pai e cortar o poste-ídolo ao lado; depois, construir um altar ao SENHOR e oferecer o touro, usando a madeira do poste como lenha. Gideão obedece com dez servos — mas de noite, porque tinha medo da família e dos homens da cidade. De manhã, a cidade descobre e exige: "Tira para fora teu filho, para que morra". Joás, o pai, responde: "Contendereis vós por Baal? Se é deus, que se defenda". E Gideão recebe o nome de Jerubaal: "Baal contenda contra ele".
+
+🔁 O espelho (quiasma) — cinco camadas que se dobram ao meio:
+A — Deus ordena derrubar o altar de Baal do próprio pai (6.25-26) → a ORDEM
+   ↳ B — Gideão obedece, mas de noite, com medo (6.27) → a OBEDIÊNCIA com medo
+      ↳ C — CENTRO: a cidade descobre e exige a morte de Gideão (6.28-30) → a REAÇÃO
+   ↳ B' — Joás defende o filho: "Se é deus, que se defenda" (6.31) → a CORAGEM do pai
+A' — Gideão é chamado Jerubaal: "Baal contenda contra ele" (6.32) → o NOME
+
+🔎 Como ler o espelho:
+• A ↔ A' (o altar do pai ↔ o novo nome): a primeira batalha de Gideão não é contra Midiã, mas contra o ídolo da própria casa. O altar de Baal pertencia a Joás. Antes de libertar Israel, Gideão precisa purificar a família. E o nome que recebe, Jerubaal, vira um desafio permanente: se Baal fosse deus, que lutasse contra ele.¹
+• B ↔ B' (medo do filho ↔ coragem do pai): Gideão obedece de noite. A obediência com medo continua sendo obediência, e Deus a honra. E o resultado surpreendente: o pai, que tinha o altar de Baal, é quem defende o filho e zomba de Baal. A obediência de um membro da família pode despertar a fé de outro.²
+• C (o centro): o touro tinha sete anos — o mesmo tempo da opressão de Midiã (6.1). Os anos de opressão estão ligados aos anos de idolatria. E a cidade inteira se levanta para defender Baal. Israel estava tão cananizado que queria matar quem servia ao SENHOR para proteger um ídolo.³
+
+🕰️ Por que isso importa: Deus não manda Gideão primeiro ao campo de batalha, mas ao quintal de casa. A reforma começa no lugar mais difícil: a própria família, os próprios ídolos. E a pergunta de Joás continua atual: um deus que precisa ser defendido por homens não é Deus. O SENHOR não precisa de nós para se defender; nós é que precisamos dele.
+
+⛪ Na vida da igreja:
+• A reforma começa em casa. Antes de mudar o mundo, precisamos derrubar os ídolos do nosso próprio "quintal": família, hábitos, tradições.
+• Obediência com medo ainda é obediência. Deus não exigiu que Gideão fosse destemido, mas obediente. Faça o que é certo, mesmo tremendo.
+• Os ídolos não se defendem. Dinheiro, fama, poder e prazer parecem fortes, mas não resistem quando o SENHOR é exaltado.`;
   // [294]
   if (/o sinal do velo/i.test(p))
-    return `A simetria do sinal do velo espelha os midianitas reunidos e o Espírito revestindo Gideão (A) ↔ o sinal inverso confirmando o chamado (A'). No centro: o velo cheio de orvalho — o sinal pedido é dado. O pivô é a paciência de Deus com a dúvida: dois sinais contraditórios atendidos sem repreensão. Na vida da igreja: Deus é mais paciente com nossas dúvidas do que imaginamos — mas a mesma paciência que atende ao pedido do velo reduz o exército de 32 mil para 300. A confirmação não cancela o custo da obediência. O sinal dado é prévia da batalha; a batalha pequena é prévia da glória de Deus.`;
+    return `📖 O texto em resumo (Jz 6.33-40): midianitas, amalequitas e povos do Oriente atravessam o Jordão e acampam no vale de Jezreel. "O Espírito do SENHOR revestiu a Gideão"; ele toca a trombeta, e Abiezer, Manassés, Aser, Zebulom e Naftali se reúnem. Então Gideão diz a Deus: "Se hás de livrar Israel por meio de mim, como disseste", e pede um sinal: a lã molhada de orvalho e o chão seco. Acontece: ele espreme a lã e enche uma tigela de água. Depois pede: "Não se acenda contra mim a tua ira... só esta vez": a lã seca e o chão molhado. Deus o faz naquela noite.
+
+🔁 O espelho (quiasma) — cinco camadas que se dobram ao meio:
+A — Os inimigos se reúnem; o Espírito reveste Gideão (6.33-35) → o CHAMADO confirmado pelo Espírito
+   ↳ B — "Como disseste": lã molhada, chão seco (6.36-37) → o PRIMEIRO pedido
+      ↳ C — CENTRO: o sinal é dado — uma tigela cheia de orvalho (6.38) → a PACIÊNCIA de Deus
+   ↳ B' — "Só esta vez": lã seca, chão molhado (6.39) → o SEGUNDO pedido
+A' — Deus faz o sinal inverso naquela noite (6.40) → a CONFIRMAÇÃO
+
+🔎 Como ler o espelho:
+• A ↔ A' (o Espírito e o sinal): o texto começa com algo maior que qualquer sinal: o Espírito do SENHOR "revestiu" Gideão — literalmente, vestiu-se de Gideão. E as tribos já tinham respondido. Ainda assim, Gideão pede sinais. O fim do texto mostra que Deus atendeu. A ironia é forte: Gideão já tinha o Espírito e a palavra, mas queria mais garantias.¹
+• B ↔ B' (dois pedidos): duas vezes Gideão diz "como disseste" — ele sabe o que Deus prometeu. O pedido não é para descobrir a vontade de Deus, que já estava clara, mas para ter coragem de obedecê-la. No segundo pedido, ele mesmo teme irritar a Deus. O velo não é exemplo de fé madura, mas de fé fraca que Deus sustenta.²
+• C (o centro): uma tigela cheia de água espremida da lã. No centro do texto não está a fé de Gideão, mas a paciência de Deus. "Ele conhece a nossa estrutura e se lembra de que somos pó" (Sl 103.14). Deus não humilha o fraco: ele o fortalece.³
+
+🕰️ Por que isso importa: muitos usam o "velo de Gideão" como método para descobrir a vontade de Deus ("se acontecer tal coisa, é sinal de que..."). Mas o texto não ensina isso. Gideão já sabia o que Deus queria. O velo revela a fragilidade da nossa fé — e a ternura de Deus, que se inclina para fortalecer quem treme. Hoje temos algo melhor que o velo: a Palavra completa e o Espírito que nos foi dado.
+
+⛪ Na vida da igreja:
+• Não troque a Palavra por "velos". A vontade de Deus é revelada na Escritura. Sinais não substituem a obediência ao que já está claro.
+• Deus é paciente com os fracos. Se a sua fé treme, leve isso a Deus com honestidade, como Gideão. Ele não despreza um coração inseguro.
+• O Espírito nos reveste. Em Cristo, cada crente recebeu o Espírito. A segurança não vem de sinais externos, mas da presença de Deus em nós (Rm 8.16).`;
   // [295]
   if (/gideao surpreende e derrota os midianitas/i.test(p))
-    return `A simetria da derrota dos midianitas espelha o exército reduzido de 32.000 para 300 (A) ↔ Efraim capturando e matando os príncipes (A'). No centro: "cada espada para o Senhor e para Gideão" — os cântaros quebrados e as tochas reveladas. O pivô é a redução: Deus não quer 32.000 nem 10.000 — quer 300. Na vida da igreja: a estratégia de Deus frequentemente ofende o senso militar comum. Quando a vitória vier com trezentos homens e cântaros quebrados, a glória não terá endereço humano. A redução do exército não é fraqueza — é clareza teológica antecipada.`;
+    return `📖 O texto em resumo (Jz 7.1-25): Gideão acampa com trinta e dois mil homens. Deus diz: "É demais... para que Israel não se glorie contra mim, dizendo: a minha mão me livrou". Vinte e dois mil medrosos voltam para casa. Dos dez mil restantes, Deus separa os trezentos que bebem água levando-a à boca com a mão. À noite, Deus diz: "Se tens medo, desce com Pura, teu servo, ao arraial". Gideão ouve um midianita contar um sonho: um pão de cevada rola e derruba a tenda; o companheiro interpreta: "é a espada de Gideão". Gideão adora. Divide os trezentos em três grupos, com trombetas, cântaros vazios e tochas. À meia-noite, quebram os cântaros e gritam: "Espada pelo SENHOR e por Gideão!". O SENHOR faz os midianitas se matarem uns aos outros. Efraim toma os vaus e mata os príncipes Orebe e Zeebe.
+
+🔁 O espelho (quiasma) — cinco camadas que se dobram ao meio:
+A — O exército é reduzido de 32 mil para 300 (7.1-8) → a REDUÇÃO
+   ↳ B — O sonho do midianita: o pão de cevada derruba a tenda (7.9-15) → o ENCORAJAMENTO
+      ↳ C — CENTRO: cântaros quebrados, tochas e o grito "Espada pelo SENHOR e por Gideão!" (7.16-22) → a VITÓRIA do SENHOR
+   ↳ B' — Os midianitas fogem; as tribos são convocadas (7.23-24) → a PERSEGUIÇÃO
+A' — Efraim captura e mata os príncipes Orebe e Zeebe (7.25) → o FIM dos príncipes
+
+🔎 Como ler o espelho:
+• A ↔ A' (poucos ↔ muitos): o texto começa com Deus mandando gente embora e termina com tribos inteiras sendo chamadas para recolher os despojos. Deus reduz para que a vitória seja claramente dele; depois, multiplica a participação. "Para que Israel não se glorie contra mim" é a chave do capítulo.¹
+• B ↔ B' (o sonho e a fuga): Deus conhece o medo de Gideão e oferece, sem que ele peça, um encorajamento: "Se tens medo, desce...". O sonho mostra que os inimigos já estavam derrotados no coração antes da batalha. A fuga do exército midianita é o cumprimento do sonho.²
+• C (o centro): as armas são estranhas: trombetas, cântaros e tochas. A luz aparece quando o cântaro se quebra — imagem que muitos cristãos ligaram a 2Coríntios 4.7, "temos este tesouro em vasos de barro". Mas há um detalhe preocupante no grito: "pelo SENHOR e por Gideão". O nome de Gideão começa a aparecer ao lado do nome de Deus. A semente do orgulho que vai crescer no capítulo 8 já está aqui.³
+
+🕰️ Por que isso importa: Deus derrotou um exército "como gafanhotos" com trezentos homens sem espadas nas mãos. A lição é clara: Deus não precisa de números, mas de dependência. E o próprio Deus encoraja o medroso. Mas o grito de guerra serve de alerta: até no meio da maior vitória, o coração humano quer dividir a glória com Deus.
+
+⛪ Na vida da igreja:
+• Menos pode ser mais. Deus não depende do tamanho da igreja, do orçamento ou da estrutura. Às vezes ele reduz para mostrar que a obra é dele.
+• Deus encoraja quem tem medo. Ele não exigiu que Gideão fosse corajoso; ofereceu um sinal de graça. Deus conhece os nossos medos.
+• A glória é só dele. "Pelo SENHOR e por Gideão" é o início de uma queda. Na igreja, o nome de nenhum líder deve dividir o palco com o nome de Cristo (1Co 1.31).`;
   // [296]
   if (/gideao e efraim/i.test(p))
-    return `A simetria de Gideão e Efraim espelha a contenda de Efraim (A) ↔ a ira acalmando (A'). No centro: a resposta suave de Gideão — "o rebusco de Efraim é melhor que a vindima de Abiezer." O pivô é a sabedoria da resposta: Gideão poderia ter reivindicado autoridade e criado guerra civil. Em vez disso, honrou o que Efraim fez. Na vida da igreja: conflitos ministeriais que poderiam dividir comunidades são desarmados por quem escolhe honrar em vez de reivindicar. A resposta suave que quebra o osso (Pv 25.15) não é fraqueza — é a mais sofisticada forma de liderança.`;
+    return `📖 O texto em resumo (Jz 8.1-3): depois da vitória, os homens de Efraim reclamam com Gideão: "Que é isto que nos fizeste, que não nos chamaste quando foste pelejar contra os midianitas?" — e contendem com ele fortemente. Gideão responde: "Que fiz eu agora comparado convosco? Não são porventura os rabiscos de Efraim melhores do que a vindima de Abiezer? Deus vos entregou nas mãos os príncipes dos midianitas, Orebe e Zeebe; que pude eu fazer comparado convosco?". Então a ira deles se abrandou.
+
+🔁 O espelho (quiasma) — três camadas que se dobram ao meio:
+A — Efraim contende fortemente com Gideão (8.1) → a IRA
+   ↳ B — CENTRO: a resposta branda — "os rabiscos de Efraim são melhores que a vindima de Abiezer" (8.2-3a) → a HUMILDADE
+A' — A ira de Efraim se abranda (8.3b) → a PAZ
+
+🔎 Como ler o espelho:
+• A ↔ A' (ira ↔ calma): o texto começa com uma tribo ofendida e termina com a ira desfeita. Uma guerra civil poderia ter começado ali. "A resposta branda desvia o furor" (Pv 15.1). Mais tarde, Efraim fará a mesma reclamação a Jefté, que responderá com orgulho — e quarenta e dois mil morrerão (12.1-6). A diferença entre as duas histórias está na resposta.¹
+• B (o centro): Gideão usa uma imagem da colheita: o rebusco (as uvas que sobram depois da colheita) de Efraim vale mais do que a vindima inteira do seu clã. Ele diminui a própria parte e valoriza a dos outros. E lembra que foi Deus quem entregou os príncipes a Efraim. A humildade não negou os fatos; apenas deu honra a quem também tinha lutado.²
+• O conjunto: a queixa de Efraim nasce do orgulho ferido — eles queriam participar da glória. Gideão poderia ter respondido que eles não estavam lá no começo. Mas escolheu a paz. É um momento de maturidade num líder que, logo depois, vai agir com dureza contra Sucote e Penuel.³
+
+🕰️ Por que isso importa: o povo de Deus pode vencer o inimigo de fora e se destruir por dentro. Disputas por reconhecimento, ciúmes entre grupos e "por que não me chamaram?" dividem igrejas até hoje. Gideão mostra que a humildade e uma palavra bem escolhida podem evitar uma guerra entre irmãos.
+
+⛪ Na vida da igreja:
+• A resposta branda desvia o furor. Nem toda crítica precisa ser rebatida. Uma palavra humilde pode salvar a unidade (Pv 15.1).
+• Valorize a contribuição dos outros. Reconhecer o que o irmão fez desarma ressentimentos. "Cada um considere os outros superiores a si mesmo" (Fp 2.3).
+• Cuidado com a disputa por crédito. O que importa não é quem aparece, mas que Deus seja glorificado e o Reino avance.`;
   // [297]
   if (/de gideao vinganca/i.test(p))
-    return `A simetria da vingança de Gideão espelha Sucote recusando provisão (A) ↔ Gideão matando os dois reis (A'). No centro: os anciãos de Sucote punidos com espinhos — a recusa de hospitalidade cobrada com rigor. O pivô é a memória: Gideão prometeu voltar. A ameaça feita a Sucote e Penuel não foi esquecida. Na vida da igreja: há um lado da justiça de Deus que recorda o que foi prometido — e cumpre. Sucote apostou que Gideão não voltaria. A punição com espinhos não é crueldade arbitrária — é o preço exato da recusa de solidariedade com o povo de Deus em luta.`;
+    return `📖 O texto em resumo (Jz 8.4-21): Gideão e os trezentos atravessam o Jordão "cansados, mas ainda perseguindo". Pedem pão em Sucote; os líderes zombam: "Já estão Zeba e Zalmuna em tuas mãos?". O mesmo acontece em Penuel. Gideão ameaça os dois. Ele surpreende o exército midianita e captura os reis Zeba e Zalmuna. Na volta, castiga os anciãos de Sucote com espinhos e derruba a torre de Penuel, matando os homens da cidade. Depois pergunta aos reis sobre os homens que eles mataram em Tabor: "Eram meus irmãos, filhos de minha mãe". Manda o filho Jéter matá-los, mas o menino tem medo. Os reis dizem: "Levanta-te tu mesmo". Gideão os mata e toma os enfeites dos pescoços dos camelos.
+
+🔁 O espelho (quiasma) — cinco camadas que se dobram ao meio:
+A — Perseguição aos reis; Sucote e Penuel recusam pão (8.4-9) → a RECUSA
+   ↳ B — Gideão captura Zeba e Zalmuna (8.10-12) → a CAPTURA
+      ↳ C — CENTRO: Sucote castigada com espinhos; torre de Penuel derrubada (8.13-17) → a PUNIÇÃO dos irmãos
+   ↳ B' — "Eram meus irmãos": os reis mataram a família de Gideão em Tabor (8.18-19) → o MOTIVO
+A' — Gideão mata os dois reis e toma os enfeites dos camelos (8.20-21) → a VINGANÇA
+
+🔎 Como ler o espelho:
+• A ↔ A' (fome ↔ despojos): a seção começa com Gideão pedindo pão para soldados exaustos e termina com ele tomando os enfeites dos camelos reais. A guerra do SENHOR se transforma numa questão pessoal. No capítulo 7, o texto dizia "o SENHOR" o tempo todo; aqui, o nome de Deus quase desaparece.¹
+• B ↔ B' (os reis e os irmãos): a captura de Zeba e Zalmuna parecia parte da libertação de Israel. Mas o diálogo revela outro motivo: "eram meus irmãos... se os tivésseis deixado viver, eu não vos mataria". A guerra de Deus virou vingança de família.²
+• C (o centro): o ponto mais grave não é a morte dos reis inimigos, mas a punição dos próprios israelitas. Sucote e Penuel foram covardes e mesquinhos, mas Gideão os trata com a dureza com que se trata o inimigo. O libertador agora fere o povo que deveria proteger.³
+
+🕰️ Por que isso importa: o mesmo Gideão que respondeu com brandura a Efraim (8.1-3) agora age com crueldade. O sucesso revelou o que estava no coração. A história mostra como é fácil começar servindo a Deus e terminar servindo a si mesmo, usando a linguagem da fé para justificar mágoas pessoais.
+
+⛪ Na vida da igreja:
+• Cansados, mas perseguindo. A perseverança de Gideão é admirável. Servir a Deus cansado é parte da caminhada (Gl 6.9).
+• Cuidado quando o "ministério" vira questão pessoal. Muitas brigas na igreja começam como "zelo pela obra" e escondem feridas e vinganças pessoais.
+• Não trate irmãos como inimigos. Os irmãos podem falhar conosco, como Sucote e Penuel, mas a resposta cristã não é a vingança (Rm 12.19).`;
   // [298]
   if (/de gideao idolatria/i.test(p))
-    return `A simetria da idolatria de Gideão espelha Israel pedindo a Gideão que reine (A) ↔ a terra tendo paz nos dias de Gideão (A'). No centro: Gideão faz éfode em Ofra — Israel se prostitui diante dele. O pivô é a contradição: Gideão recusa o reino mas fabrica um objeto de adoração. Ele nega o título mas aceita o papel. Na vida da igreja: é possível recusar o poder formal enquanto se exerce o controle informal por meio de objetos, símbolos ou estruturas que centralizam a devoção de outros. O éfode de Gideão não foi construído com má intenção — mas tornou-se armadilha. Intenção boa não protege contra consequências idolátricas.`;
+    return `📖 O texto em resumo (Jz 8.22-28): os homens de Israel dizem a Gideão: "Domina sobre nós, tu, teu filho e o filho de teu filho, porque nos livraste das mãos dos midianitas". Gideão responde: "Não dominarei sobre vós, nem tampouco meu filho; o SENHOR vos dominará". Mas, em seguida, pede a cada um os brincos de ouro dos despojos: mil e setecentos siclos de ouro, além de enfeites e roupas de púrpura dos reis. Com isso, faz um éfode e o coloca em Ofra, a sua cidade. "Todo o Israel se prostituiu ali após ele; e foi por tropeço a Gideão e à sua casa". Midiã é subjugado e a terra descansa quarenta anos.
+
+🔁 O espelho (quiasma) — cinco camadas que se dobram ao meio:
+A — Israel pede um rei; Gideão recusa: "o SENHOR vos dominará" (8.22-23) → as PALAVRAS certas
+   ↳ B — Gideão pede os brincos: 1.700 siclos de ouro (8.24-26) → a RIQUEZA
+      ↳ C — CENTRO: faz um éfode em Ofra — todo Israel se prostitui ali (8.27a) → o ÍDOLO
+   ↳ B' — O éfode vira laço para Gideão e para a sua casa (8.27b) → a ARMADILHA
+A' — Midiã subjugado; a terra descansa quarenta anos (8.28) → a PAZ externa
+
+🔎 Como ler o espelho:
+• A ↔ A' (as palavras e a paz): Gideão diz a frase certa — "o SENHOR vos dominará" — e o texto termina com quarenta anos de descanso. Por fora, tudo parece bem. Mas entre o começo e o fim está o éfode. Gideão recusou o título de rei, mas passou a viver como um: muitas mulheres, setenta filhos e um filho chamado Abimeleque, "meu pai é rei" (8.30-31).¹
+• B ↔ B' (o ouro e o laço): o ouro que Gideão pede é o ouro dos inimigos — exatamente como Israel, no deserto, pediu o ouro dos brincos para fazer o bezerro (Êx 32.2-4). O que parecia uma recompensa justa se tornou uma armadilha para ele e para a família.²
+• C (o centro): o éfode era uma veste sacerdotal, talvez usada para consultar a Deus. Gideão pode ter tido boas intenções: guardar a lembrança da vitória ou consultar o SENHOR. Mas fez em Ofra, fora do lugar que Deus escolheu, e o objeto virou centro de idolatria. O homem que derrubou o altar de Baal em Ofra (6.25-32) termina levantando um ídolo na mesma cidade.³
+
+🕰️ Por que isso importa: o maior perigo de Gideão não foi Midiã, mas o sucesso. Ele resistiu à tentação do título, mas não à tentação do ouro e da religião feita do seu jeito. Uma boa intenção, fora da Palavra de Deus, pode se tornar idolatria. E o tropeço do líder vira o tropeço de um povo inteiro.
+
+⛪ Na vida da igreja:
+• Palavras certas não bastam. É possível dizer "Deus reina" e viver como se nós reinássemos. A coerência entre discurso e prática é essencial na liderança.
+• Cuidado com os "éfodes". Objetos, lugares, experiências e até métodos podem tomar o lugar de Deus, mesmo começando com boa intenção.
+• O fim importa tanto quanto o começo. Gideão começou derrubando ídolos e terminou fazendo um. Perseverar em humildade é graça a ser pedida todos os dias.`;
   // [299]
   if (/morte de gideao/i.test(p))
-    return `A simetria da morte de Gideão espelha a família numerosa e a vida doméstica (A) ↔ Israel se prostituindo a Baalins — não lembrando a misericórdia (A'). No centro: Gideão morre em boa velhice — o melhor fim possível para um juiz. O pivô é a brevidade da memória: Gideão não terminou de ser enterrado quando Israel voltou à prostituição espiritual. Na vida da igreja: a gratidão espiritual tem vida curta quando não é cultivada ativamente. A geração que viveu sob Gideão e esqueceu o Senhor não era necessariamente mais má — era simplesmente humana sem disciplina de memória. Rituais de memória não são opcional — são vacinas contra a ingratidão.`;
+    return `📖 O texto em resumo (Jz 8.29-35): Gideão (Jerubaal) volta para casa. Tem setenta filhos, porque tinha muitas mulheres. Uma concubina em Siquém lhe dá um filho, a quem ele chama Abimeleque. Gideão morre "em boa velhice" e é sepultado no túmulo de seu pai, em Ofra. Mas, assim que ele morre, Israel volta a se prostituir após os baalins e escolhe Baal-Berite — "o Baal da aliança" — como seu deus. Não se lembram do SENHOR, que os livrara de todos os inimigos, nem mostram bondade à família de Jerubaal, apesar de todo o bem que ele fizera a Israel.
+
+🔁 O espelho (quiasma) — cinco camadas que se dobram ao meio:
+A — Jerubaal volta para casa; setenta filhos (8.29-30) → a CASA de Gideão
+   ↳ B — A concubina de Siquém tem Abimeleque, "meu pai é rei" (8.31) → a SEMENTE do problema
+      ↳ C — CENTRO: Gideão morre em boa velhice e é sepultado com o pai (8.32) → a MORTE do juiz
+   ↳ B' — Israel se prostitui aos baalins e adora Baal-Berite (8.33-34) → o ESQUECIMENTO de Deus
+A' — Não são leais à casa de Jerubaal (8.35) → a CASA abandonada
+
+🔎 Como ler o espelho:
+• A ↔ A' (a casa honrada ↔ a casa esquecida): o texto começa com a casa grande e próspera de Gideão e termina dizendo que Israel não teve lealdade (hesed) para com ela. O capítulo seguinte mostra o resultado: Abimeleque mata os setenta irmãos. A casa que parecia firme desaba na geração seguinte.¹
+• B ↔ B' (Abimeleque e Baal-Berite): o nome do filho, "meu pai é rei", revela o que Gideão recusou em palavras, mas desejou no coração. E o povo, ao abandonar o SENHOR, escolhe "o Baal da aliança" — uma imitação do Deus da aliança. Quando a família e o povo perdem a memória de Deus, criam substitutos com aparência religiosa.²
+• C (o centro): Gideão morre em paz e com honra. Mas o centro do texto é como uma dobradiça: tudo o que vem antes depende da presença do juiz; tudo o que vem depois mostra que, sem ele, Israel não tinha fidelidade própria. "Logo que Gideão morreu" — a fé do povo era emprestada.³
+
+🕰️ Por que isso importa: a morte de Gideão revela a fragilidade de uma fé que depende de um líder. Israel seguiu a Deus enquanto Gideão viveu; quando ele morreu, a nação voltou aos ídolos imediatamente. O texto aponta para a necessidade de um Libertador que não morra e de um coração transformado. Em Cristo, temos um Rei que vive para sempre e uma aliança escrita no coração (Hb 7.24-25; Jr 31.33).
+
+⛪ Na vida da igreja:
+• A fé não pode ser emprestada. Igrejas que dependem de um pastor ou de um líder carismático correm o risco de esfriar quando ele sai. Cada crente precisa conhecer a Deus pessoalmente.
+• Lembrar e agradecer. Israel não se lembrou do SENHOR nem foi grato a Gideão. A ingratidão é o primeiro passo da idolatria (Rm 1.21).
+• Cuidado com a "religião de imitação". Baal-Berite parecia um deus da aliança. Hoje também há espiritualidades que imitam o evangelho sem Cristo.`;
   // [300]
   if (/a queda de abimeleque/i.test(p))
     return `📖 O texto em resumo (Jz 9): Abimeleque, filho de Gideão com uma concubina de Siquém, convence os siquemitas a fazê-lo rei ("sou osso vosso e carne vossa", 9.2), paga homens vadios com a prata do templo de Baal-Berite e mata os seus setenta irmãos "sobre uma pedra". Só Jotão escapa e, do alto do monte Gerizim, conta a parábola das árvores. Três anos depois, Deus envia um espírito mau entre Abimeleque e Siquém; a cidade se rebela, Abimeleque a destrói e queima a torre com mil pessoas dentro. Em Tebes, uma mulher lança uma pedra de moinho sobre a cabeça dele.
@@ -1999,40 +2658,262 @@ A' — "Já não pôde reter a sua compaixão por causa da miséria de Israel" (
 • O coração de Deus é a nossa esperança. "Em toda a angústia deles foi ele angustiado" (Is 63.9). Em Cristo, Deus não apenas sentiu a nossa miséria — entrou nela e a carregou na cruz.`;
   // [304]
   if (/jefte/i.test(p))
-    return `A simetria de Jefté espelha o ilegítimo expulso pelos meios-irmãos (A) ↔ vitória sobre amonitas e seis anos de julgamento (A'). No centro: o voto de Jefté — "o que sair primeiro" — a promessa que nenhum triunfo pode desfazer. O pivô é a filha: saiu ela primeiro. O voto foi cumprido. Na vida da igreja: as promessas feitas a Deus têm peso que o sucesso não anula. Jefté venceu a batalha e perdeu a filha. O texto não resolve a tensão — apenas a apresenta. O ilegítimo que se tornou líder descobriu que a vitória militar não é o capítulo final de sua história. O que prometemos importa mais do que o que conquistamos.`;
+    return `📖 O texto em resumo (Jz 10.17–12.7): os amonitas acampam em Gileade e os líderes procuram um chefe. Jefté, filho de uma prostituta, tinha sido expulso de casa pelos meios-irmãos e vivia com "homens levianos" na terra de Tobe. Agora os mesmos que o rejeitaram vêm buscá-lo. Jefté negocia, tenta resolver a questão com os amonitas por meio de uma longa defesa histórica, recebe o Espírito do SENHOR — e, antes da batalha, faz um voto: "o que sair da porta da minha casa ao meu encontro... será do SENHOR, e o oferecerei em holocausto". Vence. Quem sai ao seu encontro é a sua única filha. Depois, Jefté ainda enfrenta Efraim numa guerra entre irmãos (o episódio do "Chibolete") e julga Israel seis anos.
+
+🔁 O espelho (quiasma) — cinco camadas que se dobram ao meio:
+A — Jefté, o filho rejeitado, expulso pelos irmãos (10.17–11.3) → a REJEIÇÃO
+   ↳ B — Os anciãos o chamam para ser chefe; ele negocia (11.4-11) → o ACORDO
+      ↳ C — CENTRO: o Espírito vem sobre ele — e mesmo assim ele faz o voto "o que sair primeiro" (11.12-33) → o VOTO
+   ↳ B' — A filha sai primeiro: o voto é cumprido (11.34-40) → o PREÇO
+A' — Guerra contra Efraim: irmãos matando irmãos; Jefté julga seis anos (12.1-7) → a DIVISÃO
+
+🔎 Como ler o espelho:
+• A ↔ A' (irmãos contra irmãos): a história começa com os meios-irmãos expulsando Jefté e termina com Jefté matando quarenta e dois mil efraimitas — outros irmãos de Israel — por causa de uma pronúncia ("Chibolete"). O homem que foi ferido pela família agora fere a família de Deus. A rejeição não tratada volta, maior, no fim.¹
+• B ↔ B' (o acordo e o preço): no início, Jefté negocia com os anciãos ("se o SENHOR mos entregar, serei eu o vosso chefe?"); no fim, descobre que não se negocia com Deus como se negocia com homens. O acordo que lhe deu o poder foi feito com palavras; o voto que lhe tirou a filha também. Palavras precipitadas têm consequências permanentes.²
+• C (o centro): o detalhe decisivo está no versículo 29 — "o Espírito do SENHOR veio sobre Jefté" — e só depois, no versículo 30, ele faz o voto. Deus já tinha dado o que era necessário para a vitória. O voto não foi pedido por Deus: foi a tentativa de Jefté de garantir o resultado, como se o SENHOR precisasse ser comprado. Os intérpretes discutem se a filha foi sacrificada ou consagrada a uma vida de virgindade no santuário, mas todos concordam que o voto foi uma tragédia.³
+
+🕰️ Por que isso importa: Jefté está na lista da fé de Hebreus 11.32. Deus usou um homem ferido, rejeitado e de fé imperfeita para libertar o seu povo. Mas o texto não esconde o custo: um líder que trata Deus como os pagãos tratavam os seus deuses — com barganhas — acaba ferindo quem mais ama. Juízes mostra que Israel estava ficando cada vez mais parecido com Canaã, até na maneira de orar.
+
+⛪ Na vida da igreja:
+• Deus não precisa ser comprado. A graça vem antes do voto: o Espírito veio sobre Jefté antes da promessa. Em Cristo, o preço já foi pago — não oramos para negociar, mas para confiar.
+• Cuidado com promessas no calor da emoção. Votos, juramentos e decisões espirituais sérias devem ser feitos com oração e conselho (Ec 5.2-5), e não por pressão ou medo.
+• Feridas não tratadas viram armas. A igreja precisa acolher os "Jeftés" — os rejeitados, os filhos de histórias difíceis — e ajudá-los a curar a rejeição no evangelho, antes que ela se volte contra os irmãos.`;
   // [305]
   if (/ibsa/i.test(p))
-    return `A simetria de Ibsã espelha Ibsã de Belém julgando Israel (A) ↔ sete anos de julgamento (A'). No centro: trinta filhos e trinta filhas — alianças externas para todos. O pivô é a estratégia matrimonial: Ibsã teceu trinta alianças externas para filhos e filhas, garantindo presença de Israel nas famílias vizinhas. Na vida da igreja: há sabedoria que se expressa não em batalhas mas em alianças bem tecidas. O juiz que forma vínculos com o mundo ao redor não é comprometedor da pureza — pode estar exercendo missão. O critério é quem está influenciando quem na aliança.`;
+    return `📖 O texto em resumo (Jz 12.8-10): "Depois dele, julgou a Israel Ibsã, de Belém. Tinha trinta filhos e trinta filhas; as filhas casou fora, e de fora trouxe trinta mulheres para os seus filhos. Julgou a Israel sete anos. Morreu Ibsã e foi sepultado em Belém". São apenas três versículos — e nenhuma batalha, nenhum milagre, nenhuma palavra de Deus registrada.
+
+🔁 O espelho (quiasma) — três camadas que se dobram ao meio:
+A — Ibsã, de Belém, julga Israel (12.8) → o COMEÇO
+   ↳ B — CENTRO: trinta filhos e trinta filhas — casamentos "de fora" (12.9a) → as ALIANÇAS
+A' — Julgou sete anos; morreu e foi sepultado em Belém (12.9b-10) → o FIM
+
+🔎 Como ler o espelho:
+• A ↔ A' (Belém do começo ao fim): o texto abre e fecha com Belém. Muitos intérpretes pensam que se trata de Belém de Zebulom (Js 19.15), no norte, e não da Belém de Judá. Seja qual for, o narrador fecha o círculo: Ibsã começou e terminou no mesmo lugar, sem grandes mudanças. Depois do caos de Abimeleque e da tragédia de Jefté, sete anos de vida comum já são uma misericórdia.¹
+• B (o centro): o único detalhe que o texto escolhe contar é a família — sessenta filhos e sessenta casamentos fora do clã. Na época, casamentos eram alianças políticas. Ibsã parece estar construindo uma rede de influência, quase como um rei. O narrador não elogia nem condena, mas deixa o leitor atento: os juízes começam a se parecer com os reis das nações.²
+• O conjunto: Ibsã aparece entre Jefté (que perdeu a única filha) e Elom. O contraste é forte: um juiz sem nenhum descendente, outro com sessenta. Mas a quantidade de filhos não é a medida da fidelidade — e o texto não diz que Ibsã ensinou a Israel os caminhos do SENHOR.³
+
+🕰️ Por que isso importa: os "juízes menores" mostram que a história de Deus avança também nos períodos quietos. Nem todo capítulo da vida precisa de batalha ou milagre. Mas eles também mostram uma tendência perigosa: a liderança em Israel vai se tornando cada vez mais uma questão de família, prestígio e influência — e cada vez menos de dependência do SENHOR.
+
+⛪ Na vida da igreja:
+• Os anos quietos também contam. Sete anos sem crise são graça. A igreja deve agradecer pelos períodos de paz e usá-los para firmar raízes, e não apenas esperar a próxima emergência.
+• Influência não é o mesmo que fidelidade. Uma rede grande de relacionamentos pode servir ao Reino ou apenas ao nosso prestígio. A pergunta é: para quem estou construindo?
+• Alianças de família importam. Os casamentos dos filhos de Ibsã foram estratégicos. Os casamentos dos nossos filhos devem ser, acima de tudo, "no Senhor" (1Co 7.39).`;
   // [306]
   if (/elom/i.test(p))
-    return `A simetria de Elom espelha os dez anos de julgamento (A) ↔ "julgou Israel" (A'). No centro: morreu em Aijalom — o lugar registrado é o único dado além do tempo e tribo. O pivô é o mínimo: tribo, tempo, lugar de sepultura. Nada mais. Na vida da igreja: Elom é o juiz mais anônimo de todos. O texto não tem sequer uma narrativa de conflito. Simplesmente foi, julgou, morreu. Há uma dignidade no serviço que não deixa rastros espetaculares — apenas décadas de fidelidade e um lugar de sepultura que alguém achou digno de registrar.`;
+    return `📖 O texto em resumo (Jz 12.11-12): "Depois dele, julgou a Israel Elom, o zebulonita; e julgou a Israel dez anos. Morreu Elom, o zebulonita, e foi sepultado em Aijalom, na terra de Zebulom". É a menor biografia de todo o livro de Juízes: nome, tribo, tempo de serviço e túmulo.
+
+🔁 O espelho (quiasma) — três camadas que se dobram ao meio:
+A — Elom, o zebulonita, julga Israel dez anos (12.11) → o SERVIÇO
+   ↳ B — CENTRO: morreu e foi sepultado em Aijalom (12.12a) → a MORTE
+A' — "Na terra de Zebulom" (12.12b) → a HERANÇA
+
+🔎 Como ler o espelho:
+• A ↔ A' (Zebulom no começo e no fim): o texto repete duas vezes que Elom era zebulonita e que foi sepultado na terra de Zebulom. Ele serviu a Israel inteiro, mas sem deixar de pertencer ao lugar que Deus deu à sua tribo. Fidelidade ao chamado de Deus muitas vezes significa servir bem onde fomos plantados.¹
+• B (o centro): no hebraico, há um jogo de palavras: o nome Elom ('êlôn) e o lugar Aijalom ('ayyālôn) são escritos com consoantes quase iguais. O homem e o lugar do seu túmulo quase se confundem. A vida de Elom se resume a isto: viveu, serviu e descansou na terra que Deus deu ao seu povo.²
+• O conjunto: depois da violência de Jefté contra Efraim, dez anos de silêncio. Nenhuma guerra, nenhum escândalo. O silêncio do texto não é desprezo — é descanso. Nem todo servo de Deus terá uma história dramática, e isso não diminui o valor da sua fidelidade.³
+
+🕰️ Por que isso importa: vivemos numa cultura que mede a importância pelo barulho, pelos seguidores e pelas histórias impressionantes. Elom ensina que Deus registra também quem serve sem holofotes. Dez anos de juízo sem crise são dez anos de cuidado com o povo — e o próprio Deus fez questão de guardar o seu nome na Escritura.
+
+⛪ Na vida da igreja:
+• Os servos discretos sustentam a igreja. Diáconos, professores, intercessores, quem limpa, quem acolhe. Talvez ninguém escreva sobre eles, mas Deus os conhece pelo nome (Hb 6.10).
+• Servir onde fomos plantados. Elom serviu Israel sem deixar Zebulom. A igreja local é o lugar onde a maioria de nós será fiel — e isso basta.
+• Uma vida bem terminada. "Morreu e foi sepultado" pode soar pouco, mas terminar a carreira sem escândalo e sem abandonar a fé é uma vitória (2Tm 4.7).`;
   // [307]
   if (/abdao/i.test(p))
-    return `A simetria de Abdão espelha o julgamento de Israel (A) ↔ oito anos de julgamento (A'). No centro: quarenta filhos e trinta netos em setenta jumentos — a prosperidade mais numerosa dos juízes menores. O pivô é o crescimento: Abdão tem mais herdeiros montados do que qualquer outro juiz menor. Na vida da igreja: a prosperidade de Abdão não é garantia de fidelidade das gerações seguintes — o livro de Juízes já demonstrou isso repetidamente. Mas o texto não condena. Setenta jumentos com setenta herdeiros é imagem de abundância que o juiz não pediu esconder. A bênção visível pode ser testemunho da provisão de Deus.`;
+    return `📖 O texto em resumo (Jz 12.13-15): "Depois dele, julgou a Israel Abdom, filho de Hilel, o piratonita. Tinha este quarenta filhos e trinta netos, que cavalgavam setenta jumentos; e julgou a Israel oito anos. Morreu Abdom e foi sepultado em Piratom, na terra de Efraim, na região montanhosa dos amalequitas". É o último dos juízes menores — e, depois dele, começa a história de Sansão.
+
+🔁 O espelho (quiasma) — três camadas que se dobram ao meio:
+A — Abdom, filho de Hilel, de Piratom, julga Israel (12.13) → a ORIGEM
+   ↳ B — CENTRO: quarenta filhos e trinta netos em setenta jumentos (12.14a) → a PROSPERIDADE
+A' — Julgou oito anos; sepultado em Piratom, na terra de Efraim (12.14b-15) → o TÚMULO
+
+🔎 Como ler o espelho:
+• A ↔ A' (Piratom, Efraim): Abdom era de Efraim — a mesma tribo que acabara de perder quarenta e dois mil homens na guerra contra Jefté (12.6). Depois da divisão, Deus levanta um juiz justamente da tribo ferida. O texto termina mencionando "a região montanhosa dos amalequitas", lembrando que o território ainda guardava marcas de inimigos antigos.¹
+• B (o centro): setenta jumentos para setenta descendentes. Na época, cavalgar jumentos era sinal de nobreza (Jz 5.10; 10.4). Abdom é retratado como um homem rico e importante, com uma família que desfila prosperidade. O número setenta lembra os setenta filhos de Gideão — e o leitor de Juízes sabe como aquela história terminou (Jz 9).²
+• O conjunto: Jair (30 filhos, 30 jumentos), Ibsã (60 filhos) e Abdom (70 descendentes): a riqueza e o prestígio dos juízes crescem, mas o texto não registra nenhuma vitória sobre inimigos, nenhuma reforma espiritual, nenhuma oração. O capítulo seguinte começa com "os filhos de Israel tornaram a fazer o que era mau perante o SENHOR" (13.1).³
+
+🕰️ Por que isso importa: prosperidade não é sinal automático de fidelidade. Os juízes menores mostram famílias crescendo e jumentos se multiplicando enquanto o coração do povo se afasta de Deus. A abundância pode ser bênção — mas também pode anestesiar. Logo depois dos setenta jumentos, Israel entra no seu período mais longo de opressão: quarenta anos sob os filisteus.
+
+⛪ Na vida da igreja:
+• Bênção não é termômetro espiritual. Uma igreja pode crescer em número, prédio e recursos e, ao mesmo tempo, esfriar no amor a Cristo (Ap 3.17).
+• A prosperidade precisa de vigilância. "Quando tiveres comido e estiveres farto... guarda-te, para que não te esqueças do SENHOR" (Dt 8.11-12).
+• Deus restaura os feridos. Depois da tragédia de Efraim, Deus levanta um juiz de Efraim. Ele não abandona as tribos e as famílias quebradas.`;
   // [308]
   if (/a profecia de de sansao nascimento/i.test(p))
-    return `A simetria do nascimento de Sansão espelha Israel entregue por quarenta anos (A) ↔ Sansão nascendo com o Espírito começando a movê-lo (A'). No centro: o anjo reaparece com o nome maravilhoso — "meu nome é maravilhoso." O pivô é o nome não revelado: o mensageiro que faz a coisa maravilhosa não se nomeia para que a atenção fique em Quem envia. Na vida da igreja: os melhores intercessores são frequentemente os que não revelam seus nomes. O serviço que recusa a celebração pessoal aponta para o Senhor. O Espírito que começa a mover Sansão já na infância é o mesmo que se moverá nele nos momentos mais imprevisíveis da narrativa.`;
+    return `📖 O texto em resumo (Jz 13.1-25): Israel volta a fazer o mal e fica quarenta anos sob os filisteus — e, desta vez, nem clama a Deus. Mesmo assim, o Anjo do SENHOR aparece a uma mulher estéril, esposa de Manoá, e anuncia um filho que será nazireu desde o ventre e "começará a livrar Israel". Manoá ora pedindo que o mensageiro volte. Ele volta, mas não revela o nome: "Por que perguntas assim pelo meu nome, visto que é maravilhoso?". Quando Manoá oferece o sacrifício, o Anjo sobe na chama do altar. Manoá teme morrer; a esposa responde com fé. Nasce Sansão, e o Espírito do SENHOR começa a impeli-lo.
+
+🔁 O espelho (quiasma) — cinco camadas que se dobram ao meio:
+A — Israel entregue aos filisteus por quarenta anos (13.1) → a ESCURIDÃO
+   ↳ B — O Anjo aparece à mulher estéril e anuncia um filho nazireu (13.2-7) → a PROMESSA
+      ↳ C — CENTRO: o Anjo volta — "o meu nome é maravilhoso" — e sobe na chama do altar (13.8-20) → a REVELAÇÃO
+   ↳ B' — Manoá teme: "vimos a Deus"; a mulher responde com fé (13.21-23) → a CONFIANÇA
+A' — Sansão nasce, cresce, e o Espírito começa a movê-lo (13.24-25) → a LUZ
+
+🔎 Como ler o espelho:
+• A ↔ A' (escuridão ↔ luz): o capítulo começa com Israel dominado e calado — não há clamor. Termina com um menino nascendo e o Espírito de Deus em movimento. Deus age por pura graça, antes que o povo peça. A salvação não começa na oração de Israel, mas no coração de Deus.¹
+• B ↔ B' (promessa e fé): a mesma mulher que recebe a promessa é quem entende o seu sentido. Manoá entra em pânico ("certamente morreremos"); ela raciocina com teologia sólida: "Se o SENHOR nos quisesse matar, não aceitaria o holocausto... nem nos teria anunciado tais coisas". A fé lê o caráter de Deus pelas suas promessas.²
+• C (o centro): o nome do Anjo é "maravilhoso" (pele'), a mesma raiz usada em Isaías 9.6: "o seu nome será Maravilhoso". O Anjo aceita sacrifício e é tratado como o próprio SENHOR (13.22). Muitos intérpretes reformados viram aqui uma aparição do Filho de Deus antes da encarnação. No centro do texto, Deus se revela — e sobe na chama do altar, apontando para o sacrifício que salva.³
+
+🕰️ Por que isso importa: a história de Sansão começa como as grandes histórias de salvação da Bíblia — uma mulher estéril, um anúncio do céu, um filho consagrado. O mesmo padrão aparece em Isaque, Samuel e João Batista. E todos eles apontam para outro anúncio, feito a uma virgem: o nascimento daquele que não apenas "começaria a livrar", mas salvaria o seu povo dos seus pecados (Mt 1.21).
+
+⛪ Na vida da igreja:
+• Deus age quando nem clamamos. Há períodos em que a igreja está acomodada ao mundo, como Israel aos filisteus. Mesmo assim, Deus pode levantar vidas e despertar o seu povo por graça.
+• A fé raciocina a partir das promessas. Como a mulher de Manoá, aprendemos a responder ao medo com o que Deus já disse e já fez.
+• O nome Maravilhoso. O centro não é Sansão, mas Aquele cujo nome é maravilhoso. Toda a Escritura converge para Cristo, o verdadeiro Libertador.`;
   // [309]
   if (/de sansao casamento/i.test(p))
-    return `A simetria do casamento de Sansão espelha o desejo pela filha filisteia (A) ↔ Sansão matando trinta filisteus e a noiva sendo dada a outro (A'). No centro: a charada do mel no leão — "do que come saiu comida, do que é forte saiu doçura." O pivô é que a charada só existe porque Sansão tocou o cadáver impuro — violação do voto nazireno que gerou a "sabedoria" da charada. Na vida da igreja: às vezes o que parece astúcia intelectual nasce de uma concessão espiritual anterior. A fonte da charada era uma transgressão. O mel era real, mas tinha uma origem que Sansão preferia não mencionar à família.`;
+    return `📖 O texto em resumo (Jz 14.1-20): Sansão vê uma filisteia em Timna e exige: "Toma-me esta, porque só desta me agrado". Os pais protestam, mas o narrador revela: "isto vinha do SENHOR, que buscava ocasião contra os filisteus". No caminho, Sansão despedaça um leão com as mãos, pelo Espírito. Depois volta, encontra um enxame de abelhas no cadáver, come o mel e o dá aos pais sem contar de onde veio. Na festa de casamento, propõe um enigma: "Do comedor saiu comida, e do forte saiu doçura". Os convidados pressionam a noiva, ela arranca a resposta de Sansão com choro, e ele paga a aposta matando trinta filisteus em Asquelom. A noiva é dada a outro.
+
+🔁 O espelho (quiasma) — cinco camadas que se dobram ao meio:
+A — Sansão quer a filisteia: "só desta me agrado" (14.1-4) → o DESEJO
+   ↳ B — Mata o leão com as mãos vazias, pelo Espírito (14.5-6) → a FORÇA
+      ↳ C — CENTRO: o mel no cadáver e o enigma — "do forte saiu doçura" (14.7-14) → o SEGREDO
+   ↳ B' — O enigma é resolvido por traição: "se não lavrásseis com a minha novilha" (14.15-18) → a FRAQUEZA
+A' — Mata trinta filisteus; a noiva é dada a outro (14.19-20) → a PERDA
+
+🔎 Como ler o espelho:
+• A ↔ A' (o desejo e a perda): Sansão começa exigindo a mulher que "agrada aos seus olhos" e termina sem ela. O mesmo padrão vai governar toda a sua vida: os olhos decidem, e o coração perde. Ainda assim, o texto afirma que Deus estava agindo por trás das escolhas erradas de Sansão — sem aprová-las.¹
+• B ↔ B' (força e fraqueza): Sansão é forte o bastante para despedaçar um leão, mas fraco diante do choro de uma mulher. O homem que vence feras não vence a pressão. A força física não protege contra a fraqueza moral.²
+• C (o centro): o mel vem de um cadáver — e um nazireu não podia tocar em corpo morto (Nm 6.6). Sansão quebra o voto, come em segredo e ainda envolve os pais na impureza, sem contar a eles. O enigma da festa nasce exatamente desse segredo. E a festa (no hebraico, "banquete de bebida") sugere outra quebra do voto nazireu. No centro do texto está uma consagração sendo tratada com descaso.³
+
+🕰️ Por que isso importa: o versículo 4 é uma das afirmações mais impressionantes sobre a soberania de Deus: o SENHOR usou até as escolhas impulsivas de Sansão para começar a libertar Israel. Mas isso não torna o pecado inofensivo. Deus cumpre os seus propósitos apesar de nós — e nós colhemos as consequências das nossas escolhas.
+
+⛪ Na vida da igreja:
+• Os olhos não podem governar a vida. "Só desta me agrado" é o lema de uma geração guiada pelo que vê e sente. A igreja precisa ensinar a escolher pela Palavra, especialmente no namoro e no casamento (2Co 6.14).
+• Pequenos segredos viram grandes quedas. O mel escondido parecia inofensivo, mas o voto quebrado em secreto preparou a queda em público.
+• Deus é soberano até sobre os nossos erros. Isso não é desculpa para pecar, mas é consolo para quem se arrepende: ele não perde o controle da história.`;
   // [310]
   if (/sansao e tres cem raposas/i.test(p))
-    return `A simetria de Sansão e as trezentas raposas espelha o retorno de Sansão à esposa dada a outro (A) ↔ "já que fizestes assim — só me deterei depois da vingança" (A'). No centro: trezentas raposas com tochas destroem as searas, vinhas e olivais dos filisteus. O pivô é a proporção: a ofensa pessoal de Sansão produziu destruição econômica coletiva. Na vida da igreja: o pecado raramente é contido em quem o pratica. A reação de Sansão — legítima na sua percepção — incendiou o sustento de uma população inteira. A espiral de vingança nunca para onde iniciou: Sansão e os filisteus escalarão até o fim do livro.`;
+    return `📖 O texto em resumo (Jz 15.1-8): tempos depois, na época da colheita do trigo, Sansão volta para visitar a esposa levando um cabrito. O sogro não o deixa entrar: tinha dado a moça a outro e oferece a irmã mais nova. Sansão responde: "Desta vez sou inocente para com os filisteus, quando lhes fizer algum mal". Captura trezentas raposas, amarra-as cauda com cauda com tochas e as solta nas plantações: trigo, vinhas e olivais pegam fogo. Os filisteus se vingam queimando a mulher e o pai dela. Sansão responde: "Visto que assim procedeis, não desistirei enquanto não me vingar" — e os fere com grande matança.
+
+🔁 O espelho (quiasma) — cinco camadas que se dobram ao meio:
+A — Sansão volta: a esposa foi dada a outro (15.1-2) → a OFENSA
+   ↳ B — "Desta vez serei inocente quanto aos filisteus" (15.3) → a JUSTIFICATIVA
+      ↳ C — CENTRO: trezentas raposas com tochas incendeiam as searas, as vinhas e os olivais (15.4-5) → o FOGO
+   ↳ B' — Os filisteus queimam a mulher e o pai dela (15.6) → a REVANCHE
+A' — "Não desistirei enquanto não me vingar" — grande matança (15.7-8) → a VINGANÇA
+
+🔎 Como ler o espelho:
+• A ↔ A' (ofensa ↔ vingança): o texto começa com uma ofensa pessoal e termina com uma matança. O que era um problema de família virou guerra entre povos. A vingança nunca devolve o que foi perdido: Sansão não recupera a esposa — ela morre queimada.¹
+• B ↔ B' (justificativa e revanche): Sansão se declara "inocente" antes de agir; os filisteus também acham que estão apenas respondendo. Cada lado justifica o seu golpe pelo golpe do outro: "assim como me fizeram, assim lhes fiz" (15.11). É a lógica da espiral de violência.²
+• C (o centro): o fogo destrói o trigo, o vinho e o azeite — os três produtos básicos da terra (Dt 7.13). A ofensa de um homem queimou o sustento de um povo inteiro. E o fogo que Sansão acende volta para ele: a mulher que ele queria é queimada com o mesmo fogo. Mesmo assim, Deus usa esse conflito para enfraquecer o domínio filisteu.³
+
+🕰️ Por que isso importa: Sansão é um libertador movido por motivos pessoais — orgulho ferido, raiva, desejo de revanche. Deus o usa, mas o texto não romantiza a sua raiva. A Bíblia mostra que a ira humana "não produz a justiça de Deus" (Tg 1.20). O verdadeiro Libertador, Jesus, venceu os inimigos não pela vingança, mas tomando sobre si o golpe.
+
+⛪ Na vida da igreja:
+• A vingança nunca para onde começou. Conflitos na igreja, na família ou nas redes sociais seguem o mesmo padrão: cada lado se acha "inocente". Alguém precisa interromper a espiral (Rm 12.17-21).
+• O pecado queima o que está ao redor. A raiva de um membro pode incendiar uma congregação inteira. Cuidado com as "tochas" que soltamos com palavras.
+• Deixar a justiça com Deus. "Minha é a vingança, eu retribuirei, diz o Senhor" — confiar nisso liberta o coração.`;
   // [311]
   if (/sansao derrota filisteus/i.test(p))
-    return `A simetria da derrota dos filisteus por Sansão espelha os filisteus subindo a Judá para prendê-lo (A) ↔ Sansão julgando Israel vinte anos (A'). No centro: o Espírito vem — Sansão mata mil com a queixada de jumento. O pivô é a sede depois da vitória: o herói que matou mil tem sede e quase morre. Deus abre a rocha. Na vida da igreja: mesmo os que o Espírito usa extraordinariamente têm necessidades ordinárias. A sede de Sansão após a queixada não é fraqueza vergonhosa — é humana. E Deus não critica a sede — Ele abre a rocha. O mesmo Deus que usa o extraordinário cuida do ordinário.`;
+    return `📖 O texto em resumo (Jz 15.9-20): os filisteus acampam em Judá exigindo Sansão. Três mil homens de Judá descem até a rocha de Etã e dizem a ele: "Não sabias tu que os filisteus dominam sobre nós?". Eles amarram Sansão com duas cordas novas e o entregam. Mas, em Leí, "o Espírito do SENHOR de tal maneira se apossou dele" que as cordas se desfazem como linho queimado. Com uma queixada fresca de jumento, Sansão mata mil homens e canta a própria vitória. Logo depois, quase morre de sede e, pela primeira vez, clama ao SENHOR. Deus fende uma cavidade e faz brotar água: o lugar se chama En-Hacoré, "a fonte do que clamou". Sansão julga Israel vinte anos.
+
+🔁 O espelho (quiasma) — cinco camadas que se dobram ao meio:
+A — Os filisteus sobem a Judá para prender Sansão (15.9-11) → a AMEAÇA
+   ↳ B — Judá amarra o seu próprio libertador e o entrega (15.12-13) → a TRAIÇÃO
+      ↳ C — CENTRO: o Espírito vem — as cordas caem; mil mortos com a queixada (15.14-15) → o PODER
+   ↳ B' — Sansão canta a si mesmo, tem sede e clama; Deus abre a fonte (15.16-19) → a DEPENDÊNCIA
+A' — Sansão julga Israel vinte anos, nos dias dos filisteus (15.20) → o GOVERNO
+
+🔎 Como ler o espelho:
+• A ↔ A' (filisteus no começo e no fim): o texto começa com os filisteus dominando e termina dizendo que Sansão julgou Israel "nos dias dos filisteus". A opressão não acabou, mas Deus sustentou o seu povo durante vinte anos por meio de um homem só.¹
+• B ↔ B' (Judá e a sede): Judá prefere a escravidão confortável a lutar ao lado do libertador: "não sabias que os filisteus dominam sobre nós?". Já Sansão, logo após a vitória, canta: "com uma queixada de jumento matei mil homens" — sem mencionar Deus. Então vem a sede, e o herói descobre que não consegue nem beber sem o SENHOR. A traição dos irmãos e a sede do herói expõem a mesma verdade: ninguém se salva sozinho.²
+• C (o centro): as cordas novas "se tornaram como fios de linho queimados". O libertador amarrado e entregue pelos seus aos inimigos vence justamente quando parece derrotado. Muitos leitores cristãos viram aqui uma sombra de Cristo, entregue pelos seus aos gentios — e vitorioso.³
+
+🕰️ Por que isso importa: o povo de Deus pode se acostumar tanto com a opressão que passa a ver o libertador como ameaça. Judá queria paz com os filisteus a qualquer preço. E o próprio libertador quase se perde no orgulho da vitória. A fonte de En-Hacoré lembra que a força de Sansão nunca foi dele: em Leí, o Espírito; na sede, a água — tudo é graça.
+
+⛪ Na vida da igreja:
+• Cuidado com a acomodação. A igreja pode preferir não incomodar o mundo a seguir quem a chama para a liberdade. "Não sabias que eles dominam sobre nós?" é a voz do conformismo.
+• Depois da vitória, a sede. Grandes momentos espirituais são muitas vezes seguidos de esgotamento. Deus não despreza a nossa sede: ele abre fontes para quem clama.
+• Cristo, o Libertador entregue. Ele foi amarrado e entregue pelos seus, mas venceu o maior inimigo. Nele, as cordas do pecado e da morte "se desfazem como linho queimado".`;
   // [312]
   if (/sansao e dalila/i.test(p))
-    return `A simetria de Sansão e Dalila espelha Sansão em Gaza — carregando as portas (A) ↔ "Sansão não sabe que o Senhor o abandonou" (A'). No centro: "minha força está no cabelo — sou nazireno desde o ventre de minha mãe." O pivô é a confissão: Sansão cedeu após três resistências porque Dalila o pressionou "todos os dias" até sua alma não aguentar mais. Na vida da igreja: a erosão da fidelidade raramente acontece num momento único — é pressão diária acumulada. Sansão não capitulou de uma vez; capitulou exausto. E o texto mais ominoso do livro: "não sabia que o Senhor o havia deixado." A ausência de Deus nem sempre é imediatamente perceptível.`;
+    return `📖 O texto em resumo (Jz 16.1-22): em Gaza, Sansão passa a noite com uma prostituta; os filisteus o cercam, mas ele arranca as portas da cidade e as leva ao alto de um monte. Depois se apaixona por Dalila, no vale de Soreque. Os chefes filisteus oferecem a ela uma fortuna para descobrir o segredo da sua força. Três vezes Sansão mente (cordas de arco, cordas novas, tranças no tear) e três vezes se livra. Ela insiste "todos os dias", até que ele abre "todo o seu coração": "Nunca passou navalha pela minha cabeça, porque sou nazireu de Deus". Dalila o faz dormir no colo, cortam o cabelo, e ele acorda pensando que se livraria como antes — "porque ele não sabia ainda que já o SENHOR se tinha retirado dele". Os filisteus furam os seus olhos e o põem a girar o moinho na prisão de Gaza. Mas o cabelo começa a crescer de novo.
+
+🔁 O espelho (quiasma) — cinco camadas que se dobram ao meio:
+A — Sansão em Gaza: livre e forte, carrega as portas da cidade (16.1-3) → a FORÇA
+   ↳ B — Dalila: três tentativas fracassadas (16.4-14) → o JOGO
+      ↳ C — CENTRO: "Sou nazireu de Deus desde o ventre" — ele abre todo o coração (16.15-17) → o SEGREDO
+   ↳ B' — Dalila o adormece; o cabelo é cortado; "o SENHOR se retirou dele" (16.18-20) → a QUEDA
+A' — Em Gaza de novo: cego, preso, girando o moinho — mas o cabelo volta a crescer (16.21-22) → a PRISÃO
+
+🔎 Como ler o espelho:
+• A ↔ A' (Gaza e Gaza): a mesma cidade, dois retratos. No começo, Sansão sai de Gaza carregando as portas nos ombros; no fim, entra em Gaza acorrentado, girando um moinho — trabalho de animal ou de escravo. Os olhos que tantas vezes o guiaram ("só desta me agrado") são arrancados.¹
+• B ↔ B' (o jogo e a queda): Sansão brinca com o perigo três vezes, cada vez chegando mais perto da verdade (do cabelo para as tranças). Ele pensa que está no controle. A queda não aconteceu num dia: foi a soma de concessões. E o versículo mais triste do livro vem no fim: "ele não sabia que o SENHOR se tinha retirado dele". O pior não é perder a força; é não perceber que perdeu a presença de Deus.²
+• C (o centro): a força nunca esteve no cabelo como se fosse mágica. O cabelo era o sinal visível da sua consagração a Deus — o último sinal que restava, depois de ele já ter tocado em cadáver e participado de banquetes. Quando entrega esse último sinal, entrega o segredo da sua relação com Deus a quem queria destruí-lo.³
+
+🕰️ Por que isso importa: a história de Sansão é um retrato do coração humano: dons extraordinários, consagração desde o ventre, e uma vida inteira de concessões. Mas o texto não termina em 16.21. O versículo 22 é pura graça: "o cabelo da sua cabeça começou a crescer de novo". Deus ainda não tinha terminado com Sansão.
+
+⛪ Na vida da igreja:
+• Não brinque com a tentação. Quem "brinca" três vezes com o pecado acaba entregando o coração na quarta. Fuja, não negocie (2Tm 2.22).
+• É possível perder a presença de Deus sem perceber. A rotina religiosa pode continuar enquanto o coração se esfria. Precisamos de vigilância, comunhão e exame (Ap 2.4-5).
+• A graça faz o cabelo crescer de novo. Para quem caiu, há restauração. Deus não descarta os seus servos quebrados.`;
   // [313]
   if (/de sansao morte/i.test(p))
-    return `A simetria da morte de Sansão espelha os filisteus festejando — "Dagom entregou nosso inimigo" (A) ↔ Sansão matando mais na morte do que em vida (A'). No centro: "lembra-te de mim, Senhor — fortifica-me uma última vez." O pivô é a oração final: cego, acorrentado, humilhado, Sansão ora. É a oração mais honesta do juiz mais problemático — sem promessa de reforma, sem voto de mudança, apenas "lembra-te de mim." Na vida da igreja: não há momento tarde demais para se virar ao Senhor. A maior vitória de Sansão acontece quando ele nada mais tem — sem visão, sem força própria, sem futuro visível. O Senhor que se lembra de Sansão é o mesmo que se lembra de nós.`;
+    return `📖 O texto em resumo (Jz 16.23-31): os chefes filisteus fazem uma grande festa ao seu deus Dagom: "O nosso deus nos entregou nas mãos a Sansão, nosso inimigo". Trazem o prisioneiro cego para diverti-los. Sansão pede ao menino que o guia para encostá-lo nas colunas do templo. Cerca de três mil pessoas olham do terraço. Então Sansão ora: "SENHOR Deus, peço-te que te lembres de mim e dá-me força só esta vez". Agarra as duas colunas do meio e diz: "Morra eu com os filisteus". O templo desaba. "Foram mais os que matou na sua morte do que os que matara na sua vida". Os irmãos o sepultam no túmulo do seu pai Manoá. Ele julgou Israel vinte anos.
+
+🔁 O espelho (quiasma) — cinco camadas que se dobram ao meio:
+A — Os filisteus festejam: "Dagom entregou o nosso inimigo" (16.23-25) → o TRIUNFO de Dagom
+   ↳ B — Sansão pede ao menino que o leve às colunas (16.26) → a FRAQUEZA
+      ↳ C — CENTRO: "Lembra-te de mim, SENHOR — fortalece-me só esta vez" (16.27-28) → a ORAÇÃO
+   ↳ B' — Sansão empurra as colunas: "Morra eu com os filisteus" (16.29-30a) → a ENTREGA
+A' — Mais mortos na morte do que em vida; sepultado com o pai (16.30b-31) → o TRIUNFO do SENHOR
+
+🔎 Como ler o espelho:
+• A ↔ A' (Dagom ↔ SENHOR): o texto começa com os filisteus louvando Dagom pela vitória e termina com o templo de Dagom no chão. A batalha nunca foi apenas entre Sansão e os filisteus, mas entre o SENHOR e os ídolos. Os filisteus pensaram que o seu deus tinha vencido o Deus de Israel; o fim mostra quem é o verdadeiro Deus.¹
+• B ↔ B' (fraqueza e entrega): o homem que carregou as portas de Gaza agora precisa de um menino para guiá-lo. Mas é justamente nessa dependência que ele faz a maior obra da sua vida. Ao empurrar as colunas, Sansão entrega a própria vida. A vitória vem pela fraqueza e pela morte.²
+• C (o centro): é a oração mais humilde de Sansão. Ele não pede vingança gloriosa nem fama: pede que Deus se lembre dele. É o mesmo pedido que o ladrão na cruz fará a Jesus: "lembra-te de mim". O cabelo havia crescido (16.22), mas a força veio em resposta à oração, porque nunca esteve no cabelo, e sim no SENHOR.³
+
+🕰️ Por que isso importa: Hebreus 11.32-34 coloca Sansão entre os heróis da fé, entre os que "da fraqueza tiraram força". Não porque a sua vida foi exemplar, mas porque no fim ele se lançou sobre a misericórdia de Deus. E a sua morte aponta para outra morte: Jesus, com os braços estendidos, entregou a vida e, na sua morte, derrotou os inimigos de forma muito mais completa — não matando, mas morrendo pelos inimigos.
+
+⛪ Na vida da igreja:
+• Nunca é tarde para clamar. Cego, preso e humilhado, Sansão ainda podia orar. Ninguém está longe demais da misericórdia de Deus.
+• A força de Deus se aperfeiçoa na fraqueza (2Co 12.9). A igreja não precisa ser forte aos olhos do mundo; precisa depender do SENHOR.
+• Cristo, o Sansão maior. Sansão matou mais na sua morte; Jesus salvou mais na sua morte do que qualquer obra humana poderia salvar. A cruz é onde Deus derrubou o templo dos ídolos.`;
   // [314]
   if (/a migracao de da/i.test(p))
-    return `A simetria da migração de Dã espelha Mica fazendo ídolo de prata — culto doméstico (A) ↔ Dã conquistando Laís e instalando o ídolo (A'). No centro: os danitas tomam o ídolo e o levita de Mica — religião portátil para a nova conquista. O pivô é o levita: contratado por Mica, recrutado pelos danitas, o sacerdócio sem fidelidade segue o poder mais forte. Na vida da igreja: um ministério que serve quem paga melhor é símbolo de uma religião que valida poder em vez de desafiá-lo. O ídolo de Mica não nasceu com intenção maliciosa — mas a religião doméstica sem fundamento na revelação é a primeira etapa de uma idolatria que migra junto com os seus donos.`;
+    return `📖 O texto em resumo (Jz 17.1–18.31): Mica, de Efraim, devolve à mãe mil e cem moedas de prata que tinha roubado. Ela "consagra" a prata ao SENHOR — e manda fazer com ela um ídolo. Mica monta um santuário em casa, com éfode e terafins, e contrata como sacerdote um jovem levita de Belém por dez moedas por ano, roupa e comida: "Agora sei que o SENHOR me fará bem". Enquanto isso, a tribo de Dã procura terra. Cinco espiões passam pela casa de Mica, consultam o levita e recebem uma resposta favorável. Depois, seiscentos danitas armados voltam, levam o ídolo e o sacerdote, que vai "alegre". Mica os persegue, mas desiste diante da força. Os danitas destroem Laís, uma cidade pacífica e sem defesa, e ali instalam o ídolo — com um sacerdote descendente de Moisés.
+
+🔁 O espelho (quiasma) — cinco camadas que se dobram ao meio:
+A — Mica faz um ídolo de prata e monta um culto doméstico (17.1-6) → o ÍDOLO em casa
+   ↳ B — O levita é contratado; os espiões de Dã partem para Laís (17.7–18.10) → a RELIGIÃO contratada
+      ↳ C — CENTRO: os danitas tomam o ídolo e o levita de Mica (18.11-21) → a RELIGIÃO roubada
+   ↳ B' — Mica persegue: "Tomastes os deuses que eu fiz!" — e desiste (18.22-26) → o VAZIO
+A' — Dã conquista Laís e instala o ídolo para a tribo (18.27-31) → o ÍDOLO na nação
+
+🔎 Como ler o espelho:
+• A ↔ A' (o ídolo de uma casa ↔ o ídolo de uma tribo): o que começa como religião caseira termina como culto oficial de uma tribo inteira, até o cativeiro (18.30). A idolatria nunca fica pequena. E tudo é feito em nome do SENHOR: a prata foi "consagrada ao SENHOR" (17.3). O pecado de Israel aqui não é abandonar o nome de Deus, mas usá-lo para aquilo que Deus proibiu.¹
+• B ↔ B' (contratado e roubado): o levita é contratado por salário e depois aceita uma "proposta melhor": ser sacerdote de uma tribo em vez de uma casa. Mica, ao perder tudo, grita: "Tomastes os deuses que eu fiz... e que mais me resta?". Um deus que pode ser feito, contratado e roubado não pode salvar ninguém.²
+• C (o centro): o ponto mais baixo do texto: a religião vira objeto de saque. E o final traz um choque: o sacerdote se chama Jônatas, neto de Moisés (18.30). A segunda geração depois de Moisés já estava servindo a ídolos. Fé não se herda automaticamente.³
+
+🕰️ Por que isso importa: o refrão desses capítulos explica tudo: "Naqueles dias não havia rei em Israel; cada um fazia o que achava mais reto" (17.6). Mica não deixou de ser religioso; ele criou uma religião do seu jeito. É o retrato da espiritualidade de hoje: uma fé personalizada, com Deus a serviço do meu bem-estar ("agora sei que o SENHOR me fará bem").
+
+⛪ Na vida da igreja:
+• Cuidado com a religião "do meu jeito". Usar o nome de Deus não garante que o estamos adorando como ele ordena. A Escritura, e não o gosto pessoal, regula a adoração.
+• Ministério não é mercado. O levita seguiu a melhor oferta. Pastores e líderes são chamados a servir a Deus, e não a quem paga mais (1Pe 5.2).
+• Fé não se herda, se transmite. O neto de Moisés virou sacerdote de ídolo. Cada geração precisa ser ensinada e precisa conhecer a Deus pessoalmente (Jz 2.10).`;
   // [315]
   if (/o crime de gibea/i.test(p))
-    return `A simetria do crime de Gibeá espelha o levita e a concubina — violência em Gibeá (A) ↔ provisão de esposas para Benjamim — "cada um fazia o que parecia certo" (A'). No centro: derrota de Israel nos dois primeiros dias — clamor e consulta. O pivô é a consulta: Israel consultou o Senhor após a primeira derrota, após a segunda, e somente na terceira o resultado mudou. Na vida da igreja: o crime de Gibeá é o espelho final de Juízes — o que começa com "não havia rei" termina em violência que espelha Sodoma. A frase conclusiva do livro não é sentença sobre falta de monarquia — é diagnóstico de ausência de Senhor. O rei que Israel precisava não era Saul; era o Deus que eles continuaram a ignorar.`;
+    return `📖 O texto em resumo (Jz 19.1–21.25): um levita vai a Belém buscar a sua concubina. Na volta, evita pernoitar numa cidade estrangeira e para em Gibeá, de Benjamim. Ali, como em Sodoma, homens da cidade cercam a casa exigindo o hóspede. O levita entrega a concubina, que é violentada a noite toda e morre na porta. Ele corta o corpo em doze pedaços e os envia a todo Israel. As tribos se reúnem em Mispa; Benjamim se recusa a entregar os culpados. Israel consulta a Deus, perde dois dias de batalha, chora, jejua e oferece sacrifícios; no terceiro dia, Benjamim é quase exterminado — sobram seiscentos homens. Para que a tribo não desapareça, Israel destrói Jabes-Gileade e permite que os benjamitas raptem moças em Siló. O livro termina: "Naqueles dias não havia rei em Israel; cada um fazia o que achava mais reto".
+
+🔁 O espelho (quiasma) — cinco camadas que se dobram ao meio:
+A — O levita e a concubina: violência em Gibeá (19.1-28) → o CRIME contra uma mulher
+   ↳ B — Israel se reúne; Benjamim se recusa a entregar os culpados (19.29–20.11) → a INDIGNAÇÃO
+      ↳ C — CENTRO: duas derrotas, choro, jejum e consulta ao SENHOR (20.12-28) → o QUEBRANTAMENTO
+   ↳ B' — Terceiro dia: emboscada, Benjamim quase destruído (20.29-48) → a DESTRUIÇÃO
+A' — Esposas para Benjamim: novas violências contra mulheres; "cada um fazia o que achava mais reto" (21.1-25) → o CRIME repetido
+
+🔎 Como ler o espelho:
+• A ↔ A' (mulheres como vítimas): o texto começa com uma mulher entregue e morta e termina com quatrocentas moças tomadas de Jabes-Gileade e duzentas raptadas em Siló. Israel se indigna com o crime de Gibeá, mas resolve o problema repetindo o mesmo tipo de violência. O povo de Deus ficou igual a Sodoma (Gn 19).¹
+• B ↔ B' (indignação e destruição): a reunião de Israel começa justa — um crime terrível precisa ser julgado. Mas a resposta sai do controle: de uma tribo culpada de proteger criminosos, Israel passa a quase extinguir um irmão. Justiça sem misericórdia e sem medida também se torna pecado.²
+• C (o centro): Israel consulta a Deus e recebe a ordem de subir — e mesmo assim perde duas vezes, com quarenta mil mortos. Só depois de chorar, jejuar e oferecer sacrifícios diante do SENHOR vem a vitória. Deus estava disciplinando não apenas Benjamim, mas Israel inteiro. Quem julga o pecado do irmão precisa primeiro se humilhar.³
+
+🕰️ Por que isso importa: Juízes termina no fundo do poço. O livro começou com Israel perguntando: "Quem subirá primeiro contra os cananeus?" (1.1) e termina com a mesma pergunta — agora contra Benjamim (20.18). O inimigo passou a ser o próprio irmão. O refrão final diagnostica a doença: sem rei, cada um faz o que acha certo. O livro prepara a chegada de Davi, de Belém — e, por meio dele, aponta para o Rei verdadeiro, Jesus, o único que pode governar o coração humano.
+
+⛪ Na vida da igreja:
+• Quando cada um é o seu próprio rei, os fracos pagam o preço. A concubina não tem nome nem voz no texto. A igreja deve ser lugar de proteção para os vulneráveis, nunca de silêncio diante do abuso.
+• Disciplina com humildade e medida. Pecados graves precisam ser tratados, mas com quebrantamento, sem vingança e sem destruir o irmão (Gl 6.1).
+• Precisamos de um Rei. A resposta para Juízes não é apenas uma monarquia melhor, mas o reinado de Cristo sobre cada coração e sobre a sua igreja.`;
 
   // Rute
   if (/familia.*elimeleque|moabe.*naomi|naomi.*rute/i.test(p))
@@ -5269,49 +6150,49 @@ function gerarOracao(d: DiaDevocional): string {
   // ── JUÍZES ───────────────────────────────────────────────────────────
   // [285]
   if (/de israel fracasso a completo conquista de canaa/i.test(p))
-    return `Senhor, o mapa do fracasso de Israel começa com vitórias parciais e termina em recuo. Guarda-me do compromisso incompleto que parece tolerável mas prepara a apostasia da geração seguinte. Que eu não deixe cananeus que deveriam ser expulsos porque a conquista parcial já parece suficiente. Amém.`;
+    return `Senhor, Israel começou perguntando quem subiria primeiro e terminou recuando para a montanha. Mostra-me as áreas da minha vida em que eu tenho feito acordos com o que tu mandaste expulsar. Perdoa as minhas desculpas: os "carros de ferro" que uso para não obedecer, quando tu prometeste estar comigo. Livra-me da obediência pela metade e dos acordos que parecem pequenos, mas que me fazem habitar no meio daquilo que deveria estar fora. Dá-me coragem para enfrentar hoje o pecado que eu tenho tolerado, antes que ele se torne laço para mim e para a minha casa. Em nome de Jesus. Amém.`;
   // [286]
   if (/de israel infidelidade/i.test(p))
-    return `Deus de Boquim, o ciclo que Juízes descreve é tão familiar que me assusta. Que eu reconheça o padrão na minha própria vida — não para me condenar, mas para interrompê-lo antes que a opressão seja necessária para me fazer clamar. Que o choro de Boquim aconteça antes da servidão, não por causa dela. Amém.`;
+    return `Pai, em uma única geração o teu povo deixou de te conhecer. Guarda a minha família e a minha igreja desse esquecimento. Que eu não seja como Israel em Boquim, que chorou, sacrificou e continuou no mesmo caminho. Dá-me um arrependimento que abandona os ídolos, e não só lágrimas. Obrigado porque, mesmo diante de um povo que se corrompia mais e mais, tu te compadecias dos seus gemidos. Obrigado por Jesus, o Libertador que não morre e deixa o povo voltar ao ciclo, mas vive para sempre e nos guarda. Ajuda-me a contar às próximas gerações as tuas obras. Em nome de Jesus. Amém.`;
   // [287]
   if (/otoniel/i.test(p))
-    return `Senhor, a narrativa de Otoniel não tem drama — apenas obediência limpa, Espírito recebido, vitória e descanso. Que eu não desprezar a estação de fidelidade silenciosa. Nem todo chamado tem a história de Gideão. Que o meu seja fiel ao formato que tu determinaste para mim, sem inveja do formato mais dramático dos outros. Amém.`;
+    return `Senhor, quando o teu povo clamou, tu levantaste Otoniel, deste-lhe o teu Espírito e entregaste o inimigo nas suas mãos. Obrigado porque a salvação é obra tua do começo ao fim. Perdoa-me quando confio nas minhas estratégias e esqueço de clamar. Enche-me do teu Espírito, para que eu sirva não pela minha força, mas pelo teu poder. Levanta na tua igreja homens e mulheres como Otoniel: fiéis, cheios do Espírito e sem nada de que se envergonhar. E obrigado por Jesus, o Libertador sobre quem o Espírito repousou sem medida, que nos dá descanso para sempre. Em nome de Jesus. Amém.`;
   // [288]
   if (/eude/i.test(p))
-    return `Pai, Eúde tinha uma espada de dois gumes e coragem para uma missão solitária. O maior período de descanso em Juízes nasceu da ação mais silenciosa. Usa o que está na minha mão — por mais improvável que pareça — para a libertação que só tu podes planejar. Amém.`;
+    return `Senhor, tu usaste um homem canhoto para derrubar um rei que oprimia o teu povo há dezoito anos. Obrigado porque tu não precisas dos mais fortes nem dos mais preparados: usas o que parece limitação para mostrar a tua glória. Pega as minhas fraquezas e faze delas instrumentos nas tuas mãos. Derruba os opressores que dominam a minha vida e a vida de quem eu amo — vícios, medos, injustiças. Que a tua Palavra, mais cortante que espada de dois gumes, penetre o meu coração e corte o que precisa ser cortado. Em nome de Jesus. Amém.`;
   // [289]
   if (/sangar/i.test(p))
-    return `Senhor, Sangar tinha uma aguilhada de bois e libertou Israel. Que eu não aguarde ferramentas extraordinárias para exercer o chamado que tens para mim. O que está na minha mão hoje, consagrado a ti, pode ser suficiente para o que precisas fazer através de mim. Amém.`;
+    return `Pai, Sangar não tinha espada, apenas uma aguilhada de bois — e tu o usaste para libertar Israel. Perdoa-me quando fico esperando ter mais recursos, mais preparo ou mais tempo para te servir. Mostra-me o que já está na minha mão: o meu trabalho, a minha casa, os meus dons. Usa essas coisas comuns para a tua glória. Obrigado porque tu vês os servos de um versículo só, os que ninguém lembra, e os colocas na tua história. E obrigado porque tu acolhes pessoas de todas as origens: que a minha igreja também seja assim. Em nome de Jesus. Amém.`;
   // [290]
   if (/debora e baraque/i.test(p))
-    return `Deus que levantaste Débora quando os homens hesitavam, tu não esperas pelo líder ideal — levantas quem está disponível. Guarda-me da hesitação de Baraque, que transferiu a glória por medo. E quando for chamado a avançar, que eu avance sem exigir que alguém mais corajoso vá na frente. Amém.`;
+    return `Senhor, tu humilhaste Jabim e os seus novecentos carros de ferro, e cumpriste a tua palavra de um jeito que ninguém esperava. Perdoa-me quando obedeço como Baraque, pondo condições: "se fores comigo, irei". Ensina-me a confiar na tua palavra, mesmo sem garantias humanas. Dá-me a sabedoria de Débora para ouvir a tua voz e encorajar os meus irmãos: "este é o dia". Obrigado porque a vitória é tua, e porque tu transformas a força dos opressores na sua armadilha. Que eu não confie em carros de ferro, mas no teu nome. Em nome de Jesus. Amém.`;
   // [291]
   if (d.livroAbrev === 'Jz' && /o cantico de debora/i.test(p))
-    return `Senhor dos exércitos, os astros lutaram contra Sísera — o cosmos obedece quando tu entras na batalha. Que eu cante a vitória com honestidade: ela é gloriosa para quem está do teu lado e devastadora para o outro. Não posso suavizar o que o teu julgamento implica. Que o meu louvor seja tão honesto quanto o de Débora. Amém.`;
+    return `SENHOR, as estrelas pelejaram por ti e as águas do Quisom obedeceram à tua voz. Eu te louvo porque governas o céu, a terra e a história. Obrigado pelos líderes que lideram e pelo povo que se oferece de boa vontade. Perdoa-me quando sou como Rúben, cheio de grandes resoluções do coração, mas parado em casa; ou como Meroz, que não veio em teu socorro. Dá-me um coração disposto a me oferecer para o teu Reino. Que eu cante as tuas obras para não esquecê-las. Assim pereçam todos os teus inimigos, Senhor, e que os que te amam sejam como o sol quando nasce. Em nome de Jesus. Amém.`;
   // [292]
   if (/o chamado de gideao/i.test(p))
-    return `Pai, tu chamaste Gideão de "homem valente" quando ele estava escondido. Esse é o teu jeito: tu nomeias o que vamos ser antes de ser. Que eu receba hoje o nome que tu me dás — não o que a minha circunstância sugere — e que esse nome me mova a levantar do lagar onde me escondi. Amém.`;
+    return `Senhor, tu encontraste Gideão escondido no lagar e o chamaste de homem valente. Tu vês em mim o que eu ainda não sou, porque tu estás comigo. Quando eu perguntar "por que tudo isso?", ajuda-me a ouvir a tua resposta: "Não te enviei eu?". Confronta os ídolos que me trouxeram até a caverna e dá-me um arrependimento verdadeiro. Obrigado pela tua paciência com a minha fé fraca e pelos sinais da tua graça. Antes de qualquer vitória, dá-me a tua paz. Tu és o SENHOR, que és Paz. Em nome de Jesus. Amém.`;
   // [293]
   if (/gideao destroi o altar de baal/i.test(p))
-    return `Senhor, o pai de Gideão disse "que Baal se defenda por si mesmo" — e o ídolo não se defendeu. Que eu nunca gaste energia defendendo o que deveria defender a si mesmo. O verdadeiro Deus não precisa de minha proteção — precisa da minha obediência. E os ídolos que precisam de defensores já se denunciaram. Amém.`;
+    return `Senhor, antes de mandar Gideão contra Midiã, tu o mandaste derrubar o altar de Baal na casa do pai dele. Mostra-me os ídolos que estão no meu quintal: na minha casa, nos meus hábitos, nas tradições que eu nunca questionei. Dá-me coragem para derrubá-los, mesmo que eu precise fazer isso tremendo. Obrigado porque tu honras a obediência com medo. Usa a minha fidelidade para despertar a fé de pessoas da minha família, como Joás. E lembra-me de que tu não precisas ser defendido por mim: tu és o Deus vivo, e os ídolos caem diante de ti. Em nome de Jesus. Amém.`;
   // [294]
   if (/o sinal do velo/i.test(p))
-    return `Pai paciente, tu atendeste ao velo molhado e ao velo seco sem repreender Gideão. Obrigado pela tua paciência com as minhas dúvidas. E ajuda-me a entender que a confirmação que recebi não elimina o custo da obediência — o exército de 300 vinha logo depois dos sinais. Que eu receba a confirmação com gratidão e siga até a batalha reduzida. Amém.`;
+    return `Pai, Gideão já tinha a tua palavra e o teu Espírito, e ainda assim pediu sinais. Eu também sou assim: sei o que tu dizes, mas peço mais garantias antes de obedecer. Perdoa a minha fé fraca e obrigado pela tua paciência, que encheu de orvalho aquela lã e depois a deixou seca. Ensina-me a confiar na tua Palavra, que é suficiente, e a obedecer ao que já está claro. Reveste-me do teu Espírito, para que a minha segurança venha da tua presença, e não de sinais. Obrigado porque te lembras de que eu sou pó. Em nome de Jesus. Amém.`;
   // [295]
   if (/gideao surpreende e derrota os midianitas/i.test(p))
-    return `Deus que reduziste 32.000 para 300 para que a vitória não tivesse endereço humano, que eu nunca confie nos números quando tu me chamaste para algo que só pode ser explicado por ti. Que os cântaros quebrados e as tochas reveladas sejam o meu testemunho: o que brilha veio de dentro de um vaso fraco. Amém.`;
+    return `Senhor, tu reduziste o exército de Gideão para que ninguém dissesse "a minha mão me livrou". Ensina-me a não depender de números, recursos ou estruturas, mas de ti. Obrigado porque tu conheces o meu medo e me encorajas, como fizeste com Gideão no arraial inimigo. Quebra o meu "cântaro de barro" para que a tua luz brilhe através de mim. E guarda-me do orgulho que quer colocar o meu nome ao lado do teu. Que todo o louvor de qualquer vitória seja somente teu. A glória é tua, Senhor, e somente tua. Em nome de Jesus. Amém.`;
   // [296]
   if (/gideao e efraim/i.test(p))
-    return `Senhor da resposta suave, Gideão desarmou Efraim com honra em vez de autoridade. Que eu aprenda a honrar antes de reivindicar. Em conflitos ministeriais, a palavra que afirma a contribuição do outro é mais poderosa do que a defesa dos próprios direitos. Que eu seja mais Gideão do que Efraim nos desentendimentos que encontrar. Amém.`;
+    return `Senhor, Efraim chegou cheio de ira, e uma resposta humilde de Gideão evitou uma guerra entre irmãos. Ensina-me a responder com brandura quando eu for criticado. Livra-me da necessidade de ter razão, de ser reconhecido e de rebater cada palavra. Dá-me olhos para enxergar e valorizar o que os outros fizeram. Guarda a minha igreja das disputas por crédito e dos ressentimentos de quem se sente esquecido. Que eu seja um pacificador, porque os pacificadores serão chamados teus filhos. Em nome de Jesus. Amém.`;
   // [297]
   if (/de gideao vinganca/i.test(p))
-    return `Pai da justiça, Sucote apostou que Gideão não voltaria — e errou. Que eu não aposte na impunidade do que foi prometido pelo teu Espírito. E que eu seja a pessoa que cumpre o que disse, no tempo que prometeu, sem esquecer nem o incentivo nem a advertência que pronunciou. Amém.`;
+    return `Pai, Gideão começou lutando a tua guerra e terminou buscando a própria vingança. Examina o meu coração: mostra-me quando estou usando a linguagem da fé para justificar mágoas pessoais. Perdoa-me pela dureza com que trato irmãos que me decepcionaram. Dá-me a perseverança de Gideão — cansado, mas prosseguindo — sem a sua amargura. Ensina-me a entregar a ti as feridas da minha família e do meu passado, em vez de cobrá-las com as minhas mãos. Que o sucesso não revele em mim um coração vingativo, mas um coração moldado por Cristo. Em nome de Jesus. Amém.`;
   // [298]
   if (/de gideao idolatria/i.test(p))
-    return `Senhor, Gideão recusou o reino mas fez um éfode — e Israel se prostituiu diante dele. Guarda-me dos objetos, símbolos e estruturas que centralizam a devoção dos outros em mim sem que eu os tenha pedido explicitamente. A boa intenção não protege contra o resultado idolátrico. Que eu seja instrumento que aponta para ti, não para onde se pára. Amém.`;
+    return `Senhor, Gideão disse "o SENHOR vos dominará", mas depois fez um éfode que se tornou laço para ele, para a sua casa e para todo Israel. Guarda-me de dizer as palavras certas e viver de outro jeito. Mostra-me os "éfodes" que eu criei — coisas boas, experiências, objetos, métodos — que tomaram o lugar que é só teu. Livra-me da tentação do sucesso, do ouro e de uma religião feita do meu jeito. Que eu termine a minha carreira como comecei: derrubando ídolos, e não levantando outros. Reina sobre mim, Senhor. Em nome de Jesus. Amém.`;
   // [299]
   if (/morte de gideao/i.test(p))
-    return `Pai, Israel esqueceu o Senhor antes de Gideão ser enterrado. Que eu não dependa de um líder humano para manter a minha fidelidade — porque líderes morrem. Que a minha gratidão espiritual seja cultivada ativamente, não apenas reativa à presença dos que me inspiram. A memória de Deus é responsabilidade minha, não de quem está ao meu lado. Amém.`;
+    return `Senhor, assim que Gideão morreu, Israel esqueceu de ti e escolheu um "Baal da aliança". Guarda-me de uma fé emprestada, que depende de líderes, pastores ou pessoas que eu admiro. Que eu te conheça pessoalmente e permaneça fiel quando as pessoas que me inspiram partirem. Livra-me da ingratidão e das imitações de fé que parecem aliança, mas não têm Cristo. Obrigado por Jesus, o Rei que não morre, que vive para sempre para interceder por mim. Escreve a tua lei no meu coração e lembra-me sempre do bem que tu já me fizeste. Em nome de Jesus. Amém.`;
   // [300]
   if (/a queda de abimeleque/i.test(p))
     return `Senhor, justo Juiz, Abimeleque subiu ao trono pela pedra do crime e caiu pela pedra do juízo. Tu viste o sangue dos setenta, esperaste três anos e fizeste tornar o mal sobre a cabeça de quem o praticou. Guarda-me de ser espinheira: de querer posição sem fruto, de buscar poder pela pressão do grupo, pelo dinheiro ou pela manipulação. Faz-me oliveira, figueira e videira — frutífero e contente no lugar onde me puseste. Desfaz em mim toda aliança feita às escondidas. E obrigado porque, em Cristo, o juízo que eu merecia caiu sobre o Inocente, para que eu fosse perdoado. Em nome de Jesus. Amém.`;
@@ -5326,40 +6207,40 @@ function gerarOracao(d: DiaDevocional): string {
     return `Senhor, tu me livraste tantas vezes — e ainda assim eu servi a outros deuses. Não quero clamar a ti apenas quando o aperto chega, como quem aperta um botão de emergência. Eu pequei: faze comigo o que te parecer bem; mas livra-me, ainda esta vez. Mostra-me os deuses alheios que guardo no meio da minha casa e do meu coração, e dá-me coragem para tirá-los, e não apenas confessá-los. Obrigado porque a tua alma se angustia com a miséria do teu povo, e porque em Cristo tu mesmo carregaste a minha. Em nome de Jesus. Amém.`;
   // [304]
   if (/jefte/i.test(p))
-    return `Pai, Jefté venceu a batalha e perdeu a filha. O voto feito a ti não pode ser desfeito pelo sucesso subsequente. Que eu seja cuidadoso com o que prometo diante de ti — especialmente nos momentos de pressão, quando as promessas saem de uma ânsia que não pensa nas consequências. O que prometo importa mais do que o que conquisto. Amém.`;
+    return `Senhor, tu deste o teu Espírito a Jefté antes de qualquer promessa — e mesmo assim ele achou que precisava negociar contigo. Perdoa-me quando oro como quem faz negócio, tentando garantir o resultado com promessas que tu não pediste. Ensina-me a confiar na tua graça, que vem primeiro. Guarda a minha boca de votos feitos no calor da emoção e dá-me sabedoria para pesar as minhas palavras diante de ti. Cura as rejeições que carrego, para que elas não se transformem em feridas contra os meus irmãos. Obrigado porque em Cristo o preço já foi pago, e eu não preciso comprar o teu favor. Em nome de Jesus. Amém.`;
   // [305]
   if (/ibsa/i.test(p))
-    return `Senhor, Ibsã teceu alianças com famílias de fora para todos os seus filhos e filhas. Que a nossa comunidade também teça vínculos com o mundo ao redor — não para ser conformada, mas para estar presente. A missão às vezes tem a forma de um casamento, não de uma batalha. Amém.`;
+    return `Pai, Ibsã viveu sete anos de juízo sem nenhuma batalha registrada — e mesmo assim tu o colocaste na história do teu povo. Ensina-me a valorizar os períodos quietos da minha vida, a agradecer pela paz e a usá-la para crescer em ti. Livra-me de medir a minha vida pela quantidade de contatos, pela influência ou pelo tamanho da minha família. Que as alianças que eu construo — amizades, negócios, casamentos na minha casa — sirvam ao teu Reino, e não apenas ao meu nome. Guarda os meus filhos e os filhos da tua igreja para que se unam a quem também te ama. Em nome de Jesus. Amém.`;
   // [306]
   if (/elom/i.test(p))
-    return `Pai, Elom tem tribo, tempo e sepultura — e nada mais. Há uma santidade na vida que não deixa rastros espetaculares. Que eu não meça o valor do meu serviço pela quantidade da narrativa que gera. Fui chamado para ser fiel, não para ser memorável. Amém.`;
+    return `Pai, Elom viveu, serviu e foi sepultado — e tu guardaste o seu nome na tua Palavra. Livra-me da necessidade de ser visto, aplaudido ou lembrado. Ensina-me a servir com fidelidade no lugar onde tu me plantaste, mesmo quando ninguém comenta, ninguém agradece e ninguém escreve sobre isso. Obrigado pelos irmãos discretos que sustentam a minha igreja com oração e trabalho silencioso. Que eu termine bem a minha carreira, sem escândalos e sem abandonar a fé, e que no fim a minha vida aponte para Cristo, e não para mim. Em nome de Jesus. Amém.`;
   // [307]
   if (/abdao/i.test(p))
-    return `Senhor, Abdão tinha setenta herdeiros montados em jumentos — abundância visível. Que a bênção que recebi seja testemunho da tua provisão e não tropeço para a vaidade. E que os que vêm depois de mim não precisem de crise para lembrar de onde veio o que têm. Amém.`;
+    return `Senhor, Abdom tinha setenta descendentes montados em jumentos — e logo depois o teu povo voltou a fazer o que era mau aos teus olhos. Guarda-me de confundir bênção com aprovação, crescimento com fidelidade, conforto com santidade. Se tu me deres fartura, que ela me leve à gratidão e à generosidade, e não ao esquecimento. Ensina a minha família a usar o que temos para servir, e não para desfilar. E obrigado porque tu restauras as tribos feridas: levanta servos fiéis nas famílias e igrejas que passaram por divisões. Em nome de Jesus. Amém.`;
   // [308]
   if (/a profecia de de sansao nascimento/i.test(p))
-    return `Deus cujo nome é maravilhoso, o anjo que anunciou Sansão não revelou seu nome para que a atenção ficasse em ti. Que o meu serviço seja assim — sem precisar que meu nome seja lembrado, desde que o teu seja glorificado no resultado. Que o Espírito que começa a mover seja reconhecido antes que a história se complique. Amém.`;
+    return `Deus cujo nome é maravilhoso, tu olhaste para Israel quando o teu povo nem sequer clamava — e preparaste um libertador no ventre de uma mulher estéril. Obrigado porque a tua graça vem antes da minha oração. Quando o medo me fizer pensar, como Manoá, que tudo está perdido, dá-me a fé da sua esposa, para raciocinar a partir das tuas promessas. Obrigado por Jesus, o Maravilhoso, que não apenas começou a livrar, mas consumou a nossa salvação na cruz. Que a minha vida, como a fumaça daquele altar, suba para a tua glória. Em nome de Jesus. Amém.`;
   // [309]
   if (/de sansao casamento/i.test(p))
-    return `Pai, a charada de Sansão sobre o mel no leão tinha uma origem que ele preferia não mencionar — uma concessão escondida no início da história. Guarda-me de construir sabedoria sobre transgressões que fingi não existirem. O que não confesso continua presente na estrutura do que construo. Amém.`;
+    return `Pai, Sansão escolheu pelo que agradava aos seus olhos, comeu em segredo o que era impuro e perdeu o que tanto queria. Guarda-me de deixar os meus olhos e os meus desejos governarem a minha vida. Mostra-me os "méis escondidos" que tenho tratado como inofensivos e dá-me coragem para trazê-los à luz. Ensina-me a ser forte não apenas diante dos leões, mas também diante das pressões e das lágrimas que me empurram para o erro. Obrigado porque tu és soberano até sobre as minhas falhas — e porque em Cristo há perdão para quem confessa. Em nome de Jesus. Amém.`;
   // [310]
   if (/sansao e tres cem raposas/i.test(p))
-    return `Senhor, a ofensa de Sansão incendiou o sustento de uma população inteira. Que eu reconheça que os meus pecados nunca ficam contidos em mim — eles queimam o que está ao redor. A espiral de vingança não termina onde começa. Antes de acender a tocha, que eu considere o que vai queimar além do meu alvo imediato. Amém.`;
+    return `Senhor, a ofensa de Sansão incendiou o trigo, as vinhas e os olivais de um povo inteiro — e o fogo voltou contra ele. Mostra-me as tochas que tenho soltado com a minha raiva, as minhas palavras e as minhas reações. Livra-me de me declarar inocente enquanto revido. Ensina-me a interromper a espiral da vingança e a deixar a justiça em tuas mãos. Obrigado por Jesus, que não revidou quando foi ferido, mas se entregou àquele que julga com justiça. Faze de mim um pacificador na minha casa, na minha igreja e onde eu estiver. Em nome de Jesus. Amém.`;
   // [311]
   if (/sansao derrota filisteus/i.test(p))
-    return `Deus que abres rochas para os que têm sede, Sansão matou mil com a queixada e quase morreu de sede logo depois. Tu não criticas a sede — abres a rocha. Que eu não me envergonhe das necessidades ordinárias que seguem os momentos extraordinários. O mesmo Deus que usa o excepcional cuida do cotidiano. Amém.`;
+    return `Deus que abres fontes no meio da rocha, Sansão venceu mil inimigos e, logo depois, quase morreu de sede. Obrigado porque tu não desprezas a minha fraqueza depois das vitórias, mas respondes a quem clama. Perdoa-me quando canto as minhas conquistas sem mencionar o teu nome. Livra-me da acomodação de Judá, que preferiu amarrar o libertador a enfrentar os opressores. Obrigado por Jesus, amarrado e entregue pelos seus, que rompeu as cordas do pecado e da morte. Faze da minha vida uma En-Hacoré — um lugar onde todos saibam que eu clamei e tu me respondeste. Em nome de Jesus. Amém.`;
   // [312]
   if (/sansao e dalila/i.test(p))
-    return `Pai, "não sabia que o Senhor o havia deixado" é o versículo mais assustador de Juízes. Guarda-me de afastamentos tão graduais que eu deixe de perceber a tua ausência. Que a pressão diária acumulada não me eroda — e que eu reconheça quando estou cedendo por exaustão o que prometei guardar por convicção. Amém.`;
+    return `Pai, "ele não sabia que o Senhor se tinha retirado dele" — guarda-me de chegar a esse ponto. Livra-me de brincar com a tentação, achando que estou no controle. Mostra-me as concessões que venho fazendo, uma a uma, e dá-me coragem para fugir em vez de negociar. Não permitas que eu entregue a quem quer me destruir o que tu me confiaste. E se eu cair, lembra-me de que, mesmo na prisão de Gaza, o cabelo de Sansão começou a crescer: a tua graça restaura. Que eu nunca me acostume a viver sem perceber a tua presença. Em nome de Jesus. Amém.`;
   // [313]
   if (/de sansao morte/i.test(p))
-    return `Senhor que te lembras, "lembra-te de mim" — cego, acorrentado, sem passado apresentável. E tu te lembraste. Não há momento tarde demais para me virar a ti. Não há condição tão degradada que te impeça de responder. Que a oração de Sansão me ensine que o que importa não é o que tenho para oferecer, mas a quem me dirijo. Amém.`;
+    return `Senhor que te lembras, Sansão estava cego, preso e humilhado — e ainda assim clamou: "lembra-te de mim". E tu te lembraste. Não há momento tarde demais para eu me voltar para ti, nem condição tão destruída que a tua graça não alcance. Ensina-me a encontrar força na dependência, como Sansão guiado pela mão de um menino. Que os ídolos que celebram as minhas quedas sejam derrubados pela tua glória. Obrigado por Jesus, que estendeu os braços na cruz e, pela sua morte, venceu o pecado, a morte e o diabo. Lembra-te de mim, Senhor, no teu Reino. Em nome de Jesus. Amém.`;
   // [314]
   if (/a migracao de da/i.test(p))
-    return `Senhor, o levita de Mica seguiu o poder mais forte e chamou isso de ministério. Guarda-me de um sacerdócio que serve quem paga melhor. Que o meu ministério tenha raízes na tua revelação — não na estrutura que mais me convém no momento. E que os ídolos que carrego comigo ao migrar sejam identificados antes de serem instalados no novo lugar. Amém.`;
+    return `Senhor, Mica consagrou a prata a ti e com ela fez um ídolo; contratou um sacerdote e achou que isso garantiria a tua bênção. Livra-me de uma fé feita do meu jeito, que usa o teu nome para servir aos meus desejos. Quebra os ídolos que construí em casa — conforto, segurança, aparência — e ensina-me a te adorar como tu ordenas na tua Palavra. Guarda os pastores da tua igreja de seguirem a melhor oferta em vez do teu chamado. E guarda os meus filhos e netos: que a fé não pare em mim, como parou na família de Moisés. Em nome de Jesus. Amém.`;
   // [315]
   if (/o crime de gibea/i.test(p))
-    return `Pai, Juízes termina com o que começa em Gênesis 19 — violência que espelha Sodoma. O diagnóstico não é falta de monarquia — é ausência de Senhor. Que eu nunca busque estruturas externas para fazer o que só a tua presença interna pode fazer. O rei que Israel precisava eras tu. O rei que eu preciso também és tu. Amém.`;
+    return `Pai, Juízes termina como Sodoma: violência, vingança e cada um fazendo o que acha certo. Tem misericórdia de nós quando vivemos como se não houvesse Rei. Perdoa-me por tantas vezes ser o juiz dos meus próprios caminhos. Faze da tua igreja um lugar seguro para os fracos, que não se cala diante do abuso. Ensina-nos a tratar o pecado com seriedade e humildade, chorando diante de ti antes de julgar o irmão. Obrigado porque tu não abandonaste Israel no fundo do poço, mas preparaste um Rei — Jesus, o Filho de Davi. Reina sobre o meu coração, a minha casa e a tua igreja. Em nome de Jesus. Amém.`;
 
   // Mateus orações [1]–[145]
   if (d.livroAbrev === 'Mt' && /genealogia de jesus/i.test(p))
@@ -7367,30 +8248,6 @@ function gerarFamilia(d: DiaDevocional): string {
   if (/unido reis.*norte.*derrotou|reis.*norte.*canaa/i.test(p))
     return `👫 *Casais:* Mesmo após Jericó e Ai, ainda havia coalizões inimigas. No casamento, vitórias não eliminam batalhas futuras. Reconheçam vitórias passadas para enfrentar as próximas com fé.\n👧 *Filhos:* Josué não parou após sucessos iniciais. Ensine seus filhos que perseverança é virtude — vitórias parciais não são o fim da missão.\n👴 *Avós:* A guerra durou anos. Compartilhe com os netos uma luta que durou muito tempo e como Deus sustentou você até o fim.`;
 
-  // 285. Conquista incompleta
-  if (/fracasso.*completo conquista|conquista incompleta/i.test(p))
-    return `👫 *Casais:* Israel não expulsou todos os habitantes — e isso virou armadilha futura. No casamento, "tolerâncias" pequenas com pecados se tornam laços grandes. Que "obediência parcial" precisa virar obediência plena?\n👧 *Filhos:* O que não é tratado na infância vira problema na adolescência. Ensine que disciplina amorosa hoje evita dores amanhã.\n👴 *Avós:* A geração seguinte sofreu pelas concessões da anterior. Que padrão de família você quer interromper para que seus netos não herdem?`;
-
-  // 290. Débora e Baraque
-  if (/debora.*baraque|debora/i.test(p))
-    return `👫 *Casais:* Débora liderou enquanto Baraque hesitou. Em um casamento, há momentos em que um precisa avançar quando o outro tem medo. Honrem a coragem do outro sem ferir a dignidade.\n👧 *Filhos:* Débora era juíza, mãe em Israel. Ensine seus filhos que liderança feminina é dom de Deus — e que tanto homens quanto mulheres podem ouvir e seguir Deus.\n👴 *Avós:* Débora era "mãe em Israel" — função espiritual de cuidar de toda uma nação. Avós são "mães e pais" de várias famílias por extensão. Quem precisa do seu cuidado espiritual hoje?`;
-
-  // 292. Chamado de Gideão
-  if (/chamado.*gideao|gideao.*chamado/i.test(p))
-    return `👫 *Casais:* Deus chamou Gideão de "varão valente" enquanto ele se escondia no lagar. Deus vê quem somos pela fé, não pela aparência atual. Como cônjuges, têm chamado o outro pelo que Deus diz dele ou pelo que veem hoje?\n👧 *Filhos:* Gideão era o menor da menor família. Deus escolhe os menores para mostrar Sua glória. Ensine seu filho que tamanho não define chamado.\n👴 *Avós:* Gideão precisou de confirmações. Avós sábios não desprezam dúvidas — orientam com paciência. Quem precisa da sua paciência espiritual hoje?`;
-
-  // 295. Trezentos de Gideão
-  if (/trezentos|gideao.*surpreende.*derrota/i.test(p))
-    return `👫 *Casais:* Deus reduziu o exército de 32 mil para 300 — para que ninguém creditasse a vitória a si. No casamento, há vitórias que Deus dá quando vocês estão "reduzidos". A pequenez é palco da glória de Deus.\n👧 *Filhos:* Trezentos com tochas, cântaros e trombetas venceram um exército. Ensine seu filho que ferramentas pequenas nas mãos certas mudam batalhas.\n👴 *Avós:* Compartilhe com os netos uma vitória da sua vida que veio quando os recursos eram mínimos. Deus se especializa em fazer muito com pouco.`;
-
-  // 308. Nascimento de Sansão
-  if (/nascimento.*sansao|sansao.*nascimento|profecia.*sansao/i.test(p))
-    return `👫 *Casais:* O anjo apareceu primeiro à esposa de Manoá — e ela contou ao marido. Deus às vezes fala primeiro a um cônjuge sobre algo que envolve os dois. Honrem quando o outro recebe direção espiritual.\n👧 *Filhos:* Sansão foi nazireu desde o ventre. Pais consagram filhos antes do nascimento. Você já dedicou seu filho ao Senhor formalmente? Não é tarde.\n👴 *Avós:* Manoá perguntou: "Como criaremos o menino?" Avós perguntam: "Como ajudo a criar este neto?" Pergunte aos pais que tipo de apoio precisam.`;
-
-  // 312. Sansão e Dalila
-  if (/sansao e dalila|sansao.*dalila/i.test(p))
-    return `👫 *Casais:* Sansão revelou o segredo a quem três vezes provou ser traidora. No casamento, há padrões que se repetem porque escolhemos não ver. Que padrão repetitivo vocês precisam confrontar?\n👧 *Filhos:* Sansão era forte por fora e fraco por dentro. Ensine seus filhos que caráter vale mais que talento — e que cair no mesmo erro várias vezes exige nova decisão.\n👴 *Avós:* Sansão perdeu olhos, força e dignidade — mas Deus o restaurou no fim. Nenhum erro precisa ser o ponto final. Compartilhe um retorno de Deus na sua vida.`;
-
   // 316. Família de Elimeleque vai a Moabe
   if (/familia.*elimeleque|elimeleque.*moabe/i.test(p))
     return `👫 *Casais:* Elimeleque saiu de Belém ("casa de pão") por causa da fome. Crises econômicas testam decisões espirituais. Têm tomado decisões financeiras a partir da fé ou apenas do medo?\n👧 *Filhos:* A família saiu, mas a história não terminou em Moabe. Ensine seus filhos que decisões erradas dos pais não condenam a próxima geração — Deus restaura.\n👴 *Avós:* Elimeleque morreu fora da terra. Avós, há decisões suas que precisam ser refeitas em oração com a família? Nunca é tarde para "voltar a Belém".`;
@@ -7676,6 +8533,114 @@ function gerarFamilia(d: DiaDevocional): string {
   // [303] Opressão por Amonitas — Jz 10.6-16
   if (/opressao por amonitas/i.test(p))
     return `👫 *Casais:* Israel disse "pecamos" duas vezes, mas só a segunda foi arrependimento de verdade: veio com submissão e com a retirada dos ídolos. No casamento também existe o "desculpa" automático, que não muda nada. Conversem: há algum "deus alheio" no meio da casa — trabalho, celular, dinheiro, aparência — que precisa ser tirado, e não apenas confessado? Escolham juntos uma atitude concreta para esta semana.\n👧 *Filhos:* Israel só pediu ajuda a Deus quando a situação apertou. Pergunte às crianças: "A gente só ora quando precisa de alguma coisa?" Comecem um "pote de gratidão": cada dia, um papelzinho com algo bom que Deus fez. Ensine também que pedir desculpas de verdade tem duas partes: dizer "eu errei" e consertar o que foi feito.\n👴 *Avós:* Deus lembrou a Israel sete livramentos que eles tinham esquecido (10.11-12). Faça com os netos a "lista de livramentos da família": doenças, viagens, crises, mudanças em que Deus cuidou de vocês. Quem esquece os livramentos de Deus fica pronto para servir a outros deuses — a memória da família é proteção contra a idolatria.`;
+
+  // [304] Jefté — Jz 10.17–12.7
+  if (/jefte/i.test(p))
+    return `👫 *Casais:* Jefté fez uma promessa precipitada e quem pagou o preço foi a filha. No casamento, decisões tomadas no calor do momento — uma compra grande, uma mudança, uma palavra dura — atingem a família inteira. Combinem uma regra: nenhuma decisão importante sem orar juntos e esperar pelo menos um dia.\n👧 *Filhos:* Converse com as crianças sobre promessas: "É bom prometer? E quando a gente promete sem pensar?" Explique que Deus não quer que a gente faça trocas com ele ("se tu me deres isso, eu faço aquilo"), porque ele já nos ama e já nos deu Jesus. Ensinem juntos Eclesiastes 5.2: "Não te precipites com a tua boca".\n👴 *Avós:* Jefté foi rejeitado pelos irmãos e carregou essa ferida a vida toda. Talvez existam rejeições antigas na história da família. Conte aos netos como Deus curou alguma ferida sua e ensine que perdoar não é esquecer, mas entregar a Deus o direito de cobrar a dívida.`;
+
+  // [305] Ibsã — Jz 12.8-10
+  if (/ibsa/i.test(p))
+    return `👫 *Casais:* Ibsã pensou com cuidado nos casamentos dos seus filhos — mas o texto não diz se pensou na fé deles. Conversem: o que mais queremos para os relacionamentos dos nossos filhos — posição, conforto ou alguém que ame a Deus? Comecem desde já a orar pelos futuros cônjuges deles.\n👧 *Filhos:* Ibsã tinha 60 filhos! Brinque com as crianças de imaginar uma mesa de jantar com 60 irmãos. Depois explique: em Deus, nós temos uma família ainda maior — a igreja. Escolham juntos um "irmão da igreja" (uma criança, um idoso, uma família) para orar e fazer um gesto de carinho nesta semana.\n👴 *Avós:* Ibsã começou e terminou em Belém. Contem aos netos a história do lugar de onde a família veio: cidade, igreja, como a fé chegou até vocês. A memória das raízes ajuda os netos a entenderem que a família é parte de uma história maior que Deus está escrevendo.`;
+
+  // [306] Elom — Jz 12.11-12
+  if (/elom/i.test(p))
+    return `👫 *Casais:* A vida de Elom não teve grandes acontecimentos, mas teve dez anos de fidelidade. O casamento também é feito mais de dias comuns do que de datas especiais. Escolham um gesto simples e diário para esta semana — um bilhete, um café, uma oração juntos antes de dormir — e celebrem a fidelidade nas pequenas coisas.\n👧 *Filhos:* Pergunte às crianças: "Quem ajuda na igreja sem ninguém ver?" (quem arruma as cadeiras, quem limpa, quem ora). Façam juntos um cartão de agradecimento para uma dessas pessoas. Ensine que Deus vê tudo o que fazemos por amor a ele, mesmo o que ninguém mais vê.\n👴 *Avós:* Elom foi lembrado pelo lugar em que serviu e descansou. Conte aos netos sobre alguém fiel e discreto que marcou a sua vida — um pastor, uma professora da escola dominical, um vizinho crente. Mostre que os heróis de Deus nem sempre são famosos.`;
+
+  // [307] Abdom — Jz 12.13-15
+  if (/abdao/i.test(p))
+    return `👫 *Casais:* Os juízes menores foram ficando mais ricos, mas o texto não diz que ficaram mais fiéis. Conversem sobre as finanças da casa: o que a nossa forma de gastar mostra sobre o que amamos? Escolham juntos uma forma concreta de generosidade para este mês.\n👧 *Filhos:* Abdom tinha 70 jumentos para os filhos e netos — era como ter 70 carros na garagem! Pergunte às crianças: "Ter muitas coisas deixa a gente mais perto de Deus?" Separem juntos um brinquedo ou roupa em bom estado para doar a uma criança que precisa.\n👴 *Avós:* Abdom deixou muitos descendentes, mas não sabemos se deixou fé. Avós, o maior legado não é a herança material, mas a fé. Escreva uma carta para um neto contando por que Jesus é o tesouro da sua vida, para ele guardar.`;
+
+  // [308] Nascimento de Sansão — Jz 13
+  if (/a profecia de de sansao nascimento/i.test(p))
+    return `👫 *Casais:* O Anjo apareceu primeiro à esposa, e Manoá orou pedindo instrução: "ensina-nos o que devemos fazer ao menino" (13.8). Que oração bonita para pais! Orem juntos esta semana pedindo a Deus sabedoria para criar cada filho, falando o nome de cada um.\n👧 *Filhos:* Sansão foi separado para Deus desde antes de nascer. Conte às crianças a história do nascimento delas: como vocês oraram, como se sentiram, o que esperavam. Diga a cada uma: "Deus pensou em você antes de você nascer" (Sl 139.13-16).\n👴 *Avós:* A mulher de Manoá acalmou o marido lembrando as promessas de Deus. Avós já viram muitas promessas cumpridas. Conte aos netos uma situação de medo em que Deus mostrou que estava no controle, e termine lendo juntos Juízes 13.23.`;
+
+  // [309] Casamento de Sansão — Jz 14
+  if (/de sansao casamento/i.test(p))
+    return `👫 *Casais:* Sansão escondeu dos pais a origem do mel, e escondeu da esposa a resposta do enigma, até ser pressionado. Segredos minam a confiança. Conversem com honestidade: há algo que um esconde do outro — gastos, conversas, hábitos? Combinem um tempo semanal de "prestação de contas" com amor.\n👧 *Filhos:* Sansão escolheu a namorada só porque ela era bonita. Pergunte às crianças (adaptando à idade): "O que é mais importante num amigo: ser bonito ou ser bom? Ter coisas legais ou amar a Deus?" Façam juntos uma lista de qualidades de um bom amigo, com versículos.\n👴 *Avós:* Os pais de Sansão tentaram aconselhá-lo, mas ele não ouviu. Avós, às vezes o conselho não é aceito na hora. Continue orando e amando. Conte aos netos sobre um conselho que você recebeu, não ouviu e depois se arrependeu — com humildade e humor.`;
+
+  // [310] Sansão e as raposas — Jz 15.1-8
+  if (/sansao e tres cem raposas/i.test(p))
+    return `👫 *Casais:* "Assim como me fizeram, assim lhes fiz." Muitas brigas de casal seguem essa lógica: um responde ao outro, e ninguém para. Combinem uma "palavra de pausa" para usarem quando a discussão esquentar, e o compromisso de não dormirem sem fazer as pazes (Ef 4.26).\n👧 *Filhos:* As raposas espalharam o fogo por todo lado. Explique às crianças que a raiva é como fogo: começa pequena, mas se espalha. Ensinem juntos o "semáforo da raiva": vermelho (pare), amarelo (respire e ore), verde (fale com calma). Pratiquem com situações do dia a dia.\n👴 *Avós:* Muitas famílias carregam brigas antigas entre irmãos, primos ou cunhados. Avós podem ser os primeiros a interromper a espiral. Conte aos netos sobre uma reconciliação que você viveu e, se ainda houver alguma briga aberta na família, ore pedindo a Deus coragem para dar o primeiro passo.`;
+
+  // [311] A queixada de jumento — Jz 15.9-20
+  if (/sansao derrota filisteus/i.test(p))
+    return `👫 *Casais:* Depois da grande vitória, Sansão ficou exausto e com sede. Muitos casais vivem isso depois de uma mudança, de um bebê ou de um projeto grande. Conversem: onde estamos esgotados? Planejem um tempo de descanso juntos e orem como Sansão orou: "Agora morrerei de sede?" — Deus responde.\n👧 *Filhos:* Deus fez sair água de uma rocha para Sansão beber! Encham juntos um copo de água e, antes de beber, agradeçam a Deus por coisas simples que ele dá todos os dias. Expliquem o nome En-Hacoré — "a fonte do que clamou" — e ensinem que podemos pedir ajuda a Deus a qualquer hora.\n👴 *Avós:* Os homens de Judá diziam: "Os filisteus dominam sobre nós, melhor não mexer". Avós já viram muita gente desistir de lutar pelo que é certo. Conte aos netos sobre alguém que teve coragem de ser diferente por causa de Jesus, e ore para que eles também tenham essa coragem.`;
+
+  // [312] Sansão e Dalila — Jz 16.1-22
+  if (/sansao e dalila/i.test(p))
+    return `👫 *Casais:* Sansão contou o seu segredo a quem já tinha mostrado três vezes que queria traí-lo. No casamento, intimidade é preciosa e precisa de proteção. Conversem sobre limites saudáveis com amizades, redes sociais e colegas de trabalho, e combinem como proteger o casamento de "Dalilas" disfarçadas.\n👧 *Filhos:* Dalila insistiu "todos os dias" até Sansão ceder. Converse com as crianças sobre pressão de amigos: "Já pediram para você fazer algo errado muitas vezes, até você ficar cansado?". Treinem frases para dizer "não" com firmeza e ensinem que podem sempre contar aos pais.\n👴 *Avós:* O cabelo de Sansão voltou a crescer. Avós sabem que Deus restaura pessoas que pareciam perdidas. Se há um filho ou neto afastado, não desista: conte aos netos uma história de restauração e orem juntos, pelo nome, por quem precisa voltar.`;
+
+  // [313] Morte de Sansão — Jz 16.23-31
+  if (/de sansao morte/i.test(p))
+    return `👫 *Casais:* Sansão orou: "lembra-te de mim, só esta vez". Talvez o casamento de vocês esteja num momento difícil. Nunca é tarde para clamar juntos. Separem um momento esta semana para orarem de mãos dadas, pedindo a Deus que se lembre da família e renove as forças de vocês.\n👧 *Filhos:* Sansão precisou da ajuda de um menino para chegar às colunas. Mostre às crianças que elas também podem ajudar os adultos e servir a Deus. Perguntem: "Como você pode ajudar alguém mais velho esta semana?". E ensine a oração curta de Sansão: "Senhor, lembra-te de mim".\n👴 *Avós:* Sansão foi colocado na lista dos heróis da fé (Hb 11.32), mesmo com tantos erros. Avós podem ensinar aos netos que Deus usa pessoas imperfeitas que se arrependem. Contem uma ocasião em que vocês erraram, se arrependeram e Deus os restaurou — testemunhos de graça marcam gerações.`;
+
+  // [314] A migração de Dã — Jz 17–18
+  if (/a migracao de da/i.test(p))
+    return `👫 *Casais:* Mica criou uma religião caseira que servia aos seus interesses. Conversem: o culto da nossa família é guiado pela Bíblia ou pelo que é mais confortável? Revisem juntos a rotina espiritual da casa — oração, leitura, igreja — e ajustem algo concreto a partir da Palavra.\n👧 *Filhos:* Mica fez um "deus" de prata com as próprias mãos. Pergunte às crianças: "Um deus que a gente faz pode cuidar da gente?". Leiam juntos o Salmo 115.4-8 e conversem sobre como o Deus verdadeiro é diferente: ele fala, vê, ouve e age.\n👴 *Avós:* O neto de Moisés se tornou sacerdote de um ídolo. Que alerta para os avós! A fé dos netos não é automática. Escolham um momento esta semana para contar pessoalmente a um neto como vocês conheceram Jesus — fé se transmite olho no olho.`;
+
+  // [315] O crime de Gibeá — Jz 19–21
+  if (/o crime de gibea/i.test(p))
+    return `👫 *Casais:* O levita entregou a concubina para se proteger. Nenhum casamento cristão pode ter alguém "sacrificado" para o conforto do outro. Conversem com sinceridade: algum de nós se sente desprotegido ou desvalorizado? O modelo é Cristo, que entregou a si mesmo pela igreja (Ef 5.25).\n👧 *Filhos:* "Cada um fazia o que achava certo" — e tudo deu errado. Pergunte às crianças: "O que acontece num jogo em que cada um inventa as próprias regras?". Explique que Deus é o nosso Rei e nos deu regras boas para nos proteger. Ensine também que, se alguém as machucar, devem sempre contar a um adulto de confiança.\n👴 *Avós:* Juízes mostra uma geração que não conhecia o SENHOR (Jz 2.10) e terminou em caos. Avós são guardiões da memória. Contem aos netos como Deus foi Rei na história da família e orem juntos pedindo que Jesus reine em cada casa dos filhos e netos.`;
+
+  // [285] Conquista incompleta — Jz 1
+  if (/de israel fracasso a completo conquista de canaa/i.test(p))
+    return `👫 *Casais:* Israel não expulsou todos os cananeus, e o que ficou virou armadilha. No casamento, pequenas tolerâncias — uma série, um hábito, uma amizade, uma dívida — crescem com o tempo. Conversem com calma: o que estamos tolerando que precisa ser tirado de casa? Escolham juntos um passo concreto.\n👧 *Filhos:* Pergunte às crianças: "O que acontece se a gente arruma o quarto pela metade?". Explique que Deus pediu a Israel uma obediência completa, mas eles obedeceram só um pouco. Façam juntos uma "arrumação completa" de algo da casa e conversem sobre obedecer a Deus por inteiro.\n👴 *Avós:* Acsa pediu ao pai, Calebe, fontes de água — e ele deu as fontes de cima e as de baixo (1.15). Avós podem ser fontes para os netos. Conte uma história de coragem e fé de alguém da família, como Calebe, e abençoe os netos com uma oração especial.`;
+
+  // [286] A infidelidade de Israel — Jz 2.1–3.6
+  if (/de israel infidelidade/i.test(p))
+    return `👫 *Casais:* "Levantou-se outra geração que não conhecia o SENHOR." Isso aconteceu logo depois de uma geração fiel. Conversem: como nossos filhos estão conhecendo a Deus — só pela igreja ou também em casa? Definam juntos um momento fixo na semana para o culto doméstico.\n👧 *Filhos:* Explique o ciclo dos juízes com um desenho em círculo: 1) esquecer Deus, 2) problemas, 3) pedir socorro, 4) Deus ajuda. Pergunte: "Por que eles sempre voltavam a esquecer?". Ensine que lembrar de Deus todo dia — orando e lendo a Bíblia — ajuda a não esquecer.\n👴 *Avós:* A geração de Josué viu as obras de Deus, mas não as contou aos filhos. Avós são testemunhas vivas. Gravem um áudio ou vídeo contando aos netos três grandes obras de Deus na vida de vocês, para a família guardar.`;
+
+  // [287] Otoniel — Jz 3.7-11
+  if (/otoniel/i.test(p))
+    return `👫 *Casais:* Otoniel era da família de Calebe — fé passada de geração em geração. Conversem: que "herança espiritual" estamos deixando? Escolham um versículo para ser o "lema da família" este ano e coloquem-no num lugar visível da casa.\n👧 *Filhos:* Mostre às crianças a "receita" da vitória de Otoniel: 1) o povo pediu ajuda a Deus, 2) Deus escolheu um ajudante, 3) o Espírito deu força, 4) Deus deu a vitória. Pergunte: "Quando você tem um problema, qual é o primeiro passo?". Orem juntos sobre um problema real da criança.\n👴 *Avós:* Calebe foi o tio de Otoniel e certamente influenciou a sua fé. Avós, tios e padrinhos também formam a próxima geração. Escolham um sobrinho, neto ou afilhado para acompanhar de perto em oração e conversas sobre Deus nesta semana.`;
+
+  // [288] Eúde — Jz 3.12-30
+  if (/eude/i.test(p))
+    return `👫 *Casais:* Eúde era canhoto, algo que poderia ser visto como limitação, e Deus o usou exatamente por isso. Conversem sobre as "limitações" de cada um que, na verdade, completam o outro. Agradeçam a Deus, um pelo outro, por uma característica diferente que já ajudou a família.\n👧 *Filhos:* Pergunte quem na família é canhoto, ou quem tem algo "diferente". Conte a história de Eúde e explique que Deus usa pessoas diferentes. Diga a cada criança: "Deus pode usar até aquilo que você acha que é um defeito". Orem agradecendo pelo jeito único de cada um.\n👴 *Avós:* Depois de Eúde, a terra descansou oitenta anos — uma vida inteira de paz. Avós que viveram períodos longos de bênção podem contar aos netos como era a vida, e como Deus guardou a família. Ensine-lhes que os períodos de paz são presentes para fortalecer a fé.`;
+
+  // [289] Sangar — Jz 3.31
+  if (/sangar/i.test(p))
+    return `👫 *Casais:* Sangar usou a ferramenta do dia a dia. Conversem: como as profissões e habilidades de cada um podem servir a Deus e a outras pessoas? Escolham um "projeto de serviço" de casal usando algo que vocês já sabem fazer.\n👧 *Filhos:* Mostrem às crianças uma ferramenta de casa (vassoura, colher, caneta) e perguntem: "Como Deus poderia usar isso?". Contem a história de Sangar e sua aguilhada. Desafie cada criança a usar algo seu para ajudar alguém esta semana: um desenho, um brinquedo emprestado, uma ajuda em casa.\n👴 *Avós:* Sangar é lembrado por um único versículo, mas fez diferença. Muitos avós acham que já não têm muito a oferecer. Mas oração, histórias e presença são ferramentas poderosas. Escolham uma "ferramenta" sua (receita, música, oração) para passar aos netos esta semana.`;
+
+  // [290] Débora e Baraque — Jz 4
+  if (/debora e baraque/i.test(p))
+    return `👫 *Casais:* Débora e Baraque trabalharam juntos: ela trouxe a palavra, ele liderou o exército. Conversem: como podemos nos encorajar mutuamente a obedecer a Deus? Cada um pode dizer ao outro: "Em que área você precisa que eu diga: hoje é o dia, eu vou com você?".\n👧 *Filhos:* Sísera tinha 900 carros de ferro, mas Deus mandou chuva e os carros atolaram na lama! Façam um "carrinho" de papel e coloquem em uma bacia com água para mostrar. Ensine que nenhum problema é forte demais para Deus. Pergunte: "Qual é o seu 'carro de ferro' — aquilo que parece grande demais?".\n👴 *Avós:* Débora é chamada no Cântico de "mãe em Israel" (5.7). Avós também são pais e mães espirituais. Abençoe os netos com uma palavra de encorajamento específica para algo que eles estão enfrentando, como Débora fez com Baraque: "O SENHOR vai à tua frente".`;
+
+  // [291] O Cântico de Débora — Jz 5
+  if (d.livroAbrev === 'Jz' && /o cantico de debora/i.test(p))
+    return `👫 *Casais:* Débora e Baraque cantaram juntos a vitória de Deus. Escolham juntos um cântico que marcou a história do casal e cantem ou ouçam juntos esta semana, lembrando o que Deus fez. Depois, escrevam uma estrofe nova com uma bênção recente.\n👧 *Filhos:* O cântico fala de estrelas lutando por Israel! Saiam à noite para olhar o céu e conversem sobre o Deus que governa as estrelas. Inventem juntos uma pequena canção com as obras de Deus na família — crianças lembram melhor o que cantam.\n👴 *Avós:* Débora foi chamada "mãe em Israel" porque se levantou quando todos estavam paralisados. Avós, contem aos netos um momento em que vocês precisaram "se levantar" pela família ou pela fé. E cantem com eles um hino antigo da igreja, explicando por que ele é importante para vocês.`;
+
+  // [292] O chamado de Gideão — Jz 6.1-24
+  if (/o chamado de gideao/i.test(p))
+    return `👫 *Casais:* Deus chamou Gideão de "homem valente" quando ele estava com medo. Façam o mesmo um pelo outro: cada um diga ao cônjuge uma qualidade que Deus está formando nele, mesmo que ainda não esteja completa. Palavras de fé constroem o futuro.\n👧 *Filhos:* Gideão se escondia para malhar o trigo. Brinquem de esconder e depois conversem: "Do que você tem medo?". Ensine que Deus disse a Gideão: "Eu estou contigo", e diz o mesmo a nós. Decorem juntos Josué 1.9 ou Juízes 6.16.\n👴 *Avós:* Gideão dizia ser "o menor da família mais pobre". Muitas famílias começaram com pouco, e Deus fez grandes coisas. Contem aos netos de onde a família veio, das dificuldades e de como Deus os sustentou. Isso ensina que Deus usa os pequenos.`;
+
+  // [293] Gideão derruba o altar de Baal — Jz 6.25-32
+  if (/gideao destroi o altar de baal/i.test(p))
+    return `👫 *Casais:* A primeira missão de Gideão foi derrubar o altar de Baal da casa do pai. Conversem: existe algum "altar" em nossa casa, algo que ocupa o lugar de Deus (trabalho, telas, dinheiro, aparência)? Decidam juntos uma mudança concreta e orem para que Deus reine em casa.\n👧 *Filhos:* Gideão obedeceu a Deus mesmo com medo. Pergunte às crianças: "Já teve que fazer algo certo mesmo com medo?". Ensine que coragem não é não sentir medo, mas obedecer a Deus mesmo assim. Façam juntos uma "medalha de coragem" de papel para quem obedecer com medo esta semana.\n👴 *Avós:* Joás tinha um altar de Baal, mas acabou defendendo o filho que serviu ao SENHOR. Avós também podem rever hábitos e tradições à luz da Palavra. Se houver alguma "tradição de família" que não honra a Deus, conversem com os filhos e netos sobre como mudá-la com sabedoria.`;
+
+  // [294] O sinal do velo — Jz 6.33-40
+  if (/o sinal do velo/i.test(p))
+    return `👫 *Casais:* Gideão pediu sinais para obedecer ao que Deus já tinha dito. Conversem: há alguma decisão que vocês estão adiando, esperando um "sinal", embora a Palavra de Deus já seja clara? Orem juntos pedindo coragem para obedecer.\n👧 *Filhos:* Façam a experiência do velo: deixem um pano ou uma esponja ao ar livre durante a noite (ou molhem um e deixem o outro seco) e vejam de manhã. Expliquem que Deus foi paciente com Gideão, que estava com medo. Ensinem que Deus nos fala hoje principalmente pela Bíblia.\n👴 *Avós:* Deus foi paciente com a fé fraca de Gideão. Avós podem testemunhar como Deus foi paciente com eles nos momentos de dúvida. Conte aos netos uma época em que você duvidou e Deus foi fiel, e leia com eles o Salmo 103.13-14.`;
+
+  // [295] Os trezentos de Gideão — Jz 7
+  if (/gideao surpreende e derrota os midianitas/i.test(p))
+    return `👫 *Casais:* Deus reduziu o exército de 32 mil para 300 para que ninguém se gloriasse. Às vezes Deus nos tira recursos para nos ensinar dependência. Conversem: em que momento vocês tinham "pouco" e Deus mostrou o seu poder? Agradeçam juntos e entreguem a Deus uma preocupação atual.\n👧 *Filhos:* Façam a "batalha de Gideão" em casa: apaguem as luzes, coloquem uma lanterna dentro de um pote ou caixa, e na hora certa tirem a tampa gritando "Espada pelo Senhor!". Expliquem que Deus venceu com poucos para mostrar que a vitória era dele, e que a luz de Jesus brilha em nós.\n👴 *Avós:* Deus encorajou Gideão com um sonho no acampamento inimigo. Avós podem ser encorajadores para os netos que têm medo: de provas, de mudanças, do futuro. Ligue ou visite um neto esta semana e diga: "Deus já está à sua frente".`;
+
+  // [296] Gideão e Efraim — Jz 8.1-3
+  if (/gideao e efraim/i.test(p))
+    return `👫 *Casais:* Efraim estava irritado, e Gideão respondeu com humildade. Treinem a "resposta branda": quando um reclamar, o outro responde primeiro reconhecendo algo verdadeiro na queixa, antes de se defender. Leiam juntos Provérbios 15.1 e conversem sobre uma briga recente.\n👧 *Filhos:* Pergunte às crianças: "O que você faz quando um amigo fica bravo com você?". Ensine que palavras gentis "apagam o fogo" e palavras duras "jogam gasolina". Façam uma brincadeira: alguém diz uma frase de reclamação, e as crianças respondem com uma frase gentil.\n👴 *Avós:* Gideão deu honra a Efraim e a paz foi mantida. Avós podem ser pacificadores entre filhos e netos que estão em conflito. Se houver ressentimento na família, convide as pessoas para um almoço e ajude a valorizar o que cada uma tem feito.`;
+
+  // [297] A vingança de Gideão — Jz 8.4-21
+  if (/de gideao vinganca/i.test(p))
+    return `👫 *Casais:* Gideão tratou com dureza quem não o ajudou no momento difícil. Há alguém — parente, amigo, irmão da igreja — que "não ajudou" vocês quando precisaram? Conversem sobre o ressentimento que ficou e orem juntos para entregar isso a Deus, em vez de "cobrar a conta".\n👧 *Filhos:* Gideão estava cansado, mas continuou. Conte às crianças essa parte da história e pergunte: "O que você continua fazendo mesmo cansado?". Depois explique a parte triste: ele ficou com raiva e se vingou. Ensine que podemos ser perseverantes sem ficar bravos com os outros.\n👴 *Avós:* A vingança de Gideão nasceu de uma dor de família: os irmãos mortos em Tabor. Avós carregam perdas antigas. Conversem com Deus sobre alguma mágoa que ainda pesa e, se for adequado, contem aos netos como Deus ajudou vocês a perdoar.`;
+
+  // [298] O éfode de Gideão — Jz 8.22-28
+  if (/de gideao idolatria/i.test(p))
+    return `👫 *Casais:* Gideão disse "o Senhor reinará", mas fez um éfode que virou armadilha para a família. Conversem: existe algo bom em casa (trabalho, ministério, conquistas, objetos) que está ocupando o lugar de Deus? Façam juntos um "inventário de prioridades" e reajustem o que for preciso.\n👧 *Filhos:* Gideão usou ouro para fazer algo que as pessoas começaram a adorar. Pergunte às crianças: "Tem alguma coisa que você ama tanto que fica difícil largar?" (um jogo, um brinquedo, o celular). Ensine que tudo de bom vem de Deus, e que ele deve ser sempre o primeiro.\n👴 *Avós:* Gideão começou bem e terminou tropeçando. Avós sabem que terminar bem é um desafio. Orem pedindo a Deus para serem fiéis até o fim e contem aos netos sobre alguém que terminou bem a carreira de fé. Esse exemplo vale mais do que muitas palavras.`;
+
+  // [299] A morte de Gideão — Jz 8.29-35
+  if (/morte de gideao/i.test(p))
+    return `👫 *Casais:* Assim que Gideão morreu, Israel voltou aos ídolos: a fé do povo dependia dele. Conversem: a fé dos nossos filhos depende só de nós ou eles estão desenvolvendo uma relação pessoal com Deus? Pensem em como incentivar cada filho a orar e ler a Bíblia por conta própria.\n👧 *Filhos:* Israel esqueceu tudo o que Deus tinha feito. Façam juntos uma "caixa da memória": cada um coloca um papel com algo bom que Deus fez pela família. Abram a caixa no fim do mês e agradeçam a Deus. Isso ajuda a não esquecer.\n👴 *Avós:* Gideão morreu "em boa velhice", mas a fé não continuou na família. Avós desejam que a fé passe para os filhos e netos. Escrevam uma carta de bênção para cada neto, contando por que vale a pena seguir a Jesus, para ser lida agora e guardada para o futuro.`;
 
   // FALLBACK por livro/contexto
   const livro = d.livro.toLowerCase();
@@ -9437,10 +10402,37 @@ const VIDEOS_PERICOPE: Record<number, string> = {
   2: '', // Gn 2.4b-17 — Jardim no Éden
   3: '', // Gn 2.18-25 — Criação de Mulher
   4: '', // Gn 3.1-24 — Primeiro Pecado e Punição
+  285: '', // Jz 1 — Conquista incompleta
+  286: '', // Jz 2.1–3.6 — A infidelidade de Israel
+  287: '', // Jz 3.7-11 — Otoniel
+  288: '', // Jz 3.12-30 — Eúde
+  289: '', // Jz 3.31 — Sangar
+  290: '', // Jz 4 — Débora e Baraque
+  291: '', // Jz 5 — O Cântico de Débora
+  292: '', // Jz 6.1-24 — O chamado de Gideão
+  293: '', // Jz 6.25-32 — Gideão derruba o altar de Baal
+  294: '', // Jz 6.33-40 — O sinal do velo
+  295: '', // Jz 7 — Os trezentos de Gideão
+  296: '', // Jz 8.1-3 — Gideão e Efraim
+  297: '', // Jz 8.4-21 — A vingança de Gideão
+  298: '', // Jz 8.22-28 — O éfode de Gideão
+  299: '', // Jz 8.29-35 — A morte de Gideão
   300: 'https://www.youtube.com/watch?v=tI2fuoHXgHA', // Jz 9.1-57 — A queda de Abimeleque
   301: '', // Jz 10.1-2 — Tolá
   302: '', // Jz 10.3-5 — Jair
   303: '', // Jz 10.6-16 — Opressão por Amonitas
+  304: '', // Jz 10.17–12.7 — Jefté
+  305: '', // Jz 12.8-10 — Ibsã
+  306: '', // Jz 12.11-12 — Elom
+  307: '', // Jz 12.13-15 — Abdom
+  308: '', // Jz 13 — Nascimento de Sansão
+  309: '', // Jz 14 — Casamento de Sansão
+  310: '', // Jz 15.1-8 — Sansão e as raposas
+  311: '', // Jz 15.9-20 — A queixada de jumento
+  312: '', // Jz 16.1-22 — Sansão e Dalila
+  313: '', // Jz 16.23-31 — Morte de Sansão
+  314: '', // Jz 17–18 — A migração de Dã
+  315: '', // Jz 19–21 — O crime de Gibeá
 };
 
 function youtubeId(url: string): string | null {

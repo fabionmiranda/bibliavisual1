@@ -13,7 +13,7 @@ import EducacaoCristaAula2Page from './pages/EducacaoCristaAula2Page';
 import EducacaoCristaAula3Page from './pages/EducacaoCristaAula3Page';
 import LivroIsThereiningPage from './pages/LivroIsTheremeaningPage';
 import LivroBatistasBibliaPage from './pages/LivroBatistasBibliaPage';
-import TeologoBatistaPage from './pages/TeologoBatistaPage';
+import TeologoBatistaPage, { TeologoPresbiterianoPage } from './pages/TeologoBatistaPage';
 import BibliotecaLivrosPage from './pages/BibliotecaLivrosPage';
 import BibliotecaResenhasPage from './pages/BibliotecaResenhasPage';
 import ResenhaGonzalezEraReformadoresPage from './pages/ResenhaGonzalezEraReformadoresPage';
@@ -145,6 +145,7 @@ export default function App() {
           <Route path="/biblioteca/autores/gillespie" element={<AutorGillespiePage />} />
           <Route path="/biblioteca/autores/rutherford" element={<AutorRutherfordPage />} />
           <Route path="/biblioteca/autores/batistas-presbiterianos" element={<BibliotecaAutoresBatistasComparativoPage />} />
+          <Route path="/biblioteca/autores/batistas-presbiterianos/:slug" element={<TeologoPresbiterianoPage />} />
           <Route path="/biblioteca/autores/reformadores" element={<BibliotecaAutoresReformadoresPage />} />
           <Route path="/biblioteca/resenhas"          element={<BibliotecaResenhasPage />} />
           <Route path="/biblioteca/resenhas/gonzalez-era-reformadores-cap1" element={<ResenhaGonzalezEraReformadoresPage />} />

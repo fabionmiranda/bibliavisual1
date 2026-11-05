@@ -419,4 +419,283 @@ export const TEOLOGOS_BATISTAS: TeologoBatista[] = [
       { autor: 'WRIGHT, Stephen.', titulo: 'The Early English Baptists, 1603–1649', resto: 'Woodbridge: Boydell Press, 2006.' },
     ],
   },
+  {
+    slug: 'thomas-grantham',
+    num: 4,
+    cap: 'Cap. 1',
+    grupo: 'Batistas Gerais · séc. XVII',
+    nome: 'Thomas Grantham',
+    nomeCurto: 'Grantham',
+    datas: '1634–1692',
+    fotoNota: 'Gravura antiga que representa Grantham em uma discussão pública.',
+    subtitulo: 'O teólogo dos batistas gerais que defendeu a Escritura escrita contra a “luz interior”',
+    intro: 'Filho de uma família simples de **Lincolnshire**, alfaiate e lavrador, Thomas Grantham tornou-se ==o principal teólogo dos batistas gerais== no século XVII. Em **1660** entregou ao rei Carlos II a confissão de fé dos batistas gerais; foi preso várias vezes; e escreveu a grande síntese **Christianismus Primitivus** (1678). Diante dos **quakers**, que colocavam a “luz interior” acima da Bíblia, ele insistiu: ==o Espírito fala pela Escritura escrita, e é por ela que toda experiência deve ser provada==.',
+    citacao: 'Para Grantham, a Escritura escrita é a regra perfeita da fé e da vida: nenhuma “luz interior”, tradição ou concílio pode acrescentar-lhe algo ou corrigi-la.',
+    eixosSub: 'Quatro eixos para entender sua relação com a Escritura',
+    eixos: [
+      {
+        num: '01', icone: BookOpen, cor: '#f97316',
+        titulo: 'A Palavra escrita acima da “luz interior”',
+        texto: 'Os **quakers** ensinavam que a ==luz interior de Cristo em cada pessoa== era a autoridade última, e que a Bíblia era apenas um testemunho secundário. Grantham respondeu em debates públicos e por escrito: ==o mesmo Espírito que inspirou as Escrituras não fala contra elas==. Por isso, **toda pretensa revelação deve ser examinada pela Palavra escrita** (Is 8.20; 1Jo 4.1).',
+        destaque: 'O Espírito não concorre com a Escritura: ele fala por meio dela.',
+      },
+      {
+        num: '02', icone: ScrollText, cor: '#fbbf24',
+        titulo: 'A Escritura como regra suficiente e clara',
+        texto: 'Em **Christianismus Primitivus**, Grantham afirma que as Escrituras do Antigo e do Novo Testamento são ==a regra perfeita da fé e da prática==. Elas são **suficientes**: não precisam do acréscimo da tradição romana; e são **claras** naquilo que é necessário à salvação, de modo que ==o crente comum pode lê-las e compreendê-las==. Os pontos difíceis são explicados pelos textos mais claros.',
+        destaque: 'Tudo o que é necessário para a salvação está dito com clareza na Bíblia.',
+      },
+      {
+        num: '03', icone: Landmark, cor: '#2dd4bf',
+        titulo: 'A igreja organizada segundo o Novo Testamento',
+        texto: 'Grantham queria uma igreja como a ==“religião cristã antiga”== — daí o título **Christianismus Primitivus**. Com os batistas gerais, via em **Hebreus 6.1-2** os ==“seis princípios”== do cristianismo (arrependimento, fé, batismo, imposição de mãos, ressurreição e juízo eterno). Também defendia o ofício de **mensageiro**, que supervisionava várias igrejas — ele mesmo foi um. ==Para ele, a forma da igreja deveria vir do texto bíblico, e não do costume==.',
+        destaque: 'A pergunta de Grantham era sempre: “O que a igreja do Novo Testamento fazia?”',
+      },
+      {
+        num: '04', icone: Scale, cor: '#a78bfa',
+        titulo: 'Confessar a fé diante do rei e da prisão',
+        texto: 'Em **1660**, Grantham entregou a **Carlos II** a ==Breve Confissão ou Declaração de Fé== (a “Confissão Padrão” dos batistas gerais), pedindo liberdade para crer segundo a Escritura. Pouco depois, foi **preso em Lincoln** e escreveu **The Prisoner against the Prelate**. ==Confessar a fé, para ele, era dizer publicamente o que a Bíblia ensina — mesmo quando isso custava a liberdade==.',
+        destaque: 'Uma confissão de fé não substitui a Bíblia: ela declara, diante de todos, o que a Bíblia ensina.',
+      },
+    ],
+    linhaSub: 'De Lincolnshire a Norwich',
+    linha: [
+      { ano: '1634', titulo: 'Nascimento', texto: 'Nasce em **Halton Holegate**, Lincolnshire, numa família de lavradores. Trabalha como ==alfaiate e agricultor==.' },
+      { ano: 'c. 1653', titulo: 'Batismo de crente', texto: 'Ainda jovem, é **batizado** e se une aos ==batistas gerais== de Lincolnshire.' },
+      { ano: 'c. 1656', titulo: 'Pastor', texto: 'Torna-se **pastor** de uma pequena congregação batista geral na região.' },
+      { ano: '1660', titulo: 'Diante do rei', texto: 'Entrega a Carlos II a ==Breve Confissão ou Declaração de Fé== dos batistas gerais.' },
+      { ano: '1662–1663', titulo: 'Prisão em Lincoln', texto: 'É **preso** por sua fé e escreve ==The Prisoner against the Prelate==.' },
+      { ano: '1666', titulo: 'Mensageiro', texto: 'É ordenado **mensageiro**, supervisionando e visitando ==várias igrejas batistas gerais==.' },
+      { ano: '1678', titulo: 'Christianismus Primitivus', texto: 'Publica sua grande obra, ==a mais completa exposição da teologia dos batistas gerais== no século XVII.' },
+      { ano: 'c. 1686', titulo: 'Norwich', texto: 'Muda-se para **Norwich**, onde reúne uma congregação e ==debate publicamente com quakers e anglicanos==.' },
+      { ano: '1692', titulo: 'Morte', texto: 'Morre em Norwich. O vigário anglicano **John Connould**, de quem se tornara amigo apesar das divergências, ==o sepulta em sua igreja, St. Stephen==.' },
+    ],
+    licoes: [
+      { t: 'Experiência se prova pela Palavra', d: 'Sentimentos e “revelações” não são o padrão final. ==O Espírito que inspirou a Bíblia nunca a contradiz==. **Toda experiência deve ser examinada pela Escritura.**' },
+      { t: 'A igreja nasce do texto', d: 'Grantham perguntava: ==“o que fazia a igreja do Novo Testamento?”==. A forma, o culto e a liderança da igreja devem vir **da Bíblia, e não do costume**.' },
+      { t: 'Firmeza com amizade', d: 'Ele debateu com vigor, mas ==um adversário teológico tornou-se seu amigo== e o sepultou. **Convicção bíblica não exige hostilidade pessoal.**' },
+    ],
+    grupoPerguntas: [
+      {
+        bloco: 'Para começar', cor: '#fbbf24',
+        perguntas: [
+          {
+            p: 'Você já ouviu alguém dizer “Deus me disse...” para justificar algo que a Bíblia não ensina? Como você reagiu?',
+            leitura: '1Jo 4.1',
+            r: 'Deixe o grupo compartilhar. O objetivo é perceber que esse problema não é novo: ==Grantham enfrentou exatamente essa questão no século XVII==. João manda **provar os espíritos**, e o critério é a verdade revelada sobre Cristo.',
+          },
+        ],
+      },
+      {
+        bloco: 'Grantham e a Bíblia', cor: '#f97316',
+        perguntas: [
+          {
+            p: 'Os quakers colocavam a “luz interior” acima da Bíblia. Por que Grantham insistia que o Espírito fala por meio da Escritura escrita?',
+            leitura: 'Is 8.20; 2Tm 3.16-17; 2Pe 1.19-21',
+            r: 'Porque ==a Escritura é obra do próprio Espírito==: “homens falaram da parte de Deus, movidos pelo Espírito Santo”. Se o Espírito inspirou a Palavra, **ele não vai contradizê-la depois**. Uma “luz” que leva para longe da Escritura ==não é luz== (Is 8.20).',
+          },
+          {
+            p: 'Grantham ensinava que a Bíblia é clara naquilo que é necessário para a salvação. O que isso significa para quem não é pastor nem teólogo?',
+            leitura: 'Sl 19.7; Sl 119.130; 2Tm 3.15',
+            r: 'Significa que ==qualquer crente pode ler a Bíblia e encontrar nela o caminho da salvação==. Nem tudo é igualmente fácil (2Pe 3.16), mas **o essencial é claro**: quem é Deus, o pecado, Cristo, a fé e o arrependimento. Timóteo conhecia as Escrituras ==“desde a infância”==.',
+          },
+          {
+            p: 'Leiam Hebreus 6.1-2. Grantham via ali os “seis princípios” do cristianismo. O que esses fundamentos nos ensinam sobre o que é essencial na fé?',
+            leitura: 'Hb 6.1-2',
+            r: 'O texto lista ==arrependimento, fé, batismos, imposição de mãos, ressurreição e juízo eterno==. Podemos divergir sobre detalhes (como a imposição de mãos), mas **a lição é que a fé tem fundamentos claros**, que todo crente deve conhecer — e o autor de Hebreus convida a ==avançar para a maturidade== a partir deles.',
+          },
+          {
+            p: 'Grantham entregou ao rei uma confissão de fé. Qual é a relação entre uma confissão de fé e a Bíblia?',
+            leitura: 'Rm 10.9-10; 1Pe 3.15',
+            r: 'Uma confissão ==resume e declara publicamente o que a igreja entende que a Bíblia ensina==. Ela **não está acima da Escritura** e pode ser corrigida por ela. Mas é útil: ensina, une a igreja e mostra a quem está de fora ==no que cremos e por quê==.',
+          },
+          {
+            p: 'Um vigário anglicano, que discordava de Grantham, tornou-se seu amigo e o sepultou. O que essa história nos ensina sobre debates teológicos?',
+            leitura: 'Rm 12.18; Ef 4.15',
+            r: 'Que é possível ==defender a verdade com firmeza e ainda amar quem pensa diferente==. Paulo pede que **sigamos a verdade em amor**. Debates sérios não precisam destruir relacionamentos — e ==a forma como discordamos também é testemunho==.',
+          },
+        ],
+      },
+      {
+        bloco: 'Para a vida e a igreja', cor: '#2dd4bf',
+        perguntas: [
+          {
+            p: 'Como a nossa igreja pode ajudar os membros a avaliar pregações, livros, vídeos e “revelações” pela Escritura?',
+            leitura: 'At 17.11; 1Ts 5.20-21',
+            r: 'Sugestões: ==incentivar a conferir os textos na Bíblia aberta==, ensinar perguntas simples (“de onde vem isso no texto?”), **estudar juntos a confissão de fé da igreja** com as passagens que a sustentam e ==valorizar a pregação que expõe o texto==.',
+          },
+          {
+            p: 'Que passo concreto o nosso grupo pode dar esta semana inspirado em Grantham?',
+            leitura: 'Tg 1.22; Cl 3.16',
+            r: 'Sugestões: ==ler Hebreus 6 e 2Timóteo 3 durante a semana==; **escrever em uma frase o que cremos sobre a Bíblia** com um versículo que sustente; e ==orar por alguém de quem discordamos==, buscando tratá-lo com amor.',
+          },
+        ],
+      },
+    ],
+    obras: [
+      { ano: '1662', titulo: 'The Prisoner against the Prelate', nota: 'Escrito na prisão de Lincoln, em defesa da fé e da liberdade de consciência.' },
+      { ano: '1678', titulo: 'Christianismus Primitivus, or the Ancient Christian Religion', nota: 'Sua obra principal: exposição completa da fé e da ordem da igreja segundo os batistas gerais.' },
+      { ano: '1687', titulo: 'St. Paul’s Catechism', nota: 'Catecismo para ensinar os fundamentos da fé a partir de Hebreus 6.1-2.' },
+      { ano: '1691', titulo: 'A Dialogue between the Baptist and the Presbyterian', nota: 'Defesa do batismo de crentes a partir da Escritura.' },
+    ],
+    referencias: [
+      { autor: 'BUSH, L. Russ; NETTLES, Tom J.', titulo: 'Os Batistas e a Bíblia', resto: 'Ortodoxia Batista. Cap. 1. (Original: Baptists and the Bible. Ed. rev. Nashville: Broadman & Holman, 1999).' },
+      { autor: 'BASS, Clint C.', titulo: 'Thomas Grantham (1633–1692) and General Baptist Theology', resto: 'Oxford: Regent’s Park College, 2013. (Centre for Baptist History and Heritage Studies).' },
+      { autor: 'GRANTHAM, Thomas.', titulo: 'Christianismus Primitivus, or the Ancient Christian Religion', resto: 'London: Francis Smith, 1678.' },
+      { autor: 'LUMPKIN, William L.', titulo: 'Baptist Confessions of Faith', resto: 'Ed. rev. Valley Forge: Judson Press, 1969.' },
+      { autor: 'McBETH, H. Leon.', titulo: 'The Baptist Heritage: Four Centuries of Baptist Witness', resto: 'Nashville: Broadman Press, 1987.' },
+    ],
+  },
+  {
+    slug: 'roger-williams',
+    num: 5,
+    cap: 'Cap. 4',
+    grupo: 'Batistas na América · séc. XVII',
+    nome: 'Roger Williams',
+    nomeCurto: 'Williams',
+    datas: 'c. 1603–1683',
+    fotoNota: 'Não se conhece retrato autêntico de Williams. Na imagem, a estátua esculpida por Franklin Simmons.',
+    subtitulo: 'O fundador de Rhode Island que leu a Bíblia como defesa da liberdade de consciência',
+    intro: 'Formado em **Cambridge**, pastor puritano e exímio conhecedor das línguas, Roger Williams chegou à Nova Inglaterra em **1631**. Por ensinar que ==o magistrado civil não tem autoridade sobre a consciência==, foi **banido de Massachusetts** e, em 1636, fundou **Providence**, refúgio para os perseguidos por sua fé. Em **1639**, ajudou a formar ==a primeira igreja batista da América==. Toda a sua defesa da liberdade foi ==construída a partir da leitura das Escrituras==.',
+    citacao: 'Para Williams, Israel era um tipo da igreja de Cristo, e não um modelo para os Estados: por isso nenhuma nação pode usar a espada para impor a fé.',
+    eixosSub: 'Quatro eixos para entender sua relação com a Escritura',
+    eixos: [
+      {
+        num: '01', icone: BookOpen, cor: '#fb923c',
+        titulo: 'Israel como tipo: a chave de sua leitura bíblica',
+        texto: 'Os puritanos de Massachusetts usavam o **Israel do Antigo Testamento** como modelo para o governo civil: se os reis de Israel puniam a idolatria, os magistrados cristãos também deveriam punir a heresia. Williams respondeu com a ==leitura tipológica==: Israel foi uma nação única, ==um tipo que se cumpre em Cristo e em sua igreja==, e não em algum Estado. **A espada de Israel se tornou, no Novo Testamento, a espada do Espírito** (Ef 6.17).',
+        destaque: 'Nenhuma nação é o novo Israel: o povo de Deus agora é a igreja de Cristo, reunida pela Palavra.',
+      },
+      {
+        num: '02', icone: Sprout, cor: '#fbbf24',
+        titulo: 'O jardim e o deserto',
+        texto: 'Williams usou uma imagem bíblica marcante: a igreja é ==o jardim de Deus== (Ct 4.12), e o mundo é o deserto. Quando a igreja se misturou ao poder do Estado, abriu-se uma brecha ==na “cerca ou muro de separação” entre o jardim e o deserto==, e o mundo invadiu a igreja. Para proteger **a pureza da igreja**, era preciso manter essa separação.',
+        destaque: 'A separação entre igreja e Estado nasceu para proteger a igreja, e não para expulsar Deus da vida pública.',
+      },
+      {
+        num: '03', icone: Scale, cor: '#2dd4bf',
+        titulo: 'A Bíblia contra a perseguição',
+        texto: 'Em **The Bloudy Tenent of Persecution** (1644), Williams discute longamente com o pastor John Cotton. Ele apela à **parábola do joio e do trigo** (Mt 13.24-30) e ao exemplo de Cristo, que ==não converteu ninguém pela força==. Perseguir por causa da consciência, dizia ele, é ==uma doutrina sangrenta, contrária ao Evangelho==. A conversão é obra do Espírito por meio da Palavra.',
+        destaque: 'Uma consciência forçada não é uma consciência convertida.',
+      },
+      {
+        num: '04', icone: Heart, cor: '#a78bfa',
+        titulo: 'Uma busca inquieta pela igreja do Novo Testamento',
+        texto: 'Em **1639**, Williams foi batizado por Ezequiel Holliman e batizou outros, formando ==a primeira igreja batista da América==, em Providence. Poucos meses depois, deixou a igreja: passou a duvidar de que alguém tivesse autoridade para restaurar as ordenanças sem uma nova comissão apostólica, e viveu como um **“buscador”** (**Seeker**). Sua história mostra ==alguém que levava a Bíblia tão a sério que não aceitava nada abaixo do padrão apostólico== — mas também os riscos de uma busca sem comunidade.',
+        destaque: 'Williams nunca deixou de buscar a igreja da Bíblia — mesmo quando não conseguiu encontrá-la.',
+      },
+    ],
+    linhaSub: 'De Londres a Providence',
+    linha: [
+      { ano: 'c. 1603', titulo: 'Nascimento', texto: 'Nasce em **Londres**, filho de um comerciante. Ainda jovem, chama a atenção do jurista **Edward Coke**.' },
+      { ano: '1627', titulo: 'Cambridge', texto: 'Forma-se no **Pembroke College**, em Cambridge, com domínio de ==latim, grego e hebraico==.' },
+      { ano: '1631', titulo: 'Nova Inglaterra', texto: 'Chega a **Boston** e recusa servir numa igreja que não havia se separado da Igreja da Inglaterra.' },
+      { ano: '1635', titulo: 'Banimento', texto: 'O tribunal de Massachusetts o **bane** por suas ideias sobre a ==liberdade de consciência==.' },
+      { ano: '1636', titulo: 'Providence', texto: 'Acolhido pelos **narragansetts**, compra terras deles e funda ==Providence, refúgio para os perseguidos==.' },
+      { ano: '1639', titulo: 'Primeira igreja batista da América', texto: 'É **batizado** com outros crentes e forma ==a primeira igreja batista do continente==; meses depois, deixa a igreja.' },
+      { ano: '1643', titulo: 'A língua dos nativos', texto: 'Publica **A Key into the Language of America**, fruto do ==convívio respeitoso com os povos nativos==.' },
+      { ano: '1644', titulo: 'Carta e “Bloudy Tenent”', texto: 'Obtém em Londres uma carta para a colônia e publica ==The Bloudy Tenent of Persecution==.' },
+      { ano: '1663', titulo: 'Carta real', texto: 'Rhode Island recebe uma carta real que garante ==plena liberdade religiosa== — algo inédito na época.' },
+      { ano: '1683', titulo: 'Morte', texto: 'Morre em **Providence**, depois de décadas servindo a colônia que ajudou a fundar.' },
+    ],
+    licoes: [
+      { t: 'Ler a Bíblia como um todo', d: 'Williams mostrou que ==o Antigo Testamento deve ser lido à luz de Cristo==. **Aplicar textos sem considerar o seu lugar na história da redenção** gera erros graves.' },
+      { t: 'A fé não se impõe pela força', d: 'O Evangelho avança ==pela Palavra e pelo Espírito==, nunca pela coerção. **A igreja convence; não obriga.**' },
+      { t: 'Buscar a igreja bíblica em comunidade', d: 'O zelo de Williams pela pureza era admirável, mas ==ninguém deve buscar a igreja ideal sozinho==. **O padrão apostólico se vive juntos.**' },
+    ],
+    grupoPerguntas: [
+      {
+        bloco: 'Para começar', cor: '#fbbf24',
+        perguntas: [
+          {
+            p: 'Você já foi pressionado a fazer algo contra a sua consciência? Como se sentiu?',
+            leitura: 'At 5.29',
+            r: 'Deixe o grupo compartilhar. O objetivo é perceber ==o valor da consciência diante de Deus==. Os apóstolos responderam ao Sinédrio: **“Importa antes obedecer a Deus que aos homens.”**',
+          },
+        ],
+      },
+      {
+        bloco: 'Williams e a Bíblia', cor: '#fb923c',
+        perguntas: [
+          {
+            p: 'Os puritanos usavam o Israel do Antigo Testamento como modelo para o governo civil. Por que Williams discordava?',
+            leitura: '1Pe 2.9-10; Gl 6.16',
+            r: 'Porque ==Israel era uma nação única na história da salvação==, um tipo que se cumpre em Cristo. Pedro aplica à **igreja** os títulos de Israel (“raça eleita, sacerdócio real, nação santa”), e não a um país. Por isso, ==nenhum Estado pode reivindicar o papel de Israel== e punir pecados contra a primeira tábua da lei.',
+          },
+          {
+            p: 'O que significa ler o Antigo Testamento “tipologicamente”? Deem exemplos.',
+            leitura: 'Hb 10.1; 1Co 10.1-11',
+            r: 'Significa reconhecer que ==pessoas, eventos e instituições do Antigo Testamento apontam para Cristo==. O cordeiro pascal aponta para a cruz; o templo, para Cristo e sua igreja; a terra prometida, para a herança eterna. **A lei tinha “a sombra dos bens futuros”**. Essa leitura ==não anula o Antigo Testamento==, mas o lê na direção que o próprio Novo Testamento indica.',
+          },
+          {
+            p: 'Williams falava de um “muro de separação” entre o jardim (a igreja) e o deserto (o mundo). Hoje, quando se fala em “separação entre igreja e Estado”, o sentido é o mesmo?',
+            leitura: 'Jo 18.36; 2Co 6.14-18',
+            r: 'Nem sempre. Para Williams, ==o muro protegia a igreja da interferência do Estado e do mundo==. Hoje, a expressão às vezes é usada para **excluir a fé da vida pública** — algo que ele não defendia. Jesus disse: ==“O meu reino não é deste mundo”== — mas os cristãos continuam chamados a ser sal e luz na sociedade.',
+          },
+          {
+            p: 'Williams aprendeu a língua dos narragansetts e os tratava com respeito. O que isso nos ensina sobre missão e testemunho?',
+            leitura: '1Co 9.19-23; At 17.26-27',
+            r: 'Que ==amar o próximo inclui conhecer sua língua e cultura== e tratá-lo com justiça. Williams comprou as terras em vez de tomá-las e **escreveu um livro para ajudar outros a se comunicar com os nativos**. Paulo se fez ==“tudo para com todos”== para ganhar alguns.',
+          },
+          {
+            p: 'Williams deixou a igreja que ajudou a fundar porque achava que ninguém tinha autoridade para restaurar as ordenanças. O que podemos aprender com isso?',
+            leitura: 'Mt 28.18-20; Hb 10.24-25',
+            r: 'A Grande Comissão foi dada ==“até a consumação dos séculos”==: a igreja continua autorizada a fazer discípulos e batizar pela Palavra de Cristo, sem precisar de nova comissão apostólica. O zelo de Williams pela Bíblia era sério, mas **a busca da igreja perfeita pode levar ao isolamento**. Hebreus exorta: ==“não deixemos de congregar-nos”==.',
+          },
+        ],
+      },
+      {
+        bloco: 'Para a vida e a igreja', cor: '#2dd4bf',
+        perguntas: [
+          {
+            p: 'Como a nossa igreja pode defender a liberdade religiosa de todos — inclusive de quem crê diferente de nós?',
+            leitura: 'Mt 7.12; 1Tm 2.1-2',
+            r: 'Sugestões: ==orar pelas autoridades== e pelos cristãos perseguidos; **apoiar a liberdade de culto também para outros grupos**, pela regra de ouro; e ==anunciar o Evangelho com convicção e respeito==, sem buscar privilégios do Estado.',
+          },
+          {
+            p: 'Que passo concreto o nosso grupo pode dar esta semana inspirado em Williams?',
+            leitura: 'Lc 24.27; Tg 1.22',
+            r: 'Sugestões: ==ler um texto do Antigo Testamento e perguntar como ele aponta para Cristo==; **orar por um povo ou grupo étnico ainda não alcançado**; e conversar com alguém de outra fé ==com respeito e clareza sobre o Evangelho==.',
+          },
+        ],
+      },
+    ],
+    obras: [
+      { ano: '1643', titulo: 'A Key into the Language of America', nota: 'Guia da língua e dos costumes dos narragansetts, com reflexões espirituais.' },
+      { ano: '1644', titulo: 'Mr. Cotton’s Letter Lately Printed, Examined and Answered', nota: 'Onde aparece a imagem da “cerca ou muro de separação” entre o jardim e o deserto.' },
+      { ano: '1644', titulo: 'The Bloudy Tenent of Persecution, for Cause of Conscience', nota: 'Sua obra mais famosa: defesa bíblica da liberdade de consciência.' },
+      { ano: '1652', titulo: 'The Bloody Tenent Yet More Bloody', nota: 'Resposta à réplica de John Cotton.' },
+    ],
+    referencias: [
+      { autor: 'BUSH, L. Russ; NETTLES, Tom J.', titulo: 'Os Batistas e a Bíblia', resto: 'Ortodoxia Batista. Cap. 4. (Original: Baptists and the Bible. Ed. rev. Nashville: Broadman & Holman, 1999).' },
+      { autor: 'BARRY, John M.', titulo: 'Roger Williams and the Creation of the American Soul: Church, State, and the Birth of Liberty', resto: 'New York: Viking, 2012.' },
+      { autor: 'GAUSTAD, Edwin S.', titulo: 'Liberty of Conscience: Roger Williams in America', resto: 'Grand Rapids: Eerdmans, 1991.' },
+      { autor: 'MORGAN, Edmund S.', titulo: 'Roger Williams: The Church and the State', resto: 'New York: Harcourt, Brace & World, 1967.' },
+      { autor: 'WILLIAMS, Roger.', titulo: 'The Bloudy Tenent of Persecution, for Cause of Conscience', resto: 'Ed. Richard Groves. Macon: Mercer University Press, 2001. (Classics of Religious Liberty, 2).' },
+    ],
+  },
 ];
+
+// ── Links sincronizados ──────────────────────────────────────────────────────
+// Fonte única dos links para as páginas dos teólogos. Usada em
+// /biblioteca/livros/os-batistas-e-a-biblia e /biblioteca/autores/batistas-presbiterianos:
+// ao incluir um teólogo em TEOLOGOS_BATISTAS, os cards das duas páginas passam a abrir o perfil.
+export const ROTA_TEOLOGOS_BATISTAS = '/biblioteca/livros/os-batistas-e-a-biblia';
+
+// Nomes escritos de forma diferente nas duas páginas → nome usado em TEOLOGOS_BATISTAS
+const APELIDOS: Record<string, string> = {
+  'walterrauschenbusch': 'W. Rauschenbusch',
+  'williamnewtonclarke': 'W. N. Clarke',
+  'harryemersonfosdick': 'H. E. Fosdick',
+  'jamesjosiahreeve': 'J. J. Reeve',
+  'charleshaddonspurgeon': 'C. H. Spurgeon',
+};
+
+const chave = (nome: string) =>
+  nome.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z]/g, '');
+
+export function linkTeologoBatista(nome: string): string | null {
+  const alvo = chave(APELIDOS[chave(nome)] ?? nome);
+  const t = TEOLOGOS_BATISTAS.find(x => chave(x.nome) === alvo);
+  return t ? `${ROTA_TEOLOGOS_BATISTAS}/${t.slug}` : null;
+}

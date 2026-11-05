@@ -8,6 +8,7 @@ import {
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { FOTOS_TEOLOGOS_BATISTAS } from '../data/fotosTeologosBatistas';
+import { linkTeologoBatista } from '../data/teologosBatistas';
 
 const ACCENT   = '#f97316';
 const ACCENT_BG = '#f9731618';
@@ -78,12 +79,12 @@ const PARTES = [
 ];
 
 // ── 36 teólogos na ordem do livro ────────────────────────────────────────────
-// slug: quando preenchido, o card abre a página do teólogo em /biblioteca/livros/os-batistas-e-a-biblia/<slug>
-const TEOLOGOS: { num: number; cap: string; nome: string; datas: string; papel: string; cor: string; slug?: string }[] = [
+// O link de cada card vem de linkTeologoBatista() (src/data/teologosBatistas.ts), compartilhado com /biblioteca/autores/batistas-presbiterianos
+const TEOLOGOS: { num: number; cap: string; nome: string; datas: string; papel: string; cor: string }[] = [
   // Cap. 1 — Batistas Gerais, séc. XVII
-  { num:  1, cap: 'Cap. 1', slug: 'john-smyth', nome: 'John Smyth',         datas: 'c.1570–1612',    papel: 'Fundou a 1ª igreja batista inglesa em Amsterdã (1609). Via a Escritura como plenamente confiável nos originais.',          cor: '#f97316' },
-  { num:  2, cap: 'Cap. 1', slug: 'thomas-helwys', nome: 'Thomas Helwys',      datas: 'c.1575–c.1616',  papel: 'Fundou a 1ª igreja batista em solo inglês (1612). Defensor da liberdade religiosa; morreu na prisão.',                    cor: '#f97316' },
-  { num:  3, cap: 'Cap. 1', slug: 'john-murton', nome: 'John Murton',        datas: '?–c.1626',       papel: 'Sucessor de Helwys; defendeu a liberdade de consciência diante do Estado.',                                                cor: '#f97316' },
+  { num:  1, cap: 'Cap. 1', nome: 'John Smyth',         datas: 'c.1570–1612',    papel: 'Fundou a 1ª igreja batista inglesa em Amsterdã (1609). Via a Escritura como plenamente confiável nos originais.',          cor: '#f97316' },
+  { num:  2, cap: 'Cap. 1', nome: 'Thomas Helwys',      datas: 'c.1575–c.1616',  papel: 'Fundou a 1ª igreja batista em solo inglês (1612). Defensor da liberdade religiosa; morreu na prisão.',                    cor: '#f97316' },
+  { num:  3, cap: 'Cap. 1', nome: 'John Murton',        datas: '?–c.1626',       papel: 'Sucessor de Helwys; defendeu a liberdade de consciência diante do Estado.',                                                cor: '#f97316' },
   { num:  4, cap: 'Cap. 1', nome: 'Thomas Grantham',    datas: '1634–1692',      papel: 'Principal teólogo dos batistas gerais. Combateu os quakers em favor da Escritura escrita.',                                cor: '#f97316' },
   // Cap. 4 — Grande nuvem de testemunhas
   { num:  5, cap: 'Cap. 4', nome: 'Roger Williams',     datas: 'c.1603–1683',    papel: 'Fundou Rhode Island e a 1ª igreja batista da América (Providence, 1638–39). Defendeu a separação Igreja–Estado.',          cor: '#fb923c' },
@@ -457,13 +458,14 @@ export default function LivroBatistasBibliaPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {TEOLOGOS.map((t, i) => {
               const foto = FOTOS_TEOLOGOS_BATISTAS[t.nome];
+              const link = linkTeologoBatista(t.nome);
               const card = (
               <motion.div
                 initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: Math.min(i * 0.03, 0.6) }}
-                className={`group relative overflow-hidden h-full min-h-[190px] flex items-start gap-4 p-5 rounded-2xl border bg-white/[0.03] hover:bg-white/[0.05] transition-all duration-200 ${t.slug ? 'border-orange-400/40 hover:border-orange-400/70 cursor-pointer' : 'border-white/8'}`}
+                className={`group relative overflow-hidden h-full min-h-[190px] flex items-start gap-4 p-5 rounded-2xl border bg-white/[0.03] hover:bg-white/[0.05] transition-all duration-200 ${link ? 'border-orange-400/40 hover:border-orange-400/70 cursor-pointer' : 'border-white/8'}`}
               >
                 {/* Retrato de fundo — escurecido à esquerda para o texto ficar legível */}
                 {foto && (
@@ -501,7 +503,7 @@ export default function LivroBatistasBibliaPage() {
                     </span>
                   </div>
                   <p className="text-white/80 text-base leading-relaxed">{t.papel}</p>
-                  {t.slug && (
+                  {link && (
                     <span className="inline-flex items-center gap-1 mt-3 text-xs font-black uppercase tracking-widest" style={{ color: t.cor }}>
                       Ver perfil e relação com a Bíblia <ChevronRight className="w-3.5 h-3.5" />
                     </span>
@@ -509,8 +511,8 @@ export default function LivroBatistasBibliaPage() {
                 </div>
               </motion.div>
               );
-              return t.slug
-                ? <Link key={i} to={`/biblioteca/livros/os-batistas-e-a-biblia/${t.slug}`} className="block">{card}</Link>
+              return link
+                ? <Link key={i} to={link} className="block">{card}</Link>
                 : <div key={i}>{card}</div>;
             })}
           </div>

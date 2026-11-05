@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import { ChevronRight, BookOpen, ArrowLeft, Star } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import { FOTOS_TEOLOGOS_BATISTAS } from '../data/fotosTeologosBatistas';
+import { linkTeologoBatista } from '../data/teologosBatistas';
+import { linkTeologoPresbiteriano } from '../data/teologosPresbiterianos';
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -369,10 +372,12 @@ function TeologicoPanel({ t, side }: TeologicoPanelProps) {
     ? 'bg-orange-950/40 border-l-2 border-orange-700/50'
     : 'bg-blue-950/40 border-l-2 border-blue-700/50';
 
-  const foto = FOTOS[t.nome] ?? null;
+  const foto = FOTOS[t.nome] ?? FOTOS_TEOLOGOS_BATISTAS[t.nome] ?? null;
+  // Batistas com perfil: mesmo link dos cards de Os Batistas e a Bíblia; presbiterianos: perfil próprio
+  const link = side === 'batista' ? linkTeologoBatista(t.nome) : linkTeologoPresbiteriano(t.nome);
 
-  return (
-    <div className={`rounded-lg border p-4 flex flex-col gap-3 h-full ${bgClass}`}>
+  const painel = (
+    <div className={`rounded-lg border p-4 flex flex-col gap-3 h-full ${bgClass} ${link ? (side === 'batista' ? 'border-orange-500/50 hover:border-orange-400 hover:bg-orange-950/30' : 'border-blue-500/50 hover:border-blue-400 hover:bg-blue-950/30') + ' transition-colors cursor-pointer' : ''}`}>
       <div className="flex items-start justify-between gap-3">
         <span
           className="text-[10px] font-bold tracking-widest uppercase px-2 py-0.5 rounded shrink-0"
@@ -403,8 +408,15 @@ function TeologicoPanel({ t, side }: TeologicoPanelProps) {
       <div className={`text-xs text-slate-400 leading-relaxed p-3 rounded ${escriturasBg}`}>
         {t.escrituras}
       </div>
+      {link && (
+        <span className="inline-flex items-center gap-1 text-xs font-black uppercase tracking-widest" style={{ color: accentColor }}>
+          Ver perfil e relação com a Bíblia <ChevronRight className="w-3.5 h-3.5" />
+        </span>
+      )}
     </div>
   );
+
+  return link ? <Link to={link} className="block h-full">{painel}</Link> : painel;
 }
 
 // ─── ParRow ──────────────────────────────────────────────────────────────────
