@@ -44,10 +44,10 @@ const ESTUDOS: EstudoCard[] = [
     subtitulo: 'Discipulado Confessional Reformado',
     descricao: 'Estudo da Confissão de Fé de Westminster (1646), o mais completo símbolo da tradição reformada, com seus 33 capítulos de doutrina sistemática.',
     cor: BLUE,
-    badge: 'Em breve',
+    badge: 'Em andamento',
     capitulos: 33,
     path: '/discipulado/confessional/westminster',
-    disponivel: false,
+    disponivel: true,
     bg: 'linear-gradient(145deg, #001220 0%, #000d18 50%, #000608 100%)',
     sigla: 'CFW 1646',
   },
@@ -125,7 +125,7 @@ export default function EstudosConfessionaisPage() {
               Discipulado Confessional
             </span>
             <span className="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider" style={{ background: '#ffffff10', color: '#ffffff70' }}>
-              {ESTUDOS.filter(e => e.disponivel).length} disponível · {ESTUDOS.filter(e => !e.disponivel).length} em breve
+              {ESTUDOS.filter(e => e.disponivel).length} disponíve{ESTUDOS.filter(e => e.disponivel).length === 1 ? 'l' : 'is'} · {ESTUDOS.filter(e => !e.disponivel).length} em breve
             </span>
           </div>
           <h1 className="text-3xl md:text-4xl font-black mb-3 text-white leading-tight">

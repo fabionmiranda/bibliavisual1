@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
-import { ChevronRight, User, BookOpen, ExternalLink, Search, X } from 'lucide-react';
+import { ChevronRight, User, BookOpen, ArrowRight, Search, X, Layers, Clock, Filter } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
@@ -56,6 +56,7 @@ const FOTO_TURRETIN  = 'https://commons.wikimedia.org/wiki/Special:FilePath/Fran
 const FOTO_WEBSTER   = 'https://www.st-andrews.ac.uk/assets/university/schools/school-of-divinity/images/news/john-webster.jpg';
 const FOTO_BAVINCK    = 'https://commons.wikimedia.org/wiki/Special:FilePath/HermanBavinckBig.jpg';
 const FOTO_PLANTINGA  = 'https://commons.wikimedia.org/wiki/Special:FilePath/Alvin_Plantinga.jpg';
+const FOTO_NEWMAN     = 'https://commons.wikimedia.org/wiki/Special:FilePath/John_Henry_Newman_by_Sir_John_Everett_Millais,_1st_Bt.jpg';
 
 const AUTORES = [
   {
@@ -235,6 +236,36 @@ const AUTORES = [
     ),
   },
   {
+    slug: 'newman',
+    nome: 'John Henry Newman',
+    datas: '1801–1890',
+    area: 'Teologia Histórica',
+    subtitulo: 'O Desenvolvimento da Doutrina e o Problema da Identidade',
+    descricao:
+      'Líder do Movimento de Oxford, convertido ao catolicismo romano em 1845 e feito cardeal em 1879. Em seu Ensaio sobre o Desenvolvimento da Doutrina Cristã perguntou como a doutrina pode mudar de vocabulário sem deixar de ser a mesma — e propôs sete notas para distinguir desenvolvimento autêntico de corrupção. A tradição reformada acolhe a pergunta, mas responde com a Escritura como norma normans.',
+    destaque: '"Aqui embaixo, viver é mudar, e ser perfeito é ter mudado muitas vezes." — Essay on Development, 1845',
+    tags: ['Desenvolvimento Doutrinário', 'Movimento de Oxford', 'Tradição', 'Norma Normans', 'Século XIX'],
+    accentColor: '#f43f5e',
+    gradHero: 'linear-gradient(135deg, #1a0510 0%, #10040a 50%, #080206 100%)',
+    gradOrb1: '#f43f5e',
+    gradOrb2: '#fbbf24',
+    foto: FOTO_NEWMAN,
+    IconFigura: ({ color }: { color: string }) => (
+      <svg viewBox="0 0 64 64" fill="none" className="w-full h-full">
+        {/* semente → árvore */}
+        <ellipse cx="14" cy="50" rx="5" ry="6" stroke={color} strokeWidth="1.6" fill={color + '18'} />
+        <path d="M24 52 L40 52" stroke={color} strokeWidth="1.4" strokeOpacity="0.5" strokeDasharray="2 2" />
+        <polygon points="40,52 36,49.5 36,54.5" fill={color} opacity="0.6" />
+        <line x1="50" y1="56" x2="50" y2="34" stroke={color} strokeWidth="2" strokeLinecap="round" />
+        <circle cx="50" cy="24" r="11" stroke={color} strokeWidth="1.8" fill={color + '14'} />
+        <circle cx="42" cy="30" r="6" stroke={color} strokeWidth="1.4" fill={color + '10'} />
+        <circle cx="58" cy="30" r="5" stroke={color} strokeWidth="1.4" fill={color + '10'} />
+        <line x1="14" y1="8" x2="14" y2="18" stroke={color} strokeWidth="2.2" strokeLinecap="round" />
+        <line x1="10" y1="12" x2="18" y2="12" stroke={color} strokeWidth="2.2" strokeLinecap="round" />
+      </svg>
+    ),
+  },
+  {
     slug: 'rutherford',
     nome: 'Samuel Rutherford',
     datas: '1600–1661',
@@ -314,15 +345,238 @@ const AUTORES = [
   },
 ];
 
+type Autor = (typeof AUTORES)[number];
+
+// Coleções (estudos comparativos) ficam separadas dos perfis individuais
+const COLECOES = new Set(['batistas-presbiterianos', 'reformadores']);
+
+// Anos de vida para a linha do tempo e para a ordem cronológica (null = vivo)
+const ANOS: Record<string, [number, number | null]> = {
+  rutherford: [1600, 1661],
+  gillespie: [1613, 1648],
+  turretin: [1623, 1687],
+  mastricht: [1630, 1706],
+  newman: [1801, 1890],
+  bavinck: [1854, 1921],
+  plantinga: [1932, null],
+  webster: [1955, 2016],
+};
+
+const ERAS = [
+  { id: 'todos',     label: 'Todos',              desc: 'Todos os perfis e coleções' },
+  { id: 'colecoes',  label: 'Coleções',           desc: 'Estudos comparativos com vários autores' },
+  { id: 'xvii',      label: 'Séc. XVII',          desc: 'Ortodoxia reformada e Westminster' },
+  { id: 'xix',       label: 'Séc. XIX',           desc: 'Movimento de Oxford e neocalvinismo' },
+  { id: 'xx',        label: 'Séc. XX–XXI',        desc: 'Teologia e filosofia contemporâneas' },
+] as const;
+type Era = (typeof ERAS)[number]['id'];
+
+function eraDe(a: Autor): Exclude<Era, 'todos'> {
+  if (COLECOES.has(a.slug)) return 'colecoes';
+  const ini = ANOS[a.slug]?.[0] ?? 1600;
+  return ini < 1750 ? 'xvii' : ini < 1900 ? 'xix' : 'xx';
+}
+const ROTULO_ERA: Record<Exclude<Era, 'todos'>, string> = {
+  colecoes: 'Coleção', xvii: 'Século XVII', xix: 'Século XIX', xx: 'Séc. XX–XXI',
+};
+
 // Normaliza para busca: minúsculas e sem acentos
 const normalizar = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 
-const INDICE_BUSCA = AUTORES.map(a =>
+const INDICE_BUSCA = new Map(AUTORES.map(a => [
+  a.slug,
   normalizar([a.nome, a.datas, a.area, a.subtitulo, a.descricao, a.destaque, ...a.tags].join(' ')),
-);
+]));
+
+const PERFIS = AUTORES.filter(a => !COLECOES.has(a.slug))
+  .sort((a, b) => (ANOS[a.slug]?.[0] ?? 0) - (ANOS[b.slug]?.[0] ?? 0));
+const COLS = AUTORES.filter(a => COLECOES.has(a.slug));
+
+const ANO_ATUAL = new Date().getFullYear();
+const T_INI = 1590, T_FIM = 2030;
+const pct = (ano: number) => ((ano - T_INI) / (T_FIM - T_INI)) * 100;
+
+function irPara(slug: string) {
+  document.getElementById(`autor-${slug}`)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
+// ─── Linha do tempo: cada autor como uma barra de vida ───────────────────────
+function LinhaDoTempo({ visiveis }: { visiveis: Set<string> }) {
+  return (
+    <div className="rounded-3xl border border-white/10 bg-white/[0.025] p-4 sm:p-6">
+      <div className="flex flex-wrap items-baseline justify-between gap-2 mb-1">
+        <h2 className="text-white font-black text-base sm:text-lg">Quatro séculos em uma linha</h2>
+        <span className="text-[11px] text-white/45">Toque em um nome para ir ao perfil</span>
+      </div>
+      <p className="text-white/55 text-xs sm:text-sm mb-5 leading-relaxed">
+        Cada barra mostra o tempo de vida do autor. Veja quem foi contemporâneo de quem — e os grandes intervalos entre as tradições.
+      </p>
+
+      <div className="relative">
+        {/* grade dos séculos */}
+        <div className="absolute inset-0 ml-0 sm:ml-[140px] pointer-events-none">
+          {[1600, 1700, 1800, 1900, 2000].map(s => (
+            <div key={s} className="absolute top-0 bottom-6 border-l border-dashed border-white/10" style={{ left: `${pct(s)}%` }}>
+              <span className="absolute -bottom-6 -translate-x-1/2 text-[10px] font-bold text-white/35 tabular-nums">{s}</span>
+            </div>
+          ))}
+        </div>
+
+        <ul className="relative flex flex-col gap-2 pb-7">
+          {PERFIS.map(a => {
+            const [ini, fim] = ANOS[a.slug];
+            const ate = fim ?? ANO_ATUAL;
+            const ativo = visiveis.has(a.slug);
+            return (
+              <li key={a.slug} className="sm:flex sm:items-center">
+                <button type="button" onClick={() => irPara(a.slug)} disabled={!ativo}
+                  className="text-left sm:w-[140px] sm:shrink-0 sm:pr-3 text-[11px] sm:text-xs font-bold truncate transition-colors disabled:cursor-default"
+                  style={{ color: ativo ? a.accentColor : 'rgba(255,255,255,0.25)' }}>
+                  {a.nome}
+                </button>
+                <div className="relative h-6 sm:flex-1">
+                  <button type="button" onClick={() => irPara(a.slug)} disabled={!ativo}
+                    aria-label={`${a.nome}, ${ini} a ${fim ?? 'hoje'}`}
+                    title={`${a.nome} · ${ini}–${fim ?? 'hoje'}`}
+                    className="absolute top-1 h-4 rounded-full transition-all hover:brightness-125 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white disabled:cursor-default"
+                    style={{
+                      left: `${pct(ini)}%`, width: `${Math.max(pct(ate) - pct(ini), 1.5)}%`,
+                      background: ativo ? `linear-gradient(90deg, ${a.accentColor}cc, ${a.accentColor}66)` : 'rgba(255,255,255,0.08)',
+                      boxShadow: ativo ? `0 0 14px ${a.accentColor}40` : 'none',
+                    }} />
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    </div>
+  );
+}
+
+// ─── Card de perfil individual ───────────────────────────────────────────────
+function CardPerfil({ a }: { a: Autor }) {
+  const era = eraDe(a);
+  return (
+    <Link
+      to={`/biblioteca/autores/${a.slug}`}
+      id={`autor-${a.slug}`}
+      className="group h-full flex flex-col rounded-3xl overflow-hidden border border-white/10 hover:border-white/25 hover:-translate-y-1 hover:shadow-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 transition-all duration-300 scroll-mt-40"
+      style={{ background: a.gradHero, outlineColor: a.accentColor }}
+    >
+      {/* retrato */}
+      <div className="relative h-56 sm:h-64 overflow-hidden">
+        <div className="absolute inset-0 transition-transform duration-700 group-hover:scale-[1.04]">
+          {a.foto ? (
+            <FotoComFallback src={a.foto} alt={`Retrato de ${a.nome}`} accentColor={a.accentColor} IconFigura={a.IconFigura} />
+          ) : (
+            <div className="w-full h-full flex items-center justify-center p-12"><a.IconFigura color={a.accentColor} /></div>
+          )}
+        </div>
+        <div className="absolute inset-0 pointer-events-none" style={{ background: 'linear-gradient(to top, rgba(6,6,26,0.95) 0%, rgba(6,6,26,0.35) 45%, transparent 75%)' }} />
+        <div className="absolute inset-0 pointer-events-none opacity-25 group-hover:opacity-40 transition-opacity duration-500"
+          style={{ background: `radial-gradient(ellipse at top right, ${a.gradOrb1} 0%, transparent 60%)` }} />
+
+        <span className="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-black uppercase tracking-wider backdrop-blur-md"
+          style={{ color: '#fff', background: 'rgba(0,0,0,0.45)', border: '1px solid rgba(255,255,255,0.15)' }}>
+          {ROTULO_ERA[era]}
+        </span>
+
+        <div className="absolute bottom-0 left-0 right-0 p-5">
+          <p className="text-xs font-black tabular-nums mb-1" style={{ color: a.accentColor }}>{a.datas}</p>
+          <h3 className="text-white font-black text-2xl leading-tight">{a.nome}</h3>
+        </div>
+      </div>
+
+      {/* conteúdo */}
+      <div className="flex-1 flex flex-col p-5 sm:p-6 gap-4">
+        <div className="flex items-start gap-2">
+          <span className="shrink-0 inline-flex items-center gap-1.5 text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-full"
+            style={{ color: a.accentColor, background: a.accentColor + '18', border: `1px solid ${a.accentColor}33` }}>
+            <User className="w-3 h-3" />
+            {a.area}
+          </span>
+        </div>
+
+        <p className="text-sm font-bold leading-snug" style={{ color: a.accentColor + 'dd' }}>{a.subtitulo}</p>
+
+        <p className="text-white/70 text-sm leading-relaxed line-clamp-4">{a.descricao}</p>
+
+        <blockquote className="rounded-xl border-l-[3px] px-4 py-3 text-[13px] italic leading-relaxed"
+          style={{ borderColor: a.accentColor, background: a.accentColor + '0f', color: 'rgba(255,255,255,0.80)' }}>
+          <span className="line-clamp-3">{a.destaque}</span>
+        </blockquote>
+
+        <div className="mt-auto pt-4 border-t border-white/[0.07] flex items-end justify-between gap-3">
+          <div className="flex flex-wrap gap-1.5">
+            {a.tags.slice(0, 3).map(t => (
+              <span key={t} className="px-2 py-0.5 rounded-md text-[10px] font-semibold text-white/55 bg-white/[0.05]">{t}</span>
+            ))}
+          </div>
+          <span className="shrink-0 inline-flex items-center gap-1.5 text-xs font-black transition-all duration-200 group-hover:gap-2.5"
+            style={{ color: a.accentColor }}>
+            Ver perfil <ArrowRight className="w-4 h-4" />
+          </span>
+        </div>
+      </div>
+    </Link>
+  );
+}
+
+// ─── Card de coleção (estudo com vários autores) ─────────────────────────────
+function CardColecao({ a }: { a: Autor }) {
+  return (
+    <Link
+      to={`/biblioteca/autores/${a.slug}`}
+      id={`autor-${a.slug}`}
+      className="group h-full flex flex-col sm:flex-row gap-5 rounded-3xl p-5 sm:p-6 border border-white/10 hover:border-white/25 hover:-translate-y-1 hover:shadow-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 transition-all duration-300 scroll-mt-40"
+      style={{ background: a.gradHero, outlineColor: a.accentColor }}
+    >
+      <div className="shrink-0 w-20 h-20 rounded-2xl p-3 transition-transform duration-500 group-hover:scale-105"
+        style={{ background: a.accentColor + '14', border: `1px solid ${a.accentColor}33` }}>
+        <a.IconFigura color={a.accentColor} />
+      </div>
+      <div className="flex-1 min-w-0 flex flex-col">
+        <div className="flex flex-wrap items-center gap-2 mb-2">
+          <span className="text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-full"
+            style={{ color: a.accentColor, background: a.accentColor + '18', border: `1px solid ${a.accentColor}33` }}>
+            {a.area}
+          </span>
+          <span className="text-[11px] font-bold text-white/45 tabular-nums">{a.datas}</span>
+        </div>
+        <h3 className="text-white font-black text-lg sm:text-xl leading-tight mb-1">{a.nome}</h3>
+        <p className="text-xs font-bold mb-2" style={{ color: a.accentColor + 'cc' }}>{a.subtitulo}</p>
+        <p className="text-white/65 text-sm leading-relaxed line-clamp-3 mb-4">{a.descricao}</p>
+        <span className="mt-auto inline-flex items-center gap-1.5 text-xs font-black transition-all duration-200 group-hover:gap-2.5"
+          style={{ color: a.accentColor }}>
+          Abrir coleção <ArrowRight className="w-4 h-4" />
+        </span>
+      </div>
+    </Link>
+  );
+}
+
+function TituloSecao({ icone: Icone, titulo, desc, total }: {
+  icone: typeof Layers; titulo: string; desc: string; total: number;
+}) {
+  return (
+    <div className="flex items-start gap-3 mb-5">
+      <div className="shrink-0 w-9 h-9 rounded-xl flex items-center justify-center bg-[#2dd4bf]/10 border border-[#2dd4bf]/25">
+        <Icone className="w-4 h-4 text-[#2dd4bf]" />
+      </div>
+      <div>
+        <h2 className="text-white font-black text-lg sm:text-xl leading-tight">
+          {titulo} <span className="text-white/35 font-bold text-sm tabular-nums">({total})</span>
+        </h2>
+        <p className="text-white/50 text-xs sm:text-sm mt-0.5">{desc}</p>
+      </div>
+    </div>
+  );
+}
 
 export default function BibliotecaAutoresPage() {
   const [busca, setBusca] = React.useState('');
+  const [era, setEra] = React.useState<Era>('todos');
   const inputRef = React.useRef<HTMLInputElement>(null);
 
   // Atalho "/" foca a busca
@@ -339,43 +593,86 @@ export default function BibliotecaAutoresPage() {
   }, []);
 
   const termos = normalizar(busca).split(/\s+/).filter(Boolean);
-  const filtrados = AUTORES.filter((_, i) => termos.every(t => INDICE_BUSCA[i].includes(t)));
+  const passa = (a: Autor) =>
+    (era === 'todos' || eraDe(a) === era) &&
+    termos.every(t => INDICE_BUSCA.get(a.slug)!.includes(t));
+
+  const perfis = PERFIS.filter(passa);
+  const colecoes = COLS.filter(passa);
+  const total = perfis.length + colecoes.length;
+  const visiveis = new Set(perfis.map(a => a.slug));
+  const filtrando = busca !== '' || era !== 'todos';
+  const contagem = (id: Era) => id === 'todos' ? AUTORES.length : AUTORES.filter(a => eraDe(a) === id).length;
+  const limpar = () => { setBusca(''); setEra('todos'); };
 
   return (
     <div className="min-h-screen relative">
       <Navbar />
 
       <section className="pt-24 sm:pt-32 pb-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-6xl mx-auto">
 
           {/* Breadcrumb */}
-          <motion.div
-            initial={{ opacity: 0, x: -10 }}
-            animate={{ opacity: 1, x: 0 }}
-            className="flex items-center gap-2 mb-10 text-[10px] font-black uppercase tracking-widest text-white/30"
-          >
-            <Link to="/biblioteca" className="hover:text-brand-blue transition-colors">Biblioteca</Link>
+          <motion.nav aria-label="Trilha" initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }}
+            className="flex items-center gap-2 mb-8 text-[11px] font-black uppercase tracking-widest text-white/35">
+            <Link to="/biblioteca" className="hover:text-[#2dd4bf] transition-colors">Biblioteca</Link>
             <ChevronRight className="w-3 h-3" />
-            <span className="text-white/75">Autores-Teologos-Pastores-Pregadores-Escritores</span>
-          </motion.div>
+            <span className="text-white/75">Autores</span>
+          </motion.nav>
 
           {/* Header */}
-          <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} className="mb-10">
-            <p className="text-[10px] font-black tracking-[0.35em] uppercase text-[#2dd4bf] mb-3">
-              Perfis Teológicos
-            </p>
-            <h1 className="font-display font-black text-3xl sm:text-4xl text-white leading-tight mb-3">
-              Autores-Teologos-Pastores-Pregadores-Escritores
-            </h1>
-            <p className="text-white/65 text-sm sm:text-base max-w-lg leading-relaxed">
-              Perfis de teólogos, pregadores e escritores que moldaram a fé cristã — suas vidas, métodos e contribuições para a história da Igreja.
-            </p>
+          <motion.header initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} className="mb-10 grid lg:grid-cols-[1fr_auto] gap-8 items-end">
+            <div>
+              <p className="text-[11px] font-black tracking-[0.3em] uppercase text-[#2dd4bf] mb-3">Perfis Teológicos</p>
+              <h1 className="font-black text-4xl sm:text-5xl text-white leading-[1.05] mb-4">
+                Autores
+                <span className="block text-xl sm:text-2xl font-bold text-white/55 mt-2">Teólogos · Pastores · Pregadores · Escritores</span>
+              </h1>
+              <p className="text-white/65 text-base sm:text-lg max-w-2xl leading-relaxed">
+                Vidas, métodos e contribuições de quem moldou a fé cristã. Cada perfil explica as ideias centrais do autor com diagramas, citações e notas para aprofundar.
+              </p>
+            </div>
+            <dl className="grid grid-cols-3 gap-3 lg:w-[360px]">
+              {[
+                { n: PERFIS.length, l: 'Perfis' },
+                { n: COLS.length, l: 'Coleções' },
+                { n: '4', l: 'Séculos' },
+              ].map(s => (
+                <div key={s.l} className="rounded-2xl border border-white/10 bg-white/[0.03] px-3 py-4 text-center">
+                  <dt className="sr-only">{s.l}</dt>
+                  <dd className="text-2xl sm:text-3xl font-black text-white tabular-nums">{s.n}</dd>
+                  <p className="text-[10px] font-black uppercase tracking-widest text-white/45 mt-1">{s.l}</p>
+                </div>
+              ))}
+            </dl>
+          </motion.header>
+
+          {/* Como usar */}
+          <motion.ol initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.05 }}
+            className="grid sm:grid-cols-3 gap-3 mb-10">
+            {[
+              { icone: Clock, t: 'Situe no tempo', d: 'Use a linha do tempo para ver a época de cada autor.' },
+              { icone: Filter, t: 'Filtre ou busque', d: 'Escolha um século ou procure por tema, obra ou tag.' },
+              { icone: BookOpen, t: 'Estude o perfil', d: 'Cada página traz eixos do pensamento, obras e notas.' },
+            ].map((p, i) => (
+              <li key={p.t} className="flex items-start gap-3 rounded-2xl border border-white/[0.08] bg-white/[0.02] p-4">
+                <span className="shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-xs font-black text-[#06061a] bg-[#2dd4bf]">{i + 1}</span>
+                <div>
+                  <p className="text-white font-bold text-sm flex items-center gap-1.5"><p.icone className="w-3.5 h-3.5 text-[#2dd4bf]" />{p.t}</p>
+                  <p className="text-white/55 text-xs leading-relaxed mt-0.5">{p.d}</p>
+                </div>
+              </li>
+            ))}
+          </motion.ol>
+
+          {/* Linha do tempo */}
+          <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="mb-10">
+            <LinhaDoTempo visiveis={visiveis} />
           </motion.div>
 
-          {/* Busca */}
-          <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.05 }}
-            className="sticky top-20 z-30 mb-8">
-            <div className="relative rounded-2xl border border-white/12 bg-[#06061a]/85 backdrop-blur-md focus-within:border-[#2dd4bf]/60 transition-colors">
+          {/* Busca + filtros (a barra de busca fica fixa ao rolar) */}
+          <div className="sticky top-20 z-30 -mx-4 px-4 sm:mx-0 sm:px-0 py-2 mb-3">
+            <div className="relative rounded-2xl border border-white/12 bg-[#06061a]/90 backdrop-blur-md shadow-lg shadow-black/30 focus-within:border-[#2dd4bf]/60 transition-colors">
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-white/40 pointer-events-none" />
               <input
                 ref={inputRef}
@@ -383,14 +680,14 @@ export default function BibliotecaAutoresPage() {
                 value={busca}
                 onChange={e => setBusca(e.target.value)}
                 onKeyDown={e => { if (e.key === 'Escape') setBusca(''); }}
-                placeholder="Buscar autor, época, tema ou tag… (ex.: Westminster, escolástica, 1600)"
+                placeholder="Buscar autor, tema, obra ou tag…"
                 aria-label="Buscar autores"
-                className="w-full bg-transparent pl-11 pr-24 py-3.5 text-sm sm:text-base text-white placeholder:text-white/35 outline-none [&::-webkit-search-cancel-button]:hidden"
+                className="w-full bg-transparent pl-11 pr-14 py-3.5 text-base text-white placeholder:text-white/35 outline-none [&::-webkit-search-cancel-button]:hidden"
               />
-              <div className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center gap-2">
+              <div className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center">
                 {busca ? (
                   <button type="button" onClick={() => { setBusca(''); inputRef.current?.focus(); }}
-                    aria-label="Limpar busca" className="p-1 rounded-md text-white/50 hover:text-white hover:bg-white/10 transition-colors">
+                    aria-label="Limpar busca" className="p-2 rounded-lg text-white/50 hover:text-white hover:bg-white/10 transition-colors">
                     <X className="w-4 h-4" />
                   </button>
                 ) : (
@@ -398,152 +695,84 @@ export default function BibliotecaAutoresPage() {
                 )}
               </div>
             </div>
-
-            {/* atalhos por nome */}
-            <div className="flex flex-wrap gap-1.5 mt-3">
-              {AUTORES.map(a => {
-                const ativo = filtrados.length === 1 && filtrados[0].slug === a.slug;
-                return (
-                  <button key={a.slug} type="button" onClick={() => setBusca(ativo ? '' : a.nome)}
-                    className="px-2.5 py-1 rounded-full text-[9px] font-black uppercase tracking-widest border transition-colors"
-                    style={ativo
-                      ? { color: a.accentColor, borderColor: a.accentColor + '80', background: a.accentColor + '18' }
-                      : { color: 'rgba(255,255,255,0.55)', borderColor: 'rgba(255,255,255,0.10)' }}>
-                    {a.slug === 'batistas-presbiterianos' ? 'Batistas & Presbiterianos' : a.nome}
-                  </button>
-                );
-              })}
-            </div>
-
-            {busca && (
-              <p className="mt-3 text-[11px] font-bold text-white/45">
-                {filtrados.length} {filtrados.length === 1 ? 'resultado' : 'resultados'} para “{busca}”
-              </p>
-            )}
-          </motion.div>
-
-          {/* Cards */}
-          <div className="flex flex-col gap-6">
-            {filtrados.length === 0 && (
-              <div className="rounded-2xl border border-dashed border-white/12 p-10 text-center">
-                <p className="text-white/70 text-sm mb-3">Nenhum autor encontrado para “{busca}”.</p>
-                <button type="button" onClick={() => setBusca('')}
-                  className="text-[10px] font-black uppercase tracking-widest text-[#2dd4bf] hover:text-white transition-colors">
-                  Limpar busca
-                </button>
-              </div>
-            )}
-            {filtrados.map((a, i) => (
-              <motion.div
-                key={a.slug}
-                initial={{ opacity: 0, y: 24 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: busca ? 0 : i * 0.12 }}
-              >
-                <Link
-                  to={`/biblioteca/autores/${a.slug}`}
-                  className="group block rounded-3xl overflow-hidden border border-white/10 hover:border-white/25 hover:shadow-2xl hover:scale-[1.007] active:scale-[0.998] transition-all duration-300"
-                  style={{ background: a.gradHero }}
-                >
-                  <div className="grid grid-cols-1 sm:grid-cols-[200px_1fr]">
-
-                    {/* Painel visual esquerdo — foto */}
-                    <div
-                      className="relative overflow-hidden min-h-[220px] sm:min-h-0"
-                      style={{ borderRight: '1px solid rgba(255,255,255,0.07)', width: 'clamp(160px,22vw,220px)', flexShrink: 0 }}
-                    >
-                      {/* overlay gradiente para fundir com o fundo */}
-                      <div className="absolute inset-0 z-10 pointer-events-none" style={{
-                        background: `linear-gradient(to right, transparent 60%, rgba(0,16,14,0.70) 100%), linear-gradient(to top, rgba(0,16,14,0.75) 0%, transparent 40%)`,
-                      }} />
-                      {/* glow accent no topo */}
-                      <div className="absolute inset-0 z-10 pointer-events-none opacity-20 group-hover:opacity-30 transition-opacity duration-500"
-                        style={{ background: `radial-gradient(ellipse at top center, ${a.gradOrb1} 0%, transparent 65%)` }} />
-
-                      {a.foto ? (
-                        <FotoComFallback
-                          src={a.foto}
-                          alt={`Retrato de ${a.nome}`}
-                          accentColor={a.accentColor}
-                          IconFigura={a.IconFigura}
-                        />
-                      ) : (
-                        <div className="w-full h-full flex items-center justify-center" style={{ minHeight: 220 }}>
-                          <a.IconFigura color={a.accentColor} />
-                        </div>
-                      )}
-
-                      {/* badge datas sobre a foto */}
-                      <div className="absolute bottom-3 left-0 right-0 z-20 flex justify-center">
-                        <div className="px-3 py-1.5 rounded-full font-black text-[10px] tracking-widest backdrop-blur-sm"
-                          style={{ color: a.accentColor, background: 'rgba(0,0,0,0.55)', border: `1px solid ${a.accentColor}40` }}>
-                          {a.datas}
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Conteúdo direito */}
-                    <div className="flex flex-col justify-between p-6 sm:p-8 gap-4">
-                      <div>
-                        {/* badges */}
-                        <div className="flex flex-wrap gap-2 mb-4">
-                          <span className="inline-flex items-center gap-1.5 text-[8px] font-black uppercase tracking-widest px-2.5 py-1 rounded-full"
-                            style={{ color: a.accentColor, background: a.accentColor + '15', border: `1px solid ${a.accentColor}28` }}>
-                            <User className="w-2.5 h-2.5" />
-                            {a.area}
-                          </span>
-                        </div>
-
-                        {/* nome */}
-                        <p className="text-[10px] font-black tracking-[0.28em] uppercase mb-1"
-                          style={{ color: a.accentColor + 'aa' }}>{a.subtitulo}</p>
-                        <h2 className="font-display font-black text-xl sm:text-2xl text-white leading-tight mb-3">
-                          {a.nome}
-                        </h2>
-
-                        {/* descrição */}
-                        <p className="text-white/72 text-sm leading-relaxed mb-4 line-clamp-3">
-                          {a.descricao}
-                        </p>
-
-                        {/* destaque */}
-                        <div className="rounded-xl border-l-4 px-4 py-3"
-                          style={{ borderColor: a.accentColor, background: a.accentColor + '0d' }}>
-                          <p className="text-sm font-bold italic leading-relaxed" style={{ color: a.accentColor + 'cc' }}>
-                            {a.destaque}
-                          </p>
-                        </div>
-                      </div>
-
-                      {/* tags + CTA */}
-                      <div className="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-white/6">
-                        <div className="flex flex-wrap gap-1.5">
-                          {a.tags.map(t => (
-                            <span key={t} className="px-2.5 py-1 rounded-full text-[8px] font-black uppercase tracking-widest text-white/55 border border-white/8">
-                              {t}
-                            </span>
-                          ))}
-                        </div>
-                        <span className="inline-flex items-center gap-1.5 text-[10px] font-black uppercase tracking-widest transition-all duration-200 group-hover:gap-3"
-                          style={{ color: a.accentColor }}>
-                          <BookOpen className="w-3.5 h-3.5" strokeWidth={2} />
-                          Ver perfil
-                          <ExternalLink className="w-3 h-3 -translate-x-1 group-hover:translate-x-0 transition-transform duration-200" />
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              </motion.div>
-            ))}
           </div>
 
+          <div role="tablist" aria-label="Filtrar por época"
+            className="flex gap-2 overflow-x-auto pb-2 mb-2 -mx-4 px-4 sm:mx-0 sm:px-0 sm:flex-wrap [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+            {ERAS.map(e => {
+              const ativo = era === e.id;
+              return (
+                <button key={e.id} type="button" role="tab" aria-selected={ativo} title={e.desc}
+                  onClick={() => setEra(e.id)}
+                  className={`shrink-0 inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold border transition-all ${
+                    ativo ? 'bg-[#2dd4bf] text-[#06061a] border-[#2dd4bf]' : 'text-white/65 border-white/12 hover:border-white/30 hover:text-white'
+                  }`}>
+                  {e.label}
+                  <span className={`tabular-nums text-[10px] px-1.5 rounded-full ${ativo ? 'bg-black/15' : 'bg-white/10'}`}>{contagem(e.id)}</span>
+                </button>
+              );
+            })}
+          </div>
+
+          <div className="flex items-center justify-between gap-3 mb-8 min-h-[24px]" aria-live="polite">
+            <p className="text-xs font-semibold text-white/45">
+              {filtrando
+                ? <>{total} {total === 1 ? 'resultado' : 'resultados'}{busca && <> para “<span className="text-white/75">{busca}</span>”</>}</>
+                : <>Ordenados cronologicamente, do mais antigo ao mais recente.</>}
+            </p>
+            {filtrando && (
+              <button type="button" onClick={limpar}
+                className="text-xs font-black text-[#2dd4bf] hover:text-white transition-colors">
+                Limpar filtros
+              </button>
+            )}
+          </div>
+
+          {total === 0 && (
+            <div className="rounded-3xl border border-dashed border-white/12 p-10 text-center">
+              <p className="text-white/70 text-sm mb-3">Nenhum autor encontrado{busca && <> para “{busca}”</>}.</p>
+              <button type="button" onClick={limpar}
+                className="text-xs font-black uppercase tracking-widest text-[#2dd4bf] hover:text-white transition-colors">
+                Limpar filtros
+              </button>
+            </div>
+          )}
+
+          {/* Perfis individuais */}
+          {perfis.length > 0 && (
+            <section className="mb-14">
+              <TituloSecao icone={User} titulo="Perfis de autores" desc="Um autor por página: vida, método e contribuições." total={perfis.length} />
+              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 sm:gap-6">
+                {perfis.map((a, i) => (
+                  <motion.div key={a.slug} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: '-40px' }} transition={{ delay: (i % 3) * 0.06 }}>
+                    <CardPerfil a={a} />
+                  </motion.div>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* Coleções */}
+          {colecoes.length > 0 && (
+            <section className="mb-6">
+              <TituloSecao icone={Layers} titulo="Coleções e estudos comparativos" desc="Vários autores lado a lado, organizados por tradição e época." total={colecoes.length} />
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-6">
+                {colecoes.map(a => (
+                  <motion.div key={a.slug} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-40px' }}>
+                    <CardColecao a={a} />
+                  </motion.div>
+                ))}
+              </div>
+            </section>
+          )}
+
           {/* Voltar */}
-          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }} className="mt-12">
+          <div className="mt-12">
             <Link to="/biblioteca" className="inline-flex items-center gap-2 text-white/50 hover:text-white text-xs font-black uppercase tracking-widest transition-colors">
               ← Voltar para a Biblioteca
             </Link>
-          </motion.div>
+          </div>
 
         </div>
       </section>

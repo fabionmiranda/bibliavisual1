@@ -145,8 +145,114 @@ function estacaoDeHoje(dia: number) {
 // ─── Conteúdo expandido de um dia ────────────────────────────────────────────
 // ─── Animações por dia (YouTube) ──────────────────────────────────────────────
 // Aceita: youtube.com/watch?v=ID, youtu.be/ID, youtube.com/shorts/ID, youtube.com/embed/ID ou só o ID.
+// O vídeo aparece como botão "Assistir no YouTube" ao lado do texto bíblico.
+// Dia com '' → mostra "Vídeo em breve" nesse lugar; basta colar o link depois.
 const VIDEOS_FAMILIAR: Record<number, string> = {
+  // Semana 40
+  274: '', // 1 Timóteo 6
+  275: '', // 2 Timóteo 1
+  276: '', // 2 Timóteo 2
+  277: '', // 2 Timóteo 3
+  278: '', // 2 Timóteo 4
+  279: '', // Aplicação da Semana 40
+  280: '', // Mesa da Aliança — Semana 40
+  // Semana 41
+  281: '', // Tito 1
+  282: '', // Tito 2
+  283: '', // Tito 3
+  284: '', // Filemom
+  285: '', // Hebreus 1
+  286: '', // Aplicação da Semana 41
+  287: '', // Mesa da Aliança — Semana 41
+  // Semana 42
+  288: '', // Hebreus 2
+  289: '', // Hebreus 3
+  290: '', // Hebreus 4
+  291: '', // Hebreus 5
+  292: '', // Hebreus 6
+  293: '', // Aplicação da Semana 42
+  294: '', // Mesa da Aliança — Semana 42
+  // Semana 43
+  295: '', // Hebreus 7
+  296: '', // Hebreus 8
+  297: '', // Hebreus 9
+  298: '', // Hebreus 10
+  299: '', // Hebreus 11
+  300: '', // Aplicação da Semana 43 — Hebreus 7–11
+  301: '', // Mesa da Aliança — Semana 43
+  // Semana 44
   302: 'https://www.youtube.com/watch?v=QWdIpjZaK4I', // Hebreus 12
+  303: '', // Hebreus 13
+  304: '', // Tiago 1
+  305: '', // Tiago 2
+  306: '', // Tiago 3
+  307: '', // Aplicação da Semana 44
+  308: '', // Mesa da Aliança — Semana 44
+  // Semana 45
+  309: '', // Tiago 4
+  310: '', // Tiago 5
+  311: '', // 1 Pedro 1
+  312: '', // 1 Pedro 2
+  313: '', // 1 Pedro 3
+  314: '', // Aplicação da Semana 45
+  315: '', // Mesa da Aliança — Semana 45
+  // Semana 46
+  316: '', // 1 Pedro 4
+  317: '', // 1 Pedro 5
+  318: '', // 2 Pedro 1
+  319: '', // 2 Pedro 2
+  320: '', // 2 Pedro 3
+  321: '', // Aplicação da Semana 46
+  322: '', // Mesa da Aliança — Semana 46
+  // Semana 47
+  323: '', // 1 João 1
+  324: '', // 1 João 2
+  325: '', // 1 João 3
+  326: '', // 1 João 4
+  327: '', // 1 João 5
+  328: '', // Aplicação da Semana 47
+  329: '', // Mesa da Aliança — Semana 47
+  // Semana 48
+  330: '', // 2 João
+  331: '', // 3 João
+  332: '', // Judas
+  333: '', // Apocalipse 1
+  334: '', // Apocalipse 2
+  335: '', // Aplicação da Semana 48
+  336: '', // Mesa da Aliança — Semana 48
+  // Semana 49
+  337: '', // Apocalipse 3
+  338: '', // Apocalipse 4
+  339: '', // Apocalipse 5
+  340: '', // Apocalipse 6
+  341: '', // Apocalipse 7
+  342: '', // Aplicação da Semana 49
+  343: '', // Mesa da Aliança — Semana 49
+  // Semana 50
+  344: '', // Apocalipse 8
+  345: '', // Apocalipse 9
+  346: '', // Apocalipse 10
+  347: '', // Apocalipse 11
+  348: '', // Apocalipse 12
+  349: '', // Aplicação da Semana 50
+  350: '', // Mesa da Aliança — Semana 50
+  // Semana 51
+  351: '', // Apocalipse 13
+  352: '', // Apocalipse 14
+  353: '', // Apocalipse 15
+  354: '', // Apocalipse 16
+  355: '', // Apocalipse 17
+  356: '', // Aplicação da Semana 51
+  357: '', // Mesa da Aliança — Semana 51
+  // Semana 52
+  358: '', // Apocalipse 18
+  359: '', // Apocalipse 19
+  360: '', // Apocalipse 20
+  361: '', // Apocalipse 21
+  362: '', // Apocalipse 22
+  363: '', // Aplicação da Semana 52
+  364: '', // Mesa da Aliança — Semana 52
+  365: '', // Apocalipse 22
 };
 
 function youtubeId(url: string): string | null {
@@ -155,63 +261,239 @@ function youtubeId(url: string): string | null {
   return /^[\w-]{11}$/.test(url.trim()) ? url.trim() : null;
 }
 
-function VideoDia({ d, cor }: { d: DiaFamiliar; cor: string }) {
-  const [tocando, setTocando] = useState(false);
-  const url = VIDEOS_FAMILIAR[d.dia];
-  const id = url ? youtubeId(url) : null;
-  if (!id) return null;
-  const borda = cor.replace('1)', '0.30)');
+/* ─── texto com destaques ──────────────────────────────────────────────
+   Marcadores usados nos textos do devocional:
+   **texto**  verdade central      (dourado)
+   [[texto]]  citação bíblica      (azul-céu)
+   !!texto!!  alerta / pecado      (rosa)
+   ++texto++  aplicação prática    (verde)
+   \n\n       quebra de parágrafo                                          */
 
+const DESTAQUES = {
+  '**': { cor: 'rgba(251,191,36,1)',  bg: 'rgba(251,191,36,0.12)',  label: 'Verdade central' },
+  '[[': { cor: 'rgba(125,211,252,1)', bg: 'rgba(125,211,252,0.10)', label: 'Texto bíblico' },
+  '!!': { cor: 'rgba(251,113,133,1)', bg: 'rgba(251,113,133,0.10)', label: 'Alerta' },
+  '++': { cor: 'rgba(134,239,172,1)', bg: 'rgba(134,239,172,0.10)', label: 'Aplicação prática' },
+} as const;
+
+const RE_DESTAQUE = /(\*\*[^*]+\*\*|\[\[[^\]]+\]\]|!![^!]+!!|\+\+[^+]+\+\+)/;
+
+function temDestaques(d: DiaFamiliar) {
+  return [d.perguntaGancho, d.reflexaoTexto, d.perguntaGeradora, d.reflexaoHomem, d.reflexaoMulher,
+    d.reflexaoFilhos, d.compromissoPratico, d.oracaoAlianca, d.leituraComplementar]
+    .some(t => !!t && RE_DESTAQUE.test(t));
+}
+
+function TextoRico({ texto }: { texto: string }) {
+  const paragrafos = texto.split('\n\n');
   return (
-    <div style={{ borderRadius: 16, background: 'rgba(0,0,0,0.25)', border: `1px solid ${borda}`, padding: 'clamp(10px,2.5vw,16px)' }}>
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 10, marginBottom: 10, flexWrap: 'wrap' }}>
-        <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: cor }}>
-          🎬 Animação do Dia
-        </div>
-        <div style={{ fontSize: 12, color: 'rgba(200,200,255,0.55)' }}>
-          Assistam juntos antes da reflexão · {d.leitura}
-        </div>
-      </div>
-      <div style={{
-        position: 'relative', width: '100%', maxWidth: 820, margin: '0 auto', aspectRatio: '16 / 9',
-        borderRadius: 12, overflow: 'hidden', background: '#000', boxShadow: '0 10px 30px rgba(0,0,0,0.45)',
-      }}>
-        {tocando ? (
-          <iframe
-            src={`https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&modestbranding=1`}
-            title={`Animação — ${d.leitura}`}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-            allowFullScreen
-            style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 0 }}
-          />
-        ) : (
-          <button type="button" onClick={() => setTocando(true)} aria-label={`Assistir animação de ${d.leitura}`}
-            style={{ position: 'absolute', inset: 0, padding: 0, border: 0, cursor: 'pointer', background: '#000' }}>
-            <img src={`https://i.ytimg.com/vi/${id}/hqdefault.jpg`} alt="" loading="lazy"
-              style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.85 }} />
-            <span style={{
-              position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)',
-              width: 'clamp(52px,10vw,72px)', height: 'clamp(52px,10vw,72px)', borderRadius: '50%', background: cor,
-              display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 0 30px rgba(0,0,0,0.6)',
-            }}>
-              <span style={{ width: 0, height: 0, marginLeft: 5, borderTop: '11px solid transparent', borderBottom: '11px solid transparent', borderLeft: '18px solid #05071a' }} />
-            </span>
-          </button>
-        )}
-      </div>
+    <>
+      {paragrafos.map((par, pi) => (
+        <span key={pi} style={paragrafos.length > 1 ? { display: 'block', marginTop: pi ? 14 : 0 } : undefined}>
+          {par.split(RE_DESTAQUE).map((parte, i) => {
+            const chave = parte.slice(0, 2) as keyof typeof DESTAQUES;
+            if (i % 2 === 1 && DESTAQUES[chave]) {
+              const est = DESTAQUES[chave];
+              return (
+                <mark
+                  key={i}
+                  style={{
+                    background: est.bg, color: est.cor, fontWeight: 700,
+                    padding: '1px 3px', borderRadius: 4,
+                    boxDecorationBreak: 'clone', WebkitBoxDecorationBreak: 'clone',
+                    fontStyle: chave === '[[' ? 'italic' : 'inherit',
+                  }}
+                >
+                  {parte.slice(2, -2)}
+                </mark>
+              );
+            }
+            return <span key={i}>{parte}</span>;
+          })}
+        </span>
+      ))}
+    </>
+  );
+}
+
+function LegendaDestaques() {
+  return (
+    <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, alignItems: 'center' }}>
+      <span style={{ fontSize: 12, fontWeight: 900, letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(215,215,255,0.88)', marginRight: 4 }}>
+        Legenda
+      </span>
+      {Object.values(DESTAQUES).map(e => (
+        <span key={e.label} style={{ fontSize: 14, fontWeight: 700, color: e.cor, background: e.bg, padding: '3px 10px', borderRadius: 99, border: `1px solid ${e.cor.replace('1)', '0.30)')}` }}>
+          {e.label}
+        </span>
+      ))}
     </div>
+  );
+}
+
+/* "1Pe 3.8-9" → https://www.bibliaonline.com.br/ara/1pe/3/8
+   livros de um só capítulo: "Fm 15-19" → .../fm/1/15 */
+function refParaUrl(ref: string) {
+  const [livro, cv] = ref.split(' ');
+  const [cap, vers] = cv.includes('.') ? cv.split('.') : ['1', cv];
+  const minusculo = livro.toLowerCase();
+  // "Êx" → "ex"; "Jó" é exceção, pois "jo" é João na Bíblia Online
+  const slug = minusculo === 'jó' ? 'job' : minusculo.normalize('NFD').replace(/[̀-ͯ]/g, '');
+  return `https://www.bibliaonline.com.br/ara/${slug}/${cap}/${vers.split('-')[0]}`;
+}
+
+function TextoBiblicoLink({ t }: { t: NonNullable<DiaFamiliar['textoBiblico']> }) {
+  return (
+    <a
+      href={t.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{
+        display: 'flex', alignItems: 'center', gap: 14, padding: '14px 18px', borderRadius: 14, textDecoration: 'none',
+        background: 'linear-gradient(135deg, rgba(125,211,252,0.12), rgba(125,211,252,0.04))',
+        border: '1px solid rgba(125,211,252,0.35)',
+      }}
+    >
+      <span style={{ fontSize: 22, lineHeight: 1 }}>📜</span>
+      <span style={{ flex: 1, minWidth: 0 }}>
+        <span style={{ display: 'block', fontSize: 12, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(125,211,252,0.85)', marginBottom: 3 }}>
+          Leia primeiro o texto bíblico
+        </span>
+        <span style={{ display: 'block', fontSize: 18, fontWeight: 800, color: '#fff' }}>
+          {t.referencia} <span style={{ fontSize: 14, fontWeight: 700, color: 'rgba(125,211,252,0.9)', marginLeft: 6, padding: '2px 8px', borderRadius: 99, background: 'rgba(125,211,252,0.14)' }}>{t.versao}</span>
+        </span>
+      </span>
+      <span style={{ fontSize: 15, fontWeight: 800, color: 'rgba(125,211,252,1)', whiteSpace: 'nowrap' }}>Abrir ↗</span>
+    </a>
+  );
+}
+
+/* Atalho para o vídeo do dia no YouTube, ao lado do link do texto bíblico.
+   Dia com '' em VIDEOS_FAMILIAR mostra "Vídeo em breve"; dia ausente não mostra nada. */
+function VideoYoutubeLink({ d }: { d: DiaFamiliar }) {
+  const url = VIDEOS_FAMILIAR[d.dia];
+  if (url === undefined) return null;
+  const id = url ? youtubeId(url) : null;
+  const VERMELHO = 'rgba(248,113,113,1)';
+  const conteudo = (
+    <>
+      <span style={{ width: 34, height: 24, borderRadius: 7, background: id ? '#ff0033' : 'rgba(255,255,255,0.12)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+        <span style={{ width: 0, height: 0, marginLeft: 2, borderTop: '6px solid transparent', borderBottom: '6px solid transparent', borderLeft: `10px solid ${id ? '#fff' : 'rgba(255,255,255,0.45)'}` }} />
+      </span>
+      <span style={{ flex: 1, minWidth: 0 }}>
+        <span style={{ display: 'block', fontSize: 12, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: id ? VERMELHO : 'rgba(215,215,255,0.75)', marginBottom: 3 }}>
+          Vídeo do dia
+        </span>
+        <span style={{ display: 'block', fontSize: 18, fontWeight: 800, color: id ? '#fff' : 'rgba(230,228,255,0.80)' }}>
+          {id ? 'Assistir no YouTube' : 'Vídeo em breve'}
+        </span>
+      </span>
+      {id && <span style={{ fontSize: 15, fontWeight: 800, color: VERMELHO, whiteSpace: 'nowrap' }}>Abrir ↗</span>}
+    </>
+  );
+  const estilo = {
+    display: 'flex', alignItems: 'center', gap: 14, padding: '14px 18px', borderRadius: 14, textDecoration: 'none',
+    background: id ? 'linear-gradient(135deg, rgba(248,113,113,0.14), rgba(248,113,113,0.04))' : 'rgba(255,255,255,0.04)',
+    border: `1px ${id ? 'solid' : 'dashed'} ${id ? 'rgba(248,113,113,0.40)' : 'rgba(255,255,255,0.18)'}`,
+  } as const;
+  return id
+    ? <a href={`https://www.youtube.com/watch?v=${id}`} target="_blank" rel="noopener noreferrer" style={estilo} title={`Assistir a animação de ${d.leitura} no YouTube`}>{conteudo}</a>
+    : <div style={estilo} title="O link do vídeo será publicado em breve">{conteudo}</div>;
+}
+
+const COR_CONVERSA = 'rgba(251,146,60,1)';
+
+function ConversaATres({ itens, corTexto, fs }: { itens: NonNullable<DiaFamiliar['conversaATres']>; corTexto: string; fs: number }) {
+  const [aberto, setAberto] = useState<number | null>(null);
+  return (
+    <>
+      <div style={{ borderRadius: 14, background: 'rgba(251,146,60,0.07)', border: '1px solid rgba(251,146,60,0.28)', padding: '18px 20px' }}>
+        <div style={{ fontSize: 12, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: COR_CONVERSA, marginBottom: 6 }}>
+          👨‍👩‍👧 Conversa a Três
+        </div>
+        <p style={{ margin: '0 0 14px', fontSize: 15, color: 'rgba(230,228,255,0.92)' }}>
+          Pai, mãe e filhos — respondam juntos, cada um com suas palavras.
+        </p>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+          {itens.map((it, i) => (
+            <div key={i} style={{ display: 'flex', gap: 12, alignItems: 'flex-start' }}>
+              <span style={{ flexShrink: 0, width: 30, height: 30, borderRadius: 99, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 16, fontWeight: 900, color: COR_CONVERSA, background: 'rgba(251,146,60,0.18)' }}>
+                {i + 1}
+              </span>
+              <p style={{ margin: 0, fontSize: fs, color: corTexto, lineHeight: 1.8, textAlign: 'left' }}>
+                <TextoRico texto={it.pergunta} />
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div style={{ borderRadius: 14, border: '1px solid rgba(251,146,60,0.22)', overflow: 'hidden' }}>
+        <div style={{ padding: '14px 20px', background: 'rgba(251,146,60,0.06)' }}>
+          <div style={{ fontSize: 12, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: COR_CONVERSA }}>
+            📋 Gabarito da Conversa
+          </div>
+          <p style={{ margin: '4px 0 0', fontSize: 15, color: 'rgba(230,228,255,0.92)' }}>
+            Conversem primeiro — depois abram a resposta bíblica.
+          </p>
+        </div>
+        {itens.map((it, i) => (
+          <div key={i} style={{ borderTop: '1px solid rgba(251,146,60,0.15)' }}>
+            <button
+              onClick={() => setAberto(aberto === i ? null : i)}
+              aria-expanded={aberto === i}
+              style={{ width: '100%', display: 'flex', alignItems: 'center', gap: 10, padding: '12px 20px', background: aberto === i ? 'rgba(251,146,60,0.10)' : 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left' }}
+            >
+              <span style={{ fontSize: 15, fontWeight: 900, color: COR_CONVERSA }}>Resposta {i + 1}</span>
+              <span style={{ flex: 1 }} />
+              <span style={{ fontSize: 15, color: COR_CONVERSA, transform: aberto === i ? 'rotate(180deg)' : 'none', transition: 'transform .2s' }}>▾</span>
+            </button>
+            {aberto === i && (
+              <div style={{ padding: '4px 20px 18px' }}>
+                <p style={{ margin: 0, fontSize: fs, color: corTexto, lineHeight: 1.85, textAlign: 'left' }}>
+                  <TextoRico texto={it.resposta} />
+                </p>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginTop: 14 }}>
+                  {it.textos.map(t => (
+                    <a key={t} href={refParaUrl(t)} target="_blank" rel="noopener noreferrer"
+                      style={{ fontSize: 14, fontWeight: 700, color: 'rgba(125,211,252,1)', background: 'rgba(125,211,252,0.10)', border: '1px solid rgba(125,211,252,0.30)', padding: '3px 10px', borderRadius: 99, textDecoration: 'none' }}>
+                      {t} ↗
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </>
   );
 }
 
 function ConteudoDia({ d, cor }: { d: DiaFamiliar; cor: string }) {
   const borda = cor.replace('1)', '0.22)');
   const fundo = cor.replace('1)', '0.07)');
+  const rico = temDestaques(d);
+  // texto do devocional em alto contraste e tamanho confortável em todas as semanas
+  const corTexto = 'rgba(244,242,255,0.97)';
+  const fs15 = 17;
+  const fs16 = 18;
+  const alinhamento = 'left' as const;
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 20, paddingTop: 4 }}>
 
+      {(d.textoBiblico || VIDEOS_FAMILIAR[d.dia] !== undefined) && (
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(min(100%,260px),1fr))', gap: 12 }}>
+          {d.textoBiblico && <TextoBiblicoLink t={d.textoBiblico} />}
+          <VideoYoutubeLink d={d} />
+        </div>
+      )}
+
+      {rico && <LegendaDestaques />}
+
       {/* Subtema */}
       {d.subtema && (
-        <p style={{ margin: 0, fontSize: 14, color: cor.replace('1)', '0.75)'), fontStyle: 'italic', lineHeight: 1.65 }}>
+        <p style={{ margin: 0, fontSize: 16, color: cor.replace('1)', '0.95)'), fontStyle: 'italic', lineHeight: 1.65 }}>
           {d.subtema}
         </p>
       )}
@@ -219,26 +501,24 @@ function ConteudoDia({ d, cor }: { d: DiaFamiliar; cor: string }) {
       {/* Pergunta-gancho */}
       {d.perguntaGancho && (
         <div style={{ borderRadius: 14, background: fundo, border: `1px solid ${borda}`, padding: '18px 20px' }}>
-          <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: cor, marginBottom: 10 }}>
+          <div style={{ fontSize: 12, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: cor, marginBottom: 10 }}>
             Pergunta-gancho
           </div>
-          <p style={{ margin: 0, fontSize: 16, color: 'rgba(255,255,255,0.90)', lineHeight: 1.78, fontStyle: 'italic' }}>
-            "{d.perguntaGancho}"
+          <p style={{ margin: 0, fontSize: fs16, color: corTexto, textAlign: alinhamento, lineHeight: 1.78, fontStyle: 'italic' }}>
+            "<TextoRico texto={d.perguntaGancho} />"
           </p>
         </div>
       )}
 
-      {/* Animação do dia — antes da reflexão, para a família assistir junta */}
-      <VideoDia d={d} cor={cor} />
 
       {/* Reflexão */}
       {d.reflexaoTexto && (
         <div>
-          <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(200,200,255,0.50)', marginBottom: 12 }}>
+          <div style={{ fontSize: 12, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(215,215,255,0.88)', marginBottom: 12 }}>
             Reflexão do Texto
           </div>
-          <p style={{ margin: 0, fontSize: 16, color: 'rgba(220,215,255,0.88)', lineHeight: 1.95 }}>
-            {d.reflexaoTexto}
+          <p style={{ margin: 0, fontSize: fs16, color: corTexto, textAlign: alinhamento, lineHeight: 1.95 }}>
+            <TextoRico texto={d.reflexaoTexto} />
           </p>
         </div>
       )}
@@ -246,11 +526,11 @@ function ConteudoDia({ d, cor }: { d: DiaFamiliar; cor: string }) {
       {/* Pergunta geradora */}
       {d.perguntaGeradora && (
         <div style={{ borderLeft: `3px solid ${borda}`, paddingLeft: 18 }}>
-          <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(200,200,255,0.45)', marginBottom: 10 }}>
+          <div style={{ fontSize: 12, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(215,215,255,0.88)', marginBottom: 10 }}>
             Pergunta Geradora
           </div>
-          <p style={{ margin: 0, fontSize: 16, color: 'rgba(220,215,255,0.88)', lineHeight: 1.82, fontStyle: 'italic' }}>
-            {d.perguntaGeradora}
+          <p style={{ margin: 0, fontSize: fs16, color: corTexto, textAlign: alinhamento, lineHeight: 1.82, fontStyle: 'italic' }}>
+            <TextoRico texto={d.perguntaGeradora} />
           </p>
         </div>
       )}
@@ -260,18 +540,18 @@ function ConteudoDia({ d, cor }: { d: DiaFamiliar; cor: string }) {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(min(100%,240px),1fr))', gap: 12 }}>
           {d.reflexaoHomem && (
             <div style={{ borderRadius: 12, background: 'rgba(96,165,250,0.07)', border: '1px solid rgba(96,165,250,0.18)', padding: '16px 18px' }}>
-              <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(96,165,250,0.90)', marginBottom: 10 }}>
+              <div style={{ fontSize: 12, fontWeight: 900, letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(96,165,250,0.90)', marginBottom: 10 }}>
                 Para o Homem
               </div>
-              <p style={{ margin: 0, fontSize: 15, color: 'rgba(220,215,255,0.84)', lineHeight: 1.80 }}>{d.reflexaoHomem}</p>
+              <p style={{ margin: 0, fontSize: fs15, color: corTexto, textAlign: alinhamento, lineHeight: 1.80 }}><TextoRico texto={d.reflexaoHomem} /></p>
             </div>
           )}
           {d.reflexaoMulher && (
             <div style={{ borderRadius: 12, background: ROSA_BG, border: `1px solid ${ROSA_BORDA}`, padding: '16px 18px' }}>
-              <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.2em', textTransform: 'uppercase', color: ROSA, marginBottom: 10 }}>
+              <div style={{ fontSize: 12, fontWeight: 900, letterSpacing: '0.2em', textTransform: 'uppercase', color: ROSA, marginBottom: 10 }}>
                 Para a Mulher
               </div>
-              <p style={{ margin: 0, fontSize: 15, color: 'rgba(220,215,255,0.84)', lineHeight: 1.80 }}>{d.reflexaoMulher}</p>
+              <p style={{ margin: 0, fontSize: fs15, color: corTexto, textAlign: alinhamento, lineHeight: 1.80 }}><TextoRico texto={d.reflexaoMulher} /></p>
             </div>
           )}
         </div>
@@ -280,42 +560,69 @@ function ConteudoDia({ d, cor }: { d: DiaFamiliar; cor: string }) {
       {/* Filhos */}
       {d.reflexaoFilhos && (
         <div style={{ borderRadius: 12, background: 'rgba(167,139,250,0.07)', border: '1px solid rgba(167,139,250,0.18)', padding: '16px 18px' }}>
-          <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(167,139,250,0.90)', marginBottom: 10 }}>
+          <div style={{ fontSize: 12, fontWeight: 900, letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(167,139,250,0.90)', marginBottom: 10 }}>
             Para os Filhos
           </div>
-          <p style={{ margin: 0, fontSize: 15, color: 'rgba(220,215,255,0.84)', lineHeight: 1.80 }}>{d.reflexaoFilhos}</p>
+          <p style={{ margin: 0, fontSize: fs15, color: corTexto, textAlign: alinhamento, lineHeight: 1.80 }}><TextoRico texto={d.reflexaoFilhos} /></p>
         </div>
       )}
 
+      {/* Conversa a três + gabarito */}
+      {d.conversaATres && <ConversaATres itens={d.conversaATres} corTexto={corTexto} fs={fs15} />}
+
       {/* Leitura complementar */}
       {d.leituraComplementar && (
-        <div style={{ borderRadius: 12, background: 'rgba(251,191,36,0.07)', border: '1px solid rgba(251,191,36,0.20)', padding: '14px 18px', display: 'flex', alignItems: 'center', gap: 12 }}>
-          <span style={{ fontSize: 18 }}>📖</span>
-          <div>
-            <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(251,191,36,0.90)', marginBottom: 4 }}>Leitura Complementar</div>
-            <p style={{ margin: 0, fontSize: 15, color: 'rgba(220,215,255,0.84)' }}>{d.leituraComplementar}</p>
+        <div style={{ borderRadius: 12, background: 'rgba(251,191,36,0.07)', border: '1px solid rgba(251,191,36,0.20)', padding: '14px 18px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+            <span style={{ fontSize: 18 }}>📖</span>
+            <div>
+              <div style={{ fontSize: 12, fontWeight: 900, letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(251,191,36,0.90)', marginBottom: 4 }}>Leitura Complementar</div>
+              <p style={{ margin: 0, fontSize: fs15, color: corTexto, textAlign: alinhamento }}><TextoRico texto={d.leituraComplementar} /></p>
+            </div>
           </div>
+          {d.leituraAutor && (
+            <div style={{ marginTop: 14, paddingTop: 14, borderTop: '1px solid rgba(251,191,36,0.18)' }}>
+              <div style={{ fontSize: 12, fontWeight: 900, letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(251,191,36,0.75)', marginBottom: 8 }}>
+                ✍️ Para aprofundar — autor recomendado
+              </div>
+              <p style={{ margin: 0, fontSize: fs15, fontWeight: 800, color: '#fff' }}>{d.leituraAutor.autor}</p>
+              <p style={{ margin: '2px 0 0', fontSize: 16, fontStyle: 'italic', color: 'rgba(251,191,36,0.95)' }}>
+                {d.leituraAutor.obra}
+                {d.leituraAutor.abnt && <sup style={{ fontStyle: 'normal', fontWeight: 800, marginLeft: 2 }}>1</sup>}
+              </p>
+              <p style={{ margin: '2px 0 10px', fontSize: 14, color: 'rgba(230,228,255,0.92)' }}>{d.leituraAutor.referencia}</p>
+              <p style={{ margin: 0, fontSize: fs15, color: corTexto, lineHeight: 1.8, textAlign: 'left' }}>
+                <TextoRico texto={d.leituraAutor.comentario} />
+              </p>
+              {d.leituraAutor.abnt && (
+                <p style={{ margin: '14px 0 0', paddingTop: 10, borderTop: '1px solid rgba(251,191,36,0.15)', fontSize: 14, lineHeight: 1.6, color: 'rgba(230,228,255,0.85)', textAlign: 'left' }}>
+                  <sup style={{ fontWeight: 800, color: 'rgba(251,191,36,0.95)', marginRight: 4 }}>1</sup>
+                  {d.leituraAutor.abnt.autores} <strong style={{ color: '#fff' }}>{d.leituraAutor.abnt.titulo}</strong>{d.leituraAutor.abnt.complemento}
+                </p>
+              )}
+            </div>
+          )}
         </div>
       )}
 
       {/* Compromisso */}
       {d.compromissoPratico && (
         <div style={{ borderRadius: 14, background: 'rgba(134,239,172,0.06)', border: '1px solid rgba(134,239,172,0.18)', padding: '18px 20px' }}>
-          <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(134,239,172,0.88)', marginBottom: 12 }}>
+          <div style={{ fontSize: 12, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(134,239,172,0.88)', marginBottom: 12 }}>
             ✅ Compromisso Prático
           </div>
-          <p style={{ margin: 0, fontSize: 15, color: 'rgba(220,215,255,0.85)', lineHeight: 1.85 }}>{d.compromissoPratico}</p>
+          <p style={{ margin: 0, fontSize: fs15, color: corTexto, textAlign: alinhamento, lineHeight: 1.85 }}><TextoRico texto={d.compromissoPratico} /></p>
         </div>
       )}
 
       {/* Oração */}
       {d.oracaoAlianca && (
         <div style={{ borderRadius: 14, background: fundo, border: `1px solid ${borda}`, padding: '20px 20px' }}>
-          <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: cor, marginBottom: 14 }}>
+          <div style={{ fontSize: 12, fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase', color: cor, marginBottom: 14 }}>
             🙏 Oração de Aliança
           </div>
-          <p style={{ margin: 0, fontSize: 15, color: 'rgba(220,215,255,0.85)', lineHeight: 2.0, fontStyle: 'italic' }}>
-            {d.oracaoAlianca}
+          <p style={{ margin: 0, fontSize: fs15, color: corTexto, textAlign: alinhamento, lineHeight: 2.0, fontStyle: 'italic' }}>
+            <TextoRico texto={d.oracaoAlianca} />
           </p>
         </div>
       )}
@@ -356,31 +663,31 @@ function CardHojeDia({ d, onScrollTo }: { d: DiaFamiliar; onScrollTo: () => void
           border: `1.5px solid rgba(${estConf.corRgb},0.30)`,
           display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 1,
         }}>
-          <span style={{ fontSize: 10, fontWeight: 900, color: estConf.cor, letterSpacing: '0.1em', textTransform: 'uppercase' }}>Dia</span>
+          <span style={{ fontSize: 12, fontWeight: 900, color: estConf.cor, letterSpacing: '0.1em', textTransform: 'uppercase' }}>Dia</span>
           <span style={{ fontSize: 26, fontWeight: 900, color: estConf.cor, lineHeight: 1 }}>{d.dia}</span>
         </div>
 
         <div style={{ flex: 1, minWidth: 0 }}>
           {/* Badges */}
           <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: 8, marginBottom: 10 }}>
-            <span style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: badge.cor, padding: '3px 12px', borderRadius: 99, background: badge.bg }}>
+            <span style={{ fontSize: 12, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: badge.cor, padding: '3px 12px', borderRadius: 99, background: badge.bg }}>
               {badge.label}
             </span>
-            <span style={{ fontSize: 11, fontWeight: 700, color: estConf.cor.replace('1)', '0.80)'), padding: '2px 10px', borderRadius: 99, background: `rgba(${estConf.corRgb},0.10)` }}>
+            <span style={{ fontSize: 13, fontWeight: 700, color: estConf.cor.replace('1)', '0.80)'), padding: '2px 10px', borderRadius: 99, background: `rgba(${estConf.corRgb},0.10)` }}>
               {estConf.icon} {estConf.label}
             </span>
           </div>
 
           {/* Data */}
-          <div style={{ fontSize: 11, color: 'rgba(200,200,255,0.50)', fontWeight: 600, marginBottom: 6 }}>
+          <div style={{ fontSize: 13, color: 'rgba(215,215,255,0.88)', fontWeight: 600, marginBottom: 6 }}>
             {diaParaDataCompleta(d.dia)} · Semana {d.semana}
           </div>
 
           {/* Tema */}
-          <h2 style={{ margin: '0 0 4px', fontSize: 'clamp(17px,2.8vw,22px)', fontWeight: 900, color: '#fff', lineHeight: 1.25 }}>
+          <h2 style={{ margin: '0 0 4px', fontSize: 'clamp(19px,3vw,24px)', fontWeight: 900, color: '#fff', lineHeight: 1.25 }}>
             {d.tema}
           </h2>
-          <div style={{ fontSize: 13, color: 'rgba(200,200,255,0.55)', fontWeight: 600 }}>
+          <div style={{ fontSize: 15, color: 'rgba(215,215,255,0.88)', fontWeight: 600 }}>
             {d.leitura}
           </div>
         </div>
@@ -389,10 +696,10 @@ function CardHojeDia({ d, onScrollTo }: { d: DiaFamiliar; onScrollTo: () => void
       {/* Barra de progresso */}
       <div style={{ padding: '0 clamp(20px,3vw,28px) 16px' }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 6 }}>
-          <span style={{ fontSize: 10, fontWeight: 700, color: 'rgba(200,200,255,0.40)', letterSpacing: '0.1em' }}>
+          <span style={{ fontSize: 12, fontWeight: 700, color: 'rgba(215,215,255,0.88)', letterSpacing: '0.1em' }}>
             Progresso anual
           </span>
-          <span style={{ fontSize: 11, fontWeight: 900, color: estConf.cor }}>
+          <span style={{ fontSize: 13, fontWeight: 900, color: estConf.cor }}>
             {progresso}% · Dia {d.dia} de 365
           </span>
         </div>
@@ -412,7 +719,7 @@ function CardHojeDia({ d, onScrollTo }: { d: DiaFamiliar; onScrollTo: () => void
           onClick={() => setAberto(v => !v)}
           style={{
             flex: 1, minWidth: 160,
-            padding: '12px 20px', borderRadius: 12, cursor: 'pointer', fontWeight: 800, fontSize: 14,
+            padding: '12px 20px', borderRadius: 12, cursor: 'pointer', fontWeight: 800, fontSize: 16,
             border: `1.5px solid rgba(${estConf.corRgb},0.40)`,
             background: aberto ? `rgba(${estConf.corRgb},0.14)` : 'transparent',
             color: estConf.cor,
@@ -424,9 +731,9 @@ function CardHojeDia({ d, onScrollTo }: { d: DiaFamiliar; onScrollTo: () => void
         <button
           onClick={onScrollTo}
           style={{
-            padding: '12px 20px', borderRadius: 12, cursor: 'pointer', fontWeight: 800, fontSize: 14,
+            padding: '12px 20px', borderRadius: 12, cursor: 'pointer', fontWeight: 800, fontSize: 16,
             background: 'none', border: `1px solid rgba(200,200,255,0.15)`,
-            color: 'rgba(200,200,255,0.55)',
+            color: 'rgba(215,215,255,0.88)',
             transition: 'all 0.2s',
           }}
         >
@@ -504,34 +811,34 @@ function CardDiaMini({
           border: `1.5px solid rgba(${corRgb},${isHoje ? '0.45' : '0.20'})`,
           display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
         }}>
-          <span style={{ fontSize: 15, fontWeight: 900, color: cor, lineHeight: 1 }}>{d.dia}</span>
+          <span style={{ fontSize: 17, fontWeight: 900, color: cor, lineHeight: 1 }}>{d.dia}</span>
         </div>
 
         <div style={{ flex: 1, minWidth: 0 }}>
           {/* Badges linha */}
           <div style={{ display: 'flex', alignItems: 'center', gap: 6, flexWrap: 'wrap', marginBottom: 5 }}>
             {isHoje && (
-              <span style={{ fontSize: 9, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: cor, padding: '2px 8px', borderRadius: 99, background: `rgba(${corRgb},0.14)`, border: `1px solid rgba(${corRgb},0.35)` }}>
+              <span style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: cor, padding: '2px 8px', borderRadius: 99, background: `rgba(${corRgb},0.14)`, border: `1px solid rgba(${corRgb},0.35)` }}>
                 Hoje
               </span>
             )}
-            <span style={{ fontSize: 9, fontWeight: 900, letterSpacing: '0.14em', textTransform: 'uppercase', color: badge.cor, padding: '2px 8px', borderRadius: 99, background: badge.bg }}>
+            <span style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.14em', textTransform: 'uppercase', color: badge.cor, padding: '2px 8px', borderRadius: 99, background: badge.bg }}>
               {badge.label}
             </span>
-            <span style={{ fontSize: 10, color: 'rgba(200,200,255,0.40)', fontWeight: 600 }}>
+            <span style={{ fontSize: 12, color: 'rgba(215,215,255,0.88)', fontWeight: 600 }}>
               {diaParaDataCurta(d.dia)}
             </span>
           </div>
-          <div style={{ fontSize: 'clamp(14px,2vw,16px)', fontWeight: 800, color: '#fff', lineHeight: 1.3, marginBottom: 2 }}>
+          <div style={{ fontSize: 'clamp(16px,2.2vw,18px)', fontWeight: 800, color: '#fff', lineHeight: 1.3, marginBottom: 2 }}>
             {d.tema}
           </div>
-          <div style={{ fontSize: 12, color: 'rgba(200,200,255,0.45)', fontWeight: 500 }}>
+          <div style={{ fontSize: 14, color: 'rgba(215,215,255,0.88)', fontWeight: 500 }}>
             {d.leitura}
           </div>
         </div>
 
         <div style={{
-          fontSize: 14, color: expanded ? cor : 'rgba(200,200,255,0.30)',
+          fontSize: 16, color: expanded ? cor : 'rgba(200,200,255,0.75)',
           flexShrink: 0, transition: 'transform 0.22s, color 0.22s',
           transform: expanded ? 'rotate(180deg)' : 'none',
         }}>
@@ -600,32 +907,32 @@ function BlocoSemana({
           background: `rgba(${corRgb},0.12)`,
           border: `1px solid rgba(${corRgb},0.25)`,
           display: 'flex', alignItems: 'center', justifyContent: 'center',
-          fontSize: 13, fontWeight: 900, color: cor,
+          fontSize: 15, fontWeight: 900, color: cor,
         }}>
           {sw.semana}
         </div>
 
         <div style={{ flex: 1, minWidth: 0 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap', marginBottom: 4 }}>
-            <span style={{ fontSize: 12, fontWeight: 900, color: cor }}>{sw.livros}</span>
+            <span style={{ fontSize: 14, fontWeight: 900, color: cor }}>{sw.livros}</span>
             {temHoje && (
-              <span style={{ fontSize: 9, fontWeight: 900, letterSpacing: '0.16em', textTransform: 'uppercase', color: cor, padding: '2px 8px', borderRadius: 99, background: `rgba(${corRgb},0.14)` }}>
+              <span style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.16em', textTransform: 'uppercase', color: cor, padding: '2px 8px', borderRadius: 99, background: `rgba(${corRgb},0.14)` }}>
                 Esta semana
               </span>
             )}
             {diaInicio && diaFim && (
-              <span style={{ fontSize: 10, color: 'rgba(200,200,255,0.38)', fontWeight: 600 }}>
+              <span style={{ fontSize: 12, color: 'rgba(215,215,255,0.88)', fontWeight: 600 }}>
                 {diaParaDataCurta(diaInicio)} – {diaParaDataCurta(diaFim)}
               </span>
             )}
           </div>
-          <div style={{ fontSize: 13, color: 'rgba(200,200,255,0.55)', fontStyle: 'italic', lineHeight: 1.4 }}>
+          <div style={{ fontSize: 15, color: 'rgba(215,215,255,0.88)', fontStyle: 'italic', lineHeight: 1.4 }}>
             {sw.tema}
           </div>
         </div>
 
         <div style={{
-          fontSize: 13, color: aberta ? cor : 'rgba(200,200,255,0.30)',
+          fontSize: 15, color: aberta ? cor : 'rgba(200,200,255,0.75)',
           flexShrink: 0, transition: 'transform 0.22s, color 0.22s',
           transform: aberta ? 'rotate(180deg)' : 'none',
         }}>
@@ -691,7 +998,7 @@ function PainelEstacao({
         <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 6 }}>
           <span style={{ fontSize: 24 }}>{cfg.icon}</span>
           <div>
-            <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase', color: cfg.cor.replace('1)', '0.70)'), marginBottom: 2 }}>
+            <div style={{ fontSize: 12, fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase', color: cfg.cor.replace('1)', '0.95)'), marginBottom: 2 }}>
               Estação {cfg.num}
             </div>
             <div style={{ fontSize: 'clamp(16px,2.5vw,20px)', fontWeight: 900, color: '#fff' }}>
@@ -699,7 +1006,7 @@ function PainelEstacao({
             </div>
           </div>
         </div>
-        <p style={{ margin: 0, fontSize: 13, color: 'rgba(200,200,255,0.50)', lineHeight: 1.6 }}>
+        <p style={{ margin: 0, fontSize: 15, color: 'rgba(215,215,255,0.88)', lineHeight: 1.6 }}>
           <em>{cfg.subtitulo}</em> · {cfg.descricao}
         </p>
       </div>
@@ -759,7 +1066,7 @@ export default function DevocionalFamiliarPage() {
           style={{ textAlign: 'center', marginBottom: 40 }}
         >
           <div style={{ fontSize: 'clamp(42px,7vw,60px)', marginBottom: 12, lineHeight: 1 }}>💑</div>
-          <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.36em', textTransform: 'uppercase', color: ROSA.replace('1)', '0.75)'), marginBottom: 10 }}>
+          <div style={{ fontSize: 12, fontWeight: 900, letterSpacing: '0.36em', textTransform: 'uppercase', color: ROSA.replace('1)', '0.95)'), marginBottom: 10 }}>
             Devocional Familiar Expositivo
           </div>
           <h1 style={{
@@ -769,14 +1076,14 @@ export default function DevocionalFamiliarPage() {
           }}>
             365 dias pelo Novo Testamento
           </h1>
-          <p style={{ fontSize: 'clamp(13px,1.8vw,15px)', color: 'rgba(200,200,255,0.55)', lineHeight: 1.8, maxWidth: 500, margin: '0 auto 20px' }}>
+          <p style={{ fontSize: 'clamp(15px,2vw,17px)', color: 'rgba(215,215,255,0.88)', lineHeight: 1.8, maxWidth: 500, margin: '0 auto 20px' }}>
             Mateus 1 (1 jan) até Apocalipse 22 (31 dez) — expositivo, em ordem, sem pular textos.
             Quatro Estações da Aliança para namorados, noivos e casados.
           </p>
           {/* Pílulas das estações */}
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, justifyContent: 'center' }}>
             {ESTACAO_CONFIG.map(e => (
-              <span key={e.key} style={{ fontSize: 11, fontWeight: 700, color: e.cor, padding: '4px 14px', borderRadius: 99, background: `rgba(${e.corRgb},0.10)`, border: `1px solid rgba(${e.corRgb},0.25)` }}>
+              <span key={e.key} style={{ fontSize: 13, fontWeight: 700, color: e.cor, padding: '4px 14px', borderRadius: 99, background: `rgba(${e.corRgb},0.10)`, border: `1px solid rgba(${e.corRgb},0.25)` }}>
                 {e.icon} {e.label}
               </span>
             ))}
@@ -793,10 +1100,10 @@ export default function DevocionalFamiliarPage() {
           transition={{ delay: 0.15 }}
           style={{ borderRadius: 16, background: ROSA_BG, border: `1px solid ${ROSA_BORDA}`, padding: 'clamp(16px,2.5vw,22px)', marginBottom: 40 }}
         >
-          <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: ROSA, marginBottom: 10 }}>
+          <div style={{ fontSize: 12, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: ROSA, marginBottom: 10 }}>
             📋 Como usar
           </div>
-          <p style={{ margin: 0, fontSize: 13, color: 'rgba(220,215,255,0.72)', lineHeight: 1.85 }}>
+          <p style={{ margin: 0, fontSize: 15, color: 'rgba(230,228,255,0.92)', lineHeight: 1.85 }}>
             Os dias não têm data fixa — comece no Dia 1 quando quiser e siga a sequência. Cada semana tem <strong style={{ color: '#fff' }}>5 dias de leitura expositiva</strong>, 1 <strong style={{ color: 'rgba(134,239,172,0.85)' }}>Dia de Aplicação</strong> (sem capítulo novo, aprofundamento do que foi lido) e 1 <strong style={{ color: 'rgba(251,191,36,0.90)' }}>Mesa da Aliança</strong> (encontro semanal de revisão e oração). Clique em qualquer semana ou dia para expandir o conteúdo completo.
           </p>
         </motion.div>
@@ -830,10 +1137,10 @@ export default function DevocionalFamiliarPage() {
                   }}
                 >
                   <span style={{ fontSize: 'clamp(16px,2.5vw,22px)' }}>{e.icon}</span>
-                  <span style={{ fontSize: 'clamp(9px,1.2vw,11px)', fontWeight: 900, color: ativa ? e.cor : 'rgba(200,200,255,0.45)', textAlign: 'center', lineHeight: 1.3, letterSpacing: '0.03em' }}>
+                  <span style={{ fontSize: 'clamp(11px,1.4vw,13px)', fontWeight: 900, color: ativa ? e.cor : 'rgba(215,215,255,0.88)', textAlign: 'center', lineHeight: 1.3, letterSpacing: '0.03em' }}>
                     Est. {e.num}
                   </span>
-                  <span style={{ fontSize: 'clamp(8px,1vw,10px)', color: ativa ? e.cor.replace('1)', '0.70)') : 'rgba(200,200,255,0.28)', textAlign: 'center', lineHeight: 1.3, display: 'block', fontWeight: 600 }}>
+                  <span style={{ fontSize: 'clamp(10px,1.2vw,12px)', color: ativa ? e.cor.replace('1)', '0.92)') : 'rgba(200,200,255,0.75)', textAlign: 'center', lineHeight: 1.3, display: 'block', fontWeight: 600 }}>
                     Sem. {e.semanas[0]}–{e.semanas[1]}
                   </span>
                 </button>

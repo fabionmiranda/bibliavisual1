@@ -43,6 +43,7 @@ import AutorBavinckPage from './pages/AutorBavinckPage';
 import AutorPlantingaPage from './pages/AutorPlantingaPage';
 import AutorGillespiePage from './pages/AutorGillespiePage';
 import AutorRutherfordPage from './pages/AutorRutherfordPage';
+import AutorNewmanPage from './pages/AutorNewmanPage';
 import BibliotecaAutoresBatistasComparativoPage from './pages/BibliotecaAutoresBatistasComparativoPage';
 import BibliotecaAutoresReformadoresPage from './pages/BibliotecaAutoresReformadoresPage';
 import PregacaoPage from './pages/PregacaoPage';
@@ -57,6 +58,9 @@ import DiscipuladoConfessionalCap2Page from './pages/DiscipuladoConfessionalCap2
 import DiscipuladoConfessionalCap3Page from './pages/DiscipuladoConfessionalCap3Page';
 import EstudosConfessionaisPage from './pages/EstudosConfessionaisPage';
 import DiscipuladoBatistaPage from './pages/DiscipuladoBatistaPage';
+import DiscipuladoWestminsterPage from './pages/DiscipuladoWestminsterPage';
+import DiscipuladoWestminsterCap1Page from './pages/DiscipuladoWestminsterCap1Page';
+import DiscipuladoWestminsterCap2Page from './pages/DiscipuladoWestminsterCap2Page';
 import TeologiaCredosPage from './pages/TeologiaCredosPage';
 import TeologiaArtigoPage from './pages/TeologiaArtigoPage';
 import ArtigosPage from './pages/ArtigosPage';
@@ -144,6 +148,7 @@ export default function App() {
           <Route path="/biblioteca/autores/plantinga" element={<AutorPlantingaPage />} />
           <Route path="/biblioteca/autores/gillespie" element={<AutorGillespiePage />} />
           <Route path="/biblioteca/autores/rutherford" element={<AutorRutherfordPage />} />
+          <Route path="/biblioteca/autores/newman" element={<AutorNewmanPage />} />
           <Route path="/biblioteca/autores/batistas-presbiterianos" element={<BibliotecaAutoresBatistasComparativoPage />} />
           <Route path="/biblioteca/autores/batistas-presbiterianos/:slug" element={<TeologoPresbiterianoPage />} />
           <Route path="/biblioteca/autores/reformadores" element={<BibliotecaAutoresReformadoresPage />} />
@@ -201,6 +206,9 @@ export default function App() {
           <Route path="/teologia/credos" element={<TeologiaCredosPage />} />
           <Route path="/discipulado/confessional" element={<EstudosConfessionaisPage />} />
           <Route path="/discipulado/confessional/batista" element={<DiscipuladoBatistaPage />} />
+          <Route path="/discipulado/confessional/westminster" element={<DiscipuladoWestminsterPage />} />
+          <Route path="/discipulado/confessional/westminster/cap1" element={<DiscipuladoWestminsterCap1Page />} />
+          <Route path="/discipulado/confessional/westminster/cap2" element={<DiscipuladoWestminsterCap2Page />} />
           <Route path="/discipulado/confessional/cap1" element={<DiscipuladoConfessionalCap1Page />} />
           <Route path="/discipulado/confessional/cap2" element={<DiscipuladoConfessionalCap2Page />} />
           <Route path="/discipulado/confessional/cap3" element={<DiscipuladoConfessionalCap3Page />} />
