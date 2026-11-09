@@ -193,7 +193,7 @@ const VIDEOS_FAMILIAR: Record<number, string> = {
   310: '', // Tiago 5
   311: '', // 1 Pedro 1
   312: '', // 1 Pedro 2
-  313: '', // 1 Pedro 3
+  313: 'https://www.youtube.com/watch?v=0j1ZobUmcIE', // 1 Pedro 3
   314: '', // Aplicação da Semana 45
   315: '', // Mesa da Aliança — Semana 45
   // Semana 46
