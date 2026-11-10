@@ -8,7 +8,7 @@ import {
 import Navbar from '../components/Navbar';
 import VideoIntro from '../components/VideoIntro';
 import Footer from '../components/Footer';
-import FlagToggle from '../components/FlagToggle';
+import { useLanguage } from '../contexts/LanguageContext';
 
 function getPreviewDiagramas(pt: boolean) {
   return [
@@ -144,7 +144,7 @@ function getCards(pt: boolean) {
 }
 
 export default function AcessarPage() {
-  const [lang, setLang] = useState<'pt'|'en'>('pt');
+  const [lang, setLang] = useLanguage();
   const pt = lang === 'pt';
   const CARDS = getCards(pt);
 
@@ -232,7 +232,6 @@ export default function AcessarPage() {
       </section>
 
       <Footer lang={lang} />
-      <FlagToggle lang={lang} setLang={setLang} />
     </div>
   );
 }

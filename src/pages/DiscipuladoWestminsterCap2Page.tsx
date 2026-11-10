@@ -267,26 +267,26 @@ const CATECISMO_P4_EM = ['ser', 'sabedoria', 'poder', 'santidade', 'justiça', '
 function BreveCatecismoP4() {
   return (
     <div className="rounded-xl p-5" style={{ background: `${BLUE}0c`, border: `1px solid ${BLUE}30` }}>
-      <p className="text-xs font-extrabold uppercase tracking-widest mb-2" style={{ color: `${BLUE}aa` }}>Breve Catecismo de Westminster · Pergunta 4</p>
-      <p className="text-white font-bold text-base md:text-lg mb-1">Que é Deus?</p>
-      <p className="text-white/90 text-base md:text-lg leading-relaxed italic">
+      <p className="text-base font-extrabold uppercase tracking-widest mb-2" style={{ color: `${BLUE}aa` }}>Breve Catecismo de Westminster · Pergunta 4</p>
+      <p className="text-white font-bold text-xl md:text-2xl mb-1">Que é Deus?</p>
+      <p className="text-white/90 text-xl md:text-2xl leading-relaxed italic">
         Deus é espírito, infinito, eterno e imutável em seu ser, sabedoria, poder, santidade, justiça, bondade e verdade.
       </p>
       <div className="mt-5 grid grid-cols-1 sm:grid-cols-[auto_1fr] gap-3 sm:gap-5 items-start">
         <div className="flex flex-wrap sm:flex-col gap-2">
           {CATECISMO_P4.map(c => (
-            <span key={c.palavra} className="px-3 py-1.5 rounded-lg text-sm font-extrabold text-center" style={{ background: `${c.cor}22`, color: c.cor, border: `1px solid ${c.cor}40` }}>
+            <span key={c.palavra} className="px-3 py-1.5 rounded-lg text-lg font-extrabold text-center" style={{ background: `${c.cor}22`, color: c.cor, border: `1px solid ${c.cor}40` }}>
               {c.palavra}
             </span>
           ))}
         </div>
         <div>
-          <p className="text-sm text-white/70 leading-relaxed mb-3">
+          <p className="text-lg text-white/88 leading-relaxed mb-3">
             Os quatro primeiros termos qualificam <strong style={{ color: BLUE }}>cada uma</strong> das sete perfeições seguintes. Deus não é apenas sábio: é <em>infinita, eterna e imutavelmente</em> sábio.
           </p>
           <div className="flex flex-wrap gap-2">
             {CATECISMO_P4_EM.map(p => (
-              <span key={p} className="px-3 py-1 rounded-full text-sm font-semibold" style={{ background: `${GREEN}14`, color: GREEN, border: `1px solid ${GREEN}35` }}>
+              <span key={p} className="px-3 py-1 rounded-full text-lg font-semibold" style={{ background: `${GREEN}14`, color: GREEN, border: `1px solid ${GREEN}35` }}>
                 {p}
               </span>
             ))}
@@ -305,8 +305,8 @@ function VersiculoBox({ texto, ref: r, cor }: { texto: string; ref: string; cor:
       className="rounded-xl p-5 mb-6"
       style={{ background: `${cor}12`, border: `1px solid ${cor}35`, borderLeft: `4px solid ${cor}` }}
     >
-      <p className="text-base md:text-lg leading-relaxed italic font-medium" style={{ color: cor }}>"{texto}"</p>
-      <p className="mt-2 text-sm md:text-base font-semibold" style={{ color: `${cor}cc` }}>— {r}</p>
+      <p className="text-[22px] md:text-[27px] lg:text-4xl leading-relaxed italic" style={{ color: cor, fontFamily: 'var(--font-garamond)' }}>“{texto}”</p>
+      <p className="mt-2 text-lg md:text-xl font-semibold" style={{ color: `${cor}cc` }}>— {r}</p>
     </motion.div>
   );
 }
@@ -323,10 +323,10 @@ function ConfTexto({ items, cor }: { items: typeof CONF_TEXT_P1; cor: string }) 
             style={{ background: open === item.para ? `${cor}18` : `${cor}08` }}
           >
             <div className="flex items-center gap-3">
-              <span className="text-xs font-bold px-2 py-0.5 rounded-full" style={{ background: `${cor}25`, color: cor }}>{item.para}</span>
-              <span className="font-bold text-white text-base">{item.titulo}</span>
+              <span className="text-base font-bold px-2 py-0.5 rounded-full" style={{ background: `${cor}25`, color: cor }}>{item.para}</span>
+              <span className="font-bold text-white text-xl">{item.titulo}</span>
             </div>
-            <motion.span animate={{ rotate: open === item.para ? 180 : 0 }} className="text-lg" style={{ color: cor }}>▾</motion.span>
+            <motion.span animate={{ rotate: open === item.para ? 180 : 0 }} className="text-2xl" style={{ color: cor }}>▾</motion.span>
           </button>
           <AnimatePresence>
             {open === item.para && (
@@ -336,7 +336,7 @@ function ConfTexto({ items, cor }: { items: typeof CONF_TEXT_P1; cor: string }) 
                 exit={{ height: 0, opacity: 0 }}
                 className="px-5 pb-5"
               >
-                <div className="text-white/90 leading-relaxed text-sm md:text-base pt-4 border-t" style={{ borderColor: `${cor}20` }}>{item.texto}</div>
+                <div className="text-white/95 leading-[1.8] text-[21px] md:text-3xl lg:text-[27px] pt-4 border-t" style={{ fontFamily: 'var(--font-garamond)', borderColor: `${cor}20` }}>{item.texto}</div>
               </motion.div>
             )}
           </AnimatePresence>
@@ -360,12 +360,12 @@ function PerguntasGrid({ perguntas, cor }: { perguntas: { num: string; texto: st
           style={{ background: `${cor}0a`, border: `1px solid ${cor}22` }}
         >
           <div className="flex items-start gap-3">
-            <span className="shrink-0 w-9 h-9 rounded-full flex items-center justify-center text-sm font-extrabold" style={{ background: `${cor}28`, color: cor }}>{p.num}</span>
-            <p className="text-white/95 text-sm md:text-base leading-relaxed font-medium">{p.texto}</p>
+            <span className="shrink-0 w-9 h-9 rounded-full flex items-center justify-center text-lg font-extrabold" style={{ background: `${cor}28`, color: cor }}>{p.num}</span>
+            <p className="text-white/95 text-lg md:text-xl leading-relaxed font-medium">{p.texto}</p>
           </div>
           {p.recurso && (
             <div className="flex flex-col gap-1.5 mt-1">
-              <span className="flex items-center gap-1.5 text-[10px] font-semibold uppercase tracking-widest opacity-50" style={{ color: cor }}>
+              <span className="flex items-center gap-1.5 text-[15px] font-semibold uppercase tracking-widest opacity-50" style={{ color: cor }}>
                 <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <circle cx="12" cy="12" r="10" />
                   <path d="M12 16v-4M12 8h.01" />
@@ -376,7 +376,7 @@ function PerguntasGrid({ perguntas, cor }: { perguntas: { num: string; texto: st
                 href={p.recurso.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 self-start rounded-lg px-3 py-1.5 text-xs font-semibold transition-all hover:scale-[1.03] hover:opacity-90"
+                className="flex items-center gap-2 self-start rounded-lg px-3 py-1.5 text-base font-semibold transition-all hover:scale-[1.03] hover:opacity-90"
                 style={{ background: `${cor}14`, color: cor, border: `1px solid ${cor}30` }}
               >
                 <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -399,8 +399,8 @@ function GlossarioCards({ items, cor }: { items: { termo: string; def: string }[
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
       {items.map(g => (
         <div key={g.termo} className="rounded-xl p-4" style={{ background: `${cor}0c`, border: `1px solid ${cor}28` }}>
-          <p className="font-extrabold text-base mb-2" style={{ color: cor }}>{g.termo}</p>
-          <p className="text-white/90 text-base leading-relaxed">{g.def}</p>
+          <p className="font-extrabold text-xl mb-2" style={{ color: cor }}>{g.termo}</p>
+          <p className="text-white/90 text-xl leading-relaxed">{g.def}</p>
         </div>
       ))}
     </div>
@@ -415,9 +415,9 @@ function AplicacaoBox({ conteudo, cor }: { conteudo: React.ReactNode; cor: strin
           <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
           <path d="M12 8v4M12 16h.01" />
         </svg>
-        <p className="text-sm font-extrabold uppercase tracking-widest" style={{ color: cor }}>Aplicação para a vida e a Igreja</p>
+        <p className="text-lg font-extrabold uppercase tracking-widest" style={{ color: cor }}>Aplicação para a vida e a Igreja</p>
       </div>
-      <div className="px-5 py-5 space-y-4 text-sm md:text-base leading-relaxed text-white/90" style={{ background: `${cor}07` }}>
+      <div className="px-5 py-5 space-y-4 text-lg md:text-xl leading-relaxed text-white/90" style={{ background: `${cor}07` }}>
         {conteudo}
       </div>
     </div>
@@ -454,7 +454,7 @@ function TextosProva({ items, cor }: { items: string[]; cor: string }) {
           href={refToUrl(t)}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-semibold transition-all hover:scale-105 hover:opacity-90"
+          className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-lg font-semibold transition-all hover:scale-105 hover:opacity-90"
           style={{ background: `${cor}18`, color: cor, border: `1px solid ${cor}40` }}
           title={`Ler ${t} — Bíblia Online ARA`}
         >
@@ -482,7 +482,7 @@ function TableAtributos({ cor }: { cor: string }) {
   ];
   return (
     <div className="overflow-x-auto mt-4">
-      <table className="w-full text-base rounded-xl overflow-hidden" style={{ borderCollapse: 'collapse' }}>
+      <table className="w-full text-xl rounded-xl overflow-hidden" style={{ borderCollapse: 'collapse' }}>
         <thead>
           <tr style={{ background: `${cor}22` }}>
             <th className="px-4 py-3 text-left font-extrabold" style={{ color: cor }}>Atributos Incomunicáveis (exclusivos de Deus)</th>
@@ -493,7 +493,7 @@ function TableAtributos({ cor }: { cor: string }) {
           {rows.map((r, i) => (
             <tr key={i} style={{ background: i % 2 === 0 ? `${cor}09` : `${cor}04`, borderTop: `1px solid ${cor}18` }}>
               <td className="px-4 py-3 text-white/95 font-medium">{r.incomunicavel}</td>
-              <td className="px-4 py-3 text-white/75">{r.comunicavel}</td>
+              <td className="px-4 py-3 text-white/88">{r.comunicavel}</td>
             </tr>
           ))}
         </tbody>
@@ -512,7 +512,7 @@ function TableErrosTrinitarios({ cor }: { cor: string }) {
   ];
   return (
     <div className="overflow-x-auto mt-4">
-      <table className="w-full text-sm rounded-xl overflow-hidden" style={{ borderCollapse: 'collapse' }}>
+      <table className="w-full text-lg rounded-xl overflow-hidden" style={{ borderCollapse: 'collapse' }}>
         <thead>
           <tr style={{ background: `${cor}22` }}>
             <th className="px-3 py-3 text-left font-extrabold" style={{ color: cor }}>Heresia</th>
@@ -524,7 +524,7 @@ function TableErrosTrinitarios({ cor }: { cor: string }) {
           {rows.map((r, i) => (
             <tr key={i} style={{ background: i % 2 === 0 ? `${cor}09` : `${cor}04`, borderTop: `1px solid ${cor}18` }}>
               <td className="px-3 py-3 text-white/95 font-semibold">{r.heresia}</td>
-              <td className="px-3 py-3 text-white/75">{r.erro}</td>
+              <td className="px-3 py-3 text-white/88">{r.erro}</td>
               <td className="px-3 py-3" style={{ color: `${cor}99` }}>{r.condenacao}</td>
             </tr>
           ))}
@@ -555,26 +555,26 @@ function EncontroSection({ enc, textos, confTexto, mostrarTabelaAtributos, mostr
       style={{ background: '#0b1530', border: `1px solid ${cor}30` }}
     >
       {/* header */}
-      <div className="px-4 md:px-6 pt-5 pb-4" style={{ borderBottom: `1px solid ${cor}22` }}>
+      <div className="px-4 md:px-8 lg:px-10 pt-6 pb-5 md:pt-8" style={{ borderBottom: `1px solid ${cor}22` }}>
         <div className="flex flex-wrap items-center gap-3 mb-3">
-          <span className="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider" style={{ background: `${cor}22`, color: cor }}>{enc.titulo}</span>
+          <span className="px-3 py-1 rounded-full text-base font-bold uppercase tracking-wider" style={{ background: `${cor}22`, color: cor }}>{enc.titulo}</span>
         </div>
-        <h2 className="text-xl md:text-2xl font-extrabold text-white tracking-tight">{enc.subtitulo}</h2>
-        <p className="mt-2 text-base font-medium" style={{ color: `${cor}cc` }}>"{enc.versiculo}" — {enc.ref_versiculo}</p>
+        <h2 className="text-3xl md:text-4xl font-bold text-white tracking-wide" style={{ fontFamily: 'var(--font-cinzel)' }}>{enc.subtitulo}</h2>
+        <p className="mt-2 text-xl font-medium" style={{ color: `${cor}cc` }}>"{enc.versiculo}" — {enc.ref_versiculo}</p>
       </div>
 
-      <div className="p-4 md:p-6 space-y-7">
+      <div className="p-4 md:p-8 lg:p-10 space-y-9">
 
         {/* introducao */}
         <div>
-          <h3 className="text-sm font-extrabold uppercase tracking-widest mb-4" style={{ color: cor }}>Introdução</h3>
-          <div className="space-y-4 text-white/90 leading-relaxed text-sm md:text-base">{enc.introducao}</div>
+          <h3 className="text-lg font-extrabold uppercase tracking-widest mb-4" style={{ color: cor }}>Introdução</h3>
+          <div className="space-y-4 text-white/90 leading-relaxed text-lg md:text-xl">{enc.introducao}</div>
         </div>
 
         {/* textos-prova */}
         {textos && (
           <div>
-            <h3 className="text-sm font-extrabold uppercase tracking-widest mb-4" style={{ color: cor }}>Textos-Prova</h3>
+            <h3 className="text-lg font-extrabold uppercase tracking-widest mb-4" style={{ color: cor }}>Textos-Prova</h3>
             <TextosProva items={textos} cor={cor} />
           </div>
         )}
@@ -582,7 +582,7 @@ function EncontroSection({ enc, textos, confTexto, mostrarTabelaAtributos, mostr
         {/* bloco extra */}
         {extra && (
           <div>
-            <h3 className="text-sm font-extrabold uppercase tracking-widest mb-4" style={{ color: cor }}>{extra.titulo}</h3>
+            <h3 className="text-lg font-extrabold uppercase tracking-widest mb-4" style={{ color: cor }}>{extra.titulo}</h3>
             {extra.conteudo}
           </div>
         )}
@@ -590,7 +590,7 @@ function EncontroSection({ enc, textos, confTexto, mostrarTabelaAtributos, mostr
         {/* texto confessional */}
         {confTexto && (
           <div>
-            <h3 className="text-sm font-extrabold uppercase tracking-widest mb-4" style={{ color: cor }}>Texto Confessional</h3>
+            <h3 className="text-lg font-extrabold uppercase tracking-widest mb-4" style={{ color: cor }}>Texto Confessional</h3>
             <ConfTexto items={confTexto} cor={cor} />
           </div>
         )}
@@ -598,27 +598,27 @@ function EncontroSection({ enc, textos, confTexto, mostrarTabelaAtributos, mostr
         {/* tabelas */}
         {mostrarTabelaAtributos && (
           <div>
-            <h3 className="text-sm font-extrabold uppercase tracking-widest mb-3" style={{ color: cor }}>Atributos Incomunicáveis × Comunicáveis</h3>
+            <h3 className="text-lg font-extrabold uppercase tracking-widest mb-3" style={{ color: cor }}>Atributos Incomunicáveis × Comunicáveis</h3>
             <TableAtributos cor={cor} />
           </div>
         )}
 
         {mostrarTabelaErros && (
           <div>
-            <h3 className="text-sm font-extrabold uppercase tracking-widest mb-3" style={{ color: cor }}>Heresias Trinitárias</h3>
+            <h3 className="text-lg font-extrabold uppercase tracking-widest mb-3" style={{ color: cor }}>Heresias Trinitárias</h3>
             <TableErrosTrinitarios cor={cor} />
           </div>
         )}
 
         {/* perguntas */}
         <div>
-          <h3 className="text-sm font-extrabold uppercase tracking-widest mb-4" style={{ color: cor }}>Perguntas para Discussão</h3>
+          <h3 className="text-lg font-extrabold uppercase tracking-widest mb-4" style={{ color: cor }}>Perguntas para Discussão</h3>
           <PerguntasGrid perguntas={enc.perguntas} cor={cor} />
         </div>
 
         {/* glossario */}
         <div>
-          <h3 className="text-sm font-extrabold uppercase tracking-widest mb-4" style={{ color: cor }}>Glossário</h3>
+          <h3 className="text-lg font-extrabold uppercase tracking-widest mb-4" style={{ color: cor }}>Glossário</h3>
           <GlossarioCards items={enc.glossario} cor={cor} />
         </div>
 
@@ -764,13 +764,13 @@ function GabaritoSection({
         style={{ background: open ? `${cor}14` : `${cor}08` }}
       >
         <div className="flex items-center gap-3">
-          <span className="text-lg">📋</span>
+          <span className="text-2xl">📋</span>
           <div>
-            <p className="font-extrabold text-white text-base">{titulo}</p>
-            <p className="text-sm mt-0.5 font-medium" style={{ color: `${cor}aa` }}>Respostas orientadoras</p>
+            <p className="font-extrabold text-white text-xl">{titulo}</p>
+            <p className="text-lg mt-0.5 font-medium" style={{ color: `${cor}aa` }}>Respostas orientadoras</p>
           </div>
         </div>
-        <motion.span animate={{ rotate: open ? 180 : 0 }} style={{ color: cor }} className="text-lg">▾</motion.span>
+        <motion.span animate={{ rotate: open ? 180 : 0 }} style={{ color: cor }} className="text-2xl">▾</motion.span>
       </button>
 
       <AnimatePresence>
@@ -782,7 +782,7 @@ function GabaritoSection({
             className="overflow-hidden"
           >
             <div className="px-6 pb-6 pt-2 space-y-3">
-              <p className="text-sm italic mb-5" style={{ color: `${cor}88` }}>{aviso}</p>
+              <p className="text-lg italic mb-5" style={{ color: `${cor}88` }}>{aviso}</p>
 
               {itens.map(item => (
                 <motion.div key={item.num} layout className="rounded-xl overflow-hidden" style={{ border: `1px solid ${cor}20` }}>
@@ -791,13 +791,13 @@ function GabaritoSection({
                     className="w-full flex items-center justify-between px-4 py-3 text-left"
                     style={{ background: openItem === item.num ? `${cor}14` : `${cor}07` }}
                   >
-                    <span className="text-sm font-extrabold px-2.5 py-1 rounded-full mr-3 shrink-0" style={{ background: `${cor}28`, color: cor }}>
+                    <span className="text-lg font-extrabold px-2.5 py-1 rounded-full mr-3 shrink-0" style={{ background: `${cor}28`, color: cor }}>
                       {item.num}
                     </span>
-                    <span className="flex-1 text-white/95 text-sm md:text-base font-medium truncate pr-3">
+                    <span className="flex-1 text-white/95 text-lg md:text-xl font-medium truncate pr-3">
                       {perguntas.find(p => p.num === item.num)?.texto}
                     </span>
-                    <motion.span animate={{ rotate: openItem === item.num ? 180 : 0 }} style={{ color: `${cor}80` }} className="text-sm shrink-0">▾</motion.span>
+                    <motion.span animate={{ rotate: openItem === item.num ? 180 : 0 }} style={{ color: `${cor}80` }} className="text-lg shrink-0">▾</motion.span>
                   </button>
 
                   <AnimatePresence>
@@ -809,7 +809,7 @@ function GabaritoSection({
                         className="px-5 pb-4"
                       >
                         <p
-                          className="text-white/92 text-sm md:text-base leading-relaxed pt-4"
+                          className="text-white/92 text-lg md:text-xl leading-relaxed pt-4"
                           style={{ borderTop: `1px solid ${cor}18` }}
                           dangerouslySetInnerHTML={{
                             __html: item.resposta.replace(
@@ -823,7 +823,7 @@ function GabaritoSection({
                             {item.notas.map(n => {
                               const nota = notas.find(r => r.num === n);
                               return nota ? (
-                                <p key={n} className="text-sm leading-relaxed" style={{ color: `${cor}99` }}>
+                                <p key={n} className="text-lg leading-relaxed" style={{ color: `${cor}99` }}>
                                   <sup style={{ color: cor }} className="font-bold mr-1">{n}</sup>
                                   {nota.ref}
                                 </p>
@@ -838,10 +838,10 @@ function GabaritoSection({
               ))}
 
               <div className="mt-4 pt-4 rounded-xl px-4 py-3" style={{ background: `${cor}07`, border: `1px solid ${cor}15` }}>
-                <p className="text-sm font-extrabold uppercase tracking-widest mb-3" style={{ color: `${cor}99` }}>Notas de rodapé</p>
+                <p className="text-lg font-extrabold uppercase tracking-widest mb-3" style={{ color: `${cor}99` }}>Notas de rodapé</p>
                 <ol className="space-y-2 list-none">
                   {notas.map(n => (
-                    <li key={n.num} className="text-sm leading-relaxed" style={{ color: '#ffffff80' }}>
+                    <li key={n.num} className="text-lg leading-relaxed" style={{ color: '#ffffff80' }}>
                       <sup style={{ color: cor }} className="font-bold mr-1">{n.num}</sup>
                       {n.ref}
                     </li>
@@ -866,10 +866,10 @@ function ChapterNav({ onPrev, compact }: { onPrev: () => void; compact?: boolean
         className="flex items-center gap-1.5 rounded-xl px-3 py-2 transition-all hover:scale-105 min-w-0"
         style={{ background: `${BLUE}0a`, border: `1px solid ${BLUE}20` }}
       >
-        <motion.span animate={{ x: [0, -3, 0] }} transition={{ duration: 2, repeat: Infinity }} style={{ color: BLUE }} className="text-base shrink-0">←</motion.span>
+        <motion.span animate={{ x: [0, -3, 0] }} transition={{ duration: 2, repeat: Infinity }} style={{ color: BLUE }} className="text-xl shrink-0">←</motion.span>
         <div className="text-left min-w-0">
-          <p className="text-[10px] font-bold uppercase tracking-wider leading-none truncate" style={{ color: `${BLUE}70` }}>Anterior</p>
-          <p className="text-xs text-white/55 mt-0.5 truncate">Cap. I</p>
+          <p className="text-xs sm:text-[15px] font-bold uppercase tracking-wide leading-none whitespace-nowrap" style={{ color: `${BLUE}70` }}>Anterior</p>
+          <p className="text-base text-white/80 mt-0.5 truncate">Cap. I</p>
         </div>
       </button>
 
@@ -890,10 +890,10 @@ function ChapterNav({ onPrev, compact }: { onPrev: () => void; compact?: boolean
         title="Capítulo III em preparação"
       >
         <div className="text-right min-w-0">
-          <p className="text-[10px] font-bold uppercase tracking-wider leading-none truncate text-white/50">Cap. III</p>
-          <p className="text-xs text-white/40 mt-0.5 truncate">Em breve</p>
+          <p className="text-xs sm:text-[15px] font-bold uppercase tracking-wide leading-none whitespace-nowrap text-white/75">Cap. III</p>
+          <p className="text-base text-white/70 mt-0.5 truncate">Em breve</p>
         </div>
-        <span className="text-base shrink-0 text-white/40">→</span>
+        <span className="text-xl shrink-0 text-white/70">→</span>
       </div>
     </div>
   );
@@ -908,7 +908,7 @@ export default function DiscipuladoWestminsterCap2Page() {
   const goBack = () => navigate('/discipulado/confessional/westminster/cap1');
 
   return (
-    <div className="min-h-screen flex flex-col" style={{ background: BG, color: '#e2e8f0' }}>
+    <div className="min-h-screen flex flex-col sem-justificar" style={{ background: BG, color: '#e2e8f0' }}>
       <Navbar />
 
       {/* hero */}
@@ -925,36 +925,36 @@ export default function DiscipuladoWestminsterCap2Page() {
           ))}
         </div>
 
-        <div className="relative z-10 max-w-4xl mx-auto px-4 md:px-6 py-10 md:py-14">
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-12 md:pb-16">
           <button
             onClick={goIndex}
-            className="flex items-center gap-2 text-sm mb-6 transition-opacity hover:opacity-80"
-            style={{ color: `${BLUE}99` }}
+            className="flex items-center gap-2 text-lg mb-6 transition-opacity hover:opacity-80"
+            style={{ color: `${BLUE}dd` }}
           >
             ← Confissão de Fé de Westminster
           </button>
 
           <div className="flex flex-wrap items-center gap-3 mb-4">
-            <span className="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider" style={{ background: `${BLUE}22`, color: BLUE }}>
+            <span className="px-3 py-1 rounded-full text-base font-bold uppercase tracking-wider" style={{ background: `${BLUE}22`, color: BLUE }}>
               Confissão de Westminster · 1646
             </span>
-            <span className="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider" style={{ background: '#ffffff10', color: '#ffffff70' }}>
+            <span className="px-3 py-1 rounded-full text-base font-bold uppercase tracking-wider" style={{ background: '#ffffff10', color: '#ffffffcc' }}>
               Capítulo II
             </span>
-            <span className="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider" style={{ background: '#ffffff10', color: '#ffffff70' }}>
+            <span className="px-3 py-1 rounded-full text-base font-bold uppercase tracking-wider" style={{ background: '#ffffff10', color: '#ffffffcc' }}>
               3 Partes
             </span>
           </div>
 
-          <h1 className="text-2xl md:text-4xl font-black mb-3 text-white leading-tight">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white leading-tight tracking-wide" style={{ fontFamily: 'var(--font-cinzel)' }}>
             De Deus e da Santíssima Trindade
           </h1>
-          <p className="text-white/80 text-base md:text-xl max-w-2xl leading-relaxed font-medium">
+          <p className="text-white/90 text-xl md:text-2xl max-w-4xl leading-relaxed font-medium">
             Discipulado Confessional Reformado — Caderno do Aluno · Partes 1 a 3
           </p>
 
           <div className="mt-6 p-5 rounded-xl" style={{ background: `${BLUE}10`, border: `1px solid ${BLUE}30` }}>
-            <p className="text-base text-white/85 leading-relaxed">
+            <p className="text-xl text-white/85 leading-relaxed">
               <span style={{ color: BLUE }} className="font-bold">Como usar este material:</span> Leia a introdução, os textos-prova, os textos confessionais e o glossário — depois procure responder cada pergunta por conta própria. Caso tenha dúvidas, acesse a <span style={{ color: GREEN }} className="font-semibold">ajuda</span> disponível em cada pergunta. Ao final, além da aplicação, confira o <span style={{ color: GOLD }} className="font-semibold">gabarito</span> com as respostas orientadoras e as <span style={{ color: GOLD }} className="font-semibold">referências bibliográficas</span> para consulta posterior.
             </p>
           </div>
@@ -962,8 +962,8 @@ export default function DiscipuladoWestminsterCap2Page() {
       </div>
 
       {/* tabs */}
-      <div className="sticky top-0 z-20 px-3 py-3" style={{ background: '#080f22', borderBottom: '1px solid #ffffff12' }}>
-        <div className="max-w-4xl mx-auto grid grid-cols-3 gap-2">
+      <div className="sticky top-[64px] lg:top-[72px] z-20 px-3 py-3 backdrop-blur-md" style={{ background: '#080f22', borderBottom: '1px solid #ffffff12' }}>
+        <div className="max-w-6xl mx-auto grid grid-cols-3 gap-2">
           {([1, 2, 3] as const).map(n => {
             const shortLabels = ['Parte 1', 'Parte 2', 'Parte 3'];
             const subLabels = ['O ser de Deus', 'Caráter §1d–2', 'A Trindade §3'];
@@ -980,8 +980,8 @@ export default function DiscipuladoWestminsterCap2Page() {
                   border: `1px solid ${isActive ? cors[n - 1] + '55' : '#ffffff10'}`,
                 }}
               >
-                <span className="text-sm font-extrabold leading-none">{shortLabels[n - 1]}</span>
-                <span className="text-[10px] leading-none mt-0.5 hidden sm:block" style={{ opacity: 0.7 }}>{subLabels[n - 1]}</span>
+                <span className="text-lg font-extrabold leading-none">{shortLabels[n - 1]}</span>
+                <span className="text-[15px] leading-none mt-0.5 hidden sm:block" style={{ opacity: 0.7 }}>{subLabels[n - 1]}</span>
                 {isActive && <span className="w-4 h-0.5 rounded-full mt-1" style={{ background: cors[n - 1] }} />}
               </button>
             );
@@ -990,12 +990,12 @@ export default function DiscipuladoWestminsterCap2Page() {
       </div>
 
       {/* top nav */}
-      <div className="max-w-4xl mx-auto w-full px-4" style={{ borderBottom: '1px solid #ffffff08' }}>
+      <div className="max-w-6xl mx-auto w-full px-4" style={{ borderBottom: '1px solid #ffffff08' }}>
         <ChapterNav onPrev={goBack} compact />
       </div>
 
       {/* content */}
-      <main className="flex-1 max-w-4xl mx-auto w-full px-3 md:px-4 py-6 md:py-10">
+      <main className="flex-1 max-w-6xl mx-auto w-full px-3 sm:px-5 lg:px-8 py-6 md:py-12">
 
         <AnimatePresence mode="wait">
           {tab === 1 && (
@@ -1054,11 +1054,11 @@ export default function DiscipuladoWestminsterCap2Page() {
           className="mt-10 rounded-2xl p-6"
           style={{ background: '#0b1530', border: '1px solid #ffffff12' }}
         >
-          <h3 className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: '#ffffff50' }}>Referências Bibliográficas</h3>
+          <h3 className="text-base font-bold uppercase tracking-widest mb-4" style={{ color: '#ffffffb8' }}>Referências Bibliográficas</h3>
           <ul className="space-y-2">
             {REFERENCIAS.map((r, i) => (
-              <li key={i} className="text-white/55 text-sm leading-relaxed">
-                <span className="text-white/80 font-semibold">{r.autores}.</span>{' '}
+              <li key={i} className="text-white/80 text-lg leading-relaxed">
+                <span className="text-white/90 font-semibold">{r.autores}.</span>{' '}
                 <span className="italic">{r.titulo}</span>.{' '}
                 {r.local}. {r.ano}.{r.vol ? ` ${r.vol}.` : ''}
               </li>

@@ -1,3 +1,5 @@
+import { LanguageProvider } from './contexts/LanguageContext';
+import FlagToggle from './components/FlagToggle';
 import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import React from 'react';
 import Home from './pages/Home';
@@ -116,6 +118,7 @@ class ErrorBoundary extends React.Component<
 export default function App() {
   return (
     <AuthProvider>
+      <LanguageProvider>
       <Router>
         <ScrollToTop />
         <ErrorBoundary>
@@ -237,7 +240,9 @@ export default function App() {
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
         </ErrorBoundary>
+        <FlagToggle />
       </Router>
+      </LanguageProvider>
     </AuthProvider>
   );
 }

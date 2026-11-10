@@ -21,7 +21,7 @@ function CapaLivro({ src, alt, fallbackTexto, accent, className = '' }: {
         <div className="w-full h-full flex flex-col items-center justify-center gap-2 p-3 text-center"
           style={{ background: 'linear-gradient(160deg, #1a1000, #2a1800)' }}>
           <BookOpen className="w-7 h-7" style={{ color: accent }} />
-          <span className="text-white/70 text-xs font-bold leading-tight">{fallbackTexto}</span>
+          <span className="text-white/88 text-sm font-bold leading-tight">{fallbackTexto}</span>
         </div>
       )}
     </div>
@@ -173,10 +173,10 @@ function CardSelecao({ livro, selecionado, onClick, index }: {
 
         {/* Info */}
         <div className="flex-1 min-w-0">
-          <p className="text-white font-black text-sm sm:text-base leading-tight truncate">
+          <p className="text-white font-black text-base sm:text-lg leading-tight truncate">
             {livro.titulo}
           </p>
-          <p className="text-white/45 text-xs font-semibold mt-0.5 truncate">{livro.autor}</p>
+          <p className="text-white/72 text-sm font-semibold mt-0.5 truncate">{livro.autor}</p>
         </div>
 
         {/* Indicador selecionado */}
@@ -194,7 +194,7 @@ function CardSelecao({ livro, selecionado, onClick, index }: {
       {/* Badge "Novo" */}
       {index === 0 && (
         <span
-          className="absolute -top-2 -right-2 text-[9px] font-black uppercase tracking-widest px-2 py-0.5 rounded-full"
+          className="absolute -top-2 -right-2 text-xs font-black uppercase tracking-widest px-2 py-0.5 rounded-full"
           style={{ color: livro.accentColor, background: `${livro.accentColor}22`, border: `1px solid ${livro.accentColor}50` }}
         >
           Novo
@@ -226,8 +226,8 @@ function DetalheLivro({ livro }: { livro: LivroData }) {
             {livro.titulo.split(' ').slice(0, -1).join(' ')}<br />
             <span style={{ color: ACCENT }}>{livro.titulo.split(' ').slice(-1)}</span>
           </h2>
-          <p className="text-white/70 text-xl sm:text-2xl font-semibold mb-2">{livro.tituloOriginal}</p>
-          <p className="text-white/50 text-lg font-medium">{livro.autor} · {livro.editora} / {livro.edicaoPort}</p>
+          <p className="text-white/88 text-xl sm:text-2xl font-semibold mb-2">{livro.tituloOriginal}</p>
+          <p className="text-white/75 text-xl font-medium">{livro.autor} · {livro.editora} / {livro.edicaoPort}</p>
         </div>
 
         {/* Card capas + dados */}
@@ -242,12 +242,12 @@ function DetalheLivro({ livro }: { livro: LivroData }) {
               <div className="relative flex gap-4">
                 <div className="flex flex-col items-center gap-2">
                   <CapaLivro src={livro.capaEN} alt={`${livro.titulo} — EN`} fallbackTexto={livro.tituloOriginal} accent={ACCENT} className="w-[110px] sm:w-[130px]" />
-                  <span className="text-xs font-black uppercase tracking-widest px-2.5 py-1 rounded-full"
+                  <span className="text-sm font-black uppercase tracking-widest px-2.5 py-1 rounded-full"
                     style={{ color: ACCENT, background: ACCENT_DIM, border: `1px solid ${ACCENT_BORDER}` }}>EN</span>
                 </div>
                 <div className="flex flex-col items-center gap-2">
                   <CapaLivro src={livro.capaPT} alt={`${livro.titulo} — PT`} fallbackTexto={livro.titulo} accent={ACCENT} className="w-[110px] sm:w-[130px]" />
-                  <span className="text-xs font-black uppercase tracking-widest px-2.5 py-1 rounded-full"
+                  <span className="text-sm font-black uppercase tracking-widest px-2.5 py-1 rounded-full"
                     style={{ color: '#34d399', background: '#34d39918', border: '1px solid #34d39940' }}>PT</span>
                 </div>
               </div>
@@ -255,7 +255,7 @@ function DetalheLivro({ livro }: { livro: LivroData }) {
             <div className="flex items-center gap-1.5">
               {[1,2,3,4,5].map(n => <Star key={n} className="w-5 h-5 fill-current" style={{ color: ACCENT }} />)}
             </div>
-            <p className="text-sm font-black uppercase tracking-widest px-4 py-2 rounded-full"
+            <p className="text-base font-black uppercase tracking-widest px-4 py-2 rounded-full"
               style={{ color: ACCENT, background: ACCENT_DIM, border: `1px solid ${ACCENT_BORDER}` }}>
               Leitura Essencial
             </p>
@@ -264,8 +264,8 @@ function DetalheLivro({ livro }: { livro: LivroData }) {
           {/* Dados */}
           <div className="flex flex-col justify-between gap-6">
             <div>
-              <p className="text-sm font-black uppercase tracking-[0.3em] mb-5" style={{ color: ACCENT }}>Sobre o Livro</p>
-              <p className="text-white/85 text-lg sm:text-xl leading-relaxed mb-8">{livro.sinopse}</p>
+              <p className="text-base font-black uppercase tracking-[0.3em] mb-5" style={{ color: ACCENT }}>Sobre o Livro</p>
+              <p className="text-white/85 text-xl sm:text-xl leading-relaxed mb-8">{livro.sinopse}</p>
               <div className="grid grid-cols-2 gap-4 mb-8">
                 {[
                   { label: 'Autor', value: livro.autor },
@@ -276,15 +276,15 @@ function DetalheLivro({ livro }: { livro: LivroData }) {
                   { label: 'Nível', value: livro.nivel },
                 ].map(m => (
                   <div key={m.label}>
-                    <span className="text-white/45 font-bold uppercase tracking-wider text-xs block mb-1">{m.label}</span>
-                    <span className="text-white/90 font-bold text-base">{m.value}</span>
+                    <span className="text-white/72 font-bold uppercase tracking-wider text-sm block mb-1">{m.label}</span>
+                    <span className="text-white/90 font-bold text-lg">{m.value}</span>
                   </div>
                 ))}
               </div>
             </div>
             <div className="flex flex-wrap gap-2">
               {livro.categorias.map(tag => (
-                <span key={tag} className="text-xs font-black uppercase tracking-wider px-3 py-1.5 rounded-full"
+                <span key={tag} className="text-sm font-black uppercase tracking-wider px-3 py-1.5 rounded-full"
                   style={{ color: ACCENT, background: ACCENT_DIM, border: `1px solid ${ACCENT_BORDER}` }}>{tag}</span>
               ))}
             </div>
@@ -294,7 +294,7 @@ function DetalheLivro({ livro }: { livro: LivroData }) {
         {/* Sobre o Autor */}
         <div className="mb-12 p-8 sm:p-12 rounded-3xl border border-purple-400/20"
           style={{ background: 'linear-gradient(135deg, #0a0518 0%, #100a20 50%, #080412 100%)' }}>
-          <p className="text-sm font-black uppercase tracking-[0.3em] mb-8" style={{ color: '#c084fc' }}>O Autor</p>
+          <p className="text-base font-black uppercase tracking-[0.3em] mb-8" style={{ color: '#c084fc' }}>O Autor</p>
           <div className="grid grid-cols-1 sm:grid-cols-[200px_1fr] gap-8 sm:gap-12">
             <div className="flex flex-col items-center sm:items-start gap-5">
               <div className="relative">
@@ -307,20 +307,20 @@ function DetalheLivro({ livro }: { livro: LivroData }) {
                   ) : (
                     <div className="w-full h-full flex items-center justify-center"
                       style={{ background: 'linear-gradient(160deg,#1a0a2e,#2a1050)' }}>
-                      <span className="text-5xl font-black text-white/40">AM</span>
+                      <span className="text-5xl font-black text-white/70">AM</span>
                     </div>
                   )}
                 </div>
               </div>
               <div className="text-center sm:text-left">
-                <p className="text-white font-black text-lg">{livro.autor}</p>
-                <p className="text-white/55 text-sm font-semibold mt-1">n. 1953 · Belfast, Irlanda</p>
-                <p className="text-white/40 text-sm mt-0.5">Oxford · King's College London</p>
+                <p className="text-white font-black text-xl">{livro.autor}</p>
+                <p className="text-white/80 text-base font-semibold mt-1">n. 1953 · Belfast, Irlanda</p>
+                <p className="text-white/70 text-base mt-0.5">Oxford · King's College London</p>
               </div>
             </div>
             <div className="flex flex-col gap-5">
               {livro.sobreAutor.map((p, i) => (
-                <p key={i} className="text-white/80 text-lg leading-relaxed">{p}</p>
+                <p key={i} className="text-white/80 text-xl leading-relaxed">{p}</p>
               ))}
             </div>
           </div>
@@ -333,7 +333,7 @@ function DetalheLivro({ livro }: { livro: LivroData }) {
         <div className="mb-14">
           <div className="flex items-center gap-4 mb-10">
             <div className="w-1.5 h-8 rounded-full" style={{ background: ACCENT, boxShadow: `0 0 14px ${ACCENT}90` }} />
-            <h3 className="font-display font-black text-lg uppercase tracking-widest" style={{ color: ACCENT }}>Os Grandes Temas</h3>
+            <h3 className="font-display font-black text-xl uppercase tracking-widest" style={{ color: ACCENT }}>Os Grandes Temas</h3>
             <div className="flex-1 h-px" style={{ background: `linear-gradient(90deg,${ACCENT}50,transparent)` }} />
           </div>
           <div className="flex flex-col gap-5">
@@ -352,16 +352,16 @@ function DetalheLivro({ livro }: { livro: LivroData }) {
                     </div>
                     <div>
                       <div className="flex items-center gap-3 mb-2">
-                        <span className="text-sm font-black uppercase tracking-widest px-3 py-1 rounded-full"
+                        <span className="text-base font-black uppercase tracking-widest px-3 py-1 rounded-full"
                           style={{ color: tema.cor, background: tema.cor + '22', border: `1px solid ${tema.cor}40` }}>{tema.num}</span>
-                        <span className="text-white/50 text-sm font-semibold uppercase tracking-wider">{tema.subtitulo}</span>
+                        <span className="text-white/75 text-base font-semibold uppercase tracking-wider">{tema.subtitulo}</span>
                       </div>
                       <h4 className="text-white font-black text-xl sm:text-2xl leading-tight">{tema.titulo}</h4>
                     </div>
                   </div>
-                  <p className="text-white/75 text-lg leading-relaxed mb-6 pl-16">{tema.texto}</p>
+                  <p className="text-white/75 text-xl leading-relaxed mb-6 pl-16">{tema.texto}</p>
                   <div className="ml-16 pl-5 border-l-2 py-2" style={{ borderColor: tema.cor + '70' }}>
-                    <p className="text-lg italic font-bold" style={{ color: tema.cor }}>{tema.destaque}</p>
+                    <p className="text-xl italic font-bold" style={{ color: tema.cor }}>{tema.destaque}</p>
                   </div>
                 </motion.div>
               );
@@ -376,7 +376,7 @@ function DetalheLivro({ livro }: { livro: LivroData }) {
           <blockquote className="font-display font-black text-2xl sm:text-3xl lg:text-4xl text-white leading-snug mb-6 max-w-3xl mx-auto">
             {livro.citacao}
           </blockquote>
-          <cite className="text-white/60 text-lg font-semibold not-italic">
+          <cite className="text-white/82 text-xl font-semibold not-italic">
             {livro.autor} · {livro.titulo}
           </cite>
         </div>
@@ -392,8 +392,8 @@ function DetalheLivro({ livro }: { livro: LivroData }) {
             {livro.porqueLeR.map((item, i) => (
               <div key={i} className="flex flex-col gap-4 p-7 rounded-2xl border"
                 style={{ background: `${item.cor}10`, borderColor: `${item.cor}35` }}>
-                <p className="font-black text-lg uppercase tracking-wide" style={{ color: item.cor }}>{item.titulo}</p>
-                <p className="text-white/80 text-base leading-relaxed">{item.texto}</p>
+                <p className="font-black text-xl uppercase tracking-wide" style={{ color: item.cor }}>{item.titulo}</p>
+                <p className="text-white/80 text-lg leading-relaxed">{item.texto}</p>
               </div>
             ))}
           </div>
@@ -402,13 +402,13 @@ function DetalheLivro({ livro }: { livro: LivroData }) {
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
           <Link to="/devocional/reforma"
-            className="group flex items-center justify-center gap-3 px-8 py-5 rounded-2xl font-black text-base uppercase tracking-widest transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
+            className="group flex items-center justify-center gap-3 px-8 py-5 rounded-2xl font-black text-lg uppercase tracking-widest transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
             style={{ background: ACCENT, color: '#000', boxShadow: `0 0 40px ${ACCENT}50` }}>
             Ir para o Devocional Reforma
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
           </Link>
           <Link to="/biblioteca/resenhas"
-            className="group flex items-center justify-center gap-3 px-8 py-5 rounded-2xl font-black text-base uppercase tracking-widest border border-white/25 hover:border-white/50 text-white/70 hover:text-white transition-all duration-200">
+            className="group flex items-center justify-center gap-3 px-8 py-5 rounded-2xl font-black text-lg uppercase tracking-widest border border-white/25 hover:border-white/50 text-white/88 hover:text-white transition-all duration-200">
             Ver todas as resenhas
             <ChevronRight className="w-5 h-5 group-hover:translate-x-0.5 transition-transform duration-200" />
           </Link>
@@ -432,21 +432,21 @@ export default function BibliotecaSemanaPage() {
 
           {/* Breadcrumb */}
           <motion.div initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }}
-            className="flex items-center gap-2 mb-10 text-sm font-black uppercase tracking-widest text-white/40">
+            className="flex items-center gap-2 mb-10 text-base font-black uppercase tracking-widest text-white/70">
             <Link to="/biblioteca" className="hover:text-amber-400 transition-colors">Biblioteca</Link>
             <ChevronRight className="w-4 h-4" />
-            <span className="text-white/60">Livro do Dia</span>
+            <span className="text-white/82">Livro do Dia</span>
           </motion.div>
 
           {/* Header */}
           <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.05 }}
             className="flex flex-wrap items-center gap-3 mb-10">
-            <span className="flex items-center gap-2 text-sm font-black uppercase tracking-[0.2em] px-5 py-2.5 rounded-full"
+            <span className="flex items-center gap-2 text-base font-black uppercase tracking-[0.2em] px-5 py-2.5 rounded-full"
               style={{ color: '#fbbf24', background: '#fbbf2428', border: '1px solid #fbbf2450' }}>
               <Star className="w-4 h-4 fill-current" />
               Livro do Dia
             </span>
-            <span className="flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-white/50">
+            <span className="flex items-center gap-2 text-base font-bold uppercase tracking-widest text-white/75">
               <Calendar className="w-4 h-4" />
               Outubro 2026
             </span>
@@ -458,7 +458,7 @@ export default function BibliotecaSemanaPage() {
             style={{ background: 'rgba(255,255,255,0.025)' }}>
             <div className="flex items-center gap-4 mb-6">
               <div className="w-1 h-6 rounded-full bg-white/20" />
-              <p className="text-xs font-black uppercase tracking-[0.3em] text-white/40">Escolha o Livro</p>
+              <p className="text-sm font-black uppercase tracking-[0.3em] text-white/70">Escolha o Livro</p>
             </div>
             <div className="flex flex-col gap-3">
               {LIVROS.map((l, i) => (

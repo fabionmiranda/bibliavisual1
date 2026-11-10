@@ -3,6 +3,7 @@ import { BookOpen, Share2, Menu, X, Lock } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { cn } from '../lib/utils';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const CLUBE_URL = 'https://chat.whatsapp.com/HEIIFYAmLij62M0jRwwVhH';
 
@@ -11,13 +12,12 @@ const CLUBE_URL = 'https://chat.whatsapp.com/HEIIFYAmLij62M0jRwwVhH';
 //  • lg  (1024–1279px): só o ícone da logo + links + Contatos/Admin/Diagramas
 //  • xl  (≥ 1280px):    logo completa + links + Contatos/Admin/Diagramas
 //  • 2xl (≥ 1536px):    barra mais larga, com o botão Clube
-export default function Navbar({
-  lang = 'pt',
-  onToggleLang,
-}: {
+// `lang` é aceito por compatibilidade; o idioma vem do contexto global.
+export default function Navbar(_: {
   lang?: 'pt' | 'en';
   onToggleLang?: () => void;
 }) {
+  const [lang, setLang] = useLanguage();
   const pt = lang === 'pt';
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
@@ -286,14 +286,12 @@ export default function Navbar({
                 >
                   {pt ? 'Contatos' : 'Contact'}
                 </button>
-                {onToggleLang && (
-                  <button
-                    onClick={onToggleLang}
-                    className="py-2 font-black uppercase tracking-widest text-[11px] text-white/85 hover:text-white transition-colors"
-                  >
-                    {pt ? 'English' : 'Português'}
-                  </button>
-                )}
+                <button
+                  onClick={() => setLang(pt ? 'en' : 'pt')}
+                  className="py-2 font-black uppercase tracking-widest text-[11px] text-white/85 hover:text-white transition-colors"
+                >
+                  {pt ? 'English' : 'Português'}
+                </button>
                 <Link
                   to="/admin" onClick={close}
                   className={cn(

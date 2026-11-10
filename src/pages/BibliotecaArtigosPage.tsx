@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import { ChevronRight, ArrowRight, FileText, PenLine } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import FlagToggle from '../components/FlagToggle';
 import { ARTIGOS_TEOLOGIA } from '../data/teologia';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const ACCENT = '#a78bfa';
 const ACCENT_DIM = '#a78bfa18';
@@ -26,7 +26,7 @@ function corCategoria(cat: string) {
 }
 
 export default function BibliotecaArtigosPage() {
-  const [lang, setLang] = useState<'pt' | 'en'>('pt');
+  const [lang, setLang] = useLanguage();
   const pt = lang === 'pt';
 
   const publicados = ARTIGOS_TEOLOGIA.filter(a => a.area === 'artigos' && a.status === 'publicado');
@@ -50,13 +50,13 @@ export default function BibliotecaArtigosPage() {
           <motion.div
             initial={{ opacity: 0, x: -10 }}
             animate={{ opacity: 1, x: 0 }}
-            className="flex items-center gap-2 mb-10 text-xs font-black uppercase tracking-widest text-white/35"
+            className="flex items-center gap-2 mb-10 text-sm font-black uppercase tracking-widest text-white/65"
           >
             <Link to="/biblioteca" className="hover:text-purple-400 transition-colors">
               {pt ? 'Biblioteca' : 'Library'}
             </Link>
             <ChevronRight className="w-3.5 h-3.5" />
-            <span className="text-white/55">{pt ? 'Artigos Recomendados' : 'Recommended Articles'}</span>
+            <span className="text-white/80">{pt ? 'Artigos Recomendados' : 'Recommended Articles'}</span>
           </motion.div>
 
           {/* Hero */}
@@ -73,7 +73,7 @@ export default function BibliotecaArtigosPage() {
               >
                 <PenLine className="w-6 h-6" style={{ color: ACCENT }} strokeWidth={1.5} />
               </div>
-              <p className="text-xs font-black uppercase tracking-[0.32em]" style={{ color: ACCENT }}>
+              <p className="text-sm font-black uppercase tracking-[0.32em]" style={{ color: ACCENT }}>
                 {pt ? 'Artigos · Teologia & Hermenêutica' : 'Articles · Theology & Hermeneutics'}
               </p>
             </div>
@@ -83,7 +83,7 @@ export default function BibliotecaArtigosPage() {
               <span style={{ color: ACCENT }}>{pt ? 'Recomendados' : 'Recommended'}</span>
             </h1>
 
-            <p className="text-white/60 text-lg sm:text-xl leading-relaxed max-w-2xl mb-6">
+            <p className="text-white/82 text-xl sm:text-xl leading-relaxed max-w-2xl mb-6">
               {pt
                 ? 'Textos de aprofundamento nas grandes questões da fé cristã — escritos com rigor teológico e linguagem acessível para pastores, professores e estudantes.'
                 : 'In-depth texts on the great questions of the Christian faith — written with theological rigor and accessible language for pastors, professors and students.'}
@@ -93,7 +93,7 @@ export default function BibliotecaArtigosPage() {
             <div className="flex items-center gap-6">
               <div className="flex items-center gap-2.5">
                 <span className="text-3xl font-black" style={{ color: ACCENT }}>{publicados.length}</span>
-                <span className="text-white/40 text-sm font-semibold">
+                <span className="text-white/70 text-base font-semibold">
                   {pt
                     ? `artigo${publicados.length !== 1 ? 's' : ''} publicado${publicados.length !== 1 ? 's' : ''}`
                     : `published article${publicados.length !== 1 ? 's' : ''}`}
@@ -103,8 +103,8 @@ export default function BibliotecaArtigosPage() {
                 <>
                   <div className="w-px h-5 bg-white/10" />
                   <div className="flex items-center gap-2">
-                    <span className="text-white/30 text-lg font-black">{rascunhos.length}</span>
-                    <span className="text-white/25 text-sm font-semibold">
+                    <span className="text-white/60 text-xl font-black">{rascunhos.length}</span>
+                    <span className="text-white/55 text-base font-semibold">
                       {pt ? 'em preparação' : 'in preparation'}
                     </span>
                   </div>
@@ -119,7 +119,7 @@ export default function BibliotecaArtigosPage() {
 
           {/* Artigos publicados */}
           {publicados.length === 0 ? (
-            <div className="text-center py-20 text-white/30 text-base">
+            <div className="text-center py-20 text-white/60 text-lg">
               {pt ? 'Nenhum artigo publicado ainda. Em breve.' : 'No articles published yet. Coming soon.'}
             </div>
           ) : (
@@ -139,7 +139,7 @@ export default function BibliotecaArtigosPage() {
                     <div className="flex items-center gap-3 mb-6">
                       <div className="w-1 h-5 rounded-full" style={{ background: cor, boxShadow: `0 0 8px ${cor}80` }} />
                       <span
-                        className="text-xs font-black uppercase tracking-[0.28em] px-3 py-1.5 rounded-full"
+                        className="text-sm font-black uppercase tracking-[0.28em] px-3 py-1.5 rounded-full"
                         style={{ color: cor, background: cor + '18', border: `1px solid ${cor}35` }}
                       >
                         {categoria}
@@ -175,14 +175,14 @@ export default function BibliotecaArtigosPage() {
                             {/* Conteúdo */}
                             <div className="flex-1 min-w-0">
                               {artigo.parte && (
-                                <p className="text-xs font-bold uppercase tracking-wider mb-2" style={{ color: cor + 'aa' }}>
+                                <p className="text-sm font-bold uppercase tracking-wider mb-2" style={{ color: cor + 'aa' }}>
                                   {artigo.parte}
                                 </p>
                               )}
-                              <h2 className="text-white font-black text-lg sm:text-xl leading-tight mb-3 group-hover:text-white transition-colors">
+                              <h2 className="text-white font-black text-xl sm:text-xl leading-tight mb-3 group-hover:text-white transition-colors">
                                 {artigo.titulo}
                               </h2>
-                              <p className="text-white/55 text-base leading-relaxed line-clamp-3">
+                              <p className="text-white/80 text-lg leading-relaxed line-clamp-3">
                                 {artigo.resumo}
                               </p>
                             </div>
@@ -215,7 +215,7 @@ export default function BibliotecaArtigosPage() {
               {/* Header seção */}
               <div className="flex items-center gap-4 mb-8">
                 <div className="w-1 h-6 rounded-full bg-white/15" />
-                <h2 className="font-display font-black text-sm uppercase tracking-widest text-white/30">
+                <h2 className="font-display font-black text-base uppercase tracking-widest text-white/60">
                   {pt ? 'Em Preparação' : 'In Preparation'}
                 </h2>
                 <div className="flex-1 h-px bg-white/08" />
@@ -233,14 +233,14 @@ export default function BibliotecaArtigosPage() {
                   >
                     <div className="w-1.5 h-1.5 rounded-full bg-white/15 shrink-0" />
                     <div className="min-w-0">
-                      <p className="text-white/35 text-xs font-bold uppercase tracking-wider mb-0.5">
+                      <p className="text-white/65 text-sm font-bold uppercase tracking-wider mb-0.5">
                         {artigo.categoria}
                       </p>
-                      <p className="text-white/40 text-sm font-semibold leading-snug truncate">
+                      <p className="text-white/70 text-base font-semibold leading-snug truncate">
                         {artigo.titulo}
                       </p>
                     </div>
-                    <span className="ml-auto shrink-0 text-[9px] font-black uppercase tracking-widest px-2 py-1 rounded-full text-white/25 border border-white/10">
+                    <span className="ml-auto shrink-0 text-xs font-black uppercase tracking-widest px-2 py-1 rounded-full text-white/55 border border-white/10">
                       {pt ? 'Em breve' : 'Soon'}
                     </span>
                   </motion.div>
@@ -258,7 +258,7 @@ export default function BibliotecaArtigosPage() {
           >
             <Link
               to="/biblioteca"
-              className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.18em] text-white/35 hover:text-purple-400 transition-colors duration-200"
+              className="inline-flex items-center gap-2 text-sm font-black uppercase tracking-[0.18em] text-white/65 hover:text-purple-400 transition-colors duration-200"
             >
               <ChevronRight className="w-3.5 h-3.5 rotate-180" />
               {pt ? 'Voltar para Biblioteca' : 'Back to Library'}
@@ -269,7 +269,6 @@ export default function BibliotecaArtigosPage() {
       </section>
 
       <Footer lang={lang} />
-      <FlagToggle lang={lang} setLang={setLang} />
     </div>
   );
 }

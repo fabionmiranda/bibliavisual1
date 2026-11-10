@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import VideoIntro from '../components/VideoIntro';
 import Footer from '../components/Footer';
-import FlagToggle from '../components/FlagToggle';
 import { ARTIGOS_TEOLOGIA } from '../data/teologia';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const BG = '#060d1f';
 
@@ -157,6 +157,18 @@ function getAreas(pt: boolean): AreaCard[] {
       tags: pt
         ? ['Inteligência Artificial', 'Ética Digital', 'Imago Dei', 'Transhumanismo', 'Redes Sociais', 'Cultura Digital']
         : ['Artificial Intelligence', 'Digital Ethics', 'Imago Dei', 'Transhumanism', 'Social Media', 'Digital Culture'],
+    },
+    {
+      slug: 'politica',
+      titulo: pt ? 'Teologia Política' : 'Political Theology',
+      descricao: pt
+        ? 'A relação entre o Reino de Deus e os reinos deste mundo — Igreja e Estado, autoridade civil, justiça, liberdade religiosa e a vocação pública do cristão à luz das Escrituras.'
+        : 'The relationship between the Kingdom of God and the kingdoms of this world — Church and State, civil authority, justice, religious liberty and the Christian’s public calling in the light of Scripture.',
+      icon: '⚖️',
+      cor: '#fbbf24',
+      tags: pt
+        ? ['Igreja e Estado', 'Dois Reinos', 'Soberania das Esferas', 'Magistrado Civil', 'Justiça', 'Liberdade Religiosa']
+        : ['Church and State', 'Two Kingdoms', 'Sphere Sovereignty', 'Civil Magistrate', 'Justice', 'Religious Liberty'],
     },
     {
       slug: 'aulas-avancadas',
@@ -340,11 +352,11 @@ function AreaCardItem({ area, pt }: { area: AreaCard; pt: boolean }) {
 // ── Página hub ───────────────────────────────────────────────────────────────
 
 export default function TeologiaPage() {
-  const [lang, setLang] = useState<'pt'|'en'>('pt');
+  const [lang, setLang] = useLanguage();
   const pt = lang === 'pt';
   const AREAS = getAreas(pt);
-  const areasAcademic = AREAS.slice(0, 11);
-  const areasFixed    = AREAS.slice(11);
+  const areasAcademic = AREAS.filter(a => !a.rota);
+  const areasFixed    = AREAS.filter(a => a.rota);
 
   return (
     <div style={{ minHeight: '100vh', background: BG, color: 'rgba(255,255,255,0.92)' }}>
@@ -427,7 +439,6 @@ export default function TeologiaPage() {
       </div>
 
       <Footer lang={lang} />
-      <FlagToggle lang={lang} setLang={setLang} />
     </div>
   );
 }

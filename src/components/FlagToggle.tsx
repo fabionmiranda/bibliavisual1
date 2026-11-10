@@ -1,13 +1,12 @@
-export default function FlagToggle({
-  lang,
-  setLang,
-}: {
-  lang: 'pt' | 'en';
-  setLang: (l: 'pt' | 'en') => void;
-}) {
+import { useLanguage } from '../contexts/LanguageContext';
+
+/* Bandeiras no canto inferior esquerdo — renderizadas uma vez em App, valem para todo o site. */
+export default function FlagToggle() {
+  const [lang, setLang] = useLanguage();
   return (
     <div
-      className="fixed z-50 flex items-center gap-2"
+      className="fixed z-50 flex items-center gap-2 notranslate"
+      translate="no"
       style={{
         bottom: 'calc(1.25rem + env(safe-area-inset-bottom))',
         left: 'max(1rem, env(safe-area-inset-left))',

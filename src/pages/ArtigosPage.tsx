@@ -4,8 +4,8 @@ import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import FlagToggle from '../components/FlagToggle';
 import { ARTIGOS_TEOLOGIA } from '../data/teologia';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const BG = '#060d1f';
 const COR = '#a78bfa';
@@ -14,7 +14,7 @@ const artigos = ARTIGOS_TEOLOGIA.filter(a => a.area === 'artigos' && a.status ==
 
 export default function ArtigosPage() {
   const navigate = useNavigate();
-  const [lang, setLang] = useState<'pt'|'en'>('pt');
+  const [lang, setLang] = useLanguage();
   const pt = lang === 'pt';
 
   return (
@@ -173,7 +173,6 @@ export default function ArtigosPage() {
       </div>
 
       <Footer lang={lang} />
-      <FlagToggle lang={lang} setLang={setLang} />
     </div>
   );
 }

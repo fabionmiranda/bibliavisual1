@@ -7,10 +7,10 @@ import {
   LogOut, Users, User, Crown,
 } from 'lucide-react';
 import Navbar from '../components/Navbar';
-import FlagToggle from '../components/FlagToggle';
 import { BIBLE_DATA } from '../data/bibleData';
 import { BOOK_CONFIG } from './LivroPage';
 import { useAuth } from '../contexts/AuthContext';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const PARES_ADMIN: Array<{ remover: string; manter: string; nome: string }> = [
   { remover: '2-samuel',   manter: '1-samuel',   nome: '1 e 2 Samuel'    },
@@ -263,7 +263,7 @@ function ModalUsuarios({ token, onClose, pt }: { token: string; onClose: () => v
 }
 
 export default function AdminPage() {
-  const [lang, setLang] = useState<'pt'|'en'>('pt');
+  const [lang, setLang] = useLanguage();
   const pt = lang === 'pt';
   const [busca, setBusca]             = useState('');
   const [statuses, setStatuses]       = useState<Record<string, Status | null>>({});
@@ -438,7 +438,6 @@ export default function AdminPage() {
           <ModalUsuarios token={token ?? ''} onClose={() => setModalUsuarios(false)} pt={pt} />
         )}
       </AnimatePresence>
-      <FlagToggle lang={lang} setLang={setLang} />
     </div>
   );
 }

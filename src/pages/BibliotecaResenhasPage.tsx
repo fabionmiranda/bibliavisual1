@@ -59,7 +59,7 @@ export default function BibliotecaResenhasPage() {
           <motion.div
             initial={{ opacity: 0, x: -10 }}
             animate={{ opacity: 1, x: 0 }}
-            className="flex items-center gap-2 mb-10 text-[10px] font-black uppercase tracking-widest text-white/30"
+            className="flex items-center gap-2 mb-10 text-[13px] font-black uppercase tracking-widest text-white/60"
           >
             <Link to="/biblioteca" className="hover:text-brand-blue transition-colors">Biblioteca</Link>
             <ChevronRight className="w-3 h-3" />
@@ -72,13 +72,13 @@ export default function BibliotecaResenhasPage() {
             animate={{ opacity: 1, y: 0 }}
             className="mb-10"
           >
-            <p className="text-[10px] font-black tracking-[0.35em] uppercase text-[#fb7185] mb-3">
+            <p className="text-[13px] font-black tracking-[0.35em] uppercase text-[#fb7185] mb-3">
               Análise Crítica
             </p>
             <h1 className="font-display font-black text-3xl sm:text-4xl text-white leading-tight mb-3">
               Resenhas
             </h1>
-            <p className="text-white/60 text-sm sm:text-base max-w-lg leading-relaxed">
+            <p className="text-white/82 text-base sm:text-lg max-w-lg leading-relaxed">
               Análises detalhadas de obras importantes para o ministério, a pregação e o estudo teológico.
             </p>
           </motion.div>
@@ -94,16 +94,16 @@ export default function BibliotecaResenhasPage() {
               <Library className="w-4 h-4 text-[#fb7185]" strokeWidth={1.5} />
             </div>
             <div>
-              <p className="text-[9px] font-black uppercase tracking-[0.3em] text-[#fb7185]/70 mb-0.5">Série em andamento</p>
-              <p className="text-white/85 text-xs font-bold">Resenhas da Reforma Protestante</p>
+              <p className="text-xs font-black uppercase tracking-[0.3em] text-[#fb7185]/70 mb-0.5">Série em andamento</p>
+              <p className="text-white/85 text-sm font-bold">Resenhas da Reforma Protestante</p>
             </div>
             <div className="ml-auto flex items-center gap-1.5">
               {[1, 2].map(n => (
-                <div key={n} className="w-6 h-6 rounded-full flex items-center justify-center text-[9px] font-black bg-white/10 text-white/50 border border-white/10">
+                <div key={n} className="w-6 h-6 rounded-full flex items-center justify-center text-xs font-black bg-white/10 text-white/75 border border-white/10">
                   {n}
                 </div>
               ))}
-              <div className="w-6 h-6 rounded-full flex items-center justify-center text-[9px] font-black bg-white/5 text-white/20 border border-white/5 border-dashed">
+              <div className="w-6 h-6 rounded-full flex items-center justify-center text-xs font-black bg-white/5 text-white/50 border border-white/5 border-dashed">
                 +
               </div>
             </div>
@@ -162,13 +162,13 @@ export default function BibliotecaResenhasPage() {
                             DIA {String(r.parte).padStart(2, '0')}
                           </span>
                         </div>
-                        <span className="text-[8px] font-black uppercase tracking-[0.22em]"
+                        <span className="text-xs font-black uppercase tracking-[0.22em]"
                           style={{ color: r.accentColor + 'aa' }}>de 31</span>
                       </div>
 
                       {/* crédito foto — só desktop */}
                       {r.foto && (
-                        <span className="hidden sm:block text-[7px] font-bold text-center leading-relaxed"
+                        <span className="hidden sm:block text-[11px] font-bold text-center leading-relaxed"
                           style={{ color: 'rgba(255,255,255,0.22)', maxWidth: 100 }}>
                           {r.fotoCredito}
                         </span>
@@ -181,37 +181,37 @@ export default function BibliotecaResenhasPage() {
                         {/* badges topo */}
                         <div className="flex flex-wrap items-center gap-2 mb-4">
                           <span
-                            className="inline-flex items-center gap-1.5 text-[8px] font-black uppercase tracking-widest px-2.5 py-1 rounded-full"
+                            className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-widest px-2.5 py-1 rounded-full"
                             style={{ color: r.accentColor, background: r.accentColor + '18', border: `1px solid ${r.accentColor}30` }}
                           >
                             <Library className="w-2.5 h-2.5" />
                             {r.area}
                           </span>
-                          <span className="inline-flex items-center gap-1.5 text-[8px] font-black uppercase tracking-widest px-2.5 py-1 rounded-full text-amber-400/80 bg-amber-400/10 border border-amber-400/20">
+                          <span className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-widest px-2.5 py-1 rounded-full text-amber-400/80 bg-amber-400/10 border border-amber-400/20">
                             <Star className="w-2.5 h-2.5 fill-current" />
                             Destaque
                           </span>
                         </div>
 
                         {/* título */}
-                        <p className="text-[10px] font-black tracking-[0.3em] uppercase mb-1"
+                        <p className="text-[13px] font-black tracking-[0.3em] uppercase mb-1"
                           style={{ color: r.accentColor + 'aa' }}>{r.titulo}</p>
                         <h2 className="font-display font-black text-xl sm:text-2xl text-white leading-tight mb-1">
                           {r.tituloDestaque}
                         </h2>
-                        <p className="text-white/60 text-xs italic mb-4">{r.subtitulo}</p>
+                        <p className="text-white/82 text-sm italic mb-4">{r.subtitulo}</p>
 
                         {/* meta */}
                         <div className="flex flex-wrap gap-2 mb-4">
                           {[r.autor, r.editora, r.referencia].map(m => (
-                            <span key={m} className="px-3 py-1 rounded-lg text-[10px] font-bold text-white/70 bg-white/6 border border-white/10">
+                            <span key={m} className="px-3 py-1 rounded-lg text-[13px] font-bold text-white/88 bg-white/6 border border-white/10">
                               {m}
                             </span>
                           ))}
                         </div>
 
                         {/* sinopse */}
-                        <p className="text-white/78 text-sm leading-relaxed line-clamp-3">
+                        <p className="text-white/78 text-base leading-relaxed line-clamp-3">
                           {r.sinopse}
                         </p>
                       </div>
@@ -220,13 +220,13 @@ export default function BibliotecaResenhasPage() {
                       <div className="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-white/8">
                         <div className="flex flex-wrap gap-1.5">
                           {r.categorias.map(c => (
-                            <span key={c} className="px-2.5 py-1 rounded-full text-[8px] font-black uppercase tracking-widest text-white/50 border border-white/10">
+                            <span key={c} className="px-2.5 py-1 rounded-full text-xs font-black uppercase tracking-widest text-white/75 border border-white/10">
                               {c}
                             </span>
                           ))}
                         </div>
                         <span
-                          className="inline-flex items-center gap-1.5 text-[10px] font-black uppercase tracking-widest transition-all duration-200 group-hover:gap-3"
+                          className="inline-flex items-center gap-1.5 text-[13px] font-black uppercase tracking-widest transition-all duration-200 group-hover:gap-3"
                           style={{ color: r.accentColor }}
                         >
                           <BookOpen className="w-3.5 h-3.5" strokeWidth={2} />
@@ -250,7 +250,7 @@ export default function BibliotecaResenhasPage() {
           >
             <Link
               to="/biblioteca"
-              className="inline-flex items-center gap-2 text-white/55 hover:text-white text-xs font-black uppercase tracking-widest transition-colors"
+              className="inline-flex items-center gap-2 text-white/80 hover:text-white text-sm font-black uppercase tracking-widest transition-colors"
             >
               <ArrowLeft className="w-3.5 h-3.5" />
               Voltar para a Biblioteca

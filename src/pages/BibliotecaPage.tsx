@@ -9,8 +9,8 @@ import {
 import Navbar from '../components/Navbar';
 import VideoIntro from '../components/VideoIntro';
 import Footer from '../components/Footer';
-import FlagToggle from '../components/FlagToggle';
 import { ARTIGOS_TEOLOGIA } from '../data/teologia';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const ARTIGOS_COUNT = ARTIGOS_TEOLOGIA.filter(a => a.area === 'artigos' && a.status === 'publicado').length;
 
@@ -212,7 +212,7 @@ function getSecaoAreas(pt: boolean) {
 /* ─── page ─────────────────────────────────────────────────────────────────── */
 
 export default function BibliotecaPage() {
-  const [lang, setLang] = useState<'pt'|'en'>('pt');
+  const [lang, setLang] = useLanguage();
   const pt = lang === 'pt';
   const SECAO_PRINCIPAL = getSecaoPrincipal(pt);
   const SECAO_AREAS = getSecaoAreas(pt);
@@ -232,7 +232,7 @@ export default function BibliotecaPage() {
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.55 }} className="mb-16">
             <div className="flex items-center gap-3 mb-5">
               <div className="w-8 h-px" style={{ background: '#00d4ff' }} />
-              <p className="text-[10px] font-black tracking-[0.35em] uppercase text-brand-blue">
+              <p className="text-[13px] font-black tracking-[0.35em] uppercase text-brand-blue">
                 {pt ? 'Recursos Teológicos' : 'Theological Resources'}
               </p>
             </div>
@@ -244,7 +244,7 @@ export default function BibliotecaPage() {
             <div className="w-full max-w-3xl mx-auto" style={{ margin: '8px auto 32px' }}>
               <VideoIntro pt={pt} />
             </div>
-            <p className="text-white/40 text-base sm:text-lg max-w-2xl leading-relaxed">
+            <p className="text-white/70 text-lg sm:text-xl max-w-2xl leading-relaxed">
               {pt
                 ? 'Livros, artigos, estudos confessionais, autores e guias selecionados para aprofundar o estudo expositivo da Bíblia.'
                 : 'Books, articles, confessional studies, authors and guides selected to deepen expository Bible study.'}
@@ -254,7 +254,7 @@ export default function BibliotecaPage() {
           {/* section label */}
           <div className="flex items-center gap-4 mb-8">
             <div className="w-1 h-6 rounded-full bg-brand-blue" style={{ boxShadow: '0 0 10px #00d4ff80' }} />
-            <h2 className="font-display font-black text-sm uppercase tracking-widest text-brand-blue">
+            <h2 className="font-display font-black text-base uppercase tracking-widest text-brand-blue">
               {pt ? 'Coleções' : 'Collections'}
             </h2>
             <div className="flex-1 h-px" style={{ background: 'linear-gradient(90deg,#00d4ff30,transparent)' }} />
@@ -304,7 +304,7 @@ export default function BibliotecaPage() {
                           <Icone className="w-6 h-6" style={{ color: item.accent }} strokeWidth={1.5} />
                         </motion.div>
                         {item.badge && (
-                          <span className="text-[9px] font-black uppercase tracking-widest px-2.5 py-1 rounded-full"
+                          <span className="text-xs font-black uppercase tracking-widest px-2.5 py-1 rounded-full"
                             style={{ color: item.accent, background: `${item.accent}15`, border: `1px solid ${item.accent}30` }}>
                             {item.badge}
                           </span>
@@ -313,10 +313,10 @@ export default function BibliotecaPage() {
 
                       {/* text */}
                       <div className="flex-1">
-                        <h3 className="text-white font-black text-base sm:text-lg leading-snug mb-2 group-hover:text-white transition-colors">
+                        <h3 className="text-white font-black text-lg sm:text-xl leading-snug mb-2 group-hover:text-white transition-colors">
                           {item.label}
                         </h3>
-                        <p className="text-white/45 text-xs sm:text-sm leading-relaxed group-hover:text-white/60 transition-colors">
+                        <p className="text-white/72 text-sm sm:text-base leading-relaxed group-hover:text-white/82 transition-colors">
                           {item.descricao}
                         </p>
                       </div>
@@ -324,7 +324,7 @@ export default function BibliotecaPage() {
                       {/* cta */}
                       <div className="flex items-center gap-1.5 mt-5 pt-4"
                         style={{ borderTop: `1px solid ${item.accent}18` }}>
-                        <span className="text-[10px] font-black uppercase tracking-widest transition-all duration-200 translate-x-0 group-hover:translate-x-0.5"
+                        <span className="text-[13px] font-black uppercase tracking-widest transition-all duration-200 translate-x-0 group-hover:translate-x-0.5"
                           style={{ color: `${item.accent}cc` }}>
                           {pt ? 'Explorar' : 'Explore'}
                         </span>
@@ -349,7 +349,7 @@ export default function BibliotecaPage() {
           <div>
             <div className="flex items-center gap-4 mb-8">
               <div className="w-1 h-6 rounded-full bg-brand-rose" style={{ boxShadow: '0 0 10px #ff2d5580' }} />
-              <h2 className="font-display font-black text-sm uppercase tracking-widest text-brand-rose">
+              <h2 className="font-display font-black text-base uppercase tracking-widest text-brand-rose">
                 {pt ? 'Por Área' : 'By Area'}
               </h2>
               <div className="flex-1 h-px" style={{ background: 'linear-gradient(90deg,#ff2d5530,transparent)' }} />
@@ -373,10 +373,10 @@ export default function BibliotecaPage() {
                         style={{ background: item.accent + '15', border: `1px solid ${item.accent}28` }}>
                         <Icone className="w-5 h-5" style={{ color: item.accent }} strokeWidth={1.5} />
                       </div>
-                      <span className="text-white/70 group-hover:text-white font-bold text-sm transition-colors duration-150">
+                      <span className="text-white/88 group-hover:text-white font-bold text-base transition-colors duration-150">
                         {item.label}
                       </span>
-                      <ChevronRight className="w-3.5 h-3.5 ml-auto shrink-0 text-white/20 group-hover:text-white/50 -translate-x-1 group-hover:translate-x-0 transition-all duration-200" />
+                      <ChevronRight className="w-3.5 h-3.5 ml-auto shrink-0 text-white/50 group-hover:text-white/75 -translate-x-1 group-hover:translate-x-0 transition-all duration-200" />
                     </Link>
                   </motion.div>
                 );
@@ -388,7 +388,6 @@ export default function BibliotecaPage() {
       </section>
 
       <Footer lang={lang} />
-      <FlagToggle lang={lang} setLang={setLang} />
     </div>
   );
 }

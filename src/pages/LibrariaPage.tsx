@@ -4,7 +4,7 @@ import { useRef, useState } from 'react';
 import { BookOpen, ShoppingCart, Eye, Lock, Star, BookMarked, Award, Users, ChevronRight, ChevronDown } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import VideoIntro from '../components/VideoIntro';
-import FlagToggle from '../components/FlagToggle';
+import { useLanguage } from '../contexts/LanguageContext';
 
 /* ── SVGs temáticos para as capas ── */
 const SVG_MATEUS = (cor: string) => (
@@ -476,7 +476,7 @@ function CatalogCard({ vol, idx, pt }: { vol: VolumeItem; idx: number; pt: boole
 
 /* ══ PÁGINA PRINCIPAL ══ */
 export default function LibrariaPage() {
-  const [lang, setLang] = useState<'pt'|'en'>('pt');
+  const [lang, setLang] = useLanguage();
   const pt = lang === 'pt';
   const [selectedEvangelho, setSelectedEvangelho] = useState<string | null>(null);
   const catalogRef = useRef<HTMLElement>(null);
@@ -721,7 +721,6 @@ export default function LibrariaPage() {
           </Link>
         </div>
       </footer>
-      <FlagToggle lang={lang} setLang={setLang} />
     </div>
   );
 }

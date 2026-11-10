@@ -72,6 +72,11 @@
     overflow-wrap: break-word;
     word-break: break-word;
   }
+
+  /* Páginas de cartões (índices da Biblioteca): textos curtos ficam alinhados à esquerda */
+  .sem-justificar p {
+    text-align: left;
+  }
 }
 
 @layer components {
@@ -145,3 +150,9 @@
   }
 }
 
+
+/* Tradutor automático (Google Translate): esconde barra, balões e realces */
+.goog-te-banner-frame, iframe.skiptranslate, #goog-gt-tt, .goog-te-balloon-frame, .goog-tooltip, #google_translate_element { display: none !important; }
+body { top: 0 !important; position: static !important; }
+.goog-text-highlight { background: none !important; box-shadow: none !important; }
+font[style*="vertical-align: inherit"] { background: none !important; }

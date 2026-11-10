@@ -51,11 +51,11 @@ export default function BibliotecaLivrosPage() {
           <motion.div
             initial={{ opacity: 0, x: -10 }}
             animate={{ opacity: 1, x: 0 }}
-            className="flex items-center gap-2 mb-10 text-[10px] font-black uppercase tracking-widest text-white/30"
+            className="flex items-center gap-2 mb-10 text-[13px] font-black uppercase tracking-widest text-white/60"
           >
             <Link to="/biblioteca" className="hover:text-brand-blue transition-colors">Biblioteca</Link>
             <ChevronRight className="w-3 h-3" />
-            <span className="text-white/55">Livros Recomendados</span>
+            <span className="text-white/80">Livros Recomendados</span>
           </motion.div>
 
           {/* Header */}
@@ -64,13 +64,13 @@ export default function BibliotecaLivrosPage() {
             animate={{ opacity: 1, y: 0 }}
             className="mb-12"
           >
-            <p className="text-[10px] font-black tracking-[0.35em] uppercase text-brand-blue mb-3">
+            <p className="text-[13px] font-black tracking-[0.35em] uppercase text-brand-blue mb-3">
               Seleção Curada
             </p>
             <h1 className="font-display font-black text-3xl sm:text-4xl text-white leading-tight mb-3">
               Livros Recomendados
             </h1>
-            <p className="text-white/40 text-sm sm:text-base max-w-lg leading-relaxed">
+            <p className="text-white/70 text-base sm:text-lg max-w-lg leading-relaxed">
               Obras selecionadas que moldam pregadores, teólogos e estudiosos sérios da Palavra.
             </p>
           </motion.div>
@@ -105,8 +105,8 @@ export default function BibliotecaLivrosPage() {
                       }}
                     />
                     <div className="hidden w-full rounded-xl border border-white/10 bg-white/5 flex flex-col items-center justify-center p-4 gap-2" style={{ aspectRatio: '2/3' }}>
-                      <BookOpen className="w-10 h-10 text-white/20" strokeWidth={1} />
-                      <span className="text-white/30 text-[9px] text-center font-bold">{livro.titulo}</span>
+                      <BookOpen className="w-10 h-10 text-white/50" strokeWidth={1} />
+                      <span className="text-white/60 text-xs text-center font-bold">{livro.titulo}</span>
                     </div>
                   </div>
 
@@ -115,7 +115,7 @@ export default function BibliotecaLivrosPage() {
                     <div>
                       {livro.destaque && (
                         <span
-                          className="inline-flex items-center gap-1.5 text-[8px] font-black uppercase tracking-widest px-2.5 py-1 rounded-full mb-3"
+                          className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-widest px-2.5 py-1 rounded-full mb-3"
                           style={{ color: livro.accentColor, background: livro.accentColor + '18', border: `1px solid ${livro.accentColor}30` }}
                         >
                           <Star className="w-2.5 h-2.5 fill-current" />
@@ -125,11 +125,11 @@ export default function BibliotecaLivrosPage() {
                       <h2 className="font-display font-black text-2xl sm:text-3xl text-white leading-tight mb-2">
                         {livro.titulo}
                       </h2>
-                      <p className="text-white/60 text-sm sm:text-base italic mb-3">{livro.subtitulo}</p>
-                      <p className="text-white/75 text-xs sm:text-sm font-bold uppercase tracking-wider mb-4">
+                      <p className="text-white/82 text-base sm:text-lg italic mb-3">{livro.subtitulo}</p>
+                      <p className="text-white/75 text-sm sm:text-base font-bold uppercase tracking-wider mb-4">
                         {livro.autor} · {livro.editora} · {livro.ano}
                       </p>
-                      <p className="text-white/70 text-sm sm:text-base leading-relaxed line-clamp-3 sm:line-clamp-4">
+                      <p className="text-white/88 text-base sm:text-lg leading-relaxed line-clamp-3 sm:line-clamp-4">
                         {livro.sinopse}
                       </p>
                     </div>
@@ -137,13 +137,13 @@ export default function BibliotecaLivrosPage() {
                     <div className="flex flex-wrap items-center justify-between gap-3">
                       <div className="flex flex-wrap gap-2">
                         {livro.categorias.map(c => (
-                          <span key={c} className="px-2.5 py-1 rounded-full text-[10px] font-black uppercase tracking-widest text-white/60 border border-white/20">
+                          <span key={c} className="px-2.5 py-1 rounded-full text-[13px] font-black uppercase tracking-widest text-white/82 border border-white/20">
                             {c}
                           </span>
                         ))}
                       </div>
                       <span
-                        className="flex items-center gap-1.5 text-xs font-black uppercase tracking-widest transition-all duration-200 group-hover:gap-2.5"
+                        className="flex items-center gap-1.5 text-sm font-black uppercase tracking-widest transition-all duration-200 group-hover:gap-2.5"
                         style={{ color: livro.accentColor }}
                       >
                         Ver completo
@@ -165,7 +165,7 @@ export default function BibliotecaLivrosPage() {
           >
             <Link
               to="/biblioteca"
-              className="inline-flex items-center gap-2 text-white/35 hover:text-white text-xs font-black uppercase tracking-widest transition-colors"
+              className="inline-flex items-center gap-2 text-white/65 hover:text-white text-sm font-black uppercase tracking-widest transition-colors"
             >
               <ArrowLeft className="w-3.5 h-3.5" />
               Voltar para a Biblioteca

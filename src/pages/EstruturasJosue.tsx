@@ -27,40 +27,40 @@ function EstruturaTemplate({ d, pt }: { d: EData; pt: boolean }) {
   const SC = ({ num, icon, title, children }: { num: string; icon: string; title: string; children: React.ReactNode }) => (
     <div style={{ borderRadius: 16, border: `1px solid ${accB}`, background: 'rgba(22,14,8,0.75)', padding: '24px 28px', marginBottom: 18 }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 14 }}>
-        <div style={{ width: 36, height: 36, borderRadius: 10, background: accL, border: `1px solid ${accB}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 18, flexShrink: 0 }}>{icon}</div>
+        <div style={{ width: 36, height: 36, borderRadius: 10, background: accL, border: `1px solid ${accB}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 21, flexShrink: 0 }}>{icon}</div>
         <div>
-          <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.18em', color: acc, textTransform: 'uppercase', marginBottom: 2 }}>{pt ? 'Seção' : 'Section'} {num}</div>
-          <div style={{ fontSize: 'clamp(15px,2vw,17px)', fontWeight: 800, color: C.white }}>{title}</div>
+          <div style={{ fontSize: 13, fontWeight: 900, letterSpacing: '0.18em', color: acc, textTransform: 'uppercase', marginBottom: 2 }}>{pt ? 'Seção' : 'Section'} {num}</div>
+          <div style={{ fontSize: 'clamp(18px,2.2vw,20px)', fontWeight: 800, color: C.white }}>{title}</div>
         </div>
       </div>
-      <div style={{ fontSize: 'clamp(13px,1.6vw,15px)', color: 'rgba(255,255,255,0.78)', lineHeight: 1.75 }}>{children}</div>
+      <div style={{ fontSize: 'clamp(16px,1.8vw,18px)', color: 'rgba(255,255,255,0.78)', lineHeight: 1.75 }}>{children}</div>
     </div>
   );
 
   const Tag = ({ label }: { label: string }) => (
-    <span style={{ display: 'inline-block', padding: '2px 10px', borderRadius: 20, background: accB, color: C.white, fontSize: 'clamp(10px,1.3vw,11px)', fontWeight: 700, marginRight: 6, marginBottom: 4 }}>{label}</span>
+    <span style={{ display: 'inline-block', padding: '2px 10px', borderRadius: 20, background: accB, color: C.white, fontSize: 'clamp(13px,1.5vw,14px)', fontWeight: 700, marginRight: 6, marginBottom: 4 }}>{label}</span>
   );
 
   return (
     <div style={{ paddingBottom: 40 }}>
       {/* Header */}
       <div style={{ borderRadius: 16, border: `1px solid ${accB}`, background: accL, padding: '20px 24px', marginBottom: 24 }}>
-        <div style={{ fontSize: 'clamp(9px,1.2vw,11px)', fontWeight: 900, letterSpacing: '0.2em', color: acc, textTransform: 'uppercase', marginBottom: 8 }}>
+        <div style={{ fontSize: 'clamp(12px,1.4vw,14px)', fontWeight: 900, letterSpacing: '0.2em', color: acc, textTransform: 'uppercase', marginBottom: 8 }}>
           Josué {d.ref} · {pt ? `Perícope ${d.dia} · Dia ${d.dia}` : `Pericope ${d.dia} · Day ${d.dia}`}
         </div>
-        <div style={{ fontSize: 'clamp(18px,2.8vw,24px)', fontWeight: 900, color: C.white, lineHeight: 1.3, marginBottom: 8 }}>{d.titulo}</div>
-        <div style={{ fontSize: 15, color: 'rgba(255,255,255,0.65)', fontStyle: 'italic' }}>"{d.interrogacao}"</div>
-        <div style={{ marginTop: 12, padding: '10px 16px', borderRadius: 10, background: 'rgba(0,0,0,0.3)', fontFamily: 'monospace', fontSize: 13, color: 'rgba(255,255,255,0.60)', lineHeight: 1.7 }}>
+        <div style={{ fontSize: 'clamp(21px,3.0vw,26px)', fontWeight: 900, color: C.white, lineHeight: 1.3, marginBottom: 8 }}>{d.titulo}</div>
+        <div style={{ fontSize: 18, color: 'rgba(255,255,255,0.65)', fontStyle: 'italic' }}>"{d.interrogacao}"</div>
+        <div style={{ marginTop: 12, padding: '10px 16px', borderRadius: 10, background: 'rgba(0,0,0,0.3)', fontFamily: 'monospace', fontSize: 16, color: 'rgba(255,255,255,0.60)', lineHeight: 1.7 }}>
           {d.versoHeb}<br />
-          <span style={{ color: C.muted, fontFamily: 'sans-serif', fontSize: 12 }}>{d.versoHebTrad}</span>
+          <span style={{ color: C.muted, fontFamily: 'sans-serif', fontSize: 15 }}>{d.versoHebTrad}</span>
         </div>
       </div>
 
       <SC num="I" icon="📌" title={pt ? 'Título' : 'Title'}>
         <p><strong style={{ color: acc }}>{pt ? 'Título Principal:' : 'Main Title:'}</strong> {d.titulo}</p>
         <p style={{ marginTop: 8 }}><strong style={{ color: acc }}>{pt ? 'Subtítulo:' : 'Subtitle:'}</strong> {d.subtitulo}</p>
-        <div style={{ marginTop: 12, padding: '10px 16px', borderRadius: 10, background: 'rgba(0,0,0,0.3)', fontFamily: 'monospace', fontSize: 13, color: 'rgba(255,255,255,0.60)', lineHeight: 1.7 }}>
-          {d.versoKey}<br /><span style={{ color: C.muted, fontFamily: 'sans-serif', fontSize: 12 }}>{d.versoHebTrad}</span>
+        <div style={{ marginTop: 12, padding: '10px 16px', borderRadius: 10, background: 'rgba(0,0,0,0.3)', fontFamily: 'monospace', fontSize: 16, color: 'rgba(255,255,255,0.60)', lineHeight: 1.7 }}>
+          {d.versoKey}<br /><span style={{ color: C.muted, fontFamily: 'sans-serif', fontSize: 15 }}>{d.versoHebTrad}</span>
         </div>
       </SC>
 
@@ -74,7 +74,7 @@ function EstruturaTemplate({ d, pt }: { d: EData; pt: boolean }) {
       <SC num="III" icon="🎯" title={pt ? 'Tema (Big Idea)' : 'Theme (Big Idea)'}>
         <p>{d.bigIdea}</p>
         {d.bigIdeaQuote && (
-          <p style={{ marginTop: 10, padding: '8px 14px', borderRadius: 8, background: `${acc}12`, borderLeft: `3px solid ${acc}`, fontSize: 14, color: 'rgba(255,255,255,0.70)', fontStyle: 'italic' }}>
+          <p style={{ marginTop: 10, padding: '8px 14px', borderRadius: 8, background: `${acc}12`, borderLeft: `3px solid ${acc}`, fontSize: 17, color: 'rgba(255,255,255,0.70)', fontStyle: 'italic' }}>
             {d.bigIdeaQuote}
           </p>
         )}
@@ -86,7 +86,7 @@ function EstruturaTemplate({ d, pt }: { d: EData; pt: boolean }) {
 
       <SC num="V" icon="⚡" title={pt ? 'Proposição' : 'Proposition'}>
         <div style={{ padding: '14px 18px', borderRadius: 12, background: `${acc}12`, border: `1px solid ${accB}` }}>
-          <p style={{ fontWeight: 800, fontSize: 17, color: C.white, margin: 0 }}>{d.proposicao}</p>
+          <p style={{ fontWeight: 800, fontSize: 20, color: C.white, margin: 0 }}>{d.proposicao}</p>
         </div>
       </SC>
 
@@ -104,30 +104,30 @@ function EstruturaTemplate({ d, pt }: { d: EData; pt: boolean }) {
       </SC>
 
       <SC num="VII" icon="📐" title={pt ? 'Divisões / Movimentos' : 'Divisions / Movements'}>
-        <p style={{ marginBottom: 14, fontSize: 14, color: C.muted }}>
+        <p style={{ marginBottom: 14, fontSize: 17, color: C.muted }}>
           {pt ? "Estrutura quiástica em movimentos (A–B–◉–B'–A'):" : "Chiastic structure (A–B–◉–B'–A'):"}
         </p>
         {d.chiasm.map((m, i) => (
           <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 12, padding: '10px 14px', borderRadius: 10, background: 'rgba(0,0,0,0.25)', marginBottom: 8, borderLeft: `3px solid ${m.cor}` }}>
-            <div style={{ fontFamily: 'monospace', fontWeight: 900, color: m.cor, fontSize: 16, minWidth: 28 }}>{m.sym}</div>
+            <div style={{ fontFamily: 'monospace', fontWeight: 900, color: m.cor, fontSize: 19, minWidth: 28 }}>{m.sym}</div>
             <div>
-              <div style={{ fontSize: 12, color: m.cor, fontWeight: 700, marginBottom: 2 }}>{m.ref}</div>
-              <div style={{ fontSize: 14, color: C.white }}>{m.label}</div>
+              <div style={{ fontSize: 15, color: m.cor, fontWeight: 700, marginBottom: 2 }}>{m.ref}</div>
+              <div style={{ fontSize: 17, color: C.white }}>{m.label}</div>
             </div>
           </div>
         ))}
 
         <div style={{ marginTop: 20, borderTop: `1px solid ${accB}`, paddingTop: 20 }}>
-          <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.18em', color: acc, textTransform: 'uppercase', marginBottom: 16 }}>
+          <div style={{ fontSize: 14, fontWeight: 900, letterSpacing: '0.18em', color: acc, textTransform: 'uppercase', marginBottom: 16 }}>
             {pt ? 'Divisões Expositivas do Sermão' : 'Expository Sermon Divisions'}
           </div>
           {d.moves.map((m, i) => (
             <div key={i} style={{ marginBottom: 20, borderRadius: 14, border: '1px solid rgba(255,255,255,0.08)', background: 'rgba(0,0,0,0.25)', overflow: 'hidden' }}>
               <div style={{ padding: '14px 18px', background: `${m.cor}18`, borderBottom: `1px solid ${m.cor}40`, display: 'flex', alignItems: 'center', gap: 12 }}>
-                <div style={{ fontFamily: 'monospace', fontWeight: 900, color: m.cor, fontSize: 20, minWidth: 36 }}>{m.letra}</div>
+                <div style={{ fontFamily: 'monospace', fontWeight: 900, color: m.cor, fontSize: 23, minWidth: 36 }}>{m.letra}</div>
                 <div>
-                  <div style={{ fontSize: 10, color: m.cor, fontWeight: 700, letterSpacing: '0.15em', marginBottom: 2 }}>{m.ref}</div>
-                  <div style={{ fontSize: 14, fontWeight: 800, color: C.white }}>{m.titulo}</div>
+                  <div style={{ fontSize: 13, color: m.cor, fontWeight: 700, letterSpacing: '0.15em', marginBottom: 2 }}>{m.ref}</div>
+                  <div style={{ fontSize: 17, fontWeight: 800, color: C.white }}>{m.titulo}</div>
                 </div>
               </div>
               <div style={{ padding: '16px 18px' }}>
@@ -137,13 +137,13 @@ function EstruturaTemplate({ d, pt }: { d: EData; pt: boolean }) {
                   { label: pt ? 'Teologia Reformada' : 'Reformed Theology', text: m.teologia },
                 ].map((s, si) => (
                   <div key={si} style={{ marginBottom: 10 }}>
-                    <span style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.15em', color: 'rgba(255,255,255,0.40)', textTransform: 'uppercase' }}>{s.label}</span>
-                    <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.75)', marginTop: 4, lineHeight: 1.65 }}>{s.text}</p>
+                    <span style={{ fontSize: 13, fontWeight: 900, letterSpacing: '0.15em', color: 'rgba(255,255,255,0.40)', textTransform: 'uppercase' }}>{s.label}</span>
+                    <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.75)', marginTop: 4, lineHeight: 1.65 }}>{s.text}</p>
                   </div>
                 ))}
                 <div style={{ padding: '10px 14px', borderRadius: 10, background: `${m.cor}12`, borderLeft: `3px solid ${m.cor}` }}>
-                  <span style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.15em', color: m.cor, textTransform: 'uppercase' }}>{pt ? 'Aplicação' : 'Application'}</span>
-                  <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.80)', marginTop: 4, lineHeight: 1.65 }}>{m.aplicacao}</p>
+                  <span style={{ fontSize: 13, fontWeight: 900, letterSpacing: '0.15em', color: m.cor, textTransform: 'uppercase' }}>{pt ? 'Aplicação' : 'Application'}</span>
+                  <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.80)', marginTop: 4, lineHeight: 1.65 }}>{m.aplicacao}</p>
                 </div>
               </div>
             </div>
@@ -155,12 +155,12 @@ function EstruturaTemplate({ d, pt }: { d: EData; pt: boolean }) {
         <div style={{ display: 'grid', gap: 12 }}>
           {d.redAxis.map((row, i) => (
             <div key={i} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 1, borderRadius: 12, overflow: 'hidden' }}>
-              <div style={{ padding: '12px 16px', background: row.cor, fontSize: 13, color: 'rgba(255,255,255,0.80)', lineHeight: 1.55 }}>
-                <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.15em', color: C.atColor, marginBottom: 4 }}>AT</div>
+              <div style={{ padding: '12px 16px', background: row.cor, fontSize: 16, color: 'rgba(255,255,255,0.80)', lineHeight: 1.55 }}>
+                <div style={{ fontSize: 13, fontWeight: 900, letterSpacing: '0.15em', color: C.atColor, marginBottom: 4 }}>AT</div>
                 {row.at}
               </div>
-              <div style={{ padding: '12px 16px', background: row.cor, fontSize: 13, color: 'rgba(255,255,255,0.80)', lineHeight: 1.55, borderLeft: '1px solid rgba(255,255,255,0.06)' }}>
-                <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.15em', color: C.ntColor, marginBottom: 4 }}>NT</div>
+              <div style={{ padding: '12px 16px', background: row.cor, fontSize: 16, color: 'rgba(255,255,255,0.80)', lineHeight: 1.55, borderLeft: '1px solid rgba(255,255,255,0.06)' }}>
+                <div style={{ fontSize: 13, fontWeight: 900, letterSpacing: '0.15em', color: C.ntColor, marginBottom: 4 }}>NT</div>
                 {row.nt}
               </div>
             </div>
@@ -170,7 +170,7 @@ function EstruturaTemplate({ d, pt }: { d: EData; pt: boolean }) {
 
       <SC num="IX" icon="⚓" title={pt ? 'Doutrina Central' : 'Central Doctrine'}>
         <div style={{ padding: '16px 20px', borderRadius: 12, background: `${acc}10`, border: `1px solid ${accB}` }}>
-          <p style={{ fontWeight: 700, fontSize: 16, color: C.white, margin: 0, lineHeight: 1.7 }}>{d.doutrina}</p>
+          <p style={{ fontWeight: 700, fontSize: 19, color: C.white, margin: 0, lineHeight: 1.7 }}>{d.doutrina}</p>
         </div>
       </SC>
     </div>

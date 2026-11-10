@@ -1,7 +1,10 @@
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
+import { ArrowLeft, ArrowRight, Clock, BookOpen, HelpCircle, CheckCircle2, Library } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import { CAPITULOS as CAPS_BATISTA } from './DiscipuladoBatistaPage';
+import { CAPITULOS as CAPS_WESTMINSTER } from './DiscipuladoWestminsterPage';
 
 const BG = '#060d1f';
 const ORANGE = '#f97316';
@@ -16,13 +19,17 @@ interface EstudoCard {
   subtitulo: string;
   descricao: string;
   cor: string;
-  badge?: string;
-  capitulos: number;
+  ano: string;
+  origem: string;
+  unidade: string;
+  total: number;
+  prontos: number;
   path: string;
   disponivel: boolean;
-  bg: string;
   sigla: string;
 }
+
+const prontos = (caps: { disponivel: boolean }[]) => caps.filter(c => c.disponivel).length;
 
 const ESTUDOS: EstudoCard[] = [
   {
@@ -31,12 +38,14 @@ const ESTUDOS: EstudoCard[] = [
     subtitulo: 'Discipulado Confessional Batista',
     descricao: 'Estudo sistemático da Confissão de Fé Batista de Londres de 1689, capítulo a capítulo, com perguntas para discussão, gabaritos e referências bibliográficas.',
     cor: GOLD,
-    badge: 'Em andamento',
-    capitulos: 18,
+    ano: '1689',
+    origem: 'Londres',
+    unidade: 'capítulos',
+    total: CAPS_BATISTA.length,
+    prontos: prontos(CAPS_BATISTA),
     path: '/discipulado/confessional/batista',
     disponivel: true,
-    bg: 'linear-gradient(145deg, #1c1200 0%, #120d00 50%, #080600 100%)',
-    sigla: 'CFB 1689',
+    sigla: 'CFB',
   },
   {
     id: 'westminster',
@@ -44,12 +53,14 @@ const ESTUDOS: EstudoCard[] = [
     subtitulo: 'Discipulado Confessional Reformado',
     descricao: 'Estudo da Confissão de Fé de Westminster (1646), o mais completo símbolo da tradição reformada, com seus 33 capítulos de doutrina sistemática.',
     cor: BLUE,
-    badge: 'Em andamento',
-    capitulos: 33,
+    ano: '1646',
+    origem: 'Londres',
+    unidade: 'capítulos',
+    total: CAPS_WESTMINSTER.length,
+    prontos: prontos(CAPS_WESTMINSTER),
     path: '/discipulado/confessional/westminster',
     disponivel: true,
-    bg: 'linear-gradient(145deg, #001220 0%, #000d18 50%, #000608 100%)',
-    sigla: 'CFW 1646',
+    sigla: 'CFW',
   },
   {
     id: 'heidelberg',
@@ -57,12 +68,14 @@ const ESTUDOS: EstudoCard[] = [
     subtitulo: 'Discipulado Catequético Reformado',
     descricao: 'Estudo do Catecismo de Heidelberg (1563), com suas 129 perguntas e respostas organizadas em 52 domingos — a mais amada confissão reformada continental.',
     cor: PURPLE,
-    badge: 'Em breve',
-    capitulos: 52,
+    ano: '1563',
+    origem: 'Heidelberg',
+    unidade: 'domingos',
+    total: 52,
+    prontos: 0,
     path: '/discipulado/confessional/heidelberg',
     disponivel: false,
-    bg: 'linear-gradient(145deg, #120020 0%, #0d0018 50%, #060008 100%)',
-    sigla: 'CH 1563',
+    sigla: 'CH',
   },
   {
     id: 'belgica',
@@ -70,177 +83,189 @@ const ESTUDOS: EstudoCard[] = [
     subtitulo: 'Discipulado Confessional Reformado',
     descricao: 'Estudo da Confissão Belga (1561) de Guido de Brés, uma das três Formas de Unidade reformadas, com seus 37 artigos de fé.',
     cor: GREEN,
-    badge: 'Em breve',
-    capitulos: 37,
+    ano: '1561',
+    origem: 'Países Baixos',
+    unidade: 'artigos',
+    total: 37,
+    prontos: 0,
     path: '/discipulado/confessional/belgica',
     disponivel: false,
-    bg: 'linear-gradient(145deg, #001a0d 0%, #001208 50%, #000804 100%)',
-    sigla: 'CB 1561',
+    sigla: 'CB',
   },
 ];
 
-function SvgCross() {
+const LINHA_DO_TEMPO = [...ESTUDOS].sort((a, b) => Number(a.ano) - Number(b.ano));
+
+const FORMATO = [
+  { Icone: BookOpen, t: 'Texto e história' },
+  { Icone: HelpCircle, t: 'Perguntas' },
+  { Icone: CheckCircle2, t: 'Gabarito bíblico' },
+  { Icone: Library, t: 'Referências ABNT' },
+];
+
+function Selo({ e, size = 84 }: { e: EstudoCard; size?: number }) {
   return (
-    <svg width="100%" height="100%" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ position: 'absolute', inset: 0, opacity: 0.04 }}>
-      {Array.from({ length: 4 }, (_, r) => Array.from({ length: 4 }, (_, c) => (
-        <g key={`${r}-${c}`} transform={`translate(${c * 15 + 7},${r * 15 + 7})`}>
-          <rect x="-0.5" y="-3" width="1" height="6" rx="0.5" fill="white" />
-          <rect x="-3" y="-0.5" width="6" height="1" rx="0.5" fill="white" />
-        </g>
-      )))}
-    </svg>
+    <div
+      className="shrink-0 rounded-full flex flex-col items-center justify-center"
+      style={{
+        width: size, height: size,
+        background: `radial-gradient(circle at 35% 30%, ${e.cor}45, ${e.cor}10 70%)`,
+        border: `2px solid ${e.cor}${e.disponivel ? '90' : '45'}`,
+        boxShadow: e.disponivel ? `0 0 0 6px ${e.cor}10, 0 0 32px ${e.cor}30` : 'none',
+      }}
+    >
+      <span className="font-black tracking-wider leading-none" style={{ color: e.cor, fontSize: size * 0.24 }}>{e.sigla}</span>
+      <span className="font-bold text-white/80 leading-none mt-1" style={{ fontSize: size * 0.18 }}>{e.ano}</span>
+    </div>
   );
 }
 
 export default function EstudosConfessionaisPage() {
   const navigate = useNavigate();
+  const nDisp = ESTUDOS.filter(e => e.disponivel).length;
+  const nBreve = ESTUDOS.length - nDisp;
 
   return (
-    <div className="min-h-screen flex flex-col" style={{ background: BG, color: '#e2e8f0' }}>
+    <div className="min-h-screen flex flex-col sem-justificar" style={{ background: BG, color: '#e2e8f0' }}>
       <Navbar />
 
-      {/* hero */}
-      <div className="relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #0a1020 0%, #110d00 60%, #0a1020 100%)' }}>
-        <div className="absolute inset-0 pointer-events-none">
-          {[...Array(16)].map((_, i) => (
-            <motion.div
-              key={i}
-              className="absolute rounded-full"
-              style={{ width: 3, height: 3, background: ORANGE, top: `${10 + (i * 19) % 80}%`, left: `${(i * 14) % 100}%`, opacity: 0.2 }}
-              animate={{ opacity: [0.1, 0.35, 0.1] }}
-              transition={{ duration: 2.5 + i * 0.3, repeat: Infinity, delay: i * 0.2 }}
-            />
-          ))}
-        </div>
-        <div className="relative z-10 max-w-5xl mx-auto px-6 py-14">
+      {/* ── Hero ── */}
+      <header className="relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #0a1020 0%, #160e02 55%, #0a1020 100%)' }}>
+        <div className="absolute inset-0 pointer-events-none" style={{ background: `radial-gradient(ellipse 50% 70% at 80% 20%, ${ORANGE}20 0%, transparent 70%)` }} />
+        <div className="absolute inset-0 pointer-events-none opacity-[0.05]" style={{ backgroundImage: `linear-gradient(${ORANGE} 1px, transparent 1px), linear-gradient(90deg, ${ORANGE} 1px, transparent 1px)`, backgroundSize: '44px 44px' }} />
+
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 pt-28 pb-14">
           <button
             onClick={() => navigate('/biblioteca')}
-            className="flex items-center gap-2 text-sm mb-6 transition-opacity hover:opacity-80"
-            style={{ color: `${ORANGE}99` }}
+            className="inline-flex items-center gap-2 text-base font-semibold mb-8 px-4 py-2 rounded-full transition-colors hover:bg-white/10"
+            style={{ color: ORANGE, border: `1px solid ${ORANGE}40` }}
           >
-            ← Voltar para Biblioteca
+            <ArrowLeft size={18} /> Biblioteca
           </button>
-          <div className="flex flex-wrap items-center gap-3 mb-4">
-            <span className="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider" style={{ background: `${ORANGE}22`, color: ORANGE }}>
-              Discipulado Confessional
-            </span>
-            <span className="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider" style={{ background: '#ffffff10', color: '#ffffff70' }}>
-              {ESTUDOS.filter(e => e.disponivel).length} disponíve{ESTUDOS.filter(e => e.disponivel).length === 1 ? 'l' : 'is'} · {ESTUDOS.filter(e => !e.disponivel).length} em breve
-            </span>
-          </div>
-          <h1 className="text-3xl md:text-4xl font-black mb-3 text-white leading-tight">
-            Estudos Confessionais
-          </h1>
-          <p className="text-white/75 text-lg max-w-2xl leading-relaxed">
+
+          <p className="text-sm sm:text-base font-black uppercase tracking-[0.25em] mb-3" style={{ color: ORANGE }}>Discipulado Confessional</p>
+          <h1 className="font-black text-white leading-tight mb-4" style={{ fontSize: 'clamp(34px, 5.5vw, 58px)' }}>Estudos Confessionais</h1>
+          <p className="text-lg sm:text-xl text-white/85 leading-relaxed max-w-3xl mb-8">
             Cadernos de estudo sistemático das grandes confissões de fé da tradição reformada e batista — com perguntas para discussão, gabaritos e referências.
-
           </p>
+
+          <div className="flex flex-wrap gap-3">
+            <span className="px-4 py-2 rounded-xl text-base font-bold" style={{ background: `${ORANGE}20`, color: ORANGE, border: `1px solid ${ORANGE}40` }}>
+              {nDisp} disponíve{nDisp === 1 ? 'l' : 'is'}
+            </span>
+            <span className="px-4 py-2 rounded-xl text-base font-bold text-white/80" style={{ background: '#ffffff0d', border: '1px solid #ffffff1a' }}>
+              {nBreve} em breve
+            </span>
+            {FORMATO.map(({ Icone, t }) => (
+              <span key={t} className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl text-base font-semibold text-white/80" style={{ background: '#ffffff08', border: '1px solid #ffffff14' }}>
+                <Icone size={17} style={{ color: ORANGE }} /> {t}
+              </span>
+            ))}
+          </div>
         </div>
-      </div>
+      </header>
 
-      {/* cards grid */}
-      <div className="flex-1 max-w-5xl mx-auto w-full px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {ESTUDOS.map((estudo, i) => (
-            <motion.div
-              key={estudo.id}
-              initial={{ opacity: 0, y: 24 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.1, duration: 0.5 }}
-              onClick={() => estudo.disponivel && navigate(estudo.path)}
-              className="relative rounded-2xl overflow-hidden group"
-              style={{
-                background: estudo.bg,
-                border: `1px solid ${estudo.cor}30`,
-                cursor: estudo.disponivel ? 'pointer' : 'default',
-                opacity: estudo.disponivel ? 1 : 0.7,
-              }}
-            >
-              {/* pattern */}
-              <SvgCross />
-
-              {/* radial glow */}
-              <div
-                className="absolute inset-0 pointer-events-none"
-                style={{ background: `radial-gradient(ellipse 60% 50% at 80% 20%, ${estudo.cor}18 0%, transparent 70%)` }}
-              />
-
-              {/* hover border */}
-              {estudo.disponivel && (
-                <div
-                  className="absolute inset-0 rounded-2xl pointer-events-none transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-                  style={{ boxShadow: `inset 0 0 0 1px ${estudo.cor}55` }}
-                />
-              )}
-
-              <div className="relative z-10 p-6 flex flex-col gap-4 h-full">
-                {/* header */}
-                <div className="flex items-start justify-between gap-3">
-                  <div
-                    className="px-3 py-1.5 rounded-lg text-sm font-extrabold tracking-widest"
-                    style={{ background: `${estudo.cor}20`, color: estudo.cor, border: `1px solid ${estudo.cor}35` }}
-                  >
-                    {estudo.sigla}
+      <main className="flex-1 max-w-6xl mx-auto w-full px-4 sm:px-6 py-12 flex flex-col gap-14">
+        {/* ── Cards ── */}
+        <section className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          {ESTUDOS.map((e, i) => {
+            const pct = Math.round((e.prontos / e.total) * 100);
+            return (
+              <motion.article
+                key={e.id}
+                initial={{ opacity: 0, y: 24 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.1, duration: 0.5 }}
+                onClick={() => e.disponivel && navigate(e.path)}
+                className={`relative rounded-3xl overflow-hidden flex flex-col ${e.disponivel ? 'group cursor-pointer transition-transform hover:-translate-y-1' : ''}`}
+                style={{
+                  background: e.disponivel ? `linear-gradient(150deg, ${e.cor}1a 0%, #0b1530 55%, #070f24 100%)` : '#0a1328',
+                  border: `1.5px solid ${e.disponivel ? e.cor + '55' : '#ffffff14'}`,
+                  boxShadow: e.disponivel ? `0 10px 40px ${e.cor}14` : 'none',
+                }}
+              >
+                <div className="h-1.5 w-full" style={{ background: e.disponivel ? `linear-gradient(90deg, ${e.cor}, ${e.cor}40)` : '#ffffff10' }} />
+                <div className="p-6 sm:p-7 flex flex-col gap-5 flex-1">
+                  <div className="flex items-start gap-5">
+                    <Selo e={e} />
+                    <div className="min-w-0 flex-1">
+                      <span
+                        className="inline-block px-3 py-1 rounded-full text-sm font-bold uppercase tracking-wider mb-2"
+                        style={e.disponivel ? { background: `${e.cor}22`, color: e.cor } : { background: '#ffffff10', color: '#ffffffaa' }}
+                      >
+                        {e.disponivel ? 'Em andamento' : 'Em breve'}
+                      </span>
+                      <h2 className="text-2xl sm:text-[26px] font-black text-white leading-tight">{e.titulo}</h2>
+                      <p className="text-base font-semibold mt-1" style={{ color: e.cor }}>{e.subtitulo}</p>
+                    </div>
                   </div>
-                  {estudo.badge && (
-                    <span
-                      className="px-2.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider"
-                      style={{
-                        background: estudo.disponivel ? `${estudo.cor}22` : '#ffffff10',
-                        color: estudo.disponivel ? estudo.cor : '#ffffff50',
-                        border: `1px solid ${estudo.disponivel ? estudo.cor + '40' : '#ffffff18'}`,
-                      }}
-                    >
-                      {estudo.badge}
-                    </span>
-                  )}
+
+                  <p className="text-base sm:text-lg text-white/80 leading-relaxed flex-1">{e.descricao}</p>
+
+                  <div className="flex flex-wrap gap-2 text-sm sm:text-base font-semibold text-white/75">
+                    <span className="px-3 py-1 rounded-lg" style={{ background: '#ffffff0a' }}>📅 {e.ano}</span>
+                    <span className="px-3 py-1 rounded-lg" style={{ background: '#ffffff0a' }}>📍 {e.origem}</span>
+                    <span className="px-3 py-1 rounded-lg" style={{ background: '#ffffff0a' }}>📖 {e.total} {e.unidade}</span>
+                  </div>
+
+                  <div className="pt-4" style={{ borderTop: `1px solid ${e.disponivel ? e.cor + '25' : '#ffffff10'}` }}>
+                    {e.disponivel ? (
+                      <>
+                        <div className="flex items-baseline justify-between mb-2">
+                          <span className="text-base font-semibold text-white/85">
+                            <span className="font-black" style={{ color: e.cor }}>{e.prontos}</span> de {e.total} {e.unidade} prontos
+                          </span>
+                          <span className="inline-flex items-center gap-1.5 text-lg font-black" style={{ color: e.cor }}>
+                            Estudar <ArrowRight size={19} className="transition-transform group-hover:translate-x-1" />
+                          </span>
+                        </div>
+                        <div className="h-2 rounded-full overflow-hidden" style={{ background: '#ffffff12' }}>
+                          <motion.div initial={{ width: 0 }} animate={{ width: `${pct}%` }} transition={{ duration: 1, delay: 0.4 + i * 0.1 }} className="h-full rounded-full" style={{ background: e.cor }} />
+                        </div>
+                      </>
+                    ) : (
+                      <span className="inline-flex items-center gap-2 text-base font-semibold text-white/60">
+                        <Clock size={17} /> Em preparação
+                      </span>
+                    )}
+                  </div>
                 </div>
+              </motion.article>
+            );
+          })}
+        </section>
 
-                {/* title */}
-                <div>
-                  <h2 className="text-xl font-extrabold text-white leading-tight mb-1">{estudo.titulo}</h2>
-                  <p className="text-sm font-medium" style={{ color: `${estudo.cor}bb` }}>{estudo.subtitulo}</p>
-                </div>
+        {/* ── Linha do tempo ── */}
+        <section>
+          <h2 className="text-2xl sm:text-3xl font-black text-white mb-2">Linha do tempo das confissões</h2>
+          <p className="text-lg text-white/70 mb-8">Um século de fé confessada — da Reforma continental aos batistas ingleses.</p>
+          <div className="relative">
+            <div className="hidden md:block absolute left-0 right-0 top-[42px] h-0.5" style={{ background: 'linear-gradient(90deg, #34d39960, #c084fc60, #60a5fa60, #fbbf2460)' }} />
+            <ol className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+              {LINHA_DO_TEMPO.map(e => (
+                <li
+                  key={e.id}
+                  className={`relative flex md:flex-col items-center md:text-center gap-4 ${e.disponivel ? 'cursor-pointer' : ''}`}
+                  onClick={() => e.disponivel && navigate(e.path)}
+                >
+                  <Selo e={e} size={84} />
+                  <div>
+                    <p className="text-lg font-extrabold text-white leading-tight">{e.titulo}</p>
+                    <p className="text-base text-white/65">{e.origem} · {e.ano}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </section>
 
-                {/* description */}
-                <p className="text-white/75 text-base leading-relaxed flex-1">{estudo.descricao}</p>
-
-                {/* footer */}
-                <div className="flex items-center justify-between pt-3" style={{ borderTop: `1px solid ${estudo.cor}20` }}>
-                  <span className="text-sm font-medium" style={{ color: `${estudo.cor}80` }}>
-                    {estudo.capitulos} {estudo.id === 'heidelberg' ? 'domingos' : 'capítulos'}
-                  </span>
-                  {estudo.disponivel ? (
-                    <motion.span
-                      animate={{ x: [0, 4, 0] }}
-                      transition={{ duration: 2, repeat: Infinity }}
-                      className="text-base font-bold flex items-center gap-1"
-                      style={{ color: estudo.cor }}
-                    >
-                      Estudar →
-                    </motion.span>
-                  ) : (
-                    <span className="text-sm font-medium text-white/30">Em breve</span>
-                  )}
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-
-        {/* nota */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.6 }}
-          className="mt-10 p-5 rounded-xl text-center"
-          style={{ background: `${ORANGE}08`, border: `1px solid ${ORANGE}20` }}
-        >
-          <p className="text-white/60 text-base">
-            <span style={{ color: ORANGE }} className="font-semibold">Novos estudos</span> serão adicionados progressivamente. Cada série segue o mesmo formato: introdução histórica, texto confessional, perguntas para discussão, gabarito e referências bibliográficas.
+        {/* ── Nota ── */}
+        <div className="p-6 rounded-2xl text-center" style={{ background: `${ORANGE}0c`, border: `1px solid ${ORANGE}30` }}>
+          <p className="text-base sm:text-lg text-white/80 leading-relaxed">
+            <span style={{ color: ORANGE }} className="font-bold">Novos estudos</span> serão adicionados progressivamente. Cada série segue o mesmo formato: introdução histórica, texto confessional, perguntas para discussão, gabarito e referências bibliográficas.
           </p>
-        </motion.div>
-      </div>
+        </div>
+      </main>
 
       <Footer />
     </div>

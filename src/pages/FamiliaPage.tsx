@@ -4,9 +4,9 @@ import { useNavigate } from 'react-router-dom';
 import { BookOpen, ChevronDown } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import VideoIntro from '../components/VideoIntro';
-import FlagToggle from '../components/FlagToggle';
 import { PLANO_COMPLETO, type DiaDevocional } from '../data/calendarioDevocional';
 import { gerarParaFamilia } from '../data/paraFamilia';
+import { useLanguage } from '../contexts/LanguageContext';
 
 // ─── Design tokens ──────────────────────────────────────────────────
 const C = {
@@ -792,7 +792,7 @@ function AulaCard({ aula, cor, onOpen, pt }: { aula: typeof AULAS_NOIVOS[0]; cor
 
 export function NoivosHub() {
   const navigate = useNavigate();
-  const [lang, setLang] = useState<'pt'|'en'>('pt');
+  const [lang, setLang] = useLanguage();
   const pt = lang === 'pt';
   const onBack = () => navigate('/familia');
   const onAula = (num: number) => {
@@ -831,7 +831,6 @@ export function NoivosHub() {
           ))}
         </div>
       </div>
-      <FlagToggle lang={lang} setLang={setLang} />
     </div>
   );
 }
@@ -1545,7 +1544,7 @@ function DiagramaMandatos({ pt }: { pt: boolean }) {
 
 export function AulaInaugural() {
   const navigate = useNavigate();
-  const [lang, setLang] = useState<'pt'|'en'>('pt');
+  const [lang, setLang] = useLanguage();
   const pt = lang === 'pt';
   const onBack = () => navigate('/familia/noivos');
   return (
@@ -1735,7 +1734,6 @@ export function AulaInaugural() {
 
         </div>
       </div>
-      <FlagToggle lang={lang} setLang={setLang} />
     </div>
   );
 }
@@ -1743,7 +1741,7 @@ export function AulaInaugural() {
 // ─── Aula 02 — Princípios Bíblicos de Comunicação ────────────────────
 export function Aula02() {
   const navigate = useNavigate();
-  const [lang, setLang] = useState<'pt'|'en'>('pt');
+  const [lang, setLang] = useLanguage();
   const pt = lang === 'pt';
   const onBack = () => navigate('/familia/noivos');
   return (
@@ -1920,7 +1918,6 @@ export function Aula02() {
 
         </div>
       </div>
-      <FlagToggle lang={lang} setLang={setLang} />
     </div>
   );
 }
@@ -1961,7 +1958,7 @@ const HUB_ITEMS = [
 
 export function FamiliaHub() {
   const navigate = useNavigate();
-  const [lang, setLang] = useState<'pt'|'en'>('pt');
+  const [lang, setLang] = useLanguage();
   const pt = lang === 'pt';
   const onSelect = (id: string) => navigate(`/familia/${id}`);
   return (
@@ -2047,7 +2044,6 @@ export function FamiliaHub() {
           ))}
         </div>
       </div>
-      <FlagToggle lang={lang} setLang={setLang} />
     </div>
   );
 }
@@ -2055,7 +2051,7 @@ export function FamiliaHub() {
 // ─── Para Casados (placeholder) ──────────────────────────────────────
 export function CasadosPage() {
   const navigate = useNavigate();
-  const [lang, setLang] = useState<'pt'|'en'>('pt');
+  const [lang, setLang] = useLanguage();
   const pt = lang === 'pt';
   return (
     <div style={{ minHeight: '100vh', background: C.bg, color: C.white }}>
@@ -2074,7 +2070,6 @@ export function CasadosPage() {
           </p>
         </motion.div>
       </div>
-      <FlagToggle lang={lang} setLang={setLang} />
     </div>
   );
 }
@@ -9240,7 +9235,7 @@ function InfograficoFamiliaSection({ pt }: { pt: boolean }) {
 
 export function EsbocosPage() {
   const navigate = useNavigate();
-  const [lang, setLang] = useState<'pt'|'en'>('pt');
+  const [lang, setLang] = useLanguage();
   const pt = lang === 'pt';
   const [selectedBook, setSelectedBook] = useState<BibleBook>(BIBLE_BOOKS[0]);
   const [pericopes, setPericopes] = useState<Pericope[]>([]);
@@ -9659,7 +9654,6 @@ export function EsbocosPage() {
           </motion.div>
         </AnimatePresence>
       </div>
-      <FlagToggle lang={lang} setLang={setLang} />
 
       {/* Floating back-to-cards button — visible on mobile when content is open */}
       <AnimatePresence>

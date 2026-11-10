@@ -1,16 +1,71 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import TeologiaAreaLayout, { type AreaTeologia, type PlanoCurso } from '../components/TeologiaAreaLayout';
 
 const BG = '#060d1f';
 
-interface AreaInfo {
-  titulo: string;
-  descricao: string;
-  icon: string;
-  cor: string;
-  materias: { nome: string; desc: string; icon: string; link?: string }[];
-}
+type AreaInfo = AreaTeologia;
+
+/* ─── Plano de curso: Teologia Política ─────────────────────────────────── */
+const PLANO_POLITICA: PlanoCurso = {
+  ementa: 'Estudo bíblico, histórico e confessional da relação entre o Reino de Deus e as autoridades civis. Fundamentos escriturísticos do governo civil; Agostinho e as duas cidades; a doutrina reformada do magistrado nas confissões (Escocesa, Belga, Helvética II, Heidelberg, Westminster e Batista de 1689); dois reinos e soberania das esferas; direito de resistência; liberdade religiosa e de consciência; justiça e bem comum; a vocação pública do cristão numa sociedade plural.',
+  ficha: [
+    { rotulo: 'Carga horária', valor: '12 aulas · 90 min cada (18 h)' },
+    { rotulo: 'Formato', valor: 'Presencial, on-line ou híbrido' },
+    { rotulo: 'Público', valor: 'Líderes, seminaristas, professores e membros adultos' },
+    { rotulo: 'Pré-requisito', valor: 'Noções de teologia sistemática' },
+  ],
+  objetivoGeral: 'Capacitar o aluno a compreender e articular, a partir das Escrituras e da tradição confessional reformada, uma visão cristã da autoridade civil e da vida pública, vivendo com fidelidade a Cristo como cidadão do Reino e da cidade terrena.',
+  objetivosEspecificos: [
+    'Identificar e interpretar os principais textos bíblicos sobre o governo civil (Gn 9; Rm 13; 1Pe 2; Ap 13).',
+    'Descrever o desenvolvimento histórico do pensamento político cristão, de Agostinho à Reforma e ao neocalvinismo.',
+    'Comparar o que as confissões reformadas ensinam sobre o magistrado civil, a Igreja e a liberdade de consciência.',
+    'Distinguir os modelos dos dois reinos e da soberania das esferas, avaliando pontos fortes e limites de cada um.',
+    'Analisar à luz da Escritura questões públicas atuais (justiça, liberdade religiosa, limites do Estado).',
+    'Formular um posicionamento cristão público que evite tanto o isolamento quanto a idolatria da política.',
+  ],
+  andragogia: [
+    { t: 'Necessidade de saber', d: 'Cada aula parte de uma pergunta real — “por que isso importa para minha fé e minha cidade?” — antes de apresentar o conteúdo.' },
+    { t: 'Autonomia do aprendiz', d: 'O adulto é corresponsável pelo próprio estudo: leituras prévias, escolha de casos e roteiro de pesquisa pessoal.' },
+    { t: 'Experiência como recurso', d: 'A vivência do aluno como cidadão, eleitor, profissional e membro de igreja é ponto de partida para a reflexão bíblica.' },
+    { t: 'Orientação para problemas', d: 'Os conteúdos são organizados em torno de dilemas concretos, não apenas de tópicos abstratos.' },
+    { t: 'Motivação interna', d: 'O alvo é a formação do caráter e a obediência a Cristo — não apenas a informação ou a opinião política.' },
+  ],
+  metodologia: [
+    { icon: '🎤', t: 'Aula expositiva dialogada', d: 'Exposição do texto bíblico e do tema, com perguntas abertas durante a aula.' },
+    { icon: '📜', t: 'Leitura de fontes primárias', d: 'Leitura comentada das Escrituras, das confissões e de trechos de Agostinho, Calvino, Rutherford e Kuyper.' },
+    { icon: '🧩', t: 'Estudo de caso', d: 'Situações reais (liberdade religiosa, leis, eleições) analisadas em grupo à luz da Escritura.' },
+    { icon: '🗣️', t: 'Debate e seminário', d: 'Grupos defendem posições (dois reinos × soberania das esferas) com argumentação bíblica.' },
+    { icon: '🗺️', t: 'Mapa conceitual', d: 'Síntese visual de cada aula, ligando texto bíblico, confissão e aplicação.' },
+    { icon: '🙏', t: 'Aplicação devocional', d: 'Cada encontro termina com oração pelas autoridades (1Tm 2.1-2) e um compromisso prático.' },
+  ],
+  avaliacao: [
+    'Participação nos debates e estudos de caso (contínua e formativa).',
+    'Fichamento de uma fonte primária (confissão ou texto clássico).',
+    'Quadro comparativo das confissões reformadas sobre o magistrado civil.',
+    'Trabalho final: ensaio breve (3–5 páginas) com uma questão pública analisada biblicamente.',
+    'Autoavaliação: o que mudou na minha forma de ver a política e a Igreja?',
+  ],
+  referencial: [
+    { categoria: 'Fontes bíblicas e confessionais', itens: [
+      'BÍBLIA. Português. Bíblia Sagrada: Almeida Revista e Atualizada. 2. ed. Barueri: Sociedade Bíblica do Brasil, 1993.',
+      'BEEKE, Joel R.; FERGUSON, Sinclair B. (org.). Harmonia das confissões reformadas. São Paulo: Cultura Cristã, 2006.',
+      'A CONFISSÃO de Fé de Westminster. São Paulo: Cultura Cristã, 2017.',
+    ] },
+    { categoria: 'Referencial teológico', itens: [
+      'AGOSTINHO. A Cidade de Deus. Petrópolis: Vozes, 2012. 2 v.',
+      'CALVINO, João. A instituição da religião cristã. São Paulo: Editora UNESP, 2009. t. 2, livro IV, cap. 20.',
+      'KUYPER, Abraham. Calvinismo. São Paulo: Cultura Cristã, 2002.',
+      'VANDRUNEN, David. Politics after Christendom: political theology in a fractured world. Grand Rapids: Zondervan Academic, 2020.',
+    ] },
+    { categoria: 'Referencial pedagógico e andragógico', itens: [
+      'KNOWLES, Malcolm S.; HOLTON III, Elwood F.; SWANSON, Richard A. The adult learner: the definitive classic in adult education and human resource development. 8. ed. New York: Routledge, 2015.',
+      'PAZMIÑO, Robert W. Temas fundamentais da educação cristã. São Paulo: Cultura Cristã, 2008.',
+      'VELLA, Jane. Learning to listen, learning to teach: the power of dialogue in educating adults. 2. ed. San Francisco: Jossey-Bass, 2002.',
+    ] },
+  ],
+};
 
 const AREAS_INFO: Record<string, AreaInfo> = {
   reformada: {
@@ -172,6 +227,27 @@ const AREAS_INFO: Record<string, AreaInfo> = {
       { nome: 'Ministério e Mundo Digital', desc: 'Evangelismo, discipulado e presença da Igreja no ambiente online — possibilidades e limites', icon: '🌐' },
     ],
   },
+  politica: {
+    titulo: 'Teologia Política',
+    descricao: 'A relação entre o Reino de Deus e os reinos deste mundo. Como o cristão deve se relacionar com o Estado, a lei e a vida pública? A pergunta não é se a fé tem implicações públicas, mas quais são — e até onde vai a autoridade de cada esfera diante do senhorio de Cristo.',
+    icon: '⚖️',
+    cor: '#fbbf24',
+    plano: PLANO_POLITICA,
+    materias: [
+      { nome: 'Fundamentos Bíblicos da Autoridade Civil', desc: 'Gn 9.6, Rm 13.1-7, 1Pe 2.13-17 e Ap 13 — o Estado como ministro de Deus e seus limites', icon: '📜', refs: { pt: 'GRUDEM, Wayne. Política segundo a Bíblia: princípios que todo cristão deve conhecer. São Paulo: Vida Nova, 2014.', en: 'VANDRUNEN, David. Politics after Christendom: political theology in a fractured world. Grand Rapids: Zondervan Academic, 2020.' } },
+      { nome: 'Igreja e Estado', desc: 'Jurisdições distintas sob o mesmo Senhor: o que pertence a César e o que pertence a Deus (Mt 22.21)', icon: '🏛️', refs: { pt: 'KUYPER, Abraham. Calvinismo. São Paulo: Cultura Cristã, 2002. (Palestra 3: Calvinismo e política).', en: 'KUYPER, Abraham. Our program: a Christian political manifesto. Bellingham: Lexham Press, 2015.' } },
+      { nome: 'Agostinho e as Duas Cidades', desc: 'A Cidade de Deus e a cidade terrena — peregrinos que buscam a paz da cidade em que vivem (Jr 29.7)', icon: '🏙️', refs: { pt: 'AGOSTINHO. A Cidade de Deus. Petrópolis: Vozes, 2012. 2 v.', en: 'SMITH, James K. A. Awaiting the King: reforming public theology. Grand Rapids: Baker Academic, 2017.' } },
+      { nome: 'Os Dois Reinos e a Reforma', desc: 'Lutero, Calvino (Institutas IV.20) e a doutrina reformada do magistrado civil (CFW XXIII; CFB 1689 XXIV)', icon: '⛪', refs: { pt: 'CALVINO, João. A instituição da religião cristã. São Paulo: Editora UNESP, 2009. t. 2, livro IV, cap. 20.', en: 'VANDRUNEN, David. Living in God’s two kingdoms: a biblical vision for Christianity and culture. Wheaton: Crossway, 2010.' } },
+      { nome: 'As Confissões Continentais e o Magistrado', desc: 'Confissão Escocesa (1560) cap. 24, Confissão Belga (1561) art. 36, Segunda Confissão Helvética (1566) cap. 30 e Catecismo de Heidelberg P. 104: o governo civil instituído por Deus para restringir o mal, promover a justiça e proteger a Igreja — e o dever cristão de honrar, obedecer e orar pelas autoridades, salvo contra a Palavra de Deus (At 5.29)', icon: '🗺️', refs: { pt: 'BEEKE, Joel R.; FERGUSON, Sinclair B. (org.). Harmonia das confissões reformadas. São Paulo: Cultura Cristã, 2006.', en: 'DENNISON JR., James T. (ed.). Reformed confessions of the 16th and 17th centuries in English translation. Grand Rapids: Reformation Heritage Books, 2008–2014. 4 v.' } },
+      { nome: 'Westminster: o Magistrado Civil e os Sínodos', desc: 'CFW XXIII (o magistrado ordenado por Deus para a glória dele e o bem público; a revisão americana de 1788 retira do Estado o poder sobre a Igreja), XX.4 (liberdade cristã e poder legítimo), XXXI (sínodos tratam só de assuntos eclesiásticos) e o 5º mandamento no Catecismo Maior P. 123–133', icon: '📖', refs: { pt: 'HODGE, A. A. Confissão de Fé de Westminster comentada. São Paulo: Os Puritanos, 1999.', en: 'VAN DIXHOORN, Chad. Confessing the faith: a reader’s guide to the Westminster Confession of Faith. Edinburgh: Banner of Truth, 2014.' } },
+      { nome: 'A Confissão Batista de 1689 e a Liberdade da Igreja', desc: 'CFB 1689 XXIV (o magistrado como ministro de Deus para o bem, sem jurisdição sobre a Igreja), XXI (Deus é o único Senhor da consciência) e XXVI (Cristo, único Cabeça da Igreja): como os batistas particulares reescreveram Westminster e Savoy na direção da liberdade religiosa', icon: '📘', refs: { pt: 'WALDRON, Samuel E. Uma exposição moderna da Confissão de Fé Batista de 1689. São José dos Campos: Fiel, 2014. cap. 24.', en: 'WALDRON, Samuel E. A modern exposition of the 1689 Baptist Confession of Faith. 5. ed. Darlington: Evangelical Press, 2016. ch. 24.' } },
+      { nome: 'Soberania das Esferas', desc: 'Abraham Kuyper e o neocalvinismo — família, Igreja, Estado e sociedade, cada um sob a autoridade direta de Cristo', icon: '🌐', refs: { pt: 'DOOYEWEERD, Herman. No crepúsculo do pensamento ocidental. São Paulo: Hagnos, 2010.', en: 'KUYPER, Abraham. Sphere sovereignty. In: BRATT, James D. (ed.). Abraham Kuyper: a centennial reader. Grand Rapids: Eerdmans, 1998. p. 461-490.' } },
+      { nome: 'Lex, Rex e o Direito de Resistência', desc: 'Samuel Rutherford, a tradição constitucional e os limites do poder dos governantes', icon: '👑', refs: { pt: 'FERREIRA, Franklin. Contra a idolatria do Estado: o papel do cristão na política. São Paulo: Vida Nova, 2016.', en: 'RUTHERFORD, Samuel. Lex, Rex, or the law and the prince. London: John Field, 1644.' } },
+      { nome: 'Liberdade Religiosa e de Consciência', desc: 'Os batistas, Roger Williams e a defesa da liberdade de consciência (CFB 1689 XXI; CFW XX)', icon: '🕊️', refs: { pt: 'WALDRON, Samuel E. Uma exposição moderna da Confissão de Fé Batista de 1689. São José dos Campos: Fiel, 2014. cap. 21.', en: 'BYRD, James P. The challenges of Roger Williams: religious liberty, violent persecution, and the Bible. Macon: Mercer University Press, 2002.' } },
+      { nome: 'Justiça, Lei e Bem Comum', desc: 'A lei natural, a lei moral de Deus e a busca da justiça pública numa sociedade plural', icon: '⚖️', refs: { pt: 'KELLER, Timothy. Justiça generosa: a graça de Deus e a justiça social. São Paulo: Vida Nova, 2013.', en: 'WOLTERSTORFF, Nicholas. Justice: rights and wrongs. Princeton: Princeton University Press, 2008.' } },
+      { nome: 'O Cristão na Esfera Pública', desc: 'Voto, engajamento cívico, oração pelas autoridades (1Tm 2.1-2) e testemunho profético sem idolatrar a política', icon: '🗳️', refs: { pt: 'SCHAEFFER, Francis A. Como viveremos? São Paulo: Cultura Cristã, 2003.', en: 'MOUW, Richard J. Uncommon decency: Christian civility in an uncivil world. Downers Grove: InterVarsity Press, 1992.' } },
+    ],
+  },
 };
 
 export default function TeologiaAreaPage() {
@@ -194,149 +270,5 @@ export default function TeologiaAreaPage() {
     );
   }
 
-  return (
-    <div style={{ minHeight: '100vh', background: BG, color: 'rgba(255,255,255,0.92)' }}>
-      <Navbar />
-
-      <div style={{ maxWidth: 1100, margin: '0 auto', padding: 'clamp(88px,11vw,108px) clamp(16px,4vw,36px) 100px' }}>
-
-        {/* Voltar */}
-        <button
-          onClick={() => navigate('/teologia')}
-          style={{ all: 'unset', cursor: 'pointer', fontSize: 12, fontWeight: 900, letterSpacing: '0.14em', textTransform: 'uppercase', color: `${area.cor}BB`, marginBottom: 44, display: 'inline-flex', alignItems: 'center', gap: 6 }}
-        >
-          ← Teologia
-        </button>
-
-        {/* Hero */}
-        <div style={{ display: 'flex', alignItems: 'flex-start', gap: 'clamp(16px,3vw,28px)', marginBottom: 52, flexWrap: 'wrap' }}>
-          <div style={{
-            width: 'clamp(64px,9vw,80px)', height: 'clamp(64px,9vw,80px)', flexShrink: 0,
-            borderRadius: 20, background: `${area.cor}18`, border: `2px solid ${area.cor}45`,
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            fontSize: 'clamp(30px,4.5vw,38px)',
-            filter: `drop-shadow(0 0 16px ${area.cor}40)`,
-          }}>
-            {area.icon}
-          </div>
-          <div style={{ flex: 1, minWidth: 240 }}>
-            <div style={{ fontSize: 'clamp(10px,1.4vw,12px)', fontWeight: 900, letterSpacing: '0.30em', textTransform: 'uppercase', color: area.cor, marginBottom: 10 }}>
-              Teologia · {area.titulo}
-            </div>
-            <h1 style={{
-              fontSize: 'clamp(26px,4.5vw,44px)', fontWeight: 900, lineHeight: 1.15,
-              margin: '0 0 16px', color: '#ffffff',
-            }}>
-              {area.titulo}
-            </h1>
-            <p style={{ fontSize: 'clamp(15px,2vw,18px)', color: 'rgba(220,235,255,0.88)', lineHeight: 1.75, margin: 0, maxWidth: 640 }}>
-              {area.descricao}
-            </p>
-          </div>
-        </div>
-
-        {/* Divisor */}
-        <div style={{ height: 1, background: `linear-gradient(90deg, ${area.cor}40 0%, transparent 70%)`, marginBottom: 44 }} />
-
-        {/* Label matérias */}
-        <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.55)', marginBottom: 28 }}>
-          Matérias desta área
-        </div>
-
-        {/* Grid de matérias */}
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 300px), 1fr))',
-          gap: 'clamp(14px,2vw,20px)',
-        }}>
-          {area.materias.map((m, i) => {
-            const isLink = !!m.link;
-            const cardStyle: React.CSSProperties = {
-              padding: 'clamp(20px,3vw,26px)', borderRadius: 16,
-              background: `${area.cor}08`,
-              border: `1px solid ${isLink ? area.cor + '45' : area.cor + '25'}`,
-              display: 'flex', flexDirection: 'column', gap: 10,
-              cursor: isLink ? 'pointer' : 'default',
-              transition: 'all 0.20s',
-              textAlign: 'left',
-              boxSizing: 'border-box',
-            };
-            const inner = (
-              <>
-                {/* Topo */}
-                <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-                  <div style={{
-                    width: 40, height: 40, borderRadius: 12, flexShrink: 0,
-                    background: `${area.cor}18`, border: `1px solid ${area.cor}38`,
-                    display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    fontSize: 18,
-                  }}>
-                    {m.icon}
-                  </div>
-                  <div style={{ fontSize: 'clamp(14px,1.8vw,16px)', fontWeight: 900, color: '#ffffff', lineHeight: 1.25 }}>
-                    {m.nome}
-                  </div>
-                </div>
-                {/* Descrição */}
-                <p style={{ margin: 0, fontSize: 'clamp(13px,1.6vw,14px)', color: 'rgba(220,235,255,0.82)', lineHeight: 1.65 }}>
-                  {m.desc}
-                </p>
-                {/* Badge */}
-                <div style={{
-                  marginTop: 4, alignSelf: 'flex-start',
-                  fontSize: 10, fontWeight: 900, letterSpacing: '0.16em',
-                  textTransform: 'uppercase',
-                  color: isLink ? area.cor : `${area.cor}BB`,
-                  background: `${area.cor}0F`, border: `1px solid ${area.cor}28`,
-                  borderRadius: 6, padding: '3px 9px',
-                }}>
-                  {isLink ? 'Acessar →' : 'Em breve'}
-                </div>
-              </>
-            );
-            return isLink ? (
-              <button
-                key={i}
-                style={{ all: 'unset', ...cardStyle }}
-                onClick={() => navigate(m.link!)}
-                onMouseEnter={e => {
-                  (e.currentTarget as HTMLElement).style.background = `${area.cor}14`;
-                  (e.currentTarget as HTMLElement).style.transform = 'translateY(-2px)';
-                  (e.currentTarget as HTMLElement).style.boxShadow = `0 8px 28px ${area.cor}18`;
-                }}
-                onMouseLeave={e => {
-                  (e.currentTarget as HTMLElement).style.background = `${area.cor}08`;
-                  (e.currentTarget as HTMLElement).style.transform = 'translateY(0)';
-                  (e.currentTarget as HTMLElement).style.boxShadow = 'none';
-                }}
-              >
-                {inner}
-              </button>
-            ) : (
-              <div key={i} style={cardStyle}>{inner}</div>
-            );
-          })}
-        </div>
-
-        {/* Aviso */}
-        <div style={{
-          marginTop: 52, padding: 'clamp(20px,3vw,28px)', borderRadius: 16,
-          background: `${area.cor}07`, border: `1px solid ${area.cor}20`,
-          textAlign: 'center',
-        }}>
-          <div style={{ fontSize: 28, marginBottom: 12 }}>🚧</div>
-          <div style={{ fontSize: 'clamp(15px,2vw,17px)', fontWeight: 800, color: '#ffffff', marginBottom: 8 }}>
-            Conteúdo em desenvolvimento
-          </div>
-          <p style={{ margin: 0, fontSize: 'clamp(13px,1.7vw,15px)', color: 'rgba(220,235,255,0.78)', lineHeight: 1.70 }}>
-            As matérias desta área estão sendo preparadas com cuidado.<br />
-            Novos conteúdos serão publicados progressivamente.
-          </p>
-        </div>
-
-      </div>
-
-      <Footer />
-    </div>
-  );
+  return <TeologiaAreaLayout area={area} />;
 }

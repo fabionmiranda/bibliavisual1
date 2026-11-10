@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import VideoIntro from '../components/VideoIntro';
 import Footer from '../components/Footer';
-import FlagToggle from '../components/FlagToggle';
+import { useLanguage } from '../contexts/LanguageContext';
 
 // ─── Design tokens ──────────────────────────────────────────────
 const C = {
@@ -1467,7 +1467,7 @@ function BibleBooksGrid({ pt, onSelectJosue }: { pt: boolean; onSelectJosue: () 
 
 // ─── Main Page ───────────────────────────────────────────────────
 export default function EducacaoPage() {
-  const [lang, setLang] = useState<'pt' | 'en'>('pt');
+  const [lang, setLang] = useLanguage();
   const pt = lang === 'pt';
   const [showJosue, setShowJosue] = useState(false);
   const [autorExpandido, setAutorExpandido] = useState<number | null>(null);
@@ -1496,10 +1496,6 @@ export default function EducacaoPage() {
         boxSizing: 'border-box',
       }}>
 
-        {/* FlagToggle */}
-        <div style={{ ...Wfull, display: 'flex', justifyContent: 'flex-end', marginBottom: 28 }}>
-          <FlagToggle lang={lang} onToggle={() => setLang(l => l === 'pt' ? 'en' : 'pt')} />
-        </div>
 
         {/* ── Hero ─────────────────────────────────────────────── */}
         <motion.div

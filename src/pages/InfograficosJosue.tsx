@@ -37,7 +37,7 @@ function InfograficoJosueTemplate({ data }: { data: JPericopeData; pt: boolean }
   const FN = data.footnotes;
 
   const Ref = ({ ids }: { ids: string[] }) => (
-    <sup style={{ fontSize: 10, color: ACC, marginLeft: 2, fontWeight: 700 }}>
+    <sup style={{ fontSize: 13, color: ACC, marginLeft: 2, fontWeight: 700 }}>
       {ids.map((id, i) => {
         const num = FN.findIndex(f => f.id === id) + 1;
         return <a key={id} href={`#fn-${id}`} style={{ color: ACC, textDecoration: 'none' }}>{i > 0 ? ',' : ''}{num}</a>;
@@ -47,7 +47,7 @@ function InfograficoJosueTemplate({ data }: { data: JPericopeData; pt: boolean }
 
   const DescBlock = ({ text }: { text: string }) => (
     <div style={{ margin: '10px 0 4px', padding: '10px 14px', borderRadius: 10, background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)' }}>
-      <p style={{ margin: 0, fontSize: 'clamp(12px,1.5vw,13px)', color: 'rgba(220,230,255,0.65)', lineHeight: 1.75, fontStyle: 'italic' }}>{text}</p>
+      <p style={{ margin: 0, fontSize: 'clamp(15px,1.7vw,16px)', color: 'rgba(220,230,255,0.65)', lineHeight: 1.75, fontStyle: 'italic' }}>{text}</p>
     </div>
   );
 
@@ -56,52 +56,52 @@ function InfograficoJosueTemplate({ data }: { data: JPericopeData; pt: boolean }
       {/* HERO */}
       <div style={{ borderRadius: 20, background: `linear-gradient(135deg,${ACCL.replace('0.10)','0.13)')} 0%,${ACCL.replace('0.10)','0.08)')} 100%)`, border: `1px solid ${ACCB}`, padding: 'clamp(24px,4vw,36px)', marginBottom: 28, textAlign: 'center' as const }}>
         <div style={{ fontSize: 'clamp(48px,8vw,72px)', lineHeight: 1, marginBottom: 10, filter: `drop-shadow(0 0 20px ${ACCL.replace('0.10)','0.50)')})` }}>{data.emoji}</div>
-        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase' as const, color: ACC.replace('1)','0.85)'), marginBottom: 8 }}>
+        <div style={{ fontSize: 'clamp(15px,1.6vw,16px)', fontWeight: 900, letterSpacing: '0.28em', textTransform: 'uppercase' as const, color: ACC.replace('1)','0.85)'), marginBottom: 8 }}>
           Josué {data.ref} · Dia {data.dia}
         </div>
         <div style={{ fontSize: 'clamp(22px,3.8vw,32px)', fontWeight: 900, color: '#fff', lineHeight: 1.25, marginBottom: 8 }}>{data.title}</div>
-        <div style={{ fontSize: 'clamp(15px,2.2vw,18px)', color: 'rgba(255,255,255,0.55)', fontStyle: 'italic', marginBottom: 16 }}>{data.subtitle}</div>
+        <div style={{ fontSize: 'clamp(18px,2.4vw,21px)', color: 'rgba(255,255,255,0.55)', fontStyle: 'italic', marginBottom: 16 }}>{data.subtitle}</div>
         <div style={{ display: 'inline-flex', flexWrap: 'wrap' as const, gap: 8, justifyContent: 'center' }}>
           {data.tags.map(t => (
-            <span key={t} style={{ fontSize: 'clamp(12px,1.5vw,14px)', fontWeight: 700, padding: '3px 12px', borderRadius: 99, background: ACCL, border: `1px solid ${ACCB}`, color: ACC.replace('1)','0.90)') }}>{t}</span>
+            <span key={t} style={{ fontSize: 'clamp(15px,1.7vw,17px)', fontWeight: 700, padding: '3px 12px', borderRadius: 99, background: ACCL, border: `1px solid ${ACCB}`, color: ACC.replace('1)','0.90)') }}>{t}</span>
           ))}
         </div>
       </div>
 
       {/* BIG IDEA */}
       <div style={{ borderRadius: 16, background: `linear-gradient(135deg,${ACCL},${ACCL.replace('0.10)','0.07)')})`, border: `1.5px solid ${ACCB}`, padding: '20px 24px', marginBottom: 20 }}>
-        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase' as const, color: ACC.replace('1)','0.90)'), marginBottom: 6 }}>💡 Big Idea · Tema Central</div>
+        <div style={{ fontSize: 'clamp(15px,1.6vw,16px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase' as const, color: ACC.replace('1)','0.90)'), marginBottom: 6 }}>💡 Big Idea · Tema Central</div>
         <DescBlock text={DESC_BIGIDEA} />
-        <p style={{ fontSize: 'clamp(16px,2.2vw,19px)', fontWeight: 800, color: '#fff', lineHeight: 1.70, margin: '14px 0 0' }}>{data.bigIdea}</p>
+        <p style={{ fontSize: 'clamp(19px,2.4vw,22px)', fontWeight: 800, color: '#fff', lineHeight: 1.70, margin: '14px 0 0' }}>{data.bigIdea}</p>
       </div>
 
       {/* PERGUNTA + PROPOSIÇÃO */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))', gap: 14, marginBottom: 28 }}>
         <div style={{ borderRadius: 14, background: 'rgba(255,100,130,0.06)', border: '1px solid rgba(255,100,130,0.22)', padding: '18px 20px' }}>
-          <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase' as const, color: 'rgba(255,140,140,0.85)', marginBottom: 6 }}>❓ Pergunta Central</div>
+          <div style={{ fontSize: 'clamp(15px,1.6vw,16px)', fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase' as const, color: 'rgba(255,140,140,0.85)', marginBottom: 6 }}>❓ Pergunta Central</div>
           <DescBlock text={DESC_PERGUNTA} />
-          <p style={{ fontSize: 'clamp(15px,2vw,17px)', color: 'rgba(255,210,210,0.90)', lineHeight: 1.70, fontStyle: 'italic', margin: '12px 0 0' }}>"{data.question}"</p>
+          <p style={{ fontSize: 'clamp(18px,2.2vw,20px)', color: 'rgba(255,210,210,0.90)', lineHeight: 1.70, fontStyle: 'italic', margin: '12px 0 0' }}>"{data.question}"</p>
         </div>
         <div style={{ borderRadius: 14, background: ACCL, border: `1px solid ${ACCB}`, padding: '18px 20px' }}>
-          <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase' as const, color: ACC.replace('1)','0.90)'), marginBottom: 6 }}>⚡ Proposição</div>
+          <div style={{ fontSize: 'clamp(15px,1.6vw,16px)', fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase' as const, color: ACC.replace('1)','0.90)'), marginBottom: 6 }}>⚡ Proposição</div>
           <DescBlock text={DESC_PROP} />
-          <p style={{ fontSize: 'clamp(15px,2vw,17px)', fontWeight: 700, color: '#fff', lineHeight: 1.70, margin: '12px 0 0' }}>{data.proposition}</p>
+          <p style={{ fontSize: 'clamp(18px,2.2vw,20px)', fontWeight: 700, color: '#fff', lineHeight: 1.70, margin: '12px 0 0' }}>{data.proposition}</p>
         </div>
       </div>
 
       {/* QUIASMA */}
-      <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.08)', padding: 'clamp(18px,3vw,28px)', marginBottom: 28 }}>
-        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase' as const, color: 'rgba(255,255,255,0.45)', marginBottom: 8, textAlign: 'center' as const }}>
+      <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.08)', padding: 'clamp(21px,3.2vw,30px)', marginBottom: 28 }}>
+        <div style={{ fontSize: 'clamp(15px,1.6vw,16px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase' as const, color: 'rgba(255,255,255,0.45)', marginBottom: 8, textAlign: 'center' as const }}>
           🔄 Estrutura Quiástica · Josué {data.chiasmRef}
         </div>
         <DescBlock text={data.chiasmDesc} />
         <div style={{ marginTop: 16 }}>
           {data.chiasm.map(({ sym, ref, label, cor, indent, emoji }) => (
             <div key={sym} style={{ display: 'flex', alignItems: 'flex-start', gap: 10, marginBottom: 10, paddingLeft: `${indent * 20}px` }}>
-              <div style={{ width: 38, height: 38, minWidth: 38, borderRadius: 10, background: `${cor}22`, border: `1.5px solid ${cor}55`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 'clamp(13px,1.6vw,15px)', fontWeight: 900, color: cor }}>{sym}</div>
+              <div style={{ width: 38, height: 38, minWidth: 38, borderRadius: 10, background: `${cor}22`, border: `1.5px solid ${cor}55`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 'clamp(16px,1.8vw,18px)', fontWeight: 900, color: cor }}>{sym}</div>
               <div style={{ flex: 1, padding: '8px 12px', borderRadius: 10, background: `${cor}0d`, border: `1px solid ${cor}28` }}>
-                <span style={{ fontSize: 'clamp(11px,1.3vw,12px)', fontWeight: 700, color: cor, marginRight: 8 }}>{emoji} {ref}</span>
-                <span style={{ fontSize: 'clamp(13px,1.6vw,14px)', color: 'rgba(255,255,255,0.82)' }}>{label}</span>
+                <span style={{ fontSize: 'clamp(14px,1.5vw,15px)', fontWeight: 700, color: cor, marginRight: 8 }}>{emoji} {ref}</span>
+                <span style={{ fontSize: 'clamp(16px,1.8vw,17px)', color: 'rgba(255,255,255,0.82)' }}>{label}</span>
               </div>
             </div>
           ))}
@@ -110,7 +110,7 @@ function InfograficoJosueTemplate({ data }: { data: JPericopeData; pt: boolean }
 
       {/* MOVIMENTOS */}
       <div style={{ marginBottom: 28 }}>
-        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase' as const, color: 'rgba(255,255,255,0.45)', marginBottom: 8 }}>
+        <div style={{ fontSize: 'clamp(15px,1.6vw,16px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase' as const, color: 'rgba(255,255,255,0.45)', marginBottom: 8 }}>
           📋 Movimentos do Sermão
         </div>
         <DescBlock text={DESC_MOVIMENTOS} />
@@ -118,52 +118,52 @@ function InfograficoJosueTemplate({ data }: { data: JPericopeData; pt: boolean }
           {data.moves.map(m => (
             <div key={m.num} style={{ borderRadius: 16, background: m.corL, border: `1.5px solid ${m.corB}`, padding: '18px 20px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 8 }}>
-                <div style={{ width: 34, height: 34, borderRadius: 9, background: `${m.cor}22`, border: `1.5px solid ${m.cor}55`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 'clamp(14px,1.8vw,16px)', fontWeight: 900, color: m.cor }}>{m.num}</div>
+                <div style={{ width: 34, height: 34, borderRadius: 9, background: `${m.cor}22`, border: `1.5px solid ${m.cor}55`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 'clamp(17px,2.0vw,19px)', fontWeight: 900, color: m.cor }}>{m.num}</div>
                 <div>
-                  <div style={{ fontSize: 'clamp(11px,1.3vw,12px)', fontWeight: 700, color: m.cor, letterSpacing: '0.12em' }}>{m.sym} · {m.ref}</div>
-                  <div style={{ fontSize: 'clamp(14px,1.8vw,16px)', fontWeight: 800, color: '#fff', lineHeight: 1.3 }}>{m.emoji} {m.title}</div>
+                  <div style={{ fontSize: 'clamp(14px,1.5vw,15px)', fontWeight: 700, color: m.cor, letterSpacing: '0.12em' }}>{m.sym} · {m.ref}</div>
+                  <div style={{ fontSize: 'clamp(17px,2.0vw,19px)', fontWeight: 800, color: '#fff', lineHeight: 1.3 }}>{m.emoji} {m.title}</div>
                 </div>
               </div>
-              <div style={{ fontSize: 'clamp(11px,1.4vw,12px)', color: 'rgba(220,230,255,0.55)', lineHeight: 1.65, fontStyle: 'italic', marginBottom: 8, padding: '7px 10px', borderRadius: 8, background: 'rgba(255,255,255,0.03)', border: `1px solid ${m.cor}15` }}>
+              <div style={{ fontSize: 'clamp(14px,1.6vw,15px)', color: 'rgba(220,230,255,0.55)', lineHeight: 1.65, fontStyle: 'italic', marginBottom: 8, padding: '7px 10px', borderRadius: 8, background: 'rgba(255,255,255,0.03)', border: `1px solid ${m.cor}15` }}>
                 {m.desc}<Ref ids={m.descRefs} />
               </div>
-              <div style={{ fontSize: 'clamp(13px,1.6vw,14px)', color: 'rgba(255,255,255,0.60)', fontStyle: 'italic', marginBottom: 8 }}>{m.sub}</div>
-              <div style={{ fontSize: 'clamp(13px,1.6vw,14px)', color: 'rgba(255,255,255,0.82)', lineHeight: 1.60, marginBottom: 10, padding: '8px 10px', borderRadius: 8, background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.07)' }}>{m.key}</div>
-              <div style={{ fontSize: 'clamp(13px,1.6vw,14px)', color: m.cor, lineHeight: 1.55, fontWeight: 600 }}>▸ {m.app}</div>
+              <div style={{ fontSize: 'clamp(16px,1.8vw,17px)', color: 'rgba(255,255,255,0.60)', fontStyle: 'italic', marginBottom: 8 }}>{m.sub}</div>
+              <div style={{ fontSize: 'clamp(16px,1.8vw,17px)', color: 'rgba(255,255,255,0.82)', lineHeight: 1.60, marginBottom: 10, padding: '8px 10px', borderRadius: 8, background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.07)' }}>{m.key}</div>
+              <div style={{ fontSize: 'clamp(16px,1.8vw,17px)', color: m.cor, lineHeight: 1.55, fontWeight: 600 }}>▸ {m.app}</div>
             </div>
           ))}
         </div>
       </div>
 
       {/* EIXO CRISTOLÓGICO */}
-      <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.09)', padding: 'clamp(18px,3vw,26px)', marginBottom: 28 }}>
-        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase' as const, color: ACC.replace('1)','0.70)'), marginBottom: 8, textAlign: 'center' as const }}>
+      <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.09)', padding: 'clamp(21px,3.2vw,28px)', marginBottom: 28 }}>
+        <div style={{ fontSize: 'clamp(15px,1.6vw,16px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase' as const, color: ACC.replace('1)','0.70)'), marginBottom: 8, textAlign: 'center' as const }}>
           ✝️ Eixo Redentor · Josué {data.ref} → Cristo
         </div>
         <DescBlock text={DESC_CRISTOLOGICO} />
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))', gap: 14, marginTop: 14 }}>
           {data.christological.map(c => (
             <div key={c.title} style={{ borderRadius: 12, background: ACCL, border: `1px solid ${ACCB}`, padding: '14px 16px' }}>
-              <div style={{ fontSize: 'clamp(20px,2.8vw,26px)', marginBottom: 6 }}>{c.icon}</div>
-              <div style={{ fontSize: 'clamp(13px,1.6vw,14px)', fontWeight: 800, color: 'rgba(255,220,160,0.95)', marginBottom: 6 }}>{c.title}</div>
-              <div style={{ fontSize: 'clamp(13px,1.6vw,14px)', color: 'rgba(255,255,255,0.75)', lineHeight: 1.60 }}>{c.body}</div>
+              <div style={{ fontSize: 'clamp(23px,3.0vw,28px)', marginBottom: 6 }}>{c.icon}</div>
+              <div style={{ fontSize: 'clamp(16px,1.8vw,17px)', fontWeight: 800, color: 'rgba(255,220,160,0.95)', marginBottom: 6 }}>{c.title}</div>
+              <div style={{ fontSize: 'clamp(16px,1.8vw,17px)', color: 'rgba(255,255,255,0.75)', lineHeight: 1.60 }}>{c.body}</div>
             </div>
           ))}
         </div>
       </div>
 
       {/* APLICAÇÕES */}
-      <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.09)', padding: 'clamp(18px,3vw,26px)', marginBottom: 28 }}>
-        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase' as const, color: GOLD.replace('1)','0.70)'), marginBottom: 8, textAlign: 'center' as const }}>
+      <div style={{ borderRadius: 16, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.09)', padding: 'clamp(21px,3.2vw,28px)', marginBottom: 28 }}>
+        <div style={{ fontSize: 'clamp(15px,1.6vw,16px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase' as const, color: GOLD.replace('1)','0.70)'), marginBottom: 8, textAlign: 'center' as const }}>
           🎯 Aplicações por Audiência
         </div>
         <DescBlock text={DESC_APPS} />
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(220px,1fr))', gap: 12, marginTop: 14 }}>
           {data.apps.map(a => (
             <div key={a.audience} style={{ borderRadius: 12, background: 'rgba(255,180,50,0.07)', border: '1px solid rgba(255,180,50,0.20)', padding: '14px 16px' }}>
-              <div style={{ fontSize: 'clamp(14px,1.8vw,16px)', fontWeight: 800, color: 'rgba(255,200,80,0.95)', marginBottom: 8 }}>{a.icon} {a.audience}</div>
+              <div style={{ fontSize: 'clamp(17px,2.0vw,19px)', fontWeight: 800, color: 'rgba(255,200,80,0.95)', marginBottom: 8 }}>{a.icon} {a.audience}</div>
               {a.items.map((item, i) => (
-                <div key={i} style={{ fontSize: 'clamp(13px,1.6vw,14px)', color: 'rgba(255,255,255,0.78)', lineHeight: 1.55, marginBottom: 4 }}>▸ {item}</div>
+                <div key={i} style={{ fontSize: 'clamp(16px,1.8vw,17px)', color: 'rgba(255,255,255,0.78)', lineHeight: 1.55, marginBottom: 4 }}>▸ {item}</div>
               ))}
             </div>
           ))}
@@ -172,17 +172,17 @@ function InfograficoJosueTemplate({ data }: { data: JPericopeData; pt: boolean }
 
       {/* CONCLUSÃO */}
       <div style={{ borderRadius: 16, background: `linear-gradient(135deg,${ACCL},${ACCL.replace('0.10)','0.07)')})`, border: `1.5px solid ${ACCB}`, padding: '20px 24px', marginBottom: 28 }}>
-        <div style={{ fontSize: 'clamp(12px,1.4vw,13px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase' as const, color: ACC.replace('1)','0.85)'), marginBottom: 8 }}>🏁 Conclusão</div>
+        <div style={{ fontSize: 'clamp(15px,1.6vw,16px)', fontWeight: 900, letterSpacing: '0.24em', textTransform: 'uppercase' as const, color: ACC.replace('1)','0.85)'), marginBottom: 8 }}>🏁 Conclusão</div>
         <DescBlock text={DESC_CONCLUSAO} />
-        <p style={{ fontSize: 'clamp(14px,1.8vw,16px)', color: 'rgba(255,255,255,0.85)', lineHeight: 1.75, margin: '12px 0 0' }}>{data.conclusion}</p>
+        <p style={{ fontSize: 'clamp(17px,2.0vw,19px)', color: 'rgba(255,255,255,0.85)', lineHeight: 1.75, margin: '12px 0 0' }}>{data.conclusion}</p>
       </div>
 
       {/* NOTAS */}
       <div style={{ borderRadius: 14, background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.07)', padding: '18px 20px' }}>
-        <div style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.26em', textTransform: 'uppercase' as const, color: ACC.replace('1)','0.50)'), marginBottom: 12 }}>Notas de Rodapé</div>
+        <div style={{ fontSize: 14, fontWeight: 900, letterSpacing: '0.26em', textTransform: 'uppercase' as const, color: ACC.replace('1)','0.50)'), marginBottom: 12 }}>Notas de Rodapé</div>
         <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 7 }}>
           {FN.map((f, i) => (
-            <p key={f.id} id={`fn-${f.id}`} style={{ margin: 0, fontSize: 'clamp(11px,1.4vw,12px)', color: 'rgba(200,215,255,0.55)', lineHeight: 1.65 }}>
+            <p key={f.id} id={`fn-${f.id}`} style={{ margin: 0, fontSize: 'clamp(14px,1.6vw,15px)', color: 'rgba(200,215,255,0.55)', lineHeight: 1.65 }}>
               <span style={{ color: ACC, fontWeight: 800, marginRight: 6 }}>[{i + 1}]</span>{f.txt}
             </p>
           ))}

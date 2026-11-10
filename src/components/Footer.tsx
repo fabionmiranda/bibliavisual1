@@ -1,3 +1,4 @@
+import { useLanguage } from '../contexts/LanguageContext';
 import { MessageCircle, Mail, Globe, BookOpen, Share2, Gift, Library, Users, Languages, Cpu, Cross } from 'lucide-react';
 
 // Apresentação do projeto missionário — primeira coisa vista ao clicar em "Contatos"
@@ -95,7 +96,9 @@ function MissaoProjeto({ pt }: { pt: boolean }) {
   );
 }
 
-export default function Footer({ lang = 'pt' }: { lang?: 'pt' | 'en' }) {
+// `lang` é aceito por compatibilidade; o idioma vem do contexto global.
+export default function Footer(_: { lang?: 'pt' | 'en' }) {
+  const [lang] = useLanguage();
   const pt = lang === 'pt';
   return (
     <footer id="footer" className="bg-bg-deep border-t border-white/5 pt-20 pb-10" style={{ paddingBottom: 'max(2.5rem, env(safe-area-inset-bottom))' }}>
