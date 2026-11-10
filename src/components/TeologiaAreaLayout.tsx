@@ -23,6 +23,17 @@ export interface PlanoCurso {
   metodologia: { icon: string; t: string; d: string }[];
   avaliacao: string[];
   referencial: { categoria: string; itens: string[] }[];
+  legal?: { selo: string; resumo: string; leis: { lei: string; texto: string }[]; avisos: string[] };
+  professor?: {
+    nome: string;
+    titulo: string;
+    foto?: string;
+    resumo: string;
+    formacao: { grau: string; area: string; periodo: string }[];
+    atuacao: string[];
+    publicacoes: string[];
+    contato: string;
+  };
 }
 
 export interface AreaTeologia {
@@ -145,6 +156,7 @@ function PlanoDeCurso({ p, c }: { p: PlanoCurso; c: string }) {
           </div>
         </div>
       </div>
+
     </section>
   );
 }
@@ -160,6 +172,104 @@ const CSS = `
   .ta-card:hover .ta-corner { width: 24px; height: 24px; opacity: 1; }
   @media (prefers-reduced-motion: reduce) { .ta-anim { animation: none !important; } }
 `;
+
+/* Blocos finais do plano (base legal e professor) — exibidos no fim da página. */
+function PlanoFinal({ p, c }: { p: PlanoCurso; c: string }) {
+  if (!p.legal && !p.professor) return null;
+  const painel: React.CSSProperties = { padding: 'clamp(20px,3vw,28px)', borderRadius: 18, background: 'linear-gradient(160deg, rgba(14,24,52,0.9), rgba(6,12,30,0.95))', border: `1px solid ${c}28` };
+  const texto: React.CSSProperties = { margin: 0, fontSize: 'clamp(17px,1.8vw,19.5px)', color: 'rgba(225,235,255,0.88)', lineHeight: 1.7 };
+  return (
+    <section style={{ marginTop: 'clamp(48px,7vw,72px)' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 28 }}>
+        <span style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(16px,2vw,20px)', fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#fff' }}>Sobre o curso</span>
+        <span style={{ flex: 1, height: 1, background: `linear-gradient(90deg, ${c}70, transparent)` }} />
+      </div>
+      {/* Natureza do curso e base legal */}
+      {p.legal && (
+        <div style={{ ...painel, background: `linear-gradient(135deg, rgba(52,211,153,0.10), rgba(6,12,30,0.95) 55%)`, border: '1px solid rgba(52,211,153,0.35)' }}>
+          <TituloBloco cor="#34d399" n="07">Natureza do curso e base legal</TituloBloco>
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '6px 14px', borderRadius: 999, marginBottom: 14, fontFamily: 'var(--font-mono)', fontSize: 14, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#34d399', background: 'rgba(52,211,153,0.12)', border: '1px solid rgba(52,211,153,0.4)' }}>
+            ⚖️ {p.legal.selo}
+          </div>
+          <p style={{ ...texto, fontSize: 'clamp(17px,2vw,19px)', marginBottom: 20 }}>{p.legal.resumo}</p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))', gap: 14, marginBottom: 20 }}>
+            {p.legal.leis.map(l => (
+              <div key={l.lei} style={{ padding: '14px 16px', borderRadius: 14, background: 'rgba(0,0,0,0.3)', border: '1px solid rgba(52,211,153,0.22)' }}>
+                <div style={{ fontSize: 'clamp(16px,1.9vw,18px)', fontWeight: 800, color: '#fff', marginBottom: 6 }}>{l.lei}</div>
+                <p style={{ ...texto, fontSize: 'clamp(15.5px,1.8vw,17px)' }}>{l.texto}</p>
+              </div>
+            ))}
+          </div>
+          <ul style={{ margin: 0, padding: 0, listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10 }}>
+            {p.legal.avisos.map((a, i) => (
+              <li key={i} style={{ display: 'flex', gap: 10 }}>
+                <span style={{ flexShrink: 0, color: '#34d399', fontWeight: 900 }}>•</span>
+                <span style={texto}>{a}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {/* Professor do curso */}
+      {p.professor && (
+        <div style={{ ...painel, marginTop: 20, background: `linear-gradient(135deg, ${c}14, rgba(6,12,30,0.95) 55%)` }}>
+          <TituloBloco cor={c} n={p.legal ? '08' : '07'}>Professor do curso</TituloBloco>
+          <div style={{ display: 'flex', gap: 'clamp(18px,3vw,28px)', alignItems: 'flex-start', flexWrap: 'wrap' }}>
+            {p.professor.foto ? (
+              <div style={{ position: 'relative', width: 'clamp(150px,18vw,210px)', aspectRatio: '3 / 4', flexShrink: 0, borderRadius: 22, padding: 3, background: `linear-gradient(160deg, ${c}, ${c}30 60%, ${c}90)`, boxShadow: `0 0 40px ${c}35, 0 18px 40px rgba(0,0,0,0.45)` }}>
+                <img src={p.professor.foto} alt={p.professor.nome} decoding="async" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: '50% 28%', borderRadius: 19, display: 'block' }} />
+              </div>
+            ) : (
+              <div style={{ width: 'clamp(84px,11vw,110px)', aspectRatio: '1', flexShrink: 0, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(26px,3.4vw,34px)', color: c, background: `radial-gradient(circle at 35% 30%, ${c}40, ${c}10 70%)`, border: `2px solid ${c}80`, boxShadow: `0 0 34px ${c}30` }}>
+                {p.professor.nome.replace(/^Prof\.\s*Dr\.\s*/, '').split(' ').filter(Boolean).map(w => w[0]).slice(0, 2).join('')}
+              </div>
+            )}
+            <div style={{ flex: 1, minWidth: 'min(100%, 280px)' }}>
+              <div style={{ fontSize: 'clamp(22px,2.8vw,28px)', fontWeight: 900, color: '#fff', lineHeight: 1.2 }}>{p.professor.nome}</div>
+              <div style={{ fontFamily: 'var(--font-mono)', fontSize: 'clamp(14px,1.6vw,15px)', fontWeight: 700, letterSpacing: '0.08em', color: c, margin: '6px 0 14px' }}>{p.professor.titulo}</div>
+              <p style={{ ...texto, fontSize: 'clamp(17px,2vw,19px)' }}>{p.professor.resumo}</p>
+            </div>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 340px), 1fr))', gap: 16, marginTop: 24 }}>
+            <div>
+              <div style={{ fontFamily: 'var(--font-mono)', fontSize: 15, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: c, marginBottom: 12 }}>Formação acadêmica</div>
+              <ol style={{ margin: 0, padding: 0, listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10, borderLeft: `2px solid ${c}40`, paddingLeft: 16 }}>
+                {p.professor.formacao.map(f => (
+                  <li key={f.grau + f.area} style={{ position: 'relative' }}>
+                    <span style={{ position: 'absolute', left: -23, top: 7, width: 12, height: 12, borderRadius: '50%', background: c, boxShadow: `0 0 10px ${c}` }} />
+                    <div style={{ fontFamily: 'var(--font-mono)', fontSize: 14, color: c, fontWeight: 700 }}>{f.periodo}</div>
+                    <div style={{ fontSize: 'clamp(16.5px,1.9vw,18px)', fontWeight: 800, color: '#fff' }}>{f.grau}</div>
+                    <div style={texto}>{f.area}</div>
+                  </li>
+                ))}
+              </ol>
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+              {[['Atuação', p.professor.atuacao], ['Publicações recentes', p.professor.publicacoes]].map(([rot, itens]) => (
+                <div key={rot as string}>
+                  <div style={{ fontFamily: 'var(--font-mono)', fontSize: 15, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: c, marginBottom: 10 }}>{rot as string}</div>
+                  <ul style={{ margin: 0, padding: 0, listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 8 }}>
+                    {(itens as string[]).map(it => (
+                      <li key={it} style={{ display: 'flex', gap: 10 }}>
+                        <span style={{ flexShrink: 0, color: c, fontWeight: 900 }}>▸</span>
+                        <span style={texto}>{it}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+              <a href={`mailto:${p.professor.contato}`} style={{ alignSelf: 'flex-start', display: 'inline-flex', alignItems: 'center', gap: 8, padding: '10px 18px', borderRadius: 12, fontWeight: 800, fontSize: 'clamp(15px,1.8vw,16.5px)', color: '#0a0f1e', background: c, textDecoration: 'none' }}>
+                ✉️ {p.professor.contato}
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
+    </section>
+  );
+}
 
 export default function TeologiaAreaLayout({ area }: { area: AreaTeologia }) {
   const navigate = useNavigate();
@@ -296,6 +406,8 @@ export default function TeologiaAreaLayout({ area }: { area: AreaTeologia }) {
             </p>
           </div>
         </div>
+
+        {area.plano && <PlanoFinal p={area.plano} c={c} />}
       </main>
 
       <Footer />

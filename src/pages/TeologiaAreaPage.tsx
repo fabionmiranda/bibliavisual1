@@ -15,6 +15,7 @@ const PLANO_POLITICA: PlanoCurso = {
     { rotulo: 'Formato', valor: 'Presencial, on-line ou híbrido' },
     { rotulo: 'Público', valor: 'Líderes, seminaristas, professores e membros adultos' },
     { rotulo: 'Pré-requisito', valor: 'Noções de teologia sistemática' },
+    { rotulo: 'Natureza', valor: 'Curso livre · certificado de conclusão' },
   ],
   objetivoGeral: 'Capacitar o aluno a compreender e articular, a partir das Escrituras e da tradição confessional reformada, uma visão cristã da autoridade civil e da vida pública, vivendo com fidelidade a Cristo como cidadão do Reino e da cidade terrena.',
   objetivosEspecificos: [
@@ -64,7 +65,49 @@ const PLANO_POLITICA: PlanoCurso = {
       'PAZMIÑO, Robert W. Temas fundamentais da educação cristã. São Paulo: Cultura Cristã, 2008.',
       'VELLA, Jane. Learning to listen, learning to teach: the power of dialogue in educating adults. 2. ed. San Francisco: Jossey-Bass, 2002.',
     ] },
+    { categoria: 'Base legal', itens: [
+      'BRASIL. [Constituição (1988)]. Constituição da República Federativa do Brasil. Brasília, DF: Presidência da República, 1988. Art. 5º, VI e IX; art. 205; art. 206, II e III.',
+      'BRASIL. Lei nº 9.394, de 20 de dezembro de 1996. Estabelece as diretrizes e bases da educação nacional. Diário Oficial da União, Brasília, DF, 23 dez. 1996. Art. 1º.',
+      'BRASIL. Decreto nº 5.154, de 23 de julho de 2004. Regulamenta o § 2º do art. 36 e os arts. 39 a 41 da Lei nº 9.394/1996. Diário Oficial da União, Brasília, DF, 26 jul. 2004. Art. 3º.',
+    ] },
   ],
+  legal: {
+    selo: 'Curso livre · educação não formal',
+    resumo: 'Este é um curso livre de formação teológica, oferecido como educação não formal. Cursos livres não dependem de autorização, credenciamento ou reconhecimento do Ministério da Educação (MEC), porque a legislação educacional brasileira regula apenas a educação escolar formal e garante a liberdade de ensinar, aprender e divulgar o pensamento.',
+    leis: [
+      { lei: 'Constituição Federal, art. 5º, VI e IX', texto: 'Garante a liberdade de consciência e de crença e a livre expressão da atividade intelectual, científica e de comunicação, independentemente de censura ou licença.' },
+      { lei: 'Constituição Federal, arts. 205 e 206, II e III', texto: 'A educação é dever do Estado e da família, promovida com a colaboração da sociedade; o ensino se baseia na liberdade de aprender, ensinar, pesquisar e divulgar o pensamento e no pluralismo de ideias.' },
+      { lei: 'Lei nº 9.394/1996 (LDB), art. 1º', texto: 'A educação abrange processos formativos que ocorrem também nas organizações da sociedade civil e nas manifestações culturais; a LDB disciplina a educação escolar (§ 1º). Cursos livres ficam fora dessa regulação.' },
+      { lei: 'Decreto nº 5.154/2004, art. 3º', texto: 'Prevê cursos de formação inicial e continuada (capacitação, aperfeiçoamento, especialização e atualização) — base normativa usualmente invocada para a oferta de cursos livres no Brasil.' },
+    ],
+    avisos: [
+      'Ao final, o aluno recebe certificado de conclusão de curso livre, com a carga horária cursada.',
+      'O certificado não equivale a diploma de graduação ou pós-graduação, nem confere grau acadêmico.',
+      'A carga horária pode ser aproveitada como atividade complementar ou formação continuada, a critério de cada instituição.',
+      'Texto de caráter informativo; não substitui orientação jurídica.',
+    ],
+  },
+  professor: {
+    nome: 'Prof. Dr. Fabio Neves de Miranda',
+    titulo: 'Doutor em Teologia Reformada · Teologia e Tecnologias',
+    foto: '/fotos/foto1.jpg',
+    resumo: 'Professor universitário há mais de 30 anos nas áreas de Teologia e Tecnologias. Idealizador da Bíblia Visual Expositiva, une exegese, teologia reformada e recursos visuais para tornar o estudo das Escrituras acessível a pastores, líderes, professores e famílias.',
+    formacao: [
+      { periodo: '2026–2028', grau: 'PhD (em curso)', area: 'Teologia Contemporânea' },
+      { periodo: '2022–2026', grau: 'Doutorado', area: 'Teologia Reformada' },
+      { periodo: '2012–2014', grau: 'Mestrado', area: 'Educação e Tecnologias' },
+      { periodo: '2001–2006', grau: 'Bacharelado', area: 'Teologia Reformada' },
+    ],
+    atuacao: [
+      'Docência universitária em Teologia e Tecnologias.',
+      'Autor e coordenador da plataforma Bíblia Visual Expositiva.',
+      'Discipulado confessional, pregação expositiva e educação cristã.',
+    ],
+    publicacoes: [
+      'MIRANDA, Fabio Neves de. A racionalidade da interpretação bíblica em Kevin J. Vanhoozer: linguagem, cânon e conhecimento de Deus. Artefactum, v. 25, n. 8, 2026.',
+    ],
+    contato: 'contato@fabionmiranda.com',
+  },
 };
 
 const AREAS_INFO: Record<string, AreaInfo> = {
