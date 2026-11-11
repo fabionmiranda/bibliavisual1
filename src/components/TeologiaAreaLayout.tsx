@@ -70,7 +70,7 @@ function PlanoDeCurso({ p, c }: { p: PlanoCurso; c: string }) {
       <div style={{ ...painel, marginBottom: 20, background: `linear-gradient(135deg, ${c}16, rgba(6,12,30,0.95) 60%)` }}>
         <TituloBloco cor={c} n="01">Ementa</TituloBloco>
         <p style={{ ...texto, fontSize: 'clamp(18px,2vw,21px)' }}>{p.ementa}</p>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 170px), 1fr))', gap: 12, marginTop: 22 }}>
+        <div className="fluxo" style={{ '--min': '170px', '--gap': '12px', marginTop: 22 } as React.CSSProperties}>
           {p.ficha.map(f => (
             <div key={f.rotulo} style={{ padding: '12px 14px', borderRadius: 12, background: 'rgba(0,0,0,0.3)', border: `1px solid ${c}22` }}>
               <div style={{ fontFamily: 'var(--font-mono)', fontSize: 15, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: c, marginBottom: 4 }}>{f.rotulo}</div>
@@ -80,7 +80,7 @@ function PlanoDeCurso({ p, c }: { p: PlanoCurso; c: string }) {
         </div>
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 460px), 1fr))', gap: 20, marginBottom: 20 }}>
+      <div className="mosaico" style={{ '--min': '440px', '--gap': '20px' } as React.CSSProperties}>
         {/* Objetivos */}
         <div style={painel}>
           <TituloBloco cor={c} n="02">Objetivos</TituloBloco>
@@ -111,12 +111,11 @@ function PlanoDeCurso({ p, c }: { p: PlanoCurso; c: string }) {
             ))}
           </div>
         </div>
-      </div>
 
-      {/* Metodologia */}
-      <div style={{ ...painel, marginBottom: 20 }}>
+        {/* Metodologia */}
+        <div style={painel}>
         <TituloBloco cor={c} n="04">Metodologia</TituloBloco>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))', gap: 14 }}>
+        <div className="fluxo" style={{ '--min': '240px', '--gap': '14px' } as React.CSSProperties}>
           {p.metodologia.map(m => (
             <div key={m.t} style={{ padding: '14px 16px', borderRadius: 14, background: `${c}0a`, border: `1px solid ${c}26` }}>
               <div style={{ fontSize: 24, marginBottom: 8 }}>{m.icon}</div>
@@ -125,9 +124,8 @@ function PlanoDeCurso({ p, c }: { p: PlanoCurso; c: string }) {
             </div>
           ))}
         </div>
-      </div>
+        </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 460px), 1fr))', gap: 20 }}>
         {/* Avaliação */}
         <div style={painel}>
           <TituloBloco cor={c} n="05">Avaliação</TituloBloco>
@@ -194,7 +192,7 @@ function PlanoFinal({ p, c }: { p: PlanoCurso; c: string }) {
             ⚖️ {p.legal.selo}
           </div>
           <p style={{ ...texto, fontSize: 'clamp(17px,2vw,19px)', marginBottom: 20 }}>{p.legal.resumo}</p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))', gap: 14, marginBottom: 20 }}>
+          <div className="fluxo" style={{ '--min': '320px', '--gap': '14px', marginBottom: 20 } as React.CSSProperties}>
             {p.legal.leis.map(l => (
               <div key={l.lei} style={{ padding: '14px 16px', borderRadius: 14, background: 'rgba(0,0,0,0.3)', border: '1px solid rgba(52,211,153,0.22)' }}>
                 <div style={{ fontSize: 'clamp(16px,1.9vw,18px)', fontWeight: 800, color: '#fff', marginBottom: 6 }}>{l.lei}</div>
@@ -234,7 +232,7 @@ function PlanoFinal({ p, c }: { p: PlanoCurso; c: string }) {
             </div>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 340px), 1fr))', gap: 16, marginTop: 24 }}>
+          <div className="fluxo" style={{ '--min': '340px', '--gap': '16px', marginTop: 24 } as React.CSSProperties}>
             <div>
               <div style={{ fontFamily: 'var(--font-mono)', fontSize: 15, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: c, marginBottom: 12 }}>Formação acadêmica</div>
               <ol style={{ margin: 0, padding: 0, listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10, borderLeft: `2px solid ${c}40`, paddingLeft: 16 }}>
@@ -338,7 +336,7 @@ export default function TeologiaAreaLayout({ area }: { area: AreaTeologia }) {
           <span style={{ fontFamily: 'var(--font-mono)', fontSize: 17, color: c }}>{String(area.materias.length).padStart(2, '0')}</span>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 340px), 1fr))', gap: 'clamp(16px,2.2vw,24px)' }}>
+        <div className="mosaico" style={{ '--min': '340px', '--gap': '22px' } as React.CSSProperties}>
           {area.materias.map((m, i) => {
             const isLink = !!m.link;
             const cardStyle = {

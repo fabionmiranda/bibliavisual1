@@ -156,3 +156,12 @@
 body { top: 0 !important; position: static !important; }
 .goog-text-highlight { background: none !important; box-shadow: none !important; }
 font[style*="vertical-align: inherit"] { background: none !important; }
+
+/* Layouts sem espaços vazios (aulas e áreas de /teologia)
+   .fluxo   — cartões em linhas que se esticam para preencher a última linha
+   .mosaico — colunas tipo alvenaria: cada cartão encaixa logo abaixo do anterior */
+.fluxo { display: flex; flex-wrap: wrap; gap: var(--gap, 14px); }
+.fluxo > * { flex: 1 1 var(--min, 280px); min-width: min(100%, var(--min, 280px)); box-sizing: border-box; }
+.mosaico { column-width: var(--min, 340px); column-gap: var(--gap, 20px); }
+.mosaico > * { break-inside: avoid; -webkit-column-break-inside: avoid; width: 100%; box-sizing: border-box; margin-bottom: var(--gap, 20px); display: inline-flex !important; vertical-align: top; }
+.mosaico > *:not([style*="flex-direction"]) { flex-direction: column; }

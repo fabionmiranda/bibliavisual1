@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, type CSSProperties } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -161,7 +161,7 @@ export default function TeologiaPoliticaAula01Page() {
 
         {/* Plano da aula */}
         <Secao id="plano" num="00" cor={GOLD} titulo="Identificação e plano da aula">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 200px), 1fr))', gap: 12 }}>
+          <div className="fluxo" style={{ '--min': '200px', '--gap': '12px' } as CSSProperties}>
             {FICHA.map(([r, v]) => (
               <div key={r} style={{ padding: '12px 14px', borderRadius: 12, background: 'rgba(0,0,0,0.3)', border: `1px solid ${GOLD}25` }}>
                 <div style={{ fontFamily: 'var(--font-mono)', fontSize: 13, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: GOLD, marginBottom: 4 }}>{r}</div>
@@ -184,7 +184,7 @@ export default function TeologiaPoliticaAula01Page() {
           <div style={{ display: 'flex', borderRadius: 12, overflow: 'hidden', height: 16, border: '1px solid rgba(255,255,255,0.1)' }}>
             {ROTEIRO.map(([r, m, cor]) => <div key={r} title={`${r} — ${m} min`} style={{ flex: m, background: cor }} />)}
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 230px), 1fr))', gap: 10 }}>
+          <div className="fluxo" style={{ '--min': '230px', '--gap': '10px' } as CSSProperties}>
             {ROTEIRO.map(([r, m, cor]) => (
               <div key={r} style={{ display: 'flex', alignItems: 'center', gap: 10, fontSize: 'clamp(15.5px,1.7vw,17px)', color: 'rgba(230,238,255,0.92)' }}>
                 <span style={{ width: 12, height: 12, borderRadius: 4, background: cor, flexShrink: 0 }} />
@@ -199,7 +199,7 @@ export default function TeologiaPoliticaAula01Page() {
           <P>{'A teologia política reformada começa pela Escritura porque o princípio do **Sola Scriptura vale também para a praça pública**. Agostinho, Calvino e as confissões que estudaremos nas próximas aulas são, todos, tentativas de exposição fiel destes mesmos textos.²'}</P>
           <P>{'O momento brasileiro torna a pergunta urgente. Saímos de um ciclo eleitoral polarizado em outubro de 2026, e o STF segue arbitrando conflitos que envolvem liberdade religiosa: em setembro, reconheceu repercussão geral sobre o uso de nomes e símbolos religiosos por outras denominações; no mesmo mês, determinou investigação federal de ataques a símbolos e espaços religiosos. ++O cristão precisa de critérios bíblicos, não de reflexos partidários.++'}</P>
           <Rotulo cor={ROSE}>Dois erros simétricos rondam a igreja brasileira</Rotulo>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))', gap: 14 }}>
+          <div className="fluxo" style={{ '--min': '320px', '--gap': '14px' } as CSSProperties}>
             <Caixa cor={ROSE}><P>{'**Ler Rm 13 sem Ap 13** — gera !!estatismo e submissão acrítica!!, como se toda ordem do governante fosse vontade de Deus.³'}</P></Caixa>
             <Caixa cor={ROSE}><P>{'**Ler Ap 13 sem Rm 13** — gera !!desconfiança anarquista!!, como se todo governo fosse demoníaco e a ordem civil não tivesse valor.'}</P></Caixa>
           </div>
@@ -217,7 +217,7 @@ export default function TeologiaPoliticaAula01Page() {
             '**Proporcionalidade:** a estrutura "sangue por sangue" antecipa a lex talionis ([[Êx 21.23-25]]), que **limita a punição tanto quanto a autoriza**.',
           ]} />
           <Rotulo cor={GREEN}>Natureza da aliança</Rotulo>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))', gap: 14 }}>
+          <div className="fluxo" style={{ '--min': '260px', '--gap': '14px' } as CSSProperties}>
             <Caixa cor={GREEN}><div style={{ fontSize: 26 }}>🌍</div><P>{'**Universal:** firmada com Noé, seus descendentes e "todo ser vivente" ([[Gn 9.9-10]]). O governo civil não é instituição de Israel nem da igreja, mas **da humanidade**.⁵'}</P></Caixa>
             <Caixa cor={GREEN}><div style={{ fontSize: 26 }}>🛡️</div><P>{'**Preservadora, não redentiva:** garante a estabilidade da história ([[Gn 8.22]]) até a consumação. É **graça comum**, não graça salvadora.⁶'}</P></Caixa>
             <Caixa cor={GREEN}><div style={{ fontSize: 26 }}>⏳</div><P>{'**Temporal:** dura "enquanto durar a terra". O Estado pertence a esta era e !!não será transportado para o novo céu e a nova terra!!.'}</P></Caixa>
@@ -230,7 +230,7 @@ export default function TeologiaPoliticaAula01Page() {
         {/* Rm 13 */}
         <Secao id="rm13" num="03" cor={BLUE} titulo="Rm 13.1-7 — o magistrado como ministro de Deus" sub="Uma definição funcional — e por isso também delimitadora">
           <P>{'Rm 13 ensina que a autoridade civil é **ordenada por Deus** e definida por uma função: **punir o mal e louvar o bem**. A definição é funcional — e por isso também delimita.⁸'}</P>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))', gap: 14 }}>
+          <div className="fluxo" style={{ '--min': '320px', '--gap': '14px' } as CSSProperties}>
             <Caixa cor={BLUE}>
               <Rotulo cor={BLUE}>🏛️ Contexto histórico</Rotulo>
               <P>{'Paulo escreve por volta de **57 d.C.**, nos primeiros anos de Nero, ainda antes da perseguição de 64. Os judeus haviam sido expulsos de Roma sob Cláudio ([[At 18.2]]), e havia tensão fiscal na capital. A igreja romana, mista e minoritária, precisava saber **como viver sob um poder pagão**.'}</P>
@@ -251,7 +251,7 @@ export default function TeologiaPoliticaAula01Page() {
             ['13.6', '**leitourgoi**', 'Servidores públicos de Deus; base do dever tributário'],
           ]} />
           <Rotulo cor={BLUE}>Finalidade, meio e dever</Rotulo>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: 14 }}>
+          <div className="fluxo" style={{ '--min': '280px', '--gap': '14px' } as CSSProperties}>
             <Caixa cor={GOLD}><div style={{ fontSize: 26 }}>🎯</div><P>{'**Finalidade (vv. 3-4):** terror para as más obras, louvor para as boas. !!O Estado não salva, não santifica e não evangeliza!!: faz justiça.'}</P></Caixa>
             <Caixa cor={RED}><div style={{ fontSize: 26 }}>⚔️</div><P>{'**Meio (v. 4):** a espada. O Estado é a única instituição autorizada a coagir pela força; a igreja usa **a Palavra e a disciplina**.'}</P></Caixa>
             <Caixa cor={GREEN}><div style={{ fontSize: 26 }}>🤝</div><P>{'**Dever cristão (vv. 5-7):** sujeição [["não somente por causa da ira, mas também por dever de consciência"]]; ++tributos, respeito e honra a quem são devidos++.'}</P></Caixa>
@@ -264,7 +264,7 @@ export default function TeologiaPoliticaAula01Page() {
             provocar='A imunidade tributária **protege a liberdade de culto** contra o poder de tributar, ou é um **privilégio** que contradiz [[Rm 13.6-7]]? Uma igreja que defende a própria imunidade está exercendo direitos, como Paulo em [[At 25.11]], ou buscando vantagem? Onde fica a fronteira?'
             fonte="Fenacon/Agência Câmara, 29 maio 2026">
             <P>{'Em maio de 2026, a Câmara aprovou em dois turnos a **PEC 5/2023**, que estende a imunidade tributária das entidades religiosas aos tributos embutidos na compra de bens e serviços, no contexto da reforma tributária (IBS e CBS). O texto seguiu para o Senado e ainda depende de lei complementar.'}</P>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: 12 }}>
+            <div className="fluxo" style={{ '--min': '280px', '--gap': '12px' } as CSSProperties}>
               <Caixa cor={GREEN}><P>{'++A favor:++ os defensores dizem que a PEC só torna efetiva a imunidade já prevista na Constituição e protege a ação social das igrejas.'}</P></Caixa>
               <Caixa cor={ROSE}><P>{'!!Contra:!! os críticos dizem que ela amplia o instituto além do devido e pode elevar a alíquota-padrão paga por todos.'}</P></Caixa>
             </div>
@@ -302,7 +302,7 @@ export default function TeologiaPoliticaAula01Page() {
         <Secao id="ap13" num="05" cor={RED} titulo="Ap 13 — quando o Estado se torna besta" sub="O poder que ultrapassa seu mandato e reivindica o que pertence a Deus">
           <P>{'Ap 13 mostra o governo civil que **ultrapassa seu mandato** e reivindica o que pertence a Deus: !!adoração, consciência e controle total da vida!!. Escrito sob Domiciano, num contexto de culto imperial, o texto revela a face demoníaca do poder absolutizado.¹³'}</P>
           <Rotulo cor={RED}>Elementos do capítulo</Rotulo>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: 14 }}>
+          <div className="fluxo" style={{ '--min': '280px', '--gap': '14px' } as CSSProperties}>
             <Caixa cor={RED}><div style={{ fontSize: 26 }}>🌊</div><P>{'**A besta do mar (vv. 1-10):** recebe poder do dragão (v. 2), profere blasfêmias e exige adoração universal (vv. 4, 8). É o **poder político-militar divinizado**.'}</P></Caixa>
             <Caixa cor={RED}><div style={{ fontSize: 26 }}>🐑</div><P>{'**A besta da terra (vv. 11-17):** parece cordeiro, fala como dragão. É a **religião civil e a propaganda** que legitimam o poder e forçam o culto.'}</P></Caixa>
             <Caixa cor={RED}><div style={{ fontSize: 26 }}>🔖</div><P>{'**A marca (vv. 16-17):** sem ela ninguém compra nem vende. !!O totalitarismo invade a economia e a vida cotidiana.!!'}</P></Caixa>
@@ -336,7 +336,7 @@ export default function TeologiaPoliticaAula01Page() {
         {/* Síntese */}
         <Secao id="sintese" num="06" cor={GOLD} titulo="Síntese teológica: cinco teses" sub="Os quatro textos convergem numa doutrina coerente do governo civil">
           <P>{'Os quatro textos convergem numa doutrina coerente do governo civil, que as confissões reformadas apenas sistematizarão.¹⁶'}</P>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: 14 }}>
+          <div className="fluxo" style={{ '--min': '300px', '--gap': '14px' } as CSSProperties}>
             {[
               ['Origem', GREEN, 'O governo civil é **ordenança de Deus**, mediada pelo pacto noaico. Pertence à graça comum e à ordem da preservação, não à ordem da redenção ([[Gn 9.6; Rm 13.1]]).'],
               ['Finalidade', BLUE, 'A **justiça pública** — conter o mal e proteger o bem, preservando a vida humana como portadora da imagem de Deus ([[Rm 13.3-4; 1Pe 2.14]]).'],
@@ -369,7 +369,7 @@ export default function TeologiaPoliticaAula01Page() {
             ['Risco a vigiar', '!!Confundir posições prudenciais com mandamento bíblico!!', '!!Subestimar o dever profético de julgar o Estado pela Escritura!!'],
           ]} />
           <Rotulo cor={ROSE}>🚫 Erros a evitar</Rotulo>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: 12 }}>
+          <div className="fluxo" style={{ '--min': '300px', '--gap': '12px' } as CSSProperties}>
             {[
               ['Estatismo', 'Ler Rm 13 como carta branca, à maneira do "direito divino dos reis". Esquece [[Ap 13]] e [[At 5.29]].'],
               ['Anarquismo', 'Ver todo Estado como besta. Esquece [[Gn 9.6]] e [[Rm 13.1]].'],

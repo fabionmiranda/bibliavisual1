@@ -1,3 +1,4 @@
+import type { CSSProperties } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -109,7 +110,7 @@ function CardDefinicao({ d }: { d: Definicao }) {
 
 function Grade({ itens }: { itens: Definicao[] }) {
   return (
-    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))', gap: 16 }}>
+    <div className="mosaico" style={{ '--min': '330px', '--gap': '16px' } as CSSProperties}>
       {itens.map(d => <CardDefinicao key={d.autor + d.obra} d={d} />)}
     </div>
   );
@@ -233,13 +234,13 @@ export default function TeologiaPoliticaIntroPage() {
             </p>
           </div>
           <Rotulo cor={GOLD}>Três tarefas da teologia política</Rotulo>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))', gap: 14 }}>
+          <div className="fluxo" style={{ '--min': '260px', '--gap': '14px' } as CSSProperties}>
             <Caixa cor={SKY}><div style={{ fontSize: 26 }}>🔎</div><P>{'**Descritiva:** compreender o que a Escritura e a tradição ensinam sobre o governo civil.'}</P></Caixa>
             <Caixa cor={ROSE}><div style={{ fontSize: 26 }}>⚖️</div><P>{'**Crítica:** julgar as ideologias e os poderes que reivindicam o que pertence a Deus ([[Ap 13]]).'}</P></Caixa>
             <Caixa cor={GREEN}><div style={{ fontSize: 26 }}>🏗️</div><P>{'**Construtiva:** orientar a vida pública do cristão e da igreja ([[Jr 29.7; 1Tm 2.1-2]]).'}</P></Caixa>
           </div>
           <Rotulo cor={ROSE}>O que teologia política NÃO é</Rotulo>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: 12 }}>
+          <div className="fluxo" style={{ '--min': '280px', '--gap': '12px' } as CSSProperties}>
             {[
               ['Teocracia', 'Não é usar a espada do Estado para impor a fé ou governar a igreja.'],
               ['Ideologia partidária', 'Não é revestir de versículos um programa de partido, de direita ou de esquerda.'],
@@ -276,7 +277,7 @@ export default function TeologiaPoliticaIntroPage() {
             <div style={{ fontFamily: 'var(--font-mono)', fontSize: 14, fontWeight: 700, letterSpacing: '0.14em', color: GOLD }}>➜ NA PRÓXIMA AULA · AULA 01</div>
             <h2 style={{ margin: 0, fontSize: 'clamp(26px,3.6vw,38px)', fontWeight: 900, lineHeight: 1.15 }}>Fundamentos Bíblicos da Autoridade Civil</h2>
             <P>{'Com as definições em mãos, iremos **direto às Escrituras**. Quatro textos formarão a base bíblica de todo o curso:'}</P>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 220px), 1fr))', gap: 12 }}>
+            <div className="fluxo" style={{ '--min': '220px', '--gap': '12px' } as CSSProperties}>
               {[['Gn 9.6', 'O pacto noaico e a espada', GREEN], ['Rm 13.1-7', 'O magistrado como ministro de Deus', BLUE], ['1Pe 2.13-17', 'Submissão por causa do Senhor', PURPLE], ['Ap 13', 'Quando o Estado se torna besta', RED]].map(([r, t, cor]) => (
                 <div key={r} style={{ padding: '14px 16px', borderRadius: 14, background: 'rgba(0,0,0,0.3)', borderTop: `3px solid ${cor}` }}>
                   <div style={{ fontWeight: 900, fontSize: 'clamp(19px,2.2vw,22px)', color: cor }}>{r}</div>
