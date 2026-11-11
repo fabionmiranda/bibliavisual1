@@ -11,7 +11,7 @@ type AreaInfo = AreaTeologia;
 const PLANO_POLITICA: PlanoCurso = {
   ementa: 'Estudo bíblico, histórico e confessional da relação entre o Reino de Deus e as autoridades civis. Fundamentos escriturísticos do governo civil; Agostinho e as duas cidades; a doutrina reformada do magistrado nas confissões (Escocesa, Belga, Helvética II, Heidelberg, Westminster e Batista de 1689); dois reinos e soberania das esferas; direito de resistência; liberdade religiosa e de consciência; justiça e bem comum; a vocação pública do cristão numa sociedade plural.',
   ficha: [
-    { rotulo: 'Carga horária', valor: '12 aulas · 90 min cada (18 h)' },
+    { rotulo: 'Carga horária', valor: 'Introdução + 12 aulas · 90 min cada (19,5 h)' },
     { rotulo: 'Formato', valor: 'Presencial, on-line ou híbrido' },
     { rotulo: 'Público', valor: 'Líderes, seminaristas, professores e membros adultos' },
     { rotulo: 'Pré-requisito', valor: 'Noções de teologia sistemática' },
@@ -277,7 +277,8 @@ const AREAS_INFO: Record<string, AreaInfo> = {
     cor: '#fbbf24',
     plano: PLANO_POLITICA,
     materias: [
-      { nome: 'Fundamentos Bíblicos da Autoridade Civil', desc: 'Gn 9.6, Rm 13.1-7, 1Pe 2.13-17 e Ap 13 — o Estado como ministro de Deus e seus limites', icon: '📜', refs: { pt: 'GRUDEM, Wayne. Política segundo a Bíblia: princípios que todo cristão deve conhecer. São Paulo: Vida Nova, 2014.', en: 'VANDRUNEN, David. Politics after Christendom: political theology in a fractured world. Grand Rapids: Zondervan Academic, 2020.' } },
+      { nome: 'Aula Introdutória — O que é Teologia Política?', rotulo: 'INTRODUÇÃO', link: '/teologia/politica/introducao', desc: 'Definições de teologia (Agostinho, Anselmo, Tomás, Calvino, Junius, Ames, Turretin, Mastricht, Bavinck), de política (Aristóteles, Agostinho, Tomás, Calvino, Althusius, Kuyper) e de teologia política — com o mapa das tradições que o curso percorrerá', icon: '🧭', refs: { pt: 'BAVINCK, Herman. Dogmática reformada. São Paulo: Cultura Cristã, 2012. v. 1.', en: 'ALTHUSIUS, Johannes. Politica: an abridged translation of Politics Methodically Set Forth. Indianapolis: Liberty Fund, 1995.' } },
+      { nome: 'Fundamentos Bíblicos da Autoridade Civil', link: '/teologia/politica/aula-01', desc: 'Gn 9.6, Rm 13.1-7, 1Pe 2.13-17 e Ap 13 — o Estado como ministro de Deus e seus limites', icon: '📜', refs: { pt: 'GRUDEM, Wayne. Política segundo a Bíblia: princípios que todo cristão deve conhecer. São Paulo: Vida Nova, 2014.', en: 'VANDRUNEN, David. Politics after Christendom: political theology in a fractured world. Grand Rapids: Zondervan Academic, 2020.' } },
       { nome: 'Igreja e Estado', desc: 'Jurisdições distintas sob o mesmo Senhor: o que pertence a César e o que pertence a Deus (Mt 22.21)', icon: '🏛️', refs: { pt: 'KUYPER, Abraham. Calvinismo. São Paulo: Cultura Cristã, 2002. (Palestra 3: Calvinismo e política).', en: 'KUYPER, Abraham. Our program: a Christian political manifesto. Bellingham: Lexham Press, 2015.' } },
       { nome: 'Agostinho e as Duas Cidades', desc: 'A Cidade de Deus e a cidade terrena — peregrinos que buscam a paz da cidade em que vivem (Jr 29.7)', icon: '🏙️', refs: { pt: 'AGOSTINHO. A Cidade de Deus. Petrópolis: Vozes, 2012. 2 v.', en: 'SMITH, James K. A. Awaiting the King: reforming public theology. Grand Rapids: Baker Academic, 2017.' } },
       { nome: 'Os Dois Reinos e a Reforma', desc: 'Lutero, Calvino (Institutas IV.20) e a doutrina reformada do magistrado civil (CFW XXIII; CFB 1689 XXIV)', icon: '⛪', refs: { pt: 'CALVINO, João. A instituição da religião cristã. São Paulo: Editora UNESP, 2009. t. 2, livro IV, cap. 20.', en: 'VANDRUNEN, David. Living in God’s two kingdoms: a biblical vision for Christianity and culture. Wheaton: Crossway, 2010.' } },

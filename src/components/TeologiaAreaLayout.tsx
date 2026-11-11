@@ -11,6 +11,8 @@ export interface MateriaArea {
   desc: string;
   icon: string;
   link?: string;
+  /** Rótulo próprio (ex.: 'INTRODUÇÃO'); sem ele, a matéria é numerada como AULA NN. */
+  rotulo?: string;
   refs?: { pt: string; en: string };
 }
 
@@ -361,7 +363,7 @@ export default function TeologiaAreaLayout({ area }: { area: AreaTeologia }) {
                     {m.icon}
                   </div>
                   <span style={{ fontFamily: 'var(--font-mono)', fontSize: 16, fontWeight: 700, letterSpacing: '0.12em', color: c, padding: '4px 10px', borderRadius: 8, border: `1px solid ${c}40`, background: `${c}10` }}>
-                    AULA {String(i + 1).padStart(2, '0')}
+                    {m.rotulo ?? `AULA ${String(area.materias.slice(0, i).filter(x => !x.rotulo).length + 1).padStart(2, '0')}`}
                   </span>
                 </div>
 

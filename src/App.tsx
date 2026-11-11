@@ -54,6 +54,8 @@ import EducacaoPage from './pages/EducacaoPage';
 import TeologiaPage from './pages/TeologiaPage';
 import TeologiaAulasPage from './pages/TeologiaAulasPage';
 import TeologiaArtigosPage from './pages/TeologiaArtigosPage';
+import TeologiaPoliticaIntroPage from './pages/TeologiaPoliticaIntroPage';
+import TeologiaPoliticaAula01Page from './pages/TeologiaPoliticaAula01Page';
 import TeologiaAreaPage from './pages/TeologiaAreaPage';
 import DiscipuladoConfessionalCap1Page from './pages/DiscipuladoConfessionalCap1Page';
 import DiscipuladoConfessionalCap2Page from './pages/DiscipuladoConfessionalCap2Page';
@@ -206,6 +208,8 @@ export default function App() {
           <Route path="/artigos" element={<Navigate to="/biblioteca/artigos" replace />} />
           <Route path="/artigos/:slug" element={<ArtigoPage />} />
           <Route path="/teologia/area/:slug" element={<TeologiaAreaPage />} />
+          <Route path="/teologia/politica/introducao" element={<TeologiaPoliticaIntroPage />} />
+          <Route path="/teologia/politica/aula-01" element={<TeologiaPoliticaAula01Page />} />
           <Route path="/teologia/credos" element={<TeologiaCredosPage />} />
           <Route path="/discipulado/confessional" element={<EstudosConfessionaisPage />} />
           <Route path="/discipulado/confessional/batista" element={<DiscipuladoBatistaPage />} />
