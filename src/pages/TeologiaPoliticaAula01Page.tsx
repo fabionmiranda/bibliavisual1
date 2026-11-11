@@ -2,6 +2,9 @@ import { useState, type CSSProperties } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import { HeroAula } from '../components/TPIntroHero';
+import { EstilosGraficos } from '../components/TPIntroGraficos';
+import { EstilosAula01, MapaCanonico, DoisErrosSimetricos, DaVingancaAJustica, DuasAliancas, AnatomiaDoMagistrado, EspadaEPalavra, HierarquiaDeLealdades, EscaladaDaBesta, MoedaEImagem, RodaDasTeses, TrilhaConfessional, MapaDosErros } from '../components/TPAula01Graficos';
 import { BG, GOLD, SKY, ROSE, GREEN, BLUE, PURPLE, RED, txt, Rico, P, Lista, Rotulo, Caixa, Versiculo, Tabela, Secao, Caso } from '../components/AulaKit';
 
 /* Teologia Política · Aula 01 — Fundamentos Bíblicos da Autoridade Civil.
@@ -118,29 +121,23 @@ export default function TeologiaPoliticaAula01Page() {
     <div className="sem-justificar" style={{ minHeight: '100vh', background: BG, color: '#fff' }}>
       <Navbar />
 
-      {/* ── Hero ── */}
-      <header style={{ position: 'relative', overflow: 'hidden', borderBottom: `1px solid ${GOLD}30`, background: `radial-gradient(ellipse 60% 80% at 80% 20%, ${GOLD}22, transparent 65%), linear-gradient(180deg, #050b1c, ${BG})` }}>
-        <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', opacity: 0.08, backgroundImage: `linear-gradient(${GOLD} 1px, transparent 1px), linear-gradient(90deg, ${GOLD} 1px, transparent 1px)`, backgroundSize: '48px 48px' }} />
-        <div style={{ position: 'relative', maxWidth: 1100, margin: '0 auto', padding: 'clamp(100px,12vw,124px) clamp(16px,4vw,40px) clamp(40px,6vw,64px)' }}>
-          <button onClick={() => navigate('/teologia/area/politica')} style={{ all: 'unset', cursor: 'pointer', fontSize: 15, fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: GOLD, display: 'inline-flex', gap: 8, padding: '8px 16px', borderRadius: 999, border: `1px solid ${GOLD}45`, background: `${GOLD}0d`, marginBottom: 32 }}>
-            ← Teologia Política
-          </button>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, marginBottom: 16 }}>
-            {['AULA 01', 'UNIDADE 1', '100 MIN'].map(t => (
-              <span key={t} style={{ fontFamily: 'var(--font-mono)', fontSize: 14, fontWeight: 700, letterSpacing: '0.12em', padding: '6px 12px', borderRadius: 8, color: GOLD, background: `${GOLD}14`, border: `1px solid ${GOLD}45` }}>{t}</span>
-            ))}
-          </div>
-          <h1 style={{ fontSize: 'clamp(34px,6vw,62px)', fontWeight: 900, lineHeight: 1.08, margin: '0 0 22px', letterSpacing: '-0.02em', background: `linear-gradient(100deg, #fff 40%, ${GOLD})`, WebkitBackgroundClip: 'text', backgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-            Fundamentos Bíblicos da Autoridade Civil
-          </h1>
-          <div style={{ padding: 'clamp(18px,3vw,26px)', borderRadius: 18, background: `linear-gradient(135deg, ${GOLD}1c, rgba(6,12,30,0.8))`, border: `1.5px solid ${GOLD}55`, maxWidth: 920 }}>
-            <div style={{ fontFamily: 'var(--font-mono)', fontSize: 14, fontWeight: 700, letterSpacing: '0.14em', color: GOLD, marginBottom: 8 }}>🎯 TESE DA AULA</div>
-            <p style={{ ...txt, fontSize: 'clamp(19px,2.3vw,23px)', color: '#fff' }}>
-              <Rico t="A Escritura apresenta o governo civil como **ordenança de Deus**, fundada na aliança noaica, **ministra da justiça** e armada com a espada — mas sempre autoridade !!derivada, delimitada e julgável!! pela própria Palavra que a institui.¹" />
-            </p>
-          </div>
+      <EstilosGraficos />
+      <EstilosAula01 />
+      <HeroAula onVoltar={() => navigate('/teologia/area/politica')} tags={['AULA 01', 'UNIDADE 1', '100 MIN']} titulo="Fundamentos Bíblicos da Autoridade Civil"
+        anel="DIAKONOS THEOU · MACHAIRA · IMAGO DEI · DAI A CÉSAR · TEMEI A DEUS · "
+        nos={[{ icone: '🌈', rotulo: 'GN 9.6', cor: GREEN }, { icone: '🏛️', rotulo: 'RM 13', cor: BLUE }, { icone: '🧭', rotulo: '1PE 2', cor: PURPLE }, { icone: '🐉', rotulo: 'AP 13', cor: RED }]}
+        dica="Toque em um texto para ir direto à exposição"
+        cards={[
+          { n: '01', tipo: 'ORIGEM', gr: 'Gn 9.6', pt: 'O pacto noaico e a espada', ds: 'Deus delega ao homem a justiça pública', cor: GREEN, id: 'gn9' },
+          { n: '02', tipo: 'FUNÇÃO', gr: 'Rm 13.1-7', pt: 'Ministro de Deus', ds: 'Punir o mal e louvar o bem', cor: BLUE, id: 'rm13' },
+          { n: '03', tipo: 'MOTIVAÇÃO', gr: '1Pe 2.13-17', pt: 'Por causa do Senhor', ds: 'Honrar o rei, temer só a Deus', cor: PURPLE, id: '1pe2' },
+          { n: '04', tipo: 'LIMITE', gr: 'Ap 13', pt: 'Quando vira besta', ds: 'O poder que exige culto', cor: RED, id: 'ap13' },
+        ]}>
+        <div className="th-cit" style={{ fontFamily: 'inherit', fontStyle: 'normal', fontSize: 'clamp(18px,2.1vw,21px)', lineHeight: 1.6 }}>
+          <div className="th-cit-ref" style={{ marginTop: 0, marginBottom: 8 }}>🎯 TESE DA AULA</div>
+          <Rico t="A Escritura apresenta o governo civil como **ordenança de Deus**, fundada na aliança noaica, **ministra da justiça** e armada com a espada — mas sempre autoridade !!derivada, delimitada e julgável!! pela própria Palavra que a institui.¹" />
         </div>
-      </header>
+      </HeroAula>
 
       <div style={{ maxWidth: 1100, margin: '0 auto', padding: 'clamp(28px,5vw,48px) clamp(16px,4vw,40px) 80px' }}>
         {/* Índice + legenda */}
@@ -203,13 +200,16 @@ export default function TeologiaPoliticaAula01Page() {
             <Caixa cor={ROSE}><P>{'**Ler Rm 13 sem Ap 13** — gera !!estatismo e submissão acrítica!!, como se toda ordem do governante fosse vontade de Deus.³'}</P></Caixa>
             <Caixa cor={ROSE}><P>{'**Ler Ap 13 sem Rm 13** — gera !!desconfiança anarquista!!, como se todo governo fosse demoníaco e a ordem civil não tivesse valor.'}</P></Caixa>
           </div>
+          <DoisErrosSimetricos />
           <P>{'A tarefa da aula é **ler os quatro textos como um cânon coerente**.'}</P>
+          <MapaCanonico />
         </Secao>
 
         {/* Gn 9.6 */}
         <Secao id="gn9" num="02" cor={GREEN} titulo="Gn 9.6 — o pacto noaico e a espada" sub="O fundamento canônico do governo civil">
           <P>{'Deus **delega a seres humanos a punição judicial do homicídio**, com base na imagem de Deus.'}</P>
           <Versiculo cor={GREEN} texto="Se alguém derramar o sangue do homem, pelo homem se derramará o seu; porque Deus fez o homem segundo a sua imagem." refe="Gênesis 9.6" />
+          <DaVingancaAJustica />
           <Rotulo cor={GREEN}>Observações exegéticas</Rotulo>
           <Lista cor={GREEN} itens={[
             '**"Pelo homem" (ba’adam):** a retribuição passa da vingança divina direta ou privada ([[Gn 4.15, 23-24]]) para um agente humano autorizado. ++Nasce a noção de justiça pública.++⁴',
@@ -222,6 +222,7 @@ export default function TeologiaPoliticaAula01Page() {
             <Caixa cor={GREEN}><div style={{ fontSize: 26 }}>🛡️</div><P>{'**Preservadora, não redentiva:** garante a estabilidade da história ([[Gn 8.22]]) até a consumação. É **graça comum**, não graça salvadora.⁶'}</P></Caixa>
             <Caixa cor={GREEN}><div style={{ fontSize: 26 }}>⏳</div><P>{'**Temporal:** dura "enquanto durar a terra". O Estado pertence a esta era e !!não será transportado para o novo céu e a nova terra!!.'}</P></Caixa>
           </div>
+          <DuasAliancas />
           <Caixa cor={GOLD}>
             <P>{'**Implicação:** o magistrado de Varginha, de Brasília ou de Roma detém autoridade legítima **independentemente de sua fé**. Sua legitimidade não depende de ser cristão, mas de ++servir à justiça que Deus estabeleceu para todos++.⁷'}</P>
           </Caixa>
@@ -240,6 +241,7 @@ export default function TeologiaPoliticaAula01Page() {
               <P>{'O texto está entre [[Rm 12.17-21]] e [[13.8-14]]. Em 12.19 o cristão é proibido de vingar-se e deve "dar lugar à ira"; em 13.4 essa ira é executada pelo magistrado. **A igreja renuncia à espada; o Estado a empunha.**⁹ Em 13.11-14, o horizonte escatológico relativiza o Estado: [["a noite vai alta"]].'}</P>
             </Caixa>
           </div>
+          <EspadaEPalavra />
           <Rotulo cor={BLUE}>Termos-chave do grego</Rotulo>
           <Tabela cor={BLUE} cab={['Versículo', 'Termo grego', 'Sentido e implicação']} linhas={[
             ['13.1', '**hypotassesthō**', 'Subordinar-se a uma ordem; !!não é obediência cega!!, mas reconhecimento de posição'],
@@ -250,6 +252,7 @@ export default function TeologiaPoliticaAula01Page() {
             ['13.4', '**ekdikos eis orgēn**', 'Vingador para executar a ira; justiça **retributiva, não redentiva**'],
             ['13.6', '**leitourgoi**', 'Servidores públicos de Deus; base do dever tributário'],
           ]} />
+          <AnatomiaDoMagistrado />
           <Rotulo cor={BLUE}>Finalidade, meio e dever</Rotulo>
           <div className="fluxo" style={{ '--min': '280px', '--gap': '14px' } as CSSProperties}>
             <Caixa cor={GOLD}><div style={{ fontSize: 26 }}>🎯</div><P>{'**Finalidade (vv. 3-4):** terror para as más obras, louvor para as boas. !!O Estado não salva, não santifica e não evangeliza!!: faz justiça.'}</P></Caixa>
@@ -281,15 +284,7 @@ export default function TeologiaPoliticaAula01Page() {
             '**Fim apologético (vv. 12, 15):** a boa conduta dos cristãos silencia a ignorância dos insensatos. ++A vida cívica é testemunho.++¹²',
             '**Liberdade sem pretexto (v. 16):** o cristão é livre, mas "servo de Deus". A liberdade cristã não anula deveres civis; tampouco os deveres civis anulam o senhorio de Cristo.',
           ]} />
-          <Rotulo cor={PURPLE}>O quiasmo do v. 17</Rotulo>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 8, maxWidth: 640 }}>
-            {[['A', 'Tratai todos com honra', GOLD, 0], ['B', 'Amai os irmãos', PURPLE, 1], ["B'", 'Temei a Deus', SKY, 1], ["A'", 'Honrai o rei', GOLD, 0]].map(([s, t, cor, ind]) => (
-              <div key={s as string} style={{ display: 'flex', alignItems: 'center', gap: 12, marginLeft: (ind as number) * 36, padding: '12px 16px', borderRadius: 12, background: `${cor}14`, borderLeft: `4px solid ${cor}` }}>
-                <span style={{ fontFamily: 'var(--font-mono)', fontWeight: 800, color: cor as string, width: 26 }}>{s}</span>
-                <span style={{ fontSize: 'clamp(18px,2vw,20px)', fontWeight: 700, color: '#fff' }}>{t}</span>
-              </div>
-            ))}
-          </div>
+          <HierarquiaDeLealdades />
           <P>{'O verbo **"honrar"** abre e fecha a série: o rei recebe a mesma honra devida a todo ser humano. O **"temor"** é reservado a Deus. A distinção é decisiva: !!o rei é honrado, nunca temido como Deus!!. Aqui já está o germe da crítica a todo culto político.'}</P>
           <Caso n={2} titulo='"Honrai o rei", mas não façais do culto um palanque'
             provocar='Pela leitura de [[1Pe 2.13-17]], o que há de errado quando **o púlpito se torna comitê** — a ofensa à lei eleitoral, a confusão entre os dois reinos, ou as duas coisas? Orar pelas autoridades ([[1Tm 2.1-2]]) é o mesmo que orar pela vitória de um candidato? Em que ponto a igreja começa a agir como a !!"besta da terra" de Ap 13!!, a religião a serviço do poder?'
@@ -308,6 +303,7 @@ export default function TeologiaPoliticaAula01Page() {
             <Caixa cor={RED}><div style={{ fontSize: 26 }}>🔖</div><P>{'**A marca (vv. 16-17):** sem ela ninguém compra nem vende. !!O totalitarismo invade a economia e a vida cotidiana.!!'}</P></Caixa>
             <Caixa cor={GREEN}><div style={{ fontSize: 26 }}>🕯️</div><P>{'**A resposta dos santos (v. 10):** [["aqui está a perseverança e a fé dos santos"]]. Não há revolução armada, mas ++recusa de culto, testemunho e fidelidade até a morte++.'}</P></Caixa>
           </div>
+          <EscaladaDaBesta />
           <Rotulo cor={RED}>Rm 13 e Ap 13 lado a lado</Rotulo>
           <Tabela cor={RED} cab={['Critério', 'Rm 13 — ministro de Deus', 'Ap 13 — a besta']} linhas={[
             ['Fonte do poder', '++Ordenado por Deus++ (v. 1)', '!!Recebido do dragão!! (v. 2)'],
@@ -320,6 +316,7 @@ export default function TeologiaPoliticaAula01Page() {
             <Rotulo cor={GOLD}>🔑 Chave de leitura</Rotulo>
             <P>{'Não são duas instituições, mas **a mesma instituição em duas condições**. O Estado se torna besta quando !!deixa de ser diakonos e se faz deus!!.¹⁴ Jesus já havia traçado a linha: [["dai a César o que é de César e a Deus o que é de Deus"]] (Mc 12.17). **A moeda leva a imagem de César; o homem leva a imagem de Deus.**¹⁵ Quando o Estado exige o homem inteiro, vale At 5.29: [["importa obedecer a Deus antes que aos homens"]]. O desenvolvimento desse limite será tema da aula sobre direito de resistência.'}</P>
           </Caixa>
+          <MoedaEImagem />
           <Caso n={3} titulo="Traços de Ap 13 na Nicarágua"
             provocar='Quais elementos da tabela Rm 13 × Ap 13 aparecem aqui — reivindicação de lealdade, controle da economia, perseguição de quem faz o bem? Compare com o Caso 1: **tributar igrejas é, em si, um traço da besta, ou o problema está no uso do tributo como arma?** Qual é a resposta cristã segundo [[Ap 13.10]] e [[At 5.29]]?'
             fonte="EWTN News/CNA, 22 jan. 2026; CartaCapital/AFP, 22 ago. 2024">
@@ -336,6 +333,7 @@ export default function TeologiaPoliticaAula01Page() {
         {/* Síntese */}
         <Secao id="sintese" num="06" cor={GOLD} titulo="Síntese teológica: cinco teses" sub="Os quatro textos convergem numa doutrina coerente do governo civil">
           <P>{'Os quatro textos convergem numa doutrina coerente do governo civil, que as confissões reformadas apenas sistematizarão.¹⁶'}</P>
+          <RodaDasTeses />
           <div className="fluxo" style={{ '--min': '300px', '--gap': '14px' } as CSSProperties}>
             {[
               ['Origem', GREEN, 'O governo civil é **ordenança de Deus**, mediada pelo pacto noaico. Pertence à graça comum e à ordem da preservação, não à ordem da redenção ([[Gn 9.6; Rm 13.1]]).'],
@@ -357,6 +355,7 @@ export default function TeologiaPoliticaAula01Page() {
             <Rotulo cor={SKY}>📘 Ponte confessional</Rotulo>
             <P>{'A **Confissão Batista de 1689** resume esse quadro no capítulo 24: Deus, Senhor e Rei supremo do mundo, instituiu magistrados civis, sob Ele e sobre o povo, para Sua glória e o bem público, armando-os com a espada para defesa dos bons e punição dos maus. No capítulo 21.2, afirma que **só Deus é Senhor da consciência**. Diferentemente de Westminster 23.3, os batistas !!omitiram o dever do magistrado de suprimir heresias!! — um tema que voltará na aula sobre liberdade religiosa.¹⁷'}</P>
           </Caixa>
+          <TrilhaConfessional />
         </Secao>
 
         {/* Diálogo / aplicação */}
@@ -369,6 +368,7 @@ export default function TeologiaPoliticaAula01Page() {
             ['Risco a vigiar', '!!Confundir posições prudenciais com mandamento bíblico!!', '!!Subestimar o dever profético de julgar o Estado pela Escritura!!'],
           ]} />
           <Rotulo cor={ROSE}>🚫 Erros a evitar</Rotulo>
+          <MapaDosErros />
           <div className="fluxo" style={{ '--min': '300px', '--gap': '12px' } as CSSProperties}>
             {[
               ['Estatismo', 'Ler Rm 13 como carta branca, à maneira do "direito divino dos reis". Esquece [[Ap 13]] e [[At 5.29]].'],

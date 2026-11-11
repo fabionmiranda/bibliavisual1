@@ -1,7 +1,9 @@
-import type { CSSProperties } from 'react';
+import { useState, type CSSProperties } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import HeroIntro from '../components/TPIntroHero';
+import { EstilosGraficos, ErasDaTeologia, ArquetipicaEctipica, AnatomiaDaTeologia, HistoriaDaPolitica, ConsociacaoAlthusius, EsferasKuyper, EncontroTeologiaPolitica, VarraoReforma, EspectroTeologiaPolitica, LinhaDoTempoTradicao, TensaoRmAp } from '../components/TPIntroGraficos';
 import { BG, GOLD, SKY, ROSE, GREEN, BLUE, PURPLE, RED, txt, Rico, P, Lista, Rotulo, Caixa, Versiculo, Tabela, Secao } from '../components/AulaKit';
 
 /* Teologia Política · Aula Introdutória — O que é teologia, o que é política
@@ -116,53 +118,79 @@ function Grade({ itens }: { itens: Definicao[] }) {
   );
 }
 
+const REFLEXAO: { q: string; r: string[]; refs: string }[] = [
+  {
+    q: 'Ames define teologia como “doutrina de viver para Deus”. **Que diferença isso faz** para a maneira como você vota, debate e se informa?',
+    r: [
+      'Para Ames, a teologia **não termina no intelecto, mas na vontade e na vida**: theologia est doctrina Deo vivendi (AMES, 1997, I.1.1-3). Turretin confirma que ela é ao mesmo tempo teórica e prática (TURRETIN, 2011, I.7), e Mastricht acrescenta que se vive para Deus **“por meio de Cristo”** (MASTRICHT, 2018, I.1).',
+      'Logo, votar, debater e informar-se **não são atos neutros**, mas parte do culto da vida inteira ([[1Co 10.31; Cl 3.17]]). **Votar:** com a consciência formada pela Escritura, e não pela tribo política. **Debater:** seguindo a verdade em amor, com mansidão e temor ([[Ef 4.15; 1Pe 3.15-16]]). **Informar-se:** o nono mandamento proíbe espalhar ou aceitar falso testemunho ([[Êx 20.16]]), o que inclui notícias falsas e meias-verdades.',
+      '!!Alerta:!! “viver para Deus” não transforma a política em pragmatismo religioso nem em garantia de que meu candidato é “o de Deus”. ++Aplicação:++ antes de compartilhar, votar ou discutir, pergunte: “isso é verdadeiro, justo e feito para a glória de Deus?”',
+    ],
+    refs: 'AMES, 1997; TURRETIN, 2011; MASTRICHT, 2018.',
+  },
+  {
+    q: 'Agostinho diz que um povo se define pelo que **ama**. O que os debates políticos brasileiros revelam sobre nossos amores?',
+    r: [
+      'Agostinho define o povo como uma multidão “unida pelo acordo comum acerca das coisas que ama” (AGOSTINHO, 2012, XIX.24). Por isso, a pergunta política decisiva é **o que amamos e em que ordem**: a virtude é a **ordem do amor** (ordo amoris) (AGOSTINHO, 2012, XV.22), e as duas cidades nascem de dois amores, o amor de si até o desprezo de Deus e o amor de Deus até o desprezo de si (AGOSTINHO, 2012, XIV.28).',
+      'Respostas possíveis: os debates revelam amores **desordenados**, como a segurança, a prosperidade e a identidade de grupo colocadas acima da justiça e da verdade. Revelam também o **ressentimento**, que ama mais vencer o adversário do que buscar o bem comum, e o **messianismo político**, que deposita no líder a esperança que pertence a Cristo. Kuyper lembra que nenhuma esfera, nem o Estado, pode ser absolutizada (KUYPER, 2002, palestra 3).',
+      '++Aplicação:++ o exame começa em nós: “onde está o vosso tesouro, aí estará também o vosso coração” ([[Mt 6.21]]). O cristão ama a cidade terrena e busca sua paz ([[Jr 29.7]]), mas !!não põe nela a sua esperança!!.',
+    ],
+    refs: 'AGOSTINHO, 2012; KUYPER, 2002.',
+  },
+  {
+    q: 'Qual a diferença entre **teologia política** e **teologia civil** (Varrão)? Dê um exemplo atual de cada uma.',
+    r: [
+      '**Teologia civil** é a religião definida pela cidade e posta a serviço dela: Varrão a descrevia como o culto que os cidadãos e os sacerdotes devem conhecer e praticar por utilidade pública (AGOSTINHO, 2012, VI.5). Agostinho a critica porque ali **a cidade determina os deuses**. **Teologia política**, na tradição reformada, faz o inverso: **a Palavra de Deus julga a cidade** e define os limites do poder (VANDRUNEN, 2020, introdução).',
+      '**Exemplo de teologia civil:** usar a fé como cimento identitário ou eleitoral, com o púlpito transformado em palanque, versículos usados como slogan de campanha ou o Estado definindo o que a igreja pode ou não pregar. O conceito moderno de “religião civil” vem de Rousseau (Contrato social, IV.8).',
+      '**Exemplo de teologia política:** uma igreja que ensina [[Rm 13]] e [[At 5.29]] lado a lado, ora pelas autoridades ([[1Tm 2.1-2]]) e defende a liberdade religiosa **de todos**, inclusive dos que discordam dela. Schmitt mostra que até o Estado moderno secular carrega conceitos teológicos (SCHMITT, 2006, cap. 3): a questão não é se haverá teologia na política, mas !!qual teologia!!.',
+    ],
+    refs: 'AGOSTINHO, 2012; SCHMITT, 2006; VANDRUNEN, 2020.',
+  },
+  {
+    q: 'Por que a definição do curso fala em autoridade “**sob o senhorio de Cristo**”, e não apenas “segundo valores cristãos”?',
+    r: [
+      '**“Valores cristãos”** podem ser separados de Cristo e usados por qualquer projeto de poder: tornam-se moralismo, ideologia ou teologia civil. **“Senhorio de Cristo”** é pessoal e objetivo: “toda a autoridade me foi dada no céu e na terra” ([[Mt 28.18]]; cf. [[Ef 1.20-22; Fp 2.9-11]]). Nenhum governante é autônomo; todos prestarão contas ao Rei.',
+      'Calvino ensina que a obediência aos magistrados **nunca pode nos afastar da obediência a Deus**, a quem os próprios reis estão sujeitos (CALVINO, 2009, IV.20.32; [[At 5.29]]). Kuyper resume: “não há um centímetro quadrado em todo o domínio da existência humana sobre o qual Cristo não clame: É meu!” (KUYPER, 1998, p. 488).',
+      '!!Nuance:!! reformados divergem sobre **como** Cristo governa o Estado. Os neocalvinistas (Kuyper) falam de seu senhorio sobre todas as esferas; os defensores dos dois reinos (VANDRUNEN, 2020) distinguem o governo de Cristo sobre o reino comum, como Criador e sustentador pelo pacto noaico ([[Gn 9]]), do seu governo redentor sobre a igreja. ++Ambos concordam:++ o poder civil é **real, delegado e limitado**, e não é dono das consciências.',
+    ],
+    refs: 'CALVINO, 2009; KUYPER, 1998; VANDRUNEN, 2020.',
+  },
+];
+
+const REFS_GABARITO = [
+  'AGOSTINHO. **A Cidade de Deus**. Petrópolis: Vozes, 2012.',
+  'AMES, William. **The Marrow of Theology**. Grand Rapids: Baker Books, 1997.',
+  'CALVINO, João. **A instituição da religião cristã**. São Paulo: Editora UNESP, 2009. t. 2.',
+  'KUYPER, Abraham. **Calvinismo**. São Paulo: Cultura Cristã, 2002.',
+  'KUYPER, Abraham. Sphere Sovereignty. In: BRATT, James D. (org.). **Abraham Kuyper**: a centennial reader. Grand Rapids: Eerdmans, 1998. p. 461-490.',
+  'MASTRICHT, Petrus van. **Theoretical-Practical Theology**. Grand Rapids: Reformation Heritage Books, 2018. v. 1.',
+  'ROUSSEAU, Jean-Jacques. **Do contrato social**. São Paulo: Abril Cultural, 1973. (Os Pensadores).',
+  'SCHMITT, Carl. **Teologia política**. Belo Horizonte: Del Rey, 2006.',
+  'TURRETIN, François. **Compêndio de teologia apologética**. São Paulo: Cultura Cristã, 2011. v. 1.',
+  'VANDRUNEN, David. **Politics after Christendom**: political theology in a fractured world. Grand Rapids: Zondervan Academic, 2020.',
+];
+
 const INDICE: [string, string, string][] = [
   ['objetivos', 'Objetivos', GOLD],
   ['teologia', 'O que é teologia', SKY],
   ['politica', 'O que é política', BLUE],
   ['teologia-politica', 'O que é teologia política', GOLD],
   ['mapa', 'Mapa da tradição', PURPLE],
-  ['reflexao', 'Para refletir', GREEN],
+  ['reflexao', 'Para refletir + gabarito', GREEN],
   ['proxima', 'Próxima aula', RED],
   ['notas', 'Notas', 'rgba(255,255,255,0.7)'],
 ];
 
 export default function TeologiaPoliticaIntroPage() {
   const navigate = useNavigate();
+  const [aberta, setAberta] = useState<number | null>(null);
 
   return (
     <div className="sem-justificar" style={{ minHeight: '100vh', background: BG, color: '#fff' }}>
       <Navbar />
+      <EstilosGraficos />
 
-      {/* ── Hero ── */}
-      <header style={{ position: 'relative', overflow: 'hidden', borderBottom: `1px solid ${GOLD}30`, background: `radial-gradient(ellipse 60% 80% at 80% 20%, ${GOLD}22, transparent 65%), linear-gradient(180deg, #050b1c, ${BG})` }}>
-        <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', opacity: 0.08, backgroundImage: `linear-gradient(${GOLD} 1px, transparent 1px), linear-gradient(90deg, ${GOLD} 1px, transparent 1px)`, backgroundSize: '48px 48px' }} />
-        <div style={{ position: 'relative', maxWidth: 1100, margin: '0 auto', padding: 'clamp(100px,12vw,124px) clamp(16px,4vw,40px) clamp(40px,6vw,64px)' }}>
-          <button onClick={() => navigate('/teologia/area/politica')} style={{ all: 'unset', cursor: 'pointer', fontSize: 15, fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: GOLD, display: 'inline-flex', gap: 8, padding: '8px 16px', borderRadius: 999, border: `1px solid ${GOLD}45`, background: `${GOLD}0d`, marginBottom: 32 }}>
-            ← Teologia Política
-          </button>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, marginBottom: 16 }}>
-            {['AULA INTRODUTÓRIA', 'CONCEITOS', '90 MIN'].map(t => (
-              <span key={t} style={{ fontFamily: 'var(--font-mono)', fontSize: 14, fontWeight: 700, letterSpacing: '0.12em', padding: '6px 12px', borderRadius: 8, color: GOLD, background: `${GOLD}14`, border: `1px solid ${GOLD}45` }}>{t}</span>
-            ))}
-          </div>
-          <h1 style={{ fontSize: 'clamp(34px,6vw,62px)', fontWeight: 900, lineHeight: 1.08, margin: '0 0 14px', letterSpacing: '-0.02em', background: `linear-gradient(100deg, #fff 40%, ${GOLD})`, WebkitBackgroundClip: 'text', backgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-            O que é Teologia Política?
-          </h1>
-          <p style={{ ...txt, fontSize: 'clamp(19px,2.4vw,24px)', color: 'rgba(235,240,255,0.92)', maxWidth: 860, marginBottom: 26 }}>
-            Teologia, política e teologia política — definições à luz dos grandes teólogos <span style={{ color: GOLD, fontWeight: 800 }}>reformados</span> e <span style={{ color: SKY, fontWeight: 800 }}>escolásticos</span>.
-          </p>
-          {/* equação visual */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: 'clamp(10px,2vw,18px)', flexWrap: 'wrap' }}>
-            {[['θεός + λόγος', 'Teologia', SKY], ['+', '', ''], ['πόλις', 'Política', BLUE], ['=', '', ''], ['⚖️', 'Teologia Política', GOLD]].map(([g, r, cor], i) => cor ? (
-              <div key={i} style={{ padding: '12px 18px', borderRadius: 14, background: `${cor}14`, border: `1px solid ${cor}50`, textAlign: 'center' }}>
-                <div style={{ fontFamily: 'var(--font-garamond)', fontSize: 'clamp(20px,2.6vw,26px)', color: cor as string }}>{g}</div>
-                <div style={{ fontSize: 'clamp(14px,1.6vw,16px)', fontWeight: 800, color: '#fff' }}>{r}</div>
-              </div>
-            ) : <span key={i} style={{ fontSize: 'clamp(24px,3vw,32px)', fontWeight: 900, color: 'rgba(255,255,255,0.6)' }}>{g}</span>)}
-          </div>
-        </div>
-      </header>
+      <HeroIntro onVoltar={() => navigate('/teologia/area/politica')} />
 
       <div style={{ maxWidth: 1100, margin: '0 auto', padding: 'clamp(28px,5vw,48px) clamp(16px,4vw,40px) 80px' }}>
         <nav style={{ display: 'flex', flexWrap: 'wrap', gap: 10, marginBottom: 20 }}>
@@ -196,7 +224,10 @@ export default function TeologiaPoliticaIntroPage() {
         {/* Teologia */}
         <Secao id="teologia" num="01" cor={SKY} titulo="O que é teologia?" sub="Theos + logos: o discurso sobre Deus que nasce da revelação e termina na vida">
           <P>{'Etimologicamente, teologia é **discurso sobre Deus** (θεός + λόγος). Mas a tradição cristã logo percebeu que não se trata de qualquer discurso: é o conhecimento que **Deus mesmo revelou**, recebido pela fé, ordenado pela razão e voltado para a vida.'}</P>
+          <ErasDaTeologia />
           <Grade itens={DEF_TEOLOGIA} />
+          <ArquetipicaEctipica />
+          <AnatomiaDaTeologia />
           <Caixa cor={SKY}>
             <Rotulo cor={SKY}>🧭 Síntese: o que a tradição concorda sobre a teologia</Rotulo>
             <Lista cor={SKY} itens={[
@@ -211,7 +242,10 @@ export default function TeologiaPoliticaIntroPage() {
         {/* Política */}
         <Secao id="politica" num="02" cor={BLUE} titulo="O que é política?" sub="Pólis: a arte da vida comum, ordenada à justiça e ao bem comum">
           <P>{'“Política” vem de **pólis**, a cidade. No uso clássico, não significa disputa partidária, mas **a arte de ordenar a vida comum** em vista do bem. A tradição cristã acolheu esse conceito e o reinterpretou à luz da criação, da queda e do senhorio de Deus.'}</P>
+          <HistoriaDaPolitica />
           <Grade itens={DEF_POLITICA} />
+          <ConsociacaoAlthusius />
+          <EsferasKuyper />
           <Caixa cor={BLUE}>
             <Rotulo cor={BLUE}>🧭 Síntese: política em perspectiva cristã</Rotulo>
             <Lista cor={BLUE} itens={[
@@ -227,6 +261,8 @@ export default function TeologiaPoliticaIntroPage() {
         <Secao id="teologia-politica" num="03" cor={GOLD} titulo="O que é teologia política?" sub="Pensar a cidade dos homens à luz da Palavra de Deus">
           <P>{'A expressão é antiga. **Marco Terêncio Varrão** (séc. I a.C.) dividia a teologia em mítica, física e **civil** — a religião oficial da cidade. Agostinho preservou essa divisão e a !!criticou duramente!!: a “teologia civil” punha os deuses a serviço da pólis.¹⁷ No século XX, **Carl Schmitt** tornou o termo corrente ao afirmar que os conceitos modernos do Estado são conceitos teológicos secularizados.¹⁸'}</P>
           <P>{'A tradição reformada inverte o vetor de Varrão: **não é a teologia a serviço da cidade, mas a cidade julgada pela Palavra de Deus**. Teologia política, nesse sentido, é parte da teologia — e não um ramo da ciência política com verniz religioso.¹⁹'}</P>
+          <EncontroTeologiaPolitica />
+          <VarraoReforma />
           <div style={{ padding: 'clamp(20px,3.5vw,32px)', borderRadius: 20, background: `linear-gradient(135deg, ${GOLD}22, rgba(6,12,30,0.9))`, border: `2px solid ${GOLD}70`, boxShadow: `0 0 40px ${GOLD}20` }}>
             <div style={{ fontFamily: 'var(--font-mono)', fontSize: 14, fontWeight: 700, letterSpacing: '0.14em', color: GOLD, marginBottom: 10 }}>✦ DEFINIÇÃO DE TRABALHO DO CURSO</div>
             <p style={{ margin: 0, fontFamily: 'var(--font-garamond)', fontSize: 'clamp(22px,2.9vw,30px)', lineHeight: 1.5, color: '#fff' }}>
@@ -239,6 +275,7 @@ export default function TeologiaPoliticaIntroPage() {
             <Caixa cor={ROSE}><div style={{ fontSize: 26 }}>⚖️</div><P>{'**Crítica:** julgar as ideologias e os poderes que reivindicam o que pertence a Deus ([[Ap 13]]).'}</P></Caixa>
             <Caixa cor={GREEN}><div style={{ fontSize: 26 }}>🏗️</div><P>{'**Construtiva:** orientar a vida pública do cristão e da igreja ([[Jr 29.7; 1Tm 2.1-2]]).'}</P></Caixa>
           </div>
+          <EspectroTeologiaPolitica />
           <Rotulo cor={ROSE}>O que teologia política NÃO é</Rotulo>
           <div className="fluxo" style={{ '--min': '280px', '--gap': '12px' } as CSSProperties}>
             {[
@@ -257,18 +294,45 @@ export default function TeologiaPoliticaIntroPage() {
 
         {/* Mapa */}
         <Secao id="mapa" num="04" cor={PURPLE} titulo="Mapa da tradição" sub="As vozes que acompanharão o curso">
+          <LinhaDoTempoTradicao />
           <Tabela cor={PURPLE} cab={['Pensador', 'Ideia-chave', 'Síntese']} linhas={MAPA} />
           <P>{'Note a linha de continuidade: de Agostinho a Kuyper, **a autoridade civil é real, mas limitada**, porque !!só Deus é soberano!!. As diferenças estão em como se descreve a relação entre a igreja, o Estado e as demais esferas — tema das próximas aulas.'}</P>
         </Secao>
 
         {/* Reflexão */}
-        <Secao id="reflexao" num="05" cor={GREEN} titulo="Para refletir">
-          <Lista cor={GREEN} num itens={[
-            'Ames define teologia como “doutrina de viver para Deus”. **Que diferença isso faz** para a maneira como você vota, debate e se informa?',
-            'Agostinho diz que um povo se define pelo que **ama**. O que os debates políticos brasileiros revelam sobre nossos amores?',
-            'Qual a diferença entre **teologia política** e **teologia civil** (Varrão)? Dê um exemplo atual de cada uma.',
-            'Por que a definição do curso fala em autoridade “**sob o senhorio de Cristo**”, e não apenas “segundo valores cristãos”?',
-          ]} />
+        <Secao id="reflexao" num="05" cor={GREEN} titulo="Para refletir" sub="Toque em cada questão para ver a sugestão de gabarito, fundamentada nas referências teóricas">
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+            {REFLEXAO.map(({ q, r, refs }, i) => (
+              <div key={i} style={{ borderRadius: 16, border: `1px solid ${GREEN}35`, overflow: 'hidden', background: aberta === i ? `${GREEN}0c` : 'rgba(0,0,0,0.2)' }}>
+                <button onClick={() => setAberta(aberta === i ? null : i)} aria-expanded={aberta === i} style={{ all: 'unset', cursor: 'pointer', display: 'flex', gap: 14, alignItems: 'flex-start', width: '100%', boxSizing: 'border-box', padding: 'clamp(14px,2.5vw,20px)' }}>
+                  <span style={{ flexShrink: 0, width: 36, height: 36, borderRadius: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 900, fontSize: 17, color: '#0a0f1e', background: GREEN }}>{i + 1}</span>
+                  <span style={{ flex: 1, fontSize: 'clamp(17.5px,2vw,20px)', fontWeight: 700, color: '#fff', lineHeight: 1.5 }}><Rico t={q} /></span>
+                  <span style={{ flexShrink: 0, color: GREEN, fontSize: 20, transform: aberta === i ? 'rotate(180deg)' : 'none', transition: 'transform .2s' }}>▾</span>
+                </button>
+                {aberta === i && (
+                  <div style={{ padding: '0 clamp(14px,2.5vw,20px) clamp(16px,2.5vw,22px)', marginLeft: 'clamp(0px,5vw,50px)' }}>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: 12, padding: '14px 16px', borderRadius: 12, background: 'rgba(0,0,0,0.3)', borderLeft: `4px solid ${GREEN}` }}>
+                      <div style={{ fontFamily: 'var(--font-mono)', fontSize: 13, fontWeight: 700, letterSpacing: '0.12em', color: GREEN }}>✓ SUGESTÃO DE GABARITO</div>
+                      {r.map((par, k) => <P key={k}>{par}</P>)}
+                      <div className="notranslate" translate="no" style={{ fontFamily: 'var(--font-mono)', fontSize: 13.5, fontWeight: 700, color: `${GREEN}` }}>📚 Base: {refs}</div>
+                    </div>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+          <P>{'!!Para o professor:!! valorize respostas que **citem as fontes** da aula, distingam teologia política de teologia civil e evitem tanto a fusão quanto a separação entre fé e vida pública.'}</P>
+          <div style={{ padding: 'clamp(14px,2.4vw,20px)', borderRadius: 14, background: 'rgba(0,0,0,0.25)', border: `1px dashed ${GREEN}55` }}>
+            <div style={{ fontFamily: 'var(--font-mono)', fontSize: 12.5, fontWeight: 700, letterSpacing: '0.14em', color: GREEN, marginBottom: 8 }}>📚 REFERÊNCIAS DO GABARITO (ABNT)</div>
+            <ul className="notranslate" translate="no" style={{ listStyle: 'none', margin: 0, padding: 0, display: 'flex', flexDirection: 'column', gap: 6 }}>
+              {REFS_GABARITO.map(ref => (
+                <li key={ref} style={{ position: 'relative', paddingLeft: 16, fontSize: 'clamp(13.5px,1.45vw,14.5px)', lineHeight: 1.6, color: 'rgba(230,238,255,0.78)' }}>
+                  <span style={{ position: 'absolute', left: 0, color: GREEN }}>▸</span>
+                  {ref.split('**').map((x, k) => k % 2 ? <b key={k} style={{ color: '#fff' }}>{x}</b> : x)}
+                </li>
+              ))}
+            </ul>
+          </div>
         </Secao>
 
         {/* Próxima aula */}
@@ -285,6 +349,7 @@ export default function TeologiaPoliticaIntroPage() {
                 </div>
               ))}
             </div>
+            <TensaoRmAp />
             <Caixa cor={SKY}>
               <p style={{ ...txt, fontSize: 'clamp(19px,2.2vw,22px)', color: '#fff', fontWeight: 700 }}>❓ Pergunta-guia: como o mesmo Estado pode ser chamado <span style={{ color: GREEN }}>“ministro de Deus”</span> (Rm 13) e <span style={{ color: RED }}>“besta”</span> (Ap 13)?</p>
             </Caixa>

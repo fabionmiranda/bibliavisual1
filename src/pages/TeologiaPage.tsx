@@ -171,6 +171,18 @@ function getAreas(pt: boolean): AreaCard[] {
         : ['Church and State', 'Two Kingdoms', 'Sphere Sovereignty', 'Civil Magistrate', 'Justice', 'Religious Liberty'],
     },
     {
+      slug: 'direito',
+      titulo: pt ? 'Teologia e Direito' : 'Theology and Law',
+      descricao: pt
+        ? 'O diálogo entre a fé reformada e a ciência jurídica: a lei de Deus, a lei natural, os direitos humanos, a liberdade religiosa e a vocação cristã no mundo do Direito.'
+        : 'The dialogue between Reformed faith and legal science: the law of God, natural law, human rights, religious liberty and the Christian calling in the world of Law.',
+      icon: '🏛️',
+      cor: '#a78bfa',
+      tags: pt
+        ? ['Lei de Deus', 'Lei Natural', 'Direitos Humanos', 'Liberdade Religiosa', 'Justiça', 'Vocação Jurídica']
+        : ['Law of God', 'Natural Law', 'Human Rights', 'Religious Liberty', 'Justice', 'Legal Vocation'],
+    },
+    {
       slug: 'aulas-avancadas',
       titulo: pt ? 'Aulas Avançadas' : 'Advanced Classes',
       descricao: pt
