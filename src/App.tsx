@@ -15,6 +15,10 @@ import EducacaoCristaAula2Page from './pages/EducacaoCristaAula2Page';
 import EducacaoCristaAula3Page from './pages/EducacaoCristaAula3Page';
 import LivroIsThereiningPage from './pages/LivroIsTheremeaningPage';
 import LivroBatistasBibliaPage from './pages/LivroBatistasBibliaPage';
+import LivroComoSerConservadorPage from './pages/LivroComoSerConservadorPage';
+import LivroComoSerConservadorCapituloPage from './pages/LivroComoSerConservadorCapituloPage';
+import LeituraGuiadaParagrafosPage from './pages/LeituraGuiadaParagrafosPage';
+import BibliotecaLeituraGuiadaPage from './pages/BibliotecaLeituraGuiadaPage';
 import TeologoBatistaPage, { TeologoPresbiterianoPage } from './pages/TeologoBatistaPage';
 import BibliotecaLivrosPage from './pages/BibliotecaLivrosPage';
 import BibliotecaResenhasPage from './pages/BibliotecaResenhasPage';
@@ -135,6 +139,9 @@ export default function App() {
           <Route path="/biblioteca/livros"                           element={<BibliotecaLivrosPage />} />
           <Route path="/biblioteca/livros/is-there-meaning"        element={<LivroIsThereiningPage />} />
           <Route path="/biblioteca/livros/os-batistas-e-a-biblia" element={<LivroBatistasBibliaPage />} />
+          <Route path="/biblioteca/livros/como-ser-um-conservador" element={<LivroComoSerConservadorPage />} />
+          <Route path="/biblioteca/livros/como-ser-um-conservador/:capSlug/paragrafos" element={<LeituraGuiadaParagrafosPage />} />
+          <Route path="/biblioteca/livros/como-ser-um-conservador/:capSlug" element={<LivroComoSerConservadorCapituloPage />} />
           <Route path="/biblioteca/livros/os-batistas-e-a-biblia/:slug" element={<TeologoBatistaPage />} />
           <Route path="/estudos/biblicos"                               element={<EstudosBiblicosPage />} />
           <Route path="/estudos/biblicos/herois-da-fe-na-historia"    element={<HeroisDaFeHistoriaPage />} />
@@ -160,7 +167,9 @@ export default function App() {
           <Route path="/biblioteca/resenhas"          element={<BibliotecaResenhasPage />} />
           <Route path="/biblioteca/resenhas/gonzalez-era-reformadores-cap1" element={<ResenhaGonzalezEraReformadoresPage />} />
           <Route path="/biblioteca/resenhas/gonzalez-lutero-cap2"           element={<ResenhaGonzalezLuteroPage />} />
-          <Route path="/biblioteca/guias"             element={<BibliotecaPage />} />
+          <Route path="/biblioteca/leitura-guiada"    element={<BibliotecaLeituraGuiadaPage />} />
+          <Route path="/biblioteca/leitura-guiada/:livro" element={<BibliotecaLeituraGuiadaPage />} />
+          <Route path="/biblioteca/guias"             element={<Navigate to="/biblioteca/leitura-guiada" replace />} />
           <Route path="/biblioteca/area/:slug"        element={<BibliotecaPage />} />
           <Route path="/livraria" element={<LibrariaPage />} />
           <Route path="/livros" element={<LivrosPage />} />
