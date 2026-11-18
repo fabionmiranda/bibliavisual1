@@ -16,6 +16,7 @@ import EducacaoCristaAula3Page from './pages/EducacaoCristaAula3Page';
 import LivroIsThereiningPage from './pages/LivroIsTheremeaningPage';
 import LivroBatistasBibliaPage from './pages/LivroBatistasBibliaPage';
 import LivroComoSerConservadorPage from './pages/LivroComoSerConservadorPage';
+import LivretoWasherEvangelhoPage from './pages/LivretoWasherEvangelhoPage';
 import LivroComoSerConservadorCapituloPage from './pages/LivroComoSerConservadorCapituloPage';
 import LeituraGuiadaParagrafosPage from './pages/LeituraGuiadaParagrafosPage';
 import BibliotecaLeituraGuiadaPage from './pages/BibliotecaLeituraGuiadaPage';
@@ -167,6 +168,7 @@ export default function App() {
           <Route path="/biblioteca/resenhas"          element={<BibliotecaResenhasPage />} />
           <Route path="/biblioteca/resenhas/gonzalez-era-reformadores-cap1" element={<ResenhaGonzalezEraReformadoresPage />} />
           <Route path="/biblioteca/resenhas/gonzalez-lutero-cap2"           element={<ResenhaGonzalezLuteroPage />} />
+          <Route path="/biblioteca/livretos/o-evangelho-de-jesus-cristo" element={<LivretoWasherEvangelhoPage />} />
           <Route path="/biblioteca/leitura-guiada"    element={<BibliotecaLeituraGuiadaPage />} />
           <Route path="/biblioteca/leitura-guiada/:livro" element={<BibliotecaLeituraGuiadaPage />} />
           <Route path="/biblioteca/guias"             element={<Navigate to="/biblioteca/leitura-guiada" replace />} />

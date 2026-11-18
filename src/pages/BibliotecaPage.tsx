@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import {
   BookMarked, Star, User, FileText, BookOpen, BookOpenText,
   Layers, Search, Mic2, Landmark, Handshake, Cross,
-  ChevronRight, GraduationCap, Compass, Sparkles, Library, X, ArrowRight,
+  ChevronRight, GraduationCap, Compass, Sparkles, Library, X, ArrowRight, BookHeart,
   type LucideIcon,
 } from 'lucide-react';
 import Navbar from '../components/Navbar';
@@ -12,6 +12,7 @@ import VideoIntro from '../components/VideoIntro';
 import Footer from '../components/Footer';
 import { ARTIGOS_TEOLOGIA } from '../data/teologia';
 import { LEITURAS_SCRUTON } from '../data/scrutonLeituras';
+import { ROTA_LIVRETO_WASHER } from '../data/livretoWasherEvangelho';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const ARTIGOS_COUNT = ARTIGOS_TEOLOGIA.filter(a => a.area === 'artigos' && a.status === 'publicado').length;
@@ -66,6 +67,14 @@ function getColecoes(pt: boolean): Colecao[] {
         ? 'Seleção criteriosa de teologia, exposição bíblica, política e conservadorismo.'
         : 'A careful selection of theology, biblical exposition, politics and conservatism.',
       badge: pt ? `${LIVROS_COUNT} livros` : `${LIVROS_COUNT} books`,
+    },
+    {
+      icon: BookHeart, grupo: 'ler', accent: '#f43f5e', path: ROTA_LIVRETO_WASHER,
+      label: pt ? 'Livretos Evangelísticos' : 'Evangelistic Booklets',
+      descricao: pt
+        ? 'O Evangelho de Jesus Cristo (Paul Washer): as boas novas explicadas com destaques e roteiro.'
+        : 'The Gospel of Jesus Christ (Paul Washer): the good news explained with highlights and a roadmap.',
+      badge: pt ? 'Novo' : 'New',
     },
     {
       icon: Star, grupo: 'ler', accent: '#fbbf24', path: '/biblioteca/semana',
