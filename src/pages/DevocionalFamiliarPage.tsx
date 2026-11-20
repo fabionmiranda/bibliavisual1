@@ -205,7 +205,7 @@ const VIDEOS_FAMILIAR: Record<number, string> = {
   321: '', // Aplicação da Semana 46
   322: '', // Mesa da Aliança — Semana 46
   // Semana 47
-  323: '', // 1 João 1
+  323: 'https://youtu.be/OY296myk48k', // 1 João 1
   324: '', // 1 João 2
   325: '', // 1 João 3
   326: '', // 1 João 4
@@ -368,37 +368,80 @@ function TextoBiblicoLink({ t }: { t: NonNullable<DiaFamiliar['textoBiblico']> }
   );
 }
 
-/* Atalho para o vídeo do dia no YouTube, ao lado do link do texto bíblico.
+/* Cartão do vídeo do dia, ao lado do link do texto bíblico.
+   Com link: "Abrir no YouTube ↗" e uma aba "Assistir aqui" que abre o player embutido.
    Dia com '' em VIDEOS_FAMILIAR mostra "Vídeo em breve"; dia ausente não mostra nada. */
-function VideoYoutubeLink({ d }: { d: DiaFamiliar }) {
+function VideoYoutubeLink({ d, aberto, onAlternar }: { d: DiaFamiliar; aberto: boolean; onAlternar: () => void }) {
   const url = VIDEOS_FAMILIAR[d.dia];
   if (url === undefined) return null;
   const id = url ? youtubeId(url) : null;
   const VERMELHO = 'rgba(248,113,113,1)';
-  const conteudo = (
-    <>
-      <span style={{ width: 34, height: 24, borderRadius: 7, background: id ? '#ff0033' : 'rgba(255,255,255,0.12)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-        <span style={{ width: 0, height: 0, marginLeft: 2, borderTop: '6px solid transparent', borderBottom: '6px solid transparent', borderLeft: `10px solid ${id ? '#fff' : 'rgba(255,255,255,0.45)'}` }} />
-      </span>
-      <span style={{ flex: 1, minWidth: 0 }}>
-        <span style={{ display: 'block', fontSize: 12, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: id ? VERMELHO : 'rgba(215,215,255,0.75)', marginBottom: 3 }}>
-          Vídeo do dia
-        </span>
-        <span style={{ display: 'block', fontSize: 18, fontWeight: 800, color: id ? '#fff' : 'rgba(230,228,255,0.80)' }}>
-          {id ? 'Assistir no YouTube' : 'Vídeo em breve'}
-        </span>
-      </span>
-      {id && <span style={{ fontSize: 15, fontWeight: 800, color: VERMELHO, whiteSpace: 'nowrap' }}>Abrir ↗</span>}
-    </>
-  );
   const estilo = {
-    display: 'flex', alignItems: 'center', gap: 14, padding: '14px 18px', borderRadius: 14, textDecoration: 'none',
+    display: 'flex', flexDirection: 'column', gap: 12, padding: '14px 18px', borderRadius: 14,
     background: id ? 'linear-gradient(135deg, rgba(248,113,113,0.14), rgba(248,113,113,0.04))' : 'rgba(255,255,255,0.04)',
     border: `1px ${id ? 'solid' : 'dashed'} ${id ? 'rgba(248,113,113,0.40)' : 'rgba(255,255,255,0.18)'}`,
   } as const;
-  return id
-    ? <a href={`https://www.youtube.com/watch?v=${id}`} target="_blank" rel="noopener noreferrer" style={estilo} title={`Assistir a animação de ${d.leitura} no YouTube`}>{conteudo}</a>
-    : <div style={estilo} title="O link do vídeo será publicado em breve">{conteudo}</div>;
+  const botao = {
+    flex: '1 1 140px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6,
+    padding: '8px 12px', borderRadius: 10, fontSize: 15, fontWeight: 800, cursor: 'pointer',
+    textDecoration: 'none', whiteSpace: 'nowrap',
+  } as const;
+  return (
+    <div style={estilo} title={id ? undefined : 'O link do vídeo será publicado em breve'}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
+        <span style={{ width: 34, height: 24, borderRadius: 7, background: id ? '#ff0033' : 'rgba(255,255,255,0.12)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+          <span style={{ width: 0, height: 0, marginLeft: 2, borderTop: '6px solid transparent', borderBottom: '6px solid transparent', borderLeft: `10px solid ${id ? '#fff' : 'rgba(255,255,255,0.45)'}` }} />
+        </span>
+        <span style={{ flex: 1, minWidth: 0 }}>
+          <span style={{ display: 'block', fontSize: 12, fontWeight: 900, letterSpacing: '0.22em', textTransform: 'uppercase', color: id ? VERMELHO : 'rgba(215,215,255,0.75)', marginBottom: 3 }}>
+            Vídeo do dia
+          </span>
+          <span style={{ display: 'block', fontSize: 18, fontWeight: 800, color: id ? '#fff' : 'rgba(230,228,255,0.80)' }}>
+            {id ? 'Assista aqui ou no YouTube' : 'Vídeo em breve'}
+          </span>
+        </span>
+      </div>
+      {id && (
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+          <button
+            type="button"
+            onClick={onAlternar}
+            aria-expanded={aberto}
+            style={{ ...botao, color: aberto ? '#fff' : VERMELHO, background: aberto ? 'rgba(248,113,113,0.30)' : 'rgba(248,113,113,0.10)', border: `1px solid ${aberto ? 'rgba(248,113,113,0.70)' : 'rgba(248,113,113,0.40)'}` }}
+          >
+            {aberto ? 'Fechar vídeo ▴' : 'Assistir aqui ▾'}
+          </button>
+          <a
+            href={`https://www.youtube.com/watch?v=${id}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            title={`Assistir a animação de ${d.leitura} no YouTube`}
+            style={{ ...botao, color: VERMELHO, background: 'transparent', border: '1px solid rgba(248,113,113,0.40)' }}
+          >
+            Abrir no YouTube ↗
+          </a>
+        </div>
+      )}
+    </div>
+  );
+}
+
+/* Player do YouTube embutido (16:9), aberto pela aba "Assistir aqui". */
+function VideoYoutubeEmbutido({ d, id }: { d: DiaFamiliar; id: string }) {
+  return (
+    <div style={{ borderRadius: 14, overflow: 'hidden', border: '1px solid rgba(248,113,113,0.40)', background: 'linear-gradient(135deg, rgba(248,113,113,0.14), rgba(248,113,113,0.04))' }}>
+      <div style={{ position: 'relative', width: '100%', aspectRatio: '16 / 9', background: '#000' }}>
+        <iframe
+          src={`https://www.youtube-nocookie.com/embed/${id}?rel=0&modestbranding=1&autoplay=1`}
+          title={`Vídeo do dia — ${d.leitura}`}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 0 }}
+        />
+      </div>
+    </div>
+  );
 }
 
 const COR_CONVERSA = 'rgba(251,146,60,1)';
@@ -479,15 +522,19 @@ function ConteudoDia({ d, cor }: { d: DiaFamiliar; cor: string }) {
   const fs15 = 17;
   const fs16 = 18;
   const alinhamento = 'left' as const;
+  const [videoAberto, setVideoAberto] = useState(false);
+  const idVideo = VIDEOS_FAMILIAR[d.dia] ? youtubeId(VIDEOS_FAMILIAR[d.dia]) : null;
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 20, paddingTop: 4 }}>
 
       {(d.textoBiblico || VIDEOS_FAMILIAR[d.dia] !== undefined) && (
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(min(100%,260px),1fr))', gap: 12 }}>
           {d.textoBiblico && <TextoBiblicoLink t={d.textoBiblico} />}
-          <VideoYoutubeLink d={d} />
+          <VideoYoutubeLink d={d} aberto={videoAberto} onAlternar={() => setVideoAberto(v => !v)} />
         </div>
       )}
+
+      {idVideo && videoAberto && <VideoYoutubeEmbutido d={d} id={idVideo} />}
 
       {rico && <LegendaDestaques />}
 
