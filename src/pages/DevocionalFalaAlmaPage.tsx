@@ -29,6 +29,30 @@ export default function DevocionalFalaAlmaPage() {
   );
 }
 
+/* Animação de apresentação do devocional (YouTube embutido, sem cookies até dar play). */
+const VIDEO_ABERTURA = 'e3kpQqC01N4';
+function VideoAbertura() {
+  return (
+    <figure style={{ margin: '22px auto 0', maxWidth: 640 }}>
+      <div style={{ position: 'relative', width: '100%', aspectRatio: '16 / 9', borderRadius: 18, overflow: 'hidden', background: '#000', border: `1px solid ${C.bordaForte}`, boxShadow: '0 18px 48px rgba(0,0,0,0.45), 0 0 0 4px rgba(0,229,255,0.05)' }}>
+        <iframe
+          src={`https://www.youtube-nocookie.com/embed/${VIDEO_ABERTURA}?rel=0&modestbranding=1`}
+          title="Conselheiro da Alma: animação de apresentação"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 0 }}
+        />
+      </div>
+      <figcaption style={{ marginTop: 8, fontSize: 13, color: C.textoFraco }}>
+        🎬 Animação de apresentação ·{' '}
+        <a href={`https://youtu.be/${VIDEO_ABERTURA}`} target="_blank" rel="noopener noreferrer" style={{ color: C.ciano }}>abrir no YouTube ↗</a>
+      </figcaption>
+    </figure>
+  );
+}
+
 function PaginaFalaAlma() {
   const { dia: slug } = useParams();
   const navigate = useNavigate();
@@ -76,6 +100,7 @@ function PaginaFalaAlma() {
             Conselheiro <span style={{ color: C.dourado }}>da Alma</span>
           </h1>
           <p style={{ margin: '0 auto', maxWidth: 460, fontFamily: TITULO, fontSize: 16, letterSpacing: '0.04em', lineHeight: 1.6, color: C.textoSuave }}>365 conversas nos Salmos para o coração cansado</p>
+          <VideoAbertura />
           {aba === 'leitura' && <FaixaSemana data={data} dataHoje={dataHoje} bissexto={bissexto} onIrPara={irPara} />}
         </div>
         <nav aria-label="Seções do devocional" style={{ maxWidth: 680, margin: '22px auto 0', padding: '0 16px' }}>
