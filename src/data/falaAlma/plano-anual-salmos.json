@@ -1,0 +1,6164 @@
+[
+ {
+  "data": "01-01",
+  "dia_do_ano": 1,
+  "mes": "Janeiro",
+  "tema_mes": "Raízes",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Plantados",
+  "leitura": "Sl 1",
+  "trechos": [
+   [
+    1,
+    1,
+    6
+   ]
+  ]
+ },
+ {
+  "data": "01-02",
+  "dia_do_ano": 2,
+  "mes": "Janeiro",
+  "tema_mes": "Raízes",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Plantados",
+  "leitura": "Sl 2.1-6",
+  "trechos": [
+   [
+    2,
+    1,
+    6
+   ]
+  ]
+ },
+ {
+  "data": "01-03",
+  "dia_do_ano": 3,
+  "mes": "Janeiro",
+  "tema_mes": "Raízes",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Plantados",
+  "leitura": "Sl 2.7-12",
+  "trechos": [
+   [
+    2,
+    7,
+    12
+   ]
+  ]
+ },
+ {
+  "data": "01-04",
+  "dia_do_ano": 4,
+  "mes": "Janeiro",
+  "tema_mes": "Raízes",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Plantados",
+  "leitura": "Sl 3",
+  "trechos": [
+   [
+    3,
+    1,
+    8
+   ]
+  ]
+ },
+ {
+  "data": "01-05",
+  "dia_do_ano": 5,
+  "mes": "Janeiro",
+  "tema_mes": "Raízes",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Plantados",
+  "leitura": "Sl 4",
+  "trechos": [
+   [
+    4,
+    1,
+    8
+   ]
+  ]
+ },
+ {
+  "data": "01-06",
+  "dia_do_ano": 6,
+  "mes": "Janeiro",
+  "tema_mes": "Raízes",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Plantados",
+  "leitura": "Sl 5",
+  "trechos": [
+   [
+    5,
+    1,
+    12
+   ]
+  ]
+ },
+ {
+  "data": "01-07",
+  "dia_do_ano": 7,
+  "mes": "Janeiro",
+  "tema_mes": "Raízes",
+  "estacao": "Plantar",
+  "tipo": "selah",
+  "semana": 1,
+  "nome_semana": "Plantados",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "01-08",
+  "dia_do_ano": 8,
+  "mes": "Janeiro",
+  "tema_mes": "Raízes",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Lágrimas na noite",
+  "leitura": "Sl 6.1-5",
+  "trechos": [
+   [
+    6,
+    1,
+    5
+   ]
+  ]
+ },
+ {
+  "data": "01-09",
+  "dia_do_ano": 9,
+  "mes": "Janeiro",
+  "tema_mes": "Raízes",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Lágrimas na noite",
+  "leitura": "Sl 6.6-10",
+  "trechos": [
+   [
+    6,
+    6,
+    10
+   ]
+  ]
+ },
+ {
+  "data": "01-10",
+  "dia_do_ano": 10,
+  "mes": "Janeiro",
+  "tema_mes": "Raízes",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Lágrimas na noite",
+  "leitura": "Sl 7.1-9",
+  "trechos": [
+   [
+    7,
+    1,
+    9
+   ]
+  ]
+ },
+ {
+  "data": "01-11",
+  "dia_do_ano": 11,
+  "mes": "Janeiro",
+  "tema_mes": "Raízes",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Lágrimas na noite",
+  "leitura": "Sl 7.10-17",
+  "trechos": [
+   [
+    7,
+    10,
+    17
+   ]
+  ]
+ },
+ {
+  "data": "01-12",
+  "dia_do_ano": 12,
+  "mes": "Janeiro",
+  "tema_mes": "Raízes",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Lágrimas na noite",
+  "leitura": "Sl 8.1-5",
+  "trechos": [
+   [
+    8,
+    1,
+    5
+   ]
+  ]
+ },
+ {
+  "data": "01-13",
+  "dia_do_ano": 13,
+  "mes": "Janeiro",
+  "tema_mes": "Raízes",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Lágrimas na noite",
+  "leitura": "Sl 8.6-9",
+  "trechos": [
+   [
+    8,
+    6,
+    9
+   ]
+  ]
+ },
+ {
+  "data": "01-14",
+  "dia_do_ano": 14,
+  "mes": "Janeiro",
+  "tema_mes": "Raízes",
+  "estacao": "Plantar",
+  "tipo": "selah",
+  "semana": 2,
+  "nome_semana": "Lágrimas na noite",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "01-15",
+  "dia_do_ano": 15,
+  "mes": "Janeiro",
+  "tema_mes": "Raízes",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Quando o mal parece vencer",
+  "leitura": "Sl 9.1-10",
+  "trechos": [
+   [
+    9,
+    1,
+    10
+   ]
+  ]
+ },
+ {
+  "data": "01-16",
+  "dia_do_ano": 16,
+  "mes": "Janeiro",
+  "tema_mes": "Raízes",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Quando o mal parece vencer",
+  "leitura": "Sl 9.11-20",
+  "trechos": [
+   [
+    9,
+    11,
+    20
+   ]
+  ]
+ },
+ {
+  "data": "01-17",
+  "dia_do_ano": 17,
+  "mes": "Janeiro",
+  "tema_mes": "Raízes",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Quando o mal parece vencer",
+  "leitura": "Sl 10.1-9",
+  "trechos": [
+   [
+    10,
+    1,
+    9
+   ]
+  ]
+ },
+ {
+  "data": "01-18",
+  "dia_do_ano": 18,
+  "mes": "Janeiro",
+  "tema_mes": "Raízes",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Quando o mal parece vencer",
+  "leitura": "Sl 10.10-18",
+  "trechos": [
+   [
+    10,
+    10,
+    18
+   ]
+  ]
+ },
+ {
+  "data": "01-19",
+  "dia_do_ano": 19,
+  "mes": "Janeiro",
+  "tema_mes": "Raízes",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Quando o mal parece vencer",
+  "leitura": "Sl 11",
+  "trechos": [
+   [
+    11,
+    1,
+    7
+   ]
+  ]
+ },
+ {
+  "data": "01-20",
+  "dia_do_ano": 20,
+  "mes": "Janeiro",
+  "tema_mes": "Raízes",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Quando o mal parece vencer",
+  "leitura": "Sl 12",
+  "trechos": [
+   [
+    12,
+    1,
+    8
+   ]
+  ]
+ },
+ {
+  "data": "01-21",
+  "dia_do_ano": 21,
+  "mes": "Janeiro",
+  "tema_mes": "Raízes",
+  "estacao": "Plantar",
+  "tipo": "selah",
+  "semana": 3,
+  "nome_semana": "Quando o mal parece vencer",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "01-22",
+  "dia_do_ano": 22,
+  "mes": "Janeiro",
+  "tema_mes": "Raízes",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Até quando, Senhor?",
+  "leitura": "Sl 13",
+  "trechos": [
+   [
+    13,
+    1,
+    6
+   ]
+  ]
+ },
+ {
+  "data": "01-23",
+  "dia_do_ano": 23,
+  "mes": "Janeiro",
+  "tema_mes": "Raízes",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Até quando, Senhor?",
+  "leitura": "Sl 14",
+  "trechos": [
+   [
+    14,
+    1,
+    7
+   ]
+  ]
+ },
+ {
+  "data": "01-24",
+  "dia_do_ano": 24,
+  "mes": "Janeiro",
+  "tema_mes": "Raízes",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Até quando, Senhor?",
+  "leitura": "Sl 15",
+  "trechos": [
+   [
+    15,
+    1,
+    5
+   ]
+  ]
+ },
+ {
+  "data": "01-25",
+  "dia_do_ano": 25,
+  "mes": "Janeiro",
+  "tema_mes": "Raízes",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Até quando, Senhor?",
+  "leitura": "Sl 16",
+  "trechos": [
+   [
+    16,
+    1,
+    11
+   ]
+  ]
+ },
+ {
+  "data": "01-26",
+  "dia_do_ano": 26,
+  "mes": "Janeiro",
+  "tema_mes": "Raízes",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Até quando, Senhor?",
+  "leitura": "Sl 17.1-8",
+  "trechos": [
+   [
+    17,
+    1,
+    8
+   ]
+  ]
+ },
+ {
+  "data": "01-27",
+  "dia_do_ano": 27,
+  "mes": "Janeiro",
+  "tema_mes": "Raízes",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Até quando, Senhor?",
+  "leitura": "Sl 17.9-15",
+  "trechos": [
+   [
+    17,
+    9,
+    15
+   ]
+  ]
+ },
+ {
+  "data": "01-28",
+  "dia_do_ano": 28,
+  "mes": "Janeiro",
+  "tema_mes": "Raízes",
+  "estacao": "Plantar",
+  "tipo": "selah",
+  "semana": 4,
+  "nome_semana": "Até quando, Senhor?",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "01-29",
+  "dia_do_ano": 29,
+  "mes": "Janeiro",
+  "tema_mes": "Raízes",
+  "estacao": "Plantar",
+  "tipo": "colheita",
+  "semana": null,
+  "nome_semana": "Colheita de janeiro",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "01-30",
+  "dia_do_ano": 30,
+  "mes": "Janeiro",
+  "tema_mes": "Raízes",
+  "estacao": "Plantar",
+  "tipo": "colheita",
+  "semana": null,
+  "nome_semana": "Colheita de janeiro",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "01-31",
+  "dia_do_ano": 31,
+  "mes": "Janeiro",
+  "tema_mes": "Raízes",
+  "estacao": "Plantar",
+  "tipo": "colheita",
+  "semana": null,
+  "nome_semana": "Colheita de janeiro",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "02-01",
+  "dia_do_ano": 32,
+  "mes": "Fevereiro",
+  "tema_mes": "Do medo ao Pastor",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "O Deus que resgata",
+  "leitura": "Sl 18.1-13",
+  "trechos": [
+   [
+    18,
+    1,
+    13
+   ]
+  ]
+ },
+ {
+  "data": "02-02",
+  "dia_do_ano": 33,
+  "mes": "Fevereiro",
+  "tema_mes": "Do medo ao Pastor",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "O Deus que resgata",
+  "leitura": "Sl 18.14-26",
+  "trechos": [
+   [
+    18,
+    14,
+    26
+   ]
+  ]
+ },
+ {
+  "data": "02-03",
+  "dia_do_ano": 34,
+  "mes": "Fevereiro",
+  "tema_mes": "Do medo ao Pastor",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "O Deus que resgata",
+  "leitura": "Sl 18.27-38",
+  "trechos": [
+   [
+    18,
+    27,
+    38
+   ]
+  ]
+ },
+ {
+  "data": "02-04",
+  "dia_do_ano": 35,
+  "mes": "Fevereiro",
+  "tema_mes": "Do medo ao Pastor",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "O Deus que resgata",
+  "leitura": "Sl 18.39-50",
+  "trechos": [
+   [
+    18,
+    39,
+    50
+   ]
+  ]
+ },
+ {
+  "data": "02-05",
+  "dia_do_ano": 36,
+  "mes": "Fevereiro",
+  "tema_mes": "Do medo ao Pastor",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "O Deus que resgata",
+  "leitura": "Sl 19.1-7",
+  "trechos": [
+   [
+    19,
+    1,
+    7
+   ]
+  ]
+ },
+ {
+  "data": "02-06",
+  "dia_do_ano": 37,
+  "mes": "Fevereiro",
+  "tema_mes": "Do medo ao Pastor",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "O Deus que resgata",
+  "leitura": "Sl 19.8-14",
+  "trechos": [
+   [
+    19,
+    8,
+    14
+   ]
+  ]
+ },
+ {
+  "data": "02-07",
+  "dia_do_ano": 38,
+  "mes": "Fevereiro",
+  "tema_mes": "Do medo ao Pastor",
+  "estacao": "Plantar",
+  "tipo": "selah",
+  "semana": 1,
+  "nome_semana": "O Deus que resgata",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "02-08",
+  "dia_do_ano": 39,
+  "mes": "Fevereiro",
+  "tema_mes": "Do medo ao Pastor",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Por que me desamparaste?",
+  "leitura": "Sl 20",
+  "trechos": [
+   [
+    20,
+    1,
+    9
+   ]
+  ]
+ },
+ {
+  "data": "02-09",
+  "dia_do_ano": 40,
+  "mes": "Fevereiro",
+  "tema_mes": "Do medo ao Pastor",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Por que me desamparaste?",
+  "leitura": "Sl 21.1-7",
+  "trechos": [
+   [
+    21,
+    1,
+    7
+   ]
+  ]
+ },
+ {
+  "data": "02-10",
+  "dia_do_ano": 41,
+  "mes": "Fevereiro",
+  "tema_mes": "Do medo ao Pastor",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Por que me desamparaste?",
+  "leitura": "Sl 21.8-13",
+  "trechos": [
+   [
+    21,
+    8,
+    13
+   ]
+  ]
+ },
+ {
+  "data": "02-11",
+  "dia_do_ano": 42,
+  "mes": "Fevereiro",
+  "tema_mes": "Do medo ao Pastor",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Por que me desamparaste?",
+  "leitura": "Sl 22.1-11",
+  "trechos": [
+   [
+    22,
+    1,
+    11
+   ]
+  ]
+ },
+ {
+  "data": "02-12",
+  "dia_do_ano": 43,
+  "mes": "Fevereiro",
+  "tema_mes": "Do medo ao Pastor",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Por que me desamparaste?",
+  "leitura": "Sl 22.12-21",
+  "trechos": [
+   [
+    22,
+    12,
+    21
+   ]
+  ]
+ },
+ {
+  "data": "02-13",
+  "dia_do_ano": 44,
+  "mes": "Fevereiro",
+  "tema_mes": "Do medo ao Pastor",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Por que me desamparaste?",
+  "leitura": "Sl 22.22-31",
+  "trechos": [
+   [
+    22,
+    22,
+    31
+   ]
+  ]
+ },
+ {
+  "data": "02-14",
+  "dia_do_ano": 45,
+  "mes": "Fevereiro",
+  "tema_mes": "Do medo ao Pastor",
+  "estacao": "Plantar",
+  "tipo": "selah",
+  "semana": 2,
+  "nome_semana": "Por que me desamparaste?",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "02-15",
+  "dia_do_ano": 46,
+  "mes": "Fevereiro",
+  "tema_mes": "Do medo ao Pastor",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "O Senhor é o meu pastor",
+  "leitura": "Sl 23",
+  "trechos": [
+   [
+    23,
+    1,
+    6
+   ]
+  ]
+ },
+ {
+  "data": "02-16",
+  "dia_do_ano": 47,
+  "mes": "Fevereiro",
+  "tema_mes": "Do medo ao Pastor",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "O Senhor é o meu pastor",
+  "leitura": "Sl 24",
+  "trechos": [
+   [
+    24,
+    1,
+    10
+   ]
+  ]
+ },
+ {
+  "data": "02-17",
+  "dia_do_ano": 48,
+  "mes": "Fevereiro",
+  "tema_mes": "Do medo ao Pastor",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "O Senhor é o meu pastor",
+  "leitura": "Sl 25.1-11",
+  "trechos": [
+   [
+    25,
+    1,
+    11
+   ]
+  ]
+ },
+ {
+  "data": "02-18",
+  "dia_do_ano": 49,
+  "mes": "Fevereiro",
+  "tema_mes": "Do medo ao Pastor",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "O Senhor é o meu pastor",
+  "leitura": "Sl 25.12-22",
+  "trechos": [
+   [
+    25,
+    12,
+    22
+   ]
+  ]
+ },
+ {
+  "data": "02-19",
+  "dia_do_ano": 50,
+  "mes": "Fevereiro",
+  "tema_mes": "Do medo ao Pastor",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "O Senhor é o meu pastor",
+  "leitura": "Sl 26.1-6",
+  "trechos": [
+   [
+    26,
+    1,
+    6
+   ]
+  ]
+ },
+ {
+  "data": "02-20",
+  "dia_do_ano": 51,
+  "mes": "Fevereiro",
+  "tema_mes": "Do medo ao Pastor",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "O Senhor é o meu pastor",
+  "leitura": "Sl 26.7-12",
+  "trechos": [
+   [
+    26,
+    7,
+    12
+   ]
+  ]
+ },
+ {
+  "data": "02-21",
+  "dia_do_ano": 52,
+  "mes": "Fevereiro",
+  "tema_mes": "Do medo ao Pastor",
+  "estacao": "Plantar",
+  "tipo": "selah",
+  "semana": 3,
+  "nome_semana": "O Senhor é o meu pastor",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "02-22",
+  "dia_do_ano": 53,
+  "mes": "Fevereiro",
+  "tema_mes": "Do medo ao Pastor",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "O choro dura uma noite",
+  "leitura": "Sl 27.1-7",
+  "trechos": [
+   [
+    27,
+    1,
+    7
+   ]
+  ]
+ },
+ {
+  "data": "02-23",
+  "dia_do_ano": 54,
+  "mes": "Fevereiro",
+  "tema_mes": "Do medo ao Pastor",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "O choro dura uma noite",
+  "leitura": "Sl 27.8-14",
+  "trechos": [
+   [
+    27,
+    8,
+    14
+   ]
+  ]
+ },
+ {
+  "data": "02-24",
+  "dia_do_ano": 55,
+  "mes": "Fevereiro",
+  "tema_mes": "Do medo ao Pastor",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "O choro dura uma noite",
+  "leitura": "Sl 28",
+  "trechos": [
+   [
+    28,
+    1,
+    9
+   ]
+  ]
+ },
+ {
+  "data": "02-25",
+  "dia_do_ano": 56,
+  "mes": "Fevereiro",
+  "tema_mes": "Do medo ao Pastor",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "O choro dura uma noite",
+  "leitura": "Sl 29",
+  "trechos": [
+   [
+    29,
+    1,
+    11
+   ]
+  ]
+ },
+ {
+  "data": "02-26",
+  "dia_do_ano": 57,
+  "mes": "Fevereiro",
+  "tema_mes": "Do medo ao Pastor",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "O choro dura uma noite",
+  "leitura": "Sl 30.1-6",
+  "trechos": [
+   [
+    30,
+    1,
+    6
+   ]
+  ]
+ },
+ {
+  "data": "02-27",
+  "dia_do_ano": 58,
+  "mes": "Fevereiro",
+  "tema_mes": "Do medo ao Pastor",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "O choro dura uma noite",
+  "leitura": "Sl 30.7-12",
+  "trechos": [
+   [
+    30,
+    7,
+    12
+   ]
+  ]
+ },
+ {
+  "data": "02-28",
+  "dia_do_ano": 59,
+  "mes": "Fevereiro",
+  "tema_mes": "Do medo ao Pastor",
+  "estacao": "Plantar",
+  "tipo": "selah",
+  "semana": 4,
+  "nome_semana": "O choro dura uma noite",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "02-29",
+  "dia_do_ano": null,
+  "mes": "Fevereiro",
+  "tema_mes": "Do medo ao Pastor",
+  "estacao": "Plantar",
+  "tipo": "selah_bonus",
+  "semana": null,
+  "nome_semana": "Selah bônus (ano bissexto)",
+  "leitura": "Sl 117",
+  "trechos": [
+   [
+    117,
+    1,
+    2
+   ]
+  ]
+ },
+ {
+  "data": "03-01",
+  "dia_do_ano": 60,
+  "mes": "Março",
+  "tema_mes": "Culpa e graça",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Feliz o perdoado",
+  "leitura": "Sl 31.1-8",
+  "trechos": [
+   [
+    31,
+    1,
+    8
+   ]
+  ]
+ },
+ {
+  "data": "03-02",
+  "dia_do_ano": 61,
+  "mes": "Março",
+  "tema_mes": "Culpa e graça",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Feliz o perdoado",
+  "leitura": "Sl 31.9-16",
+  "trechos": [
+   [
+    31,
+    9,
+    16
+   ]
+  ]
+ },
+ {
+  "data": "03-03",
+  "dia_do_ano": 62,
+  "mes": "Março",
+  "tema_mes": "Culpa e graça",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Feliz o perdoado",
+  "leitura": "Sl 31.17-24",
+  "trechos": [
+   [
+    31,
+    17,
+    24
+   ]
+  ]
+ },
+ {
+  "data": "03-04",
+  "dia_do_ano": 63,
+  "mes": "Março",
+  "tema_mes": "Culpa e graça",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Feliz o perdoado",
+  "leitura": "Sl 32",
+  "trechos": [
+   [
+    32,
+    1,
+    11
+   ]
+  ]
+ },
+ {
+  "data": "03-05",
+  "dia_do_ano": 64,
+  "mes": "Março",
+  "tema_mes": "Culpa e graça",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Feliz o perdoado",
+  "leitura": "Sl 33.1-11",
+  "trechos": [
+   [
+    33,
+    1,
+    11
+   ]
+  ]
+ },
+ {
+  "data": "03-06",
+  "dia_do_ano": 65,
+  "mes": "Março",
+  "tema_mes": "Culpa e graça",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Feliz o perdoado",
+  "leitura": "Sl 33.12-22",
+  "trechos": [
+   [
+    33,
+    12,
+    22
+   ]
+  ]
+ },
+ {
+  "data": "03-07",
+  "dia_do_ano": 66,
+  "mes": "Março",
+  "tema_mes": "Culpa e graça",
+  "estacao": "Plantar",
+  "tipo": "selah",
+  "semana": 1,
+  "nome_semana": "Feliz o perdoado",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "03-08",
+  "dia_do_ano": 67,
+  "mes": "Março",
+  "tema_mes": "Culpa e graça",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Provai e vede",
+  "leitura": "Sl 34.1-8",
+  "trechos": [
+   [
+    34,
+    1,
+    8
+   ]
+  ]
+ },
+ {
+  "data": "03-09",
+  "dia_do_ano": 68,
+  "mes": "Março",
+  "tema_mes": "Culpa e graça",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Provai e vede",
+  "leitura": "Sl 34.9-15",
+  "trechos": [
+   [
+    34,
+    9,
+    15
+   ]
+  ]
+ },
+ {
+  "data": "03-10",
+  "dia_do_ano": 69,
+  "mes": "Março",
+  "tema_mes": "Culpa e graça",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Provai e vede",
+  "leitura": "Sl 34.16-22",
+  "trechos": [
+   [
+    34,
+    16,
+    22
+   ]
+  ]
+ },
+ {
+  "data": "03-11",
+  "dia_do_ano": 70,
+  "mes": "Março",
+  "tema_mes": "Culpa e graça",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Provai e vede",
+  "leitura": "Sl 35.1-10",
+  "trechos": [
+   [
+    35,
+    1,
+    10
+   ]
+  ]
+ },
+ {
+  "data": "03-12",
+  "dia_do_ano": 71,
+  "mes": "Março",
+  "tema_mes": "Culpa e graça",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Provai e vede",
+  "leitura": "Sl 35.11-19",
+  "trechos": [
+   [
+    35,
+    11,
+    19
+   ]
+  ]
+ },
+ {
+  "data": "03-13",
+  "dia_do_ano": 72,
+  "mes": "Março",
+  "tema_mes": "Culpa e graça",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Provai e vede",
+  "leitura": "Sl 35.20-28",
+  "trechos": [
+   [
+    35,
+    20,
+    28
+   ]
+  ]
+ },
+ {
+  "data": "03-14",
+  "dia_do_ano": 73,
+  "mes": "Março",
+  "tema_mes": "Culpa e graça",
+  "estacao": "Plantar",
+  "tipo": "selah",
+  "semana": 2,
+  "nome_semana": "Provai e vede",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "03-15",
+  "dia_do_ano": 74,
+  "mes": "Março",
+  "tema_mes": "Culpa e graça",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Quando os maus prosperam",
+  "leitura": "Sl 36.1-6",
+  "trechos": [
+   [
+    36,
+    1,
+    6
+   ]
+  ]
+ },
+ {
+  "data": "03-16",
+  "dia_do_ano": 75,
+  "mes": "Março",
+  "tema_mes": "Culpa e graça",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Quando os maus prosperam",
+  "leitura": "Sl 36.7-12",
+  "trechos": [
+   [
+    36,
+    7,
+    12
+   ]
+  ]
+ },
+ {
+  "data": "03-17",
+  "dia_do_ano": 76,
+  "mes": "Março",
+  "tema_mes": "Culpa e graça",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Quando os maus prosperam",
+  "leitura": "Sl 37.1-10",
+  "trechos": [
+   [
+    37,
+    1,
+    10
+   ]
+  ]
+ },
+ {
+  "data": "03-18",
+  "dia_do_ano": 77,
+  "mes": "Março",
+  "tema_mes": "Culpa e graça",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Quando os maus prosperam",
+  "leitura": "Sl 37.11-20",
+  "trechos": [
+   [
+    37,
+    11,
+    20
+   ]
+  ]
+ },
+ {
+  "data": "03-19",
+  "dia_do_ano": 78,
+  "mes": "Março",
+  "tema_mes": "Culpa e graça",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Quando os maus prosperam",
+  "leitura": "Sl 37.21-30",
+  "trechos": [
+   [
+    37,
+    21,
+    30
+   ]
+  ]
+ },
+ {
+  "data": "03-20",
+  "dia_do_ano": 79,
+  "mes": "Março",
+  "tema_mes": "Culpa e graça",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Quando os maus prosperam",
+  "leitura": "Sl 37.31-40",
+  "trechos": [
+   [
+    37,
+    31,
+    40
+   ]
+  ]
+ },
+ {
+  "data": "03-21",
+  "dia_do_ano": 80,
+  "mes": "Março",
+  "tema_mes": "Culpa e graça",
+  "estacao": "Plantar",
+  "tipo": "selah",
+  "semana": 3,
+  "nome_semana": "Quando os maus prosperam",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "03-22",
+  "dia_do_ano": 81,
+  "mes": "Março",
+  "tema_mes": "Culpa e graça",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Esperei com paciência",
+  "leitura": "Sl 38.1-11",
+  "trechos": [
+   [
+    38,
+    1,
+    11
+   ]
+  ]
+ },
+ {
+  "data": "03-23",
+  "dia_do_ano": 82,
+  "mes": "Março",
+  "tema_mes": "Culpa e graça",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Esperei com paciência",
+  "leitura": "Sl 38.12-22",
+  "trechos": [
+   [
+    38,
+    12,
+    22
+   ]
+  ]
+ },
+ {
+  "data": "03-24",
+  "dia_do_ano": 83,
+  "mes": "Março",
+  "tema_mes": "Culpa e graça",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Esperei com paciência",
+  "leitura": "Sl 39.1-7",
+  "trechos": [
+   [
+    39,
+    1,
+    7
+   ]
+  ]
+ },
+ {
+  "data": "03-25",
+  "dia_do_ano": 84,
+  "mes": "Março",
+  "tema_mes": "Culpa e graça",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Esperei com paciência",
+  "leitura": "Sl 39.8-13",
+  "trechos": [
+   [
+    39,
+    8,
+    13
+   ]
+  ]
+ },
+ {
+  "data": "03-26",
+  "dia_do_ano": 85,
+  "mes": "Março",
+  "tema_mes": "Culpa e graça",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Esperei com paciência",
+  "leitura": "Sl 40.1-9",
+  "trechos": [
+   [
+    40,
+    1,
+    9
+   ]
+  ]
+ },
+ {
+  "data": "03-27",
+  "dia_do_ano": 86,
+  "mes": "Março",
+  "tema_mes": "Culpa e graça",
+  "estacao": "Plantar",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Esperei com paciência",
+  "leitura": "Sl 40.10-17",
+  "trechos": [
+   [
+    40,
+    10,
+    17
+   ]
+  ]
+ },
+ {
+  "data": "03-28",
+  "dia_do_ano": 87,
+  "mes": "Março",
+  "tema_mes": "Culpa e graça",
+  "estacao": "Plantar",
+  "tipo": "selah",
+  "semana": 4,
+  "nome_semana": "Esperei com paciência",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "03-29",
+  "dia_do_ano": 88,
+  "mes": "Março",
+  "tema_mes": "Culpa e graça",
+  "estacao": "Plantar",
+  "tipo": "colheita",
+  "semana": null,
+  "nome_semana": "Colheita de março",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "03-30",
+  "dia_do_ano": 89,
+  "mes": "Março",
+  "tema_mes": "Culpa e graça",
+  "estacao": "Plantar",
+  "tipo": "colheita",
+  "semana": null,
+  "nome_semana": "Colheita de março",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "03-31",
+  "dia_do_ano": 90,
+  "mes": "Março",
+  "tema_mes": "Culpa e graça",
+  "estacao": "Plantar",
+  "tipo": "colheita",
+  "semana": null,
+  "nome_semana": "Colheita de março",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "04-01",
+  "dia_do_ano": 91,
+  "mes": "Abril",
+  "tema_mes": "Alma abatida",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Por que estás abatida, ó minha alma?",
+  "leitura": "Sl 41.1-5",
+  "trechos": [
+   [
+    41,
+    1,
+    5
+   ]
+  ]
+ },
+ {
+  "data": "04-02",
+  "dia_do_ano": 92,
+  "mes": "Abril",
+  "tema_mes": "Alma abatida",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Por que estás abatida, ó minha alma?",
+  "leitura": "Sl 41.6-9",
+  "trechos": [
+   [
+    41,
+    6,
+    9
+   ]
+  ]
+ },
+ {
+  "data": "04-03",
+  "dia_do_ano": 93,
+  "mes": "Abril",
+  "tema_mes": "Alma abatida",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Por que estás abatida, ó minha alma?",
+  "leitura": "Sl 41.10-13",
+  "trechos": [
+   [
+    41,
+    10,
+    13
+   ]
+  ]
+ },
+ {
+  "data": "04-04",
+  "dia_do_ano": 94,
+  "mes": "Abril",
+  "tema_mes": "Alma abatida",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Por que estás abatida, ó minha alma?",
+  "leitura": "Sl 42.1-6",
+  "trechos": [
+   [
+    42,
+    1,
+    6
+   ]
+  ]
+ },
+ {
+  "data": "04-05",
+  "dia_do_ano": 95,
+  "mes": "Abril",
+  "tema_mes": "Alma abatida",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Por que estás abatida, ó minha alma?",
+  "leitura": "Sl 42.7-11",
+  "trechos": [
+   [
+    42,
+    7,
+    11
+   ]
+  ]
+ },
+ {
+  "data": "04-06",
+  "dia_do_ano": 96,
+  "mes": "Abril",
+  "tema_mes": "Alma abatida",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Por que estás abatida, ó minha alma?",
+  "leitura": "Sl 43",
+  "trechos": [
+   [
+    43,
+    1,
+    5
+   ]
+  ]
+ },
+ {
+  "data": "04-07",
+  "dia_do_ano": 97,
+  "mes": "Abril",
+  "tema_mes": "Alma abatida",
+  "estacao": "Atravessar o vale",
+  "tipo": "selah",
+  "semana": 1,
+  "nome_semana": "Por que estás abatida, ó minha alma?",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "04-08",
+  "dia_do_ano": 98,
+  "mes": "Abril",
+  "tema_mes": "Alma abatida",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Aquietai-vos",
+  "leitura": "Sl 44.1-13",
+  "trechos": [
+   [
+    44,
+    1,
+    13
+   ]
+  ]
+ },
+ {
+  "data": "04-09",
+  "dia_do_ano": 99,
+  "mes": "Abril",
+  "tema_mes": "Alma abatida",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Aquietai-vos",
+  "leitura": "Sl 44.14-26",
+  "trechos": [
+   [
+    44,
+    14,
+    26
+   ]
+  ]
+ },
+ {
+  "data": "04-10",
+  "dia_do_ano": 100,
+  "mes": "Abril",
+  "tema_mes": "Alma abatida",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Aquietai-vos",
+  "leitura": "Sl 45.1-9",
+  "trechos": [
+   [
+    45,
+    1,
+    9
+   ]
+  ]
+ },
+ {
+  "data": "04-11",
+  "dia_do_ano": 101,
+  "mes": "Abril",
+  "tema_mes": "Alma abatida",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Aquietai-vos",
+  "leitura": "Sl 45.10-17",
+  "trechos": [
+   [
+    45,
+    10,
+    17
+   ]
+  ]
+ },
+ {
+  "data": "04-12",
+  "dia_do_ano": 102,
+  "mes": "Abril",
+  "tema_mes": "Alma abatida",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Aquietai-vos",
+  "leitura": "Sl 46",
+  "trechos": [
+   [
+    46,
+    1,
+    11
+   ]
+  ]
+ },
+ {
+  "data": "04-13",
+  "dia_do_ano": 103,
+  "mes": "Abril",
+  "tema_mes": "Alma abatida",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Aquietai-vos",
+  "leitura": "Sl 47",
+  "trechos": [
+   [
+    47,
+    1,
+    9
+   ]
+  ]
+ },
+ {
+  "data": "04-14",
+  "dia_do_ano": 104,
+  "mes": "Abril",
+  "tema_mes": "Alma abatida",
+  "estacao": "Atravessar o vale",
+  "tipo": "selah",
+  "semana": 2,
+  "nome_semana": "Aquietai-vos",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "04-15",
+  "dia_do_ano": 105,
+  "mes": "Abril",
+  "tema_mes": "Alma abatida",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Falsas seguranças",
+  "leitura": "Sl 48.1-7",
+  "trechos": [
+   [
+    48,
+    1,
+    7
+   ]
+  ]
+ },
+ {
+  "data": "04-16",
+  "dia_do_ano": 106,
+  "mes": "Abril",
+  "tema_mes": "Alma abatida",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Falsas seguranças",
+  "leitura": "Sl 48.8-14",
+  "trechos": [
+   [
+    48,
+    8,
+    14
+   ]
+  ]
+ },
+ {
+  "data": "04-17",
+  "dia_do_ano": 107,
+  "mes": "Abril",
+  "tema_mes": "Alma abatida",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Falsas seguranças",
+  "leitura": "Sl 49.1-10",
+  "trechos": [
+   [
+    49,
+    1,
+    10
+   ]
+  ]
+ },
+ {
+  "data": "04-18",
+  "dia_do_ano": 108,
+  "mes": "Abril",
+  "tema_mes": "Alma abatida",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Falsas seguranças",
+  "leitura": "Sl 49.11-20",
+  "trechos": [
+   [
+    49,
+    11,
+    20
+   ]
+  ]
+ },
+ {
+  "data": "04-19",
+  "dia_do_ano": 109,
+  "mes": "Abril",
+  "tema_mes": "Alma abatida",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Falsas seguranças",
+  "leitura": "Sl 50.1-12",
+  "trechos": [
+   [
+    50,
+    1,
+    12
+   ]
+  ]
+ },
+ {
+  "data": "04-20",
+  "dia_do_ano": 110,
+  "mes": "Abril",
+  "tema_mes": "Alma abatida",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Falsas seguranças",
+  "leitura": "Sl 50.13-23",
+  "trechos": [
+   [
+    50,
+    13,
+    23
+   ]
+  ]
+ },
+ {
+  "data": "04-21",
+  "dia_do_ano": 111,
+  "mes": "Abril",
+  "tema_mes": "Alma abatida",
+  "estacao": "Atravessar o vale",
+  "tipo": "selah",
+  "semana": 3,
+  "nome_semana": "Falsas seguranças",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "04-22",
+  "dia_do_ano": 112,
+  "mes": "Abril",
+  "tema_mes": "Alma abatida",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Cria em mim um coração puro",
+  "leitura": "Sl 51.1-4",
+  "trechos": [
+   [
+    51,
+    1,
+    4
+   ]
+  ]
+ },
+ {
+  "data": "04-23",
+  "dia_do_ano": 113,
+  "mes": "Abril",
+  "tema_mes": "Alma abatida",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Cria em mim um coração puro",
+  "leitura": "Sl 51.5-7",
+  "trechos": [
+   [
+    51,
+    5,
+    7
+   ]
+  ]
+ },
+ {
+  "data": "04-24",
+  "dia_do_ano": 114,
+  "mes": "Abril",
+  "tema_mes": "Alma abatida",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Cria em mim um coração puro",
+  "leitura": "Sl 51.8-10",
+  "trechos": [
+   [
+    51,
+    8,
+    10
+   ]
+  ]
+ },
+ {
+  "data": "04-25",
+  "dia_do_ano": 115,
+  "mes": "Abril",
+  "tema_mes": "Alma abatida",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Cria em mim um coração puro",
+  "leitura": "Sl 51.11-13",
+  "trechos": [
+   [
+    51,
+    11,
+    13
+   ]
+  ]
+ },
+ {
+  "data": "04-26",
+  "dia_do_ano": 116,
+  "mes": "Abril",
+  "tema_mes": "Alma abatida",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Cria em mim um coração puro",
+  "leitura": "Sl 51.14-16",
+  "trechos": [
+   [
+    51,
+    14,
+    16
+   ]
+  ]
+ },
+ {
+  "data": "04-27",
+  "dia_do_ano": 117,
+  "mes": "Abril",
+  "tema_mes": "Alma abatida",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Cria em mim um coração puro",
+  "leitura": "Sl 51.17-19",
+  "trechos": [
+   [
+    51,
+    17,
+    19
+   ]
+  ]
+ },
+ {
+  "data": "04-28",
+  "dia_do_ano": 118,
+  "mes": "Abril",
+  "tema_mes": "Alma abatida",
+  "estacao": "Atravessar o vale",
+  "tipo": "selah",
+  "semana": 4,
+  "nome_semana": "Cria em mim um coração puro",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "04-29",
+  "dia_do_ano": 119,
+  "mes": "Abril",
+  "tema_mes": "Alma abatida",
+  "estacao": "Atravessar o vale",
+  "tipo": "colheita",
+  "semana": null,
+  "nome_semana": "Colheita de abril",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "04-30",
+  "dia_do_ano": 120,
+  "mes": "Abril",
+  "tema_mes": "Alma abatida",
+  "estacao": "Atravessar o vale",
+  "tipo": "colheita",
+  "semana": null,
+  "nome_semana": "Colheita de abril",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "05-01",
+  "dia_do_ano": 121,
+  "mes": "Maio",
+  "tema_mes": "Feridas e traições",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Traído por quem eu amava",
+  "leitura": "Sl 52",
+  "trechos": [
+   [
+    52,
+    1,
+    9
+   ]
+  ]
+ },
+ {
+  "data": "05-02",
+  "dia_do_ano": 122,
+  "mes": "Maio",
+  "tema_mes": "Feridas e traições",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Traído por quem eu amava",
+  "leitura": "Sl 53",
+  "trechos": [
+   [
+    53,
+    1,
+    6
+   ]
+  ]
+ },
+ {
+  "data": "05-03",
+  "dia_do_ano": 123,
+  "mes": "Maio",
+  "tema_mes": "Feridas e traições",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Traído por quem eu amava",
+  "leitura": "Sl 54",
+  "trechos": [
+   [
+    54,
+    1,
+    7
+   ]
+  ]
+ },
+ {
+  "data": "05-04",
+  "dia_do_ano": 124,
+  "mes": "Maio",
+  "tema_mes": "Feridas e traições",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Traído por quem eu amava",
+  "leitura": "Sl 55.1-8",
+  "trechos": [
+   [
+    55,
+    1,
+    8
+   ]
+  ]
+ },
+ {
+  "data": "05-05",
+  "dia_do_ano": 125,
+  "mes": "Maio",
+  "tema_mes": "Feridas e traições",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Traído por quem eu amava",
+  "leitura": "Sl 55.9-16",
+  "trechos": [
+   [
+    55,
+    9,
+    16
+   ]
+  ]
+ },
+ {
+  "data": "05-06",
+  "dia_do_ano": 126,
+  "mes": "Maio",
+  "tema_mes": "Feridas e traições",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Traído por quem eu amava",
+  "leitura": "Sl 55.17-23",
+  "trechos": [
+   [
+    55,
+    17,
+    23
+   ]
+  ]
+ },
+ {
+  "data": "05-07",
+  "dia_do_ano": 127,
+  "mes": "Maio",
+  "tema_mes": "Feridas e traições",
+  "estacao": "Atravessar o vale",
+  "tipo": "selah",
+  "semana": 1,
+  "nome_semana": "Traído por quem eu amava",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "05-08",
+  "dia_do_ano": 128,
+  "mes": "Maio",
+  "tema_mes": "Feridas e traições",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Quando eu tiver medo",
+  "leitura": "Sl 56.1-7",
+  "trechos": [
+   [
+    56,
+    1,
+    7
+   ]
+  ]
+ },
+ {
+  "data": "05-09",
+  "dia_do_ano": 129,
+  "mes": "Maio",
+  "tema_mes": "Feridas e traições",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Quando eu tiver medo",
+  "leitura": "Sl 56.8-13",
+  "trechos": [
+   [
+    56,
+    8,
+    13
+   ]
+  ]
+ },
+ {
+  "data": "05-10",
+  "dia_do_ano": 130,
+  "mes": "Maio",
+  "tema_mes": "Feridas e traições",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Quando eu tiver medo",
+  "leitura": "Sl 57",
+  "trechos": [
+   [
+    57,
+    1,
+    11
+   ]
+  ]
+ },
+ {
+  "data": "05-11",
+  "dia_do_ano": 131,
+  "mes": "Maio",
+  "tema_mes": "Feridas e traições",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Quando eu tiver medo",
+  "leitura": "Sl 58",
+  "trechos": [
+   [
+    58,
+    1,
+    11
+   ]
+  ]
+ },
+ {
+  "data": "05-12",
+  "dia_do_ano": 132,
+  "mes": "Maio",
+  "tema_mes": "Feridas e traições",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Quando eu tiver medo",
+  "leitura": "Sl 59.1-9",
+  "trechos": [
+   [
+    59,
+    1,
+    9
+   ]
+  ]
+ },
+ {
+  "data": "05-13",
+  "dia_do_ano": 133,
+  "mes": "Maio",
+  "tema_mes": "Feridas e traições",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Quando eu tiver medo",
+  "leitura": "Sl 59.10-17",
+  "trechos": [
+   [
+    59,
+    10,
+    17
+   ]
+  ]
+ },
+ {
+  "data": "05-14",
+  "dia_do_ano": 134,
+  "mes": "Maio",
+  "tema_mes": "Feridas e traições",
+  "estacao": "Atravessar o vale",
+  "tipo": "selah",
+  "semana": 2,
+  "nome_semana": "Quando eu tiver medo",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "05-15",
+  "dia_do_ano": 135,
+  "mes": "Maio",
+  "tema_mes": "Feridas e traições",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Só em Deus a minha alma descansa",
+  "leitura": "Sl 60",
+  "trechos": [
+   [
+    60,
+    1,
+    12
+   ]
+  ]
+ },
+ {
+  "data": "05-16",
+  "dia_do_ano": 136,
+  "mes": "Maio",
+  "tema_mes": "Feridas e traições",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Só em Deus a minha alma descansa",
+  "leitura": "Sl 61",
+  "trechos": [
+   [
+    61,
+    1,
+    8
+   ]
+  ]
+ },
+ {
+  "data": "05-17",
+  "dia_do_ano": 137,
+  "mes": "Maio",
+  "tema_mes": "Feridas e traições",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Só em Deus a minha alma descansa",
+  "leitura": "Sl 62",
+  "trechos": [
+   [
+    62,
+    1,
+    12
+   ]
+  ]
+ },
+ {
+  "data": "05-18",
+  "dia_do_ano": 138,
+  "mes": "Maio",
+  "tema_mes": "Feridas e traições",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Só em Deus a minha alma descansa",
+  "leitura": "Sl 63",
+  "trechos": [
+   [
+    63,
+    1,
+    11
+   ]
+  ]
+ },
+ {
+  "data": "05-19",
+  "dia_do_ano": 139,
+  "mes": "Maio",
+  "tema_mes": "Feridas e traições",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Só em Deus a minha alma descansa",
+  "leitura": "Sl 64",
+  "trechos": [
+   [
+    64,
+    1,
+    10
+   ]
+  ]
+ },
+ {
+  "data": "05-20",
+  "dia_do_ano": 140,
+  "mes": "Maio",
+  "tema_mes": "Feridas e traições",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Só em Deus a minha alma descansa",
+  "leitura": "Sl 65",
+  "trechos": [
+   [
+    65,
+    1,
+    13
+   ]
+  ]
+ },
+ {
+  "data": "05-21",
+  "dia_do_ano": 141,
+  "mes": "Maio",
+  "tema_mes": "Feridas e traições",
+  "estacao": "Atravessar o vale",
+  "tipo": "selah",
+  "semana": 3,
+  "nome_semana": "Só em Deus a minha alma descansa",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "05-22",
+  "dia_do_ano": 142,
+  "mes": "Maio",
+  "tema_mes": "Feridas e traições",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Ele carrega o meu fardo",
+  "leitura": "Sl 66.1-10",
+  "trechos": [
+   [
+    66,
+    1,
+    10
+   ]
+  ]
+ },
+ {
+  "data": "05-23",
+  "dia_do_ano": 143,
+  "mes": "Maio",
+  "tema_mes": "Feridas e traições",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Ele carrega o meu fardo",
+  "leitura": "Sl 66.11-20",
+  "trechos": [
+   [
+    66,
+    11,
+    20
+   ]
+  ]
+ },
+ {
+  "data": "05-24",
+  "dia_do_ano": 144,
+  "mes": "Maio",
+  "tema_mes": "Feridas e traições",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Ele carrega o meu fardo",
+  "leitura": "Sl 67",
+  "trechos": [
+   [
+    67,
+    1,
+    7
+   ]
+  ]
+ },
+ {
+  "data": "05-25",
+  "dia_do_ano": 145,
+  "mes": "Maio",
+  "tema_mes": "Feridas e traições",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Ele carrega o meu fardo",
+  "leitura": "Sl 68.1-12",
+  "trechos": [
+   [
+    68,
+    1,
+    12
+   ]
+  ]
+ },
+ {
+  "data": "05-26",
+  "dia_do_ano": 146,
+  "mes": "Maio",
+  "tema_mes": "Feridas e traições",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Ele carrega o meu fardo",
+  "leitura": "Sl 68.13-24",
+  "trechos": [
+   [
+    68,
+    13,
+    24
+   ]
+  ]
+ },
+ {
+  "data": "05-27",
+  "dia_do_ano": 147,
+  "mes": "Maio",
+  "tema_mes": "Feridas e traições",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Ele carrega o meu fardo",
+  "leitura": "Sl 68.25-35",
+  "trechos": [
+   [
+    68,
+    25,
+    35
+   ]
+  ]
+ },
+ {
+  "data": "05-28",
+  "dia_do_ano": 148,
+  "mes": "Maio",
+  "tema_mes": "Feridas e traições",
+  "estacao": "Atravessar o vale",
+  "tipo": "selah",
+  "semana": 4,
+  "nome_semana": "Ele carrega o meu fardo",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "05-29",
+  "dia_do_ano": 149,
+  "mes": "Maio",
+  "tema_mes": "Feridas e traições",
+  "estacao": "Atravessar o vale",
+  "tipo": "colheita",
+  "semana": null,
+  "nome_semana": "Colheita de maio",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "05-30",
+  "dia_do_ano": 150,
+  "mes": "Maio",
+  "tema_mes": "Feridas e traições",
+  "estacao": "Atravessar o vale",
+  "tipo": "colheita",
+  "semana": null,
+  "nome_semana": "Colheita de maio",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "05-31",
+  "dia_do_ano": 151,
+  "mes": "Maio",
+  "tema_mes": "Feridas e traições",
+  "estacao": "Atravessar o vale",
+  "tipo": "colheita",
+  "semana": null,
+  "nome_semana": "Colheita de maio",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "06-01",
+  "dia_do_ano": 152,
+  "mes": "Junho",
+  "tema_mes": "O espelho do coração",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Afundando na lama",
+  "leitura": "Sl 69.1-8",
+  "trechos": [
+   [
+    69,
+    1,
+    8
+   ]
+  ]
+ },
+ {
+  "data": "06-02",
+  "dia_do_ano": 153,
+  "mes": "Junho",
+  "tema_mes": "O espelho do coração",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Afundando na lama",
+  "leitura": "Sl 69.9-15",
+  "trechos": [
+   [
+    69,
+    9,
+    15
+   ]
+  ]
+ },
+ {
+  "data": "06-03",
+  "dia_do_ano": 154,
+  "mes": "Junho",
+  "tema_mes": "O espelho do coração",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Afundando na lama",
+  "leitura": "Sl 69.16-22",
+  "trechos": [
+   [
+    69,
+    16,
+    22
+   ]
+  ]
+ },
+ {
+  "data": "06-04",
+  "dia_do_ano": 155,
+  "mes": "Junho",
+  "tema_mes": "O espelho do coração",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Afundando na lama",
+  "leitura": "Sl 69.23-29",
+  "trechos": [
+   [
+    69,
+    23,
+    29
+   ]
+  ]
+ },
+ {
+  "data": "06-05",
+  "dia_do_ano": 156,
+  "mes": "Junho",
+  "tema_mes": "O espelho do coração",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Afundando na lama",
+  "leitura": "Sl 69.30-36",
+  "trechos": [
+   [
+    69,
+    30,
+    36
+   ]
+  ]
+ },
+ {
+  "data": "06-06",
+  "dia_do_ano": 157,
+  "mes": "Junho",
+  "tema_mes": "O espelho do coração",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Afundando na lama",
+  "leitura": "Sl 70",
+  "trechos": [
+   [
+    70,
+    1,
+    5
+   ]
+  ]
+ },
+ {
+  "data": "06-07",
+  "dia_do_ano": 158,
+  "mes": "Junho",
+  "tema_mes": "O espelho do coração",
+  "estacao": "Atravessar o vale",
+  "tipo": "selah",
+  "semana": 1,
+  "nome_semana": "Afundando na lama",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "06-08",
+  "dia_do_ano": 159,
+  "mes": "Junho",
+  "tema_mes": "O espelho do coração",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Não me desampares na velhice",
+  "leitura": "Sl 71.1-8",
+  "trechos": [
+   [
+    71,
+    1,
+    8
+   ]
+  ]
+ },
+ {
+  "data": "06-09",
+  "dia_do_ano": 160,
+  "mes": "Junho",
+  "tema_mes": "O espelho do coração",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Não me desampares na velhice",
+  "leitura": "Sl 71.9-16",
+  "trechos": [
+   [
+    71,
+    9,
+    16
+   ]
+  ]
+ },
+ {
+  "data": "06-10",
+  "dia_do_ano": 161,
+  "mes": "Junho",
+  "tema_mes": "O espelho do coração",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Não me desampares na velhice",
+  "leitura": "Sl 71.17-24",
+  "trechos": [
+   [
+    71,
+    17,
+    24
+   ]
+  ]
+ },
+ {
+  "data": "06-11",
+  "dia_do_ano": 162,
+  "mes": "Junho",
+  "tema_mes": "O espelho do coração",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Não me desampares na velhice",
+  "leitura": "Sl 72.1-7",
+  "trechos": [
+   [
+    72,
+    1,
+    7
+   ]
+  ]
+ },
+ {
+  "data": "06-12",
+  "dia_do_ano": 163,
+  "mes": "Junho",
+  "tema_mes": "O espelho do coração",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Não me desampares na velhice",
+  "leitura": "Sl 72.8-14",
+  "trechos": [
+   [
+    72,
+    8,
+    14
+   ]
+  ]
+ },
+ {
+  "data": "06-13",
+  "dia_do_ano": 164,
+  "mes": "Junho",
+  "tema_mes": "O espelho do coração",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Não me desampares na velhice",
+  "leitura": "Sl 72.15-20",
+  "trechos": [
+   [
+    72,
+    15,
+    20
+   ]
+  ]
+ },
+ {
+  "data": "06-14",
+  "dia_do_ano": 165,
+  "mes": "Junho",
+  "tema_mes": "O espelho do coração",
+  "estacao": "Atravessar o vale",
+  "tipo": "selah",
+  "semana": 2,
+  "nome_semana": "Não me desampares na velhice",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "06-15",
+  "dia_do_ano": 166,
+  "mes": "Junho",
+  "tema_mes": "O espelho do coração",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Quase escorreguei",
+  "leitura": "Sl 73.1-5",
+  "trechos": [
+   [
+    73,
+    1,
+    5
+   ]
+  ]
+ },
+ {
+  "data": "06-16",
+  "dia_do_ano": 167,
+  "mes": "Junho",
+  "tema_mes": "O espelho do coração",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Quase escorreguei",
+  "leitura": "Sl 73.6-10",
+  "trechos": [
+   [
+    73,
+    6,
+    10
+   ]
+  ]
+ },
+ {
+  "data": "06-17",
+  "dia_do_ano": 168,
+  "mes": "Junho",
+  "tema_mes": "O espelho do coração",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Quase escorreguei",
+  "leitura": "Sl 73.11-15",
+  "trechos": [
+   [
+    73,
+    11,
+    15
+   ]
+  ]
+ },
+ {
+  "data": "06-18",
+  "dia_do_ano": 169,
+  "mes": "Junho",
+  "tema_mes": "O espelho do coração",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Quase escorreguei",
+  "leitura": "Sl 73.16-20",
+  "trechos": [
+   [
+    73,
+    16,
+    20
+   ]
+  ]
+ },
+ {
+  "data": "06-19",
+  "dia_do_ano": 170,
+  "mes": "Junho",
+  "tema_mes": "O espelho do coração",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Quase escorreguei",
+  "leitura": "Sl 73.21-24",
+  "trechos": [
+   [
+    73,
+    21,
+    24
+   ]
+  ]
+ },
+ {
+  "data": "06-20",
+  "dia_do_ano": 171,
+  "mes": "Junho",
+  "tema_mes": "O espelho do coração",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Quase escorreguei",
+  "leitura": "Sl 73.25-28",
+  "trechos": [
+   [
+    73,
+    25,
+    28
+   ]
+  ]
+ },
+ {
+  "data": "06-21",
+  "dia_do_ano": 172,
+  "mes": "Junho",
+  "tema_mes": "O espelho do coração",
+  "estacao": "Atravessar o vale",
+  "tipo": "selah",
+  "semana": 3,
+  "nome_semana": "Quase escorreguei",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "06-22",
+  "dia_do_ano": 173,
+  "mes": "Junho",
+  "tema_mes": "O espelho do coração",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Lembrar para não desistir",
+  "leitura": "Sl 74.1-12",
+  "trechos": [
+   [
+    74,
+    1,
+    12
+   ]
+  ]
+ },
+ {
+  "data": "06-23",
+  "dia_do_ano": 174,
+  "mes": "Junho",
+  "tema_mes": "O espelho do coração",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Lembrar para não desistir",
+  "leitura": "Sl 74.13-23",
+  "trechos": [
+   [
+    74,
+    13,
+    23
+   ]
+  ]
+ },
+ {
+  "data": "06-24",
+  "dia_do_ano": 175,
+  "mes": "Junho",
+  "tema_mes": "O espelho do coração",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Lembrar para não desistir",
+  "leitura": "Sl 75",
+  "trechos": [
+   [
+    75,
+    1,
+    10
+   ]
+  ]
+ },
+ {
+  "data": "06-25",
+  "dia_do_ano": 176,
+  "mes": "Junho",
+  "tema_mes": "O espelho do coração",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Lembrar para não desistir",
+  "leitura": "Sl 76",
+  "trechos": [
+   [
+    76,
+    1,
+    12
+   ]
+  ]
+ },
+ {
+  "data": "06-26",
+  "dia_do_ano": 177,
+  "mes": "Junho",
+  "tema_mes": "O espelho do coração",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Lembrar para não desistir",
+  "leitura": "Sl 77.1-10",
+  "trechos": [
+   [
+    77,
+    1,
+    10
+   ]
+  ]
+ },
+ {
+  "data": "06-27",
+  "dia_do_ano": 178,
+  "mes": "Junho",
+  "tema_mes": "O espelho do coração",
+  "estacao": "Atravessar o vale",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Lembrar para não desistir",
+  "leitura": "Sl 77.11-20",
+  "trechos": [
+   [
+    77,
+    11,
+    20
+   ]
+  ]
+ },
+ {
+  "data": "06-28",
+  "dia_do_ano": 179,
+  "mes": "Junho",
+  "tema_mes": "O espelho do coração",
+  "estacao": "Atravessar o vale",
+  "tipo": "selah",
+  "semana": 4,
+  "nome_semana": "Lembrar para não desistir",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "06-29",
+  "dia_do_ano": 180,
+  "mes": "Junho",
+  "tema_mes": "O espelho do coração",
+  "estacao": "Atravessar o vale",
+  "tipo": "colheita",
+  "semana": null,
+  "nome_semana": "Colheita de junho",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "06-30",
+  "dia_do_ano": 181,
+  "mes": "Junho",
+  "tema_mes": "O espelho do coração",
+  "estacao": "Atravessar o vale",
+  "tipo": "colheita",
+  "semana": null,
+  "nome_semana": "Colheita de junho",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "07-01",
+  "dia_do_ano": 182,
+  "mes": "Julho",
+  "tema_mes": "Noite escura da fé",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Contar à próxima geração",
+  "leitura": "Sl 78.1-12",
+  "trechos": [
+   [
+    78,
+    1,
+    12
+   ]
+  ]
+ },
+ {
+  "data": "07-02",
+  "dia_do_ano": 183,
+  "mes": "Julho",
+  "tema_mes": "Noite escura da fé",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Contar à próxima geração",
+  "leitura": "Sl 78.13-24",
+  "trechos": [
+   [
+    78,
+    13,
+    24
+   ]
+  ]
+ },
+ {
+  "data": "07-03",
+  "dia_do_ano": 184,
+  "mes": "Julho",
+  "tema_mes": "Noite escura da fé",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Contar à próxima geração",
+  "leitura": "Sl 78.25-36",
+  "trechos": [
+   [
+    78,
+    25,
+    36
+   ]
+  ]
+ },
+ {
+  "data": "07-04",
+  "dia_do_ano": 185,
+  "mes": "Julho",
+  "tema_mes": "Noite escura da fé",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Contar à próxima geração",
+  "leitura": "Sl 78.37-48",
+  "trechos": [
+   [
+    78,
+    37,
+    48
+   ]
+  ]
+ },
+ {
+  "data": "07-05",
+  "dia_do_ano": 186,
+  "mes": "Julho",
+  "tema_mes": "Noite escura da fé",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Contar à próxima geração",
+  "leitura": "Sl 78.49-60",
+  "trechos": [
+   [
+    78,
+    49,
+    60
+   ]
+  ]
+ },
+ {
+  "data": "07-06",
+  "dia_do_ano": 187,
+  "mes": "Julho",
+  "tema_mes": "Noite escura da fé",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Contar à próxima geração",
+  "leitura": "Sl 78.61-72",
+  "trechos": [
+   [
+    78,
+    61,
+    72
+   ]
+  ]
+ },
+ {
+  "data": "07-07",
+  "dia_do_ano": 188,
+  "mes": "Julho",
+  "tema_mes": "Noite escura da fé",
+  "estacao": "Do vale ao trono",
+  "tipo": "selah",
+  "semana": 1,
+  "nome_semana": "Contar à próxima geração",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "07-08",
+  "dia_do_ano": 189,
+  "mes": "Julho",
+  "tema_mes": "Noite escura da fé",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Restaura-nos, ó Deus",
+  "leitura": "Sl 79",
+  "trechos": [
+   [
+    79,
+    1,
+    13
+   ]
+  ]
+ },
+ {
+  "data": "07-09",
+  "dia_do_ano": 190,
+  "mes": "Julho",
+  "tema_mes": "Noite escura da fé",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Restaura-nos, ó Deus",
+  "leitura": "Sl 80.1-10",
+  "trechos": [
+   [
+    80,
+    1,
+    10
+   ]
+  ]
+ },
+ {
+  "data": "07-10",
+  "dia_do_ano": 191,
+  "mes": "Julho",
+  "tema_mes": "Noite escura da fé",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Restaura-nos, ó Deus",
+  "leitura": "Sl 80.11-19",
+  "trechos": [
+   [
+    80,
+    11,
+    19
+   ]
+  ]
+ },
+ {
+  "data": "07-11",
+  "dia_do_ano": 192,
+  "mes": "Julho",
+  "tema_mes": "Noite escura da fé",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Restaura-nos, ó Deus",
+  "leitura": "Sl 81",
+  "trechos": [
+   [
+    81,
+    1,
+    16
+   ]
+  ]
+ },
+ {
+  "data": "07-12",
+  "dia_do_ano": 193,
+  "mes": "Julho",
+  "tema_mes": "Noite escura da fé",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Restaura-nos, ó Deus",
+  "leitura": "Sl 82",
+  "trechos": [
+   [
+    82,
+    1,
+    8
+   ]
+  ]
+ },
+ {
+  "data": "07-13",
+  "dia_do_ano": 194,
+  "mes": "Julho",
+  "tema_mes": "Noite escura da fé",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Restaura-nos, ó Deus",
+  "leitura": "Sl 83",
+  "trechos": [
+   [
+    83,
+    1,
+    18
+   ]
+  ]
+ },
+ {
+  "data": "07-14",
+  "dia_do_ano": 195,
+  "mes": "Julho",
+  "tema_mes": "Noite escura da fé",
+  "estacao": "Do vale ao trono",
+  "tipo": "selah",
+  "semana": 2,
+  "nome_semana": "Restaura-nos, ó Deus",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "07-15",
+  "dia_do_ano": 196,
+  "mes": "Julho",
+  "tema_mes": "Noite escura da fé",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Saudade da casa de Deus",
+  "leitura": "Sl 84",
+  "trechos": [
+   [
+    84,
+    1,
+    12
+   ]
+  ]
+ },
+ {
+  "data": "07-16",
+  "dia_do_ano": 197,
+  "mes": "Julho",
+  "tema_mes": "Noite escura da fé",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Saudade da casa de Deus",
+  "leitura": "Sl 85.1-7",
+  "trechos": [
+   [
+    85,
+    1,
+    7
+   ]
+  ]
+ },
+ {
+  "data": "07-17",
+  "dia_do_ano": 198,
+  "mes": "Julho",
+  "tema_mes": "Noite escura da fé",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Saudade da casa de Deus",
+  "leitura": "Sl 85.8-13",
+  "trechos": [
+   [
+    85,
+    8,
+    13
+   ]
+  ]
+ },
+ {
+  "data": "07-18",
+  "dia_do_ano": 199,
+  "mes": "Julho",
+  "tema_mes": "Noite escura da fé",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Saudade da casa de Deus",
+  "leitura": "Sl 86.1-9",
+  "trechos": [
+   [
+    86,
+    1,
+    9
+   ]
+  ]
+ },
+ {
+  "data": "07-19",
+  "dia_do_ano": 200,
+  "mes": "Julho",
+  "tema_mes": "Noite escura da fé",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Saudade da casa de Deus",
+  "leitura": "Sl 86.10-17",
+  "trechos": [
+   [
+    86,
+    10,
+    17
+   ]
+  ]
+ },
+ {
+  "data": "07-20",
+  "dia_do_ano": 201,
+  "mes": "Julho",
+  "tema_mes": "Noite escura da fé",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Saudade da casa de Deus",
+  "leitura": "Sl 87",
+  "trechos": [
+   [
+    87,
+    1,
+    7
+   ]
+  ]
+ },
+ {
+  "data": "07-21",
+  "dia_do_ano": 202,
+  "mes": "Julho",
+  "tema_mes": "Noite escura da fé",
+  "estacao": "Do vale ao trono",
+  "tipo": "selah",
+  "semana": 3,
+  "nome_semana": "Saudade da casa de Deus",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "07-22",
+  "dia_do_ano": 203,
+  "mes": "Julho",
+  "tema_mes": "Noite escura da fé",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Quando a promessa parece quebrada",
+  "leitura": "Sl 88.1-9",
+  "trechos": [
+   [
+    88,
+    1,
+    9
+   ]
+  ]
+ },
+ {
+  "data": "07-23",
+  "dia_do_ano": 204,
+  "mes": "Julho",
+  "tema_mes": "Noite escura da fé",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Quando a promessa parece quebrada",
+  "leitura": "Sl 88.10-18",
+  "trechos": [
+   [
+    88,
+    10,
+    18
+   ]
+  ]
+ },
+ {
+  "data": "07-24",
+  "dia_do_ano": 205,
+  "mes": "Julho",
+  "tema_mes": "Noite escura da fé",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Quando a promessa parece quebrada",
+  "leitura": "Sl 89.1-13",
+  "trechos": [
+   [
+    89,
+    1,
+    13
+   ]
+  ]
+ },
+ {
+  "data": "07-25",
+  "dia_do_ano": 206,
+  "mes": "Julho",
+  "tema_mes": "Noite escura da fé",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Quando a promessa parece quebrada",
+  "leitura": "Sl 89.14-26",
+  "trechos": [
+   [
+    89,
+    14,
+    26
+   ]
+  ]
+ },
+ {
+  "data": "07-26",
+  "dia_do_ano": 207,
+  "mes": "Julho",
+  "tema_mes": "Noite escura da fé",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Quando a promessa parece quebrada",
+  "leitura": "Sl 89.27-39",
+  "trechos": [
+   [
+    89,
+    27,
+    39
+   ]
+  ]
+ },
+ {
+  "data": "07-27",
+  "dia_do_ano": 208,
+  "mes": "Julho",
+  "tema_mes": "Noite escura da fé",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Quando a promessa parece quebrada",
+  "leitura": "Sl 89.40-52",
+  "trechos": [
+   [
+    89,
+    40,
+    52
+   ]
+  ]
+ },
+ {
+  "data": "07-28",
+  "dia_do_ano": 209,
+  "mes": "Julho",
+  "tema_mes": "Noite escura da fé",
+  "estacao": "Do vale ao trono",
+  "tipo": "selah",
+  "semana": 4,
+  "nome_semana": "Quando a promessa parece quebrada",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "07-29",
+  "dia_do_ano": 210,
+  "mes": "Julho",
+  "tema_mes": "Noite escura da fé",
+  "estacao": "Do vale ao trono",
+  "tipo": "colheita",
+  "semana": null,
+  "nome_semana": "Colheita de julho",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "07-30",
+  "dia_do_ano": 211,
+  "mes": "Julho",
+  "tema_mes": "Noite escura da fé",
+  "estacao": "Do vale ao trono",
+  "tipo": "colheita",
+  "semana": null,
+  "nome_semana": "Colheita de julho",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "07-31",
+  "dia_do_ano": 212,
+  "mes": "Julho",
+  "tema_mes": "Noite escura da fé",
+  "estacao": "Do vale ao trono",
+  "tipo": "colheita",
+  "semana": null,
+  "nome_semana": "Colheita de julho",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "08-01",
+  "dia_do_ano": 213,
+  "mes": "Agosto",
+  "tema_mes": "O Senhor reina",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Ensina-nos a contar os nossos dias",
+  "leitura": "Sl 90.1-9",
+  "trechos": [
+   [
+    90,
+    1,
+    9
+   ]
+  ]
+ },
+ {
+  "data": "08-02",
+  "dia_do_ano": 214,
+  "mes": "Agosto",
+  "tema_mes": "O Senhor reina",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Ensina-nos a contar os nossos dias",
+  "leitura": "Sl 90.10-17",
+  "trechos": [
+   [
+    90,
+    10,
+    17
+   ]
+  ]
+ },
+ {
+  "data": "08-03",
+  "dia_do_ano": 215,
+  "mes": "Agosto",
+  "tema_mes": "O Senhor reina",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Ensina-nos a contar os nossos dias",
+  "leitura": "Sl 91.1-8",
+  "trechos": [
+   [
+    91,
+    1,
+    8
+   ]
+  ]
+ },
+ {
+  "data": "08-04",
+  "dia_do_ano": 216,
+  "mes": "Agosto",
+  "tema_mes": "O Senhor reina",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Ensina-nos a contar os nossos dias",
+  "leitura": "Sl 91.9-16",
+  "trechos": [
+   [
+    91,
+    9,
+    16
+   ]
+  ]
+ },
+ {
+  "data": "08-05",
+  "dia_do_ano": 217,
+  "mes": "Agosto",
+  "tema_mes": "O Senhor reina",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Ensina-nos a contar os nossos dias",
+  "leitura": "Sl 92.1-8",
+  "trechos": [
+   [
+    92,
+    1,
+    8
+   ]
+  ]
+ },
+ {
+  "data": "08-06",
+  "dia_do_ano": 218,
+  "mes": "Agosto",
+  "tema_mes": "O Senhor reina",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Ensina-nos a contar os nossos dias",
+  "leitura": "Sl 92.9-15",
+  "trechos": [
+   [
+    92,
+    9,
+    15
+   ]
+  ]
+ },
+ {
+  "data": "08-07",
+  "dia_do_ano": 219,
+  "mes": "Agosto",
+  "tema_mes": "O Senhor reina",
+  "estacao": "Do vale ao trono",
+  "tipo": "selah",
+  "semana": 1,
+  "nome_semana": "Ensina-nos a contar os nossos dias",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "08-08",
+  "dia_do_ano": 220,
+  "mes": "Agosto",
+  "tema_mes": "O Senhor reina",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "O Senhor reina",
+  "leitura": "Sl 93",
+  "trechos": [
+   [
+    93,
+    1,
+    5
+   ]
+  ]
+ },
+ {
+  "data": "08-09",
+  "dia_do_ano": 221,
+  "mes": "Agosto",
+  "tema_mes": "O Senhor reina",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "O Senhor reina",
+  "leitura": "Sl 94.1-12",
+  "trechos": [
+   [
+    94,
+    1,
+    12
+   ]
+  ]
+ },
+ {
+  "data": "08-10",
+  "dia_do_ano": 222,
+  "mes": "Agosto",
+  "tema_mes": "O Senhor reina",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "O Senhor reina",
+  "leitura": "Sl 94.13-23",
+  "trechos": [
+   [
+    94,
+    13,
+    23
+   ]
+  ]
+ },
+ {
+  "data": "08-11",
+  "dia_do_ano": 223,
+  "mes": "Agosto",
+  "tema_mes": "O Senhor reina",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "O Senhor reina",
+  "leitura": "Sl 95",
+  "trechos": [
+   [
+    95,
+    1,
+    11
+   ]
+  ]
+ },
+ {
+  "data": "08-12",
+  "dia_do_ano": 224,
+  "mes": "Agosto",
+  "tema_mes": "O Senhor reina",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "O Senhor reina",
+  "leitura": "Sl 96",
+  "trechos": [
+   [
+    96,
+    1,
+    13
+   ]
+  ]
+ },
+ {
+  "data": "08-13",
+  "dia_do_ano": 225,
+  "mes": "Agosto",
+  "tema_mes": "O Senhor reina",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "O Senhor reina",
+  "leitura": "Sl 97",
+  "trechos": [
+   [
+    97,
+    1,
+    12
+   ]
+  ]
+ },
+ {
+  "data": "08-14",
+  "dia_do_ano": 226,
+  "mes": "Agosto",
+  "tema_mes": "O Senhor reina",
+  "estacao": "Do vale ao trono",
+  "tipo": "selah",
+  "semana": 2,
+  "nome_semana": "O Senhor reina",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "08-15",
+  "dia_do_ano": 227,
+  "mes": "Agosto",
+  "tema_mes": "O Senhor reina",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Cântico novo no deserto",
+  "leitura": "Sl 98",
+  "trechos": [
+   [
+    98,
+    1,
+    9
+   ]
+  ]
+ },
+ {
+  "data": "08-16",
+  "dia_do_ano": 228,
+  "mes": "Agosto",
+  "tema_mes": "O Senhor reina",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Cântico novo no deserto",
+  "leitura": "Sl 99",
+  "trechos": [
+   [
+    99,
+    1,
+    9
+   ]
+  ]
+ },
+ {
+  "data": "08-17",
+  "dia_do_ano": 229,
+  "mes": "Agosto",
+  "tema_mes": "O Senhor reina",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Cântico novo no deserto",
+  "leitura": "Sl 100",
+  "trechos": [
+   [
+    100,
+    1,
+    5
+   ]
+  ]
+ },
+ {
+  "data": "08-18",
+  "dia_do_ano": 230,
+  "mes": "Agosto",
+  "tema_mes": "O Senhor reina",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Cântico novo no deserto",
+  "leitura": "Sl 101",
+  "trechos": [
+   [
+    101,
+    1,
+    8
+   ]
+  ]
+ },
+ {
+  "data": "08-19",
+  "dia_do_ano": 231,
+  "mes": "Agosto",
+  "tema_mes": "O Senhor reina",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Cântico novo no deserto",
+  "leitura": "Sl 102.1-14",
+  "trechos": [
+   [
+    102,
+    1,
+    14
+   ]
+  ]
+ },
+ {
+  "data": "08-20",
+  "dia_do_ano": 232,
+  "mes": "Agosto",
+  "tema_mes": "O Senhor reina",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Cântico novo no deserto",
+  "leitura": "Sl 102.15-28",
+  "trechos": [
+   [
+    102,
+    15,
+    28
+   ]
+  ]
+ },
+ {
+  "data": "08-21",
+  "dia_do_ano": 233,
+  "mes": "Agosto",
+  "tema_mes": "O Senhor reina",
+  "estacao": "Do vale ao trono",
+  "tipo": "selah",
+  "semana": 3,
+  "nome_semana": "Cântico novo no deserto",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "08-22",
+  "dia_do_ano": 234,
+  "mes": "Agosto",
+  "tema_mes": "O Senhor reina",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Bendize, ó minha alma",
+  "leitura": "Sl 103.1-11",
+  "trechos": [
+   [
+    103,
+    1,
+    11
+   ]
+  ]
+ },
+ {
+  "data": "08-23",
+  "dia_do_ano": 235,
+  "mes": "Agosto",
+  "tema_mes": "O Senhor reina",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Bendize, ó minha alma",
+  "leitura": "Sl 103.12-22",
+  "trechos": [
+   [
+    103,
+    12,
+    22
+   ]
+  ]
+ },
+ {
+  "data": "08-24",
+  "dia_do_ano": 236,
+  "mes": "Agosto",
+  "tema_mes": "O Senhor reina",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Bendize, ó minha alma",
+  "leitura": "Sl 104.1-9",
+  "trechos": [
+   [
+    104,
+    1,
+    9
+   ]
+  ]
+ },
+ {
+  "data": "08-25",
+  "dia_do_ano": 237,
+  "mes": "Agosto",
+  "tema_mes": "O Senhor reina",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Bendize, ó minha alma",
+  "leitura": "Sl 104.10-18",
+  "trechos": [
+   [
+    104,
+    10,
+    18
+   ]
+  ]
+ },
+ {
+  "data": "08-26",
+  "dia_do_ano": 238,
+  "mes": "Agosto",
+  "tema_mes": "O Senhor reina",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Bendize, ó minha alma",
+  "leitura": "Sl 104.19-27",
+  "trechos": [
+   [
+    104,
+    19,
+    27
+   ]
+  ]
+ },
+ {
+  "data": "08-27",
+  "dia_do_ano": 239,
+  "mes": "Agosto",
+  "tema_mes": "O Senhor reina",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Bendize, ó minha alma",
+  "leitura": "Sl 104.28-35",
+  "trechos": [
+   [
+    104,
+    28,
+    35
+   ]
+  ]
+ },
+ {
+  "data": "08-28",
+  "dia_do_ano": 240,
+  "mes": "Agosto",
+  "tema_mes": "O Senhor reina",
+  "estacao": "Do vale ao trono",
+  "tipo": "selah",
+  "semana": 4,
+  "nome_semana": "Bendize, ó minha alma",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "08-29",
+  "dia_do_ano": 241,
+  "mes": "Agosto",
+  "tema_mes": "O Senhor reina",
+  "estacao": "Do vale ao trono",
+  "tipo": "colheita",
+  "semana": null,
+  "nome_semana": "Colheita de agosto",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "08-30",
+  "dia_do_ano": 242,
+  "mes": "Agosto",
+  "tema_mes": "O Senhor reina",
+  "estacao": "Do vale ao trono",
+  "tipo": "colheita",
+  "semana": null,
+  "nome_semana": "Colheita de agosto",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "08-31",
+  "dia_do_ano": 243,
+  "mes": "Agosto",
+  "tema_mes": "O Senhor reina",
+  "estacao": "Do vale ao trono",
+  "tipo": "colheita",
+  "semana": null,
+  "nome_semana": "Colheita de agosto",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "09-01",
+  "dia_do_ano": 244,
+  "mes": "Setembro",
+  "tema_mes": "Libertos para lembrar",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Lembre-se do que ele fez",
+  "leitura": "Sl 105.1-8",
+  "trechos": [
+   [
+    105,
+    1,
+    8
+   ]
+  ]
+ },
+ {
+  "data": "09-02",
+  "dia_do_ano": 245,
+  "mes": "Setembro",
+  "tema_mes": "Libertos para lembrar",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Lembre-se do que ele fez",
+  "leitura": "Sl 105.9-16",
+  "trechos": [
+   [
+    105,
+    9,
+    16
+   ]
+  ]
+ },
+ {
+  "data": "09-03",
+  "dia_do_ano": 246,
+  "mes": "Setembro",
+  "tema_mes": "Libertos para lembrar",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Lembre-se do que ele fez",
+  "leitura": "Sl 105.17-24",
+  "trechos": [
+   [
+    105,
+    17,
+    24
+   ]
+  ]
+ },
+ {
+  "data": "09-04",
+  "dia_do_ano": 247,
+  "mes": "Setembro",
+  "tema_mes": "Libertos para lembrar",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Lembre-se do que ele fez",
+  "leitura": "Sl 105.25-31",
+  "trechos": [
+   [
+    105,
+    25,
+    31
+   ]
+  ]
+ },
+ {
+  "data": "09-05",
+  "dia_do_ano": 248,
+  "mes": "Setembro",
+  "tema_mes": "Libertos para lembrar",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Lembre-se do que ele fez",
+  "leitura": "Sl 105.32-38",
+  "trechos": [
+   [
+    105,
+    32,
+    38
+   ]
+  ]
+ },
+ {
+  "data": "09-06",
+  "dia_do_ano": 249,
+  "mes": "Setembro",
+  "tema_mes": "Libertos para lembrar",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Lembre-se do que ele fez",
+  "leitura": "Sl 105.39-45",
+  "trechos": [
+   [
+    105,
+    39,
+    45
+   ]
+  ]
+ },
+ {
+  "data": "09-07",
+  "dia_do_ano": 250,
+  "mes": "Setembro",
+  "tema_mes": "Libertos para lembrar",
+  "estacao": "Do vale ao trono",
+  "tipo": "selah",
+  "semana": 1,
+  "nome_semana": "Lembre-se do que ele fez",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "09-08",
+  "dia_do_ano": 251,
+  "mes": "Setembro",
+  "tema_mes": "Libertos para lembrar",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Infiéis, mas amados",
+  "leitura": "Sl 106.1-8",
+  "trechos": [
+   [
+    106,
+    1,
+    8
+   ]
+  ]
+ },
+ {
+  "data": "09-09",
+  "dia_do_ano": 252,
+  "mes": "Setembro",
+  "tema_mes": "Libertos para lembrar",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Infiéis, mas amados",
+  "leitura": "Sl 106.9-16",
+  "trechos": [
+   [
+    106,
+    9,
+    16
+   ]
+  ]
+ },
+ {
+  "data": "09-10",
+  "dia_do_ano": 253,
+  "mes": "Setembro",
+  "tema_mes": "Libertos para lembrar",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Infiéis, mas amados",
+  "leitura": "Sl 106.17-24",
+  "trechos": [
+   [
+    106,
+    17,
+    24
+   ]
+  ]
+ },
+ {
+  "data": "09-11",
+  "dia_do_ano": 254,
+  "mes": "Setembro",
+  "tema_mes": "Libertos para lembrar",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Infiéis, mas amados",
+  "leitura": "Sl 106.25-32",
+  "trechos": [
+   [
+    106,
+    25,
+    32
+   ]
+  ]
+ },
+ {
+  "data": "09-12",
+  "dia_do_ano": 255,
+  "mes": "Setembro",
+  "tema_mes": "Libertos para lembrar",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Infiéis, mas amados",
+  "leitura": "Sl 106.33-40",
+  "trechos": [
+   [
+    106,
+    33,
+    40
+   ]
+  ]
+ },
+ {
+  "data": "09-13",
+  "dia_do_ano": 256,
+  "mes": "Setembro",
+  "tema_mes": "Libertos para lembrar",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Infiéis, mas amados",
+  "leitura": "Sl 106.41-48",
+  "trechos": [
+   [
+    106,
+    41,
+    48
+   ]
+  ]
+ },
+ {
+  "data": "09-14",
+  "dia_do_ano": 257,
+  "mes": "Setembro",
+  "tema_mes": "Libertos para lembrar",
+  "estacao": "Do vale ao trono",
+  "tipo": "selah",
+  "semana": 2,
+  "nome_semana": "Infiéis, mas amados",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "09-15",
+  "dia_do_ano": 258,
+  "mes": "Setembro",
+  "tema_mes": "Libertos para lembrar",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Clamaram, e ele os livrou",
+  "leitura": "Sl 107.1-15",
+  "trechos": [
+   [
+    107,
+    1,
+    15
+   ]
+  ]
+ },
+ {
+  "data": "09-16",
+  "dia_do_ano": 259,
+  "mes": "Setembro",
+  "tema_mes": "Libertos para lembrar",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Clamaram, e ele os livrou",
+  "leitura": "Sl 107.16-29",
+  "trechos": [
+   [
+    107,
+    16,
+    29
+   ]
+  ]
+ },
+ {
+  "data": "09-17",
+  "dia_do_ano": 260,
+  "mes": "Setembro",
+  "tema_mes": "Libertos para lembrar",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Clamaram, e ele os livrou",
+  "leitura": "Sl 107.30-43",
+  "trechos": [
+   [
+    107,
+    30,
+    43
+   ]
+  ]
+ },
+ {
+  "data": "09-18",
+  "dia_do_ano": 261,
+  "mes": "Setembro",
+  "tema_mes": "Libertos para lembrar",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Clamaram, e ele os livrou",
+  "leitura": "Sl 108",
+  "trechos": [
+   [
+    108,
+    1,
+    13
+   ]
+  ]
+ },
+ {
+  "data": "09-19",
+  "dia_do_ano": 262,
+  "mes": "Setembro",
+  "tema_mes": "Libertos para lembrar",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Clamaram, e ele os livrou",
+  "leitura": "Sl 109.1-16",
+  "trechos": [
+   [
+    109,
+    1,
+    16
+   ]
+  ]
+ },
+ {
+  "data": "09-20",
+  "dia_do_ano": 263,
+  "mes": "Setembro",
+  "tema_mes": "Libertos para lembrar",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Clamaram, e ele os livrou",
+  "leitura": "Sl 109.17-31",
+  "trechos": [
+   [
+    109,
+    17,
+    31
+   ]
+  ]
+ },
+ {
+  "data": "09-21",
+  "dia_do_ano": 264,
+  "mes": "Setembro",
+  "tema_mes": "Libertos para lembrar",
+  "estacao": "Do vale ao trono",
+  "tipo": "selah",
+  "semana": 3,
+  "nome_semana": "Clamaram, e ele os livrou",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "09-22",
+  "dia_do_ano": 265,
+  "mes": "Setembro",
+  "tema_mes": "Libertos para lembrar",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Não a nós, Senhor",
+  "leitura": "Sl 110",
+  "trechos": [
+   [
+    110,
+    1,
+    7
+   ]
+  ]
+ },
+ {
+  "data": "09-23",
+  "dia_do_ano": 266,
+  "mes": "Setembro",
+  "tema_mes": "Libertos para lembrar",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Não a nós, Senhor",
+  "leitura": "Sl 111",
+  "trechos": [
+   [
+    111,
+    1,
+    10
+   ]
+  ]
+ },
+ {
+  "data": "09-24",
+  "dia_do_ano": 267,
+  "mes": "Setembro",
+  "tema_mes": "Libertos para lembrar",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Não a nós, Senhor",
+  "leitura": "Sl 112",
+  "trechos": [
+   [
+    112,
+    1,
+    10
+   ]
+  ]
+ },
+ {
+  "data": "09-25",
+  "dia_do_ano": 268,
+  "mes": "Setembro",
+  "tema_mes": "Libertos para lembrar",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Não a nós, Senhor",
+  "leitura": "Sl 113",
+  "trechos": [
+   [
+    113,
+    1,
+    9
+   ]
+  ]
+ },
+ {
+  "data": "09-26",
+  "dia_do_ano": 269,
+  "mes": "Setembro",
+  "tema_mes": "Libertos para lembrar",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Não a nós, Senhor",
+  "leitura": "Sl 114",
+  "trechos": [
+   [
+    114,
+    1,
+    8
+   ]
+  ]
+ },
+ {
+  "data": "09-27",
+  "dia_do_ano": 270,
+  "mes": "Setembro",
+  "tema_mes": "Libertos para lembrar",
+  "estacao": "Do vale ao trono",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Não a nós, Senhor",
+  "leitura": "Sl 115",
+  "trechos": [
+   [
+    115,
+    1,
+    18
+   ]
+  ]
+ },
+ {
+  "data": "09-28",
+  "dia_do_ano": 271,
+  "mes": "Setembro",
+  "tema_mes": "Libertos para lembrar",
+  "estacao": "Do vale ao trono",
+  "tipo": "selah",
+  "semana": 4,
+  "nome_semana": "Não a nós, Senhor",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "09-29",
+  "dia_do_ano": 272,
+  "mes": "Setembro",
+  "tema_mes": "Libertos para lembrar",
+  "estacao": "Do vale ao trono",
+  "tipo": "colheita",
+  "semana": null,
+  "nome_semana": "Colheita de setembro",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "09-30",
+  "dia_do_ano": 273,
+  "mes": "Setembro",
+  "tema_mes": "Libertos para lembrar",
+  "estacao": "Do vale ao trono",
+  "tipo": "colheita",
+  "semana": null,
+  "nome_semana": "Colheita de setembro",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "10-01",
+  "dia_do_ano": 274,
+  "mes": "Outubro",
+  "tema_mes": "A Palavra que cura",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "A pedra rejeitada",
+  "leitura": "Sl 116.1-10",
+  "trechos": [
+   [
+    116,
+    1,
+    10
+   ]
+  ]
+ },
+ {
+  "data": "10-02",
+  "dia_do_ano": 275,
+  "mes": "Outubro",
+  "tema_mes": "A Palavra que cura",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "A pedra rejeitada",
+  "leitura": "Sl 116.11-19",
+  "trechos": [
+   [
+    116,
+    11,
+    19
+   ]
+  ]
+ },
+ {
+  "data": "10-03",
+  "dia_do_ano": 276,
+  "mes": "Outubro",
+  "tema_mes": "A Palavra que cura",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "A pedra rejeitada",
+  "leitura": "Sl 117",
+  "trechos": [
+   [
+    117,
+    1,
+    2
+   ]
+  ]
+ },
+ {
+  "data": "10-04",
+  "dia_do_ano": 277,
+  "mes": "Outubro",
+  "tema_mes": "A Palavra que cura",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "A pedra rejeitada",
+  "leitura": "Sl 118.1-10",
+  "trechos": [
+   [
+    118,
+    1,
+    10
+   ]
+  ]
+ },
+ {
+  "data": "10-05",
+  "dia_do_ano": 278,
+  "mes": "Outubro",
+  "tema_mes": "A Palavra que cura",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "A pedra rejeitada",
+  "leitura": "Sl 118.11-20",
+  "trechos": [
+   [
+    118,
+    11,
+    20
+   ]
+  ]
+ },
+ {
+  "data": "10-06",
+  "dia_do_ano": 279,
+  "mes": "Outubro",
+  "tema_mes": "A Palavra que cura",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "A pedra rejeitada",
+  "leitura": "Sl 118.21-29",
+  "trechos": [
+   [
+    118,
+    21,
+    29
+   ]
+  ]
+ },
+ {
+  "data": "10-07",
+  "dia_do_ano": 280,
+  "mes": "Outubro",
+  "tema_mes": "A Palavra que cura",
+  "estacao": "Voltar para casa",
+  "tipo": "selah",
+  "semana": 1,
+  "nome_semana": "A pedra rejeitada",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "10-08",
+  "dia_do_ano": 281,
+  "mes": "Outubro",
+  "tema_mes": "A Palavra que cura",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Como manter o coração puro?",
+  "leitura": "Sl 119.1-8",
+  "trechos": [
+   [
+    119,
+    1,
+    8
+   ]
+  ]
+ },
+ {
+  "data": "10-09",
+  "dia_do_ano": 282,
+  "mes": "Outubro",
+  "tema_mes": "A Palavra que cura",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Como manter o coração puro?",
+  "leitura": "Sl 119.9-16",
+  "trechos": [
+   [
+    119,
+    9,
+    16
+   ]
+  ]
+ },
+ {
+  "data": "10-10",
+  "dia_do_ano": 283,
+  "mes": "Outubro",
+  "tema_mes": "A Palavra que cura",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Como manter o coração puro?",
+  "leitura": "Sl 119.17-24",
+  "trechos": [
+   [
+    119,
+    17,
+    24
+   ]
+  ]
+ },
+ {
+  "data": "10-11",
+  "dia_do_ano": 284,
+  "mes": "Outubro",
+  "tema_mes": "A Palavra que cura",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Como manter o coração puro?",
+  "leitura": "Sl 119.25-32",
+  "trechos": [
+   [
+    119,
+    25,
+    32
+   ]
+  ]
+ },
+ {
+  "data": "10-12",
+  "dia_do_ano": 285,
+  "mes": "Outubro",
+  "tema_mes": "A Palavra que cura",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Como manter o coração puro?",
+  "leitura": "Sl 119.33-40",
+  "trechos": [
+   [
+    119,
+    33,
+    40
+   ]
+  ]
+ },
+ {
+  "data": "10-13",
+  "dia_do_ano": 286,
+  "mes": "Outubro",
+  "tema_mes": "A Palavra que cura",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Como manter o coração puro?",
+  "leitura": "Sl 119.41-48",
+  "trechos": [
+   [
+    119,
+    41,
+    48
+   ]
+  ]
+ },
+ {
+  "data": "10-14",
+  "dia_do_ano": 287,
+  "mes": "Outubro",
+  "tema_mes": "A Palavra que cura",
+  "estacao": "Voltar para casa",
+  "tipo": "selah",
+  "semana": 2,
+  "nome_semana": "Como manter o coração puro?",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "10-15",
+  "dia_do_ano": 288,
+  "mes": "Outubro",
+  "tema_mes": "A Palavra que cura",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Bom me foi ser afligido",
+  "leitura": "Sl 119.49-56",
+  "trechos": [
+   [
+    119,
+    49,
+    56
+   ]
+  ]
+ },
+ {
+  "data": "10-16",
+  "dia_do_ano": 289,
+  "mes": "Outubro",
+  "tema_mes": "A Palavra que cura",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Bom me foi ser afligido",
+  "leitura": "Sl 119.57-64",
+  "trechos": [
+   [
+    119,
+    57,
+    64
+   ]
+  ]
+ },
+ {
+  "data": "10-17",
+  "dia_do_ano": 290,
+  "mes": "Outubro",
+  "tema_mes": "A Palavra que cura",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Bom me foi ser afligido",
+  "leitura": "Sl 119.65-72",
+  "trechos": [
+   [
+    119,
+    65,
+    72
+   ]
+  ]
+ },
+ {
+  "data": "10-18",
+  "dia_do_ano": 291,
+  "mes": "Outubro",
+  "tema_mes": "A Palavra que cura",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Bom me foi ser afligido",
+  "leitura": "Sl 119.73-80",
+  "trechos": [
+   [
+    119,
+    73,
+    80
+   ]
+  ]
+ },
+ {
+  "data": "10-19",
+  "dia_do_ano": 292,
+  "mes": "Outubro",
+  "tema_mes": "A Palavra que cura",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Bom me foi ser afligido",
+  "leitura": "Sl 119.81-88",
+  "trechos": [
+   [
+    119,
+    81,
+    88
+   ]
+  ]
+ },
+ {
+  "data": "10-20",
+  "dia_do_ano": 293,
+  "mes": "Outubro",
+  "tema_mes": "A Palavra que cura",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Bom me foi ser afligido",
+  "leitura": "Sl 119.89-96",
+  "trechos": [
+   [
+    119,
+    89,
+    96
+   ]
+  ]
+ },
+ {
+  "data": "10-21",
+  "dia_do_ano": 294,
+  "mes": "Outubro",
+  "tema_mes": "A Palavra que cura",
+  "estacao": "Voltar para casa",
+  "tipo": "selah",
+  "semana": 3,
+  "nome_semana": "Bom me foi ser afligido",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "10-22",
+  "dia_do_ano": 295,
+  "mes": "Outubro",
+  "tema_mes": "A Palavra que cura",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Lâmpada para os meus pés",
+  "leitura": "Sl 119.97-104",
+  "trechos": [
+   [
+    119,
+    97,
+    104
+   ]
+  ]
+ },
+ {
+  "data": "10-23",
+  "dia_do_ano": 296,
+  "mes": "Outubro",
+  "tema_mes": "A Palavra que cura",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Lâmpada para os meus pés",
+  "leitura": "Sl 119.105-112",
+  "trechos": [
+   [
+    119,
+    105,
+    112
+   ]
+  ]
+ },
+ {
+  "data": "10-24",
+  "dia_do_ano": 297,
+  "mes": "Outubro",
+  "tema_mes": "A Palavra que cura",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Lâmpada para os meus pés",
+  "leitura": "Sl 119.113-120",
+  "trechos": [
+   [
+    119,
+    113,
+    120
+   ]
+  ]
+ },
+ {
+  "data": "10-25",
+  "dia_do_ano": 298,
+  "mes": "Outubro",
+  "tema_mes": "A Palavra que cura",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Lâmpada para os meus pés",
+  "leitura": "Sl 119.121-128",
+  "trechos": [
+   [
+    119,
+    121,
+    128
+   ]
+  ]
+ },
+ {
+  "data": "10-26",
+  "dia_do_ano": 299,
+  "mes": "Outubro",
+  "tema_mes": "A Palavra que cura",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Lâmpada para os meus pés",
+  "leitura": "Sl 119.129-136",
+  "trechos": [
+   [
+    119,
+    129,
+    136
+   ]
+  ]
+ },
+ {
+  "data": "10-27",
+  "dia_do_ano": 300,
+  "mes": "Outubro",
+  "tema_mes": "A Palavra que cura",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Lâmpada para os meus pés",
+  "leitura": "Sl 119.137-144",
+  "trechos": [
+   [
+    119,
+    137,
+    144
+   ]
+  ]
+ },
+ {
+  "data": "10-28",
+  "dia_do_ano": 301,
+  "mes": "Outubro",
+  "tema_mes": "A Palavra que cura",
+  "estacao": "Voltar para casa",
+  "tipo": "selah",
+  "semana": 4,
+  "nome_semana": "Lâmpada para os meus pés",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "10-29",
+  "dia_do_ano": 302,
+  "mes": "Outubro",
+  "tema_mes": "A Palavra que cura",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 5,
+  "nome_semana": "Ovelha perdida, Palavra que encontra",
+  "leitura": "Sl 119.145-152",
+  "trechos": [
+   [
+    119,
+    145,
+    152
+   ]
+  ]
+ },
+ {
+  "data": "10-30",
+  "dia_do_ano": 303,
+  "mes": "Outubro",
+  "tema_mes": "A Palavra que cura",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 5,
+  "nome_semana": "Ovelha perdida, Palavra que encontra",
+  "leitura": "Sl 119.153-168",
+  "trechos": [
+   [
+    119,
+    153,
+    168
+   ]
+  ]
+ },
+ {
+  "data": "10-31",
+  "dia_do_ano": 304,
+  "mes": "Outubro",
+  "tema_mes": "A Palavra que cura",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 5,
+  "nome_semana": "Ovelha perdida, Palavra que encontra",
+  "leitura": "Sl 119.169-176",
+  "trechos": [
+   [
+    119,
+    169,
+    176
+   ]
+  ]
+ },
+ {
+  "data": "11-01",
+  "dia_do_ano": 305,
+  "mes": "Novembro",
+  "tema_mes": "Caminho para casa",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "De onde vem o meu socorro?",
+  "leitura": "Sl 120",
+  "trechos": [
+   [
+    120,
+    1,
+    7
+   ]
+  ]
+ },
+ {
+  "data": "11-02",
+  "dia_do_ano": 306,
+  "mes": "Novembro",
+  "tema_mes": "Caminho para casa",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "De onde vem o meu socorro?",
+  "leitura": "Sl 121",
+  "trechos": [
+   [
+    121,
+    1,
+    8
+   ]
+  ]
+ },
+ {
+  "data": "11-03",
+  "dia_do_ano": 307,
+  "mes": "Novembro",
+  "tema_mes": "Caminho para casa",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "De onde vem o meu socorro?",
+  "leitura": "Sl 122.1-5",
+  "trechos": [
+   [
+    122,
+    1,
+    5
+   ]
+  ]
+ },
+ {
+  "data": "11-04",
+  "dia_do_ano": 308,
+  "mes": "Novembro",
+  "tema_mes": "Caminho para casa",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "De onde vem o meu socorro?",
+  "leitura": "Sl 122.6-9",
+  "trechos": [
+   [
+    122,
+    6,
+    9
+   ]
+  ]
+ },
+ {
+  "data": "11-05",
+  "dia_do_ano": 309,
+  "mes": "Novembro",
+  "tema_mes": "Caminho para casa",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "De onde vem o meu socorro?",
+  "leitura": "Sl 123",
+  "trechos": [
+   [
+    123,
+    1,
+    4
+   ]
+  ]
+ },
+ {
+  "data": "11-06",
+  "dia_do_ano": 310,
+  "mes": "Novembro",
+  "tema_mes": "Caminho para casa",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "De onde vem o meu socorro?",
+  "leitura": "Sl 124",
+  "trechos": [
+   [
+    124,
+    1,
+    8
+   ]
+  ]
+ },
+ {
+  "data": "11-07",
+  "dia_do_ano": 311,
+  "mes": "Novembro",
+  "tema_mes": "Caminho para casa",
+  "estacao": "Voltar para casa",
+  "tipo": "selah",
+  "semana": 1,
+  "nome_semana": "De onde vem o meu socorro?",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "11-08",
+  "dia_do_ano": 312,
+  "mes": "Novembro",
+  "tema_mes": "Caminho para casa",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Se o Senhor não edificar a casa",
+  "leitura": "Sl 125",
+  "trechos": [
+   [
+    125,
+    1,
+    5
+   ]
+  ]
+ },
+ {
+  "data": "11-09",
+  "dia_do_ano": 313,
+  "mes": "Novembro",
+  "tema_mes": "Caminho para casa",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Se o Senhor não edificar a casa",
+  "leitura": "Sl 126",
+  "trechos": [
+   [
+    126,
+    1,
+    6
+   ]
+  ]
+ },
+ {
+  "data": "11-10",
+  "dia_do_ano": 314,
+  "mes": "Novembro",
+  "tema_mes": "Caminho para casa",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Se o Senhor não edificar a casa",
+  "leitura": "Sl 127",
+  "trechos": [
+   [
+    127,
+    1,
+    5
+   ]
+  ]
+ },
+ {
+  "data": "11-11",
+  "dia_do_ano": 315,
+  "mes": "Novembro",
+  "tema_mes": "Caminho para casa",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Se o Senhor não edificar a casa",
+  "leitura": "Sl 128",
+  "trechos": [
+   [
+    128,
+    1,
+    6
+   ]
+  ]
+ },
+ {
+  "data": "11-12",
+  "dia_do_ano": 316,
+  "mes": "Novembro",
+  "tema_mes": "Caminho para casa",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Se o Senhor não edificar a casa",
+  "leitura": "Sl 129.1-4",
+  "trechos": [
+   [
+    129,
+    1,
+    4
+   ]
+  ]
+ },
+ {
+  "data": "11-13",
+  "dia_do_ano": 317,
+  "mes": "Novembro",
+  "tema_mes": "Caminho para casa",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Se o Senhor não edificar a casa",
+  "leitura": "Sl 129.5-8",
+  "trechos": [
+   [
+    129,
+    5,
+    8
+   ]
+  ]
+ },
+ {
+  "data": "11-14",
+  "dia_do_ano": 318,
+  "mes": "Novembro",
+  "tema_mes": "Caminho para casa",
+  "estacao": "Voltar para casa",
+  "tipo": "selah",
+  "semana": 2,
+  "nome_semana": "Se o Senhor não edificar a casa",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "11-15",
+  "dia_do_ano": 319,
+  "mes": "Novembro",
+  "tema_mes": "Caminho para casa",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Das profundezas",
+  "leitura": "Sl 130",
+  "trechos": [
+   [
+    130,
+    1,
+    8
+   ]
+  ]
+ },
+ {
+  "data": "11-16",
+  "dia_do_ano": 320,
+  "mes": "Novembro",
+  "tema_mes": "Caminho para casa",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Das profundezas",
+  "leitura": "Sl 131",
+  "trechos": [
+   [
+    131,
+    1,
+    3
+   ]
+  ]
+ },
+ {
+  "data": "11-17",
+  "dia_do_ano": 321,
+  "mes": "Novembro",
+  "tema_mes": "Caminho para casa",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Das profundezas",
+  "leitura": "Sl 132",
+  "trechos": [
+   [
+    132,
+    1,
+    18
+   ]
+  ]
+ },
+ {
+  "data": "11-18",
+  "dia_do_ano": 322,
+  "mes": "Novembro",
+  "tema_mes": "Caminho para casa",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Das profundezas",
+  "leitura": "Sl 133",
+  "trechos": [
+   [
+    133,
+    1,
+    3
+   ]
+  ]
+ },
+ {
+  "data": "11-19",
+  "dia_do_ano": 323,
+  "mes": "Novembro",
+  "tema_mes": "Caminho para casa",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Das profundezas",
+  "leitura": "Sl 134",
+  "trechos": [
+   [
+    134,
+    1,
+    3
+   ]
+  ]
+ },
+ {
+  "data": "11-20",
+  "dia_do_ano": 324,
+  "mes": "Novembro",
+  "tema_mes": "Caminho para casa",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Das profundezas",
+  "leitura": "Sl 135",
+  "trechos": [
+   [
+    135,
+    1,
+    21
+   ]
+  ]
+ },
+ {
+  "data": "11-21",
+  "dia_do_ano": 325,
+  "mes": "Novembro",
+  "tema_mes": "Caminho para casa",
+  "estacao": "Voltar para casa",
+  "tipo": "selah",
+  "semana": 3,
+  "nome_semana": "Das profundezas",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "11-22",
+  "dia_do_ano": 326,
+  "mes": "Novembro",
+  "tema_mes": "Caminho para casa",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Sondado e amado",
+  "leitura": "Sl 136.1-13",
+  "trechos": [
+   [
+    136,
+    1,
+    13
+   ]
+  ]
+ },
+ {
+  "data": "11-23",
+  "dia_do_ano": 327,
+  "mes": "Novembro",
+  "tema_mes": "Caminho para casa",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Sondado e amado",
+  "leitura": "Sl 136.14-26",
+  "trechos": [
+   [
+    136,
+    14,
+    26
+   ]
+  ]
+ },
+ {
+  "data": "11-24",
+  "dia_do_ano": 328,
+  "mes": "Novembro",
+  "tema_mes": "Caminho para casa",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Sondado e amado",
+  "leitura": "Sl 137",
+  "trechos": [
+   [
+    137,
+    1,
+    9
+   ]
+  ]
+ },
+ {
+  "data": "11-25",
+  "dia_do_ano": 329,
+  "mes": "Novembro",
+  "tema_mes": "Caminho para casa",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Sondado e amado",
+  "leitura": "Sl 138",
+  "trechos": [
+   [
+    138,
+    1,
+    8
+   ]
+  ]
+ },
+ {
+  "data": "11-26",
+  "dia_do_ano": 330,
+  "mes": "Novembro",
+  "tema_mes": "Caminho para casa",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Sondado e amado",
+  "leitura": "Sl 139.1-12",
+  "trechos": [
+   [
+    139,
+    1,
+    12
+   ]
+  ]
+ },
+ {
+  "data": "11-27",
+  "dia_do_ano": 331,
+  "mes": "Novembro",
+  "tema_mes": "Caminho para casa",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "Sondado e amado",
+  "leitura": "Sl 139.13-24",
+  "trechos": [
+   [
+    139,
+    13,
+    24
+   ]
+  ]
+ },
+ {
+  "data": "11-28",
+  "dia_do_ano": 332,
+  "mes": "Novembro",
+  "tema_mes": "Caminho para casa",
+  "estacao": "Voltar para casa",
+  "tipo": "selah",
+  "semana": 4,
+  "nome_semana": "Sondado e amado",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "11-29",
+  "dia_do_ano": 333,
+  "mes": "Novembro",
+  "tema_mes": "Caminho para casa",
+  "estacao": "Voltar para casa",
+  "tipo": "colheita",
+  "semana": null,
+  "nome_semana": "Colheita de novembro",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "11-30",
+  "dia_do_ano": 334,
+  "mes": "Novembro",
+  "tema_mes": "Caminho para casa",
+  "estacao": "Voltar para casa",
+  "tipo": "colheita",
+  "semana": null,
+  "nome_semana": "Colheita de novembro",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "12-01",
+  "dia_do_ano": 335,
+  "mes": "Dezembro",
+  "tema_mes": "Tudo o que tem fôlego",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Quando o espírito desfalece",
+  "leitura": "Sl 140.1-7",
+  "trechos": [
+   [
+    140,
+    1,
+    7
+   ]
+  ]
+ },
+ {
+  "data": "12-02",
+  "dia_do_ano": 336,
+  "mes": "Dezembro",
+  "tema_mes": "Tudo o que tem fôlego",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Quando o espírito desfalece",
+  "leitura": "Sl 140.8-13",
+  "trechos": [
+   [
+    140,
+    8,
+    13
+   ]
+  ]
+ },
+ {
+  "data": "12-03",
+  "dia_do_ano": 337,
+  "mes": "Dezembro",
+  "tema_mes": "Tudo o que tem fôlego",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Quando o espírito desfalece",
+  "leitura": "Sl 141",
+  "trechos": [
+   [
+    141,
+    1,
+    10
+   ]
+  ]
+ },
+ {
+  "data": "12-04",
+  "dia_do_ano": 338,
+  "mes": "Dezembro",
+  "tema_mes": "Tudo o que tem fôlego",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Quando o espírito desfalece",
+  "leitura": "Sl 142",
+  "trechos": [
+   [
+    142,
+    1,
+    7
+   ]
+  ]
+ },
+ {
+  "data": "12-05",
+  "dia_do_ano": 339,
+  "mes": "Dezembro",
+  "tema_mes": "Tudo o que tem fôlego",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Quando o espírito desfalece",
+  "leitura": "Sl 143.1-6",
+  "trechos": [
+   [
+    143,
+    1,
+    6
+   ]
+  ]
+ },
+ {
+  "data": "12-06",
+  "dia_do_ano": 340,
+  "mes": "Dezembro",
+  "tema_mes": "Tudo o que tem fôlego",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 1,
+  "nome_semana": "Quando o espírito desfalece",
+  "leitura": "Sl 143.7-12",
+  "trechos": [
+   [
+    143,
+    7,
+    12
+   ]
+  ]
+ },
+ {
+  "data": "12-07",
+  "dia_do_ano": 341,
+  "mes": "Dezembro",
+  "tema_mes": "Tudo o que tem fôlego",
+  "estacao": "Voltar para casa",
+  "tipo": "selah",
+  "semana": 1,
+  "nome_semana": "Quando o espírito desfalece",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "12-08",
+  "dia_do_ano": 342,
+  "mes": "Dezembro",
+  "tema_mes": "Tudo o que tem fôlego",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Grande é o Senhor",
+  "leitura": "Sl 144.1-5",
+  "trechos": [
+   [
+    144,
+    1,
+    5
+   ]
+  ]
+ },
+ {
+  "data": "12-09",
+  "dia_do_ano": 343,
+  "mes": "Dezembro",
+  "tema_mes": "Tudo o que tem fôlego",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Grande é o Senhor",
+  "leitura": "Sl 144.6-10",
+  "trechos": [
+   [
+    144,
+    6,
+    10
+   ]
+  ]
+ },
+ {
+  "data": "12-10",
+  "dia_do_ano": 344,
+  "mes": "Dezembro",
+  "tema_mes": "Tudo o que tem fôlego",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Grande é o Senhor",
+  "leitura": "Sl 144.11-15",
+  "trechos": [
+   [
+    144,
+    11,
+    15
+   ]
+  ]
+ },
+ {
+  "data": "12-11",
+  "dia_do_ano": 345,
+  "mes": "Dezembro",
+  "tema_mes": "Tudo o que tem fôlego",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Grande é o Senhor",
+  "leitura": "Sl 145.1-7",
+  "trechos": [
+   [
+    145,
+    1,
+    7
+   ]
+  ]
+ },
+ {
+  "data": "12-12",
+  "dia_do_ano": 346,
+  "mes": "Dezembro",
+  "tema_mes": "Tudo o que tem fôlego",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Grande é o Senhor",
+  "leitura": "Sl 145.8-14",
+  "trechos": [
+   [
+    145,
+    8,
+    14
+   ]
+  ]
+ },
+ {
+  "data": "12-13",
+  "dia_do_ano": 347,
+  "mes": "Dezembro",
+  "tema_mes": "Tudo o que tem fôlego",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 2,
+  "nome_semana": "Grande é o Senhor",
+  "leitura": "Sl 145.15-21",
+  "trechos": [
+   [
+    145,
+    15,
+    21
+   ]
+  ]
+ },
+ {
+  "data": "12-14",
+  "dia_do_ano": 348,
+  "mes": "Dezembro",
+  "tema_mes": "Tudo o que tem fôlego",
+  "estacao": "Voltar para casa",
+  "tipo": "selah",
+  "semana": 2,
+  "nome_semana": "Grande é o Senhor",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "12-15",
+  "dia_do_ano": 349,
+  "mes": "Dezembro",
+  "tema_mes": "Tudo o que tem fôlego",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Esperando o Rei",
+  "leitura": "Sl 80",
+  "trechos": [
+   [
+    80,
+    1,
+    19
+   ]
+  ]
+ },
+ {
+  "data": "12-16",
+  "dia_do_ano": 350,
+  "mes": "Dezembro",
+  "tema_mes": "Tudo o que tem fôlego",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Esperando o Rei",
+  "leitura": "Sl 2",
+  "trechos": [
+   [
+    2,
+    1,
+    12
+   ]
+  ]
+ },
+ {
+  "data": "12-17",
+  "dia_do_ano": 351,
+  "mes": "Dezembro",
+  "tema_mes": "Tudo o que tem fôlego",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Esperando o Rei",
+  "leitura": "Sl 72",
+  "trechos": [
+   [
+    72,
+    1,
+    20
+   ]
+  ]
+ },
+ {
+  "data": "12-18",
+  "dia_do_ano": 352,
+  "mes": "Dezembro",
+  "tema_mes": "Tudo o que tem fôlego",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Esperando o Rei",
+  "leitura": "Sl 98",
+  "trechos": [
+   [
+    98,
+    1,
+    9
+   ]
+  ]
+ },
+ {
+  "data": "12-19",
+  "dia_do_ano": 353,
+  "mes": "Dezembro",
+  "tema_mes": "Tudo o que tem fôlego",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Esperando o Rei",
+  "leitura": "Sl 96",
+  "trechos": [
+   [
+    96,
+    1,
+    13
+   ]
+  ]
+ },
+ {
+  "data": "12-20",
+  "dia_do_ano": 354,
+  "mes": "Dezembro",
+  "tema_mes": "Tudo o que tem fôlego",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 3,
+  "nome_semana": "Esperando o Rei",
+  "leitura": "Sl 24",
+  "trechos": [
+   [
+    24,
+    1,
+    10
+   ]
+  ]
+ },
+ {
+  "data": "12-21",
+  "dia_do_ano": 355,
+  "mes": "Dezembro",
+  "tema_mes": "Tudo o que tem fôlego",
+  "estacao": "Voltar para casa",
+  "tipo": "selah",
+  "semana": 3,
+  "nome_semana": "Esperando o Rei",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "12-22",
+  "dia_do_ano": 356,
+  "mes": "Dezembro",
+  "tema_mes": "Tudo o que tem fôlego",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "O Rei chegou",
+  "leitura": "Sl 132",
+  "trechos": [
+   [
+    132,
+    1,
+    18
+   ]
+  ]
+ },
+ {
+  "data": "12-23",
+  "dia_do_ano": 357,
+  "mes": "Dezembro",
+  "tema_mes": "Tudo o que tem fôlego",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "O Rei chegou",
+  "leitura": "Sl 45",
+  "trechos": [
+   [
+    45,
+    1,
+    17
+   ]
+  ]
+ },
+ {
+  "data": "12-24",
+  "dia_do_ano": 358,
+  "mes": "Dezembro",
+  "tema_mes": "Tudo o que tem fôlego",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "O Rei chegou",
+  "leitura": "Sl 85",
+  "trechos": [
+   [
+    85,
+    1,
+    13
+   ]
+  ]
+ },
+ {
+  "data": "12-25",
+  "dia_do_ano": 359,
+  "mes": "Dezembro",
+  "tema_mes": "Tudo o que tem fôlego",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "O Rei chegou",
+  "leitura": "Sl 110",
+  "trechos": [
+   [
+    110,
+    1,
+    7
+   ]
+  ]
+ },
+ {
+  "data": "12-26",
+  "dia_do_ano": 360,
+  "mes": "Dezembro",
+  "tema_mes": "Tudo o que tem fôlego",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "O Rei chegou",
+  "leitura": "Sl 146",
+  "trechos": [
+   [
+    146,
+    1,
+    10
+   ]
+  ]
+ },
+ {
+  "data": "12-27",
+  "dia_do_ano": 361,
+  "mes": "Dezembro",
+  "tema_mes": "Tudo o que tem fôlego",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 4,
+  "nome_semana": "O Rei chegou",
+  "leitura": "Sl 147",
+  "trechos": [
+   [
+    147,
+    1,
+    20
+   ]
+  ]
+ },
+ {
+  "data": "12-28",
+  "dia_do_ano": 362,
+  "mes": "Dezembro",
+  "tema_mes": "Tudo o que tem fôlego",
+  "estacao": "Voltar para casa",
+  "tipo": "selah",
+  "semana": 4,
+  "nome_semana": "O Rei chegou",
+  "leitura": null,
+  "trechos": []
+ },
+ {
+  "data": "12-29",
+  "dia_do_ano": 363,
+  "mes": "Dezembro",
+  "tema_mes": "Tudo o que tem fôlego",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 5,
+  "nome_semana": "Aleluia final",
+  "leitura": "Sl 148",
+  "trechos": [
+   [
+    148,
+    1,
+    14
+   ]
+  ]
+ },
+ {
+  "data": "12-30",
+  "dia_do_ano": 364,
+  "mes": "Dezembro",
+  "tema_mes": "Tudo o que tem fôlego",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 5,
+  "nome_semana": "Aleluia final",
+  "leitura": "Sl 149",
+  "trechos": [
+   [
+    149,
+    1,
+    9
+   ]
+  ]
+ },
+ {
+  "data": "12-31",
+  "dia_do_ano": 365,
+  "mes": "Dezembro",
+  "tema_mes": "Tudo o que tem fôlego",
+  "estacao": "Voltar para casa",
+  "tipo": "devocional",
+  "semana": 5,
+  "nome_semana": "Aleluia final",
+  "leitura": "Sl 150",
+  "trechos": [
+   [
+    150,
+    1,
+    6
+   ]
+  ]
+ }
+]

@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import VideoIntro from '../components/VideoIntro';
 import { useLanguage } from '../contexts/LanguageContext';
+import { conteudoPublicado, dataDe, entrada, estacaoDe, leituraExtenso, rotuloData } from '../data/falaAlma';
 
 const BG = '#05071a';
 
@@ -63,6 +64,33 @@ function getDevocionais(pt: boolean) {
       ],
       destaque: '365',
       destaqueLabel: pt ? 'Dias' : 'Days',
+    },
+    {
+      id: 'fala-alma',
+      num: '03',
+      icon: '🌳',
+      titulo: pt ? 'Conselheiro da Alma' : 'Soul Counselor',
+      subtitulo: pt ? 'Os Salmos em cada dia do ano' : 'The Psalms every day of the year',
+      descricao: pt
+        ? 'Todos os 150 Salmos em um ano, de 1º de janeiro a 31 de dezembro, em qualquer ano. Uma conversa pastoral em 8 fases — do acolhimento à oração — com Selah semanal e caderno pessoal.'
+        : 'One psalm a day, from January 1 to December 31, any year. A pastoral conversation in 8 phases — from welcome to prayer — with a visual map of the psalm and a personal journal.',
+      cor: 'rgba(0,229,255,1)',
+      corRgb: '0,229,255',
+      path: '/devocional/fala-alma',
+      badge: pt ? '365 Dias · Salmos' : '365 Days · Psalms',
+      bullets: pt ? [
+        { icon: '📅', texto: 'Começa em 1º de janeiro, todo ano' },
+        { icon: '💬', texto: 'Diálogo pastoral em 8 fases' },
+        { icon: '⏸️', texto: 'Selah semanal e colheita do mês' },
+        { icon: '📓', texto: 'Caderno e respostas salvas' },
+      ] : [
+        { icon: '📅', texto: 'Starts on January 1, every year' },
+        { icon: '💬', texto: 'Pastoral dialogue in 8 phases' },
+        { icon: '⏸️', texto: 'Weekly Selah and monthly harvest' },
+        { icon: '📓', texto: 'Journal and saved answers' },
+      ],
+      destaque: '150',
+      destaqueLabel: pt ? 'Salmos' : 'Psalms',
     },
     {
       id: 'reforma',
@@ -179,7 +207,7 @@ function CardDevocional({ dev, index, pt }: { dev: ReturnType<typeof getDevocion
         <div style={{
           position: 'absolute', top: -12, right: 16,
           fontSize: 'clamp(80px,10vw,120px)', fontWeight: 900, lineHeight: 1,
-          color: `rgba(${dev.corRgb},0.055)`,
+          color: `rgba(${dev.corRgb},0.04)`,
           userSelect: 'none', pointerEvents: 'none',
           letterSpacing: '-0.05em',
         }}>
@@ -203,8 +231,8 @@ function CardDevocional({ dev, index, pt }: { dev: ReturnType<typeof getDevocion
             animate={{ background: hover ? `rgba(${dev.corRgb},0.18)` : `rgba(${dev.corRgb},0.08)` }}
             transition={{ duration: 0.25 }}
             style={{
-              fontSize: 9, fontWeight: 900, letterSpacing: '0.20em', textTransform: 'uppercase',
-              color: dev.cor, padding: '5px 14px', borderRadius: 99,
+              fontSize: 11, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase',
+              color: dev.cor, padding: '6px 14px', borderRadius: 99,
               border: `1px solid rgba(${dev.corRgb},0.25)`,
               whiteSpace: 'nowrap',
             }}
@@ -234,7 +262,7 @@ function CardDevocional({ dev, index, pt }: { dev: ReturnType<typeof getDevocion
             <span style={{ fontSize: 'clamp(28px,3.8vw,40px)', fontWeight: 900, color: dev.cor, letterSpacing: '-0.03em', opacity: 0.85 }}>
               {dev.destaque}
             </span>
-            <span style={{ fontSize: 9, fontWeight: 800, color: `rgba(${dev.corRgb},0.50)`, letterSpacing: '0.16em', textTransform: 'uppercase', marginTop: 2 }}>
+            <span style={{ fontSize: 11, fontWeight: 800, color: `rgba(${dev.corRgb},0.75)`, letterSpacing: '0.16em', textTransform: 'uppercase', marginTop: 2 }}>
               {dev.destaqueLabel}
             </span>
           </div>
@@ -246,7 +274,7 @@ function CardDevocional({ dev, index, pt }: { dev: ReturnType<typeof getDevocion
         </h2>
 
         {/* ── Subtitle in accent ── */}
-        <div style={{ fontSize: 13, fontWeight: 700, marginBottom: 16, color: dev.cor, opacity: 0.82 }}>
+        <div style={{ fontSize: 15, fontWeight: 700, marginBottom: 16, color: dev.cor }}>
           {dev.subtitulo}
         </div>
 
@@ -258,7 +286,7 @@ function CardDevocional({ dev, index, pt }: { dev: ReturnType<typeof getDevocion
         />
 
         {/* ── Description ── */}
-        <p style={{ fontSize: 15, color: 'rgba(210,205,255,0.60)', lineHeight: 1.88, margin: '0 0 22px', flex: 1 }}>
+        <p style={{ fontSize: 16, color: 'rgba(225,222,255,0.84)', lineHeight: 1.75, margin: '0 0 22px', flex: 1 }}>
           {dev.descricao}
         </p>
 
@@ -267,12 +295,12 @@ function CardDevocional({ dev, index, pt }: { dev: ReturnType<typeof getDevocion
           {dev.bullets.map((b, j) => (
             <motion.div
               key={j}
-              animate={{ x: hover ? 5 : 0, opacity: hover ? 1 : 0.68 }}
+              animate={{ x: hover ? 5 : 0, opacity: 1 }}
               transition={{ duration: 0.2, delay: hover ? j * 0.04 : 0 }}
               style={{ display: 'flex', alignItems: 'center', gap: 10 }}
             >
               <span style={{ fontSize: 14, flexShrink: 0 }}>{b.icon}</span>
-              <span style={{ fontSize: 13, color: 'rgba(210,205,255,0.78)', fontWeight: 500 }}>{b.texto}</span>
+              <span style={{ fontSize: 15, color: 'rgba(225,222,255,0.90)', fontWeight: 500 }}>{b.texto}</span>
             </motion.div>
           ))}
         </div>
@@ -292,7 +320,7 @@ function CardDevocional({ dev, index, pt }: { dev: ReturnType<typeof getDevocion
             padding: '13px 20px',
             display: 'flex', alignItems: 'center', justifyContent: 'space-between',
             cursor: 'pointer',
-            fontSize: 12, fontWeight: 900, letterSpacing: '0.12em', textTransform: 'uppercase',
+            fontSize: 13, fontWeight: 900, letterSpacing: '0.12em', textTransform: 'uppercase',
           }}
         >
           <span>{pt ? 'Acessar devocional' : 'Open devotional'}</span>
@@ -309,15 +337,92 @@ function CardDevocional({ dev, index, pt }: { dev: ReturnType<typeof getDevocion
   );
 }
 
+// ─── Destaque: Conselheiro da Alma de hoje ─────────────────────────────────────────────
+function DestaqueFalaAlma({ pt }: { pt: boolean }) {
+  const navigate = useNavigate();
+  const hoje = dataDe(new Date());
+  const plano = entrada(hoje);
+  const pub = conteudoPublicado(hoje);
+  const est = plano ? estacaoDe(plano) : null;
+  const leituraHoje = !plano ? '' : plano.tipo === 'selah' || plano.tipo === 'selah_bonus' ? `⏸️ Selah · ${plano.nome_semana}`
+    : plano.tipo === 'colheita' ? `🌾 ${plano.nome_semana}` : leituraExtenso(plano.leitura ?? '');
+  const CIANO = '#00E5FF';
+  const DOURADO = '#D4AF37';
+  const SERIFA = "'Space Grotesk', system-ui, sans-serif";
+  const DISPLAY = SERIFA;
+  return (
+    <motion.section
+      initial={{ opacity: 0, y: 32 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+      aria-label={pt ? 'Devocional de hoje: Conselheiro da Alma' : "Today's devotional: Soul Counselor"}
+      style={{
+        position: 'relative', overflow: 'hidden', marginBottom: 28, borderRadius: 28,
+        border: '1.5px solid rgba(0,229,255,0.30)',
+        background: 'radial-gradient(ellipse at 0% 0%, rgba(0,229,255,0.16), transparent 55%), radial-gradient(ellipse at 100% 100%, rgba(212,175,55,0.14), transparent 55%), #0A1628',
+        padding: 'clamp(24px,4vw,40px)',
+        display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))', gap: 'clamp(20px,3vw,36px)', alignItems: 'center',
+      }}
+    >
+      <div>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 14 }}>
+          <span style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#0A1628', background: CIANO, padding: '6px 12px', borderRadius: 99 }}>{pt ? 'Novo' : 'New'}</span>
+          <span style={{ fontSize: 11, fontWeight: 900, letterSpacing: '0.18em', textTransform: 'uppercase', color: CIANO, border: '1px solid rgba(0,229,255,0.4)', padding: '5px 12px', borderRadius: 99 }}>{pt ? '365 dias · Salmos' : '365 days · Psalms'}</span>
+        </div>
+        <h2 style={{ fontFamily: SERIFA, fontSize: 'clamp(36px,5.5vw,52px)', fontWeight: 900, letterSpacing: '-0.02em', lineHeight: 1.05, margin: '0 0 12px', color: '#fff' }}>
+          {pt ? 'Conselheiro da Alma' : 'Soul Counselor'} <span aria-hidden>🌳</span>
+        </h2>
+        <p style={{ fontSize: 'clamp(16px,1.9vw,18px)', lineHeight: 1.65, color: 'rgba(225,235,250,0.88)', margin: '0 0 18px', maxWidth: 520 }}>
+          {pt
+            ? '365 conversas nos Salmos para o coração cansado. Todos os 150 Salmos em um ano, de 1º de janeiro a 31 de dezembro: uma conversa pastoral que acolhe a alma, examina o coração e leva a Cristo.'
+            : '365 conversations in the Psalms for the weary heart. All 150 Psalms in one year, from January 1 to December 31: a pastoral conversation that welcomes the soul, examines the heart and leads to Christ.'}
+        </p>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+          {(pt ? ['🪑 Acolhimento', '🧠 Pensamentos', '❤️ Coração', '✝️ Cristo', '🙏 Oração'] : ['🪑 Welcome', '🧠 Thoughts', '❤️ Heart', '✝️ Christ', '🙏 Prayer']).map(t => (
+            <span key={t} style={{ fontSize: 14, color: 'rgba(225,235,250,0.9)', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.10)', padding: '5px 10px', borderRadius: 99 }}>{t}</span>
+          ))}
+        </div>
+      </div>
+
+      <div style={{ borderRadius: 20, padding: 'clamp(18px,2.5vw,26px)', background: 'rgba(10,22,40,0.75)', border: '1px solid rgba(212,175,55,0.40)' }}>
+        <div style={{ fontFamily: DISPLAY, fontSize: 11, fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', color: DOURADO, marginBottom: 8 }}>
+          {pt ? 'Hoje' : 'Today'} · {rotuloData(hoje)}
+        </div>
+        {est && plano && <div style={{ fontSize: 14, color: 'rgba(225,235,250,0.75)', marginBottom: 6 }}>{est.emoji} {est.nome} · {plano.tema_mes}</div>}
+        <div style={{ fontFamily: SERIFA, fontSize: 'clamp(21px,2.5vw,26px)', fontWeight: 800, lineHeight: 1.25, color: '#fff' }}>
+          {pub ? `${pub.titulo} ${pub.emoji}` : leituraHoje}
+        </div>
+        {pub && <div style={{ fontSize: 16, color: 'rgba(225,235,250,0.8)', marginTop: 4 }}>{leituraHoje}</div>}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginTop: 18 }}>
+          <button
+            type="button"
+            onClick={() => navigate(`/devocional/fala-alma/${hoje}`)}
+            style={{ minHeight: 48, borderRadius: 12, border: 'none', cursor: 'pointer', background: CIANO, color: '#0A1628', fontSize: 15, fontWeight: 900, letterSpacing: '0.06em', textTransform: 'uppercase' }}
+          >
+            {pt ? 'Abrir a leitura de hoje →' : "Open today's reading →"}
+          </button>
+          <button
+            type="button"
+            onClick={() => navigate('/devocional/fala-alma/calendario')}
+            style={{ minHeight: 44, borderRadius: 12, cursor: 'pointer', background: 'transparent', color: CIANO, border: '1px solid rgba(0,229,255,0.4)', fontSize: 14, fontWeight: 800 }}
+          >
+            {pt ? '📅 Abrir o calendário dos 365 dias' : '📅 Open the 365-day calendar'}
+          </button>
+        </div>
+      </div>
+    </motion.section>
+  );
+}
+
 // ─── Como funciona — 3 steps ──────────────────────────────────────────────────
 function ComoFunciona({ pt }: { pt: boolean }) {
   const steps = pt ? [
     { num: '1', titulo: 'Escolha seu devocional', texto: 'Cada devocional tem público, estrutura e ritmo próprios. Leia as descrições e escolha o que fala com sua estação de vida.' },
-    { num: '2', titulo: 'Siga a sequência', texto: 'Nenhum dia tem data fixa. Comece quando quiser — mas siga a ordem. O texto vai em sequência como foi escrito.' },
+    { num: '2', titulo: 'Siga o seu ritmo', texto: 'A maioria começa quando você quiser e segue a ordem do texto. O Conselheiro da Alma acompanha o calendário: cada data do ano tem o seu salmo.' },
     { num: '3', titulo: 'Transforme sua formação', texto: 'Cada dia é uma camada. Com o tempo, os temas, as conexões e a profundidade teológica moldam sua vida de dentro para fora.' },
   ] : [
     { num: '1', titulo: 'Choose your devotional', texto: 'Each devotional has its own audience, structure and rhythm. Read the descriptions and choose the one that speaks to your season.' },
-    { num: '2', titulo: 'Follow the sequence', texto: 'No day is tied to a date. Start whenever you want — but follow the order. The text runs in sequence as it was written.' },
+    { num: '2', titulo: 'Follow your rhythm', texto: 'Most start whenever you want and follow the order of the text. Soul Counselor follows the calendar: each date of the year has its psalm.' },
     { num: '3', titulo: 'Transform your formation', texto: 'Each day is a layer. Over time, the themes, connections and theological depth shape your life from the inside out.' },
   ];
 
@@ -358,8 +463,8 @@ function ComoFunciona({ pt }: { pt: boolean }) {
           }}>
             {s.num}
           </div>
-          <div style={{ fontSize: 15, fontWeight: 900, color: '#fff', marginBottom: 10, lineHeight: 1.3 }}>{s.titulo}</div>
-          <p style={{ margin: 0, fontSize: 13, color: 'rgba(200,200,255,0.52)', lineHeight: 1.82 }}>{s.texto}</p>
+          <div style={{ fontSize: 17, fontWeight: 900, color: '#fff', marginBottom: 10, lineHeight: 1.3 }}>{s.titulo}</div>
+          <p style={{ margin: 0, fontSize: 15, color: 'rgba(215,215,255,0.80)', lineHeight: 1.7 }}>{s.texto}</p>
         </motion.div>
       ))}
     </div>
@@ -369,11 +474,11 @@ function ComoFunciona({ pt }: { pt: boolean }) {
 // ─── Comparativo interativo ───────────────────────────────────────────────────
 function getComparativo(pt: boolean) {
   return [
-    { label: pt ? 'Cobertura bíblica' : 'Biblical coverage',   esp: pt ? 'AT + NT inteiros' : 'Full OT + NT',     fam: pt ? 'NT completo' : 'Full NT',        conf: 'CB 1689 + CFW' },
-    { label: pt ? 'Duração' : 'Duration',                       esp: pt ? 'Sem limite fixo' : 'No fixed limit',    fam: pt ? '365 dias' : '365 days',           conf: pt ? '365 dias' : '365 days' },
-    { label: pt ? 'Público-alvo' : 'Target audience',           esp: pt ? 'Todo cristão' : 'All Christians',       fam: pt ? 'Casais e famílias' : 'Couples & families', conf: pt ? 'Todo cristão' : 'All Christians' },
-    { label: pt ? 'Estrutura semanal' : 'Weekly structure',     esp: pt ? 'Diário expositivo' : 'Daily expository', fam: pt ? '5 leit. + apl. + mesa' : '5 readings + app. + table', conf: pt ? 'Diário temático' : 'Daily thematic' },
-    { label: pt ? 'Reflexão especial' : 'Special reflection',   esp: pt ? 'Quiástica + hebraico' : 'Chiastic + Hebrew',  fam: pt ? 'Homem / Mulher / Filhos' : 'Man / Woman / Children', conf: pt ? 'Confissional histórica' : 'Historic confessional' },
+    { label: pt ? 'Cobertura bíblica' : 'Biblical coverage',   esp: pt ? 'AT + NT inteiros' : 'Full OT + NT',     fam: pt ? 'NT completo' : 'Full NT',        alma: pt ? 'Os 150 Salmos' : 'All 150 Psalms', conf: 'CB 1689 + CFW' },
+    { label: pt ? 'Duração' : 'Duration',                       esp: pt ? 'Sem limite fixo' : 'No fixed limit',    fam: pt ? '365 dias' : '365 days',           alma: pt ? '365 dias, pelo calendário' : '365 days, by calendar', conf: pt ? '365 dias' : '365 days' },
+    { label: pt ? 'Público-alvo' : 'Target audience',           esp: pt ? 'Todo cristão' : 'All Christians',       fam: pt ? 'Casais e famílias' : 'Couples & families', alma: pt ? 'Quem precisa de cuidado' : 'Anyone needing care', conf: pt ? 'Todo cristão' : 'All Christians' },
+    { label: pt ? 'Estrutura' : 'Structure',                    esp: pt ? 'Diário expositivo' : 'Daily expository', fam: pt ? '5 leit. + apl. + mesa' : '5 readings + app. + table', alma: pt ? 'Diálogo em 8 fases' : '8-phase dialogue', conf: pt ? 'Diário temático' : 'Daily thematic' },
+    { label: pt ? 'Reflexão especial' : 'Special reflection',   esp: pt ? 'Quiástica + hebraico' : 'Chiastic + Hebrew',  fam: pt ? 'Homem / Mulher / Filhos' : 'Man / Woman / Children', alma: pt ? 'Aconselhamento bíblico' : 'Biblical counseling', conf: pt ? 'Confissional histórica' : 'Historic confessional' },
   ];
 }
 
@@ -382,21 +487,22 @@ function TabelaComparativa({ pt }: { pt: boolean }) {
   const cores = [
     { cor: 'rgba(0,212,255,1)', rgb: '0,212,255' },
     { cor: 'rgba(251,113,133,1)', rgb: '251,113,133' },
+    { cor: 'rgba(0,229,255,1)', rgb: '0,229,255' },
     { cor: 'rgba(167,139,250,1)', rgb: '167,139,250' },
   ];
-  const headers = pt ? ['Espelhado', 'Familiar', 'Confessional'] : ['Mirror', 'Family', 'Confessional'];
+  const headers = pt ? ['Espelhado', 'Familiar', 'Conselheiro da Alma', 'Confessional'] : ['Mirror', 'Family', 'Soul Counselor', 'Confessional'];
   const COMPARATIVO = getComparativo(pt);
 
   return (
     <div style={{ overflowX: 'auto' }}>
-      <table style={{ width: '100%', borderCollapse: 'collapse', minWidth: 520 }}>
+      <table style={{ width: '100%', borderCollapse: 'collapse', minWidth: 640 }}>
         <thead>
           <tr>
-            <th style={{ padding: '12px 16px', textAlign: 'left', fontSize: 10, fontWeight: 900, letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(200,200,255,0.40)', width: '24%' }}>
+            <th style={{ padding: '12px 16px', textAlign: 'left', fontSize: 10, fontWeight: 900, letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(215,215,255,0.70)', width: '20%' }}>
               {pt ? 'Aspecto' : 'Aspect'}
             </th>
             {headers.map((h, i) => (
-              <th key={h} style={{ padding: '12px 16px', textAlign: 'left', fontSize: 11, fontWeight: 900, color: cores[i].cor, borderBottom: `2px solid rgba(${cores[i].rgb},0.25)` }}>
+              <th key={h} style={{ padding: '12px 16px', textAlign: 'left', fontSize: 13, fontWeight: 900, color: cores[i].cor, borderBottom: `2px solid rgba(${cores[i].rgb},0.25)` }}>
                 {h}
               </th>
             ))}
@@ -411,11 +517,11 @@ function TabelaComparativa({ pt }: { pt: boolean }) {
               animate={{ background: ativo === r ? 'rgba(255,255,255,0.03)' : 'transparent' }}
               style={{ cursor: 'default', borderRadius: 8 }}
             >
-              <td style={{ padding: '12px 16px', fontSize: 12, fontWeight: 700, color: 'rgba(200,200,255,0.50)', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
+              <td style={{ padding: '12px 16px', fontSize: 14, fontWeight: 700, color: 'rgba(215,215,255,0.75)', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
                 {row.label}
               </td>
-              {[row.esp, row.fam, row.conf].map((val, i) => (
-                <td key={i} style={{ padding: '12px 16px', fontSize: 13, color: ativo === r ? cores[i].cor : 'rgba(210,205,255,0.72)', fontWeight: ativo === r ? 700 : 500, borderBottom: '1px solid rgba(255,255,255,0.05)', transition: 'color 0.2s' }}>
+              {[row.esp, row.fam, row.alma, row.conf].map((val, i) => (
+                <td key={i} style={{ padding: '12px 16px', fontSize: 14, color: ativo === r ? cores[i].cor : 'rgba(225,222,255,0.88)', fontWeight: ativo === r ? 700 : 500, borderBottom: '1px solid rgba(255,255,255,0.05)', transition: 'color 0.2s' }}>
                   {val}
                 </td>
               ))}
@@ -430,13 +536,14 @@ function TabelaComparativa({ pt }: { pt: boolean }) {
 // ─── FAQ ─────────────────────────────────────────────────────────────────────
 function getFaqs(pt: boolean) {
   return pt ? [
-    { q: 'Posso usar mais de um devocional ao mesmo tempo?', r: 'Sim — cada devocional é independente. Você pode acessar os três simultaneamente e navegar entre eles livremente.' },
-    { q: 'Os dias têm datas fixas?', r: 'Não. Nenhum dia tem data fixa. Comece quando quiser e siga a sequência no seu próprio ritmo.' },
+    { q: 'Posso usar mais de um devocional ao mesmo tempo?', r: 'Sim — cada devocional é independente. Você pode fazer mais de um ao mesmo tempo e navegar entre eles livremente.' },
+    { q: 'Os dias têm datas fixas?', r: 'Só no Conselheiro da Alma: ele começa em 1º de janeiro e cada data do ano tem o seu salmo, em qualquer ano. Nos outros, comece quando quiser e siga a sequência no seu ritmo.' },
+    { q: 'O Conselheiro da Alma substitui aconselhamento ou tratamento?', r: 'Não. Ele é uma conversa pastoral a partir dos Salmos. Em temas pesados, a página lembra: procure seu pastor ou conselheiro e um profissional de saúde.' },
     { q: 'O Devocional Familiar é só para casados?', r: 'Não — é para namorados, noivos e casados. As reflexões por "Homem" e "Mulher" se aplicam a qualquer relação de aliança conjugal em qualquer etapa.' },
     { q: 'O Devocional Confessional é só para batistas?', r: 'Não. A Confissão Batista de 1689 e a Confissão de Westminster compartilham quase toda a teologia reformada. É útil para qualquer cristão que queira enraizamento histórico.' },
   ] : [
-    { q: 'Can I use more than one devotional at the same time?', r: 'Yes — each devotional is independent. You can access all three simultaneously and navigate between them freely.' },
-    { q: 'Do the days have fixed dates?', r: 'No. No day is tied to a calendar date. Start whenever you want and follow the sequence at your own pace.' },
+    { q: 'Can I use more than one devotional at the same time?', r: 'Yes — each devotional is independent. You can follow more than one at once and move between them freely.' },
+    { q: 'Do the days have fixed dates?', r: 'Only Soul Counselor: it starts on January 1 and each date of the year has its psalm, in any year. For the others, start whenever you want and follow the sequence at your own pace.' },
     { q: 'Is the Family Devotional only for married couples?', r: 'No — it is for dating, engaged, and married couples. The "Man" and "Woman" reflections apply to any covenantal relationship at any stage.' },
     { q: 'Is the Confessional Devotional only for Baptists?', r: 'No. The 1689 Baptist Confession and the Westminster Confession share nearly all Reformed theology. It is useful for any Christian seeking historical rootedness.' },
   ];
@@ -456,7 +563,7 @@ function FAQItem({ item, index }: { item: { q: string; r: string }; index: numbe
         onClick={() => setAberto(v => !v)}
         style={{ width: '100%', background: 'none', border: 'none', cursor: 'pointer', padding: '18px 20px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 16, textAlign: 'left' }}
       >
-        <span style={{ fontSize: 14, fontWeight: 700, color: aberto ? '#fff' : 'rgba(210,205,255,0.80)', lineHeight: 1.4 }}>{item.q}</span>
+        <span style={{ fontSize: 16, fontWeight: 700, color: aberto ? '#fff' : 'rgba(225,222,255,0.90)', lineHeight: 1.4 }}>{item.q}</span>
         <motion.span
           animate={{ rotate: aberto ? 180 : 0, color: aberto ? 'rgba(167,139,250,1)' : 'rgba(200,200,255,0.35)' }}
           transition={{ duration: 0.22 }}
@@ -473,7 +580,7 @@ function FAQItem({ item, index }: { item: { q: string; r: string }; index: numbe
             style={{ overflow: 'hidden' }}
           >
             <div style={{ padding: '0 20px 18px' }}>
-              <p style={{ margin: 0, fontSize: 14, color: 'rgba(200,200,255,0.62)', lineHeight: 1.80 }}>{item.r}</p>
+              <p style={{ margin: 0, fontSize: 15, color: 'rgba(215,215,255,0.82)', lineHeight: 1.75 }}>{item.r}</p>
             </div>
           </motion.div>
         )}
@@ -511,7 +618,7 @@ export default function DevocionalHubPage() {
             🕊️
           </motion.div>
 
-          <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.40em', textTransform: 'uppercase', color: 'rgba(167,139,250,0.70)', marginBottom: 14 }}>
+          <div style={{ fontSize: 12, fontWeight: 900, letterSpacing: '0.36em', textTransform: 'uppercase', color: 'rgba(167,139,250,0.95)', marginBottom: 14 }}>
             {pt ? 'Formação espiritual' : 'Spiritual formation'}
           </div>
 
@@ -528,10 +635,10 @@ export default function DevocionalHubPage() {
             <VideoIntro pt={pt} />
           </div>
 
-          <p style={{ fontSize: 'clamp(14px,1.9vw,17px)', color: 'rgba(200,200,255,0.52)', lineHeight: 1.85, maxWidth: 580, margin: '0 auto 32px' }}>
+          <p style={{ fontSize: 'clamp(16px,1.9vw,18px)', color: 'rgba(215,215,255,0.80)', lineHeight: 1.75, maxWidth: 600, margin: '0 auto 32px' }}>
             {pt
-              ? 'Caminhos de formação espiritual — expositivo, familiar e confessional. Cada um tem estrutura, ritmo e público próprios.'
-              : 'Paths of spiritual formation — expository, family, and confessional. Each has its own structure, rhythm, and audience.'}
+              ? 'Caminhos de formação espiritual — expositivo, familiar, pastoral e confessional. Cada um tem estrutura, ritmo e público próprios.'
+              : 'Paths of spiritual formation — expository, family, pastoral, and confessional. Each has its own structure, rhythm, and audience.'}
           </p>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: 16, maxWidth: 280, margin: '0 auto' }}>
@@ -541,15 +648,31 @@ export default function DevocionalHubPage() {
           </div>
         </motion.div>
 
-        {/* ── Como funciona ── 3 steps above cards */}
+        {/* ── Destaque do dia: Conselheiro da Alma ── */}
+        <DestaqueFalaAlma pt={pt} />
+
+        {/* ── Cards grid 2 columns ── */}
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 440px), 1fr))',
+          gap: 24,
+          marginBottom: 64,
+          alignItems: 'stretch',
+        }}>
+          {DEVOCIONAIS.filter(d => d.id !== 'fala-alma').map((dev, i) => (
+            <CardDevocional key={dev.id} dev={dev} index={i} pt={pt} />
+          ))}
+        </div>
+
+        {/* ── Como funciona ── */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          style={{ marginBottom: 52 }}
+          style={{ marginBottom: 64 }}
         >
           <div style={{ textAlign: 'center', marginBottom: 28 }}>
-            <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.34em', textTransform: 'uppercase', color: 'rgba(167,139,250,0.60)', marginBottom: 8 }}>
+            <div style={{ fontSize: 12, fontWeight: 900, letterSpacing: '0.30em', textTransform: 'uppercase', color: 'rgba(167,139,250,0.90)', marginBottom: 8 }}>
               {pt ? 'Guia rápido' : 'Quick guide'}
             </div>
             <h2 style={{ fontSize: 'clamp(18px,2.6vw,24px)', fontWeight: 900, color: '#fff', margin: 0 }}>
@@ -558,19 +681,6 @@ export default function DevocionalHubPage() {
           </div>
           <ComoFunciona pt={pt} />
         </motion.div>
-
-        {/* ── Cards grid 2 columns ── */}
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 440px), 1fr))',
-          gap: 24,
-          marginBottom: 72,
-          alignItems: 'stretch',
-        }}>
-          {DEVOCIONAIS.map((dev, i) => (
-            <CardDevocional key={dev.id} dev={dev} index={i} pt={pt} />
-          ))}
-        </div>
 
         {/* ── Comparativo ── */}
         <motion.div
@@ -591,8 +701,8 @@ export default function DevocionalHubPage() {
           >
             <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
               <span style={{ fontSize: 18 }}>📊</span>
-              <span style={{ fontSize: 13, fontWeight: 900, color: comparativoAberto ? 'rgba(167,139,250,1)' : 'rgba(200,200,255,0.65)', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
-                {pt ? 'Comparar os três devocionais' : 'Compare the three devotionals'}
+              <span style={{ fontSize: 13, fontWeight: 900, color: comparativoAberto ? 'rgba(167,139,250,1)' : 'rgba(215,215,255,0.88)', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
+                {pt ? 'Comparar os devocionais' : 'Compare the devotionals'}
               </span>
             </div>
             <motion.span
@@ -629,7 +739,7 @@ export default function DevocionalHubPage() {
           style={{ marginBottom: 64 }}
         >
           <div style={{ textAlign: 'center', marginBottom: 36 }}>
-            <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.34em', textTransform: 'uppercase', color: 'rgba(167,139,250,0.60)', marginBottom: 10 }}>
+            <div style={{ fontSize: 12, fontWeight: 900, letterSpacing: '0.30em', textTransform: 'uppercase', color: 'rgba(167,139,250,0.90)', marginBottom: 10 }}>
               {pt ? 'Princípios' : 'Principles'}
             </div>
             <h2 style={{ fontSize: 'clamp(20px,3vw,28px)', fontWeight: 900, color: '#fff', margin: 0 }}>
@@ -639,14 +749,14 @@ export default function DevocionalHubPage() {
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(min(100%,220px),1fr))', gap: 16 }}>
             {(pt ? [
-              { icon: '🗓️', titulo: 'Sem data fixa', texto: 'Nenhum dia está amarrado a uma data do calendário. Comece quando quiser e siga no seu ritmo.' },
+              { icon: '🗓️', titulo: 'No seu ritmo', texto: 'Comece quando quiser e siga no seu ritmo — ou acompanhe o calendário com o Conselheiro da Alma, um salmo para cada data do ano.' },
               { icon: '📋', titulo: 'Sequencial', texto: 'O texto vai em ordem — sem pular, sem recortar. A Bíblia é lida como foi escrita: do início ao fim.' },
-              { icon: '🔓', titulo: 'Independentes', texto: 'Os três devocionais são totalmente independentes. Você pode acessar qualquer um a qualquer momento.' },
+              { icon: '🔓', titulo: 'Independentes', texto: 'Os devocionais são totalmente independentes. Você pode acessar qualquer um a qualquer momento.' },
               { icon: '🏠', titulo: 'Para o lar', texto: 'Pensados para serem feitos em família ou em casal — mas individualmente também funcionam.' },
             ] : [
-              { icon: '🗓️', titulo: 'No fixed date', texto: 'No day is tied to a calendar date. Start whenever you want and follow at your own pace.' },
+              { icon: '🗓️', titulo: 'Your own pace', texto: 'Start whenever you want and go at your own pace — or follow the calendar with Soul Counselor, one psalm for each date of the year.' },
               { icon: '📋', titulo: 'Sequential', texto: 'The text goes in order — no skipping, no cutting. The Bible is read as it was written: from beginning to end.' },
-              { icon: '🔓', titulo: 'Independent', texto: 'The three devotionals are completely independent. You can access any of them at any time.' },
+              { icon: '🔓', titulo: 'Independent', texto: 'The devotionals are completely independent. You can access any of them at any time.' },
               { icon: '🏠', titulo: 'For the home', texto: 'Designed to be done as a family or couple — but they also work individually.' },
             ]).map((item, i) => (
               <motion.div
@@ -658,8 +768,8 @@ export default function DevocionalHubPage() {
                 style={{ borderRadius: 18, border: '1px solid rgba(255,255,255,0.07)', background: 'rgba(255,255,255,0.02)', padding: 'clamp(18px,2.5vw,24px)' }}
               >
                 <div style={{ fontSize: 28, marginBottom: 12 }}>{item.icon}</div>
-                <div style={{ fontSize: 14, fontWeight: 900, color: '#fff', marginBottom: 8 }}>{item.titulo}</div>
-                <p style={{ margin: 0, fontSize: 13, color: 'rgba(200,200,255,0.55)', lineHeight: 1.80 }}>{item.texto}</p>
+                <div style={{ fontSize: 16, fontWeight: 900, color: '#fff', marginBottom: 8 }}>{item.titulo}</div>
+                <p style={{ margin: 0, fontSize: 15, color: 'rgba(215,215,255,0.80)', lineHeight: 1.7 }}>{item.texto}</p>
               </motion.div>
             ))}
           </div>
@@ -673,7 +783,7 @@ export default function DevocionalHubPage() {
           style={{ marginBottom: 64 }}
         >
           <div style={{ textAlign: 'center', marginBottom: 32 }}>
-            <div style={{ fontSize: 10, fontWeight: 900, letterSpacing: '0.34em', textTransform: 'uppercase', color: 'rgba(167,139,250,0.60)', marginBottom: 10 }}>
+            <div style={{ fontSize: 12, fontWeight: 900, letterSpacing: '0.30em', textTransform: 'uppercase', color: 'rgba(167,139,250,0.90)', marginBottom: 10 }}>
               {pt ? 'Perguntas' : 'Questions'}
             </div>
             <h2 style={{ fontSize: 'clamp(20px,3vw,28px)', fontWeight: 900, color: '#fff', margin: 0 }}>
@@ -697,10 +807,10 @@ export default function DevocionalHubPage() {
             <div style={{ width: 5, height: 5, borderRadius: '50%', background: 'rgba(167,139,250,0.40)' }} />
             <div style={{ flex: 1, height: 1, background: 'rgba(167,139,250,0.14)' }} />
           </div>
-          <p style={{ fontSize: 13, color: 'rgba(200,200,255,0.28)', lineHeight: 1.8, margin: 0, maxWidth: 480, marginLeft: 'auto', marginRight: 'auto' }}>
+          <p style={{ fontSize: 14, color: 'rgba(215,215,255,0.62)', lineHeight: 1.8, margin: 0, maxWidth: 480, marginLeft: 'auto', marginRight: 'auto' }}>
             {pt
-              ? <>Cada devocional é independente — você pode acessar os três simultaneamente.<br />Nenhum dia tem data fixa; comece quando quiser e siga a sequência.</>
-              : <>Each devotional is independent — you can access all three simultaneously.<br />No day has a fixed date; start whenever you want and follow the sequence.</>}
+              ? <>Cada devocional é independente — você pode fazer mais de um ao mesmo tempo.<br />Comece quando quiser e siga a sequência — ou acompanhe o calendário com o Conselheiro da Alma.</>
+              : <>Each devotional is independent — you can follow more than one at once.<br />Start whenever you want and follow the sequence — or follow the calendar with Soul Counselor.</>}
           </p>
         </motion.div>
 

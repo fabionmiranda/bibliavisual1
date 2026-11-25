@@ -183,6 +183,18 @@ function getAreas(pt: boolean): AreaCard[] {
         : ['Law of God', 'Natural Law', 'Human Rights', 'Religious Liberty', 'Justice', 'Legal Vocation'],
     },
     {
+      slug: 'confessional',
+      titulo: pt ? 'Teologia Confessional' : 'Confessional Theology',
+      descricao: pt
+        ? 'A história das confissões de fé e das igrejas reformadas e confessionais: dos credos da Igreja antiga a Westminster, às Três Formas de Unidade e à Confissão Batista de 1689 — e por que confessar a fé ainda importa.'
+        : 'The history of the confessions of faith and of the Reformed and historic confessional churches: from the creeds of the early Church to Westminster, the Three Forms of Unity and the 1689 Baptist Confession — and why confessing the faith still matters.',
+      icon: '📜',
+      cor: '#f59e0b',
+      tags: pt
+        ? ['Credos', 'Três Formas de Unidade', 'Westminster', 'Batista de 1689', 'Igrejas Reformadas', 'Subscrição']
+        : ['Creeds', 'Three Forms of Unity', 'Westminster', '1689 Baptist', 'Reformed Churches', 'Subscription'],
+    },
+    {
       slug: 'aulas-avancadas',
       titulo: pt ? 'Aulas Avançadas' : 'Advanced Classes',
       descricao: pt

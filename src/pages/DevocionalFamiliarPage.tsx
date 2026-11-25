@@ -145,9 +145,113 @@ function estacaoDeHoje(dia: number) {
 // ─── Conteúdo expandido de um dia ────────────────────────────────────────────
 // ─── Animações por dia (YouTube) ──────────────────────────────────────────────
 // Aceita: youtube.com/watch?v=ID, youtu.be/ID, youtube.com/shorts/ID, youtube.com/embed/ID ou só o ID.
-// O vídeo aparece como botão "Assistir no YouTube" ao lado do texto bíblico.
-// Dia com '' → mostra "Vídeo em breve" nesse lugar; basta colar o link depois.
+// Estações III e IV (dias 183–365): o cartão "Vídeo do dia" tem os botões "Assistir aqui" (player embutido)
+// e "Abrir no YouTube". Dia com '' → mostra "Vídeo em breve" com os botões desativados; basta colar o link depois.
 const VIDEOS_FAMILIAR: Record<number, string> = {
+  // Semana 27
+  183: '', // Romanos 14
+  184: '', // Romanos 15
+  185: '', // Romanos 16
+  186: '', // 1 Coríntios 1
+  187: '', // 1 Coríntios 2
+  188: '', // Aplicação da Semana 27
+  189: '', // Mesa da Aliança — Semana 27
+  // Semana 28
+  190: '', // 1 Coríntios 3
+  191: '', // 1 Coríntios 4
+  192: '', // 1 Coríntios 5
+  193: '', // 1 Coríntios 6
+  194: '', // 1 Coríntios 7
+  195: '', // Aplicação da Semana 28
+  196: '', // Mesa da Aliança — Semana 28
+  // Semana 29
+  197: '', // 1 Coríntios 8
+  198: '', // 1 Coríntios 9
+  199: '', // 1 Coríntios 10
+  200: '', // 1 Coríntios 11
+  201: '', // 1 Coríntios 12
+  202: '', // Aplicação da Semana 29
+  203: '', // Mesa da Aliança — Semana 29
+  // Semana 30
+  204: '', // 1 Coríntios 13
+  205: '', // 1 Coríntios 14
+  206: '', // 1 Coríntios 15
+  207: '', // 1 Coríntios 16
+  208: '', // 2 Coríntios 1
+  209: '', // Aplicação da Semana 30
+  210: '', // Mesa da Aliança — Semana 30
+  // Semana 31
+  211: '', // 2 Coríntios 2
+  212: '', // 2 Coríntios 3
+  213: '', // 2 Coríntios 4
+  214: '', // 2 Coríntios 5
+  215: '', // 2 Coríntios 6
+  216: '', // Aplicação da Semana 31
+  217: '', // Mesa da Aliança — Semana 31
+  // Semana 32
+  218: '', // 2 Coríntios 7
+  219: '', // 2 Coríntios 8
+  220: '', // 2 Coríntios 9
+  221: '', // 2 Coríntios 10
+  222: '', // 2 Coríntios 11
+  223: '', // Aplicação da Semana 32
+  224: '', // Mesa da Aliança — Semana 32
+  // Semana 33
+  225: '', // 2 Coríntios 12
+  226: '', // 2 Coríntios 13
+  227: '', // Gálatas 1
+  228: '', // Gálatas 2
+  229: '', // Gálatas 3
+  230: '', // Aplicação da Semana 33
+  231: '', // Mesa da Aliança — Semana 33
+  // Semana 34
+  232: '', // Gálatas 4
+  233: '', // Gálatas 5
+  234: '', // Gálatas 6
+  235: '', // Efésios 1
+  236: '', // Efésios 2
+  237: '', // Aplicação da Semana 34
+  238: '', // Mesa da Aliança — Semana 34
+  // Semana 35
+  239: '', // Efésios 3
+  240: '', // Efésios 4
+  241: '', // Efésios 5
+  242: '', // Efésios 6
+  243: '', // Filipenses 1
+  244: '', // Aplicação da Semana 35
+  245: '', // Mesa da Aliança — Semana 35
+  // Semana 36
+  246: '', // Filipenses 2
+  247: '', // Filipenses 3
+  248: '', // Filipenses 4
+  249: '', // Colossenses 1
+  250: '', // Colossenses 2
+  251: '', // Aplicação da Semana 36
+  252: '', // Mesa da Aliança — Semana 36
+  // Semana 37
+  253: '', // Colossenses 3
+  254: '', // Colossenses 4
+  255: '', // 1 Tessalonicenses 1
+  256: '', // 1 Tessalonicenses 2
+  257: '', // 1 Tessalonicenses 3
+  258: '', // Aplicação da Semana 37
+  259: '', // Mesa da Aliança — Semana 37
+  // Semana 38
+  260: '', // 1 Tessalonicenses 4
+  261: '', // 1 Tessalonicenses 5
+  262: '', // 2 Tessalonicenses 1
+  263: '', // 2 Tessalonicenses 2
+  264: '', // 2 Tessalonicenses 3
+  265: '', // Aplicação da Semana 38
+  266: '', // Mesa da Aliança — Semana 38
+  // Semana 39
+  267: '', // 1 Timóteo 1
+  268: '', // 1 Timóteo 2
+  269: '', // 1 Timóteo 3
+  270: '', // 1 Timóteo 4
+  271: '', // 1 Timóteo 5
+  272: '', // Aplicação da Semana 39
+  273: '', // Mesa da Aliança — Semana 39
   // Semana 40
   274: '', // 1 Timóteo 6
   275: '', // 2 Timóteo 1
@@ -368,14 +472,15 @@ function TextoBiblicoLink({ t }: { t: NonNullable<DiaFamiliar['textoBiblico']> }
   );
 }
 
-/* Cartão do vídeo do dia, ao lado do link do texto bíblico.
-   Com link: "Abrir no YouTube ↗" e uma aba "Assistir aqui" que abre o player embutido.
-   Dia com '' em VIDEOS_FAMILIAR mostra "Vídeo em breve"; dia ausente não mostra nada. */
+/* Cartão do vídeo do dia, ao lado do link do texto bíblico — mesmo padrão em todos os dias com entrada em VIDEOS_FAMILIAR.
+   Botões "Assistir aqui" (abre o player embutido) e "Abrir no YouTube ↗".
+   Dia com '' mostra os mesmos botões desativados até o link ser colado; dia ausente não mostra nada. */
 function VideoYoutubeLink({ d, aberto, onAlternar }: { d: DiaFamiliar; aberto: boolean; onAlternar: () => void }) {
   const url = VIDEOS_FAMILIAR[d.dia];
   if (url === undefined) return null;
   const id = url ? youtubeId(url) : null;
   const VERMELHO = 'rgba(248,113,113,1)';
+  const APAGADO = 'rgba(230,228,255,0.45)';
   const estilo = {
     display: 'flex', flexDirection: 'column', gap: 12, padding: '14px 18px', borderRadius: 14,
     background: id ? 'linear-gradient(135deg, rgba(248,113,113,0.14), rgba(248,113,113,0.04))' : 'rgba(255,255,255,0.04)',
@@ -383,11 +488,12 @@ function VideoYoutubeLink({ d, aberto, onAlternar }: { d: DiaFamiliar; aberto: b
   } as const;
   const botao = {
     flex: '1 1 140px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6,
-    padding: '8px 12px', borderRadius: 10, fontSize: 15, fontWeight: 800, cursor: 'pointer',
+    padding: '8px 12px', borderRadius: 10, fontSize: 15, fontWeight: 800,
     textDecoration: 'none', whiteSpace: 'nowrap',
   } as const;
+  const botaoInativo = { ...botao, color: APAGADO, background: 'transparent', border: '1px dashed rgba(255,255,255,0.18)', cursor: 'not-allowed' } as const;
   return (
-    <div style={estilo} title={id ? undefined : 'O link do vídeo será publicado em breve'}>
+    <div style={estilo}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
         <span style={{ width: 34, height: 24, borderRadius: 7, background: id ? '#ff0033' : 'rgba(255,255,255,0.12)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
           <span style={{ width: 0, height: 0, marginLeft: 2, borderTop: '6px solid transparent', borderBottom: '6px solid transparent', borderLeft: `10px solid ${id ? '#fff' : 'rgba(255,255,255,0.45)'}` }} />
@@ -401,27 +507,34 @@ function VideoYoutubeLink({ d, aberto, onAlternar }: { d: DiaFamiliar; aberto: b
           </span>
         </span>
       </div>
-      {id && (
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
-          <button
-            type="button"
-            onClick={onAlternar}
-            aria-expanded={aberto}
-            style={{ ...botao, color: aberto ? '#fff' : VERMELHO, background: aberto ? 'rgba(248,113,113,0.30)' : 'rgba(248,113,113,0.10)', border: `1px solid ${aberto ? 'rgba(248,113,113,0.70)' : 'rgba(248,113,113,0.40)'}` }}
-          >
-            {aberto ? 'Fechar vídeo ▴' : 'Assistir aqui ▾'}
-          </button>
-          <a
-            href={`https://www.youtube.com/watch?v=${id}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            title={`Assistir a animação de ${d.leitura} no YouTube`}
-            style={{ ...botao, color: VERMELHO, background: 'transparent', border: '1px solid rgba(248,113,113,0.40)' }}
-          >
-            Abrir no YouTube ↗
-          </a>
-        </div>
-      )}
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+        {id ? (
+          <>
+            <button
+              type="button"
+              onClick={onAlternar}
+              aria-expanded={aberto}
+              style={{ ...botao, cursor: 'pointer', color: aberto ? '#fff' : VERMELHO, background: aberto ? 'rgba(248,113,113,0.30)' : 'rgba(248,113,113,0.10)', border: `1px solid ${aberto ? 'rgba(248,113,113,0.70)' : 'rgba(248,113,113,0.40)'}` }}
+            >
+              {aberto ? 'Fechar vídeo ▴' : 'Assistir aqui ▾'}
+            </button>
+            <a
+              href={`https://www.youtube.com/watch?v=${id}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              title={`Assistir a animação de ${d.leitura} no YouTube`}
+              style={{ ...botao, color: VERMELHO, background: 'transparent', border: '1px solid rgba(248,113,113,0.40)' }}
+            >
+              Abrir no YouTube ↗
+            </a>
+          </>
+        ) : (
+          <>
+            <button type="button" disabled title="O vídeo será publicado em breve" style={botaoInativo}>Assistir aqui ▾</button>
+            <span aria-disabled="true" title="O link do YouTube será publicado em breve" style={botaoInativo}>Abrir no YouTube ↗</span>
+          </>
+        )}
+      </div>
     </div>
   );
 }

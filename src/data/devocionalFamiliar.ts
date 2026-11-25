@@ -2948,15 +2948,15 @@ export const DEVOCIONAL_FAMILIAR: DiaFamiliar[] = [
     subtema: `Cada um de nós dará conta de si mesmo a Deus`,
     tema: `Os Fortes e os Fracos`,
     tipo: 'devocional',
-    perguntaGancho: `Já houve um momento em que vocês julgaram um ao outro por algo que, na verdade, era apenas diferença de convicção — não pecado? Como isso afetou a paz do lar?`,
-    reflexaoTexto: `Romanos 14 enfrenta um conflito real na igreja de Roma: crentes maduros que comiam de tudo e crentes mais fracos que se abstinham de carnes oferecidas a ídolos. Paulo não resolve o conflito declarando um lado vencedor — ele apela para algo maior: a consciência diante de Deus. "Cada um de nós dará conta de si mesmo a Deus" (v.12). O princípio transformador é duplo: não desprezar quem é mais restritivo, e não julgar quem tem mais liberdade. No casamento, vocês carregam histórias diferentes, convicções diferentes, velocidades diferentes na fé — e o capítulo inteiro diz: o mais forte acolhe o mais fraco sem contenda, porque Cristo acolheu a ambos.`,
-    perguntaGeradora: `Em que área do lar — práticas espirituais, hábitos, decisões de consciência — vocês têm tendência de julgar um ao outro em vez de acolher? O que Romanos 14 diria sobre isso?`,
-    reflexaoHomem: `Como marido, Paulo diz que o forte não deve "destruir com sua comida aquele por quem Cristo morreu" (v.15). Há alguma liberdade que você exercita que, mesmo sendo legítima, tem colocado tropeço na jornada da sua esposa?`,
-    reflexaoMulher: `Como esposa, Paulo exorta: "Não julgueis mais uns aos outros" (v.13). Há alguma área em que você tem julgado seu marido por uma convicção que é sua, não necessariamente a dele? Como a graça muda esse olhar?`,
-    reflexaoFilhos: `Filhos, Paulo diz que o reino de Deus não é comida nem bebida, mas justiça, paz e alegria no Espírito Santo (v.17). Isso significa que o mais importante na vida cristã não são as regras externas, mas o coração. Qual é o estado do coração de vocês hoje?`,
-    compromissoPratico: `Cada um identifique uma área em que tem julgado ou se sentido julgado pelo cônjuge. Conversem com honestidade e graça sobre como acolher a diferença sem exigir conformidade naquilo que não é claro na Escritura.`,
-    oracaoAlianca: `Senhor, obrigado por nos acolher como somos — fracos e fortes, rápidos e lentos. Guarda-nos do orgulho de quem se sente mais maduro e do ressentimento de quem se sente pressionado. Que o nosso lar seja marcado por paz, alegria e edificação mútua, não por julgamento. Em nome de Jesus, amém.`,
-    leituraComplementar: `Romanos 15.7 — "Recebei-vos uns aos outros, como também Cristo nos recebeu para a glória de Deus."`,
+    perguntaGancho: `Já houve um momento em que vocês julgaram um ao outro por algo que, na verdade, era **apenas diferença de convicção — não pecado**? Como isso afetou a paz do lar?`,
+    reflexaoTexto: `Romanos 14 enfrenta um conflito real na igreja de Roma: crentes que comiam de tudo e crentes mais fracos que se abstinham de carnes oferecidas a ídolos. Paulo não resolve o conflito declarando um lado vencedor — ele apela para algo maior: **a consciência diante de Deus**. "[[Cada um de nós dará conta de si mesmo a Deus]]" (v.12).\n\nO princípio é duplo: !!não desprezar quem é mais restritivo, e não julgar quem tem mais liberdade!!.\n\nNo casamento, vocês carregam histórias diferentes, convicções diferentes, velocidades diferentes na fé — e o capítulo inteiro diz: ++o mais forte acolhe o mais fraco sem contenda++, porque **Cristo acolheu a ambos**.`,
+    perguntaGeradora: `Em que área do lar — práticas espirituais, hábitos, decisões de consciência — vocês têm tendência de **julgar um ao outro em vez de acolher**? O que Romanos 14 diria sobre isso?`,
+    reflexaoHomem: `Como marido, Paulo diz que o forte não deve "[[destruir com sua comida aquele por quem Cristo morreu]]" (v.15). Há alguma liberdade que você exercita que, mesmo sendo legítima, **tem colocado tropeço** na jornada da sua esposa?`,
+    reflexaoMulher: `Como esposa, Paulo exorta: "[[Não nos julguemos mais uns aos outros]]" (v.13). Há alguma área em que você tem julgado seu marido por uma convicção que é sua, não necessariamente a dele? ++Como a graça muda esse olhar?++`,
+    reflexaoFilhos: `Filhos, Paulo diz que "[[o reino de Deus não é comida nem bebida, mas justiça, e paz, e alegria no Espírito Santo]]" (v.17). Isso significa que **o mais importante na vida cristã não são as regras externas, mas o coração**. Como está o coração de vocês hoje?`,
+    compromissoPratico: `++Cada um identifique uma área em que tem julgado ou se sentido julgado pelo cônjuge.++\n\nConversem com honestidade e graça sobre como **acolher a diferença sem exigir conformidade** naquilo que não é claro na Escritura.`,
+    oracaoAlianca: `Senhor, obrigado por nos acolher como somos — fracos e fortes, rápidos e lentos. Guarda-nos !!do orgulho de quem se sente mais maduro e do ressentimento de quem se sente pressionado!!. Que o nosso lar seja marcado por **paz, alegria e edificação mútua**, não por julgamento. Em nome de Jesus, amém.`,
+    leituraComplementar: `Romanos 15.7 — "[[Acolhei-vos uns aos outros, como também Cristo nos acolheu para a glória de Deus.]]"`,
   },
   {
     dia: 184,
@@ -2966,15 +2966,15 @@ export const DEVOCIONAL_FAMILIAR: DiaFamiliar[] = [
     subtema: `Recebei-vos uns aos outros como Cristo vos recebeu`,
     tema: `A Unidade no Louvor`,
     tipo: 'devocional',
-    perguntaGancho: `O versículo 7 diz: "Recebei-vos uns aos outros, como também Cristo nos recebeu para a glória de Deus." O que seria diferente no casamento de vocês se essa frase fosse o critério diário de como se tratam?`,
-    reflexaoTexto: `Romanos 15 é a conclusão ética da grande teologia dos capítulos anteriores. Paulo exorta os fortes a suportarem as fraquezas dos fracos e a não agradarem a si mesmos — "pois nem Cristo se agradou a si mesmo" (v.3). O fundamento é a esperança: "tudo o que foi escrito outrora para o nosso ensino foi escrito" (v.4). Paulo termina com uma visão missionária deslumbrante — ele quer ir até a Espanha, porque onde Cristo não foi nomeado, ele não quer edificar sobre fundamento alheio (v.20). Para o casal, o capítulo une o íntimo e o missional: receberem-se um ao outro como Cristo os recebeu não é apenas paz doméstica — é um testemunho da unidade do povo de Deus diante do mundo.`,
-    perguntaGeradora: `Paulo pede ao Deus da paciência e do consolo que vocês pensem "da mesma forma uns para com os outros" (v.5). Em quais áreas do casamento vocês ainda lutam para ter esse "mesmo pensar" — e como Cristo é o fundamento dessa reconciliação?`,
-    reflexaoHomem: `Como marido, Paulo diz que os fortes devem "suportar as fraquezas dos que são fracos" (v.1) sem agradar a si mesmos. De que modo concreto você tem colocado as necessidades e o ritmo da sua esposa acima das suas próprias preferências?`,
-    reflexaoMulher: `Como esposa, Paulo descreve uma comunidade que glorifica a Deus "de um só coração e de uma só boca" (v.6). Como você tem contribuído para que o lar de vocês ressoe essa unidade — na oração, na adoração, nas decisões?`,
-    reflexaoFilhos: `Filhos, Paulo cita vários salmos e profecias para mostrar que judeus e gentios adoram juntos o mesmo Deus. Isso significa que em Cristo não há barreiras — todo mundo é bem-vindo. Você tem tratado colegas e amigos como se todos merecessem ouvir sobre Jesus?`,
-    compromissoPratico: `Leiam Romanos 15.5-7 juntos em voz alta, substituindo mentalmente as palavras "uns aos outros" pelos nomes de cada um. Depois conversem: em que momento desta semana vocês precisam se receber como Cristo os recebeu — com paciência, não com exigência?`,
-    oracaoAlianca: `Deus da paciência e do consolo, dá-nos um coração que recebe o cônjuge como Cristo nos recebeu — sem condições, sem exigir perfeição. Que glorifiquemos a Deus de um só coração e de uma só boca em nosso lar. Que a esperança transborde em nós pelo poder do Espírito Santo. Em nome de Jesus, amém.`,
-    leituraComplementar: `Romanos 15.13 — "O Deus de esperança vos encha de todo o gozo e paz no credes, para que abundeis em esperança pelo poder do Espírito Santo."`,
+    perguntaGancho: `O versículo 7 diz: "[[Acolhei-vos uns aos outros, como também Cristo nos acolheu para a glória de Deus]]". O que seria diferente no casamento de vocês se **essa frase fosse o critério diário** de como se tratam?`,
+    reflexaoTexto: `Romanos 15 é a conclusão prática da grande teologia dos capítulos anteriores. Paulo exorta os fortes a **suportarem as fraquezas dos fracos** e a não agradarem a si mesmos — "[[porque também Cristo não se agradou a si mesmo]]" (v.3).\n\nO fundamento é a esperança: "[[tudo quanto, outrora, foi escrito para o nosso ensino foi escrito]]" (v.4). E Paulo termina com uma visão missionária: quer ir até a Espanha, onde Cristo ainda não foi anunciado (v.20-24).\n\nPara o casal, o capítulo une o íntimo e o missionário: **receberem-se um ao outro como Cristo os recebeu** não é apenas paz doméstica — ++é um testemunho da unidade do povo de Deus diante do mundo++.`,
+    perguntaGeradora: `Paulo pede ao Deus da paciência e da consolação que vocês tenham "[[o mesmo sentir de uns para com os outros]]" (v.5). Em quais áreas do casamento vocês ainda lutam para ter esse **"mesmo sentir"** — e como Cristo é o fundamento dessa reconciliação?`,
+    reflexaoHomem: `Como marido, Paulo diz que os fortes devem "[[suportar as debilidades dos fracos e não agradar-nos a nós mesmos]]" (v.1). ++De que modo concreto você tem colocado as necessidades e o ritmo da sua esposa acima das suas próprias preferências?++`,
+    reflexaoMulher: `Como esposa, Paulo descreve uma comunidade que glorifica a Deus "[[concordemente e a uma voz]]" (v.6). Como você tem contribuído para que o lar de vocês **ressoe essa unidade** — na oração, na adoração, nas decisões?`,
+    reflexaoFilhos: `Filhos, Paulo cita vários salmos e profecias para mostrar que **judeus e gentios adoram juntos o mesmo Deus**. Em Cristo não há barreiras — todo mundo é bem-vindo. ++Você tem tratado colegas e amigos como pessoas que também precisam ouvir sobre Jesus?++`,
+    compromissoPratico: `++Leiam Romanos 15.5-7 juntos em voz alta, trocando as palavras "uns aos outros" pelos nomes de cada um.++\n\nDepois conversem: em que momento desta semana vocês precisam se receber como Cristo os recebeu — **com paciência, não com exigência**?`,
+    oracaoAlianca: `Deus da paciência e da consolação, dá-nos um coração que recebe o cônjuge como Cristo nos recebeu — **sem condições, sem exigir perfeição**. Que glorifiquemos a Deus a uma só voz em nosso lar. ++Que a esperança transborde em nós pelo poder do Espírito Santo.++ Em nome de Jesus, amém.`,
+    leituraComplementar: `Romanos 15.13 — "[[E o Deus da esperança vos encha de todo o gozo e paz no vosso crer, para que sejais ricos de esperança no poder do Espírito Santo.]]"`,
   },
   {
     dia: 185,
@@ -2984,15 +2984,15 @@ export const DEVOCIONAL_FAMILIAR: DiaFamiliar[] = [
     subtema: `A Deus — o único sábio — seja a glória pelos séculos`,
     tema: `Saudações e a Glória Final`,
     tipo: 'devocional',
-    perguntaGancho: `Paulo menciona 26 pessoas pelo nome neste capítulo — mulheres, homens, escravos, livres — todos colaboradores do evangelho. Quem são as pessoas que sustentam a fé de vocês como casal, e vocês as têm agradecido por isso?`,
-    reflexaoTexto: `Romanos 16 parece apenas uma lista de nomes, mas é muito mais: é um mural da comunidade cristã que sustentou Paulo e viveu o evangelho de forma prática. Febe é descrita como "diaconisa" e "protetora de muitos" (v.1-2). Priscila e Áquila "arriscaram o próprio pescoço" por Paulo (v.3-4). Maria "muito trabalhou" pela comunidade (v.6). E ao final, Paulo lança uma doxologia que amarra toda a carta: "Ao único Deus sábio, seja a glória por Jesus Cristo pelos séculos" (v.27). Para o casal, o capítulo ensina que o evangelh é sempre vivido em comunidade — e que o lar é uma célula missionária que precisa de irmãos, colaboradores e parceiros de fé.`,
-    perguntaGeradora: `Paulo elogia Priscila e Áquila como casal missionário que "arriscou o pescoço" pela fé. Que risco vocês estão dispostos a correr juntos pelo evangelho — em casa, na comunidade, no trabalho?`,
-    reflexaoHomem: `Como marido, Paulo cita Áquila — um marido que junto da esposa fez do lar um espaço de missão (v.5: "a igreja que se reúne em sua casa"). Sua casa é hospitaleira e aberta para a comunidade de fé? O que impede que seja mais assim?`,
-    reflexaoMulher: `Como esposa, Paulo dedica mais elogios a mulheres neste capítulo do que em qualquer outro. Febe, Priscila, Maria, Júnia — todas servindo com coragem. Que tipo de contribuição você está dando à comunidade de fé — e como o casamento potencializa ou limita esse chamado?`,
-    reflexaoFilhos: `Filhos, Paulo diz "saudai uns aos outros com ósculo santo" — uma forma de dizer que na igreja todo mundo é família. Você trata os irmãos da igreja como família de verdade, ou como conhecidos de domingo?`,
-    compromissoPratico: `Façam juntos uma lista de três pessoas ou casais que foram "Priscila e Áquila" para vocês — que arriscaram, ajudaram, hospedaram. Esta semana, entrem em contato com ao menos uma dessas pessoas para agradecê-las.`,
-    oracaoAlianca: `Ao único Deus sábio, seja a glória por Jesus Cristo em nosso lar e por nossa aliança. Obrigado pelas pessoas que arriscaram por nós, que oraram, que serviram. Que sejamos para outros o que Priscila e Áquila foram para Paulo — um lar aberto, uma vida entregue. Em nome de Jesus, amém.`,
-    leituraComplementar: `Romanos 16.25-27 — "Ao que pode confirmar-vos... ao único Deus sábio, seja a glória por Jesus Cristo pelos séculos."`,
+    perguntaGancho: `Paulo menciona dezenas de pessoas pelo nome neste capítulo — mulheres, homens, escravos, livres — todos colaboradores do evangelho. **Quem são as pessoas que sustentam a fé de vocês como casal**, e vocês as têm agradecido por isso?`,
+    reflexaoTexto: `Romanos 16 parece apenas uma lista de nomes, mas é muito mais: é **um mural da comunidade cristã** que sustentou Paulo e viveu o evangelho de forma prática.\n\nFebe é "[[serva da igreja]]" e "[[protetora de muitos]]" (v.1-2). Priscila e Áquila "[[arriscaram a sua própria cabeça]]" por Paulo (v.3-4). Maria "[[muito trabalhou]]" pela comunidade (v.6). E ao final, uma doxologia amarra toda a carta: "[[ao Deus único e sábio seja dada glória, por meio de Jesus Cristo, pelos séculos dos séculos]]" (v.27).\n\nPara o casal, o capítulo ensina que **o evangelho é sempre vivido em comunidade** — ++e que o lar é uma célula missionária que precisa de irmãos, colaboradores e parceiros de fé++.`,
+    perguntaGeradora: `Paulo elogia Priscila e Áquila como **casal missionário** que arriscou a vida pela fé. ++Que risco vocês estão dispostos a correr juntos pelo evangelho — em casa, na comunidade, no trabalho?++`,
+    reflexaoHomem: `Como marido, Paulo cita Áquila — um marido que, junto da esposa, fez do lar um espaço de missão: "[[a igreja que se reúne na casa deles]]" (v.5). **Sua casa é hospitaleira e aberta para a comunidade de fé?** O que impede que seja mais assim?`,
+    reflexaoMulher: `Como esposa, veja quantas mulheres Paulo honra neste capítulo: Febe, Priscila, Maria, Júnia, Trifena, Trifosa, Pérside — **todas servindo com coragem**. Que contribuição você está dando à comunidade de fé — e como o casamento fortalece esse chamado?`,
+    reflexaoFilhos: `Filhos, Paulo diz "[[saudai-vos uns aos outros com ósculo santo]]" (v.16) — uma forma de dizer que **na igreja todo mundo é família**. Você trata os irmãos da igreja como família de verdade, ou só como conhecidos de domingo?`,
+    compromissoPratico: `++Façam juntos uma lista de três pessoas ou casais que foram "Priscila e Áquila" para vocês++ — que arriscaram, ajudaram, hospedaram.\n\nEsta semana, **entrem em contato com ao menos uma dessas pessoas para agradecer**.`,
+    oracaoAlianca: `Ao único Deus sábio, seja a glória por Jesus Cristo em nosso lar e em nossa aliança. Obrigado pelas pessoas que arriscaram por nós, que oraram, que serviram. ++Que sejamos para outros o que Priscila e Áquila foram para Paulo — um lar aberto, uma vida entregue.++ Em nome de Jesus, amém.`,
+    leituraComplementar: `Romanos 16.25-27 — "[[Ora, àquele que é poderoso para vos confirmar segundo o meu evangelho... ao Deus único e sábio seja dada glória, por meio de Jesus Cristo, pelos séculos dos séculos.]]"`,
   },
   {
     dia: 186,
@@ -3002,15 +3002,15 @@ export const DEVOCIONAL_FAMILIAR: DiaFamiliar[] = [
     subtema: `A loucura de Deus é mais sábia do que os homens`,
     tema: `A Sabedoria da Cruz`,
     tipo: 'devocional',
-    perguntaGancho: `A cruz parece "loucura" para quem perece e "poder de Deus" para quem é salvo (v.18). No casamento de vocês, onde a "lógica da cruz" — o amor que se humilha e serve — aparece como loucura para o mundo mas como sabedoria para vocês?`,
-    reflexaoTexto: `1 Coríntios 1 abre revelando uma igreja rasgada por facções: "Eu sou de Paulo", "eu sou de Apolo", "eu sou de Cefas" (v.12). Paulo responde com a teologia da cruz: Deus escolheu o fraco, o nésio, o sem honra do mundo para envergonhar o forte (v.27-28). A divisão nasce da sabedoria humana que glorifica líderes e status. A cura é a "loucura da pregação" — Cristo crucificado, escândalo para judeus e loucura para gregos, mas poder de Deus para os que creem (v.23-24). Para o casal, a pergunta é direta: quando discordam, disputam sobre quem tem mais razão — sabedoria humana — ou buscam a sabedoria da cruz, que prefere o outro?`,
-    perguntaGeradora: `Paulo diz que "Deus escolheu as coisas loucas do mundo para confundir os sábios" (v.27). Como a "lógica da fraqueza" da cruz aparece de forma prática nas decisões que vocês tomam juntos — em quem cede, em quem serve, em quem admite o erro?`,
-    reflexaoHomem: `Como marido, Paulo adverte contra divisões que nascem de orgulho intelectual e lealdade a líderes humanos. Você tem defendido suas posições no casamento com sabedoria da cruz — humildade, escuta, abertura — ou com sabedoria do mundo — argumentação, insistência, necessidade de vencer?`,
-    reflexaoMulher: `Como esposa, Paulo diz que Deus escolheu "as coisas que não são" para anular "as que são" (v.28). Há alguma área em que você se sente "sem força" no casamento — e como a promessa de que o fraco é escolhido por Deus transforma essa percepção?`,
-    reflexaoFilhos: `Filhos, Paulo diz que a pregação da cruz parece loucura para quem não acredita. Você já precisou explicar sua fé para alguém que achou "estranho" ser cristão? Como você respondeu?`,
-    compromissoPratico: `Leiam juntos 1 Coríntios 1.26-31 e listem verbalmente — sem escrever — três "fraquezas" que Deus tem usado em vocês como casal para fazer algo belo. Depois orem agradecendo por essas fraquezas.`,
-    oracaoAlianca: `Senhor, guarda-nos da sabedoria do mundo que divide e orgulha. Que a loucura da cruz seja a nossa sabedoria no lar — que nos tornemos pequenos, que servamos sem glória, que acolhamos em vez de disputar. Cristo crucificado é nossa boast. Em nome de Jesus, amém.`,
-    leituraComplementar: `1 Coríntios 1.30 — "Mas vós sois dele em Cristo Jesus, o qual para nós foi feito por Deus sabedoria, e justiça, e santificação, e redenção."`,
+    perguntaGancho: `A cruz parece "[[loucura para os que se perdem]]" e "[[poder de Deus]]" para quem é salvo (v.18). No casamento de vocês, onde **a lógica da cruz — o amor que se humilha e serve** — aparece como loucura para o mundo, mas como sabedoria para vocês?`,
+    reflexaoTexto: `1 Coríntios 1 abre revelando uma igreja rasgada por partidos: "[[Eu sou de Paulo, e eu, de Apolo, e eu, de Cefas]]" (v.12). Paulo responde com a teologia da cruz: **Deus escolheu o fraco, o louco e o desprezado do mundo** para envergonhar o forte (v.27-28).\n\n!!A divisão nasce da sabedoria humana que glorifica líderes e posição.!! A cura é a "loucura da pregação" — Cristo crucificado, "[[escândalo para os judeus, loucura para os gentios]]", mas poder e sabedoria de Deus para os que creem (v.23-24).\n\nPara o casal, a pergunta é direta: quando discordam, disputam sobre quem tem mais razão — sabedoria humana — ou ++buscam a sabedoria da cruz, que prefere o outro++?`,
+    perguntaGeradora: `Paulo diz que "[[Deus escolheu as coisas loucas do mundo para envergonhar os sábios]]" (v.27). Como **a lógica da fraqueza da cruz** aparece nas decisões que vocês tomam juntos — em quem cede, em quem serve, em quem admite o erro?`,
+    reflexaoHomem: `Como marido, Paulo adverte contra divisões que nascem do orgulho e da lealdade a líderes humanos. Você tem defendido suas posições no casamento com **a sabedoria da cruz — humildade, escuta, abertura** — ou com !!a sabedoria do mundo — insistência e necessidade de vencer!!?`,
+    reflexaoMulher: `Como esposa, Paulo diz que Deus escolheu "[[as coisas que não são, para reduzir a nada as que são]]" (v.28). Há alguma área em que você se sente "sem força" no casamento? ++Como a promessa de que Deus escolhe o fraco transforma essa percepção?++`,
+    reflexaoFilhos: `Filhos, Paulo diz que a pregação da cruz **parece loucura para quem não acredita**. Você já precisou explicar sua fé para alguém que achou "estranho" ser cristão? ++Como você respondeu — e como gostaria de responder?++`,
+    compromissoPratico: `++Leiam juntos 1 Coríntios 1.26-31 e digam em voz alta três "fraquezas" que Deus tem usado em vocês como casal para fazer algo belo.++\n\nDepois **orem agradecendo por essas fraquezas**.`,
+    oracaoAlianca: `Senhor, guarda-nos !!da sabedoria do mundo que divide e orgulha!!. Que **a loucura da cruz seja a nossa sabedoria no lar** — que nos tornemos pequenos, que sirvamos sem buscar glória, que acolhamos em vez de disputar. ++Que o nosso único orgulho seja Cristo crucificado.++ Em nome de Jesus, amém.`,
+    leituraComplementar: `1 Coríntios 1.30 — "[[Mas vós sois dele, em Cristo Jesus, o qual se nos tornou, da parte de Deus, sabedoria, e justiça, e santificação, e redenção.]]"`,
   },
   {
     dia: 187,
@@ -3020,15 +3020,15 @@ export const DEVOCIONAL_FAMILIAR: DiaFamiliar[] = [
     subtema: `O Espírito examina todas as coisas, até as profundezas de Deus`,
     tema: `A Sabedoria do Espírito`,
     tipo: 'devocional',
-    perguntaGancho: `Paulo diz que o Espírito conhece "as profundezas de Deus" (v.10) e habita em quem crê. Quando foi a última vez que vocês consultaram o Espírito — por meio da Palavra e da oração — antes de tomar uma decisão importante juntos?`,
-    reflexaoTexto: `1 Coríntios 2 é uma defesa do mistério do evangelho contra a sabedoria retórica dos filósofos de Corinto. Paulo entrou na cidade sem eloquência nem filosofia sofisticada — apenas com "Jesus Cristo, e este crucificado" (v.2). A razão: para que a fé não repousasse na sabedoria dos homens, mas no poder de Deus (v.5). O ponto central é pneumatológico: as coisas de Deus são reveladas pelo Espírito, e o homem natural não as recebe porque são loucura para ele (v.14). Para o casal, isso significa que a sabedoria necessária para o casamento — amor, paciência, perdão, discernimento — não nasce de habilidades naturais, mas do Espírito que revela "o que Deus nos preparou" (v.9).`,
-    perguntaGeradora: `Paulo contrasta o "homem natural" que não recebe as coisas do Espírito com o "homem espiritual" que discerne todas as coisas (v.14-15). Vocês se enxergam, nesta fase do casamento, mais como casal natural — resolvendo conflitos com força própria — ou casal espiritual — dependendo do Espírito para discernir?`,
-    reflexaoHomem: `Como marido, Paulo escolheu deliberadamente não usar "palavras persuasivas de sabedoria" mas demonstrar "poder" (v.4). Como líder do lar, você tem buscado impressionar ou manipular com argumentos — ou tem buscado o poder do Espírito que convence os corações?`,
-    reflexaoMulher: `Como esposa, Paulo diz que "temos a mente de Cristo" (v.16) — isso inclui você. Há alguma situação no lar em que você tem descartado a orientação do Espírito por achar que não tinha autoridade espiritual para falar? O capítulo diz o contrário.`,
-    reflexaoFilhos: `Filhos, Paulo diz que o olho não viu, o ouvido não ouviu o que Deus preparou para quem o ama (v.9). Isso quer dizer que o melhor da sua vida ainda está por vir — e Deus revela isso pelo Espírito. Você tem pedido ao Espírito Santo que guie os seus planos?`,
-    compromissoPratico: `Esta semana, antes de qualquer decisão conjunta — grande ou pequena — parem por um momento, orem juntos pedindo a mente de Cristo, e depois conversem. Escolham pelo menos uma situação concreta para praticar isso hoje.`,
-    oracaoAlianca: `Espírito Santo, ensina-nos o que nenhum olho viu nem ouvido ouviu. Revela-nos as profundezas da tua vontade para o nosso lar. Guarda-nos da arrogância de achar que temos sabedoria suficiente — e da passividade de não pedir a tua. Que tenhamos a mente de Cristo juntos. Amém.`,
-    leituraComplementar: `João 16.13 — "Quando vier o Espírito da verdade, ele vos guiará a toda a verdade."`,
+    perguntaGancho: `Paulo diz que o Espírito conhece "[[as profundezas de Deus]]" (v.10) e habita em quem crê. Quando foi a última vez que vocês **consultaram o Espírito — por meio da Palavra e da oração** — antes de tomar uma decisão importante juntos?`,
+    reflexaoTexto: `1 Coríntios 2 defende o mistério do evangelho contra a sabedoria retórica de Corinto. Paulo entrou na cidade sem eloquência nem filosofia sofisticada — apenas com "[[Jesus Cristo e este crucificado]]" (v.2). A razão: para que a fé não se apoiasse "[[em sabedoria humana, e sim no poder de Deus]]" (v.5).\n\nO ponto central é este: **as coisas de Deus são reveladas pelo Espírito**, e !!o homem natural não as aceita, porque lhe são loucura!! (v.14).\n\nPara o casal, isso significa que a sabedoria necessária para o casamento — amor, paciência, perdão, discernimento — ++não nasce de habilidades naturais, mas do Espírito que revela "o que Deus tem preparado" (v.9)++.`,
+    perguntaGeradora: `Paulo contrasta o "homem natural", que não aceita as coisas do Espírito, com o "homem espiritual", que julga todas as coisas (v.14-15). Nesta fase do casamento, vocês se veem mais como **um casal que resolve tudo com as próprias forças** ou como **um casal que depende do Espírito para discernir**?`,
+    reflexaoHomem: `Como marido, Paulo escolheu não usar "[[linguagem persuasiva de sabedoria]]", mas a "[[demonstração do Espírito e de poder]]" (v.4). Como líder do lar, você tem buscado !!impressionar ou vencer com argumentos!! — ou ++tem buscado o poder do Espírito que convence os corações++?`,
+    reflexaoMulher: `Como esposa, Paulo diz que "[[nós temos a mente de Cristo]]" (v.16) — **isso inclui você**. Há alguma situação no lar em que você tem deixado de falar o que o Espírito colocou no seu coração por achar que não tinha autoridade espiritual? O capítulo diz o contrário.`,
+    reflexaoFilhos: `Filhos, Paulo diz que "[[nem olhos viram, nem ouvidos ouviram]]" o que Deus preparou para quem o ama (v.9). Isso quer dizer que **o melhor da sua vida com Deus ainda está por vir**. ++Você tem pedido ao Espírito Santo que guie os seus planos?++`,
+    compromissoPratico: `++Esta semana, antes de qualquer decisão conjunta — grande ou pequena — parem um momento e orem juntos pedindo a mente de Cristo.++\n\nDepois conversem. **Escolham pelo menos uma situação concreta para praticar isso hoje.**`,
+    oracaoAlianca: `Espírito Santo, ensina-nos o que nenhum olho viu nem ouvido ouviu. Revela-nos **as profundezas da tua vontade para o nosso lar**. Guarda-nos !!da arrogância de achar que temos sabedoria suficiente — e da preguiça de não pedir a tua!!. ++Que tenhamos juntos a mente de Cristo.++ Amém.`,
+    leituraComplementar: `João 16.13 — "[[Quando vier, porém, o Espírito da verdade, ele vos guiará a toda a verdade.]]"`,
   },
   {
     dia: 188,
@@ -3038,8 +3038,8 @@ export const DEVOCIONAL_FAMILIAR: DiaFamiliar[] = [
     subtema: `Vivendo o texto na aliança`,
     tema: `Transformação Conjugal pela Palavra`,
     tipo: 'aplicacao',
-    perguntaGeradora: `Como vocês podem colocar em prática esta semana o que leram juntos?`,
-    compromissoPratico: `Esta semana escolham um ensinamento das leituras da semana 27 e apliquem juntos: dividam a tarefa, oração na segunda e avaliação no sábado seguinte.`,
+    perguntaGeradora: `Desta semana (Rm 14–16 e 1Co 1–2): **qual versículo mais tocou a vida de vocês como casal** — e o que ele revelou que precisa mudar ou crescer?`,
+    compromissoPratico: `Revisem os cinco temas da semana:\n\n(1) acolher as diferenças sem julgar (Rm 14);\n\n(2) receber-se como Cristo nos recebeu (Rm 15);\n\n(3) um lar aberto como o de Priscila e Áquila (Rm 16);\n\n(4) a sabedoria da cruz contra o orgulho (1Co 1);\n\n(5) depender do Espírito para entender e decidir (1Co 2).\n\n++Escolham um tema que precisa de ação concreta no lar esta semana e definam juntos o que farão.++`,
   },
   {
     dia: 189,
@@ -3049,8 +3049,8 @@ export const DEVOCIONAL_FAMILIAR: DiaFamiliar[] = [
     subtema: `Encontro semanal do casal`,
     tema: `Comunhão, Oração e Compromisso`,
     tipo: 'mesa-alianca',
-    perguntaGeradora: `Olhando para esta semana: em que momento vocês sentiram a presença de Deus mais claramente na aliança de vocês?`,
-    oracaoAlianca: `Pai, obrigado pela semana 27 de leitura juntos. Que cada Palavra que entramos seja semente que cresce na nossa aliança e transborda para todos ao nosso redor. Confirma os nossos compromissos e nos dá graça para persistir. Em nome de Jesus, amém.`,
+    perguntaGeradora: `Paulo pediu: "[[Acolhei-vos uns aos outros, como também Cristo nos acolheu]]". Em que momento desta semana **vocês se sentiram acolhidos um pelo outro** — e em que momento faltou esse acolhimento?`,
+    oracaoAlianca: `Pai, obrigado pela semana 27. Lemos sobre **acolhimento, esperança, hospitalidade, a sabedoria da cruz e a direção do Espírito**. ++Que esses ensinos não fiquem nas páginas — que vivam no lar.++ Que nos recebamos como Cristo nos recebeu, que nossa casa seja aberta e que o nosso único orgulho seja Jesus crucificado. Em nome de Jesus, amém.`,
   },
   {
     dia: 190,
@@ -5910,12 +5910,15 @@ export const DEVOCIONAL_FAMILIAR: DiaFamiliar[] = [
   },
 ];
 
-/* ─── Estação IV: link do texto bíblico + Conversa a Três + autor ─────────
-   O conteúdo extra de cada dia fica em ./familiarEstacao4 (um arquivo por semana). */
+/* ─── Estações III e IV: link do texto bíblico + Conversa a Três + autor ───
+   O conteúdo extra de cada dia fica em ./familiarEstacao3 e ./familiarEstacao4 (um arquivo por semana). */
+import { EXTRAS_ESTACAO_III } from './familiarEstacao3';
 import { EXTRAS_ESTACAO_IV } from './familiarEstacao4';
 import { referenciaDaObra } from './familiarEstacao4/referenciasAbnt';
 
 const LIVROS_BIBLIAONLINE: Record<string, string> = {
+  'Romanos': 'rm', '1 Coríntios': '1co', '2 Coríntios': '2co', 'Gálatas': 'gl', 'Efésios': 'ef', 'Filipenses': 'fp',
+  'Colossenses': 'cl', '1 Tessalonicenses': '1ts', '2 Tessalonicenses': '2ts',
   '1 Timóteo': '1tm', '2 Timóteo': '2tm', 'Tito': 'tt', 'Filemom': 'fm', 'Hebreus': 'hb', 'Tiago': 'tg',
   '1 Pedro': '1pe', '2 Pedro': '2pe', '1 João': '1jo', '2 João': '2jo', '3 João': '3jo', 'Judas': 'jd', 'Apocalipse': 'ap',
 };
@@ -5930,8 +5933,8 @@ function linkDaLeitura(leitura: string): DiaFamiliar['textoBiblico'] {
 }
 
 for (const d of DEVOCIONAL_FAMILIAR) {
-  if (d.semana < 40 || d.tipo !== 'devocional') continue;
-  Object.assign(d, EXTRAS_ESTACAO_IV[d.dia]);
+  if (d.semana < 27 || d.tipo !== 'devocional') continue;
+  Object.assign(d, d.semana < 40 ? EXTRAS_ESTACAO_III[d.dia] : EXTRAS_ESTACAO_IV[d.dia]);
   d.textoBiblico ??= linkDaLeitura(d.leitura);
   if (d.leituraAutor) d.leituraAutor.abnt ??= referenciaDaObra(d.leituraAutor.obra);
 }

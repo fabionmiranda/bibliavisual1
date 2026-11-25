@@ -39,6 +39,7 @@ import DevocionalPage from './pages/DevocionalPage';
 import DevocionalHubPage from './pages/DevocionalHubPage';
 import DevocionalConfessionalPage from './pages/DevocionalConfessionalPage';
 import DevocionalFamiliarPage from './pages/DevocionalFamiliarPage';
+import DevocionalFalaAlmaPage from './pages/DevocionalFalaAlmaPage';
 import DevocionalReformaPage from './pages/DevocionalReformaPage';
 import DevocionalReformaDiaPage from './pages/DevocionalReformaDiaPage';
 import BibliotecaAutoresPage from './pages/BibliotecaAutoresPage';
@@ -188,6 +189,8 @@ export default function App() {
           <Route path="/devocional/espelhado" element={<DevocionalPage />} />
           <Route path="/devocional/confessional" element={<DevocionalConfessionalPage />} />
           <Route path="/devocional/familiar" element={<DevocionalFamiliarPage />} />
+          <Route path="/devocional/fala-alma" element={<DevocionalFalaAlmaPage />} />
+          <Route path="/devocional/fala-alma/:dia" element={<DevocionalFalaAlmaPage />} />
           <Route path="/devocional/reforma" element={<DevocionalReformaPage />} />
           <Route path="/devocional/reforma/:dia" element={<DevocionalReformaDiaPage />} />
 

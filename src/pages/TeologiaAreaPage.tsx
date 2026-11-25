@@ -110,6 +110,70 @@ const PLANO_POLITICA: PlanoCurso = {
   },
 };
 
+/* ─── Plano de curso: Teologia Confessional ─────────────────────────────── */
+const PLANO_CONFESSIONAL: PlanoCurso = {
+  ementa: 'Estudo histórico e teológico das confissões de fé e das igrejas reformadas e confessionais. Natureza e autoridade das confissões (norma normata sob a Escritura, norma normans); os credos ecumênicos; o nascimento das confissões na Reforma (Augsburgo, Zurique, Genebra); as confissões nacionais da França, da Escócia e dos Países Baixos; as Três Formas de Unidade; os Trinta e Nove Artigos; a Assembleia de Westminster; Savoy e as confissões batistas de Londres; a ortodoxia reformada; a subscrição confissional; a chegada das igrejas reformadas e confessionais ao Brasil; e o valor da confissão para a igreja de hoje.',
+  ficha: [
+    { rotulo: 'Carga horária', valor: 'Introdução + 12 aulas · 90 min cada (19,5 h)' },
+    { rotulo: 'Formato', valor: 'Presencial, on-line ou híbrido' },
+    { rotulo: 'Público', valor: 'Oficiais, seminaristas, professores de escola dominical e membros adultos' },
+    { rotulo: 'Pré-requisito', valor: 'Nenhum · recomenda-se ter em mãos uma confissão reformada' },
+    { rotulo: 'Natureza', valor: 'Curso livre · certificado de conclusão' },
+  ],
+  objetivoGeral: 'Levar o aluno a conhecer a origem, o conteúdo e o uso das confissões de fé reformadas e confessionais históricas, para que confesse com a Igreja de todos os tempos a fé “uma vez por todas entregue aos santos” (Jd 3), mantendo sempre a Escritura como regra suprema.',
+  objetivosEspecificos: [
+    'Definir credo, confissão e catecismo, e explicar a relação de autoridade entre a Escritura e os padrões confessionais.',
+    'Situar cada confissão no seu contexto histórico: autores, controvérsias, igrejas e perseguições que lhe deram origem.',
+    'Comparar as grandes famílias confessionais (luterana, reformada continental, presbiteriana, anglicana reformada, congregacional e batista particular).',
+    'Ler fontes primárias e identificar nelas as doutrinas centrais da fé reformada.',
+    'Conhecer a história das igrejas reformadas e confessionais no Brasil.',
+    'Avaliar o papel da subscrição confissional no ensino, no culto, no governo e na disciplina da igreja local.',
+  ],
+  andragogia: [
+    { t: 'Necessidade de saber', d: 'Cada aula parte de uma pergunta concreta: “por que minha igreja crê assim?” ou “de onde veio este texto que recitamos?”.' },
+    { t: 'Autonomia do aprendiz', d: 'O aluno lê previamente o capítulo confessional do dia e traz suas perguntas e dúvidas para a aula.' },
+    { t: 'Experiência como recurso', d: 'A história da igreja local do aluno, suas tradições e seu culto são o ponto de partida da reflexão histórica.' },
+    { t: 'Orientação para problemas', d: 'As controvérsias históricas (arminianismo, liberalismo, subscrição) são estudadas como casos que ainda iluminam desafios atuais.' },
+    { t: 'Motivação interna', d: 'O alvo é amar a verdade, a unidade e a santidade da Igreja, não apenas colecionar datas e nomes.' },
+  ],
+  metodologia: [
+    { icon: '🎤', t: 'Aula expositiva dialogada', d: 'Contexto histórico, leitura do texto confessional e diálogo sobre seus fundamentos bíblicos.' },
+    { icon: '📜', t: 'Leitura de fontes primárias', d: 'Leitura comentada dos credos, das confissões e dos catecismos, com as provas bíblicas indicadas.' },
+    { icon: '🕰️', t: 'Linha do tempo', d: 'Construção coletiva de uma linha do tempo das confissões, das igrejas e dos reformadores.' },
+    { icon: '🔍', t: 'Quadro comparativo', d: 'Uma mesma doutrina (Escritura, Ceia, batismo, governo) comparada em várias confissões.' },
+    { icon: '🧩', t: 'Estudo de caso', d: 'Controvérsias reais (Dort, Adopting Act, Machen) analisadas em grupo.' },
+    { icon: '🙏', t: 'Catequese e oração', d: 'Cada encontro termina com uma pergunta de catecismo memorizada e oração pela Igreja.' },
+  ],
+  avaliacao: [
+    'Participação nas leituras e discussões (contínua e formativa).',
+    'Linha do tempo pessoal das confissões e das igrejas estudadas.',
+    'Quadro comparativo de uma doutrina em três confissões diferentes.',
+    'Trabalho final: ensaio breve (3–5 páginas) sobre uma confissão e o seu contexto histórico.',
+    'Autoavaliação: o que mudou na minha forma de ver a minha igreja e a sua confissão?',
+  ],
+  referencial: [
+    { categoria: 'Fontes bíblicas e confessionais', itens: [
+      'BÍBLIA. Português. Bíblia Sagrada: Almeida Revista e Atualizada. 2. ed. Barueri: Sociedade Bíblica do Brasil, 1993.',
+      'BEEKE, Joel R.; FERGUSON, Sinclair B. (org.). Harmonia das confissões reformadas. São Paulo: Cultura Cristã, 2006.',
+      'A CONFISSÃO de Fé de Westminster. São Paulo: Cultura Cristã, 2017.',
+      'DENNISON JR., James T. (ed.). Reformed confessions of the 16th and 17th centuries in English translation. Grand Rapids: Reformation Heritage Books, 2008–2014. 4 v.',
+    ] },
+    { categoria: 'Referencial histórico e teológico', itens: [
+      'TRUEMAN, Carl R. O imperativo confessional. São José dos Campos: Fiel, 2012.',
+      'KELLY, J. N. D. Early Christian creeds. 3. ed. London: Longman, 1972.',
+      'MULLER, Richard A. Post-Reformation Reformed dogmatics. 2. ed. Grand Rapids: Baker Academic, 2003. 4 v.',
+      'CLARK, R. Scott. Recovering the Reformed confession: our theology, piety, and practice. Phillipsburg: P&R, 2008.',
+      'MATOS, Alderi Souza de. Os pioneiros presbiterianos do Brasil (1859-1900). São Paulo: Cultura Cristã, 2004.',
+    ] },
+    { categoria: 'Referencial pedagógico e andragógico', itens: [
+      'KNOWLES, Malcolm S.; HOLTON III, Elwood F.; SWANSON, Richard A. The adult learner: the definitive classic in adult education and human resource development. 8. ed. New York: Routledge, 2015.',
+      'PAZMIÑO, Robert W. Temas fundamentais da educação cristã. São Paulo: Cultura Cristã, 2008.',
+    ] },
+  ],
+  legal: PLANO_POLITICA.legal,
+  professor: PLANO_POLITICA.professor,
+};
+
 const AREAS_INFO: Record<string, AreaInfo> = {
   reformada: {
     titulo: 'Teologia Reformada',
@@ -308,6 +372,28 @@ const AREAS_INFO: Record<string, AreaInfo> = {
       { nome: 'Liberdade Religiosa no Direito Brasileiro', desc: 'Constituição de 1988, art. 5º, VI-VIII, art. 19, I e art. 150, VI, b: laicidade, imunidade tributária e objeção de consciência à luz da CFB 1689 XXI', icon: '🕊️', refs: { pt: 'MACHADO, Jónatas E. M. Liberdade religiosa numa comunidade constitucional inclusiva. Coimbra: Coimbra Editora, 1996.', en: 'WITTE JR., John; NICHOLS, Joel A. Religion and the American constitutional experiment. 4. ed. New York: Oxford University Press, 2016.' } },
       { nome: 'Crime, Pena e Justiça', desc: 'Retribuição, proporcionalidade e restauração: Gn 9.6, a lex talionis e Rm 13.4 diante do sistema penal contemporâneo', icon: '⚖️', refs: { pt: 'KELLER, Timothy. Justiça generosa: a graça de Deus e a justiça social. São Paulo: Vida Nova, 2013.', en: 'VANDRUNEN, David. Divine covenants and moral order: a biblical theology of natural law. Grand Rapids: Eerdmans, 2014.' } },
       { nome: 'A Vocação Cristã no Direito', desc: 'Advocacia, magistratura e ministério público como vocações diante de Deus: integridade, verdade e serviço ao próximo', icon: '💼', refs: { pt: 'KUYPER, Abraham. Calvinismo. São Paulo: Cultura Cristã, 2002. (Palestra 3: Calvinismo e política).', en: 'WITTE JR., John; ALEXANDER, Frank S. (ed.). Christianity and law: an introduction. Cambridge: Cambridge University Press, 2008.' } },
+    ],
+  },
+  confessional: {
+    titulo: 'Teologia Confessional',
+    descricao: 'A história das confissões de fé e das igrejas reformadas e confessionais históricas. Por que a Igreja escreveu confissões? Quem as escreveu, em meio a que perseguições e controvérsias? Como elas se relacionam com a Escritura e o que ainda têm a dizer à igreja de hoje? Aulas em preparação.',
+    icon: '📜',
+    cor: '#f59e0b',
+    plano: PLANO_CONFESSIONAL,
+    materias: [
+      { nome: 'Introdução: por que a Igreja confessa a fé?', rotulo: 'INTRODUÇÃO', desc: 'Credo, confissão e catecismo; a confissão como resposta à Palavra (Rm 10.9-10; 1Tm 3.15; Jd 3); a Escritura como norma normans e a confissão como norma normata', icon: '🧭', refs: { pt: 'TRUEMAN, Carl R. O imperativo confessional. São José dos Campos: Fiel, 2012.', en: 'TRUEMAN, Carl R. The creedal imperative. Wheaton: Crossway, 2012.' } },
+      { nome: 'Os Credos da Igreja Antiga', link: '/teologia/credos', desc: 'O Credo Apostólico, o Niceno-Constantinopolitano (325/381), a Definição de Calcedônia (451) e o Credo Atanasiano: a fé trinitária e cristológica que as igrejas reformadas receberam e confessaram', icon: '🏺', refs: { pt: 'KELLY, J. N. D. Doutrinas centrais da fé cristã: origem e desenvolvimento. São Paulo: Vida Nova, 1994.', en: 'KELLY, J. N. D. Early Christian creeds. 3. ed. London: Longman, 1972.' } },
+      { nome: 'A Reforma e a Confissão de Augsburgo', desc: 'Lutero, Melanchthon e a Confissão de Augsburgo (1530): a primeira grande confissão protestante, a tradição luterana e o Livro de Concórdia (1580)', icon: '🔨', refs: { pt: 'GEORGE, Timothy. Teologia dos reformadores. São Paulo: Vida Nova, 1993.', en: 'KOLB, Robert; WENGERT, Timothy J. (ed.). The Book of Concord: the confessions of the Evangelical Lutheran Church. Minneapolis: Fortress Press, 2000.' } },
+      { nome: 'Zurique e Genebra', desc: 'Os 67 Artigos de Zuínglio (1523), o Catecismo de Genebra (1542), o Consenso de Zurique (1549) e a Segunda Confissão Helvética de Bullinger (1566): o berço da fé reformada', icon: '⛰️', refs: { pt: 'GEORGE, Timothy. Teologia dos reformadores. São Paulo: Vida Nova, 1993.', en: 'COCHRANE, Arthur C. (ed.). Reformed confessions of the sixteenth century. Louisville: Westminster John Knox Press, 2003.' } },
+      { nome: 'França e Escócia: Confissões sob a Cruz', desc: 'A Confissão Gaulesa (1559), as igrejas huguenotes perseguidas, John Knox e a Confissão Escocesa (1560): igrejas que confessaram a fé sob ameaça de morte', icon: '🔥', refs: { pt: 'BEEKE, Joel R.; FERGUSON, Sinclair B. (org.). Harmonia das confissões reformadas. São Paulo: Cultura Cristã, 2006.', en: 'DENNISON JR., James T. (ed.). Reformed confessions of the 16th and 17th centuries in English translation. Grand Rapids: Reformation Heritage Books, 2008. v. 2.' } },
+      { nome: 'As Três Formas de Unidade', desc: 'A Confissão Belga de Guido de Brès (1561), o Catecismo de Heidelberg de Ursino e Oleviano (1563) e os Cânones de Dort (1618–1619) contra os remonstrantes: o padrão das igrejas reformadas continentais', icon: '🌷', refs: { pt: 'BEEKE, Joel R. Vivendo para a glória de Deus: uma introdução à fé reformada. São José dos Campos: Fiel, 2010.', en: 'BIERMA, Lyle D. An introduction to the Heidelberg Catechism: sources, history, and theology. Grand Rapids: Baker Academic, 2005.' } },
+      { nome: 'A Igreja da Inglaterra e os Trinta e Nove Artigos', desc: 'Cranmer, os Quarenta e Dois Artigos (1553), os Trinta e Nove Artigos (1563/1571), os Artigos de Lambeth (1595) e os Artigos Irlandeses (1615): a vertente anglicana da Reforma', icon: '👑', refs: { pt: 'GONZÁLEZ, Justo L. História ilustrada do cristianismo. São Paulo: Vida Nova, 2011. v. 2.', en: 'PACKER, J. I.; BECKWITH, Roger T. The Thirty-nine Articles: their place and use today. London: Latimer Trust, 2006.' } },
+      { nome: 'A Assembleia de Westminster', desc: 'A Assembleia (1643–1653), a Confissão de Fé, os Catecismos Maior e Breve, o Diretório de Culto e a Forma de Governo: o padrão das igrejas presbiterianas', icon: '🏛️', refs: { pt: 'HODGE, A. A. Confissão de Fé de Westminster comentada. São Paulo: Os Puritanos, 1999.', en: 'LETHAM, Robert. The Westminster Assembly: reading its theology in historical context. Phillipsburg: P&R, 2009.' } },
+      { nome: 'Savoy e as Confissões Batistas de Londres', desc: 'A Declaração de Savoy dos congregacionais (1658), a Primeira Confissão Batista de Londres (1644) e a Segunda (1677/1689): Westminster relido quanto à Igreja, ao batismo e à liberdade de consciência', icon: '📘', refs: { pt: 'WALDRON, Samuel E. Uma exposição moderna da Confissão de Fé Batista de 1689. São José dos Campos: Fiel, 2014.', en: 'RENIHAN, James M. For the vindication of the truth: a brief exposition of the First London Baptist Confession of Faith. Owensboro: Reformed Baptist Academic Press, 2004.' } },
+      { nome: 'A Ortodoxia Reformada', desc: 'Turretin, Heidegger e a Fórmula do Consenso Helvético (1675): a escolástica reformada como defesa e sistematização da fé confessada', icon: '📚', refs: { pt: 'TURRETIN, François. Compêndio de teologia apologética. São Paulo: Cultura Cristã, 2011. 3 v.', en: 'MULLER, Richard A. Post-Reformation Reformed dogmatics. 2. ed. Grand Rapids: Baker Academic, 2003. 4 v.' } },
+      { nome: 'Subscrição Confissional e Declínio', desc: 'O Adopting Act (1729), subscrição estrita e sistêmica, o liberalismo dos séculos XIX e XX e a resposta de Princeton (Hodge, Warfield e Machen)', icon: '✍️', refs: { pt: 'MACHEN, J. Gresham. Cristianismo e liberalismo. São Paulo: Shedd Publicações, 2012.', en: 'HALL, David W. (ed.). The practice of confessional subscription. Lanham: University Press of America, 1995.' } },
+      { nome: 'Igrejas Reformadas e Confessionais no Brasil', desc: 'Os huguenotes na Guanabara e a Confissão de Fé da Guanabara (1558), os holandeses no Nordeste, Robert Kalley, Ashbel Green Simonton (1859), a Igreja Presbiteriana do Brasil e as igrejas reformadas e batistas confessionais de hoje', icon: '🇧🇷', refs: { pt: 'MATOS, Alderi Souza de. Os pioneiros presbiterianos do Brasil (1859-1900). São Paulo: Cultura Cristã, 2004.', en: 'LÉONARD, Émile-G. O protestantismo brasileiro. 3. ed. São Paulo: ASTE, 2002.' } },
+      { nome: 'Por que ser Confessional Hoje?', desc: 'A confissão a serviço da unidade, do ensino, do culto, da disciplina e da missão; os riscos do biblicismo sem história e do tradicionalismo sem Escritura', icon: '🕯️', refs: { pt: 'BEEKE, Joel R. Vivendo para a glória de Deus: uma introdução à fé reformada. São José dos Campos: Fiel, 2010.', en: 'CLARK, R. Scott. Recovering the Reformed confession: our theology, piety, and practice. Phillipsburg: P&R, 2008.' } },
     ],
   },
 };
